@@ -129,7 +129,8 @@ def _teams(paths: Optional[Sequence[str]], seed: int, fmt: Optional[str] = None)
     for p in paths:
         try:
             with open(p, "rb") as f:
-                text = f.read().decode("utf-8-sig")
+                # A file saved on Windows: its CRLF line ends, as \n.
+                text = f.read().decode("utf-8-sig").replace("\r\n", "\n")
         except OSError as e:
             raise _Usage(f"--team {p}: {e.strerror or e}. {_TEAM_HELP}") from None
         except UnicodeDecodeError:

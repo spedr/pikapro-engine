@@ -20,7 +20,7 @@ import pikapro  # noqa: E402
 from pikapro.showdown import AcceptPlan, BattleRoom, RandomRequestHandler, ShowdownClient, pack_team  # noqa: E402
 
 from test_showdown_ots import FMT, OFFER, PREVIEW  # noqa: E402
-from _showdown_fakes import Fake, run, until  # noqa: E402
+from _showdown_fakes import EARLY, Fake, run, until  # noqa: E402
 
 TEAM = pikapro.random_team("championsvgc", seed=1)
 OURS = pikapro.random_team("championsvgc", seed=2)
@@ -150,7 +150,7 @@ def test_a_plan_plays_its_own_team_and_accepts_the_sheets_at_once():
     assert a.team == pack_team(TEAM, FMT) and b.team == pack_team(OURS, FMT)
     [ta] = fake.sent(a.id, "/acceptopenteamsheets")
     [tc] = fake.sent(a.id, "/choose ")
-    assert ta < 0.4 <= tc, "accepted before her answer; chose after it"
+    assert ta < 0.4 - EARLY <= tc, "accepted before her answer; chose after it"
     assert (a.ots_answer, a.ots_foe, a.ots_open) == (True, True, True)
     # The preview decision saw the sheets.
     assert fake.log[a.id].index("|showteam|p2|Pikachu||||Thunderbolt|||||50|") < fake.log[a.id].index("|")
@@ -177,9 +177,9 @@ def test_a_plan_whose_opponent_rejects_or_says_nothing_plays_on(answer):
     assert not fake.sent(a.id, "/rejectopenteamsheets")
     assert not a.ots_open and a.ots_answer is True
     if answer == "reject":
-        assert ta < 0.2 <= tc < 0.6 and a.ots_foe is False
+        assert ta < 0.2 - EARLY <= tc < 0.6 and a.ots_foe is False
     else:
-        assert 0.6 <= tc < 2 and a.ots_foe is None
+        assert 0.6 - EARLY <= tc < 2 and a.ots_foe is None
 
 
 def test_a_refused_plan_team_is_reported_and_the_challenge_accepted_again():

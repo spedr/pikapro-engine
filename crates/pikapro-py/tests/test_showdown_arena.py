@@ -28,7 +28,7 @@ from websockets.asyncio.server import serve  # noqa: E402
 from pikapro.showdown import ARENA, AcceptPlan, RandomRequestHandler, ShowdownClient, ShowdownError, LoginError, server_config  # noqa: E402
 from pikapro.showdown.client import _team_shows  # noqa: E402
 
-from _showdown_fakes import run, until  # noqa: E402
+from _showdown_fakes import drop, run, until  # noqa: E402
 
 TOKEN = "pka_s3cr3t-T0KEN-value"
 FMT = "gen9championsvgc2026regmc"
@@ -957,7 +957,7 @@ def test_cancel_search_stops_once_the_arena_lists_no_games(caplog):
                 await fake.ws.send("|popup|The arena starts nothing new for this bot: it plays what it is playing, "
                                    "and any return game it owes. Once |updatesearch| lists no games it can go "
                                    "offline without losing anything. /search, or logging in again, undoes this.")
-                fake.ws.transport.abort()  # a drop: the login undoes /cancelsearch, so it goes again
+                await drop(fake.ws)  # a drop: the login undoes /cancelsearch, so it goes again
                 await until(lambda: fake.logins == 2 and fake.cancelled, 15)
                 await fake.end(a)
                 await asyncio.sleep(0.2)

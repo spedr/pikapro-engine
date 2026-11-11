@@ -36,7 +36,7 @@ from pikapro.showdown import (  # noqa: E402
 )
 from pikapro.showdown.room import title_opponent  # noqa: E402
 
-from _showdown_fakes import REQUEST, RUNNER, Fake, run, until  # noqa: E402
+from _showdown_fakes import REQUEST, RUNNER, Fake, drop, run, until  # noqa: E402
 
 FMT = "gen9championsvgc2026regmcbo3"
 SINGLE = "gen9championsvgc2026regmc"
@@ -222,7 +222,7 @@ class BoServer:
     async def abort(self):
         ws, self.ws = self.ws, None
         if ws is not None:
-            ws.transport.abort()
+            await drop(ws)
 
     async def end_game(self, bid):
         sid = next((k for k, s in self.series.items() if s.get("battle") == bid), None)
@@ -286,7 +286,17 @@ def bot(srv, **kw) -> ShowdownClient:
 
 
 def leftovers():
-    return [t for t in asyncio.all_tasks() if t is not asyncio.current_task() and t.get_name() != RUNNER]
+    return [
+        t
+        for t in asyncio.all_tasks()
+        if t is not asyncio.current_task() and t.get_name() != RUNNER and not _accept_task(t)
+    ]
+
+
+def _accept_task(t) -> bool:
+    """On Windows, the event loop's own task waiting on a listening socket
+    (the fake server's), not the client's."""
+    return getattr(t.get_coro(), "__qualname__", "").startswith("IocpProactor.accept")
 
 
 def check_series(r, games=3, score=(2, 1)):

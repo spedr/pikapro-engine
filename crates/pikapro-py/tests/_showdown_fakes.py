@@ -192,6 +192,17 @@ class Fake:
             self.server = None
 
 
+async def drop(ws) -> None:
+    """Drops a connection after what was sent to it has gone out: Windows'
+    event loop writes in the background, and ``abort()`` discards what it
+    hasn't written."""
+    for _ in range(200):
+        if ws.transport.get_write_buffer_size() == 0:
+            break
+        await asyncio.sleep(0.005)
+    ws.transport.abort()
+
+
 def run(coro, timeout: float = 30.0):
     async def runner():
         # Named so leak checks can tell it apart: before Python 3.12,
@@ -203,6 +214,12 @@ def run(coro, timeout: float = 30.0):
 
 
 RUNNER = "test-runner"
+
+#: How early a timed event may look: asyncio runs a timer up to one clock
+#: tick early, and the tests time with another clock (``time.monotonic``),
+#: so a bound can be missed by two ticks (15.6 ms each on Windows, a
+#: nanosecond elsewhere). Events within a tick get the same time.
+EARLY = 2 * time.get_clock_info("monotonic").resolution
 
 
 async def until(condition: Callable[[], bool], timeout: float = 5.0) -> None:

@@ -20,7 +20,7 @@ pytest.importorskip("websockets")
 
 from pikapro.showdown import BattleRoom, RandomRequestHandler, ShowdownClient  # noqa: E402
 
-from _showdown_fakes import REQUEST, Fake, run, until  # noqa: E402
+from _showdown_fakes import EARLY, REQUEST, Fake, run, until  # noqa: E402
 
 FMT = "gen9championsvgc2026regmc"
 OFFER = (
@@ -139,6 +139,12 @@ class OtsFake(Fake):
     def sent(self, what: str) -> List[Tuple[float, str]]:
         return [(t, m) for t, m in self.times if what in m]
 
+    def in_order(self, *whats: str) -> bool:
+        """The first messages containing each of ``whats`` were sent in this
+        order (their times can be equal: :data:`EARLY`)."""
+        first = [next(i for i, (_, m) in enumerate(self.times) if w in m) for w in whats]
+        return first == sorted(first)
+
 
 async def play(fake: OtsFake, n: int = 1, **kw) -> Tuple[ShowdownClient, Dict[str, BattleRoom]]:
     """Plays the fake's rooms with a ``"mutual"`` client; returns it and
@@ -170,9 +176,10 @@ def test_the_opponent_accepts_so_we_accept_and_the_preview_waits_for_the_sheets(
     [(ta, _)] = fake.sent("/acceptopenteamsheets")
     assert not fake.sent("/rejectopenteamsheets")
     [(tc, _)] = fake.sent("/choose ")
-    assert 0.3 <= ta < tc, "accepted after the opponent; chose after that"
+    assert 0.3 - EARLY <= ta <= tc, "accepted after the opponent"
+    assert fake.in_order("/acceptopenteamsheets", "/choose "), "chose after accepting"
     assert (room.ots_offered, room.ots_foe, room.ots_answer, room.ots_open) == (True, True, True, True)
-    assert 300 <= room.ots_wait_ms < 2000
+    assert 300 - 1000 * EARLY <= room.ots_wait_ms < 2000
     # The preview decision saw the sheets: chosen after the |showteam| lines.
     assert fake.log[room.id].index("|showteam|p2|Pikachu||||Thunderbolt|||||50|") < fake.log[room.id].index("|")
 
@@ -187,9 +194,9 @@ def test_the_opponent_rejects_so_nothing_is_sent_and_the_preview_goes():
     [room] = rooms.values()
     assert not fake.sent("openteamsheets"), "no accept, and no reject after theirs"
     [(tc, _)] = fake.sent("/choose ")
-    assert 0.3 <= tc < 2
+    assert 0.3 - EARLY <= tc < 2
     assert (room.ots_foe, room.ots_answer, room.ots_open) == (False, None, False)
-    assert 300 <= room.ots_wait_ms < 2000
+    assert 300 - 1000 * EARLY <= room.ots_wait_ms < 2000
 
 
 def test_no_answer_rejects_when_the_wait_ends():
@@ -203,9 +210,9 @@ def test_no_answer_rejects_when_the_wait_ends():
     [(tr, _)] = fake.sent("/rejectopenteamsheets")
     assert not fake.sent("/acceptopenteamsheets")
     [(tc, _)] = fake.sent("/choose ")
-    assert 0.5 <= tr <= tc < 2, "the preview decision was held until the reject"
+    assert 0.5 - EARLY <= tr <= tc < 2, "the preview decision was held until the reject"
     assert (room.ots_foe, room.ots_answer, room.ots_open) == (None, False, False)
-    assert 500 <= room.ots_wait_ms < 2000
+    assert 500 - 1000 * EARLY <= room.ots_wait_ms < 2000
 
 
 def test_an_acceptance_after_the_wait_comes_too_late():
@@ -245,7 +252,8 @@ def test_an_acceptance_before_the_request_is_answered_at_once():
     [room] = rooms.values()
     [(ta, _)] = fake.sent("/acceptopenteamsheets")
     [(tc, _)] = fake.sent("/choose ")
-    assert ta < tc < 0.5 and room.ots_open
+    assert ta <= tc < 0.5 and room.ots_open
+    assert fake.in_order("/acceptopenteamsheets", "/choose ")
 
 
 def test_a_held_room_does_not_hold_the_others():
@@ -258,8 +266,8 @@ def test_a_held_room_does_not_hold_the_others():
     chosen = {m.split("|")[0]: t for t, m in fake.sent("/choose ")}
     ids = sorted(rooms, key=lambda r: int(r.rsplit("-", 1)[1]))
     assert chosen[ids[1]] < 0.2, "the room without an offer went at once"
-    assert 0.2 <= chosen[ids[2]] < 0.8, "the accepted one went after the sheets"
-    assert chosen[ids[0]] >= 0.8, "the unanswered one after its wait"
+    assert 0.2 - EARLY <= chosen[ids[2]] < 0.8, "the accepted one went after the sheets"
+    assert chosen[ids[0]] >= 0.8 - EARLY, "the unanswered one after its wait"
     assert [rooms[i].ots_open for i in ids] == [False, False, True]
 
 
@@ -275,7 +283,7 @@ def test_the_room_ending_during_the_wait_sends_nothing():
     assert not fake.sent("openteamsheets") and not fake.sent("/choose ")
     [r] = c.results
     assert r.won and r.finished
-    assert 200 <= room.ots_wait_ms < 500
+    assert 200 - 1000 * EARLY <= room.ots_wait_ms < 500
 
 
 def test_a_reconnect_during_the_wait_keeps_the_wait():
@@ -294,9 +302,9 @@ def test_a_reconnect_during_the_wait_keeps_the_wait():
     [(tj, _)] = fake.sent("/join ")
     [(tr, _)] = fake.sent("/rejectopenteamsheets")
     [(tc, _)] = fake.sent("/choose ")
-    assert tj < 2.0 <= tr <= tc < 3.0
+    assert tj < 2.0 - EARLY <= tr <= tc < 3.0
     [room] = rooms.values()
-    assert 2000 <= room.ots_wait_ms < 3000
+    assert 2000 - 1000 * EARLY <= room.ots_wait_ms < 3000
     assert len(c.results) == 1 and c.results[0].won
 
 
