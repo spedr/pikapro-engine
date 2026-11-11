@@ -1,0 +1,718 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed d334 7dba 76bd 2db2
+genders drawn
+team p1
+Venusaur @ Venusaurite
+Ability: Overgrow
+Level: 50
+Tera Type: Ground
+EVs: 19 HP / 14 Def / 6 SpA / 27 SpD
+Careful Nature
+- Lava Plume
+
+Sir Hops-a-Lot (Aggron) @ Aggronite
+Ability: Sturdy
+Level: 50
+Tera Type: Dragon
+EVs: 10 HP / 11 Def / 13 SpA / 32 Spe
+Adamant Nature
+- Attract
+
+Alcremie-Lemon-Cream (F) @ Life Orb
+Ability: Aroma Veil
+Level: 50
+Tera Type: Steel
+EVs: 31 HP / 4 SpA / 28 SpD / 2 Spe
+Serious Nature
+- Protect
+- Slash
+
+Squawkabilly-Yellow (M)
+Ability: Intimidate
+Level: 50
+Tera Type: Grass
+EVs: 8 Atk / 16 SpA / 10 SpD / 29 Spe
+Calm Nature
+- Memento
+- Heat Crash
+- Triple Arrows
+
+Emolga @ Twisted Spoon
+Ability: Static
+Level: 50
+Tera Type: Ghost
+EVs: 30 Atk / 1 Def / 2 SpA / 3 SpD / 30 Spe
+Hasty Nature
+- Reversal
+- Screech
+- Seed Bomb
+
+Pikachu (Pelipper) @ Bright Powder
+Ability: Rain Dish
+Level: 50
+Tera Type: Ground
+EVs: 25 HP / 9 Atk / 30 Def / 2 SpD
+Lonely Nature
+- Hypnosis
+- Lava Plume
+end
+team p2
+Whimsicott (F) @ Rocky Helmet
+Ability: Infiltrator
+Level: 50
+Tera Type: Dark
+EVs: 10 HP / 4 Atk / 4 Def / 27 SpA / 21 SpD
+Bashful Nature
+- Spirit Shackle
+- Quick Guard
+- Fissure
+- Thunderbolt
+
+Aggron @ Aggronite
+Ability: Sturdy
+Level: 50
+Tera Type: Poison
+EVs: 14 Atk / 5 Def / 10 SpA / 2 SpD / 32 Spe
+Timid Nature
+- Psyshield Bash
+- Breaking Swipe
+
+Typhlosion
+Ability: Flash Fire
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 32 HP / 1 Def / 31 SpA / 2 SpD
+Gentle Nature
+- Lumina Crash
+- Dynamic Punch
+
+Palafin (F) @ Light Ball
+Ability: Zero to Hero
+Level: 50
+Shiny: Yes
+Tera Type: Normal
+EVs: 22 HP / 20 Atk / 1 Def / 17 SpA / 6 Spe
+Bashful Nature
+- Leech Life
+- Bitter Malice
+- Inferno
+- Struggle
+
+X (Alcremie) (F)
+Ability: Aroma Veil
+Level: 50
+Tera Type: Poison
+EVs: 14 HP / 2 Atk / 17 Def / 6 SpD / 27 Spe
+Bold Nature
+- Psychic Fangs
+- String Shot
+- Vacuum Wave
+
+Feraligatr @ Feraligite
+Ability: Torrent
+Level: 50
+Tera Type: Poison
+EVs: 11 HP / 2 Atk / 27 Def / 1 SpA / 15 SpD / 6 Spe
+Adamant Nature
+- Aerial Ace
+- Bounce
+end
+choice p1 team 564
+choice p2 team [5, 6, 3]
+choice p1 switch 2
+choice p2 move vacuumwave
+choice p1 default
+choice p2 switch 2
+choice p1 move 2
+choice p2 switch typhlosion
+choice p1 switch 2
+choice p2 switch Feraligatr
+choice p1 move 3
+choice p2 move 2
+choice p1 move 2
+choice p2 move 1
+choice p1 move 3
+choice p2 move bounce
+choice p1 switch 2
+choice p2 move 1
+choice p1 switch 3
+choice p2 switch 2
+choice p1 move 1
+choice p2 move 2
+choice p1 switch 3
+choice p2 switch 2
+choice p1 move 1
+choice p2 move Bounce mega
+choice p1 move 2
+choice p2 move 1
+choice p1 switch emolga
+choice p2 default
+choice p1 move 2
+choice p2 default
+choice p1 move 1
+choice p2 move 2
+choice p1 default
+choice p2 switch 2
+choice p1 move 1
+choice p2 move 3
+choice p1 switch 2
+choice p2 move 3
+choice p1 move 1
+choice p2 switch 3
+choice p1 switch 2
+choice p2 move 2
+choice p1 default
+choice p2 move luminacrash
+choice p1 default
+choice p2 move Dynamic Punch
+choice p1 default
+choice p2 switch 3
+choice p1 move 1
+choice p2 default
+choice p1 default
+choice p2 move 3
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 move 2
+choice p2 move 1
+choice p1 move Hypnosis
+choice p2 move 3
+choice p1 move 2
+choice p2 move 1
+choice p1 move 2
+choice p2 switch 3
+choice p1 move 2
+choice p2 default
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Venusaur, L50, M|
+expect |poke|p1|Aggron, L50, F|
+expect |poke|p1|Alcremie-Lemon-Cream, L50, F|
+expect |poke|p1|Squawkabilly-Yellow, L50, M|
+expect |poke|p1|Emolga, L50, M|
+expect |poke|p1|Pelipper, L50, F|
+expect |poke|p2|Whimsicott, L50, F|
+expect |poke|p2|Aggron, L50, M|
+expect |poke|p2|Typhlosion, L50, F, shiny|
+expect |poke|p2|Palafin, L50, F, shiny|
+expect |poke|p2|Alcremie, L50, F|
+expect |poke|p2|Feraligatr, L50, F|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Emolga|Emolga, L50, M|130/130
+expect |switch|p1a: Emolga|Emolga, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: X|Alcremie, L50, F|154/154
+expect |switch|p2a: X|Alcremie, L50, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Pelipper, L50, F|160/160
+expect |switch|p1a: Pikachu|Pelipper, L50, F|100/100
+expect |move|p2a: X|Vacuum Wave|p1a: Pikachu
+expect |rng|100|3
+expect |rng|24|13
+expect |rng|16|11
+expect |-resisted|p1a: Pikachu|1
+expect |split|p1
+expect |-damage|p1a: Pikachu|149/160
+expect |-damage|p1a: Pikachu|93/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|171/171
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|100/100
+expect |move|p1a: Pikachu|Hypnosis|p2a: Feraligatr|[miss]
+expect |rng|100|81
+expect |-miss|p1a: Pikachu|p2a: Feraligatr
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Typhlosion|Typhlosion, L50, F, shiny|185/185
+expect |switch|p2a: Typhlosion|Typhlosion, L50, F, shiny|100/100
+expect |move|p1a: Pikachu|Lava Plume|p2a: Typhlosion
+expect |-start|p2a: Typhlosion|ability: Flash Fire
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |-end|p2a: Typhlosion|ability: Flash Fire|[silent]
+expect |split|p2
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|171/171
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|100/100
+expect |split|p1
+expect |switch|p1a: Emolga|Emolga, L50, M|130/130
+expect |switch|p1a: Emolga|Emolga, L50, M|100/100
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1a: Emolga|Seed Bomb|p2a: Feraligatr
+expect |rng|100|95
+expect |rng|24|15
+expect |rng|16|7
+expect |-supereffective|p2a: Feraligatr|1
+expect |split|p2
+expect |-damage|p2a: Feraligatr|115/171
+expect |-damage|p2a: Feraligatr|67/100
+expect |move|p2a: Feraligatr|Bounce||[still]
+expect |-prepare|p2a: Feraligatr|Bounce
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p1a: Emolga|Screech|p2a: Feraligatr|[miss]
+expect |-miss|p1a: Emolga|p2a: Feraligatr
+expect |move|p2a: Feraligatr|Bounce|p1a: Emolga|[from] lockedmove
+expect |rng|100|65
+expect |rng|24|7
+expect |rng|16|5
+expect |-resisted|p1a: Emolga|1
+expect |split|p1
+expect |-damage|p1a: Emolga|95/130
+expect |-damage|p1a: Emolga|73/100
+expect |rng|100|55
+expect |rng|10|8
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1a: Emolga|Seed Bomb|p2a: Feraligatr
+expect |rng|100|83
+expect |rng|24|13
+expect |rng|16|3
+expect |-supereffective|p2a: Feraligatr|1
+expect |split|p2
+expect |-damage|p2a: Feraligatr|55/171
+expect |-damage|p2a: Feraligatr|32/100
+expect |move|p2a: Feraligatr|Bounce||[still]
+expect |-prepare|p2a: Feraligatr|Bounce
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Pelipper, L50, F|149/160
+expect |switch|p1a: Pikachu|Pelipper, L50, F|93/100
+expect |move|p2a: Feraligatr|Bounce|p1a: Pikachu|[from] lockedmove
+expect |rng|100|35
+expect |rng|24|19
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Pikachu|113/160
+expect |-damage|p1a: Pikachu|70/100
+expect |rng|100|53
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Alcremie, L50, F|154/154
+expect |switch|p2a: X|Alcremie, L50, F|100/100
+expect |split|p1
+expect |switch|p1a: Squawkabilly|Squawkabilly-Yellow, L50, M|157/157
+expect |switch|p1a: Squawkabilly|Squawkabilly-Yellow, L50, M|100/100
+expect |-ability|p1a: Squawkabilly|Intimidate|boost
+expect |-unboost|p2a: X|atk|1
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1a: Squawkabilly|Memento|p2a: X
+expect |rng|100|68
+expect |-unboost|p2a: X|atk|2
+expect |-unboost|p2a: X|spa|2
+expect |faint|p1a: Squawkabilly
+expect |move|p2a: X|String Shot|p1: Squawkabilly|[notarget]
+expect |-fail|p2a: X
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Pelipper, L50, F|113/160
+expect |switch|p1a: Pikachu|Pelipper, L50, F|70/100
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|55/171
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|32/100
+expect |move|p1a: Pikachu|Hypnosis|p2a: Feraligatr
+expect |rng|100|38
+expect |-status|p2a: Feraligatr|slp|[from] move: Hypnosis
+expect |rng|3|1
+expect |
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |detailschange|p2a: Feraligatr|Feraligatr-Mega, L50, F
+expect |-mega|p2a: Feraligatr|Feraligatr|Feraligite
+expect |cant|p2a: Feraligatr|slp
+expect |move|p1a: Pikachu|Lava Plume|p2a: Feraligatr
+expect |rng|100|15
+expect |rng|24|16
+expect |rng|16|14
+expect |-resisted|p2a: Feraligatr|2
+expect |split|p2
+expect |-damage|p2a: Feraligatr|48/171 slp
+expect |-damage|p2a: Feraligatr|28/100 slp
+expect |rng|100|96
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Emolga|Emolga, L50, M|95/130
+expect |switch|p1a: Emolga|Emolga, L50, M|73/100
+expect |cant|p2a: Feraligatr|slp
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p1a: Emolga|Screech|p2a: Feraligatr
+expect |rng|100|67
+expect |-unboost|p2a: Feraligatr|def|2
+expect |-curestatus|p2a: Feraligatr|slp|[msg]
+expect |move|p2a: Feraligatr|Aerial Ace|p1a: Emolga
+expect |rng|24|6
+expect |rng|16|1
+expect |-resisted|p1a: Emolga|1
+expect |split|p1
+expect |-damage|p1a: Emolga|58/130
+expect |-damage|p1a: Emolga|44/100
+expect |rng|10|7
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p1a: Emolga|Reversal|p2a: Feraligatr
+expect |rng|100|12
+expect |rng|24|18
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Feraligatr|25/171
+expect |-damage|p2a: Feraligatr|14/100
+expect |move|p2a: Feraligatr|Aerial Ace|p1a: Emolga
+expect |rng|24|2
+expect |rng|16|2
+expect |-resisted|p1a: Emolga|1
+expect |split|p1
+expect |-damage|p1a: Emolga|22/130
+expect |-damage|p1a: Emolga|16/100
+expect |rng|10|5
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p1a: Emolga|Reversal|p2a: Feraligatr
+expect |rng|100|31
+expect |rng|24|4
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Feraligatr|0 fnt
+expect |-damage|p2a: Feraligatr|0 fnt
+expect |faint|p2a: Feraligatr
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Alcremie, L50, F|154/154
+expect |switch|p2a: X|Alcremie, L50, F|100/100
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p2a: X|Vacuum Wave|p1a: Emolga
+expect |rng|100|96
+expect |rng|24|7
+expect |rng|16|4
+expect |-resisted|p1a: Emolga|1
+expect |split|p1
+expect |-damage|p1a: Emolga|9/130
+expect |-damage|p1a: Emolga|6/100
+expect |move|p1a: Emolga|Reversal|p2a: X
+expect |rng|100|52
+expect |rng|24|16
+expect |rng|16|14
+expect |-resisted|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|125/154
+expect |-damage|p2a: X|81/100
+expect |
+expect |upkeep
+expect |turn|18
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Pelipper, L50, F|113/160
+expect |switch|p1a: Pikachu|Pelipper, L50, F|70/100
+expect |move|p2a: X|Vacuum Wave|p1a: Pikachu|[miss]
+expect |rng|100|96
+expect |-miss|p2a: X|p1a: Pikachu
+expect |
+expect |upkeep
+expect |turn|19
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Typhlosion|Typhlosion, L50, F, shiny|185/185
+expect |switch|p2a: Typhlosion|Typhlosion, L50, F, shiny|100/100
+expect |move|p1a: Pikachu|Hypnosis|p2a: Typhlosion
+expect |rng|100|41
+expect |-status|p2a: Typhlosion|slp|[from] move: Hypnosis
+expect |rng|3|1
+expect |
+expect |upkeep
+expect |turn|20
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Emolga|Emolga, L50, M|9/130
+expect |switch|p1a: Emolga|Emolga, L50, M|6/100
+expect |cant|p2a: Typhlosion|slp
+expect |
+expect |upkeep
+expect |turn|21
+expect |
+expect |t:|
+expect |move|p1a: Emolga|Reversal|p2a: Typhlosion
+expect |rng|100|28
+expect |rng|24|11
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Typhlosion|101/185 slp
+expect |-damage|p2a: Typhlosion|54/100 slp
+expect |cant|p2a: Typhlosion|slp
+expect |
+expect |upkeep
+expect |turn|22
+expect |
+expect |t:|
+expect |move|p1a: Emolga|Reversal|p2a: Typhlosion
+expect |rng|100|41
+expect |rng|24|13
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Typhlosion|11/185 slp
+expect |-damage|p2a: Typhlosion|5/100 slp
+expect |-curestatus|p2a: Typhlosion|slp|[msg]
+expect |move|p2a: Typhlosion|Dynamic Punch|p1a: Emolga|[miss]
+expect |rng|100|79
+expect |-miss|p2a: Typhlosion|p1a: Emolga
+expect |
+expect |upkeep
+expect |turn|23
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Alcremie, L50, F|125/154
+expect |switch|p2a: X|Alcremie, L50, F|81/100
+expect |move|p1a: Emolga|Reversal|p2a: X
+expect |rng|100|67
+expect |rng|24|13
+expect |rng|16|9
+expect |-resisted|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|94/154
+expect |-damage|p2a: X|61/100
+expect |
+expect |upkeep
+expect |turn|24
+expect |
+expect |t:|
+expect |move|p1a: Emolga|Reversal|p2a: X
+expect |rng|100|43
+expect |rng|24|8
+expect |rng|16|13
+expect |-resisted|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|64/154
+expect |-damage|p2a: X|41/100
+expect |move|p2a: X|Psychic Fangs|p1a: Emolga
+expect |rng|100|79
+expect |rng|24|9
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Emolga|0 fnt
+expect |-damage|p1a: Emolga|0 fnt
+expect |rng|10|8
+expect |faint|p1a: Emolga
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Pelipper, L50, F|113/160
+expect |switch|p1a: Pikachu|Pelipper, L50, F|70/100
+expect |turn|25
+expect |
+expect |t:|
+expect |move|p2a: X|Vacuum Wave|p1a: Pikachu
+expect |rng|100|65
+expect |rng|24|4
+expect |rng|16|11
+expect |-resisted|p1a: Pikachu|1
+expect |split|p1
+expect |-damage|p1a: Pikachu|102/160
+expect |-damage|p1a: Pikachu|63/100
+expect |move|p1a: Pikachu|Hypnosis|p2a: X|[miss]
+expect |rng|100|90
+expect |-miss|p1a: Pikachu|p2a: X
+expect |
+expect |upkeep
+expect |turn|26
+expect |
+expect |t:|
+expect |move|p2a: X|Psychic Fangs|p1a: Pikachu
+expect |rng|100|2
+expect |rng|24|21
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Pikachu|83/160
+expect |-damage|p1a: Pikachu|51/100
+expect |move|p1a: Pikachu|Hypnosis|p2a: X|[miss]
+expect |rng|100|93
+expect |-miss|p1a: Pikachu|p2a: X
+expect |
+expect |upkeep
+expect |turn|27
+expect |
+expect |t:|
+expect |move|p2a: X|Psychic Fangs|p1a: Pikachu
+expect |rng|100|45
+expect |rng|24|22
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Pikachu|62/160
+expect |-damage|p1a: Pikachu|38/100
+expect |move|p1a: Pikachu|Lava Plume|p2a: X
+expect |rng|100|88
+expect |rng|24|4
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: X|36/154
+expect |-damage|p2a: X|23/100
+expect |rng|100|80
+expect |
+expect |upkeep
+expect |turn|28
+expect |
+expect |t:|
+expect |move|p2a: X|Psychic Fangs|p1a: Pikachu
+expect |rng|100|53
+expect |rng|24|6
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Pikachu|41/160
+expect |-damage|p1a: Pikachu|25/100
+expect |move|p1a: Pikachu|Hypnosis|p2a: X|[miss]
+expect |rng|100|91
+expect |-miss|p1a: Pikachu|p2a: X
+expect |
+expect |upkeep
+expect |turn|29
+expect |
+expect |t:|
+expect |move|p2a: X|Vacuum Wave|p1a: Pikachu
+expect |rng|100|81
+expect |rng|24|23
+expect |rng|16|0
+expect |-resisted|p1a: Pikachu|1
+expect |split|p1
+expect |-damage|p1a: Pikachu|28/160
+expect |-damage|p1a: Pikachu|17/100
+expect |move|p1a: Pikachu|Lava Plume|p2a: X
+expect |rng|100|34
+expect |rng|24|8
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: X|8/154
+expect |-damage|p2a: X|5/100
+expect |rng|100|36
+expect |
+expect |upkeep
+expect |turn|30
+expect |
+expect |t:|
+expect |move|p2a: X|Psychic Fangs|p1a: Pikachu
+expect |rng|100|21
+expect |rng|24|8
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Pikachu|9/160
+expect |-damage|p1a: Pikachu|5/100
+expect |move|p1a: Pikachu|Lava Plume|p2a: X
+expect |rng|100|0
+expect |rng|24|5
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: X|0 fnt
+expect |-damage|p2a: X|0 fnt
+expect |rng|100|21
+expect |faint|p2a: X
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Typhlosion|Typhlosion, L50, F, shiny|11/185
+expect |switch|p2a: Typhlosion|Typhlosion, L50, F, shiny|5/100
+expect |turn|31
+expect |
+expect |t:|
+expect |move|p2a: Typhlosion|Lumina Crash|p1a: Pikachu
+expect |rng|100|43
+expect |rng|24|19
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Pikachu|0 fnt
+expect |-damage|p1a: Pikachu|0 fnt
+expect |rng|100|30
+expect |faint|p1a: Pikachu
+expect |
+expect |win|p2

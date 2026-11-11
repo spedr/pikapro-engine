@@ -1,0 +1,762 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 31a4 b97c 0a97 c235
+genders drawn
+team p1
+Nibbles (Excadrill) (M) @ Excadrite
+Ability: Sand Force
+Level: 50
+Tera Type: Electric
+EVs: 27 Atk / 15 Def / 10 SpA / 14 SpD
+Gentle Nature
+- Lumina Crash
+- Struggle
+- Throat Chop
+- Mirror Coat
+
+Jolteon
+Ability: Quick Feet
+Level: 50
+Tera Type: Normal
+EVs: 3 HP / 16 Def / 12 SpA / 2 SpD / 31 Spe
+Bashful Nature
+- Headlong Rush
+- Rage Fist
+
+X (Vivillon-Pokeball) (M)
+Ability: Compound Eyes
+Level: 50
+Shiny: Yes
+Tera Type: Dark
+EVs: 12 HP / 5 Atk / 26 SpA / 23 SpD
+Calm Nature
+- Night Slash
+- Spit Up
+- Forest's Curse
+
+Typhlosion @ Hard Stone
+Ability: Blaze
+Level: 50
+Tera Type: Psychic
+EVs: 4 HP / 7 Atk / 29 Def / 16 SpA / 3 SpD / 2 Spe
+Adamant Nature
+- Revival Blessing
+
+Arboliva @ Terrain Extender
+Ability: Harvest
+Level: 50
+Tera Type: Dragon
+EVs: 9 HP / 21 Atk / 7 SpA / 14 SpD
+Lax Nature
+- Explosion
+
+Vivillon-Modern (F)
+Ability: Compound Eyes
+Level: 50
+Tera Type: Ice
+EVs: 8 HP / 3 Atk / 10 Def / 21 SpA / 5 SpD / 16 Spe
+Relaxed Nature
+- Dragon Rush
+- Stun Spore
+- Dragon Cheer
+end
+team p2
+Mudsdale @ Silk Scarf
+Ability: Inner Focus
+Level: 50
+Tera Type: Dragon
+EVs: 7 HP / 3 Atk / 23 Def / 1 SpA / 3 SpD / 21 Spe
+Mild Nature
+- Dig
+
+Kleavor
+Ability: Sheer Force
+Level: 50
+Tera Type: Rock
+EVs: 28 Atk / 30 Def / 8 SpD
+Bold Nature
+- Torment
+- Scale Shot
+- Sleep Talk
+
+Nibbles (Arcanine-Hisui)
+Ability: Flash Fire
+Level: 50
+Tera Type: Electric
+EVs: 5 HP / 23 Atk / 2 Def / 17 SpA / 4 SpD / 14 Spe
+Adamant Nature
+- Whirlpool
+- Dark Pulse
+- Blast Burn
+
+Vivillon-Ocean @ Chesto Berry
+Ability: Friend Guard
+Level: 50
+Tera Type: Steel
+EVs: 12 HP / 12 Atk / 3 Def / 8 SpA / 23 SpD / 7 Spe
+Quirky Nature
+- Twin Beam
+- Jaw Lock
+- Extreme Speed
+- Assurance
+
+Mr. Bubbles (Passimian) (M) @ Soft Sand
+Ability: Receiver
+Level: 50
+Tera Type: Stellar
+EVs: 31 HP / 2 Atk / 1 Def / 1 SpA / 3 SpD / 18 Spe
+Calm Nature
+- Chilling Water
+- Charge
+- Recycle
+- Dire Claw
+
+Ceruledge @ Never-Melt Ice
+Ability: Weak Armor
+Level: 50
+Tera Type: Grass
+EVs: 5 HP / 1 Atk / 24 Def / 8 SpA / 28 Spe
+Rash Nature
+- Quiver Dance
+end
+choice p1 team 6142
+choice p2 team 5136
+choice p1 move 1 2, move 3 2
+choice p2 move 2, move 1 1
+choice p1 move Stun Spore -2 ,  move struggle mega
+choice p2 default
+choice p1 move 2 -2 ,  move Lumina Crash +2
+choice p2 move 4 2, switch 4
+choice p1 move 1 -2, move 3 1
+choice p2 move Recycle,switch mudsdale
+choice p1 move 3 -2, move 4
+choice p2 move 1 2, switch 3
+choice p1 move stunspore -2 ,  move 3 +1
+choice p2 move 2, move 1 1
+choice p1 move dragonrush 1,move throatchop 1
+choice p2 move 1 2, move 1 2
+choice p1 move 3 -2 ,  move Throat Chop 1
+choice p2 move 3,move 2 1
+choice p1 move 1 1, switch 4
+choice p2 move 1 -2, switch 4
+choice p1 switch 4, move 1 -1
+choice p2 move 2, switch 3
+choice p1 default
+choice p2 move 3, move 1 2
+choice p1 switch 4, move 2 2
+choice p2 move 1 1, move 1
+choice p1 switch 3, switch 4
+choice p2 move 2, move 1 2
+choice p1 move revivalblessing ,  move 1 +1
+choice p1 switch 4, skip
+choice p2 move 1 1, move 1
+choice p1 switch 4, move 1 2
+choice p1 pass, switch 4
+choice p2 move chillingwater 2 ,  move Dig -1
+choice p1 move 2 -2, move 1
+choice p2 switch 4, move 1
+choice p1 move 1 -2, move 1
+choice p2 switch 4, pass
+choice p1 move 1 1, pass
+choice p2 move 1 -2, move 1 1
+choice p1 default
+choice p2 move 1 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Excadrill, L50, M|
+expect |poke|p1|Jolteon, L50, F|
+expect |poke|p1|Vivillon-Pokeball, L50, M, shiny|
+expect |poke|p1|Typhlosion, L50, M|
+expect |poke|p1|Arboliva, L50, F|
+expect |poke|p1|Vivillon-Modern, L50, F|
+expect |poke|p2|Mudsdale, L50, F|
+expect |poke|p2|Kleavor, L50, M|
+expect |poke|p2|Arcanine-Hisui, L50, M|
+expect |poke|p2|Vivillon-Ocean, L50, M|
+expect |poke|p2|Passimian, L50, M|
+expect |poke|p2|Ceruledge, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Modern, L50, F|163/163
+expect |switch|p1a: Vivillon|Vivillon-Modern, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Nibbles|Excadrill, L50, M|185/185
+expect |switch|p1b: Nibbles|Excadrill, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Mr. Bubbles|Passimian, L50, M|206/206
+expect |switch|p2a: Mr. Bubbles|Passimian, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Mudsdale|Mudsdale, L50, F|182/182
+expect |switch|p2b: Mudsdale|Mudsdale, L50, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Mr. Bubbles|Charge|p2a: Mr. Bubbles
+expect |-boost|p2a: Mr. Bubbles|spd|1
+expect |-start|p2a: Mr. Bubbles|Charge
+expect |move|p1a: Vivillon|Dragon Rush|p2b: Mudsdale
+expect |rng|100|87
+expect |rng|24|5
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Mudsdale|157/182
+expect |-damage|p2b: Mudsdale|86/100
+expect |rng|100|29
+expect |move|p1b: Nibbles|Throat Chop|p2b: Mudsdale
+expect |rng|100|98
+expect |rng|24|16
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Mudsdale|109/182
+expect |-damage|p2b: Mudsdale|59/100
+expect |rng|100|46
+expect |-start|p2b: Mudsdale|Throat Chop|[silent]
+expect |move|p2b: Mudsdale|Dig||[still]
+expect |-prepare|p2b: Mudsdale|Dig
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |detailschange|p1b: Nibbles|Excadrill-Mega, L50, M
+expect |-mega|p1b: Nibbles|Excadrill|Excadrite
+expect |rng|2|0
+expect |rng|2|1
+expect |-activate|p1b: Nibbles|move: Struggle
+expect |move|p1b: Nibbles|Struggle|p2b: Mudsdale|[miss]
+expect |-miss|p1b: Nibbles|p2b: Mudsdale
+expect |move|p2a: Mr. Bubbles|Chilling Water|p1a: Vivillon
+expect |rng|100|33
+expect |rng|24|5
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Vivillon|147/163
+expect |-damage|p1a: Vivillon|90/100
+expect |rng|100|14
+expect |-unboost|p1a: Vivillon|atk|1
+expect |move|p1a: Vivillon|Stun Spore|p1b: Nibbles
+expect |rng|100|68
+expect |-status|p1b: Nibbles|par
+expect |move|p2b: Mudsdale|Dig|p1a: Vivillon|[from] lockedmove
+expect |-immune|p1a: Vivillon
+expect |
+expect |-end|p2b: Mudsdale|Throat Chop|[silent]
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Ceruledge|Ceruledge, L50, F|155/155
+expect |switch|p2b: Ceruledge|Ceruledge, L50, F|100/100
+expect |move|p2a: Mr. Bubbles|Dire Claw|p1b: Nibbles
+expect |-immune|p1b: Nibbles
+expect |move|p1a: Vivillon|Stun Spore|p1b: Nibbles
+expect |rng|100|65
+expect |-fail|p1b: Nibbles|par
+expect |rng|8|2
+expect |move|p1b: Nibbles|Lumina Crash|p2b: Ceruledge
+expect |rng|100|56
+expect |rng|24|22
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Ceruledge|124/155
+expect |-damage|p2b: Ceruledge|80/100
+expect |rng|100|77
+expect |-unboost|p2b: Ceruledge|spd|2
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Mudsdale|Mudsdale, L50, F|109/182
+expect |switch|p2b: Mudsdale|Mudsdale, L50, F|59/100
+expect |move|p2a: Mr. Bubbles|Recycle||[still]
+expect |-fail|p2a: Mr. Bubbles
+expect |move|p1a: Vivillon|Dragon Rush|p1b: Nibbles
+expect |rng|100|53
+expect |rng|24|20
+expect |rng|16|5
+expect |-resisted|p1b: Nibbles|1
+expect |split|p1
+expect |-damage|p1b: Nibbles|176/185 par
+expect |-damage|p1b: Nibbles|95/100 par
+expect |rng|100|3
+expect |cant|p1b: Nibbles|flinch
+expect |
+expect |upkeep
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Nibbles|Arcanine-Hisui, L50, M|175/175
+expect |switch|p2b: Nibbles|Arcanine-Hisui, L50, M|100/100
+expect |move|p2a: Mr. Bubbles|Chilling Water|p1b: Nibbles
+expect |rng|100|82
+expect |rng|24|20
+expect |rng|16|10
+expect |-supereffective|p1b: Nibbles|1
+expect |split|p1
+expect |-damage|p1b: Nibbles|152/185 par
+expect |-damage|p1b: Nibbles|82/100 par
+expect |rng|100|55
+expect |-unboost|p1b: Nibbles|atk|1
+expect |move|p1a: Vivillon|Dragon Cheer|p1b: Nibbles
+expect |-start|p1b: Nibbles|move: Dragon Cheer
+expect |rng|8|0
+expect |cant|p1b: Nibbles|par
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2b: Nibbles|Whirlpool|p1a: Vivillon
+expect |rng|100|70
+expect |rng|24|22
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Vivillon|122/163
+expect |-damage|p1a: Vivillon|74/100
+expect |rng|2|1
+expect |-activate|p1a: Vivillon|move: Whirlpool|[of] p2b: Nibbles
+expect |move|p2a: Mr. Bubbles|Charge|p2a: Mr. Bubbles
+expect |-boost|p2a: Mr. Bubbles|spd|1
+expect |-start|p2a: Mr. Bubbles|Charge
+expect |move|p1a: Vivillon|Stun Spore|p1b: Nibbles
+expect |rng|100|12
+expect |-fail|p1b: Nibbles|par
+expect |rng|8|6
+expect |move|p1b: Nibbles|Throat Chop|p2a: Mr. Bubbles
+expect |rng|100|98
+expect |rng|8|2
+expect |rng|16|7
+expect |-resisted|p2a: Mr. Bubbles|1
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|185/206
+expect |-damage|p2a: Mr. Bubbles|89/100
+expect |rng|100|98
+expect |-start|p2a: Mr. Bubbles|Throat Chop|[silent]
+expect |
+expect |split|p1
+expect |-damage|p1a: Vivillon|102/163|[from] move: Whirlpool|[partiallytrapped]
+expect |-damage|p1a: Vivillon|62/100|[from] move: Whirlpool|[partiallytrapped]
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2b: Nibbles|Whirlpool|p1b: Nibbles|[miss]
+expect |rng|100|88
+expect |-miss|p2b: Nibbles|p1b: Nibbles
+expect |move|p2a: Mr. Bubbles|Chilling Water|p1b: Nibbles
+expect |rng|100|12
+expect |rng|24|9
+expect |rng|16|12
+expect |-supereffective|p1b: Nibbles|1
+expect |split|p1
+expect |-damage|p1b: Nibbles|128/185 par
+expect |-damage|p1b: Nibbles|69/100 par
+expect |rng|100|44
+expect |-unboost|p1b: Nibbles|atk|1
+expect |move|p1a: Vivillon|Dragon Rush|p2a: Mr. Bubbles
+expect |rng|100|18
+expect |rng|24|2
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|165/206
+expect |-damage|p2a: Mr. Bubbles|80/100
+expect |rng|100|1
+expect |rng|8|5
+expect |move|p1b: Nibbles|Throat Chop|p2a: Mr. Bubbles
+expect |rng|100|80
+expect |rng|8|5
+expect |rng|16|14
+expect |-resisted|p2a: Mr. Bubbles|1
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|150/206
+expect |-damage|p2a: Mr. Bubbles|72/100
+expect |rng|100|24
+expect |
+expect |split|p1
+expect |-damage|p1a: Vivillon|82/163|[from] move: Whirlpool|[partiallytrapped]
+expect |-damage|p1a: Vivillon|50/100g|[from] move: Whirlpool|[partiallytrapped]
+expect |-end|p2a: Mr. Bubbles|Throat Chop|[silent]
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2b: Nibbles|Dark Pulse|p1a: Vivillon
+expect |rng|100|94
+expect |rng|24|9
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Vivillon|29/163
+expect |-damage|p1a: Vivillon|17/100
+expect |rng|100|85
+expect |move|p2a: Mr. Bubbles|Recycle||[still]
+expect |-fail|p2a: Mr. Bubbles
+expect |move|p1a: Vivillon|Dragon Cheer||[still]
+expect |-fail|p1a: Vivillon
+expect |rng|8|0
+expect |cant|p1b: Nibbles|par
+expect |
+expect |split|p1
+expect |-damage|p1a: Vivillon|9/163|[from] move: Whirlpool|[partiallytrapped]
+expect |-damage|p1a: Vivillon|5/100|[from] move: Whirlpool|[partiallytrapped]
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Ceruledge|Ceruledge, L50, F|124/155
+expect |switch|p2b: Ceruledge|Ceruledge, L50, F|80/100
+expect |split|p1
+expect |switch|p1b: Jolteon|Jolteon, L50, F|143/143
+expect |switch|p1b: Jolteon|Jolteon, L50, F|100/100
+expect |move|p2a: Mr. Bubbles|Chilling Water|p2b: Ceruledge
+expect |rng|100|15
+expect |rng|24|2
+expect |rng|16|5
+expect |-supereffective|p2b: Ceruledge|1
+expect |split|p2
+expect |-damage|p2b: Ceruledge|98/155
+expect |-damage|p2b: Ceruledge|63/100
+expect |rng|100|11
+expect |-unboost|p2b: Ceruledge|atk|1
+expect |move|p1a: Vivillon|Dragon Rush|p2a: Mr. Bubbles
+expect |rng|100|67
+expect |rng|24|23
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|132/206
+expect |-damage|p2a: Mr. Bubbles|64/100
+expect |rng|100|18
+expect |
+expect |-end|p1a: Vivillon|Whirlpool|[partiallytrapped]|[silent]
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Mudsdale|Mudsdale, L50, F|109/182
+expect |switch|p2b: Mudsdale|Mudsdale, L50, F|59/100
+expect |split|p1
+expect |switch|p1a: Nibbles|Excadrill-Mega, L50, M|128/185 par
+expect |switch|p1a: Nibbles|Excadrill-Mega, L50, M|69/100 par
+expect |move|p1b: Jolteon|Headlong Rush|p1a: Nibbles
+expect |rng|100|55
+expect |rng|24|13
+expect |rng|16|2
+expect |-supereffective|p1a: Nibbles|1
+expect |split|p1
+expect |-damage|p1a: Nibbles|52/185 par
+expect |-damage|p1a: Nibbles|28/100 par
+expect |rng|100|99
+expect |-unboost|p1b: Jolteon|def|1
+expect |-unboost|p1b: Jolteon|spd|1
+expect |move|p2a: Mr. Bubbles|Charge|p2a: Mr. Bubbles
+expect |-boost|p2a: Mr. Bubbles|spd|1
+expect |-start|p2a: Mr. Bubbles|Charge
+expect |
+expect |upkeep
+expect |turn|11
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1b: Jolteon|Headlong Rush|p2a: Mr. Bubbles
+expect |rng|100|19
+expect |rng|24|7
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|92/206
+expect |-damage|p2a: Mr. Bubbles|44/100
+expect |rng|100|33
+expect |-unboost|p1b: Jolteon|def|1
+expect |-unboost|p1b: Jolteon|spd|1
+expect |move|p2a: Mr. Bubbles|Recycle||[still]
+expect |-fail|p2a: Mr. Bubbles
+expect |move|p2b: Mudsdale|Dig||[still]
+expect |-prepare|p2b: Mudsdale|Dig
+expect |rng|8|2
+expect |move|p1a: Nibbles|Lumina Crash|p2b: Mudsdale|[miss]
+expect |-miss|p1a: Nibbles|p2b: Mudsdale
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Modern, L50, F|9/163
+expect |switch|p1a: Vivillon|Vivillon-Modern, L50, F|5/100
+expect |move|p1b: Jolteon|Rage Fist|p2b: Mudsdale|[miss]
+expect |-miss|p1b: Jolteon|p2b: Mudsdale
+expect |move|p2a: Mr. Bubbles|Chilling Water|p1a: Vivillon
+expect |rng|100|45
+expect |rng|24|2
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Vivillon|0 fnt
+expect |-damage|p1a: Vivillon|0 fnt
+expect |rng|100|55
+expect |faint|p1a: Vivillon
+expect |move|p2b: Mudsdale|Dig|p1b: Jolteon|[from] lockedmove
+expect |rng|100|2
+expect |rng|24|13
+expect |rng|16|8
+expect |-supereffective|p1b: Jolteon|1
+expect |split|p1
+expect |-damage|p1b: Jolteon|0 fnt
+expect |-damage|p1b: Jolteon|0 fnt
+expect |faint|p1b: Jolteon
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Nibbles|Excadrill-Mega, L50, M|52/185 par
+expect |switch|p1b: Nibbles|Excadrill-Mega, L50, M|28/100 par
+expect |split|p1
+expect |switch|p1a: Typhlosion|Typhlosion, L50, M|157/157
+expect |switch|p1a: Typhlosion|Typhlosion, L50, M|100/100
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1a: Typhlosion|Revival Blessing|p1a: Typhlosion
+expect |
+expect |t:|
+expect |split|p1
+expect |-heal|p1: Jolteon|71/143|[from] move: Revival Blessing
+expect |-heal|p1: Jolteon|49/100|[from] move: Revival Blessing
+expect |move|p2a: Mr. Bubbles|Charge|p2a: Mr. Bubbles
+expect |-boost|p2a: Mr. Bubbles|spd|1
+expect |-start|p2a: Mr. Bubbles|Charge
+expect |move|p2b: Mudsdale|Dig||[still]
+expect |-prepare|p2b: Mudsdale|Dig
+expect |rng|8|5
+expect |move|p1b: Nibbles|Lumina Crash|p2a: Mr. Bubbles
+expect |rng|100|68
+expect |rng|24|2
+expect |rng|16|12
+expect |-supereffective|p2a: Mr. Bubbles|1
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|68/206
+expect |-damage|p2a: Mr. Bubbles|33/100
+expect |rng|100|77
+expect |-unboost|p2a: Mr. Bubbles|spd|2
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Jolteon|Jolteon, L50, F|71/143
+expect |switch|p1a: Jolteon|Jolteon, L50, F|49/100
+expect |move|p2a: Mr. Bubbles|Chilling Water|p1a: Jolteon
+expect |rng|100|88
+expect |rng|24|12
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Jolteon|59/143
+expect |-damage|p1a: Jolteon|41/100
+expect |rng|100|86
+expect |-unboost|p1a: Jolteon|atk|1
+expect |move|p2b: Mudsdale|Dig|p1b: Nibbles|[from] lockedmove
+expect |rng|100|35
+expect |rng|24|13
+expect |rng|16|2
+expect |-supereffective|p1b: Nibbles|1
+expect |split|p1
+expect |-damage|p1b: Nibbles|0 fnt
+expect |-damage|p1b: Nibbles|0 fnt
+expect |faint|p1b: Nibbles
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Typhlosion|Typhlosion, L50, M|157/157
+expect |switch|p1b: Typhlosion|Typhlosion, L50, M|100/100
+expect |turn|15
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1a: Jolteon|Rage Fist|p1b: Typhlosion
+expect |rng|100|52
+expect |rng|24|2
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Typhlosion|128/157
+expect |-damage|p1b: Typhlosion|81/100
+expect |rng|2|0
+expect |rng|2|0
+expect |-activate|p1b: Typhlosion|move: Struggle
+expect |move|p1b: Typhlosion|Struggle|p2a: Mr. Bubbles
+expect |rng|24|0
+expect |rng|16|1
+expect |-crit|p2a: Mr. Bubbles
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|30/206
+expect |-damage|p2a: Mr. Bubbles|14/100
+expect |split|p1
+expect |-damage|p1b: Typhlosion|89/157|[from] recoil
+expect |-damage|p1b: Typhlosion|56/100|[from] recoil
+expect |move|p2a: Mr. Bubbles|Chilling Water|p1b: Typhlosion
+expect |rng|100|70
+expect |rng|24|2
+expect |rng|16|1
+expect |-supereffective|p1b: Typhlosion|1
+expect |split|p1
+expect |-damage|p1b: Typhlosion|63/157
+expect |-damage|p1b: Typhlosion|40/100
+expect |rng|100|93
+expect |-unboost|p1b: Typhlosion|atk|1
+expect |move|p2b: Mudsdale|Dig||[still]
+expect |-prepare|p2b: Mudsdale|Dig
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|16
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Nibbles|Arcanine-Hisui, L50, M|175/175
+expect |switch|p2a: Nibbles|Arcanine-Hisui, L50, M|100/100
+expect |rng|2|1
+expect |move|p1a: Jolteon|Headlong Rush|p1b: Typhlosion
+expect |rng|100|89
+expect |rng|24|13
+expect |rng|16|6
+expect |-supereffective|p1b: Typhlosion|1
+expect |split|p1
+expect |-damage|p1b: Typhlosion|17/157
+expect |-damage|p1b: Typhlosion|10/100
+expect |rng|100|32
+expect |-unboost|p1a: Jolteon|def|1
+expect |-unboost|p1a: Jolteon|spd|1
+expect |rng|2|1
+expect |rng|2|0
+expect |-activate|p1b: Typhlosion|move: Struggle
+expect |move|p1b: Typhlosion|Struggle|p2a: Nibbles
+expect |rng|24|7
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Nibbles|158/175
+expect |-damage|p2a: Nibbles|90/100
+expect |split|p1
+expect |-damage|p1b: Typhlosion|0 fnt|[from] recoil
+expect |-damage|p1b: Typhlosion|0 fnt|[from] recoil
+expect |faint|p1b: Typhlosion
+expect |move|p2b: Mudsdale|Dig|p2a: Nibbles|[from] lockedmove
+expect |rng|100|84
+expect |rng|24|5
+expect |rng|16|1
+expect |-supereffective|p2a: Nibbles|2
+expect |split|p2
+expect |-damage|p2a: Nibbles|0 fnt
+expect |-damage|p2a: Nibbles|0 fnt
+expect |faint|p2a: Nibbles
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Mr. Bubbles|Passimian, L50, M|30/206
+expect |switch|p2a: Mr. Bubbles|Passimian, L50, M|14/100
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p1a: Jolteon|Headlong Rush|p2a: Mr. Bubbles
+expect |rng|100|72
+expect |rng|24|15
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|6/206
+expect |-damage|p2a: Mr. Bubbles|2/100
+expect |rng|100|92
+expect |-unboost|p1a: Jolteon|def|1
+expect |-unboost|p1a: Jolteon|spd|1
+expect |move|p2a: Mr. Bubbles|Chilling Water|p2b: Mudsdale
+expect |rng|100|95
+expect |rng|24|14
+expect |rng|16|6
+expect |-supereffective|p2b: Mudsdale|1
+expect |split|p2
+expect |-damage|p2b: Mudsdale|83/182
+expect |-damage|p2b: Mudsdale|45/100
+expect |rng|100|69
+expect |-unboost|p2b: Mudsdale|atk|1
+expect |move|p2b: Mudsdale|Dig||[still]
+expect |-prepare|p2b: Mudsdale|Dig
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|18
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1a: Jolteon|Headlong Rush|p2a: Mr. Bubbles
+expect |rng|100|96
+expect |rng|24|9
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|0 fnt
+expect |-damage|p2a: Mr. Bubbles|0 fnt
+expect |rng|100|25
+expect |-unboost|p1a: Jolteon|def|1
+expect |-unboost|p1a: Jolteon|spd|1
+expect |faint|p2a: Mr. Bubbles
+expect |move|p2b: Mudsdale|Dig|p1a: Jolteon|[from] lockedmove
+expect |rng|100|53
+expect |rng|24|18
+expect |rng|16|13
+expect |-supereffective|p1a: Jolteon|1
+expect |split|p1
+expect |-damage|p1a: Jolteon|0 fnt
+expect |-damage|p1a: Jolteon|0 fnt
+expect |faint|p1a: Jolteon
+expect |
+expect |win|p2

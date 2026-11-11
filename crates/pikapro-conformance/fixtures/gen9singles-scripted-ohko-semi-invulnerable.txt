@@ -1,0 +1,56 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 2400 000a 0000 0057
+genders drawn
+team p1
+Machamp
+Ability: No Guard
+Level: 10
+Hardy Nature
+- Horn Drill
+end
+team p2
+Corviknight
+Ability: Pressure
+Level: 60
+Hardy Nature
+- Fly
+end
+choice p1 move 1
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|1
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Machamp|Machamp, L10, M|41/41
+expect |switch|p1a: Machamp|Machamp, L10, M|41/41
+expect |split|p2
+expect |switch|p2a: Corviknight|Corviknight, L60, F|206/206
+expect |switch|p2a: Corviknight|Corviknight, L60, F|206/206
+expect |-ability|p2a: Corviknight|Pressure
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Corviknight|Fly||[still]
+expect |-prepare|p2a: Corviknight|Fly
+expect |move|p1a: Machamp|Horn Drill|p2a: Corviknight
+expect |split|p2
+expect |-damage|p2a: Corviknight|0 fnt
+expect |-damage|p2a: Corviknight|0 fnt
+expect |faint|p2a: Corviknight
+expect |-ohko
+expect |
+expect |win|p1
+request p1 {"active":[{"moves":[{"move":"Horn Drill","id":"horndrill","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Fighting"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Machamp","details":"Machamp, L10, M","condition":"41/41","active":true,"stats":{"atk":34,"def":24,"spa":21,"spd":25,"spe":19},"moves":["horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Fly","id":"fly","pp":24,"maxpp":24,"target":"any","disabled":false}],"canTerastallize":"Flying"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Corviknight","details":"Corviknight, L60, F","condition":"206/206","active":true,"stats":{"atk":128,"def":149,"spa":87,"spd":125,"spe":104},"moves":["fly"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}

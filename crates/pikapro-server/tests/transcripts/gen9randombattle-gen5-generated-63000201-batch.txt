@@ -1,0 +1,488 @@
+# gen9randombattle-gen5-generated-63000201-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@option keep-alive
+@write
+
+>start {"formatid":"gen9randombattle","seed":"gen5,97bc426e83597d62","rated":"Tournament battle"}
+# a comment
+>player p1 {"name":"Alice","seed":"sodium,922fd87ff6aafc87"}
+>player p2 {"name":"Bob","seed":"gen5,c089adaf7a3791ef"}
+
+>p2 move 1 terastallize
+>p1 move 1
+>p2 switch Brambleghast
+@write
+>p1 switch 2
+>p2 default
+>p1 move 4 terastallize
+>p2 switch 5
+>p2 switch stonjourner
+>p1 switch 3
+>p1 undo
+>p2 switch STONJOURNER
+@write
+>p2 dance
+>p2 move earthquake
+>p1 switch plusle
+
+>p1 switch 2
+@write
+>p2 move 4
+
+>p1 move 4 -2 terastal
+>p1 switch 3
+>p1 switch 4
+>p2 move 2
+>p1 switch 6
+>p2 move 2
+
+>p2 switch 6
+@write
+>p1 move 3
+>p1 switch 4
+>p1 switch 3
+>p2 switch Gyarados
+>p2 move 2
+>p1 move earthpower 2 terastal
+@write
+>p1 switch 5
+@write
+>p1 move 1
+>p2 switch Breloom
+>p2 move 2
+>p1 switch 6
+>p2 move rocktomb
+>p1 move 2
+@write
+>p1 switch 5
+>forcewin p2
+>p1 move 1
+@write
+
+>chat after the end
+>forcewin p1
+@write
+>tiebreak
+>requestlog
+@write
+>p2 undo
+@message
+update
+|t:|
+|gametype|singles
+|player|p1|Alice||
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Random Battle
+|rated|Tournament battle
+|rule|Species Clause: Limit one of each Pokémon
+|rule|HP Percentage Mod: HP is shown in percentages
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: Plusle|Plusle, L95, F|268/268
+|switch|p1a: Plusle|Plusle, L95, F|100/100
+|split|p2
+|switch|p2a: Gyarados|Gyarados, L79, F|280/280
+|switch|p2a: Gyarados|Gyarados, L79, F|100/100
+|-ability|p2a: Gyarados|Intimidate|boost
+|-unboost|p1a: Plusle|atk|1
+|turn|1
+|
+|t:|
+|-terastallize|p2a: Gyarados|Ground
+|move|p1a: Plusle|Grass Knot|p2a: Gyarados
+|-supereffective|p2a: Gyarados
+|split|p2
+|-damage|p2a: Gyarados|38/280
+|-damage|p2a: Gyarados|14/100
+|split|p1
+|-damage|p1a: Plusle|242/268|[from] item: Life Orb
+|-damage|p1a: Plusle|91/100|[from] item: Life Orb
+|move|p2a: Gyarados|Temper Flare|p1a: Plusle
+|split|p1
+|-damage|p1a: Plusle|160/268
+|-damage|p1a: Plusle|60/100
+|
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Grass Knot","id":"grassknot","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Alluring Voice","id":"alluringvoice","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Nasty Plot","id":"nastyplot","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Plusle","details":"Plusle, L95, F","condition":"160/268","active":true,"stats":{"atk":100,"def":130,"spa":215,"spd":196,"spe":234},"moves":["grassknot","alluringvoice","nastyplot","thunderbolt"],"baseAbility":"lightningrod","item":"lifeorb","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Muk","details":"Muk, L86, M","condition":"321/321","active":false,"stats":{"atk":230,"def":178,"spa":161,"spd":221,"spe":135},"moves":["poisonjab","shadowsneak","drainpunch","knockoff"],"baseAbility":"poisontouch","item":"assaultvest","pokeball":"pokeball","ability":"poisontouch","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Stantler","details":"Stantler, L90, F","condition":"278/278","active":false,"stats":{"atk":222,"def":163,"spa":204,"spd":168,"spe":204},"moves":["earthpower","shadowball","calmmind","terablast"],"baseAbility":"intimidate","item":"eviolite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Spidops","details":"Spidops, L96, M","condition":"271/271","active":false,"stats":{"atk":206,"def":231,"spa":154,"spd":220,"spe":122},"moves":["circlethrow","stickyweb","spikes","toxicspikes"],"baseAbility":"stakeout","item":"heavydutyboots","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Hatterene","details":"Hatterene, L85, F","condition":"236/236","active":false,"stats":{"atk":158,"def":210,"spa":280,"spd":224,"spe":98},"moves":["calmmind","drainingkiss","psychic","mysticalfire"],"baseAbility":"magicbounce","item":"leftovers","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Munkidori","details":"Munkidori, L79, M","condition":"269/269","active":false,"stats":{"atk":164,"def":150,"spa":251,"spd":188,"spe":213},"moves":["sludgewave","psychicnoise","uturn","fakeout"],"baseAbility":"toxicchain","item":"assaultvest","pokeball":"pokeball","ability":"toxicchain","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Temper Flare","id":"temperflare","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Earthquake","id":"earthquake","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Waterfall","id":"waterfall","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Dragon Dance","id":"dragondance","pp":32,"maxpp":32,"target":"self","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Gyarados","details":"Gyarados, L79, F","condition":"38/280","active":true,"stats":{"atk":243,"def":170,"spa":140,"spd":204,"spe":174},"moves":["temperflare","earthquake","waterfall","dragondance"],"baseAbility":"intimidate","item":"heavydutyboots","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"},{"ident":"p2: Kingambit","details":"Kingambit, L74, F","condition":"270/270","active":false,"stats":{"atk":243,"def":221,"spa":132,"spd":169,"spe":117},"moves":["suckerpunch","swordsdance","kowtowcleave","ironhead"],"baseAbility":"supremeoverlord","item":"leftovers","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Brambleghast","details":"Brambleghast, L88, F","condition":"240/240","active":false,"stats":{"atk":253,"def":173,"spa":191,"spd":173,"spe":209},"moves":["powerwhip","rapidspin","poltergeist","spikes"],"baseAbility":"windrider","item":"heavydutyboots","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Breloom","details":"Breloom, L83, F","condition":"235/235","active":false,"stats":{"atk":263,"def":180,"spa":147,"spd":147,"spe":164},"moves":["machpunch","bulletseed","swordsdance","rocktomb"],"baseAbility":"technician","item":"lifeorb","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Indeedee","details":"Indeedee-F, L90, F","condition":"272/272","active":false,"stats":{"atk":104,"def":168,"spa":222,"spd":240,"spe":204},"moves":["dazzlinggleam","calmmind","psyshock","hypervoice"],"baseAbility":"psychicsurge","item":"lifeorb","pokeball":"pokeball","ability":"psychicsurge","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Stonjourner","details":"Stonjourner, L91, M","condition":"330/330","active":false,"stats":{"atk":279,"def":298,"spa":88,"spd":88,"spe":179},"moves":["stoneedge","earthquake","stealthrock","heatcrash"],"baseAbility":"powerspot","item":"lifeorb","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Muk|Muk, L86, M|321/321
+|switch|p1a: Muk|Muk, L86, M|100/100
+|split|p2
+|switch|p2a: Brambleghast|Brambleghast, L88, F|240/240
+|switch|p2a: Brambleghast|Brambleghast, L88, F|100/100
+|
+|upkeep
+|turn|3
+|
+|t:|
+|-terastallize|p1a: Muk|Dark
+|move|p2a: Brambleghast|Power Whip|p1a: Muk
+|split|p1
+|-damage|p1a: Muk|129/321
+|-damage|p1a: Muk|41/100
+|move|p1a: Muk|Knock Off|p2a: Brambleghast
+|-supereffective|p2a: Brambleghast
+|split|p2
+|-damage|p2a: Brambleghast|0 fnt
+|-damage|p2a: Brambleghast|0 fnt
+|-enditem|p2a: Brambleghast|Heavy-Duty Boots|[from] move: Knock Off|[of] p1a: Muk
+|faint|p2a: Brambleghast
+|
+|upkeep
+|
+|t:|
+|split|p2
+|switch|p2a: Indeedee|Indeedee-F, L90, F|272/272
+|switch|p2a: Indeedee|Indeedee-F, L90, F|100/100
+|-fieldstart|move: Psychic Terrain|[from] ability: Psychic Surge|[of] p2a: Indeedee
+|turn|4
+|
+|t:|
+|split|p2
+|switch|p2a: Stonjourner|Stonjourner, L91, M|330/330
+|switch|p2a: Stonjourner|Stonjourner, L91, M|100/100
+|split|p1
+|switch|p1a: Stantler|Stantler, L90, F|278/278
+|switch|p1a: Stantler|Stantler, L90, F|100/100
+|-ability|p1a: Stantler|Intimidate|boost
+|-unboost|p2a: Stonjourner|atk|1
+|
+|upkeep
+|turn|5
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Earth Power","id":"earthpower","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shadow Ball","id":"shadowball","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Tera Blast","id":"terablast","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Stantler","details":"Stantler, L90, F","condition":"278/278","active":true,"stats":{"atk":222,"def":163,"spa":204,"spd":168,"spe":204},"moves":["earthpower","shadowball","calmmind","terablast"],"baseAbility":"intimidate","item":"eviolite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Plusle","details":"Plusle, L95, F","condition":"160/268","active":false,"stats":{"atk":100,"def":130,"spa":215,"spd":196,"spe":234},"moves":["grassknot","alluringvoice","nastyplot","thunderbolt"],"baseAbility":"lightningrod","item":"lifeorb","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Muk","details":"Muk, L86, M","condition":"129/321","active":false,"stats":{"atk":230,"def":178,"spa":161,"spd":221,"spe":135},"moves":["poisonjab","shadowsneak","drainpunch","knockoff"],"baseAbility":"poisontouch","item":"assaultvest","pokeball":"pokeball","ability":"poisontouch","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Spidops","details":"Spidops, L96, M","condition":"271/271","active":false,"stats":{"atk":206,"def":231,"spa":154,"spd":220,"spe":122},"moves":["circlethrow","stickyweb","spikes","toxicspikes"],"baseAbility":"stakeout","item":"heavydutyboots","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Hatterene","details":"Hatterene, L85, F","condition":"236/236","active":false,"stats":{"atk":158,"def":210,"spa":280,"spd":224,"spe":98},"moves":["calmmind","drainingkiss","psychic","mysticalfire"],"baseAbility":"magicbounce","item":"leftovers","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Munkidori","details":"Munkidori, L79, M","condition":"269/269","active":false,"stats":{"atk":164,"def":150,"spa":251,"spd":188,"spe":213},"moves":["sludgewave","psychicnoise","uturn","fakeout"],"baseAbility":"toxicchain","item":"assaultvest","pokeball":"pokeball","ability":"toxicchain","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Stone Edge","id":"stoneedge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Earthquake","id":"earthquake","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Stealth Rock","id":"stealthrock","pp":32,"maxpp":32,"target":"foeSide","disabled":false},{"move":"Heat Crash","id":"heatcrash","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Stonjourner","details":"Stonjourner, L91, M","condition":"330/330","active":true,"stats":{"atk":279,"def":298,"spa":88,"spd":88,"spe":179},"moves":["stoneedge","earthquake","stealthrock","heatcrash"],"baseAbility":"powerspot","item":"lifeorb","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Kingambit","details":"Kingambit, L74, F","condition":"270/270","active":false,"stats":{"atk":243,"def":221,"spa":132,"spd":169,"spe":117},"moves":["suckerpunch","swordsdance","kowtowcleave","ironhead"],"baseAbility":"supremeoverlord","item":"leftovers","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Gyarados","details":"Gyarados, L79, F","condition":"38/280","active":false,"stats":{"atk":243,"def":170,"spa":140,"spd":204,"spe":174},"moves":["temperflare","earthquake","waterfall","dragondance"],"baseAbility":"intimidate","item":"heavydutyboots","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"},{"ident":"p2: Breloom","details":"Breloom, L83, F","condition":"235/235","active":false,"stats":{"atk":263,"def":180,"spa":147,"spd":147,"spe":164},"moves":["machpunch","bulletseed","swordsdance","rocktomb"],"baseAbility":"technician","item":"lifeorb","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Brambleghast","details":"Brambleghast, L88, F","condition":"0 fnt","active":false,"stats":{"atk":253,"def":173,"spa":191,"spd":173,"spe":209},"moves":["powerwhip","rapidspin","poltergeist","spikes"],"baseAbility":"windrider","item":"","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Indeedee","details":"Indeedee-F, L90, F","condition":"272/272","active":false,"stats":{"atk":104,"def":168,"spa":222,"spd":240,"spe":204},"moves":["dazzlinggleam","calmmind","psyshock","hypervoice"],"baseAbility":"psychicsurge","item":"lifeorb","pokeball":"pokeball","ability":"psychicsurge","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Unrecognized choice: dance
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Plusle|Plusle, L95, F|160/268
+|switch|p1a: Plusle|Plusle, L95, F|60/100
+|move|p2a: Stonjourner|Earthquake|p1a: Plusle
+|-supereffective|p1a: Plusle
+|split|p1
+|-damage|p1a: Plusle|0 fnt
+|-damage|p1a: Plusle|0 fnt
+|faint|p1a: Plusle
+|split|p2
+|-damage|p2a: Stonjourner|297/330|[from] item: Life Orb
+|-damage|p2a: Stonjourner|90/100|[from] item: Life Orb
+|
+|upkeep
+|
+|t:|
+|split|p1
+|switch|p1a: Stantler|Stantler, L90, F|278/278
+|switch|p1a: Stantler|Stantler, L90, F|100/100
+|-ability|p1a: Stantler|Intimidate|boost
+|-unboost|p2a: Stonjourner|atk|1
+|turn|6
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Earth Power","id":"earthpower","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shadow Ball","id":"shadowball","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Tera Blast","id":"terablast","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Stantler","details":"Stantler, L90, F","condition":"278/278","active":true,"stats":{"atk":222,"def":163,"spa":204,"spd":168,"spe":204},"moves":["earthpower","shadowball","calmmind","terablast"],"baseAbility":"intimidate","item":"eviolite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Plusle","details":"Plusle, L95, F","condition":"0 fnt","active":false,"stats":{"atk":100,"def":130,"spa":215,"spd":196,"spe":234},"moves":["grassknot","alluringvoice","nastyplot","thunderbolt"],"baseAbility":"lightningrod","item":"lifeorb","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Muk","details":"Muk, L86, M","condition":"129/321","active":false,"stats":{"atk":230,"def":178,"spa":161,"spd":221,"spe":135},"moves":["poisonjab","shadowsneak","drainpunch","knockoff"],"baseAbility":"poisontouch","item":"assaultvest","pokeball":"pokeball","ability":"poisontouch","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Spidops","details":"Spidops, L96, M","condition":"271/271","active":false,"stats":{"atk":206,"def":231,"spa":154,"spd":220,"spe":122},"moves":["circlethrow","stickyweb","spikes","toxicspikes"],"baseAbility":"stakeout","item":"heavydutyboots","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Hatterene","details":"Hatterene, L85, F","condition":"236/236","active":false,"stats":{"atk":158,"def":210,"spa":280,"spd":224,"spe":98},"moves":["calmmind","drainingkiss","psychic","mysticalfire"],"baseAbility":"magicbounce","item":"leftovers","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Munkidori","details":"Munkidori, L79, M","condition":"269/269","active":false,"stats":{"atk":164,"def":150,"spa":251,"spd":188,"spe":213},"moves":["sludgewave","psychicnoise","uturn","fakeout"],"baseAbility":"toxicchain","item":"assaultvest","pokeball":"pokeball","ability":"toxicchain","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Stone Edge","id":"stoneedge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Earthquake","id":"earthquake","pp":15,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Stealth Rock","id":"stealthrock","pp":32,"maxpp":32,"target":"foeSide","disabled":false},{"move":"Heat Crash","id":"heatcrash","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Stonjourner","details":"Stonjourner, L91, M","condition":"297/330","active":true,"stats":{"atk":279,"def":298,"spa":88,"spd":88,"spe":179},"moves":["stoneedge","earthquake","stealthrock","heatcrash"],"baseAbility":"powerspot","item":"lifeorb","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Kingambit","details":"Kingambit, L74, F","condition":"270/270","active":false,"stats":{"atk":243,"def":221,"spa":132,"spd":169,"spe":117},"moves":["suckerpunch","swordsdance","kowtowcleave","ironhead"],"baseAbility":"supremeoverlord","item":"leftovers","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Gyarados","details":"Gyarados, L79, F","condition":"38/280","active":false,"stats":{"atk":243,"def":170,"spa":140,"spd":204,"spe":174},"moves":["temperflare","earthquake","waterfall","dragondance"],"baseAbility":"intimidate","item":"heavydutyboots","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"},{"ident":"p2: Breloom","details":"Breloom, L83, F","condition":"235/235","active":false,"stats":{"atk":263,"def":180,"spa":147,"spd":147,"spe":164},"moves":["machpunch","bulletseed","swordsdance","rocktomb"],"baseAbility":"technician","item":"lifeorb","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Brambleghast","details":"Brambleghast, L88, F","condition":"0 fnt","active":false,"stats":{"atk":253,"def":173,"spa":191,"spd":173,"spe":209},"moves":["powerwhip","rapidspin","poltergeist","spikes"],"baseAbility":"windrider","item":"","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Indeedee","details":"Indeedee-F, L90, F","condition":"272/272","active":false,"stats":{"atk":104,"def":168,"spa":222,"spd":240,"spe":204},"moves":["dazzlinggleam","calmmind","psyshock","hypervoice"],"baseAbility":"psychicsurge","item":"lifeorb","pokeball":"pokeball","ability":"psychicsurge","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Invalid target for Tera Blast
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Muk|Muk, L86, M, tera:Dark|129/321
+|switch|p1a: Muk|Muk, L86, M, tera:Dark|41/100
+|move|p2a: Stonjourner|Heat Crash|p1a: Muk
+|split|p1
+|-damage|p1a: Muk|37/321
+|-damage|p1a: Muk|12/100
+|split|p2
+|-damage|p2a: Stonjourner|264/330|[from] item: Life Orb
+|-damage|p2a: Stonjourner|80/100|[from] item: Life Orb
+|
+|upkeep
+|turn|7
+|
+|t:|
+|split|p1
+|switch|p1a: Spidops|Spidops, L96, M|271/271
+|switch|p1a: Spidops|Spidops, L96, M|100/100
+|move|p2a: Stonjourner|Earthquake|p1a: Spidops
+|-resisted|p1a: Spidops
+|split|p1
+|-damage|p1a: Spidops|244/271
+|-damage|p1a: Spidops|91/100
+|split|p2
+|-damage|p2a: Stonjourner|231/330|[from] item: Life Orb
+|-damage|p2a: Stonjourner|70/100|[from] item: Life Orb
+|
+|upkeep
+|turn|8
+|
+|t:|
+|split|p1
+|switch|p1a: Munkidori|Munkidori, L79, M|269/269
+|switch|p1a: Munkidori|Munkidori, L79, M|100/100
+|move|p2a: Stonjourner|Earthquake|p1a: Munkidori
+|-supereffective|p1a: Munkidori
+|split|p1
+|-damage|p1a: Munkidori|97/269
+|-damage|p1a: Munkidori|37/100
+|split|p2
+|-damage|p2a: Stonjourner|198/330|[from] item: Life Orb
+|-damage|p2a: Stonjourner|60/100|[from] item: Life Orb
+|
+|-fieldend|move: Psychic Terrain
+|upkeep
+|turn|9
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Sludge Wave","id":"sludgewave","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"U-turn","id":"uturn","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Fake Out","id":"fakeout","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Munkidori","details":"Munkidori, L79, M","condition":"97/269","active":true,"stats":{"atk":164,"def":150,"spa":251,"spd":188,"spe":213},"moves":["sludgewave","psychicnoise","uturn","fakeout"],"baseAbility":"toxicchain","item":"assaultvest","pokeball":"pokeball","ability":"toxicchain","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Plusle","details":"Plusle, L95, F","condition":"0 fnt","active":false,"stats":{"atk":100,"def":130,"spa":215,"spd":196,"spe":234},"moves":["grassknot","alluringvoice","nastyplot","thunderbolt"],"baseAbility":"lightningrod","item":"lifeorb","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Stantler","details":"Stantler, L90, F","condition":"278/278","active":false,"stats":{"atk":222,"def":163,"spa":204,"spd":168,"spe":204},"moves":["earthpower","shadowball","calmmind","terablast"],"baseAbility":"intimidate","item":"eviolite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Muk","details":"Muk, L86, M","condition":"37/321","active":false,"stats":{"atk":230,"def":178,"spa":161,"spd":221,"spe":135},"moves":["poisonjab","shadowsneak","drainpunch","knockoff"],"baseAbility":"poisontouch","item":"assaultvest","pokeball":"pokeball","ability":"poisontouch","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Hatterene","details":"Hatterene, L85, F","condition":"236/236","active":false,"stats":{"atk":158,"def":210,"spa":280,"spd":224,"spe":98},"moves":["calmmind","drainingkiss","psychic","mysticalfire"],"baseAbility":"magicbounce","item":"leftovers","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Spidops","details":"Spidops, L96, M","condition":"244/271","active":false,"stats":{"atk":206,"def":231,"spa":154,"spd":220,"spe":122},"moves":["circlethrow","stickyweb","spikes","toxicspikes"],"baseAbility":"stakeout","item":"heavydutyboots","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Stone Edge","id":"stoneedge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Earthquake","id":"earthquake","pp":13,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Stealth Rock","id":"stealthrock","pp":32,"maxpp":32,"target":"foeSide","disabled":false},{"move":"Heat Crash","id":"heatcrash","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Stonjourner","details":"Stonjourner, L91, M","condition":"198/330","active":true,"stats":{"atk":279,"def":298,"spa":88,"spd":88,"spe":179},"moves":["stoneedge","earthquake","stealthrock","heatcrash"],"baseAbility":"powerspot","item":"lifeorb","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Kingambit","details":"Kingambit, L74, F","condition":"270/270","active":false,"stats":{"atk":243,"def":221,"spa":132,"spd":169,"spe":117},"moves":["suckerpunch","swordsdance","kowtowcleave","ironhead"],"baseAbility":"supremeoverlord","item":"leftovers","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Gyarados","details":"Gyarados, L79, F","condition":"38/280","active":false,"stats":{"atk":243,"def":170,"spa":140,"spd":204,"spe":174},"moves":["temperflare","earthquake","waterfall","dragondance"],"baseAbility":"intimidate","item":"heavydutyboots","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"},{"ident":"p2: Breloom","details":"Breloom, L83, F","condition":"235/235","active":false,"stats":{"atk":263,"def":180,"spa":147,"spd":147,"spe":164},"moves":["machpunch","bulletseed","swordsdance","rocktomb"],"baseAbility":"technician","item":"lifeorb","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Brambleghast","details":"Brambleghast, L88, F","condition":"0 fnt","active":false,"stats":{"atk":253,"def":173,"spa":191,"spd":173,"spe":209},"moves":["powerwhip","rapidspin","poltergeist","spikes"],"baseAbility":"windrider","item":"","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Indeedee","details":"Indeedee-F, L90, F","condition":"272/272","active":false,"stats":{"atk":104,"def":168,"spa":222,"spd":240,"spe":204},"moves":["dazzlinggleam","calmmind","psyshock","hypervoice"],"baseAbility":"psychicsurge","item":"lifeorb","pokeball":"pokeball","ability":"psychicsurge","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Invalid target for Earth Power
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Indeedee|Indeedee-F, L90, F|272/272
+|switch|p2a: Indeedee|Indeedee-F, L90, F|100/100
+|-fieldstart|move: Psychic Terrain|[from] ability: Psychic Surge|[of] p2a: Indeedee
+|move|p1a: Munkidori|U-turn|p2a: Indeedee
+|-supereffective|p2a: Indeedee
+|split|p2
+|-damage|p2a: Indeedee|192/272
+|-damage|p2a: Indeedee|71/100
+|
+|t:|
+|split|p1
+|switch|p1a: Muk|Muk, L86, M, tera:Dark|37/321|[from] U-turn
+|switch|p1a: Muk|Muk, L86, M, tera:Dark|12/100|[from] U-turn
+|
+|upkeep
+|turn|10
+|
+|t:|
+|split|p2
+|switch|p2a: Gyarados|Gyarados, L79, F, tera:Ground|38/280
+|switch|p2a: Gyarados|Gyarados, L79, F, tera:Ground|14/100
+|-ability|p2a: Gyarados|Intimidate|boost
+|-unboost|p1a: Muk|atk|1
+|split|p1
+|switch|p1a: Stantler|Stantler, L90, F|278/278
+|switch|p1a: Stantler|Stantler, L90, F|100/100
+|-ability|p1a: Stantler|Intimidate|boost
+|-unboost|p2a: Gyarados|atk|1
+|
+|upkeep
+|turn|11
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Earth Power","id":"earthpower","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shadow Ball","id":"shadowball","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Tera Blast","id":"terablast","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Stantler","details":"Stantler, L90, F","condition":"278/278","active":true,"stats":{"atk":222,"def":163,"spa":204,"spd":168,"spe":204},"moves":["earthpower","shadowball","calmmind","terablast"],"baseAbility":"intimidate","item":"eviolite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Plusle","details":"Plusle, L95, F","condition":"0 fnt","active":false,"stats":{"atk":100,"def":130,"spa":215,"spd":196,"spe":234},"moves":["grassknot","alluringvoice","nastyplot","thunderbolt"],"baseAbility":"lightningrod","item":"lifeorb","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Muk","details":"Muk, L86, M","condition":"37/321","active":false,"stats":{"atk":230,"def":178,"spa":161,"spd":221,"spe":135},"moves":["poisonjab","shadowsneak","drainpunch","knockoff"],"baseAbility":"poisontouch","item":"assaultvest","pokeball":"pokeball","ability":"poisontouch","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Munkidori","details":"Munkidori, L79, M","condition":"97/269","active":false,"stats":{"atk":164,"def":150,"spa":251,"spd":188,"spe":213},"moves":["sludgewave","psychicnoise","uturn","fakeout"],"baseAbility":"toxicchain","item":"assaultvest","pokeball":"pokeball","ability":"toxicchain","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Hatterene","details":"Hatterene, L85, F","condition":"236/236","active":false,"stats":{"atk":158,"def":210,"spa":280,"spd":224,"spe":98},"moves":["calmmind","drainingkiss","psychic","mysticalfire"],"baseAbility":"magicbounce","item":"leftovers","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Spidops","details":"Spidops, L96, M","condition":"244/271","active":false,"stats":{"atk":206,"def":231,"spa":154,"spd":220,"spe":122},"moves":["circlethrow","stickyweb","spikes","toxicspikes"],"baseAbility":"stakeout","item":"heavydutyboots","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Temper Flare","id":"temperflare","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Earthquake","id":"earthquake","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Waterfall","id":"waterfall","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Dragon Dance","id":"dragondance","pp":32,"maxpp":32,"target":"self","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Gyarados","details":"Gyarados, L79, F","condition":"38/280","active":true,"stats":{"atk":243,"def":170,"spa":140,"spd":204,"spe":174},"moves":["temperflare","earthquake","waterfall","dragondance"],"baseAbility":"intimidate","item":"heavydutyboots","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"},{"ident":"p2: Kingambit","details":"Kingambit, L74, F","condition":"270/270","active":false,"stats":{"atk":243,"def":221,"spa":132,"spd":169,"spe":117},"moves":["suckerpunch","swordsdance","kowtowcleave","ironhead"],"baseAbility":"supremeoverlord","item":"leftovers","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Indeedee","details":"Indeedee-F, L90, F","condition":"192/272","active":false,"stats":{"atk":104,"def":168,"spa":222,"spd":240,"spe":204},"moves":["dazzlinggleam","calmmind","psyshock","hypervoice"],"baseAbility":"psychicsurge","item":"lifeorb","pokeball":"pokeball","ability":"psychicsurge","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Breloom","details":"Breloom, L83, F","condition":"235/235","active":false,"stats":{"atk":263,"def":180,"spa":147,"spd":147,"spe":164},"moves":["machpunch","bulletseed","swordsdance","rocktomb"],"baseAbility":"technician","item":"lifeorb","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Brambleghast","details":"Brambleghast, L88, F","condition":"0 fnt","active":false,"stats":{"atk":253,"def":173,"spa":191,"spd":173,"spe":209},"moves":["powerwhip","rapidspin","poltergeist","spikes"],"baseAbility":"windrider","item":"","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Stonjourner","details":"Stonjourner, L91, M","condition":"198/330","active":false,"stats":{"atk":279,"def":298,"spa":88,"spd":88,"spe":179},"moves":["stoneedge","earthquake","stealthrock","heatcrash"],"baseAbility":"powerspot","item":"lifeorb","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Hatterene|Hatterene, L85, F|236/236
+|switch|p1a: Hatterene|Hatterene, L85, F|100/100
+|move|p2a: Gyarados|Earthquake|p1a: Hatterene
+|split|p1
+|-damage|p1a: Hatterene|161/236
+|-damage|p1a: Hatterene|69/100
+|
+|split|p1
+|-heal|p1a: Hatterene|175/236|[from] item: Leftovers
+|-heal|p1a: Hatterene|75/100|[from] item: Leftovers
+|upkeep
+|turn|12
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Calm Mind","id":"calmmind","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Draining Kiss","id":"drainingkiss","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Psychic","id":"psychic","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Mystical Fire","id":"mysticalfire","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Hatterene","details":"Hatterene, L85, F","condition":"175/236","active":true,"stats":{"atk":158,"def":210,"spa":280,"spd":224,"spe":98},"moves":["calmmind","drainingkiss","psychic","mysticalfire"],"baseAbility":"magicbounce","item":"leftovers","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Plusle","details":"Plusle, L95, F","condition":"0 fnt","active":false,"stats":{"atk":100,"def":130,"spa":215,"spd":196,"spe":234},"moves":["grassknot","alluringvoice","nastyplot","thunderbolt"],"baseAbility":"lightningrod","item":"lifeorb","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Muk","details":"Muk, L86, M","condition":"37/321","active":false,"stats":{"atk":230,"def":178,"spa":161,"spd":221,"spe":135},"moves":["poisonjab","shadowsneak","drainpunch","knockoff"],"baseAbility":"poisontouch","item":"assaultvest","pokeball":"pokeball","ability":"poisontouch","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Munkidori","details":"Munkidori, L79, M","condition":"97/269","active":false,"stats":{"atk":164,"def":150,"spa":251,"spd":188,"spe":213},"moves":["sludgewave","psychicnoise","uturn","fakeout"],"baseAbility":"toxicchain","item":"assaultvest","pokeball":"pokeball","ability":"toxicchain","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Stantler","details":"Stantler, L90, F","condition":"278/278","active":false,"stats":{"atk":222,"def":163,"spa":204,"spd":168,"spe":204},"moves":["earthpower","shadowball","calmmind","terablast"],"baseAbility":"intimidate","item":"eviolite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Spidops","details":"Spidops, L96, M","condition":"244/271","active":false,"stats":{"atk":206,"def":231,"spa":154,"spd":220,"spe":122},"moves":["circlethrow","stickyweb","spikes","toxicspikes"],"baseAbility":"stakeout","item":"heavydutyboots","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Temper Flare","id":"temperflare","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Earthquake","id":"earthquake","pp":15,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Waterfall","id":"waterfall","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Dragon Dance","id":"dragondance","pp":32,"maxpp":32,"target":"self","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Gyarados","details":"Gyarados, L79, F","condition":"38/280","active":true,"stats":{"atk":243,"def":170,"spa":140,"spd":204,"spe":174},"moves":["temperflare","earthquake","waterfall","dragondance"],"baseAbility":"intimidate","item":"heavydutyboots","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"},{"ident":"p2: Kingambit","details":"Kingambit, L74, F","condition":"270/270","active":false,"stats":{"atk":243,"def":221,"spa":132,"spd":169,"spe":117},"moves":["suckerpunch","swordsdance","kowtowcleave","ironhead"],"baseAbility":"supremeoverlord","item":"leftovers","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Indeedee","details":"Indeedee-F, L90, F","condition":"192/272","active":false,"stats":{"atk":104,"def":168,"spa":222,"spd":240,"spe":204},"moves":["dazzlinggleam","calmmind","psyshock","hypervoice"],"baseAbility":"psychicsurge","item":"lifeorb","pokeball":"pokeball","ability":"psychicsurge","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Breloom","details":"Breloom, L83, F","condition":"235/235","active":false,"stats":{"atk":263,"def":180,"spa":147,"spd":147,"spe":164},"moves":["machpunch","bulletseed","swordsdance","rocktomb"],"baseAbility":"technician","item":"lifeorb","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Brambleghast","details":"Brambleghast, L88, F","condition":"0 fnt","active":false,"stats":{"atk":253,"def":173,"spa":191,"spd":173,"spe":209},"moves":["powerwhip","rapidspin","poltergeist","spikes"],"baseAbility":"windrider","item":"","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Stonjourner","details":"Stonjourner, L91, M","condition":"198/330","active":false,"stats":{"atk":279,"def":298,"spa":88,"spd":88,"spe":179},"moves":["stoneedge","earthquake","stealthrock","heatcrash"],"baseAbility":"powerspot","item":"lifeorb","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Breloom|Breloom, L83, F|235/235
+|switch|p2a: Breloom|Breloom, L83, F|100/100
+|move|p1a: Hatterene|Calm Mind|p1a: Hatterene
+|-boost|p1a: Hatterene|spa|1
+|-boost|p1a: Hatterene|spd|1
+|
+|split|p1
+|-heal|p1a: Hatterene|189/236|[from] item: Leftovers
+|-heal|p1a: Hatterene|81/100|[from] item: Leftovers
+|upkeep
+|turn|13
+|
+|t:|
+|split|p1
+|switch|p1a: Spidops|Spidops, L96, M|244/271
+|switch|p1a: Spidops|Spidops, L96, M|91/100
+|move|p2a: Breloom|Bullet Seed|p1a: Spidops
+|-resisted|p1a: Spidops
+|split|p1
+|-damage|p1a: Spidops|217/271
+|-damage|p1a: Spidops|81/100
+|-resisted|p1a: Spidops
+|split|p1
+|-damage|p1a: Spidops|190/271
+|-damage|p1a: Spidops|71/100
+|-resisted|p1a: Spidops
+|-crit|p1a: Spidops
+|split|p1
+|-damage|p1a: Spidops|147/271
+|-damage|p1a: Spidops|55/100
+|-hitcount|p1a: Spidops|3
+|split|p2
+|-damage|p2a: Breloom|212/235|[from] item: Life Orb
+|-damage|p2a: Breloom|91/100|[from] item: Life Orb
+|
+|-fieldend|move: Psychic Terrain
+|upkeep
+|turn|14
+|
+|t:|
+|move|p2a: Breloom|Rock Tomb|p1a: Spidops
+|-supereffective|p1a: Spidops
+|split|p1
+|-damage|p1a: Spidops|0 fnt
+|-damage|p1a: Spidops|0 fnt
+|faint|p1a: Spidops
+|split|p2
+|-damage|p2a: Breloom|189/235|[from] item: Life Orb
+|-damage|p2a: Breloom|81/100|[from] item: Life Orb
+|
+|upkeep
+@message
+sideupdate
+p1
+|request|{"forceSwitch":[true],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Spidops","details":"Spidops, L96, M","condition":"0 fnt","active":true,"stats":{"atk":206,"def":231,"spa":154,"spd":220,"spe":122},"moves":["circlethrow","stickyweb","spikes","toxicspikes"],"baseAbility":"stakeout","item":"heavydutyboots","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Plusle","details":"Plusle, L95, F","condition":"0 fnt","active":false,"stats":{"atk":100,"def":130,"spa":215,"spd":196,"spe":234},"moves":["grassknot","alluringvoice","nastyplot","thunderbolt"],"baseAbility":"lightningrod","item":"lifeorb","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Muk","details":"Muk, L86, M","condition":"37/321","active":false,"stats":{"atk":230,"def":178,"spa":161,"spd":221,"spe":135},"moves":["poisonjab","shadowsneak","drainpunch","knockoff"],"baseAbility":"poisontouch","item":"assaultvest","pokeball":"pokeball","ability":"poisontouch","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Munkidori","details":"Munkidori, L79, M","condition":"97/269","active":false,"stats":{"atk":164,"def":150,"spa":251,"spd":188,"spe":213},"moves":["sludgewave","psychicnoise","uturn","fakeout"],"baseAbility":"toxicchain","item":"assaultvest","pokeball":"pokeball","ability":"toxicchain","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Stantler","details":"Stantler, L90, F","condition":"278/278","active":false,"stats":{"atk":222,"def":163,"spa":204,"spd":168,"spe":204},"moves":["earthpower","shadowball","calmmind","terablast"],"baseAbility":"intimidate","item":"eviolite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Hatterene","details":"Hatterene, L85, F","condition":"189/236","active":false,"stats":{"atk":158,"def":210,"spa":280,"spd":224,"spe":98},"moves":["calmmind","drainingkiss","psychic","mysticalfire"],"baseAbility":"magicbounce","item":"leftovers","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]},"noCancel":true}
+@message
+sideupdate
+p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Breloom","details":"Breloom, L83, F","condition":"189/235","active":true,"stats":{"atk":263,"def":180,"spa":147,"spd":147,"spe":164},"moves":["machpunch","bulletseed","swordsdance","rocktomb"],"baseAbility":"technician","item":"lifeorb","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Kingambit","details":"Kingambit, L74, F","condition":"270/270","active":false,"stats":{"atk":243,"def":221,"spa":132,"spd":169,"spe":117},"moves":["suckerpunch","swordsdance","kowtowcleave","ironhead"],"baseAbility":"supremeoverlord","item":"leftovers","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Indeedee","details":"Indeedee-F, L90, F","condition":"192/272","active":false,"stats":{"atk":104,"def":168,"spa":222,"spd":240,"spe":204},"moves":["dazzlinggleam","calmmind","psyshock","hypervoice"],"baseAbility":"psychicsurge","item":"lifeorb","pokeball":"pokeball","ability":"psychicsurge","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Gyarados","details":"Gyarados, L79, F","condition":"38/280","active":false,"stats":{"atk":243,"def":170,"spa":140,"spd":204,"spe":174},"moves":["temperflare","earthquake","waterfall","dragondance"],"baseAbility":"intimidate","item":"heavydutyboots","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"},{"ident":"p2: Brambleghast","details":"Brambleghast, L88, F","condition":"0 fnt","active":false,"stats":{"atk":253,"def":173,"spa":191,"spd":173,"spe":209},"moves":["powerwhip","rapidspin","poltergeist","spikes"],"baseAbility":"windrider","item":"","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Stonjourner","details":"Stonjourner, L91, M","condition":"198/330","active":false,"stats":{"atk":279,"def":298,"spa":88,"spd":88,"spe":179},"moves":["stoneedge","earthquake","stealthrock","heatcrash"],"baseAbility":"powerspot","item":"lifeorb","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Stantler|Stantler, L90, F|278/278
+|switch|p1a: Stantler|Stantler, L90, F|100/100
+|-ability|p1a: Stantler|Intimidate|boost
+|-unboost|p2a: Breloom|atk|1
+|turn|15
+|
+|win|Bob
+@message
+sideupdate
+p1
+|request|null
+@message
+sideupdate
+p2
+|request|null
+@message
+end
+{"winner":"Bob","seed":"gen5,97bc426e83597d62","turns":15,"p1":"Alice","p2":"Bob","p1team":[{"name":"Plusle","species":"Plusle","speciesId":"plusle","gender":"F","shiny":false,"level":95,"moves":["grassknot","alluringvoice","nastyplot","thunderbolt"],"ability":"Lightning Rod","evs":{"hp":85,"atk":0,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":0,"def":31,"spa":31,"spd":31,"spe":31},"item":"Life Orb","teraType":"Electric","role":"Setup Sweeper"},{"name":"Muk","species":"Muk","speciesId":"muk","gender":"M","shiny":false,"level":86,"moves":["poisonjab","shadowsneak","drainpunch","knockoff"],"ability":"Poison Touch","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Assault Vest","teraType":"Dark","role":"AV Pivot"},{"name":"Stantler","species":"Stantler","speciesId":"stantler","gender":"F","shiny":false,"level":90,"moves":["earthpower","shadowball","calmmind","terablast"],"ability":"Intimidate","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Eviolite","teraType":"Fairy","role":"Tera Blast user"},{"name":"Spidops","species":"Spidops","speciesId":"spidops","gender":"M","shiny":false,"level":96,"moves":["circlethrow","stickyweb","spikes","toxicspikes"],"ability":"Stakeout","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Heavy-Duty Boots","teraType":"Ghost","role":"Bulky Support"},{"name":"Hatterene","species":"Hatterene","speciesId":"hatterene","gender":"F","shiny":false,"level":85,"moves":["calmmind","drainingkiss","psychic","mysticalfire"],"ability":"Magic Bounce","evs":{"hp":85,"atk":0,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":0,"def":31,"spa":31,"spd":31,"spe":31},"item":"Leftovers","teraType":"Steel","role":"Bulky Setup"},{"name":"Munkidori","species":"Munkidori","speciesId":"munkidori","gender":"M","shiny":false,"level":79,"moves":["sludgewave","psychicnoise","uturn","fakeout"],"ability":"Toxic Chain","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Assault Vest","teraType":"Dark","role":"AV Pivot"}],"p2team":[{"name":"Gyarados","species":"Gyarados","speciesId":"gyarados","gender":"F","shiny":false,"level":79,"moves":["temperflare","earthquake","waterfall","dragondance"],"ability":"Intimidate","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Heavy-Duty Boots","teraType":"Ground","role":"Setup Sweeper"},{"name":"Kingambit","species":"Kingambit","speciesId":"kingambit","gender":"F","shiny":false,"level":74,"moves":["suckerpunch","swordsdance","kowtowcleave","ironhead"],"ability":"Supreme Overlord","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Leftovers","teraType":"Ghost","role":"Bulky Attacker"},{"name":"Brambleghast","species":"Brambleghast","speciesId":"brambleghast","gender":"F","shiny":false,"level":88,"moves":["powerwhip","rapidspin","poltergeist","spikes"],"ability":"Wind Rider","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Heavy-Duty Boots","teraType":"Fairy","role":"Fast Support"},{"name":"Breloom","species":"Breloom","speciesId":"breloom","gender":"F","shiny":false,"level":83,"moves":["machpunch","bulletseed","swordsdance","rocktomb"],"ability":"Technician","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Life Orb","teraType":"Rock","role":"Fast Attacker"},{"name":"Indeedee","species":"Indeedee-F","speciesId":"indeedeef","gender":"F","shiny":false,"level":90,"moves":["dazzlinggleam","calmmind","psyshock","hypervoice"],"ability":"Psychic Surge","evs":{"hp":85,"atk":0,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":0,"def":31,"spa":31,"spd":31,"spe":31},"item":"Life Orb","teraType":"Fairy","role":"Fast Attacker"},{"name":"Stonjourner","species":"Stonjourner","speciesId":"stonjourner","gender":"M","shiny":false,"level":91,"moves":["stoneedge","earthquake","stealthrock","heatcrash"],"ability":"Power Spot","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Life Orb","teraType":"Ground","role":"Fast Attacker"}],"score":[4,5],"inputLog":[">start {\"formatid\":\"gen9randombattle\",\"seed\":\"gen5,97bc426e83597d62\",\"rated\":\"Tournament battle\"}",">player p1 {\"name\":\"Alice\",\"seed\":\"sodium,922fd87ff6aafc87\"}",">player p2 {\"name\":\"Bob\",\"seed\":\"gen5,c089adaf7a3791ef\"}",">p1 move grassknot",">p2 move temperflare terastallize",">p1 switch 2",">p2 switch 3",">p1 move knockoff terastallize",">p2 move powerwhip",">p2 switch 5",">p1 switch 3",">p2 switch 6",">p1 switch 2",">p2 move earthquake",">p1 switch 2",">p1 switch 3",">p2 move heatcrash",">p1 switch 4",">p2 move earthquake",">p1 switch 6",">p2 move earthquake",">p1 move uturn",">p2 switch 6",">p1 switch 4",">p1 switch 3",">p2 switch 3",">p1 switch 5",">p2 move earthquake",">p1 move calmmind",">p2 switch 4",">p1 switch 6",">p2 move bulletseed",">p1 move stickyweb",">p2 move rocktomb",">p1 switch 5",">forcewin p2"]}
+@message
+update
+|chat|after the end
+@message
+requesteddata
+>start {"formatid":"gen9randombattle","seed":"gen5,97bc426e83597d62","rated":"Tournament battle"}
+>player p1 {"name":"Alice","seed":"sodium,922fd87ff6aafc87"}
+>player p2 {"name":"Bob","seed":"gen5,c089adaf7a3791ef"}
+>p1 move grassknot
+>p2 move temperflare terastallize
+>p1 switch 2
+>p2 switch 3
+>p1 move knockoff terastallize
+>p2 move powerwhip
+>p2 switch 5
+>p1 switch 3
+>p2 switch 6
+>p1 switch 2
+>p2 move earthquake
+>p1 switch 2
+>p1 switch 3
+>p2 move heatcrash
+>p1 switch 4
+>p2 move earthquake
+>p1 switch 6
+>p2 move earthquake
+>p1 move uturn
+>p2 switch 6
+>p1 switch 4
+>p1 switch 3
+>p2 switch 3
+>p1 switch 5
+>p2 move earthquake
+>p1 move calmmind
+>p2 switch 4
+>p1 switch 6
+>p2 move bulletseed
+>p1 move stickyweb
+>p2 move rocktomb
+>p1 switch 5
+>forcewin p2
+>chat after the end
+>forcewin p1

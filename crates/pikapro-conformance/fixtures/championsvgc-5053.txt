@@ -1,0 +1,649 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed be2d bd3e adea 4fdc
+genders drawn
+team p1
+Mudsdale (M)
+Ability: No Ability
+Level: 50
+Tera Type: Dragon
+EVs: 6 Atk / 12 Def / 6 SpA / 14 SpD / 19 Spe
+Quiet Nature
+- Shelter
+- Energy Ball
+- Heat Wave
+
+Gardevoir (M)
+Ability: No Ability
+Level: 50
+Tera Type: Normal
+EVs: 14 HP / 9 Atk / 20 Def / 14 SpA / 2 SpD / 6 Spe
+Docile Nature
+- Sing
+- Tail Slap
+- Disable
+
+Quaquaval (M)
+Ability: No Ability
+Level: 50
+Tera Type: Psychic
+EVs: 3 HP / 13 Atk / 3 Def / 15 SpD / 27 Spe
+Quiet Nature
+- Acid Spray
+- Gunk Shot
+- Focus Blast
+- Grassy Terrain
+
+Sinistcha
+Ability: No Ability
+Level: 50
+Tera Type: Ground
+EVs: 5 HP / 19 Atk / 3 Def / 6 SpA / 12 SpD / 16 Spe
+Adamant Nature
+- Flip Turn
+
+Metagross
+Ability: No Ability
+Level: 50
+Tera Type: Ghost
+EVs: 2 HP / 3 Atk / 6 Def / 2 SpA / 18 SpD / 28 Spe
+Sassy Nature
+- Night Daze
+- X-Scissor
+
+Bellibolt (M)
+Ability: No Ability
+Level: 50
+Tera Type: Poison
+EVs: 5 HP / 30 SpA / 8 SpD / 23 Spe
+Lonely Nature
+- Mach Punch
+- Misty Terrain
+end
+team p2
+Altaria (M)
+Ability: No Ability
+Level: 50
+Tera Type: Water
+EVs: 23 HP / 10 Def / 6 SpA / 8 SpD / 19 Spe
+Naughty Nature
+- Swords Dance
+- Lunge
+- Nuzzle
+
+Swampert (M)
+Ability: No Ability
+Level: 50
+Tera Type: Electric
+EVs: 19 HP / 3 Atk / 21 Def / 3 SpA / 16 SpD / 2 Spe
+Docile Nature
+- Wave Crash
+- Decorate
+- Power Whip
+- Air Cutter
+
+Pelipper (M)
+Ability: No Ability
+Level: 50
+Tera Type: Dark
+EVs: 3 HP / 28 Atk / 12 Def / 19 SpD / 4 Spe
+Gentle Nature
+- Toxic
+
+Espeon (M)
+Ability: No Ability
+Level: 50
+Tera Type: Fairy
+EVs: 32 Atk / 9 Def / 25 Spe
+Hasty Nature
+- Cosmic Power
+- Amnesia
+
+Castform (M)
+Ability: No Ability
+Level: 50
+Tera Type: Fighting
+EVs: 28 HP / 31 Atk / 2 Def / 3 SpA / 1 Spe
+Hasty Nature
+- Earthquake
+
+Umbreon (M)
+Ability: No Ability
+Level: 50
+Tera Type: Fairy
+EVs: 3 HP / 1 Atk / 17 Def / 27 SpA / 3 SpD
+Timid Nature
+- Night Slash
+- Smart Strike
+- Iron Tail
+- Swords Dance
+end
+choice p1 team 3126
+choice p2 team 1253
+choice p1 move 3 2, move 2 2
+choice p2 move 2 2, move 3 1
+choice p1 move 3 1, switch 4
+choice p2 move 3 1, move 4
+choice p1 switch 3, pass
+choice p2 move 1, move 1 2
+choice p1 switch 4, move 2
+choice p2 switch 4, move 1 2
+choice p1 move 3, move 1 -1
+choice p1 pass, switch 4
+choice p2 switch 3, move 2 1
+choice p1 move 3, move 1 1
+choice p2 move 1, move 3 1
+choice p1 move 3, move 3 1
+choice p2 pass, switch 4
+choice p1 move 1, move 2 1
+choice p2 switch 3, move 3 1
+choice p1 move 2 2, move 3 1
+choice p2 move 1 2, move 1
+choice p1 move 1, move 3 -1
+choice p2 move 1 2, move 2 2
+choice p1 move 3, move 3 2
+choice p2 move 1 1, move 1
+choice p1 move 1, move 1 1
+choice p2 move 1 1, move 2 1
+choice p1 move 1, pass
+choice p2 move 1 1, move 2 -1
+choice p1 move 3, pass
+choice p2 move 1 -2, move 2 -1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Mudsdale, L50, M|
+expect |poke|p1|Gardevoir, L50, M|
+expect |poke|p1|Quaquaval, L50, M|
+expect |poke|p1|Sinistcha, L50|
+expect |poke|p1|Metagross, L50|
+expect |poke|p1|Bellibolt, L50, M|
+expect |poke|p2|Altaria, L50, M|
+expect |poke|p2|Swampert, L50, M|
+expect |poke|p2|Pelipper, L50, M|
+expect |poke|p2|Espeon, L50, M|
+expect |poke|p2|Castform, L50, M|
+expect |poke|p2|Umbreon, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Quaquaval|Quaquaval, L50, M|163/163
+expect |switch|p1a: Quaquaval|Quaquaval, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Mudsdale|Mudsdale, L50, M|175/175
+expect |switch|p1b: Mudsdale|Mudsdale, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Altaria|Altaria, L50, M|173/173
+expect |switch|p2a: Altaria|Altaria, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Swampert|Swampert, L50, M|194/194
+expect |switch|p2b: Swampert|Swampert, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Altaria|Lunge|p1b: Mudsdale
+expect |rng|100|33
+expect |rng|24|17
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Mudsdale|148/175
+expect |-damage|p1b: Mudsdale|84/100
+expect |rng|100|40
+expect |-unboost|p1b: Mudsdale|atk|1
+expect |move|p1a: Quaquaval|Focus Blast|p2b: Swampert|[miss]
+expect |rng|100|76
+expect |-miss|p1a: Quaquaval|p2b: Swampert
+expect |move|p2b: Swampert|Power Whip|p1a: Quaquaval
+expect |rng|100|56
+expect |rng|24|15
+expect |rng|16|9
+expect |-supereffective|p1a: Quaquaval|1
+expect |split|p1
+expect |-damage|p1a: Quaquaval|37/163
+expect |-damage|p1a: Quaquaval|22/100
+expect |move|p1b: Mudsdale|Energy Ball|p2b: Swampert
+expect |rng|100|76
+expect |rng|24|6
+expect |rng|16|6
+expect |-supereffective|p2b: Swampert|2
+expect |split|p2
+expect |-damage|p2b: Swampert|86/194
+expect |-damage|p2b: Swampert|44/100
+expect |rng|100|56
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Bellibolt|Bellibolt, L50, M|189/189
+expect |switch|p1b: Bellibolt|Bellibolt, L50, M|100/100
+expect |rng|2|0
+expect |move|p2a: Altaria|Nuzzle|p1a: Quaquaval
+expect |rng|100|44
+expect |rng|24|14
+expect |rng|16|14
+expect |-supereffective|p1a: Quaquaval|1
+expect |split|p1
+expect |-damage|p1a: Quaquaval|21/163
+expect |-damage|p1a: Quaquaval|12/100
+expect |rng|100|35
+expect |-status|p1a: Quaquaval|par
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Swampert|Air Cutter|p1b: Bellibolt|[spread] p1a,p1b
+expect |rng|100|91
+expect |rng|100|28
+expect |rng|8|4
+expect |rng|16|1
+expect |-supereffective|p1a: Quaquaval|1
+expect |rng|8|6
+expect |rng|16|7
+expect |-resisted|p1b: Bellibolt|1
+expect |split|p1
+expect |-damage|p1a: Quaquaval|0 fnt
+expect |-damage|p1a: Quaquaval|0 fnt
+expect |split|p1
+expect |-damage|p1b: Bellibolt|180/189
+expect |-damage|p1b: Bellibolt|95/100
+expect |faint|p1a: Quaquaval
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Gardevoir|Gardevoir, L50, M|157/157
+expect |switch|p1a: Gardevoir|Gardevoir, L50, M|100/100
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Mudsdale|Mudsdale, L50, M|148/175
+expect |switch|p1a: Mudsdale|Mudsdale, L50, M|84/100
+expect |move|p2a: Altaria|Swords Dance|p2a: Altaria
+expect |-boost|p2a: Altaria|atk|2
+expect |move|p1b: Bellibolt|Misty Terrain|p1b: Bellibolt
+expect |-fieldstart|move: Misty Terrain
+expect |move|p2b: Swampert|Wave Crash|p1b: Bellibolt
+expect |rng|100|77
+expect |rng|24|14
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Bellibolt|75/189
+expect |-damage|p1b: Bellibolt|39/100
+expect |split|p2
+expect |-damage|p2b: Swampert|51/194|[from] Recoil
+expect |-damage|p2b: Swampert|26/100|[from] Recoil
+expect |
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pelipper|Pelipper, L50, M|138/138
+expect |switch|p2a: Pelipper|Pelipper, L50, M|100/100
+expect |rng|2|1
+expect |move|p1b: Bellibolt|Mach Punch|p1a: Mudsdale
+expect |rng|100|24
+expect |rng|24|22
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Mudsdale|136/175
+expect |-damage|p1a: Mudsdale|77/100
+expect |rng|2|0
+expect |move|p2b: Swampert|Wave Crash|p1b: Bellibolt
+expect |rng|100|55
+expect |rng|24|21
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Bellibolt|0 fnt
+expect |-damage|p1b: Bellibolt|0 fnt
+expect |faint|p1b: Bellibolt
+expect |split|p2
+expect |-damage|p2b: Swampert|26/194|[from] Recoil
+expect |-damage|p2b: Swampert|13/100|[from] Recoil
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Mudsdale|Heat Wave|p2b: Swampert|[spread] p2a
+expect |rng|100|66
+expect |rng|100|91
+expect |-miss|p1a: Mudsdale|p2b: Swampert
+expect |rng|24|13
+expect |rng|16|13
+expect |-resisted|p2a: Pelipper|1
+expect |split|p2
+expect |-damage|p2a: Pelipper|128/138
+expect |-damage|p2a: Pelipper|92/100
+expect |rng|100|72
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Gardevoir|Gardevoir, L50, M|157/157
+expect |switch|p1b: Gardevoir|Gardevoir, L50, M|100/100
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Castform|Castform, L50, M|173/173
+expect |switch|p2a: Castform|Castform, L50, M|100/100
+expect |rng|2|0
+expect |move|p1b: Gardevoir|Sing|p2a: Castform
+expect |rng|100|36
+expect |-activate|p2a: Castform|move: Misty Terrain
+expect |rng|2|1
+expect |move|p2b: Swampert|Decorate|p1a: Mudsdale
+expect |-boost|p1a: Mudsdale|atk|2
+expect |-boost|p1a: Mudsdale|spa|2
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Mudsdale|Heat Wave|p2b: Swampert|[spread] p2a,p2b
+expect |rng|100|48
+expect |rng|100|60
+expect |rng|24|19
+expect |rng|16|12
+expect |rng|24|18
+expect |rng|16|13
+expect |-resisted|p2b: Swampert|1
+expect |split|p2
+expect |-damage|p2a: Castform|118/173
+expect |-damage|p2a: Castform|68/100
+expect |split|p2
+expect |-damage|p2b: Swampert|6/194
+expect |-damage|p2b: Swampert|3/100
+expect |rng|100|80
+expect |rng|100|66
+expect |
+expect |upkeep
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Gardevoir|Disable||[still]
+expect |rng|100|87
+expect |-fail|p1b: Gardevoir
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Castform|Earthquake|p1b: Gardevoir|[spread] p2b,p1a,p1b
+expect |rng|100|84
+expect |rng|100|29
+expect |rng|100|57
+expect |rng|24|21
+expect |rng|16|14
+expect |rng|24|18
+expect |rng|16|15
+expect |rng|24|6
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Swampert|0 fnt
+expect |-damage|p2b: Swampert|0 fnt
+expect |split|p1
+expect |-damage|p1a: Mudsdale|110/175
+expect |-damage|p1a: Mudsdale|62/100
+expect |split|p1
+expect |-damage|p1b: Gardevoir|120/157
+expect |-damage|p1b: Gardevoir|76/100
+expect |faint|p2b: Swampert
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Mudsdale|Heat Wave|p2a: Castform|[miss]
+expect |rng|100|98
+expect |-miss|p1a: Mudsdale|p2a: Castform
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Altaria|Altaria, L50, M|173/173
+expect |switch|p2b: Altaria|Altaria, L50, M|100/100
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pelipper|Pelipper, L50, M|128/138
+expect |switch|p2a: Pelipper|Pelipper, L50, M|92/100
+expect |move|p2b: Altaria|Nuzzle|p1a: Mudsdale
+expect |-immune|p1a: Mudsdale
+expect |move|p1b: Gardevoir|Tail Slap|p2a: Pelipper
+expect |rng|100|32
+expect |rng|20|11
+expect |rng|24|13
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Pelipper|119/138
+expect |-damage|p2a: Pelipper|86/100
+expect |rng|24|5
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Pelipper|110/138
+expect |-damage|p2a: Pelipper|79/100
+expect |rng|24|5
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Pelipper|101/138
+expect |-damage|p2a: Pelipper|73/100
+expect |-hitcount|p2a: Pelipper|3
+expect |move|p1a: Mudsdale|Shelter|p1a: Mudsdale
+expect |-boost|p1a: Mudsdale|def|2
+expect |
+expect |-fieldend|Misty Terrain
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2b: Altaria|Swords Dance|p2b: Altaria
+expect |-boost|p2b: Altaria|atk|2
+expect |move|p1b: Gardevoir|Disable||[still]
+expect |rng|100|66
+expect |-fail|p1b: Gardevoir
+expect |move|p2a: Pelipper|Toxic|p1b: Gardevoir
+expect |rng|100|61
+expect |-status|p1b: Gardevoir|tox
+expect |move|p1a: Mudsdale|Energy Ball|p2b: Altaria
+expect |rng|100|57
+expect |rng|24|10
+expect |rng|16|7
+expect |-resisted|p2b: Altaria|2
+expect |split|p2
+expect |-damage|p2b: Altaria|159/173
+expect |-damage|p2b: Altaria|91/100
+expect |rng|100|98
+expect |
+expect |split|p1
+expect |-damage|p1b: Gardevoir|111/157 tox|[from] psn
+expect |-damage|p1b: Gardevoir|70/100 tox|[from] psn
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p2b: Altaria|Lunge|p1b: Gardevoir
+expect |rng|100|66
+expect |rng|24|9
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1b: Gardevoir|52/157 tox
+expect |-damage|p1b: Gardevoir|33/100 tox
+expect |rng|100|98
+expect |-unboost|p1b: Gardevoir|atk|1
+expect |move|p1b: Gardevoir|Disable|p1a: Mudsdale
+expect |rng|100|70
+expect |-start|p1a: Mudsdale|Disable|Energy Ball
+expect |move|p2a: Pelipper|Toxic|p1b: Gardevoir
+expect |rng|100|31
+expect |-fail|p1b: Gardevoir|tox
+expect |move|p1a: Mudsdale|Shelter|p1a: Mudsdale
+expect |-boost|p1a: Mudsdale|def|2
+expect |
+expect |split|p1
+expect |-damage|p1b: Gardevoir|34/157 tox|[from] psn
+expect |-damage|p1b: Gardevoir|21/100 tox|[from] psn
+expect |upkeep
+expect |turn|10
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Altaria|Swords Dance|p2b: Altaria
+expect |-boost|p2b: Altaria|atk|2
+expect |rng|2|0
+expect |move|p1b: Gardevoir|Disable|p2b: Altaria
+expect |rng|100|1
+expect |-start|p2b: Altaria|Disable|Swords Dance
+expect |rng|2|0
+expect |move|p2a: Pelipper|Toxic|p1a: Mudsdale
+expect |rng|100|20
+expect |-status|p1a: Mudsdale|tox
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Mudsdale|Heat Wave|p2a: Pelipper|[spread] p2a
+expect |rng|100|36
+expect |rng|100|91
+expect |-miss|p1a: Mudsdale|p2b: Altaria
+expect |rng|24|19
+expect |rng|16|7
+expect |-resisted|p2a: Pelipper|1
+expect |split|p2
+expect |-damage|p2a: Pelipper|79/138
+expect |-damage|p2a: Pelipper|57/100
+expect |rng|100|61
+expect |
+expect |split|p1
+expect |-damage|p1b: Gardevoir|7/157 tox|[from] psn
+expect |-damage|p1b: Gardevoir|4/100 tox|[from] psn
+expect |split|p1
+expect |-damage|p1a: Mudsdale|100/175 tox|[from] psn
+expect |-damage|p1a: Mudsdale|57/100 tox|[from] psn
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p2b: Altaria|Lunge|p1a: Mudsdale
+expect |rng|100|41
+expect |rng|24|15
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Mudsdale|74/175 tox
+expect |-damage|p1a: Mudsdale|42/100 tox
+expect |rng|100|94
+expect |-unboost|p1a: Mudsdale|atk|1
+expect |move|p1b: Gardevoir|Sing|p2a: Pelipper|[miss]
+expect |rng|100|62
+expect |-miss|p1b: Gardevoir|p2a: Pelipper
+expect |move|p2a: Pelipper|Toxic|p1a: Mudsdale
+expect |rng|100|17
+expect |-fail|p1a: Mudsdale|tox
+expect |move|p1a: Mudsdale|Shelter|p1a: Mudsdale
+expect |-boost|p1a: Mudsdale|def|2
+expect |
+expect |split|p1
+expect |-damage|p1b: Gardevoir|0 fnt|[from] psn
+expect |-damage|p1b: Gardevoir|0 fnt|[from] psn
+expect |faint|p1b: Gardevoir
+expect |split|p1
+expect |-damage|p1a: Mudsdale|54/175 tox|[from] psn
+expect |-damage|p1a: Mudsdale|30/100 tox|[from] psn
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p2b: Altaria|Lunge|p2a: Pelipper
+expect |rng|100|4
+expect |rng|24|9
+expect |rng|16|10
+expect |-resisted|p2a: Pelipper|1
+expect |split|p2
+expect |-damage|p2a: Pelipper|39/138
+expect |-damage|p2a: Pelipper|28/100
+expect |rng|100|95
+expect |-unboost|p2a: Pelipper|atk|1
+expect |move|p2a: Pelipper|Toxic|p1a: Mudsdale
+expect |rng|100|14
+expect |-fail|p1a: Mudsdale|tox
+expect |move|p1a: Mudsdale|Shelter|p1a: Mudsdale
+expect |-boost|p1a: Mudsdale|def|0
+expect |
+expect |split|p1
+expect |-damage|p1a: Mudsdale|24/175 tox|[from] psn
+expect |-damage|p1a: Mudsdale|13/100 tox|[from] psn
+expect |-end|p1a: Mudsdale|Disable
+expect |upkeep
+expect |turn|13
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Altaria|Lunge|p2a: Pelipper
+expect |rng|100|4
+expect |rng|24|6
+expect |rng|16|14
+expect |-resisted|p2a: Pelipper|1
+expect |split|p2
+expect |-damage|p2a: Pelipper|1/138
+expect |-damage|p2a: Pelipper|1/100
+expect |rng|100|2
+expect |-unboost|p2a: Pelipper|atk|1
+expect |rng|2|1
+expect |move|p2a: Pelipper|Toxic|p2b: Altaria
+expect |rng|100|44
+expect |-status|p2b: Altaria|tox
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Mudsdale|Heat Wave|p2a: Pelipper|[spread] p2a
+expect |rng|100|20
+expect |rng|100|92
+expect |-miss|p1a: Mudsdale|p2b: Altaria
+expect |rng|24|7
+expect |rng|16|6
+expect |-resisted|p2a: Pelipper|1
+expect |split|p2
+expect |-damage|p2a: Pelipper|0 fnt
+expect |-damage|p2a: Pelipper|0 fnt
+expect |rng|100|94
+expect |faint|p2a: Pelipper
+expect |
+expect |split|p2
+expect |-damage|p2b: Altaria|149/173 tox|[from] psn
+expect |-damage|p2b: Altaria|86/100 tox|[from] psn
+expect |split|p1
+expect |-damage|p1a: Mudsdale|0 fnt|[from] psn
+expect |-damage|p1a: Mudsdale|0 fnt|[from] psn
+expect |faint|p1a: Mudsdale
+expect |
+expect |win|p2

@@ -1,0 +1,641 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 15bf 8f40 4661 4615
+genders drawn
+team p1
+Deoxys-Attack @ Luminous Moss
+Ability: Pressure
+Level: 50
+Tera Type: Fighting
+EVs: 23 HP / 185 Atk / 108 SpA / 192 SpD / 2 Spe
+Relaxed Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Protect
+
+Sparky (Milotic) @ Galarica Cuff
+Ability: Competitive
+Level: 50
+Tera Type: Ground
+EVs: 9 HP / 163 Atk / 22 Def / 239 SpA / 1 SpD / 76 Spe
+Careful Nature
+- Instruct
+- Metal Burst
+- Comeuppance
+- Mirror Coat
+
+Zoë (Fraxure) @ Snowball
+Ability: Unnerve
+Level: 50
+Tera Type: Fire
+EVs: 126 HP / 69 Atk / 3 Def / 175 SpA / 85 SpD / 31 Spe
+Quirky Nature
+- Healing Wish
+- Collision Course
+
+Eternatus @ Iapapa Berry
+Ability: Pressure
+Level: 50
+Tera Type: Normal
+EVs: 4 HP / 86 Atk / 56 Def / 18 SpA / 180 SpD / 148 Spe
+Brave Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Metal Burst
+
+Fuecoco @ Cheri Berry
+Ability: Blaze
+Level: 50
+Tera Type: Rock
+EVs: 65 HP / 20 Atk / 9 Def / 31 SpA / 87 SpD / 179 Spe
+Timid Nature
+- Instruct
+- Counter
+- Mirror Coat
+- Comeuppance
+
+X (Vespiquen) (F) @ Chesto Berry
+Ability: Unnerve
+Level: 50
+Tera Type: Flying
+EVs: 178 HP / 156 Atk / 29 Def / 1 SpA / 87 SpD / 53 Spe
+Lax Nature
+- Acid Armor
+- Mountain Gale
+- Liquidation
+- Flame Wheel
+end
+team p2
+Sparky (Starly)
+Ability: Reckless
+Level: 50
+Tera Type: Fire
+EVs: 4 HP / 134 Def / 44 SpA / 79 SpD / 242 Spe
+Timid Nature
+- Instruct
+- Counter
+- Mirror Coat
+- Comeuppance
+
+Bisharp (M) @ Choice Band
+Ability: Inner Focus
+Level: 50
+Tera Type: Electric
+EVs: 43 Atk / 233 Def / 35 SpA / 136 SpD / 57 Spe
+Brave Nature
+- Gigaton Hammer
+
+Zoë (Electrode-Hisui) @ Payapa Berry
+Ability: Aftermath
+Level: 50
+Tera Type: Poison
+EVs: 4 HP / 210 Atk / 168 Def / 5 SpA / 44 SpD / 43 Spe
+Jolly Nature
+- Swift
+- Gastro Acid
+- Dragon Cheer
+
+ThisNameIsFarTooLongToKeep (Kyurem) @ Sitrus Berry
+Ability: Pressure
+Level: 50
+Tera Type: Flying
+EVs: 159 HP / 33 Atk / 38 Def / 28 SpA / 8 SpD / 226 Spe
+Gentle Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Metal Burst
+
+Pikachu (Pawmi) @ Beast Ball
+Ability: Natural Cure
+Level: 50
+Tera Type: Dragon
+EVs: 161 HP / 56 Atk / 3 Def / 23 SpA / 241 SpD / 19 Spe
+Serious Nature
+- Instruct
+- Metal Burst
+- Comeuppance
+- Mirror Coat
+
+Decidueye-Hisui @ Rawst Berry
+Ability: Overgrow
+Level: 50
+Tera Type: Poison
+EVs: 80 HP / 26 Atk / 27 Def / 21 SpA / 185 SpD / 171 Spe
+Quirky Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Protect
+end
+choice p1 team 2613
+choice p2 team 6,5,1,3
+choice p1 move 1 terastal +1 ,  switch deoxys-attack
+choice p2 move 3 1 terastallize, move 1 1
+choice p1 move 4, move 2
+choice p2 move 3 -2, move 2
+choice p1 default
+choice p2 switch 3, move 2
+choice p1 move instruct +1, move Instruct -1
+choice p2 move 1 -2, move 1 1
+choice p1 move 3, switch 4
+choice p2 move 4, move 1 1
+choice p1 switch 3, move healingwish
+choice p2 move Counter,move instruct +1
+choice p1 pass, switch 3
+choice p2 move 3, move 1 -1
+choice p1 move 2 2, move 3
+choice p2 move 1 1, move 1 2
+choice p1 move 3 -2, move 4
+choice p2 pass, switch 3
+choice p1 move liquidation +2, move Metal Burst
+choice p2 move 1 1, switch 4
+choice p1 pass, switch 4
+choice p2 move 4, move 2 1
+choice p1 move 3 2, move 1
+choice p2 move 3,move 1
+choice p1 move flamewheel 2, move 3 +2
+choice p2 move 2, switch 4
+choice p1 move 3 1, move 4
+choice p2 move 1 -2, move 3 1
+choice p1 move 3 -2, move 2
+choice p2 switch 4, pass
+choice p1 move 4 2, pass
+choice p2 move 2 1, move 2
+choice p1 move 4 2, pass
+choice p2 move 2 1, move 3 1
+choice p1 move 3 1, pass
+choice p2 move 2 1, move 3 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Deoxys-Attack, L50|
+expect |poke|p1|Milotic, L50, M|
+expect |poke|p1|Fraxure, L50, F|
+expect |poke|p1|Eternatus, L50|
+expect |poke|p1|Fuecoco, L50, F|
+expect |poke|p1|Vespiquen, L50, F|
+expect |poke|p2|Starly, L50, F|
+expect |poke|p2|Bisharp, L50, M|
+expect |poke|p2|Electrode-Hisui, L50|
+expect |poke|p2|Kyurem, L50|
+expect |poke|p2|Pawmi, L50, F|
+expect |poke|p2|Decidueye-Hisui, L50, F|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Sparky|Milotic, L50, M|171/171
+expect |switch|p1a: Sparky|Milotic, L50, M|171/171
+expect |split|p1
+expect |switch|p1b: X|Vespiquen, L50, F|167/167
+expect |switch|p1b: X|Vespiquen, L50, F|167/167
+expect |split|p2
+expect |switch|p2a: Decidueye|Decidueye-Hisui, L50, F|173/173
+expect |switch|p2a: Decidueye|Decidueye-Hisui, L50, F|173/173
+expect |split|p2
+expect |switch|p2b: Pikachu|Pawmi, L50, F|140/140
+expect |switch|p2b: Pikachu|Pawmi, L50, F|140/140
+expect |-ability|p1b: X|Unnerve
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Deoxys|Deoxys-Attack, L50|128/128
+expect |switch|p1b: Deoxys|Deoxys-Attack, L50|128/128
+expect |-ability|p1b: Deoxys|Pressure
+expect |-terastallize|p1a: Sparky|Ground
+expect |-terastallize|p2a: Decidueye|Poison
+expect |move|p1a: Sparky|Instruct||[still]
+expect |-fail|p1a: Sparky
+expect |move|p2a: Decidueye|Instruct||[still]
+expect |-fail|p2a: Decidueye
+expect |move|p2b: Pikachu|Instruct||[still]
+expect |-fail|p2b: Pikachu
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2a: Decidueye|Instruct||[still]
+expect |-fail|p2a: Decidueye
+expect |move|p2b: Pikachu|Metal Burst||[still]
+expect |-fail|p2b: Pikachu
+expect |move|p1b: Deoxys|Mirror Coat||[still]
+expect |-fail|p1b: Deoxys
+expect |move|p1a: Sparky|Mirror Coat||[still]
+expect |-fail|p1a: Sparky
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sparky|Starly, L50, F|116/116
+expect |switch|p2a: Sparky|Starly, L50, F|116/116
+expect |move|p1a: Sparky|Instruct|p2b: Pikachu
+expect |-singleturn|p2b: Pikachu|move: Instruct|[of] p1a: Sparky
+expect |move|p2b: Pikachu|Metal Burst||[still]
+expect |-fail|p2b: Pikachu
+expect |move|p2b: Pikachu|Metal Burst||[still]
+expect |-fail|p2b: Pikachu
+expect |move|p1b: Deoxys|Counter||[still]
+expect |-fail|p1b: Deoxys
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1b: Deoxys|Instruct||[still]
+expect |-fail|p1b: Deoxys
+expect |move|p2a: Sparky|Instruct|p2b: Pikachu
+expect |-singleturn|p2b: Pikachu|move: Instruct|[of] p2a: Sparky
+expect |move|p2b: Pikachu|Metal Burst||[still]
+expect |-fail|p2b: Pikachu
+expect |move|p1a: Sparky|Instruct||[still]
+expect |-fail|p1a: Sparky
+expect |move|p2b: Pikachu|Instruct||[still]
+expect |-fail|p2b: Pikachu
+expect |
+expect |upkeep
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Zoë|Fraxure, L50, F|157/157
+expect |switch|p1b: Zoë|Fraxure, L50, F|157/157
+expect |-ability|p1b: Zoë|Unnerve
+expect |move|p2a: Sparky|Comeuppance||[still]
+expect |-fail|p2a: Sparky
+expect |move|p1a: Sparky|Comeuppance||[still]
+expect |-fail|p1a: Sparky
+expect |move|p2b: Pikachu|Instruct|p1a: Sparky
+expect |-singleturn|p1a: Sparky|move: Instruct|[of] p2b: Pikachu
+expect |move|p1a: Sparky|Comeuppance||[still]
+expect |-fail|p1a: Sparky
+expect |
+expect |upkeep
+expect |turn|6
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: X|Vespiquen, L50, F|167/167
+expect |switch|p1a: X|Vespiquen, L50, F|167/167
+expect |-ability|p1a: X|Unnerve
+expect |move|p1b: Zoë|Healing Wish|p1b: Zoë
+expect |faint|p1b: Zoë
+expect |move|p2b: Pikachu|Instruct||[still]
+expect |-fail|p2b: Pikachu
+expect |move|p2a: Sparky|Counter||[still]
+expect |-fail|p2a: Sparky
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sparky|Milotic, L50, M, tera:Ground|171/171
+expect |switch|p1b: Sparky|Milotic, L50, M, tera:Ground|171/171
+expect |turn|7
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1b: Sparky|Comeuppance||[still]
+expect |-fail|p1b: Sparky
+expect |move|p2b: Pikachu|Instruct|p2a: Sparky
+expect |-singleturn|p2a: Sparky|move: Instruct|[of] p2b: Pikachu
+expect |move|p1a: X|Mountain Gale|p2b: Pikachu
+expect |rng|100|18
+expect |rng|24|7
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Pikachu|9/140
+expect |-damage|p2b: Pikachu|9/140
+expect |rng|100|7
+expect |move|p2a: Sparky|Mirror Coat||[still]
+expect |-fail|p2a: Sparky
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|8
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2a: Sparky|Instruct|p1a: X
+expect |-singleturn|p1a: X|move: Instruct|[of] p2a: Sparky
+expect |move|p1a: X|Mountain Gale|p2b: Pikachu
+expect |rng|100|8
+expect |rng|24|16
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2b: Pikachu|0 fnt
+expect |-damage|p2b: Pikachu|0 fnt
+expect |rng|100|32
+expect |faint|p2b: Pikachu
+expect |rng|1|0
+expect |move|p1a: X|Liquidation|p1b: Sparky
+expect |rng|100|61
+expect |rng|24|7
+expect |rng|16|4
+expect |-supereffective|p1b: Sparky
+expect |split|p1
+expect |-damage|p1b: Sparky|83/171
+expect |-damage|p1b: Sparky|83/171
+expect |rng|100|57
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Sparky|Mirror Coat||[still]
+expect |-fail|p1b: Sparky
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Decidueye|Decidueye-Hisui, L50, F, tera:Poison|173/173
+expect |switch|p2b: Decidueye|Decidueye-Hisui, L50, F, tera:Poison|173/173
+expect |turn|9
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zoë|Electrode-Hisui, L50|136/136
+expect |switch|p2b: Zoë|Electrode-Hisui, L50|136/136
+expect |move|p2a: Sparky|Instruct|p1a: X
+expect |-singleturn|p1a: X|move: Instruct|[of] p2a: Sparky
+expect |move|p1a: X|Liquidation|p1b: Sparky
+expect |rng|100|83
+expect |rng|24|20
+expect |rng|16|2
+expect |-supereffective|p1b: Sparky
+expect |split|p1
+expect |-damage|p1b: Sparky|0 fnt
+expect |-damage|p1b: Sparky|0 fnt
+expect |rng|100|33
+expect |faint|p1b: Sparky
+expect |move|p1a: X|Liquidation|p2b: Zoë
+expect |rng|100|86
+expect |rng|24|17
+expect |rng|16|9
+expect |-resisted|p2b: Zoë
+expect |split|p2
+expect |-damage|p2b: Zoë|117/136
+expect |-damage|p2b: Zoë|117/136
+expect |rng|100|15
+expect |-unboost|p2b: Zoë|def|1
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Deoxys|Deoxys-Attack, L50|128/128
+expect |switch|p1b: Deoxys|Deoxys-Attack, L50|128/128
+expect |-ability|p1b: Deoxys|Pressure
+expect |turn|10
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2b: Zoë|Gastro Acid|p1a: X
+expect |rng|100|29
+expect |-endability|p1a: X
+expect |move|p2a: Sparky|Comeuppance||[still]
+expect |-fail|p2a: Sparky
+expect |move|p1a: X|Liquidation|p2b: Zoë
+expect |rng|100|7
+expect |rng|24|17
+expect |rng|16|14
+expect |-resisted|p2b: Zoë
+expect |split|p2
+expect |-damage|p2b: Zoë|91/136
+expect |-damage|p2b: Zoë|91/136
+expect |rng|100|84
+expect |move|p1b: Deoxys|Counter||[still]
+expect |-fail|p1b: Deoxys
+expect |
+expect |upkeep
+expect |turn|11
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Zoë|Swift|p1a: X|[spread] p1a,p1b
+expect |rng|24|11
+expect |rng|16|14
+expect |rng|24|16
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: X|154/167
+expect |-damage|p1a: X|154/167
+expect |split|p1
+expect |-damage|p1b: Deoxys|99/128
+expect |-damage|p1b: Deoxys|99/128
+expect |move|p1b: Deoxys|Instruct|p2b: Zoë
+expect |-singleturn|p2b: Zoë|move: Instruct|[of] p1b: Deoxys
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Zoë|Swift|p1b: Deoxys|[spread] p1a,p1b
+expect |rng|24|13
+expect |rng|16|8
+expect |rng|24|10
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: X|140/167
+expect |-damage|p1a: X|140/167
+expect |split|p1
+expect |-damage|p1b: Deoxys|75/128
+expect |-damage|p1b: Deoxys|75/128
+expect |move|p1a: X|Flame Wheel|p2b: Zoë
+expect |rng|100|35
+expect |rng|24|22
+expect |rng|16|10
+expect |-supereffective|p2b: Zoë
+expect |split|p2
+expect |-damage|p2b: Zoë|13/136
+expect |-damage|p2b: Zoë|13/136
+expect |rng|100|14
+expect |move|p2a: Sparky|Mirror Coat||[still]
+expect |-fail|p2a: Sparky
+expect |
+expect |upkeep
+expect |turn|12
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Decidueye|Decidueye-Hisui, L50, F, tera:Poison|173/173
+expect |switch|p2b: Decidueye|Decidueye-Hisui, L50, F, tera:Poison|173/173
+expect |move|p1b: Deoxys|Protect|p1b: Deoxys
+expect |-singleturn|p1b: Deoxys|Protect
+expect |move|p1a: X|Liquidation|p2a: Sparky
+expect |rng|100|8
+expect |rng|24|18
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Sparky|52/116
+expect |-damage|p2a: Sparky|52/116
+expect |rng|100|67
+expect |move|p2a: Sparky|Counter|p1a: X
+expect |rng|100|28
+expect |split|p1
+expect |-damage|p1a: X|12/167
+expect |-damage|p1a: X|12/167
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|13
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2a: Sparky|Instruct||[still]
+expect |-fail|p2a: Sparky
+expect |move|p2b: Decidueye|Instruct|p1a: X
+expect |-singleturn|p1a: X|move: Instruct|[of] p2b: Decidueye
+expect |move|p1a: X|Liquidation|p2a: Sparky
+expect |rng|100|51
+expect |rng|24|0
+expect |rng|16|4
+expect |-crit|p2a: Sparky
+expect |split|p2
+expect |-damage|p2a: Sparky|0 fnt
+expect |-damage|p2a: Sparky|0 fnt
+expect |rng|100|80
+expect |faint|p2a: Sparky
+expect |rng|1|0
+expect |move|p1a: X|Liquidation|p1b: Deoxys
+expect |rng|100|61
+expect |rng|24|0
+expect |rng|16|6
+expect |-crit|p1b: Deoxys
+expect |split|p1
+expect |-damage|p1b: Deoxys|0 fnt
+expect |-damage|p1b: Deoxys|0 fnt
+expect |rng|100|43
+expect |faint|p1b: Deoxys
+expect |rng|1|0
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoë|Electrode-Hisui, L50|13/136
+expect |switch|p2a: Zoë|Electrode-Hisui, L50|13/136
+expect |turn|14
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Gastro Acid||[still]
+expect |rng|100|18
+expect |-fail|p2a: Zoë
+expect |move|p1a: X|Flame Wheel|p2b: Decidueye
+expect |rng|100|71
+expect |rng|24|12
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Decidueye|145/173
+expect |-damage|p2b: Decidueye|145/173
+expect |rng|100|23
+expect |move|p2b: Decidueye|Mirror Coat||[still]
+expect |-fail|p2b: Decidueye
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Gastro Acid||[still]
+expect |rng|100|79
+expect |-fail|p2a: Zoë
+expect |move|p2b: Decidueye|Instruct|p1a: X
+expect |-singleturn|p1a: X|move: Instruct|[of] p2b: Decidueye
+expect |move|p1a: X|Flame Wheel|p2b: Decidueye
+expect |rng|100|44
+expect |rng|24|20
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2b: Decidueye|118/173
+expect |-damage|p2b: Decidueye|118/173
+expect |rng|100|7
+expect |-status|p2b: Decidueye|brn
+expect |-enditem|p2b: Decidueye|Rawst Berry|[eat]
+expect |-curestatus|p2b: Decidueye|brn|[msg]
+expect |move|p1a: X|Flame Wheel|p2b: Decidueye
+expect |rng|100|74
+expect |rng|24|12
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Decidueye|90/173
+expect |-damage|p2b: Decidueye|90/173
+expect |rng|100|62
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Gastro Acid||[still]
+expect |rng|100|55
+expect |-fail|p2a: Zoë
+expect |move|p2b: Decidueye|Instruct|p1a: X
+expect |-singleturn|p1a: X|move: Instruct|[of] p2b: Decidueye
+expect |move|p1a: X|Flame Wheel|p2b: Decidueye
+expect |rng|100|19
+expect |rng|24|14
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2b: Decidueye|63/173
+expect |-damage|p2b: Decidueye|63/173
+expect |rng|100|20
+expect |move|p1a: X|Liquidation|p2a: Zoë
+expect |rng|100|14
+expect |rng|24|18
+expect |rng|16|4
+expect |-resisted|p2a: Zoë
+expect |split|p2
+expect |-damage|p2a: Zoë|0 fnt
+expect |-damage|p2a: Zoë|0 fnt
+expect |rng|100|37
+expect |split|p1
+expect |-damage|p1a: X|0 fnt|[from] ability: Aftermath|[of] p2a: Zoë
+expect |-damage|p1a: X|0 fnt|[from] ability: Aftermath|[of] p2a: Zoë
+expect |faint|p2a: Zoë
+expect |faint|p1a: X
+expect |
+expect |win|p2

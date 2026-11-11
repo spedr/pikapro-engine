@@ -1,0 +1,57 @@
+[package]
+name = "pikapro-conformance"
+description = "Differential testing of pikapro against the Pokémon Showdown simulator"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[[bin]]
+name = "conformance"
+path = "src/main.rs"
+
+[[bin]]
+name = "validate_fuzz"
+path = "src/bin/validate_fuzz.rs"
+
+[[bin]]
+name = "teams_fuzz"
+path = "src/bin/teams_fuzz.rs"
+
+[[bin]]
+name = "view_conformance"
+path = "src/bin/view_conformance.rs"
+
+[[bin]]
+name = "channel_conformance"
+path = "src/bin/channel_conformance.rs"
+
+[[bin]]
+name = "view_dump"
+path = "src/bin/view_dump.rs"
+
+[[bin]]
+name = "feature_audit"
+path = "src/bin/feature_audit.rs"
+
+[[bin]]
+name = "random_teams"
+path = "src/bin/random_teams.rs"
+
+[[bin]]
+name = "channel_fuzz"
+path = "src/bin/channel_fuzz.rs"
+
+[dependencies]
+pikapro.workspace = true
+pikapro-data.workspace = true
+pikapro-protocol.workspace = true
+pikapro-validate.workspace = true
+pikapro-teams.workspace = true
+pikapro-view.workspace = true
+pikapro-rl.workspace = true
+
+[lints]
+workspace = true

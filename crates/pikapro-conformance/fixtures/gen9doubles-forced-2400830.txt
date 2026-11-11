@@ -1,0 +1,150 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 3fde 29f4 a2fb 3c93
+genders drawn
+team p1
+Pawmot
+Ability: Volt Absorb
+Level: 50
+Tera Type: Ghost
+EVs: 126 HP / 10 Atk / 190 Def / 109 SpA / 23 Spe
+Bashful Nature
+- Revival Blessing
+- Close Combat
+- Protect
+
+Pawmot
+Ability: Iron Fist
+Level: 50
+Tera Type: Stellar
+EVs: 39 HP / 94 Atk / 119 Def / 10 SpA / 86 SpD / 161 Spe
+Naive Nature
+- Revival Blessing
+- Thunder Punch
+- Protect
+end
+team p2
+Pawmot
+Ability: Volt Absorb
+Level: 50
+Tera Type: Flying
+EVs: 168 HP / 114 Atk / 16 SpA / 111 SpD / 25 Spe
+Timid Nature
+- Revival Blessing
+- Close Combat
+- Protect
+
+Kingambit
+Ability: Defiant
+Level: 50
+Tera Type: Steel
+EVs: 182 HP / 167 Atk / 1 Def / 10 SpA / 1 SpD / 139 Spe
+Impish Nature
+- Kowtow Cleave
+- Sucker Punch
+- Iron Head
+end
+choice p1 move 2 2, move 2 2
+choice p2 move 2 1, move 2 2
+choice p1 move 2 1 terastallize, move 3
+choice p2 move 1, pass
+choice p2 pass, pass
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Pawmot|Pawmot, L50, M|161/161
+expect |switch|p1a: Pawmot|Pawmot, L50, M|161/161
+expect |split|p1
+expect |switch|p1b: Pawmot|Pawmot, L50, F|150/150
+expect |switch|p1b: Pawmot|Pawmot, L50, F|150/150
+expect |split|p2
+expect |switch|p2a: Pawmot|Pawmot, L50, F|166/166
+expect |switch|p2a: Pawmot|Pawmot, L50, F|166/166
+expect |split|p2
+expect |switch|p2b: Kingambit|Kingambit, L50, M|198/198
+expect |switch|p2b: Kingambit|Kingambit, L50, M|198/198
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2b: Kingambit|Sucker Punch|p1b: Pawmot
+expect |rng|100|44
+expect |rng|24|16
+expect |rng|16|0
+expect |-resisted|p1b: Pawmot
+expect |split|p1
+expect |-damage|p1b: Pawmot|111/150
+expect |-damage|p1b: Pawmot|111/150
+expect |move|p1b: Pawmot|Thunder Punch|p2b: Kingambit
+expect |rng|100|5
+expect |rng|24|10
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2b: Kingambit|149/198
+expect |-damage|p2b: Kingambit|149/198
+expect |rng|100|24
+expect |move|p2a: Pawmot|Close Combat|p1a: Pawmot
+expect |rng|100|45
+expect |rng|24|16
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Pawmot|79/161
+expect |-damage|p1a: Pawmot|79/161
+expect |rng|100|49
+expect |-unboost|p2a: Pawmot|def|1
+expect |-unboost|p2a: Pawmot|spd|1
+expect |move|p1a: Pawmot|Close Combat|p2b: Kingambit
+expect |rng|100|99
+expect |rng|24|21
+expect |rng|16|1
+expect |-supereffective|p2b: Kingambit
+expect |split|p2
+expect |-damage|p2b: Kingambit|0 fnt
+expect |-damage|p2b: Kingambit|0 fnt
+expect |rng|100|68
+expect |-unboost|p1a: Pawmot|def|1
+expect |-unboost|p1a: Pawmot|spd|1
+expect |faint|p2b: Kingambit
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |-terastallize|p1a: Pawmot|Ghost
+expect |move|p1b: Pawmot|Protect|p1b: Pawmot
+expect |-singleturn|p1b: Pawmot|Protect
+expect |move|p2a: Pawmot|Revival Blessing|p2a: Pawmot
+expect |
+expect |t:|
+expect |move|p1a: Pawmot|Close Combat|p2a: Pawmot
+expect |rng|100|15
+expect |rng|24|23
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Pawmot|0 fnt
+expect |-damage|p2a: Pawmot|0 fnt
+expect |rng|100|39
+expect |-unboost|p1a: Pawmot|def|1
+expect |-unboost|p1a: Pawmot|spd|1
+expect |faint|p2a: Pawmot
+expect |
+expect |win|p1
+request p1 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":1,"maxpp":1,"target":"self","disabled":false},{"move":"Close Combat","id":"closecombat","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Ghost"},{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":1,"maxpp":1,"target":"self","disabled":false},{"move":"Thunder Punch","id":"thunderpunch","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Stellar"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pawmot","details":"Pawmot, L50, M","condition":"161/161","active":true,"stats":{"atk":136,"def":114,"spa":104,"spd":80,"spe":128},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Pawmot","details":"Pawmot, L50, F","condition":"150/150","active":true,"stats":{"atk":147,"def":105,"spa":91,"spd":81,"spe":159},"moves":["revivalblessing","thunderpunch","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":1,"maxpp":1,"target":"self","disabled":false},{"move":"Close Combat","id":"closecombat","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Flying"},{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sucker Punch","id":"suckerpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Iron Head","id":"ironhead","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Steel"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pawmot","details":"Pawmot, L50, F","condition":"166/166","active":true,"stats":{"atk":134,"def":90,"spa":92,"spd":94,"spe":140},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Kingambit","details":"Kingambit, L50, M","condition":"198/198","active":true,"stats":{"atk":176,"def":154,"spa":72,"spd":105,"spe":87},"moves":["kowtowcleave","suckerpunch","ironhead"],"baseAbility":"defiant","item":"","pokeball":"pokeball","ability":"defiant","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":1,"maxpp":1,"target":"self","disabled":false},{"move":"Close Combat","id":"closecombat","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Ghost"},{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":1,"maxpp":1,"target":"self","disabled":false},{"move":"Thunder Punch","id":"thunderpunch","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Stellar"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pawmot","details":"Pawmot, L50, M","condition":"79/161","active":true,"stats":{"atk":136,"def":114,"spa":104,"spd":80,"spe":128},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Pawmot","details":"Pawmot, L50, F","condition":"111/150","active":true,"stats":{"atk":147,"def":105,"spa":91,"spd":81,"spe":159},"moves":["revivalblessing","thunderpunch","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":1,"maxpp":1,"target":"self","disabled":false},{"move":"Close Combat","id":"closecombat","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Flying"},{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sucker Punch","id":"suckerpunch","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Iron Head","id":"ironhead","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Steel"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pawmot","details":"Pawmot, L50, F","condition":"166/166","active":true,"stats":{"atk":134,"def":90,"spa":92,"spd":94,"spe":140},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Kingambit","details":"Kingambit, L50, M","condition":"0 fnt","active":true,"stats":{"atk":176,"def":154,"spa":72,"spd":105,"spe":87},"moves":["kowtowcleave","suckerpunch","ironhead"],"baseAbility":"defiant","item":"","pokeball":"pokeball","ability":"defiant","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pawmot","details":"Pawmot, L50, M","condition":"79/161","active":true,"stats":{"atk":136,"def":114,"spa":104,"spd":80,"spe":128},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Pawmot","details":"Pawmot, L50, F","condition":"111/150","active":true,"stats":{"atk":147,"def":105,"spa":91,"spd":81,"spe":159},"moves":["revivalblessing","thunderpunch","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pawmot","details":"Pawmot, L50, F","condition":"166/166","active":true,"stats":{"atk":134,"def":90,"spa":92,"spd":94,"spe":140},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":true,"teraType":"Flying","terastallized":""},{"ident":"p2: Kingambit","details":"Kingambit, L50, M","condition":"0 fnt","active":true,"stats":{"atk":176,"def":154,"spa":72,"spd":105,"spe":87},"moves":["kowtowcleave","suckerpunch","ironhead"],"baseAbility":"defiant","item":"","pokeball":"pokeball","ability":"defiant","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]},"noCancel":true}

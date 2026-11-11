@@ -1,0 +1,103 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9ou
+seed 0000 0000 02dc 6fe8
+genders drawn
+team p1
+Mew
+Ability: Synchronize
+Hardy Nature
+- Recover
+- Temper Flare
+end
+team p2
+Gengar
+Ability: Cursed Body
+EVs: 252 Spe
+Timid Nature
+- Spite
+- Splash
+end
+choice p1 team 1
+choice p2 team 1
+choice p1 move 1
+choice p2 move 2
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 move 2
+choice p2 move 2
+expect |t:|
+expect |gametype|singles
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] OU
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Endless Battle Clause: Forcing endless battles is banned
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|OHKO Clause: OHKO moves are banned
+expect |rule|Evasion Items Clause: Evasion items are banned
+expect |rule|Evasion Moves Clause: Evasion moves are banned
+expect |rule|Evasion Abilities Clause: Evasion abilities are banned
+expect |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+expect |clearpoke
+expect |poke|p1|Mew|
+expect |poke|p2|Gengar, F|
+expect |teampreview
+expect |
+expect |t:|
+expect |teamsize|p1|1
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Mew|Mew|341/341
+expect |switch|p1a: Mew|Mew|100/100
+expect |split|p2
+expect |switch|p2a: Gengar|Gengar, F|261/261
+expect |switch|p2a: Gengar|Gengar, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Gengar|Splash|p2a: Gengar
+expect |-nothing
+expect |move|p1a: Mew|Recover||[still]
+expect |-fail|p1a: Mew|heal
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Gengar|Spite|p1a: Mew
+expect |rng|100|42
+expect |-activate|p1a: Mew|move: Spite|Recover|4
+expect |move|p1a: Mew|Recover||[still]
+expect |-fail|p1a: Mew|heal
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Gengar|Spite|p1a: Mew
+expect |rng|100|10
+expect |-activate|p1a: Mew|move: Spite|Recover|2
+expect |cant|p1a: Mew|nopp|Recover
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Gengar|Splash|p2a: Gengar
+expect |-nothing
+expect |move|p1a: Mew|Temper Flare|p2a: Gengar
+expect |rng|100|57
+expect |rng|24|18
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Gengar|83/261
+expect |-damage|p2a: Gengar|32/100
+expect |rng|10|8
+expect |
+expect |upkeep
+expect |turn|5

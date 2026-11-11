@@ -1,0 +1,506 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 496b ed69 3238 9748
+genders drawn
+team-seed p1 gen5,459bda20da7f4e8f
+team-seed p2 sodium,81df61bb60980b5d6bb8c9aecb3e87bd
+team p1
+Krookodile (F) @ Choice Scarf
+Ability: Intimidate
+Level: 80
+Tera Type: Poison
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Gunk Shot
+- Rock Slide
+- Knock Off
+- High Horsepower
+
+Arceus-Bug @ Insect Plate
+Ability: Multitype
+Level: 74
+Tera Type: Normal
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Stomping Tantrum
+- X-Scissor
+- Swords Dance
+- Extreme Speed
+
+Excadrill (F) @ Assault Vest
+Ability: Mold Breaker
+Level: 83
+Tera Type: Flying
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Iron Head
+- Rock Slide
+- High Horsepower
+- Rapid Spin
+
+Zapdos-Galar @ Choice Band
+Ability: Defiant
+Level: 77
+Tera Type: Fighting
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Thunderous Kick
+- U-turn
+- Knock Off
+- Brave Bird
+
+Iron Jugulis @ Booster Energy
+Ability: Quark Drive
+Level: 79
+Tera Type: Flying
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Hurricane
+- Dark Pulse
+- Tailwind
+- Protect
+
+Magcargo (F) @ Life Orb
+Ability: Weak Armor
+Level: 93
+Tera Type: Grass
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Shell Smash
+- Power Gem
+- Heat Wave
+- Protect
+end
+team p2
+Heracross (M) @ Choice Band
+Ability: Moxie
+Level: 82
+Tera Type: Rock
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Close Combat
+- Megahorn
+- Knock Off
+- Rock Slide
+
+Minior @ White Herb
+Ability: Shields Down
+Level: 83
+Tera Type: Steel
+EVs: 69 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Acrobatics
+- Protect
+- Rock Slide
+- Shell Smash
+
+Indeedee (M) @ Life Orb
+Ability: Psychic Surge
+Level: 79
+Tera Type: Psychic
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Hyper Voice
+- Expanding Force
+- Protect
+- Shadow Ball
+
+Seviper (F) @ Life Orb
+Ability: Shed Skin
+Level: 96
+Tera Type: Poison
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Protect
+- Glare
+- Knock Off
+- Gunk Shot
+
+Lumineon (M) @ Sitrus Berry
+Ability: Storm Drain
+Level: 92
+Tera Type: Fire
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Helping Hand
+- Hydro Pump
+- Icy Wind
+- Encore
+
+Azelf @ Life Orb
+Ability: Levitate
+Level: 83
+Tera Type: Fairy
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Psychic
+- Dazzling Gleam
+- Fire Blast
+- Protect
+end
+choice p1 move 1 1, move 1 2 terastallize
+choice p2 move 3 -2 terastallize, switch 3
+choice p2 pass, switch 4
+choice p1 move 1 -2, move 3
+choice p2 move 3 -2, move 3 -1
+choice p1 switch zapdos-galar,move extremespeed 2
+choice p2 move Knock Off +1,move gunkshot +1
+choice p1 move 1 2, move 1 2
+choice p2 move 1 2 ,  move 4 1
+choice p1 switch Magcargo ,  pass
+choice p2 switch 5, switch 3
+choice p1 move 2 1, move 4 -1
+choice p2 move 1 -2, move 1 1
+choice p1 move Power Gem +2, move 2 2
+choice p2 move 4 2, move 4
+choice p2 pass ,  switch Azelf
+choice p1 move 4, move 2 -1
+choice p2 pass, move 2
+choice p1 move 2 -2, move 4 2
+choice p2 pass, move 1 1
+choice p1 switch 4, pass
+choice p2 pass, move 2
+choice p1 move 3 2, move 2 2
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Krookodile|Krookodile, L80, F|283/283
+expect |switch|p1a: Krookodile|Krookodile, L80, F|100/100
+expect |split|p1
+expect |switch|p1b: Arceus|Arceus-Bug, L74|300/300
+expect |switch|p1b: Arceus|Arceus-Bug, L74|100/100
+expect |split|p2
+expect |switch|p2a: Heracross|Heracross, L82, M|265/265
+expect |switch|p2a: Heracross|Heracross, L82, M|100/100
+expect |split|p2
+expect |switch|p2b: Minior|Minior, L83|232/232
+expect |switch|p2b: Minior|Minior, L83|100/100
+expect |-ability|p1a: Krookodile|Intimidate|boost
+expect |-unboost|p2a: Heracross|atk|1
+expect |-unboost|p2b: Minior|atk|1
+expect |-formechange|p2b: Minior|Minior-Meteor||[from] ability: Shields Down
+expect |-enditem|p2b: Minior|White Herb
+expect |-clearnegativeboost|p2b: Minior|[silent]
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Indeedee|Indeedee, L79, M|224/224
+expect |switch|p2b: Indeedee|Indeedee, L79, M|100/100
+expect |-fieldstart|move: Psychic Terrain|[from] ability: Psychic Surge|[of] p2b: Indeedee
+expect |-terastallize|p1b: Arceus|Normal
+expect |-terastallize|p2a: Heracross|Rock
+expect |move|p1a: Krookodile|Gunk Shot|p2a: Heracross
+expect |rng|100|29
+expect |rng|24|3
+expect |rng|16|12
+expect |-resisted|p2a: Heracross
+expect |split|p2
+expect |-damage|p2a: Heracross|216/265
+expect |-damage|p2a: Heracross|82/100
+expect |rng|100|58
+expect |move|p1b: Arceus|Stomping Tantrum|p2b: Indeedee
+expect |rng|100|85
+expect |rng|24|7
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Indeedee|149/224
+expect |-damage|p2b: Indeedee|67/100
+expect |move|p2a: Heracross|Knock Off|p2b: Indeedee
+expect |rng|100|6
+expect |rng|24|9
+expect |rng|16|12
+expect |-supereffective|p2b: Indeedee
+expect |split|p2
+expect |-damage|p2b: Indeedee|0 fnt
+expect |-damage|p2b: Indeedee|0 fnt
+expect |-enditem|p2b: Indeedee|Life Orb|[from] move: Knock Off|[of] p2a: Heracross
+expect |faint|p2b: Indeedee
+expect |-ability|p2a: Heracross|Moxie|boost
+expect |-boost|p2a: Heracross|atk|1
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Seviper|Seviper, L96, F|296/296
+expect |switch|p2b: Seviper|Seviper, L96, F|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Krookodile|Gunk Shot|p1b: Arceus
+expect |rng|100|47
+expect |rng|24|22
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Arceus|219/300
+expect |-damage|p1b: Arceus|73/100
+expect |rng|100|80
+expect |move|p1b: Arceus|Swords Dance|p1b: Arceus
+expect |-boost|p1b: Arceus|atk|2
+expect |move|p2a: Heracross|Knock Off|p2b: Seviper
+expect |rng|100|21
+expect |rng|24|12
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Seviper|150/296
+expect |-damage|p2b: Seviper|51/100
+expect |-enditem|p2b: Seviper|Life Orb|[from] move: Knock Off|[of] p2a: Heracross
+expect |move|p2b: Seviper|Knock Off|p2a: Heracross
+expect |rng|100|37
+expect |rng|24|23
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Heracross|116/265
+expect |-damage|p2a: Heracross|44/100
+expect |-enditem|p2a: Heracross|Choice Band|[from] move: Knock Off|[of] p2b: Seviper
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Zapdos|Zapdos-Galar, L77|265/265
+expect |switch|p1a: Zapdos|Zapdos-Galar, L77|100/100
+expect |move|p1b: Arceus|Extreme Speed|p2b: Seviper
+expect |-activate|p2b: Seviper|move: Psychic Terrain
+expect |move|p2a: Heracross|Knock Off|p1a: Zapdos
+expect |rng|100|40
+expect |rng|24|10
+expect |rng|16|0
+expect |-resisted|p1a: Zapdos
+expect |split|p1
+expect |-damage|p1a: Zapdos|219/265
+expect |-damage|p1a: Zapdos|83/100
+expect |-enditem|p1a: Zapdos|Choice Band|[from] move: Knock Off|[of] p2a: Heracross
+expect |move|p2b: Seviper|Gunk Shot|p1a: Zapdos
+expect |rng|100|63
+expect |rng|24|15
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Zapdos|47/265
+expect |-damage|p1a: Zapdos|18/100
+expect |rng|100|8
+expect |-status|p1a: Zapdos|psn
+expect |
+expect |split|p1
+expect |-damage|p1a: Zapdos|14/265 psn|[from] psn
+expect |-damage|p1a: Zapdos|6/100 psn|[from] psn
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1b: Arceus|Stomping Tantrum|p2b: Seviper
+expect |rng|100|82
+expect |rng|24|15
+expect |rng|16|9
+expect |-supereffective|p2b: Seviper
+expect |split|p2
+expect |-damage|p2b: Seviper|0 fnt
+expect |-damage|p2b: Seviper|0 fnt
+expect |faint|p2b: Seviper
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Zapdos|Thunderous Kick|p2a: Heracross
+expect |rng|100|98
+expect |rng|24|16
+expect |rng|16|8
+expect |-supereffective|p2a: Heracross
+expect |split|p2
+expect |-damage|p2a: Heracross|0 fnt
+expect |-damage|p2a: Heracross|0 fnt
+expect |rng|100|98
+expect |faint|p2a: Heracross
+expect |
+expect |split|p1
+expect |-damage|p1a: Zapdos|0 fnt|[from] psn
+expect |-damage|p1a: Zapdos|0 fnt|[from] psn
+expect |faint|p1a: Zapdos
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Magcargo|Magcargo, L93, F|262/262
+expect |switch|p1a: Magcargo|Magcargo, L93, F|100/100
+expect |split|p2
+expect |switch|p2a: Lumineon|Lumineon, L92, M|276/276
+expect |switch|p2a: Lumineon|Lumineon, L92, M|100/100
+expect |split|p2
+expect |switch|p2b: Minior|Minior, L83|232/232
+expect |switch|p2b: Minior|Minior, L83|100/100
+expect |-formechange|p2b: Minior|Minior-Meteor||[from] ability: Shields Down
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2a: Lumineon|Helping Hand|p2b: Minior
+expect |-singleturn|p2b: Minior|Helping Hand|[of] p2a: Lumineon
+expect |move|p1b: Arceus|Extreme Speed|p1a: Magcargo
+expect |rng|100|64
+expect |rng|24|13
+expect |rng|16|14
+expect |-resisted|p1a: Magcargo
+expect |split|p1
+expect |-damage|p1a: Magcargo|211/262
+expect |-damage|p1a: Magcargo|81/100
+expect |-ability|p1a: Magcargo|Weak Armor|boost
+expect |-unboost|p1a: Magcargo|def|1
+expect |-boost|p1a: Magcargo|spe|2
+expect |move|p1a: Magcargo|Power Gem|p2a: Lumineon
+expect |rng|100|77
+expect |rng|24|18
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Lumineon|155/276
+expect |-damage|p2a: Lumineon|57/100
+expect |split|p1
+expect |-damage|p1a: Magcargo|185/262|[from] item: Life Orb
+expect |-damage|p1a: Magcargo|71/100|[from] item: Life Orb
+expect |move|p2b: Minior|Acrobatics|p1a: Magcargo
+expect |rng|100|85
+expect |rng|24|21
+expect |rng|16|1
+expect |-resisted|p1a: Magcargo
+expect |split|p1
+expect |-damage|p1a: Magcargo|116/262
+expect |-damage|p1a: Magcargo|45/100
+expect |-ability|p1a: Magcargo|Weak Armor|boost
+expect |-unboost|p1a: Magcargo|def|1
+expect |-boost|p1a: Magcargo|spe|2
+expect |
+expect |-fieldend|move: Psychic Terrain
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p1a: Magcargo|Power Gem|p2b: Minior
+expect |rng|100|41
+expect |rng|24|21
+expect |rng|16|5
+expect |-supereffective|p2b: Minior
+expect |split|p2
+expect |-damage|p2b: Minior|0 fnt
+expect |-damage|p2b: Minior|0 fnt
+expect |faint|p2b: Minior
+expect |split|p1
+expect |-damage|p1a: Magcargo|90/262|[from] item: Life Orb
+expect |-damage|p1a: Magcargo|35/100|[from] item: Life Orb
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Arceus|X-Scissor|p2a: Lumineon
+expect |rng|100|57
+expect |rng|24|4
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Lumineon|0 fnt
+expect |-damage|p2a: Lumineon|0 fnt
+expect |faint|p2a: Lumineon
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Azelf|Azelf, L83|260/260
+expect |switch|p2b: Azelf|Azelf, L83|100/100
+expect |turn|7
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1a: Magcargo|Protect|p1a: Magcargo
+expect |-singleturn|p1a: Magcargo|Protect
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Azelf|Dazzling Gleam|p1a: Magcargo|[spread] p1b
+expect |-activate|p1a: Magcargo|move: Protect
+expect |rng|100|67
+expect |rng|24|13
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Arceus|162/300
+expect |-damage|p1b: Arceus|54/100
+expect |split|p2
+expect |-damage|p2b: Azelf|234/260|[from] item: Life Orb
+expect |-damage|p2b: Azelf|90/100|[from] item: Life Orb
+expect |move|p1b: Arceus|X-Scissor|p1a: Magcargo
+expect |-activate|p1a: Magcargo|move: Protect
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1b: Arceus|Extreme Speed|p2b: Azelf
+expect |rng|100|68
+expect |rng|24|21
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Azelf|51/260
+expect |-damage|p2b: Azelf|20/100
+expect |move|p1a: Magcargo|Power Gem|p1b: Arceus
+expect |rng|100|18
+expect |rng|24|15
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Arceus|45/300
+expect |-damage|p1b: Arceus|15/100
+expect |split|p1
+expect |-damage|p1a: Magcargo|64/262|[from] item: Life Orb
+expect |-damage|p1a: Magcargo|25/100|[from] item: Life Orb
+expect |move|p2b: Azelf|Psychic|p1a: Magcargo
+expect |rng|100|83
+expect |rng|24|11
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Magcargo|0 fnt
+expect |-damage|p1a: Magcargo|0 fnt
+expect |rng|100|55
+expect |faint|p1a: Magcargo
+expect |split|p2
+expect |-damage|p2b: Azelf|25/260|[from] item: Life Orb
+expect |-damage|p2b: Azelf|10/100|[from] item: Life Orb
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Krookodile|Krookodile, L80, F|283/283
+expect |switch|p1a: Krookodile|Krookodile, L80, F|100/100
+expect |-ability|p1a: Krookodile|Intimidate|boost
+expect |-unboost|p2b: Azelf|atk|1
+expect |turn|9
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1a: Krookodile|Knock Off|p2b: Azelf
+expect |rng|100|92
+expect |rng|24|9
+expect |rng|16|2
+expect |-supereffective|p2b: Azelf
+expect |split|p2
+expect |-damage|p2b: Azelf|0 fnt
+expect |-damage|p2b: Azelf|0 fnt
+expect |-enditem|p2b: Azelf|Life Orb|[from] move: Knock Off|[of] p1a: Krookodile
+expect |faint|p2b: Azelf
+expect |
+expect |win|p1

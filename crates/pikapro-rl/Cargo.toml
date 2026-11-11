@@ -1,0 +1,26 @@
+[package]
+name = "pikapro-rl"
+description = "A vectorised reinforcement-learning environment for Pokémon battles on pikapro: player views, honest action masks, encoders, baseline opponents"
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords = ["pokemon", "reinforcement", "rl-environment", "self-play", "showdown"]
+categories = ["science", "simulation", "games"]
+# These tests replay a channel fixture of pikapro-conformance (outside the
+# package), so they can't build from the published crate; only they use
+# tests/common.
+exclude = ["tests/session_choice.rs", "tests/session_series.rs", "tests/common/mod.rs"]
+
+[dependencies]
+pikapro.workspace = true
+pikapro-data.workspace = true
+pikapro-protocol.workspace = true
+pikapro-teams.workspace = true
+pikapro-validate.workspace = true
+pikapro-view.workspace = true
+
+[lints]
+workspace = true

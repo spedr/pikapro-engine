@@ -1,0 +1,67 @@
+[package]
+name = "pikapro-bench"
+description = "Benchmarks for pikapro: Criterion timings and instruction-count regression checks"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+# Nothing here is a test: `cargo test` builds neither Criterion nor the
+# benches (they are built by `cargo bench` and `cargo clippy --all-targets`).
+[lib]
+test = false
+bench = false
+doctest = false
+
+[[bin]]
+name = "pikapro-insns"
+path = "src/bin/pikapro-insns.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "pikapro-env-split"
+path = "src/bin/pikapro-env-split.rs"
+test = false
+bench = false
+
+[[bin]]
+name = "pikapro-baseline-dump"
+path = "src/bin/pikapro-baseline-dump.rs"
+test = false
+bench = false
+
+[[bench]]
+name = "sim"
+harness = false
+
+[[bench]]
+name = "env"
+harness = false
+
+[[bench]]
+name = "policies"
+harness = false
+
+[[bench]]
+name = "encode"
+harness = false
+
+[[bench]]
+name = "channel"
+harness = false
+
+[dependencies]
+pikapro.workspace = true
+pikapro-protocol.workspace = true
+pikapro-rl.workspace = true
+pikapro-teams.workspace = true
+pikapro-view.workspace = true
+
+[dev-dependencies]
+criterion = { version = "0.8", default-features = false, features = ["cargo_bench_support"] }
+
+[lints]
+workspace = true

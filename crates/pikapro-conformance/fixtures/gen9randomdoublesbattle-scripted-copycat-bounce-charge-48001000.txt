@@ -1,0 +1,136 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 0000 0000 02dc 6fe8
+genders drawn
+team p1
+Mew
+Ability: Synchronize
+EVs: 252 Spe
+Timid Nature
+- Charge
+- Copycat
+- Thunderbolt
+
+Jolteon
+Ability: Volt Absorb
+EVs: 252 Spe
+Timid Nature
+- Splash
+- Growl
+end
+team p2
+Espeon
+Ability: Magic Bounce
+Hardy Nature
+- Growl
+- Splash
+
+Regieleki
+Ability: Transistor
+EVs: 252 Spe
+Timid Nature
+- Electrify
+- Splash
+end
+choice p1 move 1, move 1
+choice p2 move 2, move 2
+choice p1 move 2, move 2
+choice p2 move 2, move 1 -1
+choice p1 move 3 2, move 1
+choice p2 move 2, move 2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Mew|Mew|341/341
+expect |switch|p1a: Mew|Mew|100/100
+expect |split|p1
+expect |switch|p1b: Jolteon|Jolteon, F|271/271
+expect |switch|p1b: Jolteon|Jolteon, F|100/100
+expect |split|p2
+expect |switch|p2a: Espeon|Espeon, M|271/271
+expect |switch|p2a: Espeon|Espeon, M|100/100
+expect |split|p2
+expect |switch|p2b: Regieleki|Regieleki|301/301
+expect |switch|p2b: Regieleki|Regieleki|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2b: Regieleki|Splash|p2b: Regieleki
+expect |-nothing
+expect |move|p1b: Jolteon|Splash|p1b: Jolteon
+expect |-nothing
+expect |move|p1a: Mew|Charge|p1a: Mew
+expect |-boost|p1a: Mew|spd|1
+expect |-start|p1a: Mew|Charge
+expect |move|p2a: Espeon|Splash|p2a: Espeon
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Regieleki|Electrify|p2a: Espeon
+expect |-singleturn|p2a: Espeon|move: Electrify
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: Jolteon|Growl|p2b: Regieleki
+expect |move|p2a: Espeon|Growl|p1b: Jolteon|[from] ability: Magic Bounce|[spread] p1a|[spread] p2b
+expect |-immune|p1b: Jolteon|[from] ability: Volt Absorb
+expect |rng|100|96
+expect |-unboost|p1a: Mew|atk|1
+expect |rng|100|68
+expect |-unboost|p2b: Regieleki|atk|1
+expect |move|p1a: Mew|Copycat|p1a: Mew
+expect |rng|2|0
+expect |move|p1a: Mew|Growl|p2a: Espeon|[from] move: Copycat
+expect |move|p2a: Espeon|Growl|p1a: Mew|[from] ability: Magic Bounce|[spread] p1a|[spread] p2b
+expect |-immune|p1b: Jolteon|[from] ability: Volt Absorb
+expect |rng|100|65
+expect |-unboost|p1a: Mew|atk|1
+expect |rng|100|83
+expect |-unboost|p2b: Regieleki|atk|1
+expect |-end|p1a: Mew|Charge|[silent]
+expect |move|p2a: Espeon|Splash|p2a: Espeon
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2b: Regieleki|Splash|p2b: Regieleki
+expect |-nothing
+expect |move|p1b: Jolteon|Splash|p1b: Jolteon
+expect |-nothing
+expect |move|p1a: Mew|Thunderbolt|p2b: Regieleki
+expect |rng|100|43
+expect |rng|24|0
+expect |rng|16|6
+expect |-resisted|p2b: Regieleki
+expect |-crit|p2b: Regieleki
+expect |split|p2
+expect |-damage|p2b: Regieleki|208/301
+expect |-damage|p2b: Regieleki|70/100
+expect |rng|100|1
+expect |move|p2a: Espeon|Splash|p2a: Espeon
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|4

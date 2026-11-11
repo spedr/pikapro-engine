@@ -1,0 +1,247 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9ou
+seed 0171 d52f 718e 6ec1
+genders drawn
+team p1
+Dragapult (M)
+Ability: Clear Body
+Tera Type: Fire
+EVs: 1 HP / 3 Atk / 143 Def / 124 SpA / 188 SpD / 51 Spe
+Timid Nature
+- Drum Beating
+- Psyshield Bash
+
+Manaphy
+Ability: Hydration
+Tera Type: Water
+EVs: 199 HP / 12 Atk / 104 Def / 36 SpA / 76 SpD / 19 Spe
+Impish Nature
+- Mortal Spin
+- Pin Missile
+- Sparkling Aria
+
+ThisNameIsFarTooLongToKeep (Zoroark-Hisui)
+Ability: Illusion
+Tera Type: Normal
+EVs: 78 HP / 83 Atk / 46 Def / 26 SpA / 31 SpD / 83 Spe
+Modest Nature
+- U-turn
+- Icicle Spear
+- Power Split
+- Dual Wingbeat
+
+Primeape (F)
+Ability: Vital Spirit
+Tera Type: Stellar
+EVs: 151 HP / 238 Atk / 1 Def / 3 SpA / 3 SpD / 108 Spe
+Naughty Nature
+- Magma Storm
+- Pay Day
+
+X (Poliwag)
+Ability: Damp
+Tera Type: Electric
+EVs: 249 HP / 42 Atk / 97 Def / 2 SpA / 117 SpD / 2 Spe
+Lax Nature
+- Leafage
+- String Shot
+
+Chomp (Zapdos) @ Syrupy Apple
+Ability: Pressure
+Tera Type: Flying
+EVs: 11 HP / 67 Atk / 2 Def / 237 SpD / 189 Spe
+Lonely Nature
+- Ice Spinner
+- Gyro Ball
+end
+team p2
+Zoroark-Hisui
+Ability: Illusion
+Tera Type: Dragon
+EVs: 55 HP / 161 Atk / 116 Def / 12 SpA / 98 SpD
+Naughty Nature
+- U-turn
+- Parabolic Charge
+- Fire Pledge
+- Shelter
+end
+choice p1 team 314526
+choice p2 team 1
+choice p1 switch 6
+choice p2 move 3 terastallize
+choice p1 switch 5
+choice p2 move 2
+choice p1 move 3 terastal
+choice p2 move Parabolic Charge
+choice p1 move 1
+choice p2 move 3
+choice p1 default
+choice p2 move 4
+choice p1 switch 2
+choice p2 move 4
+choice p1 move 2
+choice p2 move u-turn
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] OU
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Endless Battle Clause: Forcing endless battles is banned
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|OHKO Clause: OHKO moves are banned
+expect |rule|Evasion Items Clause: Evasion items are banned
+expect |rule|Evasion Moves Clause: Evasion moves are banned
+expect |rule|Evasion Abilities Clause: Evasion abilities are banned
+expect |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+expect |clearpoke
+expect |poke|p1|Dragapult, M|
+expect |poke|p1|Manaphy|
+expect |poke|p1|Zoroark-Hisui, F|
+expect |poke|p1|Primeape, F|
+expect |poke|p1|Poliwag, M|
+expect |poke|p1|Zapdos|
+expect |poke|p2|Zoroark-Hisui, M|
+expect |teampreview
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Chomp|Zapdos|270/270
+expect |switch|p1a: Chomp|Zapdos|100/100
+expect |split|p2
+expect |switch|p2a: Zoroark|Zoroark-Hisui, M|264/264
+expect |switch|p2a: Zoroark|Zoroark-Hisui, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Chomp|Zapdos|323/323
+expect |switch|p1a: Chomp|Zapdos|100/100
+expect |-ability|p1a: Chomp|Pressure
+expect |-terastallize|p2a: Zoroark|Dragon
+expect |move|p2a: Zoroark|Fire Pledge|p1a: Chomp
+expect |rng|100|41
+expect |rng|24|13
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Chomp|262/323
+expect |-damage|p1a: Chomp|82/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Manaphy|Manaphy|390/390
+expect |switch|p1a: Manaphy|Manaphy|100/100
+expect |move|p2a: Zoroark|Parabolic Charge|p1a: Manaphy
+expect |rng|100|36
+expect |rng|24|4
+expect |rng|16|12
+expect |-supereffective|p1a: Manaphy
+expect |split|p1
+expect |-damage|p1a: Manaphy|280/390
+expect |-damage|p1a: Manaphy|72/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |-terastallize|p1a: Manaphy|Water
+expect |move|p2a: Zoroark|Parabolic Charge|p1a: Manaphy
+expect |rng|100|32
+expect |rng|24|13
+expect |rng|16|3
+expect |-supereffective|p1a: Manaphy
+expect |split|p1
+expect |-damage|p1a: Manaphy|158/390
+expect |-damage|p1a: Manaphy|41/100
+expect |move|p1a: Manaphy|Sparkling Aria|p2a: Zoroark
+expect |rng|100|11
+expect |rng|24|18
+expect |rng|16|1
+expect |-resisted|p2a: Zoroark
+expect |split|p2
+expect |-damage|p2a: Zoroark|162/264
+expect |-damage|p2a: Zoroark|62/100
+expect |rng|100|60
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Zoroark|Fire Pledge|p1a: Manaphy
+expect |rng|100|31
+expect |rng|24|14
+expect |rng|16|2
+expect |-resisted|p1a: Manaphy
+expect |split|p1
+expect |-damage|p1a: Manaphy|120/390
+expect |-damage|p1a: Manaphy|31/100
+expect |move|p1a: Manaphy|Mortal Spin|p2a: Zoroark
+expect |rng|100|36
+expect |rng|24|1
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Zoroark|130/264
+expect |-damage|p2a: Zoroark|50/100
+expect |rng|100|98
+expect |-status|p2a: Zoroark|psn
+expect |
+expect |split|p2
+expect |-damage|p2a: Zoroark|97/264 psn|[from] psn
+expect |-damage|p2a: Zoroark|37/100 psn|[from] psn
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2a: Zoroark|Shelter|p2a: Zoroark
+expect |-boost|p2a: Zoroark|def|2
+expect |move|p1a: Manaphy|Mortal Spin|p2a: Zoroark
+expect |rng|100|19
+expect |rng|24|22
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Zoroark|80/264 psn
+expect |-damage|p2a: Zoroark|31/100 psn
+expect |rng|100|57
+expect |
+expect |split|p2
+expect |-damage|p2a: Zoroark|47/264 psn|[from] psn
+expect |-damage|p2a: Zoroark|18/100 psn|[from] psn
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Dragapult|Dragapult, M|317/317
+expect |switch|p1a: Dragapult|Dragapult, M|100/100
+expect |move|p2a: Zoroark|Shelter|p2a: Zoroark
+expect |-boost|p2a: Zoroark|def|2
+expect |
+expect |split|p2
+expect |-damage|p2a: Zoroark|14/264 psn|[from] psn
+expect |-damage|p2a: Zoroark|6/100 psn|[from] psn
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1a: Dragapult|Psyshield Bash|p2a: Zoroark
+expect |rng|100|54
+expect |rng|24|23
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Zoroark|0 fnt
+expect |-damage|p2a: Zoroark|0 fnt
+expect |rng|100|85
+expect |-boost|p1a: Dragapult|def|1
+expect |faint|p2a: Zoroark
+expect |
+expect |win|p1

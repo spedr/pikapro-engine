@@ -1,0 +1,72 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 1111 5678 9abc def0
+genders drawn
+team p1
+Breloom
+Ability: Technician
+Hardy Nature
+- Spore
+- Worry Seed
+
+Pikachu
+Ability: Static
+Hardy Nature
+- Splash
+end
+team p2
+Snorlax @ Ability Shield
+Ability: Thick Fat
+Hardy Nature
+- Splash
+
+Chansey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+end
+choice p1 move 1
+choice p2 move 1
+choice p1 move 2
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Breloom|Breloom, F|261/261
+expect |switch|p1a: Breloom|Breloom, F|261/261
+expect |split|p2
+expect |switch|p2a: Snorlax|Snorlax, F|461/461
+expect |switch|p2a: Snorlax|Snorlax, F|461/461
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Breloom|Spore|p2a: Snorlax
+expect |rng|100|25
+expect |-status|p2a: Snorlax|slp|[from] move: Spore
+expect |rng|3|2
+expect |cant|p2a: Snorlax|slp
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Breloom|Worry Seed|p2a: Snorlax
+expect |rng|100|15
+expect |-block|p2a: Snorlax|item: Ability Shield
+expect |cant|p2a: Snorlax|slp
+expect |
+expect |upkeep
+expect |turn|3

@@ -1,0 +1,492 @@
+# edge-spellings: `cargo run -p pkmn-server --example stream_fuzz`, Showdown 0.11.11
+@write
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"gen5,00010002000300ff"}
+@write
+>player p1 {"name":"A","team":"Pikachu||choicespecs|static|thunderbolt,quickattack|Timid|,,,252,,252||||50|"}
+@write
+>player p2 {"name":"B","team":"Snorlax||leftovers|thickfat|rest,bodyslam,imprison|Timid|,,,252,,252||||50|"}
+@write
+\>p1 move 1\r
+@write
+>p2   move   bodyslam  
+@write
+>p1 move Thunderbolt 1
+@write
+>p1 move thunderbolt terastal
+@write
+not a command
+@write
+
+@write
+>p2 move 2, move 1
+@write
+>p2 move imprison
+@write
+>p1 move quickattack
+@write
+>p1 testfight
+@write
+>p1 default
+@write
+>p2 undo
+@write
+>p2 undo
+@write
+>p2 default
+@write
+>chat bye | pipes   and all
+@write
+>chat-inputlogonly hidden
+@write
+>version-origin x
+@write
+>requestlog
+@write
+>forcelose p1
+@message
+update
+|t:|
+|gametype|singles
+@message
+update
+|player|p1|A||
+@message
+update
+|player|p2|B||
+|gen|9
+|tier|[Gen 9] Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|1
+|teamsize|p2|1
+|start
+|split|p1
+|switch|p1a: Pikachu|Pikachu, L50, F|110/110
+|switch|p1a: Pikachu|Pikachu, L50, F|110/110
+|split|p2
+|switch|p2a: Snorlax|Snorlax, L50, F|235/235
+|switch|p2a: Snorlax|Snorlax, L50, F|235/235
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"110/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Body Slam","id":"bodyslam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"B","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"235/235","active":true,"stats":{"atk":117,"def":85,"spa":117,"spd":130,"spe":90},"moves":["rest","bodyslam","imprison"],"baseAbility":"thickfat","item":"leftovers","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|split|p2
+|-damage|p2a: Snorlax|171/235
+|-damage|p2a: Snorlax|171/235
+|move|p2a: Snorlax|Body Slam|p1a: Pikachu
+|split|p1
+|-damage|p1a: Pikachu|4/110
+|-damage|p1a: Pikachu|4/110
+|-status|p2a: Snorlax|par|[from] ability: Static|[of] p1a: Pikachu
+|
+|split|p2
+|-heal|p2a: Snorlax|185/235 par|[from] item: Leftovers
+|-heal|p2a: Snorlax|185/235 par|[from] item: Leftovers
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":true}],"canTerastallize":"Electric"}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"4/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Body Slam","id":"bodyslam","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"B","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"185/235 par","active":true,"stats":{"atk":117,"def":85,"spa":117,"spd":130,"spe":90},"moves":["rest","bodyslam","imprison"],"baseAbility":"thickfat","item":"leftovers","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't make choices: You sent choices for 2 Pokémon, but this is a singles game!
+@message
+update
+|
+|t:|
+|-terastallize|p1a: Pikachu|Electric
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|split|p2
+|-damage|p2a: Snorlax|101/235 par
+|-damage|p2a: Snorlax|101/235 par
+|move|p2a: Snorlax|Imprison|p2a: Snorlax
+|-start|p2a: Snorlax|move: Imprison
+|
+|split|p2
+|-heal|p2a: Snorlax|115/235 par|[from] item: Leftovers
+|-heal|p2a: Snorlax|115/235 par|[from] item: Leftovers
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":true}],"maybeDisabled":true,"maybeLocked":true}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"4/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Body Slam","id":"bodyslam","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":15,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"B","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"115/235 par","active":true,"stats":{"atk":117,"def":85,"spa":117,"spd":130,"spe":90},"moves":["rest","bodyslam","imprison"],"baseAbility":"thickfat","item":"leftovers","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Unavailable choice] Can't move: Pikachu's Quick Attack is disabled
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":true,"disabledSource":""}],"maybeDisabled":true}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"4/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]},"update":true}
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":true,"disabledSource":""}],"maybeDisabled":true}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"4/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]},"update":true}
+@message
+update
+|
+|t:|
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|split|p2
+|-damage|p2a: Snorlax|27/235 par
+|-damage|p2a: Snorlax|27/235 par
+|cant|p2a: Snorlax|par
+|
+|split|p2
+|-heal|p2a: Snorlax|41/235 par|[from] item: Leftovers
+|-heal|p2a: Snorlax|41/235 par|[from] item: Leftovers
+|upkeep
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":21,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":true}],"maybeDisabled":true,"maybeLocked":true}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"4/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Body Slam","id":"bodyslam","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":15,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"B","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"41/235 par","active":true,"stats":{"atk":117,"def":85,"spa":117,"spd":130,"spe":90},"moves":["rest","bodyslam","imprison"],"baseAbility":"thickfat","item":"leftovers","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+update
+|chat|bye | pipes   and all
+@message
+requesteddata
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"gen5,00010002000300ff"}
+>player p1 {"name":"A","team":"Pikachu||choicespecs|static|thunderbolt,quickattack|Timid|,,,252,,252||||50|"}
+>player p2 {"name":"B","team":"Snorlax||leftovers|thickfat|rest,bodyslam,imprison|Timid|,,,252,,252||||50|"}
+>p1 move thunderbolt
+>p2 move bodyslam
+>p1 move thunderbolt terastallize
+>p2 move imprison
+>p1 move thunderbolt
+>p2 move rest
+>chat bye | pipes   and all
+>chat hidden
+@message
+update
+|
+|win|B
+@message
+end
+{"winner":"B","seed":"gen5,00010002000300ff","turns":4,"p1":"A","p2":"B","p1team":[{"name":"Pikachu","species":"Pikachu","item":"Choice Specs","ability":"Static","moves":["Thunderbolt","Quick Attack"],"nature":"Timid","evs":{"hp":0,"atk":0,"def":0,"spa":252,"spd":0,"spe":252},"level":50,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Snorlax","species":"Snorlax","item":"Leftovers","ability":"Thick Fat","moves":["Rest","Body Slam","Imprison"],"nature":"Timid","evs":{"hp":0,"atk":0,"def":0,"spa":252,"spd":0,"spe":252},"level":50,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[1,1],"inputLog":[">start {\"formatid\":\"gen9customgame@@@!Team Preview\",\"seed\":\"gen5,00010002000300ff\"}",">player p1 {\"name\":\"A\",\"team\":\"Pikachu||choicespecs|static|thunderbolt,quickattack|Timid|,,,252,,252||||50|\"}",">player p2 {\"name\":\"B\",\"team\":\"Snorlax||leftovers|thickfat|rest,bodyslam,imprison|Timid|,,,252,,252||||50|\"}",">p1 move thunderbolt",">p2 move bodyslam",">p1 move thunderbolt terastallize",">p2 move imprison",">p1 move thunderbolt",">p2 move rest",">chat bye | pipes   and all",">chat hidden",">forcelose p1"]}
+@channel-write omniscient
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"gen5,00010002000300ff"}
+@channel-write omniscient
+>player p1 {"name":"A","team":"Pikachu||choicespecs|static|thunderbolt,quickattack|Timid|,,,252,,252||||50|"}
+@channel-write omniscient
+>player p2 {"name":"B","team":"Snorlax||leftovers|thickfat|rest,bodyslam,imprison|Timid|,,,252,,252||||50|"}
+@channel-write p1
+\move 1\r
+@channel-write p2
+  move   bodyslam  
+@channel-write p1
+move Thunderbolt 1
+@channel-write p1
+move thunderbolt terastal
+@channel-write omniscient
+not a command
+@channel-write omniscient
+
+@channel-write p2
+move 2, move 1
+@channel-write p2
+move imprison
+@channel-write p1
+move quickattack
+@channel-write p1
+testfight
+@channel-write p1
+default
+@channel-write p2
+undo
+@channel-write p2
+undo
+@channel-write p2
+default
+@channel-write omniscient
+>chat bye | pipes   and all
+@channel-write omniscient
+>chat-inputlogonly hidden
+@channel-write omniscient
+>version-origin x
+@channel-write omniscient
+>requestlog
+@channel-write omniscient
+>forcelose p1
+@channel omniscient
+|t:|
+|gametype|singles
+@channel omniscient
+|player|p1|A||
+@channel omniscient
+|player|p2|B||
+|gen|9
+|tier|[Gen 9] Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|1
+|teamsize|p2|1
+|start
+|switch|p1a: Pikachu|Pikachu, L50, F|110/110
+|switch|p2a: Snorlax|Snorlax, L50, F|235/235
+|turn|1
+@channel omniscient
+|
+|t:|
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|171/235
+|move|p2a: Snorlax|Body Slam|p1a: Pikachu
+|-damage|p1a: Pikachu|4/110
+|-status|p2a: Snorlax|par|[from] ability: Static|[of] p1a: Pikachu
+|
+|-heal|p2a: Snorlax|185/235 par|[from] item: Leftovers
+|upkeep
+|turn|2
+@channel omniscient
+|
+|t:|
+|-terastallize|p1a: Pikachu|Electric
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|101/235 par
+|move|p2a: Snorlax|Imprison|p2a: Snorlax
+|-start|p2a: Snorlax|move: Imprison
+|
+|-heal|p2a: Snorlax|115/235 par|[from] item: Leftovers
+|upkeep
+|turn|3
+@channel omniscient
+|
+|t:|
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|27/235 par
+|cant|p2a: Snorlax|par
+|
+|-heal|p2a: Snorlax|41/235 par|[from] item: Leftovers
+|upkeep
+|turn|4
+@channel omniscient
+|chat|bye | pipes 
+ and all
+@channel omniscient
+|
+|win|B
+@channel spectator
+|t:|
+|gametype|singles
+@channel spectator
+|player|p1|A||
+@channel spectator
+|player|p2|B||
+|gen|9
+|tier|[Gen 9] Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|1
+|teamsize|p2|1
+|start
+|switch|p1a: Pikachu|Pikachu, L50, F|110/110
+|switch|p2a: Snorlax|Snorlax, L50, F|235/235
+|turn|1
+@channel spectator
+|
+|t:|
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|171/235
+|move|p2a: Snorlax|Body Slam|p1a: Pikachu
+|-damage|p1a: Pikachu|4/110
+|-status|p2a: Snorlax|par|[from] ability: Static|[of] p1a: Pikachu
+|
+|-heal|p2a: Snorlax|185/235 par|[from] item: Leftovers
+|upkeep
+|turn|2
+@channel spectator
+|
+|t:|
+|-terastallize|p1a: Pikachu|Electric
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|101/235 par
+|move|p2a: Snorlax|Imprison|p2a: Snorlax
+|-start|p2a: Snorlax|move: Imprison
+|
+|-heal|p2a: Snorlax|115/235 par|[from] item: Leftovers
+|upkeep
+|turn|3
+@channel spectator
+|
+|t:|
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|27/235 par
+|cant|p2a: Snorlax|par
+|
+|-heal|p2a: Snorlax|41/235 par|[from] item: Leftovers
+|upkeep
+|turn|4
+@channel spectator
+|chat|bye | pipes 
+ and all
+@channel spectator
+|
+|win|B
+@channel p1
+|t:|
+|gametype|singles
+@channel p1
+|player|p1|A||
+@channel p1
+|player|p2|B||
+|gen|9
+|tier|[Gen 9] Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|1
+|teamsize|p2|1
+|start
+|switch|p1a: Pikachu|Pikachu, L50, F|110/110
+|switch|p2a: Snorlax|Snorlax, L50, F|235/235
+|turn|1
+@channel p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"110/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@channel p1
+|
+|t:|
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|171/235
+|move|p2a: Snorlax|Body Slam|p1a: Pikachu
+|-damage|p1a: Pikachu|4/110
+|-status|p2a: Snorlax|par|[from] ability: Static|[of] p1a: Pikachu
+|
+|-heal|p2a: Snorlax|185/235 par|[from] item: Leftovers
+|upkeep
+|turn|2
+@channel p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":true}],"canTerastallize":"Electric"}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"4/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@channel p1
+|
+|t:|
+|-terastallize|p1a: Pikachu|Electric
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|101/235 par
+|move|p2a: Snorlax|Imprison|p2a: Snorlax
+|-start|p2a: Snorlax|move: Imprison
+|
+|-heal|p2a: Snorlax|115/235 par|[from] item: Leftovers
+|upkeep
+|turn|3
+@channel p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":true}],"maybeDisabled":true,"maybeLocked":true}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"4/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+@channel p1
+|error|[Unavailable choice] Can't move: Pikachu's Quick Attack is disabled
+@channel p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":true,"disabledSource":""}],"maybeDisabled":true}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"4/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]},"update":true}
+@channel p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":true,"disabledSource":""}],"maybeDisabled":true}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"4/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]},"update":true}
+@channel p1
+|
+|t:|
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|27/235 par
+|cant|p2a: Snorlax|par
+|
+|-heal|p2a: Snorlax|41/235 par|[from] item: Leftovers
+|upkeep
+|turn|4
+@channel p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":21,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":true}],"maybeDisabled":true,"maybeLocked":true}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"4/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+@channel p1
+|chat|bye | pipes 
+ and all
+@channel p1
+|
+|win|B
+@channel p2
+|t:|
+|gametype|singles
+@channel p2
+|player|p1|A||
+@channel p2
+|player|p2|B||
+|gen|9
+|tier|[Gen 9] Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|1
+|teamsize|p2|1
+|start
+|switch|p1a: Pikachu|Pikachu, L50, F|110/110
+|switch|p2a: Snorlax|Snorlax, L50, F|235/235
+|turn|1
+@channel p2
+|request|{"active":[{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Body Slam","id":"bodyslam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"B","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"235/235","active":true,"stats":{"atk":117,"def":85,"spa":117,"spd":130,"spe":90},"moves":["rest","bodyslam","imprison"],"baseAbility":"thickfat","item":"leftovers","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@channel p2
+|
+|t:|
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|171/235
+|move|p2a: Snorlax|Body Slam|p1a: Pikachu
+|-damage|p1a: Pikachu|4/110
+|-status|p2a: Snorlax|par|[from] ability: Static|[of] p1a: Pikachu
+|
+|-heal|p2a: Snorlax|185/235 par|[from] item: Leftovers
+|upkeep
+|turn|2
+@channel p2
+|request|{"active":[{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Body Slam","id":"bodyslam","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"B","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"185/235 par","active":true,"stats":{"atk":117,"def":85,"spa":117,"spd":130,"spe":90},"moves":["rest","bodyslam","imprison"],"baseAbility":"thickfat","item":"leftovers","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@channel p2
+|error|[Invalid choice] Can't make choices: You sent choices for 2 Pokémon, but this is a singles game!
+@channel p2
+|
+|t:|
+|-terastallize|p1a: Pikachu|Electric
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|101/235 par
+|move|p2a: Snorlax|Imprison|p2a: Snorlax
+|-start|p2a: Snorlax|move: Imprison
+|
+|-heal|p2a: Snorlax|115/235 par|[from] item: Leftovers
+|upkeep
+|turn|3
+@channel p2
+|request|{"active":[{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Body Slam","id":"bodyslam","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":15,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"B","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"115/235 par","active":true,"stats":{"atk":117,"def":85,"spa":117,"spd":130,"spe":90},"moves":["rest","bodyslam","imprison"],"baseAbility":"thickfat","item":"leftovers","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@channel p2
+|
+|t:|
+|move|p1a: Pikachu|Thunderbolt|p2a: Snorlax
+|-damage|p2a: Snorlax|27/235 par
+|cant|p2a: Snorlax|par
+|
+|-heal|p2a: Snorlax|41/235 par|[from] item: Leftovers
+|upkeep
+|turn|4
+@channel p2
+|request|{"active":[{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Body Slam","id":"bodyslam","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":15,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"B","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"41/235 par","active":true,"stats":{"atk":117,"def":85,"spa":117,"spd":130,"spe":90},"moves":["rest","bodyslam","imprison"],"baseAbility":"thickfat","item":"leftovers","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@channel p2
+|chat|bye | pipes 
+ and all
+@channel p2
+|
+|win|B

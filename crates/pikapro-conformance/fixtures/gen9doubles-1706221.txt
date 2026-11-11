@@ -1,0 +1,841 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed b80e ed3b 0bcb 31b8
+genders drawn
+team p1
+Sylveon (F) @ Eject Pack
+Ability: Pixilate
+Level: 50
+Tera Type: Normal
+EVs: 5 HP / 45 Atk / 14 Def / 213 SpA / 143 SpD / 81 Spe
+Naive Nature
+- Flare Blitz
+
+Riolu @ Magnet
+Ability: Prankster
+Level: 50
+Tera Type: Electric
+EVs: 40 HP / 84 Atk / 168 Def / 56 SpA / 80 SpD / 80 Spe
+Rash Nature
+- Electro Drift
+- Rollout
+
+Sneasel @ Jaboca Berry
+Ability: Inner Focus
+Level: 50
+Tera Type: Bug
+EVs: 40 HP / 152 Atk / 52 Def / 7 SpA / 148 SpD / 78 Spe
+Timid Nature
+- Solar Beam
+- Stockpile
+
+Sunflora (M) @ Choice Scarf
+Ability: Solar Power
+Level: 50
+Tera Type: Steel
+EVs: 9 HP / 103 Atk / 30 Def / 135 SpA / 52 SpD / 169 Spe
+Lonely Nature
+- Strength
+- Aqua Jet
+
+Stonjourner @ Tanga Berry
+Ability: Power Spot
+Level: 50
+Tera Type: Poison
+EVs: 204 HP / 37 Atk / 109 Def / 32 SpA / 6 SpD / 121 Spe
+Adamant Nature
+- Venoshock
+- Syrup Bomb
+
+Larvitar
+Ability: Sand Veil
+Level: 50
+Tera Type: Normal
+EVs: 61 HP / 14 Atk / 13 Def / 225 SpA / 134 SpD / 42 Spe
+Serious Nature
+- Stone Edge
+end
+team p2
+Dugtrio (M) @ Level Ball
+Ability: Sand Force
+Level: 50
+Tera Type: Fighting
+EVs: 29 HP / 84 Atk / 55 Def / 193 SpA / 26 SpD / 50 Spe
+Relaxed Nature
+- Attract
+
+Komala @ Zoom Lens
+Ability: Comatose
+Level: 50
+Tera Type: Water
+EVs: 13 HP / 33 Atk / 58 Def / 238 SpA / 101 SpD / 26 Spe
+Calm Nature
+- Make It Rain
+- Knock Off
+- Dragon Pulse
+
+Araquanid (F)
+Ability: Water Bubble
+Level: 50
+Tera Type: Water
+EVs: 11 HP / 11 Atk / 6 Def / 180 SpA / 161 SpD / 131 Spe
+Timid Nature
+- Ancient Power
+- Throat Chop
+- Volt Switch
+
+Oranguru @ Dread Plate
+Ability: Symbiosis
+Level: 50
+Tera Type: Grass
+EVs: 23 HP / 34 Atk / 186 Def / 50 SpA / 27 SpD / 174 Spe
+Docile Nature
+- Gigaton Hammer
+- Aromatic Mist
+- Boomburst
+- Soft-Boiled
+
+Litwick @ King's Rock
+Ability: Infiltrator
+Level: 50
+Tera Type: Stellar
+EVs: 14 HP / 9 Atk / 95 Def / 25 SpA / 182 SpD / 159 Spe
+Quirky Nature
+- Flare Blitz
+- Soft-Boiled
+- Glare
+- Conversion
+
+Latias (F) @ Thunder Stone
+Ability: Levitate
+Level: 50
+Tera Type: Poison
+EVs: 6 HP / 11 Atk / 150 SpA / 62 SpD / 205 Spe
+Mild Nature
+- Ancient Power
+end
+choice p1 move Flare Blitz 1,switch 3
+choice p2 move 1 2 ,  move 3 +2
+choice p1 move Flare Blitz +1,switch larvitar
+choice p2 move 1 2, switch 6
+choice p1 move 1 -2, switch 3
+choice p2 switch 4, move 1 1 terastallize
+choice p1 move flareblitz terastallize -2,switch 3
+choice p2 move 4, switch 6
+choice p1 switch 4, move 1 1
+choice p2 move 2 -2, switch 4
+choice p1 move 2 1, switch 6
+choice p2 move 1 2, move 1 -1
+choice p1 pass, switch 4
+choice p2 switch 6, move 1 -1
+choice p1 move 2 1, switch 3
+choice p2 switch 5, switch 6
+choice p1 move 2 2, move 2 1
+choice p2 move 1 -2, move 1 -1
+choice p1 switch 5 ,  move 1
+choice p2 move 1 -2, switch 5
+choice p1 switch 5, move 1
+choice p2 switch 6 ,  skip
+choice p1 switch 6, move 1 2
+choice p2 move 1 -2, switch 5
+choice p1 move 1 -2, move 2 1
+choice p2 default
+choice p1 pass, switch 6
+choice p2 switch 3, move Soft-Boiled
+choice p1 move Stone Edge -2 ,  switch Sylveon
+choice p2 move 2 2, move 2 -1
+choice p1 move 1 2, move 1 1
+choice p1 pass, switch 5
+choice p2 switch 5, move 1 2
+choice p1 move 1 1, switch 3
+choice p2 move 1 2, switch 4
+choice p1 move 1 2, move 2 -1
+choice p1 switch 3, pass
+choice p2 move 1 -2, move knockoff -1
+choice p1 move 2 +1, move Aqua Jet 1
+choice p2 switch 5, pass
+choice p1 move venoshock 1 ,  move 2 -1
+choice p2 move 1 2, move 3 1
+choice p1 move 2 -2, move 2 1
+choice p2 move 3 2, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Sylveon|Sylveon, L50, F|171/171
+expect |switch|p1a: Sylveon|Sylveon, L50, F|171/171
+expect |split|p1
+expect |switch|p1b: Riolu|Riolu, L50, F|120/120
+expect |switch|p1b: Riolu|Riolu, L50, F|120/120
+expect |split|p2
+expect |switch|p2a: Dugtrio|Dugtrio, L50, M|114/114
+expect |switch|p2a: Dugtrio|Dugtrio, L50, M|114/114
+expect |split|p2
+expect |switch|p2b: Komala|Komala, L50, F|142/142
+expect |switch|p2b: Komala|Komala, L50, F|142/142
+expect |-ability|p2b: Komala|Comatose
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sneasel|Sneasel, L50, M|135/135
+expect |switch|p1b: Sneasel|Sneasel, L50, M|135/135
+expect |move|p2a: Dugtrio|Attract|p1b: Sneasel
+expect |-immune|p1b: Sneasel
+expect |move|p1a: Sylveon|Flare Blitz|p2a: Dugtrio
+expect |rng|100|40
+expect |rng|24|21
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Dugtrio|64/114
+expect |-damage|p2a: Dugtrio|64/114
+expect |rng|100|96
+expect |split|p1
+expect |-damage|p1a: Sylveon|154/171|[from] Recoil
+expect |-damage|p1a: Sylveon|154/171|[from] Recoil
+expect |move|p2b: Komala|Dragon Pulse|p1b: Sneasel
+expect |rng|100|5
+expect |rng|24|6
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Sneasel|94/135
+expect |-damage|p1b: Sneasel|94/135
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Larvitar|Larvitar, L50, F|133/133
+expect |switch|p1b: Larvitar|Larvitar, L50, F|133/133
+expect |split|p2
+expect |switch|p2b: Latias|Latias, L50, F|156/156
+expect |switch|p2b: Latias|Latias, L50, F|156/156
+expect |move|p2a: Dugtrio|Attract|p1b: Larvitar
+expect |rng|100|18
+expect |-start|p1b: Larvitar|Attract
+expect |move|p1a: Sylveon|Flare Blitz|p2a: Dugtrio
+expect |rng|100|96
+expect |rng|24|18
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Dugtrio|6/114
+expect |-damage|p2a: Dugtrio|6/114
+expect |rng|100|17
+expect |split|p1
+expect |-damage|p1a: Sylveon|135/171|[from] Recoil
+expect |-damage|p1a: Sylveon|135/171|[from] Recoil
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Oranguru|Oranguru, L50, F|168/168
+expect |switch|p2a: Oranguru|Oranguru, L50, F|168/168
+expect |-end|p1b: Larvitar|Attract|[silent]
+expect |split|p1
+expect |switch|p1b: Riolu|Riolu, L50, F|120/120
+expect |switch|p1b: Riolu|Riolu, L50, F|120/120
+expect |-terastallize|p2b: Latias|Poison
+expect |move|p2b: Latias|Ancient Power|p1a: Sylveon
+expect |rng|100|87
+expect |rng|24|13
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Sylveon|110/171
+expect |-damage|p1a: Sylveon|110/171
+expect |rng|100|2
+expect |-boost|p2b: Latias|atk|1
+expect |-boost|p2b: Latias|def|1
+expect |-boost|p2b: Latias|spa|1
+expect |-boost|p2b: Latias|spd|1
+expect |-boost|p2b: Latias|spe|1
+expect |move|p1a: Sylveon|Flare Blitz|p1b: Riolu
+expect |rng|100|19
+expect |rng|24|1
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Riolu|62/120
+expect |-damage|p1b: Riolu|62/120
+expect |rng|100|6
+expect |-status|p1b: Riolu|brn
+expect |split|p1
+expect |-damage|p1a: Sylveon|91/171|[from] Recoil
+expect |-damage|p1a: Sylveon|91/171|[from] Recoil
+expect |
+expect |split|p1
+expect |-damage|p1b: Riolu|55/120 brn|[from] brn
+expect |-damage|p1b: Riolu|55/120 brn|[from] brn
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Komala|Komala, L50, F|142/142
+expect |switch|p2b: Komala|Komala, L50, F|142/142
+expect |-ability|p2b: Komala|Comatose
+expect |split|p1
+expect |switch|p1b: Larvitar|Larvitar, L50, F|133/133
+expect |switch|p1b: Larvitar|Larvitar, L50, F|133/133
+expect |-terastallize|p1a: Sylveon|Normal
+expect |move|p2a: Oranguru|Soft-Boiled||[still]
+expect |-fail|p2a: Oranguru|heal
+expect |move|p1a: Sylveon|Flare Blitz|p1b: Larvitar
+expect |rng|100|85
+expect |rng|24|21
+expect |rng|16|7
+expect |-resisted|p1b: Larvitar
+expect |split|p1
+expect |-damage|p1b: Larvitar|102/133
+expect |-damage|p1b: Larvitar|102/133
+expect |rng|100|94
+expect |split|p1
+expect |-damage|p1a: Sylveon|81/171|[from] Recoil
+expect |-damage|p1a: Sylveon|81/171|[from] Recoil
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sunflora|Sunflora, L50, M|151/151
+expect |switch|p1a: Sunflora|Sunflora, L50, M|151/151
+expect |split|p2
+expect |switch|p2b: Dugtrio|Dugtrio, L50, M|6/114
+expect |switch|p2b: Dugtrio|Dugtrio, L50, M|6/114
+expect |move|p2a: Oranguru|Aromatic Mist|p2b: Dugtrio
+expect |-boost|p2b: Dugtrio|spd|1
+expect |move|p1b: Larvitar|Stone Edge|p2a: Oranguru|[miss]
+expect |rng|100|83
+expect |-miss|p1b: Larvitar|p2a: Oranguru
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sneasel|Sneasel, L50, M|94/135
+expect |switch|p1b: Sneasel|Sneasel, L50, M|94/135
+expect |move|p1a: Sunflora|Aqua Jet|p2a: Oranguru
+expect |rng|100|40
+expect |rng|24|15
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Oranguru|151/168
+expect |-damage|p2a: Oranguru|151/168
+expect |move|p2b: Dugtrio|Attract|p2a: Oranguru
+expect |rng|100|8
+expect |-start|p2a: Oranguru|Attract
+expect |-activate|p2a: Oranguru|move: Attract|[of] p2b: Dugtrio
+expect |rng|2|1
+expect |move|p2a: Oranguru|Gigaton Hammer|p1b: Sneasel
+expect |rng|100|6
+expect |rng|24|1
+expect |rng|16|6
+expect |-supereffective|p1b: Sneasel
+expect |split|p1
+expect |-damage|p1b: Sneasel|0 fnt
+expect |-damage|p1b: Sneasel|0 fnt
+expect |-enditem|p1b: Sneasel|Jaboca Berry|[eat]
+expect |split|p2
+expect |-damage|p2a: Oranguru|130/168|[from] item: Jaboca Berry|[of] p1b: Sneasel
+expect |-damage|p2a: Oranguru|130/168|[from] item: Jaboca Berry|[of] p1b: Sneasel
+expect |faint|p1b: Sneasel
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sylveon|Sylveon, L50, F, tera:Normal|81/171
+expect |switch|p1b: Sylveon|Sylveon, L50, F, tera:Normal|81/171
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Latias|Latias, L50, F, tera:Poison|156/156
+expect |switch|p2a: Latias|Latias, L50, F, tera:Poison|156/156
+expect |split|p1
+expect |switch|p1b: Riolu|Riolu, L50, F|55/120 brn
+expect |switch|p1b: Riolu|Riolu, L50, F|55/120 brn
+expect |move|p1a: Sunflora|Aqua Jet|p2a: Latias
+expect |rng|100|8
+expect |rng|24|22
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Latias|138/156
+expect |-damage|p2a: Latias|138/156
+expect |move|p2b: Dugtrio|Attract|p2a: Latias
+expect |rng|100|73
+expect |-start|p2a: Latias|Attract
+expect |
+expect |split|p1
+expect |-damage|p1b: Riolu|48/120 brn|[from] brn
+expect |-damage|p1b: Riolu|48/120 brn|[from] brn
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Litwick|Litwick, L50, F|127/127
+expect |switch|p2a: Litwick|Litwick, L50, F|127/127
+expect |split|p2
+expect |switch|p2b: Oranguru|Oranguru, L50, F|130/168
+expect |switch|p2b: Oranguru|Oranguru, L50, F|130/168
+expect |move|p1a: Sunflora|Aqua Jet|p2b: Oranguru
+expect |rng|100|20
+expect |rng|24|3
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2b: Oranguru|113/168
+expect |-damage|p2b: Oranguru|113/168
+expect |move|p1b: Riolu|Rollout|p2a: Litwick
+expect |rng|100|35
+expect |rng|24|23
+expect |rng|16|10
+expect |-supereffective|p2a: Litwick
+expect |split|p2
+expect |-damage|p2a: Litwick|112/127
+expect |-damage|p2a: Litwick|112/127
+expect |
+expect |split|p1
+expect |-damage|p1b: Riolu|41/120 brn|[from] brn
+expect |-damage|p1b: Riolu|41/120 brn|[from] brn
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Stonjourner|Stonjourner, L50, M|201/201
+expect |switch|p1a: Stonjourner|Stonjourner, L50, M|201/201
+expect |move|p2b: Oranguru|Gigaton Hammer|p2a: Litwick
+expect |rng|100|66
+expect |rng|24|5
+expect |rng|16|9
+expect |-resisted|p2a: Litwick
+expect |split|p2
+expect |-damage|p2a: Litwick|81/127
+expect |-damage|p2a: Litwick|81/127
+expect |move|p1b: Riolu|Rollout|p2a: Litwick|[from] lockedmove
+expect |rng|100|44
+expect |rng|24|0
+expect |rng|16|5
+expect |-supereffective|p2a: Litwick
+expect |-crit|p2a: Litwick
+expect |split|p2
+expect |-damage|p2a: Litwick|24/127
+expect |-damage|p2a: Litwick|24/127
+expect |move|p2a: Litwick|Flare Blitz|p2b: Oranguru
+expect |rng|100|85
+expect |rng|24|13
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Oranguru|83/168
+expect |-damage|p2b: Oranguru|83/168
+expect |rng|100|92
+expect |rng|100|76
+expect |split|p2
+expect |-damage|p2a: Litwick|14/127|[from] Recoil
+expect |-damage|p2a: Litwick|14/127|[from] Recoil
+expect |
+expect |split|p1
+expect |-damage|p1b: Riolu|34/120 brn|[from] brn
+expect |-damage|p1b: Riolu|34/120 brn|[from] brn
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sunflora|Sunflora, L50, M|151/151
+expect |switch|p1a: Sunflora|Sunflora, L50, M|151/151
+expect |split|p2
+expect |switch|p2b: Latias|Latias, L50, F, tera:Poison|138/156
+expect |switch|p2b: Latias|Latias, L50, F, tera:Poison|138/156
+expect |move|p1b: Riolu|Rollout|p2a: Litwick|[from] lockedmove|[miss]
+expect |rng|100|96
+expect |-miss|p1b: Riolu|p2a: Litwick
+expect |move|p2a: Litwick|Flare Blitz|p2b: Latias
+expect |rng|100|93
+expect |rng|24|17
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Latias|96/156
+expect |-damage|p2b: Latias|96/156
+expect |rng|100|25
+expect |rng|100|37
+expect |split|p2
+expect |-damage|p2a: Litwick|0 fnt|[from] Recoil
+expect |-damage|p2a: Litwick|0 fnt|[from] Recoil
+expect |faint|p2a: Litwick
+expect |
+expect |split|p1
+expect |-damage|p1b: Riolu|27/120 brn|[from] brn
+expect |-damage|p1b: Riolu|27/120 brn|[from] brn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Dugtrio|Dugtrio, L50, M|6/114
+expect |switch|p2a: Dugtrio|Dugtrio, L50, M|6/114
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Oranguru|Oranguru, L50, F|83/168
+expect |switch|p2b: Oranguru|Oranguru, L50, F|83/168
+expect |split|p1
+expect |switch|p1a: Larvitar|Larvitar, L50, F|102/133
+expect |switch|p1a: Larvitar|Larvitar, L50, F|102/133
+expect |move|p2a: Dugtrio|Attract|p2b: Oranguru
+expect |rng|100|68
+expect |-start|p2b: Oranguru|Attract
+expect |move|p1b: Riolu|Electro Drift|p2b: Oranguru
+expect |rng|100|72
+expect |rng|24|2
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2b: Oranguru|56/168
+expect |-damage|p2b: Oranguru|56/168
+expect |
+expect |split|p1
+expect |-damage|p1b: Riolu|20/120 brn|[from] brn
+expect |-damage|p1b: Riolu|20/120 brn|[from] brn
+expect |upkeep
+expect |turn|12
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2a: Dugtrio|Attract|p1b: Riolu
+expect |rng|100|18
+expect |-start|p1b: Riolu|Attract
+expect |-activate|p2b: Oranguru|move: Attract|[of] p2a: Dugtrio
+expect |rng|2|1
+expect |move|p2b: Oranguru|Gigaton Hammer|p1b: Riolu
+expect |rng|100|45
+expect |rng|24|21
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Riolu|0 fnt
+expect |-damage|p1b: Riolu|0 fnt
+expect |faint|p1b: Riolu
+expect |move|p1a: Larvitar|Stone Edge|p1: Riolu|[notarget]
+expect |-fail|p1a: Larvitar
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sunflora|Sunflora, L50, M|151/151
+expect |switch|p1b: Sunflora|Sunflora, L50, M|151/151
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Araquanid|Araquanid, L50, F|144/144
+expect |switch|p2a: Araquanid|Araquanid, L50, F|144/144
+expect |-end|p2b: Oranguru|Attract|[silent]
+expect |split|p1
+expect |switch|p1b: Sylveon|Sylveon, L50, F, tera:Normal|81/171
+expect |switch|p1b: Sylveon|Sylveon, L50, F, tera:Normal|81/171
+expect |move|p2b: Oranguru|Soft-Boiled|p2b: Oranguru
+expect |split|p2
+expect |-heal|p2b: Oranguru|140/168
+expect |-heal|p2b: Oranguru|140/168
+expect |move|p1a: Larvitar|Stone Edge|p1b: Sylveon
+expect |rng|100|25
+expect |rng|8|4
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Sylveon|21/171
+expect |-damage|p1b: Sylveon|21/171
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p2b: Oranguru|Aromatic Mist|p2a: Araquanid
+expect |-boost|p2a: Araquanid|spd|1
+expect |move|p1b: Sylveon|Flare Blitz|p2a: Araquanid
+expect |rng|100|53
+expect |rng|24|0
+expect |rng|16|3
+expect |-crit|p2a: Araquanid
+expect |split|p2
+expect |-damage|p2a: Araquanid|112/144
+expect |-damage|p2a: Araquanid|112/144
+expect |rng|100|43
+expect |split|p1
+expect |-damage|p1b: Sylveon|10/171|[from] Recoil
+expect |-damage|p1b: Sylveon|10/171|[from] Recoil
+expect |move|p2a: Araquanid|Throat Chop|p1b: Sylveon
+expect |rng|100|28
+expect |rng|24|13
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Sylveon|0 fnt
+expect |-damage|p1b: Sylveon|0 fnt
+expect |rng|100|13
+expect |faint|p1b: Sylveon
+expect |move|p1a: Larvitar|Stone Edge|p2b: Oranguru
+expect |rng|100|53
+expect |rng|8|5
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Oranguru|97/168
+expect |-damage|p2b: Oranguru|97/168
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Stonjourner|Stonjourner, L50, M|201/201
+expect |switch|p1b: Stonjourner|Stonjourner, L50, M|201/201
+expect |turn|15
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sunflora|Sunflora, L50, M|151/151
+expect |switch|p1b: Sunflora|Sunflora, L50, M|151/151
+expect |split|p2
+expect |switch|p2a: Latias|Latias, L50, F, tera:Poison|96/156
+expect |switch|p2a: Latias|Latias, L50, F, tera:Poison|96/156
+expect |move|p2b: Oranguru|Gigaton Hammer|p1b: Sunflora
+expect |rng|100|98
+expect |rng|24|4
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Sunflora|69/151
+expect |-damage|p1b: Sunflora|69/151
+expect |move|p1a: Larvitar|Stone Edge|p2a: Latias
+expect |rng|100|38
+expect |rng|8|6
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Latias|44/156
+expect |-damage|p2a: Latias|44/156
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Komala|Komala, L50, F|142/142
+expect |switch|p2b: Komala|Komala, L50, F|142/142
+expect |-ability|p2b: Komala|Comatose
+expect |move|p1b: Sunflora|Aqua Jet|p1a: Larvitar
+expect |rng|100|98
+expect |rng|24|3
+expect |rng|16|2
+expect |-supereffective|p1a: Larvitar
+expect |split|p1
+expect |-damage|p1a: Larvitar|0 fnt
+expect |-damage|p1a: Larvitar|0 fnt
+expect |faint|p1a: Larvitar
+expect |move|p2a: Latias|Ancient Power|p1b: Sunflora
+expect |rng|100|55
+expect |rng|24|13
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Sunflora|31/151
+expect |-damage|p1b: Sunflora|31/151
+expect |rng|100|51
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Stonjourner|Stonjourner, L50, M|201/201
+expect |switch|p1a: Stonjourner|Stonjourner, L50, M|201/201
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p1b: Sunflora|Aqua Jet|p2a: Latias
+expect |rng|100|37
+expect |rng|24|17
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Latias|16/156
+expect |-damage|p2a: Latias|16/156
+expect |move|p2a: Latias|Ancient Power|p2b: Komala
+expect |rng|100|47
+expect |rng|24|3
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Komala|113/142
+expect |-damage|p2b: Komala|113/142
+expect |rng|100|49
+expect |move|p1a: Stonjourner|Syrup Bomb|p2a: Latias
+expect |rng|100|57
+expect |rng|24|1
+expect |rng|16|13
+expect |-resisted|p2a: Latias
+expect |split|p2
+expect |-damage|p2a: Latias|13/156
+expect |-damage|p2a: Latias|13/156
+expect |rng|100|62
+expect |-start|p2a: Latias|Syrup Bomb
+expect |move|p2b: Komala|Knock Off|p2a: Latias
+expect |rng|100|19
+expect |rng|24|4
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Latias|0 fnt
+expect |-damage|p2a: Latias|0 fnt
+expect |-enditem|p2a: Latias|Thunder Stone|[from] move: Knock Off|[of] p2b: Komala
+expect |faint|p2a: Latias
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Araquanid|Araquanid, L50, F|112/144
+expect |switch|p2a: Araquanid|Araquanid, L50, F|112/144
+expect |turn|18
+expect |
+expect |t:|
+expect |move|p1b: Sunflora|Aqua Jet|p1a: Stonjourner
+expect |rng|100|23
+expect |rng|24|2
+expect |rng|16|8
+expect |-supereffective|p1a: Stonjourner
+expect |split|p1
+expect |-damage|p1a: Stonjourner|171/201
+expect |-damage|p1a: Stonjourner|171/201
+expect |move|p1a: Stonjourner|Venoshock|p2a: Araquanid
+expect |rng|100|81
+expect |rng|24|18
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Araquanid|105/144
+expect |-damage|p2a: Araquanid|105/144
+expect |move|p2b: Komala|Dragon Pulse|p1a: Stonjourner
+expect |rng|100|15
+expect |rng|24|12
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Stonjourner|59/201
+expect |-damage|p1a: Stonjourner|59/201
+expect |move|p2a: Araquanid|Ancient Power|p1b: Sunflora
+expect |rng|100|50
+expect |rng|24|23
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Sunflora|9/151
+expect |-damage|p1b: Sunflora|9/151
+expect |rng|100|90
+expect |
+expect |upkeep
+expect |turn|19
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1b: Sunflora|Aqua Jet|p2a: Araquanid
+expect |rng|100|31
+expect |rng|24|4
+expect |rng|16|12
+expect |-resisted|p2a: Araquanid
+expect |split|p2
+expect |-damage|p2a: Araquanid|94/144
+expect |-damage|p2a: Araquanid|94/144
+expect |rng|2|0
+expect |move|p1a: Stonjourner|Syrup Bomb|p1b: Sunflora
+expect |rng|100|61
+expect |rng|24|23
+expect |rng|16|7
+expect |-resisted|p1b: Sunflora
+expect |split|p1
+expect |-damage|p1b: Sunflora|4/151
+expect |-damage|p1b: Sunflora|4/151
+expect |rng|100|51
+expect |-start|p1b: Sunflora|Syrup Bomb
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Komala|Make It Rain|p1b: Sunflora|[spread] p1a,p1b
+expect |rng|100|90
+expect |rng|100|67
+expect |rng|24|23
+expect |rng|16|1
+expect |-supereffective|p1a: Stonjourner
+expect |rng|24|2
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Stonjourner|0 fnt
+expect |-damage|p1a: Stonjourner|0 fnt
+expect |split|p1
+expect |-damage|p1b: Sunflora|0 fnt
+expect |-damage|p1b: Sunflora|0 fnt
+expect |rng|100|7
+expect |-unboost|p2b: Komala|spa|1
+expect |faint|p1a: Stonjourner
+expect |faint|p1b: Sunflora
+expect |
+expect |win|p2
+request p1 {"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Normal"},{"moves":[{"move":"Electro Drift","id":"electrodrift","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Rollout","id":"rollout","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"171/171","active":true,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"120/120","active":true,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"135/135","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"jabocaberry","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"133/133","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Attract","id":"attract","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Fighting"},{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Knock Off","id":"knockoff","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dragon Pulse","id":"dragonpulse","pp":16,"maxpp":16,"target":"any","disabled":false}],"canTerastallize":"Water"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"114/114","active":true,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":true,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"168/168","active":false,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"127/127","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"156/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":23,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Normal"},{"moves":[{"move":"Solar Beam","id":"solarbeam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Stockpile","id":"stockpile","pp":32,"maxpp":32,"target":"self","disabled":false}],"canTerastallize":"Bug"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"154/171","active":true,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"94/135","active":true,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"jabocaberry","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"120/120","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"133/133","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Attract","id":"attract","pp":23,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Fighting"},{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Knock Off","id":"knockoff","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dragon Pulse","id":"dragonpulse","pp":15,"maxpp":16,"target":"any","disabled":false}],"canTerastallize":"Water"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"64/114","active":true,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":true,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"168/168","active":false,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"127/127","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"156/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":22,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Normal"},{"moves":[{"move":"Stone Edge","id":"stoneedge","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"135/171","active":true,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"133/133","active":true,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"120/120","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"94/135","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"jabocaberry","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Attract","id":"attract","pp":22,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Fighting"},{"moves":[{"move":"Ancient Power","id":"ancientpower","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Poison"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":true,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"156/156","active":true,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"168/168","active":false,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"127/127","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":21,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Normal"},{"moves":[{"move":"Electro Drift","id":"electrodrift","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Rollout","id":"rollout","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"91/171","active":true,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"55/120 brn","active":true,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"133/133","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"94/135","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"jabocaberry","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Gigaton Hammer","id":"gigatonhammer","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aromatic Mist","id":"aromaticmist","pp":32,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Boomburst","id":"boomburst","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":8,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Ancient Power","id":"ancientpower","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"168/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"156/156","active":true,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"127/127","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":20,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Stone Edge","id":"stoneedge","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"81/171","active":true,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":true,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"55/120 brn","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"94/135","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"jabocaberry","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Gigaton Hammer","id":"gigatonhammer","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aromatic Mist","id":"aromaticmist","pp":32,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Boomburst","id":"boomburst","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":7,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Knock Off","id":"knockoff","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dragon Pulse","id":"dragonpulse","pp":15,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"168/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":true,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"127/127","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"156/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"}]}}
+request p1 {"active":[{"moves":[{"move":"Strength","id":"strength","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Aqua Jet","id":"aquajet","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Stone Edge","id":"stoneedge","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":true,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"55/120 brn","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"81/171","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"94/135","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"jabocaberry","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Gigaton Hammer","id":"gigatonhammer","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aromatic Mist","id":"aromaticmist","pp":31,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Boomburst","id":"boomburst","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":7,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Attract","id":"attract","pp":22,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"168/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":true,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"127/127","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"156/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":true,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"55/120 brn","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"81/171","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"130/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":true,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"127/127","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"156/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"}]}}
+request p1 {"active":[{"moves":[{"move":"Strength","id":"strength","pp":24,"maxpp":24,"target":"normal","disabled":true},{"move":"Aqua Jet","id":"aquajet","pp":31,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":20,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"81/171","active":true,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"55/120 brn","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Gigaton Hammer","id":"gigatonhammer","pp":7,"maxpp":8,"target":"normal","disabled":true},{"move":"Aromatic Mist","id":"aromaticmist","pp":31,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Boomburst","id":"boomburst","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":7,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Attract","id":"attract","pp":21,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"130/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":true,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"127/127","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"156/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"}]}}
+request p1 {"active":[{"moves":[{"move":"Strength","id":"strength","pp":24,"maxpp":24,"target":"normal","disabled":true},{"move":"Aqua Jet","id":"aquajet","pp":30,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Electro Drift","id":"electrodrift","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Rollout","id":"rollout","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"48/120 brn","active":true,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"81/171","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Ancient Power","id":"ancientpower","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Attract","id":"attract","pp":20,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Latias","details":"Latias, L50, F","condition":"138/156","active":true,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":true,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"127/127","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"130/168","active":false,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Strength","id":"strength","pp":24,"maxpp":24,"target":"normal","disabled":true},{"move":"Aqua Jet","id":"aquajet","pp":29,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Rollout","id":"rollout"}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"41/120 brn","active":true,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"81/171","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Glare","id":"glare","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Conversion","id":"conversion","pp":48,"maxpp":48,"target":"self","disabled":false}]},{"moves":[{"move":"Gigaton Hammer","id":"gigatonhammer","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Aromatic Mist","id":"aromaticmist","pp":31,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Boomburst","id":"boomburst","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":7,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"112/127","active":true,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"113/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"138/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Venoshock","id":"venoshock","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Rollout","id":"rollout"}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":true,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"34/120 brn","active":true,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"81/171","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Glare","id":"glare","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Conversion","id":"conversion","pp":48,"maxpp":48,"target":"self","disabled":false}]},{"moves":[{"move":"Gigaton Hammer","id":"gigatonhammer","pp":6,"maxpp":8,"target":"normal","disabled":true},{"move":"Aromatic Mist","id":"aromaticmist","pp":31,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Boomburst","id":"boomburst","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":7,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"14/127","active":true,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"83/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"138/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"27/120 brn","active":true,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"81/171","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":true,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"96/156","active":true,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"83/168","active":false,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Strength","id":"strength","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Aqua Jet","id":"aquajet","pp":29,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Electro Drift","id":"electrodrift","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Rollout","id":"rollout","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"27/120 brn","active":true,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"81/171","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Attract","id":"attract","pp":20,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Ancient Power","id":"ancientpower","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":true,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"96/156","active":true,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"83/168","active":false,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Stone Edge","id":"stoneedge","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Electro Drift","id":"electrodrift","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Rollout","id":"rollout","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":true,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"20/120 brn","active":true,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"81/171","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Attract","id":"attract","pp":19,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Gigaton Hammer","id":"gigatonhammer","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Aromatic Mist","id":"aromaticmist","pp":31,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Boomburst","id":"boomburst","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":7,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":true,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"56/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"96/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":true,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"0 fnt","active":true,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"81/171","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":true,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"56/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"96/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Stone Edge","id":"stoneedge","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Strength","id":"strength","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Aqua Jet","id":"aquajet","pp":29,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":true,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"81/171","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"0 fnt","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Attract","id":"attract","pp":18,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Gigaton Hammer","id":"gigatonhammer","pp":5,"maxpp":8,"target":"normal","disabled":true},{"move":"Aromatic Mist","id":"aromaticmist","pp":31,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Boomburst","id":"boomburst","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":7,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":true,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"56/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"96/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Stone Edge","id":"stoneedge","pp":5,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":20,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":true,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"21/171","active":true,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"0 fnt","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Ancient Power","id":"ancientpower","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Throat Chop","id":"throatchop","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Volt Switch","id":"voltswitch","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Gigaton Hammer","id":"gigatonhammer","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Aromatic Mist","id":"aromaticmist","pp":31,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Boomburst","id":"boomburst","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"144/144","active":true,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"140/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"96/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":true,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"0 fnt","active":true,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"0 fnt","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"112/144","active":true,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"97/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"96/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Stone Edge","id":"stoneedge","pp":4,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Venoshock","id":"venoshock","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":true,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":true,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"0 fnt","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Ancient Power","id":"ancientpower","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Throat Chop","id":"throatchop","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Volt Switch","id":"voltswitch","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Gigaton Hammer","id":"gigatonhammer","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Aromatic Mist","id":"aromaticmist","pp":30,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Boomburst","id":"boomburst","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"112/144","active":true,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"97/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"96/156","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Stone Edge","id":"stoneedge","pp":3,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Strength","id":"strength","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Aqua Jet","id":"aquajet","pp":29,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"102/133","active":true,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"69/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"0 fnt","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Ancient Power","id":"ancientpower","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Gigaton Hammer","id":"gigatonhammer","pp":4,"maxpp":8,"target":"normal","disabled":true},{"move":"Aromatic Mist","id":"aromaticmist","pp":30,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Boomburst","id":"boomburst","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Soft-Boiled","id":"softboiled","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Latias","details":"Latias, L50, F","condition":"44/156","active":true,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"97/168","active":true,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":false,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"112/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"0 fnt","active":true,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"31/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":false,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"0 fnt","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Latias","details":"Latias, L50, F","condition":"44/156","active":true,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":true,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"97/168","active":false,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"112/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Venoshock","id":"venoshock","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Strength","id":"strength","pp":24,"maxpp":24,"target":"normal","disabled":true},{"move":"Aqua Jet","id":"aquajet","pp":28,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":true,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"31/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"0 fnt","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Ancient Power","id":"ancientpower","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Knock Off","id":"knockoff","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dragon Pulse","id":"dragonpulse","pp":15,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Latias","details":"Latias, L50, F","condition":"44/156","active":true,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"thunderstone","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"142/142","active":true,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"97/168","active":false,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"112/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":true,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"31/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"0 fnt","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Latias","details":"Latias, L50, F","condition":"0 fnt","active":true,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"113/142","active":true,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"97/168","active":false,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"112/144","active":false,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Venoshock","id":"venoshock","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Strength","id":"strength","pp":24,"maxpp":24,"target":"normal","disabled":true},{"move":"Aqua Jet","id":"aquajet","pp":27,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"201/201","active":true,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"31/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"0 fnt","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Ancient Power","id":"ancientpower","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Throat Chop","id":"throatchop","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Volt Switch","id":"voltswitch","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Knock Off","id":"knockoff","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Dragon Pulse","id":"dragonpulse","pp":15,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"112/144","active":true,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"113/142","active":true,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"97/168","active":false,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"0 fnt","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Venoshock","id":"venoshock","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Strength","id":"strength","pp":24,"maxpp":24,"target":"normal","disabled":true},{"move":"Aqua Jet","id":"aquajet","pp":26,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Stonjourner","details":"Stonjourner, L50, M","condition":"59/201","active":true,"stats":{"atk":165,"def":169,"spa":39,"spd":41,"spe":105},"moves":["venoshock","syrupbomb"],"baseAbility":"powerspot","item":"tangaberry","pokeball":"pokeball","ability":"powerspot","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sunflora","details":"Sunflora, L50, M","condition":"9/151","active":true,"stats":{"atk":118,"def":71,"spa":142,"spd":112,"spe":71},"moves":["strength","aquajet"],"baseAbility":"solarpower","item":"choicescarf","pokeball":"pokeball","ability":"solarpower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Larvitar","details":"Larvitar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":86,"def":72,"spa":93,"spd":87,"spe":66},"moves":["stoneedge"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sneasel","details":"Sneasel, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":82,"spa":56,"spd":114,"spe":159},"moves":["solarbeam","stockpile"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Sylveon","details":"Sylveon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":91,"def":87,"spa":157,"spd":151,"spe":99},"moves":["flareblitz"],"baseAbility":"pixilate","item":"ejectpack","pokeball":"pokeball","ability":"pixilate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Riolu","details":"Riolu, L50, F","condition":"0 fnt","active":false,"stats":{"atk":101,"def":81,"spa":68,"spd":63,"spe":90},"moves":["electrodrift","rollout"],"baseAbility":"prankster","item":"magnet","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Ancient Power","id":"ancientpower","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Throat Chop","id":"throatchop","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Volt Switch","id":"voltswitch","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Knock Off","id":"knockoff","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Dragon Pulse","id":"dragonpulse","pp":14,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Araquanid","details":"Araquanid, L50, F","condition":"105/144","active":true,"stats":{"atk":81,"def":113,"spa":93,"spd":172,"spe":85},"moves":["ancientpower","throatchop","voltswitch"],"baseAbility":"waterbubble","item":"","pokeball":"pokeball","ability":"waterbubble","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Komala","details":"Komala, L50, F","condition":"113/142","active":true,"stats":{"atk":125,"def":92,"spa":125,"spd":140,"spe":88},"moves":["makeitrain","knockoff","dragonpulse"],"baseAbility":"comatose","item":"zoomlens","pokeball":"pokeball","ability":"comatose","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio, L50, M","condition":"6/114","active":false,"stats":{"atk":131,"def":84,"spa":94,"spd":93,"spe":131},"moves":["attract"],"baseAbility":"sandforce","item":"levelball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Oranguru","details":"Oranguru, L50, F","condition":"97/168","active":false,"stats":{"atk":84,"def":123,"spa":116,"spd":133,"spe":102},"moves":["gigatonhammer","aromaticmist","boomburst","softboiled"],"baseAbility":"symbiosis","item":"dreadplate","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Latias","details":"Latias, L50, F","condition":"0 fnt","active":false,"stats":{"atk":101,"def":99,"spa":163,"spd":158,"spe":156},"moves":["ancientpower"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Litwick","details":"Litwick, L50, F","condition":"0 fnt","active":false,"stats":{"atk":51,"def":87,"spa":88,"spd":98,"spe":60},"moves":["flareblitz","softboiled","glare","conversion"],"baseAbility":"infiltrator","item":"kingsrock","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}

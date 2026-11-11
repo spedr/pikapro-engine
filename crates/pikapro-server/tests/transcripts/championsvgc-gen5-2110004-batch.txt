@@ -1,0 +1,502 @@
+# championsvgc-gen5-2110004-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@write
+>start {"formatid":"gen9championsvgc2026regmb","seed":"gen5,1981331ed6b3f1af"}
+>chat before the players
+>player p1 {"name":"Alice","team":"Big Tony's Pal|Maushold|Leftovers|CheekPouch|AppleAcid,MagnetRise,Synthesis|Modest|2,31,,5,,27||||50|,,,,,Fairy]Mr. Rime||ChartiBerry|TangledFeet|Hurricane,Substitute|Docile|20,27,3,,,16|M||S|50|,,,,,Fairy]Vivillon-River||WiseGlasses|FriendGuard|SludgeWave,WaveCrash|Brave|,,13,16,19,18|M|||50|,,,,,Stellar]Goodra-Hisui||ShedShell|Gooey|TailSlap,LavaPlume,AerialAce|Calm|14,,24,1,1,25|F|||50|,,,,,Ground]Alcremie-Mint-Cream||SharpBeak|AromaVeil|Inferno,TrickorTreat|Serious|,11,9,11,1,29|F||S|50|,,,,,Stellar]X|Empoleon|TwistedSpoon|Competitive|IcePunch,DireClaw,DazzlingGleam|Adamant|28,2,3,2,30,1||||50|,,,,,Poison","rating":1500}
+>player p2 {"name":"Bob","team":"Beedrill|||Sniper|StickyWeb,Acrobatics,SpiritShackle|Lax|,11,18,18,,19|F|||50|,,,,,Fairy]Aegislash||BlackBelt|StanceChange|SkyAttack,InfernalParade,PowerGem,PsyshieldBash|Timid|11,,17,6,5,27|M|||50|,,,,,Flying]Lycanroc-Dusk||YacheBerry|ToughClaws|Quash|Modest|16,,24,3,2,20|||S|50|,,,,,Rock]Mamoswine||WacanBerry|SnowCloak|SoftBoiled,PowerShift|Serious|,3,2,9,17,24|F|||50|,,,,,Steel]Chomp|Clawitzer|SpellTag|MegaLauncher|Scald|Calm|16,17,,17,1,13||||50|,,,,,Rock]Venusaur||MuscleBand|Chlorophyll|MagicRoom|Serious|8,1,1,22,25,9|M|||50|,,,,,Stellar"}
+>p1 team
+>p2 team 5623
+>p1 switch 3, move 1 1
+>p2 switch 4, move 1
+>p1 move 2 1, move 1 2
+>p2 switch 4, switch 3
+>p2 switch 3, move 4 1
+>p2 switch 3, move 4 1
+>p1 move Wave Crash +2 ,  move substitute
+>p2 switch LYCANROC
+>p2 switch 3, move 2 1
+>p1 switch MR. RIME
+>p1 move 2 1, move substitute -2 terastallize
+>p1 switch 4
+>p1 move 2 1, move 2
+>p1 switch 3, pass
+>p1 move 1 1, switch 4
+>p2 move 1 1, move 4 2
+>p2 move 1 1, move 3 -1
+>p1 move 1 2, move 3 -1
+>p2 switch 4, pass
+>p1 switch 4 ,  skip
+>p2 switch 3, move 3 2
+>p1 move 1 -2, move 3 1
+>p1 move 0
+>p1 move 1 1, move 2
+>p2 move 1, move 2 -1
+>p2 switch 7
+>p2 pass, switch 3
+>p1 move 1 -2, move 3 2
+>p2 pass, move 1 2
+>p1 move hurricane -2,move Lava Plume
+>p2 undo
+>p2 
+>p2 default
+>p2 skip,move quash 2
+>requestteam p2
+>p1 move Lava Plume +1 mega
+>p1 undo
+>p1 pass, move 1 2
+>p1 switch 0
+>p2 pass, move 1 2
+>p1 pass, move 2
+>p2 pass, move 1 2
+>p1 pass, move 1 2
+>p1 pass, move 1 2
+>p2 default
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: switch LYCANROC - missing other pokemon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You can't choose a target for Substitute
+@message
+sideupdate
+p1
+|error|[Invalid choice] Incomplete choice: switch 4 - missing other pokemon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Mr. Rime doesn't have a move 0
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You do not have a Pokémon in slot 7 to switch to
+@message
+sideupdate
+p2
+|error|[Invalid choice] Unrecognized choice: 
+@message
+requesteddata
+Beedrill|||Sniper|StickyWeb,Acrobatics,SpiritShackle|Lax|,11,18,18,,19|F|||50|,,,,,Fairy]Aegislash||BlackBelt|StanceChange|SkyAttack,InfernalParade,PowerGem,PsyshieldBash|Timid|11,,17,6,5,27|M|||50|,,,,,Flying]Lycanroc|LycanrocDusk|YacheBerry|ToughClaws|Quash|Modest|16,,24,3,2,20|||S|50|,,,,,Rock]Mamoswine||WacanBerry|SnowCloak|SoftBoiled,PowerShift|Serious|,3,2,9,17,24|F|||50|,,,,,Steel]Chomp|Clawitzer|SpellTag|MegaLauncher|Scald|Calm|16,17,,17,1,13||||50|,,,,,Rock]Venusaur||MuscleBand|Chlorophyll|MagicRoom|Serious|8,1,1,22,25,9|M|||50|,,,,,Stellar
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You can't choose a target for Lava Plume
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You do not have a Pokémon named "0" to switch to
+@message
+update
+|t:|
+|gametype|doubles
+|chat|before the players
+|player|p1|Alice||1500
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Maushold, L50|
+|poke|p1|Mr. Rime, L50, M, shiny|
+|poke|p1|Vivillon-River, L50, M|
+|poke|p1|Goodra-Hisui, L50, F|
+|poke|p1|Alcremie-Mint-Cream, L50, F, shiny|
+|poke|p1|Empoleon, L50, F|
+|poke|p2|Beedrill, L50, F|
+|poke|p2|Aegislash, L50, M|
+|poke|p2|Lycanroc-Dusk, L50, M, shiny|
+|poke|p2|Mamoswine, L50, F|
+|poke|p2|Clawitzer, L50, F|
+|poke|p2|Venusaur, L50, M|
+|teampreview|4
+|split|p1
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+|split|p2
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|uhtmlchange|otsrequest|
+
+|split|p2
+|uhtmlchange|otsrequest|
+
+|split|p1
+|switch|p1a: Big Tony's Pal|Maushold, L50|151/151
+|switch|p1a: Big Tony's Pal|Maushold, L50|100/100
+|split|p1
+|switch|p1b: Mr. Rime|Mr. Rime, L50, M, shiny|175/175
+|switch|p1b: Mr. Rime|Mr. Rime, L50, M, shiny|100/100
+|split|p2
+|switch|p2a: Chomp|Clawitzer, L50, F|162/162
+|switch|p2a: Chomp|Clawitzer, L50, F|100/100
+|split|p2
+|switch|p2b: Venusaur|Venusaur, L50, M|163/163
+|switch|p2b: Venusaur|Venusaur, L50, M|100/100
+|turn|1
+|
+|t:|
+|split|p1
+|switch|p1a: Vivillon|Vivillon-River, L50, M|155/155
+|switch|p1a: Vivillon|Vivillon-River, L50, M|100/100
+|split|p2
+|switch|p2a: Lycanroc|Lycanroc-Dusk, L50, M, shiny|166/166
+|switch|p2a: Lycanroc|Lycanroc-Dusk, L50, M, shiny|100/100
+|move|p2b: Venusaur|Magic Room|p2b: Venusaur
+|-fieldstart|move: Magic Room|[of] p2b: Venusaur
+|move|p1b: Mr. Rime|Hurricane|p2a: Lycanroc
+|-resisted|p2a: Lycanroc|1
+|split|p2
+|-damage|p2a: Lycanroc|130/166
+|-damage|p2a: Lycanroc|78/100
+|-start|p2a: Lycanroc|confusion
+|
+|upkeep
+|turn|2
+|
+|t:|
+|split|p2
+|switch|p2a: Chomp|Clawitzer, L50, F|162/162
+|switch|p2a: Chomp|Clawitzer, L50, F|100/100
+|split|p2
+|switch|p2b: Aegislash|Aegislash, L50, M|146/146
+|switch|p2b: Aegislash|Aegislash, L50, M|100/100
+|move|p1a: Vivillon|Wave Crash|p2a: Chomp
+|-resisted|p2a: Chomp|1
+|split|p2
+|-damage|p2a: Chomp|143/162
+|-damage|p2a: Chomp|88/100
+|split|p1
+|-damage|p1a: Vivillon|149/155|[from] Recoil
+|-damage|p1a: Vivillon|96/100|[from] Recoil
+|move|p1b: Mr. Rime|Hurricane|p2b: Aegislash
+|-resisted|p2b: Aegislash|1
+|split|p2
+|-damage|p2b: Aegislash|128/146
+|-damage|p2b: Aegislash|87/100
+|
+|upkeep
+|turn|3
+|
+|t:|
+|split|p2
+|switch|p2a: Venusaur|Venusaur, L50, M|163/163
+|switch|p2a: Venusaur|Venusaur, L50, M|100/100
+|-formechange|p2b: Aegislash|Aegislash-Blade|
+|move|p2b: Aegislash|Psyshield Bash|p1a: Vivillon
+|split|p1
+|-damage|p1a: Vivillon|86/155
+|-damage|p1a: Vivillon|55/100
+|-boost|p2b: Aegislash|def|1
+|move|p1a: Vivillon|Wave Crash|p2b: Aegislash
+|split|p2
+|-damage|p2b: Aegislash|96/146
+|-damage|p2b: Aegislash|65/100
+|split|p1
+|-damage|p1a: Vivillon|75/155|[from] Recoil
+|-damage|p1a: Vivillon|48/100|[from] Recoil
+|move|p1b: Mr. Rime|Substitute|p1b: Mr. Rime
+|-start|p1b: Mr. Rime|Substitute
+|split|p1
+|-damage|p1b: Mr. Rime|132/175
+|-damage|p1b: Mr. Rime|75/100
+|
+|upkeep
+|turn|4
+|
+|t:|
+|split|p2
+|switch|p2a: Chomp|Clawitzer, L50, F|143/162
+|switch|p2a: Chomp|Clawitzer, L50, F|88/100
+|move|p2b: Aegislash|Infernal Parade|p1a: Vivillon
+|split|p1
+|-damage|p1a: Vivillon|6/155
+|-damage|p1a: Vivillon|3/100
+|move|p1a: Vivillon|Wave Crash|p2a: Chomp
+|-resisted|p2a: Chomp|1
+|split|p2
+|-damage|p2a: Chomp|124/162
+|-damage|p2a: Chomp|76/100
+|split|p1
+|-damage|p1a: Vivillon|0 fnt|[from] Recoil
+|-damage|p1a: Vivillon|0 fnt|[from] Recoil
+|faint|p1a: Vivillon
+|move|p1b: Mr. Rime|Substitute|p1b: Mr. Rime
+|-fail|p1b: Mr. Rime|move: Substitute
+|
+|upkeep
+|
+|t:|
+|split|p1
+|switch|p1a: Big Tony's Pal|Maushold, L50|151/151
+|switch|p1a: Big Tony's Pal|Maushold, L50|100/100
+|turn|5
+|
+|t:|
+|split|p1
+|switch|p1b: Goodra|Goodra-Hisui, L50, F|169/169
+|switch|p1b: Goodra|Goodra-Hisui, L50, F|100/100
+|move|p1a: Big Tony's Pal|Apple Acid|p2a: Chomp
+|-supereffective|p2a: Chomp|1
+|split|p2
+|-damage|p2a: Chomp|64/162
+|-damage|p2a: Chomp|39/100
+|-unboost|p2a: Chomp|spd|1
+|move|p2b: Aegislash|Psyshield Bash|p1b: Goodra
+|-resisted|p1b: Goodra|1
+|split|p1
+|-damage|p1b: Goodra|152/169
+|-damage|p1b: Goodra|89/100
+|-boost|p2b: Aegislash|def|1
+|-ability|p1b: Goodra|Gooey
+|-unboost|p2b: Aegislash|spe|1
+|move|p2a: Chomp|Scald|p1a: Big Tony's Pal
+|split|p1
+|-damage|p1a: Big Tony's Pal|67/151
+|-damage|p1a: Big Tony's Pal|44/100
+|
+|-fieldend|move: Magic Room|[of] p2: Venusaur
+|upkeep
+|turn|6
+|
+|t:|
+|move|p1a: Big Tony's Pal|Apple Acid|p2b: Aegislash
+|-resisted|p2b: Aegislash|1
+|split|p2
+|-damage|p2b: Aegislash|71/146
+|-damage|p2b: Aegislash|48/100
+|-unboost|p2b: Aegislash|spd|1
+|move|p1b: Goodra|Aerial Ace|p1a: Big Tony's Pal
+|split|p1
+|-damage|p1a: Big Tony's Pal|39/151
+|-damage|p1a: Big Tony's Pal|25/100
+|move|p2a: Chomp|Scald|p1a: Big Tony's Pal
+|split|p1
+|-damage|p1a: Big Tony's Pal|0 fnt
+|-damage|p1a: Big Tony's Pal|0 fnt
+|faint|p1a: Big Tony's Pal
+|move|p2b: Aegislash|Power Gem|p2a: Chomp
+|split|p2
+|-damage|p2a: Chomp|0 fnt
+|-damage|p2a: Chomp|0 fnt
+|faint|p2a: Chomp
+|
+|upkeep
+|
+|t:|
+|split|p1
+|switch|p1a: Mr. Rime|Mr. Rime, L50, M, shiny|132/175
+|switch|p1a: Mr. Rime|Mr. Rime, L50, M, shiny|75/100
+|split|p2
+|switch|p2a: Lycanroc|Lycanroc-Dusk, L50, M, shiny|130/166
+|switch|p2a: Lycanroc|Lycanroc-Dusk, L50, M, shiny|78/100
+|turn|7
+|
+|t:|
+|split|p2
+|switch|p2a: Venusaur|Venusaur, L50, M|163/163
+|switch|p2a: Venusaur|Venusaur, L50, M|100/100
+|move|p1a: Mr. Rime|Hurricane|p1b: Goodra
+|-resisted|p1b: Goodra|1
+|split|p1
+|-damage|p1b: Goodra|137/169
+|-damage|p1b: Goodra|81/100
+|move|p1b: Goodra|Aerial Ace|p2a: Venusaur
+|-supereffective|p2a: Venusaur|1
+|split|p2
+|-damage|p2a: Venusaur|109/163
+|-damage|p2a: Venusaur|66/100
+|move|p2b: Aegislash|Power Gem|p1b: Goodra
+|-resisted|p1b: Goodra|1
+|split|p1
+|-damage|p1b: Goodra|122/169
+|-damage|p1b: Goodra|72/100
+|
+|upkeep
+|turn|8
+|
+|t:|
+|move|p2a: Venusaur|Magic Room|p2a: Venusaur
+|-fieldstart|move: Magic Room|[of] p2a: Venusaur
+|move|p1a: Mr. Rime|Hurricane|p2a: Venusaur
+|-supereffective|p2a: Venusaur|1
+|split|p2
+|-damage|p2a: Venusaur|33/163
+|-damage|p2a: Venusaur|20/100y
+|move|p1b: Goodra|Lava Plume|p2a: Venusaur|[spread] p1a,p2a,p2b
+|-supereffective|p1a: Mr. Rime|1
+|-supereffective|p2a: Venusaur|1
+|-supereffective|p2b: Aegislash|1
+|split|p1
+|-damage|p1a: Mr. Rime|78/175
+|-damage|p1a: Mr. Rime|44/100
+|split|p2
+|-damage|p2a: Venusaur|0 fnt
+|-damage|p2a: Venusaur|0 fnt
+|split|p2
+|-damage|p2b: Aegislash|0 fnt
+|-damage|p2b: Aegislash|0 fnt
+|faint|p2a: Venusaur
+|faint|p2b: Aegislash
+|
+|upkeep
+|
+|t:|
+|split|p2
+|switch|p2b: Lycanroc|Lycanroc-Dusk, L50, M, shiny|130/166
+|switch|p2b: Lycanroc|Lycanroc-Dusk, L50, M, shiny|78/100
+|turn|9
+|
+|t:|
+|move|p2b: Lycanroc|Quash|p1b: Goodra
+|-activate|p1b: Goodra|move: Quash
+|move|p1a: Mr. Rime|Hurricane|p1b: Goodra
+|-resisted|p1b: Goodra|1
+|split|p1
+|-damage|p1b: Goodra|107/169
+|-damage|p1b: Goodra|63/100
+|-start|p1b: Goodra|confusion
+|-activate|p1b: Goodra|confusion
+|split|p1
+|-damage|p1b: Goodra|93/169|[from] confusion
+|-damage|p1b: Goodra|55/100|[from] confusion
+|
+|upkeep
+|turn|10
+|
+|t:|
+|move|p2b: Lycanroc|Quash|p1b: Goodra
+|-activate|p1b: Goodra|move: Quash
+|move|p1a: Mr. Rime|Hurricane|p1b: Goodra
+|-resisted|p1b: Goodra|1
+|split|p1
+|-damage|p1b: Goodra|76/169
+|-damage|p1b: Goodra|44/100
+|-end|p1b: Goodra|confusion
+|move|p1b: Goodra|Lava Plume|p2b: Lycanroc|[spread] p1a,p2b
+|-supereffective|p1a: Mr. Rime|1
+|-crit|p1a: Mr. Rime
+|-resisted|p2b: Lycanroc|1
+|split|p1
+|-damage|p1a: Mr. Rime|0 fnt
+|-damage|p1a: Mr. Rime|0 fnt
+|split|p2
+|-damage|p2b: Lycanroc|113/166
+|-damage|p2b: Lycanroc|68/100
+|-status|p2b: Lycanroc|brn
+|faint|p1a: Mr. Rime
+|
+|split|p2
+|-damage|p2b: Lycanroc|103/166 brn|[from] brn
+|-damage|p2b: Lycanroc|62/100 brn|[from] brn
+|upkeep
+|turn|11
+|
+|t:|
+|move|p2b: Lycanroc|Quash|p1b: Goodra
+|-activate|p1b: Goodra|move: Quash
+|move|p1b: Goodra|Tail Slap|p2b: Lycanroc
+|-resisted|p2b: Lycanroc|1
+|split|p2
+|-damage|p2b: Lycanroc|97/166 brn
+|-damage|p2b: Lycanroc|58/100 brn
+|-resisted|p2b: Lycanroc|1
+|split|p2
+|-damage|p2b: Lycanroc|92/166 brn
+|-damage|p2b: Lycanroc|55/100 brn
+|-resisted|p2b: Lycanroc|1
+|split|p2
+|-damage|p2b: Lycanroc|87/166 brn
+|-damage|p2b: Lycanroc|52/100 brn
+|-hitcount|p2b: Lycanroc|3
+|
+|split|p2
+|-damage|p2b: Lycanroc|77/166 brn|[from] brn
+|-damage|p2b: Lycanroc|46/100 brn|[from] brn
+|upkeep
+|turn|12
+|
+|t:|
+|move|p2b: Lycanroc|Quash|p1b: Goodra
+|-activate|p1b: Goodra|move: Quash
+|move|p1b: Goodra|Lava Plume|p2b: Lycanroc
+|-resisted|p2b: Lycanroc|1
+|split|p2
+|-damage|p2b: Lycanroc|51/166 brn
+|-damage|p2b: Lycanroc|30/100 brn
+|
+|split|p2
+|-damage|p2b: Lycanroc|41/166 brn|[from] brn
+|-damage|p2b: Lycanroc|24/100 brn|[from] brn
+|-fieldend|move: Magic Room|[of] p2: Venusaur
+|upkeep
+|turn|13
+|
+|t:|
+|move|p2b: Lycanroc|Quash|p1b: Goodra
+|-activate|p1b: Goodra|move: Quash
+|move|p1b: Goodra|Tail Slap|p2b: Lycanroc
+|-resisted|p2b: Lycanroc|1
+|split|p2
+|-damage|p2b: Lycanroc|36/166 brn
+|-damage|p2b: Lycanroc|21/100 brn
+|-resisted|p2b: Lycanroc|1
+|split|p2
+|-damage|p2b: Lycanroc|31/166 brn
+|-damage|p2b: Lycanroc|18/100 brn
+|-resisted|p2b: Lycanroc|1
+|-crit|p2b: Lycanroc
+|split|p2
+|-damage|p2b: Lycanroc|23/166 brn
+|-damage|p2b: Lycanroc|13/100 brn
+|-hitcount|p2b: Lycanroc|3
+|
+|split|p2
+|-damage|p2b: Lycanroc|13/166 brn|[from] brn
+|-damage|p2b: Lycanroc|7/100 brn|[from] brn
+|upkeep
+|turn|14
+|
+|t:|
+|move|p2b: Lycanroc|Quash|p1b: Goodra
+|-activate|p1b: Goodra|move: Quash
+|move|p1b: Goodra|Tail Slap|p2b: Lycanroc
+|-resisted|p2b: Lycanroc|1
+|split|p2
+|-damage|p2b: Lycanroc|8/166 brn
+|-damage|p2b: Lycanroc|4/100 brn
+|-resisted|p2b: Lycanroc|1
+|split|p2
+|-damage|p2b: Lycanroc|3/166 brn
+|-damage|p2b: Lycanroc|1/100 brn
+|-hitcount|p2b: Lycanroc|2
+|
+|split|p2
+|-damage|p2b: Lycanroc|0 fnt|[from] brn
+|-damage|p2b: Lycanroc|0 fnt|[from] brn
+|faint|p2b: Lycanroc
+|
+|win|Alice
+@message
+sideupdate
+p1
+|request|null
+@message
+sideupdate
+p2
+|request|null
+@message
+end
+{"winner":"Alice","seed":"gen5,1981331ed6b3f1af","turns":14,"p1":"Alice","p2":"Bob","p1team":[{"name":"Big Tony's Pal","species":"Maushold","item":"Leftovers","ability":"Cheek Pouch","moves":["Apple Acid","Magnet Rise","Synthesis"],"nature":"Modest","evs":{"hp":2,"atk":31,"def":0,"spa":5,"spd":0,"spe":27},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Mr. Rime","species":"Mr. Rime","item":"Charti Berry","ability":"Tangled Feet","moves":["Hurricane","Substitute"],"nature":"Docile","evs":{"hp":20,"atk":27,"def":3,"spa":0,"spd":0,"spe":16},"gender":"M","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Vivillon","species":"Vivillon-River","item":"Wise Glasses","ability":"Friend Guard","moves":["Sludge Wave","Wave Crash"],"nature":"Brave","evs":{"hp":0,"atk":0,"def":13,"spa":16,"spd":19,"spe":18},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Goodra","species":"Goodra-Hisui","item":"Shed Shell","ability":"Gooey","moves":["Tail Slap","Lava Plume","Aerial Ace"],"nature":"Calm","evs":{"hp":14,"atk":0,"def":24,"spa":1,"spd":1,"spe":25},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Alcremie","species":"Alcremie-Mint-Cream","item":"Sharp Beak","ability":"Aroma Veil","moves":["Inferno","Trick-or-Treat"],"nature":"Serious","evs":{"hp":0,"atk":11,"def":9,"spa":11,"spd":1,"spe":29},"gender":"F","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"X","species":"Empoleon","item":"Twisted Spoon","ability":"Competitive","moves":["Ice Punch","Dire Claw","Dazzling Gleam"],"nature":"Adamant","evs":{"hp":28,"atk":2,"def":3,"spa":2,"spd":30,"spe":1},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Beedrill","species":"Beedrill","item":"","ability":"Sniper","moves":["Sticky Web","Acrobatics","Spirit Shackle"],"nature":"Lax","evs":{"hp":0,"atk":11,"def":18,"spa":18,"spd":0,"spe":19},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Aegislash","species":"Aegislash","item":"Black Belt","ability":"Stance Change","moves":["Sky Attack","Infernal Parade","Power Gem","Psyshield Bash"],"nature":"Timid","evs":{"hp":11,"atk":0,"def":17,"spa":6,"spd":5,"spe":27},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Lycanroc","species":"Lycanroc-Dusk","item":"Yache Berry","ability":"Tough Claws","moves":["Quash"],"nature":"Modest","evs":{"hp":16,"atk":0,"def":24,"spa":3,"spd":2,"spe":20},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Mamoswine","species":"Mamoswine","item":"Wacan Berry","ability":"Snow Cloak","moves":["Soft-Boiled","Power Shift"],"nature":"Serious","evs":{"hp":0,"atk":3,"def":2,"spa":9,"spd":17,"spe":24},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Clawitzer","item":"Spell Tag","ability":"Mega Launcher","moves":["Scald"],"nature":"Calm","evs":{"hp":16,"atk":17,"def":0,"spa":17,"spd":1,"spe":13},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Venusaur","species":"Venusaur","item":"Muscle Band","ability":"Chlorophyll","moves":["Magic Room"],"nature":"Serious","evs":{"hp":8,"atk":1,"def":1,"spa":22,"spd":25,"spe":9},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[1,0],"inputLog":[">start {\"formatid\":\"gen9championsvgc2026regmb\",\"seed\":\"gen5,1981331ed6b3f1af\"}",">chat before the players",">player p1 {\"name\":\"Alice\",\"team\":\"Big Tony's Pal|Maushold|Leftovers|CheekPouch|AppleAcid,MagnetRise,Synthesis|Modest|2,31,,5,,27||||50|,,,,,Fairy]Mr. Rime||ChartiBerry|TangledFeet|Hurricane,Substitute|Docile|20,27,3,,,16|M||S|50|,,,,,Fairy]Vivillon-River||WiseGlasses|FriendGuard|SludgeWave,WaveCrash|Brave|,,13,16,19,18|M|||50|,,,,,Stellar]Goodra-Hisui||ShedShell|Gooey|TailSlap,LavaPlume,AerialAce|Calm|14,,24,1,1,25|F|||50|,,,,,Ground]Alcremie-Mint-Cream||SharpBeak|AromaVeil|Inferno,TrickorTreat|Serious|,11,9,11,1,29|F||S|50|,,,,,Stellar]X|Empoleon|TwistedSpoon|Competitive|IcePunch,DireClaw,DazzlingGleam|Adamant|28,2,3,2,30,1||||50|,,,,,Poison\",\"rating\":1500}",">player p2 {\"name\":\"Bob\",\"team\":\"Beedrill|||Sniper|StickyWeb,Acrobatics,SpiritShackle|Lax|,11,18,18,,19|F|||50|,,,,,Fairy]Aegislash||BlackBelt|StanceChange|SkyAttack,InfernalParade,PowerGem,PsyshieldBash|Timid|11,,17,6,5,27|M|||50|,,,,,Flying]Lycanroc-Dusk||YacheBerry|ToughClaws|Quash|Modest|16,,24,3,2,20|||S|50|,,,,,Rock]Mamoswine||WacanBerry|SnowCloak|SoftBoiled,PowerShift|Serious|,3,2,9,17,24|F|||50|,,,,,Steel]Chomp|Clawitzer|SpellTag|MegaLauncher|Scald|Calm|16,17,,17,1,13||||50|,,,,,Rock]Venusaur||MuscleBand|Chlorophyll|MagicRoom|Serious|8,1,1,22,25,9|M|||50|,,,,,Stellar\"}",">p1 team 1, 2, 3, 4",">p2 team 5, 6, 2, 3",">p1 switch 3, move hurricane +1",">p2 switch 4, move magicroom",">p1 move wavecrash +1, move hurricane +2",">p2 switch 4, switch 3",">p1 move wavecrash +2, move substitute",">p2 switch 3, move psyshieldbash +1",">p1 move wavecrash +1, move substitute",">p2 switch 3, move infernalparade +1",">p1 switch 3, pass",">p1 move appleacid +1, switch 4",">p2 move scald +1, move psyshieldbash +2",">p1 move appleacid +2, move aerialace -1",">p2 move scald +1, move powergem -1",">p1 switch 4, pass",">p2 switch 4, pass",">p1 move hurricane -2, move aerialace +1",">p2 switch 3, move powergem +2",">p1 move hurricane +1, move lavaplume",">p2 move magicroom, move infernalparade -1",">p2 pass, switch 3",">p1 move hurricane -2, move aerialace +2",">p2 pass, move quash +2",">p1 move hurricane -2, move lavaplume",">p2 pass, move quash",">p1 pass, move tailslap +2",">p2 pass, move quash +2",">p1 pass, move lavaplume",">p2 pass, move quash +2",">p1 pass, move tailslap +2",">p2 pass, move quash +2",">p1 pass, move tailslap +2",">p2 pass, move quash"]}

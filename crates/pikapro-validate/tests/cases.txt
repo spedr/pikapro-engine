@@ -1,0 +1,1416 @@
+# Random mutated teams recorded by the differential fuzzer, one per new
+# problem kind (seeds 1,860,000-1,862,999):
+#   validate_fuzz --teams 3000 --seed 1860000 --record crates/pikapro-validate/tests/cases.txt --record-max 45
+# The expectations are Showdown's. Never edit an expect line by hand.
+
+case gen9vgc-1860000
+format gen9vgc2025regi
+set Ivysaur|Utility Umbrella|Chlorophyll|Quirky|50|234,198,59,1,3,12|31,31,31,31,31,31|False Swipe,Roar|Rock|||0|ev
+set Shuppet|Moon Ball|Cursed Body|Lax|50|190,148,107,65,0,0|31,31,31,31,31,31|Dazzling Gleam,Thief|Ground|||0|ev
+set Gimmighoul-Roaming||Run Away|Timid|50|213,24,125,77,68,0|31,31,31,31,31,31|Reflect,Hex|Poison|||0|ev
+set Ambipom|Power Band|Technician|Brave|50|218,28,162,52,21,1|31,31,31,31,31,31|Low Kick,Counter,Giga Impact|Normal|||0|ev
+set Espurr||Infiltrator|Bashful|50|199,198,1,40,9,26|31,31,31,31,31,31|Expanding Force,Sunny Day|Flying|||0|ev
+set Glastrier||Chilling Neigh|Mild|50|200,178,23,3,77,12|31,31,31,31,31,31|Hidden Power Poison|Poison|||0|ev
+expect Glastrier's move Hidden Power Poison does not exist in Gen 9.
+expect Glastrier can't learn Hidden Power Poison.
+played Ivysaur|Utility Umbrella|Chlorophyll|False Swipe,Roar||50|Rock
+played Shuppet|Moon Ball|Cursed Body|Dazzling Gleam,Thief||50|Ground
+played Gimmighoul-Roaming||Run Away|Reflect,Hex|N|50|Poison
+played Ambipom|Power Band|Technician|Low Kick,Counter,Giga Impact||50|Normal
+played Espurr||Infiltrator|Expanding Force,Sunny Day||50|Flying
+played Glastrier||Chilling Neigh|Hidden Power Poison|N|100|Poison
+end
+case gen9vgc-1860001
+format gen9vgc2025regi
+set Araquanid|Bright Powder|Water Absorb|Careful|50|228,206,60,1,7,1|31,31,31,31,31,31|Facade,Chilling Water|Steel|||0|ev
+set Kleavor||Swarm|Docile|50|22,5,55,158,228,205|31,31,31,31,31,31|Quick Attack,Trailblaze,Pounce|Ghost|||0|ev
+set Sprigatito|Maranga Berry|Overgrow|Relaxed|50|173,56,143,51,11,46|31,31,31,31,31,31|Seed Bomb,Scratch,Play Rough,Take Down|Ghost|||0|ev
+set Stunky||Stench|Naive|50|217,144,144,5,0,0|31,31,31,31,31,31|Slash|Fairy|||0|ev
+set Sobble|Fairy Feather|Sniper|Hasty|50|212,145,58,94,1,0|31,31,31,31,31,31|Ice Shard,Tearful Look|Fairy|||0|ev
+set Rookidee|Luxury Ball|Unnerve|Relaxed|50|139,105,187,11,43,23|31,31,31,31,31,31|Peck,Protect,Tera Blast,Hone Claws|Ghost|||0|ev
+expect Kleavor has 673 total EVs, which is more than this format's limit of 510.
+played Araquanid|Bright Powder|Water Absorb|Facade,Chilling Water||50|Steel
+played Kleavor||Swarm|Quick Attack,Trailblaze,Pounce||100|Ghost
+played Sprigatito|Maranga Berry|Overgrow|Seed Bomb,Scratch,Play Rough,Take Down||50|Ghost
+played Stunky||Stench|Slash||50|Fairy
+played Sobble|Fairy Feather|Sniper|Ice Shard,Tearful Look||50|Fairy
+played Rookidee|Luxury Ball|Unnerve|Peck,Protect,Tera Blast,Hone Claws||50|Ghost
+end
+case gen9vgc-1860003
+format gen9vgc2025regi
+set Orthworm||Sand Veil|Quirky|50|229,73,135,50,13,3|31,31,31,31,31,31|Mud Shot,Protect,Substitute,Tera Blast|Dragon|||0|ev
+set Uxie||Levitate|Careful|50|55,15,200,133,63,34|31,31,31,31,31,31|Thunder,Flail,Light Screen,Sunny Day|Ice|||0|ev
+set Girafarig||Sap Sipper|Docile|50|249,226,30,2,2,0|31,31,31,31,31,31|Stomp,Swift|Stellar|||0|ev
+set Iron Leaves|Prism Scale|Quark Drive|Timid|50|220,75,15,110,38,13|31,31,31,31,31,31|Aerial Ace|Psychic|||0|ev
+set Ogerpon|Room Service|Defiant|Naive|50|93,10,192,162,1,29|31,31,31,31,31,31|False Swipe,Throat Chop|Water|||0|ev
+set Electivire|Snowball|Motor Drive|Impish|50|255,251,2,0,0,0|31,31,31,31,31,31|Follow Me|Bug|||0|ev
+expect Ogerpon's Terastal type needs to be Grass.
+played Orthworm||Sand Veil|Mud Shot,Protect,Substitute,Tera Blast||50|Dragon
+played Uxie||Levitate|Thunder,Flail,Light Screen,Sunny Day|N|50|Ice
+played Girafarig||Sap Sipper|Stomp,Swift||50|Stellar
+played Iron Leaves|Prism Scale|Quark Drive|Aerial Ace|N|50|Psychic
+played Ogerpon|Room Service|Defiant|False Swipe,Throat Chop|F|100|Water
+played Electivire|Snowball|Motor Drive|Follow Me||50|Bug
+end
+case gen9vgc-1860004
+format gen9vgc2025regi
+set Petilil||Leaf Guard|Serious|50|160,147,109,27,50,6|31,31,31,31,31,31|Rest|Dark|||0|ev
+set Solgaleo|Kebia Berry|Full Metal Body|Lax|50|0,29,35,189,174,18|31,31,31,31,31,31|Flamethrower,Focus Blast|Bug|||0|ev
+set Minior-Indigo||Shields Down|Calm|50|213,36,236,12,7,5|31,31,31,31,31,31|Zen Headbutt,Sleep Talk,Stone Edge|Fairy|||0|ev
+set Larvesta|Friend Ball|Swarm|Hardy|50|250,139,14,82,21,1|31,31,31,31,31,31|Sleep Talk,Body Slam|Water|||0|ev
+set Masquerain||Unnerve|Lax|50|194,42,7,59,1,43|31,31,31,31,31,31|Solar Beam|Ground|||0|ev
+set Gogoat|Roseli Berry|Grass Pelt|Lax|50|117,81,193,91,24,3|31,31,31,31,31,31|Milk Drink|Grass|||0|ev
+played Petilil||Leaf Guard|Rest|F|50|Dark
+played Solgaleo|Kebia Berry|Full Metal Body|Flamethrower,Focus Blast|N|50|Bug
+played Minior-Indigo||Shields Down|Zen Headbutt,Sleep Talk,Stone Edge|N|50|Fairy
+played Larvesta|Friend Ball|Swarm|Sleep Talk,Body Slam||50|Water
+played Masquerain||Unnerve|Solar Beam||50|Ground
+played Gogoat|Roseli Berry|Grass Pelt|Milk Drink||50|Grass
+end
+case gen9vgc-1860005
+format gen9vgc2025regi
+set Magmar|Kasib Berry|Flame Body|Hasty|50|0,90,235,142,10,31|31,31,31,31,31,31|Thief,Flamethrower,Flare Blitz|Fairy|||0|ev
+set Arceus-Dark||Multitype|Mild|50|235,197,36,34,5,0|31,31,31,31,31,31|Bullet Seed|Flying|||0|ev
+set Gible||Rough Skin|Mild|50|55,20,232,50,74,2|31,31,31,31,31,31|Bulldoze,Tera Blast,Rock Slide|Flying|||0|ev
+set Dudunsparce-Three-Segment|Chilan Berry|Rattled|Rash|50|30,7,11,198,85,114|31,31,31,31,31,31|Stone Edge,Dig|Steel|||0|ev
+set Minior-Yellow||Shields Down|Mild|50|72,20,220,75,75,6|31,31,31,31,31,31|Stone Edge,Endure,Hidden Power Fighting|Electric|||0|ev
+set Quaquaval|Booster Energy|Torrent|Docile|50|236,245,24,3,1,0|31,31,31,31,31,31|Hydro Cannon,Hydro Pump,Water Pledge|Fighting|||0|ev
+expect Arceus needs to hold Dread Plate or Darkinium Z.
+expect (It will revert to its Normal forme if you remove the item or give it a different item.)
+expect Arceus (Arceus-Dark) is tagged Mythical, which is banned by Flat Rules.
+expect Minior's move Hidden Power Fighting does not exist in Gen 9.
+expect Minior-Yellow's move Hidden Power Fighting can't be transferred from Gen 7 to 9.
+played Magmar|Kasib Berry|Flame Body|Thief,Flamethrower,Flare Blitz||50|Fairy
+played Arceus-Dark||Multitype|Bullet Seed|N|100|Flying
+played Gible||Rough Skin|Bulldoze,Tera Blast,Rock Slide||50|Flying
+played Dudunsparce-Three-Segment|Chilan Berry|Rattled|Stone Edge,Dig||50|Steel
+played Minior-Yellow||Shields Down|Stone Edge,Endure,Hidden Power Fighting|N|100|Electric
+played Quaquaval|Booster Energy|Torrent|Hydro Cannon,Hydro Pump,Water Pledge||50|Fighting
+end
+case gen9vgc-1860006
+format gen9vgc2025regi
+set Girafarig|Lure Ball|Sap Sipper|Serious|50|0,0,0,0,0,0|31,31,31,31,31,31|Psychic Terrain,Trick Room|Rock|||0|ev
+set Sinistcha||Hospitality|Impish|50|251,152,15,26,15,19|31,31,31,31,31,31|Leaf Storm|Rock|||0|ev
+set Wartortle||Torrent|Hardy|50|149,201,92,40,24,1|31,31,31,31,31,31|Flail,Water Spout|Ground|||0|ev
+set Delibird|Water Stone|Vital Spirit|Bold|50|137,119,10,186,18,39|31,31,31,31,31,31|Swift|Poison|||0|ev
+set Growlithe|Punching Glove|Justified|Lax|50|36,223,86,45,43,73|31,31,31,31,31,31|Overheat,Fire Spin,Charm|Ice|||0|ev
+set Altaria||Cloud Nine|Jolly|50|140,15,187,105,42,10|31,31,31,31,31,31|Swift|Flying|||0|ev
+expect Girafarig has exactly 0 EVs - did you forget to EV it? (If this was intentional, add exactly 1 to one of your EVs, which won't change its stats but will tell us that it wasn't a mistake).
+played Girafarig|Lure Ball|Sap Sipper|Psychic Terrain,Trick Room||100|Rock
+played Sinistcha||Hospitality|Leaf Storm|N|50|Rock
+played Wartortle||Torrent|Flail,Water Spout||50|Ground
+played Delibird|Water Stone|Vital Spirit|Swift||50|Poison
+played Growlithe|Punching Glove|Justified|Overheat,Fire Spin,Charm||50|Ice
+played Altaria||Cloud Nine|Swift||50|Flying
+end
+case gen9vgc-1860007
+format gen9vgc2025regi
+set Torkoal||White Smoke|Calm|39|210,176,74,11,28,2|31,31,31,31,31,31|Earthquake,Weather Ball,Take Down,Hyper Beam|Fairy|||0|ev
+set Gurdurr|Micle Berry|Iron Fist|Quirky|50|97,183,208,19,0,0|31,31,31,31,31,31|Low Sweep,Detect|Grass|||0|ev
+set Squawkabilly-Blue|Black Sludge|Guts|Impish|50|134,229,78,69,0,0|31,31,31,31,31,31|Tera Blast,Swagger,Hyper Beam|Electric|||0|ev
+set Poltchageist||Hospitality|Careful|50|4,25,126,43,230,49|31,31,31,31,31,31|Rest,Calm Mind,Leaf Storm|Steel|||0|ev
+set Lopunny-Mega|Lopunnite|Scrappy|Bold|50|184,130,172,19,5,0|31,31,31,31,31,31||Bug|||0|ev
+set Noctowl|Loaded Dice|Insomnia|Timid|50|173,210,42,35,49,1|31,31,31,31,31,31|Defog,Nasty Plot,Imprison|Ground|||0|ev
+expect Lopunny (Lopunny-Mega) does not exist in Gen 9.
+expect Lopunny's item Lopunnite does not exist in Gen 9.
+expect Lopunny-Mega has no moves (it must have at least one to be usable).
+played Torkoal||White Smoke|Earthquake,Weather Ball,Take Down,Hyper Beam||50|Fairy
+played Gurdurr|Micle Berry|Iron Fist|Low Sweep,Detect||50|Grass
+played Squawkabilly-Blue|Black Sludge|Guts|Tera Blast,Swagger,Hyper Beam||50|Electric
+played Poltchageist||Hospitality|Rest,Calm Mind,Leaf Storm|N|50|Steel
+played Lopunny|Lopunnite|Cute Charm|||100|Bug
+played Noctowl|Loaded Dice|Insomnia|Defog,Nasty Plot,Imprison||50|Ground
+end
+case gen9vgc-1860009
+format gen9vgc2025regi
+set Drakloak|Soft Sand|Infiltrator|Bashful|50|216,165,20,9,36,26|31,31,31,31,31,31|Breaking Swipe,Dragon Rush|Bug|||0|ev
+set Doduo|Payapa Berry|Early Bird|Hasty|50|219,220,26,36,0,4|31,31,31,31,31,31|Mud-Slap,Uproar,Tera Blast,Flail|Water|||0|ev
+set Meditite|Sitrus Berry|Pure Power|Naive|50|69,52,244,78,20,13|31,31,31,31,31,31|Low Kick,Upper Hand,Reflect,Fling|Ghost|||0|ev
+set Joltik|Clear Amulet|Compound Eyes|Naughty|50|154,162,111,54,19,1|31,31,31,31,31,31|Bug Bite,Protect,Rest,Wild Charge|Dragon|||0|ev
+set Zacian|Dubious Disc|Intrepid Sword|Gentle|50|28,42,65,50,18,230|31,31,31,31,31,31|Wild Charge|Fire|||0|ev
+set Slowking-Galar||Curious Medicine|Calm|50|183,230,35,40,13,1|31,31,31,31,31,31|Confusion|Ground|||0|ev
+played Drakloak|Soft Sand|Infiltrator|Breaking Swipe,Dragon Rush||50|Bug
+played Doduo|Payapa Berry|Early Bird|Mud-Slap,Uproar,Tera Blast,Flail||50|Water
+played Meditite|Sitrus Berry|Pure Power|Low Kick,Upper Hand,Reflect,Fling||50|Ghost
+played Joltik|Clear Amulet|Compound Eyes|Bug Bite,Protect,Rest,Wild Charge||50|Dragon
+played Zacian|Dubious Disc|Intrepid Sword|Wild Charge|N|50|Fire
+played Slowking-Galar||Curious Medicine|Confusion||50|Ground
+end
+case gen9vgc-1860014
+format gen9vgc2025regi
+set Zekrom||Teravolt|Quirky|50|235,179,81,13,2,0|31,31,31,31,31,31|Bolt Strike,Breaking Swipe|Flying|||0|ev
+set Reshiram||Turboblaze|Quiet|50|166,107,18,188,6,22|31,31,31,31,31,31|Ancient Power,Hyper Beam,Focus Blast,Crunch|Fairy|||0|ev
+set Kyurem|Leaf Stone|Pressure|Brave|50|78,220,5,75,51,39|31,31,31,31,31,31|Swift,Endure,Reflect|Flying|||0|ev
+set Melmetal|Power Anklet|Iron Fist|Timid|50|64,119,147,83,41,26|31,31,31,31,31,31||Ghost|||0|ev
+set Slakoth|Dawn Stone|Truant|Sassy|50|57,150,199,102,0,1|31,31,31,31,31,31|Yawn|Ice|||0|ev
+set Zacian-Crowned|Rusted Sword|Intrepid Sword|Sassy|50|45,70,198,113,82,1|31,31,31,31,31,31|False Swipe,Bite,Behemoth Blade|Dragon|||0|ev
+expect Melmetal is tagged Mythical, which is banned by Flat Rules.
+expect Melmetal has no moves (it must have at least one to be usable).
+expect You can only use up to two restricted Pokémon (you have: Zekrom, Reshiram, Kyurem, Zacian)
+played Zekrom||Teravolt|Bolt Strike,Breaking Swipe|N|50|Flying
+played Reshiram||Turboblaze|Ancient Power,Hyper Beam,Focus Blast,Crunch|N|50|Fairy
+played Kyurem|Leaf Stone|Pressure|Swift,Endure,Reflect|N|50|Flying
+played Melmetal|Power Anklet|Iron Fist||N|100|Ghost
+played Slakoth|Dawn Stone|Truant|Yawn||50|Ice
+played Zacian|Rusted Sword|Intrepid Sword|False Swipe,Bite,Iron Head|N|50|Dragon
+end
+case gen9vgc-1860015
+format gen9vgc2025regi
+set Numel||Simple|Relaxed|24|1,132,192,142,41,0|31,31,31,31,31,31|Earth Power,Dig,Bulldoze,Curse|Poison|||0|ev
+set Swalot|Ribbon Sweet|Gluttony|Calm|50|233,142,75,7,9,39|31,31,31,31,31,31|Acid Spray|Psychic|||0|ev
+set Perrserker|Ultra Ball|Tough Claws|Lonely|50|165,226,23,59,36,0|31,31,31,31,31,31|Thrash,Dig|Rock|||0|ev
+set Gogoat|Ribbon Sweet|Sap Sipper|Mild|0|85,12,86,107,133,5|31,31,31,31,31,31|Play Rough|Fire|||0|ev
+set Kilowattrel|Fire Stone|Wind Power|Quiet|50|24,77,181,150,78,0|31,31,31,31,31,31|Swallow,Stockpile,Agility|Fighting|||0|ev
+set Mamoswine|Reaper Cloth|Oblivious|Gentle|50|40,144,19,234,71,2|31,31,31,31,31,31|Avalanche,Amnesia,Throat Chop|Fairy|||0|ev
+expect You are limited to 1 of each item by Item Clause.
+expect (You have more than 1 Ribbon Sweet)
+played Numel||Simple|Earth Power,Dig,Bulldoze,Curse||50|Poison
+played Swalot|Ribbon Sweet|Gluttony|Acid Spray||50|Psychic
+played Perrserker|Ultra Ball|Tough Claws|Thrash,Dig||50|Rock
+played Gogoat|Ribbon Sweet|Sap Sipper|Play Rough||50|Fire
+played Kilowattrel|Fire Stone|Wind Power|Swallow,Stockpile,Agility||50|Fighting
+played Mamoswine|Reaper Cloth|Oblivious|Avalanche,Amnesia,Throat Chop||50|Fairy
+end
+case gen9vgc-1860020
+format gen9vgc2025regi
+set Frigibax|Rare Bone|Ice Body|Timid|50|20,197,99,180,13,1|31,31,31,31,31,31|Icicle Crash|Stellar|||0|ev
+set Ambipom|Mystic Water|Technician|Docile|50|68,65,67,36,106,13|31,31,31,31,31,31|Thunder|Normal|||0|ev
+set Trevenant|Air Balloon|Frisk|Quiet|50|50,200,89,157,7,7|31,31,31,31,31,31|Calm Mind|Dark|||0|ev
+set Chandelure|Smooth Rock|Vessel of Ruin|Sassy|50|151,234,73,11,16,18|31,31,31,31,31,31|Flamethrower,Psych Up|Stellar|||0|ev
+set Furret|Net Ball|Frisk|Brave|50|39,114,16,116,215,5|31,31,31,31,31,31|Follow Me,Fire Punch,Focus Blast|Water|||0|ev
+set Scatterbug||Shield Dust|Careful|50|127,2,189,129,58,4|31,31,31,31,31,31|Stun Spore,Tera Blast|Ground|||0|ev
+expect Chandelure can't have Vessel of Ruin.
+played Frigibax|Rare Bone|Ice Body|Icicle Crash||50|Stellar
+played Ambipom|Mystic Water|Technician|Thunder||50|Normal
+played Trevenant|Air Balloon|Frisk|Calm Mind||50|Dark
+played Chandelure|Smooth Rock|Vessel of Ruin|Flamethrower,Psych Up||100|Stellar
+played Furret|Net Ball|Frisk|Follow Me,Fire Punch,Focus Blast||50|Water
+played Scatterbug||Shield Dust|Stun Spore,Tera Blast||50|Ground
+end
+case gen9vgc-1860026
+format gen9vgc2025regi
+set Heracross|Masterpiece Teacup|Swarm|Adamant|50|89,207,45,20,77,30|31,31,31,31,31,31|Bug Bite,Megahorn,Fury Attack,Trailblaze|Steel|||0|ev
+set Charmander|Ice Stone|Blaze|Sassy|50|84,105,24,86,100,103|31,31,31,31,31,31|Smokescreen|Rock|||0|ev
+set Basculin||Adaptability|Naughty|50|44,48,8,68,51,89|31,31,31,31,31,31|Reversal,Icy Wind,Liquidation|Bug|||0|ev
+set Zangoose||Toxic Boost|Quirky|50|201,245,43,14,0,3|31,31,31,31,31,31|Helping Hand,Brick Break,Protect,Surf|Fighting|||0|ev
+set Torracat|Utility Umbrella|Blaze|Rash|50|65,98,3,196,23,72|31,31,31,31,31,31|Double-Edge,Sunny Day,Body Slam,Endure|Dark|||0|ev
+set Thundurus||Prankster|Serious|50|82,5,59,130,214,20|27,31,31,2,9,31|Sludge Wave,Hyper Beam,Foul Play|Electric|||0|ev
+set Braixen|Assault Vest|Magician|Lonely|50|202,112,77,42,21,8|31,31,31,31,31,31|Trick Room,Light Screen,Skill Swap,Facade|Bug|||0|ev
+expect You may only bring up to 6 Pokémon (your team has 7).
+played Heracross|Masterpiece Teacup|Swarm|Bug Bite,Megahorn,Fury Attack,Trailblaze||50|Steel
+played Charmander|Ice Stone|Blaze|Smokescreen||50|Rock
+played Basculin||Adaptability|Reversal,Icy Wind,Liquidation||50|Bug
+played Zangoose||Toxic Boost|Helping Hand,Brick Break,Protect,Surf||50|Fighting
+played Torracat|Utility Umbrella|Blaze|Double-Edge,Sunny Day,Body Slam,Endure||50|Dark
+played Thundurus||Prankster|Sludge Wave,Hyper Beam,Foul Play|M|50|Electric
+played Braixen|Assault Vest|Magician|Trick Room,Light Screen,Skill Swap,Facade||50|Bug
+end
+case gen9vgc-1860031
+format gen9vgc2025regi
+set Fletchinder|Up-Grade|Flame Body|Bashful|50|56,172,201,64,17,0|31,31,31,31,31,31|Endure,Take Down,Substitute,Rest|Dark|||0|ev
+set Dewpider||Water Absorb|Rash|50|193,187,11,13,55,25|31,31,31,31,31,31|Rest,Lunge,Infestation,Aqua Ring|Psychic|||0|ev
+set Plusle|Custap Berry|Plus|Calm|50|136,212,84,40,6,9|31,31,31,31,31,31|Sing|Fighting|||0|ev
+set Cinderace|Griseous Core|Libero|Naughty|50|77,183,115,17,118,0|31,31,31,31,31,31|Weather Ball,Court Change|Dragon|||0|ev
+set Scrafty|Destiny Knot|Intimidate|Quirky|50|49,131,217,31,4,40|31,31,31,31,31,31|Rain Dance,Poison Jab,Fling,Facade|Rock|||0|ev
+set Scrafty|Cornerstone Mask|Intimidate|Mild|50|1,211,174,91,5,2|31,31,31,31,31,31|Tackle,Gastro Acid,Circle Throw|Ghost|||0|ev
+expect Scrafty can't learn Tackle.
+expect You are limited to one of each Pokémon by Species Clause.
+expect (You have more than one Scrafty)
+played Fletchinder|Up-Grade|Flame Body|Endure,Take Down,Substitute,Rest||50|Dark
+played Dewpider||Water Absorb|Rest,Lunge,Infestation,Aqua Ring||50|Psychic
+played Plusle|Custap Berry|Plus|Sing||50|Fighting
+played Cinderace|Griseous Core|Libero|Weather Ball,Court Change||50|Dragon
+played Scrafty|Destiny Knot|Intimidate|Rain Dance,Poison Jab,Fling,Facade||50|Rock
+played Scrafty|Cornerstone Mask|Intimidate|Tackle,Gastro Acid,Circle Throw||100|Ghost
+end
+case gen9vgc-1860035
+format gen9vgc2025regi
+set Crocalor||Unaware|Gentle|50|45,151,104,91,98,6|31,31,31,31,31,31|Leer,Facade,Yawn,Overheat|Rock|||0|ev
+set Beldum||No Ability|Gentle|50|27,98,116,145,35,45|31,31,31,31,31,31|Steel Beam,Iron Defense,Iron Head|Ground|||0|ev
+set Keldeo-Resolute||Justified|Relaxed|50|38,8,216,237,10,1|31,31,31,31,31,31|Hydro Pump,Leer,Surf|Dragon|||0|ev
+set Pawmo|Maranga Berry|Iron Fist|Serious|50|229,252,13,0,12,2|31,31,31,31,31,31|Thief,Thunder Fang,Metal Claw,Sleep Talk|Poison|||0|ev
+set Shroodle|Choice Specs|Pickpocket|Hasty|50|201,134,7,27,39,89|31,31,31,31,31,31|Venoshock,Psych Up|Stellar|||0|ev
+set Inkay|Friend Ball|Infiltrator|Rash|50|158,212,77,6,30,2|31,31,31,31,31,31|Rest,Expanding Force|Dragon|||0|ev
+expect Beldum needs to have an ability.
+expect Beldum's ability No Ability does not exist in Gen 9.
+expect Keldeo needs to know the move Secret Sword to be in its Resolute forme.
+expect (It will revert to its Ordinary forme if it forgets the move.)
+expect Keldeo (Keldeo-Resolute) is tagged Mythical, which is banned by Flat Rules.
+played Crocalor||Unaware|Leer,Facade,Yawn,Overheat||50|Rock
+played Beldum||No Ability|Steel Beam,Iron Defense,Iron Head|N|100|Ground
+played Keldeo-Resolute||Justified|Hydro Pump,Leer,Surf|N|100|Dragon
+played Pawmo|Maranga Berry|Iron Fist|Thief,Thunder Fang,Metal Claw,Sleep Talk||50|Poison
+played Shroodle|Choice Specs|Pickpocket|Venoshock,Psych Up||50|Stellar
+played Inkay|Friend Ball|Infiltrator|Rest,Expanding Force||50|Dragon
+end
+case gen9vgc-1860049
+format gen9vgc2025regi
+set Koffing|Bright Powder|Levitate|Modest|50|252,90,119,16,22,3|31,31,31,31,31,31|Toxic Spikes|Water|||0|ev
+set Growlithe|Sun Stone|Intimidate|Docile|50|96,148,237,12,3,8|31,31,31,31,31,31|Crunch|Rock|||0|ev
+set Shaymin||Natural Cure|Gentle|50|224,120,67,87,7,4|31,9,4,8,29,14|Endeavor,Baton Pass,Petal Blizzard|Ghost|||0|ev
+set Minior-Indigo||Shields Down|Impish|50|155,188,13,22,106,7|31,31,31,31,31,31|Earthquake,Ancient Power,Giga Impact,Rest|Psychic|||0|ev
+set Alomomola|Shed Shell|Hydration|Calm|50|53,39,156,46,196,15|31,31,31,31,31,31|Zen Headbutt,Wide Guard|Ice|||0|ev
+set Blissey|Grepa Berry|Healer|Gentle|50|142,72,55,13,74,129|31,31,31,31,31,31|Fire Punch,Charm|Grass|||0|ev
+expect Shaymin is tagged Mythical, which is banned by Flat Rules.
+expect Shaymin must have at least three perfect IVs because it's a legendary in Gen 6 or later.
+expect Additionally, it failed to validate as a Pokemon from Pokemon GO because:
+expect Shaymin must have at least 21 IVs in non-Speed stats to be from Pokemon GO.
+expect Shaymin must have odd non-Speed IVs to be from Pokemon GO.
+expect Shaymin's Atk and Sp. Atk IVs must match to be from Pokemon GO.
+expect Shaymin's Def and Sp. Def IVs must match to be from Pokemon GO.
+played Koffing|Bright Powder|Levitate|Toxic Spikes||50|Water
+played Growlithe|Sun Stone|Intimidate|Crunch||50|Rock
+played Shaymin||Natural Cure|Endeavor,Baton Pass,Petal Blizzard|N|100|Ghost
+played Minior-Indigo||Shields Down|Earthquake,Ancient Power,Giga Impact,Rest|N|50|Psychic
+played Alomomola|Shed Shell|Hydration|Zen Headbutt,Wide Guard||50|Ice
+played Blissey|Grepa Berry|Healer|Fire Punch,Charm|F|50|Grass
+end
+case gen9vgc-1860061
+format gen9vgc2025regi
+set Geodude-Alola|Wacan Berry|Magnet Pull|Quirky|50|26,224,60,23,106,23|31,31,31,31,31,31|Stone Edge,Rock Throw,High Horsepower,Fling|Bug|||0|ev
+set Rellor|Galarica Wreath|Compound Eyes|Bashful|50|44,127,50,166,52,61|31,31,31,31,31,31|Memento|Rock|||0|ev
+set Zarude|Rare Bone|Leaf Guard|Serious|50|189,30,150,57,23,4|31,31,31,21,31,31|Bullet Seed,Body Slam|Fairy|||1|ev
+set Lycanroc-Midnight||Vital Spirit|Hardy|50|70,192,114,12,93,17|31,31,31,31,31,31|Sucker Punch,Frustration,Iron Head,Thunder Fang|Dark|||0|ev
+set Vibrava|Miracle Seed|Levitate|Timid|50|42,140,14,117,159,14|31,31,31,31,31,31|Defog,Dragon Claw,Aerial Ace,Supersonic|Stellar|||0|ev
+set Snorunt|Maranga Berry|Inner Focus|Brave|50|81,210,19,77,5,52|31,31,31,31,31,31|Light Screen,Ice Beam,Hex,Rollout|Dragon|||0|ev
+expect Zarude is tagged Mythical, which is banned by Flat Rules.
+expect Zarude is only obtainable from events - it needs to match one of its events:
+expect Zarude must not be shiny to be from its event #1.
+expect Zarude must not be shiny to be from its event #2.
+expect Additionally, it failed to validate as a Pokemon from Pokemon GO because:
+expect Shiny Zarude is not obtainable from Pokemon GO.
+expect Lycanroc's move Frustration does not exist in Gen 9.
+expect Lycanroc-Midnight's move Frustration can't be transferred from Gen 7 to 9.
+expect Vibrava's move Defog can't be transferred from Gen 7 to 9.
+played Geodude-Alola|Wacan Berry|Magnet Pull|Stone Edge,Rock Throw,High Horsepower,Fling||50|Bug
+played Rellor|Galarica Wreath|Compound Eyes|Memento||50|Rock
+played Zarude|Rare Bone|Leaf Guard|Bullet Seed,Body Slam|N|100|Fairy
+played Lycanroc-Midnight||Vital Spirit|Sucker Punch,Frustration,Iron Head,Thunder Fang||100|Dark
+played Vibrava|Miracle Seed|Levitate|Defog,Dragon Claw,Aerial Ace,Supersonic||100|Stellar
+played Snorunt|Maranga Berry|Inner Focus|Light Screen,Ice Beam,Hex,Rollout||50|Dragon
+end
+case gen9vgc-1860071
+format gen9vgc2025regi
+set Vigoroth|Ribbon Sweet|Vital Spirit|Hasty|50|234,38,149,47,10,32|31,31,31,31,31,31|Helping Hand|Fairy|||0|ev
+set Poliwhirl|Safety Goggles|Damp|Hardy|50|27,98,83,136,136,18|31,31,31,31,31,31|Blizzard,Water Gun|Rock|||0|ev
+set Latios||Levitate|Bashful|50|111,191,8,92,9,91|31,31,31,31,31,31|Confusion,Water Pulse,Sunny Day|Normal|||0|ev
+set Sandaconda|Punching Glove|Sand Veil|Serious|50|155,169,182,4,0,0|31,31,31,31,31,31|Poison Tail,Hyper Beam,Wrap|Water|||0|ev
+set Nosepass||Magnet Pull|Docile|50|125,64,164,120,34,3|31,31,31,31,31,31|Block,Head Smash|Grass|||0|ev
+set Blastoise||Torrent|Brave|50|20,231,68,14,139,30|31,31,31,31,31,31|Substitute,Facade,Dark Pulse,Substitute|Ice|||0|ev
+expect Blastoise has multiple copies of Substitute.
+played Vigoroth|Ribbon Sweet|Vital Spirit|Helping Hand||50|Fairy
+played Poliwhirl|Safety Goggles|Damp|Blizzard,Water Gun||50|Rock
+played Latios||Levitate|Confusion,Water Pulse,Sunny Day|M|50|Normal
+played Sandaconda|Punching Glove|Sand Veil|Poison Tail,Hyper Beam,Wrap||50|Water
+played Nosepass||Magnet Pull|Block,Head Smash||50|Grass
+played Blastoise||Torrent|Substitute,Facade,Dark Pulse,Substitute||100|Ice
+end
+case gen9vgc-1860079
+format gen9vgc2025regi
+set Tinkatink||Own Tempo|Hasty|50|13,251,94,26,125,0|31,31,31,31,31,31|Draining Kiss,Ice Hammer,Fling,Feint|Stellar|||0|ev
+set Houndour|Mind Plate|Unnerve|Mild|50|7,172,207,113,3,7|31,31,31,31,31,31|Thunder Fang,Overheat,Spite,Inferno|Stellar|||0|ev
+set Greninja-Bond|Mystic Water|Battle Bond|Serious|50|207,32,231,23,7,3|31,31,31,31,31,31|Surf,Endure,Ice Punch|Fire|||0|ev
+set Hariyama||Sheer Force|Modest|50|47,186,62,134,47,19|31,22,4,31,16,29|Zen Headbutt,Mud-Slap,Whirlwind,Close Combat|Flying|||0|ev
+set Dusclops||Frisk|Lax|50|241,105,48,13,0,5|31,31,31,31,31,31|Focus Punch,Imprison,Endure,Payback|Steel|||0|ev
+set Oinkologne||Thick Fat|Lax|50|134,131,137,5,22,33|31,31,31,31,31,31|Rest|Electric|||0|ev
+expect Greninja-Bond is banned by Flat Rules.
+played Tinkatink||Own Tempo|Draining Kiss,Ice Hammer,Fling,Feint|F|50|Stellar
+played Houndour|Mind Plate|Unnerve|Thunder Fang,Overheat,Spite,Inferno||50|Stellar
+played Greninja-Bond|Mystic Water|Battle Bond|Surf,Endure,Ice Punch|M|100|Fire
+played Hariyama||Sheer Force|Zen Headbutt,Mud-Slap,Whirlwind,Close Combat||50|Flying
+played Dusclops||Frisk|Focus Punch,Imprison,Endure,Payback||50|Steel
+played Oinkologne||Thick Fat|Rest|M|50|Electric
+end
+case gen9vgc-1860103
+format gen9vgc2025regi
+set Eternatus|Chople Berry|Pressure|Rash|50|176,210,71,0,51,1|31,31,31,31,31,31|Dragon Dance,Dynamax Cannon,Shadow Ball|Dark|||0|ev
+set Cosmog|Roseli Berry|Unaware|Modest|50|190,182,86,9,31,8|31,31,31,31,31,31|Teleport|Stellar|||0|ev
+set Terapagos||Tera Shift|Bashful|50|172,15,10,150,108,29|31,31,31,31,31,31|Sunny Day,Solar Beam,Weather Ball,Stored Power|Stellar|||0|ev
+set Primeape|Splash Plate|Defiant|Sassy|50|1,125,105,35,70,18|31,31,31,31,31,31|Endeavor,Low Sweep|Dark|||0|ev
+set Mesprit|Sweet Apple|Levitate|Modest|24|249,159,38,30,6,13|31,31,31,31,31,31|Psybeam,Substitute,Dazzling Gleam,Flatter|Fairy|||0|ev
+set Weavile||Pickpocket|Bashful|8|224,251,19,2,11,3|31,31,31,31,31,31|Avalanche,Ice Shard,Bite,Foresight|Dark|||0|ev
+expect Mesprit's move Flatter is learned at level 56.
+expect Weavile's move Foresight does not exist in Gen 9.
+expect Weavile's move Foresight can't be transferred from Gen 7 to 9.
+expect You can only use up to two restricted Pokémon (you have: Eternatus, Cosmog, Terapagos)
+played Eternatus|Chople Berry|Pressure|Dragon Dance,Dynamax Cannon,Shadow Ball|N|50|Dark
+played Cosmog|Roseli Berry|Unaware|Teleport|N|50|Stellar
+played Terapagos||Tera Shift|Sunny Day,Solar Beam,Weather Ball,Stored Power|M|50|Stellar
+played Primeape|Splash Plate|Defiant|Endeavor,Low Sweep||50|Dark
+played Mesprit|Sweet Apple|Levitate|Psybeam,Substitute,Dazzling Gleam,Flatter|N|24|Fairy
+played Weavile||Pickpocket|Avalanche,Ice Shard,Bite,Foresight||8|Dark
+end
+case gen9vgc-1860112
+format gen9vgc2025regi
+set Darkrai|Roseli Berry|Bad Dreams|Bold|10|76,14,118,161,28,109|31,31,31,12,31,31|Focus Punch,Endure|Dragon|Regidrago||0|ev
+set Froakie|Babiri Berry|Torrent|Brave|50|231,183,65,3,11,14|31,31,31,31,31,31|Thief,Dig,Mud Shot,U-turn|Poison|||0|ev
+set Totodile|Chilan Berry|Sheer Force|Rash|50|84,103,199,37,7,48|31,31,31,31,31,31|Water Pledge,Mud-Slap,Endeavor,Counter|Rock|||0|ev
+set Mesprit||Levitate|Bashful|50|184,201,117,5,2,1|31,31,31,31,31,31|Flatter|Psychic|||0|ev
+set Armarouge||Flash Fire|Modest|50|89,54,120,142,104,0|31,31,31,31,31,31|Confuse Ray|Ice|||0|ev
+set Feebas||Oblivious|Serious|50|13,121,212,2,69,7|31,31,31,31,31,31|Dragon Breath,Mist,Captivate,Rain Dance|Ground|Regidrago||0|ev
+expect Regidrago (Darkrai) is tagged Mythical, which is banned by Flat Rules.
+expect Darkrai is only obtainable from events - it needs to match one of its events:
+expect Regidrago (Darkrai) must be at least level 40 to be from its event #1.
+expect Regidrago (Darkrai) must be at least level 50 to be from its event #2.
+expect Regidrago (Darkrai) must be at least level 50 to be from its event #3.
+expect Regidrago (Darkrai) must be at least level 50 to be from its event #4.
+expect Regidrago (Darkrai) must be at least level 50 to be from its event #5.
+expect Regidrago (Darkrai) must be at least level 50 to be from its event #6.
+expect Regidrago (Darkrai) must be at least level 100 to be from its event #7.
+expect Regidrago (Darkrai) must be at least level 50 to be from its event #8.
+expect Regidrago (Darkrai) must be at least level 50 to be from its event #9.
+expect Regidrago (Darkrai) must be at least level 70 to be from its event #10.
+expect Regidrago (Darkrai) must be at least level 50 to be from its event #11.
+expect Additionally, it failed to validate as a Pokemon from Pokemon GO because:
+expect Darkrai must be at least level 15 to be from Pokemon GO.
+expect Darkrai must have at least 21 IVs in non-Speed stats to be from Pokemon GO.
+expect Darkrai must have odd non-Speed IVs to be from Pokemon GO.
+expect Darkrai's Atk and Sp. Atk IVs must match to be from Pokemon GO.
+expect Regidrago (Darkrai) must not be nicknamed a different Pokémon species than what it actually is.
+expect Regidrago's move Captivate does not exist in Gen 9.
+expect Regidrago (Feebas)'s move Captivate can't be transferred from Gen 7 to 9.
+expect Regidrago (Feebas) must not be nicknamed a different Pokémon species than what it actually is.
+expect Your Pokémon must have different nicknames.
+expect (You have more than one Regidrago)
+played Darkrai|Roseli Berry|Bad Dreams|Focus Punch,Endure|N|10|Dragon
+played Froakie|Babiri Berry|Torrent|Thief,Dig,Mud Shot,U-turn||50|Poison
+played Totodile|Chilan Berry|Sheer Force|Water Pledge,Mud-Slap,Endeavor,Counter||50|Rock
+played Mesprit||Levitate|Flatter|N|50|Psychic
+played Armarouge||Flash Fire|Confuse Ray||50|Ice
+played Feebas||Oblivious|Dragon Breath,Mist,Captivate,Rain Dance||100|Ground
+end
+case gen9vgc-1860115
+format gen9vgc2025regi
+set Pikachu-Partner|Earth Plate|Static|Naughty|50|104,195,150,22,27,8|31,31,31,31,31,31|Trailblaze,Electroweb,Knock Off|Psychic|||1|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+played Pikachu-Partner|Earth Plate|Static|Trailblaze,Electroweb,Knock Off|M|50|Psychic
+end
+case gen9vgc-1860122
+format gen9vgc2025regi
+set Pikachu|Roseli Berry|Static|Timid|50|95,125,195,35,1,24|31,31,31,31,31,31|Thief|Fairy|||0|ev
+set Arceus|Insect Plate|Multitype|Hasty|50|80,239,144,27,11,8|31,31,31,31,31,31|Liquidation,Judgment,Dark Pulse|Rock|||0|ev
+set Barboach|Custap Berry|Anticipation|Brave|50|45,148,215,100,1,1|31,31,31,31,31,31|Sunny Day|Ground|||0|ev
+set Slowbro|Booster Energy|Oblivious|Serious|50|47,88,89,61,135,67|31,31,31,31,31,31|Stomp,Stored Power,Avalanche,Psyshock|Fighting|||0|ev
+set Voltorb|Heal Ball|Soundproof|Jolly|50|94,240,172,1,2,0|31,31,31,31,31,31|Spark,Take Down|Electric|||0|ev
+set Gogoat|Love Ball|Grass Pelt|Modest|29|159,122,45,79,2,101|31,31,31,31,31,31|Leaf Blade,Milk Drink,Earthquake|Flying|||0|ev
+expect Arceus (Arceus-Bug) is tagged Mythical, which is banned by Flat Rules.
+expect Gogoat must be at least level 32 to be evolved.
+played Pikachu|Roseli Berry|Static|Thief||50|Fairy
+played Arceus-Bug|Insect Plate|Multitype|Liquidation,Judgment,Dark Pulse|N|100|Rock
+played Barboach|Custap Berry|Anticipation|Sunny Day||50|Ground
+played Slowbro|Booster Energy|Oblivious|Stomp,Stored Power,Avalanche,Psyshock||50|Fighting
+played Voltorb|Heal Ball|Soundproof|Spark,Take Down|N|50|Electric
+played Gogoat|Love Ball|Grass Pelt|Leaf Blade,Milk Drink,Earthquake||29|Flying
+end
+case gen9vgc-1860155
+format gen9vgc2025regi
+set Wooper-Paldea|Cornerstone Mask|Poison Point|Brave|50|229,172,41,61,2,3|31,31,31,31,31,31|After You,Stomping Tantrum|Ice|||0|ev
+set Meloetta-Pirouette||Serene Grace|Sassy|50|139,104,239,0,8,15|31,31,31,31,31,31|Facade|Dragon|||0|ev
+set Alcremie-Ruby-Cream|Icicle Plate|Aroma Veil|Serious|57|15,101,71,214,5,79|31,31,31,31,31,31|Entrainment,Attract,Dazzling Gleam,Acid Armor|Stellar|||0|ev
+set Squawkabilly-Yellow|Lustrous Globe|Sheer Force|Sassy|50|189,116,112,29,10,7|31,31,31,31,31,31|Helping Hand,Giga Impact,Brave Bird,Thief|Flying|||0|ev
+set Psyduck||Swift Swim|Hardy|50|191,215,80,12,5,7|31,31,31,31,31,31|Wonder Room,Vacuum Wave,Psyshock|Grass|||0|ev
+set Ludicolo||Stakeout|Calm|50|100,204,88,68,18,16|31,31,31,31,31,31|Body Slam,Bubble Beam,Water Pulse|Electric|||0|ev
+expect Meloetta-Pirouette transforms in-battle with Relic Song, please fix its moves.
+expect Meloetta is tagged Mythical, which is banned by Flat Rules.
+expect Ludicolo can't have Stakeout.
+played Wooper-Paldea|Cornerstone Mask|Poison Point|After You,Stomping Tantrum||50|Ice
+played Meloetta||Serene Grace|Facade|N|100|Dragon
+played Alcremie-Ruby-Cream|Icicle Plate|Aroma Veil|Entrainment,Attract,Dazzling Gleam,Acid Armor|F|50|Stellar
+played Squawkabilly-Yellow|Lustrous Globe|Sheer Force|Helping Hand,Giga Impact,Brave Bird,Thief||50|Flying
+played Psyduck||Swift Swim|Wonder Room,Vacuum Wave,Psyshock||50|Grass
+played Ludicolo||Stakeout|Body Slam,Bubble Beam,Water Pulse||100|Electric
+end
+case gen9vgc-1860172
+format gen9vgc2025regi
+set Hoopa-Unbound||Magician|Naive|50|177,183,104,12,7,16|31,31,31,31,31,31|Thunder Punch,Sandstorm,Energy Ball,Hyperspace Hole|Electric|||0|ev
+set Tarountula||Stakeout|Calm|50|134,194,57,23,23,47|31,31,31,31,31,31|Rest,Thief,Spikes|Stellar|||0|ev
+set Drizzile||Sniper|Bashful|50|185,221,104,0,0,0|31,31,31,31,31,31|Sucker Punch,Surf,Mud Shot|Steel|||0|ev
+set Wishiwashi-School||Schooling|Bashful|50|190,177,43,30,38,32|31,31,31,31,31,31||Fairy|||0|ev
+set Floatzel|Power Belt|Water Veil|Hardy|50|106,35,22,28,227,25|31,31,31,31,31,31|Giga Impact,Low Kick,Substitute|Normal|||0|ev
+set Slowbro||Own Tempo|Serious|50|217,115,21,103,36,15|31,31,31,31,31,31|Water Gun|Poison|||0|ev
+expect In Generation 9, Hoopa-Unbound cannot run Hyperspace Hole because it gets replaced with Hyperspace Fury upon changing forme.
+expect Hoopa (Hoopa-Unbound) is tagged Mythical, which is banned by Flat Rules.
+expect Wishiwashi does not exist in Gen 9.
+expect Wishiwashi-School has no moves (it must have at least one to be usable).
+played Hoopa-Unbound||Magician|Thunder Punch,Sandstorm,Energy Ball,Hyperspace Hole|N|100|Electric
+played Tarountula||Stakeout|Rest,Thief,Spikes||50|Stellar
+played Drizzile||Sniper|Sucker Punch,Surf,Mud Shot||50|Steel
+played Wishiwashi||Schooling|||100|Fairy
+played Floatzel|Power Belt|Water Veil|Giga Impact,Low Kick,Substitute||50|Normal
+played Slowbro||Own Tempo|Water Gun||50|Poison
+end
+case gen9vgc-1860179
+format gen9vgc2025regi
+set Sandslash-Alola|Nest Ball|Snow Cloak|Sassy|50|25,236,73,137,0,20|31,31,31,31,31,31|Fury Swipes,Triple Axel,Fling|Grass|||0|ev
+set Scatterbug|Bottle Cap|Friend Guard|Rash|50|69,16,212,57,53,54|31,31,31,31,31,31|String Shot,Stun Spore,Tackle,Rage Powder|Poison|||0|ev
+set Torkoal|Leaf Stone|Shell Armor|Hasty|130|249,149,95,3,7,3|31,31,31,31,31,31|Fire Spin,Will-O-Wisp|Grass|||0|ev
+set Varoom|Power Band|No Ability|Mild|50|130,239,128,8,2,1|31,31,31,31,31,31|Sandstorm|Dragon|||0|ev
+set Maushold||Friend Guard|Careful|50|146,235,41,27,13,21|31,31,31,31,31,31|Chilling Water,Giga Impact,Bullet Seed,Mud-Slap|Dark|||0|ev
+set Venusaur|Salac Berry|Overgrow|Naive|50|117,127,235,25,0,3|31,31,31,31,31,31|Giga Drain,Razor Leaf,Petal Dance|Water|||0|ev
+expect Torkoal (level 130) is above the maximum level of 100
+expect Varoom needs to have an ability.
+expect Varoom's ability No Ability does not exist in Gen 9.
+played Sandslash-Alola|Nest Ball|Snow Cloak|Fury Swipes,Triple Axel,Fling||50|Grass
+played Scatterbug|Bottle Cap|Friend Guard|String Shot,Stun Spore,Tackle,Rage Powder||50|Poison
+played Torkoal|Leaf Stone|Shell Armor|Fire Spin,Will-O-Wisp||130|Grass
+played Varoom|Power Band|No Ability|Sandstorm||100|Dragon
+played Maushold||Friend Guard|Chilling Water,Giga Impact,Bullet Seed,Mud-Slap|N|50|Dark
+played Venusaur|Salac Berry|Overgrow|Giga Drain,Razor Leaf,Petal Dance||50|Water
+end
+case gen9vgc-1860191
+format gen9vgc2025regi
+set Duosion|Rocky Helmet|Magic Guard|Docile|50|101,137,101,65,75,12|31,31,31,31,31,31|Skill Swap,Psybeam|Fairy|||0|ev
+set Pincurchin|Chipped Pot|Electric Surge|Brave|50|78,109,90,122,62,2|31,31,31,31,31,31|Charge|Dark|||0|ev
+set Blastoise||Torrent|Jolly|50|193,58,192,12,31,20|31,31,31,31,31,31|Earthquake,Gyro Ball,Tackle|Psychic|||0|ev
+set Hoopa||Magician|Timid|50|181,162,81,18,53,12|31,31,31,31,31,31|Hyperspace Fury,Swift|Flying|||0|ev
+set Pawniard|Masterpiece Teacup|Pressure|Mild|50|29,66,71,123,34,25|31,31,31,31,31,31|Low Kick,Assurance|Ice|||0|ev
+set Gabite|Punching Glove|Rough Skin|Relaxed|50|190,155,65,64,36,0|31,31,31,31,31,31|Aerial Ace,Thunder Fang|Dragon|||0|ev
+expect In Generation 9, Hoopa cannot run Hyperspace Fury because it gets replaced with Hyperspace Hole upon changing forme.
+expect Hoopa is tagged Mythical, which is banned by Flat Rules.
+played Duosion|Rocky Helmet|Magic Guard|Skill Swap,Psybeam||50|Fairy
+played Pincurchin|Chipped Pot|Electric Surge|Charge||50|Dark
+played Blastoise||Torrent|Earthquake,Gyro Ball,Tackle||50|Psychic
+played Hoopa||Magician|Hyperspace Fury,Swift|N|100|Flying
+played Pawniard|Masterpiece Teacup|Pressure|Low Kick,Assurance||50|Ice
+played Gabite|Punching Glove|Rough Skin|Aerial Ace,Thunder Fang||50|Dragon
+end
+case gen9vgc-1860204
+format gen9vgc2025regi
+set Palkia-Origin|Eject Button|Telepathy|Quirky|50|66,26,160,226,23,2|31,31,31,31,31,31|Endure,Aerial Ace,Shadow Claw,Fire Blast|Fairy|||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+expect Palkia needs to hold Lustrous Globe to be in its Origin forme.
+expect (It will revert to its base forme if you remove the item or give it a different item.)
+played Palkia-Origin|Eject Button|Telepathy|Endure,Aerial Ace,Shadow Claw,Fire Blast|N|100|Fairy
+end
+case gen9vgc-1860214
+format gen9vgc2025regi
+set Necrozma-Dawn-Wings|Quick Claw|Prism Armor|Serious|50|191,195,51,51,16,3|31,31,31,31,31,31|Solar Beam,Future Sight|Stellar|||0|ev
+set Miraidon|Flower Sweet|Hadron Engine|Relaxed|50|51,180,24,251,3,1|31,31,31,31,31,31|Dragon Claw,Thunderbolt,Crunch,Agility|Ground|||0|ev
+set Necrozma-Dawn-Wings|Salac Berry|Prism Armor|Hasty|50|56,202,171,27,42,0|31,31,31,31,31,31|Rock Blast,Imprison,Smart Strike|Ice|||0|ev
+set Spiritomb||Infiltrator|Impish|50|203,166,138,2,1,0|31,31,31,31,31,31|Rest|Bug|||0|ev
+set Typhlosion-Hisui||Frisk|Bashful|50|171,36,40,68,62,16|31,31,31,31,31,31|Substitute|Rock|||0|ev
+set Espathra|Oval Stone|Frisk|Quiet|50|84,215,38,4,94,23|31,31,31,31,31,31|Hyper Voice,Psybeam,Night Shade,Skill Swap|Ice|||0|ev
+expect You cannot have more than one Necrozma-Dawn-Wings
+expect (It's untradeable and you can only make one with the N-Lunarizer.)
+expect You are limited to one of each Pokémon by Species Clause.
+expect (You have more than one Necrozma)
+expect You can only use up to two restricted Pokémon (you have: Necrozma-Dawn-Wings, Miraidon, Necrozma-Dawn-Wings)
+played Necrozma-Dawn-Wings|Quick Claw|Prism Armor|Solar Beam,Future Sight|N|50|Stellar
+played Miraidon|Flower Sweet|Hadron Engine|Dragon Claw,Thunderbolt,Crunch,Agility|N|50|Ground
+played Necrozma-Dawn-Wings|Salac Berry|Prism Armor|Rock Blast,Imprison,Smart Strike|N|50|Ice
+played Spiritomb||Infiltrator|Rest||50|Bug
+played Typhlosion-Hisui||Frisk|Substitute||50|Rock
+played Espathra|Oval Stone|Frisk|Hyper Voice,Psybeam,Night Shade,Skill Swap||50|Ice
+end
+case gen9vgc-1860218
+format gen9vgc2025regi
+set Eevee|Razor Fang|Run Away|Mild|50|170,63,60,180,15,4|31,31,31,31,31,31|Sand Attack|Electric|||0|ev
+set Dratini||Marvel Scale|Quiet|50|248,167,1,59,28,0|31,31,31,31,31,31|Leer,Substitute,Dragon Cheer|Water|||0|ev
+set Klawf||Piercing Drill|Mild|50|127,45,95,89,90,8|31,31,31,31,31,31|Sleep Talk,Helping Hand,Smack Down|Electric|||0|ev
+set Sandslash||Sand Rush|Hardy|50|119,160,80,129,5,5|31,31,31,31,31,31|Defense Curl|Ghost|||0|ev
+set Zygarde-Complete|Zygardite|Power Construct|Quirky|50|214,19,165,17,50,4|31,31,31,31,31,31||Stellar|||0|ev
+set Falinks|Rindo Berry|Battle Armor|Jolly|50|10,209,35,225,24,7|31,31,31,31,31,31|Body Press,Protect,Sunny Day,Knock Off|Fairy|||0|ev
+expect Klawf can't have Piercing Drill.
+expect Klawf's ability Piercing Drill does not exist in Gen 9.
+expect Zygarde-Complete must start the battle as Zygarde or Zygarde-10% with Power Construct. Please specify which Zygarde it should start as.
+expect Zygarde (Zygarde-Mega) does not exist in Gen 9.
+expect Zygarde's item Zygardite does not exist in Gen 9.
+expect Zygarde-Complete has no moves (it must have at least one to be usable).
+played Eevee|Razor Fang|Run Away|Sand Attack||50|Electric
+played Dratini||Marvel Scale|Leer,Substitute,Dragon Cheer||50|Water
+played Klawf||Piercing Drill|Sleep Talk,Helping Hand,Smack Down||100|Electric
+played Sandslash||Sand Rush|Defense Curl||50|Ghost
+played Zygarde-Complete|Zygardite|Power Construct||N|100|Stellar
+played Falinks|Rindo Berry|Battle Armor|Body Press,Protect,Sunny Day,Knock Off|N|50|Fairy
+end
+case gen9vgc-1860269
+format gen9vgc2025regi
+set Koraidon||Orichalcum Pulse|Sassy|20|131,179,11,99,2,72|31,31,0,31,27,31|Meteor Beam|Ghost|||1|ev
+set Quilava||Blaze|Hasty|50|173,147,53,53,35,32|31,31,31,31,31,31|Origin Pulse,Curse,Protect,Howl|Rock|||0|ev
+set Pupitar|Tamato Berry|Shed Skin|Rash|50|223,229,18,0,3,4|31,31,31,31,31,31|Earthquake|Steel|||0|ev
+set Teddiursa|Chilan Berry|Pickup|Jolly|50|232,184,9,63,14,6|31,31,31,31,31,31|Seismic Toss|Grass|||0|ev
+set Kingdra|Enigma Berry|Damp|Jolly|50|49,150,219,15,4,11|31,31,31,31,31,31|Sleep Talk,Hurricane,Bubble Beam,Scale Shot|Dragon|||0|ev
+set Froslass|Sharp Beak|Cursed Body|Hardy|50|224,144,85,27,13,0|31,31,31,31,31,31|Trailblaze,Protect|Normal|||0|ev
+expect Koraidon is only obtainable from events - it needs to match one of its events:
+expect Koraidon must be at least level 68 to be from its event #1.
+expect Koraidon must not be shiny to be from its event #1.
+expect Koraidon must have 28 Defense IVs to be from its event #1.
+expect Koraidon must have 28 Special Defense IVs to be from its event #1.
+expect Koraidon must be at least level 72 to be from its event #2.
+expect Koraidon must not be shiny to be from its event #2.
+expect Koraidon must have 25 HP IVs to be from its event #2.
+expect Koraidon must have 25 Defense IVs to be from its event #2.
+expect Koraidon must have 25 Special Defense IVs to be from its event #2.
+expect Koraidon must be at least level 100 to be from its event #3.
+expect Koraidon must have 31 Defense IVs to be from its event #3.
+expect Koraidon must have 20 Special Attack IVs to be from its event #3.
+expect Koraidon must have 31 Special Defense IVs to be from its event #3.
+expect Quilava can't learn Origin Pulse.
+played Koraidon||Orichalcum Pulse|Meteor Beam|N|20|Ghost
+played Quilava||Blaze|Origin Pulse,Curse,Protect,Howl||100|Rock
+played Pupitar|Tamato Berry|Shed Skin|Earthquake||50|Steel
+played Teddiursa|Chilan Berry|Pickup|Seismic Toss||50|Grass
+played Kingdra|Enigma Berry|Damp|Sleep Talk,Hurricane,Bubble Beam,Scale Shot||50|Dragon
+played Froslass|Sharp Beak|Cursed Body|Trailblaze,Protect|F|50|Normal
+end
+case gen9vgc-1860274
+format gen9vgc2025regi
+set Flittle|Gold Bottle Cap|Frisk|Hasty|50|29,243,106,104,17,7|31,31,31,31,31,31|Roost,Uproar|Fairy|||0|ev
+set Walking Wake||Protosynthesis|Brave|50|208,1,55,158,64,5|31,31,31,31,31,31|Low Kick,Scald,Giga Impact|Poison|||0|ev
+set Pikachu|Strange Ball|Lightning Rod|Relaxed|50|219,3,73,49,133,31|31,31,31,31,31,31|Helping Hand,Eerie Impulse,Thunderbolt,Body Slam|Fairy|||0|ev
+set Hakamo-o||Bulletproof|Timid|50|31,104,196,179,0,0|31,31,31,31,31,31|Vacuum Wave,Bulk Up,Noble Roar,X-Scissor|Poison|||0|ev
+set Weezing-Galar||Levitate|Gentle|50|246,23,167,73,1,0|31,31,31,31,31,31|Sludge,Rest|Ice|||0|ev
+set Sinistcha-Masterpiece|Sun Stone|Heatproof|Impish|50|32,115,110,102,3,147|31,31,31,31,31,31|Endure,Poltergeist,Protect,Psych Up|Flying|||0|ev
+expect Pikachu's item Strange Ball is not obtainable without hacking or glitches.
+played Flittle|Gold Bottle Cap|Frisk|Roost,Uproar||50|Fairy
+played Walking Wake||Protosynthesis|Low Kick,Scald,Giga Impact|N|50|Poison
+played Pikachu|Strange Ball|Lightning Rod|Helping Hand,Eerie Impulse,Thunderbolt,Body Slam||100|Fairy
+played Hakamo-o||Bulletproof|Vacuum Wave,Bulk Up,Noble Roar,X-Scissor||50|Poison
+played Weezing-Galar||Levitate|Sludge,Rest||50|Ice
+played Sinistcha-Masterpiece|Sun Stone|Heatproof|Endure,Poltergeist,Protect,Psych Up|N|50|Flying
+end
+case gen9vgc-1860277
+format gen9vgc2025regi
+set Azelf||Levitate|Gentle|50|199,79,27,143,45,0|31,31,31,31,31,31|U-turn,Swift|Ground|||0|ev
+set Necrozma-Ultra||Neuroforce|Timid|50|65,207,53,117,59,0|31,31,31,31,31,31|Morning Sun,Trick Room,Swords Dance|Bug|||0|ev
+set Chandelure||Infiltrator|Lax|50|228,219,17,4,8,26|31,31,31,31,31,31|Heat Wave,Hex|Fire|||0|ev
+set Gothita|Dream Ball|Frisk|Sassy|50|220,43,75,22,148,1|31,31,31,31,31,31|Psychic Noise,Confusion,Calm Mind,Trick Room|Ghost|||0|ev
+set Regice|Sun Stone|Ice Body|Quiet|50|151,162,27,146,3,18|31,31,31,31,31,31|Ice Punch,Body Slam|Ice|||0|ev
+set Zoroark|Bottle Cap|Illusion|Modest|50|141,66,135,126,4,32|31,31,31,31,31,31|Calm Mind,Sleep Talk,Endure,Snarl|Dark|||0|ev
+expect Necrozma-Ultra must start the battle holding Ultranecrozium Z.
+expect Necrozma (Necrozma-Ultra) does not exist in Gen 9.
+played Azelf||Levitate|U-turn,Swift|N|50|Ground
+played Necrozma-Ultra||Neuroforce|Morning Sun,Trick Room,Swords Dance|N|100|Bug
+played Chandelure||Infiltrator|Heat Wave,Hex||50|Fire
+played Gothita|Dream Ball|Frisk|Psychic Noise,Confusion,Calm Mind,Trick Room||50|Ghost
+played Regice|Sun Stone|Ice Body|Ice Punch,Body Slam|N|50|Ice
+played Zoroark|Bottle Cap|Illusion|Calm Mind,Sleep Talk,Endure,Snarl||50|Dark
+end
+case gen9vgc-1860291
+format gen9vgc2025regi
+set Cobalion|Eviolite|Justified|Naive|32|144,44,61,234,16,8|31,31,31,31,31,31|Smart Strike,Quick Attack,Quick Guard,Sacred Sword|Rock||M|0|ev
+set Clefable|Sky Plate|Cute Charm|Rash|50|177,66,88,107,69,2|31,31,31,31,31,31|Alluring Voice|Fairy|||0|ev
+set Shellder|Focus Band|Overcoat|Docile|50|170,149,20,136,21,7|31,31,31,31,31,31|Whirlpool|Psychic|||0|ev
+set Seviper|Focus Band|Infiltrator|Hardy|11|55,37,54,8,171,153|31,31,31,31,31,31|Sludge Bomb,Gastro Acid,Poison Fang|Stellar|||0|ev
+set Bonsly||No Ability|Timid|50|0,191,164,136,3,7|31,31,31,31,31,31|Rock Blast,Dig,Helping Hand,Rest|Normal|||0|ev
+set Cosmoem|Roseli Berry|Sturdy|Modest|50|168,171,14,57,82,5|31,31,31,31,31,31|Cosmic Power,Splash|Ice|||0|ev
+expect Cobalion is only obtainable from events - it needs to match one of its events:
+expect Cobalion must be at least level 42 to be from its event #1.
+expect Cobalion must be at least level 45 to be from its event #2.
+expect Cobalion must be at least level 65 to be from its event #3.
+expect Cobalion must be at least level 50 to be from its event #4.
+expect Cobalion must be at least level 60 to be from its event #5.
+expect Cobalion must be at least level 70 to be from its event #6.
+expect Cobalion must be at least level 70 to be from its event #7.
+expect Additionally, it failed to validate as a Pokemon from Pokemon GO because:
+expect Cobalion's move Sacred Sword is incompatible with a Pokemon GO origin.
+expect Bonsly needs to have an ability.
+expect Bonsly's ability No Ability does not exist in Gen 9.
+expect You are limited to 1 of each item by Item Clause.
+expect (You have more than 1 Focus Band)
+played Cobalion|Eviolite|Justified|Smart Strike,Quick Attack,Quick Guard,Sacred Sword|N|32|Rock
+played Clefable|Sky Plate|Cute Charm|Alluring Voice||50|Fairy
+played Shellder|Focus Band|Overcoat|Whirlpool||50|Psychic
+played Seviper|Focus Band|Infiltrator|Sludge Bomb,Gastro Acid,Poison Fang||50|Stellar
+played Bonsly||No Ability|Rock Blast,Dig,Helping Hand,Rest||100|Normal
+played Cosmoem|Roseli Berry|Sturdy|Cosmic Power,Splash|N|50|Ice
+end
+case gen9vgc-1860328
+format gen9vgc2025regi
+set Arceus-Ground|Earth Plate|Multitype|Timid|50|5,85,247,168,4,1|31,31,31,31,31,31|Heavy Slam,X-Scissor,Brick Break,Rock Slide|Grass|A Very Long Nickname Indeed||0|ev
+set Tentacruel|Lansat Berry|Clear Body|Mild|50|186,60,83,142,30,0|31,31,31,31,31,31|Muddy Water|Water|||0|ev
+set Inkay|Shell Bell|Infiltrator|Naive|50|17,133,172,184,4,0|31,31,31,31,31,31|Light Screen,Psyshock,Fake Tears|Ghost|||0|ev
+set Ninetales|Tamato Berry|Drought|Relaxed|50|12,176,150,99,42,30|31,31,31,31,31,31|Solar Beam|Dragon|||0|ev
+set Mesprit||Levitate|Timid|50|145,241,101,4,0,18|31,31,31,31,31,31|Charge Beam,Water Pulse|Rock|||0|ev
+set Iron Valiant||Quark Drive|Quiet|50|66,7,6,236,41,93|31,31,31,31,31,31|Calm Mind,Charge Beam,Agility,Bonemerang|Bug|||0|ev
+expect Arceus-Ground's nickname "A Very Long Nickname Indeed" is too long.
+expect (It's 27 characters long, but should be 18 or less. Some characters, like emojis, may count as more than one.)
+expect A Very Long Nickna (Arceus-Ground) is tagged Mythical, which is banned by Flat Rules.
+expect Iron Valiant's move Bonemerang does not exist in Gen 9.
+expect Iron Valiant can't learn Bonemerang.
+played Arceus-Ground|Earth Plate|Multitype|Heavy Slam,X-Scissor,Brick Break,Rock Slide|N|100|Grass
+played Tentacruel|Lansat Berry|Clear Body|Muddy Water||50|Water
+played Inkay|Shell Bell|Infiltrator|Light Screen,Psyshock,Fake Tears||50|Ghost
+played Ninetales|Tamato Berry|Drought|Solar Beam||50|Dragon
+played Mesprit||Levitate|Charge Beam,Water Pulse|N|50|Rock
+played Iron Valiant||Quark Drive|Calm Mind,Charge Beam,Agility,Bonemerang|N|100|Bug
+end
+case gen9vgc-1860417
+format gen9vgc2025regi
+set Rookidee|Moon Ball|Big Pecks|Quiet|50|217,105,110,44,25,3|31,31,31,31,31,31|Hone Claws,U-turn,Defog,Endure|Rock|||0|ev
+set Ogerpon-Wellspring-Tera|Nest Ball|Embody Aspect (Wellspring)|Lax|50|8,133,151,165,33,8|31,31,31,31,31,31|Ivy Cudgel,Taunt,Vine Whip|Water|||0|ev
+set Hariyama|Light Ball|Thick Fat|Sassy|50|42,4,71,210,137,34|31,31,31,31,31,31|Upper Hand,Cross Chop,Focus Punch,Force Palm|Ghost|||0|ev
+set Larvitar|Timer Ball|Guts|Lax|50|23,138,13,252,71,1|31,31,31,31,31,31|Giga Impact|Bug|||0|ev
+set Pikachu||Lightning Rod|Careful|50|120,121,87,2,161,8|31,31,31,31,31,31|Grass Knot,Tera Blast,Charge,Swift|Fighting|||0|ev
+set Hattrem|Sport Ball|Anticipation|Modest|50|190,181,68,0,58,10|31,31,31,31,31,31|Light Screen,Calm Mind,Protect|Ghost|||0|ev
+expect Ogerpon-Wellspring-Tera transforms in-battle with Wellspring Mask, please fix its item.
+expect Ogerpon-Wellspring-Tera can't have Embody Aspect (Wellspring).
+played Rookidee|Moon Ball|Big Pecks|Hone Claws,U-turn,Defog,Endure||50|Rock
+played Ogerpon-Wellspring|Nest Ball|Embody Aspect (Wellspring)|Ivy Cudgel,Taunt,Vine Whip|F|100|Water
+played Hariyama|Light Ball|Thick Fat|Upper Hand,Cross Chop,Focus Punch,Force Palm||50|Ghost
+played Larvitar|Timer Ball|Guts|Giga Impact||50|Bug
+played Pikachu||Lightning Rod|Grass Knot,Tera Blast,Charge,Swift||50|Fighting
+played Hattrem|Sport Ball|Anticipation|Light Screen,Calm Mind,Protect|F|50|Ghost
+end
+case gen9vgc-1860452
+format gen9vgc2025regi
+set Necrozma-Dusk-Mane|Choice Band|Prism Armor|Timid|50|129,17,104,121,40,93|31,31,31,31,31,31|Dragon Dance,Fling,Earthquake|Poison|||0|ev
+set Mewtwo|Soft Sand|Unnerve|Bold|50|93,58,110,73,119,18|31,31,31,31,31,31|Shadow Ball,Focus Punch,Guard Swap|Fire|||0|ev
+set Necrozma-Dusk-Mane|Light Clay|Prism Armor|Bold|50|5,37,231,234,0,3|31,31,31,31,31,31|Psycho Cut,Sunsteel Strike|Ice|||0|ev
+set Jolteon|Reaper Cloth|Quick Feet|Serious|50|116,234,131,4,4,9|31,31,31,31,31,31|Sunny Day,Thunder Wave,Metal Sound|Psychic|||0|ev
+set Cetoddle||Snow Cloak|Rash|50|5,237,191,77,0,0|31,31,31,31,31,31|Icicle Crash,Charm,Powder Snow|Water|||0|ev
+set Melmetal||Iron Fist|Jolly|50|24,54,218,23,190,1|31,31,31,31,31,31||Fire|||0|ev
+expect Melmetal is tagged Mythical, which is banned by Flat Rules.
+expect Melmetal has no moves (it must have at least one to be usable).
+expect You cannot have more than one Necrozma-Dusk-Mane
+expect (It's untradeable and you can only make one with the N-Solarizer.)
+expect You are limited to one of each Pokémon by Species Clause.
+expect (You have more than one Necrozma)
+expect You can only use up to two restricted Pokémon (you have: Necrozma-Dusk-Mane, Mewtwo, Necrozma-Dusk-Mane)
+played Necrozma-Dusk-Mane|Choice Band|Prism Armor|Dragon Dance,Fling,Earthquake|N|50|Poison
+played Mewtwo|Soft Sand|Unnerve|Shadow Ball,Focus Punch,Guard Swap|N|50|Fire
+played Necrozma-Dusk-Mane|Light Clay|Prism Armor|Psycho Cut,Sunsteel Strike|N|50|Ice
+played Jolteon|Reaper Cloth|Quick Feet|Sunny Day,Thunder Wave,Metal Sound||50|Psychic
+played Cetoddle||Snow Cloak|Icicle Crash,Charm,Powder Snow||50|Water
+played Melmetal||Iron Fist||N|100|Fire
+end
+case gen9vgc-1860559
+format gen9vgc2025regi
+set Palafin-Hero|Colbur Berry|No Ability|Docile|50|152,192,86,53,7,5|31,31,31,31,31,31|Rain Dance|Fairy|||0|ev
+set Cacturne|Iapapa Berry|Water Absorb|Careful|50|158,93,144,43,44,14|31,31,31,31,31,31|Switcheroo|Dragon|||0|ev
+set Electrode-Hisui||Static|Hardy|50|128,6,192,59,103,17|31,31,31,31,31,31|Explosion,Electric Terrain,Reflect|Psychic|||0|ev
+set Gothita|Sitrus Berry|Frisk|Quiet|50|239,79,1,64,11,54|31,31,31,31,31,31|Rock Slide,Psychic,Rain Dance,Psychic Noise|Ice|||0|ev
+set Maushold||Cheek Pouch|Careful|50|82,76,142,118,6,72|31,31,31,31,31,31|Bullet Seed,Agility|Fairy|||0|ev
+set Necrozma-Dusk-Mane||Prism Armor|Naive|50|13,7,147,93,215,24|31,31,31,31,31,31|Outrage,Sandstorm|Dark|||0|ev
+expect Palafin-Hero transforms in-battle with Zero to Hero, please fix its ability.
+expect Palafin-Hero needs to have an ability.
+expect Palafin's ability No Ability does not exist in Gen 9.
+played Palafin|Colbur Berry|No Ability|Rain Dance||100|Fairy
+played Cacturne|Iapapa Berry|Water Absorb|Switcheroo||50|Dragon
+played Electrode-Hisui||Static|Explosion,Electric Terrain,Reflect|N|50|Psychic
+played Gothita|Sitrus Berry|Frisk|Rock Slide,Psychic,Rain Dance,Psychic Noise||50|Ice
+played Maushold||Cheek Pouch|Bullet Seed,Agility|N|50|Fairy
+played Necrozma-Dusk-Mane||Prism Armor|Outrage,Sandstorm|N|50|Dark
+end
+case gen9vgc-1860587
+format gen9vgc2025regi
+set Rhyperior|Heat Rock|Reckless|Quirky|50|235,226,1,1,43,1|31,31,31,31,31,31|Smack Down|Fire|||0|ev
+set Noibat||Infiltrator|Hardy|50|211,241,47,1,10,0|31,31,31,31,31,31|Switcheroo|Electric|||0|ev
+set Vullaby|Shiny Stone|Weak Armor|Naughty|50|98,27,191,12,11,42|31,31,31,31,31,31|Knock Off|Fairy|||0|sp
+set Smeargle||Own Tempo|Jolly|50|193,107,204,0,3,0|31,31,31,31,31,31|Sketch|Dragon|||0|ev
+set Raging Bolt||Protosynthesis|Hardy|50|78,150,193,32,8,45|31,31,31,31,31,31|Breaking Swipe,Sleep Talk,Hidden Power Electric|Fighting|||0|ev
+set Vulpix-Alola|Assault Vest|Snow Warning|Lonely|50|28,115,206,98,1,51|31,31,31,31,31,31|Swift,Confuse Ray,Mist,Flail|Psychic|||0|ev
+expect Raging Bolt's move Hidden Power Electric does not exist in Gen 9.
+expect Raging Bolt can't learn Hidden Power Electric.
+expect Raging Bolt is only obtainable from an event - it needs to match its event:
+expect Raging Bolt can only have Hidden Power Fighting to be from its event.
+played Rhyperior|Heat Rock|Reckless|Smack Down||50|Fire
+played Noibat||Infiltrator|Switcheroo||50|Electric
+played Vullaby|Shiny Stone|Weak Armor|Knock Off|F|50|Fairy
+played Smeargle||Own Tempo|Sketch||50|Dragon
+played Raging Bolt||Protosynthesis|Breaking Swipe,Sleep Talk,Hidden Power Electric|N|100|Fighting
+played Vulpix-Alola|Assault Vest|Snow Warning|Swift,Confuse Ray,Mist,Flail||50|Psychic
+end
+case gen9vgc-1860692
+format gen9vgc2025regi
+set Iron Hands|Yache Berry|Quark Drive|Careful|50|35,192,148,21,102,7|31,31,31,31,31,31|Thunderbolt|Stellar|||0|ev
+set Flapple|Choice Specs|Gluttony|Sassy|50|228,100,164,3,3,3|31,31,31,31,31,31|Solar Beam,U-turn,Twister,Scary Face|Steel|||0|ev
+set Cloyster|Sharp Beak|Overcoat|Lonely|50|167,20,125,1,4,19|31,31,31,31,31,31|Substitute,Swift,Light Screen,Spikes|Steel|||0|ev
+set Basculin-Blue-Striped|Oval Stone|Rock Head|Serious|50|189,85,188,19,25,0|31,31,31,31,31,31|Facade,Scary Face|Ghost|||0|ev
+set Kommo-o||Bulletproof|Brave|50|107,48,162,38,120,28|31,31,31,31,31,31|Coaching,Iron Head|Electric|||0|ev
+set Necrozma-Ultra|Ultranecrozium Z|Neuroforce|Sassy|50|97,52,167,51,120,5|31,31,31,31,31,31|Iron Defense,Flash Cannon,Charge Beam|Ice|||0|ev
+expect Necrozma-Ultra must start the battle as Necrozma-Dusk-Mane or Necrozma-Dawn-Wings holding Ultranecrozium Z. Please specify which Necrozma it should start as.
+expect Necrozma (Necrozma-Ultra) does not exist in Gen 9.
+expect Necrozma's item Ultranecrozium Z does not exist in Gen 9.
+played Iron Hands|Yache Berry|Quark Drive|Thunderbolt|N|50|Stellar
+played Flapple|Choice Specs|Gluttony|Solar Beam,U-turn,Twister,Scary Face||50|Steel
+played Cloyster|Sharp Beak|Overcoat|Substitute,Swift,Light Screen,Spikes||50|Steel
+played Basculin-Blue-Striped|Oval Stone|Rock Head|Facade,Scary Face||50|Ghost
+played Kommo-o||Bulletproof|Coaching,Iron Head||50|Electric
+played Necrozma-Ultra|Ultranecrozium Z|Neuroforce|Iron Defense,Flash Cannon,Charge Beam|N|100|Ice
+end
+case gen9vgc-1860931
+format gen9vgc2025regi
+set Kubfu|Eviolite|Inner Focus|Naive|50|91,198,169,46,2,4|31,31,31,31,31,31|Swords Dance,Tera Blast,Dig,Detect|Psychic|||0|ev
+set Munkidori|Never-Melt Ice|Frisk|Jolly|50|94,113,235,9,58,0|31,31,31,31,31,31|Scratch|Steel|||0|ev
+set Finizen||Water Veil|Docile|50|162,150,27,116,6,28|31,31,31,31,31,31|Sleep Talk,Supersonic,Charm,Swift|Grass|||0|ev
+set Eelektross|Dragon Scale|Levitate|Hardy|50|141,149,131,54,21,0|31,31,31,31,31,31|Drain Punch,Zen Headbutt|Flying|||0|ev
+set Alcremie-Lemon-Cream|Toxic Plate|Sweet Veil|Jolly|50|226,72,90,93,15,2|31,31,31,31,31,31|Aromatic Mist|Steel|||0|ev
+set Moltres|Metronome|Pressure|Bold|50|113,243,129,24,0,1|31,31,31,31,31,31|Ancient Power,Fly,Hidden Power Fighting|Flying|||0|ev
+expect Moltres must not have Hidden Power Fighting because it starts with 3 perfect IVs because it's a Gen 6+ legendary.
+expect Moltres's move Hidden Power Fighting does not exist in Gen 9.
+expect Moltres's move Hidden Power Fighting can't be transferred from Gen 7 to 9.
+played Kubfu|Eviolite|Inner Focus|Swords Dance,Tera Blast,Dig,Detect||50|Psychic
+played Munkidori|Never-Melt Ice|Frisk|Scratch|M|50|Steel
+played Finizen||Water Veil|Sleep Talk,Supersonic,Charm,Swift||50|Grass
+played Eelektross|Dragon Scale|Levitate|Drain Punch,Zen Headbutt||50|Flying
+played Alcremie-Lemon-Cream|Toxic Plate|Sweet Veil|Aromatic Mist|F|50|Steel
+played Moltres|Metronome|Pressure|Ancient Power,Fly,Hidden Power Fighting|N|100|Flying
+end
+case gen9vgc-1861049
+format gen9vgc2025regi
+set Ralts||Telepathy|Rash|50|244,56,51,144,11,0|31,31,31,31,31,31|Hyper Voice|Electric|||0|ev
+set Regigigas|Kasib Berry|Regenerator|Careful|50|243,4,118,58,67,11|31,31,31,31,31,31|Weather Ball,Block,Icy Wind|Flying|||0|ev
+set Fomantis|Electirizer|Leaf Guard|Quiet|50|197,111,137,57,6,2|31,31,31,31,31,31|False Swipe|Electric|||0|ev
+set Torchic|Dragon Fang|Blaze|Hasty|50|30,107,241,41,20,15|31,31,31,31,31,31|Flame Charge,Fire Spin|Dragon|||0|ev
+set Nuzleaf|Charcoal|Pickpocket|Hasty|50|173,212,86,12,12,0|31,31,31,31,31,31|Solar Beam,Energy Ball|Electric|||0|ev
+set Zygarde|Zygardite|Aura Break|Bashful|50|55,187,30,201,1,7|31,31,31,31,31,31||Dark|||0|ev
+expect Regigigas can't have Regenerator.
+expect Regigigas can't learn Weather Ball.
+expect Zygarde holding Zygardite can only Mega Evolve with the Power Construct ability.
+expect Zygarde does not exist in Gen 9.
+expect Zygarde's item Zygardite does not exist in Gen 9.
+expect Zygarde has no moves (it must have at least one to be usable).
+played Ralts||Telepathy|Hyper Voice||50|Electric
+played Regigigas|Kasib Berry|Regenerator|Weather Ball,Block,Icy Wind|N|100|Flying
+played Fomantis|Electirizer|Leaf Guard|False Swipe||50|Electric
+played Torchic|Dragon Fang|Blaze|Flame Charge,Fire Spin||50|Dragon
+played Nuzleaf|Charcoal|Pickpocket|Solar Beam,Energy Ball||50|Electric
+played Zygarde|Zygardite|Aura Break||N|100|Dark
+end
+case gen9vgc-1861059
+format gen9vgc2025regi
+set Grumpig|Binding Band|Own Tempo|Gentle|50|167,125,153,10,3,12|31,31,31,31,31,31|Low Sweep,Whirlwind,Thief,Icy Wind|Water|||0|ev
+set Meltan|Lansat Berry|Magnet Pull|Quiet|50|210,143,12,140,5,0|31,31,31,31,31,31||Dragon|||0|ev
+set Snorlax|Lustrous Orb|Immunity|Adamant|50|96,32,50,71,240,15|31,31,31,31,31,31|Charm,Thunderbolt|Ghost|||0|ev
+set Eternatus|Draco Plate|Pressure|Lonely|10|126,37,231,15,95,2|28,31,31,31,31,31|Rest,Draco Meteor,Tera Blast|Fire|||1|ev
+set Sobble|Assault Vest|Sniper|Brave|50|230,0,219,19,32,3|31,31,31,31,31,31|Mist,Facade|Stellar|||0|ev
+set Mimikyu-Busted|Mystic Water|Disguise|Quirky|50|251,130,112,6,8,0|31,31,31,31,31,31|Tera Blast,Take Down,Astonish|Rock|||0|ev
+expect Meltan is tagged Mythical, which is banned by Flat Rules.
+expect Meltan has no moves (it must have at least one to be usable).
+expect Eternatus is only obtainable from events - it needs to match one of its events:
+expect Eternatus must be at least level 60 to be from its event #1.
+expect Eternatus must not be shiny to be from its event #1.
+expect Eternatus must be at least level 100 to be from its event #2.
+expect Eternatus must have at least 6 perfect IVs to be from its event #2.
+played Grumpig|Binding Band|Own Tempo|Low Sweep,Whirlwind,Thief,Icy Wind||50|Water
+played Meltan|Lansat Berry|Magnet Pull||N|100|Dragon
+played Snorlax|Lustrous Orb|Immunity|Charm,Thunderbolt||50|Ghost
+played Eternatus|Draco Plate|Pressure|Rest,Draco Meteor,Tera Blast|N|10|Fire
+played Sobble|Assault Vest|Sniper|Mist,Facade||50|Stellar
+played Mimikyu|Mystic Water|Disguise|Tera Blast,Take Down,Astonish||50|Rock
+end
+case gen9vgc-1861252
+format gen9vgc2025regi
+set Scream Tail|Splash Plate|Protosynthesis|Lax|50|195,101,72,90,36,6|31,31,31,31,31,31|Psybeam,Baton Pass,Reflect,Metronome|Fire|||0|ev
+set Inteleon|Galarica Wreath|Sniper|Gentle|51|181,41,34,23,17,5|31,31,31,31,31,31|Air Cutter,Hydro Pump,Reflect,Dark Pulse|Stellar|||0|ev
+set Necrozma-Dawn-Wings|Sport Ball|Prism Armor|Relaxed|50|248,132,49,34,4,20|31,31,31,31,31,31|Confusion,Endure,Stealth Rock,Giga Impact|Ghost|||0|ev
+set Blaziken||Blaze|Serious|50|157,48,211,70,6,6|31,31,31,31,31,31|Sleep Talk,Body Slam,Acrobatics|Ground|||0|ev
+set Exeggutor|Choice Scarf|Chlorophyll|Lonely|50|91,88,228,35,20,35|31,31,31,31,31,31|Stomp|Fighting|||0|ev
+set Garganacl|Liechi Berry|Sturdy|Lonely|16|73,120,80,221,12,4|31,31,31,31,31,31|Hard Press,Bulldoze,Recover,Salt Cure|Psychic||F|0|ev
+expect Garganacl must be at least level 38 to be evolved.
+expect Garganacl must be at least level 50 to be underleveled from an event.
+expect Garganacl's gender must be M to be underleveled from an event.
+expect Garganacl must have 22 Special Attack IVs to be underleveled from an event.
+played Scream Tail|Splash Plate|Protosynthesis|Psybeam,Baton Pass,Reflect,Metronome|N|50|Fire
+played Inteleon|Galarica Wreath|Sniper|Air Cutter,Hydro Pump,Reflect,Dark Pulse||50|Stellar
+played Necrozma-Dawn-Wings|Sport Ball|Prism Armor|Confusion,Endure,Stealth Rock,Giga Impact|N|50|Ghost
+played Blaziken||Blaze|Sleep Talk,Body Slam,Acrobatics||50|Ground
+played Exeggutor|Choice Scarf|Chlorophyll|Stomp||50|Fighting
+played Garganacl|Liechi Berry|Sturdy|Hard Press,Bulldoze,Recover,Salt Cure|F|16|Psychic
+end
+case gen9vgc-1861294
+format gen9vgc2025regi
+set Meloetta|Jaboca Berry|Serene Grace|Serious|10|115,210,176,4,0,0|20,31,31,21,31,31|Role Play,U-turn,Grass Knot|Dragon|||0|ev
+set Indeedee-F|Level Ball|Psychic Surge|Brave|50|88,70,150,70,52,32|31,31,31,31,31,31|Reflect,Heal Pulse,Psychic Terrain,Trick Room|Ground|||0|ev
+set Spectrier|Wide Lens|Grim Neigh|Adamant|50|73,61,40,216,94,0|31,31,31,31,31,31|Scary Face|Grass|||0|ev
+set Surskit|Thunder Stone|Swift Swim|Careful|50|112,169,101,57,1,40|31,31,31,31,31,31|Sweet Scent,Baton Pass,Thief|Fairy|||0|ev
+set Oinkologne|Razor Claw|Lingering Aroma|Jolly|50|229,73,146,2,29,18|31,31,31,31,31,31|Tail Whip,Mud-Slap|Stellar|||0|ev
+set Staravia|Oran Berry|Reckless|Docile|50|165,2,109,228,0,1|31,31,31,31,31,31|Tera Blast,Aerial Ace,Agility|Dark|||0|ev
+expect Meloetta is tagged Mythical, which is banned by Flat Rules.
+expect Meloetta is only obtainable from events - it needs to match one of its events:
+expect Meloetta must be at least level 15 to be from its event #1.
+expect Meloetta must be at least level 50 to be from its event #2.
+expect Meloetta must be at least level 15 to be from its event #3.
+expect Meloetta must be at least level 50 to be from its event #4.
+expect Meloetta must be at least level 70 to be from its event #5.
+expect Meloetta must not have moves only learnable in gen 7 to be from its event #5.
+expect Meloetta must be at least level 50 to be from its event #6.
+expect Meloetta must be shiny to be from its event #6.
+expect Meloetta must have 20 Attack IVs to be from its event #6.
+expect Meloetta must have 20 Defense IVs to be from its event #6.
+expect Meloetta must have 31 Special Attack IVs to be from its event #6.
+expect Meloetta must not have moves only learnable in gen 7 to be from its event #6.
+expect Additionally, it failed to validate as a Pokemon from Pokemon GO because:
+expect Meloetta must be at least level 15 to be from Pokemon GO.
+expect Meloetta must have at least 21 IVs in non-Speed stats to be from Pokemon GO.
+expect Meloetta must have odd non-Speed IVs to be from Pokemon GO.
+expect Meloetta's Atk and Sp. Atk IVs must match to be from Pokemon GO.
+expect Meloetta's move Role Play is incompatible with a Pokemon GO origin.
+played Meloetta|Jaboca Berry|Serene Grace|Role Play,U-turn,Grass Knot|N|10|Dragon
+played Indeedee-F|Level Ball|Psychic Surge|Reflect,Heal Pulse,Psychic Terrain,Trick Room|F|50|Ground
+played Spectrier|Wide Lens|Grim Neigh|Scary Face|N|50|Grass
+played Surskit|Thunder Stone|Swift Swim|Sweet Scent,Baton Pass,Thief||50|Fairy
+played Oinkologne|Razor Claw|Lingering Aroma|Tail Whip,Mud-Slap|M|50|Stellar
+played Staravia|Oran Berry|Reckless|Tera Blast,Aerial Ace,Agility||50|Dark
+end
+case gen9vgc-1861649
+format gen9vgc2025regi
+set Dusclops|Shed Shell|Pressure|Modest|50|210,7,102,143,31,7|31,31,31,31,31,31|Confuse Ray|Fairy|||0|ev
+set Darkrai||Bad Dreams|Sassy|50|206,42,119,3,13,39|31,31,31,31,31,31|Focus Punch,Spite,Night Shade,Shadow Claw|Water|||0|ev
+set Necrozma-Ultra|Ultranecrozium Z|Neuroforce|Docile|50|76,16,94,169,70,71|31,31,31,31,31,31|Moongeist Beam,Sunsteel Strike,Psycho Cut|Grass|||0|ev
+set Raichu-Mega-Y|Raichunite Y|No Guard|Bashful|50|66,160,97,145,42,0|31,31,31,31,31,31|Body Slam,Draining Kiss,Tera Blast|Dark|||0|ev
+set Slowking-Galar|Eject Pack|Curious Medicine|Rash|50|204,182,2,38,65,12|31,31,31,31,31,31|Muddy Water|Ghost|||0|ev
+set Avalugg||Ice Body|Docile|50|130,154,38,23,39,19|31,31,31,31,31,31|Protect,Icy Wind|Rock|||0|ev
+expect Darkrai is tagged Mythical, which is banned by Flat Rules.
+expect Necrozma-Ultra must start the battle as Necrozma-Dusk-Mane or Necrozma-Dawn-Wings holding Ultranecrozium Z. Please specify which Necrozma it should start as.
+expect Necrozma (Necrozma-Ultra) does not exist in Gen 9.
+expect Necrozma's item Ultranecrozium Z does not exist in Gen 9.
+expect Necrozma-Ultra's moves Moongeist Beam, Sunsteel Strike are incompatible.
+expect Raichu (Raichu-Mega-Y) does not exist in Gen 9.
+expect Raichu's item Raichunite Y does not exist in Gen 9.
+played Dusclops|Shed Shell|Pressure|Confuse Ray||50|Fairy
+played Darkrai||Bad Dreams|Focus Punch,Spite,Night Shade,Shadow Claw|N|100|Water
+played Necrozma-Ultra|Ultranecrozium Z|Neuroforce|Moongeist Beam,Sunsteel Strike,Psycho Cut|N|100|Grass
+played Raichu|Raichunite Y|Static|Body Slam,Draining Kiss,Tera Blast||100|Dark
+played Slowking-Galar|Eject Pack|Curious Medicine|Muddy Water||50|Ghost
+played Avalugg||Ice Body|Protect,Icy Wind||50|Rock
+end
+case championsvgc-1860000
+format gen9championsvgc2026regmc
+set Minior-Blue||Shields Down|Lax|50|26,22,3,3,5,4|31,31,31,31,31,31|Stealth Rock,Rock Tomb,Stone Edge,Giga Impact||||0|sp
+set Lucario|Lopunnite|Steadfast|Lax|50|24,13,12,16,0,1|31,31,31,31,31,31|Round,Flash Cannon,High Jump Kick,Giga Impact||||0|sp
+set Skarmory|Spell Tag|Weak Armor|Hasty|50|21,19,18,1,4,3|31,31,31,31,31,31|Hurricane,Dual Wingbeat,X-Scissor,Sunny Day||||0|sp
+set Manectric|Feraligite|Lightning Rod|Hasty|50|19,19,1,27,0,0|31,31,31,31,31,31|Agility,Giga Impact,Uproar||||0|sp
+set Samurott||Torrent|Quiet|50|13,12,28,6,5,2|31,31,31,31,31,31|Sleep Talk||||1|sp
+set Talonflame|Excadrite|Flame Body|Lonely|50|15,30,14,5,0,2|31,31,31,31,31,31|Thief,Round||||0|sp
+expect Minior (Minior-Blue) does not exist in Gen 9.
+played Minior-Blue||Shields Down|Stealth Rock,Rock Tomb,Stone Edge,Giga Impact|N|100|
+played Lucario|Lopunnite|Steadfast|Round,Flash Cannon,High Jump Kick,Giga Impact||50|
+played Skarmory|Spell Tag|Weak Armor|Hurricane,Dual Wingbeat,X-Scissor,Sunny Day||50|
+played Manectric|Feraligite|Lightning Rod|Agility,Giga Impact,Uproar||50|
+played Samurott||Torrent|Sleep Talk||50|
+played Talonflame|Excadrite|Flame Body|Thief,Round||50|
+end
+case championsvgc-1860001
+format gen9championsvgc2026regmc
+set Klefki||Prankster|Bashful|50|12,11,13,29,1,0|31,31,31,31,31,31|Hyper Beam,Foul Play,Sunny Day||||0|sp
+set Tsareena||Sweet Veil|Jolly|50|15,12,15,12,11,1|31,31,31,31,31,31|Charm||||0|sp
+set Musharna||Forewarn|Adamant|50|30,29,5,1,0,0|31,31,31,31,31,31|Moonblast,Rock Slide,Helping Hand,Psychic||||0|sp
+set Arbok||Intimidate|Brave|50|21,4,3,6,10,13|31,31,31,31,31,31|Payback||||0|sp
+set Vivillon-Modern||Friend Guard|Lax|50|28,15,20,2,0,1|31,31,31,31,31,31|Weather Ball,Acrobatics||||0|sp
+set Aggron|Chilan Berry|Rock Head|Docile|50|1,20,32,13,0,0|31,31,31,31,31,31|Thunder||||0|sp
+played Klefki||Prankster|Hyper Beam,Foul Play,Sunny Day||50|
+played Tsareena||Sweet Veil|Charm|F|50|
+played Musharna||Forewarn|Moonblast,Rock Slide,Helping Hand,Psychic||50|
+played Arbok||Intimidate|Payback||50|
+played Vivillon-Modern||Friend Guard|Weather Ball,Acrobatics||50|
+played Aggron|Chilan Berry|Rock Head|Thunder||50|
+end
+case championsvgc-1860002
+format gen9championsvgc2026regmc
+set Tyrantrum||Strong Jaw|Careful|50|3,28,7,27,1,0|31,31,31,31,31,31|Close Combat,Outrage,Rock Tomb||||0|sp
+set Tinkaton|White Herb|Pickpocket|Brave|50|16,4,13,19,13,0|31,31,31,31,31,31|Rock Slide,Feint,Encore||||0|sp
+set Meowscarada|Sceptilite|Protean|Careful|50|22,16,7,4,6,10|31,31,31,31,31,31|Trick Room||||0|sp
+set Pelipper||Keen Eye|Docile|50|24,17,2,7,8,7|31,31,31,31,31,31|Helping Hand,Hydro Pump,Agility,U-turn||||0|sp
+set Ninetales-Alola||Snow Warning|Calm|50|1,16,22,1,2,4|31,31,31,31,31,31|Baby-Doll Eyes||||0|sp
+set Aromatisse|Metal Coat|Aroma Veil|Timid|50|12,18,12,22,1,0|31,31,31,31,31,31|Charm||||0|sp
+played Tyrantrum||Strong Jaw|Close Combat,Outrage,Rock Tomb||50|
+played Tinkaton|White Herb|Pickpocket|Rock Slide,Feint,Encore|F|50|
+played Meowscarada|Sceptilite|Protean|Trick Room||50|
+played Pelipper||Keen Eye|Helping Hand,Hydro Pump,Agility,U-turn||50|
+played Ninetales-Alola||Snow Warning|Baby-Doll Eyes||50|
+played Aromatisse|Metal Coat|Aroma Veil|Charm||50|
+end
+case championsvgc-1860003
+format gen9championsvgc2026regmc
+set Maushold||Cheek Pouch|Relaxed|50|26,30,4,5,0,0|31,31,31,31,31,31|Low Kick,Mud-Slap,Tickle,Play Nice||||0|sp
+set Whimsicott|Dragon Fang|Chlorophyll|Naughty|50|4,9,10,5,5,28|31,31,31,31,31,31|Facade,Hurricane,Moonblast||||0|sp
+expect You must bring at least 6 Pokémon (your team has 2).
+expect Maushold's move Play Nice does not exist in Gen 9.
+expect Maushold can't learn Play Nice.
+played Maushold||Cheek Pouch|Low Kick,Mud-Slap,Tickle,Play Nice|N|100|
+played Whimsicott|Dragon Fang|Chlorophyll|Facade,Hurricane,Moonblast||50|
+end
+case championsvgc-1860004
+format gen9championsvgc2026regmc
+set Emolga||Static|Docile|50|25,30,1,3,1,6|31,31,31,31,31,31|Rising Voltage,Covet,Encore||||0|sp
+set Pidgeot||Big Pecks|Hardy|50|22,6,9,10,7,8|31,31,31,31,31,31|Rain Dance,Thief,Hyper Beam||||0|sp
+set Morpeko-Hangry|Gyaradosite|Hunger Switch|Bashful|50|6,30,25,3,2,0|31,31,31,31,31,31|Fake Out,Dark Pulse,Flatter||||0|sp
+set Mamoswine||Thick Fat|Brave|50|28,28,8,1,1,0|31,31,31,31,31,31|Iron Head,Scary Face,Icicle Crash,Flail||||0|sp
+set Floette-Eternal||Flower Veil|Bashful|81|14,23,9,3,10,2|31,31,31,31,31,31|Swift,Solar Beam,Calm Mind,Celebrate|||M|1|sp
+set Bastiodon|Roseli Berry|Soundproof|Rash|50|6,27,2,18,5,4|31,31,31,31,31,31|Scorching Sands||||0|sp
+expect Floette's move Swift does not exist in Gen 9.
+expect Floette's move Celebrate does not exist in Gen 9.
+expect Floette-Eternal can't learn Swift.
+expect Floette-Eternal is only obtainable from an event - it needs to match its event:
+expect Floette-Eternal must not be shiny to be from its event.
+played Emolga||Static|Rising Voltage,Covet,Encore||50|
+played Pidgeot||Big Pecks|Rain Dance,Thief,Hyper Beam||50|
+played Morpeko|Gyaradosite|Hunger Switch|Fake Out,Dark Pulse,Flatter||50|
+played Mamoswine||Thick Fat|Iron Head,Scary Face,Icicle Crash,Flail||50|
+played Floette-Eternal||Flower Veil|Swift,Solar Beam,Calm Mind,Celebrate|F|81|
+played Bastiodon|Roseli Berry|Soundproof|Scorching Sands||50|
+end
+case championsvgc-1860006
+format gen9championsvgc2026regmc
+set Tyranitar|Iron Ball|Unnerve|Sassy|50|4,10,10,20,1,18|31,31,31,31,31,31|Power Gem,Thunder||||0|sp
+set Vanilluxe||No Ability|Impish|50|15,30,8,7,1,5|31,31,31,31,31,31|Iron Defense,Flash Cannon||||0|sp
+set Toxapex||Regenerator|Hasty|50|0,5,23,13,3,21|31,31,31,31,31,31|Giga Impact||||0|sp
+set Dragapult|Meowsticite|Cursed Body|Lonely|50|18,10,1,26,4,4|31,31,31,31,31,31|Dragon Dance,Dragon Rush||||0|sp
+set Glaceon||Snow Cloak|Sassy|50|4,31,20,2,7,1|31,31,31,31,31,31|Snowscape,Round,Freeze-Dry,Body Slam||||0|sp
+set Charizard|Greninjite|Blaze|Brave|50|10,7,18,4,18,6|31,31,31,31,31,31|Substitute,Bulldoze,Air Slash,Fire Punch||||0|sp
+expect Vanilluxe needs to have an ability.
+expect Vanilluxe's ability No Ability does not exist in Gen 9.
+played Tyranitar|Iron Ball|Unnerve|Power Gem,Thunder||50|
+played Vanilluxe||No Ability|Iron Defense,Flash Cannon||100|
+played Toxapex||Regenerator|Giga Impact||50|
+played Dragapult|Meowsticite|Cursed Body|Dragon Dance,Dragon Rush||50|
+played Glaceon||Snow Cloak|Snowscape,Round,Freeze-Dry,Body Slam||50|
+played Charizard|Greninjite|Blaze|Substitute,Bulldoze,Air Slash,Fire Punch||50|
+end
+case championsvgc-1860007
+format gen9championsvgc2026regmc
+set Roserade|Galladite|Natural Cure|Hasty|50|15,0,7,30,12,0|31,31,31,31,31,31|Extrasensory,Uproar,Toxic||||0|sp
+set Vaporeon||Hydration|Serious|50|9,27,29,0,1,0|31,31,31,31,31,31|Substitute,Sunny Day,Roar,Mud-Slap||||0|sp
+set Pidgeot|Sceptilite|Big Pecks|Modest|50|20,6,19,10,11,0|31,31,31,31,31,31|Topsy-Turvy||||0|sp
+set Archaludon|Ampharosite|Stamina|Brave|50|21,28,14,3,0,0|31,31,31,31,31,31|Giga Impact,Outrage||||0|sp
+set Maushold-Four|Chople Berry|Technician|Serious|50|0,0,0,0,0,0|31,31,31,31,31,31|Aerial Ace,Beat Up||||0|sp
+set Espathra||Frisk|Naive|50|9,9,10,26,11,1|31,31,31,31,31,31|Psych Up,Shadow Ball,Hex||||0|sp
+expect Pidgeot can't learn Topsy-Turvy.
+expect Maushold has exactly 0 Stat Points - did you forget to invest it? (If this was intentional, change your Nature to a different neutral Nature, which won't change its stats but will tell us that it wasn't a mistake).
+played Roserade|Galladite|Natural Cure|Extrasensory,Uproar,Toxic||50|
+played Vaporeon||Hydration|Substitute,Sunny Day,Roar,Mud-Slap||50|
+played Pidgeot|Sceptilite|Big Pecks|Topsy-Turvy||100|
+played Archaludon|Ampharosite|Stamina|Giga Impact,Outrage||50|
+played Maushold-Four|Chople Berry|Technician|Aerial Ace,Beat Up|N|100|
+played Espathra||Frisk|Psych Up,Shadow Ball,Hex||50|
+end
+case championsvgc-1860009
+format gen9championsvgc2026regmc
+set Appletun|Red Orb|Ripen|Lax|50|10,12,25,17,1,0|31,31,31,31,31,31|Curse,Giga Drain,Growth||||0|sp
+set Samurott||Shell Armor|Docile|50|32,0,11,16,3,1|31,31,31,31,31,31|Night Slash,Grass Knot,Surf,Body Slam||||0|sp
+set Sylveon|White Herb|Pixilate|Bashful|50|14,29,22,0,1,0|31,31,31,31,31,31|Charm,Dazzling Gleam,Play Rough||||0|sp
+set Diggersby|Glalitite|Cheek Pouch|Adamant|50|26,32,0,2,0,5|31,31,31,31,31,31|Foul Play,Agility,Sludge Bomb||||0|sp
+set Maushold|Gyaradosite|Technician|Lonely|50|21,6,6,3,11,4|31,31,31,31,31,31|Mud Shot||||0|sp
+set Sylveon|Never-Melt Ice|Pixilate|Modest|50|28,1,10,23,3,1|31,31,31,31,31,31|Helping Hand,Giga Drain,Body Slam||||0|sp
+expect Appletun's item Red Orb does not exist in Gen 9.
+expect Sylveon can't learn Giga Drain.
+expect You are limited to one of each Pokémon by Species Clause.
+expect (You have more than one Sylveon)
+played Appletun|Red Orb|Ripen|Curse,Giga Drain,Growth||100|
+played Samurott||Shell Armor|Night Slash,Grass Knot,Surf,Body Slam||50|
+played Sylveon|White Herb|Pixilate|Charm,Dazzling Gleam,Play Rough||50|
+played Diggersby|Glalitite|Cheek Pouch|Foul Play,Agility,Sludge Bomb||50|
+played Maushold|Gyaradosite|Technician|Mud Shot|N|50|
+played Sylveon|Never-Melt Ice|Pixilate|Helping Hand,Giga Drain,Body Slam||100|
+end
+case championsvgc-1860010
+format gen9championsvgc2026regmc
+set Simisage||Overgrow|Careful|50|10,7,13,26,0,2|31,31,31,31,31,31|Acrobatics,Crunch,Helping Hand||||0|sp
+set Kommo-o|Pyroarite|Soundproof|Naive|50|7,14,9,8,15,4|31,31,31,31,31,31|Iron Tail,Double-Edge,Ingrain,Outrage||||0|sp
+set Tsareena|Scolipite|Leaf Guard|Hardy|50|23,31,8,2,0,0|31,31,31,31,31,31|Facade,Snore||||0|sp
+set Necrozma-Ultra|Ultranecrozium Z|Neuroforce|Bold|50|5,1,25,6,29,0|31,31,31,31,31,31|Rest,Sunsteel Strike,Confusion,Night Slash||||0|sp
+set Starmie|Light Ball|Analytic|Naive|50|27,19,18,2,0,0|31,31,31,31,31,31|Dive,Giga Impact||||0|sp
+set Tauros-Paldea-Blaze|Falinksite|Intimidate|Lax|50|20,4,18,15,7,1|31,31,31,31,31,31|Close Combat||||0|sp
+expect Kommo-o can't learn Ingrain.
+expect Necrozma (Necrozma-Dusk-Mane) is tagged Restricted Legendary, which is banned by Flat Rules.
+expect Necrozma's item Ultranecrozium Z does not exist in Gen 9.
+expect Necrozma's move Sunsteel Strike does not exist in Gen 9.
+expect Necrozma's move Confusion does not exist in Gen 9.
+played Simisage||Overgrow|Acrobatics,Crunch,Helping Hand||50|
+played Kommo-o|Pyroarite|Soundproof|Iron Tail,Double-Edge,Ingrain,Outrage||100|
+played Tsareena|Scolipite|Leaf Guard|Facade,Snore|F|50|
+played Necrozma-Dusk-Mane|Ultranecrozium Z|Prism Armor|Rest,Sunsteel Strike,Confusion,Night Slash|N|100|
+played Starmie|Light Ball|Analytic|Dive,Giga Impact|N|50|
+played Tauros-Paldea-Blaze|Falinksite|Intimidate|Close Combat|M|50|
+end
+case championsvgc-1860015
+format gen9championsvgc2026regmc
+set Luxray|Starminite|Guts|Mild|50|27,4,28,1,2,1|31,31,31,31,31,31|Discharge,Confuse Ray,Body Slam,Charge Beam||||0|sp
+set Metagross|Chimechite|Light Metal|Relaxed|50|22,11,28,2,0,3|31,31,31,31,31,31|Rest,Zen Headbutt,Psycho Cut||||0|sp
+set Drampa|Heat Rock|Berserk|Bashful|50|26,17,17,4,2,0|31,31,31,31,31,31|Thunderbolt,Outrage,Attract||||0|sp
+set Azumarill|Chimechite|Huge Power|Gentle|0|7,16,19,0,10,6|31,31,31,31,31,31|Ice Spinner,Substitute,Bulldoze||||0|sp
+set Reuniclus||Regenerator|Quiet|50|10,1,8,14,1,0|31,31,31,31,31,31|Rain Dance,Guard Swap,Charm||||0|sp
+set Grimmsnarl|Absolite|Prankster|Careful|50|32,24,9,0,1,0|31,31,31,31,31,31|Trick,Scary Face,Spirit Break||||0|sp
+expect You are limited to 1 of each item by Item Clause.
+expect (You have more than 1 Chimechite)
+played Luxray|Starminite|Guts|Discharge,Confuse Ray,Body Slam,Charge Beam||50|
+played Metagross|Chimechite|Light Metal|Rest,Zen Headbutt,Psycho Cut|N|50|
+played Drampa|Heat Rock|Berserk|Thunderbolt,Outrage,Attract||50|
+played Azumarill|Chimechite|Huge Power|Ice Spinner,Substitute,Bulldoze||50|
+played Reuniclus||Regenerator|Rain Dance,Guard Swap,Charm||50|
+played Grimmsnarl|Absolite|Prankster|Trick,Scary Face,Spirit Break|M|50|
+end
+case championsvgc-1860016
+format gen9championsvgc2026regmc
+set Umbreon||Synchronize|Mild|50|11,8,14,11,20,0|31,31,31,31,31,31|Facade,Endure||||0|sp
+set Zoroark-Hisui||Illusion|Mild|50|15,3,22,18,8,0|31,31,31,31,31,31|Imprison,Imprison||||0|sp
+set Steelix||Sheer Force|Modest|50|26,30,2,8,0,0|31,31,31,31,31,31|Steel Roller||||0|sp
+set Sandaconda||Sand Spit|Jolly|50|7,17,20,9,13,0|31,31,31,31,31,31|High Horsepower,Bulldoze,Scary Face,Facade||||0|sp
+set Clefable|Coba Berry|Magic Guard|Lonely|50|0,2,10,1,3,0|31,31,31,31,31,31|Ice Beam,Grass Knot,Hyper Voice,Misty Terrain||||0|sp
+set Rotom-Mow|Occa Berry|Levitate|Rash|50|30,7,25,4,0,0|31,31,31,31,31,31|Uproar,Poltergeist,Electroweb,Round||||0|sp
+expect Zoroark has multiple copies of Imprison.
+played Umbreon||Synchronize|Facade,Endure||50|
+played Zoroark-Hisui||Illusion|Imprison,Imprison||100|
+played Steelix||Sheer Force|Steel Roller||50|
+played Sandaconda||Sand Spit|High Horsepower,Bulldoze,Scary Face,Facade||50|
+played Clefable|Coba Berry|Magic Guard|Ice Beam,Grass Knot,Hyper Voice,Misty Terrain||50|
+played Rotom-Mow|Occa Berry|Levitate|Uproar,Poltergeist,Electroweb,Round|N|50|
+end
+case championsvgc-1860018
+format gen9championsvgc2026regmc
+set Sinistcha|Chesto Berry|Heatproof|Serious|50|10,12,11,5,11,16|31,31,31,31,31,31|Calm Mind,Rage Powder,Phantom Force||||0|sp
+set Oranguru|Expert Belt|Inner Focus|Jolly|4|15,9,24,5,8,5|31,31,31,31,31,31|Final Gambit,Psychic Terrain,Energy Ball,Trailblaze||||0|sp
+set Diggersby|Charcoal|Cheek Pouch|Docile|50|13,32,14,0,2,2|31,31,31,31,31,31|Snore,U-turn,Thief||||0|sp
+set Goodra-Hisui||Sap Sipper|Brave|50|10,14,29,5,0,7|31,31,31,31,31,31|||||0|sp
+set Houndstone|Swampertite|Fluffy|Timid|50|25,22,3,5,7,3|31,31,31,31,31,31|Hex,Bulldoze||||0|sp
+set Vivillon|Alakazite|Friend Guard|Rash|50|11,21,30,4,0,0|31,31,31,31,31,31|Tailwind,Rage Powder||||0|sp
+expect Oranguru can't learn Final Gambit.
+expect Goodra-Hisui has no moves (it must have at least one to be usable).
+played Sinistcha|Chesto Berry|Heatproof|Calm Mind,Rage Powder,Phantom Force|N|50|
+played Oranguru|Expert Belt|Inner Focus|Final Gambit,Psychic Terrain,Energy Ball,Trailblaze||4|
+played Diggersby|Charcoal|Cheek Pouch|Snore,U-turn,Thief||50|
+played Goodra-Hisui||Sap Sipper|||100|
+played Houndstone|Swampertite|Fluffy|Hex,Bulldoze||50|
+played Vivillon|Alakazite|Friend Guard|Tailwind,Rage Powder||50|
+end
+case championsvgc-1860026
+format gen9championsvgc2026regmc
+set Swampert||Damp|Adamant|50|17,0,27,22,0,0|31,31,31,31,31,31|Blizzard,Mega Kick||||0|sp
+set Ceruledge|King's Rock|Flash Fire|Timid|50|3,11,15,30,5,1|31,31,31,31,31,31|Psych Up,Stored Power,Disable,Brick Break||||0|sp
+set Vivillon-High Plains|Chilan Berry|Shield Dust|Modest|50|27,1,16,11,4,1|31,31,31,31,31,31|Poison Powder,Pollen Puff,Giga Impact,Substitute||||0|sp
+set Raichu-Alola|Heracronite|Surge Surfer|Quirky|50|29,17,9,3,1,1|16,26,31,11,5,27|Expanding Force||||0|ev
+set Meowstic|Magnet|Keen Eye|Careful|50|0,0,23,1,3,14|31,31,31,31,31,31|Psychic Noise||||0|sp
+set Raichu-Alola|Oran Berry|Surge Surfer|Careful|50|28,10,1,7,6,13|31,31,31,31,31,31|Rain Dance,Rest||||0|sp
+expect Raichu's IVs are not maxed out, but this format requires all IVs to be 31.
+expect You are limited to one of each Pokémon by Species Clause.
+expect (You have more than one Raichu)
+played Swampert||Damp|Blizzard,Mega Kick||50|
+played Ceruledge|King's Rock|Flash Fire|Psych Up,Stored Power,Disable,Brick Break||50|
+played Vivillon-High Plains|Chilan Berry|Shield Dust|Poison Powder,Pollen Puff,Giga Impact,Substitute||50|
+played Raichu-Alola|Heracronite|Surge Surfer|Expanding Force||100|
+played Meowstic|Magnet|Keen Eye|Psychic Noise|M|50|
+played Raichu-Alola|Oran Berry|Surge Surfer|Rain Dance,Rest||50|
+end
+case championsvgc-1860033
+format gen9championsvgc2026regmc
+set Vivillon-Marine|Rindo Berry|Friend Guard|Bashful|50|17,30,14,5,0,0|31,31,31,31,31,31|Struggle Bug,Bug Buzz,Sunny Day,Hurricane||||0|sp
+set Blastoise|Spell Tag|Torrent|Quirky|50|15,3,22,9,1,11|31,31,31,31,31,31|Hyper Beam,Water Pulse||||0|sp
+set Gallade|Yache Berry|Steadfast|Naughty|120|2,1,26,23,8,0|31,31,22,31,7,31|Hypnosis,Air Slash,Knock Off,Reversal||||0|ev
+set Skeledirge|Skarmorite|Unaware|Bold|50|19,8,19,19,1,0|31,31,31,31,31,31|Temper Flare,Round||||0|sp
+set Diggersby|Focus Band|Pickup|Modest|50|32,22,9,3,0,0|31,31,31,31,31,31|Stone Edge||||0|sp
+set Avalugg-Hisui||Sturdy|Gentle|50|8,12,4,8,5,4|31,31,31,31,31,31|Endure||||0|sp
+expect Gallade (level 120) is above the maximum level of 100
+expect Gallade's IVs are not maxed out, but this format requires all IVs to be 31.
+played Vivillon-Marine|Rindo Berry|Friend Guard|Struggle Bug,Bug Buzz,Sunny Day,Hurricane||50|
+played Blastoise|Spell Tag|Torrent|Hyper Beam,Water Pulse||50|
+played Gallade|Yache Berry|Steadfast|Hypnosis,Air Slash,Knock Off,Reversal|M|120|
+played Skeledirge|Skarmorite|Unaware|Temper Flare,Round||50|
+played Diggersby|Focus Band|Pickup|Stone Edge||50|
+played Avalugg-Hisui||Sturdy|Endure||50|
+end
+case championsvgc-1860048
+format gen9championsvgc2026regmc
+set Gliscor|Yache Berry|Sand Veil|Modest|50|16,14,26,5,2,1|31,31,31,31,31,31|Assurance,Round,Feint,Crabhammer||||0|sp
+set Necrozma-Ultra|Ultranecrozium Z|Neuroforce|Hardy|50|19,21,7,5,4,7|31,31,31,31,31,31|Bulldoze||||0|sp
+set Excadrill|Hawluchanite|Mold Breaker|Bold|50|25,4,26,2,8,0|31,31,31,31,31,31|Earthquake,Swords Dance,Megahorn||||0|sp
+set Gholdengo||Good as Gold|Lax|50|22,7,18,9,8,2|31,31,31,31,31,31|Thunder,Focus Punch,Confuse Ray||||0|sp
+set Polteageist|Smooth Rock|Weak Armor|Bashful|50|5,17,7,7,26,2|31,31,31,31,31,31|Psyshock,Reflect||||0|sp
+set Runerigus|Slowbronite|Wandering Spirit|Quiet|50|12,5,12,11,12,12|31,31,31,31,31,31|Endure,Dark Pulse||||1|sp
+expect Necrozma-Ultra must start the battle as Necrozma-Dusk-Mane or Necrozma-Dawn-Wings holding Ultranecrozium Z. Please specify which Necrozma it should start as.
+expect Necrozma (Necrozma-Ultra) is tagged Restricted Legendary, which is banned by Flat Rules.
+expect Necrozma's item Ultranecrozium Z does not exist in Gen 9.
+played Gliscor|Yache Berry|Sand Veil|Assurance,Round,Feint,Crabhammer||50|
+played Necrozma-Ultra|Ultranecrozium Z|Neuroforce|Bulldoze|N|100|
+played Excadrill|Hawluchanite|Mold Breaker|Earthquake,Swords Dance,Megahorn||50|
+played Gholdengo||Good as Gold|Thunder,Focus Punch,Confuse Ray|N|50|
+played Polteageist|Smooth Rock|Weak Armor|Psyshock,Reflect|N|50|
+played Runerigus|Slowbronite|Wandering Spirit|Endure,Dark Pulse||50|
+end
+case championsvgc-1860057
+format gen9championsvgc2026regmc
+set Flareon||Flash Fire|Rash|50|31,25,6,0,2,0|31,31,31,31,31,31|Dig||||0|sp
+set Aggron|Barbaracite|Sturdy|Mild|50|19,11,23,2,0,11|31,31,31,31,31,31|Solar Beam,Focus Blast||||0|sp
+set Gourgeist-Super|Life Orb|Insomnia|Serious|50|3,31,30,1,0,0|31,31,31,31,31,31|Hyper Beam,Ally Switch,Endure||||0|sp
+set Rotom-Fan|Banettite|Levitate|Bold|50|31,18,17,0,0,0|31,31,31,31,31,31|Hyper Voice,Confuse Ray,Electric Terrain,Endure||||0|sp
+set Vaporeon|Roseli Berry|Water Absorb|Modest|50|23,10,28,1,4,0|31,31,31,31,31,31|Detect,Substitute,Water Pulse||||0|sp
+set Toxicroak|Heracronite|Poison Touch|Brave|50|255,251,2,0,0,0|31,31,31,31,31,31|Assurance,Quick Guard,Corrosive Gas,Round||||0|sp
+expect Toxicroak has more than 32 Stat Points in HP.
+expect Toxicroak has more than 32 Stat Points in Attack.
+expect Toxicroak has exactly 508 EVs, but this format does not restrict you to 510 EVs (If this was intentional, add exactly 1 to one of your EVs, which won't change its stats but will tell us that it wasn't a mistake).
+expect Toxicroak has 508 total Stat Points, which is more than this format's limit of 66.
+played Flareon||Flash Fire|Dig||50|
+played Aggron|Barbaracite|Sturdy|Solar Beam,Focus Blast||50|
+played Gourgeist-Super|Life Orb|Insomnia|Hyper Beam,Ally Switch,Endure||50|
+played Rotom-Fan|Banettite|Levitate|Hyper Voice,Confuse Ray,Electric Terrain,Endure|N|50|
+played Vaporeon|Roseli Berry|Water Absorb|Detect,Substitute,Water Pulse||50|
+played Toxicroak|Heracronite|Poison Touch|Assurance,Quick Guard,Corrosive Gas,Round||100|
+end
+case championsvgc-1860059
+format gen9championsvgc2026regmc
+set Venusaur|Dragalgite|Chlorophyll|Bashful|50|11,25,4,19,2,2|8,29,31,7,8,25|Giga Drain||||0|ev
+set Excadrill-Mega|Meganiumite|Piercing Drill|Hardy|50|32,32,1,0,0,0|31,31,31,31,31,31|Bulldoze||||0|sp
+set Vivillon-Fancy|Abomasite|Compound Eyes|Timid|50|17,10,25,3,6,5|31,31,31,31,31,31|Giga Drain||||0|sp
+set Dedenne|Expert Belt|Cheek Pouch|Rash|50|1,4,5,24,8,16|31,31,31,31,31,31|Facade,Rising Voltage||||0|sp
+set Feraligatr|Aggronite|Sheer Force|Bold|50|1,20,4,17,8,4|31,31,31,31,31,31|Double-Edge,Rock Tomb,Hydro Pump,Spite||||0|sp
+set Greninja|Wide Lens|Torrent|Sassy|50|3,23,2,20,3,8|31,31,31,31,31,31|Switcheroo,Blizzard,Low Kick,Flip Turn||||0|sp
+expect Venusaur's IVs are not maxed out, but this format requires all IVs to be 31.
+expect Excadrill-Mega transforms in-battle with Excadrite, please fix its item.
+expect Excadrill-Mega can't have Piercing Drill.
+played Venusaur|Dragalgite|Chlorophyll|Giga Drain||100|
+played Excadrill|Meganiumite|Piercing Drill|Bulldoze||100|
+played Vivillon-Fancy|Abomasite|Compound Eyes|Giga Drain||50|
+played Dedenne|Expert Belt|Cheek Pouch|Facade,Rising Voltage||50|
+played Feraligatr|Aggronite|Sheer Force|Double-Edge,Rock Tomb,Hydro Pump,Spite||50|
+played Greninja|Wide Lens|Torrent|Switcheroo,Blizzard,Low Kick,Flip Turn||50|
+end
+case championsvgc-1860065
+format gen9championsvgc2026regmc
+set Rotom-Wash|Wise Glasses|Levitate|Relaxed|50|19,32,12,0,2,1|31,1,9,1,31,0|Eerie Impulse,Will-O-Wisp,Spite||||0|ev
+set Spiritomb|Tanga Berry|Pressure|Lax|50|14,4,6,12,22,0|31,31,31,31,31,31|Facade||Meganium||0|sp
+set Vivillon-Fancy|Chimechite|Compound Eyes|Impish|50|3,7,27,5,1,12|31,31,31,31,31,31|Giga Drain,Giga Impact||||0|sp
+set Simipour||Torrent|Gentle|50|9,22,4,18,8,0|31,31,31,31,31,31|Belch,Hidden Power Ghost||||0|sp
+set Serperior|Muscle Band|Overgrow|Bashful|50|28,19,4,13,0,1|31,31,31,31,31,31|Dragon Tail,Endure,Wrap||Meganium||0|sp
+set Chimecho|Falinksite|Levitate|Timid|50|31,25,5,5,0,0|31,31,31,31,31,31|Taunt,Rain Dance||||0|sp
+expect Rotom's IVs are not maxed out, but this format requires all IVs to be 31.
+expect Meganium (Spiritomb) must not be nicknamed a different Pokémon species than what it actually is.
+expect Simipour's move Hidden Power Ghost does not exist in Gen 9.
+expect Simipour can't learn Hidden Power Ghost.
+expect Meganium (Serperior) must not be nicknamed a different Pokémon species than what it actually is.
+expect Your Pokémon must have different nicknames.
+expect (You have more than one Meganium)
+played Rotom-Wash|Wise Glasses|Levitate|Eerie Impulse,Will-O-Wisp,Spite|N|100|
+played Spiritomb|Tanga Berry|Pressure|Facade||100|
+played Vivillon-Fancy|Chimechite|Compound Eyes|Giga Drain,Giga Impact||50|
+played Simipour||Torrent|Belch,Hidden Power Ghost||100|
+played Serperior|Muscle Band|Overgrow|Dragon Tail,Endure,Wrap||100|
+played Chimecho|Falinksite|Levitate|Taunt,Rain Dance||50|
+end
+case championsvgc-1860100
+format gen9championsvgc2026regmc
+set Lucario|Dragon Fang|Inner Focus|Relaxed|50|27,12,20,3,2,0|31,31,31,31,31,31|Blaze Kick,Trailblaze,Detect,Hyper Beam||||0|sp
+set Sinistcha-Masterpiece|Pidgeotite|Hospitality|Quiet|50|8,21,20,1,1,5|31,31,31,31,31,31|Memento,Energy Ball||||0|sp
+set Kommo-o||Soundproof|Gentle|50|16,5,1,17,5,11|31,31,31,31,31,31|Protect,Upper Hand,Focus Blast||||0|sp
+set Garchomp|Greninjite|Rough Skin|Bashful|50|11,29,3,5,1,16|31,31,31,31,31,31|Aerial Ace,Iron Tail||||0|sp
+set Feraligatr|Dragoninite|Torrent|Calm|50|5,28,16,16,1,0|31,31,31,31,31,31|Surf,Water Pulse,Fake Tears,Blizzard||A Very Long Nickname Indeed||0|sp
+set Snivy|Floettite|Contrary|Docile|50|19,8,12,22,0,1|31,31,31,31,31,31|Endure||||0|sp
+expect Feraligatr's nickname "A Very Long Nickname Indeed" is too long.
+expect (It's 27 characters long, but should be 18 or less. Some characters, like emojis, may count as more than one.)
+expect Snivy does not exist in Gen 9.
+played Lucario|Dragon Fang|Inner Focus|Blaze Kick,Trailblaze,Detect,Hyper Beam||50|
+played Sinistcha-Masterpiece|Pidgeotite|Hospitality|Memento,Energy Ball|N|50|
+played Kommo-o||Soundproof|Protect,Upper Hand,Focus Blast||50|
+played Garchomp|Greninjite|Rough Skin|Aerial Ace,Iron Tail||50|
+played Feraligatr|Dragoninite|Torrent|Surf,Water Pulse,Fake Tears,Blizzard||100|
+played Snivy|Floettite|Contrary|Endure||100|
+end
+case championsvgc-1860110
+format gen9championsvgc2026regmc
+set Scovillain||Chlorophyll|Naive|50|9,7,28,7,10,4|31,31,31,31,31,31|Sleep Talk,Scary Face,Rest,Facade||||0|sp
+set Pelipper|Pinsirite|Rain Dish|Mild|50|27,31,0,1,4,3|31,31,31,31,31,31|Tailwind,Muddy Water,Sleep Talk,Spit Up||||0|sp
+set Basculegion|Scizorite|Swift Swim|Adamant|50|24,22,16,3,0,0|31,31,31,31,31,31|Snowscape,Spite,Phantom Force,Rest||||0|sp
+set Rotom-Wash||Levitate|Hardy|50|8,20,26,8,1,2|31,31,31,31,31,31|Sleep Talk||||0|sp
+set Floette-Eternal|Chesto Berry|Symbiosis|Rash|42|18,32,10,0,4,2|31,31,31,31,31,31|Fairy Wind,Celebrate,Wish||||0|sp
+set Trevenant||Natural Cure|Docile|50|3,4,18,13,15,8|31,31,31,31,31,31|Focus Blast||||0|sp
+expect Floette's move Fairy Wind does not exist in Gen 9.
+expect Floette's move Celebrate does not exist in Gen 9.
+expect Floette-Eternal can't learn Fairy Wind.
+expect Floette-Eternal is only obtainable from an event - it needs to match its event:
+expect Floette-Eternal must be at least level 72 to be from its event.
+played Scovillain||Chlorophyll|Sleep Talk,Scary Face,Rest,Facade||50|
+played Pelipper|Pinsirite|Rain Dish|Tailwind,Muddy Water,Sleep Talk,Spit Up||50|
+played Basculegion|Scizorite|Swift Swim|Snowscape,Spite,Phantom Force,Rest|M|50|
+played Rotom-Wash||Levitate|Sleep Talk|N|50|
+played Floette-Eternal|Chesto Berry|Symbiosis|Fairy Wind,Celebrate,Wish|F|42|
+played Trevenant||Natural Cure|Focus Blast||50|
+end
+case championsvgc-1860117
+format gen9championsvgc2026regmc
+set Zoroark||Illusion|Quiet|50|8,6,26,11,6,5|31,31,31,31,31,31|Mega Kick,Torment||||0|sp
+set Hoopa-Unbound|Emboarite|Magician|Calm|50|2,5,8,6,29,9|31,31,31,31,31,31|Hyperspace Hole,Facade,Gravity||||0|sp
+set Vivillon-Archipelago|Expert Belt|Compound Eyes|Naughty|50|21,6,14,24,1,0|31,31,31,31,31,31|Air Cutter||||0|sp
+set Terapagos-Terastal|Occa Berry|Tera Shell|Quirky|50|27,0,12,7,5,2|31,31,31,31,31,31|Earth Power,Rapid Spin||||0|sp
+set Alcremie-Matcha-Cream|Froslassite|Sweet Veil|Quirky|50|17,20,8,9,6,5|31,31,31,31,31,31|Attract,Endeavor,Encore||||0|sp
+set Simisage|Emboarite|Gluttony|Quiet|50|23,25,7,8,0,1|31,31,31,31,31,31|Bite||||0|sp
+expect In Generation 9, Hoopa-Unbound cannot run Hyperspace Hole because it gets replaced with Hyperspace Fury upon changing forme.
+expect Hoopa (Hoopa-Unbound) is tagged Mythical, which is banned by Flat Rules.
+expect Hoopa's move Hyperspace Hole does not exist in Gen 9.
+expect Terapagos is tagged Restricted Legendary, which is banned by Flat Rules.
+expect You are limited to 1 of each item by Item Clause.
+expect (You have more than 1 Emboarite)
+played Zoroark||Illusion|Mega Kick,Torment||50|
+played Hoopa-Unbound|Emboarite|Magician|Hyperspace Hole,Facade,Gravity|N|100|
+played Vivillon-Archipelago|Expert Belt|Compound Eyes|Air Cutter||50|
+played Terapagos|Occa Berry|Tera Shift|Earth Power,Rapid Spin|M|100|
+played Alcremie-Matcha-Cream|Froslassite|Sweet Veil|Attract,Endeavor,Encore|F|50|
+played Simisage|Emboarite|Gluttony|Bite||50|
+end
+case championsvgc-1860125
+format gen9championsvgc2026regmc
+set Noivern|Sharpedonite|Infiltrator|Jolly|50|12,10,9,15,9,2|31,31,31,31,31,31|Wild Charge,Body Slam,Leech Life||||0|sp
+set Vivillon-Sun|Sharp Beak|Friend Guard|Naive|50|0,29,14,11,6,0|31,31,31,31,31,31|U-turn,Struggle Bug||||0|sp
+set Ponyta|Sharp Beak|Run Away|Naive|50|2,23,30,7,2,1|31,31,31,31,31,31|Agility,Snore,Will-O-Wisp,Substitute||||0|sp
+set Sylveon|Scolipite|Pixilate|Calm|50|1,2,32,31,0,0|31,31,31,31,31,31|Misty Terrain||||0|sp
+set Abomasnow||Soundproof|Naive|50|26,17,1,3,18,1|31,31,31,31,31,31|Body Press,Swagger,Rain Dance||||0|sp
+set Sinistcha-Masterpiece|Emboarite|Hospitality|Timid|50|16,28,20,1,1,0|31,31,31,31,31,31|Phantom Force||||0|sp
+expect Ponyta does not exist in Gen 9.
+expect Ponyta's move Agility can't be transferred from Gen 8 to 9.
+expect You are limited to 1 of each item by Item Clause.
+expect (You have more than 1 Sharp Beak)
+played Noivern|Sharpedonite|Infiltrator|Wild Charge,Body Slam,Leech Life||50|
+played Vivillon-Sun|Sharp Beak|Friend Guard|U-turn,Struggle Bug||50|
+played Ponyta|Sharp Beak|Run Away|Agility,Snore,Will-O-Wisp,Substitute||100|
+played Sylveon|Scolipite|Pixilate|Misty Terrain||50|
+played Abomasnow||Soundproof|Body Press,Swagger,Rain Dance||50|
+played Sinistcha-Masterpiece|Emboarite|Hospitality|Phantom Force|N|50|
+end
+case championsvgc-1860165
+format gen9championsvgc2026regmc
+set Salazzle-Totem|Hawluchanite|Corrosion|Docile|50|31,23,7,5,0,0|31,31,31,31,31,31|Incinerate,Thunder Wave,Nasty Plot||||0|sp
+set Kangaskhan|Ampharosite|Inner Focus|Bold|50|19,7,1,7,9,16|31,31,31,31,31,31|Protect||||0|sp
+set Gourgeist-Super|Barbaracite|Pickup|Jolly|50|2,0,15,8,14,20|31,31,31,31,31,31|Giga Drain||||0|sp
+set Machamp|Expert Belt|Guts|Hardy|50|15,25,21,4,1,0|31,31,31,31,31,31|Stomping Tantrum,Drain Punch||||0|sp
+set Vanilluxe|Swampertite|Snow Warning|Docile|50|4,0,18,13,21,4|31,31,31,31,31,31|Aurora Veil,Sheer Cold,Icicle Spear||||0|sp
+set Hoopa|Muscle Band|Magician|Impish|50|32,28,4,1,1,0|31,31,31,31,31,31|Skill Swap,Hyperspace Fury||||0|sp
+expect Salazzle (Salazzle-Totem) does not exist in Gen 9.
+expect Salazzle's move Incinerate does not exist in Gen 9.
+expect Salazzle-Totem can't learn Incinerate.
+expect In Generation 9, Hoopa cannot run Hyperspace Fury because it gets replaced with Hyperspace Hole upon changing forme.
+expect Hoopa is tagged Mythical, which is banned by Flat Rules.
+expect Hoopa's move Hyperspace Fury does not exist in Gen 9.
+played Salazzle-Totem|Hawluchanite|Corrosion|Incinerate,Thunder Wave,Nasty Plot|F|100|
+played Kangaskhan|Ampharosite|Inner Focus|Protect|F|50|
+played Gourgeist-Super|Barbaracite|Pickup|Giga Drain||50|
+played Machamp|Expert Belt|Guts|Stomping Tantrum,Drain Punch||50|
+played Vanilluxe|Swampertite|Snow Warning|Aurora Veil,Sheer Cold,Icicle Spear||50|
+played Hoopa|Muscle Band|Magician|Skill Swap,Hyperspace Fury|N|100|
+end
+case championsvgc-1860167
+format gen9championsvgc2026regmc
+set Vivillon-Pokeball|Eelektrossite|Shield Dust|Gentle|50|1,24,25,7,9,0|31,31,31,31,31,31|Rage Powder,Weather Ball||||0|sp
+set Farigiraf||Sap Sipper|Gentle|50|8,23,18,5,7,4|31,31,31,31,31,31|Energy Ball,Ally Switch,Trick Room,Grass Knot||||0|sp
+set Qwilfish||Intimidate|Timid|2|32,31,1,1,0,1|31,31,31,31,31,31|Flail,Payback,Protect||||0|sp
+set Spiritomb|Garchompite|Infiltrator|Lonely|50|5,25,13,14,9,0|31,31,31,31,31,31|Poltergeist||||0|sp
+set Blaziken|Dragoninite|Speed Boost|Jolly|50|29,18,3,10,2,2|31,31,31,31,31,31|Reversal,Aura Sphere,Heat Wave||||0|sp
+set Hydrapple|Floettite|Supersweet Syrup|Sassy|50|7,7,11,18,2,8|31,31,31,31,31,31|Protect,Body Press,Grass Knot,Dragon Pulse||||0|sp
+set Simipour|Gyaradosite|Torrent|Quirky|50|8,27,10,13,3,0|31,31,31,31,31,31|Taunt,Fling||||0|sp
+expect You may only bring up to 6 Pokémon (your team has 7).
+played Vivillon-Pokeball|Eelektrossite|Shield Dust|Rage Powder,Weather Ball||50|
+played Farigiraf||Sap Sipper|Energy Ball,Ally Switch,Trick Room,Grass Knot||50|
+played Qwilfish||Intimidate|Flail,Payback,Protect||2|
+played Spiritomb|Garchompite|Infiltrator|Poltergeist||50|
+played Blaziken|Dragoninite|Speed Boost|Reversal,Aura Sphere,Heat Wave||50|
+played Hydrapple|Floettite|Supersweet Syrup|Protect,Body Press,Grass Knot,Dragon Pulse||50|
+played Simipour|Gyaradosite|Torrent|Taunt,Fling||50|
+end
+case championsvgc-1860266
+format gen9championsvgc2026regmc
+set Samurott|Hard Stone|Torrent|Brave|50|1,27,24,3,0,8|31,31,31,31,31,31|Helping Hand,Rest,Fling||||0|sp
+set Vivillon-Garden|Sablenite|Shield Dust|Timid|50|21,10,4,18,13,0|31,31,31,31,31,31|Quiver Dance,Sunny Day,Pollen Puff||||0|sp
+set Zygarde|Zygardite|Aura Break|Timid|50|3,30,25,1,2,4|31,31,31,31,31,31|||||0|sp
+set Arcanine|Malicious Armor|Flash Fire|Timid|50|21,29,2,2,11,0|31,31,31,31,31,31|Fire Blast,Temper Flare,Hyper Beam||||0|sp
+set Scolipede||Speed Boost|Gentle|50|11,28,24,2,0,0|31,31,31,31,31,31|Agility,Double-Edge||||0|sp
+set Alcremie-Matcha-Cream|Wide Lens|Aroma Veil|Naive|50|2,7,2,0,32,13|31,31,31,31,31,31|Mystical Fire||||0|sp
+expect Zygarde holding Zygardite can only Mega Evolve with the Power Construct ability.
+expect Zygarde is tagged Restricted Legendary, which is banned by Flat Rules.
+expect Zygarde's item Zygardite does not exist in Gen 9.
+expect Zygarde has no moves (it must have at least one to be usable).
+expect Arcanine's item Malicious Armor does not exist in Gen 9.
+played Samurott|Hard Stone|Torrent|Helping Hand,Rest,Fling||50|
+played Vivillon-Garden|Sablenite|Shield Dust|Quiver Dance,Sunny Day,Pollen Puff||50|
+played Zygarde|Zygardite|Aura Break||N|100|
+played Arcanine|Malicious Armor|Flash Fire|Fire Blast,Temper Flare,Hyper Beam||100|
+played Scolipede||Speed Boost|Agility,Double-Edge||50|
+played Alcremie-Matcha-Cream|Wide Lens|Aroma Veil|Mystical Fire|F|50|
+end
+case championsvgc-1860411
+format gen9championsvgc2026regmc
+set Ogerpon-Wellspring|Soft Sand|Water Absorb|Docile|50|29,9,8,10,2,1|31,31,31,31,31,31|Thunder,Snore||||0|sp
+set Gallade||Justified|Serious|50|0,0,0,0,0,0|31,31,31,31,31,31|Hypnosis,Body Slam,Aura Sphere,Agility||||0|sp
+set Alcremie-Ruby-Swirl|Dragalgite|Aroma Veil|Naive|50|11,10,5,25,12,1|31,31,31,31,31,31|Substitute,Round,Recover||||0|sp
+set Ogerpon-Wellspring|Wellspring Mask|Water Absorb|Sassy|50|1,19,11,14,19,0|31,31,31,31,31,31|Counter,Growth,Rest,Energy Ball||||0|sp
+set Umbreon||Inner Focus|Brave|50|16,16,31,2,1,0|31,31,31,31,31,31|Trailblaze||||0|sp
+set Feraligatr||Torrent|Naughty|50|27,2,16,18,0,1|31,31,31,31,31,31|Bulldoze||||0|sp
+expect Ogerpon needs to hold Wellspring Mask to be in its Wellspring forme.
+expect (It will revert to its Teal forme if you remove the item or give it a different item.)
+expect Ogerpon (Ogerpon-Wellspring) does not exist in Gen 9.
+expect Ogerpon-Wellspring can't learn Thunder.
+expect Gallade has exactly 0 Stat Points - did you forget to invest it? (If this was intentional, change your Nature to a different neutral Nature, which won't change its stats but will tell us that it wasn't a mistake).
+expect Ogerpon (Ogerpon-Wellspring) does not exist in Gen 9.
+expect Ogerpon's item Wellspring Mask does not exist in Gen 9.
+expect You are limited to one of each Pokémon by Species Clause.
+expect (You have more than one Ogerpon)
+played Ogerpon-Wellspring|Soft Sand|Water Absorb|Thunder,Snore|F|100|
+played Gallade||Justified|Hypnosis,Body Slam,Aura Sphere,Agility|M|100|
+played Alcremie-Ruby-Swirl|Dragalgite|Aroma Veil|Substitute,Round,Recover|F|50|
+played Ogerpon-Wellspring|Wellspring Mask|Water Absorb|Counter,Growth,Rest,Energy Ball|F|100|
+played Umbreon||Inner Focus|Trailblaze||50|
+played Feraligatr||Torrent|Bulldoze||50|
+end
+case championsvgc-1860495
+format gen9championsvgc2026regmc
+set Palafin|Shed Shell|Zero to Hero|Brave|50|6,28,25,4,3,0|31,31,31,31,31,31|Close Combat,Reversal||||0|sp
+set Slowbro-Galar|Excadrite|Own Tempo|Lax|50|17,6,11,32,0,0|31,31,31,31,31,31|Tri Attack,Whirlpool||||0|sp
+set Simipour|Emboarite|Gluttony|Bold|50|30,21,3,8,4,0|31,31,31,31,31,31|Rock Tomb,Aqua Ring,Belch||||0|sp
+set Ursaluna||Bulletproof|Hardy|50|12,19,14,20,1,0|31,31,31,31,31,31|Supercell Slam,Bulk Up,Shadow Claw,High Horsepower||||0|sp
+set Zygarde-Complete|Zygardite|Power Construct|Bashful|50|12,31,23,0,0,0|31,31,31,31,31,31|||||0|sp
+set Drampa|Lucarionite|Sap Sipper|Brave|50|11,27,26,0,0,2|31,31,31,31,31,31|Roost,Thunder Wave,Blizzard||||0|sp
+expect Ursaluna does not exist in Gen 9.
+expect Zygarde-Complete must start the battle as Zygarde or Zygarde-10% with Power Construct. Please specify which Zygarde it should start as.
+expect Zygarde (Zygarde-Mega) is tagged Restricted Legendary, which is banned by Flat Rules.
+expect Zygarde's item Zygardite does not exist in Gen 9.
+expect Zygarde-Complete has no moves (it must have at least one to be usable).
+played Palafin|Shed Shell|Zero to Hero|Close Combat,Reversal||50|
+played Slowbro-Galar|Excadrite|Own Tempo|Tri Attack,Whirlpool||50|
+played Simipour|Emboarite|Gluttony|Rock Tomb,Aqua Ring,Belch||50|
+played Ursaluna||Bulletproof|Supercell Slam,Bulk Up,Shadow Claw,High Horsepower||100|
+played Zygarde-Complete|Zygardite|Power Construct||N|100|
+played Drampa|Lucarionite|Sap Sipper|Roost,Thunder Wave,Blizzard||50|
+end
+case championsvgc-1860559
+format gen9championsvgc2026regmc
+set Vivillon-Archipelago|Scizorite|Compound Eyes|Mild|10|4,23,6,10,13,8|31,31,31,31,31,31|Quiver Dance,Thief,Safeguard,Stun Spore||||0|sp
+set Garbodor|Scraftinite|Weak Armor|Lonely|50|15,7,3,3,31,0|31,31,31,31,31,31|||||0|sp
+set Avalugg-Hisui|Slowbronite|Strong Jaw|Docile|50|4,15,2,32,9,0|31,31,31,31,31,31|Hyper Beam,Chilling Water||||0|sp
+set Charizard|Feraligite|Solar Power|Hasty|50|28,2,7,16,2,7|31,31,31,31,31,31|Rock Tomb||||0|sp
+set Sandile||Intimidate|Naughty|50|32,23,7,1,0,0|31,31,31,31,31,31|Skitter Smack||||0|sp
+set Furfrou||Fur Coat|Lax|50|31,10,7,10,5,0|31,31,31,31,31,31|Hyper Voice||||0|sp
+expect Vivillon-Archipelago must be at least level 12 to be evolved.
+expect It failed to validate as a Pokemon from Pokemon GO because:
+expect Vivillon-Archipelago must be at least level 12 to be from Pokemon GO.
+expect Garbodor has no moves (it must have at least one to be usable).
+expect Sandile does not exist in Gen 9.
+played Vivillon-Archipelago|Scizorite|Compound Eyes|Quiver Dance,Thief,Safeguard,Stun Spore||10|
+played Garbodor|Scraftinite|Weak Armor|||100|
+played Avalugg-Hisui|Slowbronite|Strong Jaw|Hyper Beam,Chilling Water||50|
+played Charizard|Feraligite|Solar Power|Rock Tomb||50|
+played Sandile||Intimidate|Skitter Smack||100|
+played Furfrou||Fur Coat|Hyper Voice||50|
+end
+case championsvgc-1860756
+format gen9championsvgc2026regmc
+set Cofagrigus|Dragalgite|Mummy|Impish|50|1,31,4,5,17,1|31,31,31,31,31,31|Zen Headbutt,Snore,Power Swap,Poltergeist||||0|sp
+set Emolga||Static|Sassy|50|18,16,7,14,11,0|31,31,31,31,31,31|Air Slash,Covet,Quick Attack,Air Slash||||0|sp
+set Feraligatr|Focus Sash|Torrent|Careful|50|21,0,31,4,4,1|31,31,31,31,31,31|Counter,Scary Face||||0|sp
+set Aromatisse|Eelektrossite|Healer|Docile|50|18,6,26,15,0,1|31,31,31,31,31,31|Nasty Plot,Flail||||0|sp
+set Keldeo-Resolute||Justified|Rash|50|20,21,5,16,3,1|31,31,31,31,31,31|Reflect,Surf||||0|sp
+set Annihilape||Defiant|Sassy|50|11,27,5,1,5,11|31,31,31,31,31,31|Swagger||||0|sp
+expect Emolga has multiple copies of Air Slash.
+expect Keldeo needs to know the move Secret Sword to be in its Resolute forme.
+expect (It will revert to its Ordinary forme if it forgets the move.)
+expect Keldeo (Keldeo-Resolute) is tagged Mythical, which is banned by Flat Rules.
+played Cofagrigus|Dragalgite|Mummy|Zen Headbutt,Snore,Power Swap,Poltergeist||50|
+played Emolga||Static|Air Slash,Covet,Quick Attack,Air Slash||100|
+played Feraligatr|Focus Sash|Torrent|Counter,Scary Face||50|
+played Aromatisse|Eelektrossite|Healer|Nasty Plot,Flail||50|
+played Keldeo-Resolute||Justified|Reflect,Surf|N|100|
+played Annihilape||Defiant|Swagger||50|
+end
+case championsvgc-1860902
+format gen9championsvgc2026regmc
+set Emboar|King's Rock|Reckless|Adamant|50|14,20,7,17,1,1|31,31,31,31,31,31|Helping Hand,Yawn,Double-Edge||||0|sp
+set Meloetta-Pirouette|Mystic Water|Serene Grace|Adamant|50|9,27,21,7,0,0|31,31,31,31,31,31|Sleep Talk,Teeter Dance,Drain Punch||||0|sp
+set Scovillain|Focus Sash|Chlorophyll|Bold|50|1,16,20,16,12,0|31,31,31,31,31,31|Sunny Day||||0|sp
+set Aromatisse||Aroma Veil|Quirky|50|13,1,2,3,11,17|31,31,31,31,31,31|Flail||||0|sp
+set Flapple|Skarmorite|Hustle|Quirky|50|21,19,26,0,0,0|31,31,31,31,31,31|Grav Apple,Solar Beam||||0|sp
+set Tauros-Paldea-Aqua|Dragon Fang|Intimidate|Naughty|50|28,25,5,1,0,1|31,31,31,31,31,31|Wave Crash,Zen Headbutt,Iron Tail,Rock Slide||||0|sp
+expect Meloetta-Pirouette transforms in-battle with Relic Song, please fix its moves.
+expect Meloetta is tagged Mythical, which is banned by Flat Rules.
+played Emboar|King's Rock|Reckless|Helping Hand,Yawn,Double-Edge||50|
+played Meloetta|Mystic Water|Serene Grace|Sleep Talk,Teeter Dance,Drain Punch|N|100|
+played Scovillain|Focus Sash|Chlorophyll|Sunny Day||50|
+played Aromatisse||Aroma Veil|Flail||50|
+played Flapple|Skarmorite|Hustle|Grav Apple,Solar Beam||50|
+played Tauros-Paldea-Aqua|Dragon Fang|Intimidate|Wave Crash,Zen Headbutt,Iron Tail,Rock Slide|M|50|
+end

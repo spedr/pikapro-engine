@@ -1,0 +1,536 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed bad5 756c 0608 2653
+genders drawn
+team p1
+Meganium (M) @ Meganiumite
+Ability: Overgrow
+Level: 50
+Tera Type: Grass
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Docile Nature
+- Electro Shot
+- Rain Dance
+- Blizzard
+- Solar Beam
+
+Tyranitar (M)
+Ability: Sand Stream
+Level: 50
+Tera Type: Normal
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Rash Nature
+- Sunny Day
+
+Venusaur (M)
+Ability: Chlorophyll
+Level: 50
+Tera Type: Normal
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Adamant Nature
+- Hydro Pump
+- Rock Slide
+
+Froslass (F)
+Ability: Snow Cloak
+Level: 50
+Tera Type: Normal
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Serious Nature
+- Blizzard
+
+Swampert (M)
+Ability: Torrent
+Level: 50
+Tera Type: Normal
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Hardy Nature
+- Thunder
+- Snowscape
+- Hydro Pump
+- Sunny Day
+
+Excadrill (M)
+Ability: Sand Rush
+Level: 50
+Tera Type: Normal
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Modest Nature
+- Blizzard
+end
+team p2
+Meganium (M) @ Meganiumite
+Ability: Overgrow
+Level: 50
+Tera Type: Grass
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Impish Nature
+- Electro Shot
+- Rain Dance
+- Solar Blade
+- Synthesis
+
+Hippowdon (M)
+Ability: Sand Stream
+Level: 50
+Tera Type: Normal
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Calm Nature
+- Rain Dance
+- Surf
+
+Froslass (F)
+Ability: Snow Cloak
+Level: 50
+Tera Type: Normal
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Hardy Nature
+- Rock Slide
+
+Charizard (M)
+Ability: Solar Power
+Level: 50
+Tera Type: Normal
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Modest Nature
+- Flamethrower
+
+Pelipper (M)
+Ability: Drizzle
+Level: 50
+Tera Type: Normal
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Bold Nature
+- Power Gem
+
+Ninetales (M)
+Ability: Drought
+Level: 50
+Tera Type: Normal
+EVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
+Rash Nature
+- Hydro Pump
+- Rock Slide
+end
+choice p1 team 1542
+choice p2 team 1265
+choice p1 move 1 1 mega, move 4
+choice p2 move 3 1, switch 4
+choice p1 move 2, move 1 2
+choice p2 move 1, switch 4
+choice p1 move 4 2, switch 4
+choice p2 move 1 2 mega, move 1
+choice p2 pass, switch 4
+choice p1 move 3, move 1
+choice p2 move 1, move 1 1
+choice p2 switch 3, pass
+choice p1 move 4 -2, move 1
+choice p2 move 1 2, move 1 2
+choice p1 pass, switch 4
+choice p2 move 1 2, move 1 1
+choice p1 move 1 2, move 1 2
+choice p2 move 1 -2, move 1 -1
+choice p1 move 1, move 2
+choice p2 move 1 1, pass
+choice p1 move 4 1, move 1 -1
+choice p2 move 1 2, pass
+choice p1 move 3, move 1 -1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Meganium, L50, M|
+expect |poke|p1|Tyranitar, L50, M|
+expect |poke|p1|Venusaur, L50, M|
+expect |poke|p1|Froslass, L50, F|
+expect |poke|p1|Swampert, L50, M|
+expect |poke|p1|Excadrill, L50, M|
+expect |poke|p2|Meganium, L50, M|
+expect |poke|p2|Hippowdon, L50, M|
+expect |poke|p2|Froslass, L50, F|
+expect |poke|p2|Charizard, L50, M|
+expect |poke|p2|Pelipper, L50, M|
+expect |poke|p2|Ninetales, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |rng|2|1
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Meganium|Meganium, L50, M|165/165
+expect |switch|p1a: Meganium|Meganium, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Swampert|Swampert, L50, M|185/185
+expect |switch|p1b: Swampert|Swampert, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Meganium|Meganium, L50, M|165/165
+expect |switch|p2a: Meganium|Meganium, L50, M|100/100
+expect |rng|2|0
+expect |split|p2
+expect |switch|p2b: Hippowdon|Hippowdon, L50, M|193/193
+expect |switch|p2b: Hippowdon|Hippowdon, L50, M|100/100
+expect |rng|2|1
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p2b: Hippowdon
+expect |rng|2|1
+expect |rng|2|0
+expect |turn|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |split|p2
+expect |switch|p2b: Pelipper|Pelipper, L50, M|145/145
+expect |switch|p2b: Pelipper|Pelipper, L50, M|100/100
+expect |rng|2|1
+expect |rng|2|0
+expect |-weather|RainDance|[from] ability: Drizzle|[of] p2b: Pelipper
+expect |rng|2|1
+expect |rng|2|0
+expect |detailschange|p1a: Meganium|Meganium-Mega, L50, M
+expect |-mega|p1a: Meganium|Meganium|Meganiumite
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Meganium|Solar Blade||[still]
+expect |-prepare|p2a: Meganium|Solar Blade
+expect |rng|2|1
+expect |move|p1a: Meganium|Electro Shot||[still]
+expect |-prepare|p1a: Meganium|Electro Shot
+expect |-boost|p1a: Meganium|spa|1
+expect |-anim|p1a: Meganium|Electro Shot|p2a: Meganium
+expect |rng|100|29
+expect |rng|24|16
+expect |rng|16|0
+expect |-resisted|p2a: Meganium|1
+expect |split|p2
+expect |-damage|p2a: Meganium|108/165
+expect |-damage|p2a: Meganium|65/100
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Swampert|Sunny Day|p1b: Swampert
+expect |-weather|SunnyDay
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |rng|2|1
+expect |rng|2|0
+expect |upkeep
+expect |rng|2|1
+expect |turn|2
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |split|p2
+expect |switch|p2b: Hippowdon|Hippowdon, L50, M|193/193
+expect |switch|p2b: Hippowdon|Hippowdon, L50, M|100/100
+expect |rng|2|0
+expect |rng|2|1
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p2b: Hippowdon
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Meganium|Rain Dance|p1a: Meganium
+expect |-weather|RainDance
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Meganium|Solar Blade|p1a: Meganium|[from] lockedmove
+expect |rng|100|52
+expect |rng|24|8
+expect |rng|16|9
+expect |-resisted|p1a: Meganium|1
+expect |split|p1
+expect |-damage|p1a: Meganium|150/165
+expect |-damage|p1a: Meganium|90/100
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: Swampert|Thunder|p2b: Hippowdon
+expect |-immune|p2b: Hippowdon
+expect |rng|2|0
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |rng|2|0
+expect |rng|2|1
+expect |upkeep
+expect |rng|2|0
+expect |turn|3
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |split|p1
+expect |switch|p1b: Tyranitar|Tyranitar, L50, M|185/185
+expect |switch|p1b: Tyranitar|Tyranitar, L50, M|100/100
+expect |rng|2|0
+expect |rng|2|0
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p1b: Tyranitar
+expect |rng|2|1
+expect |rng|2|0
+expect |detailschange|p2a: Meganium|Meganium-Mega, L50, M
+expect |-mega|p2a: Meganium|Meganium|Meganiumite
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Meganium|Solar Beam||[still]
+expect |-prepare|p1a: Meganium|Solar Beam
+expect |-activate|p1a: Meganium|ability: Mega Sol
+expect |-anim|p1a: Meganium|Solar Beam|p2b: Hippowdon
+expect |rng|100|65
+expect |rng|24|8
+expect |rng|16|12
+expect |-supereffective|p2b: Hippowdon|1
+expect |split|p2
+expect |-damage|p2b: Hippowdon|0 fnt
+expect |-damage|p2b: Hippowdon|0 fnt
+expect |rng|2|0
+expect |faint|p2b: Hippowdon
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Meganium|Electro Shot||[still]
+expect |-prepare|p2a: Meganium|Electro Shot
+expect |-boost|p2a: Meganium|spa|1
+expect |rng|2|0
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |rng|2|1
+expect |split|p2
+expect |-damage|p2a: Meganium|98/165|[from] Sandstorm
+expect |-damage|p2a: Meganium|59/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Meganium|140/165|[from] Sandstorm
+expect |-damage|p1a: Meganium|84/100|[from] Sandstorm
+expect |rng|2|0
+expect |upkeep
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Pelipper|Pelipper, L50, M|145/145
+expect |switch|p2b: Pelipper|Pelipper, L50, M|100/100
+expect |rng|2|0
+expect |rng|2|1
+expect |-weather|RainDance|[from] ability: Drizzle|[of] p2b: Pelipper
+expect |rng|2|1
+expect |rng|2|1
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Meganium|Blizzard|p2b: Pelipper|[spread] p2a,p2b
+expect |rng|100|29
+expect |rng|100|56
+expect |rng|24|17
+expect |rng|16|3
+expect |-supereffective|p2a: Meganium|1
+expect |rng|24|21
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Meganium|0 fnt
+expect |-damage|p2a: Meganium|0 fnt
+expect |split|p2
+expect |-damage|p2b: Pelipper|59/145
+expect |-damage|p2b: Pelipper|40/100
+expect |rng|100|78
+expect |rng|100|79
+expect |rng|2|1
+expect |faint|p2a: Meganium
+expect |move|p2b: Pelipper|Power Gem|p1a: Meganium
+expect |rng|100|83
+expect |rng|24|16
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Meganium|111/165
+expect |-damage|p1a: Meganium|67/100
+expect |move|p1b: Tyranitar|Sunny Day|p1b: Tyranitar
+expect |-weather|SunnyDay
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Ninetales|Ninetales, L50, M|158/158
+expect |switch|p2a: Ninetales|Ninetales, L50, M|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2a: Ninetales|Hydro Pump|p1b: Tyranitar
+expect |rng|100|68
+expect |rng|24|7
+expect |rng|16|5
+expect |-supereffective|p1b: Tyranitar|1
+expect |split|p1
+expect |-damage|p1b: Tyranitar|137/185
+expect |-damage|p1b: Tyranitar|74/100
+expect |move|p1a: Meganium|Solar Beam||[still]
+expect |-prepare|p1a: Meganium|Solar Beam
+expect |-anim|p1a: Meganium|Solar Beam|p1b: Tyranitar
+expect |rng|100|83
+expect |rng|24|10
+expect |rng|16|4
+expect |-supereffective|p1b: Tyranitar|1
+expect |split|p1
+expect |-damage|p1b: Tyranitar|0 fnt
+expect |-damage|p1b: Tyranitar|0 fnt
+expect |faint|p1b: Tyranitar
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Pelipper|Power Gem|p1a: Meganium
+expect |rng|100|72
+expect |rng|24|3
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Meganium|83/165
+expect |-damage|p1a: Meganium|50/100g
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Swampert|Swampert, L50, M|185/185
+expect |switch|p1b: Swampert|Swampert, L50, M|100/100
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Ninetales|Hydro Pump|p1b: Swampert
+expect |rng|100|52
+expect |rng|24|21
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Swampert|162/185
+expect |-damage|p1b: Swampert|87/100
+expect |move|p1a: Meganium|Electro Shot||[still]
+expect |-prepare|p1a: Meganium|Electro Shot
+expect |-boost|p1a: Meganium|spa|1
+expect |move|p2b: Pelipper|Power Gem|p1a: Meganium
+expect |rng|100|49
+expect |rng|24|20
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Meganium|55/165
+expect |-damage|p1a: Meganium|33/100
+expect |move|p1b: Swampert|Thunder|p2b: Pelipper|[miss]
+expect |rng|100|70
+expect |-miss|p1b: Swampert|p2b: Pelipper
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Ninetales|Hydro Pump|p2b: Pelipper
+expect |rng|100|5
+expect |rng|24|18
+expect |rng|16|15
+expect |-resisted|p2b: Pelipper|1
+expect |split|p2
+expect |-damage|p2b: Pelipper|47/145
+expect |-damage|p2b: Pelipper|32/100
+expect |move|p1a: Meganium|Electro Shot|p2b: Pelipper|[from] lockedmove
+expect |rng|100|89
+expect |rng|24|14
+expect |rng|16|9
+expect |-supereffective|p2b: Pelipper|2
+expect |split|p2
+expect |-damage|p2b: Pelipper|0 fnt
+expect |-damage|p2b: Pelipper|0 fnt
+expect |faint|p2b: Pelipper
+expect |move|p1b: Swampert|Snowscape|p1b: Swampert
+expect |-weather|Snowscape
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2a: Ninetales|Hydro Pump|p1a: Meganium
+expect |rng|100|75
+expect |rng|24|4
+expect |rng|16|15
+expect |-resisted|p1a: Meganium|1
+expect |split|p1
+expect |-damage|p1a: Meganium|38/165
+expect |-damage|p1a: Meganium|23/100
+expect |move|p1a: Meganium|Solar Beam||[still]
+expect |-prepare|p1a: Meganium|Solar Beam
+expect |-activate|p1a: Meganium|ability: Mega Sol
+expect |-anim|p1a: Meganium|Solar Beam|p2a: Ninetales
+expect |rng|100|4
+expect |rng|24|16
+expect |rng|16|13
+expect |-resisted|p2a: Ninetales|1
+expect |split|p2
+expect |-damage|p2a: Ninetales|56/158
+expect |-damage|p2a: Ninetales|35/100
+expect |move|p1b: Swampert|Thunder|p1a: Meganium
+expect |rng|100|26
+expect |rng|24|8
+expect |rng|16|7
+expect |-resisted|p1a: Meganium|1
+expect |split|p1
+expect |-damage|p1a: Meganium|20/165
+expect |-damage|p1a: Meganium|12/100
+expect |rng|100|85
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|9
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p2a: Ninetales|Hydro Pump|p1b: Swampert
+expect |rng|100|10
+expect |rng|24|14
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Swampert|115/185
+expect |-damage|p1b: Swampert|62/100
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Meganium|Blizzard|p2a: Ninetales
+expect |rng|24|18
+expect |rng|16|15
+expect |-resisted|p2a: Ninetales|1
+expect |split|p2
+expect |-damage|p2a: Ninetales|0 fnt
+expect |-damage|p2a: Ninetales|0 fnt
+expect |rng|100|57
+expect |faint|p2a: Ninetales
+expect |
+expect |win|p1

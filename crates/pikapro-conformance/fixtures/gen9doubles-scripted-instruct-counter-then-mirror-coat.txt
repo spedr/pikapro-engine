@@ -1,0 +1,150 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Snorlax
+Ability: Thick Fat
+Hardy Nature
+- Counter
+- Mirror Coat
+
+Magnezone
+Ability: Sturdy
+Hardy Nature
+- Instruct
+- Splash
+end
+team p2
+Machamp
+Ability: Guts
+Hardy Nature
+- Tackle
+
+Alakazam
+Ability: Synchronize
+Hardy Nature
+- Confusion
+end
+choice p1 move 1, move 2
+choice p2 move 1 1, move 1 1
+choice p1 move 2, move 1 -1
+choice p2 move 1 1, move 1 1
+choice p1 move 1, move 2
+choice p2 move 1 1, move 1 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Snorlax|Snorlax, F|461/461
+expect |switch|p1a: Snorlax|Snorlax, F|461/461
+expect |split|p1
+expect |switch|p1b: Magnezone|Magnezone|281/281
+expect |switch|p1b: Magnezone|Magnezone|281/281
+expect |split|p2
+expect |switch|p2a: Machamp|Machamp, F|321/321
+expect |switch|p2a: Machamp|Machamp, F|321/321
+expect |split|p2
+expect |switch|p2b: Alakazam|Alakazam, F|251/251
+expect |switch|p2b: Alakazam|Alakazam, F|251/251
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2b: Alakazam|Confusion|p1a: Snorlax
+expect |rng|100|70
+expect |rng|24|2
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Snorlax|383/461
+expect |-damage|p1a: Snorlax|383/461
+expect |rng|100|38
+expect |move|p1b: Magnezone|Splash|p1b: Magnezone
+expect |-nothing
+expect |move|p2a: Machamp|Tackle|p1a: Snorlax
+expect |rng|100|13
+expect |rng|24|1
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Snorlax|328/461
+expect |-damage|p1a: Snorlax|328/461
+expect |move|p1a: Snorlax|Counter|p2a: Machamp
+expect |rng|100|1
+expect |split|p2
+expect |-damage|p2a: Machamp|211/321
+expect |-damage|p2a: Machamp|211/321
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2b: Alakazam|Confusion|p1a: Snorlax
+expect |rng|100|37
+expect |rng|24|5
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Snorlax|262/461
+expect |-damage|p1a: Snorlax|262/461
+expect |rng|100|15
+expect |move|p1b: Magnezone|Instruct|p1a: Snorlax
+expect |-singleturn|p1a: Snorlax|move: Instruct|[of] p1b: Magnezone
+expect |move|p2a: Machamp|Tackle|p1a: Snorlax
+expect |rng|100|12
+expect |rng|24|23
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Snorlax|205/461
+expect |-damage|p1a: Snorlax|205/461
+expect |move|p1a: Snorlax|Mirror Coat|p2b: Alakazam
+expect |rng|100|55
+expect |split|p2
+expect |-damage|p2b: Alakazam|119/251
+expect |-damage|p2b: Alakazam|119/251
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|3
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2b: Alakazam|Confusion|p1a: Snorlax
+expect |rng|100|45
+expect |rng|24|18
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Snorlax|130/461
+expect |-damage|p1a: Snorlax|130/461
+expect |rng|100|49
+expect |move|p1b: Magnezone|Splash|p1b: Magnezone
+expect |-nothing
+expect |move|p2a: Machamp|Tackle|p1a: Snorlax
+expect |rng|100|91
+expect |rng|24|15
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Snorlax|72/461
+expect |-damage|p1a: Snorlax|72/461
+expect |move|p1a: Snorlax|Counter|p2a: Machamp
+expect |rng|100|98
+expect |split|p2
+expect |-damage|p2a: Machamp|95/321
+expect |-damage|p2a: Machamp|95/321
+expect |
+expect |upkeep
+expect |turn|4

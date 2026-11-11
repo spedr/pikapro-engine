@@ -1,0 +1,574 @@
+# gen9vgc-gen5-2121020-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay omniscient
+@write
+# a comment
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,359e3b3932273709","rated":"Tournament battle"}
+>player p1 {"name":"Alice","team":[{"name":"ThisNameIsFarTooLongToKeep","species":"Gogoat","item":"Choice Specs","ability":"Sap Sipper","moves":["Branch Poke"],"nature":"Gentle","evs":{"hp":6,"atk":239,"def":33,"spa":3,"spd":19,"spe":208},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground"},{"name":"Wo-Chien","species":"Wo-Chien","item":"","ability":"Tablets of Ruin","moves":["Infernal Parade","Iron Head","Encore","Poltergeist"],"nature":"Timid","evs":{"hp":83,"atk":71,"def":17,"spa":108,"spd":155,"spe":19},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal"},{"name":"Nibbles","species":"Zacian","item":"Yache Berry","ability":"Intrepid Sword","moves":["Imprison"],"nature":"Timid","evs":{"hp":219,"atk":40,"def":55,"spa":84,"spd":10,"spe":101},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal"},{"name":"Magmortar","species":"Magmortar","item":"Kee Berry","ability":"Vital Spirit","moves":["Swallow","Parting Shot"],"nature":"Bashful","evs":{"hp":26,"atk":7,"def":154,"spa":94,"spd":125,"spe":78},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel"},{"name":"Torracat","species":"Torracat","item":"","ability":"Intimidate","moves":["Sheer Cold"],"nature":"Adamant","evs":{"hp":182,"atk":15,"def":157,"spa":33,"spd":58,"spe":48},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock"},{"name":"Mr. Bubbles","species":"Floette","item":"","ability":"Flower Veil","moves":["Steel Roller","Nuzzle","Disable"],"nature":"Serious","evs":{"hp":6,"atk":53,"def":36,"spa":56,"spd":0,"spe":9},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground"}]}
+@write
+>player p2 {"name":"Bob","team":"Big Tony's Pal|Piplup||Torrent|ThunderPunch,Torment,MeteorMash|Lax|141,45,213,84,,26|M|||50|,,,,,Ground]Nibbles|Lombre||SwiftSwim|ScaryFace,HyperDrill,Endure|Bashful|92,20,14,28,65,182|M|||50|,,,,,Flying]Magcargo||LifeOrb|FlameBody|WingAttack,Taunt|Rash|20,37,179,145,85,35|||S|50|,,,,,Water]Elekid||ChoiceBand|VitalSpirit|ArmorCannon,Synthesis,Copycat|Brave|73,48,182,23,179,2||||50|,,,,,Dragon]Zoë|Hoopa||Magician|Imprison,PowerTrick,MuddyWater,PrismaticLaser|Naive|11,85,175,182,10,10||||50|,,,,,Grass]Shellos-East||SkyPlate|StormDrain|Bind,Venoshock,Explosion|Naive|6,12,82,75,133,197|M|||50|,,,,,Fighting"}
+>p2 skip
+@write
+>p2 team 3251
+>p1 team 2653
+@write
+# a comment
+>p1 move 4 -2 terastallize, move 2 1
+@write
+>p2 move taunt +1,switch Big Tony's Pal
+@write
+>p1 move Poltergeist -2,move 1 -1
+@write
+>p2 auto
+# a comment
+>p1 move 1 -2, switch 4
+@write
+>p2 move 1 1 terastallize, move 1 -1
+>p2 switch 4, move 3 2
+@write
+>p1 move encore 2 mega
+
+>p1 pass
+@write
+>p1 move 1 -2 ,  move 1
+>p1 move 1 1 mega, switch 4
+@write
+>p1 move ironhead 1 ,  switch torracat
+>p2 move 2 2, move 3 -1
+@write
+>p1 move Encore -2,move sheercold +1
+@write
+>p2 move 1 1, move 2 -1
+>p1 move 3 2, move sheercold 1 dynamax
+@write
+>p1 switch 3, move 1 1
+@write
+>p1 switch 1
+@write
+>p1 move Sheer Cold -2 terastallize
+>p2 switch 4, move 3 -1
+@write
+>p1 move poltergeist +1, move Sheer Cold +1
+@write
+>p2 move
+>p2 switch 4, pass
+@write
+>p2 move 2 1, move 2 -1
+>p1 undo
+@write
+>p1 switch 3, switch 4
+>p2 move 1 -2, move 2 2
+@write
+>p1 move 1, move 2 -1
+# a comment
+>p2 move 2 2, move 3 1
+@write
+>p1 move 1, switch 3
+>p1 switch 3, pass
+@write
+>p1 default
+>p2 move 1 1, move 1 2
+@write
+# a comment
+>p1 switch FLOETTE
+# a comment
+>p2 move 2 -2, move torment -1 dynamax
+@write
+>p2 move 3 ,  move Meteor Mash -1
+@write
+>p1 move 1 2, move 1 -1
+@write
+>p2 move 2 1, switch 3
+>p1 shift
+@write
+>p1 move nuzzle 1 terastal
+@write
+>p1 switch 2
+>requestteam p2
+@write
+>p1 move 2 1, move 1 -1
+@write
+>p1 switch zacian
+>p1 move nuzzle 1 dynamax, move 2 2
+@write
+>p2 move 1 2, move 3
+>p2 move 2 -2 terastallize, move 3
+@write
+>p2 switch 3, move 4 -1
+>p1 move 1 1, move 3 2
+@write
+>p2 switch 3, pass
+
+>p2 move 0
+@write
+>p1 move 3 1, move 2 1
+>p2 move 1 2, move 1
+@write
+>p1 undo
+@write
+>p2 move 2 -2, move 1
+@write
+>p1 move 2 -2, move 2 1
+@write
+>p2 move 2 2, move 4 2
+@write
+>p1 move Nuzzle +1, move Iron Head -1
+>p1 pass, switch 4
+@write
+>p1 move 2 2, move 1 2
+>p1 move 2 2, move 1 2
+@write
+>p2 move 2 1, move 1
+>p2 default
+@write
+>p1 switch Torracat
+
+>p1 pass, move 1 1
+@write
+>p1 undo
+>p2 move 2 -2
+@write
+>p2 move Endure,move 1
+>p1 pass, move 1 1
+@write
+>p2 move 2 2, move 1
+@write
+>p1 default
+# a comment
+>p2 move 3, move 4 -1
+@write
+>p2 move 3 1 terastallize, move 4 -1
+@write
+>p1 pass,move 1 +2
+>p2 move endure -1 terastallize
+@write
+>p2 move 1 -2, move 1
+@write
+>p2 switch LOMBRE
+>p1 pass, move 1 1
+@write
+>p2 move 2 2, move 1
+@write
+>p2 switch hoopa
+@write
+>p2 switch 1
+@write
+>p1 pass, move 1
+# a comment
+>p2 default
+@write
+>p1 switch
+@write
+>p2 pass, move 4 2
+@write
+>p1 pass, move 1
+@message
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+@message
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|rated|Tournament battle
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Gogoat, L50, M|
+|poke|p1|Wo-Chien, L50|
+|poke|p1|Zacian-*, L50|
+|poke|p1|Magmortar, L50, M|
+|poke|p1|Torracat, L50, M|
+|poke|p1|Floette, L50, F|
+|poke|p2|Piplup, L50, M|
+|poke|p2|Lombre, L50, M|
+|poke|p2|Magcargo, L50, F|
+|poke|p2|Elekid, L50, M|
+|poke|p2|Hoopa, L50|
+|poke|p2|Shellos-East, L50, M|
+|teampreview|4
+@message
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Wo-Chien|Wo-Chien, L50|170/170
+|switch|p1b: Mr. Bubbles|Floette, L50, F|130/130
+|switch|p2a: Magcargo|Magcargo, L50, F, shiny|138/138
+|switch|p2b: Nibbles|Lombre, L50, M|147/147
+|-ability|p1a: Wo-Chien|Tablets of Ruin
+|turn|1
+@message
+|
+|t:|
+|switch|p2b: Big Tony's Pal|Piplup, L50, M|146/146
+|-terastallize|p1a: Wo-Chien|Normal
+|move|p1a: Wo-Chien|Poltergeist||[still]
+|-fail|p1a: Wo-Chien
+|move|p1b: Mr. Bubbles|Nuzzle|p2a: Magcargo
+|-damage|p2a: Magcargo|135/138
+|-status|p2a: Magcargo|par
+|move|p2a: Magcargo|Taunt|p1a: Wo-Chien
+|-start|p1a: Wo-Chien|move: Taunt
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|move|p1a: Wo-Chien|Poltergeist||[still]
+|-fail|p1a: Wo-Chien
+|move|p1b: Mr. Bubbles|Steel Roller||[still]
+|-fail|p1b: Mr. Bubbles
+|move|p2b: Big Tony's Pal|Thunder Punch|p1a: Wo-Chien
+|-damage|p1a: Wo-Chien|154/170
+|move|p2a: Magcargo|Wing Attack|p1a: Wo-Chien
+|-damage|p1a: Wo-Chien|138/170
+|-damage|p2a: Magcargo|122/138 par|[from] item: Life Orb
+|
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|switch|p1b: Nibbles|Zacian, L50|194/194
+|-ability|p1b: Nibbles|Intrepid Sword|boost
+|-boost|p1b: Nibbles|atk|1
+|-terastallize|p2a: Magcargo|Water
+|move|p1a: Wo-Chien|Infernal Parade|p1b: Nibbles
+|-damage|p1b: Nibbles|168/194
+|-status|p1b: Nibbles|brn
+|move|p2b: Big Tony's Pal|Thunder Punch|p2a: Magcargo
+|-supereffective|p2a: Magcargo
+|-damage|p2a: Magcargo|100/138 par
+|move|p2a: Magcargo|Wing Attack|p1a: Wo-Chien
+|-damage|p1a: Wo-Chien|122/170
+|-damage|p2a: Magcargo|87/138 par|[from] item: Life Orb
+|
+|-damage|p1b: Nibbles|156/194 brn|[from] brn
+|upkeep
+|turn|4
+@message
+|
+|t:|
+|switch|p2a: Nibbles|Lombre, L50, M|147/147
+|move|p1b: Nibbles|Imprison|p1b: Nibbles
+|-start|p1b: Nibbles|move: Imprison
+|move|p1a: Wo-Chien|Infernal Parade|p1b: Nibbles
+|-damage|p1b: Nibbles|110/194 brn
+|move|p2b: Big Tony's Pal|Meteor Mash|p1b: Nibbles
+|-supereffective|p1b: Nibbles
+|-damage|p1b: Nibbles|76/194 brn
+|
+|-damage|p1b: Nibbles|64/194 brn|[from] brn
+|-end|p1a: Wo-Chien|move: Taunt
+|upkeep
+|turn|5
+@message
+|
+|t:|
+|switch|p1b: Torracat|Torracat, L50, M|163/163
+|-ability|p1b: Torracat|Intimidate|boost
+|-unboost|p2a: Nibbles|atk|1
+|-unboost|p2b: Big Tony's Pal|atk|1
+|move|p1a: Wo-Chien|Iron Head|p2a: Nibbles
+|-resisted|p2a: Nibbles
+|-damage|p2a: Nibbles|123/147
+|move|p2a: Nibbles|Hyper Drill|p1b: Torracat
+|-damage|p1b: Torracat|147/163
+|move|p2b: Big Tony's Pal|Meteor Mash|p2a: Nibbles
+|-resisted|p2a: Nibbles
+|-damage|p2a: Nibbles|114/147
+|
+|upkeep
+|turn|6
+@message
+|
+|t:|
+|move|p1b: Torracat|Sheer Cold|p2a: Nibbles|[miss]
+|-miss|p1b: Torracat|p2a: Nibbles
+|move|p1a: Wo-Chien|Encore|p1b: Torracat
+|-start|p1b: Torracat|Encore
+|move|p2a: Nibbles|Scary Face|p1a: Wo-Chien
+|-unboost|p1a: Wo-Chien|spe|2
+|move|p2b: Big Tony's Pal|Torment|p2a: Nibbles
+|-start|p2a: Nibbles|Torment
+|
+|upkeep
+|turn|7
+@message
+|
+|t:|
+|switch|p2a: Magcargo|Magcargo, L50, F, shiny, tera:Water|87/138 par
+|move|p1b: Torracat|Sheer Cold|p2a: Magcargo
+|-damage|p2a: Magcargo|0 fnt
+|faint|p2a: Magcargo
+|-ohko
+|move|p2b: Big Tony's Pal|Meteor Mash|p2: Magcargo|[notarget]
+|-fail|p2b: Big Tony's Pal
+|move|p1a: Wo-Chien|Poltergeist||[still]
+|-fail|p1a: Wo-Chien
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p2a: Nibbles|Lombre, L50, M|114/147
+|turn|8
+@message
+|
+|t:|
+|switch|p1b: Mr. Bubbles|Floette, L50, F|130/130
+|switch|p1a: Nibbles|Zacian, L50|64/194 brn
+|move|p2a: Nibbles|Hyper Drill|p1a: Nibbles
+|-damage|p1a: Nibbles|42/194 brn
+|move|p2b: Big Tony's Pal|Torment|p2a: Nibbles
+|-start|p2a: Nibbles|Torment
+|
+|-damage|p1a: Nibbles|30/194 brn|[from] brn
+|upkeep
+|turn|9
+@message
+|
+|t:|
+|move|p1a: Nibbles|Imprison|p1a: Nibbles
+|-start|p1a: Nibbles|move: Imprison
+|move|p2a: Nibbles|Scary Face|p2b: Big Tony's Pal
+|-unboost|p2b: Big Tony's Pal|spe|2
+|move|p1b: Mr. Bubbles|Nuzzle|p1a: Nibbles
+|-damage|p1a: Nibbles|25/194 brn
+|move|p2b: Big Tony's Pal|Torment|p1b: Mr. Bubbles
+|-start|p1b: Mr. Bubbles|Torment
+|
+|-damage|p1a: Nibbles|13/194 brn|[from] brn
+|upkeep
+|turn|10
+@message
+|
+|t:|
+|switch|p1b: Wo-Chien|Wo-Chien, L50, tera:Normal|122/170
+|-ability|p1b: Wo-Chien|Tablets of Ruin
+|move|p1a: Nibbles|Imprison||[still]
+|-fail|p1a: Nibbles
+|move|p2a: Nibbles|Hyper Drill|p1b: Wo-Chien
+|-damage|p1b: Wo-Chien|101/170
+|move|p2b: Big Tony's Pal|Meteor Mash|p1a: Nibbles
+|-supereffective|p1a: Nibbles
+|-damage|p1a: Nibbles|0 fnt
+|faint|p1a: Nibbles
+|
+|upkeep
+|
+|t:|
+|switch|p1a: Mr. Bubbles|Floette, L50, F|130/130
+|turn|11
+@message
+|
+|t:|
+|move|p1b: Wo-Chien|Infernal Parade|p2a: Nibbles
+|-damage|p2a: Nibbles|79/147
+|move|p2a: Nibbles|Scary Face|p1a: Mr. Bubbles
+|-unboost|p1a: Mr. Bubbles|spe|2
+|move|p1a: Mr. Bubbles|Steel Roller||[still]
+|-fail|p1a: Mr. Bubbles
+|move|p2b: Big Tony's Pal|Thunder Punch|p1b: Wo-Chien
+|-damage|p1b: Wo-Chien|90/170
+|
+|upkeep
+|turn|12
+@message
+|
+|t:|
+|move|p2a: Nibbles|Endure|p2a: Nibbles
+|-singleturn|p2a: Nibbles|move: Endure
+|move|p1b: Wo-Chien|Infernal Parade|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|103/130
+|move|p1a: Mr. Bubbles|Steel Roller||[still]
+|-fail|p1a: Mr. Bubbles
+|move|p2b: Big Tony's Pal|Meteor Mash|p2a: Nibbles
+|-resisted|p2a: Nibbles
+|-damage|p2a: Nibbles|69/147
+|
+|upkeep
+|turn|13
+@message
+requesteddata
+Big Tony's Pal|Piplup||Torrent|ThunderPunch,Torment,MeteorMash|Lax|141,45,213,84,,26|M|||50|,,,,,Ground]Nibbles|Lombre||SwiftSwim|ScaryFace,HyperDrill,Endure|Bashful|92,20,14,28,65,182|M|||50|,,,,,Flying]Magcargo||LifeOrb|FlameBody|WingAttack,Taunt|Rash|20,37,179,145,85,35|||S|50|,,,,,Water]Elekid||ChoiceBand|VitalSpirit|ArmorCannon,Synthesis,Copycat|Brave|73,48,182,23,179,2||||50|,,,,,Dragon]Zoë|Hoopa||Magician|Imprison,PowerTrick,MuddyWater,PrismaticLaser|Naive|11,85,175,182,10,10||||50|,,,,,Grass]Shellos|ShellosEast|SkyPlate|StormDrain|Bind,Venoshock,Explosion|Naive|6,12,82,75,133,197|M|||50|,,,,,Fighting
+@message
+|
+|t:|
+|switch|p2b: Zoë|Hoopa, L50|156/156
+|move|p1b: Wo-Chien|Infernal Parade|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|76/130
+|move|p2a: Nibbles|Hyper Drill|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|41/130
+|move|p1a: Mr. Bubbles|Nuzzle|p2a: Nibbles
+|-damage|p2a: Nibbles|62/147
+|-status|p2a: Nibbles|par
+|
+|upkeep
+|turn|14
+@message
+|
+|t:|
+|switch|p2a: Big Tony's Pal|Piplup, L50, M|146/146
+|move|p1b: Wo-Chien|Encore||[still]
+|-fail|p1b: Wo-Chien
+|move|p2b: Zoë|Prismatic Laser|p2a: Big Tony's Pal
+|-damage|p2a: Big Tony's Pal|0 fnt
+|-mustrecharge|p2b: Zoë
+|faint|p2a: Big Tony's Pal
+|move|p1a: Mr. Bubbles|Steel Roller||[still]
+|-fail|p1a: Mr. Bubbles
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p2a: Nibbles|Lombre, L50, M|62/147 par
+|turn|15
+@message
+|
+|t:|
+|move|p1b: Wo-Chien|Iron Head|p2a: Nibbles
+|-resisted|p2a: Nibbles
+|-damage|p2a: Nibbles|40/147 par
+|cant|p2b: Zoë|recharge
+|move|p2a: Nibbles|Scary Face|p1b: Wo-Chien
+|-unboost|p1b: Wo-Chien|spe|2
+|move|p1a: Mr. Bubbles|Disable|p2a: Nibbles
+|-start|p2a: Nibbles|Disable|Scary Face
+|
+|upkeep
+|turn|16
+@message
+|
+|t:|
+|move|p2b: Zoë|Imprison|p2b: Zoë
+|-start|p2b: Zoë|move: Imprison
+|move|p1b: Wo-Chien|Iron Head|p2a: Nibbles
+|-resisted|p2a: Nibbles
+|-damage|p2a: Nibbles|19/147 par
+|cant|p2a: Nibbles|par
+|move|p1a: Mr. Bubbles|Nuzzle|p1b: Wo-Chien
+|-damage|p1b: Wo-Chien|86/170
+|-status|p1b: Wo-Chien|par
+|
+|upkeep
+|turn|17
+@message
+|
+|t:|
+|move|p2b: Zoë|Prismatic Laser|p1b: Wo-Chien
+|-damage|p1b: Wo-Chien|0 fnt
+|-mustrecharge|p2b: Zoë
+|faint|p1b: Wo-Chien
+|move|p2a: Nibbles|Hyper Drill|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|1/130
+|move|p1a: Mr. Bubbles|Nuzzle|p2a: Nibbles
+|-damage|p2a: Nibbles|10/147 par
+|
+|upkeep
+|
+|t:|
+|switch|p1b: Torracat|Torracat, L50, M|147/163
+|-ability|p1b: Torracat|Intimidate|boost
+|-unboost|p2a: Nibbles|atk|1
+|-unboost|p2b: Zoë|atk|1
+|turn|18
+@message
+|
+|t:|
+|move|p1b: Torracat|Sheer Cold|p2b: Zoë|[miss]
+|-miss|p1b: Torracat|p2b: Zoë
+|cant|p2b: Zoë|recharge
+|move|p2a: Nibbles|Hyper Drill|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|0 fnt
+|faint|p1a: Mr. Bubbles
+|
+|upkeep
+|turn|19
+@message
+|
+|t:|
+|move|p1b: Torracat|Sheer Cold|p2a: Nibbles|[miss]
+|-miss|p1b: Torracat|p2a: Nibbles
+|move|p2b: Zoë|Imprison||[still]
+|-fail|p2b: Zoë
+|move|p2a: Nibbles|Hyper Drill|p1b: Torracat
+|-damage|p1b: Torracat|125/163
+|
+|-end|p2a: Nibbles|Disable
+|upkeep
+|turn|20
+@message
+|
+|t:|
+|cant|p2a: Nibbles|par
+|move|p1b: Torracat|Sheer Cold|p2a: Nibbles|[miss]
+|-miss|p1b: Torracat|p2a: Nibbles
+|move|p2b: Zoë|Imprison||[still]
+|-fail|p2b: Zoë
+|
+|upkeep
+|turn|21
+@message
+|
+|t:|
+|move|p1b: Torracat|Sheer Cold|p2b: Zoë|[miss]
+|-miss|p1b: Torracat|p2b: Zoë
+|move|p2b: Zoë|Imprison||[still]
+|-fail|p2b: Zoë
+|cant|p2a: Nibbles|par
+|
+|upkeep
+|turn|22
+@message
+|
+|t:|
+|move|p1b: Torracat|Sheer Cold|p2b: Zoë|[miss]
+|-miss|p1b: Torracat|p2b: Zoë
+|move|p2b: Zoë|Imprison||[still]
+|-fail|p2b: Zoë
+|cant|p2a: Nibbles|par
+|
+|upkeep
+|turn|23
+@message
+|
+|t:|
+|move|p1b: Torracat|Sheer Cold|p2a: Nibbles|[miss]
+|-miss|p1b: Torracat|p2a: Nibbles
+|move|p2b: Zoë|Imprison||[still]
+|-fail|p2b: Zoë
+|move|p2a: Nibbles|Hyper Drill|p1b: Torracat
+|-damage|p1b: Torracat|104/163
+|
+|upkeep
+|turn|24
+@message
+|
+|t:|
+|-activate|p1b: Torracat|move: Struggle
+|move|p1b: Torracat|Struggle|p2a: Nibbles
+|-damage|p2a: Nibbles|0 fnt
+|faint|p2a: Nibbles
+|-damage|p1b: Torracat|63/163|[from] recoil
+|move|p2b: Zoë|Imprison||[still]
+|-fail|p2b: Zoë
+|
+|upkeep
+|turn|25
+@message
+|
+|t:|
+|-activate|p1b: Torracat|move: Struggle
+|move|p1b: Torracat|Struggle|p2b: Zoë
+|-damage|p2b: Zoë|130/156
+|-damage|p1b: Torracat|22/163|[from] recoil
+|move|p2b: Zoë|Prismatic Laser|p1b: Torracat
+|-damage|p1b: Torracat|0 fnt
+|-mustrecharge|p2b: Zoë
+|faint|p1b: Torracat
+|
+|win|Bob

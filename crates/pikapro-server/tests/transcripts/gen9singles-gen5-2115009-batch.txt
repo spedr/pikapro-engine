@@ -1,0 +1,512 @@
+# gen9singles-gen5-2115009-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay spectator
+@write
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"gen5,15fb866c2bd78fcb"}
+>player p1 {"name":"Alice","team":"Yanma||FistPlate|Frisk|TachyonCutter,BurningBulwark,FlashCannon,FirePledge|Jolly|10,155,209,37,8,91||||50|,,,,,Ground]Vulpix-Alola|||SnowCloak|MakeItRain|Adamant|137,32,23,29,111,150|||S|50|,,,,,Bug]Sir Hops-a-Lot|GoodraHisui|AssaultVest|ShellArmor|RockSmash|Lonely|141,1,172,10,2,183|M|||50|,,,,,Electric]Zweilous||Electirizer|Hustle|ClangingScales,Taunt|Adamant|10,118,157,20,174,|M|||50|,,,,,Poison]Big Tony's Pal|Dodrio|HeavyBall|TangledFeet|CrushGrip|Adamant|30,2,183,6,247,40|M|||50|,,,,,Ghost]Clefairy|||FriendGuard|RockThrow,Stomp,SmartStrike|Lax|148,4,188,1,168,||||50|,,,,,Fairy","rating":1500}
+@write
+>player p2 {"name":"Bob","team":"Regigigas||ChoiceScarf|SlowStart|StoneAxe,Imprison,PowerTrip|Hasty|168,13,86,41,118,2||||50|,,,,,Dark]Sneasel||AbilityShield|Pickpocket|Imprison|Quiet|57,79,164,52,102,8||||50|,,,,,Stellar]Big Tony's Pal|Sudowoodo|UpGrade|Rattled|Imprison|Lonely|14,76,230,13,133,42|F|||50|,,,,,Water]Mimikyu||MetalCoat|Disguise|Overheat,ShoreUp,GastroAcid,TeraBlast|Naughty|199,245,16,24,7,2||||50|,,,,,Psychic]Chomp|IronThorns|AbilityShield|QuarkDrive|Imprison,SolarBeam,DragonBreath|Sassy|181,2,20,103,201,3||||50|,,,,,Grass]Lycanroc|||Steadfast|Taunt,GyroBall,Leafage,DrillPeck|Bashful|1,30,223,191,27,35|||S|50|,,,,,Dark"}
+>p2 pass, pass
+@write
+# a comment
+>p1 switch 6
+@write
+>p1 switch Dodrio
+@write
+>p2 move 3 terastal
+>p1 switch Zweilous
+@write
+>p2 move Stone Axe 2
+>p2   switch 4  
+@write
+
+>p1 move 2 +1 terastallize
+@write
+# a comment
+>p2 move 1
+@write
+>p2 switch Sneasel
+@write
+>p1 shift
+>p1 move 1
+@write
+>p2 switch 6
+@write
+>p1 default
+# a comment
+>p1 switch vulpix-alola
+@write
+>p1 switch
+@write
+>p2 move 4
+
+>p1 switch goodra-hisui
+@write
+
+>p1 switch 4
+@write
+# a comment
+>p2 pass, pass
+@write
+>p2 switch IRON THORNS
+>p1 switch vulpixalola
+@write
+>p2 switch 5
+@write
+>p1 switch 1, switch 1
+@write
+>reseed gen5,db2b94f11c78dc28
+@write
+>p1 switch 4
+>p2 switch 6
+@write
+>p1 move rocksmash +1 dynamax
+# a comment
+>p2 switch 6
+@write
+>p1 switch yanma
+@write
+>p1 move tachyoncutter
+# a comment
+>p2 undo
+@write
+
+>p2 move 3
+@write
+>p2 move 0
+
+>p2 move Leafage
+@write
+
+>p1 move
+@write
+>p2 switch 2
+>p2 switch 5
+@write
+>p1 switch 5
+# a comment
+>p2 switch 3
+@write
+# a comment
+>p1 switch dodrio
+@write
+>p2 move 1
+>p1 undo
+@write
+>p1 move Crush Grip
+@write
+>p1 move 1 1 terastallize
+>requestlog
+@write
+
+>p2 move Imprison 3
+>p1 switch 6
+@write
+>p1 switch 6
+@write
+>p2 pass, pass
+@write
+>p2 switch 4
+@write
+
+>p2 auto
+>p1 move 3
+@write
+>p2 move Stone Axe +1 terastallize
+>p1 switch yanma
+@write
+>p2 switch 5
+>p1 switch 5
+@write
+>p2 move 3
+@write
+>p1 move 3
+@write
+>p2 switch 4
+@write
+# a comment
+>p1 switch 2
+@write
+>p2 switch 6
+>p1 move 1
+@write
+>p2 switch 4
+>p2 move 2
+@write
+>p1 switch 3
+@write
+>p1 switch VULPIX
+>p2 switch 6
+@write
+>p1 switch 5
+@write
+>p2 switch 6
+@write
+>p2 switch 6
+@write
+>p1 switch 5
+>p2 switch 5
+@write
+
+>p1 switch Zweilous
+@write
+>p2 switch 4
+@write
+
+>p1 move 1 +1 terastal
+@write
+>p1 switch CLEFAIRY
+@write
+>p1 switch Vulpix
+@write
+>p2 switch sudowoodo
+@write
+>p2 switch Mimikyu
+@write
+>tiebreak
+@message
+|t:|
+|gametype|singles
+|player|p1|Alice||1500
+@message
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Yanma|Yanma, L50, M|141/141
+|switch|p2a: Regigigas|Regigigas, L50|206/206
+|-start|p2a: Regigigas|ability: Slow Start
+|-item|p2a: Regigigas|Choice Scarf|[from] ability: Frisk|[of] p1a: Yanma
+|turn|1
+@message
+|
+|t:|
+|switch|p1a: Big Tony's Pal|Dodrio, L50, M|139/139
+|-terastallize|p2a: Regigigas|Dark
+|move|p2a: Regigigas|Power Trip|p1a: Big Tony's Pal
+|-damage|p1a: Big Tony's Pal|105/139
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|switch|p1a: Zweilous|Zweilous, L50, M|148/148
+|switch|p2a: Mimikyu|Mimikyu, L50, M|155/155
+|
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|-terastallize|p1a: Zweilous|Poison
+|move|p2a: Mimikyu|Overheat|p1a: Zweilous
+|-damage|p1a: Zweilous|110/148
+|-unboost|p2a: Mimikyu|spa|2
+|move|p1a: Zweilous|Taunt|p2a: Mimikyu
+|-start|p2a: Mimikyu|move: Taunt
+|
+|upkeep
+|turn|4
+@message
+|
+|t:|
+|switch|p2a: Sneasel|Sneasel, L50, M|137/137
+|move|p1a: Zweilous|Clanging Scales|p2a: Sneasel
+|-damage|p2a: Sneasel|85/137
+|-unboost|p1a: Zweilous|def|1
+|
+|upkeep
+|turn|5
+@message
+|
+|t:|
+|switch|p2a: Lycanroc|Lycanroc, L50, M, shiny|150/150
+|move|p1a: Zweilous|Clanging Scales|p2a: Lycanroc
+|-damage|p2a: Lycanroc|87/150
+|-unboost|p1a: Zweilous|def|1
+|
+|upkeep
+|turn|6
+@message
+|
+|t:|
+|switch|p1a: Sir Hops-a-Lot|Goodra-Hisui, L50, M|173/173
+|move|p2a: Lycanroc|Drill Peck|p1a: Sir Hops-a-Lot
+|-resisted|p1a: Sir Hops-a-Lot
+|-damage|p1a: Sir Hops-a-Lot|155/173
+|
+|upkeep
+|turn|7
+@message
+|
+|t:|
+|switch|p2a: Chomp|Iron Thorns, L50|198/198
+|switch|p1a: Big Tony's Pal|Dodrio, L50, M|105/139
+|
+|upkeep
+|turn|8
+@message
+|
+|t:|
+|switch|p1a: Vulpix|Vulpix-Alola, L50, M, shiny|130/130
+|-end|p2a: Chomp|Quark Drive|[silent]
+|switch|p2a: Lycanroc|Lycanroc, L50, M, shiny|87/150
+|
+|upkeep
+|turn|9
+@message
+|message|The battle's RNG was reset.
+@message
+|
+|t:|
+|switch|p2a: Sneasel|Sneasel, L50, M|85/137
+|switch|p1a: Sir Hops-a-Lot|Goodra-Hisui, L50, M|155/173
+|
+|upkeep
+|turn|10
+@message
+|
+|t:|
+|switch|p2a: Lycanroc|Lycanroc, L50, M, shiny|87/150
+|switch|p1a: Yanma|Yanma, L50, M|141/141
+|
+|upkeep
+|turn|11
+@message
+|
+|t:|
+|move|p1a: Yanma|Tachyon Cutter|p2a: Lycanroc
+|-supereffective|p2a: Lycanroc
+|-damage|p2a: Lycanroc|47/150
+|-supereffective|p2a: Lycanroc
+|-damage|p2a: Lycanroc|3/150
+|-hitcount|p2a: Lycanroc|2
+|move|p2a: Lycanroc|Leafage|p1a: Yanma
+|-resisted|p1a: Yanma
+|-damage|p1a: Yanma|135/141
+|
+|upkeep
+|turn|12
+@message
+|
+|t:|
+|move|p1a: Yanma|Tachyon Cutter|p2a: Lycanroc
+|-supereffective|p2a: Lycanroc
+|-crit|p2a: Lycanroc
+|-damage|p2a: Lycanroc|0 fnt
+|faint|p2a: Lycanroc
+|-hitcount|p2: Lycanroc|1
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p2a: Mimikyu|Mimikyu, L50, M|155/155
+|turn|13
+@message
+|
+|t:|
+|switch|p1a: Sir Hops-a-Lot|Goodra-Hisui, L50, M|155/173
+|switch|p2a: Chomp|Iron Thorns, L50|198/198
+|
+|upkeep
+|turn|14
+@message
+|
+|t:|
+|switch|p1a: Big Tony's Pal|Dodrio, L50, M|105/139
+|-end|p2a: Chomp|Quark Drive|[silent]
+|switch|p2a: Big Tony's Pal|Sudowoodo, L50, F|147/147
+|
+|upkeep
+|turn|15
+@message
+|
+|t:|
+|move|p1a: Big Tony's Pal|Crush Grip|p2a: Big Tony's Pal
+|-resisted|p2a: Big Tony's Pal
+|-damage|p2a: Big Tony's Pal|112/147
+|move|p2a: Big Tony's Pal|Imprison|p2a: Big Tony's Pal
+|-start|p2a: Big Tony's Pal|move: Imprison
+|
+|upkeep
+|turn|16
+@message
+requesteddata
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"gen5,15fb866c2bd78fcb"}
+>player p1 {"name":"Alice","team":"Yanma||FistPlate|Frisk|TachyonCutter,BurningBulwark,FlashCannon,FirePledge|Jolly|10,155,209,37,8,91||||50|,,,,,Ground]Vulpix-Alola|||SnowCloak|MakeItRain|Adamant|137,32,23,29,111,150|||S|50|,,,,,Bug]Sir Hops-a-Lot|GoodraHisui|AssaultVest|ShellArmor|RockSmash|Lonely|141,1,172,10,2,183|M|||50|,,,,,Electric]Zweilous||Electirizer|Hustle|ClangingScales,Taunt|Adamant|10,118,157,20,174,|M|||50|,,,,,Poison]Big Tony's Pal|Dodrio|HeavyBall|TangledFeet|CrushGrip|Adamant|30,2,183,6,247,40|M|||50|,,,,,Ghost]Clefairy|||FriendGuard|RockThrow,Stomp,SmartStrike|Lax|148,4,188,1,168,||||50|,,,,,Fairy","rating":1500}
+>player p2 {"name":"Bob","team":"Regigigas||ChoiceScarf|SlowStart|StoneAxe,Imprison,PowerTrip|Hasty|168,13,86,41,118,2||||50|,,,,,Dark]Sneasel||AbilityShield|Pickpocket|Imprison|Quiet|57,79,164,52,102,8||||50|,,,,,Stellar]Big Tony's Pal|Sudowoodo|UpGrade|Rattled|Imprison|Lonely|14,76,230,13,133,42|F|||50|,,,,,Water]Mimikyu||MetalCoat|Disguise|Overheat,ShoreUp,GastroAcid,TeraBlast|Naughty|199,245,16,24,7,2||||50|,,,,,Psychic]Chomp|IronThorns|AbilityShield|QuarkDrive|Imprison,SolarBeam,DragonBreath|Sassy|181,2,20,103,201,3||||50|,,,,,Grass]Lycanroc|||Steadfast|Taunt,GyroBall,Leafage,DrillPeck|Bashful|1,30,223,191,27,35|||S|50|,,,,,Dark"}
+>p1 switch 5
+>p2 move powertrip terastallize
+>p1 switch 4
+>p2 switch 4
+>p1 move taunt terastallize
+>p2 move overheat
+>p1 move clangingscales
+>p2 switch 2
+>p1 move clangingscales
+>p2 switch 6
+>p1 switch 3
+>p2 move drillpeck
+>p1 switch 4
+>p2 switch 5
+>p1 switch 2
+>p2 switch 5
+>reseed 56107,38129,7288,56360
+>p1 switch 4
+>p2 switch 6
+>p1 switch 5
+>p2 switch 6
+>p1 move tachyoncutter
+>p2 move leafage
+>p1 move tachyoncutter
+>p2 move leafage
+>p2 switch 2
+>p1 switch 5
+>p2 switch 5
+>p1 switch 2
+>p2 switch 3
+>p1 move crushgrip
+>p2 move imprison
+@message
+|
+|t:|
+|switch|p1a: Clefairy|Clefairy, L50, F|164/164
+|switch|p2a: Regigigas|Regigigas, L50, tera:Dark|206/206
+|-start|p2a: Regigigas|ability: Slow Start
+|
+|upkeep
+|turn|17
+@message
+|
+|t:|
+|move|p2a: Regigigas|Stone Axe|p1a: Clefairy
+|-damage|p1a: Clefairy|141/164
+|-sidestart|p1: Alice|move: Stealth Rock
+|move|p1a: Clefairy|Smart Strike|p2a: Regigigas
+|-damage|p2a: Regigigas|189/206
+|
+|upkeep
+|turn|18
+@message
+|
+|t:|
+|switch|p2a: Mimikyu|Mimikyu, L50, M|155/155
+|switch|p1a: Yanma|Yanma, L50, M|135/141
+|-damage|p1a: Yanma|65/141|[from] Stealth Rock
+|-item|p2a: Mimikyu|Metal Coat|[from] ability: Frisk|[of] p1a: Yanma
+|
+|upkeep
+|turn|19
+@message
+|
+|t:|
+|switch|p1a: Clefairy|Clefairy, L50, F|141/164
+|-damage|p1a: Clefairy|121/164|[from] Stealth Rock
+|move|p2a: Mimikyu|Gastro Acid|p1a: Clefairy
+|-endability|p1a: Clefairy
+|
+|upkeep
+|turn|20
+@message
+|
+|t:|
+|switch|p2a: Big Tony's Pal|Sudowoodo, L50, F|112/147
+|move|p1a: Clefairy|Smart Strike|p2a: Big Tony's Pal
+|-supereffective|p2a: Big Tony's Pal
+|-damage|p2a: Big Tony's Pal|84/147
+|
+|upkeep
+|turn|21
+@message
+|
+|t:|
+|switch|p2a: Sneasel|Sneasel, L50, M|85/137
+|switch|p1a: Sir Hops-a-Lot|Goodra-Hisui, L50, M|155/173
+|-damage|p1a: Sir Hops-a-Lot|145/173|[from] Stealth Rock
+|
+|upkeep
+|turn|22
+@message
+|
+|t:|
+|switch|p2a: Mimikyu|Mimikyu, L50, M|155/155
+|move|p1a: Sir Hops-a-Lot|Rock Smash|p2a: Mimikyu
+|-immune|p2a: Mimikyu
+|
+|upkeep
+|turn|23
+@message
+|
+|t:|
+|switch|p1a: Zweilous|Zweilous, L50, M, tera:Poison|110/148
+|-damage|p1a: Zweilous|92/148|[from] Stealth Rock
+|move|p2a: Mimikyu|Shore Up|p2a: Mimikyu
+|-fail|p2a: Mimikyu|heal
+|
+|upkeep
+|turn|24
+@message
+|
+|t:|
+|switch|p2a: Big Tony's Pal|Sudowoodo, L50, F|84/147
+|switch|p1a: Vulpix|Vulpix-Alola, L50, M, shiny|130/130
+|-damage|p1a: Vulpix|98/130|[from] Stealth Rock
+|
+|upkeep
+|turn|25
+@message
+|
+|t:|
+|switch|p1a: Yanma|Yanma, L50, M|65/141
+|-damage|p1a: Yanma|0 fnt|[from] Stealth Rock
+|faint|p1a: Yanma
+|switch|p2a: Mimikyu|Mimikyu, L50, M|155/155
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1a: Vulpix|Vulpix-Alola, L50, M, shiny|98/130
+|-damage|p1a: Vulpix|66/130|[from] Stealth Rock
+|turn|26
+@message
+|
+|t:|
+|switch|p2a: Regigigas|Regigigas, L50, tera:Dark|189/206
+|-start|p2a: Regigigas|ability: Slow Start
+|switch|p1a: Zweilous|Zweilous, L50, M, tera:Poison|92/148
+|-damage|p1a: Zweilous|74/148|[from] Stealth Rock
+|
+|upkeep
+|turn|27
+@message
+|
+|t:|
+|switch|p2a: Sneasel|Sneasel, L50, M|85/137
+|switch|p1a: Clefairy|Clefairy, L50, F|121/164
+|-damage|p1a: Clefairy|101/164|[from] Stealth Rock
+|
+|upkeep
+|turn|28
+@message
+|
+|t:|
+|switch|p2a: Big Tony's Pal|Sudowoodo, L50, F|84/147
+|switch|p1a: Vulpix|Vulpix-Alola, L50, M, shiny|66/130
+|-damage|p1a: Vulpix|34/130|[from] Stealth Rock
+|
+|upkeep
+|turn|29
+@message
+|message|Time's up! Going to tiebreaker...
+|-message|Alice: 5 Pokemon left; Bob: 5 Pokemon left
+|-message|Alice: 50% total HP left; Bob: 68% total HP left
+|
+|win|Bob

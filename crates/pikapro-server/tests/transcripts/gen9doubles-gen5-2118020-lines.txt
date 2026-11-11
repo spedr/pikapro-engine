@@ -1,0 +1,451 @@
+# gen9doubles-gen5-2118020-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option keep-alive
+@write
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,9fb18c1eb0c28153"}
+@write
+>player p1 {"name":"Alice","team":"Blastoise|||RainDish|Taunt,CourtChange,DragonEnergy,DarkPulse|Bold|168,59,1,94,35,153||||50|,,,,,Stellar]Torracat||CobaBerry|Blaze|TopsyTurvy,Infestation|Serious|50,162,100,2,9,187||||50|,,,,,Fairy]Alcremie-Rainbow-Swirl||FigyBerry|SweetVeil|Encore,AcidArmor|Rash|31,39,13,89,89,247|F|||50|,,,,,Water]Sir Hops-a-Lot|Cranidos|KelpsyBerry|SheerForce|DragonClaw,AquaJet,Fling,Imprison|Adamant|3,,207,50,62,179||||50|,,,,,Fairy]Pikachu|Stunky|ShinyStone|ArenaTrap|StoneAxe|Lonely|129,17,198,34,102,29||||50|,,,,,Poison]Shaymin|||NaturalCure|MalignantChain,DragonAscent,PoisonJab|Quirky|5,204,97,181,11,11||||50|,,,,,Steel"}
+@write
+>player p2 {"name":"Bob","team":"Flittle||ChoiceScarf|SpeedBoost|Smokescreen,EchoedVoice|Lax|230,246,,,34,|||S|50|,,,,,Psychic]Pineco||ChoiceBand|Overcoat|DoubleKick,AstralBarrage,Mimic,Explosion|Rash|28,38,182,115,26,114||||50|,,,,,Fighting]Big Tony's Pal|Solgaleo|ChoiceScarf|FullMetalBody|Slam,LeafStorm,ShadowSneak|Bashful|15,151,182,71,2,57||||50|,,,,,Flying]Minior-Green|||ShieldsDown|Taunt|Hardy|2,204,73,39,30,162||||50|,,,,,Fighting]Mr. Bubbles|GastrodonEast||SandForce|Disable,PlayNice|Adamant|244,5,1,9,83,167||||50|,,,,,Ghost]Chomp|Toedscool|ChoiceBand|MyceliumMight|ArmorCannon|Lonely|11,91,154,59,167,20|F|||50|,,,,,Psychic"}
+@write
+>p2 move 1 +1,move 3 2
+@write
+>p1 move 2, move 2 1 terastallize
+@write
+>p2 move 2 -2
+@write
+>p2 move 1 3 terastallize
+@write
+>p1 move courtchange -1 terastal, switch 5
+@write
+>p1 move 1 1, switch 3
+@write
+>p2 move 1 2 terastallize, move 4
+@write
+>p2 switch 3, switch 6
+@write
+>p1 move 1 -2, switch 3
+@write
+>p2 move 3 1, switch 4
+@write
+>p1 move 4 -2, move 2 1
+@write
+>p2 move 3 1 terastal, move 1 2
+@write
+>p2 move 3 2, move 1 1
+@write
+>p2 move shadowsneak -2,move taunt +1
+@write
+>p1 undo
+@write
+>p1 switch STUNKY
+@write
+>p1 switch 5, move 2 -1
+@write
+>p2 move Leaf Storm +1 terastal, move 1 1
+@write
+>p1 move 1 -2, switch Alcremie
+@write
+>p2 move 3 2, switch 4
+@write
+>p2 switch miniorgreen
+@write
+>p2 move 2 dynamax
+@write
+>p2 switch Solgaleo
+@write
+>p2 move 3 1, move 1 1
+@write
+>p1 switch 3, switch 6
+@write
+>p1 switch 4, move Malignant Chain +1 terastal
+@write
+>forcetie
+@write
+>p1 move 1
+@write
+>chat after the end
+@write
+>forcewin p1
+@write
+>tiebreak
+@write
+>requestlog
+@write
+>p2 undo
+@message
+update
+|t:|
+|gametype|doubles
+@message
+update
+|player|p1|Alice||
+@message
+update
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: Blastoise|Blastoise, L50, F|175/175
+|switch|p1a: Blastoise|Blastoise, L50, F|175/175
+|split|p1
+|switch|p1b: Torracat|Torracat, L50, F|146/146
+|switch|p1b: Torracat|Torracat, L50, F|146/146
+|split|p2
+|switch|p2a: Flittle|Flittle, L50, F, shiny|134/134
+|switch|p2a: Flittle|Flittle, L50, F, shiny|134/134
+|split|p2
+|switch|p2b: Pineco|Pineco, L50, F|129/129
+|switch|p2b: Pineco|Pineco, L50, F|129/129
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Court Change","id":"courtchange","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Dragon Energy","id":"dragonenergy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":24,"maxpp":24,"target":"any","disabled":false}],"canTerastallize":"Stellar"},{"moves":[{"move":"Topsy-Turvy","id":"topsyturvy","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Infestation","id":"infestation","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Fairy"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Blastoise","details":"Blastoise, L50, F","condition":"175/175","active":true,"stats":{"atk":99,"def":132,"spa":117,"spd":129,"spe":117},"moves":["taunt","courtchange","dragonenergy","darkpulse"],"baseAbility":"raindish","item":"","pokeball":"pokeball","ability":"raindish","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Torracat","details":"Torracat, L50, F","condition":"146/146","active":true,"stats":{"atk":125,"def":83,"spa":100,"spd":71,"spe":133},"moves":["topsyturvy","infestation"],"baseAbility":"blaze","item":"cobaberry","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"144/144","active":false,"stats":{"atk":85,"def":97,"spa":155,"spd":136,"spe":115},"moves":["encore","acidarmor"],"baseAbility":"sweetveil","item":"figyberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Cranidos, L50, M","condition":"142/142","active":false,"stats":{"atk":159,"def":86,"spa":50,"spd":58,"spe":100},"moves":["dragonclaw","aquajet","fling","imprison"],"baseAbility":"sheerforce","item":"kelpsyberry","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Pikachu","details":"Stunky, L50, F","condition":"154/154","active":false,"stats":{"atk":93,"def":82,"spa":65,"spd":74,"spe":98},"moves":["stoneaxe"],"baseAbility":"arenatrap","item":"shinystone","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Shaymin","details":"Shaymin, L50","condition":"176/176","active":false,"stats":{"atk":146,"def":132,"spa":143,"spd":121,"spe":121},"moves":["malignantchain","dragonascent","poisonjab"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Smokescreen","id":"smokescreen","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Echoed Voice","id":"echoedvoice","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Psychic"},{"moves":[{"move":"Double Kick","id":"doublekick","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Astral Barrage","id":"astralbarrage","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Mimic","id":"mimic","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Explosion","id":"explosion","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}],"canTerastallize":"Fighting"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Flittle","details":"Flittle, L50, F, shiny","condition":"134/134","active":true,"stats":{"atk":86,"def":55,"spa":75,"spd":48,"spe":95},"moves":["smokescreen","echoedvoice"],"baseAbility":"speedboost","item":"choicescarf","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Pineco","details":"Pineco, L50, F","condition":"129/129","active":true,"stats":{"atk":90,"def":133,"spa":75,"spd":52,"spe":49},"moves":["doublekick","astralbarrage","mimic","explosion"],"baseAbility":"overcoat","item":"choiceband","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Solgaleo, L50","condition":"214/214","active":false,"stats":{"atk":176,"def":150,"spa":142,"spd":109,"spe":124},"moves":["slam","leafstorm","shadowsneak"],"baseAbility":"fullmetalbody","item":"choicescarf","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Minior","details":"Minior-Green, L50","condition":"135/135","active":false,"stats":{"atk":146,"def":89,"spa":125,"spd":84,"spe":160},"moves":["taunt"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Gastrodon-East, L50, M","condition":"217/217","active":false,"stats":{"atk":114,"def":88,"spa":101,"spd":112,"spe":80},"moves":["disable","playnice"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Chomp","details":"Toedscool, L50, F","condition":"116/116","active":false,"stats":{"atk":78,"def":66,"spa":77,"spd":141,"spe":93},"moves":["armorcannon"],"baseAbility":"myceliummight","item":"choiceband","pokeball":"pokeball","ability":"myceliummight","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|-terastallize|p1b: Torracat|Fairy
+|move|p2a: Flittle|Smokescreen|p1a: Blastoise
+|-unboost|p1a: Blastoise|accuracy|1
+|move|p1b: Torracat|Infestation|p2a: Flittle
+|-supereffective|p2a: Flittle
+|split|p2
+|-damage|p2a: Flittle|100/134
+|-damage|p2a: Flittle|100/134
+|-activate|p2a: Flittle|move: Infestation|[of] p1b: Torracat
+|move|p1a: Blastoise|Court Change||[still]
+|-fail|p1a: Blastoise
+|move|p2b: Pineco|Mimic|p1b: Torracat
+|-start|p2b: Pineco|Mimic|Infestation
+|
+|split|p2
+|-damage|p2a: Flittle|84/134|[from] move: Infestation|[partiallytrapped]
+|-damage|p2a: Flittle|84/134|[from] move: Infestation|[partiallytrapped]
+|-ability|p2a: Flittle|Speed Boost|boost
+|-boost|p2a: Flittle|spe|1
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Court Change","id":"courtchange","pp":15,"maxpp":16,"target":"all","disabled":false},{"move":"Dragon Energy","id":"dragonenergy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":24,"maxpp":24,"target":"any","disabled":false}]},{"moves":[{"move":"Topsy-Turvy","id":"topsyturvy","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Infestation","id":"infestation","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Blastoise","details":"Blastoise, L50, F","condition":"175/175","active":true,"stats":{"atk":99,"def":132,"spa":117,"spd":129,"spe":117},"moves":["taunt","courtchange","dragonenergy","darkpulse"],"baseAbility":"raindish","item":"","pokeball":"pokeball","ability":"raindish","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Torracat","details":"Torracat, L50, F","condition":"146/146","active":true,"stats":{"atk":125,"def":83,"spa":100,"spd":71,"spe":133},"moves":["topsyturvy","infestation"],"baseAbility":"blaze","item":"cobaberry","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"144/144","active":false,"stats":{"atk":85,"def":97,"spa":155,"spd":136,"spe":115},"moves":["encore","acidarmor"],"baseAbility":"sweetveil","item":"figyberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Cranidos, L50, M","condition":"142/142","active":false,"stats":{"atk":159,"def":86,"spa":50,"spd":58,"spe":100},"moves":["dragonclaw","aquajet","fling","imprison"],"baseAbility":"sheerforce","item":"kelpsyberry","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Pikachu","details":"Stunky, L50, F","condition":"154/154","active":false,"stats":{"atk":93,"def":82,"spa":65,"spd":74,"spe":98},"moves":["stoneaxe"],"baseAbility":"arenatrap","item":"shinystone","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Shaymin","details":"Shaymin, L50","condition":"176/176","active":false,"stats":{"atk":146,"def":132,"spa":143,"spd":121,"spe":121},"moves":["malignantchain","dragonascent","poisonjab"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Smokescreen","id":"smokescreen","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Echoed Voice","id":"echoedvoice","pp":24,"maxpp":24,"target":"normal","disabled":true}],"trapped":true,"canTerastallize":"Psychic"},{"moves":[{"move":"Double Kick","id":"doublekick","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Astral Barrage","id":"astralbarrage","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Infestation","id":"infestation","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Explosion","id":"explosion","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}],"canTerastallize":"Fighting"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Flittle","details":"Flittle, L50, F, shiny","condition":"84/134","active":true,"stats":{"atk":86,"def":55,"spa":75,"spd":48,"spe":95},"moves":["smokescreen","echoedvoice"],"baseAbility":"speedboost","item":"choicescarf","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Pineco","details":"Pineco, L50, F","condition":"129/129","active":true,"stats":{"atk":90,"def":133,"spa":75,"spd":52,"spe":49},"moves":["doublekick","astralbarrage","infestation","explosion"],"baseAbility":"overcoat","item":"choiceband","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Solgaleo, L50","condition":"214/214","active":false,"stats":{"atk":176,"def":150,"spa":142,"spd":109,"spe":124},"moves":["slam","leafstorm","shadowsneak"],"baseAbility":"fullmetalbody","item":"choicescarf","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Minior","details":"Minior-Green, L50","condition":"135/135","active":false,"stats":{"atk":146,"def":89,"spa":125,"spd":84,"spe":160},"moves":["taunt"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Gastrodon-East, L50, M","condition":"217/217","active":false,"stats":{"atk":114,"def":88,"spa":101,"spd":112,"spe":80},"moves":["disable","playnice"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Chomp","details":"Toedscool, L50, F","condition":"116/116","active":false,"stats":{"atk":78,"def":66,"spa":77,"spd":141,"spe":93},"moves":["armorcannon"],"baseAbility":"myceliummight","item":"choiceband","pokeball":"pokeball","ability":"myceliummight","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Unavailable choice] Can't move: Flittle's Echoed Voice is disabled
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Smokescreen","id":"smokescreen","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Echoed Voice","id":"echoedvoice","pp":24,"maxpp":24,"target":"normal","disabled":true,"disabledSource":""}],"trapped":true,"canTerastallize":"Psychic"},{"moves":[{"move":"Double Kick","id":"doublekick","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Astral Barrage","id":"astralbarrage","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Infestation","id":"infestation","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Explosion","id":"explosion","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}],"canTerastallize":"Fighting"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Flittle","details":"Flittle, L50, F, shiny","condition":"84/134","active":true,"stats":{"atk":86,"def":55,"spa":75,"spd":48,"spe":95},"moves":["smokescreen","echoedvoice"],"baseAbility":"speedboost","item":"choicescarf","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Pineco","details":"Pineco, L50, F","condition":"129/129","active":true,"stats":{"atk":90,"def":133,"spa":75,"spd":52,"spe":49},"moves":["doublekick","astralbarrage","infestation","explosion"],"baseAbility":"overcoat","item":"choiceband","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Solgaleo, L50","condition":"214/214","active":false,"stats":{"atk":176,"def":150,"spa":142,"spd":109,"spe":124},"moves":["slam","leafstorm","shadowsneak"],"baseAbility":"fullmetalbody","item":"choicescarf","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Minior","details":"Minior-Green, L50","condition":"135/135","active":false,"stats":{"atk":146,"def":89,"spa":125,"spd":84,"spe":160},"moves":["taunt"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Gastrodon-East, L50, M","condition":"217/217","active":false,"stats":{"atk":114,"def":88,"spa":101,"spd":112,"spe":80},"moves":["disable","playnice"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Chomp","details":"Toedscool, L50, F","condition":"116/116","active":false,"stats":{"atk":78,"def":66,"spa":77,"spd":141,"spe":93},"moves":["armorcannon"],"baseAbility":"myceliummight","item":"choiceband","pokeball":"pokeball","ability":"myceliummight","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]},"update":true}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Invalid target for Smokescreen
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You can't choose a target for Court Change
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Alcremie|Alcremie-Rainbow-Swirl, L50, F|144/144
+|switch|p1b: Alcremie|Alcremie-Rainbow-Swirl, L50, F|144/144
+|-terastallize|p2a: Flittle|Psychic
+|move|p2a: Flittle|Smokescreen|p1b: Alcremie
+|-unboost|p1b: Alcremie|accuracy|1
+|move|p1a: Blastoise|Taunt|p2a: Flittle|[miss]
+|-miss|p1a: Blastoise|p2a: Flittle
+|move|p2b: Pineco|Explosion|p1a: Blastoise|[spread] p2a,p1a,p1b
+|split|p2
+|-damage|p2a: Flittle|0 fnt
+|-damage|p2a: Flittle|0 fnt
+|split|p1
+|-damage|p1a: Blastoise|96/175
+|-damage|p1a: Blastoise|96/175
+|split|p1
+|-damage|p1b: Alcremie|31/144
+|-damage|p1b: Alcremie|31/144
+|-enditem|p1b: Alcremie|Figy Berry|[eat]
+|split|p1
+|-heal|p1b: Alcremie|79/144|[from] item: Figy Berry
+|-heal|p1b: Alcremie|79/144|[from] item: Figy Berry
+|faint|p2b: Pineco
+|faint|p2a: Flittle
+|
+|upkeep
+@message
+sideupdate
+p1
+|request|{"wait":true,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Blastoise","details":"Blastoise, L50, F","condition":"96/175","active":true,"stats":{"atk":99,"def":132,"spa":117,"spd":129,"spe":117},"moves":["taunt","courtchange","dragonenergy","darkpulse"],"baseAbility":"raindish","item":"","pokeball":"pokeball","ability":"raindish","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"79/144","active":true,"stats":{"atk":85,"def":97,"spa":155,"spd":136,"spe":115},"moves":["encore","acidarmor"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Torracat","details":"Torracat, L50, F","condition":"146/146","active":false,"stats":{"atk":125,"def":83,"spa":100,"spd":71,"spe":133},"moves":["topsyturvy","infestation"],"baseAbility":"blaze","item":"cobaberry","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Sir Hops-a-Lot","details":"Cranidos, L50, M","condition":"142/142","active":false,"stats":{"atk":159,"def":86,"spa":50,"spd":58,"spe":100},"moves":["dragonclaw","aquajet","fling","imprison"],"baseAbility":"sheerforce","item":"kelpsyberry","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Pikachu","details":"Stunky, L50, F","condition":"154/154","active":false,"stats":{"atk":93,"def":82,"spa":65,"spd":74,"spe":98},"moves":["stoneaxe"],"baseAbility":"arenatrap","item":"shinystone","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Shaymin","details":"Shaymin, L50","condition":"176/176","active":false,"stats":{"atk":146,"def":132,"spa":143,"spd":121,"spe":121},"moves":["malignantchain","dragonascent","poisonjab"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"forceSwitch":[true,true],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Flittle","details":"Flittle, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":86,"def":55,"spa":75,"spd":48,"spe":95},"moves":["smokescreen","echoedvoice"],"baseAbility":"speedboost","item":"choicescarf","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Pineco","details":"Pineco, L50, F","condition":"0 fnt","active":true,"stats":{"atk":90,"def":133,"spa":75,"spd":52,"spe":49},"moves":["doublekick","astralbarrage","mimic","explosion"],"baseAbility":"overcoat","item":"choiceband","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Solgaleo, L50","condition":"214/214","active":false,"stats":{"atk":176,"def":150,"spa":142,"spd":109,"spe":124},"moves":["slam","leafstorm","shadowsneak"],"baseAbility":"fullmetalbody","item":"choicescarf","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Minior","details":"Minior-Green, L50","condition":"135/135","active":false,"stats":{"atk":146,"def":89,"spa":125,"spd":84,"spe":160},"moves":["taunt"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Gastrodon-East, L50, M","condition":"217/217","active":false,"stats":{"atk":114,"def":88,"spa":101,"spd":112,"spe":80},"moves":["disable","playnice"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Chomp","details":"Toedscool, L50, F","condition":"116/116","active":false,"stats":{"atk":78,"def":66,"spa":77,"spd":141,"spe":93},"moves":["armorcannon"],"baseAbility":"myceliummight","item":"choiceband","pokeball":"pokeball","ability":"myceliummight","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]},"noCancel":true}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Big Tony's Pal|Solgaleo, L50|214/214
+|switch|p2a: Big Tony's Pal|Solgaleo, L50|214/214
+|split|p2
+|switch|p2b: Chomp|Toedscool, L50, F|116/116
+|switch|p2b: Chomp|Toedscool, L50, F|116/116
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Taunt","id":"taunt","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Court Change","id":"courtchange","pp":15,"maxpp":16,"target":"all","disabled":false},{"move":"Dragon Energy","id":"dragonenergy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":24,"maxpp":24,"target":"any","disabled":false}]},{"moves":[{"move":"Encore","id":"encore","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":32,"maxpp":32,"target":"self","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Blastoise","details":"Blastoise, L50, F","condition":"96/175","active":true,"stats":{"atk":99,"def":132,"spa":117,"spd":129,"spe":117},"moves":["taunt","courtchange","dragonenergy","darkpulse"],"baseAbility":"raindish","item":"","pokeball":"pokeball","ability":"raindish","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"79/144","active":true,"stats":{"atk":85,"def":97,"spa":155,"spd":136,"spe":115},"moves":["encore","acidarmor"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Torracat","details":"Torracat, L50, F","condition":"146/146","active":false,"stats":{"atk":125,"def":83,"spa":100,"spd":71,"spe":133},"moves":["topsyturvy","infestation"],"baseAbility":"blaze","item":"cobaberry","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Sir Hops-a-Lot","details":"Cranidos, L50, M","condition":"142/142","active":false,"stats":{"atk":159,"def":86,"spa":50,"spd":58,"spe":100},"moves":["dragonclaw","aquajet","fling","imprison"],"baseAbility":"sheerforce","item":"kelpsyberry","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Pikachu","details":"Stunky, L50, F","condition":"154/154","active":false,"stats":{"atk":93,"def":82,"spa":65,"spd":74,"spe":98},"moves":["stoneaxe"],"baseAbility":"arenatrap","item":"shinystone","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Shaymin","details":"Shaymin, L50","condition":"176/176","active":false,"stats":{"atk":146,"def":132,"spa":143,"spd":121,"spe":121},"moves":["malignantchain","dragonascent","poisonjab"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Slam","id":"slam","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Leaf Storm","id":"leafstorm","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Shadow Sneak","id":"shadowsneak","pp":48,"maxpp":48,"target":"normal","disabled":false}]},{"moves":[{"move":"Armor Cannon","id":"armorcannon","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Solgaleo, L50","condition":"214/214","active":true,"stats":{"atk":176,"def":150,"spa":142,"spd":109,"spe":124},"moves":["slam","leafstorm","shadowsneak"],"baseAbility":"fullmetalbody","item":"choicescarf","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Chomp","details":"Toedscool, L50, F","condition":"116/116","active":true,"stats":{"atk":78,"def":66,"spa":77,"spd":141,"spe":93},"moves":["armorcannon"],"baseAbility":"myceliummight","item":"choiceband","pokeball":"pokeball","ability":"myceliummight","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Flittle","details":"Flittle, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":86,"def":55,"spa":75,"spd":48,"spe":95},"moves":["smokescreen","echoedvoice"],"baseAbility":"speedboost","item":"choicescarf","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Minior","details":"Minior-Green, L50","condition":"135/135","active":false,"stats":{"atk":146,"def":89,"spa":125,"spd":84,"spe":160},"moves":["taunt"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Gastrodon-East, L50, M","condition":"217/217","active":false,"stats":{"atk":114,"def":88,"spa":101,"spd":112,"spe":80},"moves":["disable","playnice"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Pineco","details":"Pineco, L50, F","condition":"0 fnt","active":false,"stats":{"atk":90,"def":133,"spa":75,"spd":52,"spe":49},"moves":["doublekick","astralbarrage","mimic","explosion"],"baseAbility":"overcoat","item":"choiceband","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Torracat|Torracat, L50, F, tera:Fairy|146/146
+|switch|p1b: Torracat|Torracat, L50, F, tera:Fairy|146/146
+|split|p2
+|switch|p2b: Minior|Minior-Green, L50|135/135
+|switch|p2b: Minior|Minior-Green, L50|135/135
+|-formechange|p2b: Minior|Minior-Meteor||[from] ability: Shields Down
+|move|p2a: Big Tony's Pal|Shadow Sneak|p1a: Blastoise
+|split|p1
+|-damage|p1a: Blastoise|73/175
+|-damage|p1a: Blastoise|73/175
+|move|p1a: Blastoise|Taunt|p1b: Torracat
+|-start|p1b: Torracat|move: Taunt
+|
+|upkeep
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Taunt","id":"taunt","pp":30,"maxpp":32,"target":"normal","disabled":false},{"move":"Court Change","id":"courtchange","pp":15,"maxpp":16,"target":"all","disabled":false},{"move":"Dragon Energy","id":"dragonenergy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":24,"maxpp":24,"target":"any","disabled":false}]},{"moves":[{"move":"Topsy-Turvy","id":"topsyturvy","pp":32,"maxpp":32,"target":"normal","disabled":true},{"move":"Infestation","id":"infestation","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Blastoise","details":"Blastoise, L50, F","condition":"73/175","active":true,"stats":{"atk":99,"def":132,"spa":117,"spd":129,"spe":117},"moves":["taunt","courtchange","dragonenergy","darkpulse"],"baseAbility":"raindish","item":"","pokeball":"pokeball","ability":"raindish","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Torracat","details":"Torracat, L50, F","condition":"146/146","active":true,"stats":{"atk":125,"def":83,"spa":100,"spd":71,"spe":133},"moves":["topsyturvy","infestation"],"baseAbility":"blaze","item":"cobaberry","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"79/144","active":false,"stats":{"atk":85,"def":97,"spa":155,"spd":136,"spe":115},"moves":["encore","acidarmor"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Cranidos, L50, M","condition":"142/142","active":false,"stats":{"atk":159,"def":86,"spa":50,"spd":58,"spe":100},"moves":["dragonclaw","aquajet","fling","imprison"],"baseAbility":"sheerforce","item":"kelpsyberry","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Pikachu","details":"Stunky, L50, F","condition":"154/154","active":false,"stats":{"atk":93,"def":82,"spa":65,"spd":74,"spe":98},"moves":["stoneaxe"],"baseAbility":"arenatrap","item":"shinystone","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Shaymin","details":"Shaymin, L50","condition":"176/176","active":false,"stats":{"atk":146,"def":132,"spa":143,"spd":121,"spe":121},"moves":["malignantchain","dragonascent","poisonjab"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Slam","id":"slam","pp":32,"maxpp":32,"target":"normal","disabled":true},{"move":"Leaf Storm","id":"leafstorm","pp":8,"maxpp":8,"target":"normal","disabled":true},{"move":"Shadow Sneak","id":"shadowsneak","pp":47,"maxpp":48,"target":"normal","disabled":false}]},{"moves":[{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Solgaleo, L50","condition":"214/214","active":true,"stats":{"atk":176,"def":150,"spa":142,"spd":109,"spe":124},"moves":["slam","leafstorm","shadowsneak"],"baseAbility":"fullmetalbody","item":"choicescarf","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Minior","details":"Minior-Green, L50","condition":"135/135","active":true,"stats":{"atk":106,"def":129,"spa":85,"spd":124,"spe":100},"moves":["taunt"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Flittle","details":"Flittle, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":86,"def":55,"spa":75,"spd":48,"spe":95},"moves":["smokescreen","echoedvoice"],"baseAbility":"speedboost","item":"choicescarf","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Chomp","details":"Toedscool, L50, F","condition":"116/116","active":false,"stats":{"atk":78,"def":66,"spa":77,"spd":141,"spe":93},"moves":["armorcannon"],"baseAbility":"myceliummight","item":"choiceband","pokeball":"pokeball","ability":"myceliummight","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Gastrodon-East, L50, M","condition":"217/217","active":false,"stats":{"atk":114,"def":88,"spa":101,"spd":112,"spe":80},"moves":["disable","playnice"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Pineco","details":"Pineco, L50, F","condition":"0 fnt","active":false,"stats":{"atk":90,"def":133,"spa":75,"spd":52,"spe":49},"moves":["doublekick","astralbarrage","mimic","explosion"],"baseAbility":"overcoat","item":"choiceband","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Big Tony's Pal can't Terastallize.
+@message
+update
+|
+|t:|
+|move|p2a: Big Tony's Pal|Shadow Sneak|p1b: Torracat
+|split|p1
+|-damage|p1b: Torracat|109/146
+|-damage|p1b: Torracat|109/146
+|move|p1b: Torracat|Infestation|p2a: Big Tony's Pal
+|-crit|p2a: Big Tony's Pal
+|split|p2
+|-damage|p2a: Big Tony's Pal|200/214
+|-damage|p2a: Big Tony's Pal|200/214
+|-activate|p2a: Big Tony's Pal|move: Infestation|[of] p1b: Torracat
+|move|p1a: Blastoise|Dark Pulse|p1b: Torracat
+|-resisted|p1b: Torracat
+|split|p1
+|-damage|p1b: Torracat|82/146
+|-damage|p1b: Torracat|82/146
+|move|p2b: Minior|Taunt|p1a: Blastoise
+|-start|p1a: Blastoise|move: Taunt
+|
+|split|p2
+|-damage|p2a: Big Tony's Pal|174/214|[from] move: Infestation|[partiallytrapped]
+|-damage|p2a: Big Tony's Pal|174/214|[from] move: Infestation|[partiallytrapped]
+|upkeep
+|turn|5
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Taunt","id":"taunt","pp":30,"maxpp":32,"target":"normal","disabled":true},{"move":"Court Change","id":"courtchange","pp":15,"maxpp":16,"target":"all","disabled":true},{"move":"Dragon Energy","id":"dragonenergy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":23,"maxpp":24,"target":"any","disabled":false}]},{"moves":[{"move":"Topsy-Turvy","id":"topsyturvy","pp":32,"maxpp":32,"target":"normal","disabled":true},{"move":"Infestation","id":"infestation","pp":30,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Blastoise","details":"Blastoise, L50, F","condition":"73/175","active":true,"stats":{"atk":99,"def":132,"spa":117,"spd":129,"spe":117},"moves":["taunt","courtchange","dragonenergy","darkpulse"],"baseAbility":"raindish","item":"","pokeball":"pokeball","ability":"raindish","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Torracat","details":"Torracat, L50, F","condition":"82/146","active":true,"stats":{"atk":125,"def":83,"spa":100,"spd":71,"spe":133},"moves":["topsyturvy","infestation"],"baseAbility":"blaze","item":"cobaberry","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"79/144","active":false,"stats":{"atk":85,"def":97,"spa":155,"spd":136,"spe":115},"moves":["encore","acidarmor"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Cranidos, L50, M","condition":"142/142","active":false,"stats":{"atk":159,"def":86,"spa":50,"spd":58,"spe":100},"moves":["dragonclaw","aquajet","fling","imprison"],"baseAbility":"sheerforce","item":"kelpsyberry","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Pikachu","details":"Stunky, L50, F","condition":"154/154","active":false,"stats":{"atk":93,"def":82,"spa":65,"spd":74,"spe":98},"moves":["stoneaxe"],"baseAbility":"arenatrap","item":"shinystone","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Shaymin","details":"Shaymin, L50","condition":"176/176","active":false,"stats":{"atk":146,"def":132,"spa":143,"spd":121,"spe":121},"moves":["malignantchain","dragonascent","poisonjab"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Slam","id":"slam","pp":32,"maxpp":32,"target":"normal","disabled":true},{"move":"Leaf Storm","id":"leafstorm","pp":8,"maxpp":8,"target":"normal","disabled":true},{"move":"Shadow Sneak","id":"shadowsneak","pp":46,"maxpp":48,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Taunt","id":"taunt","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Solgaleo, L50","condition":"174/214","active":true,"stats":{"atk":176,"def":150,"spa":142,"spd":109,"spe":124},"moves":["slam","leafstorm","shadowsneak"],"baseAbility":"fullmetalbody","item":"choicescarf","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Minior","details":"Minior-Green, L50","condition":"135/135","active":true,"stats":{"atk":106,"def":129,"spa":85,"spd":124,"spe":100},"moves":["taunt"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Flittle","details":"Flittle, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":86,"def":55,"spa":75,"spd":48,"spe":95},"moves":["smokescreen","echoedvoice"],"baseAbility":"speedboost","item":"choicescarf","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Chomp","details":"Toedscool, L50, F","condition":"116/116","active":false,"stats":{"atk":78,"def":66,"spa":77,"spd":141,"spe":93},"moves":["armorcannon"],"baseAbility":"myceliummight","item":"choiceband","pokeball":"pokeball","ability":"myceliummight","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Gastrodon-East, L50, M","condition":"217/217","active":false,"stats":{"atk":114,"def":88,"spa":101,"spd":112,"spe":80},"moves":["disable","playnice"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Pineco","details":"Pineco, L50, F","condition":"0 fnt","active":false,"stats":{"atk":90,"def":133,"spa":75,"spd":52,"spe":49},"moves":["doublekick","astralbarrage","mimic","explosion"],"baseAbility":"overcoat","item":"choiceband","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Incomplete choice: switch STUNKY - missing other pokemon
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Pikachu|Stunky, L50, F|154/154
+|switch|p1a: Pikachu|Stunky, L50, F|154/154
+|move|p2a: Big Tony's Pal|Shadow Sneak|p2b: Minior
+|split|p2
+|-damage|p2b: Minior|111/135
+|-damage|p2b: Minior|111/135
+|move|p1b: Torracat|Infestation|p1a: Pikachu
+|split|p1
+|-damage|p1a: Pikachu|143/154
+|-damage|p1a: Pikachu|143/154
+|-activate|p1a: Pikachu|move: Infestation|[of] p1b: Torracat
+|move|p2b: Minior|Taunt|p1a: Pikachu
+|-start|p1a: Pikachu|move: Taunt
+|
+|split|p2
+|-damage|p2a: Big Tony's Pal|148/214|[from] move: Infestation|[partiallytrapped]
+|-damage|p2a: Big Tony's Pal|148/214|[from] move: Infestation|[partiallytrapped]
+|split|p1
+|-damage|p1a: Pikachu|124/154|[from] move: Infestation|[partiallytrapped]
+|-damage|p1a: Pikachu|124/154|[from] move: Infestation|[partiallytrapped]
+|-end|p1b: Torracat|move: Taunt
+|upkeep
+|turn|6
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Stone Axe","id":"stoneaxe","pp":24,"maxpp":24,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Topsy-Turvy","id":"topsyturvy","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Infestation","id":"infestation","pp":29,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Stunky, L50, F","condition":"124/154","active":true,"stats":{"atk":93,"def":82,"spa":65,"spd":74,"spe":98},"moves":["stoneaxe"],"baseAbility":"arenatrap","item":"shinystone","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Torracat","details":"Torracat, L50, F","condition":"82/146","active":true,"stats":{"atk":125,"def":83,"spa":100,"spd":71,"spe":133},"moves":["topsyturvy","infestation"],"baseAbility":"blaze","item":"cobaberry","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"79/144","active":false,"stats":{"atk":85,"def":97,"spa":155,"spd":136,"spe":115},"moves":["encore","acidarmor"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Cranidos, L50, M","condition":"142/142","active":false,"stats":{"atk":159,"def":86,"spa":50,"spd":58,"spe":100},"moves":["dragonclaw","aquajet","fling","imprison"],"baseAbility":"sheerforce","item":"kelpsyberry","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, F","condition":"73/175","active":false,"stats":{"atk":99,"def":132,"spa":117,"spd":129,"spe":117},"moves":["taunt","courtchange","dragonenergy","darkpulse"],"baseAbility":"raindish","item":"","pokeball":"pokeball","ability":"raindish","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Shaymin","details":"Shaymin, L50","condition":"176/176","active":false,"stats":{"atk":146,"def":132,"spa":143,"spd":121,"spe":121},"moves":["malignantchain","dragonascent","poisonjab"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Slam","id":"slam","pp":32,"maxpp":32,"target":"normal","disabled":true},{"move":"Leaf Storm","id":"leafstorm","pp":8,"maxpp":8,"target":"normal","disabled":true},{"move":"Shadow Sneak","id":"shadowsneak","pp":45,"maxpp":48,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Taunt","id":"taunt","pp":30,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Solgaleo, L50","condition":"148/214","active":true,"stats":{"atk":176,"def":150,"spa":142,"spd":109,"spe":124},"moves":["slam","leafstorm","shadowsneak"],"baseAbility":"fullmetalbody","item":"choicescarf","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Minior","details":"Minior-Green, L50","condition":"111/135","active":true,"stats":{"atk":106,"def":129,"spa":85,"spd":124,"spe":100},"moves":["taunt"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Flittle","details":"Flittle, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":86,"def":55,"spa":75,"spd":48,"spe":95},"moves":["smokescreen","echoedvoice"],"baseAbility":"speedboost","item":"choicescarf","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Chomp","details":"Toedscool, L50, F","condition":"116/116","active":false,"stats":{"atk":78,"def":66,"spa":77,"spd":141,"spe":93},"moves":["armorcannon"],"baseAbility":"myceliummight","item":"choiceband","pokeball":"pokeball","ability":"myceliummight","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Gastrodon-East, L50, M","condition":"217/217","active":false,"stats":{"atk":114,"def":88,"spa":101,"spd":112,"spe":80},"moves":["disable","playnice"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Pineco","details":"Pineco, L50, F","condition":"0 fnt","active":false,"stats":{"atk":90,"def":133,"spa":75,"spd":52,"spe":49},"moves":["doublekick","astralbarrage","mimic","explosion"],"baseAbility":"overcoat","item":"choiceband","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Unavailable choice] Can't move: Big Tony's Pal's Leaf Storm is disabled
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Slam","id":"slam","pp":32,"maxpp":32,"target":"normal","disabled":true},{"move":"Leaf Storm","id":"leafstorm","pp":8,"maxpp":8,"target":"normal","disabled":true,"disabledSource":""},{"move":"Shadow Sneak","id":"shadowsneak","pp":45,"maxpp":48,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Taunt","id":"taunt","pp":30,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Solgaleo, L50","condition":"148/214","active":true,"stats":{"atk":176,"def":150,"spa":142,"spd":109,"spe":124},"moves":["slam","leafstorm","shadowsneak"],"baseAbility":"fullmetalbody","item":"choicescarf","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Minior","details":"Minior-Green, L50","condition":"111/135","active":true,"stats":{"atk":106,"def":129,"spa":85,"spd":124,"spe":100},"moves":["taunt"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Flittle","details":"Flittle, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":86,"def":55,"spa":75,"spd":48,"spe":95},"moves":["smokescreen","echoedvoice"],"baseAbility":"speedboost","item":"choicescarf","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Chomp","details":"Toedscool, L50, F","condition":"116/116","active":false,"stats":{"atk":78,"def":66,"spa":77,"spd":141,"spe":93},"moves":["armorcannon"],"baseAbility":"myceliummight","item":"choiceband","pokeball":"pokeball","ability":"myceliummight","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Gastrodon-East, L50, M","condition":"217/217","active":false,"stats":{"atk":114,"def":88,"spa":101,"spd":112,"spe":80},"moves":["disable","playnice"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Pineco","details":"Pineco, L50, F","condition":"0 fnt","active":false,"stats":{"atk":90,"def":133,"spa":75,"spd":52,"spe":49},"moves":["doublekick","astralbarrage","mimic","explosion"],"baseAbility":"overcoat","item":"choiceband","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]},"update":true}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Alcremie|Alcremie-Rainbow-Swirl, L50, F|79/144
+|switch|p1b: Alcremie|Alcremie-Rainbow-Swirl, L50, F|79/144
+|split|p2
+|switch|p2b: Chomp|Toedscool, L50, F|116/116
+|switch|p2b: Chomp|Toedscool, L50, F|116/116
+|move|p2a: Big Tony's Pal|Shadow Sneak|p1b: Alcremie
+|split|p1
+|-damage|p1b: Alcremie|51/144
+|-damage|p1b: Alcremie|51/144
+|move|p1a: Pikachu|Stone Axe|p1b: Alcremie
+|split|p1
+|-damage|p1b: Alcremie|23/144
+|-damage|p1b: Alcremie|23/144
+|-sidestart|p2: Bob|move: Stealth Rock
+|
+|-end|p2a: Big Tony's Pal|Infestation|[partiallytrapped]|[silent]
+|-end|p1a: Pikachu|Infestation|[partiallytrapped]|[silent]
+|upkeep
+|turn|7
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Stone Axe","id":"stoneaxe","pp":23,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Encore","id":"encore","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":32,"maxpp":32,"target":"self","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Stunky, L50, F","condition":"124/154","active":true,"stats":{"atk":93,"def":82,"spa":65,"spd":74,"spe":98},"moves":["stoneaxe"],"baseAbility":"arenatrap","item":"shinystone","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"23/144","active":true,"stats":{"atk":85,"def":97,"spa":155,"spd":136,"spe":115},"moves":["encore","acidarmor"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Torracat","details":"Torracat, L50, F","condition":"82/146","active":false,"stats":{"atk":125,"def":83,"spa":100,"spd":71,"spe":133},"moves":["topsyturvy","infestation"],"baseAbility":"blaze","item":"cobaberry","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Sir Hops-a-Lot","details":"Cranidos, L50, M","condition":"142/142","active":false,"stats":{"atk":159,"def":86,"spa":50,"spd":58,"spe":100},"moves":["dragonclaw","aquajet","fling","imprison"],"baseAbility":"sheerforce","item":"kelpsyberry","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, F","condition":"73/175","active":false,"stats":{"atk":99,"def":132,"spa":117,"spd":129,"spe":117},"moves":["taunt","courtchange","dragonenergy","darkpulse"],"baseAbility":"raindish","item":"","pokeball":"pokeball","ability":"raindish","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Shaymin","details":"Shaymin, L50","condition":"176/176","active":false,"stats":{"atk":146,"def":132,"spa":143,"spd":121,"spe":121},"moves":["malignantchain","dragonascent","poisonjab"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Slam","id":"slam","pp":32,"maxpp":32,"target":"normal","disabled":true},{"move":"Leaf Storm","id":"leafstorm","pp":8,"maxpp":8,"target":"normal","disabled":true},{"move":"Shadow Sneak","id":"shadowsneak","pp":44,"maxpp":48,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Armor Cannon","id":"armorcannon","pp":8,"maxpp":8,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Solgaleo, L50","condition":"148/214","active":true,"stats":{"atk":176,"def":150,"spa":142,"spd":109,"spe":124},"moves":["slam","leafstorm","shadowsneak"],"baseAbility":"fullmetalbody","item":"choicescarf","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Chomp","details":"Toedscool, L50, F","condition":"116/116","active":true,"stats":{"atk":78,"def":66,"spa":77,"spd":141,"spe":93},"moves":["armorcannon"],"baseAbility":"myceliummight","item":"choiceband","pokeball":"pokeball","ability":"myceliummight","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Flittle","details":"Flittle, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":86,"def":55,"spa":75,"spd":48,"spe":95},"moves":["smokescreen","echoedvoice"],"baseAbility":"speedboost","item":"choicescarf","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Minior","details":"Minior-Green, L50","condition":"111/135","active":false,"stats":{"atk":146,"def":89,"spa":125,"spd":84,"spe":160},"moves":["taunt"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Gastrodon-East, L50, M","condition":"217/217","active":false,"stats":{"atk":114,"def":88,"spa":101,"spd":112,"spe":80},"moves":["disable","playnice"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Pineco","details":"Pineco, L50, F","condition":"0 fnt","active":false,"stats":{"atk":90,"def":133,"spa":75,"spd":52,"spe":49},"moves":["doublekick","astralbarrage","mimic","explosion"],"baseAbility":"overcoat","item":"choiceband","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: The active Pokémon is trapped
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Leaf Storm needs a target
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Shaymin|Shaymin, L50|176/176
+|switch|p1b: Shaymin|Shaymin, L50|176/176
+|split|p1
+|switch|p1a: Torracat|Torracat, L50, F, tera:Fairy|82/146
+|switch|p1a: Torracat|Torracat, L50, F, tera:Fairy|82/146
+|move|p2a: Big Tony's Pal|Shadow Sneak|p1a: Torracat
+|split|p1
+|-damage|p1a: Torracat|47/146
+|-damage|p1a: Torracat|47/146
+|move|p2b: Chomp|Armor Cannon|p1a: Torracat
+|split|p1
+|-damage|p1a: Torracat|0 fnt
+|-damage|p1a: Torracat|0 fnt
+|-unboost|p2b: Chomp|def|1
+|-unboost|p2b: Chomp|spd|1
+|faint|p1a: Torracat
+|
+|upkeep
+@message
+sideupdate
+p1
+|request|{"forceSwitch":[true,false],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Torracat","details":"Torracat, L50, F","condition":"0 fnt","active":true,"stats":{"atk":125,"def":83,"spa":100,"spd":71,"spe":133},"moves":["topsyturvy","infestation"],"baseAbility":"blaze","item":"cobaberry","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Shaymin","details":"Shaymin, L50","condition":"176/176","active":true,"stats":{"atk":146,"def":132,"spa":143,"spd":121,"spe":121},"moves":["malignantchain","dragonascent","poisonjab"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Pikachu","details":"Stunky, L50, F","condition":"124/154","active":false,"stats":{"atk":93,"def":82,"spa":65,"spd":74,"spe":98},"moves":["stoneaxe"],"baseAbility":"arenatrap","item":"shinystone","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Cranidos, L50, M","condition":"142/142","active":false,"stats":{"atk":159,"def":86,"spa":50,"spd":58,"spe":100},"moves":["dragonclaw","aquajet","fling","imprison"],"baseAbility":"sheerforce","item":"kelpsyberry","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, F","condition":"73/175","active":false,"stats":{"atk":99,"def":132,"spa":117,"spd":129,"spe":117},"moves":["taunt","courtchange","dragonenergy","darkpulse"],"baseAbility":"raindish","item":"","pokeball":"pokeball","ability":"raindish","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"23/144","active":false,"stats":{"atk":85,"def":97,"spa":155,"spd":136,"spe":115},"moves":["encore","acidarmor"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]},"noCancel":true}
+@message
+sideupdate
+p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Solgaleo, L50","condition":"148/214","active":true,"stats":{"atk":176,"def":150,"spa":142,"spd":109,"spe":124},"moves":["slam","leafstorm","shadowsneak"],"baseAbility":"fullmetalbody","item":"choicescarf","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Chomp","details":"Toedscool, L50, F","condition":"116/116","active":true,"stats":{"atk":78,"def":66,"spa":77,"spd":141,"spe":93},"moves":["armorcannon"],"baseAbility":"myceliummight","item":"choiceband","pokeball":"pokeball","ability":"myceliummight","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Flittle","details":"Flittle, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":86,"def":55,"spa":75,"spd":48,"spe":95},"moves":["smokescreen","echoedvoice"],"baseAbility":"speedboost","item":"choicescarf","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Minior","details":"Minior-Green, L50","condition":"111/135","active":false,"stats":{"atk":146,"def":89,"spa":125,"spd":84,"spe":160},"moves":["taunt"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Gastrodon-East, L50, M","condition":"217/217","active":false,"stats":{"atk":114,"def":88,"spa":101,"spd":112,"spe":80},"moves":["disable","playnice"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Pineco","details":"Pineco, L50, F","condition":"0 fnt","active":false,"stats":{"atk":90,"def":133,"spa":75,"spd":52,"spe":49},"moves":["doublekick","astralbarrage","mimic","explosion"],"baseAbility":"overcoat","item":"choiceband","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You need a switch response
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"gen5,9fb18c1eb0c28153","turns":7,"p1":"Alice","p2":"Bob","p1team":[{"name":"Blastoise","species":"Blastoise","item":"","ability":"Rain Dish","moves":["Taunt","Court Change","Dragon Energy","Dark Pulse"],"nature":"Bold","evs":{"hp":168,"atk":59,"def":1,"spa":94,"spd":35,"spe":153},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Torracat","species":"Torracat","item":"Coba Berry","ability":"Blaze","moves":["Topsy-Turvy","Infestation"],"nature":"Serious","evs":{"hp":50,"atk":162,"def":100,"spa":2,"spd":9,"spe":187},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Alcremie","species":"Alcremie-Rainbow-Swirl","item":"Figy Berry","ability":"Sweet Veil","moves":["Encore","Acid Armor"],"nature":"Rash","evs":{"hp":31,"atk":39,"def":13,"spa":89,"spd":89,"spe":247},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sir Hops-a-Lot","species":"Cranidos","item":"Kelpsy Berry","ability":"Sheer Force","moves":["Dragon Claw","Aqua Jet","Fling","Imprison"],"nature":"Adamant","evs":{"hp":3,"atk":0,"def":207,"spa":50,"spd":62,"spe":179},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pikachu","species":"Stunky","item":"Shiny Stone","ability":"Arena Trap","moves":["Stone Axe"],"nature":"Lonely","evs":{"hp":129,"atk":17,"def":198,"spa":34,"spd":102,"spe":29},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Shaymin","species":"Shaymin","item":"","ability":"Natural Cure","moves":["Malignant Chain","Dragon Ascent","Poison Jab"],"nature":"Quirky","evs":{"hp":5,"atk":204,"def":97,"spa":181,"spd":11,"spe":11},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Flittle","species":"Flittle","item":"Choice Scarf","ability":"Speed Boost","moves":["Smokescreen","Echoed Voice"],"nature":"Lax","evs":{"hp":230,"atk":246,"def":0,"spa":0,"spd":34,"spe":0},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pineco","species":"Pineco","item":"Choice Band","ability":"Overcoat","moves":["Double Kick","Astral Barrage","Mimic","Explosion"],"nature":"Rash","evs":{"hp":28,"atk":38,"def":182,"spa":115,"spd":26,"spe":114},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Solgaleo","item":"Choice Scarf","ability":"Full Metal Body","moves":["Slam","Leaf Storm","Shadow Sneak"],"nature":"Bashful","evs":{"hp":15,"atk":151,"def":182,"spa":71,"spd":2,"spe":57},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Minior","species":"Minior-Green","item":"","ability":"Shields Down","moves":["Taunt"],"nature":"Hardy","evs":{"hp":2,"atk":204,"def":73,"spa":39,"spd":30,"spe":162},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Mr. Bubbles","species":"Gastrodon-East","item":"","ability":"Sand Force","moves":["Disable","Play Nice"],"nature":"Adamant","evs":{"hp":244,"atk":5,"def":1,"spa":9,"spd":83,"spe":167},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Toedscool","item":"Choice Band","ability":"Mycelium Might","moves":["Armor Cannon"],"nature":"Lonely","evs":{"hp":11,"atk":91,"def":154,"spa":59,"spd":167,"spe":20},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[5,4],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@!Team Preview\",\"seed\":\"gen5,9fb18c1eb0c28153\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Blastoise|||RainDish|Taunt,CourtChange,DragonEnergy,DarkPulse|Bold|168,59,1,94,35,153||||50|,,,,,Stellar]Torracat||CobaBerry|Blaze|TopsyTurvy,Infestation|Serious|50,162,100,2,9,187||||50|,,,,,Fairy]Alcremie-Rainbow-Swirl||FigyBerry|SweetVeil|Encore,AcidArmor|Rash|31,39,13,89,89,247|F|||50|,,,,,Water]Sir Hops-a-Lot|Cranidos|KelpsyBerry|SheerForce|DragonClaw,AquaJet,Fling,Imprison|Adamant|3,,207,50,62,179||||50|,,,,,Fairy]Pikachu|Stunky|ShinyStone|ArenaTrap|StoneAxe|Lonely|129,17,198,34,102,29||||50|,,,,,Poison]Shaymin|||NaturalCure|MalignantChain,DragonAscent,PoisonJab|Quirky|5,204,97,181,11,11||||50|,,,,,Steel\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Flittle||ChoiceScarf|SpeedBoost|Smokescreen,EchoedVoice|Lax|230,246,,,34,|||S|50|,,,,,Psychic]Pineco||ChoiceBand|Overcoat|DoubleKick,AstralBarrage,Mimic,Explosion|Rash|28,38,182,115,26,114||||50|,,,,,Fighting]Big Tony's Pal|Solgaleo|ChoiceScarf|FullMetalBody|Slam,LeafStorm,ShadowSneak|Bashful|15,151,182,71,2,57||||50|,,,,,Flying]Minior-Green|||ShieldsDown|Taunt|Hardy|2,204,73,39,30,162||||50|,,,,,Fighting]Mr. Bubbles|GastrodonEast||SandForce|Disable,PlayNice|Adamant|244,5,1,9,83,167||||50|,,,,,Ghost]Chomp|Toedscool|ChoiceBand|MyceliumMight|ArmorCannon|Lonely|11,91,154,59,167,20|F|||50|,,,,,Psychic\"}",">p1 move courtchange, move infestation +1 terastallize",">p2 move smokescreen +1, move mimic +2",">p1 move taunt +1, switch 3",">p2 move smokescreen +2 terastallize, move explosion",">p2 switch 3, switch 6",">p1 move taunt -2, switch 3",">p2 move shadowsneak +1, switch 4",">p1 move darkpulse -2, move infestation +1",">p2 move shadowsneak +2, move taunt +1",">p1 switch 5, move infestation -1",">p2 move shadowsneak -2, move taunt +1",">p1 move stoneaxe -2, switch 3",">p2 move shadowsneak +2, switch 4",">p1 switch 3, switch 6",">p2 move shadowsneak +1, move armorcannon +1",">forcetie"]}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+update
+|chat|after the end
+@message
+requesteddata
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,9fb18c1eb0c28153"}
+>player p1 {"name":"Alice","team":"Blastoise|||RainDish|Taunt,CourtChange,DragonEnergy,DarkPulse|Bold|168,59,1,94,35,153||||50|,,,,,Stellar]Torracat||CobaBerry|Blaze|TopsyTurvy,Infestation|Serious|50,162,100,2,9,187||||50|,,,,,Fairy]Alcremie-Rainbow-Swirl||FigyBerry|SweetVeil|Encore,AcidArmor|Rash|31,39,13,89,89,247|F|||50|,,,,,Water]Sir Hops-a-Lot|Cranidos|KelpsyBerry|SheerForce|DragonClaw,AquaJet,Fling,Imprison|Adamant|3,,207,50,62,179||||50|,,,,,Fairy]Pikachu|Stunky|ShinyStone|ArenaTrap|StoneAxe|Lonely|129,17,198,34,102,29||||50|,,,,,Poison]Shaymin|||NaturalCure|MalignantChain,DragonAscent,PoisonJab|Quirky|5,204,97,181,11,11||||50|,,,,,Steel"}
+>player p2 {"name":"Bob","team":"Flittle||ChoiceScarf|SpeedBoost|Smokescreen,EchoedVoice|Lax|230,246,,,34,|||S|50|,,,,,Psychic]Pineco||ChoiceBand|Overcoat|DoubleKick,AstralBarrage,Mimic,Explosion|Rash|28,38,182,115,26,114||||50|,,,,,Fighting]Big Tony's Pal|Solgaleo|ChoiceScarf|FullMetalBody|Slam,LeafStorm,ShadowSneak|Bashful|15,151,182,71,2,57||||50|,,,,,Flying]Minior-Green|||ShieldsDown|Taunt|Hardy|2,204,73,39,30,162||||50|,,,,,Fighting]Mr. Bubbles|GastrodonEast||SandForce|Disable,PlayNice|Adamant|244,5,1,9,83,167||||50|,,,,,Ghost]Chomp|Toedscool|ChoiceBand|MyceliumMight|ArmorCannon|Lonely|11,91,154,59,167,20|F|||50|,,,,,Psychic"}
+>p1 move courtchange, move infestation +1 terastallize
+>p2 move smokescreen +1, move mimic +2
+>p1 move taunt +1, switch 3
+>p2 move smokescreen +2 terastallize, move explosion
+>p2 switch 3, switch 6
+>p1 move taunt -2, switch 3
+>p2 move shadowsneak +1, switch 4
+>p1 move darkpulse -2, move infestation +1
+>p2 move shadowsneak +2, move taunt +1
+>p1 switch 5, move infestation -1
+>p2 move shadowsneak -2, move taunt +1
+>p1 move stoneaxe -2, switch 3
+>p2 move shadowsneak +2, switch 4
+>p1 switch 3, switch 6
+>p2 move shadowsneak +1, move armorcannon +1
+>forcetie
+>chat after the end
+>forcewin p1

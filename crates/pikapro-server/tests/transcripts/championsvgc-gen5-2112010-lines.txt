@@ -1,0 +1,714 @@
+# championsvgc-gen5-2112010-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@option replay spectator
+@write
+>start {"formatid":"gen9championsvgc2026regmb","seed":"gen5,b8f2b532b693c5f5"}
+@write
+>player p1 {"name":"Alice","team":[{"name":"Ceruledge","species":"Ceruledge","item":"Kasib Berry","ability":"Shadow Tag","moves":["Cosmic Power","Fire Punch"],"nature":"Lonely","evs":{"hp":7,"atk":4,"def":26,"spa":22,"spd":6,"spe":1},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison"},{"name":"Skeledirge","species":"Skeledirge","item":"","ability":"Magnet Pull","moves":["Corrosive Gas","Instruct"],"nature":"Careful","evs":{"hp":19,"atk":28,"def":0,"spa":19,"spd":0,"spe":0},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground"},{"name":"Toxicroak","species":"Toxicroak","item":"Rawst Berry","ability":"Arena Trap","moves":["Rising Voltage","Pain Split","Chilly Reception","Sand Tomb"],"nature":"Docile","evs":{"hp":13,"atk":19,"def":2,"spa":8,"spd":14,"spe":8},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel"},{"name":"Aerodactyl","species":"Aerodactyl","item":"Aerodactylite","ability":"Unnerve","moves":["Rising Voltage","Roost"],"nature":"Bold","evs":{"hp":21,"atk":0,"def":12,"spa":0,"spd":1,"spe":32},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water"},{"name":"Machamp","species":"Machamp","item":"","ability":"No Guard","moves":["Torment"],"nature":"Naughty","evs":{"hp":8,"atk":20,"def":14,"spa":0,"spd":23,"spe":1},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost"},{"name":"Zoë","species":"Typhlosion-Hisui","item":"Leppa Berry","ability":"Magnet Pull","moves":["Stone Edge","Mean Look","Rest"],"nature":"Quiet","evs":{"hp":2,"atk":1,"def":24,"spa":0,"spd":6,"spe":30},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost"}],"avatar":"lucas"}
+@write
+>player p2 {"name":"Bob","team":[{"name":"Palafin","species":"Palafin","item":"Sitrus Berry","ability":"Zero to Hero","moves":["Mirror Coat","Guard Swap","Waterfall","Torment"],"nature":"Quiet","evs":{"hp":22,"atk":2,"def":6,"spa":29,"spd":1,"spe":0},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric"},{"name":"Primarina","species":"Primarina","item":"","ability":"Magnet Pull","moves":["Guard Split","Thunderbolt"],"nature":"Modest","evs":{"hp":12,"atk":3,"def":10,"spa":5,"spd":24,"spe":2},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric"},{"name":"Conkeldurr","species":"Conkeldurr","item":"Lum Berry","ability":"Sheer Force","moves":["Brave Bird","Encore","Heavy Slam","Yawn"],"nature":"Timid","evs":{"hp":3,"atk":5,"def":2,"spa":13,"spd":27,"spe":14},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison"},{"name":"Bellibolt","species":"Bellibolt","item":"Leftovers","ability":"Static","moves":["Stone Axe","Imprison","Superpower"],"nature":"Impish","evs":{"hp":2,"atk":1,"def":1,"spa":30,"spd":8,"spe":24},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice"},{"name":"Chandelure","species":"Chandelure","item":"Chandelurite","ability":"Infiltrator","moves":["Imprison","Dual Wingbeat"],"nature":"Lax","evs":{"hp":16,"atk":1,"def":4,"spa":12,"spd":6,"spe":27},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon"},{"name":"Slurpuff","species":"Slurpuff","item":"Rindo Berry","ability":"Unburden","moves":["Worry Seed","Circle Throw","Supercell Slam"],"nature":"Lonely","evs":{"hp":9,"atk":11,"def":5,"spa":28,"spd":4,"spe":9},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark"}]}
+@write
+>p1 team 4321
+@write
+>p2 team 1532
+@write
+>p1 move 1 1, move 1 -1
+@write
+>p2 move 3 2, switch 4
+@write
+>p2 move 2 2, move thunderbolt +2
+@write
+>p1 move 4 2, move 1 1
+@write
+>p1 switch 6
+@write
+>p1 switch Aerodactyl
+@write
+>p1 move 4 3 terastallize
+@write
+>p1 move 1 1 terastal, switch 3
+@write
+>p1 move recharge, move Pain Split -1
+@write
+>p1 move 1 3
+@write
+>p1 move 1 -2 mega, move 3
+@write
+>p1 switch ceruledge
+@write
+>p1 switch 4, move 2 1
+@write
+>p2 move 3 2, move 2 -1
+@write
+>p2 switch 3, pass
+@write
+>p2 move 2 -1 terastallize
+@write
+>p2 move 2 -2, move thunderbolt 3 terastal
+@write
+>p1 
+@write
+>p1 move firepunch 3 mega
+@write
+>p2 switch Primarina
+@write
+>p1 
+@write
+>p2 move 3 1, move 1 2
+@write
+>p1 move chillyreception 3 terastal, move 2 2
+@write
+>p1 move 2 1, move 1
+@write
+>p2 move Encore 2,move Thunderbolt +2
+@write
+>p1 undo
+@write
+>p1 move sandtomb 2,move 2 +2
+@write
+>p2 move 1 2 dynamax
+@write
+>p2 move 4 -2, move 2 1
+@write
+>p1 auto
+@write
+>p2 pass, switch 4
+@write
+>p1 switch 4, switch 3
+@write
+>p2 move yawn 1, move imprison
+@write
+>p1 move 1 2, move Instruct -2 dynamax
+@write
+>p1 move 1 1, switch 4
+@write
+>p2 move 3 1, move 1
+@write
+>p1 switch 3 ,  move sandtomb -1
+@write
+>p2 move 1 1, move 2 -1 mega
+@write
+>p1 switch 3, switch 4
+@write
+>p1 move 1 -2, move 2 1
+@write
+>p2 move 2 1, move 2 2
+@write
+>p2 move 4 -2, move 2 2
+@write
+>p1 pass, pass
+@write
+>p1 move 1 -2, move 1
+@write
+>p1 switch ceruledge
+@write
+>p1 move 2 2 terastallize, move 1
+@write
+>p1 move 2 -1 dynamax
+@write
+>p1 switch toxicroak
+@write
+>p1 move 1 -2, move 1 -2 dynamax
+@write
+>p1 move 2 dynamax
+@write
+>p1 move 1 -2, move 1 -1 terastal
+@write
+>p1 move 2, move Instruct 3 terastallize
+@write
+>p1 move 1 1, move 2 2
+@write
+>p2 move yawn +1, move Dual Wingbeat -1
+@write
+>p2 pass, move 1 2
+@write
+>p2 pass, move 1
+@write
+>p1 skip
+@write
+>p1 move 2, move 1
+@write
+>p1 switch 1, switch 1
+@write
+>p2 pass, move 1
+@write
+>p1 move Rising Voltage -2 ,  move Corrosive Gas
+@write
+>p1 move 1 -2 dynamax
+@write
+>p1 move 2 2 terastal
+@write
+>p2 pass, move 2 1
+@write
+>p1 move 1 -2, move 2 -1
+@write
+>p2 default
+@write
+>p1 move 1 -2, move 2 -1
+@write
+>p2 switch palafin
+@write
+>p1 move Rising Voltage -2 ,  move instruct -1
+@write
+>p2 switch 0
+@write
+>p2   skip ,  move 2 +2  
+@write
+>p1 move 1 2, pass
+@write
+>p1 move 5
+@write
+>p2 switch Primarina
+@write
+>p2 pass ,  move dualwingbeat +1
+@write
+>p1 move 1, move 1, move 1
+@write
+>p1 move 2, pass
+@write
+>chat turn talk 37
+@write
+>p2 auto
+@write
+>p1 default
+@write
+>p2 pass,move Imprison
+@write
+>p1 move 2, pass
+@write
+>p2 testfight
+@write
+>p1 move Roost +1 dynamax
+@write
+>player p2 {"name":"Renamed8"}
+@write
+>p2 skip,move 2 +1
+@write
+>p1 move 2,skip
+@write
+>p2 pass, move 2 1
+@write
+>p1 move 2, pass
+@write
+>p1 move 1 2, pass
+@write
+>p2 pass, default
+@write
+>p2 pass, move dualwingbeat +1
+@write
+>p1 move Rising Voltage +2 ,  skip
+@write
+>p2 pass, move 2 3 terastallize
+@write
+>p1 move 1 2, pass
+@write
+>p2 pass, move 1
+@write
+>p1 move 2, pass
+@write
+>p2 pass, move 2 1
+@write
+>p1 move 2, default
+@write
+>p2 pass, move 1
+@write
+>p2 move 1, move 1, move 1
+@write
+>p2 pass, move 1
+@write
+>p1 switch aerodactylmega
+@write
+>p1 switch 1, switch 1
+@write
+>p1 move roost -1 dynamax, pass
+@write
+>p1 move 2, pass
+@write
+>p2 
+@write
+>p1 switch 3
+@write
+>p1 move Roost -1 terastal
+@write
+>p1 pass, move 1 2
+@write
+>p1 undo
+@write
+>forcewin p1
+@message
+|t:|
+|gametype|doubles
+@message
+|player|p1|Alice|lucas|
+@message
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Ceruledge, L50, M|
+|poke|p1|Skeledirge, L50, F|
+|poke|p1|Toxicroak, L50, F|
+|poke|p1|Aerodactyl, L50, F|
+|poke|p1|Machamp, L50, F|
+|poke|p1|Typhlosion-Hisui, L50, M|
+|poke|p2|Palafin, L50, M, shiny|
+|poke|p2|Primarina, L50, M|
+|poke|p2|Conkeldurr, L50, M|
+|poke|p2|Bellibolt, L50, M|
+|poke|p2|Chandelure, L50, F|
+|poke|p2|Slurpuff, L50, F|
+|teampreview|4
+@message
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Aerodactyl|Aerodactyl, L50, F|100/100
+|switch|p1b: Toxicroak|Toxicroak, L50, F|100/100
+|switch|p2a: Palafin|Palafin, L50, M, shiny|100/100
+|switch|p2b: Chandelure|Chandelure, L50, F|100/100
+|-ability|p1a: Aerodactyl|Unnerve
+|turn|1
+@message
+|
+|t:|
+|switch|p2b: Primarina|Primarina, L50, M|100/100
+|move|p1a: Aerodactyl|Rising Voltage|p2a: Palafin
+|-supereffective|p2a: Palafin|1
+|-damage|p2a: Palafin|70/100
+|move|p1b: Toxicroak|Rising Voltage|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|61/100
+|move|p2a: Palafin|Waterfall|p1b: Toxicroak
+|-damage|p1b: Toxicroak|68/100
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|detailschange|p1a: Aerodactyl|Aerodactyl-Mega, L50, F
+|-mega|p1a: Aerodactyl|Aerodactyl|Aerodactylite
+|move|p1a: Aerodactyl|Rising Voltage|p1b: Toxicroak
+|-damage|p1b: Toxicroak|52/100
+|-prepare|p1b: Toxicroak|Chilly Reception|[premajor]
+|move|p1b: Toxicroak|Chilly Reception|p1b: Toxicroak
+|-weather|Snowscape
+@message
+|
+|t:|
+|switch|p1b: Ceruledge|Ceruledge, L50, M|100/100|[from] Chilly Reception
+|move|p2a: Palafin|Guard Swap|p1b: Ceruledge
+|-swapboost|p2a: Palafin|p1b: Ceruledge|def, spd|[from] move: Guard Swap
+|move|p2b: Primarina|Thunderbolt|p1b: Ceruledge
+|-damage|p1b: Ceruledge|70/100
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|switch|p1a: Toxicroak|Toxicroak, L50, F|52/100
+|move|p2a: Palafin|Waterfall|p1b: Ceruledge
+|-supereffective|p1b: Ceruledge|1
+|-damage|p1b: Ceruledge|22/100
+|move|p1b: Ceruledge|Fire Punch|p2a: Palafin
+|-resisted|p2a: Palafin|1
+|-damage|p2a: Palafin|52/100
+|move|p2b: Primarina|Thunderbolt|p2a: Palafin
+|-supereffective|p2a: Palafin|1
+|-damage|p2a: Palafin|0 fnt
+|faint|p2a: Palafin
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+@message
+|
+|t:|
+|switch|p2a: Conkeldurr|Conkeldurr, L50, M|100/100
+|turn|4
+@message
+|
+|t:|
+|move|p1a: Toxicroak|Pain Split|p2a: Conkeldurr
+|-sethp|p2a: Conkeldurr|74/100|[from] move: Pain Split|[silent]
+|-sethp|p1a: Toxicroak|79/100|[from] move: Pain Split
+|move|p1b: Ceruledge|Cosmic Power|p1b: Ceruledge
+|-boost|p1b: Ceruledge|def|1
+|-boost|p1b: Ceruledge|spd|1
+|move|p2a: Conkeldurr|Heavy Slam|p1a: Toxicroak
+|-damage|p1a: Toxicroak|64/100
+|move|p2b: Primarina|Guard Split|p1b: Ceruledge
+|-activate|p2b: Primarina|move: Guard Split|[of] p1b: Ceruledge
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+|turn|5
+@message
+|
+|t:|
+|move|p1a: Toxicroak|Sand Tomb|p2b: Primarina
+|-damage|p2b: Primarina|88/100
+|-activate|p2b: Primarina|move: Sand Tomb|[of] p1a: Toxicroak
+|move|p1b: Ceruledge|Fire Punch|p2b: Primarina
+|-resisted|p2b: Primarina|1
+|-damage|p2b: Primarina|66/100
+|move|p2a: Conkeldurr|Encore|p1b: Ceruledge
+|-start|p1b: Ceruledge|Encore
+|move|p2b: Primarina|Thunderbolt|p1b: Ceruledge
+|-damage|p1b: Ceruledge|3/100
+|
+|-weather|Snowscape|[upkeep]
+|-damage|p2b: Primarina|54/100|[from] move: Sand Tomb|[partiallytrapped]
+|upkeep
+|turn|6
+@message
+|
+|t:|
+|move|p1a: Toxicroak|Rising Voltage|p2b: Primarina
+|-supereffective|p2b: Primarina|1
+|-damage|p2b: Primarina|28/100
+|move|p1b: Ceruledge|Fire Punch|p2b: Primarina
+|-resisted|p2b: Primarina|1
+|-damage|p2b: Primarina|7/100
+|move|p2a: Conkeldurr|Yawn|p2b: Primarina
+|-start|p2b: Primarina|move: Yawn|[of] p2a: Conkeldurr
+|move|p2b: Primarina|Thunderbolt|p1a: Toxicroak
+|-damage|p1a: Toxicroak|30/100
+|
+|-weather|none
+|-damage|p2b: Primarina|0 fnt|[from] move: Sand Tomb|[partiallytrapped]
+|faint|p2b: Primarina
+|upkeep
+@message
+|
+|t:|
+|switch|p2b: Chandelure|Chandelure, L50, F|100/100
+|turn|7
+@message
+|
+|t:|
+|switch|p1a: Aerodactyl|Aerodactyl-Mega, L50, F|61/100
+|switch|p1b: Skeledirge|Skeledirge, L50, F|100/100
+|move|p2b: Chandelure|Imprison|p2b: Chandelure
+|-start|p2b: Chandelure|move: Imprison
+|move|p2a: Conkeldurr|Yawn|p1a: Aerodactyl
+|-start|p1a: Aerodactyl|move: Yawn|[of] p2a: Conkeldurr
+|
+|upkeep
+|turn|8
+@message
+|
+|t:|
+|switch|p1b: Toxicroak|Toxicroak, L50, F|30/100
+|move|p1a: Aerodactyl|Rising Voltage|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|62/100
+|move|p2b: Chandelure|Imprison||[still]
+|-fail|p2b: Chandelure
+|move|p2a: Conkeldurr|Heavy Slam|p1a: Aerodactyl
+|-supereffective|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|39/100
+|
+|-end|p1a: Aerodactyl|move: Yawn|[silent]
+|-status|p1a: Aerodactyl|slp
+|upkeep
+|turn|9
+@message
+|
+|t:|
+|switch|p1a: Ceruledge|Ceruledge, L50, M|3/100
+|detailschange|p2b: Chandelure|Chandelure-Mega, L50, F
+|-mega|p2b: Chandelure|Chandelure|Chandelurite
+|move|p2b: Chandelure|Dual Wingbeat|p2a: Conkeldurr
+|-supereffective|p2a: Conkeldurr|1
+|-crit|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|39/100
+|-supereffective|p2a: Conkeldurr|1
+|-damage|p2a: Conkeldurr|22/100
+|-hitcount|p2a: Conkeldurr|2
+|move|p1b: Toxicroak|Sand Tomb|p1a: Ceruledge
+|-supereffective|p1a: Ceruledge|1
+|-damage|p1a: Ceruledge|0 fnt
+|faint|p1a: Ceruledge
+|move|p2a: Conkeldurr|Brave Bird|p1b: Toxicroak
+|-supereffective|p1b: Toxicroak|1
+|-damage|p1b: Toxicroak|0 fnt
+|faint|p1b: Toxicroak
+|-damage|p2a: Conkeldurr|13/100|[from] Recoil
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1b: Skeledirge|Skeledirge, L50, F|100/100
+|switch|p1a: Aerodactyl|Aerodactyl-Mega, L50, F|39/100 slp
+|turn|10
+@message
+|
+|t:|
+|cant|p1a: Aerodactyl|slp
+|move|p2b: Chandelure|Dual Wingbeat|p1b: Skeledirge
+|-damage|p1b: Skeledirge|92/100
+|-damage|p1b: Skeledirge|84/100
+|-hitcount|p1b: Skeledirge|2
+|move|p2a: Conkeldurr|Encore||[still]
+|-fail|p2a: Conkeldurr
+|move|p1b: Skeledirge|Instruct|p2a: Conkeldurr
+|-singleturn|p2a: Conkeldurr|move: Instruct|[of] p1b: Skeledirge
+|move|p2a: Conkeldurr|Encore||[still]
+|-fail|p2a: Conkeldurr
+|
+|upkeep
+|turn|11
+@message
+|
+|t:|
+|-curestatus|p1a: Aerodactyl|slp|[msg]
+|move|p1a: Aerodactyl|Rising Voltage|p1b: Skeledirge
+|-damage|p1b: Skeledirge|70/100
+|move|p2b: Chandelure|Dual Wingbeat|p1b: Skeledirge|[miss]
+|-miss|p2b: Chandelure|p1b: Skeledirge
+|move|p2a: Conkeldurr|Yawn|p2b: Chandelure
+|-start|p2b: Chandelure|move: Yawn|[of] p2a: Conkeldurr
+|move|p1b: Skeledirge|Corrosive Gas|p2b: Chandelure|[spread] p1a,p2a,p2b
+|-fail|p1a: Aerodactyl|move: Corrosive Gas
+|-enditem|p2a: Conkeldurr|Lum Berry|[from] move: Corrosive Gas|[of] p1b: Skeledirge
+|-fail|p2b: Chandelure|move: Corrosive Gas
+|
+|upkeep
+|turn|12
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Rising Voltage|p2a: Conkeldurr
+|-damage|p2a: Conkeldurr|1/100
+|move|p2b: Chandelure|Dual Wingbeat|p2a: Conkeldurr
+|-supereffective|p2a: Conkeldurr|1
+|-damage|p2a: Conkeldurr|0 fnt
+|faint|p2a: Conkeldurr
+|-hitcount|p2: Conkeldurr|1
+|move|p1b: Skeledirge|Instruct|p2b: Chandelure
+|-singleturn|p2b: Chandelure|move: Instruct|[of] p1b: Skeledirge
+|move|p2b: Chandelure|Dual Wingbeat|p2: Conkeldurr|[notarget]
+|-fail|p2b: Chandelure
+|
+|-end|p2b: Chandelure|move: Yawn|[silent]
+|-status|p2b: Chandelure|slp
+|upkeep
+|turn|13
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Roost|p1a: Aerodactyl
+|-heal|p1a: Aerodactyl|89/100
+|-singleturn|p1a: Aerodactyl|move: Roost
+|cant|p2b: Chandelure|slp
+|move|p1b: Skeledirge|Corrosive Gas|p2b: Chandelure|[spread] p1a,p2b
+|-fail|p1a: Aerodactyl|move: Corrosive Gas
+|-fail|p2b: Chandelure|move: Corrosive Gas
+|
+|upkeep
+|turn|14
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Rising Voltage|p1b: Skeledirge
+|-damage|p1b: Skeledirge|58/100
+|cant|p2b: Chandelure|slp
+|move|p1b: Skeledirge|Corrosive Gas|p2b: Chandelure|[spread] p1a,p2b
+|-fail|p1a: Aerodactyl|move: Corrosive Gas
+|-fail|p2b: Chandelure|move: Corrosive Gas
+|
+|upkeep
+|turn|15
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Rising Voltage|p1b: Skeledirge
+|-damage|p1b: Skeledirge|46/100
+|-curestatus|p2b: Chandelure|slp|[msg]
+|move|p2b: Chandelure|Dual Wingbeat|p1a: Aerodactyl
+|-resisted|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|85/100
+|-resisted|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|81/100
+|-hitcount|p1a: Aerodactyl|2
+|move|p1b: Skeledirge|Instruct|p1a: Aerodactyl
+|-singleturn|p1a: Aerodactyl|move: Instruct|[of] p1b: Skeledirge
+|move|p1a: Aerodactyl|Rising Voltage|p1b: Skeledirge
+|-damage|p1b: Skeledirge|32/100
+|
+|upkeep
+|turn|16
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Rising Voltage|p1b: Skeledirge
+|-damage|p1b: Skeledirge|20/100y
+|move|p2b: Chandelure|Imprison||[still]
+|-fail|p2b: Chandelure
+|move|p1b: Skeledirge|Instruct|p1a: Aerodactyl
+|-singleturn|p1a: Aerodactyl|move: Instruct|[of] p1b: Skeledirge
+|move|p1a: Aerodactyl|Rising Voltage|p1b: Skeledirge
+|-damage|p1b: Skeledirge|8/100
+|
+|upkeep
+|turn|17
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Rising Voltage|p1b: Skeledirge
+|-damage|p1b: Skeledirge|0 fnt
+|faint|p1b: Skeledirge
+|move|p2b: Chandelure|Dual Wingbeat|p1a: Aerodactyl
+|-resisted|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|78/100
+|-resisted|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|75/100
+|-hitcount|p1a: Aerodactyl|2
+|
+|upkeep
+|turn|18
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Roost|p1a: Aerodactyl
+|-heal|p1a: Aerodactyl|100/100
+|-singleturn|p1a: Aerodactyl|move: Roost
+|move|p2b: Chandelure|Dual Wingbeat|p1a: Aerodactyl
+|-resisted|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|96/100
+|-resisted|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|92/100
+|-hitcount|p1a: Aerodactyl|2
+|
+|upkeep
+|turn|19
+@message
+|chat|turn talk 37
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Rising Voltage|p2b: Chandelure
+|-damage|p2b: Chandelure|86/100
+|move|p2b: Chandelure|Imprison||[still]
+|-fail|p2b: Chandelure
+|
+|upkeep
+|turn|20
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Roost|p1a: Aerodactyl
+|-heal|p1a: Aerodactyl|100/100
+|-singleturn|p1a: Aerodactyl|move: Roost
+|move|p2b: Chandelure|Imprison||[still]
+|-fail|p2b: Chandelure
+|
+|upkeep
+|turn|21
+@message
+|player|p2|Renamed8||
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Roost||[still]
+|-fail|p1a: Aerodactyl|heal
+|move|p2b: Chandelure|Dual Wingbeat|p1a: Aerodactyl
+|-resisted|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|96/100
+|-resisted|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|92/100
+|-hitcount|p1a: Aerodactyl|2
+|
+|upkeep
+|turn|22
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Roost|p1a: Aerodactyl
+|-heal|p1a: Aerodactyl|100/100
+|-singleturn|p1a: Aerodactyl|move: Roost
+|move|p2b: Chandelure|Dual Wingbeat|p1a: Aerodactyl
+|-resisted|p1a: Aerodactyl|1
+|-crit|p1a: Aerodactyl
+|-damage|p1a: Aerodactyl|94/100
+|-resisted|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|90/100
+|-hitcount|p1a: Aerodactyl|2
+|
+|upkeep
+|turn|23
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Rising Voltage|p2b: Chandelure
+|-damage|p2b: Chandelure|72/100
+|move|p2b: Chandelure|Imprison||[still]
+|-fail|p2b: Chandelure
+|
+|upkeep
+|turn|24
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Rising Voltage|p2b: Chandelure
+|-damage|p2b: Chandelure|56/100
+|move|p2b: Chandelure|Dual Wingbeat|p1a: Aerodactyl|[miss]
+|-miss|p2b: Chandelure|p1a: Aerodactyl
+|
+|upkeep
+|turn|25
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Rising Voltage|p2b: Chandelure
+|-damage|p2b: Chandelure|42/100
+|move|p2b: Chandelure|Imprison||[still]
+|-fail|p2b: Chandelure
+|
+|upkeep
+|turn|26
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Roost|p1a: Aerodactyl
+|-heal|p1a: Aerodactyl|100/100
+|-singleturn|p1a: Aerodactyl|move: Roost
+|move|p2b: Chandelure|Dual Wingbeat|p1a: Aerodactyl
+|-resisted|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|96/100
+|-resisted|p1a: Aerodactyl|1
+|-damage|p1a: Aerodactyl|93/100
+|-hitcount|p1a: Aerodactyl|2
+|
+|upkeep
+|turn|27
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Roost|p1a: Aerodactyl
+|-heal|p1a: Aerodactyl|100/100
+|-singleturn|p1a: Aerodactyl|move: Roost
+|move|p2b: Chandelure|Imprison||[still]
+|-fail|p2b: Chandelure
+|
+|upkeep
+|turn|28
+@message
+|
+|t:|
+|move|p1a: Aerodactyl|Roost||[still]
+|-fail|p1a: Aerodactyl|heal
+|move|p2b: Chandelure|Imprison||[still]
+|-fail|p2b: Chandelure
+|
+|upkeep
+|turn|29
+@message
+|
+|win|Alice

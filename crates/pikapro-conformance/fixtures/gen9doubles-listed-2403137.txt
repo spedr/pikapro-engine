@@ -1,0 +1,648 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 0eca 340b 0bbf 0eaa
+genders drawn
+validate gen9anythinggoes@@@Species Clause
+team p1
+Dondozo (F) @ Assault Vest
+Ability: Unaware
+Tera Type: Steel
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- Body Press
+- Wave Crash
+- Avalanche
+- Heavy Slam
+
+Zoë (Smeargle) (M) @ Wide Lens
+Ability: Technician
+Tera Type: Ghost
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- No Retreat
+- Baton Pass
+- Population Bomb
+- Baneful Bunker
+
+Nibbles (Cramorant-Gorging) (M) @ Sitrus Berry
+Ability: Gulp Missile
+Tera Type: Ground
+EVs: 252 HP / 252 Atk / 4 Def
+Lonely Nature
+- Surf
+- Tailwind
+- Brave Bird
+- Protect
+
+Golduck (M) @ Sitrus Berry
+Ability: Cloud Nine
+Tera Type: Grass
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
+IVs: 0 Atk
+- Encore
+- Icy Wind
+- Grass Knot
+- Hydro Pump
+
+Greninja-Bond (M) @ Life Orb
+Ability: Battle Bond
+Tera Type: Water
+EVs: 4 HP / 252 SpA / 252 Spe
+Mild Nature
+- Hydro Pump
+- Dark Pulse
+- Protect
+- Gunk Shot
+
+Wugtrio (M) @ Choice Band
+Ability: Gooey
+Tera Type: Dark
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Aqua Jet
+- Stomping Tantrum
+- Throat Chop
+- Liquidation
+end
+team p2
+Gholdengo @ Choice Scarf
+Ability: Good as Gold
+Tera Type: Steel
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Shadow Ball
+- Make It Rain
+- Trick
+
+Slither Wing @ Life Orb
+Ability: Protosynthesis
+Tera Type: Fire
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Flare Blitz
+- Protect
+- Close Combat
+- First Impression
+
+Armarouge (F) @ Choice Specs
+Ability: Flash Fire
+Tera Type: Fire
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Heat Wave
+- Aura Sphere
+- Energy Ball
+- Psychic
+
+Suicune @ Sitrus Berry
+Ability: Inner Focus
+Tera Type: Grass
+EVs: 252 HP / 128 Def / 128 SpD
+Bold Nature
+IVs: 0 Atk
+- Scald
+- Protect
+- Tailwind
+- Ice Beam
+
+Zoë (Magmortar) (M) @ Sitrus Berry
+Ability: Flame Body
+Tera Type: Grass
+EVs: 252 HP / 4 Def / 252 SpA
+Mild Nature
+- Focus Blast
+- Protect
+- Knock Off
+- Fire Blast
+
+Empoleon (M) @ Assault Vest
+Ability: Competitive
+Tera Type: Flying
+EVs: 252 HP / 4 Def / 252 SpA
+Mild Nature
+- Knock Off
+- Hydro Pump
+- Icy Wind
+- Flash Cannon
+end
+choice p1 default
+choice p2 move 4 1, move 4 2 terastallize
+choice p1 pass, switch 3
+choice p2 move Shadow Ball +2 ,  move closecombat 1
+choice p1 default
+choice p2 move 1, switch 6
+choice p1 move 1 1, move 1
+choice p2 switch 6, move 1 1
+choice p1 move 1 2, move 2
+choice p1 switch 5, pass
+choice p2 move 3 -2, move 3
+choice p1 move 2 2, move 3 -1
+choice p2 pass, switch 5
+choice p1 switch 6, pass
+choice p2 switch 4, move 3 2
+choice p1 move 4 +2,move 3 terastal -1
+choice p2 pass, switch 3
+choice p1 switch 4, pass
+choice p2 move 1 2, move 3 2
+choice p1 move 4 -2, move 4
+choice p2 move 2, switch 6
+choice p1 move 1 -2, move 3 2
+choice p2 move 1 1, move 2 2
+choice p1 move 1 -2,move protect
+choice p2 move 1 -2, move 2 2
+choice p1 move 4 1, move 4
+choice p2 pass, switch 6
+choice p1 move 2, pass
+choice p2 move 1 1, move 4 -1
+choice p1 move 4 2, pass
+choice p2 default
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Dondozo|Dondozo, F|504/504
+expect |switch|p1a: Dondozo|Dondozo, F|504/504
+expect |split|p1
+expect |switch|p1b: Zoë|Smeargle, M|252/252
+expect |switch|p1b: Zoë|Smeargle, M|252/252
+expect |split|p2
+expect |switch|p2a: Gholdengo|Gholdengo|316/316
+expect |switch|p2a: Gholdengo|Gholdengo|316/316
+expect |split|p2
+expect |switch|p2b: Slither Wing|Slither Wing|312/312
+expect |switch|p2b: Slither Wing|Slither Wing|312/312
+expect |turn|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |-terastallize|p2b: Slither Wing|Fire
+expect |move|p2b: Slither Wing|First Impression|p1b: Zoë
+expect |rng|100|11
+expect |rng|24|6
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Zoë|0 fnt
+expect |-damage|p1b: Zoë|0 fnt
+expect |faint|p1b: Zoë
+expect |split|p2
+expect |-damage|p2b: Slither Wing|281/312|[from] item: Life Orb
+expect |-damage|p2b: Slither Wing|281/312|[from] item: Life Orb
+expect |move|p2a: Gholdengo|Trick|p1a: Dondozo
+expect |rng|100|36
+expect |-activate|p2a: Gholdengo|move: Trick|[of] p1a: Dondozo
+expect |-item|p1a: Dondozo|Choice Scarf|[from] move: Trick
+expect |-item|p2a: Gholdengo|Assault Vest|[from] move: Trick
+expect |move|p1a: Dondozo|Body Press|p2a: Gholdengo
+expect |-immune|p2a: Gholdengo
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Nibbles|Cramorant, M|344/344
+expect |switch|p1b: Nibbles|Cramorant, M|344/344
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2a: Gholdengo|Shadow Ball|p1b: Nibbles
+expect |rng|100|73
+expect |rng|24|8
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1b: Nibbles|166/344
+expect |-damage|p1b: Nibbles|166/344
+expect |rng|100|51
+expect |-enditem|p1b: Nibbles|Sitrus Berry|[eat]
+expect |split|p1
+expect |-heal|p1b: Nibbles|252/344|[from] item: Sitrus Berry
+expect |-heal|p1b: Nibbles|252/344|[from] item: Sitrus Berry
+expect |rng|2|1
+expect |move|p2b: Slither Wing|Close Combat|p1a: Dondozo
+expect |rng|100|91
+expect |rng|24|21
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Dondozo|241/504
+expect |-damage|p1a: Dondozo|241/504
+expect |rng|100|42
+expect |-unboost|p2b: Slither Wing|def|1
+expect |-unboost|p2b: Slither Wing|spd|1
+expect |split|p2
+expect |-damage|p2b: Slither Wing|250/312|[from] item: Life Orb
+expect |-damage|p2b: Slither Wing|250/312|[from] item: Life Orb
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Nibbles|Surf|p2b: Slither Wing|[spread] p1a,p2a,p2b
+expect |rng|100|26
+expect |rng|100|59
+expect |rng|100|23
+expect |-formechange|p1b: Nibbles|Cramorant-Gulping|
+expect |rng|24|3
+expect |rng|16|11
+expect |-resisted|p1a: Dondozo
+expect |rng|24|15
+expect |rng|16|1
+expect |rng|24|13
+expect |rng|16|15
+expect |-supereffective|p2b: Slither Wing
+expect |split|p1
+expect |-damage|p1a: Dondozo|194/504
+expect |-damage|p1a: Dondozo|194/504
+expect |split|p2
+expect |-damage|p2a: Gholdengo|262/316
+expect |-damage|p2a: Gholdengo|262/316
+expect |split|p2
+expect |-damage|p2b: Slither Wing|68/312
+expect |-damage|p2b: Slither Wing|68/312
+expect |move|p1a: Dondozo|Body Press|p2a: Gholdengo
+expect |-immune|p2a: Gholdengo
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |-end|p2b: Slither Wing|Protosynthesis|[silent]
+expect |split|p2
+expect |switch|p2b: Empoleon|Empoleon, M|372/372
+expect |switch|p2b: Empoleon|Empoleon, M|372/372
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Gholdengo|Dazzling Gleam|p1b: Nibbles|[spread] p1a,p1b
+expect |rng|100|81
+expect |rng|100|81
+expect |rng|24|8
+expect |rng|16|14
+expect |rng|24|18
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Dondozo|89/504
+expect |-damage|p1a: Dondozo|89/504
+expect |split|p1
+expect |-damage|p1b: Nibbles|161/344
+expect |-damage|p1b: Nibbles|161/344
+expect |split|p2
+expect |-damage|p2a: Gholdengo|183/316|[from] ability: Gulp Missile|[of] p1b: Nibbles
+expect |-damage|p2a: Gholdengo|183/316|[from] ability: Gulp Missile|[of] p1b: Nibbles
+expect |-unboost|p2a: Gholdengo|def|1
+expect |-formechange|p1b: Nibbles|Cramorant|
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1b: Nibbles|Surf|p2a: Gholdengo|[spread] p1a,p2a,p2b
+expect |rng|100|34
+expect |rng|100|99
+expect |rng|100|1
+expect |-formechange|p1b: Nibbles|Cramorant-Gorging|
+expect |rng|24|3
+expect |rng|16|13
+expect |-resisted|p1a: Dondozo
+expect |rng|24|11
+expect |rng|16|14
+expect |rng|24|13
+expect |rng|16|1
+expect |-resisted|p2b: Empoleon
+expect |split|p1
+expect |-damage|p1a: Dondozo|44/504
+expect |-damage|p1a: Dondozo|44/504
+expect |split|p2
+expect |-damage|p2a: Gholdengo|137/316
+expect |-damage|p2a: Gholdengo|137/316
+expect |split|p2
+expect |-damage|p2b: Empoleon|348/372
+expect |-damage|p2b: Empoleon|348/372
+expect |move|p1a: Dondozo|Body Press|p2a: Gholdengo
+expect |-immune|p2a: Gholdengo
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Slither Wing|Slither Wing, tera:Fire|68/312
+expect |switch|p2a: Slither Wing|Slither Wing, tera:Fire|68/312
+expect |move|p1b: Nibbles|Tailwind|p1b: Nibbles
+expect |-sidestart|p1: p1|move: Tailwind
+expect |move|p1a: Dondozo|Body Press|p2b: Empoleon
+expect |rng|100|57
+expect |rng|24|19
+expect |rng|16|2
+expect |-supereffective|p2b: Empoleon
+expect |split|p2
+expect |-damage|p2b: Empoleon|162/372
+expect |-damage|p2b: Empoleon|162/372
+expect |move|p2b: Empoleon|Knock Off|p1a: Dondozo
+expect |rng|100|11
+expect |rng|24|14
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Dondozo|0 fnt
+expect |-damage|p1a: Dondozo|0 fnt
+expect |-enditem|p1a: Dondozo|Choice Scarf|[from] move: Knock Off|[of] p2b: Empoleon
+expect |faint|p1a: Dondozo
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Greninja|Greninja, M|286/286
+expect |switch|p1a: Greninja|Greninja, M|286/286
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1a: Greninja|Dark Pulse|p2b: Empoleon
+expect |rng|100|14
+expect |rng|24|15
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2b: Empoleon|53/372
+expect |-damage|p2b: Empoleon|53/372
+expect |rng|100|91
+expect |split|p1
+expect |-damage|p1a: Greninja|258/286|[from] item: Life Orb
+expect |-damage|p1a: Greninja|258/286|[from] item: Life Orb
+expect |rng|2|1
+expect |move|p1b: Nibbles|Brave Bird|p1a: Greninja
+expect |rng|100|18
+expect |rng|24|13
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Greninja|0 fnt
+expect |-damage|p1a: Greninja|0 fnt
+expect |faint|p1a: Greninja
+expect |split|p1
+expect |-damage|p1b: Nibbles|76/344|[from] Recoil
+expect |-damage|p1b: Nibbles|76/344|[from] Recoil
+expect |rng|1|0
+expect |move|p2a: Slither Wing|Close Combat|p2b: Empoleon
+expect |rng|100|76
+expect |rng|24|2
+expect |rng|16|5
+expect |-supereffective|p2b: Empoleon
+expect |split|p2
+expect |-damage|p2b: Empoleon|0 fnt
+expect |-damage|p2b: Empoleon|0 fnt
+expect |rng|100|88
+expect |-unboost|p2a: Slither Wing|def|1
+expect |-unboost|p2a: Slither Wing|spd|1
+expect |faint|p2b: Empoleon
+expect |split|p2
+expect |-damage|p2a: Slither Wing|37/312|[from] item: Life Orb
+expect |-damage|p2a: Slither Wing|37/312|[from] item: Life Orb
+expect |rng|1|0
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Wugtrio|Wugtrio, M|212/212
+expect |switch|p1a: Wugtrio|Wugtrio, M|212/212
+expect |split|p2
+expect |switch|p2b: Zoë|Magmortar, M|354/354
+expect |switch|p2b: Zoë|Magmortar, M|354/354
+expect |turn|6
+expect |
+expect |t:|
+expect |-end|p2a: Slither Wing|Protosynthesis|[silent]
+expect |split|p2
+expect |switch|p2a: Suicune|Suicune|404/404
+expect |switch|p2a: Suicune|Suicune|404/404
+expect |-terastallize|p1b: Nibbles|Ground
+expect |move|p1a: Wugtrio|Liquidation|p2b: Zoë
+expect |rng|100|3
+expect |rng|24|12
+expect |rng|16|3
+expect |-supereffective|p2b: Zoë
+expect |split|p2
+expect |-damage|p2b: Zoë|0 fnt
+expect |-damage|p2b: Zoë|0 fnt
+expect |rng|100|82
+expect |rng|10|6
+expect |faint|p2b: Zoë
+expect |move|p1b: Nibbles|Brave Bird|p1a: Wugtrio
+expect |rng|100|81
+expect |rng|24|22
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Wugtrio|0 fnt
+expect |-damage|p1a: Wugtrio|0 fnt
+expect |-ability|p1a: Wugtrio|Gooey
+expect |-unboost|p1b: Nibbles|spe|1
+expect |faint|p1a: Wugtrio
+expect |split|p1
+expect |-damage|p1b: Nibbles|6/344|[from] Recoil
+expect |-damage|p1b: Nibbles|6/344|[from] Recoil
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Golduck|Golduck, M|302/302
+expect |switch|p1a: Golduck|Golduck, M|302/302
+expect |split|p2
+expect |switch|p2b: Armarouge|Armarouge, F|312/312
+expect |switch|p2b: Armarouge|Armarouge, F|312/312
+expect |-ability|p1a: Golduck|Cloud Nine
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Protect|p1b: Nibbles
+expect |-singleturn|p1b: Nibbles|Protect
+expect |move|p1a: Golduck|Hydro Pump|p1b: Nibbles
+expect |-activate|p1b: Nibbles|move: Protect
+expect |move|p2b: Armarouge|Energy Ball|p1b: Nibbles
+expect |-activate|p1b: Nibbles|move: Protect
+expect |move|p2a: Suicune|Scald|p1b: Nibbles
+expect |-activate|p1b: Nibbles|move: Protect
+expect |
+expect |rng|2|1
+expect |-sideend|p1: p1|move: Tailwind
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Gholdengo|Gholdengo|137/316
+expect |switch|p2b: Gholdengo|Gholdengo|137/316
+expect |move|p2a: Suicune|Protect|p2a: Suicune
+expect |-singleturn|p2a: Suicune|Protect
+expect |move|p1a: Golduck|Encore|p1b: Nibbles
+expect |rng|100|89
+expect |-start|p1b: Nibbles|Encore
+expect |move|p1b: Nibbles|Protect||[still]
+expect |-fail|p1b: Nibbles
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Protect|p1b: Nibbles
+expect |-singleturn|p1b: Nibbles|Protect
+expect |move|p1a: Golduck|Encore|p1b: Nibbles
+expect |-activate|p1b: Nibbles|move: Protect
+expect |move|p2b: Gholdengo|Shadow Ball|p1b: Nibbles
+expect |-activate|p1b: Nibbles|move: Protect
+expect |move|p2a: Suicune|Scald|p1a: Golduck
+expect |rng|100|8
+expect |rng|24|7
+expect |rng|16|4
+expect |-resisted|p1a: Golduck
+expect |split|p1
+expect |-damage|p1a: Golduck|248/302
+expect |-damage|p1a: Golduck|248/302
+expect |rng|100|9
+expect |-status|p1a: Golduck|brn
+expect |
+expect |rng|2|1
+expect |split|p1
+expect |-damage|p1a: Golduck|230/302 brn|[from] brn
+expect |-damage|p1a: Golduck|230/302 brn|[from] brn
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Protect||[still]
+expect |rng|3|1
+expect |-fail|p1b: Nibbles
+expect |move|p1a: Golduck|Hydro Pump|p2a: Suicune
+expect |rng|100|67
+expect |rng|24|10
+expect |rng|16|8
+expect |-resisted|p2a: Suicune
+expect |split|p2
+expect |-damage|p2a: Suicune|342/404
+expect |-damage|p2a: Suicune|342/404
+expect |move|p2b: Gholdengo|Shadow Ball|p1b: Nibbles
+expect |rng|100|8
+expect |rng|24|19
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Nibbles|0 fnt
+expect |-damage|p1b: Nibbles|0 fnt
+expect |rng|100|28
+expect |split|p2
+expect |-damage|p2b: Gholdengo|58/316|[from] ability: Gulp Missile|[of] p1b: Nibbles
+expect |-damage|p2b: Gholdengo|58/316|[from] ability: Gulp Missile|[of] p1b: Nibbles
+expect |-status|p2b: Gholdengo|par
+expect |-formechange|p1b: Nibbles|Cramorant|
+expect |rng|2|0
+expect |faint|p1b: Nibbles
+expect |move|p2a: Suicune|Scald|p2b: Gholdengo
+expect |rng|100|18
+expect |rng|24|12
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Gholdengo|0 fnt
+expect |-damage|p2b: Gholdengo|0 fnt
+expect |rng|100|4
+expect |faint|p2b: Gholdengo
+expect |
+expect |split|p1
+expect |-damage|p1a: Golduck|212/302 brn|[from] brn
+expect |-damage|p1a: Golduck|212/302 brn|[from] brn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Armarouge|Armarouge, F|312/312
+expect |switch|p2b: Armarouge|Armarouge, F|312/312
+expect |rng|2|0
+expect |turn|11
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Golduck|Icy Wind|p2b: Armarouge|[spread] p2a,p2b
+expect |rng|100|81
+expect |rng|100|35
+expect |rng|24|7
+expect |rng|16|8
+expect |-resisted|p2a: Suicune
+expect |rng|24|6
+expect |rng|16|14
+expect |-resisted|p2b: Armarouge
+expect |split|p2
+expect |-damage|p2a: Suicune|327/404
+expect |-damage|p2a: Suicune|327/404
+expect |split|p2
+expect |-damage|p2b: Armarouge|290/312
+expect |-damage|p2b: Armarouge|290/312
+expect |rng|100|33
+expect |-unboost|p2a: Suicune|spe|1
+expect |rng|100|29
+expect |-unboost|p2b: Armarouge|spe|1
+expect |move|p2b: Armarouge|Psychic|p2a: Suicune
+expect |rng|100|34
+expect |rng|24|9
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Suicune|114/404
+expect |-damage|p2a: Suicune|114/404
+expect |rng|100|94
+expect |-enditem|p2a: Suicune|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2a: Suicune|215/404|[from] item: Sitrus Berry
+expect |-heal|p2a: Suicune|215/404|[from] item: Sitrus Berry
+expect |move|p2a: Suicune|Scald|p1a: Golduck
+expect |rng|100|65
+expect |rng|24|2
+expect |rng|16|11
+expect |-resisted|p1a: Golduck
+expect |split|p1
+expect |-damage|p1a: Golduck|162/302 brn
+expect |-damage|p1a: Golduck|162/302 brn
+expect |rng|100|39
+expect |
+expect |split|p1
+expect |-damage|p1a: Golduck|144/302 brn|[from] brn
+expect |-damage|p1a: Golduck|144/302 brn|[from] brn
+expect |upkeep
+expect |-enditem|p1a: Golduck|Sitrus Berry|[eat]
+expect |split|p1
+expect |-heal|p1a: Golduck|219/302 brn|[from] item: Sitrus Berry
+expect |-heal|p1a: Golduck|219/302 brn|[from] item: Sitrus Berry
+expect |turn|12
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |move|p1a: Golduck|Hydro Pump|p2b: Armarouge|[miss]
+expect |rng|100|81
+expect |-miss|p1a: Golduck|p2b: Armarouge
+expect |move|p2b: Armarouge|Psychic|p1a: Golduck
+expect |rng|100|96
+expect |rng|24|7
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Golduck|0 fnt
+expect |-damage|p1a: Golduck|0 fnt
+expect |rng|100|44
+expect |faint|p1a: Golduck
+expect |
+expect |win|p2

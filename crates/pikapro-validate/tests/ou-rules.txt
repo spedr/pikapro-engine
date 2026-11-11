@@ -1,0 +1,242 @@
+# [Gen 9] OU: hand-written teams for each rule of the format (the tier
+# tags, the clauses' set hooks and bans, the format's bans, the order of
+# the messages when a set breaks several). The expectations are Showdown's,
+# recorded with
+#   validate_fuzz --check crates/pikapro-validate/tests/ou-rules.txt --write
+# Never edit an expect line by hand.
+
+case ou-legal-six
+format gen9ou
+set Garchomp|Rocky Helmet|Rough Skin|Jolly|100|252,4,0,0,0,252|31,31,31,31,31,31|Earthquake,Stealth Rock,Dragon Tail,Spikes|Steel|||0|ev
+set Gholdengo|Air Balloon|Good as Gold|Timid|100|0,0,0,252,4,252|31,0,31,31,31,31|Make It Rain,Shadow Ball,Nasty Plot,Recover|Fairy|||0|ev
+set Great Tusk|Booster Energy|Protosynthesis|Jolly|100|0,252,4,0,0,252|31,31,31,31,31,31|Headlong Rush,Ice Spinner,Rapid Spin,Close Combat|Ice|||0|ev
+set Kingambit|Leftovers|Supreme Overlord|Adamant|100|252,252,0,0,4,0|31,31,31,31,31,31|Kowtow Cleave,Sucker Punch,Swords Dance,Iron Head|Dark|||0|ev
+set Dragapult|Choice Specs|Infiltrator|Timid|100|0,0,0,252,4,252|31,31,31,31,31,31|Draco Meteor,Shadow Ball,U-turn,Flamethrower|Ghost|||0|ev
+set Toxapex|Black Sludge|Regenerator|Bold|100|252,0,252,0,4,0|31,0,31,31,31,31|Toxic,Recover,Haze,Surf|Fairy|||0|ev
+played Garchomp|Rocky Helmet|Rough Skin|Earthquake,Stealth Rock,Dragon Tail,Spikes||100|Steel
+played Gholdengo|Air Balloon|Good as Gold|Make It Rain,Shadow Ball,Nasty Plot,Recover|N|100|Fairy
+played Great Tusk|Booster Energy|Protosynthesis|Headlong Rush,Ice Spinner,Rapid Spin,Close Combat|N|100|Ice
+played Kingambit|Leftovers|Supreme Overlord|Kowtow Cleave,Sucker Punch,Swords Dance,Iron Head||100|Dark
+played Dragapult|Choice Specs|Infiltrator|Draco Meteor,Shadow Ball,U-turn,Flamethrower||100|Ghost
+played Toxapex|Black Sludge|Regenerator|Toxic,Recover,Haze,Surf||100|Fairy
+end
+case ou-one-pokemon
+format gen9ou
+set Clefable|Leftovers|Magic Guard|Calm|100|252,0,4,0,252,0|31,0,31,31,31,31|Moonblast,Moonlight,Calm Mind,Flamethrower|Steel|||0|ev
+played Clefable|Leftovers|Magic Guard|Moonblast,Moonlight,Calm Mind,Flamethrower||100|Steel
+end
+case ou-level-50-and-low
+format gen9ou
+set Clefable|Leftovers|Magic Guard|Calm|50|252,0,4,0,252,0|31,0,31,31,31,31|Moonblast,Moonlight||||0|ev
+set Pikachu|Light Ball|Static|Timid|5|0,0,0,252,4,251|31,31,31,31,31,31|Thunderbolt||||0|ev
+expect Clefable is level 50, but this format allows level 100 Pokémon. (If this was intentional, add exactly 1 to one of your EVs, which won't change its stats but will tell us that it wasn't a mistake).
+played Clefable|Leftovers|Magic Guard|Moonblast,Moonlight||50|Fairy
+played Pikachu|Light Ball|Static|Thunderbolt||5|Electric
+end
+case ou-uber-koraidon
+format gen9ou
+set Koraidon|Leftovers|Orichalcum Pulse|Jolly|100|0,252,4,0,0,252|31,31,31,31,31,31|Collision Course,Flare Blitz|Fire|||0|ev
+expect Koraidon is tagged Uber, which is banned.
+played Koraidon|Leftovers|Orichalcum Pulse|Collision Course,Flare Blitz|N|100|Fire
+end
+case ou-uber-miraidon
+format gen9ou
+set Miraidon|Leftovers|Hadron Engine|Timid|100|0,0,4,252,0,252|31,31,31,31,31,31|Electro Drift,Draco Meteor|Electric|||0|ev
+expect Miraidon is tagged AG, which is banned.
+played Miraidon|Leftovers|Hadron Engine|Electro Drift,Draco Meteor|N|100|Electric
+end
+case ou-uber-by-item-zacian
+format gen9ou
+set Zacian|Rusted Sword|Intrepid Sword|Jolly|100|0,252,4,0,0,252|31,31,31,31,31,31|Behemoth Blade,Play Rough|Fairy|||0|ev
+expect Zacian (Zacian-Crowned) is tagged Uber, which is banned.
+expect Zacian can't learn Behemoth Blade.
+played Zacian|Rusted Sword|Intrepid Sword|Behemoth Blade,Play Rough|N|100|Fairy
+end
+case ou-uber-zacian-plain
+format gen9ou
+set Zacian|Leftovers|Intrepid Sword|Jolly|100|0,252,4,0,0,252|31,31,31,31,31,31|Play Rough,Close Combat|Fairy|||0|ev
+expect Zacian is tagged Uber, which is banned.
+played Zacian|Leftovers|Intrepid Sword|Play Rough,Close Combat|N|100|Fairy
+end
+case ou-uber-nicknamed
+format gen9ou
+set Kyogre|Leftovers|Drizzle|Modest|100|0,0,4,252,0,252|31,31,31,31,31,31|Water Spout,Ice Beam|Water|Bob||0|ev
+set Arceus-Fairy|Pixie Plate|Multitype|Bold|100|252,0,252,0,4,0|31,31,31,31,31,31|Judgment,Recover|Fairy|||0|ev
+set Flutter Mane|Booster Energy|Protosynthesis|Timid|100|0,0,4,252,0,252|31,31,31,31,31,31|Moonblast,Shadow Ball|Fairy|||0|ev
+expect Bob (Kyogre) is tagged Uber, which is banned.
+expect Arceus (Arceus-Fairy) is tagged Uber, which is banned.
+expect Flutter Mane is tagged Uber, which is banned.
+played Kyogre|Leftovers|Drizzle|Water Spout,Ice Beam|N|100|Water
+played Arceus-Fairy|Pixie Plate|Multitype|Judgment,Recover|N|100|Fairy
+played Flutter Mane|Booster Energy|Protosynthesis|Moonblast,Shadow Ball|N|100|Fairy
+end
+case ou-ohko-moves
+format gen9ou
+set Lapras|Leftovers|Water Absorb|Modest|100|252,0,4,252,0,0|31,31,31,31,31,31|Sheer Cold,Surf,Horn Drill,Sing|Water|||0|ev
+set Dugtrio|Choice Band|Sand Force|Jolly|100|0,252,4,0,0,252|31,31,31,31,31,31|Fissure,Earthquake|Ground|||0|ev
+set Pinsir|Leftovers|Hyper Cutter|Jolly|100|0,252,4,0,0,252|31,31,31,31,31,31|Guillotine,X-Scissor|Bug|||0|ev
+expect Sheer Cold is banned by OHKO Clause.
+expect Horn Drill is banned by OHKO Clause.
+expect Sing is banned by Sleep Moves Clause.
+expect Fissure is banned by OHKO Clause.
+expect Pinsir does not exist in Gen 9.
+expect Pinsir's move Guillotine can't be transferred from Gen 8 to 9.
+expect Guillotine is banned by OHKO Clause.
+played Lapras|Leftovers|Water Absorb|Sheer Cold,Surf,Horn Drill,Sing||100|Water
+played Dugtrio|Choice Band|Sand Force|Fissure,Earthquake||100|Ground
+played Pinsir|Leftovers|Hyper Cutter|Guillotine,X-Scissor||100|Bug
+end
+case ou-sleep-moves
+format gen9ou
+set Amoonguss|Rocky Helmet|Regenerator|Bold|100|252,0,252,0,4,0|31,31,31,31,31,31|Spore,Giga Drain,Sleep Powder,Clear Smog|Water|||0|ev
+set Gengar|Leftovers|Cursed Body|Timid|100|0,0,4,252,0,252|31,31,31,31,31,31|Hypnosis,Shadow Ball|Ghost|||0|ev
+set Slowking|Leftovers|Regenerator|Bold|100|252,0,252,0,4,0|31,31,31,31,31,31|Yawn,Scald,Slack Off|Water|||0|ev
+set Darkrai|Leftovers|Bad Dreams|Timid|100|0,0,4,252,0,252|31,31,31,31,31,31|Dark Void,Dark Pulse|Dark|||0|ev
+set Jigglypuff|Eviolite|Cute Charm|Bold|100|252,0,252,0,4,0|31,31,31,31,31,31|Sing,Rest,Sleep Talk|Normal|||0|ev
+expect Amoonguss can't learn Sleep Powder.
+expect Spore is banned by Sleep Moves Clause.
+expect Sleep Powder is banned by Sleep Moves Clause.
+expect Hypnosis is banned by Sleep Moves Clause.
+expect Slowking's move Yawn is banned by Sleep Moves Clause.
+expect Dark Void is banned by Sleep Moves Clause.
+expect Sing is banned by Sleep Moves Clause.
+played Amoonguss|Rocky Helmet|Regenerator|Spore,Giga Drain,Sleep Powder,Clear Smog||100|Water
+played Gengar|Leftovers|Cursed Body|Hypnosis,Shadow Ball||100|Ghost
+played Slowking|Leftovers|Regenerator|Yawn,Scald,Slack Off||100|Water
+played Darkrai|Leftovers|Bad Dreams|Dark Void,Dark Pulse|N|100|Dark
+played Jigglypuff|Eviolite|Cute Charm|Sing,Rest,Sleep Talk||100|Normal
+end
+case ou-evasion
+format gen9ou
+set Garchomp|Bright Powder|Sand Veil|Jolly|100|0,252,4,0,0,252|31,31,31,31,31,31|Earthquake,Double Team|Ground|||0|ev
+set Froslass|Lax Incense|Snow Cloak|Timid|100|0,0,4,252,0,252|31,31,31,31,31,31|Shadow Ball,Minimize|Ghost|||0|ev
+set Shuckle|Leftovers|Sturdy|Bold|100|252,0,252,0,4,0|31,31,31,31,31,31|Acupressure,Rest|Bug|||0|ev
+set Muk|Leftovers|Stench|Adamant|100|252,252,0,0,4,0|31,31,31,31,31,31|Minimize,Poison Jab|Poison|||0|ev
+expect Garchomp's item Bright Powder is banned by Evasion Items Clause.
+expect Garchomp's ability Sand Veil is banned by Evasion Abilities Clause.
+expect Garchomp's move Double Team is banned by Evasion Moves Clause.
+expect Garchomp's move Double Team can't be transferred from Gen 7 to 9.
+expect Froslass's item Lax Incense is banned by Evasion Items Clause.
+expect Froslass's ability Snow Cloak is banned by Evasion Abilities Clause.
+expect Froslass's move Minimize is banned by Evasion Moves Clause.
+expect Froslass can't learn Minimize.
+expect Shuckle does not exist in Gen 9.
+expect Shuckle's move Acupressure is banned by Evasion Moves Clause.
+expect Shuckle's move Acupressure can't be transferred from Gen 8 to 9.
+expect Muk's move Minimize is banned by Evasion Moves Clause.
+played Garchomp|Bright Powder|Sand Veil|Earthquake,Double Team||100|Ground
+played Froslass|Lax Incense|Snow Cloak|Shadow Ball,Minimize|F|100|Ghost
+played Shuckle|Leftovers|Sturdy|Acupressure,Rest||100|Bug
+played Muk|Leftovers|Stench|Minimize,Poison Jab||100|Poison
+end
+case ou-format-bans
+format gen9ou
+set Dugtrio|King's Rock|Arena Trap|Jolly|100|0,252,4,0,0,252|31,31,31,31,31,31|Earthquake,Sucker Punch|Ground|||0|ev
+set Gothitelle|Razor Fang|Shadow Tag|Bold|100|252,0,252,0,4,0|31,31,31,31,31,31|Psychic,Calm Mind|Psychic|||0|ev
+set Glalie|Leftovers|Moody|Jolly|100|0,252,4,0,0,252|31,31,31,31,31,31|Protect,Substitute|Ice|||0|ev
+set Espeon|Leftovers|Magic Bounce|Timid|100|0,0,4,252,0,252|31,31,31,31,31,31|Baton Pass,Psychic,Tera Blast|Psychic|||0|ev
+set Houndstone|Leftovers|Sand Rush|Adamant|100|252,252,0,0,4,0|31,31,31,31,31,31|Last Respects,Body Press|Ghost|||0|ev
+set Cyclizar|Leftovers|Regenerator|Jolly|100|252,0,4,0,0,252|31,31,31,31,31,31|Shed Tail,Rapid Spin,Knock Off|Dragon|||0|ev
+expect Dugtrio's item King's Rock is banned.
+expect Dugtrio's ability Arena Trap is banned.
+expect Gothitelle's item Razor Fang is banned.
+expect Gothitelle's ability Shadow Tag is banned.
+expect Glalie's ability Moody is banned.
+expect Espeon's move Baton Pass is banned.
+expect Espeon's move Tera Blast is banned.
+expect Houndstone's move Last Respects is banned.
+expect Cyclizar's move Shed Tail is banned.
+played Dugtrio|King's Rock|Arena Trap|Earthquake,Sucker Punch||100|Ground
+played Gothitelle|Razor Fang|Shadow Tag|Psychic,Calm Mind||100|Psychic
+played Glalie|Leftovers|Moody|Protect,Substitute||100|Ice
+played Espeon|Leftovers|Magic Bounce|Baton Pass,Psychic,Tera Blast||100|Psychic
+played Houndstone|Leftovers|Sand Rush|Last Respects,Body Press||100|Ghost
+played Cyclizar|Leftovers|Regenerator|Shed Tail,Rapid Spin,Knock Off||100|Dragon
+end
+case ou-several-problems-in-order
+format gen9ou
+set Mewtwo|King's Rock|Pressure|Timid|100|0,0,4,252,0,252|31,31,31,31,31,31|Hypnosis,Tera Blast,Double Team,Psystrike|Psychic|Dugtrio||0|ev
+set Smeargle|Bright Powder|Moody|Jolly|100|252,0,4,0,0,252|31,31,31,31,31,31|Spore,Sheer Cold,Baton Pass,Shed Tail|Normal|||0|ev
+set Smeargle|Razor Fang|Own Tempo|Jolly|101|252,0,4,0,0,252|31,31,31,31,31,31|Dark Void,Fissure,Minimize,Last Respects|Normal|Smeargle2||0|ev
+expect Dugtrio (Mewtwo) is tagged Uber, which is banned.
+expect Dugtrio's item King's Rock is banned.
+expect Dugtrio's move Tera Blast is banned.
+expect Dugtrio's move Double Team is banned by Evasion Moves Clause.
+expect Dugtrio (Mewtwo) can't learn Hypnosis.
+expect Hypnosis is banned by Sleep Moves Clause.
+expect Dugtrio (Mewtwo) must not be nicknamed a different Pokémon species than what it actually is.
+expect Smeargle's item Bright Powder is banned by Evasion Items Clause.
+expect Smeargle's ability Moody is banned.
+expect Smeargle's move Baton Pass is banned.
+expect Smeargle's move Shed Tail is banned.
+expect Sheer Cold is banned by OHKO Clause.
+expect Spore is banned by Sleep Moves Clause.
+expect Smeargle2 (Smeargle) (level 101) is above the maximum level of 100
+expect Smeargle2's item Razor Fang is banned.
+expect Smeargle2's move Minimize is banned by Evasion Moves Clause.
+expect Smeargle2's move Last Respects is banned.
+expect Smeargle2 (Smeargle)'s move Dark Void can't be Sketched.
+expect Fissure is banned by OHKO Clause.
+expect Dark Void is banned by Sleep Moves Clause.
+expect You are limited to one of each Pokémon by Species Clause.
+expect (You have more than one Smeargle)
+played Mewtwo|King's Rock|Pressure|Hypnosis,Tera Blast,Double Team,Psystrike|N|100|Psychic
+played Smeargle|Bright Powder|Moody|Spore,Sheer Cold,Baton Pass,Shed Tail||100|Normal
+played Smeargle|Razor Fang|Own Tempo|Dark Void,Fissure,Minimize,Last Respects||101|Normal
+end
+case ou-clauses-species-and-nickname
+format gen9ou
+set Rotom-Wash|Leftovers|Levitate|Bold|100|252,0,252,0,4,0|31,31,31,31,31,31|Hydro Pump,Volt Switch|Water|Spin||0|ev
+set Rotom-Heat|Heavy-Duty Boots|Levitate|Bold|100|252,0,252,0,4,0|31,31,31,31,31,31|Overheat,Volt Switch|Fire|Spin||0|ev
+set Garchomp|Rocky Helmet|Rough Skin|Jolly|100|252,4,0,0,0,252|31,31,31,31,31,31|Earthquake|Steel|Gholdengo||0|ev
+expect Gholdengo (Garchomp) must not be nicknamed a different Pokémon species than what it actually is.
+expect You are limited to one of each Pokémon by Species Clause.
+expect (You have more than one Rotom)
+expect Your Pokémon must have different nicknames.
+expect (You have more than one Spin)
+played Rotom-Wash|Leftovers|Levitate|Hydro Pump,Volt Switch|N|100|Water
+played Rotom-Heat|Heavy-Duty Boots|Levitate|Overheat,Volt Switch|N|100|Fire
+played Garchomp|Rocky Helmet|Rough Skin|Earthquake||100|Steel
+end
+case ou-seven-pokemon
+format gen9ou
+set Garchomp|Rocky Helmet|Rough Skin|Jolly|100|252,4,0,0,0,252|31,31,31,31,31,31|Earthquake|Steel|||0|ev
+set Gholdengo|Air Balloon|Good as Gold|Timid|100|0,0,0,252,4,252|31,0,31,31,31,31|Make It Rain|Fairy|||0|ev
+set Great Tusk|Booster Energy|Protosynthesis|Jolly|100|0,252,4,0,0,252|31,31,31,31,31,31|Headlong Rush|Ice|||0|ev
+set Kingambit|Leftovers|Supreme Overlord|Adamant|100|252,252,0,0,4,0|31,31,31,31,31,31|Kowtow Cleave|Dark|||0|ev
+set Dragapult|Choice Specs|Infiltrator|Timid|100|0,0,0,252,4,252|31,31,31,31,31,31|Draco Meteor|Ghost|||0|ev
+set Toxapex|Black Sludge|Regenerator|Bold|100|252,0,252,0,4,0|31,0,31,31,31,31|Toxic|Fairy|||0|ev
+set Clefable|Leftovers|Magic Guard|Calm|100|252,0,4,0,252,0|31,0,31,31,31,31|Moonblast|Steel|||0|ev
+expect You may only bring up to 6 Pokémon (your team has 7).
+played Garchomp|Rocky Helmet|Rough Skin|Earthquake||100|Steel
+played Gholdengo|Air Balloon|Good as Gold|Make It Rain|N|100|Fairy
+played Great Tusk|Booster Energy|Protosynthesis|Headlong Rush|N|100|Ice
+played Kingambit|Leftovers|Supreme Overlord|Kowtow Cleave||100|Dark
+played Dragapult|Choice Specs|Infiltrator|Draco Meteor||100|Ghost
+played Toxapex|Black Sludge|Regenerator|Toxic||100|Fairy
+played Clefable|Leftovers|Magic Guard|Moonblast||100|Steel
+end
+case ou-same-item-twice-is-fine
+format gen9ou
+set Garchomp|Leftovers|Rough Skin|Jolly|100|252,4,0,0,0,252|31,31,31,31,31,31|Earthquake|Steel|||0|ev
+set Clefable|Leftovers|Magic Guard|Calm|100|252,0,4,0,252,0|31,0,31,31,31,31|Moonblast|Steel|||0|ev
+played Garchomp|Leftovers|Rough Skin|Earthquake||100|Steel
+played Clefable|Leftovers|Magic Guard|Moonblast||100|Steel
+end
+case ou-past-and-mythical
+format gen9ou
+set Mew|Leftovers|Synchronize|Timid|100|252,0,4,0,0,252|31,31,31,31,31,31|Psychic,Will-O-Wisp|Psychic|||0|ev
+set Landorus-Therian|Rocky Helmet|Intimidate|Impish|100|252,0,252,0,4,0|31,31,31,31,31,31|Earthquake,U-turn|Water|||0|ev
+set Tapu Koko|Leftovers|Electric Surge|Timid|100|0,0,4,252,0,252|31,31,31,31,31,31|Thunderbolt|Electric|||0|ev
+set Deoxys-Speed|Focus Sash|Pressure|Timid|100|252,0,4,0,0,252|31,31,31,31,31,31|Spikes,Taunt|Psychic|||0|ev
+set Charizard|Charizardite X|Blaze|Jolly|100|0,252,4,0,0,252|31,31,31,31,31,31|Flare Blitz,Dragon Dance|Fire|||0|ev
+expect Tapu Koko does not exist in Gen 9.
+expect Tapu Koko's move Thunderbolt can't be transferred from Gen 8 to 9.
+expect Charizard (Charizard-Mega-X) does not exist in Gen 9.
+expect Charizard's item Charizardite X does not exist in Gen 9.
+played Mew|Leftovers|Synchronize|Psychic,Will-O-Wisp|N|100|Psychic
+played Landorus-Therian|Rocky Helmet|Intimidate|Earthquake,U-turn|M|100|Water
+played Tapu Koko|Leftovers|Electric Surge|Thunderbolt|N|100|Electric
+played Deoxys-Speed|Focus Sash|Pressure|Spikes,Taunt|N|100|Psychic
+played Charizard|Charizardite X|Blaze|Flare Blitz,Dragon Dance||100|Fire
+end

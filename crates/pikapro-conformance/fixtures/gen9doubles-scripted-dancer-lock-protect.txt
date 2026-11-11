@@ -1,0 +1,142 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 2400 001e 0000 0057
+genders drawn
+team p1
+Oricorio
+Ability: Dancer
+Level: 30
+Hardy Nature
+- Tackle
+- Petal Dance
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Lilligant
+Ability: Own Tempo
+Level: 50
+Hardy Nature
+- Petal Dance
+
+Blissey
+Ability: Natural Cure
+Level: 50
+Hardy Nature
+- Protect
+- Splash
+end
+choice p1 move 1 2, move 1
+choice p2 move 1, move 1
+choice p1 move 1 2, move 1
+choice p2 move 1, move 2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Oricorio|Oricorio, L30, F|94/94
+expect |switch|p1a: Oricorio|Oricorio, L30, F|94/94
+expect |split|p1
+expect |switch|p1b: Snorlax|Snorlax, L50, M|235/235
+expect |switch|p1b: Snorlax|Snorlax, L50, M|235/235
+expect |split|p2
+expect |switch|p2a: Lilligant|Lilligant, L50, F|145/145
+expect |switch|p2a: Lilligant|Lilligant, L50, F|145/145
+expect |split|p2
+expect |switch|p2b: Blissey|Blissey, L50, F|330/330
+expect |switch|p2b: Blissey|Blissey, L50, F|330/330
+expect |turn|1
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2b: Blissey|Protect|p2b: Blissey
+expect |-singleturn|p2b: Blissey|Protect
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Lilligant|Petal Dance|p1a: Oricorio
+expect |rng|100|0
+expect |rng|24|2
+expect |rng|16|13
+expect |-resisted|p1a: Oricorio
+expect |split|p1
+expect |-damage|p1a: Oricorio|54/94
+expect |-damage|p1a: Oricorio|54/94
+expect |rng|2|0
+expect |-activate|p1a: Oricorio|ability: Dancer
+expect |rng|2|0
+expect |move|p1a: Oricorio|Petal Dance|p2a: Lilligant|[from] ability: Dancer
+expect |rng|100|50
+expect |rng|24|5
+expect |rng|16|2
+expect |-resisted|p2a: Lilligant
+expect |split|p2
+expect |-damage|p2a: Lilligant|132/145
+expect |-damage|p2a: Lilligant|132/145
+expect |rng|2|1
+expect |move|p1a: Oricorio|Tackle|p2b: Blissey
+expect |-activate|p2b: Blissey|move: Protect
+expect |move|p1b: Snorlax|Splash|p1b: Snorlax
+expect |-nothing
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Lilligant|Petal Dance|p1b: Snorlax|[from] lockedmove
+expect |rng|100|75
+expect |rng|24|18
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1b: Snorlax|156/235
+expect |-damage|p1b: Snorlax|156/235
+expect |-activate|p1a: Oricorio|ability: Dancer
+expect |rng|2|1
+expect |move|p1a: Oricorio|Petal Dance|p2b: Blissey|[from] ability: Dancer
+expect |rng|100|31
+expect |rng|24|13
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Blissey|315/330
+expect |-damage|p2b: Blissey|315/330
+expect |rng|2|0
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |move|p1a: Oricorio|Tackle|p2b: Blissey
+expect |rng|100|76
+expect |rng|24|11
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Blissey|296/330
+expect |-damage|p2b: Blissey|296/330
+expect |move|p1b: Snorlax|Splash|p1b: Snorlax
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3
+request p1 {"active":[{"moves":[{"move":"Tackle","id":"tackle","pp":56,"maxpp":56,"target":"normal","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Splash","id":"splash","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Oricorio","details":"Oricorio, L30, F","condition":"94/94","active":true,"stats":{"atk":56,"def":56,"spa":73,"spd":56,"spe":70},"moves":["tackle","petaldance"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Snorlax","details":"Snorlax, L50, M","condition":"235/235","active":true,"stats":{"atk":130,"def":85,"spa":85,"spd":130,"spe":50},"moves":["splash"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Petal Dance","id":"petaldance","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}],"canTerastallize":"Grass"},{"moves":[{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Splash","id":"splash","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Lilligant","details":"Lilligant, L50, F","condition":"145/145","active":true,"stats":{"atk":80,"def":95,"spa":130,"spd":95,"spe":110},"moves":["petaldance"],"baseAbility":"owntempo","item":"","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Blissey","details":"Blissey, L50, F","condition":"330/330","active":true,"stats":{"atk":30,"def":30,"spa":95,"spd":155,"spe":75},"moves":["protect","splash"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Tackle","id":"tackle","pp":55,"maxpp":56,"target":"normal","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Splash","id":"splash","pp":63,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Oricorio","details":"Oricorio, L30, F","condition":"54/94","active":true,"stats":{"atk":56,"def":56,"spa":73,"spd":56,"spe":70},"moves":["tackle","petaldance"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Snorlax","details":"Snorlax, L50, M","condition":"235/235","active":true,"stats":{"atk":130,"def":85,"spa":85,"spd":130,"spe":50},"moves":["splash"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Petal Dance","id":"petaldance"}],"trapped":true},{"moves":[{"move":"Protect","id":"protect","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Splash","id":"splash","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Lilligant","details":"Lilligant, L50, F","condition":"132/145","active":true,"stats":{"atk":80,"def":95,"spa":130,"spd":95,"spe":110},"moves":["petaldance"],"baseAbility":"owntempo","item":"","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Blissey","details":"Blissey, L50, F","condition":"330/330","active":true,"stats":{"atk":30,"def":30,"spa":95,"spd":155,"spe":75},"moves":["protect","splash"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Tackle","id":"tackle","pp":54,"maxpp":56,"target":"normal","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Splash","id":"splash","pp":62,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Oricorio","details":"Oricorio, L30, F","condition":"54/94","active":true,"stats":{"atk":56,"def":56,"spa":73,"spd":56,"spe":70},"moves":["tackle","petaldance"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Snorlax","details":"Snorlax, L50, M","condition":"156/235","active":true,"stats":{"atk":130,"def":85,"spa":85,"spd":130,"spe":50},"moves":["splash"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Petal Dance","id":"petaldance","pp":15,"maxpp":16,"target":"randomNormal","disabled":false}],"canTerastallize":"Grass"},{"moves":[{"move":"Protect","id":"protect","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Splash","id":"splash","pp":63,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Lilligant","details":"Lilligant, L50, F","condition":"132/145","active":true,"stats":{"atk":80,"def":95,"spa":130,"spd":95,"spe":110},"moves":["petaldance"],"baseAbility":"owntempo","item":"","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Blissey","details":"Blissey, L50, F","condition":"296/330","active":true,"stats":{"atk":30,"def":30,"spa":95,"spd":155,"spe":75},"moves":["protect","splash"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}

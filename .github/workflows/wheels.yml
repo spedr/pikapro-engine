@@ -1,0 +1,299 @@
+# Wheels and sdist for the `pikapro` Python package (crates/pikapro-py), and the
+# PyPI release.
+#
+# It runs on `v*` tags and by hand; not on pushes or pull requests, since
+# the macOS and Windows legs are the slow ones. To try a packaging change
+# before merging it, run this workflow by hand on the branch ("Run
+# workflow", "Use workflow from").
+#
+# Every run builds, audits and tests the full set: the sdist, and one abi3
+# wheel (CPython >= 3.10) per platform, each installed and tested by
+# cibuildwheel on CPython 3.10-3.14. The configuration is in
+# crates/pikapro-py/pyproject.toml ([tool.cibuildwheel]).
+#
+#   platform  | runner            | wheel tags
+#   ----------+-------------------+---------------------------------------
+#   Linux     | ubuntu-24.04      | manylinux_2_28_x86_64, musllinux_1_2_x86_64
+#   Linux     | ubuntu-24.04-arm  | manylinux_2_28_aarch64, musllinux_1_2_aarch64
+#   macOS     | macos-15-intel    | macosx_10_13_x86_64
+#   macOS     | macos-15          | macosx_11_0_arm64
+#   Windows   | windows-2025      | win_amd64
+#
+# Each wheel is built with profile-guided optimisation (PGO): before the
+# build, tools/pgo_wheel.py (cibuildwheel's before-build, in the Linux
+# containers too) builds the `pikapro` CLI and pikapro-bench's
+# `pikapro-insns` with -Cprofile-generate, runs them (battles in five
+# formats, legal actions, requests, log rendering, the player view, the
+# encoders, the vector environment), merges the profile with rustup's
+# llvm-tools, and checks it against a build of the extension; the wheel is
+# then built with RUSTFLAGS -Cprofile-use. The job fails if the profile is
+# empty, out of date, or doesn't match the extension's code. Each platform
+# profiles its own build (no cross-compiling). Run the workflow by hand with
+# `pgo` unticked to build the same wheels without it (for debugging only: a
+# run that publishes always uses PGO).
+#
+# PUBLISHING IS OFF. Nothing is uploaded until the maintainer turns it on:
+#
+#   1. Check that the name `pikapro` is still free on PyPI
+#      (crates/pikapro-py/pyproject.toml, `name`).
+#   2. On PyPI, add a *pending* trusted publisher, since the project
+#      doesn't exist until its first upload: Account settings, Publishing;
+#      project `pikapro`, owner `spedr`, repository `pikapro-engine`,
+#      workflow `wheels.yml`, environment `pypi`. It doesn't reserve the
+#      name: add it just before the first release. A rehearsal on TestPyPI
+#      is optional: the same publisher there (a separate account), with
+#      environment `testpypi`.
+#   3. In the repository settings, create the environment `pypi` (and
+#      `testpypi` for a rehearsal), and add required reviewers to `pypi`.
+#      This is not optional: it is the human gate before an upload, and the
+#      only one when PYPI_PUBLISH_ON_TAG publishes on a tag push.
+#   4. Release: bump `version` in the workspace Cargo.toml, date the
+#      `## X.Y.Z (unreleased)` section of both changelogs (CHANGELOG.md and
+#      crates/pikapro-py/CHANGELOG.md), run tools/full-gate.sh, push that
+#      commit to main, then push a
+#      tag `vX.Y.Z` pointing at it. Then run this
+#      workflow on the tag ("Run workflow", "Use workflow from: Tags /
+#      vX.Y.Z") with `publish: pypi` (after `publish: testpypi`, for a
+#      rehearsal).
+#
+#      To publish on the tag push itself instead, set the repository
+#      variable PYPI_PUBLISH_ON_TAG to `true`.
+#
+# The Rust crates are published by crates.yml, separately. A tag that isn't
+# `v` + the workspace version fails the sdist job, and the publish job.
+#
+# Every action is pinned by commit SHA, with its release in a comment (the
+# publish job holds an OIDC token). crates.yml pins the same releases;
+# update them together.
+
+name: Wheels
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Upload the built distributions (only from a vX.Y.Z tag)"
+        type: choice
+        options: [none, testpypi, pypi]
+        default: none
+      pgo:
+        description: "Build the wheels with profile-guided optimisation (untick to debug a build without it; ignored when publishing)"
+        type: boolean
+        default: true
+
+# Every `run:` is `bash -eo pipefail`: without an explicit shell, GitHub
+# runs `bash -e`, where a pipeline's status is its last command's (so
+# `cargo publish ... | tee log` would always pass).
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wheels-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ !startsWith(github.ref, 'refs/tags/') }}
+
+env:
+  CARGO_TERM_COLOR: always
+  # Profile-guided optimisation of the wheels (see the top of this file):
+  # on for a tag push, for a run that publishes, and unless the `pgo` input
+  # is unticked.
+  PIKAPRO_PGO: ${{ (github.event_name == 'push' || inputs.pgo || inputs.publish == 'testpypi' || inputs.publish == 'pypi') && '1' || '0' }}
+
+jobs:
+  sdist:
+    name: sdist
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: The tag matches the workspace version, and both changelogs date it
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          version=$(sed -n '/^version = "/{s/^version = "\(.*\)"$/\1/p;q;}' Cargo.toml)
+          if [ "${GITHUB_REF_NAME}" != "v${version}" ]; then
+            echo "::error::tag ${GITHUB_REF_NAME} does not match the workspace version ${version}"
+            exit 1
+          fi
+          for f in CHANGELOG.md crates/pikapro-py/CHANGELOG.md; do
+            if ! grep -qE "^## ${version//./\\.} \([0-9]{4}-[0-9]{2}-[0-9]{2}\)$" "$f"; then
+              echo "::error::$f has no dated '## ${version} (YYYY-MM-DD)' section"
+              exit 1
+            fi
+          done
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+      - name: Build the sdist
+        working-directory: crates/pikapro-py
+        run: uvx --from 'maturin>=1.9.4,<2' maturin sdist --out ../../dist
+      # pyproject.toml's [tool.maturin] include and exclude: the toolchain
+      # file at the root, and no test data (about 12 MB unpacked; 50 MB with
+      # the conformance fixtures).
+      - name: The sdist has the toolchain file and no test data
+        run: |
+          mkdir sdist-contents
+          tar xzf dist/*.tar.gz -C sdist-contents
+          size=$(du -sm sdist-contents | cut -f1)
+          echo "sdist: ${size} MB unpacked, $(find sdist-contents -type f | wc -l) files"
+          test -f sdist-contents/*/rust-toolchain.toml
+          cmp rust-toolchain.toml sdist-contents/*/rust-toolchain.toml
+          if [ "$size" -gt 20 ]; then
+            echo "::error::the sdist is ${size} MB unpacked (limit 20): exclude the new test data in pyproject.toml"
+            exit 1
+          fi
+          rm -rf sdist-contents
+      # The sdist alone must build (pip's fallback on platforms without a
+      # wheel): an isolated build from it, then a smoke test of the result.
+      - name: Build a wheel from the sdist
+        run: |
+          uv build --wheel --python 3.12 --out-dir sdist-wheel dist/*.tar.gz
+          uv venv --python 3.12 .venv-sdist
+          uv pip install --python .venv-sdist/bin/python sdist-wheel/*.whl
+          .venv-sdist/bin/python -c "
+          import pikapro, pikapro.rl as rl
+          team = pikapro.sample_team('championsvgc')
+          b = pikapro.Battle('championsvgc', [team, team], seed=1)
+          env = rl.VecEnv('championsvgc', n=4, threads=1)
+          env.reset(seed=0)
+          print(pikapro.__version__, b.space.size, env.mask_width)
+          "
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: dist-sdist
+          path: dist/*.tar.gz
+          if-no-files-found: error
+          # A tag's distributions are kept (the release); other runs' for a
+          # week, so they don't fill the repository's artifact storage.
+          retention-days: ${{ startsWith(github.ref, 'refs/tags/') && 90 || 7 }}
+
+  wheels:
+    name: wheel ${{ matrix.name }}
+    runs-on: ${{ matrix.runner }}
+    # PGO adds the instrumented build, the training run and a check build.
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { name: manylinux-x86_64, runner: ubuntu-24.04, skip: "*-musllinux_*", target: x86_64-unknown-linux-gnu }
+          - { name: musllinux-x86_64, runner: ubuntu-24.04, skip: "*-manylinux_*", target: x86_64-unknown-linux-musl }
+          - { name: manylinux-aarch64, runner: ubuntu-24.04-arm, skip: "*-musllinux_*", target: aarch64-unknown-linux-gnu }
+          - { name: musllinux-aarch64, runner: ubuntu-24.04-arm, skip: "*-manylinux_*", target: aarch64-unknown-linux-musl }
+          - { name: macos-x86_64, runner: macos-15-intel, skip: "", target: x86_64-apple-darwin }
+          - { name: macos-arm64, runner: macos-15, skip: "", target: aarch64-apple-darwin }
+          - { name: windows-amd64, runner: windows-2025, skip: "", target: x86_64-pc-windows-msvc }
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: pypa/cibuildwheel@e090b81e30c4d855ea63bf4b6e59204c09a101ae # v4.2.1
+        with:
+          package-dir: crates/pikapro-py
+          output-dir: wheelhouse
+        env:
+          # Native only: no emulated or 32-bit builds.
+          CIBW_ARCHS: native
+          CIBW_SKIP: ${{ matrix.skip }}
+          # The target, explicit in every build (maturin's and the PGO
+          # helper's): a function's profile is found by its symbol name,
+          # which differs between a build for the host and one with
+          # --target, even of the same triple.
+          CARGO_BUILD_TARGET: ${{ matrix.target }}
+          # PGO: the profile, made before the build (tools/pgo_wheel.py),
+          # and the flags the wheel is built with, which the helper checks.
+          # The checkout is /project in the Linux containers.
+          CIBW_BEFORE_BUILD: ${{ env.PIKAPRO_PGO == '1' && 'python {project}/tools/pgo_wheel.py' || '' }}
+          RUSTFLAGS: ${{ env.PIKAPRO_PGO == '1' && format('-Cprofile-use={0}/target/pgo/merged.profdata -Cllvm-args=-pgo-warn-missing-function', runner.os == 'Linux' && '/project' || github.workspace) || '' }}
+          # Into the Linux build containers too (macOS and Windows build
+          # in this environment).
+          CIBW_ENVIRONMENT_PASS_LINUX: CARGO_BUILD_TARGET RUSTFLAGS
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: dist-${{ matrix.name }}
+          path: wheelhouse/*.whl
+          if-no-files-found: error
+          # A tag's distributions are kept (the release); other runs' for a
+          # week, so they don't fill the repository's artifact storage.
+          retention-days: ${{ startsWith(github.ref, 'refs/tags/') && 90 || 7 }}
+
+  check:
+    name: check distributions
+    needs: [sdist, wheels]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          pattern: dist-*
+          path: dist
+          merge-multiple: true
+      - name: One sdist and seven wheels, all of the workspace version
+        run: |
+          ls -l dist
+          version=$(sed -n '/^version = "/{s/^version = "\(.*\)"$/\1/p;q;}' Cargo.toml)
+          test "$(find dist -name '*.tar.gz' | wc -l)" -eq 1
+          test "$(find dist -name '*.whl' | wc -l)" -eq 7
+          for f in dist/*; do
+            case "$(basename "$f")" in
+              pikapro-"$version"-cp310-abi3-*.whl|pikapro-"$version".tar.gz) ;;
+              *) echo "unexpected distribution: $f (version $version)"; exit 1 ;;
+            esac
+          done
+      - name: Metadata renders on PyPI
+        run: uvx twine check --strict dist/*
+
+  publish:
+    # OFF by default: runs only from a vX.Y.Z tag, when the workflow is run
+    # by hand with `publish` set, or on the tag push itself when the
+    # repository variable PYPI_PUBLISH_ON_TAG is `true`. See the top of
+    # this file.
+    name: publish to ${{ github.event_name == 'workflow_dispatch' && inputs.publish || 'pypi' }}
+    needs: [check]
+    if: >-
+      startsWith(github.ref, 'refs/tags/v') && (
+        (github.event_name == 'workflow_dispatch' && inputs.publish != 'none') ||
+        (github.event_name == 'push' && vars.PYPI_PUBLISH_ON_TAG == 'true')
+      )
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    environment:
+      name: ${{ github.event_name == 'workflow_dispatch' && inputs.publish || 'pypi' }}
+    permissions:
+      # A job's permissions replace the workflow's: the checkout below needs
+      # `contents: read`.
+      contents: read
+      # Trusted publishing (OIDC): no API token is stored anywhere.
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: The tag matches the package version
+        run: |
+          version=$(sed -n '/^version = "/{s/^version = "\(.*\)"$/\1/p;q;}' Cargo.toml)
+          if [ "${GITHUB_REF_NAME}" != "v${version}" ]; then
+            echo "tag ${GITHUB_REF_NAME} does not match the workspace version ${version}"
+            exit 1
+          fi
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          pattern: dist-*
+          path: dist
+          merge-multiple: true
+      - name: Upload to TestPyPI
+        if: github.event_name == 'workflow_dispatch' && inputs.publish == 'testpypi'
+        uses: pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33 # v1.14.2
+        with:
+          repository-url: https://test.pypi.org/legacy/
+      - name: Upload to PyPI
+        if: github.event_name == 'push' || inputs.publish == 'pypi'
+        uses: pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33 # v1.14.2

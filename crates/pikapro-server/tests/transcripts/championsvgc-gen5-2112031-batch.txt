@@ -1,0 +1,702 @@
+# championsvgc-gen5-2112031-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@write
+>start {"formatid":"gen9championsvgc2026regmb","seed":"gen5,c0a53d857cd8fcaa"}
+>player p1 {"name":"Alice","team":"Zoë|Aromatisse|ChoiceScarf|AromaVeil|BarbBarrage,BatonPass,EarthPower|Hasty|25,2,26,3,3,4|M|||50|,,,,,Ice]Nibbles|Arcanine||Intimidate|Snarl|Impish|27,16,6,3,13,1|M||S|50|,,,,,Steel]Ampharos|||Static|AuroraVeil,MagneticFlux,GrassyGlide|Lax|12,10,3,22,,16||||50|,,,,,Rock]Beedrill||PersimBerry|ArenaTrap|Waterfall,Lunge,ArmorCannon,PinMissile|Timid|,3,3,32,27,1|M|||50|,,,,,Grass]ThisNameIsFarTooLongToKeep|VivillonArchipelago||FriendGuard|Psyshock,DragonClaw,ThunderPunch|Relaxed|11,19,12,14,8,|M|||50|,,,,,Fire]X|GourgeistSmall||Pickup|SludgeWave|Mild|2,,30,32,2,|M||S|50|,,,,,Rock","avatar":"lucas"}
+>player p2 {"name":"Bob","team":[{"name":"Manectric","species":"Manectric","item":"Manectite","ability":"Lightning Rod","moves":["Skitter Smack","Gigaton Hammer","Torment"],"nature":"Impish","evs":{"hp":3,"atk":5,"def":0,"spa":2,"spd":24,"spe":30},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison"},{"name":"Sir Hops-a-Lot","species":"Audino","item":"Audinite","ability":"Healer","moves":["Spit Up","Gyro Ball","Encore","Seismic Toss"],"nature":"Sassy","evs":{"hp":4,"atk":6,"def":30,"spa":1,"spd":1,"spe":24},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon"},{"name":"Grimmsnarl","species":"Grimmsnarl","item":"Never-Melt Ice","ability":"Pickpocket","moves":["Sweet Scent"],"nature":"Impish","evs":{"hp":7,"atk":27,"def":4,"spa":10,"spd":15,"spe":0},"gender":"M","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy"},{"name":"Clawitzer","species":"Clawitzer","item":"","ability":"Mega Launcher","moves":["Sacred Sword"],"nature":"Adamant","evs":{"hp":25,"atk":1,"def":1,"spa":0,"spd":16,"spe":19},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting"},{"name":"Espathra","species":"Espathra","item":"Colbur Berry","ability":"Speed Boost","moves":["Toxic","Imprison","Tail Slap"],"nature":"Serious","evs":{"hp":1,"atk":10,"def":21,"spa":1,"spd":1,"spe":31},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting"},{"name":"ThisNameIsFarTooLongToKeep","species":"Weavile","item":"","ability":"Pressure","moves":["After You","Psyshock","Mega Kick"],"nature":"Bold","evs":{"hp":2,"atk":10,"def":23,"spa":7,"spd":14,"spe":10},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel"}]}
+>p1 team 3412
+>p2 team 3562
+>p2 switch
+
+>p2 undo
+@write
+>p2 move 1, move 2
+>p1 move 3 2, move 3 -1
+>p2 move sweetscent, move Tail Slap -1
+>p1 switch 4, move 2 1
+>p1 move 1, move 3 -1
+@write
+>p1 undo
+>p1 move 4 dynamax
+>p1 undo
+>p1 switch 3, move 2 1
+>p2 pass
+# a comment
+>p2 move Sweet Scent +1
+@write
+# a comment
+>p2 undo
+>p2 move 1, move 1 1
+>p2 move 1, move 3 1
+>p2 move sweetscent -2 terastal, move 3 1
+@write
+>p1 move 1 2, move 4 2
+@write
+>p2 switch Weavile
+>p2 move 1, move 1 2
+>p1 default
+>p2 move 1, default
+>p2 switch 4, switch 3
+>p1 move waterfall 2 terastal
+
+>p1 move 1 1, switch 4
+>p2 move encore -2 mega, move Mega Kick -1
+@write
+>p2 switch 7
+
+>p2 move 1 1, move 3 -1
+@write
+>p2 switch 3
+# a comment
+>p1 switch 6
+>p1 move 1 2, move 3 1
+>p2 move 1 -2,move megakick +1
+>p1 switch Aromatisse
+@write
+>p1 move 2 2 mega
+>p1 move 1 -2
+@write
+>p1 switch Beedrill
+>p2 move 4 -2, move Mega Kick -1
+>p1 switch 3, move 3 1
+>p2 move 1 1, move 3 -1
+>p1 switch 3 ,  move Magnetic Flux
+@write
+
+>p2 move 2 -2, move 1 2
+>p1 auto
+>p2 move 1 1, move Mega Kick -2 mega
+>p1 move 2 -2, move 2
+>p1 undo
+>p2 move 2 -2, move 2 -1
+@write
+>p1 move 3 2, move 1
+@write
+# a comment
+>p1 move 3 1, move 3 1
+>p1 move 1
+>p1 move 4 -2, move 1
+>p2 switch 1
+>p2 move 1 1, pass
+>p1 move 1 -2, move 1
+>p2 move 2 1, pass
+>p1 move 2 -2, move auroraveil
+@write
+>p2 move 2 1, pass
+>p1 pass, switch 3
+@write
+>p1 switch 4
+>p1 move 2 1, move 1
+>requestexport
+>p2 move 2 1, pass
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You need to select a Pokémon to switch in
+@message
+update
+|t:|
+|gametype|doubles
+|player|p1|Alice|lucas|
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Aromatisse, L50, M|
+|poke|p1|Arcanine, L50, M, shiny|
+|poke|p1|Ampharos, L50, M|
+|poke|p1|Beedrill, L50, M|
+|poke|p1|Vivillon-Archipelago, L50, M|
+|poke|p1|Gourgeist-Small, L50, M, shiny|
+|poke|p2|Manectric, L50, M|
+|poke|p2|Audino, L50, F|
+|poke|p2|Grimmsnarl, L50, M, shiny|
+|poke|p2|Clawitzer, L50, F|
+|poke|p2|Espathra, L50, M, shiny|
+|poke|p2|Weavile, L50, M|
+|teampreview|4
+|split|p1
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+|split|p2
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|uhtmlchange|otsrequest|
+
+|split|p2
+|uhtmlchange|otsrequest|
+
+|split|p1
+|switch|p1a: Ampharos|Ampharos, L50, M|177/177
+|switch|p1a: Ampharos|Ampharos, L50, M|100/100
+|split|p1
+|switch|p1b: Beedrill|Beedrill, L50, M|140/140
+|switch|p1b: Beedrill|Beedrill, L50, M|100/100
+|split|p2
+|switch|p2a: Grimmsnarl|Grimmsnarl, L50, M, shiny|177/177
+|switch|p2a: Grimmsnarl|Grimmsnarl, L50, M, shiny|100/100
+|split|p2
+|switch|p2b: Espathra|Espathra, L50, M, shiny|171/171
+|switch|p2b: Espathra|Espathra, L50, M, shiny|100/100
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Aurora Veil","id":"auroraveil","pp":20,"maxpp":20,"target":"allySide","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":20,"maxpp":20,"target":"allySide","disabled":false},{"move":"Grassy Glide","id":"grassyglide","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Waterfall","id":"waterfall","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Lunge","id":"lunge","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Armor Cannon","id":"armorcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Pin Missile","id":"pinmissile","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Ampharos","details":"Ampharos, L50, M","condition":"177/177","active":true,"stats":{"atk":105,"def":118,"spa":157,"spd":99,"spe":91},"moves":["auroraveil","magneticflux","grassyglide"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false},{"ident":"p1: Beedrill","details":"Beedrill, L50, M","condition":"140/140","active":true,"stats":{"atk":101,"def":63,"spa":97,"spd":127,"spe":105},"moves":["waterfall","lunge","armorcannon","pinmissile"],"baseAbility":"arenatrap","item":"persimberry","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Aromatisse, L50, M","condition":"201/201","active":false,"stats":{"atk":94,"def":106,"spa":122,"spd":112,"spe":58},"moves":["barbbarrage","batonpass","earthpower"],"baseAbility":"aromaveil","item":"choicescarf","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Arcanine, L50, M, shiny","condition":"192/192","active":false,"stats":{"atk":146,"def":116,"spa":110,"spd":113,"spe":116},"moves":["snarl"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Sweet Scent","id":"sweetscent","pp":20,"maxpp":20,"target":"allAdjacentFoes","disabled":false}],"trapped":true},{"moves":[{"move":"Toxic","id":"toxic","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Tail Slap","id":"tailslap","pp":12,"maxpp":12,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M, shiny","condition":"177/177","active":true,"stats":{"atk":167,"def":97,"spa":112,"spd":110,"spe":80},"moves":["sweetscent"],"baseAbility":"pickpocket","item":"nevermeltice","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M, shiny","condition":"171/171","active":true,"stats":{"atk":90,"def":101,"spa":122,"spd":81,"spe":156},"moves":["toxic","imprison","tailslap"],"baseAbility":"speedboost","item":"colburberry","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: ThisNameIsFarTooLong","details":"Weavile, L50, M","condition":"147/147","active":false,"stats":{"atk":135,"def":118,"spa":72,"spd":119,"spe":155},"moves":["afteryou","psyshock","megakick"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Audino, L50, F","condition":"182/182","active":false,"stats":{"atk":86,"def":136,"spa":81,"spd":117,"spe":84},"moves":["spitup","gyroball","encore","seismictoss"],"baseAbility":"healer","item":"audinite","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+@message
+update
+|
+|t:|
+|move|p2b: Espathra|Imprison|p2b: Espathra
+|-start|p2b: Espathra|move: Imprison
+|move|p1b: Beedrill|Armor Cannon|p1a: Ampharos
+|split|p1
+|-damage|p1a: Ampharos|127/177
+|-damage|p1a: Ampharos|71/100
+|-unboost|p1b: Beedrill|def|1
+|-unboost|p1b: Beedrill|spd|1
+|move|p1a: Ampharos|Grassy Glide|p2b: Espathra
+|split|p2
+|-damage|p2b: Espathra|144/171
+|-damage|p2b: Espathra|84/100
+|move|p2a: Grimmsnarl|Sweet Scent|p1a: Ampharos|[spread] p1a,p1b
+|-unboost|p1a: Ampharos|evasion|2
+|-unboost|p1b: Beedrill|evasion|2
+|
+|-ability|p2b: Espathra|Speed Boost|boost
+|-boost|p2b: Espathra|spe|1
+|upkeep
+|turn|2
+|
+|t:|
+|split|p1
+|switch|p1a: Nibbles|Arcanine, L50, M, shiny|192/192
+|switch|p1a: Nibbles|Arcanine, L50, M, shiny|100/100
+|-ability|p1a: Nibbles|Intimidate|boost
+|-unboost|p2a: Grimmsnarl|atk|1
+|-unboost|p2b: Espathra|atk|1
+|move|p2b: Espathra|Tail Slap|p2a: Grimmsnarl
+|split|p2
+|-damage|p2a: Grimmsnarl|170/177
+|-damage|p2a: Grimmsnarl|96/100
+|split|p2
+|-damage|p2a: Grimmsnarl|163/177
+|-damage|p2a: Grimmsnarl|92/100
+|-hitcount|p2a: Grimmsnarl|2
+|move|p1b: Beedrill|Lunge|p2a: Grimmsnarl
+|-crit|p2a: Grimmsnarl
+|split|p2
+|-damage|p2a: Grimmsnarl|90/177
+|-damage|p2a: Grimmsnarl|50/100g
+|-unboost|p2a: Grimmsnarl|atk|1
+|move|p2a: Grimmsnarl|Sweet Scent|p1b: Beedrill|[spread] p1a,p1b
+|-unboost|p1a: Nibbles|evasion|2
+|-unboost|p1b: Beedrill|evasion|2
+|
+|-ability|p2b: Espathra|Speed Boost|boost
+|-boost|p2b: Espathra|spe|1
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Snarl","id":"snarl","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Waterfall","id":"waterfall","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Lunge","id":"lunge","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Armor Cannon","id":"armorcannon","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Pin Missile","id":"pinmissile","pp":20,"maxpp":20,"target":"normal","disabled":false}],"maybeDisabled":true,"maybeLocked":true}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Arcanine, L50, M, shiny","condition":"192/192","active":true,"stats":{"atk":146,"def":116,"spa":110,"spd":113,"spe":116},"moves":["snarl"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Beedrill","details":"Beedrill, L50, M","condition":"140/140","active":true,"stats":{"atk":101,"def":63,"spa":97,"spd":127,"spe":105},"moves":["waterfall","lunge","armorcannon","pinmissile"],"baseAbility":"arenatrap","item":"persimberry","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Aromatisse, L50, M","condition":"201/201","active":false,"stats":{"atk":94,"def":106,"spa":122,"spd":112,"spe":58},"moves":["barbbarrage","batonpass","earthpower"],"baseAbility":"aromaveil","item":"choicescarf","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p1: Ampharos","details":"Ampharos, L50, M","condition":"127/177","active":false,"stats":{"atk":105,"def":118,"spa":157,"spd":99,"spe":91},"moves":["auroraveil","magneticflux","grassyglide"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Sweet Scent","id":"sweetscent","pp":18,"maxpp":20,"target":"allAdjacentFoes","disabled":false}],"trapped":true},{"moves":[{"move":"Toxic","id":"toxic","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Tail Slap","id":"tailslap","pp":11,"maxpp":12,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M, shiny","condition":"90/177","active":true,"stats":{"atk":167,"def":97,"spa":112,"spd":110,"spe":80},"moves":["sweetscent"],"baseAbility":"pickpocket","item":"nevermeltice","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M, shiny","condition":"144/171","active":true,"stats":{"atk":90,"def":101,"spa":122,"spd":81,"spe":156},"moves":["toxic","imprison","tailslap"],"baseAbility":"speedboost","item":"colburberry","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: ThisNameIsFarTooLong","details":"Weavile, L50, M","condition":"147/147","active":false,"stats":{"atk":135,"def":118,"spa":72,"spd":119,"spe":155},"moves":["afteryou","psyshock","megakick"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Audino, L50, F","condition":"182/182","active":false,"stats":{"atk":86,"def":136,"spa":81,"spd":117,"spe":84},"moves":["spitup","gyroball","encore","seismictoss"],"baseAbility":"healer","item":"audinite","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Snarl","id":"snarl","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Waterfall","id":"waterfall","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Lunge","id":"lunge","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Armor Cannon","id":"armorcannon","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Pin Missile","id":"pinmissile","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Arcanine, L50, M, shiny","condition":"192/192","active":true,"stats":{"atk":146,"def":116,"spa":110,"spd":113,"spe":116},"moves":["snarl"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Beedrill","details":"Beedrill, L50, M","condition":"140/140","active":true,"stats":{"atk":101,"def":63,"spa":97,"spd":127,"spe":105},"moves":["waterfall","lunge","armorcannon","pinmissile"],"baseAbility":"arenatrap","item":"persimberry","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Aromatisse, L50, M","condition":"201/201","active":false,"stats":{"atk":94,"def":106,"spa":122,"spd":112,"spe":58},"moves":["barbbarrage","batonpass","earthpower"],"baseAbility":"aromaveil","item":"choicescarf","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p1: Ampharos","details":"Ampharos, L50, M","condition":"127/177","active":false,"stats":{"atk":105,"def":118,"spa":157,"spd":99,"spe":91},"moves":["auroraveil","magneticflux","grassyglide"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false}]},"update":true}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Nibbles doesn't have a move 4
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't pass: Your Grimmsnarl must make a move (or switch)
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You can't choose a target for Sweet Scent
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You can't choose a target for Sweet Scent
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Zoë|Aromatisse, L50, M|201/201
+|switch|p1a: Zoë|Aromatisse, L50, M|100/100
+|move|p2b: Espathra|Toxic|p1a: Zoë
+|-status|p1a: Zoë|tox
+|move|p1b: Beedrill|Lunge|p2a: Grimmsnarl
+|split|p2
+|-damage|p2a: Grimmsnarl|41/177
+|-damage|p2a: Grimmsnarl|23/100
+|-unboost|p2a: Grimmsnarl|atk|1
+|move|p2a: Grimmsnarl|Sweet Scent|p1b: Beedrill|[spread] p1a,p1b
+|-unboost|p1a: Zoë|evasion|2
+|-unboost|p1b: Beedrill|evasion|2
+|
+|split|p1
+|-damage|p1a: Zoë|189/201 tox|[from] psn
+|-damage|p1a: Zoë|94/100 tox|[from] psn
+|-ability|p2b: Espathra|Speed Boost|boost
+|-boost|p2b: Espathra|spe|1
+|upkeep
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Barb Barrage","id":"barbbarrage","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Earth Power","id":"earthpower","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Waterfall","id":"waterfall","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Lunge","id":"lunge","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Armor Cannon","id":"armorcannon","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Pin Missile","id":"pinmissile","pp":20,"maxpp":20,"target":"normal","disabled":false}],"maybeDisabled":true,"maybeLocked":true}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Aromatisse, L50, M","condition":"189/201 tox","active":true,"stats":{"atk":94,"def":106,"spa":122,"spd":112,"spe":58},"moves":["barbbarrage","batonpass","earthpower"],"baseAbility":"aromaveil","item":"choicescarf","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p1: Beedrill","details":"Beedrill, L50, M","condition":"140/140","active":true,"stats":{"atk":101,"def":63,"spa":97,"spd":127,"spe":105},"moves":["waterfall","lunge","armorcannon","pinmissile"],"baseAbility":"arenatrap","item":"persimberry","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Arcanine, L50, M, shiny","condition":"192/192","active":false,"stats":{"atk":146,"def":116,"spa":110,"spd":113,"spe":116},"moves":["snarl"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Ampharos","details":"Ampharos, L50, M","condition":"127/177","active":false,"stats":{"atk":105,"def":118,"spa":157,"spd":99,"spe":91},"moves":["auroraveil","magneticflux","grassyglide"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Sweet Scent","id":"sweetscent","pp":17,"maxpp":20,"target":"allAdjacentFoes","disabled":false}],"trapped":true},{"moves":[{"move":"Toxic","id":"toxic","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Tail Slap","id":"tailslap","pp":11,"maxpp":12,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M, shiny","condition":"41/177","active":true,"stats":{"atk":167,"def":97,"spa":112,"spd":110,"spe":80},"moves":["sweetscent"],"baseAbility":"pickpocket","item":"nevermeltice","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M, shiny","condition":"144/171","active":true,"stats":{"atk":90,"def":101,"spa":122,"spd":81,"spe":156},"moves":["toxic","imprison","tailslap"],"baseAbility":"speedboost","item":"colburberry","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: ThisNameIsFarTooLong","details":"Weavile, L50, M","condition":"147/147","active":false,"stats":{"atk":135,"def":118,"spa":72,"spd":119,"spe":155},"moves":["afteryou","psyshock","megakick"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Audino, L50, F","condition":"182/182","active":false,"stats":{"atk":86,"def":136,"spa":81,"spd":117,"spe":84},"moves":["spitup","gyroball","encore","seismictoss"],"baseAbility":"healer","item":"audinite","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: The active Pokémon is trapped
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Zoë doesn't have a move matching waterfall
+@message
+update
+|
+|t:|
+|move|p2b: Espathra|Toxic|p1b: Beedrill
+|-immune|p1b: Beedrill
+|move|p1b: Beedrill|Pin Missile|p2b: Espathra
+|-supereffective|p2b: Espathra|1
+|split|p2
+|-damage|p2b: Espathra|108/171
+|-damage|p2b: Espathra|63/100
+|-supereffective|p2b: Espathra|1
+|split|p2
+|-damage|p2b: Espathra|76/171
+|-damage|p2b: Espathra|44/100
+|-hitcount|p2b: Espathra|2
+|move|p1a: Zoë|Barb Barrage|p2b: Espathra
+|split|p2
+|-damage|p2b: Espathra|51/171
+|-damage|p2b: Espathra|29/100
+|-status|p2b: Espathra|psn
+|move|p2a: Grimmsnarl|Sweet Scent|p1b: Beedrill|[spread] p1a,p1b
+|-unboost|p1a: Zoë|evasion|2
+|-unboost|p1b: Beedrill|evasion|0
+|
+|split|p2
+|-damage|p2b: Espathra|30/171 psn|[from] psn
+|-damage|p2b: Espathra|17/100 psn|[from] psn
+|split|p1
+|-damage|p1a: Zoë|165/201 tox|[from] psn
+|-damage|p1a: Zoë|82/100 tox|[from] psn
+|-ability|p2b: Espathra|Speed Boost|boost
+|-boost|p2b: Espathra|spe|1
+|upkeep
+|turn|5
+|
+|t:|
+|move|p2b: Espathra|Toxic|p1a: Zoë
+|-fail|p1a: Zoë|tox
+|move|p1b: Beedrill|Waterfall|p2b: Espathra
+|-crit|p2b: Espathra
+|split|p2
+|-damage|p2b: Espathra|0 fnt
+|-damage|p2b: Espathra|0 fnt
+|faint|p2b: Espathra
+|move|p1a: Zoë|Barb Barrage|p2a: Grimmsnarl
+|-supereffective|p2a: Grimmsnarl|1
+|split|p2
+|-damage|p2a: Grimmsnarl|0 fnt
+|-damage|p2a: Grimmsnarl|0 fnt
+|faint|p2a: Grimmsnarl
+|
+|split|p1
+|-damage|p1a: Zoë|129/201 tox|[from] psn
+|-damage|p1a: Zoë|64/100 tox|[from] psn
+|upkeep
+|
+|t:|
+|split|p2
+|switch|p2b: ThisNameIsFarTooLong|Weavile, L50, M|147/147
+|switch|p2b: ThisNameIsFarTooLong|Weavile, L50, M|100/100
+|split|p2
+|switch|p2a: Sir Hops-a-Lot|Audino, L50, F|182/182
+|switch|p2a: Sir Hops-a-Lot|Audino, L50, F|100/100
+|-ability|p2b: ThisNameIsFarTooLong|Pressure
+|turn|6
+|
+|t:|
+|split|p1
+|switch|p1b: Ampharos|Ampharos, L50, M|127/177
+|switch|p1b: Ampharos|Ampharos, L50, M|71/100
+|detailschange|p2a: Sir Hops-a-Lot|Audino-Mega, L50, F
+|-mega|p2a: Sir Hops-a-Lot|Audino|Audinite
+|move|p2b: ThisNameIsFarTooLong|Mega Kick|p2a: Sir Hops-a-Lot
+|split|p2
+|-damage|p2a: Sir Hops-a-Lot|146/182
+|-damage|p2a: Sir Hops-a-Lot|80/100
+|move|p1a: Zoë|Barb Barrage|p2a: Sir Hops-a-Lot
+|-supereffective|p2a: Sir Hops-a-Lot|1
+|split|p2
+|-damage|p2a: Sir Hops-a-Lot|118/182
+|-damage|p2a: Sir Hops-a-Lot|64/100
+|move|p2a: Sir Hops-a-Lot|Encore|p2b: ThisNameIsFarTooLong
+|-start|p2b: ThisNameIsFarTooLong|Encore
+|
+|split|p1
+|-damage|p1a: Zoë|81/201 tox|[from] psn
+|-damage|p1a: Zoë|40/100 tox|[from] psn
+|upkeep
+|turn|7
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Barb Barrage","id":"barbbarrage","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":true},{"move":"Earth Power","id":"earthpower","pp":12,"maxpp":12,"target":"normal","disabled":true}]},{"moves":[{"move":"Aurora Veil","id":"auroraveil","pp":20,"maxpp":20,"target":"allySide","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":20,"maxpp":20,"target":"allySide","disabled":false},{"move":"Grassy Glide","id":"grassyglide","pp":19,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Aromatisse, L50, M","condition":"81/201 tox","active":true,"stats":{"atk":94,"def":106,"spa":122,"spd":112,"spe":58},"moves":["barbbarrage","batonpass","earthpower"],"baseAbility":"aromaveil","item":"choicescarf","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p1: Ampharos","details":"Ampharos, L50, M","condition":"127/177","active":true,"stats":{"atk":105,"def":118,"spa":157,"spd":99,"spe":91},"moves":["auroraveil","magneticflux","grassyglide"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Arcanine, L50, M, shiny","condition":"192/192","active":false,"stats":{"atk":146,"def":116,"spa":110,"spd":113,"spe":116},"moves":["snarl"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Beedrill","details":"Beedrill, L50, M","condition":"140/140","active":false,"stats":{"atk":101,"def":63,"spa":97,"spd":127,"spe":105},"moves":["waterfall","lunge","armorcannon","pinmissile"],"baseAbility":"arenatrap","item":"persimberry","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Spit Up","id":"spitup","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Gyro Ball","id":"gyroball","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Encore","id":"encore","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Seismic Toss","id":"seismictoss","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"After You","id":"afteryou","pp":16,"maxpp":16,"target":"normal","disabled":true},{"move":"Psyshock","id":"psyshock","pp":12,"maxpp":12,"target":"normal","disabled":true},{"move":"Mega Kick","id":"megakick","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Audino-Mega, L50, F","condition":"118/182","active":true,"stats":{"atk":86,"def":176,"spa":101,"spd":161,"spe":84},"moves":["spitup","gyroball","encore","seismictoss"],"baseAbility":"healer","item":"audinite","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p2: ThisNameIsFarTooLong","details":"Weavile, L50, M","condition":"147/147","active":true,"stats":{"atk":135,"def":118,"spa":72,"spd":119,"spe":155},"moves":["afteryou","psyshock","megakick"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":90,"def":101,"spa":122,"spd":81,"spe":156},"moves":["toxic","imprison","tailslap"],"baseAbility":"speedboost","item":"colburberry","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":167,"def":97,"spa":112,"spd":110,"spe":80},"moves":["sweetscent"],"baseAbility":"pickpocket","item":"nevermeltice","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You do not have a Pokémon in slot 7 to switch to
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You can't switch to a fainted Pokémon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You do not have a Pokémon in slot 6 to switch to
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+update
+|
+|t:|
+|move|p2b: ThisNameIsFarTooLong|Mega Kick|p1a: Zoë
+|split|p1
+|-damage|p1a: Zoë|19/201 tox
+|-damage|p1a: Zoë|9/100 tox
+|move|p1b: Ampharos|Grassy Glide|p2a: Sir Hops-a-Lot
+|split|p2
+|-damage|p2a: Sir Hops-a-Lot|105/182
+|-damage|p2a: Sir Hops-a-Lot|57/100
+|move|p1a: Zoë|Barb Barrage|p2b: ThisNameIsFarTooLong
+|split|p2
+|-damage|p2b: ThisNameIsFarTooLong|126/147
+|-damage|p2b: ThisNameIsFarTooLong|85/100
+|move|p2a: Sir Hops-a-Lot|Spit Up||[still]
+|-fail|p2a: Sir Hops-a-Lot
+|
+|split|p1
+|-damage|p1a: Zoë|0 fnt|[from] psn
+|-damage|p1a: Zoë|0 fnt|[from] psn
+|faint|p1a: Zoë
+|upkeep
+@message
+sideupdate
+p1
+|request|{"forceSwitch":[true,false],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Aromatisse, L50, M","condition":"0 fnt","active":true,"stats":{"atk":94,"def":106,"spa":122,"spd":112,"spe":58},"moves":["barbbarrage","batonpass","earthpower"],"baseAbility":"aromaveil","item":"choicescarf","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p1: Ampharos","details":"Ampharos, L50, M","condition":"127/177","active":true,"stats":{"atk":105,"def":118,"spa":157,"spd":99,"spe":91},"moves":["auroraveil","magneticflux","grassyglide"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Arcanine, L50, M, shiny","condition":"192/192","active":false,"stats":{"atk":146,"def":116,"spa":110,"spd":113,"spe":116},"moves":["snarl"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Beedrill","details":"Beedrill, L50, M","condition":"140/140","active":false,"stats":{"atk":101,"def":63,"spa":97,"spd":127,"spe":105},"moves":["waterfall","lunge","armorcannon","pinmissile"],"baseAbility":"arenatrap","item":"persimberry","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false}]},"noCancel":true}
+@message
+sideupdate
+p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Audino-Mega, L50, F","condition":"105/182","active":true,"stats":{"atk":86,"def":176,"spa":101,"spd":161,"spe":84},"moves":["spitup","gyroball","encore","seismictoss"],"baseAbility":"healer","item":"audinite","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p2: ThisNameIsFarTooLong","details":"Weavile, L50, M","condition":"126/147","active":true,"stats":{"atk":135,"def":118,"spa":72,"spd":119,"spe":155},"moves":["afteryou","psyshock","megakick"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":90,"def":101,"spa":122,"spd":81,"spe":156},"moves":["toxic","imprison","tailslap"],"baseAbility":"speedboost","item":"colburberry","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":167,"def":97,"spa":112,"spd":110,"spe":80},"moves":["sweetscent"],"baseAbility":"pickpocket","item":"nevermeltice","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You need a switch response
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You need a switch response
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Beedrill|Beedrill, L50, M|140/140
+|switch|p1a: Beedrill|Beedrill, L50, M|100/100
+|turn|8
+|
+|t:|
+|split|p1
+|switch|p1a: Nibbles|Arcanine, L50, M, shiny|192/192
+|switch|p1a: Nibbles|Arcanine, L50, M, shiny|100/100
+|-ability|p1a: Nibbles|Intimidate|boost
+|-unboost|p2a: Sir Hops-a-Lot|atk|1
+|-unboost|p2b: ThisNameIsFarTooLong|atk|1
+|move|p2b: ThisNameIsFarTooLong|Mega Kick|p2a: Sir Hops-a-Lot
+|split|p2
+|-damage|p2a: Sir Hops-a-Lot|78/182
+|-damage|p2a: Sir Hops-a-Lot|42/100
+|move|p1b: Ampharos|Grassy Glide|p2a: Sir Hops-a-Lot
+|split|p2
+|-damage|p2a: Sir Hops-a-Lot|64/182
+|-damage|p2a: Sir Hops-a-Lot|35/100
+|move|p2a: Sir Hops-a-Lot|Seismic Toss|p2b: ThisNameIsFarTooLong
+|split|p2
+|-damage|p2b: ThisNameIsFarTooLong|76/147
+|-damage|p2b: ThisNameIsFarTooLong|51/100
+|
+|upkeep
+|turn|9
+|
+|t:|
+|split|p1
+|switch|p1a: Beedrill|Beedrill, L50, M|140/140
+|switch|p1a: Beedrill|Beedrill, L50, M|100/100
+|move|p2b: ThisNameIsFarTooLong|Mega Kick|p2a: Sir Hops-a-Lot
+|split|p2
+|-damage|p2a: Sir Hops-a-Lot|37/182
+|-damage|p2a: Sir Hops-a-Lot|20/100y
+|move|p1b: Ampharos|Magnetic Flux||[still]
+|-fail|p1b: Ampharos
+|move|p2a: Sir Hops-a-Lot|Spit Up||[still]
+|-fail|p2a: Sir Hops-a-Lot
+|
+|-end|p2b: ThisNameIsFarTooLong|Encore
+|upkeep
+|turn|10
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Waterfall","id":"waterfall","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Lunge","id":"lunge","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Armor Cannon","id":"armorcannon","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Pin Missile","id":"pinmissile","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Aurora Veil","id":"auroraveil","pp":20,"maxpp":20,"target":"allySide","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":19,"maxpp":20,"target":"allySide","disabled":false},{"move":"Grassy Glide","id":"grassyglide","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Beedrill","details":"Beedrill, L50, M","condition":"140/140","active":true,"stats":{"atk":101,"def":63,"spa":97,"spd":127,"spe":105},"moves":["waterfall","lunge","armorcannon","pinmissile"],"baseAbility":"arenatrap","item":"persimberry","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false},{"ident":"p1: Ampharos","details":"Ampharos, L50, M","condition":"127/177","active":true,"stats":{"atk":105,"def":118,"spa":157,"spd":99,"spe":91},"moves":["auroraveil","magneticflux","grassyglide"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Arcanine, L50, M, shiny","condition":"192/192","active":false,"stats":{"atk":146,"def":116,"spa":110,"spd":113,"spe":116},"moves":["snarl"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Aromatisse, L50, M","condition":"0 fnt","active":false,"stats":{"atk":94,"def":106,"spa":122,"spd":112,"spe":58},"moves":["barbbarrage","batonpass","earthpower"],"baseAbility":"aromaveil","item":"choicescarf","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Spit Up","id":"spitup","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Gyro Ball","id":"gyroball","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Encore","id":"encore","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Seismic Toss","id":"seismictoss","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"After You","id":"afteryou","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Psyshock","id":"psyshock","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Mega Kick","id":"megakick","pp":4,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Audino-Mega, L50, F","condition":"37/182","active":true,"stats":{"atk":86,"def":176,"spa":101,"spd":161,"spe":84},"moves":["spitup","gyroball","encore","seismictoss"],"baseAbility":"healer","item":"audinite","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p2: ThisNameIsFarTooLong","details":"Weavile, L50, M","condition":"76/147","active":true,"stats":{"atk":135,"def":118,"spa":72,"spd":119,"spe":155},"moves":["afteryou","psyshock","megakick"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":90,"def":101,"spa":122,"spd":81,"spe":156},"moves":["toxic","imprison","tailslap"],"baseAbility":"speedboost","item":"colburberry","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":167,"def":97,"spa":112,"spd":110,"spe":80},"moves":["sweetscent"],"baseAbility":"pickpocket","item":"nevermeltice","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Invalid target for Mega Kick
+@message
+update
+|
+|t:|
+|move|p2b: ThisNameIsFarTooLong|After You|p1b: Ampharos
+|-activate|p1b: Ampharos|move: After You
+|move|p1b: Ampharos|Aurora Veil||[still]
+|-fail|p1b: Ampharos
+|move|p1a: Beedrill|Waterfall|p2a: Sir Hops-a-Lot
+|split|p2
+|-damage|p2a: Sir Hops-a-Lot|16/182
+|-damage|p2a: Sir Hops-a-Lot|8/100
+|move|p2a: Sir Hops-a-Lot|Gyro Ball|p2b: ThisNameIsFarTooLong
+|-supereffective|p2b: ThisNameIsFarTooLong|1
+|split|p2
+|-damage|p2b: ThisNameIsFarTooLong|56/147
+|-damage|p2b: ThisNameIsFarTooLong|38/100
+|
+|upkeep
+|turn|11
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Waterfall","id":"waterfall","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Lunge","id":"lunge","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Armor Cannon","id":"armorcannon","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Pin Missile","id":"pinmissile","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Aurora Veil","id":"auroraveil","pp":19,"maxpp":20,"target":"allySide","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":19,"maxpp":20,"target":"allySide","disabled":false},{"move":"Grassy Glide","id":"grassyglide","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Beedrill","details":"Beedrill, L50, M","condition":"140/140","active":true,"stats":{"atk":101,"def":63,"spa":97,"spd":127,"spe":105},"moves":["waterfall","lunge","armorcannon","pinmissile"],"baseAbility":"arenatrap","item":"persimberry","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false},{"ident":"p1: Ampharos","details":"Ampharos, L50, M","condition":"127/177","active":true,"stats":{"atk":105,"def":118,"spa":157,"spd":99,"spe":91},"moves":["auroraveil","magneticflux","grassyglide"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Arcanine, L50, M, shiny","condition":"192/192","active":false,"stats":{"atk":146,"def":116,"spa":110,"spd":113,"spe":116},"moves":["snarl"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Aromatisse, L50, M","condition":"0 fnt","active":false,"stats":{"atk":94,"def":106,"spa":122,"spd":112,"spe":58},"moves":["barbbarrage","batonpass","earthpower"],"baseAbility":"aromaveil","item":"choicescarf","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Spit Up","id":"spitup","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Gyro Ball","id":"gyroball","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Encore","id":"encore","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Seismic Toss","id":"seismictoss","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"After You","id":"afteryou","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Psyshock","id":"psyshock","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Mega Kick","id":"megakick","pp":4,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Audino-Mega, L50, F","condition":"16/182","active":true,"stats":{"atk":86,"def":176,"spa":101,"spd":161,"spe":84},"moves":["spitup","gyroball","encore","seismictoss"],"baseAbility":"healer","item":"audinite","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p2: ThisNameIsFarTooLong","details":"Weavile, L50, M","condition":"56/147","active":true,"stats":{"atk":135,"def":118,"spa":72,"spd":119,"spe":155},"moves":["afteryou","psyshock","megakick"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":90,"def":101,"spa":122,"spd":81,"spe":156},"moves":["toxic","imprison","tailslap"],"baseAbility":"speedboost","item":"colburberry","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":167,"def":97,"spa":112,"spd":110,"spe":80},"moves":["sweetscent"],"baseAbility":"pickpocket","item":"nevermeltice","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false}]}}
+@message
+update
+|
+|t:|
+|move|p2b: ThisNameIsFarTooLong|Psyshock|p2a: Sir Hops-a-Lot
+|split|p2
+|-damage|p2a: Sir Hops-a-Lot|2/182
+|-damage|p2a: Sir Hops-a-Lot|1/100
+|move|p1a: Beedrill|Armor Cannon|p2b: ThisNameIsFarTooLong
+|-supereffective|p2b: ThisNameIsFarTooLong|1
+|split|p2
+|-damage|p2b: ThisNameIsFarTooLong|0 fnt
+|-damage|p2b: ThisNameIsFarTooLong|0 fnt
+|-unboost|p1a: Beedrill|def|1
+|-unboost|p1a: Beedrill|spd|1
+|faint|p2b: ThisNameIsFarTooLong
+|move|p1b: Ampharos|Aurora Veil||[still]
+|-fail|p1b: Ampharos
+|move|p2a: Sir Hops-a-Lot|Gyro Ball|p2: ThisNameIsFarTooLong|[notarget]
+|-fail|p2a: Sir Hops-a-Lot
+|
+|upkeep
+|turn|12
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Waterfall","id":"waterfall","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Lunge","id":"lunge","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Armor Cannon","id":"armorcannon","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Pin Missile","id":"pinmissile","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Aurora Veil","id":"auroraveil","pp":18,"maxpp":20,"target":"allySide","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":19,"maxpp":20,"target":"allySide","disabled":false},{"move":"Grassy Glide","id":"grassyglide","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Beedrill","details":"Beedrill, L50, M","condition":"140/140","active":true,"stats":{"atk":101,"def":63,"spa":97,"spd":127,"spe":105},"moves":["waterfall","lunge","armorcannon","pinmissile"],"baseAbility":"arenatrap","item":"persimberry","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false},{"ident":"p1: Ampharos","details":"Ampharos, L50, M","condition":"127/177","active":true,"stats":{"atk":105,"def":118,"spa":157,"spd":99,"spe":91},"moves":["auroraveil","magneticflux","grassyglide"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Arcanine, L50, M, shiny","condition":"192/192","active":false,"stats":{"atk":146,"def":116,"spa":110,"spd":113,"spe":116},"moves":["snarl"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Aromatisse, L50, M","condition":"0 fnt","active":false,"stats":{"atk":94,"def":106,"spa":122,"spd":112,"spe":58},"moves":["barbbarrage","batonpass","earthpower"],"baseAbility":"aromaveil","item":"choicescarf","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Spit Up","id":"spitup","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Gyro Ball","id":"gyroball","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Encore","id":"encore","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Seismic Toss","id":"seismictoss","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"After You","id":"afteryou","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Psyshock","id":"psyshock","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Mega Kick","id":"megakick","pp":4,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Audino-Mega, L50, F","condition":"2/182","active":true,"stats":{"atk":86,"def":176,"spa":101,"spd":161,"spe":84},"moves":["spitup","gyroball","encore","seismictoss"],"baseAbility":"healer","item":"audinite","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p2: ThisNameIsFarTooLong","details":"Weavile, L50, M","condition":"0 fnt","active":true,"stats":{"atk":135,"def":118,"spa":72,"spd":119,"spe":155},"moves":["afteryou","psyshock","megakick"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":90,"def":101,"spa":122,"spd":81,"spe":156},"moves":["toxic","imprison","tailslap"],"baseAbility":"speedboost","item":"colburberry","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":167,"def":97,"spa":112,"spd":110,"spe":80},"moves":["sweetscent"],"baseAbility":"pickpocket","item":"nevermeltice","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Waterfall needs a target
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+update
+|
+|t:|
+|move|p1a: Beedrill|Pin Missile|p1b: Ampharos
+|split|p1
+|-damage|p1b: Ampharos|114/177
+|-damage|p1b: Ampharos|64/100
+|split|p1
+|-damage|p1b: Ampharos|99/177
+|-damage|p1b: Ampharos|55/100
+|split|p1
+|-damage|p1b: Ampharos|84/177
+|-damage|p1b: Ampharos|47/100
+|split|p1
+|-damage|p1b: Ampharos|69/177
+|-damage|p1b: Ampharos|38/100
+|split|p1
+|-damage|p1b: Ampharos|54/177
+|-damage|p1b: Ampharos|30/100
+|-hitcount|p1b: Ampharos|5
+|move|p1b: Ampharos|Aurora Veil||[still]
+|-fail|p1b: Ampharos
+|move|p2a: Sir Hops-a-Lot|Spit Up||[still]
+|-fail|p2a: Sir Hops-a-Lot
+|
+|upkeep
+|turn|13
+|
+|t:|
+|move|p1a: Beedrill|Waterfall|p1b: Ampharos
+|split|p1
+|-damage|p1b: Ampharos|24/177
+|-damage|p1b: Ampharos|13/100
+|move|p1b: Ampharos|Aurora Veil||[still]
+|-fail|p1b: Ampharos
+|move|p2a: Sir Hops-a-Lot|Gyro Ball|p1a: Beedrill
+|split|p1
+|-damage|p1a: Beedrill|119/140
+|-damage|p1a: Beedrill|85/100
+|
+|upkeep
+|turn|14
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Waterfall","id":"waterfall","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Lunge","id":"lunge","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Armor Cannon","id":"armorcannon","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Pin Missile","id":"pinmissile","pp":18,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Aurora Veil","id":"auroraveil","pp":16,"maxpp":20,"target":"allySide","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":19,"maxpp":20,"target":"allySide","disabled":false},{"move":"Grassy Glide","id":"grassyglide","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Beedrill","details":"Beedrill, L50, M","condition":"119/140","active":true,"stats":{"atk":101,"def":63,"spa":97,"spd":127,"spe":105},"moves":["waterfall","lunge","armorcannon","pinmissile"],"baseAbility":"arenatrap","item":"persimberry","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false},{"ident":"p1: Ampharos","details":"Ampharos, L50, M","condition":"24/177","active":true,"stats":{"atk":105,"def":118,"spa":157,"spd":99,"spe":91},"moves":["auroraveil","magneticflux","grassyglide"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Arcanine, L50, M, shiny","condition":"192/192","active":false,"stats":{"atk":146,"def":116,"spa":110,"spd":113,"spe":116},"moves":["snarl"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Aromatisse, L50, M","condition":"0 fnt","active":false,"stats":{"atk":94,"def":106,"spa":122,"spd":112,"spe":58},"moves":["barbbarrage","batonpass","earthpower"],"baseAbility":"aromaveil","item":"choicescarf","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Spit Up","id":"spitup","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Gyro Ball","id":"gyroball","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Encore","id":"encore","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Seismic Toss","id":"seismictoss","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"After You","id":"afteryou","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Psyshock","id":"psyshock","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Mega Kick","id":"megakick","pp":4,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Audino-Mega, L50, F","condition":"2/182","active":true,"stats":{"atk":86,"def":176,"spa":101,"spd":161,"spe":84},"moves":["spitup","gyroball","encore","seismictoss"],"baseAbility":"healer","item":"audinite","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p2: ThisNameIsFarTooLong","details":"Weavile, L50, M","condition":"0 fnt","active":true,"stats":{"atk":135,"def":118,"spa":72,"spd":119,"spe":155},"moves":["afteryou","psyshock","megakick"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":90,"def":101,"spa":122,"spd":81,"spe":156},"moves":["toxic","imprison","tailslap"],"baseAbility":"speedboost","item":"colburberry","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":167,"def":97,"spa":112,"spd":110,"spe":80},"moves":["sweetscent"],"baseAbility":"pickpocket","item":"nevermeltice","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false}]}}
+@message
+update
+|
+|t:|
+|move|p1a: Beedrill|Lunge|p1b: Ampharos
+|split|p1
+|-damage|p1b: Ampharos|0 fnt
+|-damage|p1b: Ampharos|0 fnt
+|-status|p1a: Beedrill|par|[from] ability: Static|[of] p1b: Ampharos
+|faint|p1b: Ampharos
+|move|p2a: Sir Hops-a-Lot|Gyro Ball|p1a: Beedrill
+|split|p1
+|-damage|p1a: Beedrill|108/140 par
+|-damage|p1a: Beedrill|77/100 par
+|
+|upkeep
+|
+|t:|
+|split|p1
+|switch|p1b: Nibbles|Arcanine, L50, M, shiny|192/192
+|switch|p1b: Nibbles|Arcanine, L50, M, shiny|100/100
+|-ability|p1b: Nibbles|Intimidate|boost
+|-unboost|p2a: Sir Hops-a-Lot|atk|1
+|turn|15
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Waterfall","id":"waterfall","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Lunge","id":"lunge","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Armor Cannon","id":"armorcannon","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Pin Missile","id":"pinmissile","pp":18,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Snarl","id":"snarl","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Beedrill","details":"Beedrill, L50, M","condition":"108/140 par","active":true,"stats":{"atk":101,"def":63,"spa":97,"spd":127,"spe":105},"moves":["waterfall","lunge","armorcannon","pinmissile"],"baseAbility":"arenatrap","item":"persimberry","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Arcanine, L50, M, shiny","condition":"192/192","active":true,"stats":{"atk":146,"def":116,"spa":110,"spd":113,"spe":116},"moves":["snarl"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Ampharos","details":"Ampharos, L50, M","condition":"0 fnt","active":false,"stats":{"atk":105,"def":118,"spa":157,"spd":99,"spe":91},"moves":["auroraveil","magneticflux","grassyglide"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Aromatisse, L50, M","condition":"0 fnt","active":false,"stats":{"atk":94,"def":106,"spa":122,"spd":112,"spe":58},"moves":["barbbarrage","batonpass","earthpower"],"baseAbility":"aromaveil","item":"choicescarf","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Spit Up","id":"spitup","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Gyro Ball","id":"gyroball","pp":4,"maxpp":8,"target":"normal","disabled":false},{"move":"Encore","id":"encore","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Seismic Toss","id":"seismictoss","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"After You","id":"afteryou","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Psyshock","id":"psyshock","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Mega Kick","id":"megakick","pp":4,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Audino-Mega, L50, F","condition":"2/182","active":true,"stats":{"atk":86,"def":176,"spa":101,"spd":161,"spe":84},"moves":["spitup","gyroball","encore","seismictoss"],"baseAbility":"healer","item":"audinite","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p2: ThisNameIsFarTooLong","details":"Weavile, L50, M","condition":"0 fnt","active":true,"stats":{"atk":135,"def":118,"spa":72,"spd":119,"spe":155},"moves":["afteryou","psyshock","megakick"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":90,"def":101,"spa":122,"spd":81,"spe":156},"moves":["toxic","imprison","tailslap"],"baseAbility":"speedboost","item":"colburberry","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":167,"def":97,"spa":112,"spd":110,"spe":80},"moves":["sweetscent"],"baseAbility":"pickpocket","item":"nevermeltice","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You can't switch to a fainted Pokémon
+@message
+requesteddata
+gen5,c0a53d857cd8fcaa
+>start {"formatid":"gen9championsvgc2026regmb","seed":"gen5,c0a53d857cd8fcaa"}
+>player p1 {"name":"Alice","team":"Zoë|Aromatisse|ChoiceScarf|AromaVeil|BarbBarrage,BatonPass,EarthPower|Hasty|25,2,26,3,3,4|M|||50|,,,,,Ice]Nibbles|Arcanine||Intimidate|Snarl|Impish|27,16,6,3,13,1|M||S|50|,,,,,Steel]Ampharos|||Static|AuroraVeil,MagneticFlux,GrassyGlide|Lax|12,10,3,22,,16||||50|,,,,,Rock]Beedrill||PersimBerry|ArenaTrap|Waterfall,Lunge,ArmorCannon,PinMissile|Timid|,3,3,32,27,1|M|||50|,,,,,Grass]ThisNameIsFarTooLongToKeep|VivillonArchipelago||FriendGuard|Psyshock,DragonClaw,ThunderPunch|Relaxed|11,19,12,14,8,|M|||50|,,,,,Fire]X|GourgeistSmall||Pickup|SludgeWave|Mild|2,,30,32,2,|M||S|50|,,,,,Rock","avatar":"lucas"}
+>player p2 {"name":"Bob","team":"Manectric||Manectite|LightningRod|SkitterSmack,GigatonHammer,Torment|Impish|3,5,,2,24,30|M|||50|,,,,,Poison]Sir Hops-a-Lot|Audino|Audinite|Healer|SpitUp,GyroBall,Encore,SeismicToss|Sassy|4,6,30,1,1,24|F|||50|,,,,,Dragon]Grimmsnarl||NeverMeltIce|Pickpocket|SweetScent|Impish|7,27,4,10,15,|M||S|50|,,,,,Fairy]Clawitzer|||MegaLauncher|SacredSword|Adamant|25,1,1,,16,19|F|||50|,,,,,Fighting]Espathra||ColburBerry|SpeedBoost|Toxic,Imprison,TailSlap|Serious|1,10,21,1,1,31|||S|50|,,,,,Fighting]ThisNameIsFarTooLongToKeep|Weavile||Pressure|AfterYou,Psyshock,MegaKick|Bold|2,10,23,7,14,10||||50|,,,,,Steel"}
+>p1 team 3, 4, 1, 2
+>p2 team 3, 5, 6, 2
+>p1 move grassyglide +2, move armorcannon -1
+>p2 move sweetscent, move imprison
+>p1 switch 4, move lunge +1
+>p2 move sweetscent, move tailslap -1
+>p1 switch 3, move lunge +1
+>p2 move sweetscent, move toxic +1
+>p1 move barbbarrage +2, move pinmissile +2
+>p2 move sweetscent, move toxic +2
+>p1 move barbbarrage, move waterfall
+>p2 move sweetscent, move toxic
+>p2 switch 4, switch 3
+>p1 move barbbarrage +1, switch 4
+>p2 move encore -2 mega, move megakick -1
+>p1 move barbbarrage +2, move grassyglide +1
+>p2 move spitup -2, move megakick +1
+>p1 switch 4, pass
+>p1 switch 3, move grassyglide +1
+>p2 move seismictoss -2, move megakick -1
+>p1 switch 3, move magneticflux
+>p2 move spitup +1, move megakick -1
+>p1 move waterfall, move auroraveil
+>p2 move gyroball -2, move afteryou +2
+>p1 move armorcannon +2, move auroraveil
+>p2 move gyroball -2, move psyshock -1
+>p1 move pinmissile -2, move auroraveil
+>p2 move spitup +1, pass
+>p1 move waterfall -2, move auroraveil
+>p2 move gyroball +1, pass
+>p1 move lunge -2, move auroraveil
+>p2 move gyroball +1, pass
+>p1 pass, switch 3
+@message
+update
+|
+|t:|
+|move|p1b: Nibbles|Snarl|p2a: Sir Hops-a-Lot
+|-resisted|p2a: Sir Hops-a-Lot|1
+|split|p2
+|-damage|p2a: Sir Hops-a-Lot|0 fnt
+|-damage|p2a: Sir Hops-a-Lot|0 fnt
+|faint|p2a: Sir Hops-a-Lot
+|
+|win|Alice
+@message
+end
+{"winner":"Alice","seed":"gen5,c0a53d857cd8fcaa","turns":15,"p1":"Alice","p2":"Bob","p1team":[{"name":"Zoë","species":"Aromatisse","item":"Choice Scarf","ability":"Aroma Veil","moves":["Barb Barrage","Baton Pass","Earth Power"],"nature":"Hasty","evs":{"hp":25,"atk":2,"def":26,"spa":3,"spd":3,"spe":4},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Nibbles","species":"Arcanine","item":"","ability":"Intimidate","moves":["Snarl"],"nature":"Impish","evs":{"hp":27,"atk":16,"def":6,"spa":3,"spd":13,"spe":1},"gender":"M","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Ampharos","species":"Ampharos","item":"","ability":"Static","moves":["Aurora Veil","Magnetic Flux","Grassy Glide"],"nature":"Lax","evs":{"hp":12,"atk":10,"def":3,"spa":22,"spd":0,"spe":16},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Beedrill","species":"Beedrill","item":"Persim Berry","ability":"Arena Trap","moves":["Waterfall","Lunge","Armor Cannon","Pin Missile"],"nature":"Timid","evs":{"hp":0,"atk":3,"def":3,"spa":32,"spd":27,"spe":1},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"ThisNameIsFarTooLongToKeep","species":"Vivillon-Archipelago","item":"","ability":"Friend Guard","moves":["Psyshock","Dragon Claw","Thunder Punch"],"nature":"Relaxed","evs":{"hp":11,"atk":19,"def":12,"spa":14,"spd":8,"spe":0},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"X","species":"Gourgeist-Small","item":"","ability":"Pickup","moves":["Sludge Wave"],"nature":"Mild","evs":{"hp":2,"atk":0,"def":30,"spa":32,"spd":2,"spe":0},"gender":"M","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Manectric","species":"Manectric","item":"Manectite","ability":"Lightning Rod","moves":["Skitter Smack","Gigaton Hammer","Torment"],"nature":"Impish","evs":{"hp":3,"atk":5,"def":0,"spa":2,"spd":24,"spe":30},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sir Hops-a-Lot","species":"Audino","item":"Audinite","ability":"Healer","moves":["Spit Up","Gyro Ball","Encore","Seismic Toss"],"nature":"Sassy","evs":{"hp":4,"atk":6,"def":30,"spa":1,"spd":1,"spe":24},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Grimmsnarl","species":"Grimmsnarl","item":"Never-Melt Ice","ability":"Pickpocket","moves":["Sweet Scent"],"nature":"Impish","evs":{"hp":7,"atk":27,"def":4,"spa":10,"spd":15,"spe":0},"gender":"M","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Clawitzer","species":"Clawitzer","item":"","ability":"Mega Launcher","moves":["Sacred Sword"],"nature":"Adamant","evs":{"hp":25,"atk":1,"def":1,"spa":0,"spd":16,"spe":19},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Espathra","species":"Espathra","item":"Colbur Berry","ability":"Speed Boost","moves":["Toxic","Imprison","Tail Slap"],"nature":"Serious","evs":{"hp":1,"atk":10,"def":21,"spa":1,"spd":1,"spe":31},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"ThisNameIsFarTooLongToKeep","species":"Weavile","item":"","ability":"Pressure","moves":["After You","Psyshock","Mega Kick"],"nature":"Bold","evs":{"hp":2,"atk":10,"def":23,"spa":7,"spd":14,"spe":10},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[2,0],"inputLog":[">start {\"formatid\":\"gen9championsvgc2026regmb\",\"seed\":\"gen5,c0a53d857cd8fcaa\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Zoë|Aromatisse|ChoiceScarf|AromaVeil|BarbBarrage,BatonPass,EarthPower|Hasty|25,2,26,3,3,4|M|||50|,,,,,Ice]Nibbles|Arcanine||Intimidate|Snarl|Impish|27,16,6,3,13,1|M||S|50|,,,,,Steel]Ampharos|||Static|AuroraVeil,MagneticFlux,GrassyGlide|Lax|12,10,3,22,,16||||50|,,,,,Rock]Beedrill||PersimBerry|ArenaTrap|Waterfall,Lunge,ArmorCannon,PinMissile|Timid|,3,3,32,27,1|M|||50|,,,,,Grass]ThisNameIsFarTooLongToKeep|VivillonArchipelago||FriendGuard|Psyshock,DragonClaw,ThunderPunch|Relaxed|11,19,12,14,8,|M|||50|,,,,,Fire]X|GourgeistSmall||Pickup|SludgeWave|Mild|2,,30,32,2,|M||S|50|,,,,,Rock\",\"avatar\":\"lucas\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Manectric||Manectite|LightningRod|SkitterSmack,GigatonHammer,Torment|Impish|3,5,,2,24,30|M|||50|,,,,,Poison]Sir Hops-a-Lot|Audino|Audinite|Healer|SpitUp,GyroBall,Encore,SeismicToss|Sassy|4,6,30,1,1,24|F|||50|,,,,,Dragon]Grimmsnarl||NeverMeltIce|Pickpocket|SweetScent|Impish|7,27,4,10,15,|M||S|50|,,,,,Fairy]Clawitzer|||MegaLauncher|SacredSword|Adamant|25,1,1,,16,19|F|||50|,,,,,Fighting]Espathra||ColburBerry|SpeedBoost|Toxic,Imprison,TailSlap|Serious|1,10,21,1,1,31|||S|50|,,,,,Fighting]ThisNameIsFarTooLongToKeep|Weavile||Pressure|AfterYou,Psyshock,MegaKick|Bold|2,10,23,7,14,10||||50|,,,,,Steel\"}",">p1 team 3, 4, 1, 2",">p2 team 3, 5, 6, 2",">p1 move grassyglide +2, move armorcannon -1",">p2 move sweetscent, move imprison",">p1 switch 4, move lunge +1",">p2 move sweetscent, move tailslap -1",">p1 switch 3, move lunge +1",">p2 move sweetscent, move toxic +1",">p1 move barbbarrage +2, move pinmissile +2",">p2 move sweetscent, move toxic +2",">p1 move barbbarrage, move waterfall",">p2 move sweetscent, move toxic",">p2 switch 4, switch 3",">p1 move barbbarrage +1, switch 4",">p2 move encore -2 mega, move megakick -1",">p1 move barbbarrage +2, move grassyglide +1",">p2 move spitup -2, move megakick +1",">p1 switch 4, pass",">p1 switch 3, move grassyglide +1",">p2 move seismictoss -2, move megakick -1",">p1 switch 3, move magneticflux",">p2 move spitup +1, move megakick -1",">p1 move waterfall, move auroraveil",">p2 move gyroball -2, move afteryou +2",">p1 move armorcannon +2, move auroraveil",">p2 move gyroball -2, move psyshock -1",">p1 move pinmissile -2, move auroraveil",">p2 move spitup +1, pass",">p1 move waterfall -2, move auroraveil",">p2 move gyroball +1, pass",">p1 move lunge -2, move auroraveil",">p2 move gyroball +1, pass",">p1 pass, switch 3",">p1 move lunge +1, move snarl",">p2 move gyroball +1, pass"]}

@@ -1,0 +1,589 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 387d 228b 5ca8 01a5
+genders drawn
+validate gen9vgc2025regi
+team p1
+Magmar (M) @ Eviolite
+Ability: Flame Body
+Level: 50
+Tera Type: Grass
+EVs: 252 HP / 128 Def / 128 SpD
+Bold Nature
+IVs: 0 Atk
+- Heat Wave
+- Will-O-Wisp
+- Protect
+- Follow Me
+
+Ribombee (F) @ Life Orb
+Ability: Shield Dust
+Level: 50
+Tera Type: Ground
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Quiver Dance
+- Tera Blast
+- Dazzling Gleam
+- Protect
+
+Cramorant-Gorging (M) @ Sitrus Berry
+Ability: Gulp Missile
+Level: 50
+Tera Type: Ground
+EVs: 252 HP / 252 Atk / 4 Def
+Lonely Nature
+- Surf
+- Tailwind
+- Brave Bird
+- Protect
+
+Mr. Bubbles (Corviknight) (F) @ Leftovers
+Ability: Mirror Armor
+Level: 50
+Tera Type: Fighting
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- Iron Defense
+- Brave Bird
+- Roost
+- Body Press
+
+Sir Hops-a-Lot (Rayquaza) @ Clear Amulet
+Ability: Air Lock
+Level: 50
+Tera Type: Normal
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Dragon Dance
+- Earthquake
+- Dragon Ascent
+- Extreme Speed
+
+Giratina-Origin @ Griseous Core
+Ability: Levitate
+Level: 50
+Tera Type: Steel
+EVs: 4 HP / 252 Atk / 252 Spe
+Hasty Nature
+- Poltergeist
+- Draco Meteor
+- Protect
+- Shadow Sneak
+end
+team p2
+Chomp (Iron Thorns) @ Clear Amulet
+Ability: Quark Drive
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Rock Slide
+- Wild Charge
+- Dragon Dance
+- High Horsepower
+
+Bellossom (M) @ Sitrus Berry
+Ability: Healer
+Level: 50
+Tera Type: Water
+EVs: 252 HP / 4 Def / 252 SpA
+Modest Nature
+IVs: 0 Atk
+- Giga Drain
+- Strength Sap
+- Quiver Dance
+- Baton Pass
+
+Reshiram @ Life Orb
+Ability: Turboblaze
+Level: 50
+Tera Type: Fire
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Tailwind
+- Heat Wave
+- Blue Flare
+- Draco Meteor
+
+Baxcalibur (F) @ Loaded Dice
+Ability: Thermal Exchange
+Level: 50
+Tera Type: Dragon
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Protect
+- Scale Shot
+- Icicle Spear
+- Swords Dance
+
+Grimmsnarl (M) @ Light Clay
+Ability: Prankster
+Level: 50
+Tera Type: Steel
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- Thunder Wave
+- Spirit Break
+- Reflect
+- Light Screen
+
+Zangoose (M) @ Toxic Orb
+Ability: Toxic Boost
+Level: 50
+Shiny: Yes
+Tera Type: Ghost
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Close Combat
+- Knock Off
+- Protect
+- Facade
+end
+choice p1 team 4361
+choice p2 team 4125
+choice p1 move 4 1, move 2
+choice p2 move iciclespear 1 terastallize, move highhorsepower +1
+choice p1 default
+choice p2 default
+choice p1 pass, switch 4
+choice p2 move 2 -2 ,  move wildcharge 2
+choice p1 move 4 -2, move 4 terastallize
+choice p1 switch 3, pass
+choice p2 move 3 -2, switch 3
+choice p1 move 4 2, pass
+choice p2 skip ,  switch 3
+choice p1 move 2 2, pass
+choice p2 move 1, move 2 -1
+choice p2 pass, switch 4
+choice p1 move 2 1
+choice p2 move 2 -2, move 3
+choice p1 move poltergeist +1,skip
+choice p2 move 1, move 2 -1
+choice p1 move 3, pass
+choice p2 move 3 -2, move 2 1
+choice p1 move 4 2, pass
+choice p2 move 3 -2, move 2 -1
+choice p1 move 3, pass
+choice p2 move Protect,skip
+choice p1 move 1 1, pass
+choice p2 move 4, pass
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Magmar, L50, M|
+expect |poke|p1|Ribombee, L50, F|
+expect |poke|p1|Cramorant, L50, M|
+expect |poke|p1|Corviknight, L50, F|
+expect |poke|p1|Rayquaza, L50|
+expect |poke|p1|Giratina-Origin, L50|
+expect |poke|p2|Iron Thorns, L50|
+expect |poke|p2|Bellossom, L50, M|
+expect |poke|p2|Reshiram, L50|
+expect |poke|p2|Baxcalibur, L50, F|
+expect |poke|p2|Grimmsnarl, L50, M|
+expect |poke|p2|Zangoose, L50, M|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Mr. Bubbles|Corviknight, L50, F|205/205
+expect |switch|p1a: Mr. Bubbles|Corviknight, L50, F|205/205
+expect |split|p1
+expect |switch|p1b: Cramorant|Cramorant, L50, M|177/177
+expect |switch|p1b: Cramorant|Cramorant, L50, M|177/177
+expect |split|p2
+expect |switch|p2a: Baxcalibur|Baxcalibur, L50, F|191/191
+expect |switch|p2a: Baxcalibur|Baxcalibur, L50, F|191/191
+expect |split|p2
+expect |switch|p2b: Chomp|Iron Thorns, L50, shiny|176/176
+expect |switch|p2b: Chomp|Iron Thorns, L50, shiny|176/176
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p2a: Baxcalibur|Dragon
+expect |move|p2a: Baxcalibur|Icicle Spear|p1a: Mr. Bubbles
+expect |rng|100|27
+expect |rng|20|5
+expect |rng|2|0
+expect |rng|24|15
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|180/205
+expect |-damage|p1a: Mr. Bubbles|180/205
+expect |rng|24|17
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|152/205
+expect |-damage|p1a: Mr. Bubbles|152/205
+expect |rng|24|3
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|124/205
+expect |-damage|p1a: Mr. Bubbles|124/205
+expect |rng|24|12
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|96/205
+expect |-damage|p1a: Mr. Bubbles|96/205
+expect |rng|24|1
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|71/205
+expect |-damage|p1a: Mr. Bubbles|71/205
+expect |-hitcount|p1a: Mr. Bubbles|5
+expect |move|p2b: Chomp|High Horsepower|p1a: Mr. Bubbles
+expect |-immune|p1a: Mr. Bubbles
+expect |move|p1b: Cramorant|Tailwind|p1b: Cramorant
+expect |-sidestart|p1: p1|move: Tailwind
+expect |move|p1a: Mr. Bubbles|Body Press|p2a: Baxcalibur
+expect |rng|100|62
+expect |rng|24|1
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Baxcalibur|155/191
+expect |-damage|p2a: Baxcalibur|155/191
+expect |
+expect |split|p1
+expect |-heal|p1a: Mr. Bubbles|83/205|[from] item: Leftovers
+expect |-heal|p1a: Mr. Bubbles|83/205|[from] item: Leftovers
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Baxcalibur|Protect|p2a: Baxcalibur
+expect |-singleturn|p2a: Baxcalibur|Protect
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Cramorant|Surf|p2a: Baxcalibur|[spread] p1a,p2b
+expect |-activate|p2a: Baxcalibur|move: Protect
+expect |rng|100|73
+expect |rng|100|11
+expect |-formechange|p1b: Cramorant|Cramorant-Gulping|
+expect |rng|24|4
+expect |rng|16|9
+expect |rng|24|17
+expect |rng|16|8
+expect |-supereffective|p2b: Chomp
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|41/205
+expect |-damage|p1a: Mr. Bubbles|41/205
+expect |split|p2
+expect |-damage|p2b: Chomp|92/176
+expect |-damage|p2b: Chomp|92/176
+expect |rng|2|1
+expect |move|p1a: Mr. Bubbles|Iron Defense|p1a: Mr. Bubbles
+expect |-boost|p1a: Mr. Bubbles|def|2
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Chomp|Rock Slide|p1a: Mr. Bubbles|[spread] p1b
+expect |rng|100|93
+expect |-miss|p2b: Chomp|p1a: Mr. Bubbles
+expect |rng|100|67
+expect |rng|24|23
+expect |rng|16|3
+expect |-supereffective|p1b: Cramorant
+expect |split|p1
+expect |-damage|p1b: Cramorant|0 fnt
+expect |-damage|p1b: Cramorant|0 fnt
+expect |rng|100|12
+expect |split|p2
+expect |-damage|p2b: Chomp|48/176|[from] ability: Gulp Missile|[of] p1b: Cramorant
+expect |-damage|p2b: Chomp|48/176|[from] ability: Gulp Missile|[of] p1b: Cramorant
+expect |-fail|p2b: Chomp|unboost|[from] item: Clear Amulet|[of] p2b: Chomp
+expect |-formechange|p1b: Cramorant|Cramorant|
+expect |faint|p1b: Cramorant
+expect |
+expect |rng|2|0
+expect |split|p1
+expect |-heal|p1a: Mr. Bubbles|53/205|[from] item: Leftovers
+expect |-heal|p1a: Mr. Bubbles|53/205|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Magmar|Magmar, L50, M|172/172
+expect |switch|p1b: Magmar|Magmar, L50, M|172/172
+expect |turn|3
+expect |
+expect |t:|
+expect |-terastallize|p1b: Magmar|Grass
+expect |move|p1b: Magmar|Follow Me|p1b: Magmar
+expect |-singleturn|p1b: Magmar|move: Follow Me
+expect |move|p1a: Mr. Bubbles|Body Press|p1b: Magmar
+expect |rng|100|10
+expect |rng|24|7
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Magmar|118/172
+expect |-damage|p1b: Magmar|118/172
+expect |rng|10|1
+expect |-status|p1a: Mr. Bubbles|brn|[from] ability: Flame Body|[of] p1b: Magmar
+expect |move|p2a: Baxcalibur|Scale Shot|p1b: Magmar
+expect |rng|100|66
+expect |rng|20|14
+expect |rng|24|5
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1b: Magmar|88/172
+expect |-damage|p1b: Magmar|88/172
+expect |rng|24|13
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1b: Magmar|56/172
+expect |-damage|p1b: Magmar|56/172
+expect |rng|24|21
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Magmar|28/172
+expect |-damage|p1b: Magmar|28/172
+expect |rng|24|13
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Magmar|0 fnt
+expect |-damage|p1b: Magmar|0 fnt
+expect |faint|p1b: Magmar
+expect |-hitcount|p1: Magmar|4
+expect |-unboost|p2a: Baxcalibur|def|1
+expect |-boost|p2a: Baxcalibur|spe|1
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Chomp|Wild Charge|p1a: Mr. Bubbles
+expect |rng|100|6
+expect |rng|24|16
+expect |rng|16|0
+expect |-supereffective|p1a: Mr. Bubbles
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|0 fnt
+expect |-damage|p1a: Mr. Bubbles|0 fnt
+expect |faint|p1a: Mr. Bubbles
+expect |split|p2
+expect |-damage|p2b: Chomp|35/176|[from] Recoil
+expect |-damage|p2b: Chomp|35/176|[from] Recoil
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Giratina|Giratina-Origin, L50|226/226
+expect |switch|p1a: Giratina|Giratina-Origin, L50|226/226
+expect |turn|4
+expect |
+expect |t:|
+expect |-end|p2b: Chomp|Quark Drive|[silent]
+expect |split|p2
+expect |switch|p2b: Bellossom|Bellossom, L50, M|182/182
+expect |switch|p2b: Bellossom|Bellossom, L50, M|182/182
+expect |move|p1a: Giratina|Shadow Sneak|p2b: Bellossom
+expect |rng|100|7
+expect |rng|24|12
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Bellossom|137/182
+expect |-damage|p2b: Bellossom|137/182
+expect |move|p2a: Baxcalibur|Icicle Spear|p2b: Bellossom
+expect |rng|100|1
+expect |rng|20|12
+expect |rng|2|0
+expect |rng|24|0
+expect |rng|16|1
+expect |-supereffective|p2b: Bellossom
+expect |-crit|p2b: Bellossom
+expect |split|p2
+expect |-damage|p2b: Bellossom|41/182
+expect |-damage|p2b: Bellossom|41/182
+expect |-enditem|p2b: Bellossom|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2b: Bellossom|86/182|[from] item: Sitrus Berry
+expect |-heal|p2b: Bellossom|86/182|[from] item: Sitrus Berry
+expect |rng|24|17
+expect |rng|16|3
+expect |-supereffective|p2b: Bellossom
+expect |split|p2
+expect |-damage|p2b: Bellossom|24/182
+expect |-damage|p2b: Bellossom|24/182
+expect |rng|24|0
+expect |rng|16|8
+expect |-supereffective|p2b: Bellossom
+expect |-crit|p2b: Bellossom
+expect |split|p2
+expect |-damage|p2b: Bellossom|0 fnt
+expect |-damage|p2b: Bellossom|0 fnt
+expect |faint|p2b: Bellossom
+expect |-hitcount|p2: Bellossom|3
+expect |
+expect |-sideend|p1: p1|move: Tailwind
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Chomp|Iron Thorns, L50, shiny|35/176
+expect |switch|p2b: Chomp|Iron Thorns, L50, shiny|35/176
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2a: Baxcalibur|Protect|p2a: Baxcalibur
+expect |-singleturn|p2a: Baxcalibur|Protect
+expect |move|p1a: Giratina|Draco Meteor|p2b: Chomp
+expect |rng|100|82
+expect |rng|24|3
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Chomp|0 fnt
+expect |-damage|p2b: Chomp|0 fnt
+expect |rng|100|0
+expect |-unboost|p1a: Giratina|spa|2
+expect |faint|p2b: Chomp
+expect |-end|p2b: Chomp|Quark Drive|[silent]
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Grimmsnarl|Grimmsnarl, L50, M|202/202
+expect |switch|p2b: Grimmsnarl|Grimmsnarl, L50, M|202/202
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2b: Grimmsnarl|Reflect|p2b: Grimmsnarl
+expect |-sidestart|p2: p2|Reflect
+expect |move|p2a: Baxcalibur|Scale Shot|p2b: Grimmsnarl
+expect |-immune|p2b: Grimmsnarl
+expect |move|p1a: Giratina|Draco Meteor|p2a: Baxcalibur
+expect |rng|100|49
+expect |rng|24|7
+expect |rng|16|4
+expect |-supereffective|p2a: Baxcalibur
+expect |split|p2
+expect |-damage|p2a: Baxcalibur|21/191
+expect |-damage|p2a: Baxcalibur|21/191
+expect |rng|100|80
+expect |-unboost|p1a: Giratina|spa|2
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Baxcalibur|Protect|p2a: Baxcalibur
+expect |-singleturn|p2a: Baxcalibur|Protect
+expect |move|p1a: Giratina|Poltergeist|p2a: Baxcalibur
+expect |-activate|p2a: Baxcalibur|move: Protect
+expect |move|p2b: Grimmsnarl|Spirit Break|p2a: Baxcalibur
+expect |-activate|p2a: Baxcalibur|move: Protect
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1a: Giratina|Protect|p1a: Giratina
+expect |-singleturn|p1a: Giratina|Protect
+expect |move|p2a: Baxcalibur|Icicle Spear|p2b: Grimmsnarl
+expect |rng|100|70
+expect |rng|20|0
+expect |rng|2|0
+expect |rng|24|15
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Grimmsnarl|175/202
+expect |-damage|p2b: Grimmsnarl|175/202
+expect |rng|24|22
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Grimmsnarl|146/202
+expect |-damage|p2b: Grimmsnarl|146/202
+expect |rng|24|4
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Grimmsnarl|120/202
+expect |-damage|p2b: Grimmsnarl|120/202
+expect |rng|24|4
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Grimmsnarl|94/202
+expect |-damage|p2b: Grimmsnarl|94/202
+expect |rng|24|12
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2b: Grimmsnarl|70/202
+expect |-damage|p2b: Grimmsnarl|70/202
+expect |-hitcount|p2b: Grimmsnarl|5
+expect |move|p2b: Grimmsnarl|Spirit Break|p1a: Giratina
+expect |-activate|p1a: Giratina|move: Protect
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p1a: Giratina|Shadow Sneak|p2b: Grimmsnarl
+expect |rng|100|16
+expect |rng|24|11
+expect |rng|16|7
+expect |-resisted|p2b: Grimmsnarl
+expect |split|p2
+expect |-damage|p2b: Grimmsnarl|50/202
+expect |-damage|p2b: Grimmsnarl|50/202
+expect |move|p2a: Baxcalibur|Icicle Spear|p2b: Grimmsnarl
+expect |rng|100|91
+expect |rng|20|13
+expect |rng|2|1
+expect |rng|24|15
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Grimmsnarl|22/202
+expect |-damage|p2b: Grimmsnarl|22/202
+expect |rng|24|11
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Grimmsnarl|0 fnt
+expect |-damage|p2b: Grimmsnarl|0 fnt
+expect |faint|p2b: Grimmsnarl
+expect |-hitcount|p2: Grimmsnarl|2
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p2a: Baxcalibur|Protect|p2a: Baxcalibur
+expect |-singleturn|p2a: Baxcalibur|Protect
+expect |move|p1a: Giratina|Protect||[still]
+expect |-fail|p1a: Giratina
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p2a: Baxcalibur|Swords Dance|p2a: Baxcalibur
+expect |-boost|p2a: Baxcalibur|atk|2
+expect |move|p1a: Giratina|Poltergeist|p2a: Baxcalibur
+expect |rng|100|54
+expect |-activate|p2a: Baxcalibur|move: Poltergeist|Loaded Dice
+expect |rng|24|20
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Baxcalibur|0 fnt
+expect |-damage|p2a: Baxcalibur|0 fnt
+expect |faint|p2a: Baxcalibur
+expect |
+expect |win|p1

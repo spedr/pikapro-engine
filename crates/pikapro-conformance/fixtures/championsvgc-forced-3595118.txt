@@ -1,0 +1,410 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed da93 b574 656e fa24
+genders drawn
+team p1
+Volcarona (F)
+Ability: Flame Body
+Level: 50
+Tera Type: Fire
+EVs: 9 HP / 4 Atk / 26 Def / 6 SpA / 5 SpD
+Serious Nature
+- Burn Up
+- Quiver Dance
+- Roost
+
+Chomp (Kommo-o) @ Poison Barb
+Ability: Overcoat
+Level: 50
+Tera Type: Grass
+EVs: 10 HP / 3 Atk / 26 Def / 15 SpA / 8 SpD / 3 Spe
+Serious Nature
+- Axe Kick
+
+Garganacl
+Ability: Clear Body
+Level: 50
+Shiny: Yes
+Tera Type: Fire
+EVs: 10 HP / 3 Atk / 19 Def / 5 SpA / 16 SpD / 10 Spe
+Modest Nature
+- Petal Blizzard
+- Water Pulse
+- Coil
+- Accelerock
+
+ThisNameIsFarTooLongToKeep (Scolipede) @ Chople Berry
+Ability: Swarm
+Level: 50
+Tera Type: Fire
+EVs: 16 HP / 17 Atk / 20 Def / 9 SpA / 2 SpD / 1 Spe
+Sassy Nature
+- Guard Split
+- Meteor Beam
+
+Gengar @ Gengarite
+Ability: Cursed Body
+Level: 50
+Tera Type: Grass
+EVs: 4 Atk / 25 Def / 9 SpA / 18 SpD / 8 Spe
+Naive Nature
+- Power Trip
+- Double Team
+- Corrosive Gas
+- Earth Power
+
+Kingambit @ Never-Melt Ice
+Ability: Supreme Overlord
+Level: 50
+Tera Type: Bug
+EVs: 1 HP / 28 Def / 1 SpA / 31 SpD
+Hardy Nature
+- Sky Attack
+end
+team p2
+Hatterene
+Ability: Magic Bounce
+Level: 50
+Tera Type: Bug
+EVs: 4 HP / 24 Atk / 9 Def / 5 SpA / 4 Spe
+Impish Nature
+- Magic Powder
+- Psychic
+
+Audino @ Audinite
+Ability: Regenerator
+Level: 50
+Tera Type: Dragon
+EVs: 14 HP / 29 Atk / 11 SpD / 12 Spe
+Gentle Nature
+- Healing Wish
+- Aqua Cutter
+
+Sparky (Ampharos) (F) @ Ampharosite
+Ability: Plus
+Level: 50
+Tera Type: Dark
+EVs: 10 HP / 26 Atk / 2 Def / 7 SpA / 3 SpD / 7 Spe
+Brave Nature
+- Misty Terrain
+- Shadow Punch
+
+Jolteon (F)
+Ability: Volt Absorb
+Level: 50
+Tera Type: Grass
+EVs: 9 HP / 8 Def / 5 SpA / 22 SpD / 22 Spe
+Sassy Nature
+- Double Shock
+- Baton Pass
+
+Rotom-Heat
+Ability: Levitate
+Level: 50
+Tera Type: Ground
+EVs: 32 HP / 21 Atk / 12 SpA
+Hasty Nature
+- Burn Up
+- Double Shock
+- Protect
+
+Noivern (M)
+Ability: Telepathy
+Level: 50
+Tera Type: Fighting
+EVs: 30 HP / 6 Atk / 3 Def / 21 SpA / 1 SpD / 4 Spe
+Bashful Nature
+- Magic Room
+- Play Rough
+- Seismic Toss
+end
+choice p1 team 4625
+choice p2 team 4513
+choice p1 move 2 1, switch 4
+choice p2 move Double Shock 2, move Double Shock +2
+choice p1 pass, switch 4
+choice p2 move 1 2, move 2 1
+choice p1 move 1, move 1 -1
+choice p2 move 1 2, move 1 2
+choice p1 move 1 1, move 1
+choice p1 switch 3, pass
+choice p2 move 1 -2, move 3
+choice p1 move 1 2, move 1 -1
+choice p2 move 1 2 ,  move Burn Up -1
+choice p1 move 1 -2, move 1
+choice p2 switch 4, switch 3
+choice p1 move 1 2, pass
+choice p2 move 2 1 ,  switch jolteon
+choice p1 move 1 1, pass
+choice p2 move 2 1 mega, move 1 1
+choice p1 move 1 2, pass
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Volcarona, L50, F|
+expect |poke|p1|Kommo-o, L50, F|
+expect |poke|p1|Garganacl, L50, M, shiny|
+expect |poke|p1|Scolipede, L50, F|
+expect |poke|p1|Gengar, L50, M|
+expect |poke|p1|Kingambit, L50, F|
+expect |poke|p2|Hatterene, L50, F|
+expect |poke|p2|Audino, L50, F|
+expect |poke|p2|Ampharos, L50, F|
+expect |poke|p2|Jolteon, L50, F|
+expect |poke|p2|Rotom-Heat, L50|
+expect |poke|p2|Noivern, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: ThisNameIsFarTooLong|Scolipede, L50, F|151/151
+expect |switch|p1a: ThisNameIsFarTooLong|Scolipede, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Kingambit|Kingambit, L50, F|176/176
+expect |switch|p1b: Kingambit|Kingambit, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Jolteon|Jolteon, L50, F|149/149
+expect |switch|p2a: Jolteon|Jolteon, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Rotom|Rotom-Heat, L50|157/157
+expect |switch|p2b: Rotom|Rotom-Heat, L50|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |-end|p1b: Kingambit|fallenundefined|[silent]
+expect |split|p1
+expect |switch|p1b: Gengar|Gengar, L50, M|135/135
+expect |switch|p1b: Gengar|Gengar, L50, M|100/100
+expect |move|p2a: Jolteon|Double Shock|p1b: Gengar
+expect |rng|100|80
+expect |rng|24|11
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1b: Gengar|77/135
+expect |-damage|p1b: Gengar|57/100
+expect |-start|p2a: Jolteon|typechange|???|[from] move: Double Shock
+expect |rng|10|3
+expect |move|p1a: ThisNameIsFarTooLong|Meteor Beam||[still]
+expect |-prepare|p1a: ThisNameIsFarTooLong|Meteor Beam
+expect |-boost|p1a: ThisNameIsFarTooLong|spa|1
+expect |move|p2b: Rotom|Double Shock|p1b: Gengar
+expect |rng|100|68
+expect |rng|24|17
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Gengar|0 fnt
+expect |-damage|p1b: Gengar|0 fnt
+expect |-start|p2b: Rotom|typechange|???/Fire|[from] move: Double Shock
+expect |rng|10|8
+expect |faint|p1b: Gengar
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Kingambit|Kingambit, L50, F|176/176
+expect |switch|p1b: Kingambit|Kingambit, L50, F|100/100
+expect |-activate|p1b: Kingambit|ability: Supreme Overlord
+expect |-start|p1b: Kingambit|fallen1|[silent]
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Jolteon|Double Shock||[still]
+expect |-fail|p2a: Jolteon|move: Double Shock
+expect |move|p1a: ThisNameIsFarTooLong|Meteor Beam|p2a: Jolteon|[from] lockedmove|[miss]
+expect |rng|100|93
+expect |-miss|p1a: ThisNameIsFarTooLong|p2a: Jolteon
+expect |move|p2b: Rotom|Double Shock||[still]
+expect |-fail|p2b: Rotom|move: Double Shock
+expect |move|p1b: Kingambit|Sky Attack||[still]
+expect |-prepare|p1b: Kingambit|Sky Attack
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Jolteon|Double Shock||[still]
+expect |-fail|p2a: Jolteon|move: Double Shock
+expect |move|p1a: ThisNameIsFarTooLong|Guard Split|p2a: Jolteon
+expect |-activate|p1a: ThisNameIsFarTooLong|move: Guard Split|[of] p2a: Jolteon
+expect |move|p2b: Rotom|Burn Up|p1b: Kingambit
+expect |rng|100|63
+expect |rng|24|16
+expect |rng|16|7
+expect |-supereffective|p1b: Kingambit|1
+expect |split|p1
+expect |-damage|p1b: Kingambit|14/176
+expect |-damage|p1b: Kingambit|7/100
+expect |-start|p2b: Rotom|typechange|???/???|[from] move: Burn Up
+expect |move|p1b: Kingambit|Sky Attack|p1a: ThisNameIsFarTooLong|[from] lockedmove
+expect |rng|100|68
+expect |rng|8|0
+expect |rng|16|9
+expect |-supereffective|p1a: ThisNameIsFarTooLong|1
+expect |-crit|p1a: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|0 fnt
+expect |-damage|p1a: ThisNameIsFarTooLong|0 fnt
+expect |rng|100|48
+expect |faint|p1a: ThisNameIsFarTooLong
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Chomp|Kommo-o, L50, F|160/160
+expect |switch|p1a: Chomp|Kommo-o, L50, F|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2b: Rotom|Protect|p2b: Rotom
+expect |-singleturn|p2b: Rotom|Protect
+expect |move|p2a: Jolteon|Double Shock||[still]
+expect |-fail|p2a: Jolteon|move: Double Shock
+expect |move|p1a: Chomp|Axe Kick|p2b: Rotom
+expect |-activate|p2b: Rotom|move: Protect
+expect |split|p1
+expect |-damage|p1a: Chomp|80/160|[from] axekick
+expect |-damage|p1a: Chomp|50/100y|[from] axekick
+expect |move|p1b: Kingambit|Sky Attack||[still]
+expect |-prepare|p1b: Kingambit|Sky Attack
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2a: Jolteon|Double Shock||[still]
+expect |-fail|p2a: Jolteon|move: Double Shock
+expect |move|p2b: Rotom|Burn Up||[still]
+expect |-fail|p2b: Rotom|move: Burn Up
+expect |move|p1a: Chomp|Axe Kick|p1b: Kingambit
+expect |rng|100|85
+expect |rng|24|10
+expect |rng|16|3
+expect |-supereffective|p1b: Kingambit|2
+expect |split|p1
+expect |-damage|p1b: Kingambit|0 fnt
+expect |-damage|p1b: Kingambit|0 fnt
+expect |rng|100|51
+expect |faint|p1b: Kingambit
+expect |-end|p1b: Kingambit|fallen1|[silent]
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sparky|Ampharos, L50, F|175/175
+expect |switch|p2a: Sparky|Ampharos, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Hatterene|Hatterene, L50, F|136/136
+expect |switch|p2b: Hatterene|Hatterene, L50, F|100/100
+expect |move|p1a: Chomp|Axe Kick|p2b: Hatterene
+expect |rng|100|7
+expect |rng|24|23
+expect |rng|16|11
+expect |-resisted|p2b: Hatterene|2
+expect |split|p2
+expect |-damage|p2b: Hatterene|119/136
+expect |-damage|p2b: Hatterene|87/100
+expect |rng|100|81
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Jolteon|Jolteon, L50, F|149/149
+expect |switch|p2b: Jolteon|Jolteon, L50, F|100/100
+expect |move|p1a: Chomp|Axe Kick|p2a: Sparky
+expect |rng|100|31
+expect |rng|24|16
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Sparky|90/175
+expect |-damage|p2a: Sparky|51/100
+expect |rng|100|29
+expect |-start|p2a: Sparky|confusion
+expect |rng|3|2
+expect |-activate|p2a: Sparky|confusion
+expect |rng|100|25
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Sparky|70/175|[from] confusion
+expect |-damage|p2a: Sparky|40/100|[from] confusion
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |detailschange|p2a: Sparky|Ampharos-Mega, L50, F
+expect |-mega|p2a: Sparky|Ampharos|Ampharosite
+expect |-ability|p2a: Sparky|Mold Breaker
+expect |move|p2b: Jolteon|Double Shock|p1a: Chomp
+expect |rng|100|57
+expect |rng|24|20
+expect |rng|16|13
+expect |-resisted|p1a: Chomp|1
+expect |split|p1
+expect |-damage|p1a: Chomp|62/160
+expect |-damage|p1a: Chomp|38/100
+expect |-start|p2b: Jolteon|typechange|???|[from] move: Double Shock
+expect |move|p1a: Chomp|Axe Kick|p2b: Jolteon|[miss]
+expect |rng|100|96
+expect |-miss|p1a: Chomp|p2b: Jolteon
+expect |split|p1
+expect |-damage|p1a: Chomp|0 fnt|[from] axekick
+expect |-damage|p1a: Chomp|0 fnt|[from] axekick
+expect |faint|p1a: Chomp
+expect |
+expect |win|p2
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Volcarona","details":"Volcarona, L50, F","condition":"169/169","active":true,"stats":{"atk":84,"def":111,"spa":161,"spd":130,"spe":120},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Kommo-o, L50, F","condition":"160/160","active":true,"stats":{"atk":133,"def":171,"spa":135,"spd":133,"spe":108},"moves":["axekick"],"baseAbility":"overcoat","item":"poisonbarb","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false},{"ident":"p1: Garganacl","details":"Garganacl, L50, M, shiny","condition":"185/185","active":false,"stats":{"atk":110,"def":169,"spa":77,"spd":126,"spe":65},"moves":["petalblizzard","waterpulse","coil","accelerock"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Scolipede, L50, F","condition":"151/151","active":false,"stats":{"atk":137,"def":129,"spa":84,"spd":100,"spe":119},"moves":["guardsplit","meteorbeam"],"baseAbility":"swarm","item":"chopleberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar, L50, M","condition":"135/135","active":false,"stats":{"atk":89,"def":105,"spa":159,"spd":101,"spe":151},"moves":["powertrip","doubleteam","corrosivegas","earthpower"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: Kingambit","details":"Kingambit, L50, F","condition":"176/176","active":false,"stats":{"atk":155,"def":168,"spa":81,"spd":136,"spe":70},"moves":["skyattack"],"baseAbility":"supremeoverlord","item":"nevermeltice","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hatterene","details":"Hatterene, L50, F","condition":"136/136","active":true,"stats":{"atk":134,"def":136,"spa":144,"spd":123,"spe":53},"moves":["magicpowder","psychic"],"baseAbility":"magicbounce","item":"","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"192/192","active":true,"stats":{"atk":109,"def":95,"spa":80,"spd":128,"spe":82},"moves":["healingwish","aquacutter"],"baseAbility":"regenerator","item":"audinite","pokeball":"pokeball","ability":"regenerator","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Ampharos, L50, F","condition":"175/175","active":false,"stats":{"atk":133,"def":107,"spa":142,"spd":113,"spe":73},"moves":["mistyterrain","shadowpunch"],"baseAbility":"plus","item":"ampharosite","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false},{"ident":"p2: Jolteon","details":"Jolteon, L50, F","condition":"149/149","active":false,"stats":{"atk":85,"def":88,"spa":135,"spd":150,"spe":154},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"157/157","active":false,"stats":{"atk":106,"def":114,"spa":137,"spd":127,"spe":116},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Noivern","details":"Noivern, L50, M","condition":"190/190","active":false,"stats":{"atk":96,"def":103,"spa":138,"spd":101,"spe":147},"moves":["magicroom","playrough","seismictoss"],"baseAbility":"telepathy","item":"","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Guard Split","id":"guardsplit","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Meteor Beam","id":"meteorbeam","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Sky Attack","id":"skyattack","pp":8,"maxpp":8,"target":"any","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Scolipede, L50, F","condition":"151/151","active":true,"stats":{"atk":137,"def":129,"spa":84,"spd":100,"spe":119},"moves":["guardsplit","meteorbeam"],"baseAbility":"swarm","item":"chopleberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p1: Kingambit","details":"Kingambit, L50, F","condition":"176/176","active":true,"stats":{"atk":155,"def":168,"spa":81,"spd":136,"spe":70},"moves":["skyattack"],"baseAbility":"supremeoverlord","item":"nevermeltice","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Kommo-o, L50, F","condition":"160/160","active":false,"stats":{"atk":133,"def":171,"spa":135,"spd":133,"spe":108},"moves":["axekick"],"baseAbility":"overcoat","item":"poisonbarb","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar, L50, M","condition":"135/135","active":false,"stats":{"atk":89,"def":105,"spa":159,"spd":101,"spe":151},"moves":["powertrip","doubleteam","corrosivegas","earthpower"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Jolteon","details":"Jolteon, L50, F","condition":"149/149","active":true,"stats":{"atk":85,"def":88,"spa":135,"spd":150,"spe":154},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"157/157","active":true,"stats":{"atk":106,"def":114,"spa":137,"spd":127,"spe":116},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Hatterene","details":"Hatterene, L50, F","condition":"136/136","active":false,"stats":{"atk":134,"def":136,"spa":144,"spd":123,"spe":53},"moves":["magicpowder","psychic"],"baseAbility":"magicbounce","item":"","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Ampharos, L50, F","condition":"175/175","active":false,"stats":{"atk":133,"def":107,"spa":142,"spd":113,"spe":73},"moves":["mistyterrain","shadowpunch"],"baseAbility":"plus","item":"ampharosite","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Scolipede, L50, F","condition":"151/151","active":true,"stats":{"atk":137,"def":129,"spa":84,"spd":100,"spe":119},"moves":["guardsplit","meteorbeam"],"baseAbility":"swarm","item":"chopleberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar, L50, M","condition":"0 fnt","active":true,"stats":{"atk":89,"def":105,"spa":159,"spd":101,"spe":151},"moves":["powertrip","doubleteam","corrosivegas","earthpower"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Kommo-o, L50, F","condition":"160/160","active":false,"stats":{"atk":133,"def":171,"spa":135,"spd":133,"spe":108},"moves":["axekick"],"baseAbility":"overcoat","item":"poisonbarb","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false},{"ident":"p1: Kingambit","details":"Kingambit, L50, F","condition":"176/176","active":false,"stats":{"atk":155,"def":168,"spa":81,"spd":136,"spe":70},"moves":["skyattack"],"baseAbility":"supremeoverlord","item":"nevermeltice","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Jolteon","details":"Jolteon, L50, F","condition":"149/149","active":true,"stats":{"atk":85,"def":88,"spa":135,"spd":150,"spe":154},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"157/157","active":true,"stats":{"atk":106,"def":114,"spa":137,"spd":127,"spe":116},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Hatterene","details":"Hatterene, L50, F","condition":"136/136","active":false,"stats":{"atk":134,"def":136,"spa":144,"spd":123,"spe":53},"moves":["magicpowder","psychic"],"baseAbility":"magicbounce","item":"","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Ampharos, L50, F","condition":"175/175","active":false,"stats":{"atk":133,"def":107,"spa":142,"spd":113,"spe":73},"moves":["mistyterrain","shadowpunch"],"baseAbility":"plus","item":"ampharosite","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Meteor Beam","id":"meteorbeam"}],"trapped":true},{"moves":[{"move":"Sky Attack","id":"skyattack","pp":8,"maxpp":8,"target":"any","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Scolipede, L50, F","condition":"151/151","active":true,"stats":{"atk":137,"def":129,"spa":84,"spd":100,"spe":119},"moves":["guardsplit","meteorbeam"],"baseAbility":"swarm","item":"chopleberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p1: Kingambit","details":"Kingambit, L50, F","condition":"176/176","active":true,"stats":{"atk":155,"def":168,"spa":81,"spd":136,"spe":70},"moves":["skyattack"],"baseAbility":"supremeoverlord","item":"nevermeltice","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Kommo-o, L50, F","condition":"160/160","active":false,"stats":{"atk":133,"def":171,"spa":135,"spd":133,"spe":108},"moves":["axekick"],"baseAbility":"overcoat","item":"poisonbarb","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar, L50, M","condition":"0 fnt","active":false,"stats":{"atk":89,"def":105,"spa":159,"spd":101,"spe":151},"moves":["powertrip","doubleteam","corrosivegas","earthpower"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Jolteon","details":"Jolteon, L50, F","condition":"149/149","active":true,"stats":{"atk":85,"def":88,"spa":135,"spd":150,"spe":154},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"157/157","active":true,"stats":{"atk":106,"def":114,"spa":137,"spd":127,"spe":116},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Hatterene","details":"Hatterene, L50, F","condition":"136/136","active":false,"stats":{"atk":134,"def":136,"spa":144,"spd":123,"spe":53},"moves":["magicpowder","psychic"],"baseAbility":"magicbounce","item":"","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Ampharos, L50, F","condition":"175/175","active":false,"stats":{"atk":133,"def":107,"spa":142,"spd":113,"spe":73},"moves":["mistyterrain","shadowpunch"],"baseAbility":"plus","item":"ampharosite","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Guard Split","id":"guardsplit","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Meteor Beam","id":"meteorbeam","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Sky Attack","id":"skyattack"}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Scolipede, L50, F","condition":"151/151","active":true,"stats":{"atk":137,"def":129,"spa":84,"spd":100,"spe":119},"moves":["guardsplit","meteorbeam"],"baseAbility":"swarm","item":"chopleberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p1: Kingambit","details":"Kingambit, L50, F","condition":"176/176","active":true,"stats":{"atk":155,"def":168,"spa":81,"spd":136,"spe":70},"moves":["skyattack"],"baseAbility":"supremeoverlord","item":"nevermeltice","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Kommo-o, L50, F","condition":"160/160","active":false,"stats":{"atk":133,"def":171,"spa":135,"spd":133,"spe":108},"moves":["axekick"],"baseAbility":"overcoat","item":"poisonbarb","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar, L50, M","condition":"0 fnt","active":false,"stats":{"atk":89,"def":105,"spa":159,"spd":101,"spe":151},"moves":["powertrip","doubleteam","corrosivegas","earthpower"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Jolteon","details":"Jolteon, L50, F","condition":"149/149","active":true,"stats":{"atk":85,"def":88,"spa":135,"spd":150,"spe":154},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"157/157","active":true,"stats":{"atk":106,"def":114,"spa":137,"spd":127,"spe":116},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Hatterene","details":"Hatterene, L50, F","condition":"136/136","active":false,"stats":{"atk":134,"def":136,"spa":144,"spd":123,"spe":53},"moves":["magicpowder","psychic"],"baseAbility":"magicbounce","item":"","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Ampharos, L50, F","condition":"175/175","active":false,"stats":{"atk":133,"def":107,"spa":142,"spd":113,"spe":73},"moves":["mistyterrain","shadowpunch"],"baseAbility":"plus","item":"ampharosite","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Scolipede, L50, F","condition":"0 fnt","active":true,"stats":{"atk":137,"def":129,"spa":84,"spd":100,"spe":119},"moves":["guardsplit","meteorbeam"],"baseAbility":"swarm","item":"chopleberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p1: Kingambit","details":"Kingambit, L50, F","condition":"14/176","active":true,"stats":{"atk":155,"def":168,"spa":81,"spd":136,"spe":70},"moves":["skyattack"],"baseAbility":"supremeoverlord","item":"nevermeltice","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Kommo-o, L50, F","condition":"160/160","active":false,"stats":{"atk":133,"def":171,"spa":135,"spd":133,"spe":108},"moves":["axekick"],"baseAbility":"overcoat","item":"poisonbarb","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar, L50, M","condition":"0 fnt","active":false,"stats":{"atk":89,"def":105,"spa":159,"spd":101,"spe":151},"moves":["powertrip","doubleteam","corrosivegas","earthpower"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Jolteon","details":"Jolteon, L50, F","condition":"149/149","active":true,"stats":{"atk":85,"def":88,"spa":135,"spd":150,"spe":154},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"157/157","active":true,"stats":{"atk":106,"def":114,"spa":137,"spd":127,"spe":116},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Hatterene","details":"Hatterene, L50, F","condition":"136/136","active":false,"stats":{"atk":134,"def":136,"spa":144,"spd":123,"spe":53},"moves":["magicpowder","psychic"],"baseAbility":"magicbounce","item":"","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Ampharos, L50, F","condition":"175/175","active":false,"stats":{"atk":133,"def":107,"spa":142,"spd":113,"spe":73},"moves":["mistyterrain","shadowpunch"],"baseAbility":"plus","item":"ampharosite","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Axe Kick","id":"axekick","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Sky Attack","id":"skyattack","pp":7,"maxpp":8,"target":"any","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Kommo-o, L50, F","condition":"160/160","active":true,"stats":{"atk":133,"def":171,"spa":135,"spd":133,"spe":108},"moves":["axekick"],"baseAbility":"overcoat","item":"poisonbarb","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false},{"ident":"p1: Kingambit","details":"Kingambit, L50, F","condition":"14/176","active":true,"stats":{"atk":155,"def":168,"spa":81,"spd":136,"spe":70},"moves":["skyattack"],"baseAbility":"supremeoverlord","item":"nevermeltice","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Scolipede, L50, F","condition":"0 fnt","active":false,"stats":{"atk":137,"def":129,"spa":84,"spd":100,"spe":119},"moves":["guardsplit","meteorbeam"],"baseAbility":"swarm","item":"chopleberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar, L50, M","condition":"0 fnt","active":false,"stats":{"atk":89,"def":105,"spa":159,"spd":101,"spe":151},"moves":["powertrip","doubleteam","corrosivegas","earthpower"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Jolteon","details":"Jolteon, L50, F","condition":"149/149","active":true,"stats":{"atk":85,"def":88,"spa":135,"spd":150,"spe":154},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"157/157","active":true,"stats":{"atk":106,"def":114,"spa":137,"spd":127,"spe":116},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Hatterene","details":"Hatterene, L50, F","condition":"136/136","active":false,"stats":{"atk":134,"def":136,"spa":144,"spd":123,"spe":53},"moves":["magicpowder","psychic"],"baseAbility":"magicbounce","item":"","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Ampharos, L50, F","condition":"175/175","active":false,"stats":{"atk":133,"def":107,"spa":142,"spd":113,"spe":73},"moves":["mistyterrain","shadowpunch"],"baseAbility":"plus","item":"ampharosite","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Axe Kick","id":"axekick","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Sky Attack","id":"skyattack"}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Kommo-o, L50, F","condition":"80/160","active":true,"stats":{"atk":133,"def":171,"spa":135,"spd":133,"spe":108},"moves":["axekick"],"baseAbility":"overcoat","item":"poisonbarb","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false},{"ident":"p1: Kingambit","details":"Kingambit, L50, F","condition":"14/176","active":true,"stats":{"atk":155,"def":168,"spa":81,"spd":136,"spe":70},"moves":["skyattack"],"baseAbility":"supremeoverlord","item":"nevermeltice","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Scolipede, L50, F","condition":"0 fnt","active":false,"stats":{"atk":137,"def":129,"spa":84,"spd":100,"spe":119},"moves":["guardsplit","meteorbeam"],"baseAbility":"swarm","item":"chopleberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar, L50, M","condition":"0 fnt","active":false,"stats":{"atk":89,"def":105,"spa":159,"spd":101,"spe":151},"moves":["powertrip","doubleteam","corrosivegas","earthpower"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":4,"maxpp":8,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":7,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Jolteon","details":"Jolteon, L50, F","condition":"149/149","active":true,"stats":{"atk":85,"def":88,"spa":135,"spd":150,"spe":154},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"157/157","active":true,"stats":{"atk":106,"def":114,"spa":137,"spd":127,"spe":116},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Hatterene","details":"Hatterene, L50, F","condition":"136/136","active":false,"stats":{"atk":134,"def":136,"spa":144,"spd":123,"spe":53},"moves":["magicpowder","psychic"],"baseAbility":"magicbounce","item":"","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Ampharos, L50, F","condition":"175/175","active":false,"stats":{"atk":133,"def":107,"spa":142,"spd":113,"spe":73},"moves":["mistyterrain","shadowpunch"],"baseAbility":"plus","item":"ampharosite","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Axe Kick","id":"axekick","pp":10,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Sky Attack","id":"skyattack","pp":6,"maxpp":8,"target":"any","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Kommo-o, L50, F","condition":"80/160","active":true,"stats":{"atk":133,"def":171,"spa":135,"spd":133,"spe":108},"moves":["axekick"],"baseAbility":"overcoat","item":"poisonbarb","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false},{"ident":"p1: Kingambit","details":"Kingambit, L50, F","condition":"0 fnt","active":true,"stats":{"atk":155,"def":168,"spa":81,"spd":136,"spe":70},"moves":["skyattack"],"baseAbility":"supremeoverlord","item":"nevermeltice","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Scolipede, L50, F","condition":"0 fnt","active":false,"stats":{"atk":137,"def":129,"spa":84,"spd":100,"spe":119},"moves":["guardsplit","meteorbeam"],"baseAbility":"swarm","item":"chopleberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar, L50, M","condition":"0 fnt","active":false,"stats":{"atk":89,"def":105,"spa":159,"spd":101,"spe":151},"moves":["powertrip","doubleteam","corrosivegas","earthpower"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":3,"maxpp":8,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":7,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Jolteon","details":"Jolteon, L50, F","condition":"149/149","active":true,"stats":{"atk":85,"def":88,"spa":135,"spd":150,"spe":154},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"157/157","active":true,"stats":{"atk":106,"def":114,"spa":137,"spd":127,"spe":116},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Hatterene","details":"Hatterene, L50, F","condition":"136/136","active":false,"stats":{"atk":134,"def":136,"spa":144,"spd":123,"spe":53},"moves":["magicpowder","psychic"],"baseAbility":"magicbounce","item":"","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Ampharos, L50, F","condition":"175/175","active":false,"stats":{"atk":133,"def":107,"spa":142,"spd":113,"spe":73},"moves":["mistyterrain","shadowpunch"],"baseAbility":"plus","item":"ampharosite","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Axe Kick","id":"axekick","pp":9,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Sky Attack","id":"skyattack","pp":6,"maxpp":8,"target":"any","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Kommo-o, L50, F","condition":"80/160","active":true,"stats":{"atk":133,"def":171,"spa":135,"spd":133,"spe":108},"moves":["axekick"],"baseAbility":"overcoat","item":"poisonbarb","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false},{"ident":"p1: Kingambit","details":"Kingambit, L50, F","condition":"0 fnt","active":true,"stats":{"atk":155,"def":168,"spa":81,"spd":136,"spe":70},"moves":["skyattack"],"baseAbility":"supremeoverlord","item":"nevermeltice","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Scolipede, L50, F","condition":"0 fnt","active":false,"stats":{"atk":137,"def":129,"spa":84,"spd":100,"spe":119},"moves":["guardsplit","meteorbeam"],"baseAbility":"swarm","item":"chopleberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar, L50, M","condition":"0 fnt","active":false,"stats":{"atk":89,"def":105,"spa":159,"spd":101,"spe":151},"moves":["powertrip","doubleteam","corrosivegas","earthpower"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Misty Terrain","id":"mistyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Shadow Punch","id":"shadowpunch","pp":20,"maxpp":20,"target":"normal","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Magic Powder","id":"magicpowder","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Psychic","id":"psychic","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sparky","details":"Ampharos, L50, F","condition":"175/175","active":true,"stats":{"atk":133,"def":107,"spa":142,"spd":113,"spe":73},"moves":["mistyterrain","shadowpunch"],"baseAbility":"plus","item":"ampharosite","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false},{"ident":"p2: Hatterene","details":"Hatterene, L50, F","condition":"119/136","active":true,"stats":{"atk":134,"def":136,"spa":144,"spd":123,"spe":53},"moves":["magicpowder","psychic"],"baseAbility":"magicbounce","item":"","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"157/157","active":false,"stats":{"atk":106,"def":114,"spa":137,"spd":127,"spe":116},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Jolteon","details":"Jolteon, L50, F","condition":"149/149","active":false,"stats":{"atk":85,"def":88,"spa":135,"spd":150,"spe":154},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Axe Kick","id":"axekick","pp":8,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Sky Attack","id":"skyattack","pp":6,"maxpp":8,"target":"any","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Kommo-o, L50, F","condition":"80/160","active":true,"stats":{"atk":133,"def":171,"spa":135,"spd":133,"spe":108},"moves":["axekick"],"baseAbility":"overcoat","item":"poisonbarb","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false},{"ident":"p1: Kingambit","details":"Kingambit, L50, F","condition":"0 fnt","active":true,"stats":{"atk":155,"def":168,"spa":81,"spd":136,"spe":70},"moves":["skyattack"],"baseAbility":"supremeoverlord","item":"nevermeltice","pokeball":"pokeball","ability":"supremeoverlord","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Scolipede, L50, F","condition":"0 fnt","active":false,"stats":{"atk":137,"def":129,"spa":84,"spd":100,"spe":119},"moves":["guardsplit","meteorbeam"],"baseAbility":"swarm","item":"chopleberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar, L50, M","condition":"0 fnt","active":false,"stats":{"atk":89,"def":105,"spa":159,"spd":101,"spe":151},"moves":["powertrip","doubleteam","corrosivegas","earthpower"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Misty Terrain","id":"mistyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Shadow Punch","id":"shadowpunch","pp":20,"maxpp":20,"target":"normal","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Double Shock","id":"doubleshock","pp":3,"maxpp":8,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sparky","details":"Ampharos, L50, F","condition":"70/175","active":true,"stats":{"atk":133,"def":107,"spa":142,"spd":113,"spe":73},"moves":["mistyterrain","shadowpunch"],"baseAbility":"plus","item":"ampharosite","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false},{"ident":"p2: Jolteon","details":"Jolteon, L50, F","condition":"149/149","active":true,"stats":{"atk":85,"def":88,"spa":135,"spd":150,"spe":154},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"157/157","active":false,"stats":{"atk":106,"def":114,"spa":137,"spd":127,"spe":116},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Hatterene","details":"Hatterene, L50, F","condition":"119/136","active":false,"stats":{"atk":134,"def":136,"spa":144,"spd":123,"spe":53},"moves":["magicpowder","psychic"],"baseAbility":"magicbounce","item":"","pokeball":"pokeball","ability":"magicbounce","commanding":false,"reviving":false}]}}

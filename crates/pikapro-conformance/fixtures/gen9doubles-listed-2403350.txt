@@ -1,0 +1,555 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed ff2a ed86 78ab fc01
+genders drawn
+validate gen9anythinggoes@@@Species Clause
+team p1
+X (Rillaboom) (M) @ Assault Vest
+Ability: Grassy Surge
+Tera Type: Steel
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- Fake Out
+- Grassy Glide
+- High Horsepower
+- Wood Hammer
+
+Mandibuzz (F) @ Sitrus Berry
+Ability: Overcoat
+Tera Type: Steel
+EVs: 252 HP / 128 Def / 128 SpD
+Bold Nature
+IVs: 0 Atk
+- Tailwind
+- Snarl
+- Toxic
+- Foul Play
+
+Pikachu (Infernape) (M) @ Focus Sash
+Ability: Blaze
+Tera Type: Dark
+EVs: 4 HP / 252 Atk / 252 Spe
+Hasty Nature
+- Fake Out
+- Knock Off
+- Overheat
+- Close Combat
+
+Palafin-Hero (M) @ Choice Band
+Ability: Zero to Hero
+Tera Type: Water
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Wave Crash
+- Close Combat
+- Jet Punch
+- Flip Turn
+
+Big Tony's Pal (Noivern) (F) @ Sitrus Berry
+Ability: Frisk
+Tera Type: Steel
+EVs: 252 HP / 4 Def / 252 SpA
+Modest Nature
+IVs: 0 Atk
+- Draco Meteor
+- Protect
+- Hurricane
+- Tailwind
+
+Electrode @ Sitrus Berry
+Ability: Aftermath
+Tera Type: Flying
+EVs: 252 HP / 128 Def / 128 SpD
+Bold Nature
+IVs: 0 Atk
+- Foul Play
+- Electroweb
+- Thunderbolt
+- Taunt
+end
+team p2
+Chomp (Arceus-Ghost) @ Spooky Plate
+Ability: Multitype
+Tera Type: Fighting
+EVs: 252 HP / 4 Def / 252 SpA
+Modest Nature
+IVs: 0 Atk
+- Judgment
+- Recover
+- Focus Blast
+- Calm Mind
+
+Sandy Shocks @ Sitrus Berry
+Ability: Protosynthesis
+Tera Type: Grass
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
+IVs: 0 Atk
+- Electroweb
+- Stealth Rock
+- Thunderbolt
+- Earth Power
+
+Nibbles (Bellossom) (F) @ Sitrus Berry
+Ability: Healer
+Tera Type: Water
+EVs: 252 HP / 4 Def / 252 SpA
+Modest Nature
+IVs: 0 Atk
+- Giga Drain
+- Strength Sap
+- Quiver Dance
+- Baton Pass
+
+Mr. Bubbles (Galvantula) (F) @ Sitrus Berry
+Ability: Compound Eyes
+Tera Type: Electric
+EVs: 252 HP / 128 Def / 128 SpD
+Bold Nature
+IVs: 0 Atk
+- Sticky Web
+- Bug Buzz
+- Protect
+- Thunder
+
+Big Tony's Pal (Alcremie-Rainbow-Swirl) (F) @ Sitrus Berry
+Ability: Aroma Veil
+Tera Type: Steel
+EVs: 252 HP / 128 Def / 128 SpD
+Bold Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Decorate
+- Encore
+- Protect
+
+Carbink @ Leftovers
+Ability: Clear Body
+Tera Type: Fighting
+EVs: 252 HP / 4 Def / 252 SpA
+Quiet Nature
+IVs: 0 Atk / 0 Spe
+- Body Press
+- Moonblast
+- Iron Defense
+- Trick Room
+end
+choice p1 move Fake Out +2,move toxic +1
+choice p2 move 2 terastallize, move 4 1
+choice p1 switch electrode, move Foul Play 2
+choice p2 move 4, switch 3
+choice p1 move 1 1, move 3 -1 terastallize
+choice p2 default
+choice p1 switch rillaboom, pass
+choice p2 move Judgment 2 ,  switch sandy shocks
+choice p1 move Grassy Glide +2 ,  move Snarl
+choice p1 pass, switch 4
+choice p2 move 1 -2, move 4 1
+choice p1 move 3 1, move 4 -1
+choice p1 pass, switch 5
+choice p2 skip, switch Mr. Bubbles
+choice p1 move 2 2, move 2
+choice p2 default
+choice p1 move fakeout -2 ,  move 4
+choice p2 move 1 1, switch 6
+choice p1 switch 5, pass
+choice p2 move 1 2, move 4
+choice p1 move flipturn 2, move 1 2
+choice p1 switch Pikachu
+choice p1 skip, switch 3
+choice p2 move 1 1, move 4
+choice p1 move 3 2, move 1 -1
+choice p2 move 3 2, move 1 2
+choice p1 skip ,  move Wave Crash +2
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: X|Rillaboom, M|404/404
+expect |switch|p1a: X|Rillaboom, M|404/404
+expect |split|p1
+expect |switch|p1b: Mandibuzz|Mandibuzz, F|424/424
+expect |switch|p1b: Mandibuzz|Mandibuzz, F|424/424
+expect |split|p2
+expect |switch|p2a: Chomp|Arceus-Ghost|444/444
+expect |switch|p2a: Chomp|Arceus-Ghost|444/444
+expect |split|p2
+expect |switch|p2b: Sandy Shocks|Sandy Shocks|312/312
+expect |switch|p2b: Sandy Shocks|Sandy Shocks|312/312
+expect |-fieldstart|move: Grassy Terrain|[from] ability: Grassy Surge|[of] p1a: X
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p2a: Chomp|Fighting
+expect |move|p1a: X|Fake Out|p2b: Sandy Shocks
+expect |rng|100|85
+expect |rng|24|6
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Sandy Shocks|263/312
+expect |-damage|p2b: Sandy Shocks|263/312
+expect |rng|100|43
+expect |cant|p2b: Sandy Shocks|flinch
+expect |move|p2a: Chomp|Recover||[still]
+expect |-fail|p2a: Chomp|heal
+expect |move|p1b: Mandibuzz|Toxic|p2a: Chomp
+expect |rng|100|70
+expect |-status|p2a: Chomp|tox
+expect |
+expect |split|p2
+expect |-heal|p2b: Sandy Shocks|282/312|[from] Grassy Terrain
+expect |-heal|p2b: Sandy Shocks|282/312|[from] Grassy Terrain
+expect |split|p2
+expect |-damage|p2a: Chomp|417/444 tox|[from] psn
+expect |-damage|p2a: Chomp|417/444 tox|[from] psn
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |-end|p2b: Sandy Shocks|Protosynthesis|[silent]
+expect |split|p2
+expect |switch|p2b: Nibbles|Bellossom, F|354/354
+expect |switch|p2b: Nibbles|Bellossom, F|354/354
+expect |split|p1
+expect |switch|p1a: Electrode|Electrode|324/324
+expect |switch|p1a: Electrode|Electrode|324/324
+expect |move|p2a: Chomp|Calm Mind|p2a: Chomp
+expect |-boost|p2a: Chomp|spa|1
+expect |-boost|p2a: Chomp|spd|1
+expect |move|p1b: Mandibuzz|Foul Play|p2b: Nibbles
+expect |rng|100|72
+expect |rng|24|6
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Nibbles|276/354
+expect |-damage|p2b: Nibbles|276/354
+expect |
+expect |split|p2
+expect |-heal|p2a: Chomp|444/444 tox|[from] Grassy Terrain
+expect |-heal|p2a: Chomp|444/444 tox|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2b: Nibbles|298/354|[from] Grassy Terrain
+expect |-heal|p2b: Nibbles|298/354|[from] Grassy Terrain
+expect |rng|10|2
+expect |-activate|p2b: Nibbles|ability: Healer
+expect |-curestatus|p2a: Chomp|tox|[msg]
+expect |upkeep
+expect |turn|3
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |-terastallize|p1b: Mandibuzz|Steel
+expect |move|p1a: Electrode|Foul Play|p2a: Chomp
+expect |rng|100|17
+expect |rng|24|12
+expect |rng|16|10
+expect |-resisted|p2a: Chomp
+expect |split|p2
+expect |-damage|p2a: Chomp|415/444
+expect |-damage|p2a: Chomp|415/444
+expect |move|p2a: Chomp|Judgment|p1a: Electrode
+expect |rng|100|17
+expect |rng|24|1
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Electrode|0 fnt
+expect |-damage|p1a: Electrode|0 fnt
+expect |faint|p1a: Electrode
+expect |rng|1|0
+expect |move|p1b: Mandibuzz|Toxic|p1: Electrode|[notarget]
+expect |-fail|p1b: Mandibuzz
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Nibbles|Giga Drain|p1b: Mandibuzz
+expect |rng|100|44
+expect |rng|24|17
+expect |rng|16|15
+expect |-resisted|p1b: Mandibuzz
+expect |split|p1
+expect |-damage|p1b: Mandibuzz|361/424
+expect |-damage|p1b: Mandibuzz|361/424
+expect |split|p2
+expect |-heal|p2b: Nibbles|330/354|[from] drain|[of] p1b: Mandibuzz
+expect |-heal|p2b: Nibbles|330/354|[from] drain|[of] p1b: Mandibuzz
+expect |
+expect |split|p2
+expect |-heal|p2a: Chomp|442/444|[from] Grassy Terrain
+expect |-heal|p2a: Chomp|442/444|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1b: Mandibuzz|387/424|[from] Grassy Terrain
+expect |-heal|p1b: Mandibuzz|387/424|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2b: Nibbles|352/354|[from] Grassy Terrain
+expect |-heal|p2b: Nibbles|352/354|[from] Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: X|Rillaboom, M|404/404
+expect |switch|p1a: X|Rillaboom, M|404/404
+expect |turn|4
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Sandy Shocks|Sandy Shocks|282/312
+expect |switch|p2b: Sandy Shocks|Sandy Shocks|282/312
+expect |rng|2|0
+expect |move|p1a: X|Grassy Glide|p2b: Sandy Shocks
+expect |rng|100|44
+expect |rng|24|6
+expect |rng|16|10
+expect |-supereffective|p2b: Sandy Shocks
+expect |split|p2
+expect |-damage|p2b: Sandy Shocks|10/312
+expect |-damage|p2b: Sandy Shocks|10/312
+expect |-enditem|p2b: Sandy Shocks|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2b: Sandy Shocks|88/312|[from] item: Sitrus Berry
+expect |-heal|p2b: Sandy Shocks|88/312|[from] item: Sitrus Berry
+expect |rng|2|1
+expect |move|p2a: Chomp|Judgment|p1b: Mandibuzz
+expect |rng|100|60
+expect |rng|24|0
+expect |rng|16|13
+expect |-crit|p1b: Mandibuzz
+expect |split|p1
+expect |-damage|p1b: Mandibuzz|0 fnt
+expect |-damage|p1b: Mandibuzz|0 fnt
+expect |faint|p1b: Mandibuzz
+expect |rng|2|0
+expect |
+expect |split|p2
+expect |-heal|p2b: Sandy Shocks|107/312|[from] Grassy Terrain
+expect |-heal|p2b: Sandy Shocks|107/312|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2a: Chomp|444/444|[from] Grassy Terrain
+expect |-heal|p2a: Chomp|444/444|[from] Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Palafin|Palafin, M|342/342
+expect |switch|p1b: Palafin|Palafin, M|342/342
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2b: Sandy Shocks|Earth Power|p1a: X
+expect |rng|100|8
+expect |rng|24|13
+expect |rng|16|13
+expect |-resisted|p1a: X
+expect |split|p1
+expect |-damage|p1a: X|340/404
+expect |-damage|p1a: X|340/404
+expect |rng|100|32
+expect |move|p1b: Palafin|Flip Turn|p1a: X
+expect |rng|100|22
+expect |rng|24|13
+expect |rng|16|6
+expect |-resisted|p1a: X
+expect |split|p1
+expect |-damage|p1a: X|275/404
+expect |-damage|p1a: X|275/404
+expect |
+expect |t:|
+expect |detailschange|p1b: Palafin|Palafin-Hero, M
+expect |split|p1
+expect |switch|p1b: Big Tony's Pal|Noivern, F|374/374|[from] Flip Turn
+expect |switch|p1b: Big Tony's Pal|Noivern, F|374/374|[from] Flip Turn
+expect |-item|p2a: Chomp|Spooky Plate|[from] ability: Frisk|[of] p1b: Big Tony's Pal
+expect |move|p2a: Chomp|Judgment|p2b: Sandy Shocks
+expect |rng|100|49
+expect |rng|24|15
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Sandy Shocks|0 fnt
+expect |-damage|p2b: Sandy Shocks|0 fnt
+expect |faint|p2b: Sandy Shocks
+expect |-end|p2b: Sandy Shocks|Protosynthesis|[silent]
+expect |move|p1a: X|High Horsepower|p2a: Chomp
+expect |rng|100|23
+expect |rng|24|19
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Chomp|336/444
+expect |-damage|p2a: Chomp|336/444
+expect |
+expect |split|p2
+expect |-heal|p2a: Chomp|363/444|[from] Grassy Terrain
+expect |-heal|p2a: Chomp|363/444|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1a: X|300/404|[from] Grassy Terrain
+expect |-heal|p1a: X|300/404|[from] Grassy Terrain
+expect |-fieldend|move: Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Mr. Bubbles|Galvantula, F|344/344
+expect |switch|p2b: Mr. Bubbles|Galvantula, F|344/344
+expect |turn|6
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1b: Big Tony's Pal|Protect|p1b: Big Tony's Pal
+expect |-singleturn|p1b: Big Tony's Pal|Protect
+expect |rng|2|1
+expect |move|p2a: Chomp|Judgment|p1b: Big Tony's Pal
+expect |-activate|p1b: Big Tony's Pal|move: Protect
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Mr. Bubbles|Sticky Web|p1b: Big Tony's Pal
+expect |-sidestart|p1: p1|move: Sticky Web
+expect |move|p1a: X|Grassy Glide|p2b: Mr. Bubbles
+expect |rng|100|77
+expect |rng|24|21
+expect |rng|16|0
+expect |-resisted|p2b: Mr. Bubbles
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|279/344
+expect |-damage|p2b: Mr. Bubbles|279/344
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Carbink|Carbink|304/304
+expect |switch|p2b: Carbink|Carbink|304/304
+expect |move|p1a: X|Fake Out||[still]
+expect |-hint|Fake Out only works on your first turn out.
+expect |-fail|p1a: X
+expect |move|p1b: Big Tony's Pal|Tailwind|p1b: Big Tony's Pal
+expect |-sidestart|p1: p1|move: Tailwind
+expect |move|p2a: Chomp|Judgment|p1a: X
+expect |rng|100|49
+expect |rng|24|21
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: X|0 fnt
+expect |-damage|p1a: X|0 fnt
+expect |faint|p1a: X
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Palafin|Palafin-Hero, M|342/342
+expect |switch|p1a: Palafin|Palafin-Hero, M|342/342
+expect |-activate|p1a: Palafin|move: Sticky Web
+expect |-unboost|p1a: Palafin|spe|1
+expect |-activate|p1a: Palafin|ability: Zero to Hero
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1b: Big Tony's Pal|Draco Meteor|p2b: Carbink
+expect |-immune|p2b: Carbink
+expect |move|p1a: Palafin|Flip Turn|p2b: Carbink
+expect |rng|100|49
+expect |rng|24|18
+expect |rng|16|15
+expect |-supereffective|p2b: Carbink
+expect |split|p2
+expect |-damage|p2b: Carbink|38/304
+expect |-damage|p2b: Carbink|38/304
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Infernape, M|294/294|[from] Flip Turn
+expect |switch|p1a: Pikachu|Infernape, M|294/294|[from] Flip Turn
+expect |-activate|p1a: Pikachu|move: Sticky Web
+expect |-unboost|p1a: Pikachu|spe|1
+expect |move|p2a: Chomp|Judgment|p1b: Big Tony's Pal
+expect |rng|100|80
+expect |rng|24|6
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|0 fnt
+expect |-damage|p1b: Big Tony's Pal|0 fnt
+expect |faint|p1b: Big Tony's Pal
+expect |move|p2b: Carbink|Trick Room|p2b: Carbink
+expect |-fieldstart|move: Trick Room|[of] p2b: Carbink
+expect |
+expect |split|p2
+expect |-heal|p2b: Carbink|57/304|[from] item: Leftovers
+expect |-heal|p2b: Carbink|57/304|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Palafin|Palafin-Hero, M|342/342
+expect |switch|p1b: Palafin|Palafin-Hero, M|342/342
+expect |-activate|p1b: Palafin|move: Sticky Web
+expect |-unboost|p1b: Palafin|spe|1
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p2a: Chomp|Judgment|p1a: Pikachu
+expect |rng|100|58
+expect |rng|24|14
+expect |rng|16|4
+expect |-enditem|p1a: Pikachu|Focus Sash
+expect |split|p1
+expect |-damage|p1a: Pikachu|1/294
+expect |-damage|p1a: Pikachu|1/294
+expect |move|p1b: Palafin|Wave Crash|p1a: Pikachu
+expect |rng|100|65
+expect |rng|24|6
+expect |rng|16|8
+expect |-supereffective|p1a: Pikachu
+expect |split|p1
+expect |-damage|p1a: Pikachu|0 fnt
+expect |-damage|p1a: Pikachu|0 fnt
+expect |faint|p1a: Pikachu
+expect |split|p1
+expect |-damage|p1b: Palafin|341/342|[from] Recoil
+expect |-damage|p1b: Palafin|341/342|[from] Recoil
+expect |move|p2b: Carbink|Trick Room|p2b: Carbink
+expect |-fieldend|move: Trick Room
+expect |
+expect |split|p2
+expect |-heal|p2b: Carbink|76/304|[from] item: Leftovers
+expect |-heal|p2b: Carbink|76/304|[from] item: Leftovers
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1b: Palafin|Wave Crash|p2b: Carbink
+expect |rng|100|95
+expect |rng|24|12
+expect |rng|16|1
+expect |-supereffective|p2b: Carbink
+expect |split|p2
+expect |-damage|p2b: Carbink|0 fnt
+expect |-damage|p2b: Carbink|0 fnt
+expect |faint|p2b: Carbink
+expect |split|p1
+expect |-damage|p1b: Palafin|316/342|[from] Recoil
+expect |-damage|p1b: Palafin|316/342|[from] Recoil
+expect |move|p2a: Chomp|Focus Blast|p1b: Palafin
+expect |rng|100|22
+expect |rng|24|11
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Palafin|0 fnt
+expect |-damage|p1b: Palafin|0 fnt
+expect |rng|100|55
+expect |faint|p1b: Palafin
+expect |
+expect |win|p2

@@ -1,0 +1,739 @@
+# gen9vgc-gen5-2121000-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@write
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,a4fdd6c3f7e624ee","rated":"Tournament battle"}
+@write
+>player p1 {"name":"Alice","team":"Lunala||AssaultVest|ShadowShield|FlareBlitz|Serious|166,50,75,9,62,147||||50|,,,,,Fairy]Zoë|ChienPao|AssaultVest|SwordofRuin|NightSlash,PowerSplit,Outrage|Lax|148,138,7,5,187,23||||50|,,,,,Rock]Pikachu|IronBoulder||QuarkDrive|PrismaticLaser,MeteorBeam,Imprison,PsychicNoise|Timid|,215,186,11,18,22||||50|,,,,,Normal]Chomp|Horsea|FireStone|Sniper|FinalGambit,BrutalSwing,VoltSwitch|Hasty|68,233,78,25,32,40|M|||50|,,,,,Grass]Big Tony's Pal|MiniorGreen|ApicotBerry|ShieldsDown|Imprison|Bold|57,47,6,73,156,81||||50|,,,,,Electric]Virizion|||ShadowTag|Absorb,RoarofTime,CircleThrow|Impish|247,211,30,10,1,11||||50|,,,,,Stellar","avatar":"lucas"}
+@write
+>player p2 {"name":"Bob","team":"Tinkatuff||BeastBall|ShadowTag|DestinyBond,WildboltStorm,PowerSplit|Lonely|53,12,205,,22,214||||50|,,,,,Psychic]Vibrava|||Levitate|AquaJet,SpeedSwap|Adamant|83,102,57,195,12,61|F|||50|,,,,,Fairy]Heracross||MoonBall|Moxie|FollowMe,Torment,BurningBulwark,Feint|Impish|18,252,2,,12,226|M||S|50|,,,,,Fighting]Kleavor||JabocaBerry|ShadowTag|SweetKiss,PoisonFang,PrismaticLaser,Pluck|Modest|1,65,162,37,55,160|M|||50|,,,,,Electric]Passimian||FlameOrb|Defiant|HighHorsepower,TripleArrows,BulletPunch,CottonSpore|Serious|214,167,9,4,80,31||||50|,,,,,Normal]ThisNameIsFarTooLongToKeep|Skiddo||SapSipper|Safeguard|Quirky|217,38,6,12,163,67||||50|,,,,,Poison"}
+@write
+>p2 team 2314
+@write
+>p1 auto
+@write
+>p2 Move 1
+@write
+>p2 move speedswap -2 terastal
+@write
+>p2 move 2 2, move 4 2
+@write
+>p1 switch 3, move 1 1 terastallize
+@write
+>p1 move nightslash 1, move 4 +1
+@write
+>p2 move 1 2, move 2 1 terastallize
+@write
+>p1 move 2 -2, move 1 2
+@write
+>p1 move 1, move 1 -1
+@write
+>p2 move 2 -2, move 2 -1
+@write
+>p2 move aquajet +1 ,  move feint +2
+@write
+>p1 move 1 2, move 1 2
+@write
+>p1 switch 3, move Outrage 1 dynamax
+@write
+>forcetie
+@write
+>p1 move 1
+@message
+update
+|t:|
+|gametype|doubles
+@message
+update
+|player|p1|Alice|lucas|
+@message
+update
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|rated|Tournament battle
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Lunala, L50|
+|poke|p1|Chien-Pao, L50|
+|poke|p1|Iron Boulder, L50|
+|poke|p1|Horsea, L50, M|
+|poke|p1|Minior-Green, L50|
+|poke|p1|Virizion, L50|
+|poke|p2|Tinkatuff, L50, F|
+|poke|p2|Vibrava, L50, F|
+|poke|p2|Heracross, L50, M|
+|poke|p2|Kleavor, L50, M|
+|poke|p2|Passimian, L50, M|
+|poke|p2|Skiddo, L50, F|
+|teampreview|4
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Lunala","details":"Lunala, L50","condition":"233/233","active":true,"stats":{"atk":139,"def":118,"spa":158,"spd":135,"spe":135},"moves":["flareblitz"],"baseAbility":"shadowshield","item":"assaultvest","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Zoë","details":"Chien-Pao, L50","condition":"174/174","active":true,"stats":{"atk":157,"def":111,"spa":111,"spd":97,"spe":158},"moves":["nightslash","powersplit","outrage"],"baseAbility":"swordofruin","item":"assaultvest","pokeball":"pokeball","ability":"swordofruin","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Pikachu","details":"Iron Boulder, L50","condition":"165/165","active":false,"stats":{"atk":150,"def":123,"spa":89,"spd":130,"spe":161},"moves":["prismaticlaser","meteorbeam","imprison","psychicnoise"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Chomp","details":"Horsea, L50, M","condition":"114/114","active":false,"stats":{"atk":89,"def":90,"spa":93,"spd":49,"spe":93},"moves":["finalgambit","brutalswing","voltswitch"],"baseAbility":"sniper","item":"firestone","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Minior-Green, L50","condition":"142/142","active":false,"stats":{"atk":113,"def":89,"spa":129,"spd":100,"spe":150},"moves":["imprison"],"baseAbility":"shieldsdown","item":"apicotberry","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Virizion","details":"Virizion, L50","condition":"197/197","active":false,"stats":{"atk":136,"def":105,"spa":99,"spd":149,"spe":129},"moves":["absorb","roaroftime","circlethrow"],"baseAbility":"shadowtag","item":"","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Tinkatuff","details":"Tinkatuff, L50, F","condition":"147/147","active":true,"stats":{"atk":84,"def":90,"spa":65,"spd":105,"spe":125},"moves":["destinybond","wildboltstorm","powersplit"],"baseAbility":"shadowtag","item":"beastball","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Vibrava","details":"Vibrava, L50, F","condition":"135/135","active":true,"stats":{"atk":113,"def":77,"spa":84,"spd":72,"spe":98},"moves":["aquajet","speedswap"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":177,"def":104,"spa":54,"spd":117,"spe":133},"moves":["followme","torment","burningbulwark","feint"],"baseAbility":"moxie","item":"moonball","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Kleavor","details":"Kleavor, L50, M","condition":"145/145","active":false,"stats":{"atk":146,"def":135,"spa":77,"spd":97,"spe":125},"moves":["sweetkiss","poisonfang","prismaticlaser","pluck"],"baseAbility":"shadowtag","item":"jabocaberry","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Passimian","details":"Passimian, L50, M","condition":"202/202","active":false,"stats":{"atk":161,"def":111,"spa":61,"spd":90,"spe":104},"moves":["highhorsepower","triplearrows","bulletpunch","cottonspore"],"baseAbility":"defiant","item":"flameorb","pokeball":"pokeball","ability":"defiant","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Skiddo, L50, F","condition":"168/168","active":false,"stats":{"atk":90,"def":69,"spa":84,"spd":97,"spe":80},"moves":["safeguard"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|switch|p1a: Lunala|Lunala, L50|233/233
+|switch|p1a: Lunala|Lunala, L50|233/233
+|split|p1
+|switch|p1b: Zoë|Chien-Pao, L50|174/174
+|switch|p1b: Zoë|Chien-Pao, L50|174/174
+|split|p2
+|switch|p2a: Vibrava|Vibrava, L50, F|135/135
+|switch|p2a: Vibrava|Vibrava, L50, F|135/135
+|split|p2
+|switch|p2b: Heracross|Heracross, L50, M, shiny|157/157
+|switch|p2b: Heracross|Heracross, L50, M, shiny|157/157
+|-ability|p1b: Zoë|Sword of Ruin
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Fairy"},{"moves":[{"move":"Night Slash","id":"nightslash","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Power Split","id":"powersplit","pp":16,"maxpp":16,"target":"normal","disabled":true},{"move":"Outrage","id":"outrage","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}],"canTerastallize":"Rock"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Lunala","details":"Lunala, L50","condition":"233/233","active":true,"stats":{"atk":139,"def":118,"spa":158,"spd":135,"spe":135},"moves":["flareblitz"],"baseAbility":"shadowshield","item":"assaultvest","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Zoë","details":"Chien-Pao, L50","condition":"174/174","active":true,"stats":{"atk":157,"def":111,"spa":111,"spd":97,"spe":158},"moves":["nightslash","powersplit","outrage"],"baseAbility":"swordofruin","item":"assaultvest","pokeball":"pokeball","ability":"swordofruin","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Pikachu","details":"Iron Boulder, L50","condition":"165/165","active":false,"stats":{"atk":150,"def":123,"spa":89,"spd":130,"spe":161},"moves":["prismaticlaser","meteorbeam","imprison","psychicnoise"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Chomp","details":"Horsea, L50, M","condition":"114/114","active":false,"stats":{"atk":89,"def":90,"spa":93,"spd":49,"spe":93},"moves":["finalgambit","brutalswing","voltswitch"],"baseAbility":"sniper","item":"firestone","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fairy"},{"moves":[{"move":"Follow Me","id":"followme","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Torment","id":"torment","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Burning Bulwark","id":"burningbulwark","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Feint","id":"feint","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fighting"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Vibrava","details":"Vibrava, L50, F","condition":"135/135","active":true,"stats":{"atk":113,"def":77,"spa":84,"spd":72,"spe":98},"moves":["aquajet","speedswap"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, M, shiny","condition":"157/157","active":true,"stats":{"atk":177,"def":104,"spa":54,"spd":117,"spe":133},"moves":["followme","torment","burningbulwark","feint"],"baseAbility":"moxie","item":"moonball","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Tinkatuff","details":"Tinkatuff, L50, F","condition":"147/147","active":false,"stats":{"atk":84,"def":90,"spa":65,"spd":105,"spe":125},"moves":["destinybond","wildboltstorm","powersplit"],"baseAbility":"shadowtag","item":"beastball","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Kleavor","details":"Kleavor, L50, M","condition":"145/145","active":false,"stats":{"atk":146,"def":135,"spa":77,"spd":97,"spe":125},"moves":["sweetkiss","poisonfang","prismaticlaser","pluck"],"baseAbility":"shadowtag","item":"jabocaberry","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Unrecognized choice: Move 1
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: move speedswap -2 terastal - missing other pokemon
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Pikachu|Iron Boulder, L50|165/165
+|switch|p1a: Pikachu|Iron Boulder, L50|165/165
+|-terastallize|p1b: Zoë|Rock
+|move|p2b: Heracross|Feint|p1b: Zoë
+|-resisted|p1b: Zoë
+|split|p1
+|-damage|p1b: Zoë|164/174
+|-damage|p1b: Zoë|164/174
+|move|p1b: Zoë|Night Slash|p2a: Vibrava
+|split|p2
+|-damage|p2a: Vibrava|17/135
+|-damage|p2a: Vibrava|17/135
+|move|p2a: Vibrava|Speed Swap|p1b: Zoë
+|-activate|p2a: Vibrava|move: Speed Swap|[of] p1b: Zoë
+|
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Prismatic Laser","id":"prismaticlaser","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Beam","id":"meteorbeam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Power Split","id":"powersplit","pp":16,"maxpp":16,"target":"normal","disabled":true},{"move":"Outrage","id":"outrage","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Iron Boulder, L50","condition":"165/165","active":true,"stats":{"atk":150,"def":123,"spa":89,"spd":130,"spe":161},"moves":["prismaticlaser","meteorbeam","imprison","psychicnoise"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Zoë","details":"Chien-Pao, L50","condition":"164/174","active":true,"stats":{"atk":157,"def":111,"spa":111,"spd":97,"spe":158},"moves":["nightslash","powersplit","outrage"],"baseAbility":"swordofruin","item":"assaultvest","pokeball":"pokeball","ability":"swordofruin","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p1: Lunala","details":"Lunala, L50","condition":"233/233","active":false,"stats":{"atk":139,"def":118,"spa":158,"spd":135,"spe":135},"moves":["flareblitz"],"baseAbility":"shadowshield","item":"assaultvest","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Chomp","details":"Horsea, L50, M","condition":"114/114","active":false,"stats":{"atk":89,"def":90,"spa":93,"spd":49,"spe":93},"moves":["finalgambit","brutalswing","voltswitch"],"baseAbility":"sniper","item":"firestone","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":15,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fairy"},{"moves":[{"move":"Follow Me","id":"followme","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Torment","id":"torment","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Burning Bulwark","id":"burningbulwark","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Feint","id":"feint","pp":15,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fighting"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Vibrava","details":"Vibrava, L50, F","condition":"17/135","active":true,"stats":{"atk":113,"def":77,"spa":84,"spd":72,"spe":98},"moves":["aquajet","speedswap"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, M, shiny","condition":"157/157","active":true,"stats":{"atk":177,"def":104,"spa":54,"spd":117,"spe":133},"moves":["followme","torment","burningbulwark","feint"],"baseAbility":"moxie","item":"moonball","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Tinkatuff","details":"Tinkatuff, L50, F","condition":"147/147","active":false,"stats":{"atk":84,"def":90,"spa":65,"spd":105,"spe":125},"moves":["destinybond","wildboltstorm","powersplit"],"baseAbility":"shadowtag","item":"beastball","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Kleavor","details":"Kleavor, L50, M","condition":"145/145","active":false,"stats":{"atk":146,"def":135,"spa":77,"spd":97,"spe":125},"moves":["sweetkiss","poisonfang","prismaticlaser","pluck"],"baseAbility":"shadowtag","item":"jabocaberry","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Pikachu doesn't have a move matching nightslash
+@message
+update
+|
+|t:|
+|-terastallize|p2b: Heracross|Fighting
+|move|p2a: Vibrava|Aqua Jet|p1b: Zoë
+|-supereffective|p1b: Zoë
+|split|p1
+|-damage|p1b: Zoë|130/174
+|-damage|p1b: Zoë|130/174
+|move|p1a: Pikachu|Meteor Beam||[still]
+|-prepare|p1a: Pikachu|Meteor Beam
+|-boost|p1a: Pikachu|spa|1
+|move|p2b: Heracross|Torment|p1a: Pikachu
+|-start|p1a: Pikachu|Torment
+|move|p1b: Zoë|Night Slash|p2b: Heracross
+|-resisted|p2b: Heracross
+|split|p2
+|-damage|p2b: Heracross|117/157
+|-damage|p2b: Heracross|117/157
+|
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Meteor Beam","id":"meteorbeam"}],"trapped":true},{"moves":[{"move":"Night Slash","id":"nightslash","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Power Split","id":"powersplit","pp":16,"maxpp":16,"target":"normal","disabled":true},{"move":"Outrage","id":"outrage","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Iron Boulder, L50","condition":"165/165","active":true,"stats":{"atk":150,"def":123,"spa":89,"spd":130,"spe":161},"moves":["prismaticlaser","meteorbeam","imprison","psychicnoise"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Zoë","details":"Chien-Pao, L50","condition":"130/174","active":true,"stats":{"atk":157,"def":111,"spa":111,"spd":97,"spe":158},"moves":["nightslash","powersplit","outrage"],"baseAbility":"swordofruin","item":"assaultvest","pokeball":"pokeball","ability":"swordofruin","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p1: Lunala","details":"Lunala, L50","condition":"233/233","active":false,"stats":{"atk":139,"def":118,"spa":158,"spd":135,"spe":135},"moves":["flareblitz"],"baseAbility":"shadowshield","item":"assaultvest","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Chomp","details":"Horsea, L50, M","condition":"114/114","active":false,"stats":{"atk":89,"def":90,"spa":93,"spd":49,"spe":93},"moves":["finalgambit","brutalswing","voltswitch"],"baseAbility":"sniper","item":"firestone","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Follow Me","id":"followme","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Torment","id":"torment","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Burning Bulwark","id":"burningbulwark","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Feint","id":"feint","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Vibrava","details":"Vibrava, L50, F","condition":"17/135","active":true,"stats":{"atk":113,"def":77,"spa":84,"spd":72,"spe":98},"moves":["aquajet","speedswap"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, M, shiny","condition":"117/157","active":true,"stats":{"atk":177,"def":104,"spa":54,"spd":117,"spe":133},"moves":["followme","torment","burningbulwark","feint"],"baseAbility":"moxie","item":"moonball","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p2: Tinkatuff","details":"Tinkatuff, L50, F","condition":"147/147","active":false,"stats":{"atk":84,"def":90,"spa":65,"spd":105,"spe":125},"moves":["destinybond","wildboltstorm","powersplit"],"baseAbility":"shadowtag","item":"beastball","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Kleavor","details":"Kleavor, L50, M","condition":"145/145","active":false,"stats":{"atk":146,"def":135,"spa":77,"spd":97,"spe":125},"moves":["sweetkiss","poisonfang","prismaticlaser","pluck"],"baseAbility":"shadowtag","item":"jabocaberry","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|move|p1a: Pikachu|Meteor Beam|p1b: Zoë|[from] lockedmove
+|split|p1
+|-damage|p1b: Zoë|63/174
+|-damage|p1b: Zoë|63/174
+|move|p2a: Vibrava|Speed Swap|p2b: Heracross
+|-activate|p2a: Vibrava|move: Speed Swap|[of] p2b: Heracross
+|move|p2b: Heracross|Torment|p2a: Vibrava
+|-start|p2a: Vibrava|Torment
+|move|p1b: Zoë|Night Slash|p1a: Pikachu
+|-supereffective|p1a: Pikachu
+|split|p1
+|-damage|p1a: Pikachu|13/165
+|-damage|p1a: Pikachu|13/165
+|
+|upkeep
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Prismatic Laser","id":"prismaticlaser","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Beam","id":"meteorbeam","pp":15,"maxpp":16,"target":"normal","disabled":true},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":21,"maxpp":24,"target":"normal","disabled":false},{"move":"Power Split","id":"powersplit","pp":16,"maxpp":16,"target":"normal","disabled":true},{"move":"Outrage","id":"outrage","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Iron Boulder, L50","condition":"13/165","active":true,"stats":{"atk":150,"def":123,"spa":89,"spd":130,"spe":161},"moves":["prismaticlaser","meteorbeam","imprison","psychicnoise"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Zoë","details":"Chien-Pao, L50","condition":"63/174","active":true,"stats":{"atk":157,"def":111,"spa":111,"spd":97,"spe":158},"moves":["nightslash","powersplit","outrage"],"baseAbility":"swordofruin","item":"assaultvest","pokeball":"pokeball","ability":"swordofruin","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p1: Lunala","details":"Lunala, L50","condition":"233/233","active":false,"stats":{"atk":139,"def":118,"spa":158,"spd":135,"spe":135},"moves":["flareblitz"],"baseAbility":"shadowshield","item":"assaultvest","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Chomp","details":"Horsea, L50, M","condition":"114/114","active":false,"stats":{"atk":89,"def":90,"spa":93,"spd":49,"spe":93},"moves":["finalgambit","brutalswing","voltswitch"],"baseAbility":"sniper","item":"firestone","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":14,"maxpp":16,"target":"normal","disabled":true}]},{"moves":[{"move":"Follow Me","id":"followme","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Torment","id":"torment","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Burning Bulwark","id":"burningbulwark","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Feint","id":"feint","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Vibrava","details":"Vibrava, L50, F","condition":"17/135","active":true,"stats":{"atk":113,"def":77,"spa":84,"spd":72,"spe":98},"moves":["aquajet","speedswap"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, M, shiny","condition":"117/157","active":true,"stats":{"atk":177,"def":104,"spa":54,"spd":117,"spe":133},"moves":["followme","torment","burningbulwark","feint"],"baseAbility":"moxie","item":"moonball","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p2: Tinkatuff","details":"Tinkatuff, L50, F","condition":"147/147","active":false,"stats":{"atk":84,"def":90,"spa":65,"spd":105,"spe":125},"moves":["destinybond","wildboltstorm","powersplit"],"baseAbility":"shadowtag","item":"beastball","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Kleavor","details":"Kleavor, L50, M","condition":"145/145","active":false,"stats":{"atk":146,"def":135,"spa":77,"spd":97,"spe":125},"moves":["sweetkiss","poisonfang","prismaticlaser","pluck"],"baseAbility":"shadowtag","item":"jabocaberry","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|move|p2b: Heracross|Feint|p1b: Zoë
+|-resisted|p1b: Zoë
+|split|p1
+|-damage|p1b: Zoë|54/174
+|-damage|p1b: Zoë|54/174
+|move|p2a: Vibrava|Aqua Jet|p1a: Pikachu
+|-supereffective|p1a: Pikachu
+|split|p1
+|-damage|p1a: Pikachu|0 fnt
+|-damage|p1a: Pikachu|0 fnt
+|faint|p1a: Pikachu
+|-end|p1a: Pikachu|Quark Drive|[silent]
+|move|p1b: Zoë|Night Slash|p2b: Heracross
+|-resisted|p2b: Heracross
+|-crit|p2b: Heracross
+|split|p2
+|-damage|p2b: Heracross|54/157
+|-damage|p2b: Heracross|54/157
+|
+|upkeep
+@message
+sideupdate
+p1
+|request|{"forceSwitch":[true,false],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Iron Boulder, L50","condition":"0 fnt","active":true,"stats":{"atk":150,"def":123,"spa":89,"spd":130,"spe":161},"moves":["prismaticlaser","meteorbeam","imprison","psychicnoise"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Zoë","details":"Chien-Pao, L50","condition":"54/174","active":true,"stats":{"atk":157,"def":111,"spa":111,"spd":97,"spe":158},"moves":["nightslash","powersplit","outrage"],"baseAbility":"swordofruin","item":"assaultvest","pokeball":"pokeball","ability":"swordofruin","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p1: Lunala","details":"Lunala, L50","condition":"233/233","active":false,"stats":{"atk":139,"def":118,"spa":158,"spd":135,"spe":135},"moves":["flareblitz"],"baseAbility":"shadowshield","item":"assaultvest","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Chomp","details":"Horsea, L50, M","condition":"114/114","active":false,"stats":{"atk":89,"def":90,"spa":93,"spd":49,"spe":93},"moves":["finalgambit","brutalswing","voltswitch"],"baseAbility":"sniper","item":"firestone","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]},"noCancel":true}
+@message
+sideupdate
+p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Vibrava","details":"Vibrava, L50, F","condition":"17/135","active":true,"stats":{"atk":113,"def":77,"spa":84,"spd":72,"spe":98},"moves":["aquajet","speedswap"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, M, shiny","condition":"54/157","active":true,"stats":{"atk":177,"def":104,"spa":54,"spd":117,"spe":133},"moves":["followme","torment","burningbulwark","feint"],"baseAbility":"moxie","item":"moonball","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p2: Tinkatuff","details":"Tinkatuff, L50, F","condition":"147/147","active":false,"stats":{"atk":84,"def":90,"spa":65,"spd":105,"spe":125},"moves":["destinybond","wildboltstorm","powersplit"],"baseAbility":"shadowtag","item":"beastball","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Kleavor","details":"Kleavor, L50, M","condition":"145/145","active":false,"stats":{"atk":146,"def":135,"spa":77,"spd":97,"spe":125},"moves":["sweetkiss","poisonfang","prismaticlaser","pluck"],"baseAbility":"shadowtag","item":"jabocaberry","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You need a switch response
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"gen5,a4fdd6c3f7e624ee","turns":4,"p1":"Alice","p2":"Bob","p1team":[{"name":"Lunala","species":"Lunala","item":"Assault Vest","ability":"Shadow Shield","moves":["Flare Blitz"],"nature":"Serious","evs":{"hp":166,"atk":50,"def":75,"spa":9,"spd":62,"spe":147},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Zoë","species":"Chien-Pao","item":"Assault Vest","ability":"Sword of Ruin","moves":["Night Slash","Power Split","Outrage"],"nature":"Lax","evs":{"hp":148,"atk":138,"def":7,"spa":5,"spd":187,"spe":23},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pikachu","species":"Iron Boulder","item":"","ability":"Quark Drive","moves":["Prismatic Laser","Meteor Beam","Imprison","Psychic Noise"],"nature":"Timid","evs":{"hp":0,"atk":215,"def":186,"spa":11,"spd":18,"spe":22},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Horsea","item":"Fire Stone","ability":"Sniper","moves":["Final Gambit","Brutal Swing","Volt Switch"],"nature":"Hasty","evs":{"hp":68,"atk":233,"def":78,"spa":25,"spd":32,"spe":40},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Minior-Green","item":"Apicot Berry","ability":"Shields Down","moves":["Imprison"],"nature":"Bold","evs":{"hp":57,"atk":47,"def":6,"spa":73,"spd":156,"spe":81},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Virizion","species":"Virizion","item":"","ability":"Shadow Tag","moves":["Absorb","Roar of Time","Circle Throw"],"nature":"Impish","evs":{"hp":247,"atk":211,"def":30,"spa":10,"spd":1,"spe":11},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Tinkatuff","species":"Tinkatuff","item":"Beast Ball","ability":"Shadow Tag","moves":["Destiny Bond","Wildbolt Storm","Power Split"],"nature":"Lonely","evs":{"hp":53,"atk":12,"def":205,"spa":0,"spd":22,"spe":214},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Vibrava","species":"Vibrava","item":"","ability":"Levitate","moves":["Aqua Jet","Speed Swap"],"nature":"Adamant","evs":{"hp":83,"atk":102,"def":57,"spa":195,"spd":12,"spe":61},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Heracross","species":"Heracross","item":"Moon Ball","ability":"Moxie","moves":["Follow Me","Torment","Burning Bulwark","Feint"],"nature":"Impish","evs":{"hp":18,"atk":252,"def":2,"spa":0,"spd":12,"spe":226},"gender":"M","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Kleavor","species":"Kleavor","item":"Jaboca Berry","ability":"Shadow Tag","moves":["Sweet Kiss","Poison Fang","Prismatic Laser","Pluck"],"nature":"Modest","evs":{"hp":1,"atk":65,"def":162,"spa":37,"spd":55,"spe":160},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Passimian","species":"Passimian","item":"Flame Orb","ability":"Defiant","moves":["High Horsepower","Triple Arrows","Bullet Punch","Cotton Spore"],"nature":"Serious","evs":{"hp":214,"atk":167,"def":9,"spa":4,"spd":80,"spe":31},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"ThisNameIsFarTooLongToKeep","species":"Skiddo","item":"","ability":"Sap Sipper","moves":["Safeguard"],"nature":"Quirky","evs":{"hp":217,"atk":38,"def":6,"spa":12,"spd":163,"spe":67},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[3,4],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50\",\"seed\":\"gen5,a4fdd6c3f7e624ee\",\"rated\":\"Tournament battle\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Lunala||AssaultVest|ShadowShield|FlareBlitz|Serious|166,50,75,9,62,147||||50|,,,,,Fairy]Zoë|ChienPao|AssaultVest|SwordofRuin|NightSlash,PowerSplit,Outrage|Lax|148,138,7,5,187,23||||50|,,,,,Rock]Pikachu|IronBoulder||QuarkDrive|PrismaticLaser,MeteorBeam,Imprison,PsychicNoise|Timid|,215,186,11,18,22||||50|,,,,,Normal]Chomp|Horsea|FireStone|Sniper|FinalGambit,BrutalSwing,VoltSwitch|Hasty|68,233,78,25,32,40|M|||50|,,,,,Grass]Big Tony's Pal|MiniorGreen|ApicotBerry|ShieldsDown|Imprison|Bold|57,47,6,73,156,81||||50|,,,,,Electric]Virizion|||ShadowTag|Absorb,RoarofTime,CircleThrow|Impish|247,211,30,10,1,11||||50|,,,,,Stellar\",\"avatar\":\"lucas\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Tinkatuff||BeastBall|ShadowTag|DestinyBond,WildboltStorm,PowerSplit|Lonely|53,12,205,,22,214||||50|,,,,,Psychic]Vibrava|||Levitate|AquaJet,SpeedSwap|Adamant|83,102,57,195,12,61|F|||50|,,,,,Fairy]Heracross||MoonBall|Moxie|FollowMe,Torment,BurningBulwark,Feint|Impish|18,252,2,,12,226|M||S|50|,,,,,Fighting]Kleavor||JabocaBerry|ShadowTag|SweetKiss,PoisonFang,PrismaticLaser,Pluck|Modest|1,65,162,37,55,160|M|||50|,,,,,Electric]Passimian||FlameOrb|Defiant|HighHorsepower,TripleArrows,BulletPunch,CottonSpore|Serious|214,167,9,4,80,31||||50|,,,,,Normal]ThisNameIsFarTooLongToKeep|Skiddo||SapSipper|Safeguard|Quirky|217,38,6,12,163,67||||50|,,,,,Poison\"}",">p1 team 1, 2, 3, 4",">p2 team 2, 3, 1, 4",">p1 switch 3, move nightslash +1 terastallize",">p2 move speedswap +2, move feint +2",">p1 move meteorbeam -2, move nightslash +2",">p2 move aquajet +2, move torment +1 terastallize",">p1 move meteorbeam -2, move nightslash -1",">p2 move speedswap -2, move torment -1",">p1 move prismaticlaser +2, move nightslash +2",">p2 move aquajet +1, move feint +2",">forcetie"]}
+@channel-write omniscient
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,a4fdd6c3f7e624ee","rated":"Tournament battle"}
+@channel-write omniscient
+>player p1 {"name":"Alice","team":"Lunala||AssaultVest|ShadowShield|FlareBlitz|Serious|166,50,75,9,62,147||||50|,,,,,Fairy]Zoë|ChienPao|AssaultVest|SwordofRuin|NightSlash,PowerSplit,Outrage|Lax|148,138,7,5,187,23||||50|,,,,,Rock]Pikachu|IronBoulder||QuarkDrive|PrismaticLaser,MeteorBeam,Imprison,PsychicNoise|Timid|,215,186,11,18,22||||50|,,,,,Normal]Chomp|Horsea|FireStone|Sniper|FinalGambit,BrutalSwing,VoltSwitch|Hasty|68,233,78,25,32,40|M|||50|,,,,,Grass]Big Tony's Pal|MiniorGreen|ApicotBerry|ShieldsDown|Imprison|Bold|57,47,6,73,156,81||||50|,,,,,Electric]Virizion|||ShadowTag|Absorb,RoarofTime,CircleThrow|Impish|247,211,30,10,1,11||||50|,,,,,Stellar","avatar":"lucas"}
+@channel-write omniscient
+>player p2 {"name":"Bob","team":"Tinkatuff||BeastBall|ShadowTag|DestinyBond,WildboltStorm,PowerSplit|Lonely|53,12,205,,22,214||||50|,,,,,Psychic]Vibrava|||Levitate|AquaJet,SpeedSwap|Adamant|83,102,57,195,12,61|F|||50|,,,,,Fairy]Heracross||MoonBall|Moxie|FollowMe,Torment,BurningBulwark,Feint|Impish|18,252,2,,12,226|M||S|50|,,,,,Fighting]Kleavor||JabocaBerry|ShadowTag|SweetKiss,PoisonFang,PrismaticLaser,Pluck|Modest|1,65,162,37,55,160|M|||50|,,,,,Electric]Passimian||FlameOrb|Defiant|HighHorsepower,TripleArrows,BulletPunch,CottonSpore|Serious|214,167,9,4,80,31||||50|,,,,,Normal]ThisNameIsFarTooLongToKeep|Skiddo||SapSipper|Safeguard|Quirky|217,38,6,12,163,67||||50|,,,,,Poison"}
+@channel-write p2
+team 2314
+@channel-write p1
+auto
+@channel-write p2
+Move 1
+@channel-write p2
+move speedswap -2 terastal
+@channel-write p2
+move 2 2, move 4 2
+@channel-write p1
+switch 3, move 1 1 terastallize
+@channel-write p1
+move nightslash 1, move 4 +1
+@channel-write p2
+move 1 2, move 2 1 terastallize
+@channel-write p1
+move 2 -2, move 1 2
+@channel-write p1
+move 1, move 1 -1
+@channel-write p2
+move 2 -2, move 2 -1
+@channel-write p2
+move aquajet +1 ,  move feint +2
+@channel-write p1
+move 1 2, move 1 2
+@channel-write p1
+switch 3, move Outrage 1 dynamax
+@channel-write omniscient
+>forcetie
+@channel-write p1
+move 1
+@channel omniscient
+|t:|
+|gametype|doubles
+@channel omniscient
+|player|p1|Alice|lucas|
+@channel omniscient
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|rated|Tournament battle
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Lunala, L50|
+|poke|p1|Chien-Pao, L50|
+|poke|p1|Iron Boulder, L50|
+|poke|p1|Horsea, L50, M|
+|poke|p1|Minior-Green, L50|
+|poke|p1|Virizion, L50|
+|poke|p2|Tinkatuff, L50, F|
+|poke|p2|Vibrava, L50, F|
+|poke|p2|Heracross, L50, M|
+|poke|p2|Kleavor, L50, M|
+|poke|p2|Passimian, L50, M|
+|poke|p2|Skiddo, L50, F|
+|teampreview|4
+@channel omniscient
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Lunala|Lunala, L50|233/233
+|switch|p1b: Zoë|Chien-Pao, L50|174/174
+|switch|p2a: Vibrava|Vibrava, L50, F|135/135
+|switch|p2b: Heracross|Heracross, L50, M, shiny|157/157
+|-ability|p1b: Zoë|Sword of Ruin
+|turn|1
+@channel omniscient
+|
+|t:|
+|switch|p1a: Pikachu|Iron Boulder, L50|165/165
+|-terastallize|p1b: Zoë|Rock
+|move|p2b: Heracross|Feint|p1b: Zoë
+|-resisted|p1b: Zoë
+|-damage|p1b: Zoë|164/174
+|move|p1b: Zoë|Night Slash|p2a: Vibrava
+|-damage|p2a: Vibrava|17/135
+|move|p2a: Vibrava|Speed Swap|p1b: Zoë
+|-activate|p2a: Vibrava|move: Speed Swap|[of] p1b: Zoë
+|
+|upkeep
+|turn|2
+@channel omniscient
+|
+|t:|
+|-terastallize|p2b: Heracross|Fighting
+|move|p2a: Vibrava|Aqua Jet|p1b: Zoë
+|-supereffective|p1b: Zoë
+|-damage|p1b: Zoë|130/174
+|move|p1a: Pikachu|Meteor Beam||[still]
+|-prepare|p1a: Pikachu|Meteor Beam
+|-boost|p1a: Pikachu|spa|1
+|move|p2b: Heracross|Torment|p1a: Pikachu
+|-start|p1a: Pikachu|Torment
+|move|p1b: Zoë|Night Slash|p2b: Heracross
+|-resisted|p2b: Heracross
+|-damage|p2b: Heracross|117/157
+|
+|upkeep
+|turn|3
+@channel omniscient
+|
+|t:|
+|move|p1a: Pikachu|Meteor Beam|p1b: Zoë|[from] lockedmove
+|-damage|p1b: Zoë|63/174
+|move|p2a: Vibrava|Speed Swap|p2b: Heracross
+|-activate|p2a: Vibrava|move: Speed Swap|[of] p2b: Heracross
+|move|p2b: Heracross|Torment|p2a: Vibrava
+|-start|p2a: Vibrava|Torment
+|move|p1b: Zoë|Night Slash|p1a: Pikachu
+|-supereffective|p1a: Pikachu
+|-damage|p1a: Pikachu|13/165
+|
+|upkeep
+|turn|4
+@channel omniscient
+|
+|t:|
+|move|p2b: Heracross|Feint|p1b: Zoë
+|-resisted|p1b: Zoë
+|-damage|p1b: Zoë|54/174
+|move|p2a: Vibrava|Aqua Jet|p1a: Pikachu
+|-supereffective|p1a: Pikachu
+|-damage|p1a: Pikachu|0 fnt
+|faint|p1a: Pikachu
+|-end|p1a: Pikachu|Quark Drive|[silent]
+|move|p1b: Zoë|Night Slash|p2b: Heracross
+|-resisted|p2b: Heracross
+|-crit|p2b: Heracross
+|-damage|p2b: Heracross|54/157
+|
+|upkeep
+@channel omniscient
+|
+|tie
+@channel spectator
+|t:|
+|gametype|doubles
+@channel spectator
+|player|p1|Alice|lucas|
+@channel spectator
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|rated|Tournament battle
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Lunala, L50|
+|poke|p1|Chien-Pao, L50|
+|poke|p1|Iron Boulder, L50|
+|poke|p1|Horsea, L50, M|
+|poke|p1|Minior-Green, L50|
+|poke|p1|Virizion, L50|
+|poke|p2|Tinkatuff, L50, F|
+|poke|p2|Vibrava, L50, F|
+|poke|p2|Heracross, L50, M|
+|poke|p2|Kleavor, L50, M|
+|poke|p2|Passimian, L50, M|
+|poke|p2|Skiddo, L50, F|
+|teampreview|4
+@channel spectator
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Lunala|Lunala, L50|233/233
+|switch|p1b: Zoë|Chien-Pao, L50|174/174
+|switch|p2a: Vibrava|Vibrava, L50, F|135/135
+|switch|p2b: Heracross|Heracross, L50, M, shiny|157/157
+|-ability|p1b: Zoë|Sword of Ruin
+|turn|1
+@channel spectator
+|
+|t:|
+|switch|p1a: Pikachu|Iron Boulder, L50|165/165
+|-terastallize|p1b: Zoë|Rock
+|move|p2b: Heracross|Feint|p1b: Zoë
+|-resisted|p1b: Zoë
+|-damage|p1b: Zoë|164/174
+|move|p1b: Zoë|Night Slash|p2a: Vibrava
+|-damage|p2a: Vibrava|17/135
+|move|p2a: Vibrava|Speed Swap|p1b: Zoë
+|-activate|p2a: Vibrava|move: Speed Swap|[of] p1b: Zoë
+|
+|upkeep
+|turn|2
+@channel spectator
+|
+|t:|
+|-terastallize|p2b: Heracross|Fighting
+|move|p2a: Vibrava|Aqua Jet|p1b: Zoë
+|-supereffective|p1b: Zoë
+|-damage|p1b: Zoë|130/174
+|move|p1a: Pikachu|Meteor Beam||[still]
+|-prepare|p1a: Pikachu|Meteor Beam
+|-boost|p1a: Pikachu|spa|1
+|move|p2b: Heracross|Torment|p1a: Pikachu
+|-start|p1a: Pikachu|Torment
+|move|p1b: Zoë|Night Slash|p2b: Heracross
+|-resisted|p2b: Heracross
+|-damage|p2b: Heracross|117/157
+|
+|upkeep
+|turn|3
+@channel spectator
+|
+|t:|
+|move|p1a: Pikachu|Meteor Beam|p1b: Zoë|[from] lockedmove
+|-damage|p1b: Zoë|63/174
+|move|p2a: Vibrava|Speed Swap|p2b: Heracross
+|-activate|p2a: Vibrava|move: Speed Swap|[of] p2b: Heracross
+|move|p2b: Heracross|Torment|p2a: Vibrava
+|-start|p2a: Vibrava|Torment
+|move|p1b: Zoë|Night Slash|p1a: Pikachu
+|-supereffective|p1a: Pikachu
+|-damage|p1a: Pikachu|13/165
+|
+|upkeep
+|turn|4
+@channel spectator
+|
+|t:|
+|move|p2b: Heracross|Feint|p1b: Zoë
+|-resisted|p1b: Zoë
+|-damage|p1b: Zoë|54/174
+|move|p2a: Vibrava|Aqua Jet|p1a: Pikachu
+|-supereffective|p1a: Pikachu
+|-damage|p1a: Pikachu|0 fnt
+|faint|p1a: Pikachu
+|-end|p1a: Pikachu|Quark Drive|[silent]
+|move|p1b: Zoë|Night Slash|p2b: Heracross
+|-resisted|p2b: Heracross
+|-crit|p2b: Heracross
+|-damage|p2b: Heracross|54/157
+|
+|upkeep
+@channel spectator
+|
+|tie
+@channel p1
+|t:|
+|gametype|doubles
+@channel p1
+|player|p1|Alice|lucas|
+@channel p1
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|rated|Tournament battle
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Lunala, L50|
+|poke|p1|Chien-Pao, L50|
+|poke|p1|Iron Boulder, L50|
+|poke|p1|Horsea, L50, M|
+|poke|p1|Minior-Green, L50|
+|poke|p1|Virizion, L50|
+|poke|p2|Tinkatuff, L50, F|
+|poke|p2|Vibrava, L50, F|
+|poke|p2|Heracross, L50, M|
+|poke|p2|Kleavor, L50, M|
+|poke|p2|Passimian, L50, M|
+|poke|p2|Skiddo, L50, F|
+|teampreview|4
+@channel p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Lunala","details":"Lunala, L50","condition":"233/233","active":true,"stats":{"atk":139,"def":118,"spa":158,"spd":135,"spe":135},"moves":["flareblitz"],"baseAbility":"shadowshield","item":"assaultvest","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Zoë","details":"Chien-Pao, L50","condition":"174/174","active":true,"stats":{"atk":157,"def":111,"spa":111,"spd":97,"spe":158},"moves":["nightslash","powersplit","outrage"],"baseAbility":"swordofruin","item":"assaultvest","pokeball":"pokeball","ability":"swordofruin","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Pikachu","details":"Iron Boulder, L50","condition":"165/165","active":false,"stats":{"atk":150,"def":123,"spa":89,"spd":130,"spe":161},"moves":["prismaticlaser","meteorbeam","imprison","psychicnoise"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Chomp","details":"Horsea, L50, M","condition":"114/114","active":false,"stats":{"atk":89,"def":90,"spa":93,"spd":49,"spe":93},"moves":["finalgambit","brutalswing","voltswitch"],"baseAbility":"sniper","item":"firestone","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Minior-Green, L50","condition":"142/142","active":false,"stats":{"atk":113,"def":89,"spa":129,"spd":100,"spe":150},"moves":["imprison"],"baseAbility":"shieldsdown","item":"apicotberry","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Virizion","details":"Virizion, L50","condition":"197/197","active":false,"stats":{"atk":136,"def":105,"spa":99,"spd":149,"spe":129},"moves":["absorb","roaroftime","circlethrow"],"baseAbility":"shadowtag","item":"","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@channel p1
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Lunala|Lunala, L50|233/233
+|switch|p1b: Zoë|Chien-Pao, L50|174/174
+|switch|p2a: Vibrava|Vibrava, L50, F|135/135
+|switch|p2b: Heracross|Heracross, L50, M, shiny|157/157
+|-ability|p1b: Zoë|Sword of Ruin
+|turn|1
+@channel p1
+|request|{"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Fairy"},{"moves":[{"move":"Night Slash","id":"nightslash","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Power Split","id":"powersplit","pp":16,"maxpp":16,"target":"normal","disabled":true},{"move":"Outrage","id":"outrage","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}],"canTerastallize":"Rock"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Lunala","details":"Lunala, L50","condition":"233/233","active":true,"stats":{"atk":139,"def":118,"spa":158,"spd":135,"spe":135},"moves":["flareblitz"],"baseAbility":"shadowshield","item":"assaultvest","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Zoë","details":"Chien-Pao, L50","condition":"174/174","active":true,"stats":{"atk":157,"def":111,"spa":111,"spd":97,"spe":158},"moves":["nightslash","powersplit","outrage"],"baseAbility":"swordofruin","item":"assaultvest","pokeball":"pokeball","ability":"swordofruin","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Pikachu","details":"Iron Boulder, L50","condition":"165/165","active":false,"stats":{"atk":150,"def":123,"spa":89,"spd":130,"spe":161},"moves":["prismaticlaser","meteorbeam","imprison","psychicnoise"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Chomp","details":"Horsea, L50, M","condition":"114/114","active":false,"stats":{"atk":89,"def":90,"spa":93,"spd":49,"spe":93},"moves":["finalgambit","brutalswing","voltswitch"],"baseAbility":"sniper","item":"firestone","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@channel p1
+|
+|t:|
+|switch|p1a: Pikachu|Iron Boulder, L50|165/165
+|-terastallize|p1b: Zoë|Rock
+|move|p2b: Heracross|Feint|p1b: Zoë
+|-resisted|p1b: Zoë
+|-damage|p1b: Zoë|164/174
+|move|p1b: Zoë|Night Slash|p2a: Vibrava
+|-damage|p2a: Vibrava|17/135
+|move|p2a: Vibrava|Speed Swap|p1b: Zoë
+|-activate|p2a: Vibrava|move: Speed Swap|[of] p1b: Zoë
+|
+|upkeep
+|turn|2
+@channel p1
+|request|{"active":[{"moves":[{"move":"Prismatic Laser","id":"prismaticlaser","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Beam","id":"meteorbeam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Power Split","id":"powersplit","pp":16,"maxpp":16,"target":"normal","disabled":true},{"move":"Outrage","id":"outrage","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Iron Boulder, L50","condition":"165/165","active":true,"stats":{"atk":150,"def":123,"spa":89,"spd":130,"spe":161},"moves":["prismaticlaser","meteorbeam","imprison","psychicnoise"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Zoë","details":"Chien-Pao, L50","condition":"164/174","active":true,"stats":{"atk":157,"def":111,"spa":111,"spd":97,"spe":158},"moves":["nightslash","powersplit","outrage"],"baseAbility":"swordofruin","item":"assaultvest","pokeball":"pokeball","ability":"swordofruin","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p1: Lunala","details":"Lunala, L50","condition":"233/233","active":false,"stats":{"atk":139,"def":118,"spa":158,"spd":135,"spe":135},"moves":["flareblitz"],"baseAbility":"shadowshield","item":"assaultvest","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Chomp","details":"Horsea, L50, M","condition":"114/114","active":false,"stats":{"atk":89,"def":90,"spa":93,"spd":49,"spe":93},"moves":["finalgambit","brutalswing","voltswitch"],"baseAbility":"sniper","item":"firestone","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@channel p1
+|error|[Invalid choice] Can't move: Your Pikachu doesn't have a move matching nightslash
+@channel p1
+|
+|t:|
+|-terastallize|p2b: Heracross|Fighting
+|move|p2a: Vibrava|Aqua Jet|p1b: Zoë
+|-supereffective|p1b: Zoë
+|-damage|p1b: Zoë|130/174
+|move|p1a: Pikachu|Meteor Beam||[still]
+|-prepare|p1a: Pikachu|Meteor Beam
+|-boost|p1a: Pikachu|spa|1
+|move|p2b: Heracross|Torment|p1a: Pikachu
+|-start|p1a: Pikachu|Torment
+|move|p1b: Zoë|Night Slash|p2b: Heracross
+|-resisted|p2b: Heracross
+|-damage|p2b: Heracross|117/157
+|
+|upkeep
+|turn|3
+@channel p1
+|request|{"active":[{"moves":[{"move":"Meteor Beam","id":"meteorbeam"}],"trapped":true},{"moves":[{"move":"Night Slash","id":"nightslash","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Power Split","id":"powersplit","pp":16,"maxpp":16,"target":"normal","disabled":true},{"move":"Outrage","id":"outrage","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Iron Boulder, L50","condition":"165/165","active":true,"stats":{"atk":150,"def":123,"spa":89,"spd":130,"spe":161},"moves":["prismaticlaser","meteorbeam","imprison","psychicnoise"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Zoë","details":"Chien-Pao, L50","condition":"130/174","active":true,"stats":{"atk":157,"def":111,"spa":111,"spd":97,"spe":158},"moves":["nightslash","powersplit","outrage"],"baseAbility":"swordofruin","item":"assaultvest","pokeball":"pokeball","ability":"swordofruin","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p1: Lunala","details":"Lunala, L50","condition":"233/233","active":false,"stats":{"atk":139,"def":118,"spa":158,"spd":135,"spe":135},"moves":["flareblitz"],"baseAbility":"shadowshield","item":"assaultvest","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Chomp","details":"Horsea, L50, M","condition":"114/114","active":false,"stats":{"atk":89,"def":90,"spa":93,"spd":49,"spe":93},"moves":["finalgambit","brutalswing","voltswitch"],"baseAbility":"sniper","item":"firestone","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@channel p1
+|
+|t:|
+|move|p1a: Pikachu|Meteor Beam|p1b: Zoë|[from] lockedmove
+|-damage|p1b: Zoë|63/174
+|move|p2a: Vibrava|Speed Swap|p2b: Heracross
+|-activate|p2a: Vibrava|move: Speed Swap|[of] p2b: Heracross
+|move|p2b: Heracross|Torment|p2a: Vibrava
+|-start|p2a: Vibrava|Torment
+|move|p1b: Zoë|Night Slash|p1a: Pikachu
+|-supereffective|p1a: Pikachu
+|-damage|p1a: Pikachu|13/165
+|
+|upkeep
+|turn|4
+@channel p1
+|request|{"active":[{"moves":[{"move":"Prismatic Laser","id":"prismaticlaser","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Beam","id":"meteorbeam","pp":15,"maxpp":16,"target":"normal","disabled":true},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":21,"maxpp":24,"target":"normal","disabled":false},{"move":"Power Split","id":"powersplit","pp":16,"maxpp":16,"target":"normal","disabled":true},{"move":"Outrage","id":"outrage","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Iron Boulder, L50","condition":"13/165","active":true,"stats":{"atk":150,"def":123,"spa":89,"spd":130,"spe":161},"moves":["prismaticlaser","meteorbeam","imprison","psychicnoise"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Zoë","details":"Chien-Pao, L50","condition":"63/174","active":true,"stats":{"atk":157,"def":111,"spa":111,"spd":97,"spe":158},"moves":["nightslash","powersplit","outrage"],"baseAbility":"swordofruin","item":"assaultvest","pokeball":"pokeball","ability":"swordofruin","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p1: Lunala","details":"Lunala, L50","condition":"233/233","active":false,"stats":{"atk":139,"def":118,"spa":158,"spd":135,"spe":135},"moves":["flareblitz"],"baseAbility":"shadowshield","item":"assaultvest","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Chomp","details":"Horsea, L50, M","condition":"114/114","active":false,"stats":{"atk":89,"def":90,"spa":93,"spd":49,"spe":93},"moves":["finalgambit","brutalswing","voltswitch"],"baseAbility":"sniper","item":"firestone","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@channel p1
+|
+|t:|
+|move|p2b: Heracross|Feint|p1b: Zoë
+|-resisted|p1b: Zoë
+|-damage|p1b: Zoë|54/174
+|move|p2a: Vibrava|Aqua Jet|p1a: Pikachu
+|-supereffective|p1a: Pikachu
+|-damage|p1a: Pikachu|0 fnt
+|faint|p1a: Pikachu
+|-end|p1a: Pikachu|Quark Drive|[silent]
+|move|p1b: Zoë|Night Slash|p2b: Heracross
+|-resisted|p2b: Heracross
+|-crit|p2b: Heracross
+|-damage|p2b: Heracross|54/157
+|
+|upkeep
+@channel p1
+|request|{"forceSwitch":[true,false],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Iron Boulder, L50","condition":"0 fnt","active":true,"stats":{"atk":150,"def":123,"spa":89,"spd":130,"spe":161},"moves":["prismaticlaser","meteorbeam","imprison","psychicnoise"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Zoë","details":"Chien-Pao, L50","condition":"54/174","active":true,"stats":{"atk":157,"def":111,"spa":111,"spd":97,"spe":158},"moves":["nightslash","powersplit","outrage"],"baseAbility":"swordofruin","item":"assaultvest","pokeball":"pokeball","ability":"swordofruin","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p1: Lunala","details":"Lunala, L50","condition":"233/233","active":false,"stats":{"atk":139,"def":118,"spa":158,"spd":135,"spe":135},"moves":["flareblitz"],"baseAbility":"shadowshield","item":"assaultvest","pokeball":"pokeball","ability":"shadowshield","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Chomp","details":"Horsea, L50, M","condition":"114/114","active":false,"stats":{"atk":89,"def":90,"spa":93,"spd":49,"spe":93},"moves":["finalgambit","brutalswing","voltswitch"],"baseAbility":"sniper","item":"firestone","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]},"noCancel":true}
+@channel p1
+|error|[Invalid choice] Can't move: You need a switch response
+@channel p1
+|
+|tie
+@channel p2
+|t:|
+|gametype|doubles
+@channel p2
+|player|p1|Alice|lucas|
+@channel p2
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|rated|Tournament battle
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Lunala, L50|
+|poke|p1|Chien-Pao, L50|
+|poke|p1|Iron Boulder, L50|
+|poke|p1|Horsea, L50, M|
+|poke|p1|Minior-Green, L50|
+|poke|p1|Virizion, L50|
+|poke|p2|Tinkatuff, L50, F|
+|poke|p2|Vibrava, L50, F|
+|poke|p2|Heracross, L50, M|
+|poke|p2|Kleavor, L50, M|
+|poke|p2|Passimian, L50, M|
+|poke|p2|Skiddo, L50, F|
+|teampreview|4
+@channel p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Tinkatuff","details":"Tinkatuff, L50, F","condition":"147/147","active":true,"stats":{"atk":84,"def":90,"spa":65,"spd":105,"spe":125},"moves":["destinybond","wildboltstorm","powersplit"],"baseAbility":"shadowtag","item":"beastball","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Vibrava","details":"Vibrava, L50, F","condition":"135/135","active":true,"stats":{"atk":113,"def":77,"spa":84,"spd":72,"spe":98},"moves":["aquajet","speedswap"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":177,"def":104,"spa":54,"spd":117,"spe":133},"moves":["followme","torment","burningbulwark","feint"],"baseAbility":"moxie","item":"moonball","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Kleavor","details":"Kleavor, L50, M","condition":"145/145","active":false,"stats":{"atk":146,"def":135,"spa":77,"spd":97,"spe":125},"moves":["sweetkiss","poisonfang","prismaticlaser","pluck"],"baseAbility":"shadowtag","item":"jabocaberry","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Passimian","details":"Passimian, L50, M","condition":"202/202","active":false,"stats":{"atk":161,"def":111,"spa":61,"spd":90,"spe":104},"moves":["highhorsepower","triplearrows","bulletpunch","cottonspore"],"baseAbility":"defiant","item":"flameorb","pokeball":"pokeball","ability":"defiant","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Skiddo, L50, F","condition":"168/168","active":false,"stats":{"atk":90,"def":69,"spa":84,"spd":97,"spe":80},"moves":["safeguard"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@channel p2
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Lunala|Lunala, L50|233/233
+|switch|p1b: Zoë|Chien-Pao, L50|174/174
+|switch|p2a: Vibrava|Vibrava, L50, F|135/135
+|switch|p2b: Heracross|Heracross, L50, M, shiny|157/157
+|-ability|p1b: Zoë|Sword of Ruin
+|turn|1
+@channel p2
+|request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fairy"},{"moves":[{"move":"Follow Me","id":"followme","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Torment","id":"torment","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Burning Bulwark","id":"burningbulwark","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Feint","id":"feint","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fighting"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Vibrava","details":"Vibrava, L50, F","condition":"135/135","active":true,"stats":{"atk":113,"def":77,"spa":84,"spd":72,"spe":98},"moves":["aquajet","speedswap"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, M, shiny","condition":"157/157","active":true,"stats":{"atk":177,"def":104,"spa":54,"spd":117,"spe":133},"moves":["followme","torment","burningbulwark","feint"],"baseAbility":"moxie","item":"moonball","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Tinkatuff","details":"Tinkatuff, L50, F","condition":"147/147","active":false,"stats":{"atk":84,"def":90,"spa":65,"spd":105,"spe":125},"moves":["destinybond","wildboltstorm","powersplit"],"baseAbility":"shadowtag","item":"beastball","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Kleavor","details":"Kleavor, L50, M","condition":"145/145","active":false,"stats":{"atk":146,"def":135,"spa":77,"spd":97,"spe":125},"moves":["sweetkiss","poisonfang","prismaticlaser","pluck"],"baseAbility":"shadowtag","item":"jabocaberry","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@channel p2
+|error|[Invalid choice] Unrecognized choice: Move 1
+@channel p2
+|error|[Invalid choice] Incomplete choice: move speedswap -2 terastal - missing other pokemon
+@channel p2
+|
+|t:|
+|switch|p1a: Pikachu|Iron Boulder, L50|165/165
+|-terastallize|p1b: Zoë|Rock
+|move|p2b: Heracross|Feint|p1b: Zoë
+|-resisted|p1b: Zoë
+|-damage|p1b: Zoë|164/174
+|move|p1b: Zoë|Night Slash|p2a: Vibrava
+|-damage|p2a: Vibrava|17/135
+|move|p2a: Vibrava|Speed Swap|p1b: Zoë
+|-activate|p2a: Vibrava|move: Speed Swap|[of] p1b: Zoë
+|
+|upkeep
+|turn|2
+@channel p2
+|request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":15,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fairy"},{"moves":[{"move":"Follow Me","id":"followme","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Torment","id":"torment","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Burning Bulwark","id":"burningbulwark","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Feint","id":"feint","pp":15,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fighting"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Vibrava","details":"Vibrava, L50, F","condition":"17/135","active":true,"stats":{"atk":113,"def":77,"spa":84,"spd":72,"spe":98},"moves":["aquajet","speedswap"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, M, shiny","condition":"157/157","active":true,"stats":{"atk":177,"def":104,"spa":54,"spd":117,"spe":133},"moves":["followme","torment","burningbulwark","feint"],"baseAbility":"moxie","item":"moonball","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Tinkatuff","details":"Tinkatuff, L50, F","condition":"147/147","active":false,"stats":{"atk":84,"def":90,"spa":65,"spd":105,"spe":125},"moves":["destinybond","wildboltstorm","powersplit"],"baseAbility":"shadowtag","item":"beastball","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Kleavor","details":"Kleavor, L50, M","condition":"145/145","active":false,"stats":{"atk":146,"def":135,"spa":77,"spd":97,"spe":125},"moves":["sweetkiss","poisonfang","prismaticlaser","pluck"],"baseAbility":"shadowtag","item":"jabocaberry","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@channel p2
+|
+|t:|
+|-terastallize|p2b: Heracross|Fighting
+|move|p2a: Vibrava|Aqua Jet|p1b: Zoë
+|-supereffective|p1b: Zoë
+|-damage|p1b: Zoë|130/174
+|move|p1a: Pikachu|Meteor Beam||[still]
+|-prepare|p1a: Pikachu|Meteor Beam
+|-boost|p1a: Pikachu|spa|1
+|move|p2b: Heracross|Torment|p1a: Pikachu
+|-start|p1a: Pikachu|Torment
+|move|p1b: Zoë|Night Slash|p2b: Heracross
+|-resisted|p2b: Heracross
+|-damage|p2b: Heracross|117/157
+|
+|upkeep
+|turn|3
+@channel p2
+|request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Follow Me","id":"followme","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Torment","id":"torment","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Burning Bulwark","id":"burningbulwark","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Feint","id":"feint","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Vibrava","details":"Vibrava, L50, F","condition":"17/135","active":true,"stats":{"atk":113,"def":77,"spa":84,"spd":72,"spe":98},"moves":["aquajet","speedswap"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, M, shiny","condition":"117/157","active":true,"stats":{"atk":177,"def":104,"spa":54,"spd":117,"spe":133},"moves":["followme","torment","burningbulwark","feint"],"baseAbility":"moxie","item":"moonball","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p2: Tinkatuff","details":"Tinkatuff, L50, F","condition":"147/147","active":false,"stats":{"atk":84,"def":90,"spa":65,"spd":105,"spe":125},"moves":["destinybond","wildboltstorm","powersplit"],"baseAbility":"shadowtag","item":"beastball","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Kleavor","details":"Kleavor, L50, M","condition":"145/145","active":false,"stats":{"atk":146,"def":135,"spa":77,"spd":97,"spe":125},"moves":["sweetkiss","poisonfang","prismaticlaser","pluck"],"baseAbility":"shadowtag","item":"jabocaberry","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@channel p2
+|
+|t:|
+|move|p1a: Pikachu|Meteor Beam|p1b: Zoë|[from] lockedmove
+|-damage|p1b: Zoë|63/174
+|move|p2a: Vibrava|Speed Swap|p2b: Heracross
+|-activate|p2a: Vibrava|move: Speed Swap|[of] p2b: Heracross
+|move|p2b: Heracross|Torment|p2a: Vibrava
+|-start|p2a: Vibrava|Torment
+|move|p1b: Zoë|Night Slash|p1a: Pikachu
+|-supereffective|p1a: Pikachu
+|-damage|p1a: Pikachu|13/165
+|
+|upkeep
+|turn|4
+@channel p2
+|request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":14,"maxpp":16,"target":"normal","disabled":true}]},{"moves":[{"move":"Follow Me","id":"followme","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Torment","id":"torment","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Burning Bulwark","id":"burningbulwark","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Feint","id":"feint","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Vibrava","details":"Vibrava, L50, F","condition":"17/135","active":true,"stats":{"atk":113,"def":77,"spa":84,"spd":72,"spe":98},"moves":["aquajet","speedswap"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, M, shiny","condition":"117/157","active":true,"stats":{"atk":177,"def":104,"spa":54,"spd":117,"spe":133},"moves":["followme","torment","burningbulwark","feint"],"baseAbility":"moxie","item":"moonball","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p2: Tinkatuff","details":"Tinkatuff, L50, F","condition":"147/147","active":false,"stats":{"atk":84,"def":90,"spa":65,"spd":105,"spe":125},"moves":["destinybond","wildboltstorm","powersplit"],"baseAbility":"shadowtag","item":"beastball","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Kleavor","details":"Kleavor, L50, M","condition":"145/145","active":false,"stats":{"atk":146,"def":135,"spa":77,"spd":97,"spe":125},"moves":["sweetkiss","poisonfang","prismaticlaser","pluck"],"baseAbility":"shadowtag","item":"jabocaberry","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@channel p2
+|
+|t:|
+|move|p2b: Heracross|Feint|p1b: Zoë
+|-resisted|p1b: Zoë
+|-damage|p1b: Zoë|54/174
+|move|p2a: Vibrava|Aqua Jet|p1a: Pikachu
+|-supereffective|p1a: Pikachu
+|-damage|p1a: Pikachu|0 fnt
+|faint|p1a: Pikachu
+|-end|p1a: Pikachu|Quark Drive|[silent]
+|move|p1b: Zoë|Night Slash|p2b: Heracross
+|-resisted|p2b: Heracross
+|-crit|p2b: Heracross
+|-damage|p2b: Heracross|54/157
+|
+|upkeep
+@channel p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Vibrava","details":"Vibrava, L50, F","condition":"17/135","active":true,"stats":{"atk":113,"def":77,"spa":84,"spd":72,"spe":98},"moves":["aquajet","speedswap"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Heracross","details":"Heracross, L50, M, shiny","condition":"54/157","active":true,"stats":{"atk":177,"def":104,"spa":54,"spd":117,"spe":133},"moves":["followme","torment","burningbulwark","feint"],"baseAbility":"moxie","item":"moonball","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p2: Tinkatuff","details":"Tinkatuff, L50, F","condition":"147/147","active":false,"stats":{"atk":84,"def":90,"spa":65,"spd":105,"spe":125},"moves":["destinybond","wildboltstorm","powersplit"],"baseAbility":"shadowtag","item":"beastball","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Kleavor","details":"Kleavor, L50, M","condition":"145/145","active":false,"stats":{"atk":146,"def":135,"spa":77,"spd":97,"spe":125},"moves":["sweetkiss","poisonfang","prismaticlaser","pluck"],"baseAbility":"shadowtag","item":"jabocaberry","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@channel p2
+|
+|tie

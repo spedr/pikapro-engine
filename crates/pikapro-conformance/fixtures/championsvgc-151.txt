@@ -1,0 +1,470 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 2d19 8de5 41f8 f34e
+genders drawn
+team p1
+Vivillon-Archipelago (M)
+Ability: No Ability
+Level: 50
+Tera Type: Normal
+EVs: 1 HP / 15 Atk / 30 Def / 1 SpA / 5 SpD / 14 Spe
+Naive Nature
+- Stone Edge
+- Kowtow Cleave
+
+Dedenne (M)
+Ability: No Ability
+Level: 50
+Tera Type: Ground
+EVs: 15 HP / 15 Atk / 1 SpA / 23 SpD / 12 Spe
+Bold Nature
+- Aqua Jet
+- Leaf Blade
+- Quick Attack
+- Air Cutter
+
+Slowbro-Galar (M)
+Ability: No Ability
+Level: 50
+Tera Type: Bug
+EVs: 17 Def / 20 SpA / 29 SpD
+Quirky Nature
+- Petal Blizzard
+- Mach Punch
+- Earthquake
+- Extreme Speed
+
+Diggersby (M)
+Ability: No Ability
+Level: 50
+Tera Type: Fairy
+EVs: 2 Atk / 24 Def / 18 SpA / 1 SpD / 21 Spe
+Careful Nature
+- Dazzling Gleam
+
+Raichu (M)
+Ability: No Ability
+Level: 50
+Tera Type: Grass
+EVs: 22 HP / 24 Atk / 10 Def / 4 SpD / 6 Spe
+Serious Nature
+- Leaf Blade
+- Crabhammer
+- Night Slash
+
+Hatterene (F)
+Ability: No Ability
+Level: 50
+Tera Type: Ground
+EVs: 13 HP / 1 Atk / 26 SpA / 18 SpD / 3 Spe
+Rash Nature
+- Aura Sphere
+- Stone Edge
+end
+team p2
+Musharna (M)
+Ability: No Ability
+Level: 50
+Tera Type: Fighting
+EVs: 13 HP / 3 Def / 24 SpA / 15 SpD / 11 Spe
+Sassy Nature
+- Petal Blizzard
+- Shadow Punch
+
+Sharpedo (M)
+Ability: No Ability
+Level: 50
+Tera Type: Fairy
+EVs: 28 Atk / 1 Def / 4 SpA / 8 SpD / 25 Spe
+Lax Nature
+- Earthquake
+- Boomburst
+
+Heliolisk (M)
+Ability: No Ability
+Level: 50
+Tera Type: Ground
+EVs: 11 HP / 14 Atk / 10 Def / 12 SpA / 19 SpD
+Hasty Nature
+- Shadow Punch
+
+Tauros-Paldea-Aqua (M)
+Ability: No Ability
+Level: 50
+Tera Type: Steel
+EVs: 26 HP / 9 Atk / 6 Def / 10 SpA / 1 SpD / 14 Spe
+Timid Nature
+- Boomburst
+- Megahorn
+
+Bastiodon (M)
+Ability: No Ability
+Level: 50
+Tera Type: Electric
+EVs: 3 Atk / 9 SpA / 32 SpD / 21 Spe
+Sassy Nature
+- Dazzling Gleam
+
+Serperior (M)
+Ability: No Ability
+Level: 50
+Tera Type: Dragon
+EVs: 13 HP / 4 Atk / 28 Def / 1 SpA / 2 SpD
+Lax Nature
+- High Horsepower
+end
+choice p1 team 1235
+choice p2 team 4256
+choice p1 move 2 1, move 2 -1
+choice p2 move 2 1, move 1
+choice p1 move 1 1, move 2 2
+choice p2 move 2 1, switch 3
+choice p1 switch 3, move 2 1
+choice p2 move 2 2, switch 3
+choice p1 move 4 1, move 3 -1
+choice p2 switch 3, move 1
+choice p1 pass, switch 4
+choice p2 switch 4, move 2
+choice p1 switch 3, move 1 2
+choice p2 switch 4, move 2
+choice p1 move 2 -2, switch 3
+choice p1 switch 3, pass
+choice p2 switch 4, move 1
+choice p1 move 3 1, move 4 1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Vivillon-Archipelago, L50, M|
+expect |poke|p1|Dedenne, L50, M|
+expect |poke|p1|Slowbro-Galar, L50, M|
+expect |poke|p1|Diggersby, L50, M|
+expect |poke|p1|Raichu, L50, M|
+expect |poke|p1|Hatterene, L50, F|
+expect |poke|p2|Musharna, L50, M|
+expect |poke|p2|Sharpedo, L50, M|
+expect |poke|p2|Heliolisk, L50, M|
+expect |poke|p2|Tauros-Paldea-Aqua, L50, M|
+expect |poke|p2|Bastiodon, L50, M|
+expect |poke|p2|Serperior, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Archipelago, L50, M|156/156
+expect |switch|p1a: Vivillon|Vivillon-Archipelago, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Dedenne|Dedenne, L50, M|157/157
+expect |switch|p1b: Dedenne|Dedenne, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Tauros|Tauros-Paldea-Aqua, L50, M|176/176
+expect |switch|p2a: Tauros|Tauros-Paldea-Aqua, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Sharpedo|Sharpedo, L50, M|145/145
+expect |switch|p2b: Sharpedo|Sharpedo, L50, M|100/100
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2a: Tauros|Megahorn|p1a: Vivillon
+expect |rng|100|79
+expect |rng|24|7
+expect |rng|16|11
+expect |-resisted|p1a: Vivillon|1
+expect |split|p1
+expect |-damage|p1a: Vivillon|126/156
+expect |-damage|p1a: Vivillon|80/100
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Sharpedo|Earthquake|p1a: Vivillon|[spread] p2a,p1b
+expect |-immune|p1a: Vivillon
+expect |rng|100|90
+expect |rng|100|38
+expect |rng|24|6
+expect |rng|16|5
+expect |rng|24|18
+expect |rng|16|9
+expect |-supereffective|p1b: Dedenne|1
+expect |split|p2
+expect |-damage|p2a: Tauros|136/176
+expect |-damage|p2a: Tauros|77/100
+expect |split|p1
+expect |-damage|p1b: Dedenne|37/157
+expect |-damage|p1b: Dedenne|23/100
+expect |move|p1a: Vivillon|Kowtow Cleave|p2a: Tauros
+expect |rng|24|23
+expect |rng|16|7
+expect |-resisted|p2a: Tauros|1
+expect |split|p2
+expect |-damage|p2a: Tauros|124/176
+expect |-damage|p2a: Tauros|70/100
+expect |move|p1b: Dedenne|Leaf Blade|p1a: Vivillon
+expect |rng|100|29
+expect |rng|8|7
+expect |rng|16|8
+expect |-resisted|p1a: Vivillon|2
+expect |split|p1
+expect |-damage|p1a: Vivillon|119/156
+expect |-damage|p1a: Vivillon|76/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Bastiodon|Bastiodon, L50, M|135/135
+expect |switch|p2b: Bastiodon|Bastiodon, L50, M|100/100
+expect |move|p2a: Tauros|Megahorn|p1a: Vivillon
+expect |rng|100|59
+expect |rng|24|7
+expect |rng|16|2
+expect |-resisted|p1a: Vivillon|1
+expect |split|p1
+expect |-damage|p1a: Vivillon|86/156
+expect |-damage|p1a: Vivillon|55/100
+expect |move|p1a: Vivillon|Stone Edge|p2a: Tauros
+expect |rng|100|49
+expect |rng|8|6
+expect |rng|16|14
+expect |-resisted|p2a: Tauros|1
+expect |split|p2
+expect |-damage|p2a: Tauros|111/176
+expect |-damage|p2a: Tauros|63/100
+expect |move|p1b: Dedenne|Leaf Blade|p2b: Bastiodon
+expect |rng|100|66
+expect |rng|8|7
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Bastiodon|118/135
+expect |-damage|p2b: Bastiodon|87/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Slowbro|Slowbro-Galar, L50, M|170/170
+expect |switch|p1a: Slowbro|Slowbro-Galar, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Sharpedo|Sharpedo, L50, M|145/145
+expect |switch|p2b: Sharpedo|Sharpedo, L50, M|100/100
+expect |move|p2a: Tauros|Megahorn|p1b: Dedenne|[miss]
+expect |rng|100|99
+expect |-miss|p2a: Tauros|p1b: Dedenne
+expect |move|p1b: Dedenne|Leaf Blade|p2a: Tauros
+expect |rng|100|34
+expect |rng|8|0
+expect |rng|16|11
+expect |-supereffective|p2a: Tauros|1
+expect |-crit|p2a: Tauros
+expect |split|p2
+expect |-damage|p2a: Tauros|41/176
+expect |-damage|p2a: Tauros|23/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Bastiodon|Bastiodon, L50, M|118/135
+expect |switch|p2a: Bastiodon|Bastiodon, L50, M|87/100
+expect |rng|2|1
+expect |move|p1a: Slowbro|Extreme Speed|p2a: Bastiodon
+expect |rng|100|74
+expect |rng|24|6
+expect |rng|16|12
+expect |-resisted|p2a: Bastiodon|2
+expect |split|p2
+expect |-damage|p2a: Bastiodon|113/135
+expect |-damage|p2a: Bastiodon|83/100
+expect |rng|2|1
+expect |move|p1b: Dedenne|Quick Attack|p1a: Slowbro
+expect |rng|100|20
+expect |rng|24|22
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Slowbro|158/170
+expect |-damage|p1a: Slowbro|92/100
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Sharpedo|Earthquake|p1a: Slowbro|[spread] p2a,p1a,p1b
+expect |rng|100|21
+expect |rng|100|53
+expect |rng|100|92
+expect |rng|24|12
+expect |rng|16|14
+expect |-supereffective|p2a: Bastiodon|2
+expect |rng|24|17
+expect |rng|16|15
+expect |-supereffective|p1a: Slowbro|1
+expect |rng|24|6
+expect |rng|16|13
+expect |-supereffective|p1b: Dedenne|1
+expect |split|p2
+expect |-damage|p2a: Bastiodon|9/135
+expect |-damage|p2a: Bastiodon|6/100
+expect |split|p1
+expect |-damage|p1a: Slowbro|86/170
+expect |-damage|p1a: Slowbro|50/100g
+expect |split|p1
+expect |-damage|p1b: Dedenne|0 fnt
+expect |-damage|p1b: Dedenne|0 fnt
+expect |faint|p1b: Dedenne
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Raichu|Raichu, L50, M|157/157
+expect |switch|p1b: Raichu|Raichu, L50, M|100/100
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Serperior|Serperior, L50, M|163/163
+expect |switch|p2a: Serperior|Serperior, L50, M|100/100
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Archipelago, L50, M|86/156
+expect |switch|p1a: Vivillon|Vivillon-Archipelago, L50, M|55/100
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Sharpedo|Boomburst|p1b: Raichu|[spread] p2a,p1a,p1b
+expect |rng|100|93
+expect |rng|100|10
+expect |rng|100|61
+expect |rng|24|23
+expect |rng|16|9
+expect |rng|24|10
+expect |rng|16|5
+expect |rng|24|16
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Serperior|115/163
+expect |-damage|p2a: Serperior|70/100
+expect |split|p1
+expect |-damage|p1a: Vivillon|8/156
+expect |-damage|p1a: Vivillon|5/100
+expect |split|p1
+expect |-damage|p1b: Raichu|104/157
+expect |-damage|p1b: Raichu|66/100
+expect |move|p1b: Raichu|Leaf Blade|p2b: Sharpedo
+expect |rng|100|22
+expect |rng|8|4
+expect |rng|16|15
+expect |-supereffective|p2b: Sharpedo|1
+expect |split|p2
+expect |-damage|p2b: Sharpedo|9/145
+expect |-damage|p2b: Sharpedo|6/100
+expect |
+expect |upkeep
+expect |turn|6
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Slowbro|Slowbro-Galar, L50, M|86/170
+expect |switch|p1b: Slowbro|Slowbro-Galar, L50, M|50/100g
+expect |split|p2
+expect |switch|p2a: Bastiodon|Bastiodon, L50, M|9/135
+expect |switch|p2a: Bastiodon|Bastiodon, L50, M|6/100
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Sharpedo|Boomburst|p1a: Vivillon|[spread] p2a,p1a,p1b
+expect |rng|100|0
+expect |rng|100|11
+expect |rng|100|3
+expect |rng|24|8
+expect |rng|16|12
+expect |-resisted|p2a: Bastiodon|2
+expect |rng|24|13
+expect |rng|16|12
+expect |rng|24|14
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Bastiodon|3/135
+expect |-damage|p2a: Bastiodon|2/100
+expect |split|p1
+expect |-damage|p1a: Vivillon|0 fnt
+expect |-damage|p1a: Vivillon|0 fnt
+expect |split|p1
+expect |-damage|p1b: Slowbro|43/170
+expect |-damage|p1b: Slowbro|25/100
+expect |faint|p1a: Vivillon
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Raichu|Raichu, L50, M|104/157
+expect |switch|p1a: Raichu|Raichu, L50, M|66/100
+expect |turn|7
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Serperior|Serperior, L50, M|115/163
+expect |switch|p2a: Serperior|Serperior, L50, M|70/100
+expect |rng|2|1
+expect |move|p1b: Slowbro|Extreme Speed|p2a: Serperior
+expect |rng|100|72
+expect |rng|24|19
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Serperior|88/163
+expect |-damage|p2a: Serperior|53/100
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Sharpedo|Earthquake|p1b: Slowbro|[spread] p2a,p1a,p1b
+expect |rng|100|26
+expect |rng|100|60
+expect |rng|100|82
+expect |rng|24|9
+expect |rng|16|8
+expect |-resisted|p2a: Serperior|1
+expect |rng|24|4
+expect |rng|16|11
+expect |-supereffective|p1a: Raichu|1
+expect |rng|24|9
+expect |rng|16|2
+expect |-supereffective|p1b: Slowbro|1
+expect |split|p2
+expect |-damage|p2a: Serperior|71/163
+expect |-damage|p2a: Serperior|43/100
+expect |split|p1
+expect |-damage|p1a: Raichu|0 fnt
+expect |-damage|p1a: Raichu|0 fnt
+expect |split|p1
+expect |-damage|p1b: Slowbro|0 fnt
+expect |-damage|p1b: Slowbro|0 fnt
+expect |faint|p1a: Raichu
+expect |faint|p1b: Slowbro
+expect |
+expect |win|p2

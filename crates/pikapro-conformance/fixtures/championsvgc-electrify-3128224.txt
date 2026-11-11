@@ -1,0 +1,607 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed b1f7 0455 40fb 3d94
+genders drawn
+team p1
+Lopunny @ Lopunnite
+Ability: Cute Charm
+Level: 50
+Tera Type: Stellar
+EVs: 4 Atk / 11 Def / 29 SpD / 21 Spe
+Impish Nature
+- Pin Missile
+- Electrify
+
+Blaziken @ Blazikenite
+Ability: Speed Boost
+Level: 50
+Tera Type: Fire
+EVs: 25 HP / 6 Atk / 1 Def / 22 SpA / 1 SpD / 1 Spe
+Careful Nature
+- Upper Hand
+
+Pikachu (Rampardos) @ Aspear Berry
+Ability: Mold Breaker
+Level: 50
+Shiny: Yes
+Tera Type: Ground
+EVs: 5 HP / 8 Atk / 11 Def / 27 SpA / 11 SpD / 3 Spe
+Bashful Nature
+- Round
+- Guillotine
+- Parabolic Charge
+- Snowscape
+
+Scrafty (M) @ Scraftinite
+Ability: Shed Skin
+Level: 50
+Tera Type: Poison
+EVs: 29 HP / 14 Def / 17 SpD / 6 Spe
+Lonely Nature
+- Electric Terrain
+- Stored Power
+- Dragon Rush
+
+Grimmsnarl (M)
+Ability: Prankster
+Level: 50
+Tera Type: Fighting
+EVs: 3 HP / 24 Atk / 13 Def / 9 SpD / 17 Spe
+Hardy Nature
+- Psyshield Bash
+- Torment
+
+Sableye @ Sablenite
+Ability: Keen Eye
+Level: 50
+Tera Type: Dark
+EVs: 26 HP / 1 Atk / 23 Def / 16 Spe
+Lonely Nature
+- Stun Spore
+end
+team p2
+Ninetales @ Never-Melt Ice
+Ability: Drought
+Level: 50
+Tera Type: Stellar
+EVs: 2 Atk / 16 Def / 5 SpA / 27 SpD / 5 Spe
+Serious Nature
+- Snarl
+- Grassy Terrain
+- Weather Ball
+- Hyper Beam
+
+Volcarona @ Roseli Berry
+Ability: Swarm
+Level: 50
+Tera Type: Water
+EVs: 12 HP / 19 SpA / 2 SpD / 32 Spe
+Jolly Nature
+- Freeze-Dry
+- Spicy Extract
+- Memento
+
+Abomasnow (M) @ Charti Berry
+Ability: Snow Warning
+Level: 50
+Tera Type: Flying
+EVs: 15 HP / 13 Atk / 22 Def / 1 SpA / 5 SpD / 2 Spe
+Brave Nature
+- Acid Armor
+- Snap Trap
+
+Espathra (M) @ Charcoal
+Ability: Speed Boost
+Level: 50
+Tera Type: Bug
+EVs: 10 HP / 30 Atk / 6 Def / 7 SpA / 12 SpD / 1 Spe
+Impish Nature
+- Thief
+- Gigaton Hammer
+- Blast Burn
+
+ThisNameIsFarTooLongToKeep (Vivillon-Sun) (F)
+Ability: Compound Eyes
+Level: 50
+Tera Type: Stellar
+EVs: 12 Atk / 14 Def / 13 SpA / 27 SpD
+Mild Nature
+- Sky Attack
+- Assurance
+- No Retreat
+
+Vivillon-River (F)
+Ability: Shield Dust
+Level: 50
+Tera Type: Flying
+EVs: 23 HP / 6 Atk / 13 Def / 1 SpA / 1 SpD / 22 Spe
+Sassy Nature
+- Memento
+- Transform
+- Brick Break
+- Hyper Voice
+end
+choice p1 team 1536
+choice p2 team 4361
+choice p1 default
+choice p2 move 2 2, move 1
+choice p1 move 1 -2 mega, move 1 -1
+choice p2 move 3 -2 ,  switch Vivillon
+choice p1 pass, switch 4
+choice p2 pass ,  switch ninetales
+choice p1 move 2 2, move 1 2
+choice p2 move 1, move 3 1
+choice p1 move 2 -2, move 1 2
+choice p2 move 1 -2, move 4 2
+choice p1 move 2 -2, move 1 2
+choice p2 switch 3, move 3 2
+choice p1 move 1 1, move 1 1
+choice p2 switch 3, move 4 -1
+choice p2 switch 3, pass
+choice p1 move 2 1, move 1 -1
+choice p2 move Snap Trap +1,move 1
+choice p1 move 2 1, move 1 2
+choice p2 move 2 -2, move 1
+choice p1 move 1 2, move 1 -1
+choice p2 default
+choice p1 move 1 1, switch rampardos
+choice p2 move 2 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Lopunny, L50, M|
+expect |poke|p1|Blaziken, L50, F|
+expect |poke|p1|Rampardos, L50, M, shiny|
+expect |poke|p1|Scrafty, L50, M|
+expect |poke|p1|Grimmsnarl, L50, M|
+expect |poke|p1|Sableye, L50, M|
+expect |poke|p2|Ninetales, L50, F|
+expect |poke|p2|Volcarona, L50, F|
+expect |poke|p2|Abomasnow, L50, M|
+expect |poke|p2|Espathra, L50, M|
+expect |poke|p2|Vivillon-Sun, L50, F|
+expect |poke|p2|Vivillon-River, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Lopunny|Lopunny, L50, M|140/140
+expect |switch|p1a: Lopunny|Lopunny, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Grimmsnarl|Grimmsnarl, L50, M|173/173
+expect |switch|p1b: Grimmsnarl|Grimmsnarl, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Espathra|Espathra, L50, M|180/180
+expect |switch|p2a: Espathra|Espathra, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Abomasnow|Abomasnow, L50, M|180/180
+expect |switch|p2b: Abomasnow|Abomasnow, L50, M|100/100
+expect |-weather|Snowscape|[from] ability: Snow Warning|[of] p2b: Abomasnow
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1a: Lopunny|Pin Missile|p2a: Espathra
+expect |rng|100|48
+expect |rng|20|9
+expect |rng|24|20
+expect |rng|16|13
+expect |-supereffective|p2a: Espathra|1
+expect |split|p2
+expect |-damage|p2a: Espathra|158/180
+expect |-damage|p2a: Espathra|87/100
+expect |rng|24|7
+expect |rng|16|8
+expect |-supereffective|p2a: Espathra|1
+expect |split|p2
+expect |-damage|p2a: Espathra|136/180
+expect |-damage|p2a: Espathra|75/100
+expect |rng|24|14
+expect |rng|16|0
+expect |-supereffective|p2a: Espathra|1
+expect |split|p2
+expect |-damage|p2a: Espathra|110/180
+expect |-damage|p2a: Espathra|61/100
+expect |-hitcount|p2a: Espathra|3
+expect |move|p2a: Espathra|Gigaton Hammer|p1b: Grimmsnarl
+expect |rng|100|7
+expect |rng|24|11
+expect |rng|16|7
+expect |-supereffective|p1b: Grimmsnarl|1
+expect |split|p1
+expect |-damage|p1b: Grimmsnarl|23/173
+expect |-damage|p1b: Grimmsnarl|13/100
+expect |move|p1b: Grimmsnarl|Psyshield Bash|p2a: Espathra
+expect |rng|100|53
+expect |rng|24|2
+expect |rng|16|13
+expect |-resisted|p2a: Espathra|1
+expect |split|p2
+expect |-damage|p2a: Espathra|80/180
+expect |-damage|p2a: Espathra|44/100
+expect |rng|100|7
+expect |-boost|p1b: Grimmsnarl|def|1
+expect |move|p2b: Abomasnow|Acid Armor|p2b: Abomasnow
+expect |-boost|p2b: Abomasnow|def|2
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |-ability|p2a: Espathra|Speed Boost|boost
+expect |-boost|p2a: Espathra|spe|1
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Vivillon|Vivillon-River, L50, F|178/178
+expect |switch|p2b: Vivillon|Vivillon-River, L50, F|100/100
+expect |detailschange|p1a: Lopunny|Lopunny-Mega, L50, M
+expect |-mega|p1a: Lopunny|Lopunny|Lopunnite
+expect |move|p2a: Espathra|Blast Burn|p2b: Vivillon
+expect |rng|100|75
+expect |rng|24|6
+expect |rng|16|1
+expect |-supereffective|p2b: Vivillon|1
+expect |split|p2
+expect |-damage|p2b: Vivillon|0 fnt
+expect |-damage|p2b: Vivillon|0 fnt
+expect |-mustrecharge|p2a: Espathra
+expect |faint|p2b: Vivillon
+expect |move|p1a: Lopunny|Pin Missile|p1b: Grimmsnarl
+expect |rng|100|84
+expect |rng|20|18
+expect |rng|24|11
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1b: Grimmsnarl|11/173
+expect |-damage|p1b: Grimmsnarl|6/100
+expect |rng|24|20
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1b: Grimmsnarl|0 fnt
+expect |-damage|p1b: Grimmsnarl|0 fnt
+expect |faint|p1b: Grimmsnarl
+expect |-hitcount|p1: Grimmsnarl|2
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |-ability|p2a: Espathra|Speed Boost|boost
+expect |-boost|p2a: Espathra|spe|1
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Ninetales|Ninetales, L50, F|148/148
+expect |switch|p2b: Ninetales|Ninetales, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Sableye|Sableye, L50, M|151/151
+expect |switch|p1b: Sableye|Sableye, L50, M|100/100
+expect |-weather|SunnyDay|[from] ability: Drought|[of] p2b: Ninetales
+expect |turn|3
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |cant|p2a: Espathra|recharge
+expect |move|p1a: Lopunny|Electrify|p2b: Ninetales
+expect |-singleturn|p2b: Ninetales|move: Electrify
+expect |move|p2b: Ninetales|Weather Ball|p1a: Lopunny
+expect |rng|100|8
+expect |rng|24|22
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Lopunny|111/140
+expect |-damage|p1a: Lopunny|79/100
+expect |move|p1b: Sableye|Stun Spore|p2b: Ninetales
+expect |rng|100|64
+expect |-status|p2b: Ninetales|par
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |-ability|p2a: Espathra|Speed Boost|boost
+expect |-boost|p2a: Espathra|spe|1
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Espathra|Thief|p2b: Ninetales
+expect |rng|100|48
+expect |rng|24|3
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Ninetales|123/148 par
+expect |-damage|p2b: Ninetales|83/100 par
+expect |move|p1a: Lopunny|Electrify|p1b: Sableye
+expect |-singleturn|p1b: Sableye|move: Electrify
+expect |move|p1b: Sableye|Stun Spore|p2b: Ninetales|[miss]
+expect |rng|100|83
+expect |-miss|p1b: Sableye|p2b: Ninetales
+expect |rng|8|2
+expect |move|p2b: Ninetales|Hyper Beam|p1b: Sableye
+expect |-immune|p1b: Sableye
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |-ability|p2a: Espathra|Speed Boost|boost
+expect |-boost|p2a: Espathra|spe|1
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Abomasnow|Abomasnow, L50, M|180/180
+expect |switch|p2a: Abomasnow|Abomasnow, L50, M|100/100
+expect |-weather|Snowscape|[from] ability: Snow Warning|[of] p2a: Abomasnow
+expect |move|p1a: Lopunny|Electrify|p1b: Sableye
+expect |-singleturn|p1b: Sableye|move: Electrify
+expect |move|p1b: Sableye|Stun Spore|p2b: Ninetales|[miss]
+expect |rng|100|90
+expect |-miss|p1b: Sableye|p2b: Ninetales
+expect |rng|8|5
+expect |move|p2b: Ninetales|Weather Ball|p1b: Sableye
+expect |rng|100|95
+expect |rng|24|11
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Sableye|84/151
+expect |-damage|p1b: Sableye|55/100
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Espathra|Espathra, L50, M|80/180
+expect |switch|p2a: Espathra|Espathra, L50, M|44/100
+expect |move|p1a: Lopunny|Pin Missile|p2a: Espathra
+expect |rng|100|81
+expect |rng|20|4
+expect |rng|24|16
+expect |rng|16|5
+expect |-supereffective|p2a: Espathra|1
+expect |split|p2
+expect |-damage|p2a: Espathra|42/180
+expect |-damage|p2a: Espathra|23/100
+expect |rng|24|12
+expect |rng|16|6
+expect |-supereffective|p2a: Espathra|1
+expect |split|p2
+expect |-damage|p2a: Espathra|6/180
+expect |-damage|p2a: Espathra|3/100
+expect |-hitcount|p2a: Espathra|2
+expect |move|p1b: Sableye|Stun Spore|p2a: Espathra
+expect |rng|100|42
+expect |-status|p2a: Espathra|par
+expect |rng|8|6
+expect |move|p2b: Ninetales|Hyper Beam|p2a: Espathra
+expect |rng|100|81
+expect |rng|24|8
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Espathra|0 fnt
+expect |-damage|p2a: Espathra|0 fnt
+expect |-mustrecharge|p2b: Ninetales
+expect |faint|p2a: Espathra
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Abomasnow|Abomasnow, L50, M|180/180
+expect |switch|p2a: Abomasnow|Abomasnow, L50, M|100/100
+expect |turn|7
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1a: Lopunny|Electrify|p2a: Abomasnow
+expect |-singleturn|p2a: Abomasnow|move: Electrify
+expect |rng|2|1
+expect |move|p1b: Sableye|Stun Spore|p1a: Lopunny
+expect |rng|100|46
+expect |-status|p1a: Lopunny|par
+expect |rng|2|1
+expect |move|p2a: Abomasnow|Snap Trap|p1a: Lopunny
+expect |rng|100|15
+expect |rng|24|1
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Lopunny|96/140 par
+expect |-damage|p1a: Lopunny|68/100 par
+expect |rng|2|0
+expect |-activate|p1a: Lopunny|move: Snap Trap|[of] p2a: Abomasnow
+expect |rng|2|1
+expect |rng|2|0
+expect |cant|p2b: Ninetales|recharge
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Lopunny|79/140 par|[from] move: Snap Trap|[partiallytrapped]
+expect |-damage|p1a: Lopunny|56/100 par|[from] move: Snap Trap|[partiallytrapped]
+expect |upkeep
+expect |turn|8
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|8|3
+expect |move|p1a: Lopunny|Electrify|p2a: Abomasnow
+expect |-singleturn|p2a: Abomasnow|move: Electrify
+expect |rng|2|0
+expect |move|p1b: Sableye|Stun Spore|p2b: Ninetales
+expect |rng|100|0
+expect |-fail|p2b: Ninetales|par
+expect |rng|2|0
+expect |move|p2a: Abomasnow|Snap Trap|p2b: Ninetales
+expect |rng|100|86
+expect |rng|24|21
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Ninetales|105/148 par
+expect |-damage|p2b: Ninetales|70/100 par
+expect |rng|2|0
+expect |-activate|p2b: Ninetales|move: Snap Trap|[of] p2a: Abomasnow
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|8|6
+expect |move|p2b: Ninetales|Snarl|p1a: Lopunny|[spread] p1a,p1b
+expect |rng|100|23
+expect |rng|100|41
+expect |rng|24|21
+expect |rng|16|15
+expect |-resisted|p1a: Lopunny|1
+expect |rng|24|8
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Lopunny|74/140 par
+expect |-damage|p1a: Lopunny|52/100 par
+expect |split|p1
+expect |-damage|p1b: Sableye|63/151
+expect |-damage|p1b: Sableye|41/100
+expect |rng|100|20
+expect |-unboost|p1a: Lopunny|spa|1
+expect |rng|100|70
+expect |-unboost|p1b: Sableye|spa|1
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Lopunny|57/140 par|[from] move: Snap Trap|[partiallytrapped]
+expect |-damage|p1a: Lopunny|40/100 par|[from] move: Snap Trap|[partiallytrapped]
+expect |split|p2
+expect |-damage|p2b: Ninetales|87/148 par|[from] move: Snap Trap|[partiallytrapped]
+expect |-damage|p2b: Ninetales|58/100 par|[from] move: Snap Trap|[partiallytrapped]
+expect |upkeep
+expect |turn|9
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|8|0
+expect |cant|p1a: Lopunny|par
+expect |rng|2|1
+expect |move|p1b: Sableye|Stun Spore|p1a: Lopunny
+expect |rng|100|9
+expect |-fail|p1a: Lopunny|par
+expect |rng|2|0
+expect |move|p2a: Abomasnow|Acid Armor|p2a: Abomasnow
+expect |-boost|p2a: Abomasnow|def|2
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|8|0
+expect |cant|p2b: Ninetales|par
+expect |
+expect |-weather|none
+expect |split|p1
+expect |-damage|p1a: Lopunny|40/140 par|[from] move: Snap Trap|[partiallytrapped]
+expect |-damage|p1a: Lopunny|28/100 par|[from] move: Snap Trap|[partiallytrapped]
+expect |split|p2
+expect |-damage|p2b: Ninetales|69/148 par|[from] move: Snap Trap|[partiallytrapped]
+expect |-damage|p2b: Ninetales|46/100 par|[from] move: Snap Trap|[partiallytrapped]
+expect |upkeep
+expect |turn|10
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Pikachu|Rampardos, L50, M, shiny|177/177
+expect |switch|p1b: Pikachu|Rampardos, L50, M, shiny|100/100
+expect |-ability|p1b: Pikachu|Mold Breaker
+expect |rng|2|0
+expect |rng|8|0
+expect |cant|p1a: Lopunny|par
+expect |rng|2|0
+expect |move|p2a: Abomasnow|Snap Trap|p1a: Lopunny
+expect |rng|100|60
+expect |rng|24|15
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Lopunny|24/140 par
+expect |-damage|p1a: Lopunny|17/100 par
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|8|5
+expect |move|p2b: Ninetales|Snarl|p1a: Lopunny|[spread] p1a,p1b
+expect |rng|100|90
+expect |rng|100|33
+expect |rng|24|19
+expect |rng|16|14
+expect |-resisted|p1a: Lopunny|1
+expect |rng|24|13
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Lopunny|18/140 par
+expect |-damage|p1a: Lopunny|12/100 par
+expect |split|p1
+expect |-damage|p1b: Pikachu|153/177
+expect |-damage|p1b: Pikachu|86/100
+expect |rng|100|23
+expect |-unboost|p1a: Lopunny|spa|1
+expect |rng|100|79
+expect |-unboost|p1b: Pikachu|spa|1
+expect |
+expect |split|p1
+expect |-damage|p1a: Lopunny|1/140 par|[from] move: Snap Trap|[partiallytrapped]
+expect |-damage|p1a: Lopunny|1/100 par|[from] move: Snap Trap|[partiallytrapped]
+expect |split|p2
+expect |-damage|p2b: Ninetales|51/148 par|[from] move: Snap Trap|[partiallytrapped]
+expect |-damage|p2b: Ninetales|34/100 par|[from] move: Snap Trap|[partiallytrapped]
+expect |upkeep
+expect |turn|11
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny, L50, M","condition":"140/140","active":true,"stats":{"atk":100,"def":126,"spa":66,"spd":145,"spe":146},"moves":["pinmissile","electrify"],"baseAbility":"cutecharm","item":"lopunnite","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false},{"ident":"p1: Blaziken","details":"Blaziken, L50, F","condition":"180/180","active":true,"stats":{"atk":146,"def":91,"spa":136,"spd":100,"spe":101},"moves":["upperhand"],"baseAbility":"speedboost","item":"blazikenite","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Scrafty","details":"Scrafty, L50, M","condition":"169/169","active":false,"stats":{"atk":121,"def":134,"spa":65,"spd":152,"spe":84},"moves":["electricterrain","storedpower","dragonrush"],"baseAbility":"shedskin","item":"scraftinite","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"173/173","active":false,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"151/151","active":false,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"148/148","active":true,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p2: Volcarona","details":"Volcarona, L50, F","condition":"172/172","active":true,"stats":{"atk":80,"def":85,"spa":156,"spd":127,"spe":167},"moves":["freezedry","spicyextract","memento"],"baseAbility":"swarm","item":"roseliberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":false,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"180/180","active":false,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: ThisNameIsFarTooLong","details":"Vivillon-Sun, L50, F","condition":"155/155","active":false,"stats":{"atk":84,"def":75,"spa":135,"spd":97,"spe":109},"moves":["skyattack","assurance","noretreat"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"178/178","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Electrify","id":"electrify","pp":20,"maxpp":20,"target":"normal","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Psyshield Bash","id":"psyshieldbash","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Torment","id":"torment","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny, L50, M","condition":"140/140","active":true,"stats":{"atk":100,"def":126,"spa":66,"spd":145,"spe":146},"moves":["pinmissile","electrify"],"baseAbility":"cutecharm","item":"lopunnite","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"173/173","active":true,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"151/151","active":false,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Thief","id":"thief","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Gigaton Hammer","id":"gigatonhammer","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Blast Burn","id":"blastburn","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Acid Armor","id":"acidarmor","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Snap Trap","id":"snaptrap","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"180/180","active":true,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":true,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"178/178","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"148/148","active":false,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Electrify","id":"electrify","pp":20,"maxpp":20,"target":"normal","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Psyshield Bash","id":"psyshieldbash","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Torment","id":"torment","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny, L50, M","condition":"140/140","active":true,"stats":{"atk":100,"def":126,"spa":66,"spd":145,"spe":146},"moves":["pinmissile","electrify"],"baseAbility":"cutecharm","item":"lopunnite","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"23/173","active":true,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"151/151","active":false,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Thief","id":"thief","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Gigaton Hammer","id":"gigatonhammer","pp":7,"maxpp":8,"target":"normal","disabled":true},{"move":"Blast Burn","id":"blastburn","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"Snap Trap","id":"snaptrap","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"80/180","active":true,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":true,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"178/178","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"148/148","active":false,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny-Mega, L50, M","condition":"140/140","active":true,"stats":{"atk":160,"def":137,"spa":66,"spd":145,"spe":176},"moves":["pinmissile","electrify"],"baseAbility":"scrappy","item":"lopunnite","pokeball":"pokeball","ability":"scrappy","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"0 fnt","active":true,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"151/151","active":false,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"80/180","active":true,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"0 fnt","active":true,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":false,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"148/148","active":false,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Electrify","id":"electrify","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Stun Spore","id":"stunspore","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny-Mega, L50, M","condition":"140/140","active":true,"stats":{"atk":160,"def":137,"spa":66,"spd":145,"spe":176},"moves":["pinmissile","electrify"],"baseAbility":"scrappy","item":"lopunnite","pokeball":"pokeball","ability":"scrappy","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"151/151","active":true,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true},{"moves":[{"move":"Snarl","id":"snarl","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Weather Ball","id":"weatherball","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Hyper Beam","id":"hyperbeam","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"80/180","active":true,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"148/148","active":true,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":false,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Electrify","id":"electrify","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Stun Spore","id":"stunspore","pp":19,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny-Mega, L50, M","condition":"111/140","active":true,"stats":{"atk":160,"def":137,"spa":66,"spd":145,"spe":176},"moves":["pinmissile","electrify"],"baseAbility":"scrappy","item":"lopunnite","pokeball":"pokeball","ability":"scrappy","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"151/151","active":true,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Thief","id":"thief","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Gigaton Hammer","id":"gigatonhammer","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Blast Burn","id":"blastburn","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Snarl","id":"snarl","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Weather Ball","id":"weatherball","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Hyper Beam","id":"hyperbeam","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"80/180","active":true,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"148/148 par","active":true,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":false,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Electrify","id":"electrify","pp":18,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Stun Spore","id":"stunspore","pp":18,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny-Mega, L50, M","condition":"111/140","active":true,"stats":{"atk":160,"def":137,"spa":66,"spd":145,"spe":176},"moves":["pinmissile","electrify"],"baseAbility":"scrappy","item":"lopunnite","pokeball":"pokeball","ability":"scrappy","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"151/151","active":true,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Thief","id":"thief","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Gigaton Hammer","id":"gigatonhammer","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Blast Burn","id":"blastburn","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Snarl","id":"snarl","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Weather Ball","id":"weatherball","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Hyper Beam","id":"hyperbeam","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"80/180","active":true,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"123/148 par","active":true,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":false,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Electrify","id":"electrify","pp":17,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Stun Spore","id":"stunspore","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny-Mega, L50, M","condition":"111/140","active":true,"stats":{"atk":160,"def":137,"spa":66,"spd":145,"spe":176},"moves":["pinmissile","electrify"],"baseAbility":"scrappy","item":"lopunnite","pokeball":"pokeball","ability":"scrappy","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"84/151","active":true,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"Snap Trap","id":"snaptrap","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Snarl","id":"snarl","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Weather Ball","id":"weatherball","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Hyper Beam","id":"hyperbeam","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":true,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"123/148 par","active":true,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"80/180","active":false,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny-Mega, L50, M","condition":"111/140","active":true,"stats":{"atk":160,"def":137,"spa":66,"spd":145,"spe":176},"moves":["pinmissile","electrify"],"baseAbility":"scrappy","item":"lopunnite","pokeball":"pokeball","ability":"scrappy","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"84/151","active":true,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"0 fnt","active":true,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"123/148 par","active":true,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":false,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Electrify","id":"electrify","pp":17,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Stun Spore","id":"stunspore","pp":16,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny-Mega, L50, M","condition":"111/140","active":true,"stats":{"atk":160,"def":137,"spa":66,"spd":145,"spe":176},"moves":["pinmissile","electrify"],"baseAbility":"scrappy","item":"lopunnite","pokeball":"pokeball","ability":"scrappy","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"84/151","active":true,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"Snap Trap","id":"snaptrap","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":true,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"123/148 par","active":true,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"0 fnt","active":false,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Electrify","id":"electrify","pp":16,"maxpp":20,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Stun Spore","id":"stunspore","pp":15,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny-Mega, L50, M","condition":"79/140 par","active":true,"stats":{"atk":160,"def":137,"spa":66,"spd":145,"spe":176},"moves":["pinmissile","electrify"],"baseAbility":"scrappy","item":"lopunnite","pokeball":"pokeball","ability":"scrappy","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"84/151","active":true,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"Snap Trap","id":"snaptrap","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Snarl","id":"snarl","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Weather Ball","id":"weatherball","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Hyper Beam","id":"hyperbeam","pp":6,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":true,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"123/148 par","active":true,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"0 fnt","active":false,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Electrify","id":"electrify","pp":15,"maxpp":20,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Stun Spore","id":"stunspore","pp":14,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny-Mega, L50, M","condition":"57/140 par","active":true,"stats":{"atk":160,"def":137,"spa":66,"spd":145,"spe":176},"moves":["pinmissile","electrify"],"baseAbility":"scrappy","item":"lopunnite","pokeball":"pokeball","ability":"scrappy","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"63/151","active":true,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"Snap Trap","id":"snaptrap","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Snarl","id":"snarl","pp":15,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Weather Ball","id":"weatherball","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Hyper Beam","id":"hyperbeam","pp":6,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":true,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"87/148 par","active":true,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"0 fnt","active":false,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Electrify","id":"electrify","pp":15,"maxpp":20,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Stun Spore","id":"stunspore","pp":13,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny-Mega, L50, M","condition":"40/140 par","active":true,"stats":{"atk":160,"def":137,"spa":66,"spd":145,"spe":176},"moves":["pinmissile","electrify"],"baseAbility":"scrappy","item":"lopunnite","pokeball":"pokeball","ability":"scrappy","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"63/151","active":true,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"177/177","active":false,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Acid Armor","id":"acidarmor","pp":18,"maxpp":20,"target":"self","disabled":false},{"move":"Snap Trap","id":"snaptrap","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Snarl","id":"snarl","pp":15,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Weather Ball","id":"weatherball","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Hyper Beam","id":"hyperbeam","pp":6,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":true,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"69/148 par","active":true,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"0 fnt","active":false,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Electrify","id":"electrify","pp":15,"maxpp":20,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Round","id":"round","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Guillotine","id":"guillotine","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Parabolic Charge","id":"paraboliccharge","pp":20,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Snowscape","id":"snowscape","pp":8,"maxpp":8,"target":"all","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Lopunny","details":"Lopunny-Mega, L50, M","condition":"1/140 par","active":true,"stats":{"atk":160,"def":137,"spa":66,"spd":145,"spe":176},"moves":["pinmissile","electrify"],"baseAbility":"scrappy","item":"lopunnite","pokeball":"pokeball","ability":"scrappy","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Rampardos, L50, M, shiny","condition":"153/177","active":true,"stats":{"atk":193,"def":91,"spa":112,"spd":81,"spe":81},"moves":["round","guillotine","paraboliccharge","snowscape"],"baseAbility":"moldbreaker","item":"aspearberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p1: Sableye","details":"Sableye, L50, M","condition":"63/151","active":false,"stats":{"atk":105,"def":106,"spa":85,"spd":85,"spe":86},"moves":["stunspore"],"baseAbility":"keeneye","item":"sablenite","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":164,"def":98,"spa":115,"spd":104,"spe":97},"moves":["psyshieldbash","torment"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Acid Armor","id":"acidarmor","pp":18,"maxpp":20,"target":"self","disabled":false},{"move":"Snap Trap","id":"snaptrap","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Snarl","id":"snarl","pp":14,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Weather Ball","id":"weatherball","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Hyper Beam","id":"hyperbeam","pp":6,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"180/180","active":true,"stats":{"atk":137,"def":117,"spa":113,"spd":110,"spe":73},"moves":["acidarmor","snaptrap"],"baseAbility":"snowwarning","item":"chartiberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p2: Ninetales","details":"Ninetales, L50, F","condition":"51/148 par","active":true,"stats":{"atk":98,"def":111,"spa":106,"spd":147,"spe":125},"moves":["snarl","grassyterrain","weatherball","hyperbeam"],"baseAbility":"drought","item":"nevermeltice","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p2: Espathra","details":"Espathra, L50, M","condition":"0 fnt","active":false,"stats":{"atk":110,"def":94,"spa":115,"spd":92,"spe":126},"moves":["thief","gigatonhammer","blastburn"],"baseAbility":"speedboost","item":"charcoal","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":78,"def":83,"spa":111,"spd":78,"spe":117},"moves":["memento","transform","brickbreak","hypervoice"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false}]}}

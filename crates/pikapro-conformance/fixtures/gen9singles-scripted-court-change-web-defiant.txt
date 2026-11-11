@@ -1,0 +1,85 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Ribombee
+Ability: Shield Dust
+Hardy Nature
+- Sticky Web
+- Splash
+
+Kingambit
+Ability: Defiant
+Hardy Nature
+- Splash
+end
+team p2
+Cinderace
+Ability: Blaze
+Hardy Nature
+- Court Change
+end
+choice p1 move 1
+choice p2 move 1
+choice p1 switch 2
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Ribombee|Ribombee, F|261/261
+expect |switch|p1a: Ribombee|Ribombee, F|261/261
+expect |split|p2
+expect |switch|p2a: Cinderace|Cinderace, F|301/301
+expect |switch|p2a: Cinderace|Cinderace, F|301/301
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Ribombee|Sticky Web|p2a: Cinderace
+expect |-sidestart|p2: p2|move: Sticky Web
+expect |move|p2a: Cinderace|Court Change|p2a: Cinderace
+expect |-swapsideconditions
+expect |-activate|p2a: Cinderace|move: Court Change
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Kingambit|Kingambit, F|341/341
+expect |switch|p1a: Kingambit|Kingambit, F|341/341
+expect |-activate|p1a: Kingambit|move: Sticky Web
+expect |-unboost|p1a: Kingambit|spe|1
+expect |-ability|p1a: Kingambit|Defiant|boost
+expect |-boost|p1a: Kingambit|atk|2
+expect |move|p2a: Cinderace|Court Change|p2a: Cinderace
+expect |-swapsideconditions
+expect |-activate|p2a: Cinderace|move: Court Change
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Cinderace|Court Change|p2a: Cinderace
+expect |-swapsideconditions
+expect |-activate|p2a: Cinderace|move: Court Change
+expect |move|p1a: Kingambit|Splash|p1a: Kingambit
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|4

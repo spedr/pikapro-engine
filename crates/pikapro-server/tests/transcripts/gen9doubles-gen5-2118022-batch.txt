@@ -1,0 +1,220 @@
+# gen9doubles-gen5-2118022-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@write
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,bfd708fdbe12a543"}
+>player p1 {"name":"Alice","team":"Mr. Bubbles|NecrozmaDuskMane||PrismArmor|PhotonGeyser,HydroSteam,LashOut|Calm|24,81,172,170,9,27||||50|,,,,,Stellar]Slowking||DubiousDisc|ShadowTag|Hurricane|Hasty|198,6,48,12,,244|||S|50|,,,,,Dragon]Overqwil||RustedShield|PoisonPoint|CrossPoison,HealPulse|Impish|120,134,56,24,68,91|M|||50|,,,,,Flying]ThisNameIsFarTooLongToKeep|Chingling|ChartiBerry|Levitate|LockOn,Disable,ScaryFace|Gentle|241,3,31,35,130,48|F|||50|,,,,,Steel]Eelektross|||MagnetPull|Tackle,WildCharge|Lax|,68,216,2,,223||||50|,,,,,Psychic]Porygon||GrassySeed|Trace|PainSplit,Haze|Docile|24,99,153,52,23,122||||50|,,,,,Poison"}
+@write
+>player p2 {"name":"Bob","team":"ThisNameIsFarTooLongToKeep|Chewtle|IronBall|SwiftSwim|MightyCleave,ChargeBeam,BlueFlare|Calm|48,75,101,87,23,43||||50|,,,,,Rock]Big Tony's Pal|Keldeo|AssaultVest|Justified|Tailwind,ThunderShock,Dig|Timid|,144,46,106,185,29||||50|,,,,,Water]Mr. Bubbles|Sableye||ShadowTag|Minimize,Ember,MuddyWater,DoubleHit|Careful|111,16,64,62,216,22||||50|,,,,,Fire]Zoë|Naclstack|HardStone|PurifyingSalt|RevelationDance,VictoryDance,SteelWing|Sassy|37,99,4,56,123,186|F|||50|,,,,,Poison]Oricorio-Pom-Pom||HeavyDutyBoots|Dancer|Torment|Naughty|93,29,172,8,178,11|F||S|50|,,,,,Poison]Abomasnow|||ArenaTrap|RisingVoltage,MagicalLeaf,IceBeam,BarbBarrage|Docile|64,150,31,162,44,2||||50|,,,,,Dark"}
+>p1 switch Eelektross
+@write
+>p2 undo
+@write
+>p1 move 1 2 terastallize, switch 4
+@write
+>p2 move 3 -2 terastal
+>p2 move 2 -2, move 3 2
+@write
+>p1 switch 3, move 1 2
+>p2 move 1 2, move 1
+@write
+>p1 move 1 2 ,  move lock-on +1
+@write
+>p2 move 2 2 terastallize, move 2 2
+>p2 switch 1, switch 1
+@write
+>p1 move 2 -2
+>p2 move 2 1, move thundershock -1
+@write
+>p1 switch 5, move 2 -1
+# a comment
+>p1 switch Overqwil
+@write
+>p2 switch 3, move 3 +1
+>p1 default, switch Mr. Bubbles
+@write
+>forcetie
+>p1 move 1
+@message
+update
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+@message
+sideupdate
+p1
+|error|[Invalid choice] Incomplete choice: switch Eelektross - missing other pokemon
+@message
+update
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: Mr. Bubbles|Necrozma-Dusk-Mane, L50|175/175
+|switch|p1a: Mr. Bubbles|Necrozma-Dusk-Mane, L50|175/175
+|split|p1
+|switch|p1b: Slowking|Slowking, L50, M, shiny|195/195
+|switch|p1b: Slowking|Slowking, L50, M, shiny|195/195
+|split|p2
+|switch|p2a: ThisNameIsFarTooLong|Chewtle, L50, F|131/131
+|switch|p2a: ThisNameIsFarTooLong|Chewtle, L50, F|131/131
+|split|p2
+|switch|p2b: Big Tony's Pal|Keldeo, L50|166/166
+|switch|p2b: Big Tony's Pal|Keldeo, L50|166/166
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Photon Geyser","id":"photongeyser","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Lash Out","id":"lashout","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Stellar"},{"moves":[{"move":"Hurricane","id":"hurricane","pp":16,"maxpp":16,"target":"any","disabled":false}],"canTerastallize":"Dragon"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Mr. Bubbles","details":"Necrozma-Dusk-Mane, L50","condition":"175/175","active":true,"stats":{"atk":168,"def":169,"spa":154,"spd":143,"spe":100},"moves":["photongeyser","hydrosteam","lashout"],"baseAbility":"prismarmor","item":"","pokeball":"pokeball","ability":"prismarmor","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Slowking","details":"Slowking, L50, M, shiny","condition":"195/195","active":true,"stats":{"atk":96,"def":95,"spa":122,"spd":130,"spe":89},"moves":["hurricane"],"baseAbility":"shadowtag","item":"dubiousdisc","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Overqwil","details":"Overqwil, L50, M","condition":"175/175","active":false,"stats":{"atk":152,"def":134,"spa":79,"spd":94,"spe":116},"moves":["crosspoison","healpulse"],"baseAbility":"poisonpoint","item":"rustedshield","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Chingling, L50, F","condition":"150/150","active":false,"stats":{"atk":50,"def":66,"spa":89,"spd":94,"spe":71},"moves":["lockon","disable","scaryface"],"baseAbility":"levitate","item":"chartiberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Eelektross","details":"Eelektross, L50, F","condition":"160/160","active":false,"stats":{"atk":144,"def":139,"spa":125,"spd":90,"spe":98},"moves":["tackle","wildcharge"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Porygon","details":"Porygon, L50","condition":"143/143","active":false,"stats":{"atk":92,"def":109,"spa":112,"spd":98,"spe":75},"moves":["painsplit","haze"],"baseAbility":"trace","item":"grassyseed","pokeball":"pokeball","ability":"trace","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Mighty Cleave","id":"mightycleave","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Charge Beam","id":"chargebeam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Blue Flare","id":"blueflare","pp":8,"maxpp":8,"target":"normal","disabled":false}],"trapped":true,"canTerastallize":"Rock"},{"moves":[{"move":"Tailwind","id":"tailwind","pp":24,"maxpp":24,"target":"allySide","disabled":true},{"move":"Thunder Shock","id":"thundershock","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Dig","id":"dig","pp":16,"maxpp":16,"target":"normal","disabled":false}],"maybeTrapped":true,"canTerastallize":"Water"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Chewtle, L50, F","condition":"131/131","active":true,"stats":{"atk":83,"def":83,"spa":69,"spd":67,"spe":69},"moves":["mightycleave","chargebeam","blueflare"],"baseAbility":"swiftswim","item":"ironball","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Keldeo, L50","condition":"166/166","active":true,"stats":{"atk":99,"def":116,"spa":162,"spd":133,"spe":145},"moves":["tailwind","thundershock","dig"],"baseAbility":"justified","item":"assaultvest","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, F","condition":"139/139","active":false,"stats":{"atk":97,"def":103,"spa":83,"spd":123,"spe":73},"moves":["minimize","ember","muddywater","doublehit"],"baseAbility":"shadowtag","item":"","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zoë","details":"Naclstack, L50, F","condition":"140/140","active":false,"stats":{"atk":92,"def":121,"spa":62,"spd":110,"spe":70},"moves":["revelationdance","victorydance","steelwing"],"baseAbility":"purifyingsalt","item":"hardstone","pokeball":"pokeball","ability":"purifyingsalt","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pom-Pom, L50, F, shiny","condition":"162/162","active":false,"stats":{"atk":103,"def":112,"spa":119,"spd":100,"spe":114},"moves":["torment"],"baseAbility":"dancer","item":"heavydutyboots","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"173/173","active":false,"stats":{"atk":131,"def":99,"spa":132,"spd":111,"spe":80},"moves":["risingvoltage","magicalleaf","icebeam","barbbarrage"],"baseAbility":"arenatrap","item":"","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: move 3 -2 terastal - missing other pokemon
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: ThisNameIsFarTooLong|Chingling, L50, F|150/150
+|switch|p1b: ThisNameIsFarTooLong|Chingling, L50, F|150/150
+|-terastallize|p1a: Mr. Bubbles|Stellar
+|move|p2b: Big Tony's Pal|Dig||[still]
+|-prepare|p2b: Big Tony's Pal|Dig
+|move|p1a: Mr. Bubbles|Photon Geyser|p2b: Big Tony's Pal|[miss]
+|-miss|p1a: Mr. Bubbles|p2b: Big Tony's Pal
+|move|p2a: ThisNameIsFarTooLong|Charge Beam|p2b: Big Tony's Pal|[miss]
+|-miss|p2a: ThisNameIsFarTooLong|p2b: Big Tony's Pal
+|
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Photon Geyser","id":"photongeyser","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Lash Out","id":"lashout","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Lock-On","id":"lockon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Mr. Bubbles","details":"Necrozma-Dusk-Mane, L50","condition":"175/175","active":true,"stats":{"atk":168,"def":169,"spa":154,"spd":143,"spe":100},"moves":["photongeyser","hydrosteam","lashout"],"baseAbility":"prismarmor","item":"","pokeball":"pokeball","ability":"prismarmor","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: ThisNameIsFarTooLong","details":"Chingling, L50, F","condition":"150/150","active":true,"stats":{"atk":50,"def":66,"spa":89,"spd":94,"spe":71},"moves":["lockon","disable","scaryface"],"baseAbility":"levitate","item":"chartiberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Overqwil","details":"Overqwil, L50, M","condition":"175/175","active":false,"stats":{"atk":152,"def":134,"spa":79,"spd":94,"spe":116},"moves":["crosspoison","healpulse"],"baseAbility":"poisonpoint","item":"rustedshield","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Slowking","details":"Slowking, L50, M, shiny","condition":"195/195","active":false,"stats":{"atk":96,"def":95,"spa":122,"spd":130,"spe":89},"moves":["hurricane"],"baseAbility":"shadowtag","item":"dubiousdisc","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Eelektross","details":"Eelektross, L50, F","condition":"160/160","active":false,"stats":{"atk":144,"def":139,"spa":125,"spd":90,"spe":98},"moves":["tackle","wildcharge"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Porygon","details":"Porygon, L50","condition":"143/143","active":false,"stats":{"atk":92,"def":109,"spa":112,"spd":98,"spe":75},"moves":["painsplit","haze"],"baseAbility":"trace","item":"grassyseed","pokeball":"pokeball","ability":"trace","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Mighty Cleave","id":"mightycleave","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Charge Beam","id":"chargebeam","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Blue Flare","id":"blueflare","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Rock"},{"moves":[{"move":"Dig","id":"dig"}],"trapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Chewtle, L50, F","condition":"131/131","active":true,"stats":{"atk":83,"def":83,"spa":69,"spd":67,"spe":69},"moves":["mightycleave","chargebeam","blueflare"],"baseAbility":"swiftswim","item":"ironball","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Keldeo, L50","condition":"166/166","active":true,"stats":{"atk":99,"def":116,"spa":162,"spd":133,"spe":145},"moves":["tailwind","thundershock","dig"],"baseAbility":"justified","item":"assaultvest","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, F","condition":"139/139","active":false,"stats":{"atk":97,"def":103,"spa":83,"spd":123,"spe":73},"moves":["minimize","ember","muddywater","doublehit"],"baseAbility":"shadowtag","item":"","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zoë","details":"Naclstack, L50, F","condition":"140/140","active":false,"stats":{"atk":92,"def":121,"spa":62,"spd":110,"spe":70},"moves":["revelationdance","victorydance","steelwing"],"baseAbility":"purifyingsalt","item":"hardstone","pokeball":"pokeball","ability":"purifyingsalt","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pom-Pom, L50, F, shiny","condition":"162/162","active":false,"stats":{"atk":103,"def":112,"spa":119,"spd":100,"spe":114},"moves":["torment"],"baseAbility":"dancer","item":"heavydutyboots","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"173/173","active":false,"stats":{"atk":131,"def":99,"spa":132,"spd":111,"spe":80},"moves":["risingvoltage","magicalleaf","icebeam","barbbarrage"],"baseAbility":"arenatrap","item":"","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Overqwil|Overqwil, L50, M|175/175
+|switch|p1a: Overqwil|Overqwil, L50, M|175/175
+|move|p2b: Big Tony's Pal|Dig|p1b: ThisNameIsFarTooLong|[from] lockedmove
+|-immune|p1b: ThisNameIsFarTooLong|[from] ability: Levitate
+|move|p1b: ThisNameIsFarTooLong|Lock-On|p2b: Big Tony's Pal
+|-activate|p1b: ThisNameIsFarTooLong|move: Lock-On|[of] p2b: Big Tony's Pal
+|move|p2a: ThisNameIsFarTooLong|Mighty Cleave|p1b: ThisNameIsFarTooLong
+|split|p1
+|-damage|p1b: ThisNameIsFarTooLong|104/150
+|-damage|p1b: ThisNameIsFarTooLong|104/150
+|
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Cross Poison","id":"crosspoison","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Heal Pulse","id":"healpulse","pp":16,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Lock-On","id":"lockon","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Overqwil","details":"Overqwil, L50, M","condition":"175/175","active":true,"stats":{"atk":152,"def":134,"spa":79,"spd":94,"spe":116},"moves":["crosspoison","healpulse"],"baseAbility":"poisonpoint","item":"rustedshield","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Chingling, L50, F","condition":"104/150","active":true,"stats":{"atk":50,"def":66,"spa":89,"spd":94,"spe":71},"moves":["lockon","disable","scaryface"],"baseAbility":"levitate","item":"chartiberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Necrozma-Dusk-Mane, L50","condition":"175/175","active":false,"stats":{"atk":168,"def":169,"spa":154,"spd":143,"spe":100},"moves":["photongeyser","hydrosteam","lashout"],"baseAbility":"prismarmor","item":"","pokeball":"pokeball","ability":"prismarmor","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Slowking","details":"Slowking, L50, M, shiny","condition":"195/195","active":false,"stats":{"atk":96,"def":95,"spa":122,"spd":130,"spe":89},"moves":["hurricane"],"baseAbility":"shadowtag","item":"dubiousdisc","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Eelektross","details":"Eelektross, L50, F","condition":"160/160","active":false,"stats":{"atk":144,"def":139,"spa":125,"spd":90,"spe":98},"moves":["tackle","wildcharge"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Porygon","details":"Porygon, L50","condition":"143/143","active":false,"stats":{"atk":92,"def":109,"spa":112,"spd":98,"spe":75},"moves":["painsplit","haze"],"baseAbility":"trace","item":"grassyseed","pokeball":"pokeball","ability":"trace","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Mighty Cleave","id":"mightycleave","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Charge Beam","id":"chargebeam","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Blue Flare","id":"blueflare","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Rock"},{"moves":[{"move":"Tailwind","id":"tailwind","pp":24,"maxpp":24,"target":"allySide","disabled":true},{"move":"Thunder Shock","id":"thundershock","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Dig","id":"dig","pp":15,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Water"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Chewtle, L50, F","condition":"131/131","active":true,"stats":{"atk":83,"def":83,"spa":69,"spd":67,"spe":69},"moves":["mightycleave","chargebeam","blueflare"],"baseAbility":"swiftswim","item":"ironball","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Keldeo, L50","condition":"166/166","active":true,"stats":{"atk":99,"def":116,"spa":162,"spd":133,"spe":145},"moves":["tailwind","thundershock","dig"],"baseAbility":"justified","item":"assaultvest","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, F","condition":"139/139","active":false,"stats":{"atk":97,"def":103,"spa":83,"spd":123,"spe":73},"moves":["minimize","ember","muddywater","doublehit"],"baseAbility":"shadowtag","item":"","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zoë","details":"Naclstack, L50, F","condition":"140/140","active":false,"stats":{"atk":92,"def":121,"spa":62,"spd":110,"spe":70},"moves":["revelationdance","victorydance","steelwing"],"baseAbility":"purifyingsalt","item":"hardstone","pokeball":"pokeball","ability":"purifyingsalt","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pom-Pom, L50, F, shiny","condition":"162/162","active":false,"stats":{"atk":103,"def":112,"spa":119,"spd":100,"spe":114},"moves":["torment"],"baseAbility":"dancer","item":"heavydutyboots","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"173/173","active":false,"stats":{"atk":131,"def":99,"spa":132,"spd":111,"spe":80},"moves":["risingvoltage","magicalleaf","icebeam","barbbarrage"],"baseAbility":"arenatrap","item":"","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+update
+|
+|t:|
+|-terastallize|p2a: ThisNameIsFarTooLong|Rock
+|move|p2b: Big Tony's Pal|Thunder Shock|p1b: ThisNameIsFarTooLong
+|split|p1
+|-damage|p1b: ThisNameIsFarTooLong|73/150
+|-damage|p1b: ThisNameIsFarTooLong|73/150
+|move|p1a: Overqwil|Cross Poison|p2b: Big Tony's Pal
+|split|p2
+|-damage|p2b: Big Tony's Pal|108/166
+|-damage|p2b: Big Tony's Pal|108/166
+|move|p1b: ThisNameIsFarTooLong|Lock-On||[still]
+|-fail|p1b: ThisNameIsFarTooLong
+|move|p2a: ThisNameIsFarTooLong|Charge Beam|p1b: ThisNameIsFarTooLong
+|split|p1
+|-damage|p1b: ThisNameIsFarTooLong|56/150
+|-damage|p1b: ThisNameIsFarTooLong|56/150
+|-boost|p2a: ThisNameIsFarTooLong|spa|1
+|
+|upkeep
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Cross Poison","id":"crosspoison","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Heal Pulse","id":"healpulse","pp":16,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Lock-On","id":"lockon","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Overqwil","details":"Overqwil, L50, M","condition":"175/175","active":true,"stats":{"atk":152,"def":134,"spa":79,"spd":94,"spe":116},"moves":["crosspoison","healpulse"],"baseAbility":"poisonpoint","item":"rustedshield","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Chingling, L50, F","condition":"56/150","active":true,"stats":{"atk":50,"def":66,"spa":89,"spd":94,"spe":71},"moves":["lockon","disable","scaryface"],"baseAbility":"levitate","item":"chartiberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Necrozma-Dusk-Mane, L50","condition":"175/175","active":false,"stats":{"atk":168,"def":169,"spa":154,"spd":143,"spe":100},"moves":["photongeyser","hydrosteam","lashout"],"baseAbility":"prismarmor","item":"","pokeball":"pokeball","ability":"prismarmor","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Slowking","details":"Slowking, L50, M, shiny","condition":"195/195","active":false,"stats":{"atk":96,"def":95,"spa":122,"spd":130,"spe":89},"moves":["hurricane"],"baseAbility":"shadowtag","item":"dubiousdisc","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Eelektross","details":"Eelektross, L50, F","condition":"160/160","active":false,"stats":{"atk":144,"def":139,"spa":125,"spd":90,"spe":98},"moves":["tackle","wildcharge"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Porygon","details":"Porygon, L50","condition":"143/143","active":false,"stats":{"atk":92,"def":109,"spa":112,"spd":98,"spe":75},"moves":["painsplit","haze"],"baseAbility":"trace","item":"grassyseed","pokeball":"pokeball","ability":"trace","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Mighty Cleave","id":"mightycleave","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Charge Beam","id":"chargebeam","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Blue Flare","id":"blueflare","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Tailwind","id":"tailwind","pp":24,"maxpp":24,"target":"allySide","disabled":true},{"move":"Thunder Shock","id":"thundershock","pp":47,"maxpp":48,"target":"normal","disabled":false},{"move":"Dig","id":"dig","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Chewtle, L50, F","condition":"131/131","active":true,"stats":{"atk":83,"def":83,"spa":69,"spd":67,"spe":69},"moves":["mightycleave","chargebeam","blueflare"],"baseAbility":"swiftswim","item":"ironball","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Big Tony's Pal","details":"Keldeo, L50","condition":"108/166","active":true,"stats":{"atk":99,"def":116,"spa":162,"spd":133,"spe":145},"moves":["tailwind","thundershock","dig"],"baseAbility":"justified","item":"assaultvest","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, F","condition":"139/139","active":false,"stats":{"atk":97,"def":103,"spa":83,"spd":123,"spe":73},"moves":["minimize","ember","muddywater","doublehit"],"baseAbility":"shadowtag","item":"","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zoë","details":"Naclstack, L50, F","condition":"140/140","active":false,"stats":{"atk":92,"def":121,"spa":62,"spd":110,"spe":70},"moves":["revelationdance","victorydance","steelwing"],"baseAbility":"purifyingsalt","item":"hardstone","pokeball":"pokeball","ability":"purifyingsalt","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pom-Pom, L50, F, shiny","condition":"162/162","active":false,"stats":{"atk":103,"def":112,"spa":119,"spd":100,"spe":114},"moves":["torment"],"baseAbility":"dancer","item":"heavydutyboots","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"173/173","active":false,"stats":{"atk":131,"def":99,"spa":132,"spd":111,"spe":80},"moves":["risingvoltage","magicalleaf","icebeam","barbbarrage"],"baseAbility":"arenatrap","item":"","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Incomplete choice: move 2 -2 - missing other pokemon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Incomplete choice: switch Overqwil - missing other pokemon
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Eelektross|Eelektross, L50, F|160/160
+|switch|p1a: Eelektross|Eelektross, L50, F|160/160
+|move|p2b: Big Tony's Pal|Thunder Shock|p2a: ThisNameIsFarTooLong
+|split|p2
+|-damage|p2a: ThisNameIsFarTooLong|94/131
+|-damage|p2a: ThisNameIsFarTooLong|94/131
+|move|p1b: ThisNameIsFarTooLong|Disable||[still]
+|-fail|p1b: ThisNameIsFarTooLong
+|move|p2a: ThisNameIsFarTooLong|Charge Beam|p1a: Eelektross
+|-resisted|p1a: Eelektross
+|split|p1
+|-damage|p1a: Eelektross|148/160
+|-damage|p1a: Eelektross|148/160
+|-boost|p2a: ThisNameIsFarTooLong|spa|1
+|
+|upkeep
+|turn|5
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Tackle","id":"tackle","pp":56,"maxpp":56,"target":"normal","disabled":false},{"move":"Wild Charge","id":"wildcharge","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Lock-On","id":"lockon","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Disable","id":"disable","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Eelektross","details":"Eelektross, L50, F","condition":"148/160","active":true,"stats":{"atk":144,"def":139,"spa":125,"spd":90,"spe":98},"moves":["tackle","wildcharge"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Chingling, L50, F","condition":"56/150","active":true,"stats":{"atk":50,"def":66,"spa":89,"spd":94,"spe":71},"moves":["lockon","disable","scaryface"],"baseAbility":"levitate","item":"chartiberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Necrozma-Dusk-Mane, L50","condition":"175/175","active":false,"stats":{"atk":168,"def":169,"spa":154,"spd":143,"spe":100},"moves":["photongeyser","hydrosteam","lashout"],"baseAbility":"prismarmor","item":"","pokeball":"pokeball","ability":"prismarmor","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Slowking","details":"Slowking, L50, M, shiny","condition":"195/195","active":false,"stats":{"atk":96,"def":95,"spa":122,"spd":130,"spe":89},"moves":["hurricane"],"baseAbility":"shadowtag","item":"dubiousdisc","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Overqwil","details":"Overqwil, L50, M","condition":"175/175","active":false,"stats":{"atk":152,"def":134,"spa":79,"spd":94,"spe":116},"moves":["crosspoison","healpulse"],"baseAbility":"poisonpoint","item":"rustedshield","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Porygon","details":"Porygon, L50","condition":"143/143","active":false,"stats":{"atk":92,"def":109,"spa":112,"spd":98,"spe":75},"moves":["painsplit","haze"],"baseAbility":"trace","item":"grassyseed","pokeball":"pokeball","ability":"trace","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Mighty Cleave","id":"mightycleave","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Charge Beam","id":"chargebeam","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Blue Flare","id":"blueflare","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Tailwind","id":"tailwind","pp":24,"maxpp":24,"target":"allySide","disabled":true},{"move":"Thunder Shock","id":"thundershock","pp":46,"maxpp":48,"target":"normal","disabled":false},{"move":"Dig","id":"dig","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Chewtle, L50, F","condition":"94/131","active":true,"stats":{"atk":83,"def":83,"spa":69,"spd":67,"spe":69},"moves":["mightycleave","chargebeam","blueflare"],"baseAbility":"swiftswim","item":"ironball","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Big Tony's Pal","details":"Keldeo, L50","condition":"108/166","active":true,"stats":{"atk":99,"def":116,"spa":162,"spd":133,"spe":145},"moves":["tailwind","thundershock","dig"],"baseAbility":"justified","item":"assaultvest","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, F","condition":"139/139","active":false,"stats":{"atk":97,"def":103,"spa":83,"spd":123,"spe":73},"moves":["minimize","ember","muddywater","doublehit"],"baseAbility":"shadowtag","item":"","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zoë","details":"Naclstack, L50, F","condition":"140/140","active":false,"stats":{"atk":92,"def":121,"spa":62,"spd":110,"spe":70},"moves":["revelationdance","victorydance","steelwing"],"baseAbility":"purifyingsalt","item":"hardstone","pokeball":"pokeball","ability":"purifyingsalt","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pom-Pom, L50, F, shiny","condition":"162/162","active":false,"stats":{"atk":103,"def":112,"spa":119,"spd":100,"spe":114},"moves":["torment"],"baseAbility":"dancer","item":"heavydutyboots","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Abomasnow","details":"Abomasnow, L50, M","condition":"173/173","active":false,"stats":{"atk":131,"def":99,"spa":132,"spd":111,"spe":80},"moves":["risingvoltage","magicalleaf","icebeam","barbbarrage"],"baseAbility":"arenatrap","item":"","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You sent more choices than unfainted Pokémon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"gen5,bfd708fdbe12a543","turns":5,"p1":"Alice","p2":"Bob","p1team":[{"name":"Mr. Bubbles","species":"Necrozma-Dusk-Mane","item":"","ability":"Prism Armor","moves":["Photon Geyser","Hydro Steam","Lash Out"],"nature":"Calm","evs":{"hp":24,"atk":81,"def":172,"spa":170,"spd":9,"spe":27},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Slowking","species":"Slowking","item":"Dubious Disc","ability":"Shadow Tag","moves":["Hurricane"],"nature":"Hasty","evs":{"hp":198,"atk":6,"def":48,"spa":12,"spd":0,"spe":244},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Overqwil","species":"Overqwil","item":"Rusted Shield","ability":"Poison Point","moves":["Cross Poison","Heal Pulse"],"nature":"Impish","evs":{"hp":120,"atk":134,"def":56,"spa":24,"spd":68,"spe":91},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"ThisNameIsFarTooLongToKeep","species":"Chingling","item":"Charti Berry","ability":"Levitate","moves":["Lock-On","Disable","Scary Face"],"nature":"Gentle","evs":{"hp":241,"atk":3,"def":31,"spa":35,"spd":130,"spe":48},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Eelektross","species":"Eelektross","item":"","ability":"Magnet Pull","moves":["Tackle","Wild Charge"],"nature":"Lax","evs":{"hp":0,"atk":68,"def":216,"spa":2,"spd":0,"spe":223},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Porygon","species":"Porygon","item":"Grassy Seed","ability":"Trace","moves":["Pain Split","Haze"],"nature":"Docile","evs":{"hp":24,"atk":99,"def":153,"spa":52,"spd":23,"spe":122},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"ThisNameIsFarTooLongToKeep","species":"Chewtle","item":"Iron Ball","ability":"Swift Swim","moves":["Mighty Cleave","Charge Beam","Blue Flare"],"nature":"Calm","evs":{"hp":48,"atk":75,"def":101,"spa":87,"spd":23,"spe":43},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Keldeo","item":"Assault Vest","ability":"Justified","moves":["Tailwind","Thunder Shock","Dig"],"nature":"Timid","evs":{"hp":0,"atk":144,"def":46,"spa":106,"spd":185,"spe":29},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Mr. Bubbles","species":"Sableye","item":"","ability":"Shadow Tag","moves":["Minimize","Ember","Muddy Water","Double Hit"],"nature":"Careful","evs":{"hp":111,"atk":16,"def":64,"spa":62,"spd":216,"spe":22},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Zoë","species":"Naclstack","item":"Hard Stone","ability":"Purifying Salt","moves":["Revelation Dance","Victory Dance","Steel Wing"],"nature":"Sassy","evs":{"hp":37,"atk":99,"def":4,"spa":56,"spd":123,"spe":186},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Oricorio","species":"Oricorio-Pom-Pom","item":"Heavy-Duty Boots","ability":"Dancer","moves":["Torment"],"nature":"Naughty","evs":{"hp":93,"atk":29,"def":172,"spa":8,"spd":178,"spe":11},"gender":"F","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Abomasnow","species":"Abomasnow","item":"","ability":"Arena Trap","moves":["Rising Voltage","Magical Leaf","Ice Beam","Barb Barrage"],"nature":"Docile","evs":{"hp":64,"atk":150,"def":31,"spa":162,"spd":44,"spe":2},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[6,6],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@!Team Preview\",\"seed\":\"gen5,bfd708fdbe12a543\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Mr. Bubbles|NecrozmaDuskMane||PrismArmor|PhotonGeyser,HydroSteam,LashOut|Calm|24,81,172,170,9,27||||50|,,,,,Stellar]Slowking||DubiousDisc|ShadowTag|Hurricane|Hasty|198,6,48,12,,244|||S|50|,,,,,Dragon]Overqwil||RustedShield|PoisonPoint|CrossPoison,HealPulse|Impish|120,134,56,24,68,91|M|||50|,,,,,Flying]ThisNameIsFarTooLongToKeep|Chingling|ChartiBerry|Levitate|LockOn,Disable,ScaryFace|Gentle|241,3,31,35,130,48|F|||50|,,,,,Steel]Eelektross|||MagnetPull|Tackle,WildCharge|Lax|,68,216,2,,223||||50|,,,,,Psychic]Porygon||GrassySeed|Trace|PainSplit,Haze|Docile|24,99,153,52,23,122||||50|,,,,,Poison\"}",">player p2 {\"name\":\"Bob\",\"team\":\"ThisNameIsFarTooLongToKeep|Chewtle|IronBall|SwiftSwim|MightyCleave,ChargeBeam,BlueFlare|Calm|48,75,101,87,23,43||||50|,,,,,Rock]Big Tony's Pal|Keldeo|AssaultVest|Justified|Tailwind,ThunderShock,Dig|Timid|,144,46,106,185,29||||50|,,,,,Water]Mr. Bubbles|Sableye||ShadowTag|Minimize,Ember,MuddyWater,DoubleHit|Careful|111,16,64,62,216,22||||50|,,,,,Fire]Zoë|Naclstack|HardStone|PurifyingSalt|RevelationDance,VictoryDance,SteelWing|Sassy|37,99,4,56,123,186|F|||50|,,,,,Poison]Oricorio-Pom-Pom||HeavyDutyBoots|Dancer|Torment|Naughty|93,29,172,8,178,11|F||S|50|,,,,,Poison]Abomasnow|||ArenaTrap|RisingVoltage,MagicalLeaf,IceBeam,BarbBarrage|Docile|64,150,31,162,44,2||||50|,,,,,Dark\"}",">p1 move photongeyser +2 terastallize, switch 4",">p2 move chargebeam -2, move dig +2",">p1 switch 3, move lockon +2",">p2 move mightycleave +2, move dig +2",">p1 move crosspoison +2, move lockon +1",">p2 move chargebeam +2 terastallize, move thundershock +2",">p1 switch 5, move disable -1",">p2 move chargebeam +1, move thundershock -1",">forcetie"]}

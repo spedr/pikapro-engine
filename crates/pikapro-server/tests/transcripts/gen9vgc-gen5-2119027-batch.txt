@@ -1,0 +1,427 @@
+# gen9vgc-gen5-2119027-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@write
+# a comment
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,e65162da27326824"}
+>player p1 {"name":"Alice","team":[{"name":"Pawmo","species":"Pawmo","item":"","ability":"Volt Absorb","moves":["Roar"],"nature":"Lonely","evs":{"hp":18,"atk":50,"def":211,"spa":210,"spd":16,"spe":4},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying"},{"name":"Oranguru","species":"Oranguru","item":"","ability":"Symbiosis","moves":["Sucker Punch","Covet","False Surrender","Heal Pulse"],"nature":"Lax","evs":{"hp":0,"atk":247,"def":195,"spa":38,"spd":12,"spe":18},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel"},{"name":"Alcremie-Rainbow-Swirl","species":"Alcremie-Rainbow-Swirl","item":"Dive Ball","ability":"Sweet Veil","moves":["Jaw Lock","Crunch"],"nature":"Impish","evs":{"hp":23,"atk":18,"def":178,"spa":63,"spd":2,"spe":224},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric"},{"name":"Snorunt","species":"Snorunt","item":"","ability":"Moody","moves":["Freeze Shock","Steam Eruption","Dragon Rush","Gigaton Hammer"],"nature":"Gentle","evs":{"hp":12,"atk":207,"def":2,"spa":4,"spd":97,"spe":187},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass"},{"name":"Silicobra","species":"Silicobra","item":"Luxury Ball","ability":"Sand Veil","moves":["Misty Explosion","Dream Eater"],"nature":"Bold","evs":{"hp":19,"atk":22,"def":194,"spa":0,"spd":103,"spe":148},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal"},{"name":"Greavard","species":"Greavard","item":"Auspicious Armor","ability":"Pickup","moves":["Retaliate","Gunk Shot","Fairy Wind"],"nature":"Jolly","evs":{"hp":0,"atk":16,"def":244,"spa":76,"spd":125,"spe":49},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal"}]}
+@write
+
+>player p2 {"name":"Bob","team":"Smeargle||Magmarizer|OwnTempo|Dig,NobleRoar,HyperBeam,SelfDestruct|Calm|159,97,116,,92,7|F|||50|,,,,,Ice]Dragapult|||Infiltrator|ShoreUp,Hypnosis|Relaxed|23,59,10,104,141,120|F|||50|,,,,,Water]Krokorok||ThroatSpray|Moxie|LowSweep|Quiet|3,239,106,3,116,8|M|||50|,,,,,Steel]Slowbro-Galar|||QuickDraw|PhotonGeyser|Hardy|68,199,42,63,120,3||||50|,,,,,Poison]Flabébé||HeavyBall|FlowerVeil|PhotonGeyser,Swagger|Docile|,58,152,80,65,155||||50|,,,,,Bug]Big Tony's Pal|Oinkologne||LingeringAroma|Present|Adamant|3,204,105,104,17,22|M|||50|,,,,,Stellar","rating":1500}
+>p2 team 4263
+@write
+>p1 team 3416
+@write
+>p2 switch 4, move 1 terastallize
+@write
+
+>p1 move 1 -2, move 4 1
+@write
+# a comment
+>p1 move crunch -2,move 3 -1
+@write
+>p2 Move 1
+@write
+>p2 switch 4, move 1
+@write
+>p2 default
+@write
+>p1 move 2 2, move 1 2 terastallize
+>p1 pass,switch 3
+@write
+
+>p2 move 1 1, move 2 -1
+>p2 undo
+@write
+>p2 switch 4, switch 3
+>p1 default
+@write
+# a comment
+>p1 move 2 -2, switch 4
+>p2 move 1 -2, move 2 -1
+@write
+>p2 move 1 -2, switch 3
+@write
+>p1 move 2 -2, move 2 2
+>p1 move struggle, move Retaliate 1
+@write
+>p2 move 1 -2, move 1 1
+>p1 move 1 1, move 1 1
+@write
+>p2 switch Slowbro, skip
+>p1 move 1 -2, move 2 +1
+@write
+
+>p2 move 1 2, move 1 2
+>p1 pass, switch 4
+@write
+>p2 move 1 2, move 1 1
+>p1 move 2 -2, move 1 -1
+@message
+update
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+@message
+update
+|player|p2|Bob||1500
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Pawmo, L50, F|
+|poke|p1|Oranguru, L50, F|
+|poke|p1|Alcremie-Rainbow-Swirl, L50, F|
+|poke|p1|Snorunt, L50, M|
+|poke|p1|Silicobra, L50, M|
+|poke|p1|Greavard, L50, M|
+|poke|p2|Smeargle, L50, F|
+|poke|p2|Dragapult, L50, F|
+|poke|p2|Krokorok, L50, M|
+|poke|p2|Slowbro-Galar, L50, F|
+|poke|p2|Flabébé, L50, F|
+|poke|p2|Oinkologne, L50, M|
+|teampreview|4
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pawmo","details":"Pawmo, L50, F","condition":"137/137","active":true,"stats":{"atk":111,"def":77,"spa":96,"spd":62,"spe":106},"moves":["roar"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Oranguru","details":"Oranguru, L50, F","condition":"165/165","active":true,"stats":{"atk":111,"def":136,"spa":115,"spd":118,"spe":82},"moves":["suckerpunch","covet","falsesurrender","healpulse"],"baseAbility":"symbiosis","item":"","pokeball":"pokeball","ability":"symbiosis","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"143/143","active":false,"stats":{"atk":82,"def":128,"spa":124,"spd":141,"spe":112},"moves":["jawlock","crunch"],"baseAbility":"sweetveil","item":"diveball","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Snorunt","details":"Snorunt, L50, M","condition":"127/127","active":false,"stats":{"atk":96,"def":63,"spa":71,"spd":90,"spe":93},"moves":["freezeshock","steameruption","dragonrush","gigatonhammer"],"baseAbility":"moody","item":"","pokeball":"pokeball","ability":"moody","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Silicobra","details":"Silicobra, L50, M","condition":"129/129","active":false,"stats":{"atk":72,"def":130,"spa":55,"spd":83,"spe":85},"moves":["mistyexplosion","dreameater"],"baseAbility":"sandveil","item":"luxuryball","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Greavard","details":"Greavard, L50, M","condition":"125/125","active":false,"stats":{"atk":83,"def":111,"spa":54,"spd":91,"spe":66},"moves":["retaliate","gunkshot","fairywind"],"baseAbility":"pickup","item":"auspiciousarmor","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Smeargle","details":"Smeargle, L50, F","condition":"150/150","active":true,"stats":{"atk":46,"def":70,"spa":40,"spd":84,"spe":96},"moves":["dig","nobleroar","hyperbeam","selfdestruct"],"baseAbility":"owntempo","item":"magmarizer","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"166/166","active":true,"stats":{"atk":147,"def":105,"spa":133,"spd":113,"spe":159},"moves":["shoreup","hypnosis"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Krokorok","details":"Krokorok, L50, M","condition":"135/135","active":false,"stats":{"atk":132,"def":78,"spa":71,"spd":80,"spe":85},"moves":["lowsweep"],"baseAbility":"moxie","item":"throatspray","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Slowbro","details":"Slowbro-Galar, L50, F","condition":"179/179","active":false,"stats":{"atk":145,"def":120,"spa":128,"spd":105,"spe":50},"moves":["photongeyser"],"baseAbility":"quickdraw","item":"","pokeball":"pokeball","ability":"quickdraw","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Flabébé","details":"Flabébé, L50, F","condition":"119/119","active":false,"stats":{"atk":65,"def":78,"spa":91,"spd":107,"spe":81},"moves":["photongeyser","swagger"],"baseAbility":"flowerveil","item":"heavyball","pokeball":"pokeball","ability":"flowerveil","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Oinkologne, L50, M","condition":"185/185","active":false,"stats":{"atk":160,"def":108,"spa":82,"spd":102,"spe":88},"moves":["present"],"baseAbility":"lingeringaroma","item":"","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|switch|p1a: Alcremie|Alcremie-Rainbow-Swirl, L50, F|143/143
+|switch|p1a: Alcremie|Alcremie-Rainbow-Swirl, L50, F|143/143
+|split|p1
+|switch|p1b: Snorunt|Snorunt, L50, M|127/127
+|switch|p1b: Snorunt|Snorunt, L50, M|127/127
+|split|p2
+|switch|p2a: Slowbro|Slowbro-Galar, L50, F|179/179
+|switch|p2a: Slowbro|Slowbro-Galar, L50, F|179/179
+|split|p2
+|switch|p2b: Dragapult|Dragapult, L50, F|166/166
+|switch|p2b: Dragapult|Dragapult, L50, F|166/166
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Crunch","id":"crunch","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Electric"},{"moves":[{"move":"Freeze Shock","id":"freezeshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Steam Eruption","id":"steameruption","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Dragon Rush","id":"dragonrush","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Gigaton Hammer","id":"gigatonhammer","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Grass"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"143/143","active":true,"stats":{"atk":82,"def":128,"spa":124,"spd":141,"spe":112},"moves":["jawlock","crunch"],"baseAbility":"sweetveil","item":"diveball","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Snorunt","details":"Snorunt, L50, M","condition":"127/127","active":true,"stats":{"atk":96,"def":63,"spa":71,"spd":90,"spe":93},"moves":["freezeshock","steameruption","dragonrush","gigatonhammer"],"baseAbility":"moody","item":"","pokeball":"pokeball","ability":"moody","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Pawmo","details":"Pawmo, L50, F","condition":"137/137","active":false,"stats":{"atk":111,"def":77,"spa":96,"spd":62,"spe":106},"moves":["roar"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Greavard","details":"Greavard, L50, M","condition":"125/125","active":false,"stats":{"atk":83,"def":111,"spa":54,"spd":91,"spe":66},"moves":["retaliate","gunkshot","fairywind"],"baseAbility":"pickup","item":"auspiciousarmor","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Photon Geyser","id":"photongeyser","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Poison"},{"moves":[{"move":"Shore Up","id":"shoreup","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hypnosis","id":"hypnosis","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Water"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Slowbro","details":"Slowbro-Galar, L50, F","condition":"179/179","active":true,"stats":{"atk":145,"def":120,"spa":128,"spd":105,"spe":50},"moves":["photongeyser"],"baseAbility":"quickdraw","item":"","pokeball":"pokeball","ability":"quickdraw","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"166/166","active":true,"stats":{"atk":147,"def":105,"spa":133,"spd":113,"spe":159},"moves":["shoreup","hypnosis"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Oinkologne, L50, M","condition":"185/185","active":false,"stats":{"atk":160,"def":108,"spa":82,"spd":102,"spe":88},"moves":["present"],"baseAbility":"lingeringaroma","item":"","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Krokorok","details":"Krokorok, L50, M","condition":"135/135","active":false,"stats":{"atk":132,"def":78,"spa":71,"spd":80,"spe":85},"moves":["lowsweep"],"baseAbility":"moxie","item":"throatspray","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Krokorok|Krokorok, L50, M|135/135
+|switch|p2a: Krokorok|Krokorok, L50, M|135/135
+|-terastallize|p2b: Dragapult|Water
+|move|p2b: Dragapult|Shore Up|p2b: Dragapult
+|-fail|p2b: Dragapult|heal
+|move|p1a: Alcremie|Jaw Lock|p1b: Snorunt
+|split|p1
+|-damage|p1b: Snorunt|88/127
+|-damage|p1b: Snorunt|88/127
+|-activate|p1a: Alcremie|trapped
+|-activate|p1b: Snorunt|trapped
+|move|p1b: Snorunt|Gigaton Hammer|p2a: Krokorok
+|split|p2
+|-damage|p2a: Krokorok|50/135
+|-damage|p2a: Krokorok|50/135
+|
+|-ability|p1b: Snorunt|Moody|boost
+|-boost|p1b: Snorunt|spd|2
+|-unboost|p1b: Snorunt|def|1
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Crunch","id":"crunch","pp":24,"maxpp":24,"target":"normal","disabled":false}],"trapped":true,"canTerastallize":"Electric"},{"moves":[{"move":"Freeze Shock","id":"freezeshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Steam Eruption","id":"steameruption","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Dragon Rush","id":"dragonrush","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Gigaton Hammer","id":"gigatonhammer","pp":7,"maxpp":8,"target":"normal","disabled":true}],"trapped":true,"canTerastallize":"Grass"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"143/143","active":true,"stats":{"atk":82,"def":128,"spa":124,"spd":141,"spe":112},"moves":["jawlock","crunch"],"baseAbility":"sweetveil","item":"diveball","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Snorunt","details":"Snorunt, L50, M","condition":"88/127","active":true,"stats":{"atk":96,"def":63,"spa":71,"spd":90,"spe":93},"moves":["freezeshock","steameruption","dragonrush","gigatonhammer"],"baseAbility":"moody","item":"","pokeball":"pokeball","ability":"moody","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Pawmo","details":"Pawmo, L50, F","condition":"137/137","active":false,"stats":{"atk":111,"def":77,"spa":96,"spd":62,"spe":106},"moves":["roar"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Greavard","details":"Greavard, L50, M","condition":"125/125","active":false,"stats":{"atk":83,"def":111,"spa":54,"spd":91,"spe":66},"moves":["retaliate","gunkshot","fairywind"],"baseAbility":"pickup","item":"auspiciousarmor","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Low Sweep","id":"lowsweep","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Shore Up","id":"shoreup","pp":7,"maxpp":8,"target":"self","disabled":false},{"move":"Hypnosis","id":"hypnosis","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Krokorok","details":"Krokorok, L50, M","condition":"50/135","active":true,"stats":{"atk":132,"def":78,"spa":71,"spd":80,"spe":85},"moves":["lowsweep"],"baseAbility":"moxie","item":"throatspray","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"166/166","active":true,"stats":{"atk":147,"def":105,"spa":133,"spd":113,"spe":159},"moves":["shoreup","hypnosis"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Big Tony's Pal","details":"Oinkologne, L50, M","condition":"185/185","active":false,"stats":{"atk":160,"def":108,"spa":82,"spd":102,"spe":88},"moves":["present"],"baseAbility":"lingeringaroma","item":"","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Slowbro","details":"Slowbro-Galar, L50, F","condition":"179/179","active":false,"stats":{"atk":145,"def":120,"spa":128,"spd":105,"spe":50},"moves":["photongeyser"],"baseAbility":"quickdraw","item":"","pokeball":"pokeball","ability":"quickdraw","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Unrecognized choice: Move 1
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Slowbro|Slowbro-Galar, L50, F|179/179
+|switch|p2a: Slowbro|Slowbro-Galar, L50, F|179/179
+|move|p2b: Dragapult|Shore Up|p2b: Dragapult
+|-fail|p2b: Dragapult|heal
+|move|p1a: Alcremie|Crunch|p1b: Snorunt
+|split|p1
+|-damage|p1b: Snorunt|24/127
+|-damage|p1b: Snorunt|24/127
+|move|p1b: Snorunt|Dragon Rush|p1a: Alcremie
+|-immune|p1a: Alcremie
+|
+|-ability|p1b: Snorunt|Moody|boost
+|-boost|p1b: Snorunt|spd|2
+|-unboost|p1b: Snorunt|spe|1
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Crunch","id":"crunch","pp":23,"maxpp":24,"target":"normal","disabled":false}],"trapped":true,"canTerastallize":"Electric"},{"moves":[{"move":"Freeze Shock","id":"freezeshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Steam Eruption","id":"steameruption","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Dragon Rush","id":"dragonrush","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Gigaton Hammer","id":"gigatonhammer","pp":7,"maxpp":8,"target":"normal","disabled":false}],"trapped":true,"canTerastallize":"Grass"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"143/143","active":true,"stats":{"atk":82,"def":128,"spa":124,"spd":141,"spe":112},"moves":["jawlock","crunch"],"baseAbility":"sweetveil","item":"diveball","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Snorunt","details":"Snorunt, L50, M","condition":"24/127","active":true,"stats":{"atk":96,"def":63,"spa":71,"spd":90,"spe":93},"moves":["freezeshock","steameruption","dragonrush","gigatonhammer"],"baseAbility":"moody","item":"","pokeball":"pokeball","ability":"moody","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Pawmo","details":"Pawmo, L50, F","condition":"137/137","active":false,"stats":{"atk":111,"def":77,"spa":96,"spd":62,"spe":106},"moves":["roar"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Greavard","details":"Greavard, L50, M","condition":"125/125","active":false,"stats":{"atk":83,"def":111,"spa":54,"spd":91,"spe":66},"moves":["retaliate","gunkshot","fairywind"],"baseAbility":"pickup","item":"auspiciousarmor","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Photon Geyser","id":"photongeyser","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Shore Up","id":"shoreup","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"Hypnosis","id":"hypnosis","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Slowbro","details":"Slowbro-Galar, L50, F","condition":"179/179","active":true,"stats":{"atk":145,"def":120,"spa":128,"spd":105,"spe":50},"moves":["photongeyser"],"baseAbility":"quickdraw","item":"","pokeball":"pokeball","ability":"quickdraw","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"166/166","active":true,"stats":{"atk":147,"def":105,"spa":133,"spd":113,"spe":159},"moves":["shoreup","hypnosis"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Big Tony's Pal","details":"Oinkologne, L50, M","condition":"185/185","active":false,"stats":{"atk":160,"def":108,"spa":82,"spd":102,"spe":88},"moves":["present"],"baseAbility":"lingeringaroma","item":"","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Krokorok","details":"Krokorok, L50, M","condition":"50/135","active":false,"stats":{"atk":132,"def":78,"spa":71,"spd":80,"spe":85},"moves":["lowsweep"],"baseAbility":"moxie","item":"throatspray","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|-terastallize|p1b: Snorunt|Grass
+|move|p2b: Dragapult|Shore Up|p2b: Dragapult
+|-fail|p2b: Dragapult|heal
+|move|p1a: Alcremie|Crunch|p2b: Dragapult
+|split|p2
+|-damage|p2b: Dragapult|140/166
+|-damage|p2b: Dragapult|140/166
+|move|p1b: Snorunt|Freeze Shock||[still]
+|-prepare|p1b: Snorunt|Freeze Shock
+|move|p2a: Slowbro|Photon Geyser|p1b: Snorunt
+|split|p1
+|-damage|p1b: Snorunt|0 fnt
+|-damage|p1b: Snorunt|0 fnt
+|faint|p1b: Snorunt
+|
+|upkeep
+|
+|t:|
+|split|p1
+|switch|p1b: Pawmo|Pawmo, L50, F|137/137
+|switch|p1b: Pawmo|Pawmo, L50, F|137/137
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Crunch","id":"crunch","pp":22,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Roar","id":"roar","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"143/143","active":true,"stats":{"atk":82,"def":128,"spa":124,"spd":141,"spe":112},"moves":["jawlock","crunch"],"baseAbility":"sweetveil","item":"diveball","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Pawmo","details":"Pawmo, L50, F","condition":"137/137","active":true,"stats":{"atk":111,"def":77,"spa":96,"spd":62,"spe":106},"moves":["roar"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Snorunt","details":"Snorunt, L50, M","condition":"0 fnt","active":false,"stats":{"atk":96,"def":63,"spa":71,"spd":90,"spe":93},"moves":["freezeshock","steameruption","dragonrush","gigatonhammer"],"baseAbility":"moody","item":"","pokeball":"pokeball","ability":"moody","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Greavard","details":"Greavard, L50, M","condition":"125/125","active":false,"stats":{"atk":83,"def":111,"spa":54,"spd":91,"spe":66},"moves":["retaliate","gunkshot","fairywind"],"baseAbility":"pickup","item":"auspiciousarmor","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Photon Geyser","id":"photongeyser","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Shore Up","id":"shoreup","pp":5,"maxpp":8,"target":"self","disabled":false},{"move":"Hypnosis","id":"hypnosis","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Slowbro","details":"Slowbro-Galar, L50, F","condition":"179/179","active":true,"stats":{"atk":145,"def":120,"spa":128,"spd":105,"spe":50},"moves":["photongeyser"],"baseAbility":"quickdraw","item":"","pokeball":"pokeball","ability":"quickdraw","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"140/166","active":true,"stats":{"atk":147,"def":105,"spa":133,"spd":113,"spe":159},"moves":["shoreup","hypnosis"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Big Tony's Pal","details":"Oinkologne, L50, M","condition":"185/185","active":false,"stats":{"atk":160,"def":108,"spa":82,"spd":102,"spe":88},"moves":["present"],"baseAbility":"lingeringaroma","item":"","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Krokorok","details":"Krokorok, L50, M","condition":"50/135","active":false,"stats":{"atk":132,"def":78,"spa":71,"spd":80,"spe":85},"moves":["lowsweep"],"baseAbility":"moxie","item":"throatspray","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Big Tony's Pal|Oinkologne, L50, M|185/185
+|switch|p2b: Big Tony's Pal|Oinkologne, L50, M|185/185
+|split|p2
+|switch|p2a: Krokorok|Krokorok, L50, M|50/135
+|switch|p2a: Krokorok|Krokorok, L50, M|50/135
+|move|p1a: Alcremie|Jaw Lock|p2a: Krokorok
+|-resisted|p2a: Krokorok
+|split|p2
+|-damage|p2a: Krokorok|32/135
+|-damage|p2a: Krokorok|32/135
+|-activate|p1a: Alcremie|trapped
+|-activate|p2a: Krokorok|trapped
+|move|p1b: Pawmo|Roar|p2b: Big Tony's Pal
+|split|p2
+|drag|p2b: Dragapult|Dragapult, L50, F, tera:Water|140/166
+|drag|p2b: Dragapult|Dragapult, L50, F, tera:Water|140/166
+|
+|upkeep
+|turn|5
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Crunch","id":"crunch","pp":22,"maxpp":24,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Roar","id":"roar","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"143/143","active":true,"stats":{"atk":82,"def":128,"spa":124,"spd":141,"spe":112},"moves":["jawlock","crunch"],"baseAbility":"sweetveil","item":"diveball","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Pawmo","details":"Pawmo, L50, F","condition":"137/137","active":true,"stats":{"atk":111,"def":77,"spa":96,"spd":62,"spe":106},"moves":["roar"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Snorunt","details":"Snorunt, L50, M","condition":"0 fnt","active":false,"stats":{"atk":96,"def":63,"spa":71,"spd":90,"spe":93},"moves":["freezeshock","steameruption","dragonrush","gigatonhammer"],"baseAbility":"moody","item":"","pokeball":"pokeball","ability":"moody","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Greavard","details":"Greavard, L50, M","condition":"125/125","active":false,"stats":{"atk":83,"def":111,"spa":54,"spd":91,"spe":66},"moves":["retaliate","gunkshot","fairywind"],"baseAbility":"pickup","item":"auspiciousarmor","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Low Sweep","id":"lowsweep","pp":32,"maxpp":32,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Shore Up","id":"shoreup","pp":5,"maxpp":8,"target":"self","disabled":false},{"move":"Hypnosis","id":"hypnosis","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Krokorok","details":"Krokorok, L50, M","condition":"32/135","active":true,"stats":{"atk":132,"def":78,"spa":71,"spd":80,"spe":85},"moves":["lowsweep"],"baseAbility":"moxie","item":"throatspray","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"140/166","active":true,"stats":{"atk":147,"def":105,"spa":133,"spd":113,"spe":159},"moves":["shoreup","hypnosis"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Big Tony's Pal","details":"Oinkologne, L50, M","condition":"185/185","active":false,"stats":{"atk":160,"def":108,"spa":82,"spd":102,"spe":88},"moves":["present"],"baseAbility":"lingeringaroma","item":"","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Slowbro","details":"Slowbro-Galar, L50, F","condition":"179/179","active":false,"stats":{"atk":145,"def":120,"spa":128,"spd":105,"spe":50},"moves":["photongeyser"],"baseAbility":"quickdraw","item":"","pokeball":"pokeball","ability":"quickdraw","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Greavard|Greavard, L50, M|125/125
+|switch|p1b: Greavard|Greavard, L50, M|125/125
+|move|p2b: Dragapult|Hypnosis|p2a: Krokorok|[miss]
+|-miss|p2b: Dragapult|p2a: Krokorok
+|move|p1a: Alcremie|Crunch|p1b: Greavard
+|-supereffective|p1b: Greavard
+|split|p1
+|-damage|p1b: Greavard|73/125
+|-damage|p1b: Greavard|73/125
+|move|p2a: Krokorok|Low Sweep|p2b: Dragapult
+|split|p2
+|-damage|p2b: Dragapult|106/166
+|-damage|p2b: Dragapult|106/166
+|-unboost|p2b: Dragapult|spe|1
+|
+|upkeep
+|turn|6
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Crunch","id":"crunch","pp":21,"maxpp":24,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Retaliate","id":"retaliate","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Gunk Shot","id":"gunkshot","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Fairy Wind","id":"fairywind","pp":48,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"143/143","active":true,"stats":{"atk":82,"def":128,"spa":124,"spd":141,"spe":112},"moves":["jawlock","crunch"],"baseAbility":"sweetveil","item":"diveball","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Greavard","details":"Greavard, L50, M","condition":"73/125","active":true,"stats":{"atk":83,"def":111,"spa":54,"spd":91,"spe":66},"moves":["retaliate","gunkshot","fairywind"],"baseAbility":"pickup","item":"auspiciousarmor","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Snorunt","details":"Snorunt, L50, M","condition":"0 fnt","active":false,"stats":{"atk":96,"def":63,"spa":71,"spd":90,"spe":93},"moves":["freezeshock","steameruption","dragonrush","gigatonhammer"],"baseAbility":"moody","item":"","pokeball":"pokeball","ability":"moody","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Pawmo","details":"Pawmo, L50, F","condition":"137/137","active":false,"stats":{"atk":111,"def":77,"spa":96,"spd":62,"spe":106},"moves":["roar"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Low Sweep","id":"lowsweep","pp":31,"maxpp":32,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Shore Up","id":"shoreup","pp":5,"maxpp":8,"target":"self","disabled":false},{"move":"Hypnosis","id":"hypnosis","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Krokorok","details":"Krokorok, L50, M","condition":"32/135","active":true,"stats":{"atk":132,"def":78,"spa":71,"spd":80,"spe":85},"moves":["lowsweep"],"baseAbility":"moxie","item":"throatspray","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"106/166","active":true,"stats":{"atk":147,"def":105,"spa":133,"spd":113,"spe":159},"moves":["shoreup","hypnosis"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Big Tony's Pal","details":"Oinkologne, L50, M","condition":"185/185","active":false,"stats":{"atk":160,"def":108,"spa":82,"spd":102,"spe":88},"moves":["present"],"baseAbility":"lingeringaroma","item":"","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Slowbro","details":"Slowbro-Galar, L50, F","condition":"179/179","active":false,"stats":{"atk":145,"def":120,"spa":128,"spd":105,"spe":50},"moves":["photongeyser"],"baseAbility":"quickdraw","item":"","pokeball":"pokeball","ability":"quickdraw","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Alcremie doesn't have a move matching struggle
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Big Tony's Pal|Oinkologne, L50, M|185/185
+|switch|p2b: Big Tony's Pal|Oinkologne, L50, M|185/185
+|move|p1a: Alcremie|Crunch|p1b: Greavard
+|-supereffective|p1b: Greavard
+|split|p1
+|-damage|p1b: Greavard|21/125
+|-damage|p1b: Greavard|21/125
+|move|p2a: Krokorok|Low Sweep|p2b: Big Tony's Pal
+|-supereffective|p2b: Big Tony's Pal
+|split|p2
+|-damage|p2b: Big Tony's Pal|121/185
+|-damage|p2b: Big Tony's Pal|121/185
+|-unboost|p2b: Big Tony's Pal|spe|1
+|-activate|p2b: Big Tony's Pal|ability: Lingering Aroma|p2a: Krokorok|[ability] Moxie
+|move|p1b: Greavard|Gunk Shot|p2b: Big Tony's Pal|[miss]
+|-miss|p1b: Greavard|p2b: Big Tony's Pal
+|
+|upkeep
+|turn|7
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Crunch","id":"crunch","pp":20,"maxpp":24,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Retaliate","id":"retaliate","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Gunk Shot","id":"gunkshot","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Fairy Wind","id":"fairywind","pp":48,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"143/143","active":true,"stats":{"atk":82,"def":128,"spa":124,"spd":141,"spe":112},"moves":["jawlock","crunch"],"baseAbility":"sweetveil","item":"diveball","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Greavard","details":"Greavard, L50, M","condition":"21/125","active":true,"stats":{"atk":83,"def":111,"spa":54,"spd":91,"spe":66},"moves":["retaliate","gunkshot","fairywind"],"baseAbility":"pickup","item":"auspiciousarmor","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Snorunt","details":"Snorunt, L50, M","condition":"0 fnt","active":false,"stats":{"atk":96,"def":63,"spa":71,"spd":90,"spe":93},"moves":["freezeshock","steameruption","dragonrush","gigatonhammer"],"baseAbility":"moody","item":"","pokeball":"pokeball","ability":"moody","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Pawmo","details":"Pawmo, L50, F","condition":"137/137","active":false,"stats":{"atk":111,"def":77,"spa":96,"spd":62,"spe":106},"moves":["roar"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Low Sweep","id":"lowsweep","pp":30,"maxpp":32,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Present","id":"present","pp":24,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Krokorok","details":"Krokorok, L50, M","condition":"32/135","active":true,"stats":{"atk":132,"def":78,"spa":71,"spd":80,"spe":85},"moves":["lowsweep"],"baseAbility":"moxie","item":"throatspray","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Oinkologne, L50, M","condition":"121/185","active":true,"stats":{"atk":160,"def":108,"spa":82,"spd":102,"spe":88},"moves":["present"],"baseAbility":"lingeringaroma","item":"","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"106/166","active":false,"stats":{"atk":147,"def":105,"spa":133,"spd":113,"spe":159},"moves":["shoreup","hypnosis"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Slowbro","details":"Slowbro-Galar, L50, F","condition":"179/179","active":false,"stats":{"atk":145,"def":120,"spa":128,"spd":105,"spe":50},"moves":["photongeyser"],"baseAbility":"quickdraw","item":"","pokeball":"pokeball","ability":"quickdraw","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|move|p1a: Alcremie|Jaw Lock|p2a: Krokorok
+|-resisted|p2a: Krokorok
+|split|p2
+|-damage|p2a: Krokorok|16/135
+|-damage|p2a: Krokorok|16/135
+|-activate|p2a: Krokorok|ability: Lingering Aroma|p1a: Alcremie|[ability] Sweet Veil
+|move|p2a: Krokorok|Low Sweep|p2b: Big Tony's Pal
+|-supereffective|p2b: Big Tony's Pal
+|split|p2
+|-damage|p2b: Big Tony's Pal|55/185
+|-damage|p2b: Big Tony's Pal|55/185
+|-unboost|p2b: Big Tony's Pal|spe|1
+|move|p1b: Greavard|Retaliate|p2a: Krokorok
+|split|p2
+|-damage|p2a: Krokorok|0 fnt
+|-damage|p2a: Krokorok|0 fnt
+|-activate|p2a: Krokorok|ability: Lingering Aroma|p1b: Greavard|[ability] Pickup
+|faint|p2a: Krokorok
+|move|p2b: Big Tony's Pal|Present|p1a: Alcremie|[miss]
+|-miss|p2b: Big Tony's Pal|p1a: Alcremie
+|
+|upkeep
+@message
+sideupdate
+p1
+|request|{"wait":true,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"143/143","active":true,"stats":{"atk":82,"def":128,"spa":124,"spd":141,"spe":112},"moves":["jawlock","crunch"],"baseAbility":"sweetveil","item":"diveball","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Greavard","details":"Greavard, L50, M","condition":"21/125","active":true,"stats":{"atk":83,"def":111,"spa":54,"spd":91,"spe":66},"moves":["retaliate","gunkshot","fairywind"],"baseAbility":"pickup","item":"auspiciousarmor","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Snorunt","details":"Snorunt, L50, M","condition":"0 fnt","active":false,"stats":{"atk":96,"def":63,"spa":71,"spd":90,"spe":93},"moves":["freezeshock","steameruption","dragonrush","gigatonhammer"],"baseAbility":"moody","item":"","pokeball":"pokeball","ability":"moody","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Pawmo","details":"Pawmo, L50, F","condition":"137/137","active":false,"stats":{"atk":111,"def":77,"spa":96,"spd":62,"spe":106},"moves":["roar"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"forceSwitch":[true,false],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Krokorok","details":"Krokorok, L50, M","condition":"0 fnt","active":true,"stats":{"atk":132,"def":78,"spa":71,"spd":80,"spe":85},"moves":["lowsweep"],"baseAbility":"moxie","item":"throatspray","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Oinkologne, L50, M","condition":"55/185","active":true,"stats":{"atk":160,"def":108,"spa":82,"spd":102,"spe":88},"moves":["present"],"baseAbility":"lingeringaroma","item":"","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"106/166","active":false,"stats":{"atk":147,"def":105,"spa":133,"spd":113,"spe":159},"moves":["shoreup","hypnosis"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Slowbro","details":"Slowbro-Galar, L50, F","condition":"179/179","active":false,"stats":{"atk":145,"def":120,"spa":128,"spd":105,"spe":50},"moves":["photongeyser"],"baseAbility":"quickdraw","item":"","pokeball":"pokeball","ability":"quickdraw","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]},"noCancel":true}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Slowbro|Slowbro-Galar, L50, F|179/179
+|switch|p2a: Slowbro|Slowbro-Galar, L50, F|179/179
+|turn|8
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Crunch","id":"crunch","pp":20,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Retaliate","id":"retaliate","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Gunk Shot","id":"gunkshot","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Fairy Wind","id":"fairywind","pp":48,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"143/143","active":true,"stats":{"atk":82,"def":128,"spa":124,"spd":141,"spe":112},"moves":["jawlock","crunch"],"baseAbility":"sweetveil","item":"diveball","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Greavard","details":"Greavard, L50, M","condition":"21/125","active":true,"stats":{"atk":83,"def":111,"spa":54,"spd":91,"spe":66},"moves":["retaliate","gunkshot","fairywind"],"baseAbility":"pickup","item":"auspiciousarmor","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Snorunt","details":"Snorunt, L50, M","condition":"0 fnt","active":false,"stats":{"atk":96,"def":63,"spa":71,"spd":90,"spe":93},"moves":["freezeshock","steameruption","dragonrush","gigatonhammer"],"baseAbility":"moody","item":"","pokeball":"pokeball","ability":"moody","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Pawmo","details":"Pawmo, L50, F","condition":"137/137","active":false,"stats":{"atk":111,"def":77,"spa":96,"spd":62,"spe":106},"moves":["roar"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Photon Geyser","id":"photongeyser","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Present","id":"present","pp":23,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Slowbro","details":"Slowbro-Galar, L50, F","condition":"179/179","active":true,"stats":{"atk":145,"def":120,"spa":128,"spd":105,"spe":50},"moves":["photongeyser"],"baseAbility":"quickdraw","item":"","pokeball":"pokeball","ability":"quickdraw","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Oinkologne, L50, M","condition":"55/185","active":true,"stats":{"atk":160,"def":108,"spa":82,"spd":102,"spe":88},"moves":["present"],"baseAbility":"lingeringaroma","item":"","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"106/166","active":false,"stats":{"atk":147,"def":105,"spa":133,"spd":113,"spe":159},"moves":["shoreup","hypnosis"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Krokorok","details":"Krokorok, L50, M","condition":"0 fnt","active":false,"stats":{"atk":132,"def":78,"spa":71,"spd":80,"spe":85},"moves":["lowsweep"],"baseAbility":"moxie","item":"throatspray","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|move|p1a: Alcremie|Jaw Lock|p1b: Greavard
+|-supereffective|p1b: Greavard
+|split|p1
+|-damage|p1b: Greavard|0 fnt
+|-damage|p1b: Greavard|0 fnt
+|faint|p1b: Greavard
+|move|p2a: Slowbro|Photon Geyser|p1a: Alcremie
+|split|p1
+|-damage|p1a: Alcremie|67/143
+|-damage|p1a: Alcremie|67/143
+|move|p2b: Big Tony's Pal|Present|p1a: Alcremie
+|split|p1
+|-damage|p1a: Alcremie|31/143
+|-damage|p1a: Alcremie|31/143
+|
+|upkeep
+|
+|t:|
+|split|p1
+|switch|p1b: Pawmo|Pawmo, L50, F|137/137
+|switch|p1b: Pawmo|Pawmo, L50, F|137/137
+|turn|9
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":12,"maxpp":16,"target":"normal","disabled":false},{"move":"Crunch","id":"crunch","pp":20,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Roar","id":"roar","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"31/143","active":true,"stats":{"atk":82,"def":128,"spa":124,"spd":141,"spe":112},"moves":["jawlock","crunch"],"baseAbility":"sweetveil","item":"diveball","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Pawmo","details":"Pawmo, L50, F","condition":"137/137","active":true,"stats":{"atk":111,"def":77,"spa":96,"spd":62,"spe":106},"moves":["roar"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Snorunt","details":"Snorunt, L50, M","condition":"0 fnt","active":false,"stats":{"atk":96,"def":63,"spa":71,"spd":90,"spe":93},"moves":["freezeshock","steameruption","dragonrush","gigatonhammer"],"baseAbility":"moody","item":"","pokeball":"pokeball","ability":"moody","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Greavard","details":"Greavard, L50, M","condition":"0 fnt","active":false,"stats":{"atk":83,"def":111,"spa":54,"spd":91,"spe":66},"moves":["retaliate","gunkshot","fairywind"],"baseAbility":"pickup","item":"auspiciousarmor","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Photon Geyser","id":"photongeyser","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Present","id":"present","pp":22,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Slowbro","details":"Slowbro-Galar, L50, F","condition":"179/179","active":true,"stats":{"atk":145,"def":120,"spa":128,"spd":105,"spe":50},"moves":["photongeyser"],"baseAbility":"quickdraw","item":"","pokeball":"pokeball","ability":"quickdraw","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Oinkologne, L50, M","condition":"55/185","active":true,"stats":{"atk":160,"def":108,"spa":82,"spd":102,"spe":88},"moves":["present"],"baseAbility":"lingeringaroma","item":"","pokeball":"pokeball","ability":"lingeringaroma","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"106/166","active":false,"stats":{"atk":147,"def":105,"spa":133,"spd":113,"spe":159},"moves":["shoreup","hypnosis"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Krokorok","details":"Krokorok, L50, M","condition":"0 fnt","active":false,"stats":{"atk":132,"def":78,"spa":71,"spd":80,"spe":85},"moves":["lowsweep"],"baseAbility":"moxie","item":"throatspray","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|move|p1a: Alcremie|Crunch|p1b: Pawmo
+|-resisted|p1b: Pawmo
+|split|p1
+|-damage|p1b: Pawmo|120/137
+|-damage|p1b: Pawmo|120/137
+|move|p2a: Slowbro|Photon Geyser|p1b: Pawmo
+|-supereffective|p1b: Pawmo
+|split|p1
+|-damage|p1b: Pawmo|0 fnt
+|-damage|p1b: Pawmo|0 fnt
+|faint|p1b: Pawmo
+|move|p2b: Big Tony's Pal|Present|p1a: Alcremie
+|split|p1
+|-damage|p1a: Alcremie|0 fnt
+|-damage|p1a: Alcremie|0 fnt
+|faint|p1a: Alcremie
+|
+|win|Bob
+@message
+end
+{"winner":"Bob","seed":"gen5,e65162da27326824","turns":9,"p1":"Alice","p2":"Bob","p1team":[{"name":"Pawmo","species":"Pawmo","item":"","ability":"Volt Absorb","moves":["Roar"],"nature":"Lonely","evs":{"hp":18,"atk":50,"def":211,"spa":210,"spd":16,"spe":4},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Oranguru","species":"Oranguru","item":"","ability":"Symbiosis","moves":["Sucker Punch","Covet","False Surrender","Heal Pulse"],"nature":"Lax","evs":{"hp":0,"atk":247,"def":195,"spa":38,"spd":12,"spe":18},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Alcremie","species":"Alcremie-Rainbow-Swirl","item":"Dive Ball","ability":"Sweet Veil","moves":["Jaw Lock","Crunch"],"nature":"Impish","evs":{"hp":23,"atk":18,"def":178,"spa":63,"spd":2,"spe":224},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Snorunt","species":"Snorunt","item":"","ability":"Moody","moves":["Freeze Shock","Steam Eruption","Dragon Rush","Gigaton Hammer"],"nature":"Gentle","evs":{"hp":12,"atk":207,"def":2,"spa":4,"spd":97,"spe":187},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Silicobra","species":"Silicobra","item":"Luxury Ball","ability":"Sand Veil","moves":["Misty Explosion","Dream Eater"],"nature":"Bold","evs":{"hp":19,"atk":22,"def":194,"spa":0,"spd":103,"spe":148},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Greavard","species":"Greavard","item":"Auspicious Armor","ability":"Pickup","moves":["Retaliate","Gunk Shot","Fairy Wind"],"nature":"Jolly","evs":{"hp":0,"atk":16,"def":244,"spa":76,"spd":125,"spe":49},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Smeargle","species":"Smeargle","item":"Magmarizer","ability":"Own Tempo","moves":["Dig","Noble Roar","Hyper Beam","Self-Destruct"],"nature":"Calm","evs":{"hp":159,"atk":97,"def":116,"spa":0,"spd":92,"spe":7},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Dragapult","species":"Dragapult","item":"","ability":"Infiltrator","moves":["Shore Up","Hypnosis"],"nature":"Relaxed","evs":{"hp":23,"atk":59,"def":10,"spa":104,"spd":141,"spe":120},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Krokorok","species":"Krokorok","item":"Throat Spray","ability":"Moxie","moves":["Low Sweep"],"nature":"Quiet","evs":{"hp":3,"atk":239,"def":106,"spa":3,"spd":116,"spe":8},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Slowbro","species":"Slowbro-Galar","item":"","ability":"Quick Draw","moves":["Photon Geyser"],"nature":"Hardy","evs":{"hp":68,"atk":199,"def":42,"spa":63,"spd":120,"spe":3},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Flabébé","species":"Flabébé","item":"Heavy Ball","ability":"Flower Veil","moves":["Photon Geyser","Swagger"],"nature":"Docile","evs":{"hp":0,"atk":58,"def":152,"spa":80,"spd":65,"spe":155},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Oinkologne","item":"","ability":"Lingering Aroma","moves":["Present"],"nature":"Adamant","evs":{"hp":3,"atk":204,"def":105,"spa":104,"spd":17,"spe":22},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[0,3],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50\",\"seed\":\"gen5,e65162da27326824\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Pawmo|||VoltAbsorb|Roar|Lonely|18,50,211,210,16,4||||50|,,,,,Flying]Oranguru|||Symbiosis|SuckerPunch,Covet,FalseSurrender,HealPulse|Lax|,247,195,38,12,18|F|||50|,,,,,Steel]Alcremie|AlcremieRainbowSwirl|DiveBall|SweetVeil|JawLock,Crunch|Impish|23,18,178,63,2,224|F|||50|,,,,,Electric]Snorunt|||Moody|FreezeShock,SteamEruption,DragonRush,GigatonHammer|Gentle|12,207,2,4,97,187|M|||50|,,,,,Grass]Silicobra||LuxuryBall|SandVeil|MistyExplosion,DreamEater|Bold|19,22,194,,103,148||||50|,,,,,Normal]Greavard||AuspiciousArmor|Pickup|Retaliate,GunkShot,FairyWind|Jolly|,16,244,76,125,49|M|||50|,,,,,Normal\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Smeargle||Magmarizer|OwnTempo|Dig,NobleRoar,HyperBeam,SelfDestruct|Calm|159,97,116,,92,7|F|||50|,,,,,Ice]Dragapult|||Infiltrator|ShoreUp,Hypnosis|Relaxed|23,59,10,104,141,120|F|||50|,,,,,Water]Krokorok||ThroatSpray|Moxie|LowSweep|Quiet|3,239,106,3,116,8|M|||50|,,,,,Steel]Slowbro-Galar|||QuickDraw|PhotonGeyser|Hardy|68,199,42,63,120,3||||50|,,,,,Poison]Flabébé||HeavyBall|FlowerVeil|PhotonGeyser,Swagger|Docile|,58,152,80,65,155||||50|,,,,,Bug]Big Tony's Pal|Oinkologne||LingeringAroma|Present|Adamant|3,204,105,104,17,22|M|||50|,,,,,Stellar\",\"rating\":1500}",">p1 team 3, 4, 1, 6",">p2 team 4, 2, 6, 3",">p1 move jawlock -2, move gigatonhammer +1",">p2 switch 4, move shoreup terastallize",">p1 move crunch -2, move dragonrush -1",">p2 switch 4, move shoreup",">p1 move crunch +2, move freezeshock +2 terastallize",">p2 move photongeyser, move shoreup",">p1 pass, switch 3",">p1 move jawlock, move roar",">p2 switch 4, switch 3",">p1 move crunch -2, switch 4",">p2 move lowsweep -2, move hypnosis -1",">p1 move crunch -2, move gunkshot +2",">p2 move lowsweep -2, switch 3",">p1 move jawlock +1, move retaliate +1",">p2 move lowsweep -2, move present +1",">p2 switch 4, pass",">p1 move jawlock -2, move gunkshot +1",">p2 move photongeyser +2, move present +2",">p1 pass, switch 4",">p1 move crunch -2, move roar -1",">p2 move photongeyser +2, move present +1"]}

@@ -1,0 +1,329 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 20b8 e3d7 7bed 4055
+genders drawn
+team p1
+Vivillon-Continental (M) @ Damp Rock
+Ability: Shield Dust
+Level: 50
+Tera Type: Bug
+EVs: 4 HP / 17 Atk / 9 Def / 27 SpA / 1 SpD / 1 Spe
+Relaxed Nature
+- Super Fang
+
+Pikachu (Camerupt) (M) @ Cameruptite
+Ability: Anger Point
+Level: 50
+Tera Type: Fighting
+EVs: 17 HP / 6 Def / 1 SpA / 9 SpD / 27 Spe
+Lax Nature
+- Torment
+- Final Gambit
+
+Clawitzer (M)
+Ability: Mega Launcher
+Level: 50
+Tera Type: Ghost
+EVs: 14 Atk / 18 Def / 20 SpA / 14 Spe
+Quiet Nature
+- First Impression
+- Rock Polish
+
+Morpeko (M) @ Pecha Berry
+Ability: Hunger Switch
+Level: 50
+Tera Type: Ice
+EVs: 8 HP / 3 Atk / 23 Def / 1 SpA / 27 SpD / 1 Spe
+Hasty Nature
+- Morning Sun
+- Life Dew
+
+Gallade (M) @ Galladite
+Ability: Sharpness
+Level: 50
+Tera Type: Fighting
+EVs: 3 HP / 26 Atk / 23 SpA / 4 SpD / 1 Spe
+Careful Nature
+- Poison Powder
+- Aura Wheel
+- Sludge Bomb
+
+Mr. Bubbles (Vanilluxe) (M)
+Ability: Ice Body
+Level: 50
+Tera Type: Steel
+EVs: 7 Atk / 25 Def / 23 SpD / 11 Spe
+Quiet Nature
+- Knock Off
+- Muddy Water
+- Body Press
+- High Jump Kick
+end
+team p2
+Gourgeist (M) @ Oran Berry
+Ability: Pickup
+Level: 50
+Tera Type: Rock
+EVs: 25 HP / 2 Atk / 11 Def / 1 SpD / 27 Spe
+Bashful Nature
+- Iron Defense
+- Frenzy Plant
+- Power Shift
+
+Alcremie-Ruby-Swirl (F)
+Ability: Sweet Veil
+Level: 50
+Tera Type: Normal
+EVs: 6 HP / 3 Atk / 19 Def / 1 SpA / 12 SpD / 10 Spe
+Quiet Nature
+- Synthesis
+- Growth
+
+Zoë (Politoed) (M) @ Magnet
+Ability: Damp
+Level: 50
+Tera Type: Stellar
+EVs: 21 Def / 30 SpA / 3 SpD / 11 Spe
+Docile Nature
+- Poison Jab
+- Terrain Pulse
+
+Big Tony's Pal (Maushold) @ Twisted Spoon
+Ability: Technician
+Level: 50
+Tera Type: Fighting
+EVs: 1 HP / 27 Atk / 9 SpA / 1 SpD / 27 Spe
+Impish Nature
+- Mud-Slap
+
+Gallade (M) @ Galladite
+Ability: Justified
+Level: 50
+Tera Type: Dragon
+EVs: 7 HP / 2 Atk / 7 Def / 2 SpA / 9 SpD / 31 Spe
+Docile Nature
+- Leech Life
+- Pluck
+- Calm Mind
+- Bounce
+
+Mr. Bubbles (Tsareena) (F) @ Smooth Rock
+Ability: Queenly Majesty
+Level: 50
+Tera Type: Dark
+EVs: 1 HP / 29 Atk / 6 Def / 12 SpA / 4 SpD / 5 Spe
+Quiet Nature
+- Reflect Type
+- Bite
+- Reversal
+- Swagger
+end
+choice p1 team 6253
+choice p2 team 1643
+choice p1 switch 3, move 2 -1
+choice p2 move 2 1, move 1 2
+choice p1 switch 3, switch 4
+choice p2 move 1, move 3 1
+choice p1 move 4 -2, move 1 -1
+choice p2 move 2 2, move 3 -1
+choice p1 move 3 -2, move 2
+choice p2 move 1, move 4 -1
+choice p1 move 4 1, pass
+choice p2 switch 3, move 2 1
+choice p1 move 1 1, pass
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Vivillon-Continental, L50, M|
+expect |poke|p1|Camerupt, L50, M|
+expect |poke|p1|Clawitzer, L50, M|
+expect |poke|p1|Morpeko, L50, M|
+expect |poke|p1|Gallade, L50, M|
+expect |poke|p1|Vanilluxe, L50, M|
+expect |poke|p2|Gourgeist, L50, M|
+expect |poke|p2|Alcremie-Ruby-Swirl, L50, F|
+expect |poke|p2|Politoed, L50, M|
+expect |poke|p2|Maushold, L50|
+expect |poke|p2|Gallade, L50, M|
+expect |poke|p2|Tsareena, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |rng|2|1
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Mr. Bubbles|Vanilluxe, L50, M|146/146
+expect |switch|p1a: Mr. Bubbles|Vanilluxe, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Pikachu|Camerupt, L50, M|162/162
+expect |switch|p1b: Pikachu|Camerupt, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Gourgeist|Gourgeist, L50, M|165/165
+expect |switch|p2a: Gourgeist|Gourgeist, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Mr. Bubbles|Tsareena, L50, F|148/148
+expect |switch|p2b: Mr. Bubbles|Tsareena, L50, F|100/100
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |turn|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |split|p1
+expect |switch|p1a: Gallade|Gallade, L50, M|146/146
+expect |switch|p1a: Gallade|Gallade, L50, M|100/100
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Gourgeist|Frenzy Plant|p1a: Gallade
+expect |rng|100|19
+expect |rng|24|4
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Gallade|94/146
+expect |-damage|p1a: Gallade|64/100
+expect |-mustrecharge|p2a: Gourgeist
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: Pikachu|Final Gambit|p1a: Gallade
+expect |rng|100|34
+expect |split|p1
+expect |-damage|p1a: Gallade|0 fnt
+expect |-damage|p1a: Gallade|0 fnt
+expect |rng|2|1
+expect |faint|p1b: Pikachu
+expect |faint|p1a: Gallade
+expect |move|p2b: Mr. Bubbles|Reflect Type|p1: Gallade|[notarget]
+expect |-fail|p2b: Mr. Bubbles
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Mr. Bubbles|Vanilluxe, L50, M|146/146
+expect |switch|p1a: Mr. Bubbles|Vanilluxe, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Clawitzer|Clawitzer, L50, M|146/146
+expect |switch|p1b: Clawitzer|Clawitzer, L50, M|100/100
+expect |turn|2
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1b: Clawitzer|First Impression|p1a: Mr. Bubbles
+expect |rng|100|4
+expect |rng|24|15
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|111/146
+expect |-damage|p1a: Mr. Bubbles|76/100
+expect |rng|2|0
+expect |rng|2|1
+expect |cant|p2a: Gourgeist|recharge
+expect |move|p1a: Mr. Bubbles|High Jump Kick|p1b: Clawitzer
+expect |rng|100|19
+expect |rng|24|12
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Clawitzer|89/146
+expect |-damage|p1b: Clawitzer|60/100
+expect |move|p2b: Mr. Bubbles|Reversal|p1a: Mr. Bubbles
+expect |rng|100|59
+expect |rng|24|8
+expect |rng|16|15
+expect |-supereffective|p1a: Mr. Bubbles|1
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|89/146
+expect |-damage|p1a: Mr. Bubbles|60/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Gourgeist|Frenzy Plant|p1b: Clawitzer
+expect |rng|100|31
+expect |rng|24|15
+expect |rng|16|12
+expect |-supereffective|p1b: Clawitzer|1
+expect |split|p1
+expect |-damage|p1b: Clawitzer|0 fnt
+expect |-damage|p1b: Clawitzer|0 fnt
+expect |-mustrecharge|p2a: Gourgeist
+expect |faint|p1b: Clawitzer
+expect |move|p1a: Mr. Bubbles|Body Press|p1: Clawitzer|[notarget]
+expect |-fail|p1a: Mr. Bubbles
+expect |move|p2b: Mr. Bubbles|Reversal|p2a: Gourgeist
+expect |-immune|p2a: Gourgeist
+expect |
+expect |upkeep
+expect |turn|4
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |rng|1|0
+expect |cant|p2a: Gourgeist|recharge
+expect |move|p1a: Mr. Bubbles|High Jump Kick|p2a: Gourgeist
+expect |-immune|p2a: Gourgeist
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|16/146|[from] highjumpkick
+expect |-damage|p1a: Mr. Bubbles|10/100|[from] highjumpkick
+expect |move|p2b: Mr. Bubbles|Swagger|p2a: Gourgeist
+expect |rng|100|36
+expect |-boost|p2a: Gourgeist|atk|2
+expect |-start|p2a: Gourgeist|confusion
+expect |rng|4|0
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Big Tony's Pal|Maushold, L50|150/150
+expect |switch|p2a: Big Tony's Pal|Maushold, L50|100/100
+expect |move|p1a: Mr. Bubbles|Knock Off|p2a: Big Tony's Pal
+expect |rng|100|35
+expect |rng|24|15
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Big Tony's Pal|102/150
+expect |-damage|p2a: Big Tony's Pal|68/100
+expect |-enditem|p2a: Big Tony's Pal|Twisted Spoon|[from] move: Knock Off|[of] p1a: Mr. Bubbles
+expect |move|p2b: Mr. Bubbles|Bite|p1a: Mr. Bubbles
+expect |rng|100|52
+expect |rng|24|2
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|0 fnt
+expect |-damage|p1a: Mr. Bubbles|0 fnt
+expect |rng|100|9
+expect |faint|p1a: Mr. Bubbles
+expect |
+expect |win|p2

@@ -1,0 +1,133 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Snorlax
+Ability: Thick Fat
+Hardy Nature
+- Splash
+
+Ditto
+Ability: Imposter
+Hardy Nature
+- Transform
+end
+team p2
+Morpeko
+Ability: Hunger Switch
+Hardy Nature
+- Aura Wheel
+end
+choice p1 switch 2
+choice p2 move 1
+choice p1 switch 2
+choice p2 move 1
+choice p1 switch 2
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Snorlax|Snorlax, F|461/461
+expect |switch|p1a: Snorlax|Snorlax, F|461/461
+expect |split|p2
+expect |switch|p2a: Morpeko|Morpeko, F|257/257
+expect |switch|p2a: Morpeko|Morpeko, F|257/257
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Ditto|Ditto|237/237
+expect |switch|p1a: Ditto|Ditto|237/237
+expect |-transform|p1a: Ditto|p2a: Morpeko|[from] ability: Imposter
+expect |rng|2|1
+expect |move|p2a: Morpeko|Aura Wheel|p1a: Ditto
+expect |rng|100|18
+expect |rng|24|6
+expect |rng|16|11
+expect |-resisted|p1a: Ditto
+expect |split|p1
+expect |-damage|p1a: Ditto|145/237
+expect |-damage|p1a: Ditto|145/237
+expect |rng|100|9
+expect |-boost|p2a: Morpeko|spe|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |-formechange|p2a: Morpeko|Morpeko-Hangry||[from] ability: Hunger Switch
+expect |upkeep
+expect |rng|2|0
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Snorlax|Snorlax, F|461/461
+expect |switch|p1a: Snorlax|Snorlax, F|461/461
+expect |move|p2a: Morpeko|Aura Wheel|p1a: Snorlax
+expect |rng|100|60
+expect |rng|24|0
+expect |rng|16|8
+expect |-crit|p1a: Snorlax
+expect |split|p1
+expect |-damage|p1a: Snorlax|200/461
+expect |-damage|p1a: Snorlax|200/461
+expect |rng|100|88
+expect |-boost|p2a: Morpeko|spe|1
+expect |
+expect |-formechange|p2a: Morpeko|Morpeko||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Ditto|Ditto|145/237
+expect |switch|p1a: Ditto|Ditto|145/237
+expect |-transform|p1a: Ditto|p2a: Morpeko|[from] ability: Imposter
+expect |move|p2a: Morpeko|Aura Wheel|p1a: Ditto
+expect |rng|100|37
+expect |rng|24|5
+expect |rng|16|15
+expect |-resisted|p1a: Ditto
+expect |split|p1
+expect |-damage|p1a: Ditto|57/237
+expect |-damage|p1a: Ditto|57/237
+expect |rng|100|15
+expect |-boost|p2a: Morpeko|spe|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |-formechange|p2a: Morpeko|Morpeko-Hangry||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Morpeko|Aura Wheel|p1a: Ditto
+expect |rng|100|55
+expect |rng|24|12
+expect |rng|16|11
+expect |-resisted|p1a: Ditto
+expect |split|p1
+expect |-damage|p1a: Ditto|0 fnt
+expect |-damage|p1a: Ditto|0 fnt
+expect |rng|100|60
+expect |-boost|p2a: Morpeko|spe|1
+expect |faint|p1a: Ditto
+expect |
+expect |-formechange|p2a: Morpeko|Morpeko||[from] ability: Hunger Switch
+expect |upkeep

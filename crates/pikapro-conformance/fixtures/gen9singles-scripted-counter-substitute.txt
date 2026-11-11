@@ -1,0 +1,103 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 3141 5926 5358 9793
+genders drawn
+team p1
+Wobbuffet
+Ability: Shadow Tag
+Level: 50
+Hardy Nature
+- Counter
+- Mirror Coat
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Raticate
+Ability: Guts
+Level: 50
+Hardy Nature
+- Substitute
+- Seismic Toss
+- Night Shade
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+end
+choice p1 move 3
+choice p2 move 1
+choice p1 move 1
+choice p2 move 2
+choice p1 move 2
+choice p2 move 3
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Wobbuffet|Wobbuffet, L50, F|265/265
+expect |switch|p1a: Wobbuffet|Wobbuffet, L50, F|265/265
+expect |split|p2
+expect |switch|p2a: Raticate|Raticate, L50, F|130/130
+expect |switch|p2a: Raticate|Raticate, L50, F|130/130
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Raticate|Substitute|p2a: Raticate
+expect |-start|p2a: Raticate|Substitute
+expect |split|p2
+expect |-damage|p2a: Raticate|98/130
+expect |-damage|p2a: Raticate|98/130
+expect |move|p1a: Wobbuffet|Splash|p1a: Wobbuffet
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Raticate|Seismic Toss|p1a: Wobbuffet
+expect |rng|100|24
+expect |split|p1
+expect |-damage|p1a: Wobbuffet|215/265
+expect |-damage|p1a: Wobbuffet|215/265
+expect |move|p1a: Wobbuffet|Counter|p2a: Raticate
+expect |rng|100|86
+expect |-end|p2a: Raticate|Substitute
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Raticate|Night Shade|p1a: Wobbuffet
+expect |rng|100|29
+expect |split|p1
+expect |-damage|p1a: Wobbuffet|165/265
+expect |-damage|p1a: Wobbuffet|165/265
+expect |move|p1a: Wobbuffet|Mirror Coat|p2a: Raticate
+expect |rng|100|94
+expect |split|p2
+expect |-damage|p2a: Raticate|0 fnt
+expect |-damage|p2a: Raticate|0 fnt
+expect |faint|p2a: Raticate
+expect |
+expect |upkeep

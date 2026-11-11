@@ -1,0 +1,532 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 06e6 2a61 2bb2 f39b
+genders drawn
+team p1
+X (Volcarona) (M)
+Ability: Flame Body
+Level: 50
+Tera Type: Fire
+EVs: 155 HP / 25 Atk / 3 Def / 238 SpA / 4 SpD / 64 Spe
+Sassy Nature
+- Burn Up
+- Quiver Dance
+- Roost
+
+Chomp (Corvisquire) (M) @ Wide Lens
+Ability: Keen Eye
+Level: 50
+Tera Type: Ground
+EVs: 133 HP / 47 Atk / 92 Def / 20 SpA / 185 SpD / 23 Spe
+Adamant Nature
+- Skill Swap
+
+Pikachu (Dugtrio-Alola) (M) @ Big Root
+Ability: Sand Force
+Level: 50
+Tera Type: Electric
+EVs: 14 HP / 225 Atk / 15 Def / 171 SpA / 9 SpD / 75 Spe
+Bashful Nature
+- Final Gambit
+- Acrobatics
+- Tearful Look
+
+Zoë (Slowbro) (F)
+Ability: Oblivious
+Level: 50
+Tera Type: Rock
+EVs: 4 HP / 66 Atk / 43 Def / 52 SpA / 135 SpD / 183 Spe
+Serious Nature
+- Guard Swap
+
+Walking Wake @ Wise Glasses
+Ability: Protosynthesis
+Level: 50
+Tera Type: Electric
+EVs: 138 HP / 4 Atk / 112 Def / 5 SpA / 249 SpD
+Gentle Nature
+- Dragon Dance
+
+Magnezone
+Ability: Magnet Pull
+Level: 50
+Tera Type: Fire
+EVs: 167 HP / 86 Atk / 96 Def / 14 SpA / 126 SpD / 11 Spe
+Jolly Nature
+- Double Shock
+- Flash Cannon
+end
+team p2
+Oricorio (F)
+Ability: Dancer
+Level: 50
+Tera Type: Stellar
+EVs: 54 HP / 166 Atk / 48 Def / 233 SpA / 4 SpD / 3 Spe
+Impish Nature
+- Burn Up
+- Revelation Dance
+- Roost
+
+Moltres
+Ability: Pressure
+Level: 50
+Tera Type: Fire
+EVs: 19 HP / 1 Atk / 1 SpA / 239 SpD / 250 Spe
+Gentle Nature
+- Burn Up
+- Roost
+- Hurricane
+
+Zapdos
+Ability: Static
+Level: 50
+Shiny: Yes
+Tera Type: Electric
+EVs: 33 HP / 213 Atk / 38 Def / 19 SpA / 198 SpD / 7 Spe
+Naive Nature
+- Double Shock
+- Roost
+- Hurricane
+
+Murkrow
+Ability: Prankster
+Level: 50
+Tera Type: Fire
+EVs: 44 HP / 35 Atk / 65 Def / 132 SpA / 147 SpD / 87 Spe
+Bashful Nature
+- Tail Whip
+- Dazzling Gleam
+- Infestation
+
+Sir Hops-a-Lot (Arcanine)
+Ability: Intimidate
+Level: 50
+Tera Type: Fire
+EVs: 141 HP / 49 Atk / 50 Def / 26 SpA / 81 SpD / 152 Spe
+Bold Nature
+- Burn Up
+- Extreme Speed
+- Protect
+
+Minior-Orange @ Binding Band
+Ability: Shields Down
+Level: 50
+Tera Type: Flying
+EVs: 18 HP / 202 Atk / 8 Def / 5 SpA / 30 SpD / 246 Spe
+Careful Nature
+- Fly
+- Final Gambit
+- Echoed Voice
+- Pounce
+end
+choice p1 move roost,switch 3
+choice p2 move 1 2 terastallize, move 1 -1
+choice p1 pass, switch 5
+choice p2 move Roost, move Hurricane -1
+choice p1 switch 4, move 1 terastallize
+choice p2 switch arcanine ,  pass
+choice p1 move 1 2, switch 3
+choice p2 move 1 -2, move 3 -1
+choice p1 switch magnezone ,  switch 4
+choice p2 move 2 2,switch Minior
+choice p1 move 2 -2, switch 3
+choice p2 switch 4, move 2 -1
+choice p2 pass, switch 4
+choice p1 switch 3, move 1
+choice p2 switch Moltres, move Burn Up 1
+choice p1 default
+choice p2 switch 6, move 1 1
+choice p2 switch zapdos, pass
+choice p1 move 2, switch 6
+choice p2 move 1 -2, move 3
+choice p2 default
+choice p1 switch 3, move 1 2
+choice p2 move 1 1, move 3 1
+choice p1 move 1 +2, switch corvisquire
+choice p2 move 3 -2, move 3 -1
+choice p1 default
+choice p2 move 1 2, pass
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: X|Volcarona, L50, M|179/179
+expect |switch|p1a: X|Volcarona, L50, M|179/179
+expect |split|p1
+expect |switch|p1b: Chomp|Corvisquire, L50, M|160/160
+expect |switch|p1b: Chomp|Corvisquire, L50, M|160/160
+expect |split|p2
+expect |switch|p2a: Oricorio|Oricorio, L50, F|157/157
+expect |switch|p2a: Oricorio|Oricorio, L50, F|157/157
+expect |split|p2
+expect |switch|p2b: Moltres|Moltres, L50|167/167
+expect |switch|p2b: Moltres|Moltres, L50|167/167
+expect |-ability|p2b: Moltres|Pressure
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Pikachu|Dugtrio-Alola, L50, M|112/112
+expect |switch|p1b: Pikachu|Dugtrio-Alola, L50, M|112/112
+expect |-terastallize|p2a: Oricorio|Stellar
+expect |move|p2b: Moltres|Burn Up|p2a: Oricorio
+expect |rng|100|83
+expect |rng|24|16
+expect |rng|16|9
+expect |-resisted|p2a: Oricorio
+expect |split|p2
+expect |-damage|p2a: Oricorio|94/157
+expect |-damage|p2a: Oricorio|94/157
+expect |-start|p2b: Moltres|typechange|???/Flying|[from] move: Burn Up
+expect |move|p1a: X|Roost||[still]
+expect |-fail|p1a: X|heal
+expect |move|p2a: Oricorio|Burn Up|p1b: Pikachu
+expect |rng|100|40
+expect |rng|24|17
+expect |rng|16|13
+expect |-supereffective|p1b: Pikachu
+expect |split|p1
+expect |-damage|p1b: Pikachu|0 fnt
+expect |-damage|p1b: Pikachu|0 fnt
+expect |-start|p2a: Oricorio|typechange|Fire/Flying|[from] move: Burn Up
+expect |faint|p1b: Pikachu
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Walking Wake|Walking Wake, L50|191/191
+expect |switch|p1b: Walking Wake|Walking Wake, L50|191/191
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Zoë|Slowbro, L50, F|171/171
+expect |switch|p1a: Zoë|Slowbro, L50, F|171/171
+expect |-terastallize|p1b: Walking Wake|Electric
+expect |move|p2b: Moltres|Hurricane|p2a: Oricorio
+expect |rng|100|23
+expect |rng|24|10
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Oricorio|0 fnt
+expect |-damage|p2a: Oricorio|0 fnt
+expect |rng|100|76
+expect |faint|p2a: Oricorio
+expect |move|p1b: Walking Wake|Dragon Dance|p1b: Walking Wake
+expect |-boost|p1b: Walking Wake|atk|1
+expect |-boost|p1b: Walking Wake|spe|1
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Arcanine, L50, F|183/183
+expect |switch|p2a: Sir Hops-a-Lot|Arcanine, L50, F|183/183
+expect |-ability|p2a: Sir Hops-a-Lot|Intimidate|boost
+expect |-fail|p1a: Zoë|unboost|atk|[from] ability: Oblivious|[of] p1a: Zoë
+expect |-unboost|p1b: Walking Wake|atk|1
+expect |turn|3
+expect |
+expect |t:|
+expect |-end|p1b: Walking Wake|Protosynthesis|[silent]
+expect |split|p1
+expect |switch|p1b: Chomp|Corvisquire, L50, M|160/160
+expect |switch|p1b: Chomp|Corvisquire, L50, M|160/160
+expect |move|p2b: Moltres|Hurricane|p2a: Sir Hops-a-Lot
+expect |rng|100|60
+expect |rng|24|0
+expect |rng|16|0
+expect |-crit|p2a: Sir Hops-a-Lot
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|38/183
+expect |-damage|p2a: Sir Hops-a-Lot|38/183
+expect |rng|100|95
+expect |move|p2a: Sir Hops-a-Lot|Burn Up|p2b: Moltres
+expect |rng|100|47
+expect |rng|24|9
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Moltres|100/167
+expect |-damage|p2b: Moltres|100/167
+expect |-start|p2a: Sir Hops-a-Lot|typechange|???|[from] move: Burn Up
+expect |move|p1a: Zoë|Guard Swap|p2b: Moltres
+expect |-swapboost|p1a: Zoë|p2b: Moltres|def, spd|[from] move: Guard Swap
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Minior|Minior-Orange, L50|137/137
+expect |switch|p2b: Minior|Minior-Orange, L50|137/137
+expect |-formechange|p2b: Minior|Minior-Meteor||[from] ability: Shields Down
+expect |split|p1
+expect |switch|p1b: X|Volcarona, L50, M|179/179
+expect |switch|p1b: X|Volcarona, L50, M|179/179
+expect |split|p1
+expect |switch|p1a: Magnezone|Magnezone, L50|166/166
+expect |switch|p1a: Magnezone|Magnezone, L50|166/166
+expect |move|p2a: Sir Hops-a-Lot|Extreme Speed|p1b: X
+expect |rng|100|29
+expect |rng|24|20
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1b: X|134/179
+expect |-damage|p1b: X|134/179
+expect |rng|10|2
+expect |-status|p2a: Sir Hops-a-Lot|brn|[from] ability: Flame Body|[of] p1b: X
+expect |
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|27/183 brn|[from] brn
+expect |-damage|p2a: Sir Hops-a-Lot|27/183 brn|[from] brn
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Murkrow|Murkrow, L50, F|141/141
+expect |switch|p2a: Murkrow|Murkrow, L50, F|141/141
+expect |split|p1
+expect |switch|p1b: Walking Wake|Walking Wake, L50, tera:Electric|191/191
+expect |switch|p1b: Walking Wake|Walking Wake, L50, tera:Electric|191/191
+expect |move|p2b: Minior|Final Gambit|p2a: Murkrow
+expect |rng|100|33
+expect |split|p2
+expect |-damage|p2a: Murkrow|4/141
+expect |-damage|p2a: Murkrow|4/141
+expect |faint|p2b: Minior
+expect |move|p1a: Magnezone|Flash Cannon|p1b: Walking Wake
+expect |rng|100|68
+expect |rng|24|17
+expect |rng|16|12
+expect |-resisted|p1b: Walking Wake
+expect |split|p1
+expect |-damage|p1b: Walking Wake|170/191
+expect |-damage|p1b: Walking Wake|170/191
+expect |rng|100|40
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Sir Hops-a-Lot|Arcanine, L50, F|27/183 brn
+expect |switch|p2b: Sir Hops-a-Lot|Arcanine, L50, F|27/183 brn
+expect |-ability|p2b: Sir Hops-a-Lot|Intimidate|boost
+expect |-unboost|p1a: Magnezone|atk|1
+expect |-unboost|p1b: Walking Wake|atk|1
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Moltres|Moltres, L50|100/167
+expect |switch|p2a: Moltres|Moltres, L50|100/167
+expect |-ability|p2a: Moltres|Pressure
+expect |split|p1
+expect |switch|p1a: X|Volcarona, L50, M|134/179
+expect |switch|p1a: X|Volcarona, L50, M|134/179
+expect |move|p2b: Sir Hops-a-Lot|Burn Up|p1a: X
+expect |rng|100|14
+expect |rng|24|1
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: X|68/179
+expect |-damage|p1a: X|68/179
+expect |-start|p2b: Sir Hops-a-Lot|typechange|???|[from] move: Burn Up
+expect |move|p1b: Walking Wake|Dragon Dance|p1b: Walking Wake
+expect |-boost|p1b: Walking Wake|atk|1
+expect |-boost|p1b: Walking Wake|spe|1
+expect |
+expect |split|p2
+expect |-damage|p2b: Sir Hops-a-Lot|16/183 brn|[from] brn
+expect |-damage|p2b: Sir Hops-a-Lot|16/183 brn|[from] brn
+expect |upkeep
+expect |turn|7
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Murkrow|Murkrow, L50, F|4/141
+expect |switch|p2a: Murkrow|Murkrow, L50, F|4/141
+expect |move|p1b: Walking Wake|Dragon Dance|p1b: Walking Wake
+expect |-boost|p1b: Walking Wake|atk|1
+expect |-boost|p1b: Walking Wake|spe|1
+expect |move|p2b: Sir Hops-a-Lot|Burn Up||[still]
+expect |-fail|p2b: Sir Hops-a-Lot|move: Burn Up
+expect |move|p1a: X|Burn Up|p2a: Murkrow
+expect |rng|100|30
+expect |rng|24|3
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Murkrow|0 fnt
+expect |-damage|p2a: Murkrow|0 fnt
+expect |-start|p1a: X|typechange|Bug/???|[from] move: Burn Up
+expect |faint|p2a: Murkrow
+expect |
+expect |split|p2
+expect |-damage|p2b: Sir Hops-a-Lot|5/183 brn|[from] brn
+expect |-damage|p2b: Sir Hops-a-Lot|5/183 brn|[from] brn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zapdos|Zapdos, L50, shiny|169/169
+expect |switch|p2a: Zapdos|Zapdos, L50, shiny|169/169
+expect |turn|8
+expect |
+expect |t:|
+expect |-end|p1b: Walking Wake|Protosynthesis|[silent]
+expect |split|p1
+expect |switch|p1b: Zoë|Slowbro, L50, F|171/171
+expect |switch|p1b: Zoë|Slowbro, L50, F|171/171
+expect |move|p2b: Sir Hops-a-Lot|Protect|p2b: Sir Hops-a-Lot
+expect |-singleturn|p2b: Sir Hops-a-Lot|Protect
+expect |move|p2a: Zapdos|Double Shock|p2b: Sir Hops-a-Lot
+expect |-activate|p2b: Sir Hops-a-Lot|move: Protect
+expect |move|p1a: X|Quiver Dance|p1a: X
+expect |-boost|p1a: X|spa|1
+expect |-boost|p1a: X|spd|1
+expect |-boost|p1a: X|spe|1
+expect |
+expect |rng|2|1
+expect |split|p2
+expect |-damage|p2b: Sir Hops-a-Lot|0 fnt|[from] brn
+expect |-damage|p2b: Sir Hops-a-Lot|0 fnt|[from] brn
+expect |faint|p2b: Sir Hops-a-Lot
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Moltres|Moltres, L50|100/167
+expect |switch|p2b: Moltres|Moltres, L50|100/167
+expect |-ability|p2b: Moltres|Pressure
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Magnezone|Magnezone, L50|166/166
+expect |switch|p1a: Magnezone|Magnezone, L50|166/166
+expect |move|p2b: Moltres|Hurricane|p1a: Magnezone
+expect |rng|100|38
+expect |rng|24|9
+expect |rng|16|11
+expect |-resisted|p1a: Magnezone
+expect |split|p1
+expect |-damage|p1a: Magnezone|148/166
+expect |-damage|p1a: Magnezone|148/166
+expect |rng|100|4
+expect |-start|p1a: Magnezone|confusion
+expect |rng|4|1
+expect |move|p2a: Zapdos|Double Shock|p1a: Magnezone
+expect |rng|100|33
+expect |rng|24|6
+expect |rng|16|14
+expect |-resisted|p1a: Magnezone
+expect |split|p1
+expect |-damage|p1a: Magnezone|116/166
+expect |-damage|p1a: Magnezone|116/166
+expect |-start|p2a: Zapdos|typechange|???/Flying|[from] move: Double Shock
+expect |move|p1b: Zoë|Guard Swap|p2b: Moltres
+expect |-swapboost|p1b: Zoë|p2b: Moltres|def, spd|[from] move: Guard Swap
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Chomp|Corvisquire, L50, M|160/160
+expect |switch|p1b: Chomp|Corvisquire, L50, M|160/160
+expect |move|p2b: Moltres|Hurricane|p2a: Zapdos
+expect |rng|100|35
+expect |rng|24|5
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Zapdos|93/169
+expect |-damage|p2a: Zapdos|93/169
+expect |rng|100|98
+expect |move|p2a: Zapdos|Hurricane|p2b: Moltres
+expect |rng|100|28
+expect |rng|24|0
+expect |rng|16|7
+expect |-crit|p2b: Moltres
+expect |split|p2
+expect |-damage|p2b: Moltres|0 fnt
+expect |-damage|p2b: Moltres|0 fnt
+expect |rng|100|59
+expect |faint|p2b: Moltres
+expect |rng|1|0
+expect |rng|1|0
+expect |-activate|p1a: Magnezone|confusion
+expect |rng|100|1
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Magnezone|103/166|[from] confusion
+expect |-damage|p1a: Magnezone|103/166|[from] confusion
+expect |
+expect |upkeep
+expect |turn|11
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |move|p2a: Zapdos|Double Shock||[still]
+expect |-fail|p2a: Zapdos|move: Double Shock
+expect |move|p1b: Chomp|Skill Swap|p2a: Zapdos
+expect |-activate|p1b: Chomp|Skill Swap|Static|Keen Eye|[of] p2a: Zapdos
+expect |-activate|p1a: Magnezone|confusion
+expect |rng|100|40
+expect |move|p1a: Magnezone|Double Shock|p2a: Zapdos
+expect |rng|100|14
+expect |rng|24|5
+expect |rng|16|8
+expect |-supereffective|p2a: Zapdos
+expect |split|p2
+expect |-damage|p2a: Zapdos|0 fnt
+expect |-damage|p2a: Zapdos|0 fnt
+expect |-start|p1a: Magnezone|typechange|???/Steel|[from] move: Double Shock
+expect |faint|p2a: Zapdos
+expect |
+expect |win|p1
+request p1 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Skill Swap","id":"skillswap","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Ground"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Volcarona, L50, M","condition":"179/179","active":true,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":true,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"112/112","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":false,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"191/191","active":false,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":false,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Revelation Dance","id":"revelationdance","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Stellar"},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":16,"maxpp":16,"target":"any","disabled":false}],"canTerastallize":"Fire"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"157/157","active":true,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"167/167","active":true,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":false,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"141/141","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"183/183","active":false,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"137/137","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Volcarona, L50, M","condition":"179/179","active":true,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":true,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":false,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"191/191","active":false,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":false,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"94/157","active":true,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"167/167","active":true,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":false,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"141/141","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"183/183","active":false,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"137/137","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Dragon Dance","id":"dragondance","pp":32,"maxpp":32,"target":"self","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Volcarona, L50, M","condition":"179/179","active":true,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"191/191","active":true,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":false,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":false,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Revelation Dance","id":"revelationdance","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":16,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"94/157","active":true,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"167/167","active":true,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":false,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"141/141","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"183/183","active":false,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"137/137","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":true,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"191/191","active":true,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: X","details":"Volcarona, L50, M","condition":"179/179","active":false,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":false,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":true,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"167/167","active":true,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":false,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"141/141","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"183/183","active":false,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"137/137","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Guard Swap","id":"guardswap","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Dragon Dance","id":"dragondance","pp":31,"maxpp":32,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":true,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"191/191","active":true,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: X","details":"Volcarona, L50, M","condition":"179/179","active":false,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":false,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Extreme Speed","id":"extremespeed","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":15,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"183/183","active":true,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"167/167","active":true,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":false,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"141/141","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"137/137","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Guard Swap","id":"guardswap","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Skill Swap","id":"skillswap","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":true,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":true,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"191/191","active":false,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: X","details":"Volcarona, L50, M","condition":"179/179","active":false,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":false,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Extreme Speed","id":"extremespeed","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":14,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"38/183","active":true,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"100/167","active":true,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":false,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"141/141","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"137/137","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Flash Cannon","id":"flashcannon","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":true,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: X","details":"Volcarona, L50, M","condition":"134/179","active":true,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"191/191","active":false,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":false,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Extreme Speed","id":"extremespeed","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Fly","id":"fly","pp":24,"maxpp":24,"target":"any","disabled":false},{"move":"Final Gambit","id":"finalgambit","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Echoed Voice","id":"echoedvoice","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Pounce","id":"pounce","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"27/183 brn","active":true,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"137/137","active":true,"stats":{"atk":105,"def":121,"spa":72,"spd":136,"spe":111},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":false,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"141/141","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"100/167","active":false,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":true,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"170/191","active":true,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: X","details":"Volcarona, L50, M","condition":"134/179","active":false,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":false,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"4/141","active":true,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"0 fnt","active":true,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":false,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"27/183 brn","active":false,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"100/167","active":false,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Flash Cannon","id":"flashcannon","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Dragon Dance","id":"dragondance","pp":31,"maxpp":32,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":true,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"170/191","active":true,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: X","details":"Volcarona, L50, M","condition":"134/179","active":false,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":false,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Tail Whip","id":"tailwhip","pp":48,"maxpp":48,"target":"allAdjacentFoes","disabled":false},{"move":"Dazzling Gleam","id":"dazzlinggleam","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Infestation","id":"infestation","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Extreme Speed","id":"extremespeed","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"4/141","active":true,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"27/183 brn","active":true,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":false,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"100/167","active":false,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Dragon Dance","id":"dragondance","pp":30,"maxpp":32,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Volcarona, L50, M","condition":"68/179","active":true,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"170/191","active":true,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":false,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":false,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":14,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Extreme Speed","id":"extremespeed","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Moltres","details":"Moltres, L50","condition":"100/167","active":true,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"16/183 brn","active":true,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":false,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"4/141","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Volcarona, L50, M","condition":"68/179","active":true,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"170/191","active":true,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":false,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":false,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"0 fnt","active":true,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"5/183 brn","active":true,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":false,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"100/167","active":false,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Dragon Dance","id":"dragondance","pp":29,"maxpp":32,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Volcarona, L50, M","condition":"68/179","active":true,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"170/191","active":true,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":false,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":false,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":16,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Extreme Speed","id":"extremespeed","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":true,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"5/183 brn","active":true,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"0 fnt","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"100/167","active":false,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Volcarona, L50, M","condition":"68/179","active":true,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":true,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":false,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"170/191","active":false,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":true,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"0 fnt","active":true,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"0 fnt","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"100/167","active":false,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Guard Swap","id":"guardswap","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Volcarona, L50, M","condition":"68/179","active":true,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":true,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"166/166","active":false,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"170/191","active":false,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":16,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":14,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":true,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"100/167","active":true,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"0 fnt","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"0 fnt","active":false,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Flash Cannon","id":"flashcannon","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Guard Swap","id":"guardswap","pp":12,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"116/166","active":true,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":true,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: X","details":"Volcarona, L50, M","condition":"68/179","active":false,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":false,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"170/191","active":false,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":16,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":13,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"169/169","active":true,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"100/167","active":true,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"0 fnt","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"0 fnt","active":false,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Flash Cannon","id":"flashcannon","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Skill Swap","id":"skillswap","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Magnezone","details":"Magnezone, L50","condition":"103/166","active":true,"stats":{"atk":101,"def":147,"spa":136,"spd":126,"spe":89},"moves":["doubleshock","flashcannon"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Corvisquire, L50, M","condition":"160/160","active":true,"stats":{"atk":102,"def":87,"spa":59,"spd":98,"spe":100},"moves":["skillswap"],"baseAbility":"keeneye","item":"widelens","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: X","details":"Volcarona, L50, M","condition":"68/179","active":false,"stats":{"atk":83,"def":85,"spa":185,"spd":138,"spe":115},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Zoë","details":"Slowbro, L50, F","condition":"171/171","active":false,"stats":{"atk":103,"def":135,"spa":127,"spd":117,"spe":73},"moves":["guardswap"],"baseAbility":"oblivious","item":"","pokeball":"pokeball","ability":"oblivious","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Pikachu","details":"Dugtrio-Alola, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":82,"spa":91,"spd":91,"spe":139},"moves":["finalgambit","acrobatics","tearfullook"],"baseAbility":"sandforce","item":"bigroot","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"170/191","active":false,"stats":{"atk":104,"def":112,"spa":146,"spd":147,"spe":129},"moves":["dragondance"],"baseAbility":"protosynthesis","item":"wiseglasses","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":15,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":12,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zapdos","details":"Zapdos, L50, shiny","condition":"93/169","active":true,"stats":{"atk":137,"def":110,"spa":147,"spd":121,"spe":133},"moves":["doubleshock","roost","hurricane"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50","condition":"0 fnt","active":true,"stats":{"atk":120,"def":99,"spa":145,"spd":148,"spe":141},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"0 fnt","active":false,"stats":{"atk":109,"def":70,"spa":122,"spd":80,"spe":122},"moves":["tailwhip","dazzlinggleam","infestation"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Minior","details":"Minior-Orange, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":81,"spa":108,"spd":92,"spe":171},"moves":["fly","finalgambit","echoedvoice","pounce"],"baseAbility":"shieldsdown","item":"bindingband","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":105,"spa":132,"spd":91,"spe":113},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arcanine, L50, F","condition":"0 fnt","active":false,"stats":{"atk":122,"def":116,"spa":123,"spd":110,"spe":134},"moves":["burnup","extremespeed","protect"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}

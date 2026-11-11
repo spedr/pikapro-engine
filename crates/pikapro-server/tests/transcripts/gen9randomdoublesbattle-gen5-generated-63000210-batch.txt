@@ -1,0 +1,238 @@
+# gen9randomdoublesbattle-gen5-generated-63000210-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@option replay spectator
+@write
+>start {"formatid":"[Gen 9] Random Doubles Battle","seed":"gen5,40a44a4e31867770"}
+>player p2 {"name":"Bob","seed":"sodium,096672d6063893093ffbb0ddef993f22b93094058354a473bf3341e7e0f8a2e5","avatar":"lucas"}
+>reseed gen5,9752bb6109256f39
+>player p1 {"name":"Alice","seed":"gen5,5609f49b0e801bfb","avatar":"lucas"}
+@write
+>p1 move 1 1, move 1 2 terastallize
+>p1 move 1 1, move 1 2 terastallize
+
+>p2 switch VENOMOTH
+# a comment
+>p2 switch 6, move 3 1 terastallize
+>p2 pass, switch 6
+>p2 move doubleedge -2 terastal
+>p1 default
+# a comment
+>p2 move 1 -2 ,  move 4 +1
+@write
+>p2 switch Zekrom ,  switch Lapras
+>p2 move 1 -2, switch 5
+>p1 move Wild Charge 2 ,  switch 4
+>p2 pass, switch 5
+# a comment
+>p1 switch 3, move 2 1
+@write
+# a comment
+>p2 move 4 1, move 2 -1
+>p1 switch 6, move 1 -1
+>p2 default
+@write
+
+>p2 move 4 2, move 2 2
+
+>p1 move airslash 2,switch alcremie-mint-cream
+>p2 move Dragon Claw 2,move Freeze-Dry +2
+>p1 switch 4, move 2 1
+>p1 move 3 -2, switch 4
+>p2 move Dragon Claw -1 dynamax, move 2 1
+# a comment
+>p2 undo
+>p2 move 2
+@write
+>p2 switch LAPRAS
+>p2 move 1 1, move 2 -1
+>p2 pass, move 2 1
+>p2 pass, move 2 1
+
+>p1 default
+@write
+>p1 undo
+>p1 pass, switch electivire
+@message
+|t:|
+|gametype|doubles
+|player|p2|Bob|lucas|
+|message|The battle's RNG was reset.
+|player|p1|Alice|lucas|
+|gen|9
+|tier|[Gen 9] Random Doubles Battle
+|rule|Species Clause: Limit one of each Pokémon
+|rule|HP Percentage Mod: HP is shown in percentages
+|rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Electivire|Electivire, L86, F|100/100
+|switch|p1b: Regirock|Regirock, L82|100/100
+|switch|p2a: Reuniclus|Reuniclus, L84, M|100/100
+|switch|p2b: Iron Valiant|Iron Valiant, L79|100/100
+|turn|1
+@message
+|
+|t:|
+|switch|p2a: Slaking|Slaking, L89, M|100/100
+|-terastallize|p2b: Iron Valiant|Dark
+|-terastallize|p1b: Regirock|Fighting
+|move|p2b: Iron Valiant|Moonblast|p1a: Electivire
+|-damage|p1a: Electivire|47/100
+|-damage|p2b: Iron Valiant|91/100|[from] item: Life Orb
+|move|p1a: Electivire|Flamethrower|p2a: Slaking
+|-damage|p2a: Slaking|76/100
+|-damage|p1a: Electivire|37/100|[from] item: Life Orb
+|move|p1b: Regirock|Body Press|p2b: Iron Valiant
+|-supereffective|p2b: Iron Valiant
+|-damage|p2b: Iron Valiant|0 fnt
+|faint|p2b: Iron Valiant
+|-end|p2b: Iron Valiant|Quark Drive|[silent]
+|
+|upkeep
+|
+|t:|
+|switch|p2b: Reuniclus|Reuniclus, L84, M|100/100
+|turn|2
+|
+|t:|
+|move|p2a: Slaking|Knock Off|p2b: Reuniclus
+|-supereffective|p2b: Reuniclus
+|-damage|p2b: Reuniclus|0 fnt
+|-enditem|p2b: Reuniclus|Life Orb|[from] move: Knock Off|[of] p2a: Slaking
+|faint|p2b: Reuniclus
+|move|p1a: Electivire|Flamethrower|p2a: Slaking
+|-damage|p2a: Slaking|51/100
+|-damage|p1a: Electivire|28/100|[from] item: Life Orb
+|move|p1b: Regirock|Body Press|p2a: Slaking
+|-supereffective|p2a: Slaking
+|-damage|p2a: Slaking|0 fnt
+|faint|p2a: Slaking
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p2a: Zekrom|Zekrom, L74|100/100
+|switch|p2b: Lapras|Lapras, L82, F|100/100
+|-ability|p2a: Zekrom|Teravolt
+|turn|3
+|
+|t:|
+|switch|p2b: Venomoth|Venomoth, L90, M|100/100
+|switch|p1b: Breloom|Breloom, L83, F|100/100
+|move|p1a: Electivire|Wild Charge|p2b: Venomoth
+|-damage|p2b: Venomoth|34/100
+|-damage|p1a: Electivire|11/100|[from] Recoil
+|-damage|p1a: Electivire|1/100|[from] item: Life Orb
+|move|p2a: Zekrom|Dragon Claw|p2b: Venomoth
+|-damage|p2b: Venomoth|0 fnt
+|faint|p2b: Venomoth
+|
+|upkeep
+|
+|t:|
+|switch|p2b: Lapras|Lapras, L82, F|100/100
+|turn|4
+@message
+|
+|t:|
+|switch|p1a: Alcremie|Alcremie-Mint-Cream, L90, F|100/100
+|move|p1b: Breloom|Mach Punch|p2a: Zekrom
+|-crit|p2a: Zekrom
+|-damage|p2a: Zekrom|65/100
+|move|p2a: Zekrom|Bolt Strike|p1a: Alcremie
+|-damage|p1a: Alcremie|40/100
+|-enditem|p1a: Alcremie|Sitrus Berry|[eat]
+|-heal|p1a: Alcremie|65/100|[from] item: Sitrus Berry
+|move|p2b: Lapras|Freeze-Dry|p2a: Zekrom
+|-supereffective|p2a: Zekrom
+|-damage|p2a: Zekrom|19/100
+|
+|upkeep
+|turn|5
+|
+|t:|
+|switch|p1a: Rotom|Rotom-Fan, L85|100/100
+|move|p2a: Zekrom|Dragon Claw|p1a: Rotom
+|-damage|p1a: Rotom|67/100
+|move|p1b: Breloom|Rock Tomb|p1a: Rotom
+|-supereffective|p1a: Rotom
+|-damage|p1a: Rotom|7/100
+|-unboost|p1a: Rotom|spe|1
+|-enditem|p1a: Rotom|Sitrus Berry|[eat]
+|-heal|p1a: Rotom|32/100|[from] item: Sitrus Berry
+|move|p2b: Lapras|Icy Wind|p1b: Breloom|[spread] p1a,p1b
+|-supereffective|p1a: Rotom
+|-supereffective|p1b: Breloom
+|-damage|p1a: Rotom|4/100
+|-damage|p1b: Breloom|56/100
+|-unboost|p1a: Rotom|spe|1
+|-unboost|p1b: Breloom|spe|1
+|
+|upkeep
+|turn|6
+@message
+|
+|t:|
+|switch|p1b: Alcremie|Alcremie-Mint-Cream, L90, F|65/100
+|move|p2a: Zekrom|Bolt Strike|p1b: Alcremie|[miss]
+|-miss|p2a: Zekrom|p1b: Alcremie
+|move|p2b: Lapras|Freeze-Dry|p1b: Alcremie
+|-damage|p1b: Alcremie|47/100
+|move|p1a: Rotom|Air Slash|p2b: Lapras
+|-damage|p2b: Lapras|76/100
+|
+|upkeep
+|turn|7
+|
+|t:|
+|switch|p1a: Regirock|Regirock, L82, tera:Fighting|100/100
+|move|p2a: Zekrom|Dragon Claw|p1b: Alcremie
+|-immune|p1b: Alcremie
+|move|p1b: Alcremie|Decorate|p2a: Zekrom
+|-boost|p2a: Zekrom|atk|2
+|-boost|p2a: Zekrom|spa|2
+|move|p2b: Lapras|Freeze-Dry|p1b: Alcremie
+|-damage|p1b: Alcremie|30/100
+|-status|p1b: Alcremie|frz
+|
+|upkeep
+|turn|8
+@message
+|
+|t:|
+|switch|p1b: Rotom|Rotom-Fan, L85|4/100
+|move|p2a: Zekrom|Dragon Claw|p1a: Regirock
+|-damage|p1a: Regirock|60/100
+|move|p2b: Lapras|Freeze-Dry|p2a: Zekrom
+|-supereffective|p2a: Zekrom
+|-damage|p2a: Zekrom|0 fnt
+|faint|p2a: Zekrom
+|move|p1a: Regirock|Thunder Wave|p1b: Rotom
+|-immune|p1b: Rotom
+|
+|-heal|p1a: Regirock|67/100|[from] item: Leftovers
+|upkeep
+|turn|9
+|
+|t:|
+|move|p1b: Rotom|Volt Switch|p2b: Lapras
+|-supereffective|p2b: Lapras
+|-damage|p2b: Lapras|30/100
+|-enditem|p2b: Lapras|Sitrus Berry|[eat]
+|-heal|p2b: Lapras|55/100|[from] item: Sitrus Berry
+@message
+|
+|t:|
+|switch|p1b: Electivire|Electivire, L86, F|1/100|[from] Volt Switch
+|move|p2b: Lapras|Freeze-Dry|p1a: Regirock
+|-damage|p1a: Regirock|42/100
+|move|p1a: Regirock|Body Press|p2b: Lapras
+|-supereffective|p2b: Lapras
+|-damage|p2b: Lapras|0 fnt
+|faint|p2b: Lapras
+|
+|win|Alice

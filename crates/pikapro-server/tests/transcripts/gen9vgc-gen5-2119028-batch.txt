@@ -1,0 +1,205 @@
+# gen9vgc-gen5-2119028-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@write
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,2f97887708520486"}
+@write
+>player p1 {"name":"Alice","team":"Chomp|Servine||Overgrow|SpinOut,FieryWrath,HydroPump|Brave|17,7,212,233,10,7||||50|,,,,,Ice]Pikachu|Charjabug|MirrorHerb|Battery|Electroweb,FleurCannon,Surf,PerishSong|Quiet|42,87,176,81,6,77|M|||50|,,,,,Fairy]Sparky|Cyndaquil|AbsorbBulb|Blaze|SpringtideStorm,LockOn,Encore|Mild|152,40,65,95,135,19||||50|,,,,,Electric]Giratina-Origin||UltraBall|Levitate|Encore,RockThrow,AlluringVoice,Boomburst|Lax|113,136,199,19,1,30||||50|,,,,,Ice]Marill||Magnet|SapSipper|StunSpore,Charm|Jolly|,139,139,165,23,35|F|||50|,,,,,Ghost]Sir Hops-a-Lot|Bergmite|BoosterEnergy|Sturdy|Thunderclap,HydroCannon|Modest|,31,32,243,203,1|F|||50|,,,,,Fighting","rating":1500}
+>player p2 {"name":"Bob","team":"Dudunsparce-Three-Segment|||RunAway|SolarBeam,IcyWind,SteamEruption|Brave|2,2,205,96,202,3|||S|50|,,,,,Normal]Basculin||GalaricaWreath|Reckless|HammerArm,AquaRing,Scald,BeatUp|Quiet|43,84,9,41,189,134||||50|,,,,,Electric]Ninetales-Alola||PasshoBerry|SnowWarning|FleurCannon,Roar|Serious|40,32,124,15,57,129||||50|,,,,,Electric]Electivire|||VitalSpirit|Spikes|Hardy|7,206,1,149,3,143||||50|,,,,,Rock]Thundurus-Therian||EjectPack|VoltAbsorb|NightDaze|Modest|1,162,,115,193,39||||50|,,,,,Flying]ThisNameIsFarTooLongToKeep|Cottonee||Chlorophyll|QuiverDance,Decorate|Lax|223,,79,3,187,16||||50|,,,,,Ice"}
+@write
+>p2 team 5423
+@write
+>p1 team 1624
+>p1 switch 3, move 1 1 terastallize
+@write
+>p2 move 1 -2 terastallize, switch 4
+>p2 switch electivire ,  move 1 -1
+@write
+>p1 move Fleur Cannon -2, move Hydro Cannon +2
+>p1 move 2 -2, move 1
+@write
+>version abc123
+>p2 move 1, move 1 1
+@write
+>p1 move fleurcannon -2 terastallize, switch 3
+@write
+>p1 default, switch 4
+@write
+>forcetie
+>p1 move 1
+@message
+update
+|t:|
+|gametype|doubles
+@message
+update
+|player|p1|Alice||1500
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Servine, L50, F|
+|poke|p1|Charjabug, L50, M|
+|poke|p1|Cyndaquil, L50, F|
+|poke|p1|Giratina-Origin, L50|
+|poke|p1|Marill, L50, F|
+|poke|p1|Bergmite, L50, F|
+|poke|p2|Dudunsparce-*, L50, M|
+|poke|p2|Basculin, L50, F|
+|poke|p2|Ninetales-Alola, L50, F|
+|poke|p2|Electivire, L50, F|
+|poke|p2|Thundurus-Therian, L50, M|
+|poke|p2|Cottonee, L50, F|
+|teampreview|4
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Servine, L50, F","condition":"137/137","active":true,"stats":{"atk":89,"def":122,"spa":109,"spd":96,"spe":93},"moves":["spinout","fierywrath","hydropump"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Pikachu","details":"Charjabug, L50, M","condition":"137/137","active":true,"stats":{"atk":113,"def":137,"spa":93,"spd":96,"spe":59},"moves":["electroweb","fleurcannon","surf","perishsong"],"baseAbility":"battery","item":"mirrorherb","pokeball":"pokeball","ability":"battery","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Sparky","details":"Cyndaquil, L50, F","condition":"133/133","active":false,"stats":{"atk":77,"def":63,"spa":101,"spd":87,"spe":87},"moves":["springtidestorm","lockon","encore"],"baseAbility":"blaze","item":"absorbbulb","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Giratina","details":"Giratina-Origin, L50","condition":"239/239","active":false,"stats":{"atk":157,"def":159,"spa":142,"spd":108,"spe":114},"moves":["encore","rockthrow","alluringvoice","boomburst"],"baseAbility":"levitate","item":"ultraball","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Marill","details":"Marill, L50, F","condition":"145/145","active":false,"stats":{"atk":57,"def":87,"spa":54,"spd":73,"spe":70},"moves":["stunspore","charm"],"baseAbility":"sapsipper","item":"magnet","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Bergmite, L50, F","condition":"130/130","active":false,"stats":{"atk":83,"def":109,"spa":90,"spd":80,"spe":48},"moves":["thunderclap","hydrocannon"],"baseAbility":"sturdy","item":"boosterenergy","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Dudunsparce","details":"Dudunsparce-Three-Segment, L50, M, shiny","condition":"200/200","active":true,"stats":{"atk":132,"def":126,"spa":117,"spd":120,"spe":67},"moves":["solarbeam","icywind","steameruption"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Basculin","details":"Basculin, L50, F","condition":"150/150","active":true,"stats":{"atk":123,"def":86,"spa":115,"spd":99,"spe":121},"moves":["hammerarm","aquaring","scald","beatup"],"baseAbility":"reckless","item":"galaricawreath","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Ninetales","details":"Ninetales-Alola, L50, F","condition":"153/153","active":false,"stats":{"atk":91,"def":111,"spa":103,"spd":127,"spe":145},"moves":["fleurcannon","roar"],"baseAbility":"snowwarning","item":"passhoberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Electivire","details":"Electivire, L50, F","condition":"151/151","active":false,"stats":{"atk":169,"def":87,"spa":134,"spd":105,"spe":133},"moves":["spikes"],"baseAbility":"vitalspirit","item":"","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Thundurus","details":"Thundurus-Therian, L50, M","condition":"154/154","active":false,"stats":{"atk":130,"def":90,"spa":196,"spd":124,"spe":126},"moves":["nightdaze"],"baseAbility":"voltabsorb","item":"ejectpack","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Cottonee, L50, F","condition":"143/143","active":false,"stats":{"atk":47,"def":99,"spa":57,"spd":83,"spe":88},"moves":["quiverdance","decorate"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|switch|p1a: Chomp|Servine, L50, F|137/137
+|switch|p1a: Chomp|Servine, L50, F|137/137
+|split|p1
+|switch|p1b: Sir Hops-a-Lot|Bergmite, L50, F|130/130
+|switch|p1b: Sir Hops-a-Lot|Bergmite, L50, F|130/130
+|split|p2
+|switch|p2a: Thundurus|Thundurus-Therian, L50, M|154/154
+|switch|p2a: Thundurus|Thundurus-Therian, L50, M|154/154
+|split|p2
+|switch|p2b: Electivire|Electivire, L50, F|151/151
+|switch|p2b: Electivire|Electivire, L50, F|151/151
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Spin Out","id":"spinout","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Fiery Wrath","id":"fierywrath","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Hydro Pump","id":"hydropump","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Ice"},{"moves":[{"move":"Thunderclap","id":"thunderclap","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Cannon","id":"hydrocannon","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Fighting"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Servine, L50, F","condition":"137/137","active":true,"stats":{"atk":89,"def":122,"spa":109,"spd":96,"spe":93},"moves":["spinout","fierywrath","hydropump"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Bergmite, L50, F","condition":"130/130","active":true,"stats":{"atk":83,"def":109,"spa":90,"spd":80,"spe":48},"moves":["thunderclap","hydrocannon"],"baseAbility":"sturdy","item":"boosterenergy","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Pikachu","details":"Charjabug, L50, M","condition":"137/137","active":false,"stats":{"atk":113,"def":137,"spa":93,"spd":96,"spe":59},"moves":["electroweb","fleurcannon","surf","perishsong"],"baseAbility":"battery","item":"mirrorherb","pokeball":"pokeball","ability":"battery","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Giratina","details":"Giratina-Origin, L50","condition":"239/239","active":false,"stats":{"atk":157,"def":159,"spa":142,"spd":108,"spe":114},"moves":["encore","rockthrow","alluringvoice","boomburst"],"baseAbility":"levitate","item":"ultraball","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Night Daze","id":"nightdaze","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Flying"},{"moves":[{"move":"Spikes","id":"spikes","pp":32,"maxpp":32,"target":"foeSide","disabled":false}],"canTerastallize":"Rock"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Thundurus","details":"Thundurus-Therian, L50, M","condition":"154/154","active":true,"stats":{"atk":130,"def":90,"spa":196,"spd":124,"spe":126},"moves":["nightdaze"],"baseAbility":"voltabsorb","item":"ejectpack","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Electivire","details":"Electivire, L50, F","condition":"151/151","active":true,"stats":{"atk":169,"def":87,"spa":134,"spd":105,"spe":133},"moves":["spikes"],"baseAbility":"vitalspirit","item":"","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Basculin","details":"Basculin, L50, F","condition":"150/150","active":false,"stats":{"atk":123,"def":86,"spa":115,"spd":99,"spe":121},"moves":["hammerarm","aquaring","scald","beatup"],"baseAbility":"reckless","item":"galaricawreath","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Ninetales","details":"Ninetales-Alola, L50, F","condition":"153/153","active":false,"stats":{"atk":91,"def":111,"spa":103,"spd":127,"spe":145},"moves":["fleurcannon","roar"],"baseAbility":"snowwarning","item":"passhoberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Ninetales|Ninetales-Alola, L50, F|153/153
+|switch|p2b: Ninetales|Ninetales-Alola, L50, F|153/153
+|-weather|Snowscape|[from] ability: Snow Warning|[of] p2b: Ninetales
+|split|p1
+|switch|p1a: Pikachu|Charjabug, L50, M|137/137
+|switch|p1a: Pikachu|Charjabug, L50, M|137/137
+|-terastallize|p2a: Thundurus|Flying
+|-terastallize|p1b: Sir Hops-a-Lot|Fighting
+|move|p1b: Sir Hops-a-Lot|Thunderclap|p2a: Thundurus
+|-immune|p2a: Thundurus|[from] ability: Volt Absorb
+|move|p2a: Thundurus|Night Daze|p2b: Ninetales
+|-resisted|p2b: Ninetales
+|split|p2
+|-damage|p2b: Ninetales|125/153
+|-damage|p2b: Ninetales|125/153
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Electroweb","id":"electroweb","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Fleur Cannon","id":"fleurcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Surf","id":"surf","pp":24,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Perish Song","id":"perishsong","pp":8,"maxpp":8,"target":"all","disabled":false}]},{"moves":[{"move":"Thunderclap","id":"thunderclap","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Cannon","id":"hydrocannon","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Charjabug, L50, M","condition":"137/137","active":true,"stats":{"atk":113,"def":137,"spa":93,"spd":96,"spe":59},"moves":["electroweb","fleurcannon","surf","perishsong"],"baseAbility":"battery","item":"mirrorherb","pokeball":"pokeball","ability":"battery","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Bergmite, L50, F","condition":"130/130","active":true,"stats":{"atk":83,"def":109,"spa":90,"spd":80,"spe":48},"moves":["thunderclap","hydrocannon"],"baseAbility":"sturdy","item":"boosterenergy","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Chomp","details":"Servine, L50, F","condition":"137/137","active":false,"stats":{"atk":89,"def":122,"spa":109,"spd":96,"spe":93},"moves":["spinout","fierywrath","hydropump"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Giratina","details":"Giratina-Origin, L50","condition":"239/239","active":false,"stats":{"atk":157,"def":159,"spa":142,"spd":108,"spe":114},"moves":["encore","rockthrow","alluringvoice","boomburst"],"baseAbility":"levitate","item":"ultraball","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Night Daze","id":"nightdaze","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Fleur Cannon","id":"fleurcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roar","id":"roar","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Thundurus","details":"Thundurus-Therian, L50, M","condition":"154/154","active":true,"stats":{"atk":130,"def":90,"spa":196,"spd":124,"spe":126},"moves":["nightdaze"],"baseAbility":"voltabsorb","item":"ejectpack","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: Ninetales","details":"Ninetales-Alola, L50, F","condition":"125/153","active":true,"stats":{"atk":91,"def":111,"spa":103,"spd":127,"spe":145},"moves":["fleurcannon","roar"],"baseAbility":"snowwarning","item":"passhoberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Basculin","details":"Basculin, L50, F","condition":"150/150","active":false,"stats":{"atk":123,"def":86,"spa":115,"spd":99,"spe":121},"moves":["hammerarm","aquaring","scald","beatup"],"baseAbility":"reckless","item":"galaricawreath","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Electivire","details":"Electivire, L50, F","condition":"151/151","active":false,"stats":{"atk":169,"def":87,"spa":134,"spd":105,"spe":133},"moves":["spikes"],"baseAbility":"vitalspirit","item":"","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Electivire|Electivire, L50, F|151/151
+|switch|p2a: Electivire|Electivire, L50, F|151/151
+|move|p2b: Ninetales|Fleur Cannon|p2a: Electivire
+|split|p2
+|-damage|p2a: Electivire|72/151
+|-damage|p2a: Electivire|72/151
+|-unboost|p2b: Ninetales|spa|2
+|move|p1a: Pikachu|Fleur Cannon|p1b: Sir Hops-a-Lot
+|-supereffective|p1b: Sir Hops-a-Lot
+|-ability|p1b: Sir Hops-a-Lot|Sturdy
+|split|p1
+|-damage|p1b: Sir Hops-a-Lot|1/130
+|-damage|p1b: Sir Hops-a-Lot|1/130
+|-unboost|p1a: Pikachu|spa|2
+|move|p1b: Sir Hops-a-Lot|Hydro Cannon|p2b: Ninetales
+|split|p2
+|-damage|p2b: Ninetales|73/153
+|-damage|p2b: Ninetales|73/153
+|-mustrecharge|p1b: Sir Hops-a-Lot
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Electroweb","id":"electroweb","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Fleur Cannon","id":"fleurcannon","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Surf","id":"surf","pp":24,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Perish Song","id":"perishsong","pp":8,"maxpp":8,"target":"all","disabled":false}]},{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Charjabug, L50, M","condition":"137/137","active":true,"stats":{"atk":113,"def":137,"spa":93,"spd":96,"spe":59},"moves":["electroweb","fleurcannon","surf","perishsong"],"baseAbility":"battery","item":"mirrorherb","pokeball":"pokeball","ability":"battery","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Bergmite, L50, F","condition":"1/130","active":true,"stats":{"atk":83,"def":109,"spa":90,"spd":80,"spe":48},"moves":["thunderclap","hydrocannon"],"baseAbility":"sturdy","item":"boosterenergy","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Chomp","details":"Servine, L50, F","condition":"137/137","active":false,"stats":{"atk":89,"def":122,"spa":109,"spd":96,"spe":93},"moves":["spinout","fierywrath","hydropump"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Giratina","details":"Giratina-Origin, L50","condition":"239/239","active":false,"stats":{"atk":157,"def":159,"spa":142,"spd":108,"spe":114},"moves":["encore","rockthrow","alluringvoice","boomburst"],"baseAbility":"levitate","item":"ultraball","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Spikes","id":"spikes","pp":32,"maxpp":32,"target":"foeSide","disabled":false}]},{"moves":[{"move":"Fleur Cannon","id":"fleurcannon","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roar","id":"roar","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Electivire","details":"Electivire, L50, F","condition":"72/151","active":true,"stats":{"atk":169,"def":87,"spa":134,"spd":105,"spe":133},"moves":["spikes"],"baseAbility":"vitalspirit","item":"","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ninetales","details":"Ninetales-Alola, L50, F","condition":"73/153","active":true,"stats":{"atk":91,"def":111,"spa":103,"spd":127,"spe":145},"moves":["fleurcannon","roar"],"baseAbility":"snowwarning","item":"passhoberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Basculin","details":"Basculin, L50, F","condition":"150/150","active":false,"stats":{"atk":123,"def":86,"spa":115,"spd":99,"spe":121},"moves":["hammerarm","aquaring","scald","beatup"],"baseAbility":"reckless","item":"galaricawreath","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Thundurus","details":"Thundurus-Therian, L50, M","condition":"154/154","active":false,"stats":{"atk":130,"def":90,"spa":196,"spd":124,"spe":126},"moves":["nightdaze"],"baseAbility":"voltabsorb","item":"ejectpack","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+@message
+update
+|
+|t:|
+|move|p2b: Ninetales|Fleur Cannon|p1a: Pikachu
+|split|p1
+|-damage|p1a: Pikachu|94/137
+|-damage|p1a: Pikachu|94/137
+|-unboost|p2b: Ninetales|spa|2
+|move|p2a: Electivire|Spikes|p1b: Sir Hops-a-Lot
+|-sidestart|p1: Alice|Spikes
+|move|p1a: Pikachu|Fleur Cannon|p1b: Sir Hops-a-Lot
+|-supereffective|p1b: Sir Hops-a-Lot
+|split|p1
+|-damage|p1b: Sir Hops-a-Lot|0 fnt
+|-damage|p1b: Sir Hops-a-Lot|0 fnt
+|-unboost|p1a: Pikachu|spa|2
+|faint|p1b: Sir Hops-a-Lot
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+@message
+sideupdate
+p1
+|request|{"forceSwitch":[false,true],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Charjabug, L50, M","condition":"94/137","active":true,"stats":{"atk":113,"def":137,"spa":93,"spd":96,"spe":59},"moves":["electroweb","fleurcannon","surf","perishsong"],"baseAbility":"battery","item":"mirrorherb","pokeball":"pokeball","ability":"battery","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Bergmite, L50, F","condition":"0 fnt","active":true,"stats":{"atk":83,"def":109,"spa":90,"spd":80,"spe":48},"moves":["thunderclap","hydrocannon"],"baseAbility":"sturdy","item":"boosterenergy","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Chomp","details":"Servine, L50, F","condition":"137/137","active":false,"stats":{"atk":89,"def":122,"spa":109,"spd":96,"spe":93},"moves":["spinout","fierywrath","hydropump"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Giratina","details":"Giratina-Origin, L50","condition":"239/239","active":false,"stats":{"atk":157,"def":159,"spa":142,"spd":108,"spe":114},"moves":["encore","rockthrow","alluringvoice","boomburst"],"baseAbility":"levitate","item":"ultraball","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]},"noCancel":true}
+@message
+sideupdate
+p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Electivire","details":"Electivire, L50, F","condition":"72/151","active":true,"stats":{"atk":169,"def":87,"spa":134,"spd":105,"spe":133},"moves":["spikes"],"baseAbility":"vitalspirit","item":"","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ninetales","details":"Ninetales-Alola, L50, F","condition":"73/153","active":true,"stats":{"atk":91,"def":111,"spa":103,"spd":127,"spe":145},"moves":["fleurcannon","roar"],"baseAbility":"snowwarning","item":"passhoberry","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Basculin","details":"Basculin, L50, F","condition":"150/150","active":false,"stats":{"atk":123,"def":86,"spa":115,"spd":99,"spe":121},"moves":["hammerarm","aquaring","scald","beatup"],"baseAbility":"reckless","item":"galaricawreath","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Thundurus","details":"Thundurus-Therian, L50, M","condition":"154/154","active":false,"stats":{"atk":130,"def":90,"spa":196,"spd":124,"spe":126},"moves":["nightdaze"],"baseAbility":"voltabsorb","item":"ejectpack","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You need a switch response
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You sent more switches than Pokémon that need to switch
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"gen5,2f97887708520486","turns":3,"p1":"Alice","p2":"Bob","p1team":[{"name":"Chomp","species":"Servine","item":"","ability":"Overgrow","moves":["Spin Out","Fiery Wrath","Hydro Pump"],"nature":"Brave","evs":{"hp":17,"atk":7,"def":212,"spa":233,"spd":10,"spe":7},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pikachu","species":"Charjabug","item":"Mirror Herb","ability":"Battery","moves":["Electroweb","Fleur Cannon","Surf","Perish Song"],"nature":"Quiet","evs":{"hp":42,"atk":87,"def":176,"spa":81,"spd":6,"spe":77},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sparky","species":"Cyndaquil","item":"Absorb Bulb","ability":"Blaze","moves":["Springtide Storm","Lock-On","Encore"],"nature":"Mild","evs":{"hp":152,"atk":40,"def":65,"spa":95,"spd":135,"spe":19},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Giratina","species":"Giratina-Origin","item":"Ultra Ball","ability":"Levitate","moves":["Encore","Rock Throw","Alluring Voice","Boomburst"],"nature":"Lax","evs":{"hp":113,"atk":136,"def":199,"spa":19,"spd":1,"spe":30},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Marill","species":"Marill","item":"Magnet","ability":"Sap Sipper","moves":["Stun Spore","Charm"],"nature":"Jolly","evs":{"hp":0,"atk":139,"def":139,"spa":165,"spd":23,"spe":35},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sir Hops-a-Lot","species":"Bergmite","item":"Booster Energy","ability":"Sturdy","moves":["Thunderclap","Hydro Cannon"],"nature":"Modest","evs":{"hp":0,"atk":31,"def":32,"spa":243,"spd":203,"spe":1},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Dudunsparce","species":"Dudunsparce-Three-Segment","item":"","ability":"Run Away","moves":["Solar Beam","Icy Wind","Steam Eruption"],"nature":"Brave","evs":{"hp":2,"atk":2,"def":205,"spa":96,"spd":202,"spe":3},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Basculin","species":"Basculin","item":"Galarica Wreath","ability":"Reckless","moves":["Hammer Arm","Aqua Ring","Scald","Beat Up"],"nature":"Quiet","evs":{"hp":43,"atk":84,"def":9,"spa":41,"spd":189,"spe":134},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Ninetales","species":"Ninetales-Alola","item":"Passho Berry","ability":"Snow Warning","moves":["Fleur Cannon","Roar"],"nature":"Serious","evs":{"hp":40,"atk":32,"def":124,"spa":15,"spd":57,"spe":129},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Electivire","species":"Electivire","item":"","ability":"Vital Spirit","moves":["Spikes"],"nature":"Hardy","evs":{"hp":7,"atk":206,"def":1,"spa":149,"spd":3,"spe":143},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Thundurus","species":"Thundurus-Therian","item":"Eject Pack","ability":"Volt Absorb","moves":["Night Daze"],"nature":"Modest","evs":{"hp":1,"atk":162,"def":0,"spa":115,"spd":193,"spe":39},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"ThisNameIsFarTooLongToKeep","species":"Cottonee","item":"","ability":"Chlorophyll","moves":["Quiver Dance","Decorate"],"nature":"Lax","evs":{"hp":223,"atk":0,"def":79,"spa":3,"spd":187,"spe":16},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[3,4],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50\",\"seed\":\"gen5,2f97887708520486\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Chomp|Servine||Overgrow|SpinOut,FieryWrath,HydroPump|Brave|17,7,212,233,10,7||||50|,,,,,Ice]Pikachu|Charjabug|MirrorHerb|Battery|Electroweb,FleurCannon,Surf,PerishSong|Quiet|42,87,176,81,6,77|M|||50|,,,,,Fairy]Sparky|Cyndaquil|AbsorbBulb|Blaze|SpringtideStorm,LockOn,Encore|Mild|152,40,65,95,135,19||||50|,,,,,Electric]Giratina-Origin||UltraBall|Levitate|Encore,RockThrow,AlluringVoice,Boomburst|Lax|113,136,199,19,1,30||||50|,,,,,Ice]Marill||Magnet|SapSipper|StunSpore,Charm|Jolly|,139,139,165,23,35|F|||50|,,,,,Ghost]Sir Hops-a-Lot|Bergmite|BoosterEnergy|Sturdy|Thunderclap,HydroCannon|Modest|,31,32,243,203,1|F|||50|,,,,,Fighting\",\"rating\":1500}",">player p2 {\"name\":\"Bob\",\"team\":\"Dudunsparce-Three-Segment|||RunAway|SolarBeam,IcyWind,SteamEruption|Brave|2,2,205,96,202,3|||S|50|,,,,,Normal]Basculin||GalaricaWreath|Reckless|HammerArm,AquaRing,Scald,BeatUp|Quiet|43,84,9,41,189,134||||50|,,,,,Electric]Ninetales-Alola||PasshoBerry|SnowWarning|FleurCannon,Roar|Serious|40,32,124,15,57,129||||50|,,,,,Electric]Electivire|||VitalSpirit|Spikes|Hardy|7,206,1,149,3,143||||50|,,,,,Rock]Thundurus-Therian||EjectPack|VoltAbsorb|NightDaze|Modest|1,162,,115,193,39||||50|,,,,,Flying]ThisNameIsFarTooLongToKeep|Cottonee||Chlorophyll|QuiverDance,Decorate|Lax|223,,79,3,187,16||||50|,,,,,Ice\"}",">p1 team 1, 6, 2, 4",">p2 team 5, 4, 2, 3",">p1 switch 3, move thunderclap +1 terastallize",">p2 move nightdaze -2 terastallize, switch 4",">p1 move fleurcannon -2, move hydrocannon +2",">p2 switch 4, move fleurcannon -1",">p1 move fleurcannon -2, move recharge +2",">p2 move spikes, move fleurcannon +1",">forcetie"]}

@@ -1,0 +1,477 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed b1bc 4a2c 02f7 1c4b
+genders drawn
+team p1
+Cofagrigus (M) @ Silk Scarf
+Ability: Mummy
+Level: 50
+Tera Type: Steel
+EVs: 5 HP / 22 Atk / 9 Def / 2 SpA / 2 SpD / 22 Spe
+Sassy Nature
+- X-Scissor
+- Healing Wish
+- Role Play
+- Mountain Gale
+
+Slowking-Galar
+Ability: Own Tempo
+Level: 50
+Tera Type: Stellar
+EVs: 18 HP / 4 Atk / 7 Def / 17 SpA / 2 SpD / 8 Spe
+Bold Nature
+- Tidy Up
+- Moonblast
+
+Vivillon-Elegant @ Rawst Berry
+Ability: Compound Eyes
+Level: 50
+Shiny: Yes
+Tera Type: Stellar
+EVs: 24 HP / 24 Atk / 6 Def / 8 SpA / 4 Spe
+Docile Nature
+- Self-Destruct
+
+Pinsir @ Light Ball
+Ability: Hyper Cutter
+Level: 50
+Shiny: Yes
+Tera Type: Flying
+EVs: 21 HP / 6 Atk / 27 Def / 11 SpA / 1 Spe
+Jolly Nature
+- Shadow Sneak
+- Ice Spinner
+- Horn Drill
+
+Nibbles (Talonflame) @ Electric Seed
+Ability: Flame Body
+Level: 50
+Tera Type: Fighting
+EVs: 1 HP / 17 Atk / 20 SpA / 6 SpD / 16 Spe
+Gentle Nature
+- Dragon Pulse
+- Pound
+- Leaf Blade
+- Spirit Break
+
+Zoë (Ampharos) (F) @ Ampharosite
+Ability: Plus
+Level: 50
+Tera Type: Ice
+EVs: 12 HP / 3 Atk / 29 Def / 1 SpA / 9 SpD / 5 Spe
+Docile Nature
+- Wave Crash
+- Salt Cure
+end
+team p2
+Vivillon-Savanna (F)
+Ability: Shield Dust
+Level: 50
+Shiny: Yes
+Tera Type: Fire
+EVs: 10 HP / 28 Atk / 1 Def / 26 Spe
+Docile Nature
+- Fly
+- Stuff Cheeks
+
+Crabominable @ Crabominite
+Ability: Hyper Cutter
+Level: 50
+Tera Type: Poison
+EVs: 14 HP / 31 Atk / 21 Spe
+Relaxed Nature
+- Shell Side Arm
+
+Drampa @ Drampanite
+Ability: Cloud Nine
+Level: 50
+Tera Type: Electric
+EVs: 19 HP / 22 Atk / 1 SpA / 12 SpD / 12 Spe
+Brave Nature
+- Comeuppance
+
+Sparky (Gliscor)
+Ability: Poison Heal
+Level: 50
+Shiny: Yes
+Tera Type: Fairy
+EVs: 4 HP / 8 Atk / 6 Def / 32 SpA / 16 SpD
+Naughty Nature
+- Corrosive Gas
+- Recycle
+- Worry Seed
+
+X (Pangoro) (M)
+Ability: Iron Fist
+Level: 50
+Tera Type: Stellar
+EVs: 32 HP / 4 Atk / 4 Def / 2 SpA / 24 Spe
+Timid Nature
+- Switcheroo
+
+Nibbles (Alcremie-Ruby-Cream) @ Never-Melt Ice
+Ability: Sweet Veil
+Level: 50
+Tera Type: Ground
+EVs: 3 HP / 1 Atk / 8 Def / 32 SpA / 2 SpD / 3 Spe
+Quiet Nature
+- Trailblaze
+- Population Bomb
+end
+choice p1 team 625
+choice p2 team 5, 2, 1
+choice p1 move 1 mega
+choice p2 switch 3
+choice p1 move 1
+choice p2 switch 2
+choice p1 move saltcure
+choice p2 move 1 mega
+choice p1 move 1
+choice p2 switch 3
+choice p1 switch Nibbles
+choice p2 switch 2
+choice p1 switch 2
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 move 2
+choice p2 move 2
+choice p2 switch 3
+choice p1 switch ampharos-mega
+choice p2 switch pangoro
+choice p1 move Wave Crash
+choice p2 move 1
+choice p1 switch 3
+choice p2 switch 2
+choice p1 move 1
+choice p2 switch pangoro
+choice p1 move 2
+choice p2 switch 2
+choice p1 move 2
+choice p2 move 1
+choice p1 switch 2
+choice p2 move 1
+choice p1 default
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Cofagrigus, L50, M|
+expect |poke|p1|Slowking-Galar, L50, F|
+expect |poke|p1|Vivillon-Elegant, L50, F, shiny|
+expect |poke|p1|Pinsir, L50, F, shiny|
+expect |poke|p1|Talonflame, L50, F|
+expect |poke|p1|Ampharos, L50, F|
+expect |poke|p2|Vivillon-Savanna, L50, F, shiny|
+expect |poke|p2|Crabominable, L50, M|
+expect |poke|p2|Drampa, L50, M|
+expect |poke|p2|Gliscor, L50, M, shiny|
+expect |poke|p2|Pangoro, L50, M|
+expect |poke|p2|Alcremie-Ruby-Cream, L50, F|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Zoë|Ampharos, L50, F|177/177
+expect |switch|p1a: Zoë|Ampharos, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: X|Pangoro, L50, M|202/202
+expect |switch|p2a: X|Pangoro, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-Savanna, L50, F, shiny|165/165
+expect |switch|p2a: Vivillon|Vivillon-Savanna, L50, F, shiny|100/100
+expect |detailschange|p1a: Zoë|Ampharos-Mega, L50, F
+expect |-mega|p1a: Zoë|Ampharos|Ampharosite
+expect |-ability|p1a: Zoë|Mold Breaker
+expect |move|p1a: Zoë|Wave Crash|p2a: Vivillon
+expect |rng|100|91
+expect |rng|24|2
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Vivillon|86/165
+expect |-damage|p2a: Vivillon|52/100
+expect |split|p1
+expect |-damage|p1a: Zoë|151/177|[from] Recoil
+expect |-damage|p1a: Zoë|85/100|[from] Recoil
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Crabominable|Crabominable, L50, M|186/186
+expect |switch|p2a: Crabominable|Crabominable, L50, M|100/100
+expect |move|p1a: Zoë|Wave Crash|p2a: Crabominable
+expect |rng|100|78
+expect |rng|24|3
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Crabominable|135/186
+expect |-damage|p2a: Crabominable|72/100
+expect |split|p1
+expect |-damage|p1a: Zoë|134/177|[from] Recoil
+expect |-damage|p1a: Zoë|75/100|[from] Recoil
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |detailschange|p2a: Crabominable|Crabominable-Mega, L50, M
+expect |-mega|p2a: Crabominable|Crabominable|Crabominite
+expect |move|p1a: Zoë|Salt Cure|p2a: Crabominable
+expect |rng|100|63
+expect |rng|24|19
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Crabominable|122/186
+expect |-damage|p2a: Crabominable|65/100
+expect |rng|100|27
+expect |-start|p2a: Crabominable|Salt Cure
+expect |move|p2a: Crabominable|Shell Side Arm|p1a: Zoë|[anim] Shell Side Arm Physical
+expect |rng|100|24
+expect |rng|24|8
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Zoë|87/177
+expect |-damage|p1a: Zoë|49/100
+expect |-hint|Physical Shell Side Arm
+expect |rng|100|11
+expect |-status|p1a: Zoë|psn
+expect |
+expect |split|p1
+expect |-damage|p1a: Zoë|65/177 psn|[from] psn
+expect |-damage|p1a: Zoë|36/100 psn|[from] psn
+expect |split|p2
+expect |-damage|p2a: Crabominable|111/186|[from] Salt Cure
+expect |-damage|p2a: Crabominable|59/100|[from] Salt Cure
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Pangoro, L50, M|202/202
+expect |switch|p2a: X|Pangoro, L50, M|100/100
+expect |move|p1a: Zoë|Wave Crash|p2a: X
+expect |rng|100|23
+expect |rng|24|19
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: X|146/202
+expect |-damage|p2a: X|72/100
+expect |split|p1
+expect |-damage|p1a: Zoë|47/177 psn|[from] Recoil
+expect |-damage|p1a: Zoë|26/100 psn|[from] Recoil
+expect |
+expect |split|p1
+expect |-damage|p1a: Zoë|25/177 psn|[from] psn
+expect |-damage|p1a: Zoë|14/100 psn|[from] psn
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-Savanna, L50, F, shiny|86/165
+expect |switch|p2a: Vivillon|Vivillon-Savanna, L50, F, shiny|52/100
+expect |split|p1
+expect |switch|p1a: Nibbles|Talonflame, L50, F|154/154
+expect |switch|p1a: Nibbles|Talonflame, L50, F|100/100
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Slowking|Slowking-Galar, L50, F|188/188
+expect |switch|p1a: Slowking|Slowking-Galar, L50, F|100/100
+expect |move|p2a: Vivillon|Fly||[still]
+expect |-prepare|p2a: Vivillon|Fly
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Vivillon|Fly|p1a: Slowking|[from] lockedmove
+expect |rng|100|56
+expect |rng|24|16
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Slowking|137/188
+expect |-damage|p1a: Slowking|72/100
+expect |move|p1a: Slowking|Tidy Up|p1a: Slowking
+expect |-boost|p1a: Slowking|atk|1
+expect |-boost|p1a: Slowking|spe|1
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2a: Vivillon|Stuff Cheeks||[still]
+expect |-fail|p2a: Vivillon
+expect |move|p1a: Slowking|Moonblast|p2a: Vivillon
+expect |rng|100|69
+expect |rng|24|12
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Vivillon|0 fnt
+expect |-damage|p2a: Vivillon|0 fnt
+expect |faint|p2a: Vivillon
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Crabominable|Crabominable-Mega, L50, M|111/186
+expect |switch|p2a: Crabominable|Crabominable-Mega, L50, M|59/100
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Zoë|Ampharos-Mega, L50, F|25/177 psn
+expect |switch|p1a: Zoë|Ampharos-Mega, L50, F|14/100 psn
+expect |-ability|p1a: Zoë|Mold Breaker
+expect |split|p2
+expect |switch|p2a: X|Pangoro, L50, M|146/202
+expect |switch|p2a: X|Pangoro, L50, M|72/100
+expect |
+expect |split|p1
+expect |-damage|p1a: Zoë|3/177 psn|[from] psn
+expect |-damage|p1a: Zoë|1/100 psn|[from] psn
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p2a: X|Switcheroo||[still]
+expect |rng|100|1
+expect |-fail|p2a: X
+expect |move|p1a: Zoë|Wave Crash|p2a: X
+expect |rng|100|56
+expect |rng|24|2
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: X|85/202
+expect |-damage|p2a: X|42/100
+expect |split|p1
+expect |-damage|p1a: Zoë|0 fnt|[from] Recoil
+expect |-damage|p1a: Zoë|0 fnt|[from] Recoil
+expect |faint|p1a: Zoë
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Slowking|Slowking-Galar, L50, F|137/188
+expect |switch|p1a: Slowking|Slowking-Galar, L50, F|72/100
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Crabominable|Crabominable-Mega, L50, M|111/186
+expect |switch|p2a: Crabominable|Crabominable-Mega, L50, M|59/100
+expect |move|p1a: Slowking|Tidy Up|p1a: Slowking
+expect |-boost|p1a: Slowking|atk|1
+expect |-boost|p1a: Slowking|spe|1
+expect |
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Pangoro, L50, M|85/202
+expect |switch|p2a: X|Pangoro, L50, M|42/100
+expect |move|p1a: Slowking|Moonblast|p2a: X
+expect |rng|100|29
+expect |rng|24|6
+expect |rng|16|14
+expect |-supereffective|p2a: X|2
+expect |split|p2
+expect |-damage|p2a: X|0 fnt
+expect |-damage|p2a: X|0 fnt
+expect |rng|100|97
+expect |faint|p2a: X
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Crabominable|Crabominable-Mega, L50, M|111/186
+expect |switch|p2a: Crabominable|Crabominable-Mega, L50, M|59/100
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1a: Slowking|Moonblast|p2a: Crabominable
+expect |rng|100|21
+expect |rng|24|4
+expect |rng|16|6
+expect |-supereffective|p2a: Crabominable|1
+expect |split|p2
+expect |-damage|p2a: Crabominable|17/186
+expect |-damage|p2a: Crabominable|9/100
+expect |rng|100|36
+expect |move|p2a: Crabominable|Shell Side Arm|p1a: Slowking|[anim] Shell Side Arm Physical
+expect |rng|100|50
+expect |rng|24|21
+expect |rng|16|4
+expect |-resisted|p1a: Slowking|1
+expect |split|p1
+expect |-damage|p1a: Slowking|103/188
+expect |-damage|p1a: Slowking|54/100
+expect |-hint|Physical Shell Side Arm
+expect |rng|100|14
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Nibbles|Talonflame, L50, F|154/154
+expect |switch|p1a: Nibbles|Talonflame, L50, F|100/100
+expect |move|p2a: Crabominable|Shell Side Arm|p1a: Nibbles|[anim] Shell Side Arm Physical
+expect |rng|100|4
+expect |rng|24|9
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Nibbles|67/154
+expect |-damage|p1a: Nibbles|43/100
+expect |-hint|Physical Shell Side Arm
+expect |rng|100|8
+expect |-status|p1a: Nibbles|psn
+expect |rng|10|5
+expect |
+expect |split|p1
+expect |-damage|p1a: Nibbles|48/154 psn|[from] psn
+expect |-damage|p1a: Nibbles|31/100 psn|[from] psn
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p1a: Nibbles|Dragon Pulse|p2a: Crabominable
+expect |rng|100|75
+expect |rng|24|0
+expect |rng|16|6
+expect |-crit|p2a: Crabominable
+expect |split|p2
+expect |-damage|p2a: Crabominable|0 fnt
+expect |-damage|p2a: Crabominable|0 fnt
+expect |faint|p2a: Crabominable
+expect |
+expect |win|p1

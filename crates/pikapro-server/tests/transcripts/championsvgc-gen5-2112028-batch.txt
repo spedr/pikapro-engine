@@ -1,0 +1,764 @@
+# championsvgc-gen5-2112028-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@write
+>start {"formatid":"gen9championsvgc2026regmb","seed":"gen5,f83f9e4d9f5b34d0"}
+>player p2 {"name":"Bob","team":"Delphox||Delphoxite|Blaze|HelpingHand,HyperVoice,FlyingPress,BurningJealousy|Quirky|3,22,,18,16,3|F|||50|,,,,,Poison]Gourgeist-Large||ColburBerry|Frisk|Endeavor,Imprison,MetalSound|Calm|15,1,,19,19,12|F|||50|,,,,,Steel]Staraptor||Staraptite|Intimidate|TeeterDance,BurningJealousy,BitterBlade,HornLeech|Jolly|22,2,4,3,9,23|F|||50|,,,,,Fighting]Mr. Bubbles|Sableye||Prankster|TrickorTreat,Thrash|Mild|2,31,2,10,9,11|M|||50|,,,,,Electric]Decidueye||ChoiceScarf|Overgrow|VoltTackle,Moonlight|Hardy|24,8,,30,2,1|F||S|50|,,,,,Rock]X|Pikachu||Static|ParabolicCharge|Quirky|3,6,1,8,24,23|M|||50|,,,,,Grass"}
+>player p1 {"name":"Alice","team":[{"name":"Vivillon-Continental","species":"Vivillon-Continental","item":"Leftovers","ability":"Friend Guard","moves":["Disable","Air Slash","Sweet Kiss"],"nature":"Serious","evs":{"hp":2,"atk":2,"def":3,"spa":16,"spd":19,"spe":19},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric"},{"name":"Big Tony's Pal","species":"Lycanroc-Dusk","item":"Choice Scarf","ability":"Tough Claws","moves":["Fickle Beam"],"nature":"Timid","evs":{"hp":0,"atk":28,"def":1,"spa":8,"spd":3,"spe":26},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting"},{"name":"Pinsir","species":"Pinsir","item":"Pinsirite","ability":"Hyper Cutter","moves":["Gunk Shot","Double Hit"],"nature":"Sassy","evs":{"hp":8,"atk":0,"def":0,"spa":21,"spd":23,"spe":14},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon"},{"name":"Chomp","species":"Rotom-Mow","item":"Silver Powder","ability":"Levitate","moves":["Destiny Bond"],"nature":"Gentle","evs":{"hp":12,"atk":0,"def":30,"spa":5,"spd":12,"spe":2},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice"},{"name":"Nibbles","species":"Avalugg","item":"Wide Lens","ability":"Own Tempo","moves":["Raging Bull","Imprison"],"nature":"Brave","evs":{"hp":8,"atk":10,"def":7,"spa":0,"spd":3,"spe":11},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon"},{"name":"Zoë","species":"Barbaracle","item":"Damp Rock","ability":"Magnet Pull","moves":["Electric Terrain","Lava Plume","Instruct"],"nature":"Jolly","evs":{"hp":8,"atk":27,"def":20,"spa":8,"spd":1,"spe":2},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground"}]}
+>p2 team 1,1
+>p1 team 3146
+@write
+>p2 team 5431
+>p1 move Disable 1
+@write
+# a comment
+>p2 move 2, switch 4
+>p1 switch 3, move 3 -1
+>p1 move 1, move 3 1
+>p2 move 1 -2
+>p2 move 2 ,  move 3 1
+# a comment
+>p2 move 2, move 4
+@write
+>p1 switch 5
+>p1 switch 3, move 3 1
+>p2 move 2, switch 3
+>p1 switch 7
+>p1 move 1 -2 mega, move 3 2
+>p1 switch barbaracle
+@write
+>p2 move Moonlight 1
+@write
+
+>p2 switch Decidueye
+>p2 move 2, move hornleech mega
+>p1 move 2 1, move 3 -1
+>p2 move moonlight,switch delphox
+@write
+
+>p2 switch 4, pass
+>p2 move 1 -2, move 3 2 mega
+>p1 move Gunk Shot 3 terastal
+>p1 move 1 2, move 1
+>p1 switch Pinsir
+
+>p1 switch 3, move lavaplume +1 mega
+>p2 switch staraptor
+@write
+
+>p2 move 1 -1 dynamax, move 3 -1
+>p2 move 1 2, move 3 1
+@write
+>p1 switch
+>p1 move 1 1, move 3 2
+# a comment
+>p1 move 2 +2 ,  move instruct 2
+@write
+
+>p1 move 2 +2 ,  move instruct 2
+>p2 move 1, move 1, move 1
+>p2 
+>p2 undo
+# a comment
+>p2 move 1 -2, move 3 -1
+
+>p2 pass, switch 3
+@write
+>p2 move Thrash +1
+@write
+>p1 auto
+@write
+>p2 move 1 2, move 2
+>p2 default
+>p1 move 1 1, move 3 -1
+>p1 move 2 -2, move 3 2
+>p1 move lavaplume -2 terastal
+
+>p2 move 1 -2, move 4 -1
+@write
+>p1 switch 3, move 2
+>p1 move 1, move 3 2
+# a comment
+>p2 skip ,  move Horn Leech +1
+>p1 switch 3, move 1
+>p2 move 1 3
+>p2 pass, move 2
+@write
+>p1 
+>p1 move 0
+>p1 undo
+>p1 move electricterrain -2
+>p2 skip
+>p1 move 1 2, move Lava Plume 1 terastallize
+>p2 pass, move Bitter Blade +2
+>p2 pass, move Bitter Blade +2
+@write
+>p1 undo
+>p1 move gunkshot -2 ,  switch 3
+>p1 skip ,  switch 3
+>p1 move 2 2, move Lava Plume
+>p2 default
+@write
+>p1 pass, move 3 2
+>p2 pass, move 4 2
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't choose for Team Preview: The Pokémon in slot 1 can only switch in once
+@message
+update
+|t:|
+|gametype|doubles
+|player|p2|Bob||
+|player|p1|Alice||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Vivillon-Continental, L50, M|
+|poke|p1|Lycanroc-Dusk, L50, F|
+|poke|p1|Pinsir, L50, F|
+|poke|p1|Rotom-Mow, L50|
+|poke|p1|Avalugg, L50, F|
+|poke|p1|Barbaracle, L50, F|
+|poke|p2|Delphox, L50, F|
+|poke|p2|Gourgeist-Large, L50, F|
+|poke|p2|Staraptor, L50, F|
+|poke|p2|Sableye, L50, M|
+|poke|p2|Decidueye, L50, F, shiny|
+|poke|p2|Pikachu, L50, M|
+|teampreview|4
+|split|p1
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+|split|p2
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, M","condition":"157/157","active":true,"stats":{"atk":74,"def":73,"spa":126,"spd":89,"spe":128},"moves":["disable","airslash","sweetkiss"],"baseAbility":"friendguard","item":"leftovers","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Big Tony's Pal","details":"Lycanroc-Dusk, L50, F","condition":"150/150","active":true,"stats":{"atk":148,"def":86,"spa":83,"spd":88,"spe":171},"moves":["ficklebeam"],"baseAbility":"toughclaws","item":"choicescarf","pokeball":"pokeball","ability":"toughclaws","commanding":false,"reviving":false},{"ident":"p1: Pinsir","details":"Pinsir, L50, F","condition":"148/148","active":false,"stats":{"atk":145,"def":120,"spa":96,"spd":124,"spe":107},"moves":["gunkshot","doublehit"],"baseAbility":"hypercutter","item":"pinsirite","pokeball":"pokeball","ability":"hypercutter","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Rotom-Mow, L50","condition":"137/137","active":false,"stats":{"atk":85,"def":141,"spa":130,"spd":152,"spe":108},"moves":["destinybond"],"baseAbility":"levitate","item":"silverpowder","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Avalugg, L50, F","condition":"178/178","active":false,"stats":{"atk":161,"def":211,"spa":64,"spd":69,"spe":53},"moves":["ragingbull","imprison"],"baseAbility":"owntempo","item":"widelens","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Barbaracle, L50, F","condition":"155/155","active":false,"stats":{"atk":152,"def":155,"spa":73,"spd":107,"spe":99},"moves":["electricterrain","lavaplume","instruct"],"baseAbility":"magnetpull","item":"damprock","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Delphox","details":"Delphox, L50, F","condition":"153/153","active":true,"stats":{"atk":111,"def":92,"spa":152,"spd":136,"spe":127},"moves":["helpinghand","hypervoice","flyingpress","burningjealousy"],"baseAbility":"blaze","item":"delphoxite","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Gourgeist","details":"Gourgeist-Large, L50, F","condition":"165/165","active":true,"stats":{"atk":104,"def":142,"spa":97,"spd":125,"spe":101},"moves":["endeavor","imprison","metalsound"],"baseAbility":"frisk","item":"colburberry","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false},{"ident":"p2: Staraptor","details":"Staraptor, L50, F","condition":"182/182","active":false,"stats":{"atk":142,"def":94,"spa":65,"spd":89,"spe":157},"moves":["teeterdance","burningjealousy","bitterblade","hornleech"],"baseAbility":"intimidate","item":"staraptite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, M","condition":"127/127","active":false,"stats":{"atk":126,"def":87,"spa":104,"spd":94,"spe":81},"moves":["trickortreat","thrash"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false},{"ident":"p2: Decidueye","details":"Decidueye, L50, F, shiny","condition":"177/177","active":false,"stats":{"atk":135,"def":95,"spa":150,"spd":122,"spe":91},"moves":["volttackle","moonlight"],"baseAbility":"overgrow","item":"choicescarf","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: X","details":"Pikachu, L50, M","condition":"113/113","active":false,"stats":{"atk":81,"def":61,"spa":78,"spd":94,"spe":133},"moves":["paraboliccharge"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Pinsir doesn't have a move matching disable
+@message
+update
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|uhtmlchange|otsrequest|
+
+|split|p2
+|uhtmlchange|otsrequest|
+
+|split|p1
+|switch|p1a: Pinsir|Pinsir, L50, F|148/148
+|switch|p1a: Pinsir|Pinsir, L50, F|100/100
+|split|p1
+|switch|p1b: Vivillon|Vivillon-Continental, L50, M|157/157
+|switch|p1b: Vivillon|Vivillon-Continental, L50, M|100/100
+|split|p2
+|switch|p2a: Decidueye|Decidueye, L50, F, shiny|177/177
+|switch|p2a: Decidueye|Decidueye, L50, F, shiny|100/100
+|split|p2
+|switch|p2b: Mr. Bubbles|Sableye, L50, M|127/127
+|switch|p2b: Mr. Bubbles|Sableye, L50, M|100/100
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Gunk Shot","id":"gunkshot","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Hit","id":"doublehit","pp":12,"maxpp":12,"target":"normal","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Disable","id":"disable","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Sweet Kiss","id":"sweetkiss","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pinsir","details":"Pinsir, L50, F","condition":"148/148","active":true,"stats":{"atk":145,"def":120,"spa":96,"spd":124,"spe":107},"moves":["gunkshot","doublehit"],"baseAbility":"hypercutter","item":"pinsirite","pokeball":"pokeball","ability":"hypercutter","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, M","condition":"157/157","active":true,"stats":{"atk":74,"def":73,"spa":126,"spd":89,"spe":128},"moves":["disable","airslash","sweetkiss"],"baseAbility":"friendguard","item":"leftovers","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Rotom-Mow, L50","condition":"137/137","active":false,"stats":{"atk":85,"def":141,"spa":130,"spd":152,"spe":108},"moves":["destinybond"],"baseAbility":"levitate","item":"silverpowder","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Barbaracle, L50, F","condition":"155/155","active":false,"stats":{"atk":152,"def":155,"spa":73,"spd":107,"spe":99},"moves":["electricterrain","lavaplume","instruct"],"baseAbility":"magnetpull","item":"damprock","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Volt Tackle","id":"volttackle","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Moonlight","id":"moonlight","pp":8,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Trick-or-Treat","id":"trickortreat","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Thrash","id":"thrash","pp":12,"maxpp":12,"target":"randomNormal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Decidueye","details":"Decidueye, L50, F, shiny","condition":"177/177","active":true,"stats":{"atk":135,"def":95,"spa":150,"spd":122,"spe":91},"moves":["volttackle","moonlight"],"baseAbility":"overgrow","item":"choicescarf","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, M","condition":"127/127","active":true,"stats":{"atk":126,"def":87,"spa":104,"spd":94,"spe":81},"moves":["trickortreat","thrash"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false},{"ident":"p2: Staraptor","details":"Staraptor, L50, F","condition":"182/182","active":false,"stats":{"atk":142,"def":94,"spa":65,"spd":89,"spe":157},"moves":["teeterdance","burningjealousy","bitterblade","hornleech"],"baseAbility":"intimidate","item":"staraptite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Delphox","details":"Delphox, L50, F","condition":"153/153","active":false,"stats":{"atk":111,"def":92,"spa":152,"spd":136,"spe":127},"moves":["helpinghand","hypervoice","flyingpress","burningjealousy"],"baseAbility":"blaze","item":"delphoxite","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|error|[Unavailable choice] Can't move: Decidueye's Volt Tackle is disabled
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Volt Tackle","id":"volttackle","pp":16,"maxpp":16,"target":"normal","disabled":true,"disabledSource":""},{"move":"Moonlight","id":"moonlight","pp":7,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Helping Hand","id":"helpinghand","pp":20,"maxpp":20,"target":"adjacentAlly","disabled":false},{"move":"Hyper Voice","id":"hypervoice","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Flying Press","id":"flyingpress","pp":12,"maxpp":12,"target":"any","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false}],"canMegaEvo":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Decidueye","details":"Decidueye, L50, F, shiny","condition":"177/177","active":true,"stats":{"atk":135,"def":95,"spa":150,"spd":122,"spe":91},"moves":["volttackle","moonlight"],"baseAbility":"overgrow","item":"choicescarf","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Delphox","details":"Delphox, L50, F","condition":"153/153","active":true,"stats":{"atk":111,"def":92,"spa":152,"spd":136,"spe":127},"moves":["helpinghand","hypervoice","flyingpress","burningjealousy"],"baseAbility":"blaze","item":"delphoxite","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Staraptor","details":"Staraptor, L50, F","condition":"182/182","active":false,"stats":{"atk":142,"def":94,"spa":65,"spd":89,"spe":157},"moves":["teeterdance","burningjealousy","bitterblade","hornleech"],"baseAbility":"intimidate","item":"staraptite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, M","condition":"127/127","active":false,"stats":{"atk":126,"def":87,"spa":104,"spd":94,"spe":81},"moves":["trickortreat","thrash"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]},"update":true}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Chomp|Rotom-Mow, L50|137/137
+|switch|p1a: Chomp|Rotom-Mow, L50|100/100
+|split|p2
+|switch|p2b: Delphox|Delphox, L50, F|153/153
+|switch|p2b: Delphox|Delphox, L50, F|100/100
+|move|p2a: Decidueye|Moonlight|p2a: Decidueye
+|-fail|p2a: Decidueye|heal
+|move|p1b: Vivillon|Sweet Kiss|p1a: Chomp
+|-start|p1a: Chomp|confusion
+|
+|upkeep
+|turn|2
+|
+|t:|
+|move|p2a: Decidueye|Moonlight|p2a: Decidueye
+|-fail|p2a: Decidueye|heal
+|move|p1b: Vivillon|Sweet Kiss|p2a: Decidueye
+|-start|p2a: Decidueye|confusion
+|move|p2b: Delphox|Flying Press|p1a: Chomp
+|split|p1
+|-damage|p1a: Chomp|113/137
+|-damage|p1a: Chomp|82/100
+|-activate|p1a: Chomp|confusion
+|move|p1a: Chomp|Destiny Bond|p1a: Chomp
+|-singlemove|p1a: Chomp|Destiny Bond
+|
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Destiny Bond","id":"destinybond","pp":7,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Disable","id":"disable","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Sweet Kiss","id":"sweetkiss","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Rotom-Mow, L50","condition":"113/137","active":true,"stats":{"atk":85,"def":141,"spa":130,"spd":152,"spe":108},"moves":["destinybond"],"baseAbility":"levitate","item":"silverpowder","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, M","condition":"157/157","active":true,"stats":{"atk":74,"def":73,"spa":126,"spd":89,"spe":128},"moves":["disable","airslash","sweetkiss"],"baseAbility":"friendguard","item":"leftovers","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Pinsir","details":"Pinsir, L50, F","condition":"148/148","active":false,"stats":{"atk":145,"def":120,"spa":96,"spd":124,"spe":107},"moves":["gunkshot","doublehit"],"baseAbility":"hypercutter","item":"pinsirite","pokeball":"pokeball","ability":"hypercutter","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Barbaracle, L50, F","condition":"155/155","active":false,"stats":{"atk":152,"def":155,"spa":73,"spd":107,"spe":99},"moves":["electricterrain","lavaplume","instruct"],"baseAbility":"magnetpull","item":"damprock","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Volt Tackle","id":"volttackle","pp":16,"maxpp":16,"target":"normal","disabled":true},{"move":"Moonlight","id":"moonlight","pp":6,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Helping Hand","id":"helpinghand","pp":20,"maxpp":20,"target":"adjacentAlly","disabled":false},{"move":"Hyper Voice","id":"hypervoice","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Flying Press","id":"flyingpress","pp":11,"maxpp":12,"target":"any","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false}],"canMegaEvo":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Decidueye","details":"Decidueye, L50, F, shiny","condition":"177/177","active":true,"stats":{"atk":135,"def":95,"spa":150,"spd":122,"spe":91},"moves":["volttackle","moonlight"],"baseAbility":"overgrow","item":"choicescarf","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Delphox","details":"Delphox, L50, F","condition":"153/153","active":true,"stats":{"atk":111,"def":92,"spa":152,"spd":136,"spe":127},"moves":["helpinghand","hypervoice","flyingpress","burningjealousy"],"baseAbility":"blaze","item":"delphoxite","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Staraptor","details":"Staraptor, L50, F","condition":"182/182","active":false,"stats":{"atk":142,"def":94,"spa":65,"spd":89,"spe":157},"moves":["teeterdance","burningjealousy","bitterblade","hornleech"],"baseAbility":"intimidate","item":"staraptite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, M","condition":"127/127","active":false,"stats":{"atk":126,"def":87,"spa":104,"spd":94,"spe":81},"moves":["trickortreat","thrash"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You do not have a Pokémon in slot 5 to switch to
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You do not have a Pokémon in slot 7 to switch to
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Pinsir|Pinsir, L50, F|148/148
+|switch|p1a: Pinsir|Pinsir, L50, F|100/100
+|-activate|p2a: Decidueye|confusion
+|split|p2
+|-damage|p2a: Decidueye|153/177|[from] confusion
+|-damage|p2a: Decidueye|86/100|[from] confusion
+|move|p1b: Vivillon|Sweet Kiss||[still]
+|-fail|p1b: Vivillon
+|move|p2b: Delphox|Burning Jealousy|p1a: Pinsir|[spread] p1a,p1b
+|-supereffective|p1a: Pinsir|1
+|-supereffective|p1b: Vivillon|1
+|split|p1
+|-damage|p1a: Pinsir|93/148
+|-damage|p1a: Pinsir|62/100
+|split|p1
+|-damage|p1b: Vivillon|49/157
+|-damage|p1b: Vivillon|31/100
+|
+|split|p1
+|-heal|p1b: Vivillon|58/157|[from] item: Leftovers
+|-heal|p1b: Vivillon|36/100|[from] item: Leftovers
+|upkeep
+|turn|4
+|
+|t:|
+|split|p2
+|switch|p2b: Staraptor|Staraptor, L50, F|182/182
+|switch|p2b: Staraptor|Staraptor, L50, F|100/100
+|-ability|p2b: Staraptor|Intimidate|boost
+|-fail|p1a: Pinsir|unboost|atk|[from] ability: Hyper Cutter|[of] p1a: Pinsir
+|-unboost|p1b: Vivillon|atk|1
+|detailschange|p1a: Pinsir|Pinsir-Mega, L50, F
+|-mega|p1a: Pinsir|Pinsir|Pinsirite
+|-activate|p2a: Decidueye|confusion
+|move|p2a: Decidueye|Moonlight|p2a: Decidueye
+|split|p2
+|-heal|p2a: Decidueye|177/177
+|-heal|p2a: Decidueye|100/100
+|move|p1b: Vivillon|Sweet Kiss|p2b: Staraptor
+|-start|p2b: Staraptor|confusion
+|move|p1a: Pinsir|Gunk Shot|p1b: Vivillon
+|split|p1
+|-damage|p1b: Vivillon|0 fnt
+|-damage|p1b: Vivillon|0 fnt
+|faint|p1b: Vivillon
+|
+|upkeep
+|
+|t:|
+|split|p1
+|switch|p1b: Zoë|Barbaracle, L50, F|155/155
+|switch|p1b: Zoë|Barbaracle, L50, F|100/100
+|turn|5
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Gunk Shot","id":"gunkshot","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Hit","id":"doublehit","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Electric Terrain","id":"electricterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Lava Plume","id":"lavaplume","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Instruct","id":"instruct","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pinsir","details":"Pinsir-Mega, L50, F","condition":"93/148","active":true,"stats":{"atk":175,"def":140,"spa":106,"spd":146,"spe":125},"moves":["gunkshot","doublehit"],"baseAbility":"aerilate","item":"pinsirite","pokeball":"pokeball","ability":"aerilate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Barbaracle, L50, F","condition":"155/155","active":true,"stats":{"atk":152,"def":155,"spa":73,"spd":107,"spe":99},"moves":["electricterrain","lavaplume","instruct"],"baseAbility":"magnetpull","item":"damprock","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Rotom-Mow, L50","condition":"113/137","active":false,"stats":{"atk":85,"def":141,"spa":130,"spd":152,"spe":108},"moves":["destinybond"],"baseAbility":"levitate","item":"silverpowder","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, M","condition":"0 fnt","active":false,"stats":{"atk":74,"def":73,"spa":126,"spd":89,"spe":128},"moves":["disable","airslash","sweetkiss"],"baseAbility":"friendguard","item":"leftovers","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Volt Tackle","id":"volttackle","pp":16,"maxpp":16,"target":"normal","disabled":true},{"move":"Moonlight","id":"moonlight","pp":5,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Teeter Dance","id":"teeterdance","pp":20,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":12,"maxpp":12,"target":"normal","disabled":false}],"canMegaEvo":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Decidueye","details":"Decidueye, L50, F, shiny","condition":"177/177","active":true,"stats":{"atk":135,"def":95,"spa":150,"spd":122,"spe":91},"moves":["volttackle","moonlight"],"baseAbility":"overgrow","item":"choicescarf","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Staraptor","details":"Staraptor, L50, F","condition":"182/182","active":true,"stats":{"atk":142,"def":94,"spa":65,"spd":89,"spe":157},"moves":["teeterdance","burningjealousy","bitterblade","hornleech"],"baseAbility":"intimidate","item":"staraptite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Delphox","details":"Delphox, L50, F","condition":"153/153","active":false,"stats":{"atk":111,"def":92,"spa":152,"spd":136,"spe":127},"moves":["helpinghand","hypervoice","flyingpress","burningjealousy"],"baseAbility":"blaze","item":"delphoxite","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, M","condition":"127/127","active":false,"stats":{"atk":126,"def":87,"spa":104,"spd":94,"spe":81},"moves":["trickortreat","thrash"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You can't choose a target for Moonlight
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Horn Leech needs a target
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Delphox|Delphox, L50, F|153/153
+|switch|p2b: Delphox|Delphox, L50, F|100/100
+|-end|p2a: Decidueye|confusion
+|move|p2a: Decidueye|Moonlight|p2a: Decidueye
+|-fail|p2a: Decidueye|heal
+|move|p1a: Pinsir|Double Hit|p2a: Decidueye
+|-supereffective|p2a: Decidueye|1
+|split|p2
+|-damage|p2a: Decidueye|79/177
+|-damage|p2a: Decidueye|44/100
+|-supereffective|p2a: Decidueye|1
+|split|p2
+|-damage|p2a: Decidueye|0 fnt
+|-damage|p2a: Decidueye|0 fnt
+|faint|p2a: Decidueye
+|-hitcount|p2: Decidueye|2
+|move|p1b: Zoë|Instruct|p1a: Pinsir
+|-singleturn|p1a: Pinsir|move: Instruct|[of] p1b: Zoë
+|move|p1a: Pinsir|Double Hit|p2b: Delphox
+|split|p2
+|-damage|p2b: Delphox|99/153
+|-damage|p2b: Delphox|64/100
+|split|p2
+|-damage|p2b: Delphox|51/153
+|-damage|p2b: Delphox|33/100
+|-hitcount|p2b: Delphox|2
+|
+|upkeep
+@message
+sideupdate
+p1
+|request|{"wait":true,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pinsir","details":"Pinsir-Mega, L50, F","condition":"93/148","active":true,"stats":{"atk":175,"def":140,"spa":106,"spd":146,"spe":125},"moves":["gunkshot","doublehit"],"baseAbility":"aerilate","item":"pinsirite","pokeball":"pokeball","ability":"aerilate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Barbaracle, L50, F","condition":"155/155","active":true,"stats":{"atk":152,"def":155,"spa":73,"spd":107,"spe":99},"moves":["electricterrain","lavaplume","instruct"],"baseAbility":"magnetpull","item":"damprock","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Rotom-Mow, L50","condition":"113/137","active":false,"stats":{"atk":85,"def":141,"spa":130,"spd":152,"spe":108},"moves":["destinybond"],"baseAbility":"levitate","item":"silverpowder","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, M","condition":"0 fnt","active":false,"stats":{"atk":74,"def":73,"spa":126,"spd":89,"spe":128},"moves":["disable","airslash","sweetkiss"],"baseAbility":"friendguard","item":"leftovers","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"forceSwitch":[true,false],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Decidueye","details":"Decidueye, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":135,"def":95,"spa":150,"spd":122,"spe":91},"moves":["volttackle","moonlight"],"baseAbility":"overgrow","item":"choicescarf","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Delphox","details":"Delphox, L50, F","condition":"51/153","active":true,"stats":{"atk":111,"def":92,"spa":152,"spd":136,"spe":127},"moves":["helpinghand","hypervoice","flyingpress","burningjealousy"],"baseAbility":"blaze","item":"delphoxite","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Staraptor","details":"Staraptor, L50, F","condition":"182/182","active":false,"stats":{"atk":142,"def":94,"spa":65,"spd":89,"spe":157},"moves":["teeterdance","burningjealousy","bitterblade","hornleech"],"baseAbility":"intimidate","item":"staraptite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, M","condition":"127/127","active":false,"stats":{"atk":126,"def":87,"spa":104,"spd":94,"spe":81},"moves":["trickortreat","thrash"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false}]},"noCancel":true}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Invalid target for Gunk Shot
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You can't choose a target for Lava Plume
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: switch staraptor - missing other pokemon
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Mr. Bubbles|Sableye, L50, M|127/127
+|switch|p2a: Mr. Bubbles|Sableye, L50, M|100/100
+|turn|6
+|
+|t:|
+|detailschange|p2b: Delphox|Delphox-Mega, L50, F
+|-mega|p2b: Delphox|Delphox|Delphoxite
+|move|p2a: Mr. Bubbles|Trick-or-Treat|p2b: Delphox
+|-start|p2b: Delphox|typeadd|Ghost|[from] move: Trick-or-Treat
+|move|p2b: Delphox|Flying Press|p1b: Zoë
+|split|p1
+|-damage|p1b: Zoë|124/155
+|-damage|p1b: Zoë|80/100
+|move|p1a: Pinsir|Gunk Shot|p2b: Delphox
+|-resisted|p2b: Delphox|1
+|split|p2
+|-damage|p2b: Delphox|5/153
+|-damage|p2b: Delphox|3/100
+|move|p1b: Zoë|Electric Terrain|p1b: Zoë
+|-fieldstart|move: Electric Terrain
+|
+|upkeep
+|turn|7
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Gunk Shot","id":"gunkshot","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Hit","id":"doublehit","pp":10,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Electric Terrain","id":"electricterrain","pp":11,"maxpp":12,"target":"all","disabled":false},{"move":"Lava Plume","id":"lavaplume","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Instruct","id":"instruct","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pinsir","details":"Pinsir-Mega, L50, F","condition":"93/148","active":true,"stats":{"atk":175,"def":140,"spa":106,"spd":146,"spe":125},"moves":["gunkshot","doublehit"],"baseAbility":"aerilate","item":"pinsirite","pokeball":"pokeball","ability":"aerilate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Barbaracle, L50, F","condition":"124/155","active":true,"stats":{"atk":152,"def":155,"spa":73,"spd":107,"spe":99},"moves":["electricterrain","lavaplume","instruct"],"baseAbility":"magnetpull","item":"damprock","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Rotom-Mow, L50","condition":"113/137","active":false,"stats":{"atk":85,"def":141,"spa":130,"spd":152,"spe":108},"moves":["destinybond"],"baseAbility":"levitate","item":"silverpowder","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, M","condition":"0 fnt","active":false,"stats":{"atk":74,"def":73,"spa":126,"spd":89,"spe":128},"moves":["disable","airslash","sweetkiss"],"baseAbility":"friendguard","item":"leftovers","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Trick-or-Treat","id":"trickortreat","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Thrash","id":"thrash","pp":12,"maxpp":12,"target":"randomNormal","disabled":false}]},{"moves":[{"move":"Helping Hand","id":"helpinghand","pp":20,"maxpp":20,"target":"adjacentAlly","disabled":false},{"move":"Hyper Voice","id":"hypervoice","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Flying Press","id":"flyingpress","pp":10,"maxpp":12,"target":"any","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, M","condition":"127/127","active":true,"stats":{"atk":126,"def":87,"spa":104,"spd":94,"spe":81},"moves":["trickortreat","thrash"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false},{"ident":"p2: Delphox","details":"Delphox-Mega, L50, F","condition":"5/153","active":true,"stats":{"atk":111,"def":92,"spa":197,"spd":161,"spe":157},"moves":["helpinghand","hypervoice","flyingpress","burningjealousy"],"baseAbility":"levitate","item":"delphoxite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Staraptor","details":"Staraptor, L50, F","condition":"182/182","active":false,"stats":{"atk":142,"def":94,"spa":65,"spd":89,"spe":157},"moves":["teeterdance","burningjealousy","bitterblade","hornleech"],"baseAbility":"intimidate","item":"staraptite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Decidueye","details":"Decidueye, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":135,"def":95,"spa":150,"spd":122,"spe":91},"moves":["volttackle","moonlight"],"baseAbility":"overgrow","item":"choicescarf","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You can't choose a target for Trick-or-Treat
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You need to select a Pokémon to switch in
+@message
+update
+|
+|t:|
+|move|p2a: Mr. Bubbles|Trick-or-Treat|p1b: Zoë
+|-start|p1b: Zoë|typeadd|Ghost|[from] move: Trick-or-Treat
+|move|p2b: Delphox|Flying Press|p1a: Pinsir
+|-resisted|p1a: Pinsir|1
+|split|p1
+|-damage|p1a: Pinsir|76/148
+|-damage|p1a: Pinsir|51/100
+|move|p1a: Pinsir|Gunk Shot|p2a: Mr. Bubbles|[miss]
+|-miss|p1a: Pinsir|p2a: Mr. Bubbles
+|move|p1b: Zoë|Instruct|p2b: Delphox
+|-singleturn|p2b: Delphox|move: Instruct|[of] p1b: Zoë
+|move|p2b: Delphox|Flying Press|p1a: Pinsir
+|-resisted|p1a: Pinsir|1
+|split|p1
+|-damage|p1a: Pinsir|59/148
+|-damage|p1a: Pinsir|39/100
+|
+|upkeep
+|turn|8
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Gunk Shot","id":"gunkshot","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Hit","id":"doublehit","pp":10,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Electric Terrain","id":"electricterrain","pp":11,"maxpp":12,"target":"all","disabled":false},{"move":"Lava Plume","id":"lavaplume","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Instruct","id":"instruct","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pinsir","details":"Pinsir-Mega, L50, F","condition":"59/148","active":true,"stats":{"atk":175,"def":140,"spa":106,"spd":146,"spe":125},"moves":["gunkshot","doublehit"],"baseAbility":"aerilate","item":"pinsirite","pokeball":"pokeball","ability":"aerilate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Barbaracle, L50, F","condition":"124/155","active":true,"stats":{"atk":152,"def":155,"spa":73,"spd":107,"spe":99},"moves":["electricterrain","lavaplume","instruct"],"baseAbility":"magnetpull","item":"damprock","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Rotom-Mow, L50","condition":"113/137","active":false,"stats":{"atk":85,"def":141,"spa":130,"spd":152,"spe":108},"moves":["destinybond"],"baseAbility":"levitate","item":"silverpowder","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, M","condition":"0 fnt","active":false,"stats":{"atk":74,"def":73,"spa":126,"spd":89,"spe":128},"moves":["disable","airslash","sweetkiss"],"baseAbility":"friendguard","item":"leftovers","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Trick-or-Treat","id":"trickortreat","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Thrash","id":"thrash","pp":12,"maxpp":12,"target":"randomNormal","disabled":false}]},{"moves":[{"move":"Helping Hand","id":"helpinghand","pp":20,"maxpp":20,"target":"adjacentAlly","disabled":false},{"move":"Hyper Voice","id":"hypervoice","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Flying Press","id":"flyingpress","pp":8,"maxpp":12,"target":"any","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, M","condition":"127/127","active":true,"stats":{"atk":126,"def":87,"spa":104,"spd":94,"spe":81},"moves":["trickortreat","thrash"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false},{"ident":"p2: Delphox","details":"Delphox-Mega, L50, F","condition":"5/153","active":true,"stats":{"atk":111,"def":92,"spa":197,"spd":161,"spe":157},"moves":["helpinghand","hypervoice","flyingpress","burningjealousy"],"baseAbility":"levitate","item":"delphoxite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Staraptor","details":"Staraptor, L50, F","condition":"182/182","active":false,"stats":{"atk":142,"def":94,"spa":65,"spd":89,"spe":157},"moves":["teeterdance","burningjealousy","bitterblade","hornleech"],"baseAbility":"intimidate","item":"staraptite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Decidueye","details":"Decidueye, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":135,"def":95,"spa":150,"spd":122,"spe":91},"moves":["volttackle","moonlight"],"baseAbility":"overgrow","item":"choicescarf","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't make choices: You sent choices for 3 Pokémon, but this is a doubles game!
+@message
+sideupdate
+p2
+|error|[Invalid choice] Unrecognized choice: 
+@message
+update
+|
+|t:|
+|move|p2a: Mr. Bubbles|Trick-or-Treat||[still]
+|-fail|p2a: Mr. Bubbles
+|move|p2b: Delphox|Flying Press|p2a: Mr. Bubbles
+|-immune|p2a: Mr. Bubbles
+|move|p1a: Pinsir|Double Hit|p2b: Delphox
+|split|p2
+|-damage|p2b: Delphox|0 fnt
+|-damage|p2b: Delphox|0 fnt
+|faint|p2b: Delphox
+|-hitcount|p2: Delphox|1
+|move|p1b: Zoë|Instruct|p2a: Mr. Bubbles
+|-singleturn|p2a: Mr. Bubbles|move: Instruct|[of] p1b: Zoë
+|move|p2a: Mr. Bubbles|Trick-or-Treat|p2: Delphox|[notarget]
+|-fail|p2a: Mr. Bubbles
+|
+|upkeep
+|
+|t:|
+|split|p2
+|switch|p2b: Staraptor|Staraptor, L50, F|182/182
+|switch|p2b: Staraptor|Staraptor, L50, F|100/100
+|-ability|p2b: Staraptor|Intimidate|boost
+|-unboost|p1a: Pinsir|atk|1
+|-unboost|p1b: Zoë|atk|1
+|turn|9
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Gunk Shot","id":"gunkshot","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Hit","id":"doublehit","pp":9,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Electric Terrain","id":"electricterrain","pp":11,"maxpp":12,"target":"all","disabled":false},{"move":"Lava Plume","id":"lavaplume","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Instruct","id":"instruct","pp":13,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pinsir","details":"Pinsir-Mega, L50, F","condition":"59/148","active":true,"stats":{"atk":175,"def":140,"spa":106,"spd":146,"spe":125},"moves":["gunkshot","doublehit"],"baseAbility":"aerilate","item":"pinsirite","pokeball":"pokeball","ability":"aerilate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Barbaracle, L50, F","condition":"124/155","active":true,"stats":{"atk":152,"def":155,"spa":73,"spd":107,"spe":99},"moves":["electricterrain","lavaplume","instruct"],"baseAbility":"magnetpull","item":"damprock","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Rotom-Mow, L50","condition":"113/137","active":false,"stats":{"atk":85,"def":141,"spa":130,"spd":152,"spe":108},"moves":["destinybond"],"baseAbility":"levitate","item":"silverpowder","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, M","condition":"0 fnt","active":false,"stats":{"atk":74,"def":73,"spa":126,"spd":89,"spe":128},"moves":["disable","airslash","sweetkiss"],"baseAbility":"friendguard","item":"leftovers","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Trick-or-Treat","id":"trickortreat","pp":16,"maxpp":20,"target":"normal","disabled":false},{"move":"Thrash","id":"thrash","pp":12,"maxpp":12,"target":"randomNormal","disabled":false}]},{"moves":[{"move":"Teeter Dance","id":"teeterdance","pp":20,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, M","condition":"127/127","active":true,"stats":{"atk":126,"def":87,"spa":104,"spd":94,"spe":81},"moves":["trickortreat","thrash"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false},{"ident":"p2: Staraptor","details":"Staraptor, L50, F","condition":"182/182","active":true,"stats":{"atk":142,"def":94,"spa":65,"spd":89,"spe":157},"moves":["teeterdance","burningjealousy","bitterblade","hornleech"],"baseAbility":"intimidate","item":"staraptite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Delphox","details":"Delphox-Mega, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":92,"spa":197,"spd":161,"spe":157},"moves":["helpinghand","hypervoice","flyingpress","burningjealousy"],"baseAbility":"levitate","item":"delphoxite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Decidueye","details":"Decidueye, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":135,"def":95,"spa":150,"spd":122,"spe":91},"moves":["volttackle","moonlight"],"baseAbility":"overgrow","item":"choicescarf","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You can't choose a target for Thrash
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Pinsir doesn't have a move matching lavaplume
+@message
+update
+|
+|t:|
+|move|p2a: Mr. Bubbles|Trick-or-Treat||[still]
+|-fail|p2a: Mr. Bubbles
+|move|p2b: Staraptor|Burning Jealousy|p1b: Zoë|[spread] p1a,p1b
+|-supereffective|p1a: Pinsir|1
+|-resisted|p1b: Zoë|2
+|split|p1
+|-damage|p1a: Pinsir|39/148
+|-damage|p1a: Pinsir|26/100
+|split|p1
+|-damage|p1b: Zoë|121/155
+|-damage|p1b: Zoë|78/100
+|move|p1a: Pinsir|Gunk Shot|p2b: Staraptor
+|split|p2
+|-damage|p2b: Staraptor|124/182
+|-damage|p2b: Staraptor|68/100
+|move|p1b: Zoë|Electric Terrain||[still]
+|-fail|p1b: Zoë
+|
+|upkeep
+|turn|10
+|
+|t:|
+|move|p2a: Mr. Bubbles|Trick-or-Treat||[still]
+|-fail|p2a: Mr. Bubbles
+|move|p2b: Staraptor|Teeter Dance|p1a: Pinsir|[spread] p2a,p1a,p1b
+|-start|p2a: Mr. Bubbles|confusion
+|-start|p1a: Pinsir|confusion
+|-start|p1b: Zoë|confusion
+|-activate|p1a: Pinsir|confusion
+|move|p1a: Pinsir|Gunk Shot|p2a: Mr. Bubbles
+|-resisted|p2a: Mr. Bubbles|1
+|split|p2
+|-damage|p2a: Mr. Bubbles|93/127
+|-damage|p2a: Mr. Bubbles|73/100
+|-status|p2a: Mr. Bubbles|psn
+|-activate|p1b: Zoë|confusion
+|move|p1b: Zoë|Instruct|p1a: Pinsir
+|-singleturn|p1a: Pinsir|move: Instruct|[of] p1b: Zoë
+|-activate|p1a: Pinsir|confusion
+|split|p1
+|-damage|p1a: Pinsir|25/148|[from] confusion
+|-damage|p1a: Pinsir|16/100|[from] confusion
+|
+|split|p2
+|-damage|p2a: Mr. Bubbles|78/127 psn|[from] psn
+|-damage|p2a: Mr. Bubbles|61/100 psn|[from] psn
+|-fieldend|move: Electric Terrain
+|upkeep
+|turn|11
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Gunk Shot","id":"gunkshot","pp":3,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Hit","id":"doublehit","pp":9,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Electric Terrain","id":"electricterrain","pp":10,"maxpp":12,"target":"all","disabled":false},{"move":"Lava Plume","id":"lavaplume","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Instruct","id":"instruct","pp":12,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pinsir","details":"Pinsir-Mega, L50, F","condition":"25/148","active":true,"stats":{"atk":175,"def":140,"spa":106,"spd":146,"spe":125},"moves":["gunkshot","doublehit"],"baseAbility":"aerilate","item":"pinsirite","pokeball":"pokeball","ability":"aerilate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Barbaracle, L50, F","condition":"121/155","active":true,"stats":{"atk":152,"def":155,"spa":73,"spd":107,"spe":99},"moves":["electricterrain","lavaplume","instruct"],"baseAbility":"magnetpull","item":"damprock","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Rotom-Mow, L50","condition":"113/137","active":false,"stats":{"atk":85,"def":141,"spa":130,"spd":152,"spe":108},"moves":["destinybond"],"baseAbility":"levitate","item":"silverpowder","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, M","condition":"0 fnt","active":false,"stats":{"atk":74,"def":73,"spa":126,"spd":89,"spe":128},"moves":["disable","airslash","sweetkiss"],"baseAbility":"friendguard","item":"leftovers","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Trick-or-Treat","id":"trickortreat","pp":14,"maxpp":20,"target":"normal","disabled":false},{"move":"Thrash","id":"thrash","pp":12,"maxpp":12,"target":"randomNormal","disabled":false}]},{"moves":[{"move":"Teeter Dance","id":"teeterdance","pp":19,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, M","condition":"78/127 psn","active":true,"stats":{"atk":126,"def":87,"spa":104,"spd":94,"spe":81},"moves":["trickortreat","thrash"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false},{"ident":"p2: Staraptor","details":"Staraptor, L50, F","condition":"124/182","active":true,"stats":{"atk":142,"def":94,"spa":65,"spd":89,"spe":157},"moves":["teeterdance","burningjealousy","bitterblade","hornleech"],"baseAbility":"intimidate","item":"staraptite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Delphox","details":"Delphox-Mega, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":92,"spa":197,"spd":161,"spe":157},"moves":["helpinghand","hypervoice","flyingpress","burningjealousy"],"baseAbility":"levitate","item":"delphoxite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Decidueye","details":"Decidueye, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":135,"def":95,"spa":150,"spd":122,"spe":91},"moves":["volttackle","moonlight"],"baseAbility":"overgrow","item":"choicescarf","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You can't choose a target for Teeter Dance
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Chomp|Rotom-Mow, L50|113/137
+|switch|p1a: Chomp|Rotom-Mow, L50|82/100
+|-activate|p2a: Mr. Bubbles|confusion
+|move|p2a: Mr. Bubbles|Trick-or-Treat|p2b: Staraptor
+|-start|p2b: Staraptor|typeadd|Ghost|[from] move: Trick-or-Treat
+|move|p2b: Staraptor|Horn Leech|p2a: Mr. Bubbles
+|split|p2
+|-damage|p2a: Mr. Bubbles|25/127 psn
+|-damage|p2a: Mr. Bubbles|19/100 psn
+|split|p2
+|-heal|p2b: Staraptor|151/182|[from] drain|[of] p2a: Mr. Bubbles
+|-heal|p2b: Staraptor|82/100|[from] drain|[of] p2a: Mr. Bubbles
+|-activate|p1b: Zoë|confusion
+|move|p1b: Zoë|Lava Plume|p2a: Mr. Bubbles|[spread] p1a,p2a,p2b
+|-supereffective|p1a: Chomp|1
+|split|p1
+|-damage|p1a: Chomp|91/137
+|-damage|p1a: Chomp|66/100
+|split|p2
+|-damage|p2a: Mr. Bubbles|3/127 psn
+|-damage|p2a: Mr. Bubbles|2/100 psn
+|split|p2
+|-damage|p2b: Staraptor|132/182
+|-damage|p2b: Staraptor|72/100
+|
+|split|p2
+|-damage|p2a: Mr. Bubbles|0 fnt|[from] psn
+|-damage|p2a: Mr. Bubbles|0 fnt|[from] psn
+|faint|p2a: Mr. Bubbles
+|upkeep
+|turn|12
+|
+|t:|
+|move|p2b: Staraptor|Horn Leech|p1a: Chomp
+|-resisted|p1a: Chomp|1
+|split|p1
+|-damage|p1a: Chomp|74/137
+|-damage|p1a: Chomp|54/100
+|split|p2
+|-heal|p2b: Staraptor|141/182|[from] drain|[of] p1a: Chomp
+|-heal|p2b: Staraptor|77/100|[from] drain|[of] p1a: Chomp
+|move|p1a: Chomp|Destiny Bond|p1a: Chomp
+|-singlemove|p1a: Chomp|Destiny Bond
+|-activate|p1b: Zoë|confusion
+|split|p1
+|-damage|p1b: Zoë|110/155|[from] confusion
+|-damage|p1b: Zoë|70/100|[from] confusion
+|
+|upkeep
+|turn|13
+|
+|t:|
+|split|p1
+|switch|p1a: Pinsir|Pinsir-Mega, L50, F|25/148
+|switch|p1a: Pinsir|Pinsir-Mega, L50, F|16/100
+|move|p2b: Staraptor|Burning Jealousy|p1a: Pinsir|[spread] p1a,p1b
+|-supereffective|p1a: Pinsir|1
+|-resisted|p1b: Zoë|2
+|split|p1
+|-damage|p1a: Pinsir|5/148
+|-damage|p1a: Pinsir|3/100
+|split|p1
+|-damage|p1b: Zoë|107/155
+|-damage|p1b: Zoë|69/100
+|-end|p1b: Zoë|confusion
+|move|p1b: Zoë|Electric Terrain|p1b: Zoë
+|-fieldstart|move: Electric Terrain
+|
+|upkeep
+|turn|14
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Gunk Shot","id":"gunkshot","pp":3,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Hit","id":"doublehit","pp":9,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Electric Terrain","id":"electricterrain","pp":9,"maxpp":12,"target":"all","disabled":false},{"move":"Lava Plume","id":"lavaplume","pp":15,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Instruct","id":"instruct","pp":12,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pinsir","details":"Pinsir-Mega, L50, F","condition":"5/148","active":true,"stats":{"atk":175,"def":140,"spa":106,"spd":146,"spe":125},"moves":["gunkshot","doublehit"],"baseAbility":"aerilate","item":"pinsirite","pokeball":"pokeball","ability":"aerilate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Barbaracle, L50, F","condition":"107/155","active":true,"stats":{"atk":152,"def":155,"spa":73,"spd":107,"spe":99},"moves":["electricterrain","lavaplume","instruct"],"baseAbility":"magnetpull","item":"damprock","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Rotom-Mow, L50","condition":"74/137","active":false,"stats":{"atk":85,"def":141,"spa":130,"spd":152,"spe":108},"moves":["destinybond"],"baseAbility":"levitate","item":"silverpowder","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, M","condition":"0 fnt","active":false,"stats":{"atk":74,"def":73,"spa":126,"spd":89,"spe":128},"moves":["disable","airslash","sweetkiss"],"baseAbility":"friendguard","item":"leftovers","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Trick-or-Treat","id":"trickortreat","pp":13,"maxpp":20,"target":"normal","disabled":false},{"move":"Thrash","id":"thrash","pp":12,"maxpp":12,"target":"randomNormal","disabled":false}]},{"moves":[{"move":"Teeter Dance","id":"teeterdance","pp":19,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":6,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, M","condition":"0 fnt","active":true,"stats":{"atk":126,"def":87,"spa":104,"spd":94,"spe":81},"moves":["trickortreat","thrash"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false},{"ident":"p2: Staraptor","details":"Staraptor, L50, F","condition":"141/182","active":true,"stats":{"atk":142,"def":94,"spa":65,"spd":89,"spe":157},"moves":["teeterdance","burningjealousy","bitterblade","hornleech"],"baseAbility":"intimidate","item":"staraptite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Delphox","details":"Delphox-Mega, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":92,"spa":197,"spd":161,"spe":157},"moves":["helpinghand","hypervoice","flyingpress","burningjealousy"],"baseAbility":"levitate","item":"delphoxite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Decidueye","details":"Decidueye, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":135,"def":95,"spa":150,"spd":122,"spe":91},"moves":["volttackle","moonlight"],"baseAbility":"overgrow","item":"choicescarf","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Unrecognized choice: 
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Pinsir doesn't have a move 0
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Pinsir doesn't have a move matching electricterrain
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: skip - missing other pokemon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You can't choose a target for Lava Plume
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Chomp|Rotom-Mow, L50|74/137
+|switch|p1b: Chomp|Rotom-Mow, L50|54/100
+|move|p2b: Staraptor|Bitter Blade|p1b: Chomp
+|-supereffective|p1b: Chomp|1
+|split|p1
+|-damage|p1b: Chomp|0 fnt
+|-damage|p1b: Chomp|0 fnt
+|split|p2
+|-heal|p2b: Staraptor|178/182|[from] drain|[of] p1b: Chomp
+|-heal|p2b: Staraptor|97/100|[from] drain|[of] p1b: Chomp
+|faint|p1b: Chomp
+|move|p1a: Pinsir|Gunk Shot|p1: Chomp|[notarget]
+|-fail|p1a: Pinsir
+|
+|upkeep
+|
+|t:|
+|split|p1
+|switch|p1b: Zoë|Barbaracle, L50, F|107/155
+|switch|p1b: Zoë|Barbaracle, L50, F|69/100
+|turn|15
+|
+|t:|
+|move|p2b: Staraptor|Teeter Dance|p1a: Pinsir|[spread] p1a,p1b
+|-start|p1a: Pinsir|confusion
+|-start|p1b: Zoë|confusion
+|-activate|p1a: Pinsir|confusion
+|move|p1a: Pinsir|Double Hit|p2b: Staraptor
+|split|p2
+|-damage|p2b: Staraptor|124/182
+|-damage|p2b: Staraptor|68/100
+|split|p2
+|-damage|p2b: Staraptor|76/182
+|-damage|p2b: Staraptor|41/100
+|-hitcount|p2b: Staraptor|2
+|-activate|p1b: Zoë|confusion
+|move|p1b: Zoë|Lava Plume|p2b: Staraptor|[spread] p1a,p2b
+|-supereffective|p1a: Pinsir|1
+|split|p1
+|-damage|p1a: Pinsir|0 fnt
+|-damage|p1a: Pinsir|0 fnt
+|split|p2
+|-damage|p2b: Staraptor|57/182
+|-damage|p2b: Staraptor|31/100
+|-status|p2b: Staraptor|brn
+|faint|p1a: Pinsir
+|
+|split|p2
+|-damage|p2b: Staraptor|46/182 brn|[from] brn
+|-damage|p2b: Staraptor|25/100 brn|[from] brn
+|upkeep
+|turn|16
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Gunk Shot","id":"gunkshot","pp":2,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Hit","id":"doublehit","pp":8,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Electric Terrain","id":"electricterrain","pp":9,"maxpp":12,"target":"all","disabled":false},{"move":"Lava Plume","id":"lavaplume","pp":14,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Instruct","id":"instruct","pp":12,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pinsir","details":"Pinsir-Mega, L50, F","condition":"0 fnt","active":true,"stats":{"atk":175,"def":140,"spa":106,"spd":146,"spe":125},"moves":["gunkshot","doublehit"],"baseAbility":"aerilate","item":"pinsirite","pokeball":"pokeball","ability":"aerilate","commanding":false,"reviving":false},{"ident":"p1: Zoë","details":"Barbaracle, L50, F","condition":"107/155","active":true,"stats":{"atk":152,"def":155,"spa":73,"spd":107,"spe":99},"moves":["electricterrain","lavaplume","instruct"],"baseAbility":"magnetpull","item":"damprock","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Rotom-Mow, L50","condition":"0 fnt","active":false,"stats":{"atk":85,"def":141,"spa":130,"spd":152,"spe":108},"moves":["destinybond"],"baseAbility":"levitate","item":"silverpowder","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, M","condition":"0 fnt","active":false,"stats":{"atk":74,"def":73,"spa":126,"spd":89,"spe":128},"moves":["disable","airslash","sweetkiss"],"baseAbility":"friendguard","item":"leftovers","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Trick-or-Treat","id":"trickortreat","pp":13,"maxpp":20,"target":"normal","disabled":false},{"move":"Thrash","id":"thrash","pp":12,"maxpp":12,"target":"randomNormal","disabled":false}]},{"moves":[{"move":"Teeter Dance","id":"teeterdance","pp":18,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":6,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Sableye, L50, M","condition":"0 fnt","active":true,"stats":{"atk":126,"def":87,"spa":104,"spd":94,"spe":81},"moves":["trickortreat","thrash"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false},{"ident":"p2: Staraptor","details":"Staraptor, L50, F","condition":"46/182 brn","active":true,"stats":{"atk":142,"def":94,"spa":65,"spd":89,"spe":157},"moves":["teeterdance","burningjealousy","bitterblade","hornleech"],"baseAbility":"intimidate","item":"staraptite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Delphox","details":"Delphox-Mega, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":92,"spa":197,"spd":161,"spe":157},"moves":["helpinghand","hypervoice","flyingpress","burningjealousy"],"baseAbility":"levitate","item":"delphoxite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Decidueye","details":"Decidueye, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":135,"def":95,"spa":150,"spd":122,"spe":91},"moves":["volttackle","moonlight"],"baseAbility":"overgrow","item":"choicescarf","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false}]}}
+@message
+update
+|
+|t:|
+|move|p2b: Staraptor|Horn Leech|p1b: Zoë
+|-supereffective|p1b: Zoë|2
+|split|p1
+|-damage|p1b: Zoë|53/155
+|-damage|p1b: Zoë|34/100
+|split|p2
+|-heal|p2b: Staraptor|73/182 brn|[from] drain|[of] p1b: Zoë
+|-heal|p2b: Staraptor|40/100 brn|[from] drain|[of] p1b: Zoë
+|-end|p1b: Zoë|confusion
+|move|p1b: Zoë|Instruct|p2b: Staraptor
+|-singleturn|p2b: Staraptor|move: Instruct|[of] p1b: Zoë
+|move|p2b: Staraptor|Horn Leech|p1b: Zoë
+|-supereffective|p1b: Zoë|2
+|split|p1
+|-damage|p1b: Zoë|0 fnt
+|-damage|p1b: Zoë|0 fnt
+|split|p2
+|-heal|p2b: Staraptor|100/182 brn|[from] drain|[of] p1b: Zoë
+|-heal|p2b: Staraptor|54/100 brn|[from] drain|[of] p1b: Zoë
+|faint|p1b: Zoë
+|
+|win|Bob
+@message
+end
+{"winner":"Bob","seed":"gen5,f83f9e4d9f5b34d0","turns":16,"p1":"Alice","p2":"Bob","p1team":[{"name":"Vivillon","species":"Vivillon-Continental","item":"Leftovers","ability":"Friend Guard","moves":["Disable","Air Slash","Sweet Kiss"],"nature":"Serious","evs":{"hp":2,"atk":2,"def":3,"spa":16,"spd":19,"spe":19},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Lycanroc-Dusk","item":"Choice Scarf","ability":"Tough Claws","moves":["Fickle Beam"],"nature":"Timid","evs":{"hp":0,"atk":28,"def":1,"spa":8,"spd":3,"spe":26},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pinsir","species":"Pinsir","item":"Pinsirite","ability":"Hyper Cutter","moves":["Gunk Shot","Double Hit"],"nature":"Sassy","evs":{"hp":8,"atk":0,"def":0,"spa":21,"spd":23,"spe":14},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Rotom-Mow","item":"Silver Powder","ability":"Levitate","moves":["Destiny Bond"],"nature":"Gentle","evs":{"hp":12,"atk":0,"def":30,"spa":5,"spd":12,"spe":2},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Nibbles","species":"Avalugg","item":"Wide Lens","ability":"Own Tempo","moves":["Raging Bull","Imprison"],"nature":"Brave","evs":{"hp":8,"atk":10,"def":7,"spa":0,"spd":3,"spe":11},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Zoë","species":"Barbaracle","item":"Damp Rock","ability":"Magnet Pull","moves":["Electric Terrain","Lava Plume","Instruct"],"nature":"Jolly","evs":{"hp":8,"atk":27,"def":20,"spa":8,"spd":1,"spe":2},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Delphox","species":"Delphox","item":"Delphoxite","ability":"Blaze","moves":["Helping Hand","Hyper Voice","Flying Press","Burning Jealousy"],"nature":"Quirky","evs":{"hp":3,"atk":22,"def":0,"spa":18,"spd":16,"spe":3},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Gourgeist","species":"Gourgeist-Large","item":"Colbur Berry","ability":"Frisk","moves":["Endeavor","Imprison","Metal Sound"],"nature":"Calm","evs":{"hp":15,"atk":1,"def":0,"spa":19,"spd":19,"spe":12},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Staraptor","species":"Staraptor","item":"Staraptite","ability":"Intimidate","moves":["Teeter Dance","Burning Jealousy","Bitter Blade","Horn Leech"],"nature":"Jolly","evs":{"hp":22,"atk":2,"def":4,"spa":3,"spd":9,"spe":23},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Mr. Bubbles","species":"Sableye","item":"","ability":"Prankster","moves":["Trick-or-Treat","Thrash"],"nature":"Mild","evs":{"hp":2,"atk":31,"def":2,"spa":10,"spd":9,"spe":11},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Decidueye","species":"Decidueye","item":"Choice Scarf","ability":"Overgrow","moves":["Volt Tackle","Moonlight"],"nature":"Hardy","evs":{"hp":24,"atk":8,"def":0,"spa":30,"spd":2,"spe":1},"gender":"F","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"X","species":"Pikachu","item":"","ability":"Static","moves":["Parabolic Charge"],"nature":"Quirky","evs":{"hp":3,"atk":6,"def":1,"spa":8,"spd":24,"spe":23},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[0,1],"inputLog":[">start {\"formatid\":\"gen9championsvgc2026regmb\",\"seed\":\"gen5,f83f9e4d9f5b34d0\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Delphox||Delphoxite|Blaze|HelpingHand,HyperVoice,FlyingPress,BurningJealousy|Quirky|3,22,,18,16,3|F|||50|,,,,,Poison]Gourgeist-Large||ColburBerry|Frisk|Endeavor,Imprison,MetalSound|Calm|15,1,,19,19,12|F|||50|,,,,,Steel]Staraptor||Staraptite|Intimidate|TeeterDance,BurningJealousy,BitterBlade,HornLeech|Jolly|22,2,4,3,9,23|F|||50|,,,,,Fighting]Mr. Bubbles|Sableye||Prankster|TrickorTreat,Thrash|Mild|2,31,2,10,9,11|M|||50|,,,,,Electric]Decidueye||ChoiceScarf|Overgrow|VoltTackle,Moonlight|Hardy|24,8,,30,2,1|F||S|50|,,,,,Rock]X|Pikachu||Static|ParabolicCharge|Quirky|3,6,1,8,24,23|M|||50|,,,,,Grass\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Vivillon|VivillonContinental|Leftovers|FriendGuard|Disable,AirSlash,SweetKiss|Serious|2,2,3,16,19,19|M|||50|,,,,,Electric]Big Tony's Pal|LycanrocDusk|ChoiceScarf|ToughClaws|FickleBeam|Timid|,28,1,8,3,26|F|||50|,,,,,Fighting]Pinsir||Pinsirite|HyperCutter|GunkShot,DoubleHit|Sassy|8,,,21,23,14|F|||50|,,,,,Dragon]Chomp|RotomMow|SilverPowder|Levitate|DestinyBond|Gentle|12,,30,5,12,2||||50|,,,,,Ice]Nibbles|Avalugg|WideLens|OwnTempo|RagingBull,Imprison|Brave|8,10,7,,3,11|F|||50|,,,,,Dragon]Zoë|Barbaracle|DampRock|MagnetPull|ElectricTerrain,LavaPlume,Instruct|Jolly|8,27,20,8,1,2|F|||50|,,,,,Ground\"}",">p1 team 3, 1, 4, 6",">p2 team 5, 4, 3, 1",">p1 switch 3, move sweetkiss -1",">p2 move moonlight, switch 4",">p1 move destinybond, move sweetkiss +1",">p2 move moonlight, move flyingpress +1",">p1 switch 3, move sweetkiss +1",">p2 move moonlight, move burningjealousy",">p1 move gunkshot -2 mega, move sweetkiss +2",">p2 move moonlight, switch 3",">p1 pass, switch 4",">p1 move doublehit +1, move instruct -1",">p2 move moonlight, switch 3",">p2 switch 4, pass",">p1 move gunkshot +2, move electricterrain",">p2 move trickortreat -2, move flyingpress +2 mega",">p1 move gunkshot +1, move instruct +2",">p2 move trickortreat +2, move flyingpress +1",">p1 move doublehit +2, move instruct +2",">p2 move trickortreat -2, move flyingpress -1",">p2 pass, switch 3",">p1 move gunkshot, move electricterrain",">p2 move trickortreat +2, move burningjealousy",">p1 move gunkshot +1, move instruct -1",">p2 move trickortreat, move teeterdance",">p1 switch 3, move lavaplume",">p2 move trickortreat -2, move hornleech -1",">p1 move destinybond, move instruct +2",">p2 pass, move hornleech +1",">p1 switch 3, move electricterrain",">p2 pass, move burningjealousy",">p1 move gunkshot -2, switch 3",">p2 pass, move bitterblade +2",">p1 pass, switch 3",">p1 move doublehit +2, move lavaplume",">p2 pass, move teeterdance",">p1 pass, move instruct +2",">p2 pass, move hornleech +2"]}

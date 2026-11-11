@@ -1,0 +1,589 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 5cfa 71e7 50b3 75ce
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Garganacl (F) @ Leftovers
+Ability: Purifying Salt
+Level: 50
+Shiny: Yes
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Stone Edge
+- Stealth Rock
+- Recover
+- Body Press
+
+Emboar-Mega (F) @ Emboarite
+Ability: Reckless
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Flare Blitz
+- Drain Punch
+- Flame Charge
+- Bulk Up
+
+X (Pangoro) (F) @ Choice Scarf
+Ability: Iron Fist
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Gunk Shot
+- Knock Off
+- Drain Punch
+- Headlong Rush
+
+Hydrapple (M) @ Rocky Helmet
+Ability: Regenerator
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Leaf Storm
+- Earth Power
+- Recover
+- Fickle Beam
+
+Furfrou (F) @ Chesto Berry
+Ability: Fur Coat
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Double-Edge
+- Cotton Guard
+- Rest
+- Crunch
+
+Baxcalibur (M) @ Baxcalibrite
+Ability: Thermal Exchange
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Earthquake
+- Dragon Dance
+- Icicle Crash
+- Glaive Rush
+end
+team p2
+Gyarados (M) @ Life Orb
+Ability: Intimidate
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Waterfall
+- Dragon Dance
+- Power Whip
+- Temper Flare
+
+Infernape (M) @ Choice Scarf
+Ability: Blaze
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Knock Off
+- Flare Blitz
+- U-turn
+- Close Combat
+
+X (Empoleon) (M) @ Leftovers
+Ability: Competitive
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Bold Nature
+- Roost
+- Stealth Rock
+- Ice Beam
+- Surf
+
+Tyranitar-Mega (M) @ Tyranitarite
+Ability: Sand Stream
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Earthquake
+- Dragon Dance
+- Stone Edge
+- Knock Off
+
+Garchomp (M) @ Garchompite Z
+Ability: Rough Skin
+Level: 50
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Iron Head
+- Draco Meteor
+- Fire Blast
+- Earthquake
+
+Zoë (Farfetch’d) (F) @ Leek
+Ability: Defiant
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Close Combat
+- Slash
+- Brave Bird
+- Swords Dance
+end
+choice p1 team 3125
+choice p2 team 2531
+choice p1 move 1 2, move 2
+choice p2 move 2 1, switch 4
+choice p1 move 1 2, move 1 1
+choice p2 default
+choice p2 pass, switch 4
+choice p1 move 1 1, move 4 -1
+choice p2 switch 3, move 4 mega
+choice p1 switch 4, pass
+choice p2 move 3 -2, move 1 1
+choice p1 move Double-Edge -2,move Body Press 2
+choice p2 move 2, move 3 -1
+choice p1 move crunch -2, move bodypress -1
+choice p2 move 2,move 1 +1
+choice p1 move 2 ,  move stoneedge 1
+choice p2 move 3 1, move 3 -1
+choice p1 switch 3, move 1 -1
+choice p2 move Ice Beam -2, move Fire Blast 1
+choice p1 move 3 1, move 4 1
+choice p2 pass, switch 3
+choice p1 default
+choice p2 default
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Garganacl, L50, F, shiny|
+expect |poke|p1|Emboar, L50, F|
+expect |poke|p1|Pangoro, L50, F|
+expect |poke|p1|Hydrapple, L50, M|
+expect |poke|p1|Furfrou, L50, F|
+expect |poke|p1|Baxcalibur, L50, M|
+expect |poke|p2|Gyarados, L50, M|
+expect |poke|p2|Infernape, L50, M|
+expect |poke|p2|Empoleon, L50, M|
+expect |poke|p2|Tyranitar, L50, M, shiny|
+expect |poke|p2|Garchomp, L50, M|
+expect |poke|p2|Farfetch’d, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: X|Pangoro, L50, F|172/172
+expect |switch|p1a: X|Pangoro, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Garganacl|Garganacl, L50, F, shiny|207/207
+expect |switch|p1b: Garganacl|Garganacl, L50, F, shiny|100/100
+expect |split|p2
+expect |switch|p2a: Infernape|Infernape, L50, M|153/153
+expect |switch|p2a: Infernape|Infernape, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Garchomp|Garchomp, L50, M|215/215
+expect |switch|p2b: Garchomp|Garchomp, L50, M|100/100
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Gyarados|Gyarados, L50, M|172/172
+expect |switch|p2b: Gyarados|Gyarados, L50, M|100/100
+expect |-ability|p2b: Gyarados|Intimidate|boost
+expect |-unboost|p1a: X|atk|1
+expect |-unboost|p1b: Garganacl|atk|1
+expect |rng|2|0
+expect |move|p2a: Infernape|Flare Blitz|p1a: X
+expect |rng|100|50
+expect |rng|24|10
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: X|57/172
+expect |-damage|p1a: X|33/100
+expect |rng|100|33
+expect |split|p2
+expect |-damage|p2a: Infernape|115/153|[from] Recoil
+expect |-damage|p2a: Infernape|75/100|[from] Recoil
+expect |rng|2|1
+expect |move|p1a: X|Gunk Shot|p2b: Gyarados
+expect |rng|100|50
+expect |rng|24|16
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Gyarados|113/172
+expect |-damage|p2b: Gyarados|65/100
+expect |rng|100|50
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Garganacl|Stealth Rock|p2a: Infernape
+expect |-sidestart|p2: p2|move: Stealth Rock
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2a: Infernape|Flare Blitz|p1b: Garganacl
+expect |rng|100|45
+expect |rng|24|15
+expect |rng|16|6
+expect |-resisted|p1b: Garganacl|1
+expect |split|p1
+expect |-damage|p1b: Garganacl|168/207
+expect |-damage|p1b: Garganacl|81/100
+expect |rng|100|38
+expect |split|p2
+expect |-damage|p2a: Infernape|102/153|[from] Recoil
+expect |-damage|p2a: Infernape|66/100|[from] Recoil
+expect |move|p1a: X|Gunk Shot|p2b: Gyarados
+expect |rng|100|76
+expect |rng|24|0
+expect |rng|16|5
+expect |-crit|p2b: Gyarados
+expect |split|p2
+expect |-damage|p2b: Gyarados|0 fnt
+expect |-damage|p2b: Gyarados|0 fnt
+expect |rng|100|36
+expect |faint|p2b: Gyarados
+expect |move|p1b: Garganacl|Stone Edge|p2a: Infernape|[miss]
+expect |rng|100|94
+expect |-miss|p1b: Garganacl|p2a: Infernape
+expect |
+expect |split|p1
+expect |-heal|p1b: Garganacl|180/207|[from] item: Leftovers
+expect |-heal|p1b: Garganacl|86/100|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Garchomp|Garchomp, L50, M|215/215
+expect |switch|p2b: Garchomp|Garchomp, L50, M|100/100
+expect |split|p2
+expect |-damage|p2b: Garchomp|202/215|[from] Stealth Rock
+expect |-damage|p2b: Garchomp|93/100|[from] Stealth Rock
+expect |turn|3
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Empoleon, L50, M|191/191
+expect |switch|p2a: X|Empoleon, L50, M|100/100
+expect |split|p2
+expect |-damage|p2a: X|180/191|[from] Stealth Rock
+expect |-damage|p2a: X|94/100|[from] Stealth Rock
+expect |detailschange|p2b: Garchomp|Garchomp-Mega-Z, L50, M
+expect |-mega|p2b: Garchomp|Garchomp|Garchompite Z
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Garchomp|Earthquake|p1b: Garganacl|[spread] p2a,p1a,p1b
+expect |rng|100|96
+expect |rng|100|74
+expect |rng|100|1
+expect |rng|24|17
+expect |rng|16|13
+expect |-supereffective|p2a: X|1
+expect |rng|24|17
+expect |rng|16|11
+expect |rng|24|2
+expect |rng|16|9
+expect |-supereffective|p1b: Garganacl|1
+expect |split|p2
+expect |-damage|p2a: X|122/191
+expect |-damage|p2a: X|63/100
+expect |split|p1
+expect |-damage|p1a: X|17/172
+expect |-damage|p1a: X|9/100
+expect |split|p1
+expect |-damage|p1b: Garganacl|124/207
+expect |-damage|p1b: Garganacl|59/100
+expect |move|p1a: X|Gunk Shot|p2a: X
+expect |-immune|p2a: X
+expect |move|p1b: Garganacl|Body Press|p1a: X
+expect |rng|100|20
+expect |rng|24|7
+expect |rng|16|13
+expect |-supereffective|p1a: X|1
+expect |split|p1
+expect |-damage|p1a: X|0 fnt
+expect |-damage|p1a: X|0 fnt
+expect |faint|p1a: X
+expect |
+expect |split|p2
+expect |-heal|p2a: X|133/191|[from] item: Leftovers
+expect |-heal|p2a: X|69/100|[from] item: Leftovers
+expect |split|p1
+expect |-heal|p1b: Garganacl|136/207|[from] item: Leftovers
+expect |-heal|p1b: Garganacl|65/100|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Furfrou|Furfrou, L50, F|182/182
+expect |switch|p1a: Furfrou|Furfrou, L50, F|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2b: Garchomp|Iron Head|p1a: Furfrou
+expect |rng|100|32
+expect |rng|24|13
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Furfrou|153/182
+expect |-damage|p1a: Furfrou|84/100
+expect |rng|100|74
+expect |move|p1a: Furfrou|Double-Edge|p1b: Garganacl
+expect |rng|100|54
+expect |rng|24|15
+expect |rng|16|15
+expect |-resisted|p1b: Garganacl|1
+expect |split|p1
+expect |-damage|p1b: Garganacl|103/207
+expect |-damage|p1b: Garganacl|49/100
+expect |split|p1
+expect |-damage|p1a: Furfrou|142/182|[from] Recoil
+expect |-damage|p1a: Furfrou|78/100|[from] Recoil
+expect |move|p2a: X|Ice Beam|p2b: Garchomp
+expect |rng|100|58
+expect |rng|24|8
+expect |rng|16|9
+expect |-supereffective|p2b: Garchomp|1
+expect |split|p2
+expect |-damage|p2b: Garchomp|110/215
+expect |-damage|p2b: Garchomp|51/100
+expect |rng|100|53
+expect |move|p1b: Garganacl|Body Press|p2b: Garchomp
+expect |rng|100|15
+expect |rng|24|14
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2b: Garchomp|65/215
+expect |-damage|p2b: Garchomp|30/100
+expect |
+expect |split|p2
+expect |-heal|p2a: X|144/191|[from] item: Leftovers
+expect |-heal|p2a: X|75/100|[from] item: Leftovers
+expect |split|p1
+expect |-heal|p1b: Garganacl|115/207|[from] item: Leftovers
+expect |-heal|p1b: Garganacl|55/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Garchomp|Fire Blast|p2a: X|[miss]
+expect |rng|100|86
+expect |-miss|p2b: Garchomp|p2a: X
+expect |rng|2|1
+expect |move|p1a: Furfrou|Crunch|p1b: Garganacl
+expect |rng|100|9
+expect |rng|24|21
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Garganacl|80/207
+expect |-damage|p1b: Garganacl|38/100
+expect |rng|100|79
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: X|Stealth Rock|p1a: Furfrou
+expect |-sidestart|p1: p1|move: Stealth Rock
+expect |move|p1b: Garganacl|Body Press|p1a: Furfrou
+expect |rng|100|46
+expect |rng|24|8
+expect |rng|16|14
+expect |-supereffective|p1a: Furfrou|1
+expect |split|p1
+expect |-damage|p1a: Furfrou|84/182
+expect |-damage|p1a: Furfrou|46/100
+expect |
+expect |split|p2
+expect |-heal|p2a: X|155/191|[from] item: Leftovers
+expect |-heal|p2a: X|81/100|[from] item: Leftovers
+expect |split|p1
+expect |-heal|p1b: Garganacl|92/207|[from] item: Leftovers
+expect |-heal|p1b: Garganacl|44/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|6
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Garchomp|Iron Head|p1a: Furfrou
+expect |rng|100|46
+expect |rng|24|20
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Furfrou|59/182
+expect |-damage|p1a: Furfrou|32/100
+expect |rng|100|29
+expect |rng|2|0
+expect |move|p1a: Furfrou|Cotton Guard|p1a: Furfrou
+expect |-boost|p1a: Furfrou|def|3
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: X|Stealth Rock||[still]
+expect |-fail|p2a: X
+expect |move|p1b: Garganacl|Stone Edge|p2a: X
+expect |rng|100|28
+expect |rng|8|1
+expect |rng|16|9
+expect |-resisted|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|131/191
+expect |-damage|p2a: X|68/100
+expect |
+expect |split|p2
+expect |-heal|p2a: X|142/191|[from] item: Leftovers
+expect |-heal|p2a: X|74/100|[from] item: Leftovers
+expect |split|p1
+expect |-heal|p1b: Garganacl|104/207|[from] item: Leftovers
+expect |-heal|p1b: Garganacl|50/100g|[from] item: Leftovers
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Emboar|Emboar, L50, F|217/217
+expect |switch|p1a: Emboar|Emboar, L50, F|100/100
+expect |split|p1
+expect |-damage|p1a: Emboar|190/217|[from] Stealth Rock
+expect |-damage|p1a: Emboar|87/100|[from] Stealth Rock
+expect |move|p2b: Garchomp|Fire Blast|p2a: X
+expect |rng|100|9
+expect |rng|24|6
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: X|93/191
+expect |-damage|p2a: X|48/100
+expect |rng|100|44
+expect |move|p2a: X|Ice Beam|p1a: Emboar
+expect |rng|100|79
+expect |rng|24|20
+expect |rng|16|1
+expect |-resisted|p1a: Emboar|1
+expect |split|p1
+expect |-damage|p1a: Emboar|159/217
+expect |-damage|p1a: Emboar|73/100
+expect |rng|100|29
+expect |move|p1b: Garganacl|Stone Edge|p1a: Emboar
+expect |rng|100|77
+expect |rng|8|5
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Emboar|81/217
+expect |-damage|p1a: Emboar|37/100
+expect |
+expect |split|p2
+expect |-heal|p2a: X|104/191|[from] item: Leftovers
+expect |-heal|p2a: X|54/100|[from] item: Leftovers
+expect |split|p1
+expect |-heal|p1b: Garganacl|116/207|[from] item: Leftovers
+expect |-heal|p1b: Garganacl|56/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2b: Garchomp|Fire Blast|p1a: Emboar
+expect |rng|100|63
+expect |rng|24|2
+expect |rng|16|10
+expect |-resisted|p1a: Emboar|1
+expect |split|p1
+expect |-damage|p1a: Emboar|40/217
+expect |-damage|p1a: Emboar|18/100
+expect |rng|100|40
+expect |move|p1a: Emboar|Flame Charge|p2a: X
+expect |rng|100|99
+expect |rng|24|6
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: X|59/191
+expect |-damage|p2a: X|30/100
+expect |rng|100|96
+expect |-boost|p1a: Emboar|spe|1
+expect |move|p2a: X|Ice Beam|p2b: Garchomp
+expect |rng|100|95
+expect |rng|24|0
+expect |rng|16|0
+expect |-supereffective|p2b: Garchomp|1
+expect |-crit|p2b: Garchomp
+expect |split|p2
+expect |-damage|p2b: Garchomp|0 fnt
+expect |-damage|p2b: Garchomp|0 fnt
+expect |rng|100|2
+expect |faint|p2b: Garchomp
+expect |move|p1b: Garganacl|Body Press|p2a: X
+expect |rng|100|13
+expect |rng|24|13
+expect |rng|16|4
+expect |-supereffective|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|0 fnt
+expect |-damage|p2a: X|0 fnt
+expect |faint|p2a: X
+expect |
+expect |split|p1
+expect |-heal|p1b: Garganacl|128/207|[from] item: Leftovers
+expect |-heal|p1b: Garganacl|61/100|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Infernape|Infernape, L50, M|102/153
+expect |switch|p2b: Infernape|Infernape, L50, M|66/100
+expect |split|p2
+expect |-damage|p2b: Infernape|83/153|[from] Stealth Rock
+expect |-damage|p2b: Infernape|54/100|[from] Stealth Rock
+expect |turn|9
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2b: Infernape|Knock Off|p1b: Garganacl
+expect |rng|100|72
+expect |rng|24|17
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Garganacl|84/207
+expect |-damage|p1b: Garganacl|40/100
+expect |-enditem|p1b: Garganacl|Leftovers|[from] move: Knock Off|[of] p2b: Infernape
+expect |move|p1a: Emboar|Flare Blitz|p2b: Infernape
+expect |rng|100|77
+expect |rng|24|14
+expect |rng|16|12
+expect |-resisted|p2b: Infernape|1
+expect |split|p2
+expect |-damage|p2b: Infernape|0 fnt
+expect |-damage|p2b: Infernape|0 fnt
+expect |rng|100|62
+expect |faint|p2b: Infernape
+expect |split|p1
+expect |-damage|p1a: Emboar|13/217|[from] Recoil
+expect |-damage|p1a: Emboar|5/100|[from] Recoil
+expect |
+expect |win|p1

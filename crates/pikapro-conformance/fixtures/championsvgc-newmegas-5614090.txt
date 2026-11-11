@@ -1,0 +1,662 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 2fdf 8c8a 9097 7836
+genders drawn
+team p1
+Sir Hops-a-Lot (Hatterene) (F) @ Choice Scarf
+Ability: Magic Bounce
+Level: 50
+Tera Type: Dragon
+EVs: 11 HP / 2 Atk / 11 Def / 13 SpA / 9 SpD / 12 Spe
+Rash Nature
+- Milk Drink
+- Freeze-Dry
+- Leech Seed
+- Vacuum Wave
+
+Pikachu (Golisopod) @ Golisopite
+Ability: Emergency Exit
+Level: 50
+Tera Type: Dark
+EVs: 6 HP / 10 Atk / 19 Def / 9 SpA / 10 SpD
+Relaxed Nature
+- Boomburst
+- Mega Kick
+- Recover
+- Blast Burn
+
+Nibbles (Simisear) @ Zoom Lens
+Ability: Gluttony
+Level: 50
+Tera Type: Rock
+EVs: 8 HP / 1 Atk / 18 Def / 22 SpA / 11 SpD / 4 Spe
+Careful Nature
+- Frost Breath
+
+Sparky (Absol) @ Absolite Z
+Ability: Pressure
+Level: 50
+Tera Type: Poison
+EVs: 14 HP / 1 Atk / 5 Def / 21 SpA / 6 SpD / 16 Spe
+Bashful Nature
+- Shadow Sneak
+
+Mudsdale (F)
+Ability: Stamina
+Level: 50
+Shiny: Yes
+Tera Type: Psychic
+EVs: 20 HP / 11 Atk / 1 SpA / 24 SpD / 10 Spe
+Impish Nature
+- Gravity
+
+Azumarill (M) @ Shuca Berry
+Ability: Thick Fat
+Level: 50
+Tera Type: Fighting
+EVs: 28 HP / 3 Atk / 2 Def / 1 SpA / 23 SpD / 9 Spe
+Adamant Nature
+- Dynamic Punch
+- Ice Fang
+- Thunder Punch
+- Fickle Beam
+end
+team p2
+Baxcalibur @ Baxcalibrite
+Ability: Thermal Exchange
+Level: 50
+Tera Type: Grass
+EVs: 16 HP / 3 Def / 26 SpA / 5 SpD / 6 Spe
+Hardy Nature
+- Court Change
+
+Big Tony's Pal (Salamence) @ Salamencite
+Ability: Intimidate
+Level: 50
+Tera Type: Fire
+EVs: 17 HP / 6 Atk / 6 Def / 5 SpA / 3 SpD / 3 Spe
+Brave Nature
+- Outrage
+- Parting Shot
+
+Zoë (Typhlosion-Hisui) (F) @ Yache Berry
+Ability: Frisk
+Level: 50
+Tera Type: Stellar
+EVs: 29 HP / 3 Def / 14 SpA / 11 SpD / 4 Spe
+Sassy Nature
+- Discharge
+
+Nibbles (Victreebel) (F)
+Ability: Gluttony
+Level: 50
+Tera Type: Poison
+EVs: 9 HP / 26 Atk / 4 Def / 1 SpA / 26 Spe
+Hardy Nature
+- Population Bomb
+
+Sir Hops-a-Lot (Slowbro-Galar) (F)
+Ability: Regenerator
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 18 HP / 7 Atk / 5 Def / 1 SpA / 4 SpD / 26 Spe
+Careful Nature
+- Sticky Web
+- Mystical Fire
+- Reflect
+- Snap Trap
+
+X (Toxicroak)
+Ability: Dry Skin
+Level: 50
+Tera Type: Fire
+EVs: 16 HP / 25 SpA / 25 Spe
+Naughty Nature
+- Crabhammer
+- Magnet Rise
+end
+choice p1 team 3614
+choice p2 team 6314
+choice p1 move 1 2, move 4 -1
+choice p2 move 1 -2, move 1
+choice p1 switch 3, move 3 1
+choice p2 move 1 -2, switch 3
+choice p1 switch 4, move 1 1
+choice p2 move 1 1,switch Nibbles
+choice p1 move 1 1, switch 3
+choice p2 move 2, switch 3
+choice p1 move 1 -2 mega, switch 3
+choice p2 move 1 1, switch 3
+choice p1 switch 3, pass
+choice p2 move magnetrise ,  move populationbomb -1
+choice p1 move 1 2, move 1 -1
+choice p2 switch 3, pass
+choice p1 switch 4, move 3 -1
+choice p2 move Discharge ,  move 1 +1
+choice p1 move 2 2, move 4 2
+choice p2 switch 4, move 1 1
+choice p1 switch 4, pass
+choice p2 move 1 mega, switch 4
+choice p1 default
+choice p2 move 1, move 1
+choice p1 move 1 2, move 2 -1
+choice p2 move 1, move 1
+choice p1 move 1 1, pass
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Hatterene, L50, F|
+expect |poke|p1|Golisopod, L50, M|
+expect |poke|p1|Simisear, L50, M|
+expect |poke|p1|Absol, L50, F|
+expect |poke|p1|Mudsdale, L50, F, shiny|
+expect |poke|p1|Azumarill, L50, M|
+expect |poke|p2|Baxcalibur, L50, F|
+expect |poke|p2|Salamence, L50, F|
+expect |poke|p2|Typhlosion-Hisui, L50, F|
+expect |poke|p2|Victreebel, L50, F|
+expect |poke|p2|Slowbro-Galar, L50, F, shiny|
+expect |poke|p2|Toxicroak, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Nibbles|Simisear, L50, M|158/158
+expect |switch|p1a: Nibbles|Simisear, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Azumarill|Azumarill, L50, M|203/203
+expect |switch|p1b: Azumarill|Azumarill, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: X|Toxicroak, L50, F|174/174
+expect |switch|p2a: X|Toxicroak, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Zoë|Typhlosion-Hisui, L50, F|177/177
+expect |switch|p2b: Zoë|Typhlosion-Hisui, L50, F|100/100
+expect |-item|p1a: Nibbles|Zoom Lens|[from] ability: Frisk|[of] p2b: Zoë
+expect |-item|p1b: Azumarill|Shuca Berry|[from] ability: Frisk|[of] p2b: Zoë
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2a: X|Crabhammer|p2b: Zoë
+expect |rng|100|27
+expect |rng|8|6
+expect |rng|16|9
+expect |-supereffective|p2b: Zoë|1
+expect |split|p2
+expect |-damage|p2b: Zoë|65/177
+expect |-damage|p2b: Zoë|36/100
+expect |rng|2|0
+expect |move|p1a: Nibbles|Frost Breath|p2b: Zoë
+expect |rng|100|30
+expect |rng|16|7
+expect |-resisted|p2b: Zoë|1
+expect |-crit|p2b: Zoë
+expect |split|p2
+expect |-damage|p2b: Zoë|46/177
+expect |-damage|p2b: Zoë|25/100
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Zoë|Discharge|p1a: Nibbles|[spread] p2a,p1a,p1b
+expect |rng|100|35
+expect |rng|100|25
+expect |rng|100|77
+expect |rng|24|0
+expect |rng|16|4
+expect |-crit|p2a: X
+expect |rng|24|17
+expect |rng|16|7
+expect |rng|24|15
+expect |rng|16|10
+expect |-supereffective|p1b: Azumarill|1
+expect |split|p2
+expect |-damage|p2a: X|97/174
+expect |-damage|p2a: X|55/100
+expect |split|p1
+expect |-damage|p1a: Nibbles|121/158
+expect |-damage|p1a: Nibbles|76/100
+expect |split|p1
+expect |-damage|p1b: Azumarill|143/203
+expect |-damage|p1b: Azumarill|70/100
+expect |rng|100|69
+expect |rng|100|17
+expect |-status|p1a: Nibbles|par
+expect |rng|100|44
+expect |move|p1b: Azumarill|Fickle Beam|p1a: Nibbles
+expect |rng|100|39
+expect |rng|24|7
+expect |rng|10|8
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Nibbles|97/158 par
+expect |-damage|p1a: Nibbles|61/100 par
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Baxcalibur|Baxcalibur, L50, F|206/206
+expect |switch|p2b: Baxcalibur|Baxcalibur, L50, F|100/100
+expect |split|p1
+expect |switch|p1a: Sir Hops-a-Lot|Hatterene, L50, F|143/143
+expect |switch|p1a: Sir Hops-a-Lot|Hatterene, L50, F|100/100
+expect |move|p2a: X|Crabhammer|p2b: Baxcalibur
+expect |rng|100|9
+expect |rng|8|2
+expect |rng|16|12
+expect |-resisted|p2b: Baxcalibur|1
+expect |split|p2
+expect |-damage|p2b: Baxcalibur|183/206
+expect |-damage|p2b: Baxcalibur|88/100
+expect |move|p1b: Azumarill|Thunder Punch|p2a: X
+expect |rng|100|70
+expect |rng|24|4
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: X|68/174
+expect |-damage|p2a: X|39/100
+expect |rng|100|80
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Nibbles|Victreebel, L50, F|164/164
+expect |switch|p2b: Nibbles|Victreebel, L50, F|100/100
+expect |split|p1
+expect |switch|p1a: Sparky|Absol, L50, F|154/154
+expect |switch|p1a: Sparky|Absol, L50, F|100/100
+expect |-ability|p1a: Sparky|Pressure
+expect |move|p2a: X|Crabhammer|p1a: Sparky
+expect |rng|100|1
+expect |rng|8|0
+expect |rng|16|14
+expect |-crit|p1a: Sparky
+expect |split|p1
+expect |-damage|p1a: Sparky|61/154
+expect |-damage|p1a: Sparky|39/100
+expect |move|p1b: Azumarill|Dynamic Punch|p2a: X
+expect |rng|100|34
+expect |rng|24|16
+expect |rng|16|9
+expect |-resisted|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|49/174
+expect |-damage|p2a: X|28/100
+expect |rng|100|22
+expect |-start|p2a: X|confusion
+expect |rng|4|2
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zoë|Typhlosion-Hisui, L50, F|46/177
+expect |switch|p2b: Zoë|Typhlosion-Hisui, L50, F|25/100
+expect |-item|p1a: Sparky|Absolite Z|[from] ability: Frisk|[of] p2b: Zoë
+expect |-item|p1b: Azumarill|Shuca Berry|[from] ability: Frisk|[of] p2b: Zoë
+expect |split|p1
+expect |switch|p1b: Nibbles|Simisear, L50, M|97/158 par
+expect |switch|p1b: Nibbles|Simisear, L50, M|61/100 par
+expect |move|p1a: Sparky|Shadow Sneak|p2a: X
+expect |rng|100|92
+expect |rng|24|9
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: X|18/174
+expect |-damage|p2a: X|10/100
+expect |-activate|p2a: X|confusion
+expect |rng|100|58
+expect |move|p2a: X|Magnet Rise|p2a: X
+expect |-start|p2a: X|Magnet Rise
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Nibbles|Victreebel, L50, F|164/164
+expect |switch|p2b: Nibbles|Victreebel, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Azumarill|Azumarill, L50, M|143/203
+expect |switch|p1b: Azumarill|Azumarill, L50, M|70/100
+expect |detailschange|p1a: Sparky|Absol-Mega-Z, L50, F
+expect |-mega|p1a: Sparky|Absol|Absolite Z
+expect |move|p1a: Sparky|Shadow Sneak|p1b: Azumarill
+expect |rng|100|22
+expect |rng|24|18
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1b: Azumarill|98/203
+expect |-damage|p1b: Azumarill|48/100
+expect |-activate|p2a: X|confusion
+expect |rng|100|47
+expect |move|p2a: X|Crabhammer|p1a: Sparky
+expect |rng|100|57
+expect |rng|8|3
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Sparky|0 fnt
+expect |-damage|p1a: Sparky|0 fnt
+expect |faint|p1a: Sparky
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Nibbles|Simisear, L50, M|97/158 par
+expect |switch|p1a: Nibbles|Simisear, L50, M|61/100 par
+expect |turn|6
+expect |
+expect |t:|
+expect |-activate|p2a: X|confusion
+expect |rng|100|75
+expect |move|p2a: X|Magnet Rise||[still]
+expect |-fail|p2a: X
+expect |move|p2b: Nibbles|Population Bomb|p2a: X
+expect |rng|100|79
+expect |rng|24|19
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: X|3/174
+expect |-damage|p2a: X|1/100
+expect |rng|100|22
+expect |rng|24|1
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: X|0 fnt
+expect |-damage|p2a: X|0 fnt
+expect |faint|p2a: X
+expect |-hitcount|p2: X|2
+expect |move|p1b: Azumarill|Dynamic Punch|p1a: Nibbles
+expect |rng|100|40
+expect |rng|24|3
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Nibbles|65/158 par
+expect |-damage|p1a: Nibbles|41/100 par
+expect |rng|100|72
+expect |-start|p1a: Nibbles|confusion
+expect |rng|4|1
+expect |-activate|p1a: Nibbles|confusion
+expect |rng|100|62
+expect |rng|8|6
+expect |move|p1a: Nibbles|Frost Breath|p2b: Nibbles
+expect |rng|100|26
+expect |rng|16|6
+expect |-supereffective|p2b: Nibbles|1
+expect |-crit|p2b: Nibbles
+expect |split|p2
+expect |-damage|p2b: Nibbles|58/164
+expect |-damage|p2b: Nibbles|35/100
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoë|Typhlosion-Hisui, L50, F|46/177
+expect |switch|p2a: Zoë|Typhlosion-Hisui, L50, F|25/100
+expect |-item|p1a: Nibbles|Zoom Lens|[from] ability: Frisk|[of] p2a: Zoë
+expect |-item|p1b: Azumarill|Shuca Berry|[from] ability: Frisk|[of] p2a: Zoë
+expect |turn|7
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sir Hops-a-Lot|Hatterene, L50, F|143/143
+expect |switch|p1a: Sir Hops-a-Lot|Hatterene, L50, F|100/100
+expect |rng|2|1
+expect |move|p2b: Nibbles|Population Bomb|p1a: Sir Hops-a-Lot
+expect |rng|100|35
+expect |rng|24|15
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|132/143
+expect |-damage|p1a: Sir Hops-a-Lot|92/100
+expect |rng|100|76
+expect |rng|24|21
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|121/143
+expect |-damage|p1a: Sir Hops-a-Lot|84/100
+expect |rng|100|34
+expect |rng|24|20
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|110/143
+expect |-damage|p1a: Sir Hops-a-Lot|76/100
+expect |rng|100|94
+expect |-hitcount|p1a: Sir Hops-a-Lot|3
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Zoë|Discharge|p1b: Azumarill|[spread] p2b,p1a,p1b
+expect |rng|100|83
+expect |rng|100|78
+expect |rng|100|38
+expect |rng|24|3
+expect |rng|16|14
+expect |-resisted|p2b: Nibbles|1
+expect |rng|24|11
+expect |rng|16|9
+expect |rng|24|5
+expect |rng|16|1
+expect |-supereffective|p1b: Azumarill|1
+expect |split|p2
+expect |-damage|p2b: Nibbles|39/164
+expect |-damage|p2b: Nibbles|23/100
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|79/143
+expect |-damage|p1a: Sir Hops-a-Lot|55/100
+expect |split|p1
+expect |-damage|p1b: Azumarill|32/203
+expect |-damage|p1b: Azumarill|15/100
+expect |rng|100|0
+expect |-status|p2b: Nibbles|par
+expect |rng|100|25
+expect |-status|p1a: Sir Hops-a-Lot|par
+expect |rng|100|86
+expect |move|p1b: Azumarill|Thunder Punch|p1a: Sir Hops-a-Lot
+expect |rng|100|80
+expect |rng|24|5
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|59/143 par
+expect |-damage|p1a: Sir Hops-a-Lot|41/100 par
+expect |rng|100|56
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Baxcalibur|Baxcalibur, L50, F|183/206
+expect |switch|p2a: Baxcalibur|Baxcalibur, L50, F|88/100
+expect |move|p1b: Azumarill|Fickle Beam|p2b: Nibbles
+expect |rng|100|43
+expect |rng|24|17
+expect |rng|10|4
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Nibbles|12/164 par
+expect |-damage|p2b: Nibbles|7/100 par
+expect |rng|8|3
+expect |move|p2b: Nibbles|Population Bomb|p1a: Sir Hops-a-Lot
+expect |rng|100|15
+expect |rng|24|16
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|47/143 par
+expect |-damage|p1a: Sir Hops-a-Lot|32/100 par
+expect |rng|100|9
+expect |rng|24|11
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|37/143 par
+expect |-damage|p1a: Sir Hops-a-Lot|25/100 par
+expect |rng|100|30
+expect |rng|24|4
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|26/143 par
+expect |-damage|p1a: Sir Hops-a-Lot|18/100 par
+expect |rng|100|35
+expect |rng|24|4
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|15/143 par
+expect |-damage|p1a: Sir Hops-a-Lot|10/100 par
+expect |rng|100|64
+expect |rng|24|17
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|4/143 par
+expect |-damage|p1a: Sir Hops-a-Lot|2/100 par
+expect |rng|100|28
+expect |rng|24|20
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|0 fnt
+expect |-damage|p1a: Sir Hops-a-Lot|0 fnt
+expect |faint|p1a: Sir Hops-a-Lot
+expect |-hitcount|p1: Sir Hops-a-Lot|6
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Nibbles|Simisear, L50, M|65/158 par
+expect |switch|p1a: Nibbles|Simisear, L50, M|41/100 par
+expect |turn|9
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zoë|Typhlosion-Hisui, L50, F|46/177
+expect |switch|p2b: Zoë|Typhlosion-Hisui, L50, F|25/100
+expect |-item|p1a: Nibbles|Zoom Lens|[from] ability: Frisk|[of] p2b: Zoë
+expect |-item|p1b: Azumarill|Shuca Berry|[from] ability: Frisk|[of] p2b: Zoë
+expect |detailschange|p2a: Baxcalibur|Baxcalibur-Mega, L50, F
+expect |-mega|p2a: Baxcalibur|Baxcalibur|Baxcalibrite
+expect |move|p2a: Baxcalibur|Court Change||[still]
+expect |-fail|p2a: Baxcalibur
+expect |move|p1b: Azumarill|Dynamic Punch|p2b: Zoë
+expect |-immune|p2b: Zoë
+expect |rng|8|1
+expect |move|p1a: Nibbles|Frost Breath|p2a: Baxcalibur
+expect |rng|100|96
+expect |rng|16|1
+expect |-crit|p2a: Baxcalibur
+expect |split|p2
+expect |-damage|p2a: Baxcalibur|142/206
+expect |-damage|p2a: Baxcalibur|68/100
+expect |
+expect |upkeep
+expect |turn|10
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2a: Baxcalibur|Court Change||[still]
+expect |-fail|p2a: Baxcalibur
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Zoë|Discharge|p1a: Nibbles|[spread] p2a,p1a,p1b
+expect |rng|100|58
+expect |rng|100|56
+expect |rng|100|10
+expect |rng|24|5
+expect |rng|16|13
+expect |-resisted|p2a: Baxcalibur|1
+expect |rng|24|4
+expect |rng|16|7
+expect |rng|24|20
+expect |rng|16|6
+expect |-supereffective|p1b: Azumarill|1
+expect |split|p2
+expect |-damage|p2a: Baxcalibur|128/206
+expect |-damage|p2a: Baxcalibur|62/100
+expect |split|p1
+expect |-damage|p1a: Nibbles|28/158 par
+expect |-damage|p1a: Nibbles|17/100 par
+expect |split|p1
+expect |-damage|p1b: Azumarill|0 fnt
+expect |-damage|p1b: Azumarill|0 fnt
+expect |rng|100|17
+expect |-status|p2a: Baxcalibur|par
+expect |rng|100|35
+expect |rng|100|6
+expect |faint|p1b: Azumarill
+expect |rng|8|7
+expect |move|p1a: Nibbles|Frost Breath|p2b: Zoë
+expect |rng|100|41
+expect |rng|16|6
+expect |-resisted|p2b: Zoë|1
+expect |-crit|p2b: Zoë
+expect |split|p2
+expect |-damage|p2b: Zoë|27/177
+expect |-damage|p2b: Zoë|15/100
+expect |
+expect |upkeep
+expect |turn|11
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Zoë|Discharge|p1a: Nibbles|[spread] p2a,p1a
+expect |rng|100|87
+expect |rng|100|17
+expect |rng|24|0
+expect |rng|16|13
+expect |-resisted|p2a: Baxcalibur|1
+expect |-crit|p2a: Baxcalibur
+expect |rng|24|11
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Baxcalibur|107/206 par
+expect |-damage|p2a: Baxcalibur|51/100 par
+expect |split|p1
+expect |-damage|p1a: Nibbles|0 fnt
+expect |-damage|p1a: Nibbles|0 fnt
+expect |rng|100|44
+expect |rng|100|79
+expect |faint|p1a: Nibbles
+expect |
+expect |win|p2

@@ -1,0 +1,114 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 5656 6767 7878 8989
+genders drawn
+team p1
+Alakazam @ Normal Gem
+Ability: Synchronize
+Level: 30
+Hardy Nature
+- Future Sight
+- Tackle
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Blissey @ Rocky Helmet
+Ability: Natural Cure
+Level: 70
+Hardy Nature
+- Night Shade
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+end
+choice p1 move 1
+choice p2 move 1
+choice p1 move 3
+choice p2 move 2
+choice p1 move 2
+choice p2 move 2
+choice p1 switch 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Alakazam|Alakazam, L30, F|82/82
+expect |switch|p1a: Alakazam|Alakazam, L30, F|82/82
+expect |split|p2
+expect |switch|p2a: Blissey|Blissey, L70, F|458/458
+expect |switch|p2a: Blissey|Blissey, L70, F|458/458
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Blissey|Night Shade|p1a: Alakazam
+expect |rng|100|73
+expect |split|p1
+expect |-damage|p1a: Alakazam|12/82
+expect |-damage|p1a: Alakazam|12/82
+expect |move|p1a: Alakazam|Future Sight|p2a: Blissey
+expect |-start|p1a: Alakazam|move: Future Sight
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Blissey|Splash|p2a: Blissey
+expect |-nothing
+expect |move|p1a: Alakazam|Splash|p1a: Alakazam
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Blissey|Splash|p2a: Blissey
+expect |-nothing
+expect |move|p1a: Alakazam|Tackle|p2a: Blissey
+expect |rng|100|89
+expect |-enditem|p1a: Alakazam|Normal Gem|[from] gem|[move] Tackle
+expect |rng|24|5
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Blissey|440/458
+expect |-damage|p2a: Blissey|440/458
+expect |split|p1
+expect |-damage|p1a: Alakazam|0 fnt|[from] item: Rocky Helmet|[of] p2a: Blissey
+expect |-damage|p1a: Alakazam|0 fnt|[from] item: Rocky Helmet|[of] p2a: Blissey
+expect |faint|p1a: Alakazam
+expect |
+expect |-end|p2a: Blissey|move: Future Sight
+expect |rng|100|71
+expect |rng|24|13
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Blissey|418/458
+expect |-damage|p2a: Blissey|418/458
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Snorlax|Snorlax, L50, M|235/235
+expect |switch|p1a: Snorlax|Snorlax, L50, M|235/235
+expect |turn|4

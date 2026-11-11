@@ -1,0 +1,618 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 8001 10a2 9082 48c3
+genders drawn
+team-seed p1 gen5,cca032aad8a43c79
+team-seed p2 sodium,3cdcc2eaa84a903cf00a813c71bd7cff
+team p1
+Klefki (M) @ Light Clay
+Ability: Prankster
+Level: 78
+Tera Type: Water
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Reflect
+- Dazzling Gleam
+- Light Screen
+- Thunder Wave
+
+Sandslash-Alola (F) @ Assault Vest
+Ability: Slush Rush
+Level: 91
+Tera Type: Flying
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Iron Head
+- Triple Axel
+- Drill Run
+- Ice Shard
+
+Electrode @ Life Orb
+Ability: Static
+Level: 89
+Tera Type: Ice
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Volt Switch
+- Protect
+- Tera Blast
+- Thunderbolt
+
+Whiscash (F) @ Sitrus Berry
+Ability: Oblivious
+Level: 88
+Tera Type: Steel
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Helping Hand
+- Muddy Water
+- Icy Wind
+- High Horsepower
+
+Kleavor (M) @ Life Orb
+Ability: Sharpness
+Level: 79
+Tera Type: Fighting
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Protect
+- X-Scissor
+- Stone Axe
+- Close Combat
+
+Hawlucha (M) @ White Herb
+Ability: Unburden
+Level: 83
+Tera Type: Fighting
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Brave Bird
+- Swords Dance
+- Close Combat
+- Protect
+end
+team p2
+Chandelure (M) @ Life Orb
+Ability: Flash Fire
+Level: 81
+Tera Type: Fire
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Heat Wave
+- Energy Ball
+- Protect
+- Shadow Ball
+
+Arboliva (F) @ Life Orb
+Ability: Seed Sower
+Level: 88
+Tera Type: Normal
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Energy Ball
+- Strength Sap
+- Hyper Voice
+- Pollen Puff
+
+Moltres-Galar @ Sitrus Berry
+Ability: Berserk
+Level: 74
+Tera Type: Dark
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Fiery Wrath
+- Hurricane
+- Nasty Plot
+- Tailwind
+
+Florges-White (F) @ Leftovers
+Ability: Flower Veil
+Level: 83
+Tera Type: Steel
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Protect
+- Calm Mind
+- Synthesis
+- Moonblast
+
+Pikachu-Hoenn (M) @ Light Ball
+Ability: Lightning Rod
+Level: 94
+Tera Type: Grass
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Fake Out
+- Protect
+- Grass Knot
+- Volt Tackle
+
+Magmortar (F) @ Choice Scarf
+Ability: Flame Body
+Level: 83
+Tera Type: Fire
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Focus Blast
+- Thunderbolt
+- Fire Blast
+- Heat Wave
+end
+choice p1 switch 5, move 2 1 terastallize
+choice p2 move 2 -2, move 2 -1
+choice p1 switch 5, move 4 -1
+choice p2 move 4 1, move 3 terastallize
+choice p1 switch 4, pass
+choice p2 move 2 -2, move 3
+choice p1 switch 3, move 4 1
+choice p1 pass, switch 3
+choice p2 move 4 2 ,  move Strength Sap 2
+choice p1 move 3 -2, move 4 1
+choice p2 move 4 2, switch 3
+choice p1 switch hawlucha,move 4 +1
+choice p2 switch Florges
+choice p1 move 3 -2, move 3
+choice p2 move 4 2, move 3
+choice p1 switch 6, switch 5
+choice p2 move 3, move 2 2
+choice p1 move 4 2, move 4 1
+choice p2 switch 6, move 2 1
+choice p1 move 3 2, pass
+choice p2 switch 5, move 4
+choice p1 move 4 2, pass
+choice p2 move 3 1, switch 6
+choice p1 move Thunderbolt 1, pass
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Klefki|Klefki, L78, M|217/217
+expect |switch|p1a: Klefki|Klefki, L78, M|100/100
+expect |split|p1
+expect |switch|p1b: Sandslash|Sandslash-Alola, L91, F|284/284
+expect |switch|p1b: Sandslash|Sandslash-Alola, L91, F|100/100
+expect |split|p2
+expect |switch|p2a: Chandelure|Chandelure, L81, M|230/230
+expect |switch|p2a: Chandelure|Chandelure, L81, M|100/100
+expect |split|p2
+expect |switch|p2b: Arboliva|Arboliva, L88, F|281/281
+expect |switch|p2b: Arboliva|Arboliva, L88, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Kleavor|Kleavor, L79, M|240/240
+expect |switch|p1a: Kleavor|Kleavor, L79, M|100/100
+expect |-terastallize|p1b: Sandslash|Flying
+expect |move|p2a: Chandelure|Energy Ball|p2b: Arboliva
+expect |rng|100|71
+expect |rng|24|13
+expect |rng|16|7
+expect |-resisted|p2b: Arboliva
+expect |split|p2
+expect |-damage|p2b: Arboliva|238/281
+expect |-damage|p2b: Arboliva|85/100
+expect |rng|100|52
+expect |-fieldstart|move: Grassy Terrain|[from] ability: Seed Sower|[of] p2b: Arboliva
+expect |split|p2
+expect |-damage|p2a: Chandelure|207/230|[from] item: Life Orb
+expect |-damage|p2a: Chandelure|90/100|[from] item: Life Orb
+expect |move|p1b: Sandslash|Triple Axel|p2a: Chandelure
+expect |rng|100|4
+expect |rng|24|21
+expect |rng|16|6
+expect |-resisted|p2a: Chandelure
+expect |split|p2
+expect |-damage|p2a: Chandelure|194/230
+expect |-damage|p2a: Chandelure|85/100
+expect |rng|100|44
+expect |rng|24|20
+expect |rng|16|12
+expect |-resisted|p2a: Chandelure
+expect |split|p2
+expect |-damage|p2a: Chandelure|169/230
+expect |-damage|p2a: Chandelure|74/100
+expect |rng|100|38
+expect |rng|24|22
+expect |rng|16|14
+expect |-resisted|p2a: Chandelure
+expect |split|p2
+expect |-damage|p2a: Chandelure|133/230
+expect |-damage|p2a: Chandelure|58/100
+expect |-hitcount|p2a: Chandelure|3
+expect |move|p2b: Arboliva|Strength Sap|p2a: Chandelure
+expect |rng|100|18
+expect |-unboost|p2a: Chandelure|atk|1
+expect |split|p2
+expect |-heal|p2b: Arboliva|281/281
+expect |-heal|p2b: Arboliva|100/100
+expect |
+expect |split|p2
+expect |-heal|p2a: Chandelure|147/230|[from] Grassy Terrain
+expect |-heal|p2a: Chandelure|64/100|[from] Grassy Terrain
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Klefki|Klefki, L78, M|217/217
+expect |switch|p1a: Klefki|Klefki, L78, M|100/100
+expect |-terastallize|p2b: Arboliva|Normal
+expect |rng|2|1
+expect |move|p1b: Sandslash|Ice Shard|p1a: Klefki
+expect |rng|100|1
+expect |rng|24|11
+expect |rng|16|8
+expect |-resisted|p1a: Klefki
+expect |split|p1
+expect |-damage|p1a: Klefki|190/217
+expect |-damage|p1a: Klefki|88/100
+expect |rng|2|0
+expect |move|p2a: Chandelure|Shadow Ball|p1a: Klefki
+expect |rng|100|97
+expect |rng|24|0
+expect |rng|16|1
+expect |-crit|p1a: Klefki
+expect |split|p1
+expect |-damage|p1a: Klefki|0 fnt
+expect |-damage|p1a: Klefki|0 fnt
+expect |rng|100|88
+expect |faint|p1a: Klefki
+expect |split|p2
+expect |-damage|p2a: Chandelure|124/230|[from] item: Life Orb
+expect |-damage|p2a: Chandelure|54/100|[from] item: Life Orb
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Arboliva|Hyper Voice|p1b: Sandslash
+expect |rng|100|49
+expect |rng|24|15
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Sandslash|107/284
+expect |-damage|p1b: Sandslash|38/100
+expect |split|p2
+expect |-damage|p2b: Arboliva|253/281|[from] item: Life Orb
+expect |-damage|p2b: Arboliva|91/100|[from] item: Life Orb
+expect |
+expect |split|p2
+expect |-heal|p2a: Chandelure|138/230|[from] Grassy Terrain
+expect |-heal|p2a: Chandelure|60/100|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2b: Arboliva|270/281|[from] Grassy Terrain
+expect |-heal|p2b: Arboliva|97/100|[from] Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Whiscash|Whiscash, L88, F|337/337
+expect |switch|p1a: Whiscash|Whiscash, L88, F|100/100
+expect |turn|3
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Electrode|Electrode, L89|252/252
+expect |switch|p1a: Electrode|Electrode, L89|100/100
+expect |rng|2|1
+expect |move|p1b: Sandslash|Ice Shard|p2a: Chandelure
+expect |rng|100|4
+expect |rng|24|13
+expect |rng|16|2
+expect |-resisted|p2a: Chandelure
+expect |split|p2
+expect |-damage|p2a: Chandelure|110/230
+expect |-damage|p2a: Chandelure|48/100
+expect |rng|2|1
+expect |move|p2a: Chandelure|Energy Ball|p2b: Arboliva
+expect |rng|100|3
+expect |rng|24|16
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2b: Arboliva|152/281
+expect |-damage|p2b: Arboliva|55/100
+expect |rng|100|61
+expect |split|p2
+expect |-damage|p2a: Chandelure|87/230|[from] item: Life Orb
+expect |-damage|p2a: Chandelure|38/100|[from] item: Life Orb
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Arboliva|Hyper Voice|p1a: Electrode|[spread] p1a,p1b
+expect |rng|100|24
+expect |rng|100|80
+expect |rng|24|9
+expect |rng|16|13
+expect |rng|24|6
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Electrode|93/252
+expect |-damage|p1a: Electrode|37/100
+expect |split|p1
+expect |-damage|p1b: Sandslash|0 fnt
+expect |-damage|p1b: Sandslash|0 fnt
+expect |faint|p1b: Sandslash
+expect |split|p2
+expect |-damage|p2b: Arboliva|124/281|[from] item: Life Orb
+expect |-damage|p2b: Arboliva|45/100|[from] item: Life Orb
+expect |
+expect |split|p1
+expect |-heal|p1a: Electrode|108/252|[from] Grassy Terrain
+expect |-heal|p1a: Electrode|43/100|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2a: Chandelure|101/230|[from] Grassy Terrain
+expect |-heal|p2a: Chandelure|44/100|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2b: Arboliva|141/281|[from] Grassy Terrain
+expect |-heal|p2b: Arboliva|51/100|[from] Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Whiscash|Whiscash, L88, F|337/337
+expect |switch|p1b: Whiscash|Whiscash, L88, F|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1a: Electrode|Tera Blast|p1b: Whiscash
+expect |rng|100|13
+expect |rng|24|15
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Whiscash|259/337
+expect |-damage|p1b: Whiscash|77/100
+expect |split|p1
+expect |-damage|p1a: Electrode|83/252|[from] item: Life Orb
+expect |-damage|p1a: Electrode|33/100|[from] item: Life Orb
+expect |move|p2a: Chandelure|Shadow Ball|p1b: Whiscash
+expect |rng|100|77
+expect |rng|24|11
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Whiscash|91/337
+expect |-damage|p1b: Whiscash|28/100
+expect |rng|100|33
+expect |-enditem|p1b: Whiscash|Sitrus Berry|[eat]
+expect |split|p1
+expect |-heal|p1b: Whiscash|175/337|[from] item: Sitrus Berry
+expect |-heal|p1b: Whiscash|52/100|[from] item: Sitrus Berry
+expect |split|p2
+expect |-damage|p2a: Chandelure|78/230|[from] item: Life Orb
+expect |-damage|p2a: Chandelure|34/100|[from] item: Life Orb
+expect |move|p1b: Whiscash|High Horsepower|p2a: Chandelure|[miss]
+expect |rng|100|98
+expect |-miss|p1b: Whiscash|p2a: Chandelure
+expect |move|p2b: Arboliva|Strength Sap|p1b: Whiscash
+expect |rng|100|98
+expect |-unboost|p1b: Whiscash|atk|1
+expect |split|p2
+expect |-heal|p2b: Arboliva|281/281
+expect |-heal|p2b: Arboliva|100/100
+expect |
+expect |split|p1
+expect |-heal|p1a: Electrode|98/252|[from] Grassy Terrain
+expect |-heal|p1a: Electrode|39/100|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2a: Chandelure|92/230|[from] Grassy Terrain
+expect |-heal|p2a: Chandelure|40/100|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1b: Whiscash|196/337|[from] Grassy Terrain
+expect |-heal|p1b: Whiscash|59/100|[from] Grassy Terrain
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Hawlucha|Hawlucha, L83, M|265/265
+expect |switch|p1a: Hawlucha|Hawlucha, L83, M|100/100
+expect |split|p2
+expect |switch|p2b: Moltres|Moltres-Galar, L74|255/255
+expect |switch|p2b: Moltres|Moltres-Galar, L74|100/100
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Chandelure|Shadow Ball|p1b: Whiscash
+expect |rng|100|97
+expect |rng|24|3
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1b: Whiscash|43/337
+expect |-damage|p1b: Whiscash|13/100
+expect |rng|100|91
+expect |rng|2|1
+expect |rng|2|0
+expect |split|p2
+expect |-damage|p2a: Chandelure|69/230|[from] item: Life Orb
+expect |-damage|p2a: Chandelure|30/100|[from] item: Life Orb
+expect |rng|2|0
+expect |move|p1b: Whiscash|High Horsepower|p2a: Chandelure
+expect |rng|100|45
+expect |rng|24|20
+expect |rng|16|5
+expect |-supereffective|p2a: Chandelure
+expect |split|p2
+expect |-damage|p2a: Chandelure|0 fnt
+expect |-damage|p2a: Chandelure|0 fnt
+expect |rng|2|1
+expect |faint|p2a: Chandelure
+expect |
+expect |rng|2|1
+expect |split|p1
+expect |-heal|p1b: Whiscash|64/337|[from] Grassy Terrain
+expect |-heal|p1b: Whiscash|19/100|[from] Grassy Terrain
+expect |-fieldend|move: Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Florges|Florges-White, L83, F|265/265
+expect |switch|p2a: Florges|Florges-White, L83, F|100/100
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1a: Hawlucha|Close Combat|p1b: Whiscash
+expect |rng|100|35
+expect |rng|24|20
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1b: Whiscash|0 fnt
+expect |-damage|p1b: Whiscash|0 fnt
+expect |rng|100|69
+expect |-unboost|p1a: Hawlucha|def|1
+expect |-unboost|p1a: Hawlucha|spd|1
+expect |faint|p1b: Whiscash
+expect |-enditem|p1a: Hawlucha|White Herb
+expect |-clearnegativeboost|p1a: Hawlucha|[silent]
+expect |rng|1|0
+expect |rng|2|1
+expect |move|p2b: Moltres|Nasty Plot|p2b: Moltres
+expect |-boost|p2b: Moltres|spa|2
+expect |rng|1|0
+expect |rng|2|0
+expect |rng|1|0
+expect |move|p2a: Florges|Moonblast|p1a: Hawlucha
+expect |rng|100|13
+expect |rng|24|3
+expect |rng|16|4
+expect |-supereffective|p1a: Hawlucha
+expect |split|p1
+expect |-damage|p1a: Hawlucha|0 fnt
+expect |-damage|p1a: Hawlucha|0 fnt
+expect |rng|100|85
+expect |faint|p1a: Hawlucha
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Electrode|Electrode, L89|98/252
+expect |switch|p1a: Electrode|Electrode, L89|39/100
+expect |split|p1
+expect |switch|p1b: Kleavor|Kleavor, L79, M|240/240
+expect |switch|p1b: Kleavor|Kleavor, L79, M|100/100
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1a: Electrode|Thunderbolt|p2b: Moltres
+expect |rng|100|99
+expect |rng|24|8
+expect |rng|16|4
+expect |-supereffective|p2b: Moltres
+expect |split|p2
+expect |-damage|p2b: Moltres|42/255
+expect |-damage|p2b: Moltres|17/100
+expect |rng|100|11
+expect |-ability|p2b: Moltres|Berserk|boost
+expect |-boost|p2b: Moltres|spa|1
+expect |split|p1
+expect |-damage|p1a: Electrode|73/252|[from] item: Life Orb
+expect |-damage|p1a: Electrode|29/100|[from] item: Life Orb
+expect |-enditem|p2b: Moltres|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2b: Moltres|105/255|[from] item: Sitrus Berry
+expect |-heal|p2b: Moltres|42/100|[from] item: Sitrus Berry
+expect |move|p1b: Kleavor|Close Combat|p2a: Florges
+expect |rng|100|74
+expect |rng|24|4
+expect |rng|16|15
+expect |-resisted|p2a: Florges
+expect |split|p2
+expect |-damage|p2a: Florges|195/265
+expect |-damage|p2a: Florges|74/100
+expect |rng|100|91
+expect |-unboost|p1b: Kleavor|def|1
+expect |-unboost|p1b: Kleavor|spd|1
+expect |split|p1
+expect |-damage|p1b: Kleavor|216/240|[from] item: Life Orb
+expect |-damage|p1b: Kleavor|90/100|[from] item: Life Orb
+expect |move|p2b: Moltres|Hurricane|p1b: Kleavor
+expect |rng|100|38
+expect |rng|24|15
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Kleavor|0 fnt
+expect |-damage|p1b: Kleavor|0 fnt
+expect |rng|100|66
+expect |faint|p1b: Kleavor
+expect |move|p2a: Florges|Synthesis|p2a: Florges
+expect |split|p2
+expect |-heal|p2a: Florges|265/265
+expect |-heal|p2a: Florges|100/100
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Magmortar|Magmortar, L83, F|260/260
+expect |switch|p2a: Magmortar|Magmortar, L83, F|100/100
+expect |move|p1a: Electrode|Tera Blast|p2b: Moltres
+expect |rng|100|53
+expect |rng|24|16
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Moltres|41/255
+expect |-damage|p2b: Moltres|17/100
+expect |split|p1
+expect |-damage|p1a: Electrode|48/252|[from] item: Life Orb
+expect |-damage|p1a: Electrode|20/100|[from] item: Life Orb
+expect |move|p2b: Moltres|Hurricane|p1a: Electrode|[miss]
+expect |rng|100|71
+expect |-miss|p2b: Moltres|p1a: Electrode
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pikachu|Pikachu-Hoenn, L94, M|218/218
+expect |switch|p2a: Pikachu|Pikachu-Hoenn, L94, M|100/100
+expect |move|p1a: Electrode|Thunderbolt|p2a: Pikachu
+expect |-activate|p2a: Pikachu|ability: Lightning Rod
+expect |-ability|p2a: Pikachu|Lightning Rod|boost
+expect |-boost|p2a: Pikachu|spa|1
+expect |move|p2b: Moltres|Tailwind|p2b: Moltres
+expect |-sidestart|p2: p2|move: Tailwind
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Florges|Florges-White, L83, F|265/265
+expect |switch|p2b: Florges|Florges-White, L83, F|100/100
+expect |move|p2a: Pikachu|Grass Knot|p1a: Electrode
+expect |rng|100|33
+expect |rng|24|3
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Electrode|0 fnt
+expect |-damage|p1a: Electrode|0 fnt
+expect |rng|10|8
+expect |faint|p1a: Electrode
+expect |
+expect |win|p2

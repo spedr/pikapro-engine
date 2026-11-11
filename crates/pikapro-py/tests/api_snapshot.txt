@@ -1,0 +1,769 @@
+## pikapro
+ACTION_SPACE_VERSION: int = 1
+class ActionSpace(format)
+    active: attribute
+    bring: attribute
+    decode(self, /, index)
+    decode_slot(self, /, index)
+    describe(self, /, index)
+    encode(self, /, choice)
+    encode_slot(self, /, action)
+    gimmicks: attribute
+    joint_index(self, /, slots)
+    joint_size: attribute
+    lead_only: attribute
+    pair_legal(self, /, slot_masks, min_switches, a0, a1)
+    pair_mask(self, /, masks, min_switches, a0)
+    pass_index: attribute
+    preview_order(self, /, k)
+    preview_size: attribute
+    size: attribute
+    slot_size: attribute
+    split(self, /, index)
+    switch_base: attribute
+    targets: attribute
+class Battle(format, teams, seed=None, *, log=True, players=None)
+    action_mask(self, /, side)
+    arrays(self, /)
+    choice_index(self, /, side, choice)
+    event_count: attribute
+    events(self, /, start=0)
+    forfeit(self, /, side)
+    fork(self, /, seed=None)
+    format: attribute
+    header(self, /)
+    legal_actions(self, /, side)
+    legal_choices(self, /, side)
+    log(self, /, perspective=None, start=0)
+    open_team_sheets(self, /)
+    over: attribute
+    parse_choice(self, /, side, choice)
+    players: attribute
+    raw_log(self, /, start=0)
+    request(self, /, side)
+    request_json(self, /, side)
+    request_kind(self, /, side)
+    result: attribute
+    seed: attribute
+    slot_actions(self, /, side)
+    slot_mask(self, /, side)
+    space: attribute
+    state(self, /)
+    submit(self, /, side, choice)
+    teams(self, /, packed=False)
+    turn: attribute
+    view(self, /, side)
+    winner: attribute
+class BattlePool(format, teams, n, seed=0, threads=None, *, log=False, autoreset='next_step', spin_us=100)
+    __len__(self, /)
+    autoreset: attribute
+    battle(self, /, i)
+    episodes(self, /)
+    final_state(self, /)
+    finished(self, /)
+    format: attribute
+    masks(self, /, kind='choice')
+    n: attribute
+    play_random(self, /, battles)
+    requests(self, /)
+    reset(self, /, indices=None)
+    sample_random(self, /, mode='choice')
+    seeds(self, /)
+    space: attribute
+    state(self, /)
+    step(self, /, actions)
+    take_errors(self, /)
+    threads: attribute
+class Choice()
+    __str__(self, /)
+    actions: attribute
+    from_actions(actions): staticmethod
+    kind: attribute
+    order: attribute
+    team(order): staticmethod
+FIELD_COLUMNS: list = <list of 12, 49cb0f8673b5d284>
+POKEMON_COLUMNS: list = <list of 52, eba5cd5370042e6f>
+REQUEST_CODES: list = ['wait', 'team_preview', 'move', 'force_switch']
+class RandomPolicy(seed)
+    choose(self, /, battle, side)
+class RandomTeams(format, mode='uniform', *, level=None, team_size=None, spreads='competitive', species=None, moves=None, abilities=None, items=None)
+    format: attribute
+    mode: attribute
+    pair(self, /, seed, packed=False)
+    team(self, /, seed, packed=False)
+class Record()
+    __contains__(self, key, /)
+    __getitem__(self, key, /)
+    _keys(self, /)
+    _to_dict(self, /)
+    _variant: attribute
+SIDE_COLUMNS: list = <list of 21, d691a1170f64d5c6>
+STATUS_CODES: list = ['none', 'brn', 'frz', 'par', 'psn', 'tox', 'slp']
+class SlotAction(kind, index=None, target=None, gimmick=None)
+    gimmick: attribute
+    index: attribute
+    kind: attribute
+    target: attribute
+TERRAIN_CODES: list = ['Electric', 'Grassy', 'Misty', 'Psychic']
+VOLATILE_NAMES: list = <list of 128, 2496dff8bbb58a5f>
+WEATHER_CODES: list = ['Sun', 'Rain', 'Sand', 'Snow', 'HarshSun', 'HeavyRain', 'StrongWinds']
+def column(name, columns=<list of 52, eba5cd5370042e6f>)
+def export(team, format)
+def formats()
+def kind(value)
+def names(table, format='gen9vgc')
+def pack(team, format)
+def random_team(format, mode='uniform', seed=0, *, packed=False, **options)
+def sample_slots(pool, rng)
+def sample_team(format)
+def sample_uniform(masks, rng)
+def to_id(text)
+def validate(team, format)
+def volatiles(bits)
+
+## pikapro.rl
+ACTION_KINDS: dict = {'move': 0, 'switch': 1, 'pass': 2, 'preview': 3}
+ACTION_SPACE_VERSION: int = 1
+ACTION_TABLE_COLUMNS: tuple = ('kind', 'move_slot', 'target', 'gimmick', 'switch', 'preview')
+BUILTIN_POLICIES: tuple = ('random', 'max_base_power', 'simple_heuristics')
+class BattleView(view, format, *, mask=None, masks='factored', switch_by='row', player_role=None, series=None)
+    active_pokemon: property
+    all_active_pokemons: property
+    available_moves: property
+    available_switches: property
+    can_mega_evolve: property
+    can_tera: property
+    doubles: property
+    fields: property
+    finished: property
+    force_switch: property
+    from_battle(cls, battle, side): classmethod
+    from_env(cls, env, i, player=0): classmethod
+    lost: property
+    maybe_trapped: property
+    opponent_active_pokemon: property
+    opponent_side_conditions: property
+    opponent_team: property
+    opponent_used_mega_evolve: property
+    opponent_used_tera: property
+    side_conditions: property
+    team: property
+    teampreview: property
+    trapped: property
+    turn: property
+    used_mega_evolve: property
+    used_tera: property
+    weather: property
+    won: property
+    format: instance attribute
+    mask: instance attribute
+    masks_layout: instance attribute
+    player_role: instance attribute
+    series: instance attribute
+    space: instance attribute
+    switch_by: instance attribute
+class ChannelSeries(format_id, best_of=None)
+    best_of: property
+    game: property
+    over: property
+    record(self, session, winner=None, tie=False)
+    recorded: property
+    result: property
+    settle(self, winner=None, tie=False)
+    ties: property
+    wins: property
+class ChannelSession(format_id, *, observation='basic', masks='factored', switch_by='row', username=None, hp='percent', team=None, series=None)
+    actions_per_player: property
+    choice(self, action)
+    choose_builtin(self, name, seed=0)
+    error: property
+    feed(self, line)
+    feed_many(self, lines)
+    finished: property
+    format: property
+    mask: property
+    mask_width: property
+    min_switches: property
+    needs_action: property
+    obs: property
+    observation: property
+    request_kind: property
+    series_row: property
+    settle_series(self, winner=None, tie=False)
+    side: property
+    turn: property
+    unknown_count: property
+    unknown_lines: property
+    unknown_names: property
+    view: property
+    winner: property
+    winner_side: property
+    format_id: instance attribute
+    masks: instance attribute
+    switch_by: instance attribute
+    username: instance attribute
+END_REASONS: list = ['none', 'all_fainted', 'turn_limit', 'forfeit', 'max_turns', 'error', 'endless_battle']
+class MoveView(move)
+    accuracy: attribute
+    base_power: attribute
+    category: attribute
+    current_pp: attribute
+    disabled: attribute
+    id: attribute
+    max_pp: attribute
+    name: attribute
+    priority: attribute
+    slot: attribute
+    target: attribute
+    type: attribute
+    uses: attribute
+OBSERVATIONS: list = ['basic']
+OPPONENTS: list = ['random', 'max_base_power', 'simple_heuristics', 'external']
+class PokemonView(battle, side, row)
+    ability: property
+    active: property
+    base_species: property
+    base_stats: property
+    boosts: property
+    current_hp: property
+    current_hp_fraction: property
+    damage_multiplier(self, attack)
+    effects: property
+    fainted: property
+    first_turn: property
+    gender: property
+    identifier(self, role)
+    is_mega: property
+    is_terastallized: property
+    item: property
+    level: property
+    max_hp: property
+    moves: property
+    must_recharge: property
+    own: property
+    protect_counter: property
+    revealed: property
+    slot: property
+    species: property
+    species_name: property
+    stats: property
+    status: property
+    status_counter: property
+    tera_type: property
+    type_1: property
+    type_2: property
+    types: property
+    row: instance attribute
+    side: instance attribute
+RANDOM_ACTION: int = -2
+STATUS: dict = {'ignored': 0, 'submitted': 1, 'rejected': -1, 'unavailable': 2}
+class Step(buffers)
+    __getitem__(self, key)
+    __iter__(self)
+    agent_side: attribute
+    as_dict(self)
+    done: property
+    end_reason: attribute
+    episode: attribute
+    final_episode: attribute
+    final_obs: attribute
+    final_series: attribute
+    final_turns: attribute
+    keys(self)
+    masks: attribute
+    min_switches: attribute
+    needs_action: attribute
+    obs: attribute
+    reward: attribute
+    series: attribute
+    status: attribute
+    terminated: attribute
+    truncated: attribute
+    winner: attribute
+class TeamPool(texts, format, labels=None)
+    __len__(self, /)
+    format: attribute
+    labels: attribute
+    rejected: attribute
+    team(self, /, i, packed=False)
+    teams(self, /, packed=False)
+class VecEnv(format, n=1, *, threads=None, seed=0, teams=None, opponent='random', reward='terminal', ko_weight=None, max_turns=None, observation='basic', masks='factored', switch_by='row', autoreset='next_step', ots=False, ots_view='both', side_randomization=False, series=None, observe_builtin=False, preview='learned', hp='percent', record=False, shards_per_thread=8, spin_us=50)
+    __len__(self)
+    battle(self, i)
+    bind(self, **arrays)
+    buffers: property
+    close(self)
+    config: property
+    decode(self, i, player, actions)
+    describe(self, i, player, actions)
+    last: property
+    pair_mask(self, masks, min_switches, a0)
+    record(self, i, previous=False)
+    reset(self, seed=None)
+    sample_actions(self, rng, players=(0, 1))
+    set_opponent(self, opponent, which=None)
+    set_pairs(self, positions, pairs)
+    side_of(self, i, player)
+    step(self, actions)
+    take_errors(self)
+    threads: property
+    view(self, i, player=0)
+    actions_per_player: instance attribute
+    buffer_specs: instance attribute
+    format: instance attribute
+    mask_width: instance attribute
+    n: instance attribute
+    obs_shape: instance attribute
+    observation: instance attribute
+    space: instance attribute
+def action_table(format)
+def embed_all(env, fn, player=0)
+def relative_target(slot, target)
+def replay(format, record, *, log=True)
+
+## pikapro.rl.view
+class BattleView(view, format, *, mask=None, masks='factored', switch_by='row', player_role=None, series=None)
+    active_pokemon: property
+    all_active_pokemons: property
+    available_moves: property
+    available_switches: property
+    can_mega_evolve: property
+    can_tera: property
+    doubles: property
+    fields: property
+    finished: property
+    force_switch: property
+    from_battle(cls, battle, side): classmethod
+    from_env(cls, env, i, player=0): classmethod
+    lost: property
+    maybe_trapped: property
+    opponent_active_pokemon: property
+    opponent_side_conditions: property
+    opponent_team: property
+    opponent_used_mega_evolve: property
+    opponent_used_tera: property
+    side_conditions: property
+    team: property
+    teampreview: property
+    trapped: property
+    turn: property
+    used_mega_evolve: property
+    used_tera: property
+    weather: property
+    won: property
+    format: instance attribute
+    mask: instance attribute
+    masks_layout: instance attribute
+    player_role: instance attribute
+    series: instance attribute
+    space: instance attribute
+    switch_by: instance attribute
+class MoveView(move)
+    accuracy: attribute
+    base_power: attribute
+    category: attribute
+    current_pp: attribute
+    disabled: attribute
+    id: attribute
+    max_pp: attribute
+    name: attribute
+    priority: attribute
+    slot: attribute
+    target: attribute
+    type: attribute
+    uses: attribute
+class PokemonView(battle, side, row)
+    ability: property
+    active: property
+    base_species: property
+    base_stats: property
+    boosts: property
+    current_hp: property
+    current_hp_fraction: property
+    damage_multiplier(self, attack)
+    effects: property
+    fainted: property
+    first_turn: property
+    gender: property
+    identifier(self, role)
+    is_mega: property
+    is_terastallized: property
+    item: property
+    level: property
+    max_hp: property
+    moves: property
+    must_recharge: property
+    own: property
+    protect_counter: property
+    revealed: property
+    slot: property
+    species: property
+    species_name: property
+    stats: property
+    status: property
+    status_counter: property
+    tera_type: property
+    type_1: property
+    type_2: property
+    types: property
+    row: instance attribute
+    side: instance attribute
+
+## pikapro.rl.teams
+class PokepasteError(...) bases RuntimeError
+class TeamPool(texts, format, labels=None)
+    __len__(self, /)
+    format: attribute
+    labels: attribute
+    rejected: attribute
+    team(self, /, i, packed=False)
+    teams(self, /, packed=False)
+def fetch_paste(url, cache_dir, *, timeout=10.0, fetch=True, opener=None)
+def from_dir(directory, format, pattern='*.txt')
+def from_export_texts(texts, format, labels=None)
+def from_pokepaste_list(path, cache_dir, format='championsvgc', *, timeout=10.0, fetch=True, opener=None)
+def paste_id(url)
+def read_pokepaste_list(path)
+def split_teams(text)
+
+## pikapro.rl.eval
+class CrossTable(names, records)
+    __str__(self)
+    get(self, a, b)
+    names: attribute
+    records: attribute
+    win_rates(self)
+class WinRecord(wins=0, losses=0, ties=0, turn_limit=0, turns=0, errors=0)
+    __str__(self)
+    errors: attribute = 0
+    flipped(self)
+    games: property
+    losses: attribute = 0
+    significantly_better: property
+    ties: attribute = 0
+    turn_limit: attribute = 0
+    turns: attribute = 0
+    wilson(self, z=1.96)
+    win_rate: property
+    wins: attribute = 0
+def cross_evaluate(policies, format, episodes, *, teams=None, seed=0, threads=None, hp='percent', batch=0)
+def evaluate(policy, opponent='random', format='championsvgc', episodes=100, *, teams=None, seed=0, threads=None, n=None, mirrored=True, hp='percent', **env_kwargs)
+
+## pikapro.rl.gym
+class GymEnv(format='championsvgc', **kwargs) bases Env
+    action_masks(self)
+    metadata: attribute = {'render_modes': []}
+    reset(self, *, seed=None, options=None)
+    set_opponent(self, opponent)
+    step(self, action)
+class GymVectorEnv(format, num_envs=1, *, copy=True, **kwargs) bases VectorEnv
+    action_masks(self)
+    close_extras(self, **kwargs)
+    reset(self, *, seed=None, options=None)
+    set_opponent(self, opponent, which=None)
+    step(self, actions)
+def observation_space(env)
+
+## pikapro.rl.pettingzoo
+class ParallelEnv(format='championsvgc', **kwargs) bases ParallelEnv
+    action_masks(self, agent)
+    action_space(self, agent)
+    close(self)
+    metadata: attribute = {'name': 'pikapro_v0', 'render_modes': [], 'is_parallelizable': True}
+    observation_space(self, agent)
+    render(self)
+    reset(self, seed=None, options=None)
+    state(self)
+    step(self, actions)
+
+## pikapro.rl.sb3
+class SB3VecEnv(format='championsvgc', num_envs=1, **kwargs) bases VecEnv
+    action_masks(self)
+    close(self)
+    env_is_wrapped(self, wrapper_class, indices=None)
+    env_method(self, method_name, *method_args, indices=None, **method_kwargs)
+    get_attr(self, attr_name, indices=None)
+    reset(self)
+    seed(self, seed=None)
+    set_attr(self, attr_name, value, indices=None)
+    set_opponent(self, opponent, which=None)
+    step_async(self, actions)
+    step_wait(self)
+
+## pikapro.compat.poke_env
+class BattleRecord(index, seed, teams, winner=None, turns=0, reason=None, invalid=<factory>, unavailable=<factory>, invalid_messages=<factory>, quirks=<factory>, fallbacks=<factory>, stalls=0, decisions=<factory>, warnings=<factory>, error=None, error_line=None)
+    decisions: attribute
+    error: attribute = None
+    error_line: attribute = None
+    fallbacks: attribute
+    index: attribute
+    invalid: attribute
+    invalid_messages: attribute
+    quirks: attribute
+    reason: attribute = None
+    seed: attribute
+    stalls: attribute = 0
+    teams: attribute
+    turns: attribute = 0
+    unavailable: attribute
+    warnings: attribute
+    winner: attribute = None
+class Decision(maybe_default=False)
+    maybe_default: attribute = False
+class Feeder(format, side, *, player=None, register=False, battle_tag=None, logger=None, save_replays=False, workarounds=True, username=None)
+    decide(self, player=None)
+    receive(self, lines)
+    receive_error(self, message)
+    receive_request(self, request)
+class FeederError(line, cause) bases RuntimeError
+    cause: instance attribute
+    line: instance attribute
+class PlayResults(format, players, battles, seconds)
+    battles: attribute
+    battles_per_second: property
+    errors: property
+    fallbacks: property
+    format: attribute
+    invalid: property
+    n: property
+    players: attribute
+    quirks: property
+    seconds: attribute
+    stalls: property
+    summary(self)
+    ties: property
+    turns: property
+    unavailable: property
+    wins: property
+SHOWDOWN_FORMATS: dict = <dict of 8, 22db9bc9bd5a3f8a>
+UNKNOWN: str = '?'
+def action_to_index(action, battle, pikapro_battle, side, *, fake=False, strict=True)
+def choice_text(message)
+def choice_to_order(choice, battle)
+def cross_evaluate(players, format, n_battles, *, seed=0, **kwargs)
+def index_to_action(index, battle, space, *, fake=False, strict=True)
+def index_to_order(index, battle, space)
+def make_player(cls, format, **kwargs)
+def order_to_index(order, battle, side)
+def pikapro_format(format)
+def play(p1, p2, format, n_battles=1, *, teams=None, seed=0, team_mode='sets', register=True, max_retries=10, raise_errors=False, python_seed=None, on_battle=None)
+def play_parallel(p1, p2, format, n_battles, *, processes=4, seed=0, player_kwargs=(None, None), python_seed=None, **kwargs)
+def require_poke_env()
+def showdown_format(format)
+def snapshot(battle)
+
+## pikapro.showdown
+ARENA: ServerConfig = <ServerConfig>
+class AcceptPlan(team=None, open_team_sheets=None, failed=None)
+    failed: attribute = None
+    open_team_sheets: attribute = None
+    team: attribute = None
+BUILTIN_POLICIES: tuple = ('random', 'max_base_power', 'simple_heuristics')
+class BattleHandler()
+    choose(self, rooms)
+    close(self, room)
+    error(self, room, message)
+    feed(self, room, lines)
+    max_batch: attribute = 0
+    open(self, room)
+    series_end(self, series)
+    summary(self, room)
+    supports(self, format)
+class BattleResult(room, format, opponent, won, winner, tie, finished, turns, side, invalid, unavailable, fallbacks, log_path=None, reason=None, extras=<factory>, series=None, game=None, stale=0)
+    extras: attribute
+    fallbacks: attribute
+    finished: attribute
+    format: attribute
+    game: attribute = None
+    invalid: attribute
+    log_path: attribute = None
+    opponent: attribute
+    reason: attribute = None
+    room: attribute
+    series: attribute = None
+    side: attribute
+    stale: attribute = 0
+    tie: attribute
+    to_dict(self)
+    turns: attribute
+    unavailable: attribute
+    winner: attribute
+    won: attribute
+class BattleRoom(id, username)
+    observe(self, line, user_id)
+    opened: property
+    pending: property
+    play_format: property (settable)
+    result(self, user_id, log_path=None, reason=None)
+    ended: instance attribute
+    fallbacks: instance attribute
+    format: instance attribute
+    game: instance attribute
+    id: instance attribute
+    invalid: instance attribute
+    lines: instance attribute
+    opponent: instance attribute
+    ots_answer: instance attribute
+    ots_foe: instance attribute
+    ots_offered: instance attribute
+    ots_open: instance attribute
+    ots_wait_ms: instance attribute
+    request: instance attribute
+    requests: instance attribute
+    rqid: instance attribute
+    series: instance attribute
+    series_id: instance attribute
+    side: instance attribute
+    stale: instance attribute
+    state: instance attribute
+    team: instance attribute
+    tie: instance attribute
+    turn: instance attribute
+    unavailable: instance attribute
+    username: instance attribute
+    winner: instance attribute
+class ChallengeError(...) bases ShowdownError
+class Format(id, name, section, random_teams, ladder, challenge, tournament, level_50, best_of)
+    best_of: attribute
+    challenge: attribute
+    id: attribute
+    ladder: attribute
+    level_50: attribute
+    name: attribute
+    random_teams: attribute
+    section: attribute
+    tournament: attribute
+LOCAL: ServerConfig = <ServerConfig>
+class LoginError(...) bases ShowdownError
+PIKAPRO: ServerConfig = <ServerConfig>
+PIKAPRO_FORMAT_ALIASES: tuple = (('gen9customgame', 'gen9singles'), ('gen9doublescustomgame', 'gen9doubles'))
+class RandomRequestHandler(seed=None) bases BattleHandler
+    choose(self, rooms)
+    feed(self, room, lines)
+    rng: instance attribute
+class SeriesResult(room, format, opponent, won, winner, tie, finished, best_of, wins, losses, ties, games, side, invalid, unavailable, fallbacks, turns, log_path=None, reason=None, extras=<factory>, stale=0)
+    best_of: attribute
+    extras: attribute
+    fallbacks: attribute
+    finished: attribute
+    format: attribute
+    games: attribute
+    invalid: attribute
+    log_path: attribute = None
+    losses: attribute
+    opponent: attribute
+    reason: attribute = None
+    room: attribute
+    side: attribute
+    stale: attribute = 0
+    tie: attribute
+    ties: attribute
+    to_dict(self)
+    turns: attribute
+    unavailable: attribute
+    winner: attribute
+    wins: attribute
+    won: attribute
+class SeriesRoom(id, username)
+    observe(self, line, user_id)
+    result(self, user_id, log_path=None, reason=None)
+class ServerConfig(websocket_url, throttle=0.0, challenge_interval=0.0, max_games=0, format_aliases=(), series=True, token_login=False, credentials_env=None, commands=None, auto_battles=False, format_suffixes=(), final_close_codes=())
+    auto_battles: attribute = False
+    challenge_interval: attribute = 0.0
+    commands: attribute = None
+    credentials_env: attribute = None
+    final_close_codes: attribute = ()
+    format_aliases: attribute = ()
+    format_suffixes: attribute = ()
+    max_games: attribute = 0
+    play_format(self, format_id)
+    series: attribute = True
+    throttle: attribute = 0.0
+    token_login: attribute = False
+    websocket_url: attribute
+class SessionHandler(policy='random', *, batch=False, max_batch=0, observation='basic', masks='factored', switch_by='row', threaded=None, seed=0, team=None, session_factory=None) bases BattleHandler
+    choose(self, rooms)
+    close(self, room)
+    feed(self, room, lines)
+    open(self, room)
+    series_end(self, series)
+    summary(self, room)
+    supports(self, format)
+    batch: instance attribute
+    decisions: instance attribute
+    options: instance attribute
+    policy: instance attribute
+    seed: instance attribute
+    threaded: instance attribute
+class ShowdownClient(username=None, token=None, *, server='local', handler=None, avatar=None, guest=False, max_concurrent=1, log_dir=None, timer=False, forfeit_on_exit=True, reconnect=True, max_reconnects=8, max_retries=3, open_timeout=20.0, login_timeout=60.0, ping_interval=20.0, log=None, open_team_sheets=None, hide_battles=False, ots_wait=20.0, leave_delay=0.0)
+    accept_challenges(self, from_user=None, n=1, team=None, *, format=None, handler=None, plan=None)
+    auto_team: property
+    cancel_search(self)
+    challenge(self, user, format, team=None, *, n=1, handler=None, accept_timeout=300.0)
+    close(self)
+    close_unlisted(self, grace=120.0)
+    connect(self)
+    connected: property
+    hold_decision(self, room)
+    ladder(self, n, format, team=None, *, handler=None, search_timeout=None)
+    on_battle_lines(self, room_id, lines)
+    on_pm(self, line)
+    release_decision(self, room_id)
+    send(self, text, room='')
+    send_room(self, room_id, text)
+    stopped: property
+    upload_team(self, team=None, format=None)
+    uploaded_team: property
+    uploads: property
+    user_id: property
+    wait_for_battles(self)
+    avatar: instance attribute
+    challenges: instance attribute
+    config: instance attribute
+    forfeit_on_exit: instance attribute
+    formats: instance attribute
+    games: instance attribute
+    guest: instance attribute
+    handler: instance attribute
+    hide_battles: instance attribute
+    leave_delay: instance attribute
+    log: instance attribute
+    log_dir: instance attribute
+    login_timeout: instance attribute
+    max_concurrent: instance attribute
+    max_reconnects: instance attribute
+    max_retries: instance attribute
+    name: instance attribute
+    on_popup: instance attribute
+    open_team_sheets: instance attribute
+    open_timeout: instance attribute
+    ots_wait: instance attribute
+    ping_interval: instance attribute
+    reconnect: instance attribute
+    results: instance attribute
+    rooms: instance attribute
+    rotate_on_wait: instance attribute
+    searching: instance attribute
+    series: instance attribute
+    series_results: instance attribute
+    timer: instance attribute
+    username: instance attribute
+class ShowdownError(...) bases RuntimeError
+def format_key(text)
+def pack_team(team, format_id='')
+def parse_formats(line)
+def pikapro_server(address=None)
+def random_choice(request, rng)
+def series_length(format)
+def server_config(server)
+def to_id(text)
+
+## layouts
+action_space:gen9singles 1 5360ae0dba672ff6
+action_space:gen9doubles 1 58ff412790e194f0
+action_space:gen9vgc 1 623a94f7f57ef4cb
+action_space:gen9ou 1 7f460ab4c07033d1
+action_space:gen9randombattle 1 11af17bec118f3a2
+action_space:gen9randomdoublesbattle 1 307f349ee0347c01
+action_space:championsvgc 1 6bfff30f378d64c4
+action_space:championsbss 1 eb50d4013500d502

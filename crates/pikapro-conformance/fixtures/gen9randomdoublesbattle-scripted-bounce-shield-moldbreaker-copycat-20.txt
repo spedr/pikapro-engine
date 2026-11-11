@@ -1,0 +1,117 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 0000 0000 0000 0014
+genders drawn
+team p1
+Mew
+Ability: Mold Breaker
+EVs: 252 Spe
+Timid Nature
+- Growl
+- Copycat
+
+Blissey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+end
+team p2
+Espeon @ Ability Shield
+Ability: Magic Bounce
+Hardy Nature
+- Splash
+
+Metagross @ Iron Ball
+Ability: Clear Body
+Hardy Nature
+- Growl
+- Splash
+end
+choice p1 move 1, move 1
+choice p2 move 1, move 1
+choice p1 move 2, move 1
+choice p2 move 1, move 2
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Mew|Mew|341/341
+expect |switch|p1a: Mew|Mew|100/100
+expect |split|p1
+expect |switch|p1b: Blissey|Blissey, F|651/651
+expect |switch|p1b: Blissey|Blissey, F|100/100
+expect |split|p2
+expect |switch|p2a: Espeon|Espeon, M|271/271
+expect |switch|p2a: Espeon|Espeon, M|100/100
+expect |split|p2
+expect |switch|p2b: Metagross|Metagross|301/301
+expect |switch|p2b: Metagross|Metagross|100/100
+expect |-ability|p1a: Mew|Mold Breaker
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Mew|Growl|p2b: Metagross
+expect |move|p2a: Espeon|Growl|p1a: Mew|[from] ability: Magic Bounce|[spread] p1a,p1b|[spread] 
+expect |rng|100|55
+expect |rng|100|91
+expect |-unboost|p1a: Mew|atk|1
+expect |-unboost|p1b: Blissey|atk|1
+expect |rng|100|62
+expect |-fail|p2b: Metagross|unboost|[from] ability: Clear Body|[of] p2b: Metagross
+expect |rng|2|1
+expect |move|p2a: Espeon|Splash|p2a: Espeon
+expect |-nothing
+expect |rng|2|1
+expect |move|p1b: Blissey|Splash|p1b: Blissey
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Metagross|Growl|p1a: Mew|[spread] p1a,p1b
+expect |rng|100|65
+expect |rng|100|76
+expect |-unboost|p1a: Mew|atk|1
+expect |-unboost|p1b: Blissey|atk|1
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Mew|Copycat|p1a: Mew
+expect |rng|2|0
+expect |move|p1a: Mew|Growl|p2a: Espeon|[from] move: Copycat
+expect |move|p2a: Espeon|Growl|p1a: Mew|[from] ability: Magic Bounce|[spread] p1a,p1b|[spread] 
+expect |rng|100|3
+expect |rng|100|25
+expect |-unboost|p1a: Mew|atk|1
+expect |-unboost|p1b: Blissey|atk|1
+expect |rng|100|16
+expect |-fail|p2b: Metagross|unboost|[from] ability: Clear Body|[of] p2b: Metagross
+expect |move|p2a: Espeon|Splash|p2a: Espeon
+expect |-nothing
+expect |move|p1b: Blissey|Splash|p1b: Blissey
+expect |-nothing
+expect |move|p2b: Metagross|Splash|p2b: Metagross
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3

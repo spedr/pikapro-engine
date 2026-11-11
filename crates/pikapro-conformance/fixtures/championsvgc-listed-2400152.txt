@@ -1,0 +1,434 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 822f 472a 5954 ba05
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Sir Hops-a-Lot (Gourgeist) (F) @ Leftovers
+Ability: Frisk
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Poltergeist
+- Leech Seed
+- Substitute
+- Power Whip
+
+Sparky (Skarmory) (M) @ Rocky Helmet
+Ability: Sturdy
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Impish Nature
+- Whirlwind
+- Stealth Rock
+- Roost
+- Brave Bird
+
+Pinsir-Mega (M) @ Pinsirite
+Ability: Moxie
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Body Slam
+- Quick Attack
+- Close Combat
+- Swords Dance
+
+Toxtricity (F) @ Choice Scarf
+Ability: Punk Rock
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Hasty Nature
+- Volt Switch
+- Boomburst
+- Overdrive
+- Gunk Shot
+
+X (Kleavor) (M) @ Life Orb
+Ability: Sharpness
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Defog
+- X-Scissor
+- Stone Axe
+- U-turn
+
+Gardevoir-Mega (M) @ Gardevoirite
+Ability: Trace
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Psyshock
+- Calm Mind
+- Focus Blast
+- Hyper Voice
+end
+team p2
+Nibbles (Milotic) (M) @ Leftovers
+Ability: Competitive
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Haze
+- Scald
+- Recover
+- Ice Beam
+
+Rillaboom (M) @ Miracle Seed
+Ability: Grassy Surge
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Wood Hammer
+- Swords Dance
+- Grassy Glide
+- High Horsepower
+
+Zoë (Sirfetch’d) (F) @ Leek
+Ability: Scrappy
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Impish Nature
+- Poison Jab
+- Defog
+- Knock Off
+- Close Combat
+
+Chomp (Malamar) (F) @ Malamarite
+Ability: Contrary
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Superpower
+- Zen Headbutt
+- Poison Jab
+- Knock Off
+
+Hydreigon (F) @ Choice Scarf
+Ability: Levitate
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Dark Pulse
+- Fire Blast
+- Flash Cannon
+- Draco Meteor
+
+Sir Hops-a-Lot (Cofagrigus) (F) @ Chesto Berry
+Ability: Mummy
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Body Press
+- Rest
+- Shadow Ball
+- Iron Defense
+end
+choice p1 team 5641
+choice p2 team 1562
+choice p1 switch toxtricity ,  move Psyshock -1
+choice p2 move 1, move 4 -1
+choice p1 switch 3, pass
+choice p2 move 3, switch 4
+choice p1 move Stone Axe -2,move 2
+choice p1 pass, switch 4
+choice p2 move 1, move 1 -1
+choice p1 move 2 1, move 2 -1
+choice p2 switch 4, pass
+choice p1 move Stone Axe -2 ,  move Poltergeist +2
+choice p2 move 2 +2 ,  move Swords Dance
+choice p1 move 4 1, pass
+choice p2 switch 3, move 1 -1
+choice p2 switch 3, pass
+choice p1 move 2 2, pass
+choice p2 move 3 1, move 4 1
+choice p1 move 1 1, pass
+choice p2 move Flash Cannon +1 ,  skip
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Gourgeist, L50, F|
+expect |poke|p1|Skarmory, L50, M|
+expect |poke|p1|Pinsir, L50, M|
+expect |poke|p1|Toxtricity, L50, F|
+expect |poke|p1|Kleavor, L50, M|
+expect |poke|p1|Gardevoir, L50, M|
+expect |poke|p2|Milotic, L50, M|
+expect |poke|p2|Rillaboom, L50, M, shiny|
+expect |poke|p2|Sirfetch’d, L50, F|
+expect |poke|p2|Malamar, L50, F|
+expect |poke|p2|Hydreigon, L50, F|
+expect |poke|p2|Cofagrigus, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: X|Kleavor, L50, M|147/147
+expect |switch|p1a: X|Kleavor, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Gardevoir|Gardevoir, L50, M|145/145
+expect |switch|p1b: Gardevoir|Gardevoir, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Nibbles|Milotic, L50, M|202/202
+expect |switch|p2a: Nibbles|Milotic, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Hydreigon|Hydreigon, L50, F|169/169
+expect |switch|p2b: Hydreigon|Hydreigon, L50, F|100/100
+expect |rng|2|0
+expect |-ability|p1b: Gardevoir|Competitive|Trace|[from] ability: Trace|[of] p2a: Nibbles
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Toxtricity|Toxtricity, L50, F|152/152
+expect |switch|p1a: Toxtricity|Toxtricity, L50, F|100/100
+expect |move|p2b: Hydreigon|Draco Meteor|p2a: Nibbles
+expect |rng|100|88
+expect |rng|24|16
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Nibbles|96/202
+expect |-damage|p2a: Nibbles|47/100
+expect |rng|100|40
+expect |-unboost|p2b: Hydreigon|spa|2
+expect |move|p1b: Gardevoir|Psyshock|p1a: Toxtricity
+expect |rng|100|94
+expect |rng|24|4
+expect |rng|16|0
+expect |-supereffective|p1a: Toxtricity|1
+expect |split|p1
+expect |-damage|p1a: Toxtricity|0 fnt
+expect |-damage|p1a: Toxtricity|0 fnt
+expect |faint|p1a: Toxtricity
+expect |move|p2a: Nibbles|Haze|p2a: Nibbles
+expect |-clearallboost
+expect |
+expect |split|p2
+expect |-heal|p2a: Nibbles|108/202|[from] item: Leftovers
+expect |-heal|p2a: Nibbles|53/100|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: X|Kleavor, L50, M|147/147
+expect |switch|p1a: X|Kleavor, L50, M|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Rillaboom|Rillaboom, L50, M, shiny|177/177
+expect |switch|p2b: Rillaboom|Rillaboom, L50, M, shiny|100/100
+expect |-fieldstart|move: Grassy Terrain|[from] ability: Grassy Surge|[of] p2b: Rillaboom
+expect |move|p1a: X|Stone Axe|p1b: Gardevoir
+expect |rng|100|48
+expect |rng|24|5
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Gardevoir|0 fnt
+expect |-damage|p1b: Gardevoir|0 fnt
+expect |rng|100|77
+expect |-sidestart|p2: p2|move: Stealth Rock
+expect |faint|p1b: Gardevoir
+expect |split|p1
+expect |-damage|p1a: X|133/147|[from] item: Life Orb
+expect |-damage|p1a: X|90/100|[from] item: Life Orb
+expect |move|p2a: Nibbles|Recover|p2a: Nibbles
+expect |split|p2
+expect |-heal|p2a: Nibbles|202/202
+expect |-heal|p2a: Nibbles|100/100
+expect |
+expect |split|p1
+expect |-heal|p1a: X|142/147|[from] Grassy Terrain
+expect |-heal|p1a: X|96/100|[from] Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sir Hops-a-Lot|Gourgeist, L50, F|142/142
+expect |switch|p1b: Sir Hops-a-Lot|Gourgeist, L50, F|100/100
+expect |-item|p2a: Nibbles|Leftovers|[from] ability: Frisk|[of] p1b: Sir Hops-a-Lot
+expect |-item|p2b: Rillaboom|Miracle Seed|[from] ability: Frisk|[of] p1b: Sir Hops-a-Lot
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: X|X-Scissor|p2a: Nibbles
+expect |rng|100|6
+expect |rng|24|19
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Nibbles|34/202
+expect |-damage|p2a: Nibbles|16/100
+expect |split|p1
+expect |-damage|p1a: X|128/147|[from] item: Life Orb
+expect |-damage|p1a: X|87/100|[from] item: Life Orb
+expect |move|p1b: Sir Hops-a-Lot|Leech Seed|p1a: X|[miss]
+expect |rng|100|93
+expect |-miss|p1b: Sir Hops-a-Lot|p1a: X
+expect |move|p2b: Rillaboom|Wood Hammer|p2a: Nibbles
+expect |rng|100|48
+expect |rng|24|1
+expect |rng|16|9
+expect |-supereffective|p2a: Nibbles|1
+expect |split|p2
+expect |-damage|p2a: Nibbles|0 fnt
+expect |-damage|p2a: Nibbles|0 fnt
+expect |faint|p2a: Nibbles
+expect |split|p2
+expect |-damage|p2b: Rillaboom|166/177|[from] Recoil
+expect |-damage|p2b: Rillaboom|93/100|[from] Recoil
+expect |
+expect |split|p1
+expect |-heal|p1a: X|137/147|[from] Grassy Terrain
+expect |-heal|p1a: X|93/100|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2b: Rillaboom|177/177|[from] Grassy Terrain
+expect |-heal|p2b: Rillaboom|100/100|[from] Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Hydreigon|Hydreigon, L50, F|169/169
+expect |switch|p2a: Hydreigon|Hydreigon, L50, F|100/100
+expect |split|p2
+expect |-damage|p2a: Hydreigon|148/169|[from] Stealth Rock
+expect |-damage|p2a: Hydreigon|87/100|[from] Stealth Rock
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Hydreigon|Fire Blast|p1b: Sir Hops-a-Lot
+expect |rng|100|15
+expect |rng|24|6
+expect |rng|16|0
+expect |-supereffective|p1b: Sir Hops-a-Lot|1
+expect |split|p1
+expect |-damage|p1b: Sir Hops-a-Lot|0 fnt
+expect |-damage|p1b: Sir Hops-a-Lot|0 fnt
+expect |rng|100|31
+expect |faint|p1b: Sir Hops-a-Lot
+expect |move|p1a: X|Stone Axe|p1: Sir Hops-a-Lot|[notarget]
+expect |-fail|p1a: X
+expect |move|p2b: Rillaboom|Swords Dance|p2b: Rillaboom
+expect |-boost|p2b: Rillaboom|atk|2
+expect |
+expect |split|p1
+expect |-heal|p1a: X|146/147|[from] Grassy Terrain
+expect |-heal|p1a: X|99/100|[from] Grassy Terrain
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Cofagrigus, L50, F|165/165
+expect |switch|p2a: Sir Hops-a-Lot|Cofagrigus, L50, F|100/100
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|145/165|[from] Stealth Rock
+expect |-damage|p2a: Sir Hops-a-Lot|87/100|[from] Stealth Rock
+expect |move|p1a: X|U-turn|p2a: Sir Hops-a-Lot
+expect |rng|100|28
+expect |rng|24|2
+expect |rng|16|0
+expect |-resisted|p2a: Sir Hops-a-Lot|1
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|110/165
+expect |-damage|p2a: Sir Hops-a-Lot|66/100
+expect |-activate|p2a: Sir Hops-a-Lot|ability: Mummy|p1a: X|[ability] Sharpness
+expect |split|p1
+expect |-damage|p1a: X|132/147|[from] item: Life Orb
+expect |-damage|p1a: X|89/100|[from] item: Life Orb
+expect |move|p2b: Rillaboom|Wood Hammer|p2a: Sir Hops-a-Lot
+expect |rng|100|26
+expect |rng|24|2
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|0 fnt
+expect |-damage|p2a: Sir Hops-a-Lot|0 fnt
+expect |-activate|p2a: Sir Hops-a-Lot|ability: Mummy|p2b: Rillaboom|[ability] Grassy Surge
+expect |faint|p2a: Sir Hops-a-Lot
+expect |split|p2
+expect |-damage|p2b: Rillaboom|141/177|[from] Recoil
+expect |-damage|p2b: Rillaboom|79/100|[from] Recoil
+expect |
+expect |split|p1
+expect |-heal|p1a: X|141/147|[from] Grassy Terrain
+expect |-heal|p1a: X|95/100|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2b: Rillaboom|152/177|[from] Grassy Terrain
+expect |-heal|p2b: Rillaboom|85/100|[from] Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Hydreigon|Hydreigon, L50, F|148/169
+expect |switch|p2a: Hydreigon|Hydreigon, L50, F|87/100
+expect |split|p2
+expect |-damage|p2a: Hydreigon|127/169|[from] Stealth Rock
+expect |-damage|p2a: Hydreigon|75/100|[from] Stealth Rock
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Hydreigon|Flash Cannon|p1a: X
+expect |rng|100|58
+expect |rng|24|19
+expect |rng|16|11
+expect |-supereffective|p1a: X|1
+expect |split|p1
+expect |-damage|p1a: X|15/147
+expect |-damage|p1a: X|10/100
+expect |rng|100|8
+expect |-unboost|p1a: X|spd|1
+expect |move|p1a: X|X-Scissor|p2b: Rillaboom
+expect |rng|100|71
+expect |rng|24|15
+expect |rng|16|2
+expect |-supereffective|p2b: Rillaboom|1
+expect |split|p2
+expect |-damage|p2b: Rillaboom|0 fnt
+expect |-damage|p2b: Rillaboom|0 fnt
+expect |faint|p2b: Rillaboom
+expect |split|p1
+expect |-damage|p1a: X|1/147|[from] item: Life Orb
+expect |-damage|p1a: X|1/100|[from] item: Life Orb
+expect |
+expect |split|p1
+expect |-heal|p1a: X|10/147|[from] Grassy Terrain
+expect |-heal|p1a: X|6/100|[from] Grassy Terrain
+expect |-fieldend|move: Grassy Terrain
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Hydreigon|Flash Cannon|p1a: X
+expect |rng|100|62
+expect |rng|24|12
+expect |rng|16|2
+expect |-supereffective|p1a: X|1
+expect |split|p1
+expect |-damage|p1a: X|0 fnt
+expect |-damage|p1a: X|0 fnt
+expect |rng|100|43
+expect |faint|p1a: X
+expect |
+expect |win|p2

@@ -1,0 +1,233 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9ou
+seed 1bca 093f b789 6c13
+genders drawn
+team p1
+Monferno @ Up-Grade
+Ability: Blaze
+Tera Type: Ghost
+EVs: 44 HP / 252 Atk / 116 Def / 19 SpA / 43 SpD / 27 Spe
+Hardy Nature
+- Stealth Rock
+
+Piplup (M) @ Light Clay
+Ability: Competitive
+Tera Type: Dark
+EVs: 7 HP / 63 Atk / 5 Def / 48 SpA / 10 SpD / 190 Spe
+Jolly Nature
+- Heal Bell
+- Power Trick
+- Bubble Beam
+end
+team p2
+Pikachu (Combusken) @ Throat Spray
+Ability: Speed Boost
+Tera Type: Stellar
+EVs: 55 HP / 19 Atk / 83 Def / 139 SpA / 167 SpD / 17 Spe
+Sassy Nature
+- Psyshock
+- Dragon Claw
+- Steel Wing
+- Apple Acid
+
+Ursaring
+Ability: Unnerve
+Tera Type: Rock
+EVs: 39 HP / 111 Atk / 193 Def / 48 SpA / 8 SpD / 78 Spe
+Bold Nature
+- Draco Meteor
+- Block
+- Bullet Seed
+- Moonblast
+end
+choice p1 team 12
+choice p2 team 12
+choice p1 move 1 terastallize
+choice p2 move 4
+choice p1 switch Piplup
+choice p2 switch 2
+choice p1 switch 2
+choice p2 move 3
+choice p1 switch 2
+choice p2 default
+choice p1 move 1
+choice p2 move 3 terastallize
+choice p1 switch 2
+choice p2 move 1
+choice p1 switch piplup
+choice p2 move 3
+choice p1 move 3
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] OU
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Endless Battle Clause: Forcing endless battles is banned
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|OHKO Clause: OHKO moves are banned
+expect |rule|Evasion Items Clause: Evasion items are banned
+expect |rule|Evasion Moves Clause: Evasion moves are banned
+expect |rule|Evasion Abilities Clause: Evasion abilities are banned
+expect |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+expect |clearpoke
+expect |poke|p1|Monferno, M|
+expect |poke|p1|Piplup, M|
+expect |poke|p2|Combusken, F|
+expect |poke|p2|Ursaring, F|
+expect |teampreview
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Monferno|Monferno, M|280/280
+expect |switch|p1a: Monferno|Monferno, M|100/100
+expect |split|p2
+expect |switch|p2a: Pikachu|Combusken, F|274/274
+expect |switch|p2a: Pikachu|Combusken, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p1a: Monferno|Ghost
+expect |move|p1a: Monferno|Stealth Rock|p2a: Pikachu
+expect |-sidestart|p2: p2|move: Stealth Rock
+expect |move|p2a: Pikachu|Apple Acid|p1a: Monferno
+expect |rng|100|89
+expect |rng|24|4
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Monferno|171/280
+expect |-damage|p1a: Monferno|62/100
+expect |rng|100|35
+expect |-unboost|p1a: Monferno|spd|1
+expect |
+expect |-ability|p2a: Pikachu|Speed Boost|boost
+expect |-boost|p2a: Pikachu|spe|1
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Piplup|Piplup, M|248/248
+expect |switch|p1a: Piplup|Piplup, M|100/100
+expect |split|p2
+expect |switch|p2a: Ursaring|Ursaring, F|330/330
+expect |switch|p2a: Ursaring|Ursaring, F|100/100
+expect |-ability|p2a: Ursaring|Unnerve
+expect |split|p2
+expect |-damage|p2a: Ursaring|289/330|[from] Stealth Rock
+expect |-damage|p2a: Ursaring|88/100|[from] Stealth Rock
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Monferno|Monferno, M, tera:Ghost|171/280
+expect |switch|p1a: Monferno|Monferno, M, tera:Ghost|62/100
+expect |move|p2a: Ursaring|Bullet Seed|p1a: Monferno
+expect |rng|100|14
+expect |rng|20|6
+expect |rng|24|15
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Monferno|135/280
+expect |-damage|p1a: Monferno|49/100
+expect |rng|24|13
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Monferno|100/280
+expect |-damage|p1a: Monferno|36/100
+expect |-hitcount|p1a: Monferno|2
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Piplup|Piplup, M|248/248
+expect |switch|p1a: Piplup|Piplup, M|100/100
+expect |move|p2a: Ursaring|Draco Meteor|p1a: Piplup|[miss]
+expect |rng|100|96
+expect |-miss|p2a: Ursaring|p1a: Piplup
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |-terastallize|p2a: Ursaring|Rock
+expect |move|p1a: Piplup|Heal Bell||[still]
+expect |-activate|p1a: Piplup|move: Heal Bell
+expect |-fail|p1a: Piplup
+expect |move|p2a: Ursaring|Bullet Seed|p1a: Piplup
+expect |rng|100|85
+expect |rng|20|6
+expect |rng|24|21
+expect |rng|16|1
+expect |-supereffective|p1a: Piplup
+expect |split|p1
+expect |-damage|p1a: Piplup|162/248
+expect |-damage|p1a: Piplup|66/100
+expect |rng|24|17
+expect |rng|16|6
+expect |-supereffective|p1a: Piplup
+expect |split|p1
+expect |-damage|p1a: Piplup|80/248
+expect |-damage|p1a: Piplup|33/100
+expect |-hitcount|p1a: Piplup|2
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Monferno|Monferno, M, tera:Ghost|100/280
+expect |switch|p1a: Monferno|Monferno, M, tera:Ghost|36/100
+expect |move|p2a: Ursaring|Draco Meteor|p1a: Monferno
+expect |rng|100|61
+expect |rng|24|23
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Monferno|0 fnt
+expect |-damage|p1a: Monferno|0 fnt
+expect |rng|100|60
+expect |-unboost|p2a: Ursaring|spa|2
+expect |faint|p1a: Monferno
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Piplup|Piplup, M|80/248
+expect |switch|p1a: Piplup|Piplup, M|33/100
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1a: Piplup|Bubble Beam|p2a: Ursaring
+expect |rng|100|44
+expect |rng|24|3
+expect |rng|16|15
+expect |-supereffective|p2a: Ursaring
+expect |split|p2
+expect |-damage|p2a: Ursaring|173/330
+expect |-damage|p2a: Ursaring|53/100
+expect |rng|100|69
+expect |move|p2a: Ursaring|Bullet Seed|p1a: Piplup
+expect |rng|100|50
+expect |rng|20|14
+expect |rng|24|5
+expect |rng|16|6
+expect |-supereffective|p1a: Piplup
+expect |split|p1
+expect |-damage|p1a: Piplup|0 fnt
+expect |-damage|p1a: Piplup|0 fnt
+expect |faint|p1a: Piplup
+expect |-hitcount|p1: Piplup|1
+expect |
+expect |win|p2

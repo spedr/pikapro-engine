@@ -1,0 +1,436 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 65ae 8585 5255 3e0c
+genders drawn
+team p1
+Blastoise @ Blastoisinite
+Ability: Rain Dish
+Level: 50
+Tera Type: Stellar
+EVs: 9 HP / 10 Atk / 13 Def / 14 SpA / 4 SpD / 10 Spe
+Hasty Nature
+- Charge
+
+Mr. Bubbles (Slowking-Galar) @ King's Rock
+Ability: Regenerator
+Level: 50
+Tera Type: Rock
+EVs: 20 HP / 3 Def / 8 SpA / 7 SpD / 28 Spe
+Hasty Nature
+- Spirit Shackle
+- Aqua Cutter
+- Pluck
+
+Meganium @ Meganiumite
+Ability: Overgrow
+Level: 50
+Tera Type: Flying
+EVs: 15 HP / 1 Def / 11 SpA / 29 SpD / 8 Spe
+Mild Nature
+- Growth
+- Solar Beam
+- Synthesis
+- Weather Ball
+
+Zoë (Vanilluxe) (M)
+Ability: Ice Body
+Level: 50
+Shiny: Yes
+Tera Type: Fairy
+EVs: 2 HP / 11 Atk / 29 Def / 5 SpA / 2 SpD / 8 Spe
+Quiet Nature
+- Moonblast
+- Dragon Pulse
+
+Scovillain @ Scovillainite
+Ability: Chlorophyll
+Level: 50
+Shiny: Yes
+Tera Type: Psychic
+EVs: 13 HP / 10 Atk / 8 Def / 4 SpA / 25 SpD / 2 Spe
+Lonely Nature
+- Rain Dance
+- Snowscape
+- Sandstorm
+- Sunny Day
+
+Sir Hops-a-Lot (Sceptile) @ Sceptilite
+Ability: Overgrow
+Level: 50
+Tera Type: Flying
+EVs: 31 HP / 3 Atk / 7 Def / 12 SpD / 3 Spe
+Relaxed Nature
+- Trick Room
+- Tearful Look
+- Double-Edge
+- Zing Zap
+end
+team p2
+Rampardos (M) @ Muscle Band
+Ability: Mold Breaker
+Level: 50
+Tera Type: Ice
+EVs: 30 HP / 27 Atk / 4 Def / 1 SpD / 3 Spe
+Careful Nature
+- Heat Crash
+- Electro Shot
+- Magnet Rise
+
+Nibbles (Dragonite) (F) @ Iron Ball
+Ability: Inner Focus
+Level: 50
+Tera Type: Normal
+EVs: 28 HP / 1 Def / 2 SpA / 24 SpD / 10 Spe
+Sassy Nature
+- Reversal
+- Snap Trap
+- Fake Tears
+- Guard Swap
+
+Lucario
+Ability: Justified
+Level: 50
+Tera Type: Fairy
+EVs: 16 HP / 7 Atk / 8 Def / 1 SpA / 2 SpD / 26 Spe
+Modest Nature
+- Extreme Speed
+- Pollen Puff
+- Crush Claw
+
+Meganium @ Meganiumite
+Ability: Overgrow
+Level: 50
+Tera Type: Psychic
+EVs: 1 HP / 15 Atk / 9 Def / 12 SpA / 20 SpD / 7 Spe
+Calm Nature
+- Growth
+- Solar Beam
+- Synthesis
+- Weather Ball
+
+Pikachu (Excadrill) (F)
+Ability: Sand Force
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 5 HP / 24 Atk / 31 Def / 3 SpA / 1 SpD
+Timid Nature
+- Rain Dance
+- Snowscape
+- Sandstorm
+- Sunny Day
+
+Ariados (M) @ Leek
+Ability: Swarm
+Level: 50
+Tera Type: Fighting
+EVs: 3 HP / 23 Atk / 15 Def / 4 SpA / 9 SpD / 3 Spe
+Brave Nature
+- Court Change
+- Skitter Smack
+- Water Pulse
+end
+choice p1 team 4326
+choice p2 team 5426
+choice p1 move 2 1, move 4 -1 mega
+choice p2 move 1, move 2 -1 mega
+choice p1 switch Sir Hops-a-Lot
+choice p2 move 1, move 3
+choice p1 move 3 -2, move 4 2
+choice p2 move 1, move 3
+choice p1 move 2 2, move 4 -1
+choice p1 default
+choice p2 move 2, move 2 2
+choice p1 move 2 +1, move 4 -1
+choice p2 switch 4,skip
+choice p1 move 1 1, move 4 1
+choice p2 default
+choice p2 switch 3, pass
+choice p1 move 3 1, move 1
+choice p2 move 3 1, move 3
+choice p1 move 3 1, move 2 -1
+choice p2 move 3 -2, move 4 2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Blastoise, L50, F|
+expect |poke|p1|Slowking-Galar, L50, M|
+expect |poke|p1|Meganium, L50, M|
+expect |poke|p1|Vanilluxe, L50, M, shiny|
+expect |poke|p1|Scovillain, L50, F, shiny|
+expect |poke|p1|Sceptile, L50, F|
+expect |poke|p2|Rampardos, L50, M|
+expect |poke|p2|Dragonite, L50, F|
+expect |poke|p2|Lucario, L50, F|
+expect |poke|p2|Meganium, L50, F|
+expect |poke|p2|Excadrill, L50, F, shiny|
+expect |poke|p2|Ariados, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Zoë|Vanilluxe, L50, M, shiny|148/148
+expect |switch|p1a: Zoë|Vanilluxe, L50, M, shiny|100/100
+expect |split|p1
+expect |switch|p1b: Meganium|Meganium, L50, M|170/170
+expect |switch|p1b: Meganium|Meganium, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Pikachu|Excadrill, L50, F, shiny|190/190
+expect |switch|p2a: Pikachu|Excadrill, L50, F, shiny|100/100
+expect |split|p2
+expect |switch|p2b: Meganium|Meganium, L50, F|156/156
+expect |switch|p2b: Meganium|Meganium, L50, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |detailschange|p1b: Meganium|Meganium-Mega, L50, M
+expect |-mega|p1b: Meganium|Meganium|Meganiumite
+expect |detailschange|p2b: Meganium|Meganium-Mega, L50, F
+expect |-mega|p2b: Meganium|Meganium|Meganiumite
+expect |move|p2a: Pikachu|Rain Dance|p2a: Pikachu
+expect |-weather|RainDance
+expect |move|p1b: Meganium|Weather Ball|p1a: Zoë
+expect |rng|100|24
+expect |rng|24|14
+expect |rng|16|12
+expect |-supereffective|p1a: Zoë|1
+expect |split|p1
+expect |-damage|p1a: Zoë|0 fnt
+expect |-damage|p1a: Zoë|0 fnt
+expect |faint|p1a: Zoë
+expect |move|p2b: Meganium|Solar Beam||[still]
+expect |-prepare|p2b: Meganium|Solar Beam
+expect |-activate|p2b: Meganium|ability: Mega Sol
+expect |-anim|p2b: Meganium|Solar Beam|p2a: Pikachu
+expect |rng|100|31
+expect |rng|24|7
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Pikachu|42/190
+expect |-damage|p2a: Pikachu|22/100
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sir Hops-a-Lot|Sceptile, L50, F|176/176
+expect |switch|p1a: Sir Hops-a-Lot|Sceptile, L50, F|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Sir Hops-a-Lot|Double-Edge|p1b: Meganium
+expect |rng|100|65
+expect |rng|24|3
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Meganium|122/170
+expect |-damage|p1b: Meganium|71/100
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|160/176|[from] Recoil
+expect |-damage|p1a: Sir Hops-a-Lot|90/100|[from] Recoil
+expect |move|p2a: Pikachu|Rain Dance||[still]
+expect |-fail|p2a: Pikachu
+expect |move|p1b: Meganium|Weather Ball|p2b: Meganium
+expect |rng|100|8
+expect |rng|24|8
+expect |rng|16|5
+expect |-supereffective|p2b: Meganium|1
+expect |split|p2
+expect |-damage|p2b: Meganium|12/156
+expect |-damage|p2b: Meganium|7/100
+expect |move|p2b: Meganium|Synthesis|p2b: Meganium
+expect |-activate|p2b: Meganium|ability: Mega Sol
+expect |split|p2
+expect |-heal|p2b: Meganium|116/156
+expect |-heal|p2b: Meganium|74/100
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Sir Hops-a-Lot|Tearful Look|p2b: Meganium
+expect |-unboost|p2b: Meganium|atk|1
+expect |-unboost|p2b: Meganium|spa|1
+expect |move|p2a: Pikachu|Rain Dance||[still]
+expect |-fail|p2a: Pikachu
+expect |move|p1b: Meganium|Weather Ball|p1a: Sir Hops-a-Lot
+expect |rng|100|51
+expect |rng|24|12
+expect |rng|16|14
+expect |-supereffective|p1a: Sir Hops-a-Lot|1
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|0 fnt
+expect |-damage|p1a: Sir Hops-a-Lot|0 fnt
+expect |faint|p1a: Sir Hops-a-Lot
+expect |move|p2b: Meganium|Synthesis|p2b: Meganium
+expect |-activate|p2b: Meganium|ability: Mega Sol
+expect |split|p2
+expect |-heal|p2b: Meganium|156/156
+expect |-heal|p2b: Meganium|100/100
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Mr. Bubbles|Slowking-Galar, L50, M|190/190
+expect |switch|p1a: Mr. Bubbles|Slowking-Galar, L50, M|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Pikachu|Snowscape|p2a: Pikachu
+expect |-weather|Snowscape
+expect |move|p1b: Meganium|Weather Ball|p1a: Mr. Bubbles
+expect |rng|100|1
+expect |rng|24|21
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|100/190
+expect |-damage|p1a: Mr. Bubbles|52/100
+expect |move|p2b: Meganium|Solar Beam||[still]
+expect |-prepare|p2b: Meganium|Solar Beam
+expect |-activate|p2b: Meganium|ability: Mega Sol
+expect |-anim|p2b: Meganium|Solar Beam|p1b: Meganium
+expect |rng|100|18
+expect |rng|24|2
+expect |rng|16|15
+expect |-resisted|p1b: Meganium|1
+expect |split|p1
+expect |-damage|p1b: Meganium|98/170
+expect |-damage|p1b: Meganium|57/100
+expect |move|p1a: Mr. Bubbles|Aqua Cutter|p2a: Pikachu
+expect |rng|100|56
+expect |rng|8|0
+expect |rng|16|14
+expect |-supereffective|p2a: Pikachu|1
+expect |-crit|p2a: Pikachu
+expect |split|p2
+expect |-damage|p2a: Pikachu|0 fnt
+expect |-damage|p2a: Pikachu|0 fnt
+expect |rng|100|17
+expect |faint|p2a: Pikachu
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Ariados|Ariados, L50, M|148/148
+expect |switch|p2a: Ariados|Ariados, L50, M|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1b: Meganium|Weather Ball|p2a: Ariados
+expect |rng|100|98
+expect |rng|24|4
+expect |rng|16|5
+expect |-supereffective|p2a: Ariados|1
+expect |split|p2
+expect |-damage|p2a: Ariados|0 fnt
+expect |-damage|p2a: Ariados|0 fnt
+expect |faint|p2a: Ariados
+expect |rng|1|0
+expect |move|p2b: Meganium|Growth|p2b: Meganium
+expect |-boost|p2b: Meganium|atk|2
+expect |-boost|p2b: Meganium|spa|2
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Mr. Bubbles|Spirit Shackle|p2b: Meganium
+expect |rng|100|45
+expect |rng|24|23
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Meganium|134/156
+expect |-damage|p2b: Meganium|85/100
+expect |rng|100|19
+expect |-activate|p2b: Meganium|trapped
+expect |rng|100|18
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Nibbles|Dragonite, L50, F|194/194
+expect |switch|p2a: Nibbles|Dragonite, L50, F|100/100
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p1b: Meganium|Growth|p1b: Meganium
+expect |-boost|p1b: Meganium|atk|2
+expect |-boost|p1b: Meganium|spa|2
+expect |move|p2b: Meganium|Synthesis|p2b: Meganium
+expect |-activate|p2b: Meganium|ability: Mega Sol
+expect |split|p2
+expect |-heal|p2b: Meganium|156/156
+expect |-heal|p2b: Meganium|100/100
+expect |move|p1a: Mr. Bubbles|Pluck|p2a: Nibbles
+expect |rng|100|72
+expect |rng|24|15
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Nibbles|174/194
+expect |-damage|p2a: Nibbles|89/100
+expect |rng|100|20
+expect |move|p2a: Nibbles|Fake Tears|p1a: Mr. Bubbles
+expect |rng|100|76
+expect |-unboost|p1a: Mr. Bubbles|spd|2
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1b: Meganium|Solar Beam||[still]
+expect |-prepare|p1b: Meganium|Solar Beam
+expect |-activate|p1b: Meganium|ability: Mega Sol
+expect |-anim|p1b: Meganium|Solar Beam|p1a: Mr. Bubbles
+expect |rng|100|94
+expect |rng|24|21
+expect |rng|16|6
+expect |-resisted|p1a: Mr. Bubbles|1
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|0 fnt
+expect |-damage|p1a: Mr. Bubbles|0 fnt
+expect |faint|p1a: Mr. Bubbles
+expect |move|p2b: Meganium|Weather Ball|p1b: Meganium
+expect |rng|100|58
+expect |rng|24|6
+expect |rng|16|7
+expect |-supereffective|p1b: Meganium|1
+expect |split|p1
+expect |-damage|p1b: Meganium|0 fnt
+expect |-damage|p1b: Meganium|0 fnt
+expect |faint|p1b: Meganium
+expect |
+expect |win|p2

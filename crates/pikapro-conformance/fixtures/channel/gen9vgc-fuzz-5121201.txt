@@ -1,0 +1,1043 @@
+# Recorded by channel_conformance. Do not edit by hand.
+format gen9vgc
+source fuzz
+seed 5121201
+options factored row percent
+player p1
+line |t:|0
+line |gametype|doubles
+line |player|p1|p1||
+line |player|p2|p2||
+line |gen|9
+line |tier|[Gen 9] Doubles Custom Game
+line |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+line |clearpoke
+line |poke|p1|Lokix, L50, M|
+line |poke|p1|Noctowl, L50, F|
+line |poke|p1|Volbeat, L50, M|
+line |poke|p1|Salamence, L50, F|
+line |poke|p1|Azurill, L50, M|
+line |poke|p1|Cramorant, L50, M|
+line |poke|p2|Applin, L50, M|
+line |poke|p2|Sliggoo, L50, M|
+line |poke|p2|Fraxure, L50, M|
+line |poke|p2|Totodile, L50, F|
+line |poke|p2|Vivillon-Monsoon, L50, M|
+line |poke|p2|Tyrogue, L50, M|
+line |teampreview|4
+line |showteam|p1|Mr. Bubbles|Lokix||TintedLens|SecretSword|Bold|21,190,29,9,237,8|M|||50|,,,,,Ice]Noctowl||GalaricaWreath|Insomnia|GrassyTerrain,BeakBlast,Pound|Relaxed|2,,3,134,156,215|F||S|50|,,,,,Fire]Chomp|Volbeat|Protector|Prankster|Dig,Electroweb,StruggleBug,FreezingGlare|Quiet|39,107,126,32,11,180||||50|,,,,,Stellar]Salamence|||Intimidate|Soak,ThunderWave|Sassy|230,13,1,168,2,91||||50|,,,,,Normal]Azurill|||HugePower|RainDance,FlashCannon,SteelBeam|Brave|28,72,40,14,239,76|M|||50|,,,,,Steel]Cramorant|||GulpMissile|FireFang|Serious|2,1,18,233,46,210|M|||50|,,,,,Dark
+line |showteam|p2|Pikachu|Applin|PokeBall|Ripen|Waterfall,Sandstorm|Impish|56,22,101,49,134,53||||50|,,,,,Dragon]Zoë|Sliggoo||SapSipper|PsychoCut,DualWingbeat|Careful|17,32,3,69,135,249||||50|,,,,,Stellar]X|Fraxure||MoldBreaker|Fling,Struggle,BugBuzz,PrismaticLaser|Modest|37,227,187,12,7,38||||50|,,,,,Normal]Totodile|||Torrent|PsychicNoise,Strength,ClearSmog,MakeItRain|Bashful|65,44,147,112,3,125|F|||50|,,,,,Flying]Vivillon-Monsoon||Electirizer|FriendGuard|Spite,AuraWheel|Careful|214,57,46,12,76,49||||50|,,,,,Grass]Sir Hops-a-Lot|Tyrogue|FlowerSweet|VitalSpirit|JetPunch,CottonGuard|Careful|152,10,17,114,189,15|M|||50|,,,,,Psychic
+line |request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"149/149","active":true,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"175/175","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Volbeat, L50, M","condition":"145/145","active":false,"stats":{"atk":106,"def":111,"spa":78,"spd":106,"spe":115},"moves":["dig","electroweb","strugglebug","freezingglare"],"baseAbility":"prankster","item":"protector","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"199/199","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Azurill","details":"Azurill, L50, M","condition":"129/129","active":false,"stats":{"atk":53,"def":65,"spa":42,"spd":90,"spe":45},"moves":["raindance","flashcannon","steelbeam"],"baseAbility":"hugepower","item":"","pokeball":"pokeball","ability":"hugepower","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"145/145","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 4c9e547542e3eca9
+line |
+line |t:|0
+line |teamsize|p1|4
+line |teamsize|p2|4
+line |start
+line |switch|p1a: Salamence|Salamence, L50, F|199/199
+line |switch|p1b: Cramorant|Cramorant, L50, M|145/145
+line |switch|p2a: Zoë|Sliggoo, L50, M|145/145
+line |switch|p2b: Totodile|Totodile, L50, F|133/133
+line |-ability|p1a: Salamence|Intimidate|boost
+line |-unboost|p2a: Zoë|atk|1
+line |-unboost|p2b: Totodile|atk|1
+line |turn|1
+line |request|{"active":[{"moves":[{"move":"Soak","id":"soak","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Normal"},{"moves":[{"move":"Fire Fang","id":"firefang","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Dark"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"199/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"145/145","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"175/175","active":false,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"149/149","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 77a8616e06adc8df
+line |
+line |t:|0
+line |switch|p1b: Mr. Bubbles|Lokix, L50, M|149/149
+line |switch|p2a: Sir Hops-a-Lot|Tyrogue, L50, M|129/129
+line |-terastallize|p2b: Totodile|Flying
+line |move|p1a: Salamence|Soak|p2b: Totodile
+line |-fail|p2b: Totodile
+line |move|p2b: Totodile|Strength|p1b: Mr. Bubbles
+line |-damage|p1b: Mr. Bubbles|131/149
+line |
+line |upkeep
+line |turn|2
+line |request|{"active":[{"moves":[{"move":"Soak","id":"soak","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Normal"},{"moves":[{"move":"Secret Sword","id":"secretsword","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"199/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"131/149","active":true,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"175/175","active":false,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"145/145","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 962bb128eee7e06d
+line |
+line |t:|0
+line |switch|p1b: Noctowl|Noctowl, L50, F, shiny|175/175
+line |move|p1a: Salamence|Thunder Wave|p1b: Noctowl
+line |-status|p1b: Noctowl|par
+line |move|p2b: Totodile|Strength|p1a: Salamence
+line |-damage|p1a: Salamence|179/199
+line |move|p2a: Sir Hops-a-Lot|Cotton Guard|p2a: Sir Hops-a-Lot
+line |-boost|p2a: Sir Hops-a-Lot|def|3
+line |
+line |upkeep
+line |turn|3
+line |request|{"active":[{"moves":[{"move":"Soak","id":"soak","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":31,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Normal"},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":56,"maxpp":56,"target":"normal","disabled":false}],"canTerastallize":"Fire"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"179/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"175/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"131/149","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"145/145","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision f29f929cd6691881
+line |
+line |t:|0
+line |-terastallize|p1b: Noctowl|Fire
+line |move|p2a: Sir Hops-a-Lot|Jet Punch|p2b: Totodile
+line |-damage|p2b: Totodile|120/133
+line |move|p1a: Salamence|Soak|p2a: Sir Hops-a-Lot
+line |-start|p2a: Sir Hops-a-Lot|typechange|Water
+line |move|p2b: Totodile|Clear Smog|p1b: Noctowl
+line |-damage|p1b: Noctowl|163/175 par
+line |-clearboost|p1b: Noctowl
+line |move|p1b: Noctowl|Pound|p2b: Totodile
+line |-damage|p2b: Totodile|101/133
+line |
+line |upkeep
+line |turn|4
+line |request|{"active":[{"moves":[{"move":"Soak","id":"soak","pp":30,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":31,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":55,"maxpp":56,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"179/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"163/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"131/149","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"145/145","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision b9adb4d934291db5
+line |
+line |t:|0
+line |switch|p2a: Zoë|Sliggoo, L50, M|145/145
+line |switch|p1b: Mr. Bubbles|Lokix, L50, M|131/149
+line |move|p1a: Salamence|Soak|p2a: Zoë
+line |-start|p2a: Zoë|typechange|Water
+line |move|p2b: Totodile|Make It Rain|p1a: Salamence|[spread] p1a,p1b
+line |-damage|p1a: Salamence|153/199
+line |-damage|p1b: Mr. Bubbles|103/149
+line |-unboost|p2b: Totodile|spa|1
+line |
+line |upkeep
+line |turn|5
+line |request|{"active":[{"moves":[{"move":"Soak","id":"soak","pp":29,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":31,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Secret Sword","id":"secretsword","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"153/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"103/149","active":true,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"163/175 par","active":false,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"145/145","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 4aaa25389d2bc0d9
+line |
+line |t:|0
+line |switch|p1b: Cramorant|Cramorant, L50, M|145/145
+line |switch|p2a: X|Fraxure, L50, M|146/146
+line |-ability|p2a: X|Mold Breaker
+line |switch|p2b: Sir Hops-a-Lot|Tyrogue, L50, M|129/129
+line |move|p1a: Salamence|Soak|p2b: Sir Hops-a-Lot
+line |-start|p2b: Sir Hops-a-Lot|typechange|Water
+line |
+line |upkeep
+line |turn|6
+line |request|{"active":[{"moves":[{"move":"Soak","id":"soak","pp":28,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":31,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Fang","id":"firefang","pp":24,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"153/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"145/145","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"163/175 par","active":false,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"103/149","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 8cf7eef8ea3020fa
+line |
+line |t:|0
+line |switch|p1b: Noctowl|Noctowl, L50, F, shiny, tera:Fire|163/175 par
+line |move|p1a: Salamence|Thunder Wave|p2a: X
+line |-status|p2a: X|par
+line |move|p2b: Sir Hops-a-Lot|Cotton Guard|p2b: Sir Hops-a-Lot
+line |-boost|p2b: Sir Hops-a-Lot|def|3
+line |-activate|p2a: X|move: Struggle
+line |move|p2a: X|Struggle|p1b: Noctowl
+line |-damage|p1b: Noctowl|123/175 par
+line |-damage|p2a: X|109/146 par|[from] recoil
+line |
+line |upkeep
+line |turn|7
+line |request|{"active":[{"moves":[{"move":"Soak","id":"soak","pp":28,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":30,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":55,"maxpp":56,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"153/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"123/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"145/145","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"103/149","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision ef05878093c3eb2f
+line |
+line |t:|0
+line |move|p2b: Sir Hops-a-Lot|Jet Punch|p1a: Salamence
+line |-resisted|p1a: Salamence
+line |-damage|p1a: Salamence|142/199
+line |move|p1a: Salamence|Thunder Wave|p1b: Noctowl|[miss]
+line |-miss|p1a: Salamence|p1b: Noctowl
+line |move|p1b: Noctowl|Grassy Terrain|p1b: Noctowl
+line |-fieldstart|move: Grassy Terrain
+line |move|p2a: X|Fling||[still]
+line |-fail|p2a: X
+line |
+line |-heal|p1b: Noctowl|133/175 par|[from] Grassy Terrain
+line |-heal|p2a: X|118/146 par|[from] Grassy Terrain
+line |upkeep
+line |turn|8
+line |request|{"active":[{"moves":[{"move":"Soak","id":"soak","pp":28,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":29,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":15,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":55,"maxpp":56,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"142/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"133/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"145/145","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"103/149","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 7f253d386ba34565
+line |
+line |t:|0
+line |move|p2b: Sir Hops-a-Lot|Jet Punch|p1b: Noctowl
+line |-supereffective|p1b: Noctowl
+line |-damage|p1b: Noctowl|77/175 par
+line |move|p1a: Salamence|Soak|p2a: X
+line |-start|p2a: X|typechange|Water
+line |move|p1b: Noctowl|Pound|p2a: X
+line |-damage|p2a: X|103/146 par
+line |cant|p2a: X|par
+line |
+line |-heal|p1b: Noctowl|87/175 par|[from] Grassy Terrain
+line |-heal|p2a: X|112/146 par|[from] Grassy Terrain
+line |upkeep
+line |turn|9
+line |request|{"active":[{"moves":[{"move":"Soak","id":"soak","pp":27,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":29,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":15,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":54,"maxpp":56,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"142/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"87/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"145/145","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"103/149","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision b144fe8d7667473c
+line |
+line |t:|0
+line |move|p2b: Sir Hops-a-Lot|Jet Punch|p1a: Salamence
+line |-resisted|p1a: Salamence
+line |-damage|p1a: Salamence|132/199
+line |move|p1a: Salamence|Thunder Wave|p2b: Sir Hops-a-Lot
+line |-status|p2b: Sir Hops-a-Lot|par
+line |move|p1b: Noctowl|Pound|p1a: Salamence
+line |-damage|p1a: Salamence|116/199
+line |move|p2a: X|Prismatic Laser|p2b: Sir Hops-a-Lot
+line |-damage|p2b: Sir Hops-a-Lot|80/129 par
+line |-mustrecharge|p2a: X
+line |
+line |-heal|p1b: Noctowl|97/175 par|[from] Grassy Terrain
+line |-heal|p2a: X|121/146 par|[from] Grassy Terrain
+line |-heal|p2b: Sir Hops-a-Lot|88/129 par|[from] Grassy Terrain
+line |upkeep
+line |turn|10
+line |request|{"active":[{"moves":[{"move":"Soak","id":"soak","pp":27,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":28,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":15,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":53,"maxpp":56,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"116/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"97/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"145/145","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"103/149","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision b276a05746f77360
+line |
+line |t:|0
+line |switch|p1a: Cramorant|Cramorant, L50, M|145/145
+line |move|p2b: Sir Hops-a-Lot|Jet Punch|p1a: Cramorant
+line |-resisted|p1a: Cramorant
+line |-damage|p1a: Cramorant|131/145
+line |move|p1b: Noctowl|Pound|p2a: X
+line |-damage|p2a: X|105/146 par
+line |cant|p2a: X|recharge
+line |
+line |-heal|p1b: Noctowl|107/175 par|[from] Grassy Terrain
+line |-heal|p2a: X|114/146 par|[from] Grassy Terrain
+line |-heal|p2b: Sir Hops-a-Lot|96/129 par|[from] Grassy Terrain
+line |upkeep
+line |turn|11
+line |request|{"active":[{"moves":[{"move":"Fire Fang","id":"firefang","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":15,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":52,"maxpp":56,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"131/145","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"107/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"116/199","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"103/149","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision b811774a8e996dc1
+line |
+line |t:|0
+line |cant|p2b: Sir Hops-a-Lot|par
+line |move|p1a: Cramorant|Fire Fang|p2b: Sir Hops-a-Lot
+line |-resisted|p2b: Sir Hops-a-Lot
+line |-damage|p2b: Sir Hops-a-Lot|86/129 par
+line |move|p1b: Noctowl|Grassy Terrain||[still]
+line |-fail|p1b: Noctowl
+line |move|p2a: X|Fling||[still]
+line |-fail|p2a: X
+line |
+line |-heal|p1b: Noctowl|117/175 par|[from] Grassy Terrain
+line |-heal|p2a: X|123/146 par|[from] Grassy Terrain
+line |-heal|p2b: Sir Hops-a-Lot|94/129 par|[from] Grassy Terrain
+line |-fieldend|move: Grassy Terrain
+line |upkeep
+line |turn|12
+line |request|{"active":[{"moves":[{"move":"Fire Fang","id":"firefang","pp":23,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":14,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":52,"maxpp":56,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"131/145","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"117/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"116/199","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"103/149","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision e83cd3b216149e38
+line |
+line |t:|0
+line |-singleturn|p1b: Noctowl|move: Beak Blast
+line |move|p1a: Cramorant|Fire Fang|p2b: Sir Hops-a-Lot
+line |-resisted|p2b: Sir Hops-a-Lot
+line |-damage|p2b: Sir Hops-a-Lot|84/129 par
+line |cant|p2a: X|par
+line |move|p2b: Sir Hops-a-Lot|Cotton Guard|p2b: Sir Hops-a-Lot
+line |-boost|p2b: Sir Hops-a-Lot|def|3
+line |move|p1b: Noctowl|Beak Blast|p2b: Sir Hops-a-Lot
+line |-damage|p2b: Sir Hops-a-Lot|66/129 par
+line |
+line |upkeep
+line |turn|13
+line |request|{"active":[{"moves":[{"move":"Fire Fang","id":"firefang","pp":22,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":14,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":52,"maxpp":56,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"131/145","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"117/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"116/199","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"103/149","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 2797822f3dc78a7e
+line |
+line |t:|0
+line |switch|p1b: Mr. Bubbles|Lokix, L50, M|103/149
+line |move|p1a: Cramorant|Fire Fang|p2b: Sir Hops-a-Lot
+line |-resisted|p2b: Sir Hops-a-Lot
+line |-damage|p2b: Sir Hops-a-Lot|59/129 par
+line |cant|p2a: X|par
+line |move|p2b: Sir Hops-a-Lot|Cotton Guard|p2b: Sir Hops-a-Lot
+line |-boost|p2b: Sir Hops-a-Lot|def|0
+line |
+line |upkeep
+line |turn|14
+line |request|{"active":[{"moves":[{"move":"Fire Fang","id":"firefang","pp":21,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Secret Sword","id":"secretsword","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"131/145","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"103/149","active":true,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"116/199","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"117/175 par","active":false,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"}]}}
+decision 12798dcd67ba51c9
+line |
+line |t:|0
+line |switch|p2b: Zoë|Sliggoo, L50, M|145/145
+line |move|p1a: Cramorant|Fire Fang|p1b: Mr. Bubbles
+line |-supereffective|p1b: Mr. Bubbles
+line |-damage|p1b: Mr. Bubbles|55/149
+line |-status|p1b: Mr. Bubbles|brn
+line |move|p1b: Mr. Bubbles|Secret Sword|p1a: Cramorant
+line |-resisted|p1a: Cramorant
+line |-damage|p1a: Cramorant|99/145
+line |move|p2a: X|Bug Buzz|p1b: Mr. Bubbles
+line |-supereffective|p1b: Mr. Bubbles
+line |-damage|p1b: Mr. Bubbles|5/149 brn
+line |
+line |-damage|p1b: Mr. Bubbles|0 fnt|[from] brn
+line |faint|p1b: Mr. Bubbles
+line |upkeep
+line |request|{"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"99/145","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":true,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"116/199","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"117/175 par","active":false,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"}]},"noCancel":true}
+decision 2047c9aae9a97854
+line |
+line |t:|0
+line |switch|p1b: Noctowl|Noctowl, L50, F, shiny, tera:Fire|117/175 par
+line |turn|15
+line |request|{"active":[{"moves":[{"move":"Fire Fang","id":"firefang","pp":20,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":14,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":52,"maxpp":56,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"99/145","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"117/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"116/199","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 4a8c7dc6647d44ed
+line |
+line |t:|0
+line |switch|p1b: Salamence|Salamence, L50, F|116/199
+line |-ability|p1b: Salamence|Intimidate|boost
+line |-unboost|p2a: X|atk|1
+line |-unboost|p2b: Zoë|atk|1
+line |move|p1a: Cramorant|Fire Fang|p2a: X
+line |-resisted|p2a: X
+line |-damage|p2a: X|110/146 par
+line |move|p2b: Zoë|Psycho Cut|p2a: X
+line |-damage|p2a: X|93/146 par
+line |cant|p2a: X|par
+line |
+line |upkeep
+line |turn|16
+line |request|{"active":[{"moves":[{"move":"Fire Fang","id":"firefang","pp":19,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Soak","id":"soak","pp":27,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":28,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"99/145","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"116/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"117/175 par","active":false,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 816ca54ee701488d
+line |
+line |t:|0
+line |switch|p2b: Totodile|Totodile, L50, F, tera:Flying|101/133
+line |move|p1a: Cramorant|Fire Fang|p1b: Salamence
+line |-resisted|p1b: Salamence
+line |-damage|p1b: Salamence|101/199
+line |move|p1b: Salamence|Soak|p2a: X
+line |-fail|p2a: X
+line |move|p2a: X|Bug Buzz|p2b: Totodile
+line |-resisted|p2b: Totodile
+line |-damage|p2b: Totodile|83/133
+line |
+line |upkeep
+line |turn|17
+line |request|{"active":[{"moves":[{"move":"Fire Fang","id":"firefang","pp":18,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Soak","id":"soak","pp":26,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":28,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"99/145","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"101/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"117/175 par","active":false,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 60ab8334d47ea482
+line |
+line |t:|0
+line |move|p1a: Cramorant|Fire Fang|p2b: Totodile
+line |-damage|p2b: Totodile|54/133
+line |move|p1b: Salamence|Thunder Wave|p1a: Cramorant
+line |-status|p1a: Cramorant|par
+line |move|p2b: Totodile|Clear Smog|p1b: Salamence
+line |-crit|p1b: Salamence
+line |-damage|p1b: Salamence|77/199
+line |-clearboost|p1b: Salamence
+line |move|p2a: X|Fling||[still]
+line |-fail|p2a: X
+line |
+line |upkeep
+line |turn|18
+line |request|{"active":[{"moves":[{"move":"Fire Fang","id":"firefang","pp":17,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Soak","id":"soak","pp":26,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":27,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"99/145 par","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"77/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"117/175 par","active":false,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision a679d11a655f9df2
+line |
+line |t:|0
+line |switch|p2b: Zoë|Sliggoo, L50, M|145/145
+line |move|p1b: Salamence|Soak|p2a: X
+line |-fail|p2a: X
+line |move|p1a: Cramorant|Fire Fang|p2a: X
+line |-resisted|p2a: X
+line |-damage|p2a: X|80/146 par
+line |cant|p2a: X|par
+line |
+line |upkeep
+line |turn|19
+line |request|{"active":[{"moves":[{"move":"Fire Fang","id":"firefang","pp":16,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Soak","id":"soak","pp":25,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":27,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"99/145 par","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"77/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"117/175 par","active":false,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision a16474a84f7a5e6f
+line |
+line |t:|0
+line |move|p1b: Salamence|Thunder Wave|p2a: X|[miss]
+line |-miss|p1b: Salamence|p2a: X
+line |move|p2b: Zoë|Psycho Cut|p1a: Cramorant
+line |-damage|p1a: Cramorant|64/145 par
+line |move|p1a: Cramorant|Fire Fang|p2a: X
+line |-resisted|p2a: X
+line |-damage|p2a: X|67/146 par
+line |move|p2a: X|Prismatic Laser|p1b: Salamence
+line |-damage|p1b: Salamence|33/199
+line |-mustrecharge|p2a: X
+line |
+line |upkeep
+line |turn|20
+line |request|{"active":[{"moves":[{"move":"Fire Fang","id":"firefang","pp":15,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Soak","id":"soak","pp":25,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":26,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"64/145 par","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"33/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"117/175 par","active":false,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 129f71d8023955d9
+line |
+line |t:|0
+line |move|p1b: Salamence|Thunder Wave|p2a: X
+line |-fail|p2a: X|par
+line |move|p2b: Zoë|Psycho Cut|p1a: Cramorant
+line |-damage|p1a: Cramorant|29/145 par
+line |move|p1a: Cramorant|Fire Fang|p1b: Salamence
+line |-resisted|p1b: Salamence
+line |-damage|p1b: Salamence|19/199
+line |cant|p2a: X|recharge
+line |
+line |upkeep
+line |turn|21
+line |request|{"active":[{"moves":[{"move":"Fire Fang","id":"firefang","pp":14,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Soak","id":"soak","pp":25,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":25,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"29/145 par","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"19/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"117/175 par","active":false,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision a98b984a65ca1f8a
+line |
+line |t:|0
+line |switch|p1a: Noctowl|Noctowl, L50, F, shiny, tera:Fire|117/175 par
+line |move|p1b: Salamence|Soak|p2a: X
+line |-fail|p2a: X
+line |move|p2b: Zoë|Psycho Cut|p2a: X
+line |-damage|p2a: X|40/146 par
+line |move|p2a: X|Prismatic Laser|p1a: Noctowl
+line |-damage|p1a: Noctowl|85/175 par
+line |-mustrecharge|p2a: X
+line |
+line |upkeep
+line |turn|22
+line |request|{"active":[{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":14,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":52,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Soak","id":"soak","pp":24,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":25,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"85/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"19/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"29/145 par","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 4715547e04384c50
+line |
+line |t:|0
+line |switch|p2b: Sir Hops-a-Lot|Tyrogue, L50, M|59/129 par
+line |move|p1b: Salamence|Soak|p2b: Sir Hops-a-Lot
+line |-start|p2b: Sir Hops-a-Lot|typechange|Water
+line |move|p1a: Noctowl|Pound|p2a: X
+line |-crit|p2a: X
+line |-damage|p2a: X|18/146 par
+line |cant|p2a: X|recharge
+line |
+line |upkeep
+line |turn|23
+line |request|{"active":[{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":14,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":51,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Soak","id":"soak","pp":23,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":25,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"85/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"19/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"29/145 par","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 3aeded3ffca99b5b
+line |
+line |t:|0
+line |switch|p2a: Totodile|Totodile, L50, F, tera:Flying|54/133
+line |-singleturn|p1a: Noctowl|move: Beak Blast
+line |move|p2b: Sir Hops-a-Lot|Jet Punch|p1b: Salamence
+line |-resisted|p1b: Salamence
+line |-damage|p1b: Salamence|9/199
+line |move|p1b: Salamence|Soak|p2a: Totodile
+line |-fail|p2a: Totodile
+line |move|p1a: Noctowl|Beak Blast|p2a: Totodile
+line |-damage|p2a: Totodile|8/133
+line |
+line |upkeep
+line |turn|24
+line |request|{"active":[{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":14,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":51,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Soak","id":"soak","pp":22,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":25,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"85/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"9/199","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"29/145 par","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision bd739f80450768a8
+line |
+line |t:|0
+line |move|p2b: Sir Hops-a-Lot|Jet Punch|p1a: Noctowl
+line |-supereffective|p1a: Noctowl
+line |-damage|p1a: Noctowl|29/175 par
+line |move|p1b: Salamence|Thunder Wave|p2b: Sir Hops-a-Lot
+line |-fail|p2b: Sir Hops-a-Lot|par
+line |move|p2a: Totodile|Psychic Noise|p1a: Noctowl
+line |-damage|p1a: Noctowl|10/175 par
+line |-start|p1a: Noctowl|move: Heal Block
+line |move|p1a: Noctowl|Pound|p1b: Salamence
+line |-damage|p1b: Salamence|0 fnt
+line |faint|p1b: Salamence
+line |
+line |upkeep
+line |request|{"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"10/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"0 fnt","active":true,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"29/145 par","active":false,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]},"noCancel":true}
+decision 76ffb86f561ec169
+line |
+line |t:|0
+line |switch|p1b: Cramorant|Cramorant, L50, M|29/145 par
+line |turn|25
+line |request|{"active":[{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":14,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":50,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Fang","id":"firefang","pp":14,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"10/175 par","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"29/145 par","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"0 fnt","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision a2c72f1477ce5a06
+line |
+line |t:|0
+line |switch|p2b: X|Fraxure, L50, M|18/146 par
+line |-ability|p2b: X|Mold Breaker
+line |move|p2a: Totodile|Make It Rain|p1b: Cramorant|[spread] p1a,p1b
+line |-resisted|p1a: Noctowl
+line |-resisted|p1b: Cramorant
+line |-damage|p1a: Noctowl|0 fnt
+line |-damage|p1b: Cramorant|16/145 par
+line |-unboost|p2a: Totodile|spa|1
+line |faint|p1a: Noctowl
+line |cant|p1b: Cramorant|par
+line |
+line |upkeep
+line |turn|26
+line |request|{"active":[{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":14,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":50,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Fang","id":"firefang","pp":14,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"16/145 par","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"0 fnt","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision c2d738b01ed942e8
+line |
+line |t:|0
+line |switch|p2b: Zoë|Sliggoo, L50, M|145/145
+line |move|p2a: Totodile|Strength|p2b: Zoë
+line |-damage|p2b: Zoë|101/145
+line |move|p1b: Cramorant|Fire Fang|p2a: Totodile
+line |-damage|p2a: Totodile|0 fnt
+line |faint|p2a: Totodile
+line |
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"16/145 par","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"0 fnt","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+line |
+line |t:|0
+line |switch|p2a: X|Fraxure, L50, M|18/146 par
+line |-ability|p2a: X|Mold Breaker
+line |turn|27
+line |request|{"active":[{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":14,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":50,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Fang","id":"firefang","pp":13,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"16/145 par","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"0 fnt","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 595fe07fff40d642
+line |
+line |t:|0
+line |move|p2b: Zoë|Psycho Cut|p2a: X
+line |-damage|p2a: X|0 fnt
+line |faint|p2a: X
+line |move|p1b: Cramorant|Fire Fang|p2b: Zoë
+line |-resisted|p2b: Zoë
+line |-crit|p2b: Zoë
+line |-damage|p2b: Zoë|73/145
+line |-status|p2b: Zoë|brn
+line |
+line |-damage|p2b: Zoë|64/145 brn|[from] brn
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"16/145 par","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"0 fnt","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+line |
+line |t:|0
+line |switch|p2a: Sir Hops-a-Lot|Tyrogue, L50, M|59/129 par
+line |turn|28
+line |request|{"active":[{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":14,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":50,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Fang","id":"firefang","pp":12,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"16/145 par","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"0 fnt","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision f251c75b59460689
+line |
+line |t:|0
+line |cant|p2a: Sir Hops-a-Lot|par
+line |move|p2b: Zoë|Psycho Cut|p2a: Sir Hops-a-Lot
+line |-supereffective|p2a: Sir Hops-a-Lot
+line |-damage|p2a: Sir Hops-a-Lot|9/129 par
+line |move|p1b: Cramorant|Fire Fang|p2a: Sir Hops-a-Lot
+line |-damage|p2a: Sir Hops-a-Lot|0 fnt
+line |faint|p2a: Sir Hops-a-Lot
+line |
+line |-damage|p2b: Zoë|55/145 brn|[from] brn
+line |upkeep
+line |turn|29
+line |request|{"active":[{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":14,"maxpp":16,"target":"all","disabled":false},{"move":"Beak Blast","id":"beakblast","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Pound","id":"pound","pp":50,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Fang","id":"firefang","pp":11,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Noctowl","details":"Noctowl, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":70,"def":77,"spa":123,"spd":136,"spe":105},"moves":["grassyterrain","beakblast","pound"],"baseAbility":"insomnia","item":"galaricawreath","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, L50, M","condition":"16/145 par","active":true,"stats":{"atk":105,"def":77,"spa":134,"spd":121,"spe":131},"moves":["firefang"],"baseAbility":"gulpmissile","item":"","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"0 fnt","active":false,"stats":{"atk":157,"def":100,"spa":151,"spd":110,"spe":117},"moves":["soak","thunderwave"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Lokix, L50, M","condition":"0 fnt","active":false,"stats":{"atk":131,"def":112,"spa":73,"spd":105,"spe":113},"moves":["secretsword"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision d305c87812a5ef85
+line |
+line |t:|0
+line |move|p2b: Zoë|Dual Wingbeat|p1b: Cramorant
+line |-damage|p1b: Cramorant|6/145 par
+line |-damage|p1b: Cramorant|0 fnt
+line |faint|p1b: Cramorant
+line |-hitcount|p1: Cramorant|2
+line |
+line |win|p2
+player p2
+line |t:|0
+line |gametype|doubles
+line |player|p1|p1||
+line |player|p2|p2||
+line |gen|9
+line |tier|[Gen 9] Doubles Custom Game
+line |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+line |clearpoke
+line |poke|p1|Lokix, L50, M|
+line |poke|p1|Noctowl, L50, F|
+line |poke|p1|Volbeat, L50, M|
+line |poke|p1|Salamence, L50, F|
+line |poke|p1|Azurill, L50, M|
+line |poke|p1|Cramorant, L50, M|
+line |poke|p2|Applin, L50, M|
+line |poke|p2|Sliggoo, L50, M|
+line |poke|p2|Fraxure, L50, M|
+line |poke|p2|Totodile, L50, F|
+line |poke|p2|Vivillon-Monsoon, L50, M|
+line |poke|p2|Tyrogue, L50, M|
+line |teampreview|4
+line |showteam|p1|Mr. Bubbles|Lokix||TintedLens|SecretSword|Bold|21,190,29,9,237,8|M|||50|,,,,,Ice]Noctowl||GalaricaWreath|Insomnia|GrassyTerrain,BeakBlast,Pound|Relaxed|2,,3,134,156,215|F||S|50|,,,,,Fire]Chomp|Volbeat|Protector|Prankster|Dig,Electroweb,StruggleBug,FreezingGlare|Quiet|39,107,126,32,11,180||||50|,,,,,Stellar]Salamence|||Intimidate|Soak,ThunderWave|Sassy|230,13,1,168,2,91||||50|,,,,,Normal]Azurill|||HugePower|RainDance,FlashCannon,SteelBeam|Brave|28,72,40,14,239,76|M|||50|,,,,,Steel]Cramorant|||GulpMissile|FireFang|Serious|2,1,18,233,46,210|M|||50|,,,,,Dark
+line |showteam|p2|Pikachu|Applin|PokeBall|Ripen|Waterfall,Sandstorm|Impish|56,22,101,49,134,53||||50|,,,,,Dragon]Zoë|Sliggoo||SapSipper|PsychoCut,DualWingbeat|Careful|17,32,3,69,135,249||||50|,,,,,Stellar]X|Fraxure||MoldBreaker|Fling,Struggle,BugBuzz,PrismaticLaser|Modest|37,227,187,12,7,38||||50|,,,,,Normal]Totodile|||Torrent|PsychicNoise,Strength,ClearSmog,MakeItRain|Bashful|65,44,147,112,3,125|F|||50|,,,,,Flying]Vivillon-Monsoon||Electirizer|FriendGuard|Spite,AuraWheel|Careful|214,57,46,12,76,49||||50|,,,,,Grass]Sir Hops-a-Lot|Tyrogue|FlowerSweet|VitalSpirit|JetPunch,CottonGuard|Careful|152,10,17,114,189,15|M|||50|,,,,,Psychic
+line |request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Applin, L50, M","condition":"122/122","active":true,"stats":{"atk":63,"def":124,"spa":59,"spd":77,"spe":47},"moves":["waterfall","sandstorm"],"baseAbility":"ripen","item":"pokeball","pokeball":"pokeball","ability":"ripen","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"146/146","active":false,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"133/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Vivillon","details":"Vivillon-Monsoon, L50, M","condition":"182/182","active":false,"stats":{"atk":79,"def":76,"spa":100,"spd":88,"spe":115},"moves":["spite","aurawheel"],"baseAbility":"friendguard","item":"electirizer","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"129/129","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision 85712efe1a48ed61
+line |
+line |t:|0
+line |teamsize|p1|4
+line |teamsize|p2|4
+line |start
+line |switch|p1a: Salamence|Salamence, L50, F|199/199
+line |switch|p1b: Cramorant|Cramorant, L50, M|145/145
+line |switch|p2a: Zoë|Sliggoo, L50, M|145/145
+line |switch|p2b: Totodile|Totodile, L50, F|133/133
+line |-ability|p1a: Salamence|Intimidate|boost
+line |-unboost|p2a: Zoë|atk|1
+line |-unboost|p2b: Totodile|atk|1
+line |turn|1
+line |request|{"active":[{"moves":[{"move":"Psycho Cut","id":"psychocut","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Stellar"},{"moves":[{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Strength","id":"strength","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false}],"canTerastallize":"Flying"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"133/133","active":true,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"146/146","active":false,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"129/129","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision 9c53fae9eea685f0
+line |
+line |t:|0
+line |switch|p1b: Mr. Bubbles|Lokix, L50, M|149/149
+line |switch|p2a: Sir Hops-a-Lot|Tyrogue, L50, M|129/129
+line |-terastallize|p2b: Totodile|Flying
+line |move|p1a: Salamence|Soak|p2b: Totodile
+line |-fail|p2b: Totodile
+line |move|p2b: Totodile|Strength|p1b: Mr. Bubbles
+line |-damage|p1b: Mr. Bubbles|131/149
+line |
+line |upkeep
+line |turn|2
+line |request|{"active":[{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Strength","id":"strength","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"129/129","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"133/133","active":true,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"146/146","active":false,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+decision 5d467bed4576add6
+line |
+line |t:|0
+line |switch|p1b: Noctowl|Noctowl, L50, F, shiny|175/175
+line |move|p1a: Salamence|Thunder Wave|p1b: Noctowl
+line |-status|p1b: Noctowl|par
+line |move|p2b: Totodile|Strength|p1a: Salamence
+line |-damage|p1a: Salamence|179/199
+line |move|p2a: Sir Hops-a-Lot|Cotton Guard|p2a: Sir Hops-a-Lot
+line |-boost|p2a: Sir Hops-a-Lot|def|3
+line |
+line |upkeep
+line |turn|3
+line |request|{"active":[{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":15,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Strength","id":"strength","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"129/129","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"133/133","active":true,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"146/146","active":false,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+decision 91f5397383196dcb
+line |
+line |t:|0
+line |-terastallize|p1b: Noctowl|Fire
+line |move|p2a: Sir Hops-a-Lot|Jet Punch|p2b: Totodile
+line |-damage|p2b: Totodile|120/133
+line |move|p1a: Salamence|Soak|p2a: Sir Hops-a-Lot
+line |-start|p2a: Sir Hops-a-Lot|typechange|Water
+line |move|p2b: Totodile|Clear Smog|p1b: Noctowl
+line |-damage|p1b: Noctowl|163/175 par
+line |-clearboost|p1b: Noctowl
+line |move|p1b: Noctowl|Pound|p2b: Totodile
+line |-damage|p2b: Totodile|101/133
+line |
+line |upkeep
+line |turn|4
+line |request|{"active":[{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":15,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Strength","id":"strength","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"129/129","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":true,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"146/146","active":false,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+decision d2e8efcaf4266d32
+line |
+line |t:|0
+line |switch|p2a: Zoë|Sliggoo, L50, M|145/145
+line |switch|p1b: Mr. Bubbles|Lokix, L50, M|131/149
+line |move|p1a: Salamence|Soak|p2a: Zoë
+line |-start|p2a: Zoë|typechange|Water
+line |move|p2b: Totodile|Make It Rain|p1a: Salamence|[spread] p1a,p1b
+line |-damage|p1a: Salamence|153/199
+line |-damage|p1b: Mr. Bubbles|103/149
+line |-unboost|p2b: Totodile|spa|1
+line |
+line |upkeep
+line |turn|5
+line |request|{"active":[{"moves":[{"move":"Psycho Cut","id":"psychocut","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Strength","id":"strength","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":true,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"146/146","active":false,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"129/129","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision 14366e2a3a3b7354
+line |
+line |t:|0
+line |switch|p1b: Cramorant|Cramorant, L50, M|145/145
+line |switch|p2a: X|Fraxure, L50, M|146/146
+line |-ability|p2a: X|Mold Breaker
+line |switch|p2b: Sir Hops-a-Lot|Tyrogue, L50, M|129/129
+line |move|p1a: Salamence|Soak|p2b: Sir Hops-a-Lot
+line |-start|p2b: Sir Hops-a-Lot|typechange|Water
+line |
+line |upkeep
+line |turn|6
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":1,"maxpp":1,"target":"randomNormal","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":15,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"146/146","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"129/129","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision 2e028ad3a4d986eb
+line |
+line |t:|0
+line |switch|p1b: Noctowl|Noctowl, L50, F, shiny, tera:Fire|163/175 par
+line |move|p1a: Salamence|Thunder Wave|p2a: X
+line |-status|p2a: X|par
+line |move|p2b: Sir Hops-a-Lot|Cotton Guard|p2b: Sir Hops-a-Lot
+line |-boost|p2b: Sir Hops-a-Lot|def|3
+line |-activate|p2a: X|move: Struggle
+line |move|p2a: X|Struggle|p1b: Noctowl
+line |-damage|p1b: Noctowl|123/175 par
+line |-damage|p2a: X|109/146 par|[from] recoil
+line |
+line |upkeep
+line |turn|7
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":14,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"109/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"129/129","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision 87c4d34c28fa8c5d
+line |
+line |t:|0
+line |move|p2b: Sir Hops-a-Lot|Jet Punch|p1a: Salamence
+line |-resisted|p1a: Salamence
+line |-damage|p1a: Salamence|142/199
+line |move|p1a: Salamence|Thunder Wave|p1b: Noctowl|[miss]
+line |-miss|p1a: Salamence|p1b: Noctowl
+line |move|p1b: Noctowl|Grassy Terrain|p1b: Noctowl
+line |-fieldstart|move: Grassy Terrain
+line |move|p2a: X|Fling||[still]
+line |-fail|p2a: X
+line |
+line |-heal|p1b: Noctowl|133/175 par|[from] Grassy Terrain
+line |-heal|p2a: X|118/146 par|[from] Grassy Terrain
+line |upkeep
+line |turn|8
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":14,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"118/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"129/129","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision fb3c8eb635512551
+line |
+line |t:|0
+line |move|p2b: Sir Hops-a-Lot|Jet Punch|p1b: Noctowl
+line |-supereffective|p1b: Noctowl
+line |-damage|p1b: Noctowl|77/175 par
+line |move|p1a: Salamence|Soak|p2a: X
+line |-start|p2a: X|typechange|Water
+line |move|p1b: Noctowl|Pound|p2a: X
+line |-damage|p2a: X|103/146 par
+line |cant|p2a: X|par
+line |
+line |-heal|p1b: Noctowl|87/175 par|[from] Grassy Terrain
+line |-heal|p2a: X|112/146 par|[from] Grassy Terrain
+line |upkeep
+line |turn|9
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":21,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":14,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"112/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"129/129","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision 90345b89367b0dcd
+line |
+line |t:|0
+line |move|p2b: Sir Hops-a-Lot|Jet Punch|p1a: Salamence
+line |-resisted|p1a: Salamence
+line |-damage|p1a: Salamence|132/199
+line |move|p1a: Salamence|Thunder Wave|p2b: Sir Hops-a-Lot
+line |-status|p2b: Sir Hops-a-Lot|par
+line |move|p1b: Noctowl|Pound|p1a: Salamence
+line |-damage|p1a: Salamence|116/199
+line |move|p2a: X|Prismatic Laser|p2b: Sir Hops-a-Lot
+line |-damage|p2b: Sir Hops-a-Lot|80/129 par
+line |-mustrecharge|p2a: X
+line |
+line |-heal|p1b: Noctowl|97/175 par|[from] Grassy Terrain
+line |-heal|p2a: X|121/146 par|[from] Grassy Terrain
+line |-heal|p2b: Sir Hops-a-Lot|88/129 par|[from] Grassy Terrain
+line |upkeep
+line |turn|10
+line |request|{"active":[{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true},{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":20,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":14,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"121/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"88/129 par","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision e94104a354a93ee1
+line |
+line |t:|0
+line |switch|p1a: Cramorant|Cramorant, L50, M|145/145
+line |move|p2b: Sir Hops-a-Lot|Jet Punch|p1a: Cramorant
+line |-resisted|p1a: Cramorant
+line |-damage|p1a: Cramorant|131/145
+line |move|p1b: Noctowl|Pound|p2a: X
+line |-damage|p2a: X|105/146 par
+line |cant|p2a: X|recharge
+line |
+line |-heal|p1b: Noctowl|107/175 par|[from] Grassy Terrain
+line |-heal|p2a: X|114/146 par|[from] Grassy Terrain
+line |-heal|p2b: Sir Hops-a-Lot|96/129 par|[from] Grassy Terrain
+line |upkeep
+line |turn|11
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":19,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":14,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"114/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"96/129 par","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision f7ebc90790c84a71
+line |
+line |t:|0
+line |cant|p2b: Sir Hops-a-Lot|par
+line |move|p1a: Cramorant|Fire Fang|p2b: Sir Hops-a-Lot
+line |-resisted|p2b: Sir Hops-a-Lot
+line |-damage|p2b: Sir Hops-a-Lot|86/129 par
+line |move|p1b: Noctowl|Grassy Terrain||[still]
+line |-fail|p1b: Noctowl
+line |move|p2a: X|Fling||[still]
+line |-fail|p2a: X
+line |
+line |-heal|p1b: Noctowl|117/175 par|[from] Grassy Terrain
+line |-heal|p2a: X|123/146 par|[from] Grassy Terrain
+line |-heal|p2b: Sir Hops-a-Lot|94/129 par|[from] Grassy Terrain
+line |-fieldend|move: Grassy Terrain
+line |upkeep
+line |turn|12
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":19,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":14,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"123/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"94/129 par","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision 35b8470e598e1b79
+line |
+line |t:|0
+line |-singleturn|p1b: Noctowl|move: Beak Blast
+line |move|p1a: Cramorant|Fire Fang|p2b: Sir Hops-a-Lot
+line |-resisted|p2b: Sir Hops-a-Lot
+line |-damage|p2b: Sir Hops-a-Lot|84/129 par
+line |cant|p2a: X|par
+line |move|p2b: Sir Hops-a-Lot|Cotton Guard|p2b: Sir Hops-a-Lot
+line |-boost|p2b: Sir Hops-a-Lot|def|3
+line |move|p1b: Noctowl|Beak Blast|p2b: Sir Hops-a-Lot
+line |-damage|p2b: Sir Hops-a-Lot|66/129 par
+line |
+line |upkeep
+line |turn|13
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":19,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":13,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"123/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"66/129 par","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision 07fb8428f00bf0d9
+line |
+line |t:|0
+line |switch|p1b: Mr. Bubbles|Lokix, L50, M|103/149
+line |move|p1a: Cramorant|Fire Fang|p2b: Sir Hops-a-Lot
+line |-resisted|p2b: Sir Hops-a-Lot
+line |-damage|p2b: Sir Hops-a-Lot|59/129 par
+line |cant|p2a: X|par
+line |move|p2b: Sir Hops-a-Lot|Cotton Guard|p2b: Sir Hops-a-Lot
+line |-boost|p2b: Sir Hops-a-Lot|def|0
+line |
+line |upkeep
+line |turn|14
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":19,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":12,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"123/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision ed729e40ec771b7c
+line |
+line |t:|0
+line |switch|p2b: Zoë|Sliggoo, L50, M|145/145
+line |move|p1a: Cramorant|Fire Fang|p1b: Mr. Bubbles
+line |-supereffective|p1b: Mr. Bubbles
+line |-damage|p1b: Mr. Bubbles|55/149
+line |-status|p1b: Mr. Bubbles|brn
+line |move|p1b: Mr. Bubbles|Secret Sword|p1a: Cramorant
+line |-resisted|p1a: Cramorant
+line |-damage|p1a: Cramorant|99/145
+line |move|p2a: X|Bug Buzz|p1b: Mr. Bubbles
+line |-supereffective|p1b: Mr. Bubbles
+line |-damage|p1b: Mr. Bubbles|5/149 brn
+line |
+line |-damage|p1b: Mr. Bubbles|0 fnt|[from] brn
+line |faint|p1b: Mr. Bubbles
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"123/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+line |
+line |t:|0
+line |switch|p1b: Noctowl|Noctowl, L50, F, shiny, tera:Fire|117/175 par
+line |turn|15
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Psycho Cut","id":"psychocut","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"123/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision c6d68d013be8a72f
+line |
+line |t:|0
+line |switch|p1b: Salamence|Salamence, L50, F|116/199
+line |-ability|p1b: Salamence|Intimidate|boost
+line |-unboost|p2a: X|atk|1
+line |-unboost|p2b: Zoë|atk|1
+line |move|p1a: Cramorant|Fire Fang|p2a: X
+line |-resisted|p2a: X
+line |-damage|p2a: X|110/146 par
+line |move|p2b: Zoë|Psycho Cut|p2a: X
+line |-damage|p2a: X|93/146 par
+line |cant|p2a: X|par
+line |
+line |upkeep
+line |turn|16
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Psycho Cut","id":"psychocut","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"93/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"101/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision 12b1c800591a40fb
+line |
+line |t:|0
+line |switch|p2b: Totodile|Totodile, L50, F, tera:Flying|101/133
+line |move|p1a: Cramorant|Fire Fang|p1b: Salamence
+line |-resisted|p1b: Salamence
+line |-damage|p1b: Salamence|101/199
+line |move|p1b: Salamence|Soak|p2a: X
+line |-fail|p2a: X
+line |move|p2a: X|Bug Buzz|p2b: Totodile
+line |-resisted|p2b: Totodile
+line |-damage|p2b: Totodile|83/133
+line |
+line |upkeep
+line |turn|17
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Strength","id":"strength","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"93/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"83/133","active":true,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+decision 072ea8bdee6f1cd9
+line |
+line |t:|0
+line |move|p1a: Cramorant|Fire Fang|p2b: Totodile
+line |-damage|p2b: Totodile|54/133
+line |move|p1b: Salamence|Thunder Wave|p1a: Cramorant
+line |-status|p1a: Cramorant|par
+line |move|p2b: Totodile|Clear Smog|p1b: Salamence
+line |-crit|p1b: Salamence
+line |-damage|p1b: Salamence|77/199
+line |-clearboost|p1b: Salamence
+line |move|p2a: X|Fling||[still]
+line |-fail|p2a: X
+line |
+line |upkeep
+line |turn|18
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Strength","id":"strength","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"93/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"54/133","active":true,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+decision 7d801800d3cd4057
+line |
+line |t:|0
+line |switch|p2b: Zoë|Sliggoo, L50, M|145/145
+line |move|p1b: Salamence|Soak|p2a: X
+line |-fail|p2a: X
+line |move|p1a: Cramorant|Fire Fang|p2a: X
+line |-resisted|p2a: X
+line |-damage|p2a: X|80/146 par
+line |cant|p2a: X|par
+line |
+line |upkeep
+line |turn|19
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Psycho Cut","id":"psychocut","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"80/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"54/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision c7da4fccdb225ba1
+line |
+line |t:|0
+line |move|p1b: Salamence|Thunder Wave|p2a: X|[miss]
+line |-miss|p1b: Salamence|p2a: X
+line |move|p2b: Zoë|Psycho Cut|p1a: Cramorant
+line |-damage|p1a: Cramorant|64/145 par
+line |move|p1a: Cramorant|Fire Fang|p2a: X
+line |-resisted|p2a: X
+line |-damage|p2a: X|67/146 par
+line |move|p2a: X|Prismatic Laser|p1b: Salamence
+line |-damage|p1b: Salamence|33/199
+line |-mustrecharge|p2a: X
+line |
+line |upkeep
+line |turn|20
+line |request|{"active":[{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true},{"moves":[{"move":"Psycho Cut","id":"psychocut","pp":30,"maxpp":32,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"67/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"54/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision 46b9f962962d125d
+line |
+line |t:|0
+line |move|p1b: Salamence|Thunder Wave|p2a: X
+line |-fail|p2a: X|par
+line |move|p2b: Zoë|Psycho Cut|p1a: Cramorant
+line |-damage|p1a: Cramorant|29/145 par
+line |move|p1a: Cramorant|Fire Fang|p1b: Salamence
+line |-resisted|p1b: Salamence
+line |-damage|p1b: Salamence|19/199
+line |cant|p2a: X|recharge
+line |
+line |upkeep
+line |turn|21
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Psycho Cut","id":"psychocut","pp":29,"maxpp":32,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"67/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"54/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision 049b70c73203cae3
+line |
+line |t:|0
+line |switch|p1a: Noctowl|Noctowl, L50, F, shiny, tera:Fire|117/175 par
+line |move|p1b: Salamence|Soak|p2a: X
+line |-fail|p2a: X
+line |move|p2b: Zoë|Psycho Cut|p2a: X
+line |-damage|p2a: X|40/146 par
+line |move|p2a: X|Prismatic Laser|p1a: Noctowl
+line |-damage|p1a: Noctowl|85/175 par
+line |-mustrecharge|p2a: X
+line |
+line |upkeep
+line |turn|22
+line |request|{"active":[{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true},{"moves":[{"move":"Psycho Cut","id":"psychocut","pp":28,"maxpp":32,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"40/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"54/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision cb1237402c6ab577
+line |
+line |t:|0
+line |switch|p2b: Sir Hops-a-Lot|Tyrogue, L50, M|59/129 par
+line |move|p1b: Salamence|Soak|p2b: Sir Hops-a-Lot
+line |-start|p2b: Sir Hops-a-Lot|typechange|Water
+line |move|p1a: Noctowl|Pound|p2a: X
+line |-crit|p2a: X
+line |-damage|p2a: X|18/146 par
+line |cant|p2a: X|recharge
+line |
+line |upkeep
+line |turn|23
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":19,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":12,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"18/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"54/133","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"}]}}
+decision 70b3d221c6a0c356
+line |
+line |t:|0
+line |switch|p2a: Totodile|Totodile, L50, F, tera:Flying|54/133
+line |-singleturn|p1a: Noctowl|move: Beak Blast
+line |move|p2b: Sir Hops-a-Lot|Jet Punch|p1b: Salamence
+line |-resisted|p1b: Salamence
+line |-damage|p1b: Salamence|9/199
+line |move|p1b: Salamence|Soak|p2a: Totodile
+line |-fail|p2a: Totodile
+line |move|p1a: Noctowl|Beak Blast|p2a: Totodile
+line |-damage|p2a: Totodile|8/133
+line |
+line |upkeep
+line |turn|24
+line |request|{"active":[{"moves":[{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Strength","id":"strength","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":18,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":12,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"8/133","active":true,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"18/146 par","active":false,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+decision 541a3a832928425d
+line |
+line |t:|0
+line |move|p2b: Sir Hops-a-Lot|Jet Punch|p1a: Noctowl
+line |-supereffective|p1a: Noctowl
+line |-damage|p1a: Noctowl|29/175 par
+line |move|p1b: Salamence|Thunder Wave|p2b: Sir Hops-a-Lot
+line |-fail|p2b: Sir Hops-a-Lot|par
+line |move|p2a: Totodile|Psychic Noise|p1a: Noctowl
+line |-damage|p1a: Noctowl|10/175 par
+line |-start|p1a: Noctowl|move: Heal Block
+line |move|p1a: Noctowl|Pound|p1b: Salamence
+line |-damage|p1b: Salamence|0 fnt
+line |faint|p1b: Salamence
+line |
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"8/133","active":true,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"18/146 par","active":false,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+line |
+line |t:|0
+line |switch|p1b: Cramorant|Cramorant, L50, M|29/145 par
+line |turn|25
+line |request|{"active":[{"moves":[{"move":"Psychic Noise","id":"psychicnoise","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Strength","id":"strength","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":17,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":12,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"8/133","active":true,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"18/146 par","active":false,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+decision bb1f082caf467a4c
+line |
+line |t:|0
+line |switch|p2b: X|Fraxure, L50, M|18/146 par
+line |-ability|p2b: X|Mold Breaker
+line |move|p2a: Totodile|Make It Rain|p1b: Cramorant|[spread] p1a,p1b
+line |-resisted|p1a: Noctowl
+line |-resisted|p1b: Cramorant
+line |-damage|p1a: Noctowl|0 fnt
+line |-damage|p1b: Cramorant|16/145 par
+line |-unboost|p2a: Totodile|spa|1
+line |faint|p1a: Noctowl
+line |cant|p1b: Cramorant|par
+line |
+line |upkeep
+line |turn|26
+line |request|{"active":[{"moves":[{"move":"Psychic Noise","id":"psychicnoise","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Strength","id":"strength","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":6,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Fling","id":"fling","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":13,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"8/133","active":true,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"18/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"145/145","active":false,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision a1713b923d2654d3
+line |
+line |t:|0
+line |switch|p2b: Zoë|Sliggoo, L50, M|145/145
+line |move|p2a: Totodile|Strength|p2b: Zoë
+line |-damage|p2b: Zoë|101/145
+line |move|p1b: Cramorant|Fire Fang|p2a: Totodile
+line |-damage|p2a: Totodile|0 fnt
+line |faint|p2a: Totodile
+line |
+line |upkeep
+line |request|{"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"0 fnt","active":true,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"101/145","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"18/146 par","active":false,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]},"noCancel":true}
+decision 204ebaedf8c8159e
+line |
+line |t:|0
+line |switch|p2a: X|Fraxure, L50, M|18/146 par
+line |-ability|p2a: X|Mold Breaker
+line |turn|27
+line |request|{"active":[{"moves":[{"move":"Fling","id":"fling","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Bug Buzz","id":"bugbuzz","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Prismatic Laser","id":"prismaticlaser","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Psycho Cut","id":"psychocut","pp":28,"maxpp":32,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"18/146 par","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"101/145","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"0 fnt","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision d39ca472ebe53182
+line |
+line |t:|0
+line |move|p2b: Zoë|Psycho Cut|p2a: X
+line |-damage|p2a: X|0 fnt
+line |faint|p2a: X
+line |move|p1b: Cramorant|Fire Fang|p2b: Zoë
+line |-resisted|p2b: Zoë
+line |-crit|p2b: Zoë
+line |-damage|p2b: Zoë|73/145
+line |-status|p2b: Zoë|brn
+line |
+line |-damage|p2b: Zoë|64/145 brn|[from] brn
+line |upkeep
+line |request|{"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Fraxure, L50, M","condition":"0 fnt","active":true,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"64/145 brn","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"0 fnt","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":false,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]},"noCancel":true}
+decision 06c7cb88880d0f3d
+line |
+line |t:|0
+line |switch|p2a: Sir Hops-a-Lot|Tyrogue, L50, M|59/129 par
+line |turn|28
+line |request|{"active":[{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":17,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":12,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Psycho Cut","id":"psychocut","pp":27,"maxpp":32,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"59/129 par","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"64/145 brn","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"0 fnt","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+decision c8918eb4662ab5eb
+line |
+line |t:|0
+line |cant|p2a: Sir Hops-a-Lot|par
+line |move|p2b: Zoë|Psycho Cut|p2a: Sir Hops-a-Lot
+line |-supereffective|p2a: Sir Hops-a-Lot
+line |-damage|p2a: Sir Hops-a-Lot|9/129 par
+line |move|p1b: Cramorant|Fire Fang|p2a: Sir Hops-a-Lot
+line |-damage|p2a: Sir Hops-a-Lot|0 fnt
+line |faint|p2a: Sir Hops-a-Lot
+line |
+line |-damage|p2b: Zoë|55/145 brn|[from] brn
+line |upkeep
+line |turn|29
+line |request|{"active":[{"moves":[{"move":"Jet Punch","id":"jetpunch","pp":17,"maxpp":24,"target":"normal","disabled":false},{"move":"Cotton Guard","id":"cottonguard","pp":12,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Psycho Cut","id":"psychocut","pp":26,"maxpp":32,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Tyrogue, L50, M","condition":"0 fnt","active":true,"stats":{"atk":56,"def":57,"spa":62,"spd":86,"spe":57},"moves":["jetpunch","cottonguard"],"baseAbility":"vitalspirit","item":"flowersweet","pokeball":"pokeball","ability":"vitalspirit","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Zoë","details":"Sliggoo, L50, M","condition":"55/145 brn","active":true,"stats":{"atk":99,"def":73,"spa":100,"spd":165,"spe":111},"moves":["psychocut","dualwingbeat"],"baseAbility":"sapsipper","item":"","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Totodile","details":"Totodile, L50, F","condition":"0 fnt","active":false,"stats":{"atk":91,"def":102,"spa":78,"spd":68,"spe":79},"moves":["psychicnoise","strength","clearsmog","makeitrain"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: X","details":"Fraxure, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":113,"spa":68,"spd":71,"spe":92},"moves":["fling","struggle","bugbuzz","prismaticlaser"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+decision 1468501bfcc501c7
+line |
+line |t:|0
+line |move|p2b: Zoë|Dual Wingbeat|p1b: Cramorant
+line |-damage|p1b: Cramorant|6/145 par
+line |-damage|p1b: Cramorant|0 fnt
+line |faint|p1b: Cramorant
+line |-hitcount|p1: Cramorant|2
+line |
+line |win|p2

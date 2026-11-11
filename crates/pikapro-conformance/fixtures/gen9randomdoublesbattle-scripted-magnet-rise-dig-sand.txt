@@ -1,0 +1,113 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 0000 0000 0000 0014
+genders drawn
+team p1
+Pikachu
+Ability: Static
+Hardy Nature
+- Magnet Rise
+- Dig
+
+Blissey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+end
+team p2
+Buizel
+Ability: Water Veil
+Hardy Nature
+- Sandstorm
+- Celebrate
+
+Morgrem
+Ability: Pickpocket
+Hardy Nature
+- Splash
+end
+choice p1 move 1, move 1
+choice p2 move 1, move 1
+choice p1 move 2 1, move 1
+choice p2 move 2, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Pikachu|Pikachu, M|211/211
+expect |switch|p1a: Pikachu|Pikachu, M|100/100
+expect |split|p1
+expect |switch|p1b: Blissey|Blissey, F|651/651
+expect |switch|p1b: Blissey|Blissey, F|100/100
+expect |split|p2
+expect |switch|p2a: Buizel|Buizel, M|251/251
+expect |switch|p2a: Buizel|Buizel, M|100/100
+expect |split|p2
+expect |switch|p2b: Morgrem|Morgrem, M|271/271
+expect |switch|p2b: Morgrem|Morgrem, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Pikachu|Magnet Rise|p1a: Pikachu
+expect |-start|p1a: Pikachu|Magnet Rise
+expect |move|p2a: Buizel|Sandstorm|p2a: Buizel
+expect |-weather|Sandstorm
+expect |move|p2b: Morgrem|Splash|p2b: Morgrem
+expect |-nothing
+expect |move|p1b: Blissey|Splash|p1b: Blissey
+expect |-nothing
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Pikachu|198/211|[from] Sandstorm
+expect |-damage|p1a: Pikachu|94/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Buizel|236/251|[from] Sandstorm
+expect |-damage|p2a: Buizel|95/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Morgrem|255/271|[from] Sandstorm
+expect |-damage|p2b: Morgrem|95/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1b: Blissey|611/651|[from] Sandstorm
+expect |-damage|p1b: Blissey|94/100|[from] Sandstorm
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Pikachu|Dig||[still]
+expect |-prepare|p1a: Pikachu|Dig
+expect |move|p2a: Buizel|Celebrate|p2a: Buizel
+expect |-activate|p2a: Buizel|move: Celebrate
+expect |move|p2b: Morgrem|Splash|p2b: Morgrem
+expect |-nothing
+expect |move|p1b: Blissey|Splash|p1b: Blissey
+expect |-nothing
+expect |
+expect |rng|2|1
+expect |-weather|Sandstorm|[upkeep]
+expect |rng|2|0
+expect |split|p2
+expect |-damage|p2a: Buizel|221/251|[from] Sandstorm
+expect |-damage|p2a: Buizel|89/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Morgrem|239/271|[from] Sandstorm
+expect |-damage|p2b: Morgrem|89/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1b: Blissey|571/651|[from] Sandstorm
+expect |-damage|p1b: Blissey|88/100|[from] Sandstorm
+expect |upkeep
+expect |turn|3

@@ -1,0 +1,261 @@
+# championsvgc-gen5-2110024-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@write
+>start {"formatid":"[Gen 9 Champions] VGC 2026 Reg M-B","seed":"gen5,2b4f674e8f2376be","rated":"Tournament battle"}
+@write
+>player p2 {"name":"Bob","team":"Florges|||FlowerVeil|Thief,PoisonFang,Fling|Quirky|3,16,28,,,11||||50|,,,,,Dragon]Sparky|Tyrantrum||RockHead|ThunderFang|Bashful|2,21,12,10,4,17|M|||50|,,,,,Fighting]Pikachu|Ampharos|Ampharosite|Static|Stockpile,LeechSeed|Impish|31,4,21,,1,9|F|||50|,,,,,Psychic]Mr. Bubbles|Dragapult|ChopleBerry|Infiltrator|RapidSpin,FrenzyPlant,TwinBeam|Hardy|1,2,1,10,24,28|F|||50|,,,,,Ground]Tsareena|||LeafGuard|SteelBeam,FireBlast,ChargeBeam,Facade|Serious|5,27,5,6,11,8|F|||50|,,,,,Grass]Absol||SpellTag|Pressure|IronTail,Guillotine|Serious|28,9,4,1,2,9|M|||50|,,,,,Bug","avatar":"lucas"}
+@write
+>player p1 {"name":"Alice","team":"Sparky|Roserade|SpellTag|PoisonPoint|AquaTail,CosmicPower,MistyExplosion|Quirky|,20,1,13,28,2|F|||50|,,,,,Grass]Tinkaton||WacanBerry|Pickpocket|LavaPlume,Ingrain,Infestation,ClearSmog|Lonely|29,3,17,,9,7|F||S|50|,,,,,Normal]Chomp|VivillonRiver|OranBerry|FriendGuard|BodySlam|Hasty|12,20,5,23,,6|F|||50|,,,,,Fighting]Glimmora||Glimmoranite|ToxicDebris|VoltSwitch|Gentle|23,2,7,12,1,19|F|||50|,,,,,Ice]Flareon|||FlashFire|IcicleSpear,ThunderWave,Uproar,Transform|Quirky|1,31,14,,17,1|F|||50|,,,,,Poison]Zoroark-Hisui|||Illusion|SpikyShield,MatchaGotcha,Charge|Serious|3,23,5,8,22,3|M|||50|,,,,,Rock","avatar":"lucas"}
+@write
+>p1 team 12, 
+@write
+>p1 team 2453
+@write
+>p2 team 5624
+@write
+>p2 move 1 -2, move 2 2
+@write
+>p1 move 4 -2, move 1 -1 mega
+@write
+>p1 pass, move 1 -1 mega
+@write
+>p1 pass, switch 4
+@write
+>p1 switch glimmoramega
+@write
+>p1 move 4 -2, move 1 2
+@write
+>p2 switch Tyrantrum
+@write
+>p2 undo
+@write
+>p2 move 1 -2, switch 4
+@write
+>p1 pass, switch 3
+@write
+>p2 switch 3, move 2 -1 terastal
+@write
+>forcetie
+@write
+>p1 move 1
+@message
+update
+|t:|
+|gametype|doubles
+@message
+update
+|player|p2|Bob|lucas|
+@message
+update
+|player|p1|Alice|lucas|
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rated|Tournament battle
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Roserade, L50, F|
+|poke|p1|Tinkaton, L50, F, shiny|
+|poke|p1|Vivillon-River, L50, F|
+|poke|p1|Glimmora, L50, F|
+|poke|p1|Flareon, L50, F|
+|poke|p1|Zoroark-Hisui, L50, M|
+|poke|p2|Florges, L50, F|
+|poke|p2|Tyrantrum, L50, M|
+|poke|p2|Ampharos, L50, F|
+|poke|p2|Dragapult, L50, F|
+|poke|p2|Tsareena, L50, F|
+|poke|p2|Absol, L50, M|
+|teampreview|4
+|split|p1
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+|split|p2
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Sparky","details":"Roserade, L50, F","condition":"135/135","active":true,"stats":{"atk":110,"def":86,"spa":158,"spd":153,"spe":112},"moves":["aquatail","cosmicpower","mistyexplosion"],"baseAbility":"poisonpoint","item":"spelltag","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false},{"ident":"p1: Tinkaton","details":"Tinkaton, L50, F, shiny","condition":"189/189","active":true,"stats":{"atk":107,"def":102,"spa":90,"spd":134,"spe":121},"moves":["lavaplume","ingrain","infestation","clearsmog"],"baseAbility":"pickpocket","item":"wacanberry","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Vivillon-River, L50, F","condition":"167/167","active":false,"stats":{"atk":92,"def":67,"spa":133,"spd":70,"spe":126},"moves":["bodyslam"],"baseAbility":"friendguard","item":"oranberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Glimmora","details":"Glimmora, L50, F","condition":"181/181","active":false,"stats":{"atk":77,"def":105,"spa":162,"spd":112,"spe":125},"moves":["voltswitch"],"baseAbility":"toxicdebris","item":"glimmoranite","pokeball":"pokeball","ability":"toxicdebris","commanding":false,"reviving":false},{"ident":"p1: Flareon","details":"Flareon, L50, F","condition":"141/141","active":false,"stats":{"atk":181,"def":94,"spa":115,"spd":147,"spe":86},"moves":["iciclespear","thunderwave","uproar","transform"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p1: Zoroark","details":"Zoroark-Hisui, L50, M","condition":"133/133","active":false,"stats":{"atk":143,"def":85,"spa":153,"spd":102,"spe":133},"moves":["spikyshield","matchagotcha","charge"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Florges","details":"Florges, L50, F","condition":"156/156","active":true,"stats":{"atk":101,"def":116,"spa":132,"spd":174,"spe":106},"moves":["thief","poisonfang","fling"],"baseAbility":"flowerveil","item":"","pokeball":"pokeball","ability":"flowerveil","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Tyrantrum, L50, M","condition":"159/159","active":true,"stats":{"atk":162,"def":151,"spa":99,"spd":83,"spe":108},"moves":["thunderfang"],"baseAbility":"rockhead","item":"","pokeball":"pokeball","ability":"rockhead","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Ampharos, L50, F","condition":"196/196","active":false,"stats":{"atk":99,"def":138,"spa":121,"spd":111,"spe":84},"moves":["stockpile","leechseed"],"baseAbility":"static","item":"ampharosite","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Dragapult, L50, F","condition":"164/164","active":false,"stats":{"atk":142,"def":96,"spa":130,"spd":119,"spe":190},"moves":["rapidspin","frenzyplant","twinbeam"],"baseAbility":"infiltrator","item":"chopleberry","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"152/152","active":false,"stats":{"atk":167,"def":123,"spa":76,"spd":129,"spe":100},"moves":["steelbeam","fireblast","chargebeam","facade"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false},{"ident":"p2: Absol","details":"Absol, L50, M","condition":"168/168","active":false,"stats":{"atk":159,"def":84,"spa":96,"spd":82,"spe":104},"moves":["irontail","guillotine"],"baseAbility":"pressure","item":"spelltag","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't choose for Team Preview: You do not have a Pokémon in slot 12
+@message
+update
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|uhtmlchange|otsrequest|
+
+|split|p2
+|uhtmlchange|otsrequest|
+
+|split|p1
+|switch|p1a: Tinkaton|Tinkaton, L50, F, shiny|189/189
+|switch|p1a: Tinkaton|Tinkaton, L50, F, shiny|100/100
+|split|p1
+|switch|p1b: Glimmora|Glimmora, L50, F|181/181
+|switch|p1b: Glimmora|Glimmora, L50, F|100/100
+|split|p2
+|switch|p2a: Tsareena|Tsareena, L50, F|152/152
+|switch|p2a: Tsareena|Tsareena, L50, F|100/100
+|split|p2
+|switch|p2b: Absol|Absol, L50, M|168/168
+|switch|p2b: Absol|Absol, L50, M|100/100
+|-ability|p2b: Absol|Pressure
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Lava Plume","id":"lavaplume","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Ingrain","id":"ingrain","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Infestation","id":"infestation","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Volt Switch","id":"voltswitch","pp":20,"maxpp":20,"target":"normal","disabled":false}],"canMegaEvo":true}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Tinkaton","details":"Tinkaton, L50, F, shiny","condition":"189/189","active":true,"stats":{"atk":107,"def":102,"spa":90,"spd":134,"spe":121},"moves":["lavaplume","ingrain","infestation","clearsmog"],"baseAbility":"pickpocket","item":"wacanberry","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false},{"ident":"p1: Glimmora","details":"Glimmora, L50, F","condition":"181/181","active":true,"stats":{"atk":77,"def":105,"spa":162,"spd":112,"spe":125},"moves":["voltswitch"],"baseAbility":"toxicdebris","item":"glimmoranite","pokeball":"pokeball","ability":"toxicdebris","commanding":false,"reviving":false},{"ident":"p1: Flareon","details":"Flareon, L50, F","condition":"141/141","active":false,"stats":{"atk":181,"def":94,"spa":115,"spd":147,"spe":86},"moves":["iciclespear","thunderwave","uproar","transform"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Vivillon-River, L50, F","condition":"167/167","active":false,"stats":{"atk":92,"def":67,"spa":133,"spd":70,"spe":126},"moves":["bodyslam"],"baseAbility":"friendguard","item":"oranberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Steel Beam","id":"steelbeam","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Fire Blast","id":"fireblast","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Charge Beam","id":"chargebeam","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Facade","id":"facade","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Guillotine","id":"guillotine","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"152/152","active":true,"stats":{"atk":167,"def":123,"spa":76,"spd":129,"spe":100},"moves":["steelbeam","fireblast","chargebeam","facade"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false},{"ident":"p2: Absol","details":"Absol, L50, M","condition":"168/168","active":true,"stats":{"atk":159,"def":84,"spa":96,"spd":82,"spe":104},"moves":["irontail","guillotine"],"baseAbility":"pressure","item":"spelltag","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Tyrantrum, L50, M","condition":"159/159","active":false,"stats":{"atk":162,"def":151,"spa":99,"spd":83,"spe":108},"moves":["thunderfang"],"baseAbility":"rockhead","item":"","pokeball":"pokeball","ability":"rockhead","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Dragapult, L50, F","condition":"164/164","active":false,"stats":{"atk":142,"def":96,"spa":130,"spd":119,"spe":190},"moves":["rapidspin","frenzyplant","twinbeam"],"baseAbility":"infiltrator","item":"chopleberry","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false}]}}
+@message
+update
+|
+|t:|
+|detailschange|p1b: Glimmora|Glimmora-Mega, L50, F
+|-mega|p1b: Glimmora|Glimmora|Glimmoranite
+|move|p1b: Glimmora|Volt Switch|p1a: Tinkaton
+|split|p1
+|-damage|p1a: Tinkaton|147/189
+|-damage|p1a: Tinkaton|77/100
+@message
+sideupdate
+p1
+|request|{"forceSwitch":[false,true],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Tinkaton","details":"Tinkaton, L50, F, shiny","condition":"147/189","active":true,"stats":{"atk":107,"def":102,"spa":90,"spd":134,"spe":121},"moves":["lavaplume","ingrain","infestation","clearsmog"],"baseAbility":"pickpocket","item":"wacanberry","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false},{"ident":"p1: Glimmora","details":"Glimmora-Mega, L50, F","condition":"181/181","active":true,"stats":{"atk":112,"def":118,"spa":182,"spd":128,"spe":140},"moves":["voltswitch"],"baseAbility":"adaptability","item":"glimmoranite","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false},{"ident":"p1: Flareon","details":"Flareon, L50, F","condition":"141/141","active":false,"stats":{"atk":181,"def":94,"spa":115,"spd":147,"spe":86},"moves":["iciclespear","thunderwave","uproar","transform"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Vivillon-River, L50, F","condition":"167/167","active":false,"stats":{"atk":92,"def":67,"spa":133,"spd":70,"spe":126},"moves":["bodyslam"],"baseAbility":"friendguard","item":"oranberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]},"noCancel":true}
+@message
+sideupdate
+p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"152/152","active":true,"stats":{"atk":167,"def":123,"spa":76,"spd":129,"spe":100},"moves":["steelbeam","fireblast","chargebeam","facade"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false},{"ident":"p2: Absol","details":"Absol, L50, M","condition":"168/168","active":true,"stats":{"atk":159,"def":84,"spa":96,"spd":82,"spe":104},"moves":["irontail","guillotine"],"baseAbility":"pressure","item":"spelltag","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Tyrantrum, L50, M","condition":"159/159","active":false,"stats":{"atk":162,"def":151,"spa":99,"spd":83,"spe":108},"moves":["thunderfang"],"baseAbility":"rockhead","item":"","pokeball":"pokeball","ability":"rockhead","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Dragapult, L50, F","condition":"164/164","active":false,"stats":{"atk":142,"def":96,"spa":130,"spd":119,"spe":190},"moves":["rapidspin","frenzyplant","twinbeam"],"baseAbility":"infiltrator","item":"chopleberry","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You need a switch response
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Chomp|Vivillon-River, L50, F|167/167|[from] Volt Switch
+|switch|p1b: Chomp|Vivillon-River, L50, F|100/100|[from] Volt Switch
+|move|p1a: Tinkaton|Clear Smog|p1b: Chomp
+|split|p1
+|-damage|p1b: Chomp|141/167
+|-damage|p1b: Chomp|84/100
+|-clearboost|p1b: Chomp
+|move|p2b: Absol|Guillotine|p1b: Chomp
+|split|p1
+|-damage|p1b: Chomp|0 fnt
+|-damage|p1b: Chomp|0 fnt
+|faint|p1b: Chomp
+|-ohko
+|move|p2a: Tsareena|Steel Beam|p2b: Absol
+|split|p2
+|-damage|p2b: Absol|114/168
+|-damage|p2b: Absol|67/100
+|split|p2
+|-damage|p2a: Tsareena|76/152|[from] steelbeam
+|-damage|p2a: Tsareena|50/100y|[from] steelbeam
+|
+|upkeep
+@message
+sideupdate
+p1
+|request|{"forceSwitch":[false,true],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Tinkaton","details":"Tinkaton, L50, F, shiny","condition":"147/189","active":true,"stats":{"atk":107,"def":102,"spa":90,"spd":134,"spe":121},"moves":["lavaplume","ingrain","infestation","clearsmog"],"baseAbility":"pickpocket","item":"wacanberry","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Vivillon-River, L50, F","condition":"0 fnt","active":true,"stats":{"atk":92,"def":67,"spa":133,"spd":70,"spe":126},"moves":["bodyslam"],"baseAbility":"friendguard","item":"oranberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Flareon","details":"Flareon, L50, F","condition":"141/141","active":false,"stats":{"atk":181,"def":94,"spa":115,"spd":147,"spe":86},"moves":["iciclespear","thunderwave","uproar","transform"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p1: Glimmora","details":"Glimmora-Mega, L50, F","condition":"181/181","active":false,"stats":{"atk":112,"def":118,"spa":182,"spd":128,"spe":140},"moves":["voltswitch"],"baseAbility":"adaptability","item":"glimmoranite","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false}]},"noCancel":true}
+@message
+sideupdate
+p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"76/152","active":true,"stats":{"atk":167,"def":123,"spa":76,"spd":129,"spe":100},"moves":["steelbeam","fireblast","chargebeam","facade"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false},{"ident":"p2: Absol","details":"Absol, L50, M","condition":"114/168","active":true,"stats":{"atk":159,"def":84,"spa":96,"spd":82,"spe":104},"moves":["irontail","guillotine"],"baseAbility":"pressure","item":"spelltag","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Tyrantrum, L50, M","condition":"159/159","active":false,"stats":{"atk":162,"def":151,"spa":99,"spd":83,"spe":108},"moves":["thunderfang"],"baseAbility":"rockhead","item":"","pokeball":"pokeball","ability":"rockhead","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Dragapult, L50, F","condition":"164/164","active":false,"stats":{"atk":142,"def":96,"spa":130,"spd":119,"spe":190},"moves":["rapidspin","frenzyplant","twinbeam"],"baseAbility":"infiltrator","item":"chopleberry","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Glimmora|Glimmora-Mega, L50, F|181/181
+|switch|p1b: Glimmora|Glimmora-Mega, L50, F|100/100
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Lava Plume","id":"lavaplume","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Ingrain","id":"ingrain","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Infestation","id":"infestation","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Volt Switch","id":"voltswitch","pp":19,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Tinkaton","details":"Tinkaton, L50, F, shiny","condition":"147/189","active":true,"stats":{"atk":107,"def":102,"spa":90,"spd":134,"spe":121},"moves":["lavaplume","ingrain","infestation","clearsmog"],"baseAbility":"pickpocket","item":"wacanberry","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false},{"ident":"p1: Glimmora","details":"Glimmora-Mega, L50, F","condition":"181/181","active":true,"stats":{"atk":112,"def":118,"spa":182,"spd":128,"spe":140},"moves":["voltswitch"],"baseAbility":"adaptability","item":"glimmoranite","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false},{"ident":"p1: Flareon","details":"Flareon, L50, F","condition":"141/141","active":false,"stats":{"atk":181,"def":94,"spa":115,"spd":147,"spe":86},"moves":["iciclespear","thunderwave","uproar","transform"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":92,"def":67,"spa":133,"spd":70,"spe":126},"moves":["bodyslam"],"baseAbility":"friendguard","item":"oranberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Steel Beam","id":"steelbeam","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Fire Blast","id":"fireblast","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Charge Beam","id":"chargebeam","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Facade","id":"facade","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Guillotine","id":"guillotine","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"76/152","active":true,"stats":{"atk":167,"def":123,"spa":76,"spd":129,"spe":100},"moves":["steelbeam","fireblast","chargebeam","facade"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false},{"ident":"p2: Absol","details":"Absol, L50, M","condition":"114/168","active":true,"stats":{"atk":159,"def":84,"spa":96,"spd":82,"spe":104},"moves":["irontail","guillotine"],"baseAbility":"pressure","item":"spelltag","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Tyrantrum, L50, M","condition":"159/159","active":false,"stats":{"atk":162,"def":151,"spa":99,"spd":83,"spe":108},"moves":["thunderfang"],"baseAbility":"rockhead","item":"","pokeball":"pokeball","ability":"rockhead","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Dragapult, L50, F","condition":"164/164","active":false,"stats":{"atk":142,"def":96,"spa":130,"spd":119,"spe":190},"moves":["rapidspin","frenzyplant","twinbeam"],"baseAbility":"infiltrator","item":"chopleberry","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: switch Tyrantrum - missing other pokemon
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Mr. Bubbles|Dragapult, L50, F|164/164
+|switch|p2b: Mr. Bubbles|Dragapult, L50, F|100/100
+|move|p1b: Glimmora|Volt Switch|p2b: Mr. Bubbles
+|-resisted|p2b: Mr. Bubbles|1
+|-crit|p2b: Mr. Bubbles
+|split|p2
+|-damage|p2b: Mr. Bubbles|129/164
+|-damage|p2b: Mr. Bubbles|78/100
+@message
+sideupdate
+p1
+|request|{"forceSwitch":[false,true],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Tinkaton","details":"Tinkaton, L50, F, shiny","condition":"147/189","active":true,"stats":{"atk":107,"def":102,"spa":90,"spd":134,"spe":121},"moves":["lavaplume","ingrain","infestation","clearsmog"],"baseAbility":"pickpocket","item":"wacanberry","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false},{"ident":"p1: Glimmora","details":"Glimmora-Mega, L50, F","condition":"181/181","active":true,"stats":{"atk":112,"def":118,"spa":182,"spd":128,"spe":140},"moves":["voltswitch"],"baseAbility":"adaptability","item":"glimmoranite","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false},{"ident":"p1: Flareon","details":"Flareon, L50, F","condition":"141/141","active":false,"stats":{"atk":181,"def":94,"spa":115,"spd":147,"spe":86},"moves":["iciclespear","thunderwave","uproar","transform"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":92,"def":67,"spa":133,"spd":70,"spe":126},"moves":["bodyslam"],"baseAbility":"friendguard","item":"oranberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]},"noCancel":true}
+@message
+sideupdate
+p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"76/152","active":true,"stats":{"atk":167,"def":123,"spa":76,"spd":129,"spe":100},"moves":["steelbeam","fireblast","chargebeam","facade"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Dragapult, L50, F","condition":"129/164","active":true,"stats":{"atk":142,"def":96,"spa":130,"spd":119,"spe":190},"moves":["rapidspin","frenzyplant","twinbeam"],"baseAbility":"infiltrator","item":"chopleberry","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Tyrantrum, L50, M","condition":"159/159","active":false,"stats":{"atk":162,"def":151,"spa":99,"spd":83,"spe":108},"moves":["thunderfang"],"baseAbility":"rockhead","item":"","pokeball":"pokeball","ability":"rockhead","commanding":false,"reviving":false},{"ident":"p2: Absol","details":"Absol, L50, M","condition":"114/168","active":false,"stats":{"atk":159,"def":84,"spa":96,"spd":82,"spe":104},"moves":["irontail","guillotine"],"baseAbility":"pressure","item":"spelltag","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Flareon|Flareon, L50, F|141/141|[from] Volt Switch
+|switch|p1b: Flareon|Flareon, L50, F|100/100|[from] Volt Switch
+|move|p1a: Tinkaton|Clear Smog|p1b: Flareon
+|split|p1
+|-damage|p1b: Flareon|129/141
+|-damage|p1b: Flareon|91/100
+|-clearboost|p1b: Flareon
+|move|p2a: Tsareena|Steel Beam|p2b: Mr. Bubbles
+|split|p2
+|-damage|p2b: Mr. Bubbles|91/164
+|-damage|p2b: Mr. Bubbles|55/100
+|split|p2
+|-damage|p2a: Tsareena|0 fnt|[from] steelbeam
+|-damage|p2a: Tsareena|0 fnt|[from] steelbeam
+|faint|p2a: Tsareena
+|
+|upkeep
+@message
+sideupdate
+p1
+|request|{"wait":true,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Tinkaton","details":"Tinkaton, L50, F, shiny","condition":"147/189","active":true,"stats":{"atk":107,"def":102,"spa":90,"spd":134,"spe":121},"moves":["lavaplume","ingrain","infestation","clearsmog"],"baseAbility":"pickpocket","item":"wacanberry","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false},{"ident":"p1: Flareon","details":"Flareon, L50, F","condition":"129/141","active":true,"stats":{"atk":181,"def":94,"spa":115,"spd":147,"spe":86},"moves":["iciclespear","thunderwave","uproar","transform"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p1: Glimmora","details":"Glimmora-Mega, L50, F","condition":"181/181","active":false,"stats":{"atk":112,"def":118,"spa":182,"spd":128,"spe":140},"moves":["voltswitch"],"baseAbility":"adaptability","item":"glimmoranite","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Vivillon-River, L50, F","condition":"0 fnt","active":false,"stats":{"atk":92,"def":67,"spa":133,"spd":70,"spe":126},"moves":["bodyslam"],"baseAbility":"friendguard","item":"oranberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"forceSwitch":[true,false],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"0 fnt","active":true,"stats":{"atk":167,"def":123,"spa":76,"spd":129,"spe":100},"moves":["steelbeam","fireblast","chargebeam","facade"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Dragapult, L50, F","condition":"91/164","active":true,"stats":{"atk":142,"def":96,"spa":130,"spd":119,"spe":190},"moves":["rapidspin","frenzyplant","twinbeam"],"baseAbility":"infiltrator","item":"chopleberry","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Tyrantrum, L50, M","condition":"159/159","active":false,"stats":{"atk":162,"def":151,"spa":99,"spd":83,"spe":108},"moves":["thunderfang"],"baseAbility":"rockhead","item":"","pokeball":"pokeball","ability":"rockhead","commanding":false,"reviving":false},{"ident":"p2: Absol","details":"Absol, L50, M","condition":"114/168","active":false,"stats":{"atk":159,"def":84,"spa":96,"spd":82,"spe":104},"moves":["irontail","guillotine"],"baseAbility":"pressure","item":"spelltag","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false}]},"noCancel":true}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You need a switch response
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"gen5,2b4f674e8f2376be","turns":2,"p1":"Alice","p2":"Bob","p1team":[{"name":"Sparky","species":"Roserade","item":"Spell Tag","ability":"Poison Point","moves":["Aqua Tail","Cosmic Power","Misty Explosion"],"nature":"Quirky","evs":{"hp":0,"atk":20,"def":1,"spa":13,"spd":28,"spe":2},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Tinkaton","species":"Tinkaton","item":"Wacan Berry","ability":"Pickpocket","moves":["Lava Plume","Ingrain","Infestation","Clear Smog"],"nature":"Lonely","evs":{"hp":29,"atk":3,"def":17,"spa":0,"spd":9,"spe":7},"gender":"F","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Vivillon-River","item":"Oran Berry","ability":"Friend Guard","moves":["Body Slam"],"nature":"Hasty","evs":{"hp":12,"atk":20,"def":5,"spa":23,"spd":0,"spe":6},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Glimmora","species":"Glimmora","item":"Glimmoranite","ability":"Toxic Debris","moves":["Volt Switch"],"nature":"Gentle","evs":{"hp":23,"atk":2,"def":7,"spa":12,"spd":1,"spe":19},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Flareon","species":"Flareon","item":"","ability":"Flash Fire","moves":["Icicle Spear","Thunder Wave","Uproar","Transform"],"nature":"Quirky","evs":{"hp":1,"atk":31,"def":14,"spa":0,"spd":17,"spe":1},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Zoroark","species":"Zoroark-Hisui","item":"","ability":"Illusion","moves":["Spiky Shield","Matcha Gotcha","Charge"],"nature":"Serious","evs":{"hp":3,"atk":23,"def":5,"spa":8,"spd":22,"spe":3},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Florges","species":"Florges","item":"","ability":"Flower Veil","moves":["Thief","Poison Fang","Fling"],"nature":"Quirky","evs":{"hp":3,"atk":16,"def":28,"spa":0,"spd":0,"spe":11},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sparky","species":"Tyrantrum","item":"","ability":"Rock Head","moves":["Thunder Fang"],"nature":"Bashful","evs":{"hp":2,"atk":21,"def":12,"spa":10,"spd":4,"spe":17},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pikachu","species":"Ampharos","item":"Ampharosite","ability":"Static","moves":["Stockpile","Leech Seed"],"nature":"Impish","evs":{"hp":31,"atk":4,"def":21,"spa":0,"spd":1,"spe":9},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Mr. Bubbles","species":"Dragapult","item":"Chople Berry","ability":"Infiltrator","moves":["Rapid Spin","Frenzy Plant","Twin Beam"],"nature":"Hardy","evs":{"hp":1,"atk":2,"def":1,"spa":10,"spd":24,"spe":28},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Tsareena","species":"Tsareena","item":"","ability":"Leaf Guard","moves":["Steel Beam","Fire Blast","Charge Beam","Facade"],"nature":"Serious","evs":{"hp":5,"atk":27,"def":5,"spa":6,"spd":11,"spe":8},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Absol","species":"Absol","item":"Spell Tag","ability":"Pressure","moves":["Iron Tail","Guillotine"],"nature":"Serious","evs":{"hp":28,"atk":9,"def":4,"spa":1,"spd":2,"spe":9},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[3,3],"inputLog":[">start {\"formatid\":\"[Gen 9 Champions] VGC 2026 Reg M-B\",\"seed\":\"gen5,2b4f674e8f2376be\",\"rated\":\"Tournament battle\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Florges|||FlowerVeil|Thief,PoisonFang,Fling|Quirky|3,16,28,,,11||||50|,,,,,Dragon]Sparky|Tyrantrum||RockHead|ThunderFang|Bashful|2,21,12,10,4,17|M|||50|,,,,,Fighting]Pikachu|Ampharos|Ampharosite|Static|Stockpile,LeechSeed|Impish|31,4,21,,1,9|F|||50|,,,,,Psychic]Mr. Bubbles|Dragapult|ChopleBerry|Infiltrator|RapidSpin,FrenzyPlant,TwinBeam|Hardy|1,2,1,10,24,28|F|||50|,,,,,Ground]Tsareena|||LeafGuard|SteelBeam,FireBlast,ChargeBeam,Facade|Serious|5,27,5,6,11,8|F|||50|,,,,,Grass]Absol||SpellTag|Pressure|IronTail,Guillotine|Serious|28,9,4,1,2,9|M|||50|,,,,,Bug\",\"avatar\":\"lucas\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Sparky|Roserade|SpellTag|PoisonPoint|AquaTail,CosmicPower,MistyExplosion|Quirky|,20,1,13,28,2|F|||50|,,,,,Grass]Tinkaton||WacanBerry|Pickpocket|LavaPlume,Ingrain,Infestation,ClearSmog|Lonely|29,3,17,,9,7|F||S|50|,,,,,Normal]Chomp|VivillonRiver|OranBerry|FriendGuard|BodySlam|Hasty|12,20,5,23,,6|F|||50|,,,,,Fighting]Glimmora||Glimmoranite|ToxicDebris|VoltSwitch|Gentle|23,2,7,12,1,19|F|||50|,,,,,Ice]Flareon|||FlashFire|IcicleSpear,ThunderWave,Uproar,Transform|Quirky|1,31,14,,17,1|F|||50|,,,,,Poison]Zoroark-Hisui|||Illusion|SpikyShield,MatchaGotcha,Charge|Serious|3,23,5,8,22,3|M|||50|,,,,,Rock\",\"avatar\":\"lucas\"}",">p1 team 2, 4, 5, 3",">p2 team 5, 6, 2, 4",">p1 move clearsmog -2, move voltswitch -1 mega",">p2 move steelbeam -2, move guillotine +2",">p1 pass, switch 4",">p1 pass, switch 4",">p1 move clearsmog -2, move voltswitch +2",">p2 move steelbeam -2, switch 4",">p1 pass, switch 3",">forcetie"]}

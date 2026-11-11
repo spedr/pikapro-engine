@@ -1,0 +1,484 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 071d 128c 7f8f 40ee
+genders drawn
+team p1
+Gholdengo
+Ability: Good as Gold
+Level: 50
+Tera Type: Fairy
+EVs: 12 HP / 5 Atk / 19 Def / 8 SpA / 6 SpD / 13 Spe
+Gentle Nature
+- Triple Arrows
+
+Starmie @ Miracle Seed
+Ability: Natural Cure
+Level: 50
+Tera Type: Fire
+EVs: 1 HP / 7 Atk / 29 Def / 3 SpA / 4 SpD / 21 Spe
+Bashful Nature
+- Icicle Spear
+- Baton Pass
+- Rock Slide
+
+Dragapult (M) @ Scope Lens
+Ability: Clear Body
+Level: 50
+Tera Type: Fairy
+EVs: 12 HP / 29 SpA / 25 Spe
+Bashful Nature
+- Flame Charge
+
+Aggron (M) @ Aggronite
+Ability: Heavy Metal
+Level: 50
+Tera Type: Grass
+EVs: 5 HP / 6 Atk / 4 Def / 11 SpA / 19 SpD / 17 Spe
+Lax Nature
+- Pounce
+- Wave Crash
+
+Overqwil (M) @ Cheri Berry
+Ability: Swift Swim
+Level: 50
+Tera Type: Water
+EVs: 7 HP / 3 Atk / 25 Def / 21 SpA / 10 Spe
+Lax Nature
+- Mud Shot
+- Cross Poison
+- Rapid Spin
+
+Snorlax (M) @ Muscle Band
+Ability: Gluttony
+Level: 50
+Tera Type: Flying
+EVs: 3 HP / 15 Atk / 6 Def / 2 SpA / 8 SpD / 9 Spe
+Hardy Nature
+- Aqua Step
+end
+team p2
+Mimikyu (M)
+Ability: Disguise
+Level: 50
+Tera Type: Fairy
+EVs: 1 Atk / 20 Def / 8 SpA / 19 SpD / 18 Spe
+Timid Nature
+- Light of Ruin
+
+Venusaur (M)
+Ability: Chlorophyll
+Level: 50
+Tera Type: Fairy
+EVs: 4 HP / 25 Atk / 4 SpA / 13 SpD / 19 Spe
+Bashful Nature
+- Wood Hammer
+- Psychic Terrain
+
+Bellibolt (M) @ Persim Berry
+Ability: Damp
+Level: 50
+Tera Type: Poison
+EVs: 30 HP / 10 Def / 26 SpA
+Adamant Nature
+- Icicle Spear
+- Quick Attack
+- Super Fang
+
+Froslass (F)
+Ability: Snow Cloak
+Level: 50
+Tera Type: Poison
+EVs: 2 HP / 5 Atk / 7 Def / 23 SpA / 6 SpD / 21 Spe
+Relaxed Nature
+- Whirlwind
+- Round
+- Final Gambit
+- Solar Beam
+
+Ariados (M)
+Ability: Swarm
+Level: 50
+Tera Type: Normal
+EVs: 23 HP / 4 Atk / 5 Def / 29 SpA / 2 SpD / 3 Spe
+Quiet Nature
+- Mud Shot
+
+Pinsir (M) @ Pinsirite
+Ability: Hyper Cutter
+Level: 50
+Tera Type: Fighting
+EVs: 12 HP / 11 Atk / 10 Def / 32 SpA / 1 Spe
+Impish Nature
+- Shadow Punch
+- Grassy Glide
+end
+choice p1 team 1463
+choice p2 team 5341
+choice p1 move 1 1, move 2 2 mega
+choice p2 move 1 -2, move 3 -1
+choice p1 move 1 1, move 2 2
+choice p2 switch 3, move 3 1
+choice p1 switch 3, move 2 1
+choice p2 move 3 2, move 1 -1
+choice p1 pass, switch 4
+choice p2 switch 3, pass
+choice p1 switch 3, move 1 2
+choice p2 switch 4, move 1 1
+choice p2 pass, switch 4
+choice p1 move 1 2, move 1 -1
+choice p2 move 1 1, move 1 2
+choice p1 move 1 2, switch 3
+choice p2 move 1 1, move 1 1
+choice p1 move 1 -2, move 1 2
+choice p2 move 1 -2, move 1 -1
+choice p1 move 1 -2, move 1 1
+choice p2 move 1 2, pass
+choice p1 move 1 -2, switch 3
+choice p2 move 1 2, pass
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Gholdengo, L50|
+expect |poke|p1|Starmie, L50|
+expect |poke|p1|Dragapult, L50, M|
+expect |poke|p1|Aggron, L50, M|
+expect |poke|p1|Overqwil, L50, M|
+expect |poke|p1|Snorlax, L50, M|
+expect |poke|p2|Mimikyu, L50, M|
+expect |poke|p2|Venusaur, L50, M|
+expect |poke|p2|Bellibolt, L50, M|
+expect |poke|p2|Froslass, L50, F|
+expect |poke|p2|Ariados, L50, M|
+expect |poke|p2|Pinsir, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Gholdengo|Gholdengo, L50|174/174
+expect |switch|p1a: Gholdengo|Gholdengo, L50|100/100
+expect |split|p1
+expect |switch|p1b: Aggron|Aggron, L50, M|150/150
+expect |switch|p1b: Aggron|Aggron, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Ariados|Ariados, L50, M|168/168
+expect |switch|p2a: Ariados|Ariados, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Bellibolt|Bellibolt, L50, M|214/214
+expect |switch|p2b: Bellibolt|Bellibolt, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |detailschange|p1b: Aggron|Aggron-Mega, L50, M
+expect |-mega|p1b: Aggron|Aggron|Aggronite
+expect |move|p1a: Gholdengo|Triple Arrows|p2a: Ariados
+expect |rng|100|3
+expect |rng|8|4
+expect |rng|16|3
+expect |-resisted|p2a: Ariados|2
+expect |split|p2
+expect |-damage|p2a: Ariados|160/168
+expect |-damage|p2a: Ariados|95/100
+expect |rng|100|89
+expect |rng|100|73
+expect |move|p1b: Aggron|Wave Crash|p2b: Bellibolt
+expect |rng|100|5
+expect |rng|24|14
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Bellibolt|143/214
+expect |-damage|p2b: Bellibolt|66/100
+expect |split|p1
+expect |-damage|p1b: Aggron|127/150|[from] Recoil
+expect |-damage|p1b: Aggron|84/100|[from] Recoil
+expect |move|p2b: Bellibolt|Super Fang|p2a: Ariados
+expect |rng|100|48
+expect |split|p2
+expect |-damage|p2a: Ariados|80/168
+expect |-damage|p2a: Ariados|47/100
+expect |move|p2a: Ariados|Mud Shot|p2b: Bellibolt
+expect |rng|100|68
+expect |rng|24|20
+expect |rng|16|6
+expect |-supereffective|p2b: Bellibolt|1
+expect |split|p2
+expect |-damage|p2b: Bellibolt|89/214
+expect |-damage|p2b: Bellibolt|41/100
+expect |rng|100|99
+expect |-unboost|p2b: Bellibolt|spe|1
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Froslass|Froslass, L50, F|147/147
+expect |switch|p2a: Froslass|Froslass, L50, F|100/100
+expect |move|p1a: Gholdengo|Triple Arrows|p2a: Froslass
+expect |-immune|p2a: Froslass
+expect |move|p1b: Aggron|Wave Crash|p2b: Bellibolt
+expect |rng|100|41
+expect |rng|24|13
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Bellibolt|20/214
+expect |-damage|p2b: Bellibolt|9/100
+expect |split|p1
+expect |-damage|p1b: Aggron|104/150|[from] Recoil
+expect |-damage|p1b: Aggron|69/100|[from] Recoil
+expect |move|p2b: Bellibolt|Super Fang|p1a: Gholdengo
+expect |-immune|p1a: Gholdengo
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Snorlax|Snorlax, L50, M|238/238
+expect |switch|p1a: Snorlax|Snorlax, L50, M|100/100
+expect |move|p2a: Froslass|Final Gambit|p1b: Aggron
+expect |rng|100|94
+expect |split|p1
+expect |-damage|p1b: Aggron|0 fnt
+expect |-damage|p1b: Aggron|0 fnt
+expect |faint|p2a: Froslass
+expect |faint|p1b: Aggron
+expect |rng|1|0
+expect |move|p2b: Bellibolt|Icicle Spear|p2: Froslass|[notarget]
+expect |-fail|p2b: Bellibolt
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Ariados|Ariados, L50, M|80/168
+expect |switch|p2a: Ariados|Ariados, L50, M|47/100
+expect |split|p1
+expect |switch|p1b: Dragapult|Dragapult, L50, M|175/175
+expect |switch|p1b: Dragapult|Dragapult, L50, M|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Gholdengo|Gholdengo, L50|174/174
+expect |switch|p1a: Gholdengo|Gholdengo, L50|100/100
+expect |split|p2
+expect |switch|p2a: Mimikyu|Mimikyu, L50, M|130/130
+expect |switch|p2a: Mimikyu|Mimikyu, L50, M|100/100
+expect |move|p1b: Dragapult|Flame Charge|p2b: Bellibolt
+expect |rng|100|1
+expect |rng|8|7
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Bellibolt|0 fnt
+expect |-damage|p2b: Bellibolt|0 fnt
+expect |rng|100|98
+expect |-boost|p1b: Dragapult|spe|1
+expect |faint|p2b: Bellibolt
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Ariados|Ariados, L50, M|80/168
+expect |switch|p2b: Ariados|Ariados, L50, M|47/100
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1b: Dragapult|Flame Charge|p1a: Gholdengo
+expect |rng|100|97
+expect |rng|8|6
+expect |rng|16|2
+expect |-supereffective|p1a: Gholdengo|1
+expect |split|p1
+expect |-damage|p1a: Gholdengo|122/174
+expect |-damage|p1a: Gholdengo|70/100
+expect |rng|100|62
+expect |-boost|p1b: Dragapult|spe|1
+expect |move|p2a: Mimikyu|Light of Ruin|p1a: Gholdengo
+expect |rng|100|56
+expect |rng|24|16
+expect |rng|16|8
+expect |-resisted|p1a: Gholdengo|1
+expect |split|p1
+expect |-damage|p1a: Gholdengo|96/174
+expect |-damage|p1a: Gholdengo|55/100
+expect |split|p2
+expect |-damage|p2a: Mimikyu|117/130|[from] Recoil
+expect |-damage|p2a: Mimikyu|90/100|[from] Recoil
+expect |move|p1a: Gholdengo|Triple Arrows|p2b: Ariados
+expect |rng|100|99
+expect |rng|8|6
+expect |rng|16|0
+expect |-resisted|p2b: Ariados|2
+expect |split|p2
+expect |-damage|p2b: Ariados|71/168
+expect |-damage|p2b: Ariados|42/100
+expect |rng|100|90
+expect |rng|100|51
+expect |move|p2b: Ariados|Mud Shot|p1b: Dragapult
+expect |rng|100|24
+expect |rng|24|18
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Dragapult|146/175
+expect |-damage|p1b: Dragapult|83/100
+expect |rng|100|39
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Snorlax|Snorlax, L50, M|238/238
+expect |switch|p1b: Snorlax|Snorlax, L50, M|100/100
+expect |move|p2a: Mimikyu|Light of Ruin|p1a: Gholdengo
+expect |rng|100|58
+expect |rng|24|23
+expect |rng|16|5
+expect |-resisted|p1a: Gholdengo|1
+expect |split|p1
+expect |-damage|p1a: Gholdengo|69/174
+expect |-damage|p1a: Gholdengo|39/100
+expect |split|p2
+expect |-damage|p2a: Mimikyu|103/130|[from] Recoil
+expect |-damage|p2a: Mimikyu|79/100|[from] Recoil
+expect |move|p1a: Gholdengo|Triple Arrows|p2b: Ariados
+expect |rng|100|45
+expect |rng|8|2
+expect |rng|16|9
+expect |-resisted|p2b: Ariados|2
+expect |split|p2
+expect |-damage|p2b: Ariados|63/168
+expect |-damage|p2b: Ariados|37/100
+expect |rng|100|66
+expect |rng|100|93
+expect |move|p2b: Ariados|Mud Shot|p1a: Gholdengo
+expect |rng|100|66
+expect |rng|24|21
+expect |rng|16|15
+expect |-supereffective|p1a: Gholdengo|1
+expect |split|p1
+expect |-damage|p1a: Gholdengo|29/174
+expect |-damage|p1a: Gholdengo|16/100
+expect |rng|100|76
+expect |-unboost|p1a: Gholdengo|spe|1
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Mimikyu|Light of Ruin|p2b: Ariados
+expect |rng|100|23
+expect |rng|24|10
+expect |rng|16|9
+expect |-resisted|p2b: Ariados|1
+expect |split|p2
+expect |-damage|p2b: Ariados|27/168
+expect |-damage|p2b: Ariados|16/100
+expect |split|p2
+expect |-damage|p2a: Mimikyu|85/130|[from] Recoil
+expect |-damage|p2a: Mimikyu|65/100|[from] Recoil
+expect |move|p1a: Gholdengo|Triple Arrows|p1b: Snorlax
+expect |rng|100|7
+expect |rng|8|7
+expect |rng|16|1
+expect |-supereffective|p1b: Snorlax|1
+expect |split|p1
+expect |-damage|p1b: Snorlax|164/238
+expect |-damage|p1b: Snorlax|68/100
+expect |rng|100|44
+expect |-unboost|p1b: Snorlax|def|1
+expect |rng|100|39
+expect |move|p1b: Snorlax|Aqua Step|p2b: Ariados
+expect |rng|100|74
+expect |rng|24|22
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Ariados|0 fnt
+expect |-damage|p2b: Ariados|0 fnt
+expect |rng|100|49
+expect |-boost|p1b: Snorlax|spe|1
+expect |faint|p2b: Ariados
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2a: Mimikyu|Light of Ruin|p1b: Snorlax
+expect |rng|100|15
+expect |rng|24|21
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Snorlax|119/238
+expect |-damage|p1b: Snorlax|50/100y
+expect |split|p2
+expect |-damage|p2a: Mimikyu|62/130|[from] Recoil
+expect |-damage|p2a: Mimikyu|47/100|[from] Recoil
+expect |move|p1b: Snorlax|Aqua Step|p2a: Mimikyu
+expect |rng|100|70
+expect |rng|24|9
+expect |rng|16|11
+expect |-activate|p2a: Mimikyu|ability: Disguise
+expect |split|p2
+expect |-damage|p2a: Mimikyu|62/130
+expect |-damage|p2a: Mimikyu|47/100
+expect |rng|100|82
+expect |-boost|p1b: Snorlax|spe|1
+expect |detailschange|p2a: Mimikyu|Mimikyu-Busted, L50, M
+expect |split|p2
+expect |-damage|p2a: Mimikyu|46/130|[from] pokemon: Mimikyu-Busted
+expect |-damage|p2a: Mimikyu|35/100|[from] pokemon: Mimikyu-Busted
+expect |move|p1a: Gholdengo|Triple Arrows|p1b: Snorlax
+expect |rng|100|32
+expect |rng|8|6
+expect |rng|16|7
+expect |-supereffective|p1b: Snorlax|1
+expect |split|p1
+expect |-damage|p1b: Snorlax|13/238
+expect |-damage|p1b: Snorlax|5/100
+expect |rng|100|23
+expect |-unboost|p1b: Snorlax|def|1
+expect |rng|100|6
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Dragapult|Dragapult, L50, M|146/175
+expect |switch|p1b: Dragapult|Dragapult, L50, M|83/100
+expect |move|p2a: Mimikyu|Light of Ruin|p1b: Dragapult
+expect |rng|100|19
+expect |rng|24|4
+expect |rng|16|9
+expect |-supereffective|p1b: Dragapult|1
+expect |split|p1
+expect |-damage|p1b: Dragapult|6/175
+expect |-damage|p1b: Dragapult|3/100
+expect |split|p2
+expect |-damage|p2a: Mimikyu|0 fnt|[from] Recoil
+expect |-damage|p2a: Mimikyu|0 fnt|[from] Recoil
+expect |faint|p2a: Mimikyu
+expect |
+expect |win|p1

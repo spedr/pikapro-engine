@@ -1,0 +1,72 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Arcanine
+Ability: Parental Bond
+Hardy Nature
+- Burn Up
+end
+team p2
+Snorlax
+Ability: Thick Fat
+Hardy Nature
+- Splash
+end
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|1
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Arcanine|Arcanine, F|321/321
+expect |switch|p1a: Arcanine|Arcanine, F|321/321
+expect |split|p2
+expect |switch|p2a: Snorlax|Snorlax, F|461/461
+expect |switch|p2a: Snorlax|Snorlax, F|461/461
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Arcanine|Burn Up|p2a: Snorlax
+expect |rng|100|94
+expect |rng|24|4
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Snorlax|388/461
+expect |-damage|p2a: Snorlax|388/461
+expect |-start|p1a: Arcanine|typechange|???|[from] move: Burn Up
+expect |rng|24|16
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Snorlax|376/461
+expect |-damage|p2a: Snorlax|376/461
+expect |-start|p1a: Arcanine|typechange|???|[from] move: Burn Up
+expect |-hitcount|p2a: Snorlax|2
+expect |move|p2a: Snorlax|Splash|p2a: Snorlax
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Arcanine|Burn Up||[still]
+expect |-fail|p1a: Arcanine|move: Burn Up
+expect |move|p2a: Snorlax|Splash|p2a: Snorlax
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3

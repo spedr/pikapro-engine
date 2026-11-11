@@ -1,0 +1,184 @@
+# gen9vgc-gen5-2121003-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay spectator
+@write
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,7aadac3d420ef5ae"}
+@write
+>player p1 {"name":"Alice","team":"Big Tony's Pal|Ursaring|Magmarizer|Guts|SpikyShield|Rash|215,61,20,17,10,173||||50|,,,,,Bug]Treecko|||Overgrow|Imprison,WickedBlow,MountainGale|Docile|21,83,50,93,217,9||||50|,,,,,Poison]Bounsweet||DubiousDisc|ArenaTrap|IvyCudgel,RockSlide|Bold|17,189,,48,25,174|F|||50|,,,,,Psychic]Mr. Bubbles|Hippopotas||SandForce|AfterYou,AquaCutter,QuiverDance|Serious|13,8,140,75,17,141|F|||50|,,,,,Stellar]Meowth-Galar|||Pickup|Disable,HyperDrill|Mild|14,43,233,6,169,18||||50|,,,,,Flying]Keldeo-Resolute||DiveBall|Justified|DynamaxCannon,EerieImpulse|Timid|,170,160,60,120,||||50|,,,,,Flying","avatar":"lucas"}
+@write
+>player p2 {"name":"Bob","team":"Crocalor||WellspringMask|Blaze|ShadowForce,DrillPeck,Ember|Hardy|81,5,18,122,234,4||||50|,,,,,Dragon]Vivillon-Archipelago|||FriendGuard|Swagger|Mild|149,51,7,111,178,10|M|||50|,,,,,Fire]Duraludon|||Stalwart|Imprison|Hardy|132,60,31,7,238,29|F|||50|,,,,,Ground]Hatenna||ChoiceBand|Healer|AerialAce,LeechLife|Jolly|175,3,93,97,5,136||||50|,,,,,Stellar]Gengar||RareBone|CursedBody|Imprison,Ruination|Naive|99,201,104,74,20,4|M|||50|,,,,,Dragon]Mareanie||ChoiceScarf|Merciless|TerrainPulse,BugBite|Naughty|162,1,90,108,89,35||||50|,,,,,Water"}
+@write
+>p1 move 1
+@write
+>p2 team 1364
+@write
+>p1 team 4635
+@write
+>p2 move Drill Peck terastal
+@write
+>p1 move 1 1, move 1 2 terastallize
+@write
+>p2 move 1 2 terastallize, move imprison 2 mega
+@write
+>p2 move 1 1 terastallize, switch 3
+@write
+>p2 move 1, switch 4
+@write
+>chat turn talk 91
+@write
+>p1 move 1 -2, switch 4
+@write
+>p2 move 3 2, move 2 2
+@write
+>p1 move 3 dynamax
+@write
+>p1 move After You -2,move 2 1
+@write
+>p2 move 3 1, move 2 1
+@write
+>p1 switch 3, move 1 +1 terastallize
+@write
+>p1 move 2 1, move 2 -1
+@write
+>p1 move 1 2, move 2 1
+@write
+>p2 move ember +1 terastallize, switch 3
+@write
+>p2 move 2 +1 terastallize
+@write
+>p2 move Ember -2, switch 4
+@write
+>p2 move 3 1, move 1 2
+@write
+>p1 move 1 -2, move 1 -1
+@write
+>p1 switch 3, move Disable -1 terastal
+@write
+>forcetie
+@message
+|t:|
+|gametype|doubles
+@message
+|player|p1|Alice|lucas|
+@message
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Ursaring, L50, F|
+|poke|p1|Treecko, L50, F|
+|poke|p1|Bounsweet, L50, F|
+|poke|p1|Hippopotas, L50, F|
+|poke|p1|Meowth-Galar, L50, F|
+|poke|p1|Keldeo-Resolute, L50|
+|poke|p2|Crocalor, L50, F|
+|poke|p2|Vivillon-Archipelago, L50, M|
+|poke|p2|Duraludon, L50, F|
+|poke|p2|Hatenna, L50, F|
+|poke|p2|Gengar, L50, M|
+|poke|p2|Mareanie, L50, F|
+|teampreview|4
+@message
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Mr. Bubbles|Hippopotas, L50, F|145/145
+|switch|p1b: Keldeo|Keldeo-Resolute, L50|166/166
+|switch|p2a: Crocalor|Crocalor, L50, F|166/166
+|switch|p2b: Duraludon|Duraludon, L50, F|162/162
+|turn|1
+@message
+|
+|t:|
+|switch|p2b: Mareanie|Mareanie, L50, F|145/145
+|-terastallize|p1b: Keldeo|Flying
+|-terastallize|p2a: Crocalor|Dragon
+|move|p1b: Keldeo|Dynamax Cannon|p2b: Mareanie
+|-damage|p2b: Mareanie|53/145
+|move|p1a: Mr. Bubbles|After You|p2a: Crocalor
+|-activate|p2a: Crocalor|move: After You
+|move|p2a: Crocalor|Shadow Force||[still]
+|-prepare|p2a: Crocalor|Shadow Force
+|
+|upkeep
+|turn|2
+@message
+|chat|turn talk 91
+@message
+|
+|t:|
+|switch|p1b: Meowth|Meowth-Galar, L50, F|127/127
+|switch|p2b: Hatenna|Hatenna, L50, F|139/139
+|move|p2a: Crocalor|Shadow Force|p1a: Mr. Bubbles|[from] lockedmove
+|-damage|p1a: Mr. Bubbles|112/145
+|move|p1a: Mr. Bubbles|After You||[still]
+|-fail|p1a: Mr. Bubbles
+|
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|move|p2b: Hatenna|Leech Life|p1b: Meowth
+|-resisted|p1b: Meowth
+|-damage|p1b: Meowth|114/127
+|move|p1a: Mr. Bubbles|After You|p1b: Meowth
+|-activate|p1b: Meowth|move: After You
+|move|p1b: Meowth|Hyper Drill|p2a: Crocalor
+|-damage|p2a: Crocalor|131/166
+|move|p2a: Crocalor|Ember|p1b: Meowth
+|-supereffective|p1b: Meowth
+|-damage|p1b: Meowth|36/127
+|
+|upkeep
+|turn|4
+@message
+|
+|t:|
+|move|p2b: Hatenna|Leech Life|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|92/145
+|move|p2a: Crocalor|Ember|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|44/145
+|move|p1a: Mr. Bubbles|Aqua Cutter|p2a: Crocalor
+|-resisted|p2a: Crocalor
+|-damage|p2a: Crocalor|118/166
+|move|p1b: Meowth|Hyper Drill|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|11/145
+|
+|upkeep
+|turn|5
+@message
+|
+|t:|
+|switch|p2b: Mareanie|Mareanie, L50, F|53/145
+|move|p2a: Crocalor|Ember|p2b: Mareanie
+|-resisted|p2b: Mareanie
+|-damage|p2b: Mareanie|34/145
+|move|p1a: Mr. Bubbles|After You||[still]
+|-fail|p1a: Mr. Bubbles
+|move|p1b: Meowth|Hyper Drill|p2a: Crocalor
+|-damage|p2a: Crocalor|82/166
+|
+|upkeep
+|turn|6
+@message
+|
+|t:|
+|move|p2b: Mareanie|Terrain Pulse|p1b: Meowth
+|-resisted|p1b: Meowth
+|-damage|p1b: Meowth|27/127
+|move|p1a: Mr. Bubbles|After You|p1b: Meowth
+|-activate|p1b: Meowth|move: After You
+|move|p1b: Meowth|Disable|p1a: Mr. Bubbles
+|-start|p1a: Mr. Bubbles|Disable|After You
+|move|p2a: Crocalor|Ember|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|0 fnt
+|faint|p1a: Mr. Bubbles
+|
+|upkeep
+@message
+|
+|tie

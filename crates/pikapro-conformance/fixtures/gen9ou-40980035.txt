@@ -1,0 +1,785 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9ou
+seed 142d 7a0f 4c7c 75e6
+genders drawn
+team p1
+Arceus-Fire @ Heavy Ball
+Ability: Multitype
+Shiny: Yes
+Tera Type: Ghost
+EVs: 80 HP / 1 Atk / 2 Def / 192 SpA / 20 SpD / 215 Spe
+Serious Nature
+- Pollen Puff
+
+Seviper @ Smooth Rock
+Ability: Shed Skin
+Tera Type: Dark
+EVs: 142 HP / 62 Atk / 71 Def / 10 SpA / 117 SpD / 80 Spe
+Naughty Nature
+- Hex
+- Haze
+- Hydro Cannon
+
+Skrelp (F) @ Insect Plate
+Ability: Poison Point
+Tera Type: Fighting
+EVs: 187 HP / 1 Atk / 44 Def / 12 SpA / 242 SpD / 4 Spe
+Serious Nature
+- Discharge
+- Chilling Water
+
+Dreepy
+Ability: Cursed Body
+Tera Type: Normal
+EVs: 11 HP / 52 Atk / 24 Def / 106 SpA / 75 SpD / 203 Spe
+Docile Nature
+- Struggle
+
+Cacnea (M)
+Ability: Sand Veil
+Tera Type: Fairy
+EVs: 16 HP / 186 Atk / 14 Def / 107 SpA / 5 SpD / 141 Spe
+Naughty Nature
+- Meteor Beam
+- Weather Ball
+- Shadow Sneak
+
+Pikachu (Dudunsparce) @ Moon Ball
+Ability: Run Away
+Tera Type: Stellar
+EVs: 28 HP / 140 Atk / 51 Def / 13 SpA / 29 SpD / 198 Spe
+Bashful Nature
+- Power Whip
+end
+team p2
+Dragalge
+Ability: Adaptability
+Tera Type: Steel
+EVs: 201 HP / 3 Atk / 100 Def / 3 SpA / 22 SpD / 181 Spe
+Brave Nature
+- Flash Cannon
+- Bounce
+- Arm Thrust
+end
+choice p1 team 465213
+choice p2 team 1
+choice p1 default
+choice p2 move 3 terastallize
+choice p1 switch 6
+choice p2 move 2
+choice p1 switch 2
+choice p2 move 1
+choice p1 switch 5
+choice p2 move 3
+choice p1 move 1
+choice p2 move Arm Thrust
+choice p1 switch 6
+choice p2 move Flash Cannon
+choice p1 switch 2
+choice p2 move 1
+choice p1 move 1
+choice p2 move 3
+choice p1 switch 5
+choice p2 move 1
+choice p1 move powerwhip terastal
+choice p2 move 1
+choice p1 move 1
+choice p1 switch cacnea
+choice p2 move 1
+choice p1 move Weather Ball
+choice p1 switch 6
+choice p2 move 3
+choice p1 switch 4
+choice p2 move flashcannon
+choice p1 switch 5
+choice p2 move Arm Thrust
+choice p1 move 1
+choice p2 move 2
+choice p1 move 2
+choice p2 move 1
+choice p1 switch 5
+choice p2 move 2
+choice p1 switch skrelp
+choice p2 move 1
+choice p1 switch 4
+choice p2 move flashcannon
+choice p1 switch 5
+choice p2 move 3
+choice p1 switch 5
+choice p2 move 3
+choice p1 switch Seviper
+choice p2 move 3
+choice p1 switch 5
+choice p2 move 1
+choice p1 switch 4
+choice p2 move Bounce
+choice p1 switch arceus-fire
+choice p2 move 1
+choice p1 move 1
+choice p2 move 2
+choice p1 switch 4
+choice p2 move 3
+choice p1 switch Arceus
+choice p2 move 1
+choice p1 switch 5
+choice p1 switch 5
+choice p2 move 3
+choice p1 move 1
+choice p2 move 2
+choice p1 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] OU
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Endless Battle Clause: Forcing endless battles is banned
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|OHKO Clause: OHKO moves are banned
+expect |rule|Evasion Items Clause: Evasion items are banned
+expect |rule|Evasion Moves Clause: Evasion moves are banned
+expect |rule|Evasion Abilities Clause: Evasion abilities are banned
+expect |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+expect |clearpoke
+expect |poke|p1|Arceus-Fire|
+expect |poke|p1|Seviper, F|
+expect |poke|p1|Skrelp, F|
+expect |poke|p1|Dreepy, M|
+expect |poke|p1|Cacnea, M|
+expect |poke|p1|Dudunsparce-*, F|
+expect |poke|p2|Dragalge, F|
+expect |teampreview
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Dreepy|Dreepy, M|199/199
+expect |switch|p1a: Dreepy|Dreepy, M|100/100
+expect |split|p2
+expect |switch|p2a: Dragalge|Dragalge, F|321/321
+expect |switch|p2a: Dragalge|Dragalge, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p2a: Dragalge|Steel
+expect |-activate|p1a: Dreepy|move: Struggle
+expect |move|p1a: Dreepy|Struggle|p2a: Dragalge
+expect |rng|24|14
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Dragalge|293/321
+expect |-damage|p2a: Dragalge|92/100
+expect |split|p1
+expect |-damage|p1a: Dreepy|149/199|[from] recoil
+expect |-damage|p1a: Dreepy|75/100|[from] recoil
+expect |move|p2a: Dragalge|Arm Thrust|p1a: Dreepy
+expect |-immune|p1a: Dreepy
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Skrelp|Skrelp, F|287/287
+expect |switch|p1a: Skrelp|Skrelp, F|100/100
+expect |move|p2a: Dragalge|Bounce||[still]
+expect |-prepare|p2a: Dragalge|Bounce
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Dudunsparce, F|398/398
+expect |switch|p1a: Pikachu|Dudunsparce, F|100/100
+expect |move|p2a: Dragalge|Bounce|p1a: Pikachu|[from] lockedmove
+expect |rng|100|62
+expect |rng|24|11
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Pikachu|334/398
+expect |-damage|p1a: Pikachu|84/100
+expect |rng|100|42
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|401/401
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|100/100
+expect |move|p2a: Dragalge|Arm Thrust|p1a: Arceus
+expect |rng|100|11
+expect |rng|20|0
+expect |rng|24|1
+expect |rng|16|10
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|383/401
+expect |-damage|p1a: Arceus|96/100
+expect |rng|24|16
+expect |rng|16|15
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|365/401
+expect |-damage|p1a: Arceus|92/100
+expect |-hitcount|p1a: Arceus|2
+expect |
+expect |upkeep
+expect |-start|p1a: Arceus|typechange|Normal|[silent]
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1a: Arceus|Pollen Puff|p2a: Dragalge
+expect |rng|100|21
+expect |rng|24|8
+expect |rng|16|6
+expect |-resisted|p2a: Dragalge
+expect |split|p2
+expect |-damage|p2a: Dragalge|253/321
+expect |-damage|p2a: Dragalge|79/100
+expect |move|p2a: Dragalge|Arm Thrust|p1a: Arceus
+expect |rng|100|24
+expect |rng|20|10
+expect |rng|24|7
+expect |rng|16|8
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|345/401
+expect |-damage|p1a: Arceus|87/100
+expect |rng|24|12
+expect |rng|16|3
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|325/401
+expect |-damage|p1a: Arceus|82/100
+expect |rng|24|5
+expect |rng|16|3
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|305/401
+expect |-damage|p1a: Arceus|77/100
+expect |-hitcount|p1a: Arceus|3
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Dreepy|Dreepy, M|149/199
+expect |switch|p1a: Dreepy|Dreepy, M|75/100
+expect |move|p2a: Dragalge|Flash Cannon|p1a: Dreepy
+expect |rng|100|11
+expect |rng|24|6
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Dreepy|0 fnt
+expect |-damage|p1a: Dreepy|0 fnt
+expect |rng|100|36
+expect |rng|10|5
+expect |faint|p1a: Dreepy
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Skrelp|Skrelp, F|287/287
+expect |switch|p1a: Skrelp|Skrelp, F|100/100
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Dragalge|Flash Cannon|p1a: Skrelp
+expect |rng|100|37
+expect |rng|24|9
+expect |rng|16|12
+expect |-resisted|p1a: Skrelp
+expect |split|p1
+expect |-damage|p1a: Skrelp|223/287
+expect |-damage|p1a: Skrelp|78/100
+expect |rng|100|60
+expect |move|p1a: Skrelp|Discharge|p2a: Dragalge
+expect |rng|100|41
+expect |rng|24|16
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Dragalge|215/321
+expect |-damage|p2a: Dragalge|67/100
+expect |rng|100|19
+expect |-status|p2a: Dragalge|par
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Dudunsparce, F|334/398
+expect |switch|p1a: Pikachu|Dudunsparce, F|84/100
+expect |rng|4|0
+expect |cant|p2a: Dragalge|par
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |-terastallize|p1a: Pikachu|Stellar
+expect |move|p1a: Pikachu|Power Whip|p2a: Dragalge
+expect |rng|100|33
+expect |rng|24|6
+expect |rng|16|9
+expect |-resisted|p2a: Dragalge
+expect |split|p2
+expect |-damage|p2a: Dragalge|153/321 par
+expect |-damage|p2a: Dragalge|48/100 par
+expect |rng|4|1
+expect |move|p2a: Dragalge|Flash Cannon|p1a: Pikachu
+expect |rng|100|12
+expect |rng|24|0
+expect |rng|16|15
+expect |-crit|p1a: Pikachu
+expect |split|p1
+expect |-damage|p1a: Pikachu|126/398
+expect |-damage|p1a: Pikachu|32/100
+expect |rng|100|94
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1a: Pikachu|Power Whip|p2a: Dragalge|[miss]
+expect |rng|100|99
+expect |-miss|p1a: Pikachu|p2a: Dragalge
+expect |rng|4|1
+expect |move|p2a: Dragalge|Flash Cannon|p1a: Pikachu
+expect |rng|100|3
+expect |rng|24|6
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Pikachu|0 fnt
+expect |-damage|p1a: Pikachu|0 fnt
+expect |rng|100|45
+expect |faint|p1a: Pikachu
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Cacnea|Cacnea, M|245/245
+expect |switch|p1a: Cacnea|Cacnea, M|100/100
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p1a: Cacnea|Weather Ball|p2a: Dragalge
+expect |rng|100|3
+expect |rng|24|6
+expect |rng|16|6
+expect |-resisted|p2a: Dragalge
+expect |split|p2
+expect |-damage|p2a: Dragalge|137/321 par
+expect |-damage|p2a: Dragalge|43/100 par
+expect |rng|4|2
+expect |move|p2a: Dragalge|Flash Cannon|p1a: Cacnea
+expect |rng|100|10
+expect |rng|24|9
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Cacnea|0 fnt
+expect |-damage|p1a: Cacnea|0 fnt
+expect |rng|100|85
+expect |faint|p1a: Cacnea
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|305/401
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|77/100
+expect |-start|p1a: Arceus|typechange|Normal|[silent]
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Seviper|Seviper, F|322/322
+expect |switch|p1a: Seviper|Seviper, F|100/100
+expect |rng|4|0
+expect |cant|p2a: Dragalge|par
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Skrelp|Skrelp, F|223/287
+expect |switch|p1a: Skrelp|Skrelp, F|78/100
+expect |rng|4|0
+expect |cant|p2a: Dragalge|par
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p1a: Skrelp|Discharge|p2a: Dragalge
+expect |rng|100|44
+expect |rng|24|5
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Dragalge|104/321 par
+expect |-damage|p2a: Dragalge|33/100 par
+expect |rng|100|7
+expect |rng|4|1
+expect |move|p2a: Dragalge|Arm Thrust|p1a: Skrelp
+expect |rng|100|58
+expect |rng|20|12
+expect |rng|24|14
+expect |rng|16|15
+expect |-resisted|p1a: Skrelp
+expect |split|p1
+expect |-damage|p1a: Skrelp|216/287
+expect |-damage|p1a: Skrelp|76/100
+expect |rng|10|2
+expect |rng|24|12
+expect |rng|16|4
+expect |-resisted|p1a: Skrelp
+expect |split|p1
+expect |-damage|p1a: Skrelp|208/287
+expect |-damage|p1a: Skrelp|73/100
+expect |rng|10|4
+expect |rng|24|19
+expect |rng|16|5
+expect |-resisted|p1a: Skrelp
+expect |split|p1
+expect |-damage|p1a: Skrelp|200/287
+expect |-damage|p1a: Skrelp|70/100
+expect |rng|10|5
+expect |-hitcount|p1a: Skrelp|3
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p1a: Skrelp|Chilling Water|p2a: Dragalge
+expect |rng|100|17
+expect |rng|24|5
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Dragalge|70/321 par
+expect |-damage|p2a: Dragalge|22/100 par
+expect |rng|100|80
+expect |-unboost|p2a: Dragalge|atk|1
+expect |rng|4|1
+expect |move|p2a: Dragalge|Bounce||[still]
+expect |-prepare|p2a: Dragalge|Bounce
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Seviper|Seviper, F|322/322
+expect |switch|p1a: Seviper|Seviper, F|100/100
+expect |rng|4|0
+expect |cant|p2a: Dragalge|par
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Skrelp|Skrelp, F|200/287
+expect |switch|p1a: Skrelp|Skrelp, F|70/100
+expect |rng|4|2
+expect |move|p2a: Dragalge|Bounce||[still]
+expect |-prepare|p2a: Dragalge|Bounce
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|18
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|305/401
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|77/100
+expect |rng|4|1
+expect |move|p2a: Dragalge|Bounce|p1a: Arceus|[from] lockedmove
+expect |rng|100|66
+expect |rng|24|5
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Arceus|269/401
+expect |-damage|p1a: Arceus|68/100
+expect |rng|100|56
+expect |
+expect |upkeep
+expect |-start|p1a: Arceus|typechange|Normal|[silent]
+expect |turn|19
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Seviper|Seviper, F|322/322
+expect |switch|p1a: Seviper|Seviper, F|100/100
+expect |rng|4|2
+expect |move|p2a: Dragalge|Flash Cannon|p1a: Seviper
+expect |rng|100|71
+expect |rng|24|20
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Seviper|142/322
+expect |-damage|p1a: Seviper|45/100
+expect |rng|100|74
+expect |
+expect |upkeep
+expect |turn|20
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|269/401
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|68/100
+expect |rng|4|1
+expect |move|p2a: Dragalge|Arm Thrust|p1a: Arceus
+expect |rng|100|92
+expect |rng|20|1
+expect |rng|24|19
+expect |rng|16|4
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|255/401
+expect |-damage|p1a: Arceus|64/100
+expect |rng|24|6
+expect |rng|16|13
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|243/401
+expect |-damage|p1a: Arceus|61/100
+expect |-hitcount|p1a: Arceus|2
+expect |
+expect |upkeep
+expect |-start|p1a: Arceus|typechange|Normal|[silent]
+expect |turn|21
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Seviper|Seviper, F|142/322
+expect |switch|p1a: Seviper|Seviper, F|45/100
+expect |rng|4|1
+expect |move|p2a: Dragalge|Arm Thrust|p1a: Seviper
+expect |rng|100|85
+expect |rng|20|1
+expect |rng|24|21
+expect |rng|16|5
+expect |-resisted|p1a: Seviper
+expect |split|p1
+expect |-damage|p1a: Seviper|137/322
+expect |-damage|p1a: Seviper|43/100
+expect |rng|24|4
+expect |rng|16|14
+expect |-resisted|p1a: Seviper
+expect |split|p1
+expect |-damage|p1a: Seviper|133/322
+expect |-damage|p1a: Seviper|42/100
+expect |-hitcount|p1a: Seviper|2
+expect |
+expect |upkeep
+expect |turn|22
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|243/401
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|61/100
+expect |rng|4|3
+expect |move|p2a: Dragalge|Arm Thrust|p1a: Arceus
+expect |rng|100|29
+expect |rng|20|14
+expect |rng|24|20
+expect |rng|16|1
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|229/401
+expect |-damage|p1a: Arceus|58/100
+expect |rng|24|21
+expect |rng|16|15
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|217/401
+expect |-damage|p1a: Arceus|55/100
+expect |rng|24|12
+expect |rng|16|12
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|203/401
+expect |-damage|p1a: Arceus|51/100
+expect |rng|24|20
+expect |rng|16|15
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|191/401
+expect |-damage|p1a: Arceus|48/100
+expect |-hitcount|p1a: Arceus|4
+expect |
+expect |upkeep
+expect |-start|p1a: Arceus|typechange|Normal|[silent]
+expect |turn|23
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Skrelp|Skrelp, F|200/287
+expect |switch|p1a: Skrelp|Skrelp, F|70/100
+expect |rng|4|3
+expect |move|p2a: Dragalge|Flash Cannon|p1a: Skrelp
+expect |rng|100|72
+expect |rng|24|14
+expect |rng|16|11
+expect |-resisted|p1a: Skrelp
+expect |split|p1
+expect |-damage|p1a: Skrelp|136/287
+expect |-damage|p1a: Skrelp|48/100
+expect |rng|100|22
+expect |
+expect |upkeep
+expect |turn|24
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|191/401
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|48/100
+expect |rng|4|1
+expect |move|p2a: Dragalge|Bounce||[still]
+expect |-prepare|p2a: Dragalge|Bounce
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |-start|p1a: Arceus|typechange|Normal|[silent]
+expect |turn|25
+expect |
+expect |t:|
+expect |move|p1a: Arceus|Pollen Puff|p2a: Dragalge|[miss]
+expect |-miss|p1a: Arceus|p2a: Dragalge
+expect |rng|4|1
+expect |move|p2a: Dragalge|Bounce|p1a: Arceus|[from] lockedmove
+expect |rng|100|55
+expect |rng|24|0
+expect |rng|16|6
+expect |-crit|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|115/401
+expect |-damage|p1a: Arceus|29/100
+expect |rng|100|84
+expect |
+expect |upkeep
+expect |turn|26
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Skrelp|Skrelp, F|136/287
+expect |switch|p1a: Skrelp|Skrelp, F|48/100
+expect |rng|4|0
+expect |cant|p2a: Dragalge|par
+expect |
+expect |upkeep
+expect |turn|27
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|115/401
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|29/100
+expect |rng|4|3
+expect |move|p2a: Dragalge|Arm Thrust|p1a: Arceus
+expect |rng|100|68
+expect |rng|20|5
+expect |rng|24|15
+expect |rng|16|15
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|103/401
+expect |-damage|p1a: Arceus|26/100
+expect |rng|24|7
+expect |rng|16|5
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|89/401
+expect |-damage|p1a: Arceus|23/100
+expect |-hitcount|p1a: Arceus|2
+expect |
+expect |upkeep
+expect |-start|p1a: Arceus|typechange|Normal|[silent]
+expect |turn|28
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Seviper|Seviper, F|133/322
+expect |switch|p1a: Seviper|Seviper, F|42/100
+expect |rng|4|1
+expect |move|p2a: Dragalge|Flash Cannon|p1a: Seviper
+expect |rng|100|99
+expect |rng|24|22
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Seviper|0 fnt
+expect |-damage|p1a: Seviper|0 fnt
+expect |rng|100|2
+expect |faint|p1a: Seviper
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|89/401
+expect |switch|p1a: Arceus|Arceus-Fire, shiny|23/100
+expect |-start|p1a: Arceus|typechange|Normal|[silent]
+expect |turn|29
+expect |
+expect |t:|
+expect |move|p1a: Arceus|Pollen Puff|p2a: Dragalge
+expect |rng|100|88
+expect |rng|24|19
+expect |rng|16|12
+expect |-resisted|p2a: Dragalge
+expect |split|p2
+expect |-damage|p2a: Dragalge|32/321 par
+expect |-damage|p2a: Dragalge|10/100 par
+expect |rng|4|1
+expect |move|p2a: Dragalge|Arm Thrust|p1a: Arceus
+expect |rng|100|65
+expect |rng|20|11
+expect |rng|24|9
+expect |rng|16|10
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|75/401
+expect |-damage|p1a: Arceus|19/100
+expect |rng|24|2
+expect |rng|16|15
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|63/401
+expect |-damage|p1a: Arceus|16/100
+expect |rng|24|9
+expect |rng|16|5
+expect |-supereffective|p1a: Arceus
+expect |split|p1
+expect |-damage|p1a: Arceus|49/401
+expect |-damage|p1a: Arceus|13/100
+expect |-hitcount|p1a: Arceus|3
+expect |
+expect |upkeep
+expect |turn|30
+expect |
+expect |t:|
+expect |move|p1a: Arceus|Pollen Puff|p2a: Dragalge
+expect |rng|100|94
+expect |rng|24|23
+expect |rng|16|10
+expect |-resisted|p2a: Dragalge
+expect |split|p2
+expect |-damage|p2a: Dragalge|0 fnt
+expect |-damage|p2a: Dragalge|0 fnt
+expect |faint|p2a: Dragalge
+expect |
+expect |win|p1

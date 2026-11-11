@@ -1,0 +1,535 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 63e6 cc41 49c6 88a0
+genders drawn
+team p1
+Klefki
+Ability: Prankster
+Level: 50
+Tera Type: Ice
+EVs: 109 HP / 78 Atk / 39 Def / 6 SpA / 70 SpD / 125 Spe
+Brave Nature
+- Metronome
+- Thief
+
+Groudon @ Prism Scale
+Ability: Drought
+Level: 50
+Tera Type: Normal
+EVs: 86 HP / 60 Atk / 126 Def / 20 SpA / 2 SpD / 215 Spe
+Gentle Nature
+- Heal Pulse
+- Tail Whip
+- Growl
+
+Excadrill
+Ability: Mold Breaker
+Level: 50
+Tera Type: Fire
+EVs: 145 HP / 123 Atk / 16 Def / 6 SpA / 172 SpD / 34 Spe
+Lax Nature
+- Metronome
+- Earthquake
+
+Sparky (Electrode) @ Galarica Cuff
+Ability: Soundproof
+Level: 50
+Tera Type: Stellar
+EVs: 211 HP / 252 Atk / 47 SpA
+Rash Nature
+- Smart Strike
+
+Ninetales-Alola @ Never-Melt Ice
+Ability: Snow Warning
+Level: 50
+Tera Type: Bug
+EVs: 3 HP / 12 Atk / 243 Def / 8 SpD / 242 Spe
+Serious Nature
+- Sacred Sword
+- Wildbolt Storm
+- Steel Roller
+
+X (Ursaring) @ Metronome
+Ability: Quick Feet
+Level: 50
+Tera Type: Stellar
+EVs: 207 HP / 4 Atk / 209 Def / 65 SpA / 3 SpD / 4 Spe
+Naive Nature
+- Spin Out
+end
+team p2
+Murkrow (F) @ Power Band
+Ability: Prankster
+Level: 50
+Tera Type: Fighting
+EVs: 193 HP / 13 Atk / 136 Def / 59 SpA / 102 SpD / 1 Spe
+Gentle Nature
+- Acrobatics
+- Hydro Cannon
+- Sludge
+
+Pikachu (Brute Bonnet) @ Adamant Crystal
+Ability: Protosynthesis
+Level: 50
+Tera Type: Bug
+EVs: 53 HP / 102 Atk / 10 Def / 48 SpA / 180 SpD / 98 Spe
+Quirky Nature
+- Horn Drill
+- Spite
+
+Ditto @ Choice Scarf
+Ability: Imposter
+Level: 50
+Tera Type: Water
+EVs: 31 HP / 249 Atk / 38 Def / 30 SpA / 7 SpD / 136 Spe
+Docile Nature
+- Transform
+
+Mr. Bubbles (Shroomish)
+Ability: Effect Spore
+Level: 50
+Tera Type: Ice
+EVs: 9 HP / 53 Atk / 140 Def / 54 SpA / 92 SpD / 20 Spe
+Naive Nature
+- Leech Seed
+- Body Slam
+- Gravity
+- Thunderclap
+
+Corviknight
+Ability: Pressure
+Level: 50
+Tera Type: Fairy
+EVs: 206 HP / 6 Atk / 172 Def / 14 SpA / 71 SpD / 38 Spe
+Lonely Nature
+- Metronome
+- Roost
+
+Mabosstiff @ Premier Ball
+Ability: Guard Dog
+Level: 50
+Tera Type: Fire
+EVs: 164 HP / 4 Atk / 121 Def / 85 SpA / 119 SpD / 9 Spe
+Rash Nature
+- Solar Beam
+end
+choice p1 team 3264
+choice p2 team 2365
+choice p1 switch 4, move 1 2
+choice p2 move 1 2 terastallize, switch 4
+choice p1 pass, switch 3
+choice p2 move 2 2, switch 3
+choice p1 default
+choice p2 move 2 1, switch 3
+choice p1 switch excadrill,move Spin Out -1
+choice p2 move 1 2, move 2
+choice p1 move 1, move 1 1
+choice p2 default
+choice p1 move 2, move 1 -1
+choice p2 switch 4, pass
+choice p1 move 2, move 1 1 terastallize
+choice p2 move 1 2, switch 3
+choice p2 switch corviknight
+choice p1 move metronome ,  move Spin Out +2
+choice p2 move 2, move 1 2
+choice p1 move 2, move 1 +1
+choice p2 move 1, pass
+choice p1 pass, switch 4
+choice p2 move 1, pass
+choice p1 move 2, move 1 -1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Klefki, L50, M|
+expect |poke|p1|Groudon, L50|
+expect |poke|p1|Excadrill, L50, F|
+expect |poke|p1|Electrode, L50|
+expect |poke|p1|Ninetales-Alola, L50, M|
+expect |poke|p1|Ursaring, L50, F|
+expect |poke|p2|Murkrow, L50, F|
+expect |poke|p2|Brute Bonnet, L50|
+expect |poke|p2|Ditto, L50|
+expect |poke|p2|Shroomish, L50, M|
+expect |poke|p2|Corviknight, L50, F|
+expect |poke|p2|Mabosstiff, L50, M|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Excadrill|Excadrill, L50, F|203/203
+expect |switch|p1a: Excadrill|Excadrill, L50, F|203/203
+expect |split|p1
+expect |switch|p1b: Groudon|Groudon, L50|186/186
+expect |switch|p1b: Groudon|Groudon, L50|186/186
+expect |split|p2
+expect |switch|p2a: Pikachu|Brute Bonnet, L50|193/193
+expect |switch|p2a: Pikachu|Brute Bonnet, L50|193/193
+expect |split|p2
+expect |switch|p2b: Ditto|Ditto, L50|127/127
+expect |switch|p2b: Ditto|Ditto, L50|127/127
+expect |-weather|SunnyDay|[from] ability: Drought|[of] p1b: Groudon
+expect |-activate|p2a: Pikachu|ability: Protosynthesis
+expect |-start|p2a: Pikachu|protosynthesisatk
+expect |-transform|p2b: Ditto|p1a: Excadrill|[from] ability: Imposter
+expect |-ability|p2b: Ditto|Mold Breaker
+expect |-ability|p1a: Excadrill|Mold Breaker
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Corviknight|Corviknight, L50, F|199/199
+expect |switch|p2b: Corviknight|Corviknight, L50, F|199/199
+expect |-ability|p2b: Corviknight|Pressure
+expect |split|p1
+expect |switch|p1a: Sparky|Electrode, L50|161/161
+expect |switch|p1a: Sparky|Electrode, L50|161/161
+expect |-terastallize|p2a: Pikachu|Bug
+expect |move|p1b: Groudon|Heal Pulse|p2b: Corviknight
+expect |-fail|p2b: Corviknight|heal
+expect |move|p2a: Pikachu|Horn Drill|p1b: Groudon
+expect |rng|100|17
+expect |split|p1
+expect |-damage|p1b: Groudon|0 fnt
+expect |-damage|p1b: Groudon|0 fnt
+expect |faint|p1b: Groudon
+expect |-ohko
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: X|Ursaring, L50, F|191/191
+expect |switch|p1b: X|Ursaring, L50, F|191/191
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Mabosstiff|Mabosstiff, L50, M|176/176
+expect |switch|p2b: Mabosstiff|Mabosstiff, L50, M|176/176
+expect |move|p1a: Sparky|Smart Strike|p2b: Mabosstiff
+expect |rng|24|6
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Mabosstiff|151/176
+expect |-damage|p2b: Mabosstiff|151/176
+expect |move|p2a: Pikachu|Spite||[still]
+expect |rng|100|75
+expect |-fail|p2a: Pikachu
+expect |move|p1b: X|Spin Out|p2a: Pikachu
+expect |rng|100|93
+expect |rng|24|16
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Pikachu|144/193
+expect |-damage|p2a: Pikachu|144/193
+expect |rng|100|94
+expect |-unboost|p1b: X|spe|2
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Excadrill|Excadrill, L50, F|203/203
+expect |switch|p1a: Excadrill|Excadrill, L50, F|203/203
+expect |-ability|p1a: Excadrill|Mold Breaker
+expect |split|p2
+expect |switch|p2b: Corviknight|Corviknight, L50, F|199/199
+expect |switch|p2b: Corviknight|Corviknight, L50, F|199/199
+expect |-ability|p2b: Corviknight|Pressure
+expect |move|p2a: Pikachu|Spite||[still]
+expect |rng|100|74
+expect |-fail|p2a: Pikachu
+expect |move|p1b: X|Spin Out|p1a: Excadrill
+expect |rng|100|62
+expect |rng|24|16
+expect |rng|16|4
+expect |-resisted|p1a: Excadrill
+expect |split|p1
+expect |-damage|p1a: Excadrill|160/203
+expect |-damage|p1a: Excadrill|160/203
+expect |rng|100|43
+expect |-unboost|p1b: X|spe|2
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1a: Excadrill|Metronome|p1a: Excadrill
+expect |rng|581|556
+expect |rng|2|0
+expect |move|p1a: Excadrill|Torch Song|p2a: Pikachu|[from] move: Metronome
+expect |rng|100|9
+expect |rng|24|23
+expect |rng|16|1
+expect |-supereffective|p2a: Pikachu
+expect |split|p2
+expect |-damage|p2a: Pikachu|90/193
+expect |-damage|p2a: Pikachu|90/193
+expect |rng|100|87
+expect |-boost|p1a: Excadrill|spa|1
+expect |move|p2b: Corviknight|Roost||[still]
+expect |-fail|p2b: Corviknight|heal
+expect |move|p2a: Pikachu|Horn Drill|p1b: X|[miss]
+expect |rng|100|75
+expect |-miss|p2a: Pikachu|p1b: X
+expect |move|p1b: X|Spin Out|p2a: Pikachu
+expect |rng|100|91
+expect |rng|24|22
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Pikachu|14/193
+expect |-damage|p2a: Pikachu|14/193
+expect |rng|100|64
+expect |-unboost|p1b: X|spe|2
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Excadrill|Earthquake|p2a: Pikachu|[spread] p1b,p2a
+expect |-immune|p2b: Corviknight
+expect |rng|100|1
+expect |rng|100|66
+expect |rng|24|7
+expect |rng|16|2
+expect |rng|24|8
+expect |rng|16|8
+expect |-resisted|p2a: Pikachu
+expect |split|p1
+expect |-damage|p1b: X|122/191
+expect |-damage|p1b: X|122/191
+expect |split|p2
+expect |-damage|p2a: Pikachu|0 fnt
+expect |-damage|p2a: Pikachu|0 fnt
+expect |faint|p2a: Pikachu
+expect |-end|p2a: Pikachu|Protosynthesis|[silent]
+expect |move|p2b: Corviknight|Metronome|p2b: Corviknight
+expect |rng|581|508
+expect |rng|2|0
+expect |move|p2b: Corviknight|Shell Side Arm|p1a: Excadrill|[from] move: Metronome|[anim] Shell Side Arm Physical
+expect |-immune|p1a: Excadrill
+expect |move|p1b: X|Spin Out|p1a: Excadrill
+expect |rng|100|8
+expect |rng|24|10
+expect |rng|16|6
+expect |-resisted|p1a: Excadrill
+expect |split|p1
+expect |-damage|p1a: Excadrill|104/203
+expect |-damage|p1a: Excadrill|104/203
+expect |rng|100|79
+expect |
+expect |-weather|none
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Ditto|Ditto, L50|127/127
+expect |switch|p2a: Ditto|Ditto, L50|127/127
+expect |-transform|p2a: Ditto|p1b: X|[from] ability: Imposter
+expect |rng|2|1
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Mabosstiff|Mabosstiff, L50, M|151/176
+expect |switch|p2b: Mabosstiff|Mabosstiff, L50, M|151/176
+expect |-terastallize|p1b: X|Stellar
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Excadrill|Earthquake|p2a: Ditto|[spread] p1b,p2a,p2b
+expect |rng|100|66
+expect |rng|100|64
+expect |rng|100|76
+expect |rng|24|15
+expect |rng|16|15
+expect |rng|24|8
+expect |rng|16|0
+expect |rng|24|13
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: X|64/191
+expect |-damage|p1b: X|64/191
+expect |split|p2
+expect |-damage|p2a: Ditto|57/127
+expect |-damage|p2a: Ditto|57/127
+expect |split|p2
+expect |-damage|p2b: Mabosstiff|90/176
+expect |-damage|p2b: Mabosstiff|90/176
+expect |move|p2a: Ditto|Spin Out|p1b: X
+expect |rng|100|79
+expect |rng|24|23
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: X|14/191
+expect |-damage|p1b: X|14/191
+expect |rng|100|64
+expect |move|p1b: X|Spin Out|p2a: Ditto
+expect |rng|100|8
+expect |rng|24|17
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Ditto|0 fnt
+expect |-damage|p2a: Ditto|0 fnt
+expect |rng|100|8
+expect |faint|p2a: Ditto
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Corviknight|Corviknight, L50, F|199/199
+expect |switch|p2a: Corviknight|Corviknight, L50, F|199/199
+expect |-ability|p2a: Corviknight|Pressure
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1a: Excadrill|Metronome|p1a: Excadrill
+expect |rng|581|296
+expect |move|p1a: Excadrill|Magnet Rise|p1a: Excadrill|[from] move: Metronome
+expect |-start|p1a: Excadrill|Magnet Rise
+expect |move|p2b: Mabosstiff|Solar Beam||[still]
+expect |-prepare|p2b: Mabosstiff|Solar Beam
+expect |move|p2a: Corviknight|Roost||[still]
+expect |-fail|p2a: Corviknight|heal
+expect |move|p1b: X|Spin Out|p2b: Mabosstiff
+expect |rng|100|1
+expect |rng|24|15
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Mabosstiff|0 fnt
+expect |-damage|p2b: Mabosstiff|0 fnt
+expect |rng|100|50
+expect |faint|p2b: Mabosstiff
+expect |
+expect |upkeep
+expect |turn|8
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Excadrill|Earthquake|p2a: Corviknight|[spread] p1b
+expect |-immune|p2a: Corviknight
+expect |rng|100|63
+expect |rng|24|11
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: X|0 fnt
+expect |-damage|p1b: X|0 fnt
+expect |faint|p1b: X
+expect |move|p2a: Corviknight|Metronome|p2a: Corviknight
+expect |rng|581|561
+expect |rng|1|0
+expect |move|p2a: Corviknight|Gigaton Hammer|p1a: Excadrill|[from] move: Metronome
+expect |rng|100|87
+expect |rng|24|14
+expect |rng|16|14
+expect |-resisted|p1a: Excadrill
+expect |split|p1
+expect |-damage|p1a: Excadrill|44/203
+expect |-damage|p1a: Excadrill|44/203
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sparky|Electrode, L50|161/161
+expect |switch|p1b: Sparky|Electrode, L50|161/161
+expect |turn|9
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p1b: Sparky|Smart Strike|p1a: Excadrill
+expect |rng|24|2
+expect |rng|16|4
+expect |-resisted|p1a: Excadrill
+expect |split|p1
+expect |-damage|p1a: Excadrill|27/203
+expect |-damage|p1a: Excadrill|27/203
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Excadrill|Earthquake|p2a: Corviknight|[spread] p1b
+expect |-immune|p2a: Corviknight
+expect |rng|100|66
+expect |rng|24|5
+expect |rng|16|4
+expect |-supereffective|p1b: Sparky
+expect |split|p1
+expect |-damage|p1b: Sparky|0 fnt
+expect |-damage|p1b: Sparky|0 fnt
+expect |faint|p1b: Sparky
+expect |move|p2a: Corviknight|Metronome|p2a: Corviknight
+expect |rng|581|248
+expect |rng|1|0
+expect |move|p2a: Corviknight|Muddy Water|p1a: Excadrill|[from] move: Metronome
+expect |rng|100|60
+expect |rng|24|14
+expect |rng|16|5
+expect |-supereffective|p1a: Excadrill
+expect |split|p1
+expect |-damage|p1a: Excadrill|0 fnt
+expect |-damage|p1a: Excadrill|0 fnt
+expect |rng|100|1
+expect |faint|p1a: Excadrill
+expect |
+expect |win|p2
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Klefki","details":"Klefki, L50, M","condition":"146/146","active":true,"stats":{"atk":121,"def":116,"spa":101,"spd":116,"spe":99},"moves":["metronome","thief"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"186/186","active":true,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"203/203","active":false,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":false,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Ninetales","details":"Ninetales-Alola, L50, M","condition":"148/148","active":false,"stats":{"atk":89,"def":125,"spa":101,"spd":121,"spe":159},"moves":["sacredsword","wildboltstorm","steelroller"],"baseAbility":"snowwarning","item":"nevermeltice","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"191/191","active":false,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Murkrow","details":"Murkrow, L50, F","condition":"159/159","active":true,"stats":{"atk":107,"def":71,"spa":112,"spd":82,"spe":111},"moves":["acrobatics","hydrocannon","sludge"],"baseAbility":"prankster","item":"powerband","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"193/193","active":true,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Ditto","details":"Ditto, L50","condition":"127/127","active":false,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["transform"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Shroomish, L50, M","condition":"136/136","active":false,"stats":{"atk":67,"def":98,"spa":67,"spd":82,"spe":63},"moves":["leechseed","bodyslam","gravity","thunderclap"],"baseAbility":"effectspore","item":"","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":false,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"176/176","active":false,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Earthquake","id":"earthquake","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Heal Pulse","id":"healpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Tail Whip","id":"tailwhip","pp":48,"maxpp":48,"target":"allAdjacentFoes","disabled":false},{"move":"Growl","id":"growl","pp":64,"maxpp":64,"target":"allAdjacentFoes","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"203/203","active":true,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"186/186","active":true,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"191/191","active":false,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":false,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Horn Drill","id":"horndrill","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Spite","id":"spite","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Bug"},{"moves":[{"move":"Metronome","id":"metronome","pp":5,"maxpp":5,"target":"self","disabled":false},{"move":"Earthquake","id":"earthquake","pp":5,"maxpp":5,"target":"allAdjacent","disabled":false}],"canTerastallize":"Water"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"193/193","active":true,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Ditto","details":"Ditto, L50","condition":"127/127","active":true,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["metronome","earthquake"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"176/176","active":false,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":false,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":true,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"0 fnt","active":true,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"191/191","active":false,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"203/203","active":false,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"193/193","active":true,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":true,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"176/176","active":false,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Ditto","details":"Ditto, L50","condition":"127/127","active":false,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["transform"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Smart Strike","id":"smartstrike","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Stellar"},{"moves":[{"move":"Spin Out","id":"spinout","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Stellar"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":true,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"191/191","active":true,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"0 fnt","active":false,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"203/203","active":false,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Horn Drill","id":"horndrill","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Spite","id":"spite","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Metronome","id":"metronome","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"193/193","active":true,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":true,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"176/176","active":false,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Ditto","details":"Ditto, L50","condition":"127/127","active":false,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["transform"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Smart Strike","id":"smartstrike","pp":15,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Stellar"},{"moves":[{"move":"Spin Out","id":"spinout","pp":7,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Stellar"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":true,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"191/191","active":true,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"0 fnt","active":false,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"203/203","active":false,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Horn Drill","id":"horndrill","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Spite","id":"spite","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Solar Beam","id":"solarbeam","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"144/193","active":true,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"151/176","active":true,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":false,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Ditto","details":"Ditto, L50","condition":"127/127","active":false,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["transform"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Earthquake","id":"earthquake","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Spin Out","id":"spinout","pp":6,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Stellar"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"160/203","active":true,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"191/191","active":true,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"0 fnt","active":false,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":false,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Horn Drill","id":"horndrill","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Spite","id":"spite","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Metronome","id":"metronome","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"144/193","active":true,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":true,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"151/176","active":false,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Ditto","details":"Ditto, L50","condition":"127/127","active":false,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["transform"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Earthquake","id":"earthquake","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Spin Out","id":"spinout","pp":5,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Stellar"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"160/203","active":true,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"191/191","active":true,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"0 fnt","active":false,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":false,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Horn Drill","id":"horndrill","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Spite","id":"spite","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Metronome","id":"metronome","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"14/193","active":true,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":true,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"151/176","active":false,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Ditto","details":"Ditto, L50","condition":"127/127","active":false,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["transform"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"104/203","active":true,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"122/191","active":true,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"0 fnt","active":false,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":false,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"0 fnt","active":true,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":true,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"151/176","active":false,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Ditto","details":"Ditto, L50","condition":"127/127","active":false,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["transform"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Earthquake","id":"earthquake","pp":14,"maxpp":16,"target":"allAdjacent","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Spin Out","id":"spinout","pp":4,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Stellar"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"104/203","active":true,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"122/191","active":true,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"0 fnt","active":false,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":false,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Spin Out","id":"spinout","pp":5,"maxpp":5,"target":"normal","disabled":false}]},{"moves":[{"move":"Metronome","id":"metronome","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Ditto","details":"Ditto, L50","condition":"127/127","active":true,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["spinout"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":true,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"151/176","active":false,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"0 fnt","active":false,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"104/203","active":true,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"14/191","active":true,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"0 fnt","active":false,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":false,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Ditto","details":"Ditto, L50","condition":"0 fnt","active":true,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["transform"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"90/176","active":true,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":false,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"0 fnt","active":false,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Earthquake","id":"earthquake","pp":13,"maxpp":16,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Spin Out","id":"spinout","pp":3,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"104/203","active":true,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"14/191","active":true,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"0 fnt","active":false,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":false,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Solar Beam","id":"solarbeam","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":true,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"90/176","active":true,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Ditto","details":"Ditto, L50","condition":"0 fnt","active":false,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["transform"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"0 fnt","active":false,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":14,"maxpp":16,"target":"self","disabled":false},{"move":"Earthquake","id":"earthquake","pp":13,"maxpp":16,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Spin Out","id":"spinout","pp":2,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"104/203","active":true,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"14/191","active":true,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"0 fnt","active":false,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":false,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":6,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Solar Beam","id":"solarbeam","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":true,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"0 fnt","active":true,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Ditto","details":"Ditto, L50","condition":"0 fnt","active":false,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["transform"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"0 fnt","active":false,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"44/203","active":true,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"0 fnt","active":true,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"0 fnt","active":false,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":false,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":true,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"0 fnt","active":true,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Ditto","details":"Ditto, L50","condition":"0 fnt","active":false,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["transform"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"0 fnt","active":false,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":14,"maxpp":16,"target":"self","disabled":false},{"move":"Earthquake","id":"earthquake","pp":11,"maxpp":16,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Smart Strike","id":"smartstrike","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Excadrill","details":"Excadrill, L50, F","condition":"44/203","active":true,"stats":{"atk":170,"def":90,"spa":71,"spd":96,"spe":112},"moves":["metronome","earthquake"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Sparky","details":"Electrode, L50","condition":"161/161","active":true,"stats":{"atk":102,"def":90,"spa":116,"spd":90,"spe":170},"moves":["smartstrike"],"baseAbility":"soundproof","item":"galaricacuff","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Groudon","details":"Groudon, L50","condition":"0 fnt","active":false,"stats":{"atk":178,"def":158,"spa":123,"spd":121,"spe":137},"moves":["healpulse","tailwhip","growl"],"baseAbility":"drought","item":"prismscale","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: X","details":"Ursaring, L50, F","condition":"0 fnt","active":false,"stats":{"atk":151,"def":121,"spa":103,"spd":85,"spe":83},"moves":["spinout"],"baseAbility":"quickfeet","item":"metronome","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":14,"maxpp":16,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":6,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Solar Beam","id":"solarbeam","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Corviknight","details":"Corviknight, L50, F","condition":"199/199","active":true,"stats":{"atk":118,"def":132,"spa":75,"spd":114,"spe":92},"moves":["metronome","roost"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M","condition":"0 fnt","active":true,"stats":{"atk":141,"def":125,"spa":100,"spd":94,"spe":106},"moves":["solarbeam"],"baseAbility":"guarddog","item":"premierball","pokeball":"pokeball","ability":"guarddog","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Ditto","details":"Ditto, L50","condition":"0 fnt","active":false,"stats":{"atk":99,"def":73,"spa":72,"spd":69,"spe":85},"moves":["transform"],"baseAbility":"imposter","item":"choicescarf","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Pikachu","details":"Brute Bonnet, L50","condition":"0 fnt","active":false,"stats":{"atk":160,"def":120,"spa":105,"spd":142,"spe":87},"moves":["horndrill","spite"],"baseAbility":"protosynthesis","item":"adamantcrystal","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}

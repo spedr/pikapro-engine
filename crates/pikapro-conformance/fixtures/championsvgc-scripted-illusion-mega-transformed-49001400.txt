@@ -1,0 +1,150 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+team-size 1 6
+seed 0000 0000 02eb b3b8
+genders drawn
+team p1
+Charizard @ Charizardite Y
+Ability: Illusion
+Level: 50
+Hardy Nature
+- Splash
+
+Garchomp
+Ability: Sand Veil
+Level: 50
+Hardy Nature
+- Transform
+- Splash
+end
+team p2
+Registeel
+Ability: Clear Body
+Level: 50
+Hardy Nature
+- Splash
+
+Slowbro
+Ability: Own Tempo
+Level: 50
+Hardy Nature
+- Splash
+end
+choice p1 team 12
+choice p2 team 12
+choice p1 move 1, move 1 1
+choice p2 move 1, move 1
+choice p1 move 1 mega, move 1
+choice p2 move 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Charizard, L50, F|
+expect |poke|p1|Garchomp, L50, F|
+expect |poke|p2|Registeel, L50|
+expect |poke|p2|Slowbro, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Garchomp|Garchomp, L50, F|153/153
+expect |switch|p1a: Garchomp|Garchomp, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Garchomp|Garchomp, L50, F|183/183
+expect |switch|p1b: Garchomp|Garchomp, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Registeel|Registeel, L50|155/155
+expect |switch|p2a: Registeel|Registeel, L50|100/100
+expect |split|p2
+expect |switch|p2b: Slowbro|Slowbro, L50, F|170/170
+expect |switch|p2b: Slowbro|Slowbro, L50, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1b: Garchomp|Transform|p2a: Registeel
+expect |-transform|p1b: Garchomp|p2a: Registeel
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Garchomp|Splash|p1a: Garchomp
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Registeel|Splash|p2a: Registeel
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Slowbro|Splash|p2b: Slowbro
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |upkeep
+expect |rng|2|0
+expect |turn|2
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |detailschange|p1a: Garchomp|Garchomp, L50, F
+expect |-mega|p1a: Garchomp|Registeel|Charizardite Y
+expect |-weather|SunnyDay|[from] ability: Drought|[of] p1a: Garchomp
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Garchomp|Splash|p1a: Garchomp
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1b: Garchomp|Splash|p1b: Garchomp
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Registeel|Splash|p2a: Registeel
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Slowbro|Splash|p2b: Slowbro
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |rng|2|1
+expect |rng|2|1
+expect |upkeep
+expect |rng|2|0
+expect |turn|3

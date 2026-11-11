@@ -1,0 +1,203 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9ou
+seed 2ed7 deef be7b cb8b
+genders drawn
+team p1
+Drifblim @ Poison Barb
+Ability: Unburden
+Tera Type: Flying
+EVs: 211 HP / 132 Atk / 57 Def / 30 SpA / 54 SpD / 25 Spe
+Serious Nature
+- Fling
+- Mimic
+- Inferno
+- Poison Sting
+
+Horsea
+Ability: Sniper
+Tera Type: Rock
+EVs: 112 HP / 95 Atk / 2 Def / 227 SpA / 52 SpD / 15 Spe
+Brave Nature
+- Magic Room
+- Trick
+- Recycle
+- Knock Off
+
+Regirock @ Rusted Sword
+Ability: Clear Body
+Tera Type: Stellar
+EVs: 2 HP / 3 Atk / 53 Def / 22 SpA / 225 SpD / 205 Spe
+Lonely Nature
+- Sunsteel Strike
+- Bullet Punch
+- Fusion Flare
+
+Zorua-Hisui (F) @ Razor Fang
+Ability: Illusion
+Shiny: Yes
+Tera Type: Ground
+EVs: 191 HP / 4 Atk / 1 SpA / 101 SpD / 209 Spe
+Modest Nature
+- Fling
+- Bug Bite
+- Pluck
+- Incinerate
+
+Golett @ White Herb
+Ability: Klutz
+Shiny: Yes
+Tera Type: Flying
+EVs: 1 HP / 1 Def / 180 SpA / 188 SpD / 140 Spe
+Bold Nature
+- Fling
+- Detect
+- Electro Ball
+- Leaf Storm
+
+Granbull @ Toxic Orb
+Ability: Rattled
+Tera Type: Poison
+EVs: 69 HP / 132 Atk / 36 Def / 34 SpA / 157 SpD / 21 Spe
+Careful Nature
+- Fling
+- Vacuum Wave
+- Knock Off
+- Fire Spin
+end
+team p2
+Zoë (Thundurus-Therian) @ Mental Herb
+Ability: Volt Absorb
+Tera Type: Ground
+EVs: 2 HP / 118 Atk / 218 Def / 8 SpA / 164 SpD
+Mild Nature
+- Fling
+- Electric Terrain
+- Outrage
+- Breaking Swipe
+end
+choice p1 team 164253
+choice p2 team 1
+choice p1 move 1 terastallize
+choice p2 move 1 terastallize
+choice p1 switch 5
+choice p2 move Fling
+choice p1 switch 6
+choice p2 move 1
+choice p1 move 1
+choice p2 move Breaking Swipe
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] OU
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Endless Battle Clause: Forcing endless battles is banned
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|OHKO Clause: OHKO moves are banned
+expect |rule|Evasion Items Clause: Evasion items are banned
+expect |rule|Evasion Moves Clause: Evasion moves are banned
+expect |rule|Evasion Abilities Clause: Evasion abilities are banned
+expect |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+expect |clearpoke
+expect |poke|p1|Drifblim, M|
+expect |poke|p1|Horsea, M|
+expect |poke|p1|Regirock|
+expect |poke|p1|Zorua-Hisui, F|
+expect |poke|p1|Golett|
+expect |poke|p1|Granbull, M|
+expect |poke|p2|Thundurus-Therian, M|
+expect |teampreview
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Drifblim|Drifblim, M|493/493
+expect |switch|p1a: Drifblim|Drifblim, M|100/100
+expect |split|p2
+expect |switch|p2a: Zoë|Thundurus-Therian, M|299/299
+expect |switch|p2a: Zoë|Thundurus-Therian, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p2a: Zoë|Ground
+expect |-terastallize|p1a: Drifblim|Flying
+expect |move|p2a: Zoë|Fling|p1a: Drifblim
+expect |rng|100|3
+expect |rng|24|18
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Drifblim|478/493
+expect |-damage|p1a: Drifblim|97/100
+expect |-enditem|p2a: Zoë|Mental Herb|[from] move: Fling
+expect |move|p1a: Drifblim|Fling|p2a: Zoë
+expect |rng|100|80
+expect |rng|24|8
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Zoë|235/299
+expect |-damage|p2a: Zoë|79/100
+expect |rng|100|15
+expect |-status|p2a: Zoë|psn
+expect |-enditem|p1a: Drifblim|Poison Barb|[from] move: Fling
+expect |
+expect |split|p2
+expect |-damage|p2a: Zoë|198/299 psn|[from] psn
+expect |-damage|p2a: Zoë|67/100 psn|[from] psn
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Golett|Golett, shiny|259/259
+expect |switch|p1a: Golett|Golett, shiny|100/100
+expect |move|p2a: Zoë|Fling||[still]
+expect |-fail|p2a: Zoë
+expect |
+expect |split|p2
+expect |-damage|p2a: Zoë|161/299 psn|[from] psn
+expect |-damage|p2a: Zoë|54/100 psn|[from] psn
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Regirock|Regirock|301/301
+expect |switch|p1a: Regirock|Regirock|100/100
+expect |move|p2a: Zoë|Fling||[still]
+expect |-fail|p2a: Zoë
+expect |
+expect |split|p2
+expect |-damage|p2a: Zoë|124/299 psn|[from] psn
+expect |-damage|p2a: Zoë|42/100 psn|[from] psn
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Breaking Swipe|p1a: Regirock
+expect |rng|100|25
+expect |rng|24|12
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Regirock|268/301
+expect |-damage|p1a: Regirock|90/100
+expect |rng|100|29
+expect |move|p1a: Regirock|Sunsteel Strike|p2a: Zoë
+expect |rng|100|84
+expect |rng|24|8
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Zoë|23/299 psn
+expect |-damage|p2a: Zoë|8/100 psn
+expect |
+expect |split|p2
+expect |-damage|p2a: Zoë|0 fnt|[from] psn
+expect |-damage|p2a: Zoë|0 fnt|[from] psn
+expect |faint|p2a: Zoë
+expect |
+expect |win|p1

@@ -1,0 +1,486 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 3a70 a1ff c343 9820
+genders drawn
+team p1
+Arceus-Ice @ Choice Specs
+Ability: Multitype
+Level: 50
+Tera Type: Fairy
+EVs: 232 HP / 7 Atk / 34 Def / 23 SpA / 115 SpD / 74 Spe
+Naive Nature
+- Pin Missile
+- Liquidation
+
+Vivillon-Icy Snow
+Ability: Friend Guard
+Level: 50
+Tera Type: Electric
+EVs: 21 HP / 39 Atk / 159 Def / 13 SpA / 92 SpD / 33 Spe
+Timid Nature
+- Night Slash
+- Seismic Toss
+- Icy Wind
+- Double Team
+
+Volbeat
+Ability: Swarm
+Level: 50
+Tera Type: Rock
+EVs: 242 Def / 25 SpA / 170 SpD / 71 Spe
+Quiet Nature
+- Agility
+- Steel Beam
+
+Fraxure (M)
+Ability: Rivalry
+Level: 50
+Tera Type: Flying
+EVs: 10 HP / 41 Atk / 12 Def / 4 SpA / 229 SpD / 203 Spe
+Rash Nature
+- Acid Armor
+- Seed Bomb
+- Razor Leaf
+- Apple Acid
+
+Tatsugiri @ Miracle Seed
+Ability: Commander
+Level: 50
+Tera Type: Ghost
+EVs: 217 HP / 24 Atk / 3 Def / 13 SpA / 86 SpD / 167 Spe
+Lonely Nature
+- Heat Wave
+- Horn Attack
+
+Farigiraf (F) @ Never-Melt Ice
+Ability: Armor Tail
+Level: 50
+Tera Type: Flying
+EVs: 113 HP / 216 Atk / 89 Def / 1 SpD / 88 Spe
+Calm Nature
+- Psystrike
+- Protect
+- Razor Leaf
+end
+team p2
+Foongus @ Pecha Berry
+Ability: Effect Spore
+Level: 50
+Tera Type: Fire
+EVs: 50 HP / 101 Atk / 34 Def / 45 SpA / 191 SpD / 82 Spe
+Brave Nature
+- Giga Drain
+
+Grookey @ Tamato Berry
+Ability: Grassy Surge
+Level: 50
+Tera Type: Rock
+EVs: 247 Atk / 41 Def / 6 SpA / 216 SpD
+Careful Nature
+- Sludge Bomb
+
+Magearna @ Muscle Band
+Ability: Soul-Heart
+Level: 50
+Tera Type: Ground
+EVs: 162 HP / 43 Atk / 183 Def / 2 SpA / 59 SpD / 41 Spe
+Modest Nature
+- Psychic
+
+Dunsparce (M) @ Persim Berry
+Ability: Run Away
+Level: 50
+Tera Type: Rock
+EVs: 59 HP / 26 Atk / 115 Def / 225 SpA / 36 SpD / 44 Spe
+Quiet Nature
+- Memento
+
+Chandelure @ Lagging Tail
+Ability: Infiltrator
+Level: 50
+Tera Type: Fighting
+EVs: 44 HP / 88 Atk / 8 Def / 157 SpA / 21 SpD / 169 Spe
+Hasty Nature
+- Fury Attack
+- Minimize
+
+Bramblin @ Rocky Helmet
+Ability: Wind Rider
+Level: 50
+Tera Type: Flying
+EVs: 1 HP / 219 Def / 27 SpA / 71 SpD / 190 Spe
+Lax Nature
+- Entrainment
+- Shadow Punch
+- Flamethrower
+- Air Slash
+end
+choice p1 team 1635
+choice p2 team 1524
+choice p1 move 1 1, move 1 -1
+choice p2 move gigadrain 2,switch 4
+choice p1 move 1 1, move 1 -1
+choice p2 switch 3, move 1 -1 terastallize
+choice p2 switch 3, pass
+choice p1 move 1 -2, move 1 2 terastallize
+choice p2 move 1 -2, move 1 1
+choice p2 pass, switch 4
+choice p1 switch 4, move 1 2
+choice p2 move 1 2, move 1 -1
+choice p1 default
+choice p2 move gigadrain +2 ,  move furyattack 2
+choice p1 default
+choice p2 move gigadrain +1 ,  pass
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Arceus-Ice, L50|
+expect |poke|p1|Vivillon-Icy Snow, L50, M|
+expect |poke|p1|Volbeat, L50, M|
+expect |poke|p1|Fraxure, L50, M|
+expect |poke|p1|Tatsugiri, L50, M|
+expect |poke|p1|Farigiraf, L50, F|
+expect |poke|p2|Foongus, L50, M|
+expect |poke|p2|Grookey, L50, F|
+expect |poke|p2|Magearna, L50|
+expect |poke|p2|Dunsparce, L50, M|
+expect |poke|p2|Chandelure, L50, F|
+expect |poke|p2|Bramblin, L50, M|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Arceus|Arceus-Ice, L50|224/224
+expect |switch|p1a: Arceus|Arceus-Ice, L50|224/224
+expect |split|p1
+expect |switch|p1b: Farigiraf|Farigiraf, L50, F|209/209
+expect |switch|p1b: Farigiraf|Farigiraf, L50, F|209/209
+expect |split|p2
+expect |switch|p2a: Foongus|Foongus, L50, M|150/150
+expect |switch|p2a: Foongus|Foongus, L50, M|150/150
+expect |split|p2
+expect |switch|p2b: Chandelure|Chandelure, L50, F|141/141
+expect |switch|p2b: Chandelure|Chandelure, L50, F|141/141
+expect |-start|p1a: Arceus|typechange|Normal|[silent]
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Dunsparce|Dunsparce, L50, M|182/182
+expect |switch|p2b: Dunsparce|Dunsparce, L50, M|182/182
+expect |move|p1a: Arceus|Pin Missile|p2a: Foongus
+expect |rng|100|34
+expect |rng|20|14
+expect |rng|24|4
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Foongus|128/150
+expect |-damage|p2a: Foongus|128/150
+expect |rng|24|7
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Foongus|105/150
+expect |-damage|p2a: Foongus|105/150
+expect |rng|24|17
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Foongus|82/150
+expect |-damage|p2a: Foongus|82/150
+expect |rng|24|5
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Foongus|62/150
+expect |-damage|p2a: Foongus|62/150
+expect |-hitcount|p2a: Foongus|4
+expect |move|p1b: Farigiraf|Psystrike|p1a: Arceus
+expect |rng|100|81
+expect |rng|24|19
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Arceus|163/224
+expect |-damage|p1a: Arceus|163/224
+expect |move|p2a: Foongus|Giga Drain|p1b: Farigiraf
+expect |rng|100|1
+expect |rng|24|2
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Farigiraf|170/209
+expect |-damage|p1b: Farigiraf|170/209
+expect |split|p2
+expect |-heal|p2a: Foongus|82/150|[from] drain|[of] p1b: Farigiraf
+expect |-heal|p2a: Foongus|82/150|[from] drain|[of] p1b: Farigiraf
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Grookey|Grookey, L50, F|125/125
+expect |switch|p2a: Grookey|Grookey, L50, F|125/125
+expect |-fieldstart|move: Grassy Terrain|[from] ability: Grassy Surge|[of] p2a: Grookey
+expect |-terastallize|p2b: Dunsparce|Rock
+expect |move|p1a: Arceus|Pin Missile|p2a: Grookey
+expect |rng|100|15
+expect |rng|20|14
+expect |rng|24|18
+expect |rng|16|14
+expect |-supereffective|p2a: Grookey
+expect |split|p2
+expect |-damage|p2a: Grookey|89/125
+expect |-damage|p2a: Grookey|89/125
+expect |rng|24|3
+expect |rng|16|9
+expect |-supereffective|p2a: Grookey
+expect |split|p2
+expect |-damage|p2a: Grookey|49/125
+expect |-damage|p2a: Grookey|49/125
+expect |rng|24|9
+expect |rng|16|5
+expect |-supereffective|p2a: Grookey
+expect |split|p2
+expect |-damage|p2a: Grookey|9/125
+expect |-damage|p2a: Grookey|9/125
+expect |rng|24|22
+expect |rng|16|8
+expect |-supereffective|p2a: Grookey
+expect |split|p2
+expect |-damage|p2a: Grookey|0 fnt
+expect |-damage|p2a: Grookey|0 fnt
+expect |faint|p2a: Grookey
+expect |-hitcount|p2: Grookey|4
+expect |move|p1b: Farigiraf|Psystrike|p1a: Arceus
+expect |rng|100|20
+expect |rng|24|15
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Arceus|102/224
+expect |-damage|p1a: Arceus|102/224
+expect |move|p2b: Dunsparce|Memento|p2: Grookey|[notarget]
+expect |-fail|p2b: Dunsparce
+expect |
+expect |split|p1
+expect |-heal|p1a: Arceus|116/224|[from] Grassy Terrain
+expect |-heal|p1a: Arceus|116/224|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1b: Farigiraf|183/209|[from] Grassy Terrain
+expect |-heal|p1b: Farigiraf|183/209|[from] Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Foongus|Foongus, L50, M|82/150
+expect |switch|p2a: Foongus|Foongus, L50, M|82/150
+expect |turn|3
+expect |
+expect |t:|
+expect |-terastallize|p1b: Farigiraf|Flying
+expect |move|p1a: Arceus|Pin Missile|p1b: Farigiraf
+expect |rng|100|89
+expect |rng|20|18
+expect |rng|24|10
+expect |rng|16|3
+expect |-resisted|p1b: Farigiraf
+expect |split|p1
+expect |-damage|p1b: Farigiraf|175/209
+expect |-damage|p1b: Farigiraf|175/209
+expect |rng|24|14
+expect |rng|16|9
+expect |-resisted|p1b: Farigiraf
+expect |split|p1
+expect |-damage|p1b: Farigiraf|168/209
+expect |-damage|p1b: Farigiraf|168/209
+expect |rng|24|19
+expect |rng|16|9
+expect |-resisted|p1b: Farigiraf
+expect |split|p1
+expect |-damage|p1b: Farigiraf|161/209
+expect |-damage|p1b: Farigiraf|161/209
+expect |rng|24|8
+expect |rng|16|10
+expect |-resisted|p1b: Farigiraf
+expect |split|p1
+expect |-damage|p1b: Farigiraf|154/209
+expect |-damage|p1b: Farigiraf|154/209
+expect |rng|24|1
+expect |rng|16|11
+expect |-resisted|p1b: Farigiraf
+expect |split|p1
+expect |-damage|p1b: Farigiraf|147/209
+expect |-damage|p1b: Farigiraf|147/209
+expect |-hitcount|p1b: Farigiraf|5
+expect |move|p1b: Farigiraf|Psystrike|p2b: Dunsparce
+expect |rng|100|40
+expect |rng|24|15
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Dunsparce|100/182
+expect |-damage|p2b: Dunsparce|100/182
+expect |move|p2b: Dunsparce|Memento|p1a: Arceus
+expect |rng|100|96
+expect |-unboost|p1a: Arceus|atk|2
+expect |-unboost|p1a: Arceus|spa|2
+expect |faint|p2b: Dunsparce
+expect |move|p2a: Foongus|Giga Drain|p2: Dunsparce|[notarget]
+expect |-fail|p2a: Foongus
+expect |
+expect |split|p1
+expect |-heal|p1a: Arceus|130/224|[from] Grassy Terrain
+expect |-heal|p1a: Arceus|130/224|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2a: Foongus|91/150|[from] Grassy Terrain
+expect |-heal|p2a: Foongus|91/150|[from] Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Chandelure|Chandelure, L50, F|141/141
+expect |switch|p2b: Chandelure|Chandelure, L50, F|141/141
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Tatsugiri|Tatsugiri, L50, M|170/170
+expect |switch|p1a: Tatsugiri|Tatsugiri, L50, M|170/170
+expect |move|p1b: Farigiraf|Psystrike|p2b: Chandelure
+expect |rng|100|90
+expect |rng|24|9
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Chandelure|65/141
+expect |-damage|p2b: Chandelure|65/141
+expect |move|p2a: Foongus|Giga Drain|p1b: Farigiraf
+expect |rng|100|6
+expect |rng|24|20
+expect |rng|16|3
+expect |-resisted|p1b: Farigiraf
+expect |split|p1
+expect |-damage|p1b: Farigiraf|121/209
+expect |-damage|p1b: Farigiraf|121/209
+expect |split|p2
+expect |-heal|p2a: Foongus|104/150|[from] drain|[of] p1b: Farigiraf
+expect |-heal|p2a: Foongus|104/150|[from] drain|[of] p1b: Farigiraf
+expect |move|p2b: Chandelure|Fury Attack|p2a: Foongus
+expect |rng|100|13
+expect |rng|20|0
+expect |rng|24|20
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Foongus|95/150
+expect |-damage|p2a: Foongus|95/150
+expect |rng|100|99
+expect |rng|24|14
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Foongus|86/150
+expect |-damage|p2a: Foongus|86/150
+expect |rng|100|36
+expect |-hitcount|p2a: Foongus|2
+expect |
+expect |split|p2
+expect |-heal|p2b: Chandelure|73/141|[from] Grassy Terrain
+expect |-heal|p2b: Chandelure|73/141|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2a: Foongus|95/150|[from] Grassy Terrain
+expect |-heal|p2a: Foongus|95/150|[from] Grassy Terrain
+expect |upkeep
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Tatsugiri|Heat Wave|p2b: Chandelure|[spread] p2a,p2b
+expect |rng|100|75
+expect |rng|100|89
+expect |rng|24|14
+expect |rng|16|3
+expect |-supereffective|p2a: Foongus
+expect |rng|24|15
+expect |rng|16|12
+expect |-resisted|p2b: Chandelure
+expect |split|p2
+expect |-damage|p2a: Foongus|7/150
+expect |-damage|p2a: Foongus|7/150
+expect |split|p2
+expect |-damage|p2b: Chandelure|56/141
+expect |-damage|p2b: Chandelure|56/141
+expect |rng|100|63
+expect |rng|100|90
+expect |move|p1b: Farigiraf|Psystrike|p2b: Chandelure
+expect |rng|100|20
+expect |rng|24|16
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Chandelure|0 fnt
+expect |-damage|p2b: Chandelure|0 fnt
+expect |faint|p2b: Chandelure
+expect |move|p2a: Foongus|Giga Drain|p1b: Farigiraf
+expect |rng|100|56
+expect |rng|24|12
+expect |rng|16|13
+expect |-resisted|p1b: Farigiraf
+expect |split|p1
+expect |-damage|p1b: Farigiraf|97/209
+expect |-damage|p1b: Farigiraf|97/209
+expect |split|p2
+expect |-heal|p2a: Foongus|19/150|[from] drain|[of] p1b: Farigiraf
+expect |-heal|p2a: Foongus|19/150|[from] drain|[of] p1b: Farigiraf
+expect |
+expect |split|p2
+expect |-heal|p2a: Foongus|28/150|[from] Grassy Terrain
+expect |-heal|p2a: Foongus|28/150|[from] Grassy Terrain
+expect |upkeep
+expect |turn|6
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Tatsugiri|Heat Wave|p2a: Foongus
+expect |rng|100|20
+expect |rng|24|19
+expect |rng|16|4
+expect |-supereffective|p2a: Foongus
+expect |split|p2
+expect |-damage|p2a: Foongus|0 fnt
+expect |-damage|p2a: Foongus|0 fnt
+expect |rng|100|60
+expect |faint|p2a: Foongus
+expect |
+expect |win|p1
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Ice, L50","condition":"224/224","active":true,"stats":{"atk":141,"def":144,"spa":143,"spd":138,"spe":163},"moves":["pinmissile","liquidation"],"baseAbility":"multitype","item":"choicespecs","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Vivillon","details":"Vivillon-Icy Snow, L50, M","condition":"158/158","active":true,"stats":{"atk":69,"def":90,"spa":112,"spd":82,"spe":124},"moves":["nightslash","seismictoss","icywind","doubleteam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Volbeat","details":"Volbeat, L50, M","condition":"140/140","active":false,"stats":{"atk":93,"def":125,"spa":77,"spd":126,"spe":102},"moves":["agility","steelbeam"],"baseAbility":"swarm","item":"","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Fraxure","details":"Fraxure, L50, M","condition":"142/142","active":false,"stats":{"atk":142,"def":92,"spa":67,"spd":89,"spe":112},"moves":["acidarmor","seedbomb","razorleaf","appleacid"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Tatsugiri","details":"Tatsugiri, L50, M","condition":"170/170","active":false,"stats":{"atk":80,"def":72,"spa":142,"spd":126,"spe":123},"moves":["heatwave","hornattack"],"baseAbility":"commander","item":"miracleseed","pokeball":"pokeball","ability":"commander","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Farigiraf","details":"Farigiraf, L50, F","condition":"209/209","active":false,"stats":{"atk":123,"def":101,"spa":130,"spd":99,"spe":91},"moves":["psystrike","protect","razorleaf"],"baseAbility":"armortail","item":"nevermeltice","pokeball":"pokeball","ability":"armortail","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Foongus","details":"Foongus, L50, M","condition":"150/150","active":true,"stats":{"atk":96,"def":69,"spa":81,"spd":99,"spe":40},"moves":["gigadrain"],"baseAbility":"effectspore","item":"pechaberry","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Grookey","details":"Grookey, L50, F","condition":"125/125","active":true,"stats":{"atk":116,"def":75,"spa":54,"spd":95,"spe":85},"moves":["sludgebomb"],"baseAbility":"grassysurge","item":"tamatoberry","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Magearna","details":"Magearna, L50","condition":"175/175","active":false,"stats":{"atk":108,"def":158,"spa":165,"spd":142,"spe":90},"moves":["psychic"],"baseAbility":"soulheart","item":"muscleband","pokeball":"pokeball","ability":"soulheart","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Dunsparce","details":"Dunsparce, L50, M","condition":"182/182","active":false,"stats":{"atk":93,"def":104,"spa":124,"spd":90,"spe":63},"moves":["memento"],"baseAbility":"runaway","item":"persimberry","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Chandelure","details":"Chandelure, L50, F","condition":"141/141","active":false,"stats":{"atk":86,"def":99,"spa":185,"spd":113,"spe":133},"moves":["furyattack","minimize"],"baseAbility":"infiltrator","item":"laggingtail","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Bramblin","details":"Bramblin, L50, M","condition":"115/115","active":false,"stats":{"atk":85,"def":84,"spa":68,"spd":57,"spe":104},"moves":["entrainment","shadowpunch","flamethrower","airslash"],"baseAbility":"windrider","item":"rockyhelmet","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Liquidation","id":"liquidation","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fairy"},{"moves":[{"move":"Psystrike","id":"psystrike","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Razor Leaf","id":"razorleaf","pp":40,"maxpp":40,"target":"allAdjacentFoes","disabled":false}],"canTerastallize":"Flying"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Ice, L50","condition":"224/224","active":true,"stats":{"atk":141,"def":144,"spa":143,"spd":138,"spe":163},"moves":["pinmissile","liquidation"],"baseAbility":"multitype","item":"choicespecs","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Farigiraf","details":"Farigiraf, L50, F","condition":"209/209","active":true,"stats":{"atk":123,"def":101,"spa":130,"spd":99,"spe":91},"moves":["psystrike","protect","razorleaf"],"baseAbility":"armortail","item":"nevermeltice","pokeball":"pokeball","ability":"armortail","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Volbeat","details":"Volbeat, L50, M","condition":"140/140","active":false,"stats":{"atk":93,"def":125,"spa":77,"spd":126,"spe":102},"moves":["agility","steelbeam"],"baseAbility":"swarm","item":"","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Tatsugiri","details":"Tatsugiri, L50, M","condition":"170/170","active":false,"stats":{"atk":80,"def":72,"spa":142,"spd":126,"spe":123},"moves":["heatwave","hornattack"],"baseAbility":"commander","item":"miracleseed","pokeball":"pokeball","ability":"commander","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Giga Drain","id":"gigadrain","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Fury Attack","id":"furyattack","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Minimize","id":"minimize","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Fighting"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Foongus","details":"Foongus, L50, M","condition":"150/150","active":true,"stats":{"atk":96,"def":69,"spa":81,"spd":99,"spe":40},"moves":["gigadrain"],"baseAbility":"effectspore","item":"pechaberry","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Chandelure","details":"Chandelure, L50, F","condition":"141/141","active":true,"stats":{"atk":86,"def":99,"spa":185,"spd":113,"spe":133},"moves":["furyattack","minimize"],"baseAbility":"infiltrator","item":"laggingtail","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Grookey","details":"Grookey, L50, F","condition":"125/125","active":false,"stats":{"atk":116,"def":75,"spa":54,"spd":95,"spe":85},"moves":["sludgebomb"],"baseAbility":"grassysurge","item":"tamatoberry","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Dunsparce","details":"Dunsparce, L50, M","condition":"182/182","active":false,"stats":{"atk":93,"def":104,"spa":124,"spd":90,"spe":63},"moves":["memento"],"baseAbility":"runaway","item":"persimberry","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Liquidation","id":"liquidation","pp":16,"maxpp":16,"target":"normal","disabled":true}],"canTerastallize":"Fairy"},{"moves":[{"move":"Psystrike","id":"psystrike","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Razor Leaf","id":"razorleaf","pp":40,"maxpp":40,"target":"allAdjacentFoes","disabled":false}],"canTerastallize":"Flying"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Ice, L50","condition":"163/224","active":true,"stats":{"atk":141,"def":144,"spa":143,"spd":138,"spe":163},"moves":["pinmissile","liquidation"],"baseAbility":"multitype","item":"choicespecs","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Farigiraf","details":"Farigiraf, L50, F","condition":"170/209","active":true,"stats":{"atk":123,"def":101,"spa":130,"spd":99,"spe":91},"moves":["psystrike","protect","razorleaf"],"baseAbility":"armortail","item":"nevermeltice","pokeball":"pokeball","ability":"armortail","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Volbeat","details":"Volbeat, L50, M","condition":"140/140","active":false,"stats":{"atk":93,"def":125,"spa":77,"spd":126,"spe":102},"moves":["agility","steelbeam"],"baseAbility":"swarm","item":"","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Tatsugiri","details":"Tatsugiri, L50, M","condition":"170/170","active":false,"stats":{"atk":80,"def":72,"spa":142,"spd":126,"spe":123},"moves":["heatwave","hornattack"],"baseAbility":"commander","item":"miracleseed","pokeball":"pokeball","ability":"commander","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Giga Drain","id":"gigadrain","pp":15,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Memento","id":"memento","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Rock"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Foongus","details":"Foongus, L50, M","condition":"82/150","active":true,"stats":{"atk":96,"def":69,"spa":81,"spd":99,"spe":40},"moves":["gigadrain"],"baseAbility":"effectspore","item":"pechaberry","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Dunsparce","details":"Dunsparce, L50, M","condition":"182/182","active":true,"stats":{"atk":93,"def":104,"spa":124,"spd":90,"spe":63},"moves":["memento"],"baseAbility":"runaway","item":"persimberry","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Grookey","details":"Grookey, L50, F","condition":"125/125","active":false,"stats":{"atk":116,"def":75,"spa":54,"spd":95,"spe":85},"moves":["sludgebomb"],"baseAbility":"grassysurge","item":"tamatoberry","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Chandelure","details":"Chandelure, L50, F","condition":"141/141","active":false,"stats":{"atk":86,"def":99,"spa":185,"spd":113,"spe":133},"moves":["furyattack","minimize"],"baseAbility":"infiltrator","item":"laggingtail","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Ice, L50","condition":"116/224","active":true,"stats":{"atk":141,"def":144,"spa":143,"spd":138,"spe":163},"moves":["pinmissile","liquidation"],"baseAbility":"multitype","item":"choicespecs","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Farigiraf","details":"Farigiraf, L50, F","condition":"183/209","active":true,"stats":{"atk":123,"def":101,"spa":130,"spd":99,"spe":91},"moves":["psystrike","protect","razorleaf"],"baseAbility":"armortail","item":"nevermeltice","pokeball":"pokeball","ability":"armortail","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Volbeat","details":"Volbeat, L50, M","condition":"140/140","active":false,"stats":{"atk":93,"def":125,"spa":77,"spd":126,"spe":102},"moves":["agility","steelbeam"],"baseAbility":"swarm","item":"","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Tatsugiri","details":"Tatsugiri, L50, M","condition":"170/170","active":false,"stats":{"atk":80,"def":72,"spa":142,"spd":126,"spe":123},"moves":["heatwave","hornattack"],"baseAbility":"commander","item":"miracleseed","pokeball":"pokeball","ability":"commander","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Grookey","details":"Grookey, L50, F","condition":"0 fnt","active":true,"stats":{"atk":116,"def":75,"spa":54,"spd":95,"spe":85},"moves":["sludgebomb"],"baseAbility":"grassysurge","item":"tamatoberry","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Dunsparce","details":"Dunsparce, L50, M","condition":"182/182","active":true,"stats":{"atk":93,"def":104,"spa":124,"spd":90,"spe":63},"moves":["memento"],"baseAbility":"runaway","item":"persimberry","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Foongus","details":"Foongus, L50, M","condition":"82/150","active":false,"stats":{"atk":96,"def":69,"spa":81,"spd":99,"spe":40},"moves":["gigadrain"],"baseAbility":"effectspore","item":"pechaberry","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Chandelure","details":"Chandelure, L50, F","condition":"141/141","active":false,"stats":{"atk":86,"def":99,"spa":185,"spd":113,"spe":133},"moves":["furyattack","minimize"],"baseAbility":"infiltrator","item":"laggingtail","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":30,"maxpp":32,"target":"normal","disabled":false},{"move":"Liquidation","id":"liquidation","pp":16,"maxpp":16,"target":"normal","disabled":true}],"canTerastallize":"Fairy"},{"moves":[{"move":"Psystrike","id":"psystrike","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Razor Leaf","id":"razorleaf","pp":40,"maxpp":40,"target":"allAdjacentFoes","disabled":false}],"canTerastallize":"Flying"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Ice, L50","condition":"116/224","active":true,"stats":{"atk":141,"def":144,"spa":143,"spd":138,"spe":163},"moves":["pinmissile","liquidation"],"baseAbility":"multitype","item":"choicespecs","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Farigiraf","details":"Farigiraf, L50, F","condition":"183/209","active":true,"stats":{"atk":123,"def":101,"spa":130,"spd":99,"spe":91},"moves":["psystrike","protect","razorleaf"],"baseAbility":"armortail","item":"nevermeltice","pokeball":"pokeball","ability":"armortail","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Volbeat","details":"Volbeat, L50, M","condition":"140/140","active":false,"stats":{"atk":93,"def":125,"spa":77,"spd":126,"spe":102},"moves":["agility","steelbeam"],"baseAbility":"swarm","item":"","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Tatsugiri","details":"Tatsugiri, L50, M","condition":"170/170","active":false,"stats":{"atk":80,"def":72,"spa":142,"spd":126,"spe":123},"moves":["heatwave","hornattack"],"baseAbility":"commander","item":"miracleseed","pokeball":"pokeball","ability":"commander","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Giga Drain","id":"gigadrain","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Memento","id":"memento","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Foongus","details":"Foongus, L50, M","condition":"82/150","active":true,"stats":{"atk":96,"def":69,"spa":81,"spd":99,"spe":40},"moves":["gigadrain"],"baseAbility":"effectspore","item":"pechaberry","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Dunsparce","details":"Dunsparce, L50, M","condition":"182/182","active":true,"stats":{"atk":93,"def":104,"spa":124,"spd":90,"spe":63},"moves":["memento"],"baseAbility":"runaway","item":"persimberry","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Grookey","details":"Grookey, L50, F","condition":"0 fnt","active":false,"stats":{"atk":116,"def":75,"spa":54,"spd":95,"spe":85},"moves":["sludgebomb"],"baseAbility":"grassysurge","item":"tamatoberry","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Chandelure","details":"Chandelure, L50, F","condition":"141/141","active":false,"stats":{"atk":86,"def":99,"spa":185,"spd":113,"spe":133},"moves":["furyattack","minimize"],"baseAbility":"infiltrator","item":"laggingtail","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Ice, L50","condition":"130/224","active":true,"stats":{"atk":141,"def":144,"spa":143,"spd":138,"spe":163},"moves":["pinmissile","liquidation"],"baseAbility":"multitype","item":"choicespecs","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Farigiraf","details":"Farigiraf, L50, F","condition":"147/209","active":true,"stats":{"atk":123,"def":101,"spa":130,"spd":99,"spe":91},"moves":["psystrike","protect","razorleaf"],"baseAbility":"armortail","item":"nevermeltice","pokeball":"pokeball","ability":"armortail","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p1: Volbeat","details":"Volbeat, L50, M","condition":"140/140","active":false,"stats":{"atk":93,"def":125,"spa":77,"spd":126,"spe":102},"moves":["agility","steelbeam"],"baseAbility":"swarm","item":"","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Tatsugiri","details":"Tatsugiri, L50, M","condition":"170/170","active":false,"stats":{"atk":80,"def":72,"spa":142,"spd":126,"spe":123},"moves":["heatwave","hornattack"],"baseAbility":"commander","item":"miracleseed","pokeball":"pokeball","ability":"commander","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Foongus","details":"Foongus, L50, M","condition":"91/150","active":true,"stats":{"atk":96,"def":69,"spa":81,"spd":99,"spe":40},"moves":["gigadrain"],"baseAbility":"effectspore","item":"pechaberry","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Dunsparce","details":"Dunsparce, L50, M","condition":"0 fnt","active":true,"stats":{"atk":93,"def":104,"spa":124,"spd":90,"spe":63},"moves":["memento"],"baseAbility":"runaway","item":"persimberry","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Grookey","details":"Grookey, L50, F","condition":"0 fnt","active":false,"stats":{"atk":116,"def":75,"spa":54,"spd":95,"spe":85},"moves":["sludgebomb"],"baseAbility":"grassysurge","item":"tamatoberry","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Chandelure","details":"Chandelure, L50, F","condition":"141/141","active":false,"stats":{"atk":86,"def":99,"spa":185,"spd":113,"spe":133},"moves":["furyattack","minimize"],"baseAbility":"infiltrator","item":"laggingtail","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":29,"maxpp":32,"target":"normal","disabled":false},{"move":"Liquidation","id":"liquidation","pp":16,"maxpp":16,"target":"normal","disabled":true}]},{"moves":[{"move":"Psystrike","id":"psystrike","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Razor Leaf","id":"razorleaf","pp":40,"maxpp":40,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Ice, L50","condition":"130/224","active":true,"stats":{"atk":141,"def":144,"spa":143,"spd":138,"spe":163},"moves":["pinmissile","liquidation"],"baseAbility":"multitype","item":"choicespecs","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Farigiraf","details":"Farigiraf, L50, F","condition":"147/209","active":true,"stats":{"atk":123,"def":101,"spa":130,"spd":99,"spe":91},"moves":["psystrike","protect","razorleaf"],"baseAbility":"armortail","item":"nevermeltice","pokeball":"pokeball","ability":"armortail","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p1: Volbeat","details":"Volbeat, L50, M","condition":"140/140","active":false,"stats":{"atk":93,"def":125,"spa":77,"spd":126,"spe":102},"moves":["agility","steelbeam"],"baseAbility":"swarm","item":"","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Tatsugiri","details":"Tatsugiri, L50, M","condition":"170/170","active":false,"stats":{"atk":80,"def":72,"spa":142,"spd":126,"spe":123},"moves":["heatwave","hornattack"],"baseAbility":"commander","item":"miracleseed","pokeball":"pokeball","ability":"commander","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Giga Drain","id":"gigadrain","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Fury Attack","id":"furyattack","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Minimize","id":"minimize","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Foongus","details":"Foongus, L50, M","condition":"91/150","active":true,"stats":{"atk":96,"def":69,"spa":81,"spd":99,"spe":40},"moves":["gigadrain"],"baseAbility":"effectspore","item":"pechaberry","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Chandelure","details":"Chandelure, L50, F","condition":"141/141","active":true,"stats":{"atk":86,"def":99,"spa":185,"spd":113,"spe":133},"moves":["furyattack","minimize"],"baseAbility":"infiltrator","item":"laggingtail","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Grookey","details":"Grookey, L50, F","condition":"0 fnt","active":false,"stats":{"atk":116,"def":75,"spa":54,"spd":95,"spe":85},"moves":["sludgebomb"],"baseAbility":"grassysurge","item":"tamatoberry","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Dunsparce","details":"Dunsparce, L50, M","condition":"0 fnt","active":false,"stats":{"atk":93,"def":104,"spa":124,"spd":90,"spe":63},"moves":["memento"],"baseAbility":"runaway","item":"persimberry","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Heat Wave","id":"heatwave","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Horn Attack","id":"hornattack","pp":40,"maxpp":40,"target":"normal","disabled":false}]},{"moves":[{"move":"Psystrike","id":"psystrike","pp":12,"maxpp":16,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Razor Leaf","id":"razorleaf","pp":40,"maxpp":40,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Tatsugiri","details":"Tatsugiri, L50, M","condition":"170/170","active":true,"stats":{"atk":80,"def":72,"spa":142,"spd":126,"spe":123},"moves":["heatwave","hornattack"],"baseAbility":"commander","item":"miracleseed","pokeball":"pokeball","ability":"commander","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Farigiraf","details":"Farigiraf, L50, F","condition":"121/209","active":true,"stats":{"atk":123,"def":101,"spa":130,"spd":99,"spe":91},"moves":["psystrike","protect","razorleaf"],"baseAbility":"armortail","item":"nevermeltice","pokeball":"pokeball","ability":"armortail","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p1: Volbeat","details":"Volbeat, L50, M","condition":"140/140","active":false,"stats":{"atk":93,"def":125,"spa":77,"spd":126,"spe":102},"moves":["agility","steelbeam"],"baseAbility":"swarm","item":"","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Ice, L50","condition":"130/224","active":false,"stats":{"atk":141,"def":144,"spa":143,"spd":138,"spe":163},"moves":["pinmissile","liquidation"],"baseAbility":"multitype","item":"choicespecs","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Giga Drain","id":"gigadrain","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Fury Attack","id":"furyattack","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Minimize","id":"minimize","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Foongus","details":"Foongus, L50, M","condition":"95/150","active":true,"stats":{"atk":96,"def":69,"spa":81,"spd":99,"spe":40},"moves":["gigadrain"],"baseAbility":"effectspore","item":"pechaberry","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Chandelure","details":"Chandelure, L50, F","condition":"73/141","active":true,"stats":{"atk":86,"def":99,"spa":185,"spd":113,"spe":133},"moves":["furyattack","minimize"],"baseAbility":"infiltrator","item":"laggingtail","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Grookey","details":"Grookey, L50, F","condition":"0 fnt","active":false,"stats":{"atk":116,"def":75,"spa":54,"spd":95,"spe":85},"moves":["sludgebomb"],"baseAbility":"grassysurge","item":"tamatoberry","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Dunsparce","details":"Dunsparce, L50, M","condition":"0 fnt","active":false,"stats":{"atk":93,"def":104,"spa":124,"spd":90,"spe":63},"moves":["memento"],"baseAbility":"runaway","item":"persimberry","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Heat Wave","id":"heatwave","pp":15,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Horn Attack","id":"hornattack","pp":40,"maxpp":40,"target":"normal","disabled":false}]},{"moves":[{"move":"Psystrike","id":"psystrike","pp":11,"maxpp":16,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Razor Leaf","id":"razorleaf","pp":40,"maxpp":40,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Tatsugiri","details":"Tatsugiri, L50, M","condition":"170/170","active":true,"stats":{"atk":80,"def":72,"spa":142,"spd":126,"spe":123},"moves":["heatwave","hornattack"],"baseAbility":"commander","item":"miracleseed","pokeball":"pokeball","ability":"commander","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Farigiraf","details":"Farigiraf, L50, F","condition":"97/209","active":true,"stats":{"atk":123,"def":101,"spa":130,"spd":99,"spe":91},"moves":["psystrike","protect","razorleaf"],"baseAbility":"armortail","item":"nevermeltice","pokeball":"pokeball","ability":"armortail","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p1: Volbeat","details":"Volbeat, L50, M","condition":"140/140","active":false,"stats":{"atk":93,"def":125,"spa":77,"spd":126,"spe":102},"moves":["agility","steelbeam"],"baseAbility":"swarm","item":"","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Ice, L50","condition":"130/224","active":false,"stats":{"atk":141,"def":144,"spa":143,"spd":138,"spe":163},"moves":["pinmissile","liquidation"],"baseAbility":"multitype","item":"choicespecs","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Giga Drain","id":"gigadrain","pp":12,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Fury Attack","id":"furyattack","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Minimize","id":"minimize","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Foongus","details":"Foongus, L50, M","condition":"28/150","active":true,"stats":{"atk":96,"def":69,"spa":81,"spd":99,"spe":40},"moves":["gigadrain"],"baseAbility":"effectspore","item":"pechaberry","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Chandelure","details":"Chandelure, L50, F","condition":"0 fnt","active":true,"stats":{"atk":86,"def":99,"spa":185,"spd":113,"spe":133},"moves":["furyattack","minimize"],"baseAbility":"infiltrator","item":"laggingtail","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Grookey","details":"Grookey, L50, F","condition":"0 fnt","active":false,"stats":{"atk":116,"def":75,"spa":54,"spd":95,"spe":85},"moves":["sludgebomb"],"baseAbility":"grassysurge","item":"tamatoberry","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Dunsparce","details":"Dunsparce, L50, M","condition":"0 fnt","active":false,"stats":{"atk":93,"def":104,"spa":124,"spd":90,"spe":63},"moves":["memento"],"baseAbility":"runaway","item":"persimberry","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}

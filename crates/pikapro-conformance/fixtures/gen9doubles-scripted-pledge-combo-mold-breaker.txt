@@ -1,0 +1,104 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Haxorus
+Ability: Mold Breaker
+Hardy Nature
+- Fire Pledge
+
+Venusaur
+Ability: Overgrow
+Hardy Nature
+- Grass Pledge
+end
+team p2
+Heatran
+Ability: Flash Fire
+Hardy Nature
+- Splash
+
+Blissey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+end
+choice p1 move 1 1, move 1 1
+choice p2 move 1, move 1
+choice p1 move 1 2, move 1 1
+choice p2 move 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Haxorus|Haxorus, F|293/293
+expect |switch|p1a: Haxorus|Haxorus, F|293/293
+expect |split|p1
+expect |switch|p1b: Venusaur|Venusaur, F|301/301
+expect |switch|p1b: Venusaur|Venusaur, F|301/301
+expect |split|p2
+expect |switch|p2a: Heatran|Heatran, F|323/323
+expect |switch|p2a: Heatran|Heatran, F|323/323
+expect |split|p2
+expect |switch|p2b: Blissey|Blissey, F|651/651
+expect |switch|p2b: Blissey|Blissey, F|651/651
+expect |-ability|p1a: Haxorus|Mold Breaker
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Haxorus|Fire Pledge|p2a: Heatran
+expect |-waiting|p1a: Haxorus|p1b: Venusaur
+expect |move|p1b: Venusaur|Grass Pledge|p2a: Heatran|[from] move: Fire Pledge
+expect |rng|100|18
+expect |-combine
+expect |rng|24|6
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Heatran|163/323
+expect |-damage|p2a: Heatran|163/323
+expect |-sidestart|p2: p2|Fire Pledge
+expect |move|p2a: Heatran|Splash|p2a: Heatran
+expect |-nothing
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |
+expect |split|p2
+expect |-damage|p2b: Blissey|570/651|[from] Fire Pledge
+expect |-damage|p2b: Blissey|570/651|[from] Fire Pledge
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Haxorus|Fire Pledge|p2b: Blissey
+expect |-waiting|p1a: Haxorus|p1b: Venusaur
+expect |move|p1b: Venusaur|Grass Pledge|p2a: Heatran|[from] move: Fire Pledge
+expect |rng|100|9
+expect |-combine
+expect |rng|24|0
+expect |rng|16|6
+expect |-crit|p2a: Heatran
+expect |split|p2
+expect |-damage|p2a: Heatran|0 fnt
+expect |-damage|p2a: Heatran|0 fnt
+expect |faint|p2a: Heatran
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |
+expect |split|p2
+expect |-damage|p2b: Blissey|489/651|[from] Fire Pledge
+expect |-damage|p2b: Blissey|489/651|[from] Fire Pledge
+expect |upkeep
+expect |turn|3

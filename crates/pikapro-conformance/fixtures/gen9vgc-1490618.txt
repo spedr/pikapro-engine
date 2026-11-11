@@ -1,0 +1,734 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed e11d 363f 1ca2 d32f
+genders drawn
+team p1
+Medicham @ Electric Seed
+Ability: Telepathy
+Level: 50
+Tera Type: Normal
+EVs: 43 HP / 44 Atk / 36 Def / 117 SpA / 45 SpD / 188 Spe
+Bold Nature
+- Substitute
+- Fire Pledge
+- Kowtow Cleave
+- Dynamax Cannon
+
+Weavile
+Ability: Pickpocket
+Level: 50
+Shiny: Yes
+Tera Type: Fire
+EVs: 140 HP / 210 Atk / 41 Def / 28 SpA / 1 SpD / 90 Spe
+Naive Nature
+- High Horsepower
+
+Sir Hops-a-Lot (Dratini) @ Soft Sand
+Ability: Marvel Scale
+Level: 50
+Shiny: Yes
+Tera Type: Water
+EVs: 193 HP / 172 Atk / 5 Def / 16 SpA / 110 SpD / 13 Spe
+Adamant Nature
+- Axe Kick
+- Payback
+- Fissure
+- Dragon Hammer
+
+Chomp (Poochyena) (F) @ Gold Bottle Cap
+Ability: Quick Feet
+Level: 50
+Tera Type: Dragon
+EVs: 12 HP / 5 Atk / 241 Def / 5 SpA / 242 SpD / 1 Spe
+Brave Nature
+- Kowtow Cleave
+- Retaliate
+
+Sparky (Palkia) @ Ribbon Sweet
+Ability: Pressure
+Level: 50
+Tera Type: Ghost
+EVs: 197 Atk / 211 SpA / 101 SpD / 1 Spe
+Relaxed Nature
+- Night Slash
+- Horn Drill
+- Psych Up
+- Sketch
+
+Grotle
+Ability: Overgrow
+Level: 50
+Tera Type: Ghost
+EVs: 204 HP / 15 Atk / 24 Def / 12 SpA / 52 SpD / 62 Spe
+Serious Nature
+- Night Daze
+end
+team p2
+Sliggoo @ Luxury Ball
+Ability: Sap Sipper
+Level: 50
+Tera Type: Dragon
+EVs: 139 HP / 20 Atk / 213 Def / 13 SpA / 55 SpD / 14 Spe
+Quiet Nature
+- Aurora Veil
+
+Arceus-Steel @ Destiny Knot
+Ability: Multitype
+Level: 50
+Tera Type: Bug
+EVs: 134 HP / 104 Atk / 3 Def / 212 SpA / 30 SpD / 4 Spe
+Modest Nature
+- Snarl
+- Fairy Wind
+
+Ludicolo @ Griseous Core
+Ability: Swift Swim
+Level: 50
+Tera Type: Grass
+EVs: 18 HP / 188 Atk / 32 Def / 37 SpD / 235 Spe
+Relaxed Nature
+- Pin Missile
+- Minimize
+- Weather Ball
+- Harden
+
+Meowstic-F @ Leftovers
+Ability: Infiltrator
+Level: 50
+Tera Type: Ice
+EVs: 95 HP / 113 Atk / 109 Def / 113 SpA / 16 SpD
+Hardy Nature
+- Hex
+- Aqua Ring
+
+Illumise
+Ability: Tinted Lens
+Level: 50
+Tera Type: Rock
+EVs: 50 HP / 1 Atk / 229 Def / 12 SpD / 218 Spe
+Serious Nature
+- Mimic
+- Happy Hour
+- Curse
+
+Mismagius (F)
+Ability: Levitate
+Level: 50
+Tera Type: Poison
+EVs: 194 HP / 202 Atk / 36 Def / 46 SpA / 11 SpD / 9 Spe
+Lax Nature
+- Dual Wingbeat
+- Coil
+- Shift Gear
+- Play Nice
+end
+choice p1 team 4526
+choice p2 team 6325
+choice p1 switch Weavile, move Horn Drill +2 terastal
+choice p2 move playnice +1 terastal, move pinmissile +1
+choice p1 switch 3, switch 4
+choice p2 move 2,switch 3
+choice p1 switch 3, move 1 1
+choice p2 move 4 1, switch 4
+choice p1 switch 3, move 1 2
+choice p2 move 1 -2, switch 3
+choice p1 move 1 2, switch 4
+choice p2 default
+choice p2 skip,switch 3
+choice p1 move 2 -2, move 2 2
+choice p2 switch 4, move 3
+choice p1 move 2 2, move 2 -1
+choice p2 switch mismagius ,  move 1 -1
+choice p1 move 1 2, move 1 2
+choice p2 move 2, move 3
+choice p1 switch 4, move 2 -1
+choice p2 default
+choice p1 move 1 -2, move 1 1
+choice p2 move 4 2, move 3
+choice p1 switch 3, move 3 1
+choice p2 move 3, move 1 1
+choice p1 switch 4, pass
+choice p2 switch 4, move 1 -1
+choice p1 default
+choice p2 switch 4, pass
+choice p1 move kowtowcleave +2 ,  move nightslash +1
+choice p2 move 4 1, move 1 -1
+choice p1 move 1 2, move 3 -1
+choice p2 move 2, move 1 2
+choice p1 switch 3, move 2 1
+choice p2 move 4 -2, move curse
+choice p1 move 1 2, move 4 2
+choice p2 move 3, move 3
+choice p1 move 1 1, move 3 -1
+choice p2 move 4 1, pass
+choice p1 move 1 -2, move 1 1
+choice p2 move 1 1, pass
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Medicham, L50, F|
+expect |poke|p1|Weavile, L50, F|
+expect |poke|p1|Dratini, L50, F|
+expect |poke|p1|Poochyena, L50, F|
+expect |poke|p1|Palkia, L50|
+expect |poke|p1|Grotle, L50, M|
+expect |poke|p2|Sliggoo, L50, F|
+expect |poke|p2|Arceus-Steel, L50|
+expect |poke|p2|Ludicolo, L50, M|
+expect |poke|p2|Meowstic-F, L50, F|
+expect |poke|p2|Illumise, L50, F|
+expect |poke|p2|Mismagius, L50, F|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Chomp|Poochyena, L50, F|112/112
+expect |switch|p1a: Chomp|Poochyena, L50, F|112/112
+expect |split|p1
+expect |switch|p1b: Sparky|Palkia, L50|165/165
+expect |switch|p1b: Sparky|Palkia, L50|165/165
+expect |split|p2
+expect |switch|p2a: Mismagius|Mismagius, L50, F|159/159
+expect |switch|p2a: Mismagius|Mismagius, L50, F|159/159
+expect |split|p2
+expect |switch|p2b: Ludicolo|Ludicolo, L50, M|157/157
+expect |switch|p2b: Ludicolo|Ludicolo, L50, M|157/157
+expect |-ability|p1b: Sparky|Pressure
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Weavile|Weavile, L50, F, shiny|163/163
+expect |switch|p1a: Weavile|Weavile, L50, F, shiny|163/163
+expect |-terastallize|p2a: Mismagius|Poison
+expect |-terastallize|p1b: Sparky|Ghost
+expect |move|p2a: Mismagius|Play Nice|p1a: Weavile
+expect |-unboost|p1a: Weavile|atk|1
+expect |move|p1b: Sparky|Horn Drill|p2b: Ludicolo|[miss]
+expect |rng|100|67
+expect |-miss|p1b: Sparky|p2b: Ludicolo
+expect |move|p2b: Ludicolo|Pin Missile|p1a: Weavile
+expect |rng|100|18
+expect |rng|20|10
+expect |rng|24|9
+expect |rng|16|0
+expect |-supereffective|p1a: Weavile
+expect |split|p1
+expect |-damage|p1a: Weavile|133/163
+expect |-damage|p1a: Weavile|133/163
+expect |rng|24|16
+expect |rng|16|9
+expect |-supereffective|p1a: Weavile
+expect |split|p1
+expect |-damage|p1a: Weavile|107/163
+expect |-damage|p1a: Weavile|107/163
+expect |rng|24|11
+expect |rng|16|6
+expect |-supereffective|p1a: Weavile
+expect |split|p1
+expect |-damage|p1a: Weavile|79/163
+expect |-damage|p1a: Weavile|79/163
+expect |-hitcount|p1a: Weavile|3
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Chomp|Poochyena, L50, F|112/112
+expect |switch|p1a: Chomp|Poochyena, L50, F|112/112
+expect |split|p1
+expect |switch|p1b: Grotle|Grotle, L50, M|176/176
+expect |switch|p1b: Grotle|Grotle, L50, M|176/176
+expect |split|p2
+expect |switch|p2b: Arceus|Arceus-Steel, L50|212/212
+expect |switch|p2b: Arceus|Arceus-Steel, L50|212/212
+expect |move|p2a: Mismagius|Coil|p2a: Mismagius
+expect |-boost|p2a: Mismagius|atk|1
+expect |-boost|p2a: Mismagius|def|1
+expect |-boost|p2a: Mismagius|accuracy|1
+expect |
+expect |upkeep
+expect |-start|p2b: Arceus|typechange|Normal|[silent]
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Illumise|Illumise, L50, F|146/146
+expect |switch|p2b: Illumise|Illumise, L50, F|146/146
+expect |split|p1
+expect |switch|p1a: Weavile|Weavile, L50, F, shiny|79/163
+expect |switch|p1a: Weavile|Weavile, L50, F, shiny|79/163
+expect |move|p2a: Mismagius|Play Nice|p1a: Weavile
+expect |-unboost|p1a: Weavile|atk|1
+expect |move|p1b: Grotle|Night Daze|p2a: Mismagius|[miss]
+expect |rng|100|99
+expect |-miss|p1b: Grotle|p2a: Mismagius
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Chomp|Poochyena, L50, F|112/112
+expect |switch|p1a: Chomp|Poochyena, L50, F|112/112
+expect |split|p2
+expect |switch|p2b: Ludicolo|Ludicolo, L50, M|157/157
+expect |switch|p2b: Ludicolo|Ludicolo, L50, M|157/157
+expect |move|p2a: Mismagius|Dual Wingbeat|p2b: Ludicolo
+expect |rng|100|85
+expect |rng|24|3
+expect |rng|16|3
+expect |-supereffective|p2b: Ludicolo
+expect |split|p2
+expect |-damage|p2b: Ludicolo|103/157
+expect |-damage|p2b: Ludicolo|103/157
+expect |rng|24|6
+expect |rng|16|6
+expect |-supereffective|p2b: Ludicolo
+expect |split|p2
+expect |-damage|p2b: Ludicolo|51/157
+expect |-damage|p2b: Ludicolo|51/157
+expect |-hitcount|p2b: Ludicolo|2
+expect |move|p1b: Grotle|Night Daze|p2b: Ludicolo
+expect |rng|100|44
+expect |rng|24|2
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Ludicolo|29/157
+expect |-damage|p2b: Ludicolo|29/157
+expect |rng|100|62
+expect |
+expect |upkeep
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sparky|Palkia, L50, tera:Ghost|165/165
+expect |switch|p1b: Sparky|Palkia, L50, tera:Ghost|165/165
+expect |-ability|p1b: Sparky|Pressure
+expect |move|p2a: Mismagius|Dual Wingbeat|p1a: Chomp
+expect |rng|100|56
+expect |rng|24|16
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Chomp|82/112
+expect |-damage|p1a: Chomp|82/112
+expect |rng|24|22
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Chomp|53/112
+expect |-damage|p1a: Chomp|53/112
+expect |-hitcount|p1a: Chomp|2
+expect |move|p2b: Ludicolo|Pin Missile|p1b: Sparky
+expect |rng|100|4
+expect |rng|20|13
+expect |rng|24|10
+expect |rng|16|9
+expect |-resisted|p1b: Sparky
+expect |split|p1
+expect |-damage|p1b: Sparky|160/165
+expect |-damage|p1b: Sparky|160/165
+expect |rng|24|3
+expect |rng|16|11
+expect |-resisted|p1b: Sparky
+expect |split|p1
+expect |-damage|p1b: Sparky|156/165
+expect |-damage|p1b: Sparky|156/165
+expect |rng|24|5
+expect |rng|16|13
+expect |-resisted|p1b: Sparky
+expect |split|p1
+expect |-damage|p1b: Sparky|152/165
+expect |-damage|p1b: Sparky|152/165
+expect |-hitcount|p1b: Sparky|3
+expect |move|p1a: Chomp|Kowtow Cleave|p2b: Ludicolo
+expect |rng|24|17
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Ludicolo|0 fnt
+expect |-damage|p2b: Ludicolo|0 fnt
+expect |faint|p2b: Ludicolo
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Illumise|Illumise, L50, F|146/146
+expect |switch|p2b: Illumise|Illumise, L50, F|146/146
+expect |turn|6
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Arceus|Arceus-Steel, L50|212/212
+expect |switch|p2a: Arceus|Arceus-Steel, L50|212/212
+expect |move|p2b: Illumise|Curse|p2b: Illumise
+expect |rng|100|65
+expect |-unboost|p2b: Illumise|spe|1
+expect |-boost|p2b: Illumise|atk|1
+expect |-boost|p2b: Illumise|def|1
+expect |move|p1b: Sparky|Horn Drill|p2b: Illumise|[miss]
+expect |rng|100|60
+expect |-miss|p1b: Sparky|p2b: Illumise
+expect |move|p1a: Chomp|Retaliate|p1b: Sparky
+expect |-immune|p1b: Sparky
+expect |
+expect |upkeep
+expect |-start|p2a: Arceus|typechange|Normal|[silent]
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Mismagius|Mismagius, L50, F, tera:Poison|159/159
+expect |switch|p2a: Mismagius|Mismagius, L50, F, tera:Poison|159/159
+expect |move|p1b: Sparky|Horn Drill|p1a: Chomp|[miss]
+expect |rng|100|38
+expect |-miss|p1b: Sparky|p1a: Chomp
+expect |move|p2b: Illumise|Mimic||[still]
+expect |-fail|p2b: Illumise
+expect |move|p1a: Chomp|Retaliate|p2b: Illumise
+expect |rng|100|13
+expect |rng|24|18
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2b: Illumise|134/146
+expect |-damage|p2b: Illumise|134/146
+expect |
+expect |upkeep
+expect |turn|8
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2a: Mismagius|Coil|p2a: Mismagius
+expect |-boost|p2a: Mismagius|atk|1
+expect |-boost|p2a: Mismagius|def|1
+expect |-boost|p2a: Mismagius|accuracy|1
+expect |move|p1b: Sparky|Night Slash|p2b: Illumise
+expect |rng|100|71
+expect |rng|8|2
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Illumise|106/146
+expect |-damage|p2b: Illumise|106/146
+expect |move|p2b: Illumise|Curse|p2b: Illumise
+expect |rng|100|71
+expect |-unboost|p2b: Illumise|spe|1
+expect |-boost|p2b: Illumise|atk|1
+expect |-boost|p2b: Illumise|def|1
+expect |move|p1a: Chomp|Kowtow Cleave|p2b: Illumise
+expect |rng|24|6
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Illumise|88/146
+expect |-damage|p2b: Illumise|88/146
+expect |
+expect |upkeep
+expect |turn|9
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Grotle|Grotle, L50, M|176/176
+expect |switch|p1a: Grotle|Grotle, L50, M|176/176
+expect |move|p2a: Mismagius|Dual Wingbeat|p1a: Grotle
+expect |rng|100|47
+expect |rng|24|21
+expect |rng|16|10
+expect |-supereffective|p1a: Grotle
+expect |split|p1
+expect |-damage|p1a: Grotle|128/176
+expect |-damage|p1a: Grotle|128/176
+expect |rng|24|4
+expect |rng|16|5
+expect |-supereffective|p1a: Grotle
+expect |split|p1
+expect |-damage|p1a: Grotle|78/176
+expect |-damage|p1a: Grotle|78/176
+expect |-hitcount|p1a: Grotle|2
+expect |move|p1b: Sparky|Horn Drill|p1a: Grotle|[miss]
+expect |rng|100|68
+expect |-miss|p1b: Sparky|p1a: Grotle
+expect |move|p2b: Illumise|Mimic|p1b: Sparky
+expect |-start|p2b: Illumise|Mimic|Horn Drill
+expect |
+expect |upkeep
+expect |turn|10
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2a: Mismagius|Play Nice|p1b: Sparky
+expect |-unboost|p1b: Sparky|atk|1
+expect |move|p1b: Sparky|Night Slash|p2a: Mismagius
+expect |rng|100|7
+expect |rng|8|5
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Mismagius|137/159
+expect |-damage|p2a: Mismagius|137/159
+expect |move|p2b: Illumise|Curse|p2b: Illumise
+expect |rng|100|3
+expect |-unboost|p2b: Illumise|spe|1
+expect |-boost|p2b: Illumise|atk|1
+expect |-boost|p2b: Illumise|def|1
+expect |move|p1a: Grotle|Night Daze|p1b: Sparky
+expect |rng|100|41
+expect |rng|24|8
+expect |rng|16|9
+expect |-supereffective|p1b: Sparky
+expect |split|p1
+expect |-damage|p1b: Sparky|116/165
+expect |-damage|p1b: Sparky|116/165
+expect |rng|100|84
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Weavile|Weavile, L50, F, shiny|79/163
+expect |switch|p1a: Weavile|Weavile, L50, F, shiny|79/163
+expect |move|p2a: Mismagius|Shift Gear|p2a: Mismagius
+expect |-boost|p2a: Mismagius|spe|2
+expect |-boost|p2a: Mismagius|atk|1
+expect |move|p1b: Sparky|Psych Up|p2a: Mismagius
+expect |-copyboost|p1b: Sparky|p2a: Mismagius|[from] move: Psych Up
+expect |move|p2b: Illumise|Horn Drill|p1a: Weavile
+expect |rng|100|28
+expect |split|p1
+expect |-damage|p1a: Weavile|0 fnt
+expect |-damage|p1a: Weavile|0 fnt
+expect |faint|p1a: Weavile
+expect |-ohko
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Chomp|Poochyena, L50, F|53/112
+expect |switch|p1a: Chomp|Poochyena, L50, F|53/112
+expect |turn|12
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Arceus|Arceus-Steel, L50|212/212
+expect |switch|p2a: Arceus|Arceus-Steel, L50|212/212
+expect |move|p1b: Sparky|Night Slash|p2b: Illumise
+expect |rng|100|77
+expect |rng|8|5
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Illumise|57/146
+expect |-damage|p2b: Illumise|57/146
+expect |move|p2b: Illumise|Horn Drill|p2a: Arceus
+expect |rng|100|29
+expect |split|p2
+expect |-damage|p2a: Arceus|0 fnt
+expect |-damage|p2a: Arceus|0 fnt
+expect |faint|p2a: Arceus
+expect |-ohko
+expect |move|p1a: Chomp|Kowtow Cleave|p2b: Illumise
+expect |rng|24|10
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Illumise|42/146
+expect |-damage|p2b: Illumise|42/146
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Mismagius|Mismagius, L50, F, tera:Poison|137/159
+expect |switch|p2a: Mismagius|Mismagius, L50, F, tera:Poison|137/159
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1b: Sparky|Night Slash|p2a: Mismagius
+expect |rng|100|77
+expect |rng|8|3
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Mismagius|39/159
+expect |-damage|p2a: Mismagius|39/159
+expect |move|p2a: Mismagius|Play Nice|p1a: Chomp
+expect |-unboost|p1a: Chomp|atk|1
+expect |move|p2b: Illumise|Horn Drill|p2a: Mismagius|[miss]
+expect |rng|100|40
+expect |-miss|p2b: Illumise|p2a: Mismagius
+expect |move|p1a: Chomp|Kowtow Cleave|p2b: Illumise
+expect |rng|24|1
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Illumise|33/146
+expect |-damage|p2b: Illumise|33/146
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p1b: Sparky|Psych Up|p1a: Chomp
+expect |-copyboost|p1b: Sparky|p1a: Chomp|[from] move: Psych Up
+expect |move|p2a: Mismagius|Coil|p2a: Mismagius
+expect |-boost|p2a: Mismagius|atk|1
+expect |-boost|p2a: Mismagius|def|1
+expect |-boost|p2a: Mismagius|accuracy|1
+expect |move|p2b: Illumise|Horn Drill|p1b: Sparky
+expect |-immune|p1b: Sparky
+expect |move|p1a: Chomp|Kowtow Cleave|p2b: Illumise
+expect |rng|24|5
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Illumise|23/146
+expect |-damage|p2b: Illumise|23/146
+expect |
+expect |upkeep
+expect |turn|15
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Grotle|Grotle, L50, M|78/176
+expect |switch|p1a: Grotle|Grotle, L50, M|78/176
+expect |move|p2a: Mismagius|Play Nice|p2b: Illumise
+expect |-unboost|p2b: Illumise|atk|1
+expect |move|p1b: Sparky|Horn Drill|p2a: Mismagius|[miss]
+expect |rng|100|88
+expect |-miss|p1b: Sparky|p2a: Mismagius
+expect |move|p2b: Illumise|Curse|p2b: Illumise
+expect |rng|100|6
+expect |-unboost|p2b: Illumise|spe|1
+expect |-boost|p2b: Illumise|atk|1
+expect |-boost|p2b: Illumise|def|1
+expect |
+expect |upkeep
+expect |turn|16
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2a: Mismagius|Shift Gear|p2a: Mismagius
+expect |-boost|p2a: Mismagius|spe|2
+expect |-boost|p2a: Mismagius|atk|1
+expect |move|p1b: Sparky|Sketch|p2b: Illumise
+expect |-activate|p1b: Sparky|move: Sketch|Curse
+expect |move|p1a: Grotle|Night Daze|p2b: Illumise
+expect |rng|100|63
+expect |rng|24|1
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Illumise|0 fnt
+expect |-damage|p2b: Illumise|0 fnt
+expect |rng|100|80
+expect |faint|p2b: Illumise
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p2a: Mismagius|Play Nice|p1a: Grotle
+expect |-unboost|p1a: Grotle|atk|1
+expect |move|p1b: Sparky|Psych Up|p1a: Grotle
+expect |-copyboost|p1b: Sparky|p1a: Grotle|[from] move: Psych Up
+expect |move|p1a: Grotle|Night Daze|p2a: Mismagius
+expect |rng|100|41
+expect |rng|24|8
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Mismagius|15/159
+expect |-damage|p2a: Mismagius|15/159
+expect |rng|100|8
+expect |-unboost|p2a: Mismagius|accuracy|1
+expect |
+expect |upkeep
+expect |turn|18
+expect |
+expect |t:|
+expect |move|p2a: Mismagius|Dual Wingbeat|p1a: Grotle
+expect |rng|100|88
+expect |rng|24|6
+expect |rng|16|15
+expect |-supereffective|p1a: Grotle
+expect |split|p1
+expect |-damage|p1a: Grotle|18/176
+expect |-damage|p1a: Grotle|18/176
+expect |rng|24|0
+expect |rng|16|6
+expect |-supereffective|p1a: Grotle
+expect |-crit|p1a: Grotle
+expect |split|p1
+expect |-damage|p1a: Grotle|0 fnt
+expect |-damage|p1a: Grotle|0 fnt
+expect |faint|p1a: Grotle
+expect |-hitcount|p1: Grotle|2
+expect |move|p1b: Sparky|Night Slash|p2a: Mismagius
+expect |rng|100|6
+expect |rng|8|1
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Mismagius|0 fnt
+expect |-damage|p2a: Mismagius|0 fnt
+expect |faint|p2a: Mismagius
+expect |
+expect |win|p1
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Medicham","details":"Medicham, L50, F","condition":"140/140","active":true,"stats":{"atk":77,"def":110,"spa":95,"spd":101,"spe":124},"moves":["substitute","firepledge","kowtowcleave","dynamaxcannon"],"baseAbility":"telepathy","item":"electricseed","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"163/163","active":true,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Dratini, L50, F, shiny","condition":"140/140","active":false,"stats":{"atk":116,"def":66,"spa":64,"spd":84,"spe":72},"moves":["axekick","payback","fissure","dragonhammer"],"baseAbility":"marvelscale","item":"softsand","pokeball":"pokeball","ability":"marvelscale","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"112/112","active":false,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"165/165","active":false,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"176/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sliggoo","details":"Sliggoo, L50, F","condition":"160/160","active":true,"stats":{"atk":98,"def":100,"spa":115,"spd":140,"spe":73},"moves":["auroraveil"],"baseAbility":"sapsipper","item":"luxuryball","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"157/157","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Meowstic","details":"Meowstic-F, L50, F","condition":"161/161","active":false,"stats":{"atk":82,"def":110,"spa":117,"spd":103,"spe":124},"moves":["hex","aquaring"],"baseAbility":"infiltrator","item":"leftovers","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"146/146","active":false,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"159/159","active":false,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Retaliate","id":"retaliate","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Dragon"},{"moves":[{"move":"Night Slash","id":"nightslash","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}],"canTerastallize":"Ghost"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"112/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"165/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"163/163","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"176/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Poison"},{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Minimize","id":"minimize","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Weather Ball","id":"weatherball","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Harden","id":"harden","pp":48,"maxpp":48,"target":"self","disabled":false}],"canTerastallize":"Grass"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"159/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"157/157","active":true,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"146/146","active":false,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"High Horsepower","id":"highhorsepower","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"79/163","active":true,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"165/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"112/112","active":false,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"176/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":31,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Minimize","id":"minimize","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Weather Ball","id":"weatherball","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Harden","id":"harden","pp":48,"maxpp":48,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"159/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"157/157","active":true,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"146/146","active":false,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Retaliate","id":"retaliate","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Daze","id":"nightdaze","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"112/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"176/176","active":true,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"79/163","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"165/165","active":false,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":31,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Snarl","id":"snarl","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Fairy Wind","id":"fairywind","pp":48,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"159/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"157/157","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"146/146","active":false,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"High Horsepower","id":"highhorsepower","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Daze","id":"nightdaze","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"79/163","active":true,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"176/176","active":true,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"112/112","active":false,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"165/165","active":false,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":30,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Mimic","id":"mimic","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"159/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"146/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"157/157","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Retaliate","id":"retaliate","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Daze","id":"nightdaze","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"112/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"176/176","active":true,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"79/163","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"165/165","active":false,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":30,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Pin Missile","id":"pinmissile","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Minimize","id":"minimize","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Weather Ball","id":"weatherball","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Harden","id":"harden","pp":48,"maxpp":48,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"159/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"29/157","active":true,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"146/146","active":false,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"152/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"79/163","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"176/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"159/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":true,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"146/146","active":false,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Retaliate","id":"retaliate","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"152/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"79/163","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"176/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":30,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Mimic","id":"mimic","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"159/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"146/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Retaliate","id":"retaliate","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"152/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"79/163","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"176/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Snarl","id":"snarl","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Fairy Wind","id":"fairywind","pp":48,"maxpp":48,"target":"normal","disabled":false}]},{"moves":[{"move":"Mimic","id":"mimic","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":15,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"146/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"159/159","active":false,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"}]}}
+request p1 {"active":[{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Retaliate","id":"retaliate","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"152/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"79/163","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"176/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":30,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Mimic","id":"mimic","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":15,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"159/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"134/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Retaliate","id":"retaliate","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"152/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"79/163","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"176/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":30,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":30,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Mimic","id":"mimic","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":14,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"159/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"88/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Night Daze","id":"nightdaze","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":4,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"78/176","active":true,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"152/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"79/163","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":false,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":30,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":30,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Horn Drill","id":"horndrill","pp":5,"maxpp":5,"target":"normal","disabled":false},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":14,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"159/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"88/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["horndrill","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Night Daze","id":"nightdaze","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":4,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"78/176","active":true,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"116/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"79/163","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":false,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":30,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":28,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Horn Drill","id":"horndrill","pp":5,"maxpp":5,"target":"normal","disabled":false},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":13,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"137/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"88/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["horndrill","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"116/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"78/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":false,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"137/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"88/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["horndrill","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Retaliate","id":"retaliate","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":4,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"116/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"78/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":30,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":28,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Horn Drill","id":"horndrill","pp":4,"maxpp":5,"target":"normal","disabled":false},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":13,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"137/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"88/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["horndrill","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"212/212","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"116/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"78/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"0 fnt","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"42/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["horndrill","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"137/159","active":false,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Retaliate","id":"retaliate","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":21,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":4,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"116/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"78/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":30,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":28,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Horn Drill","id":"horndrill","pp":3,"maxpp":5,"target":"normal","disabled":false},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":13,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"137/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"42/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["horndrill","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"0 fnt","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":12,"maxpp":16,"target":"normal","disabled":false},{"move":"Retaliate","id":"retaliate","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":20,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":4,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"116/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"78/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":30,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":27,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Horn Drill","id":"horndrill","pp":2,"maxpp":5,"target":"normal","disabled":false},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":13,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"39/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"33/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["horndrill","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"0 fnt","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Kowtow Cleave","id":"kowtowcleave","pp":11,"maxpp":16,"target":"normal","disabled":false},{"move":"Retaliate","id":"retaliate","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":20,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":4,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":true,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"116/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"78/176","active":false,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":29,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":27,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Horn Drill","id":"horndrill","pp":0,"maxpp":5,"target":"normal","disabled":true},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":13,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"39/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"23/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["horndrill","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"0 fnt","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Night Daze","id":"nightdaze","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":20,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":3,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"78/176","active":true,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"116/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","sketch"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":false,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":29,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":26,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Horn Drill","id":"horndrill","pp":0,"maxpp":5,"target":"normal","disabled":true},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":12,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"39/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"23/146","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["horndrill","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"0 fnt","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Night Daze","id":"nightdaze","pp":12,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":20,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":3,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Curse","id":"curse","pp":10,"maxpp":10,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"78/176","active":true,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"116/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","curse"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":false,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":29,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":14,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":26,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Mimic","id":"mimic","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":12,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"39/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"0 fnt","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"0 fnt","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Night Daze","id":"nightdaze","pp":11,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Night Slash","id":"nightslash","pp":20,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":3,"maxpp":8,"target":"normal","disabled":false},{"move":"Psych Up","id":"psychup","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Curse","id":"curse","pp":10,"maxpp":10,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Grotle","details":"Grotle, L50, M","condition":"78/176","active":true,"stats":{"atk":111,"def":108,"spa":77,"spd":92,"spe":64},"moves":["nightdaze"],"baseAbility":"overgrow","item":"","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Sparky","details":"Palkia, L50","condition":"116/165","active":true,"stats":{"atk":165,"def":132,"spa":196,"spd":153,"spe":108},"moves":["nightslash","horndrill","psychup","curse"],"baseAbility":"pressure","item":"ribbonsweet","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p1: Chomp","details":"Poochyena, L50, F","condition":"53/112","active":false,"stats":{"atk":83,"def":85,"spa":51,"spd":80,"spe":49},"moves":["kowtowcleave","retaliate"],"baseAbility":"quickfeet","item":"goldbottlecap","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Weavile","details":"Weavile, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":166,"def":90,"spa":69,"spd":94,"spe":171},"moves":["highhorsepower"],"baseAbility":"pickpocket","item":"","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Dual Wingbeat","id":"dualwingbeat","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Coil","id":"coil","pp":29,"maxpp":32,"target":"self","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":14,"maxpp":16,"target":"self","disabled":false},{"move":"Play Nice","id":"playnice","pp":25,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Mimic","id":"mimic","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Curse","id":"curse","pp":12,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mismagius","details":"Mismagius, L50, F","condition":"15/159","active":true,"stats":{"atk":105,"def":93,"spa":131,"spd":113,"spe":126},"moves":["dualwingbeat","coil","shiftgear","playnice"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Illumise","details":"Illumise, L50, F","condition":"0 fnt","active":true,"stats":{"atk":67,"def":124,"spa":93,"spd":107,"spe":132},"moves":["mimic","happyhour","curse"],"baseAbility":"tintedlens","item":"","pokeball":"pokeball","ability":"tintedlens","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Ludicolo","details":"Ludicolo, L50, M","condition":"0 fnt","active":false,"stats":{"atk":114,"def":103,"spa":110,"spd":125,"spe":107},"moves":["pinmissile","minimize","weatherball","harden"],"baseAbility":"swiftswim","item":"griseouscore","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Steel, L50","condition":"0 fnt","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":144,"spe":141},"moves":["snarl","fairywind"],"baseAbility":"multitype","item":"destinyknot","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}

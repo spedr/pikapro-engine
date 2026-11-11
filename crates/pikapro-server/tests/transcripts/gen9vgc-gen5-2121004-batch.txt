@@ -1,0 +1,222 @@
+# gen9vgc-gen5-2121004-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay omniscient
+@write
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,3c70ea0005601804","rated":true}
+# a comment
+>chat before the players
+@write
+>player p1 {"name":"Alice","team":[{"name":"Victreebel","species":"Victreebel","item":"","ability":"Arena Trap","moves":["Secret Sword","Aqua Step","Volt Switch"],"nature":"Brave","evs":{"hp":0,"atk":123,"def":0,"spa":96,"spd":212,"spe":79},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug"},{"name":"Meowth-Galar","species":"Meowth-Galar","item":"Figy Berry","ability":"Arena Trap","moves":["Rising Voltage","Petal Blizzard"],"nature":"Impish","evs":{"hp":17,"atk":220,"def":53,"spa":110,"spd":47,"spe":29},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar"},{"name":"Beartic","species":"Beartic","item":"Life Orb","ability":"Slush Rush","moves":["Lunar Blessing","Encore","Ice Punch"],"nature":"Impish","evs":{"hp":13,"atk":220,"def":19,"spa":155,"spd":67,"spe":34},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass"},{"name":"Chomp","species":"Phanpy","item":"Wacan Berry","ability":"Pickup","moves":["Fly","Cotton Guard"],"nature":"Relaxed","evs":{"hp":92,"atk":4,"def":9,"spa":73,"spd":85,"spe":51},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar"},{"name":"Zangoose","species":"Zangoose","item":"Sitrus Berry","ability":"Toxic Boost","moves":["Slash","Final Gambit","Low Kick"],"nature":"Gentle","evs":{"hp":199,"atk":99,"def":46,"spa":69,"spd":0,"spe":89},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock"},{"name":"Frogadier","species":"Frogadier","item":"Assault Vest","ability":"Protean","moves":["Swift","Headbutt"],"nature":"Hardy","evs":{"hp":1,"atk":1,"def":0,"spa":194,"spd":234,"spe":80},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy"}]}
+@write
+>player p2 {"name":"Bob","team":"Sylveon||Protector|ShadowTag|WaterPulse,Disable,Crunch|Quirky|152,25,12,242,24,53|M|||50|,,,,,Normal]Flittle|||ArenaTrap|DefenseCurl,MirrorCoat|Careful|7,22,18,203,188,72||||50|,,,,,Poison]Zoë|Shieldon|ChoiceSpecs|Sturdy|Imprison|Careful|177,141,6,43,131,11|M|||50|,,,,,Fire]Vigoroth||AssaultVest|VitalSpirit|Safeguard,StunSpore,PsyshieldBash,Poltergeist|Mild|14,111,143,3,74,162|M||S|50|,,,,,Fighting]Deerling|||SereneGrace|Encore|Naughty|56,9,137,16,45,245|F|||50|,,,,,Psychic]ThisNameIsFarTooLongToKeep|Chansey|GalaricaWreath|SereneGrace|MightyCleave,DragonEnergy|Lonely|141,189,10,96,13,58||||50|,,,,,Fire"}
+@write
+>p1 shift
+# a comment
+>p1 team 3241
+@write
+
+>p2 team 6513
+>p1 pass
+@write
+>p2 move 1 1, move 1 1 terastallize
+>p1 move 3 1, move 1 2 terastallize
+@write
+>p2 switch 4, pass
+>p1 move 3 2, move 1 -1
+@write
+>p2 move 1, move 1 2
+>p2 switch
+@write
+
+>p1 move icepunch +1,move risingvoltage -1
+>p2 move 1, move 3 2
+@write
+>p1 move 3 2, move 1 1
+@write
+
+>p1 move 3 2, move 1 1
+>p2 move imprison -2 dynamax, move disable +1
+@write
+>p2 default
+>p1 move Lunar Blessing 3 terastal, move 1 2
+@write
+>p2 move 1, move 2 1
+>p1 move 2 +1,move risingvoltage +1
+@write
+>p1 auto
+@write
+>p2 move imprison 2 terastallize
+>p2 move 1, move 3 2
+@write
+>p1 switch 4
+>p2 move 1, move 3 +1 terastallize
+@write
+>p1 move 2 2, move 1 -1
+>p2 move imprison, move Crunch 2
+@write
+>p1 switch phanpy, move 2 2 dynamax
+>forcetie
+@message
+|t:|
+|gametype|doubles
+|chat|before the players
+@message
+|player|p1|Alice||
+@message
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|rated|
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Victreebel, L50, M|
+|poke|p1|Meowth-Galar, L50, F|
+|poke|p1|Beartic, L50, M|
+|poke|p1|Phanpy, L50, M|
+|poke|p1|Zangoose, L50, M|
+|poke|p1|Frogadier, L50, M|
+|poke|p2|Sylveon, L50, M|
+|poke|p2|Flittle, L50, M|
+|poke|p2|Shieldon, L50, M|
+|poke|p2|Vigoroth, L50, M|
+|poke|p2|Deerling, L50, F|
+|poke|p2|Chansey, L50, F|
+|teampreview|4
+@message
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Beartic|Beartic, L50, M|172/172
+|switch|p1b: Meowth|Meowth-Galar, L50, F, shiny|127/127
+|switch|p2a: ThisNameIsFarTooLong|Chansey, L50, F|343/343
+|switch|p2b: Deerling|Deerling, L50, F|142/142
+|turn|1
+@message
+|
+|t:|
+|-terastallize|p2b: Deerling|Psychic
+|-terastallize|p1b: Meowth|Stellar
+|move|p2b: Deerling|Encore||[still]
+|-fail|p2b: Deerling
+|move|p2a: ThisNameIsFarTooLong|Mighty Cleave|p1a: Beartic
+|-supereffective|p1a: Beartic
+|-damage|p1a: Beartic|134/172
+|move|p1a: Beartic|Ice Punch|p2a: ThisNameIsFarTooLong
+|-damage|p2a: ThisNameIsFarTooLong|0 fnt
+|faint|p2a: ThisNameIsFarTooLong
+|-damage|p1a: Beartic|117/172|[from] item: Life Orb
+|move|p1b: Meowth|Rising Voltage|p2b: Deerling
+|-damage|p2b: Deerling|111/142
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p2a: Zoë|Shieldon, L50, M|127/127
+|turn|2
+@message
+|
+|t:|
+|move|p2b: Deerling|Encore|p1b: Meowth
+|-start|p1b: Meowth|Encore
+|move|p1a: Beartic|Ice Punch|p2b: Deerling
+|-damage|p2b: Deerling|0 fnt
+|faint|p2b: Deerling
+|-damage|p1a: Beartic|100/172|[from] item: Life Orb
+|move|p1b: Meowth|Rising Voltage|p1a: Beartic
+|-damage|p1a: Beartic|82/172
+|move|p2a: Zoë|Imprison|p2a: Zoë
+|-start|p2a: Zoë|move: Imprison
+|
+|upkeep
+|
+|t:|
+|switch|p2b: Sylveon|Sylveon, L50, M|189/189
+|turn|3
+@message
+|
+|t:|
+|move|p2b: Sylveon|Crunch|p1b: Meowth
+|-damage|p1b: Meowth|97/127
+|move|p1a: Beartic|Ice Punch|p2a: Zoë
+|-resisted|p2a: Zoë
+|-damage|p2a: Zoë|88/127
+|-damage|p1a: Beartic|65/172|[from] item: Life Orb
+|move|p1b: Meowth|Rising Voltage|p1a: Beartic
+|-crit|p1a: Beartic
+|-damage|p1a: Beartic|35/172
+|move|p2a: Zoë|Imprison||[still]
+|-fail|p2a: Zoë
+|
+|upkeep
+|turn|4
+@message
+|
+|t:|
+|move|p2b: Sylveon|Water Pulse|p1b: Meowth
+|-damage|p1b: Meowth|34/127
+|-start|p1b: Meowth|confusion
+|move|p1a: Beartic|Ice Punch|p2b: Sylveon
+|-damage|p2b: Sylveon|75/189
+|-damage|p1a: Beartic|18/172|[from] item: Life Orb
+|-activate|p1b: Meowth|confusion
+|-damage|p1b: Meowth|14/127|[from] confusion
+|-enditem|p1b: Meowth|Figy Berry|[eat]
+|-heal|p1b: Meowth|56/127|[from] item: Figy Berry
+|move|p2a: Zoë|Imprison||[still]
+|-fail|p2a: Zoë
+|
+|-end|p1b: Meowth|Encore
+|upkeep
+|turn|5
+@message
+|
+|t:|
+|move|p2b: Sylveon|Disable|p1a: Beartic
+|-start|p1a: Beartic|Disable|Ice Punch
+|move|p1a: Beartic|Encore|p2a: Zoë
+|-start|p2a: Zoë|Encore
+|-activate|p1b: Meowth|confusion
+|-damage|p1b: Meowth|35/127|[from] confusion
+|move|p2a: Zoë|Imprison||[still]
+|-fail|p2a: Zoë
+|
+|upkeep
+|turn|6
+@message
+|
+|t:|
+|move|p2b: Sylveon|Crunch|p1b: Meowth
+|-damage|p1b: Meowth|0 fnt
+|faint|p1b: Meowth
+|move|p1a: Beartic|Lunar Blessing|p1a: Beartic
+|-heal|p1a: Beartic|61/172
+|move|p2a: Zoë|Imprison||[still]
+|-fail|p2a: Zoë
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1b: Victreebel|Victreebel, L50, M|155/155
+|turn|7
+@message
+|
+|t:|
+|move|p1b: Victreebel|Secret Sword|p1a: Beartic
+|-supereffective|p1a: Beartic
+|-damage|p1a: Beartic|0 fnt
+|faint|p1a: Beartic
+|move|p2b: Sylveon|Crunch|p1b: Victreebel
+|-damage|p1b: Victreebel|121/155
+|-unboost|p1b: Victreebel|def|1
+|move|p2a: Zoë|Imprison||[still]
+|-fail|p2a: Zoë
+|
+|-end|p2a: Zoë|Encore
+|upkeep
+@message
+|
+|tie

@@ -1,0 +1,103 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 2400 0026 0000 0057
+genders drawn
+team p1
+Aegislash
+Ability: Stance Change
+Level: 38
+Hardy Nature
+- Copycat
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Protect
+end
+team p2
+Incineroar
+Ability: Blaze
+Level: 50
+Hardy Nature
+- Throat Chop
+
+Exploud
+Ability: Soundproof
+Level: 40
+Hardy Nature
+- Boomburst
+end
+choice p1 move 1, move 1
+choice p2 move 1 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Aegislash|Aegislash, L38, F|105/105
+expect |switch|p1a: Aegislash|Aegislash, L38, F|105/105
+expect |split|p1
+expect |switch|p1b: Snorlax|Snorlax, L50, F|235/235
+expect |switch|p1b: Snorlax|Snorlax, L50, F|235/235
+expect |split|p2
+expect |switch|p2a: Incineroar|Incineroar, L50, M|170/170
+expect |switch|p2a: Incineroar|Incineroar, L50, M|170/170
+expect |split|p2
+expect |switch|p2b: Exploud|Exploud, L40, M|145/145
+expect |switch|p2b: Exploud|Exploud, L40, M|145/145
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1b: Snorlax|Protect|p1b: Snorlax
+expect |-singleturn|p1b: Snorlax|Protect
+expect |rng|2|0
+expect |move|p2a: Incineroar|Throat Chop|p1a: Aegislash
+expect |rng|100|41
+expect |rng|24|17
+expect |rng|16|13
+expect |-supereffective|p1a: Aegislash
+expect |split|p1
+expect |-damage|p1a: Aegislash|3/105
+expect |-damage|p1a: Aegislash|3/105
+expect |rng|100|6
+expect |-start|p1a: Aegislash|Throat Chop|[silent]
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Exploud|Boomburst|p1b: Snorlax|[spread] p2a
+expect |-activate|p1b: Snorlax|move: Protect
+expect |-immune|p1a: Aegislash
+expect |rng|100|80
+expect |rng|24|11
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Incineroar|127/170
+expect |-damage|p2a: Incineroar|127/170
+expect |move|p1a: Aegislash|Copycat|p1a: Aegislash
+expect |rng|2|1
+expect |-formechange|p1a: Aegislash|Aegislash-Blade||[from] ability: Stance Change
+expect |cant|p1a: Aegislash|move: Throat Chop
+expect |rng|2|0
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|2
+request p1 {"active":[{"moves":[{"move":"Copycat","id":"copycat","pp":32,"maxpp":32,"target":"self","disabled":false}],"canTerastallize":"Steel"},{"moves":[{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Aegislash","details":"Aegislash, L38, F","condition":"105/105","active":true,"stats":{"atk":54,"def":123,"spa":54,"spd":123,"spe":62},"moves":["copycat"],"baseAbility":"stancechange","item":"","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Snorlax","details":"Snorlax, L50, F","condition":"235/235","active":true,"stats":{"atk":130,"def":85,"spa":85,"spd":130,"spe":50},"moves":["protect"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Throat Chop","id":"throatchop","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Boomburst","id":"boomburst","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Incineroar","details":"Incineroar, L50, M","condition":"170/170","active":true,"stats":{"atk":135,"def":110,"spa":100,"spd":110,"spe":80},"moves":["throatchop"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Exploud","details":"Exploud, L40, M","condition":"145/145","active":true,"stats":{"atk":90,"def":67,"spa":90,"spd":75,"spe":71},"moves":["boomburst"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Copycat","id":"copycat","pp":31,"maxpp":32,"target":"self","disabled":false}],"canTerastallize":"Steel"},{"moves":[{"move":"Protect","id":"protect","pp":15,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Aegislash","details":"Aegislash, L38, F","condition":"3/105","active":true,"stats":{"atk":123,"def":54,"spa":123,"spd":54,"spe":62},"moves":["copycat"],"baseAbility":"stancechange","item":"","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Snorlax","details":"Snorlax, L50, F","condition":"235/235","active":true,"stats":{"atk":130,"def":85,"spa":85,"spd":130,"spe":50},"moves":["protect"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Throat Chop","id":"throatchop","pp":23,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Fire"},{"moves":[{"move":"Boomburst","id":"boomburst","pp":15,"maxpp":16,"target":"allAdjacent","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Incineroar","details":"Incineroar, L50, M","condition":"127/170","active":true,"stats":{"atk":135,"def":110,"spa":100,"spd":110,"spe":80},"moves":["throatchop"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Exploud","details":"Exploud, L40, M","condition":"145/145","active":true,"stats":{"atk":90,"def":67,"spa":90,"spd":75,"spe":71},"moves":["boomburst"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}

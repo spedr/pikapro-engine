@@ -1,0 +1,672 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed 19ae f777 d777 d7d4
+genders drawn
+team p1
+Mr. Bubbles (Flapple) (F) @ Electric Seed
+Ability: Ripen
+Level: 50
+Tera Type: Grass
+EVs: 11 HP / 16 Def / 7 SpA / 28 SpD / 4 Spe
+Mild Nature
+- Rapid Spin
+- Sing
+- Focus Energy
+
+ThisNameIsFarTooLongToKeep (Gholdengo)
+Ability: Good as Gold
+Level: 50
+Tera Type: Fire
+EVs: 3 HP / 21 Atk / 1 Def / 19 SpA / 2 SpD / 19 Spe
+Naughty Nature
+- Toxic Spikes
+- Petal Blizzard
+
+Rhyperior (F) @ Black Belt
+Ability: Reckless
+Level: 50
+Tera Type: Grass
+EVs: 3 HP / 5 Def / 28 SpA / 30 SpD
+Hasty Nature
+- Blast Burn
+- Brutal Swing
+- Baby-Doll Eyes
+
+Ariados @ Normal Gem
+Ability: Insomnia
+Level: 50
+Tera Type: Ice
+EVs: 18 Atk / 7 Def / 2 SpA / 18 SpD / 12 Spe
+Hasty Nature
+- Horn Leech
+
+Dragonite (M) @ White Herb
+Ability: Multiscale
+Level: 50
+Tera Type: Electric
+EVs: 8 HP / 8 Atk / 18 SpA / 9 SpD / 18 Spe
+Lax Nature
+- Spikes
+- Misty Terrain
+- Venoshock
+
+Stunfisk (F)
+Ability: Static
+Level: 50
+Tera Type: Bug
+EVs: 15 HP / 1 Atk / 5 Def / 31 SpA / 1 SpD / 13 Spe
+Bashful Nature
+- Syrup Bomb
+- Recover
+- Trick Room
+- Poison Jab
+end
+team p2
+Alcremie-Ruby-Swirl (F)
+Ability: Aroma Veil
+Level: 50
+Tera Type: Bug
+EVs: 4 Atk / 24 Def / 3 SpA / 29 SpD / 5 Spe
+Timid Nature
+- Phantom Force
+- Lumina Crash
+- Shift Gear
+
+Hawlucha
+Ability: Mold Breaker
+Level: 50
+Tera Type: Water
+EVs: 25 HP / 18 SpA / 23 SpD
+Lax Nature
+- Ice Punch
+- Aurora Veil
+
+Qwilfish (M)
+Ability: Intimidate
+Level: 50
+Tera Type: Flying
+EVs: 27 Atk / 2 Def / 2 SpA / 23 SpD / 8 Spe
+Careful Nature
+- Poltergeist
+- Spore
+- Super Fang
+- Fire Lash
+
+ThisNameIsFarTooLongToKeep (Clefable) (F) @ Mystic Water
+Ability: Cute Charm
+Level: 50
+Tera Type: Stellar
+EVs: 8 HP / 7 Atk / 5 Def / 3 SpA / 16 SpD / 26 Spe
+Bold Nature
+- Double Hit
+
+Big Tony's Pal (Kingambit) (M)
+Ability: Defiant
+Level: 50
+Tera Type: Electric
+EVs: 3 Atk / 1 Def / 28 SpA / 2 SpD / 32 Spe
+Lonely Nature
+- Teatime
+- Rage Powder
+
+Farfetch’d (M) @ Metal Coat
+Ability: Defiant
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 7 HP / 20 Atk / 4 Def / 7 SpA / 26 Spe
+Careful Nature
+- Milk Drink
+- Cotton Spore
+- Ingrain
+- Sludge Wave
+end
+choice p1 team 153
+choice p2 team 213
+choice p1 switch 2
+choice p2 switch 3
+choice p1 switch 2
+choice p2 default
+choice p1 switch 3
+choice p2 move 3
+choice p1 move Blast Burn
+choice p2 move 1
+choice p1 default
+choice p2 switch 2
+choice p1 move 2
+choice p2 switch 2
+choice p1 move 2
+choice p2 default
+choice p1 move 1
+choice p2 switch 3
+choice p1 move 1
+choice p2 switch qwilfish
+choice p1 switch Dragonite
+choice p2 move firelash
+choice p1 move 1
+choice p2 move 2
+choice p1 default
+choice p2 move 3
+choice p1 move 2
+choice p2 switch 3
+choice p1 switch 3
+choice p2 move icepunch
+choice p1 switch rhyperior
+choice p2 switch alcremie-ruby-swirl
+choice p1 move 3
+choice p2 switch 2
+choice p1 move 2
+choice p2 move 1
+choice p1 move 2
+choice p2 switch 3
+choice p1 switch 3
+choice p2 move 4
+choice p1 move 3
+choice p2 default
+choice p1 default
+choice p2 switch 3
+choice p1 switch 3
+choice p2 switch 2
+choice p1 move 2
+choice p2 switch 2
+choice p1 move 3
+choice p2 switch 3
+choice p1 default
+choice p2 switch 3
+choice p1 move 1
+choice p2 move 1
+choice p1 move 3
+choice p2 move 1
+choice p1 switch 3
+choice p2 move 1
+choice p1 switch 3
+choice p2 move 1
+choice p1 move 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Flapple, L50, F|
+expect |poke|p1|Gholdengo, L50|
+expect |poke|p1|Rhyperior, L50, F|
+expect |poke|p1|Ariados, L50, M|
+expect |poke|p1|Dragonite, L50, M|
+expect |poke|p1|Stunfisk, L50, F|
+expect |poke|p2|Alcremie-Ruby-Swirl, L50, F|
+expect |poke|p2|Hawlucha, L50, F|
+expect |poke|p2|Qwilfish, L50, M|
+expect |poke|p2|Clefable, L50, F|
+expect |poke|p2|Kingambit, L50, M|
+expect |poke|p2|Farfetch’d, L50, M, shiny|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Mr. Bubbles|Flapple, L50, F|156/156
+expect |switch|p1a: Mr. Bubbles|Flapple, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|178/178
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|100/100
+expect |-ability|p2a: Hawlucha|Mold Breaker
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Qwilfish|Qwilfish, L50, M|140/140
+expect |switch|p2a: Qwilfish|Qwilfish, L50, M|100/100
+expect |-ability|p2a: Qwilfish|Intimidate|boost
+expect |-unboost|p1a: Mr. Bubbles|atk|1
+expect |split|p1
+expect |switch|p1a: Dragonite|Dragonite, L50, M|174/174
+expect |switch|p1a: Dragonite|Dragonite, L50, M|100/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Mr. Bubbles|Flapple, L50, F|156/156
+expect |switch|p1a: Mr. Bubbles|Flapple, L50, F|100/100
+expect |move|p2a: Qwilfish|Poltergeist|p1a: Mr. Bubbles
+expect |rng|100|87
+expect |-activate|p1a: Mr. Bubbles|move: Poltergeist|Electric Seed
+expect |rng|24|20
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|95/156
+expect |-damage|p1a: Mr. Bubbles|60/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Rhyperior|Rhyperior, L50, F|193/193
+expect |switch|p1a: Rhyperior|Rhyperior, L50, F|100/100
+expect |move|p2a: Qwilfish|Super Fang|p1a: Rhyperior|[miss]
+expect |rng|100|94
+expect |-miss|p2a: Qwilfish|p1a: Rhyperior
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Qwilfish|Poltergeist|p1a: Rhyperior|[miss]
+expect |rng|100|98
+expect |-miss|p2a: Qwilfish|p1a: Rhyperior
+expect |move|p1a: Rhyperior|Blast Burn|p2a: Qwilfish
+expect |rng|100|63
+expect |rng|24|4
+expect |rng|16|7
+expect |-resisted|p2a: Qwilfish|1
+expect |split|p2
+expect |-damage|p2a: Qwilfish|110/140
+expect |-damage|p2a: Qwilfish|78/100
+expect |-mustrecharge|p1a: Rhyperior
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|140/140
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|100/100
+expect |cant|p1a: Rhyperior|recharge
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Qwilfish|Qwilfish, L50, M|110/140
+expect |switch|p2a: Qwilfish|Qwilfish, L50, M|78/100
+expect |-ability|p2a: Qwilfish|Intimidate|boost
+expect |-unboost|p1a: Rhyperior|atk|1
+expect |move|p1a: Rhyperior|Brutal Swing|p2a: Qwilfish
+expect |rng|100|18
+expect |rng|24|3
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Qwilfish|85/140
+expect |-damage|p2a: Qwilfish|60/100
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Qwilfish|Poltergeist|p1a: Rhyperior
+expect |rng|100|56
+expect |-activate|p1a: Rhyperior|move: Poltergeist|Black Belt
+expect |rng|24|12
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Rhyperior|148/193
+expect |-damage|p1a: Rhyperior|76/100
+expect |move|p1a: Rhyperior|Brutal Swing|p2a: Qwilfish
+expect |rng|100|39
+expect |rng|24|1
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Qwilfish|60/140
+expect |-damage|p2a: Qwilfish|42/100
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|178/178
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|100/100
+expect |-ability|p2a: Hawlucha|Mold Breaker
+expect |move|p1a: Rhyperior|Blast Burn|p2a: Hawlucha
+expect |rng|100|47
+expect |rng|24|22
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Hawlucha|108/178
+expect |-damage|p2a: Hawlucha|60/100
+expect |-mustrecharge|p1a: Rhyperior
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Qwilfish|Qwilfish, L50, M|60/140
+expect |switch|p2a: Qwilfish|Qwilfish, L50, M|42/100
+expect |-ability|p2a: Qwilfish|Intimidate|boost
+expect |-unboost|p1a: Rhyperior|atk|1
+expect |cant|p1a: Rhyperior|recharge
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Dragonite|Dragonite, L50, M|174/174
+expect |switch|p1a: Dragonite|Dragonite, L50, M|100/100
+expect |move|p2a: Qwilfish|Fire Lash|p1a: Dragonite
+expect |rng|100|51
+expect |rng|24|20
+expect |rng|16|10
+expect |-resisted|p1a: Dragonite|1
+expect |split|p1
+expect |-damage|p1a: Dragonite|164/174
+expect |-damage|p1a: Dragonite|94/100
+expect |rng|100|7
+expect |-unboost|p1a: Dragonite|def|1
+expect |-enditem|p1a: Dragonite|White Herb
+expect |-clearnegativeboost|p1a: Dragonite|[silent]
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p1a: Dragonite|Spikes|p2a: Qwilfish
+expect |-sidestart|p2: p2|Spikes
+expect |move|p2a: Qwilfish|Spore|p1a: Dragonite
+expect |rng|100|87
+expect |-status|p1a: Dragonite|slp|[from] move: Spore
+expect |rng|3|0
+expect |
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |cant|p1a: Dragonite|slp
+expect |move|p2a: Qwilfish|Super Fang|p1a: Dragonite
+expect |rng|100|54
+expect |split|p1
+expect |-damage|p1a: Dragonite|82/174 slp
+expect |-damage|p1a: Dragonite|47/100 slp
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|108/178
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|60/100
+expect |-ability|p2a: Hawlucha|Mold Breaker
+expect |-curestatus|p1a: Dragonite|slp|[msg]
+expect |move|p1a: Dragonite|Misty Terrain|p1a: Dragonite
+expect |-fieldstart|move: Misty Terrain
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Mr. Bubbles|Flapple, L50, F|95/156
+expect |switch|p1a: Mr. Bubbles|Flapple, L50, F|60/100
+expect |move|p2a: Hawlucha|Ice Punch|p1a: Mr. Bubbles
+expect |rng|100|99
+expect |rng|24|19
+expect |rng|16|0
+expect |-supereffective|p1a: Mr. Bubbles|2
+expect |split|p1
+expect |-damage|p1a: Mr. Bubbles|0 fnt
+expect |-damage|p1a: Mr. Bubbles|0 fnt
+expect |rng|100|66
+expect |faint|p1a: Mr. Bubbles
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Rhyperior|Rhyperior, L50, F|148/193
+expect |switch|p1a: Rhyperior|Rhyperior, L50, F|76/100
+expect |turn|15
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|140/140
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|100/100
+expect |split|p2
+expect |-damage|p2a: Alcremie|123/140|[from] Spikes
+expect |-damage|p2a: Alcremie|87/100|[from] Spikes
+expect |move|p1a: Rhyperior|Baby-Doll Eyes|p2a: Alcremie
+expect |rng|100|40
+expect |-unboost|p2a: Alcremie|atk|1
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|108/178
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|60/100
+expect |-ability|p2a: Hawlucha|Mold Breaker
+expect |move|p1a: Rhyperior|Brutal Swing|p2a: Hawlucha
+expect |rng|100|75
+expect |rng|24|3
+expect |rng|16|10
+expect |-resisted|p2a: Hawlucha|1
+expect |split|p2
+expect |-damage|p2a: Hawlucha|90/178
+expect |-damage|p2a: Hawlucha|50/100g
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p2a: Hawlucha|Ice Punch|p1a: Rhyperior
+expect |rng|100|45
+expect |rng|24|8
+expect |rng|16|10
+expect |-supereffective|p1a: Rhyperior|1
+expect |split|p1
+expect |-damage|p1a: Rhyperior|98/193
+expect |-damage|p1a: Rhyperior|50/100g
+expect |rng|100|83
+expect |move|p1a: Rhyperior|Brutal Swing|p2a: Hawlucha
+expect |rng|100|28
+expect |rng|24|2
+expect |rng|16|9
+expect |-resisted|p2a: Hawlucha|1
+expect |split|p2
+expect |-damage|p2a: Hawlucha|71/178
+expect |-damage|p2a: Hawlucha|39/100
+expect |
+expect |-fieldend|Misty Terrain
+expect |upkeep
+expect |turn|18
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Qwilfish|Qwilfish, L50, M|60/140
+expect |switch|p2a: Qwilfish|Qwilfish, L50, M|42/100
+expect |split|p2
+expect |-damage|p2a: Qwilfish|43/140|[from] Spikes
+expect |-damage|p2a: Qwilfish|30/100|[from] Spikes
+expect |-ability|p2a: Qwilfish|Intimidate|boost
+expect |-unboost|p1a: Rhyperior|atk|1
+expect |split|p1
+expect |switch|p1a: Dragonite|Dragonite, L50, M|82/174
+expect |switch|p1a: Dragonite|Dragonite, L50, M|47/100
+expect |
+expect |upkeep
+expect |turn|19
+expect |
+expect |t:|
+expect |move|p1a: Dragonite|Venoshock|p2a: Qwilfish
+expect |rng|100|22
+expect |rng|24|3
+expect |rng|16|11
+expect |-resisted|p2a: Qwilfish|1
+expect |split|p2
+expect |-damage|p2a: Qwilfish|27/140
+expect |-damage|p2a: Qwilfish|19/100
+expect |move|p2a: Qwilfish|Fire Lash|p1a: Dragonite
+expect |rng|100|41
+expect |rng|24|10
+expect |rng|16|5
+expect |-resisted|p1a: Dragonite|1
+expect |split|p1
+expect |-damage|p1a: Dragonite|61/174
+expect |-damage|p1a: Dragonite|35/100
+expect |rng|100|9
+expect |-unboost|p1a: Dragonite|def|1
+expect |
+expect |upkeep
+expect |turn|20
+expect |
+expect |t:|
+expect |move|p1a: Dragonite|Spikes|p2a: Qwilfish
+expect |-sidestart|p2: p2|Spikes
+expect |move|p2a: Qwilfish|Poltergeist||[still]
+expect |-fail|p2a: Qwilfish
+expect |
+expect |upkeep
+expect |turn|21
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Rhyperior|Rhyperior, L50, F|98/193
+expect |switch|p1a: Rhyperior|Rhyperior, L50, F|50/100g
+expect |split|p2
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|71/178
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|39/100
+expect |-ability|p2a: Hawlucha|Mold Breaker
+expect |
+expect |upkeep
+expect |turn|22
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|123/140
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|87/100
+expect |split|p2
+expect |-damage|p2a: Alcremie|100/140|[from] Spikes
+expect |-damage|p2a: Alcremie|71/100|[from] Spikes
+expect |move|p1a: Rhyperior|Brutal Swing|p2a: Alcremie
+expect |rng|100|25
+expect |rng|24|17
+expect |rng|16|7
+expect |-resisted|p2a: Alcremie|1
+expect |split|p2
+expect |-damage|p2a: Alcremie|83/140
+expect |-damage|p2a: Alcremie|59/100
+expect |
+expect |upkeep
+expect |turn|23
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|71/178
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|39/100
+expect |-ability|p2a: Hawlucha|Mold Breaker
+expect |move|p1a: Rhyperior|Baby-Doll Eyes|p2a: Hawlucha
+expect |rng|100|19
+expect |-unboost|p2a: Hawlucha|atk|1
+expect |
+expect |upkeep
+expect |turn|24
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Qwilfish|Qwilfish, L50, M|27/140
+expect |switch|p2a: Qwilfish|Qwilfish, L50, M|19/100
+expect |split|p2
+expect |-damage|p2a: Qwilfish|4/140|[from] Spikes
+expect |-damage|p2a: Qwilfish|2/100|[from] Spikes
+expect |-ability|p2a: Qwilfish|Intimidate|boost
+expect |-unboost|p1a: Rhyperior|atk|1
+expect |move|p1a: Rhyperior|Blast Burn|p2a: Qwilfish
+expect |rng|100|54
+expect |rng|24|1
+expect |rng|16|1
+expect |-resisted|p2a: Qwilfish|1
+expect |split|p2
+expect |-damage|p2a: Qwilfish|0 fnt
+expect |-damage|p2a: Qwilfish|0 fnt
+expect |-mustrecharge|p1a: Rhyperior
+expect |faint|p2a: Qwilfish
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|71/178
+expect |switch|p2a: Hawlucha|Hawlucha, L50, F|39/100
+expect |-ability|p2a: Hawlucha|Mold Breaker
+expect |turn|25
+expect |
+expect |t:|
+expect |move|p2a: Hawlucha|Ice Punch|p1a: Rhyperior
+expect |rng|100|66
+expect |rng|24|11
+expect |rng|16|9
+expect |-supereffective|p1a: Rhyperior|1
+expect |split|p1
+expect |-damage|p1a: Rhyperior|48/193
+expect |-damage|p1a: Rhyperior|24/100
+expect |rng|100|70
+expect |cant|p1a: Rhyperior|recharge
+expect |
+expect |upkeep
+expect |turn|26
+expect |
+expect |t:|
+expect |move|p1a: Rhyperior|Baby-Doll Eyes|p2a: Hawlucha
+expect |rng|100|68
+expect |-unboost|p2a: Hawlucha|atk|1
+expect |move|p2a: Hawlucha|Ice Punch|p1a: Rhyperior
+expect |rng|100|52
+expect |rng|24|22
+expect |rng|16|9
+expect |-supereffective|p1a: Rhyperior|1
+expect |split|p1
+expect |-damage|p1a: Rhyperior|14/193
+expect |-damage|p1a: Rhyperior|7/100
+expect |rng|100|76
+expect |
+expect |upkeep
+expect |turn|27
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Dragonite|Dragonite, L50, M|61/174
+expect |switch|p1a: Dragonite|Dragonite, L50, M|35/100
+expect |move|p2a: Hawlucha|Ice Punch|p1a: Dragonite
+expect |rng|100|16
+expect |rng|24|18
+expect |rng|16|13
+expect |-supereffective|p1a: Dragonite|2
+expect |split|p1
+expect |-damage|p1a: Dragonite|0 fnt
+expect |-damage|p1a: Dragonite|0 fnt
+expect |rng|100|21
+expect |faint|p1a: Dragonite
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Rhyperior|Rhyperior, L50, F|14/193
+expect |switch|p1a: Rhyperior|Rhyperior, L50, F|7/100
+expect |turn|28
+expect |
+expect |t:|
+expect |move|p2a: Hawlucha|Ice Punch|p1a: Rhyperior
+expect |rng|100|11
+expect |rng|24|6
+expect |rng|16|13
+expect |-supereffective|p1a: Rhyperior|1
+expect |split|p1
+expect |-damage|p1a: Rhyperior|0 fnt
+expect |-damage|p1a: Rhyperior|0 fnt
+expect |rng|100|18
+expect |faint|p1a: Rhyperior
+expect |
+expect |win|p2

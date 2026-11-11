@@ -1,0 +1,83 @@
+# championsvgc-sodium-2111030-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@option keep-alive
+@write
+>start {"formatid":"gen9championsvgc2026regmb","seed":"sodium,655a32a48e971eb8","rated":"Tournament battle"}
+>player p1 {"name":"Alice","team":"Vivillon-Fancy|||ShieldDust|HealBell,MistyExplosion,FirstImpression|Brave|1,14,1,3,9,26|F|||50|,,,,,Flying]X|Milotic|Magnet|CuteCharm|WoodHammer|Careful|26,5,,31,3,1|F|||50|,,,,,Stellar]Luxray||FocusSash|Intimidate|Quash|Serious|20,6,20,3,6,10||||50|,,,,,Dragon]Slowking-Galar||OccaBerry|OwnTempo|EerieSpell,StealthRock|Calm|2,32,5,19,1,7|F||S|50|,,,,,Bug]Steelix||Steelixite|Sturdy|Inferno|Hasty|5,21,3,13,,24|||S|50|,,,,,Poison]Samurott||BlackBelt|Torrent|Taunt,Entrainment,BulletPunch|Relaxed|1,31,8,2,1,18|F|||50|,,,,,Stellar","avatar":"lucas"}
+>player p1 {"name":"Alice"}
+>player p2 {"name":"Bob","team":[{"name":"ThisNameIsFarTooLongToKeep","species":"Milotic","item":"Silk Scarf","ability":"Cute Charm","moves":["Jet Punch"],"nature":"Docile","evs":{"hp":7,"atk":23,"def":0,"spa":0,"spd":28,"spe":8},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug"},{"name":"Stunfisk","species":"Stunfisk","item":"Wide Lens","ability":"Static","moves":["Meteor Mash","Explosion","Stone Axe","Pain Split"],"nature":"Careful","evs":{"hp":4,"atk":18,"def":8,"spa":7,"spd":5,"spe":20},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric"},{"name":"Jolteon","species":"Jolteon","item":"Damp Rock","ability":"Quick Feet","moves":["Swords Dance","Fire Punch","U-turn"],"nature":"Bashful","evs":{"hp":7,"atk":4,"def":16,"spa":5,"spd":10,"spe":1},"gender":"M","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug"},{"name":"Conkeldurr","species":"Conkeldurr","item":"","ability":"Iron Fist","moves":["Electro Ball"],"nature":"Bold","evs":{"hp":1,"atk":26,"def":0,"spa":22,"spd":1,"spe":16},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water"},{"name":"Polteageist-Antique","species":"Polteageist-Antique","item":"Babiri Berry","ability":"Weak Armor","moves":["Flamethrower","Rock Polish"],"nature":"Hardy","evs":{"hp":0,"atk":25,"def":25,"spa":2,"spd":10,"spe":1},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock"},{"name":"Chomp","species":"Scizor","item":"Scizorite","ability":"Technician","moves":["Spite","Stone Axe","Matcha Gotcha"],"nature":"Naughty","evs":{"hp":32,"atk":2,"def":17,"spa":12,"spd":3,"spe":0},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug"}],"rating":1500}
+>p1 team 2314
+>p2 switch 2
+>forcelose p2
+>p1 move 1
+>p1 move 1
+>chat after the end
+>forcewin p1
+>tiebreak
+>requestlog
+>p2 undo
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You need a teampreview response
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+requesteddata
+>start {"formatid":"gen9championsvgc2026regmb","seed":"sodium,655a32a48e971eb8","rated":"Tournament battle"}
+>player p1 {"name":"Alice","team":"Vivillon-Fancy|||ShieldDust|HealBell,MistyExplosion,FirstImpression|Brave|1,14,1,3,9,26|F|||50|,,,,,Flying]X|Milotic|Magnet|CuteCharm|WoodHammer|Careful|26,5,,31,3,1|F|||50|,,,,,Stellar]Luxray||FocusSash|Intimidate|Quash|Serious|20,6,20,3,6,10||||50|,,,,,Dragon]Slowking-Galar||OccaBerry|OwnTempo|EerieSpell,StealthRock|Calm|2,32,5,19,1,7|F||S|50|,,,,,Bug]Steelix||Steelixite|Sturdy|Inferno|Hasty|5,21,3,13,,24|||S|50|,,,,,Poison]Samurott||BlackBelt|Torrent|Taunt,Entrainment,BulletPunch|Relaxed|1,31,8,2,1,18|F|||50|,,,,,Stellar","avatar":"lucas"}
+>player p2 {"name":"Bob","team":"ThisNameIsFarTooLongToKeep|Milotic|SilkScarf|CuteCharm|JetPunch|Docile|7,23,,,28,8|F|||50|,,,,,Bug]Stunfisk||WideLens|Static|MeteorMash,Explosion,StoneAxe,PainSplit|Careful|4,18,8,7,5,20||||50|,,,,,Electric]Jolteon||DampRock|QuickFeet|SwordsDance,FirePunch,Uturn|Bashful|7,4,16,5,10,1|M||S|50|,,,,,Bug]Conkeldurr|||IronFist|ElectroBall|Bold|1,26,,22,1,16|F|||50|,,,,,Water]Polteageist|PolteageistAntique|BabiriBerry|WeakArmor|Flamethrower,RockPolish|Hardy|,25,25,2,10,1||||50|,,,,,Rock]Chomp|Scizor|Scizorite|Technician|Spite,StoneAxe,MatchaGotcha|Naughty|32,2,17,12,3,||||50|,,,,,Bug","rating":1500}
+>forcelose p2
+>chat after the end
+>forcewin p1
+@message
+update
+|t:|
+|gametype|doubles
+|player|p1|Alice|lucas|
+|player|p2|Bob||1500
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rated|Tournament battle
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Vivillon-Fancy, L50, F|
+|poke|p1|Milotic, L50, F|
+|poke|p1|Luxray, L50, M|
+|poke|p1|Slowking-Galar, L50, F, shiny|
+|poke|p1|Steelix, L50, M, shiny|
+|poke|p1|Samurott, L50, F|
+|poke|p2|Milotic, L50, F|
+|poke|p2|Stunfisk, L50, F|
+|poke|p2|Jolteon, L50, M, shiny|
+|poke|p2|Conkeldurr, L50, F|
+|poke|p2|Polteageist-Antique, L50|
+|poke|p2|Scizor, L50, M|
+|teampreview|4
+|split|p1
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+|split|p2
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+|
+|win|Alice
+|chat|after the end
+@message
+sideupdate
+p1
+|request|null
+@message
+sideupdate
+p2
+|request|null
+@message
+end
+{"winner":"Alice","seed":"sodium,655a32a48e971eb8","turns":0,"p1":"Alice","p2":"Bob","p1team":[{"name":"Vivillon","species":"Vivillon-Fancy","item":"","ability":"Shield Dust","moves":["Heal Bell","Misty Explosion","First Impression"],"nature":"Brave","evs":{"hp":1,"atk":14,"def":1,"spa":3,"spd":9,"spe":26},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"X","species":"Milotic","item":"Magnet","ability":"Cute Charm","moves":["Wood Hammer"],"nature":"Careful","evs":{"hp":26,"atk":5,"def":0,"spa":31,"spd":3,"spe":1},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Luxray","species":"Luxray","item":"Focus Sash","ability":"Intimidate","moves":["Quash"],"nature":"Serious","evs":{"hp":20,"atk":6,"def":20,"spa":3,"spd":6,"spe":10},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Slowking","species":"Slowking-Galar","item":"Occa Berry","ability":"Own Tempo","moves":["Eerie Spell","Stealth Rock"],"nature":"Calm","evs":{"hp":2,"atk":32,"def":5,"spa":19,"spd":1,"spe":7},"gender":"F","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Steelix","species":"Steelix","item":"Steelixite","ability":"Sturdy","moves":["Inferno"],"nature":"Hasty","evs":{"hp":5,"atk":21,"def":3,"spa":13,"spd":0,"spe":24},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Samurott","species":"Samurott","item":"Black Belt","ability":"Torrent","moves":["Taunt","Entrainment","Bullet Punch"],"nature":"Relaxed","evs":{"hp":1,"atk":31,"def":8,"spa":2,"spd":1,"spe":18},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"ThisNameIsFarTooLongToKeep","species":"Milotic","item":"Silk Scarf","ability":"Cute Charm","moves":["Jet Punch"],"nature":"Docile","evs":{"hp":7,"atk":23,"def":0,"spa":0,"spd":28,"spe":8},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Stunfisk","species":"Stunfisk","item":"Wide Lens","ability":"Static","moves":["Meteor Mash","Explosion","Stone Axe","Pain Split"],"nature":"Careful","evs":{"hp":4,"atk":18,"def":8,"spa":7,"spd":5,"spe":20},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Jolteon","species":"Jolteon","item":"Damp Rock","ability":"Quick Feet","moves":["Swords Dance","Fire Punch","U-turn"],"nature":"Bashful","evs":{"hp":7,"atk":4,"def":16,"spa":5,"spd":10,"spe":1},"gender":"M","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Conkeldurr","species":"Conkeldurr","item":"","ability":"Iron Fist","moves":["Electro Ball"],"nature":"Bold","evs":{"hp":1,"atk":26,"def":0,"spa":22,"spd":1,"spe":16},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Polteageist","species":"Polteageist-Antique","item":"Babiri Berry","ability":"Weak Armor","moves":["Flamethrower","Rock Polish"],"nature":"Hardy","evs":{"hp":0,"atk":25,"def":25,"spa":2,"spd":10,"spe":1},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Scizor","item":"Scizorite","ability":"Technician","moves":["Spite","Stone Axe","Matcha Gotcha"],"nature":"Naughty","evs":{"hp":32,"atk":2,"def":17,"spa":12,"spd":3,"spe":0},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[6,6],"inputLog":[">start {\"formatid\":\"gen9championsvgc2026regmb\",\"seed\":\"sodium,655a32a48e971eb8\",\"rated\":\"Tournament battle\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Vivillon-Fancy|||ShieldDust|HealBell,MistyExplosion,FirstImpression|Brave|1,14,1,3,9,26|F|||50|,,,,,Flying]X|Milotic|Magnet|CuteCharm|WoodHammer|Careful|26,5,,31,3,1|F|||50|,,,,,Stellar]Luxray||FocusSash|Intimidate|Quash|Serious|20,6,20,3,6,10||||50|,,,,,Dragon]Slowking-Galar||OccaBerry|OwnTempo|EerieSpell,StealthRock|Calm|2,32,5,19,1,7|F||S|50|,,,,,Bug]Steelix||Steelixite|Sturdy|Inferno|Hasty|5,21,3,13,,24|||S|50|,,,,,Poison]Samurott||BlackBelt|Torrent|Taunt,Entrainment,BulletPunch|Relaxed|1,31,8,2,1,18|F|||50|,,,,,Stellar\",\"avatar\":\"lucas\"}",">player p2 {\"name\":\"Bob\",\"team\":\"ThisNameIsFarTooLongToKeep|Milotic|SilkScarf|CuteCharm|JetPunch|Docile|7,23,,,28,8|F|||50|,,,,,Bug]Stunfisk||WideLens|Static|MeteorMash,Explosion,StoneAxe,PainSplit|Careful|4,18,8,7,5,20||||50|,,,,,Electric]Jolteon||DampRock|QuickFeet|SwordsDance,FirePunch,Uturn|Bashful|7,4,16,5,10,1|M||S|50|,,,,,Bug]Conkeldurr|||IronFist|ElectroBall|Bold|1,26,,22,1,16|F|||50|,,,,,Water]Polteageist|PolteageistAntique|BabiriBerry|WeakArmor|Flamethrower,RockPolish|Hardy|,25,25,2,10,1||||50|,,,,,Rock]Chomp|Scizor|Scizorite|Technician|Spite,StoneAxe,MatchaGotcha|Naughty|32,2,17,12,3,||||50|,,,,,Bug\",\"rating\":1500}",">forcelose p2",">chat after the end",">forcewin p1"]}

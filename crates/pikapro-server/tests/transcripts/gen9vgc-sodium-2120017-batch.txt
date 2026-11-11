@@ -1,0 +1,333 @@
+# gen9vgc-sodium-2120017-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay spectator
+@write
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"sodium,74d8a21b7e624c62273dabadc722bbb4","p1":{"name":"Alice","team":"Solgaleo||FlamePlate|FullMetalBody|DracoMeteor|Naughty|161,60,3,43,150,70|||S|50|,,,,,Poison]Teddiursa||CloverSweet|QuickFeet|SpikyShield,Crabhammer,FlareBlitz|Brave|184,,29,,249,48|||S|50|,,,,,Ghost]Wartortle|||Torrent|PoisonSting,Discharge,PoisonFang|Timid|49,38,172,89,9,153|||S|50|,,,,,Normal]Chimchar||SplashPlate|Blaze|WorrySeed|Bashful|20,46,62,86,247,22|M|||50|,,,,,Rock]Staraptor||FairyFeather|Reckless|BlueFlare,DoubleKick|Adamant|171,25,86,101,91,14|M|||50|,,,,,Rock]Magby|||VitalSpirit|CalmMind,Pound|Modest|43,112,85,39,194,20|F|||50|,,,,,Fighting","rating":1500},"p2":{"name":"Bob","team":"Zoë|Arctibax|QuickBall|IceBody|GrassyTerrain,IronDefense|Timid|142,21,123,38,60,82|F|||50|,,,,,Psychic]Greedent||ColburBerry|Gluttony|IceShard,MakeItRain|Rash|55,203,53,22,95,21|M|||50|,,,,,Ground]Sir Hops-a-Lot|ArceusGrass|ChestoBerry|Multitype|GlaiveRush,HammerArm,GastroAcid,Dig|Sassy|175,29,6,242,19,37||||50|,,,,,Ghost]Shelgon|||RockHead|FuryCutter,RainDance,HeatWave|Lax|115,178,131,16,17,51||||50|,,,,,Ground]Chomp|Slowbro||Regenerator|Taunt,DrumBeating,Supersonic,FocusPunch|Careful|194,110,73,5,3,124|F|||50|,,,,,Rock]Oinkologne||LuminousMoss|ThickFat|Synthesis,FakeTears,DragonAscent|Quiet|9,247,153,17,21,32|M|||50|,,,,,Fighting"}}
+@write
+# a comment
+>p1 team 3,1,4,2,5,6
+@write
+>p2 team 1352
+@write
+>p1 move 3 1, switch 3
+@write
+>p1 undo
+>p1 move 1 -2 terastallize, switch 3
+@write
+>p2 switch 3, move 4 2
+# a comment
+>p1 move 1 -2, move 1 2
+@write
+>p2 move 1 -2, move 1
+@write
+>p1 switch 7
+@write
+>p1 undo
+@write
+# a comment
+>p1 undo
+>p1 pass,switch 3
+@write
+>p1 move Poison Sting -2,move dracometeor +2
+@write
+>p1 switch 1
+@write
+>p2 move Taunt 3 dynamax
+@write
+>p2 undo
+@write
+
+>p1 move 1 -2, switch 4
+@write
+>p2 switch 3, move 1 -1
+@write
+>p1 move 2, move 1
+>p1 move 2, move 1
+@write
+>p2 move 2, move 2 -1
+>p2 switch 3
+@write
+>p1 move 3 2, move 2 -1
+>p2 default
+@write
+>p2 move 1 1, move 1 2
+>p1 undo
+@write
+>p1 move poisonsting -2,move 1
+@write
+>p1 switch 4, move 3 -1
+@write
+>p2 move 4 2 terastallize, move 4 -1
+# a comment
+>p1 pass, switch 4
+@write
+>p2 move 4 1, move 1
+@write
+>p1 switch Solgaleo
+>p1 move 1 2, move 3 2
+@write
+>p1 default
+>p1 undo
+@write
+
+>p1 switch 5
+@write
+>p1 move dracometeor 2,move Poison Fang -1
+>p2 move 4 2, move 2 2
+@write
+
+>p2 move 1 -2, move 4 -1
+@write
+>p1 move dracometeor
+@write
+
+>p1 move 1 2, pass
+>p1 switch 3
+@write
+>p1 move 1 1, pass
+@write
+>p2 move 2 1, move 4 -1
+>p1 move 1 2, pass
+@write
+>p2 move 4 1, move 1
+@write
+>p1 move 1
+@message
+|t:|
+|gametype|doubles
+|player|p1|Alice||1500
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Solgaleo, L50|
+|poke|p1|Teddiursa, L50, M|
+|poke|p1|Wartortle, L50, F|
+|poke|p1|Chimchar, L50, M|
+|poke|p1|Staraptor, L50, M|
+|poke|p1|Magby, L50, F|
+|poke|p2|Arctibax, L50, F|
+|poke|p2|Greedent, L50, M|
+|poke|p2|Arceus-Grass, L50|
+|poke|p2|Shelgon, L50, F|
+|poke|p2|Slowbro, L50, F|
+|poke|p2|Oinkologne, L50, M|
+|teampreview|4
+@message
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Wartortle|Wartortle, L50, F, shiny|140/140
+|switch|p1b: Solgaleo|Solgaleo, L50, shiny|232/232
+|switch|p2a: Zoë|Arctibax, L50, F|183/183
+|switch|p2b: Sir Hops-a-Lot|Arceus-Grass, L50|217/217
+|-start|p2b: Sir Hops-a-Lot|typechange|Normal|[silent]
+|turn|1
+@message
+|
+|t:|
+|switch|p1b: Chimchar|Chimchar, L50, M|122/122
+|switch|p2a: Chomp|Slowbro, L50, F|194/194
+|-terastallize|p1a: Wartortle|Normal
+|move|p2b: Sir Hops-a-Lot|Dig||[still]
+|-prepare|p2b: Sir Hops-a-Lot|Dig
+|move|p1a: Wartortle|Poison Sting|p1b: Chimchar
+|-damage|p1b: Chimchar|114/122
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|move|p2b: Sir Hops-a-Lot|Dig|p1b: Chimchar|[from] lockedmove
+|-supereffective|p1b: Chimchar
+|-damage|p1b: Chimchar|0 fnt
+|faint|p1b: Chimchar
+|move|p1a: Wartortle|Poison Sting|p1: Chimchar|[notarget]
+|-fail|p1a: Wartortle
+|move|p2a: Chomp|Taunt|p2b: Sir Hops-a-Lot
+|-start|p2b: Sir Hops-a-Lot|move: Taunt
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1b: Solgaleo|Solgaleo, L50, shiny|232/232
+|turn|3
+@message
+|
+|t:|
+|switch|p1b: Teddiursa|Teddiursa, L50, M, shiny|158/158
+|switch|p2a: Zoë|Arctibax, L50, F|183/183
+|move|p2b: Sir Hops-a-Lot|Glaive Rush|p2a: Zoë
+|-supereffective|p2a: Zoë
+|-damage|p2a: Zoë|49/183
+|-singlemove|p2b: Sir Hops-a-Lot|Glaive Rush|[silent]
+|move|p1a: Wartortle|Poison Sting|p1b: Teddiursa
+|-damage|p1b: Teddiursa|150/158
+|-status|p1b: Teddiursa|psn
+|
+|-damage|p1b: Teddiursa|131/158 psn|[from] psn
+|upkeep
+|turn|4
+@message
+|
+|t:|
+|move|p1b: Teddiursa|Spiky Shield|p1b: Teddiursa
+|-singleturn|p1b: Teddiursa|move: Protect
+|move|p2b: Sir Hops-a-Lot|Hammer Arm|p2a: Zoë
+|-supereffective|p2a: Zoë
+|-damage|p2a: Zoë|0 fnt
+|-unboost|p2b: Sir Hops-a-Lot|spe|1
+|faint|p2a: Zoë
+|move|p1a: Wartortle|Discharge|p2b: Sir Hops-a-Lot|[spread] p2b
+|-activate|p1b: Teddiursa|move: Protect
+|-damage|p2b: Sir Hops-a-Lot|201/217
+|-status|p2b: Sir Hops-a-Lot|par
+|
+|-damage|p1b: Teddiursa|112/158 psn|[from] psn
+|upkeep
+|
+|t:|
+|switch|p2a: Chomp|Slowbro, L50, F|194/194
+|turn|5
+@message
+|
+|t:|
+|move|p1a: Wartortle|Poison Fang|p2b: Sir Hops-a-Lot
+|-crit|p2b: Sir Hops-a-Lot
+|-damage|p2b: Sir Hops-a-Lot|181/217 par
+|move|p1b: Teddiursa|Crabhammer|p1a: Wartortle
+|-damage|p1a: Wartortle|100/140
+|move|p2a: Chomp|Taunt|p1a: Wartortle
+|-start|p1a: Wartortle|move: Taunt
+|move|p2b: Sir Hops-a-Lot|Glaive Rush|p1a: Wartortle
+|-damage|p1a: Wartortle|41/140
+|-singlemove|p2b: Sir Hops-a-Lot|Glaive Rush|[silent]
+|
+|-damage|p1b: Teddiursa|93/158 psn|[from] psn
+|-end|p2b: Sir Hops-a-Lot|move: Taunt
+|upkeep
+|turn|6
+@message
+|
+|t:|
+|move|p1b: Teddiursa|Spiky Shield|p1b: Teddiursa
+|-singleturn|p1b: Teddiursa|move: Protect
+|move|p1a: Wartortle|Poison Sting|p1b: Teddiursa
+|-activate|p1b: Teddiursa|move: Protect
+|move|p2a: Chomp|Taunt||[still]
+|-fail|p2a: Chomp
+|move|p2b: Sir Hops-a-Lot|Glaive Rush|p1b: Teddiursa
+|-activate|p1b: Teddiursa|move: Protect
+|-damage|p2b: Sir Hops-a-Lot|154/217 par|[from] Spiky Shield|[of] p1b: Teddiursa
+|
+|-damage|p1b: Teddiursa|74/158 psn|[from] psn
+|upkeep
+|turn|7
+@message
+|
+|t:|
+|switch|p1a: Solgaleo|Solgaleo, L50, shiny|232/232
+|-terastallize|p2a: Chomp|Rock
+|-singleturn|p2a: Chomp|move: Focus Punch
+|move|p1b: Teddiursa|Flare Blitz|p1a: Solgaleo
+|-supereffective|p1a: Solgaleo
+|-damage|p1a: Solgaleo|144/232
+|-status|p1a: Solgaleo|brn
+|-damage|p1b: Teddiursa|45/158 psn|[from] Recoil
+|move|p2b: Sir Hops-a-Lot|Dig||[still]
+|-prepare|p2b: Sir Hops-a-Lot|Dig
+|move|p2a: Chomp|Focus Punch|p1b: Teddiursa
+|-supereffective|p1b: Teddiursa
+|-damage|p1b: Teddiursa|0 fnt
+|faint|p1b: Teddiursa
+|
+|-damage|p1a: Solgaleo|130/232 brn|[from] brn
+|upkeep
+|
+|t:|
+|switch|p1b: Wartortle|Wartortle, L50, F, shiny, tera:Normal|41/140
+|turn|8
+@message
+|
+|t:|
+|-singleturn|p2a: Chomp|move: Focus Punch
+|move|p1a: Solgaleo|Draco Meteor|p2b: Sir Hops-a-Lot|[miss]
+|-miss|p1a: Solgaleo|p2b: Sir Hops-a-Lot
+|move|p1b: Wartortle|Poison Fang|p2b: Sir Hops-a-Lot|[miss]
+|-miss|p1b: Wartortle|p2b: Sir Hops-a-Lot
+|move|p2b: Sir Hops-a-Lot|Dig|p2a: Chomp|[from] lockedmove
+|-supereffective|p2a: Chomp
+|-damage|p2a: Chomp|126/194
+|cant|p2a: Chomp|Focus Punch|Focus Punch
+|
+|-damage|p1a: Solgaleo|116/232 brn|[from] brn
+|upkeep
+|turn|9
+@message
+|
+|t:|
+|-singleturn|p2a: Chomp|move: Focus Punch
+|move|p1a: Solgaleo|Draco Meteor|p2b: Sir Hops-a-Lot
+|-damage|p2b: Sir Hops-a-Lot|104/217 par
+|-unboost|p1a: Solgaleo|spa|2
+|move|p1b: Wartortle|Poison Fang|p1a: Solgaleo
+|-immune|p1a: Solgaleo
+|move|p2b: Sir Hops-a-Lot|Hammer Arm|p1b: Wartortle
+|-supereffective|p1b: Wartortle
+|-damage|p1b: Wartortle|0 fnt
+|-unboost|p2b: Sir Hops-a-Lot|spe|1
+|faint|p1b: Wartortle
+|move|p2a: Chomp|Focus Punch|p1a: Solgaleo
+|-damage|p1a: Solgaleo|61/232 brn
+|
+|-damage|p1a: Solgaleo|47/232 brn|[from] brn
+|upkeep
+|turn|10
+@message
+|
+|t:|
+|move|p1a: Solgaleo|Draco Meteor|p2b: Sir Hops-a-Lot
+|-damage|p2b: Sir Hops-a-Lot|81/217 par
+|-unboost|p1a: Solgaleo|spa|2
+|move|p2a: Chomp|Taunt|p2b: Sir Hops-a-Lot
+|-start|p2b: Sir Hops-a-Lot|move: Taunt
+|cant|p2b: Sir Hops-a-Lot|par
+|
+|-damage|p1a: Solgaleo|33/232 brn|[from] brn
+|upkeep
+|turn|11
+@message
+|
+|t:|
+|move|p1a: Solgaleo|Draco Meteor|p2a: Chomp
+|-damage|p2a: Chomp|102/194
+|-unboost|p1a: Solgaleo|spa|2
+|move|p2a: Chomp|Drum Beating|p1a: Solgaleo
+|-resisted|p1a: Solgaleo
+|-damage|p1a: Solgaleo|20/232 brn
+|move|p2b: Sir Hops-a-Lot|Dig||[still]
+|-prepare|p2b: Sir Hops-a-Lot|Dig
+|
+|-damage|p1a: Solgaleo|6/232 brn|[from] brn
+|upkeep
+|turn|12
+@message
+|
+|t:|
+|-singleturn|p2a: Chomp|move: Focus Punch
+|move|p1a: Solgaleo|Draco Meteor|p2b: Sir Hops-a-Lot|[miss]
+|-miss|p1a: Solgaleo|p2b: Sir Hops-a-Lot
+|move|p2b: Sir Hops-a-Lot|Dig|p2a: Chomp|[from] lockedmove
+|-supereffective|p2a: Chomp
+|-damage|p2a: Chomp|36/194
+|cant|p2a: Chomp|Focus Punch|Focus Punch
+|
+|-damage|p1a: Solgaleo|0 fnt|[from] brn
+|faint|p1a: Solgaleo
+|
+|win|Bob

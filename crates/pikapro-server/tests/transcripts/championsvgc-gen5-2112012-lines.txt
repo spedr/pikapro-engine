@@ -1,0 +1,70 @@
+# championsvgc-gen5-2112012-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@option replay omniscient
+@write
+>start {"formatid":"gen9championsvgc2026regmb","seed":"gen5,4e5e05bda41dd6d3"}
+@write
+>player p1 {"name":"Alice","team":"Slowbro-Galar|||QuickDraw|Encore|Lonely|12,22,,2,16,9|M|||50|,,,,,Poison]Vivillon||ScopeLens|ShieldDust|Taunt,Rest|Sassy|25,1,,22,,17|M|||50|,,,,,Fire]Lucario||Lucarionite|InnerFocus|Torment|Timid|28,22,1,9,,6|||S|50|,,,,,Psychic]Slurpuff||BlackGlasses|SweetVeil|ElectroBall,ThunderFang,GrassKnot,Imprison|Relaxed|20,13,15,1,9,6|F|||50|,,,,,Steel]Manectric||Manectite|MagnetPull|Entrainment,AcidArmor|Careful|6,2,11,14,1,32||||50|,,,,,Ice]X|Houndstone||MagnetPull|ElectroShot,Gravity,GastroAcid,AfterYou|Hasty|6,6,14,3,1,30||||50|,,,,,Bug","rating":1500}
+@write
+>player p2 {"name":"Bob","team":"X|Garchomp|Garchompite|RoughSkin|Imprison,SheerCold,LeafBlade|Careful|8,2,9,17,1,20|F|||50|,,,,,Dark]Staraptor||Staraptite|Reckless|HeatWave,ClangingScales|Lax|2,1,29,19,4,11|M|||50|,,,,,Ground]Gholdengo||PersimBerry|GoodasGold|DragonTail,PlayRough,CloseCombat|Naughty|20,,10,1,30,2||||50|,,,,,Fairy]Aegislash||ChoiceScarf|StanceChange|GrassKnot|Naive|3,6,30,3,10,13||||50|,,,,,Normal]Barbaracle||CobaBerry|Pickpocket|Thunderbolt,BulkUp,Soak,HyperBeam|Hasty|4,27,,32,,3|M|||50|,,,,,Normal]Camerupt||Cameruptite|MagmaArmor|Bulldoze,Poltergeist|Hasty|14,10,3,3,9,6|M|||50|,,,,,Poison","rating":1500}
+@write
+>p2 shift
+@write
+>p1 team 2314
+@write
+>p2 team 5643
+@write
+>p2 move Soak 3 terastallize, move 1 mega
+@write
+>p1 move 1 2, switch 4
+@write
+>p1 move 1 2, move 1 mega
+@write
+>p1 default
+@write
+>p2 default, switch 4
+@write
+>forcetie
+@message
+|t:|
+|gametype|doubles
+@message
+|player|p1|Alice||1500
+@message
+|player|p2|Bob||1500
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Slowbro-Galar, L50, M|
+|poke|p1|Vivillon, L50, M|
+|poke|p1|Lucario, L50, F, shiny|
+|poke|p1|Slurpuff, L50, F|
+|poke|p1|Manectric, L50, F|
+|poke|p1|Houndstone, L50, M|
+|poke|p2|Garchomp, L50, F|
+|poke|p2|Staraptor, L50, M|
+|poke|p2|Gholdengo, L50|
+|poke|p2|Aegislash, L50, F|
+|poke|p2|Barbaracle, L50, M|
+|poke|p2|Camerupt, L50, M|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+@message
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Vivillon|Vivillon, L50, M|180/180
+|switch|p1b: Lucario|Lucario, L50, F, shiny|173/173
+|switch|p2a: Barbaracle|Barbaracle, L50, M|151/151
+|switch|p2b: Camerupt|Camerupt, L50, M|159/159
+|turn|1
+@message
+|
+|tie

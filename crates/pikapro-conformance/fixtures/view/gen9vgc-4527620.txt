@@ -1,0 +1,689 @@
+# Recorded by view_conformance. Do not edit by hand.
+format gen9vgc
+seed 4527620
+source fuzz
+checks soundness leak meta=1
+team p1
+Sir Hops-a-Lot (Flamigo)
+Ability: Tangled Feet
+Level: 50
+Tera Type: Dragon
+EVs: 210 HP / 171 Atk / 2 Def / 53 SpA / 10 SpD / 52 Spe
+Naive Nature
+- Drain Punch
+- Close Combat
+- Coil
+- Mach Punch
+
+Delphox (F) @ Sun Stone
+Ability: Blaze
+Level: 50
+Tera Type: Normal
+EVs: 78 HP / 50 Atk / 225 Def / 156 SpD
+Lax Nature
+- Celebrate
+
+Vivillon-Jungle (M) @ Oran Berry
+Ability: Compound Eyes
+Level: 50
+Tera Type: Ghost
+EVs: 1 HP / 27 Atk / 238 Def / 9 SpD / 235 Spe
+Gentle Nature
+- Zen Headbutt
+- Pay Day
+- Shore Up
+
+Zebstrika @ Black Glasses
+Ability: Lightning Rod
+Level: 50
+Tera Type: Fairy
+EVs: 130 HP / 115 Atk / 184 Def / 2 SpA / 38 SpD / 26 Spe
+Docile Nature
+- Bug Buzz
+- Lumina Crash
+
+Mr. Bubbles (Hippowdon) (F) @ Kasib Berry
+Ability: Sand Force
+Level: 50
+Tera Type: Water
+EVs: 82 HP / 90 Atk / 82 Def / 160 SpD / 95 Spe
+Bold Nature
+- Icy Wind
+
+Palafin (F)
+Ability: Zero to Hero
+Level: 50
+Tera Type: Normal
+EVs: 141 HP / 109 Atk / 135 Def / 109 SpA / 16 SpD
+Gentle Nature
+- Stored Power
+- Play Rough
+end
+team p2
+Florges @ Absorb Bulb
+Ability: Symbiosis
+Level: 50
+Tera Type: Water
+EVs: 12 HP / 80 Atk / 66 Def / 98 SpA / 211 SpD / 42 Spe
+Calm Nature
+- Trick Room
+- Flail
+- Water Shuriken
+- Rising Voltage
+
+Mudsdale (F) @ Reaper Cloth
+Ability: Inner Focus
+Level: 50
+Tera Type: Fire
+EVs: 40 HP / 23 Atk / 27 Def / 88 SpA / 64 SpD / 126 Spe
+Modest Nature
+- Triple Kick
+- Glare
+- Pin Missile
+- Take Heart
+
+Gible (F) @ Salac Berry
+Ability: Sand Veil
+Level: 50
+Tera Type: Grass
+EVs: 195 HP / 42 Atk / 143 Def / 79 SpA / 11 SpD / 39 Spe
+Naughty Nature
+- Bullet Seed
+- Strength
+
+Minior-Green @ Enigma Berry
+Ability: Shields Down
+Level: 50
+Tera Type: Dark
+EVs: 4 HP / 35 Atk / 209 Def / 233 SpA / 16 SpD / 5 Spe
+Hardy Nature
+- Glacial Lance
+- Tera Starstorm
+- Clear Smog
+- Nasty Plot
+
+Bayleef (F)
+Ability: Leaf Guard
+Level: 50
+Tera Type: Fire
+EVs: 29 HP / 102 Atk / 75 Def / 68 SpA / 202 Spe
+Adamant Nature
+- Lunar Blessing
+
+Solosis (M) @ Timer Ball
+Ability: Magic Guard
+Level: 50
+Tera Type: Ground
+EVs: 163 HP / 8 Atk / 110 Def / 6 SpA / 20 SpD / 193 Spe
+Gentle Nature
+- Breaking Swipe
+end
+choice p1 team 2614
+choice p2 team 1436
+choice p1 move 1, move 2 2
+choice p2 move 4 1, move 3 -1 terastallize
+choice p1 move 1, move 2 2 terastallize
+choice p2 move 4 -2, move 2 -1
+choice p1 switch 3, move 2 -1
+choice p2 switch 3, move 2 2
+choice p1 move 1 2, switch 3
+choice p2 move 1 2, switch 3
+choice p1 move 2 2, move 1
+choice p2 move 1 -2, move 4 -1
+choice p2 pass, switch 3
+choice p1 move 4 1, switch 4
+choice p2 switch 4, move 2 1
+choice p1 switch 4, pass
+choice p2 move 1, move 4
+choice p1 move 1, move 1 1
+choice p2 move 1, move 2 -1
+choice p1 switch 3, move 1 1
+choice p2 switch 4, pass
+choice p1 move 2 1, move 1 1
+choice p2 move 2 2, pass
+records 13
+view p1 0 finished=false
+view p1 0 force_switch.0=false
+view p1 0 force_switch.1=false
+view p1 0 opponent_preview.0="florges"
+view p1 0 opponent_preview.1="mudsdale"
+view p1 0 opponent_preview.2="gible"
+view p1 0 opponent_preview.3="miniorgreen"
+view p1 0 opponent_preview.4="bayleef"
+view p1 0 opponent_preview.5="solosis"
+view p1 0 opponent_used_mega=false
+view p1 0 opponent_used_tera=false
+view p1 0 role="p1"
+view p1 0 team.p1: Delphox.ability="blaze"
+view p1 0 team.p1: Delphox.active=true
+view p1 0 team.p1: Delphox.fainted=false
+view p1 0 team.p1: Delphox.forme="delphox"
+view p1 0 team.p1: Delphox.gender="F"
+view p1 0 team.p1: Delphox.hp=160
+view p1 0 team.p1: Delphox.item="sunstone"
+view p1 0 team.p1: Delphox.level=50
+view p1 0 team.p1: Delphox.max_hp=160
+view p1 0 team.p1: Delphox.mega=false
+view p1 0 team.p1: Delphox.moves.0="celebrate"
+view p1 0 team.p1: Delphox.revealed=false
+view p1 0 team.p1: Delphox.species="delphox"
+view p1 0 team.p1: Delphox.tera_type="normal"
+view p1 0 team.p1: Delphox.terastallized=false
+view p1 0 team.p1: Mr. Bubbles.ability="sandforce"
+view p1 0 team.p1: Mr. Bubbles.active=false
+view p1 0 team.p1: Mr. Bubbles.fainted=false
+view p1 0 team.p1: Mr. Bubbles.forme="hippowdon"
+view p1 0 team.p1: Mr. Bubbles.gender="F"
+view p1 0 team.p1: Mr. Bubbles.hp=193
+view p1 0 team.p1: Mr. Bubbles.item="kasibberry"
+view p1 0 team.p1: Mr. Bubbles.level=50
+view p1 0 team.p1: Mr. Bubbles.max_hp=193
+view p1 0 team.p1: Mr. Bubbles.mega=false
+view p1 0 team.p1: Mr. Bubbles.moves.0="icywind"
+view p1 0 team.p1: Mr. Bubbles.revealed=false
+view p1 0 team.p1: Mr. Bubbles.species="hippowdon"
+view p1 0 team.p1: Mr. Bubbles.tera_type="water"
+view p1 0 team.p1: Mr. Bubbles.terastallized=false
+view p1 0 team.p1: Palafin.ability="zerotohero"
+view p1 0 team.p1: Palafin.active=false
+view p1 0 team.p1: Palafin.fainted=false
+view p1 0 team.p1: Palafin.forme="palafin"
+view p1 0 team.p1: Palafin.gender="F"
+view p1 0 team.p1: Palafin.hp=193
+view p1 0 team.p1: Palafin.level=50
+view p1 0 team.p1: Palafin.max_hp=193
+view p1 0 team.p1: Palafin.mega=false
+view p1 0 team.p1: Palafin.moves.0="storedpower"
+view p1 0 team.p1: Palafin.moves.1="playrough"
+view p1 0 team.p1: Palafin.revealed=false
+view p1 0 team.p1: Palafin.species="palafin"
+view p1 0 team.p1: Palafin.tera_type="normal"
+view p1 0 team.p1: Palafin.terastallized=false
+view p1 0 team.p1: Sir Hops-a-Lot.ability="tangledfeet"
+view p1 0 team.p1: Sir Hops-a-Lot.active=true
+view p1 0 team.p1: Sir Hops-a-Lot.fainted=false
+view p1 0 team.p1: Sir Hops-a-Lot.forme="flamigo"
+view p1 0 team.p1: Sir Hops-a-Lot.gender="F"
+view p1 0 team.p1: Sir Hops-a-Lot.hp=183
+view p1 0 team.p1: Sir Hops-a-Lot.level=50
+view p1 0 team.p1: Sir Hops-a-Lot.max_hp=183
+view p1 0 team.p1: Sir Hops-a-Lot.mega=false
+view p1 0 team.p1: Sir Hops-a-Lot.moves.0="drainpunch"
+view p1 0 team.p1: Sir Hops-a-Lot.moves.1="closecombat"
+view p1 0 team.p1: Sir Hops-a-Lot.moves.2="coil"
+view p1 0 team.p1: Sir Hops-a-Lot.moves.3="machpunch"
+view p1 0 team.p1: Sir Hops-a-Lot.revealed=false
+view p1 0 team.p1: Sir Hops-a-Lot.species="flamigo"
+view p1 0 team.p1: Sir Hops-a-Lot.tera_type="dragon"
+view p1 0 team.p1: Sir Hops-a-Lot.terastallized=false
+view p1 0 team.p1: Vivillon.ability="compoundeyes"
+view p1 0 team.p1: Vivillon.active=false
+view p1 0 team.p1: Vivillon.fainted=false
+view p1 0 team.p1: Vivillon.forme="vivillonjungle"
+view p1 0 team.p1: Vivillon.gender="M"
+view p1 0 team.p1: Vivillon.hp=155
+view p1 0 team.p1: Vivillon.item="oranberry"
+view p1 0 team.p1: Vivillon.level=50
+view p1 0 team.p1: Vivillon.max_hp=155
+view p1 0 team.p1: Vivillon.mega=false
+view p1 0 team.p1: Vivillon.moves.0="zenheadbutt"
+view p1 0 team.p1: Vivillon.moves.1="payday"
+view p1 0 team.p1: Vivillon.moves.2="shoreup"
+view p1 0 team.p1: Vivillon.revealed=false
+view p1 0 team.p1: Vivillon.species="vivillonjungle"
+view p1 0 team.p1: Vivillon.tera_type="ghost"
+view p1 0 team.p1: Vivillon.terastallized=false
+view p1 0 team.p1: Zebstrika.ability="lightningrod"
+view p1 0 team.p1: Zebstrika.active=false
+view p1 0 team.p1: Zebstrika.fainted=false
+view p1 0 team.p1: Zebstrika.forme="zebstrika"
+view p1 0 team.p1: Zebstrika.gender="F"
+view p1 0 team.p1: Zebstrika.hp=166
+view p1 0 team.p1: Zebstrika.item="blackglasses"
+view p1 0 team.p1: Zebstrika.level=50
+view p1 0 team.p1: Zebstrika.max_hp=166
+view p1 0 team.p1: Zebstrika.mega=false
+view p1 0 team.p1: Zebstrika.moves.0="bugbuzz"
+view p1 0 team.p1: Zebstrika.moves.1="luminacrash"
+view p1 0 team.p1: Zebstrika.revealed=false
+view p1 0 team.p1: Zebstrika.species="zebstrika"
+view p1 0 team.p1: Zebstrika.tera_type="fairy"
+view p1 0 team.p1: Zebstrika.terastallized=false
+view p1 0 teampreview=true
+view p1 0 turn=0
+view p1 0 used_mega=false
+view p1 0 used_tera=false
+view p1 0 wait=false
+view p1 1 active.0="p1: Delphox"
+view p1 1 active.1="p1: Palafin"
+view p1 1 opponent_active.0="p2: Florges"
+view p1 1 opponent_active.1="p2: Minior"
+view p1 1 opponent_team.p2: Florges.active=true
+view p1 1 opponent_team.p2: Florges.fainted=false
+view p1 1 opponent_team.p2: Florges.forme="florges"
+view p1 1 opponent_team.p2: Florges.gender="F"
+view p1 1 opponent_team.p2: Florges.hp=155
+view p1 1 opponent_team.p2: Florges.level=50
+view p1 1 opponent_team.p2: Florges.max_hp=155
+view p1 1 opponent_team.p2: Florges.mega=false
+view p1 1 opponent_team.p2: Florges.revealed=true
+view p1 1 opponent_team.p2: Florges.species="florges"
+view p1 1 opponent_team.p2: Florges.terastallized=false
+view p1 1 opponent_team.p2: Minior.ability="shieldsdown"
+view p1 1 opponent_team.p2: Minior.active=true
+view p1 1 opponent_team.p2: Minior.fainted=false
+view p1 1 opponent_team.p2: Minior.forme="miniormeteor"
+view p1 1 opponent_team.p2: Minior.gender="N"
+view p1 1 opponent_team.p2: Minior.hp=136
+view p1 1 opponent_team.p2: Minior.level=50
+view p1 1 opponent_team.p2: Minior.max_hp=136
+view p1 1 opponent_team.p2: Minior.mega=false
+view p1 1 opponent_team.p2: Minior.revealed=true
+view p1 1 opponent_team.p2: Minior.species="miniorgreen"
+view p1 1 opponent_team.p2: Minior.terastallized=false
+view p1 1 team.p1: Delphox.revealed=true
+view p1 1 team.p1: Palafin.active=true
+view p1 1 team.p1: Palafin.revealed=true
+view p1 1 team.p1: Sir Hops-a-Lot.active=false
+view p1 1 teampreview=false
+view p1 1 turn=1
+view p1 2 opponent_team.p2: Florges.ability="symbiosis"
+view p1 2 opponent_team.p2: Florges.hp=135
+view p1 2 opponent_team.p2: Florges.moves.0="risingvoltage"
+view p1 2 opponent_team.p2: Minior.hp=114
+view p1 2 opponent_team.p2: Minior.item="absorbbulb"
+view p1 2 opponent_team.p2: Minior.moves.0="clearsmog"
+view p1 2 opponent_team.p2: Minior.tera_type="dark"
+view p1 2 opponent_team.p2: Minior.terastallized=true
+view p1 2 opponent_used_tera=true
+view p1 2 team.p1: Delphox.hp=126
+view p1 2 turn=2
+view p1 3 opponent_team.p2: Florges.hp=108
+view p1 3 opponent_team.p2: Minior.boosts.atk=-1
+view p1 3 opponent_team.p2: Minior.forme="miniorgreen"
+view p1 3 opponent_team.p2: Minior.hp=22
+view p1 3 opponent_team.p2: Minior.moves.1="terastarstorm"
+view p1 3 team.p1: Palafin.terastallized=true
+view p1 3 turn=3
+view p1 3 used_tera=true
+view p1 4 active.0="p1: Sir Hops-a-Lot"
+view p1 4 opponent_active.0="p2: Gible"
+view p1 4 opponent_team.p2: Florges.active=false
+view p1 4 opponent_team.p2: Gible.active=true
+view p1 4 opponent_team.p2: Gible.fainted=false
+view p1 4 opponent_team.p2: Gible.forme="gible"
+view p1 4 opponent_team.p2: Gible.gender="F"
+view p1 4 opponent_team.p2: Gible.hp=157
+view p1 4 opponent_team.p2: Gible.level=50
+view p1 4 opponent_team.p2: Gible.max_hp=157
+view p1 4 opponent_team.p2: Gible.mega=false
+view p1 4 opponent_team.p2: Gible.revealed=true
+view p1 4 opponent_team.p2: Gible.species="gible"
+view p1 4 opponent_team.p2: Gible.terastallized=false
+view p1 4 team.p1: Delphox.active=false
+view p1 4 team.p1: Palafin.hp=118
+view p1 4 team.p1: Sir Hops-a-Lot.active=true
+view p1 4 team.p1: Sir Hops-a-Lot.hp=103
+view p1 4 team.p1: Sir Hops-a-Lot.revealed=true
+view p1 4 turn=4
+view p1 5 active.1="p1: Delphox"
+view p1 5 opponent_active.1="p2: Florges"
+view p1 5 opponent_team.p2: Florges.active=true
+view p1 5 opponent_team.p2: Florges.hp=69
+view p1 5 opponent_team.p2: Gible.moves.0="bulletseed"
+view p1 5 opponent_team.p2: Minior.active=false
+view p1 5 team.p1: Delphox.active=true
+view p1 5 team.p1: Delphox.hp=111
+view p1 5 team.p1: Palafin.active=false
+view p1 5 team.p1: Palafin.forme="palafinhero"
+view p1 5 team.p1: Palafin.species="palafinhero"
+view p1 5 team.p1: Sir Hops-a-Lot.hp=123
+view p1 5 turn=5
+drop p1 5 opponent_team.p2: Minior.boosts.atk
+view p1 6 opponent_team.p2: Florges.fainted=true
+view p1 6 opponent_team.p2: Florges.hp=0
+view p1 6 opponent_team.p2: Florges.status="fnt"
+view p1 6 team.p1: Sir Hops-a-Lot.boosts.def=-1
+view p1 6 team.p1: Sir Hops-a-Lot.boosts.spd=-1
+view p1 6 wait=true
+drop p1 6 opponent_active.1
+view p1 7 opponent_active.1="p2: Minior"
+view p1 7 opponent_team.p2: Florges.active=false
+view p1 7 opponent_team.p2: Minior.active=true
+view p1 7 turn=6
+view p1 7 wait=false
+view p1 8 active.1="p1: Zebstrika"
+view p1 8 force_switch.0=true
+view p1 8 opponent_active.0="p2: Solosis"
+view p1 8 opponent_team.p2: Gible.active=false
+view p1 8 opponent_team.p2: Solosis.active=true
+view p1 8 opponent_team.p2: Solosis.fainted=false
+view p1 8 opponent_team.p2: Solosis.forme="solosis"
+view p1 8 opponent_team.p2: Solosis.gender="M"
+view p1 8 opponent_team.p2: Solosis.hp=112
+view p1 8 opponent_team.p2: Solosis.level=50
+view p1 8 opponent_team.p2: Solosis.max_hp=140
+view p1 8 opponent_team.p2: Solosis.mega=false
+view p1 8 opponent_team.p2: Solosis.revealed=true
+view p1 8 opponent_team.p2: Solosis.species="solosis"
+view p1 8 opponent_team.p2: Solosis.terastallized=false
+view p1 8 team.p1: Delphox.active=false
+view p1 8 team.p1: Sir Hops-a-Lot.fainted=true
+view p1 8 team.p1: Sir Hops-a-Lot.hp=0
+view p1 8 team.p1: Sir Hops-a-Lot.status="fnt"
+view p1 8 team.p1: Zebstrika.active=true
+view p1 8 team.p1: Zebstrika.revealed=true
+drop p1 8 active.0
+drop p1 8 team.p1: Sir Hops-a-Lot.boosts.def
+drop p1 8 team.p1: Sir Hops-a-Lot.boosts.spd
+view p1 9 active.0="p1: Delphox"
+view p1 9 force_switch.0=false
+view p1 9 team.p1: Delphox.active=true
+view p1 9 team.p1: Sir Hops-a-Lot.active=false
+view p1 9 turn=7
+view p1 10 opponent_team.p2: Minior.boosts.spa=2
+view p1 10 opponent_team.p2: Minior.moves.2="nastyplot"
+view p1 10 opponent_team.p2: Solosis.hp=24
+view p1 10 opponent_team.p2: Solosis.moves.0="breakingswipe"
+view p1 10 team.p1: Delphox.boosts.atk=-1
+view p1 10 team.p1: Delphox.hp=103
+view p1 10 team.p1: Zebstrika.boosts.atk=-1
+view p1 10 team.p1: Zebstrika.hp=158
+view p1 10 turn=8
+view p1 11 active.0="p1: Palafin"
+view p1 11 opponent_active.0="p2: Gible"
+view p1 11 opponent_team.p2: Gible.active=true
+view p1 11 opponent_team.p2: Minior.fainted=true
+view p1 11 opponent_team.p2: Minior.hp=0
+view p1 11 opponent_team.p2: Minior.status="fnt"
+view p1 11 opponent_team.p2: Minior.terastallized=false
+view p1 11 opponent_team.p2: Solosis.active=false
+view p1 11 opponent_team.p2: Solosis.fainted=true
+view p1 11 opponent_team.p2: Solosis.hp=0
+view p1 11 opponent_team.p2: Solosis.status="fnt"
+view p1 11 team.p1: Delphox.active=false
+view p1 11 team.p1: Palafin.active=true
+view p1 11 turn=9
+drop p1 11 opponent_active.1
+drop p1 11 opponent_team.p2: Minior.boosts.spa
+drop p1 11 team.p1: Delphox.boosts.atk
+view p1 12 finished=true
+view p1 12 opponent_team.p2: Gible.fainted=true
+view p1 12 opponent_team.p2: Gible.hp=0
+view p1 12 opponent_team.p2: Gible.status="fnt"
+view p1 12 won=true
+drop p1 12 opponent_active.0
+view p2 0 finished=false
+view p2 0 force_switch.0=false
+view p2 0 force_switch.1=false
+view p2 0 opponent_preview.0="flamigo"
+view p2 0 opponent_preview.1="delphox"
+view p2 0 opponent_preview.2="vivillonjungle"
+view p2 0 opponent_preview.3="zebstrika"
+view p2 0 opponent_preview.4="hippowdon"
+view p2 0 opponent_preview.5="palafin"
+view p2 0 opponent_used_mega=false
+view p2 0 opponent_used_tera=false
+view p2 0 role="p2"
+view p2 0 team.p2: Bayleef.ability="leafguard"
+view p2 0 team.p2: Bayleef.active=false
+view p2 0 team.p2: Bayleef.fainted=false
+view p2 0 team.p2: Bayleef.forme="bayleef"
+view p2 0 team.p2: Bayleef.gender="F"
+view p2 0 team.p2: Bayleef.hp=139
+view p2 0 team.p2: Bayleef.level=50
+view p2 0 team.p2: Bayleef.max_hp=139
+view p2 0 team.p2: Bayleef.mega=false
+view p2 0 team.p2: Bayleef.moves.0="lunarblessing"
+view p2 0 team.p2: Bayleef.revealed=false
+view p2 0 team.p2: Bayleef.species="bayleef"
+view p2 0 team.p2: Bayleef.tera_type="fire"
+view p2 0 team.p2: Bayleef.terastallized=false
+view p2 0 team.p2: Florges.ability="symbiosis"
+view p2 0 team.p2: Florges.active=true
+view p2 0 team.p2: Florges.fainted=false
+view p2 0 team.p2: Florges.forme="florges"
+view p2 0 team.p2: Florges.gender="F"
+view p2 0 team.p2: Florges.hp=155
+view p2 0 team.p2: Florges.item="absorbbulb"
+view p2 0 team.p2: Florges.level=50
+view p2 0 team.p2: Florges.max_hp=155
+view p2 0 team.p2: Florges.mega=false
+view p2 0 team.p2: Florges.moves.0="trickroom"
+view p2 0 team.p2: Florges.moves.1="flail"
+view p2 0 team.p2: Florges.moves.2="watershuriken"
+view p2 0 team.p2: Florges.moves.3="risingvoltage"
+view p2 0 team.p2: Florges.revealed=false
+view p2 0 team.p2: Florges.species="florges"
+view p2 0 team.p2: Florges.tera_type="water"
+view p2 0 team.p2: Florges.terastallized=false
+view p2 0 team.p2: Gible.ability="sandveil"
+view p2 0 team.p2: Gible.active=false
+view p2 0 team.p2: Gible.fainted=false
+view p2 0 team.p2: Gible.forme="gible"
+view p2 0 team.p2: Gible.gender="F"
+view p2 0 team.p2: Gible.hp=157
+view p2 0 team.p2: Gible.item="salacberry"
+view p2 0 team.p2: Gible.level=50
+view p2 0 team.p2: Gible.max_hp=157
+view p2 0 team.p2: Gible.mega=false
+view p2 0 team.p2: Gible.moves.0="bulletseed"
+view p2 0 team.p2: Gible.moves.1="strength"
+view p2 0 team.p2: Gible.revealed=false
+view p2 0 team.p2: Gible.species="gible"
+view p2 0 team.p2: Gible.tera_type="grass"
+view p2 0 team.p2: Gible.terastallized=false
+view p2 0 team.p2: Minior.ability="shieldsdown"
+view p2 0 team.p2: Minior.active=false
+view p2 0 team.p2: Minior.fainted=false
+view p2 0 team.p2: Minior.forme="miniorgreen"
+view p2 0 team.p2: Minior.gender="N"
+view p2 0 team.p2: Minior.hp=136
+view p2 0 team.p2: Minior.item="enigmaberry"
+view p2 0 team.p2: Minior.level=50
+view p2 0 team.p2: Minior.max_hp=136
+view p2 0 team.p2: Minior.mega=false
+view p2 0 team.p2: Minior.moves.0="glaciallance"
+view p2 0 team.p2: Minior.moves.1="terastarstorm"
+view p2 0 team.p2: Minior.moves.2="clearsmog"
+view p2 0 team.p2: Minior.moves.3="nastyplot"
+view p2 0 team.p2: Minior.revealed=false
+view p2 0 team.p2: Minior.species="miniorgreen"
+view p2 0 team.p2: Minior.tera_type="dark"
+view p2 0 team.p2: Minior.terastallized=false
+view p2 0 team.p2: Mudsdale.ability="innerfocus"
+view p2 0 team.p2: Mudsdale.active=true
+view p2 0 team.p2: Mudsdale.fainted=false
+view p2 0 team.p2: Mudsdale.forme="mudsdale"
+view p2 0 team.p2: Mudsdale.gender="F"
+view p2 0 team.p2: Mudsdale.hp=180
+view p2 0 team.p2: Mudsdale.item="reapercloth"
+view p2 0 team.p2: Mudsdale.level=50
+view p2 0 team.p2: Mudsdale.max_hp=180
+view p2 0 team.p2: Mudsdale.mega=false
+view p2 0 team.p2: Mudsdale.moves.0="triplekick"
+view p2 0 team.p2: Mudsdale.moves.1="glare"
+view p2 0 team.p2: Mudsdale.moves.2="pinmissile"
+view p2 0 team.p2: Mudsdale.moves.3="takeheart"
+view p2 0 team.p2: Mudsdale.revealed=false
+view p2 0 team.p2: Mudsdale.species="mudsdale"
+view p2 0 team.p2: Mudsdale.tera_type="fire"
+view p2 0 team.p2: Mudsdale.terastallized=false
+view p2 0 team.p2: Solosis.ability="magicguard"
+view p2 0 team.p2: Solosis.active=false
+view p2 0 team.p2: Solosis.fainted=false
+view p2 0 team.p2: Solosis.forme="solosis"
+view p2 0 team.p2: Solosis.gender="M"
+view p2 0 team.p2: Solosis.hp=140
+view p2 0 team.p2: Solosis.item="timerball"
+view p2 0 team.p2: Solosis.level=50
+view p2 0 team.p2: Solosis.max_hp=140
+view p2 0 team.p2: Solosis.mega=false
+view p2 0 team.p2: Solosis.moves.0="breakingswipe"
+view p2 0 team.p2: Solosis.revealed=false
+view p2 0 team.p2: Solosis.species="solosis"
+view p2 0 team.p2: Solosis.tera_type="ground"
+view p2 0 team.p2: Solosis.terastallized=false
+view p2 0 teampreview=true
+view p2 0 turn=0
+view p2 0 used_mega=false
+view p2 0 used_tera=false
+view p2 0 wait=false
+view p2 1 active.0="p2: Florges"
+view p2 1 active.1="p2: Minior"
+view p2 1 opponent_active.0="p1: Delphox"
+view p2 1 opponent_active.1="p1: Palafin"
+view p2 1 opponent_team.p1: Delphox.active=true
+view p2 1 opponent_team.p1: Delphox.fainted=false
+view p2 1 opponent_team.p1: Delphox.forme="delphox"
+view p2 1 opponent_team.p1: Delphox.gender="F"
+view p2 1 opponent_team.p1: Delphox.hp=160
+view p2 1 opponent_team.p1: Delphox.level=50
+view p2 1 opponent_team.p1: Delphox.max_hp=160
+view p2 1 opponent_team.p1: Delphox.mega=false
+view p2 1 opponent_team.p1: Delphox.revealed=true
+view p2 1 opponent_team.p1: Delphox.species="delphox"
+view p2 1 opponent_team.p1: Delphox.terastallized=false
+view p2 1 opponent_team.p1: Palafin.ability="zerotohero"
+view p2 1 opponent_team.p1: Palafin.active=true
+view p2 1 opponent_team.p1: Palafin.fainted=false
+view p2 1 opponent_team.p1: Palafin.forme="palafin"
+view p2 1 opponent_team.p1: Palafin.gender="F"
+view p2 1 opponent_team.p1: Palafin.hp=193
+view p2 1 opponent_team.p1: Palafin.level=50
+view p2 1 opponent_team.p1: Palafin.max_hp=193
+view p2 1 opponent_team.p1: Palafin.mega=false
+view p2 1 opponent_team.p1: Palafin.revealed=true
+view p2 1 opponent_team.p1: Palafin.species="palafin"
+view p2 1 opponent_team.p1: Palafin.terastallized=false
+view p2 1 team.p2: Florges.revealed=true
+view p2 1 team.p2: Minior.active=true
+view p2 1 team.p2: Minior.forme="miniormeteor"
+view p2 1 team.p2: Minior.revealed=true
+view p2 1 teampreview=false
+view p2 1 turn=1
+view p2 2 opponent_team.p1: Delphox.hp=126
+view p2 2 opponent_team.p1: Delphox.moves.0="celebrate"
+view p2 2 opponent_team.p1: Palafin.moves.0="playrough"
+view p2 2 team.p2: Florges.hp=135
+view p2 2 team.p2: Minior.hp=114
+view p2 2 team.p2: Minior.item="absorbbulb"
+view p2 2 team.p2: Minior.terastallized=true
+view p2 2 turn=2
+view p2 2 used_tera=true
+drop p2 2 team.p2: Florges.item
+view p2 3 opponent_team.p1: Palafin.tera_type="normal"
+view p2 3 opponent_team.p1: Palafin.terastallized=true
+view p2 3 opponent_used_tera=true
+view p2 3 team.p2: Florges.hp=108
+view p2 3 team.p2: Minior.boosts.atk=-1
+view p2 3 team.p2: Minior.forme="miniorgreen"
+view p2 3 team.p2: Minior.hp=22
+view p2 3 turn=3
+view p2 4 active.0="p2: Gible"
+view p2 4 opponent_active.0="p1: Sir Hops-a-Lot"
+view p2 4 opponent_team.p1: Delphox.active=false
+view p2 4 opponent_team.p1: Palafin.hp=118
+view p2 4 opponent_team.p1: Sir Hops-a-Lot.active=true
+view p2 4 opponent_team.p1: Sir Hops-a-Lot.fainted=false
+view p2 4 opponent_team.p1: Sir Hops-a-Lot.forme="flamigo"
+view p2 4 opponent_team.p1: Sir Hops-a-Lot.gender="F"
+view p2 4 opponent_team.p1: Sir Hops-a-Lot.hp=103
+view p2 4 opponent_team.p1: Sir Hops-a-Lot.level=50
+view p2 4 opponent_team.p1: Sir Hops-a-Lot.max_hp=183
+view p2 4 opponent_team.p1: Sir Hops-a-Lot.mega=false
+view p2 4 opponent_team.p1: Sir Hops-a-Lot.revealed=true
+view p2 4 opponent_team.p1: Sir Hops-a-Lot.species="flamigo"
+view p2 4 opponent_team.p1: Sir Hops-a-Lot.terastallized=false
+view p2 4 team.p2: Florges.active=false
+view p2 4 team.p2: Gible.active=true
+view p2 4 team.p2: Gible.revealed=true
+view p2 4 turn=4
+view p2 5 active.1="p2: Florges"
+view p2 5 opponent_active.1="p1: Delphox"
+view p2 5 opponent_team.p1: Delphox.active=true
+view p2 5 opponent_team.p1: Delphox.hp=111
+view p2 5 opponent_team.p1: Palafin.active=false
+view p2 5 opponent_team.p1: Palafin.forme="palafinhero"
+view p2 5 opponent_team.p1: Palafin.species="palafinhero"
+view p2 5 opponent_team.p1: Sir Hops-a-Lot.hp=123
+view p2 5 opponent_team.p1: Sir Hops-a-Lot.moves.0="drainpunch"
+view p2 5 team.p2: Florges.active=true
+view p2 5 team.p2: Florges.hp=69
+view p2 5 team.p2: Minior.active=false
+view p2 5 turn=5
+drop p2 5 team.p2: Minior.boosts.atk
+view p2 6 force_switch.1=true
+view p2 6 opponent_team.p1: Sir Hops-a-Lot.boosts.def=-1
+view p2 6 opponent_team.p1: Sir Hops-a-Lot.boosts.spd=-1
+view p2 6 opponent_team.p1: Sir Hops-a-Lot.moves.1="closecombat"
+view p2 6 team.p2: Florges.fainted=true
+view p2 6 team.p2: Florges.hp=0
+view p2 6 team.p2: Florges.status="fnt"
+drop p2 6 active.1
+view p2 7 active.1="p2: Minior"
+view p2 7 force_switch.1=false
+view p2 7 team.p2: Florges.active=false
+view p2 7 team.p2: Minior.active=true
+view p2 7 turn=6
+view p2 8 active.0="p2: Solosis"
+view p2 8 opponent_active.1="p1: Zebstrika"
+view p2 8 opponent_team.p1: Delphox.active=false
+view p2 8 opponent_team.p1: Sir Hops-a-Lot.fainted=true
+view p2 8 opponent_team.p1: Sir Hops-a-Lot.hp=0
+view p2 8 opponent_team.p1: Sir Hops-a-Lot.moves.2="machpunch"
+view p2 8 opponent_team.p1: Sir Hops-a-Lot.status="fnt"
+view p2 8 opponent_team.p1: Zebstrika.active=true
+view p2 8 opponent_team.p1: Zebstrika.fainted=false
+view p2 8 opponent_team.p1: Zebstrika.forme="zebstrika"
+view p2 8 opponent_team.p1: Zebstrika.gender="F"
+view p2 8 opponent_team.p1: Zebstrika.hp=166
+view p2 8 opponent_team.p1: Zebstrika.level=50
+view p2 8 opponent_team.p1: Zebstrika.max_hp=166
+view p2 8 opponent_team.p1: Zebstrika.mega=false
+view p2 8 opponent_team.p1: Zebstrika.revealed=true
+view p2 8 opponent_team.p1: Zebstrika.species="zebstrika"
+view p2 8 opponent_team.p1: Zebstrika.terastallized=false
+view p2 8 team.p2: Gible.active=false
+view p2 8 team.p2: Solosis.active=true
+view p2 8 team.p2: Solosis.hp=112
+view p2 8 team.p2: Solosis.revealed=true
+view p2 8 wait=true
+drop p2 8 opponent_active.0
+drop p2 8 opponent_team.p1: Sir Hops-a-Lot.boosts.def
+drop p2 8 opponent_team.p1: Sir Hops-a-Lot.boosts.spd
+view p2 9 opponent_active.0="p1: Delphox"
+view p2 9 opponent_team.p1: Delphox.active=true
+view p2 9 opponent_team.p1: Sir Hops-a-Lot.active=false
+view p2 9 turn=7
+view p2 9 wait=false
+view p2 10 opponent_team.p1: Delphox.boosts.atk=-1
+view p2 10 opponent_team.p1: Delphox.hp=103
+view p2 10 opponent_team.p1: Zebstrika.boosts.atk=-1
+view p2 10 opponent_team.p1: Zebstrika.hp=158
+view p2 10 opponent_team.p1: Zebstrika.moves.0="bugbuzz"
+view p2 10 team.p2: Minior.boosts.spa=2
+view p2 10 team.p2: Solosis.hp=24
+view p2 10 turn=8
+view p2 11 active.0="p2: Gible"
+view p2 11 opponent_active.0="p1: Palafin"
+view p2 11 opponent_team.p1: Delphox.active=false
+view p2 11 opponent_team.p1: Palafin.active=true
+view p2 11 team.p2: Gible.active=true
+view p2 11 team.p2: Minior.fainted=true
+view p2 11 team.p2: Minior.hp=0
+view p2 11 team.p2: Minior.status="fnt"
+view p2 11 team.p2: Solosis.active=false
+view p2 11 team.p2: Solosis.fainted=true
+view p2 11 team.p2: Solosis.hp=0
+view p2 11 team.p2: Solosis.status="fnt"
+view p2 11 turn=9
+drop p2 11 active.1
+drop p2 11 opponent_team.p1: Delphox.boosts.atk
+drop p2 11 team.p2: Minior.boosts.spa
+view p2 12 finished=true
+view p2 12 team.p2: Gible.fainted=true
+view p2 12 team.p2: Gible.hp=0
+view p2 12 team.p2: Gible.status="fnt"
+view p2 12 won=false
+drop p2 12 active.0

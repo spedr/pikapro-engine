@@ -1,0 +1,610 @@
+# gen9doubles-gen5-2116027-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option keep-alive
+@write
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,b95cb0ae04e9c9c5","rated":"Tournament battle"}
+>player p1 {"name":"Alice","team":"X|Dusclops|PowerBelt|Frisk|Torment|Modest|8,48,41,182,220,10|F|||50|,,,,,Fairy]ThisNameIsFarTooLongToKeep|Fraxure||MoldBreaker|Recycle|Quirky|11,119,87,185,8,78|M|||50|,,,,,Dragon]Growlithe||RowapBerry|Intimidate|MatchaGotcha,Yawn|Bashful|183,149,23,88,44,21||||50|,,,,,Stellar]Zoë|IronMoth|HondewBerry|QuarkDrive|Rest|Calm|,9,28,242,58,158||||50|,,,,,Dark]Big Tony's Pal|VivillonGarden|FigyBerry|CompoundEyes|ClangorousSoul,SheerCold|Adamant|37,195,11,102,96,57|M|||50|,,,,,Stellar]Misdreavus|||Levitate|Hypnosis,SpeedSwap,ForcePalm|Relaxed|70,11,33,242,145,4||||50|,,,,,Fire"}
+@write
+>player p2 {"name":"Bob","team":"Lechonk|||Gluttony|CrossChop,DoubleEdge,Megahorn,PsychicNoise|Naive|21,166,41,166,45,69|M|||50|,,,,,Stellar]Articuno||PowerLens|Pressure|Incinerate,Smog|Lonely|11,129,20,171,132,16||||50|,,,,,Ghost]Sneasel|||KeenEye|CrossPoison,ThunderWave,MorningSun|Bold|98,194,46,83,18,1|M|||50|,,,,,Stellar]Groudon||RawstBerry|Drought|Lick,TropKick,FairyWind,SupercellSlam|Docile|116,18,64,92,93,29|||S|50|,,,,,Rock]Kyurem||LoveBall|Pressure|AllySwitch,AquaRing,Wrap,StuffCheeks|Bold|33,,238,193,14,5||||50|,,,,,Ground]Chomp|Incineroar|CornerstoneMask|Blaze|ForestsCurse|Bashful|211,39,93,1,128,14|F|||50|,,,,,Rock"}
+@write
+
+>p1 move 1 -1 terastallize
+@write
+>p1 move 1 -2 terastallize, switch 5
+>p2 switch Chomp ,  move Smog 2
+@write
+# a comment
+>p1 switch ThisNameIsFarTooLong ,  move 1
+@write
+>p2 switch Kyurem ,  move Smog terastal 1
+
+>p1 switch 3, move 2 1
+@write
+>p2 move wrap 1 ,  move Smog +2
+>p1 move 2 -2, switch 5
+@write
+# a comment
+>p2 switch 6, move 1
+
+>p2 move 2 1, switch 5
+@write
+>p1 move 2 2, switch 5
+>reseed gen5,12b2efe735d00411
+@write
+>p2 switch 5, move 1 -1
+>p2 undo
+@write
+>p1 switch 6, move 2 -1
+@write
+>p2 move 1 ultra
+>p2 move psychicnoise 3 terastallize, switch 4
+@write
+>chat turn talk 84
+>chat turn talk 97
+@write
+>p2 switch Kyurem ,  move forest'scurse 1
+>p2 switch 6, move 1 2
+@write
+>p1 move 0
+>p1 switch Growlithe ,  move clangoroussoul
+@write
+>p1 switch Dusclops
+>p1 move 2 2, move 1 2
+@write
+# a comment
+>p2 switch Articuno ,  switch kyurem
+>p2 undo
+@write
+>p1 move 1, switch 6
+>p2 move 2 2, move 3 1
+@write
+>p1 testfight
+
+>p1 switch 6, pass
+@write
+>p1 move 1 1, move 1 -1
+@write
+>p1 switch growlithe
+>p2 move 2 -2, switch 6
+@write
+>p1 move Torment 2, switch 4
+>p2 switch Sneasel, switch 5
+@write
+>p1 move 1 +1, switch fraxure
+>p2 move 1 2, switch 5
+@write
+# a comment
+>tiebreak
+@write
+>p1 move 1
+
+>p1 move 1
+@write
+>chat after the end
+@write
+>forcewin p1
+>tiebreak
+@write
+>requestlog
+@write
+>p2 undo
+@message
+update
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+@message
+update
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|rated|Tournament battle
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: X|Dusclops, L50, F|116/116
+|switch|p1a: X|Dusclops, L50, F|116/116
+|split|p1
+|switch|p1b: ThisNameIsFarTooLong|Fraxure, L50, M|142/142
+|switch|p1b: ThisNameIsFarTooLong|Fraxure, L50, M|142/142
+|split|p2
+|switch|p2a: Lechonk|Lechonk, L50, M|132/132
+|switch|p2a: Lechonk|Lechonk, L50, M|132/132
+|split|p2
+|switch|p2b: Articuno|Articuno, L50|166/166
+|switch|p2b: Articuno|Articuno, L50|166/166
+|-ability|p1b: ThisNameIsFarTooLong|Mold Breaker
+|-ability|p2b: Articuno|Pressure
+|-item|p2b: Articuno|Power Lens|[from] ability: Frisk|[of] p1a: X
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Torment","id":"torment","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Fairy"},{"moves":[{"move":"Recycle","id":"recycle","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Dragon"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: X","details":"Dusclops, L50, F","condition":"116/116","active":true,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"142/142","active":true,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"153/153","active":false,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"rowapberry","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"160/160","active":false,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"figyberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"144/144","active":false,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cross Chop","id":"crosschop","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Double-Edge","id":"doubleedge","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Megahorn","id":"megahorn","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Stellar"},{"moves":[{"move":"Incinerate","id":"incinerate","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Smog","id":"smog","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Ghost"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"132/132","active":true,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":true,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204","active":false,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"196/196","active":false,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Invalid target for Torment
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Big Tony's Pal|Vivillon-Garden, L50, M|160/160
+|switch|p1b: Big Tony's Pal|Vivillon-Garden, L50, M|160/160
+|split|p2
+|switch|p2a: Chomp|Incineroar, L50, F|196/196
+|switch|p2a: Chomp|Incineroar, L50, F|196/196
+|-terastallize|p1a: X|Fairy
+|move|p2b: Articuno|Smog|p1b: Big Tony's Pal
+|split|p1
+|-damage|p1b: Big Tony's Pal|141/160
+|-damage|p1b: Big Tony's Pal|141/160
+|-status|p1b: Big Tony's Pal|psn
+|move|p1a: X|Torment|p1b: Big Tony's Pal
+|-start|p1b: Big Tony's Pal|Torment
+|
+|split|p1
+|-damage|p1b: Big Tony's Pal|121/160 psn|[from] psn
+|-damage|p1b: Big Tony's Pal|121/160 psn|[from] psn
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Torment","id":"torment","pp":23,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Clangorous Soul","id":"clangoroussoul","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: X","details":"Dusclops, L50, F","condition":"116/116","active":true,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"121/160 psn","active":true,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"figyberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"153/153","active":false,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"rowapberry","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"142/142","active":false,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"144/144","active":false,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Forest's Curse","id":"forestscurse","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Rock"},{"moves":[{"move":"Incinerate","id":"incinerate","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Smog","id":"smog","pp":31,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Ghost"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"196/196","active":true,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":true,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204","active":false,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"132/132","active":false,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Kyurem|Kyurem, L50|204/204
+|switch|p2a: Kyurem|Kyurem, L50|204/204
+|-ability|p2a: Kyurem|Pressure
+|split|p1
+|switch|p1a: ThisNameIsFarTooLong|Fraxure, L50, M|142/142
+|switch|p1a: ThisNameIsFarTooLong|Fraxure, L50, M|142/142
+|-ability|p1a: ThisNameIsFarTooLong|Mold Breaker
+|-terastallize|p2b: Articuno|Ghost
+|move|p1b: Big Tony's Pal|Clangorous Soul|p1b: Big Tony's Pal
+|-boost|p1b: Big Tony's Pal|atk|1
+|-boost|p1b: Big Tony's Pal|def|1
+|-boost|p1b: Big Tony's Pal|spa|1
+|-boost|p1b: Big Tony's Pal|spd|1
+|-boost|p1b: Big Tony's Pal|spe|1
+|split|p1
+|-damage|p1b: Big Tony's Pal|69/160 psn
+|-damage|p1b: Big Tony's Pal|69/160 psn
+|move|p2b: Articuno|Smog|p1a: ThisNameIsFarTooLong
+|-crit|p1a: ThisNameIsFarTooLong
+|split|p1
+|-damage|p1a: ThisNameIsFarTooLong|103/142
+|-damage|p1a: ThisNameIsFarTooLong|103/142
+|
+|split|p1
+|-damage|p1b: Big Tony's Pal|49/160 psn|[from] psn
+|-damage|p1b: Big Tony's Pal|49/160 psn|[from] psn
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Recycle","id":"recycle","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Clangorous Soul","id":"clangoroussoul","pp":7,"maxpp":8,"target":"self","disabled":true},{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"103/142","active":true,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"49/160 psn","active":true,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"figyberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"153/153","active":false,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"rowapberry","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: X","details":"Dusclops, L50, F","condition":"116/116","active":false,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"144/144","active":false,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Ally Switch","id":"allyswitch","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Wrap","id":"wrap","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Stuff Cheeks","id":"stuffcheeks","pp":16,"maxpp":16,"target":"self","disabled":true}]},{"moves":[{"move":"Incinerate","id":"incinerate","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Smog","id":"smog","pp":30,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204","active":true,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":true,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"196/196","active":false,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"132/132","active":false,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Growlithe|Growlithe, L50, F|153/153
+|switch|p1a: Growlithe|Growlithe, L50, F|153/153
+|-ability|p1a: Growlithe|Intimidate|boost
+|-unboost|p2a: Kyurem|atk|1
+|-unboost|p2b: Articuno|atk|1
+|move|p1b: Big Tony's Pal|Sheer Cold|p2a: Kyurem
+|-immune|p2a: Kyurem|[ohko]
+|move|p2a: Kyurem|Wrap|p1a: Growlithe
+|split|p1
+|-damage|p1a: Growlithe|144/153
+|-damage|p1a: Growlithe|144/153
+|-activate|p1a: Growlithe|move: Wrap|[of] p2a: Kyurem
+|move|p2b: Articuno|Smog|p1b: Big Tony's Pal
+|-crit|p1b: Big Tony's Pal
+|split|p1
+|-damage|p1b: Big Tony's Pal|17/160 psn
+|-damage|p1b: Big Tony's Pal|17/160 psn
+|-enditem|p1b: Big Tony's Pal|Figy Berry|[eat]
+|split|p1
+|-heal|p1b: Big Tony's Pal|70/160 psn|[from] item: Figy Berry
+|-heal|p1b: Big Tony's Pal|70/160 psn|[from] item: Figy Berry
+|
+|split|p1
+|-damage|p1b: Big Tony's Pal|50/160 psn|[from] psn
+|-damage|p1b: Big Tony's Pal|50/160 psn|[from] psn
+|split|p1
+|-damage|p1a: Growlithe|125/153|[from] move: Wrap|[partiallytrapped]
+|-damage|p1a: Growlithe|125/153|[from] move: Wrap|[partiallytrapped]
+|upkeep
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Matcha Gotcha","id":"matchagotcha","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Yawn","id":"yawn","pp":16,"maxpp":16,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Clangorous Soul","id":"clangoroussoul","pp":7,"maxpp":8,"target":"self","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":6,"maxpp":8,"target":"normal","disabled":true}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"125/153","active":true,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"rowapberry","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"50/160 psn","active":true,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"103/142","active":false,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: X","details":"Dusclops, L50, F","condition":"116/116","active":false,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"144/144","active":false,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Ally Switch","id":"allyswitch","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Wrap","id":"wrap","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Stuff Cheeks","id":"stuffcheeks","pp":16,"maxpp":16,"target":"self","disabled":true}]},{"moves":[{"move":"Incinerate","id":"incinerate","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Smog","id":"smog","pp":29,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204","active":true,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":true,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"196/196","active":false,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"132/132","active":false,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: X|Dusclops, L50, F, tera:Fairy|116/116
+|switch|p1b: X|Dusclops, L50, F, tera:Fairy|116/116
+|-item|p2a: Kyurem|Love Ball|[from] ability: Frisk|[of] p1b: X
+|-item|p2b: Articuno|Power Lens|[from] ability: Frisk|[of] p1b: X
+|split|p2
+|switch|p2a: Lechonk|Lechonk, L50, M|132/132
+|switch|p2a: Lechonk|Lechonk, L50, M|132/132
+|move|p1a: Growlithe|Yawn|p1b: X
+|-start|p1b: X|move: Yawn|[of] p1a: Growlithe
+|move|p2b: Articuno|Incinerate|p1b: X|[spread] p1a,p1b
+|-resisted|p1a: Growlithe
+|split|p1
+|-damage|p1a: Growlithe|109/153
+|-damage|p1a: Growlithe|109/153
+|split|p1
+|-damage|p1b: X|103/116
+|-damage|p1b: X|103/116
+|-enditem|p1a: Growlithe|Rowap Berry|[from] move: Incinerate
+|
+|-end|p1a: Growlithe|Wrap|[partiallytrapped]|[silent]
+|upkeep
+|turn|5
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Matcha Gotcha","id":"matchagotcha","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Yawn","id":"yawn","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Torment","id":"torment","pp":23,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"109/153","active":true,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: X","details":"Dusclops, L50, F","condition":"103/116","active":true,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"103/142","active":false,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"50/160 psn","active":false,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"144/144","active":false,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cross Chop","id":"crosschop","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Double-Edge","id":"doubleedge","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Megahorn","id":"megahorn","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Incinerate","id":"incinerate","pp":23,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Smog","id":"smog","pp":29,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"132/132","active":true,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":true,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"196/196","active":false,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204","active":false,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Chomp|Incineroar, L50, F|196/196
+|switch|p2b: Chomp|Incineroar, L50, F|196/196
+|split|p1
+|switch|p1b: Big Tony's Pal|Vivillon-Garden, L50, M|50/160 psn
+|switch|p1b: Big Tony's Pal|Vivillon-Garden, L50, M|50/160 psn
+|move|p1a: Growlithe|Yawn|p2b: Chomp
+|-start|p2b: Chomp|move: Yawn|[of] p1a: Growlithe
+|move|p2a: Lechonk|Double-Edge|p1a: Growlithe
+|split|p1
+|-damage|p1a: Growlithe|13/153
+|-damage|p1a: Growlithe|13/153
+|split|p2
+|-damage|p2a: Lechonk|100/132|[from] Recoil
+|-damage|p2a: Lechonk|100/132|[from] Recoil
+|
+|split|p1
+|-damage|p1b: Big Tony's Pal|30/160 psn|[from] psn
+|-damage|p1b: Big Tony's Pal|30/160 psn|[from] psn
+|upkeep
+|turn|6
+|message|The battle's RNG was reset.
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Matcha Gotcha","id":"matchagotcha","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Yawn","id":"yawn","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Clangorous Soul","id":"clangoroussoul","pp":7,"maxpp":8,"target":"self","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":6,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"13/153","active":true,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"30/160 psn","active":true,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"103/142","active":false,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: X","details":"Dusclops, L50, F","condition":"103/116","active":false,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"144/144","active":false,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cross Chop","id":"crosschop","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Double-Edge","id":"doubleedge","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Megahorn","id":"megahorn","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Forest's Curse","id":"forestscurse","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"100/132","active":true,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"196/196","active":true,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":false,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204","active":false,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Cross Chop needs a target
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Invalid target for Psychic Noise
+@message
+update
+|chat|turn talk 84
+|chat|turn talk 97
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Misdreavus|Misdreavus, L50, M|144/144
+|switch|p1a: Misdreavus|Misdreavus, L50, M|144/144
+|split|p2
+|switch|p2a: Kyurem|Kyurem, L50|204/204
+|switch|p2a: Kyurem|Kyurem, L50|204/204
+|-ability|p2a: Kyurem|Pressure
+|move|p1b: Big Tony's Pal|Sheer Cold|p1a: Misdreavus|[miss]
+|-miss|p1b: Big Tony's Pal|p1a: Misdreavus
+|move|p2b: Chomp|Forest's Curse|p1a: Misdreavus
+|-start|p1a: Misdreavus|typeadd|Grass|[from] move: Forest's Curse
+|
+|split|p1
+|-damage|p1b: Big Tony's Pal|10/160 psn|[from] psn
+|-damage|p1b: Big Tony's Pal|10/160 psn|[from] psn
+|-end|p2b: Chomp|move: Yawn|[silent]
+|-status|p2b: Chomp|slp
+|upkeep
+|turn|7
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Force Palm","id":"forcepalm","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Clangorous Soul","id":"clangoroussoul","pp":7,"maxpp":8,"target":"self","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":5,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"144/144","active":true,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"10/160 psn","active":true,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"103/142","active":false,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: X","details":"Dusclops, L50, F","condition":"103/116","active":false,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"13/153","active":false,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Ally Switch","id":"allyswitch","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Wrap","id":"wrap","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Stuff Cheeks","id":"stuffcheeks","pp":16,"maxpp":16,"target":"self","disabled":true}]},{"moves":[{"move":"Forest's Curse","id":"forestscurse","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204","active":true,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"196/196 slp","active":true,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":false,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"100/132","active":false,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Misdreavus doesn't have a move 0
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Lechonk|Lechonk, L50, M|100/132
+|switch|p2a: Lechonk|Lechonk, L50, M|100/132
+|split|p1
+|switch|p1a: Growlithe|Growlithe, L50, F|13/153
+|switch|p1a: Growlithe|Growlithe, L50, F|13/153
+|-ability|p1a: Growlithe|Intimidate|boost
+|-unboost|p2a: Lechonk|atk|1
+|-unboost|p2b: Chomp|atk|1
+|move|p1b: Big Tony's Pal|Clangorous Soul||[still]
+|-fail|p1b: Big Tony's Pal
+|cant|p2b: Chomp|slp
+|
+|split|p1
+|-damage|p1b: Big Tony's Pal|0 fnt|[from] psn
+|-damage|p1b: Big Tony's Pal|0 fnt|[from] psn
+|faint|p1b: Big Tony's Pal
+|upkeep
+@message
+sideupdate
+p1
+|request|{"forceSwitch":[false,true],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"13/153","active":true,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"0 fnt","active":true,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"103/142","active":false,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: X","details":"Dusclops, L50, F","condition":"103/116","active":false,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"144/144","active":false,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]},"noCancel":true}
+@message
+sideupdate
+p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"100/132","active":true,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"196/196 slp","active":true,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":false,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204","active":false,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: X|Dusclops, L50, F, tera:Fairy|103/116
+|switch|p1b: X|Dusclops, L50, F, tera:Fairy|103/116
+|-item|p2b: Chomp|Cornerstone Mask|[from] ability: Frisk|[of] p1b: X
+|turn|8
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Matcha Gotcha","id":"matchagotcha","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Yawn","id":"yawn","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Torment","id":"torment","pp":23,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"13/153","active":true,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: X","details":"Dusclops, L50, F","condition":"103/116","active":true,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"103/142","active":false,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"0 fnt","active":false,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"144/144","active":false,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cross Chop","id":"crosschop","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Double-Edge","id":"doubleedge","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Megahorn","id":"megahorn","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Forest's Curse","id":"forestscurse","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"100/132","active":true,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"196/196 slp","active":true,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":false,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204","active":false,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Kyurem|Kyurem, L50|204/204
+|switch|p2b: Kyurem|Kyurem, L50|204/204
+|-ability|p2b: Kyurem|Pressure
+|split|p2
+|switch|p2a: Articuno|Articuno, L50, tera:Ghost|166/166
+|switch|p2a: Articuno|Articuno, L50, tera:Ghost|166/166
+|-ability|p2a: Articuno|Pressure
+|move|p1a: Growlithe|Yawn|p2b: Kyurem
+|-start|p2b: Kyurem|move: Yawn|[of] p1a: Growlithe
+|move|p1b: X|Torment|p2b: Kyurem
+|-start|p2b: Kyurem|Torment
+|
+|upkeep
+|turn|9
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Matcha Gotcha","id":"matchagotcha","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Yawn","id":"yawn","pp":12,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Torment","id":"torment","pp":21,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"13/153","active":true,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: X","details":"Dusclops, L50, F","condition":"103/116","active":true,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"103/142","active":false,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"0 fnt","active":false,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"144/144","active":false,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Incinerate","id":"incinerate","pp":23,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Smog","id":"smog","pp":29,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Ally Switch","id":"allyswitch","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Wrap","id":"wrap","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Stuff Cheeks","id":"stuffcheeks","pp":16,"maxpp":16,"target":"self","disabled":true}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":true,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204","active":true,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"100/132","active":false,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"196/196 slp","active":false,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Misdreavus|Misdreavus, L50, M|144/144
+|switch|p1b: Misdreavus|Misdreavus, L50, M|144/144
+|move|p2b: Kyurem|Wrap|p1a: Growlithe
+|split|p1
+|-damage|p1a: Growlithe|0 fnt
+|-damage|p1a: Growlithe|0 fnt
+|faint|p1a: Growlithe
+|move|p2a: Articuno|Smog|p1b: Misdreavus
+|-resisted|p1b: Misdreavus
+|split|p1
+|-damage|p1b: Misdreavus|137/144
+|-damage|p1b: Misdreavus|137/144
+|-status|p1b: Misdreavus|psn
+|
+|split|p1
+|-damage|p1b: Misdreavus|119/144 psn|[from] psn
+|-damage|p1b: Misdreavus|119/144 psn|[from] psn
+|-end|p2b: Kyurem|move: Yawn|[silent]
+|-status|p2b: Kyurem|slp
+|upkeep
+@message
+sideupdate
+p1
+|request|{"forceSwitch":[true,false],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"0 fnt","active":true,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"119/144 psn","active":true,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"103/142","active":false,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"0 fnt","active":false,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: X","details":"Dusclops, L50, F","condition":"103/116","active":false,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"}]},"noCancel":true}
+@message
+sideupdate
+p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":true,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204 slp","active":true,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"100/132","active":false,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"196/196 slp","active":false,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You need a switch response
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: X|Dusclops, L50, F, tera:Fairy|103/116
+|switch|p1a: X|Dusclops, L50, F, tera:Fairy|103/116
+|-item|p2a: Articuno|Power Lens|[from] ability: Frisk|[of] p1a: X
+|-item|p2b: Kyurem|Love Ball|[from] ability: Frisk|[of] p1a: X
+|turn|10
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Torment","id":"torment","pp":21,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Force Palm","id":"forcepalm","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: X","details":"Dusclops, L50, F","condition":"103/116","active":true,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"119/144 psn","active":true,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"103/142","active":false,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"0 fnt","active":false,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"0 fnt","active":false,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Incinerate","id":"incinerate","pp":23,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Smog","id":"smog","pp":28,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Ally Switch","id":"allyswitch","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Wrap","id":"wrap","pp":30,"maxpp":32,"target":"normal","disabled":true},{"move":"Stuff Cheeks","id":"stuffcheeks","pp":16,"maxpp":16,"target":"self","disabled":true}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":true,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204 slp","active":true,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"100/132","active":false,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"196/196 slp","active":false,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You can't switch to a fainted Pokémon
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Chomp|Incineroar, L50, F|196/196 slp
+|switch|p2b: Chomp|Incineroar, L50, F|196/196 slp
+|split|p1
+|switch|p1b: Zoë|Iron Moth, L50|155/155
+|switch|p1b: Zoë|Iron Moth, L50|155/155
+|move|p2a: Articuno|Smog|p2b: Chomp
+|split|p2
+|-damage|p2b: Chomp|181/196 slp
+|-damage|p2b: Chomp|181/196 slp
+|move|p1a: X|Torment|p2b: Chomp
+|-start|p2b: Chomp|Torment
+|
+|upkeep
+|turn|11
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Torment","id":"torment","pp":20,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: X","details":"Dusclops, L50, F","condition":"103/116","active":true,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":true,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"103/142","active":false,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"119/144 psn","active":false,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"0 fnt","active":false,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"0 fnt","active":false,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Incinerate","id":"incinerate","pp":23,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Smog","id":"smog","pp":27,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Forest's Curse","id":"forestscurse","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":true,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"181/196 slp","active":true,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":false,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"100/132","active":false,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204 slp","active":false,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|-end|p1b: Zoë|Quark Drive|[silent]
+|split|p1
+|switch|p1b: ThisNameIsFarTooLong|Fraxure, L50, M|103/142
+|switch|p1b: ThisNameIsFarTooLong|Fraxure, L50, M|103/142
+|-ability|p1b: ThisNameIsFarTooLong|Mold Breaker
+|split|p2
+|switch|p2b: Lechonk|Lechonk, L50, M|100/132
+|switch|p2b: Lechonk|Lechonk, L50, M|100/132
+|split|p2
+|switch|p2a: Sneasel|Sneasel, L50, M|142/142
+|switch|p2a: Sneasel|Sneasel, L50, M|142/142
+|move|p1a: X|Torment|p2a: Sneasel
+|-start|p2a: Sneasel|Torment
+|
+|upkeep
+|turn|12
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Torment","id":"torment","pp":19,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Recycle","id":"recycle","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: X","details":"Dusclops, L50, F","condition":"103/116","active":true,"stats":{"atk":86,"def":155,"spa":113,"spd":178,"spe":46},"moves":["torment"],"baseAbility":"frisk","item":"powerbelt","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: ThisNameIsFarTooLong","details":"Fraxure, L50, M","condition":"103/142","active":true,"stats":{"atk":152,"def":101,"spa":83,"spd":71,"spe":97},"moves":["recycle"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Zoë","details":"Iron Moth, L50","condition":"155/155","active":false,"stats":{"atk":81,"def":84,"spa":190,"spd":150,"spe":150},"moves":["rest"],"baseAbility":"quarkdrive","item":"hondewberry","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Misdreavus","details":"Misdreavus, L50, M","condition":"119/144 psn","active":false,"stats":{"atk":81,"def":92,"spa":135,"spd":123,"spe":95},"moves":["hypnosis","speedswap","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Vivillon-Garden, L50, M","condition":"0 fnt","active":false,"stats":{"atk":105,"def":71,"spa":110,"spd":82,"spe":116},"moves":["clangoroussoul","sheercold"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"0 fnt","active":false,"stats":{"atk":109,"def":68,"spa":101,"spd":76,"spe":83},"moves":["matchagotcha","yawn"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cross Poison","id":"crosspoison","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Wave","id":"thunderwave","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Morning Sun","id":"morningsun","pp":8,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Cross Chop","id":"crosschop","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Double-Edge","id":"doubleedge","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Megahorn","id":"megahorn","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Psychic Noise","id":"psychicnoise","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Sneasel","details":"Sneasel, L50, M","condition":"142/142","active":true,"stats":{"atk":125,"def":89,"spa":65,"spd":97,"spe":135},"moves":["crosspoison","thunderwave","morningsun"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, M","condition":"100/132","active":true,"stats":{"atk":86,"def":65,"spa":76,"spd":63,"spe":70},"moves":["crosschop","doubleedge","megahorn","psychicnoise"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Articuno","details":"Articuno, L50","condition":"166/166","active":false,"stats":{"atk":133,"def":110,"spa":136,"spd":162,"spe":107},"moves":["incinerate","smog"],"baseAbility":"pressure","item":"powerlens","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Groudon","details":"Groudon, L50, shiny","condition":"190/190","active":false,"stats":{"atk":172,"def":168,"spa":132,"spd":122,"spe":114},"moves":["lick","tropkick","fairywind","supercellslam"],"baseAbility":"drought","item":"rawstberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Chomp","details":"Incineroar, L50, F","condition":"181/196 slp","active":false,"stats":{"atk":140,"def":122,"spa":100,"spd":126,"spe":82},"moves":["forestscurse"],"baseAbility":"blaze","item":"cornerstonemask","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Kyurem","details":"Kyurem, L50","condition":"204/204 slp","active":false,"stats":{"atk":135,"def":154,"spa":174,"spd":112,"spe":116},"moves":["allyswitch","aquaring","wrap","stuffcheeks"],"baseAbility":"pressure","item":"loveball","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+@message
+update
+|message|Time's up! Going to tiebreaker...
+|-message|Alice: 4 Pokemon left; Bob: 6 Pokemon left
+|
+|win|Bob
+@message
+end
+{"winner":"Bob","seed":"gen5,b95cb0ae04e9c9c5","turns":12,"p1":"Alice","p2":"Bob","p1team":[{"name":"X","species":"Dusclops","item":"Power Belt","ability":"Frisk","moves":["Torment"],"nature":"Modest","evs":{"hp":8,"atk":48,"def":41,"spa":182,"spd":220,"spe":10},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"ThisNameIsFarTooLongToKeep","species":"Fraxure","item":"","ability":"Mold Breaker","moves":["Recycle"],"nature":"Quirky","evs":{"hp":11,"atk":119,"def":87,"spa":185,"spd":8,"spe":78},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Growlithe","species":"Growlithe","item":"Rowap Berry","ability":"Intimidate","moves":["Matcha Gotcha","Yawn"],"nature":"Bashful","evs":{"hp":183,"atk":149,"def":23,"spa":88,"spd":44,"spe":21},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Zoë","species":"Iron Moth","item":"Hondew Berry","ability":"Quark Drive","moves":["Rest"],"nature":"Calm","evs":{"hp":0,"atk":9,"def":28,"spa":242,"spd":58,"spe":158},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Vivillon-Garden","item":"Figy Berry","ability":"Compound Eyes","moves":["Clangorous Soul","Sheer Cold"],"nature":"Adamant","evs":{"hp":37,"atk":195,"def":11,"spa":102,"spd":96,"spe":57},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Misdreavus","species":"Misdreavus","item":"","ability":"Levitate","moves":["Hypnosis","Speed Swap","Force Palm"],"nature":"Relaxed","evs":{"hp":70,"atk":11,"def":33,"spa":242,"spd":145,"spe":4},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Lechonk","species":"Lechonk","item":"","ability":"Gluttony","moves":["Cross Chop","Double-Edge","Megahorn","Psychic Noise"],"nature":"Naive","evs":{"hp":21,"atk":166,"def":41,"spa":166,"spd":45,"spe":69},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Articuno","species":"Articuno","item":"Power Lens","ability":"Pressure","moves":["Incinerate","Smog"],"nature":"Lonely","evs":{"hp":11,"atk":129,"def":20,"spa":171,"spd":132,"spe":16},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sneasel","species":"Sneasel","item":"","ability":"Keen Eye","moves":["Cross Poison","Thunder Wave","Morning Sun"],"nature":"Bold","evs":{"hp":98,"atk":194,"def":46,"spa":83,"spd":18,"spe":1},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Groudon","species":"Groudon","item":"Rawst Berry","ability":"Drought","moves":["Lick","Trop Kick","Fairy Wind","Supercell Slam"],"nature":"Docile","evs":{"hp":116,"atk":18,"def":64,"spa":92,"spd":93,"spe":29},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Kyurem","species":"Kyurem","item":"Love Ball","ability":"Pressure","moves":["Ally Switch","Aqua Ring","Wrap","Stuff Cheeks"],"nature":"Bold","evs":{"hp":33,"atk":0,"def":238,"spa":193,"spd":14,"spe":5},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Incineroar","item":"Cornerstone Mask","ability":"Blaze","moves":["Forest's Curse"],"nature":"Bashful","evs":{"hp":211,"atk":39,"def":93,"spa":1,"spd":128,"spe":14},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[4,6],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@!Team Preview\",\"seed\":\"gen5,b95cb0ae04e9c9c5\",\"rated\":\"Tournament battle\"}",">player p1 {\"name\":\"Alice\",\"team\":\"X|Dusclops|PowerBelt|Frisk|Torment|Modest|8,48,41,182,220,10|F|||50|,,,,,Fairy]ThisNameIsFarTooLongToKeep|Fraxure||MoldBreaker|Recycle|Quirky|11,119,87,185,8,78|M|||50|,,,,,Dragon]Growlithe||RowapBerry|Intimidate|MatchaGotcha,Yawn|Bashful|183,149,23,88,44,21||||50|,,,,,Stellar]Zoë|IronMoth|HondewBerry|QuarkDrive|Rest|Calm|,9,28,242,58,158||||50|,,,,,Dark]Big Tony's Pal|VivillonGarden|FigyBerry|CompoundEyes|ClangorousSoul,SheerCold|Adamant|37,195,11,102,96,57|M|||50|,,,,,Stellar]Misdreavus|||Levitate|Hypnosis,SpeedSwap,ForcePalm|Relaxed|70,11,33,242,145,4||||50|,,,,,Fire\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Lechonk|||Gluttony|CrossChop,DoubleEdge,Megahorn,PsychicNoise|Naive|21,166,41,166,45,69|M|||50|,,,,,Stellar]Articuno||PowerLens|Pressure|Incinerate,Smog|Lonely|11,129,20,171,132,16||||50|,,,,,Ghost]Sneasel|||KeenEye|CrossPoison,ThunderWave,MorningSun|Bold|98,194,46,83,18,1|M|||50|,,,,,Stellar]Groudon||RawstBerry|Drought|Lick,TropKick,FairyWind,SupercellSlam|Docile|116,18,64,92,93,29|||S|50|,,,,,Rock]Kyurem||LoveBall|Pressure|AllySwitch,AquaRing,Wrap,StuffCheeks|Bold|33,,238,193,14,5||||50|,,,,,Ground]Chomp|Incineroar|CornerstoneMask|Blaze|ForestsCurse|Bashful|211,39,93,1,128,14|F|||50|,,,,,Rock\"}",">p1 move torment -2 terastallize, switch 5",">p2 switch 6, move smog +2",">p1 switch 5, move clangoroussoul",">p2 switch 5, move smog +1 terastallize",">p1 switch 3, move sheercold +1",">p2 move wrap +1, move smog +2",">p1 move yawn -2, switch 5",">p2 switch 6, move incinerate",">p1 move yawn +2, switch 5",">p2 move doubleedge +1, switch 5",">reseed 4786,61415,13776,1041",">chat turn talk 84",">chat turn talk 97",">p1 switch 6, move sheercold -1",">p2 switch 6, move forestscurse +1",">p1 switch 6, move clangoroussoul",">p2 switch 6, move forestscurse +2",">p1 pass, switch 5",">p1 move yawn +2, move torment +2",">p2 switch 5, switch 6",">p1 move matchagotcha, switch 6",">p2 move smog +2, move wrap +1",">p1 switch 6, pass",">p1 move torment +2, switch 4",">p2 move smog -2, switch 6",">p1 move torment +1, switch 3",">p2 switch 3, switch 5",">tiebreak"]}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+update
+|chat|after the end
+@message
+requesteddata
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,b95cb0ae04e9c9c5","rated":"Tournament battle"}
+>player p1 {"name":"Alice","team":"X|Dusclops|PowerBelt|Frisk|Torment|Modest|8,48,41,182,220,10|F|||50|,,,,,Fairy]ThisNameIsFarTooLongToKeep|Fraxure||MoldBreaker|Recycle|Quirky|11,119,87,185,8,78|M|||50|,,,,,Dragon]Growlithe||RowapBerry|Intimidate|MatchaGotcha,Yawn|Bashful|183,149,23,88,44,21||||50|,,,,,Stellar]Zoë|IronMoth|HondewBerry|QuarkDrive|Rest|Calm|,9,28,242,58,158||||50|,,,,,Dark]Big Tony's Pal|VivillonGarden|FigyBerry|CompoundEyes|ClangorousSoul,SheerCold|Adamant|37,195,11,102,96,57|M|||50|,,,,,Stellar]Misdreavus|||Levitate|Hypnosis,SpeedSwap,ForcePalm|Relaxed|70,11,33,242,145,4||||50|,,,,,Fire"}
+>player p2 {"name":"Bob","team":"Lechonk|||Gluttony|CrossChop,DoubleEdge,Megahorn,PsychicNoise|Naive|21,166,41,166,45,69|M|||50|,,,,,Stellar]Articuno||PowerLens|Pressure|Incinerate,Smog|Lonely|11,129,20,171,132,16||||50|,,,,,Ghost]Sneasel|||KeenEye|CrossPoison,ThunderWave,MorningSun|Bold|98,194,46,83,18,1|M|||50|,,,,,Stellar]Groudon||RawstBerry|Drought|Lick,TropKick,FairyWind,SupercellSlam|Docile|116,18,64,92,93,29|||S|50|,,,,,Rock]Kyurem||LoveBall|Pressure|AllySwitch,AquaRing,Wrap,StuffCheeks|Bold|33,,238,193,14,5||||50|,,,,,Ground]Chomp|Incineroar|CornerstoneMask|Blaze|ForestsCurse|Bashful|211,39,93,1,128,14|F|||50|,,,,,Rock"}
+>p1 move torment -2 terastallize, switch 5
+>p2 switch 6, move smog +2
+>p1 switch 5, move clangoroussoul
+>p2 switch 5, move smog +1 terastallize
+>p1 switch 3, move sheercold +1
+>p2 move wrap +1, move smog +2
+>p1 move yawn -2, switch 5
+>p2 switch 6, move incinerate
+>p1 move yawn +2, switch 5
+>p2 move doubleedge +1, switch 5
+>reseed 4786,61415,13776,1041
+>chat turn talk 84
+>chat turn talk 97
+>p1 switch 6, move sheercold -1
+>p2 switch 6, move forestscurse +1
+>p1 switch 6, move clangoroussoul
+>p2 switch 6, move forestscurse +2
+>p1 pass, switch 5
+>p1 move yawn +2, move torment +2
+>p2 switch 5, switch 6
+>p1 move matchagotcha, switch 6
+>p2 move smog +2, move wrap +1
+>p1 switch 6, pass
+>p1 move torment +2, switch 4
+>p2 move smog -2, switch 6
+>p1 move torment +1, switch 3
+>p2 switch 3, switch 5
+>tiebreak
+>chat after the end
+>forcewin p1

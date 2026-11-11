@@ -1,0 +1,303 @@
+# championsvgc-gen5-2110020-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@option replay spectator
+@write
+>start {"formatid":"gen9championsvgc2026regmb","seed":"gen5,11dbf1c94acd7b29"}
+@write
+>player p1 {"name":"Alice","team":"Vivillon-High Plains||Metronome|FriendGuard|DoubleTeam,PowerTrick,StickyWeb|Naughty|1,21,16,5,16,7||||50|,,,,,Ground]ThisNameIsFarTooLongToKeep|Abomasnow|Abomasite|SnowWarning|DarkestLariat,Infestation,Synthesis|Lonely|13,2,5,20,9,10|F||S|50|,,,,,Poison]Alcremie-Caramel-Swirl||KebiaBerry|AromaVeil|BeakBlast,WoodHammer,Thrash,CeaselessEdge|Modest|12,10,6,1,31,2|F|||50|,,,,,Poison]Zoroark||BlackGlasses|Illusion|Acupressure|Naive|,2,11,8,17,18||||50|,,,,,Ground]Mr. Bubbles|Trevenant|KingsRock|NaturalCure|SludgeWave,PhantomForce,StickyWeb,SpiritShackle|Jolly|,26,9,2,28,||||50|,,,,,Fairy]Salazzle|||Oblivious|FlyingPress,CottonSpore,Hex,Earthquake|Naughty|7,1,25,5,20,8|F|||50|,,,,,Poison"}
+>player p2 {"name":"Bob","team":"Zoë|VivillonElegant|Magnet|ShieldDust|Lunge,MeteorMash|Naive|3,11,15,5,25,6||||50|,,,,,Ground]Salazzle||KebiaBerry|Oblivious|ShadowClaw,Electrify,Moonblast|Bashful|3,,13,23,13,14|F|||50|,,,,,Water]Mr. Bubbles|Espathra|ChestoBerry|SpeedBoost|Infestation,MakeItRain,Flatter|Hasty|6,13,2,1,25,4|F|||50|,,,,,Electric]ThisNameIsFarTooLongToKeep|VivillonTundra|NeverMeltIce|CompoundEyes|SparklingAria,RagingFury,Flamethrower|Careful|6,,10,1,16,32||||50|,,,,,Grass]Sinistcha-Masterpiece||HardStone|Heatproof|BulletSeed,RisingVoltage,AlluringVoice,TriAttack|Serious|15,14,1,3,1,32||||50|,,,,,Grass]Mawile||Mawilite|SheerForce|GuardSplit,Coil|Docile|24,10,15,7,5,3|F|||50|,,,,,Poison"}
+>p1 team 2364
+>p2 team 1,1
+>p2 team 4251
+>p2 switch 3
+>p2 move 3 1, move 2 1
+@write
+
+>p1 move 2 +1, move Beak Blast +2
+>p1 move woodhammer +2, move 1 -2
+>p2 move 1, move 2 1
+>p1 move 1 -2, move 4 2
+>p2 default
+>p2 move
+@write
+
+>p2 move 3 1, move 1 1
+
+>p1 switch 3, move 1 2
+>p2 pass, switch 3
+>p2 pass, pass
+
+>p2 default
+>p1 move flyingpress 1
+>p1 move 3 -2, switch 4
+
+>p1 move 3 1, move 1 -1
+@write
+>p2 move 2, move 1 -1
+>p2 move 1, move 4 -1
+>p1 switch 4, switch 3
+>p2 switch 4, pass
+>p2 move Meteor Mash +1,move Bullet Seed 2
+>p1 move 4 1, move 1 2
+
+>p1 switch 3, pass
+@write
+>p2 move 1 -2, move 2 2
+# a comment
+>p1 default
+>p1 switch 7
+>p1 pass, pass
+>p1 undo
+>p1 default
+@write
+>p1 move 1 -2, move 1 -1
+>p2 move 2 1, move 2 -1
+>p2 move 2 2, move 3 -1
+>p1 pass ,  move Cotton Spore
+>p1 pass, move 3 2
+@write
+>p2 pass, move 3 2
+@message
+|t:|
+|gametype|doubles
+@message
+|player|p1|Alice||
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Vivillon-High Plains, L50, F|
+|poke|p1|Abomasnow, L50, F, shiny|
+|poke|p1|Alcremie-Caramel-Swirl, L50, F|
+|poke|p1|Zoroark, L50, M|
+|poke|p1|Trevenant, L50, F|
+|poke|p1|Salazzle, L50, F|
+|poke|p2|Vivillon-Elegant, L50, F|
+|poke|p2|Salazzle, L50, F|
+|poke|p2|Espathra, L50, F|
+|poke|p2|Vivillon-Tundra, L50, M|
+|poke|p2|Sinistcha-Masterpiece, L50|
+|poke|p2|Mawile, L50, F|
+|teampreview|4
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: ThisNameIsFarTooLong|Abomasnow, L50, F, shiny|100/100
+|switch|p1b: Alcremie|Alcremie-Caramel-Swirl, L50, F|100/100
+|switch|p2a: ThisNameIsFarTooLong|Vivillon-Tundra, L50, M|100/100
+|switch|p2b: Salazzle|Salazzle, L50, F|100/100
+|-weather|Snowscape|[from] ability: Snow Warning|[of] p1a: ThisNameIsFarTooLong
+|turn|1
+@message
+|
+|t:|
+|-singleturn|p1b: Alcremie|move: Beak Blast
+|move|p2b: Salazzle|Electrify|p1a: ThisNameIsFarTooLong
+|-singleturn|p1a: ThisNameIsFarTooLong|move: Electrify
+|move|p2a: ThisNameIsFarTooLong|Flamethrower|p1a: ThisNameIsFarTooLong
+|-supereffective|p1a: ThisNameIsFarTooLong|2
+|-damage|p1a: ThisNameIsFarTooLong|21/100
+|move|p1a: ThisNameIsFarTooLong|Infestation|p2a: ThisNameIsFarTooLong
+|-supereffective|p2a: ThisNameIsFarTooLong|1
+|-damage|p2a: ThisNameIsFarTooLong|83/100
+|-activate|p2a: ThisNameIsFarTooLong|move: Infestation|[of] p1a: ThisNameIsFarTooLong
+|move|p1b: Alcremie|Beak Blast|p2b: Salazzle
+|-damage|p2b: Salazzle|70/100
+|
+|-weather|Snowscape|[upkeep]
+|-damage|p2a: ThisNameIsFarTooLong|71/100|[from] move: Infestation|[partiallytrapped]
+|upkeep
+|turn|2
+|
+|t:|
+|move|p2b: Salazzle|Electrify|p1a: ThisNameIsFarTooLong
+|-singleturn|p1a: ThisNameIsFarTooLong|move: Electrify
+|move|p2a: ThisNameIsFarTooLong|Sparkling Aria|p1a: ThisNameIsFarTooLong|[spread] p2b,p1a,p1b
+|-supereffective|p2b: Salazzle|1
+|-resisted|p1a: ThisNameIsFarTooLong|1
+|-damage|p2b: Salazzle|26/100
+|-damage|p1a: ThisNameIsFarTooLong|14/100
+|-damage|p1b: Alcremie|88/100
+|move|p1a: ThisNameIsFarTooLong|Darkest Lariat|p1b: Alcremie
+|-damage|p1b: Alcremie|61/100
+|move|p1b: Alcremie|Ceaseless Edge|p2b: Salazzle|[miss]
+|-miss|p1b: Alcremie|p2b: Salazzle
+|
+|-weather|Snowscape|[upkeep]
+|-damage|p2a: ThisNameIsFarTooLong|59/100|[from] move: Infestation|[partiallytrapped]
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|switch|p1a: Salazzle|Salazzle, L50, F|100/100
+|-singleturn|p1b: Alcremie|move: Beak Blast
+|move|p2b: Salazzle|Shadow Claw|p1a: Salazzle
+|-damage|p1a: Salazzle|84/100
+|move|p2a: ThisNameIsFarTooLong|Flamethrower|p1a: Salazzle
+|-resisted|p1a: Salazzle|1
+|-damage|p1a: Salazzle|70/100
+|move|p1b: Alcremie|Beak Blast|p2b: Salazzle
+|-damage|p2b: Salazzle|0 fnt
+|faint|p2b: Salazzle
+|
+|-weather|Snowscape|[upkeep]
+|-end|p2a: ThisNameIsFarTooLong|Infestation|[partiallytrapped]|[silent]
+|upkeep
+|
+|t:|
+|switch|p2b: Sinistcha|Sinistcha-Masterpiece, L50|100/100
+|turn|4
+|
+|t:|
+|switch|p1b: Alcremie|Alcremie-Caramel-Swirl, L50, F|100/100
+|move|p1a: Salazzle|Hex|p1b: Alcremie
+|-resisted|p1b: Alcremie|1
+|-damage|p1b: Alcremie|83/100
+|replace|p1b: Zoroark|Zoroark, L50, M
+|-end|p1b: Zoroark|Illusion
+|move|p2a: ThisNameIsFarTooLong|Sparkling Aria|p1a: Salazzle|[spread] p2b,p1a,p1b
+|-resisted|p2b: Sinistcha|1
+|-supereffective|p1a: Salazzle|1
+|-damage|p2b: Sinistcha|91/100
+|-damage|p1a: Salazzle|32/100
+|-damage|p1b: Zoroark|57/100
+|move|p2b: Sinistcha|Bullet Seed|p1a: Salazzle
+|-resisted|p1a: Salazzle|2
+|-damage|p1a: Salazzle|30/100
+|-resisted|p1a: Salazzle|2
+|-damage|p1a: Salazzle|28/100
+|-resisted|p1a: Salazzle|2
+|-damage|p1a: Salazzle|26/100
+|-hitcount|p1a: Salazzle|3
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+|turn|5
+@message
+|
+|t:|
+|move|p1b: Zoroark|Acupressure|p1a: Salazzle
+|-boost|p1a: Salazzle|evasion|2
+|move|p1a: Salazzle|Hex|p2a: ThisNameIsFarTooLong
+|-damage|p2a: ThisNameIsFarTooLong|35/100
+|move|p2a: ThisNameIsFarTooLong|Raging Fury|p1a: Salazzle
+|-resisted|p1a: Salazzle|1
+|-damage|p1a: Salazzle|16/100
+|move|p2b: Sinistcha|Bullet Seed|p2a: ThisNameIsFarTooLong
+|-resisted|p2a: ThisNameIsFarTooLong|2
+|-damage|p2a: ThisNameIsFarTooLong|32/100
+|-resisted|p2a: ThisNameIsFarTooLong|2
+|-damage|p2a: ThisNameIsFarTooLong|30/100
+|-hitcount|p2a: ThisNameIsFarTooLong|2
+|
+|-weather|none
+|upkeep
+|turn|6
+|
+|t:|
+|switch|p1b: ThisNameIsFarTooLong|Abomasnow, L50, F, shiny|14/100
+|-weather|Snowscape|[from] ability: Snow Warning|[of] p1b: ThisNameIsFarTooLong
+|switch|p1a: Alcremie|Alcremie-Caramel-Swirl, L50, F|61/100
+|move|p2a: ThisNameIsFarTooLong|Raging Fury|p1a: Alcremie|[from] lockedmove
+|-damage|p1a: Alcremie|38/100
+|-start|p2a: ThisNameIsFarTooLong|confusion|[fatigue]
+|move|p2b: Sinistcha|Tri Attack|p2a: ThisNameIsFarTooLong
+|-damage|p2a: ThisNameIsFarTooLong|1/100
+|-status|p2a: ThisNameIsFarTooLong|brn
+|
+|-weather|Snowscape|[upkeep]
+|-damage|p2a: ThisNameIsFarTooLong|0 fnt|[from] brn
+|faint|p2a: ThisNameIsFarTooLong
+|upkeep
+|
+|t:|
+|switch|p2a: Zoë|Vivillon-Elegant, L50, F|100/100
+|turn|7
+|
+|t:|
+|move|p2a: Zoë|Meteor Mash|p1a: Alcremie
+|-supereffective|p1a: Alcremie|1
+|-damage|p1a: Alcremie|0 fnt
+|faint|p1a: Alcremie
+|move|p2b: Sinistcha|Bullet Seed|p1b: ThisNameIsFarTooLong
+|-resisted|p1b: ThisNameIsFarTooLong|1
+|-damage|p1b: ThisNameIsFarTooLong|10/100
+|-resisted|p1b: ThisNameIsFarTooLong|1
+|-damage|p1b: ThisNameIsFarTooLong|7/100
+|-hitcount|p1b: ThisNameIsFarTooLong|2
+|move|p1b: ThisNameIsFarTooLong|Darkest Lariat|p2b: Sinistcha
+|-supereffective|p2b: Sinistcha|1
+|-damage|p2b: Sinistcha|50/100g
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+|
+|t:|
+|switch|p1a: Salazzle|Salazzle, L50, F|57/100
+|turn|8
+@message
+|
+|t:|
+|move|p1a: Salazzle|Acupressure|p1a: Salazzle
+|-boost|p1a: Salazzle|accuracy|2
+|move|p2a: Zoë|Lunge|p2b: Sinistcha
+|-damage|p2b: Sinistcha|28/100
+|-unboost|p2b: Sinistcha|atk|1
+|move|p2b: Sinistcha|Rising Voltage|p1b: ThisNameIsFarTooLong
+|-resisted|p1b: ThisNameIsFarTooLong|1
+|-damage|p1b: ThisNameIsFarTooLong|0 fnt
+|faint|p1b: ThisNameIsFarTooLong
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+|
+|t:|
+|switch|p1b: Salazzle|Salazzle, L50, F|16/100
+|turn|9
+@message
+|
+|t:|
+|move|p1a: Salazzle|Acupressure|p1b: Salazzle
+|-boost|p1b: Salazzle|spe|2
+|move|p1b: Salazzle|Flying Press|p1a: Salazzle
+|-supereffective|p1a: Salazzle|1
+|-damage|p1a: Salazzle|0 fnt
+|replace|p1a: Zoroark|Zoroark, L50, M
+|-end|p1a: Zoroark|Illusion
+|faint|p1a: Zoroark
+|move|p2a: Zoë|Meteor Mash|p1b: Salazzle
+|-resisted|p1b: Salazzle|1
+|-damage|p1b: Salazzle|6/100
+|move|p2b: Sinistcha|Rising Voltage|p2a: Zoë
+|-supereffective|p2a: Zoë|1
+|-damage|p2a: Zoë|34/100
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+|turn|10
+|
+|t:|
+|move|p1b: Salazzle|Cotton Spore|p2b: Sinistcha|[spread] p2a
+|-immune|p2b: Sinistcha
+|-unboost|p2a: Zoë|spe|2
+|move|p2b: Sinistcha|Alluring Voice|p2a: Zoë
+|-damage|p2a: Zoë|0 fnt
+|faint|p2a: Zoë
+|
+|-weather|none
+|upkeep
+|turn|11
+@message
+|
+|t:|
+|move|p1b: Salazzle|Hex|p2b: Sinistcha
+|-supereffective|p2b: Sinistcha|1
+|-damage|p2b: Sinistcha|0 fnt
+|faint|p2b: Sinistcha
+|
+|win|Alice

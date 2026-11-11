@@ -1,0 +1,417 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 9fb7 d0bc b073 fcb1
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Hydreigon (M) @ Life Orb
+Ability: Levitate
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dark Pulse
+- Flash Cannon
+- Draco Meteor
+- Nasty Plot
+
+Sir Hops-a-Lot (Ariados) (M) @ Leftovers
+Ability: Swarm
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Impish Nature
+- Sticky Web
+- First Impression
+- Poison Jab
+- Sucker Punch
+
+Zoë (Staraptor-Mega) (F) @ Staraptite
+Ability: Contrary
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Brave Bird
+- Close Combat
+- Roost
+- Whirlwind
+
+Nibbles (Dragonite) (F) @ Lum Berry
+Ability: Multiscale
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Outrage
+- Dragon Dance
+- Roost
+- Earthquake
+
+Hydrapple (M) @ Rocky Helmet
+Ability: Regenerator
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Earth Power
+- Fickle Beam
+- Recover
+- Giga Drain
+
+Big Tony's Pal (Scovillain-Mega) (M) @ Scovillainite
+Ability: Chlorophyll
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Bold Nature
+- Giga Drain
+- Flamethrower
+- Protect
+- Leech Seed
+end
+team p2
+Drampa (F) @ Drampanite
+Ability: Berserk
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Hyper Voice
+- Draco Meteor
+- Calm Mind
+- Roost
+
+Rampardos (M) @ Life Orb
+Ability: Sheer Force
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Rock Slide
+- Earthquake
+- Zen Headbutt
+- Superpower
+
+Rhyperior (M) @ Leftovers
+Ability: Solid Rock
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Stealth Rock
+- Stone Edge
+- Earthquake
+- Dragon Tail
+
+Sir Hops-a-Lot (Toxicroak) (F) @ Choice Scarf
+Ability: Dry Skin
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Gunk Shot
+- Knock Off
+- Close Combat
+- Earthquake
+
+Sparky (Meowstic-M-Mega) (M) @ Meowsticite
+Ability: Prankster
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Alluring Voice
+- Nasty Plot
+- Dark Pulse
+- Psyshock
+
+Absol (F) @ Absolite Z
+Ability: Justified
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Will-O-Wisp
+- Swords Dance
+- Shadow Claw
+- Close Combat
+end
+choice p1 team 4325
+choice p2 team 5426
+choice p1 switch 3, move 4 2
+choice p2 default
+choice p1 switch 3, move 1 2 mega
+choice p2 move 3 1, move 4 -1
+choice p1 move 4, move 2 1
+choice p2 move Psyshock +1 mega ,  switch toxicroak
+choice p2 default
+choice p1 move 2, move 1 2
+choice p2 move 2, move 1 2
+choice p2 pass, switch 4
+choice p1 move roost ,  move Roost
+choice p2 move 3 -2, move 4 -1
+choice p1 default
+choice p2 pass ,  move Swords Dance
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Hydreigon, L50, M|
+expect |poke|p1|Ariados, L50, M|
+expect |poke|p1|Staraptor, L50, F|
+expect |poke|p1|Dragonite, L50, F|
+expect |poke|p1|Hydrapple, L50, M|
+expect |poke|p1|Scovillain, L50, M|
+expect |poke|p2|Drampa, L50, F|
+expect |poke|p2|Rampardos, L50, M|
+expect |poke|p2|Rhyperior, L50, M|
+expect |poke|p2|Toxicroak, L50, F|
+expect |poke|p2|Meowstic, L50, M, shiny|
+expect |poke|p2|Absol, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Nibbles|Dragonite, L50, F|168/168
+expect |switch|p1a: Nibbles|Dragonite, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Zoë|Staraptor, L50, F|192/192
+expect |switch|p1b: Zoë|Staraptor, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Sparky|Meowstic, L50, M, shiny|151/151
+expect |switch|p2a: Sparky|Meowstic, L50, M, shiny|100/100
+expect |split|p2
+expect |switch|p2b: Sir Hops-a-Lot|Toxicroak, L50, F|160/160
+expect |switch|p2b: Sir Hops-a-Lot|Toxicroak, L50, F|100/100
+expect |-ability|p1b: Zoë|Intimidate|boost
+expect |-unboost|p2a: Sparky|atk|1
+expect |-unboost|p2b: Sir Hops-a-Lot|atk|1
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sir Hops-a-Lot|Ariados, L50, M|177/177
+expect |switch|p1a: Sir Hops-a-Lot|Ariados, L50, M|100/100
+expect |move|p2b: Sir Hops-a-Lot|Gunk Shot|p1a: Sir Hops-a-Lot
+expect |rng|100|7
+expect |rng|24|14
+expect |rng|16|15
+expect |-resisted|p1a: Sir Hops-a-Lot|1
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|147/177
+expect |-damage|p1a: Sir Hops-a-Lot|83/100
+expect |rng|100|5
+expect |move|p2a: Sparky|Alluring Voice|p1a: Sir Hops-a-Lot
+expect |rng|100|96
+expect |rng|24|8
+expect |rng|16|6
+expect |-resisted|p1a: Sir Hops-a-Lot|1
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|124/177
+expect |-damage|p1a: Sir Hops-a-Lot|70/100
+expect |rng|100|33
+expect |move|p1b: Zoë|Whirlwind|p2b: Sir Hops-a-Lot
+expect |rng|2|0
+expect |split|p2
+expect |drag|p2b: Rampardos|Rampardos, L50, M|174/174
+expect |drag|p2b: Rampardos|Rampardos, L50, M|100/100
+expect |
+expect |split|p1
+expect |-heal|p1a: Sir Hops-a-Lot|135/177|[from] item: Leftovers
+expect |-heal|p1a: Sir Hops-a-Lot|76/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Nibbles|Dragonite, L50, F|168/168
+expect |switch|p1a: Nibbles|Dragonite, L50, F|100/100
+expect |detailschange|p1b: Zoë|Staraptor-Mega, L50, F
+expect |-mega|p1b: Zoë|Staraptor|Staraptite
+expect |move|p2a: Sparky|Dark Pulse|p1a: Nibbles
+expect |rng|100|42
+expect |rng|24|10
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Nibbles|148/168
+expect |-damage|p1a: Nibbles|88/100
+expect |rng|100|18
+expect |move|p1b: Zoë|Brave Bird|p2b: Rampardos
+expect |rng|100|86
+expect |rng|24|23
+expect |rng|16|4
+expect |-resisted|p2b: Rampardos|1
+expect |split|p2
+expect |-damage|p2b: Rampardos|73/174
+expect |-damage|p2b: Rampardos|41/100
+expect |split|p1
+expect |-damage|p1b: Zoë|159/192|[from] Recoil
+expect |-damage|p1b: Zoë|82/100|[from] Recoil
+expect |move|p2b: Rampardos|Superpower|p2a: Sparky
+expect |rng|100|28
+expect |rng|24|2
+expect |rng|16|11
+expect |-resisted|p2a: Sparky|1
+expect |split|p2
+expect |-damage|p2a: Sparky|76/151
+expect |-damage|p2a: Sparky|50/100g
+expect |rng|100|82
+expect |-unboost|p2b: Rampardos|atk|1
+expect |-unboost|p2b: Rampardos|def|1
+expect |split|p2
+expect |-damage|p2b: Rampardos|56/174|[from] item: Life Orb
+expect |-damage|p2b: Rampardos|32/100|[from] item: Life Orb
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Sir Hops-a-Lot|Toxicroak, L50, F|160/160
+expect |switch|p2b: Sir Hops-a-Lot|Toxicroak, L50, F|100/100
+expect |detailschange|p2a: Sparky|Meowstic-M-Mega, L50, M, shiny
+expect |-mega|p2a: Sparky|Meowstic|Meowsticite
+expect |rng|2|1
+expect |-ability|p2a: Sparky|Contrary|Trace|[from] ability: Trace|[of] p1b: Zoë
+expect |rng|2|1
+expect |move|p2a: Sparky|Psyshock|p1a: Nibbles
+expect |rng|100|0
+expect |rng|24|15
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Nibbles|57/168
+expect |-damage|p1a: Nibbles|33/100
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Nibbles|Earthquake|p2b: Sir Hops-a-Lot|[spread] p2a,p2b
+expect |-immune|p1b: Zoë
+expect |rng|100|46
+expect |rng|100|99
+expect |rng|24|15
+expect |rng|16|4
+expect |rng|24|9
+expect |rng|16|4
+expect |-supereffective|p2b: Sir Hops-a-Lot|1
+expect |split|p2
+expect |-damage|p2a: Sparky|8/151
+expect |-damage|p2a: Sparky|5/100
+expect |split|p2
+expect |-damage|p2b: Sir Hops-a-Lot|8/160
+expect |-damage|p2b: Sir Hops-a-Lot|5/100
+expect |move|p1b: Zoë|Close Combat|p2a: Sparky
+expect |rng|100|51
+expect |rng|24|7
+expect |rng|16|5
+expect |-resisted|p2a: Sparky|1
+expect |split|p2
+expect |-damage|p2a: Sparky|0 fnt
+expect |-damage|p2a: Sparky|0 fnt
+expect |rng|100|41
+expect |-boost|p1b: Zoë|def|1
+expect |-boost|p1b: Zoë|spd|1
+expect |faint|p2a: Sparky
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Rampardos|Rampardos, L50, M|56/174
+expect |switch|p2a: Rampardos|Rampardos, L50, M|32/100
+expect |turn|4
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Sir Hops-a-Lot|Gunk Shot|p1b: Zoë|[miss]
+expect |rng|100|86
+expect |-miss|p2b: Sir Hops-a-Lot|p1b: Zoë
+expect |rng|2|0
+expect |move|p1a: Nibbles|Dragon Dance|p1a: Nibbles
+expect |-boost|p1a: Nibbles|atk|1
+expect |-boost|p1a: Nibbles|spe|1
+expect |rng|2|1
+expect |move|p1b: Zoë|Brave Bird|p2b: Sir Hops-a-Lot
+expect |rng|100|30
+expect |rng|24|9
+expect |rng|16|13
+expect |-supereffective|p2b: Sir Hops-a-Lot|1
+expect |split|p2
+expect |-damage|p2b: Sir Hops-a-Lot|0 fnt
+expect |-damage|p2b: Sir Hops-a-Lot|0 fnt
+expect |faint|p2b: Sir Hops-a-Lot
+expect |split|p1
+expect |-damage|p1b: Zoë|156/192|[from] Recoil
+expect |-damage|p1b: Zoë|81/100|[from] Recoil
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Rampardos|Earthquake|p1a: Nibbles|[spread] 
+expect |-immune|p1a: Nibbles
+expect |-immune|p1b: Zoë
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Absol|Absol, L50, F|142/142
+expect |switch|p2b: Absol|Absol, L50, F|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1a: Nibbles|Roost|p1a: Nibbles
+expect |split|p1
+expect |-heal|p1a: Nibbles|141/168
+expect |-heal|p1a: Nibbles|83/100
+expect |-singleturn|p1a: Nibbles|move: Roost
+expect |move|p1b: Zoë|Roost|p1b: Zoë
+expect |split|p1
+expect |-heal|p1b: Zoë|192/192
+expect |-heal|p1b: Zoë|100/100
+expect |-singleturn|p1b: Zoë|move: Roost
+expect |move|p2b: Absol|Close Combat|p2a: Rampardos
+expect |rng|100|45
+expect |rng|24|15
+expect |rng|16|5
+expect |-supereffective|p2a: Rampardos|1
+expect |split|p2
+expect |-damage|p2a: Rampardos|0 fnt
+expect |-damage|p2a: Rampardos|0 fnt
+expect |rng|100|95
+expect |-unboost|p2b: Absol|def|1
+expect |-unboost|p2b: Absol|spd|1
+expect |faint|p2a: Rampardos
+expect |
+expect |upkeep
+expect |turn|6
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Nibbles|Outrage|p2b: Absol
+expect |rng|100|88
+expect |rng|24|23
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Absol|0 fnt
+expect |-damage|p2b: Absol|0 fnt
+expect |rng|2|0
+expect |faint|p2b: Absol
+expect |
+expect |win|p1

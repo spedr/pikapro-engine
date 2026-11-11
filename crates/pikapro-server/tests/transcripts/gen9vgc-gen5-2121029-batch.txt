@@ -1,0 +1,552 @@
+# gen9vgc-gen5-2121029-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@write
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,de51b3843b3fbe0e"}
+>player p1 {"name":"Alice","team":"Poltchageist-Artisan||RustedShield|Hospitality|Glare|Careful|6,,9,208,62,218||||50|,,,,,Dark]Big Tony's Pal|Haxorus||Unnerve|Electroweb,StrangeSteam,MoongeistBeam|Impish|198,27,77,31,114,6|F|||50|,,,,,Stellar]Zoë|Noivern|ChoiceBand|Infiltrator|HornLeech,CottonSpore,Round,Lick|Hardy|8,6,5,30,247,136||||50|,,,,,Bug]Empoleon||LuminousMoss|ShadowTag|SteamEruption,HydroSteam,MortalSpin,Charm|Adamant|6,10,,148,185,161||||50|,,,,,Fairy]Salandit||DampRock|Corrosion|Taunt,FrostBreath,SludgeWave|Hasty|41,45,100,165,142,12||||50|,,,,,Normal]Arceus-Psychic||Metronome|Multitype|Taunt,SuperFang|Naive|32,21,69,126,70,132|||S|50|,,,,,Flying","rating":1500}
+@write
+
+>player p2 {"name":"Bob","team":"Rotom-Heat|||Levitate|Swagger|Brave|79,73,29,73,4,238||||50|,,,,,Poison]Zebstrika||Metronome|SapSipper|CottonGuard,Amnesia,QuiverDance,HammerArm|Rash|65,104,129,72,34,37||||50|,,,,,Steel]Cutiefly||GanlonBerry|HoneyGather|Disable|Sassy|79,225,78,14,55,21|M|||50|,,,,,Fairy]X|Quilladin|LoadedDice|Overgrow|Imprison,RevelationDance,BugBite,FairyWind|Sassy|112,122,6,234,29,5||||50|,,,,,Dark]Slugma|||MagmaArmor|Disable,TorchSong,AquaCutter|Mild|1,58,93,8,147,194||||50|,,,,,Bug]Trumbeak||IapapaBerry|SkillLink|SaltCure,AquaJet,Decorate|Brave|198,14,8,243,4,43|||S|50|,,,,,Ice"}
+@write
+>p1 team
+>p2 move 1
+@write
+>p2 dance
+@write
+>p1 move 1
+@write
+# a comment
+>p1 undo
+@write
+>p1 team 6432
+>p2 team 2314
+@write
+>p2 move 3, move 1 -1
+>p1 undo
+@write
+>p1 undo
+@write
+>p1 move 2 -2, move 4 2 terastallize
+# a comment
+>p2 move Amnesia, move 1 2
+@write
+>p1 move 2 -2 ,  move 4 +1
+>p2 move amnesia dynamax
+@write
+>p1 switch noivern, move 1 +2
+@write
+>p2 move amnesia ,  move 1 -1
+
+>p1 switch 4
+@write
+>p2 move 2, move 1 1 terastallize
+@write
+>p1 testfight
+@write
+
+>p1 move hornleech +1 terastal
+@write
+
+>p1 default
+@write
+>p2 move 1, move 1, move 1
+@write
+>p1 move 1, move 1 2
+>p2 auto
+@write
+>p2 pass, switch 3
+>p2 shift
+@write
+>p2 move 5
+@write
+
+>p1 switch 3, move 3
+@write
+>p2 Move 1
+@write
+>p2 move 3, move 1 1
+>p1 switch 1
+@write
+# a comment
+>p2 move 4 2 ,  move Swagger 1
+
+>p1 move 1 1, switch 4
+@write
+>p1 switch 3, move 1
+>p2 move 4 -2, switch 4
+@write
+>p1 move 4 -2, switch 4
+@write
+>p2 shift
+# a comment
+>p2 move 4 1, move 4 2
+@write
+>p1 undo
+@write
+>p2 default
+>p2 undo
+@write
+>p1 move 3 1 mega, move 4 2
+@write
+>p2 switch 4
+@write
+>p2 move Amnesia, move 4 2
+>p1 move 4 1, move 4 2
+@write
+>p2 default, move Bug Bite 2
+>forcetie
+@write
+>p1 move 1
+@message
+update
+|t:|
+|gametype|doubles
+|player|p1|Alice||1500
+@message
+update
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Poltchageist-Artisan, L50|
+|poke|p1|Haxorus, L50, F|
+|poke|p1|Noivern, L50, F|
+|poke|p1|Empoleon, L50, F|
+|poke|p1|Salandit, L50, M|
+|poke|p1|Arceus-Psychic, L50|
+|poke|p2|Rotom-Heat, L50|
+|poke|p2|Zebstrika, L50, M|
+|poke|p2|Cutiefly, L50, M|
+|poke|p2|Quilladin, L50, M|
+|poke|p2|Slugma, L50, M|
+|poke|p2|Trumbeak, L50, M|
+|teampreview|4
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Poltchageist","details":"Poltchageist-Artisan, L50","condition":"116/116","active":true,"stats":{"atk":65,"def":66,"spa":108,"spd":90,"spe":97},"moves":["glare"],"baseAbility":"hospitality","item":"rustedshield","pokeball":"pokeball","ability":"hospitality","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"176/176","active":true,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"161/161","active":false,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"160/160","active":false,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Salandit","details":"Salandit, L50, M","condition":"128/128","active":false,"stats":{"atk":70,"def":65,"spa":112,"spd":78,"spe":108},"moves":["taunt","frostbreath","sludgewave"],"baseAbility":"corrosion","item":"damprock","pokeball":"pokeball","ability":"corrosion","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":false,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"135/135","active":true,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"158/158","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"125/125","active":false,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"ganlonberry","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"150/150","active":false,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Slugma","details":"Slugma, L50, M","condition":"115/115","active":false,"stats":{"atk":67,"def":64,"spa":100,"spd":78,"spe":64},"moves":["disable","torchsong","aquacutter"],"baseAbility":"magmaarmor","item":"","pokeball":"pokeball","ability":"magmaarmor","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Trumbeak","details":"Trumbeak, L50, M, shiny","condition":"155/155","active":false,"stats":{"atk":117,"def":71,"spa":90,"spd":71,"spe":90},"moves":["saltcure","aquajet","decorate"],"baseAbility":"skilllink","item":"iapapaberry","pokeball":"pokeball","ability":"skilllink","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You need a teampreview response
+@message
+sideupdate
+p2
+|error|[Invalid choice] Unrecognized choice: dance
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You need a teampreview response
+@message
+update
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|switch|p1a: Arceus|Arceus-Psychic, L50, shiny|199/199
+|switch|p1a: Arceus|Arceus-Psychic, L50, shiny|199/199
+|split|p1
+|switch|p1b: Empoleon|Empoleon, L50, F|160/160
+|switch|p1b: Empoleon|Empoleon, L50, F|160/160
+|split|p2
+|switch|p2a: Zebstrika|Zebstrika, L50, M|158/158
+|switch|p2a: Zebstrika|Zebstrika, L50, M|158/158
+|split|p2
+|switch|p2b: Cutiefly|Cutiefly, L50, M|125/125
+|switch|p2b: Cutiefly|Cutiefly, L50, M|125/125
+|-start|p1a: Arceus|typechange|Normal|[silent]
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Super Fang","id":"superfang","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Flying"},{"moves":[{"move":"Steam Eruption","id":"steameruption","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Mortal Spin","id":"mortalspin","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Charm","id":"charm","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Fairy"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":true,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"160/160","active":true,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"161/161","active":false,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"176/176","active":false,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cotton Guard","id":"cottonguard","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Amnesia","id":"amnesia","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Hammer Arm","id":"hammerarm","pp":16,"maxpp":16,"target":"normal","disabled":false}],"trapped":true,"canTerastallize":"Steel"},{"moves":[{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false}],"maybeTrapped":true,"canTerastallize":"Fairy"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"158/158","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"125/125","active":true,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"ganlonberry","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"135/135","active":false,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"150/150","active":false,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|-terastallize|p1b: Empoleon|Fairy
+|move|p1a: Arceus|Super Fang|p1b: Empoleon
+|split|p1
+|-damage|p1b: Empoleon|80/160
+|-damage|p1b: Empoleon|80/160
+|move|p2a: Zebstrika|Quiver Dance|p2a: Zebstrika
+|-boost|p2a: Zebstrika|spa|1
+|-boost|p2a: Zebstrika|spd|1
+|-boost|p2a: Zebstrika|spe|1
+|move|p1b: Empoleon|Charm|p2b: Cutiefly
+|-unboost|p2b: Cutiefly|atk|2
+|move|p2b: Cutiefly|Disable|p2a: Zebstrika
+|-start|p2a: Zebstrika|Disable|Quiver Dance
+|
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Super Fang","id":"superfang","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Steam Eruption","id":"steameruption","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Mortal Spin","id":"mortalspin","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Charm","id":"charm","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":true,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"80/160","active":true,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"161/161","active":false,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"176/176","active":false,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cotton Guard","id":"cottonguard","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Amnesia","id":"amnesia","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":31,"maxpp":32,"target":"self","disabled":true},{"move":"Hammer Arm","id":"hammerarm","pp":16,"maxpp":16,"target":"normal","disabled":false}],"trapped":true,"canTerastallize":"Steel"},{"moves":[{"move":"Disable","id":"disable","pp":31,"maxpp":32,"target":"normal","disabled":false}],"maybeTrapped":true,"canTerastallize":"Fairy"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"158/158","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"125/125","active":true,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"ganlonberry","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"135/135","active":false,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"150/150","active":false,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Dynamaxing doesn't outside of Gen 8.
+@message
+update
+|
+|t:|
+|move|p2a: Zebstrika|Amnesia|p2a: Zebstrika
+|-boost|p2a: Zebstrika|spd|2
+|move|p1a: Arceus|Super Fang|p1b: Empoleon
+|split|p1
+|-damage|p1b: Empoleon|40/160
+|-damage|p1b: Empoleon|40/160
+|move|p1b: Empoleon|Charm|p2a: Zebstrika
+|-unboost|p2a: Zebstrika|atk|2
+|move|p2b: Cutiefly|Disable|p1b: Empoleon
+|-start|p1b: Empoleon|Disable|Charm
+|
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Super Fang","id":"superfang","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Steam Eruption","id":"steameruption","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Mortal Spin","id":"mortalspin","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Charm","id":"charm","pp":30,"maxpp":32,"target":"normal","disabled":true}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":true,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"40/160","active":true,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"161/161","active":false,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"176/176","active":false,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cotton Guard","id":"cottonguard","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Amnesia","id":"amnesia","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":31,"maxpp":32,"target":"self","disabled":true},{"move":"Hammer Arm","id":"hammerarm","pp":16,"maxpp":16,"target":"normal","disabled":false}],"trapped":true,"canTerastallize":"Steel"},{"moves":[{"move":"Disable","id":"disable","pp":30,"maxpp":32,"target":"normal","disabled":false}],"maybeTrapped":true,"canTerastallize":"Fairy"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"158/158","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"125/125","active":true,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"ganlonberry","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"135/135","active":false,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"150/150","active":false,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Incomplete choice: switch 4 - missing other pokemon
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Zoë|Noivern, L50, F|161/161
+|switch|p1a: Zoë|Noivern, L50, F|161/161
+|move|p2a: Zebstrika|Amnesia|p2a: Zebstrika
+|-boost|p2a: Zebstrika|spd|2
+|move|p1b: Empoleon|Steam Eruption|p2b: Cutiefly
+|split|p2
+|-damage|p2b: Cutiefly|10/125
+|-damage|p2b: Cutiefly|10/125
+|-enditem|p2b: Cutiefly|Ganlon Berry|[eat]
+|-boost|p2b: Cutiefly|def|1|[from] item: Ganlon Berry
+|move|p2b: Cutiefly|Disable||[still]
+|-fail|p2b: Cutiefly
+|
+|upkeep
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Horn Leech","id":"hornleech","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Cotton Spore","id":"cottonspore","pp":64,"maxpp":64,"target":"allAdjacentFoes","disabled":false},{"move":"Round","id":"round","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Lick","id":"lick","pp":48,"maxpp":48,"target":"normal","disabled":false}]},{"moves":[{"move":"Steam Eruption","id":"steameruption","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Mortal Spin","id":"mortalspin","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Charm","id":"charm","pp":30,"maxpp":32,"target":"normal","disabled":true}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"161/161","active":true,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"40/160","active":true,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":false,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"176/176","active":false,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cotton Guard","id":"cottonguard","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Amnesia","id":"amnesia","pp":30,"maxpp":32,"target":"self","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":31,"maxpp":32,"target":"self","disabled":true},{"move":"Hammer Arm","id":"hammerarm","pp":16,"maxpp":16,"target":"normal","disabled":false}],"trapped":true,"canTerastallize":"Steel"},{"moves":[{"move":"Disable","id":"disable","pp":29,"maxpp":32,"target":"normal","disabled":false}],"maybeTrapped":true,"canTerastallize":"Fairy"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"158/158","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"10/125","active":true,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"135/135","active":false,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"150/150","active":false,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Zoë's Fight button is known to be safe
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Zoë can't Terastallize.
+@message
+update
+|
+|t:|
+|-terastallize|p2b: Cutiefly|Fairy
+|move|p2a: Zebstrika|Amnesia|p2a: Zebstrika
+|-boost|p2a: Zebstrika|spd|1
+|move|p1a: Zoë|Horn Leech|p2a: Zebstrika
+|-ability|p2a: Zebstrika|Sap Sipper|boost
+|-boost|p2a: Zebstrika|atk|1
+|move|p1b: Empoleon|Steam Eruption|p2a: Zebstrika
+|split|p2
+|-damage|p2a: Zebstrika|127/158
+|-damage|p2a: Zebstrika|127/158
+|move|p2b: Cutiefly|Disable|p1a: Zoë
+|-start|p1a: Zoë|Disable|Horn Leech
+|
+|upkeep
+|turn|5
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Struggle","id":"struggle","target":"randomNormal","disabled":false}]},{"moves":[{"move":"Steam Eruption","id":"steameruption","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Mortal Spin","id":"mortalspin","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Charm","id":"charm","pp":30,"maxpp":32,"target":"normal","disabled":true}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"161/161","active":true,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"40/160","active":true,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":false,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"176/176","active":false,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cotton Guard","id":"cottonguard","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Amnesia","id":"amnesia","pp":29,"maxpp":32,"target":"self","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":31,"maxpp":32,"target":"self","disabled":true},{"move":"Hammer Arm","id":"hammerarm","pp":16,"maxpp":16,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Disable","id":"disable","pp":28,"maxpp":32,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"127/158","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"10/125","active":true,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"135/135","active":false,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"150/150","active":false,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't make choices: You sent choices for 3 Pokémon, but this is a doubles game!
+@message
+update
+|
+|t:|
+|move|p2a: Zebstrika|Cotton Guard|p2a: Zebstrika
+|-boost|p2a: Zebstrika|def|3
+|-activate|p1a: Zoë|move: Struggle
+|move|p1a: Zoë|Struggle|p2b: Cutiefly
+|split|p2
+|-damage|p2b: Cutiefly|0 fnt
+|-damage|p2b: Cutiefly|0 fnt
+|faint|p2b: Cutiefly
+|split|p1
+|-damage|p1a: Zoë|121/161|[from] recoil
+|-damage|p1a: Zoë|121/161|[from] recoil
+|move|p1b: Empoleon|Steam Eruption|p2a: Zebstrika
+|split|p2
+|-damage|p2a: Zebstrika|99/158
+|-damage|p2a: Zebstrika|99/158
+|-status|p2a: Zebstrika|brn
+|
+|split|p2
+|-damage|p2a: Zebstrika|90/158 brn|[from] brn
+|-damage|p2a: Zebstrika|90/158 brn|[from] brn
+|-end|p2a: Zebstrika|Disable
+|upkeep
+@message
+sideupdate
+p1
+|request|{"wait":true,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"121/161","active":true,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"40/160","active":true,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":false,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"176/176","active":false,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"forceSwitch":[false,true],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"90/158 brn","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"0 fnt","active":true,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"135/135","active":false,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"150/150","active":false,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]},"noCancel":true}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't shift: You can only shift to the center in triples
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Rotom|Rotom-Heat, L50|135/135
+|switch|p2b: Rotom|Rotom-Heat, L50|135/135
+|turn|6
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Struggle","id":"struggle","target":"randomNormal","disabled":false}]},{"moves":[{"move":"Steam Eruption","id":"steameruption","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Mortal Spin","id":"mortalspin","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Charm","id":"charm","pp":30,"maxpp":32,"target":"normal","disabled":true}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"121/161","active":true,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"40/160","active":true,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":false,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"176/176","active":false,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cotton Guard","id":"cottonguard","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Amnesia","id":"amnesia","pp":29,"maxpp":32,"target":"self","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Hammer Arm","id":"hammerarm","pp":16,"maxpp":16,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Swagger","id":"swagger","pp":24,"maxpp":24,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"90/158 brn","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"135/135","active":true,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"0 fnt","active":false,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"150/150","active":false,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Your Zebstrika doesn't have a move 5
+@message
+sideupdate
+p2
+|error|[Invalid choice] Unrecognized choice: Move 1
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Arceus|Arceus-Psychic, L50, shiny|199/199
+|switch|p1a: Arceus|Arceus-Psychic, L50, shiny|199/199
+|move|p2a: Zebstrika|Quiver Dance|p2a: Zebstrika
+|-boost|p2a: Zebstrika|spa|1
+|-boost|p2a: Zebstrika|spd|0
+|-boost|p2a: Zebstrika|spe|1
+|move|p2b: Rotom|Swagger|p1a: Arceus
+|-boost|p1a: Arceus|atk|2
+|-start|p1a: Arceus|confusion
+|move|p1b: Empoleon|Mortal Spin|p2b: Rotom|[spread] p2a,p2b
+|split|p2
+|-damage|p2a: Zebstrika|85/158 brn
+|-damage|p2a: Zebstrika|85/158 brn
+|split|p2
+|-damage|p2b: Rotom|126/135
+|-damage|p2b: Rotom|126/135
+|-status|p2b: Rotom|psn
+|
+|split|p2
+|-damage|p2b: Rotom|110/135 psn|[from] psn
+|-damage|p2b: Rotom|110/135 psn|[from] psn
+|split|p2
+|-damage|p2a: Zebstrika|76/158 brn|[from] brn
+|-damage|p2a: Zebstrika|76/158 brn|[from] brn
+|-end|p1b: Empoleon|Disable
+|upkeep
+|-start|p1a: Arceus|typechange|Normal|[silent]
+|turn|7
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Super Fang","id":"superfang","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Steam Eruption","id":"steameruption","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Mortal Spin","id":"mortalspin","pp":23,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Charm","id":"charm","pp":30,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":true,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"40/160","active":true,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"121/161","active":false,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"176/176","active":false,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cotton Guard","id":"cottonguard","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Amnesia","id":"amnesia","pp":29,"maxpp":32,"target":"self","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":30,"maxpp":32,"target":"self","disabled":false},{"move":"Hammer Arm","id":"hammerarm","pp":16,"maxpp":16,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Swagger","id":"swagger","pp":23,"maxpp":24,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"76/158 brn","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"110/135 psn","active":true,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"0 fnt","active":false,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"150/150","active":false,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Big Tony's Pal|Haxorus, L50, F|176/176
+|switch|p1b: Big Tony's Pal|Haxorus, L50, F|176/176
+|-ability|p1b: Big Tony's Pal|Unnerve
+|move|p2a: Zebstrika|Hammer Arm|p1b: Big Tony's Pal
+|split|p1
+|-damage|p1b: Big Tony's Pal|163/176
+|-damage|p1b: Big Tony's Pal|163/176
+|-unboost|p2a: Zebstrika|spe|1
+|-activate|p1a: Arceus|confusion
+|move|p1a: Arceus|Taunt|p2a: Zebstrika
+|-start|p2a: Zebstrika|move: Taunt
+|move|p2b: Rotom|Swagger|p1a: Arceus
+|-boost|p1a: Arceus|atk|2
+|
+|split|p2
+|-damage|p2b: Rotom|94/135 psn|[from] psn
+|-damage|p2b: Rotom|94/135 psn|[from] psn
+|split|p2
+|-damage|p2a: Zebstrika|67/158 brn|[from] brn
+|-damage|p2a: Zebstrika|67/158 brn|[from] brn
+|upkeep
+|turn|8
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Taunt","id":"taunt","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Super Fang","id":"superfang","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Electroweb","id":"electroweb","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Strange Steam","id":"strangesteam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Moongeist Beam","id":"moongeistbeam","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":true,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"163/176","active":true,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"121/161","active":false,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"40/160","active":false,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cotton Guard","id":"cottonguard","pp":15,"maxpp":16,"target":"self","disabled":true},{"move":"Amnesia","id":"amnesia","pp":29,"maxpp":32,"target":"self","disabled":true},{"move":"Quiver Dance","id":"quiverdance","pp":30,"maxpp":32,"target":"self","disabled":true},{"move":"Hammer Arm","id":"hammerarm","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Swagger","id":"swagger","pp":22,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"67/158 brn","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"94/135 psn","active":true,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"0 fnt","active":false,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"150/150","active":false,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Zoë|Noivern, L50, F|121/161
+|switch|p1a: Zoë|Noivern, L50, F|121/161
+|split|p2
+|switch|p2b: X|Quilladin, L50, M|150/150
+|switch|p2b: X|Quilladin, L50, M|150/150
+|move|p2a: Zebstrika|Hammer Arm|p2b: X
+|split|p2
+|-damage|p2b: X|132/150
+|-damage|p2b: X|132/150
+|-unboost|p2a: Zebstrika|spe|1
+|move|p1b: Big Tony's Pal|Electroweb|p2b: X|[spread] p2a,p2b
+|-resisted|p2a: Zebstrika
+|-resisted|p2b: X
+|split|p2
+|-damage|p2a: Zebstrika|65/158 brn
+|-damage|p2a: Zebstrika|65/158 brn
+|split|p2
+|-damage|p2b: X|125/150
+|-damage|p2b: X|125/150
+|-unboost|p2a: Zebstrika|spe|1
+|-unboost|p2b: X|spe|1
+|
+|split|p2
+|-damage|p2a: Zebstrika|56/158 brn|[from] brn
+|-damage|p2a: Zebstrika|56/158 brn|[from] brn
+|upkeep
+|turn|9
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Horn Leech","id":"hornleech","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Cotton Spore","id":"cottonspore","pp":64,"maxpp":64,"target":"allAdjacentFoes","disabled":false},{"move":"Round","id":"round","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Lick","id":"lick","pp":48,"maxpp":48,"target":"normal","disabled":false}]},{"moves":[{"move":"Electroweb","id":"electroweb","pp":23,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Strange Steam","id":"strangesteam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Moongeist Beam","id":"moongeistbeam","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"121/161","active":true,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"163/176","active":true,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":false,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"40/160","active":false,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cotton Guard","id":"cottonguard","pp":15,"maxpp":16,"target":"self","disabled":true},{"move":"Amnesia","id":"amnesia","pp":29,"maxpp":32,"target":"self","disabled":true},{"move":"Quiver Dance","id":"quiverdance","pp":30,"maxpp":32,"target":"self","disabled":true},{"move":"Hammer Arm","id":"hammerarm","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Revelation Dance","id":"revelationdance","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Bug Bite","id":"bugbite","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Fairy Wind","id":"fairywind","pp":48,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"56/158 brn","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"125/150","active":true,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"0 fnt","active":false,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"94/135 psn","active":false,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't shift: You can only shift to the center in triples
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Empoleon|Empoleon, L50, F, tera:Fairy|40/160
+|switch|p1b: Empoleon|Empoleon, L50, F, tera:Fairy|40/160
+|move|p1a: Zoë|Lick|p1b: Empoleon
+|split|p1
+|-damage|p1b: Empoleon|24/160
+|-damage|p1b: Empoleon|24/160
+|move|p2a: Zebstrika|Hammer Arm|p1a: Zoë
+|-resisted|p1a: Zoë
+|split|p1
+|-damage|p1a: Zoë|110/161
+|-damage|p1a: Zoë|110/161
+|-unboost|p2a: Zebstrika|spe|1
+|move|p2b: X|Fairy Wind|p1b: Empoleon
+|split|p1
+|-damage|p1b: Empoleon|11/160
+|-damage|p1b: Empoleon|11/160
+|
+|split|p2
+|-damage|p2a: Zebstrika|47/158 brn|[from] brn
+|-damage|p2a: Zebstrika|47/158 brn|[from] brn
+|upkeep
+|turn|10
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Horn Leech","id":"hornleech","pp":15,"maxpp":16,"target":"normal","disabled":true},{"move":"Cotton Spore","id":"cottonspore","pp":64,"maxpp":64,"target":"allAdjacentFoes","disabled":true},{"move":"Round","id":"round","pp":24,"maxpp":24,"target":"normal","disabled":true},{"move":"Lick","id":"lick","pp":47,"maxpp":48,"target":"normal","disabled":false}]},{"moves":[{"move":"Steam Eruption","id":"steameruption","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Mortal Spin","id":"mortalspin","pp":23,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Charm","id":"charm","pp":30,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"110/161","active":true,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"11/160","active":true,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":false,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"163/176","active":false,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cotton Guard","id":"cottonguard","pp":15,"maxpp":16,"target":"self","disabled":true},{"move":"Amnesia","id":"amnesia","pp":29,"maxpp":32,"target":"self","disabled":true},{"move":"Quiver Dance","id":"quiverdance","pp":30,"maxpp":32,"target":"self","disabled":true},{"move":"Hammer Arm","id":"hammerarm","pp":13,"maxpp":16,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Revelation Dance","id":"revelationdance","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Bug Bite","id":"bugbite","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Fairy Wind","id":"fairywind","pp":47,"maxpp":48,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"47/158 brn","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"125/150","active":true,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"0 fnt","active":false,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"94/135 psn","active":false,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Unavailable choice] Can't move: Zoë's Round is disabled
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Horn Leech","id":"hornleech","pp":15,"maxpp":16,"target":"normal","disabled":true},{"move":"Cotton Spore","id":"cottonspore","pp":64,"maxpp":64,"target":"allAdjacentFoes","disabled":true},{"move":"Round","id":"round","pp":24,"maxpp":24,"target":"normal","disabled":true,"disabledSource":""},{"move":"Lick","id":"lick","pp":47,"maxpp":48,"target":"normal","disabled":false}]},{"moves":[{"move":"Steam Eruption","id":"steameruption","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Mortal Spin","id":"mortalspin","pp":23,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Charm","id":"charm","pp":30,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Noivern, L50, F","condition":"110/161","active":true,"stats":{"atk":91,"def":101,"spa":121,"spd":131,"spe":160},"moves":["hornleech","cottonspore","round","lick"],"baseAbility":"infiltrator","item":"choiceband","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Empoleon","details":"Empoleon, L50, F","condition":"11/160","active":true,"stats":{"atk":117,"def":108,"spa":135,"spd":144,"spe":100},"moves":["steameruption","hydrosteam","mortalspin","charm"],"baseAbility":"shadowtag","item":"luminousmoss","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Arceus","details":"Arceus-Psychic, L50, shiny","condition":"199/199","active":false,"stats":{"atk":143,"def":149,"spa":156,"spd":134,"spe":172},"moves":["taunt","superfang"],"baseAbility":"multitype","item":"metronome","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Haxorus, L50, F","condition":"163/176","active":false,"stats":{"atk":170,"def":132,"spa":75,"spd":104,"spe":118},"moves":["electroweb","strangesteam","moongeistbeam"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]},"update":true}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: The active Pokémon is trapped
+@message
+sideupdate
+p2
+|error|[Unavailable choice] Can't move: Zebstrika's Amnesia is disabled
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Cotton Guard","id":"cottonguard","pp":15,"maxpp":16,"target":"self","disabled":true},{"move":"Amnesia","id":"amnesia","pp":29,"maxpp":32,"target":"self","disabled":true,"disabledSource":""},{"move":"Quiver Dance","id":"quiverdance","pp":30,"maxpp":32,"target":"self","disabled":true},{"move":"Hammer Arm","id":"hammerarm","pp":13,"maxpp":16,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Revelation Dance","id":"revelationdance","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Bug Bite","id":"bugbite","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Fairy Wind","id":"fairywind","pp":47,"maxpp":48,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zebstrika","details":"Zebstrika, L50, M","condition":"47/158 brn","active":true,"stats":{"atk":133,"def":99,"spa":119,"spd":78,"spe":141},"moves":["cottonguard","amnesia","quiverdance","hammerarm"],"baseAbility":"sapsipper","item":"metronome","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: X","details":"Quilladin, L50, M","condition":"125/150","active":true,"stats":{"atk":113,"def":116,"spa":105,"spd":90,"spe":70},"moves":["imprison","revelationdance","bugbite","fairywind"],"baseAbility":"overgrow","item":"loadeddice","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Cutiefly","details":"Cutiefly, L50, M","condition":"0 fnt","active":false,"stats":{"atk":93,"def":70,"spa":77,"spd":73,"spe":96},"moves":["disable"],"baseAbility":"honeygather","item":"","pokeball":"pokeball","ability":"honeygather","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Heat, L50","condition":"94/135 psn","active":false,"stats":{"atk":103,"def":131,"spa":134,"spd":128,"spe":122},"moves":["swagger"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]},"update":true}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You sent more choices than unfainted Pokémon.
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"gen5,de51b3843b3fbe0e","turns":10,"p1":"Alice","p2":"Bob","p1team":[{"name":"Poltchageist","species":"Poltchageist-Artisan","item":"Rusted Shield","ability":"Hospitality","moves":["Glare"],"nature":"Careful","evs":{"hp":6,"atk":0,"def":9,"spa":208,"spd":62,"spe":218},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Haxorus","item":"","ability":"Unnerve","moves":["Electroweb","Strange Steam","Moongeist Beam"],"nature":"Impish","evs":{"hp":198,"atk":27,"def":77,"spa":31,"spd":114,"spe":6},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Zoë","species":"Noivern","item":"Choice Band","ability":"Infiltrator","moves":["Horn Leech","Cotton Spore","Round","Lick"],"nature":"Hardy","evs":{"hp":8,"atk":6,"def":5,"spa":30,"spd":247,"spe":136},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Empoleon","species":"Empoleon","item":"Luminous Moss","ability":"Shadow Tag","moves":["Steam Eruption","Hydro Steam","Mortal Spin","Charm"],"nature":"Adamant","evs":{"hp":6,"atk":10,"def":0,"spa":148,"spd":185,"spe":161},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Salandit","species":"Salandit","item":"Damp Rock","ability":"Corrosion","moves":["Taunt","Frost Breath","Sludge Wave"],"nature":"Hasty","evs":{"hp":41,"atk":45,"def":100,"spa":165,"spd":142,"spe":12},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Arceus","species":"Arceus-Psychic","item":"Metronome","ability":"Multitype","moves":["Taunt","Super Fang"],"nature":"Naive","evs":{"hp":32,"atk":21,"def":69,"spa":126,"spd":70,"spe":132},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Rotom","species":"Rotom-Heat","item":"","ability":"Levitate","moves":["Swagger"],"nature":"Brave","evs":{"hp":79,"atk":73,"def":29,"spa":73,"spd":4,"spe":238},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Zebstrika","species":"Zebstrika","item":"Metronome","ability":"Sap Sipper","moves":["Cotton Guard","Amnesia","Quiver Dance","Hammer Arm"],"nature":"Rash","evs":{"hp":65,"atk":104,"def":129,"spa":72,"spd":34,"spe":37},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Cutiefly","species":"Cutiefly","item":"Ganlon Berry","ability":"Honey Gather","moves":["Disable"],"nature":"Sassy","evs":{"hp":79,"atk":225,"def":78,"spa":14,"spd":55,"spe":21},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"X","species":"Quilladin","item":"Loaded Dice","ability":"Overgrow","moves":["Imprison","Revelation Dance","Bug Bite","Fairy Wind"],"nature":"Sassy","evs":{"hp":112,"atk":122,"def":6,"spa":234,"spd":29,"spe":5},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Slugma","species":"Slugma","item":"","ability":"Magma Armor","moves":["Disable","Torch Song","Aqua Cutter"],"nature":"Mild","evs":{"hp":1,"atk":58,"def":93,"spa":8,"spd":147,"spe":194},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Trumbeak","species":"Trumbeak","item":"Iapapa Berry","ability":"Skill Link","moves":["Salt Cure","Aqua Jet","Decorate"],"nature":"Brave","evs":{"hp":198,"atk":14,"def":8,"spa":243,"spd":4,"spe":43},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[4,3],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50\",\"seed\":\"gen5,de51b3843b3fbe0e\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Poltchageist-Artisan||RustedShield|Hospitality|Glare|Careful|6,,9,208,62,218||||50|,,,,,Dark]Big Tony's Pal|Haxorus||Unnerve|Electroweb,StrangeSteam,MoongeistBeam|Impish|198,27,77,31,114,6|F|||50|,,,,,Stellar]Zoë|Noivern|ChoiceBand|Infiltrator|HornLeech,CottonSpore,Round,Lick|Hardy|8,6,5,30,247,136||||50|,,,,,Bug]Empoleon||LuminousMoss|ShadowTag|SteamEruption,HydroSteam,MortalSpin,Charm|Adamant|6,10,,148,185,161||||50|,,,,,Fairy]Salandit||DampRock|Corrosion|Taunt,FrostBreath,SludgeWave|Hasty|41,45,100,165,142,12||||50|,,,,,Normal]Arceus-Psychic||Metronome|Multitype|Taunt,SuperFang|Naive|32,21,69,126,70,132|||S|50|,,,,,Flying\",\"rating\":1500}",">player p2 {\"name\":\"Bob\",\"team\":\"Rotom-Heat|||Levitate|Swagger|Brave|79,73,29,73,4,238||||50|,,,,,Poison]Zebstrika||Metronome|SapSipper|CottonGuard,Amnesia,QuiverDance,HammerArm|Rash|65,104,129,72,34,37||||50|,,,,,Steel]Cutiefly||GanlonBerry|HoneyGather|Disable|Sassy|79,225,78,14,55,21|M|||50|,,,,,Fairy]X|Quilladin|LoadedDice|Overgrow|Imprison,RevelationDance,BugBite,FairyWind|Sassy|112,122,6,234,29,5||||50|,,,,,Dark]Slugma|||MagmaArmor|Disable,TorchSong,AquaCutter|Mild|1,58,93,8,147,194||||50|,,,,,Bug]Trumbeak||IapapaBerry|SkillLink|SaltCure,AquaJet,Decorate|Brave|198,14,8,243,4,43|||S|50|,,,,,Ice\"}",">p1 team 6, 4, 3, 2",">p2 team 2, 3, 1, 4",">p1 move superfang -2, move charm +2 terastallize",">p2 move quiverdance, move disable -1",">p1 move superfang -2, move charm +1",">p2 move amnesia, move disable +2",">p1 switch 3, move steameruption +2",">p2 move amnesia, move disable -1",">p1 move hornleech, move steameruption",">p2 move amnesia, move disable +1 terastallize",">p1 move struggle, move steameruption +2",">p2 move cottonguard, move disable",">p2 pass, switch 3",">p1 switch 3, move mortalspin",">p2 move quiverdance, move swagger +1",">p1 move taunt +1, switch 4",">p2 move hammerarm +2, move swagger +1",">p1 switch 3, move electroweb",">p2 move hammerarm -2, switch 4",">p1 move lick -2, switch 4",">p2 move hammerarm +1, move fairywind +2",">forcetie"]}

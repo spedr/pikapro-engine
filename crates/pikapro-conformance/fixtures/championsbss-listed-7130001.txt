@@ -1,0 +1,495 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed be10 a81b ab69 efe4
+genders drawn
+validate gen9championsbssregmc
+team p1
+Basculegion (M) @ Mystic Water
+Ability: Adaptability
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Hasty Nature
+- Wave Crash
+- Aqua Jet
+- Flip Turn
+- Shadow Ball
+
+Simisage (M) @ Leftovers
+Ability: Overgrow
+Level: 50
+Shiny: Yes
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Energy Ball
+- Nasty Plot
+- Focus Blast
+- Substitute
+
+Dragalge-Mega (M) @ Dragalgite
+Ability: Regenerator
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Mild Nature
+- Focus Blast
+- Flip Turn
+- Draco Meteor
+- Sludge Bomb
+
+Gallade (M) @ Choice Scarf
+Ability: Sharpness
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Sacred Sword
+- Psycho Cut
+- Leaf Blade
+- Night Slash
+
+Overqwil (F) @ Life Orb
+Ability: Intimidate
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Crunch
+- Gunk Shot
+- Swords Dance
+- Agility
+
+Froslass (F) @ Wide Lens
+Ability: Cursed Body
+Level: 50
+EVs: 32 HP / 2 Def / 32 Spe
+Jolly Nature
+- Spikes
+- Poltergeist
+- Triple Axel
+- Taunt
+end
+team p2
+Scizor (M) @ Leftovers
+Ability: Technician
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Impish Nature
+- Roost
+- Bullet Punch
+- Defog
+- U-turn
+
+Eelektross-Mega (M) @ Eelektrossite
+Ability: Eelevate
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Coil
+- Drain Punch
+- Supercell Slam
+- Knock Off
+
+Big Tony's Pal (Espeon) (M) @ Life Orb
+Ability: Magic Bounce
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Calm Mind
+- Psychic
+- Morning Sun
+- Alluring Voice
+
+Politoed (M) @ Chesto Berry
+Ability: Drizzle
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Rest
+- Haze
+- Ice Beam
+- Surf
+
+Clawitzer (M) @ Choice Scarf
+Ability: Mega Launcher
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Hasty Nature
+- Dark Pulse
+- Water Pulse
+- Ice Beam
+- U-turn
+
+Meowscarada (F) @ Focus Sash
+Ability: Protean
+Level: 50
+Shiny: Yes
+EVs: 32 HP / 2 Def / 32 Spe
+Jolly Nature
+- Flower Trick
+- Toxic Spikes
+- Knock Off
+- U-turn
+end
+choice p1 team 324
+choice p2 team 153
+choice p1 move 1
+choice p2 default
+choice p1 move 2 mega
+choice p2 move 3
+choice p1 switch Simisage
+choice p2 switch clawitzer
+choice p1 switch gallade
+choice p2 move Dark Pulse
+choice p1 move 3
+choice p2 switch 3
+choice p1 switch 3
+choice p2 move 3
+choice p1 default
+choice p2 move 2
+choice p1 switch dragalge-mega
+choice p2 move 2
+choice p2 switch 2
+choice p1 move 4
+choice p2 move 4
+choice p1 move 4
+choice p2 move 4
+choice p1 switch 2
+choice p2 move 1
+choice p1 move 2
+choice p2 move bulletpunch
+choice p1 move 4
+choice p1 switch 3
+choice p2 move u-turn
+choice p1 move 2
+choice p2 move 3
+choice p1 move 2
+choice p2 move 2
+choice p1 move 2
+choice p2 move 4
+choice p1 move 2
+expect |t:|
+expect |gametype|singles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Basculegion, L50, M|
+expect |poke|p1|Simisage, L50, M, shiny|
+expect |poke|p1|Dragalge, L50, M|
+expect |poke|p1|Gallade, L50, M, shiny|
+expect |poke|p1|Overqwil, L50, F|
+expect |poke|p1|Froslass, L50, F|
+expect |poke|p2|Scizor, L50, M|
+expect |poke|p2|Eelektross, L50, M|
+expect |poke|p2|Espeon, L50, M|
+expect |poke|p2|Politoed, L50, M|
+expect |poke|p2|Clawitzer, L50, M|
+expect |poke|p2|Meowscarada, L50, F, shiny|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Dragalge|Dragalge, L50, M|172/172
+expect |switch|p1a: Dragalge|Dragalge, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Scizor|Scizor, L50, M|177/177
+expect |switch|p2a: Scizor|Scizor, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Scizor|Roost||[still]
+expect |-fail|p2a: Scizor|heal
+expect |move|p1a: Dragalge|Focus Blast|p2a: Scizor
+expect |rng|100|60
+expect |rng|24|7
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Scizor|102/177
+expect |-damage|p2a: Scizor|57/100
+expect |rng|100|75
+expect |
+expect |split|p2
+expect |-heal|p2a: Scizor|113/177|[from] item: Leftovers
+expect |-heal|p2a: Scizor|63/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |detailschange|p1a: Dragalge|Dragalge-Mega, L50, M
+expect |-mega|p1a: Dragalge|Dragalge|Dragalgite
+expect |move|p2a: Scizor|Defog|p1a: Dragalge
+expect |-unboost|p1a: Dragalge|evasion|1
+expect |move|p1a: Dragalge|Flip Turn|p2a: Scizor
+expect |rng|100|92
+expect |rng|24|8
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Scizor|96/177
+expect |-damage|p2a: Scizor|54/100
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Simisage|Simisage, L50, M, shiny|182/182|[from] Flip Turn
+expect |switch|p1a: Simisage|Simisage, L50, M, shiny|100/100|[from] Flip Turn
+expect |
+expect |split|p2
+expect |-heal|p2a: Scizor|107/177|[from] item: Leftovers
+expect |-heal|p2a: Scizor|60/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Gallade|Gallade, L50, M, shiny|145/145
+expect |switch|p1a: Gallade|Gallade, L50, M, shiny|100/100
+expect |split|p2
+expect |switch|p2a: Clawitzer|Clawitzer, L50, M|148/148
+expect |switch|p2a: Clawitzer|Clawitzer, L50, M|100/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1a: Gallade|Leaf Blade|p2a: Clawitzer
+expect |rng|100|27
+expect |rng|8|3
+expect |rng|16|8
+expect |-supereffective|p2a: Clawitzer|1
+expect |split|p2
+expect |-damage|p2a: Clawitzer|0 fnt
+expect |-damage|p2a: Clawitzer|0 fnt
+expect |faint|p2a: Clawitzer
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Big Tony's Pal|Espeon, L50, M|142/142
+expect |switch|p2a: Big Tony's Pal|Espeon, L50, M|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Simisage|Simisage, L50, M, shiny|182/182
+expect |switch|p1a: Simisage|Simisage, L50, M, shiny|100/100
+expect |move|p2a: Big Tony's Pal|Morning Sun|p2a: Big Tony's Pal
+expect |-fail|p2a: Big Tony's Pal|heal
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Big Tony's Pal|Psychic|p1a: Simisage
+expect |rng|100|73
+expect |rng|24|15
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Simisage|33/182
+expect |-damage|p1a: Simisage|18/100
+expect |rng|100|14
+expect |split|p2
+expect |-damage|p2a: Big Tony's Pal|128/142|[from] item: Life Orb
+expect |-damage|p2a: Big Tony's Pal|90/100|[from] item: Life Orb
+expect |move|p1a: Simisage|Energy Ball|p2a: Big Tony's Pal
+expect |rng|100|40
+expect |rng|24|20
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Big Tony's Pal|7/142
+expect |-damage|p2a: Big Tony's Pal|4/100
+expect |rng|100|2
+expect |-unboost|p2a: Big Tony's Pal|spd|1
+expect |
+expect |split|p1
+expect |-heal|p1a: Simisage|44/182|[from] item: Leftovers
+expect |-heal|p1a: Simisage|24/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Dragalge|Dragalge-Mega, L50, M|172/172
+expect |switch|p1a: Dragalge|Dragalge-Mega, L50, M|100/100
+expect |move|p2a: Big Tony's Pal|Psychic|p1a: Dragalge
+expect |rng|100|3
+expect |rng|24|2
+expect |rng|16|13
+expect |-supereffective|p1a: Dragalge|1
+expect |split|p1
+expect |-damage|p1a: Dragalge|37/172
+expect |-damage|p1a: Dragalge|21/100
+expect |rng|100|56
+expect |split|p2
+expect |-damage|p2a: Big Tony's Pal|0 fnt|[from] item: Life Orb
+expect |-damage|p2a: Big Tony's Pal|0 fnt|[from] item: Life Orb
+expect |faint|p2a: Big Tony's Pal
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Scizor|Scizor, L50, M|107/177
+expect |switch|p2a: Scizor|Scizor, L50, M|60/100
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2a: Scizor|U-turn|p1a: Dragalge
+expect |rng|100|54
+expect |rng|24|4
+expect |rng|16|14
+expect |-resisted|p1a: Dragalge|1
+expect |split|p1
+expect |-damage|p1a: Dragalge|10/172
+expect |-damage|p1a: Dragalge|5/100
+expect |move|p1a: Dragalge|Sludge Bomb|p2a: Scizor
+expect |-immune|p2a: Scizor
+expect |
+expect |split|p2
+expect |-heal|p2a: Scizor|118/177|[from] item: Leftovers
+expect |-heal|p2a: Scizor|66/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p2a: Scizor|U-turn|p1a: Dragalge
+expect |rng|100|29
+expect |rng|24|0
+expect |rng|16|6
+expect |-resisted|p1a: Dragalge|1
+expect |-crit|p1a: Dragalge
+expect |split|p1
+expect |-damage|p1a: Dragalge|0 fnt
+expect |-damage|p1a: Dragalge|0 fnt
+expect |faint|p1a: Dragalge
+expect |
+expect |split|p2
+expect |-heal|p2a: Scizor|129/177|[from] item: Leftovers
+expect |-heal|p2a: Scizor|72/100|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Simisage|Simisage, L50, M, shiny|44/182
+expect |switch|p1a: Simisage|Simisage, L50, M, shiny|24/100
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1a: Simisage|Nasty Plot|p1a: Simisage
+expect |-boost|p1a: Simisage|spa|2
+expect |move|p2a: Scizor|Roost|p2a: Scizor
+expect |split|p2
+expect |-heal|p2a: Scizor|177/177
+expect |-heal|p2a: Scizor|100/100
+expect |-singleturn|p2a: Scizor|move: Roost
+expect |
+expect |split|p1
+expect |-heal|p1a: Simisage|55/182|[from] item: Leftovers
+expect |-heal|p1a: Simisage|30/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p2a: Scizor|Bullet Punch|p1a: Simisage
+expect |rng|100|94
+expect |rng|24|6
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Simisage|0 fnt
+expect |-damage|p1a: Simisage|0 fnt
+expect |faint|p1a: Simisage
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Gallade|Gallade, L50, M, shiny|145/145
+expect |switch|p1a: Gallade|Gallade, L50, M, shiny|100/100
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p1a: Gallade|Psycho Cut|p2a: Scizor
+expect |rng|100|60
+expect |rng|8|7
+expect |rng|16|5
+expect |-resisted|p2a: Scizor|1
+expect |split|p2
+expect |-damage|p2a: Scizor|138/177
+expect |-damage|p2a: Scizor|77/100
+expect |move|p2a: Scizor|U-turn|p1a: Gallade
+expect |rng|100|96
+expect |rng|24|4
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Gallade|69/145
+expect |-damage|p1a: Gallade|47/100
+expect |
+expect |split|p2
+expect |-heal|p2a: Scizor|149/177|[from] item: Leftovers
+expect |-heal|p2a: Scizor|84/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1a: Gallade|Psycho Cut|p2a: Scizor
+expect |rng|100|42
+expect |rng|8|3
+expect |rng|16|3
+expect |-resisted|p2a: Scizor|1
+expect |split|p2
+expect |-damage|p2a: Scizor|109/177
+expect |-damage|p2a: Scizor|61/100
+expect |move|p2a: Scizor|Defog|p1a: Gallade
+expect |-unboost|p1a: Gallade|evasion|1
+expect |
+expect |split|p2
+expect |-heal|p2a: Scizor|120/177|[from] item: Leftovers
+expect |-heal|p2a: Scizor|67/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p2a: Scizor|Bullet Punch|p1a: Gallade
+expect |rng|100|49
+expect |rng|24|3
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Gallade|5/145
+expect |-damage|p1a: Gallade|3/100
+expect |move|p1a: Gallade|Psycho Cut|p2a: Scizor
+expect |rng|100|84
+expect |rng|8|3
+expect |rng|16|14
+expect |-resisted|p2a: Scizor|1
+expect |split|p2
+expect |-damage|p2a: Scizor|84/177
+expect |-damage|p2a: Scizor|47/100
+expect |
+expect |split|p2
+expect |-heal|p2a: Scizor|95/177|[from] item: Leftovers
+expect |-heal|p2a: Scizor|53/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p1a: Gallade|Psycho Cut|p2a: Scizor
+expect |rng|100|15
+expect |rng|8|6
+expect |rng|16|15
+expect |-resisted|p2a: Scizor|1
+expect |split|p2
+expect |-damage|p2a: Scizor|60/177
+expect |-damage|p2a: Scizor|33/100
+expect |move|p2a: Scizor|U-turn|p1a: Gallade
+expect |rng|100|94
+expect |rng|24|22
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Gallade|0 fnt
+expect |-damage|p1a: Gallade|0 fnt
+expect |faint|p1a: Gallade
+expect |
+expect |win|p2

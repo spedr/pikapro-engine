@@ -1,0 +1,391 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 9014 0afb 4034 2989
+genders drawn
+team p1
+Sirfetch’d @ Leek
+Ability: Steadfast
+Level: 50
+Tera Type: Water
+EVs: 20 HP / 15 Def / 22 SpA / 9 SpD
+Calm Nature
+- Thunder Fang
+- Power Trick
+- Spirit Break
+- Self-Destruct
+
+Pikachu (Wyrdeer) (M) @ Magnet
+Ability: Sap Sipper
+Level: 50
+Tera Type: Dragon
+EVs: 17 HP / 3 Atk / 26 Def / 10 SpA / 10 SpD
+Naughty Nature
+- Counter
+- Self-Destruct
+- Scary Face
+
+Squawkabilly (F) @ Damp Rock
+Ability: Hustle
+Level: 50
+Tera Type: Ice
+EVs: 11 HP / 8 Atk / 5 Def / 6 SpA / 2 SpD / 31 Spe
+Naive Nature
+- Metal Burst
+
+Sir Hops-a-Lot (Meowstic) @ Focus Band
+Ability: Keen Eye
+Level: 50
+Tera Type: Dragon
+EVs: 19 HP / 4 Atk / 5 Def / 11 SpA / 3 SpD / 17 Spe
+Relaxed Nature
+- Snore
+- Fling
+- Acid Spray
+- Icicle Crash
+
+Conkeldurr
+Ability: Iron Fist
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 2 HP / 19 Atk / 12 Def / 26 SpA / 1 SpD / 1 Spe
+Timid Nature
+- Worry Seed
+- Axe Kick
+- Psych Up
+
+Beedrill (M) @ Black Glasses
+Ability: Swarm
+Level: 50
+Shiny: Yes
+Tera Type: Ground
+EVs: 6 HP / 31 Atk / 29 Spe
+Naive Nature
+- Charm
+- Sand Tomb
+- Dragon Dance
+end
+team p2
+Pikachu (Scovillain) @ Red Card
+Ability: Chlorophyll
+Level: 50
+Tera Type: Psychic
+EVs: 9 HP / 21 Atk / 19 Def / 3 SpA / 6 SpD / 6 Spe
+Brave Nature
+- Torment
+- Last Respects
+- Endeavor
+
+Sir Hops-a-Lot (Alcremie-Ruby-Cream) (F)
+Ability: Sweet Veil
+Level: 50
+Tera Type: Rock
+EVs: 4 HP / 25 SpA / 12 SpD / 25 Spe
+Serious Nature
+- Detect
+- Supercell Slam
+- Grassy Glide
+- Meteor Beam
+
+Passimian (F)
+Ability: Receiver
+Level: 50
+Tera Type: Water
+EVs: 4 HP / 24 Atk / 6 Def / 31 SpA / 1 SpD
+Calm Nature
+- Ice Fang
+- Poison Fang
+- Dual Wingbeat
+
+Mr. Bubbles (Farfetch’d) @ Leek
+Ability: Keen Eye
+Level: 50
+Tera Type: Fairy
+EVs: 28 Atk / 21 Def / 17 SpD
+Quiet Nature
+- Dynamic Punch
+
+Glalie (M) @ Glalitite
+Ability: Moody
+Level: 50
+Tera Type: Dragon
+EVs: 8 HP / 14 Atk / 8 Def / 6 SpA / 3 SpD / 16 Spe
+Mild Nature
+- Apple Acid
+- No Retreat
+- Dig
+- Low Sweep
+
+Rillaboom (F) @ Babiri Berry
+Ability: Overgrow
+Level: 50
+Shiny: Yes
+Tera Type: Rock
+EVs: 6 HP / 7 Atk / 4 Def / 5 SpA / 26 SpD / 17 Spe
+Timid Nature
+- Volt Switch
+- Earthquake
+end
+choice p1 team 1235
+choice p2 team 3215
+choice p1 move 4, move 3 -1
+choice p2 switch 3, move 4 1
+choice p1 switch 3, pass
+choice p2 switch 4, move 1
+choice p1 switch 4, move 3 -1
+choice p2 move 2 mega, move 1
+choice p1 switch 4, move 2
+choice p1 pass, switch 4
+choice p2 move 3 2, switch 3
+choice p1 default
+choice p2 move 1,move 1 2
+choice p1 pass, move 1 2
+choice p2 move 3 2, move 3 2
+choice p1 pass, move 3 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Sirfetch’d, L50, F|
+expect |poke|p1|Wyrdeer, L50, M|
+expect |poke|p1|Squawkabilly, L50, F|
+expect |poke|p1|Meowstic, L50, M|
+expect |poke|p1|Conkeldurr, L50, M, shiny|
+expect |poke|p1|Beedrill, L50, M, shiny|
+expect |poke|p2|Scovillain, L50, F|
+expect |poke|p2|Alcremie-Ruby-Cream, L50, F|
+expect |poke|p2|Passimian, L50, F|
+expect |poke|p2|Farfetch’d, L50, F|
+expect |poke|p2|Glalie, L50, M|
+expect |poke|p2|Rillaboom, L50, F, shiny|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Sirfetch’d|Sirfetch’d, L50, F|157/157
+expect |switch|p1a: Sirfetch’d|Sirfetch’d, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Pikachu|Wyrdeer, L50, M|195/195
+expect |switch|p1b: Pikachu|Wyrdeer, L50, M|100/100
+expect |rng|2|1
+expect |split|p2
+expect |switch|p2a: Passimian|Passimian, L50, F|179/179
+expect |switch|p2a: Passimian|Passimian, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Sir Hops-a-Lot|Alcremie-Ruby-Cream, L50, F|144/144
+expect |switch|p2b: Sir Hops-a-Lot|Alcremie-Ruby-Cream, L50, F|100/100
+expect |rng|2|1
+expect |rng|2|0
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |split|p2
+expect |switch|p2a: Pikachu|Scovillain, L50, F|149/149
+expect |switch|p2a: Pikachu|Scovillain, L50, F|100/100
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Sir Hops-a-Lot|Meteor Beam||[still]
+expect |-prepare|p2b: Sir Hops-a-Lot|Meteor Beam
+expect |-boost|p2b: Sir Hops-a-Lot|spa|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Pikachu|Scary Face|p1a: Sirfetch’d
+expect |rng|100|39
+expect |-unboost|p1a: Sirfetch’d|spe|2
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Sirfetch’d|Self-Destruct|p2b: Sir Hops-a-Lot|[spread] p1b,p2a,p2b
+expect |rng|100|18
+expect |rng|100|59
+expect |rng|100|8
+expect |rng|2|1
+expect |rng|16|12
+expect |rng|2|0
+expect |rng|16|1
+expect |-crit|p2a: Pikachu
+expect |rng|2|0
+expect |rng|16|10
+expect |-crit|p2b: Sir Hops-a-Lot
+expect |split|p1
+expect |-damage|p1b: Pikachu|126/195
+expect |-damage|p1b: Pikachu|64/100
+expect |split|p2
+expect |-damage|p2a: Pikachu|18/149
+expect |-damage|p2a: Pikachu|12/100
+expect |split|p2
+expect |-damage|p2b: Sir Hops-a-Lot|14/144
+expect |-damage|p2b: Sir Hops-a-Lot|9/100
+expect |faint|p1a: Sirfetch’d
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Squawkabilly|Squawkabilly, L50, F|168/168
+expect |switch|p1a: Squawkabilly|Squawkabilly, L50, F|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Conkeldurr|Conkeldurr, L50, M, shiny|182/182
+expect |switch|p1a: Conkeldurr|Conkeldurr, L50, M, shiny|100/100
+expect |split|p2
+expect |switch|p2a: Glalie|Glalie, L50, M|163/163
+expect |switch|p2a: Glalie|Glalie, L50, M|100/100
+expect |move|p2b: Sir Hops-a-Lot|Meteor Beam|p1a: Conkeldurr|[from] lockedmove
+expect |rng|100|59
+expect |rng|24|7
+expect |rng|16|3
+expect |-resisted|p1a: Conkeldurr|1
+expect |split|p1
+expect |-damage|p1a: Conkeldurr|113/182
+expect |-damage|p1a: Conkeldurr|62/100
+expect |move|p1b: Pikachu|Scary Face|p1a: Conkeldurr
+expect |rng|100|29
+expect |-unboost|p1a: Conkeldurr|spe|2
+expect |
+expect |rng|5|3
+expect |rng|4|3
+expect |-ability|p2a: Glalie|Moody|boost
+expect |-boost|p2a: Glalie|spd|2
+expect |-unboost|p2a: Glalie|spe|1
+expect |upkeep
+expect |turn|3
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Squawkabilly|Squawkabilly, L50, F|168/168
+expect |switch|p1a: Squawkabilly|Squawkabilly, L50, F|100/100
+expect |detailschange|p2a: Glalie|Glalie-Mega, L50, M
+expect |-mega|p2a: Glalie|Glalie|Glalitite
+expect |rng|2|0
+expect |move|p2b: Sir Hops-a-Lot|Detect|p2b: Sir Hops-a-Lot
+expect |-singleturn|p2b: Sir Hops-a-Lot|Protect
+expect |rng|2|0
+expect |move|p2a: Glalie|No Retreat|p2a: Glalie
+expect |-boost|p2a: Glalie|atk|1
+expect |-boost|p2a: Glalie|def|1
+expect |-boost|p2a: Glalie|spa|1
+expect |-boost|p2a: Glalie|spd|1
+expect |-boost|p2a: Glalie|spe|1
+expect |-start|p2a: Glalie|move: No Retreat
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: Pikachu|Self-Destruct|p2b: Sir Hops-a-Lot|[spread] p1a,p2a
+expect |-activate|p2b: Sir Hops-a-Lot|move: Protect
+expect |rng|100|36
+expect |rng|100|61
+expect |rng|24|13
+expect |rng|16|6
+expect |rng|24|18
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Squawkabilly|0 fnt
+expect |-damage|p1a: Squawkabilly|0 fnt
+expect |split|p2
+expect |-damage|p2a: Glalie|78/163
+expect |-damage|p2a: Glalie|47/100
+expect |faint|p1b: Pikachu
+expect |faint|p1a: Squawkabilly
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Conkeldurr|Conkeldurr, L50, M, shiny|113/182
+expect |switch|p1b: Conkeldurr|Conkeldurr, L50, M, shiny|62/100
+expect |turn|4
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Passimian|Passimian, L50, F|179/179
+expect |switch|p2b: Passimian|Passimian, L50, F|100/100
+expect |move|p2a: Glalie|Dig||[still]
+expect |-prepare|p2a: Glalie|Dig
+expect |move|p1b: Conkeldurr|Worry Seed|p2a: Glalie|[miss]
+expect |-miss|p1b: Conkeldurr|p2a: Glalie
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2a: Glalie|Dig|p1b: Conkeldurr|[from] lockedmove
+expect |rng|100|30
+expect |rng|24|20
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Conkeldurr|49/182
+expect |-damage|p1b: Conkeldurr|26/100
+expect |move|p2b: Passimian|Ice Fang|p1b: Conkeldurr
+expect |rng|100|5
+expect |rng|24|14
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1b: Conkeldurr|17/182
+expect |-damage|p1b: Conkeldurr|9/100
+expect |rng|100|74
+expect |rng|100|90
+expect |move|p1b: Conkeldurr|Worry Seed|p2b: Passimian
+expect |rng|100|24
+expect |-ability|p2b: Passimian|Insomnia|Receiver|[from] move: Worry Seed
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Glalie|Dig||[still]
+expect |-prepare|p2a: Glalie|Dig
+expect |move|p2b: Passimian|Dual Wingbeat|p1b: Conkeldurr
+expect |rng|100|9
+expect |rng|24|19
+expect |rng|16|12
+expect |-supereffective|p1b: Conkeldurr|1
+expect |split|p1
+expect |-damage|p1b: Conkeldurr|0 fnt
+expect |-damage|p1b: Conkeldurr|0 fnt
+expect |faint|p1b: Conkeldurr
+expect |-hitcount|p1: Conkeldurr|1
+expect |
+expect |win|p2

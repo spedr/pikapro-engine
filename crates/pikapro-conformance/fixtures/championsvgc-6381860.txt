@@ -1,0 +1,629 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 4bd2 ee09 2ce6 0eb8
+genders drawn
+team p1
+Gourgeist-Small @ Icy Rock
+Ability: Insomnia
+Level: 50
+Tera Type: Grass
+EVs: 18 HP / 4 Atk / 15 Def / 8 SpA / 5 SpD / 13 Spe
+Quiet Nature
+- Chilly Reception
+- Glaive Rush
+
+Aromatisse @ White Herb
+Ability: Healer
+Level: 50
+Tera Type: Dragon
+EVs: 13 Def / 25 SpA / 3 SpD / 25 Spe
+Bashful Nature
+- Acid Armor
+- Detect
+- Electrify
+- Electroweb
+
+ThisNameIsFarTooLongToKeep (Delphox) @ Delphoxite
+Ability: Magician
+Level: 50
+Tera Type: Poison
+EVs: 9 HP / 8 Atk / 8 Def / 13 SpA / 13 SpD / 3 Spe
+Timid Nature
+- Hypnosis
+
+Pikachu (Manectric) @ Manectite
+Ability: Lightning Rod
+Level: 50
+Tera Type: Ice
+EVs: 10 HP / 26 Atk / 4 Def / 21 SpA / 1 SpD / 4 Spe
+Quiet Nature
+- Jaw Lock
+- Overdrive
+- Low Kick
+- Grass Knot
+
+Torkoal (F) @ Hard Stone
+Ability: Drought
+Level: 50
+Tera Type: Bug
+EVs: 11 HP / 8 Atk / 11 Def / 9 SpA / 7 SpD / 20 Spe
+Lax Nature
+- Darkest Lariat
+- Stone Axe
+- Aurora Veil
+- Seed Bomb
+
+Garbodor (F) @ Light Ball
+Ability: Stench
+Level: 50
+Tera Type: Rock
+EVs: 8 HP / 25 Atk / 21 Def / 10 SpA
+Careful Nature
+- Fling
+end
+team p2
+Sparky (Sandaconda)
+Ability: Sand Veil
+Level: 50
+Tera Type: Psychic
+EVs: 16 HP / 9 Atk / 5 Def / 18 SpA / 5 SpD / 11 Spe
+Lonely Nature
+- Toxic
+
+Rhyperior (F)
+Ability: Reckless
+Level: 50
+Tera Type: Bug
+EVs: 12 HP / 8 Atk / 2 Def / 5 SpA / 24 SpD / 15 Spe
+Brave Nature
+- Worry Seed
+- Stone Edge
+
+Quaquaval @ Never-Melt Ice
+Ability: Torrent
+Level: 50
+Tera Type: Ground
+EVs: 8 HP / 18 Atk / 3 SpA / 27 SpD / 4 Spe
+Timid Nature
+- Double-Edge
+- Yawn
+- Soak
+- Trick Room
+
+Tsareena (F)
+Ability: Queenly Majesty
+Level: 50
+Tera Type: Ice
+EVs: 32 Def / 7 SpA / 26 SpD
+Adamant Nature
+- Aqua Jet
+- Calm Mind
+
+Alcremie @ Black Belt
+Ability: Aroma Veil
+Level: 50
+Tera Type: Ghost
+EVs: 15 HP / 8 Atk / 29 Def / 6 SpA / 8 SpD
+Calm Nature
+- Rock Polish
+- Foul Play
+
+Vivillon-Jungle (F)
+Ability: Friend Guard
+Level: 50
+Tera Type: Dragon
+EVs: 17 Atk / 27 Def / 1 SpA / 21 Spe
+Timid Nature
+- Bulk Up
+- Aqua Step
+- Steel Beam
+end
+choice p1 team 1456
+choice p2 team 4623
+choice p1 move 1, move 1 1
+choice p2 move aquajet 1,move Steel Beam +2
+choice p1 switch 4, pass
+choice p2 move 1 2, move 2 1
+choice p1 move 1 2, move 1 1 mega
+choice p2 move 1 2, move 2 1
+choice p1 switch 4, move 1 1
+choice p2 move 1 -2, move 2 -1
+choice p1 switch 4, move 1 1
+choice p2 move 2, move 3 1
+choice p1 switch torkoal,move lowkick 2
+choice p2 pass, switch 4
+choice p1 move Stone Axe 1, move 3 +1
+choice p2 move Aqua Jet +2,move 3 +1
+choice p2 switch 3, pass
+choice p1 move 4 2, move 1 2
+choice p2 move stoneedge -2, move 3 -1
+choice p1 move 2 1, move 3 1
+choice p2 move 2 -2 ,  move Trick Room
+choice p1 switch 3, move 1 -1
+choice p2 move 2 1,skip
+choice p1 move 1 -2, move 3 -1
+choice p2 move 1 1, pass
+choice p1 move 1 -2, move 2
+choice p2 move 1 2, pass
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Gourgeist-Small, L50, F|
+expect |poke|p1|Aromatisse, L50, M|
+expect |poke|p1|Delphox, L50, F|
+expect |poke|p1|Manectric, L50, F|
+expect |poke|p1|Torkoal, L50, F|
+expect |poke|p1|Garbodor, L50, F|
+expect |poke|p2|Sandaconda, L50, F|
+expect |poke|p2|Rhyperior, L50, F|
+expect |poke|p2|Quaquaval, L50, M|
+expect |poke|p2|Tsareena, L50, F|
+expect |poke|p2|Alcremie, L50, F|
+expect |poke|p2|Vivillon-Jungle, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Gourgeist|Gourgeist-Small, L50, F|148/148
+expect |switch|p1a: Gourgeist|Gourgeist-Small, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Pikachu|Manectric, L50, F|155/155
+expect |switch|p1b: Pikachu|Manectric, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Tsareena|Tsareena, L50, F|147/147
+expect |switch|p2a: Tsareena|Tsareena, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Vivillon|Vivillon-Jungle, L50, F|155/155
+expect |switch|p2b: Vivillon|Vivillon-Jungle, L50, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Tsareena|Aqua Jet|p1a: Gourgeist
+expect |rng|100|35
+expect |rng|24|23
+expect |rng|16|5
+expect |-resisted|p1a: Gourgeist|1
+expect |split|p1
+expect |-damage|p1a: Gourgeist|139/148
+expect |-damage|p1a: Gourgeist|93/100
+expect |move|p2b: Vivillon|Steel Beam|p1b: Pikachu
+expect |rng|100|15
+expect |rng|24|18
+expect |rng|16|0
+expect |-resisted|p1b: Pikachu|1
+expect |split|p1
+expect |-damage|p1b: Pikachu|112/155
+expect |-damage|p1b: Pikachu|72/100
+expect |split|p2
+expect |-damage|p2b: Vivillon|77/155|[from] steelbeam
+expect |-damage|p2b: Vivillon|49/100|[from] steelbeam
+expect |-prepare|p1a: Gourgeist|Chilly Reception|[premajor]
+expect |move|p1a: Gourgeist|Chilly Reception|p1a: Gourgeist
+expect |-weather|Snowscape
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Garbodor|Garbodor, L50, F|163/163|[from] Chilly Reception
+expect |switch|p1a: Garbodor|Garbodor, L50, F|100/100|[from] Chilly Reception
+expect |move|p1b: Pikachu|Jaw Lock|p2a: Tsareena
+expect |rng|100|71
+expect |rng|24|6
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Tsareena|126/147
+expect |-damage|p2a: Tsareena|85/100
+expect |-activate|p1b: Pikachu|trapped
+expect |-activate|p2a: Tsareena|trapped
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |detailschange|p1b: Pikachu|Manectric-Mega, L50, F
+expect |-mega|p1b: Pikachu|Manectric|Manectite
+expect |-ability|p1b: Pikachu|Intimidate|boost
+expect |-unboost|p2a: Tsareena|atk|1
+expect |-unboost|p2b: Vivillon|atk|1
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Tsareena|Aqua Jet|p1b: Pikachu
+expect |rng|100|0
+expect |rng|24|6
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Pikachu|94/155
+expect |-damage|p1b: Pikachu|60/100
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Vivillon|Aqua Step|p1a: Garbodor
+expect |rng|100|25
+expect |rng|24|0
+expect |rng|16|2
+expect |-crit|p1a: Garbodor
+expect |split|p1
+expect |-damage|p1a: Garbodor|128/163
+expect |-damage|p1a: Garbodor|78/100
+expect |rng|100|21
+expect |-boost|p2b: Vivillon|spe|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Pikachu|Jaw Lock|p2a: Tsareena
+expect |rng|100|59
+expect |rng|24|12
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Tsareena|104/147
+expect |-damage|p2a: Tsareena|70/100
+expect |move|p1a: Garbodor|Fling|p2b: Vivillon
+expect |rng|100|15
+expect |rng|24|15
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Vivillon|59/155
+expect |-damage|p2b: Vivillon|38/100
+expect |rng|100|94
+expect |rng|100|94
+expect |-status|p2b: Vivillon|par
+expect |-enditem|p1a: Garbodor|Light Ball|[from] move: Fling
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Gourgeist|Gourgeist-Small, L50, F|139/148
+expect |switch|p1a: Gourgeist|Gourgeist-Small, L50, F|93/100
+expect |move|p2a: Tsareena|Aqua Jet|p1b: Pikachu
+expect |rng|100|24
+expect |rng|24|6
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1b: Pikachu|77/155
+expect |-damage|p1b: Pikachu|49/100
+expect |move|p1b: Pikachu|Jaw Lock|p2a: Tsareena
+expect |rng|100|29
+expect |rng|24|6
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Tsareena|85/147
+expect |-damage|p2a: Tsareena|57/100
+expect |rng|8|6
+expect |move|p2b: Vivillon|Aqua Step|p1a: Gourgeist
+expect |rng|100|8
+expect |rng|24|21
+expect |rng|16|2
+expect |-resisted|p1a: Gourgeist|1
+expect |split|p1
+expect |-damage|p1a: Gourgeist|133/148
+expect |-damage|p1a: Gourgeist|89/100
+expect |rng|100|11
+expect |-boost|p2b: Vivillon|spe|1
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |rng|2|0
+expect |rng|2|1
+expect |upkeep
+expect |rng|2|1
+expect |turn|4
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |split|p1
+expect |switch|p1a: Garbodor|Garbodor, L50, F|128/163
+expect |switch|p1a: Garbodor|Garbodor, L50, F|78/100
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Tsareena|Aqua Jet|p2b: Vivillon
+expect |rng|100|72
+expect |rng|24|15
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Vivillon|41/155 par
+expect |-damage|p2b: Vivillon|26/100 par
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Pikachu|Jaw Lock|p2a: Tsareena
+expect |rng|100|5
+expect |rng|24|17
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Tsareena|63/147
+expect |-damage|p2a: Tsareena|42/100
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|8|1
+expect |move|p2b: Vivillon|Aqua Step|p2a: Tsareena
+expect |rng|100|63
+expect |rng|24|12
+expect |rng|16|3
+expect |-resisted|p2a: Tsareena|1
+expect |split|p2
+expect |-damage|p2a: Tsareena|59/147
+expect |-damage|p2a: Tsareena|40/100
+expect |rng|100|84
+expect |-boost|p2b: Vivillon|spe|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Torkoal|Torkoal, L50, F|156/156
+expect |switch|p1a: Torkoal|Torkoal, L50, F|100/100
+expect |-weather|SunnyDay|[from] ability: Drought|[of] p1a: Torkoal
+expect |rng|8|6
+expect |move|p2b: Vivillon|Steel Beam|p1a: Torkoal
+expect |rng|100|73
+expect |rng|24|8
+expect |rng|16|7
+expect |-resisted|p1a: Torkoal|1
+expect |split|p1
+expect |-damage|p1a: Torkoal|119/156
+expect |-damage|p1a: Torkoal|76/100
+expect |split|p2
+expect |-damage|p2b: Vivillon|0 fnt|[from] steelbeam
+expect |-damage|p2b: Vivillon|0 fnt|[from] steelbeam
+expect |faint|p2b: Vivillon
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Pikachu|Low Kick|p2a: Tsareena
+expect |rng|100|58
+expect |rng|24|9
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Tsareena|45/147
+expect |-damage|p2a: Tsareena|30/100
+expect |move|p2a: Tsareena|Calm Mind|p2a: Tsareena
+expect |-boost|p2a: Tsareena|spa|1
+expect |-boost|p2a: Tsareena|spd|1
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Quaquaval|Quaquaval, L50, M|168/168
+expect |switch|p2b: Quaquaval|Quaquaval, L50, M|100/100
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Tsareena|Aqua Jet|p1b: Pikachu
+expect |rng|100|56
+expect |rng|24|22
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Pikachu|69/155
+expect |-damage|p1b: Pikachu|44/100
+expect |move|p1b: Pikachu|Low Kick|p2a: Tsareena
+expect |rng|100|15
+expect |rng|24|21
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Tsareena|32/147
+expect |-damage|p2a: Tsareena|21/100
+expect |move|p2b: Quaquaval|Soak|p1a: Torkoal
+expect |rng|100|67
+expect |-start|p1a: Torkoal|typechange|Water
+expect |move|p1a: Torkoal|Stone Axe|p2a: Tsareena
+expect |rng|100|32
+expect |rng|24|0
+expect |rng|16|10
+expect |-crit|p2a: Tsareena
+expect |split|p2
+expect |-damage|p2a: Tsareena|0 fnt
+expect |-damage|p2a: Tsareena|0 fnt
+expect |rng|100|79
+expect |-sidestart|p2: p2|move: Stealth Rock
+expect |faint|p2a: Tsareena
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Rhyperior|Rhyperior, L50, F|202/202
+expect |switch|p2a: Rhyperior|Rhyperior, L50, F|100/100
+expect |split|p2
+expect |-damage|p2a: Rhyperior|190/202|[from] Stealth Rock
+expect |-damage|p2a: Rhyperior|94/100|[from] Stealth Rock
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1b: Pikachu|Jaw Lock|p2b: Quaquaval
+expect |rng|100|24
+expect |rng|24|14
+expect |rng|16|10
+expect |-resisted|p2b: Quaquaval|1
+expect |split|p2
+expect |-damage|p2b: Quaquaval|149/168
+expect |-damage|p2b: Quaquaval|88/100
+expect |-activate|p1b: Pikachu|trapped
+expect |-activate|p2b: Quaquaval|trapped
+expect |move|p2b: Quaquaval|Soak|p2a: Rhyperior
+expect |rng|100|38
+expect |-start|p2a: Rhyperior|typechange|Water
+expect |move|p2a: Rhyperior|Stone Edge|p2b: Quaquaval
+expect |rng|100|62
+expect |rng|8|7
+expect |rng|16|14
+expect |-resisted|p2b: Quaquaval|1
+expect |split|p2
+expect |-damage|p2b: Quaquaval|114/168
+expect |-damage|p2b: Quaquaval|67/100
+expect |move|p1a: Torkoal|Seed Bomb|p2b: Quaquaval
+expect |rng|100|77
+expect |rng|24|4
+expect |rng|16|9
+expect |-supereffective|p2b: Quaquaval|1
+expect |split|p2
+expect |-damage|p2b: Quaquaval|40/168
+expect |-damage|p2b: Quaquaval|23/100
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1b: Pikachu|Low Kick|p2a: Rhyperior
+expect |rng|100|95
+expect |rng|24|12
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Rhyperior|152/202
+expect |-damage|p2a: Rhyperior|75/100
+expect |move|p2a: Rhyperior|Stone Edge|p2b: Quaquaval
+expect |rng|100|36
+expect |rng|8|0
+expect |rng|16|1
+expect |-resisted|p2b: Quaquaval|1
+expect |-crit|p2b: Quaquaval
+expect |split|p2
+expect |-damage|p2b: Quaquaval|0 fnt
+expect |-damage|p2b: Quaquaval|0 fnt
+expect |faint|p2b: Quaquaval
+expect |move|p1a: Torkoal|Stone Axe|p2a: Rhyperior
+expect |rng|100|74
+expect |rng|24|5
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Rhyperior|126/202
+expect |-damage|p2a: Rhyperior|62/100
+expect |rng|100|55
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Garbodor|Garbodor, L50, F|128/163
+expect |switch|p1a: Garbodor|Garbodor, L50, F|78/100
+expect |move|p1b: Pikachu|Jaw Lock|p1a: Garbodor
+expect |rng|100|49
+expect |rng|24|19
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Garbodor|95/163
+expect |-damage|p1a: Garbodor|58/100
+expect |-activate|p1b: Pikachu|trapped
+expect |-activate|p1a: Garbodor|trapped
+expect |move|p2a: Rhyperior|Stone Edge|p1a: Garbodor
+expect |rng|100|61
+expect |rng|8|6
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Garbodor|36/163
+expect |-damage|p1a: Garbodor|22/100
+expect |
+expect |-weather|none
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1b: Pikachu|Low Kick|p1a: Garbodor
+expect |rng|100|67
+expect |rng|24|8
+expect |rng|16|10
+expect |-resisted|p1a: Garbodor|1
+expect |split|p1
+expect |-damage|p1a: Garbodor|16/163
+expect |-damage|p1a: Garbodor|9/100
+expect |move|p1a: Garbodor|Fling||[still]
+expect |-fail|p1a: Garbodor
+expect |move|p2a: Rhyperior|Worry Seed|p1a: Garbodor
+expect |rng|100|1
+expect |-ability|p1a: Garbodor|Insomnia|Stench|[from] move: Worry Seed
+expect |
+expect |upkeep
+expect |turn|11
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Pikachu|Overdrive|p2a: Rhyperior
+expect |rng|100|31
+expect |rng|24|15
+expect |rng|16|11
+expect |-supereffective|p2a: Rhyperior|1
+expect |split|p2
+expect |-damage|p2a: Rhyperior|0 fnt
+expect |-damage|p2a: Rhyperior|0 fnt
+expect |faint|p2a: Rhyperior
+expect |
+expect |win|p1
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"148/148","active":true,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"176/176","active":true,"stats":{"atk":92,"def":105,"spa":144,"spd":112,"spe":74},"moves":["acidarmor","detect","electrify","electroweb"],"baseAbility":"healer","item":"whiteherb","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Delphox, L50, F","condition":"159/159","active":false,"stats":{"atk":87,"def":100,"spa":147,"spd":133,"spe":139},"moves":["hypnosis"],"baseAbility":"magician","item":"delphoxite","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric, L50, F","condition":"155/155","active":false,"stats":{"atk":121,"def":84,"spa":160,"spd":81,"spe":116},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"lightningrod","item":"manectite","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"156/156","active":false,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"163/163","active":false,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"lightball","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sparky","details":"Sandaconda, L50, F","condition":"163/163","active":true,"stats":{"atk":149,"def":135,"spa":103,"spd":95,"spe":102},"moves":["toxic"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false},{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"202/202","active":true,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"168/168","active":false,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"147/147","active":false,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie, L50, F","condition":"155/155","active":false,"stats":{"atk":79,"def":124,"spa":136,"spd":163,"spe":84},"moves":["rockpolish","foulplay"],"baseAbility":"aromaveil","item":"blackbelt","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"155/155","active":false,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Chilly Reception","id":"chillyreception","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Glaive Rush","id":"glaiverush","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Low Kick","id":"lowkick","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":20,"maxpp":20,"target":"normal","disabled":false}],"canMegaEvo":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"148/148","active":true,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric, L50, F","condition":"155/155","active":true,"stats":{"atk":121,"def":84,"spa":160,"spd":81,"spe":116},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"lightningrod","item":"manectite","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"156/156","active":false,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"163/163","active":false,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"lightball","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":20,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Bulk Up","id":"bulkup","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Aqua Step","id":"aquastep","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Steel Beam","id":"steelbeam","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"147/147","active":true,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"155/155","active":true,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"202/202","active":false,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"168/168","active":false,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"139/148","active":true,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric, L50, F","condition":"112/155","active":true,"stats":{"atk":121,"def":84,"spa":160,"spd":81,"spe":116},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"lightningrod","item":"manectite","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"156/156","active":false,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"163/163","active":false,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"lightball","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"147/147","active":true,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"77/155","active":true,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"202/202","active":false,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"168/168","active":false,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Fling","id":"fling","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Low Kick","id":"lowkick","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":20,"maxpp":20,"target":"normal","disabled":false}],"trapped":true,"canMegaEvo":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"163/163","active":true,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"lightball","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric, L50, F","condition":"112/155","active":true,"stats":{"atk":121,"def":84,"spa":160,"spd":81,"spe":116},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"lightningrod","item":"manectite","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"156/156","active":false,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"139/148","active":false,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":20,"maxpp":20,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Bulk Up","id":"bulkup","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Aqua Step","id":"aquastep","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Steel Beam","id":"steelbeam","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"126/147","active":true,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"77/155","active":true,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"202/202","active":false,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"168/168","active":false,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Fling","id":"fling","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Low Kick","id":"lowkick","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":20,"maxpp":20,"target":"normal","disabled":false}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"128/163","active":true,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric-Mega, L50, F","condition":"94/155","active":true,"stats":{"atk":121,"def":104,"spa":193,"spd":101,"spe":143},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"156/156","active":false,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"139/148","active":false,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":20,"maxpp":20,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Bulk Up","id":"bulkup","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Aqua Step","id":"aquastep","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Steel Beam","id":"steelbeam","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"104/147","active":true,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"59/155 par","active":true,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"202/202","active":false,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"168/168","active":false,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Chilly Reception","id":"chillyreception","pp":11,"maxpp":12,"target":"all","disabled":false},{"move":"Glaive Rush","id":"glaiverush","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Low Kick","id":"lowkick","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":20,"maxpp":20,"target":"normal","disabled":false}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"133/148","active":true,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric-Mega, L50, F","condition":"77/155","active":true,"stats":{"atk":121,"def":104,"spa":193,"spd":101,"spe":143},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"156/156","active":false,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"128/163","active":false,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":20,"maxpp":20,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Bulk Up","id":"bulkup","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Aqua Step","id":"aquastep","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Steel Beam","id":"steelbeam","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"85/147","active":true,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"59/155 par","active":true,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"202/202","active":false,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"168/168","active":false,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Fling","id":"fling","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Low Kick","id":"lowkick","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":20,"maxpp":20,"target":"normal","disabled":false}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"128/163","active":true,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric-Mega, L50, F","condition":"77/155","active":true,"stats":{"atk":121,"def":104,"spa":193,"spd":101,"spe":143},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"156/156","active":false,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"133/148","active":false,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":16,"maxpp":20,"target":"normal","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":20,"maxpp":20,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Bulk Up","id":"bulkup","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Aqua Step","id":"aquastep","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Steel Beam","id":"steelbeam","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"59/147","active":true,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"41/155 par","active":true,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"202/202","active":false,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"168/168","active":false,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"119/156","active":true,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric-Mega, L50, F","condition":"77/155","active":true,"stats":{"atk":121,"def":104,"spa":193,"spd":101,"spe":143},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"128/163","active":false,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"133/148","active":false,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"45/147","active":true,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"0 fnt","active":true,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"202/202","active":false,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"168/168","active":false,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Darkest Lariat","id":"darkestlariat","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Stone Axe","id":"stoneaxe","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":20,"maxpp":20,"target":"allySide","disabled":false},{"move":"Seed Bomb","id":"seedbomb","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Low Kick","id":"lowkick","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":20,"maxpp":20,"target":"normal","disabled":false}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"119/156","active":true,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric-Mega, L50, F","condition":"77/155","active":true,"stats":{"atk":121,"def":104,"spa":193,"spd":101,"spe":143},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"128/163","active":false,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"133/148","active":false,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":16,"maxpp":20,"target":"normal","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":19,"maxpp":20,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Yawn","id":"yawn","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Soak","id":"soak","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Trick Room","id":"trickroom","pp":8,"maxpp":8,"target":"all","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"45/147","active":true,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"168/168","active":true,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"202/202","active":false,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"0 fnt","active":false,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"119/156","active":true,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric-Mega, L50, F","condition":"69/155","active":true,"stats":{"atk":121,"def":104,"spa":193,"spd":101,"spe":143},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"128/163","active":false,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"133/148","active":false,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"0 fnt","active":true,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"168/168","active":true,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"202/202","active":false,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"0 fnt","active":false,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Darkest Lariat","id":"darkestlariat","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Stone Axe","id":"stoneaxe","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":20,"maxpp":20,"target":"allySide","disabled":false},{"move":"Seed Bomb","id":"seedbomb","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Low Kick","id":"lowkick","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"119/156","active":true,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric-Mega, L50, F","condition":"69/155","active":true,"stats":{"atk":121,"def":104,"spa":193,"spd":101,"spe":143},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"128/163","active":false,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"133/148","active":false,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Worry Seed","id":"worryseed","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Stone Edge","id":"stoneedge","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Yawn","id":"yawn","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Soak","id":"soak","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Trick Room","id":"trickroom","pp":8,"maxpp":8,"target":"all","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"190/202","active":true,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"168/168","active":true,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"0 fnt","active":false,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"0 fnt","active":false,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Darkest Lariat","id":"darkestlariat","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Stone Axe","id":"stoneaxe","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":20,"maxpp":20,"target":"allySide","disabled":false},{"move":"Seed Bomb","id":"seedbomb","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":7,"maxpp":12,"target":"normal","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Low Kick","id":"lowkick","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":20,"maxpp":20,"target":"normal","disabled":false}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"119/156","active":true,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric-Mega, L50, F","condition":"69/155","active":true,"stats":{"atk":121,"def":104,"spa":193,"spd":101,"spe":143},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"128/163","active":false,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"133/148","active":false,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Worry Seed","id":"worryseed","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Stone Edge","id":"stoneedge","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Yawn","id":"yawn","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Soak","id":"soak","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Trick Room","id":"trickroom","pp":8,"maxpp":8,"target":"all","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"190/202","active":true,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"40/168","active":true,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"0 fnt","active":false,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"0 fnt","active":false,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Darkest Lariat","id":"darkestlariat","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Stone Axe","id":"stoneaxe","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":20,"maxpp":20,"target":"allySide","disabled":false},{"move":"Seed Bomb","id":"seedbomb","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":7,"maxpp":12,"target":"normal","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Low Kick","id":"lowkick","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"119/156","active":true,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric-Mega, L50, F","condition":"69/155","active":true,"stats":{"atk":121,"def":104,"spa":193,"spd":101,"spe":143},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"128/163","active":false,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"133/148","active":false,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Worry Seed","id":"worryseed","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Stone Edge","id":"stoneedge","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Yawn","id":"yawn","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Soak","id":"soak","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Trick Room","id":"trickroom","pp":8,"maxpp":8,"target":"all","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"126/202","active":true,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"0 fnt","active":true,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"0 fnt","active":false,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"0 fnt","active":false,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Fling","id":"fling","pp":11,"maxpp":12,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":6,"maxpp":12,"target":"normal","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Low Kick","id":"lowkick","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":20,"maxpp":20,"target":"normal","disabled":false}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"36/163","active":true,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"","pokeball":"pokeball","ability":"stench","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric-Mega, L50, F","condition":"69/155","active":true,"stats":{"atk":121,"def":104,"spa":193,"spd":101,"spe":143},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"119/156","active":false,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"133/148","active":false,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Worry Seed","id":"worryseed","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Stone Edge","id":"stoneedge","pp":5,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Yawn","id":"yawn","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Soak","id":"soak","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Trick Room","id":"trickroom","pp":8,"maxpp":8,"target":"all","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"126/202","active":true,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"0 fnt","active":true,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"0 fnt","active":false,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"0 fnt","active":false,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Fling","id":"fling","pp":10,"maxpp":12,"target":"normal","disabled":false}],"trapped":true},{"moves":[{"move":"Jaw Lock","id":"jawlock","pp":6,"maxpp":12,"target":"normal","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Low Kick","id":"lowkick","pp":16,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":20,"maxpp":20,"target":"normal","disabled":false}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Garbodor","details":"Garbodor, L50, F","condition":"16/163","active":true,"stats":{"atk":140,"def":123,"spa":81,"spd":112,"spe":95},"moves":["fling"],"baseAbility":"stench","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Manectric-Mega, L50, F","condition":"69/155","active":true,"stats":{"atk":121,"def":104,"spa":193,"spd":101,"spe":143},"moves":["jawlock","overdrive","lowkick","grassknot"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Torkoal","details":"Torkoal, L50, F","condition":"119/156","active":false,"stats":{"atk":113,"def":188,"spa":114,"spd":87,"spe":60},"moves":["darkestlariat","stoneaxe","auroraveil","seedbomb"],"baseAbility":"drought","item":"hardstone","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Small, L50, F","condition":"133/148","active":false,"stats":{"atk":109,"def":157,"spa":94,"spd":100,"spe":118},"moves":["chillyreception","glaiverush"],"baseAbility":"insomnia","item":"icyrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Worry Seed","id":"worryseed","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Stone Edge","id":"stoneedge","pp":5,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Yawn","id":"yawn","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Soak","id":"soak","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Trick Room","id":"trickroom","pp":8,"maxpp":8,"target":"all","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Rhyperior","details":"Rhyperior, L50, F","condition":"126/202","active":true,"stats":{"atk":184,"def":152,"spa":80,"spd":99,"spe":67},"moves":["worryseed","stoneedge"],"baseAbility":"reckless","item":"","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false},{"ident":"p2: Quaquaval","details":"Quaquaval, L50, M","condition":"0 fnt","active":true,"stats":{"atk":142,"def":100,"spa":108,"spd":122,"spe":119},"moves":["doubleedge","yawn","soak","trickroom"],"baseAbility":"torrent","item":"nevermeltice","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Tsareena","details":"Tsareena, L50, F","condition":"0 fnt","active":false,"stats":{"atk":154,"def":150,"spa":69,"spd":144,"spe":92},"moves":["aquajet","calmmind"],"baseAbility":"queenlymajesty","item":"","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-Jungle, L50, F","condition":"0 fnt","active":false,"stats":{"atk":80,"def":97,"spa":111,"spd":70,"spe":143},"moves":["bulkup","aquastep","steelbeam"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}

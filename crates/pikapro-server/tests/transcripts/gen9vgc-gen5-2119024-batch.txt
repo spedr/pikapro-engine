@@ -1,0 +1,112 @@
+# gen9vgc-gen5-2119024-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option keep-alive
+@write
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,b7d4653d04b95f4b"}
+# a comment
+>player p1 {"name":"Alice","team":"Krookodile|||Moxie|Guillotine,TarShot|Sassy|2,192,16,,250,50|F|||50|,,,,,Fire]Incineroar|||Blaze|ZapCannon|Hardy|26,26,69,12,140,235|F|||50|,,,,,Fire]Mr. Bubbles|DeoxysDefense|ZapPlate|Pressure|PsychUp|Sassy|39,15,194,207,3,44||||50|,,,,,Bug]Pikachu|PersianAlola|RoseliBerry|Rattled|Encore,Withdraw|Naughty|127,12,32,161,78,82||||50|,,,,,Rock]Sparky|Murkrow|RustedShield|Prankster|Guillotine,SheerCold,Recycle|Hardy|31,92,133,56,138,53||||50|,,,,,Grass]ThisNameIsFarTooLongToKeep|Hypno|PowerAnklet|Insomnia|BlueFlare,ElectroShot|Bashful|130,7,31,106,30,196||||50|,,,,,Psychic","rating":1500}
+@write
+>player p2 {"name":"Bob","team":"Lurantis|||Contrary|RoarofTime|Mild|209,1,128,78,32,9|M|||50|,,,,,Ground]Big Tony's Pal|ZoroarkHisui|PayapaBerry|Illusion|Tickle,TeeterDance,HeadSmash,ChargeBeam|Timid|203,46,17,56,57,128|F|||50|,,,,,Ghost]Sparky|Deino||Hustle|NoRetreat,Dive|Mild|245,18,60,30,136,18||||50|,,,,,Water]Glastrier|||ChillingNeigh|WickedBlow,DragonRush,DragonDance,Rollout|Gentle|124,10,24,196,34,99||||50|,,,,,Psychic]X|Tsareena|PomegBerry|QueenlyMajesty|Ingrain|Lonely|169,25,8,215,79,4||||50|,,,,,Psychic]Gimmighoul-Roaming||PersimBerry|RunAway|DrainingKiss,PyroBall,OrderUp|Sassy|86,5,63,195,143,8||||50|,,,,,Grass"}
+
+>p1 team 6143
+@write
+>p2 team 1425
+@write
+>p1 move 2 -2 terastallize, move 1 -1
+>forcetie
+@write
+>p1 move 1
+@write
+
+>chat after the end
+>forcewin p1
+@write
+>tiebreak
+>requestlog
+@write
+>p2 undo
+@message
+update
+|t:|
+|gametype|doubles
+|player|p1|Alice||1500
+@message
+update
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Krookodile, L50, F|
+|poke|p1|Incineroar, L50, F|
+|poke|p1|Deoxys-Defense, L50|
+|poke|p1|Persian-Alola, L50, M|
+|poke|p1|Murkrow, L50, F|
+|poke|p1|Hypno, L50, F|
+|poke|p2|Lurantis, L50, M|
+|poke|p2|Zoroark-Hisui, L50, F|
+|poke|p2|Deino, L50, M|
+|poke|p2|Glastrier, L50|
+|poke|p2|Tsareena, L50, F|
+|poke|p2|Gimmighoul-Roaming, L50|
+|teampreview|4
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Krookodile","details":"Krookodile, L50, F","condition":"170/170","active":true,"stats":{"atk":161,"def":102,"spa":85,"spd":133,"spe":106},"moves":["guillotine","tarshot"],"baseAbility":"moxie","item":"","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Incineroar","details":"Incineroar, L50, F","condition":"173/173","active":true,"stats":{"atk":138,"def":119,"spa":102,"spd":128,"spe":109},"moves":["zapcannon"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Deoxys-Defense, L50","condition":"130/130","active":false,"stats":{"atk":92,"def":204,"spa":116,"spd":198,"spe":104},"moves":["psychup"],"baseAbility":"pressure","item":"zapplate","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Pikachu","details":"Persian-Alola, L50, M","condition":"156/156","active":false,"stats":{"atk":90,"def":84,"spa":115,"spd":85,"spe":145},"moves":["encore","withdraw"],"baseAbility":"rattled","item":"roseliberry","pokeball":"pokeball","ability":"rattled","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Sparky","details":"Murkrow, L50, F","condition":"139/139","active":false,"stats":{"atk":117,"def":79,"spa":112,"spd":79,"spe":118},"moves":["guillotine","sheercold","recycle"],"baseAbility":"prankster","item":"rustedshield","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Hypno, L50, F","condition":"176/176","active":false,"stats":{"atk":94,"def":94,"spa":106,"spd":139,"spe":112},"moves":["blueflare","electroshot"],"baseAbility":"insomnia","item":"poweranklet","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Lurantis","details":"Lurantis, L50, M","condition":"171/171","active":true,"stats":{"atk":125,"def":113,"spa":121,"spd":114,"spe":66},"moves":["roaroftime"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Zoroark-Hisui, L50, F","condition":"155/155","active":true,"stats":{"atk":113,"def":82,"spa":152,"spd":87,"spe":160},"moves":["tickle","teeterdance","headsmash","chargebeam"],"baseAbility":"illusion","item":"payapaberry","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Sparky","details":"Deino, L50, M","condition":"158/158","active":false,"stats":{"atk":87,"def":70,"spa":75,"spd":87,"spe":60},"moves":["noretreat","dive"],"baseAbility":"hustle","item":"","pokeball":"pokeball","ability":"hustle","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Glastrier","details":"Glastrier, L50","condition":"191/191","active":false,"stats":{"atk":166,"def":137,"spa":110,"spd":147,"spe":62},"moves":["wickedblow","dragonrush","dragondance","rollout"],"baseAbility":"chillingneigh","item":"","pokeball":"pokeball","ability":"chillingneigh","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: X","details":"Tsareena, L50, F","condition":"168/168","active":false,"stats":{"atk":157,"def":107,"spa":97,"spd":128,"spe":93},"moves":["ingrain"],"baseAbility":"queenlymajesty","item":"pomegberry","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Gimmighoul","details":"Gimmighoul-Roaming, L50","condition":"131/131","active":false,"stats":{"atk":51,"def":53,"spa":119,"spd":91,"spe":90},"moves":["drainingkiss","pyroball","orderup"],"baseAbility":"runaway","item":"persimberry","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|switch|p1a: ThisNameIsFarTooLong|Hypno, L50, F|176/176
+|switch|p1a: ThisNameIsFarTooLong|Hypno, L50, F|176/176
+|split|p1
+|switch|p1b: Krookodile|Krookodile, L50, F|170/170
+|switch|p1b: Krookodile|Krookodile, L50, F|170/170
+|split|p2
+|switch|p2a: Lurantis|Lurantis, L50, M|171/171
+|switch|p2a: Lurantis|Lurantis, L50, M|171/171
+|split|p2
+|switch|p2b: Glastrier|Glastrier, L50|191/191
+|switch|p2b: Glastrier|Glastrier, L50|191/191
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Blue Flare","id":"blueflare","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Electro Shot","id":"electroshot","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Psychic"},{"moves":[{"move":"Guillotine","id":"guillotine","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Tar Shot","id":"tarshot","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Fire"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Hypno, L50, F","condition":"176/176","active":true,"stats":{"atk":94,"def":94,"spa":106,"spd":139,"spe":112},"moves":["blueflare","electroshot"],"baseAbility":"insomnia","item":"poweranklet","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Krookodile","details":"Krookodile, L50, F","condition":"170/170","active":true,"stats":{"atk":161,"def":102,"spa":85,"spd":133,"spe":106},"moves":["guillotine","tarshot"],"baseAbility":"moxie","item":"","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Pikachu","details":"Persian-Alola, L50, M","condition":"156/156","active":false,"stats":{"atk":90,"def":84,"spa":115,"spd":85,"spe":145},"moves":["encore","withdraw"],"baseAbility":"rattled","item":"roseliberry","pokeball":"pokeball","ability":"rattled","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Deoxys-Defense, L50","condition":"130/130","active":false,"stats":{"atk":92,"def":204,"spa":116,"spd":198,"spe":104},"moves":["psychup"],"baseAbility":"pressure","item":"zapplate","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Roar of Time","id":"roaroftime","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Wicked Blow","id":"wickedblow","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Dragon Rush","id":"dragonrush","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dragon Dance","id":"dragondance","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Rollout","id":"rollout","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Psychic"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Lurantis","details":"Lurantis, L50, M","condition":"171/171","active":true,"stats":{"atk":125,"def":113,"spa":121,"spd":114,"spe":66},"moves":["roaroftime"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Glastrier","details":"Glastrier, L50","condition":"191/191","active":true,"stats":{"atk":166,"def":137,"spa":110,"spd":147,"spe":62},"moves":["wickedblow","dragonrush","dragondance","rollout"],"baseAbility":"chillingneigh","item":"","pokeball":"pokeball","ability":"chillingneigh","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Zoroark-Hisui, L50, F","condition":"155/155","active":false,"stats":{"atk":113,"def":82,"spa":152,"spd":87,"spe":160},"moves":["tickle","teeterdance","headsmash","chargebeam"],"baseAbility":"illusion","item":"payapaberry","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: X","details":"Tsareena, L50, F","condition":"168/168","active":false,"stats":{"atk":157,"def":107,"spa":97,"spd":128,"spe":93},"moves":["ingrain"],"baseAbility":"queenlymajesty","item":"pomegberry","pokeball":"pokeball","ability":"queenlymajesty","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"gen5,b7d4653d04b95f4b","turns":1,"p1":"Alice","p2":"Bob","p1team":[{"name":"Krookodile","species":"Krookodile","item":"","ability":"Moxie","moves":["Guillotine","Tar Shot"],"nature":"Sassy","evs":{"hp":2,"atk":192,"def":16,"spa":0,"spd":250,"spe":50},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Incineroar","species":"Incineroar","item":"","ability":"Blaze","moves":["Zap Cannon"],"nature":"Hardy","evs":{"hp":26,"atk":26,"def":69,"spa":12,"spd":140,"spe":235},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Mr. Bubbles","species":"Deoxys-Defense","item":"Zap Plate","ability":"Pressure","moves":["Psych Up"],"nature":"Sassy","evs":{"hp":39,"atk":15,"def":194,"spa":207,"spd":3,"spe":44},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pikachu","species":"Persian-Alola","item":"Roseli Berry","ability":"Rattled","moves":["Encore","Withdraw"],"nature":"Naughty","evs":{"hp":127,"atk":12,"def":32,"spa":161,"spd":78,"spe":82},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sparky","species":"Murkrow","item":"Rusted Shield","ability":"Prankster","moves":["Guillotine","Sheer Cold","Recycle"],"nature":"Hardy","evs":{"hp":31,"atk":92,"def":133,"spa":56,"spd":138,"spe":53},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"ThisNameIsFarTooLongToKeep","species":"Hypno","item":"Power Anklet","ability":"Insomnia","moves":["Blue Flare","Electro Shot"],"nature":"Bashful","evs":{"hp":130,"atk":7,"def":31,"spa":106,"spd":30,"spe":196},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Lurantis","species":"Lurantis","item":"","ability":"Contrary","moves":["Roar of Time"],"nature":"Mild","evs":{"hp":209,"atk":1,"def":128,"spa":78,"spd":32,"spe":9},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Zoroark-Hisui","item":"Payapa Berry","ability":"Illusion","moves":["Tickle","Teeter Dance","Head Smash","Charge Beam"],"nature":"Timid","evs":{"hp":203,"atk":46,"def":17,"spa":56,"spd":57,"spe":128},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sparky","species":"Deino","item":"","ability":"Hustle","moves":["No Retreat","Dive"],"nature":"Mild","evs":{"hp":245,"atk":18,"def":60,"spa":30,"spd":136,"spe":18},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Glastrier","species":"Glastrier","item":"","ability":"Chilling Neigh","moves":["Wicked Blow","Dragon Rush","Dragon Dance","Rollout"],"nature":"Gentle","evs":{"hp":124,"atk":10,"def":24,"spa":196,"spd":34,"spe":99},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"X","species":"Tsareena","item":"Pomeg Berry","ability":"Queenly Majesty","moves":["Ingrain"],"nature":"Lonely","evs":{"hp":169,"atk":25,"def":8,"spa":215,"spd":79,"spe":4},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Gimmighoul","species":"Gimmighoul-Roaming","item":"Persim Berry","ability":"Run Away","moves":["Draining Kiss","Pyro Ball","Order Up"],"nature":"Sassy","evs":{"hp":86,"atk":5,"def":63,"spa":195,"spd":143,"spe":8},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[4,4],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50\",\"seed\":\"gen5,b7d4653d04b95f4b\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Krookodile|||Moxie|Guillotine,TarShot|Sassy|2,192,16,,250,50|F|||50|,,,,,Fire]Incineroar|||Blaze|ZapCannon|Hardy|26,26,69,12,140,235|F|||50|,,,,,Fire]Mr. Bubbles|DeoxysDefense|ZapPlate|Pressure|PsychUp|Sassy|39,15,194,207,3,44||||50|,,,,,Bug]Pikachu|PersianAlola|RoseliBerry|Rattled|Encore,Withdraw|Naughty|127,12,32,161,78,82||||50|,,,,,Rock]Sparky|Murkrow|RustedShield|Prankster|Guillotine,SheerCold,Recycle|Hardy|31,92,133,56,138,53||||50|,,,,,Grass]ThisNameIsFarTooLongToKeep|Hypno|PowerAnklet|Insomnia|BlueFlare,ElectroShot|Bashful|130,7,31,106,30,196||||50|,,,,,Psychic\",\"rating\":1500}",">player p2 {\"name\":\"Bob\",\"team\":\"Lurantis|||Contrary|RoarofTime|Mild|209,1,128,78,32,9|M|||50|,,,,,Ground]Big Tony's Pal|ZoroarkHisui|PayapaBerry|Illusion|Tickle,TeeterDance,HeadSmash,ChargeBeam|Timid|203,46,17,56,57,128|F|||50|,,,,,Ghost]Sparky|Deino||Hustle|NoRetreat,Dive|Mild|245,18,60,30,136,18||||50|,,,,,Water]Glastrier|||ChillingNeigh|WickedBlow,DragonRush,DragonDance,Rollout|Gentle|124,10,24,196,34,99||||50|,,,,,Psychic]X|Tsareena|PomegBerry|QueenlyMajesty|Ingrain|Lonely|169,25,8,215,79,4||||50|,,,,,Psychic]Gimmighoul-Roaming||PersimBerry|RunAway|DrainingKiss,PyroBall,OrderUp|Sassy|86,5,63,195,143,8||||50|,,,,,Grass\"}",">p1 team 6, 1, 4, 3",">p2 team 1, 4, 2, 5",">forcetie"]}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+update
+|chat|after the end
+@message
+requesteddata
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,b7d4653d04b95f4b"}
+>player p1 {"name":"Alice","team":"Krookodile|||Moxie|Guillotine,TarShot|Sassy|2,192,16,,250,50|F|||50|,,,,,Fire]Incineroar|||Blaze|ZapCannon|Hardy|26,26,69,12,140,235|F|||50|,,,,,Fire]Mr. Bubbles|DeoxysDefense|ZapPlate|Pressure|PsychUp|Sassy|39,15,194,207,3,44||||50|,,,,,Bug]Pikachu|PersianAlola|RoseliBerry|Rattled|Encore,Withdraw|Naughty|127,12,32,161,78,82||||50|,,,,,Rock]Sparky|Murkrow|RustedShield|Prankster|Guillotine,SheerCold,Recycle|Hardy|31,92,133,56,138,53||||50|,,,,,Grass]ThisNameIsFarTooLongToKeep|Hypno|PowerAnklet|Insomnia|BlueFlare,ElectroShot|Bashful|130,7,31,106,30,196||||50|,,,,,Psychic","rating":1500}
+>player p2 {"name":"Bob","team":"Lurantis|||Contrary|RoarofTime|Mild|209,1,128,78,32,9|M|||50|,,,,,Ground]Big Tony's Pal|ZoroarkHisui|PayapaBerry|Illusion|Tickle,TeeterDance,HeadSmash,ChargeBeam|Timid|203,46,17,56,57,128|F|||50|,,,,,Ghost]Sparky|Deino||Hustle|NoRetreat,Dive|Mild|245,18,60,30,136,18||||50|,,,,,Water]Glastrier|||ChillingNeigh|WickedBlow,DragonRush,DragonDance,Rollout|Gentle|124,10,24,196,34,99||||50|,,,,,Psychic]X|Tsareena|PomegBerry|QueenlyMajesty|Ingrain|Lonely|169,25,8,215,79,4||||50|,,,,,Psychic]Gimmighoul-Roaming||PersimBerry|RunAway|DrainingKiss,PyroBall,OrderUp|Sassy|86,5,63,195,143,8||||50|,,,,,Grass"}
+>p1 team 6, 1, 4, 3
+>p2 team 1, 4, 2, 5
+>forcetie
+>chat after the end
+>forcewin p1

@@ -1,0 +1,837 @@
+# gen9ou-sodium-2134002-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@option keep-alive
+@option replay omniscient
+@write
+>start {"formatid":"gen9ou","seed":"sodium,8912ed52e895946aa6ea6e682a8d3827"}
+>chat before the players
+>player p1 {"name":"Alice","team":"Flutter Mane|||Protosynthesis|BeakBlast,GlaiveRush|Quirky|103,148,120,13,33,90|||||,,,,,Bug]Sparky|Tornadus||Prankster|GyroBall,ArmorCannon|Sassy|6,9,231,42,10,200|M||||,,,,,Poison]Zoë|Dragonair|SpellTag|ShedSkin|IronTail,NightSlash|Modest|39,28,135,52,85,166|||||,,,,,Ice","avatar":"lucas"}
+>player p2 {"name":"Bob","team":"Rampardos|||SheerForce|Tackle,Psybeam,Moonlight,ChillyReception|Timid|20,92,54,63,97,89|||||,,HeavyBall,,,Normal]Torracat||MaliciousArmor|Intimidate|Chloroblast|Careful|1,196,239,21,,53|||||,,,,,Bug]Sir Hops-a-Lot|Gholdengo|KingsRock|GoodasGold|ThunderousKick|Bold|5,10,201,34,73,185|||||,,PremierBall,,,Fairy]Chikorita|||LeafGuard|PsychUp,Incinerate,MeteorMash|Serious|107,25,1,201,62,112|M||||,,,,,Flying]Chomp|Mareep||Plus|WaterGun,GrassyGlide|Modest|47,6,47,226,62,70|M||||,,,,,Stellar]Hippopotas||SportBall|SandForce|IcicleSpear|Careful|17,82,92,239,10,69|M||S||,,HeavyBall,,,Bug"}
+@write
+>p1 team 132
+>p2 team 621435
+>p2 switch 5
+@write
+>p1 move 1
+@write
+>p1 switch 3
+# a comment
+>p2 move 1
+>p1 move 2 terastallize
+>p2 switch 6
+# a comment
+>p1 move 2
+>p2 switch 4
+>p2 switch Hippopotas
+>p1 switch dragonair
+@write
+>p2 switch 3
+>requestexport
+>p1 move 1, move 1, move 1
+>p2 switch 3
+@write
+>p1 default
+>p2 switch 6
+# a comment
+>p1 switch 2
+>p1 move Armor Cannon
+>p2 switch 4
+>p2 switch 6
+>p1 switch 0x3
+>p2 move 1 terastal
+@write
+>p1 switch 3
+# a comment
+>p2 move iciclespear 1 mega
+@write
+>p2 move 1
+>p2 switch 3
+# a comment
+>p1 switch Zoë
+>p2 undo
+>p2 switch 3
+>p1 switch 2
+>p2 move Psybeam
+@write
+>reseed gen5,1fb82a97c385e65d
+>p1 switch 3
+>p2   move 2  
+>p2 switch 3
+>p1 move 2 +1 mega
+>p1 switch 2
+>p2 switch 2
+>p2 undo
+@write
+>p2 switch 3
+>p1 move 2
+>p2 move 1
+
+>p1 switch -0
+>p1 move nightslash 1 terastallize
+
+>p1 switch flutter mane
+@write
+>p1 move 1
+>p2 switch hippopotas
+
+>p1 switch dragonair
+>p2 switch 2
+>p2 switch 4
+>p1 move irontail
+>p2 switch Torracat
+@write
+# a comment
+>p1 switch 2
+>p2 switch 2
+>p1 move 1
+
+>p2 move 99999999999999999999
+>p2 switch Sir Hops-a-Lot
+>p1 move 2
+>p2 move 1
+@write
+
+>p1 move 2
+>p2 switch 1, switch 1
+>p2 switch 2
+# a comment
+>p2 move 1
+>p1 move 1　1
+>p2 switch Sir Hops-a-Lot
+@write
+>p1 undo
+>p1 pass, pass
+>p1 move 1
+>p2 switch 2
+@write
+>p1 move Glaive Rush
+
+>p2 switch GHOLDENGO
+
+>p1 switch 3
+>p2 switch 3
+>p1 move 1 1
+>p2 move 2
+@write
+>p2 move 3
+>p1 switch 2
+>p2 switch 3
+>p1 switch Flutter Mane
+>p2 move 1
+>p1 default
+@write
+>p1 switch 2
+>p2 move 1
+>p1 default
+>p2 switch 3
+# a comment
+>p1 move 1
+>p1 switch Zoë
+>p2 switch 3
+@write
+>p1 switch
+>p2 switch 3
+>p1 move Iron Tail
+
+>p1 move Iron Tail +1
+>p1 move Iron Tail +1
+# a comment
+>p2 move 2
+@write
+# a comment
+>p2 switch 3
+# a comment
+>p2 move 1
+>p1 default
+>p1 move Night Slash
+@write
+>p2 move 1
+# a comment
+>p2 move 1
+# a comment
+>p1 move 1
+>p2 move 1
+# a comment
+>p1 switch 3
+@write
+>p2 move 1
+>p1 move Beak Blast
+# a comment
+>p1 move 2 2
+>p1 switch Zoë
+@write
+>p2 move 1
+# a comment
+>p1 switch 3
+>p1 move 2
+
+>p2 move 1
+@write
+# a comment
+>p1 undo
+>p2 move thunderouskick
+>p1 move Beak Blast
+@write
+# a comment
+>p2 move 1
+>p2 move 1
+@write
+>p1 move 1
+@write
+
+>p1 move 1
+>chat after the end
+>forcewin p1
+>tiebreak
+>requestlog
+>p2 undo
+@message
+|t:|
+|gametype|singles
+|chat|before the players
+|player|p1|Alice|lucas|
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] OU
+|rule|HP Percentage Mod: HP is shown in percentages
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|Species Clause: Limit one of each Pokémon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Items Clause: Evasion items are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|rule|Sleep Moves Clause: Sleep-inducing moves are banned
+|clearpoke
+|poke|p1|Flutter Mane|
+|poke|p1|Tornadus, M|
+|poke|p1|Dragonair, M|
+|poke|p2|Rampardos, M|
+|poke|p2|Torracat, M|
+|poke|p2|Gholdengo|
+|poke|p2|Chikorita, M|
+|poke|p2|Mareep, M|
+|poke|p2|Hippopotas, M|
+|teampreview
+@message
+|
+|t:|
+|teamsize|p1|3
+|teamsize|p2|6
+|start
+|switch|p1a: Flutter Mane|Flutter Mane|276/276
+|switch|p2a: Hippopotas|Hippopotas, M, shiny|281/281
+|turn|1
+@message
+|
+|t:|
+|switch|p2a: Sir Hops-a-Lot|Gholdengo|316/316
+|-singleturn|p1a: Flutter Mane|move: Beak Blast
+|move|p1a: Flutter Mane|Beak Blast|p2a: Sir Hops-a-Lot
+|-resisted|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|293/316
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|-end|p1a: Flutter Mane|Protosynthesis|[silent]
+|switch|p1a: Sparky|Tornadus, M|300/300
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Sparky
+|-resisted|p1a: Sparky
+|-damage|p1a: Sparky|278/300
+|-unboost|p1a: Sparky|def|1
+|
+|upkeep
+|turn|3
+|
+|t:|
+|switch|p2a: Chomp|Mareep, M|262/262
+|-terastallize|p1a: Sparky|Poison
+|move|p1a: Sparky|Armor Cannon|p2a: Chomp
+|-damage|p2a: Chomp|81/262
+|-unboost|p1a: Sparky|def|1
+|-unboost|p1a: Sparky|spd|1
+|
+|upkeep
+|turn|4
+|
+|t:|
+|switch|p2a: Chikorita|Chikorita, M|257/257
+|move|p1a: Sparky|Armor Cannon|p2a: Chikorita
+|-supereffective|p2a: Chikorita
+|-damage|p2a: Chikorita|0 fnt
+|-unboost|p1a: Sparky|def|1
+|-unboost|p1a: Sparky|spd|1
+|faint|p2a: Chikorita
+|
+|upkeep
+|
+|t:|
+|switch|p2a: Hippopotas|Hippopotas, M, shiny|281/281
+|turn|5
+@message
+requesteddata
+sodium,8912ed52e895946aa6ea6e682a8d3827
+>start {"formatid":"gen9ou","seed":"sodium,8912ed52e895946aa6ea6e682a8d3827"}
+>chat before the players
+>player p1 {"name":"Alice","team":"Flutter Mane|||Protosynthesis|BeakBlast,GlaiveRush|Quirky|103,148,120,13,33,90|||||,,,,,Bug]Sparky|Tornadus||Prankster|GyroBall,ArmorCannon|Sassy|6,9,231,42,10,200|M||||,,,,,Poison]Zoë|Dragonair|SpellTag|ShedSkin|IronTail,NightSlash|Modest|39,28,135,52,85,166|||||,,,,,Ice","avatar":"lucas"}
+>player p2 {"name":"Bob","team":"Rampardos|||SheerForce|Tackle,Psybeam,Moonlight,ChillyReception|Timid|20,92,54,63,97,89|||||,,HeavyBall,,,Normal]Torracat||MaliciousArmor|Intimidate|Chloroblast|Careful|1,196,239,21,,53|||||,,,,,Bug]Sir Hops-a-Lot|Gholdengo|KingsRock|GoodasGold|ThunderousKick|Bold|5,10,201,34,73,185|||||,,PremierBall,,,Fairy]Chikorita|||LeafGuard|PsychUp,Incinerate,MeteorMash|Serious|107,25,1,201,62,112|M||||,,,,,Flying]Chomp|Mareep||Plus|WaterGun,GrassyGlide|Modest|47,6,47,226,62,70|M||||,,,,,Stellar]Hippopotas||SportBall|SandForce|IcicleSpear|Careful|17,82,92,239,10,69|M||S||,,HeavyBall,,,Bug"}
+>p1 team 1, 3, 2
+>p2 team 6, 2, 1, 4, 3, 5
+>p1 move beakblast
+>p2 switch 5
+>p1 switch 3
+>p2 move thunderouskick
+>p1 move armorcannon terastallize
+>p2 switch 6
+>p1 move armorcannon
+>p2 switch 4
+>p2 switch 5
+>p1 switch 2
+>p2 switch 3
+@message
+|
+|t:|
+|switch|p1a: Zoë|Dragonair, M|272/272
+|switch|p2a: Rampardos|Rampardos, M|340/340
+|
+|upkeep
+|turn|6
+@message
+|
+|t:|
+|switch|p2a: Hippopotas|Hippopotas, M, shiny|281/281
+|move|p1a: Zoë|Iron Tail|p2a: Hippopotas|[miss]
+|-miss|p1a: Zoë|p2a: Hippopotas
+|
+|upkeep
+|turn|7
+|
+|t:|
+|switch|p1a: Sparky|Tornadus, M, tera:Poison|278/300
+|switch|p2a: Sir Hops-a-Lot|Gholdengo|293/316
+|
+|upkeep
+|turn|8
+|
+|t:|
+|switch|p2a: Chomp|Mareep, M|81/262
+|move|p1a: Sparky|Armor Cannon|p2a: Chomp
+|-damage|p2a: Chomp|0 fnt
+|-unboost|p1a: Sparky|def|1
+|-unboost|p1a: Sparky|spd|1
+|faint|p2a: Chomp
+|
+|upkeep
+|
+|t:|
+|switch|p2a: Hippopotas|Hippopotas, M, shiny|281/281
+|turn|9
+|
+|t:|
+|switch|p1a: Flutter Mane|Flutter Mane|276/276
+|-terastallize|p2a: Hippopotas|Bug
+|move|p2a: Hippopotas|Icicle Spear|p1a: Flutter Mane
+|-damage|p1a: Flutter Mane|253/276
+|-damage|p1a: Flutter Mane|229/276
+|-damage|p1a: Flutter Mane|206/276
+|-damage|p1a: Flutter Mane|183/276
+|-hitcount|p1a: Flutter Mane|4
+|
+|upkeep
+|turn|10
+@message
+|
+|t:|
+|-end|p1a: Flutter Mane|Protosynthesis|[silent]
+|switch|p1a: Sparky|Tornadus, M, tera:Poison|278/300
+|move|p2a: Hippopotas|Icicle Spear|p1a: Sparky
+|-damage|p1a: Sparky|261/300
+|-damage|p1a: Sparky|243/300
+|-hitcount|p1a: Sparky|2
+|
+|upkeep
+|turn|11
+|
+|t:|
+|switch|p1a: Zoë|Dragonair, M|272/272
+|switch|p2a: Rampardos|Rampardos, M|340/340
+|
+|upkeep
+|turn|12
+|
+|t:|
+|switch|p1a: Sparky|Tornadus, M, tera:Poison|243/300
+|move|p2a: Rampardos|Psybeam|p1a: Sparky
+|-supereffective|p1a: Sparky
+|-damage|p1a: Sparky|123/300
+|
+|upkeep
+|turn|13
+@message
+|message|The battle's RNG was reset.
+|
+|t:|
+|switch|p1a: Flutter Mane|Flutter Mane|183/276
+|move|p2a: Rampardos|Psybeam|p1a: Flutter Mane
+|-damage|p1a: Flutter Mane|147/276
+|
+|upkeep
+|turn|14
+|
+|t:|
+|-end|p1a: Flutter Mane|Protosynthesis|[silent]
+|switch|p1a: Zoë|Dragonair, M|272/272
+|switch|p2a: Hippopotas|Hippopotas, M, shiny, tera:Bug|281/281
+|
+|upkeep
+|turn|15
+@message
+|
+|t:|
+|switch|p2a: Rampardos|Rampardos, M|340/340
+|move|p1a: Zoë|Night Slash|p2a: Rampardos
+|-damage|p2a: Rampardos|278/340
+|
+|upkeep
+|turn|16
+|
+|t:|
+|switch|p1a: Flutter Mane|Flutter Mane|147/276
+|move|p2a: Rampardos|Tackle|p1a: Flutter Mane
+|-immune|p1a: Flutter Mane
+|
+|upkeep
+|turn|17
+@message
+|
+|t:|
+|switch|p2a: Hippopotas|Hippopotas, M, shiny, tera:Bug|281/281
+|-singleturn|p1a: Flutter Mane|move: Beak Blast
+|move|p1a: Flutter Mane|Beak Blast|p2a: Hippopotas
+|-supereffective|p2a: Hippopotas
+|-crit|p2a: Hippopotas
+|-damage|p2a: Hippopotas|63/281
+|
+|upkeep
+|turn|18
+|
+|t:|
+|-end|p1a: Flutter Mane|Protosynthesis|[silent]
+|switch|p1a: Zoë|Dragonair, M|272/272
+|switch|p2a: Torracat|Torracat, M|271/271
+|-ability|p2a: Torracat|Intimidate|boost
+|-unboost|p1a: Zoë|atk|1
+|
+|upkeep
+|turn|19
+|
+|t:|
+|switch|p2a: Sir Hops-a-Lot|Gholdengo|293/316
+|move|p1a: Zoë|Iron Tail|p2a: Sir Hops-a-Lot
+|-resisted|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|277/316
+|
+|upkeep
+|turn|20
+@message
+|
+|t:|
+|switch|p2a: Torracat|Torracat, M|271/271
+|-ability|p2a: Torracat|Intimidate|boost
+|-unboost|p1a: Zoë|atk|1
+|switch|p1a: Flutter Mane|Flutter Mane|147/276
+|
+|upkeep
+|turn|21
+|
+|t:|
+|switch|p2a: Hippopotas|Hippopotas, M, shiny, tera:Bug|63/281
+|-singleturn|p1a: Flutter Mane|move: Beak Blast
+|move|p1a: Flutter Mane|Beak Blast|p2a: Hippopotas
+|-supereffective|p2a: Hippopotas
+|-damage|p2a: Hippopotas|0 fnt
+|faint|p2a: Hippopotas
+|
+|upkeep
+|
+|t:|
+|switch|p2a: Sir Hops-a-Lot|Gholdengo|277/316
+|turn|22
+|
+|t:|
+|move|p1a: Flutter Mane|Glaive Rush|p2a: Sir Hops-a-Lot
+|-resisted|p2a: Sir Hops-a-Lot
+|-crit|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|236/316
+|-singlemove|p1a: Flutter Mane|Glaive Rush|[silent]
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Flutter Mane
+|-immune|p1a: Flutter Mane
+|
+|upkeep
+|turn|23
+@message
+|
+|t:|
+|switch|p2a: Torracat|Torracat, M|271/271
+|-ability|p2a: Torracat|Intimidate|boost
+|-unboost|p1a: Flutter Mane|atk|1
+|move|p1a: Flutter Mane|Glaive Rush|p2a: Torracat
+|-damage|p2a: Torracat|214/271
+|-singlemove|p1a: Flutter Mane|Glaive Rush|[silent]
+|
+|upkeep
+|turn|24
+|
+|t:|
+|-singleturn|p1a: Flutter Mane|move: Beak Blast
+|move|p2a: Torracat|Chloroblast|p1a: Flutter Mane
+|-damage|p1a: Flutter Mane|11/276
+|-damage|p2a: Torracat|78/271|[from] Recoil
+|move|p1a: Flutter Mane|Beak Blast|p2a: Torracat
+|-damage|p2a: Torracat|32/271
+|
+|upkeep
+|turn|25
+@message
+|
+|t:|
+|switch|p2a: Sir Hops-a-Lot|Gholdengo|236/316
+|-singleturn|p1a: Flutter Mane|move: Beak Blast
+|move|p1a: Flutter Mane|Beak Blast|p2a: Sir Hops-a-Lot
+|-resisted|p2a: Sir Hops-a-Lot
+|-crit|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|199/316
+|
+|upkeep
+|turn|26
+@message
+|
+|t:|
+|switch|p2a: Torracat|Torracat, M|32/271
+|-ability|p2a: Torracat|Intimidate|boost
+|-unboost|p1a: Flutter Mane|atk|1
+|move|p1a: Flutter Mane|Glaive Rush|p2a: Torracat
+|-damage|p2a: Torracat|0 fnt
+|-singlemove|p1a: Flutter Mane|Glaive Rush|[silent]
+|faint|p2a: Torracat
+|
+|upkeep
+|
+|t:|
+|switch|p2a: Sir Hops-a-Lot|Gholdengo|199/316
+|turn|27
+|
+|t:|
+|-end|p1a: Flutter Mane|Protosynthesis|[silent]
+|switch|p1a: Sparky|Tornadus, M, tera:Poison|123/300
+|switch|p2a: Rampardos|Rampardos, M|278/340
+|
+|upkeep
+|turn|28
+|
+|t:|
+|move|p1a: Sparky|Gyro Ball|p2a: Rampardos
+|-supereffective|p2a: Rampardos
+|-damage|p2a: Rampardos|230/340
+|move|p2a: Rampardos|Psybeam|p1a: Sparky
+|-supereffective|p1a: Sparky
+|-damage|p1a: Sparky|15/300
+|
+|upkeep
+|turn|29
+@message
+|
+|t:|
+|switch|p1a: Zoë|Dragonair, M|272/272
+|move|p2a: Rampardos|Moonlight|p2a: Rampardos
+|-heal|p2a: Rampardos|340/340
+|
+|upkeep
+|turn|30
+|
+|t:|
+|switch|p1a: Flutter Mane|Flutter Mane|11/276
+|switch|p2a: Sir Hops-a-Lot|Gholdengo|199/316
+|
+|upkeep
+|turn|31
+|
+|t:|
+|-singleturn|p1a: Flutter Mane|move: Beak Blast
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Flutter Mane
+|-immune|p1a: Flutter Mane
+|move|p1a: Flutter Mane|Beak Blast|p2a: Sir Hops-a-Lot
+|-resisted|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|175/316
+|
+|upkeep
+|turn|32
+@message
+|
+|t:|
+|-end|p1a: Flutter Mane|Protosynthesis|[silent]
+|switch|p1a: Sparky|Tornadus, M, tera:Poison|15/300
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Sparky
+|-resisted|p1a: Sparky
+|-damage|p1a: Sparky|0 fnt
+|faint|p1a: Sparky
+|
+|upkeep
+|
+|t:|
+|switch|p1a: Flutter Mane|Flutter Mane|11/276
+|turn|33
+|
+|t:|
+|switch|p2a: Rampardos|Rampardos, M|340/340
+|-singleturn|p1a: Flutter Mane|move: Beak Blast
+|move|p1a: Flutter Mane|Beak Blast|p2a: Rampardos
+|-resisted|p2a: Rampardos
+|-damage|p2a: Rampardos|299/340
+|
+|upkeep
+|turn|34
+|
+|t:|
+|-end|p1a: Flutter Mane|Protosynthesis|[silent]
+|switch|p1a: Zoë|Dragonair, M|272/272
+|switch|p2a: Sir Hops-a-Lot|Gholdengo|175/316
+|
+|upkeep
+|turn|35
+@message
+|
+|t:|
+|switch|p2a: Rampardos|Rampardos, M|299/340
+|move|p1a: Zoë|Iron Tail|p2a: Rampardos
+|-supereffective|p2a: Rampardos
+|-damage|p2a: Rampardos|139/340
+|
+|upkeep
+|turn|36
+|
+|t:|
+|move|p1a: Zoë|Iron Tail|p2a: Rampardos
+|-supereffective|p2a: Rampardos
+|-damage|p2a: Rampardos|0 fnt
+|faint|p2a: Rampardos
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p2a: Sir Hops-a-Lot|Gholdengo|175/316
+|turn|37
+|
+|t:|
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Zoë
+|-damage|p1a: Zoë|225/272
+|-unboost|p1a: Zoë|def|1
+|move|p1a: Zoë|Iron Tail|p2a: Sir Hops-a-Lot|[miss]
+|-miss|p1a: Zoë|p2a: Sir Hops-a-Lot
+|
+|upkeep
+|turn|38
+@message
+|
+|t:|
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Zoë
+|-damage|p1a: Zoë|144/272
+|-unboost|p1a: Zoë|def|1
+|move|p1a: Zoë|Night Slash|p2a: Sir Hops-a-Lot
+|-supereffective|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|111/316
+|
+|upkeep
+|turn|39
+|
+|t:|
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Zoë
+|-damage|p1a: Zoë|43/272
+|-unboost|p1a: Zoë|def|1
+|move|p1a: Zoë|Iron Tail|p2a: Sir Hops-a-Lot
+|-resisted|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|85/316
+|
+|upkeep
+|turn|40
+|
+|t:|
+|switch|p1a: Flutter Mane|Flutter Mane|11/276
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Flutter Mane
+|-immune|p1a: Flutter Mane
+|
+|upkeep
+|turn|41
+@message
+|
+|t:|
+|-singleturn|p1a: Flutter Mane|move: Beak Blast
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Flutter Mane
+|-immune|p1a: Flutter Mane
+|move|p1a: Flutter Mane|Beak Blast|p2a: Sir Hops-a-Lot
+|-resisted|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|62/316
+|
+|upkeep
+|turn|42
+@message
+|
+|t:|
+|-end|p1a: Flutter Mane|Protosynthesis|[silent]
+|switch|p1a: Zoë|Dragonair, M|43/272
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Zoë
+|-damage|p1a: Zoë|0 fnt
+|faint|p1a: Zoë
+|
+|upkeep
+|
+|t:|
+|switch|p1a: Flutter Mane|Flutter Mane|11/276
+|turn|43
+|
+|t:|
+|move|p1a: Flutter Mane|Glaive Rush|p2a: Sir Hops-a-Lot
+|-resisted|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|35/316
+|-singlemove|p1a: Flutter Mane|Glaive Rush|[silent]
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Flutter Mane
+|-immune|p1a: Flutter Mane
+|
+|upkeep
+|turn|44
+@message
+|
+|t:|
+|-singleturn|p1a: Flutter Mane|move: Beak Blast
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Flutter Mane
+|-immune|p1a: Flutter Mane
+|move|p1a: Flutter Mane|Beak Blast|p2a: Sir Hops-a-Lot
+|-resisted|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|9/316
+|
+|upkeep
+|turn|45
+@message
+|
+|t:|
+|-singleturn|p1a: Flutter Mane|move: Beak Blast
+|move|p2a: Sir Hops-a-Lot|Thunderous Kick|p1a: Flutter Mane
+|-immune|p1a: Flutter Mane
+|move|p1a: Flutter Mane|Beak Blast|p2a: Sir Hops-a-Lot
+|-resisted|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|0 fnt
+|faint|p2a: Sir Hops-a-Lot
+|
+|win|Alice
+@message
+requesteddata
+>start {"formatid":"gen9ou","seed":"sodium,8912ed52e895946aa6ea6e682a8d3827"}
+>chat before the players
+>player p1 {"name":"Alice","team":"Flutter Mane|||Protosynthesis|BeakBlast,GlaiveRush|Quirky|103,148,120,13,33,90|||||,,,,,Bug]Sparky|Tornadus||Prankster|GyroBall,ArmorCannon|Sassy|6,9,231,42,10,200|M||||,,,,,Poison]Zoë|Dragonair|SpellTag|ShedSkin|IronTail,NightSlash|Modest|39,28,135,52,85,166|||||,,,,,Ice","avatar":"lucas"}
+>player p2 {"name":"Bob","team":"Rampardos|||SheerForce|Tackle,Psybeam,Moonlight,ChillyReception|Timid|20,92,54,63,97,89|||||,,HeavyBall,,,Normal]Torracat||MaliciousArmor|Intimidate|Chloroblast|Careful|1,196,239,21,,53|||||,,,,,Bug]Sir Hops-a-Lot|Gholdengo|KingsRock|GoodasGold|ThunderousKick|Bold|5,10,201,34,73,185|||||,,PremierBall,,,Fairy]Chikorita|||LeafGuard|PsychUp,Incinerate,MeteorMash|Serious|107,25,1,201,62,112|M||||,,,,,Flying]Chomp|Mareep||Plus|WaterGun,GrassyGlide|Modest|47,6,47,226,62,70|M||||,,,,,Stellar]Hippopotas||SportBall|SandForce|IcicleSpear|Careful|17,82,92,239,10,69|M||S||,,HeavyBall,,,Bug"}
+>p1 team 1, 3, 2
+>p2 team 6, 2, 1, 4, 3, 5
+>p1 move beakblast
+>p2 switch 5
+>p1 switch 3
+>p2 move thunderouskick
+>p1 move armorcannon terastallize
+>p2 switch 6
+>p1 move armorcannon
+>p2 switch 4
+>p2 switch 5
+>p1 switch 2
+>p2 switch 3
+>p1 move irontail
+>p2 switch 3
+>p1 switch 2
+>p2 switch 6
+>p1 move armorcannon
+>p2 switch 4
+>p2 switch 6
+>p1 switch 3
+>p2 move iciclespear terastallize
+>p1 switch 3
+>p2 move iciclespear
+>p1 switch 2
+>p2 switch 3
+>p1 switch 2
+>p2 move psybeam
+>reseed 8120,10903,50053,58973
+>p1 switch 3
+>p2 move psybeam
+>p1 switch 2
+>p2 switch 3
+>p1 move nightslash
+>p2 switch 3
+>p1 switch 2
+>p2 move tackle
+>p1 move beakblast
+>p2 switch 3
+>p1 switch 2
+>p2 switch 2
+>p1 move irontail
+>p2 switch 4
+>p1 switch 2
+>p2 switch 4
+>p1 move beakblast
+>p2 switch 2
+>p2 switch 4
+>p1 move glaiverush
+>p2 move thunderouskick
+>p1 move glaiverush
+>p2 switch 2
+>p1 move beakblast
+>p2 move chloroblast
+>p1 move beakblast
+>p2 switch 2
+>p1 move glaiverush
+>p2 switch 2
+>p2 switch 2
+>p1 switch 3
+>p2 switch 3
+>p1 move gyroball
+>p2 move psybeam
+>p1 switch 2
+>p2 move moonlight
+>p1 switch 3
+>p2 switch 3
+>p1 move beakblast
+>p2 move thunderouskick
+>p1 switch 2
+>p2 move thunderouskick
+>p1 switch 2
+>p1 move beakblast
+>p2 switch 3
+>p1 switch 3
+>p2 switch 3
+>p1 move irontail
+>p2 switch 3
+>p1 move irontail
+>p2 move psybeam
+>p2 switch 3
+>p1 move irontail
+>p2 move thunderouskick
+>p1 move nightslash
+>p2 move thunderouskick
+>p1 move irontail
+>p2 move thunderouskick
+>p1 switch 3
+>p2 move thunderouskick
+>p1 move beakblast
+>p2 move thunderouskick
+>p1 switch 3
+>p2 move thunderouskick
+>p1 switch 3
+>p1 move glaiverush
+>p2 move thunderouskick
+>p1 move beakblast
+>p2 move thunderouskick
+>p1 move beakblast
+>p2 move thunderouskick
+>chat after the end
+>forcewin p1
+@message
+|chat|after the end

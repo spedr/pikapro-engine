@@ -1,0 +1,364 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed e99b 3650 727e 1409
+genders drawn
+team p1
+Blastoise (M)
+Ability: No Ability
+Level: 50
+Tera Type: Fire
+EVs: 24 Atk / 18 Def / 10 SpA / 13 SpD / 1 Spe
+Naive Nature
+- Aqua Cutter
+
+Gallade (M)
+Ability: No Ability
+Level: 50
+Tera Type: Water
+EVs: 6 HP / 6 Atk / 28 Def / 23 Spe
+Lax Nature
+- Megahorn
+
+Vivillon-Polar (M)
+Ability: No Ability
+Level: 50
+Tera Type: Electric
+EVs: 16 HP / 4 Atk / 7 Def / 5 SpA / 5 SpD / 28 Spe
+Jolly Nature
+- Aura Sphere
+
+Simipour (M)
+Ability: No Ability
+Level: 50
+Tera Type: Psychic
+EVs: 18 HP / 4 Atk / 31 Def / 2 SpA / 10 Spe
+Gentle Nature
+- Aqua Tail
+
+Tauros-Paldea-Aqua (M)
+Ability: No Ability
+Level: 50
+Tera Type: Water
+EVs: 7 HP / 23 Atk / 8 Def / 7 SpA / 4 SpD / 14 Spe
+Sassy Nature
+- Power Gem
+- Aqua Tail
+
+Basculegion-F (F)
+Ability: No Ability
+Level: 50
+Tera Type: Ice
+EVs: 6 HP / 31 Def / 22 SpA / 4 SpD / 2 Spe
+Naughty Nature
+- Night Slash
+- Stone Edge
+end
+team p2
+Archaludon (M)
+Ability: No Ability
+Level: 50
+Tera Type: Dark
+EVs: 5 Atk / 4 Def / 28 SpA / 5 SpD / 23 Spe
+Sassy Nature
+- Quick Attack
+- Pound
+
+Basculegion (M)
+Ability: No Ability
+Level: 50
+Tera Type: Fire
+EVs: 7 Atk / 29 Def / 23 SpA / 6 Spe
+Relaxed Nature
+- Air Cutter
+
+Morpeko (M)
+Ability: No Ability
+Level: 50
+Tera Type: Ice
+EVs: 26 HP / 12 Atk / 14 Def / 9 SpA / 3 SpD / 1 Spe
+Relaxed Nature
+- Dragon Pulse
+
+Lopunny (M)
+Ability: No Ability
+Level: 50
+Tera Type: Dark
+EVs: 28 Atk / 1 Def / 14 SpA / 22 SpD / 1 Spe
+Careful Nature
+- Quick Attack
+- Dragon Claw
+- Extreme Speed
+
+Staraptor (M)
+Ability: No Ability
+Level: 50
+Tera Type: Ice
+EVs: 10 HP / 28 Def / 26 SpA / 1 SpD / 1 Spe
+Quiet Nature
+- Cross Chop
+
+Heliolisk (M)
+Ability: No Ability
+Level: 50
+Tera Type: Poison
+EVs: 4 HP / 12 Atk / 3 Def / 16 SpA / 5 SpD / 11 Spe
+Docile Nature
+- X-Scissor
+- Kowtow Cleave
+- Drill Run
+end
+choice p1 team 4635
+choice p2 team 5641
+choice p1 switch 4, move 2 -1
+choice p2 move 1 -2, move 3 -1
+choice p2 pass, switch 3
+choice p1 switch 3, switch 4
+choice p2 move 1 -2, move 2 -1
+choice p2 pass, switch 4
+choice p1 move 1 2, switch 4
+choice p2 move 1 1, move 2 -1
+choice p1 move 1 1, move 2 2
+choice p2 move 1 -2, move 2 1
+choice p1 move 1 1, move 1 -1
+choice p2 move 1 2, pass
+choice p1 switch 3, switch 4
+choice p2 move 1 2, pass
+choice p1 switch 4, move 1 1
+choice p2 move 1 2, pass
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Blastoise, L50, M|
+expect |poke|p1|Gallade, L50, M|
+expect |poke|p1|Vivillon-Polar, L50, M|
+expect |poke|p1|Simipour, L50, M|
+expect |poke|p1|Tauros-Paldea-Aqua, L50, M|
+expect |poke|p1|Basculegion-F, L50, F|
+expect |poke|p2|Archaludon, L50, M|
+expect |poke|p2|Basculegion, L50, M|
+expect |poke|p2|Morpeko, L50, M|
+expect |poke|p2|Lopunny, L50, M|
+expect |poke|p2|Staraptor, L50, M|
+expect |poke|p2|Heliolisk, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Simipour|Simipour, L50, M|168/168
+expect |switch|p1a: Simipour|Simipour, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Basculegion|Basculegion-F, L50, F|201/201
+expect |switch|p1b: Basculegion|Basculegion-F, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Staraptor|Staraptor, L50, M|170/170
+expect |switch|p2a: Staraptor|Staraptor, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Heliolisk|Heliolisk, L50, M|141/141
+expect |switch|p2b: Heliolisk|Heliolisk, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Tauros|Tauros-Paldea-Aqua, L50, M|157/157
+expect |switch|p1a: Tauros|Tauros-Paldea-Aqua, L50, M|100/100
+expect |move|p2b: Heliolisk|Drill Run|p2a: Staraptor
+expect |-immune|p2a: Staraptor
+expect |move|p2a: Staraptor|Cross Chop|p2b: Heliolisk
+expect |rng|100|43
+expect |rng|8|2
+expect |rng|16|8
+expect |-supereffective|p2b: Heliolisk|1
+expect |split|p2
+expect |-damage|p2b: Heliolisk|0 fnt
+expect |-damage|p2b: Heliolisk|0 fnt
+expect |faint|p2b: Heliolisk
+expect |move|p1b: Basculegion|Stone Edge|p1a: Tauros
+expect |rng|100|76
+expect |rng|8|7
+expect |rng|16|12
+expect |-resisted|p1a: Tauros|1
+expect |split|p1
+expect |-damage|p1a: Tauros|139/157
+expect |-damage|p1a: Tauros|88/100
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Lopunny|Lopunny, L50, M|140/140
+expect |switch|p2b: Lopunny|Lopunny, L50, M|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Polar, L50, M|171/171
+expect |switch|p1a: Vivillon|Vivillon-Polar, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Simipour|Simipour, L50, M|168/168
+expect |switch|p1b: Simipour|Simipour, L50, M|100/100
+expect |move|p2b: Lopunny|Dragon Claw|p2a: Staraptor
+expect |rng|100|29
+expect |rng|24|7
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Staraptor|136/170
+expect |-damage|p2a: Staraptor|80/100
+expect |move|p2a: Staraptor|Cross Chop|p2b: Lopunny
+expect |rng|100|73
+expect |rng|8|0
+expect |rng|16|14
+expect |-supereffective|p2b: Lopunny|1
+expect |-crit|p2b: Lopunny
+expect |split|p2
+expect |-damage|p2b: Lopunny|0 fnt
+expect |-damage|p2b: Lopunny|0 fnt
+expect |faint|p2b: Lopunny
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Archaludon|Archaludon, L50, M|165/165
+expect |switch|p2b: Archaludon|Archaludon, L50, M|100/100
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Basculegion|Basculegion-F, L50, F|201/201
+expect |switch|p1b: Basculegion|Basculegion-F, L50, F|100/100
+expect |move|p1a: Vivillon|Aura Sphere|p2b: Archaludon
+expect |rng|24|19
+expect |rng|16|8
+expect |-supereffective|p2b: Archaludon|1
+expect |split|p2
+expect |-damage|p2b: Archaludon|97/165
+expect |-damage|p2b: Archaludon|58/100
+expect |move|p2b: Archaludon|Pound|p2a: Staraptor
+expect |rng|100|40
+expect |rng|24|15
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Staraptor|119/170
+expect |-damage|p2a: Staraptor|70/100
+expect |move|p2a: Staraptor|Cross Chop|p1a: Vivillon
+expect |rng|100|14
+expect |rng|8|1
+expect |rng|16|14
+expect |-resisted|p1a: Vivillon|2
+expect |split|p1
+expect |-damage|p1a: Vivillon|154/171
+expect |-damage|p1a: Vivillon|90/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1a: Vivillon|Aura Sphere|p2a: Staraptor
+expect |rng|24|4
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Staraptor|76/170
+expect |-damage|p2a: Staraptor|44/100
+expect |move|p2b: Archaludon|Pound|p1a: Vivillon
+expect |rng|100|8
+expect |rng|24|14
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Vivillon|125/171
+expect |-damage|p1a: Vivillon|73/100
+expect |move|p2a: Staraptor|Cross Chop|p2b: Archaludon
+expect |rng|100|60
+expect |rng|8|2
+expect |rng|16|0
+expect |-supereffective|p2b: Archaludon|1
+expect |split|p2
+expect |-damage|p2b: Archaludon|13/165
+expect |-damage|p2b: Archaludon|7/100
+expect |move|p1b: Basculegion|Stone Edge|p2b: Archaludon
+expect |rng|100|78
+expect |rng|8|7
+expect |rng|16|4
+expect |-resisted|p2b: Archaludon|1
+expect |split|p2
+expect |-damage|p2b: Archaludon|0 fnt
+expect |-damage|p2b: Archaludon|0 fnt
+expect |faint|p2b: Archaludon
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1a: Vivillon|Aura Sphere|p2a: Staraptor
+expect |rng|24|2
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Staraptor|34/170
+expect |-damage|p2a: Staraptor|20/100r
+expect |move|p2a: Staraptor|Cross Chop|p1b: Basculegion
+expect |-immune|p1b: Basculegion
+expect |move|p1b: Basculegion|Night Slash|p1a: Vivillon
+expect |rng|100|74
+expect |rng|8|0
+expect |rng|16|1
+expect |-crit|p1a: Vivillon
+expect |split|p1
+expect |-damage|p1a: Vivillon|50/171
+expect |-damage|p1a: Vivillon|29/100
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Tauros|Tauros-Paldea-Aqua, L50, M|139/157
+expect |switch|p1a: Tauros|Tauros-Paldea-Aqua, L50, M|88/100
+expect |split|p1
+expect |switch|p1b: Simipour|Simipour, L50, M|168/168
+expect |switch|p1b: Simipour|Simipour, L50, M|100/100
+expect |move|p2a: Staraptor|Cross Chop|p1b: Simipour
+expect |rng|100|12
+expect |rng|8|0
+expect |rng|16|5
+expect |-crit|p1b: Simipour
+expect |split|p1
+expect |-damage|p1b: Simipour|80/168
+expect |-damage|p1b: Simipour|47/100
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Basculegion|Basculegion-F, L50, F|201/201
+expect |switch|p1a: Basculegion|Basculegion-F, L50, F|100/100
+expect |move|p1b: Simipour|Aqua Tail|p2a: Staraptor
+expect |rng|100|59
+expect |rng|24|9
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Staraptor|0 fnt
+expect |-damage|p2a: Staraptor|0 fnt
+expect |faint|p2a: Staraptor
+expect |
+expect |win|p1

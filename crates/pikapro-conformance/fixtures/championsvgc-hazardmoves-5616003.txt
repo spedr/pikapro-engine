@@ -1,0 +1,709 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 320b 97eb 3194 5f0e
+genders drawn
+team p1
+Polteageist
+Ability: Cursed Body
+Level: 50
+Tera Type: Electric
+EVs: 15 HP / 4 Atk / 5 Def / 32 SpA / 10 Spe
+Hardy Nature
+- Electroweb
+- Power Shift
+- Moonblast
+- Rock Polish
+
+Beartic
+Ability: Swift Swim
+Level: 50
+Tera Type: Psychic
+EVs: 23 HP / 4 Atk / 15 SpA / 23 SpD
+Hardy Nature
+- Infernal Parade
+
+Tauros-Paldea-Blaze (M) @ Silver Powder
+Ability: Anger Point
+Level: 50
+Tera Type: Grass
+EVs: 8 HP / 2 Atk / 14 Def / 22 SpA / 14 SpD / 5 Spe
+Lax Nature
+- Ceaseless Edge
+- Quiver Dance
+- Aqua Step
+- Grav Apple
+
+Sparky (Alakazam) @ Alakazite
+Ability: Inner Focus
+Level: 50
+Tera Type: Fire
+EVs: 17 HP / 24 Atk / 12 Def / 4 SpA / 4 SpD
+Gentle Nature
+- Draco Meteor
+- Aurora Veil
+- Inferno
+- Dragon Cheer
+
+Swampert (F) @ Swampertite
+Ability: Torrent
+Level: 50
+Tera Type: Dragon
+EVs: 16 Atk / 22 Def / 2 SpD / 26 Spe
+Gentle Nature
+- Stone Axe
+- Accelerock
+- Thief
+- Giga Drain
+
+Big Tony's Pal (Garchomp)
+Ability: Rough Skin
+Level: 50
+Tera Type: Dragon
+EVs: 22 HP / 4 Atk / 16 Def / 3 SpD / 15 Spe
+Sassy Nature
+- Instruct
+- Brick Break
+- After You
+- Gigaton Hammer
+end
+team p2
+Big Tony's Pal (Garchomp)
+Ability: Rough Skin
+Level: 50
+Tera Type: Electric
+EVs: 11 HP / 24 Atk / 1 Def / 15 SpA / 4 Spe
+Lax Nature
+- Sludge Bomb
+- Poltergeist
+- Fire Lash
+
+Hippowdon (M) @ Choice Scarf
+Ability: Sand Force
+Level: 50
+Tera Type: Flying
+EVs: 29 HP / 19 Def / 16 SpD / 1 Spe
+Impish Nature
+- Stone Axe
+- Bone Rush
+- Thunderbolt
+- Glare
+
+Gengar
+Ability: Cursed Body
+Level: 50
+Tera Type: Ice
+EVs: 7 HP / 2 Atk / 10 Def / 26 SpA / 21 Spe
+Hasty Nature
+- Mega Kick
+- Pain Split
+- Topsy-Turvy
+- Crabhammer
+
+Nibbles (Chesnaught) (M) @ Chesnaughtite
+Ability: Bulletproof
+Level: 50
+Tera Type: Bug
+EVs: 14 HP / 15 Def / 4 SpA / 19 SpD / 5 Spe
+Timid Nature
+- Simple Beam
+- Metal Burst
+- Detect
+
+X (Gourgeist-Small)
+Ability: Insomnia
+Level: 50
+Tera Type: Steel
+EVs: 26 Atk / 2 SpA / 14 SpD / 23 Spe
+Gentle Nature
+- Ceaseless Edge
+- Wonder Room
+- Horn Leech
+- Stone Edge
+
+Sparky (Alcremie-Rainbow-Swirl) (F) @ Psychic Seed
+Ability: Sweet Veil
+Level: 50
+Tera Type: Water
+EVs: 12 HP / 19 Atk / 19 Def / 16 SpD
+Rash Nature
+- Infestation
+- Fling
+- Body Slam
+end
+choice p1 team 2536
+choice p2 team 5162
+choice p1 move 1 1, move 2 -1
+choice p2 move 4 2, move 3 2
+choice p1 move 1 -2, move 2 2 mega
+choice p2 move 3 -2, move 1 2
+choice p1 move Infernal Parade 1, move gigadrain +1
+choice p2 move Stone Edge 2, move sludgebomb -1
+choice p2 switch 4, pass
+choice p1 switch 3, move 1 -1
+choice p2 default
+choice p1 move 3 1, move 3 -1
+choice p2 move 1 2, move 3 1
+choice p1 move 1 2, move 1 2
+choice p2 move 1 -2, move 2 1
+choice p1 default
+choice p2 move 1 2, move 3 -1
+choice p1 move 1 2, move 4 2
+choice p2 pass, switch 3
+choice p1 move 1 2,move After You +1
+choice p2 move 1 1, move 3 2
+choice p1 move infernalparade -2 ,  move 1 +2
+choice p2 move 1 1, move 2 1
+choice p1 default
+choice p2 move 1 2, move 2 -1
+choice p1 skip,move instruct 2
+choice p2 default
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Polteageist, L50|
+expect |poke|p1|Beartic, L50, M|
+expect |poke|p1|Tauros-Paldea-Blaze, L50, M|
+expect |poke|p1|Alakazam, L50, M|
+expect |poke|p1|Swampert, L50, F|
+expect |poke|p1|Garchomp, L50, F|
+expect |poke|p2|Garchomp, L50, M|
+expect |poke|p2|Hippowdon, L50, M|
+expect |poke|p2|Gengar, L50, M|
+expect |poke|p2|Chesnaught, L50, M|
+expect |poke|p2|Gourgeist-Small, L50, F|
+expect |poke|p2|Alcremie-Rainbow-Swirl, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Beartic|Beartic, L50, M|193/193
+expect |switch|p1a: Beartic|Beartic, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Swampert|Swampert, L50, F|175/175
+expect |switch|p1b: Swampert|Swampert, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: X|Gourgeist-Small, L50, F|130/130
+expect |switch|p2a: X|Gourgeist-Small, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Big Tony's Pal|Garchomp, L50, M|194/194
+expect |switch|p2b: Big Tony's Pal|Garchomp, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1b: Swampert|Accelerock|p1a: Beartic
+expect |rng|100|5
+expect |rng|24|3
+expect |rng|16|3
+expect |-supereffective|p1a: Beartic|1
+expect |split|p1
+expect |-damage|p1a: Beartic|141/193
+expect |-damage|p1a: Beartic|73/100
+expect |move|p2a: X|Stone Edge|p1b: Swampert|[miss]
+expect |rng|100|95
+expect |-miss|p2a: X|p1b: Swampert
+expect |move|p2b: Big Tony's Pal|Fire Lash|p1b: Swampert
+expect |rng|100|64
+expect |rng|24|9
+expect |rng|16|7
+expect |-resisted|p1b: Swampert|1
+expect |split|p1
+expect |-damage|p1b: Swampert|148/175
+expect |-damage|p1b: Swampert|84/100
+expect |rng|100|98
+expect |-unboost|p1b: Swampert|def|1
+expect |move|p1a: Beartic|Infernal Parade|p2a: X
+expect |rng|100|40
+expect |rng|24|7
+expect |rng|16|7
+expect |-supereffective|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|80/130
+expect |-damage|p2a: X|61/100
+expect |rng|100|89
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |detailschange|p1b: Swampert|Swampert-Mega, L50, F
+expect |-mega|p1b: Swampert|Swampert|Swampertite
+expect |move|p1b: Swampert|Accelerock|p2b: Big Tony's Pal
+expect |rng|100|72
+expect |rng|24|7
+expect |rng|16|3
+expect |-resisted|p2b: Big Tony's Pal|1
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|181/194
+expect |-damage|p2b: Big Tony's Pal|93/100
+expect |split|p1
+expect |-damage|p1b: Swampert|127/175|[from] ability: Rough Skin|[of] p2b: Big Tony's Pal
+expect |-damage|p1b: Swampert|72/100|[from] ability: Rough Skin|[of] p2b: Big Tony's Pal
+expect |move|p2a: X|Horn Leech|p2b: Big Tony's Pal
+expect |rng|100|37
+expect |rng|24|9
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|130/194
+expect |-damage|p2b: Big Tony's Pal|67/100
+expect |split|p2
+expect |-heal|p2a: X|106/130|[from] drain|[of] p2b: Big Tony's Pal
+expect |-heal|p2a: X|81/100|[from] drain|[of] p2b: Big Tony's Pal
+expect |split|p2
+expect |-damage|p2a: X|90/130|[from] ability: Rough Skin|[of] p2b: Big Tony's Pal
+expect |-damage|p2a: X|69/100|[from] ability: Rough Skin|[of] p2b: Big Tony's Pal
+expect |move|p2b: Big Tony's Pal|Sludge Bomb|p1b: Swampert
+expect |rng|100|39
+expect |rng|24|19
+expect |rng|16|14
+expect |-resisted|p1b: Swampert|1
+expect |split|p1
+expect |-damage|p1b: Swampert|113/175
+expect |-damage|p1b: Swampert|64/100
+expect |rng|100|47
+expect |move|p1a: Beartic|Infernal Parade|p1b: Swampert
+expect |rng|100|97
+expect |rng|24|22
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: Swampert|95/175
+expect |-damage|p1b: Swampert|54/100
+expect |rng|100|12
+expect |-status|p1b: Swampert|brn
+expect |
+expect |split|p1
+expect |-damage|p1b: Swampert|85/175 brn|[from] brn
+expect |-damage|p1b: Swampert|48/100 brn|[from] brn
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: X|Stone Edge|p1b: Swampert
+expect |rng|100|18
+expect |rng|8|6
+expect |rng|16|6
+expect |-resisted|p1b: Swampert|1
+expect |split|p1
+expect |-damage|p1b: Swampert|54/175 brn
+expect |-damage|p1b: Swampert|30/100 brn
+expect |move|p2b: Big Tony's Pal|Sludge Bomb|p2a: X
+expect |rng|100|81
+expect |rng|24|10
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: X|55/130
+expect |-damage|p2a: X|42/100
+expect |rng|100|8
+expect |-status|p2a: X|psn
+expect |move|p1b: Swampert|Giga Drain|p2a: X
+expect |rng|100|61
+expect |rng|24|3
+expect |rng|16|3
+expect |-resisted|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|39/130 psn
+expect |-damage|p2a: X|30/100 psn
+expect |split|p1
+expect |-heal|p1b: Swampert|62/175 brn|[from] drain|[of] p2a: X
+expect |-heal|p1b: Swampert|35/100 brn|[from] drain|[of] p2a: X
+expect |move|p1a: Beartic|Infernal Parade|p2a: X
+expect |rng|100|72
+expect |rng|24|21
+expect |rng|16|11
+expect |-supereffective|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|0 fnt
+expect |-damage|p2a: X|0 fnt
+expect |rng|100|76
+expect |faint|p2a: X
+expect |
+expect |split|p1
+expect |-damage|p1b: Swampert|52/175 brn|[from] brn
+expect |-damage|p1b: Swampert|29/100 brn|[from] brn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Hippowdon|Hippowdon, L50, M|212/212
+expect |switch|p2a: Hippowdon|Hippowdon, L50, M|100/100
+expect |turn|4
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Tauros|Tauros-Paldea-Blaze, L50, M|158/158
+expect |switch|p1a: Tauros|Tauros-Paldea-Blaze, L50, M|100/100
+expect |move|p2b: Big Tony's Pal|Sludge Bomb|p1a: Tauros
+expect |rng|100|41
+expect |rng|24|16
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Tauros|116/158
+expect |-damage|p1a: Tauros|73/100
+expect |rng|100|9
+expect |-status|p1a: Tauros|psn
+expect |move|p1b: Swampert|Stone Axe|p1a: Tauros
+expect |rng|100|49
+expect |rng|24|9
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Tauros|100/158 psn
+expect |-damage|p1a: Tauros|63/100 psn
+expect |rng|100|83
+expect |-sidestart|p2: p2|move: Stealth Rock
+expect |move|p2a: Hippowdon|Stone Axe|p1a: Tauros
+expect |rng|100|72
+expect |rng|24|2
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Tauros|78/158 psn
+expect |-damage|p1a: Tauros|49/100 psn
+expect |rng|100|73
+expect |-sidestart|p1: p1|move: Stealth Rock
+expect |
+expect |split|p1
+expect |-damage|p1a: Tauros|59/158 psn|[from] psn
+expect |-damage|p1a: Tauros|37/100 psn|[from] psn
+expect |split|p1
+expect |-damage|p1b: Swampert|42/175 brn|[from] brn
+expect |-damage|p1b: Swampert|24/100 brn|[from] brn
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2b: Big Tony's Pal|Fire Lash|p1a: Tauros
+expect |rng|100|31
+expect |rng|24|10
+expect |rng|16|10
+expect |-resisted|p1a: Tauros|1
+expect |split|p1
+expect |-damage|p1a: Tauros|38/158 psn
+expect |-damage|p1a: Tauros|24/100 psn
+expect |rng|100|7
+expect |-unboost|p1a: Tauros|def|1
+expect |move|p1a: Tauros|Aqua Step|p2a: Hippowdon
+expect |rng|100|35
+expect |rng|24|12
+expect |rng|16|13
+expect |-supereffective|p2a: Hippowdon|1
+expect |split|p2
+expect |-damage|p2a: Hippowdon|162/212
+expect |-damage|p2a: Hippowdon|76/100
+expect |rng|100|72
+expect |-boost|p1a: Tauros|spe|1
+expect |move|p1b: Swampert|Thief|p1a: Tauros
+expect |rng|100|57
+expect |rng|24|20
+expect |rng|16|5
+expect |-resisted|p1a: Tauros|1
+expect |split|p1
+expect |-damage|p1a: Tauros|27/158 psn
+expect |-damage|p1a: Tauros|17/100 psn
+expect |move|p2a: Hippowdon|Stone Axe|p1b: Swampert
+expect |rng|100|16
+expect |rng|24|22
+expect |rng|16|0
+expect |-resisted|p1b: Swampert|1
+expect |split|p1
+expect |-damage|p1b: Swampert|21/175 brn
+expect |-damage|p1b: Swampert|12/100 brn
+expect |rng|100|34
+expect |
+expect |split|p1
+expect |-damage|p1a: Tauros|8/158 psn|[from] psn
+expect |-damage|p1a: Tauros|5/100 psn|[from] psn
+expect |split|p1
+expect |-damage|p1b: Swampert|11/175 brn|[from] brn
+expect |-damage|p1b: Swampert|6/100 brn|[from] brn
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p1a: Tauros|Ceaseless Edge|p2b: Big Tony's Pal
+expect |rng|100|29
+expect |rng|24|10
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|99/194
+expect |-damage|p2b: Big Tony's Pal|51/100
+expect |rng|100|83
+expect |split|p1
+expect |-damage|p1a: Tauros|0 fnt|[from] ability: Rough Skin|[of] p2b: Big Tony's Pal
+expect |-damage|p1a: Tauros|0 fnt|[from] ability: Rough Skin|[of] p2b: Big Tony's Pal
+expect |-sidestart|p2: p2|Spikes
+expect |faint|p1a: Tauros
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Big Tony's Pal|Poltergeist|p1b: Swampert
+expect |rng|100|25
+expect |-activate|p1b: Swampert|move: Poltergeist|Swampertite
+expect |rng|24|0
+expect |rng|16|8
+expect |-crit|p1b: Swampert
+expect |split|p1
+expect |-damage|p1b: Swampert|0 fnt
+expect |-damage|p1b: Swampert|0 fnt
+expect |faint|p1b: Swampert
+expect |move|p2a: Hippowdon|Stone Axe|p2b: Big Tony's Pal
+expect |rng|100|85
+expect |rng|24|5
+expect |rng|16|15
+expect |-resisted|p2b: Big Tony's Pal|1
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|86/194
+expect |-damage|p2b: Big Tony's Pal|44/100
+expect |rng|100|67
+expect |split|p2
+expect |-damage|p2a: Hippowdon|136/212|[from] ability: Rough Skin|[of] p2b: Big Tony's Pal
+expect |-damage|p2a: Hippowdon|64/100|[from] ability: Rough Skin|[of] p2b: Big Tony's Pal
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Beartic|Beartic, L50, M|141/193
+expect |switch|p1a: Beartic|Beartic, L50, M|73/100
+expect |split|p1
+expect |switch|p1b: Big Tony's Pal|Garchomp, L50, F|205/205
+expect |switch|p1b: Big Tony's Pal|Garchomp, L50, F|100/100
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|193/205|[from] Stealth Rock
+expect |-damage|p1b: Big Tony's Pal|94/100|[from] Stealth Rock
+expect |split|p1
+expect |-damage|p1a: Beartic|93/193|[from] Stealth Rock
+expect |-damage|p1a: Beartic|48/100|[from] Stealth Rock
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2b: Big Tony's Pal|Fire Lash|p2a: Hippowdon
+expect |rng|100|77
+expect |rng|24|20
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Hippowdon|97/212
+expect |-damage|p2a: Hippowdon|45/100
+expect |rng|100|71
+expect |-unboost|p2a: Hippowdon|def|1
+expect |move|p1b: Big Tony's Pal|Gigaton Hammer|p2b: Big Tony's Pal
+expect |rng|100|63
+expect |rng|24|9
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|0 fnt
+expect |-damage|p2b: Big Tony's Pal|0 fnt
+expect |faint|p2b: Big Tony's Pal
+expect |rng|1|0
+expect |move|p2a: Hippowdon|Stone Axe|p1b: Big Tony's Pal
+expect |rng|100|13
+expect |rng|24|21
+expect |rng|16|5
+expect |-resisted|p1b: Big Tony's Pal|1
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|179/205
+expect |-damage|p1b: Big Tony's Pal|87/100
+expect |rng|100|67
+expect |split|p2
+expect |-damage|p2a: Hippowdon|71/212|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |-damage|p2a: Hippowdon|33/100|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Beartic|Infernal Parade|p2a: Hippowdon
+expect |rng|100|48
+expect |rng|24|2
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Hippowdon|47/212
+expect |-damage|p2a: Hippowdon|22/100
+expect |rng|100|36
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Sparky|Alcremie-Rainbow-Swirl, L50, F|152/152
+expect |switch|p2b: Sparky|Alcremie-Rainbow-Swirl, L50, F|100/100
+expect |split|p2
+expect |-damage|p2b: Sparky|133/152|[from] Stealth Rock
+expect |-damage|p2b: Sparky|87/100|[from] Stealth Rock
+expect |split|p2
+expect |-damage|p2b: Sparky|114/152|[from] Spikes
+expect |-damage|p2b: Sparky|75/100|[from] Spikes
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1b: Big Tony's Pal|After You|p2a: Hippowdon
+expect |-activate|p2a: Hippowdon|move: After You
+expect |move|p2a: Hippowdon|Stone Axe|p1a: Beartic
+expect |rng|100|73
+expect |rng|24|8
+expect |rng|16|6
+expect |-supereffective|p1a: Beartic|1
+expect |split|p1
+expect |-damage|p1a: Beartic|21/193
+expect |-damage|p1a: Beartic|10/100
+expect |rng|100|20
+expect |move|p2b: Sparky|Body Slam|p1b: Big Tony's Pal
+expect |rng|100|5
+expect |rng|24|6
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|153/205
+expect |-damage|p1b: Big Tony's Pal|74/100
+expect |rng|100|64
+expect |split|p2
+expect |-damage|p2b: Sparky|95/152|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |-damage|p2b: Sparky|62/100|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |move|p1a: Beartic|Infernal Parade|p2b: Sparky
+expect |rng|100|74
+expect |rng|24|17
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Sparky|76/152
+expect |-damage|p2b: Sparky|50/100y
+expect |rng|100|5
+expect |-status|p2b: Sparky|brn
+expect |
+expect |split|p2
+expect |-damage|p2b: Sparky|67/152 brn|[from] brn
+expect |-damage|p2b: Sparky|44/100 brn|[from] brn
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p1b: Big Tony's Pal|Instruct|p2b: Sparky
+expect |-singleturn|p2b: Sparky|move: Instruct|[of] p1b: Big Tony's Pal
+expect |move|p2b: Sparky|Body Slam|p1b: Big Tony's Pal
+expect |rng|100|70
+expect |rng|24|23
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|139/205
+expect |-damage|p1b: Big Tony's Pal|67/100
+expect |rng|100|15
+expect |-status|p1b: Big Tony's Pal|par
+expect |split|p2
+expect |-damage|p2b: Sparky|48/152 brn|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |-damage|p2b: Sparky|31/100 brn|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |move|p2a: Hippowdon|Stone Axe|p1a: Beartic
+expect |rng|100|41
+expect |rng|24|12
+expect |rng|16|15
+expect |-supereffective|p1a: Beartic|1
+expect |split|p1
+expect |-damage|p1a: Beartic|0 fnt
+expect |-damage|p1a: Beartic|0 fnt
+expect |rng|100|21
+expect |faint|p1a: Beartic
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Sparky|Fling|p1b: Big Tony's Pal
+expect |rng|100|68
+expect |rng|24|16
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|137/205 par
+expect |-damage|p1b: Big Tony's Pal|66/100 par
+expect |-enditem|p2b: Sparky|Psychic Seed|[from] move: Fling
+expect |
+expect |split|p2
+expect |-damage|p2b: Sparky|39/152 brn|[from] brn
+expect |-damage|p2b: Sparky|25/100 brn|[from] brn
+expect |upkeep
+expect |turn|10
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2a: Hippowdon|Stone Axe|p1b: Big Tony's Pal
+expect |rng|100|16
+expect |rng|24|4
+expect |rng|16|10
+expect |-resisted|p1b: Big Tony's Pal|1
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|124/205 par
+expect |-damage|p1b: Big Tony's Pal|60/100 par
+expect |rng|100|85
+expect |split|p2
+expect |-damage|p2a: Hippowdon|21/212|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |-damage|p2a: Hippowdon|9/100|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |move|p2b: Sparky|Fling||[still]
+expect |-fail|p2b: Sparky
+expect |rng|8|4
+expect |move|p1b: Big Tony's Pal|Instruct|p2a: Hippowdon
+expect |-singleturn|p2a: Hippowdon|move: Instruct|[of] p1b: Big Tony's Pal
+expect |move|p2a: Hippowdon|Stone Axe|p1b: Big Tony's Pal
+expect |rng|100|74
+expect |rng|24|22
+expect |rng|16|1
+expect |-resisted|p1b: Big Tony's Pal|1
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|110/205 par
+expect |-damage|p1b: Big Tony's Pal|53/100 par
+expect |rng|100|88
+expect |split|p2
+expect |-damage|p2a: Hippowdon|0 fnt|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |-damage|p2a: Hippowdon|0 fnt|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |faint|p2a: Hippowdon
+expect |
+expect |split|p2
+expect |-damage|p2b: Sparky|30/152 brn|[from] brn
+expect |-damage|p2b: Sparky|19/100 brn|[from] brn
+expect |upkeep
+expect |turn|11
+expect |rng|1|0
+expect |
+expect |t:|
+expect |move|p2b: Sparky|Infestation|p1b: Big Tony's Pal
+expect |rng|100|51
+expect |rng|24|19
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|99/205 par
+expect |-damage|p1b: Big Tony's Pal|48/100 par
+expect |rng|2|1
+expect |-activate|p1b: Big Tony's Pal|move: Infestation|[of] p2b: Sparky
+expect |split|p2
+expect |-damage|p2b: Sparky|11/152 brn|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |-damage|p2b: Sparky|7/100 brn|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |rng|8|3
+expect |move|p1b: Big Tony's Pal|Instruct|p2b: Sparky
+expect |-singleturn|p2b: Sparky|move: Instruct|[of] p1b: Big Tony's Pal
+expect |move|p2b: Sparky|Infestation|p1b: Big Tony's Pal
+expect |rng|100|48
+expect |rng|24|18
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|88/205 par
+expect |-damage|p1b: Big Tony's Pal|42/100 par
+expect |split|p2
+expect |-damage|p2b: Sparky|0 fnt|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |-damage|p2b: Sparky|0 fnt|[from] ability: Rough Skin|[of] p1b: Big Tony's Pal
+expect |faint|p2b: Sparky
+expect |
+expect |win|p1

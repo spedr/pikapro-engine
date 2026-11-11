@@ -1,0 +1,648 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 5830 271e e910 55ab
+genders drawn
+team p1
+Sir Hops-a-Lot (Rayquaza) @ Spooky Plate
+Ability: Air Lock
+Level: 50
+Shiny: Yes
+Tera Type: Fire
+EVs: 188 HP / 1 Atk / 31 Def / 51 SpA / 130 SpD / 105 Spe
+Lonely Nature
+- Eerie Impulse
+- False Swipe
+
+Arceus-Steel
+Ability: Multitype
+Level: 50
+Tera Type: Poison
+EVs: 5 HP / 223 Atk / 57 Def / 191 SpD / 27 Spe
+Gentle Nature
+- Dragon Tail
+- Lunar Dance
+- Dynamax Cannon
+- Doom Desire
+
+Nibbles (Swanna) (M)
+Ability: Big Pecks
+Level: 50
+Shiny: Yes
+Tera Type: Rock
+EVs: 29 HP / 21 Atk / 141 Def / 7 SpA / 98 SpD / 213 Spe
+Relaxed Nature
+- Guard Split
+- Recycle
+
+Mandibuzz @ Choice Scarf
+Ability: Overcoat
+Level: 50
+Tera Type: Stellar
+EVs: 192 HP / 45 Atk / 230 Def / 3 SpA / 10 SpD / 13 Spe
+Sassy Nature
+- Fire Fang
+- Thief
+- Inferno
+- Block
+
+Samurott (F) @ Chople Berry
+Ability: Torrent
+Level: 50
+Tera Type: Fire
+EVs: 91 HP / 53 Atk / 180 Def / 27 SpA / 112 SpD / 44 Spe
+Rash Nature
+- Reflect Type
+
+Big Tony's Pal (Oinkologne)
+Ability: Thick Fat
+Level: 50
+Tera Type: Fighting
+EVs: 152 HP / 21 Atk / 157 Def / 11 SpA / 79 SpD / 53 Spe
+Rash Nature
+- Hammer Arm
+- Wrap
+end
+team p2
+Zoë (Cyndaquil) @ Prism Scale
+Ability: Blaze
+Level: 50
+Tera Type: Electric
+EVs: 142 HP / 16 Atk / 40 Def / 2 SpA / 217 SpD / 93 Spe
+Naive Nature
+- Triple Arrows
+- Morning Sun
+
+Oshawott
+Ability: Torrent
+Level: 50
+Tera Type: Flying
+EVs: 226 HP / 174 Atk / 9 Def / 101 Spe
+Careful Nature
+- Topsy-Turvy
+- Aqua Jet
+
+X (Vespiquen) (F) @ Wide Lens
+Ability: Unnerve
+Level: 50
+Tera Type: Fire
+EVs: 125 HP / 175 Atk / 3 Def / 45 SpA / 4 SpD / 158 Spe
+Naughty Nature
+- Axe Kick
+- Charge Beam
+- Play Rough
+
+Uxie @ Safety Goggles
+Ability: Levitate
+Level: 50
+Tera Type: Normal
+EVs: 149 HP / 88 Atk / 20 Def / 71 SpA / 18 SpD / 142 Spe
+Serious Nature
+- Icy Wind
+- Temper Flare
+- Lunar Dance
+
+Magearna @ Eject Button
+Ability: Soul-Heart
+Level: 50
+Shiny: Yes
+Tera Type: Dragon
+EVs: 75 HP / 116 Atk / 25 Def / 42 SpA / 43 SpD / 138 Spe
+Bashful Nature
+- Copycat
+- Triple Kick
+
+Mr. Bubbles (Arcanine-Hisui) (F)
+Ability: Flash Fire
+Level: 50
+Tera Type: Ground
+EVs: 16 HP / 12 Atk / 9 Def / 223 SpA / 38 SpD / 212 Spe
+Docile Nature
+- Chloroblast
+end
+choice p1 team 5264
+choice p2 team 3615
+choice p1 move reflecttype -2 terastallize,move Dynamax Cannon +1
+choice p2 move 1 2, switch 3
+choice p1 move 1 1, move 3 2
+choice p2 move playrough +2, switch arcanine-hisui
+choice p1 switch 3, move 4 2
+choice p2 switch 4, move 1 1 terastallize
+choice p1 move 1 -2 ,  move Dynamax Cannon -1
+choice p2 default
+choice p1 switch samurott, pass
+choice p2 pass, switch 3
+choice p1 move 1 -2, move 4 2
+choice p2 default
+choice p1 pass, switch 4
+choice p2 move 1 ,  move triplearrows 2
+choice p1 move 1 -2, move 1 -1
+choice p2 move Triple Kick +2 ,  move Triple Arrows 2
+choice p1 move 1 1, move 1 2
+choice p2 switch vespiquen, move triplearrows +1
+choice p1 move 1 -2, move 1 1
+choice p2 default
+choice p1 move 1 -2, move 1 1
+choice p2 move 3 -2, move 2
+choice p1 move 1 1, pass
+choice p2 move 1 -2, move 2
+choice p1 move 1 2, pass
+choice p2 move 2 1, move 1 -1
+choice p1 move 1 2, pass
+choice p2 move 1 -2, move 1 1
+choice p1 move 1 +2
+choice p2 pass,switch 4
+choice p1 move reflecttype +2 ,  pass
+choice p2 move 2 -2, move 1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Rayquaza, L50|
+expect |poke|p1|Arceus-Steel, L50|
+expect |poke|p1|Swanna, L50, M|
+expect |poke|p1|Mandibuzz, L50, F|
+expect |poke|p1|Samurott, L50, F|
+expect |poke|p1|Oinkologne, L50, M|
+expect |poke|p2|Cyndaquil, L50, M|
+expect |poke|p2|Oshawott, L50, M|
+expect |poke|p2|Vespiquen, L50, F|
+expect |poke|p2|Uxie, L50|
+expect |poke|p2|Magearna, L50|
+expect |poke|p2|Arcanine-Hisui, L50, F|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Samurott|Samurott, L50, F|181/181
+expect |switch|p1a: Samurott|Samurott, L50, F|181/181
+expect |split|p1
+expect |switch|p1b: Arceus|Arceus-Steel, L50|196/196
+expect |switch|p1b: Arceus|Arceus-Steel, L50|196/196
+expect |split|p2
+expect |switch|p2a: X|Vespiquen, L50, F|161/161
+expect |switch|p2a: X|Vespiquen, L50, F|161/161
+expect |split|p2
+expect |switch|p2b: Mr. Bubbles|Arcanine-Hisui, L50, F|172/172
+expect |switch|p2b: Mr. Bubbles|Arcanine-Hisui, L50, F|172/172
+expect |-ability|p2a: X|Unnerve
+expect |-start|p1b: Arceus|typechange|Normal|[silent]
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zoë|Cyndaquil, L50, M|132/132
+expect |switch|p2b: Zoë|Cyndaquil, L50, M|132/132
+expect |-terastallize|p1a: Samurott|Fire
+expect |move|p1b: Arceus|Dynamax Cannon|p2a: X
+expect |rng|100|24
+expect |rng|24|2
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: X|108/161
+expect |-damage|p2a: X|108/161
+expect |move|p1a: Samurott|Reflect Type||[still]
+expect |-fail|p1a: Samurott
+expect |move|p2a: X|Axe Kick|p1b: Arceus
+expect |rng|100|25
+expect |rng|24|6
+expect |rng|16|6
+expect |-supereffective|p1b: Arceus
+expect |split|p1
+expect |-damage|p1b: Arceus|94/196
+expect |-damage|p1b: Arceus|94/196
+expect |rng|100|7
+expect |-start|p1b: Arceus|confusion
+expect |rng|3|0
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Mr. Bubbles|Arcanine-Hisui, L50, F|172/172
+expect |switch|p2b: Mr. Bubbles|Arcanine-Hisui, L50, F|172/172
+expect |-activate|p1b: Arceus|confusion
+expect |rng|100|38
+expect |move|p1b: Arceus|Dynamax Cannon|p2b: Mr. Bubbles
+expect |rng|100|30
+expect |rng|24|19
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|117/172
+expect |-damage|p2b: Mr. Bubbles|117/172
+expect |move|p1a: Samurott|Reflect Type||[still]
+expect |-fail|p1a: Samurott
+expect |move|p2a: X|Play Rough|p1b: Arceus
+expect |rng|100|76
+expect |rng|24|14
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Arceus|56/196
+expect |-damage|p1b: Arceus|56/196
+expect |rng|100|2
+expect |-unboost|p1b: Arceus|atk|1
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Big Tony's Pal|Oinkologne, L50, M|204/204
+expect |switch|p1a: Big Tony's Pal|Oinkologne, L50, M|204/204
+expect |split|p2
+expect |switch|p2a: Magearna|Magearna, L50, shiny|164/164
+expect |switch|p2a: Magearna|Magearna, L50, shiny|164/164
+expect |-terastallize|p2b: Mr. Bubbles|Ground
+expect |-activate|p1b: Arceus|confusion
+expect |rng|100|49
+expect |move|p1b: Arceus|Doom Desire|p2b: Mr. Bubbles
+expect |-start|p1b: Arceus|Doom Desire
+expect |move|p2b: Mr. Bubbles|Chloroblast|p1a: Big Tony's Pal
+expect |rng|100|35
+expect |rng|24|11
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|118/204
+expect |-damage|p1a: Big Tony's Pal|118/204
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|31/172|[from] Recoil
+expect |-damage|p2b: Mr. Bubbles|31/172|[from] Recoil
+expect |
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |
+expect |t:|
+expect |-end|p1b: Arceus|confusion
+expect |move|p1b: Arceus|Dynamax Cannon|p1a: Big Tony's Pal
+expect |rng|100|63
+expect |rng|24|13
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|62/204
+expect |-damage|p1a: Big Tony's Pal|62/204
+expect |move|p2b: Mr. Bubbles|Chloroblast|p1b: Arceus
+expect |rng|100|62
+expect |rng|24|18
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Arceus|4/196
+expect |-damage|p1b: Arceus|4/196
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|0 fnt|[from] Recoil
+expect |-damage|p2b: Mr. Bubbles|0 fnt|[from] Recoil
+expect |faint|p2b: Mr. Bubbles
+expect |-ability|p2a: Magearna|Soul-Heart|boost
+expect |-boost|p2a: Magearna|spa|1
+expect |move|p2a: Magearna|Copycat|p2a: Magearna
+expect |rng|2|0
+expect |move|p2a: Magearna|Chloroblast|p1a: Big Tony's Pal|[from] move: Copycat
+expect |rng|100|30
+expect |rng|24|16
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|0 fnt
+expect |-damage|p1a: Big Tony's Pal|0 fnt
+expect |faint|p1a: Big Tony's Pal
+expect |-ability|p2a: Magearna|Soul-Heart|boost
+expect |-boost|p2a: Magearna|spa|1
+expect |split|p2
+expect |-damage|p2a: Magearna|82/164|[from] Recoil
+expect |-damage|p2a: Magearna|82/164|[from] Recoil
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zoë|Cyndaquil, L50, M|132/132
+expect |switch|p2b: Zoë|Cyndaquil, L50, M|132/132
+expect |split|p1
+expect |switch|p1a: Samurott|Samurott, L50, F, tera:Fire|181/181
+expect |switch|p1a: Samurott|Samurott, L50, F, tera:Fire|181/181
+expect |turn|5
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1b: Arceus|Doom Desire||[still]
+expect |-fail|p1b: Arceus
+expect |move|p2b: Zoë|Triple Arrows|p1a: Samurott
+expect |rng|100|55
+expect |rng|8|3
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Samurott|158/181
+expect |-damage|p1a: Samurott|158/181
+expect |rng|100|88
+expect |rng|100|43
+expect |move|p2a: Magearna|Copycat|p2a: Magearna
+expect |rng|2|1
+expect |move|p2a: Magearna|Triple Arrows|p1b: Arceus|[from] move: Copycat
+expect |rng|100|92
+expect |rng|8|3
+expect |rng|16|4
+expect |-supereffective|p1b: Arceus
+expect |split|p1
+expect |-damage|p1b: Arceus|0 fnt
+expect |-damage|p1b: Arceus|0 fnt
+expect |rng|100|98
+expect |rng|100|35
+expect |faint|p1b: Arceus
+expect |-ability|p2a: Magearna|Soul-Heart|boost
+expect |-boost|p2a: Magearna|spa|1
+expect |move|p1a: Samurott|Reflect Type|p1: Arceus|[notarget]
+expect |-fail|p1a: Samurott
+expect |
+expect |-end|p2b: Zoë|move: Doom Desire
+expect |rng|100|10
+expect |rng|24|6
+expect |rng|16|8
+expect |-resisted|p2b: Zoë
+expect |split|p2
+expect |-damage|p2b: Zoë|63/132
+expect |-damage|p2b: Zoë|63/132
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Mandibuzz|Mandibuzz, L50, F|209/209
+expect |switch|p1b: Mandibuzz|Mandibuzz, L50, F|209/209
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p1b: Mandibuzz|Fire Fang|p1a: Samurott
+expect |rng|100|36
+expect |rng|24|21
+expect |rng|16|15
+expect |-resisted|p1a: Samurott
+expect |split|p1
+expect |-damage|p1a: Samurott|149/181
+expect |-damage|p1a: Samurott|149/181
+expect |rng|100|12
+expect |rng|100|60
+expect |move|p2b: Zoë|Triple Arrows|p1b: Mandibuzz
+expect |rng|100|88
+expect |rng|8|5
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Mandibuzz|189/209
+expect |-damage|p1b: Mandibuzz|189/209
+expect |rng|100|14
+expect |-unboost|p1b: Mandibuzz|def|1
+expect |rng|100|33
+expect |move|p2a: Magearna|Copycat|p2a: Magearna
+expect |rng|2|0
+expect |move|p2a: Magearna|Triple Arrows|p1a: Samurott|[from] move: Copycat
+expect |rng|100|65
+expect |rng|8|4
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Samurott|110/181
+expect |-damage|p1a: Samurott|110/181
+expect |rng|100|35
+expect |-unboost|p1a: Samurott|def|1
+expect |rng|100|93
+expect |move|p1a: Samurott|Reflect Type||[still]
+expect |-fail|p1a: Samurott
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1b: Mandibuzz|Fire Fang|p2b: Zoë
+expect |rng|100|57
+expect |rng|24|18
+expect |rng|16|15
+expect |-resisted|p2b: Zoë
+expect |split|p2
+expect |-damage|p2b: Zoë|46/132
+expect |-damage|p2b: Zoë|46/132
+expect |rng|100|43
+expect |rng|100|20
+expect |move|p2b: Zoë|Triple Arrows|p1b: Mandibuzz
+expect |rng|100|61
+expect |rng|8|6
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Mandibuzz|161/209
+expect |-damage|p1b: Mandibuzz|161/209
+expect |rng|100|41
+expect |-unboost|p1b: Mandibuzz|def|1
+expect |rng|100|70
+expect |move|p2a: Magearna|Triple Kick|p1b: Mandibuzz
+expect |rng|100|27
+expect |rng|24|8
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1b: Mandibuzz|153/209
+expect |-damage|p1b: Mandibuzz|153/209
+expect |rng|100|31
+expect |rng|24|12
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1b: Mandibuzz|139/209
+expect |-damage|p1b: Mandibuzz|139/209
+expect |rng|100|22
+expect |rng|24|22
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Mandibuzz|116/209
+expect |-damage|p1b: Mandibuzz|116/209
+expect |-hitcount|p1b: Mandibuzz|3
+expect |move|p1a: Samurott|Reflect Type||[still]
+expect |-fail|p1a: Samurott
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Vespiquen, L50, F|108/161
+expect |switch|p2a: X|Vespiquen, L50, F|108/161
+expect |-ability|p2a: X|Unnerve
+expect |move|p1b: Mandibuzz|Fire Fang|p2a: X
+expect |rng|100|40
+expect |rng|24|1
+expect |rng|16|10
+expect |-supereffective|p2a: X
+expect |split|p2
+expect |-damage|p2a: X|68/161
+expect |-damage|p2a: X|68/161
+expect |rng|100|10
+expect |rng|100|81
+expect |move|p2b: Zoë|Triple Arrows|p1a: Samurott
+expect |rng|100|62
+expect |rng|8|2
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Samurott|80/181
+expect |-damage|p1a: Samurott|80/181
+expect |rng|100|98
+expect |rng|100|46
+expect |move|p1a: Samurott|Reflect Type||[still]
+expect |-fail|p1a: Samurott
+expect |
+expect |upkeep
+expect |turn|9
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p1b: Mandibuzz|Fire Fang|p2a: X
+expect |rng|100|2
+expect |rng|24|11
+expect |rng|16|14
+expect |-supereffective|p2a: X
+expect |split|p2
+expect |-damage|p2a: X|30/161
+expect |-damage|p2a: X|30/161
+expect |rng|100|93
+expect |rng|100|61
+expect |move|p2b: Zoë|Triple Arrows|p1b: Mandibuzz
+expect |rng|100|90
+expect |rng|8|4
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Mandibuzz|76/209
+expect |-damage|p1b: Mandibuzz|76/209
+expect |rng|100|0
+expect |-unboost|p1b: Mandibuzz|def|1
+expect |rng|100|88
+expect |move|p1a: Samurott|Reflect Type||[still]
+expect |-fail|p1a: Samurott
+expect |move|p2a: X|Axe Kick|p1b: Mandibuzz
+expect |rng|100|72
+expect |rng|24|5
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: Mandibuzz|0 fnt
+expect |-damage|p1b: Mandibuzz|0 fnt
+expect |rng|100|71
+expect |faint|p1b: Mandibuzz
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p2b: Zoë|Morning Sun|p2b: Zoë
+expect |split|p2
+expect |-heal|p2b: Zoë|112/132
+expect |-heal|p2b: Zoë|112/132
+expect |move|p1a: Samurott|Reflect Type||[still]
+expect |-fail|p1a: Samurott
+expect |move|p2a: X|Play Rough|p2b: Zoë
+expect |rng|100|18
+expect |rng|24|8
+expect |rng|16|13
+expect |-resisted|p2b: Zoë
+expect |split|p2
+expect |-damage|p2b: Zoë|78/132
+expect |-damage|p2b: Zoë|78/132
+expect |rng|100|87
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p2b: Zoë|Morning Sun|p2b: Zoë
+expect |split|p2
+expect |-heal|p2b: Zoë|132/132
+expect |-heal|p2b: Zoë|132/132
+expect |move|p1a: Samurott|Reflect Type||[still]
+expect |-fail|p1a: Samurott
+expect |move|p2a: X|Axe Kick|p2b: Zoë
+expect |rng|100|2
+expect |rng|24|8
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Zoë|41/132
+expect |-damage|p2b: Zoë|41/132
+expect |rng|100|14
+expect |-start|p2b: Zoë|confusion
+expect |rng|3|1
+expect |
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |-activate|p2b: Zoë|confusion
+expect |rng|100|75
+expect |move|p2b: Zoë|Triple Arrows|p2a: X
+expect |rng|100|8
+expect |rng|8|5
+expect |rng|16|10
+expect |-resisted|p2a: X
+expect |split|p2
+expect |-damage|p2a: X|25/161
+expect |-damage|p2a: X|25/161
+expect |rng|100|83
+expect |rng|100|66
+expect |move|p1a: Samurott|Reflect Type||[still]
+expect |-fail|p1a: Samurott
+expect |move|p2a: X|Charge Beam|p1a: Samurott
+expect |rng|100|47
+expect |rng|24|6
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Samurott|58/181
+expect |-damage|p1a: Samurott|58/181
+expect |rng|100|99
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |-activate|p2b: Zoë|confusion
+expect |rng|100|69
+expect |move|p2b: Zoë|Triple Arrows|p1a: Samurott
+expect |rng|100|82
+expect |rng|8|0
+expect |rng|16|3
+expect |-crit|p1a: Samurott
+expect |split|p1
+expect |-damage|p1a: Samurott|6/181
+expect |-damage|p1a: Samurott|6/181
+expect |rng|100|70
+expect |rng|100|72
+expect |move|p1a: Samurott|Reflect Type||[still]
+expect |-fail|p1a: Samurott
+expect |move|p2a: X|Axe Kick|p2b: Zoë
+expect |rng|100|59
+expect |rng|24|2
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Zoë|0 fnt
+expect |-damage|p2b: Zoë|0 fnt
+expect |rng|100|37
+expect |faint|p2b: Zoë
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Magearna|Magearna, L50, shiny|82/164
+expect |switch|p2b: Magearna|Magearna, L50, shiny|82/164
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p2b: Magearna|Copycat|p2b: Magearna
+expect |rng|1|0
+expect |move|p2b: Magearna|Axe Kick|p1a: Samurott|[from] move: Copycat
+expect |rng|100|5
+expect |rng|24|1
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Samurott|0 fnt
+expect |-damage|p1a: Samurott|0 fnt
+expect |rng|100|66
+expect |faint|p1a: Samurott
+expect |
+expect |win|p2

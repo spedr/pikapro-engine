@@ -1,0 +1,42 @@
+# championsvgc-gen5-2112030-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@option replay spectator
+@write
+>start {"formatid":"gen9championsvgc2026regmb","seed":"gen5,18990f1725dc43da"}
+>player p1 {"name":"Alice","team":[{"name":"Aromatisse","species":"Aromatisse","item":"Light Ball","ability":"Aroma Veil","moves":["Energy Ball","Encore","Forest's Curse"],"nature":"Bold","evs":{"hp":1,"atk":11,"def":0,"spa":27,"spd":25,"spe":2},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison"},{"name":"Mr. Bubbles","species":"Hatterene","item":"Expert Belt","ability":"Healer","moves":["Nasty Plot"],"nature":"Lax","evs":{"hp":8,"atk":27,"def":30,"spa":0,"spd":1,"spe":0},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug"},{"name":"Drampa","species":"Drampa","item":"Drampanite","ability":"Berserk","moves":["Icicle Crash","Leaf Blade","Encore"],"nature":"Sassy","evs":{"hp":7,"atk":9,"def":8,"spa":4,"spd":25,"spe":13},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug"},{"name":"Pikachu","species":"Sneasler","item":"","ability":"Pressure","moves":["Night Daze","Imprison"],"nature":"Gentle","evs":{"hp":10,"atk":22,"def":3,"spa":19,"spd":7,"spe":2},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug"},{"name":"Flapple","species":"Flapple","item":"","ability":"Ripen","moves":["Sandstorm","Dig","Stone Edge","Foul Play"],"nature":"Quirky","evs":{"hp":21,"atk":1,"def":31,"spa":6,"spd":3,"spe":4},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice"},{"name":"Meowstic-F","species":"Meowstic-F","item":"Wacan Berry","ability":"Keen Eye","moves":["Disable"],"nature":"Sassy","evs":{"hp":18,"atk":0,"def":8,"spa":27,"spd":11,"spe":1},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug"}]}
+
+>player p2 {"name":"Bob","team":[{"name":"Alcremie-Lemon-Cream","species":"Alcremie-Lemon-Cream","item":"Zoom Lens","ability":"Arena Trap","moves":["Dark Pulse","Safeguard"],"nature":"Mild","evs":{"hp":30,"atk":27,"def":3,"spa":1,"spd":3,"spe":2},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug"},{"name":"Reuniclus","species":"Reuniclus","item":"","ability":"Regenerator","moves":["Venoshock","Roost","Giga Impact","Disable"],"nature":"Lonely","evs":{"hp":13,"atk":0,"def":0,"spa":23,"spd":2,"spe":23},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water"},{"name":"Clawitzer","species":"Clawitzer","item":"","ability":"Mega Launcher","moves":["Payback","Tickle"],"nature":"Calm","evs":{"hp":2,"atk":1,"def":9,"spa":22,"spd":0,"spe":32},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric"},{"name":"Pinsir","species":"Pinsir","item":"Pinsirite","ability":"Mold Breaker","moves":["Power Gem","Explosion","Focus Blast"],"nature":"Bold","evs":{"hp":6,"atk":10,"def":32,"spa":2,"spd":1,"spe":14},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar"},{"name":"Ninetales","species":"Ninetales","item":"Wide Lens","ability":"Drought","moves":["Tailwind"],"nature":"Lax","evs":{"hp":16,"atk":16,"def":1,"spa":4,"spd":0,"spe":29},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying"},{"name":"Sylveon","species":"Sylveon","item":"","ability":"Magnet Pull","moves":["Magic Room","Triple Axel","Bullet Seed","Amnesia"],"nature":"Relaxed","evs":{"hp":4,"atk":4,"def":1,"spa":5,"spd":23,"spe":9},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire"}]}
+>p2 team 1,1
+@write
+>p1 team 6124
+>tiebreak
+@message
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Aromatisse, L50, F|
+|poke|p1|Hatterene, L50, F|
+|poke|p1|Drampa, L50, M, shiny|
+|poke|p1|Sneasler, L50, M|
+|poke|p1|Flapple, L50, F|
+|poke|p1|Meowstic-F, L50, F|
+|poke|p2|Alcremie-Lemon-Cream, L50, F|
+|poke|p2|Reuniclus, L50, F|
+|poke|p2|Clawitzer, L50, M|
+|poke|p2|Pinsir, L50, F|
+|poke|p2|Ninetales, L50, M|
+|poke|p2|Sylveon, L50, F|
+|teampreview|4
+@message
+|message|Time's up! Going to tiebreaker...
+|-message|Alice: 6 Pokemon left; Bob: 6 Pokemon left
+|-message|Alice: 100% total HP left; Bob: 100% total HP left
+|-message|Alice: 975 total HP left; Bob: 1000 total HP left
+|
+|win|Bob

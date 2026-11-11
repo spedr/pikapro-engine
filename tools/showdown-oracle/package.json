@@ -1,0 +1,14 @@
+{
+  "name": "pikapro-showdown-oracle",
+  "private": true,
+  "description": "Runs battles on the real Pokémon Showdown simulator for pikapro conformance testing",
+  "type": "module",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "oracle": "node oracle.mjs",
+    "postinstall": "node node_modules/pokemon-showdown/build"
+  },
+  "dependencies": {
+    "pokemon-showdown": "git+https://github.com/smogon/pokemon-showdown.git#a5df8274e85b0889bf2a9b3422a08b39732374fc"
+  }
+}

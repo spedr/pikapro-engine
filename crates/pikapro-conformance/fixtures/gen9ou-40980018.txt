@@ -1,0 +1,191 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9ou
+seed bb24 e47c bd1f d259
+genders drawn
+team p1
+Yungoos
+Ability: Stakeout
+Tera Type: Normal
+EVs: 92 HP / 1 Atk / 1 Def / 172 SpA / 192 SpD / 45 Spe
+Impish Nature
+- Boomburst
+- Bind
+- Flame Charge
+- Behemoth Bash
+end
+team p2
+Big Tony's Pal (Flittle) @ Eject Pack
+Ability: Speed Boost
+Tera Type: Ice
+EVs: 85 HP / 244 Atk / 32 Def / 98 SpA / 16 SpD / 12 Spe
+Calm Nature
+- Last Respects
+- Air Cutter
+- Stone Axe
+- Spicy Extract
+
+Kleavor (M) @ Syrupy Apple
+Ability: Swarm
+Tera Type: Ground
+EVs: 154 HP / 43 Atk / 163 Def / 107 SpA / 12 SpD / 16 Spe
+Timid Nature
+- Flower Trick
+- Payback
+
+Koraidon @ Rowap Berry
+Ability: Orichalcum Pulse
+Tera Type: Rock
+EVs: 110 HP / 97 Atk / 12 Def / 70 SpA / 26 SpD / 195 Spe
+Mild Nature
+- Frost Breath
+
+Gogoat (M) @ Rindo Berry
+Ability: Grass Pelt
+Tera Type: Dark
+EVs: 223 HP / 17 Atk / 211 Def / 35 SpA / 18 SpD / 2 Spe
+Timid Nature
+- Sandstorm
+- Boomburst
+- Inferno
+
+Iron Leaves @ Pretty Feather
+Ability: Quark Drive
+Tera Type: Steel
+EVs: 204 HP / 111 Atk / 3 Def / 68 SpA / 90 SpD / 11 Spe
+Bashful Nature
+- Diamond Storm
+- Struggle Bug
+- Tail Slap
+
+Sprigatito @ Starf Berry
+Ability: Protean
+Tera Type: Steel
+EVs: 84 HP / 178 Atk / 38 Def / 13 SpA / 185 SpD / 3 Spe
+Bold Nature
+- Electroweb
+- Icy Wind
+- Drill Run
+- Steel Roller
+end
+choice p1 team 1
+choice p2 team [6, 2, 4, 5, 1, 3]
+choice p1 move 4 terastallize
+choice p2 switch 3
+choice p1 move 1
+choice p2 move 1 terastallize
+choice p1 move bind
+choice p2 switch 2
+choice p1 move 2
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] OU
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Endless Battle Clause: Forcing endless battles is banned
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|OHKO Clause: OHKO moves are banned
+expect |rule|Evasion Items Clause: Evasion items are banned
+expect |rule|Evasion Moves Clause: Evasion moves are banned
+expect |rule|Evasion Abilities Clause: Evasion abilities are banned
+expect |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+expect |clearpoke
+expect |poke|p1|Yungoos, F|
+expect |poke|p2|Flittle, M|
+expect |poke|p2|Kleavor, M|
+expect |poke|p2|Koraidon|
+expect |poke|p2|Gogoat, M|
+expect |poke|p2|Iron Leaves|
+expect |poke|p2|Sprigatito, M|
+expect |teampreview
+expect |
+expect |t:|
+expect |teamsize|p1|1
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Yungoos|Yungoos, F|260/260
+expect |switch|p1a: Yungoos|Yungoos, F|100/100
+expect |split|p2
+expect |switch|p2a: Sprigatito|Sprigatito, M|242/242
+expect |switch|p2a: Sprigatito|Sprigatito, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Gogoat|Gogoat, M|442/442
+expect |switch|p2a: Gogoat|Gogoat, M|100/100
+expect |-terastallize|p1a: Yungoos|Normal
+expect |move|p1a: Yungoos|Behemoth Bash|p2a: Gogoat
+expect |rng|100|55
+expect |rng|24|12
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Gogoat|306/442
+expect |-damage|p2a: Gogoat|70/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |-terastallize|p2a: Gogoat|Dark
+expect |move|p2a: Gogoat|Sandstorm|p2a: Gogoat
+expect |-weather|Sandstorm
+expect |move|p1a: Yungoos|Boomburst|p2a: Gogoat
+expect |rng|100|17
+expect |rng|24|9
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Gogoat|164/442
+expect |-damage|p2a: Gogoat|38/100
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p2
+expect |-damage|p2a: Gogoat|137/442|[from] Sandstorm
+expect |-damage|p2a: Gogoat|31/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Yungoos|244/260|[from] Sandstorm
+expect |-damage|p1a: Yungoos|94/100|[from] Sandstorm
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Kleavor|Kleavor, M|319/319
+expect |switch|p2a: Kleavor|Kleavor, M|100/100
+expect |move|p1a: Yungoos|Bind|p2a: Kleavor
+expect |rng|100|11
+expect |rng|24|14
+expect |rng|16|9
+expect |-resisted|p2a: Kleavor
+expect |split|p2
+expect |-damage|p2a: Kleavor|258/319
+expect |-damage|p2a: Kleavor|81/100
+expect |rng|2|0
+expect |-activate|p2a: Kleavor|move: Bind|[of] p1a: Yungoos
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Yungoos|228/260|[from] Sandstorm
+expect |-damage|p1a: Yungoos|88/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Kleavor|219/319|[from] move: Bind|[partiallytrapped]
+expect |-damage|p2a: Kleavor|69/100|[from] move: Bind|[partiallytrapped]
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Kleavor|Flower Trick|p1a: Yungoos
+expect |rng|16|0
+expect |-crit|p1a: Yungoos
+expect |split|p1
+expect |-damage|p1a: Yungoos|0 fnt
+expect |-damage|p1a: Yungoos|0 fnt
+expect |faint|p1a: Yungoos
+expect |
+expect |win|p2

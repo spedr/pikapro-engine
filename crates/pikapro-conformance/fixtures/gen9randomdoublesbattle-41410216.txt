@@ -1,0 +1,729 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 7a2e 011d fc4a 899d
+genders drawn
+team p1
+Scizor (F) @ Sitrus Berry
+Ability: Technician
+Level: 80
+Tera Type: Fire
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Close Combat
+- U-turn
+- Tailwind
+- Bullet Punch
+
+Nibbles (Sableye) (M) @ Sitrus Berry
+Ability: Prankster
+Level: 92
+Tera Type: Steel
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Knock Off
+- Fake Out
+- Thunder Wave
+- Encore
+
+Volcanion @ Sitrus Berry
+Ability: Water Absorb
+Level: 75
+Tera Type: Ground
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Protect
+- Steam Eruption
+- Earth Power
+- Heat Wave
+
+Dragapult (M) @ Life Orb
+Ability: Clear Body
+Level: 79
+Tera Type: Dragon
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Shadow Ball
+- Protect
+- Dragon Darts
+- Draco Meteor
+
+Minior-Violet @ White Herb
+Ability: Shields Down
+Level: 83
+Tera Type: Rock
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Protect
+- Rock Slide
+- Shell Smash
+- Acrobatics
+
+Dipplin (F) @ Eviolite
+Ability: Sticky Hold
+Level: 92
+Shiny: Yes
+Tera Type: Steel
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Recover
+- Pollen Puff
+- Dragon Pulse
+- Syrup Bomb
+end
+team p2
+Golurk @ Assault Vest
+Ability: No Guard
+Level: 86
+Shiny: Yes
+Tera Type: Dragon
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- High Horsepower
+- Poltergeist
+- Stone Edge
+- Dynamic Punch
+
+Dialga @ Sitrus Berry
+Ability: Telepathy
+Level: 74
+Shiny: Yes
+Tera Type: Flying
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Draco Meteor
+- Thunder Wave
+- Heavy Slam
+- Fire Blast
+
+Glaceon (M) @ Blunder Policy
+Ability: Ice Body
+Level: 86
+Tera Type: Ground
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Mud Shot
+- Freeze-Dry
+- Blizzard
+- Protect
+
+Tatsugiri (F) @ Choice Scarf
+Ability: Storm Drain
+Level: 84
+Tera Type: Dragon
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Icy Wind
+- Hydro Pump
+- Draco Meteor
+- Muddy Water
+
+Chomp (Pelipper) (F) @ Sitrus Berry
+Ability: Drizzle
+Level: 83
+Tera Type: Steel
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Tailwind
+- Protect
+- Muddy Water
+- Hurricane
+
+Kleavor (M) @ Life Orb
+Ability: Sharpness
+Level: 79
+Tera Type: Fighting
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Protect
+- Stone Axe
+- X-Scissor
+- Close Combat
+end
+choice p1 move 4 -2, move 2 -1 terastallize
+choice p2 move stoneedge -2,move Draco Meteor terastal -1
+choice p1 move 3, move 1 -1
+choice p2 move 4 2, switch 5
+choice p1 move 2 2, switch 6
+choice p2 move 4 1, move 4 1
+choice p1 switch Nibbles,skip
+choice p1 switch volcanion,skip
+choice p2 move dynamicpunch -2, switch 4
+choice p1 switch 6, move 3 -1
+choice p2 switch 5, move 1
+choice p1 move 2 1, move 3 -1
+choice p1 switch minior-violet ,  skip
+choice p2 move Fire Blast 1, switch golurk
+choice p1 move rockslide,switch dragapult
+choice p2 move fireblast +2, move highhorsepower 1
+choice p1 switch Scizor, move protect
+choice p1 switch 6, pass
+choice p2 move 4 1, move 4 2
+choice p1 move 3 -2, move 3 1
+choice p2 default
+choice p1 move 2 1, switch 4
+choice p1 switch 4, switch 5
+choice p2 switch 6, switch 3
+choice p1 move 1 -2, move 3
+choice p2 switch 4, switch 5
+choice p1 move 3 2, pass
+choice p2 pass, switch 5
+choice p1 move 4 1, pass
+choice p2 move hurricane 1 ,  switch dialga
+choice p2 switch 6, pass
+choice p1 move 4 1, pass
+choice p2 move 2 -2, switch 4
+choice p1 move 3 2, pass
+choice p2 move 2 1, move 4 -1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Scizor|Scizor, L80, F|243/243
+expect |switch|p1a: Scizor|Scizor, L80, F|100/100
+expect |split|p1
+expect |switch|p1b: Nibbles|Sableye, L92, M|241/241
+expect |switch|p1b: Nibbles|Sableye, L92, M|100/100
+expect |split|p2
+expect |switch|p2a: Golurk|Golurk, L86, shiny|293/293
+expect |switch|p2a: Golurk|Golurk, L86, shiny|100/100
+expect |rng|2|1
+expect |split|p2
+expect |switch|p2b: Dialga|Dialga, L74, shiny|270/270
+expect |switch|p2b: Dialga|Dialga, L74, shiny|100/100
+expect |rng|2|0
+expect |rng|2|1
+expect |turn|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |-terastallize|p2b: Dialga|Flying
+expect |rng|2|1
+expect |-terastallize|p1b: Nibbles|Steel
+expect |rng|2|1
+expect |move|p1b: Nibbles|Fake Out|p1a: Scizor
+expect |rng|100|15
+expect |rng|24|13
+expect |rng|16|12
+expect |-resisted|p1a: Scizor
+expect |split|p1
+expect |-damage|p1a: Scizor|230/243
+expect |-damage|p1a: Scizor|95/100
+expect |rng|100|23
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |cant|p1a: Scizor|flinch
+expect |rng|2|0
+expect |move|p2b: Dialga|Draco Meteor|p2a: Golurk
+expect |rng|24|21
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Golurk|179/293
+expect |-damage|p2a: Golurk|62/100
+expect |rng|100|20
+expect |-unboost|p2b: Dialga|spa|2
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Golurk|Stone Edge|p2b: Dialga
+expect |-activate|p2b: Dialga|ability: Telepathy
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|1
+expect |turn|2
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |split|p2
+expect |switch|p2b: Chomp|Pelipper, L83, F|235/235
+expect |switch|p2b: Chomp|Pelipper, L83, F|100/100
+expect |rng|2|1
+expect |rng|2|0
+expect |-weather|RainDance|[from] ability: Drizzle|[of] p2b: Chomp
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Scizor|Tailwind|p1a: Scizor
+expect |-sidestart|p1: p1|move: Tailwind
+expect |rng|2|0
+expect |move|p1b: Nibbles|Knock Off|p1a: Scizor
+expect |rng|100|14
+expect |rng|24|1
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Scizor|130/243
+expect |-damage|p1a: Scizor|54/100
+expect |-enditem|p1a: Scizor|Sitrus Berry|[from] move: Knock Off|[of] p1b: Nibbles
+expect |move|p2a: Golurk|Dynamic Punch|p1b: Nibbles
+expect |rng|24|19
+expect |rng|16|14
+expect |-supereffective|p1b: Nibbles
+expect |split|p1
+expect |-damage|p1b: Nibbles|69/241
+expect |-damage|p1b: Nibbles|29/100
+expect |rng|100|73
+expect |-start|p1b: Nibbles|confusion
+expect |rng|4|0
+expect |-enditem|p1b: Nibbles|Sitrus Berry|[eat]
+expect |split|p1
+expect |-heal|p1b: Nibbles|129/241|[from] item: Sitrus Berry
+expect |-heal|p1b: Nibbles|54/100|[from] item: Sitrus Berry
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Dipplin|Dipplin, L92, F, shiny|297/297
+expect |switch|p1b: Dipplin|Dipplin, L92, F, shiny|100/100
+expect |move|p1a: Scizor|U-turn|p2b: Chomp
+expect |rng|100|52
+expect |rng|24|5
+expect |rng|16|3
+expect |-resisted|p2b: Chomp
+expect |split|p2
+expect |-damage|p2b: Chomp|193/235
+expect |-damage|p2b: Chomp|83/100
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Nibbles|Sableye, L92, M, tera:Steel|129/241|[from] U-turn
+expect |switch|p1a: Nibbles|Sableye, L92, M, tera:Steel|54/100|[from] U-turn
+expect |move|p2b: Chomp|Hurricane|p1a: Nibbles
+expect |rng|24|5
+expect |rng|16|12
+expect |-resisted|p1a: Nibbles
+expect |split|p1
+expect |-damage|p1a: Nibbles|69/241
+expect |-damage|p1a: Nibbles|29/100
+expect |rng|100|64
+expect |move|p2a: Golurk|Dynamic Punch|p1a: Nibbles
+expect |rng|24|11
+expect |rng|16|0
+expect |-supereffective|p1a: Nibbles
+expect |split|p1
+expect |-damage|p1a: Nibbles|0 fnt
+expect |-damage|p1a: Nibbles|0 fnt
+expect |rng|100|2
+expect |faint|p1a: Nibbles
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Volcanion|Volcanion, L75|244/244
+expect |switch|p1a: Volcanion|Volcanion, L75|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Scizor|Scizor, L80, F|130/243
+expect |switch|p1a: Scizor|Scizor, L80, F|54/100
+expect |split|p2
+expect |switch|p2b: Tatsugiri|Tatsugiri, L84, F|251/251
+expect |switch|p2b: Tatsugiri|Tatsugiri, L84, F|100/100
+expect |move|p1b: Dipplin|Dragon Pulse|p1a: Scizor
+expect |rng|100|9
+expect |rng|24|19
+expect |rng|16|2
+expect |-resisted|p1a: Scizor
+expect |split|p1
+expect |-damage|p1a: Scizor|67/243
+expect |-damage|p1a: Scizor|28/100
+expect |move|p2a: Golurk|Dynamic Punch|p2b: Tatsugiri
+expect |rng|24|13
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Tatsugiri|128/251
+expect |-damage|p2b: Tatsugiri|51/100
+expect |rng|100|48
+expect |-start|p2b: Tatsugiri|confusion
+expect |rng|4|1
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Dialga|Dialga, L74, shiny, tera:Flying|270/270
+expect |switch|p2a: Dialga|Dialga, L74, shiny, tera:Flying|100/100
+expect |rng|2|1
+expect |move|p1a: Scizor|U-turn|p2a: Dialga
+expect |rng|100|27
+expect |rng|24|5
+expect |rng|16|13
+expect |-resisted|p2a: Dialga
+expect |split|p2
+expect |-damage|p2a: Dialga|234/270
+expect |-damage|p2a: Dialga|87/100
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Minior|Minior-Violet, L83|235/235|[from] U-turn
+expect |switch|p1a: Minior|Minior-Violet, L83|100/100|[from] U-turn
+expect |-formechange|p1a: Minior|Minior-Meteor||[from] ability: Shields Down
+expect |rng|2|0
+expect |rng|2|0
+expect |-activate|p2b: Tatsugiri|confusion
+expect |rng|100|52
+expect |move|p2b: Tatsugiri|Icy Wind|p1a: Minior|[spread] p1a,p1b
+expect |rng|100|74
+expect |rng|100|52
+expect |rng|24|9
+expect |rng|16|6
+expect |-supereffective|p1a: Minior
+expect |rng|24|3
+expect |rng|16|6
+expect |-supereffective|p1b: Dipplin
+expect |split|p1
+expect |-damage|p1a: Minior|173/235
+expect |-damage|p1a: Minior|74/100
+expect |split|p1
+expect |-damage|p1b: Dipplin|205/297
+expect |-damage|p1b: Dipplin|70/100
+expect |rng|100|52
+expect |-unboost|p1a: Minior|spe|1
+expect |rng|100|3
+expect |-unboost|p1b: Dipplin|spe|1
+expect |-enditem|p1a: Minior|White Herb
+expect |-clearnegativeboost|p1a: Minior|[silent]
+expect |move|p1b: Dipplin|Dragon Pulse|p1a: Minior
+expect |rng|100|53
+expect |rng|24|11
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Minior|73/235
+expect |-damage|p1a: Minior|32/100
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |-sideend|p1: p1|move: Tailwind
+expect |-formechange|p1a: Minior|Minior-Violet||[from] ability: Shields Down
+expect |upkeep
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Golurk|Golurk, L86, shiny|179/293
+expect |switch|p2b: Golurk|Golurk, L86, shiny|62/100
+expect |split|p1
+expect |switch|p1b: Dragapult|Dragapult, L79, M|269/269
+expect |switch|p1b: Dragapult|Dragapult, L79, M|100/100
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Minior|Rock Slide|p2b: Golurk|[spread] p2a,p2b
+expect |rng|100|40
+expect |rng|24|21
+expect |rng|16|12
+expect |-supereffective|p2a: Dialga
+expect |rng|24|20
+expect |rng|16|8
+expect |-resisted|p2b: Golurk
+expect |split|p2
+expect |-damage|p2a: Dialga|132/270
+expect |-damage|p2a: Dialga|49/100
+expect |split|p2
+expect |-damage|p2b: Golurk|148/293
+expect |-damage|p2b: Golurk|51/100
+expect |rng|100|57
+expect |rng|100|85
+expect |-enditem|p2a: Dialga|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2a: Dialga|199/270|[from] item: Sitrus Berry
+expect |-heal|p2a: Dialga|74/100|[from] item: Sitrus Berry
+expect |move|p2a: Dialga|Fire Blast|p1a: Minior
+expect |rng|100|41
+expect |rng|24|4
+expect |rng|16|8
+expect |-resisted|p1a: Minior
+expect |split|p1
+expect |-damage|p1a: Minior|45/235
+expect |-damage|p1a: Minior|20/100
+expect |rng|100|86
+expect |
+expect |-weather|none
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Scizor|Scizor, L80, F|67/243
+expect |switch|p1a: Scizor|Scizor, L80, F|28/100
+expect |move|p1b: Dragapult|Protect|p1b: Dragapult
+expect |-singleturn|p1b: Dragapult|Protect
+expect |move|p2a: Dialga|Fire Blast|p1b: Dragapult
+expect |-activate|p1b: Dragapult|move: Protect
+expect |move|p2b: Golurk|High Horsepower|p1a: Scizor
+expect |rng|24|5
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Scizor|0 fnt
+expect |-damage|p1a: Scizor|0 fnt
+expect |faint|p1a: Scizor
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Volcanion|Volcanion, L75|244/244
+expect |switch|p1a: Volcanion|Volcanion, L75|100/100
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1b: Dragapult|Dragon Darts|p2a: Dialga
+expect |rng|100|62
+expect |rng|24|6
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Dialga|139/270
+expect |-damage|p2a: Dialga|52/100
+expect |-anim|p1b: Dragapult|Dragon Darts|p2b: Golurk
+expect |rng|24|1
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Golurk|73/293
+expect |-damage|p2b: Golurk|25/100
+expect |split|p1
+expect |-damage|p1b: Dragapult|243/269|[from] item: Life Orb
+expect |-damage|p1b: Dragapult|91/100|[from] item: Life Orb
+expect |move|p2a: Dialga|Fire Blast|p1a: Volcanion
+expect |rng|100|29
+expect |rng|24|21
+expect |rng|16|2
+expect |-resisted|p1a: Volcanion
+expect |split|p1
+expect |-damage|p1a: Volcanion|220/244
+expect |-damage|p1a: Volcanion|91/100
+expect |rng|100|61
+expect |move|p1a: Volcanion|Earth Power|p1b: Dragapult
+expect |rng|100|78
+expect |rng|24|21
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Dragapult|163/269
+expect |-damage|p1b: Dragapult|61/100
+expect |rng|100|15
+expect |move|p2b: Golurk|Dynamic Punch|p1b: Dragapult
+expect |-immune|p1b: Dragapult
+expect |
+expect |upkeep
+expect |turn|9
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Dipplin|Dipplin, L92, F, shiny|205/297
+expect |switch|p1b: Dipplin|Dipplin, L92, F, shiny|70/100
+expect |move|p2a: Dialga|Draco Meteor|p1b: Dipplin
+expect |rng|100|16
+expect |rng|24|0
+expect |rng|16|2
+expect |-supereffective|p1b: Dipplin
+expect |-crit|p1b: Dipplin
+expect |split|p1
+expect |-damage|p1b: Dipplin|0 fnt
+expect |-damage|p1b: Dipplin|0 fnt
+expect |rng|100|28
+expect |-unboost|p2a: Dialga|spa|2
+expect |faint|p1b: Dipplin
+expect |rng|1|0
+expect |move|p1a: Volcanion|Steam Eruption|p2a: Dialga
+expect |rng|100|19
+expect |rng|24|3
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Dialga|21/270
+expect |-damage|p2a: Dialga|8/100
+expect |rng|100|42
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Golurk|High Horsepower|p1a: Volcanion
+expect |rng|24|15
+expect |rng|16|3
+expect |-supereffective|p1a: Volcanion
+expect |split|p1
+expect |-damage|p1a: Volcanion|0 fnt
+expect |-damage|p1a: Volcanion|0 fnt
+expect |faint|p1a: Volcanion
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Dragapult|Dragapult, L79, M|163/269
+expect |switch|p1a: Dragapult|Dragapult, L79, M|61/100
+expect |split|p1
+expect |switch|p1b: Minior|Minior-Violet, L83|45/235
+expect |switch|p1b: Minior|Minior-Violet, L83|20/100
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Kleavor|Kleavor, L79, M|240/240
+expect |switch|p2a: Kleavor|Kleavor, L79, M|100/100
+expect |split|p2
+expect |switch|p2b: Glaceon|Glaceon, L86, M|252/252
+expect |switch|p2b: Glaceon|Glaceon, L86, M|100/100
+expect |move|p1a: Dragapult|Shadow Ball|p1b: Minior
+expect |rng|100|23
+expect |rng|24|14
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1b: Minior|0 fnt
+expect |-damage|p1b: Minior|0 fnt
+expect |rng|100|16
+expect |faint|p1b: Minior
+expect |split|p1
+expect |-damage|p1a: Dragapult|137/269|[from] item: Life Orb
+expect |-damage|p1a: Dragapult|51/100|[from] item: Life Orb
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Chomp|Pelipper, L83, F|193/235
+expect |switch|p2a: Chomp|Pelipper, L83, F|83/100
+expect |-weather|RainDance|[from] ability: Drizzle|[of] p2a: Chomp
+expect |split|p2
+expect |switch|p2b: Tatsugiri|Tatsugiri, L84, F|128/251
+expect |switch|p2b: Tatsugiri|Tatsugiri, L84, F|51/100
+expect |move|p1a: Dragapult|Dragon Darts|p2b: Tatsugiri
+expect |rng|100|36
+expect |rng|100|64
+expect |rng|24|23
+expect |rng|16|0
+expect |-supereffective|p2b: Tatsugiri
+expect |split|p2
+expect |-damage|p2b: Tatsugiri|0 fnt
+expect |-damage|p2b: Tatsugiri|0 fnt
+expect |-anim|p1a: Dragapult|Dragon Darts|p2a: Chomp
+expect |rng|24|4
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Chomp|123/235
+expect |-damage|p2a: Chomp|53/100
+expect |faint|p2b: Tatsugiri
+expect |split|p1
+expect |-damage|p1a: Dragapult|111/269|[from] item: Life Orb
+expect |-damage|p1a: Dragapult|42/100|[from] item: Life Orb
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Glaceon|Glaceon, L86, M|252/252
+expect |switch|p2b: Glaceon|Glaceon, L86, M|100/100
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Dialga|Dialga, L74, shiny, tera:Flying|21/270
+expect |switch|p2b: Dialga|Dialga, L74, shiny, tera:Flying|8/100
+expect |move|p1a: Dragapult|Draco Meteor|p2a: Chomp
+expect |rng|100|2
+expect |rng|24|18
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Chomp|0 fnt
+expect |-damage|p2a: Chomp|0 fnt
+expect |rng|100|32
+expect |-unboost|p1a: Dragapult|spa|2
+expect |faint|p2a: Chomp
+expect |split|p1
+expect |-damage|p1a: Dragapult|85/269|[from] item: Life Orb
+expect |-damage|p1a: Dragapult|32/100|[from] item: Life Orb
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Glaceon|Glaceon, L86, M|252/252
+expect |switch|p2a: Glaceon|Glaceon, L86, M|100/100
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Kleavor|Kleavor, L79, M|240/240
+expect |switch|p2b: Kleavor|Kleavor, L79, M|100/100
+expect |move|p1a: Dragapult|Draco Meteor|p2a: Glaceon|[miss]
+expect |rng|100|99
+expect |-miss|p1a: Dragapult|p2a: Glaceon
+expect |move|p2a: Glaceon|Freeze-Dry|p2b: Kleavor
+expect |rng|100|45
+expect |rng|24|5
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Kleavor|120/240
+expect |-damage|p2b: Kleavor|50/100
+expect |rng|100|2
+expect |-status|p2b: Kleavor|frz
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p1a: Dragapult|Dragon Darts|p2b: Kleavor
+expect |rng|100|71
+expect |rng|100|54
+expect |rng|24|6
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Kleavor|46/240 frz
+expect |-damage|p2b: Kleavor|20/100 frz
+expect |-anim|p1a: Dragapult|Dragon Darts|p2a: Glaceon
+expect |rng|24|19
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Glaceon|188/252
+expect |-damage|p2a: Glaceon|75/100
+expect |split|p1
+expect |-damage|p1a: Dragapult|59/269|[from] item: Life Orb
+expect |-damage|p1a: Dragapult|22/100|[from] item: Life Orb
+expect |rng|5|2
+expect |cant|p2b: Kleavor|frz
+expect |move|p2a: Glaceon|Freeze-Dry|p1a: Dragapult
+expect |rng|100|90
+expect |rng|24|15
+expect |rng|16|4
+expect |-supereffective|p1a: Dragapult
+expect |split|p1
+expect |-damage|p1a: Dragapult|0 fnt
+expect |-damage|p1a: Dragapult|0 fnt
+expect |rng|100|61
+expect |faint|p1a: Dragapult
+expect |
+expect |win|p2

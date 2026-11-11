@@ -1,0 +1,704 @@
+# gen9vgc-sodium-2120028-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay spectator
+@write
+>start {"formatid":"Gen9DoublesCustomGame@@@Adjust Level Down = 50,Picked Team Size = 4","seed":"sodium,f5ef8b3459b4707dbdf77717af924166"}
+@write
+>player p1 {"name":"Alice","team":"Iron Leaves||NetBall|QuarkDrive|IceBeam,Belch,Leer,FutureSight|Docile|217,5,82,176,2,11|||S|50|,,,,,Ghost]Igglybuff||DiveBall|CuteCharm|Charm,ExtremeSpeed,OriginPulse,Slash|Bashful|32,8,86,103,67,190|F|||50|,,,,,Electric]Sparky|Gothitelle|HeatRock|Frisk|Reversal,Reflect|Careful|7,7,19,197,33,234|M|||50|,,,,,Electric]Drifblim|||Aftermath|Moonblast,ArmThrust,Guillotine,FireBlast|Serious|72,84,8,87,203,29||||50|,,,,,Stellar]Toxel||PixiePlate|Static|Inferno,Pound,StrengthSap|Hardy|,9,207,6,72,212|M|||50|,,,,,Fairy]ThisNameIsFarTooLongToKeep|Furret|DawnStone|KeenEye|Guillotine|Sassy|7,27,198,43,95,95|M|||50|,,,,,Fairy"}
+@write
+>player p2 {"name":"Bob","team":"Smoliv||PersimBerry|EarlyBird|RockSmash,AquaRing,Retaliate,Snowscape|Bold|185,111,4,30,180,||||50|,,,,,Ice]Fletchinder|||FlameBody|Ember|Mild|155,1,1,234,112,6|F||S|50|,,,,,Ice]Big Tony's Pal|Mudbray|CrackedPot|Stamina|Present|Sassy|61,18,89,179,140,10||||50|,,,,,Dark]Leavanny|||Overcoat|Conversion,FlameCharge|Rash|14,227,76,119,49,25||||50|,,,,,Stellar]Appletun|||Ripen|Psyshock,NastyPlot,CeaselessEdge|Careful|47,3,,72,159,228|F|||50|,,,,,Psychic]Shinx||NeverMeltIce|Rivalry|Trailblaze|Bashful|113,153,121,10,48,64||||50|,,,,,Bug"}
+@write
+>p2 team 4623
+@write
+>p1 move 1
+@write
+>p1 team 3524
+@write
+>p2 move 2 1, move 1 2
+@write
+>p2 default
+@write
+>p1 move 1 -2, move 3 -1 terastallize
+@write
+>p2 move 1 terastallize, switch 3
+@write
+>p1 switch 3, move 3 1
+@write
+>p1 move 4 +2 ,  move 1 -1
+@write
+>p2 switch 3, switch 4
+@write
+>p1 auto
+@write
+>p2 move Trailblaze +1 terastal
+@write
+>p2 move 1 -2, switch 4
+@write
+>p1 move originpulse terastal
+@write
+>p1 move 4 -2, move 3 2
+@write
+>p2 switch 3, switch 4
+@write
+>p1 switch IGGLYBUFF
+@write
+>p1 switch gothitelle,move Pound 1
+@write
+>p2 move 2 -2, move 1 2
+@write
+>p2 move 2 -2, move 1 1
+@write
+>p1 move 1 1, move 3 2
+@write
+>p2 move 2 -2, move 1 1
+@write
+>p1 move 2, move 3 1
+@write
+>p2 move 2 2, move 1 -1
+@write
+>p1 move 1 -2, move 3 1
+@write
+>p2 move flamecharge -2,move present +1
+@write
+>p1 move 1 -2, move strengthsap 2 dynamax
+@write
+>p1 move 1 -2, move 2 +1
+@write
+>p2 move 2 2, move 1 1
+@write
+>p2 undo
+@write
+>p1 move 2, move 3 1
+@write
+>p2 move 1 terastallize
+@write
+>p2 switch 4, move 1 2
+@write
+>requestlog
+@write
+>p1 default
+@write
+>p2 default
+@write
+>p2 switch shinx
+@write
+>p2 undo
+@write
+>p2 move 1 -2, move 1 -1
+@write
+>p1 move 1 2, move 1 2
+@write
+>p2 switch Fletchinder
+@write
+>p2 skip, switch Leavanny
+@write
+>p2 move Ember -2, move 2 +1
+@write
+>p2 move 1
+@write
+>p1 move 1 1, move 3 -1
+@write
+>p2 move ember -1 terastal
+@write
+>p2 move ember +1,move Flame Charge 1
+@write
+>p2 move 1 2, move 2 1
+@write
+>p1 switch drifblim
+@write
+>p1 move 1 -2, move 3 2
+@write
+>p1 default
+@write
+>p2 default
+@write
+>p1 move 1 1, move 1 -1
+@write
+>p2 switch 4
+@write
+>p2 move 1 2 ,  move 2 1
+@write
+>p2 move 1 1, move 1
+@write
+>p1 switch 3, move 3 1
+@write
+>p1 move 4 1, move 2 1
+@write
+>p2 default
+@write
+>p2 move 1 2, move 2 2
+@write
+>p2 undo
+@write
+>p2 move 1 3 dynamax
+@write
+>p1 move 3, move 2 2
+@write
+>p2 move 1 -2, move 2 1
+@write
+>p1 switch 3, pass
+@write
+>p2 move ember 1, skip
+@write
+>p1 undo
+@write
+>p1 move Reversal -2 ,  move 3 1
+@write
+>p1 switch 4, move 1 -1
+@write
+>p2 move 1 2, pass
+@write
+>p1 move 3 1, move 3 -1
+@write
+>p1 switch 3
+@write
+>p2 move ember +1 ,  skip
+@write
+>p1 move 3 1, switch 4
+@write
+>p1 Move 1
+@write
+>p1 move 1 1, move 1 1
+@write
+>p2 switch MUDBRAY
+@write
+>p2 move 1 1, pass
+@write
+>p1 move 3 1, move 2
+@write
+>p2 move 1 2, pass
+@write
+>p1 pass, switch Toxel
+@write
+>p2 pass
+@write
+>p2 move 1 1
+@write
+>p1 move 2 1, move 3 1
+@write
+>p1 move 3 -2, move 3 1
+@write
+>p2 move 1 1, pass
+@write
+>p2 Move 1
+@write
+>p2 move Ember mega
+@write
+>p2 move 1 1, pass
+@write
+>tiebreak
+@message
+|t:|
+|gametype|doubles
+@message
+|player|p1|Alice||
+@message
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Adjust Level Down = 50, Picked Team Size = 4</details></div>
+|clearpoke
+|poke|p1|Iron Leaves, L50|
+|poke|p1|Igglybuff, L50, F|
+|poke|p1|Gothitelle, L50, M|
+|poke|p1|Drifblim, L50, M|
+|poke|p1|Toxel, L50, M|
+|poke|p1|Furret, L50, M|
+|poke|p2|Smoliv, L50, M|
+|poke|p2|Fletchinder, L50, F|
+|poke|p2|Mudbray, L50, M|
+|poke|p2|Leavanny, L50, F|
+|poke|p2|Appletun, L50, F|
+|poke|p2|Shinx, L50, M|
+|teampreview|4
+@message
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Sparky|Gothitelle, L50, M|146/146
+|switch|p1b: Toxel|Toxel, L50, M|115/115
+|switch|p2a: Leavanny|Leavanny, L50, F|152/152
+|switch|p2b: Shinx|Shinx, L50, M|134/134
+|-item|p2b: Shinx|Never-Melt Ice|[from] ability: Frisk|[of] p1a: Sparky
+|turn|1
+@message
+|
+|t:|
+|-terastallize|p1b: Toxel|Fairy
+|move|p2a: Leavanny|Conversion|p2a: Leavanny
+|-start|p2a: Leavanny|typechange|Normal
+|move|p1a: Sparky|Reversal|p1b: Toxel
+|-resisted|p1b: Toxel
+|-damage|p1b: Toxel|111/115
+|move|p1b: Toxel|Strength Sap|p1a: Sparky
+|-unboost|p1a: Sparky|atk|1
+|-heal|p1b: Toxel|115/115
+|move|p2b: Shinx|Trailblaze|p1b: Toxel
+|-damage|p1b: Toxel|83/115
+|-boost|p2b: Shinx|spe|1
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|switch|p1a: Igglybuff|Igglybuff, L50, F|169/169
+|switch|p2b: Fletchinder|Fletchinder, L50, F, shiny|156/156
+|-terastallize|p2a: Leavanny|Stellar
+|move|p2a: Leavanny|Conversion||[still]
+|-fail|p2a: Leavanny
+|move|p1b: Toxel|Strength Sap|p2a: Leavanny
+|-unboost|p2a: Leavanny|atk|1
+|-heal|p1b: Toxel|115/115
+|
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|switch|p2a: Shinx|Shinx, L50, M|134/134
+|switch|p2b: Big Tony's Pal|Mudbray, L50, M|153/153
+|move|p1b: Toxel|Inferno|p1a: Igglybuff|[miss]
+|-miss|p1b: Toxel|p1a: Igglybuff
+|move|p1a: Igglybuff|Slash|p2b: Big Tony's Pal
+|-damage|p2b: Big Tony's Pal|131/153
+|-ability|p2b: Big Tony's Pal|Stamina|boost
+|-boost|p2b: Big Tony's Pal|def|1
+|
+|upkeep
+|turn|4
+@message
+|
+|t:|
+|switch|p2b: Fletchinder|Fletchinder, L50, F, shiny|156/156
+|move|p1b: Toxel|Inferno|p2a: Shinx|[miss]
+|-miss|p1b: Toxel|p2a: Shinx
+|move|p2a: Shinx|Trailblaze|p2b: Fletchinder
+|-resisted|p2b: Fletchinder
+|-damage|p2b: Fletchinder|150/156
+|-boost|p2a: Shinx|spe|1
+|-status|p2a: Shinx|brn|[from] ability: Flame Body|[of] p2b: Fletchinder
+|move|p1a: Igglybuff|Charm|p2a: Shinx
+|-unboost|p2a: Shinx|atk|2
+|
+|-damage|p2a: Shinx|126/134 brn|[from] brn
+|upkeep
+|turn|5
+@message
+|
+|t:|
+|switch|p2a: Leavanny|Leavanny, L50, F, tera:Stellar|152/152
+|switch|p2b: Big Tony's Pal|Mudbray, L50, M|131/153
+|move|p1b: Toxel|Strength Sap|p2b: Big Tony's Pal
+|-unboost|p2b: Big Tony's Pal|atk|1
+|move|p1a: Igglybuff|Slash|p1b: Toxel
+|-damage|p1b: Toxel|85/115
+|
+|upkeep
+|turn|6
+@message
+|
+|t:|
+|switch|p1a: Sparky|Gothitelle, L50, M|146/146
+|-item|p2b: Big Tony's Pal|Cracked Pot|[from] ability: Frisk|[of] p1a: Sparky
+|move|p2a: Leavanny|Flame Charge|p2b: Big Tony's Pal
+|-damage|p2b: Big Tony's Pal|90/153
+|-boost|p2a: Leavanny|spe|1
+|-ability|p2b: Big Tony's Pal|Stamina|boost
+|-boost|p2b: Big Tony's Pal|def|1
+|move|p1b: Toxel|Pound|p2a: Leavanny
+|-damage|p2a: Leavanny|142/152
+|move|p2b: Big Tony's Pal|Present|p1b: Toxel|[miss]
+|-miss|p2b: Big Tony's Pal|p1b: Toxel
+|
+|upkeep
+|turn|7
+@message
+|
+|t:|
+|move|p2a: Leavanny|Flame Charge|p2b: Big Tony's Pal
+|-damage|p2b: Big Tony's Pal|69/153
+|-boost|p2a: Leavanny|spe|1
+|-ability|p2b: Big Tony's Pal|Stamina|boost
+|-boost|p2b: Big Tony's Pal|def|1
+|move|p1a: Sparky|Reversal|p2a: Leavanny
+|-resisted|p2a: Leavanny
+|-damage|p2a: Leavanny|139/152
+|move|p1b: Toxel|Strength Sap|p2b: Big Tony's Pal
+|-unboost|p2b: Big Tony's Pal|atk|1
+|-heal|p1b: Toxel|115/115
+|move|p2b: Big Tony's Pal|Present|p1a: Sparky
+|-damage|p1a: Sparky|137/146
+|
+|upkeep
+|turn|8
+@message
+|
+|t:|
+|move|p2a: Leavanny|Flame Charge|p2b: Big Tony's Pal
+|-damage|p2b: Big Tony's Pal|51/153
+|-boost|p2a: Leavanny|spe|1
+|-ability|p2b: Big Tony's Pal|Stamina|boost
+|-boost|p2b: Big Tony's Pal|def|1
+|move|p1a: Sparky|Reflect|p1a: Sparky
+|-sidestart|p1: Alice|Reflect
+|move|p1b: Toxel|Strength Sap|p2a: Leavanny
+|-unboost|p2a: Leavanny|atk|1
+|move|p2b: Big Tony's Pal|Present|p1a: Sparky
+|-heal|p1a: Sparky|146/146
+|
+|upkeep
+|turn|9
+@message
+|
+|t:|
+|move|p2a: Leavanny|Flame Charge|p1b: Toxel
+|-damage|p1b: Toxel|96/115
+|-boost|p2a: Leavanny|spe|1
+|-status|p2a: Leavanny|par|[from] ability: Static|[of] p1b: Toxel
+|move|p1a: Sparky|Reversal|p1b: Toxel
+|-resisted|p1b: Toxel
+|-damage|p1b: Toxel|93/115
+|move|p1b: Toxel|Strength Sap|p2a: Leavanny
+|-unboost|p2a: Leavanny|atk|1
+|-heal|p1b: Toxel|115/115
+|move|p2b: Big Tony's Pal|Present|p2a: Leavanny
+|-damage|p2a: Leavanny|129/152 par
+|
+|upkeep
+|turn|10
+@message
+|
+|t:|
+|move|p2a: Leavanny|Flame Charge|p2b: Big Tony's Pal
+|-damage|p2b: Big Tony's Pal|44/153
+|-boost|p2a: Leavanny|spe|1
+|-ability|p2b: Big Tony's Pal|Stamina|boost
+|-boost|p2b: Big Tony's Pal|def|1
+|move|p1a: Sparky|Reversal|p1b: Toxel
+|-resisted|p1b: Toxel
+|-damage|p1b: Toxel|112/115
+|move|p1b: Toxel|Pound|p2a: Leavanny
+|-damage|p2a: Leavanny|119/152 par
+|move|p2b: Big Tony's Pal|Present||[still]
+|-fail|p1a: Sparky|heal
+|
+|upkeep
+|turn|11
+@message
+|
+|t:|
+|switch|p2a: Fletchinder|Fletchinder, L50, F, shiny|150/156
+|move|p1a: Sparky|Reflect||[still]
+|-fail|p1a: Sparky
+|move|p1b: Toxel|Strength Sap|p2a: Fletchinder
+|-unboost|p2a: Fletchinder|atk|1
+|-heal|p1b: Toxel|115/115
+|move|p2b: Big Tony's Pal|Present|p1b: Toxel
+|-damage|p1b: Toxel|105/115
+|
+|upkeep
+|turn|12
+@message
+requesteddata
+>start {"formatid":"Gen9DoublesCustomGame@@@Adjust Level Down = 50,Picked Team Size = 4","seed":"sodium,f5ef8b3459b4707dbdf77717af924166"}
+>player p1 {"name":"Alice","team":"Iron Leaves||NetBall|QuarkDrive|IceBeam,Belch,Leer,FutureSight|Docile|217,5,82,176,2,11|||S|50|,,,,,Ghost]Igglybuff||DiveBall|CuteCharm|Charm,ExtremeSpeed,OriginPulse,Slash|Bashful|32,8,86,103,67,190|F|||50|,,,,,Electric]Sparky|Gothitelle|HeatRock|Frisk|Reversal,Reflect|Careful|7,7,19,197,33,234|M|||50|,,,,,Electric]Drifblim|||Aftermath|Moonblast,ArmThrust,Guillotine,FireBlast|Serious|72,84,8,87,203,29||||50|,,,,,Stellar]Toxel||PixiePlate|Static|Inferno,Pound,StrengthSap|Hardy|,9,207,6,72,212|M|||50|,,,,,Fairy]ThisNameIsFarTooLongToKeep|Furret|DawnStone|KeenEye|Guillotine|Sassy|7,27,198,43,95,95|M|||50|,,,,,Fairy"}
+>player p2 {"name":"Bob","team":"Smoliv||PersimBerry|EarlyBird|RockSmash,AquaRing,Retaliate,Snowscape|Bold|185,111,4,30,180,||||50|,,,,,Ice]Fletchinder|||FlameBody|Ember|Mild|155,1,1,234,112,6|F||S|50|,,,,,Ice]Big Tony's Pal|Mudbray|CrackedPot|Stamina|Present|Sassy|61,18,89,179,140,10||||50|,,,,,Dark]Leavanny|||Overcoat|Conversion,FlameCharge|Rash|14,227,76,119,49,25||||50|,,,,,Stellar]Appletun|||Ripen|Psyshock,NastyPlot,CeaselessEdge|Careful|47,3,,72,159,228|F|||50|,,,,,Psychic]Shinx||NeverMeltIce|Rivalry|Trailblaze|Bashful|113,153,121,10,48,64||||50|,,,,,Bug"}
+>p1 team 3, 5, 2, 4
+>p2 team 4, 6, 2, 3
+>p1 move reversal -2, move strengthsap -1 terastallize
+>p2 move conversion, move trailblaze
+>p1 switch 3, move strengthsap +1
+>p2 move conversion terastallize, switch 3
+>p1 move slash +2, move inferno -1
+>p2 switch 3, switch 4
+>p1 move charm, move inferno
+>p2 move trailblaze -2, switch 4
+>p1 move slash -2, move strengthsap +2
+>p2 switch 3, switch 4
+>p1 switch 3, move pound +1
+>p2 move flamecharge -2, move present +2
+>p1 move reversal +1, move strengthsap +2
+>p2 move flamecharge -2, move present +1
+>p1 move reflect, move strengthsap +1
+>p2 move flamecharge -2, move present +1
+>p1 move reversal -2, move strengthsap +1
+>p2 move flamecharge +2, move present -1
+>p1 move reversal -2, move pound +1
+>p2 move flamecharge -2, move present +1
+>p1 move reflect, move strengthsap +1
+>p2 switch 4, move present +2
+@message
+|
+|t:|
+|move|p1a: Sparky|Reversal|p2b: Big Tony's Pal
+|-damage|p2b: Big Tony's Pal|41/153
+|-ability|p2b: Big Tony's Pal|Stamina|boost
+|-boost|p2b: Big Tony's Pal|def|1
+|move|p2a: Fletchinder|Ember|p1b: Toxel
+|-damage|p1b: Toxel|63/115
+|move|p1b: Toxel|Inferno|p2b: Big Tony's Pal
+|-damage|p2b: Big Tony's Pal|9/153
+|-status|p2b: Big Tony's Pal|brn
+|-ability|p2b: Big Tony's Pal|Stamina|boost
+|-boost|p2b: Big Tony's Pal|def|1
+|move|p2b: Big Tony's Pal|Present|p1b: Toxel
+|-damage|p1b: Toxel|58/115
+|
+|-damage|p2b: Big Tony's Pal|0 fnt|[from] brn
+|faint|p2b: Big Tony's Pal
+|-sideend|p1: Alice|Reflect
+|upkeep
+@message
+|
+|t:|
+|switch|p2b: Shinx|Shinx, L50, M|126/134 brn
+|turn|13
+@message
+|
+|t:|
+|move|p1a: Sparky|Reversal|p2b: Shinx
+|-damage|p2b: Shinx|117/134 brn
+|move|p2a: Fletchinder|Ember|p2b: Shinx
+|-damage|p2b: Shinx|74/134 brn
+|move|p1b: Toxel|Inferno|p2b: Shinx
+|-crit|p2b: Shinx
+|-damage|p2b: Shinx|0 fnt
+|faint|p2b: Shinx
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p2b: Leavanny|Leavanny, L50, F, tera:Stellar|119/152 par
+|turn|14
+@message
+|
+|t:|
+|move|p1a: Sparky|Reversal|p2a: Fletchinder
+|-resisted|p2a: Fletchinder
+|-damage|p2a: Fletchinder|146/156
+|move|p2a: Fletchinder|Ember|p1a: Sparky
+|-damage|p1a: Sparky|127/146
+|move|p1b: Toxel|Strength Sap|p1a: Sparky
+|-unboost|p1a: Sparky|atk|1
+|-heal|p1b: Toxel|115/115
+|move|p2b: Leavanny|Flame Charge|p1a: Sparky
+|-damage|p1a: Sparky|100/146
+|-boost|p2b: Leavanny|spe|1
+|
+|upkeep
+|turn|15
+@message
+|
+|t:|
+|move|p1a: Sparky|Reversal|p1b: Toxel
+|-resisted|p1b: Toxel
+|-crit|p1b: Toxel
+|-damage|p1b: Toxel|103/115
+|move|p2a: Fletchinder|Ember|p1b: Toxel
+|-damage|p1b: Toxel|60/115
+|move|p1b: Toxel|Strength Sap|p2b: Leavanny
+|-unboost|p2b: Leavanny|atk|1
+|-heal|p1b: Toxel|115/115
+|move|p2b: Leavanny|Flame Charge|p1a: Sparky
+|-damage|p1a: Sparky|81/146
+|-boost|p2b: Leavanny|spe|1
+|
+|upkeep
+|turn|16
+@message
+|
+|t:|
+|move|p2b: Leavanny|Conversion||[still]
+|-fail|p2b: Leavanny
+|move|p1a: Sparky|Reversal|p2b: Leavanny
+|-resisted|p2b: Leavanny
+|-damage|p2b: Leavanny|115/152 par
+|move|p2a: Fletchinder|Ember|p1a: Sparky
+|-damage|p1a: Sparky|60/146
+|move|p1b: Toxel|Inferno|p2b: Leavanny|[miss]
+|-miss|p1b: Toxel|p2b: Leavanny
+|
+|upkeep
+|turn|17
+@message
+|
+|t:|
+|cant|p2b: Leavanny|par
+|move|p1a: Sparky|Reversal|p2a: Fletchinder
+|-resisted|p2a: Fletchinder
+|-damage|p2a: Fletchinder|140/156
+|move|p2a: Fletchinder|Ember|p1b: Toxel
+|-damage|p1b: Toxel|69/115
+|move|p1b: Toxel|Inferno|p1a: Sparky|[miss]
+|-miss|p1b: Toxel|p1a: Sparky
+|
+|upkeep
+|turn|18
+@message
+|
+|t:|
+|switch|p1a: Igglybuff|Igglybuff, L50, F|169/169
+|move|p2b: Leavanny|Conversion||[still]
+|-fail|p2b: Leavanny
+|move|p2a: Fletchinder|Ember|p1a: Igglybuff
+|-damage|p1a: Igglybuff|111/169
+|move|p1b: Toxel|Strength Sap|p2a: Fletchinder
+|-unboost|p2a: Fletchinder|atk|1
+|-heal|p1b: Toxel|115/115
+|
+|upkeep
+|turn|19
+@message
+|
+|t:|
+|move|p2b: Leavanny|Conversion||[still]
+|-fail|p2b: Leavanny
+|move|p2a: Fletchinder|Ember|p1a: Igglybuff
+|-damage|p1a: Igglybuff|54/169
+|move|p1b: Toxel|Pound|p2a: Fletchinder
+|-damage|p2a: Fletchinder|125/156
+|move|p1a: Igglybuff|Slash|p2a: Fletchinder
+|-damage|p2a: Fletchinder|94/156
+|
+|upkeep
+|turn|20
+@message
+|
+|t:|
+|move|p2b: Leavanny|Flame Charge|p1a: Igglybuff
+|-crit|p1a: Igglybuff
+|-damage|p1a: Igglybuff|0 fnt
+|-boost|p2b: Leavanny|spe|1
+|faint|p1a: Igglybuff
+|move|p2a: Fletchinder|Ember|p2b: Leavanny
+|-supereffective|p2b: Leavanny
+|-crit|p2b: Leavanny
+|-damage|p2b: Leavanny|0 fnt
+|faint|p2b: Leavanny
+|move|p1b: Toxel|Pound|p2a: Fletchinder
+|-damage|p2a: Fletchinder|80/156
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1a: Sparky|Gothitelle, L50, M|60/146
+|turn|21
+@message
+|
+|t:|
+|move|p1a: Sparky|Reversal|p1b: Toxel
+|-resisted|p1b: Toxel
+|-damage|p1b: Toxel|107/115
+|move|p2a: Fletchinder|Ember|p1a: Sparky
+|-damage|p1a: Sparky|39/146
+|-status|p1a: Sparky|brn
+|move|p1b: Toxel|Strength Sap|p2a: Fletchinder
+|-unboost|p2a: Fletchinder|atk|1
+|-heal|p1b: Toxel|115/115
+|
+|-damage|p1a: Sparky|30/146 brn|[from] brn
+|upkeep
+|turn|22
+@message
+|
+|t:|
+|switch|p1a: Drifblim|Drifblim, L50, M|234/234
+|move|p2a: Fletchinder|Ember|p1b: Toxel
+|-damage|p1b: Toxel|70/115
+|move|p1b: Toxel|Inferno|p1a: Drifblim
+|-damage|p1a: Drifblim|202/234
+|-status|p1a: Drifblim|brn
+|
+|-damage|p1a: Drifblim|188/234 brn|[from] brn
+|upkeep
+|turn|23
+@message
+|
+|t:|
+|switch|p1b: Sparky|Gothitelle, L50, M|30/146 brn
+|move|p2a: Fletchinder|Ember|p1a: Drifblim
+|-damage|p1a: Drifblim|157/234 brn
+|move|p1a: Drifblim|Guillotine|p2a: Fletchinder|[miss]
+|-miss|p1a: Drifblim|p2a: Fletchinder
+|
+|-damage|p1b: Sparky|21/146 brn|[from] brn
+|-damage|p1a: Drifblim|143/234 brn|[from] brn
+|upkeep
+|turn|24
+@message
+|
+|t:|
+|move|p1b: Sparky|Reversal|p2a: Fletchinder
+|-resisted|p2a: Fletchinder
+|-damage|p2a: Fletchinder|68/156
+|move|p2a: Fletchinder|Ember|p1a: Drifblim
+|-damage|p1a: Drifblim|113/234 brn
+|move|p1a: Drifblim|Moonblast|p2a: Fletchinder
+|-resisted|p2a: Fletchinder
+|-damage|p2a: Fletchinder|41/156
+|-unboost|p2a: Fletchinder|spa|1
+|
+|-damage|p1b: Sparky|12/146 brn|[from] brn
+|-damage|p1a: Drifblim|99/234 brn|[from] brn
+|upkeep
+|turn|25
+@message
+|
+|t:|
+|move|p1b: Sparky|Reflect|p1b: Sparky
+|-sidestart|p1: Alice|Reflect
+|move|p2a: Fletchinder|Ember|p1b: Sparky
+|-damage|p1b: Sparky|0 fnt
+|faint|p1b: Sparky
+|move|p1a: Drifblim|Guillotine|p2a: Fletchinder|[miss]
+|-miss|p1a: Drifblim|p2a: Fletchinder
+|
+|-damage|p1a: Drifblim|85/234 brn|[from] brn
+|upkeep
+@message
+|
+|t:|
+|switch|p1b: Toxel|Toxel, L50, M, tera:Fairy|70/115
+|turn|26
+@message
+|
+|t:|
+|move|p2a: Fletchinder|Ember|p1a: Drifblim
+|-damage|p1a: Drifblim|64/234 brn
+|move|p1a: Drifblim|Arm Thrust|p2a: Fletchinder
+|-resisted|p2a: Fletchinder
+|-damage|p2a: Fletchinder|39/156
+|-resisted|p2a: Fletchinder
+|-damage|p2a: Fletchinder|37/156
+|-hitcount|p2a: Fletchinder|2
+|move|p1b: Toxel|Strength Sap|p2a: Fletchinder
+|-unboost|p2a: Fletchinder|atk|1
+|-heal|p1b: Toxel|107/115
+|
+|-damage|p1a: Drifblim|50/234 brn|[from] brn
+|upkeep
+|turn|27
+@message
+|
+|t:|
+|move|p2a: Fletchinder|Ember|p1a: Drifblim
+|-damage|p1a: Drifblim|31/234 brn
+|move|p1a: Drifblim|Guillotine|p1b: Toxel
+|-damage|p1b: Toxel|0 fnt
+|faint|p1b: Toxel
+|-ohko
+|
+|-damage|p1a: Drifblim|17/234 brn|[from] brn
+|upkeep
+|turn|28
+@message
+|message|Time's up! Going to tiebreaker...
+|-message|Alice: 1 Pokemon left; Bob: 1 Pokemon left
+|-message|Alice: 1% total HP left; Bob: 4% total HP left
+|
+|win|Bob

@@ -1,0 +1,395 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed 888c 5a0a 7624 0fb0
+genders drawn
+team p1
+Infernape (F) @ Mental Herb
+Ability: Iron Fist
+Level: 50
+Tera Type: Normal
+EVs: 28 HP / 6 Atk / 13 Def / 8 SpA / 2 SpD / 7 Spe
+Bold Nature
+- Hyper Beam
+- Sleep Talk
+
+Vivillon-Elegant @ Metronome
+Ability: Friend Guard
+Level: 50
+Tera Type: Ground
+EVs: 14 HP / 12 Atk / 3 Def / 19 SpA / 5 SpD / 13 Spe
+Impish Nature
+- Topsy-Turvy
+
+Mr. Mime (F) @ Charti Berry
+Ability: Filter
+Level: 50
+Shiny: Yes
+Tera Type: Dragon
+EVs: 13 HP / 1 Atk / 23 Def / 7 SpD / 22 Spe
+Serious Nature
+- Aurora Veil
+- Rest
+- Waterfall
+
+Steelix @ Steelixite
+Ability: Rock Head
+Level: 50
+Tera Type: Ground
+EVs: 5 HP / 9 Atk / 31 SpA / 16 SpD / 4 Spe
+Brave Nature
+- Scald
+
+Rotom-Fan @ Chesto Berry
+Ability: Levitate
+Level: 50
+Tera Type: Grass
+EVs: 25 HP / 4 Atk / 12 Def / 2 SpA / 9 SpD / 5 Spe
+Gentle Nature
+- Eruption
+
+Metagross @ Metagrossite
+Ability: Clear Body
+Level: 50
+Tera Type: Electric
+EVs: 18 HP / 10 Atk / 4 Def / 29 SpD / 5 Spe
+Bold Nature
+- Glaive Rush
+end
+team p2
+Alcremie-Ruby-Cream (F)
+Ability: Aroma Veil
+Level: 50
+Tera Type: Ground
+EVs: 1 HP / 13 Atk / 17 Def / 1 SpA / 5 SpD / 29 Spe
+Modest Nature
+- Icicle Spear
+- Fire Blast
+- Dynamic Punch
+- Dragon Claw
+
+Mr. Bubbles (Gyarados) @ Gyaradosite
+Ability: Moxie
+Level: 50
+Shiny: Yes
+Tera Type: Steel
+EVs: 7 HP / 31 Atk / 8 Def / 3 SpA / 11 Spe
+Naive Nature
+- Thunder Wave
+- Smack Down
+- Sacred Sword
+
+Big Tony's Pal (Alcremie-Lemon-Cream)
+Ability: Aroma Veil
+Level: 50
+Shiny: Yes
+Tera Type: Electric
+EVs: 11 HP / 32 Def / 3 SpA / 5 SpD / 15 Spe
+Hasty Nature
+- Focus Punch
+- Crabhammer
+- Power Split
+
+Kangaskhan @ Rindo Berry
+Ability: Scrappy
+Level: 50
+Tera Type: Rock
+EVs: 2 HP / 17 Atk / 9 Def / 11 SpA / 18 SpD / 4 Spe
+Impish Nature
+- Ancient Power
+- Icicle Crash
+
+Feraligatr @ Feraligite
+Ability: Torrent
+Level: 50
+Tera Type: Bug
+EVs: 3 Atk / 29 Def / 21 SpA / 1 SpD / 12 Spe
+Jolly Nature
+- Drill Run
+
+Eelektross @ Eelektrossite
+Ability: Levitate
+Level: 50
+Tera Type: Fighting
+EVs: 9 Atk / 26 Def / 2 SpD / 29 Spe
+Mild Nature
+- Volt Tackle
+- Brick Break
+- Teatime
+end
+choice p1 team 652
+choice p2 team 5,3,6
+choice p1 switch 3
+choice p2 default
+choice p1 switch 3
+choice p2 switch Big Tony's Pal
+choice p1 move 1 mega
+choice p2 move 3
+choice p1 move Glaive Rush
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 switch 3
+choice p2 move 1
+choice p1 switch 2
+choice p2 move 2
+choice p1 switch 3
+choice p2 move 3
+choice p1 default
+choice p2 move 1
+choice p1 switch 3
+choice p2 switch 2
+choice p1 switch 3
+choice p2 move 1
+choice p1 switch 2
+choice p2 switch 3
+choice p1 move 1
+choice p2 move 1 mega
+choice p1 default
+choice p1 switch 3
+choice p2 move 1
+choice p1 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Infernape, L50, F|
+expect |poke|p1|Vivillon-Elegant, L50, M|
+expect |poke|p1|Mr. Mime, L50, F, shiny|
+expect |poke|p1|Steelix, L50, F|
+expect |poke|p1|Rotom-Fan, L50|
+expect |poke|p1|Metagross, L50|
+expect |poke|p2|Alcremie-Ruby-Cream, L50, F|
+expect |poke|p2|Gyarados, L50, M, shiny|
+expect |poke|p2|Alcremie-Lemon-Cream, L50, F, shiny|
+expect |poke|p2|Kangaskhan, L50, F|
+expect |poke|p2|Feraligatr, L50, F|
+expect |poke|p2|Eelektross, L50, M|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Metagross|Metagross, L50|173/173
+expect |switch|p1a: Metagross|Metagross, L50|100/100
+expect |split|p2
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|160/160
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, M|169/169
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, M|100/100
+expect |move|p2a: Feraligatr|Drill Run|p1a: Vivillon
+expect |-immune|p1a: Vivillon
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Metagross|Metagross, L50|173/173
+expect |switch|p1a: Metagross|Metagross, L50|100/100
+expect |split|p2
+expect |switch|p2a: Big Tony's Pal|Alcremie-Lemon-Cream, L50, F, shiny|151/151
+expect |switch|p2a: Big Tony's Pal|Alcremie-Lemon-Cream, L50, F, shiny|100/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |detailschange|p1a: Metagross|Metagross-Mega, L50
+expect |-mega|p1a: Metagross|Metagross|Metagrossite
+expect |move|p1a: Metagross|Glaive Rush|p2a: Big Tony's Pal
+expect |-immune|p2a: Big Tony's Pal
+expect |move|p2a: Big Tony's Pal|Power Split|p1a: Metagross
+expect |-activate|p2a: Big Tony's Pal|move: Power Split|[of] p1a: Metagross
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |-singleturn|p2a: Big Tony's Pal|move: Focus Punch
+expect |move|p1a: Metagross|Glaive Rush|p2a: Big Tony's Pal
+expect |-immune|p2a: Big Tony's Pal
+expect |move|p2a: Big Tony's Pal|Focus Punch|p1a: Metagross
+expect |rng|100|9
+expect |rng|24|21
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Metagross|135/173
+expect |-damage|p1a: Metagross|78/100
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |-singleturn|p2a: Big Tony's Pal|move: Focus Punch
+expect |move|p1a: Metagross|Glaive Rush|p2a: Big Tony's Pal
+expect |-immune|p2a: Big Tony's Pal
+expect |move|p2a: Big Tony's Pal|Focus Punch|p1a: Metagross
+expect |rng|100|44
+expect |rng|24|22
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Metagross|99/173
+expect |-damage|p1a: Metagross|57/100
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, M|169/169
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, M|100/100
+expect |-singleturn|p2a: Big Tony's Pal|move: Focus Punch
+expect |move|p2a: Big Tony's Pal|Focus Punch|p1a: Vivillon
+expect |rng|100|76
+expect |rng|24|19
+expect |rng|16|11
+expect |-resisted|p1a: Vivillon|2
+expect |split|p1
+expect |-damage|p1a: Vivillon|147/169
+expect |-damage|p1a: Vivillon|86/100
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Rotom|Rotom-Fan, L50|150/150
+expect |switch|p1a: Rotom|Rotom-Fan, L50|100/100
+expect |move|p2a: Big Tony's Pal|Crabhammer|p1a: Rotom
+expect |rng|100|41
+expect |rng|8|4
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Rotom|113/150
+expect |-damage|p1a: Rotom|75/100
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Metagross|Metagross-Mega, L50|99/173
+expect |switch|p1a: Metagross|Metagross-Mega, L50|57/100
+expect |move|p2a: Big Tony's Pal|Power Split|p1a: Metagross
+expect |-activate|p2a: Big Tony's Pal|move: Power Split|[of] p1a: Metagross
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |-singleturn|p2a: Big Tony's Pal|move: Focus Punch
+expect |move|p1a: Metagross|Glaive Rush|p2a: Big Tony's Pal
+expect |-immune|p2a: Big Tony's Pal
+expect |move|p2a: Big Tony's Pal|Focus Punch|p1a: Metagross
+expect |rng|100|14
+expect |rng|24|15
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Metagross|53/173
+expect |-damage|p1a: Metagross|30/100
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Rotom|Rotom-Fan, L50|113/150
+expect |switch|p1a: Rotom|Rotom-Fan, L50|75/100
+expect |split|p2
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|160/160
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|100/100
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Metagross|Metagross-Mega, L50|53/173
+expect |switch|p1a: Metagross|Metagross-Mega, L50|30/100
+expect |move|p2a: Feraligatr|Drill Run|p1a: Metagross
+expect |rng|100|51
+expect |rng|8|0
+expect |rng|16|0
+expect |-supereffective|p1a: Metagross|1
+expect |-crit|p1a: Metagross
+expect |split|p1
+expect |-damage|p1a: Metagross|0 fnt
+expect |-damage|p1a: Metagross|0 fnt
+expect |faint|p1a: Metagross
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, M|147/169
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, M|86/100
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Eelektross|Eelektross, L50, M|160/160
+expect |switch|p2a: Eelektross|Eelektross, L50, M|100/100
+expect |move|p1a: Vivillon|Topsy-Turvy||[still]
+expect |-fail|p1a: Vivillon
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |detailschange|p2a: Eelektross|Eelektross-Mega, L50, M
+expect |-mega|p2a: Eelektross|Eelektross|Eelektrossite
+expect |move|p2a: Eelektross|Volt Tackle|p1a: Vivillon
+expect |rng|100|94
+expect |rng|24|9
+expect |rng|16|0
+expect |-supereffective|p1a: Vivillon|1
+expect |split|p1
+expect |-damage|p1a: Vivillon|0 fnt
+expect |-damage|p1a: Vivillon|0 fnt
+expect |rng|100|6
+expect |faint|p1a: Vivillon
+expect |-ability|p2a: Eelektross|Eelevate|boost
+expect |-boost|p2a: Eelektross|atk|1
+expect |split|p2
+expect |-damage|p2a: Eelektross|111/160|[from] Recoil
+expect |-damage|p2a: Eelektross|69/100|[from] Recoil
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Rotom|Rotom-Fan, L50|113/150
+expect |switch|p1a: Rotom|Rotom-Fan, L50|75/100
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p2a: Eelektross|Volt Tackle|p1a: Rotom
+expect |rng|100|43
+expect |rng|24|5
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Rotom|0 fnt
+expect |-damage|p1a: Rotom|0 fnt
+expect |rng|100|89
+expect |faint|p1a: Rotom
+expect |split|p2
+expect |-damage|p2a: Eelektross|74/160|[from] Recoil
+expect |-damage|p2a: Eelektross|46/100|[from] Recoil
+expect |
+expect |win|p2

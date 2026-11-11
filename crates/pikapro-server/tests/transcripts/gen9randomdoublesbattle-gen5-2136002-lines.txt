@@ -1,0 +1,203 @@
+# gen9randomdoublesbattle-gen5-2136002-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@option keep-alive
+@write
+>start {"formatid":"gen9randomdoublesbattle","seed":"gen5,a3bb8cda55194feb"}
+@write
+>player p1 {"name":"Alice","team":"Chomp|Zarude||LeafGuard|PopulationBomb|Quiet|21,26,70,179,79,99||||76|,,,,,Water]Mr. Bubbles|Garganacl|StarfBerry|PurifyingSalt|Flamethrower|Mild|204,31,131,132,10,1|||S|73|,,,,,Ground]Slugma|||WeakArmor|TopsyTurvy,Spikes,PrecipiceBlades,Inferno|Careful|,74,228,11,5,161|M|||69|,,DuskBall,,,Ground]Arceus-Dark||RoseliBerry|Multitype|BreakingSwipe,DoubleShock,Confide,Smokescreen|Docile|,205,,182,111,10||||63|,,,,,Dragon]Sir Hops-a-Lot|Emboar||Blaze|Psyshock,WildboltStorm|Hasty|223,149,3,12,76,43||||84|,,,,,Fighting]X|Zangoose|StarSweet|ToxicBoost|CottonSpore,SlackOff|Calm|102,240,2,,142,23|M|||97|,,,,,Ice"}
+@write
+>player p2 {"name":"Bob","team":"Rotom-Fan||MaliciousArmor|Levitate|FloralHealing|Hasty|240,25,135,3,13,35||||73|,,,,,Dark]ThisNameIsFarTooLongToKeep|Altaria|ChippedPot|NaturalCure|Rest,CalmMind,HeatCrash|Serious|64,81,180,75,25,55||||98|,,,,,Flying]Minior-Green|||ShieldsDown|Supersonic,LunarBlessing,Block,Safeguard|Docile|178,,117,6,193,15||||79|,,MasterBall,,,Normal]Sparky|HoopaUnbound||Magician|GrassyGlide|Quiet|25,10,21,164,51,230|||S||,,ParkBall,,,Ground]Chomp|Yanmega||Frisk|ReflectType,Coaching|Docile|29,4,235,80,155,5||||70|,,,,,Water]Mr. Bubbles|Poliwag|FocusBand|Damp|SheerCold|Timid|3,186,74,12,202,19||||63|,,,,,Grass"}
+@write
+>p2 move 1 -2, move 3 2 terastallize
+@write
+>p1 undo
+@write
+>p1 move 1 1 terastallize, switch 5
+@write
+>p1 switch 5, move 1 1
+@write
+>p2 move Floral Healing -2, move 2
+@write
+>p1 switch 4 ,  switch 5
+@write
+>p2 switch 6, move 3 2
+@write
+>p2 switch 4, switch 5
+@write
+>forcelose p2
+@write
+>p1 move 1
+@write
+>chat after the end
+@write
+>forcewin p1
+@write
+>tiebreak
+@write
+>requestlog
+@write
+>p2 undo
+@message
+update
+|t:|
+|gametype|doubles
+@message
+update
+|player|p1|Alice||
+@message
+update
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Random Doubles Battle
+|rule|Species Clause: Limit one of each Pokémon
+|rule|HP Percentage Mod: HP is shown in percentages
+|rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: Chomp|Zarude, L76|272/272
+|switch|p1a: Chomp|Zarude, L76|100/100
+|split|p1
+|switch|p1b: Mr. Bubbles|Garganacl, L73, M, shiny|288/288
+|switch|p1b: Mr. Bubbles|Garganacl, L73, M, shiny|100/100
+|split|p2
+|switch|p2a: Rotom|Rotom-Fan, L73|222/222
+|switch|p2a: Rotom|Rotom-Fan, L73|100/100
+|split|p2
+|switch|p2b: ThisNameIsFarTooLong|Altaria, L98, M|301/301
+|switch|p2b: ThisNameIsFarTooLong|Altaria, L98, M|100/100
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Population Bomb","id":"populationbomb","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Water"},{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Ground"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Zarude, L76","condition":"272/272","active":true,"stats":{"atk":215,"def":201,"spa":184,"spd":187,"spe":185},"moves":["populationbomb"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Garganacl, L73, M, shiny","condition":"288/288","active":true,"stats":{"atk":178,"def":216,"spa":128,"spd":160,"spe":78},"moves":["flamethrower"],"baseAbility":"purifyingsalt","item":"starfberry","pokeball":"pokeball","ability":"purifyingsalt","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Slugma","details":"Slugma, L69, M","condition":"155/155","active":false,"stats":{"atk":94,"def":120,"spa":111,"spd":90,"spe":81},"moves":["topsyturvy","spikes","precipiceblades","inferno"],"baseAbility":"weakarmor","item":"","pokeball":"duskball","ability":"weakarmor","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Dark, L63","condition":"243/243","active":false,"stats":{"atk":207,"def":175,"spa":204,"spd":192,"spe":176},"moves":["breakingswipe","doubleshock","confide","smokescreen"],"baseAbility":"multitype","item":"roseliberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Emboar, L84, F","condition":"351/351","active":false,"stats":{"atk":268,"def":126,"spa":201,"spd":156,"spe":162},"moves":["psyshock","wildboltstorm"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: X","details":"Zangoose, L97, M","condition":"302/302","active":false,"stats":{"atk":284,"def":151,"spa":151,"spd":203,"spe":214},"moves":["cottonspore","slackoff"],"baseAbility":"toxicboost","item":"starsweet","pokeball":"pokeball","ability":"toxicboost","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Floral Healing","id":"floralhealing","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Dark"},{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Crash","id":"heatcrash","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Flying"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Rotom","details":"Rotom-Fan, L73","condition":"222/222","active":true,"stats":{"atk":126,"def":186,"spa":180,"spd":186,"spe":174},"moves":["floralhealing"],"baseAbility":"levitate","item":"maliciousarmor","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Altaria, L98, M","condition":"301/301","active":true,"stats":{"atk":192,"def":255,"spa":190,"spd":247,"spe":204},"moves":["rest","calmmind","heatcrash"],"baseAbility":"naturalcure","item":"chippedpot","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Minior","details":"Minior-Green, L79","condition":"243/243","active":false,"stats":{"atk":187,"def":147,"spa":188,"spd":162,"spe":221},"moves":["supersonic","lunarblessing","block","safeguard"],"baseAbility":"shieldsdown","item":"","pokeball":"masterball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sparky","details":"Hoopa-Unbound, shiny","condition":"307/307","active":false,"stats":{"atk":358,"def":161,"spa":458,"spd":308,"spe":227},"moves":["grassyglide"],"baseAbility":"magician","item":"","pokeball":"parkball","ability":"magician","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Chomp","details":"Yanmega, L70, F","condition":"227/227","active":false,"stats":{"atk":133,"def":187,"spa":203,"spd":131,"spe":160},"moves":["reflecttype","coaching"],"baseAbility":"frisk","item":"","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Poliwag, L63, F","condition":"142/142","active":false,"stats":{"atk":104,"def":86,"spa":76,"spd":106,"spe":154},"moves":["sheercold"],"baseAbility":"damp","item":"focusband","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Sir Hops-a-Lot|Emboar, L84, F|351/351
+|switch|p1b: Sir Hops-a-Lot|Emboar, L84, F|100/100
+|-terastallize|p2b: ThisNameIsFarTooLong|Flying
+|-terastallize|p1a: Chomp|Water
+|move|p2b: ThisNameIsFarTooLong|Heat Crash|p1b: Sir Hops-a-Lot
+|-resisted|p1b: Sir Hops-a-Lot
+|split|p1
+|-damage|p1b: Sir Hops-a-Lot|328/351
+|-damage|p1b: Sir Hops-a-Lot|94/100
+|move|p1a: Chomp|Population Bomb|p2a: Rotom
+|split|p2
+|-damage|p2a: Rotom|208/222
+|-damage|p2a: Rotom|94/100
+|split|p2
+|-damage|p2a: Rotom|194/222
+|-damage|p2a: Rotom|88/100
+|split|p2
+|-damage|p2a: Rotom|179/222
+|-damage|p2a: Rotom|81/100
+|-hitcount|p2a: Rotom|3
+|move|p2a: Rotom|Floral Healing|p2b: ThisNameIsFarTooLong
+|-fail|p2b: ThisNameIsFarTooLong|heal
+|
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Population Bomb","id":"populationbomb","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Psyshock","id":"psyshock","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Wildbolt Storm","id":"wildboltstorm","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Zarude, L76","condition":"272/272","active":true,"stats":{"atk":215,"def":201,"spa":184,"spd":187,"spe":185},"moves":["populationbomb"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p1: Sir Hops-a-Lot","details":"Emboar, L84, F","condition":"328/351","active":true,"stats":{"atk":268,"def":126,"spa":201,"spd":156,"spe":162},"moves":["psyshock","wildboltstorm"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Slugma","details":"Slugma, L69, M","condition":"155/155","active":false,"stats":{"atk":94,"def":120,"spa":111,"spd":90,"spe":81},"moves":["topsyturvy","spikes","precipiceblades","inferno"],"baseAbility":"weakarmor","item":"","pokeball":"duskball","ability":"weakarmor","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Dark, L63","condition":"243/243","active":false,"stats":{"atk":207,"def":175,"spa":204,"spd":192,"spe":176},"moves":["breakingswipe","doubleshock","confide","smokescreen"],"baseAbility":"multitype","item":"roseliberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Garganacl, L73, M, shiny","condition":"288/288","active":false,"stats":{"atk":178,"def":216,"spa":128,"spd":160,"spe":78},"moves":["flamethrower"],"baseAbility":"purifyingsalt","item":"starfberry","pokeball":"pokeball","ability":"purifyingsalt","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: X","details":"Zangoose, L97, M","condition":"302/302","active":false,"stats":{"atk":284,"def":151,"spa":151,"spd":203,"spe":214},"moves":["cottonspore","slackoff"],"baseAbility":"toxicboost","item":"starsweet","pokeball":"pokeball","ability":"toxicboost","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Floral Healing","id":"floralhealing","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Crash","id":"heatcrash","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Rotom","details":"Rotom-Fan, L73","condition":"179/222","active":true,"stats":{"atk":126,"def":186,"spa":180,"spd":186,"spe":174},"moves":["floralhealing"],"baseAbility":"levitate","item":"maliciousarmor","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Altaria, L98, M","condition":"301/301","active":true,"stats":{"atk":192,"def":255,"spa":190,"spd":247,"spe":204},"moves":["rest","calmmind","heatcrash"],"baseAbility":"naturalcure","item":"chippedpot","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: Minior","details":"Minior-Green, L79","condition":"243/243","active":false,"stats":{"atk":187,"def":147,"spa":188,"spd":162,"spe":221},"moves":["supersonic","lunarblessing","block","safeguard"],"baseAbility":"shieldsdown","item":"","pokeball":"masterball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sparky","details":"Hoopa-Unbound, shiny","condition":"307/307","active":false,"stats":{"atk":358,"def":161,"spa":458,"spd":308,"spe":227},"moves":["grassyglide"],"baseAbility":"magician","item":"","pokeball":"parkball","ability":"magician","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Chomp","details":"Yanmega, L70, F","condition":"227/227","active":false,"stats":{"atk":133,"def":187,"spa":203,"spd":131,"spe":160},"moves":["reflecttype","coaching"],"baseAbility":"frisk","item":"","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Poliwag, L63, F","condition":"142/142","active":false,"stats":{"atk":104,"def":86,"spa":76,"spd":106,"spe":154},"moves":["sheercold"],"baseAbility":"damp","item":"focusband","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Mr. Bubbles|Garganacl, L73, M, shiny|288/288
+|switch|p1a: Mr. Bubbles|Garganacl, L73, M, shiny|100/100
+|move|p2b: ThisNameIsFarTooLong|Calm Mind|p2b: ThisNameIsFarTooLong
+|-boost|p2b: ThisNameIsFarTooLong|spa|1
+|-boost|p2b: ThisNameIsFarTooLong|spd|1
+|move|p2a: Rotom|Floral Healing|p2b: ThisNameIsFarTooLong
+|-fail|p2b: ThisNameIsFarTooLong|heal
+|move|p1b: Sir Hops-a-Lot|Psyshock|p2a: Rotom
+|split|p2
+|-damage|p2a: Rotom|123/222
+|-damage|p2a: Rotom|56/100
+|
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Psyshock","id":"psyshock","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Wildbolt Storm","id":"wildboltstorm","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Mr. Bubbles","details":"Garganacl, L73, M, shiny","condition":"288/288","active":true,"stats":{"atk":178,"def":216,"spa":128,"spd":160,"spe":78},"moves":["flamethrower"],"baseAbility":"purifyingsalt","item":"starfberry","pokeball":"pokeball","ability":"purifyingsalt","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Emboar, L84, F","condition":"328/351","active":true,"stats":{"atk":268,"def":126,"spa":201,"spd":156,"spe":162},"moves":["psyshock","wildboltstorm"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Slugma","details":"Slugma, L69, M","condition":"155/155","active":false,"stats":{"atk":94,"def":120,"spa":111,"spd":90,"spe":81},"moves":["topsyturvy","spikes","precipiceblades","inferno"],"baseAbility":"weakarmor","item":"","pokeball":"duskball","ability":"weakarmor","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Dark, L63","condition":"243/243","active":false,"stats":{"atk":207,"def":175,"spa":204,"spd":192,"spe":176},"moves":["breakingswipe","doubleshock","confide","smokescreen"],"baseAbility":"multitype","item":"roseliberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Chomp","details":"Zarude, L76","condition":"272/272","active":false,"stats":{"atk":215,"def":201,"spa":184,"spd":187,"spe":185},"moves":["populationbomb"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p1: X","details":"Zangoose, L97, M","condition":"302/302","active":false,"stats":{"atk":284,"def":151,"spa":151,"spd":203,"spe":214},"moves":["cottonspore","slackoff"],"baseAbility":"toxicboost","item":"starsweet","pokeball":"pokeball","ability":"toxicboost","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Floral Healing","id":"floralhealing","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Crash","id":"heatcrash","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Rotom","details":"Rotom-Fan, L73","condition":"123/222","active":true,"stats":{"atk":126,"def":186,"spa":180,"spd":186,"spe":174},"moves":["floralhealing"],"baseAbility":"levitate","item":"maliciousarmor","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Altaria, L98, M","condition":"301/301","active":true,"stats":{"atk":192,"def":255,"spa":190,"spd":247,"spe":204},"moves":["rest","calmmind","heatcrash"],"baseAbility":"naturalcure","item":"chippedpot","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: Minior","details":"Minior-Green, L79","condition":"243/243","active":false,"stats":{"atk":187,"def":147,"spa":188,"spd":162,"spe":221},"moves":["supersonic","lunarblessing","block","safeguard"],"baseAbility":"shieldsdown","item":"","pokeball":"masterball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sparky","details":"Hoopa-Unbound, shiny","condition":"307/307","active":false,"stats":{"atk":358,"def":161,"spa":458,"spd":308,"spe":227},"moves":["grassyglide"],"baseAbility":"magician","item":"","pokeball":"parkball","ability":"magician","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Chomp","details":"Yanmega, L70, F","condition":"227/227","active":false,"stats":{"atk":133,"def":187,"spa":203,"spd":131,"spe":160},"moves":["reflecttype","coaching"],"baseAbility":"frisk","item":"","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Poliwag, L63, F","condition":"142/142","active":false,"stats":{"atk":104,"def":86,"spa":76,"spd":106,"spe":154},"moves":["sheercold"],"baseAbility":"damp","item":"focusband","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Mr. Bubbles|Poliwag, L63, F|142/142
+|switch|p2a: Mr. Bubbles|Poliwag, L63, F|100/100
+|split|p1
+|switch|p1b: Chomp|Zarude, L76, tera:Water|272/272
+|switch|p1b: Chomp|Zarude, L76, tera:Water|100/100
+|split|p1
+|switch|p1a: Arceus|Arceus-Dark, L63|243/243
+|switch|p1a: Arceus|Arceus-Dark, L63|100/100
+|move|p2b: ThisNameIsFarTooLong|Heat Crash|p1b: Chomp
+|-resisted|p1b: Chomp
+|split|p1
+|-damage|p1b: Chomp|258/272
+|-damage|p1b: Chomp|95/100
+|
+|upkeep
+|-start|p1a: Arceus|typechange|Normal|[silent]
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Breaking Swipe","id":"breakingswipe","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Confide","id":"confide","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Smokescreen","id":"smokescreen","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Population Bomb","id":"populationbomb","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Dark, L63","condition":"243/243","active":true,"stats":{"atk":207,"def":175,"spa":204,"spd":192,"spe":176},"moves":["breakingswipe","doubleshock","confide","smokescreen"],"baseAbility":"multitype","item":"roseliberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Chomp","details":"Zarude, L76","condition":"258/272","active":true,"stats":{"atk":215,"def":201,"spa":184,"spd":187,"spe":185},"moves":["populationbomb"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p1: Slugma","details":"Slugma, L69, M","condition":"155/155","active":false,"stats":{"atk":94,"def":120,"spa":111,"spd":90,"spe":81},"moves":["topsyturvy","spikes","precipiceblades","inferno"],"baseAbility":"weakarmor","item":"","pokeball":"duskball","ability":"weakarmor","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Garganacl, L73, M, shiny","condition":"288/288","active":false,"stats":{"atk":178,"def":216,"spa":128,"spd":160,"spe":78},"moves":["flamethrower"],"baseAbility":"purifyingsalt","item":"starfberry","pokeball":"pokeball","ability":"purifyingsalt","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Emboar, L84, F","condition":"328/351","active":false,"stats":{"atk":268,"def":126,"spa":201,"spd":156,"spe":162},"moves":["psyshock","wildboltstorm"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: X","details":"Zangoose, L97, M","condition":"302/302","active":false,"stats":{"atk":284,"def":151,"spa":151,"spd":203,"spe":214},"moves":["cottonspore","slackoff"],"baseAbility":"toxicboost","item":"starsweet","pokeball":"pokeball","ability":"toxicboost","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Calm Mind","id":"calmmind","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Crash","id":"heatcrash","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Poliwag, L63, F","condition":"142/142","active":true,"stats":{"atk":104,"def":86,"spa":76,"spd":106,"spe":154},"moves":["sheercold"],"baseAbility":"damp","item":"focusband","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Altaria, L98, M","condition":"301/301","active":true,"stats":{"atk":192,"def":255,"spa":190,"spd":247,"spe":204},"moves":["rest","calmmind","heatcrash"],"baseAbility":"naturalcure","item":"chippedpot","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Flying","terastallized":"Flying"},{"ident":"p2: Minior","details":"Minior-Green, L79","condition":"243/243","active":false,"stats":{"atk":187,"def":147,"spa":188,"spd":162,"spe":221},"moves":["supersonic","lunarblessing","block","safeguard"],"baseAbility":"shieldsdown","item":"","pokeball":"masterball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sparky","details":"Hoopa-Unbound, shiny","condition":"307/307","active":false,"stats":{"atk":358,"def":161,"spa":458,"spd":308,"spe":227},"moves":["grassyglide"],"baseAbility":"magician","item":"","pokeball":"parkball","ability":"magician","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Chomp","details":"Yanmega, L70, F","condition":"227/227","active":false,"stats":{"atk":133,"def":187,"spa":203,"spd":131,"spe":160},"moves":["reflecttype","coaching"],"baseAbility":"frisk","item":"","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Fan, L73","condition":"123/222","active":false,"stats":{"atk":126,"def":186,"spa":180,"spd":186,"spe":174},"moves":["floralhealing"],"baseAbility":"levitate","item":"maliciousarmor","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+update
+|
+|win|Alice
+@message
+end
+{"winner":"Alice","seed":"gen5,a3bb8cda55194feb","turns":4,"p1":"Alice","p2":"Bob","p1team":[{"name":"Chomp","species":"Zarude","item":"","ability":"Leaf Guard","moves":["Population Bomb"],"nature":"Quiet","evs":{"hp":21,"atk":26,"def":70,"spa":179,"spd":79,"spe":99},"level":76,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Mr. Bubbles","species":"Garganacl","item":"Starf Berry","ability":"Purifying Salt","moves":["Flamethrower"],"nature":"Mild","evs":{"hp":204,"atk":31,"def":131,"spa":132,"spd":10,"spe":1},"shiny":true,"level":73,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Slugma","species":"Slugma","item":"","ability":"Weak Armor","moves":["Topsy-Turvy","Spikes","Precipice Blades","Inferno"],"nature":"Careful","evs":{"hp":0,"atk":74,"def":228,"spa":11,"spd":5,"spe":161},"gender":"M","level":69,"happiness":255,"hpType":"","pokeball":"Dusk Ball","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Arceus","species":"Arceus-Dark","item":"Roseli Berry","ability":"Multitype","moves":["Breaking Swipe","Double Shock","Confide","Smokescreen"],"nature":"Docile","evs":{"hp":0,"atk":205,"def":0,"spa":182,"spd":111,"spe":10},"level":63,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sir Hops-a-Lot","species":"Emboar","item":"","ability":"Blaze","moves":["Psyshock","Wildbolt Storm"],"nature":"Hasty","evs":{"hp":223,"atk":149,"def":3,"spa":12,"spd":76,"spe":43},"level":84,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"X","species":"Zangoose","item":"Star Sweet","ability":"Toxic Boost","moves":["Cotton Spore","Slack Off"],"nature":"Calm","evs":{"hp":102,"atk":240,"def":2,"spa":0,"spd":142,"spe":23},"gender":"M","level":97,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Rotom","species":"Rotom-Fan","item":"Malicious Armor","ability":"Levitate","moves":["Floral Healing"],"nature":"Hasty","evs":{"hp":240,"atk":25,"def":135,"spa":3,"spd":13,"spe":35},"level":73,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"ThisNameIsFarTooLongToKeep","species":"Altaria","item":"Chipped Pot","ability":"Natural Cure","moves":["Rest","Calm Mind","Heat Crash"],"nature":"Serious","evs":{"hp":64,"atk":81,"def":180,"spa":75,"spd":25,"spe":55},"level":98,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Minior","species":"Minior-Green","item":"","ability":"Shields Down","moves":["Supersonic","Lunar Blessing","Block","Safeguard"],"nature":"Docile","evs":{"hp":178,"atk":0,"def":117,"spa":6,"spd":193,"spe":15},"level":79,"happiness":255,"hpType":"","pokeball":"Master Ball","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sparky","species":"Hoopa-Unbound","item":"","ability":"Magician","moves":["Grassy Glide"],"nature":"Quiet","evs":{"hp":25,"atk":10,"def":21,"spa":164,"spd":51,"spe":230},"shiny":true,"happiness":255,"hpType":"","pokeball":"Park Ball","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Yanmega","item":"","ability":"Frisk","moves":["Reflect Type","Coaching"],"nature":"Docile","evs":{"hp":29,"atk":4,"def":235,"spa":80,"spd":155,"spe":5},"level":70,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Mr. Bubbles","species":"Poliwag","item":"Focus Band","ability":"Damp","moves":["Sheer Cold"],"nature":"Timid","evs":{"hp":3,"atk":186,"def":74,"spa":12,"spd":202,"spe":19},"level":63,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[6,6],"inputLog":[">start {\"formatid\":\"gen9randomdoublesbattle\",\"seed\":\"gen5,a3bb8cda55194feb\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Chomp|Zarude||LeafGuard|PopulationBomb|Quiet|21,26,70,179,79,99||||76|,,,,,Water]Mr. Bubbles|Garganacl|StarfBerry|PurifyingSalt|Flamethrower|Mild|204,31,131,132,10,1|||S|73|,,,,,Ground]Slugma|||WeakArmor|TopsyTurvy,Spikes,PrecipiceBlades,Inferno|Careful|,74,228,11,5,161|M|||69|,,DuskBall,,,Ground]Arceus-Dark||RoseliBerry|Multitype|BreakingSwipe,DoubleShock,Confide,Smokescreen|Docile|,205,,182,111,10||||63|,,,,,Dragon]Sir Hops-a-Lot|Emboar||Blaze|Psyshock,WildboltStorm|Hasty|223,149,3,12,76,43||||84|,,,,,Fighting]X|Zangoose|StarSweet|ToxicBoost|CottonSpore,SlackOff|Calm|102,240,2,,142,23|M|||97|,,,,,Ice\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Rotom-Fan||MaliciousArmor|Levitate|FloralHealing|Hasty|240,25,135,3,13,35||||73|,,,,,Dark]ThisNameIsFarTooLongToKeep|Altaria|ChippedPot|NaturalCure|Rest,CalmMind,HeatCrash|Serious|64,81,180,75,25,55||||98|,,,,,Flying]Minior-Green|||ShieldsDown|Supersonic,LunarBlessing,Block,Safeguard|Docile|178,,117,6,193,15||||79|,,MasterBall,,,Normal]Sparky|HoopaUnbound||Magician|GrassyGlide|Quiet|25,10,21,164,51,230|||S||,,ParkBall,,,Ground]Chomp|Yanmega||Frisk|ReflectType,Coaching|Docile|29,4,235,80,155,5||||70|,,,,,Water]Mr. Bubbles|Poliwag|FocusBand|Damp|SheerCold|Timid|3,186,74,12,202,19||||63|,,,,,Grass\"}",">p1 move populationbomb +1 terastallize, switch 5",">p2 move floralhealing -2, move heatcrash +2 terastallize",">p1 switch 5, move psyshock +1",">p2 move floralhealing -2, move calmmind",">p1 switch 4, switch 5",">p2 switch 6, move heatcrash +2",">forcelose p2"]}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+update
+|chat|after the end
+@message
+requesteddata
+>start {"formatid":"gen9randomdoublesbattle","seed":"gen5,a3bb8cda55194feb"}
+>player p1 {"name":"Alice","team":"Chomp|Zarude||LeafGuard|PopulationBomb|Quiet|21,26,70,179,79,99||||76|,,,,,Water]Mr. Bubbles|Garganacl|StarfBerry|PurifyingSalt|Flamethrower|Mild|204,31,131,132,10,1|||S|73|,,,,,Ground]Slugma|||WeakArmor|TopsyTurvy,Spikes,PrecipiceBlades,Inferno|Careful|,74,228,11,5,161|M|||69|,,DuskBall,,,Ground]Arceus-Dark||RoseliBerry|Multitype|BreakingSwipe,DoubleShock,Confide,Smokescreen|Docile|,205,,182,111,10||||63|,,,,,Dragon]Sir Hops-a-Lot|Emboar||Blaze|Psyshock,WildboltStorm|Hasty|223,149,3,12,76,43||||84|,,,,,Fighting]X|Zangoose|StarSweet|ToxicBoost|CottonSpore,SlackOff|Calm|102,240,2,,142,23|M|||97|,,,,,Ice"}
+>player p2 {"name":"Bob","team":"Rotom-Fan||MaliciousArmor|Levitate|FloralHealing|Hasty|240,25,135,3,13,35||||73|,,,,,Dark]ThisNameIsFarTooLongToKeep|Altaria|ChippedPot|NaturalCure|Rest,CalmMind,HeatCrash|Serious|64,81,180,75,25,55||||98|,,,,,Flying]Minior-Green|||ShieldsDown|Supersonic,LunarBlessing,Block,Safeguard|Docile|178,,117,6,193,15||||79|,,MasterBall,,,Normal]Sparky|HoopaUnbound||Magician|GrassyGlide|Quiet|25,10,21,164,51,230|||S||,,ParkBall,,,Ground]Chomp|Yanmega||Frisk|ReflectType,Coaching|Docile|29,4,235,80,155,5||||70|,,,,,Water]Mr. Bubbles|Poliwag|FocusBand|Damp|SheerCold|Timid|3,186,74,12,202,19||||63|,,,,,Grass"}
+>p1 move populationbomb +1 terastallize, switch 5
+>p2 move floralhealing -2, move heatcrash +2 terastallize
+>p1 switch 5, move psyshock +1
+>p2 move floralhealing -2, move calmmind
+>p1 switch 4, switch 5
+>p2 switch 6, move heatcrash +2
+>forcelose p2
+>chat after the end
+>forcewin p1

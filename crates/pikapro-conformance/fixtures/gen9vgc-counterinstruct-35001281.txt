@@ -1,0 +1,629 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 6093 dda9 2514 9b1c
+genders drawn
+team p1
+ThisNameIsFarTooLongToKeep (Manaphy) @ White Herb
+Ability: Hydration
+Level: 50
+Tera Type: Fighting
+EVs: 49 HP / 114 Atk / 136 Def / 99 SpA / 42 SpD / 12 Spe
+Adamant Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Protect
+
+Magby
+Ability: Vital Spirit
+Level: 50
+Tera Type: Dark
+EVs: 99 HP / 25 Atk / 6 Def / 93 SpA / 142 SpD / 131 Spe
+Rash Nature
+- Instruct
+- Metal Burst
+- Comeuppance
+- Mirror Coat
+
+Frosmoth (F) @ Dusk Ball
+Ability: Shield Dust
+Level: 50
+Tera Type: Rock
+EVs: 229 HP / 30 Atk / 118 Def / 1 SpA / 130 SpD
+Brave Nature
+- Twister
+
+Monferno (M)
+Ability: Iron Fist
+Level: 50
+Tera Type: Fire
+EVs: 99 HP / 13 Atk / 64 Def / 49 SpA / 43 SpD / 221 Spe
+Hardy Nature
+- Instruct
+- Counter
+- Mirror Coat
+- Comeuppance
+
+Chomp (Lilligant-Hisui) @ Choice Band
+Ability: Hustle
+Level: 50
+Tera Type: Flying
+EVs: 86 HP / 164 Atk / 116 Def / 3 SpA / 1 SpD / 128 Spe
+Docile Nature
+- Future Sight
+- Last Resort
+
+Azurill (M) @ Cell Battery
+Ability: Huge Power
+Level: 50
+Tera Type: Ground
+EVs: 55 HP / 69 Atk / 175 Def / 184 SpA / 3 SpD / 16 Spe
+Timid Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Metal Burst
+end
+team p2
+Zekrom @ Absorb Bulb
+Ability: Teravolt
+Level: 50
+Tera Type: Water
+EVs: 44 HP / 182 Atk / 40 Def / 10 SpA / 9 SpD / 210 Spe
+Modest Nature
+- Infernal Parade
+- Iron Defense
+- Revelation Dance
+
+Zapdos @ White Herb
+Ability: Pressure
+Level: 50
+Tera Type: Fire
+EVs: 3 HP / 55 Atk / 225 Def / 106 SpA / 115 Spe
+Brave Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Metal Burst
+
+Fletchinder (M) @ Eject Button
+Ability: Gale Wings
+Level: 50
+Tera Type: Ground
+EVs: 4 HP / 180 Atk / 130 Def / 140 SpA / 36 SpD / 7 Spe
+Serious Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Protect
+
+X (Quilava) (F) @ Terrain Extender
+Ability: Flash Fire
+Level: 50
+Tera Type: Ghost
+EVs: 190 HP / 226 Atk / 22 Def / 19 SpA / 16 SpD / 12 Spe
+Impish Nature
+- Confide
+- Grav Apple
+- Haze
+- Memento
+
+Big Tony's Pal (Dunsparce)
+Ability: Rattled
+Level: 50
+Tera Type: Ground
+EVs: 10 HP / 1 Atk / 4 Def / 228 SpA / 112 SpD / 141 Spe
+Careful Nature
+- Instruct
+- Metal Burst
+- Comeuppance
+- Mirror Coat
+
+Dragapult (M) @ Yache Berry
+Ability: Infiltrator
+Level: 50
+Tera Type: Fairy
+EVs: 5 HP / 76 Atk / 251 Def / 43 SpA / 133 Spe
+Hasty Nature
+- Instruct
+- Counter
+- Mirror Coat
+- Comeuppance
+end
+choice p1 team [3, 4, 6, 5]
+choice p2 team [4, 3, 2, 1]
+choice p1 move 1, move 4
+choice p2 move gravapple +1,move 3 +1
+choice p2 pass, switch 3
+choice p1 default
+choice p2 switch 4, switch 3
+choice p1 switch 3, move 1 -1 terastallize
+choice p2 switch 4, switch 3
+choice p1 move 2 ,  move Comeuppance
+choice p2 move confide 2 terastallize ,  move 3 +1
+choice p1 move 1, move 1 -1
+choice p2 move Confide 1, move instruct 2
+choice p1 move 3 2, move 1 2
+choice p2 move 4 1, switch 3
+choice p2 switch 3, pass
+choice p1 move 2, move 4
+choice p2 move 3 1, move 4
+choice p1 switch 4, move 1 1
+choice p2 move 4, move 3 1
+choice p1 move 2 1, move 3
+choice p2 switch 4, move 3 1
+choice p1 move 2 2, move 1 -1
+choice p2 move Infernal Parade -2,move counter
+choice p1 move 2 2, switch 3
+choice p2 move 1 -2, move 3 -1
+choice p2 pass, switch zapdos
+choice p1 default
+choice p2 move Revelation Dance +2, move Instruct +1
+choice p1 switch monferno ,  move twister
+choice p2 move 3 -2, move 2
+choice p1 move instruct -2 ,  move twister
+choice p2 move 1 1, move 3 2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Manaphy, L50|
+expect |poke|p1|Magby, L50, F|
+expect |poke|p1|Frosmoth, L50, F|
+expect |poke|p1|Monferno, L50, M|
+expect |poke|p1|Lilligant-Hisui, L50, F|
+expect |poke|p1|Azurill, L50, M|
+expect |poke|p2|Zekrom, L50|
+expect |poke|p2|Zapdos, L50|
+expect |poke|p2|Fletchinder, L50, M|
+expect |poke|p2|Quilava, L50, F|
+expect |poke|p2|Dunsparce, L50, F|
+expect |poke|p2|Dragapult, L50, M|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Frosmoth|Frosmoth, L50, F|174/174
+expect |switch|p1a: Frosmoth|Frosmoth, L50, F|174/174
+expect |split|p1
+expect |switch|p1b: Monferno|Monferno, L50, M|151/151
+expect |switch|p1b: Monferno|Monferno, L50, M|151/151
+expect |split|p2
+expect |switch|p2a: X|Quilava, L50, F|157/157
+expect |switch|p2a: X|Quilava, L50, F|157/157
+expect |split|p2
+expect |switch|p2b: Fletchinder|Fletchinder, L50, M|138/138
+expect |switch|p2b: Fletchinder|Fletchinder, L50, M|138/138
+expect |turn|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1b: Monferno|Comeuppance||[still]
+expect |-fail|p1b: Monferno
+expect |rng|2|1
+expect |move|p2b: Fletchinder|Instruct||[still]
+expect |-fail|p2b: Fletchinder
+expect |rng|2|1
+expect |move|p2a: X|Grav Apple|p1a: Frosmoth
+expect |rng|100|67
+expect |rng|24|8
+expect |rng|16|15
+expect |-resisted|p1a: Frosmoth
+expect |split|p1
+expect |-damage|p1a: Frosmoth|156/174
+expect |-damage|p1a: Frosmoth|156/174
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Frosmoth|Twister|p2a: X|[spread] p2a,p2b
+expect |rng|100|50
+expect |rng|100|50
+expect |rng|24|8
+expect |rng|16|14
+expect |rng|24|23
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: X|138/157
+expect |-damage|p2a: X|138/157
+expect |split|p2
+expect |-damage|p2b: Fletchinder|115/138
+expect |-damage|p2b: Fletchinder|115/138
+expect |rng|100|39
+expect |rng|100|92
+expect |-enditem|p2b: Fletchinder|Eject Button
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zapdos|Zapdos, L50|165/165
+expect |switch|p2b: Zapdos|Zapdos, L50|165/165
+expect |-ability|p2b: Zapdos|Pressure
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Fletchinder|Fletchinder, L50, M|115/138
+expect |switch|p2b: Fletchinder|Fletchinder, L50, M|115/138
+expect |split|p2
+expect |switch|p2a: Zekrom|Zekrom, L50|181/181
+expect |switch|p2a: Zekrom|Zekrom, L50|181/181
+expect |-ability|p2a: Zekrom|Teravolt
+expect |rng|2|1
+expect |move|p1b: Monferno|Instruct||[still]
+expect |-fail|p1b: Monferno
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Frosmoth|Twister|p2b: Fletchinder|[spread] p2a,p2b
+expect |rng|100|75
+expect |rng|100|94
+expect |rng|24|14
+expect |rng|16|0
+expect |-supereffective|p2a: Zekrom
+expect |rng|24|15
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Zekrom|147/181
+expect |-damage|p2a: Zekrom|147/181
+expect |split|p2
+expect |-damage|p2b: Fletchinder|91/138
+expect |-damage|p2b: Fletchinder|91/138
+expect |rng|100|27
+expect |rng|100|33
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Quilava, L50, F|138/157
+expect |switch|p2a: X|Quilava, L50, F|138/157
+expect |split|p2
+expect |switch|p2b: Zapdos|Zapdos, L50|165/165
+expect |switch|p2b: Zapdos|Zapdos, L50|165/165
+expect |-ability|p2b: Zapdos|Pressure
+expect |split|p1
+expect |switch|p1a: Azurill|Azurill, L50, M|132/132
+expect |switch|p1a: Azurill|Azurill, L50, M|132/132
+expect |-terastallize|p1b: Monferno|Fire
+expect |move|p1b: Monferno|Instruct||[still]
+expect |-fail|p1b: Monferno
+expect |
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |-terastallize|p2a: X|Ghost
+expect |move|p1b: Monferno|Comeuppance||[still]
+expect |-fail|p1b: Monferno
+expect |move|p2b: Zapdos|Instruct||[still]
+expect |-fail|p2b: Zapdos
+expect |move|p2a: X|Confide|p1b: Monferno
+expect |-unboost|p1b: Monferno|spa|1
+expect |move|p1a: Azurill|Mirror Coat||[still]
+expect |-fail|p1a: Azurill
+expect |
+expect |upkeep
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p1b: Monferno|Instruct|p1a: Azurill
+expect |-singleturn|p1a: Azurill|move: Instruct|[of] p1b: Monferno
+expect |move|p2b: Zapdos|Instruct||[still]
+expect |-fail|p2b: Zapdos
+expect |move|p2a: X|Confide|p1a: Azurill
+expect |-unboost|p1a: Azurill|spa|1
+expect |move|p1a: Azurill|Counter||[still]
+expect |-fail|p1a: Azurill
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Fletchinder|Fletchinder, L50, M|91/138
+expect |switch|p2b: Fletchinder|Fletchinder, L50, M|91/138
+expect |move|p1b: Monferno|Instruct||[still]
+expect |-fail|p1b: Monferno
+expect |move|p2a: X|Memento|p1a: Azurill
+expect |rng|100|13
+expect |-unboost|p1a: Azurill|atk|2
+expect |-unboost|p1a: Azurill|spa|2
+expect |faint|p2a: X
+expect |move|p1a: Azurill|Instruct||[still]
+expect |-fail|p1a: Azurill
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zapdos|Zapdos, L50|165/165
+expect |switch|p2a: Zapdos|Zapdos, L50|165/165
+expect |-ability|p2a: Zapdos|Pressure
+expect |turn|7
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2b: Fletchinder|Protect|p2b: Fletchinder
+expect |-singleturn|p2b: Fletchinder|Protect
+expect |move|p1b: Monferno|Comeuppance||[still]
+expect |-fail|p1b: Monferno
+expect |move|p2a: Zapdos|Instruct||[still]
+expect |-fail|p2a: Zapdos
+expect |move|p1a: Azurill|Mirror Coat||[still]
+expect |-fail|p1a: Azurill
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|8
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Chomp|Lilligant-Hisui, L50, F|156/156
+expect |switch|p1a: Chomp|Lilligant-Hisui, L50, F|156/156
+expect |move|p1b: Monferno|Instruct||[still]
+expect |-fail|p1b: Monferno
+expect |move|p2a: Zapdos|Metal Burst||[still]
+expect |-fail|p2a: Zapdos
+expect |move|p2b: Fletchinder|Instruct||[still]
+expect |-fail|p2b: Fletchinder
+expect |
+expect |upkeep
+expect |turn|9
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zekrom|Zekrom, L50|147/181
+expect |switch|p2a: Zekrom|Zekrom, L50|147/181
+expect |-ability|p2a: Zekrom|Teravolt
+expect |move|p1a: Chomp|Last Resort||[still]
+expect |-fail|p1a: Chomp
+expect |move|p2b: Fletchinder|Instruct|p1a: Chomp
+expect |-singleturn|p1a: Chomp|move: Instruct|[of] p2b: Fletchinder
+expect |move|p1a: Chomp|Last Resort||[still]
+expect |-fail|p1a: Chomp
+expect |move|p1b: Monferno|Mirror Coat||[still]
+expect |-fail|p1b: Monferno
+expect |
+expect |upkeep
+expect |turn|10
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1a: Chomp|Last Resort||[still]
+expect |-fail|p1a: Chomp
+expect |move|p2a: Zekrom|Infernal Parade|p2b: Fletchinder
+expect |rng|100|57
+expect |rng|24|3
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2b: Fletchinder|38/138
+expect |-damage|p2b: Fletchinder|38/138
+expect |rng|100|67
+expect |move|p1b: Monferno|Instruct|p1a: Chomp
+expect |-singleturn|p1a: Chomp|move: Instruct|[of] p1b: Monferno
+expect |move|p1a: Chomp|Last Resort||[still]
+expect |-fail|p1a: Chomp
+expect |move|p2b: Fletchinder|Counter||[still]
+expect |-fail|p2b: Fletchinder
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Frosmoth|Frosmoth, L50, F|156/174
+expect |switch|p1b: Frosmoth|Frosmoth, L50, F|156/174
+expect |move|p1a: Chomp|Last Resort||[still]
+expect |-fail|p1a: Chomp
+expect |move|p2a: Zekrom|Infernal Parade|p2b: Fletchinder
+expect |rng|100|76
+expect |rng|24|3
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Fletchinder|0 fnt
+expect |-damage|p2b: Fletchinder|0 fnt
+expect |rng|100|25
+expect |faint|p2b: Fletchinder
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zapdos|Zapdos, L50|165/165
+expect |switch|p2b: Zapdos|Zapdos, L50|165/165
+expect |-ability|p2b: Zapdos|Pressure
+expect |turn|12
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1a: Chomp|Last Resort||[still]
+expect |-fail|p1a: Chomp
+expect |rng|2|0
+expect |move|p2a: Zekrom|Revelation Dance|p1b: Frosmoth
+expect |rng|100|27
+expect |rng|24|13
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Frosmoth|89/174
+expect |-damage|p1b: Frosmoth|89/174
+expect |rng|2|0
+expect |move|p2b: Zapdos|Instruct|p1a: Chomp
+expect |-singleturn|p1a: Chomp|move: Instruct|[of] p2b: Zapdos
+expect |rng|2|1
+expect |move|p1a: Chomp|Last Resort||[still]
+expect |-fail|p1a: Chomp
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Frosmoth|Twister|p2b: Zapdos|[spread] p2a,p2b
+expect |rng|100|96
+expect |rng|100|76
+expect |rng|24|6
+expect |rng|16|9
+expect |-supereffective|p2a: Zekrom
+expect |rng|24|23
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Zekrom|117/181
+expect |-damage|p2a: Zekrom|117/181
+expect |split|p2
+expect |-damage|p2b: Zapdos|148/165
+expect |-damage|p2b: Zapdos|148/165
+expect |rng|100|90
+expect |rng|100|4
+expect |
+expect |upkeep
+expect |turn|13
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Monferno|Monferno, L50, M, tera:Fire|151/151
+expect |switch|p1a: Monferno|Monferno, L50, M, tera:Fire|151/151
+expect |rng|2|0
+expect |move|p2a: Zekrom|Revelation Dance|p2b: Zapdos
+expect |rng|100|61
+expect |rng|24|4
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Zapdos|67/165
+expect |-damage|p2b: Zapdos|67/165
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Frosmoth|Twister|p2b: Zapdos|[spread] p2a,p2b
+expect |rng|100|1
+expect |rng|100|13
+expect |rng|24|11
+expect |rng|16|9
+expect |-supereffective|p2a: Zekrom
+expect |rng|24|1
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Zekrom|87/181
+expect |-damage|p2a: Zekrom|87/181
+expect |split|p2
+expect |-damage|p2b: Zapdos|49/165
+expect |-damage|p2b: Zapdos|49/165
+expect |rng|100|16
+expect |rng|100|54
+expect |move|p2b: Zapdos|Mirror Coat|p1b: Frosmoth
+expect |rng|100|7
+expect |split|p1
+expect |-damage|p1b: Frosmoth|53/174
+expect |-damage|p1b: Frosmoth|53/174
+expect |
+expect |upkeep
+expect |turn|14
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2a: Zekrom|Infernal Parade|p1a: Monferno
+expect |rng|100|70
+expect |rng|24|22
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Monferno|100/151
+expect |-damage|p1a: Monferno|100/151
+expect |rng|100|42
+expect |rng|2|0
+expect |move|p1a: Monferno|Instruct|p1b: Frosmoth
+expect |-singleturn|p1b: Frosmoth|move: Instruct|[of] p1a: Monferno
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Frosmoth|Twister|p2a: Zekrom|[spread] p2a,p2b
+expect |rng|100|82
+expect |rng|100|4
+expect |rng|24|23
+expect |rng|16|11
+expect |-supereffective|p2a: Zekrom
+expect |rng|24|16
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Zekrom|57/181
+expect |-damage|p2a: Zekrom|57/181
+expect |split|p2
+expect |-damage|p2b: Zapdos|31/165
+expect |-damage|p2b: Zapdos|31/165
+expect |rng|100|1
+expect |rng|100|34
+expect |rng|2|0
+expect |move|p2b: Zapdos|Instruct|p1b: Frosmoth
+expect |-singleturn|p1b: Frosmoth|move: Instruct|[of] p2b: Zapdos
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Frosmoth|Twister|p2b: Zapdos|[spread] p2a,p2b
+expect |rng|100|14
+expect |rng|100|78
+expect |rng|24|11
+expect |rng|16|1
+expect |-supereffective|p2a: Zekrom
+expect |rng|24|4
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Zekrom|25/181
+expect |-damage|p2a: Zekrom|25/181
+expect |split|p2
+expect |-damage|p2b: Zapdos|14/165
+expect |-damage|p2b: Zapdos|14/165
+expect |rng|100|56
+expect |rng|100|99
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1b: Frosmoth|Twister|p2a: Zekrom|[spread] p2a,p2b
+expect |rng|100|24
+expect |rng|100|42
+expect |rng|24|23
+expect |rng|16|12
+expect |-supereffective|p2a: Zekrom
+expect |rng|24|2
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Zekrom|0 fnt
+expect |-damage|p2a: Zekrom|0 fnt
+expect |split|p2
+expect |-damage|p2b: Zapdos|0 fnt
+expect |-damage|p2b: Zapdos|0 fnt
+expect |rng|100|58
+expect |rng|100|36
+expect |faint|p2a: Zekrom
+expect |faint|p2b: Zapdos
+expect |
+expect |win|p1

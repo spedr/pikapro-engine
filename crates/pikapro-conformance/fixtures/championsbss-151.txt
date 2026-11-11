@@ -1,0 +1,570 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed 0f5c 5656 287f 9bd1
+genders drawn
+team p1
+Vivillon-Pokeball (F) @ Damp Rock
+Ability: Compound Eyes
+Level: 50
+Tera Type: Bug
+EVs: 15 HP / 29 Atk / 7 Def / 5 SpA / 9 SpD / 1 Spe
+Mild Nature
+- Counter
+- Hypnosis
+- Switcheroo
+- Gunk Shot
+
+Noivern (F)
+Ability: Infiltrator
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 10 HP / 13 Atk / 4 Def / 15 SpA / 12 SpD / 8 Spe
+Adamant Nature
+- Whirlwind
+- Lava Plume
+- Ice Beam
+- Stone Edge
+
+Slowbro @ Kebia Berry
+Ability: Oblivious
+Level: 50
+Tera Type: Fighting
+EVs: 8 Atk / 29 Def / 21 SpA / 8 SpD
+Naughty Nature
+- Mirror Coat
+- Outrage
+
+Vivillon-Elegant (F)
+Ability: Compound Eyes
+Level: 50
+Tera Type: Dragon
+EVs: 2 HP / 32 Atk / 31 Spe
+Rash Nature
+- Topsy-Turvy
+- Heat Crash
+- Magnetic Flux
+- Hurricane
+
+Sparky (Raichu-Alola)
+Ability: Surge Surfer
+Level: 50
+Shiny: Yes
+Tera Type: Rock
+EVs: 7 HP / 7 Atk / 9 Def / 4 SpA / 3 Spe
+Adamant Nature
+- Yawn
+- Mean Look
+- Shadow Ball
+
+Alcremie-Matcha-Cream (F)
+Ability: Sweet Veil
+Level: 50
+Tera Type: Fire
+EVs: 25 HP / 9 Atk / 11 Def / 17 SpD / 2 Spe
+Mild Nature
+- Aura Wheel
+- Terrain Pulse
+- Swords Dance
+end
+team p2
+Vivillon-Polar (M) @ Binding Band
+Ability: Shield Dust
+Level: 50
+Tera Type: Fairy
+EVs: 6 HP / 10 Atk / 1 Def / 24 SpA / 9 SpD / 13 Spe
+Sassy Nature
+- Magic Room
+- Slash
+- Earthquake
+- Helping Hand
+
+Blastoise (F)
+Ability: Torrent
+Level: 50
+Tera Type: Bug
+EVs: 17 HP / 7 Def / 7 SpA / 17 SpD / 18 Spe
+Lonely Nature
+- Aura Sphere
+
+ThisNameIsFarTooLongToKeep (Aggron) (M) @ Eject Button
+Ability: Rock Head
+Level: 50
+Tera Type: Grass
+EVs: 1 HP / 17 Atk / 11 Def / 32 SpA / 1 SpD
+Quirky Nature
+- Sing
+- Leech Seed
+- Quick Guard
+
+Feraligatr (F)
+Ability: Sheer Force
+Level: 50
+Tera Type: Bug
+EVs: 19 HP / 5 Atk / 15 Def / 4 SpA / 1 SpD / 15 Spe
+Impish Nature
+- Crabhammer
+- Grassy Terrain
+- Psychic Terrain
+
+Salamence (F) @ Salamencite
+Ability: Moxie
+Level: 50
+Tera Type: Ghost
+EVs: 11 Atk / 25 SpA / 9 SpD / 21 Spe
+Hasty Nature
+- High Jump Kick
+- Worry Seed
+
+Zoë (Mr. Mime) @ Shell Bell
+Ability: Filter
+Level: 50
+Shiny: Yes
+Tera Type: Poison
+EVs: 13 Atk / 24 Def / 27 SpA / 2 SpD
+Lax Nature
+- Struggle Bug
+end
+choice p1 team 534
+choice p2 team 4,2,5
+choice p1 move 2
+choice p2 switch 3
+choice p1 move 3
+choice p2 move 1
+choice p1 switch Slowbro
+choice p2 move highjumpkick mega
+choice p1 move 2
+choice p2 move 1
+choice p1 move 1
+choice p2 switch 3
+choice p1 move 1
+choice p2 move 3
+choice p1 default
+choice p2 move 3
+choice p1 move 2
+choice p2 switch 3
+choice p2 switch blastoise
+choice p1 move 1
+choice p2 switch 3
+choice p1 move 2
+choice p2 move 1
+choice p1 move 1
+choice p2 move 2
+choice p1 switch raichu-alola
+choice p2 default
+choice p1 switch 2
+choice p2 move 3
+choice p1 move 1
+choice p2 move 3
+choice p1 move 2
+choice p2 switch blastoise
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 move Aura Sphere
+choice p1 move 2
+choice p2 move 1
+choice p1 switch 3
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 move 4
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Vivillon-Pokeball, L50, F|
+expect |poke|p1|Noivern, L50, F, shiny|
+expect |poke|p1|Slowbro, L50, F|
+expect |poke|p1|Vivillon-Elegant, L50, F|
+expect |poke|p1|Raichu-Alola, L50, F, shiny|
+expect |poke|p1|Alcremie-Matcha-Cream, L50, F|
+expect |poke|p2|Vivillon-Polar, L50, M|
+expect |poke|p2|Blastoise, L50, F|
+expect |poke|p2|Aggron, L50, M|
+expect |poke|p2|Feraligatr, L50, F|
+expect |poke|p2|Salamence, L50, F|
+expect |poke|p2|Mr. Mime, L50, M, shiny|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Sparky|Raichu-Alola, L50, F, shiny|142/142
+expect |switch|p1a: Sparky|Raichu-Alola, L50, F, shiny|100/100
+expect |split|p2
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|179/179
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Salamence|Salamence, L50, F|170/170
+expect |switch|p2a: Salamence|Salamence, L50, F|100/100
+expect |move|p1a: Sparky|Mean Look|p2a: Salamence
+expect |-activate|p2a: Salamence|trapped
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Salamence|High Jump Kick|p1a: Sparky
+expect |rng|100|82
+expect |rng|24|11
+expect |rng|16|5
+expect |-resisted|p1a: Sparky|1
+expect |split|p1
+expect |-damage|p1a: Sparky|85/142
+expect |-damage|p1a: Sparky|59/100
+expect |move|p1a: Sparky|Shadow Ball|p2a: Salamence
+expect |rng|100|52
+expect |rng|24|8
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Salamence|140/170
+expect |-damage|p2a: Salamence|82/100
+expect |rng|100|77
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Slowbro|Slowbro, L50, F|170/170
+expect |switch|p1a: Slowbro|Slowbro, L50, F|100/100
+expect |detailschange|p2a: Salamence|Salamence-Mega, L50, F
+expect |-mega|p2a: Salamence|Salamence|Salamencite
+expect |move|p2a: Salamence|High Jump Kick|p1a: Slowbro
+expect |rng|100|38
+expect |rng|24|0
+expect |rng|16|6
+expect |-resisted|p1a: Slowbro|1
+expect |-crit|p1a: Slowbro
+expect |split|p1
+expect |-damage|p1a: Slowbro|125/170
+expect |-damage|p1a: Slowbro|73/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Salamence|High Jump Kick|p1a: Slowbro
+expect |rng|100|13
+expect |rng|24|3
+expect |rng|16|0
+expect |-resisted|p1a: Slowbro|1
+expect |split|p1
+expect |-damage|p1a: Slowbro|93/170
+expect |-damage|p1a: Slowbro|54/100
+expect |move|p1a: Slowbro|Outrage|p2a: Salamence
+expect |rng|100|31
+expect |rng|24|5
+expect |rng|16|4
+expect |-supereffective|p2a: Salamence|1
+expect |split|p2
+expect |-damage|p2a: Salamence|52/170
+expect |-damage|p2a: Salamence|30/100
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|179/179
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|100/100
+expect |move|p1a: Slowbro|Outrage|p2a: Feraligatr|[from] lockedmove
+expect |rng|100|65
+expect |rng|24|23
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Feraligatr|142/179
+expect |-damage|p2a: Feraligatr|79/100
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Feraligatr|Psychic Terrain|p2a: Feraligatr
+expect |-fieldstart|move: Psychic Terrain
+expect |move|p1a: Slowbro|Outrage|p2a: Feraligatr|[from] lockedmove
+expect |rng|100|75
+expect |rng|24|0
+expect |rng|16|11
+expect |-crit|p2a: Feraligatr
+expect |split|p2
+expect |-damage|p2a: Feraligatr|86/179
+expect |-damage|p2a: Feraligatr|48/100
+expect |-start|p1a: Slowbro|confusion|[fatigue]
+expect |rng|4|1
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Feraligatr|Psychic Terrain||[still]
+expect |-fail|p2a: Feraligatr
+expect |-activate|p1a: Slowbro|confusion
+expect |rng|100|83
+expect |move|p1a: Slowbro|Mirror Coat||[still]
+expect |-fail|p1a: Slowbro
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Salamence|Salamence-Mega, L50, F|52/170
+expect |switch|p2a: Salamence|Salamence-Mega, L50, F|30/100
+expect |-activate|p1a: Slowbro|confusion
+expect |rng|100|94
+expect |move|p1a: Slowbro|Outrage|p2a: Salamence
+expect |rng|100|84
+expect |rng|24|8
+expect |rng|16|7
+expect |-supereffective|p2a: Salamence|1
+expect |split|p2
+expect |-damage|p2a: Salamence|0 fnt
+expect |-damage|p2a: Salamence|0 fnt
+expect |rng|2|0
+expect |faint|p2a: Salamence
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Blastoise|Blastoise, L50, F|171/171
+expect |switch|p2a: Blastoise|Blastoise, L50, F|100/100
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|86/179
+expect |switch|p2a: Feraligatr|Feraligatr, L50, F|48/100
+expect |-end|p1a: Slowbro|confusion
+expect |move|p1a: Slowbro|Outrage|p2a: Feraligatr|[from] lockedmove
+expect |rng|100|56
+expect |rng|24|13
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Feraligatr|47/179
+expect |-damage|p2a: Feraligatr|26/100
+expect |-start|p1a: Slowbro|confusion|[fatigue]
+expect |rng|4|2
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p2a: Feraligatr|Crabhammer|p1a: Slowbro
+expect |rng|100|55
+expect |rng|8|2
+expect |rng|16|3
+expect |-resisted|p1a: Slowbro|1
+expect |split|p1
+expect |-damage|p1a: Slowbro|67/170
+expect |-damage|p1a: Slowbro|39/100
+expect |-activate|p1a: Slowbro|confusion
+expect |rng|100|92
+expect |move|p1a: Slowbro|Outrage|p2a: Feraligatr
+expect |rng|100|74
+expect |rng|24|22
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Feraligatr|8/179
+expect |-damage|p2a: Feraligatr|4/100
+expect |rng|2|1
+expect |
+expect |-fieldend|move: Psychic Terrain
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p2a: Feraligatr|Grassy Terrain|p2a: Feraligatr
+expect |-fieldstart|move: Grassy Terrain
+expect |-activate|p1a: Slowbro|confusion
+expect |rng|100|0
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Slowbro|55/170|[from] confusion
+expect |-damage|p1a: Slowbro|32/100|[from] confusion
+expect |
+expect |split|p2
+expect |-heal|p2a: Feraligatr|19/179|[from] Grassy Terrain
+expect |-heal|p2a: Feraligatr|10/100|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1a: Slowbro|65/170|[from] Grassy Terrain
+expect |-heal|p1a: Slowbro|38/100|[from] Grassy Terrain
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sparky|Raichu-Alola, L50, F, shiny|85/142
+expect |switch|p1a: Sparky|Raichu-Alola, L50, F, shiny|59/100
+expect |move|p2a: Feraligatr|Crabhammer|p1a: Sparky
+expect |rng|100|68
+expect |rng|8|3
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Sparky|0 fnt
+expect |-damage|p1a: Sparky|0 fnt
+expect |faint|p1a: Sparky
+expect |
+expect |split|p2
+expect |-heal|p2a: Feraligatr|30/179|[from] Grassy Terrain
+expect |-heal|p2a: Feraligatr|16/100|[from] Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Slowbro|Slowbro, L50, F|65/170
+expect |switch|p1a: Slowbro|Slowbro, L50, F|38/100
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p2a: Feraligatr|Psychic Terrain|p2a: Feraligatr
+expect |-fieldstart|move: Psychic Terrain
+expect |move|p1a: Slowbro|Mirror Coat||[still]
+expect |-fail|p1a: Slowbro
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p2a: Feraligatr|Psychic Terrain||[still]
+expect |-fail|p2a: Feraligatr
+expect |move|p1a: Slowbro|Outrage|p2a: Feraligatr
+expect |rng|100|99
+expect |rng|24|13
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Feraligatr|0 fnt
+expect |-damage|p2a: Feraligatr|0 fnt
+expect |rng|2|0
+expect |faint|p2a: Feraligatr
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Blastoise|Blastoise, L50, F|171/171
+expect |switch|p2a: Blastoise|Blastoise, L50, F|100/100
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p2a: Blastoise|Aura Sphere|p1a: Slowbro
+expect |rng|24|22
+expect |rng|16|1
+expect |-resisted|p1a: Slowbro|1
+expect |split|p1
+expect |-damage|p1a: Slowbro|45/170
+expect |-damage|p1a: Slowbro|26/100
+expect |move|p1a: Slowbro|Outrage|p2a: Blastoise|[from] lockedmove
+expect |rng|100|8
+expect |rng|24|8
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Blastoise|122/171
+expect |-damage|p2a: Blastoise|71/100
+expect |-start|p1a: Slowbro|confusion|[fatigue]
+expect |rng|4|2
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p2a: Blastoise|Aura Sphere|p1a: Slowbro
+expect |rng|24|12
+expect |rng|16|15
+expect |-resisted|p1a: Slowbro|1
+expect |split|p1
+expect |-damage|p1a: Slowbro|28/170
+expect |-damage|p1a: Slowbro|16/100
+expect |-activate|p1a: Slowbro|confusion
+expect |rng|100|48
+expect |move|p1a: Slowbro|Mirror Coat|p2a: Blastoise
+expect |rng|100|93
+expect |split|p2
+expect |-damage|p2a: Blastoise|88/171
+expect |-damage|p2a: Blastoise|51/100
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p2a: Blastoise|Aura Sphere|p1a: Slowbro
+expect |rng|24|2
+expect |rng|16|15
+expect |-resisted|p1a: Slowbro|1
+expect |split|p1
+expect |-damage|p1a: Slowbro|11/170
+expect |-damage|p1a: Slowbro|6/100
+expect |-activate|p1a: Slowbro|confusion
+expect |rng|100|62
+expect |move|p1a: Slowbro|Mirror Coat|p2a: Blastoise
+expect |rng|100|20
+expect |split|p2
+expect |-damage|p2a: Blastoise|54/171
+expect |-damage|p2a: Blastoise|31/100
+expect |
+expect |-fieldend|move: Psychic Terrain
+expect |upkeep
+expect |turn|18
+expect |
+expect |t:|
+expect |move|p2a: Blastoise|Aura Sphere|p1a: Slowbro
+expect |rng|24|17
+expect |rng|16|4
+expect |-resisted|p1a: Slowbro|1
+expect |split|p1
+expect |-damage|p1a: Slowbro|0 fnt
+expect |-damage|p1a: Slowbro|0 fnt
+expect |faint|p1a: Slowbro
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, F|157/157
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, F|100/100
+expect |turn|19
+expect |
+expect |t:|
+expect |move|p1a: Vivillon|Topsy-Turvy||[still]
+expect |-fail|p1a: Vivillon
+expect |move|p2a: Blastoise|Aura Sphere|p1a: Vivillon
+expect |rng|24|3
+expect |rng|16|5
+expect |-resisted|p1a: Vivillon|2
+expect |split|p1
+expect |-damage|p1a: Vivillon|142/157
+expect |-damage|p1a: Vivillon|90/100
+expect |
+expect |upkeep
+expect |turn|20
+expect |
+expect |t:|
+expect |move|p1a: Vivillon|Hurricane|p2a: Blastoise
+expect |rng|100|39
+expect |rng|24|7
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Blastoise|0 fnt
+expect |-damage|p2a: Blastoise|0 fnt
+expect |rng|100|27
+expect |faint|p2a: Blastoise
+expect |
+expect |win|p1

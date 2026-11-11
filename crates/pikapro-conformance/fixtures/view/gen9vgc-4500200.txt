@@ -1,0 +1,716 @@
+# Recorded by view_conformance. Do not edit by hand.
+format gen9vgc
+seed 4500200
+source fuzz
+checks soundness leak meta=2
+team p1
+Makuhita
+Ability: Sheer Force
+Level: 50
+Tera Type: Steel
+EVs: 29 HP / 67 Atk / 16 Def / 236 SpA / 63 SpD / 27 Spe
+Quirky Nature
+- Soft-Boiled
+- Dive
+
+Samurott @ Iron Ball
+Ability: Torrent
+Level: 50
+Tera Type: Psychic
+EVs: 110 HP / 52 Atk / 221 Def / 18 SpA / 72 SpD / 19 Spe
+Quirky Nature
+- Jungle Healing
+- Tail Glow
+- Psychic Terrain
+
+Drifblim
+Ability: Aftermath
+Level: 50
+Tera Type: Ghost
+EVs: 19 HP / 97 Atk / 68 Def / 245 SpA / 70 SpD / 9 Spe
+Docile Nature
+- Gyro Ball
+- Drain Punch
+
+Articuno @ Leftovers
+Ability: Pressure
+Level: 50
+Tera Type: Water
+EVs: 250 HP / 86 Atk / 53 Def / 45 SpA / 17 SpD / 52 Spe
+Gentle Nature
+- Wonder Room
+- Close Combat
+
+Chomp (Typhlosion-Hisui) (M) @ Berry Sweet
+Ability: Blaze
+Level: 50
+Tera Type: Dark
+EVs: 17 HP / 194 Atk / 53 Def / 4 SpA / 198 SpD / 8 Spe
+Gentle Nature
+- Nuzzle
+- Gunk Shot
+- Fire Spin
+- Alluring Voice
+
+Sobble (M) @ Miracle Seed
+Ability: Torrent
+Level: 50
+Tera Type: Stellar
+EVs: 213 HP / 16 Atk / 96 Def / 33 SpA / 15 SpD / 110 Spe
+Lonely Nature
+- Healing Wish
+- Teeter Dance
+end
+team p2
+Gurdurr @ Absorb Bulb
+Ability: Sheer Force
+Level: 50
+Tera Type: Flying
+EVs: 9 HP / 199 Atk / 1 Def / 222 SpA / 7 SpD / 67 Spe
+Timid Nature
+- High Jump Kick
+- Shift Gear
+- Rollout
+
+Slakoth (M) @ Adamant Crystal
+Ability: Truant
+Level: 50
+Tera Type: Ghost
+EVs: 3 Atk / 202 Def / 8 SpA / 247 SpD / 50 Spe
+Adamant Nature
+- Floral Healing
+- Slack Off
+- Electro Shot
+
+Blaziken
+Ability: Speed Boost
+Level: 50
+Tera Type: Poison
+EVs: 182 HP / 1 Def / 166 SpA / 6 SpD / 155 Spe
+Bashful Nature
+- Take Heart
+- Luster Purge
+- Wide Guard
+- Forest's Curse
+
+Alcremie-Mint-Cream (F)
+Ability: Aroma Veil
+Level: 50
+Tera Type: Ice
+EVs: 13 Atk / 102 Def / 252 SpA / 141 Spe
+Naive Nature
+- Ingrain
+
+Honchkrow
+Ability: Super Luck
+Level: 50
+Tera Type: Dark
+EVs: 2 HP / 12 Atk / 132 Def / 80 SpA / 202 SpD / 43 Spe
+Jolly Nature
+- Draining Kiss
+- Retaliate
+
+Krokorok (M)
+Ability: Moxie
+Level: 50
+Tera Type: Water
+EVs: 247 Atk / 3 SpA / 76 SpD / 184 Spe
+Calm Nature
+- Mist Ball
+- Moonlight
+- Magic Powder
+end
+choice p1 team 3621
+choice p2 team 6413
+choice p1 move 2 1, move 2 terastallize
+choice p2 move 2, move 1 terastallize
+choice p1 move 1 1, move 1
+choice p2 switch 4, move 1
+choice p1 pass, switch 3
+choice p2 move 1, move 1
+choice p1 move 2 2, move 1
+choice p2 move 1, move 1
+choice p1 move 1 2, move 3
+choice p2 move 2 -2, move 1
+choice p1 switch 4, move 2
+choice p2 pass, switch 4
+choice p1 move 1, move 3
+choice p2 move 2 1, move 3 2
+choice p1 switch 4, pass
+choice p2 switch 3, move 3 -1
+choice p1 move 1 -2, move 3
+choice p2 move 2, move 3 1
+choice p1 move 2 2, move 3
+choice p2 pass, switch 3
+choice p1 move 1 1, move 2
+choice p2 move 1 -2, move 3
+choice p1 move 1 -2, move 3
+choice p2 move 3 1, move 4 2
+choice p1 move 1 -2, move 3
+choice p2 move 1, move 2 1
+choice p1 move 1 -2, move 3
+choice p2 move 1, move 2 1
+choice p1 pass, move 1
+choice p2 move 1, move 2 2
+records 17
+view p1 0 finished=false
+view p1 0 force_switch.0=false
+view p1 0 force_switch.1=false
+view p1 0 opponent_preview.0="gurdurr"
+view p1 0 opponent_preview.1="slakoth"
+view p1 0 opponent_preview.2="blaziken"
+view p1 0 opponent_preview.3="alcremiemintcream"
+view p1 0 opponent_preview.4="honchkrow"
+view p1 0 opponent_preview.5="krokorok"
+view p1 0 opponent_used_mega=false
+view p1 0 opponent_used_tera=false
+view p1 0 role="p1"
+view p1 0 team.p1: Articuno.ability="pressure"
+view p1 0 team.p1: Articuno.active=false
+view p1 0 team.p1: Articuno.fainted=false
+view p1 0 team.p1: Articuno.forme="articuno"
+view p1 0 team.p1: Articuno.gender="N"
+view p1 0 team.p1: Articuno.hp=196
+view p1 0 team.p1: Articuno.item="leftovers"
+view p1 0 team.p1: Articuno.level=50
+view p1 0 team.p1: Articuno.max_hp=196
+view p1 0 team.p1: Articuno.mega=false
+view p1 0 team.p1: Articuno.moves.0="wonderroom"
+view p1 0 team.p1: Articuno.moves.1="closecombat"
+view p1 0 team.p1: Articuno.revealed=false
+view p1 0 team.p1: Articuno.species="articuno"
+view p1 0 team.p1: Articuno.tera_type="water"
+view p1 0 team.p1: Articuno.terastallized=false
+view p1 0 team.p1: Chomp.ability="blaze"
+view p1 0 team.p1: Chomp.active=false
+view p1 0 team.p1: Chomp.fainted=false
+view p1 0 team.p1: Chomp.forme="typhlosionhisui"
+view p1 0 team.p1: Chomp.gender="M"
+view p1 0 team.p1: Chomp.hp=150
+view p1 0 team.p1: Chomp.item="berrysweet"
+view p1 0 team.p1: Chomp.level=50
+view p1 0 team.p1: Chomp.max_hp=150
+view p1 0 team.p1: Chomp.mega=false
+view p1 0 team.p1: Chomp.moves.0="nuzzle"
+view p1 0 team.p1: Chomp.moves.1="gunkshot"
+view p1 0 team.p1: Chomp.moves.2="firespin"
+view p1 0 team.p1: Chomp.moves.3="alluringvoice"
+view p1 0 team.p1: Chomp.revealed=false
+view p1 0 team.p1: Chomp.species="typhlosionhisui"
+view p1 0 team.p1: Chomp.tera_type="dark"
+view p1 0 team.p1: Chomp.terastallized=false
+view p1 0 team.p1: Drifblim.ability="aftermath"
+view p1 0 team.p1: Drifblim.active=false
+view p1 0 team.p1: Drifblim.fainted=false
+view p1 0 team.p1: Drifblim.forme="drifblim"
+view p1 0 team.p1: Drifblim.gender="M"
+view p1 0 team.p1: Drifblim.hp=227
+view p1 0 team.p1: Drifblim.level=50
+view p1 0 team.p1: Drifblim.max_hp=227
+view p1 0 team.p1: Drifblim.mega=false
+view p1 0 team.p1: Drifblim.moves.0="gyroball"
+view p1 0 team.p1: Drifblim.moves.1="drainpunch"
+view p1 0 team.p1: Drifblim.revealed=false
+view p1 0 team.p1: Drifblim.species="drifblim"
+view p1 0 team.p1: Drifblim.tera_type="ghost"
+view p1 0 team.p1: Drifblim.terastallized=false
+view p1 0 team.p1: Makuhita.ability="sheerforce"
+view p1 0 team.p1: Makuhita.active=true
+view p1 0 team.p1: Makuhita.fainted=false
+view p1 0 team.p1: Makuhita.forme="makuhita"
+view p1 0 team.p1: Makuhita.gender="M"
+view p1 0 team.p1: Makuhita.hp=151
+view p1 0 team.p1: Makuhita.level=50
+view p1 0 team.p1: Makuhita.max_hp=151
+view p1 0 team.p1: Makuhita.mega=false
+view p1 0 team.p1: Makuhita.moves.0="softboiled"
+view p1 0 team.p1: Makuhita.moves.1="dive"
+view p1 0 team.p1: Makuhita.revealed=false
+view p1 0 team.p1: Makuhita.species="makuhita"
+view p1 0 team.p1: Makuhita.tera_type="steel"
+view p1 0 team.p1: Makuhita.terastallized=false
+view p1 0 team.p1: Samurott.ability="torrent"
+view p1 0 team.p1: Samurott.active=true
+view p1 0 team.p1: Samurott.fainted=false
+view p1 0 team.p1: Samurott.forme="samurott"
+view p1 0 team.p1: Samurott.gender="M"
+view p1 0 team.p1: Samurott.hp=184
+view p1 0 team.p1: Samurott.item="ironball"
+view p1 0 team.p1: Samurott.level=50
+view p1 0 team.p1: Samurott.max_hp=184
+view p1 0 team.p1: Samurott.mega=false
+view p1 0 team.p1: Samurott.moves.0="junglehealing"
+view p1 0 team.p1: Samurott.moves.1="tailglow"
+view p1 0 team.p1: Samurott.moves.2="psychicterrain"
+view p1 0 team.p1: Samurott.revealed=false
+view p1 0 team.p1: Samurott.species="samurott"
+view p1 0 team.p1: Samurott.tera_type="psychic"
+view p1 0 team.p1: Samurott.terastallized=false
+view p1 0 team.p1: Sobble.ability="torrent"
+view p1 0 team.p1: Sobble.active=false
+view p1 0 team.p1: Sobble.fainted=false
+view p1 0 team.p1: Sobble.forme="sobble"
+view p1 0 team.p1: Sobble.gender="M"
+view p1 0 team.p1: Sobble.hp=152
+view p1 0 team.p1: Sobble.item="miracleseed"
+view p1 0 team.p1: Sobble.level=50
+view p1 0 team.p1: Sobble.max_hp=152
+view p1 0 team.p1: Sobble.mega=false
+view p1 0 team.p1: Sobble.moves.0="healingwish"
+view p1 0 team.p1: Sobble.moves.1="teeterdance"
+view p1 0 team.p1: Sobble.revealed=false
+view p1 0 team.p1: Sobble.species="sobble"
+view p1 0 team.p1: Sobble.tera_type="stellar"
+view p1 0 team.p1: Sobble.terastallized=false
+view p1 0 teampreview=true
+view p1 0 turn=0
+view p1 0 used_mega=false
+view p1 0 used_tera=false
+view p1 0 wait=false
+view p1 1 active.0="p1: Drifblim"
+view p1 1 active.1="p1: Sobble"
+view p1 1 opponent_active.0="p2: Krokorok"
+view p1 1 opponent_active.1="p2: Alcremie"
+view p1 1 opponent_team.p2: Alcremie.active=true
+view p1 1 opponent_team.p2: Alcremie.fainted=false
+view p1 1 opponent_team.p2: Alcremie.forme="alcremiemintcream"
+view p1 1 opponent_team.p2: Alcremie.gender="F"
+view p1 1 opponent_team.p2: Alcremie.hp=140
+view p1 1 opponent_team.p2: Alcremie.level=50
+view p1 1 opponent_team.p2: Alcremie.max_hp=140
+view p1 1 opponent_team.p2: Alcremie.mega=false
+view p1 1 opponent_team.p2: Alcremie.revealed=true
+view p1 1 opponent_team.p2: Alcremie.species="alcremiemintcream"
+view p1 1 opponent_team.p2: Alcremie.terastallized=false
+view p1 1 opponent_team.p2: Krokorok.active=true
+view p1 1 opponent_team.p2: Krokorok.fainted=false
+view p1 1 opponent_team.p2: Krokorok.forme="krokorok"
+view p1 1 opponent_team.p2: Krokorok.gender="M"
+view p1 1 opponent_team.p2: Krokorok.hp=135
+view p1 1 opponent_team.p2: Krokorok.level=50
+view p1 1 opponent_team.p2: Krokorok.max_hp=135
+view p1 1 opponent_team.p2: Krokorok.mega=false
+view p1 1 opponent_team.p2: Krokorok.revealed=true
+view p1 1 opponent_team.p2: Krokorok.species="krokorok"
+view p1 1 opponent_team.p2: Krokorok.terastallized=false
+view p1 1 team.p1: Drifblim.active=true
+view p1 1 team.p1: Drifblim.revealed=true
+view p1 1 team.p1: Makuhita.active=false
+view p1 1 team.p1: Samurott.active=false
+view p1 1 team.p1: Sobble.active=true
+view p1 1 team.p1: Sobble.revealed=true
+view p1 1 teampreview=false
+view p1 1 turn=1
+view p1 2 opponent_team.p2: Alcremie.moves.0="ingrain"
+view p1 2 opponent_team.p2: Alcremie.tera_type="ice"
+view p1 2 opponent_team.p2: Alcremie.terastallized=true
+view p1 2 opponent_team.p2: Krokorok.hp=23
+view p1 2 opponent_team.p2: Krokorok.moves.0="moonlight"
+view p1 2 opponent_used_tera=true
+view p1 2 team.p1: Sobble.terastallized=true
+view p1 2 turn=2
+view p1 2 used_tera=true
+view p1 3 force_switch.1=true
+view p1 3 opponent_active.0="p2: Blaziken"
+view p1 3 opponent_team.p2: Blaziken.active=true
+view p1 3 opponent_team.p2: Blaziken.fainted=false
+view p1 3 opponent_team.p2: Blaziken.forme="blaziken"
+view p1 3 opponent_team.p2: Blaziken.gender="M"
+view p1 3 opponent_team.p2: Blaziken.hp=178
+view p1 3 opponent_team.p2: Blaziken.level=50
+view p1 3 opponent_team.p2: Blaziken.max_hp=178
+view p1 3 opponent_team.p2: Blaziken.mega=false
+view p1 3 opponent_team.p2: Blaziken.revealed=true
+view p1 3 opponent_team.p2: Blaziken.species="blaziken"
+view p1 3 opponent_team.p2: Blaziken.terastallized=false
+view p1 3 opponent_team.p2: Krokorok.active=false
+view p1 3 team.p1: Drifblim.hp=199
+view p1 3 team.p1: Sobble.fainted=true
+view p1 3 team.p1: Sobble.hp=0
+view p1 3 team.p1: Sobble.status="fnt"
+drop p1 3 active.1
+view p1 4 active.1="p1: Samurott"
+view p1 4 force_switch.1=false
+view p1 4 team.p1: Samurott.active=true
+view p1 4 team.p1: Samurott.revealed=true
+view p1 4 team.p1: Sobble.active=false
+view p1 4 turn=3
+view p1 5 opponent_team.p2: Alcremie.hp=84
+view p1 5 opponent_team.p2: Blaziken.ability="speedboost"
+view p1 5 opponent_team.p2: Blaziken.boosts.spa=1
+view p1 5 opponent_team.p2: Blaziken.boosts.spd=1
+view p1 5 opponent_team.p2: Blaziken.boosts.spe=1
+view p1 5 opponent_team.p2: Blaziken.moves.0="takeheart"
+view p1 5 team.p1: Drifblim.hp=227
+view p1 5 turn=4
+view p1 6 opponent_team.p2: Alcremie.hp=92
+view p1 6 opponent_team.p2: Blaziken.boosts.spa=2
+view p1 6 opponent_team.p2: Blaziken.boosts.spd=2
+view p1 6 opponent_team.p2: Blaziken.boosts.spe=2
+view p1 6 team.p1: Drifblim.hp=199
+view p1 6 turn=5
+view p1 7 active.0="p1: Makuhita"
+view p1 7 opponent_active.1="p2: Krokorok"
+view p1 7 opponent_team.p2: Alcremie.active=false
+view p1 7 opponent_team.p2: Alcremie.fainted=true
+view p1 7 opponent_team.p2: Alcremie.hp=0
+view p1 7 opponent_team.p2: Alcremie.status="fnt"
+view p1 7 opponent_team.p2: Alcremie.terastallized=false
+view p1 7 opponent_team.p2: Blaziken.boosts.spe=3
+view p1 7 opponent_team.p2: Blaziken.moves.1="lusterpurge"
+view p1 7 opponent_team.p2: Krokorok.active=true
+view p1 7 team.p1: Drifblim.active=false
+view p1 7 team.p1: Makuhita.active=true
+view p1 7 team.p1: Makuhita.revealed=true
+view p1 7 team.p1: Samurott.boosts.spa=3
+view p1 7 turn=6
+view p1 8 force_switch.0=true
+view p1 8 opponent_team.p2: Blaziken.boosts.spe=4
+view p1 8 opponent_team.p2: Krokorok.moves.1="magicpowder"
+view p1 8 team.p1: Makuhita.fainted=true
+view p1 8 team.p1: Makuhita.hp=0
+view p1 8 team.p1: Makuhita.status="fnt"
+drop p1 8 active.0
+view p1 9 active.0="p1: Drifblim"
+view p1 9 force_switch.0=false
+view p1 9 team.p1: Drifblim.active=true
+view p1 9 team.p1: Makuhita.active=false
+view p1 9 turn=7
+view p1 10 opponent_active.0="p2: Gurdurr"
+view p1 10 opponent_team.p2: Blaziken.active=false
+view p1 10 opponent_team.p2: Gurdurr.active=true
+view p1 10 opponent_team.p2: Gurdurr.fainted=false
+view p1 10 opponent_team.p2: Gurdurr.forme="gurdurr"
+view p1 10 opponent_team.p2: Gurdurr.gender="M"
+view p1 10 opponent_team.p2: Gurdurr.hp=161
+view p1 10 opponent_team.p2: Gurdurr.level=50
+view p1 10 opponent_team.p2: Gurdurr.max_hp=161
+view p1 10 opponent_team.p2: Gurdurr.mega=false
+view p1 10 opponent_team.p2: Gurdurr.revealed=true
+view p1 10 opponent_team.p2: Gurdurr.species="gurdurr"
+view p1 10 opponent_team.p2: Gurdurr.terastallized=false
+view p1 10 team.p1: Samurott.hp=179
+view p1 10 turn=8
+drop p1 10 opponent_team.p2: Blaziken.boosts.spa
+drop p1 10 opponent_team.p2: Blaziken.boosts.spd
+drop p1 10 opponent_team.p2: Blaziken.boosts.spe
+view p1 11 opponent_active.1="p2: Blaziken"
+view p1 11 opponent_team.p2: Blaziken.active=true
+view p1 11 opponent_team.p2: Gurdurr.boosts.atk=1
+view p1 11 opponent_team.p2: Gurdurr.boosts.spe=2
+view p1 11 opponent_team.p2: Gurdurr.moves.0="shiftgear"
+view p1 11 opponent_team.p2: Krokorok.active=false
+view p1 11 opponent_team.p2: Krokorok.fainted=true
+view p1 11 opponent_team.p2: Krokorok.hp=0
+view p1 11 opponent_team.p2: Krokorok.status="fnt"
+view p1 11 team.p1: Drifblim.hp=211
+view p1 11 turn=9
+view p1 12 opponent_team.p2: Blaziken.boosts.spe=1
+view p1 12 opponent_team.p2: Blaziken.hp=50
+view p1 12 opponent_team.p2: Blaziken.moves.2="wideguard"
+view p1 12 opponent_team.p2: Gurdurr.hp=144
+view p1 12 opponent_team.p2: Gurdurr.moves.1="highjumpkick"
+view p1 12 team.p1: Samurott.boosts.spa=6
+view p1 12 turn=10
+view p1 13 opponent_team.p2: Blaziken.boosts.spe=2
+view p1 13 opponent_team.p2: Blaziken.moves.3="forestscurse"
+view p1 13 opponent_team.p2: Gurdurr.moves.2="rollout"
+view p1 13 team.p1: Drifblim.hp=178
+view p1 13 team.p1: Samurott.hp=174
+view p1 13 turn=11
+view p1 14 opponent_team.p2: Blaziken.boosts.spe=3
+view p1 14 team.p1: Drifblim.hp=59
+view p1 14 team.p1: Samurott.hp=169
+view p1 14 turn=12
+view p1 15 opponent_team.p2: Blaziken.boosts.spe=4
+view p1 15 opponent_team.p2: Gurdurr.hp=104
+view p1 15 team.p1: Drifblim.fainted=true
+view p1 15 team.p1: Drifblim.hp=0
+view p1 15 team.p1: Drifblim.status="fnt"
+view p1 15 turn=13
+drop p1 15 active.0
+view p1 16 finished=true
+view p1 16 team.p1: Samurott.fainted=true
+view p1 16 team.p1: Samurott.hp=0
+view p1 16 team.p1: Samurott.status="fnt"
+view p1 16 won=false
+drop p1 16 active.1
+drop p1 16 team.p1: Samurott.boosts.spa
+view p2 0 finished=false
+view p2 0 force_switch.0=false
+view p2 0 force_switch.1=false
+view p2 0 opponent_preview.0="makuhita"
+view p2 0 opponent_preview.1="samurott"
+view p2 0 opponent_preview.2="drifblim"
+view p2 0 opponent_preview.3="articuno"
+view p2 0 opponent_preview.4="typhlosionhisui"
+view p2 0 opponent_preview.5="sobble"
+view p2 0 opponent_used_mega=false
+view p2 0 opponent_used_tera=false
+view p2 0 role="p2"
+view p2 0 team.p2: Alcremie.ability="aromaveil"
+view p2 0 team.p2: Alcremie.active=false
+view p2 0 team.p2: Alcremie.fainted=false
+view p2 0 team.p2: Alcremie.forme="alcremiemintcream"
+view p2 0 team.p2: Alcremie.gender="F"
+view p2 0 team.p2: Alcremie.hp=140
+view p2 0 team.p2: Alcremie.level=50
+view p2 0 team.p2: Alcremie.max_hp=140
+view p2 0 team.p2: Alcremie.mega=false
+view p2 0 team.p2: Alcremie.moves.0="ingrain"
+view p2 0 team.p2: Alcremie.revealed=false
+view p2 0 team.p2: Alcremie.species="alcremiemintcream"
+view p2 0 team.p2: Alcremie.tera_type="ice"
+view p2 0 team.p2: Alcremie.terastallized=false
+view p2 0 team.p2: Blaziken.ability="speedboost"
+view p2 0 team.p2: Blaziken.active=false
+view p2 0 team.p2: Blaziken.fainted=false
+view p2 0 team.p2: Blaziken.forme="blaziken"
+view p2 0 team.p2: Blaziken.gender="M"
+view p2 0 team.p2: Blaziken.hp=178
+view p2 0 team.p2: Blaziken.level=50
+view p2 0 team.p2: Blaziken.max_hp=178
+view p2 0 team.p2: Blaziken.mega=false
+view p2 0 team.p2: Blaziken.moves.0="takeheart"
+view p2 0 team.p2: Blaziken.moves.1="lusterpurge"
+view p2 0 team.p2: Blaziken.moves.2="wideguard"
+view p2 0 team.p2: Blaziken.moves.3="forestscurse"
+view p2 0 team.p2: Blaziken.revealed=false
+view p2 0 team.p2: Blaziken.species="blaziken"
+view p2 0 team.p2: Blaziken.tera_type="poison"
+view p2 0 team.p2: Blaziken.terastallized=false
+view p2 0 team.p2: Gurdurr.ability="sheerforce"
+view p2 0 team.p2: Gurdurr.active=true
+view p2 0 team.p2: Gurdurr.fainted=false
+view p2 0 team.p2: Gurdurr.forme="gurdurr"
+view p2 0 team.p2: Gurdurr.gender="M"
+view p2 0 team.p2: Gurdurr.hp=161
+view p2 0 team.p2: Gurdurr.item="absorbbulb"
+view p2 0 team.p2: Gurdurr.level=50
+view p2 0 team.p2: Gurdurr.max_hp=161
+view p2 0 team.p2: Gurdurr.mega=false
+view p2 0 team.p2: Gurdurr.moves.0="highjumpkick"
+view p2 0 team.p2: Gurdurr.moves.1="shiftgear"
+view p2 0 team.p2: Gurdurr.moves.2="rollout"
+view p2 0 team.p2: Gurdurr.revealed=false
+view p2 0 team.p2: Gurdurr.species="gurdurr"
+view p2 0 team.p2: Gurdurr.tera_type="flying"
+view p2 0 team.p2: Gurdurr.terastallized=false
+view p2 0 team.p2: Honchkrow.ability="superluck"
+view p2 0 team.p2: Honchkrow.active=false
+view p2 0 team.p2: Honchkrow.fainted=false
+view p2 0 team.p2: Honchkrow.forme="honchkrow"
+view p2 0 team.p2: Honchkrow.gender="F"
+view p2 0 team.p2: Honchkrow.hp=175
+view p2 0 team.p2: Honchkrow.level=50
+view p2 0 team.p2: Honchkrow.max_hp=175
+view p2 0 team.p2: Honchkrow.mega=false
+view p2 0 team.p2: Honchkrow.moves.0="drainingkiss"
+view p2 0 team.p2: Honchkrow.moves.1="retaliate"
+view p2 0 team.p2: Honchkrow.revealed=false
+view p2 0 team.p2: Honchkrow.species="honchkrow"
+view p2 0 team.p2: Honchkrow.tera_type="dark"
+view p2 0 team.p2: Honchkrow.terastallized=false
+view p2 0 team.p2: Krokorok.ability="moxie"
+view p2 0 team.p2: Krokorok.active=false
+view p2 0 team.p2: Krokorok.fainted=false
+view p2 0 team.p2: Krokorok.forme="krokorok"
+view p2 0 team.p2: Krokorok.gender="M"
+view p2 0 team.p2: Krokorok.hp=135
+view p2 0 team.p2: Krokorok.level=50
+view p2 0 team.p2: Krokorok.max_hp=135
+view p2 0 team.p2: Krokorok.mega=false
+view p2 0 team.p2: Krokorok.moves.0="mistball"
+view p2 0 team.p2: Krokorok.moves.1="moonlight"
+view p2 0 team.p2: Krokorok.moves.2="magicpowder"
+view p2 0 team.p2: Krokorok.revealed=false
+view p2 0 team.p2: Krokorok.species="krokorok"
+view p2 0 team.p2: Krokorok.tera_type="water"
+view p2 0 team.p2: Krokorok.terastallized=false
+view p2 0 team.p2: Slakoth.ability="truant"
+view p2 0 team.p2: Slakoth.active=true
+view p2 0 team.p2: Slakoth.fainted=false
+view p2 0 team.p2: Slakoth.forme="slakoth"
+view p2 0 team.p2: Slakoth.gender="M"
+view p2 0 team.p2: Slakoth.hp=135
+view p2 0 team.p2: Slakoth.item="adamantcrystal"
+view p2 0 team.p2: Slakoth.level=50
+view p2 0 team.p2: Slakoth.max_hp=135
+view p2 0 team.p2: Slakoth.mega=false
+view p2 0 team.p2: Slakoth.moves.0="floralhealing"
+view p2 0 team.p2: Slakoth.moves.1="slackoff"
+view p2 0 team.p2: Slakoth.moves.2="electroshot"
+view p2 0 team.p2: Slakoth.revealed=false
+view p2 0 team.p2: Slakoth.species="slakoth"
+view p2 0 team.p2: Slakoth.tera_type="ghost"
+view p2 0 team.p2: Slakoth.terastallized=false
+view p2 0 teampreview=true
+view p2 0 turn=0
+view p2 0 used_mega=false
+view p2 0 used_tera=false
+view p2 0 wait=false
+view p2 1 active.0="p2: Krokorok"
+view p2 1 active.1="p2: Alcremie"
+view p2 1 opponent_active.0="p1: Drifblim"
+view p2 1 opponent_active.1="p1: Sobble"
+view p2 1 opponent_team.p1: Drifblim.active=true
+view p2 1 opponent_team.p1: Drifblim.fainted=false
+view p2 1 opponent_team.p1: Drifblim.forme="drifblim"
+view p2 1 opponent_team.p1: Drifblim.gender="M"
+view p2 1 opponent_team.p1: Drifblim.hp=227
+view p2 1 opponent_team.p1: Drifblim.level=50
+view p2 1 opponent_team.p1: Drifblim.max_hp=227
+view p2 1 opponent_team.p1: Drifblim.mega=false
+view p2 1 opponent_team.p1: Drifblim.revealed=true
+view p2 1 opponent_team.p1: Drifblim.species="drifblim"
+view p2 1 opponent_team.p1: Drifblim.terastallized=false
+view p2 1 opponent_team.p1: Sobble.active=true
+view p2 1 opponent_team.p1: Sobble.fainted=false
+view p2 1 opponent_team.p1: Sobble.forme="sobble"
+view p2 1 opponent_team.p1: Sobble.gender="M"
+view p2 1 opponent_team.p1: Sobble.hp=152
+view p2 1 opponent_team.p1: Sobble.level=50
+view p2 1 opponent_team.p1: Sobble.max_hp=152
+view p2 1 opponent_team.p1: Sobble.mega=false
+view p2 1 opponent_team.p1: Sobble.revealed=true
+view p2 1 opponent_team.p1: Sobble.species="sobble"
+view p2 1 opponent_team.p1: Sobble.terastallized=false
+view p2 1 team.p2: Alcremie.active=true
+view p2 1 team.p2: Alcremie.revealed=true
+view p2 1 team.p2: Gurdurr.active=false
+view p2 1 team.p2: Krokorok.active=true
+view p2 1 team.p2: Krokorok.revealed=true
+view p2 1 teampreview=false
+view p2 1 turn=1
+view p2 2 opponent_team.p1: Drifblim.moves.0="drainpunch"
+view p2 2 opponent_team.p1: Sobble.moves.0="teeterdance"
+view p2 2 opponent_team.p1: Sobble.tera_type="stellar"
+view p2 2 opponent_team.p1: Sobble.terastallized=true
+view p2 2 opponent_used_tera=true
+view p2 2 team.p2: Alcremie.terastallized=true
+view p2 2 team.p2: Krokorok.hp=23
+view p2 2 turn=2
+view p2 2 used_tera=true
+view p2 3 active.0="p2: Blaziken"
+view p2 3 opponent_team.p1: Drifblim.hp=199
+view p2 3 opponent_team.p1: Sobble.fainted=true
+view p2 3 opponent_team.p1: Sobble.hp=0
+view p2 3 opponent_team.p1: Sobble.moves.1="healingwish"
+view p2 3 opponent_team.p1: Sobble.status="fnt"
+view p2 3 opponent_team.p1: Sobble.terastallized=false
+view p2 3 team.p2: Blaziken.active=true
+view p2 3 team.p2: Blaziken.revealed=true
+view p2 3 team.p2: Krokorok.active=false
+view p2 3 wait=true
+drop p2 3 opponent_active.1
+view p2 4 opponent_active.1="p1: Samurott"
+view p2 4 opponent_team.p1: Samurott.active=true
+view p2 4 opponent_team.p1: Samurott.fainted=false
+view p2 4 opponent_team.p1: Samurott.forme="samurott"
+view p2 4 opponent_team.p1: Samurott.gender="M"
+view p2 4 opponent_team.p1: Samurott.hp=184
+view p2 4 opponent_team.p1: Samurott.level=50
+view p2 4 opponent_team.p1: Samurott.max_hp=184
+view p2 4 opponent_team.p1: Samurott.mega=false
+view p2 4 opponent_team.p1: Samurott.revealed=true
+view p2 4 opponent_team.p1: Samurott.species="samurott"
+view p2 4 opponent_team.p1: Samurott.terastallized=false
+view p2 4 opponent_team.p1: Sobble.active=false
+view p2 4 turn=3
+view p2 4 wait=false
+view p2 5 opponent_team.p1: Drifblim.hp=227
+view p2 5 opponent_team.p1: Samurott.moves.0="junglehealing"
+view p2 5 team.p2: Alcremie.hp=84
+view p2 5 team.p2: Blaziken.boosts.spa=1
+view p2 5 team.p2: Blaziken.boosts.spd=1
+view p2 5 team.p2: Blaziken.boosts.spe=1
+view p2 5 turn=4
+view p2 6 opponent_team.p1: Drifblim.hp=199
+view p2 6 opponent_team.p1: Samurott.moves.1="psychicterrain"
+view p2 6 team.p2: Alcremie.hp=92
+view p2 6 team.p2: Blaziken.boosts.spa=2
+view p2 6 team.p2: Blaziken.boosts.spd=2
+view p2 6 team.p2: Blaziken.boosts.spe=2
+view p2 6 turn=5
+view p2 7 active.1="p2: Krokorok"
+view p2 7 opponent_active.0="p1: Makuhita"
+view p2 7 opponent_team.p1: Drifblim.active=false
+view p2 7 opponent_team.p1: Makuhita.active=true
+view p2 7 opponent_team.p1: Makuhita.fainted=false
+view p2 7 opponent_team.p1: Makuhita.forme="makuhita"
+view p2 7 opponent_team.p1: Makuhita.gender="M"
+view p2 7 opponent_team.p1: Makuhita.hp=151
+view p2 7 opponent_team.p1: Makuhita.level=50
+view p2 7 opponent_team.p1: Makuhita.max_hp=151
+view p2 7 opponent_team.p1: Makuhita.mega=false
+view p2 7 opponent_team.p1: Makuhita.revealed=true
+view p2 7 opponent_team.p1: Makuhita.species="makuhita"
+view p2 7 opponent_team.p1: Makuhita.terastallized=false
+view p2 7 opponent_team.p1: Samurott.boosts.spa=3
+view p2 7 opponent_team.p1: Samurott.moves.2="tailglow"
+view p2 7 team.p2: Alcremie.active=false
+view p2 7 team.p2: Alcremie.fainted=true
+view p2 7 team.p2: Alcremie.hp=0
+view p2 7 team.p2: Alcremie.status="fnt"
+view p2 7 team.p2: Blaziken.boosts.spe=3
+view p2 7 team.p2: Krokorok.active=true
+view p2 7 turn=6
+view p2 8 opponent_team.p1: Makuhita.fainted=true
+view p2 8 opponent_team.p1: Makuhita.hp=0
+view p2 8 opponent_team.p1: Makuhita.status="fnt"
+view p2 8 team.p2: Blaziken.boosts.spe=4
+view p2 8 wait=true
+drop p2 8 opponent_active.0
+view p2 9 opponent_active.0="p1: Drifblim"
+view p2 9 opponent_team.p1: Drifblim.active=true
+view p2 9 opponent_team.p1: Makuhita.active=false
+view p2 9 turn=7
+view p2 9 wait=false
+view p2 10 active.0="p2: Gurdurr"
+view p2 10 opponent_team.p1: Drifblim.moves.1="gyroball"
+view p2 10 opponent_team.p1: Samurott.hp=179
+view p2 10 team.p2: Blaziken.active=false
+view p2 10 team.p2: Gurdurr.active=true
+view p2 10 team.p2: Gurdurr.revealed=true
+view p2 10 turn=8
+drop p2 10 team.p2: Blaziken.boosts.spa
+drop p2 10 team.p2: Blaziken.boosts.spd
+drop p2 10 team.p2: Blaziken.boosts.spe
+view p2 11 active.1="p2: Blaziken"
+view p2 11 opponent_team.p1: Drifblim.hp=211
+view p2 11 team.p2: Blaziken.active=true
+view p2 11 team.p2: Gurdurr.boosts.atk=1
+view p2 11 team.p2: Gurdurr.boosts.spe=2
+view p2 11 team.p2: Krokorok.active=false
+view p2 11 team.p2: Krokorok.fainted=true
+view p2 11 team.p2: Krokorok.hp=0
+view p2 11 team.p2: Krokorok.status="fnt"
+view p2 11 turn=9
+view p2 12 opponent_team.p1: Samurott.boosts.spa=6
+view p2 12 team.p2: Blaziken.boosts.spe=1
+view p2 12 team.p2: Blaziken.hp=50
+view p2 12 team.p2: Gurdurr.hp=144
+view p2 12 turn=10
+view p2 13 opponent_team.p1: Drifblim.hp=178
+view p2 13 opponent_team.p1: Samurott.hp=174
+view p2 13 team.p2: Blaziken.boosts.spe=2
+view p2 13 turn=11
+view p2 14 opponent_team.p1: Drifblim.hp=59
+view p2 14 opponent_team.p1: Samurott.hp=169
+view p2 14 team.p2: Blaziken.boosts.spe=3
+view p2 14 turn=12
+view p2 15 opponent_team.p1: Drifblim.ability="aftermath"
+view p2 15 opponent_team.p1: Drifblim.fainted=true
+view p2 15 opponent_team.p1: Drifblim.hp=0
+view p2 15 opponent_team.p1: Drifblim.status="fnt"
+view p2 15 team.p2: Blaziken.boosts.spe=4
+view p2 15 team.p2: Gurdurr.hp=104
+view p2 15 turn=13
+drop p2 15 opponent_active.0
+view p2 16 finished=true
+view p2 16 opponent_team.p1: Samurott.fainted=true
+view p2 16 opponent_team.p1: Samurott.hp=0
+view p2 16 opponent_team.p1: Samurott.status="fnt"
+view p2 16 won=true
+drop p2 16 opponent_active.1
+drop p2 16 opponent_team.p1: Samurott.boosts.spa

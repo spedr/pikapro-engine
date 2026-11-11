@@ -1,0 +1,471 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed ba17 7933 b64c 0f45
+genders drawn
+team p1
+Jolteon (M)
+Ability: Volt Absorb
+Level: 50
+Shiny: Yes
+Tera Type: Electric
+EVs: 1 Atk / 4 Def / 3 SpA / 32 SpD / 25 Spe
+Brave Nature
+- Double Shock
+- Baton Pass
+
+Pikachu (Vivillon-Monsoon) @ Pecha Berry
+Ability: Friend Guard
+Level: 50
+Tera Type: Electric
+EVs: 22 HP / 4 Atk / 6 Def / 17 SpA / 17 SpD
+Bold Nature
+- Crush Claw
+
+Nibbles (Slurpuff) (F)
+Ability: Sweet Veil
+Level: 50
+Tera Type: Fighting
+EVs: 20 Atk / 14 SpD / 32 Spe
+Bashful Nature
+- Substitute
+
+Starmie (F)
+Ability: Analytic
+Level: 50
+Tera Type: Rock
+EVs: 9 HP / 31 Atk / 1 Def / 1 SpA / 14 SpD / 7 Spe
+Naive Nature
+- Reflect Type
+- Soak
+- Scald
+
+Alcremie-Lemon-Cream (F) @ Oran Berry
+Ability: Aroma Veil
+Level: 50
+Tera Type: Ghost
+EVs: 22 HP / 18 Atk / 3 Def / 4 SpA / 2 SpD / 14 Spe
+Careful Nature
+- Slack Off
+- Focus Punch
+- Nuzzle
+- Imprison
+
+Meowscarada (F)
+Ability: Protean
+Level: 50
+Tera Type: Flying
+EVs: 21 HP / 20 Def / 9 SpA / 6 SpD / 9 Spe
+Quiet Nature
+- Self-Destruct
+- Tri Attack
+- Belch
+- Swords Dance
+end
+team p2
+Chomp (Oranguru)
+Ability: Inner Focus
+Level: 50
+Tera Type: Bug
+EVs: 16 HP / 15 Atk / 12 Def / 9 SpA / 1 SpD / 13 Spe
+Docile Nature
+- Instruct
+- Psychic
+
+Pikachu (Meowstic-F) @ Meowsticite
+Ability: Competitive
+Level: 50
+Tera Type: Poison
+EVs: 1 HP / 12 Atk / 12 Def / 31 SpA / 4 SpD / 5 Spe
+Relaxed Nature
+- Flame Charge
+- Poison Fang
+- Dragon Darts
+
+Zoë (Kangaskhan)
+Ability: Inner Focus
+Level: 50
+Tera Type: Fighting
+EVs: 2 HP / 17 Atk / 5 Def / 5 SpA / 4 SpD / 31 Spe
+Calm Nature
+- Flash Cannon
+- Spirit Shackle
+
+Talonflame
+Ability: Gale Wings
+Level: 50
+Tera Type: Ghost
+EVs: 5 HP / 15 Atk / 17 Def / 11 SpA / 1 SpD / 15 Spe
+Hardy Nature
+- Burn Up
+- Roost
+- Brave Bird
+
+X (Alcremie) (F) @ Shuca Berry
+Ability: Aroma Veil
+Level: 50
+Tera Type: Stellar
+EVs: 1 HP / 2 Atk / 26 Def / 8 SpA / 13 SpD / 10 Spe
+Hasty Nature
+- Poison Fang
+
+Pidgeot (M) @ Pidgeotite
+Ability: Tangled Feet
+Level: 50
+Tera Type: Rock
+EVs: 31 HP / 21 Def / 1 SpA / 10 Spe
+Hardy Nature
+- King's Shield
+- Strength Sap
+end
+choice p1 team 2361
+choice p2 team 5264
+choice p1 move 1 1, move 1
+choice p2 move 1 1, move 2 1
+choice p1 move 1 2, switch 4
+choice p2 switch 3 ,  switch Talonflame
+choice p1 switch slurpuff,move 1 -1
+choice p2 move 2 -2 mega, move 3 1
+choice p1 switch 4, pass
+choice p2 move strengthsap -2 ,  move Burn Up 2
+choice p1 move 1 -2, move 1 1
+choice p2 move 1, move 3 1
+choice p1 move 1 1, switch 3
+choice p2 move 1, move 3 1
+choice p1 move 1 1, switch 3
+choice p1 switch 3, pass
+choice p2 move 2 2, move 3 1
+choice p1 move 3 2,move 1 1
+choice p2 move 2 1, move 3 2
+choice p1 move 1, move 1 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Jolteon, L50, M, shiny|
+expect |poke|p1|Vivillon-Monsoon, L50, F|
+expect |poke|p1|Slurpuff, L50, F|
+expect |poke|p1|Starmie, L50, F|
+expect |poke|p1|Alcremie-Lemon-Cream, L50, F|
+expect |poke|p1|Meowscarada, L50, F|
+expect |poke|p2|Oranguru, L50, M|
+expect |poke|p2|Meowstic-F, L50, F|
+expect |poke|p2|Kangaskhan, L50, F|
+expect |poke|p2|Talonflame, L50, M|
+expect |poke|p2|Alcremie, L50, F|
+expect |poke|p2|Pidgeot, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Pikachu|Vivillon-Monsoon, L50, F|177/177
+expect |switch|p1a: Pikachu|Vivillon-Monsoon, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Nibbles|Slurpuff, L50, F|157/157
+expect |switch|p1b: Nibbles|Slurpuff, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: X|Alcremie, L50, F|141/141
+expect |switch|p2a: X|Alcremie, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Pikachu|Meowstic-F, L50, F|150/150
+expect |switch|p2b: Pikachu|Meowstic-F, L50, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Substitute|p1b: Nibbles
+expect |-start|p1b: Nibbles|Substitute
+expect |split|p1
+expect |-damage|p1b: Nibbles|118/157
+expect |-damage|p1b: Nibbles|75/100
+expect |move|p2b: Pikachu|Poison Fang|p1a: Pikachu
+expect |rng|100|83
+expect |rng|24|16
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Pikachu|156/177
+expect |-damage|p1a: Pikachu|88/100
+expect |rng|100|6
+expect |-status|p1a: Pikachu|tox
+expect |-enditem|p1a: Pikachu|Pecha Berry|[eat]
+expect |-curestatus|p1a: Pikachu|tox|[msg]
+expect |move|p1a: Pikachu|Crush Claw|p2a: X
+expect |rng|100|64
+expect |rng|24|3
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: X|121/141
+expect |-damage|p2a: X|85/100
+expect |rng|100|53
+expect |move|p2a: X|Poison Fang|p1a: Pikachu
+expect |rng|100|56
+expect |rng|24|16
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Pikachu|136/177
+expect |-damage|p1a: Pikachu|76/100
+expect |rng|100|69
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Jolteon|Jolteon, L50, M, shiny|140/140
+expect |switch|p1b: Jolteon|Jolteon, L50, M, shiny|100/100
+expect |split|p2
+expect |switch|p2b: Talonflame|Talonflame, L50, M|158/158
+expect |switch|p2b: Talonflame|Talonflame, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Pidgeot|Pidgeot, L50, M|189/189
+expect |switch|p2a: Pidgeot|Pidgeot, L50, M|100/100
+expect |move|p1a: Pikachu|Crush Claw|p2b: Talonflame
+expect |rng|100|85
+expect |rng|24|21
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Talonflame|139/158
+expect |-damage|p2b: Talonflame|87/100
+expect |rng|100|99
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Nibbles|Slurpuff, L50, F|118/157
+expect |switch|p1a: Nibbles|Slurpuff, L50, F|75/100
+expect |detailschange|p2a: Pidgeot|Pidgeot-Mega, L50, M
+expect |-mega|p2a: Pidgeot|Pidgeot|Pidgeotite
+expect |move|p2b: Talonflame|Brave Bird|p1a: Nibbles
+expect |rng|100|23
+expect |rng|24|5
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Nibbles|33/157
+expect |-damage|p1a: Nibbles|21/100
+expect |split|p2
+expect |-damage|p2b: Talonflame|111/158|[from] Recoil
+expect |-damage|p2b: Talonflame|70/100|[from] Recoil
+expect |move|p1b: Jolteon|Double Shock|p1a: Nibbles
+expect |rng|100|90
+expect |rng|24|22
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Nibbles|0 fnt
+expect |-damage|p1a: Nibbles|0 fnt
+expect |-start|p1b: Jolteon|typechange|???|[from] move: Double Shock
+expect |faint|p1a: Nibbles
+expect |move|p2a: Pidgeot|Strength Sap|p2b: Talonflame
+expect |-unboost|p2b: Talonflame|atk|1
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Vivillon-Monsoon, L50, F|136/177
+expect |switch|p1a: Pikachu|Vivillon-Monsoon, L50, F|76/100
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2b: Talonflame|Burn Up|p1b: Jolteon
+expect |rng|100|66
+expect |rng|24|20
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Jolteon|97/140
+expect |-damage|p1b: Jolteon|69/100
+expect |-start|p2b: Talonflame|typechange|???/Flying|[from] move: Burn Up
+expect |move|p1b: Jolteon|Double Shock||[still]
+expect |-fail|p1b: Jolteon|move: Double Shock
+expect |move|p2a: Pidgeot|Strength Sap|p2b: Talonflame
+expect |-unboost|p2b: Talonflame|atk|1
+expect |move|p1a: Pikachu|Crush Claw|p1b: Jolteon
+expect |rng|100|68
+expect |rng|24|0
+expect |rng|16|0
+expect |-crit|p1b: Jolteon
+expect |split|p1
+expect |-damage|p1b: Jolteon|66/140
+expect |-damage|p1b: Jolteon|47/100
+expect |rng|100|81
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Meowscarada|Meowscarada, L50, F|172/172
+expect |switch|p1b: Meowscarada|Meowscarada, L50, F|100/100
+expect |move|p2a: Pidgeot|King's Shield|p2a: Pidgeot
+expect |-singleturn|p2a: Pidgeot|Protect
+expect |move|p2b: Talonflame|Brave Bird|p1a: Pikachu
+expect |rng|100|28
+expect |rng|24|4
+expect |rng|16|1
+expect |-supereffective|p1a: Pikachu|1
+expect |split|p1
+expect |-damage|p1a: Pikachu|26/177
+expect |-damage|p1a: Pikachu|14/100
+expect |split|p2
+expect |-damage|p2b: Talonflame|75/158|[from] Recoil
+expect |-damage|p2b: Talonflame|47/100|[from] Recoil
+expect |move|p1a: Pikachu|Crush Claw|p2a: Pidgeot
+expect |-activate|p2a: Pidgeot|move: Protect
+expect |-unboost|p1a: Pikachu|atk|1
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Jolteon|Jolteon, L50, M, shiny|66/140
+expect |switch|p1b: Jolteon|Jolteon, L50, M, shiny|47/100
+expect |move|p2a: Pidgeot|King's Shield||[still]
+expect |rng|3|2
+expect |-fail|p2a: Pidgeot
+expect |move|p2b: Talonflame|Brave Bird|p1a: Pikachu
+expect |rng|100|43
+expect |rng|24|19
+expect |rng|16|1
+expect |-supereffective|p1a: Pikachu|1
+expect |split|p1
+expect |-damage|p1a: Pikachu|0 fnt
+expect |-damage|p1a: Pikachu|0 fnt
+expect |faint|p1a: Pikachu
+expect |split|p2
+expect |-damage|p2b: Talonflame|66/158|[from] Recoil
+expect |-damage|p2b: Talonflame|41/100|[from] Recoil
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Meowscarada|Meowscarada, L50, F|172/172
+expect |switch|p1a: Meowscarada|Meowscarada, L50, F|100/100
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2b: Talonflame|Brave Bird|p1a: Meowscarada
+expect |rng|100|39
+expect |rng|24|18
+expect |rng|16|2
+expect |-supereffective|p1a: Meowscarada|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|88/172
+expect |-damage|p1a: Meowscarada|51/100
+expect |split|p2
+expect |-damage|p2b: Talonflame|38/158|[from] Recoil
+expect |-damage|p2b: Talonflame|24/100|[from] Recoil
+expect |move|p1b: Jolteon|Double Shock|p2a: Pidgeot
+expect |rng|24|5
+expect |rng|16|8
+expect |-supereffective|p2a: Pidgeot|1
+expect |split|p2
+expect |-damage|p2a: Pidgeot|73/189
+expect |-damage|p2a: Pidgeot|38/100
+expect |-start|p1b: Jolteon|typechange|???|[from] move: Double Shock
+expect |move|p2a: Pidgeot|Strength Sap|p1b: Jolteon
+expect |-unboost|p1b: Jolteon|atk|1
+expect |split|p2
+expect |-heal|p2a: Pidgeot|167/189
+expect |-heal|p2a: Pidgeot|88/100
+expect |move|p1a: Meowscarada|Belch||[still]
+expect |-fail|p1a: Meowscarada
+expect |
+expect |upkeep
+expect |turn|8
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2b: Talonflame|Brave Bird|p1b: Jolteon
+expect |rng|100|56
+expect |rng|24|7
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Jolteon|15/140
+expect |-damage|p1b: Jolteon|10/100
+expect |split|p2
+expect |-damage|p2b: Talonflame|21/158|[from] Recoil
+expect |-damage|p2b: Talonflame|13/100|[from] Recoil
+expect |rng|2|0
+expect |move|p1b: Jolteon|Double Shock||[still]
+expect |-fail|p1b: Jolteon|move: Double Shock
+expect |rng|2|0
+expect |move|p2a: Pidgeot|Strength Sap|p1a: Meowscarada
+expect |-unboost|p1a: Meowscarada|atk|1
+expect |split|p2
+expect |-heal|p2a: Pidgeot|189/189
+expect |-heal|p2a: Pidgeot|100/100
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Meowscarada|Self-Destruct|p2a: Pidgeot|[spread] p1b,p2a,p2b
+expect |-start|p1a: Meowscarada|typechange|Normal|[from] ability: Protean
+expect |rng|100|68
+expect |rng|100|40
+expect |rng|24|12
+expect |rng|16|14
+expect |rng|24|8
+expect |rng|16|4
+expect |rng|24|11
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Jolteon|0 fnt
+expect |-damage|p1b: Jolteon|0 fnt
+expect |split|p2
+expect |-damage|p2a: Pidgeot|120/189
+expect |-damage|p2a: Pidgeot|63/100
+expect |split|p2
+expect |-damage|p2b: Talonflame|0 fnt
+expect |-damage|p2b: Talonflame|0 fnt
+expect |faint|p1a: Meowscarada
+expect |faint|p1b: Jolteon
+expect |faint|p2b: Talonflame
+expect |
+expect |win|p2
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Jolteon","details":"Jolteon, L50, M, shiny","condition":"140/140","active":true,"stats":{"atk":94,"def":84,"spa":133,"spd":147,"spe":157},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Vivillon-Monsoon, L50, F","condition":"177/177","active":true,"stats":{"atk":68,"def":83,"spa":127,"spd":87,"spe":109},"moves":["crushclaw"],"baseAbility":"friendguard","item":"pechaberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Slurpuff, L50, F","condition":"157/157","active":false,"stats":{"atk":120,"def":106,"spa":105,"spd":109,"spe":124},"moves":["substitute"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p1: Starmie","details":"Starmie, L50, F","condition":"144/144","active":false,"stats":{"atk":126,"def":106,"spa":121,"spd":107,"spe":156},"moves":["reflecttype","soak","scald"],"baseAbility":"analytic","item":"","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false},{"ident":"p1: Alcremie","details":"Alcremie-Lemon-Cream, L50, F","condition":"162/162","active":false,"stats":{"atk":98,"def":98,"spa":120,"spd":157,"spe":98},"moves":["slackoff","focuspunch","nuzzle","imprison"],"baseAbility":"aromaveil","item":"oranberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"172/172","active":false,"stats":{"atk":130,"def":110,"spa":121,"spd":96,"spe":136},"moves":["selfdestruct","triattack","belch","swordsdance"],"baseAbility":"protean","item":"","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Oranguru, L50, M","condition":"181/181","active":true,"stats":{"atk":95,"def":112,"spa":119,"spd":131,"spe":93},"moves":["instruct","psychic"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Meowstic-F, L50, F","condition":"150/150","active":true,"stats":{"atk":80,"def":118,"spa":134,"spd":105,"spe":116},"moves":["flamecharge","poisonfang","dragondarts"],"baseAbility":"competitive","item":"meowsticite","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Zoë","details":"Kangaskhan, L50, F","condition":"182/182","active":false,"stats":{"atk":118,"def":105,"spa":65,"spd":114,"spe":141},"moves":["flashcannon","spiritshackle"],"baseAbility":"innerfocus","item":"","pokeball":"pokeball","ability":"innerfocus","commanding":false,"reviving":false},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"158/158","active":false,"stats":{"atk":116,"def":108,"spa":105,"spd":90,"spe":161},"moves":["burnup","roost","bravebird"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false},{"ident":"p2: X","details":"Alcremie, L50, F","condition":"141/141","active":false,"stats":{"atk":82,"def":108,"spa":138,"spd":154,"spe":103},"moves":["poisonfang"],"baseAbility":"aromaveil","item":"shucaberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"189/189","active":false,"stats":{"atk":100,"def":116,"spa":91,"spd":90,"spe":131},"moves":["kingsshield","strengthsap"],"baseAbility":"tangledfeet","item":"pidgeotite","pokeball":"pokeball","ability":"tangledfeet","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Crush Claw","id":"crushclaw","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Substitute","id":"substitute","pp":12,"maxpp":12,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Vivillon-Monsoon, L50, F","condition":"177/177","active":true,"stats":{"atk":68,"def":83,"spa":127,"spd":87,"spe":109},"moves":["crushclaw"],"baseAbility":"friendguard","item":"pechaberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Slurpuff, L50, F","condition":"157/157","active":true,"stats":{"atk":120,"def":106,"spa":105,"spd":109,"spe":124},"moves":["substitute"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"172/172","active":false,"stats":{"atk":130,"def":110,"spa":121,"spd":96,"spe":136},"moves":["selfdestruct","triattack","belch","swordsdance"],"baseAbility":"protean","item":"","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false},{"ident":"p1: Jolteon","details":"Jolteon, L50, M, shiny","condition":"140/140","active":false,"stats":{"atk":94,"def":84,"spa":133,"spd":147,"spe":157},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Poison Fang","id":"poisonfang","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Poison Fang","id":"poisonfang","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dragon Darts","id":"dragondarts","pp":12,"maxpp":12,"target":"normal","disabled":false}],"canMegaEvo":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Alcremie, L50, F","condition":"141/141","active":true,"stats":{"atk":82,"def":108,"spa":138,"spd":154,"spe":103},"moves":["poisonfang"],"baseAbility":"aromaveil","item":"shucaberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Meowstic-F, L50, F","condition":"150/150","active":true,"stats":{"atk":80,"def":118,"spa":134,"spd":105,"spe":116},"moves":["flamecharge","poisonfang","dragondarts"],"baseAbility":"competitive","item":"meowsticite","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"189/189","active":false,"stats":{"atk":100,"def":116,"spa":91,"spd":90,"spe":131},"moves":["kingsshield","strengthsap"],"baseAbility":"tangledfeet","item":"pidgeotite","pokeball":"pokeball","ability":"tangledfeet","commanding":false,"reviving":false},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"158/158","active":false,"stats":{"atk":116,"def":108,"spa":105,"spd":90,"spe":161},"moves":["burnup","roost","bravebird"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Crush Claw","id":"crushclaw","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Substitute","id":"substitute","pp":11,"maxpp":12,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Vivillon-Monsoon, L50, F","condition":"136/177","active":true,"stats":{"atk":68,"def":83,"spa":127,"spd":87,"spe":109},"moves":["crushclaw"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Slurpuff, L50, F","condition":"118/157","active":true,"stats":{"atk":120,"def":106,"spa":105,"spd":109,"spe":124},"moves":["substitute"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"172/172","active":false,"stats":{"atk":130,"def":110,"spa":121,"spd":96,"spe":136},"moves":["selfdestruct","triattack","belch","swordsdance"],"baseAbility":"protean","item":"","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false},{"ident":"p1: Jolteon","details":"Jolteon, L50, M, shiny","condition":"140/140","active":false,"stats":{"atk":94,"def":84,"spa":133,"spd":147,"spe":157},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Poison Fang","id":"poisonfang","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Poison Fang","id":"poisonfang","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Dragon Darts","id":"dragondarts","pp":12,"maxpp":12,"target":"normal","disabled":false}],"canMegaEvo":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Alcremie, L50, F","condition":"121/141","active":true,"stats":{"atk":82,"def":108,"spa":138,"spd":154,"spe":103},"moves":["poisonfang"],"baseAbility":"aromaveil","item":"shucaberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Meowstic-F, L50, F","condition":"150/150","active":true,"stats":{"atk":80,"def":118,"spa":134,"spd":105,"spe":116},"moves":["flamecharge","poisonfang","dragondarts"],"baseAbility":"competitive","item":"meowsticite","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"189/189","active":false,"stats":{"atk":100,"def":116,"spa":91,"spd":90,"spe":131},"moves":["kingsshield","strengthsap"],"baseAbility":"tangledfeet","item":"pidgeotite","pokeball":"pokeball","ability":"tangledfeet","commanding":false,"reviving":false},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"158/158","active":false,"stats":{"atk":116,"def":108,"spa":105,"spd":90,"spe":161},"moves":["burnup","roost","bravebird"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Crush Claw","id":"crushclaw","pp":10,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Vivillon-Monsoon, L50, F","condition":"136/177","active":true,"stats":{"atk":68,"def":83,"spa":127,"spd":87,"spe":109},"moves":["crushclaw"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Jolteon","details":"Jolteon, L50, M, shiny","condition":"140/140","active":true,"stats":{"atk":94,"def":84,"spa":133,"spd":147,"spe":157},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"172/172","active":false,"stats":{"atk":130,"def":110,"spa":121,"spd":96,"spe":136},"moves":["selfdestruct","triattack","belch","swordsdance"],"baseAbility":"protean","item":"","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Slurpuff, L50, F","condition":"118/157","active":false,"stats":{"atk":120,"def":106,"spa":105,"spd":109,"spe":124},"moves":["substitute"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"King's Shield","id":"kingsshield","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Strength Sap","id":"strengthsap","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Brave Bird","id":"bravebird","pp":16,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"189/189","active":true,"stats":{"atk":100,"def":116,"spa":91,"spd":90,"spe":131},"moves":["kingsshield","strengthsap"],"baseAbility":"tangledfeet","item":"pidgeotite","pokeball":"pokeball","ability":"tangledfeet","commanding":false,"reviving":false},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"139/158","active":true,"stats":{"atk":116,"def":108,"spa":105,"spd":90,"spe":161},"moves":["burnup","roost","bravebird"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false},{"ident":"p2: X","details":"Alcremie, L50, F","condition":"121/141","active":false,"stats":{"atk":82,"def":108,"spa":138,"spd":154,"spe":103},"moves":["poisonfang"],"baseAbility":"aromaveil","item":"shucaberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Meowstic-F, L50, F","condition":"150/150","active":false,"stats":{"atk":80,"def":118,"spa":134,"spd":105,"spe":116},"moves":["flamecharge","poisonfang","dragondarts"],"baseAbility":"competitive","item":"meowsticite","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Slurpuff, L50, F","condition":"0 fnt","active":true,"stats":{"atk":120,"def":106,"spa":105,"spd":109,"spe":124},"moves":["substitute"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p1: Jolteon","details":"Jolteon, L50, M, shiny","condition":"140/140","active":true,"stats":{"atk":94,"def":84,"spa":133,"spd":147,"spe":157},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"172/172","active":false,"stats":{"atk":130,"def":110,"spa":121,"spd":96,"spe":136},"moves":["selfdestruct","triattack","belch","swordsdance"],"baseAbility":"protean","item":"","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Vivillon-Monsoon, L50, F","condition":"136/177","active":false,"stats":{"atk":68,"def":83,"spa":127,"spd":87,"spe":109},"moves":["crushclaw"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pidgeot","details":"Pidgeot-Mega, L50, M","condition":"189/189","active":true,"stats":{"atk":100,"def":121,"spa":156,"spd":100,"spe":151},"moves":["kingsshield","strengthsap"],"baseAbility":"noguard","item":"pidgeotite","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"111/158","active":true,"stats":{"atk":116,"def":108,"spa":105,"spd":90,"spe":161},"moves":["burnup","roost","bravebird"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false},{"ident":"p2: X","details":"Alcremie, L50, F","condition":"121/141","active":false,"stats":{"atk":82,"def":108,"spa":138,"spd":154,"spe":103},"moves":["poisonfang"],"baseAbility":"aromaveil","item":"shucaberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Meowstic-F, L50, F","condition":"150/150","active":false,"stats":{"atk":80,"def":118,"spa":134,"spd":105,"spe":116},"moves":["flamecharge","poisonfang","dragondarts"],"baseAbility":"competitive","item":"meowsticite","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Crush Claw","id":"crushclaw","pp":10,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Double Shock","id":"doubleshock","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Vivillon-Monsoon, L50, F","condition":"136/177","active":true,"stats":{"atk":68,"def":83,"spa":127,"spd":87,"spe":109},"moves":["crushclaw"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Jolteon","details":"Jolteon, L50, M, shiny","condition":"140/140","active":true,"stats":{"atk":94,"def":84,"spa":133,"spd":147,"spe":157},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"172/172","active":false,"stats":{"atk":130,"def":110,"spa":121,"spd":96,"spe":136},"moves":["selfdestruct","triattack","belch","swordsdance"],"baseAbility":"protean","item":"","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":120,"def":106,"spa":105,"spd":109,"spe":124},"moves":["substitute"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"King's Shield","id":"kingsshield","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Strength Sap","id":"strengthsap","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Brave Bird","id":"bravebird","pp":15,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pidgeot","details":"Pidgeot-Mega, L50, M","condition":"189/189","active":true,"stats":{"atk":100,"def":121,"spa":156,"spd":100,"spe":151},"moves":["kingsshield","strengthsap"],"baseAbility":"noguard","item":"pidgeotite","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"111/158","active":true,"stats":{"atk":116,"def":108,"spa":105,"spd":90,"spe":161},"moves":["burnup","roost","bravebird"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false},{"ident":"p2: X","details":"Alcremie, L50, F","condition":"121/141","active":false,"stats":{"atk":82,"def":108,"spa":138,"spd":154,"spe":103},"moves":["poisonfang"],"baseAbility":"aromaveil","item":"shucaberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Meowstic-F, L50, F","condition":"150/150","active":false,"stats":{"atk":80,"def":118,"spa":134,"spd":105,"spe":116},"moves":["flamecharge","poisonfang","dragondarts"],"baseAbility":"competitive","item":"meowsticite","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Crush Claw","id":"crushclaw","pp":9,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Double Shock","id":"doubleshock","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Vivillon-Monsoon, L50, F","condition":"136/177","active":true,"stats":{"atk":68,"def":83,"spa":127,"spd":87,"spe":109},"moves":["crushclaw"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Jolteon","details":"Jolteon, L50, M, shiny","condition":"66/140","active":true,"stats":{"atk":94,"def":84,"spa":133,"spd":147,"spe":157},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"172/172","active":false,"stats":{"atk":130,"def":110,"spa":121,"spd":96,"spe":136},"moves":["selfdestruct","triattack","belch","swordsdance"],"baseAbility":"protean","item":"","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":120,"def":106,"spa":105,"spd":109,"spe":124},"moves":["substitute"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"King's Shield","id":"kingsshield","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Strength Sap","id":"strengthsap","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Brave Bird","id":"bravebird","pp":15,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pidgeot","details":"Pidgeot-Mega, L50, M","condition":"189/189","active":true,"stats":{"atk":100,"def":121,"spa":156,"spd":100,"spe":151},"moves":["kingsshield","strengthsap"],"baseAbility":"noguard","item":"pidgeotite","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"111/158","active":true,"stats":{"atk":116,"def":108,"spa":105,"spd":90,"spe":161},"moves":["burnup","roost","bravebird"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false},{"ident":"p2: X","details":"Alcremie, L50, F","condition":"121/141","active":false,"stats":{"atk":82,"def":108,"spa":138,"spd":154,"spe":103},"moves":["poisonfang"],"baseAbility":"aromaveil","item":"shucaberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Meowstic-F, L50, F","condition":"150/150","active":false,"stats":{"atk":80,"def":118,"spa":134,"spd":105,"spe":116},"moves":["flamecharge","poisonfang","dragondarts"],"baseAbility":"competitive","item":"meowsticite","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Crush Claw","id":"crushclaw","pp":8,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false},{"move":"Tri Attack","id":"triattack","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Belch","id":"belch","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Swords Dance","id":"swordsdance","pp":20,"maxpp":20,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Vivillon-Monsoon, L50, F","condition":"26/177","active":true,"stats":{"atk":68,"def":83,"spa":127,"spd":87,"spe":109},"moves":["crushclaw"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"172/172","active":true,"stats":{"atk":130,"def":110,"spa":121,"spd":96,"spe":136},"moves":["selfdestruct","triattack","belch","swordsdance"],"baseAbility":"protean","item":"","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false},{"ident":"p1: Jolteon","details":"Jolteon, L50, M, shiny","condition":"66/140","active":false,"stats":{"atk":94,"def":84,"spa":133,"spd":147,"spe":157},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":120,"def":106,"spa":105,"spd":109,"spe":124},"moves":["substitute"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"King's Shield","id":"kingsshield","pp":7,"maxpp":8,"target":"self","disabled":false},{"move":"Strength Sap","id":"strengthsap","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Brave Bird","id":"bravebird","pp":14,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pidgeot","details":"Pidgeot-Mega, L50, M","condition":"189/189","active":true,"stats":{"atk":100,"def":121,"spa":156,"spd":100,"spe":151},"moves":["kingsshield","strengthsap"],"baseAbility":"noguard","item":"pidgeotite","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"75/158","active":true,"stats":{"atk":116,"def":108,"spa":105,"spd":90,"spe":161},"moves":["burnup","roost","bravebird"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false},{"ident":"p2: X","details":"Alcremie, L50, F","condition":"121/141","active":false,"stats":{"atk":82,"def":108,"spa":138,"spd":154,"spe":103},"moves":["poisonfang"],"baseAbility":"aromaveil","item":"shucaberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Meowstic-F, L50, F","condition":"150/150","active":false,"stats":{"atk":80,"def":118,"spa":134,"spd":105,"spe":116},"moves":["flamecharge","poisonfang","dragondarts"],"baseAbility":"competitive","item":"meowsticite","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Vivillon-Monsoon, L50, F","condition":"0 fnt","active":true,"stats":{"atk":68,"def":83,"spa":127,"spd":87,"spe":109},"moves":["crushclaw"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Jolteon","details":"Jolteon, L50, M, shiny","condition":"66/140","active":true,"stats":{"atk":94,"def":84,"spa":133,"spd":147,"spe":157},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"172/172","active":false,"stats":{"atk":130,"def":110,"spa":121,"spd":96,"spe":136},"moves":["selfdestruct","triattack","belch","swordsdance"],"baseAbility":"protean","item":"","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":120,"def":106,"spa":105,"spd":109,"spe":124},"moves":["substitute"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pidgeot","details":"Pidgeot-Mega, L50, M","condition":"189/189","active":true,"stats":{"atk":100,"def":121,"spa":156,"spd":100,"spe":151},"moves":["kingsshield","strengthsap"],"baseAbility":"noguard","item":"pidgeotite","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"66/158","active":true,"stats":{"atk":116,"def":108,"spa":105,"spd":90,"spe":161},"moves":["burnup","roost","bravebird"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false},{"ident":"p2: X","details":"Alcremie, L50, F","condition":"121/141","active":false,"stats":{"atk":82,"def":108,"spa":138,"spd":154,"spe":103},"moves":["poisonfang"],"baseAbility":"aromaveil","item":"shucaberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Meowstic-F, L50, F","condition":"150/150","active":false,"stats":{"atk":80,"def":118,"spa":134,"spd":105,"spe":116},"moves":["flamecharge","poisonfang","dragondarts"],"baseAbility":"competitive","item":"meowsticite","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false},{"move":"Tri Attack","id":"triattack","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Belch","id":"belch","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Swords Dance","id":"swordsdance","pp":20,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Double Shock","id":"doubleshock","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"172/172","active":true,"stats":{"atk":130,"def":110,"spa":121,"spd":96,"spe":136},"moves":["selfdestruct","triattack","belch","swordsdance"],"baseAbility":"protean","item":"","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false},{"ident":"p1: Jolteon","details":"Jolteon, L50, M, shiny","condition":"66/140","active":true,"stats":{"atk":94,"def":84,"spa":133,"spd":147,"spe":157},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Vivillon-Monsoon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":68,"def":83,"spa":127,"spd":87,"spe":109},"moves":["crushclaw"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":120,"def":106,"spa":105,"spd":109,"spe":124},"moves":["substitute"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"King's Shield","id":"kingsshield","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"Strength Sap","id":"strengthsap","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Brave Bird","id":"bravebird","pp":13,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pidgeot","details":"Pidgeot-Mega, L50, M","condition":"189/189","active":true,"stats":{"atk":100,"def":121,"spa":156,"spd":100,"spe":151},"moves":["kingsshield","strengthsap"],"baseAbility":"noguard","item":"pidgeotite","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"66/158","active":true,"stats":{"atk":116,"def":108,"spa":105,"spd":90,"spe":161},"moves":["burnup","roost","bravebird"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false},{"ident":"p2: X","details":"Alcremie, L50, F","condition":"121/141","active":false,"stats":{"atk":82,"def":108,"spa":138,"spd":154,"spe":103},"moves":["poisonfang"],"baseAbility":"aromaveil","item":"shucaberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Meowstic-F, L50, F","condition":"150/150","active":false,"stats":{"atk":80,"def":118,"spa":134,"spd":105,"spe":116},"moves":["flamecharge","poisonfang","dragondarts"],"baseAbility":"competitive","item":"meowsticite","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false},{"move":"Tri Attack","id":"triattack","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Belch","id":"belch","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Swords Dance","id":"swordsdance","pp":20,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Double Shock","id":"doubleshock","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Baton Pass","id":"batonpass","pp":20,"maxpp":20,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"88/172","active":true,"stats":{"atk":130,"def":110,"spa":121,"spd":96,"spe":136},"moves":["selfdestruct","triattack","belch","swordsdance"],"baseAbility":"protean","item":"","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false},{"ident":"p1: Jolteon","details":"Jolteon, L50, M, shiny","condition":"66/140","active":true,"stats":{"atk":94,"def":84,"spa":133,"spd":147,"spe":157},"moves":["doubleshock","batonpass"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Vivillon-Monsoon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":68,"def":83,"spa":127,"spd":87,"spe":109},"moves":["crushclaw"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":120,"def":106,"spa":105,"spd":109,"spe":124},"moves":["substitute"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"King's Shield","id":"kingsshield","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"Strength Sap","id":"strengthsap","pp":5,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Brave Bird","id":"bravebird","pp":12,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pidgeot","details":"Pidgeot-Mega, L50, M","condition":"167/189","active":true,"stats":{"atk":100,"def":121,"spa":156,"spd":100,"spe":151},"moves":["kingsshield","strengthsap"],"baseAbility":"noguard","item":"pidgeotite","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"38/158","active":true,"stats":{"atk":116,"def":108,"spa":105,"spd":90,"spe":161},"moves":["burnup","roost","bravebird"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false},{"ident":"p2: X","details":"Alcremie, L50, F","condition":"121/141","active":false,"stats":{"atk":82,"def":108,"spa":138,"spd":154,"spe":103},"moves":["poisonfang"],"baseAbility":"aromaveil","item":"shucaberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Meowstic-F, L50, F","condition":"150/150","active":false,"stats":{"atk":80,"def":118,"spa":134,"spd":105,"spe":116},"moves":["flamecharge","poisonfang","dragondarts"],"baseAbility":"competitive","item":"meowsticite","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}

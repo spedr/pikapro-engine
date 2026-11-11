@@ -1,0 +1,25 @@
+[package]
+name = "pikapro-cli"
+description = "Command-line tool for pikapro, a Pokémon battle simulator faithful to Pokémon Showdown: play, validate and benchmark battles"
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords = ["pokemon", "showdown", "cli", "battle-simulator", "benchmark"]
+categories = ["command-line-utilities", "simulation", "games"]
+
+[[bin]]
+name = "pikapro"
+path = "src/main.rs"
+# rustdoc would write the binary to the same path as the `pikapro` library.
+doc = false
+
+[dependencies]
+pikapro.workspace = true
+pikapro-protocol.workspace = true
+pikapro-validate.workspace = true
+
+[lints]
+workspace = true

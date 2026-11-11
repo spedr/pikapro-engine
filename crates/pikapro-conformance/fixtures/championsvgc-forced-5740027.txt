@@ -1,0 +1,832 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 4dc8 2ca3 4bf1 d285
+genders drawn
+team p1
+Roserade (M) @ Oran Berry
+Ability: Natural Cure
+Level: 50
+Shiny: Yes
+Tera Type: Normal
+EVs: 22 HP / 2 Atk / 2 Def / 5 SpA / 24 SpD / 9 Spe
+Bashful Nature
+- Overheat
+- Dig
+
+Watchog (F) @ Smooth Rock
+Ability: Keen Eye
+Level: 50
+Tera Type: Psychic
+EVs: 29 HP / 2 Atk / 3 Def / 17 SpA / 2 SpD / 12 Spe
+Gentle Nature
+- Earth Power
+
+Thievul
+Ability: Run Away
+Level: 50
+Tera Type: Water
+EVs: 26 HP / 3 Atk / 3 Def / 2 SpA / 23 SpD / 6 Spe
+Naughty Nature
+- Power Trip
+- Focus Punch
+- Horn Leech
+
+Rotom-Fan @ Light Clay
+Ability: Levitate
+Level: 50
+Tera Type: Ghost
+EVs: 2 HP / 9 Atk / 10 Def / 28 SpA / 10 SpD / 7 Spe
+Jolly Nature
+- Bullet Punch
+
+Aromatisse @ Sitrus Berry
+Ability: Healer
+Level: 50
+Tera Type: Stellar
+EVs: 20 HP / 1 Atk / 4 Def / 20 SpA / 18 Spe
+Hasty Nature
+- Belch
+- Stealth Rock
+- Surf
+
+Salamence (F) @ Red Card
+Ability: Intimidate
+Level: 50
+Tera Type: Ground
+EVs: 4 HP / 1 Atk / 23 Def / 14 SpA / 23 SpD / 1 Spe
+Sassy Nature
+- Mean Look
+- Spirit Shackle
+- Fire Spin
+- Meteor Assault
+end
+team p2
+Thievul
+Ability: Run Away
+Level: 50
+Tera Type: Psychic
+EVs: 1 HP / 22 Atk / 9 Def / 24 SpA / 8 SpD / 1 Spe
+Lonely Nature
+- Counter
+- Double Team
+- Overdrive
+
+Vivillon-River @ Charti Berry
+Ability: Compound Eyes
+Level: 50
+Shiny: Yes
+Tera Type: Water
+EVs: 26 HP / 11 Atk / 6 Def / 16 SpA / 5 Spe
+Rash Nature
+- Mean Look
+- Spirit Shackle
+- Fire Spin
+- Shed Tail
+
+Dragalge @ Dragon Fang
+Ability: Adaptability
+Level: 50
+Tera Type: Flying
+EVs: 11 Atk / 1 Def / 16 SpA / 8 SpD / 22 Spe
+Bashful Nature
+- Expanding Force
+- Uproar
+
+Tyranitar @ Babiri Berry
+Ability: Sand Stream
+Level: 50
+Tera Type: Dragon
+EVs: 15 HP / 6 Atk / 10 Def / 7 SpA / 15 SpD / 12 Spe
+Naive Nature
+- Aqua Ring
+
+Sharpedo (M) @ Sharpedonite
+Ability: Speed Boost
+Level: 50
+Tera Type: Bug
+EVs: 5 HP / 19 Atk / 3 Def / 6 SpA / 1 SpD / 32 Spe
+Lonely Nature
+- Last Respects
+- Giga Drain
+- Aqua Step
+- Flame Charge
+
+Slurpuff @ White Herb
+Ability: Sweet Veil
+Level: 50
+Tera Type: Bug
+EVs: 8 HP / 7 Atk / 23 Def / 2 SpA / 13 SpD / 8 Spe
+Hardy Nature
+- Shell Side Arm
+- Wild Charge
+- Freeze-Dry
+end
+choice p1 team 1635
+choice p2 team 2416
+choice p1 switch aromatisse,move 2 +2
+choice p2 move Spirit Shackle 2 ,  switch 4
+choice p1 move belch 2, switch 3
+choice p2 move 1, move 1 1
+choice p2 pass, switch 3
+choice p1 move 1 -2, move 1 2
+choice p2 move aquaring, switch Vivillon
+choice p1 move 1 1, move 1 1
+choice p2 default
+choice p1 switch 4, move 3 2
+choice p2 switch 4, move 2 -1
+choice p1 switch 3, move Power Trip -1
+choice p2 move 1, move spiritshackle -1
+choice p1 default
+choice p2 switch 4, move 2 -1
+choice p1 move Mean Look -2, move 3 -1
+choice p2 move aquaring ,  move Spirit Shackle 2
+choice p1 move 1 +2 ,  move 2 2
+choice p2 move 1, move 4
+choice p2 pass, switch 4
+choice p1 move 3 2, move 3 -1
+choice p2 switch vivillon-river ,  move counter
+choice p2 default
+choice p1 switch 4, move 2 2
+choice p2 move 1, move 3
+choice p1 switch 4, move 3 1
+choice p2 move Aqua Ring, move Double Team
+choice p1 move 4 1, move 3 -1
+choice p2 move 1, move 2
+choice p1 move 1, switch 4
+choice p2 skip, move counter
+choice p1 move 2 2, switch 3
+choice p2 pass, move 1
+choice p1 move 1 2, switch 3
+choice p2 default
+choice p1 move 4 2, switch 4
+choice p2 pass, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Roserade, L50, M, shiny|
+expect |poke|p1|Watchog, L50, F|
+expect |poke|p1|Thievul, L50, F|
+expect |poke|p1|Rotom-Fan, L50|
+expect |poke|p1|Aromatisse, L50, M|
+expect |poke|p1|Salamence, L50, F|
+expect |poke|p2|Thievul, L50, M|
+expect |poke|p2|Vivillon-River, L50, F, shiny|
+expect |poke|p2|Dragalge, L50, M|
+expect |poke|p2|Tyranitar, L50, M|
+expect |poke|p2|Sharpedo, L50, M|
+expect |poke|p2|Slurpuff, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Roserade|Roserade, L50, M, shiny|157/157
+expect |switch|p1a: Roserade|Roserade, L50, M, shiny|100/100
+expect |split|p1
+expect |switch|p1b: Salamence|Salamence, L50, F|174/174
+expect |switch|p1b: Salamence|Salamence, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-River, L50, F, shiny|181/181
+expect |switch|p2a: Vivillon|Vivillon-River, L50, F, shiny|100/100
+expect |split|p2
+expect |switch|p2b: Tyranitar|Tyranitar, L50, M|190/190
+expect |switch|p2b: Tyranitar|Tyranitar, L50, M|100/100
+expect |-ability|p1b: Salamence|Intimidate|boost
+expect |-unboost|p2a: Vivillon|atk|1
+expect |-unboost|p2b: Tyranitar|atk|1
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p2b: Tyranitar
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Aromatisse|Aromatisse, L50, M|196/196
+expect |switch|p1a: Aromatisse|Aromatisse, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Slurpuff|Slurpuff, L50, F|165/165
+expect |switch|p2b: Slurpuff|Slurpuff, L50, F|100/100
+expect |move|p2a: Vivillon|Spirit Shackle|p1b: Salamence
+expect |rng|100|29
+expect |rng|24|10
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Salamence|155/174
+expect |-damage|p1b: Salamence|89/100
+expect |rng|100|27
+expect |-activate|p1b: Salamence|trapped
+expect |-enditem|p1b: Salamence|Red Card|[of] p2a: Vivillon
+expect |rng|2|1
+expect |split|p2
+expect |drag|p2a: Tyranitar|Tyranitar, L50, M|190/190
+expect |drag|p2a: Tyranitar|Tyranitar, L50, M|100/100
+expect |move|p1b: Salamence|Spirit Shackle|p2b: Slurpuff
+expect |rng|100|47
+expect |rng|24|9
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2b: Slurpuff|124/165
+expect |-damage|p2b: Slurpuff|75/100
+expect |rng|100|3
+expect |-activate|p2b: Slurpuff|trapped
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1b: Salamence|145/174|[from] Sandstorm
+expect |-damage|p1b: Salamence|83/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Slurpuff|114/165|[from] Sandstorm
+expect |-damage|p2b: Slurpuff|69/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Aromatisse|184/196|[from] Sandstorm
+expect |-damage|p1a: Aromatisse|93/100|[from] Sandstorm
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Thievul|Thievul, L50, F|171/171
+expect |switch|p1b: Thievul|Thievul, L50, F|100/100
+expect |move|p2a: Tyranitar|Aqua Ring|p2a: Tyranitar
+expect |-start|p2a: Tyranitar|Aqua Ring
+expect |move|p2b: Slurpuff|Shell Side Arm|p1a: Aromatisse|[anim] Shell Side Arm Physical
+expect |rng|100|58
+expect |rng|24|5
+expect |rng|16|11
+expect |-supereffective|p1a: Aromatisse|1
+expect |split|p1
+expect |-damage|p1a: Aromatisse|94/196
+expect |-damage|p1a: Aromatisse|47/100
+expect |-hint|Physical Shell Side Arm
+expect |rng|100|93
+expect |-enditem|p1a: Aromatisse|Sitrus Berry|[eat]
+expect |split|p1
+expect |-heal|p1a: Aromatisse|143/196|[from] item: Sitrus Berry
+expect |-heal|p1a: Aromatisse|72/100|[from] item: Sitrus Berry
+expect |move|p1a: Aromatisse|Belch|p2b: Slurpuff
+expect |rng|100|63
+expect |rng|24|18
+expect |rng|16|13
+expect |-supereffective|p2b: Slurpuff|1
+expect |split|p2
+expect |-damage|p2b: Slurpuff|0 fnt
+expect |-damage|p2b: Slurpuff|0 fnt
+expect |faint|p2b: Slurpuff
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1b: Thievul|161/171|[from] Sandstorm
+expect |-damage|p1b: Thievul|94/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Aromatisse|131/196|[from] Sandstorm
+expect |-damage|p1a: Aromatisse|66/100|[from] Sandstorm
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Thievul|Thievul, L50, M|146/146
+expect |switch|p2b: Thievul|Thievul, L50, M|100/100
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Vivillon|Vivillon-River, L50, F, shiny|181/181
+expect |switch|p2b: Vivillon|Vivillon-River, L50, F, shiny|100/100
+expect |move|p1b: Thievul|Power Trip|p2b: Vivillon
+expect |rng|100|68
+expect |rng|24|4
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Vivillon|165/181
+expect |-damage|p2b: Vivillon|91/100
+expect |move|p2a: Tyranitar|Aqua Ring||[still]
+expect |-fail|p2a: Tyranitar
+expect |move|p1a: Aromatisse|Belch|p1b: Thievul
+expect |rng|100|80
+expect |rng|24|17
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1b: Thievul|106/171
+expect |-damage|p1b: Thievul|61/100
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1b: Thievul|96/171|[from] Sandstorm
+expect |-damage|p1b: Thievul|56/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Vivillon|154/181|[from] Sandstorm
+expect |-damage|p2b: Vivillon|85/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Aromatisse|119/196|[from] Sandstorm
+expect |-damage|p1a: Aromatisse|60/100|[from] Sandstorm
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p1b: Thievul|Power Trip|p2a: Tyranitar
+expect |rng|100|17
+expect |rng|24|14
+expect |rng|16|4
+expect |-resisted|p2a: Tyranitar|1
+expect |split|p2
+expect |-damage|p2a: Tyranitar|186/190
+expect |-damage|p2a: Tyranitar|97/100
+expect |move|p2b: Vivillon|Mean Look|p1b: Thievul
+expect |-activate|p1b: Thievul|trapped
+expect |move|p2a: Tyranitar|Aqua Ring||[still]
+expect |-fail|p2a: Tyranitar
+expect |move|p1a: Aromatisse|Belch|p2a: Tyranitar
+expect |rng|100|81
+expect |rng|24|1
+expect |rng|16|13
+expect |-resisted|p2a: Tyranitar|1
+expect |split|p2
+expect |-damage|p2a: Tyranitar|168/190
+expect |-damage|p2a: Tyranitar|88/100
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1b: Thievul|86/171|[from] Sandstorm
+expect |-damage|p1b: Thievul|50/100g|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Vivillon|143/181|[from] Sandstorm
+expect |-damage|p2b: Vivillon|79/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Aromatisse|107/196|[from] Sandstorm
+expect |-damage|p1a: Aromatisse|54/100|[from] Sandstorm
+expect |split|p2
+expect |-heal|p2a: Tyranitar|179/190|[from] Aqua Ring
+expect |-heal|p2a: Tyranitar|94/100|[from] Aqua Ring
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Thievul|Thievul, L50, M|146/146
+expect |switch|p2a: Thievul|Thievul, L50, M|100/100
+expect |split|p1
+expect |switch|p1a: Roserade|Roserade, L50, M, shiny|157/157
+expect |switch|p1a: Roserade|Roserade, L50, M, shiny|100/100
+expect |move|p1b: Thievul|Horn Leech|p2b: Vivillon
+expect |rng|100|59
+expect |rng|24|22
+expect |rng|16|6
+expect |-resisted|p2b: Vivillon|2
+expect |split|p2
+expect |-damage|p2b: Vivillon|134/181
+expect |-damage|p2b: Vivillon|74/100
+expect |split|p1
+expect |-heal|p1b: Thievul|91/171|[from] drain|[of] p2b: Vivillon
+expect |-heal|p1b: Thievul|53/100|[from] drain|[of] p2b: Vivillon
+expect |move|p2b: Vivillon|Spirit Shackle|p2a: Thievul
+expect |rng|100|21
+expect |rng|24|16
+expect |rng|16|1
+expect |-resisted|p2a: Thievul|1
+expect |split|p2
+expect |-damage|p2a: Thievul|125/146
+expect |-damage|p2a: Thievul|85/100
+expect |rng|100|80
+expect |-activate|p2a: Thievul|trapped
+expect |
+expect |-weather|none
+expect |upkeep
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Salamence|Salamence, L50, F|145/174
+expect |switch|p1a: Salamence|Salamence, L50, F|83/100
+expect |-ability|p1a: Salamence|Intimidate|boost
+expect |-unboost|p2a: Thievul|atk|1
+expect |-unboost|p2b: Vivillon|atk|1
+expect |move|p1b: Thievul|Power Trip|p1a: Salamence
+expect |rng|100|74
+expect |rng|24|13
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Salamence|135/174
+expect |-damage|p1a: Salamence|77/100
+expect |move|p2b: Vivillon|Spirit Shackle|p2a: Thievul
+expect |rng|100|72
+expect |rng|24|12
+expect |rng|16|11
+expect |-resisted|p2a: Thievul|1
+expect |split|p2
+expect |-damage|p2a: Thievul|113/146
+expect |-damage|p2a: Thievul|77/100
+expect |rng|100|0
+expect |move|p2a: Thievul|Counter||[still]
+expect |-fail|p2a: Thievul
+expect |
+expect |upkeep
+expect |turn|7
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Tyranitar|Tyranitar, L50, M|179/190
+expect |switch|p2a: Tyranitar|Tyranitar, L50, M|94/100
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+expect |move|p1b: Thievul|Power Trip|p2b: Vivillon
+expect |rng|100|88
+expect |rng|24|14
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Vivillon|119/181
+expect |-damage|p2b: Vivillon|65/100
+expect |move|p2b: Vivillon|Spirit Shackle|p2a: Tyranitar
+expect |rng|100|42
+expect |rng|24|8
+expect |rng|16|0
+expect |-resisted|p2a: Tyranitar|1
+expect |split|p2
+expect |-damage|p2a: Tyranitar|171/190
+expect |-damage|p2a: Tyranitar|90/100
+expect |rng|100|99
+expect |-activate|p2a: Tyranitar|trapped
+expect |move|p1a: Salamence|Mean Look|p2b: Vivillon
+expect |-activate|p2b: Vivillon|trapped
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1b: Thievul|81/171|[from] Sandstorm
+expect |-damage|p1b: Thievul|47/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Vivillon|108/181|[from] Sandstorm
+expect |-damage|p2b: Vivillon|59/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Salamence|125/174|[from] Sandstorm
+expect |-damage|p1a: Salamence|71/100|[from] Sandstorm
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1b: Thievul|Horn Leech|p1a: Salamence
+expect |rng|100|2
+expect |rng|24|11
+expect |rng|16|7
+expect |-resisted|p1a: Salamence|2
+expect |split|p1
+expect |-damage|p1a: Salamence|120/174
+expect |-damage|p1a: Salamence|68/100
+expect |split|p1
+expect |-heal|p1b: Thievul|84/171|[from] drain|[of] p1a: Salamence
+expect |-heal|p1b: Thievul|49/100|[from] drain|[of] p1a: Salamence
+expect |move|p2b: Vivillon|Spirit Shackle|p1b: Thievul
+expect |rng|100|42
+expect |rng|24|22
+expect |rng|16|12
+expect |-resisted|p1b: Thievul|1
+expect |split|p1
+expect |-damage|p1b: Thievul|72/171
+expect |-damage|p1b: Thievul|42/100
+expect |rng|100|59
+expect |move|p1a: Salamence|Mean Look||[still]
+expect |-fail|p1a: Salamence
+expect |move|p2a: Tyranitar|Aqua Ring|p2a: Tyranitar
+expect |-start|p2a: Tyranitar|Aqua Ring
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1b: Thievul|62/171|[from] Sandstorm
+expect |-damage|p1b: Thievul|36/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Vivillon|97/181|[from] Sandstorm
+expect |-damage|p2b: Vivillon|53/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Salamence|110/174|[from] Sandstorm
+expect |-damage|p1a: Salamence|63/100|[from] Sandstorm
+expect |split|p2
+expect |-heal|p2a: Tyranitar|182/190|[from] Aqua Ring
+expect |-heal|p2a: Tyranitar|95/100|[from] Aqua Ring
+expect |upkeep
+expect |turn|9
+expect |rng|2|0
+expect |
+expect |t:|
+expect |-singleturn|p1b: Thievul|move: Focus Punch
+expect |move|p2b: Vivillon|Shed Tail|p2b: Vivillon
+expect |-start|p2b: Vivillon|Substitute|[from] move: Shed Tail
+expect |split|p2
+expect |-damage|p2b: Vivillon|6/181
+expect |-damage|p2b: Vivillon|3/100
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Thievul|Thievul, L50, M|113/146|[from] Shed Tail
+expect |switch|p2b: Thievul|Thievul, L50, M|77/100|[from] Shed Tail
+expect |move|p1a: Salamence|Mean Look||[still]
+expect |-fail|p1a: Salamence
+expect |move|p2a: Tyranitar|Aqua Ring||[still]
+expect |-fail|p2a: Tyranitar
+expect |move|p1b: Thievul|Focus Punch|p2b: Thievul
+expect |rng|100|60
+expect |rng|24|14
+expect |rng|16|2
+expect |-supereffective|p2b: Thievul|1
+expect |-end|p2b: Thievul|Substitute
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1b: Thievul|52/171|[from] Sandstorm
+expect |-damage|p1b: Thievul|30/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Thievul|104/146|[from] Sandstorm
+expect |-damage|p2b: Thievul|71/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Salamence|100/174|[from] Sandstorm
+expect |-damage|p1a: Salamence|57/100|[from] Sandstorm
+expect |split|p2
+expect |-heal|p2a: Tyranitar|190/190|[from] Aqua Ring
+expect |-heal|p2a: Tyranitar|100/100|[from] Aqua Ring
+expect |upkeep
+expect |turn|10
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-River, L50, F, shiny|6/181
+expect |switch|p2a: Vivillon|Vivillon-River, L50, F, shiny|3/100
+expect |move|p1b: Thievul|Horn Leech|p1a: Salamence
+expect |rng|100|34
+expect |rng|24|5
+expect |rng|16|15
+expect |-resisted|p1a: Salamence|2
+expect |split|p1
+expect |-damage|p1a: Salamence|95/174
+expect |-damage|p1a: Salamence|54/100
+expect |split|p1
+expect |-heal|p1b: Thievul|55/171|[from] drain|[of] p1a: Salamence
+expect |-heal|p1b: Thievul|32/100|[from] drain|[of] p1a: Salamence
+expect |move|p1a: Salamence|Fire Spin|p2b: Thievul
+expect |rng|100|16
+expect |rng|24|13
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Thievul|87/146
+expect |-damage|p2b: Thievul|59/100
+expect |rng|2|1
+expect |-activate|p2b: Thievul|move: Fire Spin|[of] p1a: Salamence
+expect |move|p2b: Thievul|Counter||[still]
+expect |-fail|p2b: Thievul
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1b: Thievul|45/171|[from] Sandstorm
+expect |-damage|p1b: Thievul|26/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Vivillon|0 fnt|[from] Sandstorm
+expect |-damage|p2a: Vivillon|0 fnt|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Thievul|78/146|[from] Sandstorm
+expect |-damage|p2b: Thievul|53/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Salamence|85/174|[from] Sandstorm
+expect |-damage|p1a: Salamence|48/100|[from] Sandstorm
+expect |faint|p2a: Vivillon
+expect |split|p2
+expect |-damage|p2b: Thievul|60/146|[from] move: Fire Spin|[partiallytrapped]
+expect |-damage|p2b: Thievul|41/100|[from] move: Fire Spin|[partiallytrapped]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Tyranitar|Tyranitar, L50, M|190/190
+expect |switch|p2a: Tyranitar|Tyranitar, L50, M|100/100
+expect |turn|11
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Aromatisse|Aromatisse, L50, M|107/196
+expect |switch|p1a: Aromatisse|Aromatisse, L50, M|54/100
+expect |-singleturn|p1b: Thievul|move: Focus Punch
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Thievul|Overdrive|p1b: Thievul|[spread] p1a,p1b
+expect |rng|100|63
+expect |rng|100|82
+expect |rng|24|10
+expect |rng|16|3
+expect |rng|24|7
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Aromatisse|75/196
+expect |-damage|p1a: Aromatisse|38/100
+expect |split|p1
+expect |-damage|p1b: Thievul|16/171
+expect |-damage|p1b: Thievul|9/100
+expect |move|p2a: Tyranitar|Aqua Ring|p2a: Tyranitar
+expect |-start|p2a: Tyranitar|Aqua Ring
+expect |cant|p1b: Thievul|Focus Punch|Focus Punch
+expect |
+expect |-weather|none
+expect |-end|p2b: Thievul|Fire Spin|[partiallytrapped]|[silent]
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Salamence|Salamence, L50, F|85/174
+expect |switch|p1a: Salamence|Salamence, L50, F|48/100
+expect |-ability|p1a: Salamence|Intimidate|boost
+expect |-unboost|p2a: Tyranitar|atk|1
+expect |-unboost|p2b: Thievul|atk|1
+expect |move|p1b: Thievul|Horn Leech|p2a: Tyranitar
+expect |rng|100|69
+expect |rng|24|10
+expect |rng|16|2
+expect |-supereffective|p2a: Tyranitar|1
+expect |split|p2
+expect |-damage|p2a: Tyranitar|148/190
+expect |-damage|p2a: Tyranitar|77/100
+expect |split|p1
+expect |-heal|p1b: Thievul|37/171|[from] drain|[of] p2a: Tyranitar
+expect |-heal|p1b: Thievul|21/100|[from] drain|[of] p2a: Tyranitar
+expect |move|p2b: Thievul|Double Team|p2b: Thievul
+expect |-boost|p2b: Thievul|evasion|1
+expect |move|p2a: Tyranitar|Aqua Ring||[still]
+expect |-fail|p2a: Tyranitar
+expect |
+expect |split|p2
+expect |-heal|p2a: Tyranitar|159/190|[from] Aqua Ring
+expect |-heal|p2a: Tyranitar|83/100|[from] Aqua Ring
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1b: Thievul|Horn Leech|p1a: Salamence
+expect |rng|100|66
+expect |rng|24|23
+expect |rng|16|15
+expect |-resisted|p1a: Salamence|2
+expect |split|p1
+expect |-damage|p1a: Salamence|80/174
+expect |-damage|p1a: Salamence|45/100
+expect |split|p1
+expect |-heal|p1b: Thievul|40/171|[from] drain|[of] p1a: Salamence
+expect |-heal|p1b: Thievul|23/100|[from] drain|[of] p1a: Salamence
+expect |move|p2b: Thievul|Double Team|p2b: Thievul
+expect |-boost|p2b: Thievul|evasion|1
+expect |move|p1a: Salamence|Meteor Assault|p2a: Tyranitar
+expect |rng|100|56
+expect |rng|24|11
+expect |rng|16|5
+expect |-supereffective|p2a: Tyranitar|2
+expect |split|p2
+expect |-damage|p2a: Tyranitar|0 fnt
+expect |-damage|p2a: Tyranitar|0 fnt
+expect |-mustrecharge|p1a: Salamence
+expect |faint|p2a: Tyranitar
+expect |
+expect |upkeep
+expect |turn|14
+expect |rng|1|0
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Aromatisse|Aromatisse, L50, M|75/196
+expect |switch|p1b: Aromatisse|Aromatisse, L50, M|38/100
+expect |rng|1|0
+expect |rng|1|0
+expect |cant|p1a: Salamence|recharge
+expect |move|p2b: Thievul|Counter||[still]
+expect |-fail|p2b: Thievul
+expect |
+expect |upkeep
+expect |turn|15
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Roserade|Roserade, L50, M, shiny|157/157
+expect |switch|p1b: Roserade|Roserade, L50, M, shiny|100/100
+expect |move|p1a: Salamence|Spirit Shackle|p2b: Thievul
+expect |rng|100|3
+expect |rng|24|16
+expect |rng|16|15
+expect |-resisted|p2b: Thievul|1
+expect |split|p2
+expect |-damage|p2b: Thievul|26/146
+expect |-damage|p2b: Thievul|17/100
+expect |rng|100|57
+expect |-activate|p2b: Thievul|trapped
+expect |move|p2b: Thievul|Counter|p1a: Salamence
+expect |rng|100|75
+expect |split|p1
+expect |-damage|p1a: Salamence|12/174
+expect |-damage|p1a: Salamence|6/100
+expect |
+expect |upkeep
+expect |turn|16
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Aromatisse|Aromatisse, L50, M|75/196
+expect |switch|p1b: Aromatisse|Aromatisse, L50, M|38/100
+expect |move|p1a: Salamence|Mean Look||[still]
+expect |-fail|p1a: Salamence
+expect |move|p2b: Thievul|Counter||[still]
+expect |-fail|p2b: Thievul
+expect |
+expect |upkeep
+expect |turn|17
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Thievul|Thievul, L50, F|40/171
+expect |switch|p1b: Thievul|Thievul, L50, F|23/100
+expect |move|p1a: Salamence|Meteor Assault|p2b: Thievul
+expect |rng|100|30
+expect |rng|24|22
+expect |rng|16|2
+expect |-supereffective|p2b: Thievul|1
+expect |split|p2
+expect |-damage|p2b: Thievul|0 fnt
+expect |-damage|p2b: Thievul|0 fnt
+expect |-mustrecharge|p1a: Salamence
+expect |faint|p2b: Thievul
+expect |
+expect |win|p1
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":true,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Watchog","details":"Watchog, L50, F","condition":"164/164","active":true,"stats":{"atk":107,"def":82,"spa":97,"spd":100,"spe":109},"moves":["earthpower"],"baseAbility":"keeneye","item":"smoothrock","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"171/171","active":false,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Rotom","details":"Rotom-Fan, L50","condition":"127/127","active":false,"stats":{"atk":94,"def":137,"spa":137,"spd":137,"spe":124},"moves":["bulletpunch"],"baseAbility":"levitate","item":"lightclay","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"196/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"sitrusberry","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"174/174","active":false,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"redcard","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"146/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"181/181","active":true,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p2: Dragalge","details":"Dragalge, L50, M","condition":"140/140","active":false,"stats":{"atk":106,"def":111,"spa":133,"spd":151,"spe":86},"moves":["expandingforce","uproar"],"baseAbility":"adaptability","item":"dragonfang","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false},{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"190/190","active":false,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Sharpedo","details":"Sharpedo, L50, M","condition":"150/150","active":false,"stats":{"atk":174,"def":56,"spa":121,"spd":61,"spe":147},"moves":["lastrespects","gigadrain","aquastep","flamecharge"],"baseAbility":"speedboost","item":"sharpedonite","pokeball":"pokeball","ability":"speedboost","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"165/165","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Overheat","id":"overheat","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Dig","id":"dig","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Mean Look","id":"meanlook","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Assault","id":"meteorassault","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":true,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"174/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"redcard","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"171/171","active":false,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"196/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"sitrusberry","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Mean Look","id":"meanlook","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shed Tail","id":"shedtail","pp":12,"maxpp":12,"target":"self","disabled":false}]},{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":20,"maxpp":20,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"181/181","active":true,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"190/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"146/146","active":false,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"165/165","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Belch","id":"belch","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Stealth Rock","id":"stealthrock","pp":20,"maxpp":20,"target":"foeSide","disabled":false},{"move":"Surf","id":"surf","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Mean Look","id":"meanlook","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Assault","id":"meteorassault","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"184/196","active":true,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"sitrusberry","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"145/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"171/171","active":false,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":20,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Shell Side Arm","id":"shellsidearm","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Wild Charge","id":"wildcharge","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Freeze-Dry","id":"freezedry","pp":20,"maxpp":20,"target":"normal","disabled":false}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"190/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"114/165","active":true,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"146/146","active":false,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"181/181","active":false,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"131/196","active":true,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"161/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"145/174","active":false,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"190/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":true,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"146/146","active":false,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"181/181","active":false,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Belch","id":"belch","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Stealth Rock","id":"stealthrock","pp":20,"maxpp":20,"target":"foeSide","disabled":false},{"move":"Surf","id":"surf","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Power Trip","id":"powertrip","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"131/196","active":true,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"161/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"145/174","active":false,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":19,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Counter","id":"counter","pp":20,"maxpp":20,"target":"scripted","disabled":false},{"move":"Double Team","id":"doubleteam","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"190/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"146/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"181/181","active":false,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Belch","id":"belch","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Stealth Rock","id":"stealthrock","pp":20,"maxpp":20,"target":"foeSide","disabled":false},{"move":"Surf","id":"surf","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Power Trip","id":"powertrip","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"119/196","active":true,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"96/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"145/174","active":false,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":18,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Mean Look","id":"meanlook","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shed Tail","id":"shedtail","pp":12,"maxpp":12,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"190/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"154/181","active":true,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"146/146","active":false,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Belch","id":"belch","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Stealth Rock","id":"stealthrock","pp":20,"maxpp":20,"target":"foeSide","disabled":false},{"move":"Surf","id":"surf","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Power Trip","id":"powertrip","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"107/196","active":true,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"86/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"145/174","active":false,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":17,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Mean Look","id":"meanlook","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shed Tail","id":"shedtail","pp":12,"maxpp":12,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"179/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"143/181","active":true,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"146/146","active":false,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Overheat","id":"overheat","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Dig","id":"dig","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Power Trip","id":"powertrip","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":true,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"91/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"145/174","active":false,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"107/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Counter","id":"counter","pp":20,"maxpp":20,"target":"scripted","disabled":false},{"move":"Double Team","id":"doubleteam","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Mean Look","id":"meanlook","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shed Tail","id":"shedtail","pp":12,"maxpp":12,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"125/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"134/181","active":true,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"179/190","active":false,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Mean Look","id":"meanlook","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Assault","id":"meteorassault","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Power Trip","id":"powertrip","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"135/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"91/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"107/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Counter","id":"counter","pp":19,"maxpp":20,"target":"scripted","disabled":false},{"move":"Double Team","id":"doubleteam","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Mean Look","id":"meanlook","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shed Tail","id":"shedtail","pp":12,"maxpp":12,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"113/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"134/181","active":true,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"179/190","active":false,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Mean Look","id":"meanlook","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Assault","id":"meteorassault","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Power Trip","id":"powertrip","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"125/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"81/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"107/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":17,"maxpp":20,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Mean Look","id":"meanlook","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shed Tail","id":"shedtail","pp":12,"maxpp":12,"target":"self","disabled":false}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"171/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"108/181","active":true,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"113/146","active":false,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Mean Look","id":"meanlook","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Assault","id":"meteorassault","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Power Trip","id":"powertrip","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"110/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"62/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"107/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":16,"maxpp":20,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Mean Look","id":"meanlook","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":7,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shed Tail","id":"shedtail","pp":12,"maxpp":12,"target":"self","disabled":false}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"182/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"97/181","active":true,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"113/146","active":false,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"110/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"62/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"107/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"182/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"6/181","active":true,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"113/146","active":false,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Mean Look","id":"meanlook","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Assault","id":"meteorassault","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Power Trip","id":"powertrip","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"100/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"52/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"107/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":15,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Counter","id":"counter","pp":19,"maxpp":20,"target":"scripted","disabled":false},{"move":"Double Team","id":"doubleteam","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"190/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"104/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"6/181","active":false,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"85/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"45/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"107/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"60/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"190/190","active":false,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Mean Look","id":"meanlook","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Assault","id":"meteorassault","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Power Trip","id":"powertrip","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":9,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"85/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"45/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"107/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":15,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Counter","id":"counter","pp":18,"maxpp":20,"target":"scripted","disabled":false},{"move":"Double Team","id":"doubleteam","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Overdrive","id":"overdrive","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"190/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"60/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Belch","id":"belch","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Stealth Rock","id":"stealthrock","pp":20,"maxpp":20,"target":"foeSide","disabled":false},{"move":"Surf","id":"surf","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Power Trip","id":"powertrip","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":9,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"75/196","active":true,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"16/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"85/174","active":false,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":14,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Counter","id":"counter","pp":18,"maxpp":20,"target":"scripted","disabled":false},{"move":"Double Team","id":"doubleteam","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Overdrive","id":"overdrive","pp":11,"maxpp":12,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"190/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"60/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Mean Look","id":"meanlook","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Assault","id":"meteorassault","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Power Trip","id":"powertrip","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":8,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"85/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"37/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"75/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":13,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Counter","id":"counter","pp":18,"maxpp":20,"target":"scripted","disabled":false},{"move":"Double Team","id":"doubleteam","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Overdrive","id":"overdrive","pp":11,"maxpp":12,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"159/190","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"60/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true},{"moves":[{"move":"Power Trip","id":"powertrip","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":7,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"80/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"40/171","active":true,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"75/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":13,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Counter","id":"counter","pp":18,"maxpp":20,"target":"scripted","disabled":false},{"move":"Double Team","id":"doubleteam","pp":14,"maxpp":16,"target":"self","disabled":false},{"move":"Overdrive","id":"overdrive","pp":11,"maxpp":12,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"0 fnt","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"60/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Mean Look","id":"meanlook","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Assault","id":"meteorassault","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Belch","id":"belch","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Stealth Rock","id":"stealthrock","pp":20,"maxpp":20,"target":"foeSide","disabled":false},{"move":"Surf","id":"surf","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"80/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"75/196","active":true,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"40/171","active":false,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":13,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Counter","id":"counter","pp":17,"maxpp":20,"target":"scripted","disabled":false},{"move":"Double Team","id":"doubleteam","pp":14,"maxpp":16,"target":"self","disabled":false},{"move":"Overdrive","id":"overdrive","pp":11,"maxpp":12,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"0 fnt","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"60/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Mean Look","id":"meanlook","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Assault","id":"meteorassault","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Overheat","id":"overheat","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Dig","id":"dig","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"12/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":true,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"75/196","active":false,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"40/171","active":false,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":13,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Counter","id":"counter","pp":16,"maxpp":20,"target":"scripted","disabled":false},{"move":"Double Team","id":"doubleteam","pp":14,"maxpp":16,"target":"self","disabled":false},{"move":"Overdrive","id":"overdrive","pp":11,"maxpp":12,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"0 fnt","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"26/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Mean Look","id":"meanlook","pp":4,"maxpp":8,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Meteor Assault","id":"meteorassault","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Belch","id":"belch","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Stealth Rock","id":"stealthrock","pp":20,"maxpp":20,"target":"foeSide","disabled":false},{"move":"Surf","id":"surf","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Salamence","details":"Salamence, L50, F","condition":"12/174","active":true,"stats":{"atk":156,"def":123,"spa":144,"spd":135,"spe":108},"moves":["meanlook","spiritshackle","firespin","meteorassault"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Aromatisse","details":"Aromatisse, L50, M","condition":"75/196","active":true,"stats":{"atk":93,"def":86,"spa":139,"spd":109,"spe":73},"moves":["belch","stealthrock","surf"],"baseAbility":"healer","item":"","pokeball":"pokeball","ability":"healer","commanding":false,"reviving":false},{"ident":"p1: Roserade","details":"Roserade, L50, M, shiny","condition":"157/157","active":false,"stats":{"atk":92,"def":87,"spa":150,"spd":149,"spe":119},"moves":["overheat","dig"],"baseAbility":"naturalcure","item":"oranberry","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Thievul","details":"Thievul, L50, F","condition":"40/171","active":false,"stats":{"atk":89,"def":81,"spa":109,"spd":121,"spe":116},"moves":["powertrip","focuspunch","hornleech"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Aqua Ring","id":"aquaring","pp":13,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Counter","id":"counter","pp":15,"maxpp":20,"target":"scripted","disabled":false},{"move":"Double Team","id":"doubleteam","pp":14,"maxpp":16,"target":"self","disabled":false},{"move":"Overdrive","id":"overdrive","pp":11,"maxpp":12,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tyranitar","details":"Tyranitar, L50, M","condition":"0 fnt","active":true,"stats":{"atk":160,"def":140,"spa":122,"spd":121,"spe":102},"moves":["aquaring"],"baseAbility":"sandstream","item":"babiriberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Thievul","details":"Thievul, L50, M","condition":"26/146","active":true,"stats":{"atk":110,"def":78,"spa":131,"spd":120,"spe":111},"moves":["counter","doubleteam","overdrive"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false},{"ident":"p2: Slurpuff","details":"Slurpuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":107,"def":129,"spa":107,"spd":108,"spe":100},"moves":["shellsidearm","wildcharge","freezedry"],"baseAbility":"sweetveil","item":"whiteherb","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Vivillon","details":"Vivillon-River, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":83,"def":76,"spa":138,"spd":63,"spe":114},"moves":["meanlook","spiritshackle","firespin","shedtail"],"baseAbility":"compoundeyes","item":"chartiberry","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}

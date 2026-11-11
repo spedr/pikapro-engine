@@ -1,0 +1,249 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Annihilape
+Ability: Defiant
+Level: 20
+Hardy Nature
+- Raging Fury
+- Grass Pledge
+
+Charizard
+Ability: Blaze
+Hardy Nature
+- Fire Pledge
+- Splash
+end
+team p2
+Alakazam
+Ability: Inner Focus
+Hardy Nature
+- Instruct
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Hardy Nature
+- Splash
+end
+choice p1 move 1, move 2
+choice p2 move 2, move 1
+choice p1 move 1, move 2
+choice p2 move 2, move 1
+choice p1 move 1, move 2
+choice p2 move 2, move 1
+choice p1 move 2 1, move 1 1
+choice p2 move 1 1, move 1
+choice p1 move 1, move 2
+choice p2 move 2, move 1
+choice p1 move 1, move 2
+choice p2 move 2, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Annihilape|Annihilape, L20, F|80/80
+expect |switch|p1a: Annihilape|Annihilape, L20, F|80/80
+expect |split|p1
+expect |switch|p1b: Charizard|Charizard, F|297/297
+expect |switch|p1b: Charizard|Charizard, F|297/297
+expect |split|p2
+expect |switch|p2a: Alakazam|Alakazam, F|251/251
+expect |switch|p2a: Alakazam|Alakazam, F|251/251
+expect |split|p2
+expect |switch|p2b: Snorlax|Snorlax, M|461/461
+expect |switch|p2b: Snorlax|Snorlax, M|461/461
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2a: Alakazam|Splash|p2a: Alakazam
+expect |-nothing
+expect |rng|2|0
+expect |move|p1b: Charizard|Splash|p1b: Charizard
+expect |-nothing
+expect |rng|2|0
+expect |move|p2b: Snorlax|Splash|p2b: Snorlax
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Annihilape|Raging Fury|p2a: Alakazam
+expect |rng|100|60
+expect |rng|24|0
+expect |rng|16|8
+expect |-crit|p2a: Alakazam
+expect |split|p2
+expect |-damage|p2a: Alakazam|235/251
+expect |-damage|p2a: Alakazam|235/251
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2a: Alakazam|Splash|p2a: Alakazam
+expect |-nothing
+expect |rng|2|1
+expect |move|p1b: Charizard|Splash|p1b: Charizard
+expect |-nothing
+expect |rng|2|0
+expect |move|p2b: Snorlax|Splash|p2b: Snorlax
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Annihilape|Raging Fury|p2b: Snorlax|[from] lockedmove
+expect |rng|100|36
+expect |rng|24|13
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Snorlax|456/461
+expect |-damage|p2b: Snorlax|456/461
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2a: Alakazam|Splash|p2a: Alakazam
+expect |-nothing
+expect |rng|2|0
+expect |move|p1b: Charizard|Splash|p1b: Charizard
+expect |-nothing
+expect |rng|2|1
+expect |move|p2b: Snorlax|Splash|p2b: Snorlax
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Annihilape|Raging Fury|p2a: Alakazam|[from] lockedmove
+expect |rng|100|91
+expect |rng|24|15
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Alakazam|224/251
+expect |-damage|p2a: Alakazam|224/251
+expect |-start|p1a: Annihilape|confusion|[fatigue]
+expect |rng|4|3
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Alakazam|Instruct|p1a: Annihilape
+expect |-singleturn|p1a: Annihilape|move: Instruct|[of] p2a: Alakazam
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |-activate|p1a: Annihilape|confusion
+expect |rng|100|6
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Annihilape|69/80|[from] confusion
+expect |-damage|p1a: Annihilape|69/80|[from] confusion
+expect |move|p1b: Charizard|Fire Pledge|p2a: Alakazam
+expect |-waiting|p1b: Charizard|p1a: Annihilape
+expect |-activate|p1a: Annihilape|confusion
+expect |rng|100|72
+expect |move|p1a: Annihilape|Grass Pledge|p2a: Alakazam|[from] move: Fire Pledge
+expect |rng|100|54
+expect |-combine
+expect |rng|24|0
+expect |rng|16|8
+expect |-crit|p2a: Alakazam
+expect |split|p2
+expect |-damage|p2a: Alakazam|212/251
+expect |-damage|p2a: Alakazam|212/251
+expect |-sidestart|p2: p2|Fire Pledge
+expect |move|p2b: Snorlax|Splash|p2b: Snorlax
+expect |-nothing
+expect |
+expect |split|p2
+expect |-damage|p2a: Alakazam|181/251|[from] Fire Pledge
+expect |-damage|p2a: Alakazam|181/251|[from] Fire Pledge
+expect |split|p2
+expect |-damage|p2b: Snorlax|399/461|[from] Fire Pledge
+expect |-damage|p2b: Snorlax|399/461|[from] Fire Pledge
+expect |upkeep
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2a: Alakazam|Splash|p2a: Alakazam
+expect |-nothing
+expect |rng|2|0
+expect |move|p1b: Charizard|Splash|p1b: Charizard
+expect |-nothing
+expect |rng|2|1
+expect |move|p2b: Snorlax|Splash|p2b: Snorlax
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|1
+expect |-activate|p1a: Annihilape|confusion
+expect |rng|100|49
+expect |move|p1a: Annihilape|Raging Fury|p2b: Snorlax
+expect |rng|100|33
+expect |rng|24|17
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Snorlax|394/461
+expect |-damage|p2b: Snorlax|394/461
+expect |rng|2|1
+expect |
+expect |split|p2
+expect |-damage|p2a: Alakazam|150/251|[from] Fire Pledge
+expect |-damage|p2a: Alakazam|150/251|[from] Fire Pledge
+expect |split|p2
+expect |-damage|p2b: Snorlax|337/461|[from] Fire Pledge
+expect |-damage|p2b: Snorlax|337/461|[from] Fire Pledge
+expect |upkeep
+expect |turn|6
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2a: Alakazam|Splash|p2a: Alakazam
+expect |-nothing
+expect |rng|2|1
+expect |move|p1b: Charizard|Splash|p1b: Charizard
+expect |-nothing
+expect |rng|2|0
+expect |move|p2b: Snorlax|Splash|p2b: Snorlax
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |-activate|p1a: Annihilape|confusion
+expect |rng|100|15
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Annihilape|59/80|[from] confusion
+expect |-damage|p1a: Annihilape|59/80|[from] confusion
+expect |
+expect |split|p2
+expect |-damage|p2a: Alakazam|119/251|[from] Fire Pledge
+expect |-damage|p2a: Alakazam|119/251|[from] Fire Pledge
+expect |split|p2
+expect |-damage|p2b: Snorlax|280/461|[from] Fire Pledge
+expect |-damage|p2b: Snorlax|280/461|[from] Fire Pledge
+expect |upkeep
+expect |turn|7

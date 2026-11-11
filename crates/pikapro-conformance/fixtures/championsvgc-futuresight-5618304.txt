@@ -1,0 +1,753 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed b710 6947 a51b 820b
+genders drawn
+team p1
+Pikachu (Gliscor) @ Iron Ball
+Ability: Hyper Cutter
+Level: 50
+Tera Type: Rock
+EVs: 2 HP / 5 Atk / 17 SpA / 22 SpD / 18 Spe
+Adamant Nature
+- Future Sight
+- U-turn
+- Corrosive Gas
+- Dig
+
+Polteageist
+Ability: Cursed Body
+Level: 50
+Tera Type: Stellar
+EVs: 10 HP / 27 Atk / 2 Def / 12 SpA / 1 SpD / 12 Spe
+Modest Nature
+- Volt Switch
+- Scary Face
+- Recover
+- Rising Voltage
+
+Nibbles (Gourgeist-Small) (M) @ Magnet
+Ability: Frisk
+Level: 50
+Tera Type: Ice
+EVs: 15 HP / 5 Atk / 20 Def / 4 SpA / 9 SpD / 6 Spe
+Sassy Nature
+- Poison Jab
+- Guard Swap
+
+Chomp (Noivern) (F) @ Dragon Fang
+Ability: Infiltrator
+Level: 50
+Tera Type: Electric
+EVs: 19 HP / 7 Atk / 29 SpA / 11 SpD
+Calm Nature
+- Iron Tail
+
+Scovillain @ Scovillainite
+Ability: Chlorophyll
+Level: 50
+Tera Type: Steel
+EVs: 26 SpA / 32 SpD / 8 Spe
+Impish Nature
+- Brutal Swing
+- Petal Dance
+- Water Spout
+
+ThisNameIsFarTooLongToKeep (Beartic) (M) @ Poison Barb
+Ability: Swift Swim
+Level: 50
+Tera Type: Ghost
+EVs: 19 HP / 9 Atk / 31 SpA / 4 Spe
+Sassy Nature
+- Struggle
+- Growth
+end
+team p2
+Roserade
+Ability: Natural Cure
+Level: 50
+Tera Type: Normal
+EVs: 1 HP / 8 Atk / 28 Def / 22 SpD / 7 Spe
+Rash Nature
+- Future Sight
+- U-turn
+- Teatime
+- Gastro Acid
+
+ThisNameIsFarTooLongToKeep (Heracross) (M)
+Ability: Guts
+Level: 50
+Tera Type: Bug
+EVs: 13 HP / 28 Atk / 7 Def / 1 SpA / 7 SpD
+Careful Nature
+- Psyshield Bash
+- Gyro Ball
+- Bug Bite
+- Charge Beam
+
+Chomp (Aegislash) (F) @ Damp Rock
+Ability: Stance Change
+Level: 50
+Tera Type: Normal
+EVs: 6 HP / 12 Atk / 3 Def / 32 SpA / 8 Spe
+Sassy Nature
+- Volt Switch
+- Quick Guard
+
+Sparky (Scovillain) @ Scovillainite
+Ability: Chlorophyll
+Level: 50
+Tera Type: Bug
+EVs: 1 HP / 15 Atk / 17 Def / 8 SpA / 4 SpD / 18 Spe
+Bold Nature
+- Petal Dance
+- Magnet Rise
+
+Mr. Bubbles (Inteleon)
+Ability: Sniper
+Level: 50
+Tera Type: Grass
+EVs: 32 HP / 6 Atk / 10 Def / 1 SpA / 4 SpD / 13 Spe
+Gentle Nature
+- Fiery Dance
+- Imprison
+- Shadow Claw
+
+Mabosstiff (M)
+Ability: Stakeout
+Level: 50
+Shiny: Yes
+Tera Type: Ground
+EVs: 3 HP / 7 Atk / 3 Def / 3 SpA / 4 SpD / 23 Spe
+Rash Nature
+- Torment
+- Counter
+- Yawn
+end
+choice p1 team 5426
+choice p2 team 6153
+choice p1 move 1 mega, move 1 1
+choice p2 move Torment +2, move 4 1
+choice p1 default
+choice p2 move 2, move 1 2
+choice p1 move 1, switch 4
+choice p2 move 1 -2, move 1 1
+choice p1 default
+choice p2 move 3 1, switch 3
+choice p1 move 3, move 2
+choice p2 move 3 -2, move 2
+choice p1 move 3, switch 4
+choice p2 move torment -2,move Fiery Dance -1
+choice p2 switch 3, pass
+choice p1 move 1, switch 3
+choice p2 switch Chomp, move Fiery Dance +1
+choice p1 move 3, switch 4
+choice p2 move 1 -2, move 3 2
+choice p2 switch 4, pass
+choice p1 pass, switch 3
+choice p2 pass, switch 4
+choice p1 move 2, move 1 -1
+choice p2 move 1 1, move 1 1
+choice p1 move 1 ,  move Iron Tail 1
+choice p2 move Teatime, move 1 +1
+choice p1 switch 4, pass
+choice p2 move 1 -2, move 1 2
+choice p1 move 4 -2, move 1 -1
+choice p2 move 4 1, move 1 -1
+choice p1 move Scary Face +1
+choice p2 skip ,  move Quick Guard
+choice p1 move voltswitch +2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Gliscor, L50, F|
+expect |poke|p1|Polteageist, L50|
+expect |poke|p1|Gourgeist-Small, L50, M|
+expect |poke|p1|Noivern, L50, F|
+expect |poke|p1|Scovillain, L50, F|
+expect |poke|p1|Beartic, L50, M|
+expect |poke|p2|Roserade, L50, F|
+expect |poke|p2|Heracross, L50, M|
+expect |poke|p2|Aegislash, L50, F|
+expect |poke|p2|Scovillain, L50, M|
+expect |poke|p2|Inteleon, L50, F|
+expect |poke|p2|Mabosstiff, L50, M, shiny|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Scovillain|Scovillain, L50, F|140/140
+expect |switch|p1a: Scovillain|Scovillain, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Chomp|Noivern, L50, F|179/179
+expect |switch|p1b: Chomp|Noivern, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Mabosstiff|Mabosstiff, L50, M, shiny|158/158
+expect |switch|p2a: Mabosstiff|Mabosstiff, L50, M, shiny|100/100
+expect |split|p2
+expect |switch|p2b: Roserade|Roserade, L50, F|136/136
+expect |switch|p2b: Roserade|Roserade, L50, F|100/100
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |detailschange|p1a: Scovillain|Scovillain-Mega, L50, F
+expect |-mega|p1a: Scovillain|Scovillain|Scovillainite
+expect |rng|2|1
+expect |move|p1b: Chomp|Iron Tail|p2a: Mabosstiff|[miss]
+expect |rng|100|78
+expect |-miss|p1b: Chomp|p2a: Mabosstiff
+expect |rng|2|1
+expect |move|p2a: Mabosstiff|Torment|p1b: Chomp
+expect |rng|100|61
+expect |-start|p1b: Chomp|Torment
+expect |rng|2|1
+expect |move|p2b: Roserade|Gastro Acid|p1a: Scovillain
+expect |rng|100|82
+expect |-endability|p1a: Scovillain
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Scovillain|Brutal Swing|p2a: Mabosstiff|[spread] p1b,p2a,p2b
+expect |rng|100|3
+expect |rng|100|63
+expect |rng|100|21
+expect |rng|24|2
+expect |rng|16|7
+expect |rng|24|9
+expect |rng|16|13
+expect |-resisted|p2a: Mabosstiff|1
+expect |rng|24|21
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Chomp|150/179
+expect |-damage|p1b: Chomp|83/100
+expect |split|p2
+expect |-damage|p2a: Mabosstiff|146/158
+expect |-damage|p2a: Mabosstiff|92/100
+expect |split|p2
+expect |-damage|p2b: Roserade|111/136
+expect |-damage|p2b: Roserade|81/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |-activate|p1b: Chomp|move: Struggle
+expect |move|p1b: Chomp|Struggle|p2a: Mabosstiff
+expect |rng|24|21
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Mabosstiff|131/158
+expect |-damage|p2a: Mabosstiff|82/100
+expect |split|p1
+expect |-damage|p1b: Chomp|105/179|[from] recoil
+expect |-damage|p1b: Chomp|58/100|[from] recoil
+expect |rng|2|1
+expect |move|p2b: Roserade|Future Sight|p1b: Chomp
+expect |-start|p2b: Roserade|move: Future Sight
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Scovillain|Brutal Swing|p2b: Roserade|[spread] p1b,p2a,p2b
+expect |rng|100|56
+expect |rng|100|12
+expect |rng|100|66
+expect |rng|24|18
+expect |rng|16|2
+expect |rng|24|11
+expect |rng|16|12
+expect |-resisted|p2a: Mabosstiff|1
+expect |rng|24|20
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Chomp|74/179
+expect |-damage|p1b: Chomp|41/100
+expect |split|p2
+expect |-damage|p2a: Mabosstiff|119/158
+expect |-damage|p2a: Mabosstiff|75/100
+expect |split|p2
+expect |-damage|p2b: Roserade|85/136
+expect |-damage|p2b: Roserade|62/100
+expect |move|p2a: Mabosstiff|Counter|p1a: Scovillain
+expect |rng|100|92
+expect |split|p1
+expect |-damage|p1a: Scovillain|116/140
+expect |-damage|p1a: Scovillain|82/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Beartic, L50, M|189/189
+expect |switch|p1b: ThisNameIsFarTooLong|Beartic, L50, M|100/100
+expect |rng|2|0
+expect |move|p2a: Mabosstiff|Torment|p2b: Roserade
+expect |rng|100|95
+expect |-start|p2b: Roserade|Torment
+expect |rng|2|1
+expect |move|p2b: Roserade|Future Sight|p1a: Scovillain
+expect |-start|p2b: Roserade|move: Future Sight
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Scovillain|Brutal Swing|p2b: Roserade|[spread] p1b,p2a,p2b
+expect |rng|100|81
+expect |rng|100|68
+expect |rng|100|68
+expect |rng|24|20
+expect |rng|16|6
+expect |rng|24|2
+expect |rng|16|12
+expect |-resisted|p2a: Mabosstiff|1
+expect |rng|24|20
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|159/189
+expect |-damage|p1b: ThisNameIsFarTooLong|84/100
+expect |split|p2
+expect |-damage|p2a: Mabosstiff|107/158
+expect |-damage|p2a: Mabosstiff|67/100
+expect |split|p2
+expect |-damage|p2b: Roserade|60/136
+expect |-damage|p2b: Roserade|44/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Mr. Bubbles|Inteleon, L50, F|177/177
+expect |switch|p2b: Mr. Bubbles|Inteleon, L50, F|100/100
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Mabosstiff|Yawn|p1a: Scovillain
+expect |-start|p1a: Scovillain|move: Yawn|[of] p2a: Mabosstiff
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Scovillain|Brutal Swing|p2b: Mr. Bubbles|[spread] p1b,p2a,p2b
+expect |rng|100|50
+expect |rng|100|89
+expect |rng|100|56
+expect |rng|24|18
+expect |rng|16|15
+expect |rng|24|23
+expect |rng|16|1
+expect |-resisted|p2a: Mabosstiff|1
+expect |rng|24|18
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|132/189
+expect |-damage|p1b: ThisNameIsFarTooLong|69/100
+expect |split|p2
+expect |-damage|p2a: Mabosstiff|94/158
+expect |-damage|p2a: Mabosstiff|59/100
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|142/177
+expect |-damage|p2b: Mr. Bubbles|80/100
+expect |rng|2|0
+expect |rng|2|1
+expect |-activate|p1b: ThisNameIsFarTooLong|move: Struggle
+expect |move|p1b: ThisNameIsFarTooLong|Struggle|p2b: Mr. Bubbles
+expect |rng|24|17
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|102/177
+expect |-damage|p2b: Mr. Bubbles|57/100
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|85/189|[from] recoil
+expect |-damage|p1b: ThisNameIsFarTooLong|44/100|[from] recoil
+expect |
+expect |-end|p1b: ThisNameIsFarTooLong|move: Future Sight
+expect |rng|100|19
+expect |rng|24|18
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|19/189
+expect |-damage|p1b: ThisNameIsFarTooLong|10/100
+expect |upkeep
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Mr. Bubbles|Imprison|p2b: Mr. Bubbles
+expect |-start|p2b: Mr. Bubbles|move: Imprison
+expect |rng|2|1
+expect |move|p2a: Mabosstiff|Yawn|p2b: Mr. Bubbles
+expect |-start|p2b: Mr. Bubbles|move: Yawn|[of] p2a: Mabosstiff
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Scovillain|Water Spout|p2a: Mabosstiff|[spread] p2a,p2b
+expect |rng|100|24
+expect |rng|100|14
+expect |rng|24|21
+expect |rng|16|12
+expect |rng|24|16
+expect |rng|16|7
+expect |-resisted|p2b: Mr. Bubbles|1
+expect |split|p2
+expect |-damage|p2a: Mabosstiff|22/158
+expect |-damage|p2a: Mabosstiff|13/100
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|70/177
+expect |-damage|p2b: Mr. Bubbles|39/100
+expect |move|p1b: ThisNameIsFarTooLong|Growth|p1b: ThisNameIsFarTooLong
+expect |-boost|p1b: ThisNameIsFarTooLong|atk|1
+expect |-boost|p1b: ThisNameIsFarTooLong|spa|1
+expect |
+expect |-end|p1a: Scovillain|move: Future Sight
+expect |rng|100|90
+expect |rng|24|3
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Scovillain|53/140
+expect |-damage|p1a: Scovillain|37/100
+expect |-end|p1a: Scovillain|move: Yawn|[silent]
+expect |-status|p1a: Scovillain|slp
+expect |rng|3|1
+expect |upkeep
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Chomp|Noivern, L50, F|74/179
+expect |switch|p1b: Chomp|Noivern, L50, F|41/100
+expect |rng|2|1
+expect |move|p2b: Mr. Bubbles|Fiery Dance|p2a: Mabosstiff
+expect |rng|100|19
+expect |rng|24|13
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Mabosstiff|0 fnt
+expect |-damage|p2a: Mabosstiff|0 fnt
+expect |rng|100|85
+expect |faint|p2a: Mabosstiff
+expect |rng|1|0
+expect |rng|1|0
+expect |cant|p1a: Scovillain|slp
+expect |
+expect |-end|p2b: Mr. Bubbles|move: Yawn|[silent]
+expect |-status|p2b: Mr. Bubbles|slp
+expect |rng|3|0
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Roserade|Roserade, L50, F|60/136
+expect |switch|p2a: Roserade|Roserade, L50, F|44/100
+expect |turn|7
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Polteageist|Polteageist, L50|145/145
+expect |switch|p1b: Polteageist|Polteageist, L50|100/100
+expect |split|p2
+expect |switch|p2a: Chomp|Aegislash, L50, F|141/141
+expect |switch|p2a: Chomp|Aegislash, L50, F|100/100
+expect |rng|2|1
+expect |cant|p2b: Mr. Bubbles|slp
+expect |rng|2|0
+expect |rng|2|1
+expect |cant|p1a: Scovillain|slp
+expect |
+expect |upkeep
+expect |turn|8
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Beartic, L50, M|19/189
+expect |switch|p1b: ThisNameIsFarTooLong|Beartic, L50, M|10/100
+expect |rng|2|0
+expect |-curestatus|p2b: Mr. Bubbles|slp|[msg]
+expect |move|p2b: Mr. Bubbles|Shadow Claw|p1b: ThisNameIsFarTooLong
+expect |rng|100|73
+expect |rng|8|7
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|0 fnt
+expect |-damage|p1b: ThisNameIsFarTooLong|0 fnt
+expect |faint|p1b: ThisNameIsFarTooLong
+expect |rng|2|0
+expect |rng|2|0
+expect |-curestatus|p1a: Scovillain|slp|[msg]
+expect |move|p1a: Scovillain|Water Spout|p2a: Chomp|[spread] p2a,p2b
+expect |rng|100|20
+expect |rng|100|30
+expect |rng|24|14
+expect |rng|16|13
+expect |rng|24|22
+expect |rng|16|14
+expect |-resisted|p2b: Mr. Bubbles|1
+expect |split|p2
+expect |-damage|p2a: Chomp|125/141
+expect |-damage|p2a: Chomp|88/100
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|57/177
+expect |-damage|p2b: Mr. Bubbles|32/100
+expect |-formechange|p2a: Chomp|Aegislash-Blade|
+expect |move|p2a: Chomp|Volt Switch|p2b: Mr. Bubbles
+expect |rng|100|8
+expect |rng|24|16
+expect |rng|16|7
+expect |-supereffective|p2b: Mr. Bubbles|1
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|0 fnt
+expect |-damage|p2b: Mr. Bubbles|0 fnt
+expect |faint|p2b: Mr. Bubbles
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Roserade|Roserade, L50, F|60/136|[from] Volt Switch
+expect |switch|p2a: Roserade|Roserade, L50, F|44/100|[from] Volt Switch
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Chomp|Aegislash, L50, F|125/141
+expect |switch|p2b: Chomp|Aegislash, L50, F|88/100
+expect |split|p1
+expect |switch|p1b: Chomp|Noivern, L50, F|74/179
+expect |switch|p1b: Chomp|Noivern, L50, F|41/100
+expect |turn|9
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1b: Chomp|Iron Tail|p1a: Scovillain
+expect |rng|100|42
+expect |rng|24|10
+expect |rng|16|4
+expect |-resisted|p1a: Scovillain|1
+expect |split|p1
+expect |-damage|p1a: Scovillain|37/140
+expect |-damage|p1a: Scovillain|26/100
+expect |rng|100|52
+expect |rng|2|0
+expect |move|p2a: Roserade|Future Sight|p1a: Scovillain
+expect |-start|p2a: Roserade|move: Future Sight
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Scovillain|Petal Dance|p2a: Roserade
+expect |rng|100|50
+expect |rng|24|20
+expect |rng|16|2
+expect |-resisted|p2a: Roserade|2
+expect |split|p2
+expect |-damage|p2a: Roserade|36/136
+expect |-damage|p2a: Roserade|26/100
+expect |rng|2|1
+expect |-formechange|p2b: Chomp|Aegislash-Blade|
+expect |move|p2b: Chomp|Volt Switch|p1a: Scovillain
+expect |rng|100|96
+expect |rng|24|10
+expect |rng|16|13
+expect |-resisted|p1a: Scovillain|1
+expect |split|p1
+expect |-damage|p1a: Scovillain|18/140
+expect |-damage|p1a: Scovillain|12/100
+expect |
+expect |upkeep
+expect |turn|10
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1b: Chomp|Iron Tail|p2a: Roserade
+expect |rng|100|66
+expect |rng|24|9
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Roserade|4/136
+expect |-damage|p2a: Roserade|2/100
+expect |rng|100|12
+expect |-unboost|p2a: Roserade|def|1
+expect |rng|2|1
+expect |move|p2a: Roserade|Teatime||[still]
+expect |-fieldactivate|move: Teatime
+expect |-fail|p2a: Roserade|move: Teatime
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Scovillain|Petal Dance|p2b: Chomp|[from] lockedmove
+expect |rng|100|83
+expect |rng|24|9
+expect |rng|16|4
+expect |-resisted|p2b: Chomp|1
+expect |split|p2
+expect |-damage|p2b: Chomp|43/141
+expect |-damage|p2b: Chomp|30/100
+expect |move|p2b: Chomp|Volt Switch|p1a: Scovillain
+expect |rng|100|2
+expect |rng|24|5
+expect |rng|16|9
+expect |-resisted|p1a: Scovillain|1
+expect |split|p1
+expect |-damage|p1a: Scovillain|0 fnt
+expect |-damage|p1a: Scovillain|0 fnt
+expect |faint|p1a: Scovillain
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Polteageist|Polteageist, L50|145/145
+expect |switch|p1a: Polteageist|Polteageist, L50|100/100
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p1b: Chomp|Iron Tail|p1a: Polteageist
+expect |rng|100|23
+expect |rng|24|11
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Polteageist|103/145
+expect |-damage|p1a: Polteageist|71/100
+expect |rng|100|90
+expect |rng|10|2
+expect |-start|p1b: Chomp|Disable|Iron Tail|[from] ability: Cursed Body|[of] p1a: Polteageist
+expect |move|p2a: Roserade|Future Sight|p2b: Chomp
+expect |-start|p2a: Roserade|move: Future Sight
+expect |move|p1a: Polteageist|Rising Voltage|p1b: Chomp
+expect |rng|100|67
+expect |rng|24|5
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Chomp|29/179
+expect |-damage|p1b: Chomp|16/100
+expect |move|p2b: Chomp|Volt Switch|p1b: Chomp
+expect |rng|100|2
+expect |rng|24|1
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1b: Chomp|0 fnt
+expect |-damage|p1b: Chomp|0 fnt
+expect |faint|p1b: Chomp
+expect |
+expect |-end|p1a: Polteageist|move: Future Sight
+expect |rng|100|58
+expect |rng|24|1
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Polteageist|48/145
+expect |-damage|p1a: Polteageist|33/100
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p2a: Roserade|Gastro Acid|p1a: Polteageist
+expect |rng|100|81
+expect |-endability|p1a: Polteageist
+expect |move|p1a: Polteageist|Scary Face|p2a: Roserade
+expect |rng|100|56
+expect |-unboost|p2a: Roserade|spe|2
+expect |move|p2b: Chomp|Volt Switch|p2a: Roserade
+expect |rng|100|34
+expect |rng|24|3
+expect |rng|16|10
+expect |-resisted|p2a: Roserade|1
+expect |split|p2
+expect |-damage|p2a: Roserade|0 fnt
+expect |-damage|p2a: Roserade|0 fnt
+expect |faint|p2a: Roserade
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p2b: Chomp|Quick Guard|p2b: Chomp
+expect |-singleturn|p2b: Chomp|Quick Guard
+expect |move|p1a: Polteageist|Volt Switch|p2b: Chomp
+expect |rng|100|74
+expect |rng|24|9
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Chomp|0 fnt
+expect |-damage|p2b: Chomp|0 fnt
+expect |faint|p2b: Chomp
+expect |
+expect |win|p1
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Gliscor, L50, F","condition":"152/152","active":true,"stats":{"atk":132,"def":145,"spa":73,"spd":117,"spe":133},"moves":["futuresight","uturn","corrosivegas","dig"],"baseAbility":"hypercutter","item":"ironball","pokeball":"pokeball","ability":"hypercutter","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":true,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Gourgeist-Small, L50, M","condition":"145/145","active":false,"stats":{"atk":110,"def":162,"spa":82,"spd":114,"spe":112},"moves":["poisonjab","guardswap"],"baseAbility":"frisk","item":"magnet","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"179/179","active":false,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: Scovillain","details":"Scovillain, L50, F","condition":"140/140","active":false,"stats":{"atk":128,"def":93,"spa":138,"spd":117,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"chlorophyll","item":"scovillainite","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"189/189","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"136/136","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: ThisNameIsFarTooLong","details":"Heracross, L50, M","condition":"168/168","active":true,"stats":{"atk":173,"def":102,"spa":54,"spd":134,"spe":105},"moves":["psyshieldbash","gyroball","bugbite","chargebeam"],"baseAbility":"guts","item":"","pokeball":"pokeball","ability":"guts","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"141/141","active":false,"stats":{"atk":82,"def":163,"spa":102,"spd":176,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Scovillain, L50, M","condition":"141/141","active":false,"stats":{"atk":128,"def":112,"spa":136,"spd":89,"spe":113},"moves":["petaldance","magnetrise"],"baseAbility":"chlorophyll","item":"scovillainite","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"177/177","active":false,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"158/158","active":false,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Brutal Swing","id":"brutalswing","pp":20,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Iron Tail","id":"irontail","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain, L50, F","condition":"140/140","active":true,"stats":{"atk":128,"def":93,"spa":138,"spd":117,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"chlorophyll","item":"scovillainite","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"179/179","active":true,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"189/189","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Torment","id":"torment","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Counter","id":"counter","pp":20,"maxpp":20,"target":"scripted","disabled":false},{"move":"Yawn","id":"yawn","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Future Sight","id":"futuresight","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"U-turn","id":"uturn","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Teatime","id":"teatime","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Gastro Acid","id":"gastroacid","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"158/158","active":true,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"136/136","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"177/177","active":false,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"141/141","active":false,"stats":{"atk":82,"def":163,"spa":102,"spd":176,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Brutal Swing","id":"brutalswing","pp":19,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Struggle","id":"struggle","target":"randomNormal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"140/140","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"150/179","active":true,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"189/189","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Torment","id":"torment","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Counter","id":"counter","pp":20,"maxpp":20,"target":"scripted","disabled":false},{"move":"Yawn","id":"yawn","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Future Sight","id":"futuresight","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"U-turn","id":"uturn","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Teatime","id":"teatime","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Gastro Acid","id":"gastroacid","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"146/158","active":true,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"111/136","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"177/177","active":false,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"141/141","active":false,"stats":{"atk":82,"def":163,"spa":102,"spd":176,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Brutal Swing","id":"brutalswing","pp":18,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"116/140","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":true,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"189/189","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Torment","id":"torment","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Counter","id":"counter","pp":19,"maxpp":20,"target":"scripted","disabled":false},{"move":"Yawn","id":"yawn","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Future Sight","id":"futuresight","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"U-turn","id":"uturn","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Teatime","id":"teatime","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Gastro Acid","id":"gastroacid","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"119/158","active":true,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"85/136","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"177/177","active":false,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"141/141","active":false,"stats":{"atk":82,"def":163,"spa":102,"spd":176,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Brutal Swing","id":"brutalswing","pp":17,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Struggle","id":"struggle","pp":1,"maxpp":1,"target":"randomNormal","disabled":false},{"move":"Growth","id":"growth","pp":20,"maxpp":20,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"116/140","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"159/189","active":true,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":false,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Torment","id":"torment","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Counter","id":"counter","pp":19,"maxpp":20,"target":"scripted","disabled":false},{"move":"Yawn","id":"yawn","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Future Sight","id":"futuresight","pp":10,"maxpp":12,"target":"normal","disabled":true},{"move":"U-turn","id":"uturn","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Teatime","id":"teatime","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Gastro Acid","id":"gastroacid","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"107/158","active":true,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"60/136","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"177/177","active":false,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"141/141","active":false,"stats":{"atk":82,"def":163,"spa":102,"spd":176,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Brutal Swing","id":"brutalswing","pp":16,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Growth","id":"growth","pp":20,"maxpp":20,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"116/140","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"19/189","active":true,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":false,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Torment","id":"torment","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Counter","id":"counter","pp":19,"maxpp":20,"target":"scripted","disabled":false},{"move":"Yawn","id":"yawn","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Fiery Dance","id":"fierydance","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"94/158","active":true,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"102/177","active":true,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"60/136","active":false,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"141/141","active":false,"stats":{"atk":82,"def":163,"spa":102,"spd":176,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Brutal Swing","id":"brutalswing","pp":16,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Struggle","id":"struggle","pp":0,"maxpp":1,"target":"randomNormal","disabled":true},{"move":"Growth","id":"growth","pp":19,"maxpp":20,"target":"self","disabled":false}],"maybeDisabled":true,"maybeLocked":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"53/140 slp","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"19/189","active":true,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":false,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Torment","id":"torment","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Counter","id":"counter","pp":19,"maxpp":20,"target":"scripted","disabled":false},{"move":"Yawn","id":"yawn","pp":10,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Fiery Dance","id":"fierydance","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"22/158","active":true,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"70/177","active":true,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"60/136","active":false,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"141/141","active":false,"stats":{"atk":82,"def":163,"spa":102,"spd":176,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"53/140 slp","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":true,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"19/189","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"0 fnt","active":true,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"70/177 slp","active":true,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"60/136","active":false,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"141/141","active":false,"stats":{"atk":82,"def":163,"spa":102,"spd":176,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Brutal Swing","id":"brutalswing","pp":16,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":15,"maxpp":16,"target":"normal","disabled":false}],"maybeDisabled":true,"maybeLocked":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"53/140 slp","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":true,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"19/189","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Future Sight","id":"futuresight","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"U-turn","id":"uturn","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Teatime","id":"teatime","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Gastro Acid","id":"gastroacid","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Fiery Dance","id":"fierydance","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"60/136","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"70/177 slp","active":true,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"141/141","active":false,"stats":{"atk":82,"def":163,"spa":102,"spd":176,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Brutal Swing","id":"brutalswing","pp":16,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Volt Switch","id":"voltswitch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Recover","id":"recover","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Rising Voltage","id":"risingvoltage","pp":20,"maxpp":20,"target":"normal","disabled":false}],"maybeDisabled":true,"maybeLocked":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"53/140 slp","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":true,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":false,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"19/189","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Volt Switch","id":"voltswitch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Quick Guard","id":"quickguard","pp":16,"maxpp":16,"target":"allySide","disabled":false}]},{"moves":[{"move":"Fiery Dance","id":"fierydance","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"141/141","active":true,"stats":{"atk":82,"def":163,"spa":102,"spd":176,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"70/177 slp","active":true,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"60/136","active":false,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"53/140","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"0 fnt","active":true,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":false,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"125/141","active":true,"stats":{"atk":172,"def":73,"spa":192,"spd":77,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"0 fnt","active":true,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"60/136","active":false,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"53/140","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"0 fnt","active":true,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":false,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"60/136","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"0 fnt","active":true,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"125/141","active":false,"stats":{"atk":82,"def":163,"spa":102,"spd":176,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Brutal Swing","id":"brutalswing","pp":16,"maxpp":20,"target":"allAdjacent","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":6,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"53/140","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":true,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"0 fnt","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Future Sight","id":"futuresight","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"U-turn","id":"uturn","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Teatime","id":"teatime","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Gastro Acid","id":"gastroacid","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Volt Switch","id":"voltswitch","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Quick Guard","id":"quickguard","pp":16,"maxpp":16,"target":"allySide","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"60/136","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"125/141","active":true,"stats":{"atk":82,"def":163,"spa":102,"spd":176,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Petal Dance","id":"petaldance"}],"trapped":true},{"moves":[{"move":"Iron Tail","id":"irontail","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"18/140","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":true,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"0 fnt","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Future Sight","id":"futuresight","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"U-turn","id":"uturn","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Teatime","id":"teatime","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Gastro Acid","id":"gastroacid","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Volt Switch","id":"voltswitch","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Quick Guard","id":"quickguard","pp":16,"maxpp":16,"target":"allySide","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"36/136","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"125/141","active":true,"stats":{"atk":172,"def":73,"spa":192,"spd":77,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"0 fnt","active":true,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":true,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"0 fnt","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false},{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":false,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"4/136","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"43/141","active":true,"stats":{"atk":172,"def":73,"spa":192,"spd":77,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Volt Switch","id":"voltswitch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Recover","id":"recover","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Rising Voltage","id":"risingvoltage","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":13,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"145/145","active":true,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"74/179","active":true,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"0 fnt","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false},{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"0 fnt","active":false,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Future Sight","id":"futuresight","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"U-turn","id":"uturn","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Teatime","id":"teatime","pp":11,"maxpp":12,"target":"all","disabled":false},{"move":"Gastro Acid","id":"gastroacid","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Volt Switch","id":"voltswitch","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Quick Guard","id":"quickguard","pp":16,"maxpp":16,"target":"allySide","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"4/136","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"43/141","active":true,"stats":{"atk":172,"def":73,"spa":192,"spd":77,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Volt Switch","id":"voltswitch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Recover","id":"recover","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Rising Voltage","id":"risingvoltage","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":12,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"48/145","active":true,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"0 fnt","active":true,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"0 fnt","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false},{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"0 fnt","active":false,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Future Sight","id":"futuresight","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"U-turn","id":"uturn","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Teatime","id":"teatime","pp":11,"maxpp":12,"target":"all","disabled":false},{"move":"Gastro Acid","id":"gastroacid","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Volt Switch","id":"voltswitch","pp":16,"maxpp":20,"target":"normal","disabled":false},{"move":"Quick Guard","id":"quickguard","pp":16,"maxpp":16,"target":"allySide","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"4/136","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"43/141","active":true,"stats":{"atk":172,"def":73,"spa":192,"spd":77,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Volt Switch","id":"voltswitch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Recover","id":"recover","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Rising Voltage","id":"risingvoltage","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":12,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Polteageist","details":"Polteageist, L50","condition":"48/145","active":true,"stats":{"atk":100,"def":87,"spa":182,"spd":135,"spe":102},"moves":["voltswitch","scaryface","recover","risingvoltage"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Noivern, L50, F","condition":"0 fnt","active":true,"stats":{"atk":87,"def":100,"spa":146,"spd":122,"spe":143},"moves":["irontail"],"baseAbility":"infiltrator","item":"dragonfang","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Beartic, L50, M","condition":"0 fnt","active":false,"stats":{"atk":159,"def":100,"spa":121,"spd":110,"spe":66},"moves":["struggle","growth"],"baseAbility":"swiftswim","item":"poisonbarb","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false},{"ident":"p1: Scovillain","details":"Scovillain-Mega, L50, F","condition":"0 fnt","active":false,"stats":{"atk":158,"def":115,"spa":165,"spd":137,"spe":103},"moves":["brutalswing","petaldance","waterspout"],"baseAbility":"spicyspray","item":"scovillainite","pokeball":"pokeball","ability":"spicyspray","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Future Sight","id":"futuresight","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"U-turn","id":"uturn","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Teatime","id":"teatime","pp":11,"maxpp":12,"target":"all","disabled":false},{"move":"Gastro Acid","id":"gastroacid","pp":10,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Volt Switch","id":"voltswitch","pp":15,"maxpp":20,"target":"normal","disabled":false},{"move":"Quick Guard","id":"quickguard","pp":16,"maxpp":16,"target":"allySide","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Roserade","details":"Roserade, L50, F","condition":"0 fnt","active":true,"stats":{"atk":98,"def":113,"spa":159,"spd":132,"spe":117},"moves":["futuresight","uturn","teatime","gastroacid"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Aegislash, L50, F","condition":"43/141","active":true,"stats":{"atk":172,"def":73,"spa":192,"spd":77,"spe":79},"moves":["voltswitch","quickguard"],"baseAbility":"stancechange","item":"damprock","pokeball":"pokeball","ability":"stancechange","commanding":false,"reviving":false},{"ident":"p2: Mabosstiff","details":"Mabosstiff, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":147,"def":113,"spa":91,"spd":84,"spe":128},"moves":["torment","counter","yawn"],"baseAbility":"stakeout","item":"","pokeball":"pokeball","ability":"stakeout","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Inteleon, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":85,"spa":146,"spd":97,"spe":153},"moves":["fierydance","imprison","shadowclaw"],"baseAbility":"sniper","item":"","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false}]}}

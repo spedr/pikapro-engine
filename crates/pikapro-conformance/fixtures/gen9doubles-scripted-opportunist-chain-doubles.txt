@@ -1,0 +1,99 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Espathra
+Ability: Opportunist
+Hardy Nature
+- Splash
+
+Pikachu
+Ability: Static
+Hardy Nature
+- Swords Dance
+end
+team p2
+Espathra
+Ability: Opportunist
+Hardy Nature
+- Splash
+
+Snorlax @ Mirror Herb
+Ability: Thick Fat
+Hardy Nature
+- Splash
+end
+choice p1 move 1, move 1
+choice p2 move 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Espathra|Espathra, F|331/331
+expect |switch|p1a: Espathra|Espathra, F|331/331
+expect |split|p1
+expect |switch|p1b: Pikachu|Pikachu, F|211/211
+expect |switch|p1b: Pikachu|Pikachu, F|211/211
+expect |split|p2
+expect |switch|p2a: Espathra|Espathra, F|331/331
+expect |switch|p2a: Espathra|Espathra, F|331/331
+expect |rng|2|0
+expect |split|p2
+expect |switch|p2b: Snorlax|Snorlax, M|461/461
+expect |switch|p2b: Snorlax|Snorlax, M|461/461
+expect |rng|2|1
+expect |rng|2|0
+expect |turn|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Espathra|Splash|p1a: Espathra
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Espathra|Splash|p2a: Espathra
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Pikachu|Swords Dance|p1b: Pikachu
+expect |-boost|p1b: Pikachu|atk|2
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |-ability|p2a: Espathra|Opportunist|boost
+expect |-boost|p2a: Espathra|atk|2
+expect |-enditem|p2b: Snorlax|Mirror Herb
+expect |-boost|p2b: Snorlax|atk|2|[from] item: Mirror Herb
+expect |rng|2|1
+expect |move|p2b: Snorlax|Splash|p2b: Snorlax
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |rng|2|0
+expect |turn|2

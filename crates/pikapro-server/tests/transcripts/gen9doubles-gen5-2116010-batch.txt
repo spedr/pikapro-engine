@@ -1,0 +1,177 @@
+# gen9doubles-gen5-2116010-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@write
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,603752bb13f65e67","p1":{"name":"Alice","team":"Sir Hops-a-Lot|Gurdurr||IronFist|FreezingGlare,ClangingScales,Covet|Bashful|216,5,89,,190,9|M|||50|,,,,,Normal]Veluza||NormalGem|Sharpness|Howl,Defog|Rash|47,2,9,204,,245||||50|,,,,,Ground]Arceus-Dark||MetalCoat|Multitype|FireBlast,Hurricane|Serious|44,215,1,29,9,205||||50|,,,,,Water]Growlithe||Protector|FlashFire|Peck,FloralHealing|Hardy|186,40,104,11,45,118||||50|,,,,,Dark]Wiglett||AbsorbBulb|Rattled|RisingVoltage|Sassy|,120,115,20,71,181|F|||50|,,,,,Fire]Big Tony's Pal|Bramblin|ProtectivePads|Infiltrator|Chloroblast,Sketch,BulkUp|Hasty|81,1,1,73,93,248||||50|,,,,,Stellar"},"p2":{"name":"Bob","team":"Banette||TangaBerry|CursedBody|SupercellSlam|Hasty|5,154,8,76,248,18|M|||50|,,,,,Dark]Pikachu|Arcanine|GalaricaWreath|FlashFire|FellStinger,Counter|Rash|204,21,,235,30,20||||50|,,,,,Bug]Hawlucha||ChestoBerry|Unburden|Screech,Uproar|Hasty|152,124,60,50,63,50||||50|,,,,,Flying]Big Tony's Pal|VivillonSavanna||ShieldDust|DreamEater,ThunderousKick,FickleBeam,LeafStorm|Mild|8,34,115,227,63,62||||50|,,,,,Flying]Oricorio-Pa'u||RoomService|Dancer|GrassyTerrain,Pound|Careful|8,159,204,70,2,66|F|||50|,,,,,Grass]Pikipek|||SkillLink|PollenPuff,DoubleEdge,AcidSpray,Imprison|Bold|93,94,43,28,203,39|M|||50|,,,,,Ghost"}}
+>p1 move 2 terastallize, move 1
+@write
+>p2 switch VIVILLON
+>p2 default
+@write
+>p1 move defog 1 mega
+>p2 move 1 -2
+@write
+>p2 move Supercell Slam +1 terastal, move counter
+>p1 move 1 -2, move 1
+@write
+>p1 move Freezing Glare +2 ,  move 2 1
+@write
+
+>p2 move 1 1, switch 6
+@write
+>p2 move 1 1, switch 6
+@write
+>p1 switch 5, move howl -1
+@write
+>forcetie
+@message
+update
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: Sir Hops-a-Lot|Gurdurr, L50, M|187/187
+|switch|p1a: Sir Hops-a-Lot|Gurdurr, L50, M|187/187
+|split|p1
+|switch|p1b: Veluza|Veluza, L50, M|171/171
+|switch|p1b: Veluza|Veluza, L50, M|171/171
+|split|p2
+|switch|p2a: Banette|Banette, L50, M|140/140
+|switch|p2a: Banette|Banette, L50, M|140/140
+|split|p2
+|switch|p2b: Pikachu|Arcanine, L50, M|191/191
+|switch|p2b: Pikachu|Arcanine, L50, M|191/191
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Freezing Glare","id":"freezingglare","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Clanging Scales","id":"clangingscales","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Covet","id":"covet","pp":40,"maxpp":40,"target":"normal","disabled":false}],"canTerastallize":"Normal"},{"moves":[{"move":"Howl","id":"howl","pp":64,"maxpp":64,"target":"allies","disabled":false},{"move":"Defog","id":"defog","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Ground"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Sir Hops-a-Lot","details":"Gurdurr, L50, M","condition":"187/187","active":true,"stats":{"atk":126,"def":116,"spa":60,"spd":94,"spe":61},"moves":["freezingglare","clangingscales","covet"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Veluza","details":"Veluza, L50, M","condition":"171/171","active":true,"stats":{"atk":122,"def":94,"spa":136,"spd":76,"spe":121},"moves":["howl","defog"],"baseAbility":"sharpness","item":"normalgem","pokeball":"pokeball","ability":"sharpness","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Dark, L50","condition":"201/201","active":false,"stats":{"atk":167,"def":140,"spa":144,"spd":141,"spe":166},"moves":["fireblast","hurricane"],"baseAbility":"multitype","item":"metalcoat","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"153/153","active":false,"stats":{"atk":95,"def":78,"spa":91,"spd":76,"spe":95},"moves":["peck","floralhealing"],"baseAbility":"flashfire","item":"protector","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Wiglett","details":"Wiglett, L50, F","condition":"85/85","active":false,"stats":{"atk":90,"def":59,"spa":58,"spd":59,"spe":124},"moves":["risingvoltage"],"baseAbility":"rattled","item":"absorbbulb","pokeball":"pokeball","ability":"rattled","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bramblin, L50, M","condition":"125/125","active":false,"stats":{"atk":85,"def":45,"spa":74,"spd":67,"spe":122},"moves":["chloroblast","sketch","bulkup"],"baseAbility":"infiltrator","item":"protectivepads","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Supercell Slam","id":"supercellslam","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Dark"},{"moves":[{"move":"Fell Stinger","id":"fellstinger","pp":40,"maxpp":40,"target":"normal","disabled":false},{"move":"Counter","id":"counter","pp":32,"maxpp":32,"target":"scripted","disabled":false}],"canTerastallize":"Bug"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Banette","details":"Banette, L50, M","condition":"140/140","active":true,"stats":{"atk":154,"def":77,"spa":113,"spd":114,"spe":95},"moves":["supercellslam"],"baseAbility":"cursedbody","item":"tangaberry","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Pikachu","details":"Arcanine, L50, M","condition":"191/191","active":true,"stats":{"atk":133,"def":100,"spa":163,"spd":93,"spe":118},"moves":["fellstinger","counter"],"baseAbility":"flashfire","item":"galaricawreath","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Hawlucha","details":"Hawlucha, L50, M","condition":"172/172","active":false,"stats":{"atk":128,"def":92,"spa":100,"spd":91,"spe":158},"moves":["screech","uproar"],"baseAbility":"unburden","item":"chestoberry","pokeball":"pokeball","ability":"unburden","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Vivillon-Savanna, L50, F","condition":"156/156","active":false,"stats":{"atk":76,"def":75,"spa":151,"spd":78,"spe":117},"moves":["dreameater","thunderouskick","ficklebeam","leafstorm"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, F","condition":"151/151","active":false,"stats":{"atk":110,"def":116,"spa":114,"spd":99,"spe":121},"moves":["grassyterrain","pound"],"baseAbility":"dancer","item":"roomservice","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Pikipek","details":"Pikipek, L50, M","condition":"122/122","active":false,"stats":{"atk":96,"def":60,"spa":54,"spd":75,"spe":90},"moves":["pollenpuff","doubleedge","acidspray","imprison"],"baseAbility":"skilllink","item":"","pokeball":"pokeball","ability":"skilllink","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You do not have a Pokémon named "VIVILLON" to switch to
+@message
+update
+|
+|t:|
+|-terastallize|p1a: Sir Hops-a-Lot|Normal
+|move|p1b: Veluza|Howl|p1b: Veluza|[spread] p1a,p1b
+|-boost|p1a: Sir Hops-a-Lot|atk|1
+|-boost|p1b: Veluza|atk|1
+|move|p2b: Pikachu|Fell Stinger|p1b: Veluza
+|-supereffective|p1b: Veluza
+|split|p1
+|-damage|p1b: Veluza|115/171
+|-damage|p1b: Veluza|115/171
+|move|p2a: Banette|Supercell Slam|p1a: Sir Hops-a-Lot
+|split|p1
+|-damage|p1a: Sir Hops-a-Lot|135/187
+|-damage|p1a: Sir Hops-a-Lot|135/187
+|move|p1a: Sir Hops-a-Lot|Clanging Scales|p2a: Banette|[spread] p2a,p2b
+|split|p2
+|-damage|p2a: Banette|123/140
+|-damage|p2a: Banette|123/140
+|split|p2
+|-damage|p2b: Pikachu|170/191
+|-damage|p2b: Pikachu|170/191
+|-unboost|p1a: Sir Hops-a-Lot|def|1
+|
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Freezing Glare","id":"freezingglare","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Clanging Scales","id":"clangingscales","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Covet","id":"covet","pp":40,"maxpp":40,"target":"normal","disabled":false}]},{"moves":[{"move":"Howl","id":"howl","pp":63,"maxpp":64,"target":"allies","disabled":false},{"move":"Defog","id":"defog","pp":24,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Sir Hops-a-Lot","details":"Gurdurr, L50, M","condition":"135/187","active":true,"stats":{"atk":126,"def":116,"spa":60,"spd":94,"spe":61},"moves":["freezingglare","clangingscales","covet"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Veluza","details":"Veluza, L50, M","condition":"115/171","active":true,"stats":{"atk":122,"def":94,"spa":136,"spd":76,"spe":121},"moves":["howl","defog"],"baseAbility":"sharpness","item":"normalgem","pokeball":"pokeball","ability":"sharpness","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Dark, L50","condition":"201/201","active":false,"stats":{"atk":167,"def":140,"spa":144,"spd":141,"spe":166},"moves":["fireblast","hurricane"],"baseAbility":"multitype","item":"metalcoat","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"153/153","active":false,"stats":{"atk":95,"def":78,"spa":91,"spd":76,"spe":95},"moves":["peck","floralhealing"],"baseAbility":"flashfire","item":"protector","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Wiglett","details":"Wiglett, L50, F","condition":"85/85","active":false,"stats":{"atk":90,"def":59,"spa":58,"spd":59,"spe":124},"moves":["risingvoltage"],"baseAbility":"rattled","item":"absorbbulb","pokeball":"pokeball","ability":"rattled","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bramblin, L50, M","condition":"125/125","active":false,"stats":{"atk":85,"def":45,"spa":74,"spd":67,"spe":122},"moves":["chloroblast","sketch","bulkup"],"baseAbility":"infiltrator","item":"protectivepads","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Supercell Slam","id":"supercellslam","pp":23,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Dark"},{"moves":[{"move":"Fell Stinger","id":"fellstinger","pp":39,"maxpp":40,"target":"normal","disabled":false},{"move":"Counter","id":"counter","pp":32,"maxpp":32,"target":"scripted","disabled":false}],"canTerastallize":"Bug"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Banette","details":"Banette, L50, M","condition":"123/140","active":true,"stats":{"atk":154,"def":77,"spa":113,"spd":114,"spe":95},"moves":["supercellslam"],"baseAbility":"cursedbody","item":"tangaberry","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Pikachu","details":"Arcanine, L50, M","condition":"170/191","active":true,"stats":{"atk":133,"def":100,"spa":163,"spd":93,"spe":118},"moves":["fellstinger","counter"],"baseAbility":"flashfire","item":"galaricawreath","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Hawlucha","details":"Hawlucha, L50, M","condition":"172/172","active":false,"stats":{"atk":128,"def":92,"spa":100,"spd":91,"spe":158},"moves":["screech","uproar"],"baseAbility":"unburden","item":"chestoberry","pokeball":"pokeball","ability":"unburden","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Vivillon-Savanna, L50, F","condition":"156/156","active":false,"stats":{"atk":76,"def":75,"spa":151,"spd":78,"spe":117},"moves":["dreameater","thunderouskick","ficklebeam","leafstorm"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, F","condition":"151/151","active":false,"stats":{"atk":110,"def":116,"spa":114,"spd":99,"spe":121},"moves":["grassyterrain","pound"],"baseAbility":"dancer","item":"roomservice","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Pikipek","details":"Pikipek, L50, M","condition":"122/122","active":false,"stats":{"atk":96,"def":60,"spa":54,"spd":75,"spe":90},"moves":["pollenpuff","doubleedge","acidspray","imprison"],"baseAbility":"skilllink","item":"","pokeball":"pokeball","ability":"skilllink","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Sir Hops-a-Lot doesn't have a move matching defog
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: move 1 -2 - missing other pokemon
+@message
+update
+|
+|t:|
+|-terastallize|p2a: Banette|Dark
+|move|p1b: Veluza|Howl|p1b: Veluza|[spread] p1a,p1b
+|-boost|p1a: Sir Hops-a-Lot|atk|1
+|-boost|p1b: Veluza|atk|1
+|move|p2a: Banette|Supercell Slam|p1a: Sir Hops-a-Lot
+|split|p1
+|-damage|p1a: Sir Hops-a-Lot|52/187
+|-damage|p1a: Sir Hops-a-Lot|52/187
+|move|p1a: Sir Hops-a-Lot|Freezing Glare|p1b: Veluza
+|-resisted|p1b: Veluza
+|split|p1
+|-damage|p1b: Veluza|101/171
+|-damage|p1b: Veluza|101/171
+|move|p2b: Pikachu|Counter||[still]
+|-fail|p2b: Pikachu
+|
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Freezing Glare","id":"freezingglare","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Clanging Scales","id":"clangingscales","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Covet","id":"covet","pp":40,"maxpp":40,"target":"normal","disabled":false}]},{"moves":[{"move":"Howl","id":"howl","pp":62,"maxpp":64,"target":"allies","disabled":false},{"move":"Defog","id":"defog","pp":24,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Sir Hops-a-Lot","details":"Gurdurr, L50, M","condition":"52/187","active":true,"stats":{"atk":126,"def":116,"spa":60,"spd":94,"spe":61},"moves":["freezingglare","clangingscales","covet"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":"Normal"},{"ident":"p1: Veluza","details":"Veluza, L50, M","condition":"101/171","active":true,"stats":{"atk":122,"def":94,"spa":136,"spd":76,"spe":121},"moves":["howl","defog"],"baseAbility":"sharpness","item":"normalgem","pokeball":"pokeball","ability":"sharpness","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Dark, L50","condition":"201/201","active":false,"stats":{"atk":167,"def":140,"spa":144,"spd":141,"spe":166},"moves":["fireblast","hurricane"],"baseAbility":"multitype","item":"metalcoat","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"153/153","active":false,"stats":{"atk":95,"def":78,"spa":91,"spd":76,"spe":95},"moves":["peck","floralhealing"],"baseAbility":"flashfire","item":"protector","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Wiglett","details":"Wiglett, L50, F","condition":"85/85","active":false,"stats":{"atk":90,"def":59,"spa":58,"spd":59,"spe":124},"moves":["risingvoltage"],"baseAbility":"rattled","item":"absorbbulb","pokeball":"pokeball","ability":"rattled","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bramblin, L50, M","condition":"125/125","active":false,"stats":{"atk":85,"def":45,"spa":74,"spd":67,"spe":122},"moves":["chloroblast","sketch","bulkup"],"baseAbility":"infiltrator","item":"protectivepads","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Supercell Slam","id":"supercellslam","pp":22,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Fell Stinger","id":"fellstinger","pp":39,"maxpp":40,"target":"normal","disabled":false},{"move":"Counter","id":"counter","pp":31,"maxpp":32,"target":"scripted","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Banette","details":"Banette, L50, M","condition":"123/140","active":true,"stats":{"atk":154,"def":77,"spa":113,"spd":114,"spe":95},"moves":["supercellslam"],"baseAbility":"cursedbody","item":"tangaberry","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p2: Pikachu","details":"Arcanine, L50, M","condition":"170/191","active":true,"stats":{"atk":133,"def":100,"spa":163,"spd":93,"spe":118},"moves":["fellstinger","counter"],"baseAbility":"flashfire","item":"galaricawreath","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Hawlucha","details":"Hawlucha, L50, M","condition":"172/172","active":false,"stats":{"atk":128,"def":92,"spa":100,"spd":91,"spe":158},"moves":["screech","uproar"],"baseAbility":"unburden","item":"chestoberry","pokeball":"pokeball","ability":"unburden","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Vivillon-Savanna, L50, F","condition":"156/156","active":false,"stats":{"atk":76,"def":75,"spa":151,"spd":78,"spe":117},"moves":["dreameater","thunderouskick","ficklebeam","leafstorm"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, F","condition":"151/151","active":false,"stats":{"atk":110,"def":116,"spa":114,"spd":99,"spe":121},"moves":["grassyterrain","pound"],"baseAbility":"dancer","item":"roomservice","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Pikipek","details":"Pikipek, L50, M","condition":"122/122","active":false,"stats":{"atk":96,"def":60,"spa":54,"spd":75,"spe":90},"moves":["pollenpuff","doubleedge","acidspray","imprison"],"baseAbility":"skilllink","item":"","pokeball":"pokeball","ability":"skilllink","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Pikipek|Pikipek, L50, M|122/122
+|switch|p2b: Pikipek|Pikipek, L50, M|122/122
+|move|p1b: Veluza|Defog|p2a: Banette
+|-unboost|p2a: Banette|evasion|1
+|move|p2a: Banette|Supercell Slam|p1a: Sir Hops-a-Lot
+|split|p1
+|-damage|p1a: Sir Hops-a-Lot|0 fnt
+|-damage|p1a: Sir Hops-a-Lot|0 fnt
+|faint|p1a: Sir Hops-a-Lot
+|
+|upkeep
+@message
+sideupdate
+p1
+|request|{"forceSwitch":[true,false],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Sir Hops-a-Lot","details":"Gurdurr, L50, M","condition":"0 fnt","active":true,"stats":{"atk":126,"def":116,"spa":60,"spd":94,"spe":61},"moves":["freezingglare","clangingscales","covet"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Veluza","details":"Veluza, L50, M","condition":"101/171","active":true,"stats":{"atk":122,"def":94,"spa":136,"spd":76,"spe":121},"moves":["howl","defog"],"baseAbility":"sharpness","item":"normalgem","pokeball":"pokeball","ability":"sharpness","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Dark, L50","condition":"201/201","active":false,"stats":{"atk":167,"def":140,"spa":144,"spd":141,"spe":166},"moves":["fireblast","hurricane"],"baseAbility":"multitype","item":"metalcoat","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Growlithe","details":"Growlithe, L50, F","condition":"153/153","active":false,"stats":{"atk":95,"def":78,"spa":91,"spd":76,"spe":95},"moves":["peck","floralhealing"],"baseAbility":"flashfire","item":"protector","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Wiglett","details":"Wiglett, L50, F","condition":"85/85","active":false,"stats":{"atk":90,"def":59,"spa":58,"spd":59,"spe":124},"moves":["risingvoltage"],"baseAbility":"rattled","item":"absorbbulb","pokeball":"pokeball","ability":"rattled","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bramblin, L50, M","condition":"125/125","active":false,"stats":{"atk":85,"def":45,"spa":74,"spd":67,"spe":122},"moves":["chloroblast","sketch","bulkup"],"baseAbility":"infiltrator","item":"protectivepads","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]},"noCancel":true}
+@message
+sideupdate
+p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Banette","details":"Banette, L50, M","condition":"123/140","active":true,"stats":{"atk":154,"def":77,"spa":113,"spd":114,"spe":95},"moves":["supercellslam"],"baseAbility":"cursedbody","item":"tangaberry","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p2: Pikipek","details":"Pikipek, L50, M","condition":"122/122","active":true,"stats":{"atk":96,"def":60,"spa":54,"spd":75,"spe":90},"moves":["pollenpuff","doubleedge","acidspray","imprison"],"baseAbility":"skilllink","item":"","pokeball":"pokeball","ability":"skilllink","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Hawlucha","details":"Hawlucha, L50, M","condition":"172/172","active":false,"stats":{"atk":128,"def":92,"spa":100,"spd":91,"spe":158},"moves":["screech","uproar"],"baseAbility":"unburden","item":"chestoberry","pokeball":"pokeball","ability":"unburden","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Vivillon-Savanna, L50, F","condition":"156/156","active":false,"stats":{"atk":76,"def":75,"spa":151,"spd":78,"spe":117},"moves":["dreameater","thunderouskick","ficklebeam","leafstorm"],"baseAbility":"shielddust","item":"","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, F","condition":"151/151","active":false,"stats":{"atk":110,"def":116,"spa":114,"spd":99,"spe":121},"moves":["grassyterrain","pound"],"baseAbility":"dancer","item":"roomservice","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Pikachu","details":"Arcanine, L50, M","condition":"170/191","active":false,"stats":{"atk":133,"def":100,"spa":163,"spd":93,"spe":118},"moves":["fellstinger","counter"],"baseAbility":"flashfire","item":"galaricawreath","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't do anything: It's not your turn
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You need a switch response
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"gen5,603752bb13f65e67","turns":3,"p1":"Alice","p2":"Bob","p1team":[{"name":"Sir Hops-a-Lot","species":"Gurdurr","item":"","ability":"Iron Fist","moves":["Freezing Glare","Clanging Scales","Covet"],"nature":"Bashful","evs":{"hp":216,"atk":5,"def":89,"spa":0,"spd":190,"spe":9},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Veluza","species":"Veluza","item":"Normal Gem","ability":"Sharpness","moves":["Howl","Defog"],"nature":"Rash","evs":{"hp":47,"atk":2,"def":9,"spa":204,"spd":0,"spe":245},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Arceus","species":"Arceus-Dark","item":"Metal Coat","ability":"Multitype","moves":["Fire Blast","Hurricane"],"nature":"Serious","evs":{"hp":44,"atk":215,"def":1,"spa":29,"spd":9,"spe":205},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Growlithe","species":"Growlithe","item":"Protector","ability":"Flash Fire","moves":["Peck","Floral Healing"],"nature":"Hardy","evs":{"hp":186,"atk":40,"def":104,"spa":11,"spd":45,"spe":118},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Wiglett","species":"Wiglett","item":"Absorb Bulb","ability":"Rattled","moves":["Rising Voltage"],"nature":"Sassy","evs":{"hp":0,"atk":120,"def":115,"spa":20,"spd":71,"spe":181},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Bramblin","item":"Protective Pads","ability":"Infiltrator","moves":["Chloroblast","Sketch","Bulk Up"],"nature":"Hasty","evs":{"hp":81,"atk":1,"def":1,"spa":73,"spd":93,"spe":248},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Banette","species":"Banette","item":"Tanga Berry","ability":"Cursed Body","moves":["Supercell Slam"],"nature":"Hasty","evs":{"hp":5,"atk":154,"def":8,"spa":76,"spd":248,"spe":18},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pikachu","species":"Arcanine","item":"Galarica Wreath","ability":"Flash Fire","moves":["Fell Stinger","Counter"],"nature":"Rash","evs":{"hp":204,"atk":21,"def":0,"spa":235,"spd":30,"spe":20},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Hawlucha","species":"Hawlucha","item":"Chesto Berry","ability":"Unburden","moves":["Screech","Uproar"],"nature":"Hasty","evs":{"hp":152,"atk":124,"def":60,"spa":50,"spd":63,"spe":50},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Vivillon-Savanna","item":"","ability":"Shield Dust","moves":["Dream Eater","Thunderous Kick","Fickle Beam","Leaf Storm"],"nature":"Mild","evs":{"hp":8,"atk":34,"def":115,"spa":227,"spd":63,"spe":62},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Oricorio","species":"Oricorio-Pa'u","item":"Room Service","ability":"Dancer","moves":["Grassy Terrain","Pound"],"nature":"Careful","evs":{"hp":8,"atk":159,"def":204,"spa":70,"spd":2,"spe":66},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pikipek","species":"Pikipek","item":"","ability":"Skill Link","moves":["Pollen Puff","Double-Edge","Acid Spray","Imprison"],"nature":"Bold","evs":{"hp":93,"atk":94,"def":43,"spa":28,"spd":203,"spe":39},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[5,6],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@!Team Preview\",\"seed\":\"gen5,603752bb13f65e67\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Sir Hops-a-Lot|Gurdurr||IronFist|FreezingGlare,ClangingScales,Covet|Bashful|216,5,89,,190,9|M|||50|,,,,,Normal]Veluza||NormalGem|Sharpness|Howl,Defog|Rash|47,2,9,204,,245||||50|,,,,,Ground]Arceus-Dark||MetalCoat|Multitype|FireBlast,Hurricane|Serious|44,215,1,29,9,205||||50|,,,,,Water]Growlithe||Protector|FlashFire|Peck,FloralHealing|Hardy|186,40,104,11,45,118||||50|,,,,,Dark]Wiglett||AbsorbBulb|Rattled|RisingVoltage|Sassy|,120,115,20,71,181|F|||50|,,,,,Fire]Big Tony's Pal|Bramblin|ProtectivePads|Infiltrator|Chloroblast,Sketch,BulkUp|Hasty|81,1,1,73,93,248||||50|,,,,,Stellar\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Banette||TangaBerry|CursedBody|SupercellSlam|Hasty|5,154,8,76,248,18|M|||50|,,,,,Dark]Pikachu|Arcanine|GalaricaWreath|FlashFire|FellStinger,Counter|Rash|204,21,,235,30,20||||50|,,,,,Bug]Hawlucha||ChestoBerry|Unburden|Screech,Uproar|Hasty|152,124,60,50,63,50||||50|,,,,,Flying]Big Tony's Pal|VivillonSavanna||ShieldDust|DreamEater,ThunderousKick,FickleBeam,LeafStorm|Mild|8,34,115,227,63,62||||50|,,,,,Flying]Oricorio-Pa'u||RoomService|Dancer|GrassyTerrain,Pound|Careful|8,159,204,70,2,66|F|||50|,,,,,Grass]Pikipek|||SkillLink|PollenPuff,DoubleEdge,AcidSpray,Imprison|Bold|93,94,43,28,203,39|M|||50|,,,,,Ghost\"}",">p1 move clangingscales terastallize, move howl",">p2 move supercellslam, move fellstinger",">p1 move freezingglare -2, move howl",">p2 move supercellslam +1 terastallize, move counter",">p1 move freezingglare +2, move defog +1",">p2 move supercellslam +1, switch 6",">forcetie"]}

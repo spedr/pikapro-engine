@@ -1,0 +1,222 @@
+# gen9vgc-sodium-2120015-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option keep-alive
+@option replay omniscient
+@write
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"sodium,7d7f6fdb82bd665d"}
+@write
+>player p1 {"name":"Alice","team":"Porygon-Z|||Adaptability|LowSweep,FieryWrath,Ingrain,Headbutt|Bold|,48,108,1,108,244||||50|,,,,,Bug]Pikachu|SinisteaAntique||WeakArmor|BoltStrike,Teatime,LeafBlade,BarbBarrage|Jolly|13,106,7,115,19,211||||50|,,,,,Ice]Sparky|Snover||Soundproof|SpiritBreak,Bind|Adamant|81,223,,7,173,16||||50|,,,,,Dragon]Chien-Pao|||SwordofRuin|FlameCharge,BranchPoke,RockWrecker|Timid|68,101,,157,17,165||||50|,,,,,Electric]Nibbles|Sandslash|StarSweet|SandVeil|Swallow|Lax|38,129,142,4,177,16|||S|50|,,,,,Psychic]Sir Hops-a-Lot|Tandemaus|FlameOrb|OwnTempo|MeteorMash,FlowerTrick,MortalSpin,FairyLock|Mild|20,154,30,19,244,9||||50|,,,,,Electric"}
+@write
+>player p2 {"name":"Bob","team":"Chomp|Flareon|DestinyKnot|Guts|Swagger,Moonblast|Relaxed|58,43,20,12,112,10|M|||50|,,,,,Dark]Mr. Bubbles|PikachuWorld|DreadPlate|Static|ThroatChop,IcicleCrash|Mild|18,1,144,72,88,105|M||S|50|,,,,,Dark]Big Tony's Pal|Meowscarada|BlackGlasses|Protean|WaterSpout,DazzlingGleam,AuraSphere|Lax|96,227,42,37,57,33||||50|,,,,,Psychic]Ludicolo|||SwiftSwim|BloodMoon,TorchSong,FinalGambit|Sassy|145,242,7,44,42,30||||50|,,,,,Ground]Sir Hops-a-Lot|Seel||ThickFat|PrismaticLaser,SleepTalk|Mild|77,69,202,87,48,10||||50|,,,,,Dark]Gurdurr|||Guts|LifeDew,WonderRoom|Mild|,190,1,179,5,78||||50|,,,,,Steel"}
+@write
+>p2 team 1236
+@write
+>p1 team 5624
+@write
+>p1 move Swallow terastal, move 1 -1
+@write
+>p2 move swagger -2,move 2 terastallize -1
+@write
+>p1 move Swallow ,  move flowertrick -1
+@write
+>p2 move 2 -2, move 1 -1
+@write
+>p2 pass, default
+@write
+>p2 default
+@write
+>p1 undo
+@write
+>p1 switch 3, move 4
+@write
+>p1 move 4 2, move 2 2
+@write
+>p2 switch 0
+@write
+>p2 move 1 -2, move 2
+@write
+>p1 switch chien-pao ,  switch 3
+@write
+>p2 move 2 2, move 3 1
+@write
+>p1 move Flame Charge -2, move 1
+@write
+>p2 Move 1
+@write
+>p1 pass ,  move swallow
+@write
+>forcelose p1
+@write
+>p1 move 1
+@write
+>chat after the end
+@write
+>forcewin p1
+@write
+>tiebreak
+@write
+>requestlog
+@write
+>p2 undo
+@message
+|t:|
+|gametype|doubles
+@message
+|player|p1|Alice||
+@message
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Porygon-Z, L50|
+|poke|p1|Sinistea-Antique, L50|
+|poke|p1|Snover, L50, F|
+|poke|p1|Chien-Pao, L50|
+|poke|p1|Sandslash, L50, F|
+|poke|p1|Tandemaus, L50|
+|poke|p2|Flareon, L50, M|
+|poke|p2|Pikachu-World, L50, M|
+|poke|p2|Meowscarada, L50, F|
+|poke|p2|Ludicolo, L50, F|
+|poke|p2|Seel, L50, M|
+|poke|p2|Gurdurr, L50, F|
+|teampreview|4
+@message
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Nibbles|Sandslash, L50, F, shiny|155/155
+|switch|p1b: Sir Hops-a-Lot|Tandemaus, L50|128/128
+|switch|p2a: Chomp|Flareon, L50, M|147/147
+|switch|p2b: Mr. Bubbles|Pikachu-World, L50, M, shiny|112/112
+|turn|1
+@message
+|
+|t:|
+|-terastallize|p2b: Mr. Bubbles|Dark
+|-terastallize|p1a: Nibbles|Psychic
+|move|p2b: Mr. Bubbles|Icicle Crash|p2a: Chomp
+|-resisted|p2a: Chomp
+|-damage|p2a: Chomp|133/147
+|move|p1b: Sir Hops-a-Lot|Meteor Mash|p1a: Nibbles
+|-damage|p1a: Nibbles|135/155
+|move|p1a: Nibbles|Swallow||[still]
+|-fail|p1a: Nibbles
+|move|p2a: Chomp|Swagger|p2b: Mr. Bubbles
+|-boost|p2b: Mr. Bubbles|atk|2
+|-start|p2b: Mr. Bubbles|confusion
+|
+|-status|p1b: Sir Hops-a-Lot|brn|[from] item: Flame Orb
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|-activate|p2b: Mr. Bubbles|confusion
+|move|p2b: Mr. Bubbles|Throat Chop|p2a: Chomp
+|-damage|p2a: Chomp|40/147
+|-start|p2a: Chomp|Throat Chop|[silent]
+|move|p1b: Sir Hops-a-Lot|Flower Trick|p1a: Nibbles
+|-crit|p1a: Nibbles
+|-damage|p1a: Nibbles|123/155
+|move|p1a: Nibbles|Swallow||[still]
+|-fail|p1a: Nibbles
+|move|p2a: Chomp|Moonblast|p2b: Mr. Bubbles
+|-supereffective|p2b: Mr. Bubbles
+|-damage|p2b: Mr. Bubbles|0 fnt
+|faint|p2b: Mr. Bubbles
+|
+|-damage|p1b: Sir Hops-a-Lot|120/128 brn|[from] brn
+|upkeep
+@message
+|
+|t:|
+|switch|p2b: Big Tony's Pal|Meowscarada, L50, F|163/163
+|turn|3
+@message
+|
+|t:|
+|switch|p1a: Pikachu|Sinistea-Antique, L50|117/117
+|move|p2b: Big Tony's Pal|Water Spout|p1a: Pikachu|[spread] p1a,p1b
+|-start|p2b: Big Tony's Pal|typechange|Water|[from] ability: Protean
+|-crit|p1b: Sir Hops-a-Lot
+|-damage|p1a: Pikachu|27/117
+|-damage|p1b: Sir Hops-a-Lot|11/128 brn
+|move|p1b: Sir Hops-a-Lot|Fairy Lock|p1b: Sir Hops-a-Lot
+|-fieldactivate|move: Fairy Lock
+|move|p2a: Chomp|Swagger|p1a: Pikachu
+|-boost|p1a: Pikachu|atk|2
+|-start|p1a: Pikachu|confusion
+|
+|-damage|p1b: Sir Hops-a-Lot|3/128 brn|[from] brn
+|-end|p2a: Chomp|Throat Chop|[silent]
+|upkeep
+|turn|4
+@message
+|
+|t:|
+|move|p2b: Big Tony's Pal|Dazzling Gleam|p1a: Pikachu|[spread] p1a,p1b
+|-damage|p1a: Pikachu|0 fnt
+|-damage|p1b: Sir Hops-a-Lot|0 fnt
+|faint|p1a: Pikachu
+|faint|p1b: Sir Hops-a-Lot
+|move|p2a: Chomp|Swagger|p2b: Big Tony's Pal
+|-boost|p2b: Big Tony's Pal|atk|2
+|-start|p2b: Big Tony's Pal|confusion
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1a: Chien-Pao|Chien-Pao, L50|164/164
+|switch|p1b: Nibbles|Sandslash, L50, F, shiny, tera:Psychic|123/155
+|-ability|p1a: Chien-Pao|Sword of Ruin
+|turn|5
+@message
+|
+|t:|
+|move|p1a: Chien-Pao|Flame Charge|p1b: Nibbles
+|-damage|p1b: Nibbles|99/155
+|-boost|p1a: Chien-Pao|spe|1
+|-activate|p2b: Big Tony's Pal|confusion
+|move|p2b: Big Tony's Pal|Aura Sphere|p1a: Chien-Pao
+|-supereffective|p1a: Chien-Pao
+|-damage|p1a: Chien-Pao|0 fnt
+|faint|p1a: Chien-Pao
+|move|p1b: Nibbles|Swallow||[still]
+|-fail|p1b: Nibbles
+|move|p2a: Chomp|Moonblast|p1b: Nibbles
+|-damage|p1b: Nibbles|47/155
+|
+|upkeep
+|turn|6
+@message
+|
+|win|Bob
+@message
+|chat|after the end
+@message
+requesteddata
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"sodium,7d7f6fdb82bd665d"}
+>player p1 {"name":"Alice","team":"Porygon-Z|||Adaptability|LowSweep,FieryWrath,Ingrain,Headbutt|Bold|,48,108,1,108,244||||50|,,,,,Bug]Pikachu|SinisteaAntique||WeakArmor|BoltStrike,Teatime,LeafBlade,BarbBarrage|Jolly|13,106,7,115,19,211||||50|,,,,,Ice]Sparky|Snover||Soundproof|SpiritBreak,Bind|Adamant|81,223,,7,173,16||||50|,,,,,Dragon]Chien-Pao|||SwordofRuin|FlameCharge,BranchPoke,RockWrecker|Timid|68,101,,157,17,165||||50|,,,,,Electric]Nibbles|Sandslash|StarSweet|SandVeil|Swallow|Lax|38,129,142,4,177,16|||S|50|,,,,,Psychic]Sir Hops-a-Lot|Tandemaus|FlameOrb|OwnTempo|MeteorMash,FlowerTrick,MortalSpin,FairyLock|Mild|20,154,30,19,244,9||||50|,,,,,Electric"}
+>player p2 {"name":"Bob","team":"Chomp|Flareon|DestinyKnot|Guts|Swagger,Moonblast|Relaxed|58,43,20,12,112,10|M|||50|,,,,,Dark]Mr. Bubbles|PikachuWorld|DreadPlate|Static|ThroatChop,IcicleCrash|Mild|18,1,144,72,88,105|M||S|50|,,,,,Dark]Big Tony's Pal|Meowscarada|BlackGlasses|Protean|WaterSpout,DazzlingGleam,AuraSphere|Lax|96,227,42,37,57,33||||50|,,,,,Psychic]Ludicolo|||SwiftSwim|BloodMoon,TorchSong,FinalGambit|Sassy|145,242,7,44,42,30||||50|,,,,,Ground]Sir Hops-a-Lot|Seel||ThickFat|PrismaticLaser,SleepTalk|Mild|77,69,202,87,48,10||||50|,,,,,Dark]Gurdurr|||Guts|LifeDew,WonderRoom|Mild|,190,1,179,5,78||||50|,,,,,Steel"}
+>p1 team 5, 6, 2, 4
+>p2 team 1, 2, 3, 6
+>p1 move swallow terastallize, move meteormash -1
+>p2 move swagger -2, move iciclecrash -1 terastallize
+>p1 move swallow, move flowertrick -1
+>p2 move moonblast -2, move throatchop -1
+>p2 pass, switch 3
+>p1 switch 3, move fairylock
+>p2 move swagger, move waterspout
+>p1 move barbbarrage +2, move flowertrick +2
+>p2 move swagger -2, move dazzlinggleam
+>p1 switch 4, switch 3
+>p1 move flamecharge -2, move swallow
+>p2 move moonblast +2, move aurasphere +1
+>forcelose p1
+>chat after the end
+>forcewin p1

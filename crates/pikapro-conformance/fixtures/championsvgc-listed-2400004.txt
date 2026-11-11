@@ -1,0 +1,518 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed cb2e e0f1 03b2 6be2
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Kangaskhan (F) @ Leftovers
+Ability: Scrappy
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Double-Edge
+- Drain Punch
+- Sucker Punch
+- Earthquake
+
+Trevenant (M) @ Choice Scarf
+Ability: Natural Cure
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Poltergeist
+- Horn Leech
+- Drain Punch
+- Earthquake
+
+Glalie-Mega (M) @ Glalitite
+Ability: Refrigerate
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Spikes
+- Explosion
+- Earthquake
+- Body Slam
+
+Leafeon (M) @ Life Orb
+Ability: Chlorophyll
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Leaf Blade
+- Double-Edge
+- Swords Dance
+- Knock Off
+
+Houndoom-Mega (M) @ Houndoominite
+Ability: Flash Fire
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Dark Pulse
+- Fire Blast
+- Nasty Plot
+- Taunt
+
+Starmie @ Starminite
+Ability: Natural Cure
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Bulk Up
+- Recover
+- Zen Headbutt
+- Liquidation
+end
+team p2
+Armarouge (M) @ Life Orb
+Ability: Weak Armor
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Calm Mind
+- Energy Ball
+- Armor Cannon
+- Psyshock
+
+Zoë (Indeedee-F) (F) @ Choice Scarf
+Ability: Psychic Surge
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Psychic
+- Hyper Voice
+- Healing Wish
+- Mystical Fire
+
+Sparky (Dragapult) (M) @ Leftovers
+Ability: Infiltrator
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Bold Nature
+- U-turn
+- Dragon Darts
+- Will-O-Wisp
+- Hex
+
+Sir Hops-a-Lot (Dedenne) (F) @ Sitrus Berry
+Ability: Cheek Pouch
+Level: 50
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Super Fang
+- Nuzzle
+- Thunderbolt
+- Dazzling Gleam
+
+X (Sceptile-Mega) (F) @ Sceptilite
+Ability: Lightning Rod
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Focus Blast
+- Shed Tail
+- Dragon Pulse
+- Giga Drain
+
+Polteageist @ White Herb
+Ability: Cursed Body
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Stored Power
+- Shadow Ball
+- Shell Smash
+- Giga Drain
+end
+choice p1 team 6423
+choice p2 team 2351
+choice p1 move 4 2, move 3
+choice p2 move Hyper Voice, move 3 +2
+choice p1 move 4 1 mega, move 1 2
+choice p2 switch 3, move 4 2
+choice p1 pass, switch 4
+choice p2 move 2, move 3 2
+choice p1 move 3 1, move 3
+choice p2 switch 3, pass
+choice p1 move 4 2, move 2
+choice p2 move 4 -2, move 1 -1
+choice p2 pass, switch Armarouge
+choice p1 pass, switch 3
+choice p2 switch 4,move 2 1
+choice p1 move 4 2, move 3 2
+choice p2 switch 4, move 2 -1
+choice p1 skip ,  move drainpunch +2
+choice p2 default
+choice p1 pass, move 3 1
+choice p2 move 2 -2, move 4 2
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Kangaskhan, L50, F|
+expect |poke|p1|Trevenant, L50, M, shiny|
+expect |poke|p1|Glalie, L50, M, shiny|
+expect |poke|p1|Leafeon, L50, M|
+expect |poke|p1|Houndoom, L50, M|
+expect |poke|p1|Starmie, L50|
+expect |poke|p2|Armarouge, L50, M|
+expect |poke|p2|Indeedee-F, L50, F|
+expect |poke|p2|Dragapult, L50, M|
+expect |poke|p2|Dedenne, L50, F|
+expect |poke|p2|Sceptile, L50, F|
+expect |poke|p2|Polteageist, L50, shiny|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Starmie|Starmie, L50|137/137
+expect |switch|p1a: Starmie|Starmie, L50|100/100
+expect |split|p1
+expect |switch|p1b: Leafeon|Leafeon, L50, M|142/142
+expect |switch|p1b: Leafeon|Leafeon, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Zoë|Indeedee-F, L50, F|147/147
+expect |switch|p2a: Zoë|Indeedee-F, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Sparky|Dragapult, L50, M|195/195
+expect |switch|p2b: Sparky|Dragapult, L50, M|100/100
+expect |-fieldstart|move: Psychic Terrain|[from] ability: Psychic Surge|[of] p2a: Zoë
+expect |turn|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Zoë|Hyper Voice|p1a: Starmie|[spread] p1a,p1b
+expect |rng|100|68
+expect |rng|100|61
+expect |rng|24|22
+expect |rng|16|11
+expect |rng|24|8
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Starmie|80/137
+expect |-damage|p1a: Starmie|58/100
+expect |split|p1
+expect |-damage|p1b: Leafeon|66/142
+expect |-damage|p1b: Leafeon|46/100
+expect |move|p1a: Starmie|Liquidation|p2b: Sparky
+expect |rng|100|53
+expect |rng|24|4
+expect |rng|16|14
+expect |-resisted|p2b: Sparky|1
+expect |split|p2
+expect |-damage|p2b: Sparky|168/195
+expect |-damage|p2b: Sparky|86/100
+expect |rng|100|29
+expect |move|p2b: Sparky|Will-O-Wisp|p1b: Leafeon
+expect |rng|100|6
+expect |-status|p1b: Leafeon|brn
+expect |move|p1b: Leafeon|Swords Dance|p1b: Leafeon
+expect |-boost|p1b: Leafeon|atk|2
+expect |
+expect |split|p2
+expect |-heal|p2b: Sparky|180/195|[from] item: Leftovers
+expect |-heal|p2b: Sparky|92/100|[from] item: Leftovers
+expect |split|p1
+expect |-damage|p1b: Leafeon|58/142 brn|[from] brn
+expect |-damage|p1b: Leafeon|40/100 brn|[from] brn
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Sceptile, L50, F|147/147
+expect |switch|p2a: X|Sceptile, L50, F|100/100
+expect |detailschange|p1a: Starmie|Starmie-Mega, L50
+expect |-mega|p1a: Starmie|Starmie|Starminite
+expect |rng|2|1
+expect |move|p1a: Starmie|Liquidation|p2a: X
+expect |rng|100|12
+expect |rng|24|19
+expect |rng|16|3
+expect |-resisted|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|40/147
+expect |-damage|p2a: X|27/100
+expect |rng|100|84
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Sparky|Hex|p1b: Leafeon
+expect |rng|100|52
+expect |rng|24|0
+expect |rng|16|6
+expect |-crit|p1b: Leafeon
+expect |split|p1
+expect |-damage|p1b: Leafeon|0 fnt
+expect |-damage|p1b: Leafeon|0 fnt
+expect |rng|2|1
+expect |faint|p1b: Leafeon
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |split|p2
+expect |-heal|p2b: Sparky|192/195|[from] item: Leftovers
+expect |-heal|p2b: Sparky|98/100|[from] item: Leftovers
+expect |upkeep
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Glalie|Glalie, L50, M, shiny|157/157
+expect |switch|p1b: Glalie|Glalie, L50, M, shiny|100/100
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |turn|3
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Starmie|Zen Headbutt|p2a: X
+expect |rng|100|18
+expect |rng|24|1
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: X|0 fnt
+expect |-damage|p2a: X|0 fnt
+expect |rng|100|84
+expect |rng|2|0
+expect |faint|p2a: X
+expect |rng|1|0
+expect |move|p2b: Sparky|Will-O-Wisp|p1b: Glalie
+expect |rng|100|64
+expect |-status|p1b: Glalie|brn
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Glalie|Earthquake|p2b: Sparky|[spread] p1a,p2b
+expect |rng|100|10
+expect |rng|100|34
+expect |rng|24|16
+expect |rng|16|4
+expect |rng|24|2
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Starmie|63/137
+expect |-damage|p1a: Starmie|45/100
+expect |split|p2
+expect |-damage|p2b: Sparky|176/195
+expect |-damage|p2b: Sparky|90/100
+expect |
+expect |split|p2
+expect |-heal|p2b: Sparky|188/195|[from] item: Leftovers
+expect |-heal|p2b: Sparky|96/100|[from] item: Leftovers
+expect |split|p1
+expect |-damage|p1b: Glalie|148/157 brn|[from] brn
+expect |-damage|p1b: Glalie|94/100 brn|[from] brn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoë|Indeedee-F, L50, F|147/147
+expect |switch|p2a: Zoë|Indeedee-F, L50, F|100/100
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2a: Zoë|Mystical Fire|p2b: Sparky
+expect |rng|100|68
+expect |rng|24|9
+expect |rng|16|4
+expect |-resisted|p2b: Sparky|1
+expect |split|p2
+expect |-damage|p2b: Sparky|167/195
+expect |-damage|p2b: Sparky|85/100
+expect |rng|100|71
+expect |-unboost|p2b: Sparky|spa|1
+expect |rng|2|1
+expect |move|p1a: Starmie|Liquidation|p2b: Sparky
+expect |rng|100|84
+expect |rng|24|10
+expect |rng|16|0
+expect |-resisted|p2b: Sparky|1
+expect |split|p2
+expect |-damage|p2b: Sparky|90/195
+expect |-damage|p2b: Sparky|46/100
+expect |rng|100|42
+expect |rng|2|0
+expect |move|p2b: Sparky|U-turn|p2a: Zoë
+expect |rng|100|53
+expect |rng|24|23
+expect |rng|16|9
+expect |-supereffective|p2a: Zoë|1
+expect |split|p2
+expect |-damage|p2a: Zoë|63/147
+expect |-damage|p2a: Zoë|42/100
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Armarouge|Armarouge, L50, M|162/162|[from] U-turn
+expect |switch|p2b: Armarouge|Armarouge, L50, M|100/100|[from] U-turn
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Glalie|Explosion|p2b: Armarouge|[spread] p1a,p2a,p2b
+expect |rng|100|15
+expect |rng|100|93
+expect |rng|100|72
+expect |rng|24|7
+expect |rng|16|3
+expect |rng|24|20
+expect |rng|16|8
+expect |rng|24|13
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Starmie|21/137
+expect |-damage|p1a: Starmie|15/100
+expect |split|p2
+expect |-damage|p2a: Zoë|4/147
+expect |-damage|p2a: Zoë|2/100
+expect |split|p2
+expect |-damage|p2b: Armarouge|119/162
+expect |-damage|p2b: Armarouge|73/100
+expect |-ability|p2b: Armarouge|Weak Armor|boost
+expect |-unboost|p2b: Armarouge|def|1
+expect |-boost|p2b: Armarouge|spe|2
+expect |faint|p1b: Glalie
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Trevenant|Trevenant, L50, M, shiny|162/162
+expect |switch|p1b: Trevenant|Trevenant, L50, M, shiny|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sparky|Dragapult, L50, M|90/195
+expect |switch|p2a: Sparky|Dragapult, L50, M|46/100
+expect |move|p2b: Armarouge|Energy Ball|p1a: Starmie
+expect |rng|100|65
+expect |rng|24|18
+expect |rng|16|14
+expect |-supereffective|p1a: Starmie|1
+expect |split|p1
+expect |-damage|p1a: Starmie|0 fnt
+expect |-damage|p1a: Starmie|0 fnt
+expect |rng|100|99
+expect |faint|p1a: Starmie
+expect |split|p2
+expect |-damage|p2b: Armarouge|103/162|[from] item: Life Orb
+expect |-damage|p2b: Armarouge|63/100|[from] item: Life Orb
+expect |move|p1b: Trevenant|Drain Punch|p2b: Armarouge
+expect |rng|100|7
+expect |rng|24|2
+expect |rng|16|8
+expect |-resisted|p2b: Armarouge|1
+expect |split|p2
+expect |-damage|p2b: Armarouge|72/162
+expect |-damage|p2b: Armarouge|44/100
+expect |-ability|p2b: Armarouge|Weak Armor|boost
+expect |-unboost|p2b: Armarouge|def|1
+expect |-boost|p2b: Armarouge|spe|2
+expect |
+expect |split|p2
+expect |-heal|p2a: Sparky|102/195|[from] item: Leftovers
+expect |-heal|p2a: Sparky|52/100|[from] item: Leftovers
+expect |-fieldend|move: Psychic Terrain
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoë|Indeedee-F, L50, F|4/147
+expect |switch|p2a: Zoë|Indeedee-F, L50, F|2/100
+expect |-fieldstart|move: Psychic Terrain|[from] ability: Psychic Surge|[of] p2a: Zoë
+expect |move|p2b: Armarouge|Energy Ball|p2a: Zoë
+expect |rng|100|91
+expect |rng|24|3
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Zoë|0 fnt
+expect |-damage|p2a: Zoë|0 fnt
+expect |rng|100|80
+expect |faint|p2a: Zoë
+expect |split|p2
+expect |-damage|p2b: Armarouge|56/162|[from] item: Life Orb
+expect |-damage|p2b: Armarouge|34/100|[from] item: Life Orb
+expect |move|p1b: Trevenant|Drain Punch|p2b: Armarouge
+expect |rng|100|98
+expect |rng|24|1
+expect |rng|16|10
+expect |-resisted|p2b: Armarouge|1
+expect |split|p2
+expect |-damage|p2b: Armarouge|16/162
+expect |-damage|p2b: Armarouge|9/100
+expect |-ability|p2b: Armarouge|Weak Armor|boost
+expect |-unboost|p2b: Armarouge|def|1
+expect |-boost|p2b: Armarouge|spe|2
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sparky|Dragapult, L50, M|102/195
+expect |switch|p2a: Sparky|Dragapult, L50, M|52/100
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2b: Armarouge|Psyshock|p1b: Trevenant
+expect |rng|100|45
+expect |rng|24|4
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1b: Trevenant|5/162
+expect |-damage|p1b: Trevenant|3/100
+expect |split|p2
+expect |-damage|p2b: Armarouge|0 fnt|[from] item: Life Orb
+expect |-damage|p2b: Armarouge|0 fnt|[from] item: Life Orb
+expect |faint|p2b: Armarouge
+expect |rng|1|0
+expect |move|p1b: Trevenant|Drain Punch|p2a: Sparky
+expect |-immune|p2a: Sparky
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2a: Sparky|Dragon Darts|p1b: Trevenant
+expect |rng|100|2
+expect |rng|24|12
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Trevenant|0 fnt
+expect |-damage|p1b: Trevenant|0 fnt
+expect |faint|p1b: Trevenant
+expect |
+expect |win|p2

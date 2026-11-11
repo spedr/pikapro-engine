@@ -1,0 +1,812 @@
+# Recorded by view_conformance. Do not edit by hand.
+format championsvgc
+seed 4500200
+source fuzz
+checks soundness leak meta=2
+team p1
+Absol @ Absolite
+Ability: Justified
+Level: 50
+Tera Type: Dark
+EVs: 1 Atk / 31 Def / 11 SpA / 1 SpD / 21 Spe
+Serious Nature
+- Forest's Curse
+- Slack Off
+
+Vanilluxe (F)
+Ability: Weak Armor
+Level: 50
+Tera Type: Ground
+EVs: 18 HP / 5 Atk / 19 SpA / 1 SpD / 19 Spe
+Gentle Nature
+- Barb Barrage
+- Rising Voltage
+
+Rotom-Wash
+Ability: Levitate
+Level: 50
+Tera Type: Dark
+EVs: 11 Atk / 30 Def / 19 SpA / 5 SpD / 1 Spe
+Rash Nature
+- Barb Barrage
+
+Typhlosion-Hisui @ Coba Berry
+Ability: Blaze
+Level: 50
+Tera Type: Ice
+EVs: 8 HP / 13 Def / 22 SpA / 23 Spe
+Adamant Nature
+- Nuzzle
+- Sticky Web
+
+Chomp (Espeon) (F)
+Ability: Magic Bounce
+Level: 50
+Tera Type: Rock
+EVs: 32 HP / 10 Atk / 1 Def / 4 SpA / 19 Spe
+Adamant Nature
+- Beat Up
+- Bite
+- Howl
+- Roar
+
+Lycanroc (F) @ Light Clay
+Ability: Keen Eye
+Level: 50
+Tera Type: Grass
+EVs: 14 HP / 12 Atk / 22 Def / 10 SpA / 3 SpD / 3 Spe
+Hasty Nature
+- Dragon Tail
+- Fire Blast
+end
+team p2
+Sneasler (F) @ Iron Ball
+Ability: Poison Touch
+Level: 50
+Tera Type: Stellar
+EVs: 26 HP / 15 Atk / 10 SpA / 15 SpD
+Adamant Nature
+- Destiny Bond
+
+Zoroark-Hisui (M) @ Shed Shell
+Ability: Illusion
+Level: 50
+Tera Type: Fairy
+EVs: 20 Atk / 12 Def / 1 SpA / 25 SpD / 6 Spe
+Sassy Nature
+- Super Fang
+- Ceaseless Edge
+- Fling
+
+Vivillon-Marine @ Twisted Spoon
+Ability: Shield Dust
+Level: 50
+Tera Type: Stellar
+EVs: 15 HP / 28 Atk / 17 SpA / 4 SpD / 1 Spe
+Impish Nature
+- Temper Flare
+- Trick Room
+
+Rotom-Wash @ Wise Glasses
+Ability: Levitate
+Level: 50
+Tera Type: Steel
+EVs: 3 HP / 10 Def / 14 SpA / 11 SpD / 13 Spe
+Serious Nature
+- Twin Beam
+- Poison Powder
+- Circle Throw
+- Axe Kick
+
+Wyrdeer (M)
+Ability: Intimidate
+Level: 50
+Tera Type: Dark
+EVs: 23 HP / 10 Atk / 18 Def / 4 SpA / 1 SpD / 6 Spe
+Hardy Nature
+- Power Gem
+- Electroweb
+
+Appletun
+Ability: Ripen
+Level: 50
+Tera Type: Fighting
+EVs: 3 HP / 6 Atk / 2 Def / 25 SpA / 25 SpD / 2 Spe
+Hasty Nature
+- Mean Look
+- Flip Turn
+- Moonlight
+end
+choice p1 team 3621
+choice p2 team 6413
+choice p1 switch 3, move 2 -1
+choice p2 move 2 2, move 4 1
+choice p2 switch 3, pass
+choice p1 move 1 1, move 1 2
+choice p2 switch 4, switch 3
+choice p1 switch 3, move 1 1
+choice p2 move 1 1, move 2 1
+choice p1 switch 3, move 1 1
+choice p2 move 1 1, move 3 2
+choice p1 move 1 2, move 1 -1
+choice p2 move 1, move 3 -1
+choice p1 switch 4, pass
+choice p2 move 2, move 4 -1
+choice p1 move 1 1, move 1 -1
+choice p2 move 1 1, move 4 2
+choice p1 move 2, move 1 1
+choice p2 switch 4, move 4 -1
+choice p1 move 1 2 mega, move 1 -1
+choice p2 switch 3, pass
+choice p1 move 2, switch 3
+choice p2 move 1, move 3 1
+choice p1 move 1 1, move 2 1
+choice p2 move 1, move 3 1
+choice p1 move 1 -2, switch 3
+choice p2 switch 4, move 4 -1
+choice p2 switch 4, pass
+choice p1 move 1 -2, move 1 1
+choice p2 move 1, move 4 2
+choice p1 switch 3, move 1 1
+choice p2 move 1, move 1 2
+choice p1 move 2 -2, move 1 2
+choice p2 move 1, move 4 -1
+choice p1 pass, switch 3
+choice p2 move 1, move 1 -1
+choice p1 move 1 -2, move 1 1
+choice p2 pass, move 3 1
+choice p1 move 1 2, move 1 2
+choice p2 pass, move 4 2
+choice p1 move 1 2, move 1 2
+choice p2 pass, move 3 1
+choice p1 move 2 2, pass
+records 24
+view p1 0 finished=false
+view p1 0 force_switch.0=false
+view p1 0 force_switch.1=false
+view p1 0 opponent_preview.0="sneasler"
+view p1 0 opponent_preview.1="zoroarkhisui"
+view p1 0 opponent_preview.2="vivillonmarine"
+view p1 0 opponent_preview.3="rotomwash"
+view p1 0 opponent_preview.4="wyrdeer"
+view p1 0 opponent_preview.5="appletun"
+view p1 0 opponent_used_mega=false
+view p1 0 opponent_used_tera=false
+view p1 0 role="p1"
+view p1 0 team.p1: Absol.ability="justified"
+view p1 0 team.p1: Absol.active=true
+view p1 0 team.p1: Absol.fainted=false
+view p1 0 team.p1: Absol.forme="absol"
+view p1 0 team.p1: Absol.gender="M"
+view p1 0 team.p1: Absol.hp=140
+view p1 0 team.p1: Absol.item="absolite"
+view p1 0 team.p1: Absol.level=50
+view p1 0 team.p1: Absol.max_hp=140
+view p1 0 team.p1: Absol.mega=false
+view p1 0 team.p1: Absol.moves.0="forestscurse"
+view p1 0 team.p1: Absol.moves.1="slackoff"
+view p1 0 team.p1: Absol.revealed=false
+view p1 0 team.p1: Absol.species="absol"
+view p1 0 team.p1: Absol.tera_type="dark"
+view p1 0 team.p1: Absol.terastallized=false
+view p1 0 team.p1: Chomp.ability="magicbounce"
+view p1 0 team.p1: Chomp.active=false
+view p1 0 team.p1: Chomp.fainted=false
+view p1 0 team.p1: Chomp.forme="espeon"
+view p1 0 team.p1: Chomp.gender="F"
+view p1 0 team.p1: Chomp.hp=172
+view p1 0 team.p1: Chomp.level=50
+view p1 0 team.p1: Chomp.max_hp=172
+view p1 0 team.p1: Chomp.mega=false
+view p1 0 team.p1: Chomp.moves.0="beatup"
+view p1 0 team.p1: Chomp.moves.1="bite"
+view p1 0 team.p1: Chomp.moves.2="howl"
+view p1 0 team.p1: Chomp.moves.3="roar"
+view p1 0 team.p1: Chomp.revealed=false
+view p1 0 team.p1: Chomp.species="espeon"
+view p1 0 team.p1: Chomp.tera_type="psychic"
+view p1 0 team.p1: Chomp.terastallized=false
+view p1 0 team.p1: Lycanroc.ability="keeneye"
+view p1 0 team.p1: Lycanroc.active=false
+view p1 0 team.p1: Lycanroc.fainted=false
+view p1 0 team.p1: Lycanroc.forme="lycanroc"
+view p1 0 team.p1: Lycanroc.gender="F"
+view p1 0 team.p1: Lycanroc.hp=164
+view p1 0 team.p1: Lycanroc.item="lightclay"
+view p1 0 team.p1: Lycanroc.level=50
+view p1 0 team.p1: Lycanroc.max_hp=164
+view p1 0 team.p1: Lycanroc.mega=false
+view p1 0 team.p1: Lycanroc.moves.0="dragontail"
+view p1 0 team.p1: Lycanroc.moves.1="fireblast"
+view p1 0 team.p1: Lycanroc.revealed=false
+view p1 0 team.p1: Lycanroc.species="lycanroc"
+view p1 0 team.p1: Lycanroc.tera_type="rock"
+view p1 0 team.p1: Lycanroc.terastallized=false
+view p1 0 team.p1: Rotom.ability="levitate"
+view p1 0 team.p1: Rotom.active=false
+view p1 0 team.p1: Rotom.fainted=false
+view p1 0 team.p1: Rotom.forme="rotomwash"
+view p1 0 team.p1: Rotom.gender="N"
+view p1 0 team.p1: Rotom.hp=125
+view p1 0 team.p1: Rotom.level=50
+view p1 0 team.p1: Rotom.max_hp=125
+view p1 0 team.p1: Rotom.mega=false
+view p1 0 team.p1: Rotom.moves.0="barbbarrage"
+view p1 0 team.p1: Rotom.revealed=false
+view p1 0 team.p1: Rotom.species="rotomwash"
+view p1 0 team.p1: Rotom.tera_type="electric"
+view p1 0 team.p1: Rotom.terastallized=false
+view p1 0 team.p1: Typhlosion.ability="blaze"
+view p1 0 team.p1: Typhlosion.active=false
+view p1 0 team.p1: Typhlosion.fainted=false
+view p1 0 team.p1: Typhlosion.forme="typhlosionhisui"
+view p1 0 team.p1: Typhlosion.gender="M"
+view p1 0 team.p1: Typhlosion.hp=156
+view p1 0 team.p1: Typhlosion.item="cobaberry"
+view p1 0 team.p1: Typhlosion.level=50
+view p1 0 team.p1: Typhlosion.max_hp=156
+view p1 0 team.p1: Typhlosion.mega=false
+view p1 0 team.p1: Typhlosion.moves.0="nuzzle"
+view p1 0 team.p1: Typhlosion.moves.1="stickyweb"
+view p1 0 team.p1: Typhlosion.revealed=false
+view p1 0 team.p1: Typhlosion.species="typhlosionhisui"
+view p1 0 team.p1: Typhlosion.tera_type="fire"
+view p1 0 team.p1: Typhlosion.terastallized=false
+view p1 0 team.p1: Vanilluxe.ability="weakarmor"
+view p1 0 team.p1: Vanilluxe.active=true
+view p1 0 team.p1: Vanilluxe.fainted=false
+view p1 0 team.p1: Vanilluxe.forme="vanilluxe"
+view p1 0 team.p1: Vanilluxe.gender="F"
+view p1 0 team.p1: Vanilluxe.hp=164
+view p1 0 team.p1: Vanilluxe.level=50
+view p1 0 team.p1: Vanilluxe.max_hp=164
+view p1 0 team.p1: Vanilluxe.mega=false
+view p1 0 team.p1: Vanilluxe.moves.0="barbbarrage"
+view p1 0 team.p1: Vanilluxe.moves.1="risingvoltage"
+view p1 0 team.p1: Vanilluxe.revealed=false
+view p1 0 team.p1: Vanilluxe.species="vanilluxe"
+view p1 0 team.p1: Vanilluxe.tera_type="ice"
+view p1 0 team.p1: Vanilluxe.terastallized=false
+view p1 0 teampreview=true
+view p1 0 turn=0
+view p1 0 used_mega=false
+view p1 0 used_tera=false
+view p1 0 wait=false
+view p1 1 active.0="p1: Rotom"
+view p1 1 active.1="p1: Lycanroc"
+view p1 1 opponent_active.0="p2: Appletun"
+view p1 1 opponent_active.1="p2: Rotom"
+view p1 1 opponent_team.p2: Appletun.active=true
+view p1 1 opponent_team.p2: Appletun.fainted=false
+view p1 1 opponent_team.p2: Appletun.forme="appletun"
+view p1 1 opponent_team.p2: Appletun.gender="M"
+view p1 1 opponent_team.p2: Appletun.hp=100
+view p1 1 opponent_team.p2: Appletun.level=50
+view p1 1 opponent_team.p2: Appletun.max_hp=100
+view p1 1 opponent_team.p2: Appletun.mega=false
+view p1 1 opponent_team.p2: Appletun.revealed=true
+view p1 1 opponent_team.p2: Appletun.species="appletun"
+view p1 1 opponent_team.p2: Appletun.terastallized=false
+view p1 1 opponent_team.p2: Rotom.ability="levitate"
+view p1 1 opponent_team.p2: Rotom.active=true
+view p1 1 opponent_team.p2: Rotom.fainted=false
+view p1 1 opponent_team.p2: Rotom.forme="rotomwash"
+view p1 1 opponent_team.p2: Rotom.gender="N"
+view p1 1 opponent_team.p2: Rotom.hp=100
+view p1 1 opponent_team.p2: Rotom.level=50
+view p1 1 opponent_team.p2: Rotom.max_hp=100
+view p1 1 opponent_team.p2: Rotom.mega=false
+view p1 1 opponent_team.p2: Rotom.revealed=true
+view p1 1 opponent_team.p2: Rotom.species="rotomwash"
+view p1 1 opponent_team.p2: Rotom.terastallized=false
+view p1 1 team.p1: Absol.active=false
+view p1 1 team.p1: Lycanroc.active=true
+view p1 1 team.p1: Lycanroc.revealed=true
+view p1 1 team.p1: Rotom.active=true
+view p1 1 team.p1: Rotom.revealed=true
+view p1 1 team.p1: Vanilluxe.active=false
+view p1 1 teampreview=false
+view p1 1 turn=1
+view p1 2 active.0="p1: Vanilluxe"
+view p1 2 opponent_team.p2: Appletun.moves.0="flipturn"
+view p1 2 opponent_team.p2: Rotom.moves.0="axekick"
+view p1 2 team.p1: Lycanroc.hp=102
+view p1 2 team.p1: Rotom.active=false
+view p1 2 team.p1: Vanilluxe.active=true
+view p1 2 team.p1: Vanilluxe.boosts.def=-1
+view p1 2 team.p1: Vanilluxe.boosts.spe=2
+view p1 2 team.p1: Vanilluxe.hp=6
+view p1 2 team.p1: Vanilluxe.revealed=true
+view p1 2 wait=true
+view p1 3 opponent_active.0="p2: Sneasler"
+view p1 3 opponent_team.p2: Appletun.active=false
+view p1 3 opponent_team.p2: Sneasler.active=true
+view p1 3 opponent_team.p2: Sneasler.fainted=false
+view p1 3 opponent_team.p2: Sneasler.forme="sneasler"
+view p1 3 opponent_team.p2: Sneasler.gender="F"
+view p1 3 opponent_team.p2: Sneasler.hp=100
+view p1 3 opponent_team.p2: Sneasler.level=50
+view p1 3 opponent_team.p2: Sneasler.max_hp=100
+view p1 3 opponent_team.p2: Sneasler.mega=false
+view p1 3 opponent_team.p2: Sneasler.revealed=true
+view p1 3 opponent_team.p2: Sneasler.species="sneasler"
+view p1 3 opponent_team.p2: Sneasler.terastallized=false
+view p1 3 turn=2
+view p1 3 wait=false
+view p1 4 opponent_active.0="p2: Vivillon"
+view p1 4 opponent_team.p2: Appletun.hp=53
+view p1 4 opponent_team.p2: Sneasler.active=false
+view p1 4 opponent_team.p2: Vivillon.active=true
+view p1 4 opponent_team.p2: Vivillon.fainted=false
+view p1 4 opponent_team.p2: Vivillon.forme="vivillonmarine"
+view p1 4 opponent_team.p2: Vivillon.gender="M"
+view p1 4 opponent_team.p2: Vivillon.hp=75
+view p1 4 opponent_team.p2: Vivillon.level=50
+view p1 4 opponent_team.p2: Vivillon.max_hp=100
+view p1 4 opponent_team.p2: Vivillon.mega=false
+view p1 4 opponent_team.p2: Vivillon.revealed=true
+view p1 4 opponent_team.p2: Vivillon.species="vivillonmarine"
+view p1 4 opponent_team.p2: Vivillon.terastallized=false
+view p1 4 turn=3
+view p1 5 active.0="p1: Rotom"
+view p1 5 opponent_active.0="p2: Appletun"
+view p1 5 opponent_team.p2: Appletun.active=true
+view p1 5 opponent_team.p2: Rotom.moves.1="poisonpowder"
+view p1 5 opponent_team.p2: Vivillon.active=false
+view p1 5 opponent_team.p2: Vivillon.hp=47
+view p1 5 opponent_team.p2: Vivillon.moves.0="temperflare"
+view p1 5 team.p1: Rotom.active=true
+view p1 5 team.p1: Rotom.hp=114
+view p1 5 team.p1: Vanilluxe.active=false
+view p1 5 turn=4
+drop p1 5 team.p1: Vanilluxe.boosts.def
+drop p1 5 team.p1: Vanilluxe.boosts.spe
+view p1 6 active.0="p1: Vanilluxe"
+view p1 6 active.1="p1: Rotom"
+view p1 6 opponent_active.0="p2: Sneasler"
+view p1 6 opponent_team.p2: Appletun.active=false
+view p1 6 opponent_team.p2: Appletun.hp=12
+view p1 6 opponent_team.p2: Appletun.moves.1="meanlook"
+view p1 6 opponent_team.p2: Rotom.moves.2="circlethrow"
+view p1 6 opponent_team.p2: Sneasler.active=true
+view p1 6 team.p1: Lycanroc.active=false
+view p1 6 team.p1: Lycanroc.hp=52
+view p1 6 team.p1: Vanilluxe.active=true
+view p1 6 turn=5
+view p1 7 force_switch.0=true
+view p1 7 opponent_active.0="p2: Vivillon"
+view p1 7 opponent_team.p2: Rotom.hp=82
+view p1 7 opponent_team.p2: Sneasler.active=false
+view p1 7 opponent_team.p2: Sneasler.hp=92
+view p1 7 opponent_team.p2: Sneasler.moves.0="destinybond"
+view p1 7 opponent_team.p2: Vivillon.active=true
+view p1 7 team.p1: Vanilluxe.fainted=true
+view p1 7 team.p1: Vanilluxe.hp=0
+view p1 7 team.p1: Vanilluxe.status="fnt"
+drop p1 7 active.0
+view p1 8 active.0="p1: Absol"
+view p1 8 force_switch.0=false
+view p1 8 team.p1: Absol.active=true
+view p1 8 team.p1: Absol.revealed=true
+view p1 8 team.p1: Vanilluxe.active=false
+view p1 8 turn=6
+view p1 9 opponent_team.p2: Vivillon.hp=39
+view p1 9 opponent_team.p2: Vivillon.moves.1="trickroom"
+view p1 9 team.p1: Absol.hp=100
+view p1 9 team.p1: Absol.status="psn"
+view p1 9 turn=7
+view p1 10 opponent_team.p2: Vivillon.hp=2
+view p1 10 team.p1: Absol.hp=123
+view p1 10 team.p1: Rotom.hp=85
+view p1 10 turn=8
+view p1 11 opponent_active.0="p2: Sneasler"
+view p1 11 opponent_team.p2: Appletun.fainted=true
+view p1 11 opponent_team.p2: Appletun.hp=0
+view p1 11 opponent_team.p2: Appletun.status="fnt"
+view p1 11 opponent_team.p2: Sneasler.active=true
+view p1 11 opponent_team.p2: Vivillon.active=false
+view p1 11 team.p1: Absol.ability="magicbounce"
+view p1 11 team.p1: Absol.forme="absolmega"
+view p1 11 team.p1: Absol.hp=65
+view p1 11 team.p1: Absol.mega=true
+view p1 11 team.p1: Absol.species="absolmega"
+view p1 11 turn=9
+view p1 11 used_mega=true
+view p1 12 active.0="p1: Rotom"
+view p1 12 active.1="p1: Lycanroc"
+view p1 12 team.p1: Absol.active=false
+view p1 12 team.p1: Absol.hp=93
+view p1 12 team.p1: Lycanroc.active=true
+view p1 12 turn=10
+view p1 13 active.0="p1: Absol"
+view p1 13 opponent_team.p2: Sneasler.hp=65
+view p1 13 team.p1: Absol.active=true
+view p1 13 team.p1: Absol.hp=76
+view p1 13 team.p1: Rotom.active=false
+view p1 13 team.p1: Rotom.hp=72
+view p1 13 turn=11
+view p1 14 active.1="p1: Rotom"
+view p1 14 opponent_team.p2: Sneasler.active=false
+view p1 14 opponent_team.p2: Vivillon.active=true
+view p1 14 opponent_team.p2: Vivillon.fainted=true
+view p1 14 opponent_team.p2: Vivillon.hp=0
+view p1 14 opponent_team.p2: Vivillon.status="fnt"
+view p1 14 team.p1: Absol.hp=59
+view p1 14 team.p1: Lycanroc.active=false
+view p1 14 team.p1: Rotom.active=true
+view p1 14 wait=true
+drop p1 14 opponent_active.0
+view p1 15 opponent_active.0="p2: Sneasler"
+view p1 15 opponent_team.p2: Sneasler.active=true
+view p1 15 opponent_team.p2: Vivillon.active=false
+view p1 15 turn=12
+view p1 15 wait=false
+view p1 16 opponent_team.p2: Sneasler.hp=56
+view p1 16 team.p1: Absol.hp=42
+view p1 16 team.p1: Rotom.hp=46
+view p1 16 turn=13
+view p1 17 active.0="p1: Lycanroc"
+view p1 17 opponent_team.p2: Rotom.moves.3="twinbeam"
+view p1 17 opponent_team.p2: Sneasler.hp=49
+view p1 17 team.p1: Absol.active=false
+view p1 17 team.p1: Lycanroc.active=true
+view p1 17 team.p1: Rotom.hp=4
+view p1 17 turn=14
+view p1 18 force_switch.1=true
+view p1 18 opponent_team.p2: Sneasler.hp=35
+view p1 18 team.p1: Rotom.fainted=true
+view p1 18 team.p1: Rotom.hp=0
+view p1 18 team.p1: Rotom.status="fnt"
+drop p1 18 active.1
+view p1 19 active.1="p1: Absol"
+view p1 19 force_switch.1=false
+view p1 19 team.p1: Absol.active=true
+view p1 19 team.p1: Rotom.active=false
+view p1 19 turn=15
+view p1 20 opponent_team.p2: Sneasler.fainted=true
+view p1 20 opponent_team.p2: Sneasler.hp=0
+view p1 20 opponent_team.p2: Sneasler.status="fnt"
+view p1 20 team.p1: Absol.hp=25
+view p1 20 turn=16
+drop p1 20 opponent_active.0
+view p1 21 opponent_team.p2: Rotom.hp=60
+view p1 21 team.p1: Absol.hp=8
+view p1 21 team.p1: Lycanroc.hp=8
+view p1 21 turn=17
+view p1 22 opponent_team.p2: Rotom.hp=40
+view p1 22 team.p1: Absol.fainted=true
+view p1 22 team.p1: Absol.hp=0
+view p1 22 team.p1: Absol.status="fnt"
+view p1 22 turn=18
+drop p1 22 active.1
+view p1 23 finished=true
+view p1 23 team.p1: Lycanroc.fainted=true
+view p1 23 team.p1: Lycanroc.hp=0
+view p1 23 team.p1: Lycanroc.status="fnt"
+view p1 23 won=false
+drop p1 23 active.0
+view p2 0 finished=false
+view p2 0 force_switch.0=false
+view p2 0 force_switch.1=false
+view p2 0 opponent_preview.0="absol"
+view p2 0 opponent_preview.1="vanilluxe"
+view p2 0 opponent_preview.2="rotomwash"
+view p2 0 opponent_preview.3="typhlosionhisui"
+view p2 0 opponent_preview.4="espeon"
+view p2 0 opponent_preview.5="lycanroc"
+view p2 0 opponent_used_mega=false
+view p2 0 opponent_used_tera=false
+view p2 0 role="p2"
+view p2 0 team.p2: Appletun.ability="ripen"
+view p2 0 team.p2: Appletun.active=false
+view p2 0 team.p2: Appletun.fainted=false
+view p2 0 team.p2: Appletun.forme="appletun"
+view p2 0 team.p2: Appletun.gender="M"
+view p2 0 team.p2: Appletun.hp=188
+view p2 0 team.p2: Appletun.level=50
+view p2 0 team.p2: Appletun.max_hp=188
+view p2 0 team.p2: Appletun.mega=false
+view p2 0 team.p2: Appletun.moves.0="meanlook"
+view p2 0 team.p2: Appletun.moves.1="flipturn"
+view p2 0 team.p2: Appletun.moves.2="moonlight"
+view p2 0 team.p2: Appletun.revealed=false
+view p2 0 team.p2: Appletun.species="appletun"
+view p2 0 team.p2: Appletun.tera_type="grass"
+view p2 0 team.p2: Appletun.terastallized=false
+view p2 0 team.p2: Rotom.ability="levitate"
+view p2 0 team.p2: Rotom.active=false
+view p2 0 team.p2: Rotom.fainted=false
+view p2 0 team.p2: Rotom.forme="rotomwash"
+view p2 0 team.p2: Rotom.gender="N"
+view p2 0 team.p2: Rotom.hp=128
+view p2 0 team.p2: Rotom.item="wiseglasses"
+view p2 0 team.p2: Rotom.level=50
+view p2 0 team.p2: Rotom.max_hp=128
+view p2 0 team.p2: Rotom.mega=false
+view p2 0 team.p2: Rotom.moves.0="twinbeam"
+view p2 0 team.p2: Rotom.moves.1="poisonpowder"
+view p2 0 team.p2: Rotom.moves.2="circlethrow"
+view p2 0 team.p2: Rotom.moves.3="axekick"
+view p2 0 team.p2: Rotom.revealed=false
+view p2 0 team.p2: Rotom.species="rotomwash"
+view p2 0 team.p2: Rotom.tera_type="electric"
+view p2 0 team.p2: Rotom.terastallized=false
+view p2 0 team.p2: Sneasler.ability="poisontouch"
+view p2 0 team.p2: Sneasler.active=true
+view p2 0 team.p2: Sneasler.fainted=false
+view p2 0 team.p2: Sneasler.forme="sneasler"
+view p2 0 team.p2: Sneasler.gender="F"
+view p2 0 team.p2: Sneasler.hp=181
+view p2 0 team.p2: Sneasler.item="ironball"
+view p2 0 team.p2: Sneasler.level=50
+view p2 0 team.p2: Sneasler.max_hp=181
+view p2 0 team.p2: Sneasler.mega=false
+view p2 0 team.p2: Sneasler.moves.0="destinybond"
+view p2 0 team.p2: Sneasler.revealed=false
+view p2 0 team.p2: Sneasler.species="sneasler"
+view p2 0 team.p2: Sneasler.tera_type="fighting"
+view p2 0 team.p2: Sneasler.terastallized=false
+view p2 0 team.p2: Vivillon.ability="shielddust"
+view p2 0 team.p2: Vivillon.active=false
+view p2 0 team.p2: Vivillon.fainted=false
+view p2 0 team.p2: Vivillon.forme="vivillonmarine"
+view p2 0 team.p2: Vivillon.gender="M"
+view p2 0 team.p2: Vivillon.hp=170
+view p2 0 team.p2: Vivillon.item="twistedspoon"
+view p2 0 team.p2: Vivillon.level=50
+view p2 0 team.p2: Vivillon.max_hp=170
+view p2 0 team.p2: Vivillon.mega=false
+view p2 0 team.p2: Vivillon.moves.0="temperflare"
+view p2 0 team.p2: Vivillon.moves.1="trickroom"
+view p2 0 team.p2: Vivillon.revealed=false
+view p2 0 team.p2: Vivillon.species="vivillonmarine"
+view p2 0 team.p2: Vivillon.tera_type="bug"
+view p2 0 team.p2: Vivillon.terastallized=false
+view p2 0 team.p2: Wyrdeer.ability="intimidate"
+view p2 0 team.p2: Wyrdeer.active=false
+view p2 0 team.p2: Wyrdeer.fainted=false
+view p2 0 team.p2: Wyrdeer.forme="wyrdeer"
+view p2 0 team.p2: Wyrdeer.gender="M"
+view p2 0 team.p2: Wyrdeer.hp=201
+view p2 0 team.p2: Wyrdeer.level=50
+view p2 0 team.p2: Wyrdeer.max_hp=201
+view p2 0 team.p2: Wyrdeer.mega=false
+view p2 0 team.p2: Wyrdeer.moves.0="powergem"
+view p2 0 team.p2: Wyrdeer.moves.1="electroweb"
+view p2 0 team.p2: Wyrdeer.revealed=false
+view p2 0 team.p2: Wyrdeer.species="wyrdeer"
+view p2 0 team.p2: Wyrdeer.tera_type="normal"
+view p2 0 team.p2: Wyrdeer.terastallized=false
+view p2 0 team.p2: Zoroark.ability="illusion"
+view p2 0 team.p2: Zoroark.active=true
+view p2 0 team.p2: Zoroark.fainted=false
+view p2 0 team.p2: Zoroark.forme="zoroarkhisui"
+view p2 0 team.p2: Zoroark.gender="M"
+view p2 0 team.p2: Zoroark.hp=130
+view p2 0 team.p2: Zoroark.item="shedshell"
+view p2 0 team.p2: Zoroark.level=50
+view p2 0 team.p2: Zoroark.max_hp=130
+view p2 0 team.p2: Zoroark.mega=false
+view p2 0 team.p2: Zoroark.moves.0="superfang"
+view p2 0 team.p2: Zoroark.moves.1="ceaselessedge"
+view p2 0 team.p2: Zoroark.moves.2="fling"
+view p2 0 team.p2: Zoroark.revealed=false
+view p2 0 team.p2: Zoroark.species="zoroarkhisui"
+view p2 0 team.p2: Zoroark.tera_type="normal"
+view p2 0 team.p2: Zoroark.terastallized=false
+view p2 0 teampreview=true
+view p2 0 turn=0
+view p2 0 used_mega=false
+view p2 0 used_tera=false
+view p2 0 wait=false
+view p2 1 active.0="p2: Appletun"
+view p2 1 active.1="p2: Rotom"
+view p2 1 opponent_active.0="p1: Rotom"
+view p2 1 opponent_active.1="p1: Lycanroc"
+view p2 1 opponent_team.p1: Lycanroc.active=true
+view p2 1 opponent_team.p1: Lycanroc.fainted=false
+view p2 1 opponent_team.p1: Lycanroc.forme="lycanroc"
+view p2 1 opponent_team.p1: Lycanroc.gender="F"
+view p2 1 opponent_team.p1: Lycanroc.hp=100
+view p2 1 opponent_team.p1: Lycanroc.level=50
+view p2 1 opponent_team.p1: Lycanroc.max_hp=100
+view p2 1 opponent_team.p1: Lycanroc.mega=false
+view p2 1 opponent_team.p1: Lycanroc.revealed=true
+view p2 1 opponent_team.p1: Lycanroc.species="lycanroc"
+view p2 1 opponent_team.p1: Lycanroc.terastallized=false
+view p2 1 opponent_team.p1: Rotom.ability="levitate"
+view p2 1 opponent_team.p1: Rotom.active=true
+view p2 1 opponent_team.p1: Rotom.fainted=false
+view p2 1 opponent_team.p1: Rotom.forme="rotomwash"
+view p2 1 opponent_team.p1: Rotom.gender="N"
+view p2 1 opponent_team.p1: Rotom.hp=100
+view p2 1 opponent_team.p1: Rotom.level=50
+view p2 1 opponent_team.p1: Rotom.max_hp=100
+view p2 1 opponent_team.p1: Rotom.mega=false
+view p2 1 opponent_team.p1: Rotom.revealed=true
+view p2 1 opponent_team.p1: Rotom.species="rotomwash"
+view p2 1 opponent_team.p1: Rotom.terastallized=false
+view p2 1 team.p2: Appletun.active=true
+view p2 1 team.p2: Appletun.revealed=true
+view p2 1 team.p2: Rotom.active=true
+view p2 1 team.p2: Rotom.revealed=true
+view p2 1 team.p2: Sneasler.active=false
+view p2 1 teampreview=false
+view p2 1 turn=1
+view p2 2 force_switch.0=true
+view p2 2 opponent_active.0="p1: Vanilluxe"
+view p2 2 opponent_team.p1: Lycanroc.hp=62
+view p2 2 opponent_team.p1: Lycanroc.moves.0="fireblast"
+view p2 2 opponent_team.p1: Rotom.active=false
+view p2 2 opponent_team.p1: Vanilluxe.ability="weakarmor"
+view p2 2 opponent_team.p1: Vanilluxe.active=true
+view p2 2 opponent_team.p1: Vanilluxe.boosts.def=-1
+view p2 2 opponent_team.p1: Vanilluxe.boosts.spe=2
+view p2 2 opponent_team.p1: Vanilluxe.fainted=false
+view p2 2 opponent_team.p1: Vanilluxe.forme="vanilluxe"
+view p2 2 opponent_team.p1: Vanilluxe.gender="F"
+view p2 2 opponent_team.p1: Vanilluxe.hp=3
+view p2 2 opponent_team.p1: Vanilluxe.level=50
+view p2 2 opponent_team.p1: Vanilluxe.max_hp=100
+view p2 2 opponent_team.p1: Vanilluxe.mega=false
+view p2 2 opponent_team.p1: Vanilluxe.revealed=true
+view p2 2 opponent_team.p1: Vanilluxe.species="vanilluxe"
+view p2 2 opponent_team.p1: Vanilluxe.terastallized=false
+view p2 3 active.0="p2: Sneasler"
+view p2 3 force_switch.0=false
+view p2 3 team.p2: Appletun.active=false
+view p2 3 team.p2: Sneasler.active=true
+view p2 3 team.p2: Sneasler.revealed=true
+view p2 3 turn=2
+view p2 4 active.0="p2: Vivillon"
+view p2 4 opponent_team.p1: Lycanroc.moves.1="dragontail"
+view p2 4 opponent_team.p1: Vanilluxe.moves.0="barbbarrage"
+view p2 4 team.p2: Appletun.hp=100
+view p2 4 team.p2: Sneasler.active=false
+view p2 4 team.p2: Vivillon.active=true
+view p2 4 team.p2: Vivillon.hp=128
+view p2 4 team.p2: Vivillon.revealed=true
+view p2 4 turn=3
+view p2 5 active.0="p2: Appletun"
+view p2 5 opponent_active.0="p1: Rotom"
+view p2 5 opponent_team.p1: Rotom.active=true
+view p2 5 opponent_team.p1: Rotom.hp=91
+view p2 5 opponent_team.p1: Vanilluxe.active=false
+view p2 5 team.p2: Appletun.active=true
+view p2 5 team.p2: Vivillon.active=false
+view p2 5 team.p2: Vivillon.hp=80
+view p2 5 turn=4
+drop p2 5 opponent_team.p1: Vanilluxe.boosts.def
+drop p2 5 opponent_team.p1: Vanilluxe.boosts.spe
+view p2 6 active.0="p2: Sneasler"
+view p2 6 opponent_active.0="p1: Vanilluxe"
+view p2 6 opponent_active.1="p1: Rotom"
+view p2 6 opponent_team.p1: Lycanroc.active=false
+view p2 6 opponent_team.p1: Lycanroc.hp=31
+view p2 6 opponent_team.p1: Vanilluxe.active=true
+view p2 6 team.p2: Appletun.active=false
+view p2 6 team.p2: Appletun.hp=24
+view p2 6 team.p2: Sneasler.active=true
+view p2 6 turn=5
+view p2 7 active.0="p2: Vivillon"
+view p2 7 opponent_team.p1: Rotom.moves.0="barbbarrage"
+view p2 7 opponent_team.p1: Vanilluxe.fainted=true
+view p2 7 opponent_team.p1: Vanilluxe.hp=0
+view p2 7 opponent_team.p1: Vanilluxe.status="fnt"
+view p2 7 team.p2: Rotom.hp=106
+view p2 7 team.p2: Sneasler.active=false
+view p2 7 team.p2: Sneasler.hp=168
+view p2 7 team.p2: Vivillon.active=true
+view p2 7 wait=true
+drop p2 7 opponent_active.0
+view p2 8 opponent_active.0="p1: Absol"
+view p2 8 opponent_team.p1: Absol.active=true
+view p2 8 opponent_team.p1: Absol.fainted=false
+view p2 8 opponent_team.p1: Absol.forme="absol"
+view p2 8 opponent_team.p1: Absol.gender="M"
+view p2 8 opponent_team.p1: Absol.hp=100
+view p2 8 opponent_team.p1: Absol.level=50
+view p2 8 opponent_team.p1: Absol.max_hp=100
+view p2 8 opponent_team.p1: Absol.mega=false
+view p2 8 opponent_team.p1: Absol.revealed=true
+view p2 8 opponent_team.p1: Absol.species="absol"
+view p2 8 opponent_team.p1: Absol.terastallized=false
+view p2 8 opponent_team.p1: Vanilluxe.active=false
+view p2 8 turn=6
+view p2 8 wait=false
+view p2 9 opponent_team.p1: Absol.hp=71
+view p2 9 opponent_team.p1: Absol.moves.0="forestscurse"
+view p2 9 opponent_team.p1: Absol.status="psn"
+view p2 9 team.p2: Vivillon.hp=67
+view p2 9 turn=7
+view p2 10 opponent_team.p1: Absol.hp=87
+view p2 10 opponent_team.p1: Absol.moves.1="slackoff"
+view p2 10 opponent_team.p1: Rotom.hp=68
+view p2 10 team.p2: Vivillon.hp=5
+view p2 10 turn=8
+view p2 11 active.0="p2: Sneasler"
+view p2 11 opponent_team.p1: Absol.ability="magicbounce"
+view p2 11 opponent_team.p1: Absol.forme="absolmega"
+view p2 11 opponent_team.p1: Absol.hp=46
+view p2 11 opponent_team.p1: Absol.item="absolite"
+view p2 11 opponent_team.p1: Absol.mega=true
+view p2 11 opponent_team.p1: Absol.species="absolmega"
+view p2 11 opponent_used_mega=true
+view p2 11 team.p2: Appletun.fainted=true
+view p2 11 team.p2: Appletun.hp=0
+view p2 11 team.p2: Appletun.status="fnt"
+view p2 11 team.p2: Sneasler.active=true
+view p2 11 team.p2: Vivillon.active=false
+view p2 11 turn=9
+view p2 12 opponent_active.0="p1: Rotom"
+view p2 12 opponent_active.1="p1: Lycanroc"
+view p2 12 opponent_team.p1: Absol.active=false
+view p2 12 opponent_team.p1: Absol.hp=66
+view p2 12 opponent_team.p1: Lycanroc.active=true
+view p2 12 turn=10
+view p2 13 opponent_active.0="p1: Absol"
+view p2 13 opponent_team.p1: Absol.active=true
+view p2 13 opponent_team.p1: Absol.hp=54
+view p2 13 opponent_team.p1: Rotom.active=false
+view p2 13 opponent_team.p1: Rotom.hp=57
+view p2 13 team.p2: Sneasler.hp=119
+view p2 13 turn=11
+view p2 14 force_switch.0=true
+view p2 14 opponent_active.1="p1: Rotom"
+view p2 14 opponent_team.p1: Absol.hp=42
+view p2 14 opponent_team.p1: Lycanroc.active=false
+view p2 14 opponent_team.p1: Rotom.active=true
+view p2 14 team.p2: Sneasler.active=false
+view p2 14 team.p2: Vivillon.active=true
+view p2 14 team.p2: Vivillon.fainted=true
+view p2 14 team.p2: Vivillon.hp=0
+view p2 14 team.p2: Vivillon.status="fnt"
+drop p2 14 active.0
+view p2 15 active.0="p2: Sneasler"
+view p2 15 force_switch.0=false
+view p2 15 team.p2: Sneasler.active=true
+view p2 15 team.p2: Vivillon.active=false
+view p2 15 turn=12
+view p2 16 opponent_team.p1: Absol.hp=30
+view p2 16 opponent_team.p1: Rotom.hp=36
+view p2 16 team.p2: Sneasler.hp=103
+view p2 16 turn=13
+view p2 17 opponent_active.0="p1: Lycanroc"
+view p2 17 opponent_team.p1: Absol.active=false
+view p2 17 opponent_team.p1: Lycanroc.active=true
+view p2 17 opponent_team.p1: Rotom.hp=3
+view p2 17 team.p2: Sneasler.hp=89
+view p2 17 turn=14
+view p2 18 opponent_team.p1: Rotom.fainted=true
+view p2 18 opponent_team.p1: Rotom.hp=0
+view p2 18 opponent_team.p1: Rotom.status="fnt"
+view p2 18 team.p2: Sneasler.hp=64
+view p2 18 wait=true
+drop p2 18 opponent_active.1
+view p2 19 opponent_active.1="p1: Absol"
+view p2 19 opponent_team.p1: Absol.active=true
+view p2 19 opponent_team.p1: Rotom.active=false
+view p2 19 turn=15
+view p2 19 wait=false
+view p2 20 opponent_team.p1: Absol.hp=17
+view p2 20 team.p2: Sneasler.fainted=true
+view p2 20 team.p2: Sneasler.hp=0
+view p2 20 team.p2: Sneasler.status="fnt"
+view p2 20 turn=16
+drop p2 20 active.0
+view p2 21 opponent_team.p1: Absol.hp=5
+view p2 21 opponent_team.p1: Lycanroc.hp=4
+view p2 21 team.p2: Rotom.hp=78
+view p2 21 turn=17
+view p2 22 opponent_team.p1: Absol.fainted=true
+view p2 22 opponent_team.p1: Absol.hp=0
+view p2 22 opponent_team.p1: Absol.status="fnt"
+view p2 22 team.p2: Rotom.hp=52
+view p2 22 turn=18
+drop p2 22 opponent_active.1
+view p2 23 finished=true
+view p2 23 opponent_team.p1: Lycanroc.fainted=true
+view p2 23 opponent_team.p1: Lycanroc.hp=0
+view p2 23 opponent_team.p1: Lycanroc.status="fnt"
+view p2 23 won=true
+drop p2 23 opponent_active.0

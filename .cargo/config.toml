@@ -1,0 +1,15 @@
+# Short aliases for the common workflows.
+[alias]
+# Clippy on every target with warnings denied (tools/full-gate.sh runs every check).
+ci-check = "clippy --workspace --all-targets -- -D warnings"
+# Differential fuzzing against Pokémon Showdown (needs `npm ci` in tools/showdown-oracle).
+conformance = "run --profile release-tools -p pikapro-conformance --bin conformance --"
+# Player-view differential: soundness, no leaks, poke-env (docs/CONFORMANCE.md, "Player view").
+view-conformance = "run --profile release-tools -p pikapro-conformance --bin view_conformance --"
+# Player-channel round trip: text to view, against the environment (docs/CONFORMANCE.md, "The channel round trip").
+channel-conformance = "run --profile release-tools -p pikapro-conformance --bin channel_conformance --"
+# Throughput benchmark.
+bench-sim = "run --release -p pikapro-cli -- bench"
+# Instruction-count regression check against benches/insns-baseline.txt
+# (needs valgrind). Criterion timings: `cargo bench -p pikapro-bench`.
+bench-insns = "run --release -p pikapro-bench --bin pikapro-insns --"

@@ -1,0 +1,114 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Pawmot
+Ability: Volt Absorb
+Hardy Nature
+- Revival Blessing
+- Splash
+
+Pikachu
+Ability: Static
+Level: 1
+Hardy Nature
+- Splash
+end
+team p2
+Jolteon
+Ability: Volt Absorb
+Hardy Nature
+- Thunderbolt
+- Splash
+
+Blissey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+end
+choice p1 move 2, move 1
+choice p2 move 1 2, move 1
+choice p1 move 1, pass
+choice p2 move 2, move 1
+choice p1 switch 2
+choice p1 move 2, move 1
+choice p2 move 2, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Pawmot|Pawmot, F|281/281
+expect |switch|p1a: Pawmot|Pawmot, F|281/281
+expect |split|p1
+expect |switch|p1b: Pikachu|Pikachu, L1, F|12/12
+expect |switch|p1b: Pikachu|Pikachu, L1, F|12/12
+expect |split|p2
+expect |switch|p2a: Jolteon|Jolteon, F|271/271
+expect |switch|p2a: Jolteon|Jolteon, F|271/271
+expect |split|p2
+expect |switch|p2b: Blissey|Blissey, F|651/651
+expect |switch|p2b: Blissey|Blissey, F|651/651
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Jolteon|Thunderbolt|p1b: Pikachu
+expect |rng|100|18
+expect |rng|24|6
+expect |rng|16|11
+expect |-resisted|p1b: Pikachu
+expect |split|p1
+expect |-damage|p1b: Pikachu|0 fnt
+expect |-damage|p1b: Pikachu|0 fnt
+expect |rng|100|9
+expect |faint|p1b: Pikachu
+expect |move|p1a: Pawmot|Splash|p1a: Pawmot
+expect |-nothing
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Jolteon|Splash|p2a: Jolteon
+expect |-nothing
+expect |move|p1a: Pawmot|Revival Blessing|p1a: Pawmot
+expect |
+expect |t:|
+expect |split|p1
+expect |-heal|p1: Pikachu|6/12|[from] move: Revival Blessing
+expect |-heal|p1: Pikachu|6/12|[from] move: Revival Blessing
+expect |split|p1
+expect |switch|p1b: Pikachu|Pikachu, L1, F|6/12
+expect |switch|p1b: Pikachu|Pikachu, L1, F|6/12
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Jolteon|Splash|p2a: Jolteon
+expect |-nothing
+expect |move|p1a: Pawmot|Splash|p1a: Pawmot
+expect |-nothing
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |move|p1b: Pikachu|Splash|p1b: Pikachu
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|4

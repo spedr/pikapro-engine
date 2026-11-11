@@ -1,0 +1,193 @@
+# The Rust crates' crates.io release.
+#
+# On a `v*` tag (and by hand) it checks that the tag is `v` + the version
+# of every publishable crate, then packages and verifies them all with
+# `cargo publish --dry-run` (each crate built from its own .crate file,
+# against the others' packages). The crates and their order come from
+# `cargo metadata` (.github/scripts/publish_order.py): every workspace
+# member without `publish = false`, each after the workspace crates it
+# depends on. Renaming a crate needs no change here.
+#
+# PUBLISHING IS OFF. The `publish` job runs only from a vX.Y.Z tag, and only
+# when the workflow is run by hand with `publish` ticked, or on the tag push
+# itself when the repository variable CRATES_PUBLISH_ON_TAG is `true`. To
+# turn it on:
+#
+#   1. Create the environment `crates-io` in the repository settings, with
+#      required reviewers (the human gate before an upload).
+#   2. The first release of a crate needs an API token: add a crates.io
+#      token (scope `publish-new` and `publish-update`) as the environment
+#      secret CARGO_REGISTRY_TOKEN. Once every crate exists, configure
+#      trusted publishing on crates.io for each of them (this repository,
+#      workflow `crates.yml`, environment `crates-io`) and delete the
+#      secret: without it, the job gets a short-lived token by OIDC.
+#   3. Release: push a tag `vX.Y.Z` pointing at the release commit.
+#
+# A crate version already on crates.io is skipped, so a run that failed
+# halfway can be re-run. A version can be uploaded once; it can be yanked,
+# not replaced.
+#
+# Every action is pinned by commit SHA, with its release in a comment.
+# wheels.yml pins the same releases; update them together.
+
+name: crates.io
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Upload to crates.io (only from a vX.Y.Z tag); otherwise a dry run"
+        type: boolean
+        default: false
+
+# Every `run:` is `bash -eo pipefail`: without an explicit shell, GitHub
+# runs `bash -e`, where a pipeline's status is its last command's (so
+# `cargo publish ... | tee log` would always pass).
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: read
+
+concurrency:
+  group: crates-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  dry-run:
+    name: package and verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    outputs:
+      crates: ${{ steps.order.outputs.crates }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: rustup toolchain install && rustup show active-toolchain
+      - name: The tag matches the workspace version, and both changelogs date it
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          version=$(sed -n '/^version = "/{s/^version = "\(.*\)"$/\1/p;q;}' Cargo.toml)
+          if [ "${GITHUB_REF_NAME}" != "v${version}" ]; then
+            echo "::error::tag ${GITHUB_REF_NAME} does not match the workspace version ${version}"
+            exit 1
+          fi
+          for f in CHANGELOG.md crates/pikapro-py/CHANGELOG.md; do
+            if ! grep -qE "^## ${version//./\\.} \([0-9]{4}-[0-9]{2}-[0-9]{2}\)$" "$f"; then
+              echo "::error::$f has no dated '## ${version} (YYYY-MM-DD)' section"
+              exit 1
+            fi
+          done
+      # With a tag, every crate listed must also be of the tag's version.
+      - name: The crates, in publishing order
+        id: order
+        run: |
+          if [[ "${GITHUB_REF}" == refs/tags/v* ]]; then
+            crates=$(python3 .github/scripts/publish_order.py --version "${GITHUB_REF_NAME#v}")
+          else
+            crates=$(python3 .github/scripts/publish_order.py)
+          fi
+          echo "${crates}"
+          {
+            echo "crates<<EOF"
+            echo "${crates}"
+            echo "EOF"
+          } >> "${GITHUB_OUTPUT}"
+      # One invocation for all of them: cargo packages each crate and
+      # verifies it against the others' packages (a local overlay of the
+      # registry), so crates that depend on unpublished ones check too.
+      - name: cargo publish --dry-run
+        env:
+          CRATES: ${{ steps.order.outputs.crates }}
+        run: |
+          args=()
+          while read -r name _; do args+=(-p "${name}"); done <<< "${CRATES}"
+          cargo publish --dry-run --locked "${args[@]}"
+
+  publish:
+    name: publish to crates.io
+    needs: [dry-run]
+    if: >-
+      startsWith(github.ref, 'refs/tags/v') && (
+        (github.event_name == 'workflow_dispatch' && inputs.publish) ||
+        (github.event_name == 'push' && vars.CRATES_PUBLISH_ON_TAG == 'true')
+      )
+    runs-on: ubuntu-24.04
+    # A first release waits out crates.io's new-crate rate limit (below).
+    timeout-minutes: 90
+    environment:
+      name: crates-io
+    permissions:
+      contents: read
+      # Trusted publishing (OIDC), once the crates exist on crates.io.
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: rustup toolchain install && rustup show active-toolchain
+      - name: Token source
+        id: token
+        env:
+          HAS_SECRET: ${{ secrets.CARGO_REGISTRY_TOKEN != '' }}
+        run: echo "secret=${HAS_SECRET}" >> "${GITHUB_OUTPUT}"
+      # A short-lived token by OIDC (revoked when the job ends), unless the
+      # environment holds an API token (the first release).
+      - name: crates.io trusted publishing
+        id: auth
+        if: steps.token.outputs.secret != 'true'
+        uses: rust-lang/crates-io-auth-action@c6f97d42243bad5fab37ca0427f495c86d5b1a18 # v1.0.5
+      # In dependency order, one crate at a time: cargo waits until each
+      # upload is in the index before the next, which may depend on it.
+      #
+      # crates.io limits how fast new crate names are created (a burst of
+      # about five, then one per ten minutes; an HTTP 429 that says when to
+      # try again). The first release creates every crate, so an upload
+      # refused that way is retried after the time the reply gives (ten
+      # minutes if it gives none), up to six times: one run, one approval.
+      # Later releases only update crates, which that limit doesn't cover.
+      #
+      # `shell: bash` (also the workflow's default) runs this with
+      # `-eo pipefail`, so the `if` below sees cargo's status through `tee`.
+      - name: cargo publish
+        shell: bash
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ steps.auth.outputs.token || secrets.CARGO_REGISTRY_TOKEN }}
+          CRATES: ${{ needs.dry-run.outputs.crates }}
+        run: |
+          while read -r name version; do
+            has=0
+            python3 .github/scripts/crates_io_has.py "${name}" "${version}" || has=$?
+            case "${has}" in
+              0) echo "${name} ${version} is already on crates.io: skipped"; continue ;;
+              1) ;;
+              *) echo "::error::could not read the crates.io index for ${name}"; exit 1 ;;
+            esac
+            for attempt in 1 2 3 4 5 6 7; do
+              # stdin is the crate list: keep cargo off it.
+              if cargo publish --locked -p "${name}" < /dev/null 2>&1 | tee publish.log; then
+                break
+              fi
+              if [ "${attempt}" -eq 7 ] || ! grep -q "429" publish.log; then
+                echo "::error::cargo publish -p ${name} failed (attempt ${attempt})"
+                exit 1
+              fi
+              # "Please try again after <HTTP date> or email help@crates.io ..."
+              after=$(sed -n '/try again after .*GMT/{s/.*try again after \(.*GMT\).*/\1/p;q;}' publish.log)
+              wait=600
+              if [ -n "${after}" ] && until=$(date -d "${after}" +%s 2>/dev/null); then
+                wait=$(( until - $(date +%s) + 15 ))
+                if [ "${wait}" -lt 15 ]; then wait=15; fi
+                if [ "${wait}" -gt 900 ]; then wait=900; fi
+              fi
+              echo "::warning::${name}: crates.io's new-crate rate limit; retrying in ${wait} s"
+              sleep "${wait}"
+            done
+          done <<< "${CRATES}"

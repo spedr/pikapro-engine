@@ -1,0 +1,459 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed f9af 3950 4318 31a0
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Victreebel-Mega (F) @ Victreebelite
+Ability: Chlorophyll
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Toxic Spikes
+- Sludge Bomb
+- Giga Drain
+- Strength Sap
+
+Sceptile (M) @ Life Orb
+Ability: Overgrow
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Mild Nature
+- Shed Tail
+- Giga Drain
+- Earth Power
+- Rock Slide
+
+Big Tony's Pal (Mr. Rime) (M) @ Leftovers
+Ability: Screen Cleaner
+Level: 50
+Shiny: Yes
+EVs: 32 HP / 17 Def / 17 SpD
+Bold Nature
+- Rapid Spin
+- Focus Blast
+- Slack Off
+- Freeze-Dry
+
+Cofagrigus (M) @ Chesto Berry
+Ability: Mummy
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Body Press
+- Rest
+- Shadow Ball
+- Iron Defense
+
+Altaria-Mega (F) @ Altarianite
+Ability: Pixilate
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Earthquake
+- Double-Edge
+- Roost
+- Dragon Dance
+
+Aggron (F) @ Aggronite
+Ability: Sturdy
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Iron Defense
+- Body Press
+- Thunder Wave
+- Heavy Slam
+end
+team p2
+Morpeko-Hangry (F) @ Leftovers
+Ability: Hunger Switch
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Impish Nature
+- Aura Wheel
+- Parting Shot
+- Rapid Spin
+- Protect
+
+Excadrill-Mega (M) @ Excadrite
+Ability: Mold Breaker
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Rapid Spin
+- High Horsepower
+- Swords Dance
+- Iron Head
+
+Manectric (M) @ Choice Scarf
+Ability: Lightning Rod
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Flamethrower
+- Switcheroo
+- Thunderbolt
+- Volt Switch
+
+Azumarill (F) @ Sitrus Berry
+Ability: Huge Power
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Liquidation
+- Aqua Jet
+- Belly Drum
+- Play Rough
+
+Inteleon (M) @ Mystic Water
+Ability: Torrent
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Mild Nature
+- Hydro Pump
+- Scald
+- Flip Turn
+- Ice Beam
+
+Lycanroc-Midnight (M) @ Life Orb
+Ability: No Guard
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Swords Dance
+- Close Combat
+- Sucker Punch
+- Stone Edge
+end
+choice p1 team 3215
+choice p2 team 4261
+choice p1 move 2 -2, move 2 -1
+choice p2 switch 4, move 2 -1
+choice p2 switch 3, pass
+choice p1 move Focus Blast -2 ,  switch victreebel
+choice p2 move 2 2, move 2 2
+choice p1 pass, switch 3
+choice p2 default
+choice p1 move 1 2, move 2 -1
+choice p2 move 3 1, move 1 1 mega
+choice p1 move Slack Off,move earthpower +1
+choice p2 switch 4, pass
+choice p1 switch 4, pass
+choice p2 move 1 2 ,  move Iron Head 1
+choice p1 move 4, move 3 1
+choice p2 move 2 -2, move 1 2
+choice p1 move 3, move 3 2
+choice p2 move 1 -2, move 2 -1
+choice p1 move 1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Victreebel, L50, F|
+expect |poke|p1|Sceptile, L50, M|
+expect |poke|p1|Mr. Rime, L50, M, shiny|
+expect |poke|p1|Cofagrigus, L50, M|
+expect |poke|p1|Altaria, L50, F|
+expect |poke|p1|Aggron, L50, F|
+expect |poke|p2|Morpeko, L50, F|
+expect |poke|p2|Excadrill, L50, M|
+expect |poke|p2|Manectric, L50, M, shiny|
+expect |poke|p2|Azumarill, L50, F|
+expect |poke|p2|Inteleon, L50, M|
+expect |poke|p2|Lycanroc-Midnight, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Big Tony's Pal|Mr. Rime, L50, M, shiny|187/187
+expect |switch|p1a: Big Tony's Pal|Mr. Rime, L50, M, shiny|100/100
+expect |split|p1
+expect |switch|p1b: Sceptile|Sceptile, L50, M|147/147
+expect |switch|p1b: Sceptile|Sceptile, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Azumarill|Azumarill, L50, F|177/177
+expect |switch|p2a: Azumarill|Azumarill, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Excadrill|Excadrill, L50, M|217/217
+expect |switch|p2b: Excadrill|Excadrill, L50, M|100/100
+expect |-ability|p2b: Excadrill|Mold Breaker
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Morpeko|Morpeko, L50, F|165/165
+expect |switch|p2a: Morpeko|Morpeko, L50, F|100/100
+expect |move|p1b: Sceptile|Giga Drain|p1a: Big Tony's Pal
+expect |rng|100|49
+expect |rng|24|9
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|117/187
+expect |-damage|p1a: Big Tony's Pal|62/100
+expect |split|p1
+expect |-damage|p1b: Sceptile|133/147|[from] item: Life Orb
+expect |-damage|p1b: Sceptile|90/100|[from] item: Life Orb
+expect |move|p2b: Excadrill|High Horsepower|p2a: Morpeko
+expect |rng|100|28
+expect |rng|24|9
+expect |rng|16|14
+expect |-supereffective|p2a: Morpeko|1
+expect |split|p2
+expect |-damage|p2a: Morpeko|0 fnt
+expect |-damage|p2a: Morpeko|0 fnt
+expect |faint|p2a: Morpeko
+expect |move|p1a: Big Tony's Pal|Focus Blast|p1b: Sceptile|[miss]
+expect |rng|100|93
+expect |-miss|p1a: Big Tony's Pal|p1b: Sceptile
+expect |
+expect |split|p1
+expect |-heal|p1a: Big Tony's Pal|128/187|[from] item: Leftovers
+expect |-heal|p1a: Big Tony's Pal|68/100|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Lycanroc|Lycanroc-Midnight, L50, M|162/162
+expect |switch|p2a: Lycanroc|Lycanroc-Midnight, L50, M|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Victreebel|Victreebel, L50, F|187/187
+expect |switch|p1b: Victreebel|Victreebel, L50, F|100/100
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Lycanroc|Close Combat|p1b: Victreebel
+expect |rng|24|14
+expect |rng|16|15
+expect |-resisted|p1b: Victreebel|1
+expect |split|p1
+expect |-damage|p1b: Victreebel|131/187
+expect |-damage|p1b: Victreebel|70/100
+expect |rng|100|51
+expect |-unboost|p2a: Lycanroc|def|1
+expect |-unboost|p2a: Lycanroc|spd|1
+expect |rng|2|1
+expect |rng|2|0
+expect |split|p2
+expect |-damage|p2a: Lycanroc|146/162|[from] item: Life Orb
+expect |-damage|p2a: Lycanroc|90/100|[from] item: Life Orb
+expect |rng|2|1
+expect |move|p2b: Excadrill|High Horsepower|p1b: Victreebel
+expect |rng|100|35
+expect |rng|24|13
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Victreebel|0 fnt
+expect |-damage|p1b: Victreebel|0 fnt
+expect |rng|2|0
+expect |faint|p1b: Victreebel
+expect |move|p1a: Big Tony's Pal|Focus Blast|p1: Victreebel|[notarget]
+expect |-fail|p1a: Big Tony's Pal
+expect |
+expect |split|p1
+expect |-heal|p1a: Big Tony's Pal|139/187|[from] item: Leftovers
+expect |-heal|p1a: Big Tony's Pal|74/100|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sceptile|Sceptile, L50, M|133/147
+expect |switch|p1b: Sceptile|Sceptile, L50, M|90/100
+expect |turn|3
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1b: Sceptile|Giga Drain|p1a: Big Tony's Pal
+expect |rng|100|66
+expect |rng|24|5
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|61/187
+expect |-damage|p1a: Big Tony's Pal|32/100
+expect |split|p1
+expect |-heal|p1b: Sceptile|147/147|[from] drain|[of] p1a: Big Tony's Pal
+expect |-heal|p1b: Sceptile|100/100|[from] drain|[of] p1a: Big Tony's Pal
+expect |split|p1
+expect |-damage|p1b: Sceptile|133/147|[from] item: Life Orb
+expect |-damage|p1b: Sceptile|90/100|[from] item: Life Orb
+expect |move|p2a: Lycanroc|Swords Dance|p2a: Lycanroc
+expect |-boost|p2a: Lycanroc|atk|2
+expect |move|p2b: Excadrill|Rapid Spin|p1a: Big Tony's Pal
+expect |rng|100|97
+expect |rng|24|21
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|25/187
+expect |-damage|p1a: Big Tony's Pal|13/100
+expect |rng|100|71
+expect |-boost|p2b: Excadrill|spe|1
+expect |move|p1a: Big Tony's Pal|Rapid Spin|p2b: Excadrill
+expect |rng|100|32
+expect |rng|24|22
+expect |rng|16|13
+expect |-resisted|p2b: Excadrill|1
+expect |split|p2
+expect |-damage|p2b: Excadrill|206/217
+expect |-damage|p2b: Excadrill|94/100
+expect |rng|100|67
+expect |-boost|p1a: Big Tony's Pal|spe|1
+expect |
+expect |split|p1
+expect |-heal|p1a: Big Tony's Pal|36/187|[from] item: Leftovers
+expect |-heal|p1a: Big Tony's Pal|19/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |detailschange|p2b: Excadrill|Excadrill-Mega, L50, M
+expect |-mega|p2b: Excadrill|Excadrill|Excadrite
+expect |move|p2a: Lycanroc|Sucker Punch||[still]
+expect |-fail|p2a: Lycanroc
+expect |move|p2b: Excadrill|Rapid Spin|p1a: Big Tony's Pal
+expect |rng|100|91
+expect |rng|24|3
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|0 fnt
+expect |-damage|p1a: Big Tony's Pal|0 fnt
+expect |rng|100|4
+expect |-boost|p2b: Excadrill|spe|1
+expect |faint|p1a: Big Tony's Pal
+expect |move|p1b: Sceptile|Earth Power|p2a: Lycanroc
+expect |rng|24|13
+expect |rng|16|1
+expect |-supereffective|p2a: Lycanroc|1
+expect |split|p2
+expect |-damage|p2a: Lycanroc|0 fnt
+expect |-damage|p2a: Lycanroc|0 fnt
+expect |rng|100|66
+expect |faint|p2a: Lycanroc
+expect |split|p1
+expect |-damage|p1b: Sceptile|119/147|[from] item: Life Orb
+expect |-damage|p1b: Sceptile|80/100|[from] item: Life Orb
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Azumarill|Azumarill, L50, F|177/177
+expect |switch|p2a: Azumarill|Azumarill, L50, F|100/100
+expect |split|p1
+expect |switch|p1a: Altaria|Altaria, L50, F|152/152
+expect |switch|p1a: Altaria|Altaria, L50, F|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2b: Excadrill|Iron Head|p1a: Altaria
+expect |rng|100|27
+expect |rng|24|19
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Altaria|52/152
+expect |-damage|p1a: Altaria|34/100
+expect |rng|100|85
+expect |move|p1b: Sceptile|Earth Power|p2a: Azumarill
+expect |rng|100|19
+expect |rng|24|9
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Azumarill|90/177
+expect |-damage|p2a: Azumarill|50/100g
+expect |rng|100|85
+expect |split|p1
+expect |-damage|p1b: Sceptile|105/147|[from] item: Life Orb
+expect |-damage|p1b: Sceptile|71/100|[from] item: Life Orb
+expect |move|p1a: Altaria|Dragon Dance|p1a: Altaria
+expect |-boost|p1a: Altaria|atk|1
+expect |-boost|p1a: Altaria|spe|1
+expect |move|p2a: Azumarill|Liquidation|p1b: Sceptile
+expect |rng|100|23
+expect |rng|24|13
+expect |rng|16|0
+expect |-resisted|p1b: Sceptile|1
+expect |split|p1
+expect |-damage|p1b: Sceptile|21/147
+expect |-damage|p1b: Sceptile|14/100
+expect |rng|100|15
+expect |-unboost|p1b: Sceptile|def|1
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Azumarill|Aqua Jet|p2b: Excadrill
+expect |rng|100|63
+expect |rng|24|6
+expect |rng|16|3
+expect |-supereffective|p2b: Excadrill|1
+expect |split|p2
+expect |-damage|p2b: Excadrill|110/217
+expect |-damage|p2b: Excadrill|50/100g
+expect |move|p2b: Excadrill|Rapid Spin|p1b: Sceptile
+expect |rng|100|2
+expect |rng|24|1
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Sceptile|0 fnt
+expect |-damage|p1b: Sceptile|0 fnt
+expect |rng|100|18
+expect |-boost|p2b: Excadrill|spe|1
+expect |faint|p1b: Sceptile
+expect |move|p1a: Altaria|Roost|p1a: Altaria
+expect |split|p1
+expect |-heal|p1a: Altaria|128/152
+expect |-heal|p1a: Altaria|84/100
+expect |-singleturn|p1a: Altaria|move: Roost
+expect |
+expect |upkeep
+expect |turn|7
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Excadrill|High Horsepower|p2a: Azumarill
+expect |rng|100|92
+expect |rng|24|12
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Azumarill|0 fnt
+expect |-damage|p2a: Azumarill|0 fnt
+expect |faint|p2a: Azumarill
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Altaria|Earthquake|p2b: Excadrill
+expect |rng|100|27
+expect |rng|24|18
+expect |rng|16|2
+expect |-supereffective|p2b: Excadrill|1
+expect |split|p2
+expect |-damage|p2b: Excadrill|0 fnt
+expect |-damage|p2b: Excadrill|0 fnt
+expect |faint|p2b: Excadrill
+expect |
+expect |win|p1

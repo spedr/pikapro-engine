@@ -1,0 +1,355 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 448e 3921 9e9f 0118
+genders drawn
+team p1
+Aegislash (M) @ Poison Barb
+Ability: Stance Change
+Level: 50
+Tera Type: Fighting
+EVs: 20 Atk / 3 Def / 23 SpA / 20 Spe
+Quirky Nature
+- Brave Bird
+
+Excadrill (M) @ Life Orb
+Ability: Mold Breaker
+Level: 50
+Tera Type: Psychic
+EVs: 9 HP / 3 Atk / 9 Def / 25 SpA / 7 SpD / 6 Spe
+Adamant Nature
+- Strength Sap
+- Sky Attack
+- Headlong Rush
+- Super Fang
+
+Vivillon-Continental (M)
+Ability: Friend Guard
+Level: 50
+Tera Type: Electric
+EVs: 13 HP / 26 Atk / 18 Def / 5 Spe
+Modest Nature
+- Spiky Shield
+- First Impression
+
+Watchog (M) @ Sharp Beak
+Ability: Keen Eye
+Level: 50
+Tera Type: Dragon
+EVs: 22 HP / 1 Atk / 12 Def / 14 SpA / 16 SpD / 1 Spe
+Rash Nature
+- Sweet Kiss
+- Ally Switch
+- Gigaton Hammer
+- Sticky Web
+
+Emolga (M)
+Ability: Motor Drive
+Level: 50
+Tera Type: Fighting
+EVs: 2 HP / 32 Atk / 13 Def / 15 SpA / 1 SpD / 3 Spe
+Lonely Nature
+- Sparkling Aria
+- Psychic Fangs
+- Lumina Crash
+
+Mr. Bubbles (Scolipede) (M) @ Scolipite
+Ability: Speed Boost
+Level: 50
+Tera Type: Ground
+EVs: 1 HP / 6 Atk / 7 Def / 4 SpA / 24 SpD / 22 Spe
+Mild Nature
+- Cotton Spore
+- Dragon Dance
+- Sacred Sword
+end
+team p2
+Gardevoir (M) @ Gardevoirite
+Ability: Trace
+Level: 50
+Tera Type: Fairy
+EVs: 20 HP / 6 Atk / 13 SpA / 18 SpD / 2 Spe
+Naive Nature
+- Seed Bomb
+- Boomburst
+- Skill Swap
+- Psychic Terrain
+
+Vivillon-Polar (M)
+Ability: Shield Dust
+Level: 50
+Tera Type: Grass
+EVs: 22 HP / 2 Atk / 2 Def / 6 SpA / 7 SpD / 27 Spe
+Hardy Nature
+- Upper Hand
+
+Kommo-o (M) @ Kasib Berry
+Ability: Bulletproof
+Level: 50
+Tera Type: Psychic
+EVs: 7 HP / 1 Atk / 10 Def / 22 SpA / 18 SpD / 6 Spe
+Quirky Nature
+- Bitter Malice
+- Heat Wave
+
+ThisNameIsFarTooLongToKeep (Vivillon-Archipelago) (M) @ Oran Berry
+Ability: Shield Dust
+Level: 50
+Tera Type: Bug
+EVs: 2 HP / 8 Atk / 20 Def / 6 SpA / 19 SpD / 9 Spe
+Impish Nature
+- Aromatic Mist
+
+Raichu (M) @ Shed Shell
+Ability: Lightning Rod
+Level: 50
+Tera Type: Dragon
+EVs: 4 HP / 17 Atk / 20 Def / 25 SpA
+Bashful Nature
+- Recycle
+- Mean Look
+
+Kleavor (M) @ Metal Coat
+Ability: Swarm
+Level: 50
+Tera Type: Dragon
+EVs: 5 HP / 1 Atk / 15 Def / 26 SpA / 8 SpD / 8 Spe
+Bold Nature
+- Hurricane
+end
+choice p1 team 4531
+choice p2 team 4152
+choice p1 move 3 -2, move 3 -1
+choice p2 switch 3, move 2 mega
+choice p1 switch 3, switch 4
+choice p2 switch 3, pass
+choice p1 move 2 1, move 1 1
+choice p2 switch 4, move 3 1
+choice p2 switch 4, pass
+choice p1 move 1, move 1 2
+choice p2 move 1 -2, move 3 2
+choice p1 move 1, move 1 2
+choice p2 move 1 -2, move 3 -1
+choice p1 move 1, move 1 -1
+choice p2 move 1 -2, pass
+choice p1 move 1, move 1 -1
+choice p2 move 1 -2, pass
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Aegislash, L50, M|
+expect |poke|p1|Excadrill, L50, M|
+expect |poke|p1|Vivillon-Continental, L50, M|
+expect |poke|p1|Watchog, L50, M|
+expect |poke|p1|Emolga, L50, M|
+expect |poke|p1|Scolipede, L50, M|
+expect |poke|p2|Gardevoir, L50, M|
+expect |poke|p2|Vivillon-Polar, L50, M|
+expect |poke|p2|Kommo-o, L50, M|
+expect |poke|p2|Vivillon-Archipelago, L50, M|
+expect |poke|p2|Raichu, L50, M|
+expect |poke|p2|Kleavor, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Watchog|Watchog, L50, M|157/157
+expect |switch|p1a: Watchog|Watchog, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Emolga|Emolga, L50, M|132/132
+expect |switch|p1b: Emolga|Emolga, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: ThisNameIsFarTooLong|Vivillon-Archipelago, L50, M|157/157
+expect |switch|p2a: ThisNameIsFarTooLong|Vivillon-Archipelago, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Gardevoir|Gardevoir, L50, M|163/163
+expect |switch|p2b: Gardevoir|Gardevoir, L50, M|100/100
+expect |rng|2|1
+expect |-ability|p2b: Gardevoir|Motor Drive|Trace|[from] ability: Trace|[of] p1b: Emolga
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Raichu|Raichu, L50, M|139/139
+expect |switch|p2a: Raichu|Raichu, L50, M|100/100
+expect |detailschange|p2b: Gardevoir|Gardevoir-Mega, L50, M
+expect |-mega|p2b: Gardevoir|Gardevoir|Gardevoirite
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Gardevoir|Boomburst|p1b: Emolga|[spread] p2a,p1a,p1b
+expect |rng|100|75
+expect |rng|100|40
+expect |rng|100|27
+expect |rng|24|23
+expect |rng|16|11
+expect |rng|24|21
+expect |rng|16|4
+expect |rng|24|5
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Raichu|0 fnt
+expect |-damage|p2a: Raichu|0 fnt
+expect |split|p1
+expect |-damage|p1a: Watchog|0 fnt
+expect |-damage|p1a: Watchog|0 fnt
+expect |split|p1
+expect |-damage|p1b: Emolga|0 fnt
+expect |-damage|p1b: Emolga|0 fnt
+expect |faint|p2a: Raichu
+expect |faint|p1a: Watchog
+expect |faint|p1b: Emolga
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: ThisNameIsFarTooLong|Vivillon-Archipelago, L50, M|157/157
+expect |switch|p2a: ThisNameIsFarTooLong|Vivillon-Archipelago, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Aegislash|Aegislash, L50, M|135/135
+expect |switch|p1b: Aegislash|Aegislash, L50, M|100/100
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Continental, L50, M|168/168
+expect |switch|p1a: Vivillon|Vivillon-Continental, L50, M|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-Polar, L50, M|177/177
+expect |switch|p2a: Vivillon|Vivillon-Polar, L50, M|100/100
+expect |move|p1a: Vivillon|First Impression|p2a: Vivillon
+expect |rng|100|9
+expect |rng|24|6
+expect |rng|16|3
+expect |-resisted|p2a: Vivillon|1
+expect |split|p2
+expect |-damage|p2a: Vivillon|138/177
+expect |-damage|p2a: Vivillon|77/100
+expect |move|p2b: Gardevoir|Skill Swap|p1a: Vivillon
+expect |-activate|p2b: Gardevoir|Skill Swap|Friend Guard|Pixilate|[of] p1a: Vivillon
+expect |-formechange|p1b: Aegislash|Aegislash-Blade|
+expect |move|p1b: Aegislash|Brave Bird|p2a: Vivillon
+expect |rng|100|8
+expect |rng|24|15
+expect |rng|16|3
+expect |-supereffective|p2a: Vivillon|1
+expect |split|p2
+expect |-damage|p2a: Vivillon|0 fnt
+expect |-damage|p2a: Vivillon|0 fnt
+expect |faint|p2a: Vivillon
+expect |split|p1
+expect |-damage|p1b: Aegislash|89/135|[from] Recoil
+expect |-damage|p1b: Aegislash|65/100|[from] Recoil
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: ThisNameIsFarTooLong|Vivillon-Archipelago, L50, M|157/157
+expect |switch|p2a: ThisNameIsFarTooLong|Vivillon-Archipelago, L50, M|100/100
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Vivillon|Spiky Shield|p1a: Vivillon
+expect |-singleturn|p1a: Vivillon|move: Protect
+expect |move|p2b: Gardevoir|Skill Swap||[still]
+expect |-fail|p2b: Gardevoir
+expect |move|p2a: ThisNameIsFarTooLong|Aromatic Mist|p2b: Gardevoir
+expect |-boost|p2b: Gardevoir|spd|1
+expect |move|p1b: Aegislash|Brave Bird|p2b: Gardevoir
+expect |rng|100|95
+expect |rng|24|23
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Gardevoir|60/163
+expect |-damage|p2b: Gardevoir|36/100
+expect |split|p1
+expect |-damage|p1b: Aegislash|55/135|[from] Recoil
+expect |-damage|p1b: Aegislash|40/100|[from] Recoil
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1a: Vivillon|Spiky Shield||[still]
+expect |rng|3|1
+expect |-fail|p1a: Vivillon
+expect |move|p2b: Gardevoir|Skill Swap|p2a: ThisNameIsFarTooLong
+expect |-activate|p2b: Gardevoir|Skill Swap|||[of] p2a: ThisNameIsFarTooLong
+expect |-hint|Skill Swap does not announce the abilities of the Pokémon when used between allies.
+expect |move|p2a: ThisNameIsFarTooLong|Aromatic Mist|p2b: Gardevoir
+expect |-boost|p2b: Gardevoir|spd|1
+expect |move|p1b: Aegislash|Brave Bird|p2b: Gardevoir
+expect |rng|100|18
+expect |rng|24|22
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Gardevoir|0 fnt
+expect |-damage|p2b: Gardevoir|0 fnt
+expect |faint|p2b: Gardevoir
+expect |split|p1
+expect |-damage|p1b: Aegislash|35/135|[from] Recoil
+expect |-damage|p1b: Aegislash|25/100|[from] Recoil
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1a: Vivillon|Spiky Shield|p1a: Vivillon
+expect |-singleturn|p1a: Vivillon|move: Protect
+expect |move|p2a: ThisNameIsFarTooLong|Aromatic Mist|p2: Gardevoir|[notarget]
+expect |-fail|p2a: ThisNameIsFarTooLong
+expect |move|p1b: Aegislash|Brave Bird|p1a: Vivillon
+expect |-activate|p1a: Vivillon|move: Protect
+expect |split|p1
+expect |-damage|p1b: Aegislash|19/135|[from] Spiky Shield|[of] p1a: Vivillon
+expect |-damage|p1b: Aegislash|14/100|[from] Spiky Shield|[of] p1a: Vivillon
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p1a: Vivillon|Spiky Shield||[still]
+expect |rng|3|2
+expect |-fail|p1a: Vivillon
+expect |move|p2a: ThisNameIsFarTooLong|Aromatic Mist|p2: Gardevoir|[notarget]
+expect |-fail|p2a: ThisNameIsFarTooLong
+expect |move|p1b: Aegislash|Brave Bird|p1a: Vivillon
+expect |rng|100|76
+expect |rng|24|15
+expect |rng|16|10
+expect |-supereffective|p1a: Vivillon|1
+expect |split|p1
+expect |-damage|p1a: Vivillon|0 fnt
+expect |-damage|p1a: Vivillon|0 fnt
+expect |faint|p1a: Vivillon
+expect |split|p1
+expect |-damage|p1b: Aegislash|0 fnt|[from] Recoil
+expect |-damage|p1b: Aegislash|0 fnt|[from] Recoil
+expect |faint|p1b: Aegislash
+expect |
+expect |win|p2

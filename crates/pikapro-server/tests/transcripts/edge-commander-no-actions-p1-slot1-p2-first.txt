@@ -1,0 +1,137 @@
+# Commander with fainted Dondozo and no reserves; recorded by tools/showdown-oracle/stream.mjs, Showdown master a5df827.
+@write
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":[1,2,3,4]}
+@write
+>player p1 {"name":"P1","team":[{"species":"Tatsugiri","ability":"Commander","moves":["Splash"],"gender":"M"},{"species":"Dondozo","ability":"Unaware","moves":["Doodle","Memento"],"gender":"M"}]}
+@write
+>player p2 {"name":"P2","team":[{"species":"Mew","ability":"No Guard","moves":["Splash"],"gender":"N"},{"species":"Mew","ability":"No Guard","moves":["Splash"],"gender":"N"}]}
+@write
+>p2 move 1, move 1
+@write
+>p1 pass, move 1 1
+@write
+>p2 move 1, move 1
+@write
+>p1 pass, move 2 1
+@write
+>p2 move 1, move 1
+@write
+>p1 pass, pass
+@write
+>forcewin p2
+@message
+update
+|t:|
+|gametype|doubles
+@message
+update
+|player|p1|P1||
+@message
+update
+|player|p2|P2||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|2
+|teamsize|p2|2
+|start
+|split|p1
+|switch|p1a: Tatsugiri|Tatsugiri, M|277/277
+|switch|p1a: Tatsugiri|Tatsugiri, M|277/277
+|split|p1
+|switch|p1b: Dondozo|Dondozo, M|441/441
+|switch|p1b: Dondozo|Dondozo, M|441/441
+|split|p2
+|switch|p2a: Mew|Mew|341/341
+|switch|p2a: Mew|Mew|341/341
+|split|p2
+|switch|p2b: Mew|Mew|341/341
+|switch|p2b: Mew|Mew|341/341
+|-activate|p1a: Tatsugiri|ability: Commander|[of] p1b: Dondozo
+|-boost|p1b: Dondozo|atk|2
+|-boost|p1b: Dondozo|spa|2
+|-boost|p1b: Dondozo|spe|2
+|-boost|p1b: Dondozo|def|2
+|-boost|p1b: Dondozo|spd|2
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Splash","id":"splash","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Dragon"},{"moves":[{"move":"Doodle","id":"doodle","pp":16,"maxpp":16,"target":"adjacentFoe","disabled":false},{"move":"Memento","id":"memento","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Water"}],"side":{"name":"P1","id":"p1","pokemon":[{"ident":"p1: Tatsugiri","details":"Tatsugiri, M","condition":"277/277","active":true,"stats":{"atk":136,"def":156,"spa":276,"spd":226,"spe":200},"moves":["splash"],"baseAbility":"commander","item":"","pokeball":"pokeball","ability":"commander","commanding":true,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Dondozo","details":"Dondozo, M","condition":"441/441","active":true,"stats":{"atk":236,"def":266,"spa":166,"spd":166,"spe":106},"moves":["doodle","memento"],"baseAbility":"unaware","item":"","pokeball":"pokeball","ability":"unaware","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Splash","id":"splash","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Psychic"},{"moves":[{"move":"Splash","id":"splash","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Psychic"}],"side":{"name":"P2","id":"p2","pokemon":[{"ident":"p2: Mew","details":"Mew","condition":"341/341","active":true,"stats":{"atk":236,"def":236,"spa":236,"spd":236,"spe":236},"moves":["splash"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Mew","details":"Mew","condition":"341/341","active":true,"stats":{"atk":236,"def":236,"spa":236,"spd":236,"spe":236},"moves":["splash"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|move|p2b: Mew|Splash|p2b: Mew
+|-nothing
+|move|p2a: Mew|Splash|p2a: Mew
+|-nothing
+|move|p1b: Dondozo|Doodle|p2a: Mew
+|-ability|p1a: Tatsugiri|No Guard|Commander|[from] move: Doodle
+|-ability|p1b: Dondozo|No Guard|Unaware|[from] move: Doodle
+|
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Splash","id":"splash","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Dragon"},{"moves":[{"move":"Doodle","id":"doodle","pp":15,"maxpp":16,"target":"adjacentFoe","disabled":false},{"move":"Memento","id":"memento","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Water"}],"side":{"name":"P1","id":"p1","pokemon":[{"ident":"p1: Tatsugiri","details":"Tatsugiri, M","condition":"277/277","active":true,"stats":{"atk":136,"def":156,"spa":276,"spd":226,"spe":200},"moves":["splash"],"baseAbility":"commander","item":"","pokeball":"pokeball","ability":"noguard","commanding":true,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Dondozo","details":"Dondozo, M","condition":"441/441","active":true,"stats":{"atk":236,"def":266,"spa":166,"spd":166,"spe":106},"moves":["doodle","memento"],"baseAbility":"unaware","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Splash","id":"splash","pp":63,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Psychic"},{"moves":[{"move":"Splash","id":"splash","pp":63,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Psychic"}],"side":{"name":"P2","id":"p2","pokemon":[{"ident":"p2: Mew","details":"Mew","condition":"341/341","active":true,"stats":{"atk":236,"def":236,"spa":236,"spd":236,"spe":236},"moves":["splash"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Mew","details":"Mew","condition":"341/341","active":true,"stats":{"atk":236,"def":236,"spa":236,"spd":236,"spe":236},"moves":["splash"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|move|p2a: Mew|Splash|p2a: Mew
+|-nothing
+|move|p2b: Mew|Splash|p2b: Mew
+|-nothing
+|move|p1b: Dondozo|Memento|p2a: Mew
+|-unboost|p2a: Mew|atk|2
+|-unboost|p2a: Mew|spa|2
+|faint|p1b: Dondozo
+|
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Splash","id":"splash","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Dragon"},{"moves":[{"move":"Doodle","id":"doodle","pp":15,"maxpp":16,"target":"adjacentFoe","disabled":false},{"move":"Memento","id":"memento","pp":15,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Water"}],"side":{"name":"P1","id":"p1","pokemon":[{"ident":"p1: Tatsugiri","details":"Tatsugiri, M","condition":"277/277","active":true,"stats":{"atk":136,"def":156,"spa":276,"spd":226,"spe":200},"moves":["splash"],"baseAbility":"commander","item":"","pokeball":"pokeball","ability":"noguard","commanding":true,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Dondozo","details":"Dondozo, M","condition":"0 fnt","active":true,"stats":{"atk":236,"def":266,"spa":166,"spd":166,"spe":106},"moves":["doodle","memento"],"baseAbility":"unaware","item":"","pokeball":"pokeball","ability":"unaware","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Splash","id":"splash","pp":62,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Psychic"},{"moves":[{"move":"Splash","id":"splash","pp":62,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Psychic"}],"side":{"name":"P2","id":"p2","pokemon":[{"ident":"p2: Mew","details":"Mew","condition":"341/341","active":true,"stats":{"atk":236,"def":236,"spa":236,"spd":236,"spe":236},"moves":["splash"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Mew","details":"Mew","condition":"341/341","active":true,"stats":{"atk":236,"def":236,"spa":236,"spd":236,"spe":236},"moves":["splash"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|move|p2a: Mew|Splash|p2a: Mew
+|-nothing
+|move|p2b: Mew|Splash|p2b: Mew
+|-nothing
+|
+|upkeep
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Splash","id":"splash","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Dragon"},{"moves":[{"move":"Doodle","id":"doodle","pp":15,"maxpp":16,"target":"adjacentFoe","disabled":false},{"move":"Memento","id":"memento","pp":15,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Water"}],"side":{"name":"P1","id":"p1","pokemon":[{"ident":"p1: Tatsugiri","details":"Tatsugiri, M","condition":"277/277","active":true,"stats":{"atk":136,"def":156,"spa":276,"spd":226,"spe":200},"moves":["splash"],"baseAbility":"commander","item":"","pokeball":"pokeball","ability":"noguard","commanding":true,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Dondozo","details":"Dondozo, M","condition":"0 fnt","active":true,"stats":{"atk":236,"def":266,"spa":166,"spd":166,"spe":106},"moves":["doodle","memento"],"baseAbility":"unaware","item":"","pokeball":"pokeball","ability":"unaware","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Splash","id":"splash","pp":61,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Psychic"},{"moves":[{"move":"Splash","id":"splash","pp":61,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Psychic"}],"side":{"name":"P2","id":"p2","pokemon":[{"ident":"p2: Mew","details":"Mew","condition":"341/341","active":true,"stats":{"atk":236,"def":236,"spa":236,"spd":236,"spe":236},"moves":["splash"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Mew","details":"Mew","condition":"341/341","active":true,"stats":{"atk":236,"def":236,"spa":236,"spd":236,"spe":236},"moves":["splash"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+@message
+update
+|
+|win|P2
+@message
+end
+{"winner":"P2","seed":"1,2,3,4","turns":4,"p1":"P1","p2":"P2","p1team":[{"species":"Tatsugiri","ability":"Commander","moves":["Splash"],"gender":"M","name":"Tatsugiri","level":100,"evs":{"hp":0,"atk":0,"def":0,"spa":0,"spd":0,"spe":0},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"species":"Dondozo","ability":"Unaware","moves":["Doodle","Memento"],"gender":"M","name":"Dondozo","level":100,"evs":{"hp":0,"atk":0,"def":0,"spa":0,"spd":0,"spe":0},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"species":"Mew","ability":"No Guard","moves":["Splash"],"gender":"N","name":"Mew","level":100,"evs":{"hp":0,"atk":0,"def":0,"spa":0,"spd":0,"spe":0},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"species":"Mew","ability":"No Guard","moves":["Splash"],"gender":"N","name":"Mew","level":100,"evs":{"hp":0,"atk":0,"def":0,"spa":0,"spd":0,"spe":0},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[1,2],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@!Team Preview\",\"seed\":\"1,2,3,4\"}",">player p1 {\"name\":\"P1\",\"team\":\"Tatsugiri|||Commander|Splash|||M||||]Dondozo|||Unaware|Doodle,Memento|||M||||\"}",">player p2 {\"name\":\"P2\",\"team\":\"Mew|||NoGuard|Splash|||N||||]Mew|||NoGuard|Splash|||N||||\"}",">p1 pass, move doodle +1",">p2 move splash, move splash",">p1 pass, move memento +1",">p2 move splash, move splash",">p1 pass, pass",">p2 move splash, move splash",">forcewin p2"]}

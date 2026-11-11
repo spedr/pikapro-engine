@@ -1,0 +1,42 @@
+# edge-one-player: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@write
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"gen5,00010002000300ff"}
+@write
+>player p1 {"name":"A","team":"Pikachu||choicespecs|static|thunderbolt,quickattack|Timid|,,,252,,252||||50|"}
+@write
+>p1 move 1
+@write
+>p1 undo
+@write
+>requestlog
+@write
+>requestexport
+@write
+>requestteam p1
+@write
+>p2 move 1
+@message
+update
+|t:|
+|gametype|singles
+@message
+update
+|player|p1|A||
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: It's not your turn
+@message
+requesteddata
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"gen5,00010002000300ff"}
+>player p1 {"name":"A","team":"Pikachu||choicespecs|static|thunderbolt,quickattack|Timid|,,,252,,252||||50|"}
+@message
+requesteddata
+gen5,00010002000300ff
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"gen5,00010002000300ff"}
+>player p1 {"name":"A","team":"Pikachu||choicespecs|static|thunderbolt,quickattack|Timid|,,,252,,252||||50|"}
+@message
+requesteddata
+Pikachu||ChoiceSpecs|Static|Thunderbolt,QuickAttack|Timid|,,,252,,252||||50|
+@error
+Cannot read properties of null (reading 'choose')

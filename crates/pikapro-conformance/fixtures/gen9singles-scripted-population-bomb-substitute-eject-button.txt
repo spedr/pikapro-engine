@@ -1,0 +1,85 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 0111 1112 2113 3114
+genders drawn
+team p1
+Maushold
+Ability: Technician
+Level: 5
+Hardy Nature
+- Population Bomb
+- Splash
+
+Pikachu
+Ability: Static
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Snorlax @ Eject Button
+Ability: Thick Fat
+Hardy Nature
+- Substitute
+- Splash
+
+Pikachu
+Ability: Static
+Level: 50
+Hardy Nature
+- Splash
+end
+choice p1 move 2
+choice p2 move 1
+choice p1 move 1
+choice p2 move 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Maushold|Maushold, L5|23/23
+expect |switch|p1a: Maushold|Maushold, L5|23/23
+expect |split|p2
+expect |switch|p2a: Snorlax|Snorlax, M|461/461
+expect |switch|p2a: Snorlax|Snorlax, M|461/461
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Snorlax|Substitute|p2a: Snorlax
+expect |-start|p2a: Snorlax|Substitute
+expect |split|p2
+expect |-damage|p2a: Snorlax|346/461
+expect |-damage|p2a: Snorlax|346/461
+expect |move|p1a: Maushold|Splash|p1a: Maushold
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Snorlax|Splash|p2a: Snorlax
+expect |-nothing
+expect |move|p1a: Maushold|Population Bomb|p2a: Snorlax
+expect |rng|100|23
+expect |rng|24|22
+expect |rng|16|0
+expect |-activate|p2a: Snorlax|move: Substitute|[damage]
+expect |rng|100|55
+expect |rng|24|12
+expect |rng|16|10
+expect |-activate|p2a: Snorlax|move: Substitute|[damage]
+expect |rng|100|99
+expect |-hitcount|p2a: Snorlax|2
+expect |-enditem|p2a: Snorlax|Eject Button

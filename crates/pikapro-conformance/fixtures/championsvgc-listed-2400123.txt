@@ -1,0 +1,418 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed d59a 531b a3be 6a8c
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Slowking (M) @ Leftovers
+Ability: Regenerator
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Bold Nature
+- Chilly Reception
+- Slack Off
+- Future Sight
+- Scald
+
+Beedrill-Mega (F) @ Beedrillite
+Ability: Adaptability
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Lunge
+- Poison Jab
+- Knock Off
+- Fell Stinger
+
+Quaquaval (M) @ Life Orb
+Ability: Moxie
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Encore
+- Close Combat
+- Aqua Step
+- Swords Dance
+
+Alakazam-Mega (M) @ Alakazite
+Ability: Magic Guard
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Psychic
+- Nasty Plot
+- Encore
+- Focus Blast
+
+Scovillain-Mega (F) @ Scovillainite
+Ability: Spicy Spray
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Lonely Nature
+- Giga Drain
+- Flare Blitz
+- Fire Blast
+- Trailblaze
+
+Pinsir (M) @ Choice Scarf
+Ability: Moxie
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Close Combat
+- Earthquake
+- Lunge
+- Stone Edge
+end
+team p2
+Scolipede-Mega (F) @ Scolipite
+Ability: Speed Boost
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Protect
+- Earthquake
+- Gunk Shot
+- Spikes
+
+Volcarona (M) @ Leftovers
+Ability: Flame Body
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Quiver Dance
+- Bug Buzz
+- Morning Sun
+- Fire Blast
+
+Swampert-Mega (M) @ Swampertite
+Ability: Damp
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Earthquake
+- Rain Dance
+- Knock Off
+- Wave Crash
+
+Sparky (Skarmory) (F) @ Rocky Helmet
+Ability: Sturdy
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Impish Nature
+- Brave Bird
+- Roost
+- Stealth Rock
+- Spikes
+
+X (Drampa) (F) @ Drampanite
+Ability: Berserk
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Fire Blast
+- Glare
+- Draco Meteor
+- Roost
+
+Leafeon (M) @ Life Orb
+Ability: Chlorophyll
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Leaf Blade
+- Double-Edge
+- Swords Dance
+- Knock Off
+end
+choice p1 team 5642
+choice p2 team 2354
+choice p1 move 2 2 mega, move 1 2
+choice p2 move bugbuzz 1,move Rain Dance
+choice p1 default
+choice p2 switch 4, move 3 1
+choice p2 pass, switch 4
+choice p1 switch 4, switch 3
+choice p2 move 3, move 1
+choice p1 default
+choice p2 switch 3, move 1
+choice p1 move 3 -2, move encore -1
+choice p2 move 3 1, move 2 -1
+choice p2 switch 3, pass
+choice p1 default
+choice p2 move 1 1, move 4 -1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Slowking, L50, M|
+expect |poke|p1|Beedrill, L50, F|
+expect |poke|p1|Quaquaval, L50, M|
+expect |poke|p1|Alakazam, L50, M|
+expect |poke|p1|Scovillain, L50, F|
+expect |poke|p1|Pinsir, L50, M, shiny|
+expect |poke|p2|Scolipede, L50, F|
+expect |poke|p2|Volcarona, L50, M|
+expect |poke|p2|Swampert, L50, M|
+expect |poke|p2|Skarmory, L50, F|
+expect |poke|p2|Drampa, L50, F|
+expect |poke|p2|Leafeon, L50, M, shiny|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Scovillain|Scovillain, L50, F|172/172
+expect |switch|p1a: Scovillain|Scovillain, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Pinsir|Pinsir, L50, M, shiny|142/142
+expect |switch|p1b: Pinsir|Pinsir, L50, M, shiny|100/100
+expect |split|p2
+expect |switch|p2a: Volcarona|Volcarona, L50, M|162/162
+expect |switch|p2a: Volcarona|Volcarona, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Swampert|Swampert, L50, M|177/177
+expect |switch|p2b: Swampert|Swampert, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |detailschange|p1a: Scovillain|Scovillain-Mega, L50, F
+expect |-mega|p1a: Scovillain|Scovillain|Scovillainite
+expect |move|p1b: Pinsir|Close Combat|p2b: Swampert
+expect |rng|100|27
+expect |rng|24|8
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2b: Swampert|103/177
+expect |-damage|p2b: Swampert|58/100
+expect |rng|100|47
+expect |-unboost|p1b: Pinsir|def|1
+expect |-unboost|p1b: Pinsir|spd|1
+expect |move|p2a: Volcarona|Bug Buzz|p1a: Scovillain
+expect |rng|100|9
+expect |rng|24|11
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Scovillain|60/172
+expect |-damage|p1a: Scovillain|34/100
+expect |rng|100|2
+expect |-unboost|p1a: Scovillain|spd|1
+expect |move|p2b: Swampert|Rain Dance|p2b: Swampert
+expect |-weather|RainDance
+expect |move|p1a: Scovillain|Flare Blitz|p2b: Swampert
+expect |rng|100|45
+expect |rng|24|15
+expect |rng|16|15
+expect |-resisted|p2b: Swampert|1
+expect |split|p2
+expect |-damage|p2b: Swampert|71/177
+expect |-damage|p2b: Swampert|40/100
+expect |rng|100|93
+expect |split|p1
+expect |-damage|p1a: Scovillain|49/172|[from] Recoil
+expect |-damage|p1a: Scovillain|28/100|[from] Recoil
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sparky|Skarmory, L50, F|172/172
+expect |switch|p2a: Sparky|Skarmory, L50, F|100/100
+expect |move|p1b: Pinsir|Close Combat|p2b: Swampert
+expect |rng|100|87
+expect |rng|24|1
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Swampert|0 fnt
+expect |-damage|p2b: Swampert|0 fnt
+expect |rng|100|69
+expect |-unboost|p1b: Pinsir|def|1
+expect |-unboost|p1b: Pinsir|spd|1
+expect |faint|p2b: Swampert
+expect |-ability|p1b: Pinsir|Moxie|boost
+expect |-boost|p1b: Pinsir|atk|1
+expect |move|p1a: Scovillain|Giga Drain|p2a: Sparky
+expect |rng|100|30
+expect |rng|24|16
+expect |rng|16|2
+expect |-resisted|p2a: Sparky|2
+expect |split|p2
+expect |-damage|p2a: Sparky|154/172
+expect |-damage|p2a: Sparky|89/100
+expect |split|p1
+expect |-heal|p1a: Scovillain|58/172|[from] drain|[of] p2a: Sparky
+expect |-heal|p1a: Scovillain|33/100|[from] drain|[of] p2a: Sparky
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Volcarona|Volcarona, L50, M|162/162
+expect |switch|p2b: Volcarona|Volcarona, L50, M|100/100
+expect |turn|3
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Alakazam|Alakazam, L50, M|132/132
+expect |switch|p1b: Alakazam|Alakazam, L50, M|100/100
+expect |split|p1
+expect |switch|p1a: Beedrill|Beedrill, L50, F|142/142
+expect |switch|p1a: Beedrill|Beedrill, L50, F|100/100
+expect |rng|2|0
+expect |move|p2b: Volcarona|Quiver Dance|p2b: Volcarona
+expect |-boost|p2b: Volcarona|spa|1
+expect |-boost|p2b: Volcarona|spd|1
+expect |-boost|p2b: Volcarona|spe|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Sparky|Stealth Rock|p1a: Beedrill
+expect |-sidestart|p1: p1|move: Stealth Rock
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Drampa, L50, F|185/185
+expect |switch|p2a: X|Drampa, L50, F|100/100
+expect |move|p2b: Volcarona|Quiver Dance|p2b: Volcarona
+expect |-boost|p2b: Volcarona|spa|1
+expect |-boost|p2b: Volcarona|spd|1
+expect |-boost|p2b: Volcarona|spe|1
+expect |move|p1b: Alakazam|Psychic|p2a: X
+expect |rng|100|70
+expect |rng|24|0
+expect |rng|16|0
+expect |-crit|p2a: X
+expect |split|p2
+expect |-damage|p2a: X|17/185
+expect |-damage|p2a: X|9/100
+expect |rng|100|24
+expect |-ability|p2a: X|Berserk|boost
+expect |-boost|p2a: X|spa|1
+expect |move|p1a: Beedrill|Lunge|p2b: Volcarona
+expect |rng|100|43
+expect |rng|24|13
+expect |rng|16|10
+expect |-resisted|p2b: Volcarona|1
+expect |split|p2
+expect |-damage|p2b: Volcarona|118/162
+expect |-damage|p2b: Volcarona|72/100
+expect |rng|100|8
+expect |-unboost|p2b: Volcarona|atk|1
+expect |rng|10|6
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |split|p2
+expect |-heal|p2b: Volcarona|128/162|[from] item: Leftovers
+expect |-heal|p2b: Volcarona|79/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2b: Volcarona|Bug Buzz|p2a: X
+expect |rng|100|47
+expect |rng|24|10
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: X|0 fnt
+expect |-damage|p2a: X|0 fnt
+expect |rng|100|13
+expect |faint|p2a: X
+expect |move|p1b: Alakazam|Encore|p1a: Beedrill
+expect |rng|100|29
+expect |-start|p1a: Beedrill|Encore
+expect |rng|1|0
+expect |move|p1a: Beedrill|Lunge|p2b: Volcarona
+expect |rng|100|69
+expect |rng|24|8
+expect |rng|16|5
+expect |-resisted|p2b: Volcarona|1
+expect |split|p2
+expect |-damage|p2b: Volcarona|82/162
+expect |-damage|p2b: Volcarona|50/100g
+expect |rng|100|56
+expect |-unboost|p2b: Volcarona|atk|1
+expect |rng|10|3
+expect |
+expect |-weather|none
+expect |split|p2
+expect |-heal|p2b: Volcarona|92/162|[from] item: Leftovers
+expect |-heal|p2b: Volcarona|56/100|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sparky|Skarmory, L50, F|154/172
+expect |switch|p2a: Sparky|Skarmory, L50, F|89/100
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2b: Volcarona|Fire Blast|p2a: Sparky
+expect |rng|100|73
+expect |rng|24|1
+expect |rng|16|1
+expect |-supereffective|p2a: Sparky|1
+expect |split|p2
+expect |-damage|p2a: Sparky|0 fnt
+expect |-damage|p2a: Sparky|0 fnt
+expect |rng|100|8
+expect |faint|p2a: Sparky
+expect |rng|1|0
+expect |move|p1b: Alakazam|Psychic|p2b: Volcarona
+expect |rng|100|32
+expect |rng|24|9
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2b: Volcarona|44/162
+expect |-damage|p2b: Volcarona|27/100
+expect |rng|100|5
+expect |-unboost|p2b: Volcarona|spd|1
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Beedrill|Lunge|p2b: Volcarona
+expect |rng|100|81
+expect |rng|24|16
+expect |rng|16|1
+expect |-resisted|p2b: Volcarona|1
+expect |split|p2
+expect |-damage|p2b: Volcarona|0 fnt
+expect |-damage|p2b: Volcarona|0 fnt
+expect |rng|100|14
+expect |rng|10|8
+expect |faint|p2b: Volcarona
+expect |
+expect |win|p1

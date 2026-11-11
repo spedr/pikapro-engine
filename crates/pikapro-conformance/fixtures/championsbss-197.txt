@@ -1,0 +1,560 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed aff1 89c8 b9d6 4798
+genders drawn
+team p1
+Beartic
+Ability: Snow Cloak
+Level: 50
+Tera Type: Normal
+EVs: 32 Atk / 1 Def / 32 Spe
+Calm Nature
+- Beak Blast
+- Leaf Blade
+- Wood Hammer
+- Charm
+
+Gourgeist-Super @ Yache Berry
+Ability: Frisk
+Level: 50
+Tera Type: Grass
+EVs: 30 HP / 24 Atk / 1 Def / 1 SpD / 10 Spe
+Naughty Nature
+- Yawn
+- Howl
+
+ThisNameIsFarTooLongToKeep (Typhlosion) (M)
+Ability: Blaze
+Level: 50
+Tera Type: Dark
+EVs: 12 Atk / 22 Def / 13 SpA / 18 SpD
+Impish Nature
+- High Jump Kick
+- Belly Drum
+- Thunder Punch
+
+Swalot (M)
+Ability: Gluttony
+Level: 50
+Tera Type: Ice
+EVs: 23 Def / 31 SpD / 10 Spe
+Rash Nature
+- Fairy Lock
+- Dig
+- Tickle
+- Growth
+
+Sir Hops-a-Lot (Vileplume) (M)
+Ability: Chlorophyll
+Level: 50
+Shiny: Yes
+Tera Type: Ice
+EVs: 17 Atk / 18 Def / 27 SpD / 4 Spe
+Serious Nature
+- Focus Blast
+- Vacuum Wave
+
+X (Pidgeot)
+Ability: Keen Eye
+Level: 50
+Shiny: Yes
+Tera Type: Normal
+EVs: 10 HP / 11 Atk / 6 Def / 6 SpA / 7 SpD / 17 Spe
+Timid Nature
+- Slack Off
+end
+team p2
+Mr. Bubbles (Zoroark) (M) @ Iron Ball
+Ability: Illusion
+Level: 50
+Tera Type: Flying
+EVs: 3 HP / 20 Atk / 10 Def / 2 SpA / 9 SpD / 18 Spe
+Docile Nature
+- Razor Shell
+
+Vivillon-Ocean
+Ability: Compound Eyes
+Level: 50
+Tera Type: Steel
+EVs: 2 HP / 11 Atk / 24 Def / 2 SpA / 19 Spe
+Modest Nature
+- Thief
+- Ice Spinner
+
+Pangoro (M)
+Ability: Iron Fist
+Level: 50
+Tera Type: Electric
+EVs: 20 HP / 18 SpA / 1 SpD / 27 Spe
+Bold Nature
+- X-Scissor
+
+Oranguru (M) @ Twisted Spoon
+Ability: Inner Focus
+Level: 50
+Tera Type: Rock
+EVs: 10 HP / 16 Atk / 4 SpA / 26 Spe
+Bashful Nature
+- Hyper Voice
+- Thunder
+
+Pikachu (Simisage) (F) @ Expert Belt
+Ability: Overgrow
+Level: 50
+Tera Type: Fairy
+EVs: 10 Atk / 26 Def / 2 SpA / 26 Spe
+Quirky Nature
+- Whirlwind
+
+Alcremie-Mint-Cream
+Ability: Aroma Veil
+Level: 50
+Tera Type: Grass
+EVs: 16 HP / 3 Atk / 29 Def / 8 SpA / 6 Spe
+Relaxed Nature
+- Trick
+- Role Play
+- Morning Sun
+- Tailwind
+end
+choice p1 team 146
+choice p2 team [3, 6, 5]
+choice p1 move Leaf Blade
+choice p2 switch simisage
+choice p1 default
+choice p2 move 1
+choice p2 switch Pangoro
+choice p1 move 1
+choice p2 move 1
+choice p1 move 3
+choice p2 move 1
+choice p2 switch 2
+choice p1 default
+choice p2 move 4
+choice p1 switch 3
+choice p2 move 3
+choice p1 move 1
+choice p2 move 2
+choice p1 switch 3
+choice p2 move 3
+choice p1 move 1
+choice p2 move 1
+choice p1 move 3
+choice p2 move 3
+choice p1 move 1
+choice p2 move 3
+choice p1 switch 2
+choice p2 move 3
+choice p1 switch pidgeot
+choice p2 move 2
+choice p1 switch 3
+choice p2 move 1
+choice p1 default
+choice p2 move 4
+choice p1 move 1
+choice p2 move 4
+choice p1 switch 3
+choice p2 move 4
+choice p1 move 1
+choice p2 move 3
+choice p1 switch 2
+choice p2 move 4
+choice p1 move charm
+choice p2 move 1
+choice p1 move 3
+choice p2 move 1
+choice p1 move leafblade
+choice p2 move roleplay
+choice p1 switch 2
+choice p2 move 4
+choice p1 switch 2
+choice p2 default
+choice p1 move Beak Blast
+choice p2 move 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Beartic, L50, F|
+expect |poke|p1|Gourgeist-Super, L50, F|
+expect |poke|p1|Typhlosion, L50, M|
+expect |poke|p1|Swalot, L50, M|
+expect |poke|p1|Vileplume, L50, M, shiny|
+expect |poke|p1|Pidgeot, L50, F, shiny|
+expect |poke|p2|Zoroark, L50, M|
+expect |poke|p2|Vivillon-Ocean, L50, M|
+expect |poke|p2|Pangoro, L50, M|
+expect |poke|p2|Oranguru, L50, M|
+expect |poke|p2|Simisage, L50, F|
+expect |poke|p2|Alcremie-Mint-Cream, L50, F|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Beartic|Beartic, L50, F|170/170
+expect |switch|p1a: Beartic|Beartic, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Pangoro|Pangoro, L50, M|190/190
+expect |switch|p2a: Pangoro|Pangoro, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pikachu|Simisage, L50, F|150/150
+expect |switch|p2a: Pikachu|Simisage, L50, F|100/100
+expect |move|p1a: Beartic|Leaf Blade|p2a: Pikachu
+expect |rng|100|27
+expect |rng|8|5
+expect |rng|16|6
+expect |-resisted|p2a: Pikachu|1
+expect |split|p2
+expect |-damage|p2a: Pikachu|122/150
+expect |-damage|p2a: Pikachu|81/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |-singleturn|p1a: Beartic|move: Beak Blast
+expect |move|p1a: Beartic|Beak Blast|p2a: Pikachu
+expect |rng|100|32
+expect |rng|24|5
+expect |rng|16|1
+expect |-supereffective|p2a: Pikachu|1
+expect |split|p2
+expect |-damage|p2a: Pikachu|0 fnt
+expect |-damage|p2a: Pikachu|0 fnt
+expect |faint|p2a: Pikachu
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pangoro|Pangoro, L50, M|190/190
+expect |switch|p2a: Pangoro|Pangoro, L50, M|100/100
+expect |turn|3
+expect |
+expect |t:|
+expect |-singleturn|p1a: Beartic|move: Beak Blast
+expect |move|p2a: Pangoro|X-Scissor|p1a: Beartic
+expect |rng|100|63
+expect |rng|24|21
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Beartic|130/170
+expect |-damage|p1a: Beartic|76/100
+expect |-status|p2a: Pangoro|brn
+expect |move|p1a: Beartic|Beak Blast|p2a: Pangoro
+expect |rng|100|0
+expect |rng|24|17
+expect |rng|16|5
+expect |-supereffective|p2a: Pangoro|1
+expect |split|p2
+expect |-damage|p2a: Pangoro|36/190 brn
+expect |-damage|p2a: Pangoro|18/100 brn
+expect |
+expect |split|p2
+expect |-damage|p2a: Pangoro|25/190 brn|[from] brn
+expect |-damage|p2a: Pangoro|13/100 brn|[from] brn
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Pangoro|X-Scissor|p1a: Beartic
+expect |rng|100|13
+expect |rng|24|2
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Beartic|110/170
+expect |-damage|p1a: Beartic|64/100
+expect |move|p1a: Beartic|Wood Hammer|p2a: Pangoro
+expect |rng|100|62
+expect |rng|24|14
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Pangoro|0 fnt
+expect |-damage|p2a: Pangoro|0 fnt
+expect |faint|p2a: Pangoro
+expect |split|p1
+expect |-damage|p1a: Beartic|102/170|[from] Recoil
+expect |-damage|p1a: Beartic|60/100|[from] Recoil
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Alcremie|Alcremie-Mint-Cream, L50, F|156/156
+expect |switch|p2a: Alcremie|Alcremie-Mint-Cream, L50, F|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |-singleturn|p1a: Beartic|move: Beak Blast
+expect |move|p2a: Alcremie|Tailwind|p2a: Alcremie
+expect |-sidestart|p2: p2|move: Tailwind
+expect |move|p1a: Beartic|Beak Blast|p2a: Alcremie
+expect |rng|100|82
+expect |rng|24|3
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Alcremie|94/156
+expect |-damage|p2a: Alcremie|60/100
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: X|Pidgeot, L50, F, shiny|168/168
+expect |switch|p1a: X|Pidgeot, L50, F, shiny|100/100
+expect |move|p2a: Alcremie|Morning Sun|p2a: Alcremie
+expect |split|p2
+expect |-heal|p2a: Alcremie|156/156
+expect |-heal|p2a: Alcremie|100/100
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Alcremie|Role Play|p1a: X
+expect |-ability|p2a: Alcremie|Keen Eye|Aroma Veil|[from] move: Role Play|[of] p1a: X
+expect |move|p1a: X|Slack Off||[still]
+expect |-fail|p1a: X|heal
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Beartic|Beartic, L50, F|102/170
+expect |switch|p1a: Beartic|Beartic, L50, F|60/100
+expect |move|p2a: Alcremie|Morning Sun|p2a: Alcremie
+expect |-fail|p2a: Alcremie|heal
+expect |
+expect |-sideend|p2: p2|move: Tailwind
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |-singleturn|p1a: Beartic|move: Beak Blast
+expect |move|p2a: Alcremie|Trick||[still]
+expect |rng|100|18
+expect |-fail|p2a: Alcremie
+expect |move|p1a: Beartic|Beak Blast|p2a: Alcremie
+expect |rng|100|55
+expect |rng|24|7
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Alcremie|97/156
+expect |-damage|p2a: Alcremie|62/100
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1a: Beartic|Wood Hammer|p2a: Alcremie
+expect |rng|100|63
+expect |rng|24|4
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Alcremie|32/156
+expect |-damage|p2a: Alcremie|20/100y
+expect |split|p1
+expect |-damage|p1a: Beartic|81/170|[from] Recoil
+expect |-damage|p1a: Beartic|47/100|[from] Recoil
+expect |move|p2a: Alcremie|Morning Sun|p2a: Alcremie
+expect |split|p2
+expect |-heal|p2a: Alcremie|110/156
+expect |-heal|p2a: Alcremie|70/100
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |-singleturn|p1a: Beartic|move: Beak Blast
+expect |move|p2a: Alcremie|Morning Sun|p2a: Alcremie
+expect |split|p2
+expect |-heal|p2a: Alcremie|156/156
+expect |-heal|p2a: Alcremie|100/100
+expect |move|p1a: Beartic|Beak Blast|p2a: Alcremie
+expect |rng|100|84
+expect |rng|24|14
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Alcremie|101/156
+expect |-damage|p2a: Alcremie|64/100
+expect |
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Swalot|Swalot, L50, M|175/175
+expect |switch|p1a: Swalot|Swalot, L50, M|100/100
+expect |move|p2a: Alcremie|Morning Sun|p2a: Alcremie
+expect |split|p2
+expect |-heal|p2a: Alcremie|156/156
+expect |-heal|p2a: Alcremie|100/100
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: X|Pidgeot, L50, F, shiny|168/168
+expect |switch|p1a: X|Pidgeot, L50, F, shiny|100/100
+expect |move|p2a: Alcremie|Role Play||[still]
+expect |-fail|p2a: Alcremie
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Swalot|Swalot, L50, M|175/175
+expect |switch|p1a: Swalot|Swalot, L50, M|100/100
+expect |move|p2a: Alcremie|Trick||[still]
+expect |rng|100|44
+expect |-fail|p2a: Alcremie
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p1a: Swalot|Fairy Lock|p1a: Swalot
+expect |-fieldactivate|move: Fairy Lock
+expect |move|p2a: Alcremie|Tailwind|p2a: Alcremie
+expect |-sidestart|p2: p2|move: Tailwind
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p2a: Alcremie|Tailwind||[still]
+expect |-fail|p2a: Alcremie
+expect |move|p1a: Swalot|Fairy Lock||[still]
+expect |-fail|p1a: Swalot
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: X|Pidgeot, L50, F, shiny|168/168
+expect |switch|p1a: X|Pidgeot, L50, F, shiny|100/100
+expect |move|p2a: Alcremie|Tailwind||[still]
+expect |-fail|p2a: Alcremie
+expect |
+expect |upkeep
+expect |turn|18
+expect |
+expect |t:|
+expect |move|p2a: Alcremie|Morning Sun|p2a: Alcremie
+expect |-fail|p2a: Alcremie|heal
+expect |move|p1a: X|Slack Off||[still]
+expect |-fail|p1a: X|heal
+expect |
+expect |-sideend|p2: p2|move: Tailwind
+expect |upkeep
+expect |turn|19
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Beartic|Beartic, L50, F|81/170
+expect |switch|p1a: Beartic|Beartic, L50, F|47/100
+expect |move|p2a: Alcremie|Tailwind|p2a: Alcremie
+expect |-sidestart|p2: p2|move: Tailwind
+expect |
+expect |upkeep
+expect |turn|20
+expect |
+expect |t:|
+expect |move|p2a: Alcremie|Trick||[still]
+expect |rng|100|58
+expect |-fail|p2a: Alcremie
+expect |move|p1a: Beartic|Charm|p2a: Alcremie
+expect |rng|100|86
+expect |-unboost|p2a: Alcremie|atk|2
+expect |
+expect |upkeep
+expect |turn|21
+expect |
+expect |t:|
+expect |move|p2a: Alcremie|Trick||[still]
+expect |rng|100|49
+expect |-fail|p2a: Alcremie
+expect |move|p1a: Beartic|Wood Hammer|p2a: Alcremie
+expect |rng|100|64
+expect |rng|24|3
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Alcremie|99/156
+expect |-damage|p2a: Alcremie|63/100
+expect |split|p1
+expect |-damage|p1a: Beartic|62/170|[from] Recoil
+expect |-damage|p1a: Beartic|36/100|[from] Recoil
+expect |
+expect |upkeep
+expect |turn|22
+expect |
+expect |t:|
+expect |move|p2a: Alcremie|Role Play|p1a: Beartic
+expect |-ability|p2a: Alcremie|Snow Cloak|Keen Eye|[from] move: Role Play|[of] p1a: Beartic
+expect |move|p1a: Beartic|Leaf Blade|p2a: Alcremie
+expect |rng|100|20
+expect |rng|8|4
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Alcremie|53/156
+expect |-damage|p2a: Alcremie|33/100
+expect |
+expect |-sideend|p2: p2|move: Tailwind
+expect |upkeep
+expect |turn|23
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: X|Pidgeot, L50, F, shiny|168/168
+expect |switch|p1a: X|Pidgeot, L50, F, shiny|100/100
+expect |move|p2a: Alcremie|Tailwind|p2a: Alcremie
+expect |-sidestart|p2: p2|move: Tailwind
+expect |
+expect |upkeep
+expect |turn|24
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Beartic|Beartic, L50, F|62/170
+expect |switch|p1a: Beartic|Beartic, L50, F|36/100
+expect |move|p2a: Alcremie|Trick||[still]
+expect |rng|100|51
+expect |-fail|p2a: Alcremie
+expect |
+expect |upkeep
+expect |turn|25
+expect |
+expect |t:|
+expect |-singleturn|p1a: Beartic|move: Beak Blast
+expect |move|p2a: Alcremie|Role Play||[still]
+expect |-fail|p2a: Alcremie
+expect |move|p1a: Beartic|Beak Blast|p2a: Alcremie
+expect |rng|100|75
+expect |rng|24|17
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Alcremie|0 fnt
+expect |-damage|p2a: Alcremie|0 fnt
+expect |faint|p2a: Alcremie
+expect |
+expect |win|p1

@@ -1,0 +1,148 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+team-size 1 6
+seed 0000 0000 02dc 6fe8
+genders drawn
+team p1
+Mew
+Ability: Synchronize
+Level: 50
+EVs: 32 Spe
+Timid Nature
+- Charge
+- Growl
+- Thunderbolt
+
+Blissey
+Ability: Serene Grace
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Espeon
+Ability: Magic Bounce
+Level: 50
+Hardy Nature
+- Splash
+
+Regieleki
+Ability: Transistor
+Level: 50
+EVs: 32 Spe
+Timid Nature
+- Electrify
+- Splash
+end
+choice p1 team 12
+choice p2 team 12
+choice p1 move 1, move 1
+choice p2 move 1, move 2
+choice p1 move 2, move 1
+choice p2 move 1, move 1 -1
+choice p1 move 3 2, move 1
+choice p2 move 1, move 2
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Mew, L50|
+expect |poke|p1|Blissey, L50, F|
+expect |poke|p2|Espeon, L50, F|
+expect |poke|p2|Regieleki, L50|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Mew|Mew, L50|175/175
+expect |switch|p1a: Mew|Mew, L50|100/100
+expect |split|p1
+expect |switch|p1b: Blissey|Blissey, L50, F|330/330
+expect |switch|p1b: Blissey|Blissey, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Espeon|Espeon, L50, F|140/140
+expect |switch|p2a: Espeon|Espeon, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Regieleki|Regieleki, L50|155/155
+expect |switch|p2b: Regieleki|Regieleki, L50|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2b: Regieleki|Splash|p2b: Regieleki
+expect |-nothing
+expect |move|p1a: Mew|Charge|p1a: Mew
+expect |-boost|p1a: Mew|spd|1
+expect |-start|p1a: Mew|Charge
+expect |move|p2a: Espeon|Splash|p2a: Espeon
+expect |-nothing
+expect |move|p1b: Blissey|Splash|p1b: Blissey
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Regieleki|Electrify|p2a: Espeon
+expect |-singleturn|p2a: Espeon|move: Electrify
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Mew|Growl|p2a: Espeon
+expect |move|p2a: Espeon|Growl|p1a: Mew|[from] ability: Magic Bounce|[spread] p1a,p1b|[spread] p2b
+expect |rng|100|83
+expect |rng|100|96
+expect |-unboost|p1a: Mew|atk|1
+expect |-unboost|p1b: Blissey|atk|1
+expect |rng|100|68
+expect |-unboost|p2b: Regieleki|atk|1
+expect |-end|p1a: Mew|Charge|[silent]
+expect |move|p2a: Espeon|Splash|p2a: Espeon
+expect |-nothing
+expect |move|p1b: Blissey|Splash|p1b: Blissey
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2b: Regieleki|Splash|p2b: Regieleki
+expect |-nothing
+expect |move|p1a: Mew|Thunderbolt|p2b: Regieleki
+expect |rng|100|13
+expect |rng|24|15
+expect |rng|16|13
+expect |-resisted|p2b: Regieleki|1
+expect |split|p2
+expect |-damage|p2b: Regieleki|125/155
+expect |-damage|p2b: Regieleki|80/100
+expect |rng|100|43
+expect |move|p2a: Espeon|Splash|p2a: Espeon
+expect |-nothing
+expect |move|p1b: Blissey|Splash|p1b: Blissey
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|4

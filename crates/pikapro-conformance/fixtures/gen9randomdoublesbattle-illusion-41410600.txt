@@ -1,0 +1,808 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed e3e9 626e 25a3 b2e0
+genders drawn
+team p1
+Vibrava (F)
+Ability: Levitate
+Level: 95
+Tera Type: Ghost
+EVs: 68 HP / 34 Atk / 15 Def / 237 SpA / 33 SpD / 101 Spe
+Naughty Nature
+- Chilling Water
+- Sheer Cold
+- Fairy Lock
+- Slam
+
+Carkol (F)
+Ability: Steam Engine
+Level: 80
+Tera Type: Normal
+EVs: 156 HP / 2 Atk / 120 Def / 147 SpA / 68 SpD / 17 Spe
+Hasty Nature
+- Body Slam
+- Darkest Lariat
+
+Nibbles (Zoroark)
+Ability: Illusion
+Level: 78
+Tera Type: Bug
+EVs: 32 HP / 53 Atk / 204 Def / 16 SpA / 184 SpD / 19 Spe
+Bashful Nature
+- U-turn
+- Apple Acid
+
+Tyranitar
+Ability: Sand Stream
+Level: 98
+Tera Type: Electric
+EVs: 6 HP / 2 Atk / 107 Def / 205 SpA / 98 SpD / 92 Spe
+Hasty Nature
+- Conversion
+- Teleport
+- Rollout
+- Mud Shot
+
+ThisNameIsFarTooLongToKeep (Galvantula)
+Ability: Compound Eyes
+Level: 76
+Tera Type: Fire
+EVs: 65 HP / 239 Atk / 86 Def / 44 SpA / 17 SpD / 46 Spe
+Rash Nature
+- Snore
+
+Gulpin (F) @ Aspear Berry
+Ability: Liquid Ooze
+Level: 80
+Tera Type: Ground
+EVs: 157 HP / 127 Atk / 77 Def / 36 SpA / 95 SpD / 14 Spe
+Bashful Nature
+- Blast Burn
+- Electro Shot
+end
+team p2
+Pincurchin
+Ability: Electric Surge
+Level: 83
+Tera Type: Dragon
+EVs: 57 HP / 64 Atk / 179 Def / 149 SpA / 4 Spe
+Modest Nature
+- Horn Leech
+- Hypnosis
+- Doom Desire
+
+Nibbles (Zamazenta) @ Custap Berry
+Ability: Dauntless Shield
+Level: 77
+Tera Type: Flying
+EVs: 1 HP / 238 Atk / 105 Def / 69 SpA / 31 SpD / 61 Spe
+Relaxed Nature
+- Acid
+- Stone Axe
+- Rock Slide
+
+Toucannon @ Heavy-Duty Boots
+Ability: Skill Link
+Level: 73
+Tera Type: Ground
+EVs: 19 HP / 8 Atk / 121 Def / 227 SpA / 119 SpD / 11 Spe
+Hardy Nature
+- Tar Shot
+
+Zoroark
+Ability: Illusion
+Level: 62
+Tera Type: Flying
+EVs: 64 HP / 20 Atk / 250 Def / 9 SpA / 167 Spe
+Hasty Nature
+- U-turn
+- Dragon Claw
+
+Fezandipiti (M)
+Ability: Toxic Chain
+Level: 98
+Shiny: Yes
+Tera Type: Fighting
+EVs: 70 HP / 120 Atk / 8 Def / 73 SpA / 79 SpD / 115 Spe
+Hasty Nature
+- Volt Tackle
+
+Steenee (F)
+Ability: Sweet Veil
+Level: 68
+Tera Type: Water
+EVs: 6 HP / 5 Atk / 23 Def / 103 SpA / 151 SpD / 217 Spe
+Quiet Nature
+- Attract
+- Dragon Pulse
+- Razor Leaf
+- Sing
+end
+choice p1 move 4 -2 terastal,switch Tyranitar
+choice p2 move 1 2 terastallize, move 2 1
+choice p1 move 1 2, move 4 2
+choice p2 switch 6, move 1
+choice p1 move 2 2, switch 4
+choice p2 move sing -2 ,  switch Toucannon
+choice p1 switch Gulpin ,  move 1 2
+choice p2 move 4 2, move 1 -1
+choice p1 move Blast Burn 1, move Darkest Lariat 2
+choice p2 move 4 +2, move Tar Shot 1
+choice p2 switch 5, pass
+choice p1 move 1, move darkestlariat -1
+choice p2 move 1 2, switch 6
+choice p1 move 2 1, switch 5
+choice p2 move 1 -2, move 1 1
+choice p1 move 1, switch 4
+choice p2 move 1 2, move 3 -1
+choice p1 move 2 1, switch 4
+choice p2 move 1 1, move 1 2
+choice p1 default
+choice p2 switch 3, move 1 1
+choice p1 move 1 2, move 1 -1
+choice p1 switch 4, pass
+choice p1 switch 4, pass
+choice p2 move acid, switch zoroark
+choice p1 move appleacid 2,move snore -1
+choice p2 switch 3, pass
+choice p1 move 2 -2, switch 6
+choice p2 move 1 -2, switch 4
+choice p1 skip, switch 6
+choice p2 pass, switch 6
+choice p1 pass, switch 5
+choice p2 move 1 1, switch 4
+choice p1 move appleacid 2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Vibrava|Vibrava, L95, F|245/245
+expect |switch|p1a: Vibrava|Vibrava, L95, F|100/100
+expect |split|p1
+expect |switch|p1b: Carkol|Carkol, L80, F|274/274
+expect |switch|p1b: Carkol|Carkol, L80, F|100/100
+expect |split|p2
+expect |switch|p2a: Pincurchin|Pincurchin, L83, F|210/210
+expect |switch|p2a: Pincurchin|Pincurchin, L83, F|100/100
+expect |split|p2
+expect |switch|p2b: Nibbles|Zamazenta, L77|252/252
+expect |switch|p2b: Nibbles|Zamazenta, L77|100/100
+expect |-ability|p2b: Nibbles|Dauntless Shield|boost
+expect |-boost|p2b: Nibbles|def|1
+expect |-fieldstart|move: Electric Terrain|[from] ability: Electric Surge|[of] p2a: Pincurchin
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Tyranitar|Tyranitar, L98, F|335/335
+expect |switch|p1b: Tyranitar|Tyranitar, L98, F|100/100
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p1b: Tyranitar
+expect |-terastallize|p1a: Vibrava|Ghost
+expect |-terastallize|p2a: Pincurchin|Dragon
+expect |move|p2b: Nibbles|Stone Axe|p1a: Vibrava
+expect |rng|100|65
+expect |rng|24|2
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Vibrava|172/245
+expect |-damage|p1a: Vibrava|71/100
+expect |rng|100|1
+expect |-sidestart|p1: p1|move: Stealth Rock
+expect |move|p1a: Vibrava|Slam|p1b: Tyranitar
+expect |rng|100|62
+expect |rng|24|17
+expect |rng|16|7
+expect |-resisted|p1b: Tyranitar
+expect |split|p1
+expect |-damage|p1b: Tyranitar|312/335
+expect |-damage|p1b: Tyranitar|94/100
+expect |move|p2a: Pincurchin|Horn Leech|p1b: Tyranitar
+expect |rng|100|9
+expect |rng|24|6
+expect |rng|16|5
+expect |-supereffective|p1b: Tyranitar
+expect |split|p1
+expect |-damage|p1b: Tyranitar|234/335
+expect |-damage|p1b: Tyranitar|70/100
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p2
+expect |-damage|p2b: Nibbles|237/252|[from] Sandstorm
+expect |-damage|p2b: Nibbles|95/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Vibrava|157/245|[from] Sandstorm
+expect |-damage|p1a: Vibrava|65/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Pincurchin|197/210|[from] Sandstorm
+expect |-damage|p2a: Pincurchin|94/100|[from] Sandstorm
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Steenee|Steenee, L68, F|170/170
+expect |switch|p2a: Steenee|Steenee, L68, F|100/100
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Nibbles|Acid|p1a: Vibrava|[spread] p1a,p1b
+expect |rng|100|11
+expect |rng|100|86
+expect |rng|24|6
+expect |rng|16|9
+expect |-resisted|p1a: Vibrava
+expect |rng|24|15
+expect |rng|16|8
+expect |-resisted|p1b: Tyranitar
+expect |split|p1
+expect |-damage|p1a: Vibrava|145/245
+expect |-damage|p1a: Vibrava|60/100
+expect |split|p1
+expect |-damage|p1b: Tyranitar|230/335
+expect |-damage|p1b: Tyranitar|69/100
+expect |rng|100|72
+expect |rng|100|47
+expect |move|p1b: Tyranitar|Mud Shot|p2b: Nibbles
+expect |rng|100|70
+expect |rng|24|9
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Nibbles|184/252
+expect |-damage|p2b: Nibbles|74/100
+expect |rng|100|60
+expect |-unboost|p2b: Nibbles|spe|1
+expect |move|p1a: Vibrava|Chilling Water|p2b: Nibbles
+expect |rng|100|97
+expect |rng|24|20
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Nibbles|148/252
+expect |-damage|p2b: Nibbles|59/100
+expect |rng|100|24
+expect |-unboost|p2b: Nibbles|atk|1
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Vibrava|130/245|[from] Sandstorm
+expect |-damage|p1a: Vibrava|54/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Nibbles|133/252|[from] Sandstorm
+expect |-damage|p2b: Nibbles|53/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Steenee|160/170|[from] Sandstorm
+expect |-damage|p2a: Steenee|95/100|[from] Sandstorm
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Carkol|Carkol, L80, F|274/274
+expect |switch|p1b: Carkol|Carkol, L80, F|100/100
+expect |split|p1
+expect |-damage|p1b: Carkol|206/274|[from] Stealth Rock
+expect |-damage|p1b: Carkol|76/100|[from] Stealth Rock
+expect |split|p2
+expect |switch|p2b: Toucannon|Toucannon, L73, F|225/225
+expect |switch|p2b: Toucannon|Toucannon, L73, F|100/100
+expect |move|p1a: Vibrava|Sheer Cold|p2b: Toucannon|[miss]
+expect |rng|100|94
+expect |-miss|p1a: Vibrava|p2b: Toucannon
+expect |move|p2a: Steenee|Sing|p2b: Toucannon
+expect |rng|100|36
+expect |-block|p2b: Toucannon|ability: Sweet Veil|[of] p2a: Steenee
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Vibrava|115/245|[from] Sandstorm
+expect |-damage|p1a: Vibrava|47/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Steenee|150/170|[from] Sandstorm
+expect |-damage|p2a: Steenee|89/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Toucannon|211/225|[from] Sandstorm
+expect |-damage|p2b: Toucannon|94/100|[from] Sandstorm
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Gulpin|Gulpin, L80, F|258/258
+expect |switch|p1a: Gulpin|Gulpin, L80, F|100/100
+expect |split|p1
+expect |-damage|p1a: Gulpin|226/258|[from] Stealth Rock
+expect |-damage|p1a: Gulpin|88/100|[from] Stealth Rock
+expect |move|p2a: Steenee|Sing|p1b: Carkol
+expect |rng|100|14
+expect |-activate|p1b: Carkol|move: Electric Terrain
+expect |move|p1b: Carkol|Body Slam|p2b: Toucannon
+expect |rng|100|54
+expect |rng|24|18
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2b: Toucannon|171/225
+expect |-damage|p2b: Toucannon|76/100
+expect |rng|100|6
+expect |-status|p2b: Toucannon|par
+expect |rng|4|2
+expect |move|p2b: Toucannon|Tar Shot|p2a: Steenee
+expect |rng|100|28
+expect |-unboost|p2a: Steenee|spe|1
+expect |-start|p2a: Steenee|Tar Shot
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Gulpin|210/258|[from] Sandstorm
+expect |-damage|p1a: Gulpin|82/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Steenee|140/170|[from] Sandstorm
+expect |-damage|p2a: Steenee|83/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Toucannon|157/225 par|[from] Sandstorm
+expect |-damage|p2b: Toucannon|70/100 par|[from] Sandstorm
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1b: Carkol|Darkest Lariat|p2b: Toucannon
+expect |rng|100|23
+expect |rng|24|5
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Toucannon|110/225 par
+expect |-damage|p2b: Toucannon|49/100 par
+expect |move|p1a: Gulpin|Blast Burn|p2a: Steenee
+expect |rng|100|73
+expect |rng|24|23
+expect |rng|16|2
+expect |-supereffective|p2a: Steenee
+expect |split|p2
+expect |-damage|p2a: Steenee|0 fnt
+expect |-damage|p2a: Steenee|0 fnt
+expect |-mustrecharge|p1a: Gulpin
+expect |faint|p2a: Steenee
+expect |rng|4|1
+expect |move|p2b: Toucannon|Tar Shot|p1a: Gulpin
+expect |rng|100|84
+expect |-unboost|p1a: Gulpin|spe|1
+expect |-start|p1a: Gulpin|Tar Shot
+expect |
+expect |-weather|none
+expect |-fieldend|move: Electric Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Fezandipiti|Fezandipiti, L98, M, shiny|327/327
+expect |switch|p2a: Fezandipiti|Fezandipiti, L98, M, shiny|100/100
+expect |turn|6
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Pincurchin|Pincurchin, L83, F, tera:Dragon|197/210
+expect |switch|p2b: Pincurchin|Pincurchin, L83, F, tera:Dragon|94/100
+expect |-fieldstart|move: Electric Terrain|[from] ability: Electric Surge|[of] p2b: Pincurchin
+expect |rng|2|0
+expect |move|p2a: Fezandipiti|Volt Tackle|p1b: Carkol
+expect |rng|100|87
+expect |rng|24|16
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1b: Carkol|49/274
+expect |-damage|p1b: Carkol|18/100
+expect |rng|100|61
+expect |rng|10|2
+expect |-status|p1b: Carkol|tox|[from] ability: Toxic Chain|[of] p2a: Fezandipiti
+expect |split|p2
+expect |-damage|p2a: Fezandipiti|275/327|[from] Recoil
+expect |-damage|p2a: Fezandipiti|85/100|[from] Recoil
+expect |rng|2|1
+expect |move|p1b: Carkol|Darkest Lariat|p1a: Gulpin
+expect |rng|100|63
+expect |rng|24|8
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Gulpin|159/258
+expect |-damage|p1a: Gulpin|62/100
+expect |rng|2|1
+expect |rng|2|0
+expect |cant|p1a: Gulpin|recharge
+expect |
+expect |split|p1
+expect |-damage|p1b: Carkol|32/274 tox|[from] psn
+expect |-damage|p1b: Carkol|12/100 tox|[from] psn
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Galvantula, L76, M|228/228
+expect |switch|p1b: ThisNameIsFarTooLong|Galvantula, L76, M|100/100
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|171/228|[from] Stealth Rock
+expect |-damage|p1b: ThisNameIsFarTooLong|75/100|[from] Stealth Rock
+expect |move|p2a: Fezandipiti|Volt Tackle|p2b: Pincurchin
+expect |rng|100|35
+expect |rng|24|7
+expect |rng|16|9
+expect |-resisted|p2b: Pincurchin
+expect |split|p2
+expect |-damage|p2b: Pincurchin|134/210
+expect |-damage|p2b: Pincurchin|64/100
+expect |rng|100|43
+expect |rng|10|6
+expect |split|p2
+expect |-damage|p2a: Fezandipiti|254/327|[from] Recoil
+expect |-damage|p2a: Fezandipiti|78/100|[from] Recoil
+expect |move|p1a: Gulpin|Electro Shot||[still]
+expect |-prepare|p1a: Gulpin|Electro Shot
+expect |-boost|p1a: Gulpin|spa|1
+expect |move|p2b: Pincurchin|Horn Leech|p1a: Gulpin
+expect |rng|100|71
+expect |rng|24|1
+expect |rng|16|4
+expect |-resisted|p1a: Gulpin
+expect |split|p1
+expect |-damage|p1a: Gulpin|122/258
+expect |-damage|p1a: Gulpin|48/100
+expect |split|p2
+expect |-damage|p2b: Pincurchin|115/210|[from] ability: Liquid Ooze|[of] p1a: Gulpin
+expect |-damage|p2b: Pincurchin|55/100|[from] ability: Liquid Ooze|[of] p1a: Gulpin
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Tyranitar|Tyranitar, L98, F|230/335
+expect |switch|p1b: Tyranitar|Tyranitar, L98, F|69/100
+expect |split|p1
+expect |-damage|p1b: Tyranitar|189/335|[from] Stealth Rock
+expect |-damage|p1b: Tyranitar|57/100|[from] Stealth Rock
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p1b: Tyranitar
+expect |move|p2a: Fezandipiti|Volt Tackle|p1b: Tyranitar
+expect |rng|100|22
+expect |rng|24|18
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Tyranitar|75/335
+expect |-damage|p1b: Tyranitar|23/100
+expect |rng|100|61
+expect |rng|10|2
+expect |-status|p1b: Tyranitar|tox|[from] ability: Toxic Chain|[of] p2a: Fezandipiti
+expect |split|p2
+expect |-damage|p2a: Fezandipiti|216/327|[from] Recoil
+expect |-damage|p2a: Fezandipiti|67/100|[from] Recoil
+expect |move|p1a: Gulpin|Electro Shot|p2a: Fezandipiti|[from] lockedmove
+expect |rng|100|16
+expect |rng|24|17
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Fezandipiti|160/327
+expect |-damage|p2a: Fezandipiti|49/100
+expect |move|p2b: Pincurchin|Doom Desire|p2a: Fezandipiti
+expect |-start|p2b: Pincurchin|Doom Desire
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p2
+expect |-damage|p2a: Fezandipiti|140/327|[from] Sandstorm
+expect |-damage|p2a: Fezandipiti|43/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Gulpin|106/258|[from] Sandstorm
+expect |-damage|p1a: Gulpin|42/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Pincurchin|102/210|[from] Sandstorm
+expect |-damage|p2b: Pincurchin|49/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1b: Tyranitar|55/335 tox|[from] psn
+expect |-damage|p1b: Tyranitar|17/100 tox|[from] psn
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Galvantula, L76, M|171/228
+expect |switch|p1b: ThisNameIsFarTooLong|Galvantula, L76, M|75/100
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|114/228|[from] Stealth Rock
+expect |-damage|p1b: ThisNameIsFarTooLong|50/100|[from] Stealth Rock
+expect |move|p2a: Fezandipiti|Volt Tackle|p1a: Gulpin
+expect |rng|100|63
+expect |rng|24|7
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Gulpin|0 fnt
+expect |-damage|p1a: Gulpin|0 fnt
+expect |rng|100|68
+expect |rng|10|3
+expect |faint|p1a: Gulpin
+expect |split|p2
+expect |-damage|p2a: Fezandipiti|105/327|[from] Recoil
+expect |-damage|p2a: Fezandipiti|33/100|[from] Recoil
+expect |move|p2b: Pincurchin|Horn Leech|p1b: ThisNameIsFarTooLong
+expect |rng|100|1
+expect |rng|24|19
+expect |rng|16|5
+expect |-resisted|p1b: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|79/228
+expect |-damage|p1b: ThisNameIsFarTooLong|35/100
+expect |split|p2
+expect |-heal|p2b: Pincurchin|120/210|[from] drain|[of] p1b: ThisNameIsFarTooLong
+expect |-heal|p2b: Pincurchin|58/100|[from] drain|[of] p1b: ThisNameIsFarTooLong
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p2
+expect |-damage|p2a: Fezandipiti|85/327|[from] Sandstorm
+expect |-damage|p2a: Fezandipiti|26/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|65/228|[from] Sandstorm
+expect |-damage|p1b: ThisNameIsFarTooLong|29/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Pincurchin|107/210|[from] Sandstorm
+expect |-damage|p2b: Pincurchin|51/100|[from] Sandstorm
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vibrava|Vibrava, L95, F|212/212
+expect |switch|p1a: Vibrava|Vibrava, L95, F|100/100
+expect |split|p1
+expect |-damage|p1a: Vibrava|186/212|[from] Stealth Rock
+expect |-damage|p1a: Vibrava|88/100|[from] Stealth Rock
+expect |-start|p1a: Vibrava|typechange|Ghost|[silent]
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Nibbles|Zamazenta, L77|133/252
+expect |switch|p2a: Nibbles|Zamazenta, L77|53/100
+expect |move|p1b: ThisNameIsFarTooLong|Snore||[still]
+expect |-fail|p1b: ThisNameIsFarTooLong
+expect |move|p1a: Vibrava|U-turn|p2b: Pincurchin
+expect |rng|100|45
+expect |rng|24|12
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2b: Pincurchin|70/210
+expect |-damage|p2b: Pincurchin|34/100
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Tyranitar|Tyranitar, L98, F|55/335 tox|[from] U-turn
+expect |switch|p1a: Tyranitar|Tyranitar, L98, F|17/100 tox|[from] U-turn
+expect |split|p1
+expect |-damage|p1a: Tyranitar|14/335 tox|[from] Stealth Rock
+expect |-damage|p1a: Tyranitar|5/100 tox|[from] Stealth Rock
+expect |move|p2b: Pincurchin|Horn Leech|p1a: Tyranitar
+expect |rng|100|20
+expect |rng|24|7
+expect |rng|16|0
+expect |-supereffective|p1a: Tyranitar
+expect |split|p1
+expect |-damage|p1a: Tyranitar|0 fnt
+expect |-damage|p1a: Tyranitar|0 fnt
+expect |split|p2
+expect |-heal|p2b: Pincurchin|77/210|[from] drain|[of] p1a: Tyranitar
+expect |-heal|p2b: Pincurchin|37/100|[from] drain|[of] p1a: Tyranitar
+expect |faint|p1a: Tyranitar
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p2
+expect |-damage|p2a: Nibbles|118/252|[from] Sandstorm
+expect |-damage|p2a: Nibbles|47/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|51/228|[from] Sandstorm
+expect |-damage|p1b: ThisNameIsFarTooLong|23/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Pincurchin|64/210|[from] Sandstorm
+expect |-damage|p2b: Pincurchin|31/100|[from] Sandstorm
+expect |-end|p2a: Nibbles|move: Doom Desire
+expect |rng|100|27
+expect |rng|24|14
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Nibbles|10/252
+expect |-damage|p2a: Nibbles|4/100
+expect |-fieldend|move: Electric Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vibrava|Vibrava, L95, F|186/212
+expect |switch|p1a: Vibrava|Vibrava, L95, F|88/100
+expect |split|p1
+expect |-damage|p1a: Vibrava|160/212|[from] Stealth Rock
+expect |-damage|p1a: Vibrava|76/100|[from] Stealth Rock
+expect |turn|11
+expect |-enditem|p2a: Nibbles|Custap Berry|[eat]
+expect |-activate|p2a: Nibbles|item: Custap Berry|[consumed]
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Toucannon|Toucannon, L73, F|175/175
+expect |switch|p2b: Toucannon|Toucannon, L73, F|100/100
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Nibbles|Acid|p1b: ThisNameIsFarTooLong|[spread] p1a,p1b
+expect |rng|100|44
+expect |rng|100|86
+expect |rng|24|0
+expect |rng|16|0
+expect |-crit|p1a: Vibrava
+expect |rng|24|1
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Vibrava|129/212
+expect |-damage|p1a: Vibrava|61/100
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|24/228
+expect |-damage|p1b: ThisNameIsFarTooLong|11/100
+expect |rng|100|65
+expect |rng|100|16
+expect |replace|p1a: Nibbles|Zoroark, L78, F
+expect |-end|p1a: Nibbles|Illusion
+expect |-hint|Illusion Level Mod is active, so this Pokémon's true level was hidden.
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: ThisNameIsFarTooLong|Snore||[still]
+expect |-fail|p1b: ThisNameIsFarTooLong
+expect |rng|2|0
+expect |move|p1a: Nibbles|Apple Acid|p2b: Toucannon
+expect |rng|100|78
+expect |rng|24|19
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Toucannon|59/175
+expect |-damage|p2b: Toucannon|34/100
+expect |rng|100|16
+expect |-unboost|p2b: Toucannon|spd|1
+expect |replace|p2b: Zoroark|Zoroark, L62, F
+expect |-end|p2b: Zoroark|Illusion
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |rng|2|1
+expect |split|p2
+expect |-damage|p2a: Nibbles|0 fnt|[from] Sandstorm
+expect |-damage|p2a: Nibbles|0 fnt|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|10/228|[from] Sandstorm
+expect |-damage|p1b: ThisNameIsFarTooLong|5/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Zoroark|49/175|[from] Sandstorm
+expect |-damage|p2b: Zoroark|28/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Nibbles|116/212|[from] Sandstorm
+expect |-damage|p1a: Nibbles|55/100|[from] Sandstorm
+expect |rng|2|0
+expect |faint|p2a: Nibbles
+expect |upkeep
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Fezandipiti|Fezandipiti, L98, M, shiny|85/327
+expect |switch|p2a: Fezandipiti|Fezandipiti, L98, M, shiny|26/100
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |turn|12
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |split|p1
+expect |switch|p1b: Vibrava|Vibrava, L95, F, tera:Ghost|115/245
+expect |switch|p1b: Vibrava|Vibrava, L95, F, tera:Ghost|47/100
+expect |rng|2|0
+expect |rng|2|1
+expect |split|p1
+expect |-damage|p1b: Vibrava|85/245|[from] Stealth Rock
+expect |-damage|p1b: Vibrava|35/100|[from] Stealth Rock
+expect |rng|2|1
+expect |rng|2|0
+expect |split|p2
+expect |switch|p2b: Pincurchin|Pincurchin, L83, F, tera:Dragon|64/210
+expect |switch|p2b: Pincurchin|Pincurchin, L83, F, tera:Dragon|31/100
+expect |-fieldstart|move: Electric Terrain|[from] ability: Electric Surge|[of] p2b: Pincurchin
+expect |move|p2a: Fezandipiti|Volt Tackle|p2b: Pincurchin
+expect |rng|100|8
+expect |rng|24|17
+expect |rng|16|4
+expect |-resisted|p2b: Pincurchin
+expect |split|p2
+expect |-damage|p2b: Pincurchin|0 fnt
+expect |-damage|p2b: Pincurchin|0 fnt
+expect |rng|100|23
+expect |rng|10|0
+expect |faint|p2b: Pincurchin
+expect |split|p2
+expect |-damage|p2a: Fezandipiti|64/327|[from] Recoil
+expect |-damage|p2a: Fezandipiti|20/100|[from] Recoil
+expect |move|p1a: Nibbles|Apple Acid|p1b: Vibrava
+expect |rng|100|64
+expect |rng|24|15
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Vibrava|0 fnt
+expect |-damage|p1b: Vibrava|0 fnt
+expect |rng|100|52
+expect |faint|p1b: Vibrava
+expect |
+expect |-weather|none
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Galvantula, L76, M|10/228
+expect |switch|p1b: ThisNameIsFarTooLong|Galvantula, L76, M|5/100
+expect |split|p2
+expect |switch|p2b: Toucannon|Toucannon, L73, F|110/225 par
+expect |switch|p2b: Toucannon|Toucannon, L73, F|49/100 par
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|0 fnt|[from] Stealth Rock
+expect |-damage|p1b: ThisNameIsFarTooLong|0 fnt|[from] Stealth Rock
+expect |faint|p1b: ThisNameIsFarTooLong
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Carkol|Carkol, L80, F|32/274 tox
+expect |switch|p1b: Carkol|Carkol, L80, F|12/100 tox
+expect |split|p1
+expect |-damage|p1b: Carkol|0 fnt|[from] Stealth Rock
+expect |-damage|p1b: Carkol|0 fnt|[from] Stealth Rock
+expect |faint|p1b: Carkol
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Toucannon|Toucannon, L73, F|49/175
+expect |switch|p2b: Toucannon|Toucannon, L73, F|28/100
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Fezandipiti|Volt Tackle|p1a: Nibbles
+expect |rng|100|58
+expect |rng|24|8
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Nibbles|0 fnt
+expect |-damage|p1a: Nibbles|0 fnt
+expect |rng|100|0
+expect |rng|10|3
+expect |rng|2|1
+expect |faint|p1a: Nibbles
+expect |split|p2
+expect |-damage|p2a: Fezandipiti|26/327|[from] Recoil
+expect |-damage|p2a: Fezandipiti|8/100|[from] Recoil
+expect |
+expect |win|p2

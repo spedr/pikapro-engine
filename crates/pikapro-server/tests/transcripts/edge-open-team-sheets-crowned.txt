@@ -1,0 +1,70 @@
+# edge-open-team-sheets-crowned: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@write
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"sodium,78"}
+@write
+>player p1 {"name":"A","team":"Zacian||rustedsword|intrepidsword|playrough,ironhead,sacredsword,protect|Jolly|,252,,,4,252||||50|]Pikachu||choicespecs|static|thunderbolt,quickattack|Timid|,,,252,,252||||50|"}
+@write
+>player p2 {"name":"B","team":"Snorlax||leftovers|thickfat|rest,bodyslam,imprison|Timid|,,,252,,252||||50|]Zamazenta||rustedshield|dauntlessshield|ironhead,bodypress|Impish|252,,252,,4,||||50|"}
+@write
+>requestteam p1
+@write
+>show-openteamsheets
+@write
+>requestteam p1
+@write
+>requestteam é2
+@write
+>show-openteamsheets
+@write
+>forcetie
+@message
+update
+|t:|
+|gametype|doubles
+@message
+update
+|player|p1|A||
+@message
+update
+|player|p2|B||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Zacian-*, L50|
+|poke|p1|Pikachu, L50, M|
+|poke|p2|Snorlax, L50, M|
+|poke|p2|Zamazenta-*, L50|
+|teampreview|4
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Zacian","details":"Zacian, L50","condition":"167/167","active":true,"stats":{"atk":172,"def":135,"spa":90,"spd":136,"spe":209},"moves":["playrough","ironhead","sacredsword","protect"],"baseAbility":"intrepidsword","item":"rustedsword","pokeball":"pokeball","ability":"intrepidsword","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Pikachu","details":"Pikachu, L50, M","condition":"110/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"B","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"235/235","active":true,"stats":{"atk":117,"def":85,"spa":117,"spd":130,"spe":90},"moves":["rest","bodyslam","imprison"],"baseAbility":"thickfat","item":"leftovers","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Zamazenta","details":"Zamazenta, L50","condition":"199/199","active":true,"stats":{"atk":140,"def":183,"spa":90,"spd":136,"spe":158},"moves":["ironhead","bodypress"],"baseAbility":"dauntlessshield","item":"rustedshield","pokeball":"pokeball","ability":"dauntlessshield","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+@message
+requesteddata
+Zacian||RustedSword|IntrepidSword|PlayRough,IronHead,SacredSword,Protect|Jolly|,252,,,4,252||||50|]Pikachu||ChoiceSpecs|Static|Thunderbolt,QuickAttack|Timid|,,,252,,252||||50|
+@message
+update
+|showteam|p1|Zacian-Crowned||RustedSword|IntrepidSword|PlayRough,behemothblade,SacredSword,Protect||||||50|]Pikachu||ChoiceSpecs|Static|Thunderbolt,QuickAttack|||M|||50|
+|showteam|p2|Snorlax||Leftovers|ThickFat|Rest,BodySlam,Imprison|||M|||50|]Zamazenta-Crowned||RustedShield|DauntlessShield|behemothbash,BodyPress||||||50|
+@message
+requesteddata
+Zacian||RustedSword|IntrepidSword|PlayRough,behemothblade,SacredSword,Protect|Jolly|,252,,,4,252||||50|]Pikachu||ChoiceSpecs|Static|Thunderbolt,QuickAttack|Timid|,,,252,,252||||50|
+@message
+requesteddata
+Snorlax||Leftovers|ThickFat|Rest,BodySlam,Imprison|Timid|,,,252,,252||||50|]Zamazenta||RustedShield|DauntlessShield|behemothbash,BodyPress|Impish|252,,252,,4,||||50|
+@message
+update
+|showteam|p1|Zacian-Crowned||RustedSword|IntrepidSword|PlayRough,behemothblade,SacredSword,Protect||||||50|]Pikachu||ChoiceSpecs|Static|Thunderbolt,QuickAttack|||M|||50|
+|showteam|p2|Snorlax||Leftovers|ThickFat|Rest,BodySlam,Imprison|||M|||50|]Zamazenta-Crowned||RustedShield|DauntlessShield|behemothbash,BodyPress||||||50|
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"sodium,78","turns":0,"p1":"A","p2":"B","p1team":[{"name":"Zacian","species":"Zacian","item":"Rusted Sword","ability":"Intrepid Sword","moves":["Play Rough","behemothblade","Sacred Sword","Protect"],"nature":"Jolly","evs":{"hp":0,"atk":252,"def":0,"spa":0,"spd":4,"spe":252},"level":50,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pikachu","species":"Pikachu","item":"Choice Specs","ability":"Static","moves":["Thunderbolt","Quick Attack"],"nature":"Timid","evs":{"hp":0,"atk":0,"def":0,"spa":252,"spd":0,"spe":252},"level":50,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Snorlax","species":"Snorlax","item":"Leftovers","ability":"Thick Fat","moves":["Rest","Body Slam","Imprison"],"nature":"Timid","evs":{"hp":0,"atk":0,"def":0,"spa":252,"spd":0,"spe":252},"level":50,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Zamazenta","species":"Zamazenta","item":"Rusted Shield","ability":"Dauntless Shield","moves":["behemothbash","Body Press"],"nature":"Impish","evs":{"hp":252,"atk":0,"def":252,"spa":0,"spd":4,"spe":0},"level":50,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[2,2],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50\",\"seed\":\"sodium,78\"}",">player p1 {\"name\":\"A\",\"team\":\"Zacian||rustedsword|intrepidsword|playrough,ironhead,sacredsword,protect|Jolly|,252,,,4,252||||50|]Pikachu||choicespecs|static|thunderbolt,quickattack|Timid|,,,252,,252||||50|\"}",">player p2 {\"name\":\"B\",\"team\":\"Snorlax||leftovers|thickfat|rest,bodyslam,imprison|Timid|,,,252,,252||||50|]Zamazenta||rustedshield|dauntlessshield|ironhead,bodypress|Impish|252,,252,,4,||||50|\"}",">forcetie"]}

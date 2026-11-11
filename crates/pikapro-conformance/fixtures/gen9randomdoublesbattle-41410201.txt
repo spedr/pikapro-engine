@@ -1,0 +1,570 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed d989 c5dd f55a 0d0e
+genders drawn
+team p1
+Alcremie-Matcha-Cream (F) @ Sitrus Berry
+Ability: Aroma Veil
+Level: 90
+Tera Type: Steel
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Protect
+- Encore
+- Decorate
+
+Sir Hops-a-Lot (Latias) (F) @ Soul Dew
+Ability: Levitate
+Level: 80
+Tera Type: Steel
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Dragon Pulse
+- Mist Ball
+- Calm Mind
+- Protect
+
+Zoë (Rillaboom) (M) @ Assault Vest
+Ability: Grassy Surge
+Level: 81
+Tera Type: Fire
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Grassy Glide
+- High Horsepower
+- Wood Hammer
+- Fake Out
+
+Tsareena (F) @ Assault Vest
+Ability: Queenly Majesty
+Level: 85
+Tera Type: Fire
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- High Jump Kick
+- Triple Axel
+- Power Whip
+- Rapid Spin
+
+Seviper (F) @ Life Orb
+Ability: Shed Skin
+Level: 96
+Tera Type: Fire
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Gunk Shot
+- Flamethrower
+- Protect
+- Knock Off
+
+Muk-Alola (M) @ Sitrus Berry
+Ability: Poison Touch
+Level: 82
+Shiny: Yes
+Tera Type: Flying
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Drain Punch
+- Gunk Shot
+- Knock Off
+- Protect
+end
+team p2
+Kilowattrel (F) @ Focus Sash
+Ability: Competitive
+Level: 80
+Tera Type: Steel
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Protect
+- Hurricane
+- Tailwind
+- Thunderbolt
+
+Sir Hops-a-Lot (Great Tusk) @ Sitrus Berry
+Ability: Protosynthesis
+Level: 81
+Tera Type: Fire
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Headlong Rush
+- Ice Spinner
+- Protect
+- Close Combat
+
+Malamar (M) @ Sitrus Berry
+Ability: Contrary
+Level: 80
+Tera Type: Fighting
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Protect
+- Knock Off
+- Superpower
+- Psycho Cut
+
+Ninetales-Alola (F) @ Light Clay
+Ability: Snow Warning
+Level: 75
+Tera Type: Water
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Aurora Veil
+- Protect
+- Blizzard
+- Moonblast
+
+Zoroark-Hisui (M) @ Life Orb
+Ability: Illusion
+Level: 80
+Tera Type: Normal
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Hyper Voice
+- Flamethrower
+- Protect
+- Bitter Malice
+
+Quagsire (F) @ Sitrus Berry
+Ability: Unaware
+Level: 91
+Tera Type: Poison
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Liquidation
+- Helping Hand
+- Icy Wind
+- High Horsepower
+end
+choice p1 move 4 2, move 1 1
+choice p2 move 2 -2 terastallize, move 4 2
+choice p1 move 3 2 terastallize ,  move 1 +2
+choice p2 move 2 -2, move 1 2
+choice p2 pass, switch 4
+choice p1 move 3 -2, move 1 -1
+choice p2 switch quagsire, move protect
+choice p1 default
+choice p2 move 4 -2, move 4 -1
+choice p1 move 4 -2, switch 6
+choice p2 move 1 +2 ,  move protect
+choice p1 move 1, switch 4
+choice p2 move highhorsepower -2,move moonblast +2
+choice p2 switch 5, switch 3
+choice p1 move 1, switch 4
+choice p2 move 4 1, move 3 2
+choice p1 switch 5, move 2 -1
+choice p2 move 3, move 4 2
+choice p1 switch 3, move 3 1
+choice p2 move 4 -2, move 1
+choice p2 switch 6, pass
+choice p1 move 2 1,move gunkshot 1
+choice p2 move 2 -2, move 2 -1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Alcremie|Alcremie-Matcha-Cream, L90, F|263/263
+expect |switch|p1a: Alcremie|Alcremie-Matcha-Cream, L90, F|100/100
+expect |split|p1
+expect |switch|p1b: Sir Hops-a-Lot|Latias, L80, F|259/259
+expect |switch|p1b: Sir Hops-a-Lot|Latias, L80, F|100/100
+expect |split|p2
+expect |switch|p2a: Kilowattrel|Kilowattrel, L80, F|243/243
+expect |switch|p2a: Kilowattrel|Kilowattrel, L80, F|100/100
+expect |split|p2
+expect |switch|p2b: Sir Hops-a-Lot|Great Tusk, L81|319/319
+expect |switch|p2b: Sir Hops-a-Lot|Great Tusk, L81|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p2a: Kilowattrel|Steel
+expect |move|p2a: Kilowattrel|Hurricane|p2b: Sir Hops-a-Lot|[miss]
+expect |rng|100|87
+expect |-miss|p2a: Kilowattrel|p2b: Sir Hops-a-Lot
+expect |move|p1b: Sir Hops-a-Lot|Dragon Pulse|p2a: Kilowattrel
+expect |rng|100|88
+expect |rng|24|6
+expect |rng|16|5
+expect |-resisted|p2a: Kilowattrel
+expect |split|p2
+expect |-damage|p2a: Kilowattrel|165/243
+expect |-damage|p2a: Kilowattrel|68/100
+expect |move|p2b: Sir Hops-a-Lot|Close Combat|p1b: Sir Hops-a-Lot
+expect |rng|100|60
+expect |rng|24|20
+expect |rng|16|2
+expect |-resisted|p1b: Sir Hops-a-Lot
+expect |split|p1
+expect |-damage|p1b: Sir Hops-a-Lot|177/259
+expect |-damage|p1b: Sir Hops-a-Lot|69/100
+expect |rng|100|21
+expect |-unboost|p2b: Sir Hops-a-Lot|def|1
+expect |-unboost|p2b: Sir Hops-a-Lot|spd|1
+expect |move|p1a: Alcremie|Decorate|p2b: Sir Hops-a-Lot
+expect |-boost|p2b: Sir Hops-a-Lot|atk|2
+expect |-boost|p2b: Sir Hops-a-Lot|spa|2
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |-terastallize|p1a: Alcremie|Steel
+expect |move|p2a: Kilowattrel|Hurricane|p2b: Sir Hops-a-Lot
+expect |rng|100|51
+expect |rng|24|18
+expect |rng|16|1
+expect |-supereffective|p2b: Sir Hops-a-Lot
+expect |split|p2
+expect |-damage|p2b: Sir Hops-a-Lot|0 fnt
+expect |-damage|p2b: Sir Hops-a-Lot|0 fnt
+expect |rng|100|22
+expect |faint|p2b: Sir Hops-a-Lot
+expect |-end|p2b: Sir Hops-a-Lot|Protosynthesis|[silent]
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Sir Hops-a-Lot|Dragon Pulse|p2a: Kilowattrel
+expect |rng|100|70
+expect |rng|24|6
+expect |rng|16|11
+expect |-resisted|p2a: Kilowattrel
+expect |split|p2
+expect |-damage|p2a: Kilowattrel|93/243
+expect |-damage|p2a: Kilowattrel|39/100
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Alcremie|Encore|p2a: Kilowattrel
+expect |rng|100|48
+expect |-start|p2a: Kilowattrel|Encore
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Ninetales|Ninetales-Alola, L75, F|233/233
+expect |switch|p2b: Ninetales|Ninetales-Alola, L75, F|100/100
+expect |-weather|Snowscape|[from] ability: Snow Warning|[of] p2b: Ninetales
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Quagsire|Quagsire, L91, F|321/321
+expect |switch|p2a: Quagsire|Quagsire, L91, F|100/100
+expect |move|p2b: Ninetales|Protect|p2b: Ninetales
+expect |-singleturn|p2b: Ninetales|Protect
+expect |move|p1b: Sir Hops-a-Lot|Dragon Pulse|p1a: Alcremie
+expect |rng|100|27
+expect |rng|24|12
+expect |rng|16|14
+expect |-resisted|p1a: Alcremie
+expect |split|p1
+expect |-damage|p1a: Alcremie|226/263
+expect |-damage|p1a: Alcremie|86/100
+expect |move|p1a: Alcremie|Encore|p1b: Sir Hops-a-Lot
+expect |rng|100|67
+expect |-block|p1b: Sir Hops-a-Lot|ability: Aroma Veil|[of] p1a: Alcremie
+expect |
+expect |rng|2|0
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1b: Sir Hops-a-Lot|Dragon Pulse|p2a: Quagsire
+expect |rng|100|33
+expect |rng|24|18
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Quagsire|197/321
+expect |-damage|p2a: Quagsire|62/100
+expect |rng|2|0
+expect |move|p2b: Ninetales|Moonblast|p2a: Quagsire
+expect |rng|100|74
+expect |rng|24|8
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Quagsire|109/321
+expect |-damage|p2a: Quagsire|34/100
+expect |rng|100|37
+expect |-enditem|p2a: Quagsire|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2a: Quagsire|189/321|[from] item: Sitrus Berry
+expect |-heal|p2a: Quagsire|59/100|[from] item: Sitrus Berry
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Alcremie|Dazzling Gleam|p2b: Ninetales|[spread] p2a,p2b
+expect |rng|100|7
+expect |rng|100|46
+expect |rng|24|2
+expect |rng|16|3
+expect |rng|24|6
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Quagsire|92/321
+expect |-damage|p2a: Quagsire|29/100
+expect |split|p2
+expect |-damage|p2b: Ninetales|155/233
+expect |-damage|p2b: Ninetales|67/100
+expect |move|p2a: Quagsire|High Horsepower|p2b: Ninetales
+expect |rng|100|46
+expect |rng|24|12
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Ninetales|73/233
+expect |-damage|p2b: Ninetales|32/100
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Muk|Muk-Alola, L82, M, shiny|306/306
+expect |switch|p1b: Muk|Muk-Alola, L82, M, shiny|100/100
+expect |move|p2b: Ninetales|Protect|p2b: Ninetales
+expect |-singleturn|p2b: Ninetales|Protect
+expect |move|p1a: Alcremie|Decorate|p1b: Muk
+expect |-boost|p1b: Muk|atk|2
+expect |-boost|p1b: Muk|spa|2
+expect |move|p2a: Quagsire|Liquidation|p1b: Muk
+expect |rng|100|80
+expect |rng|24|16
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Muk|191/306
+expect |-damage|p1b: Muk|63/100
+expect |rng|100|46
+expect |
+expect |rng|2|0
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|6
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Tsareena|Tsareena, L85, F|261/261
+expect |switch|p1b: Tsareena|Tsareena, L85, F|100/100
+expect |rng|2|1
+expect |move|p2b: Ninetales|Moonblast|p1b: Tsareena
+expect |rng|100|58
+expect |rng|24|18
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1b: Tsareena|216/261
+expect |-damage|p1b: Tsareena|83/100
+expect |rng|100|86
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Alcremie|Dazzling Gleam|p2a: Quagsire|[spread] p2a,p2b
+expect |rng|100|84
+expect |rng|100|23
+expect |rng|24|15
+expect |rng|16|7
+expect |rng|24|15
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Quagsire|0 fnt
+expect |-damage|p2a: Quagsire|0 fnt
+expect |split|p2
+expect |-damage|p2b: Ninetales|0 fnt
+expect |-damage|p2b: Ninetales|0 fnt
+expect |faint|p2a: Quagsire
+expect |faint|p2b: Ninetales
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Malamar|Malamar, L80, M|269/269
+expect |switch|p2b: Malamar|Malamar, L80, M|100/100
+expect |split|p2
+expect |switch|p2a: Kilowattrel|Kilowattrel, L80, F|219/219
+expect |switch|p2a: Kilowattrel|Kilowattrel, L80, F|100/100
+expect |-start|p2a: Kilowattrel|typechange|Steel|[silent]
+expect |turn|7
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Muk|Muk-Alola, L82, M, shiny|191/306
+expect |switch|p1b: Muk|Muk-Alola, L82, M, shiny|63/100
+expect |rng|2|0
+expect |move|p2a: Kilowattrel|Bitter Malice|p1a: Alcremie
+expect |rng|100|26
+expect |rng|24|23
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Alcremie|139/263
+expect |-damage|p1a: Alcremie|53/100
+expect |rng|100|28
+expect |-unboost|p1a: Alcremie|atk|1
+expect |split|p2
+expect |-damage|p2a: Kilowattrel|198/219|[from] item: Life Orb
+expect |-damage|p2a: Kilowattrel|91/100|[from] item: Life Orb
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Alcremie|Dazzling Gleam|p2b: Malamar|[spread] p2a,p2b
+expect |rng|100|94
+expect |rng|100|0
+expect |rng|24|4
+expect |rng|16|6
+expect |rng|24|18
+expect |rng|16|6
+expect |-supereffective|p2b: Malamar
+expect |split|p2
+expect |-damage|p2a: Kilowattrel|84/219
+expect |-damage|p2a: Kilowattrel|39/100
+expect |split|p2
+expect |-damage|p2b: Malamar|75/269
+expect |-damage|p2b: Malamar|28/100
+expect |replace|p2a: Zoroark|Zoroark-Hisui, L80, M
+expect |-end|p2a: Zoroark|Illusion
+expect |-hint|Illusion Level Mod is active, so this Pokémon's true level was hidden.
+expect |-enditem|p2b: Malamar|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2b: Malamar|142/269|[from] item: Sitrus Berry
+expect |-heal|p2b: Malamar|53/100|[from] item: Sitrus Berry
+expect |move|p2b: Malamar|Superpower|p1b: Muk
+expect |rng|100|35
+expect |rng|24|16
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: Muk|112/306
+expect |-damage|p1b: Muk|37/100
+expect |rng|100|62
+expect |-boost|p2b: Malamar|atk|1
+expect |-boost|p2b: Malamar|def|1
+expect |-enditem|p1b: Muk|Sitrus Berry|[eat]
+expect |split|p1
+expect |-heal|p1b: Muk|188/306|[from] item: Sitrus Berry
+expect |-heal|p1b: Muk|62/100|[from] item: Sitrus Berry
+expect |
+expect |-weather|none
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Seviper|Seviper, L96, F|296/296
+expect |switch|p1a: Seviper|Seviper, L96, F|100/100
+expect |move|p2a: Zoroark|Protect|p2a: Zoroark
+expect |-singleturn|p2a: Zoroark|Protect
+expect |move|p2b: Malamar|Psycho Cut|p1b: Muk
+expect |-immune|p1b: Muk
+expect |move|p1b: Muk|Gunk Shot|p1a: Seviper
+expect |rng|100|45
+expect |rng|24|6
+expect |rng|16|14
+expect |-resisted|p1a: Seviper
+expect |split|p1
+expect |-damage|p1a: Seviper|227/296
+expect |-damage|p1a: Seviper|77/100
+expect |rng|100|66
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Zoë|Rillaboom, L81, M|295/295
+expect |switch|p1a: Zoë|Rillaboom, L81, M|100/100
+expect |-fieldstart|move: Grassy Terrain|[from] ability: Grassy Surge|[of] p1a: Zoë
+expect |move|p2b: Malamar|Protect|p2b: Malamar
+expect |-singleturn|p2b: Malamar|Protect
+expect |move|p2a: Zoroark|Bitter Malice|p2b: Malamar
+expect |-activate|p2b: Malamar|move: Protect
+expect |move|p1b: Muk|Knock Off|p2a: Zoroark
+expect |rng|100|17
+expect |rng|24|4
+expect |rng|16|8
+expect |-supereffective|p2a: Zoroark
+expect |split|p2
+expect |-damage|p2a: Zoroark|0 fnt
+expect |-damage|p2a: Zoroark|0 fnt
+expect |rng|10|9
+expect |-enditem|p2a: Zoroark|Life Orb|[from] move: Knock Off|[of] p1b: Muk
+expect |faint|p2a: Zoroark
+expect |
+expect |rng|2|1
+expect |split|p2
+expect |-heal|p2b: Malamar|158/269|[from] Grassy Terrain
+expect |-heal|p2b: Malamar|59/100|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1b: Muk|207/306|[from] Grassy Terrain
+expect |-heal|p1b: Muk|68/100|[from] Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Kilowattrel|Kilowattrel, L80, F, tera:Steel|93/243
+expect |switch|p2a: Kilowattrel|Kilowattrel, L80, F, tera:Steel|39/100
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p2a: Kilowattrel|Hurricane|p2b: Malamar
+expect |rng|100|44
+expect |rng|24|17
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2b: Malamar|34/269
+expect |-damage|p2b: Malamar|13/100
+expect |rng|100|5
+expect |-start|p2b: Malamar|confusion
+expect |rng|4|1
+expect |move|p1a: Zoë|High Horsepower|p2a: Kilowattrel
+expect |rng|100|26
+expect |rng|24|14
+expect |rng|16|10
+expect |-supereffective|p2a: Kilowattrel
+expect |split|p2
+expect |-damage|p2a: Kilowattrel|0 fnt
+expect |-damage|p2a: Kilowattrel|0 fnt
+expect |faint|p2a: Kilowattrel
+expect |rng|1|0
+expect |-activate|p2b: Malamar|confusion
+expect |rng|100|13
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Malamar|8/269|[from] confusion
+expect |-damage|p2b: Malamar|3/100|[from] confusion
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Muk|Gunk Shot|p2b: Malamar
+expect |rng|100|20
+expect |rng|24|0
+expect |rng|16|5
+expect |-crit|p2b: Malamar
+expect |split|p2
+expect |-damage|p2b: Malamar|0 fnt
+expect |-damage|p2b: Malamar|0 fnt
+expect |rng|100|67
+expect |faint|p2b: Malamar
+expect |
+expect |win|p1

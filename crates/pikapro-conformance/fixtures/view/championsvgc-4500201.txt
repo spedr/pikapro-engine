@@ -1,0 +1,687 @@
+# Recorded by view_conformance. Do not edit by hand.
+format championsvgc
+seed 4500201
+source fuzz
+checks soundness leak meta=2
+team p1
+Vivillon-River (M) @ Chilan Berry
+Ability: Friend Guard
+Level: 50
+Tera Type: Normal
+EVs: 18 HP / 7 Def / 30 SpA / 5 SpD / 5 Spe
+Jolly Nature
+- Heat Wave
+
+Raichu @ Raichunite Y
+Ability: Lightning Rod
+Level: 50
+Tera Type: Dark
+EVs: 5 HP / 9 Def / 11 SpA / 21 SpD / 9 Spe
+Hasty Nature
+- Pin Missile
+- Metal Sound
+
+ThisNameIsFarTooLongToKeep (Basculegion)
+Ability: Swift Swim
+Level: 50
+Tera Type: Poison
+EVs: 32 HP / 8 Atk / 26 SpD
+Modest Nature
+- Grassy Terrain
+- Psych Up
+- Hex
+- Metal Burst
+
+Decidueye (M)
+Ability: Long Reach
+Level: 50
+Tera Type: Dragon
+EVs: 7 HP / 7 Def / 14 SpA / 27 SpD / 11 Spe
+Quiet Nature
+- Rock Polish
+- Detect
+
+Eelektross @ Occa Berry
+Ability: Levitate
+Level: 50
+Tera Type: Water
+EVs: 17 HP / 1 Atk / 14 Def / 5 SpD / 29 Spe
+Brave Nature
+- Grassy Terrain
+- Stun Spore
+- Thunder Punch
+- Lumina Crash
+
+Mimikyu @ Sharp Beak
+Ability: Disguise
+Level: 50
+Tera Type: Grass
+EVs: 1 HP / 12 Atk / 27 Def / 11 SpD / 14 Spe
+Jolly Nature
+- Close Combat
+- First Impression
+end
+team p2
+Vivillon-Monsoon @ Charcoal
+Ability: Shield Dust
+Level: 50
+Tera Type: Steel
+EVs: 23 HP / 4 Atk / 1 Def / 22 SpA / 1 SpD / 15 Spe
+Relaxed Nature
+- Decorate
+
+Vivillon-Elegant @ Shuca Berry
+Ability: Compound Eyes
+Level: 50
+Tera Type: Bug
+EVs: 1 Atk / 25 Def / 1 SpA / 23 SpD / 16 Spe
+Serious Nature
+- Hydro Cannon
+- Uproar
+- Grav Apple
+
+X (Roserade) @ Light Ball
+Ability: Poison Point
+Level: 50
+Tera Type: Flying
+EVs: 4 HP / 1 Atk / 2 Def / 30 SpA / 12 SpD / 16 Spe
+Mild Nature
+- Scorching Sands
+- Amnesia
+
+Nibbles (Slowbro) (F) @ Slowbronite
+Ability: Oblivious
+Level: 50
+Tera Type: Water
+EVs: 16 HP / 1 Atk / 5 Def / 23 SpA / 21 SpD
+Jolly Nature
+- High Horsepower
+
+Zoë (Dragalge) (F) @ Damp Rock
+Ability: Poison Point
+Level: 50
+Tera Type: Bug
+EVs: 14 HP / 7 Atk / 16 Def / 9 SpD / 12 Spe
+Lonely Nature
+- Thunder Punch
+- Magnet Rise
+
+Scovillain @ Scovillainite
+Ability: Chlorophyll
+Level: 50
+Tera Type: Water
+EVs: 1 HP / 20 Atk / 14 Def / 1 SpA / 7 SpD / 23 Spe
+Jolly Nature
+- Dig
+end
+choice p1 team 5126
+choice p2 team 2413
+choice p1 move 2 2, switch 4
+choice p2 move 1 -2, move 1 -1 mega
+choice p1 move 2 1, move 1 -1
+choice p2 move 1, switch 3
+choice p1 move 4 1, move 1 1
+choice p2 move 1 1, move 1 2
+choice p1 move 1, move 1 1
+choice p2 move 1, move 1 2
+choice p1 move 3 2, switch 4
+choice p2 move 3 -2, move 1 -1
+choice p2 pass, switch 3
+choice p1 move 1, switch 3
+choice p2 move 1 1, move 1 -1
+choice p1 switch 3, pass
+choice p2 move 1, move 1 2
+choice p1 move 1, move 1 2 mega
+choice p2 switch 4, pass
+choice p1 switch 4, move 2 1
+choice p2 move 1 -2, move 1 2
+choice p1 pass, switch 4
+choice p2 move 1 -2, move 1 2
+choice p1 move 2 -2, move 1
+choice p2 move 2, move 1 -1
+choice p1 move 1 2, move 1
+records 15
+view p1 0 finished=false
+view p1 0 force_switch.0=false
+view p1 0 force_switch.1=false
+view p1 0 opponent_preview.0="vivillonmonsoon"
+view p1 0 opponent_preview.1="vivillonelegant"
+view p1 0 opponent_preview.2="roserade"
+view p1 0 opponent_preview.3="slowbro"
+view p1 0 opponent_preview.4="dragalge"
+view p1 0 opponent_preview.5="scovillain"
+view p1 0 opponent_used_mega=false
+view p1 0 opponent_used_tera=false
+view p1 0 role="p1"
+view p1 0 team.p1: Decidueye.ability="longreach"
+view p1 0 team.p1: Decidueye.active=false
+view p1 0 team.p1: Decidueye.fainted=false
+view p1 0 team.p1: Decidueye.forme="decidueye"
+view p1 0 team.p1: Decidueye.gender="M"
+view p1 0 team.p1: Decidueye.hp=160
+view p1 0 team.p1: Decidueye.level=50
+view p1 0 team.p1: Decidueye.max_hp=160
+view p1 0 team.p1: Decidueye.mega=false
+view p1 0 team.p1: Decidueye.moves.0="rockpolish"
+view p1 0 team.p1: Decidueye.moves.1="detect"
+view p1 0 team.p1: Decidueye.revealed=false
+view p1 0 team.p1: Decidueye.species="decidueye"
+view p1 0 team.p1: Decidueye.tera_type="grass"
+view p1 0 team.p1: Decidueye.terastallized=false
+view p1 0 team.p1: Eelektross.ability="levitate"
+view p1 0 team.p1: Eelektross.active=false
+view p1 0 team.p1: Eelektross.fainted=false
+view p1 0 team.p1: Eelektross.forme="eelektross"
+view p1 0 team.p1: Eelektross.gender="M"
+view p1 0 team.p1: Eelektross.hp=177
+view p1 0 team.p1: Eelektross.item="occaberry"
+view p1 0 team.p1: Eelektross.level=50
+view p1 0 team.p1: Eelektross.max_hp=177
+view p1 0 team.p1: Eelektross.mega=false
+view p1 0 team.p1: Eelektross.moves.0="grassyterrain"
+view p1 0 team.p1: Eelektross.moves.1="stunspore"
+view p1 0 team.p1: Eelektross.moves.2="thunderpunch"
+view p1 0 team.p1: Eelektross.moves.3="luminacrash"
+view p1 0 team.p1: Eelektross.revealed=false
+view p1 0 team.p1: Eelektross.species="eelektross"
+view p1 0 team.p1: Eelektross.tera_type="electric"
+view p1 0 team.p1: Eelektross.terastallized=false
+view p1 0 team.p1: Mimikyu.ability="disguise"
+view p1 0 team.p1: Mimikyu.active=false
+view p1 0 team.p1: Mimikyu.fainted=false
+view p1 0 team.p1: Mimikyu.forme="mimikyu"
+view p1 0 team.p1: Mimikyu.gender="F"
+view p1 0 team.p1: Mimikyu.hp=131
+view p1 0 team.p1: Mimikyu.item="sharpbeak"
+view p1 0 team.p1: Mimikyu.level=50
+view p1 0 team.p1: Mimikyu.max_hp=131
+view p1 0 team.p1: Mimikyu.mega=false
+view p1 0 team.p1: Mimikyu.moves.0="closecombat"
+view p1 0 team.p1: Mimikyu.moves.1="firstimpression"
+view p1 0 team.p1: Mimikyu.revealed=false
+view p1 0 team.p1: Mimikyu.species="mimikyu"
+view p1 0 team.p1: Mimikyu.tera_type="ghost"
+view p1 0 team.p1: Mimikyu.terastallized=false
+view p1 0 team.p1: Raichu.ability="lightningrod"
+view p1 0 team.p1: Raichu.active=true
+view p1 0 team.p1: Raichu.fainted=false
+view p1 0 team.p1: Raichu.forme="raichu"
+view p1 0 team.p1: Raichu.gender="F"
+view p1 0 team.p1: Raichu.hp=140
+view p1 0 team.p1: Raichu.item="raichunitey"
+view p1 0 team.p1: Raichu.level=50
+view p1 0 team.p1: Raichu.max_hp=140
+view p1 0 team.p1: Raichu.mega=false
+view p1 0 team.p1: Raichu.moves.0="pinmissile"
+view p1 0 team.p1: Raichu.moves.1="metalsound"
+view p1 0 team.p1: Raichu.revealed=false
+view p1 0 team.p1: Raichu.species="raichu"
+view p1 0 team.p1: Raichu.tera_type="electric"
+view p1 0 team.p1: Raichu.terastallized=false
+view p1 0 team.p1: ThisNameIsFarTooLong.ability="swiftswim"
+view p1 0 team.p1: ThisNameIsFarTooLong.active=false
+view p1 0 team.p1: ThisNameIsFarTooLong.fainted=false
+view p1 0 team.p1: ThisNameIsFarTooLong.forme="basculegion"
+view p1 0 team.p1: ThisNameIsFarTooLong.gender="M"
+view p1 0 team.p1: ThisNameIsFarTooLong.hp=227
+view p1 0 team.p1: ThisNameIsFarTooLong.level=50
+view p1 0 team.p1: ThisNameIsFarTooLong.max_hp=227
+view p1 0 team.p1: ThisNameIsFarTooLong.mega=false
+view p1 0 team.p1: ThisNameIsFarTooLong.moves.0="grassyterrain"
+view p1 0 team.p1: ThisNameIsFarTooLong.moves.1="psychup"
+view p1 0 team.p1: ThisNameIsFarTooLong.moves.2="hex"
+view p1 0 team.p1: ThisNameIsFarTooLong.moves.3="metalburst"
+view p1 0 team.p1: ThisNameIsFarTooLong.revealed=false
+view p1 0 team.p1: ThisNameIsFarTooLong.species="basculegion"
+view p1 0 team.p1: ThisNameIsFarTooLong.tera_type="water"
+view p1 0 team.p1: ThisNameIsFarTooLong.terastallized=false
+view p1 0 team.p1: Vivillon.ability="friendguard"
+view p1 0 team.p1: Vivillon.active=true
+view p1 0 team.p1: Vivillon.fainted=false
+view p1 0 team.p1: Vivillon.forme="vivillonriver"
+view p1 0 team.p1: Vivillon.gender="M"
+view p1 0 team.p1: Vivillon.hp=173
+view p1 0 team.p1: Vivillon.item="chilanberry"
+view p1 0 team.p1: Vivillon.level=50
+view p1 0 team.p1: Vivillon.max_hp=173
+view p1 0 team.p1: Vivillon.mega=false
+view p1 0 team.p1: Vivillon.moves.0="heatwave"
+view p1 0 team.p1: Vivillon.revealed=false
+view p1 0 team.p1: Vivillon.species="vivillonriver"
+view p1 0 team.p1: Vivillon.tera_type="bug"
+view p1 0 team.p1: Vivillon.terastallized=false
+view p1 0 teampreview=true
+view p1 0 turn=0
+view p1 0 used_mega=false
+view p1 0 used_tera=false
+view p1 0 wait=false
+view p1 1 active.0="p1: Eelektross"
+view p1 1 active.1="p1: Vivillon"
+view p1 1 opponent_active.0="p2: Vivillon"
+view p1 1 opponent_active.1="p2: Nibbles"
+view p1 1 opponent_team.p2: Nibbles.active=true
+view p1 1 opponent_team.p2: Nibbles.fainted=false
+view p1 1 opponent_team.p2: Nibbles.forme="slowbro"
+view p1 1 opponent_team.p2: Nibbles.gender="F"
+view p1 1 opponent_team.p2: Nibbles.hp=100
+view p1 1 opponent_team.p2: Nibbles.level=50
+view p1 1 opponent_team.p2: Nibbles.max_hp=100
+view p1 1 opponent_team.p2: Nibbles.mega=false
+view p1 1 opponent_team.p2: Nibbles.revealed=true
+view p1 1 opponent_team.p2: Nibbles.species="slowbro"
+view p1 1 opponent_team.p2: Nibbles.terastallized=false
+view p1 1 opponent_team.p2: Vivillon.active=true
+view p1 1 opponent_team.p2: Vivillon.fainted=false
+view p1 1 opponent_team.p2: Vivillon.forme="vivillonelegant"
+view p1 1 opponent_team.p2: Vivillon.gender="M"
+view p1 1 opponent_team.p2: Vivillon.hp=100
+view p1 1 opponent_team.p2: Vivillon.level=50
+view p1 1 opponent_team.p2: Vivillon.max_hp=100
+view p1 1 opponent_team.p2: Vivillon.mega=false
+view p1 1 opponent_team.p2: Vivillon.revealed=true
+view p1 1 opponent_team.p2: Vivillon.species="vivillonelegant"
+view p1 1 opponent_team.p2: Vivillon.terastallized=false
+view p1 1 team.p1: Eelektross.active=true
+view p1 1 team.p1: Eelektross.revealed=true
+view p1 1 team.p1: Raichu.active=false
+view p1 1 team.p1: Vivillon.revealed=true
+view p1 1 teampreview=false
+view p1 1 turn=1
+view p1 2 active.1="p1: Mimikyu"
+view p1 2 opponent_team.p2: Nibbles.ability="shellarmor"
+view p1 2 opponent_team.p2: Nibbles.forme="slowbromega"
+view p1 2 opponent_team.p2: Nibbles.hp=84
+view p1 2 opponent_team.p2: Nibbles.item="slowbronite"
+view p1 2 opponent_team.p2: Nibbles.mega=true
+view p1 2 opponent_team.p2: Nibbles.moves.0="highhorsepower"
+view p1 2 opponent_team.p2: Nibbles.species="slowbromega"
+view p1 2 opponent_team.p2: Nibbles.status="par"
+view p1 2 opponent_team.p2: Vivillon.moves.0="hydrocannon"
+view p1 2 opponent_used_mega=true
+view p1 2 team.p1: Mimikyu.active=true
+view p1 2 team.p1: Mimikyu.revealed=true
+view p1 2 team.p1: Vivillon.active=false
+view p1 2 turn=2
+view p1 3 opponent_active.1="p2: Vivillon"
+view p1 3 opponent_team.p2: Nibbles.active=false
+view p1 3 opponent_team.p2: Vivillon.forme="vivillonmonsoon"
+view p1 3 opponent_team.p2: Vivillon.gender="F"
+view p1 3 opponent_team.p2: Vivillon.species="vivillonmonsoon"
+view p1 3 team.p1: Eelektross.hp=122
+view p1 3 team.p1: Mimikyu.boosts.def=-1
+view p1 3 team.p1: Mimikyu.boosts.spd=-1
+view p1 3 turn=3
+view p1 4 opponent_team.p2: Vivillon.boosts.spd=-2
+view p1 4 opponent_team.p2: Vivillon.moves.0="decorate"
+view p1 4 team.p1: Eelektross.hp=59
+view p1 4 team.p1: Mimikyu.boosts.atk=2
+view p1 4 team.p1: Mimikyu.boosts.def=-2
+view p1 4 team.p1: Mimikyu.boosts.spa=2
+view p1 4 team.p1: Mimikyu.boosts.spd=-2
+view p1 4 turn=4
+view p1 5 team.p1: Mimikyu.boosts.atk=4
+view p1 5 team.p1: Mimikyu.boosts.def=-3
+view p1 5 team.p1: Mimikyu.boosts.spa=4
+view p1 5 team.p1: Mimikyu.boosts.spd=-3
+view p1 5 turn=5
+view p1 6 active.1="p1: Vivillon"
+view p1 6 opponent_team.p2: Vivillon.boosts.atk=2
+view p1 6 opponent_team.p2: Vivillon.boosts.spa=2
+view p1 6 opponent_team.p2: Vivillon.fainted=true
+view p1 6 opponent_team.p2: Vivillon.hp=0
+view p1 6 opponent_team.p2: Vivillon.moves.1="gravapple"
+view p1 6 opponent_team.p2: Vivillon.status="fnt"
+view p1 6 team.p1: Mimikyu.active=false
+view p1 6 team.p1: Vivillon.active=true
+view p1 6 wait=true
+drop p1 6 opponent_active.1
+drop p1 6 team.p1: Mimikyu.boosts.atk
+drop p1 6 team.p1: Mimikyu.boosts.def
+drop p1 6 team.p1: Mimikyu.boosts.spa
+drop p1 6 team.p1: Mimikyu.boosts.spd
+view p1 7 opponent_active.1="p2: Nibbles"
+view p1 7 opponent_team.p2: Nibbles.active=true
+view p1 7 opponent_team.p2: Vivillon.active=false
+view p1 7 turn=6
+view p1 7 wait=false
+view p1 8 active.1="p1: Raichu"
+view p1 8 force_switch.0=true
+view p1 8 opponent_team.p2: Nibbles.hp=90
+view p1 8 team.p1: Eelektross.fainted=true
+view p1 8 team.p1: Eelektross.hp=0
+view p1 8 team.p1: Eelektross.status="fnt"
+view p1 8 team.p1: Raichu.active=true
+view p1 8 team.p1: Raichu.revealed=true
+view p1 8 team.p1: Vivillon.active=false
+drop p1 8 active.0
+view p1 9 active.0="p1: Vivillon"
+view p1 9 force_switch.0=false
+view p1 9 team.p1: Eelektross.active=false
+view p1 9 team.p1: Vivillon.active=true
+view p1 9 turn=7
+view p1 10 opponent_active.0="p2: X"
+view p1 10 opponent_team.p2: Nibbles.hp=56
+view p1 10 opponent_team.p2: X.active=true
+view p1 10 opponent_team.p2: X.fainted=false
+view p1 10 opponent_team.p2: X.forme="roserade"
+view p1 10 opponent_team.p2: X.gender="F"
+view p1 10 opponent_team.p2: X.hp=100
+view p1 10 opponent_team.p2: X.level=50
+view p1 10 opponent_team.p2: X.max_hp=100
+view p1 10 opponent_team.p2: X.mega=false
+view p1 10 opponent_team.p2: X.revealed=true
+view p1 10 opponent_team.p2: X.species="roserade"
+view p1 10 opponent_team.p2: X.terastallized=false
+view p1 10 team.p1: Raichu.ability="noguard"
+view p1 10 team.p1: Raichu.forme="raichumegay"
+view p1 10 team.p1: Raichu.hp=76
+view p1 10 team.p1: Raichu.mega=true
+view p1 10 team.p1: Raichu.species="raichumegay"
+view p1 10 turn=8
+view p1 10 used_mega=true
+drop p1 10 opponent_team.p2: Vivillon.boosts.atk
+drop p1 10 opponent_team.p2: Vivillon.boosts.spa
+drop p1 10 opponent_team.p2: Vivillon.boosts.spd
+view p1 11 active.0="p1: Mimikyu"
+view p1 11 force_switch.1=true
+view p1 11 opponent_team.p2: Nibbles.hp=37
+view p1 11 opponent_team.p2: X.boosts.spd=-2
+view p1 11 opponent_team.p2: X.moves.0="scorchingsands"
+view p1 11 team.p1: Mimikyu.active=true
+view p1 11 team.p1: Raichu.fainted=true
+view p1 11 team.p1: Raichu.hp=0
+view p1 11 team.p1: Raichu.status="fnt"
+view p1 11 team.p1: Vivillon.active=false
+drop p1 11 active.1
+view p1 12 active.1="p1: Vivillon"
+view p1 12 force_switch.1=false
+view p1 12 team.p1: Raichu.active=false
+view p1 12 team.p1: Vivillon.active=true
+view p1 12 turn=9
+view p1 13 opponent_team.p2: Nibbles.hp=4
+view p1 13 opponent_team.p2: X.hp=22
+view p1 13 team.p1: Vivillon.hp=141
+view p1 13 turn=10
+view p1 14 finished=true
+view p1 14 opponent_team.p2: Nibbles.fainted=true
+view p1 14 opponent_team.p2: Nibbles.hp=0
+view p1 14 opponent_team.p2: Nibbles.status="fnt"
+view p1 14 opponent_team.p2: X.fainted=true
+view p1 14 opponent_team.p2: X.hp=0
+view p1 14 opponent_team.p2: X.moves.1="amnesia"
+view p1 14 opponent_team.p2: X.status="fnt"
+view p1 14 team.p1: Mimikyu.boosts.def=-1
+view p1 14 team.p1: Mimikyu.boosts.spd=-1
+view p1 14 won=true
+drop p1 14 opponent_active.0
+drop p1 14 opponent_active.1
+drop p1 14 opponent_team.p2: X.boosts.spd
+view p2 0 finished=false
+view p2 0 force_switch.0=false
+view p2 0 force_switch.1=false
+view p2 0 opponent_preview.0="vivillonriver"
+view p2 0 opponent_preview.1="raichu"
+view p2 0 opponent_preview.2="basculegion"
+view p2 0 opponent_preview.3="decidueye"
+view p2 0 opponent_preview.4="eelektross"
+view p2 0 opponent_preview.5="mimikyu"
+view p2 0 opponent_used_mega=false
+view p2 0 opponent_used_tera=false
+view p2 0 role="p2"
+view p2 0 team.p2: Nibbles.ability="oblivious"
+view p2 0 team.p2: Nibbles.active=false
+view p2 0 team.p2: Nibbles.fainted=false
+view p2 0 team.p2: Nibbles.forme="slowbro"
+view p2 0 team.p2: Nibbles.gender="F"
+view p2 0 team.p2: Nibbles.hp=186
+view p2 0 team.p2: Nibbles.item="slowbronite"
+view p2 0 team.p2: Nibbles.level=50
+view p2 0 team.p2: Nibbles.max_hp=186
+view p2 0 team.p2: Nibbles.mega=false
+view p2 0 team.p2: Nibbles.moves.0="highhorsepower"
+view p2 0 team.p2: Nibbles.revealed=false
+view p2 0 team.p2: Nibbles.species="slowbro"
+view p2 0 team.p2: Nibbles.tera_type="water"
+view p2 0 team.p2: Nibbles.terastallized=false
+view p2 0 team.p2: Scovillain.ability="chlorophyll"
+view p2 0 team.p2: Scovillain.active=false
+view p2 0 team.p2: Scovillain.fainted=false
+view p2 0 team.p2: Scovillain.forme="scovillain"
+view p2 0 team.p2: Scovillain.gender="F"
+view p2 0 team.p2: Scovillain.hp=141
+view p2 0 team.p2: Scovillain.item="scovillainite"
+view p2 0 team.p2: Scovillain.level=50
+view p2 0 team.p2: Scovillain.max_hp=141
+view p2 0 team.p2: Scovillain.mega=false
+view p2 0 team.p2: Scovillain.moves.0="dig"
+view p2 0 team.p2: Scovillain.revealed=false
+view p2 0 team.p2: Scovillain.species="scovillain"
+view p2 0 team.p2: Scovillain.tera_type="grass"
+view p2 0 team.p2: Scovillain.terastallized=false
+view p2 0 team.p2: Vivillon.ability="compoundeyes"
+view p2 0 team.p2: Vivillon.active=true
+view p2 0 team.p2: Vivillon.fainted=false
+view p2 0 team.p2: Vivillon.forme="vivillonelegant"
+view p2 0 team.p2: Vivillon.gender="M"
+view p2 0 team.p2: Vivillon.hp=155
+view p2 0 team.p2: Vivillon.item="shucaberry"
+view p2 0 team.p2: Vivillon.level=50
+view p2 0 team.p2: Vivillon.max_hp=155
+view p2 0 team.p2: Vivillon.mega=false
+view p2 0 team.p2: Vivillon.moves.0="hydrocannon"
+view p2 0 team.p2: Vivillon.moves.1="uproar"
+view p2 0 team.p2: Vivillon.moves.2="gravapple"
+view p2 0 team.p2: Vivillon.revealed=false
+view p2 0 team.p2: Vivillon.species="vivillonelegant"
+view p2 0 team.p2: Vivillon.tera_type="bug"
+view p2 0 team.p2: Vivillon.terastallized=false
+view p2 0 team.p2: X.ability="poisonpoint"
+view p2 0 team.p2: X.active=false
+view p2 0 team.p2: X.fainted=false
+view p2 0 team.p2: X.forme="roserade"
+view p2 0 team.p2: X.gender="F"
+view p2 0 team.p2: X.hp=139
+view p2 0 team.p2: X.item="lightball"
+view p2 0 team.p2: X.level=50
+view p2 0 team.p2: X.max_hp=139
+view p2 0 team.p2: X.mega=false
+view p2 0 team.p2: X.moves.0="scorchingsands"
+view p2 0 team.p2: X.moves.1="amnesia"
+view p2 0 team.p2: X.revealed=false
+view p2 0 team.p2: X.species="roserade"
+view p2 0 team.p2: X.tera_type="grass"
+view p2 0 team.p2: X.terastallized=false
+view p2 0 team.p2: Zoë.ability="poisonpoint"
+view p2 0 team.p2: Zoë.active=false
+view p2 0 team.p2: Zoë.fainted=false
+view p2 0 team.p2: Zoë.forme="dragalge"
+view p2 0 team.p2: Zoë.gender="F"
+view p2 0 team.p2: Zoë.hp=154
+view p2 0 team.p2: Zoë.item="damprock"
+view p2 0 team.p2: Zoë.level=50
+view p2 0 team.p2: Zoë.max_hp=154
+view p2 0 team.p2: Zoë.mega=false
+view p2 0 team.p2: Zoë.moves.0="thunderpunch"
+view p2 0 team.p2: Zoë.moves.1="magnetrise"
+view p2 0 team.p2: Zoë.revealed=false
+view p2 0 team.p2: Zoë.species="dragalge"
+view p2 0 team.p2: Zoë.tera_type="poison"
+view p2 0 team.p2: Zoë.terastallized=false
+view p2 0 teampreview=true
+view p2 0 turn=0
+view p2 0 used_mega=false
+view p2 0 used_tera=false
+view p2 0 wait=false
+view p2 1 active.0="p2: Vivillon"
+view p2 1 active.1="p2: Nibbles"
+view p2 1 opponent_active.0="p1: Eelektross"
+view p2 1 opponent_active.1="p1: Vivillon"
+view p2 1 opponent_team.p1: Eelektross.ability="levitate"
+view p2 1 opponent_team.p1: Eelektross.active=true
+view p2 1 opponent_team.p1: Eelektross.fainted=false
+view p2 1 opponent_team.p1: Eelektross.forme="eelektross"
+view p2 1 opponent_team.p1: Eelektross.gender="M"
+view p2 1 opponent_team.p1: Eelektross.hp=100
+view p2 1 opponent_team.p1: Eelektross.level=50
+view p2 1 opponent_team.p1: Eelektross.max_hp=100
+view p2 1 opponent_team.p1: Eelektross.mega=false
+view p2 1 opponent_team.p1: Eelektross.revealed=true
+view p2 1 opponent_team.p1: Eelektross.species="eelektross"
+view p2 1 opponent_team.p1: Eelektross.terastallized=false
+view p2 1 opponent_team.p1: Vivillon.active=true
+view p2 1 opponent_team.p1: Vivillon.fainted=false
+view p2 1 opponent_team.p1: Vivillon.forme="vivillonriver"
+view p2 1 opponent_team.p1: Vivillon.gender="M"
+view p2 1 opponent_team.p1: Vivillon.hp=100
+view p2 1 opponent_team.p1: Vivillon.level=50
+view p2 1 opponent_team.p1: Vivillon.max_hp=100
+view p2 1 opponent_team.p1: Vivillon.mega=false
+view p2 1 opponent_team.p1: Vivillon.revealed=true
+view p2 1 opponent_team.p1: Vivillon.species="vivillonriver"
+view p2 1 opponent_team.p1: Vivillon.terastallized=false
+view p2 1 team.p2: Nibbles.active=true
+view p2 1 team.p2: Nibbles.revealed=true
+view p2 1 team.p2: Vivillon.revealed=true
+view p2 1 teampreview=false
+view p2 1 turn=1
+view p2 2 opponent_active.1="p1: Mimikyu"
+view p2 2 opponent_team.p1: Eelektross.moves.0="stunspore"
+view p2 2 opponent_team.p1: Mimikyu.ability="disguise"
+view p2 2 opponent_team.p1: Mimikyu.active=true
+view p2 2 opponent_team.p1: Mimikyu.fainted=false
+view p2 2 opponent_team.p1: Mimikyu.forme="mimikyu"
+view p2 2 opponent_team.p1: Mimikyu.gender="F"
+view p2 2 opponent_team.p1: Mimikyu.hp=100
+view p2 2 opponent_team.p1: Mimikyu.level=50
+view p2 2 opponent_team.p1: Mimikyu.max_hp=100
+view p2 2 opponent_team.p1: Mimikyu.mega=false
+view p2 2 opponent_team.p1: Mimikyu.revealed=true
+view p2 2 opponent_team.p1: Mimikyu.species="mimikyu"
+view p2 2 opponent_team.p1: Mimikyu.terastallized=false
+view p2 2 opponent_team.p1: Vivillon.active=false
+view p2 2 team.p2: Nibbles.ability="shellarmor"
+view p2 2 team.p2: Nibbles.forme="slowbromega"
+view p2 2 team.p2: Nibbles.hp=157
+view p2 2 team.p2: Nibbles.mega=true
+view p2 2 team.p2: Nibbles.species="slowbromega"
+view p2 2 team.p2: Nibbles.status="par"
+view p2 2 turn=2
+view p2 2 used_mega=true
+view p2 3 active.1="p2: Vivillon"
+view p2 3 opponent_team.p1: Eelektross.hp=68
+view p2 3 opponent_team.p1: Mimikyu.boosts.def=-1
+view p2 3 opponent_team.p1: Mimikyu.boosts.spd=-1
+view p2 3 opponent_team.p1: Mimikyu.moves.0="closecombat"
+view p2 3 team.p2: Nibbles.active=false
+view p2 3 turn=3
+view p2 4 opponent_team.p1: Eelektross.hp=33
+view p2 4 opponent_team.p1: Eelektross.moves.1="luminacrash"
+view p2 4 opponent_team.p1: Mimikyu.boosts.atk=2
+view p2 4 opponent_team.p1: Mimikyu.boosts.def=-2
+view p2 4 opponent_team.p1: Mimikyu.boosts.spa=2
+view p2 4 opponent_team.p1: Mimikyu.boosts.spd=-2
+view p2 4 team.p2: Vivillon.boosts.spd=-2
+view p2 4 team.p2: Vivillon.hp=92
+view p2 4 turn=4
+view p2 5 opponent_team.p1: Eelektross.moves.2="grassyterrain"
+view p2 5 opponent_team.p1: Mimikyu.boosts.atk=4
+view p2 5 opponent_team.p1: Mimikyu.boosts.def=-3
+view p2 5 opponent_team.p1: Mimikyu.boosts.spa=4
+view p2 5 opponent_team.p1: Mimikyu.boosts.spd=-3
+view p2 5 team.p2: Vivillon.hp=61
+view p2 5 turn=5
+view p2 6 force_switch.1=true
+view p2 6 opponent_active.1="p1: Vivillon"
+view p2 6 opponent_team.p1: Eelektross.moves.3="thunderpunch"
+view p2 6 opponent_team.p1: Mimikyu.active=false
+view p2 6 opponent_team.p1: Vivillon.active=true
+view p2 6 team.p2: Vivillon.boosts.atk=2
+view p2 6 team.p2: Vivillon.boosts.spa=2
+view p2 6 team.p2: Vivillon.status="fnt"
+drop p2 6 active.1
+drop p2 6 opponent_team.p1: Mimikyu.boosts.atk
+drop p2 6 opponent_team.p1: Mimikyu.boosts.def
+drop p2 6 opponent_team.p1: Mimikyu.boosts.spa
+drop p2 6 opponent_team.p1: Mimikyu.boosts.spd
+view p2 7 active.1="p2: Nibbles"
+view p2 7 force_switch.1=false
+view p2 7 team.p2: Nibbles.active=true
+view p2 7 turn=6
+view p2 8 opponent_active.1="p1: Raichu"
+view p2 8 opponent_team.p1: Eelektross.fainted=true
+view p2 8 opponent_team.p1: Eelektross.hp=0
+view p2 8 opponent_team.p1: Eelektross.status="fnt"
+view p2 8 opponent_team.p1: Raichu.active=true
+view p2 8 opponent_team.p1: Raichu.fainted=false
+view p2 8 opponent_team.p1: Raichu.forme="raichu"
+view p2 8 opponent_team.p1: Raichu.gender="F"
+view p2 8 opponent_team.p1: Raichu.hp=100
+view p2 8 opponent_team.p1: Raichu.level=50
+view p2 8 opponent_team.p1: Raichu.max_hp=100
+view p2 8 opponent_team.p1: Raichu.mega=false
+view p2 8 opponent_team.p1: Raichu.revealed=true
+view p2 8 opponent_team.p1: Raichu.species="raichu"
+view p2 8 opponent_team.p1: Raichu.terastallized=false
+view p2 8 opponent_team.p1: Vivillon.active=false
+view p2 8 team.p2: Nibbles.hp=168
+view p2 8 wait=true
+drop p2 8 opponent_active.0
+view p2 9 opponent_active.0="p1: Vivillon"
+view p2 9 opponent_team.p1: Eelektross.active=false
+view p2 9 opponent_team.p1: Vivillon.active=true
+view p2 9 turn=7
+view p2 9 wait=false
+view p2 10 active.0="p2: X"
+view p2 10 opponent_team.p1: Raichu.ability="noguard"
+view p2 10 opponent_team.p1: Raichu.forme="raichumegay"
+view p2 10 opponent_team.p1: Raichu.hp=54
+view p2 10 opponent_team.p1: Raichu.item="raichunitey"
+view p2 10 opponent_team.p1: Raichu.mega=true
+view p2 10 opponent_team.p1: Raichu.moves.0="pinmissile"
+view p2 10 opponent_team.p1: Raichu.species="raichumegay"
+view p2 10 opponent_team.p1: Vivillon.moves.0="heatwave"
+view p2 10 opponent_used_mega=true
+view p2 10 team.p2: Nibbles.hp=106
+view p2 10 team.p2: Vivillon.active=false
+view p2 10 team.p2: Vivillon.fainted=true
+view p2 10 team.p2: Vivillon.hp=0
+view p2 10 team.p2: X.active=true
+view p2 10 team.p2: X.revealed=true
+view p2 10 turn=8
+drop p2 10 team.p2: Vivillon.boosts.atk
+drop p2 10 team.p2: Vivillon.boosts.spa
+drop p2 10 team.p2: Vivillon.boosts.spd
+view p2 11 opponent_active.0="p1: Mimikyu"
+view p2 11 opponent_team.p1: Mimikyu.active=true
+view p2 11 opponent_team.p1: Raichu.fainted=true
+view p2 11 opponent_team.p1: Raichu.hp=0
+view p2 11 opponent_team.p1: Raichu.moves.1="metalsound"
+view p2 11 opponent_team.p1: Raichu.status="fnt"
+view p2 11 opponent_team.p1: Vivillon.active=false
+view p2 11 team.p2: Nibbles.hp=69
+view p2 11 team.p2: X.boosts.spd=-2
+view p2 11 wait=true
+drop p2 11 opponent_active.1
+view p2 12 opponent_active.1="p1: Vivillon"
+view p2 12 opponent_team.p1: Raichu.active=false
+view p2 12 opponent_team.p1: Vivillon.active=true
+view p2 12 turn=9
+view p2 12 wait=false
+view p2 13 opponent_team.p1: Mimikyu.moves.1="firstimpression"
+view p2 13 opponent_team.p1: Vivillon.hp=81
+view p2 13 team.p2: Nibbles.hp=9
+view p2 13 team.p2: X.hp=31
+view p2 13 turn=10
+view p2 14 finished=true
+view p2 14 opponent_team.p1: Mimikyu.boosts.def=-1
+view p2 14 opponent_team.p1: Mimikyu.boosts.spd=-1
+view p2 14 team.p2: Nibbles.fainted=true
+view p2 14 team.p2: Nibbles.hp=0
+view p2 14 team.p2: Nibbles.status="fnt"
+view p2 14 team.p2: X.fainted=true
+view p2 14 team.p2: X.hp=0
+view p2 14 team.p2: X.status="fnt"
+view p2 14 won=false
+drop p2 14 active.0
+drop p2 14 active.1
+drop p2 14 team.p2: X.boosts.spd

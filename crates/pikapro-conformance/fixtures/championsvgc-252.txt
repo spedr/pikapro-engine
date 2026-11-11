@@ -1,0 +1,381 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed d697 1083 55ec 051e
+genders drawn
+team p1
+Primarina (M)
+Ability: No Ability
+Level: 50
+Tera Type: Ghost
+EVs: 3 HP / 8 Atk / 6 Def / 15 SpA / 15 SpD / 17 Spe
+Quiet Nature
+- Night Slash
+- Shadow Claw
+
+Azumarill (M)
+Ability: No Ability
+Level: 50
+Tera Type: Steel
+EVs: 28 Atk / 2 Def / 1 SpA / 7 SpD / 27 Spe
+Quirky Nature
+- Aqua Jet
+- Extreme Speed
+- Hydro Pump
+
+Metagross
+Ability: No Ability
+Level: 50
+Tera Type: Dark
+EVs: 18 HP / 6 Atk / 1 Def / 3 SpA / 29 SpD / 9 Spe
+Rash Nature
+- Seed Bomb
+- Cross Chop
+
+Espathra (M)
+Ability: No Ability
+Level: 50
+Tera Type: Normal
+EVs: 1 HP / 1 Atk / 29 Def / 7 SpA / 26 Spe
+Lonely Nature
+- X-Scissor
+- Air Cutter
+- Protect
+
+Manectric (M)
+Ability: No Ability
+Level: 50
+Tera Type: Grass
+EVs: 26 HP / 32 Atk / 8 SpD
+Mild Nature
+- Power Whip
+- Aqua Jet
+- Boomburst
+- Dragon Claw
+
+Golurk
+Ability: No Ability
+Level: 50
+Tera Type: Ground
+EVs: 23 HP / 18 Atk / 10 Def / 3 SpA / 1 SpD / 2 Spe
+Timid Nature
+- X-Scissor
+- Aqua Jet
+- Ice Shard
+end
+team p2
+Zoroark (M)
+Ability: No Ability
+Level: 50
+Tera Type: Water
+EVs: 9 HP / 5 Def / 21 SpA / 28 SpD / 1 Spe
+Relaxed Nature
+- Night Slash
+- Smart Strike
+
+Typhlosion-Hisui (M)
+Ability: No Ability
+Level: 50
+Tera Type: Ghost
+EVs: 1 HP / 7 Atk / 9 Def / 16 Spe
+Rash Nature
+- Dragon Claw
+- Aqua Tail
+- Accelerock
+- Ice Shard
+
+Ditto
+Ability: No Ability
+Level: 50
+Tera Type: Fire
+EVs: 11 HP / 8 Atk / 3 Def / 2 SpA / 18 SpD / 20 Spe
+Quirky Nature
+- Power Whip
+- High Horsepower
+- Aerial Ace
+- Dragon Pulse
+
+Vivillon-Savanna (M)
+Ability: No Ability
+Level: 50
+Tera Type: Fighting
+EVs: 27 HP / 21 Def / 16 SpD / 1 Spe
+Quirky Nature
+- Power Whip
+
+Furfrou (M)
+Ability: No Ability
+Level: 50
+Tera Type: Ground
+EVs: 3 HP / 30 Atk / 2 Def / 10 SpA / 17 SpD / 4 Spe
+Quirky Nature
+- Shadow Sneak
+
+Beartic (M)
+Ability: No Ability
+Level: 50
+Tera Type: Dark
+EVs: 1 HP / 17 Atk / 19 Def / 13 SpA / 1 SpD / 4 Spe
+Gentle Nature
+- Drill Run
+end
+choice p1 team 3456
+choice p2 team 6315
+choice p1 move 2 1, move 1 2
+choice p2 switch 3, move 3 -1
+choice p2 switch 3, pass
+choice p1 move 1 -2, switch 4
+choice p2 move 1 2, move 3 -1
+choice p1 move 2 2, move 2 1
+choice p2 move 1 -2, move 4 1
+choice p2 pass, switch 4
+choice p1 move 2 1, move 2 2
+choice p2 move 1 2, move 1 2
+choice p1 pass, switch 3
+choice p2 move 1 1, move 1 1
+choice p1 move 2 1, move 4 -1
+choice p2 pass, move 1 2
+choice p1 move 2 2, move 1 -1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Primarina, L50, M|
+expect |poke|p1|Azumarill, L50, M|
+expect |poke|p1|Metagross, L50|
+expect |poke|p1|Espathra, L50, M|
+expect |poke|p1|Manectric, L50, M|
+expect |poke|p1|Golurk, L50|
+expect |poke|p2|Zoroark, L50, M|
+expect |poke|p2|Typhlosion-Hisui, L50, M|
+expect |poke|p2|Ditto, L50|
+expect |poke|p2|Vivillon-Savanna, L50, M|
+expect |poke|p2|Furfrou, L50, M|
+expect |poke|p2|Beartic, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Metagross|Metagross, L50|173/173
+expect |switch|p1a: Metagross|Metagross, L50|100/100
+expect |split|p1
+expect |switch|p1b: Espathra|Espathra, L50, M|171/171
+expect |switch|p1b: Espathra|Espathra, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Beartic|Beartic, L50, M|171/171
+expect |switch|p2a: Beartic|Beartic, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Ditto|Ditto, L50|134/134
+expect |switch|p2b: Ditto|Ditto, L50|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoroark|Zoroark, L50, M|144/144
+expect |switch|p2a: Zoroark|Zoroark, L50, M|100/100
+expect |move|p1b: Espathra|X-Scissor|p2b: Ditto
+expect |rng|100|7
+expect |rng|24|8
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Ditto|89/134
+expect |-damage|p2b: Ditto|66/100
+expect |move|p1a: Metagross|Cross Chop|p2a: Zoroark
+expect |rng|100|65
+expect |rng|8|3
+expect |rng|16|9
+expect |-supereffective|p2a: Zoroark|1
+expect |split|p2
+expect |-damage|p2a: Zoroark|4/144
+expect |-damage|p2a: Zoroark|2/100
+expect |move|p2b: Ditto|Aerial Ace|p2a: Zoroark
+expect |rng|24|14
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Zoroark|0 fnt
+expect |-damage|p2a: Zoroark|0 fnt
+expect |faint|p2a: Zoroark
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Beartic|Beartic, L50, M|171/171
+expect |switch|p2a: Beartic|Beartic, L50, M|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Golurk|Golurk, L50|187/187
+expect |switch|p1b: Golurk|Golurk, L50|100/100
+expect |move|p1a: Metagross|Seed Bomb|p1b: Golurk
+expect |rng|100|42
+expect |rng|24|4
+expect |rng|16|15
+expect |-supereffective|p1b: Golurk|1
+expect |split|p1
+expect |-damage|p1b: Golurk|97/187
+expect |-damage|p1b: Golurk|51/100
+expect |move|p2b: Ditto|Aerial Ace|p2a: Beartic
+expect |rng|24|17
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Beartic|152/171
+expect |-damage|p2a: Beartic|88/100
+expect |move|p2a: Beartic|Drill Run|p1b: Golurk
+expect |rng|100|63
+expect |rng|8|6
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Golurk|45/187
+expect |-damage|p1b: Golurk|24/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1b: Golurk|Aqua Jet|p2a: Beartic
+expect |rng|100|49
+expect |rng|24|22
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Beartic|129/171
+expect |-damage|p2a: Beartic|75/100
+expect |move|p1a: Metagross|Cross Chop|p2b: Ditto
+expect |rng|100|22
+expect |rng|8|3
+expect |rng|16|15
+expect |-supereffective|p2b: Ditto|1
+expect |split|p2
+expect |-damage|p2b: Ditto|0 fnt
+expect |-damage|p2b: Ditto|0 fnt
+expect |faint|p2b: Ditto
+expect |move|p2a: Beartic|Drill Run|p2: Ditto|[notarget]
+expect |-fail|p2a: Beartic
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Furfrou|Furfrou, L50, M|153/153
+expect |switch|p2b: Furfrou|Furfrou, L50, M|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2b: Furfrou|Shadow Sneak|p1b: Golurk
+expect |rng|100|37
+expect |rng|24|1
+expect |rng|16|9
+expect |-supereffective|p1b: Golurk|1
+expect |split|p1
+expect |-damage|p1b: Golurk|5/187
+expect |-damage|p1b: Golurk|2/100
+expect |move|p1b: Golurk|Aqua Jet|p2b: Furfrou
+expect |rng|100|33
+expect |rng|24|23
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Furfrou|123/153
+expect |-damage|p2b: Furfrou|80/100
+expect |move|p1a: Metagross|Cross Chop|p2a: Beartic
+expect |rng|100|35
+expect |rng|8|4
+expect |rng|16|6
+expect |-supereffective|p2a: Beartic|1
+expect |split|p2
+expect |-damage|p2a: Beartic|3/171
+expect |-damage|p2a: Beartic|1/100
+expect |move|p2a: Beartic|Drill Run|p1b: Golurk
+expect |rng|100|71
+expect |rng|8|6
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Golurk|0 fnt
+expect |-damage|p1b: Golurk|0 fnt
+expect |faint|p1b: Golurk
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Manectric|Manectric, L50, M|171/171
+expect |switch|p1b: Manectric|Manectric, L50, M|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2b: Furfrou|Shadow Sneak|p1a: Metagross
+expect |rng|100|82
+expect |rng|24|5
+expect |rng|16|2
+expect |-supereffective|p1a: Metagross|1
+expect |split|p1
+expect |-damage|p1a: Metagross|141/173
+expect |-damage|p1a: Metagross|81/100
+expect |move|p1b: Manectric|Dragon Claw|p1a: Metagross
+expect |rng|100|56
+expect |rng|24|19
+expect |rng|16|4
+expect |-resisted|p1a: Metagross|1
+expect |split|p1
+expect |-damage|p1a: Metagross|127/173
+expect |-damage|p1a: Metagross|73/100
+expect |move|p1a: Metagross|Cross Chop|p2a: Beartic
+expect |rng|100|32
+expect |rng|8|1
+expect |rng|16|12
+expect |-supereffective|p2a: Beartic|1
+expect |split|p2
+expect |-damage|p2a: Beartic|0 fnt
+expect |-damage|p2a: Beartic|0 fnt
+expect |faint|p2a: Beartic
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2b: Furfrou|Shadow Sneak|p1b: Manectric
+expect |rng|100|89
+expect |rng|24|23
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Manectric|143/171
+expect |-damage|p1b: Manectric|83/100
+expect |move|p1b: Manectric|Power Whip|p1a: Metagross
+expect |rng|100|31
+expect |rng|24|2
+expect |rng|16|10
+expect |-resisted|p1a: Metagross|1
+expect |split|p1
+expect |-damage|p1a: Metagross|107/173
+expect |-damage|p1a: Metagross|61/100
+expect |move|p1a: Metagross|Cross Chop|p2b: Furfrou
+expect |rng|100|39
+expect |rng|8|0
+expect |rng|16|2
+expect |-supereffective|p2b: Furfrou|1
+expect |-crit|p2b: Furfrou
+expect |split|p2
+expect |-damage|p2b: Furfrou|0 fnt
+expect |-damage|p2b: Furfrou|0 fnt
+expect |faint|p2b: Furfrou
+expect |
+expect |win|p1

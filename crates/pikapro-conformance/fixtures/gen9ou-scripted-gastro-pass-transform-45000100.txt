@@ -1,0 +1,137 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9ou
+seed 0000 0000 02ae a5a4
+genders drawn
+team p1
+Mew
+Ability: Synchronize
+Hardy Nature
+- Splash
+- Baton Pass
+
+Mimikyu
+Ability: Disguise
+Hardy Nature
+- Transform
+- Splash
+end
+team p2
+Gyarados
+Ability: Intimidate
+Hardy Nature
+- Gastro Acid
+- Splash
+- Tackle
+end
+choice p1 team 1
+choice p2 team 1
+choice p1 move 1
+choice p2 move 1
+choice p1 move 2
+choice p2 move 2
+choice p1 switch 2
+choice p1 move 1
+choice p2 move 2
+choice p1 move 3
+choice p2 move 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] OU
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Endless Battle Clause: Forcing endless battles is banned
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|OHKO Clause: OHKO moves are banned
+expect |rule|Evasion Items Clause: Evasion items are banned
+expect |rule|Evasion Moves Clause: Evasion moves are banned
+expect |rule|Evasion Abilities Clause: Evasion abilities are banned
+expect |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+expect |clearpoke
+expect |poke|p1|Mew|
+expect |poke|p1|Mimikyu, M|
+expect |poke|p2|Gyarados, F|
+expect |teampreview
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Mew|Mew|341/341
+expect |switch|p1a: Mew|Mew|100/100
+expect |split|p2
+expect |switch|p2a: Gyarados|Gyarados, F|331/331
+expect |switch|p2a: Gyarados|Gyarados, F|100/100
+expect |-ability|p2a: Gyarados|Intimidate|boost
+expect |-unboost|p1a: Mew|atk|1
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Mew|Splash|p1a: Mew
+expect |-nothing
+expect |move|p2a: Gyarados|Gastro Acid|p1a: Mew
+expect |rng|100|93
+expect |-endability|p1a: Mew
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Mew|Baton Pass|p1a: Mew
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Mimikyu|Mimikyu, M|251/251|[from] Baton Pass
+expect |switch|p1a: Mimikyu|Mimikyu, M|100/100|[from] Baton Pass
+expect |move|p2a: Gyarados|Splash|p2a: Gyarados
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Mimikyu|Transform|p2a: Gyarados
+expect |-transform|p1a: Mimikyu|p2a: Gyarados
+expect |-ability|p1a: Mimikyu|Intimidate|boost
+expect |-unboost|p2a: Gyarados|atk|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Gyarados|Splash|p2a: Gyarados
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|0
+expect |turn|4
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Gyarados|Splash|p2a: Gyarados
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Mimikyu|Tackle|p2a: Gyarados
+expect |rng|100|61
+expect |rng|24|16
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Gyarados|287/331
+expect |-damage|p2a: Gyarados|87/100
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|1
+expect |turn|5

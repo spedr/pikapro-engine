@@ -1,0 +1,379 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed c239 98fd 4386 90ee
+genders drawn
+team p1
+Vivillon-Modern @ Focus Band
+Ability: Friend Guard
+Level: 50
+Tera Type: Normal
+EVs: 2 HP / 3 Atk / 12 Def / 29 SpA / 20 SpD
+Careful Nature
+- Psyshock
+- Eruption
+
+Falinks @ Falinksite
+Ability: Battle Armor
+Level: 50
+Tera Type: Ghost
+EVs: 6 Atk / 31 SpA / 24 SpD / 5 Spe
+Naughty Nature
+- Flying Press
+
+Vileplume (M)
+Ability: Effect Spore
+Level: 50
+Tera Type: Ground
+EVs: 20 HP / 3 Atk / 1 Def / 4 SpA / 17 SpD / 20 Spe
+Docile Nature
+- Psyshock
+- Stockpile
+
+X (Altaria) (F)
+Ability: Natural Cure
+Level: 50
+Tera Type: Psychic
+EVs: 18 HP / 23 Atk / 21 Def / 3 SpA / 1 SpD
+Naive Nature
+- Flower Trick
+- Head Smash
+- Storm Throw
+
+Audino @ Audinite
+Ability: Klutz
+Level: 50
+Tera Type: Ground
+EVs: 28 HP / 5 Def / 9 SpA / 6 SpD / 15 Spe
+Naive Nature
+- Freeze-Dry
+
+Gourgeist
+Ability: Frisk
+Level: 50
+Tera Type: Flying
+EVs: 14 Atk / 11 Def / 3 SpA / 24 SpD / 9 Spe
+Bold Nature
+- Trick-or-Treat
+- Seed Bomb
+end
+team p2
+Emolga
+Ability: Motor Drive
+Level: 50
+Tera Type: Ground
+EVs: 2 HP / 32 Atk / 18 Def / 13 SpA / 1 SpD
+Hasty Nature
+- Double Shock
+- Roost
+
+Mr. Bubbles (Tauros-Paldea-Combat) @ Wide Lens
+Ability: Cud Chew
+Level: 50
+Tera Type: Fighting
+EVs: 12 Atk / 29 Def / 17 SpD / 7 Spe
+Bold Nature
+- String Shot
+
+Gourgeist (M)
+Ability: Frisk
+Level: 50
+Tera Type: Bug
+EVs: 18 HP / 7 Atk / 1 Def / 18 SpA / 11 SpD / 9 Spe
+Mild Nature
+- Trick-or-Treat
+- Seed Bomb
+
+Sparky (Toxapex)
+Ability: Regenerator
+Level: 50
+Tera Type: Normal
+EVs: 2 HP / 14 Def / 15 SpA / 12 SpD / 12 Spe
+Impish Nature
+- String Shot
+- Bite
+
+Sir Hops-a-Lot (Goodra) (M) @ Charti Berry
+Ability: Hydration
+Level: 50
+Tera Type: Fairy
+EVs: 20 HP / 30 Atk / 2 SpA / 5 SpD / 3 Spe
+Sassy Nature
+- Aromatic Mist
+- Mean Look
+
+Camerupt (M) @ Cameruptite
+Ability: Solid Rock
+Level: 50
+Tera Type: Water
+EVs: 7 HP / 31 Atk / 2 SpA / 3 SpD / 22 Spe
+Careful Nature
+- Reversal
+- Burning Jealousy
+- Thrash
+- Lava Plume
+end
+choice p1 team 3264
+choice p2 team 6521
+choice p1 move 1 -2, switch 3
+choice p2 move lavaplume mega, move 2 2
+choice p1 switch 4, switch 3
+choice p2 move 1 2, move 2 2
+choice p1 move 2 2, move 1 -1 mega
+choice p2 move 3, switch 3
+choice p1 move 1 -2, move 1 2
+choice p2 move 1 ,  switch 4
+choice p1 move 2 1, move 1 -1
+choice p2 default
+choice p1 default
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Vivillon-Modern, L50, M|
+expect |poke|p1|Falinks, L50|
+expect |poke|p1|Vileplume, L50, M|
+expect |poke|p1|Altaria, L50, F|
+expect |poke|p1|Audino, L50, M|
+expect |poke|p1|Gourgeist, L50, F|
+expect |poke|p2|Emolga, L50, F|
+expect |poke|p2|Tauros-Paldea-Combat, L50, M|
+expect |poke|p2|Gourgeist, L50, M|
+expect |poke|p2|Toxapex, L50, M|
+expect |poke|p2|Goodra, L50, M|
+expect |poke|p2|Camerupt, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Vileplume|Vileplume, L50, M|170/170
+expect |switch|p1a: Vileplume|Vileplume, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Falinks|Falinks, L50|140/140
+expect |switch|p1b: Falinks|Falinks, L50|100/100
+expect |split|p2
+expect |switch|p2a: Camerupt|Camerupt, L50, M|152/152
+expect |switch|p2a: Camerupt|Camerupt, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Sir Hops-a-Lot|Goodra, L50, M|185/185
+expect |switch|p2b: Sir Hops-a-Lot|Goodra, L50, M|100/100
+expect |turn|1
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Gourgeist|Gourgeist, L50, F|140/140
+expect |switch|p1b: Gourgeist|Gourgeist, L50, F|100/100
+expect |-item|p2a: Camerupt|Cameruptite|[from] ability: Frisk|[of] p1b: Gourgeist
+expect |-item|p2b: Sir Hops-a-Lot|Charti Berry|[from] ability: Frisk|[of] p1b: Gourgeist
+expect |detailschange|p2a: Camerupt|Camerupt-Mega, L50, M
+expect |-mega|p2a: Camerupt|Camerupt|Cameruptite
+expect |rng|2|0
+expect |move|p2b: Sir Hops-a-Lot|Mean Look||[still]
+expect |-fail|p2b: Sir Hops-a-Lot
+expect |rng|2|0
+expect |move|p1a: Vileplume|Psyshock|p1b: Gourgeist
+expect |rng|100|33
+expect |rng|24|17
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Gourgeist|112/140
+expect |-damage|p1b: Gourgeist|80/100
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Camerupt|Lava Plume|p1b: Gourgeist|[spread] p2b,p1a,p1b
+expect |rng|100|64
+expect |rng|100|52
+expect |rng|100|57
+expect |rng|24|11
+expect |rng|16|3
+expect |-resisted|p2b: Sir Hops-a-Lot|1
+expect |rng|24|0
+expect |rng|16|3
+expect |-supereffective|p1a: Vileplume|1
+expect |-crit|p1a: Vileplume
+expect |rng|24|4
+expect |rng|16|7
+expect |-supereffective|p1b: Gourgeist|1
+expect |split|p2
+expect |-damage|p2b: Sir Hops-a-Lot|165/185
+expect |-damage|p2b: Sir Hops-a-Lot|89/100
+expect |split|p1
+expect |-damage|p1a: Vileplume|0 fnt
+expect |-damage|p1a: Vileplume|0 fnt
+expect |split|p1
+expect |-damage|p1b: Gourgeist|0 fnt
+expect |-damage|p1b: Gourgeist|0 fnt
+expect |faint|p1a: Vileplume
+expect |faint|p1b: Gourgeist
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Falinks|Falinks, L50|140/140
+expect |switch|p1b: Falinks|Falinks, L50|100/100
+expect |split|p1
+expect |switch|p1a: X|Altaria, L50, F|168/168
+expect |switch|p1a: X|Altaria, L50, F|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |detailschange|p1b: Falinks|Falinks-Mega, L50
+expect |-mega|p1b: Falinks|Falinks|Falinksite
+expect |move|p1b: Falinks|Flying Press|p1a: X
+expect |rng|100|29
+expect |rng|24|20
+expect |rng|16|6
+expect |-resisted|p1a: X|1
+expect |split|p1
+expect |-damage|p1a: X|126/168
+expect |-damage|p1a: X|75/100
+expect |move|p1a: X|Head Smash|p2b: Sir Hops-a-Lot|[miss]
+expect |rng|100|94
+expect |-miss|p1a: X|p2b: Sir Hops-a-Lot
+expect |move|p2b: Sir Hops-a-Lot|Mean Look|p1b: Falinks
+expect |-activate|p1b: Falinks|trapped
+expect |move|p2a: Camerupt|Reversal|p1b: Falinks
+expect |rng|100|55
+expect |rng|24|6
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Falinks|130/140
+expect |-damage|p1b: Falinks|92/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Mr. Bubbles|Tauros-Paldea-Combat, L50, M|150/150
+expect |switch|p2b: Mr. Bubbles|Tauros-Paldea-Combat, L50, M|100/100
+expect |rng|2|1
+expect |move|p1b: Falinks|Flying Press|p2b: Mr. Bubbles
+expect |rng|100|26
+expect |rng|24|22
+expect |rng|16|15
+expect |-supereffective|p2b: Mr. Bubbles|1
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|30/150
+expect |-damage|p2b: Mr. Bubbles|20/100r
+expect |rng|2|1
+expect |move|p1a: X|Flower Trick|p1b: Falinks
+expect |rng|16|4
+expect |-crit|p1b: Falinks
+expect |split|p1
+expect |-damage|p1b: Falinks|96/140
+expect |-damage|p1b: Falinks|68/100
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Camerupt|Thrash|p1b: Falinks
+expect |rng|100|81
+expect |rng|24|17
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1b: Falinks|43/140
+expect |-damage|p1b: Falinks|30/100
+expect |rng|2|0
+expect |
+expect |upkeep
+expect |turn|4
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Emolga|Emolga, L50, F|132/132
+expect |switch|p2b: Emolga|Emolga, L50, F|100/100
+expect |rng|2|0
+expect |move|p1b: Falinks|Flying Press|p1a: X
+expect |rng|100|40
+expect |rng|24|16
+expect |rng|16|1
+expect |-resisted|p1a: X|1
+expect |split|p1
+expect |-damage|p1a: X|81/168
+expect |-damage|p1a: X|48/100
+expect |rng|2|0
+expect |move|p1a: X|Head Smash|p2a: Camerupt
+expect |rng|100|70
+expect |rng|24|0
+expect |rng|16|10
+expect |-crit|p2a: Camerupt
+expect |split|p2
+expect |-damage|p2a: Camerupt|66/152
+expect |-damage|p2a: Camerupt|43/100
+expect |split|p1
+expect |-damage|p1a: X|38/168|[from] Recoil
+expect |-damage|p1a: X|22/100|[from] Recoil
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Camerupt|Thrash|p1b: Falinks|[from] lockedmove
+expect |rng|100|46
+expect |rng|24|5
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Falinks|0 fnt
+expect |-damage|p1b: Falinks|0 fnt
+expect |faint|p1b: Falinks
+expect |-start|p2a: Camerupt|confusion|[fatigue]
+expect |rng|4|2
+expect |
+expect |upkeep
+expect |turn|5
+expect |rng|2|1
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |move|p2b: Emolga|Double Shock|p1a: X
+expect |rng|100|5
+expect |rng|24|12
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: X|0 fnt
+expect |-damage|p1a: X|0 fnt
+expect |-start|p2b: Emolga|typechange|???/Flying|[from] move: Double Shock
+expect |faint|p1a: X
+expect |
+expect |win|p2
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vivillon","details":"Vivillon-Modern, L50, M","condition":"157/157","active":true,"stats":{"atk":75,"def":82,"spa":125,"spd":99,"spe":109},"moves":["psyshock","eruption"],"baseAbility":"friendguard","item":"focusband","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Falinks","details":"Falinks, L50","condition":"140/140","active":true,"stats":{"atk":138,"def":120,"spa":121,"spd":93,"spe":100},"moves":["flyingpress"],"baseAbility":"battlearmor","item":"falinksite","pokeball":"pokeball","ability":"battlearmor","commanding":false,"reviving":false},{"ident":"p1: Vileplume","details":"Vileplume, L50, M","condition":"170/170","active":false,"stats":{"atk":103,"def":106,"spa":134,"spd":127,"spe":90},"moves":["psyshock","stockpile"],"baseAbility":"effectspore","item":"","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false},{"ident":"p1: X","details":"Altaria, L50, F","condition":"168/168","active":false,"stats":{"atk":113,"def":131,"spa":93,"spd":113,"spe":110},"moves":["flowertrick","headsmash","stormthrow"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Audino","details":"Audino, L50, M","condition":"206/206","active":false,"stats":{"atk":80,"def":111,"spa":89,"spd":100,"spe":93},"moves":["freezedry"],"baseAbility":"klutz","item":"audinite","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist, L50, F","condition":"140/140","active":false,"stats":{"atk":111,"def":168,"spa":81,"spd":119,"spe":113},"moves":["trickortreat","seedbomb"],"baseAbility":"frisk","item":"","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Emolga","details":"Emolga, L50, F","condition":"132/132","active":true,"stats":{"atk":127,"def":88,"spa":108,"spd":81,"spe":135},"moves":["doubleshock","roost"],"baseAbility":"motordrive","item":"","pokeball":"pokeball","ability":"motordrive","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Tauros-Paldea-Combat, L50, M","condition":"150/150","active":true,"stats":{"atk":127,"def":169,"spa":50,"spd":107,"spe":127},"moves":["stringshot"],"baseAbility":"cudchew","item":"widelens","pokeball":"pokeball","ability":"cudchew","commanding":false,"reviving":false},{"ident":"p2: Gourgeist","details":"Gourgeist, L50, M","condition":"158/158","active":false,"stats":{"atk":117,"def":128,"spa":105,"spd":106,"spe":113},"moves":["trickortreat","seedbomb"],"baseAbility":"frisk","item":"","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false},{"ident":"p2: Sparky","details":"Toxapex, L50, M","condition":"127/127","active":false,"stats":{"atk":83,"def":204,"spa":79,"spd":174,"spe":67},"moves":["stringshot","bite"],"baseAbility":"regenerator","item":"","pokeball":"pokeball","ability":"regenerator","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Goodra, L50, M","condition":"185/185","active":false,"stats":{"atk":150,"def":90,"spa":132,"spd":192,"spe":92},"moves":["aromaticmist","meanlook"],"baseAbility":"hydration","item":"chartiberry","pokeball":"pokeball","ability":"hydration","commanding":false,"reviving":false},{"ident":"p2: Camerupt","details":"Camerupt, L50, M","condition":"152/152","active":false,"stats":{"atk":151,"def":90,"spa":114,"spd":107,"spe":82},"moves":["reversal","burningjealousy","thrash","lavaplume"],"baseAbility":"solidrock","item":"cameruptite","pokeball":"pokeball","ability":"solidrock","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Psyshock","id":"psyshock","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Stockpile","id":"stockpile","pp":20,"maxpp":20,"target":"self","disabled":false}]},{"moves":[{"move":"Flying Press","id":"flyingpress","pp":12,"maxpp":12,"target":"any","disabled":false}],"canMegaEvo":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vileplume","details":"Vileplume, L50, M","condition":"170/170","active":true,"stats":{"atk":103,"def":106,"spa":134,"spd":127,"spe":90},"moves":["psyshock","stockpile"],"baseAbility":"effectspore","item":"","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false},{"ident":"p1: Falinks","details":"Falinks, L50","condition":"140/140","active":true,"stats":{"atk":138,"def":120,"spa":121,"spd":93,"spe":100},"moves":["flyingpress"],"baseAbility":"battlearmor","item":"falinksite","pokeball":"pokeball","ability":"battlearmor","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist, L50, F","condition":"140/140","active":false,"stats":{"atk":111,"def":168,"spa":81,"spd":119,"spe":113},"moves":["trickortreat","seedbomb"],"baseAbility":"frisk","item":"","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false},{"ident":"p1: X","details":"Altaria, L50, F","condition":"168/168","active":false,"stats":{"atk":113,"def":131,"spa":93,"spd":113,"spe":110},"moves":["flowertrick","headsmash","stormthrow"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Reversal","id":"reversal","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Thrash","id":"thrash","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Lava Plume","id":"lavaplume","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Aromatic Mist","id":"aromaticmist","pp":20,"maxpp":20,"target":"adjacentAlly","disabled":false},{"move":"Mean Look","id":"meanlook","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Camerupt","details":"Camerupt, L50, M","condition":"152/152","active":true,"stats":{"atk":151,"def":90,"spa":114,"spd":107,"spe":82},"moves":["reversal","burningjealousy","thrash","lavaplume"],"baseAbility":"solidrock","item":"cameruptite","pokeball":"pokeball","ability":"solidrock","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Goodra, L50, M","condition":"185/185","active":true,"stats":{"atk":150,"def":90,"spa":132,"spd":192,"spe":92},"moves":["aromaticmist","meanlook"],"baseAbility":"hydration","item":"chartiberry","pokeball":"pokeball","ability":"hydration","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Tauros-Paldea-Combat, L50, M","condition":"150/150","active":false,"stats":{"atk":127,"def":169,"spa":50,"spd":107,"spe":127},"moves":["stringshot"],"baseAbility":"cudchew","item":"widelens","pokeball":"pokeball","ability":"cudchew","commanding":false,"reviving":false},{"ident":"p2: Emolga","details":"Emolga, L50, F","condition":"132/132","active":false,"stats":{"atk":127,"def":88,"spa":108,"spd":81,"spe":135},"moves":["doubleshock","roost"],"baseAbility":"motordrive","item":"","pokeball":"pokeball","ability":"motordrive","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[true,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vileplume","details":"Vileplume, L50, M","condition":"0 fnt","active":true,"stats":{"atk":103,"def":106,"spa":134,"spd":127,"spe":90},"moves":["psyshock","stockpile"],"baseAbility":"effectspore","item":"","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist, L50, F","condition":"0 fnt","active":true,"stats":{"atk":111,"def":168,"spa":81,"spd":119,"spe":113},"moves":["trickortreat","seedbomb"],"baseAbility":"frisk","item":"","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false},{"ident":"p1: Falinks","details":"Falinks, L50","condition":"140/140","active":false,"stats":{"atk":138,"def":120,"spa":121,"spd":93,"spe":100},"moves":["flyingpress"],"baseAbility":"battlearmor","item":"falinksite","pokeball":"pokeball","ability":"battlearmor","commanding":false,"reviving":false},{"ident":"p1: X","details":"Altaria, L50, F","condition":"168/168","active":false,"stats":{"atk":113,"def":131,"spa":93,"spd":113,"spe":110},"moves":["flowertrick","headsmash","stormthrow"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Camerupt","details":"Camerupt-Mega, L50, M","condition":"152/152","active":true,"stats":{"atk":171,"def":120,"spa":150,"spd":140,"spe":62},"moves":["reversal","burningjealousy","thrash","lavaplume"],"baseAbility":"sheerforce","item":"cameruptite","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Goodra, L50, M","condition":"165/185","active":true,"stats":{"atk":150,"def":90,"spa":132,"spd":192,"spe":92},"moves":["aromaticmist","meanlook"],"baseAbility":"hydration","item":"chartiberry","pokeball":"pokeball","ability":"hydration","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Tauros-Paldea-Combat, L50, M","condition":"150/150","active":false,"stats":{"atk":127,"def":169,"spa":50,"spd":107,"spe":127},"moves":["stringshot"],"baseAbility":"cudchew","item":"widelens","pokeball":"pokeball","ability":"cudchew","commanding":false,"reviving":false},{"ident":"p2: Emolga","details":"Emolga, L50, F","condition":"132/132","active":false,"stats":{"atk":127,"def":88,"spa":108,"spd":81,"spe":135},"moves":["doubleshock","roost"],"baseAbility":"motordrive","item":"","pokeball":"pokeball","ability":"motordrive","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Flower Trick","id":"flowertrick","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Head Smash","id":"headsmash","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Storm Throw","id":"stormthrow","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flying Press","id":"flyingpress","pp":12,"maxpp":12,"target":"any","disabled":false}],"canMegaEvo":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Altaria, L50, F","condition":"168/168","active":true,"stats":{"atk":113,"def":131,"spa":93,"spd":113,"spe":110},"moves":["flowertrick","headsmash","stormthrow"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Falinks","details":"Falinks, L50","condition":"140/140","active":true,"stats":{"atk":138,"def":120,"spa":121,"spd":93,"spe":100},"moves":["flyingpress"],"baseAbility":"battlearmor","item":"falinksite","pokeball":"pokeball","ability":"battlearmor","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":168,"spa":81,"spd":119,"spe":113},"moves":["trickortreat","seedbomb"],"baseAbility":"frisk","item":"","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false},{"ident":"p1: Vileplume","details":"Vileplume, L50, M","condition":"0 fnt","active":false,"stats":{"atk":103,"def":106,"spa":134,"spd":127,"spe":90},"moves":["psyshock","stockpile"],"baseAbility":"effectspore","item":"","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Reversal","id":"reversal","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Thrash","id":"thrash","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Lava Plume","id":"lavaplume","pp":15,"maxpp":16,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Aromatic Mist","id":"aromaticmist","pp":20,"maxpp":20,"target":"adjacentAlly","disabled":false},{"move":"Mean Look","id":"meanlook","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Camerupt","details":"Camerupt-Mega, L50, M","condition":"152/152","active":true,"stats":{"atk":171,"def":120,"spa":150,"spd":140,"spe":62},"moves":["reversal","burningjealousy","thrash","lavaplume"],"baseAbility":"sheerforce","item":"cameruptite","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Goodra, L50, M","condition":"165/185","active":true,"stats":{"atk":150,"def":90,"spa":132,"spd":192,"spe":92},"moves":["aromaticmist","meanlook"],"baseAbility":"hydration","item":"chartiberry","pokeball":"pokeball","ability":"hydration","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Tauros-Paldea-Combat, L50, M","condition":"150/150","active":false,"stats":{"atk":127,"def":169,"spa":50,"spd":107,"spe":127},"moves":["stringshot"],"baseAbility":"cudchew","item":"widelens","pokeball":"pokeball","ability":"cudchew","commanding":false,"reviving":false},{"ident":"p2: Emolga","details":"Emolga, L50, F","condition":"132/132","active":false,"stats":{"atk":127,"def":88,"spa":108,"spd":81,"spe":135},"moves":["doubleshock","roost"],"baseAbility":"motordrive","item":"","pokeball":"pokeball","ability":"motordrive","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Flower Trick","id":"flowertrick","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Head Smash","id":"headsmash","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Storm Throw","id":"stormthrow","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flying Press","id":"flyingpress","pp":11,"maxpp":12,"target":"any","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Altaria, L50, F","condition":"126/168","active":true,"stats":{"atk":113,"def":131,"spa":93,"spd":113,"spe":110},"moves":["flowertrick","headsmash","stormthrow"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Falinks","details":"Falinks-Mega, L50","condition":"130/140","active":true,"stats":{"atk":177,"def":155,"spa":121,"spd":98,"spe":125},"moves":["flyingpress"],"baseAbility":"defiant","item":"falinksite","pokeball":"pokeball","ability":"defiant","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":168,"spa":81,"spd":119,"spe":113},"moves":["trickortreat","seedbomb"],"baseAbility":"frisk","item":"","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false},{"ident":"p1: Vileplume","details":"Vileplume, L50, M","condition":"0 fnt","active":false,"stats":{"atk":103,"def":106,"spa":134,"spd":127,"spe":90},"moves":["psyshock","stockpile"],"baseAbility":"effectspore","item":"","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Reversal","id":"reversal","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Thrash","id":"thrash","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Lava Plume","id":"lavaplume","pp":15,"maxpp":16,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Aromatic Mist","id":"aromaticmist","pp":20,"maxpp":20,"target":"adjacentAlly","disabled":false},{"move":"Mean Look","id":"meanlook","pp":6,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Camerupt","details":"Camerupt-Mega, L50, M","condition":"152/152","active":true,"stats":{"atk":171,"def":120,"spa":150,"spd":140,"spe":62},"moves":["reversal","burningjealousy","thrash","lavaplume"],"baseAbility":"sheerforce","item":"cameruptite","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Goodra, L50, M","condition":"165/185","active":true,"stats":{"atk":150,"def":90,"spa":132,"spd":192,"spe":92},"moves":["aromaticmist","meanlook"],"baseAbility":"hydration","item":"chartiberry","pokeball":"pokeball","ability":"hydration","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Tauros-Paldea-Combat, L50, M","condition":"150/150","active":false,"stats":{"atk":127,"def":169,"spa":50,"spd":107,"spe":127},"moves":["stringshot"],"baseAbility":"cudchew","item":"widelens","pokeball":"pokeball","ability":"cudchew","commanding":false,"reviving":false},{"ident":"p2: Emolga","details":"Emolga, L50, F","condition":"132/132","active":false,"stats":{"atk":127,"def":88,"spa":108,"spd":81,"spe":135},"moves":["doubleshock","roost"],"baseAbility":"motordrive","item":"","pokeball":"pokeball","ability":"motordrive","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Flower Trick","id":"flowertrick","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Head Smash","id":"headsmash","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Storm Throw","id":"stormthrow","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flying Press","id":"flyingpress","pp":10,"maxpp":12,"target":"any","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Altaria, L50, F","condition":"126/168","active":true,"stats":{"atk":113,"def":131,"spa":93,"spd":113,"spe":110},"moves":["flowertrick","headsmash","stormthrow"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Falinks","details":"Falinks-Mega, L50","condition":"43/140","active":true,"stats":{"atk":177,"def":155,"spa":121,"spd":98,"spe":125},"moves":["flyingpress"],"baseAbility":"defiant","item":"falinksite","pokeball":"pokeball","ability":"defiant","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":168,"spa":81,"spd":119,"spe":113},"moves":["trickortreat","seedbomb"],"baseAbility":"frisk","item":"","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false},{"ident":"p1: Vileplume","details":"Vileplume, L50, M","condition":"0 fnt","active":false,"stats":{"atk":103,"def":106,"spa":134,"spd":127,"spe":90},"moves":["psyshock","stockpile"],"baseAbility":"effectspore","item":"","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Thrash","id":"thrash"}],"trapped":true},{"moves":[{"move":"String Shot","id":"stringshot","pp":20,"maxpp":20,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Camerupt","details":"Camerupt-Mega, L50, M","condition":"152/152","active":true,"stats":{"atk":171,"def":120,"spa":150,"spd":140,"spe":62},"moves":["reversal","burningjealousy","thrash","lavaplume"],"baseAbility":"sheerforce","item":"cameruptite","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Tauros-Paldea-Combat, L50, M","condition":"30/150","active":true,"stats":{"atk":127,"def":169,"spa":50,"spd":107,"spe":127},"moves":["stringshot"],"baseAbility":"cudchew","item":"widelens","pokeball":"pokeball","ability":"cudchew","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Goodra, L50, M","condition":"165/185","active":false,"stats":{"atk":150,"def":90,"spa":132,"spd":192,"spe":92},"moves":["aromaticmist","meanlook"],"baseAbility":"hydration","item":"chartiberry","pokeball":"pokeball","ability":"hydration","commanding":false,"reviving":false},{"ident":"p2: Emolga","details":"Emolga, L50, F","condition":"132/132","active":false,"stats":{"atk":127,"def":88,"spa":108,"spd":81,"spe":135},"moves":["doubleshock","roost"],"baseAbility":"motordrive","item":"","pokeball":"pokeball","ability":"motordrive","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Flower Trick","id":"flowertrick","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Head Smash","id":"headsmash","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Storm Throw","id":"stormthrow","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flying Press","id":"flyingpress","pp":9,"maxpp":12,"target":"any","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Altaria, L50, F","condition":"38/168","active":true,"stats":{"atk":113,"def":131,"spa":93,"spd":113,"spe":110},"moves":["flowertrick","headsmash","stormthrow"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false},{"ident":"p1: Falinks","details":"Falinks-Mega, L50","condition":"0 fnt","active":true,"stats":{"atk":177,"def":155,"spa":121,"spd":98,"spe":125},"moves":["flyingpress"],"baseAbility":"defiant","item":"falinksite","pokeball":"pokeball","ability":"defiant","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":168,"spa":81,"spd":119,"spe":113},"moves":["trickortreat","seedbomb"],"baseAbility":"frisk","item":"","pokeball":"pokeball","ability":"frisk","commanding":false,"reviving":false},{"ident":"p1: Vileplume","details":"Vileplume, L50, M","condition":"0 fnt","active":false,"stats":{"atk":103,"def":106,"spa":134,"spd":127,"spe":90},"moves":["psyshock","stockpile"],"baseAbility":"effectspore","item":"","pokeball":"pokeball","ability":"effectspore","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Reversal","id":"reversal","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Burning Jealousy","id":"burningjealousy","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Thrash","id":"thrash","pp":11,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Lava Plume","id":"lavaplume","pp":15,"maxpp":16,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Camerupt","details":"Camerupt-Mega, L50, M","condition":"66/152","active":true,"stats":{"atk":171,"def":120,"spa":150,"spd":140,"spe":62},"moves":["reversal","burningjealousy","thrash","lavaplume"],"baseAbility":"sheerforce","item":"cameruptite","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false},{"ident":"p2: Emolga","details":"Emolga, L50, F","condition":"132/132","active":true,"stats":{"atk":127,"def":88,"spa":108,"spd":81,"spe":135},"moves":["doubleshock","roost"],"baseAbility":"motordrive","item":"","pokeball":"pokeball","ability":"motordrive","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Goodra, L50, M","condition":"165/185","active":false,"stats":{"atk":150,"def":90,"spa":132,"spd":192,"spe":92},"moves":["aromaticmist","meanlook"],"baseAbility":"hydration","item":"chartiberry","pokeball":"pokeball","ability":"hydration","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Tauros-Paldea-Combat, L50, M","condition":"30/150","active":false,"stats":{"atk":127,"def":169,"spa":50,"spd":107,"spe":127},"moves":["stringshot"],"baseAbility":"cudchew","item":"widelens","pokeball":"pokeball","ability":"cudchew","commanding":false,"reviving":false}]}}

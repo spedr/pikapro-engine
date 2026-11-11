@@ -1,0 +1,512 @@
+# Recorded by channel_conformance. Do not edit by hand.
+format gen9vgc
+source fuzz
+seed 5121202
+options factored row percent
+player p1
+line |t:|0
+line |gametype|doubles
+line |player|p1|p1||
+line |player|p2|p2||
+line |gen|9
+line |tier|[Gen 9] Doubles Custom Game
+line |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+line |clearpoke
+line |poke|p1|Snivy, L50, M|
+line |poke|p1|Clawitzer, L50, M|
+line |poke|p1|Palkia, L50|
+line |poke|p1|Gholdengo, L50|
+line |poke|p1|Alcremie, L50, F|
+line |poke|p1|Bombirdier, L50, F|
+line |poke|p2|Iron Jugulis, L50|
+line |poke|p2|Espurr, L50, M|
+line |poke|p2|Rockruff, L50, M|
+line |poke|p2|Alcremie-Rainbow-Swirl, L50, F|
+line |poke|p2|Noibat, L50, F|
+line |poke|p2|Clefable, L50, F|
+line |teampreview|4
+line |showteam|p1|Sir Hops-a-Lot|Snivy||Contrary|ShellSideArm,Explosion|Quirky|251,7,,163,8,81|M|||50|,,,,,Psychic]Mr. Bubbles|Clawitzer||MegaLauncher|PetalBlizzard,ForestsCurse|Timid|4,62,8,217,,217||||50|,,,,,Ground]Nibbles|Palkia|RowapBerry|Telepathy|PoisonPowder,Scald,DiamondStorm,BrickBreak|Hasty|141,,118,124,2,100|||S|50|,,,,,Fighting]Sparky|Gholdengo||GoodasGold|Glare,MoongeistBeam,HydroPump,AstralBarrage|Mild|106,57,176,1,1,169||||50|,,,,,Fire]Alcremie|||SweetVeil|Celebrate,Instruct,Hypnosis|Lax|73,55,9,29,129,214||||50|,,,,,Poison]Bombirdier|||KeenEye|GunkShot|Jolly|51,126,179,64,69,5||||50|,,,,,Steel
+line |showteam|p2|Iron Jugulis|||QuarkDrive|WorkUp|Bold|79,148,60,5,154,64|||S|50|,,,,,Psychic]Espurr||LeafStone|Infiltrator|RagePowder|Sassy|181,18,5,157,3,146|M|||50|,,,,,Grass]ThisNameIsFarTooLongToKeep|RockruffDusk|EarthPlate|OwnTempo|Defog,Wish,ElectroBall|Careful|146,16,65,13,201,68||||50|,,,,,Bug]Alcremie-Rainbow-Swirl|||SweetVeil|FlyingPress,PoisonSting|Serious|157,184,,,11,158||||50|,,,,,Rock]Sparky|Noibat|RustedSword|Infiltrator|Waterfall,Mist,Shelter|Sassy|142,19,26,52,90,54||||50|,,,,,Dark]Clefable|||CuteCharm|Judgment|Docile|26,179,71,168,43,8|F|||50|,,,,,Rock
+line |request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":true,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"147/147","active":true,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"183/183","active":false,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Sparky","details":"Gholdengo, L50","condition":"175/175","active":false,"stats":{"atk":87,"def":123,"spa":168,"spd":111,"spe":125},"moves":["glare","moongeistbeam","hydropump","astralbarrage"],"baseAbility":"goodasgold","item":"","pokeball":"pokeball","ability":"goodasgold","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Alcremie","details":"Alcremie, L50, F","condition":"149/149","active":false,"stats":{"atk":87,"def":105,"spa":134,"spd":141,"spe":111},"moves":["celebrate","instruct","hypnosis"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"151/151","active":false,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+decision cee6518bd3c024ca
+line |
+line |t:|0
+line |teamsize|p1|4
+line |teamsize|p2|4
+line |start
+line |switch|p1a: Nibbles|Palkia, L50, shiny|183/183
+line |switch|p1b: Bombirdier|Bombirdier, L50, F|151/151
+line |switch|p2a: ThisNameIsFarTooLong|Rockruff, L50, M|138/138
+line |switch|p2b: Sparky|Noibat, L50, F|133/133
+line |turn|1
+line |request|{"active":[{"moves":[{"move":"Poison Powder","id":"poisonpowder","pp":56,"maxpp":56,"target":"normal","disabled":false},{"move":"Scald","id":"scald","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Diamond Storm","id":"diamondstorm","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Brick Break","id":"brickbreak","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Fighting"},{"moves":[{"move":"Gunk Shot","id":"gunkshot","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Steel"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"183/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"151/151","active":true,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":false,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"147/147","active":false,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+decision f66adc5c0f2ed5b8
+line |
+line |t:|0
+line |switch|p1b: Mr. Bubbles|Clawitzer, L50, M|147/147
+line |-terastallize|p1a: Nibbles|Fighting
+line |-terastallize|p2a: ThisNameIsFarTooLong|Bug
+line |move|p1a: Nibbles|Scald|p2b: Sparky
+line |-resisted|p2b: Sparky
+line |-damage|p2b: Sparky|73/133
+line |move|p2a: ThisNameIsFarTooLong|Wish|p2a: ThisNameIsFarTooLong
+line |move|p2b: Sparky|Waterfall|p2a: ThisNameIsFarTooLong
+line |-damage|p2a: ThisNameIsFarTooLong|114/138
+line |
+line |upkeep
+line |turn|2
+line |request|{"active":[{"moves":[{"move":"Poison Powder","id":"poisonpowder","pp":56,"maxpp":56,"target":"normal","disabled":false},{"move":"Scald","id":"scald","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Diamond Storm","id":"diamondstorm","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Brick Break","id":"brickbreak","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Petal Blizzard","id":"petalblizzard","pp":24,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Forest's Curse","id":"forestscurse","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"183/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"147/147","active":true,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":false,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"151/151","active":false,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+decision 823dd738d1b44b81
+line |
+line |t:|0
+line |move|p1a: Nibbles|Scald|p1b: Mr. Bubbles
+line |-resisted|p1b: Mr. Bubbles
+line |-damage|p1b: Mr. Bubbles|105/147
+line |move|p1b: Mr. Bubbles|Forest's Curse|p2b: Sparky
+line |-start|p2b: Sparky|typeadd|Grass|[from] move: Forest's Curse
+line |move|p2a: ThisNameIsFarTooLong|Wish||[still]
+line |-fail|p2a: ThisNameIsFarTooLong
+line |move|p2b: Sparky|Waterfall|p1a: Nibbles
+line |-damage|p1a: Nibbles|167/183
+line |
+line |-heal|p2a: ThisNameIsFarTooLong|138/138|[from] move: Wish|[wisher] ThisNameIsFarTooLong
+line |upkeep
+line |turn|3
+line |request|{"active":[{"moves":[{"move":"Poison Powder","id":"poisonpowder","pp":56,"maxpp":56,"target":"normal","disabled":false},{"move":"Scald","id":"scald","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Diamond Storm","id":"diamondstorm","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Brick Break","id":"brickbreak","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Petal Blizzard","id":"petalblizzard","pp":24,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Forest's Curse","id":"forestscurse","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"167/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"105/147","active":true,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":false,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"151/151","active":false,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+decision e2607f20c628c6c6
+line |
+line |t:|0
+line |switch|p1b: Bombirdier|Bombirdier, L50, F|151/151
+line |switch|p2a: Alcremie|Alcremie-Rainbow-Swirl, L50, F|160/160
+line |move|p1a: Nibbles|Scald|p1b: Bombirdier
+line |-damage|p1b: Bombirdier|64/151
+line |move|p2b: Sparky|Waterfall|p1b: Bombirdier
+line |-damage|p1b: Bombirdier|49/151
+line |
+line |upkeep
+line |turn|4
+line |request|{"active":[{"moves":[{"move":"Poison Powder","id":"poisonpowder","pp":56,"maxpp":56,"target":"normal","disabled":false},{"move":"Scald","id":"scald","pp":21,"maxpp":24,"target":"normal","disabled":false},{"move":"Diamond Storm","id":"diamondstorm","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Brick Break","id":"brickbreak","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Gunk Shot","id":"gunkshot","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"167/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"49/151","active":true,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":false,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"105/147","active":false,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+decision a4525784c3a567f1
+line |
+line |t:|0
+line |switch|p1b: Mr. Bubbles|Clawitzer, L50, M|105/147
+line |move|p1a: Nibbles|Scald|p2a: Alcremie
+line |-damage|p2a: Alcremie|88/160
+line |-status|p2a: Alcremie|brn
+line |move|p2a: Alcremie|Poison Sting|p2b: Sparky
+line |-supereffective|p2b: Sparky
+line |-damage|p2b: Sparky|61/133
+line |-status|p2b: Sparky|psn
+line |move|p2b: Sparky|Waterfall|p1b: Mr. Bubbles
+line |-resisted|p1b: Mr. Bubbles
+line |-damage|p1b: Mr. Bubbles|97/147
+line |
+line |-damage|p2b: Sparky|45/133 psn|[from] psn
+line |-damage|p2a: Alcremie|78/160 brn|[from] brn
+line |upkeep
+line |turn|5
+line |request|{"active":[{"moves":[{"move":"Poison Powder","id":"poisonpowder","pp":56,"maxpp":56,"target":"normal","disabled":false},{"move":"Scald","id":"scald","pp":20,"maxpp":24,"target":"normal","disabled":false},{"move":"Diamond Storm","id":"diamondstorm","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Brick Break","id":"brickbreak","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Petal Blizzard","id":"petalblizzard","pp":24,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Forest's Curse","id":"forestscurse","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"167/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"97/147","active":true,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":false,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"49/151","active":false,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+decision 983adfdb57dec525
+line |
+line |t:|0
+line |move|p1a: Nibbles|Poison Powder|p2b: Sparky
+line |-immune|p2b: Sparky
+line |move|p1b: Mr. Bubbles|Petal Blizzard|p2a: Alcremie|[spread] p2a,p2b
+line |-activate|p1a: Nibbles|ability: Telepathy
+line |-resisted|p2b: Sparky
+line |-damage|p2a: Alcremie|53/160 brn
+line |-damage|p2b: Sparky|40/133 psn
+line |move|p2a: Alcremie|Poison Sting|p2b: Sparky
+line |-supereffective|p2b: Sparky
+line |-damage|p2b: Sparky|29/133 psn
+line |move|p2b: Sparky|Shelter|p2b: Sparky
+line |-boost|p2b: Sparky|def|2
+line |
+line |-damage|p2b: Sparky|13/133 psn|[from] psn
+line |-damage|p2a: Alcremie|43/160 brn|[from] brn
+line |upkeep
+line |turn|6
+line |request|{"active":[{"moves":[{"move":"Poison Powder","id":"poisonpowder","pp":55,"maxpp":56,"target":"normal","disabled":false},{"move":"Scald","id":"scald","pp":20,"maxpp":24,"target":"normal","disabled":false},{"move":"Diamond Storm","id":"diamondstorm","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Brick Break","id":"brickbreak","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Petal Blizzard","id":"petalblizzard","pp":23,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Forest's Curse","id":"forestscurse","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"167/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"97/147","active":true,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":false,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"49/151","active":false,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+decision 81632659d1472f35
+line |
+line |t:|0
+line |move|p1a: Nibbles|Poison Powder||[still]
+line |-fail|p1a: Nibbles
+line |move|p1b: Mr. Bubbles|Forest's Curse|p2a: Alcremie
+line |-start|p2a: Alcremie|typeadd|Grass|[from] move: Forest's Curse
+line |move|p2a: Alcremie|Flying Press|p2b: Sparky
+line |-damage|p2b: Sparky|0 fnt
+line |faint|p2b: Sparky
+line |
+line |-damage|p2a: Alcremie|33/160 brn|[from] brn
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"167/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"97/147","active":true,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":false,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"49/151","active":false,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+line |
+line |t:|0
+line |switch|p2b: Iron Jugulis|Iron Jugulis, L50, shiny|179/179
+line |turn|7
+line |request|{"active":[{"moves":[{"move":"Poison Powder","id":"poisonpowder","pp":54,"maxpp":56,"target":"normal","disabled":false},{"move":"Scald","id":"scald","pp":20,"maxpp":24,"target":"normal","disabled":false},{"move":"Diamond Storm","id":"diamondstorm","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Brick Break","id":"brickbreak","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Petal Blizzard","id":"petalblizzard","pp":23,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Forest's Curse","id":"forestscurse","pp":30,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"167/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"97/147","active":true,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":false,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"49/151","active":false,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+decision ed6a466e79fd4b76
+line |
+line |t:|0
+line |-end|p2b: Iron Jugulis|Quark Drive|[silent]
+line |switch|p2b: ThisNameIsFarTooLong|Rockruff, L50, M, tera:Bug|138/138
+line |move|p1a: Nibbles|Scald|p2b: ThisNameIsFarTooLong
+line |-damage|p2b: ThisNameIsFarTooLong|35/138
+line |move|p1b: Mr. Bubbles|Forest's Curse||[still]
+line |-fail|p1b: Mr. Bubbles
+line |move|p2a: Alcremie|Flying Press|p1a: Nibbles
+line |-supereffective|p1a: Nibbles
+line |-crit|p1a: Nibbles
+line |-damage|p1a: Nibbles|116/183
+line |
+line |-damage|p2a: Alcremie|23/160 brn|[from] brn
+line |upkeep
+line |turn|8
+line |request|{"active":[{"moves":[{"move":"Poison Powder","id":"poisonpowder","pp":54,"maxpp":56,"target":"normal","disabled":false},{"move":"Scald","id":"scald","pp":19,"maxpp":24,"target":"normal","disabled":false},{"move":"Diamond Storm","id":"diamondstorm","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Brick Break","id":"brickbreak","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Petal Blizzard","id":"petalblizzard","pp":23,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Forest's Curse","id":"forestscurse","pp":29,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"116/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"97/147","active":true,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":false,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"49/151","active":false,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+decision ea1d02451eeec315
+line |
+line |t:|0
+line |switch|p2b: Iron Jugulis|Iron Jugulis, L50, shiny|179/179
+line |move|p1a: Nibbles|Poison Powder|p2b: Iron Jugulis
+line |-status|p2b: Iron Jugulis|psn
+line |move|p1b: Mr. Bubbles|Forest's Curse||[still]
+line |-fail|p1b: Mr. Bubbles
+line |move|p2a: Alcremie|Poison Sting|p1b: Mr. Bubbles
+line |-damage|p1b: Mr. Bubbles|94/147
+line |
+line |-damage|p2b: Iron Jugulis|157/179 psn|[from] psn
+line |-damage|p2a: Alcremie|13/160 brn|[from] brn
+line |upkeep
+line |turn|9
+line |request|{"active":[{"moves":[{"move":"Poison Powder","id":"poisonpowder","pp":53,"maxpp":56,"target":"normal","disabled":false},{"move":"Scald","id":"scald","pp":19,"maxpp":24,"target":"normal","disabled":false},{"move":"Diamond Storm","id":"diamondstorm","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Brick Break","id":"brickbreak","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Petal Blizzard","id":"petalblizzard","pp":23,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Forest's Curse","id":"forestscurse","pp":28,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"116/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"94/147","active":true,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":false,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"49/151","active":false,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+decision 338551bff3143a40
+line |
+line |t:|0
+line |-end|p2b: Iron Jugulis|Quark Drive|[silent]
+line |switch|p2b: ThisNameIsFarTooLong|Rockruff, L50, M, tera:Bug|35/138
+line |switch|p1b: Sir Hops-a-Lot|Snivy, L50, M|151/151
+line |move|p1a: Nibbles|Brick Break|p2b: ThisNameIsFarTooLong
+line |-resisted|p2b: ThisNameIsFarTooLong
+line |-damage|p2b: ThisNameIsFarTooLong|0 fnt
+line |faint|p2b: ThisNameIsFarTooLong
+line |move|p2a: Alcremie|Flying Press|p1a: Nibbles
+line |-supereffective|p1a: Nibbles
+line |-damage|p1a: Nibbles|83/183
+line |
+line |-damage|p2a: Alcremie|3/160 brn|[from] brn
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"83/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":true,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"94/147","active":false,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"49/151","active":false,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+line |
+line |t:|0
+line |switch|p2b: Iron Jugulis|Iron Jugulis, L50, shiny|157/179 psn
+line |turn|10
+line |request|{"active":[{"moves":[{"move":"Poison Powder","id":"poisonpowder","pp":53,"maxpp":56,"target":"normal","disabled":false},{"move":"Scald","id":"scald","pp":19,"maxpp":24,"target":"normal","disabled":false},{"move":"Diamond Storm","id":"diamondstorm","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Brick Break","id":"brickbreak","pp":23,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Shell Side Arm","id":"shellsidearm","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Explosion","id":"explosion","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"83/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"151/151","active":true,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"94/147","active":false,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"49/151","active":false,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+decision 023f5e7a4a8158ec
+line |
+line |t:|0
+line |switch|p1a: Bombirdier|Bombirdier, L50, F|49/151
+line |move|p2b: Iron Jugulis|Work Up|p2b: Iron Jugulis
+line |-boost|p2b: Iron Jugulis|atk|1
+line |-boost|p2b: Iron Jugulis|spa|1
+line |move|p2a: Alcremie|Poison Sting|p2b: Iron Jugulis
+line |-damage|p2b: Iron Jugulis|155/179 psn
+line |move|p1b: Sir Hops-a-Lot|Explosion|p2a: Alcremie|[spread] p1a,p2a,p2b
+line |-damage|p1a: Bombirdier|8/151
+line |-damage|p2a: Alcremie|0 fnt
+line |-damage|p2b: Iron Jugulis|112/179 psn
+line |faint|p1b: Sir Hops-a-Lot
+line |faint|p2a: Alcremie
+line |
+line |-damage|p2b: Iron Jugulis|90/179 psn|[from] psn
+line |upkeep
+line |request|{"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"8/151","active":true,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"0 fnt","active":true,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"94/147","active":false,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"83/183","active":false,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"}]},"noCancel":true}
+decision ab1d3986c4248b17
+line |
+line |t:|0
+line |switch|p1b: Nibbles|Palkia, L50, shiny, tera:Fighting|83/183
+line |turn|11
+line |request|{"active":[{"moves":[{"move":"Gunk Shot","id":"gunkshot","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Poison Powder","id":"poisonpowder","pp":53,"maxpp":56,"target":"normal","disabled":false},{"move":"Scald","id":"scald","pp":19,"maxpp":24,"target":"normal","disabled":false},{"move":"Diamond Storm","id":"diamondstorm","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Brick Break","id":"brickbreak","pp":23,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"8/151","active":true,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"83/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"94/147","active":false,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"0 fnt","active":false,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision c76f56cdc38619e5
+line |
+line |t:|0
+line |switch|p1a: Mr. Bubbles|Clawitzer, L50, M|94/147
+line |move|p1b: Nibbles|Brick Break|p2b: Iron Jugulis
+line |-damage|p2b: Iron Jugulis|41/179 psn
+line |move|p2b: Iron Jugulis|Work Up|p2b: Iron Jugulis
+line |-boost|p2b: Iron Jugulis|atk|1
+line |-boost|p2b: Iron Jugulis|spa|1
+line |
+line |-damage|p2b: Iron Jugulis|19/179 psn|[from] psn
+line |upkeep
+line |turn|12
+line |request|{"active":[{"moves":[{"move":"Petal Blizzard","id":"petalblizzard","pp":23,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Forest's Curse","id":"forestscurse","pp":28,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Poison Powder","id":"poisonpowder","pp":53,"maxpp":56,"target":"normal","disabled":false},{"move":"Scald","id":"scald","pp":19,"maxpp":24,"target":"normal","disabled":false},{"move":"Diamond Storm","id":"diamondstorm","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Brick Break","id":"brickbreak","pp":22,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Mr. Bubbles","details":"Clawitzer, L50, M","condition":"94/147","active":true,"stats":{"atk":90,"def":109,"spa":167,"spd":109,"spe":116},"moves":["petalblizzard","forestscurse"],"baseAbility":"megalauncher","item":"","pokeball":"pokeball","ability":"megalauncher","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Nibbles","details":"Palkia, L50, shiny","condition":"83/183","active":true,"stats":{"atk":140,"def":121,"spa":186,"spd":140,"spe":146},"moves":["poisonpowder","scald","diamondstorm","brickbreak"],"baseAbility":"telepathy","item":"rowapberry","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":"Fighting"},{"ident":"p1: Bombirdier","details":"Bombirdier, L50, F","condition":"8/151","active":false,"stats":{"atk":139,"def":127,"spa":79,"spd":114,"spe":113},"moves":["gunkshot"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Snivy, L50, M","condition":"0 fnt","active":false,"stats":{"atk":66,"def":75,"spa":85,"spd":76,"spe":93},"moves":["shellsidearm","explosion"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision 167ecee6d0e8fbe1
+line |
+line |t:|0
+line |switch|p1b: Bombirdier|Bombirdier, L50, F|8/151
+line |move|p2b: Iron Jugulis|Work Up|p2b: Iron Jugulis
+line |-boost|p2b: Iron Jugulis|atk|1
+line |-boost|p2b: Iron Jugulis|spa|1
+line |move|p1a: Mr. Bubbles|Forest's Curse|p1b: Bombirdier
+line |-start|p1b: Bombirdier|typeadd|Grass|[from] move: Forest's Curse
+line |
+line |-damage|p2b: Iron Jugulis|0 fnt|[from] psn
+line |faint|p2b: Iron Jugulis
+line |-end|p2b: Iron Jugulis|Quark Drive|[silent]
+line |
+line |win|p1
+player p2
+line |t:|0
+line |gametype|doubles
+line |player|p1|p1||
+line |player|p2|p2||
+line |gen|9
+line |tier|[Gen 9] Doubles Custom Game
+line |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+line |clearpoke
+line |poke|p1|Snivy, L50, M|
+line |poke|p1|Clawitzer, L50, M|
+line |poke|p1|Palkia, L50|
+line |poke|p1|Gholdengo, L50|
+line |poke|p1|Alcremie, L50, F|
+line |poke|p1|Bombirdier, L50, F|
+line |poke|p2|Iron Jugulis, L50|
+line |poke|p2|Espurr, L50, M|
+line |poke|p2|Rockruff, L50, M|
+line |poke|p2|Alcremie-Rainbow-Swirl, L50, F|
+line |poke|p2|Noibat, L50, F|
+line |poke|p2|Clefable, L50, F|
+line |teampreview|4
+line |showteam|p1|Sir Hops-a-Lot|Snivy||Contrary|ShellSideArm,Explosion|Quirky|251,7,,163,8,81|M|||50|,,,,,Psychic]Mr. Bubbles|Clawitzer||MegaLauncher|PetalBlizzard,ForestsCurse|Timid|4,62,8,217,,217||||50|,,,,,Ground]Nibbles|Palkia|RowapBerry|Telepathy|PoisonPowder,Scald,DiamondStorm,BrickBreak|Hasty|141,,118,124,2,100|||S|50|,,,,,Fighting]Sparky|Gholdengo||GoodasGold|Glare,MoongeistBeam,HydroPump,AstralBarrage|Mild|106,57,176,1,1,169||||50|,,,,,Fire]Alcremie|||SweetVeil|Celebrate,Instruct,Hypnosis|Lax|73,55,9,29,129,214||||50|,,,,,Poison]Bombirdier|||KeenEye|GunkShot|Jolly|51,126,179,64,69,5||||50|,,,,,Steel
+line |showteam|p2|Iron Jugulis|||QuarkDrive|WorkUp|Bold|79,148,60,5,154,64|||S|50|,,,,,Psychic]Espurr||LeafStone|Infiltrator|RagePowder|Sassy|181,18,5,157,3,146|M|||50|,,,,,Grass]ThisNameIsFarTooLongToKeep|RockruffDusk|EarthPlate|OwnTempo|Defog,Wish,ElectroBall|Careful|146,16,65,13,201,68||||50|,,,,,Bug]Alcremie-Rainbow-Swirl|||SweetVeil|FlyingPress,PoisonSting|Serious|157,184,,,11,158||||50|,,,,,Rock]Sparky|Noibat|RustedSword|Infiltrator|Waterfall,Mist,Shelter|Sassy|142,19,26,52,90,54||||50|,,,,,Dark]Clefable|||CuteCharm|Judgment|Docile|26,179,71,168,43,8|F|||50|,,,,,Rock
+line |request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"179/179","active":true,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Espurr","details":"Espurr, L50, M","condition":"160/160","active":true,"stats":{"atk":70,"def":75,"spa":103,"spd":88,"spe":95},"moves":["ragepowder"],"baseAbility":"infiltrator","item":"leafstone","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"138/138","active":false,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"160/160","active":false,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"133/133","active":false,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Clefable","details":"Clefable, L50, F","condition":"173/173","active":false,"stats":{"atk":112,"def":102,"spa":136,"spd":115,"spe":81},"moves":["judgment"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+decision d42f3cf86954a7bc
+line |
+line |t:|0
+line |teamsize|p1|4
+line |teamsize|p2|4
+line |start
+line |switch|p1a: Nibbles|Palkia, L50, shiny|183/183
+line |switch|p1b: Bombirdier|Bombirdier, L50, F|151/151
+line |switch|p2a: ThisNameIsFarTooLong|Rockruff, L50, M|138/138
+line |switch|p2b: Sparky|Noibat, L50, F|133/133
+line |turn|1
+line |request|{"active":[{"moves":[{"move":"Defog","id":"defog","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Wish","id":"wish","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Electro Ball","id":"electroball","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Bug"},{"moves":[{"move":"Waterfall","id":"waterfall","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Mist","id":"mist","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Shelter","id":"shelter","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Dark"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"138/138","active":true,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"133/133","active":true,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"160/160","active":false,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"179/179","active":false,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision 1dbe5cca94bf9a12
+line |
+line |t:|0
+line |switch|p1b: Mr. Bubbles|Clawitzer, L50, M|147/147
+line |-terastallize|p1a: Nibbles|Fighting
+line |-terastallize|p2a: ThisNameIsFarTooLong|Bug
+line |move|p1a: Nibbles|Scald|p2b: Sparky
+line |-resisted|p2b: Sparky
+line |-damage|p2b: Sparky|73/133
+line |move|p2a: ThisNameIsFarTooLong|Wish|p2a: ThisNameIsFarTooLong
+line |move|p2b: Sparky|Waterfall|p2a: ThisNameIsFarTooLong
+line |-damage|p2a: ThisNameIsFarTooLong|114/138
+line |
+line |upkeep
+line |turn|2
+line |request|{"active":[{"moves":[{"move":"Defog","id":"defog","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Wish","id":"wish","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Electro Ball","id":"electroball","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Waterfall","id":"waterfall","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Mist","id":"mist","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Shelter","id":"shelter","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"114/138","active":true,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"73/133","active":true,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"160/160","active":false,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"179/179","active":false,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision 464ce126d14c95cc
+line |
+line |t:|0
+line |move|p1a: Nibbles|Scald|p1b: Mr. Bubbles
+line |-resisted|p1b: Mr. Bubbles
+line |-damage|p1b: Mr. Bubbles|105/147
+line |move|p1b: Mr. Bubbles|Forest's Curse|p2b: Sparky
+line |-start|p2b: Sparky|typeadd|Grass|[from] move: Forest's Curse
+line |move|p2a: ThisNameIsFarTooLong|Wish||[still]
+line |-fail|p2a: ThisNameIsFarTooLong
+line |move|p2b: Sparky|Waterfall|p1a: Nibbles
+line |-damage|p1a: Nibbles|167/183
+line |
+line |-heal|p2a: ThisNameIsFarTooLong|138/138|[from] move: Wish|[wisher] ThisNameIsFarTooLong
+line |upkeep
+line |turn|3
+line |request|{"active":[{"moves":[{"move":"Defog","id":"defog","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Wish","id":"wish","pp":14,"maxpp":16,"target":"self","disabled":false},{"move":"Electro Ball","id":"electroball","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Waterfall","id":"waterfall","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Mist","id":"mist","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Shelter","id":"shelter","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"138/138","active":true,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"73/133","active":true,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"160/160","active":false,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"179/179","active":false,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision 919ecbc7c5e231fc
+line |
+line |t:|0
+line |switch|p1b: Bombirdier|Bombirdier, L50, F|151/151
+line |switch|p2a: Alcremie|Alcremie-Rainbow-Swirl, L50, F|160/160
+line |move|p1a: Nibbles|Scald|p1b: Bombirdier
+line |-damage|p1b: Bombirdier|64/151
+line |move|p2b: Sparky|Waterfall|p1b: Bombirdier
+line |-damage|p1b: Bombirdier|49/151
+line |
+line |upkeep
+line |turn|4
+line |request|{"active":[{"moves":[{"move":"Flying Press","id":"flyingpress","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":56,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Waterfall","id":"waterfall","pp":21,"maxpp":24,"target":"normal","disabled":false},{"move":"Mist","id":"mist","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Shelter","id":"shelter","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"160/160","active":true,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"73/133","active":true,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"138/138","active":false,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"179/179","active":false,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision 8c2c90e3d4e6e51c
+line |
+line |t:|0
+line |switch|p1b: Mr. Bubbles|Clawitzer, L50, M|105/147
+line |move|p1a: Nibbles|Scald|p2a: Alcremie
+line |-damage|p2a: Alcremie|88/160
+line |-status|p2a: Alcremie|brn
+line |move|p2a: Alcremie|Poison Sting|p2b: Sparky
+line |-supereffective|p2b: Sparky
+line |-damage|p2b: Sparky|61/133
+line |-status|p2b: Sparky|psn
+line |move|p2b: Sparky|Waterfall|p1b: Mr. Bubbles
+line |-resisted|p1b: Mr. Bubbles
+line |-damage|p1b: Mr. Bubbles|97/147
+line |
+line |-damage|p2b: Sparky|45/133 psn|[from] psn
+line |-damage|p2a: Alcremie|78/160 brn|[from] brn
+line |upkeep
+line |turn|5
+line |request|{"active":[{"moves":[{"move":"Flying Press","id":"flyingpress","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":55,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Waterfall","id":"waterfall","pp":20,"maxpp":24,"target":"normal","disabled":false},{"move":"Mist","id":"mist","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Shelter","id":"shelter","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"78/160 brn","active":true,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"45/133 psn","active":true,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"138/138","active":false,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"179/179","active":false,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision 222c422e8aa4c42c
+line |
+line |t:|0
+line |move|p1a: Nibbles|Poison Powder|p2b: Sparky
+line |-immune|p2b: Sparky
+line |move|p1b: Mr. Bubbles|Petal Blizzard|p2a: Alcremie|[spread] p2a,p2b
+line |-activate|p1a: Nibbles|ability: Telepathy
+line |-resisted|p2b: Sparky
+line |-damage|p2a: Alcremie|53/160 brn
+line |-damage|p2b: Sparky|40/133 psn
+line |move|p2a: Alcremie|Poison Sting|p2b: Sparky
+line |-supereffective|p2b: Sparky
+line |-damage|p2b: Sparky|29/133 psn
+line |move|p2b: Sparky|Shelter|p2b: Sparky
+line |-boost|p2b: Sparky|def|2
+line |
+line |-damage|p2b: Sparky|13/133 psn|[from] psn
+line |-damage|p2a: Alcremie|43/160 brn|[from] brn
+line |upkeep
+line |turn|6
+line |request|{"active":[{"moves":[{"move":"Flying Press","id":"flyingpress","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":54,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Waterfall","id":"waterfall","pp":20,"maxpp":24,"target":"normal","disabled":false},{"move":"Mist","id":"mist","pp":48,"maxpp":48,"target":"allySide","disabled":false},{"move":"Shelter","id":"shelter","pp":15,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"43/160 brn","active":true,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"13/133 psn","active":true,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"138/138","active":false,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"179/179","active":false,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+decision 9e7da5a895f12ce7
+line |
+line |t:|0
+line |move|p1a: Nibbles|Poison Powder||[still]
+line |-fail|p1a: Nibbles
+line |move|p1b: Mr. Bubbles|Forest's Curse|p2a: Alcremie
+line |-start|p2a: Alcremie|typeadd|Grass|[from] move: Forest's Curse
+line |move|p2a: Alcremie|Flying Press|p2b: Sparky
+line |-damage|p2b: Sparky|0 fnt
+line |faint|p2b: Sparky
+line |
+line |-damage|p2a: Alcremie|33/160 brn|[from] brn
+line |upkeep
+line |request|{"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"33/160 brn","active":true,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"0 fnt","active":true,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"138/138","active":false,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"179/179","active":false,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]},"noCancel":true}
+decision 8573f745bb58f6f7
+line |
+line |t:|0
+line |switch|p2b: Iron Jugulis|Iron Jugulis, L50, shiny|179/179
+line |turn|7
+line |request|{"active":[{"moves":[{"move":"Flying Press","id":"flyingpress","pp":15,"maxpp":16,"target":"any","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":54,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Work Up","id":"workup","pp":48,"maxpp":48,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"33/160 brn","active":true,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"179/179","active":true,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"138/138","active":false,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"0 fnt","active":false,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision c4a0ae988b6e9d2b
+line |
+line |t:|0
+line |-end|p2b: Iron Jugulis|Quark Drive|[silent]
+line |switch|p2b: ThisNameIsFarTooLong|Rockruff, L50, M, tera:Bug|138/138
+line |move|p1a: Nibbles|Scald|p2b: ThisNameIsFarTooLong
+line |-damage|p2b: ThisNameIsFarTooLong|35/138
+line |move|p1b: Mr. Bubbles|Forest's Curse||[still]
+line |-fail|p1b: Mr. Bubbles
+line |move|p2a: Alcremie|Flying Press|p1a: Nibbles
+line |-supereffective|p1a: Nibbles
+line |-crit|p1a: Nibbles
+line |-damage|p1a: Nibbles|116/183
+line |
+line |-damage|p2a: Alcremie|23/160 brn|[from] brn
+line |upkeep
+line |turn|8
+line |request|{"active":[{"moves":[{"move":"Flying Press","id":"flyingpress","pp":14,"maxpp":16,"target":"any","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":54,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Defog","id":"defog","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Wish","id":"wish","pp":14,"maxpp":16,"target":"self","disabled":false},{"move":"Electro Ball","id":"electroball","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"23/160 brn","active":true,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"35/138","active":true,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"179/179","active":false,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"0 fnt","active":false,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision c04d530a08a635d2
+line |
+line |t:|0
+line |switch|p2b: Iron Jugulis|Iron Jugulis, L50, shiny|179/179
+line |move|p1a: Nibbles|Poison Powder|p2b: Iron Jugulis
+line |-status|p2b: Iron Jugulis|psn
+line |move|p1b: Mr. Bubbles|Forest's Curse||[still]
+line |-fail|p1b: Mr. Bubbles
+line |move|p2a: Alcremie|Poison Sting|p1b: Mr. Bubbles
+line |-damage|p1b: Mr. Bubbles|94/147
+line |
+line |-damage|p2b: Iron Jugulis|157/179 psn|[from] psn
+line |-damage|p2a: Alcremie|13/160 brn|[from] brn
+line |upkeep
+line |turn|9
+line |request|{"active":[{"moves":[{"move":"Flying Press","id":"flyingpress","pp":14,"maxpp":16,"target":"any","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":53,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Work Up","id":"workup","pp":48,"maxpp":48,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"13/160 brn","active":true,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"157/179 psn","active":true,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"35/138","active":false,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"0 fnt","active":false,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 203d5c113f8de4d0
+line |
+line |t:|0
+line |-end|p2b: Iron Jugulis|Quark Drive|[silent]
+line |switch|p2b: ThisNameIsFarTooLong|Rockruff, L50, M, tera:Bug|35/138
+line |switch|p1b: Sir Hops-a-Lot|Snivy, L50, M|151/151
+line |move|p1a: Nibbles|Brick Break|p2b: ThisNameIsFarTooLong
+line |-resisted|p2b: ThisNameIsFarTooLong
+line |-damage|p2b: ThisNameIsFarTooLong|0 fnt
+line |faint|p2b: ThisNameIsFarTooLong
+line |move|p2a: Alcremie|Flying Press|p1a: Nibbles
+line |-supereffective|p1a: Nibbles
+line |-damage|p1a: Nibbles|83/183
+line |
+line |-damage|p2a: Alcremie|3/160 brn|[from] brn
+line |upkeep
+line |request|{"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"3/160 brn","active":true,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"0 fnt","active":true,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"157/179 psn","active":false,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"0 fnt","active":false,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]},"noCancel":true}
+decision 2d6da2268d502707
+line |
+line |t:|0
+line |switch|p2b: Iron Jugulis|Iron Jugulis, L50, shiny|157/179 psn
+line |turn|10
+line |request|{"active":[{"moves":[{"move":"Flying Press","id":"flyingpress","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":53,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Work Up","id":"workup","pp":48,"maxpp":48,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"3/160 brn","active":true,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"157/179 psn","active":true,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"0 fnt","active":false,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"0 fnt","active":false,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 14459d8bfc1ca590
+line |
+line |t:|0
+line |switch|p1a: Bombirdier|Bombirdier, L50, F|49/151
+line |move|p2b: Iron Jugulis|Work Up|p2b: Iron Jugulis
+line |-boost|p2b: Iron Jugulis|atk|1
+line |-boost|p2b: Iron Jugulis|spa|1
+line |move|p2a: Alcremie|Poison Sting|p2b: Iron Jugulis
+line |-damage|p2b: Iron Jugulis|155/179 psn
+line |move|p1b: Sir Hops-a-Lot|Explosion|p2a: Alcremie|[spread] p1a,p2a,p2b
+line |-damage|p1a: Bombirdier|8/151
+line |-damage|p2a: Alcremie|0 fnt
+line |-damage|p2b: Iron Jugulis|112/179 psn
+line |faint|p1b: Sir Hops-a-Lot
+line |faint|p2a: Alcremie
+line |
+line |-damage|p2b: Iron Jugulis|90/179 psn|[from] psn
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":true,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"90/179 psn","active":true,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"0 fnt","active":false,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"0 fnt","active":false,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+line |
+line |t:|0
+line |switch|p1b: Nibbles|Palkia, L50, shiny, tera:Fighting|83/183
+line |turn|11
+line |request|{"active":[{"moves":[{"move":"Flying Press","id":"flyingpress","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":52,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Work Up","id":"workup","pp":47,"maxpp":48,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":true,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"90/179 psn","active":true,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"0 fnt","active":false,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"0 fnt","active":false,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 2631c41a327aae9b
+line |
+line |t:|0
+line |switch|p1a: Mr. Bubbles|Clawitzer, L50, M|94/147
+line |move|p1b: Nibbles|Brick Break|p2b: Iron Jugulis
+line |-damage|p2b: Iron Jugulis|41/179 psn
+line |move|p2b: Iron Jugulis|Work Up|p2b: Iron Jugulis
+line |-boost|p2b: Iron Jugulis|atk|1
+line |-boost|p2b: Iron Jugulis|spa|1
+line |
+line |-damage|p2b: Iron Jugulis|19/179 psn|[from] psn
+line |upkeep
+line |turn|12
+line |request|{"active":[{"moves":[{"move":"Flying Press","id":"flyingpress","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":52,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Work Up","id":"workup","pp":46,"maxpp":48,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":true,"stats":{"atk":103,"def":95,"spa":130,"spd":142,"spe":104},"moves":["flyingpress","poisonsting"],"baseAbility":"sweetveil","item":"","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Iron Jugulis","details":"Iron Jugulis, L50, shiny","condition":"19/179 psn","active":true,"stats":{"atk":107,"def":125,"spa":143,"spd":119,"spe":136},"moves":["workup"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Rockruff, L50, M","condition":"0 fnt","active":false,"stats":{"atk":87,"def":68,"spa":46,"spd":93,"spe":89},"moves":["defog","wish","electroball"],"baseAbility":"owntempo","item":"earthplate","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Sparky","details":"Noibat, L50, F","condition":"0 fnt","active":false,"stats":{"atk":52,"def":58,"spa":72,"spd":78,"spe":73},"moves":["waterfall","mist","shelter"],"baseAbility":"infiltrator","item":"rustedsword","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 54ab7736768aef83
+line |
+line |t:|0
+line |switch|p1b: Bombirdier|Bombirdier, L50, F|8/151
+line |move|p2b: Iron Jugulis|Work Up|p2b: Iron Jugulis
+line |-boost|p2b: Iron Jugulis|atk|1
+line |-boost|p2b: Iron Jugulis|spa|1
+line |move|p1a: Mr. Bubbles|Forest's Curse|p1b: Bombirdier
+line |-start|p1b: Bombirdier|typeadd|Grass|[from] move: Forest's Curse
+line |
+line |-damage|p2b: Iron Jugulis|0 fnt|[from] psn
+line |faint|p2b: Iron Jugulis
+line |-end|p2b: Iron Jugulis|Quark Drive|[silent]
+line |
+line |win|p1

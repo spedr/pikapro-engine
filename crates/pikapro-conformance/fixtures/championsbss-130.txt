@@ -1,0 +1,400 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed b37d 700e a854 9ffa
+genders drawn
+team p1
+Vivillon-Savanna (M) @ Aspear Berry
+Ability: Compound Eyes
+Level: 50
+Tera Type: Bug
+EVs: 22 HP / 23 Atk / 1 Def / 11 SpA / 7 SpD / 1 Spe
+Sassy Nature
+- Ice Spinner
+- Aura Sphere
+- Pollen Puff
+- Sludge Bomb
+
+Rotom-Mow @ Psychic Seed
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Tera Type: Ghost
+EVs: 8 HP / 18 Atk / 1 Def / 6 SpA / 27 SpD / 5 Spe
+Bashful Nature
+- Magnetic Flux
+
+Avalugg-Hisui (M) @ Babiri Berry
+Ability: Sturdy
+Level: 50
+Tera Type: Stellar
+EVs: 24 Atk / 3 Def / 7 SpA / 2 SpD / 9 Spe
+Bashful Nature
+- Brutal Swing
+- Outrage
+
+Big Tony's Pal (Florges)
+Ability: Flower Veil
+Level: 50
+Tera Type: Fairy
+EVs: 2 Atk / 20 Def / 19 SpD / 17 Spe
+Quirky Nature
+- Flamethrower
+- Flying Press
+- Iron Head
+- Eerie Spell
+
+Aerodactyl (M) @ Passho Berry
+Ability: Rock Head
+Level: 50
+Tera Type: Poison
+EVs: 4 Atk / 17 SpA / 25 SpD / 20 Spe
+Quiet Nature
+- Belly Drum
+- Metal Sound
+- Grassy Terrain
+- Phantom Force
+
+Squawkabilly-Yellow
+Ability: Sheer Force
+Level: 50
+Tera Type: Dark
+EVs: 32 HP / 22 SpA / 5 SpD / 5 Spe
+Bashful Nature
+- Armor Cannon
+- Crabhammer
+- Charge
+end
+team p2
+Espeon
+Ability: Synchronize
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 10 HP / 10 Def / 19 SpA / 14 SpD / 13 Spe
+Serious Nature
+- Scary Face
+- Flatter
+
+Victreebel @ Victreebelite
+Ability: Chlorophyll
+Level: 50
+Tera Type: Psychic
+EVs: 4 HP / 1 Atk / 21 Def / 19 SpA / 17 SpD / 3 Spe
+Bashful Nature
+- Covet
+- Darkest Lariat
+- Pluck
+
+Meowscarada (M)
+Ability: Protean
+Level: 50
+Tera Type: Normal
+EVs: 13 HP / 19 Atk / 6 Def / 11 SpD / 15 Spe
+Sassy Nature
+- Wild Charge
+- Zing Zap
+- Psyshock
+- Electric Terrain
+
+Sir Hops-a-Lot (Heliolisk) @ Wacan Berry
+Ability: Dry Skin
+Level: 50
+Tera Type: Flying
+EVs: 2 HP / 28 Atk / 19 Def / 9 SpD
+Mild Nature
+- Sucker Punch
+- Swords Dance
+- Tailwind
+- Hex
+
+Vivillon-Polar @ Colbur Berry
+Ability: Friend Guard
+Level: 50
+Tera Type: Electric
+EVs: 28 HP / 21 Def / 3 SpA / 3 SpD / 6 Spe
+Calm Nature
+- Low Sweep
+- Thunder Fang
+- Poltergeist
+- Sky Attack
+
+Ninetales-Alola @ Air Balloon
+Ability: Snow Warning
+Level: 50
+Tera Type: Stellar
+EVs: 11 HP / 2 Atk / 1 Def / 21 SpD / 31 Spe
+Sassy Nature
+- Toxic
+- Extreme Speed
+- Stomping Tantrum
+- Reversal
+end
+choice p1 team [1, 2, 3]
+choice p2 team 235
+choice p1 move 3
+choice p2 move 3 mega
+choice p1 move 1
+choice p2 move covet
+choice p1 move 2
+choice p2 move 1
+choice p1 switch 3
+choice p2 switch 2
+choice p1 move 2
+choice p2 move 4
+choice p1 move 1
+choice p2 switch 3
+choice p1 move 2
+choice p2 move 3
+choice p1 move 1
+choice p2 move 1
+choice p1 move 2
+choice p2 move 1
+choice p2 switch 2
+choice p1 move 1
+choice p2 move 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Vivillon-Savanna, L50, M|
+expect |poke|p1|Rotom-Mow, L50, shiny|
+expect |poke|p1|Avalugg-Hisui, L50, M|
+expect |poke|p1|Florges, L50, F|
+expect |poke|p1|Aerodactyl, L50, M|
+expect |poke|p1|Squawkabilly-Yellow, L50, M|
+expect |poke|p2|Espeon, L50, F, shiny|
+expect |poke|p2|Victreebel, L50, F|
+expect |poke|p2|Meowscarada, L50, M|
+expect |poke|p2|Heliolisk, L50, F|
+expect |poke|p2|Vivillon-Polar, L50, F|
+expect |poke|p2|Ninetales-Alola, L50, F|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Savanna, L50, M|177/177
+expect |switch|p1a: Vivillon|Vivillon-Savanna, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Victreebel|Victreebel, L50, F|159/159
+expect |switch|p2a: Victreebel|Victreebel, L50, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |detailschange|p2a: Victreebel|Victreebel-Mega, L50, F
+expect |-mega|p2a: Victreebel|Victreebel|Victreebelite
+expect |move|p1a: Vivillon|Pollen Puff|p2a: Victreebel
+expect |rng|100|95
+expect |rng|24|22
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Victreebel|104/159
+expect |-damage|p2a: Victreebel|65/100
+expect |move|p2a: Victreebel|Pluck|p1a: Vivillon
+expect |rng|100|7
+expect |rng|24|1
+expect |rng|16|5
+expect |-supereffective|p1a: Vivillon|1
+expect |split|p1
+expect |-damage|p1a: Vivillon|71/177
+expect |-damage|p1a: Vivillon|40/100
+expect |-enditem|p1a: Vivillon|Aspear Berry|[from] stealeat|[move] Pluck|[of] p2a: Victreebel
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Vivillon|Ice Spinner|p2a: Victreebel
+expect |rng|100|60
+expect |rng|24|22
+expect |rng|16|4
+expect |-supereffective|p2a: Victreebel|1
+expect |split|p2
+expect |-damage|p2a: Victreebel|52/159
+expect |-damage|p2a: Victreebel|32/100
+expect |move|p2a: Victreebel|Covet|p1a: Vivillon
+expect |rng|100|41
+expect |rng|24|5
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Vivillon|22/177
+expect |-damage|p1a: Vivillon|12/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Vivillon|Aura Sphere|p2a: Victreebel
+expect |rng|24|13
+expect |rng|16|14
+expect |-resisted|p2a: Victreebel|1
+expect |split|p2
+expect |-damage|p2a: Victreebel|38/159
+expect |-damage|p2a: Victreebel|23/100
+expect |move|p2a: Victreebel|Covet|p1a: Vivillon
+expect |rng|100|93
+expect |rng|24|9
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Vivillon|0 fnt
+expect |-damage|p1a: Vivillon|0 fnt
+expect |faint|p1a: Vivillon
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Avalugg|Avalugg-Hisui, L50, M|170/170
+expect |switch|p1a: Avalugg|Avalugg-Hisui, L50, M|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Meowscarada|Meowscarada, L50, M|164/164
+expect |switch|p2a: Meowscarada|Meowscarada, L50, M|100/100
+expect |move|p1a: Avalugg|Outrage|p2a: Meowscarada
+expect |rng|100|90
+expect |rng|24|11
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Meowscarada|72/164
+expect |-damage|p2a: Meowscarada|43/100
+expect |rng|2|0
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2a: Meowscarada|Electric Terrain|p2a: Meowscarada
+expect |-start|p2a: Meowscarada|typechange|Electric|[from] ability: Protean
+expect |-fieldstart|move: Electric Terrain
+expect |move|p1a: Avalugg|Outrage|p2a: Meowscarada|[from] lockedmove
+expect |rng|100|83
+expect |rng|24|14
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Meowscarada|0 fnt
+expect |-damage|p2a: Meowscarada|0 fnt
+expect |faint|p2a: Meowscarada
+expect |-start|p1a: Avalugg|confusion|[fatigue]
+expect |rng|4|3
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-Polar, L50, F|183/183
+expect |switch|p2a: Vivillon|Vivillon-Polar, L50, F|100/100
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Vivillon|Poltergeist|p1a: Avalugg
+expect |rng|100|85
+expect |-activate|p1a: Avalugg|move: Poltergeist|Babiri Berry
+expect |rng|24|16
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Avalugg|155/170
+expect |-damage|p1a: Avalugg|91/100
+expect |-activate|p1a: Avalugg|confusion
+expect |rng|100|81
+expect |move|p1a: Avalugg|Outrage|p2a: Vivillon
+expect |rng|100|26
+expect |rng|24|19
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Vivillon|86/183
+expect |-damage|p2a: Vivillon|46/100
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Vivillon|Low Sweep|p1a: Avalugg
+expect |rng|100|91
+expect |rng|24|22
+expect |rng|16|10
+expect |-supereffective|p1a: Avalugg|2
+expect |split|p1
+expect |-damage|p1a: Avalugg|119/170
+expect |-damage|p1a: Avalugg|70/100
+expect |rng|100|34
+expect |-unboost|p1a: Avalugg|spe|1
+expect |-activate|p1a: Avalugg|confusion
+expect |rng|100|19
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Avalugg|104/170|[from] confusion
+expect |-damage|p1a: Avalugg|61/100|[from] confusion
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2a: Vivillon|Low Sweep|p1a: Avalugg
+expect |rng|100|40
+expect |rng|24|4
+expect |rng|16|5
+expect |-supereffective|p1a: Avalugg|2
+expect |split|p1
+expect |-damage|p1a: Avalugg|68/170
+expect |-damage|p1a: Avalugg|40/100
+expect |rng|100|53
+expect |-unboost|p1a: Avalugg|spe|1
+expect |-activate|p1a: Avalugg|confusion
+expect |rng|100|85
+expect |move|p1a: Avalugg|Outrage|p2a: Vivillon
+expect |rng|100|62
+expect |rng|24|14
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Vivillon|0 fnt
+expect |-damage|p2a: Vivillon|0 fnt
+expect |rng|2|1
+expect |faint|p2a: Vivillon
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Victreebel|Victreebel-Mega, L50, F|38/159
+expect |switch|p2a: Victreebel|Victreebel-Mega, L50, F|23/100
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p2a: Victreebel|Darkest Lariat|p1a: Avalugg
+expect |rng|100|23
+expect |rng|24|13
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Avalugg|42/170
+expect |-damage|p1a: Avalugg|24/100
+expect |-activate|p1a: Avalugg|confusion
+expect |rng|100|36
+expect |move|p1a: Avalugg|Outrage|p2a: Victreebel|[from] lockedmove
+expect |rng|100|60
+expect |rng|24|19
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Victreebel|0 fnt
+expect |-damage|p2a: Victreebel|0 fnt
+expect |split|p1
+expect |-damage|p1a: Avalugg|4/170|[from] ability: Innards Out|[of] p2a: Victreebel
+expect |-damage|p1a: Avalugg|2/100|[from] ability: Innards Out|[of] p2a: Victreebel
+expect |faint|p2a: Victreebel
+expect |
+expect |win|p1

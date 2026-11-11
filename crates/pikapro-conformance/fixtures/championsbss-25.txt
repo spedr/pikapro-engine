@@ -1,0 +1,593 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed 9e6c ccc1 3689 36a5
+genders drawn
+team p1
+Manectric (M) @ Manectite
+Ability: Lightning Rod
+Level: 50
+Shiny: Yes
+Tera Type: Bug
+EVs: 26 HP / 13 SpA / 26 SpD / 1 Spe
+Lax Nature
+- Nuzzle
+- Hydro Pump
+- Feather Dance
+
+Tinkaton
+Ability: Own Tempo
+Level: 50
+Shiny: Yes
+Tera Type: Fire
+EVs: 14 HP / 2 Atk / 4 Def / 6 SpA / 28 SpD / 6 Spe
+Naive Nature
+- Mean Look
+- Toxic Spikes
+- Aura Sphere
+- Trailblaze
+
+Kingambit (M) @ Chesto Berry
+Ability: Defiant
+Level: 50
+Tera Type: Flying
+EVs: 17 HP / 13 Atk / 4 Def / 1 SpA / 22 SpD / 5 Spe
+Naughty Nature
+- Mean Look
+- Parabolic Charge
+- Spirit Break
+
+Meowstic (M) @ Meowsticite
+Ability: Keen Eye
+Level: 50
+Shiny: Yes
+Tera Type: Rock
+EVs: 20 HP / 2 Atk / 12 Def / 2 SpA / 1 SpD / 27 Spe
+Gentle Nature
+- Breaking Swipe
+- Bite
+
+Umbreon (F)
+Ability: Synchronize
+Level: 50
+Tera Type: Ice
+EVs: 6 HP / 13 Atk / 1 Def / 13 SpA / 8 SpD / 22 Spe
+Rash Nature
+- Misty Terrain
+- Perish Song
+- Follow Me
+
+Zoroark-Hisui (F) @ Black Belt
+Ability: Illusion
+Level: 50
+Tera Type: Normal
+EVs: 17 HP / 3 Atk / 20 Def / 12 SpA / 14 Spe
+Lonely Nature
+- Follow Me
+end
+team p2
+Nibbles (Torkoal) @ Scope Lens
+Ability: Shell Armor
+Level: 50
+Shiny: Yes
+Tera Type: Ice
+EVs: 23 HP / 5 Def / 2 SpA / 24 Spe
+Timid Nature
+- Icicle Spear
+
+Meganium (M) @ Meganiumite
+Ability: Leaf Guard
+Level: 50
+Tera Type: Grass
+EVs: 31 HP / 2 Atk / 31 SpA / 2 Spe
+Lax Nature
+- Dragon Claw
+- Aerial Ace
+- Fire Lash
+- Focus Punch
+
+Gliscor
+Ability: Hyper Cutter
+Level: 50
+Tera Type: Psychic
+EVs: 9 Atk / 27 Def / 24 SpD / 5 Spe
+Serious Nature
+- Flip Turn
+
+Vivillon-River
+Ability: Shield Dust
+Level: 50
+Shiny: Yes
+Tera Type: Psychic
+EVs: 3 HP / 28 Atk / 1 Def / 5 SpD / 29 Spe
+Serious Nature
+- Draco Meteor
+
+Sylveon (M) @ Heat Rock
+Ability: Pixilate
+Level: 50
+Shiny: Yes
+Tera Type: Fighting
+EVs: 1 HP / 5 Atk / 9 Def / 18 SpA / 11 SpD / 21 Spe
+Sassy Nature
+- Last Resort
+- Simple Beam
+
+Arcanine (F)
+Ability: Intimidate
+Level: 50
+Shiny: Yes
+Tera Type: Stellar
+EVs: 7 HP / 10 Atk / 1 Def / 24 SpA / 17 SpD / 6 Spe
+Mild Nature
+- Sleep Powder
+end
+choice p1 team 315
+choice p2 team 164
+choice p1 move Mean Look
+choice p2 switch 2
+choice p1 move 2
+choice p2 move 1
+choice p1 move 3
+choice p2 move 1
+choice p1 switch 2
+choice p2 move 1
+choice p1 default
+choice p2 switch 2
+choice p1 move 2
+choice p2 switch 2
+choice p1 move 2
+choice p2 switch 2
+choice p1 move 1 mega
+choice p2 switch 2
+choice p1 default
+choice p2 switch vivillon-river
+choice p1 switch 3
+choice p2 default
+choice p1 move 2
+choice p2 default
+choice p1 switch 2
+choice p2 move 1
+choice p1 move spiritbreak
+choice p2 switch 3
+choice p2 switch 2
+choice p1 move 2
+choice p2 move 1
+choice p1 move spiritbreak
+choice p2 switch vivillon-river
+choice p1 switch 3
+choice p2 default
+choice p1 switch Kingambit
+choice p2 move Draco Meteor
+choice p1 move Parabolic Charge
+choice p2 move dracometeor
+choice p2 switch Nibbles
+choice p1 switch 3
+choice p2 move 1
+choice p1 move hydropump
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Manectric, L50, M, shiny|
+expect |poke|p1|Tinkaton, L50, F, shiny|
+expect |poke|p1|Kingambit, L50, M|
+expect |poke|p1|Meowstic, L50, M, shiny|
+expect |poke|p1|Umbreon, L50, F|
+expect |poke|p1|Zoroark-Hisui, L50, F|
+expect |poke|p2|Torkoal, L50, F, shiny|
+expect |poke|p2|Meganium, L50, M|
+expect |poke|p2|Gliscor, L50, M|
+expect |poke|p2|Vivillon-River, L50, M, shiny|
+expect |poke|p2|Sylveon, L50, M, shiny|
+expect |poke|p2|Arcanine, L50, F, shiny|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Kingambit|Kingambit, L50, M|192/192
+expect |switch|p1a: Kingambit|Kingambit, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Nibbles|Torkoal, L50, F, shiny|168/168
+expect |switch|p2a: Nibbles|Torkoal, L50, F, shiny|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Arcanine|Arcanine, L50, F, shiny|172/172
+expect |switch|p2a: Arcanine|Arcanine, L50, F, shiny|100/100
+expect |-ability|p2a: Arcanine|Intimidate|boost
+expect |-unboost|p1a: Kingambit|atk|1
+expect |-ability|p1a: Kingambit|Defiant|boost
+expect |-boost|p1a: Kingambit|atk|2
+expect |move|p1a: Kingambit|Mean Look|p2a: Arcanine
+expect |-activate|p2a: Arcanine|trapped
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Arcanine|Sleep Powder|p1a: Kingambit
+expect |rng|100|23
+expect |-status|p1a: Kingambit|slp|[from] move: Sleep Powder
+expect |rng|3|2
+expect |-enditem|p1a: Kingambit|Chesto Berry|[eat]
+expect |-curestatus|p1a: Kingambit|slp|[msg]
+expect |move|p1a: Kingambit|Parabolic Charge|p2a: Arcanine
+expect |rng|100|50
+expect |rng|24|17
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Arcanine|154/172
+expect |-damage|p2a: Arcanine|89/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Arcanine|Sleep Powder|p1a: Kingambit
+expect |rng|100|42
+expect |-status|p1a: Kingambit|slp|[from] move: Sleep Powder
+expect |rng|3|0
+expect |cant|p1a: Kingambit|slp
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Manectric|Manectric, L50, M, shiny|171/171
+expect |switch|p1a: Manectric|Manectric, L50, M, shiny|100/100
+expect |move|p2a: Arcanine|Sleep Powder|p1a: Manectric|[miss]
+expect |rng|100|82
+expect |-miss|p2a: Arcanine|p1a: Manectric
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Nibbles|Torkoal, L50, F, shiny|168/168
+expect |switch|p2a: Nibbles|Torkoal, L50, F, shiny|100/100
+expect |move|p1a: Manectric|Nuzzle|p2a: Nibbles
+expect |rng|100|94
+expect |rng|24|12
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Nibbles|159/168
+expect |-damage|p2a: Nibbles|94/100
+expect |rng|100|27
+expect |-status|p2a: Nibbles|par
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Arcanine|Arcanine, L50, F, shiny|154/172
+expect |switch|p2a: Arcanine|Arcanine, L50, F, shiny|89/100
+expect |-ability|p2a: Arcanine|Intimidate|boost
+expect |-unboost|p1a: Manectric|atk|1
+expect |move|p1a: Manectric|Hydro Pump|p2a: Arcanine
+expect |rng|100|74
+expect |rng|24|3
+expect |rng|16|13
+expect |-supereffective|p2a: Arcanine|1
+expect |split|p2
+expect |-damage|p2a: Arcanine|52/172
+expect |-damage|p2a: Arcanine|30/100
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Nibbles|Torkoal, L50, F, shiny|159/168 par
+expect |switch|p2a: Nibbles|Torkoal, L50, F, shiny|94/100 par
+expect |move|p1a: Manectric|Hydro Pump|p2a: Nibbles|[miss]
+expect |rng|100|87
+expect |-miss|p1a: Manectric|p2a: Nibbles
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Arcanine|Arcanine, L50, F, shiny|52/172
+expect |switch|p2a: Arcanine|Arcanine, L50, F, shiny|30/100
+expect |-ability|p2a: Arcanine|Intimidate|boost
+expect |-unboost|p1a: Manectric|atk|1
+expect |detailschange|p1a: Manectric|Manectric-Mega, L50, M, shiny
+expect |-mega|p1a: Manectric|Manectric|Manectite
+expect |-ability|p1a: Manectric|Intimidate|boost
+expect |-unboost|p2a: Arcanine|atk|1
+expect |move|p1a: Manectric|Nuzzle|p2a: Arcanine
+expect |rng|100|57
+expect |rng|24|0
+expect |rng|16|7
+expect |-crit|p2a: Arcanine
+expect |split|p2
+expect |-damage|p2a: Arcanine|31/172
+expect |-damage|p2a: Arcanine|18/100
+expect |rng|100|38
+expect |-status|p2a: Arcanine|par
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-River, L50, M, shiny|158/158
+expect |switch|p2a: Vivillon|Vivillon-River, L50, M, shiny|100/100
+expect |move|p1a: Manectric|Nuzzle|p2a: Vivillon
+expect |rng|100|54
+expect |rng|24|12
+expect |rng|16|13
+expect |-supereffective|p2a: Vivillon|1
+expect |split|p2
+expect |-damage|p2a: Vivillon|140/158
+expect |-damage|p2a: Vivillon|88/100
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Umbreon|Umbreon, L50, F|176/176
+expect |switch|p1a: Umbreon|Umbreon, L50, F|100/100
+expect |move|p2a: Vivillon|Draco Meteor|p1a: Umbreon
+expect |rng|100|43
+expect |rng|24|11
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Umbreon|136/176
+expect |-damage|p1a: Umbreon|77/100
+expect |rng|100|55
+expect |-unboost|p2a: Vivillon|spa|2
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p2a: Vivillon|Draco Meteor|p1a: Umbreon
+expect |rng|100|15
+expect |rng|24|2
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Umbreon|114/176
+expect |-damage|p1a: Umbreon|64/100
+expect |rng|100|96
+expect |-unboost|p2a: Vivillon|spa|2
+expect |move|p1a: Umbreon|Perish Song|p1a: Umbreon
+expect |-start|p1a: Umbreon|perish3|[silent]
+expect |-start|p2a: Vivillon|perish3|[silent]
+expect |-fieldactivate|move: Perish Song
+expect |
+expect |-start|p2a: Vivillon|perish3
+expect |-start|p1a: Umbreon|perish3
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Kingambit|Kingambit, L50, M|192/192 slp
+expect |switch|p1a: Kingambit|Kingambit, L50, M|100/100 slp
+expect |move|p2a: Vivillon|Draco Meteor|p1a: Kingambit
+expect |rng|100|73
+expect |rng|24|23
+expect |rng|16|0
+expect |-resisted|p1a: Kingambit|1
+expect |split|p1
+expect |-damage|p1a: Kingambit|182/192 slp
+expect |-damage|p1a: Kingambit|94/100 slp
+expect |rng|100|65
+expect |-unboost|p2a: Vivillon|spa|2
+expect |
+expect |-start|p2a: Vivillon|perish2
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Arcanine|Arcanine, L50, F, shiny|31/172 par
+expect |switch|p2a: Arcanine|Arcanine, L50, F, shiny|18/100 par
+expect |-ability|p2a: Arcanine|Intimidate|boost
+expect |-unboost|p1a: Kingambit|atk|1
+expect |-ability|p1a: Kingambit|Defiant|boost
+expect |-boost|p1a: Kingambit|atk|2
+expect |-curestatus|p1a: Kingambit|slp|[msg]
+expect |move|p1a: Kingambit|Spirit Break|p2a: Arcanine
+expect |rng|100|80
+expect |rng|24|1
+expect |rng|16|5
+expect |-resisted|p2a: Arcanine|1
+expect |split|p2
+expect |-damage|p2a: Arcanine|0 fnt
+expect |-damage|p2a: Arcanine|0 fnt
+expect |rng|100|83
+expect |faint|p2a: Arcanine
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Nibbles|Torkoal, L50, F, shiny|159/168 par
+expect |switch|p2a: Nibbles|Torkoal, L50, F, shiny|94/100 par
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p1a: Kingambit|Parabolic Charge|p2a: Nibbles
+expect |rng|100|63
+expect |rng|24|19
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Nibbles|133/168 par
+expect |-damage|p2a: Nibbles|79/100 par
+expect |split|p1
+expect |-heal|p1a: Kingambit|192/192|[from] drain|[of] p2a: Nibbles
+expect |-heal|p1a: Kingambit|100/100|[from] drain|[of] p2a: Nibbles
+expect |rng|8|1
+expect |move|p2a: Nibbles|Icicle Spear|p1a: Kingambit
+expect |rng|100|60
+expect |rng|20|13
+expect |rng|8|4
+expect |rng|16|14
+expect |-resisted|p1a: Kingambit|1
+expect |split|p1
+expect |-damage|p1a: Kingambit|189/192
+expect |-damage|p1a: Kingambit|98/100
+expect |rng|8|1
+expect |rng|16|7
+expect |-resisted|p1a: Kingambit|1
+expect |split|p1
+expect |-damage|p1a: Kingambit|185/192
+expect |-damage|p1a: Kingambit|96/100
+expect |rng|8|7
+expect |rng|16|14
+expect |-resisted|p1a: Kingambit|1
+expect |split|p1
+expect |-damage|p1a: Kingambit|182/192
+expect |-damage|p1a: Kingambit|94/100
+expect |-hitcount|p1a: Kingambit|3
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-River, L50, M, shiny|140/158
+expect |switch|p2a: Vivillon|Vivillon-River, L50, M, shiny|88/100
+expect |move|p1a: Kingambit|Spirit Break|p2a: Vivillon
+expect |rng|100|71
+expect |rng|24|7
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Vivillon|20/158
+expect |-damage|p2a: Vivillon|12/100
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Manectric|Manectric-Mega, L50, M, shiny|171/171
+expect |switch|p1a: Manectric|Manectric-Mega, L50, M, shiny|100/100
+expect |-ability|p1a: Manectric|Intimidate|boost
+expect |-unboost|p2a: Vivillon|atk|1
+expect |move|p2a: Vivillon|Draco Meteor|p1a: Manectric
+expect |rng|100|23
+expect |rng|24|17
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Manectric|121/171
+expect |-damage|p1a: Manectric|70/100
+expect |rng|100|7
+expect |-unboost|p2a: Vivillon|spa|2
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Kingambit|Kingambit, L50, M|182/192
+expect |switch|p1a: Kingambit|Kingambit, L50, M|94/100
+expect |move|p2a: Vivillon|Draco Meteor|p1a: Kingambit
+expect |rng|100|35
+expect |rng|24|2
+expect |rng|16|5
+expect |-resisted|p1a: Kingambit|1
+expect |split|p1
+expect |-damage|p1a: Kingambit|169/192
+expect |-damage|p1a: Kingambit|88/100
+expect |rng|100|34
+expect |-unboost|p2a: Vivillon|spa|2
+expect |
+expect |upkeep
+expect |turn|18
+expect |
+expect |t:|
+expect |move|p2a: Vivillon|Draco Meteor|p1a: Kingambit
+expect |rng|100|21
+expect |rng|24|23
+expect |rng|16|5
+expect |-resisted|p1a: Kingambit|1
+expect |split|p1
+expect |-damage|p1a: Kingambit|160/192
+expect |-damage|p1a: Kingambit|83/100
+expect |rng|100|57
+expect |-unboost|p2a: Vivillon|spa|2
+expect |move|p1a: Kingambit|Parabolic Charge|p2a: Vivillon
+expect |rng|100|28
+expect |rng|24|11
+expect |rng|16|12
+expect |-supereffective|p2a: Vivillon|1
+expect |split|p2
+expect |-damage|p2a: Vivillon|0 fnt
+expect |-damage|p2a: Vivillon|0 fnt
+expect |split|p1
+expect |-heal|p1a: Kingambit|170/192|[from] drain|[of] p2a: Vivillon
+expect |-heal|p1a: Kingambit|88/100|[from] drain|[of] p2a: Vivillon
+expect |faint|p2a: Vivillon
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Nibbles|Torkoal, L50, F, shiny|133/168 par
+expect |switch|p2a: Nibbles|Torkoal, L50, F, shiny|79/100 par
+expect |turn|19
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Manectric|Manectric-Mega, L50, M, shiny|121/171
+expect |switch|p1a: Manectric|Manectric-Mega, L50, M, shiny|70/100
+expect |-ability|p1a: Manectric|Intimidate|boost
+expect |-unboost|p2a: Nibbles|atk|1
+expect |rng|8|1
+expect |move|p2a: Nibbles|Icicle Spear|p1a: Manectric
+expect |rng|100|15
+expect |rng|20|12
+expect |rng|8|2
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Manectric|114/171
+expect |-damage|p1a: Manectric|66/100
+expect |rng|8|0
+expect |rng|16|2
+expect |-crit|p1a: Manectric
+expect |split|p1
+expect |-damage|p1a: Manectric|99/171
+expect |-damage|p1a: Manectric|57/100
+expect |rng|8|3
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Manectric|91/171
+expect |-damage|p1a: Manectric|53/100
+expect |-hitcount|p1a: Manectric|3
+expect |
+expect |upkeep
+expect |turn|20
+expect |
+expect |t:|
+expect |move|p1a: Manectric|Hydro Pump|p2a: Nibbles
+expect |rng|100|32
+expect |rng|24|9
+expect |rng|16|3
+expect |-supereffective|p2a: Nibbles|1
+expect |split|p2
+expect |-damage|p2a: Nibbles|0 fnt
+expect |-damage|p2a: Nibbles|0 fnt
+expect |faint|p2a: Nibbles
+expect |
+expect |win|p1

@@ -1,0 +1,122 @@
+# gen9vgc-gen5-2121007-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@write
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,8bdc4266124647b8"}
+>player p1 {"name":"Alice","team":[{"name":"Scizor","species":"Scizor","item":"Cheri Berry","ability":"Swarm","moves":["Power Whip","Sheer Cold"],"nature":"Hardy","evs":{"hp":9,"atk":251,"def":4,"spa":11,"spd":5,"spe":198},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal"},{"name":"Walking Wake","species":"Walking Wake","item":"","ability":"Protosynthesis","moves":["Drum Beating","Encore","Rollout","Psychic Terrain"],"nature":"Hardy","evs":{"hp":103,"atk":41,"def":184,"spa":101,"spd":51,"spe":15},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar"},{"name":"Armarouge","species":"Armarouge","item":"","ability":"Flash Fire","moves":["Defense Curl"],"nature":"Brave","evs":{"hp":24,"atk":23,"def":122,"spa":54,"spd":130,"spe":95},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock"},{"name":"Timburr","species":"Timburr","item":"","ability":"Magnet Pull","moves":["Apple Acid","Thunderous Kick","Fiery Dance"],"nature":"Serious","evs":{"hp":26,"atk":57,"def":59,"spa":84,"spd":68,"spe":94},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric"},{"name":"Vivillon-Savanna","species":"Vivillon-Savanna","item":"","ability":"Arena Trap","moves":["Follow Me"],"nature":"Relaxed","evs":{"hp":39,"atk":187,"def":251,"spa":0,"spd":7,"spe":25},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground"},{"name":"Calyrex","species":"Calyrex","item":"White Herb","ability":"Unnerve","moves":["Flame Wheel","Facade","Gastro Acid","Mud Shot"],"nature":"Calm","evs":{"hp":25,"atk":156,"def":70,"spa":128,"spd":117,"spe":9},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire"}]}
+@write
+# a comment
+>player p2 {"name":"Bob","team":"Rhydon||BlunderPolicy|Reckless|Torment,MysticalFire,DragonBreath,HelpingHand|Relaxed|62,41,174,,175,14|F||S|50|,,,,,Fairy]Hakamo-o|||Bulletproof|Encore|Jolly|2,180,,90,216,22|M||S|50|,,,,,Grass]Darkrai|||MagnetPull|MistyTerrain,FirstImpression|Hasty|22,29,143,41,11,246|||S|50|,,,,,Dragon]Sparky|IronMoth||QuarkDrive|Taunt,ThunderCage,PlayNice|Bold|44,73,,165,12,216||||50|,,,,,Poison]Haunter|||Levitate|Rest,MistyTerrain,BugBuzz|Hasty|24,174,244,,31,14||||50|,,,,,Fire]Carkol||ChoiceSpecs|FlashFire|Stockpile,Growth|Brave|12,94,240,8,3,148|M|||50|,,,,,Water"}
+@write
+>player p2 {"name":"Bob"}
+@write
+>p2 team1
+>p1   team 5341  
+@write
+# a comment
+>p2 move 1
+# a comment
+>p2 team 3,1,4,2,5,6
+@write
+# a comment
+>p2 switch rhydon
+>p2 move
+@write
+>p2 switch 4
+>p1 move followme terastal,switch 4
+@write
+>p2 default, move 2 1
+>forcetie
+@write
+>p1 move 1
+@message
+update
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+@message
+update
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Scizor, L50, F|
+|poke|p1|Walking Wake, L50|
+|poke|p1|Armarouge, L50, F|
+|poke|p1|Timburr, L50, F|
+|poke|p1|Vivillon-Savanna, L50, M|
+|poke|p1|Calyrex, L50|
+|poke|p2|Rhydon, L50, F|
+|poke|p2|Hakamo-o, L50, M|
+|poke|p2|Darkrai, L50|
+|poke|p2|Iron Moth, L50|
+|poke|p2|Haunter, L50, M|
+|poke|p2|Carkol, L50, M|
+|teampreview|4
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"146/146","active":true,"stats":{"atk":181,"def":121,"spa":76,"spd":101,"spe":110},"moves":["powerwhip","sheercold"],"baseAbility":"swarm","item":"cheriberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Walking Wake","details":"Walking Wake, L50","condition":"187/187","active":true,"stats":{"atk":108,"def":134,"spa":158,"spd":109,"spe":131},"moves":["drumbeating","encore","rollout","psychicterrain"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Armarouge","details":"Armarouge, L50, F","condition":"163/163","active":false,"stats":{"atk":91,"def":135,"spa":152,"spd":116,"spe":96},"moves":["defensecurl"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Timburr","details":"Timburr, L50, F","condition":"153/153","active":false,"stats":{"atk":107,"def":82,"spa":56,"spd":64,"spe":67},"moves":["appleacid","thunderouskick","fierydance"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Vivillon","details":"Vivillon-Savanna, L50, M, shiny","condition":"160/160","active":false,"stats":{"atk":95,"def":111,"spa":110,"spd":71,"spe":100},"moves":["followme"],"baseAbility":"arenatrap","item":"","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Calyrex","details":"Calyrex, L50","condition":"178/178","active":false,"stats":{"atk":108,"def":109,"spa":116,"spd":126,"spe":101},"moves":["flamewheel","facade","gastroacid","mudshot"],"baseAbility":"unnerve","item":"whiteherb","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Rhydon","details":"Rhydon, L50, F, shiny","condition":"188/188","active":true,"stats":{"atk":155,"def":178,"spa":65,"spd":87,"spe":55},"moves":["torment","mysticalfire","dragonbreath","helpinghand"],"baseAbility":"reckless","item":"blunderpolicy","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Hakamo-o","details":"Hakamo-o, L50, M, shiny","condition":"130/130","active":true,"stats":{"atk":118,"def":110,"spa":86,"spd":117,"spe":96},"moves":["encore"],"baseAbility":"bulletproof","item":"","pokeball":"pokeball","ability":"bulletproof","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Darkrai","details":"Darkrai, L50, shiny","condition":"148/148","active":false,"stats":{"atk":114,"def":115,"spa":160,"spd":111,"spe":193},"moves":["mistyterrain","firstimpression"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Sparky","details":"Iron Moth, L50","condition":"161/161","active":false,"stats":{"atk":89,"def":88,"spa":181,"spd":132,"spe":157},"moves":["taunt","thundercage","playnice"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Haunter","details":"Haunter, L50, M","condition":"123/123","active":false,"stats":{"atk":92,"def":86,"spa":135,"spd":79,"spe":128},"moves":["rest","mistyterrain","bugbuzz"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Carkol","details":"Carkol, L50, M","condition":"157/157","active":false,"stats":{"atk":101,"def":140,"spa":81,"spd":90,"spe":80},"moves":["stockpile","growth"],"baseAbility":"flashfire","item":"choicespecs","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Unrecognized choice: team1
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You need a teampreview response
+@message
+update
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|switch|p1a: Vivillon|Vivillon-Savanna, L50, M, shiny|160/160
+|switch|p1a: Vivillon|Vivillon-Savanna, L50, M, shiny|160/160
+|split|p1
+|switch|p1b: Armarouge|Armarouge, L50, F|163/163
+|switch|p1b: Armarouge|Armarouge, L50, F|163/163
+|split|p2
+|switch|p2a: Darkrai|Darkrai, L50, shiny|148/148
+|switch|p2a: Darkrai|Darkrai, L50, shiny|148/148
+|split|p2
+|switch|p2b: Rhydon|Rhydon, L50, F, shiny|188/188
+|switch|p2b: Rhydon|Rhydon, L50, F, shiny|188/188
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Follow Me","id":"followme","pp":32,"maxpp":32,"target":"self","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Defense Curl","id":"defensecurl","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Rock"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Vivillon","details":"Vivillon-Savanna, L50, M, shiny","condition":"160/160","active":true,"stats":{"atk":95,"def":111,"spa":110,"spd":71,"spe":100},"moves":["followme"],"baseAbility":"arenatrap","item":"","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Armarouge","details":"Armarouge, L50, F","condition":"163/163","active":true,"stats":{"atk":91,"def":135,"spa":152,"spd":116,"spe":96},"moves":["defensecurl"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Timburr","details":"Timburr, L50, F","condition":"153/153","active":false,"stats":{"atk":107,"def":82,"spa":56,"spd":64,"spe":67},"moves":["appleacid","thunderouskick","fierydance"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"146/146","active":false,"stats":{"atk":181,"def":121,"spa":76,"spd":101,"spe":110},"moves":["powerwhip","sheercold"],"baseAbility":"swarm","item":"cheriberry","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Misty Terrain","id":"mistyterrain","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"First Impression","id":"firstimpression","pp":16,"maxpp":16,"target":"normal","disabled":false}],"trapped":true,"canTerastallize":"Dragon"},{"moves":[{"move":"Torment","id":"torment","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Mystical Fire","id":"mysticalfire","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dragon Breath","id":"dragonbreath","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Helping Hand","id":"helpinghand","pp":32,"maxpp":32,"target":"adjacentAlly","disabled":false}],"maybeTrapped":true,"canTerastallize":"Fairy"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Darkrai","details":"Darkrai, L50, shiny","condition":"148/148","active":true,"stats":{"atk":114,"def":115,"spa":160,"spd":111,"spe":193},"moves":["mistyterrain","firstimpression"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Rhydon","details":"Rhydon, L50, F, shiny","condition":"188/188","active":true,"stats":{"atk":155,"def":178,"spa":65,"spd":87,"spe":55},"moves":["torment","mysticalfire","dragonbreath","helpinghand"],"baseAbility":"reckless","item":"blunderpolicy","pokeball":"pokeball","ability":"reckless","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Sparky","details":"Iron Moth, L50","condition":"161/161","active":false,"stats":{"atk":89,"def":88,"spa":181,"spd":132,"spe":157},"moves":["taunt","thundercage","playnice"],"baseAbility":"quarkdrive","item":"","pokeball":"pokeball","ability":"quarkdrive","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Hakamo-o","details":"Hakamo-o, L50, M, shiny","condition":"130/130","active":false,"stats":{"atk":118,"def":110,"spa":86,"spd":117,"spe":96},"moves":["encore"],"baseAbility":"bulletproof","item":"","pokeball":"pokeball","ability":"bulletproof","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: move - missing other pokemon
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: The active Pokémon is trapped
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You sent more choices than unfainted Pokémon.
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"gen5,8bdc4266124647b8","turns":1,"p1":"Alice","p2":"Bob","p1team":[{"name":"Scizor","species":"Scizor","item":"Cheri Berry","ability":"Swarm","moves":["Power Whip","Sheer Cold"],"nature":"Hardy","evs":{"hp":9,"atk":251,"def":4,"spa":11,"spd":5,"spe":198},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Walking Wake","species":"Walking Wake","item":"","ability":"Protosynthesis","moves":["Drum Beating","Encore","Rollout","Psychic Terrain"],"nature":"Hardy","evs":{"hp":103,"atk":41,"def":184,"spa":101,"spd":51,"spe":15},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Armarouge","species":"Armarouge","item":"","ability":"Flash Fire","moves":["Defense Curl"],"nature":"Brave","evs":{"hp":24,"atk":23,"def":122,"spa":54,"spd":130,"spe":95},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Timburr","species":"Timburr","item":"","ability":"Magnet Pull","moves":["Apple Acid","Thunderous Kick","Fiery Dance"],"nature":"Serious","evs":{"hp":26,"atk":57,"def":59,"spa":84,"spd":68,"spe":94},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Vivillon","species":"Vivillon-Savanna","item":"","ability":"Arena Trap","moves":["Follow Me"],"nature":"Relaxed","evs":{"hp":39,"atk":187,"def":251,"spa":0,"spd":7,"spe":25},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Calyrex","species":"Calyrex","item":"White Herb","ability":"Unnerve","moves":["Flame Wheel","Facade","Gastro Acid","Mud Shot"],"nature":"Calm","evs":{"hp":25,"atk":156,"def":70,"spa":128,"spd":117,"spe":9},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Rhydon","species":"Rhydon","item":"Blunder Policy","ability":"Reckless","moves":["Torment","Mystical Fire","Dragon Breath","Helping Hand"],"nature":"Relaxed","evs":{"hp":62,"atk":41,"def":174,"spa":0,"spd":175,"spe":14},"gender":"F","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Hakamo-o","species":"Hakamo-o","item":"","ability":"Bulletproof","moves":["Encore"],"nature":"Jolly","evs":{"hp":2,"atk":180,"def":0,"spa":90,"spd":216,"spe":22},"gender":"M","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Darkrai","species":"Darkrai","item":"","ability":"Magnet Pull","moves":["Misty Terrain","First Impression"],"nature":"Hasty","evs":{"hp":22,"atk":29,"def":143,"spa":41,"spd":11,"spe":246},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sparky","species":"Iron Moth","item":"","ability":"Quark Drive","moves":["Taunt","Thunder Cage","Play Nice"],"nature":"Bold","evs":{"hp":44,"atk":73,"def":0,"spa":165,"spd":12,"spe":216},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Haunter","species":"Haunter","item":"","ability":"Levitate","moves":["Rest","Misty Terrain","Bug Buzz"],"nature":"Hasty","evs":{"hp":24,"atk":174,"def":244,"spa":0,"spd":31,"spe":14},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Carkol","species":"Carkol","item":"Choice Specs","ability":"Flash Fire","moves":["Stockpile","Growth"],"nature":"Brave","evs":{"hp":12,"atk":94,"def":240,"spa":8,"spd":3,"spe":148},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[4,4],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50\",\"seed\":\"gen5,8bdc4266124647b8\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Scizor||CheriBerry|Swarm|PowerWhip,SheerCold|Hardy|9,251,4,11,5,198||||50|,,,,,Normal]Walking Wake|||Protosynthesis|DrumBeating,Encore,Rollout,PsychicTerrain|Hardy|103,41,184,101,51,15||||50|,,,,,Stellar]Armarouge|||FlashFire|DefenseCurl|Brave|24,23,122,54,130,95||||50|,,,,,Rock]Timburr|||MagnetPull|AppleAcid,ThunderousKick,FieryDance|Serious|26,57,59,84,68,94|F|||50|,,,,,Electric]Vivillon|VivillonSavanna||ArenaTrap|FollowMe|Relaxed|39,187,251,,7,25|||S|50|,,,,,Ground]Calyrex||WhiteHerb|Unnerve|FlameWheel,Facade,GastroAcid,MudShot|Calm|25,156,70,128,117,9||||50|,,,,,Fire\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Rhydon||BlunderPolicy|Reckless|Torment,MysticalFire,DragonBreath,HelpingHand|Relaxed|62,41,174,,175,14|F||S|50|,,,,,Fairy]Hakamo-o|||Bulletproof|Encore|Jolly|2,180,,90,216,22|M||S|50|,,,,,Grass]Darkrai|||MagnetPull|MistyTerrain,FirstImpression|Hasty|22,29,143,41,11,246|||S|50|,,,,,Dragon]Sparky|IronMoth||QuarkDrive|Taunt,ThunderCage,PlayNice|Bold|44,73,,165,12,216||||50|,,,,,Poison]Haunter|||Levitate|Rest,MistyTerrain,BugBuzz|Hasty|24,174,244,,31,14||||50|,,,,,Fire]Carkol||ChoiceSpecs|FlashFire|Stockpile,Growth|Brave|12,94,240,8,3,148|M|||50|,,,,,Water\"}",">p1 team 5, 3, 4, 1",">p2 team 3, 1, 4, 2",">forcetie"]}

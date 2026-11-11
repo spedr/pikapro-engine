@@ -1,0 +1,544 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed a65a a397 183d 89dc
+genders drawn
+team-seed p1 gen5,2996ea1546d0c760
+team-seed p2 sodium,b5de4ccad080a0f7caf2ec45b478ed63
+team p1
+Necrozma @ Power Herb
+Ability: Prism Armor
+Level: 80
+Tera Type: Dark
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Meteor Beam
+- Photon Geyser
+- Protect
+- Earth Power
+
+Vigoroth (M) @ Eviolite
+Ability: Vital Spirit
+Level: 91
+Tera Type: Ghost
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Encore
+- Icy Wind
+- Body Slam
+- Knock Off
+
+Decidueye (M) @ Sitrus Berry
+Ability: Overgrow
+Level: 89
+Tera Type: Dark
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Protect
+- Tailwind
+- Spirit Shackle
+- Leaf Storm
+
+Reuniclus (M) @ Life Orb
+Ability: Magic Guard
+Level: 84
+Tera Type: Fighting
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD
+Hardy Nature
+IVs: 0 Atk / 0 Spe
+- Protect
+- Psychic
+- Focus Blast
+- Trick Room
+
+Glaceon (M) @ Blunder Policy
+Ability: Ice Body
+Level: 86
+Tera Type: Ground
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Blizzard
+- Calm Mind
+- Freeze-Dry
+- Mud Shot
+
+Enamorus-Therian (F) @ Sitrus Berry
+Ability: Overcoat
+Level: 82
+Tera Type: Ground
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Earth Power
+- Protect
+- Moonblast
+- Springtide Storm
+end
+team p2
+Tauros-Paldea-Aqua (M) @ Choice Band
+Ability: Intimidate
+Level: 80
+Tera Type: Steel
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Wild Charge
+- Close Combat
+- Aqua Jet
+- Wave Crash
+
+Heracross (F) @ Flame Orb
+Ability: Guts
+Level: 82
+Tera Type: Normal
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Protect
+- Close Combat
+- Knock Off
+- Facade
+
+Gengar (M) @ Life Orb
+Ability: Cursed Body
+Level: 84
+Tera Type: Ghost
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Encore
+- Sludge Bomb
+- Shadow Ball
+- Protect
+
+Dusknoir (M) @ Life Orb
+Ability: Frisk
+Level: 89
+Tera Type: Dark
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Poltergeist
+- Leech Life
+- Shadow Sneak
+- Will-O-Wisp
+
+Latios (M) @ Choice Specs
+Ability: Levitate
+Level: 79
+Tera Type: Steel
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Draco Meteor
+- Trick
+- Aura Sphere
+- Luster Purge
+
+Suicune @ Sitrus Berry
+Ability: Inner Focus
+Level: 79
+Tera Type: Dragon
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Tailwind
+- Scald
+- Protect
+- Snarl
+end
+choice p1 move meteorbeam +2 ,  move 4 2
+choice p2 move Aqua Jet -2 terastal, move closecombat -1
+choice p2 switch 4, switch 3
+choice p1 switch 3 ,  move bodyslam 1 terastallize
+choice p2 switch Latios,move 1 +1
+choice p1 move 3 1, move 2
+choice p2 move 3 2, move 2 1
+choice p2 switch Suicune, pass
+choice p1 move leafstorm 1 ,  move 4 +2
+choice p2 move 2 2, move 1 1
+choice p2 default
+choice p1 move 4 -2, move 3 1
+choice p2 move shadowsneak 2, move sludgebomb 1
+choice p1 move 4 2, switch 4
+choice p2 move 1 2, move 3 2
+choice p1 pass, switch 5
+choice p2 move 4 -2, move 1 -1
+choice p1 move 1 ,  switch 6
+choice p2 move 1 2, pass
+choice p1 move protect ,  move 1 1
+choice p2 move 4 2, pass
+choice p1 move 3 1, move 1 1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Necrozma|Necrozma, L80|286/286
+expect |switch|p1a: Necrozma|Necrozma, L80|100/100
+expect |split|p1
+expect |switch|p1b: Vigoroth|Vigoroth, L91, M|293/293
+expect |switch|p1b: Vigoroth|Vigoroth, L91, M|100/100
+expect |split|p2
+expect |switch|p2a: Tauros|Tauros-Paldea-Aqua, L80, M|251/251
+expect |switch|p2a: Tauros|Tauros-Paldea-Aqua, L80, M|100/100
+expect |split|p2
+expect |switch|p2b: Heracross|Heracross, L82, F|265/265
+expect |switch|p2b: Heracross|Heracross, L82, F|100/100
+expect |-ability|p2a: Tauros|Intimidate|boost
+expect |-unboost|p1a: Necrozma|atk|1
+expect |-unboost|p1b: Vigoroth|atk|1
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p2a: Tauros|Steel
+expect |move|p2a: Tauros|Aqua Jet|p2b: Heracross
+expect |rng|100|64
+expect |rng|24|23
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Heracross|189/265
+expect |-damage|p2b: Heracross|72/100
+expect |move|p1b: Vigoroth|Knock Off|p2b: Heracross
+expect |rng|100|87
+expect |rng|24|19
+expect |rng|16|0
+expect |-resisted|p2b: Heracross
+expect |split|p2
+expect |-damage|p2b: Heracross|160/265
+expect |-damage|p2b: Heracross|61/100
+expect |-enditem|p2b: Heracross|Flame Orb|[from] move: Knock Off|[of] p1b: Vigoroth
+expect |move|p2b: Heracross|Close Combat|p2a: Tauros
+expect |rng|100|0
+expect |rng|24|13
+expect |rng|16|8
+expect |-supereffective|p2a: Tauros
+expect |split|p2
+expect |-damage|p2a: Tauros|0 fnt
+expect |-damage|p2a: Tauros|0 fnt
+expect |rng|100|5
+expect |-unboost|p2b: Heracross|def|1
+expect |-unboost|p2b: Heracross|spd|1
+expect |faint|p2a: Tauros
+expect |move|p1a: Necrozma|Meteor Beam||[still]
+expect |-prepare|p1a: Necrozma|Meteor Beam
+expect |-boost|p1a: Necrozma|spa|1
+expect |-enditem|p1a: Necrozma|Power Herb
+expect |-anim|p1a: Necrozma|Meteor Beam|p2b: Heracross
+expect |rng|100|8
+expect |rng|24|9
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Heracross|0 fnt
+expect |-damage|p2b: Heracross|0 fnt
+expect |faint|p2b: Heracross
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Dusknoir|Dusknoir, L89, M|225/225
+expect |switch|p2a: Dusknoir|Dusknoir, L89, M|100/100
+expect |split|p2
+expect |switch|p2b: Gengar|Gengar, L84, M|238/238
+expect |switch|p2b: Gengar|Gengar, L84, M|100/100
+expect |-item|p1b: Vigoroth|Eviolite|[from] ability: Frisk|[of] p2a: Dusknoir
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Decidueye|Decidueye, L89, M|284/284
+expect |switch|p1a: Decidueye|Decidueye, L89, M|100/100
+expect |split|p2
+expect |switch|p2a: Latios|Latios, L79, M|256/256
+expect |switch|p2a: Latios|Latios, L79, M|100/100
+expect |-terastallize|p1b: Vigoroth|Ghost
+expect |move|p2b: Gengar|Encore||[still]
+expect |rng|100|20
+expect |-fail|p2b: Gengar
+expect |move|p1b: Vigoroth|Body Slam|p2a: Latios
+expect |rng|100|51
+expect |rng|24|13
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Latios|183/256
+expect |-damage|p2a: Latios|72/100
+expect |rng|100|72
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Gengar|Sludge Bomb|p1a: Decidueye
+expect |rng|100|95
+expect |rng|24|2
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Decidueye|138/284
+expect |-damage|p1a: Decidueye|49/100
+expect |rng|100|65
+expect |-enditem|p1a: Decidueye|Sitrus Berry|[eat]
+expect |split|p1
+expect |-heal|p1a: Decidueye|209/284|[from] item: Sitrus Berry
+expect |-heal|p1a: Decidueye|74/100|[from] item: Sitrus Berry
+expect |split|p2
+expect |-damage|p2b: Gengar|215/238|[from] item: Life Orb
+expect |-damage|p2b: Gengar|91/100|[from] item: Life Orb
+expect |rng|2|0
+expect |move|p2a: Latios|Aura Sphere|p1b: Vigoroth
+expect |-immune|p1b: Vigoroth
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1b: Vigoroth|Icy Wind|p2a: Latios|[spread] p2a,p2b
+expect |rng|100|16
+expect |rng|100|18
+expect |rng|24|4
+expect |rng|16|15
+expect |-supereffective|p2a: Latios
+expect |rng|24|16
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Latios|145/256
+expect |-damage|p2a: Latios|57/100
+expect |split|p2
+expect |-damage|p2b: Gengar|188/238
+expect |-damage|p2b: Gengar|79/100
+expect |rng|100|52
+expect |-unboost|p2a: Latios|spe|1
+expect |rng|100|42
+expect |-unboost|p2b: Gengar|spe|1
+expect |rng|10|3
+expect |move|p1a: Decidueye|Spirit Shackle|p2a: Latios
+expect |rng|100|15
+expect |rng|24|8
+expect |rng|16|5
+expect |-supereffective|p2a: Latios
+expect |split|p2
+expect |-damage|p2a: Latios|0 fnt
+expect |-damage|p2a: Latios|0 fnt
+expect |rng|100|29
+expect |faint|p2a: Latios
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Suicune|Suicune, L79|288/288
+expect |switch|p2a: Suicune|Suicune, L79|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1b: Vigoroth|Knock Off|p2b: Gengar
+expect |rng|100|93
+expect |rng|24|10
+expect |rng|16|8
+expect |-supereffective|p2b: Gengar
+expect |split|p2
+expect |-damage|p2b: Gengar|68/238
+expect |-damage|p2b: Gengar|29/100
+expect |rng|10|5
+expect |-enditem|p2b: Gengar|Life Orb|[from] move: Knock Off|[of] p1b: Vigoroth
+expect |move|p2a: Suicune|Scald|p1b: Vigoroth
+expect |rng|100|14
+expect |rng|24|5
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: Vigoroth|236/293
+expect |-damage|p1b: Vigoroth|81/100
+expect |rng|100|23
+expect |-status|p1b: Vigoroth|brn
+expect |move|p1a: Decidueye|Leaf Storm|p2a: Suicune
+expect |rng|100|61
+expect |rng|24|1
+expect |rng|16|3
+expect |-supereffective|p2a: Suicune
+expect |split|p2
+expect |-damage|p2a: Suicune|0 fnt
+expect |-damage|p2a: Suicune|0 fnt
+expect |rng|100|86
+expect |-unboost|p1a: Decidueye|spa|2
+expect |faint|p2a: Suicune
+expect |move|p2b: Gengar|Encore|p1a: Decidueye
+expect |rng|100|58
+expect |-start|p1a: Decidueye|Encore
+expect |
+expect |split|p1
+expect |-damage|p1b: Vigoroth|218/293 brn|[from] brn
+expect |-damage|p1b: Vigoroth|75/100 brn|[from] brn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Dusknoir|Dusknoir, L89, M|225/225
+expect |switch|p2a: Dusknoir|Dusknoir, L89, M|100/100
+expect |-item|p1b: Vigoroth|Eviolite|[from] ability: Frisk|[of] p2a: Dusknoir
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2a: Dusknoir|Shadow Sneak|p1b: Vigoroth
+expect |rng|100|59
+expect |rng|24|3
+expect |rng|16|7
+expect |-supereffective|p1b: Vigoroth
+expect |split|p1
+expect |-damage|p1b: Vigoroth|132/293 brn
+expect |-damage|p1b: Vigoroth|46/100 brn
+expect |split|p2
+expect |-damage|p2a: Dusknoir|203/225|[from] item: Life Orb
+expect |-damage|p2a: Dusknoir|91/100|[from] item: Life Orb
+expect |move|p1b: Vigoroth|Body Slam|p2a: Dusknoir
+expect |-immune|p2a: Dusknoir
+expect |move|p1a: Decidueye|Leaf Storm|p1b: Vigoroth
+expect |rng|100|27
+expect |rng|24|23
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Vigoroth|65/293 brn
+expect |-damage|p1b: Vigoroth|23/100 brn
+expect |rng|100|67
+expect |-unboost|p1a: Decidueye|spa|2
+expect |move|p2b: Gengar|Sludge Bomb|p1a: Decidueye
+expect |rng|100|27
+expect |rng|24|20
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Decidueye|112/284
+expect |-damage|p1a: Decidueye|40/100
+expect |rng|100|59
+expect |
+expect |split|p1
+expect |-damage|p1b: Vigoroth|47/293 brn|[from] brn
+expect |-damage|p1b: Vigoroth|17/100 brn|[from] brn
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Reuniclus|Reuniclus, L84, M|322/322
+expect |switch|p1b: Reuniclus|Reuniclus, L84, M|100/100
+expect |move|p1a: Decidueye|Leaf Storm|p2b: Gengar
+expect |rng|100|33
+expect |rng|24|21
+expect |rng|16|4
+expect |-resisted|p2b: Gengar
+expect |split|p2
+expect |-damage|p2b: Gengar|37/238
+expect |-damage|p2b: Gengar|16/100
+expect |rng|100|10
+expect |-unboost|p1a: Decidueye|spa|2
+expect |rng|10|0
+expect |-start|p1a: Decidueye|Disable|Leaf Storm|[from] ability: Cursed Body|[of] p2b: Gengar
+expect |move|p2b: Gengar|Shadow Ball|p1b: Reuniclus
+expect |rng|100|90
+expect |rng|24|6
+expect |rng|16|5
+expect |-supereffective|p1b: Reuniclus
+expect |split|p1
+expect |-damage|p1b: Reuniclus|94/322
+expect |-damage|p1b: Reuniclus|30/100
+expect |rng|100|92
+expect |move|p2a: Dusknoir|Poltergeist|p1b: Reuniclus
+expect |rng|100|13
+expect |-activate|p1b: Reuniclus|move: Poltergeist|Life Orb
+expect |rng|24|19
+expect |rng|16|8
+expect |-supereffective|p1b: Reuniclus
+expect |split|p1
+expect |-damage|p1b: Reuniclus|0 fnt
+expect |-damage|p1b: Reuniclus|0 fnt
+expect |faint|p1b: Reuniclus
+expect |split|p2
+expect |-damage|p2a: Dusknoir|181/225|[from] item: Life Orb
+expect |-damage|p2a: Dusknoir|81/100|[from] item: Life Orb
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Glaceon|Glaceon, L86, M|252/252
+expect |switch|p1b: Glaceon|Glaceon, L86, M|100/100
+expect |rng|2|0
+expect |turn|7
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Enamorus|Enamorus-Therian, L82, F|256/256
+expect |switch|p1b: Enamorus|Enamorus-Therian, L82, F|100/100
+expect |rng|2|1
+expect |rng|2|1
+expect |-activate|p1a: Decidueye|move: Struggle
+expect |move|p1a: Decidueye|Struggle|p2b: Gengar
+expect |rng|24|22
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Gengar|0 fnt
+expect |-damage|p2b: Gengar|0 fnt
+expect |faint|p2b: Gengar
+expect |split|p1
+expect |-damage|p1a: Decidueye|41/284|[from] recoil
+expect |-damage|p1a: Decidueye|15/100|[from] recoil
+expect |move|p2a: Dusknoir|Will-O-Wisp|p2: Gengar|[notarget]
+expect |-fail|p2a: Dusknoir
+expect |
+expect |-end|p1a: Decidueye|Encore
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1a: Decidueye|Protect|p1a: Decidueye
+expect |-singleturn|p1a: Decidueye|Protect
+expect |move|p2a: Dusknoir|Poltergeist|p1b: Enamorus
+expect |rng|100|14
+expect |-activate|p1b: Enamorus|move: Poltergeist|Sitrus Berry
+expect |rng|24|1
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Enamorus|118/256
+expect |-damage|p1b: Enamorus|47/100
+expect |-enditem|p1b: Enamorus|Sitrus Berry|[eat]
+expect |split|p1
+expect |-heal|p1b: Enamorus|182/256|[from] item: Sitrus Berry
+expect |-heal|p1b: Enamorus|72/100|[from] item: Sitrus Berry
+expect |split|p2
+expect |-damage|p2a: Dusknoir|159/225|[from] item: Life Orb
+expect |-damage|p2a: Dusknoir|71/100|[from] item: Life Orb
+expect |move|p1b: Enamorus|Earth Power|p2a: Dusknoir
+expect |rng|100|12
+expect |rng|24|9
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Dusknoir|106/225
+expect |-damage|p2a: Dusknoir|48/100
+expect |rng|100|61
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p1a: Decidueye|Spirit Shackle|p2a: Dusknoir
+expect |rng|100|82
+expect |rng|24|18
+expect |rng|16|3
+expect |-supereffective|p2a: Dusknoir
+expect |split|p2
+expect |-damage|p2a: Dusknoir|0 fnt
+expect |-damage|p2a: Dusknoir|0 fnt
+expect |rng|100|86
+expect |faint|p2a: Dusknoir
+expect |
+expect |win|p1

@@ -1,0 +1,443 @@
+# gen9singles-sodium-2114026-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay omniscient
+@write
+>start {"formatid":" gen9customgame@@@!Team Preview","seed":"sodium,7cbe39d64c172e353a89a9d4f94e0e2836e2d324d7b882aaae32fb8a686c0ba4","rated":"Rated battle"}
+@write
+# a comment
+>player p1 {"name":"Alice","team":"Kricketune|||Technician|Transform,SpringtideStorm,StrengthSap,IceShard|Lonely|32,144,172,91,12,5|M|||50|,,,,,Psychic]Shiftry|||Chlorophyll|Shelter,IceBurn,Dive|Docile|34,21,92,11,169,44|M||S|50|,,,,,Fire]X|Cetoddle||SnowCloak|MakeItRain,MistyExplosion,ThunderCage,Glare|Lonely|236,14,145,35,72,6||||50|,,,,,Ghost]Drowzee|||InnerFocus|HealPulse,Eruption,SurgingStrikes|Brave|9,225,7,10,217,30||||50|,,,,,Fire]Gastrodon||TerrainExtender|SandForce|MeanLook,Glare,AttackOrder|Brave|1,250,7,42,196,2|M|||50|,,,,,Ice]Mr. Bubbles|Yungoos||Stakeout|DoubleTeam,BlastBurn,Comeuppance,SpicyExtract|Gentle|15,3,21,223,78,160|M|||50|,,,,,Steel"}
+# a comment
+>player p2 {"name":"Bob","team":"Pikachu|Zekrom|FlameOrb|Teravolt|NightDaze|Naughty|77,7,111,61,12,100||||50|,,,,,Psychic]Makuhita||GalaricaWreath|ThickFat|AquaCutter|Lax|87,182,191,19,2,25||||50|,,,,,Fairy]Chomp|Weepinbell||Chlorophyll|JungleHealing,Wish|Gentle|71,93,147,180,16,3||||50|,,,,,Grass]ThisNameIsFarTooLongToKeep|ZarudeDada||LeafGuard|DrainPunch|Timid|4,,252,198,5,45||||50|,,,,,Psychic]Arceus-Dark||Magnet|Multitype|Screech|Lax|8,125,13,197,150,7|||S|50|,,,,,Stellar]Sparky|Larvesta||FlameBody|SacredFire|Sassy|35,106,37,15,107,209|F|||50|,,,,,Fire"}
+@write
+>p1 move Ice Shard terastallize
+
+>p2 switch ThisNameIsFarTooLong
+@write
+>p1 move 1
+@write
+>p1 move 1
+@write
+>p2 switch makuhita
+@write
+>p1 switch 6
+>p2 switch 6
+@write
+
+>p1 move 2
+@write
+>p2 undo
+@write
+>p2 switch 5
+@write
+>p1 undo
+@write
+
+>p1 undo
+@write
+>p2 move 1
+@write
+>p1 move 1
+@write
+>p1 switch 5
+>p2 default
+@write
+>p2 switch 1
+>p1 move 3
+@write
+>p2 switch 4
+@write
+
+>p2 switch 3
+>p2 switch ZARUDE
+@write
+
+>p2 switch 5
+@write
+>p1 switch
+>p1 default
+@write
+>p1 move 3
+>p2 move 1 terastallize
+@write
+>p1 switch Yungoos
+@write
+>p2 switch zekrom
+>p2 move 1
+@write
+>p1 switch 5
+@write
+# a comment
+>p1 switch 2
+>p2 undo
+@write
+>p2 move Sacred Fire
+@write
+>p1 switch yungoos
+# a comment
+>p1 switch 6
+@write
+>p1 switch 6
+# a comment
+>p2 switch 5
+@write
+>p1 move 1
+@write
+>p2 switch makuhita
+@write
+>p1 switch 2
+@write
+>p2 switch Pikachu
+>p1 move meanlook -2 terastallize
+@write
+>p1 switch 3
+@write
+>p1 default
+>p2 switch 6
+@write
+>p1 switch 3
+@write
+>p2 switch 3
+>p2 switch 6
+@write
+>p1 move Mean Look
+>p1 move 2
+@write
+>p2 switch
+@write
+>p2 move 1
+@write
+>p1 switch gastrodon
+@write
+>p2 move 1
+@write
+
+>p1 move 1
+@write
+>p1 switch 4
+@write
+>p2 default
+>p1 switch 3
+@write
+>p1 move mistyexplosion
+>p1 switch 3
+@write
+>p2 move 1
+>p2 switch 6
+@write
+# a comment
+>p1 switch 2
+
+>p1 move 3
+@write
+>p2 move
+@write
+>p1 move 4
+# a comment
+>p2 switch 6
+@write
+# a comment
+>p2 move 1
+>p1 move 2
+@write
+>p1 undo
+>p2 switch 3
+@write
+# a comment
+>p1 move 4
+>tiebreak
+@message
+|t:|
+|gametype|singles
+@message
+|player|p1|Alice||
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Custom Game
+|rated|
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Kricketune|Kricketune, L50, M|156/156
+|switch|p2a: Pikachu|Zekrom, L50|185/185
+|-ability|p2a: Pikachu|Teravolt
+|turn|1
+@message
+|
+|t:|
+|switch|p2a: ThisNameIsFarTooLong|Zarude-Dada, L50|181/181
+|-terastallize|p1a: Kricketune|Psychic
+|move|p1a: Kricketune|Ice Shard|p2a: ThisNameIsFarTooLong
+|-supereffective|p2a: ThisNameIsFarTooLong
+|-damage|p2a: ThisNameIsFarTooLong|135/181
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|switch|p2a: Makuhita|Makuhita, L50, F|158/158
+|move|p1a: Kricketune|Transform|p2a: Makuhita
+|-transform|p1a: Kricketune|p2a: Makuhita
+|
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|switch|p1a: Mr. Bubbles|Yungoos, L50, M|125/125
+|switch|p2a: Sparky|Larvesta, L50, F|134/134
+|
+|upkeep
+|turn|4
+@message
+|
+|t:|
+|switch|p2a: Arceus|Arceus-Dark, L50, shiny|196/196
+|move|p1a: Mr. Bubbles|Blast Burn|p2a: Arceus
+|-damage|p2a: Arceus|131/196
+|-mustrecharge|p1a: Mr. Bubbles
+|
+|upkeep
+|-start|p2a: Arceus|typechange|Normal|[silent]
+|turn|5
+@message
+|
+|t:|
+|move|p2a: Arceus|Screech|p1a: Mr. Bubbles
+|-unboost|p1a: Mr. Bubbles|def|2
+|cant|p1a: Mr. Bubbles|recharge
+|
+|upkeep
+|turn|6
+@message
+|
+|t:|
+|switch|p1a: Gastrodon|Gastrodon, L50, M|186/186
+|move|p2a: Arceus|Screech|p1a: Gastrodon
+|-unboost|p1a: Gastrodon|def|2
+|
+|upkeep
+|turn|7
+@message
+|
+|t:|
+|switch|p2a: Pikachu|Zekrom, L50|185/185
+|-ability|p2a: Pikachu|Teravolt
+|move|p1a: Gastrodon|Attack Order|p2a: Pikachu
+|-damage|p2a: Pikachu|151/185
+|
+|-status|p2a: Pikachu|brn|[from] item: Flame Orb
+|upkeep
+|turn|8
+@message
+|
+|t:|
+|switch|p2a: Sparky|Larvesta, L50, F|134/134
+|move|p1a: Gastrodon|Mean Look|p2a: Sparky
+|-activate|p2a: Sparky|trapped
+|
+|upkeep
+|turn|9
+@message
+|
+|t:|
+|-terastallize|p2a: Sparky|Fire
+|move|p2a: Sparky|Sacred Fire|p1a: Gastrodon
+|-resisted|p1a: Gastrodon
+|-damage|p1a: Gastrodon|68/186
+|move|p1a: Gastrodon|Attack Order|p2a: Sparky
+|-resisted|p2a: Sparky
+|-damage|p2a: Sparky|103/134
+|
+|upkeep
+|turn|10
+@message
+|
+|t:|
+|switch|p1a: Mr. Bubbles|Yungoos, L50, M|125/125
+|move|p2a: Sparky|Sacred Fire|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|0 fnt
+|faint|p1a: Mr. Bubbles
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1a: Gastrodon|Gastrodon, L50, M|68/186
+|turn|11
+@message
+|
+|t:|
+|switch|p1a: Shiftry|Shiftry, L50, M, shiny|169/169
+|move|p2a: Sparky|Sacred Fire|p1a: Shiftry
+|-supereffective|p1a: Shiftry
+|-damage|p1a: Shiftry|0 fnt
+|faint|p1a: Shiftry
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1a: Kricketune|Kricketune, L50, M, tera:Psychic|156/156
+|turn|12
+@message
+|
+|t:|
+|switch|p2a: Pikachu|Zekrom, L50|151/185 brn
+|-ability|p2a: Pikachu|Teravolt
+|move|p1a: Kricketune|Transform|p2a: Pikachu
+|-transform|p1a: Kricketune|p2a: Pikachu
+|-ability|p1a: Kricketune|Teravolt
+|
+|-damage|p2a: Pikachu|140/185 brn|[from] brn
+|upkeep
+|turn|13
+@message
+|
+|t:|
+|switch|p2a: Makuhita|Makuhita, L50, F|158/158
+|switch|p1a: Gastrodon|Gastrodon, L50, M|68/186
+|
+|upkeep
+|turn|14
+@message
+|
+|t:|
+|switch|p1a: X|Cetoddle, L50, M|213/213
+|switch|p2a: Pikachu|Zekrom, L50|140/185 brn
+|-ability|p2a: Pikachu|Teravolt
+|
+|-damage|p2a: Pikachu|129/185 brn|[from] brn
+|upkeep
+|turn|15
+@message
+|
+|t:|
+|switch|p2a: Makuhita|Makuhita, L50, F|158/158
+|move|p1a: X|Make It Rain|p2a: Makuhita
+|-damage|p2a: Makuhita|93/158
+|-unboost|p1a: X|spa|1
+|
+|upkeep
+|turn|16
+@message
+|
+|t:|
+|switch|p1a: Gastrodon|Gastrodon, L50, M|68/186
+|switch|p2a: Chomp|Weepinbell, L50, M|149/149
+|
+|upkeep
+|turn|17
+@message
+|
+|t:|
+|switch|p2a: Pikachu|Zekrom, L50|129/185 brn
+|-ability|p2a: Pikachu|Teravolt
+|move|p1a: Gastrodon|Mean Look|p2a: Pikachu
+|-activate|p2a: Pikachu|trapped
+|
+|-damage|p2a: Pikachu|118/185 brn|[from] brn
+|upkeep
+|turn|18
+@message
+|
+|t:|
+|move|p2a: Pikachu|Night Daze|p1a: Gastrodon
+|-damage|p1a: Gastrodon|24/186
+|move|p1a: Gastrodon|Glare||[still]
+|-fail|p1a: Gastrodon
+|
+|-damage|p2a: Pikachu|107/185 brn|[from] brn
+|upkeep
+|turn|19
+@message
+|
+|t:|
+|move|p2a: Pikachu|Night Daze|p1a: Gastrodon
+|-damage|p1a: Gastrodon|0 fnt
+|faint|p1a: Gastrodon
+|
+|-damage|p2a: Pikachu|96/185 brn|[from] brn
+|upkeep
+@message
+|
+|t:|
+|switch|p1a: Drowzee|Drowzee, L50, M|136/136
+|turn|20
+@message
+|
+|t:|
+|switch|p1a: X|Cetoddle, L50, M|213/213
+|move|p2a: Pikachu|Night Daze|p1a: X
+|-damage|p1a: X|133/213
+|
+|-damage|p2a: Pikachu|85/185 brn|[from] brn
+|upkeep
+|turn|21
+@message
+|
+|t:|
+|switch|p1a: Drowzee|Drowzee, L50, M|136/136
+|move|p2a: Pikachu|Night Daze|p1a: Drowzee
+|-supereffective|p1a: Drowzee
+|-damage|p1a: Drowzee|54/136
+|-unboost|p1a: Drowzee|accuracy|1
+|
+|-damage|p2a: Pikachu|74/185 brn|[from] brn
+|upkeep
+|turn|22
+@message
+|
+|t:|
+|switch|p2a: Chomp|Weepinbell, L50, M|149/149
+|switch|p1a: Kricketune|Kricketune, L50, M, tera:Psychic|156/156
+|
+|upkeep
+|turn|23
+@message
+|
+|t:|
+|move|p1a: Kricketune|Strength Sap|p2a: Chomp
+|-unboost|p2a: Chomp|atk|1
+|move|p2a: Chomp|Jungle Healing||[still]
+|-fail|p2a: Chomp
+|
+|upkeep
+|turn|24
+@message
+|
+|t:|
+|switch|p2a: Pikachu|Zekrom, L50|74/185 brn
+|-ability|p2a: Pikachu|Teravolt
+|move|p1a: Kricketune|Ice Shard|p2a: Pikachu
+|-supereffective|p2a: Pikachu
+|-damage|p2a: Pikachu|26/185 brn
+|
+|-damage|p2a: Pikachu|15/185 brn|[from] brn
+|upkeep
+|turn|25
+@message
+|
+|t:|
+|move|p2a: Pikachu|Night Daze|p1a: Kricketune
+|-supereffective|p1a: Kricketune
+|-damage|p1a: Kricketune|12/156
+|move|p1a: Kricketune|Springtide Storm|p2a: Pikachu
+|-supereffective|p2a: Pikachu
+|-damage|p2a: Pikachu|0 fnt
+|faint|p2a: Pikachu
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p2a: Makuhita|Makuhita, L50, F|93/158
+|turn|26
+@message
+|message|Time's up! Going to tiebreaker...
+|-message|Alice: 3 Pokemon left; Bob: 5 Pokemon left
+|
+|win|Bob

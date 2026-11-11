@@ -1,0 +1,565 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 58c9 a454 0c47 c733
+genders drawn
+team p1
+Pichu @ Chilan Berry
+Ability: Static
+Level: 50
+Tera Type: Rock
+EVs: 219 HP / 228 Def / 33 SpA / 1 SpD / 27 Spe
+Timid Nature
+- Tidy Up
+
+Primarina (F) @ Heat Rock
+Ability: Liquid Voice
+Level: 50
+Tera Type: Poison
+EVs: 20 HP / 244 Atk / 183 Def / 33 SpA / 11 SpD / 18 Spe
+Naughty Nature
+- Slash
+- Perish Song
+
+Volcanion @ Misty Seed
+Ability: Water Absorb
+Level: 50
+Tera Type: Grass
+EVs: 108 HP / 16 Atk / 5 Def / 184 SpA / 33 SpD / 137 Spe
+Naughty Nature
+- Bite
+- Supersonic
+- Dragon Hammer
+
+Zoë (Duskull) (F) @ Lustrous Globe
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Tera Type: Water
+EVs: 220 HP / 207 Atk / 81 SpA / 1 SpD
+Lonely Nature
+- Defend Order
+- Strange Steam
+
+Carkol @ Power Band
+Ability: Steam Engine
+Level: 50
+Tera Type: Water
+EVs: 122 HP / 19 Atk / 30 Def / 229 SpA / 5 SpD / 80 Spe
+Serious Nature
+- Aromatic Mist
+
+Dartrix @ Ganlon Berry
+Ability: Long Reach
+Level: 50
+Shiny: Yes
+Tera Type: Flying
+EVs: 17 Atk / 172 Def / 131 SpA / 189 SpD / 1 Spe
+Naughty Nature
+- Healing Wish
+end
+team p2
+Arrokuda (F) @ Metronome
+Ability: Swift Swim
+Level: 50
+Tera Type: Electric
+EVs: 111 HP / 41 Atk / 39 Def / 122 SpA / 29 SpD / 100 Spe
+Quirky Nature
+- Swift
+- Cosmic Power
+- Spicy Extract
+- Pay Day
+
+Big Tony's Pal (Dipplin) (F)
+Ability: Gluttony
+Level: 50
+Tera Type: Psychic
+EVs: 1 HP / 21 Atk / 198 Def / 23 SpA / 130 SpD / 135 Spe
+Serious Nature
+- Venoshock
+
+Jumpluff
+Ability: Leaf Guard
+Level: 50
+Tera Type: Dark
+EVs: 4 HP / 138 Atk / 3 Def / 152 SpA / 13 SpD / 192 Spe
+Bold Nature
+- Iron Tail
+- Psychic
+
+Dragapult
+Ability: Cursed Body
+Level: 50
+Tera Type: Dark
+EVs: 107 HP / 174 Atk / 19 Def / 145 SpA / 64 SpD
+Impish Nature
+- Secret Sword
+- Dire Claw
+- Shadow Claw
+
+Mr. Bubbles (Flareon)
+Ability: Guts
+Level: 50
+Tera Type: Ice
+EVs: 50 HP / 1 Atk / 68 Def / 248 SpA / 13 SpD / 99 Spe
+Naughty Nature
+- Lunar Blessing
+- Fire Pledge
+- Mortal Spin
+
+Sparky (Shiftry) (F)
+Ability: Chlorophyll
+Level: 50
+Tera Type: Electric
+EVs: 9 HP / 4 Atk / 30 Def / 222 SpA / 2 SpD / 242 Spe
+Quiet Nature
+- Rest
+end
+choice p1 team 2361
+choice p2 team 6341
+choice p1 move 1 -2, move 1 1 terastallize
+choice p2 move 1, move 2 2
+choice p1 move 1 -2, move 1 1
+choice p2 move 1 terastallize, move 2 2
+choice p1 move 2, move 1 1
+choice p2 default
+choice p1 move 1 -2, move 1 -1
+choice p2 switch Dragapult ,  move irontail +2
+choice p1 default
+choice p2 move 3 -2 ,  move 1 1
+choice p1 move 1 1, move 2 2
+choice p2 move secretsword +2, move 2 2
+choice p1 switch 3, switch 4
+choice p2 pass, switch 4
+choice p1 move 1, move 1
+choice p2 move Shadow Claw 1,move Spicy Extract +1
+choice p1 move 1, move 1
+choice p2 move 1 -2, move 2
+choice p1 move 1, move 1
+choice p2 move 3 2, move 2
+choice p1 move 1, move 1
+choice p2 move 3 1, switch 3
+choice p1 pass, move 1
+choice p2 move Dire Claw -2, move Rest
+choice p1 pass, move 1
+choice p2 move 3 2, switch 3
+choice p1 pass, move 1
+choice p2 move 1 -2, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Pichu, L50, F|
+expect |poke|p1|Primarina, L50, F|
+expect |poke|p1|Volcanion, L50|
+expect |poke|p1|Duskull, L50, F|
+expect |poke|p1|Carkol, L50, M|
+expect |poke|p1|Dartrix, L50, F|
+expect |poke|p2|Arrokuda, L50, F|
+expect |poke|p2|Dipplin, L50, F|
+expect |poke|p2|Jumpluff, L50, M|
+expect |poke|p2|Dragapult, L50, F|
+expect |poke|p2|Flareon, L50, F|
+expect |poke|p2|Shiftry, L50, F|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Primarina|Primarina, L50, F|158/158
+expect |switch|p1a: Primarina|Primarina, L50, F|158/158
+expect |split|p1
+expect |switch|p1b: Volcanion|Volcanion, L50|169/169
+expect |switch|p1b: Volcanion|Volcanion, L50|169/169
+expect |split|p2
+expect |switch|p2a: Sparky|Shiftry, L50, F|166/166
+expect |switch|p2a: Sparky|Shiftry, L50, F|166/166
+expect |split|p2
+expect |switch|p2b: Jumpluff|Jumpluff, L50, M|151/151
+expect |switch|p2b: Jumpluff|Jumpluff, L50, M|151/151
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p1b: Volcanion|Grass
+expect |move|p2b: Jumpluff|Psychic|p1b: Volcanion
+expect |rng|100|99
+expect |rng|24|20
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Volcanion|133/169
+expect |-damage|p1b: Volcanion|133/169
+expect |rng|100|6
+expect |-unboost|p1b: Volcanion|spd|1
+expect |move|p2a: Sparky|Rest|p2a: Sparky
+expect |-fail|p2a: Sparky|heal
+expect |move|p1b: Volcanion|Bite|p2a: Sparky
+expect |rng|100|67
+expect |rng|24|21
+expect |rng|16|12
+expect |-resisted|p2a: Sparky
+expect |split|p2
+expect |-damage|p2a: Sparky|146/166
+expect |-damage|p2a: Sparky|146/166
+expect |rng|100|39
+expect |move|p1a: Primarina|Slash|p1b: Volcanion
+expect |rng|100|8
+expect |rng|8|5
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: Volcanion|107/169
+expect |-damage|p1b: Volcanion|107/169
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |-terastallize|p2a: Sparky|Electric
+expect |move|p2b: Jumpluff|Psychic|p1b: Volcanion
+expect |rng|100|92
+expect |rng|24|20
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Volcanion|54/169
+expect |-damage|p1b: Volcanion|54/169
+expect |rng|100|24
+expect |move|p2a: Sparky|Rest|p2a: Sparky
+expect |-status|p2a: Sparky|slp|[from] move: Rest
+expect |rng|3|0
+expect |split|p2
+expect |-heal|p2a: Sparky|166/166 slp|[silent]
+expect |-heal|p2a: Sparky|166/166 slp|[silent]
+expect |move|p1b: Volcanion|Bite|p2a: Sparky
+expect |rng|100|12
+expect |rng|24|13
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Sparky|125/166 slp
+expect |-damage|p2a: Sparky|125/166 slp
+expect |rng|100|52
+expect |move|p1a: Primarina|Slash|p1b: Volcanion
+expect |rng|100|68
+expect |rng|8|2
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Volcanion|26/169
+expect |-damage|p1b: Volcanion|26/169
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2b: Jumpluff|Iron Tail|p1a: Primarina|[miss]
+expect |rng|100|90
+expect |-miss|p2b: Jumpluff|p1a: Primarina
+expect |cant|p2a: Sparky|slp
+expect |move|p1b: Volcanion|Bite|p2a: Sparky
+expect |rng|100|14
+expect |rng|24|22
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Sparky|83/166 slp
+expect |-damage|p2a: Sparky|83/166 slp
+expect |rng|100|43
+expect |move|p1a: Primarina|Perish Song|p1a: Primarina
+expect |-start|p1a: Primarina|perish3|[silent]
+expect |split|p1
+expect |-heal|p1b: Volcanion|68/169|[from] ability: Water Absorb|[of] p1a: Primarina
+expect |-heal|p1b: Volcanion|68/169|[from] ability: Water Absorb|[of] p1a: Primarina
+expect |-start|p2a: Sparky|perish3|[silent]
+expect |-start|p2b: Jumpluff|perish3|[silent]
+expect |-fieldactivate|move: Perish Song
+expect |
+expect |-start|p2b: Jumpluff|perish3
+expect |-start|p2a: Sparky|perish3
+expect |-start|p1a: Primarina|perish3
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Dragapult|Dragapult, L50, F|176/176
+expect |switch|p2a: Dragapult|Dragapult, L50, F|176/176
+expect |move|p2b: Jumpluff|Iron Tail|p1b: Volcanion
+expect |rng|100|4
+expect |rng|24|9
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1b: Volcanion|43/169
+expect |-damage|p1b: Volcanion|43/169
+expect |rng|100|23
+expect |-unboost|p1b: Volcanion|def|1
+expect |move|p1b: Volcanion|Bite|p1a: Primarina
+expect |rng|100|36
+expect |rng|24|11
+expect |rng|16|7
+expect |-resisted|p1a: Primarina
+expect |split|p1
+expect |-damage|p1a: Primarina|143/158
+expect |-damage|p1a: Primarina|143/158
+expect |rng|100|78
+expect |move|p1a: Primarina|Slash|p1b: Volcanion
+expect |rng|100|79
+expect |rng|8|7
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1b: Volcanion|3/169
+expect |-damage|p1b: Volcanion|3/169
+expect |
+expect |-start|p2b: Jumpluff|perish2
+expect |-start|p1a: Primarina|perish2
+expect |upkeep
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2a: Dragapult|Shadow Claw|p2b: Jumpluff
+expect |rng|100|84
+expect |rng|8|7
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Jumpluff|84/151
+expect |-damage|p2b: Jumpluff|84/151
+expect |move|p2b: Jumpluff|Iron Tail|p1a: Primarina
+expect |rng|100|37
+expect |rng|24|22
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Primarina|114/158
+expect |-damage|p1a: Primarina|114/158
+expect |rng|100|46
+expect |move|p1b: Volcanion|Bite|p2b: Jumpluff
+expect |rng|100|65
+expect |rng|24|2
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Jumpluff|50/151
+expect |-damage|p2b: Jumpluff|50/151
+expect |rng|100|73
+expect |move|p1a: Primarina|Slash|p2b: Jumpluff
+expect |rng|100|88
+expect |rng|8|3
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Jumpluff|10/151
+expect |-damage|p2b: Jumpluff|10/151
+expect |
+expect |-start|p2b: Jumpluff|perish1
+expect |-start|p1a: Primarina|perish1
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Dragapult|Secret Sword|p1b: Volcanion
+expect |rng|100|52
+expect |rng|24|11
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Volcanion|0 fnt
+expect |-damage|p1b: Volcanion|0 fnt
+expect |faint|p1b: Volcanion
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Jumpluff|Psychic|p1a: Primarina
+expect |rng|100|33
+expect |rng|24|12
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Primarina|87/158
+expect |-damage|p1a: Primarina|87/158
+expect |rng|100|62
+expect |move|p1a: Primarina|Slash|p2a: Dragapult
+expect |-immune|p2a: Dragapult
+expect |
+expect |-start|p2b: Jumpluff|perish0
+expect |-start|p1a: Primarina|perish0
+expect |upkeep
+expect |faint|p2b: Jumpluff
+expect |faint|p1a: Primarina
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Arrokuda|Arrokuda, L50, F|130/130
+expect |switch|p2b: Arrokuda|Arrokuda, L50, F|130/130
+expect |split|p1
+expect |switch|p1b: Pichu|Pichu, L50, F|122/122
+expect |switch|p1b: Pichu|Pichu, L50, F|122/122
+expect |split|p1
+expect |switch|p1a: Dartrix|Dartrix, L50, F, shiny|153/153
+expect |switch|p1a: Dartrix|Dartrix, L50, F, shiny|153/153
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Dragapult|Shadow Claw|p1a: Dartrix
+expect |rng|100|12
+expect |rng|8|3
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Dartrix|93/153
+expect |-damage|p1a: Dartrix|93/153
+expect |move|p2b: Arrokuda|Spicy Extract|p1a: Dartrix
+expect |-boost|p1a: Dartrix|atk|2
+expect |-unboost|p1a: Dartrix|def|2
+expect |move|p1b: Pichu|Tidy Up|p1b: Pichu
+expect |-boost|p1b: Pichu|atk|1
+expect |-boost|p1b: Pichu|spe|1
+expect |move|p1a: Dartrix|Healing Wish||[still]
+expect |-fail|p1a: Dartrix
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2a: Dragapult|Secret Sword|p2b: Arrokuda
+expect |rng|100|59
+expect |rng|24|20
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Arrokuda|60/130
+expect |-damage|p2b: Arrokuda|60/130
+expect |move|p1b: Pichu|Tidy Up|p1b: Pichu
+expect |-boost|p1b: Pichu|atk|1
+expect |-boost|p1b: Pichu|spe|1
+expect |move|p2b: Arrokuda|Cosmic Power|p2b: Arrokuda
+expect |-boost|p2b: Arrokuda|def|1
+expect |-boost|p2b: Arrokuda|spd|1
+expect |move|p1a: Dartrix|Healing Wish||[still]
+expect |-fail|p1a: Dartrix
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p1b: Pichu|Tidy Up|p1b: Pichu
+expect |-boost|p1b: Pichu|atk|1
+expect |-boost|p1b: Pichu|spe|1
+expect |move|p2a: Dragapult|Shadow Claw|p1b: Pichu
+expect |rng|100|44
+expect |rng|8|1
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Pichu|10/122
+expect |-damage|p1b: Pichu|10/122
+expect |rng|10|0
+expect |-status|p2a: Dragapult|par|[from] ability: Static|[of] p1b: Pichu
+expect |move|p2b: Arrokuda|Cosmic Power|p2b: Arrokuda
+expect |-boost|p2b: Arrokuda|def|1
+expect |-boost|p2b: Arrokuda|spd|1
+expect |move|p1a: Dartrix|Healing Wish||[still]
+expect |-fail|p1a: Dartrix
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Sparky|Shiftry, L50, F, tera:Electric|83/166 slp
+expect |switch|p2b: Sparky|Shiftry, L50, F, tera:Electric|83/166 slp
+expect |move|p1b: Pichu|Tidy Up|p1b: Pichu
+expect |-boost|p1b: Pichu|atk|1
+expect |-boost|p1b: Pichu|spe|1
+expect |rng|4|2
+expect |move|p2a: Dragapult|Shadow Claw|p1a: Dartrix
+expect |rng|100|12
+expect |rng|8|4
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Dartrix|0 fnt
+expect |-damage|p1a: Dartrix|0 fnt
+expect |faint|p1a: Dartrix
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p1b: Pichu|Tidy Up|p1b: Pichu
+expect |-boost|p1b: Pichu|atk|1
+expect |-boost|p1b: Pichu|spe|1
+expect |cant|p2b: Sparky|slp
+expect |rng|4|1
+expect |move|p2a: Dragapult|Dire Claw|p2b: Sparky
+expect |rng|100|77
+expect |rng|24|4
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Sparky|21/166 slp
+expect |-damage|p2b: Sparky|21/166 slp
+expect |rng|100|99
+expect |
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Arrokuda|Arrokuda, L50, F|60/130
+expect |switch|p2b: Arrokuda|Arrokuda, L50, F|60/130
+expect |move|p1b: Pichu|Tidy Up|p1b: Pichu
+expect |-boost|p1b: Pichu|atk|1
+expect |-boost|p1b: Pichu|spe|1
+expect |rng|4|0
+expect |cant|p2a: Dragapult|par
+expect |
+expect |upkeep
+expect |turn|13
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p1b: Pichu|Tidy Up||[still]
+expect |-fail|p1b: Pichu
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Arrokuda|Swift|p1b: Pichu
+expect |rng|24|9
+expect |rng|16|10
+expect |-enditem|p1b: Pichu|Chilan Berry|[eat]
+expect |-enditem|p1b: Pichu|Chilan Berry|[weaken]
+expect |split|p1
+expect |-damage|p1b: Pichu|0 fnt
+expect |-damage|p1b: Pichu|0 fnt
+expect |faint|p1b: Pichu
+expect |
+expect |win|p2
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"122/122","active":true,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"158/158","active":true,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"169/169","active":false,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Zoë","details":"Duskull, L50, F, shiny","condition":"123/123","active":false,"stats":{"atk":94,"def":99,"spa":60,"spd":110,"spe":45},"moves":["defendorder","strangesteam"],"baseAbility":"levitate","item":"lustrousglobe","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Carkol","details":"Carkol, L50, M","condition":"170/170","active":false,"stats":{"atk":82,"def":114,"spa":109,"spd":91,"spe":80},"moves":["aromaticmist"],"baseAbility":"steamengine","item":"powerband","pokeball":"pokeball","ability":"steamengine","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"130/130","active":true,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Dipplin, L50, F","condition":"155/155","active":true,"stats":{"atk":103,"def":155,"spa":118,"spd":116,"spe":77},"moves":["venoshock"],"baseAbility":"gluttony","item":"","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"151/151","active":false,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176","active":false,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Mr. Bubbles","details":"Flareon, L50, F","condition":"146/146","active":false,"stats":{"atk":165,"def":89,"spa":146,"spd":118,"spe":97},"moves":["lunarblessing","firepledge","mortalspin"],"baseAbility":"guts","item":"","pokeball":"pokeball","ability":"guts","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"166/166","active":false,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Slash","id":"slash","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Perish Song","id":"perishsong","pp":8,"maxpp":8,"target":"all","disabled":false}],"canTerastallize":"Poison"},{"moves":[{"move":"Bite","id":"bite","pp":40,"maxpp":40,"target":"normal","disabled":false},{"move":"Supersonic","id":"supersonic","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dragon Hammer","id":"dragonhammer","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Grass"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"158/158","active":true,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"169/169","active":true,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"122/122","active":false,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Electric"},{"moves":[{"move":"Iron Tail","id":"irontail","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Psychic","id":"psychic","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Dark"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"166/166","active":true,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"151/151","active":true,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176","active":false,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"130/130","active":false,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Slash","id":"slash","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Perish Song","id":"perishsong","pp":8,"maxpp":8,"target":"all","disabled":false}]},{"moves":[{"move":"Bite","id":"bite","pp":39,"maxpp":40,"target":"normal","disabled":false},{"move":"Supersonic","id":"supersonic","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dragon Hammer","id":"dragonhammer","pp":24,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"158/158","active":true,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"107/169","active":true,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":"Grass"},{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"122/122","active":false,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rest","id":"rest","pp":7,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Electric"},{"moves":[{"move":"Iron Tail","id":"irontail","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Psychic","id":"psychic","pp":15,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Dark"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"146/166","active":true,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"151/151","active":true,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176","active":false,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"130/130","active":false,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Slash","id":"slash","pp":30,"maxpp":32,"target":"normal","disabled":false},{"move":"Perish Song","id":"perishsong","pp":8,"maxpp":8,"target":"all","disabled":false}]},{"moves":[{"move":"Bite","id":"bite","pp":38,"maxpp":40,"target":"normal","disabled":false},{"move":"Supersonic","id":"supersonic","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dragon Hammer","id":"dragonhammer","pp":24,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"158/158","active":true,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"26/169","active":true,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":"Grass"},{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"122/122","active":false,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rest","id":"rest","pp":6,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Psychic","id":"psychic","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"125/166 slp","active":true,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"151/151","active":true,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176","active":false,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"130/130","active":false,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Slash","id":"slash","pp":30,"maxpp":32,"target":"normal","disabled":false},{"move":"Perish Song","id":"perishsong","pp":7,"maxpp":8,"target":"all","disabled":false}]},{"moves":[{"move":"Bite","id":"bite","pp":37,"maxpp":40,"target":"normal","disabled":false},{"move":"Supersonic","id":"supersonic","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dragon Hammer","id":"dragonhammer","pp":24,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"158/158","active":true,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"68/169","active":true,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":"Grass"},{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"122/122","active":false,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rest","id":"rest","pp":6,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Psychic","id":"psychic","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"83/166 slp","active":true,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"151/151","active":true,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176","active":false,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"130/130","active":false,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Slash","id":"slash","pp":29,"maxpp":32,"target":"normal","disabled":false},{"move":"Perish Song","id":"perishsong","pp":7,"maxpp":8,"target":"all","disabled":false}]},{"moves":[{"move":"Bite","id":"bite","pp":36,"maxpp":40,"target":"normal","disabled":false},{"move":"Supersonic","id":"supersonic","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dragon Hammer","id":"dragonhammer","pp":24,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"143/158","active":true,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"3/169","active":true,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":"Grass"},{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"122/122","active":false,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Secret Sword","id":"secretsword","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Psychic","id":"psychic","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176","active":true,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"151/151","active":true,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"83/166 slp","active":false,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"130/130","active":false,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Slash","id":"slash","pp":28,"maxpp":32,"target":"normal","disabled":false},{"move":"Perish Song","id":"perishsong","pp":7,"maxpp":8,"target":"all","disabled":false}]},{"moves":[{"move":"Bite","id":"bite","pp":35,"maxpp":40,"target":"normal","disabled":false},{"move":"Supersonic","id":"supersonic","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Dragon Hammer","id":"dragonhammer","pp":24,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"114/158","active":true,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"3/169","active":true,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":"Grass"},{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"122/122","active":false,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Secret Sword","id":"secretsword","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":23,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":21,"maxpp":24,"target":"normal","disabled":false},{"move":"Psychic","id":"psychic","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176","active":true,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"10/151","active":true,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"83/166 slp","active":false,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"130/130","active":false,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p1 {"forceSwitch":[true,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"0 fnt","active":true,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"0 fnt","active":true,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"122/122","active":false,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176","active":true,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"0 fnt","active":true,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"83/166 slp","active":false,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"130/130","active":false,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Healing Wish","id":"healingwish","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Tidy Up","id":"tidyup","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"153/153","active":true,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"122/122","active":true,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"0 fnt","active":false,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Secret Sword","id":"secretsword","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":23,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Swift","id":"swift","pp":32,"maxpp":32,"target":"allAdjacentFoes","disabled":false},{"move":"Cosmic Power","id":"cosmicpower","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Spicy Extract","id":"spicyextract","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Pay Day","id":"payday","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176","active":true,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"130/130","active":true,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"83/166 slp","active":false,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"0 fnt","active":false,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Healing Wish","id":"healingwish","pp":15,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Tidy Up","id":"tidyup","pp":15,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"93/153","active":true,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"122/122","active":true,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"0 fnt","active":false,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Secret Sword","id":"secretsword","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":22,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Swift","id":"swift","pp":32,"maxpp":32,"target":"allAdjacentFoes","disabled":false},{"move":"Cosmic Power","id":"cosmicpower","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Spicy Extract","id":"spicyextract","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Pay Day","id":"payday","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176","active":true,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"130/130","active":true,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"83/166 slp","active":false,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"0 fnt","active":false,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Healing Wish","id":"healingwish","pp":14,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Tidy Up","id":"tidyup","pp":14,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"93/153","active":true,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"122/122","active":true,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"0 fnt","active":false,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Secret Sword","id":"secretsword","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":22,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Swift","id":"swift","pp":32,"maxpp":32,"target":"allAdjacentFoes","disabled":false},{"move":"Cosmic Power","id":"cosmicpower","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Spicy Extract","id":"spicyextract","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Pay Day","id":"payday","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176","active":true,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"60/130","active":true,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"83/166 slp","active":false,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"0 fnt","active":false,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Healing Wish","id":"healingwish","pp":13,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Tidy Up","id":"tidyup","pp":13,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"93/153","active":true,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"10/122","active":true,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"0 fnt","active":false,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Secret Sword","id":"secretsword","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":21,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Swift","id":"swift","pp":32,"maxpp":32,"target":"allAdjacentFoes","disabled":false},{"move":"Cosmic Power","id":"cosmicpower","pp":30,"maxpp":32,"target":"self","disabled":false},{"move":"Spicy Extract","id":"spicyextract","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Pay Day","id":"payday","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176 par","active":true,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"60/130","active":true,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"83/166 slp","active":false,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"0 fnt","active":false,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Healing Wish","id":"healingwish","pp":13,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Tidy Up","id":"tidyup","pp":12,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"10/122","active":true,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"0 fnt","active":false,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Secret Sword","id":"secretsword","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":20,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Rest","id":"rest","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176 par","active":true,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"83/166 slp","active":true,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"60/130","active":false,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"0 fnt","active":false,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Healing Wish","id":"healingwish","pp":13,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Tidy Up","id":"tidyup","pp":11,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"10/122","active":true,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"0 fnt","active":false,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Secret Sword","id":"secretsword","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":20,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Rest","id":"rest","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176 par","active":true,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"21/166 slp","active":true,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"60/130","active":false,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"0 fnt","active":false,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Healing Wish","id":"healingwish","pp":13,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Tidy Up","id":"tidyup","pp":10,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dartrix","details":"Dartrix, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":106,"def":117,"spa":106,"spd":102,"spe":72},"moves":["healingwish"],"baseAbility":"longreach","item":"ganlonberry","pokeball":"pokeball","ability":"longreach","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Pichu","details":"Pichu, L50, F","condition":"10/122","active":true,"stats":{"atk":54,"def":64,"spa":59,"spd":55,"spe":91},"moves":["tidyup"],"baseAbility":"static","item":"chilanberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Primarina","details":"Primarina, L50, F","condition":"0 fnt","active":false,"stats":{"atk":137,"def":117,"spa":150,"spd":123,"spe":82},"moves":["slash","perishsong"],"baseAbility":"liquidvoice","item":"heatrock","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Volcanion","details":"Volcanion, L50","condition":"0 fnt","active":false,"stats":{"atk":145,"def":141,"spa":173,"spd":102,"spe":107},"moves":["bite","supersonic","dragonhammer"],"baseAbility":"waterabsorb","item":"mistyseed","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Secret Sword","id":"secretsword","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":20,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Swift","id":"swift","pp":32,"maxpp":32,"target":"allAdjacentFoes","disabled":false},{"move":"Cosmic Power","id":"cosmicpower","pp":30,"maxpp":32,"target":"self","disabled":false},{"move":"Spicy Extract","id":"spicyextract","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Pay Day","id":"payday","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dragapult","details":"Dragapult, L50, F","condition":"176/176 par","active":true,"stats":{"atk":162,"def":106,"spa":124,"spd":103,"spe":162},"moves":["secretsword","direclaw","shadowclaw"],"baseAbility":"cursedbody","item":"","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Arrokuda","details":"Arrokuda, L50, F","condition":"60/130","active":true,"stats":{"atk":88,"def":65,"spa":75,"spd":54,"spe":99},"moves":["swift","cosmicpower","spicyextract","payday"],"baseAbility":"swiftswim","item":"metronome","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sparky","details":"Shiftry, L50, F","condition":"21/166 slp","active":false,"stats":{"atk":121,"def":84,"spa":151,"spd":80,"spe":117},"moves":["rest"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Jumpluff","details":"Jumpluff, L50, M","condition":"0 fnt","active":false,"stats":{"atk":82,"def":99,"spa":94,"spd":117,"spe":154},"moves":["irontail","psychic"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}

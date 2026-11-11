@@ -1,0 +1,78 @@
+# gen9ou-sodium-2134001-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@write
+>start {"formatid":"gen9ou","seed":"sodium,f89732b8370084915877edfb46409967"}
+>player p1 {"name":"Alice","team":"Pelipper|||RainDish|Psystrike,TachyonCutter,WaveCrash,DoubleShock|Sassy|149,11,15,213,7,107|F||||,,,,,Water]Entei||PrettyFeather|Pressure|FilletAway,CloseCombat,ShellSmash,SpringtideStorm|Naive|189,175,15,98,14,19|||||,,,,,Fire"}
+>player p2 {"name":"Bob","team":[{"name":"Shroomish","species":"Shroomish","item":"Punching Glove","ability":"Poison Heal","moves":["Double Team","Quash"],"nature":"Modest","evs":{"hp":6,"atk":219,"def":22,"spa":15,"spd":47,"spe":198},"gender":"F","happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground"},{"name":"Big Tony's Pal","species":"Sinistea","item":"","ability":"Weak Armor","moves":["Mega Drain","Take Down","Aqua Tail","Take Heart"],"nature":"Adamant","evs":{"hp":28,"atk":81,"def":28,"spa":38,"spd":152,"spe":160},"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy"},{"name":"Nibbles","species":"Misdreavus","item":"","ability":"Levitate","moves":["Heal Pulse","Guillotine","Lumina Crash","Stone Edge"],"nature":"Mild","evs":{"hp":103,"atk":3,"def":13,"spa":162,"spd":202,"spe":27},"gender":"M","happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice"},{"name":"Dewott","species":"Dewott","item":"Qualot Berry","ability":"Torrent","moves":["Fury Cutter","Encore"],"nature":"Hasty","evs":{"hp":246,"atk":0,"def":36,"spa":1,"spd":5,"spe":222},"gender":"F","happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock"},{"name":"Florges","species":"Florges","item":"Iron Plate","ability":"Flower Veil","moves":["Charge","Flamethrower","Belch"],"nature":"Mild","evs":{"hp":14,"atk":28,"def":120,"spa":47,"spd":232,"spe":39},"happiness":255,"hpType":"","pokeball":"Safari Ball","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire"},{"name":"ThisNameIsFarTooLongToKeep","species":"Bramblin","item":"Apicot Berry","ability":"Wind Rider","moves":["Scald","Poison Sting","Salt Cure"],"nature":"Hardy","evs":{"hp":8,"atk":187,"def":98,"spa":11,"spd":36,"spe":170},"happiness":255,"hpType":"","pokeball":"Master Ball","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark"}],"rating":1500}
+>p2 team 426513
+>p2 team 426513
+>p1 switch 2
+@write
+>p1 team 2, 1
+>p1 move 2 terastallize
+>forcelose p2
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You need a teampreview response
+@message
+update
+|t:|
+|gametype|singles
+|player|p1|Alice||
+|player|p2|Bob||1500
+|gen|9
+|tier|[Gen 9] OU
+|rule|HP Percentage Mod: HP is shown in percentages
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|Species Clause: Limit one of each Pokémon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Items Clause: Evasion items are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|rule|Sleep Moves Clause: Sleep-inducing moves are banned
+|clearpoke
+|poke|p1|Pelipper, F|
+|poke|p1|Entei|
+|poke|p2|Shroomish, F|
+|poke|p2|Sinistea|
+|poke|p2|Misdreavus, M|
+|poke|p2|Dewott, F|
+|poke|p2|Florges, F|
+|poke|p2|Bramblin, F|
+|teampreview
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pelipper","details":"Pelipper, F","condition":"298/298","active":true,"stats":{"atk":138,"def":239,"spa":279,"spd":194,"spe":172},"moves":["psystrike","tachyoncutter","wavecrash","doubleshock"],"baseAbility":"raindish","item":"","pokeball":"pokeball","ability":"raindish","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Entei","details":"Entei","condition":"418/418","active":false,"stats":{"atk":309,"def":209,"spa":240,"spd":170,"spe":264},"moves":["filletaway","closecombat","shellsmash","springtidestorm"],"baseAbility":"pressure","item":"prettyfeather","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Shroomish","details":"Shroomish, F","condition":"262/262","active":true,"stats":{"atk":153,"def":161,"spa":130,"spd":167,"spe":155},"moves":["doubleteam","quash"],"baseAbility":"poisonheal","item":"punchingglove","pokeball":"pokeball","ability":"poisonheal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Sinistea","condition":"228/228","active":false,"stats":{"atk":160,"def":133,"spa":173,"spd":182,"spe":176},"moves":["megadrain","takedown","aquatail","takeheart"],"baseAbility":"weakarmor","item":"","pokeball":"pokeball","ability":"weakarmor","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Nibbles","details":"Misdreavus, M","condition":"286/286","active":false,"stats":{"atk":156,"def":143,"spa":270,"spd":256,"spe":212},"moves":["healpulse","guillotine","luminacrash","stoneedge"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Dewott","details":"Dewott, F","condition":"352/352","active":false,"stats":{"atk":186,"def":148,"spa":202,"spd":157,"spe":232},"moves":["furycutter","encore"],"baseAbility":"torrent","item":"qualotberry","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Florges","details":"Florges, F","condition":"300/300","active":false,"stats":{"atk":173,"def":181,"spa":298,"spd":402,"spe":195},"moves":["charge","flamethrower","belch"],"baseAbility":"flowerveil","item":"ironplate","pokeball":"safariball","ability":"flowerveil","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Bramblin, F","condition":"223/223","active":false,"stats":{"atk":212,"def":120,"spa":128,"spd":115,"spe":198},"moves":["scald","poisonsting","saltcure"],"baseAbility":"windrider","item":"apicotberry","pokeball":"masterball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|teamsize|p1|2
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: Entei|Entei|418/418
+|switch|p1a: Entei|Entei|100/100
+|split|p2
+|switch|p2a: Dewott|Dewott, F|352/352
+|switch|p2a: Dewott|Dewott, F|100/100
+|-ability|p1a: Entei|Pressure
+|turn|1
+|
+|win|Alice
+@message
+sideupdate
+p1
+|request|null
+@message
+sideupdate
+p2
+|request|null
+@message
+end
+{"winner":"Alice","seed":"sodium,f89732b8370084915877edfb46409967","turns":1,"p1":"Alice","p2":"Bob","p1team":[{"name":"Pelipper","species":"Pelipper","item":"","ability":"Rain Dish","moves":["Psystrike","Tachyon Cutter","Wave Crash","Double Shock"],"nature":"Sassy","evs":{"hp":149,"atk":11,"def":15,"spa":213,"spd":7,"spe":107},"gender":"F","happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Entei","species":"Entei","item":"Pretty Feather","ability":"Pressure","moves":["Fillet Away","Close Combat","Shell Smash","Springtide Storm"],"nature":"Naive","evs":{"hp":189,"atk":175,"def":15,"spa":98,"spd":14,"spe":19},"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Shroomish","species":"Shroomish","item":"Punching Glove","ability":"Poison Heal","moves":["Double Team","Quash"],"nature":"Modest","evs":{"hp":6,"atk":219,"def":22,"spa":15,"spd":47,"spe":198},"gender":"F","happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Sinistea","item":"","ability":"Weak Armor","moves":["Mega Drain","Take Down","Aqua Tail","Take Heart"],"nature":"Adamant","evs":{"hp":28,"atk":81,"def":28,"spa":38,"spd":152,"spe":160},"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Nibbles","species":"Misdreavus","item":"","ability":"Levitate","moves":["Heal Pulse","Guillotine","Lumina Crash","Stone Edge"],"nature":"Mild","evs":{"hp":103,"atk":3,"def":13,"spa":162,"spd":202,"spe":27},"gender":"M","happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Dewott","species":"Dewott","item":"Qualot Berry","ability":"Torrent","moves":["Fury Cutter","Encore"],"nature":"Hasty","evs":{"hp":246,"atk":0,"def":36,"spa":1,"spd":5,"spe":222},"gender":"F","happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Florges","species":"Florges","item":"Iron Plate","ability":"Flower Veil","moves":["Charge","Flamethrower","Belch"],"nature":"Mild","evs":{"hp":14,"atk":28,"def":120,"spa":47,"spd":232,"spe":39},"happiness":255,"hpType":"","pokeball":"Safari Ball","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"ThisNameIsFarTooLongToKeep","species":"Bramblin","item":"Apicot Berry","ability":"Wind Rider","moves":["Scald","Poison Sting","Salt Cure"],"nature":"Hardy","evs":{"hp":8,"atk":187,"def":98,"spa":11,"spd":36,"spe":170},"happiness":255,"hpType":"","pokeball":"Master Ball","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[2,6],"inputLog":[">start {\"formatid\":\"gen9ou\",\"seed\":\"sodium,f89732b8370084915877edfb46409967\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Pelipper|||RainDish|Psystrike,TachyonCutter,WaveCrash,DoubleShock|Sassy|149,11,15,213,7,107|F||||,,,,,Water]Entei||PrettyFeather|Pressure|FilletAway,CloseCombat,ShellSmash,SpringtideStorm|Naive|189,175,15,98,14,19|||||,,,,,Fire\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Shroomish||PunchingGlove|PoisonHeal|DoubleTeam,Quash|Modest|6,219,22,15,47,198|F||||,,,,,Ground]Big Tony's Pal|Sinistea||WeakArmor|MegaDrain,TakeDown,AquaTail,TakeHeart|Adamant|28,81,28,38,152,160|||||,,,,,Fairy]Nibbles|Misdreavus||Levitate|HealPulse,Guillotine,LuminaCrash,StoneEdge|Mild|103,3,13,162,202,27|M||||,,,,,Ice]Dewott||QualotBerry|Torrent|FuryCutter,Encore|Hasty|246,,36,1,5,222|F||||,,,,,Rock]Florges||IronPlate|FlowerVeil|Charge,Flamethrower,Belch|Mild|14,28,120,47,232,39|||||,,SafariBall,,,Fire]ThisNameIsFarTooLongToKeep|Bramblin|ApicotBerry|WindRider|Scald,PoisonSting,SaltCure|Hardy|8,187,98,11,36,170|||||,,MasterBall,,,Dark\",\"rating\":1500}",">p1 team 2, 1",">p2 team 4, 2, 6, 5, 1, 3",">forcelose p2"]}

@@ -1,0 +1,306 @@
+# gen9singles-sodium-2114017-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option keep-alive
+@write
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"sodium,4bf7062959e5e644058f7ad15b33a904"}
+>player p1 {"name":"Alice","team":"Sparky|Cosmoem|EarthPlate|Sturdy|Amnesia,FusionBolt|Naive|2,9,222,217,,60||||50|,,,,,Fire]Palkia-Origin||NeverMeltIce|Telepathy|PsychoBoost,FilletAway|Gentle|89,15,54,53,169,127||||50|,,,,,Electric]Minior-Blue||PasshoBerry|ShieldsDown|FlareBlitz,ShiftGear,FireFang,DualWingbeat|Bashful|56,218,10,95,119,9||||50|,,,,,Steel]Vivillon-Tundra||DiveBall|FriendGuard|EarthPower,BurningJealousy,Teatime,GigaImpact|Mild|6,101,230,1,112,56||||50|,,,,,Grass]X|Mamoswine|DuskBall|SnowCloak|XScissor,DynamicPunch|Hardy|91,135,43,143,35,17|F|||50|,,,,,Steel]Nibbles|Spiritomb||Infiltrator|Decorate,PsychicTerrain,ThunderShock,SnipeShot|Hasty|184,40,,5,111,168||||50|,,,,,Fairy"}
+@write
+>player p2 {"name":"Bob","team":"ThisNameIsFarTooLongToKeep|Lampent|ChippedPot|Infiltrator|Brine,Sludge,MirrorCoat,Moonlight|Quiet|5,9,114,88,182,109|M|||50|,,,,,Flying]Blaziken||SilkScarf|Blaze|Absorb|Brave|49,193,79,4,131,11||||50|,,,,,Bug]Arceus-Fire||MistySeed|Multitype|FrostBreath|Sassy|19,206,22,236,6,3||||50|,,,,,Ghost]Solgaleo|||FullMetalBody|Uproar|Quirky|4,,3,133,213,155||||50|,,,,,Fairy]Big Tony's Pal|DialgaOrigin|MoonStone|Telepathy|AquaJet|Jolly|206,13,43,14,221,4||||50|,,,,,Ice]Masquerain|||Intimidate|HighHorsepower,Thief|Careful|17,19,62,141,12,134|M|||50|,,,,,Ice","rating":1500}
+>p2 move 1
+@write
+>p1 switch 3
+>p2 switch 6
+@write
+>p1 default
+@write
+# a comment
+>p1 move 2
+>p2 switch 3
+@write
+>p2 switch 3
+# a comment
+>p1 move 4 terastallize
+@write
+>p2 switch 2
+>p1 switch 3
+@write
+>p1 move 1
+>p2 move 1 terastallize
+@write
+>p2 dance
+@write
+>p2 switch 6
+>p1 move firefang 2
+@write
+>p1 switch 3
+@write
+>p1 move 1
+# a comment
+>forcewin p2
+@write
+# a comment
+>p1 move 1
+>p1 move 1
+@write
+>chat after the end
+>forcewin p1
+@write
+>tiebreak
+>requestlog
+@write
+>p2 undo
+@message
+update
+|t:|
+|gametype|singles
+|player|p1|Alice||
+@message
+update
+|player|p2|Bob||1500
+|gen|9
+|tier|[Gen 9] Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: Sparky|Cosmoem, L50|118/118
+|switch|p1a: Sparky|Cosmoem, L50|118/118
+|split|p2
+|switch|p2a: ThisNameIsFarTooLong|Lampent, L50, M|136/136
+|switch|p2a: ThisNameIsFarTooLong|Lampent, L50, M|136/136
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Amnesia","id":"amnesia","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Fusion Bolt","id":"fusionbolt","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Fire"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Sparky","details":"Cosmoem, L50","condition":"118/118","active":true,"stats":{"atk":50,"def":179,"spa":76,"spd":135,"spe":71},"moves":["amnesia","fusionbolt"],"baseAbility":"sturdy","item":"earthplate","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Palkia","details":"Palkia-Origin, L50","condition":"176/176","active":false,"stats":{"atk":122,"def":114,"spa":177,"spd":177,"spe":156},"moves":["psychoboost","filletaway"],"baseAbility":"telepathy","item":"nevermeltice","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Minior","details":"Minior-Blue, L50","condition":"142/142","active":false,"stats":{"atk":147,"def":81,"spa":132,"spd":95,"spe":141},"moves":["flareblitz","shiftgear","firefang","dualwingbeat"],"baseAbility":"shieldsdown","item":"passhoberry","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Vivillon","details":"Vivillon-Tundra, L50, F","condition":"156/156","active":false,"stats":{"atk":85,"def":89,"spa":121,"spd":84,"spe":116},"moves":["earthpower","burningjealousy","teatime","gigaimpact"],"baseAbility":"friendguard","item":"diveball","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Mamoswine, L50, F","condition":"196/196","active":false,"stats":{"atk":167,"def":105,"spa":108,"spd":84,"spe":102},"moves":["xscissor","dynamicpunch"],"baseAbility":"snowcloak","item":"duskball","pokeball":"pokeball","ability":"snowcloak","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Nibbles","details":"Spiritomb, L50, F","condition":"148/148","active":false,"stats":{"atk":117,"def":115,"spa":113,"spd":142,"spe":83},"moves":["decorate","psychicterrain","thundershock","snipeshot"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Brine","id":"brine","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sludge","id":"sludge","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Mirror Coat","id":"mirrorcoat","pp":32,"maxpp":32,"target":"scripted","disabled":false},{"move":"Moonlight","id":"moonlight","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Flying"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Lampent, L50, M","condition":"136/136","active":true,"stats":{"atk":61,"def":94,"spa":138,"spd":103,"spe":80},"moves":["brine","sludge","mirrorcoat","moonlight"],"baseAbility":"infiltrator","item":"chippedpot","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Blaziken","details":"Blaziken, L50, F","condition":"161/161","active":false,"stats":{"atk":180,"def":100,"spa":131,"spd":106,"spe":90},"moves":["absorb"],"baseAbility":"blaze","item":"silkscarf","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fire, L50","condition":"197/197","active":false,"stats":{"atk":166,"def":143,"spa":170,"spd":155,"spe":126},"moves":["frostbreath"],"baseAbility":"multitype","item":"mistyseed","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Solgaleo","details":"Solgaleo, L50","condition":"213/213","active":false,"stats":{"atk":157,"def":127,"spa":150,"spd":136,"spe":136},"moves":["uproar"],"baseAbility":"fullmetalbody","item":"","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Dialga-Origin, L50","condition":"201/201","active":false,"stats":{"atk":122,"def":145,"spa":154,"spd":168,"spe":122},"moves":["aquajet"],"baseAbility":"telepathy","item":"moonstone","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Masquerain","details":"Masquerain, L50, M","condition":"147/147","active":false,"stats":{"atk":82,"def":90,"spa":124,"spd":114,"spe":117},"moves":["highhorsepower","thief"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Minior|Minior-Blue, L50|142/142
+|switch|p1a: Minior|Minior-Blue, L50|142/142
+|-formechange|p1a: Minior|Minior-Meteor||[from] ability: Shields Down
+|move|p2a: ThisNameIsFarTooLong|Brine|p1a: Minior
+|-supereffective|p1a: Minior
+|-enditem|p1a: Minior|Passho Berry|[eat]
+|-enditem|p1a: Minior|Passho Berry|[weaken]
+|split|p1
+|-damage|p1a: Minior|115/142
+|-damage|p1a: Minior|115/142
+|
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Fire Fang","id":"firefang","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Steel"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Minior","details":"Minior-Blue, L50","condition":"115/142","active":true,"stats":{"atk":107,"def":121,"spa":92,"spd":135,"spe":81},"moves":["flareblitz","shiftgear","firefang","dualwingbeat"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Palkia","details":"Palkia-Origin, L50","condition":"176/176","active":false,"stats":{"atk":122,"def":114,"spa":177,"spd":177,"spe":156},"moves":["psychoboost","filletaway"],"baseAbility":"telepathy","item":"nevermeltice","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sparky","details":"Cosmoem, L50","condition":"118/118","active":false,"stats":{"atk":50,"def":179,"spa":76,"spd":135,"spe":71},"moves":["amnesia","fusionbolt"],"baseAbility":"sturdy","item":"earthplate","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Vivillon","details":"Vivillon-Tundra, L50, F","condition":"156/156","active":false,"stats":{"atk":85,"def":89,"spa":121,"spd":84,"spe":116},"moves":["earthpower","burningjealousy","teatime","gigaimpact"],"baseAbility":"friendguard","item":"diveball","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Mamoswine, L50, F","condition":"196/196","active":false,"stats":{"atk":167,"def":105,"spa":108,"spd":84,"spe":102},"moves":["xscissor","dynamicpunch"],"baseAbility":"snowcloak","item":"duskball","pokeball":"pokeball","ability":"snowcloak","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Nibbles","details":"Spiritomb, L50, F","condition":"148/148","active":false,"stats":{"atk":117,"def":115,"spa":113,"spd":142,"spe":83},"moves":["decorate","psychicterrain","thundershock","snipeshot"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Brine","id":"brine","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Sludge","id":"sludge","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Mirror Coat","id":"mirrorcoat","pp":32,"maxpp":32,"target":"scripted","disabled":false},{"move":"Moonlight","id":"moonlight","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Flying"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Lampent, L50, M","condition":"136/136","active":true,"stats":{"atk":61,"def":94,"spa":138,"spd":103,"spe":80},"moves":["brine","sludge","mirrorcoat","moonlight"],"baseAbility":"infiltrator","item":"chippedpot","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Blaziken","details":"Blaziken, L50, F","condition":"161/161","active":false,"stats":{"atk":180,"def":100,"spa":131,"spd":106,"spe":90},"moves":["absorb"],"baseAbility":"blaze","item":"silkscarf","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fire, L50","condition":"197/197","active":false,"stats":{"atk":166,"def":143,"spa":170,"spd":155,"spe":126},"moves":["frostbreath"],"baseAbility":"multitype","item":"mistyseed","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Solgaleo","details":"Solgaleo, L50","condition":"213/213","active":false,"stats":{"atk":157,"def":127,"spa":150,"spd":136,"spe":136},"moves":["uproar"],"baseAbility":"fullmetalbody","item":"","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Dialga-Origin, L50","condition":"201/201","active":false,"stats":{"atk":122,"def":145,"spa":154,"spd":168,"spe":122},"moves":["aquajet"],"baseAbility":"telepathy","item":"moonstone","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Masquerain","details":"Masquerain, L50, M","condition":"147/147","active":false,"stats":{"atk":82,"def":90,"spa":124,"spd":114,"spe":117},"moves":["highhorsepower","thief"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Masquerain|Masquerain, L50, M|147/147
+|switch|p2a: Masquerain|Masquerain, L50, M|147/147
+|-ability|p2a: Masquerain|Intimidate|boost
+|-unboost|p1a: Minior|atk|1
+|move|p1a: Minior|Flare Blitz|p2a: Masquerain
+|-supereffective|p2a: Masquerain
+|split|p2
+|-damage|p2a: Masquerain|71/147
+|-damage|p2a: Masquerain|71/147
+|split|p1
+|-damage|p1a: Minior|90/142|[from] Recoil
+|-damage|p1a: Minior|90/142|[from] Recoil
+|
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Fire Fang","id":"firefang","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Steel"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Minior","details":"Minior-Blue, L50","condition":"90/142","active":true,"stats":{"atk":107,"def":121,"spa":92,"spd":135,"spe":81},"moves":["flareblitz","shiftgear","firefang","dualwingbeat"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Palkia","details":"Palkia-Origin, L50","condition":"176/176","active":false,"stats":{"atk":122,"def":114,"spa":177,"spd":177,"spe":156},"moves":["psychoboost","filletaway"],"baseAbility":"telepathy","item":"nevermeltice","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sparky","details":"Cosmoem, L50","condition":"118/118","active":false,"stats":{"atk":50,"def":179,"spa":76,"spd":135,"spe":71},"moves":["amnesia","fusionbolt"],"baseAbility":"sturdy","item":"earthplate","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Vivillon","details":"Vivillon-Tundra, L50, F","condition":"156/156","active":false,"stats":{"atk":85,"def":89,"spa":121,"spd":84,"spe":116},"moves":["earthpower","burningjealousy","teatime","gigaimpact"],"baseAbility":"friendguard","item":"diveball","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Mamoswine, L50, F","condition":"196/196","active":false,"stats":{"atk":167,"def":105,"spa":108,"spd":84,"spe":102},"moves":["xscissor","dynamicpunch"],"baseAbility":"snowcloak","item":"duskball","pokeball":"pokeball","ability":"snowcloak","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Nibbles","details":"Spiritomb, L50, F","condition":"148/148","active":false,"stats":{"atk":117,"def":115,"spa":113,"spd":142,"spe":83},"moves":["decorate","psychicterrain","thundershock","snipeshot"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"High Horsepower","id":"highhorsepower","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":40,"maxpp":40,"target":"normal","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Masquerain","details":"Masquerain, L50, M","condition":"71/147","active":true,"stats":{"atk":82,"def":90,"spa":124,"spd":114,"spe":117},"moves":["highhorsepower","thief"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Blaziken","details":"Blaziken, L50, F","condition":"161/161","active":false,"stats":{"atk":180,"def":100,"spa":131,"spd":106,"spe":90},"moves":["absorb"],"baseAbility":"blaze","item":"silkscarf","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fire, L50","condition":"197/197","active":false,"stats":{"atk":166,"def":143,"spa":170,"spd":155,"spe":126},"moves":["frostbreath"],"baseAbility":"multitype","item":"mistyseed","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Solgaleo","details":"Solgaleo, L50","condition":"213/213","active":false,"stats":{"atk":157,"def":127,"spa":150,"spd":136,"spe":136},"moves":["uproar"],"baseAbility":"fullmetalbody","item":"","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Dialga-Origin, L50","condition":"201/201","active":false,"stats":{"atk":122,"def":145,"spa":154,"spd":168,"spe":122},"moves":["aquajet"],"baseAbility":"telepathy","item":"moonstone","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Lampent, L50, M","condition":"136/136","active":false,"stats":{"atk":61,"def":94,"spa":138,"spd":103,"spe":80},"moves":["brine","sludge","mirrorcoat","moonlight"],"baseAbility":"infiltrator","item":"chippedpot","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Arceus|Arceus-Fire, L50|197/197
+|switch|p2a: Arceus|Arceus-Fire, L50|197/197
+|move|p1a: Minior|Shift Gear|p1a: Minior
+|-boost|p1a: Minior|spe|2
+|-boost|p1a: Minior|atk|1
+|
+|upkeep
+|-start|p2a: Arceus|typechange|Normal|[silent]
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Fire Fang","id":"firefang","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Steel"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Minior","details":"Minior-Blue, L50","condition":"90/142","active":true,"stats":{"atk":107,"def":121,"spa":92,"spd":135,"spe":81},"moves":["flareblitz","shiftgear","firefang","dualwingbeat"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Palkia","details":"Palkia-Origin, L50","condition":"176/176","active":false,"stats":{"atk":122,"def":114,"spa":177,"spd":177,"spe":156},"moves":["psychoboost","filletaway"],"baseAbility":"telepathy","item":"nevermeltice","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sparky","details":"Cosmoem, L50","condition":"118/118","active":false,"stats":{"atk":50,"def":179,"spa":76,"spd":135,"spe":71},"moves":["amnesia","fusionbolt"],"baseAbility":"sturdy","item":"earthplate","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Vivillon","details":"Vivillon-Tundra, L50, F","condition":"156/156","active":false,"stats":{"atk":85,"def":89,"spa":121,"spd":84,"spe":116},"moves":["earthpower","burningjealousy","teatime","gigaimpact"],"baseAbility":"friendguard","item":"diveball","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Mamoswine, L50, F","condition":"196/196","active":false,"stats":{"atk":167,"def":105,"spa":108,"spd":84,"spe":102},"moves":["xscissor","dynamicpunch"],"baseAbility":"snowcloak","item":"duskball","pokeball":"pokeball","ability":"snowcloak","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Nibbles","details":"Spiritomb, L50, F","condition":"148/148","active":false,"stats":{"atk":117,"def":115,"spa":113,"spd":142,"spe":83},"moves":["decorate","psychicterrain","thundershock","snipeshot"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Frost Breath","id":"frostbreath","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Ghost"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Arceus","details":"Arceus-Fire, L50","condition":"197/197","active":true,"stats":{"atk":166,"def":143,"spa":170,"spd":155,"spe":126},"moves":["frostbreath"],"baseAbility":"multitype","item":"mistyseed","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Blaziken","details":"Blaziken, L50, F","condition":"161/161","active":false,"stats":{"atk":180,"def":100,"spa":131,"spd":106,"spe":90},"moves":["absorb"],"baseAbility":"blaze","item":"silkscarf","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Masquerain","details":"Masquerain, L50, M","condition":"71/147","active":false,"stats":{"atk":82,"def":90,"spa":124,"spd":114,"spe":117},"moves":["highhorsepower","thief"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Solgaleo","details":"Solgaleo, L50","condition":"213/213","active":false,"stats":{"atk":157,"def":127,"spa":150,"spd":136,"spe":136},"moves":["uproar"],"baseAbility":"fullmetalbody","item":"","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Dialga-Origin, L50","condition":"201/201","active":false,"stats":{"atk":122,"def":145,"spa":154,"spd":168,"spe":122},"moves":["aquajet"],"baseAbility":"telepathy","item":"moonstone","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Lampent, L50, M","condition":"136/136","active":false,"stats":{"atk":61,"def":94,"spa":138,"spd":103,"spe":80},"moves":["brine","sludge","mirrorcoat","moonlight"],"baseAbility":"infiltrator","item":"chippedpot","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Masquerain|Masquerain, L50, M|71/147
+|switch|p2a: Masquerain|Masquerain, L50, M|71/147
+|-ability|p2a: Masquerain|Intimidate|boost
+|-unboost|p1a: Minior|atk|1
+|-terastallize|p1a: Minior|Steel
+|move|p1a: Minior|Dual Wingbeat|p2a: Masquerain
+|-supereffective|p2a: Masquerain
+|split|p2
+|-damage|p2a: Masquerain|33/147
+|-damage|p2a: Masquerain|33/147
+|-supereffective|p2a: Masquerain
+|split|p2
+|-damage|p2a: Masquerain|0 fnt
+|-damage|p2a: Masquerain|0 fnt
+|faint|p2a: Masquerain
+|-hitcount|p2: Masquerain|2
+|
+|upkeep
+@message
+sideupdate
+p1
+|request|{"wait":true,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Minior","details":"Minior-Blue, L50","condition":"90/142","active":true,"stats":{"atk":107,"def":121,"spa":92,"spd":135,"spe":81},"moves":["flareblitz","shiftgear","firefang","dualwingbeat"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Steel","terastallized":"Steel"},{"ident":"p1: Palkia","details":"Palkia-Origin, L50","condition":"176/176","active":false,"stats":{"atk":122,"def":114,"spa":177,"spd":177,"spe":156},"moves":["psychoboost","filletaway"],"baseAbility":"telepathy","item":"nevermeltice","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sparky","details":"Cosmoem, L50","condition":"118/118","active":false,"stats":{"atk":50,"def":179,"spa":76,"spd":135,"spe":71},"moves":["amnesia","fusionbolt"],"baseAbility":"sturdy","item":"earthplate","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Vivillon","details":"Vivillon-Tundra, L50, F","condition":"156/156","active":false,"stats":{"atk":85,"def":89,"spa":121,"spd":84,"spe":116},"moves":["earthpower","burningjealousy","teatime","gigaimpact"],"baseAbility":"friendguard","item":"diveball","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Mamoswine, L50, F","condition":"196/196","active":false,"stats":{"atk":167,"def":105,"spa":108,"spd":84,"spe":102},"moves":["xscissor","dynamicpunch"],"baseAbility":"snowcloak","item":"duskball","pokeball":"pokeball","ability":"snowcloak","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Nibbles","details":"Spiritomb, L50, F","condition":"148/148","active":false,"stats":{"atk":117,"def":115,"spa":113,"spd":142,"spe":83},"moves":["decorate","psychicterrain","thundershock","snipeshot"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"forceSwitch":[true],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Masquerain","details":"Masquerain, L50, M","condition":"0 fnt","active":true,"stats":{"atk":82,"def":90,"spa":124,"spd":114,"spe":117},"moves":["highhorsepower","thief"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Blaziken","details":"Blaziken, L50, F","condition":"161/161","active":false,"stats":{"atk":180,"def":100,"spa":131,"spd":106,"spe":90},"moves":["absorb"],"baseAbility":"blaze","item":"silkscarf","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fire, L50","condition":"197/197","active":false,"stats":{"atk":166,"def":143,"spa":170,"spd":155,"spe":126},"moves":["frostbreath"],"baseAbility":"multitype","item":"mistyseed","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Solgaleo","details":"Solgaleo, L50","condition":"213/213","active":false,"stats":{"atk":157,"def":127,"spa":150,"spd":136,"spe":136},"moves":["uproar"],"baseAbility":"fullmetalbody","item":"","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Dialga-Origin, L50","condition":"201/201","active":false,"stats":{"atk":122,"def":145,"spa":154,"spd":168,"spe":122},"moves":["aquajet"],"baseAbility":"telepathy","item":"moonstone","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Lampent, L50, M","condition":"136/136","active":false,"stats":{"atk":61,"def":94,"spa":138,"spd":103,"spe":80},"moves":["brine","sludge","mirrorcoat","moonlight"],"baseAbility":"infiltrator","item":"chippedpot","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]},"noCancel":true}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Blaziken|Blaziken, L50, F|161/161
+|switch|p2a: Blaziken|Blaziken, L50, F|161/161
+|turn|5
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Fire Fang","id":"firefang","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Minior","details":"Minior-Blue, L50","condition":"90/142","active":true,"stats":{"atk":107,"def":121,"spa":92,"spd":135,"spe":81},"moves":["flareblitz","shiftgear","firefang","dualwingbeat"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Steel","terastallized":"Steel"},{"ident":"p1: Palkia","details":"Palkia-Origin, L50","condition":"176/176","active":false,"stats":{"atk":122,"def":114,"spa":177,"spd":177,"spe":156},"moves":["psychoboost","filletaway"],"baseAbility":"telepathy","item":"nevermeltice","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sparky","details":"Cosmoem, L50","condition":"118/118","active":false,"stats":{"atk":50,"def":179,"spa":76,"spd":135,"spe":71},"moves":["amnesia","fusionbolt"],"baseAbility":"sturdy","item":"earthplate","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Vivillon","details":"Vivillon-Tundra, L50, F","condition":"156/156","active":false,"stats":{"atk":85,"def":89,"spa":121,"spd":84,"spe":116},"moves":["earthpower","burningjealousy","teatime","gigaimpact"],"baseAbility":"friendguard","item":"diveball","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Mamoswine, L50, F","condition":"196/196","active":false,"stats":{"atk":167,"def":105,"spa":108,"spd":84,"spe":102},"moves":["xscissor","dynamicpunch"],"baseAbility":"snowcloak","item":"duskball","pokeball":"pokeball","ability":"snowcloak","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Nibbles","details":"Spiritomb, L50, F","condition":"148/148","active":false,"stats":{"atk":117,"def":115,"spa":113,"spd":142,"spe":83},"moves":["decorate","psychicterrain","thundershock","snipeshot"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Absorb","id":"absorb","pp":40,"maxpp":40,"target":"normal","disabled":false}],"canTerastallize":"Bug"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Blaziken","details":"Blaziken, L50, F","condition":"161/161","active":true,"stats":{"atk":180,"def":100,"spa":131,"spd":106,"spe":90},"moves":["absorb"],"baseAbility":"blaze","item":"silkscarf","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Masquerain","details":"Masquerain, L50, M","condition":"0 fnt","active":false,"stats":{"atk":82,"def":90,"spa":124,"spd":114,"spe":117},"moves":["highhorsepower","thief"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fire, L50","condition":"197/197","active":false,"stats":{"atk":166,"def":143,"spa":170,"spd":155,"spe":126},"moves":["frostbreath"],"baseAbility":"multitype","item":"mistyseed","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Solgaleo","details":"Solgaleo, L50","condition":"213/213","active":false,"stats":{"atk":157,"def":127,"spa":150,"spd":136,"spe":136},"moves":["uproar"],"baseAbility":"fullmetalbody","item":"","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Dialga-Origin, L50","condition":"201/201","active":false,"stats":{"atk":122,"def":145,"spa":154,"spd":168,"spe":122},"moves":["aquajet"],"baseAbility":"telepathy","item":"moonstone","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Lampent, L50, M","condition":"136/136","active":false,"stats":{"atk":61,"def":94,"spa":138,"spd":103,"spe":80},"moves":["brine","sludge","mirrorcoat","moonlight"],"baseAbility":"infiltrator","item":"chippedpot","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|-terastallize|p2a: Blaziken|Bug
+|move|p1a: Minior|Flare Blitz|p2a: Blaziken
+|-supereffective|p2a: Blaziken
+|split|p2
+|-damage|p2a: Blaziken|91/161
+|-damage|p2a: Blaziken|91/161
+|split|p1
+|-damage|p1a: Minior|67/142|[from] Recoil
+|-damage|p1a: Minior|67/142|[from] Recoil
+|move|p2a: Blaziken|Absorb|p1a: Minior
+|-resisted|p1a: Minior
+|split|p1
+|-damage|p1a: Minior|63/142
+|-damage|p1a: Minior|63/142
+|split|p2
+|-heal|p2a: Blaziken|93/161|[from] drain|[of] p1a: Minior
+|-heal|p2a: Blaziken|93/161|[from] drain|[of] p1a: Minior
+|
+|-formechange|p1a: Minior|Minior-Blue||[from] ability: Shields Down
+|upkeep
+|turn|6
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Flare Blitz","id":"flareblitz","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Shift Gear","id":"shiftgear","pp":15,"maxpp":16,"target":"self","disabled":false},{"move":"Fire Fang","id":"firefang","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Dual Wingbeat","id":"dualwingbeat","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Minior","details":"Minior-Blue, L50","condition":"63/142","active":true,"stats":{"atk":147,"def":81,"spa":132,"spd":95,"spe":141},"moves":["flareblitz","shiftgear","firefang","dualwingbeat"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Steel","terastallized":"Steel"},{"ident":"p1: Palkia","details":"Palkia-Origin, L50","condition":"176/176","active":false,"stats":{"atk":122,"def":114,"spa":177,"spd":177,"spe":156},"moves":["psychoboost","filletaway"],"baseAbility":"telepathy","item":"nevermeltice","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Sparky","details":"Cosmoem, L50","condition":"118/118","active":false,"stats":{"atk":50,"def":179,"spa":76,"spd":135,"spe":71},"moves":["amnesia","fusionbolt"],"baseAbility":"sturdy","item":"earthplate","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Vivillon","details":"Vivillon-Tundra, L50, F","condition":"156/156","active":false,"stats":{"atk":85,"def":89,"spa":121,"spd":84,"spe":116},"moves":["earthpower","burningjealousy","teatime","gigaimpact"],"baseAbility":"friendguard","item":"diveball","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Mamoswine, L50, F","condition":"196/196","active":false,"stats":{"atk":167,"def":105,"spa":108,"spd":84,"spe":102},"moves":["xscissor","dynamicpunch"],"baseAbility":"snowcloak","item":"duskball","pokeball":"pokeball","ability":"snowcloak","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Nibbles","details":"Spiritomb, L50, F","condition":"148/148","active":false,"stats":{"atk":117,"def":115,"spa":113,"spd":142,"spe":83},"moves":["decorate","psychicterrain","thundershock","snipeshot"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Absorb","id":"absorb","pp":39,"maxpp":40,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Blaziken","details":"Blaziken, L50, F","condition":"93/161","active":true,"stats":{"atk":180,"def":100,"spa":131,"spd":106,"spe":90},"moves":["absorb"],"baseAbility":"blaze","item":"silkscarf","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p2: Masquerain","details":"Masquerain, L50, M","condition":"0 fnt","active":false,"stats":{"atk":82,"def":90,"spa":124,"spd":114,"spe":117},"moves":["highhorsepower","thief"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fire, L50","condition":"197/197","active":false,"stats":{"atk":166,"def":143,"spa":170,"spd":155,"spe":126},"moves":["frostbreath"],"baseAbility":"multitype","item":"mistyseed","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Solgaleo","details":"Solgaleo, L50","condition":"213/213","active":false,"stats":{"atk":157,"def":127,"spa":150,"spd":136,"spe":136},"moves":["uproar"],"baseAbility":"fullmetalbody","item":"","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Dialga-Origin, L50","condition":"201/201","active":false,"stats":{"atk":122,"def":145,"spa":154,"spd":168,"spe":122},"moves":["aquajet"],"baseAbility":"telepathy","item":"moonstone","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Lampent, L50, M","condition":"136/136","active":false,"stats":{"atk":61,"def":94,"spa":138,"spd":103,"spe":80},"moves":["brine","sludge","mirrorcoat","moonlight"],"baseAbility":"infiltrator","item":"chippedpot","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Unrecognized choice: dance
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Invalid target for Fire Fang
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Sparky|Cosmoem, L50|118/118
+|switch|p1a: Sparky|Cosmoem, L50|118/118
+|split|p2
+|switch|p2a: ThisNameIsFarTooLong|Lampent, L50, M|136/136
+|switch|p2a: ThisNameIsFarTooLong|Lampent, L50, M|136/136
+|
+|upkeep
+|turn|7
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Amnesia","id":"amnesia","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Fusion Bolt","id":"fusionbolt","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Sparky","details":"Cosmoem, L50","condition":"118/118","active":true,"stats":{"atk":50,"def":179,"spa":76,"spd":135,"spe":71},"moves":["amnesia","fusionbolt"],"baseAbility":"sturdy","item":"earthplate","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Palkia","details":"Palkia-Origin, L50","condition":"176/176","active":false,"stats":{"atk":122,"def":114,"spa":177,"spd":177,"spe":156},"moves":["psychoboost","filletaway"],"baseAbility":"telepathy","item":"nevermeltice","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Minior","details":"Minior-Blue, L50","condition":"63/142","active":false,"stats":{"atk":147,"def":81,"spa":132,"spd":95,"spe":141},"moves":["flareblitz","shiftgear","firefang","dualwingbeat"],"baseAbility":"shieldsdown","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Steel","terastallized":"Steel"},{"ident":"p1: Vivillon","details":"Vivillon-Tundra, L50, F","condition":"156/156","active":false,"stats":{"atk":85,"def":89,"spa":121,"spd":84,"spe":116},"moves":["earthpower","burningjealousy","teatime","gigaimpact"],"baseAbility":"friendguard","item":"diveball","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Mamoswine, L50, F","condition":"196/196","active":false,"stats":{"atk":167,"def":105,"spa":108,"spd":84,"spe":102},"moves":["xscissor","dynamicpunch"],"baseAbility":"snowcloak","item":"duskball","pokeball":"pokeball","ability":"snowcloak","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Nibbles","details":"Spiritomb, L50, F","condition":"148/148","active":false,"stats":{"atk":117,"def":115,"spa":113,"spd":142,"spe":83},"moves":["decorate","psychicterrain","thundershock","snipeshot"],"baseAbility":"infiltrator","item":"","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Brine","id":"brine","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Sludge","id":"sludge","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Mirror Coat","id":"mirrorcoat","pp":32,"maxpp":32,"target":"scripted","disabled":false},{"move":"Moonlight","id":"moonlight","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Lampent, L50, M","condition":"136/136","active":true,"stats":{"atk":61,"def":94,"spa":138,"spd":103,"spe":80},"moves":["brine","sludge","mirrorcoat","moonlight"],"baseAbility":"infiltrator","item":"chippedpot","pokeball":"pokeball","ability":"infiltrator","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Masquerain","details":"Masquerain, L50, M","condition":"0 fnt","active":false,"stats":{"atk":82,"def":90,"spa":124,"spd":114,"spe":117},"moves":["highhorsepower","thief"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fire, L50","condition":"197/197","active":false,"stats":{"atk":166,"def":143,"spa":170,"spd":155,"spe":126},"moves":["frostbreath"],"baseAbility":"multitype","item":"mistyseed","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Solgaleo","details":"Solgaleo, L50","condition":"213/213","active":false,"stats":{"atk":157,"def":127,"spa":150,"spd":136,"spe":136},"moves":["uproar"],"baseAbility":"fullmetalbody","item":"","pokeball":"pokeball","ability":"fullmetalbody","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Dialga-Origin, L50","condition":"201/201","active":false,"stats":{"atk":122,"def":145,"spa":154,"spd":168,"spe":122},"moves":["aquajet"],"baseAbility":"telepathy","item":"moonstone","pokeball":"pokeball","ability":"telepathy","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Blaziken","details":"Blaziken, L50, F","condition":"93/161","active":false,"stats":{"atk":180,"def":100,"spa":131,"spd":106,"spe":90},"moves":["absorb"],"baseAbility":"blaze","item":"silkscarf","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"}]}}
+@message
+update
+|
+|win|Bob
+@message
+end
+{"winner":"Bob","seed":"sodium,4bf7062959e5e644058f7ad15b33a904","turns":7,"p1":"Alice","p2":"Bob","p1team":[{"name":"Sparky","species":"Cosmoem","item":"Earth Plate","ability":"Sturdy","moves":["Amnesia","Fusion Bolt"],"nature":"Naive","evs":{"hp":2,"atk":9,"def":222,"spa":217,"spd":0,"spe":60},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Palkia","species":"Palkia-Origin","item":"Never-Melt Ice","ability":"Telepathy","moves":["Psycho Boost","Fillet Away"],"nature":"Gentle","evs":{"hp":89,"atk":15,"def":54,"spa":53,"spd":169,"spe":127},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Minior","species":"Minior-Blue","item":"Passho Berry","ability":"Shields Down","moves":["Flare Blitz","Shift Gear","Fire Fang","Dual Wingbeat"],"nature":"Bashful","evs":{"hp":56,"atk":218,"def":10,"spa":95,"spd":119,"spe":9},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Vivillon","species":"Vivillon-Tundra","item":"Dive Ball","ability":"Friend Guard","moves":["Earth Power","Burning Jealousy","Teatime","Giga Impact"],"nature":"Mild","evs":{"hp":6,"atk":101,"def":230,"spa":1,"spd":112,"spe":56},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"X","species":"Mamoswine","item":"Dusk Ball","ability":"Snow Cloak","moves":["X-Scissor","Dynamic Punch"],"nature":"Hardy","evs":{"hp":91,"atk":135,"def":43,"spa":143,"spd":35,"spe":17},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Nibbles","species":"Spiritomb","item":"","ability":"Infiltrator","moves":["Decorate","Psychic Terrain","Thunder Shock","Snipe Shot"],"nature":"Hasty","evs":{"hp":184,"atk":40,"def":0,"spa":5,"spd":111,"spe":168},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"ThisNameIsFarTooLongToKeep","species":"Lampent","item":"Chipped Pot","ability":"Infiltrator","moves":["Brine","Sludge","Mirror Coat","Moonlight"],"nature":"Quiet","evs":{"hp":5,"atk":9,"def":114,"spa":88,"spd":182,"spe":109},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Blaziken","species":"Blaziken","item":"Silk Scarf","ability":"Blaze","moves":["Absorb"],"nature":"Brave","evs":{"hp":49,"atk":193,"def":79,"spa":4,"spd":131,"spe":11},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Arceus","species":"Arceus-Fire","item":"Misty Seed","ability":"Multitype","moves":["Frost Breath"],"nature":"Sassy","evs":{"hp":19,"atk":206,"def":22,"spa":236,"spd":6,"spe":3},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Solgaleo","species":"Solgaleo","item":"","ability":"Full Metal Body","moves":["Uproar"],"nature":"Quirky","evs":{"hp":4,"atk":0,"def":3,"spa":133,"spd":213,"spe":155},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Dialga-Origin","item":"Moon Stone","ability":"Telepathy","moves":["Aqua Jet"],"nature":"Jolly","evs":{"hp":206,"atk":13,"def":43,"spa":14,"spd":221,"spe":4},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Masquerain","species":"Masquerain","item":"","ability":"Intimidate","moves":["High Horsepower","Thief"],"nature":"Careful","evs":{"hp":17,"atk":19,"def":62,"spa":141,"spd":12,"spe":134},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[6,5],"inputLog":[">start {\"formatid\":\"gen9customgame@@@!Team Preview\",\"seed\":\"sodium,4bf7062959e5e644058f7ad15b33a904\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Sparky|Cosmoem|EarthPlate|Sturdy|Amnesia,FusionBolt|Naive|2,9,222,217,,60||||50|,,,,,Fire]Palkia-Origin||NeverMeltIce|Telepathy|PsychoBoost,FilletAway|Gentle|89,15,54,53,169,127||||50|,,,,,Electric]Minior-Blue||PasshoBerry|ShieldsDown|FlareBlitz,ShiftGear,FireFang,DualWingbeat|Bashful|56,218,10,95,119,9||||50|,,,,,Steel]Vivillon-Tundra||DiveBall|FriendGuard|EarthPower,BurningJealousy,Teatime,GigaImpact|Mild|6,101,230,1,112,56||||50|,,,,,Grass]X|Mamoswine|DuskBall|SnowCloak|XScissor,DynamicPunch|Hardy|91,135,43,143,35,17|F|||50|,,,,,Steel]Nibbles|Spiritomb||Infiltrator|Decorate,PsychicTerrain,ThunderShock,SnipeShot|Hasty|184,40,,5,111,168||||50|,,,,,Fairy\"}",">player p2 {\"name\":\"Bob\",\"team\":\"ThisNameIsFarTooLongToKeep|Lampent|ChippedPot|Infiltrator|Brine,Sludge,MirrorCoat,Moonlight|Quiet|5,9,114,88,182,109|M|||50|,,,,,Flying]Blaziken||SilkScarf|Blaze|Absorb|Brave|49,193,79,4,131,11||||50|,,,,,Bug]Arceus-Fire||MistySeed|Multitype|FrostBreath|Sassy|19,206,22,236,6,3||||50|,,,,,Ghost]Solgaleo|||FullMetalBody|Uproar|Quirky|4,,3,133,213,155||||50|,,,,,Fairy]Big Tony's Pal|DialgaOrigin|MoonStone|Telepathy|AquaJet|Jolly|206,13,43,14,221,4||||50|,,,,,Ice]Masquerain|||Intimidate|HighHorsepower,Thief|Careful|17,19,62,141,12,134|M|||50|,,,,,Ice\",\"rating\":1500}",">p1 switch 3",">p2 move brine",">p1 move flareblitz",">p2 switch 6",">p1 move shiftgear",">p2 switch 3",">p1 move dualwingbeat terastallize",">p2 switch 3",">p2 switch 2",">p1 move flareblitz",">p2 move absorb terastallize",">p1 switch 3",">p2 switch 6",">forcewin p2"]}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+update
+|chat|after the end
+@message
+requesteddata
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"sodium,4bf7062959e5e644058f7ad15b33a904"}
+>player p1 {"name":"Alice","team":"Sparky|Cosmoem|EarthPlate|Sturdy|Amnesia,FusionBolt|Naive|2,9,222,217,,60||||50|,,,,,Fire]Palkia-Origin||NeverMeltIce|Telepathy|PsychoBoost,FilletAway|Gentle|89,15,54,53,169,127||||50|,,,,,Electric]Minior-Blue||PasshoBerry|ShieldsDown|FlareBlitz,ShiftGear,FireFang,DualWingbeat|Bashful|56,218,10,95,119,9||||50|,,,,,Steel]Vivillon-Tundra||DiveBall|FriendGuard|EarthPower,BurningJealousy,Teatime,GigaImpact|Mild|6,101,230,1,112,56||||50|,,,,,Grass]X|Mamoswine|DuskBall|SnowCloak|XScissor,DynamicPunch|Hardy|91,135,43,143,35,17|F|||50|,,,,,Steel]Nibbles|Spiritomb||Infiltrator|Decorate,PsychicTerrain,ThunderShock,SnipeShot|Hasty|184,40,,5,111,168||||50|,,,,,Fairy"}
+>player p2 {"name":"Bob","team":"ThisNameIsFarTooLongToKeep|Lampent|ChippedPot|Infiltrator|Brine,Sludge,MirrorCoat,Moonlight|Quiet|5,9,114,88,182,109|M|||50|,,,,,Flying]Blaziken||SilkScarf|Blaze|Absorb|Brave|49,193,79,4,131,11||||50|,,,,,Bug]Arceus-Fire||MistySeed|Multitype|FrostBreath|Sassy|19,206,22,236,6,3||||50|,,,,,Ghost]Solgaleo|||FullMetalBody|Uproar|Quirky|4,,3,133,213,155||||50|,,,,,Fairy]Big Tony's Pal|DialgaOrigin|MoonStone|Telepathy|AquaJet|Jolly|206,13,43,14,221,4||||50|,,,,,Ice]Masquerain|||Intimidate|HighHorsepower,Thief|Careful|17,19,62,141,12,134|M|||50|,,,,,Ice","rating":1500}
+>p1 switch 3
+>p2 move brine
+>p1 move flareblitz
+>p2 switch 6
+>p1 move shiftgear
+>p2 switch 3
+>p1 move dualwingbeat terastallize
+>p2 switch 3
+>p2 switch 2
+>p1 move flareblitz
+>p2 move absorb terastallize
+>p1 switch 3
+>p2 switch 6
+>forcewin p2
+>chat after the end
+>forcewin p1

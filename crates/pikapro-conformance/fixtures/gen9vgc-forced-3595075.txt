@@ -1,0 +1,408 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 083b d922 a57a 1200
+genders drawn
+team p1
+Diancie @ Ultra Ball
+Ability: Clear Body
+Level: 50
+Tera Type: Electric
+EVs: 1 HP / 234 Atk / 80 Def / 146 SpA / 49 Spe
+Lax Nature
+- Detect
+- Round
+- Dive
+
+Big Tony's Pal (Pawmot)
+Ability: Iron Fist
+Level: 50
+Shiny: Yes
+Tera Type: Normal
+EVs: 219 HP / 205 Atk / 31 Def / 36 SpA / 3 SpD / 5 Spe
+Modest Nature
+- Double Shock
+- Close Combat
+- Protect
+
+Buizel
+Ability: Water Veil
+Level: 50
+Tera Type: Normal
+EVs: 7 HP / 201 Atk / 64 Def / 18 SpA / 57 SpD / 161 Spe
+Rash Nature
+- Cosmic Power
+- Leaf Storm
+- Sunny Day
+- Acid
+
+Munchlax
+Ability: Thick Fat
+Level: 50
+Tera Type: Fairy
+EVs: 174 HP / 8 Atk / 4 Def / 24 SpA / 230 SpD / 63 Spe
+Careful Nature
+- Stone Axe
+- Shadow Claw
+- Hyper Drill
+- Destiny Bond
+
+Ditto
+Ability: Imposter
+Level: 50
+Tera Type: Steel
+EVs: 232 HP / 61 Atk / 93 Def / 1 SpA / 55 SpD / 53 Spe
+Brave Nature
+- Transform
+
+X (Porygon-Z) (F)
+Ability: Adaptability
+Level: 50
+Tera Type: Ghost
+EVs: 16 HP / 26 Atk / 218 SpA / 77 SpD / 102 Spe
+Quirky Nature
+- Conversion
+- Conversion 2
+- Tri Attack
+end
+team p2
+Rotom-Wash (M)
+Ability: Levitate
+Level: 50
+Tera Type: Ground
+EVs: 10 HP / 235 Atk / 204 Def / 52 SpA / 3 SpD
+Lax Nature
+- Double Shock
+- Hydro Pump
+
+Moltres (M)
+Ability: Pressure
+Level: 50
+Tera Type: Electric
+EVs: 242 HP / 5 Atk / 137 Def / 50 SpA / 11 SpD / 53 Spe
+Sassy Nature
+- Burn Up
+- Roost
+- Hurricane
+
+Hippopotas (F) @ Bottle Cap
+Ability: Sand Force
+Level: 50
+Tera Type: Stellar
+EVs: 21 HP / 3 Atk / 246 SpA / 1 SpD / 239 Spe
+Quiet Nature
+- Scratch
+- Smog
+- Whirlpool
+- Heat Crash
+
+Big Tony's Pal (Rotom-Heat)
+Ability: Levitate
+Level: 50
+Tera Type: Fire
+EVs: 184 HP / 49 Atk / 67 Def / 205 SpD
+Lax Nature
+- Burn Up
+- Double Shock
+- Protect
+
+X (Beartic) (F)
+Ability: Swift Swim
+Level: 50
+Tera Type: Fire
+EVs: 5 HP / 12 Atk / 235 Def / 251 SpA / 3 SpD / 3 Spe
+Hasty Nature
+- Mach Punch
+
+Nibbles (Ampharos) @ Figy Berry
+Ability: Static
+Level: 50
+Tera Type: Bug
+EVs: 192 HP / 23 Atk / 4 Def / 122 SpA / 164 SpD / 2 Spe
+Rash Nature
+- Grav Apple
+- Water Gun
+- Thunder
+end
+choice p1 team 6142
+choice p2 team 2641
+choice p1 move 3 -2, move 3 1 terastallize
+choice p2 move 1 1 terastallize, move 3 -1
+choice p1 move 3 1, move 1
+choice p2 move 1 -2, switch 3
+choice p1 move 3 -2, move 3 1
+choice p2 switch Rotom, move Protect
+choice p1 pass, switch 3
+choice p2 move 1 2, switch 4
+choice p1 move triattack -2,move 1 +2
+choice p2 move doubleshock -2, switch ampharos
+choice p1 move 3 -2, move 3 -1
+choice p1 pass, switch 4
+choice p2 switch 4, move 1 2
+choice p1 move 3 2, move 2 -1
+choice p2 move 1 2, move 3 -1
+choice p1 pass, move 2 2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Diancie, L50|
+expect |poke|p1|Pawmot, L50, F|
+expect |poke|p1|Buizel, L50, F|
+expect |poke|p1|Munchlax, L50, F|
+expect |poke|p1|Ditto, L50|
+expect |poke|p1|Porygon-Z, L50, F|
+expect |poke|p2|Rotom-Wash, L50, M|
+expect |poke|p2|Moltres, L50, M|
+expect |poke|p2|Hippopotas, L50, F|
+expect |poke|p2|Rotom-Heat, L50|
+expect |poke|p2|Beartic, L50, F|
+expect |poke|p2|Ampharos, L50, M|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: X|Porygon-Z, L50, F|162/162
+expect |switch|p1a: X|Porygon-Z, L50, F|162/162
+expect |split|p1
+expect |switch|p1b: Diancie|Diancie, L50|125/125
+expect |switch|p1b: Diancie|Diancie, L50|125/125
+expect |split|p2
+expect |switch|p2a: Moltres|Moltres, L50, M|195/195
+expect |switch|p2a: Moltres|Moltres, L50, M|195/195
+expect |split|p2
+expect |switch|p2b: Nibbles|Ampharos, L50, M|189/189
+expect |switch|p2b: Nibbles|Ampharos, L50, M|189/189
+expect |-ability|p2a: Moltres|Pressure
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p2a: Moltres|Electric
+expect |-terastallize|p1b: Diancie|Electric
+expect |move|p1a: X|Tri Attack|p1b: Diancie
+expect |rng|100|63
+expect |rng|24|23
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Diancie|41/125
+expect |-damage|p1b: Diancie|41/125
+expect |rng|100|94
+expect |move|p2a: Moltres|Burn Up||[still]
+expect |-fail|p2a: Moltres|move: Burn Up
+expect |move|p1b: Diancie|Dive||[still]
+expect |-prepare|p1b: Diancie|Dive
+expect |move|p2b: Nibbles|Thunder|p2a: Moltres
+expect |rng|100|63
+expect |rng|24|2
+expect |rng|16|8
+expect |-resisted|p2a: Moltres
+expect |split|p2
+expect |-damage|p2a: Moltres|147/195
+expect |-damage|p2a: Moltres|147/195
+expect |rng|100|7
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Big Tony's Pal|Rotom-Heat, L50|148/148
+expect |switch|p2b: Big Tony's Pal|Rotom-Heat, L50|148/148
+expect |move|p1a: X|Tri Attack|p2a: Moltres
+expect |rng|100|36
+expect |rng|24|11
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Moltres|47/195
+expect |-damage|p2a: Moltres|47/195
+expect |rng|100|78
+expect |move|p2a: Moltres|Burn Up||[still]
+expect |-fail|p2a: Moltres|move: Burn Up
+expect |move|p1b: Diancie|Dive|p2a: Moltres|[from] lockedmove
+expect |rng|100|47
+expect |rng|24|23
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Moltres|7/195
+expect |-damage|p2a: Moltres|7/195
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Rotom|Rotom-Wash, L50, M|126/126
+expect |switch|p2a: Rotom|Rotom-Wash, L50, M|126/126
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Big Tony's Pal|Protect|p2b: Big Tony's Pal
+expect |-singleturn|p2b: Big Tony's Pal|Protect
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: X|Tri Attack|p1b: Diancie
+expect |rng|100|15
+expect |rng|24|14
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Diancie|0 fnt
+expect |-damage|p1b: Diancie|0 fnt
+expect |rng|100|10
+expect |rng|3|0
+expect |rng|2|0
+expect |faint|p1b: Diancie
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Munchlax|Munchlax, L50, F|232/232
+expect |switch|p1b: Munchlax|Munchlax, L50, F|232/232
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |turn|4
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |split|p2
+expect |switch|p2b: Moltres|Moltres, L50, M, tera:Electric|7/195
+expect |switch|p2b: Moltres|Moltres, L50, M, tera:Electric|7/195
+expect |-ability|p2b: Moltres|Pressure
+expect |move|p1a: X|Tri Attack|p1b: Munchlax
+expect |rng|100|6
+expect |rng|24|2
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1b: Munchlax|154/232
+expect |-damage|p1b: Munchlax|154/232
+expect |rng|100|58
+expect |move|p2a: Rotom|Double Shock|p1b: Munchlax
+expect |rng|100|2
+expect |rng|24|14
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Munchlax|25/232
+expect |-damage|p1b: Munchlax|25/232
+expect |-start|p2a: Rotom|typechange|???/Water|[from] move: Double Shock
+expect |move|p1b: Munchlax|Stone Axe|p2b: Moltres|[miss]
+expect |rng|100|92
+expect |-miss|p1b: Munchlax|p2b: Moltres
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Nibbles|Ampharos, L50, M|189/189
+expect |switch|p2b: Nibbles|Ampharos, L50, M|189/189
+expect |move|p1a: X|Tri Attack|p1b: Munchlax
+expect |rng|100|30
+expect |rng|24|1
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Munchlax|0 fnt
+expect |-damage|p1b: Munchlax|0 fnt
+expect |rng|100|66
+expect |faint|p1b: Munchlax
+expect |move|p2a: Rotom|Double Shock||[still]
+expect |-fail|p2a: Rotom|move: Double Shock
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Big Tony's Pal|Pawmot, L50, F, shiny|172/172
+expect |switch|p1b: Big Tony's Pal|Pawmot, L50, F, shiny|172/172
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Big Tony's Pal|Rotom-Heat, L50|148/148
+expect |switch|p2a: Big Tony's Pal|Rotom-Heat, L50|148/148
+expect |move|p1b: Big Tony's Pal|Close Combat|p1a: X
+expect |rng|100|16
+expect |rng|24|17
+expect |rng|16|14
+expect |-supereffective|p1a: X
+expect |split|p1
+expect |-damage|p1a: X|0 fnt
+expect |-damage|p1a: X|0 fnt
+expect |rng|100|3
+expect |-unboost|p1b: Big Tony's Pal|def|1
+expect |-unboost|p1b: Big Tony's Pal|spd|1
+expect |faint|p1a: X
+expect |move|p2b: Nibbles|Grav Apple|p1b: Big Tony's Pal
+expect |rng|100|50
+expect |rng|24|12
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|122/172
+expect |-damage|p1b: Big Tony's Pal|122/172
+expect |rng|100|50
+expect |-unboost|p1b: Big Tony's Pal|def|1
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1b: Big Tony's Pal|Close Combat|p2b: Nibbles
+expect |rng|100|69
+expect |rng|24|2
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Nibbles|89/189
+expect |-damage|p2b: Nibbles|89/189
+expect |rng|100|43
+expect |-unboost|p1b: Big Tony's Pal|def|1
+expect |-unboost|p1b: Big Tony's Pal|spd|1
+expect |rng|10|8
+expect |move|p2a: Big Tony's Pal|Burn Up|p1b: Big Tony's Pal
+expect |rng|100|58
+expect |rng|24|13
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|0 fnt
+expect |-damage|p1b: Big Tony's Pal|0 fnt
+expect |-start|p2a: Big Tony's Pal|typechange|Electric/???|[from] move: Burn Up
+expect |faint|p1b: Big Tony's Pal
+expect |
+expect |win|p2
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Diancie","details":"Diancie, L50","condition":"125/125","active":true,"stats":{"atk":149,"def":198,"spa":138,"spd":153,"spe":76},"moves":["detect","round","dive"],"baseAbility":"clearbody","item":"ultraball","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Pawmot, L50, F, shiny","condition":"172/172","active":true,"stats":{"atk":144,"def":94,"spa":104,"spd":80,"spe":126},"moves":["doubleshock","closecombat","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Buizel","details":"Buizel, L50, F","condition":"131/131","active":false,"stats":{"atk":110,"def":63,"spa":90,"spd":51,"spe":125},"moves":["cosmicpower","leafstorm","sunnyday","acid"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Munchlax","details":"Munchlax, L50, F","condition":"232/232","active":false,"stats":{"atk":106,"def":61,"spa":56,"spd":147,"spe":33},"moves":["stoneaxe","shadowclaw","hyperdrill","destinybond"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Ditto","details":"Ditto, L50","condition":"152/152","active":false,"stats":{"atk":83,"def":80,"spa":68,"spd":75,"spe":67},"moves":["transform"],"baseAbility":"imposter","item":"","pokeball":"pokeball","ability":"imposter","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: X","details":"Porygon-Z, L50, F","condition":"162/162","active":false,"stats":{"atk":103,"def":90,"spa":182,"spd":105,"spe":123},"moves":["conversion","conversion2","triattack"],"baseAbility":"adaptability","item":"","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Rotom","details":"Rotom-Wash, L50, M","condition":"126/126","active":true,"stats":{"atk":114,"def":168,"spa":132,"spd":114,"spe":106},"moves":["doubleshock","hydropump"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50, M","condition":"195/195","active":true,"stats":{"atk":121,"def":127,"spa":151,"spd":116,"spe":105},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Hippopotas","details":"Hippopotas, L50, F","condition":"146/146","active":false,"stats":{"atk":92,"def":98,"spa":97,"spd":62,"spe":73},"moves":["scratch","smog","whirlpool","heatcrash"],"baseAbility":"sandforce","item":"bottlecap","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Rotom-Heat, L50","condition":"148/148","active":false,"stats":{"atk":91,"def":148,"spa":125,"spd":137,"spe":106},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: X","details":"Beartic, L50, F","condition":"171/171","active":false,"stats":{"atk":152,"def":116,"spa":121,"spd":100,"spe":77},"moves":["machpunch"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Nibbles","details":"Ampharos, L50, M","condition":"189/189","active":false,"stats":{"atk":98,"def":106,"spa":165,"spd":117,"spe":75},"moves":["gravapple","watergun","thunder"],"baseAbility":"static","item":"figyberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Conversion","id":"conversion","pp":48,"maxpp":48,"target":"self","disabled":false},{"move":"Conversion 2","id":"conversion2","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Tri Attack","id":"triattack","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Ghost"},{"moves":[{"move":"Detect","id":"detect","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Round","id":"round","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Dive","id":"dive","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Porygon-Z, L50, F","condition":"162/162","active":true,"stats":{"atk":103,"def":90,"spa":182,"spd":105,"spe":123},"moves":["conversion","conversion2","triattack"],"baseAbility":"adaptability","item":"","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Diancie","details":"Diancie, L50","condition":"125/125","active":true,"stats":{"atk":149,"def":198,"spa":138,"spd":153,"spe":76},"moves":["detect","round","dive"],"baseAbility":"clearbody","item":"ultraball","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Munchlax","details":"Munchlax, L50, F","condition":"232/232","active":false,"stats":{"atk":106,"def":61,"spa":56,"spd":147,"spe":33},"moves":["stoneaxe","shadowclaw","hyperdrill","destinybond"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Pawmot, L50, F, shiny","condition":"172/172","active":false,"stats":{"atk":144,"def":94,"spa":104,"spd":80,"spe":126},"moves":["doubleshock","closecombat","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":16,"maxpp":16,"target":"any","disabled":false}],"canTerastallize":"Electric"},{"moves":[{"move":"Grav Apple","id":"gravapple","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Water Gun","id":"watergun","pp":40,"maxpp":40,"target":"normal","disabled":false},{"move":"Thunder","id":"thunder","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Bug"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Moltres","details":"Moltres, L50, M","condition":"195/195","active":true,"stats":{"atk":121,"def":127,"spa":151,"spd":116,"spe":105},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Nibbles","details":"Ampharos, L50, M","condition":"189/189","active":true,"stats":{"atk":98,"def":106,"spa":165,"spd":117,"spe":75},"moves":["gravapple","watergun","thunder"],"baseAbility":"static","item":"figyberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Rotom-Heat, L50","condition":"148/148","active":false,"stats":{"atk":91,"def":148,"spa":125,"spd":137,"spe":106},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Wash, L50, M","condition":"126/126","active":false,"stats":{"atk":114,"def":168,"spa":132,"spd":114,"spe":106},"moves":["doubleshock","hydropump"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Conversion","id":"conversion","pp":48,"maxpp":48,"target":"self","disabled":false},{"move":"Conversion 2","id":"conversion2","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Tri Attack","id":"triattack","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Dive","id":"dive"}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Porygon-Z, L50, F","condition":"162/162","active":true,"stats":{"atk":103,"def":90,"spa":182,"spd":105,"spe":123},"moves":["conversion","conversion2","triattack"],"baseAbility":"adaptability","item":"","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Diancie","details":"Diancie, L50","condition":"41/125","active":true,"stats":{"atk":149,"def":198,"spa":138,"spd":153,"spe":76},"moves":["detect","round","dive"],"baseAbility":"clearbody","item":"ultraball","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: Munchlax","details":"Munchlax, L50, F","condition":"232/232","active":false,"stats":{"atk":106,"def":61,"spa":56,"spd":147,"spe":33},"moves":["stoneaxe","shadowclaw","hyperdrill","destinybond"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Pawmot, L50, F, shiny","condition":"172/172","active":false,"stats":{"atk":144,"def":94,"spa":104,"spd":80,"spe":126},"moves":["doubleshock","closecombat","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":16,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Grav Apple","id":"gravapple","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Water Gun","id":"watergun","pp":40,"maxpp":40,"target":"normal","disabled":false},{"move":"Thunder","id":"thunder","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Moltres","details":"Moltres, L50, M","condition":"147/195","active":true,"stats":{"atk":121,"def":127,"spa":151,"spd":116,"spe":105},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Nibbles","details":"Ampharos, L50, M","condition":"189/189","active":true,"stats":{"atk":98,"def":106,"spa":165,"spd":117,"spe":75},"moves":["gravapple","watergun","thunder"],"baseAbility":"static","item":"figyberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Rotom-Heat, L50","condition":"148/148","active":false,"stats":{"atk":91,"def":148,"spa":125,"spd":137,"spe":106},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Wash, L50, M","condition":"126/126","active":false,"stats":{"atk":114,"def":168,"spa":132,"spd":114,"spe":106},"moves":["doubleshock","hydropump"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Conversion","id":"conversion","pp":48,"maxpp":48,"target":"self","disabled":false},{"move":"Conversion 2","id":"conversion2","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Tri Attack","id":"triattack","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Detect","id":"detect","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Round","id":"round","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Dive","id":"dive","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Porygon-Z, L50, F","condition":"162/162","active":true,"stats":{"atk":103,"def":90,"spa":182,"spd":105,"spe":123},"moves":["conversion","conversion2","triattack"],"baseAbility":"adaptability","item":"","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Diancie","details":"Diancie, L50","condition":"41/125","active":true,"stats":{"atk":149,"def":198,"spa":138,"spd":153,"spe":76},"moves":["detect","round","dive"],"baseAbility":"clearbody","item":"ultraball","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: Munchlax","details":"Munchlax, L50, F","condition":"232/232","active":false,"stats":{"atk":106,"def":61,"spa":56,"spd":147,"spe":33},"moves":["stoneaxe","shadowclaw","hyperdrill","destinybond"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Pawmot, L50, F, shiny","condition":"172/172","active":false,"stats":{"atk":144,"def":94,"spa":104,"spd":80,"spe":126},"moves":["doubleshock","closecombat","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":16,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Moltres","details":"Moltres, L50, M","condition":"7/195","active":true,"stats":{"atk":121,"def":127,"spa":151,"spd":116,"spe":105},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Big Tony's Pal","details":"Rotom-Heat, L50","condition":"148/148","active":true,"stats":{"atk":91,"def":148,"spa":125,"spd":137,"spe":106},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Nibbles","details":"Ampharos, L50, M","condition":"189/189","active":false,"stats":{"atk":98,"def":106,"spa":165,"spd":117,"spe":75},"moves":["gravapple","watergun","thunder"],"baseAbility":"static","item":"figyberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Wash, L50, M","condition":"126/126","active":false,"stats":{"atk":114,"def":168,"spa":132,"spd":114,"spe":106},"moves":["doubleshock","hydropump"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Porygon-Z, L50, F","condition":"162/162","active":true,"stats":{"atk":103,"def":90,"spa":182,"spd":105,"spe":123},"moves":["conversion","conversion2","triattack"],"baseAbility":"adaptability","item":"","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Diancie","details":"Diancie, L50","condition":"0 fnt","active":true,"stats":{"atk":149,"def":198,"spa":138,"spd":153,"spe":76},"moves":["detect","round","dive"],"baseAbility":"clearbody","item":"ultraball","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Munchlax","details":"Munchlax, L50, F","condition":"232/232","active":false,"stats":{"atk":106,"def":61,"spa":56,"spd":147,"spe":33},"moves":["stoneaxe","shadowclaw","hyperdrill","destinybond"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Pawmot, L50, F, shiny","condition":"172/172","active":false,"stats":{"atk":144,"def":94,"spa":104,"spd":80,"spe":126},"moves":["doubleshock","closecombat","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Rotom","details":"Rotom-Wash, L50, M","condition":"126/126","active":true,"stats":{"atk":114,"def":168,"spa":132,"spd":114,"spe":106},"moves":["doubleshock","hydropump"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Rotom-Heat, L50","condition":"148/148","active":true,"stats":{"atk":91,"def":148,"spa":125,"spd":137,"spe":106},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Nibbles","details":"Ampharos, L50, M","condition":"189/189","active":false,"stats":{"atk":98,"def":106,"spa":165,"spd":117,"spe":75},"moves":["gravapple","watergun","thunder"],"baseAbility":"static","item":"figyberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50, M","condition":"7/195","active":false,"stats":{"atk":121,"def":127,"spa":151,"spd":116,"spe":105},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+request p1 {"active":[{"moves":[{"move":"Conversion","id":"conversion","pp":48,"maxpp":48,"target":"self","disabled":false},{"move":"Conversion 2","id":"conversion2","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Tri Attack","id":"triattack","pp":12,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Stone Axe","id":"stoneaxe","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Hyper Drill","id":"hyperdrill","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Destiny Bond","id":"destinybond","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Porygon-Z, L50, F","condition":"162/162","active":true,"stats":{"atk":103,"def":90,"spa":182,"spd":105,"spe":123},"moves":["conversion","conversion2","triattack"],"baseAbility":"adaptability","item":"","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Munchlax","details":"Munchlax, L50, F","condition":"232/232","active":true,"stats":{"atk":106,"def":61,"spa":56,"spd":147,"spe":33},"moves":["stoneaxe","shadowclaw","hyperdrill","destinybond"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Diancie","details":"Diancie, L50","condition":"0 fnt","active":false,"stats":{"atk":149,"def":198,"spa":138,"spd":153,"spe":76},"moves":["detect","round","dive"],"baseAbility":"clearbody","item":"ultraball","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Pawmot, L50, F, shiny","condition":"172/172","active":false,"stats":{"atk":144,"def":94,"spa":104,"spd":80,"spe":126},"moves":["doubleshock","closecombat","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Pump","id":"hydropump","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":15,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Rotom","details":"Rotom-Wash, L50, M","condition":"126/126","active":true,"stats":{"atk":114,"def":168,"spa":132,"spd":114,"spe":106},"moves":["doubleshock","hydropump"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Rotom-Heat, L50","condition":"148/148","active":true,"stats":{"atk":91,"def":148,"spa":125,"spd":137,"spe":106},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Nibbles","details":"Ampharos, L50, M","condition":"189/189","active":false,"stats":{"atk":98,"def":106,"spa":165,"spd":117,"spe":75},"moves":["gravapple","watergun","thunder"],"baseAbility":"static","item":"figyberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50, M","condition":"7/195","active":false,"stats":{"atk":121,"def":127,"spa":151,"spd":116,"spe":105},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+request p1 {"active":[{"moves":[{"move":"Conversion","id":"conversion","pp":48,"maxpp":48,"target":"self","disabled":false},{"move":"Conversion 2","id":"conversion2","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Tri Attack","id":"triattack","pp":11,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Stone Axe","id":"stoneaxe","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Shadow Claw","id":"shadowclaw","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Hyper Drill","id":"hyperdrill","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Destiny Bond","id":"destinybond","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Porygon-Z, L50, F","condition":"162/162","active":true,"stats":{"atk":103,"def":90,"spa":182,"spd":105,"spe":123},"moves":["conversion","conversion2","triattack"],"baseAbility":"adaptability","item":"","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Munchlax","details":"Munchlax, L50, F","condition":"25/232","active":true,"stats":{"atk":106,"def":61,"spa":56,"spd":147,"spe":33},"moves":["stoneaxe","shadowclaw","hyperdrill","destinybond"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Diancie","details":"Diancie, L50","condition":"0 fnt","active":false,"stats":{"atk":149,"def":198,"spa":138,"spd":153,"spe":76},"moves":["detect","round","dive"],"baseAbility":"clearbody","item":"ultraball","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Pawmot, L50, F, shiny","condition":"172/172","active":false,"stats":{"atk":144,"def":94,"spa":104,"spd":80,"spe":126},"moves":["doubleshock","closecombat","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Pump","id":"hydropump","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Burn Up","id":"burnup","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Hurricane","id":"hurricane","pp":16,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Rotom","details":"Rotom-Wash, L50, M","condition":"126/126","active":true,"stats":{"atk":114,"def":168,"spa":132,"spd":114,"spe":106},"moves":["doubleshock","hydropump"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50, M","condition":"7/195","active":true,"stats":{"atk":121,"def":127,"spa":151,"spd":116,"spe":105},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Nibbles","details":"Ampharos, L50, M","condition":"189/189","active":false,"stats":{"atk":98,"def":106,"spa":165,"spd":117,"spe":75},"moves":["gravapple","watergun","thunder"],"baseAbility":"static","item":"figyberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Rotom-Heat, L50","condition":"148/148","active":false,"stats":{"atk":91,"def":148,"spa":125,"spd":137,"spe":106},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Porygon-Z, L50, F","condition":"162/162","active":true,"stats":{"atk":103,"def":90,"spa":182,"spd":105,"spe":123},"moves":["conversion","conversion2","triattack"],"baseAbility":"adaptability","item":"","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Munchlax","details":"Munchlax, L50, F","condition":"0 fnt","active":true,"stats":{"atk":106,"def":61,"spa":56,"spd":147,"spe":33},"moves":["stoneaxe","shadowclaw","hyperdrill","destinybond"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Diancie","details":"Diancie, L50","condition":"0 fnt","active":false,"stats":{"atk":149,"def":198,"spa":138,"spd":153,"spe":76},"moves":["detect","round","dive"],"baseAbility":"clearbody","item":"ultraball","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Pawmot, L50, F, shiny","condition":"172/172","active":false,"stats":{"atk":144,"def":94,"spa":104,"spd":80,"spe":126},"moves":["doubleshock","closecombat","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Rotom","details":"Rotom-Wash, L50, M","condition":"126/126","active":true,"stats":{"atk":114,"def":168,"spa":132,"spd":114,"spe":106},"moves":["doubleshock","hydropump"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Nibbles","details":"Ampharos, L50, M","condition":"189/189","active":true,"stats":{"atk":98,"def":106,"spa":165,"spd":117,"spe":75},"moves":["gravapple","watergun","thunder"],"baseAbility":"static","item":"figyberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50, M","condition":"7/195","active":false,"stats":{"atk":121,"def":127,"spa":151,"spd":116,"spe":105},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Big Tony's Pal","details":"Rotom-Heat, L50","condition":"148/148","active":false,"stats":{"atk":91,"def":148,"spa":125,"spd":137,"spe":106},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Conversion","id":"conversion","pp":48,"maxpp":48,"target":"self","disabled":false},{"move":"Conversion 2","id":"conversion2","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Tri Attack","id":"triattack","pp":10,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Close Combat","id":"closecombat","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Porygon-Z, L50, F","condition":"162/162","active":true,"stats":{"atk":103,"def":90,"spa":182,"spd":105,"spe":123},"moves":["conversion","conversion2","triattack"],"baseAbility":"adaptability","item":"","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Pawmot, L50, F, shiny","condition":"172/172","active":true,"stats":{"atk":144,"def":94,"spa":104,"spd":80,"spe":126},"moves":["doubleshock","closecombat","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Diancie","details":"Diancie, L50","condition":"0 fnt","active":false,"stats":{"atk":149,"def":198,"spa":138,"spd":153,"spe":76},"moves":["detect","round","dive"],"baseAbility":"clearbody","item":"ultraball","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Munchlax","details":"Munchlax, L50, F","condition":"0 fnt","active":false,"stats":{"atk":106,"def":61,"spa":56,"spd":147,"spe":33},"moves":["stoneaxe","shadowclaw","hyperdrill","destinybond"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Hydro Pump","id":"hydropump","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Grav Apple","id":"gravapple","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Water Gun","id":"watergun","pp":40,"maxpp":40,"target":"normal","disabled":false},{"move":"Thunder","id":"thunder","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Rotom","details":"Rotom-Wash, L50, M","condition":"126/126","active":true,"stats":{"atk":114,"def":168,"spa":132,"spd":114,"spe":106},"moves":["doubleshock","hydropump"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Nibbles","details":"Ampharos, L50, M","condition":"189/189","active":true,"stats":{"atk":98,"def":106,"spa":165,"spd":117,"spe":75},"moves":["gravapple","watergun","thunder"],"baseAbility":"static","item":"figyberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50, M","condition":"7/195","active":false,"stats":{"atk":121,"def":127,"spa":151,"spd":116,"spe":105},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Big Tony's Pal","details":"Rotom-Heat, L50","condition":"148/148","active":false,"stats":{"atk":91,"def":148,"spa":125,"spd":137,"spe":106},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Conversion","id":"conversion","pp":48,"maxpp":48,"target":"self","disabled":false},{"move":"Conversion 2","id":"conversion2","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Tri Attack","id":"triattack","pp":10,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Close Combat","id":"closecombat","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Porygon-Z, L50, F","condition":"0 fnt","active":true,"stats":{"atk":103,"def":90,"spa":182,"spd":105,"spe":123},"moves":["conversion","conversion2","triattack"],"baseAbility":"adaptability","item":"","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Pawmot, L50, F, shiny","condition":"122/172","active":true,"stats":{"atk":144,"def":94,"spa":104,"spd":80,"spe":126},"moves":["doubleshock","closecombat","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Diancie","details":"Diancie, L50","condition":"0 fnt","active":false,"stats":{"atk":149,"def":198,"spa":138,"spd":153,"spe":76},"moves":["detect","round","dive"],"baseAbility":"clearbody","item":"ultraball","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Munchlax","details":"Munchlax, L50, F","condition":"0 fnt","active":false,"stats":{"atk":106,"def":61,"spa":56,"spd":147,"spe":33},"moves":["stoneaxe","shadowclaw","hyperdrill","destinybond"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":15,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Grav Apple","id":"gravapple","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Water Gun","id":"watergun","pp":40,"maxpp":40,"target":"normal","disabled":false},{"move":"Thunder","id":"thunder","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Rotom-Heat, L50","condition":"148/148","active":true,"stats":{"atk":91,"def":148,"spa":125,"spd":137,"spe":106},"moves":["burnup","doubleshock","protect"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Nibbles","details":"Ampharos, L50, M","condition":"189/189","active":true,"stats":{"atk":98,"def":106,"spa":165,"spd":117,"spe":75},"moves":["gravapple","watergun","thunder"],"baseAbility":"static","item":"figyberry","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Moltres","details":"Moltres, L50, M","condition":"7/195","active":false,"stats":{"atk":121,"def":127,"spa":151,"spd":116,"spe":105},"moves":["burnup","roost","hurricane"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Rotom","details":"Rotom-Wash, L50, M","condition":"126/126","active":false,"stats":{"atk":114,"def":168,"spa":132,"spd":114,"spe":106},"moves":["doubleshock","hydropump"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}

@@ -1,0 +1,110 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 5555 6666 7777 8888
+genders drawn
+team p1
+Alakazam @ Normal Gem
+Ability: Synchronize
+Level: 50
+Hardy Nature
+- Future Sight
+- Swift
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Blissey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+end
+choice p1 move 1
+choice p2 move 1
+choice p1 move 3
+choice p2 move 1
+choice p1 move 2
+choice p2 move 1
+choice p1 move 3
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Alakazam|Alakazam, L50, F|130/130
+expect |switch|p1a: Alakazam|Alakazam, L50, F|130/130
+expect |split|p2
+expect |switch|p2a: Blissey|Blissey, F|651/651
+expect |switch|p2a: Blissey|Blissey, F|651/651
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Blissey|Splash|p2a: Blissey
+expect |-nothing
+expect |move|p1a: Alakazam|Future Sight|p2a: Blissey
+expect |-start|p1a: Alakazam|move: Future Sight
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Blissey|Splash|p2a: Blissey
+expect |-nothing
+expect |move|p1a: Alakazam|Splash|p1a: Alakazam
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Blissey|Splash|p2a: Blissey
+expect |-nothing
+expect |move|p1a: Alakazam|Swift|p2a: Blissey
+expect |-enditem|p1a: Alakazam|Normal Gem|[from] gem|[move] Swift
+expect |rng|24|13
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Blissey|633/651
+expect |-damage|p2a: Blissey|633/651
+expect |
+expect |-end|p2a: Blissey|move: Future Sight
+expect |rng|100|52
+expect |rng|24|0
+expect |rng|16|9
+expect |-crit|p2a: Blissey
+expect |split|p2
+expect |-damage|p2a: Blissey|560/651
+expect |-damage|p2a: Blissey|560/651
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Blissey|Splash|p2a: Blissey
+expect |-nothing
+expect |move|p1a: Alakazam|Splash|p1a: Alakazam
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|5

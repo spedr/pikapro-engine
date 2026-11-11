@@ -1,0 +1,819 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 0636 35f9 e9d6 62f1
+genders drawn
+team p1
+Fennekin @ Eject Pack
+Ability: Magician
+Level: 64
+Tera Type: Grass
+EVs: 135 HP / 146 Atk / 13 Def / 19 SpA / 197 SpD
+Relaxed Nature
+- Fire Pledge
+- Stored Power
+
+Tandemaus
+Ability: Pickup
+Level: 83
+Tera Type: Bug
+EVs: 7 HP / 124 Atk / 129 Def / 20 SpA / 1 SpD / 229 Spe
+Quiet Nature
+- Block
+- Belly Drum
+
+Heatran (F)
+Ability: Flame Body
+Level: 70
+Tera Type: Rock
+EVs: 161 HP / 142 Atk / 93 Def / 89 SpD / 5 Spe
+Naughty Nature
+- Fell Stinger
+- Scald
+- Moonblast
+
+Delphox (M)
+Ability: Magician
+Level: 94
+Tera Type: Water
+EVs: 128 HP / 135 Def / 121 SpA / 88 SpD / 6 Spe
+Hardy Nature
+- Stone Axe
+
+Zoroark
+Ability: Illusion
+Level: 99
+Tera Type: Psychic
+EVs: 8 HP / 107 Atk / 54 Def / 39 SpA / 235 SpD / 65 Spe
+Gentle Nature
+- U-turn
+- Double-Edge
+- Flamethrower
+- Slam
+
+Zangoose (M) @ Metal Alloy
+Ability: Immunity
+Level: 87
+Tera Type: Psychic
+EVs: 148 HP / 12 Atk / 7 Def / 160 SpA / 17 SpD / 83 Spe
+Quirky Nature
+- Flare Blitz
+- Magic Room
+end
+team p2
+Rowlet
+Ability: Long Reach
+Level: 89
+Tera Type: Fighting
+EVs: 69 HP / 69 Atk / 107 SpA / 63 SpD / 189 Spe
+Calm Nature
+- Expanding Force
+- Shadow Sneak
+
+Sir Hops-a-Lot (Elekid) (F)
+Ability: Static
+Shiny: Yes
+Tera Type: Dark
+EVs: 92 HP / 207 Atk / 38 Def / 70 SpA / 1 SpD / 91 Spe
+Calm Nature
+- Jungle Healing
+- Bulldoze
+- Lash Out
+- Darkest Lariat
+
+Shaymin
+Ability: Natural Cure
+Level: 81
+Shiny: Yes
+Tera Type: Fire
+EVs: 207 HP / 61 Atk / 141 SpA / 3 SpD / 91 Spe
+Modest Nature
+- Energy Ball
+- Gyro Ball
+
+Articuno
+Ability: Pressure
+Level: 86
+Tera Type: Bug
+EVs: 4 HP / 161 Atk / 126 Def / 161 SpA / 39 SpD / 3 Spe
+Timid Nature
+- Howl
+
+Zoë (Zoroark)
+Ability: Illusion
+Level: 97
+Tera Type: Dark
+EVs: 166 HP / 75 Atk / 132 Def / 22 SpA / 93 SpD / 10 Spe
+Brave Nature
+- U-turn
+- Water Pledge
+
+Deoxys-Attack
+Ability: Pressure
+Level: 76
+Tera Type: Stellar
+EVs: 22 HP / 249 Atk / 5 Def / 147 SpA / 67 Spe
+Lax Nature
+- Bite
+end
+choice p1 move 2 2, move 1 2
+choice p2 switch 4, move 4 2
+choice p1 switch 3, move 2
+choice p2 switch 5, move 4 -1
+choice p1 move 1 2, move 1 -1
+choice p2 switch 3, move 4 1
+choice p1 move 2 -2 terastallize, switch 6
+choice p2 switch 3, move 4 2
+choice p1 switch 6, move 1 2
+choice p2 switch 6, move 4 2 terastallize
+choice p1 pass, switch 3
+choice p2 move 1 1, move 3 2
+choice p1 move 2, move 2 1
+choice p1 pass, switch 6
+choice p2 move 1 2, switch 5
+choice p1 move 1 2, move 3 1
+choice p2 switch 6, move 1
+choice p1 switch 4, move 1 2
+choice p2 switch 5 ,  switch shaymin
+choice p1 switch 5, move 2 -1
+choice p2 switch 3, move 2 2
+choice p1 switch 5, move 3 -1
+choice p2 switch 4, switch 5
+choice p1 move 1 +2,move 1 -1
+choice p2 move 1 -2,move 2 -1
+choice p1 move Stone Axe 1 ,  move scald -1
+choice p2 switch 6, move 2 -1
+choice p1 move Stone Axe +1 ,  move scald 1
+choice p2 switch 6, pass
+choice p1 default
+choice p2 switch articuno,switch 5
+choice p2 switch 3, pass
+choice p1 switch zoroark,move Fell Stinger 2
+choice p2 move 3 1, move 2 1
+choice p1 move 4 2, move 2 2
+choice p2 move 3 -2, move 2 -1
+choice p2 pass, switch 5
+choice p1 move 3 -2, move 1 1
+choice p2 move 3 +2, move 1 2
+choice p2 pass, switch 4
+choice p1 pass, switch 4
+choice p2 pass, switch 4
+choice p1 move 1 -2, move 2
+choice p2 move Darkest Lariat +1 ,  move U-turn 1
+choice p1 switch 5, pass
+choice p1 skip ,  switch zoroark
+choice p2 move 2 ,  move U-turn +2
+choice p1 pass, move 3 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Fennekin|Fennekin, L64, F|166/166
+expect |switch|p1a: Fennekin|Fennekin, L64, F|100/100
+expect |split|p1
+expect |switch|p1b: Tandemaus|Tandemaus, L83|202/202
+expect |switch|p1b: Tandemaus|Tandemaus, L83|100/100
+expect |split|p2
+expect |switch|p2a: Rowlet|Rowlet, L89, M|262/262
+expect |switch|p2a: Rowlet|Rowlet, L89, M|100/100
+expect |split|p2
+expect |switch|p2b: Sir Hops-a-Lot|Elekid, F, shiny|254/254
+expect |switch|p2b: Sir Hops-a-Lot|Elekid, F, shiny|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Articuno|Articuno, L86|278/278
+expect |switch|p2a: Articuno|Articuno, L86|100/100
+expect |-ability|p2a: Articuno|Pressure
+expect |move|p2b: Sir Hops-a-Lot|Darkest Lariat|p1b: Tandemaus
+expect |rng|100|70
+expect |rng|24|1
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Tandemaus|99/202
+expect |-damage|p1b: Tandemaus|50/100
+expect |move|p1b: Tandemaus|Block|p2b: Sir Hops-a-Lot
+expect |-activate|p2b: Sir Hops-a-Lot|trapped
+expect |move|p1a: Fennekin|Stored Power|p2b: Sir Hops-a-Lot
+expect |rng|100|24
+expect |rng|24|5
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Sir Hops-a-Lot|247/254
+expect |-damage|p2b: Sir Hops-a-Lot|98/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Deoxys|Deoxys-Attack, L76|293/293
+expect |switch|p2a: Deoxys|Deoxys-Attack, L76|100/100
+expect |split|p1
+expect |switch|p1a: Heatran|Heatran, L70, F|257/257
+expect |switch|p1a: Heatran|Heatran, L70, F|100/100
+expect |move|p2b: Sir Hops-a-Lot|Darkest Lariat|p2a: Deoxys
+expect |rng|100|9
+expect |rng|24|0
+expect |rng|16|3
+expect |-resisted|p2a: Deoxys
+expect |-crit|p2a: Deoxys
+expect |split|p2
+expect |-damage|p2a: Deoxys|238/293
+expect |-damage|p2a: Deoxys|82/100
+expect |replace|p2a: Zoë|Zoroark, L97, F
+expect |-end|p2a: Zoë|Illusion
+expect |-hint|Illusion Level Mod is active, so this Pokémon's true level was hidden.
+expect |move|p1b: Tandemaus|Belly Drum||[still]
+expect |-fail|p1b: Tandemaus
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Shaymin|Shaymin, L81, shiny|319/319
+expect |switch|p2a: Shaymin|Shaymin, L81, shiny|100/100
+expect |move|p2b: Sir Hops-a-Lot|Darkest Lariat|p1a: Heatran
+expect |rng|100|53
+expect |rng|24|5
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Heatran|189/257
+expect |-damage|p1a: Heatran|74/100
+expect |rng|10|6
+expect |move|p1b: Tandemaus|Block|p1a: Heatran
+expect |-activate|p1a: Heatran|trapped
+expect |move|p1a: Heatran|Fell Stinger|p2b: Sir Hops-a-Lot
+expect |rng|100|92
+expect |rng|24|4
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Sir Hops-a-Lot|198/254
+expect |-damage|p2b: Sir Hops-a-Lot|78/100
+expect |rng|10|1
+expect |-status|p1a: Heatran|par|[from] ability: Static|[of] p2b: Sir Hops-a-Lot
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Deoxys|Deoxys-Attack, L76|238/293
+expect |switch|p2a: Deoxys|Deoxys-Attack, L76|82/100
+expect |split|p1
+expect |switch|p1b: Zangoose|Zangoose, L87, M|283/283
+expect |switch|p1b: Zangoose|Zangoose, L87, M|100/100
+expect |-terastallize|p1a: Heatran|Rock
+expect |move|p2b: Sir Hops-a-Lot|Darkest Lariat|p1b: Zangoose
+expect |rng|100|18
+expect |rng|24|10
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1b: Zangoose|195/283
+expect |-damage|p1b: Zangoose|69/100
+expect |rng|4|1
+expect |move|p1a: Heatran|Scald|p1b: Zangoose
+expect |rng|100|45
+expect |rng|24|23
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Zangoose|125/283
+expect |-damage|p1b: Zangoose|45/100
+expect |rng|100|91
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Deoxys|Deoxys-Attack, L76|189/189
+expect |switch|p2a: Deoxys|Deoxys-Attack, L76|100/100
+expect |-ability|p2a: Deoxys|Pressure
+expect |split|p1
+expect |switch|p1a: Tandemaus|Tandemaus, L83|99/202
+expect |switch|p1a: Tandemaus|Tandemaus, L83|50/100
+expect |-terastallize|p2b: Sir Hops-a-Lot|Dark
+expect |move|p2b: Sir Hops-a-Lot|Darkest Lariat|p1b: Zangoose
+expect |rng|100|58
+expect |rng|24|16
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Zangoose|0 fnt
+expect |-damage|p1b: Zangoose|0 fnt
+expect |faint|p1b: Zangoose
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Fennekin|Fennekin, L64, F|166/166
+expect |switch|p1b: Fennekin|Fennekin, L64, F|100/100
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Deoxys|Bite|p1a: Tandemaus
+expect |rng|100|46
+expect |rng|24|23
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Tandemaus|8/202
+expect |-damage|p1a: Tandemaus|4/100
+expect |rng|100|76
+expect |move|p2b: Sir Hops-a-Lot|Lash Out|p1b: Fennekin
+expect |rng|100|80
+expect |rng|24|7
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Fennekin|0 fnt
+expect |-damage|p1b: Fennekin|0 fnt
+expect |faint|p1b: Fennekin
+expect |move|p1a: Tandemaus|Belly Drum||[still]
+expect |-fail|p1a: Tandemaus
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Heatran|Heatran, L70, F, tera:Rock|189/257 par
+expect |switch|p1b: Heatran|Heatran, L70, F, tera:Rock|74/100 par
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Articuno|Articuno, L86|278/278
+expect |switch|p2b: Articuno|Articuno, L86|100/100
+expect |-ability|p2b: Articuno|Pressure
+expect |move|p2a: Deoxys|Bite|p1b: Heatran
+expect |rng|100|40
+expect |rng|24|12
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1b: Heatran|118/257 par
+expect |-damage|p1b: Heatran|46/100 par
+expect |rng|100|17
+expect |rng|10|8
+expect |move|p1a: Tandemaus|Block|p2b: Articuno
+expect |-activate|p2b: Articuno|trapped
+expect |cant|p1b: Heatran|flinch
+expect |
+expect |upkeep
+expect |turn|8
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Deoxys|Deoxys-Attack, L76|238/293
+expect |switch|p2a: Deoxys|Deoxys-Attack, L76|82/100
+expect |split|p1
+expect |switch|p1a: Delphox|Delphox, L94, M|304/304
+expect |switch|p1a: Delphox|Delphox, L94, M|100/100
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Articuno|Howl|p2b: Articuno|[spread] p2a,p2b
+expect |-boost|p2a: Deoxys|atk|1
+expect |-boost|p2b: Articuno|atk|1
+expect |rng|4|3
+expect |move|p1b: Heatran|Fell Stinger|p2b: Articuno
+expect |rng|100|60
+expect |rng|24|10
+expect |rng|16|9
+expect |-resisted|p2b: Articuno
+expect |split|p2
+expect |-damage|p2b: Articuno|266/278
+expect |-damage|p2b: Articuno|96/100
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Delphox|Delphox, L94, M|260/260
+expect |switch|p1a: Delphox|Delphox, L94, M|100/100
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Elekid, F, shiny, tera:Dark|198/254
+expect |switch|p2a: Sir Hops-a-Lot|Elekid, F, shiny, tera:Dark|78/100
+expect |split|p2
+expect |switch|p2b: Shaymin|Shaymin, L81, shiny|319/319
+expect |switch|p2b: Shaymin|Shaymin, L81, shiny|100/100
+expect |rng|4|2
+expect |move|p1b: Heatran|Scald|p1a: Delphox
+expect |rng|100|28
+expect |rng|24|21
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Delphox|219/260
+expect |-damage|p1a: Delphox|85/100
+expect |rng|100|52
+expect |replace|p1a: Zoroark|Zoroark, L99, M
+expect |-end|p1a: Zoroark|Illusion
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Delphox|Delphox, L94, M|304/304
+expect |switch|p1a: Delphox|Delphox, L94, M|100/100
+expect |split|p2
+expect |switch|p2a: Articuno|Articuno, L86|266/278
+expect |switch|p2a: Articuno|Articuno, L86|96/100
+expect |-ability|p2a: Articuno|Pressure
+expect |move|p2b: Shaymin|Gyro Ball|p1b: Heatran
+expect |rng|100|64
+expect |rng|24|1
+expect |rng|16|7
+expect |-supereffective|p1b: Heatran
+expect |split|p1
+expect |-damage|p1b: Heatran|106/257 par
+expect |-damage|p1b: Heatran|42/100 par
+expect |rng|10|5
+expect |rng|4|2
+expect |move|p1b: Heatran|Moonblast|p1a: Delphox
+expect |rng|100|10
+expect |rng|24|21
+expect |rng|16|2
+expect |-resisted|p1a: Delphox
+expect |split|p1
+expect |-damage|p1a: Delphox|280/304
+expect |-damage|p1a: Delphox|93/100
+expect |rng|100|55
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Deoxys|Deoxys-Attack, L76|238/293
+expect |switch|p2b: Deoxys|Deoxys-Attack, L76|82/100
+expect |split|p2
+expect |switch|p2a: Rowlet|Rowlet, L89, M|262/262
+expect |switch|p2a: Rowlet|Rowlet, L89, M|100/100
+expect |move|p1a: Delphox|Stone Axe|p2b: Deoxys
+expect |rng|100|50
+expect |rng|24|19
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Deoxys|197/293
+expect |-damage|p2b: Deoxys|68/100
+expect |rng|100|95
+expect |replace|p2b: Zoë|Zoroark, L97, F
+expect |-end|p2b: Zoë|Illusion
+expect |-sidestart|p2: p2|move: Stealth Rock
+expect |rng|4|3
+expect |move|p1b: Heatran|Fell Stinger|p1a: Delphox
+expect |rng|100|68
+expect |rng|24|0
+expect |rng|16|2
+expect |-crit|p1a: Delphox
+expect |split|p1
+expect |-damage|p1a: Delphox|235/304
+expect |-damage|p1a: Delphox|78/100
+expect |
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p1a: Delphox|Stone Axe|p2a: Rowlet
+expect |rng|100|76
+expect |rng|24|20
+expect |rng|16|14
+expect |-supereffective|p2a: Rowlet
+expect |split|p2
+expect |-damage|p2a: Rowlet|152/262
+expect |-damage|p2a: Rowlet|59/100
+expect |rng|100|25
+expect |move|p2b: Zoë|Water Pledge|p2a: Rowlet
+expect |rng|100|68
+expect |rng|24|4
+expect |rng|16|8
+expect |-resisted|p2a: Rowlet
+expect |split|p2
+expect |-damage|p2a: Rowlet|97/262
+expect |-damage|p2a: Rowlet|38/100
+expect |move|p2a: Rowlet|Expanding Force|p2b: Zoë
+expect |-immune|p2b: Zoë
+expect |rng|4|2
+expect |move|p1b: Heatran|Scald|p1a: Delphox
+expect |rng|100|0
+expect |rng|24|3
+expect |rng|16|11
+expect |-supereffective|p1a: Delphox
+expect |split|p1
+expect |-damage|p1a: Delphox|159/304
+expect |-damage|p1a: Delphox|53/100
+expect |rng|100|74
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Deoxys|Deoxys-Attack, L76|189/189
+expect |switch|p2a: Deoxys|Deoxys-Attack, L76|100/100
+expect |split|p2
+expect |-damage|p2a: Deoxys|166/189|[from] Stealth Rock
+expect |-damage|p2a: Deoxys|88/100|[from] Stealth Rock
+expect |-ability|p2a: Deoxys|Pressure
+expect |move|p1a: Delphox|Stone Axe|p2a: Deoxys
+expect |rng|100|34
+expect |rng|24|10
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Deoxys|55/189
+expect |-damage|p2a: Deoxys|30/100
+expect |rng|100|17
+expect |move|p2b: Zoë|Water Pledge|p2a: Deoxys
+expect |rng|100|43
+expect |rng|24|10
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Deoxys|0 fnt
+expect |-damage|p2a: Deoxys|0 fnt
+expect |faint|p2a: Deoxys
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|4|2
+expect |move|p1b: Heatran|Scald|p2b: Zoë
+expect |rng|100|73
+expect |rng|24|12
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Zoë|147/293
+expect |-damage|p2b: Zoë|51/100
+expect |rng|100|69
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Rowlet|Rowlet, L89, M|97/262
+expect |switch|p2a: Rowlet|Rowlet, L89, M|38/100
+expect |split|p2
+expect |-damage|p2a: Rowlet|32/262|[from] Stealth Rock
+expect |-damage|p2a: Rowlet|13/100|[from] Stealth Rock
+expect |turn|14
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Shaymin|Shaymin, L81, shiny|319/319
+expect |switch|p2b: Shaymin|Shaymin, L81, shiny|100/100
+expect |split|p2
+expect |-damage|p2b: Shaymin|280/319|[from] Stealth Rock
+expect |-damage|p2b: Shaymin|88/100|[from] Stealth Rock
+expect |split|p2
+expect |switch|p2a: Articuno|Articuno, L86|266/278
+expect |switch|p2a: Articuno|Articuno, L86|96/100
+expect |split|p2
+expect |-damage|p2a: Articuno|127/278|[from] Stealth Rock
+expect |-damage|p2a: Articuno|46/100|[from] Stealth Rock
+expect |-ability|p2a: Articuno|Pressure
+expect |move|p1a: Delphox|Stone Axe|p2a: Articuno
+expect |rng|100|2
+expect |rng|24|7
+expect |rng|16|9
+expect |-supereffective|p2a: Articuno
+expect |split|p2
+expect |-damage|p2a: Articuno|0 fnt
+expect |-damage|p2a: Articuno|0 fnt
+expect |rng|100|64
+expect |faint|p2a: Articuno
+expect |rng|4|1
+expect |move|p1b: Heatran|Fell Stinger|p2b: Shaymin
+expect |rng|100|55
+expect |rng|24|9
+expect |rng|16|5
+expect |-supereffective|p2b: Shaymin
+expect |split|p2
+expect |-damage|p2b: Shaymin|220/319
+expect |-damage|p2b: Shaymin|69/100
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Elekid, F, shiny, tera:Dark|198/254
+expect |switch|p2a: Sir Hops-a-Lot|Elekid, F, shiny, tera:Dark|78/100
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|167/254|[from] Stealth Rock
+expect |-damage|p2a: Sir Hops-a-Lot|66/100|[from] Stealth Rock
+expect |turn|15
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Delphox|Delphox, L94, M|219/260
+expect |switch|p1a: Delphox|Delphox, L94, M|85/100
+expect |move|p2a: Sir Hops-a-Lot|Lash Out|p1a: Delphox
+expect |rng|100|11
+expect |rng|24|4
+expect |rng|16|0
+expect |-resisted|p1a: Delphox
+expect |split|p1
+expect |-damage|p1a: Delphox|158/260
+expect |-damage|p1a: Delphox|61/100
+expect |replace|p1a: Zoroark|Zoroark, L99, M
+expect |-end|p1a: Zoroark|Illusion
+expect |move|p2b: Shaymin|Gyro Ball|p1a: Zoroark
+expect |rng|100|54
+expect |rng|24|16
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Zoroark|132/260
+expect |-damage|p1a: Zoroark|51/100
+expect |rng|4|3
+expect |move|p1b: Heatran|Fell Stinger|p2b: Shaymin
+expect |rng|100|66
+expect |rng|24|7
+expect |rng|16|8
+expect |-supereffective|p2b: Shaymin
+expect |split|p2
+expect |-damage|p2b: Shaymin|162/319
+expect |-damage|p2b: Shaymin|51/100
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p1a: Zoroark|Slam|p2b: Shaymin
+expect |rng|100|73
+expect |rng|24|23
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Shaymin|73/319
+expect |-damage|p2b: Shaymin|23/100
+expect |move|p2a: Sir Hops-a-Lot|Lash Out|p2b: Shaymin
+expect |rng|100|52
+expect |rng|24|3
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Shaymin|0 fnt
+expect |-damage|p2b: Shaymin|0 fnt
+expect |faint|p2b: Shaymin
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|4|2
+expect |move|p1b: Heatran|Scald|p2a: Sir Hops-a-Lot
+expect |rng|100|77
+expect |rng|24|8
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|109/254
+expect |-damage|p2a: Sir Hops-a-Lot|43/100
+expect |rng|100|6
+expect |-status|p2a: Sir Hops-a-Lot|brn
+expect |
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|94/254 brn|[from] brn
+expect |-damage|p2a: Sir Hops-a-Lot|38/100 brn|[from] brn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Rowlet|Rowlet, L89, M|147/293
+expect |switch|p2b: Rowlet|Rowlet, L89, M|51/100
+expect |split|p2
+expect |-damage|p2b: Rowlet|111/293|[from] Stealth Rock
+expect |-damage|p2b: Rowlet|38/100|[from] Stealth Rock
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p1a: Zoroark|Flamethrower|p1b: Heatran
+expect |rng|100|78
+expect |rng|24|17
+expect |rng|16|13
+expect |-resisted|p1b: Heatran
+expect |split|p1
+expect |-damage|p1b: Heatran|53/257 par
+expect |-damage|p1b: Heatran|21/100 par
+expect |rng|100|50
+expect |move|p2a: Sir Hops-a-Lot|Lash Out|p1b: Heatran
+expect |rng|100|59
+expect |rng|24|15
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Heatran|8/257 par
+expect |-damage|p1b: Heatran|4/100 par
+expect |rng|10|9
+expect |move|p2b: Rowlet|U-turn|p1b: Heatran
+expect |rng|100|12
+expect |rng|24|20
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1b: Heatran|0 fnt
+expect |-damage|p1b: Heatran|0 fnt
+expect |rng|10|4
+expect |faint|p1b: Heatran
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Rowlet|Rowlet, L89, M|32/262|[from] U-turn
+expect |switch|p2b: Rowlet|Rowlet, L89, M|13/100|[from] U-turn
+expect |split|p2
+expect |-damage|p2b: Rowlet|0 fnt|[from] Stealth Rock
+expect |-damage|p2b: Rowlet|0 fnt|[from] Stealth Rock
+expect |faint|p2b: Rowlet
+expect |
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|79/254 brn|[from] brn
+expect |-damage|p2a: Sir Hops-a-Lot|32/100 brn|[from] brn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zoë|Zoroark, L97, F|111/293
+expect |switch|p2b: Zoë|Zoroark, L97, F|38/100
+expect |split|p1
+expect |switch|p1b: Tandemaus|Tandemaus, L83|8/202
+expect |switch|p1b: Tandemaus|Tandemaus, L83|4/100
+expect |split|p2
+expect |-damage|p2b: Zoë|75/293|[from] Stealth Rock
+expect |-damage|p2b: Zoë|26/100|[from] Stealth Rock
+expect |turn|18
+expect |
+expect |t:|
+expect |move|p1a: Zoroark|U-turn|p1b: Tandemaus
+expect |rng|100|83
+expect |rng|24|22
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1b: Tandemaus|0 fnt
+expect |-damage|p1b: Tandemaus|0 fnt
+expect |faint|p1b: Tandemaus
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Delphox|Delphox, L94, M|159/304|[from] U-turn
+expect |switch|p1a: Delphox|Delphox, L94, M|53/100|[from] U-turn
+expect |move|p2a: Sir Hops-a-Lot|Darkest Lariat|p1a: Delphox
+expect |rng|100|63
+expect |rng|24|2
+expect |rng|16|1
+expect |-supereffective|p1a: Delphox
+expect |split|p1
+expect |-damage|p1a: Delphox|56/304
+expect |-damage|p1a: Delphox|19/100
+expect |move|p2b: Zoë|U-turn|p1a: Delphox
+expect |rng|100|22
+expect |rng|24|4
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Delphox|0 fnt
+expect |-damage|p1a: Delphox|0 fnt
+expect |faint|p1a: Delphox
+expect |
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|64/254 brn|[from] brn
+expect |-damage|p2a: Sir Hops-a-Lot|26/100 brn|[from] brn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Zoroark|Zoroark, L99, M|132/260
+expect |switch|p1b: Zoroark|Zoroark, L99, M|51/100
+expect |turn|19
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p1b: Zoroark|Flamethrower|p2a: Sir Hops-a-Lot
+expect |rng|100|86
+expect |rng|24|13
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|0 fnt
+expect |-damage|p2a: Sir Hops-a-Lot|0 fnt
+expect |rng|100|65
+expect |faint|p2a: Sir Hops-a-Lot
+expect |rng|1|0
+expect |move|p2b: Zoë|U-turn|p1b: Zoroark
+expect |rng|100|41
+expect |rng|24|0
+expect |rng|16|5
+expect |-supereffective|p1b: Zoroark
+expect |-crit|p1b: Zoroark
+expect |split|p1
+expect |-damage|p1b: Zoroark|0 fnt
+expect |-damage|p1b: Zoroark|0 fnt
+expect |faint|p1b: Zoroark
+expect |
+expect |win|p2

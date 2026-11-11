@@ -1,0 +1,282 @@
+# gen9vgc-sodium-2120018-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option keep-alive
+@write
+
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"sodium,fa03af73cc17cb03919ad62f066e2daa","rated":"Tournament battle"}
+>player p2 {"name":"Bob","team":"Blaziken|||Blaze|ThunderShock,CollisionCourse,FakeOut|Impish|100,8,25,227,127,5|F|||50|,,,,,Fire]Basculegion||TerrainExtender|SwiftSwim|BoneRush|Lonely|111,26,7,54,83,198|M|||50|,,,,,Bug]Scorbunny||ToxicPlate|Blaze|Surf,StoneEdge,Tickle|Careful|22,161,50,28,73,72|F|||50|,,,,,Steel]Big Tony's Pal|Typhlosion|LuminousMoss|Blaze|WorrySeed,Sludge,IceHammer|Impish|134,,35,28,75,215|F|||50|,,,,,Bug]Groudon||WideLens|Drought|ShellSmash,VoltSwitch,IceFang|Bold|113,160,2,2,219,13||||50|,,,,,Poison]Zoë|Exeggcute|EjectPack|Harvest|SweetScent,ClearSmog,BanefulBunker,Recycle|Adamant|63,177,43,112,27,58|M|||50|,,,,,Grass"}
+@write
+>player p1 {"name":"Alice","team":"Slowking||MentalHerb|Regenerator|Tackle|Hardy|69,46,124,17,42,207|F|||50|,,,,,Bug]Buizel||MeadowPlate|SwiftSwim|BugBuzz|Quiet|111,62,158,174,2,1|M|||50|,,,,,Normal]Scream Tail||SweetApple|Protosynthesis|ThunderShock,SmartStrike|Jolly|205,1,81,36,124,45||||50|,,,,,Stellar]Combee||MoonBall|Hustle|Megahorn,SmartStrike,Mimic,ArmThrust|Naughty|206,159,47,7,14,6|M|||50|,,,,,Steel]Chomp|Cranidos||SheerForce|RagingBull,AcidSpray,DisarmingVoice,Tailwind|Hasty|132,88,8,4,242,33|F|||50|,,,,,Electric]Gliscor|||SandVeil|Tailwind,FalseSurrender,ElectroBall,DoubleHit|Quiet|17,181,13,202,70,26|F||S|50|,,,,,Fire","rating":1500}
+@write
+# a comment
+>p1 team 1654
+@write
+>p2 team 2534
+@write
+
+>p1 move 1 -2, move 4 2 terastallize
+@write
+>p1 default
+>p2 move Bone Rush -2 terastallize
+@write
+>p2 switch 3, move 2 -1 terastallize
+>p2 skip ,  switch Basculegion
+@write
+>p2 default
+@write
+>p1 switch 5
+@write
+
+>p1 move Tackle terastal -2,move falsesurrender +1
+@write
+>p2 switch 3, pass
+@write
+>p1 switch GLISCOR
+>p2 move voltswitch -2 ,  move 1 -1
+@write
+>p1 move 5
+@write
+>p1 switch 3, move 2 1
+@write
+
+>p1 switch 3, move 2 1
+>p2 undo
+@write
+>forcewin p1
+@write
+>p1 move 1
+>chat after the end
+@write
+>forcewin p1
+@write
+>tiebreak
+>requestlog
+@write
+>p2 undo
+@message
+update
+|t:|
+|gametype|doubles
+|player|p2|Bob||
+@message
+update
+|player|p1|Alice||1500
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|rated|Tournament battle
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Slowking, L50, F|
+|poke|p1|Buizel, L50, M|
+|poke|p1|Scream Tail, L50|
+|poke|p1|Combee, L50, M|
+|poke|p1|Cranidos, L50, F|
+|poke|p1|Gliscor, L50, F|
+|poke|p2|Blaziken, L50, F|
+|poke|p2|Basculegion, L50, M|
+|poke|p2|Scorbunny, L50, F|
+|poke|p2|Typhlosion, L50, F|
+|poke|p2|Groudon, L50|
+|poke|p2|Exeggcute, L50, M|
+|teampreview|4
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Slowking","details":"Slowking, L50, F","condition":"179/179","active":true,"stats":{"atk":101,"def":116,"spa":122,"spd":135,"spe":76},"moves":["tackle"],"baseAbility":"regenerator","item":"mentalherb","pokeball":"pokeball","ability":"regenerator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Buizel","details":"Buizel, L50, M","condition":"144/144","active":true,"stats":{"atk":93,"def":75,"spa":112,"spd":50,"spe":94},"moves":["bugbuzz"],"baseAbility":"swiftswim","item":"meadowplate","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Scream Tail","details":"Scream Tail, L50","condition":"216/216","active":false,"stats":{"atk":85,"def":129,"spa":81,"spd":151,"spe":150},"moves":["thundershock","smartstrike"],"baseAbility":"protosynthesis","item":"sweetapple","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Combee","details":"Combee, L50, M","condition":"131/131","active":false,"stats":{"atk":77,"def":68,"spa":51,"spd":57,"spe":91},"moves":["megahorn","smartstrike","mimic","armthrust"],"baseAbility":"hustle","item":"moonball","pokeball":"pokeball","ability":"hustle","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Chomp","details":"Cranidos, L50, F","condition":"159/159","active":false,"stats":{"atk":156,"def":54,"spa":51,"spd":80,"spe":90},"moves":["ragingbull","acidspray","disarmingvoice","tailwind"],"baseAbility":"sheerforce","item":"","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Gliscor","details":"Gliscor, L50, F, shiny","condition":"152/152","active":false,"stats":{"atk":138,"def":147,"spa":99,"spd":104,"spe":106},"moves":["tailwind","falsesurrender","electroball","doublehit"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Blaziken","details":"Blaziken, L50, F","condition":"168/168","active":true,"stats":{"atk":141,"def":102,"spa":142,"spd":106,"spe":101},"moves":["thundershock","collisioncourse","fakeout"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Basculegion","details":"Basculegion, L50, M","condition":"209/209","active":true,"stats":{"atk":148,"def":77,"spa":107,"spd":105,"spe":123},"moves":["bonerush"],"baseAbility":"swiftswim","item":"terrainextender","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Scorbunny","details":"Scorbunny, L50, F","condition":"128/128","active":false,"stats":{"atk":111,"def":66,"spa":57,"spd":75,"spe":98},"moves":["surf","stoneedge","tickle"],"baseAbility":"blaze","item":"toxicplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Typhlosion, L50, F","condition":"170/170","active":false,"stats":{"atk":104,"def":112,"spa":119,"spd":114,"spe":147},"moves":["worryseed","sludge","icehammer"],"baseAbility":"blaze","item":"luminousmoss","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"189/189","active":false,"stats":{"atk":171,"def":176,"spa":120,"spd":137,"spe":112},"moves":["shellsmash","voltswitch","icefang"],"baseAbility":"drought","item":"widelens","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Zoë","details":"Exeggcute, L50, M","condition":"143/143","active":false,"stats":{"atk":90,"def":105,"spa":84,"spd":68,"spe":67},"moves":["sweetscent","clearsmog","banefulbunker","recycle"],"baseAbility":"harvest","item":"ejectpack","pokeball":"pokeball","ability":"harvest","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|switch|p1a: Slowking|Slowking, L50, F|179/179
+|switch|p1a: Slowking|Slowking, L50, F|179/179
+|split|p1
+|switch|p1b: Gliscor|Gliscor, L50, F, shiny|152/152
+|switch|p1b: Gliscor|Gliscor, L50, F, shiny|152/152
+|split|p2
+|switch|p2a: Basculegion|Basculegion, L50, M|209/209
+|switch|p2a: Basculegion|Basculegion, L50, M|209/209
+|split|p2
+|switch|p2b: Groudon|Groudon, L50|189/189
+|switch|p2b: Groudon|Groudon, L50|189/189
+|-weather|SunnyDay|[from] ability: Drought|[of] p2b: Groudon
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Tackle","id":"tackle","pp":56,"maxpp":56,"target":"normal","disabled":false}],"canTerastallize":"Bug"},{"moves":[{"move":"Tailwind","id":"tailwind","pp":24,"maxpp":24,"target":"allySide","disabled":false},{"move":"False Surrender","id":"falsesurrender","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Electro Ball","id":"electroball","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Hit","id":"doublehit","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fire"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Slowking","details":"Slowking, L50, F","condition":"179/179","active":true,"stats":{"atk":101,"def":116,"spa":122,"spd":135,"spe":76},"moves":["tackle"],"baseAbility":"regenerator","item":"mentalherb","pokeball":"pokeball","ability":"regenerator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Gliscor","details":"Gliscor, L50, F, shiny","condition":"152/152","active":true,"stats":{"atk":138,"def":147,"spa":99,"spd":104,"spe":106},"moves":["tailwind","falsesurrender","electroball","doublehit"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Cranidos, L50, F","condition":"159/159","active":false,"stats":{"atk":156,"def":54,"spa":51,"spd":80,"spe":90},"moves":["ragingbull","acidspray","disarmingvoice","tailwind"],"baseAbility":"sheerforce","item":"","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Combee","details":"Combee, L50, M","condition":"131/131","active":false,"stats":{"atk":77,"def":68,"spa":51,"spd":57,"spe":91},"moves":["megahorn","smartstrike","mimic","armthrust"],"baseAbility":"hustle","item":"moonball","pokeball":"pokeball","ability":"hustle","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Bone Rush","id":"bonerush","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Bug"},{"moves":[{"move":"Shell Smash","id":"shellsmash","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Volt Switch","id":"voltswitch","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Ice Fang","id":"icefang","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Poison"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Basculegion","details":"Basculegion, L50, M","condition":"209/209","active":true,"stats":{"atk":148,"def":77,"spa":107,"spd":105,"spe":123},"moves":["bonerush"],"baseAbility":"swiftswim","item":"terrainextender","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"189/189","active":true,"stats":{"atk":171,"def":176,"spa":120,"spd":137,"spe":112},"moves":["shellsmash","voltswitch","icefang"],"baseAbility":"drought","item":"widelens","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: Scorbunny","details":"Scorbunny, L50, F","condition":"128/128","active":false,"stats":{"atk":111,"def":66,"spa":57,"spd":75,"spe":98},"moves":["surf","stoneedge","tickle"],"baseAbility":"blaze","item":"toxicplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Typhlosion, L50, F","condition":"170/170","active":false,"stats":{"atk":104,"def":112,"spa":119,"spd":114,"spe":147},"moves":["worryseed","sludge","icehammer"],"baseAbility":"blaze","item":"luminousmoss","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: move Bone Rush -2 terastallize - missing other pokemon
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Scorbunny|Scorbunny, L50, F|128/128
+|switch|p2a: Scorbunny|Scorbunny, L50, F|128/128
+|-terastallize|p2b: Groudon|Poison
+|move|p2b: Groudon|Volt Switch|p2a: Scorbunny
+|split|p2
+|-damage|p2a: Scorbunny|78/128
+|-damage|p2a: Scorbunny|78/128
+|
+|t:|
+|split|p2
+|switch|p2b: Basculegion|Basculegion, L50, M|209/209|[from] Volt Switch
+|switch|p2b: Basculegion|Basculegion, L50, M|209/209|[from] Volt Switch
+|move|p1b: Gliscor|Tailwind|p1b: Gliscor
+|-sidestart|p1: Alice|move: Tailwind
+|move|p1a: Slowking|Tackle|p2a: Scorbunny
+|split|p2
+|-damage|p2a: Scorbunny|54/128
+|-damage|p2a: Scorbunny|54/128
+|
+|-weather|SunnyDay|[upkeep]
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Tackle","id":"tackle","pp":55,"maxpp":56,"target":"normal","disabled":false}],"canTerastallize":"Bug"},{"moves":[{"move":"Tailwind","id":"tailwind","pp":23,"maxpp":24,"target":"allySide","disabled":false},{"move":"False Surrender","id":"falsesurrender","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Electro Ball","id":"electroball","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Hit","id":"doublehit","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fire"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Slowking","details":"Slowking, L50, F","condition":"179/179","active":true,"stats":{"atk":101,"def":116,"spa":122,"spd":135,"spe":76},"moves":["tackle"],"baseAbility":"regenerator","item":"mentalherb","pokeball":"pokeball","ability":"regenerator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Gliscor","details":"Gliscor, L50, F, shiny","condition":"152/152","active":true,"stats":{"atk":138,"def":147,"spa":99,"spd":104,"spe":106},"moves":["tailwind","falsesurrender","electroball","doublehit"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Cranidos, L50, F","condition":"159/159","active":false,"stats":{"atk":156,"def":54,"spa":51,"spd":80,"spe":90},"moves":["ragingbull","acidspray","disarmingvoice","tailwind"],"baseAbility":"sheerforce","item":"","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Combee","details":"Combee, L50, M","condition":"131/131","active":false,"stats":{"atk":77,"def":68,"spa":51,"spd":57,"spe":91},"moves":["megahorn","smartstrike","mimic","armthrust"],"baseAbility":"hustle","item":"moonball","pokeball":"pokeball","ability":"hustle","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Surf","id":"surf","pp":24,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Stone Edge","id":"stoneedge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Tickle","id":"tickle","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Bone Rush","id":"bonerush","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Scorbunny","details":"Scorbunny, L50, F","condition":"54/128","active":true,"stats":{"atk":111,"def":66,"spa":57,"spd":75,"spe":98},"moves":["surf","stoneedge","tickle"],"baseAbility":"blaze","item":"toxicplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Basculegion","details":"Basculegion, L50, M","condition":"209/209","active":true,"stats":{"atk":148,"def":77,"spa":107,"spd":105,"spe":123},"moves":["bonerush"],"baseAbility":"swiftswim","item":"terrainextender","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"189/189","active":false,"stats":{"atk":171,"def":176,"spa":120,"spd":137,"spe":112},"moves":["shellsmash","voltswitch","icefang"],"baseAbility":"drought","item":"widelens","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Big Tony's Pal","details":"Typhlosion, L50, F","condition":"170/170","active":false,"stats":{"atk":104,"def":112,"spa":119,"spd":114,"spe":147},"moves":["worryseed","sludge","icehammer"],"baseAbility":"blaze","item":"luminousmoss","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You do not have a Pokémon in slot 5 to switch to
+@message
+update
+|
+|t:|
+|-terastallize|p1a: Slowking|Bug
+|move|p1b: Gliscor|False Surrender|p2a: Scorbunny
+|split|p2
+|-damage|p2a: Scorbunny|0 fnt
+|-damage|p2a: Scorbunny|0 fnt
+|faint|p2a: Scorbunny
+|move|p1a: Slowking|Tackle|p1b: Gliscor
+|split|p1
+|-damage|p1b: Gliscor|138/152
+|-damage|p1b: Gliscor|138/152
+|move|p2b: Basculegion|Bone Rush|p1a: Slowking|[miss]
+|-miss|p2b: Basculegion|p1a: Slowking
+|
+|-weather|SunnyDay|[upkeep]
+|upkeep
+@message
+sideupdate
+p1
+|request|{"wait":true,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Slowking","details":"Slowking, L50, F","condition":"179/179","active":true,"stats":{"atk":101,"def":116,"spa":122,"spd":135,"spe":76},"moves":["tackle"],"baseAbility":"regenerator","item":"mentalherb","pokeball":"pokeball","ability":"regenerator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p1: Gliscor","details":"Gliscor, L50, F, shiny","condition":"138/152","active":true,"stats":{"atk":138,"def":147,"spa":99,"spd":104,"spe":106},"moves":["tailwind","falsesurrender","electroball","doublehit"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Cranidos, L50, F","condition":"159/159","active":false,"stats":{"atk":156,"def":54,"spa":51,"spd":80,"spe":90},"moves":["ragingbull","acidspray","disarmingvoice","tailwind"],"baseAbility":"sheerforce","item":"","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Combee","details":"Combee, L50, M","condition":"131/131","active":false,"stats":{"atk":77,"def":68,"spa":51,"spd":57,"spe":91},"moves":["megahorn","smartstrike","mimic","armthrust"],"baseAbility":"hustle","item":"moonball","pokeball":"pokeball","ability":"hustle","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"forceSwitch":[true,false],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Scorbunny","details":"Scorbunny, L50, F","condition":"0 fnt","active":true,"stats":{"atk":111,"def":66,"spa":57,"spd":75,"spe":98},"moves":["surf","stoneedge","tickle"],"baseAbility":"blaze","item":"toxicplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Basculegion","details":"Basculegion, L50, M","condition":"209/209","active":true,"stats":{"atk":148,"def":77,"spa":107,"spd":105,"spe":123},"moves":["bonerush"],"baseAbility":"swiftswim","item":"terrainextender","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"189/189","active":false,"stats":{"atk":171,"def":176,"spa":120,"spd":137,"spe":112},"moves":["shellsmash","voltswitch","icefang"],"baseAbility":"drought","item":"widelens","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Big Tony's Pal","details":"Typhlosion, L50, F","condition":"170/170","active":false,"stats":{"atk":104,"def":112,"spa":119,"spd":114,"spe":147},"moves":["worryseed","sludge","icehammer"],"baseAbility":"blaze","item":"luminousmoss","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]},"noCancel":true}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Groudon|Groudon, L50, tera:Poison|189/189
+|switch|p2a: Groudon|Groudon, L50, tera:Poison|189/189
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Tackle","id":"tackle","pp":54,"maxpp":56,"target":"normal","disabled":false}]},{"moves":[{"move":"Tailwind","id":"tailwind","pp":23,"maxpp":24,"target":"allySide","disabled":false},{"move":"False Surrender","id":"falsesurrender","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Electro Ball","id":"electroball","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Hit","id":"doublehit","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Slowking","details":"Slowking, L50, F","condition":"179/179","active":true,"stats":{"atk":101,"def":116,"spa":122,"spd":135,"spe":76},"moves":["tackle"],"baseAbility":"regenerator","item":"mentalherb","pokeball":"pokeball","ability":"regenerator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p1: Gliscor","details":"Gliscor, L50, F, shiny","condition":"138/152","active":true,"stats":{"atk":138,"def":147,"spa":99,"spd":104,"spe":106},"moves":["tailwind","falsesurrender","electroball","doublehit"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Cranidos, L50, F","condition":"159/159","active":false,"stats":{"atk":156,"def":54,"spa":51,"spd":80,"spe":90},"moves":["ragingbull","acidspray","disarmingvoice","tailwind"],"baseAbility":"sheerforce","item":"","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Combee","details":"Combee, L50, M","condition":"131/131","active":false,"stats":{"atk":77,"def":68,"spa":51,"spd":57,"spe":91},"moves":["megahorn","smartstrike","mimic","armthrust"],"baseAbility":"hustle","item":"moonball","pokeball":"pokeball","ability":"hustle","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Shell Smash","id":"shellsmash","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Volt Switch","id":"voltswitch","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Ice Fang","id":"icefang","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Bone Rush","id":"bonerush","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Groudon","details":"Groudon, L50","condition":"189/189","active":true,"stats":{"atk":171,"def":176,"spa":120,"spd":137,"spe":112},"moves":["shellsmash","voltswitch","icefang"],"baseAbility":"drought","item":"widelens","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Basculegion","details":"Basculegion, L50, M","condition":"209/209","active":true,"stats":{"atk":148,"def":77,"spa":107,"spd":105,"spe":123},"moves":["bonerush"],"baseAbility":"swiftswim","item":"terrainextender","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Scorbunny","details":"Scorbunny, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":66,"spa":57,"spd":75,"spe":98},"moves":["surf","stoneedge","tickle"],"baseAbility":"blaze","item":"toxicplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Typhlosion, L50, F","condition":"170/170","active":false,"stats":{"atk":104,"def":112,"spa":119,"spd":114,"spe":147},"moves":["worryseed","sludge","icehammer"],"baseAbility":"blaze","item":"luminousmoss","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Slowking doesn't have a move 5
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Chomp|Cranidos, L50, F|159/159
+|switch|p1a: Chomp|Cranidos, L50, F|159/159
+|move|p1b: Gliscor|False Surrender|p2a: Groudon
+|split|p2
+|-damage|p2a: Groudon|161/189
+|-damage|p2a: Groudon|161/189
+|move|p2b: Basculegion|Bone Rush|p2a: Groudon
+|-supereffective|p2a: Groudon
+|split|p2
+|-damage|p2a: Groudon|141/189
+|-damage|p2a: Groudon|141/189
+|-supereffective|p2a: Groudon
+|split|p2
+|-damage|p2a: Groudon|123/189
+|-damage|p2a: Groudon|123/189
+|-hitcount|p2a: Groudon|2
+|move|p2a: Groudon|Volt Switch|p2b: Basculegion
+|-supereffective|p2b: Basculegion
+|split|p2
+|-damage|p2b: Basculegion|145/209
+|-damage|p2b: Basculegion|145/209
+@message
+sideupdate
+p1
+|request|{"wait":true,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Chomp","details":"Cranidos, L50, F","condition":"159/159","active":true,"stats":{"atk":156,"def":54,"spa":51,"spd":80,"spe":90},"moves":["ragingbull","acidspray","disarmingvoice","tailwind"],"baseAbility":"sheerforce","item":"","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Gliscor","details":"Gliscor, L50, F, shiny","condition":"138/152","active":true,"stats":{"atk":138,"def":147,"spa":99,"spd":104,"spe":106},"moves":["tailwind","falsesurrender","electroball","doublehit"],"baseAbility":"sandveil","item":"","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Slowking","details":"Slowking, L50, F","condition":"179/179","active":false,"stats":{"atk":101,"def":116,"spa":122,"spd":135,"spe":76},"moves":["tackle"],"baseAbility":"regenerator","item":"mentalherb","pokeball":"pokeball","ability":"regenerator","commanding":false,"reviving":false,"teraType":"Bug","terastallized":"Bug"},{"ident":"p1: Combee","details":"Combee, L50, M","condition":"131/131","active":false,"stats":{"atk":77,"def":68,"spa":51,"spd":57,"spe":91},"moves":["megahorn","smartstrike","mimic","armthrust"],"baseAbility":"hustle","item":"moonball","pokeball":"pokeball","ability":"hustle","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"forceSwitch":[true,false],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Groudon","details":"Groudon, L50","condition":"123/189","active":true,"stats":{"atk":171,"def":176,"spa":120,"spd":137,"spe":112},"moves":["shellsmash","voltswitch","icefang"],"baseAbility":"drought","item":"widelens","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p2: Basculegion","details":"Basculegion, L50, M","condition":"145/209","active":true,"stats":{"atk":148,"def":77,"spa":107,"spd":105,"spe":123},"moves":["bonerush"],"baseAbility":"swiftswim","item":"terrainextender","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Scorbunny","details":"Scorbunny, L50, F","condition":"0 fnt","active":false,"stats":{"atk":111,"def":66,"spa":57,"spd":75,"spe":98},"moves":["surf","stoneedge","tickle"],"baseAbility":"blaze","item":"toxicplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Typhlosion, L50, F","condition":"170/170","active":false,"stats":{"atk":104,"def":112,"spa":119,"spd":114,"spe":147},"moves":["worryseed","sludge","icehammer"],"baseAbility":"blaze","item":"luminousmoss","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]},"noCancel":true}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: It's not your turn
+@message
+update
+|
+|win|Alice
+@message
+end
+{"winner":"Alice","seed":"sodium,fa03af73cc17cb03919ad62f066e2daa","turns":3,"p1":"Alice","p2":"Bob","p1team":[{"name":"Slowking","species":"Slowking","item":"Mental Herb","ability":"Regenerator","moves":["Tackle"],"nature":"Hardy","evs":{"hp":69,"atk":46,"def":124,"spa":17,"spd":42,"spe":207},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Buizel","species":"Buizel","item":"Meadow Plate","ability":"Swift Swim","moves":["Bug Buzz"],"nature":"Quiet","evs":{"hp":111,"atk":62,"def":158,"spa":174,"spd":2,"spe":1},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Scream Tail","species":"Scream Tail","item":"Sweet Apple","ability":"Protosynthesis","moves":["Thunder Shock","Smart Strike"],"nature":"Jolly","evs":{"hp":205,"atk":1,"def":81,"spa":36,"spd":124,"spe":45},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Combee","species":"Combee","item":"Moon Ball","ability":"Hustle","moves":["Megahorn","Smart Strike","Mimic","Arm Thrust"],"nature":"Naughty","evs":{"hp":206,"atk":159,"def":47,"spa":7,"spd":14,"spe":6},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Cranidos","item":"","ability":"Sheer Force","moves":["Raging Bull","Acid Spray","Disarming Voice","Tailwind"],"nature":"Hasty","evs":{"hp":132,"atk":88,"def":8,"spa":4,"spd":242,"spe":33},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Gliscor","species":"Gliscor","item":"","ability":"Sand Veil","moves":["Tailwind","False Surrender","Electro Ball","Double Hit"],"nature":"Quiet","evs":{"hp":17,"atk":181,"def":13,"spa":202,"spd":70,"spe":26},"gender":"F","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Blaziken","species":"Blaziken","item":"","ability":"Blaze","moves":["Thunder Shock","Collision Course","Fake Out"],"nature":"Impish","evs":{"hp":100,"atk":8,"def":25,"spa":227,"spd":127,"spe":5},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Basculegion","species":"Basculegion","item":"Terrain Extender","ability":"Swift Swim","moves":["Bone Rush"],"nature":"Lonely","evs":{"hp":111,"atk":26,"def":7,"spa":54,"spd":83,"spe":198},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Scorbunny","species":"Scorbunny","item":"Toxic Plate","ability":"Blaze","moves":["Surf","Stone Edge","Tickle"],"nature":"Careful","evs":{"hp":22,"atk":161,"def":50,"spa":28,"spd":73,"spe":72},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Typhlosion","item":"Luminous Moss","ability":"Blaze","moves":["Worry Seed","Sludge","Ice Hammer"],"nature":"Impish","evs":{"hp":134,"atk":0,"def":35,"spa":28,"spd":75,"spe":215},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Groudon","species":"Groudon","item":"Wide Lens","ability":"Drought","moves":["Shell Smash","Volt Switch","Ice Fang"],"nature":"Bold","evs":{"hp":113,"atk":160,"def":2,"spa":2,"spd":219,"spe":13},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Zoë","species":"Exeggcute","item":"Eject Pack","ability":"Harvest","moves":["Sweet Scent","Clear Smog","Baneful Bunker","Recycle"],"nature":"Adamant","evs":{"hp":63,"atk":177,"def":43,"spa":112,"spd":27,"spe":58},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[4,3],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50\",\"seed\":\"sodium,fa03af73cc17cb03919ad62f066e2daa\",\"rated\":\"Tournament battle\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Blaziken|||Blaze|ThunderShock,CollisionCourse,FakeOut|Impish|100,8,25,227,127,5|F|||50|,,,,,Fire]Basculegion||TerrainExtender|SwiftSwim|BoneRush|Lonely|111,26,7,54,83,198|M|||50|,,,,,Bug]Scorbunny||ToxicPlate|Blaze|Surf,StoneEdge,Tickle|Careful|22,161,50,28,73,72|F|||50|,,,,,Steel]Big Tony's Pal|Typhlosion|LuminousMoss|Blaze|WorrySeed,Sludge,IceHammer|Impish|134,,35,28,75,215|F|||50|,,,,,Bug]Groudon||WideLens|Drought|ShellSmash,VoltSwitch,IceFang|Bold|113,160,2,2,219,13||||50|,,,,,Poison]Zoë|Exeggcute|EjectPack|Harvest|SweetScent,ClearSmog,BanefulBunker,Recycle|Adamant|63,177,43,112,27,58|M|||50|,,,,,Grass\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Slowking||MentalHerb|Regenerator|Tackle|Hardy|69,46,124,17,42,207|F|||50|,,,,,Bug]Buizel||MeadowPlate|SwiftSwim|BugBuzz|Quiet|111,62,158,174,2,1|M|||50|,,,,,Normal]Scream Tail||SweetApple|Protosynthesis|ThunderShock,SmartStrike|Jolly|205,1,81,36,124,45||||50|,,,,,Stellar]Combee||MoonBall|Hustle|Megahorn,SmartStrike,Mimic,ArmThrust|Naughty|206,159,47,7,14,6|M|||50|,,,,,Steel]Chomp|Cranidos||SheerForce|RagingBull,AcidSpray,DisarmingVoice,Tailwind|Hasty|132,88,8,4,242,33|F|||50|,,,,,Electric]Gliscor|||SandVeil|Tailwind,FalseSurrender,ElectroBall,DoubleHit|Quiet|17,181,13,202,70,26|F||S|50|,,,,,Fire\",\"rating\":1500}",">p1 team 1, 6, 5, 4",">p2 team 2, 5, 3, 4",">p1 move tackle, move tailwind",">p2 switch 3, move voltswitch -1 terastallize",">p2 pass, switch 3",">p1 move tackle -2 terastallize, move falsesurrender +1",">p2 move surf, move bonerush",">p2 switch 3, pass",">p1 switch 3, move falsesurrender +1",">p2 move voltswitch -2, move bonerush -1",">forcewin p1"]}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+update
+|chat|after the end
+@message
+requesteddata
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"sodium,fa03af73cc17cb03919ad62f066e2daa","rated":"Tournament battle"}
+>player p2 {"name":"Bob","team":"Blaziken|||Blaze|ThunderShock,CollisionCourse,FakeOut|Impish|100,8,25,227,127,5|F|||50|,,,,,Fire]Basculegion||TerrainExtender|SwiftSwim|BoneRush|Lonely|111,26,7,54,83,198|M|||50|,,,,,Bug]Scorbunny||ToxicPlate|Blaze|Surf,StoneEdge,Tickle|Careful|22,161,50,28,73,72|F|||50|,,,,,Steel]Big Tony's Pal|Typhlosion|LuminousMoss|Blaze|WorrySeed,Sludge,IceHammer|Impish|134,,35,28,75,215|F|||50|,,,,,Bug]Groudon||WideLens|Drought|ShellSmash,VoltSwitch,IceFang|Bold|113,160,2,2,219,13||||50|,,,,,Poison]Zoë|Exeggcute|EjectPack|Harvest|SweetScent,ClearSmog,BanefulBunker,Recycle|Adamant|63,177,43,112,27,58|M|||50|,,,,,Grass"}
+>player p1 {"name":"Alice","team":"Slowking||MentalHerb|Regenerator|Tackle|Hardy|69,46,124,17,42,207|F|||50|,,,,,Bug]Buizel||MeadowPlate|SwiftSwim|BugBuzz|Quiet|111,62,158,174,2,1|M|||50|,,,,,Normal]Scream Tail||SweetApple|Protosynthesis|ThunderShock,SmartStrike|Jolly|205,1,81,36,124,45||||50|,,,,,Stellar]Combee||MoonBall|Hustle|Megahorn,SmartStrike,Mimic,ArmThrust|Naughty|206,159,47,7,14,6|M|||50|,,,,,Steel]Chomp|Cranidos||SheerForce|RagingBull,AcidSpray,DisarmingVoice,Tailwind|Hasty|132,88,8,4,242,33|F|||50|,,,,,Electric]Gliscor|||SandVeil|Tailwind,FalseSurrender,ElectroBall,DoubleHit|Quiet|17,181,13,202,70,26|F||S|50|,,,,,Fire","rating":1500}
+>p1 team 1, 6, 5, 4
+>p2 team 2, 5, 3, 4
+>p1 move tackle, move tailwind
+>p2 switch 3, move voltswitch -1 terastallize
+>p2 pass, switch 3
+>p1 move tackle -2 terastallize, move falsesurrender +1
+>p2 move surf, move bonerush
+>p2 switch 3, pass
+>p1 switch 3, move falsesurrender +1
+>p2 move voltswitch -2, move bonerush -1
+>forcewin p1
+>chat after the end
+>forcewin p1

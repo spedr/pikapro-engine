@@ -1,0 +1,22 @@
+[package]
+name = "pikapro-view"
+description = "A player's view of a pikapro battle: what a Pokémon Showdown client knows, built from the battle's events and requests"
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords = ["pokemon", "showdown", "hidden-information", "game-ai", "vgc"]
+categories = ["games", "simulation"]
+
+[dependencies]
+pikapro.workspace = true
+pikapro-data.workspace = true
+pikapro-protocol.workspace = true
+
+[dev-dependencies]
+pikapro-teams.workspace = true
+
+[lints]
+workspace = true

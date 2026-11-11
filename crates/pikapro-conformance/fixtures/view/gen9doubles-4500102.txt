@@ -1,0 +1,976 @@
+# Recorded by view_conformance. Do not edit by hand.
+format gen9doubles
+seed 4500102
+source sets
+checks soundness leak meta=2
+team p1
+Registeel @ Leftovers
+Ability: Clear Body
+Tera Type: Fighting
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- Body Press
+- Iron Defense
+- Thunder Wave
+- Iron Head
+
+Grimmsnarl (M) @ Light Clay
+Ability: Prankster
+Tera Type: Steel
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- Reflect
+- Spirit Break
+- Light Screen
+- Parting Shot
+
+Medicham (F) @ Choice Band
+Ability: Pure Power
+Tera Type: Fire
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Close Combat
+- Ice Punch
+- Zen Headbutt
+- Poison Jab
+
+Krookodile (M) @ Choice Band
+Ability: Intimidate
+Tera Type: Poison
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- High Horsepower
+- Gunk Shot
+- Knock Off
+- Rock Slide
+
+Crabominable (F) @ Life Orb
+Ability: Iron Fist
+Tera Type: Dark
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Drain Punch
+- Ice Hammer
+- Protect
+- Knock Off
+
+Dodrio (F) @ Choice Band
+Ability: Early Bird
+Tera Type: Normal
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Quick Attack
+- Brave Bird
+- Knock Off
+- Double-Edge
+end
+team p2
+Serperior (M) @ Life Orb
+Ability: Contrary
+Tera Type: Fire
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+- Tera Blast
+- Glare
+- Leaf Storm
+- Protect
+
+Scrafty (F) @ Assault Vest
+Ability: Intimidate
+Tera Type: Poison
+EVs: 252 HP / 128 Def / 128 SpD
+Impish Nature
+- Close Combat
+- Fake Out
+- Knock Off
+- Poison Jab
+
+Poliwrath (F) @ Sitrus Berry
+Ability: Water Absorb
+Tera Type: Fire
+EVs: 252 HP / 252 Atk / 4 Def
+Lonely Nature
+- Coaching
+- Liquidation
+- Close Combat
+- Icy Wind
+
+Eiscue (M) @ Sitrus Berry
+Ability: Ice Face
+Tera Type: Water
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- Liquidation
+- Protect
+- Belly Drum
+- Ice Spinner
+
+Clefairy (F) @ Eviolite
+Ability: Friend Guard
+Tera Type: Steel
+EVs: 252 HP / 128 Def / 128 SpD
+Bold Nature
+IVs: 0 Atk
+- Helping Hand
+- Moonblast
+- Life Dew
+- Follow Me
+
+Dudunsparce (M) @ Sitrus Berry
+Ability: Rattled
+Tera Type: Ghost
+EVs: 252 HP / 4 Def / 252 SpA
+Modest Nature
+IVs: 0 Atk
+- Protect
+- Boomburst
+- Earth Power
+- Helping Hand
+end
+choice p1 switch 5, move 2 -1
+choice p2 move 1 1, move 4 1
+choice p1 switch 6, pass
+choice p2 move 1 -2, move 1 -1
+choice p1 move 3 2, move 4 1 terastallize
+choice p1 pass, switch 3
+choice p2 move 1 2 terastallize, move 2 1
+choice p1 switch 4, switch 5
+choice p2 move 2 -2, move 1 1
+choice p1 move 3 -2, move 3 1
+choice p1 pass, switch 3
+choice p2 switch 3, move 3 -1
+choice p1 move 3 1, move 3
+choice p2 move 4, move 1 -1
+choice p1 switch 5, move 3
+choice p2 switch 3, move 1 -1
+choice p1 move 2 1, switch 5
+choice p2 switch 4, pass
+choice p1 move 2 2, move 2 1
+choice p2 switch 5, switch 6
+choice p1 move 2 1, move 2 1
+choice p2 move 1 -2, move 3 2
+choice p2 switch 3, pass
+choice p1 switch 5, move 2 1
+choice p2 move 3 2, move 3 -1
+choice p1 pass, switch 5
+choice p2 move 3 -2, move 3 1
+choice p1 move 3, move 4 1
+choice p2 switch 6, pass
+choice p1 switch 4, move 4 1
+choice p2 switch 5, move 1
+choice p1 move 2 1, switch 4
+choice p2 switch 5, move 4 -1
+choice p2 switch 5, pass
+choice p1 move 2 1, move 4 -1
+choice p2 move 1 2, move 4 -1
+choice p1 pass, switch 4
+choice p2 pass, move 1
+choice p1 move 2 -2, move 2 -1
+choice p1 switch 4, pass
+choice p2 pass, move 2
+choice p1 move 3, pass
+records 25
+view p1 0 active.0="p1: Registeel"
+view p1 0 active.1="p1: Grimmsnarl"
+view p1 0 finished=false
+view p1 0 force_switch.0=false
+view p1 0 force_switch.1=false
+view p1 0 opponent_active.0="p2: Serperior"
+view p1 0 opponent_active.1="p2: Scrafty"
+view p1 0 opponent_team.p2: Scrafty.ability="intimidate"
+view p1 0 opponent_team.p2: Scrafty.active=true
+view p1 0 opponent_team.p2: Scrafty.fainted=false
+view p1 0 opponent_team.p2: Scrafty.forme="scrafty"
+view p1 0 opponent_team.p2: Scrafty.gender="F"
+view p1 0 opponent_team.p2: Scrafty.hp=334
+view p1 0 opponent_team.p2: Scrafty.level=100
+view p1 0 opponent_team.p2: Scrafty.max_hp=334
+view p1 0 opponent_team.p2: Scrafty.mega=false
+view p1 0 opponent_team.p2: Scrafty.revealed=true
+view p1 0 opponent_team.p2: Scrafty.species="scrafty"
+view p1 0 opponent_team.p2: Scrafty.terastallized=false
+view p1 0 opponent_team.p2: Serperior.active=true
+view p1 0 opponent_team.p2: Serperior.fainted=false
+view p1 0 opponent_team.p2: Serperior.forme="serperior"
+view p1 0 opponent_team.p2: Serperior.gender="M"
+view p1 0 opponent_team.p2: Serperior.hp=292
+view p1 0 opponent_team.p2: Serperior.level=100
+view p1 0 opponent_team.p2: Serperior.max_hp=292
+view p1 0 opponent_team.p2: Serperior.mega=false
+view p1 0 opponent_team.p2: Serperior.revealed=true
+view p1 0 opponent_team.p2: Serperior.species="serperior"
+view p1 0 opponent_team.p2: Serperior.terastallized=false
+view p1 0 opponent_used_mega=false
+view p1 0 opponent_used_tera=false
+view p1 0 role="p1"
+view p1 0 team.p1: Crabominable.ability="ironfist"
+view p1 0 team.p1: Crabominable.active=false
+view p1 0 team.p1: Crabominable.fainted=false
+view p1 0 team.p1: Crabominable.forme="crabominable"
+view p1 0 team.p1: Crabominable.gender="F"
+view p1 0 team.p1: Crabominable.hp=336
+view p1 0 team.p1: Crabominable.item="lifeorb"
+view p1 0 team.p1: Crabominable.level=100
+view p1 0 team.p1: Crabominable.max_hp=336
+view p1 0 team.p1: Crabominable.mega=false
+view p1 0 team.p1: Crabominable.moves.0="drainpunch"
+view p1 0 team.p1: Crabominable.moves.1="icehammer"
+view p1 0 team.p1: Crabominable.moves.2="protect"
+view p1 0 team.p1: Crabominable.moves.3="knockoff"
+view p1 0 team.p1: Crabominable.revealed=false
+view p1 0 team.p1: Crabominable.species="crabominable"
+view p1 0 team.p1: Crabominable.tera_type="dark"
+view p1 0 team.p1: Crabominable.terastallized=false
+view p1 0 team.p1: Dodrio.ability="earlybird"
+view p1 0 team.p1: Dodrio.active=false
+view p1 0 team.p1: Dodrio.fainted=false
+view p1 0 team.p1: Dodrio.forme="dodrio"
+view p1 0 team.p1: Dodrio.gender="F"
+view p1 0 team.p1: Dodrio.hp=262
+view p1 0 team.p1: Dodrio.item="choiceband"
+view p1 0 team.p1: Dodrio.level=100
+view p1 0 team.p1: Dodrio.max_hp=262
+view p1 0 team.p1: Dodrio.mega=false
+view p1 0 team.p1: Dodrio.moves.0="quickattack"
+view p1 0 team.p1: Dodrio.moves.1="bravebird"
+view p1 0 team.p1: Dodrio.moves.2="knockoff"
+view p1 0 team.p1: Dodrio.moves.3="doubleedge"
+view p1 0 team.p1: Dodrio.revealed=false
+view p1 0 team.p1: Dodrio.species="dodrio"
+view p1 0 team.p1: Dodrio.tera_type="normal"
+view p1 0 team.p1: Dodrio.terastallized=false
+view p1 0 team.p1: Grimmsnarl.ability="prankster"
+view p1 0 team.p1: Grimmsnarl.active=true
+view p1 0 team.p1: Grimmsnarl.boosts.atk=-1
+view p1 0 team.p1: Grimmsnarl.fainted=false
+view p1 0 team.p1: Grimmsnarl.forme="grimmsnarl"
+view p1 0 team.p1: Grimmsnarl.gender="M"
+view p1 0 team.p1: Grimmsnarl.hp=394
+view p1 0 team.p1: Grimmsnarl.item="lightclay"
+view p1 0 team.p1: Grimmsnarl.level=100
+view p1 0 team.p1: Grimmsnarl.max_hp=394
+view p1 0 team.p1: Grimmsnarl.mega=false
+view p1 0 team.p1: Grimmsnarl.moves.0="reflect"
+view p1 0 team.p1: Grimmsnarl.moves.1="spiritbreak"
+view p1 0 team.p1: Grimmsnarl.moves.2="lightscreen"
+view p1 0 team.p1: Grimmsnarl.moves.3="partingshot"
+view p1 0 team.p1: Grimmsnarl.revealed=true
+view p1 0 team.p1: Grimmsnarl.species="grimmsnarl"
+view p1 0 team.p1: Grimmsnarl.tera_type="steel"
+view p1 0 team.p1: Grimmsnarl.terastallized=false
+view p1 0 team.p1: Krookodile.ability="intimidate"
+view p1 0 team.p1: Krookodile.active=false
+view p1 0 team.p1: Krookodile.fainted=false
+view p1 0 team.p1: Krookodile.forme="krookodile"
+view p1 0 team.p1: Krookodile.gender="M"
+view p1 0 team.p1: Krookodile.hp=332
+view p1 0 team.p1: Krookodile.item="choiceband"
+view p1 0 team.p1: Krookodile.level=100
+view p1 0 team.p1: Krookodile.max_hp=332
+view p1 0 team.p1: Krookodile.mega=false
+view p1 0 team.p1: Krookodile.moves.0="highhorsepower"
+view p1 0 team.p1: Krookodile.moves.1="gunkshot"
+view p1 0 team.p1: Krookodile.moves.2="knockoff"
+view p1 0 team.p1: Krookodile.moves.3="rockslide"
+view p1 0 team.p1: Krookodile.revealed=false
+view p1 0 team.p1: Krookodile.species="krookodile"
+view p1 0 team.p1: Krookodile.tera_type="poison"
+view p1 0 team.p1: Krookodile.terastallized=false
+view p1 0 team.p1: Medicham.ability="purepower"
+view p1 0 team.p1: Medicham.active=false
+view p1 0 team.p1: Medicham.fainted=false
+view p1 0 team.p1: Medicham.forme="medicham"
+view p1 0 team.p1: Medicham.gender="F"
+view p1 0 team.p1: Medicham.hp=262
+view p1 0 team.p1: Medicham.item="choiceband"
+view p1 0 team.p1: Medicham.level=100
+view p1 0 team.p1: Medicham.max_hp=262
+view p1 0 team.p1: Medicham.mega=false
+view p1 0 team.p1: Medicham.moves.0="closecombat"
+view p1 0 team.p1: Medicham.moves.1="icepunch"
+view p1 0 team.p1: Medicham.moves.2="zenheadbutt"
+view p1 0 team.p1: Medicham.moves.3="poisonjab"
+view p1 0 team.p1: Medicham.revealed=false
+view p1 0 team.p1: Medicham.species="medicham"
+view p1 0 team.p1: Medicham.tera_type="fire"
+view p1 0 team.p1: Medicham.terastallized=false
+view p1 0 team.p1: Registeel.ability="clearbody"
+view p1 0 team.p1: Registeel.active=true
+view p1 0 team.p1: Registeel.fainted=false
+view p1 0 team.p1: Registeel.forme="registeel"
+view p1 0 team.p1: Registeel.gender="N"
+view p1 0 team.p1: Registeel.hp=364
+view p1 0 team.p1: Registeel.item="leftovers"
+view p1 0 team.p1: Registeel.level=100
+view p1 0 team.p1: Registeel.max_hp=364
+view p1 0 team.p1: Registeel.mega=false
+view p1 0 team.p1: Registeel.moves.0="bodypress"
+view p1 0 team.p1: Registeel.moves.1="irondefense"
+view p1 0 team.p1: Registeel.moves.2="thunderwave"
+view p1 0 team.p1: Registeel.moves.3="ironhead"
+view p1 0 team.p1: Registeel.revealed=true
+view p1 0 team.p1: Registeel.species="registeel"
+view p1 0 team.p1: Registeel.tera_type="fighting"
+view p1 0 team.p1: Registeel.terastallized=false
+view p1 0 teampreview=false
+view p1 0 turn=1
+view p1 0 used_mega=false
+view p1 0 used_tera=false
+view p1 0 wait=false
+view p1 1 force_switch.0=true
+view p1 1 opponent_team.p2: Scrafty.moves.0="poisonjab"
+view p1 1 opponent_team.p2: Serperior.hp=263
+view p1 1 opponent_team.p2: Serperior.item="lifeorb"
+view p1 1 opponent_team.p2: Serperior.moves.0="terablast"
+view p1 1 team.p1: Crabominable.active=true
+view p1 1 team.p1: Crabominable.fainted=true
+view p1 1 team.p1: Crabominable.hp=0
+view p1 1 team.p1: Crabominable.revealed=true
+view p1 1 team.p1: Crabominable.status="fnt"
+view p1 1 team.p1: Grimmsnarl.hp=222
+view p1 1 team.p1: Registeel.active=false
+drop p1 1 active.0
+view p1 2 active.0="p1: Dodrio"
+view p1 2 force_switch.0=false
+view p1 2 team.p1: Crabominable.active=false
+view p1 2 team.p1: Dodrio.active=true
+view p1 2 team.p1: Dodrio.revealed=true
+view p1 2 turn=2
+view p1 3 force_switch.1=true
+view p1 3 opponent_team.p2: Serperior.boosts.atk=1
+view p1 3 opponent_team.p2: Serperior.boosts.spa=1
+view p1 3 team.p1: Grimmsnarl.terastallized=true
+view p1 3 used_tera=true
+view p1 4 active.1="p1: Medicham"
+view p1 4 force_switch.1=false
+view p1 4 opponent_team.p2: Scrafty.boosts.def=-1
+view p1 4 opponent_team.p2: Scrafty.boosts.spd=-1
+view p1 4 opponent_team.p2: Scrafty.hp=230
+view p1 4 opponent_team.p2: Scrafty.moves.1="closecombat"
+view p1 4 opponent_team.p2: Serperior.hp=87
+view p1 4 team.p1: Grimmsnarl.active=false
+view p1 4 team.p1: Medicham.active=true
+view p1 4 team.p1: Medicham.revealed=true
+view p1 4 turn=3
+drop p1 4 team.p1: Grimmsnarl.boosts.atk
+view p1 5 active.0="p1: Krookodile"
+view p1 5 active.1="p1: Registeel"
+view p1 5 opponent_team.p2: Scrafty.boosts.atk=-1
+view p1 5 opponent_team.p2: Scrafty.moves.2="fakeout"
+view p1 5 opponent_team.p2: Serperior.boosts.atk=2
+view p1 5 opponent_team.p2: Serperior.hp=58
+view p1 5 opponent_team.p2: Serperior.tera_type="fire"
+view p1 5 opponent_team.p2: Serperior.terastallized=true
+view p1 5 opponent_used_tera=true
+view p1 5 team.p1: Dodrio.active=false
+view p1 5 team.p1: Krookodile.active=true
+view p1 5 team.p1: Krookodile.revealed=true
+view p1 5 team.p1: Medicham.active=false
+view p1 5 team.p1: Registeel.active=true
+view p1 5 team.p1: Registeel.hp=95
+view p1 5 turn=4
+view p1 6 force_switch.1=true
+view p1 6 opponent_team.p2: Scrafty.status="par"
+view p1 6 opponent_team.p2: Serperior.moves.1="glare"
+view p1 6 team.p1: Registeel.fainted=true
+view p1 6 team.p1: Registeel.hp=0
+view p1 6 team.p1: Registeel.status="fnt"
+drop p1 6 active.1
+drop p1 6 team.p1: Registeel.item
+view p1 7 active.1="p1: Grimmsnarl"
+view p1 7 force_switch.1=false
+view p1 7 team.p1: Grimmsnarl.active=true
+view p1 7 team.p1: Registeel.active=false
+view p1 7 turn=5
+view p1 8 opponent_active.0="p2: Poliwrath"
+view p1 8 opponent_team.p2: Poliwrath.active=true
+view p1 8 opponent_team.p2: Poliwrath.fainted=false
+view p1 8 opponent_team.p2: Poliwrath.forme="poliwrath"
+view p1 8 opponent_team.p2: Poliwrath.gender="F"
+view p1 8 opponent_team.p2: Poliwrath.hp=244
+view p1 8 opponent_team.p2: Poliwrath.level=100
+view p1 8 opponent_team.p2: Poliwrath.max_hp=384
+view p1 8 opponent_team.p2: Poliwrath.mega=false
+view p1 8 opponent_team.p2: Poliwrath.revealed=true
+view p1 8 opponent_team.p2: Poliwrath.species="poliwrath"
+view p1 8 opponent_team.p2: Poliwrath.terastallized=false
+view p1 8 opponent_team.p2: Serperior.active=false
+view p1 8 turn=6
+drop p1 8 opponent_team.p2: Serperior.boosts.atk
+drop p1 8 opponent_team.p2: Serperior.boosts.spa
+view p1 9 active.0="p1: Medicham"
+view p1 9 opponent_team.p2: Poliwrath.moves.0="icywind"
+view p1 9 team.p1: Grimmsnarl.boosts.spe=-1
+view p1 9 team.p1: Grimmsnarl.hp=211
+view p1 9 team.p1: Krookodile.active=false
+view p1 9 team.p1: Medicham.active=true
+view p1 9 team.p1: Medicham.boosts.spe=-1
+view p1 9 team.p1: Medicham.hp=239
+view p1 9 turn=7
+view p1 10 active.1="p1: Krookodile"
+view p1 10 opponent_active.0="p2: Eiscue"
+view p1 10 opponent_team.p2: Eiscue.ability="iceface"
+view p1 10 opponent_team.p2: Eiscue.active=true
+view p1 10 opponent_team.p2: Eiscue.fainted=false
+view p1 10 opponent_team.p2: Eiscue.forme="eiscue"
+view p1 10 opponent_team.p2: Eiscue.gender="M"
+view p1 10 opponent_team.p2: Eiscue.hp=354
+view p1 10 opponent_team.p2: Eiscue.level=100
+view p1 10 opponent_team.p2: Eiscue.max_hp=354
+view p1 10 opponent_team.p2: Eiscue.mega=false
+view p1 10 opponent_team.p2: Eiscue.revealed=true
+view p1 10 opponent_team.p2: Eiscue.species="eiscue"
+view p1 10 opponent_team.p2: Eiscue.terastallized=false
+view p1 10 opponent_team.p2: Poliwrath.active=false
+view p1 10 opponent_team.p2: Scrafty.boosts.atk=-2
+view p1 10 opponent_team.p2: Serperior.fainted=true
+view p1 10 opponent_team.p2: Serperior.hp=0
+view p1 10 opponent_team.p2: Serperior.status="fnt"
+view p1 10 opponent_team.p2: Serperior.terastallized=false
+view p1 10 team.p1: Grimmsnarl.active=false
+view p1 10 team.p1: Krookodile.active=true
+view p1 10 turn=8
+drop p1 10 team.p1: Grimmsnarl.boosts.spe
+view p1 11 opponent_active.0="p2: Clefairy"
+view p1 11 opponent_active.1="p2: Dudunsparce"
+view p1 11 opponent_team.p2: Clefairy.active=true
+view p1 11 opponent_team.p2: Clefairy.fainted=false
+view p1 11 opponent_team.p2: Clefairy.forme="clefairy"
+view p1 11 opponent_team.p2: Clefairy.gender="F"
+view p1 11 opponent_team.p2: Clefairy.hp=344
+view p1 11 opponent_team.p2: Clefairy.level=100
+view p1 11 opponent_team.p2: Clefairy.max_hp=344
+view p1 11 opponent_team.p2: Clefairy.mega=false
+view p1 11 opponent_team.p2: Clefairy.revealed=true
+view p1 11 opponent_team.p2: Clefairy.species="clefairy"
+view p1 11 opponent_team.p2: Clefairy.terastallized=false
+view p1 11 opponent_team.p2: Dudunsparce.active=true
+view p1 11 opponent_team.p2: Dudunsparce.fainted=false
+view p1 11 opponent_team.p2: Dudunsparce.forme="dudunsparce"
+view p1 11 opponent_team.p2: Dudunsparce.gender="M"
+view p1 11 opponent_team.p2: Dudunsparce.hp=230
+view p1 11 opponent_team.p2: Dudunsparce.level=100
+view p1 11 opponent_team.p2: Dudunsparce.max_hp=454
+view p1 11 opponent_team.p2: Dudunsparce.mega=false
+view p1 11 opponent_team.p2: Dudunsparce.revealed=true
+view p1 11 opponent_team.p2: Dudunsparce.species="dudunsparce"
+view p1 11 opponent_team.p2: Dudunsparce.terastallized=false
+view p1 11 opponent_team.p2: Eiscue.active=false
+view p1 11 opponent_team.p2: Scrafty.active=false
+view p1 11 turn=9
+drop p1 11 opponent_team.p2: Scrafty.boosts.atk
+drop p1 11 opponent_team.p2: Scrafty.boosts.def
+drop p1 11 opponent_team.p2: Scrafty.boosts.spd
+view p1 12 opponent_team.p2: Clefairy.fainted=true
+view p1 12 opponent_team.p2: Clefairy.hp=0
+view p1 12 opponent_team.p2: Clefairy.moves.0="helpinghand"
+view p1 12 opponent_team.p2: Clefairy.status="fnt"
+view p1 12 opponent_team.p2: Dudunsparce.hp=128
+view p1 12 opponent_team.p2: Dudunsparce.moves.0="earthpower"
+view p1 12 team.p1: Krookodile.hp=222
+view p1 12 wait=true
+drop p1 12 opponent_active.0
+view p1 13 opponent_active.0="p2: Poliwrath"
+view p1 13 opponent_team.p2: Clefairy.active=false
+view p1 13 opponent_team.p2: Poliwrath.active=true
+view p1 13 turn=10
+view p1 13 wait=false
+view p1 14 active.0="p1: Grimmsnarl"
+view p1 14 force_switch.1=true
+view p1 14 opponent_team.p2: Poliwrath.boosts.def=-1
+view p1 14 opponent_team.p2: Poliwrath.boosts.spd=-1
+view p1 14 opponent_team.p2: Poliwrath.hp=90
+view p1 14 opponent_team.p2: Poliwrath.moves.1="closecombat"
+view p1 14 team.p1: Grimmsnarl.active=true
+view p1 14 team.p1: Krookodile.fainted=true
+view p1 14 team.p1: Krookodile.hp=0
+view p1 14 team.p1: Krookodile.status="fnt"
+view p1 14 team.p1: Medicham.active=false
+drop p1 14 active.1
+drop p1 14 team.p1: Medicham.boosts.spe
+view p1 15 active.1="p1: Medicham"
+view p1 15 force_switch.1=false
+view p1 15 team.p1: Krookodile.active=false
+view p1 15 team.p1: Medicham.active=true
+view p1 15 turn=11
+view p1 16 opponent_active.0="p2: Scrafty"
+view p1 16 opponent_team.p2: Poliwrath.active=false
+view p1 16 opponent_team.p2: Poliwrath.fainted=true
+view p1 16 opponent_team.p2: Poliwrath.hp=0
+view p1 16 opponent_team.p2: Poliwrath.status="fnt"
+view p1 16 opponent_team.p2: Scrafty.active=true
+view p1 16 team.p1: Grimmsnarl.boosts.atk=-1
+view p1 16 team.p1: Grimmsnarl.hp=60
+view p1 16 team.p1: Medicham.boosts.atk=-1
+view p1 16 turn=12
+drop p1 16 opponent_team.p2: Poliwrath.boosts.def
+drop p1 16 opponent_team.p2: Poliwrath.boosts.spd
+view p1 17 active.0="p1: Dodrio"
+view p1 17 opponent_active.0="p2: Eiscue"
+view p1 17 opponent_team.p2: Dudunsparce.moves.1="protect"
+view p1 17 opponent_team.p2: Eiscue.active=true
+view p1 17 opponent_team.p2: Eiscue.forme="eiscuenoice"
+view p1 17 opponent_team.p2: Eiscue.species="eiscuenoice"
+view p1 17 opponent_team.p2: Scrafty.active=false
+view p1 17 team.p1: Dodrio.active=true
+view p1 17 team.p1: Grimmsnarl.active=false
+view p1 17 turn=13
+drop p1 17 team.p1: Grimmsnarl.boosts.atk
+view p1 18 active.1="p1: Grimmsnarl"
+view p1 18 opponent_team.p2: Dudunsparce.moves.2="helpinghand"
+view p1 18 opponent_team.p2: Eiscue.active=false
+view p1 18 opponent_team.p2: Scrafty.active=true
+view p1 18 opponent_team.p2: Scrafty.fainted=true
+view p1 18 opponent_team.p2: Scrafty.hp=0
+view p1 18 opponent_team.p2: Scrafty.status="fnt"
+view p1 18 team.p1: Dodrio.boosts.atk=-1
+view p1 18 team.p1: Dodrio.hp=186
+view p1 18 team.p1: Grimmsnarl.active=true
+view p1 18 team.p1: Medicham.active=false
+view p1 18 wait=true
+drop p1 18 opponent_active.0
+drop p1 18 team.p1: Medicham.boosts.atk
+view p1 19 opponent_active.0="p2: Eiscue"
+view p1 19 opponent_team.p2: Eiscue.active=true
+view p1 19 opponent_team.p2: Scrafty.active=false
+view p1 19 turn=14
+view p1 19 wait=false
+view p1 20 force_switch.1=true
+view p1 20 team.p1: Dodrio.boosts.atk=-2
+view p1 20 team.p1: Dodrio.boosts.spa=-1
+view p1 21 active.1="p1: Medicham"
+view p1 21 force_switch.1=false
+view p1 21 opponent_team.p2: Eiscue.fainted=true
+view p1 21 opponent_team.p2: Eiscue.hp=0
+view p1 21 opponent_team.p2: Eiscue.status="fnt"
+view p1 21 team.p1: Dodrio.hp=69
+view p1 21 team.p1: Grimmsnarl.active=false
+view p1 21 team.p1: Medicham.active=true
+view p1 21 turn=15
+drop p1 21 opponent_active.0
+view p1 22 force_switch.0=true
+view p1 22 force_switch.1=true
+view p1 22 team.p1: Dodrio.fainted=true
+view p1 22 team.p1: Dodrio.hp=0
+view p1 22 team.p1: Dodrio.status="fnt"
+view p1 22 team.p1: Medicham.fainted=true
+view p1 22 team.p1: Medicham.hp=0
+view p1 22 team.p1: Medicham.status="fnt"
+drop p1 22 active.0
+drop p1 22 active.1
+drop p1 22 team.p1: Dodrio.boosts.atk
+drop p1 22 team.p1: Dodrio.boosts.spa
+view p1 23 active.0="p1: Grimmsnarl"
+view p1 23 force_switch.0=false
+view p1 23 force_switch.1=false
+view p1 23 team.p1: Dodrio.active=false
+view p1 23 team.p1: Grimmsnarl.active=true
+view p1 23 turn=16
+view p1 24 finished=true
+view p1 24 opponent_team.p2: Dudunsparce.moves.3="boomburst"
+view p1 24 team.p1: Grimmsnarl.fainted=true
+view p1 24 team.p1: Grimmsnarl.hp=0
+view p1 24 team.p1: Grimmsnarl.status="fnt"
+view p1 24 won=false
+drop p1 24 active.0
+view p2 0 active.0="p2: Serperior"
+view p2 0 active.1="p2: Scrafty"
+view p2 0 finished=false
+view p2 0 force_switch.0=false
+view p2 0 force_switch.1=false
+view p2 0 opponent_active.0="p1: Registeel"
+view p2 0 opponent_active.1="p1: Grimmsnarl"
+view p2 0 opponent_team.p1: Grimmsnarl.active=true
+view p2 0 opponent_team.p1: Grimmsnarl.boosts.atk=-1
+view p2 0 opponent_team.p1: Grimmsnarl.fainted=false
+view p2 0 opponent_team.p1: Grimmsnarl.forme="grimmsnarl"
+view p2 0 opponent_team.p1: Grimmsnarl.gender="M"
+view p2 0 opponent_team.p1: Grimmsnarl.hp=394
+view p2 0 opponent_team.p1: Grimmsnarl.level=100
+view p2 0 opponent_team.p1: Grimmsnarl.max_hp=394
+view p2 0 opponent_team.p1: Grimmsnarl.mega=false
+view p2 0 opponent_team.p1: Grimmsnarl.revealed=true
+view p2 0 opponent_team.p1: Grimmsnarl.species="grimmsnarl"
+view p2 0 opponent_team.p1: Grimmsnarl.terastallized=false
+view p2 0 opponent_team.p1: Registeel.ability="clearbody"
+view p2 0 opponent_team.p1: Registeel.active=true
+view p2 0 opponent_team.p1: Registeel.fainted=false
+view p2 0 opponent_team.p1: Registeel.forme="registeel"
+view p2 0 opponent_team.p1: Registeel.gender="N"
+view p2 0 opponent_team.p1: Registeel.hp=364
+view p2 0 opponent_team.p1: Registeel.level=100
+view p2 0 opponent_team.p1: Registeel.max_hp=364
+view p2 0 opponent_team.p1: Registeel.mega=false
+view p2 0 opponent_team.p1: Registeel.revealed=true
+view p2 0 opponent_team.p1: Registeel.species="registeel"
+view p2 0 opponent_team.p1: Registeel.terastallized=false
+view p2 0 opponent_used_mega=false
+view p2 0 opponent_used_tera=false
+view p2 0 role="p2"
+view p2 0 team.p2: Clefairy.ability="friendguard"
+view p2 0 team.p2: Clefairy.active=false
+view p2 0 team.p2: Clefairy.fainted=false
+view p2 0 team.p2: Clefairy.forme="clefairy"
+view p2 0 team.p2: Clefairy.gender="F"
+view p2 0 team.p2: Clefairy.hp=344
+view p2 0 team.p2: Clefairy.item="eviolite"
+view p2 0 team.p2: Clefairy.level=100
+view p2 0 team.p2: Clefairy.max_hp=344
+view p2 0 team.p2: Clefairy.mega=false
+view p2 0 team.p2: Clefairy.moves.0="helpinghand"
+view p2 0 team.p2: Clefairy.moves.1="moonblast"
+view p2 0 team.p2: Clefairy.moves.2="lifedew"
+view p2 0 team.p2: Clefairy.moves.3="followme"
+view p2 0 team.p2: Clefairy.revealed=false
+view p2 0 team.p2: Clefairy.species="clefairy"
+view p2 0 team.p2: Clefairy.tera_type="steel"
+view p2 0 team.p2: Clefairy.terastallized=false
+view p2 0 team.p2: Dudunsparce.ability="rattled"
+view p2 0 team.p2: Dudunsparce.active=false
+view p2 0 team.p2: Dudunsparce.fainted=false
+view p2 0 team.p2: Dudunsparce.forme="dudunsparce"
+view p2 0 team.p2: Dudunsparce.gender="M"
+view p2 0 team.p2: Dudunsparce.hp=454
+view p2 0 team.p2: Dudunsparce.item="sitrusberry"
+view p2 0 team.p2: Dudunsparce.level=100
+view p2 0 team.p2: Dudunsparce.max_hp=454
+view p2 0 team.p2: Dudunsparce.mega=false
+view p2 0 team.p2: Dudunsparce.moves.0="protect"
+view p2 0 team.p2: Dudunsparce.moves.1="boomburst"
+view p2 0 team.p2: Dudunsparce.moves.2="earthpower"
+view p2 0 team.p2: Dudunsparce.moves.3="helpinghand"
+view p2 0 team.p2: Dudunsparce.revealed=false
+view p2 0 team.p2: Dudunsparce.species="dudunsparce"
+view p2 0 team.p2: Dudunsparce.tera_type="ghost"
+view p2 0 team.p2: Dudunsparce.terastallized=false
+view p2 0 team.p2: Eiscue.ability="iceface"
+view p2 0 team.p2: Eiscue.active=false
+view p2 0 team.p2: Eiscue.fainted=false
+view p2 0 team.p2: Eiscue.forme="eiscue"
+view p2 0 team.p2: Eiscue.gender="M"
+view p2 0 team.p2: Eiscue.hp=354
+view p2 0 team.p2: Eiscue.item="sitrusberry"
+view p2 0 team.p2: Eiscue.level=100
+view p2 0 team.p2: Eiscue.max_hp=354
+view p2 0 team.p2: Eiscue.mega=false
+view p2 0 team.p2: Eiscue.moves.0="liquidation"
+view p2 0 team.p2: Eiscue.moves.1="protect"
+view p2 0 team.p2: Eiscue.moves.2="bellydrum"
+view p2 0 team.p2: Eiscue.moves.3="icespinner"
+view p2 0 team.p2: Eiscue.revealed=false
+view p2 0 team.p2: Eiscue.species="eiscue"
+view p2 0 team.p2: Eiscue.tera_type="water"
+view p2 0 team.p2: Eiscue.terastallized=false
+view p2 0 team.p2: Poliwrath.ability="waterabsorb"
+view p2 0 team.p2: Poliwrath.active=false
+view p2 0 team.p2: Poliwrath.fainted=false
+view p2 0 team.p2: Poliwrath.forme="poliwrath"
+view p2 0 team.p2: Poliwrath.gender="F"
+view p2 0 team.p2: Poliwrath.hp=384
+view p2 0 team.p2: Poliwrath.item="sitrusberry"
+view p2 0 team.p2: Poliwrath.level=100
+view p2 0 team.p2: Poliwrath.max_hp=384
+view p2 0 team.p2: Poliwrath.mega=false
+view p2 0 team.p2: Poliwrath.moves.0="coaching"
+view p2 0 team.p2: Poliwrath.moves.1="liquidation"
+view p2 0 team.p2: Poliwrath.moves.2="closecombat"
+view p2 0 team.p2: Poliwrath.moves.3="icywind"
+view p2 0 team.p2: Poliwrath.revealed=false
+view p2 0 team.p2: Poliwrath.species="poliwrath"
+view p2 0 team.p2: Poliwrath.tera_type="fire"
+view p2 0 team.p2: Poliwrath.terastallized=false
+view p2 0 team.p2: Scrafty.ability="intimidate"
+view p2 0 team.p2: Scrafty.active=true
+view p2 0 team.p2: Scrafty.fainted=false
+view p2 0 team.p2: Scrafty.forme="scrafty"
+view p2 0 team.p2: Scrafty.gender="F"
+view p2 0 team.p2: Scrafty.hp=334
+view p2 0 team.p2: Scrafty.item="assaultvest"
+view p2 0 team.p2: Scrafty.level=100
+view p2 0 team.p2: Scrafty.max_hp=334
+view p2 0 team.p2: Scrafty.mega=false
+view p2 0 team.p2: Scrafty.moves.0="closecombat"
+view p2 0 team.p2: Scrafty.moves.1="fakeout"
+view p2 0 team.p2: Scrafty.moves.2="knockoff"
+view p2 0 team.p2: Scrafty.moves.3="poisonjab"
+view p2 0 team.p2: Scrafty.revealed=true
+view p2 0 team.p2: Scrafty.species="scrafty"
+view p2 0 team.p2: Scrafty.tera_type="poison"
+view p2 0 team.p2: Scrafty.terastallized=false
+view p2 0 team.p2: Serperior.ability="contrary"
+view p2 0 team.p2: Serperior.active=true
+view p2 0 team.p2: Serperior.fainted=false
+view p2 0 team.p2: Serperior.forme="serperior"
+view p2 0 team.p2: Serperior.gender="M"
+view p2 0 team.p2: Serperior.hp=292
+view p2 0 team.p2: Serperior.item="lifeorb"
+view p2 0 team.p2: Serperior.level=100
+view p2 0 team.p2: Serperior.max_hp=292
+view p2 0 team.p2: Serperior.mega=false
+view p2 0 team.p2: Serperior.moves.0="terablast"
+view p2 0 team.p2: Serperior.moves.1="glare"
+view p2 0 team.p2: Serperior.moves.2="leafstorm"
+view p2 0 team.p2: Serperior.moves.3="protect"
+view p2 0 team.p2: Serperior.revealed=true
+view p2 0 team.p2: Serperior.species="serperior"
+view p2 0 team.p2: Serperior.tera_type="fire"
+view p2 0 team.p2: Serperior.terastallized=false
+view p2 0 teampreview=false
+view p2 0 turn=1
+view p2 0 used_mega=false
+view p2 0 used_tera=false
+view p2 0 wait=false
+view p2 1 opponent_team.p1: Crabominable.active=true
+view p2 1 opponent_team.p1: Crabominable.fainted=true
+view p2 1 opponent_team.p1: Crabominable.forme="crabominable"
+view p2 1 opponent_team.p1: Crabominable.gender="F"
+view p2 1 opponent_team.p1: Crabominable.hp=0
+view p2 1 opponent_team.p1: Crabominable.level=100
+view p2 1 opponent_team.p1: Crabominable.max_hp=336
+view p2 1 opponent_team.p1: Crabominable.mega=false
+view p2 1 opponent_team.p1: Crabominable.revealed=true
+view p2 1 opponent_team.p1: Crabominable.species="crabominable"
+view p2 1 opponent_team.p1: Crabominable.status="fnt"
+view p2 1 opponent_team.p1: Crabominable.terastallized=false
+view p2 1 opponent_team.p1: Grimmsnarl.hp=222
+view p2 1 opponent_team.p1: Grimmsnarl.moves.0="spiritbreak"
+view p2 1 opponent_team.p1: Registeel.active=false
+view p2 1 team.p2: Serperior.hp=263
+view p2 1 wait=true
+drop p2 1 opponent_active.0
+view p2 2 opponent_active.0="p1: Dodrio"
+view p2 2 opponent_team.p1: Crabominable.active=false
+view p2 2 opponent_team.p1: Dodrio.active=true
+view p2 2 opponent_team.p1: Dodrio.fainted=false
+view p2 2 opponent_team.p1: Dodrio.forme="dodrio"
+view p2 2 opponent_team.p1: Dodrio.gender="F"
+view p2 2 opponent_team.p1: Dodrio.hp=262
+view p2 2 opponent_team.p1: Dodrio.level=100
+view p2 2 opponent_team.p1: Dodrio.max_hp=262
+view p2 2 opponent_team.p1: Dodrio.mega=false
+view p2 2 opponent_team.p1: Dodrio.revealed=true
+view p2 2 opponent_team.p1: Dodrio.species="dodrio"
+view p2 2 opponent_team.p1: Dodrio.terastallized=false
+view p2 2 turn=2
+view p2 2 wait=false
+view p2 3 opponent_team.p1: Grimmsnarl.moves.1="partingshot"
+view p2 3 opponent_team.p1: Grimmsnarl.tera_type="steel"
+view p2 3 opponent_team.p1: Grimmsnarl.terastallized=true
+view p2 3 opponent_used_tera=true
+view p2 3 team.p2: Serperior.boosts.atk=1
+view p2 3 team.p2: Serperior.boosts.spa=1
+view p2 3 wait=true
+view p2 4 opponent_active.1="p1: Medicham"
+view p2 4 opponent_team.p1: Dodrio.moves.0="knockoff"
+view p2 4 opponent_team.p1: Grimmsnarl.active=false
+view p2 4 opponent_team.p1: Medicham.active=true
+view p2 4 opponent_team.p1: Medicham.fainted=false
+view p2 4 opponent_team.p1: Medicham.forme="medicham"
+view p2 4 opponent_team.p1: Medicham.gender="F"
+view p2 4 opponent_team.p1: Medicham.hp=262
+view p2 4 opponent_team.p1: Medicham.level=100
+view p2 4 opponent_team.p1: Medicham.max_hp=262
+view p2 4 opponent_team.p1: Medicham.mega=false
+view p2 4 opponent_team.p1: Medicham.revealed=true
+view p2 4 opponent_team.p1: Medicham.species="medicham"
+view p2 4 opponent_team.p1: Medicham.terastallized=false
+view p2 4 team.p2: Scrafty.boosts.def=-1
+view p2 4 team.p2: Scrafty.boosts.spd=-1
+view p2 4 team.p2: Scrafty.hp=230
+view p2 4 team.p2: Serperior.hp=87
+view p2 4 turn=3
+view p2 4 wait=false
+drop p2 4 opponent_team.p1: Grimmsnarl.boosts.atk
+drop p2 4 team.p2: Scrafty.item
+view p2 5 opponent_active.0="p1: Krookodile"
+view p2 5 opponent_active.1="p1: Registeel"
+view p2 5 opponent_team.p1: Dodrio.active=false
+view p2 5 opponent_team.p1: Krookodile.ability="intimidate"
+view p2 5 opponent_team.p1: Krookodile.active=true
+view p2 5 opponent_team.p1: Krookodile.fainted=false
+view p2 5 opponent_team.p1: Krookodile.forme="krookodile"
+view p2 5 opponent_team.p1: Krookodile.gender="M"
+view p2 5 opponent_team.p1: Krookodile.hp=332
+view p2 5 opponent_team.p1: Krookodile.level=100
+view p2 5 opponent_team.p1: Krookodile.max_hp=332
+view p2 5 opponent_team.p1: Krookodile.mega=false
+view p2 5 opponent_team.p1: Krookodile.revealed=true
+view p2 5 opponent_team.p1: Krookodile.species="krookodile"
+view p2 5 opponent_team.p1: Krookodile.terastallized=false
+view p2 5 opponent_team.p1: Medicham.active=false
+view p2 5 opponent_team.p1: Registeel.active=true
+view p2 5 opponent_team.p1: Registeel.hp=95
+view p2 5 opponent_team.p1: Registeel.item="leftovers"
+view p2 5 team.p2: Scrafty.boosts.atk=-1
+view p2 5 team.p2: Serperior.boosts.atk=2
+view p2 5 team.p2: Serperior.hp=58
+view p2 5 team.p2: Serperior.terastallized=true
+view p2 5 turn=4
+view p2 5 used_tera=true
+view p2 6 opponent_team.p1: Krookodile.moves.0="knockoff"
+view p2 6 opponent_team.p1: Registeel.fainted=true
+view p2 6 opponent_team.p1: Registeel.hp=0
+view p2 6 opponent_team.p1: Registeel.status="fnt"
+view p2 6 team.p2: Scrafty.status="par"
+view p2 6 wait=true
+drop p2 6 opponent_active.1
+drop p2 6 opponent_team.p1: Registeel.item
+view p2 7 opponent_active.1="p1: Grimmsnarl"
+view p2 7 opponent_team.p1: Grimmsnarl.active=true
+view p2 7 opponent_team.p1: Registeel.active=false
+view p2 7 turn=5
+view p2 7 wait=false
+view p2 8 active.0="p2: Poliwrath"
+view p2 8 opponent_team.p1: Grimmsnarl.moves.2="lightscreen"
+view p2 8 team.p2: Poliwrath.active=true
+view p2 8 team.p2: Poliwrath.hp=244
+view p2 8 team.p2: Poliwrath.revealed=true
+view p2 8 team.p2: Serperior.active=false
+view p2 8 turn=6
+drop p2 8 team.p2: Poliwrath.item
+drop p2 8 team.p2: Serperior.boosts.atk
+drop p2 8 team.p2: Serperior.boosts.spa
+view p2 9 opponent_active.0="p1: Medicham"
+view p2 9 opponent_team.p1: Grimmsnarl.boosts.spe=-1
+view p2 9 opponent_team.p1: Grimmsnarl.hp=211
+view p2 9 opponent_team.p1: Krookodile.active=false
+view p2 9 opponent_team.p1: Medicham.active=true
+view p2 9 opponent_team.p1: Medicham.boosts.spe=-1
+view p2 9 opponent_team.p1: Medicham.hp=239
+view p2 9 turn=7
+view p2 10 active.0="p2: Eiscue"
+view p2 10 opponent_active.1="p1: Krookodile"
+view p2 10 opponent_team.p1: Grimmsnarl.active=false
+view p2 10 opponent_team.p1: Krookodile.active=true
+view p2 10 opponent_team.p1: Medicham.moves.0="icepunch"
+view p2 10 team.p2: Eiscue.active=true
+view p2 10 team.p2: Eiscue.revealed=true
+view p2 10 team.p2: Poliwrath.active=false
+view p2 10 team.p2: Scrafty.boosts.atk=-2
+view p2 10 team.p2: Serperior.fainted=true
+view p2 10 team.p2: Serperior.hp=0
+view p2 10 team.p2: Serperior.status="fnt"
+view p2 10 turn=8
+drop p2 10 opponent_team.p1: Grimmsnarl.boosts.spe
+view p2 11 active.0="p2: Clefairy"
+view p2 11 active.1="p2: Dudunsparce"
+view p2 11 opponent_team.p1: Krookodile.moves.1="gunkshot"
+view p2 11 team.p2: Clefairy.active=true
+view p2 11 team.p2: Clefairy.revealed=true
+view p2 11 team.p2: Dudunsparce.active=true
+view p2 11 team.p2: Dudunsparce.hp=230
+view p2 11 team.p2: Dudunsparce.revealed=true
+view p2 11 team.p2: Eiscue.active=false
+view p2 11 team.p2: Scrafty.active=false
+view p2 11 turn=9
+drop p2 11 team.p2: Scrafty.boosts.atk
+drop p2 11 team.p2: Scrafty.boosts.def
+drop p2 11 team.p2: Scrafty.boosts.spd
+view p2 12 force_switch.0=true
+view p2 12 opponent_team.p1: Krookodile.hp=222
+view p2 12 team.p2: Clefairy.fainted=true
+view p2 12 team.p2: Clefairy.hp=0
+view p2 12 team.p2: Clefairy.status="fnt"
+view p2 12 team.p2: Dudunsparce.hp=128
+drop p2 12 active.0
+drop p2 12 team.p2: Dudunsparce.item
+view p2 13 active.0="p2: Poliwrath"
+view p2 13 force_switch.0=false
+view p2 13 team.p2: Clefairy.active=false
+view p2 13 team.p2: Poliwrath.active=true
+view p2 13 turn=10
+view p2 14 opponent_active.0="p1: Grimmsnarl"
+view p2 14 opponent_team.p1: Grimmsnarl.active=true
+view p2 14 opponent_team.p1: Krookodile.fainted=true
+view p2 14 opponent_team.p1: Krookodile.hp=0
+view p2 14 opponent_team.p1: Krookodile.status="fnt"
+view p2 14 opponent_team.p1: Medicham.active=false
+view p2 14 team.p2: Poliwrath.boosts.def=-1
+view p2 14 team.p2: Poliwrath.boosts.spd=-1
+view p2 14 team.p2: Poliwrath.hp=90
+view p2 14 wait=true
+drop p2 14 opponent_active.1
+drop p2 14 opponent_team.p1: Medicham.boosts.spe
+view p2 15 opponent_active.1="p1: Medicham"
+view p2 15 opponent_team.p1: Krookodile.active=false
+view p2 15 opponent_team.p1: Medicham.active=true
+view p2 15 turn=11
+view p2 15 wait=false
+view p2 16 active.0="p2: Scrafty"
+view p2 16 opponent_team.p1: Grimmsnarl.boosts.atk=-1
+view p2 16 opponent_team.p1: Grimmsnarl.hp=60
+view p2 16 opponent_team.p1: Medicham.boosts.atk=-1
+view p2 16 opponent_team.p1: Medicham.moves.1="poisonjab"
+view p2 16 team.p2: Poliwrath.active=false
+view p2 16 team.p2: Poliwrath.fainted=true
+view p2 16 team.p2: Poliwrath.hp=0
+view p2 16 team.p2: Poliwrath.status="fnt"
+view p2 16 team.p2: Scrafty.active=true
+view p2 16 turn=12
+drop p2 16 team.p2: Poliwrath.boosts.def
+drop p2 16 team.p2: Poliwrath.boosts.spd
+view p2 17 active.0="p2: Eiscue"
+view p2 17 opponent_active.0="p1: Dodrio"
+view p2 17 opponent_team.p1: Dodrio.active=true
+view p2 17 opponent_team.p1: Grimmsnarl.active=false
+view p2 17 team.p2: Eiscue.active=true
+view p2 17 team.p2: Eiscue.forme="eiscuenoice"
+view p2 17 team.p2: Eiscue.species="eiscuenoice"
+view p2 17 team.p2: Scrafty.active=false
+view p2 17 turn=13
+drop p2 17 opponent_team.p1: Grimmsnarl.boosts.atk
+view p2 18 force_switch.0=true
+view p2 18 opponent_active.1="p1: Grimmsnarl"
+view p2 18 opponent_team.p1: Dodrio.boosts.atk=-1
+view p2 18 opponent_team.p1: Dodrio.hp=186
+view p2 18 opponent_team.p1: Dodrio.moves.1="bravebird"
+view p2 18 opponent_team.p1: Grimmsnarl.active=true
+view p2 18 opponent_team.p1: Medicham.active=false
+view p2 18 team.p2: Eiscue.active=false
+view p2 18 team.p2: Scrafty.active=true
+view p2 18 team.p2: Scrafty.fainted=true
+view p2 18 team.p2: Scrafty.hp=0
+view p2 18 team.p2: Scrafty.status="fnt"
+drop p2 18 active.0
+drop p2 18 opponent_team.p1: Medicham.boosts.atk
+view p2 19 active.0="p2: Eiscue"
+view p2 19 force_switch.0=false
+view p2 19 team.p2: Eiscue.active=true
+view p2 19 team.p2: Scrafty.active=false
+view p2 19 turn=14
+view p2 20 opponent_team.p1: Dodrio.boosts.atk=-2
+view p2 20 opponent_team.p1: Dodrio.boosts.spa=-1
+view p2 20 wait=true
+view p2 21 opponent_active.1="p1: Medicham"
+view p2 21 opponent_team.p1: Dodrio.hp=69
+view p2 21 opponent_team.p1: Grimmsnarl.active=false
+view p2 21 opponent_team.p1: Medicham.active=true
+view p2 21 team.p2: Eiscue.fainted=true
+view p2 21 team.p2: Eiscue.hp=0
+view p2 21 team.p2: Eiscue.status="fnt"
+view p2 21 turn=15
+view p2 21 wait=false
+drop p2 21 active.0
+view p2 22 opponent_team.p1: Dodrio.fainted=true
+view p2 22 opponent_team.p1: Dodrio.hp=0
+view p2 22 opponent_team.p1: Dodrio.status="fnt"
+view p2 22 opponent_team.p1: Medicham.fainted=true
+view p2 22 opponent_team.p1: Medicham.hp=0
+view p2 22 opponent_team.p1: Medicham.status="fnt"
+view p2 22 wait=true
+drop p2 22 opponent_active.0
+drop p2 22 opponent_active.1
+drop p2 22 opponent_team.p1: Dodrio.boosts.atk
+drop p2 22 opponent_team.p1: Dodrio.boosts.spa
+view p2 23 opponent_active.0="p1: Grimmsnarl"
+view p2 23 opponent_team.p1: Dodrio.active=false
+view p2 23 opponent_team.p1: Grimmsnarl.active=true
+view p2 23 turn=16
+view p2 23 wait=false
+view p2 24 finished=true
+view p2 24 opponent_team.p1: Grimmsnarl.fainted=true
+view p2 24 opponent_team.p1: Grimmsnarl.hp=0
+view p2 24 opponent_team.p1: Grimmsnarl.status="fnt"
+view p2 24 opponent_team.p1: Grimmsnarl.terastallized=false
+view p2 24 won=true
+drop p2 24 opponent_active.0

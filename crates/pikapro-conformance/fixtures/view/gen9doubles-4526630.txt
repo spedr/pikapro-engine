@@ -1,0 +1,1028 @@
+# Recorded by view_conformance. Do not edit by hand.
+format gen9doubles
+seed 4526630
+source fuzz
+checks soundness leak meta=1
+team p1
+Gyarados (M) @ Icy Rock
+Ability: Intimidate
+Level: 50
+Tera Type: Flying
+EVs: 6 HP / 63 Atk / 70 Def / 11 SpA / 125 SpD / 233 Spe
+Mild Nature
+- Psybeam
+- Spark
+
+Beldum @ Psychic Seed
+Ability: Light Metal
+Level: 50
+Tera Type: Ice
+EVs: 26 HP / 28 Atk / 31 Def / 1 SpA / 198 SpD / 188 Spe
+Calm Nature
+- Blaze Kick
+- Clangorous Soul
+- Transform
+
+Big Tony's Pal (Gothita) (M) @ Life Orb
+Ability: Competitive
+Level: 50
+Tera Type: Dragon
+EVs: 21 HP / 29 Atk / 119 Def / 47 SpA / 65 SpD / 6 Spe
+Bold Nature
+- Order Up
+- Attack Order
+- Celebrate
+- Block
+
+Chomp (Smeargle) (M)
+Ability: Moody
+Level: 50
+Tera Type: Stellar
+EVs: 39 HP / 2 Atk / 127 SpA / 198 SpD / 141 Spe
+Rash Nature
+- Magical Leaf
+- Drum Beating
+- Freeze-Dry
+- Lick
+
+Growlithe @ Adamant Orb
+Ability: Justified
+Level: 50
+Tera Type: Normal
+EVs: 161 HP / 92 Atk / 1 Def / 31 SpA / 6 SpD / 216 Spe
+Naive Nature
+- Ice Fang
+- Metal Claw
+
+Morpeko (M) @ Never-Melt Ice
+Ability: Hunger Switch
+Level: 50
+Tera Type: Rock
+EVs: 78 HP / 21 Atk / 133 Def / 17 SpA / 197 SpD / 1 Spe
+Adamant Nature
+- Revival Blessing
+- Seismic Toss
+- Rock Blast
+end
+team p2
+Big Tony's Pal (Mareanie)
+Ability: Merciless
+Level: 50
+Tera Type: Stellar
+EVs: 85 HP / 7 Atk / 17 Def / 98 SpA / 18 SpD / 228 Spe
+Bashful Nature
+- Morning Sun
+- Focus Blast
+- Torment
+- Court Change
+
+Sparky (Aipom)
+Ability: Run Away
+Level: 50
+Tera Type: Psychic
+EVs: 105 HP / 21 Atk / 43 Def / 49 SpA / 110 SpD / 28 Spe
+Quiet Nature
+- Defense Curl
+- Rock Tomb
+- Vacuum Wave
+
+Raichu-Alola @ Power Band
+Ability: Surge Surfer
+Level: 50
+Tera Type: Dragon
+EVs: 48 HP / 214 Atk / 79 Def / 5 SpA / 94 SpD / 25 Spe
+Mild Nature
+- Chilly Reception
+- Electroweb
+
+Kyurem @ Room Service
+Ability: Pressure
+Level: 50
+Tera Type: Psychic
+EVs: 21 HP / 52 Atk / 31 Def / 102 SpA / 194 SpD / 94 Spe
+Brave Nature
+- Fleur Cannon
+- Destiny Bond
+- Torch Song
+
+Zoroark-Hisui @ Master Ball
+Ability: Illusion
+Level: 50
+Tera Type: Dark
+EVs: 22 HP / 185 Atk / 41 Def / 131 SpA / 58 SpD / 16 Spe
+Lax Nature
+- Armor Cannon
+- Speed Swap
+- Circle Throw
+
+Mr. Bubbles (Arcanine-Hisui) (F) @ Mirror Herb
+Ability: Intimidate
+Level: 50
+Tera Type: Grass
+EVs: 172 HP / 15 Atk / 40 Def / 141 SpA / 102 Spe
+Lonely Nature
+- Substitute
+- Outrage
+- Mortal Spin
+- Sheer Cold
+end
+choice p1 move 1 2, move 2
+choice p2 switch 6, switch 5
+choice p1 switch 4, move 3 1 terastallize
+choice p2 move 4 1, move 1 -1 terastallize
+choice p1 move 1 2, move 1
+choice p2 move 4 1, move 1 2
+choice p1 move 4 -2, switch 4
+choice p2 move 4 -2, move 3 -1
+choice p1 move 1 2, switch 4
+choice p2 switch 5, move 3 -1
+choice p1 move 3 2, move 1 -1
+choice p2 switch 3, move 3 -1
+choice p1 move 3 2, move 3 -1
+choice p2 move 3 2, move 1 -1
+choice p1 pass, switch 5
+choice p2 pass, switch 3
+choice p1 switch 6, switch 4
+choice p2 move 1 1, move 2
+choice p1 switch 4, pass
+choice p2 move 1 2, switch 5
+choice p1 switch 3, move 2 2
+choice p2 move 2, move 2 1
+choice p1 move 2 -2, switch 6
+choice p2 switch 4, move 2 2
+choice p1 switch 3, move 2 2
+choice p1 pass, switch 3
+choice p2 move 4 -2, switch 4
+choice p1 move 1 -2, move 4 1
+choice p2 move 2, move 3 2
+choice p1 move 2 -2, move 1 -1
+choice p1 pass, switch 6
+choice p2 move 1, switch 4
+choice p1 move 1 -2, move 2 -1
+choice p2 move 1, move 3 -1
+choice p1 move 1 1, pass
+choice p2 move 4 1, move 2 1
+choice p1 move 2 2, pass
+choice p2 switch 5, switch 6
+choice p1 move 2 2, pass
+choice p2 move 2, move 3 -1
+choice p1 move 2 1, pass
+records 23
+view p1 0 active.0="p1: Gyarados"
+view p1 0 active.1="p1: Beldum"
+view p1 0 finished=false
+view p1 0 force_switch.0=false
+view p1 0 force_switch.1=false
+view p1 0 opponent_active.0="p2: Big Tony's Pal"
+view p1 0 opponent_active.1="p2: Sparky"
+view p1 0 opponent_team.p2: Big Tony's Pal.active=true
+view p1 0 opponent_team.p2: Big Tony's Pal.boosts.atk=-1
+view p1 0 opponent_team.p2: Big Tony's Pal.fainted=false
+view p1 0 opponent_team.p2: Big Tony's Pal.forme="mareanie"
+view p1 0 opponent_team.p2: Big Tony's Pal.gender="M"
+view p1 0 opponent_team.p2: Big Tony's Pal.hp=136
+view p1 0 opponent_team.p2: Big Tony's Pal.level=50
+view p1 0 opponent_team.p2: Big Tony's Pal.max_hp=136
+view p1 0 opponent_team.p2: Big Tony's Pal.mega=false
+view p1 0 opponent_team.p2: Big Tony's Pal.revealed=true
+view p1 0 opponent_team.p2: Big Tony's Pal.species="mareanie"
+view p1 0 opponent_team.p2: Big Tony's Pal.terastallized=false
+view p1 0 opponent_team.p2: Sparky.active=true
+view p1 0 opponent_team.p2: Sparky.boosts.atk=-1
+view p1 0 opponent_team.p2: Sparky.fainted=false
+view p1 0 opponent_team.p2: Sparky.forme="aipom"
+view p1 0 opponent_team.p2: Sparky.gender="F"
+view p1 0 opponent_team.p2: Sparky.hp=143
+view p1 0 opponent_team.p2: Sparky.level=50
+view p1 0 opponent_team.p2: Sparky.max_hp=143
+view p1 0 opponent_team.p2: Sparky.mega=false
+view p1 0 opponent_team.p2: Sparky.revealed=true
+view p1 0 opponent_team.p2: Sparky.species="aipom"
+view p1 0 opponent_team.p2: Sparky.terastallized=false
+view p1 0 opponent_used_mega=false
+view p1 0 opponent_used_tera=false
+view p1 0 role="p1"
+view p1 0 team.p1: Beldum.ability="lightmetal"
+view p1 0 team.p1: Beldum.active=true
+view p1 0 team.p1: Beldum.fainted=false
+view p1 0 team.p1: Beldum.forme="beldum"
+view p1 0 team.p1: Beldum.gender="N"
+view p1 0 team.p1: Beldum.hp=118
+view p1 0 team.p1: Beldum.item="psychicseed"
+view p1 0 team.p1: Beldum.level=50
+view p1 0 team.p1: Beldum.max_hp=118
+view p1 0 team.p1: Beldum.mega=false
+view p1 0 team.p1: Beldum.moves.0="blazekick"
+view p1 0 team.p1: Beldum.moves.1="clangoroussoul"
+view p1 0 team.p1: Beldum.moves.2="transform"
+view p1 0 team.p1: Beldum.revealed=true
+view p1 0 team.p1: Beldum.species="beldum"
+view p1 0 team.p1: Beldum.tera_type="ice"
+view p1 0 team.p1: Beldum.terastallized=false
+view p1 0 team.p1: Big Tony's Pal.ability="competitive"
+view p1 0 team.p1: Big Tony's Pal.active=false
+view p1 0 team.p1: Big Tony's Pal.fainted=false
+view p1 0 team.p1: Big Tony's Pal.forme="gothita"
+view p1 0 team.p1: Big Tony's Pal.gender="M"
+view p1 0 team.p1: Big Tony's Pal.hp=123
+view p1 0 team.p1: Big Tony's Pal.item="lifeorb"
+view p1 0 team.p1: Big Tony's Pal.level=50
+view p1 0 team.p1: Big Tony's Pal.max_hp=123
+view p1 0 team.p1: Big Tony's Pal.mega=false
+view p1 0 team.p1: Big Tony's Pal.moves.0="orderup"
+view p1 0 team.p1: Big Tony's Pal.moves.1="attackorder"
+view p1 0 team.p1: Big Tony's Pal.moves.2="celebrate"
+view p1 0 team.p1: Big Tony's Pal.moves.3="block"
+view p1 0 team.p1: Big Tony's Pal.revealed=false
+view p1 0 team.p1: Big Tony's Pal.species="gothita"
+view p1 0 team.p1: Big Tony's Pal.tera_type="dragon"
+view p1 0 team.p1: Big Tony's Pal.terastallized=false
+view p1 0 team.p1: Chomp.ability="moody"
+view p1 0 team.p1: Chomp.active=false
+view p1 0 team.p1: Chomp.fainted=false
+view p1 0 team.p1: Chomp.forme="smeargle"
+view p1 0 team.p1: Chomp.gender="M"
+view p1 0 team.p1: Chomp.hp=135
+view p1 0 team.p1: Chomp.level=50
+view p1 0 team.p1: Chomp.max_hp=135
+view p1 0 team.p1: Chomp.mega=false
+view p1 0 team.p1: Chomp.moves.0="magicalleaf"
+view p1 0 team.p1: Chomp.moves.1="drumbeating"
+view p1 0 team.p1: Chomp.moves.2="freezedry"
+view p1 0 team.p1: Chomp.moves.3="lick"
+view p1 0 team.p1: Chomp.revealed=false
+view p1 0 team.p1: Chomp.species="smeargle"
+view p1 0 team.p1: Chomp.tera_type="stellar"
+view p1 0 team.p1: Chomp.terastallized=false
+view p1 0 team.p1: Growlithe.ability="justified"
+view p1 0 team.p1: Growlithe.active=false
+view p1 0 team.p1: Growlithe.fainted=false
+view p1 0 team.p1: Growlithe.forme="growlithe"
+view p1 0 team.p1: Growlithe.gender="M"
+view p1 0 team.p1: Growlithe.hp=150
+view p1 0 team.p1: Growlithe.item="adamantorb"
+view p1 0 team.p1: Growlithe.level=50
+view p1 0 team.p1: Growlithe.max_hp=150
+view p1 0 team.p1: Growlithe.mega=false
+view p1 0 team.p1: Growlithe.moves.0="icefang"
+view p1 0 team.p1: Growlithe.moves.1="metalclaw"
+view p1 0 team.p1: Growlithe.revealed=false
+view p1 0 team.p1: Growlithe.species="growlithe"
+view p1 0 team.p1: Growlithe.tera_type="normal"
+view p1 0 team.p1: Growlithe.terastallized=false
+view p1 0 team.p1: Gyarados.ability="intimidate"
+view p1 0 team.p1: Gyarados.active=true
+view p1 0 team.p1: Gyarados.fainted=false
+view p1 0 team.p1: Gyarados.forme="gyarados"
+view p1 0 team.p1: Gyarados.gender="M"
+view p1 0 team.p1: Gyarados.hp=171
+view p1 0 team.p1: Gyarados.item="icyrock"
+view p1 0 team.p1: Gyarados.level=50
+view p1 0 team.p1: Gyarados.max_hp=171
+view p1 0 team.p1: Gyarados.mega=false
+view p1 0 team.p1: Gyarados.moves.0="psybeam"
+view p1 0 team.p1: Gyarados.moves.1="spark"
+view p1 0 team.p1: Gyarados.revealed=true
+view p1 0 team.p1: Gyarados.species="gyarados"
+view p1 0 team.p1: Gyarados.tera_type="flying"
+view p1 0 team.p1: Gyarados.terastallized=false
+view p1 0 team.p1: Morpeko.ability="hungerswitch"
+view p1 0 team.p1: Morpeko.active=false
+view p1 0 team.p1: Morpeko.fainted=false
+view p1 0 team.p1: Morpeko.forme="morpeko"
+view p1 0 team.p1: Morpeko.gender="M"
+view p1 0 team.p1: Morpeko.hp=143
+view p1 0 team.p1: Morpeko.item="nevermeltice"
+view p1 0 team.p1: Morpeko.level=50
+view p1 0 team.p1: Morpeko.max_hp=143
+view p1 0 team.p1: Morpeko.mega=false
+view p1 0 team.p1: Morpeko.moves.0="revivalblessing"
+view p1 0 team.p1: Morpeko.moves.1="seismictoss"
+view p1 0 team.p1: Morpeko.moves.2="rockblast"
+view p1 0 team.p1: Morpeko.revealed=false
+view p1 0 team.p1: Morpeko.species="morpeko"
+view p1 0 team.p1: Morpeko.tera_type="rock"
+view p1 0 team.p1: Morpeko.terastallized=false
+view p1 0 teampreview=false
+view p1 0 turn=1
+view p1 0 used_mega=false
+view p1 0 used_tera=false
+view p1 0 wait=false
+view p1 1 opponent_active.0="p2: Mr. Bubbles"
+view p1 1 opponent_active.1="p2: Zoroark"
+view p1 1 opponent_team.p2: Big Tony's Pal.active=false
+view p1 1 opponent_team.p2: Mr. Bubbles.active=true
+view p1 1 opponent_team.p2: Mr. Bubbles.boosts.atk=1
+view p1 1 opponent_team.p2: Mr. Bubbles.boosts.def=1
+view p1 1 opponent_team.p2: Mr. Bubbles.boosts.spa=1
+view p1 1 opponent_team.p2: Mr. Bubbles.boosts.spd=1
+view p1 1 opponent_team.p2: Mr. Bubbles.boosts.spe=1
+view p1 1 opponent_team.p2: Mr. Bubbles.fainted=false
+view p1 1 opponent_team.p2: Mr. Bubbles.forme="arcaninehisui"
+view p1 1 opponent_team.p2: Mr. Bubbles.gender="F"
+view p1 1 opponent_team.p2: Mr. Bubbles.hp=192
+view p1 1 opponent_team.p2: Mr. Bubbles.level=50
+view p1 1 opponent_team.p2: Mr. Bubbles.max_hp=192
+view p1 1 opponent_team.p2: Mr. Bubbles.mega=false
+view p1 1 opponent_team.p2: Mr. Bubbles.revealed=true
+view p1 1 opponent_team.p2: Mr. Bubbles.species="arcaninehisui"
+view p1 1 opponent_team.p2: Mr. Bubbles.terastallized=false
+view p1 1 opponent_team.p2: Sparky.active=false
+view p1 1 opponent_team.p2: Zoroark.ability="illusion"
+view p1 1 opponent_team.p2: Zoroark.active=true
+view p1 1 opponent_team.p2: Zoroark.fainted=false
+view p1 1 opponent_team.p2: Zoroark.forme="zoroarkhisui"
+view p1 1 opponent_team.p2: Zoroark.gender="M"
+view p1 1 opponent_team.p2: Zoroark.hp=102
+view p1 1 opponent_team.p2: Zoroark.level=50
+view p1 1 opponent_team.p2: Zoroark.max_hp=133
+view p1 1 opponent_team.p2: Zoroark.mega=false
+view p1 1 opponent_team.p2: Zoroark.revealed=true
+view p1 1 opponent_team.p2: Zoroark.species="zoroarkhisui"
+view p1 1 opponent_team.p2: Zoroark.terastallized=false
+view p1 1 team.p1: Beldum.boosts.def=1
+view p1 1 team.p1: Beldum.boosts.spa=1
+view p1 1 team.p1: Beldum.boosts.spd=1
+view p1 1 team.p1: Beldum.boosts.spe=1
+view p1 1 team.p1: Beldum.hp=80
+view p1 1 team.p1: Gyarados.boosts.atk=-1
+view p1 1 turn=2
+drop p1 1 opponent_team.p2: Big Tony's Pal.boosts.atk
+drop p1 1 opponent_team.p2: Sparky.boosts.atk
+view p1 2 active.0="p1: Chomp"
+view p1 2 opponent_team.p2: Mr. Bubbles.hp=180
+view p1 2 opponent_team.p2: Mr. Bubbles.moves.0="sheercold"
+view p1 2 opponent_team.p2: Zoroark.boosts.atk=-1
+view p1 2 opponent_team.p2: Zoroark.boosts.def=-1
+view p1 2 opponent_team.p2: Zoroark.boosts.spd=-1
+view p1 2 opponent_team.p2: Zoroark.moves.0="armorcannon"
+view p1 2 opponent_team.p2: Zoroark.tera_type="dark"
+view p1 2 opponent_team.p2: Zoroark.terastallized=true
+view p1 2 opponent_used_tera=true
+view p1 2 team.p1: Beldum.ability="intimidate"
+view p1 2 team.p1: Beldum.boosts.atk=1
+view p1 2 team.p1: Beldum.terastallized=true
+view p1 2 team.p1: Chomp.active=true
+view p1 2 team.p1: Chomp.boosts.spa=-1
+view p1 2 team.p1: Chomp.boosts.spe=2
+view p1 2 team.p1: Chomp.revealed=true
+view p1 2 team.p1: Gyarados.active=false
+view p1 2 turn=3
+view p1 2 used_tera=true
+drop p1 2 opponent_team.p2: Mr. Bubbles.boosts.atk
+drop p1 2 team.p1: Gyarados.boosts.atk
+view p1 3 opponent_team.p2: Zoroark.boosts.def=-2
+view p1 3 opponent_team.p2: Zoroark.boosts.spd=-2
+view p1 3 opponent_team.p2: Zoroark.hp=82
+view p1 3 team.p1: Beldum.hp=51
+view p1 3 team.p1: Chomp.boosts.atk=-1
+view p1 3 team.p1: Chomp.boosts.def=2
+view p1 3 turn=4
+view p1 4 active.1="p1: Gyarados"
+view p1 4 opponent_active.0="p2: Sparky"
+view p1 4 opponent_team.p2: Mr. Bubbles.active=false
+view p1 4 opponent_team.p2: Mr. Bubbles.hp=154
+view p1 4 opponent_team.p2: Sparky.active=true
+view p1 4 opponent_team.p2: Zoroark.boosts.atk=-2
+view p1 4 opponent_team.p2: Zoroark.moves.1="circlethrow"
+view p1 4 team.p1: Beldum.ability="lightmetal"
+view p1 4 team.p1: Beldum.active=false
+view p1 4 team.p1: Chomp.boosts.atk=-2
+view p1 4 team.p1: Chomp.boosts.spd=2
+view p1 4 team.p1: Gyarados.active=true
+view p1 4 team.p1: Gyarados.hp=166
+view p1 4 team.p1: Gyarados.status="par"
+view p1 4 turn=5
+drop p1 4 opponent_team.p2: Mr. Bubbles.boosts.def
+drop p1 4 opponent_team.p2: Mr. Bubbles.boosts.spa
+drop p1 4 opponent_team.p2: Mr. Bubbles.boosts.spd
+drop p1 4 opponent_team.p2: Mr. Bubbles.boosts.spe
+drop p1 4 team.p1: Beldum.boosts.atk
+drop p1 4 team.p1: Beldum.boosts.def
+drop p1 4 team.p1: Beldum.boosts.spa
+drop p1 4 team.p1: Beldum.boosts.spd
+drop p1 4 team.p1: Beldum.boosts.spe
+view p1 5 active.1="p1: Beldum"
+view p1 5 opponent_active.0="p2: Kyurem"
+view p1 5 opponent_team.p2: Kyurem.ability="pressure"
+view p1 5 opponent_team.p2: Kyurem.active=true
+view p1 5 opponent_team.p2: Kyurem.fainted=false
+view p1 5 opponent_team.p2: Kyurem.forme="kyurem"
+view p1 5 opponent_team.p2: Kyurem.gender="N"
+view p1 5 opponent_team.p2: Kyurem.hp=203
+view p1 5 opponent_team.p2: Kyurem.level=50
+view p1 5 opponent_team.p2: Kyurem.max_hp=203
+view p1 5 opponent_team.p2: Kyurem.mega=false
+view p1 5 opponent_team.p2: Kyurem.revealed=true
+view p1 5 opponent_team.p2: Kyurem.species="kyurem"
+view p1 5 opponent_team.p2: Kyurem.terastallized=false
+view p1 5 opponent_team.p2: Mr. Bubbles.ability="intimidate"
+view p1 5 opponent_team.p2: Mr. Bubbles.hp=118
+view p1 5 opponent_team.p2: Sparky.active=false
+view p1 5 opponent_team.p2: Zoroark.hp=54
+view p1 5 team.p1: Beldum.active=true
+view p1 5 team.p1: Chomp.boosts.atk=-3
+view p1 5 team.p1: Chomp.boosts.def=1
+view p1 5 team.p1: Chomp.boosts.spd=4
+view p1 5 team.p1: Gyarados.active=false
+view p1 5 turn=6
+view p1 6 opponent_team.p2: Raichu.ability="surgesurfer"
+view p1 6 opponent_team.p2: Raichu.active=false
+view p1 6 opponent_team.p2: Raichu.fainted=false
+view p1 6 opponent_team.p2: Raichu.forme="raichualola"
+view p1 6 opponent_team.p2: Raichu.gender="M"
+view p1 6 opponent_team.p2: Raichu.hp=129
+view p1 6 opponent_team.p2: Raichu.level=50
+view p1 6 opponent_team.p2: Raichu.max_hp=141
+view p1 6 opponent_team.p2: Raichu.mega=false
+view p1 6 opponent_team.p2: Raichu.revealed=true
+view p1 6 opponent_team.p2: Raichu.species="raichualola"
+view p1 6 opponent_team.p2: Raichu.terastallized=false
+view p1 6 opponent_team.p2: Zoroark.hp=26
+view p1 6 team.p1: Chomp.boosts.spd=6
+view p1 6 team.p1: Chomp.hp=62
+view p1 6 turn=7
+drop p1 6 team.p1: Chomp.boosts.def
+view p1 7 force_switch.1=true
+view p1 7 opponent_team.p2: Kyurem.boosts.spa=1
+view p1 7 opponent_team.p2: Kyurem.moves.0="torchsong"
+view p1 7 opponent_team.p2: Zoroark.fainted=true
+view p1 7 opponent_team.p2: Zoroark.hp=0
+view p1 7 opponent_team.p2: Zoroark.status="fnt"
+view p1 7 opponent_team.p2: Zoroark.terastallized=false
+view p1 7 team.p1: Beldum.fainted=true
+view p1 7 team.p1: Beldum.hp=0
+view p1 7 team.p1: Beldum.status="fnt"
+view p1 7 team.p1: Chomp.boosts.atk=-4
+view p1 7 team.p1: Chomp.boosts.spe=4
+drop p1 7 active.1
+drop p1 7 opponent_active.1
+drop p1 7 opponent_team.p2: Zoroark.boosts.atk
+drop p1 7 opponent_team.p2: Zoroark.boosts.def
+drop p1 7 opponent_team.p2: Zoroark.boosts.spd
+view p1 8 active.1="p1: Growlithe"
+view p1 8 force_switch.1=false
+view p1 8 opponent_active.1="p2: Raichu"
+view p1 8 opponent_team.p2: Raichu.active=true
+view p1 8 opponent_team.p2: Zoroark.active=false
+view p1 8 team.p1: Beldum.active=false
+view p1 8 team.p1: Growlithe.active=true
+view p1 8 team.p1: Growlithe.revealed=true
+view p1 8 turn=8
+view p1 9 active.1="p1: Gyarados"
+view p1 9 force_switch.0=true
+view p1 9 opponent_team.p2: Kyurem.boosts.atk=-1
+view p1 9 opponent_team.p2: Kyurem.boosts.spa=-1
+view p1 9 opponent_team.p2: Kyurem.moves.1="fleurcannon"
+view p1 9 opponent_team.p2: Raichu.boosts.atk=-1
+view p1 9 opponent_team.p2: Raichu.moves.0="electroweb"
+view p1 9 team.p1: Chomp.active=false
+view p1 9 team.p1: Growlithe.active=false
+view p1 9 team.p1: Gyarados.active=true
+view p1 9 team.p1: Gyarados.boosts.spe=-1
+view p1 9 team.p1: Gyarados.hp=46
+view p1 9 team.p1: Morpeko.active=true
+view p1 9 team.p1: Morpeko.fainted=true
+view p1 9 team.p1: Morpeko.hp=0
+view p1 9 team.p1: Morpeko.revealed=true
+view p1 9 team.p1: Morpeko.status="fnt"
+drop p1 9 active.0
+drop p1 9 team.p1: Chomp.boosts.atk
+drop p1 9 team.p1: Chomp.boosts.spa
+drop p1 9 team.p1: Chomp.boosts.spd
+drop p1 9 team.p1: Chomp.boosts.spe
+view p1 10 active.0="p1: Growlithe"
+view p1 10 force_switch.0=false
+view p1 10 team.p1: Growlithe.active=true
+view p1 10 team.p1: Morpeko.active=false
+view p1 10 turn=9
+view p1 11 active.0="p1: Big Tony's Pal"
+view p1 11 opponent_active.1="p2: Sparky"
+view p1 11 opponent_team.p2: Kyurem.boosts.spa=-3
+view p1 11 opponent_team.p2: Raichu.active=false
+view p1 11 opponent_team.p2: Sparky.active=true
+view p1 11 team.p1: Big Tony's Pal.active=true
+view p1 11 team.p1: Big Tony's Pal.revealed=true
+view p1 11 team.p1: Growlithe.active=false
+view p1 11 team.p1: Gyarados.hp=3
+view p1 11 turn=10
+drop p1 11 opponent_team.p2: Raichu.boosts.atk
+view p1 12 active.1="p1: Chomp"
+view p1 12 opponent_team.p2: Kyurem.moves.2="destinybond"
+view p1 12 opponent_team.p2: Sparky.moves.0="rocktomb"
+view p1 12 team.p1: Big Tony's Pal.boosts.spa=2
+view p1 12 team.p1: Big Tony's Pal.boosts.spe=-1
+view p1 12 team.p1: Big Tony's Pal.hp=84
+view p1 12 team.p1: Chomp.active=true
+view p1 12 team.p1: Chomp.boosts.spd=2
+view p1 12 team.p1: Chomp.boosts.spe=-1
+view p1 12 team.p1: Chomp.hp=23
+view p1 12 team.p1: Gyarados.active=false
+view p1 12 turn=11
+drop p1 12 team.p1: Gyarados.boosts.spe
+view p1 13 active.0="p1: Growlithe"
+view p1 13 force_switch.1=true
+view p1 13 opponent_active.0="p2: Mr. Bubbles"
+view p1 13 opponent_team.p2: Kyurem.active=false
+view p1 13 opponent_team.p2: Mr. Bubbles.active=true
+view p1 13 team.p1: Big Tony's Pal.active=false
+view p1 13 team.p1: Chomp.fainted=true
+view p1 13 team.p1: Chomp.hp=0
+view p1 13 team.p1: Chomp.status="fnt"
+view p1 13 team.p1: Growlithe.active=true
+drop p1 13 active.1
+drop p1 13 opponent_team.p2: Kyurem.boosts.atk
+drop p1 13 opponent_team.p2: Kyurem.boosts.spa
+drop p1 13 team.p1: Big Tony's Pal.boosts.spa
+drop p1 13 team.p1: Big Tony's Pal.boosts.spe
+drop p1 13 team.p1: Chomp.boosts.spd
+drop p1 13 team.p1: Chomp.boosts.spe
+view p1 14 active.1="p1: Big Tony's Pal"
+view p1 14 force_switch.1=false
+view p1 14 team.p1: Big Tony's Pal.active=true
+view p1 14 team.p1: Chomp.active=false
+view p1 14 turn=12
+view p1 15 opponent_active.1="p2: Kyurem"
+view p1 15 opponent_team.p2: Kyurem.active=true
+view p1 15 opponent_team.p2: Sparky.active=false
+view p1 15 turn=13
+view p1 16 force_switch.1=true
+view p1 16 opponent_team.p2: Kyurem.boosts.spa=1
+view p1 16 opponent_team.p2: Mr. Bubbles.moves.1="outrage"
+view p1 16 team.p1: Big Tony's Pal.fainted=true
+view p1 16 team.p1: Big Tony's Pal.hp=0
+view p1 16 team.p1: Big Tony's Pal.status="fnt"
+view p1 16 team.p1: Growlithe.hp=107
+drop p1 16 active.1
+view p1 17 active.1="p1: Gyarados"
+view p1 17 force_switch.1=false
+view p1 17 opponent_team.p2: Kyurem.boosts.atk=-1
+view p1 17 opponent_team.p2: Mr. Bubbles.boosts.atk=-1
+view p1 17 team.p1: Big Tony's Pal.active=false
+view p1 17 team.p1: Gyarados.active=true
+view p1 17 turn=14
+view p1 18 opponent_active.1="p2: Sparky"
+view p1 18 opponent_team.p2: Kyurem.active=false
+view p1 18 opponent_team.p2: Sparky.active=true
+view p1 18 team.p1: Gyarados.fainted=true
+view p1 18 team.p1: Gyarados.hp=0
+view p1 18 team.p1: Gyarados.status="fnt"
+view p1 18 turn=15
+drop p1 18 active.1
+drop p1 18 opponent_team.p2: Kyurem.boosts.atk
+drop p1 18 opponent_team.p2: Kyurem.boosts.spa
+view p1 19 opponent_team.p2: Mr. Bubbles.hp=58
+view p1 19 opponent_team.p2: Mr. Bubbles.status="frz"
+view p1 19 opponent_team.p2: Sparky.moves.1="vacuumwave"
+view p1 19 turn=16
+view p1 20 opponent_team.p2: Sparky.hp=114
+view p1 20 team.p1: Growlithe.boosts.spe=-1
+view p1 20 team.p1: Growlithe.hp=33
+view p1 20 turn=17
+view p1 21 opponent_active.0="p2: Raichu"
+view p1 21 opponent_active.1="p2: Big Tony's Pal"
+view p1 21 opponent_team.p2: Big Tony's Pal.active=true
+view p1 21 opponent_team.p2: Big Tony's Pal.hp=123
+view p1 21 opponent_team.p2: Mr. Bubbles.active=false
+view p1 21 opponent_team.p2: Raichu.active=true
+view p1 21 opponent_team.p2: Sparky.active=false
+view p1 21 turn=18
+drop p1 21 opponent_team.p2: Mr. Bubbles.boosts.atk
+view p1 22 finished=true
+view p1 22 opponent_team.p2: Big Tony's Pal.moves.0="torment"
+view p1 22 opponent_team.p2: Raichu.hp=114
+view p1 22 team.p1: Growlithe.fainted=true
+view p1 22 team.p1: Growlithe.hp=0
+view p1 22 team.p1: Growlithe.status="fnt"
+view p1 22 won=false
+drop p1 22 active.0
+drop p1 22 team.p1: Growlithe.boosts.spe
+view p2 0 active.0="p2: Big Tony's Pal"
+view p2 0 active.1="p2: Sparky"
+view p2 0 finished=false
+view p2 0 force_switch.0=false
+view p2 0 force_switch.1=false
+view p2 0 opponent_active.0="p1: Gyarados"
+view p2 0 opponent_active.1="p1: Beldum"
+view p2 0 opponent_team.p1: Beldum.active=true
+view p2 0 opponent_team.p1: Beldum.fainted=false
+view p2 0 opponent_team.p1: Beldum.forme="beldum"
+view p2 0 opponent_team.p1: Beldum.gender="N"
+view p2 0 opponent_team.p1: Beldum.hp=118
+view p2 0 opponent_team.p1: Beldum.level=50
+view p2 0 opponent_team.p1: Beldum.max_hp=118
+view p2 0 opponent_team.p1: Beldum.mega=false
+view p2 0 opponent_team.p1: Beldum.revealed=true
+view p2 0 opponent_team.p1: Beldum.species="beldum"
+view p2 0 opponent_team.p1: Beldum.terastallized=false
+view p2 0 opponent_team.p1: Gyarados.ability="intimidate"
+view p2 0 opponent_team.p1: Gyarados.active=true
+view p2 0 opponent_team.p1: Gyarados.fainted=false
+view p2 0 opponent_team.p1: Gyarados.forme="gyarados"
+view p2 0 opponent_team.p1: Gyarados.gender="M"
+view p2 0 opponent_team.p1: Gyarados.hp=171
+view p2 0 opponent_team.p1: Gyarados.level=50
+view p2 0 opponent_team.p1: Gyarados.max_hp=171
+view p2 0 opponent_team.p1: Gyarados.mega=false
+view p2 0 opponent_team.p1: Gyarados.revealed=true
+view p2 0 opponent_team.p1: Gyarados.species="gyarados"
+view p2 0 opponent_team.p1: Gyarados.terastallized=false
+view p2 0 opponent_used_mega=false
+view p2 0 opponent_used_tera=false
+view p2 0 role="p2"
+view p2 0 team.p2: Big Tony's Pal.ability="merciless"
+view p2 0 team.p2: Big Tony's Pal.active=true
+view p2 0 team.p2: Big Tony's Pal.boosts.atk=-1
+view p2 0 team.p2: Big Tony's Pal.fainted=false
+view p2 0 team.p2: Big Tony's Pal.forme="mareanie"
+view p2 0 team.p2: Big Tony's Pal.gender="M"
+view p2 0 team.p2: Big Tony's Pal.hp=136
+view p2 0 team.p2: Big Tony's Pal.level=50
+view p2 0 team.p2: Big Tony's Pal.max_hp=136
+view p2 0 team.p2: Big Tony's Pal.mega=false
+view p2 0 team.p2: Big Tony's Pal.moves.0="morningsun"
+view p2 0 team.p2: Big Tony's Pal.moves.1="focusblast"
+view p2 0 team.p2: Big Tony's Pal.moves.2="torment"
+view p2 0 team.p2: Big Tony's Pal.moves.3="courtchange"
+view p2 0 team.p2: Big Tony's Pal.revealed=true
+view p2 0 team.p2: Big Tony's Pal.species="mareanie"
+view p2 0 team.p2: Big Tony's Pal.tera_type="stellar"
+view p2 0 team.p2: Big Tony's Pal.terastallized=false
+view p2 0 team.p2: Kyurem.ability="pressure"
+view p2 0 team.p2: Kyurem.active=false
+view p2 0 team.p2: Kyurem.fainted=false
+view p2 0 team.p2: Kyurem.forme="kyurem"
+view p2 0 team.p2: Kyurem.gender="N"
+view p2 0 team.p2: Kyurem.hp=203
+view p2 0 team.p2: Kyurem.item="roomservice"
+view p2 0 team.p2: Kyurem.level=50
+view p2 0 team.p2: Kyurem.max_hp=203
+view p2 0 team.p2: Kyurem.mega=false
+view p2 0 team.p2: Kyurem.moves.0="fleurcannon"
+view p2 0 team.p2: Kyurem.moves.1="destinybond"
+view p2 0 team.p2: Kyurem.moves.2="torchsong"
+view p2 0 team.p2: Kyurem.revealed=false
+view p2 0 team.p2: Kyurem.species="kyurem"
+view p2 0 team.p2: Kyurem.tera_type="psychic"
+view p2 0 team.p2: Kyurem.terastallized=false
+view p2 0 team.p2: Mr. Bubbles.ability="intimidate"
+view p2 0 team.p2: Mr. Bubbles.active=false
+view p2 0 team.p2: Mr. Bubbles.fainted=false
+view p2 0 team.p2: Mr. Bubbles.forme="arcaninehisui"
+view p2 0 team.p2: Mr. Bubbles.gender="F"
+view p2 0 team.p2: Mr. Bubbles.hp=192
+view p2 0 team.p2: Mr. Bubbles.item="mirrorherb"
+view p2 0 team.p2: Mr. Bubbles.level=50
+view p2 0 team.p2: Mr. Bubbles.max_hp=192
+view p2 0 team.p2: Mr. Bubbles.mega=false
+view p2 0 team.p2: Mr. Bubbles.moves.0="substitute"
+view p2 0 team.p2: Mr. Bubbles.moves.1="outrage"
+view p2 0 team.p2: Mr. Bubbles.moves.2="mortalspin"
+view p2 0 team.p2: Mr. Bubbles.moves.3="sheercold"
+view p2 0 team.p2: Mr. Bubbles.revealed=false
+view p2 0 team.p2: Mr. Bubbles.species="arcaninehisui"
+view p2 0 team.p2: Mr. Bubbles.tera_type="grass"
+view p2 0 team.p2: Mr. Bubbles.terastallized=false
+view p2 0 team.p2: Raichu.ability="surgesurfer"
+view p2 0 team.p2: Raichu.active=false
+view p2 0 team.p2: Raichu.fainted=false
+view p2 0 team.p2: Raichu.forme="raichualola"
+view p2 0 team.p2: Raichu.gender="M"
+view p2 0 team.p2: Raichu.hp=141
+view p2 0 team.p2: Raichu.item="powerband"
+view p2 0 team.p2: Raichu.level=50
+view p2 0 team.p2: Raichu.max_hp=141
+view p2 0 team.p2: Raichu.mega=false
+view p2 0 team.p2: Raichu.moves.0="chillyreception"
+view p2 0 team.p2: Raichu.moves.1="electroweb"
+view p2 0 team.p2: Raichu.revealed=false
+view p2 0 team.p2: Raichu.species="raichualola"
+view p2 0 team.p2: Raichu.tera_type="dragon"
+view p2 0 team.p2: Raichu.terastallized=false
+view p2 0 team.p2: Sparky.ability="runaway"
+view p2 0 team.p2: Sparky.active=true
+view p2 0 team.p2: Sparky.boosts.atk=-1
+view p2 0 team.p2: Sparky.fainted=false
+view p2 0 team.p2: Sparky.forme="aipom"
+view p2 0 team.p2: Sparky.gender="F"
+view p2 0 team.p2: Sparky.hp=143
+view p2 0 team.p2: Sparky.level=50
+view p2 0 team.p2: Sparky.max_hp=143
+view p2 0 team.p2: Sparky.mega=false
+view p2 0 team.p2: Sparky.moves.0="defensecurl"
+view p2 0 team.p2: Sparky.moves.1="rocktomb"
+view p2 0 team.p2: Sparky.moves.2="vacuumwave"
+view p2 0 team.p2: Sparky.revealed=true
+view p2 0 team.p2: Sparky.species="aipom"
+view p2 0 team.p2: Sparky.tera_type="psychic"
+view p2 0 team.p2: Sparky.terastallized=false
+view p2 0 team.p2: Zoroark.ability="illusion"
+view p2 0 team.p2: Zoroark.active=false
+view p2 0 team.p2: Zoroark.fainted=false
+view p2 0 team.p2: Zoroark.forme="zoroarkhisui"
+view p2 0 team.p2: Zoroark.gender="M"
+view p2 0 team.p2: Zoroark.hp=133
+view p2 0 team.p2: Zoroark.item="masterball"
+view p2 0 team.p2: Zoroark.level=50
+view p2 0 team.p2: Zoroark.max_hp=133
+view p2 0 team.p2: Zoroark.mega=false
+view p2 0 team.p2: Zoroark.moves.0="armorcannon"
+view p2 0 team.p2: Zoroark.moves.1="speedswap"
+view p2 0 team.p2: Zoroark.moves.2="circlethrow"
+view p2 0 team.p2: Zoroark.revealed=false
+view p2 0 team.p2: Zoroark.species="zoroarkhisui"
+view p2 0 team.p2: Zoroark.tera_type="dark"
+view p2 0 team.p2: Zoroark.terastallized=false
+view p2 0 teampreview=false
+view p2 0 turn=1
+view p2 0 used_mega=false
+view p2 0 used_tera=false
+view p2 0 wait=false
+view p2 1 active.0="p2: Mr. Bubbles"
+view p2 1 active.1="p2: Zoroark"
+view p2 1 opponent_team.p1: Beldum.boosts.def=1
+view p2 1 opponent_team.p1: Beldum.boosts.spa=1
+view p2 1 opponent_team.p1: Beldum.boosts.spd=1
+view p2 1 opponent_team.p1: Beldum.boosts.spe=1
+view p2 1 opponent_team.p1: Beldum.hp=80
+view p2 1 opponent_team.p1: Beldum.moves.0="clangoroussoul"
+view p2 1 opponent_team.p1: Gyarados.boosts.atk=-1
+view p2 1 opponent_team.p1: Gyarados.moves.0="psybeam"
+view p2 1 team.p2: Big Tony's Pal.active=false
+view p2 1 team.p2: Mr. Bubbles.active=true
+view p2 1 team.p2: Mr. Bubbles.boosts.atk=1
+view p2 1 team.p2: Mr. Bubbles.boosts.def=1
+view p2 1 team.p2: Mr. Bubbles.boosts.spa=1
+view p2 1 team.p2: Mr. Bubbles.boosts.spd=1
+view p2 1 team.p2: Mr. Bubbles.boosts.spe=1
+view p2 1 team.p2: Mr. Bubbles.revealed=true
+view p2 1 team.p2: Sparky.active=false
+view p2 1 team.p2: Zoroark.active=true
+view p2 1 team.p2: Zoroark.hp=102
+view p2 1 team.p2: Zoroark.revealed=true
+view p2 1 turn=2
+drop p2 1 team.p2: Big Tony's Pal.boosts.atk
+drop p2 1 team.p2: Mr. Bubbles.item
+drop p2 1 team.p2: Sparky.boosts.atk
+view p2 2 opponent_active.0="p1: Chomp"
+view p2 2 opponent_team.p1: Beldum.ability="intimidate"
+view p2 2 opponent_team.p1: Beldum.boosts.atk=1
+view p2 2 opponent_team.p1: Beldum.moves.1="transform"
+view p2 2 opponent_team.p1: Beldum.tera_type="ice"
+view p2 2 opponent_team.p1: Beldum.terastallized=true
+view p2 2 opponent_team.p1: Chomp.ability="moody"
+view p2 2 opponent_team.p1: Chomp.active=true
+view p2 2 opponent_team.p1: Chomp.boosts.spa=-1
+view p2 2 opponent_team.p1: Chomp.boosts.spe=2
+view p2 2 opponent_team.p1: Chomp.fainted=false
+view p2 2 opponent_team.p1: Chomp.forme="smeargle"
+view p2 2 opponent_team.p1: Chomp.gender="M"
+view p2 2 opponent_team.p1: Chomp.hp=135
+view p2 2 opponent_team.p1: Chomp.level=50
+view p2 2 opponent_team.p1: Chomp.max_hp=135
+view p2 2 opponent_team.p1: Chomp.mega=false
+view p2 2 opponent_team.p1: Chomp.revealed=true
+view p2 2 opponent_team.p1: Chomp.species="smeargle"
+view p2 2 opponent_team.p1: Chomp.terastallized=false
+view p2 2 opponent_team.p1: Gyarados.active=false
+view p2 2 opponent_used_tera=true
+view p2 2 team.p2: Mr. Bubbles.hp=180
+view p2 2 team.p2: Zoroark.boosts.atk=-1
+view p2 2 team.p2: Zoroark.boosts.def=-1
+view p2 2 team.p2: Zoroark.boosts.spd=-1
+view p2 2 team.p2: Zoroark.terastallized=true
+view p2 2 turn=3
+view p2 2 used_tera=true
+drop p2 2 opponent_team.p1: Gyarados.boosts.atk
+drop p2 2 team.p2: Mr. Bubbles.boosts.atk
+view p2 3 opponent_team.p1: Beldum.hp=51
+view p2 3 opponent_team.p1: Chomp.boosts.atk=-1
+view p2 3 opponent_team.p1: Chomp.boosts.def=2
+view p2 3 opponent_team.p1: Chomp.moves.0="magicalleaf"
+view p2 3 team.p2: Zoroark.boosts.def=-2
+view p2 3 team.p2: Zoroark.boosts.spd=-2
+view p2 3 team.p2: Zoroark.hp=82
+view p2 3 turn=4
+view p2 4 active.0="p2: Sparky"
+view p2 4 opponent_active.1="p1: Gyarados"
+view p2 4 opponent_team.p1: Beldum.active=false
+view p2 4 opponent_team.p1: Chomp.boosts.atk=-2
+view p2 4 opponent_team.p1: Chomp.boosts.spd=2
+view p2 4 opponent_team.p1: Chomp.moves.1="lick"
+view p2 4 opponent_team.p1: Gyarados.active=true
+view p2 4 opponent_team.p1: Gyarados.hp=166
+view p2 4 opponent_team.p1: Gyarados.status="par"
+view p2 4 team.p2: Mr. Bubbles.active=false
+view p2 4 team.p2: Mr. Bubbles.hp=154
+view p2 4 team.p2: Sparky.active=true
+view p2 4 team.p2: Zoroark.boosts.atk=-2
+view p2 4 turn=5
+drop p2 4 opponent_team.p1: Beldum.ability
+drop p2 4 opponent_team.p1: Beldum.boosts.atk
+drop p2 4 opponent_team.p1: Beldum.boosts.def
+drop p2 4 opponent_team.p1: Beldum.boosts.spa
+drop p2 4 opponent_team.p1: Beldum.boosts.spd
+drop p2 4 opponent_team.p1: Beldum.boosts.spe
+drop p2 4 team.p2: Mr. Bubbles.boosts.def
+drop p2 4 team.p2: Mr. Bubbles.boosts.spa
+drop p2 4 team.p2: Mr. Bubbles.boosts.spd
+drop p2 4 team.p2: Mr. Bubbles.boosts.spe
+view p2 5 active.0="p2: Kyurem"
+view p2 5 opponent_active.1="p1: Beldum"
+view p2 5 opponent_team.p1: Beldum.active=true
+view p2 5 opponent_team.p1: Chomp.boosts.atk=-3
+view p2 5 opponent_team.p1: Chomp.boosts.def=1
+view p2 5 opponent_team.p1: Chomp.boosts.spd=4
+view p2 5 opponent_team.p1: Gyarados.active=false
+view p2 5 team.p2: Kyurem.active=true
+view p2 5 team.p2: Kyurem.revealed=true
+view p2 5 team.p2: Mr. Bubbles.hp=118
+view p2 5 team.p2: Sparky.active=false
+view p2 5 team.p2: Zoroark.hp=54
+view p2 5 turn=6
+view p2 6 opponent_team.p1: Beldum.moves.2="blazekick"
+view p2 6 opponent_team.p1: Chomp.boosts.spd=6
+view p2 6 opponent_team.p1: Chomp.hp=62
+view p2 6 opponent_team.p1: Chomp.moves.2="freezedry"
+view p2 6 team.p2: Raichu.hp=129
+view p2 6 team.p2: Raichu.revealed=true
+view p2 6 team.p2: Zoroark.hp=26
+view p2 6 turn=7
+drop p2 6 opponent_team.p1: Chomp.boosts.def
+view p2 7 force_switch.1=true
+view p2 7 opponent_team.p1: Beldum.fainted=true
+view p2 7 opponent_team.p1: Beldum.hp=0
+view p2 7 opponent_team.p1: Beldum.status="fnt"
+view p2 7 opponent_team.p1: Beldum.terastallized=false
+view p2 7 opponent_team.p1: Chomp.boosts.atk=-4
+view p2 7 opponent_team.p1: Chomp.boosts.spe=4
+view p2 7 team.p2: Kyurem.boosts.spa=1
+view p2 7 team.p2: Zoroark.fainted=true
+view p2 7 team.p2: Zoroark.hp=0
+view p2 7 team.p2: Zoroark.status="fnt"
+drop p2 7 active.1
+drop p2 7 opponent_active.1
+drop p2 7 team.p2: Zoroark.boosts.atk
+drop p2 7 team.p2: Zoroark.boosts.def
+drop p2 7 team.p2: Zoroark.boosts.spd
+view p2 8 active.1="p2: Raichu"
+view p2 8 force_switch.1=false
+view p2 8 opponent_active.1="p1: Growlithe"
+view p2 8 opponent_team.p1: Beldum.active=false
+view p2 8 opponent_team.p1: Growlithe.active=true
+view p2 8 opponent_team.p1: Growlithe.fainted=false
+view p2 8 opponent_team.p1: Growlithe.forme="growlithe"
+view p2 8 opponent_team.p1: Growlithe.gender="M"
+view p2 8 opponent_team.p1: Growlithe.hp=150
+view p2 8 opponent_team.p1: Growlithe.level=50
+view p2 8 opponent_team.p1: Growlithe.max_hp=150
+view p2 8 opponent_team.p1: Growlithe.mega=false
+view p2 8 opponent_team.p1: Growlithe.revealed=true
+view p2 8 opponent_team.p1: Growlithe.species="growlithe"
+view p2 8 opponent_team.p1: Growlithe.terastallized=false
+view p2 8 team.p2: Raichu.active=true
+view p2 8 team.p2: Zoroark.active=false
+view p2 8 turn=8
+view p2 9 opponent_active.1="p1: Gyarados"
+view p2 9 opponent_team.p1: Chomp.active=false
+view p2 9 opponent_team.p1: Growlithe.active=false
+view p2 9 opponent_team.p1: Gyarados.active=true
+view p2 9 opponent_team.p1: Gyarados.boosts.spe=-1
+view p2 9 opponent_team.p1: Gyarados.hp=46
+view p2 9 opponent_team.p1: Morpeko.ability="hungerswitch"
+view p2 9 opponent_team.p1: Morpeko.active=true
+view p2 9 opponent_team.p1: Morpeko.fainted=true
+view p2 9 opponent_team.p1: Morpeko.forme="morpeko"
+view p2 9 opponent_team.p1: Morpeko.gender="M"
+view p2 9 opponent_team.p1: Morpeko.hp=0
+view p2 9 opponent_team.p1: Morpeko.level=50
+view p2 9 opponent_team.p1: Morpeko.max_hp=143
+view p2 9 opponent_team.p1: Morpeko.mega=false
+view p2 9 opponent_team.p1: Morpeko.revealed=true
+view p2 9 opponent_team.p1: Morpeko.species="morpeko"
+view p2 9 opponent_team.p1: Morpeko.status="fnt"
+view p2 9 opponent_team.p1: Morpeko.terastallized=false
+view p2 9 team.p2: Kyurem.boosts.atk=-1
+view p2 9 team.p2: Kyurem.boosts.spa=-1
+view p2 9 team.p2: Raichu.boosts.atk=-1
+view p2 9 wait=true
+drop p2 9 opponent_active.0
+drop p2 9 opponent_team.p1: Chomp.boosts.atk
+drop p2 9 opponent_team.p1: Chomp.boosts.spa
+drop p2 9 opponent_team.p1: Chomp.boosts.spd
+drop p2 9 opponent_team.p1: Chomp.boosts.spe
+view p2 10 opponent_active.0="p1: Growlithe"
+view p2 10 opponent_team.p1: Growlithe.active=true
+view p2 10 opponent_team.p1: Morpeko.active=false
+view p2 10 turn=9
+view p2 10 wait=false
+view p2 11 active.1="p2: Sparky"
+view p2 11 opponent_active.0="p1: Big Tony's Pal"
+view p2 11 opponent_team.p1: Big Tony's Pal.active=true
+view p2 11 opponent_team.p1: Big Tony's Pal.fainted=false
+view p2 11 opponent_team.p1: Big Tony's Pal.forme="gothita"
+view p2 11 opponent_team.p1: Big Tony's Pal.gender="M"
+view p2 11 opponent_team.p1: Big Tony's Pal.hp=123
+view p2 11 opponent_team.p1: Big Tony's Pal.level=50
+view p2 11 opponent_team.p1: Big Tony's Pal.max_hp=123
+view p2 11 opponent_team.p1: Big Tony's Pal.mega=false
+view p2 11 opponent_team.p1: Big Tony's Pal.revealed=true
+view p2 11 opponent_team.p1: Big Tony's Pal.species="gothita"
+view p2 11 opponent_team.p1: Big Tony's Pal.terastallized=false
+view p2 11 opponent_team.p1: Growlithe.active=false
+view p2 11 opponent_team.p1: Gyarados.hp=3
+view p2 11 team.p2: Kyurem.boosts.spa=-3
+view p2 11 team.p2: Raichu.active=false
+view p2 11 team.p2: Sparky.active=true
+view p2 11 turn=10
+drop p2 11 team.p2: Raichu.boosts.atk
+view p2 12 opponent_active.1="p1: Chomp"
+view p2 12 opponent_team.p1: Big Tony's Pal.ability="competitive"
+view p2 12 opponent_team.p1: Big Tony's Pal.boosts.spa=2
+view p2 12 opponent_team.p1: Big Tony's Pal.boosts.spe=-1
+view p2 12 opponent_team.p1: Big Tony's Pal.hp=84
+view p2 12 opponent_team.p1: Big Tony's Pal.item="lifeorb"
+view p2 12 opponent_team.p1: Big Tony's Pal.moves.0="attackorder"
+view p2 12 opponent_team.p1: Chomp.active=true
+view p2 12 opponent_team.p1: Chomp.boosts.spd=2
+view p2 12 opponent_team.p1: Chomp.boosts.spe=-1
+view p2 12 opponent_team.p1: Chomp.hp=23
+view p2 12 opponent_team.p1: Gyarados.active=false
+view p2 12 turn=11
+drop p2 12 opponent_team.p1: Gyarados.boosts.spe
+view p2 13 active.0="p2: Mr. Bubbles"
+view p2 13 opponent_active.0="p1: Growlithe"
+view p2 13 opponent_team.p1: Big Tony's Pal.active=false
+view p2 13 opponent_team.p1: Chomp.fainted=true
+view p2 13 opponent_team.p1: Chomp.hp=0
+view p2 13 opponent_team.p1: Chomp.status="fnt"
+view p2 13 opponent_team.p1: Growlithe.active=true
+view p2 13 team.p2: Kyurem.active=false
+view p2 13 team.p2: Mr. Bubbles.active=true
+view p2 13 wait=true
+drop p2 13 opponent_active.1
+drop p2 13 opponent_team.p1: Big Tony's Pal.boosts.spa
+drop p2 13 opponent_team.p1: Big Tony's Pal.boosts.spe
+drop p2 13 opponent_team.p1: Chomp.boosts.spd
+drop p2 13 opponent_team.p1: Chomp.boosts.spe
+drop p2 13 team.p2: Kyurem.boosts.atk
+drop p2 13 team.p2: Kyurem.boosts.spa
+view p2 14 opponent_active.1="p1: Big Tony's Pal"
+view p2 14 opponent_team.p1: Big Tony's Pal.active=true
+view p2 14 opponent_team.p1: Chomp.active=false
+view p2 14 turn=12
+view p2 14 wait=false
+view p2 15 active.1="p2: Kyurem"
+view p2 15 opponent_team.p1: Big Tony's Pal.moves.1="block"
+view p2 15 opponent_team.p1: Growlithe.moves.0="icefang"
+view p2 15 team.p2: Kyurem.active=true
+view p2 15 team.p2: Sparky.active=false
+view p2 15 turn=13
+view p2 16 opponent_team.p1: Big Tony's Pal.fainted=true
+view p2 16 opponent_team.p1: Big Tony's Pal.hp=0
+view p2 16 opponent_team.p1: Big Tony's Pal.status="fnt"
+view p2 16 opponent_team.p1: Growlithe.hp=107
+view p2 16 opponent_team.p1: Growlithe.moves.1="metalclaw"
+view p2 16 team.p2: Kyurem.boosts.spa=1
+view p2 16 wait=true
+drop p2 16 opponent_active.1
+view p2 17 opponent_active.1="p1: Gyarados"
+view p2 17 opponent_team.p1: Big Tony's Pal.active=false
+view p2 17 opponent_team.p1: Gyarados.active=true
+view p2 17 team.p2: Kyurem.boosts.atk=-1
+view p2 17 team.p2: Mr. Bubbles.boosts.atk=-1
+view p2 17 turn=14
+view p2 17 wait=false
+view p2 18 active.1="p2: Sparky"
+view p2 18 opponent_team.p1: Gyarados.fainted=true
+view p2 18 opponent_team.p1: Gyarados.hp=0
+view p2 18 opponent_team.p1: Gyarados.status="fnt"
+view p2 18 team.p2: Kyurem.active=false
+view p2 18 team.p2: Sparky.active=true
+view p2 18 turn=15
+drop p2 18 opponent_active.1
+drop p2 18 team.p2: Kyurem.boosts.atk
+drop p2 18 team.p2: Kyurem.boosts.spa
+view p2 19 team.p2: Mr. Bubbles.hp=58
+view p2 19 team.p2: Mr. Bubbles.status="frz"
+view p2 19 turn=16
+view p2 20 opponent_team.p1: Growlithe.boosts.spe=-1
+view p2 20 opponent_team.p1: Growlithe.hp=33
+view p2 20 team.p2: Sparky.hp=114
+view p2 20 turn=17
+view p2 21 active.0="p2: Raichu"
+view p2 21 active.1="p2: Big Tony's Pal"
+view p2 21 team.p2: Big Tony's Pal.active=true
+view p2 21 team.p2: Big Tony's Pal.hp=123
+view p2 21 team.p2: Mr. Bubbles.active=false
+view p2 21 team.p2: Raichu.active=true
+view p2 21 team.p2: Sparky.active=false
+view p2 21 turn=18
+drop p2 21 team.p2: Mr. Bubbles.boosts.atk
+view p2 22 finished=true
+view p2 22 opponent_team.p1: Growlithe.fainted=true
+view p2 22 opponent_team.p1: Growlithe.hp=0
+view p2 22 opponent_team.p1: Growlithe.status="fnt"
+view p2 22 won=true
+drop p2 22 opponent_active.0
+drop p2 22 opponent_team.p1: Growlithe.boosts.spe

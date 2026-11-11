@@ -1,0 +1,109 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randombattle
+seed 0000 0000 02ae a5a6
+genders drawn
+team p1
+Mew
+Ability: Synchronize
+Hardy Nature
+- Rest
+- Sleep Talk
+- Psycho Shift
+- Spore
+end
+team p2
+Blissey
+Ability: Serene Grace
+Level: 79
+Hardy Nature
+- Splash
+- Super Fang
+
+Chansey
+Ability: Serene Grace
+Level: 62
+Hardy Nature
+- Splash
+end
+choice p1 move 3
+choice p2 move 2
+choice p1 move 1
+choice p2 move 1
+choice p1 move 2
+choice p2 move 1
+choice p1 move 4
+choice p2 switch 2
+expect |t:|
+expect |gametype|singles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |
+expect |t:|
+expect |teamsize|p1|1
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Mew|Mew|341/341
+expect |switch|p1a: Mew|Mew|100/100
+expect |split|p2
+expect |switch|p2a: Blissey|Blissey, L79, F|516/516
+expect |switch|p2a: Blissey|Blissey, L79, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Mew|Psycho Shift||[still]
+expect |rng|100|13
+expect |-fail|p1a: Mew
+expect |move|p2a: Blissey|Super Fang|p1a: Mew
+expect |rng|100|55
+expect |split|p1
+expect |-damage|p1a: Mew|171/341
+expect |-damage|p1a: Mew|51/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Mew|Rest|p1a: Mew
+expect |-status|p1a: Mew|slp|[from] move: Rest
+expect |rng|3|1
+expect |split|p1
+expect |-heal|p1a: Mew|341/341 slp|[silent]
+expect |-heal|p1a: Mew|100/100 slp|[silent]
+expect |move|p2a: Blissey|Splash|p2a: Blissey
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |cant|p1a: Mew|slp
+expect |move|p1a: Mew|Sleep Talk|p1a: Mew
+expect |rng|3|1
+expect |move|p1a: Mew|Psycho Shift|p2a: Blissey|[from] move: Sleep Talk
+expect |rng|100|11
+expect |-status|p2a: Blissey|slp|[from] move: Psycho Shift
+expect |rng|3|1
+expect |-curestatus|p1a: Mew|slp|[msg]
+expect |cant|p2a: Blissey|slp
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Chansey|Chansey, L62, F|401/401
+expect |switch|p2a: Chansey|Chansey, L62, F|100/100
+expect |move|p1a: Mew|Spore|p2a: Chansey
+expect |rng|100|13
+expect |-message|Sleep Clause Mod activated.
+expect |-hint|Sleep Clause Mod prevents players from putting more than one of their opponent's Pokémon to sleep at a time
+expect |
+expect |upkeep
+expect |turn|5

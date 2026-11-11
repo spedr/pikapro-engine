@@ -1,0 +1,538 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed f732 7b47 4504 3b28
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Nibbles (Audino) (M) @ Leftovers
+Ability: Regenerator
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Double-Edge
+- Thunder Wave
+- Protect
+- Wish
+
+Raichu-Alola (M) @ Life Orb
+Ability: Surge Surfer
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Psyshock
+- Alluring Voice
+- Thunderbolt
+- Volt Switch
+
+Azumarill (F) @ Sitrus Berry
+Ability: Huge Power
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Liquidation
+- Aqua Jet
+- Belly Drum
+- Play Rough
+
+Big Tony's Pal (Incineroar) (M) @ Choice Scarf
+Ability: Intimidate
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Flare Blitz
+- Earthquake
+- Close Combat
+- Darkest Lariat
+
+Aerodactyl-Mega (M) @ Aerodactylite
+Ability: Unnerve
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Earthquake
+- Dual Wingbeat
+- Roost
+- Stone Edge
+
+Scolipede (M) @ Scolipite
+Ability: Speed Boost
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Protect
+- Earthquake
+- Toxic Spikes
+- Gunk Shot
+end
+team p2
+Chomp (Meowstic-M-Mega) (M) @ Meowsticite
+Ability: Prankster
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Psyshock
+- Thunder Wave
+- Alluring Voice
+- Nasty Plot
+
+Garbodor (M) @ Leftovers
+Ability: Aftermath
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Haze
+- Gunk Shot
+- Stomping Tantrum
+- Toxic Spikes
+
+Lopunny (M) @ Life Orb
+Ability: Limber
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Mega Kick
+- Swords Dance
+- Close Combat
+- Triple Axel
+
+Medicham (M) @ Choice Scarf
+Ability: Pure Power
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Ice Punch
+- Zen Headbutt
+- Trick
+- Close Combat
+
+Scovillain-Mega (F) @ Scovillainite
+Ability: Spicy Spray
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Lonely Nature
+- Giga Drain
+- Flare Blitz
+- Fire Blast
+- Trailblaze
+
+Mr. Bubbles (Politoed) (F) @ Chesto Berry
+Ability: Drizzle
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Ice Beam
+- Hydro Pump
+- Haze
+- Rest
+end
+choice p1 team 5134
+choice p2 team 3126
+choice p1 move 2 1, move 3
+choice p2 move Triple Axel 2,move 2 1 mega
+choice p1 move 2 2 mega, move 2 2
+choice p2 default
+choice p1 move dualwingbeat -2,switch Big Tony's Pal
+choice p2 move 4 2, move 3 1
+choice p1 switch 4, pass
+choice p2 move 1 1, switch 4
+choice p1 move 1 2, move 3 1
+choice p2 switch 4, pass
+choice p1 move 3, switch 3
+choice p2 move 2 1, move 2 1
+choice p1 move 1 1, move 2 2
+choice p2 move 1 -2, move 2 -1
+choice p2 switch 3, pass
+choice p1 move 2 1, move 4 -1
+choice p2 move 1, pass
+choice p1 move 1 1, move 2 -1
+choice p2 move Gunk Shot +1, pass
+choice p1 pass, switch 3
+choice p2 move 3 2, pass
+choice p1 pass, move 2
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Audino, L50, M|
+expect |poke|p1|Raichu-Alola, L50, M|
+expect |poke|p1|Azumarill, L50, F|
+expect |poke|p1|Incineroar, L50, M|
+expect |poke|p1|Aerodactyl, L50, M|
+expect |poke|p1|Scolipede, L50, M, shiny|
+expect |poke|p2|Meowstic, L50, M|
+expect |poke|p2|Garbodor, L50, M|
+expect |poke|p2|Lopunny, L50, M|
+expect |poke|p2|Medicham, L50, M|
+expect |poke|p2|Scovillain, L50, F|
+expect |poke|p2|Politoed, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Aerodactyl|Aerodactyl, L50, M|157/157
+expect |switch|p1a: Aerodactyl|Aerodactyl, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Nibbles|Audino, L50, M|210/210
+expect |switch|p1b: Nibbles|Audino, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Lopunny|Lopunny, L50, M|142/142
+expect |switch|p2a: Lopunny|Lopunny, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Chomp|Meowstic, L50, M|151/151
+expect |switch|p2b: Chomp|Meowstic, L50, M|100/100
+expect |-ability|p1a: Aerodactyl|Unnerve
+expect |turn|1
+expect |
+expect |t:|
+expect |detailschange|p2b: Chomp|Meowstic-M-Mega, L50, M
+expect |-mega|p2b: Chomp|Meowstic|Meowsticite
+expect |rng|2|0
+expect |-ability|p2b: Chomp|Unnerve|Trace|[from] ability: Trace|[of] p1a: Aerodactyl
+expect |-ability|p2b: Chomp|Unnerve
+expect |move|p1b: Nibbles|Protect|p1b: Nibbles
+expect |-singleturn|p1b: Nibbles|Protect
+expect |move|p1a: Aerodactyl|Dual Wingbeat|p2a: Lopunny
+expect |rng|100|56
+expect |rng|24|20
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Lopunny|105/142
+expect |-damage|p2a: Lopunny|73/100
+expect |rng|24|3
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Lopunny|68/142
+expect |-damage|p2a: Lopunny|47/100
+expect |-hitcount|p2a: Lopunny|2
+expect |move|p2b: Chomp|Thunder Wave|p1a: Aerodactyl
+expect |rng|100|59
+expect |-status|p1a: Aerodactyl|par
+expect |move|p2a: Lopunny|Triple Axel|p1b: Nibbles
+expect |-activate|p1b: Nibbles|move: Protect
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |detailschange|p1a: Aerodactyl|Aerodactyl-Mega, L50, M
+expect |-mega|p1a: Aerodactyl|Aerodactyl|Aerodactylite
+expect |move|p2b: Chomp|Psyshock|p1a: Aerodactyl
+expect |rng|100|4
+expect |rng|24|2
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Aerodactyl|54/157 par
+expect |-damage|p1a: Aerodactyl|34/100 par
+expect |move|p2a: Lopunny|Mega Kick|p1b: Nibbles
+expect |rng|100|7
+expect |rng|24|8
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: Nibbles|96/210
+expect |-damage|p1b: Nibbles|45/100
+expect |split|p2
+expect |-damage|p2a: Lopunny|54/142|[from] item: Life Orb
+expect |-damage|p2a: Lopunny|38/100|[from] item: Life Orb
+expect |rng|8|2
+expect |move|p1a: Aerodactyl|Dual Wingbeat|p2b: Chomp
+expect |rng|100|51
+expect |rng|24|12
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Chomp|87/151
+expect |-damage|p2b: Chomp|57/100
+expect |rng|24|20
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Chomp|20/151
+expect |-damage|p2b: Chomp|13/100
+expect |-hitcount|p2b: Chomp|2
+expect |move|p1b: Nibbles|Thunder Wave|p2b: Chomp
+expect |rng|100|79
+expect |-status|p2b: Chomp|par
+expect |
+expect |split|p1
+expect |-heal|p1b: Nibbles|109/210|[from] item: Leftovers
+expect |-heal|p1b: Nibbles|51/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |-heal|p1b: Nibbles|179/210|[from] ability: Regenerator|[silent]
+expect |-heal|p1b: Nibbles|85/100|[from] ability: Regenerator|[silent]
+expect |split|p1
+expect |switch|p1b: Big Tony's Pal|Incineroar, L50, M|172/172
+expect |switch|p1b: Big Tony's Pal|Incineroar, L50, M|100/100
+expect |-ability|p1b: Big Tony's Pal|Intimidate|boost
+expect |-unboost|p2a: Lopunny|atk|1
+expect |-unboost|p2b: Chomp|atk|1
+expect |move|p2a: Lopunny|Triple Axel|p1b: Big Tony's Pal
+expect |rng|100|38
+expect |rng|24|19
+expect |rng|16|14
+expect |-resisted|p1b: Big Tony's Pal|1
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|168/172
+expect |-damage|p1b: Big Tony's Pal|97/100
+expect |rng|100|38
+expect |rng|24|3
+expect |rng|16|9
+expect |-resisted|p1b: Big Tony's Pal|1
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|159/172
+expect |-damage|p1b: Big Tony's Pal|92/100
+expect |rng|100|71
+expect |rng|24|2
+expect |rng|16|0
+expect |-resisted|p1b: Big Tony's Pal|1
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|143/172
+expect |-damage|p1b: Big Tony's Pal|83/100
+expect |-hitcount|p1b: Big Tony's Pal|3
+expect |split|p2
+expect |-damage|p2a: Lopunny|40/142|[from] item: Life Orb
+expect |-damage|p2a: Lopunny|28/100|[from] item: Life Orb
+expect |rng|8|2
+expect |move|p1a: Aerodactyl|Dual Wingbeat|p1b: Big Tony's Pal
+expect |rng|100|27
+expect |rng|24|1
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|89/172
+expect |-damage|p1b: Big Tony's Pal|51/100
+expect |rng|24|13
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|37/172
+expect |-damage|p1b: Big Tony's Pal|21/100
+expect |-hitcount|p1b: Big Tony's Pal|2
+expect |rng|8|6
+expect |move|p2b: Chomp|Alluring Voice|p1a: Aerodactyl
+expect |rng|100|1
+expect |rng|24|17
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Aerodactyl|0 fnt
+expect |-damage|p1a: Aerodactyl|0 fnt
+expect |rng|100|5
+expect |faint|p1a: Aerodactyl
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Nibbles|Audino, L50, M|179/210
+expect |switch|p1a: Nibbles|Audino, L50, M|85/100
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Mr. Bubbles|Politoed, L50, F|197/197
+expect |switch|p2b: Mr. Bubbles|Politoed, L50, F|100/100
+expect |-weather|RainDance|[from] ability: Drizzle|[of] p2b: Mr. Bubbles
+expect |move|p1b: Big Tony's Pal|Close Combat|p2a: Lopunny
+expect |rng|100|26
+expect |rng|24|1
+expect |rng|16|10
+expect |-supereffective|p2a: Lopunny|1
+expect |split|p2
+expect |-damage|p2a: Lopunny|0 fnt
+expect |-damage|p2a: Lopunny|0 fnt
+expect |rng|100|86
+expect |-unboost|p1b: Big Tony's Pal|def|1
+expect |-unboost|p1b: Big Tony's Pal|spd|1
+expect |faint|p2a: Lopunny
+expect |move|p1a: Nibbles|Double-Edge|p2b: Mr. Bubbles
+expect |rng|100|88
+expect |rng|24|14
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|103/197
+expect |-damage|p2b: Mr. Bubbles|52/100
+expect |split|p1
+expect |-damage|p1a: Nibbles|148/210|[from] Recoil
+expect |-damage|p1a: Nibbles|70/100|[from] Recoil
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |split|p1
+expect |-heal|p1a: Nibbles|161/210|[from] item: Leftovers
+expect |-heal|p1a: Nibbles|76/100|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Chomp|Meowstic-M-Mega, L50, M|20/151 par
+expect |switch|p2a: Chomp|Meowstic-M-Mega, L50, M|13/100 par
+expect |rng|2|0
+expect |-ability|p2a: Chomp|Regenerator|Trace|[from] ability: Trace|[of] p1a: Nibbles
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Azumarill|Azumarill, L50, F|177/177
+expect |switch|p1b: Azumarill|Azumarill, L50, F|100/100
+expect |move|p1a: Nibbles|Protect|p1a: Nibbles
+expect |-singleturn|p1a: Nibbles|Protect
+expect |move|p2b: Mr. Bubbles|Hydro Pump|p1a: Nibbles
+expect |-activate|p1a: Nibbles|move: Protect
+expect |rng|8|4
+expect |move|p2a: Chomp|Thunder Wave|p1a: Nibbles
+expect |-activate|p1a: Nibbles|move: Protect
+expect |
+expect |rng|2|1
+expect |-weather|RainDance|[upkeep]
+expect |split|p1
+expect |-heal|p1a: Nibbles|174/210|[from] item: Leftovers
+expect |-heal|p1a: Nibbles|82/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p1b: Azumarill|Aqua Jet|p2b: Mr. Bubbles
+expect |rng|100|69
+expect |rng|24|23
+expect |rng|16|9
+expect |-resisted|p2b: Mr. Bubbles|1
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|61/197
+expect |-damage|p2b: Mr. Bubbles|30/100
+expect |move|p2b: Mr. Bubbles|Hydro Pump|p2a: Chomp
+expect |rng|100|4
+expect |rng|24|21
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Chomp|0 fnt
+expect |-damage|p2a: Chomp|0 fnt
+expect |faint|p2a: Chomp
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Nibbles|Double-Edge|p2b: Mr. Bubbles
+expect |rng|100|72
+expect |rng|24|5
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|0 fnt
+expect |-damage|p2b: Mr. Bubbles|0 fnt
+expect |faint|p2b: Mr. Bubbles
+expect |split|p1
+expect |-damage|p1a: Nibbles|154/210|[from] Recoil
+expect |-damage|p1a: Nibbles|73/100|[from] Recoil
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |split|p1
+expect |-heal|p1a: Nibbles|167/210|[from] item: Leftovers
+expect |-heal|p1a: Nibbles|79/100|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Garbodor|Garbodor, L50, M|187/187
+expect |switch|p2a: Garbodor|Garbodor, L50, M|100/100
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1b: Azumarill|Play Rough|p1a: Nibbles
+expect |rng|100|63
+expect |rng|24|19
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Nibbles|59/210
+expect |-damage|p1a: Nibbles|28/100
+expect |rng|100|72
+expect |move|p2a: Garbodor|Haze|p2a: Garbodor
+expect |-clearallboost
+expect |move|p1a: Nibbles|Thunder Wave|p2a: Garbodor
+expect |rng|100|77
+expect |-status|p2a: Garbodor|par
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |split|p1
+expect |-heal|p1a: Nibbles|72/210|[from] item: Leftovers
+expect |-heal|p1a: Nibbles|34/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1b: Azumarill|Aqua Jet|p1a: Nibbles
+expect |rng|100|74
+expect |rng|24|19
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Nibbles|0 fnt
+expect |-damage|p1a: Nibbles|0 fnt
+expect |faint|p1a: Nibbles
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|8|7
+expect |move|p2a: Garbodor|Gunk Shot|p1b: Azumarill
+expect |rng|100|66
+expect |rng|24|5
+expect |rng|16|9
+expect |-supereffective|p1b: Azumarill|1
+expect |split|p1
+expect |-damage|p1b: Azumarill|0 fnt
+expect |-damage|p1b: Azumarill|0 fnt
+expect |rng|100|16
+expect |faint|p1b: Azumarill
+expect |
+expect |-weather|none
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Big Tony's Pal|Incineroar, L50, M|37/172
+expect |switch|p1b: Big Tony's Pal|Incineroar, L50, M|21/100
+expect |-ability|p1b: Big Tony's Pal|Intimidate|boost
+expect |-unboost|p2a: Garbodor|atk|1
+expect |turn|9
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Big Tony's Pal|Earthquake|p2a: Garbodor
+expect |rng|100|14
+expect |rng|24|12
+expect |rng|16|2
+expect |-supereffective|p2a: Garbodor|1
+expect |split|p2
+expect |-damage|p2a: Garbodor|47/187 par
+expect |-damage|p2a: Garbodor|25/100 par
+expect |rng|8|7
+expect |move|p2a: Garbodor|Stomping Tantrum|p1b: Big Tony's Pal
+expect |rng|100|30
+expect |rng|24|7
+expect |rng|16|13
+expect |-supereffective|p1b: Big Tony's Pal|1
+expect |split|p1
+expect |-damage|p1b: Big Tony's Pal|0 fnt
+expect |-damage|p1b: Big Tony's Pal|0 fnt
+expect |faint|p1b: Big Tony's Pal
+expect |
+expect |win|p2

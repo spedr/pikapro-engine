@@ -1,0 +1,16 @@
+# edge-team-twice: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@write
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"gen5,00010002000300ff"}
+@write
+>player p1 {"name":"A","team":"Pikachu||choicespecs|static|thunderbolt,quickattack|Timid|,,,252,,252||||50|"}
+@write
+>player p1 {"name":"A","team":"Pikachu||choicespecs|static|thunderbolt,quickattack|Timid|,,,252,,252||||50|"}
+@message
+update
+|t:|
+|gametype|singles
+@message
+update
+|player|p1|A||
+@error
+Player p1 already has a team!

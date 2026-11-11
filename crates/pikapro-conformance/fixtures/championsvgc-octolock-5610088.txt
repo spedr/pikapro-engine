@@ -1,0 +1,493 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 41d4 41f4 49ed f59f
+genders drawn
+team p1
+Metagross
+Ability: Clear Body
+Level: 50
+Shiny: Yes
+Tera Type: Ghost
+EVs: 29 HP / 8 Atk / 8 Def / 7 SpD / 4 Spe
+Quirky Nature
+- Ice Hammer
+- Revival Blessing
+- Drill Peck
+
+Gourgeist-Super @ Smooth Rock
+Ability: Insomnia
+Level: 50
+Tera Type: Ground
+EVs: 2 HP / 2 Def / 30 SpA / 28 SpD / 1 Spe
+Jolly Nature
+- Leech Seed
+- Focus Blast
+- Sunny Day
+- Metal Burst
+
+Basculegion-F (F)
+Ability: Adaptability
+Level: 50
+Tera Type: Grass
+EVs: 27 HP / 24 Atk / 11 SpD / 2 Spe
+Quiet Nature
+- Octolock
+- Gigaton Hammer
+- Power Trick
+- Sky Attack
+
+Watchog @ Chilan Berry
+Ability: Analytic
+Level: 50
+Tera Type: Normal
+EVs: 16 HP / 5 Atk / 1 Def / 4 SpA / 26 SpD / 13 Spe
+Serious Nature
+- Torment
+
+Pidgeot
+Ability: Big Pecks
+Level: 50
+Tera Type: Fire
+EVs: 8 HP / 1 Atk / 10 SpA / 26 SpD / 19 Spe
+Gentle Nature
+- Axe Kick
+- Close Combat
+
+Big Tony's Pal (Mudsdale) (F) @ Expert Belt
+Ability: Stamina
+Level: 50
+Shiny: Yes
+Tera Type: Psychic
+EVs: 15 HP / 3 Atk / 2 Def / 6 SpA / 10 SpD / 3 Spe
+Modest Nature
+- Octolock
+- Minimize
+- Reversal
+- Superpower
+end
+team p2
+Mr. Bubbles (Crabominable) @ Misty Seed
+Ability: Iron Fist
+Level: 50
+Tera Type: Rock
+EVs: 13 HP / 16 Atk / 5 Def / 20 SpA / 12 SpD
+Impish Nature
+- Octolock
+- Petal Blizzard
+- Wild Charge
+- Body Press
+
+Chimecho (F) @ Chimechite
+Ability: Levitate
+Level: 50
+Tera Type: Water
+EVs: 25 HP / 19 Atk / 5 Def / 2 SpA / 15 SpD
+Bold Nature
+- Belly Drum
+- Guard Split
+
+Gholdengo
+Ability: Good as Gold
+Level: 50
+Tera Type: Grass
+EVs: 11 HP / 12 Atk / 3 Def / 1 SpA / 25 SpD / 7 Spe
+Impish Nature
+- Octolock
+- Helping Hand
+- Wave Crash
+- Belch
+
+Pidgeot
+Ability: Big Pecks
+Level: 50
+Tera Type: Fire
+EVs: 3 HP / 6 Def / 1 SpA / 20 SpD / 32 Spe
+Naughty Nature
+- Beak Blast
+- Aurora Veil
+- Dire Claw
+
+Mr. Mime @ Big Root
+Ability: Technician
+Level: 50
+Tera Type: Psychic
+EVs: 1 HP / 6 Def / 7 SpA / 17 SpD / 23 Spe
+Modest Nature
+- Trailblaze
+
+Sir Hops-a-Lot (Garganacl)
+Ability: Clear Body
+Level: 50
+Tera Type: Steel
+EVs: 1 HP / 26 Atk / 2 Def / 20 SpA / 17 Spe
+Rash Nature
+- Final Gambit
+- Sweet Scent
+end
+choice p1 team 1546
+choice p2 team 1465
+choice p1 move 3 1, move 2 1
+choice p2 default
+choice p1 switch 4 ,  move Axe Kick -1
+choice p2 switch 3, move 1 1
+choice p1 default
+choice p2 move 1 -2,move auroraveil
+choice p2 default
+choice p1 move 1 1, switch 3
+choice p2 move 3 2 ,  move direclaw 2
+choice p2 switch Mr. Mime, skip
+choice p1 move 1 1, move 1 2
+choice p2 move 1 2 ,  move 3 -1
+choice p1 move 3 -2, move 1 2
+choice p2 move 1 2, move 1 2
+choice p1 skip, switch pidgeot
+choice p2 move 1 +1, move 1 +1
+choice p1 move 4 2, move 1 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Metagross, L50, shiny|
+expect |poke|p1|Gourgeist-Super, L50, F|
+expect |poke|p1|Basculegion-F, L50, F|
+expect |poke|p1|Watchog, L50, M|
+expect |poke|p1|Pidgeot, L50, F|
+expect |poke|p1|Mudsdale, L50, F, shiny|
+expect |poke|p2|Crabominable, L50, M|
+expect |poke|p2|Chimecho, L50, F|
+expect |poke|p2|Gholdengo, L50|
+expect |poke|p2|Pidgeot, L50, M|
+expect |poke|p2|Mr. Mime, L50, F|
+expect |poke|p2|Garganacl, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Metagross|Metagross, L50, shiny|184/184
+expect |switch|p1a: Metagross|Metagross, L50, shiny|100/100
+expect |split|p1
+expect |switch|p1b: Pidgeot|Pidgeot, L50, F|166/166
+expect |switch|p1b: Pidgeot|Pidgeot, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Mr. Bubbles|Crabominable, L50, M|185/185
+expect |switch|p2a: Mr. Bubbles|Crabominable, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Pidgeot|Pidgeot, L50, M|161/161
+expect |switch|p2b: Pidgeot|Pidgeot, L50, M|100/100
+expect |turn|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |-singleturn|p2b: Pidgeot|move: Beak Blast
+expect |move|p1b: Pidgeot|Close Combat|p2a: Mr. Bubbles
+expect |rng|100|47
+expect |rng|24|3
+expect |rng|16|12
+expect |-supereffective|p2a: Mr. Bubbles|1
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|99/185
+expect |-damage|p2a: Mr. Bubbles|53/100
+expect |rng|100|67
+expect |-unboost|p1b: Pidgeot|def|1
+expect |-unboost|p1b: Pidgeot|spd|1
+expect |move|p1a: Metagross|Drill Peck|p2a: Mr. Bubbles
+expect |rng|100|68
+expect |rng|24|7
+expect |rng|16|11
+expect |-supereffective|p2a: Mr. Bubbles|1
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|5/185
+expect |-damage|p2a: Mr. Bubbles|2/100
+expect |move|p2a: Mr. Bubbles|Octolock|p1b: Pidgeot
+expect |rng|100|33
+expect |-start|p1b: Pidgeot|move: Octolock|[of] p2a: Mr. Bubbles
+expect |move|p2b: Pidgeot|Beak Blast|p1a: Metagross
+expect |rng|100|69
+expect |rng|24|9
+expect |rng|16|8
+expect |-resisted|p1a: Metagross|1
+expect |split|p1
+expect |-damage|p1a: Metagross|159/184
+expect |-damage|p1a: Metagross|86/100
+expect |
+expect |-unboost|p1b: Pidgeot|spd|1
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Big Tony's Pal|Mudsdale, L50, F, shiny|190/190
+expect |switch|p1a: Big Tony's Pal|Mudsdale, L50, F, shiny|100/100
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Garganacl, L50, M|176/176
+expect |switch|p2a: Sir Hops-a-Lot|Garganacl, L50, M|100/100
+expect |-singleturn|p2b: Pidgeot|move: Beak Blast
+expect |move|p1b: Pidgeot|Axe Kick|p1a: Big Tony's Pal
+expect |rng|100|60
+expect |rng|24|3
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|145/190
+expect |-damage|p1a: Big Tony's Pal|76/100
+expect |rng|100|11
+expect |-start|p1a: Big Tony's Pal|confusion
+expect |rng|3|0
+expect |-ability|p1a: Big Tony's Pal|Stamina|boost
+expect |-boost|p1a: Big Tony's Pal|def|1
+expect |move|p2b: Pidgeot|Beak Blast|p1a: Big Tony's Pal
+expect |rng|100|46
+expect |rng|24|18
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|102/190
+expect |-damage|p1a: Big Tony's Pal|53/100
+expect |-ability|p1a: Big Tony's Pal|Stamina|boost
+expect |-boost|p1a: Big Tony's Pal|def|1
+expect |
+expect |-end|p1b: Pidgeot|Octolock|[partiallytrapped]|[silent]
+expect |upkeep
+expect |turn|3
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2b: Pidgeot|Aurora Veil||[still]
+expect |-fail|p2b: Pidgeot
+expect |move|p1b: Pidgeot|Axe Kick|p2a: Sir Hops-a-Lot
+expect |rng|100|7
+expect |rng|24|11
+expect |rng|16|9
+expect |-supereffective|p2a: Sir Hops-a-Lot|1
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|110/176
+expect |-damage|p2a: Sir Hops-a-Lot|62/100
+expect |rng|100|57
+expect |move|p2a: Sir Hops-a-Lot|Final Gambit|p2b: Pidgeot
+expect |rng|100|24
+expect |split|p2
+expect |-damage|p2b: Pidgeot|51/161
+expect |-damage|p2b: Pidgeot|31/100
+expect |faint|p2a: Sir Hops-a-Lot
+expect |rng|1|0
+expect |rng|1|0
+expect |-activate|p1a: Big Tony's Pal|confusion
+expect |rng|100|25
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|92/190|[from] confusion
+expect |-damage|p1a: Big Tony's Pal|48/100|[from] confusion
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Mr. Bubbles|Crabominable, L50, M|5/185
+expect |switch|p2a: Mr. Bubbles|Crabominable, L50, M|2/100
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Watchog|Watchog, L50, M|151/151
+expect |switch|p1b: Watchog|Watchog, L50, M|100/100
+expect |move|p2b: Pidgeot|Dire Claw|p1b: Watchog
+expect |rng|100|7
+expect |rng|24|3
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Watchog|113/151
+expect |-damage|p1b: Watchog|74/100
+expect |rng|100|19
+expect |rng|3|2
+expect |-status|p1b: Watchog|slp
+expect |rng|3|0
+expect |move|p2a: Mr. Bubbles|Wild Charge|p1b: Watchog
+expect |rng|100|85
+expect |rng|24|16
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Watchog|42/151 slp
+expect |-damage|p1b: Watchog|27/100 slp
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|0 fnt|[from] Recoil
+expect |-damage|p2a: Mr. Bubbles|0 fnt|[from] Recoil
+expect |faint|p2a: Mr. Bubbles
+expect |rng|1|0
+expect |rng|1|0
+expect |-activate|p1a: Big Tony's Pal|confusion
+expect |rng|100|36
+expect |move|p1a: Big Tony's Pal|Octolock|p2b: Pidgeot
+expect |rng|100|76
+expect |-start|p2b: Pidgeot|move: Octolock|[of] p1a: Big Tony's Pal
+expect |
+expect |-unboost|p2b: Pidgeot|spd|1
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Mr. Mime|Mr. Mime, L50, F|116/116
+expect |switch|p2a: Mr. Mime|Mr. Mime, L50, F|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2b: Pidgeot|Dire Claw|p2a: Mr. Mime
+expect |rng|100|75
+expect |rng|24|8
+expect |rng|16|0
+expect |-supereffective|p2a: Mr. Mime|1
+expect |split|p2
+expect |-damage|p2a: Mr. Mime|28/116
+expect |-damage|p2a: Mr. Mime|24/100
+expect |rng|100|62
+expect |move|p2a: Mr. Mime|Trailblaze|p1b: Watchog
+expect |rng|100|69
+expect |rng|24|6
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Watchog|23/151 slp
+expect |-damage|p1b: Watchog|15/100 slp
+expect |rng|100|57
+expect |-boost|p2a: Mr. Mime|spe|1
+expect |cant|p1b: Watchog|slp
+expect |-end|p1a: Big Tony's Pal|confusion
+expect |move|p1a: Big Tony's Pal|Octolock|p2a: Mr. Mime
+expect |rng|100|67
+expect |-start|p2a: Mr. Mime|move: Octolock|[of] p1a: Big Tony's Pal
+expect |
+expect |-unboost|p2a: Mr. Mime|def|1
+expect |-unboost|p2a: Mr. Mime|spd|1
+expect |-unboost|p2b: Pidgeot|spd|1
+expect |upkeep
+expect |turn|6
+expect |rng|2|0
+expect |
+expect |t:|
+expect |-singleturn|p2b: Pidgeot|move: Beak Blast
+expect |move|p2a: Mr. Mime|Trailblaze|p1b: Watchog
+expect |rng|100|59
+expect |rng|24|0
+expect |rng|16|6
+expect |-crit|p1b: Watchog
+expect |split|p1
+expect |-damage|p1b: Watchog|0 fnt
+expect |-damage|p1b: Watchog|0 fnt
+expect |rng|100|87
+expect |-boost|p2a: Mr. Mime|spe|1
+expect |faint|p1b: Watchog
+expect |rng|1|0
+expect |move|p1a: Big Tony's Pal|Reversal|p1: Watchog|[notarget]
+expect |-fail|p1a: Big Tony's Pal
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Pidgeot|Beak Blast|p1a: Big Tony's Pal
+expect |rng|100|89
+expect |rng|24|16
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|58/190
+expect |-damage|p1a: Big Tony's Pal|30/100
+expect |-ability|p1a: Big Tony's Pal|Stamina|boost
+expect |-boost|p1a: Big Tony's Pal|def|1
+expect |
+expect |-unboost|p2a: Mr. Mime|def|1
+expect |-unboost|p2a: Mr. Mime|spd|1
+expect |-unboost|p2b: Pidgeot|spd|1
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Pidgeot|Pidgeot, L50, F|166/166
+expect |switch|p1b: Pidgeot|Pidgeot, L50, F|100/100
+expect |turn|7
+expect |rng|2|1
+expect |
+expect |t:|
+expect |-singleturn|p2b: Pidgeot|move: Beak Blast
+expect |move|p2a: Mr. Mime|Trailblaze|p1a: Big Tony's Pal
+expect |rng|100|1
+expect |rng|24|7
+expect |rng|16|13
+expect |-supereffective|p1a: Big Tony's Pal|1
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|46/190
+expect |-damage|p1a: Big Tony's Pal|24/100
+expect |rng|100|97
+expect |-boost|p2a: Mr. Mime|spe|1
+expect |-ability|p1a: Big Tony's Pal|Stamina|boost
+expect |-boost|p1a: Big Tony's Pal|def|1
+expect |move|p1b: Pidgeot|Axe Kick|p2a: Mr. Mime
+expect |rng|100|46
+expect |rng|24|0
+expect |rng|16|9
+expect |-resisted|p2a: Mr. Mime|2
+expect |-crit|p2a: Mr. Mime
+expect |split|p2
+expect |-damage|p2a: Mr. Mime|0 fnt
+expect |-damage|p2a: Mr. Mime|0 fnt
+expect |rng|100|25
+expect |faint|p2a: Mr. Mime
+expect |move|p1a: Big Tony's Pal|Superpower|p2b: Pidgeot
+expect |rng|100|31
+expect |rng|24|9
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Pidgeot|0 fnt
+expect |-damage|p2b: Pidgeot|0 fnt
+expect |-status|p1a: Big Tony's Pal|brn
+expect |rng|100|55
+expect |-unboost|p1a: Big Tony's Pal|atk|1
+expect |-unboost|p1a: Big Tony's Pal|def|1
+expect |faint|p2b: Pidgeot
+expect |
+expect |win|p1
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Metagross","details":"Metagross, L50, shiny","condition":"184/184","active":true,"stats":{"atk":163,"def":158,"spa":115,"spd":117,"spe":94},"moves":["icehammer","revivalblessing","drillpeck"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Super, L50, F","condition":"162/162","active":true,"stats":{"atk":120,"def":144,"spa":97,"spd":123,"spe":82},"moves":["leechseed","focusblast","sunnyday","metalburst"],"baseAbility":"insomnia","item":"smoothrock","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Basculegion","details":"Basculegion-F, L50, F","condition":"222/222","active":false,"stats":{"atk":136,"def":85,"spa":132,"spd":106,"spe":90},"moves":["octolock","gigatonhammer","powertrick","skyattack"],"baseAbility":"adaptability","item":"","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false},{"ident":"p1: Watchog","details":"Watchog, L50, M","condition":"151/151","active":false,"stats":{"atk":110,"def":90,"spa":84,"spd":115,"spe":110},"moves":["torment"],"baseAbility":"analytic","item":"chilanberry","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false},{"ident":"p1: Pidgeot","details":"Pidgeot, L50, F","condition":"166/166","active":false,"stats":{"atk":101,"def":85,"spa":100,"spd":127,"spe":140},"moves":["axekick","closecombat"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p1: Big Tony's Pal","details":"Mudsdale, L50, F, shiny","condition":"190/190","active":false,"stats":{"atk":133,"def":122,"spa":89,"spd":115,"spe":58},"moves":["octolock","minimize","reversal","superpower"],"baseAbility":"stamina","item":"expertbelt","pokeball":"pokeball","ability":"stamina","commanding":false,"reviving":false}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Crabominable, L50, M","condition":"185/185","active":true,"stats":{"atk":168,"def":112,"spa":91,"spd":99,"spe":63},"moves":["octolock","petalblizzard","wildcharge","bodypress"],"baseAbility":"ironfist","item":"mistyseed","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false},{"ident":"p2: Chimecho","details":"Chimecho, L50, F","condition":"175/175","active":true,"stats":{"atk":80,"def":115,"spa":117,"spd":125,"spe":85},"moves":["bellydrum","guardsplit"],"baseAbility":"levitate","item":"chimechite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Gholdengo","details":"Gholdengo, L50","condition":"173/173","active":false,"stats":{"atk":92,"def":129,"spa":138,"spd":136,"spe":111},"moves":["octolock","helpinghand","wavecrash","belch"],"baseAbility":"goodasgold","item":"","pokeball":"pokeball","ability":"goodasgold","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"161/161","active":false,"stats":{"atk":110,"def":101,"spa":91,"spd":99,"spe":153},"moves":["beakblast","auroraveil","direclaw"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p2: Mr. Mime","details":"Mr. Mime, L50, F","condition":"116/116","active":false,"stats":{"atk":58,"def":91,"spa":139,"spd":157,"spe":133},"moves":["trailblaze"],"baseAbility":"technician","item":"bigroot","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Garganacl, L50, M","condition":"176/176","active":false,"stats":{"atk":146,"def":152,"spa":93,"spd":99,"spe":72},"moves":["finalgambit","sweetscent"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Ice Hammer","id":"icehammer","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Revival Blessing","id":"revivalblessing","pp":1,"maxpp":1,"target":"self","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":20,"maxpp":20,"target":"any","disabled":false}]},{"moves":[{"move":"Axe Kick","id":"axekick","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Close Combat","id":"closecombat","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Metagross","details":"Metagross, L50, shiny","condition":"184/184","active":true,"stats":{"atk":163,"def":158,"spa":115,"spd":117,"spe":94},"moves":["icehammer","revivalblessing","drillpeck"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p1: Pidgeot","details":"Pidgeot, L50, F","condition":"166/166","active":true,"stats":{"atk":101,"def":85,"spa":100,"spd":127,"spe":140},"moves":["axekick","closecombat"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p1: Watchog","details":"Watchog, L50, M","condition":"151/151","active":false,"stats":{"atk":110,"def":90,"spa":84,"spd":115,"spe":110},"moves":["torment"],"baseAbility":"analytic","item":"chilanberry","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false},{"ident":"p1: Big Tony's Pal","details":"Mudsdale, L50, F, shiny","condition":"190/190","active":false,"stats":{"atk":133,"def":122,"spa":89,"spd":115,"spe":58},"moves":["octolock","minimize","reversal","superpower"],"baseAbility":"stamina","item":"expertbelt","pokeball":"pokeball","ability":"stamina","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Octolock","id":"octolock","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Petal Blizzard","id":"petalblizzard","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Wild Charge","id":"wildcharge","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Body Press","id":"bodypress","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Beak Blast","id":"beakblast","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":20,"maxpp":20,"target":"allySide","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Crabominable, L50, M","condition":"185/185","active":true,"stats":{"atk":168,"def":112,"spa":91,"spd":99,"spe":63},"moves":["octolock","petalblizzard","wildcharge","bodypress"],"baseAbility":"ironfist","item":"mistyseed","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"161/161","active":true,"stats":{"atk":110,"def":101,"spa":91,"spd":99,"spe":153},"moves":["beakblast","auroraveil","direclaw"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Garganacl, L50, M","condition":"176/176","active":false,"stats":{"atk":146,"def":152,"spa":93,"spd":99,"spe":72},"moves":["finalgambit","sweetscent"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p2: Mr. Mime","details":"Mr. Mime, L50, F","condition":"116/116","active":false,"stats":{"atk":58,"def":91,"spa":139,"spd":157,"spe":133},"moves":["trailblaze"],"baseAbility":"technician","item":"bigroot","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Ice Hammer","id":"icehammer","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Revival Blessing","id":"revivalblessing","pp":1,"maxpp":1,"target":"self","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":19,"maxpp":20,"target":"any","disabled":false}]},{"moves":[{"move":"Axe Kick","id":"axekick","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Close Combat","id":"closecombat","pp":7,"maxpp":8,"target":"normal","disabled":false}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Metagross","details":"Metagross, L50, shiny","condition":"159/184","active":true,"stats":{"atk":163,"def":158,"spa":115,"spd":117,"spe":94},"moves":["icehammer","revivalblessing","drillpeck"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p1: Pidgeot","details":"Pidgeot, L50, F","condition":"166/166","active":true,"stats":{"atk":101,"def":85,"spa":100,"spd":127,"spe":140},"moves":["axekick","closecombat"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p1: Watchog","details":"Watchog, L50, M","condition":"151/151","active":false,"stats":{"atk":110,"def":90,"spa":84,"spd":115,"spe":110},"moves":["torment"],"baseAbility":"analytic","item":"chilanberry","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false},{"ident":"p1: Big Tony's Pal","details":"Mudsdale, L50, F, shiny","condition":"190/190","active":false,"stats":{"atk":133,"def":122,"spa":89,"spd":115,"spe":58},"moves":["octolock","minimize","reversal","superpower"],"baseAbility":"stamina","item":"expertbelt","pokeball":"pokeball","ability":"stamina","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Octolock","id":"octolock","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Petal Blizzard","id":"petalblizzard","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Wild Charge","id":"wildcharge","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Body Press","id":"bodypress","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Beak Blast","id":"beakblast","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":20,"maxpp":20,"target":"allySide","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Crabominable, L50, M","condition":"5/185","active":true,"stats":{"atk":168,"def":112,"spa":91,"spd":99,"spe":63},"moves":["octolock","petalblizzard","wildcharge","bodypress"],"baseAbility":"ironfist","item":"mistyseed","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"161/161","active":true,"stats":{"atk":110,"def":101,"spa":91,"spd":99,"spe":153},"moves":["beakblast","auroraveil","direclaw"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Garganacl, L50, M","condition":"176/176","active":false,"stats":{"atk":146,"def":152,"spa":93,"spd":99,"spe":72},"moves":["finalgambit","sweetscent"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p2: Mr. Mime","details":"Mr. Mime, L50, F","condition":"116/116","active":false,"stats":{"atk":58,"def":91,"spa":139,"spd":157,"spe":133},"moves":["trailblaze"],"baseAbility":"technician","item":"bigroot","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Octolock","id":"octolock","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Minimize","id":"minimize","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Reversal","id":"reversal","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Axe Kick","id":"axekick","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Close Combat","id":"closecombat","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Big Tony's Pal","details":"Mudsdale, L50, F, shiny","condition":"102/190","active":true,"stats":{"atk":133,"def":122,"spa":89,"spd":115,"spe":58},"moves":["octolock","minimize","reversal","superpower"],"baseAbility":"stamina","item":"expertbelt","pokeball":"pokeball","ability":"stamina","commanding":false,"reviving":false},{"ident":"p1: Pidgeot","details":"Pidgeot, L50, F","condition":"166/166","active":true,"stats":{"atk":101,"def":85,"spa":100,"spd":127,"spe":140},"moves":["axekick","closecombat"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p1: Watchog","details":"Watchog, L50, M","condition":"151/151","active":false,"stats":{"atk":110,"def":90,"spa":84,"spd":115,"spe":110},"moves":["torment"],"baseAbility":"analytic","item":"chilanberry","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false},{"ident":"p1: Metagross","details":"Metagross, L50, shiny","condition":"159/184","active":false,"stats":{"atk":163,"def":158,"spa":115,"spd":117,"spe":94},"moves":["icehammer","revivalblessing","drillpeck"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Final Gambit","id":"finalgambit","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Sweet Scent","id":"sweetscent","pp":20,"maxpp":20,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Beak Blast","id":"beakblast","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":20,"maxpp":20,"target":"allySide","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Garganacl, L50, M","condition":"176/176","active":true,"stats":{"atk":146,"def":152,"spa":93,"spd":99,"spe":72},"moves":["finalgambit","sweetscent"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"161/161","active":true,"stats":{"atk":110,"def":101,"spa":91,"spd":99,"spe":153},"moves":["beakblast","auroraveil","direclaw"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Crabominable, L50, M","condition":"5/185","active":false,"stats":{"atk":168,"def":112,"spa":91,"spd":99,"spe":63},"moves":["octolock","petalblizzard","wildcharge","bodypress"],"baseAbility":"ironfist","item":"mistyseed","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false},{"ident":"p2: Mr. Mime","details":"Mr. Mime, L50, F","condition":"116/116","active":false,"stats":{"atk":58,"def":91,"spa":139,"spd":157,"spe":133},"moves":["trailblaze"],"baseAbility":"technician","item":"bigroot","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Big Tony's Pal","details":"Mudsdale, L50, F, shiny","condition":"92/190","active":true,"stats":{"atk":133,"def":122,"spa":89,"spd":115,"spe":58},"moves":["octolock","minimize","reversal","superpower"],"baseAbility":"stamina","item":"expertbelt","pokeball":"pokeball","ability":"stamina","commanding":false,"reviving":false},{"ident":"p1: Pidgeot","details":"Pidgeot, L50, F","condition":"166/166","active":true,"stats":{"atk":101,"def":85,"spa":100,"spd":127,"spe":140},"moves":["axekick","closecombat"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p1: Watchog","details":"Watchog, L50, M","condition":"151/151","active":false,"stats":{"atk":110,"def":90,"spa":84,"spd":115,"spe":110},"moves":["torment"],"baseAbility":"analytic","item":"chilanberry","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false},{"ident":"p1: Metagross","details":"Metagross, L50, shiny","condition":"159/184","active":false,"stats":{"atk":163,"def":158,"spa":115,"spd":117,"spe":94},"moves":["icehammer","revivalblessing","drillpeck"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Garganacl, L50, M","condition":"0 fnt","active":true,"stats":{"atk":146,"def":152,"spa":93,"spd":99,"spe":72},"moves":["finalgambit","sweetscent"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"51/161","active":true,"stats":{"atk":110,"def":101,"spa":91,"spd":99,"spe":153},"moves":["beakblast","auroraveil","direclaw"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Crabominable, L50, M","condition":"5/185","active":false,"stats":{"atk":168,"def":112,"spa":91,"spd":99,"spe":63},"moves":["octolock","petalblizzard","wildcharge","bodypress"],"baseAbility":"ironfist","item":"mistyseed","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false},{"ident":"p2: Mr. Mime","details":"Mr. Mime, L50, F","condition":"116/116","active":false,"stats":{"atk":58,"def":91,"spa":139,"spd":157,"spe":133},"moves":["trailblaze"],"baseAbility":"technician","item":"bigroot","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Octolock","id":"octolock","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Minimize","id":"minimize","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Reversal","id":"reversal","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Axe Kick","id":"axekick","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Close Combat","id":"closecombat","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Big Tony's Pal","details":"Mudsdale, L50, F, shiny","condition":"92/190","active":true,"stats":{"atk":133,"def":122,"spa":89,"spd":115,"spe":58},"moves":["octolock","minimize","reversal","superpower"],"baseAbility":"stamina","item":"expertbelt","pokeball":"pokeball","ability":"stamina","commanding":false,"reviving":false},{"ident":"p1: Pidgeot","details":"Pidgeot, L50, F","condition":"166/166","active":true,"stats":{"atk":101,"def":85,"spa":100,"spd":127,"spe":140},"moves":["axekick","closecombat"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p1: Watchog","details":"Watchog, L50, M","condition":"151/151","active":false,"stats":{"atk":110,"def":90,"spa":84,"spd":115,"spe":110},"moves":["torment"],"baseAbility":"analytic","item":"chilanberry","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false},{"ident":"p1: Metagross","details":"Metagross, L50, shiny","condition":"159/184","active":false,"stats":{"atk":163,"def":158,"spa":115,"spd":117,"spe":94},"moves":["icehammer","revivalblessing","drillpeck"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Octolock","id":"octolock","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Petal Blizzard","id":"petalblizzard","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Wild Charge","id":"wildcharge","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Body Press","id":"bodypress","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Beak Blast","id":"beakblast","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":19,"maxpp":20,"target":"allySide","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Crabominable, L50, M","condition":"5/185","active":true,"stats":{"atk":168,"def":112,"spa":91,"spd":99,"spe":63},"moves":["octolock","petalblizzard","wildcharge","bodypress"],"baseAbility":"ironfist","item":"mistyseed","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"51/161","active":true,"stats":{"atk":110,"def":101,"spa":91,"spd":99,"spe":153},"moves":["beakblast","auroraveil","direclaw"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Garganacl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":146,"def":152,"spa":93,"spd":99,"spe":72},"moves":["finalgambit","sweetscent"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p2: Mr. Mime","details":"Mr. Mime, L50, F","condition":"116/116","active":false,"stats":{"atk":58,"def":91,"spa":139,"spd":157,"spe":133},"moves":["trailblaze"],"baseAbility":"technician","item":"bigroot","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Big Tony's Pal","details":"Mudsdale, L50, F, shiny","condition":"92/190","active":true,"stats":{"atk":133,"def":122,"spa":89,"spd":115,"spe":58},"moves":["octolock","minimize","reversal","superpower"],"baseAbility":"stamina","item":"expertbelt","pokeball":"pokeball","ability":"stamina","commanding":false,"reviving":false},{"ident":"p1: Watchog","details":"Watchog, L50, M","condition":"42/151 slp","active":true,"stats":{"atk":110,"def":90,"spa":84,"spd":115,"spe":110},"moves":["torment"],"baseAbility":"analytic","item":"chilanberry","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false},{"ident":"p1: Pidgeot","details":"Pidgeot, L50, F","condition":"166/166","active":false,"stats":{"atk":101,"def":85,"spa":100,"spd":127,"spe":140},"moves":["axekick","closecombat"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p1: Metagross","details":"Metagross, L50, shiny","condition":"159/184","active":false,"stats":{"atk":163,"def":158,"spa":115,"spd":117,"spe":94},"moves":["icehammer","revivalblessing","drillpeck"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Crabominable, L50, M","condition":"0 fnt","active":true,"stats":{"atk":168,"def":112,"spa":91,"spd":99,"spe":63},"moves":["octolock","petalblizzard","wildcharge","bodypress"],"baseAbility":"ironfist","item":"mistyseed","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"51/161","active":true,"stats":{"atk":110,"def":101,"spa":91,"spd":99,"spe":153},"moves":["beakblast","auroraveil","direclaw"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Garganacl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":146,"def":152,"spa":93,"spd":99,"spe":72},"moves":["finalgambit","sweetscent"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p2: Mr. Mime","details":"Mr. Mime, L50, F","condition":"116/116","active":false,"stats":{"atk":58,"def":91,"spa":139,"spd":157,"spe":133},"moves":["trailblaze"],"baseAbility":"technician","item":"bigroot","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Octolock","id":"octolock","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Minimize","id":"minimize","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Reversal","id":"reversal","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Torment","id":"torment","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Big Tony's Pal","details":"Mudsdale, L50, F, shiny","condition":"92/190","active":true,"stats":{"atk":133,"def":122,"spa":89,"spd":115,"spe":58},"moves":["octolock","minimize","reversal","superpower"],"baseAbility":"stamina","item":"expertbelt","pokeball":"pokeball","ability":"stamina","commanding":false,"reviving":false},{"ident":"p1: Watchog","details":"Watchog, L50, M","condition":"42/151 slp","active":true,"stats":{"atk":110,"def":90,"spa":84,"spd":115,"spe":110},"moves":["torment"],"baseAbility":"analytic","item":"chilanberry","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false},{"ident":"p1: Pidgeot","details":"Pidgeot, L50, F","condition":"166/166","active":false,"stats":{"atk":101,"def":85,"spa":100,"spd":127,"spe":140},"moves":["axekick","closecombat"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p1: Metagross","details":"Metagross, L50, shiny","condition":"159/184","active":false,"stats":{"atk":163,"def":158,"spa":115,"spd":117,"spe":94},"moves":["icehammer","revivalblessing","drillpeck"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Beak Blast","id":"beakblast","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":19,"maxpp":20,"target":"allySide","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Mime","details":"Mr. Mime, L50, F","condition":"116/116","active":true,"stats":{"atk":58,"def":91,"spa":139,"spd":157,"spe":133},"moves":["trailblaze"],"baseAbility":"technician","item":"bigroot","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"51/161","active":true,"stats":{"atk":110,"def":101,"spa":91,"spd":99,"spe":153},"moves":["beakblast","auroraveil","direclaw"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Garganacl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":146,"def":152,"spa":93,"spd":99,"spe":72},"moves":["finalgambit","sweetscent"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Crabominable, L50, M","condition":"0 fnt","active":false,"stats":{"atk":168,"def":112,"spa":91,"spd":99,"spe":63},"moves":["octolock","petalblizzard","wildcharge","bodypress"],"baseAbility":"ironfist","item":"mistyseed","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Octolock","id":"octolock","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Minimize","id":"minimize","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Reversal","id":"reversal","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Torment","id":"torment","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Big Tony's Pal","details":"Mudsdale, L50, F, shiny","condition":"92/190","active":true,"stats":{"atk":133,"def":122,"spa":89,"spd":115,"spe":58},"moves":["octolock","minimize","reversal","superpower"],"baseAbility":"stamina","item":"expertbelt","pokeball":"pokeball","ability":"stamina","commanding":false,"reviving":false},{"ident":"p1: Watchog","details":"Watchog, L50, M","condition":"23/151 slp","active":true,"stats":{"atk":110,"def":90,"spa":84,"spd":115,"spe":110},"moves":["torment"],"baseAbility":"analytic","item":"chilanberry","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false},{"ident":"p1: Pidgeot","details":"Pidgeot, L50, F","condition":"166/166","active":false,"stats":{"atk":101,"def":85,"spa":100,"spd":127,"spe":140},"moves":["axekick","closecombat"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p1: Metagross","details":"Metagross, L50, shiny","condition":"159/184","active":false,"stats":{"atk":163,"def":158,"spa":115,"spd":117,"spe":94},"moves":["icehammer","revivalblessing","drillpeck"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Beak Blast","id":"beakblast","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":19,"maxpp":20,"target":"allySide","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Mime","details":"Mr. Mime, L50, F","condition":"28/116","active":true,"stats":{"atk":58,"def":91,"spa":139,"spd":157,"spe":133},"moves":["trailblaze"],"baseAbility":"technician","item":"bigroot","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"51/161","active":true,"stats":{"atk":110,"def":101,"spa":91,"spd":99,"spe":153},"moves":["beakblast","auroraveil","direclaw"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Garganacl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":146,"def":152,"spa":93,"spd":99,"spe":72},"moves":["finalgambit","sweetscent"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Crabominable, L50, M","condition":"0 fnt","active":false,"stats":{"atk":168,"def":112,"spa":91,"spd":99,"spe":63},"moves":["octolock","petalblizzard","wildcharge","bodypress"],"baseAbility":"ironfist","item":"mistyseed","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Big Tony's Pal","details":"Mudsdale, L50, F, shiny","condition":"58/190","active":true,"stats":{"atk":133,"def":122,"spa":89,"spd":115,"spe":58},"moves":["octolock","minimize","reversal","superpower"],"baseAbility":"stamina","item":"expertbelt","pokeball":"pokeball","ability":"stamina","commanding":false,"reviving":false},{"ident":"p1: Watchog","details":"Watchog, L50, M","condition":"0 fnt","active":true,"stats":{"atk":110,"def":90,"spa":84,"spd":115,"spe":110},"moves":["torment"],"baseAbility":"analytic","item":"chilanberry","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false},{"ident":"p1: Pidgeot","details":"Pidgeot, L50, F","condition":"166/166","active":false,"stats":{"atk":101,"def":85,"spa":100,"spd":127,"spe":140},"moves":["axekick","closecombat"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p1: Metagross","details":"Metagross, L50, shiny","condition":"159/184","active":false,"stats":{"atk":163,"def":158,"spa":115,"spd":117,"spe":94},"moves":["icehammer","revivalblessing","drillpeck"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Mime","details":"Mr. Mime, L50, F","condition":"28/116","active":true,"stats":{"atk":58,"def":91,"spa":139,"spd":157,"spe":133},"moves":["trailblaze"],"baseAbility":"technician","item":"bigroot","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"51/161","active":true,"stats":{"atk":110,"def":101,"spa":91,"spd":99,"spe":153},"moves":["beakblast","auroraveil","direclaw"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Garganacl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":146,"def":152,"spa":93,"spd":99,"spe":72},"moves":["finalgambit","sweetscent"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Crabominable, L50, M","condition":"0 fnt","active":false,"stats":{"atk":168,"def":112,"spa":91,"spd":99,"spe":63},"moves":["octolock","petalblizzard","wildcharge","bodypress"],"baseAbility":"ironfist","item":"mistyseed","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Octolock","id":"octolock","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Minimize","id":"minimize","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Reversal","id":"reversal","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Axe Kick","id":"axekick","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Close Combat","id":"closecombat","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Big Tony's Pal","details":"Mudsdale, L50, F, shiny","condition":"58/190","active":true,"stats":{"atk":133,"def":122,"spa":89,"spd":115,"spe":58},"moves":["octolock","minimize","reversal","superpower"],"baseAbility":"stamina","item":"expertbelt","pokeball":"pokeball","ability":"stamina","commanding":false,"reviving":false},{"ident":"p1: Pidgeot","details":"Pidgeot, L50, F","condition":"166/166","active":true,"stats":{"atk":101,"def":85,"spa":100,"spd":127,"spe":140},"moves":["axekick","closecombat"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p1: Watchog","details":"Watchog, L50, M","condition":"0 fnt","active":false,"stats":{"atk":110,"def":90,"spa":84,"spd":115,"spe":110},"moves":["torment"],"baseAbility":"analytic","item":"chilanberry","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false},{"ident":"p1: Metagross","details":"Metagross, L50, shiny","condition":"159/184","active":false,"stats":{"atk":163,"def":158,"spa":115,"spd":117,"spe":94},"moves":["icehammer","revivalblessing","drillpeck"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":18,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Beak Blast","id":"beakblast","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":19,"maxpp":20,"target":"allySide","disabled":false},{"move":"Dire Claw","id":"direclaw","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Mime","details":"Mr. Mime, L50, F","condition":"28/116","active":true,"stats":{"atk":58,"def":91,"spa":139,"spd":157,"spe":133},"moves":["trailblaze"],"baseAbility":"technician","item":"bigroot","pokeball":"pokeball","ability":"technician","commanding":false,"reviving":false},{"ident":"p2: Pidgeot","details":"Pidgeot, L50, M","condition":"51/161","active":true,"stats":{"atk":110,"def":101,"spa":91,"spd":99,"spe":153},"moves":["beakblast","auroraveil","direclaw"],"baseAbility":"bigpecks","item":"","pokeball":"pokeball","ability":"bigpecks","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Garganacl, L50, M","condition":"0 fnt","active":false,"stats":{"atk":146,"def":152,"spa":93,"spd":99,"spe":72},"moves":["finalgambit","sweetscent"],"baseAbility":"clearbody","item":"","pokeball":"pokeball","ability":"clearbody","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Crabominable, L50, M","condition":"0 fnt","active":false,"stats":{"atk":168,"def":112,"spa":91,"spd":99,"spe":63},"moves":["octolock","petalblizzard","wildcharge","bodypress"],"baseAbility":"ironfist","item":"mistyseed","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false}]}}

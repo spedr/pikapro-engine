@@ -1,0 +1,142 @@
+[build-system]
+# 1.9.4: PEP 639 `license` expressions and `license-files`.
+requires = ["maturin>=1.9.4,<2"]
+build-backend = "maturin"
+
+[project]
+# The distribution and the import package are both `pikapro`.
+name = "pikapro"
+description = "A fast, deterministic Pokémon battle simulator (Gen 9, VGC, Pokémon Champions) with a reinforcement-learning environment"
+readme = "README.md"
+requires-python = ">=3.10"
+# pikapro's own license. The wheels also link Rust crates under MIT,
+# MIT OR Apache-2.0 and BSD-2-Clause (numpy): their notices, and those of
+# Pokémon Showdown and poke-env, are in THIRD_PARTY_NOTICES (a copy of the
+# workspace's, like LICENSE).
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES"]
+keywords = [
+    "pokemon",
+    "pokemon-showdown",
+    "battle-simulator",
+    "reinforcement-learning",
+    "gymnasium",
+    "pettingzoo",
+    "vgc",
+    "self-play",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Rust",
+    "Topic :: Games/Entertainment :: Simulation",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
+dependencies = ["numpy>=1.21"]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+# Adapters in pikapro.rl, imported lazily: the core needs only numpy.
+gym = ["gymnasium>=1.0"]
+pettingzoo = ["pettingzoo>=1.24", "gymnasium>=1.0"]
+sb3 = ["stable-baselines3>=2.3", "sb3-contrib>=2.3", "gymnasium>=1.0"]
+# pikapro.compat.poke_env drives poke-env's own parser and players, so it
+# follows one poke-env minor version (tested with 0.16.1).
+poke-env = ["poke-env>=0.16,<0.17"]
+# pikapro.showdown, the Showdown server client (websockets' asyncio API).
+showdown = ["websockets>=13"]
+# Every extra above, spelled out (`maturin develop --extras all` can't
+# resolve a self-reference such as "pikapro[gym]").
+all = [
+    "gymnasium>=1.0",
+    "pettingzoo>=1.24",
+    "stable-baselines3>=2.3",
+    "sb3-contrib>=2.3",
+    "poke-env>=0.16,<0.17",
+    "websockets>=13",
+]
+test = ["pytest>=7"]
+# Building from a checkout: `maturin develop --extras dev`.
+dev = ["pytest>=7", "maturin>=1.9.4,<2"]
+
+[project.urls]
+Homepage = "https://github.com/spedr/pikapro-engine"
+Documentation = "https://github.com/spedr/pikapro-engine/tree/main/docs/python"
+Repository = "https://github.com/spedr/pikapro-engine"
+Changelog = "https://github.com/spedr/pikapro-engine/blob/main/crates/pikapro-py/CHANGELOG.md"
+Issues = "https://github.com/spedr/pikapro-engine/issues"
+
+[tool.maturin]
+# The extension module is `pikapro._pikapro`; `python/pikapro` is the package.
+module-name = "pikapro._pikapro"
+python-source = "python"
+# One wheel per platform for CPython 3.10 and later: the stable ABI
+# (abi3). The numpy crate supports it, abi3audit finds no violation, and the
+# boundary-heavy workloads (a `Battle` loop, typed events, requests, small
+# `VecEnv` steps) measured no slower than a per-version build.
+features = ["python", "pyo3/abi3-py310"]
+# Release settings, but a Rust panic becomes a Python exception instead of
+# aborting the interpreter (see the workspace Cargo.toml). Wheels are built
+# with it too: `maturin build` with no `--release`.
+profile = "release-py"
+# The release profile keeps line tables for profiling (`debug = 1`); a
+# wheel doesn't need them.
+strip = true
+# The sdist (what pip builds where no wheel fits) holds every crate the
+# extension builds from, taken from the workspace. Left out: test data no
+# build reads, the conformance fixtures and the server's
+# transcripts (patterns match the files' paths anywhere). Put in, at the
+# sdist's root: rust-toolchain.toml, a copy of the workspace's (an include
+# is relative to this directory), so that a build with rustup uses the
+# pinned compiler.
+include = [{ path = "rust-toolchain.toml", format = "sdist" }]
+exclude = [
+    { path = "**/crates/pikapro-conformance/fixtures/**", format = "sdist" },
+    { path = "**/crates/pikapro-server/tests/transcripts/**", format = "sdist" },
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+# Wheels for PyPI (.github/workflows/wheels.yml). The wheel is abi3, so
+# cibuildwheel builds it once per platform (with cp310) and then installs
+# and tests that same wheel on every CPython below. Profile-guided
+# optimisation (before-build, RUSTFLAGS, the target) is set in wheels.yml,
+# so that it can be turned off for a run.
+[tool.cibuildwheel]
+build = ["cp310-*", "cp311-*", "cp312-*", "cp313-*", "cp314-*"]
+build-verbosity = 1
+# The cheap, pure-Python extras too, so that the Gymnasium and PettingZoo
+# adapters and pikapro.showdown's asyncio client (against a scripted local
+# server: tests/test_showdown_robustness.py) run on every platform and
+# Python.
+test-requires = ["pytest", "websockets>=13", "gymnasium>=1.0", "pettingzoo>=1.24"]
+# The suite, against the installed wheel (cibuildwheel runs it from a
+# temporary directory). The CLI tests need the `pikapro` binary, and the
+# server tests pikapro-showdown-server, neither part of the wheel:
+# tools/full-gate.sh runs them.
+test-command = "pytest {project}/crates/pikapro-py/tests -q -p no:cacheprovider --ignore={project}/crates/pikapro-py/tests/test_cli.py --ignore={project}/crates/pikapro-py/tests/test_showdown_servers.py --ignore={project}/crates/pikapro-py/tests/test_channel_session_server.py"
+test-environment = { PYTHONUTF8 = "1" }
+
+[tool.cibuildwheel.linux]
+# The manylinux and musllinux images have no Rust: install rustup, which
+# then installs the toolchain rust-toolchain.toml pins on first use.
+before-all = "curl -sSf https://sh.rustup.rs | sh -s -- -y --profile minimal --default-toolchain none"
+environment = { PATH = "$HOME/.cargo/bin:$PATH", CARGO_TERM_COLOR = "always" }
+
+[tool.cibuildwheel.macos]
+# Rust's minimum macOS is 10.12; CPython 3.10's installers target older.
+environment = { MACOSX_DEPLOYMENT_TARGET = "10.13" }

@@ -1,0 +1,149 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Snorlax
+Ability: Thick Fat
+Hardy Nature
+- Splash
+
+Ditto
+Ability: Imposter
+Hardy Nature
+- Transform
+end
+team p2
+Mimikyu
+Ability: Disguise
+Hardy Nature
+- Play Rough
+end
+choice p1 switch 2
+choice p2 move 1
+choice p1 switch 2
+choice p2 move 1
+choice p1 switch 2
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Snorlax|Snorlax, F|461/461
+expect |switch|p1a: Snorlax|Snorlax, F|461/461
+expect |split|p2
+expect |switch|p2a: Mimikyu|Mimikyu, F|251/251
+expect |switch|p2a: Mimikyu|Mimikyu, F|251/251
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Ditto|Ditto|237/237
+expect |switch|p1a: Ditto|Ditto|237/237
+expect |-transform|p1a: Ditto|p2a: Mimikyu|[from] ability: Imposter
+expect |rng|2|1
+expect |move|p2a: Mimikyu|Play Rough|p1a: Ditto
+expect |rng|100|18
+expect |rng|24|6
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Ditto|125/237
+expect |-damage|p1a: Ditto|125/237
+expect |rng|100|9
+expect |-unboost|p1a: Ditto|atk|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |upkeep
+expect |rng|2|0
+expect |turn|2
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |split|p1
+expect |switch|p1a: Snorlax|Snorlax, F|461/461
+expect |switch|p1a: Snorlax|Snorlax, F|461/461
+expect |move|p2a: Mimikyu|Play Rough|p1a: Snorlax
+expect |rng|100|88
+expect |rng|24|8
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Snorlax|316/461
+expect |-damage|p1a: Snorlax|316/461
+expect |rng|100|97
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Ditto|Ditto|125/237
+expect |switch|p1a: Ditto|Ditto|125/237
+expect |-transform|p1a: Ditto|p2a: Mimikyu|[from] ability: Imposter
+expect |rng|2|0
+expect |move|p2a: Mimikyu|Play Rough|p1a: Ditto
+expect |rng|100|12
+expect |rng|24|23
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Ditto|5/237
+expect |-damage|p1a: Ditto|5/237
+expect |rng|100|55
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|0
+expect |turn|4
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Ditto|Play Rough|p2a: Mimikyu
+expect |rng|100|66
+expect |rng|24|7
+expect |rng|16|15
+expect |-activate|p2a: Mimikyu|ability: Disguise
+expect |split|p2
+expect |-damage|p2a: Mimikyu|251/251
+expect |-damage|p2a: Mimikyu|251/251
+expect |rng|100|0
+expect |-unboost|p2a: Mimikyu|atk|1
+expect |rng|2|0
+expect |detailschange|p2a: Mimikyu|Mimikyu-Busted, F
+expect |split|p2
+expect |-damage|p2a: Mimikyu|220/251|[from] pokemon: Mimikyu-Busted
+expect |-damage|p2a: Mimikyu|220/251|[from] pokemon: Mimikyu-Busted
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Mimikyu|Play Rough|p1a: Ditto
+expect |rng|100|29
+expect |rng|24|17
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Ditto|0 fnt
+expect |-damage|p1a: Ditto|0 fnt
+expect |rng|100|0
+expect |rng|2|1
+expect |faint|p1a: Ditto
+expect |
+expect |upkeep

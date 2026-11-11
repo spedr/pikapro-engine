@@ -1,0 +1,122 @@
+# gen9doubles-sodium-2117014-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@write
+>start {"formatid":"[Gen 9] Doubles Custom Game@@@!Team Preview","seed":"sodium,b13f2f08bb21a3c976a290a2e4d0f54f"}
+@write
+>player p1 {"name":"Alice","team":"Pecharunt|||PoisonPuppeteer|FurySwipes,IcicleCrash|Quiet|12,107,115,129,111,31||||50|,,,,,Ice]Volbeat|||Prankster|RisingVoltage,Haze,Leafage|Sassy|6,48,188,170,58,18||||50|,,,,,Ice]Tyrogue||Electirizer|Steadfast|Facade|Jolly|31,36,181,59,56,136||||50|,,,,,Grass]Mr. Bubbles|Floragato|InsectPlate|Overgrow|TailWhip,ShadowPunch,ShadowBall,SolarBlade|Bold|8,26,194,148,51,3||||50|,,,,,Normal]Chomp|Seedot|KingsRock|Chlorophyll|RisingVoltage,FairyWind,PsychicTerrain,Confide|Bashful|30,13,213,95,142,11|F|||50|,,,,,Electric]Oricorio|||Dancer|MetalSound|Bold|7,231,71,10,,190||||50|,,,,,Fighting"}
+@write
+>player p2 {"name":"Bob","team":"ThisNameIsFarTooLongToKeep|Goodra|HeatRock|SapSipper|RagePowder,WaterGun,TearfulLook|Jolly|154,119,,59,150,1|||S|50|,,,,,Grass]Quilladin||ReaperCloth|Overgrow|WorrySeed,HyperspaceFury,MagicalLeaf,Entrainment|Sassy|18,105,79,149,30,121|F|||50|,,,,,Normal]Big Tony's Pal|Spiritomb||Pressure|SpiritBreak,WickedBlow,BoltStrike|Quiet|135,15,153,17,1,144||||50|,,,,,Normal]Sparky|Magnezone||Analytic|CrushClaw,AncientPower|Careful|3,158,136,1,208,2||||50|,,,,,Dark]Slakoth|||Truant|WildCharge,SwordsDance,TopsyTurvy,MetalClaw|Hasty|141,46,18,34,145,85||||50|,,,,,Steel]Wo-Chien||ChippedPot|TabletsofRuin|EsperWing,TachyonCutter|Lonely|18,115,83,,193,96|||S|50|,,,,,Poison"}
+@write
+>p2 move 0
+@write
+>p2 move 2 terastallize +1, move Entrainment -1
+@write
+>p1 move 1 2, move 1 1 terastallize
+@write
+>p2 switch 3
+@write
+>p1 switch 6
+@write
+>p1 move 1 1, switch 3
+@write
+>p2 default, move 1 -1
+@write
+>forcetie
+@message
+update
+|t:|
+|gametype|doubles
+@message
+update
+|player|p1|Alice||
+@message
+update
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: Pecharunt|Pecharunt, L50|165/165
+|switch|p1a: Pecharunt|Pecharunt, L50|165/165
+|split|p1
+|switch|p1b: Volbeat|Volbeat, L50, M|141/141
+|switch|p1b: Volbeat|Volbeat, L50, M|141/141
+|split|p2
+|switch|p2a: ThisNameIsFarTooLong|Goodra, L50, M, shiny|184/184
+|switch|p2a: ThisNameIsFarTooLong|Goodra, L50, M, shiny|184/184
+|split|p2
+|switch|p2b: Quilladin|Quilladin, L50, F|138/138
+|switch|p2b: Quilladin|Quilladin, L50, F|138/138
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Fury Swipes","id":"furyswipes","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Icicle Crash","id":"iciclecrash","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Ice"},{"moves":[{"move":"Rising Voltage","id":"risingvoltage","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Haze","id":"haze","pp":48,"maxpp":48,"target":"all","disabled":false},{"move":"Leafage","id":"leafage","pp":64,"maxpp":64,"target":"normal","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pecharunt","details":"Pecharunt, L50","condition":"165/165","active":true,"stats":{"atk":121,"def":194,"spa":136,"spd":122,"spe":100},"moves":["furyswipes","iciclecrash"],"baseAbility":"poisonpuppeteer","item":"","pokeball":"pokeball","ability":"poisonpuppeteer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Volbeat","details":"Volbeat, L50, M","condition":"141/141","active":true,"stats":{"atk":99,"def":119,"spa":88,"spd":123,"spe":96},"moves":["risingvoltage","haze","leafage"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Tyrogue","details":"Tyrogue, L50, M","condition":"114/114","active":false,"stats":{"atk":60,"def":78,"spa":55,"spd":62,"spe":79},"moves":["facade"],"baseAbility":"steadfast","item":"electirizer","pokeball":"pokeball","ability":"steadfast","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Floragato, L50, M","condition":"137/137","active":false,"stats":{"atk":92,"def":117,"spa":99,"spd":89,"spe":103},"moves":["tailwhip","shadowpunch","shadowball","solarblade"],"baseAbility":"overgrow","item":"insectplate","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Chomp","details":"Seedot, L50, F","condition":"119/119","active":false,"stats":{"atk":62,"def":97,"spa":62,"spd":68,"spe":51},"moves":["risingvoltage","fairywind","psychicterrain","confide"],"baseAbility":"chlorophyll","item":"kingsrock","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, M","condition":"151/151","active":false,"stats":{"atk":107,"def":108,"spa":119,"spd":90,"spe":137},"moves":["metalsound"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Rage Powder","id":"ragepowder","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Water Gun","id":"watergun","pp":40,"maxpp":40,"target":"normal","disabled":false},{"move":"Tearful Look","id":"tearfullook","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Grass"},{"moves":[{"move":"Worry Seed","id":"worryseed","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Hyperspace Fury","id":"hyperspacefury","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Magical Leaf","id":"magicalleaf","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Entrainment","id":"entrainment","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Goodra, L50, M, shiny","condition":"184/184","active":true,"stats":{"atk":135,"def":90,"spa":123,"spd":189,"spe":110},"moves":["ragepowder","watergun","tearfullook"],"baseAbility":"sapsipper","item":"heatrock","pokeball":"pokeball","ability":"sapsipper","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p2: Quilladin","details":"Quilladin, L50, F","condition":"138/138","active":true,"stats":{"atk":111,"def":125,"spa":95,"spd":90,"spe":82},"moves":["worryseed","hyperspacefury","magicalleaf","entrainment"],"baseAbility":"overgrow","item":"reapercloth","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Spiritomb, L50, M","condition":"142/142","active":false,"stats":{"atk":114,"def":147,"spa":125,"spd":128,"spe":65},"moves":["spiritbreak","wickedblow","boltstrike"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sparky","details":"Magnezone, L50","condition":"145/145","active":false,"stats":{"atk":110,"def":152,"spa":135,"spd":149,"spe":80},"moves":["crushclaw","ancientpower"],"baseAbility":"analytic","item":"","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Slakoth","details":"Slakoth, L50, F","condition":"153/153","active":false,"stats":{"atk":86,"def":73,"spa":59,"spd":73,"spe":67},"moves":["wildcharge","swordsdance","topsyturvy","metalclaw"],"baseAbility":"truant","item":"","pokeball":"pokeball","ability":"truant","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Wo-Chien","details":"Wo-Chien, L50, shiny","condition":"162/162","active":false,"stats":{"atk":130,"def":117,"spa":115,"spd":179,"spe":102},"moves":["esperwing","tachyoncutter"],"baseAbility":"tabletsofruin","item":"chippedpot","pokeball":"pokeball","ability":"tabletsofruin","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Your ThisNameIsFarTooLong doesn't have a move 0
+@message
+update
+|
+|t:|
+|-terastallize|p2a: ThisNameIsFarTooLong|Grass
+|-terastallize|p1b: Volbeat|Ice
+|move|p2a: ThisNameIsFarTooLong|Water Gun|p1a: Pecharunt
+|split|p1
+|-damage|p1a: Pecharunt|148/165
+|-damage|p1a: Pecharunt|148/165
+|move|p1a: Pecharunt|Fury Swipes|p2b: Quilladin
+|split|p2
+|-damage|p2b: Quilladin|130/138
+|-damage|p2b: Quilladin|130/138
+|split|p2
+|-damage|p2b: Quilladin|122/138
+|-damage|p2b: Quilladin|122/138
+|-hitcount|p2b: Quilladin|2
+|move|p1b: Volbeat|Rising Voltage|p2a: ThisNameIsFarTooLong
+|-resisted|p2a: ThisNameIsFarTooLong
+|split|p2
+|-damage|p2a: ThisNameIsFarTooLong|177/184
+|-damage|p2a: ThisNameIsFarTooLong|177/184
+|move|p2b: Quilladin|Entrainment|p2a: ThisNameIsFarTooLong
+|-ability|p2a: ThisNameIsFarTooLong|Overgrow|Sap Sipper|[from] move: Entrainment|[of] p2b: Quilladin
+|
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Fury Swipes","id":"furyswipes","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Icicle Crash","id":"iciclecrash","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Rising Voltage","id":"risingvoltage","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Haze","id":"haze","pp":48,"maxpp":48,"target":"all","disabled":false},{"move":"Leafage","id":"leafage","pp":64,"maxpp":64,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pecharunt","details":"Pecharunt, L50","condition":"148/165","active":true,"stats":{"atk":121,"def":194,"spa":136,"spd":122,"spe":100},"moves":["furyswipes","iciclecrash"],"baseAbility":"poisonpuppeteer","item":"","pokeball":"pokeball","ability":"poisonpuppeteer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Volbeat","details":"Volbeat, L50, M","condition":"141/141","active":true,"stats":{"atk":99,"def":119,"spa":88,"spd":123,"spe":96},"moves":["risingvoltage","haze","leafage"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Ice","terastallized":"Ice"},{"ident":"p1: Tyrogue","details":"Tyrogue, L50, M","condition":"114/114","active":false,"stats":{"atk":60,"def":78,"spa":55,"spd":62,"spe":79},"moves":["facade"],"baseAbility":"steadfast","item":"electirizer","pokeball":"pokeball","ability":"steadfast","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Floragato, L50, M","condition":"137/137","active":false,"stats":{"atk":92,"def":117,"spa":99,"spd":89,"spe":103},"moves":["tailwhip","shadowpunch","shadowball","solarblade"],"baseAbility":"overgrow","item":"insectplate","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Chomp","details":"Seedot, L50, F","condition":"119/119","active":false,"stats":{"atk":62,"def":97,"spa":62,"spd":68,"spe":51},"moves":["risingvoltage","fairywind","psychicterrain","confide"],"baseAbility":"chlorophyll","item":"kingsrock","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, M","condition":"151/151","active":false,"stats":{"atk":107,"def":108,"spa":119,"spd":90,"spe":137},"moves":["metalsound"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Rage Powder","id":"ragepowder","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Water Gun","id":"watergun","pp":39,"maxpp":40,"target":"normal","disabled":false},{"move":"Tearful Look","id":"tearfullook","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Worry Seed","id":"worryseed","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Hyperspace Fury","id":"hyperspacefury","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Magical Leaf","id":"magicalleaf","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Entrainment","id":"entrainment","pp":23,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Goodra, L50, M, shiny","condition":"177/184","active":true,"stats":{"atk":135,"def":90,"spa":123,"spd":189,"spe":110},"moves":["ragepowder","watergun","tearfullook"],"baseAbility":"sapsipper","item":"heatrock","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Grass","terastallized":"Grass"},{"ident":"p2: Quilladin","details":"Quilladin, L50, F","condition":"122/138","active":true,"stats":{"atk":111,"def":125,"spa":95,"spd":90,"spe":82},"moves":["worryseed","hyperspacefury","magicalleaf","entrainment"],"baseAbility":"overgrow","item":"reapercloth","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Spiritomb, L50, M","condition":"142/142","active":false,"stats":{"atk":114,"def":147,"spa":125,"spd":128,"spe":65},"moves":["spiritbreak","wickedblow","boltstrike"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Sparky","details":"Magnezone, L50","condition":"145/145","active":false,"stats":{"atk":110,"def":152,"spa":135,"spd":149,"spe":80},"moves":["crushclaw","ancientpower"],"baseAbility":"analytic","item":"","pokeball":"pokeball","ability":"analytic","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Slakoth","details":"Slakoth, L50, F","condition":"153/153","active":false,"stats":{"atk":86,"def":73,"spa":59,"spd":73,"spe":67},"moves":["wildcharge","swordsdance","topsyturvy","metalclaw"],"baseAbility":"truant","item":"","pokeball":"pokeball","ability":"truant","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Wo-Chien","details":"Wo-Chien, L50, shiny","condition":"162/162","active":false,"stats":{"atk":130,"def":117,"spa":115,"spd":179,"spe":102},"moves":["esperwing","tachyoncutter"],"baseAbility":"tabletsofruin","item":"chippedpot","pokeball":"pokeball","ability":"tabletsofruin","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: switch 3 - missing other pokemon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Incomplete choice: switch 6 - missing other pokemon
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You sent more choices than unfainted Pokémon.
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"sodium,b13f2f08bb21a3c976a290a2e4d0f54f","turns":2,"p1":"Alice","p2":"Bob","p1team":[{"name":"Pecharunt","species":"Pecharunt","item":"","ability":"Poison Puppeteer","moves":["Fury Swipes","Icicle Crash"],"nature":"Quiet","evs":{"hp":12,"atk":107,"def":115,"spa":129,"spd":111,"spe":31},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Volbeat","species":"Volbeat","item":"","ability":"Prankster","moves":["Rising Voltage","Haze","Leafage"],"nature":"Sassy","evs":{"hp":6,"atk":48,"def":188,"spa":170,"spd":58,"spe":18},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Tyrogue","species":"Tyrogue","item":"Electirizer","ability":"Steadfast","moves":["Facade"],"nature":"Jolly","evs":{"hp":31,"atk":36,"def":181,"spa":59,"spd":56,"spe":136},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Mr. Bubbles","species":"Floragato","item":"Insect Plate","ability":"Overgrow","moves":["Tail Whip","Shadow Punch","Shadow Ball","Solar Blade"],"nature":"Bold","evs":{"hp":8,"atk":26,"def":194,"spa":148,"spd":51,"spe":3},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Seedot","item":"King's Rock","ability":"Chlorophyll","moves":["Rising Voltage","Fairy Wind","Psychic Terrain","Confide"],"nature":"Bashful","evs":{"hp":30,"atk":13,"def":213,"spa":95,"spd":142,"spe":11},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Oricorio","species":"Oricorio","item":"","ability":"Dancer","moves":["Metal Sound"],"nature":"Bold","evs":{"hp":7,"atk":231,"def":71,"spa":10,"spd":0,"spe":190},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"ThisNameIsFarTooLongToKeep","species":"Goodra","item":"Heat Rock","ability":"Sap Sipper","moves":["Rage Powder","Water Gun","Tearful Look"],"nature":"Jolly","evs":{"hp":154,"atk":119,"def":0,"spa":59,"spd":150,"spe":1},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Quilladin","species":"Quilladin","item":"Reaper Cloth","ability":"Overgrow","moves":["Worry Seed","Hyperspace Fury","Magical Leaf","Entrainment"],"nature":"Sassy","evs":{"hp":18,"atk":105,"def":79,"spa":149,"spd":30,"spe":121},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Spiritomb","item":"","ability":"Pressure","moves":["Spirit Break","Wicked Blow","Bolt Strike"],"nature":"Quiet","evs":{"hp":135,"atk":15,"def":153,"spa":17,"spd":1,"spe":144},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sparky","species":"Magnezone","item":"","ability":"Analytic","moves":["Crush Claw","Ancient Power"],"nature":"Careful","evs":{"hp":3,"atk":158,"def":136,"spa":1,"spd":208,"spe":2},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Slakoth","species":"Slakoth","item":"","ability":"Truant","moves":["Wild Charge","Swords Dance","Topsy-Turvy","Metal Claw"],"nature":"Hasty","evs":{"hp":141,"atk":46,"def":18,"spa":34,"spd":145,"spe":85},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Wo-Chien","species":"Wo-Chien","item":"Chipped Pot","ability":"Tablets of Ruin","moves":["Esper Wing","Tachyon Cutter"],"nature":"Lonely","evs":{"hp":18,"atk":115,"def":83,"spa":0,"spd":193,"spe":96},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[6,6],"inputLog":[">start {\"formatid\":\"[Gen 9] Doubles Custom Game@@@!Team Preview\",\"seed\":\"sodium,b13f2f08bb21a3c976a290a2e4d0f54f\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Pecharunt|||PoisonPuppeteer|FurySwipes,IcicleCrash|Quiet|12,107,115,129,111,31||||50|,,,,,Ice]Volbeat|||Prankster|RisingVoltage,Haze,Leafage|Sassy|6,48,188,170,58,18||||50|,,,,,Ice]Tyrogue||Electirizer|Steadfast|Facade|Jolly|31,36,181,59,56,136||||50|,,,,,Grass]Mr. Bubbles|Floragato|InsectPlate|Overgrow|TailWhip,ShadowPunch,ShadowBall,SolarBlade|Bold|8,26,194,148,51,3||||50|,,,,,Normal]Chomp|Seedot|KingsRock|Chlorophyll|RisingVoltage,FairyWind,PsychicTerrain,Confide|Bashful|30,13,213,95,142,11|F|||50|,,,,,Electric]Oricorio|||Dancer|MetalSound|Bold|7,231,71,10,,190||||50|,,,,,Fighting\"}",">player p2 {\"name\":\"Bob\",\"team\":\"ThisNameIsFarTooLongToKeep|Goodra|HeatRock|SapSipper|RagePowder,WaterGun,TearfulLook|Jolly|154,119,,59,150,1|||S|50|,,,,,Grass]Quilladin||ReaperCloth|Overgrow|WorrySeed,HyperspaceFury,MagicalLeaf,Entrainment|Sassy|18,105,79,149,30,121|F|||50|,,,,,Normal]Big Tony's Pal|Spiritomb||Pressure|SpiritBreak,WickedBlow,BoltStrike|Quiet|135,15,153,17,1,144||||50|,,,,,Normal]Sparky|Magnezone||Analytic|CrushClaw,AncientPower|Careful|3,158,136,1,208,2||||50|,,,,,Dark]Slakoth|||Truant|WildCharge,SwordsDance,TopsyTurvy,MetalClaw|Hasty|141,46,18,34,145,85||||50|,,,,,Steel]Wo-Chien||ChippedPot|TabletsofRuin|EsperWing,TachyonCutter|Lonely|18,115,83,,193,96|||S|50|,,,,,Poison\"}",">p1 move furyswipes +2, move risingvoltage +1 terastallize",">p2 move watergun +1 terastallize, move entrainment -1",">forcetie"]}

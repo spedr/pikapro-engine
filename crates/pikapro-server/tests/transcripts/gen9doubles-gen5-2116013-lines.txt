@@ -1,0 +1,170 @@
+# gen9doubles-gen5-2116013-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay spectator
+@write
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,6410cf15c3edfc41","rated":"Rated battle"}
+@write
+>player p2 {"name":"Bob","team":[{"name":"Dudunsparce-Three-Segment","species":"Dudunsparce-Three-Segment","item":"Leaf Stone","ability":"Run Away","moves":["Thrash","Poison Jab"],"nature":"Naive","evs":{"hp":240,"atk":3,"def":21,"spa":1,"spd":107,"spe":136},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting"},{"name":"Sparky","species":"Klawf","item":"Absorb Bulb","ability":"Anger Shell","moves":["Jaw Lock","Lumina Crash"],"nature":"Mild","evs":{"hp":45,"atk":41,"def":3,"spa":226,"spd":193,"spe":0},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark"},{"name":"Chomp","species":"Snorlax","item":"Net Ball","ability":"Thick Fat","moves":["Slack Off","Metal Burst","Torch Song","Expanding Force"],"nature":"Jolly","evs":{"hp":135,"atk":5,"def":9,"spa":76,"spd":225,"spe":14},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice"},{"name":"Flareon","species":"Flareon","item":"Lustrous Orb","ability":"Flash Fire","moves":["Spark"],"nature":"Brave","evs":{"hp":3,"atk":125,"def":119,"spa":65,"spd":0,"spe":193},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass"},{"name":"Braixen","species":"Braixen","item":"Persim Berry","ability":"Magician","moves":["Volt Switch","Aqua Step"],"nature":"Bashful","evs":{"hp":199,"atk":62,"def":60,"spa":10,"spd":12,"spe":162},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground"},{"name":"Toxapex","species":"Toxapex","item":"Splash Plate","ability":"Limber","moves":["Payback","Magical Leaf","Vacuum Wave"],"nature":"Adamant","evs":{"hp":126,"atk":142,"def":0,"spa":80,"spd":2,"spe":160},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic"}]}
+@write
+>player p1 {"name":"Alice","team":"Rockruff-Dusk||RowapBerry|OwnTempo|BeakBlast,StoneAxe,MetalBurst|Serious|20,181,172,34,101,|M|||50|,,,,,Grass]Revavroom|||Filter|PoisonGas|Modest|25,92,82,126,52,67|F|||50|,,,,,Steel]Glimmet||TamatoBerry|ToxicDebris|FloralHealing,MuddyWater,RockPolish|Jolly|10,134,64,179,117,3|M|||50|,,,,,Poison]Dudunsparce|||RunAway|Confide|Rash|73,165,41,12,18,145|M|||50|,,,,,Stellar]Mr. Bubbles|Corviknight|MasterpieceTeacup|MirrorArmor|PowerWhip|Serious|202,197,45,3,16,21|F|||50|,,,,,Fire]Persian||Leftovers|Limber|HeartSwap,FuryCutter,FocusPunch,Memento|Naughty|44,170,87,106,21,61|F||S|50|,,,,,Normal"}
+@write
+>p1 testfight
+@write
+>p2 switch 3,move 1 1
+@write
+>p1 default
+@write
+>p1 move 2 -2 terastallize, move 1
+@write
+>p2 move 3 2 ,  move Lumina Crash terastal -1
+@write
+>p2 move 1
+@write
+>p1 move 3, switch 5
+@write
+>p2 switch 3, move 2 -1
+@write
+>p1 move 3, move 1 -1
+@write
+>p2 switch flareon
+@write
+>p2 undo
+@write
+>p2 undo
+@write
+>p2 move 1, move 1 -1
+@write
+>p1 switch 5, pass
+@write
+>p1 switch PERSIAN
+@write
+>p2 switch braixen
+@write
+>p2 default
+@write
+>p1 switch 4, move 1 1
+@write
+>p2 move 1, move luminacrash +1
+@write
+>p1 move confide 1 mega, move 1 2
+@write
+>forcewin p2
+@message
+|t:|
+|gametype|doubles
+@message
+|player|p2|Bob||
+@message
+|player|p1|Alice||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|rated|
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Rockruff|Rockruff, L50, M|123/123
+|switch|p1b: Revavroom|Revavroom, L50, F|158/158
+|switch|p2a: Dudunsparce|Dudunsparce-Three-Segment, L50, F|230/230
+|switch|p2b: Sparky|Klawf, L50, F|151/151
+|turn|1
+@message
+|
+|t:|
+|switch|p2a: Chomp|Snorlax, L50, M|252/252
+|-singleturn|p1a: Rockruff|move: Beak Blast
+|move|p1b: Revavroom|Poison Gas|p2b: Sparky|[spread] p2a,p2b
+|-status|p2a: Chomp|psn
+|-status|p2b: Sparky|psn
+|move|p2b: Sparky|Jaw Lock|p1a: Rockruff
+|-damage|p1a: Rockruff|71/123
+|-activate|p2b: Sparky|trapped
+|-activate|p1a: Rockruff|trapped
+|move|p1a: Rockruff|Beak Blast|p2b: Sparky
+|-resisted|p2b: Sparky
+|-damage|p2b: Sparky|132/151 psn
+|
+|-damage|p2b: Sparky|114/151 psn|[from] psn
+|-damage|p2a: Chomp|221/252 psn|[from] psn
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|-terastallize|p2b: Sparky|Dark
+|-terastallize|p1a: Rockruff|Grass
+|move|p1b: Revavroom|Poison Gas|p2a: Chomp|[spread] 
+|-fail|p2a: Chomp|psn
+|-fail|p2b: Sparky|psn
+|move|p2b: Sparky|Lumina Crash|p2a: Chomp
+|-damage|p2a: Chomp|200/252 psn
+|-unboost|p2a: Chomp|spd|2
+|move|p1a: Rockruff|Stone Axe|p1b: Revavroom
+|-resisted|p1b: Revavroom
+|-damage|p1b: Revavroom|139/158
+|-sidestart|p2: Bob|move: Stealth Rock
+|move|p2a: Chomp|Torch Song|p1b: Revavroom
+|-supereffective|p1b: Revavroom
+|-damage|p1b: Revavroom|91/158
+|-boost|p2a: Chomp|spa|1
+|
+|-damage|p2b: Sparky|96/151 psn|[from] psn
+|-damage|p2a: Chomp|169/252 psn|[from] psn
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|switch|p1b: Mr. Bubbles|Corviknight, L50, F|198/198
+|switch|p2a: Dudunsparce|Dudunsparce-Three-Segment, L50, F|230/230
+|-damage|p2a: Dudunsparce|202/230|[from] Stealth Rock
+|move|p2b: Sparky|Lumina Crash|p2a: Dudunsparce
+|-damage|p2a: Dudunsparce|171/230
+|-unboost|p2a: Dudunsparce|spd|2
+|move|p1a: Rockruff|Metal Burst||[still]
+|-fail|p1a: Rockruff
+|
+|-damage|p2b: Sparky|78/151 psn|[from] psn
+|upkeep
+|turn|4
+@message
+|
+|t:|
+|move|p2a: Dudunsparce|Thrash|p1a: Rockruff
+|-damage|p1a: Rockruff|0 fnt
+|faint|p1a: Rockruff
+|move|p2b: Sparky|Jaw Lock|p2a: Dudunsparce
+|-damage|p2a: Dudunsparce|114/230
+|-activate|p2b: Sparky|trapped
+|-activate|p2a: Dudunsparce|trapped
+|move|p1b: Mr. Bubbles|Power Whip|p1: Rockruff|[notarget]
+|-fail|p1b: Mr. Bubbles
+|
+|-damage|p2b: Sparky|60/151 psn|[from] psn
+|upkeep
+@message
+|
+|t:|
+|switch|p1a: Revavroom|Revavroom, L50, F|91/158
+|turn|5
+@message
+|
+|t:|
+|switch|p1a: Dudunsparce|Dudunsparce, L50, M|209/209
+|move|p2a: Dudunsparce|Thrash|p1b: Mr. Bubbles|[from] lockedmove
+|-resisted|p1b: Mr. Bubbles
+|-damage|p1b: Mr. Bubbles|166/198
+|move|p2b: Sparky|Jaw Lock|p1b: Mr. Bubbles
+|-damage|p1b: Mr. Bubbles|120/198
+|-activate|p1b: Mr. Bubbles|trapped
+|move|p1b: Mr. Bubbles|Power Whip|p2a: Dudunsparce
+|-damage|p2a: Dudunsparce|48/230
+|
+|-damage|p2b: Sparky|42/151 psn|[from] psn
+|upkeep
+|turn|6
+@message
+|
+|win|Bob

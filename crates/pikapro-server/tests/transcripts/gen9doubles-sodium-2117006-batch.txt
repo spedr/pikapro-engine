@@ -1,0 +1,456 @@
+# gen9doubles-sodium-2117006-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay spectator
+@write
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"sodium,09b96eea89035ef8b8857e8172ed4878"}
+@write
+>player p1 {"name":"Alice","team":"Shroodle||FocusBand|Prankster|SeismicToss,CircleThrow,WoodHammer,LuminaCrash|Lonely|215,20,50,10,119,88||||50|,,,,,Grass]Chomp|TatsugiriStretchy||Commander|GigaDrain,NightShade|Quiet|58,57,124,23,43,82|F|||50|,,,,,Electric]Torkoal|||ShellArmor|ViseGrip,ScaryFace,DragonClaw,ShiftGear|Modest|228,,33,25,82,142|F|||50|,,,,,Electric]Sir Hops-a-Lot|Medicham|Eviolite|PurePower|DoubleEdge|Naughty|34,120,224,2,115,4||||50|,,,,,Stellar]Mr. Bubbles|Sableye|MicleBerry|Stall|Thief,PerishSong|Lax|89,104,3,43,186,63|||S|50|,,,,,Fairy]Arceus-Water|||Multitype|Sing|Adamant|252,161,46,15,2,33||||50|,,,,,Fire"}
+>player p2 {"name":"Bob","team":"Mewtwo|||Pressure|Feint|Lax|,3,29,247,8,206||||50|,,,,,Poison]Mr. Bubbles|AlcremieRainbowSwirl|GrassySeed|SweetVeil|GigatonHammer|Serious|6,38,138,198,118,10|F|||50|,,,,,Steel]Frosmoth||ShellBell|IceScales|Hurricane|Quiet|166,168,15,1,,159|M|||50|,,,,,Fire]Zoë|Drednaw|PasshoBerry|ShellArmor|NobleRoar,GrassKnot|Quiet|28,139,4,1,94,241|F|||50|,,,,,Psychic]Stunky||CloverSweet|Aftermath|Memento,Sing|Docile|,56,40,221,2,191||||50|,,,,,Steel]Persian-Alola||MindPlate|FurCoat|PsychicNoise,TriAttack,AirSlash|Bashful|181,161,74,24,33,27|M|||50|,,,,,Dragon"}
+@write
+>p2 switch 6, switch 4
+@write
+# a comment
+>p1 move 2 1, switch 3
+>p2 switch 6, move 1 -1
+@write
+>p1 move 2 2 terastallize, move Scary Face mega
+>p1 move 4 -1
+@write
+# a comment
+>p1 move 2 -2 terastallize, move 1 2
+@write
+>p2 undo
+@write
+>p2 move 3 -2 mega, move 1 1
+>p1 move seismictoss +1, move double-edge -1
+@write
+>p2 switch 6,move Grass Knot -1
+@write
+# a comment
+>p2 switch 6,move Grass Knot -1
+
+>p1 switch 5, pass
+@write
+
+>p1 move 1 1, move 1 2
+@write
+>p2 move 1 1, move 2 1
+@write
+>p2 switch 3, move 2 1 terastallize
+>p1 move 1 2, switch 6
+@write
+>p2 move 1 2, move 1 1
+@write
+>p1 default
+>p2 pass, switch stunky
+@write
+
+>p1 default
+@write
+>p2 switch Persian, switch 3
+@write
+>p2 pass
+@write
+>p2 switch Stunky
+>p1 move 2, switch 4
+@write
+>p2 default
+>p1 undo
+@write
+>p2 move Psychic Noise +1, switch stunky
+>p1 switch medicham,move 3 +2
+@write
+>p2 move 1 -2, switch 6
+@write
+>p1 switch arceus-water,move 2 -1
+@write
+>p1 move sing 2 dynamax, move 2 1
+@write
+>p2 move 3 -2, move 1 2
+# a comment
+>p1 move 1 1, move 1 1
+@write
+>p2 switch 3
+@write
+>reseed sodium,90fd8cf66dac6ff8
+@write
+>p1 pass, switch Mr. Bubbles
+>p1 switch 4, move 1 1
+@write
+>p2 move 1 -2, switch 4
+>p1 default
+@write
+# a comment
+>p2 switch 4, pass
+@write
+>p2 switch 6, move 1 -1
+>p2 switch 3
+@write
+>p1 switch SHROODLE
+@write
+>p1 switch TATSUGIRI
+>p1 switch 3, move 2
+@write
+>p2 move 1 -2, move 1 1
+# a comment
+>p1 move 1 2, move 2
+@write
+
+>p2 move hurricane 2, move 1
+@write
+>p1 switch 3, move 1 1
+@write
+>p2 switch 6,move 1 -1
+@write
+>p2 switch 6, pass
+>p1 pass, switch 3
+@write
+>p2 move 1 -2, move 1
+>p1 move Double-Edge +1,move nightshade -1
+@write
+# a comment
+>p1 switch TATSUGIRI
+>p1 switch 4, pass
+@write
+>p1 move Sing -2,move gigadrain 1
+@write
+>p2 move 1 2, pass
+@message
+|t:|
+|gametype|doubles
+@message
+|player|p1|Alice||
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Shroodle|Shroodle, L50, M|142/142
+|switch|p1b: Chomp|Tatsugiri-Stretchy, L50, F|150/150
+|switch|p2a: Mewtwo|Mewtwo, L50|181/181
+|switch|p2b: Mr. Bubbles|Alcremie-Rainbow-Swirl, L50, F|141/141
+|-ability|p2a: Mewtwo|Pressure
+|turn|1
+@message
+|
+|t:|
+|switch|p2a: Persian|Persian-Alola, L50, M|163/163
+|switch|p1b: Torkoal|Torkoal, L50, F|174/174
+|switch|p2b: Zoë|Drednaw, L50, F|169/169
+|move|p1a: Shroodle|Circle Throw|p2a: Persian
+|-supereffective|p2a: Persian
+|-damage|p2a: Persian|137/163
+|drag|p2a: Mewtwo|Mewtwo, L50|181/181
+|-ability|p2a: Mewtwo|Pressure
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|switch|p2a: Persian|Persian-Alola, L50, M|137/163
+|-terastallize|p1a: Shroodle|Grass
+|move|p2b: Zoë|Noble Roar|p2a: Persian
+|-unboost|p2a: Persian|atk|1
+|-unboost|p2a: Persian|spa|1
+|move|p1b: Torkoal|Vise Grip|p2b: Zoë
+|-resisted|p2b: Zoë
+|-damage|p2b: Zoë|159/169
+|move|p1a: Shroodle|Circle Throw|p1b: Torkoal
+|-damage|p1b: Torkoal|159/174
+|drag|p1b: Sir Hops-a-Lot|Medicham, L50, F|139/139
+|
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|switch|p2a: Mewtwo|Mewtwo, L50|181/181
+|-ability|p2a: Mewtwo|Pressure
+|move|p2b: Zoë|Grass Knot|p2a: Mewtwo
+|-damage|p2a: Mewtwo|151/181
+|move|p1a: Shroodle|Seismic Toss|p2a: Mewtwo
+|-damage|p2a: Mewtwo|101/181
+|move|p1b: Sir Hops-a-Lot|Double-Edge|p1a: Shroodle
+|-damage|p1a: Shroodle|0 fnt
+|faint|p1a: Shroodle
+|-damage|p1b: Sir Hops-a-Lot|92/139|[from] Recoil
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1a: Mr. Bubbles|Sableye, L50, F, shiny|136/136
+|turn|4
+@message
+|
+|t:|
+|move|p2a: Mewtwo|Feint|p1a: Mr. Bubbles
+|-immune|p1a: Mr. Bubbles
+|move|p2b: Zoë|Grass Knot|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|123/136
+|move|p1b: Sir Hops-a-Lot|Double-Edge|p2b: Zoë
+|-resisted|p2b: Zoë
+|-damage|p2b: Zoë|116/169
+|-damage|p1b: Sir Hops-a-Lot|78/139|[from] Recoil
+|move|p1a: Mr. Bubbles|Thief|p2a: Mewtwo
+|-supereffective|p2a: Mewtwo
+|-damage|p2a: Mewtwo|41/181
+|
+|upkeep
+|turn|5
+@message
+|
+|t:|
+|switch|p2a: Frosmoth|Frosmoth, L50, M|166/166
+|switch|p1b: Arceus|Arceus-Water, L50|227/227
+|-terastallize|p2b: Zoë|Psychic
+|move|p2b: Zoë|Grass Knot|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|109/136
+|move|p1a: Mr. Bubbles|Thief|p2b: Zoë
+|-supereffective|p2b: Zoë
+|-damage|p2b: Zoë|44/169
+|
+|upkeep
+|-start|p1b: Arceus|typechange|Normal|[silent]
+|turn|6
+@message
+|
+|t:|
+|move|p1b: Arceus|Sing|p2a: Frosmoth
+|-status|p2a: Frosmoth|slp|[from] move: Sing
+|move|p2b: Zoë|Noble Roar|p1a: Mr. Bubbles
+|-unboost|p1a: Mr. Bubbles|atk|1
+|-unboost|p1a: Mr. Bubbles|spa|1
+|cant|p2a: Frosmoth|slp
+|move|p1a: Mr. Bubbles|Thief|p2b: Zoë
+|-supereffective|p2b: Zoë
+|-damage|p2b: Zoë|0 fnt
+|faint|p2b: Zoë
+|
+|upkeep
+|
+|t:|
+|switch|p2b: Stunky|Stunky, L50, M|138/138
+|turn|7
+@message
+|
+|t:|
+|switch|p2b: Mewtwo|Mewtwo, L50|41/181
+|-ability|p2b: Mewtwo|Pressure
+|switch|p2a: Persian|Persian-Alola, L50, M|137/163
+|move|p1b: Arceus|Sing|p2b: Mewtwo|[miss]
+|-miss|p1b: Arceus|p2b: Mewtwo
+|move|p1a: Mr. Bubbles|Thief|p2a: Persian
+|-resisted|p2a: Persian
+|-damage|p2a: Persian|130/163
+|
+|upkeep
+|turn|8
+@message
+|
+|t:|
+|switch|p1b: Torkoal|Torkoal, L50, F|159/174
+|move|p2b: Mewtwo|Feint|p1b: Torkoal
+|-damage|p1b: Torkoal|148/174
+|move|p2a: Persian|Psychic Noise|p1b: Torkoal
+|-damage|p1b: Torkoal|112/174
+|-start|p1b: Torkoal|move: Heal Block
+|move|p1a: Mr. Bubbles|Perish Song|p1a: Mr. Bubbles
+|-start|p1a: Mr. Bubbles|perish3|[silent]
+|-start|p1b: Torkoal|perish3|[silent]
+|-start|p2a: Persian|perish3|[silent]
+|-start|p2b: Mewtwo|perish3|[silent]
+|-fieldactivate|move: Perish Song
+|
+|-start|p2b: Mewtwo|perish3
+|-start|p2a: Persian|perish3
+|-start|p1a: Mr. Bubbles|perish3
+|-start|p1b: Torkoal|perish3
+|upkeep
+|turn|9
+@message
+|
+|t:|
+|switch|p2b: Stunky|Stunky, L50, M|138/138
+|switch|p1a: Sir Hops-a-Lot|Medicham, L50, F|78/139
+|move|p2a: Persian|Psychic Noise|p1a: Sir Hops-a-Lot
+|-damage|p1a: Sir Hops-a-Lot|41/139
+|-start|p1a: Sir Hops-a-Lot|move: Heal Block
+|move|p1b: Torkoal|Dragon Claw|p2b: Stunky
+|-damage|p2b: Stunky|97/138
+|
+|-end|p1b: Torkoal|move: Heal Block
+|-start|p2a: Persian|perish2
+|-start|p1b: Torkoal|perish2
+|upkeep
+|turn|10
+@message
+|
+|t:|
+|switch|p2b: Frosmoth|Frosmoth, L50, M|166/166 slp
+|switch|p1a: Arceus|Arceus-Water, L50|227/227
+|move|p2a: Persian|Psychic Noise|p2b: Frosmoth
+|-damage|p2b: Frosmoth|149/166 slp
+|-start|p2b: Frosmoth|move: Heal Block
+|move|p1b: Torkoal|Scary Face|p1a: Arceus
+|-unboost|p1a: Arceus|spe|2
+|
+|-start|p2a: Persian|perish1
+|-start|p1b: Torkoal|perish1
+|upkeep
+|-start|p1a: Arceus|typechange|Normal|[silent]
+|turn|11
+@message
+|
+|t:|
+|move|p2a: Persian|Air Slash|p2b: Frosmoth
+|-supereffective|p2b: Frosmoth
+|-damage|p2b: Frosmoth|119/166 slp
+|-curestatus|p2b: Frosmoth|slp|[msg]
+|cant|p2b: Frosmoth|flinch
+|move|p1a: Arceus|Sing|p2a: Persian
+|-status|p2a: Persian|slp|[from] move: Sing
+|move|p1b: Torkoal|Vise Grip|p2a: Persian
+|-damage|p2a: Persian|118/163 slp
+|
+|-end|p2b: Frosmoth|move: Heal Block
+|-start|p2a: Persian|perish0
+|-start|p1b: Torkoal|perish0
+|upkeep
+|faint|p2a: Persian
+|faint|p1b: Torkoal
+@message
+|message|The battle's RNG was reset.
+@message
+|
+|t:|
+|switch|p2a: Mewtwo|Mewtwo, L50|41/181
+|switch|p1b: Mr. Bubbles|Sableye, L50, F, shiny|109/136
+|-ability|p2a: Mewtwo|Pressure
+|turn|12
+@message
+|
+|t:|
+|switch|p2b: Mr. Bubbles|Alcremie-Rainbow-Swirl, L50, F|141/141
+|switch|p1a: Sir Hops-a-Lot|Medicham, L50, F|41/139
+|move|p2a: Mewtwo|Feint|p2b: Mr. Bubbles
+|-damage|p2b: Mr. Bubbles|126/141
+|move|p1b: Mr. Bubbles|Thief|p2a: Mewtwo
+|-supereffective|p2a: Mewtwo
+|-crit|p2a: Mewtwo
+|-damage|p2a: Mewtwo|0 fnt
+|faint|p2a: Mewtwo
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p2a: Frosmoth|Frosmoth, L50, M|119/166
+|turn|13
+@message
+|
+|t:|
+|switch|p1a: Chomp|Tatsugiri-Stretchy, L50, F|150/150
+|move|p2a: Frosmoth|Hurricane|p2b: Mr. Bubbles
+|-damage|p2b: Mr. Bubbles|82/141
+|-heal|p2a: Frosmoth|124/166|[from] item: Shell Bell|[of] p2b: Mr. Bubbles
+|move|p2b: Mr. Bubbles|Gigaton Hammer|p1a: Chomp
+|-resisted|p1a: Chomp
+|-damage|p1a: Chomp|120/150
+|move|p1b: Mr. Bubbles|Perish Song|p1b: Mr. Bubbles
+|-start|p1a: Chomp|perish3|[silent]
+|-start|p1b: Mr. Bubbles|perish3|[silent]
+|-start|p2a: Frosmoth|perish3|[silent]
+|-start|p2b: Mr. Bubbles|perish3|[silent]
+|-fieldactivate|move: Perish Song
+|
+|-start|p1a: Chomp|perish3
+|-start|p2a: Frosmoth|perish3
+|-start|p2b: Mr. Bubbles|perish3
+|-start|p1b: Mr. Bubbles|perish3
+|upkeep
+|turn|14
+@message
+|
+|t:|
+|move|p1a: Chomp|Giga Drain|p2b: Mr. Bubbles
+|-damage|p2b: Mr. Bubbles|50/141
+|-heal|p1a: Chomp|136/150|[from] drain|[of] p2b: Mr. Bubbles
+|move|p2a: Frosmoth|Hurricane|p1b: Mr. Bubbles
+|-damage|p1b: Mr. Bubbles|37/136
+|-heal|p2a: Frosmoth|133/166|[from] item: Shell Bell|[of] p1b: Mr. Bubbles
+|-activate|p2b: Mr. Bubbles|move: Struggle
+|move|p2b: Mr. Bubbles|Struggle|p1b: Mr. Bubbles
+|-damage|p1b: Mr. Bubbles|19/136
+|-damage|p2b: Mr. Bubbles|15/141|[from] recoil
+|move|p1b: Mr. Bubbles|Perish Song||[still]
+|-fail|p1b: Mr. Bubbles
+|
+|-start|p1a: Chomp|perish2
+|-start|p2a: Frosmoth|perish2
+|-start|p2b: Mr. Bubbles|perish2
+|-start|p1b: Mr. Bubbles|perish2
+|-enditem|p1b: Mr. Bubbles|Micle Berry|[eat]
+|upkeep
+|turn|15
+@message
+|
+|t:|
+|switch|p1a: Sir Hops-a-Lot|Medicham, L50, F|41/139
+|switch|p2a: Stunky|Stunky, L50, M|97/138
+|move|p2b: Mr. Bubbles|Gigaton Hammer|p2a: Stunky
+|-damage|p2a: Stunky|16/138
+|move|p1b: Mr. Bubbles|Thief|p2a: Stunky
+|-enditem|p1b: Mr. Bubbles|Micle Berry
+|-resisted|p2a: Stunky
+|-damage|p2a: Stunky|0 fnt
+|-damage|p1b: Mr. Bubbles|0 fnt|[from] ability: Aftermath|[of] p2a: Stunky
+|faint|p2a: Stunky
+|faint|p1b: Mr. Bubbles
+|
+|-start|p2b: Mr. Bubbles|perish1
+|upkeep
+@message
+|
+|t:|
+|switch|p2a: Frosmoth|Frosmoth, L50, M|133/166
+|switch|p1b: Chomp|Tatsugiri-Stretchy, L50, F|136/150
+|turn|16
+@message
+|
+|t:|
+|move|p1a: Sir Hops-a-Lot|Double-Edge|p2a: Frosmoth
+|-damage|p2a: Frosmoth|4/166
+|-damage|p1a: Sir Hops-a-Lot|0 fnt|[from] Recoil
+|faint|p1a: Sir Hops-a-Lot
+|move|p1b: Chomp|Night Shade|p1: Sir Hops-a-Lot|[notarget]
+|-fail|p1b: Chomp
+|move|p2a: Frosmoth|Hurricane|p2b: Mr. Bubbles
+|-damage|p2b: Mr. Bubbles|0 fnt
+|faint|p2b: Mr. Bubbles
+|-heal|p2a: Frosmoth|5/166|[from] item: Shell Bell|[of] p2: Mr. Bubbles
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1a: Arceus|Arceus-Water, L50|227/227
+|-start|p1a: Arceus|typechange|Normal|[silent]
+|turn|17
+@message
+|
+|t:|
+|move|p1a: Arceus|Sing|p1b: Chomp|[miss]
+|-miss|p1a: Arceus|p1b: Chomp
+|move|p1b: Chomp|Giga Drain|p2a: Frosmoth
+|-resisted|p2a: Frosmoth
+|-damage|p2a: Frosmoth|0 fnt
+|-heal|p1b: Chomp|139/150|[from] drain|[of] p2a: Frosmoth
+|faint|p2a: Frosmoth
+|
+|win|Alice

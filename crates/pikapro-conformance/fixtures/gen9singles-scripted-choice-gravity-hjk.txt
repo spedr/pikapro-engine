@@ -1,0 +1,103 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Hitmonlee @ Choice Scarf
+Ability: Limber
+Level: 50
+Hardy Nature
+- High Jump Kick
+- Splash
+end
+team p2
+Blissey
+Ability: Natural Cure
+Hardy Nature
+- Gravity
+- Tackle
+end
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 move 2
+choice p1 move 1
+choice p2 move 2
+expect |t:|
+expect |gametype|singles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|1
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Hitmonlee|Hitmonlee, L50, M|125/125
+expect |switch|p1a: Hitmonlee|Hitmonlee, L50, M|125/125
+expect |split|p2
+expect |switch|p2a: Blissey|Blissey, F|651/651
+expect |switch|p2a: Blissey|Blissey, F|651/651
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Hitmonlee|High Jump Kick|p2a: Blissey
+expect |rng|100|85
+expect |rng|24|17
+expect |rng|16|15
+expect |-supereffective|p2a: Blissey
+expect |split|p2
+expect |-damage|p2a: Blissey|283/651
+expect |-damage|p2a: Blissey|283/651
+expect |move|p2a: Blissey|Gravity|p2a: Blissey
+expect |-fieldstart|move: Gravity
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |-activate|p1a: Hitmonlee|move: Struggle
+expect |move|p1a: Hitmonlee|Struggle|p2a: Blissey
+expect |rng|24|4
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Blissey|229/651
+expect |-damage|p2a: Blissey|229/651
+expect |split|p1
+expect |-damage|p1a: Hitmonlee|94/125|[from] recoil
+expect |-damage|p1a: Hitmonlee|94/125|[from] recoil
+expect |move|p2a: Blissey|Tackle|p1a: Hitmonlee
+expect |rng|100|70
+expect |rng|24|2
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Hitmonlee|54/125
+expect |-damage|p1a: Hitmonlee|54/125
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |-activate|p1a: Hitmonlee|move: Struggle
+expect |move|p1a: Hitmonlee|Struggle|p2a: Blissey
+expect |rng|24|9
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Blissey|174/651
+expect |-damage|p2a: Blissey|174/651
+expect |split|p1
+expect |-damage|p1a: Hitmonlee|23/125|[from] recoil
+expect |-damage|p1a: Hitmonlee|23/125|[from] recoil
+expect |move|p2a: Blissey|Tackle|p1a: Hitmonlee
+expect |rng|100|6
+expect |rng|24|14
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Hitmonlee|0 fnt
+expect |-damage|p1a: Hitmonlee|0 fnt
+expect |faint|p1a: Hitmonlee
+expect |
+expect |win|p2

@@ -1,0 +1,925 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed ff5c bfa5 a624 37bd
+genders drawn
+team p1
+Glimmora @ Soft Sand
+Ability: Toxic Debris
+Level: 50
+Tera Type: Ghost
+EVs: 45 HP / 18 Atk / 13 Def / 86 SpA / 3 SpD / 119 Spe
+Adamant Nature
+- Rest
+- Water Pledge
+- Encore
+
+Gible
+Ability: Sand Veil
+Level: 50
+Tera Type: Steel
+EVs: 27 HP / 6 Atk / 47 Def / 195 SpA / 210 SpD / 25 Spe
+Lax Nature
+- Wicked Blow
+- Psychic Fangs
+- String Shot
+
+X (Azelf) @ Unremarkable Teacup
+Ability: Levitate
+Level: 50
+Tera Type: Bug
+EVs: 45 HP / 252 Atk / 8 Def / 19 SpA / 57 SpD / 113 Spe
+Careful Nature
+- False Swipe
+- Arm Thrust
+- Stomp
+
+Nibbles (Probopass) (M) @ Terrain Extender
+Ability: Sturdy
+Level: 50
+Shiny: Yes
+Tera Type: Water
+EVs: 59 HP / 167 Atk / 129 Def / 12 SpA / 16 SpD / 88 Spe
+Quirky Nature
+- Fiery Dance
+- Revelation Dance
+- Victory Dance
+- Aqua Step
+
+Girafarig
+Ability: Inner Focus
+Level: 50
+Tera Type: Fighting
+EVs: 53 Atk / 193 Def / 1 SpA / 217 SpD / 45 Spe
+Calm Nature
+- Quiver Dance
+- Feather Dance
+- Teeter Dance
+- Petal Dance
+
+ThisNameIsFarTooLongToKeep (Oricorio-Pa'u)
+Ability: Dancer
+Level: 50
+Tera Type: Psychic
+EVs: 93 HP / 8 Atk / 5 Def / 175 SpA / 13 SpD / 183 Spe
+Quirky Nature
+- Quiver Dance
+- Feather Dance
+- Teeter Dance
+- Petal Dance
+end
+team p2
+Arceus-Poison @ Toxic Plate
+Ability: Multitype
+Level: 50
+Tera Type: Grass
+EVs: 78 HP / 63 Atk / 158 Def / 35 SpA / 151 SpD / 4 Spe
+Careful Nature
+- Fiery Dance
+- Revelation Dance
+- Victory Dance
+- Aqua Step
+
+Dragonair
+Ability: Shed Skin
+Level: 50
+Tera Type: Dark
+EVs: 38 Atk / 127 Def / 65 SpA / 234 SpD / 41 Spe
+Lax Nature
+- Hydro Steam
+- Lumina Crash
+- Blood Moon
+- Spacial Rend
+
+Lechonk
+Ability: Thick Fat
+Level: 50
+Tera Type: Ground
+EVs: 116 HP / 6 Atk / 203 Def / 143 SpD / 33 Spe
+Mild Nature
+- Transform
+- Meteor Mash
+- Stuff Cheeks
+
+Dragapult (M) @ Roseli Berry
+Ability: Cursed Body
+Level: 50
+Tera Type: Steel
+EVs: 17 HP / 90 Atk / 174 Def / 195 SpA / 16 Spe
+Naughty Nature
+- Quiver Dance
+- Feather Dance
+- Teeter Dance
+- Petal Dance
+
+Hippopotas @ Dubious Disc
+Ability: Sand Stream
+Level: 50
+Shiny: Yes
+Tera Type: Ground
+EVs: 197 HP / 71 Atk / 136 Def / 102 SpA / 3 Spe
+Rash Nature
+- Air Slash
+- Glacial Lance
+- Behemoth Bash
+
+X (Oricorio-Sensu)
+Ability: Dancer
+Level: 50
+Tera Type: Fairy
+EVs: 63 HP / 17 Atk / 24 Def / 53 SpA / 132 SpD / 159 Spe
+Bashful Nature
+- Quiver Dance
+- Feather Dance
+- Teeter Dance
+- Petal Dance
+end
+choice p1 switch 6, move 2 1
+choice p2 move 4 -2, move 1 2 terastallize
+choice p1 switch 5, move 2 2 terastallize
+choice p2 move 2 1, move 3 -1
+choice p1 move 3, move 2 1
+choice p2 move 1 1, move 1 1
+choice p1 move 2 1, move 1 2
+choice p2 move 2 1, move 3 2
+choice p1 switch 3 ,  skip
+choice p2 move 2 -2, switch 5
+choice p1 move 2 1, move 2 2
+choice p2 switch 5, move 1 -1
+choice p1 move 2 2, switch 6
+choice p2 move 3 1, move 3 -1
+choice p1 move 3 2, move 1
+choice p2 switch 6, pass
+choice p1 switch 4, switch 6
+choice p2 switch dragapult,move Glacial Lance
+choice p1 pass, switch 5
+choice p2 default
+choice p1 move 4 2, move 2 -1
+choice p2 pass, switch 3
+choice p1 switch 4, move 1
+choice p2 move Teeter Dance,move 1 1
+choice p1 move 2 1, move 4
+choice p2 move 4, move 1 2
+choice p2 pass,switch Arceus
+choice p1 move 3 2, move 4
+choice p2 move 1,switch oricorio-sensu
+choice p1 switch 6, pass
+choice p2 move 3, move 4
+choice p1 move 3 -2, move 1
+choice p2 pass, switch 4
+choice p1 move 2 1, move 1
+choice p2 move 1, move 1 2
+choice p1 move 2 2, move 4
+choice p2 move 2 -2, move 3
+choice p1 switch 4, move 1
+choice p2 default
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Glimmora|Glimmora, L50, F|164/164
+expect |switch|p1a: Glimmora|Glimmora, L50, F|164/164
+expect |split|p1
+expect |switch|p1b: Gible|Gible, L50, M|136/136
+expect |switch|p1b: Gible|Gible, L50, M|136/136
+expect |split|p2
+expect |switch|p2a: Arceus|Arceus-Poison, L50|205/205
+expect |switch|p2a: Arceus|Arceus-Poison, L50|205/205
+expect |split|p2
+expect |switch|p2b: Dragonair|Dragonair, L50, M|136/136
+expect |switch|p2b: Dragonair|Dragonair, L50, M|136/136
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: ThisNameIsFarTooLong|Oricorio-Pa'u, L50, M|162/162
+expect |switch|p1a: ThisNameIsFarTooLong|Oricorio-Pa'u, L50, M|162/162
+expect |-terastallize|p2b: Dragonair|Dark
+expect |move|p2a: Arceus|Aqua Step|p2b: Dragonair
+expect |rng|100|7
+expect |rng|24|12
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Dragonair|91/136
+expect |-damage|p2b: Dragonair|91/136
+expect |rng|100|16
+expect |-boost|p2a: Arceus|spe|1
+expect |-activate|p1a: ThisNameIsFarTooLong|ability: Dancer
+expect |move|p1a: ThisNameIsFarTooLong|Aqua Step|p2a: Arceus|[from] ability: Dancer
+expect |rng|100|39
+expect |rng|24|2
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Arceus|186/205
+expect |-damage|p2a: Arceus|186/205
+expect |rng|100|32
+expect |-boost|p1a: ThisNameIsFarTooLong|spe|1
+expect |move|p2b: Dragonair|Hydro Steam|p1b: Gible
+expect |rng|100|45
+expect |rng|24|23
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Gible|97/136
+expect |-damage|p1b: Gible|97/136
+expect |move|p1b: Gible|Psychic Fangs|p2a: Arceus
+expect |rng|100|24
+expect |rng|24|6
+expect |rng|16|1
+expect |-supereffective|p2a: Arceus
+expect |split|p2
+expect |-damage|p2a: Arceus|142/205
+expect |-damage|p2a: Arceus|142/205
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Girafarig|Girafarig, L50, F|145/145
+expect |switch|p1a: Girafarig|Girafarig, L50, F|145/145
+expect |-terastallize|p1b: Gible|Steel
+expect |move|p2a: Arceus|Revelation Dance|p1a: Girafarig
+expect |rng|100|63
+expect |rng|24|15
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Girafarig|78/145
+expect |-damage|p1a: Girafarig|78/145
+expect |move|p2b: Dragonair|Blood Moon|p2a: Arceus
+expect |rng|100|13
+expect |rng|24|19
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Arceus|107/205
+expect |-damage|p2a: Arceus|107/205
+expect |move|p1b: Gible|Psychic Fangs|p2b: Dragonair
+expect |-immune|p2b: Dragonair
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2a: Arceus|Fiery Dance|p1a: Girafarig
+expect |rng|100|78
+expect |rng|24|11
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Girafarig|42/145
+expect |-damage|p1a: Girafarig|42/145
+expect |rng|100|53
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Girafarig|Teeter Dance|p2b: Dragonair|[spread] p1b,p2a,p2b
+expect |rng|100|61
+expect |rng|100|95
+expect |rng|100|77
+expect |-start|p1b: Gible|confusion
+expect |rng|4|2
+expect |-start|p2a: Arceus|confusion
+expect |rng|4|2
+expect |-start|p2b: Dragonair|confusion
+expect |rng|4|0
+expect |-activate|p2b: Dragonair|confusion
+expect |rng|100|40
+expect |move|p2b: Dragonair|Hydro Steam|p1a: Girafarig
+expect |rng|100|8
+expect |rng|24|0
+expect |rng|16|13
+expect |-crit|p1a: Girafarig
+expect |split|p1
+expect |-damage|p1a: Girafarig|3/145
+expect |-damage|p1a: Girafarig|3/145
+expect |-activate|p1b: Gible|confusion
+expect |rng|100|23
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Gible|76/136|[from] confusion
+expect |-damage|p1b: Gible|76/136|[from] confusion
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |-activate|p2a: Arceus|confusion
+expect |rng|100|43
+expect |move|p2a: Arceus|Revelation Dance|p1a: Girafarig
+expect |rng|100|22
+expect |rng|24|16
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Girafarig|0 fnt
+expect |-damage|p1a: Girafarig|0 fnt
+expect |faint|p1a: Girafarig
+expect |-end|p2b: Dragonair|confusion
+expect |move|p2b: Dragonair|Blood Moon|p1b: Gible
+expect |rng|100|95
+expect |rng|24|13
+expect |rng|16|4
+expect |-resisted|p1b: Gible
+expect |split|p1
+expect |-damage|p1b: Gible|40/136
+expect |-damage|p1b: Gible|40/136
+expect |-activate|p1b: Gible|confusion
+expect |rng|100|66
+expect |move|p1b: Gible|Wicked Blow|p2b: Dragonair
+expect |rng|100|96
+expect |rng|16|6
+expect |-resisted|p2b: Dragonair
+expect |-crit|p2b: Dragonair
+expect |split|p2
+expect |-damage|p2b: Dragonair|71/136
+expect |-damage|p2b: Dragonair|71/136
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: X|Azelf, L50|156/156
+expect |switch|p1a: X|Azelf, L50|156/156
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Hippopotas|Hippopotas, L50, F, shiny|168/168
+expect |switch|p2b: Hippopotas|Hippopotas, L50, F, shiny|168/168
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p2b: Hippopotas
+expect |-activate|p2a: Arceus|confusion
+expect |rng|100|33
+expect |move|p2a: Arceus|Revelation Dance|p2b: Hippopotas
+expect |rng|100|61
+expect |rng|24|1
+expect |rng|16|14
+expect |-resisted|p2b: Hippopotas
+expect |split|p2
+expect |-damage|p2b: Hippopotas|96/168
+expect |-damage|p2b: Hippopotas|96/168
+expect |move|p1a: X|Arm Thrust|p2a: Arceus
+expect |rng|100|5
+expect |rng|20|6
+expect |rng|24|18
+expect |rng|16|5
+expect |-resisted|p2a: Arceus
+expect |split|p2
+expect |-damage|p2a: Arceus|103/205
+expect |-damage|p2a: Arceus|103/205
+expect |rng|24|8
+expect |rng|16|7
+expect |-resisted|p2a: Arceus
+expect |split|p2
+expect |-damage|p2a: Arceus|99/205
+expect |-damage|p2a: Arceus|99/205
+expect |-hitcount|p2a: Arceus|2
+expect |-activate|p1b: Gible|confusion
+expect |rng|100|11
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Gible|18/136|[from] confusion
+expect |-damage|p1b: Gible|18/136|[from] confusion
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p2
+expect |-damage|p2a: Arceus|87/205|[from] Sandstorm
+expect |-damage|p2a: Arceus|87/205|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: X|147/156|[from] Sandstorm
+expect |-damage|p1a: X|147/156|[from] Sandstorm
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Dragonair|Dragonair, L50, M, tera:Dark|71/136
+expect |switch|p2a: Dragonair|Dragonair, L50, M, tera:Dark|71/136
+expect |split|p1
+expect |switch|p1b: Glimmora|Glimmora, L50, F|164/164
+expect |switch|p1b: Glimmora|Glimmora, L50, F|164/164
+expect |move|p1a: X|Arm Thrust|p2b: Hippopotas
+expect |rng|100|16
+expect |rng|20|9
+expect |rng|24|6
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Hippopotas|85/168
+expect |-damage|p2b: Hippopotas|85/168
+expect |rng|24|14
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Hippopotas|75/168
+expect |-damage|p2b: Hippopotas|75/168
+expect |rng|24|17
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Hippopotas|63/168
+expect |-damage|p2b: Hippopotas|63/168
+expect |-hitcount|p2b: Hippopotas|3
+expect |move|p2b: Hippopotas|Air Slash|p2a: Dragonair
+expect |rng|100|13
+expect |rng|24|22
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Dragonair|49/136
+expect |-damage|p2a: Dragonair|49/136
+expect |rng|100|61
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: X|138/156|[from] Sandstorm
+expect |-damage|p1a: X|138/156|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Dragonair|41/136|[from] Sandstorm
+expect |-damage|p2a: Dragonair|41/136|[from] Sandstorm
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1a: X|Stomp|p2b: Hippopotas
+expect |rng|100|71
+expect |rng|24|8
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Hippopotas|22/168
+expect |-damage|p2b: Hippopotas|22/168
+expect |rng|100|72
+expect |move|p1b: Glimmora|Rest|p1b: Glimmora
+expect |-fail|p1b: Glimmora|heal
+expect |move|p2a: Dragonair|Blood Moon|p1a: X
+expect |rng|100|99
+expect |rng|24|5
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: X|88/156
+expect |-damage|p1a: X|88/156
+expect |move|p2b: Hippopotas|Behemoth Bash|p2a: Dragonair
+expect |rng|100|15
+expect |rng|24|0
+expect |rng|16|11
+expect |-crit|p2a: Dragonair
+expect |split|p2
+expect |-damage|p2a: Dragonair|0 fnt
+expect |-damage|p2a: Dragonair|0 fnt
+expect |faint|p2a: Dragonair
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: X|79/156|[from] Sandstorm
+expect |-damage|p1a: X|79/156|[from] Sandstorm
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Oricorio-Sensu, L50, M|158/158
+expect |switch|p2a: X|Oricorio-Sensu, L50, M|158/158
+expect |turn|8
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Nibbles|Probopass, L50, M, shiny|142/142
+expect |switch|p1a: Nibbles|Probopass, L50, M, shiny|142/142
+expect |split|p2
+expect |switch|p2a: Dragapult|Dragapult, L50, M|165/165
+expect |switch|p2a: Dragapult|Dragapult, L50, M|165/165
+expect |split|p1
+expect |switch|p1b: Gible|Gible, L50, M, tera:Steel|18/136
+expect |switch|p1b: Gible|Gible, L50, M, tera:Steel|18/136
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Hippopotas|Glacial Lance|p1b: Gible|[spread] p1a,p1b
+expect |rng|100|51
+expect |rng|100|13
+expect |rng|24|18
+expect |rng|16|8
+expect |-resisted|p1a: Nibbles
+expect |rng|24|6
+expect |rng|16|8
+expect |-resisted|p1b: Gible
+expect |split|p1
+expect |-damage|p1a: Nibbles|132/142
+expect |-damage|p1a: Nibbles|132/142
+expect |split|p1
+expect |-damage|p1b: Gible|0 fnt
+expect |-damage|p1b: Gible|0 fnt
+expect |faint|p1b: Gible
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p2
+expect |-damage|p2a: Dragapult|155/165|[from] Sandstorm
+expect |-damage|p2a: Dragapult|155/165|[from] Sandstorm
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Oricorio-Pa'u, L50, M|162/162
+expect |switch|p1b: ThisNameIsFarTooLong|Oricorio-Pa'u, L50, M|162/162
+expect |turn|9
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2a: Dragapult|Quiver Dance|p2a: Dragapult
+expect |-boost|p2a: Dragapult|spa|1
+expect |-boost|p2a: Dragapult|spd|1
+expect |-boost|p2a: Dragapult|spe|1
+expect |-activate|p1b: ThisNameIsFarTooLong|ability: Dancer
+expect |move|p1b: ThisNameIsFarTooLong|Quiver Dance|p1b: ThisNameIsFarTooLong|[from] ability: Dancer
+expect |-boost|p1b: ThisNameIsFarTooLong|spa|1
+expect |-boost|p1b: ThisNameIsFarTooLong|spd|1
+expect |-boost|p1b: ThisNameIsFarTooLong|spe|1
+expect |move|p1b: ThisNameIsFarTooLong|Feather Dance|p1a: Nibbles
+expect |rng|100|52
+expect |-unboost|p1a: Nibbles|atk|2
+expect |move|p1a: Nibbles|Aqua Step|p2b: Hippopotas
+expect |rng|100|18
+expect |rng|24|15
+expect |rng|16|4
+expect |-supereffective|p2b: Hippopotas
+expect |split|p2
+expect |-damage|p2b: Hippopotas|0 fnt
+expect |-damage|p2b: Hippopotas|0 fnt
+expect |rng|100|35
+expect |-boost|p1a: Nibbles|spe|1
+expect |faint|p2b: Hippopotas
+expect |-activate|p1b: ThisNameIsFarTooLong|ability: Dancer
+expect |rng|1|0
+expect |move|p1b: ThisNameIsFarTooLong|Aqua Step|p2a: Dragapult|[from] ability: Dancer
+expect |rng|100|92
+expect |rng|24|12
+expect |rng|16|11
+expect |-resisted|p2a: Dragapult
+expect |split|p2
+expect |-damage|p2a: Dragapult|143/165
+expect |-damage|p2a: Dragapult|143/165
+expect |rng|100|40
+expect |-boost|p1b: ThisNameIsFarTooLong|spe|1
+expect |rng|10|1
+expect |-start|p1b: ThisNameIsFarTooLong|Disable|Feather Dance|[from] ability: Cursed Body|[of] p2a: Dragapult
+expect |
+expect |-weather|none
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Lechonk|Lechonk, L50, F|144/144
+expect |switch|p2b: Lechonk|Lechonk, L50, F|144/144
+expect |turn|10
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: X|Azelf, L50|79/156
+expect |switch|p1a: X|Azelf, L50|79/156
+expect |rng|2|0
+expect |move|p1b: ThisNameIsFarTooLong|Quiver Dance|p1b: ThisNameIsFarTooLong
+expect |-boost|p1b: ThisNameIsFarTooLong|spa|1
+expect |-boost|p1b: ThisNameIsFarTooLong|spd|1
+expect |-boost|p1b: ThisNameIsFarTooLong|spe|1
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Dragapult|Teeter Dance|p1a: X|[spread] p2b,p1a,p1b
+expect |rng|100|50
+expect |rng|100|56
+expect |rng|100|75
+expect |-start|p2b: Lechonk|confusion
+expect |rng|4|1
+expect |-start|p1a: X|confusion
+expect |rng|4|0
+expect |-start|p1b: ThisNameIsFarTooLong|confusion
+expect |rng|4|3
+expect |-activate|p1b: ThisNameIsFarTooLong|ability: Dancer
+expect |rng|2|0
+expect |-activate|p1b: ThisNameIsFarTooLong|confusion
+expect |rng|100|93
+expect |move|p1b: ThisNameIsFarTooLong|Teeter Dance|p2a: Dragapult|[from] ability: Dancer|[spread] p1a,p2a,p2b
+expect |rng|100|14
+expect |rng|100|85
+expect |rng|100|13
+expect |-start|p2a: Dragapult|confusion
+expect |rng|4|3
+expect |-activate|p2b: Lechonk|confusion
+expect |rng|100|14
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Lechonk|129/144|[from] confusion
+expect |-damage|p2b: Lechonk|129/144|[from] confusion
+expect |
+expect |upkeep
+expect |turn|11
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |-activate|p1b: ThisNameIsFarTooLong|confusion
+expect |rng|100|14
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|144/162|[from] confusion
+expect |-damage|p1b: ThisNameIsFarTooLong|144/162|[from] confusion
+expect |rng|2|1
+expect |rng|2|1
+expect |-activate|p2a: Dragapult|confusion
+expect |rng|100|49
+expect |move|p2a: Dragapult|Petal Dance|p1b: ThisNameIsFarTooLong
+expect |rng|100|77
+expect |rng|24|20
+expect |rng|16|14
+expect |-resisted|p1b: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|117/162
+expect |-damage|p1b: ThisNameIsFarTooLong|117/162
+expect |rng|2|0
+expect |-activate|p1b: ThisNameIsFarTooLong|ability: Dancer
+expect |rng|2|1
+expect |-activate|p1b: ThisNameIsFarTooLong|confusion
+expect |rng|100|45
+expect |move|p1b: ThisNameIsFarTooLong|Petal Dance|p2b: Lechonk|[from] ability: Dancer
+expect |rng|100|8
+expect |rng|24|19
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Lechonk|0 fnt
+expect |-damage|p2b: Lechonk|0 fnt
+expect |rng|2|1
+expect |faint|p2b: Lechonk
+expect |-activate|p1a: X|confusion
+expect |rng|100|73
+expect |move|p1a: X|Arm Thrust|p2a: Dragapult
+expect |-immune|p2a: Dragapult
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Arceus|Arceus-Poison, L50|87/205
+expect |switch|p2b: Arceus|Arceus-Poison, L50|87/205
+expect |turn|12
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: X|Oricorio-Sensu, L50, M|158/158
+expect |switch|p2b: X|Oricorio-Sensu, L50, M|158/158
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |-activate|p1b: ThisNameIsFarTooLong|confusion
+expect |rng|100|44
+expect |move|p1b: ThisNameIsFarTooLong|Petal Dance|p2b: X
+expect |rng|100|1
+expect |rng|24|19
+expect |rng|16|4
+expect |-resisted|p2b: X
+expect |split|p2
+expect |-damage|p2b: X|91/158
+expect |-damage|p2b: X|91/158
+expect |rng|2|1
+expect |-activate|p2b: X|ability: Dancer
+expect |rng|2|0
+expect |move|p2b: X|Petal Dance|p1a: X|[from] ability: Dancer
+expect |rng|100|18
+expect |rng|24|15
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: X|23/156
+expect |-damage|p1a: X|23/156
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |-activate|p2a: Dragapult|confusion
+expect |rng|100|41
+expect |move|p2a: Dragapult|Petal Dance|p1a: X|[from] lockedmove
+expect |rng|100|45
+expect |rng|24|6
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: X|0 fnt
+expect |-damage|p1a: X|0 fnt
+expect |faint|p1a: X
+expect |-activate|p2b: X|ability: Dancer
+expect |rng|1|0
+expect |move|p2b: X|Petal Dance|p1b: ThisNameIsFarTooLong|[from] ability: Dancer
+expect |rng|100|0
+expect |rng|24|10
+expect |rng|16|14
+expect |-resisted|p1b: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|102/162
+expect |-damage|p1b: ThisNameIsFarTooLong|102/162
+expect |rng|2|0
+expect |-activate|p1b: ThisNameIsFarTooLong|ability: Dancer
+expect |rng|2|1
+expect |-end|p1b: ThisNameIsFarTooLong|confusion
+expect |move|p1b: ThisNameIsFarTooLong|Petal Dance|p2b: X|[from] ability: Dancer
+expect |rng|100|30
+expect |rng|24|15
+expect |rng|16|13
+expect |-resisted|p2b: X
+expect |split|p2
+expect |-damage|p2b: X|31/158
+expect |-damage|p2b: X|31/158
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Glimmora|Glimmora, L50, F|164/164
+expect |switch|p1a: Glimmora|Glimmora, L50, F|164/164
+expect |turn|13
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: ThisNameIsFarTooLong|Petal Dance|p2b: X|[from] lockedmove
+expect |rng|100|71
+expect |rng|24|21
+expect |rng|16|8
+expect |-resisted|p2b: X
+expect |split|p2
+expect |-damage|p2b: X|0 fnt
+expect |-damage|p2b: X|0 fnt
+expect |faint|p2b: X
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |-activate|p2a: Dragapult|confusion
+expect |rng|100|70
+expect |move|p2a: Dragapult|Teeter Dance|p1b: ThisNameIsFarTooLong|[spread] p1a,p1b
+expect |rng|100|85
+expect |rng|100|82
+expect |-start|p1a: Glimmora|confusion
+expect |rng|4|3
+expect |-start|p1b: ThisNameIsFarTooLong|confusion
+expect |rng|4|3
+expect |-activate|p1b: ThisNameIsFarTooLong|ability: Dancer
+expect |rng|1|0
+expect |-activate|p1b: ThisNameIsFarTooLong|confusion
+expect |rng|100|12
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|86/162|[from] confusion
+expect |-damage|p1b: ThisNameIsFarTooLong|86/162|[from] confusion
+expect |rng|2|0
+expect |-activate|p1a: Glimmora|confusion
+expect |rng|100|65
+expect |move|p1a: Glimmora|Encore|p1b: ThisNameIsFarTooLong
+expect |rng|100|3
+expect |-start|p1b: ThisNameIsFarTooLong|Encore
+expect |
+expect |-end|p1b: ThisNameIsFarTooLong|Disable
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Arceus|Arceus-Poison, L50|87/205
+expect |switch|p2b: Arceus|Arceus-Poison, L50|87/205
+expect |turn|14
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |-activate|p1b: ThisNameIsFarTooLong|confusion
+expect |rng|100|69
+expect |move|p1b: ThisNameIsFarTooLong|Petal Dance|p2a: Dragapult|[from] lockedmove
+expect |rng|100|41
+expect |rng|24|18
+expect |rng|16|6
+expect |-resisted|p2a: Dragapult
+expect |split|p2
+expect |-damage|p2a: Dragapult|88/165
+expect |-damage|p2a: Dragapult|88/165
+expect |rng|10|8
+expect |-activate|p2a: Dragapult|confusion
+expect |rng|100|30
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Dragapult|64/165|[from] confusion
+expect |-damage|p2a: Dragapult|64/165|[from] confusion
+expect |move|p2b: Arceus|Fiery Dance|p1b: ThisNameIsFarTooLong
+expect |rng|100|66
+expect |rng|24|23
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|63/162
+expect |-damage|p1b: ThisNameIsFarTooLong|63/162
+expect |rng|100|53
+expect |-activate|p1b: ThisNameIsFarTooLong|ability: Dancer
+expect |-activate|p1b: ThisNameIsFarTooLong|confusion
+expect |rng|100|33
+expect |move|p1b: ThisNameIsFarTooLong|Fiery Dance|p2b: Arceus|[from] ability: Dancer
+expect |rng|100|73
+expect |rng|24|3
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2b: Arceus|31/205
+expect |-damage|p2b: Arceus|31/205
+expect |rng|100|31
+expect |-boost|p1b: ThisNameIsFarTooLong|spa|1
+expect |-activate|p1a: Glimmora|confusion
+expect |rng|100|93
+expect |move|p1a: Glimmora|Water Pledge|p2a: Dragapult
+expect |rng|100|89
+expect |rng|24|4
+expect |rng|16|10
+expect |-resisted|p2a: Dragapult
+expect |split|p2
+expect |-damage|p2a: Dragapult|46/165
+expect |-damage|p2a: Dragapult|46/165
+expect |rng|10|5
+expect |
+expect |upkeep
+expect |turn|15
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |-activate|p1b: ThisNameIsFarTooLong|confusion
+expect |rng|100|59
+expect |move|p1b: ThisNameIsFarTooLong|Petal Dance|p2b: Arceus
+expect |rng|100|95
+expect |rng|24|15
+expect |rng|16|1
+expect |-resisted|p2b: Arceus
+expect |split|p2
+expect |-damage|p2b: Arceus|0 fnt
+expect |-damage|p2b: Arceus|0 fnt
+expect |rng|2|0
+expect |faint|p2b: Arceus
+expect |rng|1|0
+expect |-end|p2a: Dragapult|confusion
+expect |move|p2a: Dragapult|Feather Dance|p2: Arceus|[notarget]
+expect |-fail|p2a: Dragapult
+expect |rng|1|0
+expect |rng|1|0
+expect |-activate|p1a: Glimmora|confusion
+expect |rng|100|85
+expect |move|p1a: Glimmora|Water Pledge|p2a: Dragapult
+expect |rng|100|92
+expect |rng|24|9
+expect |rng|16|9
+expect |-resisted|p2a: Dragapult
+expect |split|p2
+expect |-damage|p2a: Dragapult|28/165
+expect |-damage|p2a: Dragapult|28/165
+expect |rng|10|6
+expect |
+expect |upkeep
+expect |turn|16
+expect |rng|1|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Nibbles|Probopass, L50, M, shiny|132/142
+expect |switch|p1a: Nibbles|Probopass, L50, M, shiny|132/142
+expect |rng|1|0
+expect |rng|1|0
+expect |-end|p1b: ThisNameIsFarTooLong|confusion
+expect |move|p1b: ThisNameIsFarTooLong|Petal Dance|p2a: Dragapult|[from] lockedmove
+expect |rng|100|52
+expect |rng|24|11
+expect |rng|16|11
+expect |-resisted|p2a: Dragapult
+expect |split|p2
+expect |-damage|p2a: Dragapult|0 fnt
+expect |-damage|p2a: Dragapult|0 fnt
+expect |rng|10|8
+expect |faint|p2a: Dragapult
+expect |-start|p1b: ThisNameIsFarTooLong|confusion|[fatigue]
+expect |rng|4|3
+expect |
+expect |win|p1

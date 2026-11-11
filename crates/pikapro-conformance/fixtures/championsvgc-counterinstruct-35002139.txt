@@ -1,0 +1,694 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed af6d 07c4 cdef 7121
+genders drawn
+team p1
+X (Spiritomb) (M)
+Ability: Pressure
+Level: 50
+Tera Type: Normal
+EVs: 19 HP / 25 Atk / 13 Def / 1 SpD / 8 Spe
+Naive Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Protect
+
+Beedrill (F)
+Ability: Sniper
+Level: 50
+Tera Type: Rock
+EVs: 15 HP / 14 Atk / 25 SpA / 12 Spe
+Lax Nature
+- Instruct
+- Metal Burst
+- Comeuppance
+- Mirror Coat
+
+Rillaboom (F) @ Sitrus Berry
+Ability: Overgrow
+Level: 50
+Shiny: Yes
+Tera Type: Dark
+EVs: 6 HP / 1 Def / 29 SpD / 30 Spe
+Impish Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Metal Burst
+
+Sir Hops-a-Lot (Rotom) @ Silver Powder
+Ability: Levitate
+Level: 50
+Tera Type: Dragon
+EVs: 19 HP / 13 Atk / 5 Def / 13 SpA / 16 SpD
+Naive Nature
+- Instruct
+- Counter
+- Mirror Coat
+- Comeuppance
+
+Typhlosion (M) @ Never-Melt Ice
+Ability: Flash Fire
+Level: 50
+Tera Type: Normal
+EVs: 5 HP / 5 Atk / 1 Def / 3 SpA / 30 SpD / 9 Spe
+Lonely Nature
+- Jaw Lock
+- Bitter Malice
+
+Mawile @ Mawilite
+Ability: Hyper Cutter
+Level: 50
+Tera Type: Ice
+EVs: 3 HP / 18 Atk / 30 Def / 3 SpA / 10 Spe
+Calm Nature
+- Steel Beam
+- Burning Jealousy
+- High Jump Kick
+- Low Kick
+end
+team p2
+Mr. Bubbles (Weavile) (M)
+Ability: Pickpocket
+Level: 50
+Tera Type: Grass
+EVs: 26 HP / 9 Atk / 26 SpA / 2 Spe
+Timid Nature
+- Instruct
+- Metal Burst
+- Comeuppance
+- Mirror Coat
+
+Zoë (Sceptile) @ Sceptilite
+Ability: Overgrow
+Level: 50
+Tera Type: Fairy
+EVs: 2 HP / 20 Def / 9 SpA / 23 SpD / 11 Spe
+Timid Nature
+- Instruct
+- Counter
+- Mirror Coat
+- Comeuppance
+
+Chomp (Dragonite) (M) @ Dragoninite
+Ability: Multiscale
+Level: 50
+Tera Type: Grass
+EVs: 19 HP / 7 Atk / 26 Def / 7 SpA / 2 SpD / 5 Spe
+Docile Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Protect
+
+Toxtricity
+Ability: Plus
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 27 HP / 1 Atk / 25 Def / 6 SpA / 6 SpD / 1 Spe
+Modest Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Metal Burst
+
+Arcanine (M)
+Ability: Justified
+Level: 50
+Tera Type: Bug
+EVs: 1 HP / 11 Def / 30 SpD / 23 Spe
+Hasty Nature
+- Court Change
+- Block
+- Psychic Terrain
+
+Aggron (M) @ Aggronite
+Ability: Rock Head
+Level: 50
+Tera Type: Flying
+EVs: 31 HP / 3 Def / 30 SpA
+Impish Nature
+- Power Whip
+- Low Sweep
+- Pounce
+- Psychic
+end
+choice p1 team 1456
+choice p2 team 6542
+choice p1 move 2, move 2
+choice p2 move 2 2 mega, move 2 1
+choice p1 move 1,move Comeuppance
+choice p2 move 4 2, move 2 1
+choice p1 default
+choice p2 move 4 2, switch 4
+choice p1 move 4, move 3
+choice p2 switch 3, move 2
+choice p1 move 1, switch 3
+choice p2 move 3 1, move 1 2
+choice p1 move 2, switch 4
+choice p2 move 2, move 1 1
+choice p1 move 3 2, move 1 -1
+choice p2 move 3 -2, switch 3
+choice p1 move mirrorcoat,move Steel Beam -1 mega
+choice p2 move 4, move Psychic -1
+choice p1 default
+choice p2 default
+choice p1 move 3 2, switch 4
+choice p1 switch 4, pass
+choice p2 move 3 2, move 2 -1
+choice p1 move 1 1, move 1 2
+choice p2 switch 3, move 1 2
+choice p1 move 2, move 1 1
+choice p2 move 3 ,  move 3 -1
+choice p1 move Counter, move 1 -1
+choice p2 move 1 -2, move 4 2
+choice p1 pass, move 1 2
+choice p2 switch 4, pass
+choice p1 pass, move 1 1
+choice p2 move 2 -2 ,  move 3 -1
+choice p1 pass, move 2 1
+choice p2 move 3, move 1 -1
+choice p1 pass, move 2 2
+choice p2 move 1, move 2 2
+choice p1 pass, move 1 2
+choice p2 move 2 2, move 3 2
+choice p1 skip, move jawlock +1
+choice p2 move block -2, move Power Whip 2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Spiritomb, L50, M|
+expect |poke|p1|Beedrill, L50, F|
+expect |poke|p1|Rillaboom, L50, F, shiny|
+expect |poke|p1|Rotom, L50|
+expect |poke|p1|Typhlosion, L50, M|
+expect |poke|p1|Mawile, L50, F|
+expect |poke|p2|Weavile, L50, M|
+expect |poke|p2|Sceptile, L50, M|
+expect |poke|p2|Dragonite, L50, M|
+expect |poke|p2|Toxtricity, L50, M, shiny|
+expect |poke|p2|Arcanine, L50, M|
+expect |poke|p2|Aggron, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: X|Spiritomb, L50, M|144/144
+expect |switch|p1a: X|Spiritomb, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Sir Hops-a-Lot|Rotom, L50|144/144
+expect |switch|p1b: Sir Hops-a-Lot|Rotom, L50|100/100
+expect |split|p2
+expect |switch|p2a: Aggron|Aggron, L50, M|176/176
+expect |switch|p2a: Aggron|Aggron, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Arcanine|Arcanine, L50, M|166/166
+expect |switch|p2b: Arcanine|Arcanine, L50, M|100/100
+expect |-ability|p1a: X|Pressure
+expect |turn|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |detailschange|p2a: Aggron|Aggron-Mega, L50, M
+expect |-mega|p2a: Aggron|Aggron|Aggronite
+expect |move|p2b: Arcanine|Block||[still]
+expect |-fail|p2b: Arcanine
+expect |move|p2a: Aggron|Low Sweep|p1b: Sir Hops-a-Lot
+expect |-immune|p1b: Sir Hops-a-Lot
+expect |move|p1b: Sir Hops-a-Lot|Counter||[still]
+expect |-fail|p1b: Sir Hops-a-Lot
+expect |move|p1a: X|Mirror Coat||[still]
+expect |-fail|p1a: X
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2b: Arcanine|Block||[still]
+expect |-fail|p2b: Arcanine
+expect |move|p1b: Sir Hops-a-Lot|Comeuppance||[still]
+expect |-fail|p1b: Sir Hops-a-Lot
+expect |move|p2a: Aggron|Psychic|p1b: Sir Hops-a-Lot
+expect |rng|100|8
+expect |rng|24|21
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Sir Hops-a-Lot|106/144
+expect |-damage|p1b: Sir Hops-a-Lot|73/100
+expect |rng|100|98
+expect |move|p1a: X|Counter||[still]
+expect |-fail|p1a: X
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zoë|Sceptile, L50, M|147/147
+expect |switch|p2b: Zoë|Sceptile, L50, M|100/100
+expect |move|p1b: Sir Hops-a-Lot|Instruct||[still]
+expect |-fail|p1b: Sir Hops-a-Lot
+expect |move|p2a: Aggron|Psychic|p1b: Sir Hops-a-Lot
+expect |rng|100|55
+expect |rng|24|6
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Sir Hops-a-Lot|68/144
+expect |-damage|p1b: Sir Hops-a-Lot|47/100
+expect |rng|100|34
+expect |move|p1a: X|Counter||[still]
+expect |-fail|p1a: X
+expect |
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Toxtricity|Toxtricity, L50, M, shiny|177/177
+expect |switch|p2a: Toxtricity|Toxtricity, L50, M, shiny|100/100
+expect |move|p1a: X|Protect|p1a: X
+expect |-singleturn|p1a: X|Protect
+expect |move|p2b: Zoë|Counter||[still]
+expect |-fail|p2b: Zoë
+expect |move|p1b: Sir Hops-a-Lot|Mirror Coat||[still]
+expect |-fail|p1b: Sir Hops-a-Lot
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Typhlosion|Typhlosion, L50, M|158/158
+expect |switch|p1b: Typhlosion|Typhlosion, L50, M|100/100
+expect |move|p2b: Zoë|Instruct||[still]
+expect |-fail|p2b: Zoë
+expect |move|p2a: Toxtricity|Instruct|p1a: X
+expect |-singleturn|p1a: X|move: Instruct|[of] p2a: Toxtricity
+expect |move|p1a: X|Protect|p1a: X
+expect |rng|3|0
+expect |-singleturn|p1a: X|Protect
+expect |move|p1a: X|Counter||[still]
+expect |-fail|p1a: X
+expect |
+expect |rng|3|1
+expect |rng|2|0
+expect |upkeep
+expect |turn|6
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Mawile|Mawile, L50, F|128/128
+expect |switch|p1b: Mawile|Mawile, L50, F|100/100
+expect |move|p2b: Zoë|Instruct|p1a: X
+expect |-singleturn|p1a: X|move: Instruct|[of] p2b: Zoë
+expect |move|p2a: Toxtricity|Mirror Coat||[still]
+expect |-fail|p2a: Toxtricity
+expect |move|p1a: X|Mirror Coat||[still]
+expect |-fail|p1a: X
+expect |
+expect |rng|3|2
+expect |rng|2|0
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Aggron|Aggron-Mega, L50, M|176/176
+expect |switch|p2b: Aggron|Aggron-Mega, L50, M|100/100
+expect |move|p2a: Toxtricity|Instruct||[still]
+expect |-fail|p2a: Toxtricity
+expect |move|p1b: Mawile|Steel Beam|p1a: X
+expect |rng|100|10
+expect |rng|24|18
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: X|90/144
+expect |-damage|p1a: X|62/100
+expect |split|p1
+expect |-damage|p1b: Mawile|64/128|[from] steelbeam
+expect |-damage|p1b: Mawile|50/100y|[from] steelbeam
+expect |move|p1a: X|Instruct||[still]
+expect |-fail|p1a: X
+expect |
+expect |upkeep
+expect |turn|8
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |detailschange|p1b: Mawile|Mawile-Mega, L50, F
+expect |-mega|p1b: Mawile|Mawile|Mawilite
+expect |move|p2a: Toxtricity|Metal Burst||[still]
+expect |-fail|p2a: Toxtricity
+expect |move|p1b: Mawile|Steel Beam|p1a: X
+expect |rng|100|46
+expect |rng|24|12
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: X|36/144
+expect |-damage|p1a: X|25/100
+expect |split|p1
+expect |-damage|p1b: Mawile|0 fnt|[from] steelbeam
+expect |-damage|p1b: Mawile|0 fnt|[from] steelbeam
+expect |faint|p1b: Mawile
+expect |move|p2b: Aggron|Psychic|p2a: Toxtricity
+expect |rng|100|67
+expect |rng|24|17
+expect |rng|16|11
+expect |-supereffective|p2a: Toxtricity|1
+expect |split|p2
+expect |-damage|p2a: Toxtricity|103/177
+expect |-damage|p2a: Toxtricity|58/100
+expect |rng|100|92
+expect |move|p1a: X|Mirror Coat||[still]
+expect |-fail|p1a: X
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sir Hops-a-Lot|Rotom, L50|68/144
+expect |switch|p1b: Sir Hops-a-Lot|Rotom, L50|47/100
+expect |turn|9
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Typhlosion|Typhlosion, L50, M|158/158
+expect |switch|p1b: Typhlosion|Typhlosion, L50, M|100/100
+expect |move|p2b: Aggron|Power Whip|p1a: X
+expect |rng|100|7
+expect |rng|24|3
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: X|0 fnt
+expect |-damage|p1a: X|0 fnt
+expect |faint|p1a: X
+expect |move|p2a: Toxtricity|Counter||[still]
+expect |-fail|p2a: Toxtricity
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sir Hops-a-Lot|Rotom, L50|68/144
+expect |switch|p1a: Sir Hops-a-Lot|Rotom, L50|47/100
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1b: Typhlosion|Jaw Lock|p2b: Aggron
+expect |rng|100|6
+expect |rng|24|19
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Aggron|161/176
+expect |-damage|p2b: Aggron|91/100
+expect |-activate|p1b: Typhlosion|trapped
+expect |-activate|p2b: Aggron|trapped
+expect |move|p1a: Sir Hops-a-Lot|Instruct|p2a: Toxtricity
+expect |-singleturn|p2a: Toxtricity|move: Instruct|[of] p1a: Sir Hops-a-Lot
+expect |move|p2a: Toxtricity|Instruct|p1b: Typhlosion
+expect |-singleturn|p1b: Typhlosion|move: Instruct|[of] p2a: Toxtricity
+expect |move|p1b: Typhlosion|Jaw Lock|p2b: Aggron
+expect |rng|100|30
+expect |rng|24|16
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Aggron|146/176
+expect |-damage|p2b: Aggron|82/100
+expect |move|p2b: Aggron|Low Sweep|p2a: Toxtricity
+expect |rng|100|77
+expect |rng|24|4
+expect |rng|16|4
+expect |-resisted|p2a: Toxtricity|1
+expect |split|p2
+expect |-damage|p2a: Toxtricity|84/177
+expect |-damage|p2a: Toxtricity|47/100
+expect |rng|100|67
+expect |-unboost|p2a: Toxtricity|spe|1
+expect |
+expect |upkeep
+expect |turn|11
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoë|Sceptile, L50, M|147/147
+expect |switch|p2a: Zoë|Sceptile, L50, M|100/100
+expect |move|p1b: Typhlosion|Jaw Lock|p2a: Zoë
+expect |rng|100|59
+expect |rng|24|14
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Zoë|110/147
+expect |-damage|p2a: Zoë|74/100
+expect |-activate|p2a: Zoë|trapped
+expect |move|p2b: Aggron|Power Whip|p1b: Typhlosion
+expect |rng|100|33
+expect |rng|24|23
+expect |rng|16|9
+expect |-resisted|p1b: Typhlosion|1
+expect |split|p1
+expect |-damage|p1b: Typhlosion|115/158
+expect |-damage|p1b: Typhlosion|72/100
+expect |move|p1a: Sir Hops-a-Lot|Counter||[still]
+expect |-fail|p1a: Sir Hops-a-Lot
+expect |
+expect |upkeep
+expect |turn|12
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1b: Typhlosion|Jaw Lock|p1a: Sir Hops-a-Lot
+expect |rng|100|56
+expect |rng|24|10
+expect |rng|16|8
+expect |-supereffective|p1a: Sir Hops-a-Lot|1
+expect |split|p1
+expect |-damage|p1a: Sir Hops-a-Lot|0 fnt
+expect |-damage|p1a: Sir Hops-a-Lot|0 fnt
+expect |faint|p1a: Sir Hops-a-Lot
+expect |rng|1|0
+expect |move|p2b: Aggron|Pounce|p2a: Zoë
+expect |rng|100|48
+expect |rng|24|10
+expect |rng|16|7
+expect |-supereffective|p2a: Zoë|1
+expect |split|p2
+expect |-damage|p2a: Zoë|46/147
+expect |-damage|p2a: Zoë|31/100
+expect |rng|100|94
+expect |-unboost|p2a: Zoë|spe|1
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2a: Zoë|Mirror Coat||[still]
+expect |-fail|p2a: Zoë
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1b: Typhlosion|Jaw Lock|p2b: Aggron
+expect |rng|100|17
+expect |rng|24|10
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Aggron|131/176
+expect |-damage|p2b: Aggron|74/100
+expect |move|p2a: Zoë|Instruct|p2b: Aggron
+expect |-singleturn|p2b: Aggron|move: Instruct|[of] p2a: Zoë
+expect |move|p2b: Aggron|Pounce|p2a: Zoë
+expect |rng|100|39
+expect |rng|24|17
+expect |rng|16|8
+expect |-supereffective|p2a: Zoë|1
+expect |split|p2
+expect |-damage|p2a: Zoë|0 fnt
+expect |-damage|p2a: Zoë|0 fnt
+expect |rng|100|51
+expect |faint|p2a: Zoë
+expect |move|p2b: Aggron|Psychic|p1b: Typhlosion
+expect |rng|100|36
+expect |rng|24|1
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Typhlosion|86/158
+expect |-damage|p1b: Typhlosion|54/100
+expect |rng|100|35
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Arcanine|Arcanine, L50, M|166/166
+expect |switch|p2a: Arcanine|Arcanine, L50, M|100/100
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p2a: Arcanine|Block||[still]
+expect |-fail|p2a: Arcanine
+expect |move|p1b: Typhlosion|Jaw Lock|p2a: Arcanine
+expect |rng|100|35
+expect |rng|24|13
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Arcanine|126/166
+expect |-damage|p2a: Arcanine|75/100
+expect |-activate|p2a: Arcanine|trapped
+expect |-ability|p2a: Arcanine|Justified|boost
+expect |-boost|p2a: Arcanine|atk|1
+expect |move|p2b: Aggron|Pounce|p2a: Arcanine
+expect |rng|100|47
+expect |rng|24|12
+expect |rng|16|5
+expect |-resisted|p2a: Arcanine|1
+expect |split|p2
+expect |-damage|p2a: Arcanine|109/166
+expect |-damage|p2a: Arcanine|65/100
+expect |rng|100|96
+expect |-unboost|p2a: Arcanine|spe|1
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p1b: Typhlosion|Bitter Malice|p2a: Arcanine
+expect |rng|100|18
+expect |rng|24|20
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Arcanine|78/166
+expect |-damage|p2a: Arcanine|46/100
+expect |rng|100|45
+expect |-unboost|p2a: Arcanine|atk|1
+expect |move|p2a: Arcanine|Psychic Terrain|p2a: Arcanine
+expect |-fieldstart|move: Psychic Terrain
+expect |move|p2b: Aggron|Power Whip|p2a: Arcanine
+expect |rng|100|2
+expect |rng|24|20
+expect |rng|16|4
+expect |-resisted|p2a: Arcanine|1
+expect |split|p2
+expect |-damage|p2a: Arcanine|37/166
+expect |-damage|p2a: Arcanine|22/100
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p1b: Typhlosion|Bitter Malice|p2b: Aggron
+expect |rng|100|99
+expect |rng|24|3
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Aggron|89/176
+expect |-damage|p2b: Aggron|50/100g
+expect |rng|100|82
+expect |-unboost|p2b: Aggron|atk|1
+expect |move|p2a: Arcanine|Court Change||[still]
+expect |-fail|p2a: Arcanine
+expect |move|p2b: Aggron|Low Sweep|p1b: Typhlosion
+expect |rng|100|99
+expect |rng|24|0
+expect |rng|16|13
+expect |-crit|p1b: Typhlosion
+expect |split|p1
+expect |-damage|p1b: Typhlosion|18/158
+expect |-damage|p1b: Typhlosion|11/100
+expect |rng|100|4
+expect |-unboost|p1b: Typhlosion|spe|1
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p2a: Arcanine|Block||[still]
+expect |-fail|p2a: Arcanine
+expect |move|p1b: Typhlosion|Jaw Lock|p2b: Aggron
+expect |rng|100|66
+expect |rng|24|18
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Aggron|72/176
+expect |-damage|p2b: Aggron|40/100
+expect |move|p2b: Aggron|Pounce|p1b: Typhlosion
+expect |rng|100|20
+expect |rng|24|3
+expect |rng|16|15
+expect |-resisted|p1b: Typhlosion|1
+expect |split|p1
+expect |-damage|p1b: Typhlosion|7/158
+expect |-damage|p1b: Typhlosion|4/100
+expect |rng|100|67
+expect |-unboost|p1b: Typhlosion|spe|1
+expect |
+expect |upkeep
+expect |turn|18
+expect |
+expect |t:|
+expect |move|p2a: Arcanine|Block||[still]
+expect |-fail|p2a: Arcanine
+expect |move|p2b: Aggron|Power Whip|p1b: Typhlosion
+expect |rng|100|34
+expect |rng|24|22
+expect |rng|16|14
+expect |-resisted|p1b: Typhlosion|1
+expect |split|p1
+expect |-damage|p1b: Typhlosion|0 fnt
+expect |-damage|p1b: Typhlosion|0 fnt
+expect |faint|p1b: Typhlosion
+expect |
+expect |win|p2

@@ -1,0 +1,803 @@
+# gen9vgc-gen5-2121018-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@write
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,bf097477cea9fd24"}
+@write
+>player p1 {"name":"Alice","team":"Ninetales||ThroatSpray|FlashFire|SeedBomb,AerialAce,ShiftGear,ClangingScales|Naughty|1,139,26,239,12,86|M|||50|,,,,,Stellar]Chomp|Leafeon||LeafGuard|Spite|Jolly|129,178,191,9,1,|F|||50|,,,,,Psychic]Pikachu|Grumpig|ChoiceSpecs|ThickFat|ThunderCage,FilletAway|Naughty|224,,31,73,181,1|F|||50|,,,,,Bug]Flapple||RedCard|Gluttony|Disable|Bold|203,27,57,,16,179||||50|,,,,,Poison]Mr. Bubbles|Rufflet|LifeOrb|ArenaTrap|AerialAce,HornAttack,Mist|Adamant|5,234,127,61,78,3|M|||50|,,,,,Fighting]Eevee||AirBalloon|RunAway|BanefulBunker,SandAttack,MudSlap|Rash|22,224,1,52,132,35||||50|,,,,,Rock","avatar":"lucas"}
+@write
+>player p2 {"name":"Bob","team":[{"name":"Arceus-Fighting","species":"Arceus-Fighting","item":"","ability":"Multitype","moves":["Blood Moon","Taunt","Superpower","Parabolic Charge"],"nature":"Naive","evs":{"hp":85,"atk":19,"def":67,"spa":91,"spd":188,"spe":38},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock"},{"name":"Nibbles","species":"Cacturne","item":"Throat Spray","ability":"Arena Trap","moves":["Toxic"],"nature":"Bashful","evs":{"hp":89,"atk":83,"def":95,"spa":9,"spd":12,"spe":188},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost"},{"name":"Quagsire","species":"Quagsire","item":"","ability":"Damp","moves":["Draining Kiss","Powder Snow","Torment"],"nature":"Naive","evs":{"hp":45,"atk":200,"def":117,"spa":9,"spd":139,"spe":0},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison"},{"name":"X","species":"Vespiquen","item":"","ability":"Pressure","moves":["Chilly Reception","Disable","Sketch"],"nature":"Serious","evs":{"hp":3,"atk":149,"def":85,"spa":198,"spd":72,"spe":1},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water"},{"name":"Servine","species":"Servine","item":"Cheri Berry","ability":"Overgrow","moves":["Imprison"],"nature":"Calm","evs":{"hp":88,"atk":219,"def":9,"spa":2,"spd":2,"spe":188},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice"},{"name":"Marshtomp","species":"Marshtomp","item":"Oval Stone","ability":"Damp","moves":["Thunder Shock","Water Gun","Torment"],"nature":"Lax","evs":{"hp":74,"atk":19,"def":101,"spa":58,"spd":12,"spe":246},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost"}]}
+@write
+>p1 team 4263
+@write
+>p2 team 4165
+@write
+>reseed gen5,5aa6eb17b88120ae
+@write
+>p1 switch 4, move 1 -1 terastallize
+@write
+>p2 move 3 1, move 3 -1 terastallize
+@write
+>p1 move 1 2, move 1 -1
+@write
+>p2 move Disable -2 mega
+@write
+>p2 move 2 1, move 3 2
+@write
+>p2 move 2 2, move 2 1
+@write
+>p1 switch 3, move 1 -1
+@write
+>p1 move 3 1, switch 4
+@write
+>p2 move Chilly Reception 1 terastallize, move 2 1
+@write
+>p2 undo
+@write
+>p2 move 2 2, move 1 1
+@write
+>p1 Move 1
+@write
+>p1 switch 3
+@write
+>p1 move filletaway,move Disable 2
+@write
+>p2 switch SERVINE
+@write
+>p2 default, move 2 -1
+@write
+>forcetie
+@message
+update
+|t:|
+|gametype|doubles
+@message
+update
+|player|p1|Alice|lucas|
+@message
+update
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Ninetales, L50, M|
+|poke|p1|Leafeon, L50, F|
+|poke|p1|Grumpig, L50, F|
+|poke|p1|Flapple, L50, M|
+|poke|p1|Rufflet, L50, M|
+|poke|p1|Eevee, L50, F|
+|poke|p2|Arceus-Fighting, L50|
+|poke|p2|Cacturne, L50, M|
+|poke|p2|Quagsire, L50, M|
+|poke|p2|Vespiquen, L50, F|
+|poke|p2|Servine, L50, F|
+|poke|p2|Marshtomp, L50, F|
+|teampreview|4
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Ninetales","details":"Ninetales, L50, M","condition":"148/148","active":true,"stats":{"atk":124,"def":98,"spa":131,"spd":109,"spe":131},"moves":["seedbomb","aerialace","shiftgear","clangingscales"],"baseAbility":"flashfire","item":"throatspray","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"156/156","active":true,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":false,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":false,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Rufflet, L50, M","condition":"146/146","active":false,"stats":{"atk":145,"def":86,"spa":58,"spd":80,"spe":80},"moves":["aerialace","hornattack","mist"],"baseAbility":"arenatrap","item":"lifeorb","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"133/133","active":false,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"airballoon","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"206/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Nibbles","details":"Cacturne, L50, M, shiny","condition":"156/156","active":true,"stats":{"atk":145,"def":92,"spa":136,"spd":82,"spe":99},"moves":["toxic"],"baseAbility":"arenatrap","item":"throatspray","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Quagsire","details":"Quagsire, L50, M","condition":"176/176","active":false,"stats":{"atk":130,"def":120,"spa":86,"spd":91,"spe":60},"moves":["drainingkiss","powdersnow","torment"],"baseAbility":"damp","item":"","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"145/145","active":false,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|switch|p1a: Flapple|Flapple, L50, M|170/170
+|switch|p1a: Flapple|Flapple, L50, M|170/170
+|split|p1
+|switch|p1b: Chomp|Leafeon, L50, F|156/156
+|switch|p1b: Chomp|Leafeon, L50, F|156/156
+|split|p2
+|switch|p2a: X|Vespiquen, L50, F|145/145
+|switch|p2a: X|Vespiquen, L50, F|145/145
+|split|p2
+|switch|p2b: Arceus|Arceus-Fighting, L50|206/206
+|switch|p2b: Arceus|Arceus-Fighting, L50|206/206
+|-ability|p2a: X|Pressure
+|-start|p2b: Arceus|typechange|Normal|[silent]
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Poison"},{"moves":[{"move":"Spite","id":"spite","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Psychic"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":true,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"156/156","active":true,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"133/133","active":false,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"airballoon","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":false,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Chilly Reception","id":"chillyreception","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}],"canTerastallize":"Water"},{"moves":[{"move":"Blood Moon","id":"bloodmoon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Parabolic Charge","id":"paraboliccharge","pp":32,"maxpp":32,"target":"allAdjacent","disabled":false}],"canTerastallize":"Rock"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"145/145","active":true,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"206/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+update
+|message|The battle's RNG was reset.
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Pikachu|Grumpig, L50, F|183/183
+|switch|p1a: Pikachu|Grumpig, L50, F|183/183
+|-terastallize|p2b: Arceus|Rock
+|-terastallize|p1b: Chomp|Psychic
+|move|p2b: Arceus|Superpower|p2a: X
+|-resisted|p2a: X
+|split|p2
+|-damage|p2a: X|132/145
+|-damage|p2a: X|132/145
+|-unboost|p2b: Arceus|atk|1
+|-unboost|p2b: Arceus|def|1
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p2a: X|Sketch||[still]
+|-fail|p2a: X
+|
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Thunder Cage","id":"thundercage","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Fillet Away","id":"filletaway","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Spite","id":"spite","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":true,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"156/156","active":true,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":"Psychic"},{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"133/133","active":false,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"airballoon","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":false,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Chilly Reception","id":"chillyreception","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":0,"maxpp":1,"target":"normal","disabled":true}]},{"moves":[{"move":"Blood Moon","id":"bloodmoon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Parabolic Charge","id":"paraboliccharge","pp":32,"maxpp":32,"target":"allAdjacent","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"132/145","active":true,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"206/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: X can't mega evolve
+@message
+update
+|
+|t:|
+|move|p2b: Arceus|Superpower|p1b: Chomp
+|-resisted|p1b: Chomp
+|split|p1
+|-damage|p1b: Chomp|142/156
+|-damage|p1b: Chomp|142/156
+|-unboost|p2b: Arceus|atk|1
+|-unboost|p2b: Arceus|def|1
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p1a: Pikachu|Thunder Cage|p2b: Arceus
+|split|p2
+|-damage|p2b: Arceus|166/206
+|-damage|p2b: Arceus|166/206
+|-activate|p2b: Arceus|move: Thunder Cage|[of] p1a: Pikachu
+|move|p2a: X|Disable|p1a: Pikachu
+|-start|p1a: Pikachu|Disable|Thunder Cage
+|
+|split|p2
+|-damage|p2b: Arceus|141/206|[from] move: Thunder Cage|[partiallytrapped]
+|-damage|p2b: Arceus|141/206|[from] move: Thunder Cage|[partiallytrapped]
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Struggle","id":"struggle","target":"randomNormal","disabled":false}]},{"moves":[{"move":"Spite","id":"spite","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":true,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"142/156","active":true,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":"Psychic"},{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"133/133","active":false,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"airballoon","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":false,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Chilly Reception","id":"chillyreception","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Disable","id":"disable","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":0,"maxpp":1,"target":"normal","disabled":true}]},{"moves":[{"move":"Blood Moon","id":"bloodmoon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Parabolic Charge","id":"paraboliccharge","pp":32,"maxpp":32,"target":"allAdjacent","disabled":false}],"trapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"132/145","active":true,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"141/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Eevee|Eevee, L50, F|133/133
+|switch|p1a: Eevee|Eevee, L50, F|133/133
+|-item|p1a: Eevee|Air Balloon
+|move|p2b: Arceus|Taunt|p1a: Eevee
+|-start|p1a: Eevee|move: Taunt
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p2a: X|Disable|p1b: Chomp
+|-start|p1b: Chomp|Disable|Spite
+|
+|-end|p2b: Arceus|Thunder Cage|[partiallytrapped]|[silent]
+|upkeep
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Baneful Bunker","id":"banefulbunker","pp":16,"maxpp":16,"target":"self","disabled":true},{"move":"Sand Attack","id":"sandattack","pp":24,"maxpp":24,"target":"normal","disabled":true},{"move":"Mud-Slap","id":"mudslap","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Struggle","id":"struggle","target":"randomNormal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"133/133","active":true,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"airballoon","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"142/156","active":true,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":"Psychic"},{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":false,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":false,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Chilly Reception","id":"chillyreception","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Disable","id":"disable","pp":30,"maxpp":32,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":0,"maxpp":1,"target":"normal","disabled":true}]},{"moves":[{"move":"Blood Moon","id":"bloodmoon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Taunt","id":"taunt","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Parabolic Charge","id":"paraboliccharge","pp":32,"maxpp":32,"target":"allAdjacent","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"132/145","active":true,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"141/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You can't choose a target for Chilly Reception
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Flapple|Flapple, L50, M|170/170
+|switch|p1b: Flapple|Flapple, L50, M|170/170
+|move|p2b: Arceus|Blood Moon|p1a: Eevee
+|split|p1
+|-damage|p1a: Eevee|0 fnt
+|-damage|p1a: Eevee|0 fnt
+|-enditem|p1a: Eevee|Air Balloon
+|faint|p1a: Eevee
+|move|p2a: X|Disable||[still]
+|-fail|p2a: X
+|
+|upkeep
+@message
+sideupdate
+p1
+|request|{"forceSwitch":[true,false],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"0 fnt","active":true,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":true,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":false,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"142/156","active":false,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":"Psychic"}]},"noCancel":true}
+@message
+sideupdate
+p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"132/145","active":true,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"141/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Unrecognized choice: Move 1
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Pikachu|Grumpig, L50, F|183/183
+|switch|p1a: Pikachu|Grumpig, L50, F|183/183
+|turn|5
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Thunder Cage","id":"thundercage","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Fillet Away","id":"filletaway","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":true,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":true,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"142/156","active":false,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":"Psychic"}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Chilly Reception","id":"chillyreception","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Disable","id":"disable","pp":29,"maxpp":32,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":0,"maxpp":1,"target":"normal","disabled":true}]},{"moves":[{"move":"Blood Moon","id":"bloodmoon","pp":7,"maxpp":8,"target":"normal","disabled":true},{"move":"Taunt","id":"taunt","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Parabolic Charge","id":"paraboliccharge","pp":32,"maxpp":32,"target":"allAdjacent","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"132/145","active":true,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"141/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: switch SERVINE - missing other pokemon
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You sent more choices than unfainted Pokémon.
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"gen5,bf097477cea9fd24","turns":5,"p1":"Alice","p2":"Bob","p1team":[{"name":"Ninetales","species":"Ninetales","item":"Throat Spray","ability":"Flash Fire","moves":["Seed Bomb","Aerial Ace","Shift Gear","Clanging Scales"],"nature":"Naughty","evs":{"hp":1,"atk":139,"def":26,"spa":239,"spd":12,"spe":86},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Leafeon","item":"","ability":"Leaf Guard","moves":["Spite"],"nature":"Jolly","evs":{"hp":129,"atk":178,"def":191,"spa":9,"spd":1,"spe":0},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pikachu","species":"Grumpig","item":"Choice Specs","ability":"Thick Fat","moves":["Thunder Cage","Fillet Away"],"nature":"Naughty","evs":{"hp":224,"atk":0,"def":31,"spa":73,"spd":181,"spe":1},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Flapple","species":"Flapple","item":"Red Card","ability":"Gluttony","moves":["Disable"],"nature":"Bold","evs":{"hp":203,"atk":27,"def":57,"spa":0,"spd":16,"spe":179},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Mr. Bubbles","species":"Rufflet","item":"Life Orb","ability":"Arena Trap","moves":["Aerial Ace","Horn Attack","Mist"],"nature":"Adamant","evs":{"hp":5,"atk":234,"def":127,"spa":61,"spd":78,"spe":3},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Eevee","species":"Eevee","item":"Air Balloon","ability":"Run Away","moves":["Baneful Bunker","Sand Attack","Mud-Slap"],"nature":"Rash","evs":{"hp":22,"atk":224,"def":1,"spa":52,"spd":132,"spe":35},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Arceus","species":"Arceus-Fighting","item":"","ability":"Multitype","moves":["Blood Moon","Taunt","Superpower","Parabolic Charge"],"nature":"Naive","evs":{"hp":85,"atk":19,"def":67,"spa":91,"spd":188,"spe":38},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Nibbles","species":"Cacturne","item":"Throat Spray","ability":"Arena Trap","moves":["Toxic"],"nature":"Bashful","evs":{"hp":89,"atk":83,"def":95,"spa":9,"spd":12,"spe":188},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Quagsire","species":"Quagsire","item":"","ability":"Damp","moves":["Draining Kiss","Powder Snow","Torment"],"nature":"Naive","evs":{"hp":45,"atk":200,"def":117,"spa":9,"spd":139,"spe":0},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"X","species":"Vespiquen","item":"","ability":"Pressure","moves":["Chilly Reception","Disable","Sketch"],"nature":"Serious","evs":{"hp":3,"atk":149,"def":85,"spa":198,"spd":72,"spe":1},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Servine","species":"Servine","item":"Cheri Berry","ability":"Overgrow","moves":["Imprison"],"nature":"Calm","evs":{"hp":88,"atk":219,"def":9,"spa":2,"spd":2,"spe":188},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Marshtomp","species":"Marshtomp","item":"Oval Stone","ability":"Damp","moves":["Thunder Shock","Water Gun","Torment"],"nature":"Lax","evs":{"hp":74,"atk":19,"def":101,"spa":58,"spd":12,"spe":246},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[3,4],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50\",\"seed\":\"gen5,bf097477cea9fd24\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Ninetales||ThroatSpray|FlashFire|SeedBomb,AerialAce,ShiftGear,ClangingScales|Naughty|1,139,26,239,12,86|M|||50|,,,,,Stellar]Chomp|Leafeon||LeafGuard|Spite|Jolly|129,178,191,9,1,|F|||50|,,,,,Psychic]Pikachu|Grumpig|ChoiceSpecs|ThickFat|ThunderCage,FilletAway|Naughty|224,,31,73,181,1|F|||50|,,,,,Bug]Flapple||RedCard|Gluttony|Disable|Bold|203,27,57,,16,179||||50|,,,,,Poison]Mr. Bubbles|Rufflet|LifeOrb|ArenaTrap|AerialAce,HornAttack,Mist|Adamant|5,234,127,61,78,3|M|||50|,,,,,Fighting]Eevee||AirBalloon|RunAway|BanefulBunker,SandAttack,MudSlap|Rash|22,224,1,52,132,35||||50|,,,,,Rock\",\"avatar\":\"lucas\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Arceus|ArceusFighting||Multitype|BloodMoon,Taunt,Superpower,ParabolicCharge|Naive|85,19,67,91,188,38||||50|,,,,,Rock]Nibbles|Cacturne|ThroatSpray|ArenaTrap|Toxic|Bashful|89,83,95,9,12,188|||S|50|,,,,,Ghost]Quagsire|||Damp|DrainingKiss,PowderSnow,Torment|Naive|45,200,117,9,139,|M|||50|,,,,,Poison]X|Vespiquen||Pressure|ChillyReception,Disable,Sketch|Serious|3,149,85,198,72,1|F|||50|,,,,,Water]Servine||CheriBerry|Overgrow|Imprison|Calm|88,219,9,2,2,188||||50|,,,,,Ice]Marshtomp||OvalStone|Damp|ThunderShock,WaterGun,Torment|Lax|74,19,101,58,12,246|F|||50|,,,,,Ghost\"}",">p1 team 4, 2, 6, 3",">p2 team 4, 1, 6, 5",">reseed 23206,60183,47233,8366",">p1 switch 4, move spite -1 terastallize",">p2 move sketch +1, move superpower -1 terastallize",">p1 move thundercage +2, move spite -1",">p2 move disable +1, move superpower +2",">p1 switch 3, move spite -1",">p2 move disable +2, move taunt +1",">p1 move mudslap +1, switch 4",">p2 move disable +2, move bloodmoon +1",">p1 switch 3, pass",">forcetie"]}
+@channel-write omniscient
+>start {"formatid":"gen9doublescustomgame@@@Picked Team Size = 4,Adjust Level Down = 50","seed":"gen5,bf097477cea9fd24"}
+@channel-write omniscient
+>player p1 {"name":"Alice","team":"Ninetales||ThroatSpray|FlashFire|SeedBomb,AerialAce,ShiftGear,ClangingScales|Naughty|1,139,26,239,12,86|M|||50|,,,,,Stellar]Chomp|Leafeon||LeafGuard|Spite|Jolly|129,178,191,9,1,|F|||50|,,,,,Psychic]Pikachu|Grumpig|ChoiceSpecs|ThickFat|ThunderCage,FilletAway|Naughty|224,,31,73,181,1|F|||50|,,,,,Bug]Flapple||RedCard|Gluttony|Disable|Bold|203,27,57,,16,179||||50|,,,,,Poison]Mr. Bubbles|Rufflet|LifeOrb|ArenaTrap|AerialAce,HornAttack,Mist|Adamant|5,234,127,61,78,3|M|||50|,,,,,Fighting]Eevee||AirBalloon|RunAway|BanefulBunker,SandAttack,MudSlap|Rash|22,224,1,52,132,35||||50|,,,,,Rock","avatar":"lucas"}
+@channel-write omniscient
+>player p2 {"name":"Bob","team":[{"name":"Arceus-Fighting","species":"Arceus-Fighting","item":"","ability":"Multitype","moves":["Blood Moon","Taunt","Superpower","Parabolic Charge"],"nature":"Naive","evs":{"hp":85,"atk":19,"def":67,"spa":91,"spd":188,"spe":38},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock"},{"name":"Nibbles","species":"Cacturne","item":"Throat Spray","ability":"Arena Trap","moves":["Toxic"],"nature":"Bashful","evs":{"hp":89,"atk":83,"def":95,"spa":9,"spd":12,"spe":188},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost"},{"name":"Quagsire","species":"Quagsire","item":"","ability":"Damp","moves":["Draining Kiss","Powder Snow","Torment"],"nature":"Naive","evs":{"hp":45,"atk":200,"def":117,"spa":9,"spd":139,"spe":0},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison"},{"name":"X","species":"Vespiquen","item":"","ability":"Pressure","moves":["Chilly Reception","Disable","Sketch"],"nature":"Serious","evs":{"hp":3,"atk":149,"def":85,"spa":198,"spd":72,"spe":1},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water"},{"name":"Servine","species":"Servine","item":"Cheri Berry","ability":"Overgrow","moves":["Imprison"],"nature":"Calm","evs":{"hp":88,"atk":219,"def":9,"spa":2,"spd":2,"spe":188},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice"},{"name":"Marshtomp","species":"Marshtomp","item":"Oval Stone","ability":"Damp","moves":["Thunder Shock","Water Gun","Torment"],"nature":"Lax","evs":{"hp":74,"atk":19,"def":101,"spa":58,"spd":12,"spe":246},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost"}]}
+@channel-write p1
+team 4263
+@channel-write p2
+team 4165
+@channel-write omniscient
+>reseed gen5,5aa6eb17b88120ae
+@channel-write p1
+switch 4, move 1 -1 terastallize
+@channel-write p2
+move 3 1, move 3 -1 terastallize
+@channel-write p1
+move 1 2, move 1 -1
+@channel-write p2
+move Disable -2 mega
+@channel-write p2
+move 2 1, move 3 2
+@channel-write p2
+move 2 2, move 2 1
+@channel-write p1
+switch 3, move 1 -1
+@channel-write p1
+move 3 1, switch 4
+@channel-write p2
+move Chilly Reception 1 terastallize, move 2 1
+@channel-write p2
+undo
+@channel-write p2
+move 2 2, move 1 1
+@channel-write p1
+Move 1
+@channel-write p1
+switch 3
+@channel-write p1
+move filletaway,move Disable 2
+@channel-write p2
+switch SERVINE
+@channel-write p2
+default, move 2 -1
+@channel-write omniscient
+>forcetie
+@channel omniscient
+|t:|
+|gametype|doubles
+@channel omniscient
+|player|p1|Alice|lucas|
+@channel omniscient
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Ninetales, L50, M|
+|poke|p1|Leafeon, L50, F|
+|poke|p1|Grumpig, L50, F|
+|poke|p1|Flapple, L50, M|
+|poke|p1|Rufflet, L50, M|
+|poke|p1|Eevee, L50, F|
+|poke|p2|Arceus-Fighting, L50|
+|poke|p2|Cacturne, L50, M|
+|poke|p2|Quagsire, L50, M|
+|poke|p2|Vespiquen, L50, F|
+|poke|p2|Servine, L50, F|
+|poke|p2|Marshtomp, L50, F|
+|teampreview|4
+@channel omniscient
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Flapple|Flapple, L50, M|170/170
+|switch|p1b: Chomp|Leafeon, L50, F|156/156
+|switch|p2a: X|Vespiquen, L50, F|145/145
+|switch|p2b: Arceus|Arceus-Fighting, L50|206/206
+|-ability|p2a: X|Pressure
+|-start|p2b: Arceus|typechange|Normal|[silent]
+|turn|1
+@channel omniscient
+|message|The battle's RNG was reset.
+@channel omniscient
+|
+|t:|
+|switch|p1a: Pikachu|Grumpig, L50, F|183/183
+|-terastallize|p2b: Arceus|Rock
+|-terastallize|p1b: Chomp|Psychic
+|move|p2b: Arceus|Superpower|p2a: X
+|-resisted|p2a: X
+|-damage|p2a: X|132/145
+|-unboost|p2b: Arceus|atk|1
+|-unboost|p2b: Arceus|def|1
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p2a: X|Sketch||[still]
+|-fail|p2a: X
+|
+|upkeep
+|turn|2
+@channel omniscient
+|
+|t:|
+|move|p2b: Arceus|Superpower|p1b: Chomp
+|-resisted|p1b: Chomp
+|-damage|p1b: Chomp|142/156
+|-unboost|p2b: Arceus|atk|1
+|-unboost|p2b: Arceus|def|1
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p1a: Pikachu|Thunder Cage|p2b: Arceus
+|-damage|p2b: Arceus|166/206
+|-activate|p2b: Arceus|move: Thunder Cage|[of] p1a: Pikachu
+|move|p2a: X|Disable|p1a: Pikachu
+|-start|p1a: Pikachu|Disable|Thunder Cage
+|
+|-damage|p2b: Arceus|141/206|[from] move: Thunder Cage|[partiallytrapped]
+|upkeep
+|turn|3
+@channel omniscient
+|
+|t:|
+|switch|p1a: Eevee|Eevee, L50, F|133/133
+|-item|p1a: Eevee|Air Balloon
+|move|p2b: Arceus|Taunt|p1a: Eevee
+|-start|p1a: Eevee|move: Taunt
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p2a: X|Disable|p1b: Chomp
+|-start|p1b: Chomp|Disable|Spite
+|
+|-end|p2b: Arceus|Thunder Cage|[partiallytrapped]|[silent]
+|upkeep
+|turn|4
+@channel omniscient
+|
+|t:|
+|switch|p1b: Flapple|Flapple, L50, M|170/170
+|move|p2b: Arceus|Blood Moon|p1a: Eevee
+|-damage|p1a: Eevee|0 fnt
+|-enditem|p1a: Eevee|Air Balloon
+|faint|p1a: Eevee
+|move|p2a: X|Disable||[still]
+|-fail|p2a: X
+|
+|upkeep
+@channel omniscient
+|
+|t:|
+|switch|p1a: Pikachu|Grumpig, L50, F|183/183
+|turn|5
+@channel omniscient
+|
+|tie
+@channel spectator
+|t:|
+|gametype|doubles
+@channel spectator
+|player|p1|Alice|lucas|
+@channel spectator
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Ninetales, L50, M|
+|poke|p1|Leafeon, L50, F|
+|poke|p1|Grumpig, L50, F|
+|poke|p1|Flapple, L50, M|
+|poke|p1|Rufflet, L50, M|
+|poke|p1|Eevee, L50, F|
+|poke|p2|Arceus-Fighting, L50|
+|poke|p2|Cacturne, L50, M|
+|poke|p2|Quagsire, L50, M|
+|poke|p2|Vespiquen, L50, F|
+|poke|p2|Servine, L50, F|
+|poke|p2|Marshtomp, L50, F|
+|teampreview|4
+@channel spectator
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Flapple|Flapple, L50, M|170/170
+|switch|p1b: Chomp|Leafeon, L50, F|156/156
+|switch|p2a: X|Vespiquen, L50, F|145/145
+|switch|p2b: Arceus|Arceus-Fighting, L50|206/206
+|-ability|p2a: X|Pressure
+|-start|p2b: Arceus|typechange|Normal|[silent]
+|turn|1
+@channel spectator
+|message|The battle's RNG was reset.
+@channel spectator
+|
+|t:|
+|switch|p1a: Pikachu|Grumpig, L50, F|183/183
+|-terastallize|p2b: Arceus|Rock
+|-terastallize|p1b: Chomp|Psychic
+|move|p2b: Arceus|Superpower|p2a: X
+|-resisted|p2a: X
+|-damage|p2a: X|132/145
+|-unboost|p2b: Arceus|atk|1
+|-unboost|p2b: Arceus|def|1
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p2a: X|Sketch||[still]
+|-fail|p2a: X
+|
+|upkeep
+|turn|2
+@channel spectator
+|
+|t:|
+|move|p2b: Arceus|Superpower|p1b: Chomp
+|-resisted|p1b: Chomp
+|-damage|p1b: Chomp|142/156
+|-unboost|p2b: Arceus|atk|1
+|-unboost|p2b: Arceus|def|1
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p1a: Pikachu|Thunder Cage|p2b: Arceus
+|-damage|p2b: Arceus|166/206
+|-activate|p2b: Arceus|move: Thunder Cage|[of] p1a: Pikachu
+|move|p2a: X|Disable|p1a: Pikachu
+|-start|p1a: Pikachu|Disable|Thunder Cage
+|
+|-damage|p2b: Arceus|141/206|[from] move: Thunder Cage|[partiallytrapped]
+|upkeep
+|turn|3
+@channel spectator
+|
+|t:|
+|switch|p1a: Eevee|Eevee, L50, F|133/133
+|-item|p1a: Eevee|Air Balloon
+|move|p2b: Arceus|Taunt|p1a: Eevee
+|-start|p1a: Eevee|move: Taunt
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p2a: X|Disable|p1b: Chomp
+|-start|p1b: Chomp|Disable|Spite
+|
+|-end|p2b: Arceus|Thunder Cage|[partiallytrapped]|[silent]
+|upkeep
+|turn|4
+@channel spectator
+|
+|t:|
+|switch|p1b: Flapple|Flapple, L50, M|170/170
+|move|p2b: Arceus|Blood Moon|p1a: Eevee
+|-damage|p1a: Eevee|0 fnt
+|-enditem|p1a: Eevee|Air Balloon
+|faint|p1a: Eevee
+|move|p2a: X|Disable||[still]
+|-fail|p2a: X
+|
+|upkeep
+@channel spectator
+|
+|t:|
+|switch|p1a: Pikachu|Grumpig, L50, F|183/183
+|turn|5
+@channel spectator
+|
+|tie
+@channel p1
+|t:|
+|gametype|doubles
+@channel p1
+|player|p1|Alice|lucas|
+@channel p1
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Ninetales, L50, M|
+|poke|p1|Leafeon, L50, F|
+|poke|p1|Grumpig, L50, F|
+|poke|p1|Flapple, L50, M|
+|poke|p1|Rufflet, L50, M|
+|poke|p1|Eevee, L50, F|
+|poke|p2|Arceus-Fighting, L50|
+|poke|p2|Cacturne, L50, M|
+|poke|p2|Quagsire, L50, M|
+|poke|p2|Vespiquen, L50, F|
+|poke|p2|Servine, L50, F|
+|poke|p2|Marshtomp, L50, F|
+|teampreview|4
+@channel p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Ninetales","details":"Ninetales, L50, M","condition":"148/148","active":true,"stats":{"atk":124,"def":98,"spa":131,"spd":109,"spe":131},"moves":["seedbomb","aerialace","shiftgear","clangingscales"],"baseAbility":"flashfire","item":"throatspray","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"156/156","active":true,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":false,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":false,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mr. Bubbles","details":"Rufflet, L50, M","condition":"146/146","active":false,"stats":{"atk":145,"def":86,"spa":58,"spd":80,"spe":80},"moves":["aerialace","hornattack","mist"],"baseAbility":"arenatrap","item":"lifeorb","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"133/133","active":false,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"airballoon","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+@channel p1
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Flapple|Flapple, L50, M|170/170
+|switch|p1b: Chomp|Leafeon, L50, F|156/156
+|switch|p2a: X|Vespiquen, L50, F|145/145
+|switch|p2b: Arceus|Arceus-Fighting, L50|206/206
+|-ability|p2a: X|Pressure
+|-start|p2b: Arceus|typechange|Normal|[silent]
+|turn|1
+@channel p1
+|request|{"active":[{"moves":[{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Poison"},{"moves":[{"move":"Spite","id":"spite","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Psychic"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":true,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"156/156","active":true,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"133/133","active":false,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"airballoon","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":false,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+@channel p1
+|message|The battle's RNG was reset.
+@channel p1
+|
+|t:|
+|switch|p1a: Pikachu|Grumpig, L50, F|183/183
+|-terastallize|p2b: Arceus|Rock
+|-terastallize|p1b: Chomp|Psychic
+|move|p2b: Arceus|Superpower|p2a: X
+|-resisted|p2a: X
+|-damage|p2a: X|132/145
+|-unboost|p2b: Arceus|atk|1
+|-unboost|p2b: Arceus|def|1
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p2a: X|Sketch||[still]
+|-fail|p2a: X
+|
+|upkeep
+|turn|2
+@channel p1
+|request|{"active":[{"moves":[{"move":"Thunder Cage","id":"thundercage","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Fillet Away","id":"filletaway","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Spite","id":"spite","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":true,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"156/156","active":true,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":"Psychic"},{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"133/133","active":false,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"airballoon","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":false,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@channel p1
+|
+|t:|
+|move|p2b: Arceus|Superpower|p1b: Chomp
+|-resisted|p1b: Chomp
+|-damage|p1b: Chomp|142/156
+|-unboost|p2b: Arceus|atk|1
+|-unboost|p2b: Arceus|def|1
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p1a: Pikachu|Thunder Cage|p2b: Arceus
+|-damage|p2b: Arceus|166/206
+|-activate|p2b: Arceus|move: Thunder Cage|[of] p1a: Pikachu
+|move|p2a: X|Disable|p1a: Pikachu
+|-start|p1a: Pikachu|Disable|Thunder Cage
+|
+|-damage|p2b: Arceus|141/206|[from] move: Thunder Cage|[partiallytrapped]
+|upkeep
+|turn|3
+@channel p1
+|request|{"active":[{"moves":[{"move":"Struggle","id":"struggle","target":"randomNormal","disabled":false}]},{"moves":[{"move":"Spite","id":"spite","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":true,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"142/156","active":true,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":"Psychic"},{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"133/133","active":false,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"airballoon","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":false,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@channel p1
+|
+|t:|
+|switch|p1a: Eevee|Eevee, L50, F|133/133
+|-item|p1a: Eevee|Air Balloon
+|move|p2b: Arceus|Taunt|p1a: Eevee
+|-start|p1a: Eevee|move: Taunt
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p2a: X|Disable|p1b: Chomp
+|-start|p1b: Chomp|Disable|Spite
+|
+|-end|p2b: Arceus|Thunder Cage|[partiallytrapped]|[silent]
+|upkeep
+|turn|4
+@channel p1
+|request|{"active":[{"moves":[{"move":"Baneful Bunker","id":"banefulbunker","pp":16,"maxpp":16,"target":"self","disabled":true},{"move":"Sand Attack","id":"sandattack","pp":24,"maxpp":24,"target":"normal","disabled":true},{"move":"Mud-Slap","id":"mudslap","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Struggle","id":"struggle","target":"randomNormal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"133/133","active":true,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"airballoon","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"142/156","active":true,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":"Psychic"},{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":false,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":false,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@channel p1
+|
+|t:|
+|switch|p1b: Flapple|Flapple, L50, M|170/170
+|move|p2b: Arceus|Blood Moon|p1a: Eevee
+|-damage|p1a: Eevee|0 fnt
+|-enditem|p1a: Eevee|Air Balloon
+|faint|p1a: Eevee
+|move|p2a: X|Disable||[still]
+|-fail|p2a: X
+|
+|upkeep
+@channel p1
+|request|{"forceSwitch":[true,false],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"0 fnt","active":true,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":true,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":false,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"142/156","active":false,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":"Psychic"}]},"noCancel":true}
+@channel p1
+|error|[Invalid choice] Unrecognized choice: Move 1
+@channel p1
+|
+|t:|
+|switch|p1a: Pikachu|Grumpig, L50, F|183/183
+|turn|5
+@channel p1
+|request|{"active":[{"moves":[{"move":"Thunder Cage","id":"thundercage","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Fillet Away","id":"filletaway","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Grumpig, L50, F","condition":"183/183","active":true,"stats":{"atk":71,"def":89,"spa":119,"spd":137,"spe":100},"moves":["thundercage","filletaway"],"baseAbility":"thickfat","item":"choicespecs","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p1: Flapple","details":"Flapple, L50, M","condition":"170/170","active":true,"stats":{"atk":119,"def":117,"spa":115,"spd":82,"spe":112},"moves":["disable"],"baseAbility":"gluttony","item":"redcard","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Eevee","details":"Eevee, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":70,"spa":79,"spd":91,"spe":79},"moves":["banefulbunker","sandattack","mudslap"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Chomp","details":"Leafeon, L50, F","condition":"142/156","active":false,"stats":{"atk":152,"def":174,"spa":72,"spd":85,"spe":126},"moves":["spite"],"baseAbility":"leafguard","item":"","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":"Psychic"}]}}
+@channel p1
+|
+|tie
+@channel p2
+|t:|
+|gametype|doubles
+@channel p2
+|player|p1|Alice|lucas|
+@channel p2
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+|clearpoke
+|poke|p1|Ninetales, L50, M|
+|poke|p1|Leafeon, L50, F|
+|poke|p1|Grumpig, L50, F|
+|poke|p1|Flapple, L50, M|
+|poke|p1|Rufflet, L50, M|
+|poke|p1|Eevee, L50, F|
+|poke|p2|Arceus-Fighting, L50|
+|poke|p2|Cacturne, L50, M|
+|poke|p2|Quagsire, L50, M|
+|poke|p2|Vespiquen, L50, F|
+|poke|p2|Servine, L50, F|
+|poke|p2|Marshtomp, L50, F|
+|teampreview|4
+@channel p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"206/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Nibbles","details":"Cacturne, L50, M, shiny","condition":"156/156","active":true,"stats":{"atk":145,"def":92,"spa":136,"spd":82,"spe":99},"moves":["toxic"],"baseAbility":"arenatrap","item":"throatspray","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Quagsire","details":"Quagsire, L50, M","condition":"176/176","active":false,"stats":{"atk":130,"def":120,"spa":86,"spd":91,"spe":60},"moves":["drainingkiss","powdersnow","torment"],"baseAbility":"damp","item":"","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"145/145","active":false,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+@channel p2
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Flapple|Flapple, L50, M|170/170
+|switch|p1b: Chomp|Leafeon, L50, F|156/156
+|switch|p2a: X|Vespiquen, L50, F|145/145
+|switch|p2b: Arceus|Arceus-Fighting, L50|206/206
+|-ability|p2a: X|Pressure
+|-start|p2b: Arceus|typechange|Normal|[silent]
+|turn|1
+@channel p2
+|request|{"active":[{"moves":[{"move":"Chilly Reception","id":"chillyreception","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":1,"maxpp":1,"target":"normal","disabled":false}],"canTerastallize":"Water"},{"moves":[{"move":"Blood Moon","id":"bloodmoon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Parabolic Charge","id":"paraboliccharge","pp":32,"maxpp":32,"target":"allAdjacent","disabled":false}],"canTerastallize":"Rock"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"145/145","active":true,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"206/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@channel p2
+|message|The battle's RNG was reset.
+@channel p2
+|
+|t:|
+|switch|p1a: Pikachu|Grumpig, L50, F|183/183
+|-terastallize|p2b: Arceus|Rock
+|-terastallize|p1b: Chomp|Psychic
+|move|p2b: Arceus|Superpower|p2a: X
+|-resisted|p2a: X
+|-damage|p2a: X|132/145
+|-unboost|p2b: Arceus|atk|1
+|-unboost|p2b: Arceus|def|1
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p2a: X|Sketch||[still]
+|-fail|p2a: X
+|
+|upkeep
+|turn|2
+@channel p2
+|request|{"active":[{"moves":[{"move":"Chilly Reception","id":"chillyreception","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":0,"maxpp":1,"target":"normal","disabled":true}]},{"moves":[{"move":"Blood Moon","id":"bloodmoon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Parabolic Charge","id":"paraboliccharge","pp":32,"maxpp":32,"target":"allAdjacent","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"132/145","active":true,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"206/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@channel p2
+|error|[Invalid choice] Can't move: X can't mega evolve
+@channel p2
+|
+|t:|
+|move|p2b: Arceus|Superpower|p1b: Chomp
+|-resisted|p1b: Chomp
+|-damage|p1b: Chomp|142/156
+|-unboost|p2b: Arceus|atk|1
+|-unboost|p2b: Arceus|def|1
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p1a: Pikachu|Thunder Cage|p2b: Arceus
+|-damage|p2b: Arceus|166/206
+|-activate|p2b: Arceus|move: Thunder Cage|[of] p1a: Pikachu
+|move|p2a: X|Disable|p1a: Pikachu
+|-start|p1a: Pikachu|Disable|Thunder Cage
+|
+|-damage|p2b: Arceus|141/206|[from] move: Thunder Cage|[partiallytrapped]
+|upkeep
+|turn|3
+@channel p2
+|request|{"active":[{"moves":[{"move":"Chilly Reception","id":"chillyreception","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Disable","id":"disable","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":0,"maxpp":1,"target":"normal","disabled":true}]},{"moves":[{"move":"Blood Moon","id":"bloodmoon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Taunt","id":"taunt","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Parabolic Charge","id":"paraboliccharge","pp":32,"maxpp":32,"target":"allAdjacent","disabled":false}],"trapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"132/145","active":true,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"141/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@channel p2
+|
+|t:|
+|switch|p1a: Eevee|Eevee, L50, F|133/133
+|-item|p1a: Eevee|Air Balloon
+|move|p2b: Arceus|Taunt|p1a: Eevee
+|-start|p1a: Eevee|move: Taunt
+|move|p1b: Chomp|Spite||[still]
+|-fail|p1b: Chomp
+|move|p2a: X|Disable|p1b: Chomp
+|-start|p1b: Chomp|Disable|Spite
+|
+|-end|p2b: Arceus|Thunder Cage|[partiallytrapped]|[silent]
+|upkeep
+|turn|4
+@channel p2
+|request|{"active":[{"moves":[{"move":"Chilly Reception","id":"chillyreception","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Disable","id":"disable","pp":30,"maxpp":32,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":0,"maxpp":1,"target":"normal","disabled":true}]},{"moves":[{"move":"Blood Moon","id":"bloodmoon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Taunt","id":"taunt","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Parabolic Charge","id":"paraboliccharge","pp":32,"maxpp":32,"target":"allAdjacent","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"132/145","active":true,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"141/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@channel p2
+|error|[Invalid choice] Can't move: You can't choose a target for Chilly Reception
+@channel p2
+|
+|t:|
+|switch|p1b: Flapple|Flapple, L50, M|170/170
+|move|p2b: Arceus|Blood Moon|p1a: Eevee
+|-damage|p1a: Eevee|0 fnt
+|-enditem|p1a: Eevee|Air Balloon
+|faint|p1a: Eevee
+|move|p2a: X|Disable||[still]
+|-fail|p2a: X
+|
+|upkeep
+@channel p2
+|request|{"wait":true,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"132/145","active":true,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"141/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@channel p2
+|
+|t:|
+|switch|p1a: Pikachu|Grumpig, L50, F|183/183
+|turn|5
+@channel p2
+|request|{"active":[{"moves":[{"move":"Chilly Reception","id":"chillyreception","pp":16,"maxpp":16,"target":"all","disabled":false},{"move":"Disable","id":"disable","pp":29,"maxpp":32,"target":"normal","disabled":false},{"move":"Sketch","id":"sketch","pp":0,"maxpp":1,"target":"normal","disabled":true}]},{"moves":[{"move":"Blood Moon","id":"bloodmoon","pp":7,"maxpp":8,"target":"normal","disabled":true},{"move":"Taunt","id":"taunt","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Superpower","id":"superpower","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Parabolic Charge","id":"paraboliccharge","pp":32,"maxpp":32,"target":"allAdjacent","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: X","details":"Vespiquen, L50, F","condition":"132/145","active":true,"stats":{"atk":119,"def":133,"spa":125,"spd":131,"spe":60},"moves":["chillyreception","disable","sketch"],"baseAbility":"pressure","item":"","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Arceus","details":"Arceus-Fighting, L50","condition":"141/206","active":true,"stats":{"atk":142,"def":148,"spa":151,"spd":147,"spe":159},"moves":["bloodmoon","taunt","superpower","paraboliccharge"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Rock","terastallized":"Rock"},{"ident":"p2: Marshtomp","details":"Marshtomp, L50, F","condition":"154/154","active":false,"stats":{"atk":107,"def":113,"spa":87,"spd":82,"spe":101},"moves":["thundershock","watergun","torment"],"baseAbility":"damp","item":"ovalstone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Servine","details":"Servine, L50, F","condition":"146/146","active":false,"stats":{"atk":96,"def":96,"spa":80,"spd":104,"spe":127},"moves":["imprison"],"baseAbility":"overgrow","item":"cheriberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+@channel p2
+|error|[Invalid choice] Incomplete choice: switch SERVINE - missing other pokemon
+@channel p2
+|error|[Invalid choice] Can't move: You sent more choices than unfainted Pokémon.
+@channel p2
+|
+|tie

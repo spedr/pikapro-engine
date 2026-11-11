@@ -1,0 +1,282 @@
+# championsvgc-sodium-2111000-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@option replay spectator
+@write
+>start {"formatid":"gen9championsvgc2026regmb","seed":"sodium,aa45ea5a3dcb59742a64d0a29b6f6b015f844a9aecbbc5692f607fe6dcd57a0e","rated":true,"p1":{"name":"Alice","team":"Golurk||Golurkite|NoGuard|ShadowClaw,HighHorsepower,IcicleCrash|Rash|1,29,,14,20,1||||50|,,,,,Fairy]Incineroar|||Blaze|ClangorousSoul|Rash|11,22,8,10,,12||||50|,,,,,Flying]Umbreon||QuickClaw|InnerFocus|Spite|Relaxed|,6,19,4,13,22||||50|,,,,,Poison]Annihilape||Magnet|InnerFocus|DualWingbeat,Eruption,DrainingKiss|Lonely|5,13,8,10,12,17|F|||50|,,,,,Water]Gardevoir||Gardevoirite|Trace|Counter|Lonely|1,3,3,6,20,23||||50|,,,,,Flying]Falinks||Falinksite|Defiant|FutureSight,EerieImpulse|Naughty|3,5,,28,19,10||||50|,,,,,Normal"},"p2":{"name":"Bob","team":[{"name":"Tsareena","species":"Tsareena","item":"Passho Berry","ability":"Leaf Guard","moves":["Upper Hand","Attract","Bounce","Tailwind"],"nature":"Hasty","evs":{"hp":23,"atk":29,"def":1,"spa":1,"spd":7,"spe":3},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic"},{"name":"Sparky","species":"Slowbro-Galar","item":"Shuca Berry","ability":"Quick Draw","moves":["High Horsepower","Psychic Noise"],"nature":"Modest","evs":{"hp":2,"atk":1,"def":0,"spa":26,"spd":31,"spe":6},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass"},{"name":"Big Tony's Pal","species":"Camerupt","item":"Cameruptite","ability":"Magma Armor","moves":["X-Scissor"],"nature":"Serious","evs":{"hp":32,"atk":10,"def":0,"spa":8,"spd":6,"spe":10},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost"},{"name":"Chomp","species":"Gourgeist-Large","item":"Twisted Spoon","ability":"Pickup","moves":["Fiery Dance","Earth Power","Kowtow Cleave","Horn Leech"],"nature":"Quirky","evs":{"hp":2,"atk":1,"def":23,"spa":1,"spd":26,"spe":13},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic"},{"name":"Pikachu","species":"Rotom-Fan","item":"","ability":"Levitate","moves":["Quick Attack"],"nature":"Hardy","evs":{"hp":19,"atk":1,"def":8,"spa":12,"spd":0,"spe":23},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison"},{"name":"Houndstone","species":"Houndstone","item":"","ability":"Fluffy","moves":["Quick Attack","Focus Energy"],"nature":"Adamant","evs":{"hp":4,"atk":0,"def":0,"spa":20,"spd":31,"spe":11},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison"}],"rating":1500}}
+>p2 team 3265
+>p1 team 6521
+>p1 Move 1
+>p2 switch 3, move 1 1
+>p1 move Eerie Impulse mega +1, move counter
+@write
+# a comment
+>p2 move 1 +2, move 2 +2
+
+>p2 move 2 2
+
+>p1 move 2 2, switch 4
+>p2 shift
+>p2 switch rotom-fan ,  move Psychic Noise +1
+>p1 move 1 -2, switch 4
+@write
+>p2 switch 3, move 1 2
+# a comment
+>p2 undo
+>p1 move 2 1, switch 4
+# a comment
+>p2 move 1 -2, move 1 -1
+>p1 move Future Sight -2, move Shadow Claw -1
+>p2 move 1, move 1, move 1
+@write
+
+>p2 move X-Scissor +2 mega, switch rotom-fan
+>p1 move 1
+>p1 move 2 1, move 3 2
+>p2 switch 3, switch 4
+>p1 dance
+>p2 move 1 2, switch 3
+@write
+>p1 move futuresight +2,move shadowclaw +2
+>reseed sodium,0f226883158b548ee4ffa3f1bc14e9f48b174c392d1106a7ea817b82aeea2e8e
+>p1 move 1 2, move 1 2
+>p2 move 2 -2, move 1 1
+@write
+
+>p2 pass, switch 4
+@write
+>p1 move Future Sight 2, move 1 +1
+@write
+>p2 move 2 1, move 1 1
+>p2 pass, switch 3
+>p2 default
+>p1 move 2 -2, move 2 1
+>p1 switch GARDEVOIR
+@write
+>p1 default
+>p2 move focusenergy +1 mega
+
+>p2 move 1 1, move 1 -1
+>p1 switch 3,pass
+>p1 switch 4, move 2 -1
+>p2 skip, move 1 1
+
+>p1 move 1, move 3 2
+>p2 switch 6
+@write
+# a comment
+>p2 pass, move Quick Attack +1
+@message
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+|player|p2|Bob||1500
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rated|
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Golurk, L50|
+|poke|p1|Incineroar, L50, M|
+|poke|p1|Umbreon, L50, F|
+|poke|p1|Annihilape, L50, F|
+|poke|p1|Gardevoir, L50, M|
+|poke|p1|Falinks, L50|
+|poke|p2|Tsareena, L50, F|
+|poke|p2|Slowbro-Galar, L50, M|
+|poke|p2|Camerupt, L50, M, shiny|
+|poke|p2|Gourgeist-Large, L50, F|
+|poke|p2|Rotom-Fan, L50|
+|poke|p2|Houndstone, L50, F|
+|teampreview|4
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Falinks|Falinks, L50|100/100
+|switch|p1b: Gardevoir|Gardevoir, L50, M|100/100
+|switch|p2a: Big Tony's Pal|Camerupt, L50, M, shiny|100/100
+|switch|p2b: Sparky|Slowbro-Galar, L50, M|100/100
+|-ability|p1b: Gardevoir|Magma Armor|Trace|[from] ability: Trace|[of] p2a: Big Tony's Pal
+|turn|1
+|
+|t:|
+|switch|p2a: Houndstone|Houndstone, L50, F|100/100
+|detailschange|p1a: Falinks|Falinks-Mega, L50
+|-mega|p1a: Falinks|Falinks|Falinksite
+|move|p1a: Falinks|Eerie Impulse|p2a: Houndstone
+|-unboost|p2a: Houndstone|spa|2
+|move|p2b: Sparky|High Horsepower|p1a: Falinks|[miss]
+|-miss|p2b: Sparky|p1a: Falinks
+|move|p1b: Gardevoir|Counter||[still]
+|-fail|p1b: Gardevoir
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|switch|p1b: Golurk|Golurk, L50|100/100
+|switch|p2a: Pikachu|Rotom-Fan, L50|100/100
+|move|p1a: Falinks|Eerie Impulse|p2b: Sparky
+|-unboost|p2b: Sparky|spa|2
+|move|p2b: Sparky|Psychic Noise|p1a: Falinks
+|-supereffective|p1a: Falinks|1
+|-damage|p1a: Falinks|41/100
+|-start|p1a: Falinks|move: Heal Block
+|
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|switch|p2a: Big Tony's Pal|Camerupt, L50, M, shiny|100/100
+|switch|p1b: Gardevoir|Gardevoir, L50, M|100/100
+|-ability|p1b: Gardevoir|Magma Armor|Trace|[from] ability: Trace|[of] p2a: Big Tony's Pal
+|move|p1a: Falinks|Future Sight|p1b: Gardevoir
+|-start|p1a: Falinks|move: Future Sight
+|move|p2b: Sparky|High Horsepower|p1b: Gardevoir
+|-crit|p1b: Gardevoir
+|-damage|p1b: Gardevoir|48/100
+|
+|-end|p1a: Falinks|move: Heal Block
+|upkeep
+|turn|4
+|
+|t:|
+|switch|p1b: Golurk|Golurk, L50|100/100
+|move|p1a: Falinks|Eerie Impulse|p2a: Big Tony's Pal
+|-unboost|p2a: Big Tony's Pal|spa|2
+|move|p2a: Big Tony's Pal|X-Scissor|p2b: Sparky
+|-damage|p2b: Sparky|79/100
+|move|p2b: Sparky|High Horsepower|p2a: Big Tony's Pal
+|-supereffective|p2a: Big Tony's Pal|1
+|-damage|p2a: Big Tony's Pal|43/100
+|
+|upkeep
+|turn|5
+@message
+|
+|t:|
+|switch|p2b: Pikachu|Rotom-Fan, L50|100/100
+|detailschange|p2a: Big Tony's Pal|Camerupt-Mega, L50, M, shiny
+|-mega|p2a: Big Tony's Pal|Camerupt|Cameruptite
+|move|p1a: Falinks|Future Sight||[still]
+|-fail|p1a: Falinks
+|move|p1b: Golurk|Shadow Claw|p1a: Falinks
+|-damage|p1a: Falinks|9/100
+|move|p2a: Big Tony's Pal|X-Scissor|p1b: Golurk
+|-resisted|p1b: Golurk|1
+|-damage|p1b: Golurk|86/100
+|
+|-end|p1b: Golurk|move: Future Sight
+|-damage|p1b: Golurk|53/100
+|upkeep
+|turn|6
+|
+|t:|
+|switch|p2b: Houndstone|Houndstone, L50, F|100/100
+|switch|p2a: Sparky|Slowbro-Galar, L50, M|79/100
+|move|p1a: Falinks|Eerie Impulse|p2a: Sparky
+|-unboost|p2a: Sparky|spa|2
+|move|p1b: Golurk|Icicle Crash|p2b: Houndstone
+|-damage|p2b: Houndstone|67/100
+|
+|upkeep
+|turn|7
+@message
+|
+|t:|
+|switch|p2b: Big Tony's Pal|Camerupt-Mega, L50, M, shiny|43/100
+|move|p1a: Falinks|Future Sight|p2b: Big Tony's Pal
+|-start|p1a: Falinks|move: Future Sight
+|move|p1b: Golurk|Shadow Claw|p2b: Big Tony's Pal
+|-damage|p2b: Big Tony's Pal|6/100
+|move|p2a: Sparky|High Horsepower|p1b: Golurk
+|-damage|p1b: Golurk|24/100
+|
+|upkeep
+|turn|8
+|message|The battle's RNG was reset.
+|-activate|p2a: Sparky|ability: Quick Draw
+|
+|t:|
+|move|p2a: Sparky|Psychic Noise|p2b: Big Tony's Pal
+|-damage|p2b: Big Tony's Pal|0 fnt
+|faint|p2b: Big Tony's Pal
+|move|p1a: Falinks|Future Sight|p2a: Sparky
+|-start|p1a: Falinks|move: Future Sight
+|move|p1b: Golurk|Shadow Claw|p2a: Sparky
+|-supereffective|p2a: Sparky|1
+|-damage|p2a: Sparky|8/100
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p2b: Pikachu|Rotom-Fan, L50|100/100
+|turn|9
+@message
+|
+|t:|
+|move|p2b: Pikachu|Quick Attack|p1a: Falinks
+|-damage|p1a: Falinks|2/100
+|move|p1a: Falinks|Future Sight||[still]
+|-fail|p1a: Falinks
+|move|p1b: Golurk|Shadow Claw|p2a: Sparky
+|-supereffective|p2a: Sparky|1
+|-damage|p2a: Sparky|0 fnt
+|faint|p2a: Sparky
+|
+|-end|p2b: Pikachu|move: Future Sight
+|-damage|p2b: Pikachu|68/100
+|upkeep
+|
+|t:|
+|switch|p2a: Houndstone|Houndstone, L50, F|67/100
+|turn|10
+@message
+|
+|t:|
+|move|p2b: Pikachu|Quick Attack|p2a: Houndstone
+|-immune|p2a: Houndstone
+|move|p2a: Houndstone|Quick Attack|p1a: Falinks
+|-damage|p1a: Falinks|0 fnt
+|faint|p1a: Falinks
+|move|p1b: Golurk|Shadow Claw|p2a: Houndstone
+|-supereffective|p2a: Houndstone|1
+|-damage|p2a: Houndstone|23/100
+|
+|-end|p2a: Houndstone|move: Future Sight
+|-damage|p2a: Houndstone|0 fnt
+|faint|p2a: Houndstone
+|upkeep
+|
+|t:|
+|switch|p1a: Incineroar|Incineroar, L50, M|100/100
+|turn|11
+|
+|t:|
+|switch|p1a: Gardevoir|Gardevoir, L50, M|48/100
+|-ability|p1a: Gardevoir|Levitate|Trace|[from] ability: Trace|[of] p2b: Pikachu
+|move|p2b: Pikachu|Quick Attack|p1a: Gardevoir
+|-damage|p1a: Gardevoir|34/100
+|move|p1b: Golurk|High Horsepower|p1a: Gardevoir
+|-immune|p1a: Gardevoir|[from] ability: Levitate
+|
+|upkeep
+|turn|12
+@message
+|
+|t:|
+|move|p2b: Pikachu|Quick Attack|p1a: Gardevoir
+|-damage|p1a: Gardevoir|19/100
+|move|p1b: Golurk|Icicle Crash|p2b: Pikachu
+|-supereffective|p2b: Pikachu|1
+|-damage|p2b: Pikachu|1/100
+|move|p1a: Gardevoir|Counter|p2b: Pikachu
+|-damage|p2b: Pikachu|0 fnt
+|faint|p2b: Pikachu
+|
+|win|Alice

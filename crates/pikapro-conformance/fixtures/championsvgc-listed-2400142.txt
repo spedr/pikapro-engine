@@ -1,0 +1,379 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 093b eff6 777b 92d2
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Basculegion-F (F) @ Mystic Water
+Ability: Adaptability
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 SpA / 32 Spe
+Hasty Nature
+- Flip Turn
+- Hydro Pump
+- Wave Crash
+- Shadow Ball
+
+Mr. Bubbles (Mr. Rime) (M) @ Leftovers
+Ability: Screen Cleaner
+Level: 50
+Shiny: Yes
+EVs: 32 HP / 17 Def / 17 SpD
+Bold Nature
+- Rapid Spin
+- Focus Blast
+- Slack Off
+- Freeze-Dry
+
+Nibbles (Aerodactyl) (M) @ Focus Sash
+Ability: Unnerve
+Level: 50
+EVs: 32 HP / 2 Def / 32 Spe
+Jolly Nature
+- Taunt
+- Stone Edge
+- Stealth Rock
+- Earthquake
+
+Chomp (Skarmory) (M) @ Rocky Helmet
+Ability: Sturdy
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Stealth Rock
+- Roost
+- Body Press
+- Brave Bird
+
+Clefable-Mega (F) @ Clefablite
+Ability: Magic Guard
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Bold Nature
+- Moonlight
+- Fire Blast
+- Knock Off
+- Moonblast
+
+Sparky (Krookodile) (F) @ Life Orb
+Ability: Intimidate
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Gunk Shot
+- Stealth Rock
+- Earthquake
+- Knock Off
+end
+team p2
+Runerigus (M) @ Leftovers
+Ability: Wandering Spirit
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Stealth Rock
+- Toxic Spikes
+- Poltergeist
+- Earthquake
+
+X (Diggersby) (F) @ Choice Scarf
+Ability: Huge Power
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Earthquake
+- Foul Play
+- Body Slam
+- U-turn
+
+Malamar (F) @ Malamarite
+Ability: Contrary
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Superpower
+- Zen Headbutt
+- Poison Jab
+- Knock Off
+
+Chomp (Slowbro) (M) @ Rocky Helmet
+Ability: Regenerator
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Psychic Noise
+- Scald
+- Slack Off
+- Thunder Wave
+
+Zoë (Toxtricity) (M) @ Life Orb
+Ability: Punk Rock
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Mild Nature
+- Boomburst
+- Shift Gear
+- Gunk Shot
+- Overdrive
+
+Pikachu (F) @ Light Ball
+Ability: Lightning Rod
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Hasty Nature
+- Volt Tackle
+- Surf
+- Fake Out
+- Knock Off
+end
+choice p1 team 6421
+choice p2 team 6342
+choice p1 move Knock Off -2,switch mr. rime
+choice p2 move 4 2, move 2 -1
+choice p1 pass, switch 4
+choice p2 switch 3, pass
+choice p1 default
+choice p2 switch 4, move 1 -1
+choice p1 pass, switch 3
+choice p2 switch 4 ,  skip
+choice p1 move 2, move 4 1
+choice p2 move 2 1, move 2 2
+choice p1 switch 3, pass
+choice p2 move 1 1, move 4 2
+choice p1 move 3 -2, move 3 2
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Basculegion-F, L50, F, shiny|
+expect |poke|p1|Mr. Rime, L50, M, shiny|
+expect |poke|p1|Aerodactyl, L50, M|
+expect |poke|p1|Skarmory, L50, M|
+expect |poke|p1|Clefable, L50, F|
+expect |poke|p1|Krookodile, L50, F|
+expect |poke|p2|Runerigus, L50, M|
+expect |poke|p2|Diggersby, L50, F|
+expect |poke|p2|Malamar, L50, F|
+expect |poke|p2|Slowbro, L50, M|
+expect |poke|p2|Toxtricity, L50, M|
+expect |poke|p2|Pikachu, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |rng|2|0
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Sparky|Krookodile, L50, F|172/172
+expect |switch|p1a: Sparky|Krookodile, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Chomp|Skarmory, L50, M|172/172
+expect |switch|p1b: Chomp|Skarmory, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Pikachu|Pikachu, L50, F|112/112
+expect |switch|p2a: Pikachu|Pikachu, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Malamar|Malamar, L50, F|163/163
+expect |switch|p2b: Malamar|Malamar, L50, F|100/100
+expect |-ability|p1a: Sparky|Intimidate|boost
+expect |-unboost|p2a: Pikachu|atk|1
+expect |-boost|p2b: Malamar|atk|1
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Mr. Bubbles|Mr. Rime, L50, M, shiny|187/187
+expect |switch|p1b: Mr. Bubbles|Mr. Rime, L50, M, shiny|100/100
+expect |move|p1a: Sparky|Knock Off|p1b: Mr. Bubbles
+expect |rng|100|18
+expect |rng|24|6
+expect |rng|16|7
+expect |-supereffective|p1b: Mr. Bubbles|1
+expect |split|p1
+expect |-damage|p1b: Mr. Bubbles|0 fnt
+expect |-damage|p1b: Mr. Bubbles|0 fnt
+expect |-enditem|p1b: Mr. Bubbles|Leftovers|[from] move: Knock Off|[of] p1a: Sparky
+expect |faint|p1b: Mr. Bubbles
+expect |split|p1
+expect |-damage|p1a: Sparky|155/172|[from] item: Life Orb
+expect |-damage|p1a: Sparky|90/100|[from] item: Life Orb
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2a: Pikachu|Knock Off|p1a: Sparky
+expect |rng|100|39
+expect |rng|24|2
+expect |rng|16|12
+expect |-resisted|p1a: Sparky|1
+expect |split|p1
+expect |-damage|p1a: Sparky|128/172
+expect |-damage|p1a: Sparky|74/100
+expect |-enditem|p1a: Sparky|Life Orb|[from] move: Knock Off|[of] p2a: Pikachu
+expect |move|p2b: Malamar|Zen Headbutt|p2a: Pikachu
+expect |rng|100|27
+expect |rng|24|15
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Pikachu|0 fnt
+expect |-damage|p2a: Pikachu|0 fnt
+expect |rng|100|86
+expect |faint|p2a: Pikachu
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Chomp|Slowbro, L50, M|202/202
+expect |switch|p2a: Chomp|Slowbro, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Basculegion|Basculegion-F, L50, F, shiny|197/197
+expect |switch|p1b: Basculegion|Basculegion-F, L50, F, shiny|100/100
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Diggersby, L50, F|162/162
+expect |switch|p2a: X|Diggersby, L50, F|100/100
+expect |move|p1a: Sparky|Gunk Shot|p2b: Malamar
+expect |rng|100|38
+expect |rng|24|0
+expect |rng|16|12
+expect |-crit|p2b: Malamar
+expect |split|p2
+expect |-damage|p2b: Malamar|53/163
+expect |-damage|p2b: Malamar|32/100
+expect |rng|100|97
+expect |move|p1b: Basculegion|Flip Turn|p2a: X
+expect |rng|100|59
+expect |rng|24|4
+expect |rng|16|15
+expect |-supereffective|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|34/162
+expect |-damage|p2a: X|20/100y
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Chomp|Skarmory, L50, M|172/172|[from] Flip Turn
+expect |switch|p1b: Chomp|Skarmory, L50, M|100/100|[from] Flip Turn
+expect |move|p2b: Malamar|Superpower|p2a: X
+expect |rng|100|57
+expect |rng|24|7
+expect |rng|16|8
+expect |-supereffective|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|0 fnt
+expect |-damage|p2a: X|0 fnt
+expect |rng|100|7
+expect |-boost|p2b: Malamar|atk|1
+expect |-boost|p2b: Malamar|def|1
+expect |faint|p2a: X
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Chomp|Slowbro, L50, M|202/202
+expect |switch|p2a: Chomp|Slowbro, L50, M|100/100
+expect |turn|3
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Sparky|Stealth Rock|p2a: Chomp
+expect |-sidestart|p2: p2|move: Stealth Rock
+expect |move|p2b: Malamar|Zen Headbutt|p1b: Chomp
+expect |rng|100|31
+expect |rng|24|1
+expect |rng|16|10
+expect |-resisted|p1b: Chomp|1
+expect |split|p1
+expect |-damage|p1b: Chomp|130/172
+expect |-damage|p1b: Chomp|75/100
+expect |rng|100|77
+expect |split|p2
+expect |-damage|p2b: Malamar|26/163|[from] item: Rocky Helmet|[of] p1b: Chomp
+expect |-damage|p2b: Malamar|15/100|[from] item: Rocky Helmet|[of] p1b: Chomp
+expect |move|p1b: Chomp|Brave Bird|p2a: Chomp
+expect |rng|100|55
+expect |rng|24|11
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Chomp|121/202
+expect |-damage|p2a: Chomp|59/100
+expect |split|p1
+expect |-damage|p1b: Chomp|102/172|[from] item: Rocky Helmet|[of] p2a: Chomp
+expect |-damage|p1b: Chomp|59/100|[from] item: Rocky Helmet|[of] p2a: Chomp
+expect |split|p1
+expect |-damage|p1b: Chomp|75/172|[from] Recoil
+expect |-damage|p1b: Chomp|43/100|[from] Recoil
+expect |move|p2a: Chomp|Scald|p1a: Sparky
+expect |rng|100|13
+expect |rng|24|23
+expect |rng|16|1
+expect |-supereffective|p1a: Sparky|1
+expect |split|p1
+expect |-damage|p1a: Sparky|0 fnt
+expect |-damage|p1a: Sparky|0 fnt
+expect |rng|100|25
+expect |faint|p1a: Sparky
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Basculegion|Basculegion-F, L50, F, shiny|197/197
+expect |switch|p1a: Basculegion|Basculegion-F, L50, F, shiny|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1a: Basculegion|Wave Crash|p1b: Chomp
+expect |rng|100|37
+expect |rng|24|3
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Chomp|0 fnt
+expect |-damage|p1b: Chomp|0 fnt
+expect |split|p1
+expect |-damage|p1a: Basculegion|165/197|[from] item: Rocky Helmet|[of] p1b: Chomp
+expect |-damage|p1a: Basculegion|83/100|[from] item: Rocky Helmet|[of] p1b: Chomp
+expect |faint|p1b: Chomp
+expect |split|p1
+expect |-damage|p1a: Basculegion|140/197|[from] Recoil
+expect |-damage|p1a: Basculegion|71/100|[from] Recoil
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Malamar|Knock Off|p1a: Basculegion
+expect |rng|100|53
+expect |rng|24|21
+expect |rng|16|2
+expect |-supereffective|p1a: Basculegion|1
+expect |split|p1
+expect |-damage|p1a: Basculegion|0 fnt
+expect |-damage|p1a: Basculegion|0 fnt
+expect |-enditem|p1a: Basculegion|Mystic Water|[from] move: Knock Off|[of] p2b: Malamar
+expect |faint|p1a: Basculegion
+expect |
+expect |win|p2

@@ -1,0 +1,829 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed c8e6 3e34 ebd8 beb0
+genders drawn
+team p1
+Kangaskhan (F)
+Ability: Early Bird
+Level: 50
+Tera Type: Psychic
+EVs: 1 HP / 4 Atk / 9 Def / 29 SpA / 1 SpD / 21 Spe
+Jolly Nature
+- Metronome
+- Syrup Bomb
+
+Hydreigon @ Damp Rock
+Ability: Levitate
+Level: 50
+Tera Type: Bug
+EVs: 25 HP / 2 Def / 20 SpA / 12 Spe
+Quirky Nature
+- Swords Dance
+- Air Cutter
+
+Mimikyu (F) @ Poison Barb
+Ability: Disguise
+Level: 50
+Tera Type: Stellar
+EVs: 23 HP / 19 Atk / 4 Def / 3 SpA / 9 SpD / 3 Spe
+Lax Nature
+- Water Pulse
+
+Hippowdon
+Ability: Sand Force
+Level: 50
+Tera Type: Fighting
+EVs: 4 HP / 8 Atk / 18 Def / 23 SpA / 3 SpD / 3 Spe
+Modest Nature
+- Baby-Doll Eyes
+- Thief
+- Grass Knot
+
+Vanilluxe (M) @ Smooth Rock
+Ability: Snow Warning
+Level: 50
+Tera Type: Electric
+EVs: 17 HP / 1 Def / 14 SpA / 17 SpD / 17 Spe
+Mild Nature
+- Metronome
+- Explosion
+- Clanging Scales
+
+Mr. Bubbles (Vivillon-Icy Snow) (M) @ Fairy Feather
+Ability: Friend Guard
+Level: 50
+Tera Type: Ice
+EVs: 27 HP / 14 Atk / 11 SpA / 9 SpD
+Naive Nature
+- Leech Seed
+- Ceaseless Edge
+- Encore
+end
+team p2
+Nibbles (Arboliva) (F)
+Ability: Harvest
+Level: 50
+Tera Type: Ground
+EVs: 25 HP / 18 Atk / 4 Def / 19 SpA
+Lonely Nature
+- Metronome
+- Drill Peck
+- Quiver Dance
+- Flamethrower
+
+Sir Hops-a-Lot (Orthworm) @ Poison Barb
+Ability: Sand Veil
+Level: 50
+Tera Type: Ghost
+EVs: 3 HP / 27 Def / 2 SpA / 3 SpD / 31 Spe
+Lonely Nature
+- Energy Ball
+- Earth Power
+- Poison Jab
+- Salt Cure
+
+Mr. Bubbles (Infernape) @ Hard Stone
+Ability: Blaze
+Level: 50
+Tera Type: Fairy
+EVs: 23 HP / 2 Atk / 21 Def / 5 SpA / 1 SpD / 12 Spe
+Naive Nature
+- Grassy Terrain
+- Shelter
+- Dragon Tail
+- Electro Ball
+
+Aggron @ Aggronite
+Ability: Heavy Metal
+Level: 50
+Tera Type: Rock
+EVs: 3 HP / 1 Def / 4 SpA / 27 SpD / 23 Spe
+Relaxed Nature
+- Metronome
+- Focus Punch
+- Endure
+
+Zoë (Ariados) @ Miracle Seed
+Ability: Sniper
+Level: 50
+Shiny: Yes
+Tera Type: Rock
+EVs: 8 HP / 26 Atk / 9 Def / 7 SpA / 16 SpD
+Jolly Nature
+- Dive
+
+Pikachu (Maushold-Four)
+Ability: Cheek Pouch
+Level: 50
+Tera Type: Flying
+EVs: 5 HP / 22 Atk / 5 Def / 3 SpA / 30 SpD
+Brave Nature
+- Boomburst
+- Rock Wrecker
+- Make It Rain
+- Trailblaze
+end
+choice p1 team 5214
+choice p2 team 6342
+choice p1 move 3, move 2
+choice p2 move 2 1, move 2
+choice p1 default
+choice p2 move 1 ,  move 2
+choice p1 switch hippowdon,move Swords Dance
+choice p2 switch 4, switch 3
+choice p1 move Grass Knot +2, move aircutter
+choice p2 move 3 2, switch 3
+choice p1 move 3 1, move aircutter
+choice p2 move 3 1, switch 4
+choice p1 move 1 -2, switch 4
+choice p2 move 1 2, move 2 1
+choice p1 move 2 2, move 1
+choice p2 move 3 1, move 1
+choice p1 move 3 1, move 2 1
+choice p2 switch 4, skip
+choice p1 move 2 2, switch 4
+choice p2 default
+choice p1 move 3 2, move 1
+choice p2 move Grassy Terrain ,  move 4 +2
+choice p1 move 3 2, switch 4
+choice p2 move 1, move 4 2
+choice p1 move 3 2, move 2 -1
+choice p2 move 4 -2, move 1
+choice p2 switch 3, pass
+choice p1 move 3 2, move 2 2
+choice p2 move 2 2 mega, move 2 -1
+choice p1 move 3 1, move 2 -1
+choice p2 move metronome, move 1
+choice p1 switch hydreigon
+choice p2 move 2 -2, move 1
+choice p1 move 1, move 2 -1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Kangaskhan, L50, F|
+expect |poke|p1|Hydreigon, L50, F|
+expect |poke|p1|Mimikyu, L50, F|
+expect |poke|p1|Hippowdon, L50, M|
+expect |poke|p1|Vanilluxe, L50, M|
+expect |poke|p1|Vivillon-Icy Snow, L50, M|
+expect |poke|p2|Arboliva, L50, F|
+expect |poke|p2|Orthworm, L50, M|
+expect |poke|p2|Infernape, L50, F|
+expect |poke|p2|Aggron, L50, M|
+expect |poke|p2|Ariados, L50, M, shiny|
+expect |poke|p2|Maushold-Four, L50|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Vanilluxe|Vanilluxe, L50, M|163/163
+expect |switch|p1a: Vanilluxe|Vanilluxe, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Hydreigon|Hydreigon, L50, F|192/192
+expect |switch|p1b: Hydreigon|Hydreigon, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Pikachu|Maushold-Four, L50|154/154
+expect |switch|p2a: Pikachu|Maushold-Four, L50|100/100
+expect |split|p2
+expect |switch|p2b: Mr. Bubbles|Infernape, L50, F|174/174
+expect |switch|p2b: Mr. Bubbles|Infernape, L50, F|100/100
+expect |-weather|Snowscape|[from] ability: Snow Warning|[of] p1a: Vanilluxe
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Mr. Bubbles|Shelter|p2b: Mr. Bubbles
+expect |-boost|p2b: Mr. Bubbles|def|2
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Hydreigon|Air Cutter|p2a: Pikachu|[spread] p2a
+expect |rng|100|75
+expect |rng|100|95
+expect |-miss|p1b: Hydreigon|p2b: Mr. Bubbles
+expect |rng|8|0
+expect |rng|16|13
+expect |-crit|p2a: Pikachu
+expect |split|p2
+expect |-damage|p2a: Pikachu|120/154
+expect |-damage|p2a: Pikachu|77/100
+expect |rng|2|0
+expect |move|p2a: Pikachu|Rock Wrecker|p1a: Vanilluxe
+expect |rng|100|85
+expect |rng|24|0
+expect |rng|16|5
+expect |-supereffective|p1a: Vanilluxe|1
+expect |-crit|p1a: Vanilluxe
+expect |split|p1
+expect |-damage|p1a: Vanilluxe|0 fnt
+expect |-damage|p1a: Vanilluxe|0 fnt
+expect |-mustrecharge|p2a: Pikachu
+expect |faint|p1a: Vanilluxe
+expect |rng|2|1
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Kangaskhan|Kangaskhan, L50, F|181/181
+expect |switch|p1a: Kangaskhan|Kangaskhan, L50, F|100/100
+expect |turn|2
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Hippowdon|Hippowdon, L50, M|187/187
+expect |switch|p1a: Hippowdon|Hippowdon, L50, M|100/100
+expect |rng|2|0
+expect |move|p2b: Mr. Bubbles|Shelter|p2b: Mr. Bubbles
+expect |-boost|p2b: Mr. Bubbles|def|2
+expect |rng|2|0
+expect |move|p1b: Hydreigon|Swords Dance|p1b: Hydreigon
+expect |-boost|p1b: Hydreigon|atk|2
+expect |rng|2|1
+expect |rng|2|0
+expect |cant|p2a: Pikachu|recharge
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|3
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Aggron|Aggron, L50, M|148/148
+expect |switch|p2b: Aggron|Aggron, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Orthworm, L50, M|148/148
+expect |switch|p2a: Sir Hops-a-Lot|Orthworm, L50, M|100/100
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Hydreigon|Air Cutter|p2a: Sir Hops-a-Lot|[spread] p2a,p2b
+expect |rng|100|3
+expect |rng|100|78
+expect |rng|8|6
+expect |rng|16|13
+expect |-resisted|p2a: Sir Hops-a-Lot|1
+expect |rng|8|0
+expect |rng|16|15
+expect |-resisted|p2b: Aggron|2
+expect |-crit|p2b: Aggron
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|130/148
+expect |-damage|p2a: Sir Hops-a-Lot|87/100
+expect |split|p2
+expect |-damage|p2b: Aggron|139/148
+expect |-damage|p2b: Aggron|93/100
+expect |move|p1a: Hippowdon|Grass Knot|p2b: Aggron
+expect |rng|100|95
+expect |rng|24|8
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Aggron|81/148
+expect |-damage|p2b: Aggron|54/100
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Mr. Bubbles|Infernape, L50, F|174/174
+expect |switch|p2b: Mr. Bubbles|Infernape, L50, F|100/100
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Hydreigon|Air Cutter|p2a: Sir Hops-a-Lot|[spread] p2a,p2b
+expect |rng|100|62
+expect |rng|100|28
+expect |rng|8|6
+expect |rng|16|3
+expect |-resisted|p2a: Sir Hops-a-Lot|1
+expect |rng|8|4
+expect |rng|16|11
+expect |-supereffective|p2b: Mr. Bubbles|1
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|110/148
+expect |-damage|p2a: Sir Hops-a-Lot|74/100
+expect |split|p2
+expect |-damage|p2b: Mr. Bubbles|102/174
+expect |-damage|p2b: Mr. Bubbles|58/100
+expect |move|p2a: Sir Hops-a-Lot|Poison Jab|p1b: Hydreigon
+expect |rng|100|94
+expect |rng|24|18
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Hydreigon|151/192
+expect |-damage|p1b: Hydreigon|78/100
+expect |rng|100|0
+expect |-status|p1b: Hydreigon|psn
+expect |move|p1a: Hippowdon|Grass Knot|p2a: Sir Hops-a-Lot
+expect |rng|100|48
+expect |rng|24|17
+expect |rng|16|10
+expect |-resisted|p2a: Sir Hops-a-Lot|1
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|73/148
+expect |-damage|p2a: Sir Hops-a-Lot|49/100
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |split|p1
+expect |-damage|p1b: Hydreigon|127/192 psn|[from] psn
+expect |-damage|p1b: Hydreigon|66/100 psn|[from] psn
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Pikachu|Maushold-Four, L50|120/154
+expect |switch|p2b: Pikachu|Maushold-Four, L50|77/100
+expect |split|p1
+expect |switch|p1b: Kangaskhan|Kangaskhan, L50, F|181/181
+expect |switch|p1b: Kangaskhan|Kangaskhan, L50, F|100/100
+expect |move|p1a: Hippowdon|Baby-Doll Eyes|p1b: Kangaskhan
+expect |rng|100|54
+expect |-unboost|p1b: Kangaskhan|atk|1
+expect |move|p2a: Sir Hops-a-Lot|Poison Jab|p1a: Hippowdon
+expect |rng|100|52
+expect |rng|24|4
+expect |rng|16|0
+expect |-resisted|p1a: Hippowdon|1
+expect |split|p1
+expect |-damage|p1a: Hippowdon|171/187
+expect |-damage|p1a: Hippowdon|91/100
+expect |rng|100|73
+expect |
+expect |-weather|none
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p1b: Kangaskhan|Metronome|p1b: Kangaskhan
+expect |rng|447|357
+expect |rng|2|0
+expect |move|p1b: Kangaskhan|Sparkling Aria|p2a: Sir Hops-a-Lot|[from] move: Metronome|[spread] p1a,p2a,p2b
+expect |rng|100|31
+expect |rng|100|85
+expect |rng|100|43
+expect |rng|24|23
+expect |rng|16|1
+expect |-supereffective|p1a: Hippowdon|1
+expect |rng|24|14
+expect |rng|16|2
+expect |rng|24|23
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Hippowdon|121/187
+expect |-damage|p1a: Hippowdon|64/100
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|43/148
+expect |-damage|p2a: Sir Hops-a-Lot|29/100
+expect |split|p2
+expect |-damage|p2b: Pikachu|102/154
+expect |-damage|p2b: Pikachu|66/100
+expect |rng|100|15
+expect |rng|100|52
+expect |rng|100|49
+expect |move|p2b: Pikachu|Rock Wrecker|p1a: Hippowdon
+expect |rng|100|87
+expect |rng|24|14
+expect |rng|16|9
+expect |-resisted|p1a: Hippowdon|1
+expect |split|p1
+expect |-damage|p1a: Hippowdon|96/187
+expect |-damage|p1a: Hippowdon|51/100
+expect |-mustrecharge|p2b: Pikachu
+expect |move|p2a: Sir Hops-a-Lot|Energy Ball|p1b: Kangaskhan
+expect |rng|100|8
+expect |rng|24|5
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Kangaskhan|152/181
+expect |-damage|p1b: Kangaskhan|83/100
+expect |rng|100|70
+expect |move|p1a: Hippowdon|Thief|p2b: Pikachu
+expect |rng|100|54
+expect |rng|24|9
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2b: Pikachu|71/154
+expect |-damage|p2b: Pikachu|46/100
+expect |
+expect |upkeep
+expect |turn|7
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1b: Kangaskhan|Syrup Bomb|p2a: Sir Hops-a-Lot
+expect |rng|100|66
+expect |rng|24|4
+expect |rng|16|1
+expect |-resisted|p2a: Sir Hops-a-Lot|1
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|29/148
+expect |-damage|p2a: Sir Hops-a-Lot|19/100
+expect |rng|100|66
+expect |-start|p2a: Sir Hops-a-Lot|Syrup Bomb
+expect |rng|2|1
+expect |rng|2|1
+expect |cant|p2b: Pikachu|recharge
+expect |move|p2a: Sir Hops-a-Lot|Poison Jab|p1a: Hippowdon
+expect |rng|100|62
+expect |rng|24|2
+expect |rng|16|4
+expect |-resisted|p1a: Hippowdon|1
+expect |split|p1
+expect |-damage|p1a: Hippowdon|81/187
+expect |-damage|p1a: Hippowdon|43/100
+expect |rng|100|39
+expect |move|p1a: Hippowdon|Grass Knot|p2a: Sir Hops-a-Lot
+expect |rng|100|65
+expect |rng|24|13
+expect |rng|16|11
+expect |-resisted|p2a: Sir Hops-a-Lot|1
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|0 fnt
+expect |-damage|p2a: Sir Hops-a-Lot|0 fnt
+expect |faint|p2a: Sir Hops-a-Lot
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Mr. Bubbles|Infernape, L50, F|102/174
+expect |switch|p2a: Mr. Bubbles|Infernape, L50, F|58/100
+expect |turn|8
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Hydreigon|Hydreigon, L50, F|127/192 psn
+expect |switch|p1b: Hydreigon|Hydreigon, L50, F|66/100 psn
+expect |rng|2|0
+expect |move|p2a: Mr. Bubbles|Grassy Terrain|p2a: Mr. Bubbles
+expect |-fieldstart|move: Grassy Terrain
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Pikachu|Boomburst|p1b: Hydreigon|[spread] p2a,p1a,p1b
+expect |rng|100|47
+expect |rng|100|34
+expect |rng|100|69
+expect |rng|24|2
+expect |rng|16|1
+expect |rng|24|19
+expect |rng|16|11
+expect |rng|24|18
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|27/174
+expect |-damage|p2a: Mr. Bubbles|15/100
+expect |split|p1
+expect |-damage|p1a: Hippowdon|23/187
+expect |-damage|p1a: Hippowdon|12/100
+expect |split|p1
+expect |-damage|p1b: Hydreigon|76/192 psn
+expect |-damage|p1b: Hydreigon|39/100 psn
+expect |move|p1a: Hippowdon|Thief|p2b: Pikachu
+expect |rng|100|66
+expect |rng|24|19
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Pikachu|37/154
+expect |-damage|p2b: Pikachu|24/100
+expect |
+expect |split|p2
+expect |-heal|p2a: Mr. Bubbles|37/174|[from] Grassy Terrain
+expect |-heal|p2a: Mr. Bubbles|21/100|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2b: Pikachu|46/154|[from] Grassy Terrain
+expect |-heal|p2b: Pikachu|29/100|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1a: Hippowdon|34/187|[from] Grassy Terrain
+expect |-heal|p1a: Hippowdon|18/100|[from] Grassy Terrain
+expect |split|p1
+expect |-damage|p1b: Hydreigon|52/192 psn|[from] psn
+expect |-damage|p1b: Hydreigon|27/100 psn|[from] psn
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p2a: Mr. Bubbles|Grassy Terrain||[still]
+expect |-fail|p2a: Mr. Bubbles
+expect |move|p1b: Hydreigon|Swords Dance|p1b: Hydreigon
+expect |-boost|p1b: Hydreigon|atk|2
+expect |move|p2b: Pikachu|Trailblaze|p1b: Hydreigon
+expect |rng|100|74
+expect |rng|24|6
+expect |rng|16|6
+expect |-resisted|p1b: Hydreigon|1
+expect |split|p1
+expect |-damage|p1b: Hydreigon|37/192 psn
+expect |-damage|p1b: Hydreigon|19/100 psn
+expect |rng|100|22
+expect |-boost|p2b: Pikachu|spe|1
+expect |move|p1a: Hippowdon|Grass Knot|p2b: Pikachu
+expect |rng|100|17
+expect |rng|24|20
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Pikachu|34/154
+expect |-damage|p2b: Pikachu|22/100
+expect |
+expect |split|p2
+expect |-heal|p2b: Pikachu|43/154|[from] Grassy Terrain
+expect |-heal|p2b: Pikachu|27/100|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2a: Mr. Bubbles|47/174|[from] Grassy Terrain
+expect |-heal|p2a: Mr. Bubbles|27/100|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1a: Hippowdon|45/187|[from] Grassy Terrain
+expect |-heal|p1a: Hippowdon|24/100|[from] Grassy Terrain
+expect |split|p1
+expect |-damage|p1b: Hydreigon|13/192 psn|[from] psn
+expect |-damage|p1b: Hydreigon|6/100 psn|[from] psn
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Kangaskhan|Kangaskhan, L50, F|152/181
+expect |switch|p1b: Kangaskhan|Kangaskhan, L50, F|83/100
+expect |move|p2b: Pikachu|Trailblaze|p1b: Kangaskhan
+expect |rng|100|53
+expect |rng|24|13
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Kangaskhan|121/181
+expect |-damage|p1b: Kangaskhan|66/100
+expect |rng|100|38
+expect |-boost|p2b: Pikachu|spe|1
+expect |move|p2a: Mr. Bubbles|Grassy Terrain||[still]
+expect |-fail|p2a: Mr. Bubbles
+expect |move|p1a: Hippowdon|Grass Knot|p2b: Pikachu
+expect |rng|100|85
+expect |rng|24|12
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Pikachu|32/154
+expect |-damage|p2b: Pikachu|20/100y
+expect |
+expect |split|p2
+expect |-heal|p2b: Pikachu|41/154|[from] Grassy Terrain
+expect |-heal|p2b: Pikachu|26/100|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2a: Mr. Bubbles|57/174|[from] Grassy Terrain
+expect |-heal|p2a: Mr. Bubbles|32/100|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1b: Kangaskhan|132/181|[from] Grassy Terrain
+expect |-heal|p1b: Kangaskhan|72/100|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1a: Hippowdon|56/187|[from] Grassy Terrain
+expect |-heal|p1a: Hippowdon|29/100|[from] Grassy Terrain
+expect |upkeep
+expect |turn|11
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Pikachu|Boomburst|p1b: Kangaskhan|[spread] p2a,p1a,p1b
+expect |rng|100|30
+expect |rng|100|20
+expect |rng|100|71
+expect |rng|24|10
+expect |rng|16|3
+expect |rng|24|12
+expect |rng|16|15
+expect |rng|24|3
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|0 fnt
+expect |-damage|p2a: Mr. Bubbles|0 fnt
+expect |split|p1
+expect |-damage|p1a: Hippowdon|1/187
+expect |-damage|p1a: Hippowdon|1/100
+expect |split|p1
+expect |-damage|p1b: Kangaskhan|75/181
+expect |-damage|p1b: Kangaskhan|41/100
+expect |faint|p2a: Mr. Bubbles
+expect |move|p1b: Kangaskhan|Syrup Bomb|p1a: Hippowdon|[miss]
+expect |rng|100|90
+expect |-miss|p1b: Kangaskhan|p1a: Hippowdon
+expect |move|p1a: Hippowdon|Grass Knot|p2b: Pikachu
+expect |rng|100|47
+expect |rng|24|2
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Pikachu|29/154
+expect |-damage|p2b: Pikachu|18/100
+expect |
+expect |split|p2
+expect |-heal|p2b: Pikachu|38/154|[from] Grassy Terrain
+expect |-heal|p2b: Pikachu|24/100|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1b: Kangaskhan|86/181|[from] Grassy Terrain
+expect |-heal|p1b: Kangaskhan|47/100|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1a: Hippowdon|12/187|[from] Grassy Terrain
+expect |-heal|p1a: Hippowdon|6/100|[from] Grassy Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Aggron|Aggron, L50, M|81/148
+expect |switch|p2a: Aggron|Aggron, L50, M|54/100
+expect |turn|12
+expect |rng|2|1
+expect |
+expect |t:|
+expect |detailschange|p2a: Aggron|Aggron-Mega, L50, M
+expect |-mega|p2a: Aggron|Aggron|Aggronite
+expect |-singleturn|p2a: Aggron|move: Focus Punch
+expect |move|p2b: Pikachu|Rock Wrecker|p2a: Aggron
+expect |rng|100|21
+expect |rng|24|14
+expect |rng|16|5
+expect |-resisted|p2a: Aggron|1
+expect |split|p2
+expect |-damage|p2a: Aggron|66/148
+expect |-damage|p2a: Aggron|44/100
+expect |-mustrecharge|p2b: Pikachu
+expect |move|p1b: Kangaskhan|Syrup Bomb|p2b: Pikachu
+expect |rng|100|80
+expect |rng|24|18
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Pikachu|15/154
+expect |-damage|p2b: Pikachu|9/100
+expect |rng|100|7
+expect |-start|p2b: Pikachu|Syrup Bomb
+expect |move|p1a: Hippowdon|Grass Knot|p2b: Pikachu
+expect |rng|100|80
+expect |rng|24|10
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Pikachu|3/154
+expect |-damage|p2b: Pikachu|1/100
+expect |cant|p2a: Aggron|Focus Punch|Focus Punch
+expect |
+expect |split|p2
+expect |-heal|p2b: Pikachu|12/154|[from] Grassy Terrain
+expect |-heal|p2b: Pikachu|7/100|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1b: Kangaskhan|97/181|[from] Grassy Terrain
+expect |-heal|p1b: Kangaskhan|53/100|[from] Grassy Terrain
+expect |split|p2
+expect |-heal|p2a: Aggron|75/148|[from] Grassy Terrain
+expect |-heal|p2a: Aggron|50/100g|[from] Grassy Terrain
+expect |split|p1
+expect |-heal|p1a: Hippowdon|23/187|[from] Grassy Terrain
+expect |-heal|p1a: Hippowdon|12/100|[from] Grassy Terrain
+expect |-unboost|p2b: Pikachu|spe|1
+expect |-fieldend|move: Grassy Terrain
+expect |upkeep
+expect |turn|13
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |cant|p2b: Pikachu|recharge
+expect |move|p1b: Kangaskhan|Syrup Bomb|p1a: Hippowdon
+expect |rng|100|55
+expect |rng|24|12
+expect |rng|16|1
+expect |-supereffective|p1a: Hippowdon|1
+expect |split|p1
+expect |-damage|p1a: Hippowdon|0 fnt
+expect |-damage|p1a: Hippowdon|0 fnt
+expect |rng|100|5
+expect |faint|p1a: Hippowdon
+expect |move|p2a: Aggron|Metronome|p2a: Aggron
+expect |rng|447|165
+expect |rng|1|0
+expect |move|p2a: Aggron|Fake Tears|p1b: Kangaskhan|[from] move: Metronome
+expect |rng|100|59
+expect |-unboost|p1b: Kangaskhan|spd|2
+expect |
+expect |-unboost|p2b: Pikachu|spe|1
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Hydreigon|Hydreigon, L50, F|13/192 psn
+expect |switch|p1a: Hydreigon|Hydreigon, L50, F|6/100 psn
+expect |turn|14
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |-singleturn|p2a: Aggron|move: Focus Punch
+expect |rng|2|1
+expect |move|p1b: Kangaskhan|Syrup Bomb|p1a: Hydreigon
+expect |rng|100|66
+expect |rng|24|0
+expect |rng|16|13
+expect |-resisted|p1a: Hydreigon|1
+expect |-crit|p1a: Hydreigon
+expect |split|p1
+expect |-damage|p1a: Hydreigon|0 fnt
+expect |-damage|p1a: Hydreigon|0 fnt
+expect |rng|100|63
+expect |faint|p1a: Hydreigon
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Pikachu|Boomburst|p1b: Kangaskhan|[spread] p2a,p1b
+expect |rng|100|68
+expect |rng|100|93
+expect |rng|24|5
+expect |rng|16|11
+expect |-resisted|p2a: Aggron|1
+expect |rng|24|6
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Aggron|54/148
+expect |-damage|p2a: Aggron|36/100
+expect |split|p1
+expect |-damage|p1b: Kangaskhan|0 fnt
+expect |-damage|p1b: Kangaskhan|0 fnt
+expect |faint|p1b: Kangaskhan
+expect |-end|p2b: Pikachu|Syrup Bomb|[silent]
+expect |
+expect |win|p2
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"181/181","active":true,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"192/192","active":true,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Mimikyu","details":"Mimikyu, L50, F","condition":"153/153","active":false,"stats":{"atk":129,"def":114,"spa":73,"spd":120,"spe":119},"moves":["waterpulse"],"baseAbility":"disguise","item":"poisonbarb","pokeball":"pokeball","ability":"disguise","commanding":false,"reviving":false},{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"187/187","active":false,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"163/163","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Mr. Bubbles","details":"Vivillon-Icy Snow, L50, M","condition":"182/182","active":false,"stats":{"atk":86,"def":70,"spa":121,"spd":71,"spe":119},"moves":["leechseed","ceaselessedge","encore"],"baseAbility":"friendguard","item":"fairyfeather","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Nibbles","details":"Arboliva, L50, F","condition":"178/178","active":true,"stats":{"atk":117,"def":102,"spa":164,"spd":129,"spe":59},"moves":["metronome","drillpeck","quiverdance","flamethrower"],"baseAbility":"harvest","item":"","pokeball":"pokeball","ability":"harvest","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"148/148","active":true,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"174/174","active":false,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"148/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Zoë","details":"Ariados, L50, M, shiny","condition":"153/153","active":false,"stats":{"atk":136,"def":99,"spa":78,"spd":106,"spe":66},"moves":["dive"],"baseAbility":"sniper","item":"miracleseed","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"154/154","active":false,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Explosion","id":"explosion","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false},{"move":"Clanging Scales","id":"clangingscales","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Swords Dance","id":"swordsdance","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Air Cutter","id":"aircutter","pp":20,"maxpp":20,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"163/163","active":true,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"192/192","active":true,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"181/181","active":false,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"187/187","active":false,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Boomburst","id":"boomburst","pp":12,"maxpp":12,"target":"allAdjacent","disabled":false},{"move":"Rock Wrecker","id":"rockwrecker","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Trailblaze","id":"trailblaze","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Shelter","id":"shelter","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Electro Ball","id":"electroball","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"154/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"174/174","active":true,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"148/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"148/148","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":true,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"192/192","active":true,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"181/181","active":false,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"187/187","active":false,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"120/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"174/174","active":true,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"148/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"148/148","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Swords Dance","id":"swordsdance","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Air Cutter","id":"aircutter","pp":19,"maxpp":20,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"181/181","active":true,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"192/192","active":true,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"187/187","active":false,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Shelter","id":"shelter","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Electro Ball","id":"electroball","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"120/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"174/174","active":true,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"148/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"148/148","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Baby-Doll Eyes","id":"babydolleyes","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Swords Dance","id":"swordsdance","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"Air Cutter","id":"aircutter","pp":19,"maxpp":20,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"187/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"192/192","active":true,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"181/181","active":false,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Boomburst","id":"boomburst","pp":12,"maxpp":12,"target":"allAdjacent","disabled":false},{"move":"Rock Wrecker","id":"rockwrecker","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Trailblaze","id":"trailblaze","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Shelter","id":"shelter","pp":10,"maxpp":12,"target":"self","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Electro Ball","id":"electroball","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"120/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"174/174","active":true,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"148/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"148/148","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Baby-Doll Eyes","id":"babydolleyes","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Swords Dance","id":"swordsdance","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"Air Cutter","id":"aircutter","pp":18,"maxpp":20,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"187/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"192/192","active":true,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"181/181","active":false,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Energy Ball","id":"energyball","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Earth Power","id":"earthpower","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Salt Cure","id":"saltcure","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Metronome","id":"metronome","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Endure","id":"endure","pp":12,"maxpp":12,"target":"self","disabled":false}],"canMegaEvo":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"130/148","active":true,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"81/148","active":true,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"174/174","active":false,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"120/154","active":false,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Baby-Doll Eyes","id":"babydolleyes","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":18,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Swords Dance","id":"swordsdance","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"Air Cutter","id":"aircutter","pp":17,"maxpp":20,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"187/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"127/192 psn","active":true,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"181/181","active":false,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Energy Ball","id":"energyball","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Earth Power","id":"earthpower","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Salt Cure","id":"saltcure","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Shelter","id":"shelter","pp":10,"maxpp":12,"target":"self","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Electro Ball","id":"electroball","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"73/148","active":true,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"102/174","active":true,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"81/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"120/154","active":false,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Baby-Doll Eyes","id":"babydolleyes","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":18,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Metronome","id":"metronome","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"171/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"181/181","active":true,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"127/192 psn","active":false,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Energy Ball","id":"energyball","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Earth Power","id":"earthpower","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Salt Cure","id":"saltcure","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Boomburst","id":"boomburst","pp":12,"maxpp":12,"target":"allAdjacent","disabled":false},{"move":"Rock Wrecker","id":"rockwrecker","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Trailblaze","id":"trailblaze","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"73/148","active":true,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"120/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"81/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"102/174","active":false,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Baby-Doll Eyes","id":"babydolleyes","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":18,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Metronome","id":"metronome","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"96/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"152/181","active":true,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"127/192 psn","active":false,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Energy Ball","id":"energyball","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Earth Power","id":"earthpower","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Salt Cure","id":"saltcure","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"43/148","active":true,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"71/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"81/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"102/174","active":false,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"81/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"152/181","active":true,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"127/192 psn","active":false,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"0 fnt","active":true,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"71/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"81/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"102/174","active":false,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Baby-Doll Eyes","id":"babydolleyes","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":17,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Metronome","id":"metronome","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"81/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"152/181","active":true,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"127/192 psn","active":false,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":12,"maxpp":12,"target":"all","disabled":false},{"move":"Shelter","id":"shelter","pp":10,"maxpp":12,"target":"self","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Electro Ball","id":"electroball","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Boomburst","id":"boomburst","pp":12,"maxpp":12,"target":"allAdjacent","disabled":false},{"move":"Rock Wrecker","id":"rockwrecker","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Trailblaze","id":"trailblaze","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"102/174","active":true,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"71/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"81/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Baby-Doll Eyes","id":"babydolleyes","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":17,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Swords Dance","id":"swordsdance","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"Air Cutter","id":"aircutter","pp":17,"maxpp":20,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"34/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"52/192 psn","active":true,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"152/181","active":false,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":11,"maxpp":12,"target":"all","disabled":false},{"move":"Shelter","id":"shelter","pp":10,"maxpp":12,"target":"self","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Electro Ball","id":"electroball","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Boomburst","id":"boomburst","pp":11,"maxpp":12,"target":"allAdjacent","disabled":false},{"move":"Rock Wrecker","id":"rockwrecker","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Trailblaze","id":"trailblaze","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"37/174","active":true,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"46/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"81/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Baby-Doll Eyes","id":"babydolleyes","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":16,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Swords Dance","id":"swordsdance","pp":18,"maxpp":20,"target":"self","disabled":false},{"move":"Air Cutter","id":"aircutter","pp":17,"maxpp":20,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"45/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"13/192 psn","active":true,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"152/181","active":false,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":10,"maxpp":12,"target":"all","disabled":false},{"move":"Shelter","id":"shelter","pp":10,"maxpp":12,"target":"self","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Electro Ball","id":"electroball","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Boomburst","id":"boomburst","pp":11,"maxpp":12,"target":"allAdjacent","disabled":false},{"move":"Rock Wrecker","id":"rockwrecker","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Trailblaze","id":"trailblaze","pp":19,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"47/174","active":true,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"43/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"81/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Baby-Doll Eyes","id":"babydolleyes","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":15,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Metronome","id":"metronome","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"56/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"132/181","active":true,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"13/192 psn","active":false,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Grassy Terrain","id":"grassyterrain","pp":9,"maxpp":12,"target":"all","disabled":false},{"move":"Shelter","id":"shelter","pp":10,"maxpp":12,"target":"self","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Electro Ball","id":"electroball","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Boomburst","id":"boomburst","pp":11,"maxpp":12,"target":"allAdjacent","disabled":false},{"move":"Rock Wrecker","id":"rockwrecker","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Trailblaze","id":"trailblaze","pp":18,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"57/174","active":true,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"41/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"81/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"12/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"86/181","active":true,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"13/192 psn","active":false,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"0 fnt","active":true,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"38/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"81/148","active":false,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Baby-Doll Eyes","id":"babydolleyes","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":14,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Metronome","id":"metronome","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"12/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"86/181","active":true,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"13/192 psn","active":false,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Endure","id":"endure","pp":12,"maxpp":12,"target":"self","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Boomburst","id":"boomburst","pp":10,"maxpp":12,"target":"allAdjacent","disabled":false},{"move":"Rock Wrecker","id":"rockwrecker","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Trailblaze","id":"trailblaze","pp":18,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Aggron","details":"Aggron, L50, M","condition":"81/148","active":true,"stats":{"atk":130,"def":221,"spa":84,"spd":107,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"heavymetal","item":"aggronite","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"38/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"0 fnt","active":false,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Baby-Doll Eyes","id":"babydolleyes","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Grass Knot","id":"grassknot","pp":13,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Metronome","id":"metronome","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":9,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"23/187","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"97/181","active":true,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"13/192 psn","active":false,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Endure","id":"endure","pp":12,"maxpp":12,"target":"self","disabled":false}]},{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Aggron","details":"Aggron-Mega, L50, M","condition":"75/148","active":true,"stats":{"atk":160,"def":276,"spa":84,"spd":127,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"filter","item":"aggronite","pokeball":"pokeball","ability":"filter","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"12/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"0 fnt","active":false,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"0 fnt","active":true,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"97/181","active":true,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"13/192 psn","active":false,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Aggron","details":"Aggron-Mega, L50, M","condition":"75/148","active":true,"stats":{"atk":160,"def":276,"spa":84,"spd":127,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"filter","item":"aggronite","pokeball":"pokeball","ability":"filter","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"12/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"0 fnt","active":false,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Swords Dance","id":"swordsdance","pp":18,"maxpp":20,"target":"self","disabled":false},{"move":"Air Cutter","id":"aircutter","pp":17,"maxpp":20,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Metronome","id":"metronome","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Syrup Bomb","id":"syrupbomb","pp":8,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Hydreigon","details":"Hydreigon, L50, F","condition":"13/192 psn","active":true,"stats":{"atk":125,"def":112,"spa":165,"spd":110,"spe":130},"moves":["swordsdance","aircutter"],"baseAbility":"levitate","item":"damprock","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Kangaskhan","details":"Kangaskhan, L50, F","condition":"97/181","active":true,"stats":{"atk":119,"def":109,"spa":80,"spd":101,"spe":144},"moves":["metronome","syrupbomb"],"baseAbility":"earlybird","item":"","pokeball":"pokeball","ability":"earlybird","commanding":false,"reviving":false},{"ident":"p1: Vanilluxe","details":"Vanilluxe, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":95,"spa":158,"spd":132,"spe":116},"moves":["metronome","explosion","clangingscales"],"baseAbility":"snowwarning","item":"smoothrock","pokeball":"pokeball","ability":"snowwarning","commanding":false,"reviving":false},{"ident":"p1: Hippowdon","details":"Hippowdon, L50, M","condition":"0 fnt","active":false,"stats":{"atk":126,"def":156,"spa":122,"spd":95,"spe":70},"moves":["babydolleyes","thief","grassknot"],"baseAbility":"sandforce","item":"","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Metronome","id":"metronome","pp":11,"maxpp":12,"target":"self","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Endure","id":"endure","pp":12,"maxpp":12,"target":"self","disabled":false}]},{"moves":[{"move":"Boomburst","id":"boomburst","pp":10,"maxpp":12,"target":"allAdjacent","disabled":false},{"move":"Rock Wrecker","id":"rockwrecker","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Trailblaze","id":"trailblaze","pp":18,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Aggron","details":"Aggron-Mega, L50, M","condition":"75/148","active":true,"stats":{"atk":160,"def":276,"spa":84,"spd":127,"spe":83},"moves":["metronome","focuspunch","endure"],"baseAbility":"filter","item":"aggronite","pokeball":"pokeball","ability":"filter","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Maushold-Four, L50","condition":"12/154","active":true,"stats":{"atk":128,"def":95,"spa":88,"spd":125,"spe":117},"moves":["boomburst","rockwrecker","makeitrain","trailblaze"],"baseAbility":"cheekpouch","item":"","pokeball":"pokeball","ability":"cheekpouch","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Infernape, L50, F","condition":"0 fnt","active":false,"stats":{"atk":126,"def":112,"spa":129,"spd":82,"spe":154},"moves":["grassyterrain","shelter","dragontail","electroball"],"baseAbility":"blaze","item":"hardstone","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Sir Hops-a-Lot","details":"Orthworm, L50, M","condition":"0 fnt","active":false,"stats":{"atk":115,"def":172,"spa":82,"spd":78,"spe":116},"moves":["energyball","earthpower","poisonjab","saltcure"],"baseAbility":"sandveil","item":"poisonbarb","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false}]}}

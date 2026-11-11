@@ -1,0 +1,443 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 8540 a773 8042 b710
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Chandelure (M) @ Life Orb
+Ability: Flash Fire
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Fire Blast
+- Shadow Ball
+- Calm Mind
+- Will-O-Wisp
+
+Furfrou (M) @ Chesto Berry
+Ability: Fur Coat
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Double-Edge
+- Cotton Guard
+- Rest
+- Crunch
+
+Nibbles (Flareon) (M) @ Leftovers
+Ability: Guts
+Level: 50
+Shiny: Yes
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Superpower
+- Wish
+- Protect
+- Flare Blitz
+
+Golurk-Mega @ Golurkite
+Ability: Iron Fist
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Poltergeist
+- Headlong Rush
+- Close Combat
+- Stone Edge
+
+Meganium (F) @ Meganiumite
+Ability: Leaf Guard
+Level: 50
+Shiny: Yes
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Dazzling Gleam
+- Synthesis
+- Solar Beam
+- Weather Ball
+
+Tsareena (F) @ Choice Scarf
+Ability: Queenly Majesty
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- High Jump Kick
+- Knock Off
+- Triple Axel
+- Power Whip
+end
+team p2
+Stunfisk (M) @ Leftovers
+Ability: Static
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Earth Power
+- Stealth Rock
+- Scald
+- Discharge
+
+Scolipede-Mega (M) @ Scolipite
+Ability: Speed Boost
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Leech Life
+- Swords Dance
+- Gunk Shot
+- Earthquake
+
+Torterra (M) @ White Herb
+Ability: Overgrow
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Wood Hammer
+- Stone Edge
+- Headlong Rush
+- Shell Smash
+
+Pidgeot-Mega (F) @ Pidgeotite
+Ability: Big Pecks
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Mild Nature
+- U-turn
+- Heat Wave
+- Roost
+- Hurricane
+
+Mr. Bubbles (Avalugg-Hisui) (F) @ Rocky Helmet
+Ability: Sturdy
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Recover
+- Stone Edge
+- Body Press
+- Mountain Gale
+
+Passimian (F) @ Choice Scarf
+Ability: Defiant
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Close Combat
+- Knock Off
+- Earthquake
+- Rock Slide
+end
+choice p1 team 4321
+choice p2 team 5146
+choice p1 move 4 2, move 3
+choice p2 move 3 -2, move 1 2
+choice p1 switch chandelure, switch 3
+choice p2 switch 4, move 4
+choice p1 switch 4, move 1 1
+choice p2 move 4, move 3 2
+choice p1 move 1 +2 mega ,  move 1 +2
+choice p2 switch avalugg-hisui,move scald 1
+choice p1 pass, switch 4
+choice p2 default
+choice p1 default
+choice p2 move 2 -2, switch 4
+choice p2 skip, switch Pidgeot
+choice p1 move headlongrush +2 ,  move fireblast 2
+choice p2 move 4 1, move 1 -1 mega
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Chandelure, L50, M|
+expect |poke|p1|Furfrou, L50, M|
+expect |poke|p1|Flareon, L50, M, shiny|
+expect |poke|p1|Golurk, L50|
+expect |poke|p1|Meganium, L50, F, shiny|
+expect |poke|p1|Tsareena, L50, F|
+expect |poke|p2|Stunfisk, L50, M|
+expect |poke|p2|Scolipede, L50, M|
+expect |poke|p2|Torterra, L50, M|
+expect |poke|p2|Pidgeot, L50, F|
+expect |poke|p2|Avalugg-Hisui, L50, F|
+expect |poke|p2|Passimian, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Golurk|Golurk, L50|166/166
+expect |switch|p1a: Golurk|Golurk, L50|100/100
+expect |split|p1
+expect |switch|p1b: Nibbles|Flareon, L50, M, shiny|172/172
+expect |switch|p1b: Nibbles|Flareon, L50, M, shiny|100/100
+expect |split|p2
+expect |switch|p2a: Mr. Bubbles|Avalugg-Hisui, L50, F|202/202
+expect |switch|p2a: Mr. Bubbles|Avalugg-Hisui, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Stunfisk|Stunfisk, L50, M|216/216
+expect |switch|p2b: Stunfisk|Stunfisk, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Protect|p1b: Nibbles
+expect |-singleturn|p1b: Nibbles|Protect
+expect |move|p1a: Golurk|Stone Edge|p2b: Stunfisk
+expect |rng|100|4
+expect |rng|8|5
+expect |rng|16|10
+expect |-resisted|p2b: Stunfisk|1
+expect |split|p2
+expect |-damage|p2b: Stunfisk|183/216
+expect |-damage|p2b: Stunfisk|84/100
+expect |move|p2a: Mr. Bubbles|Body Press|p2b: Stunfisk
+expect |rng|100|32
+expect |rng|24|9
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Stunfisk|120/216
+expect |-damage|p2b: Stunfisk|55/100
+expect |rng|10|9
+expect |move|p2b: Stunfisk|Earth Power|p1b: Nibbles
+expect |-activate|p1b: Nibbles|move: Protect
+expect |
+expect |rng|2|1
+expect |split|p2
+expect |-heal|p2b: Stunfisk|133/216|[from] item: Leftovers
+expect |-heal|p2b: Stunfisk|61/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Chandelure|Chandelure, L50, M|137/137
+expect |switch|p1a: Chandelure|Chandelure, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Furfrou|Furfrou, L50, M|182/182
+expect |switch|p1b: Furfrou|Furfrou, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Passimian|Passimian, L50, F|177/177
+expect |switch|p2a: Passimian|Passimian, L50, F|100/100
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Stunfisk|Discharge|p1b: Furfrou|[spread] p2a,p1a,p1b
+expect |rng|100|46
+expect |rng|100|52
+expect |rng|100|96
+expect |rng|24|1
+expect |rng|16|13
+expect |rng|24|23
+expect |rng|16|10
+expect |rng|24|16
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Passimian|114/177
+expect |-damage|p2a: Passimian|64/100
+expect |split|p1
+expect |-damage|p1a: Chandelure|89/137
+expect |-damage|p1a: Chandelure|64/100
+expect |split|p1
+expect |-damage|p1b: Furfrou|133/182
+expect |-damage|p1b: Furfrou|73/100
+expect |rng|100|55
+expect |rng|100|87
+expect |rng|100|73
+expect |
+expect |split|p2
+expect |-heal|p2b: Stunfisk|146/216|[from] item: Leftovers
+expect |-heal|p2b: Stunfisk|67/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|3
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Golurk|Golurk, L50|166/166
+expect |switch|p1a: Golurk|Golurk, L50|100/100
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Passimian|Rock Slide|p1a: Golurk|[spread] p1a,p1b
+expect |rng|100|10
+expect |rng|100|41
+expect |rng|24|2
+expect |rng|16|7
+expect |-resisted|p1a: Golurk|1
+expect |rng|24|16
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Golurk|147/166
+expect |-damage|p1a: Golurk|88/100
+expect |split|p1
+expect |-damage|p1b: Furfrou|109/182
+expect |-damage|p1b: Furfrou|59/100
+expect |rng|100|89
+expect |rng|100|68
+expect |move|p1b: Furfrou|Double-Edge|p2a: Passimian
+expect |rng|100|12
+expect |rng|24|15
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Passimian|9/177
+expect |-damage|p2a: Passimian|5/100
+expect |split|p1
+expect |-damage|p1b: Furfrou|74/182|[from] Recoil
+expect |-damage|p1b: Furfrou|40/100|[from] Recoil
+expect |move|p2b: Stunfisk|Scald|p1b: Furfrou
+expect |rng|100|32
+expect |rng|24|20
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1b: Furfrou|27/182
+expect |-damage|p1b: Furfrou|14/100
+expect |rng|100|4
+expect |-status|p1b: Furfrou|brn
+expect |
+expect |split|p2
+expect |-heal|p2b: Stunfisk|159/216|[from] item: Leftovers
+expect |-heal|p2b: Stunfisk|73/100|[from] item: Leftovers
+expect |split|p1
+expect |-damage|p1b: Furfrou|16/182 brn|[from] brn
+expect |-damage|p1b: Furfrou|8/100 brn|[from] brn
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Mr. Bubbles|Avalugg-Hisui, L50, F|202/202
+expect |switch|p2a: Mr. Bubbles|Avalugg-Hisui, L50, F|100/100
+expect |detailschange|p1a: Golurk|Golurk-Mega, L50
+expect |-mega|p1a: Golurk|Golurk|Golurkite
+expect |move|p1b: Furfrou|Double-Edge|p2b: Stunfisk
+expect |rng|100|96
+expect |rng|24|18
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Stunfisk|108/216
+expect |-damage|p2b: Stunfisk|50/100y
+expect |rng|10|5
+expect |split|p1
+expect |-damage|p1b: Furfrou|0 fnt|[from] Recoil
+expect |-damage|p1b: Furfrou|0 fnt|[from] Recoil
+expect |faint|p1b: Furfrou
+expect |move|p1a: Golurk|Poltergeist|p2b: Stunfisk
+expect |rng|100|72
+expect |-activate|p2b: Stunfisk|move: Poltergeist|Leftovers
+expect |rng|24|5
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Stunfisk|0 fnt
+expect |-damage|p2b: Stunfisk|0 fnt
+expect |faint|p2b: Stunfisk
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Chandelure|Chandelure, L50, M|89/137
+expect |switch|p1b: Chandelure|Chandelure, L50, M|64/100
+expect |split|p2
+expect |switch|p2b: Pidgeot|Pidgeot, L50, F|190/190
+expect |switch|p2b: Pidgeot|Pidgeot, L50, F|100/100
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Passimian|Passimian, L50, F|9/177
+expect |switch|p2b: Passimian|Passimian, L50, F|5/100
+expect |move|p1b: Chandelure|Fire Blast|p2b: Passimian
+expect |rng|100|36
+expect |rng|24|17
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Passimian|0 fnt
+expect |-damage|p2b: Passimian|0 fnt
+expect |rng|100|78
+expect |faint|p2b: Passimian
+expect |split|p1
+expect |-damage|p1b: Chandelure|76/137|[from] item: Life Orb
+expect |-damage|p1b: Chandelure|55/100|[from] item: Life Orb
+expect |move|p1a: Golurk|Poltergeist|p2a: Mr. Bubbles
+expect |rng|100|16
+expect |-activate|p2a: Mr. Bubbles|move: Poltergeist|Rocky Helmet
+expect |rng|24|21
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|129/202
+expect |-damage|p2a: Mr. Bubbles|63/100
+expect |move|p2a: Mr. Bubbles|Stone Edge|p2: Passimian|[notarget]
+expect |-fail|p2a: Mr. Bubbles
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Pidgeot|Pidgeot, L50, F|190/190
+expect |switch|p2b: Pidgeot|Pidgeot, L50, F|100/100
+expect |turn|6
+expect |
+expect |t:|
+expect |detailschange|p2b: Pidgeot|Pidgeot-Mega, L50, F
+expect |-mega|p2b: Pidgeot|Pidgeot|Pidgeotite
+expect |move|p2b: Pidgeot|U-turn|p2a: Mr. Bubbles
+expect |rng|24|0
+expect |rng|16|4
+expect |-crit|p2a: Mr. Bubbles
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|106/202
+expect |-damage|p2a: Mr. Bubbles|52/100
+expect |split|p2
+expect |-damage|p2b: Pidgeot|159/190|[from] item: Rocky Helmet|[of] p2a: Mr. Bubbles
+expect |-damage|p2b: Pidgeot|83/100|[from] item: Rocky Helmet|[of] p2a: Mr. Bubbles
+expect |move|p1b: Chandelure|Fire Blast|p2b: Pidgeot
+expect |rng|24|4
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Pidgeot|0 fnt
+expect |-damage|p2b: Pidgeot|0 fnt
+expect |rng|100|25
+expect |faint|p2b: Pidgeot
+expect |split|p1
+expect |-damage|p1b: Chandelure|63/137|[from] item: Life Orb
+expect |-damage|p1b: Chandelure|45/100|[from] item: Life Orb
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Golurk|Headlong Rush|p2a: Mr. Bubbles
+expect |rng|100|76
+expect |rng|24|23
+expect |rng|16|10
+expect |-supereffective|p2a: Mr. Bubbles|1
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|0 fnt
+expect |-damage|p2a: Mr. Bubbles|0 fnt
+expect |rng|100|22
+expect |-unboost|p1a: Golurk|def|1
+expect |-unboost|p1a: Golurk|spd|1
+expect |split|p1
+expect |-damage|p1a: Golurk|120/166|[from] item: Rocky Helmet|[of] p2a: Mr. Bubbles
+expect |-damage|p1a: Golurk|72/100|[from] item: Rocky Helmet|[of] p2a: Mr. Bubbles
+expect |faint|p2a: Mr. Bubbles
+expect |
+expect |win|p1

@@ -1,0 +1,308 @@
+# gen9ou-gen5-2133004-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@write
+>start {"formatid":"gen9ou","seed":"gen5,4a2144f2322030ca","rated":"Rated battle"}
+>player p1 {"name":"Alice","team":"Eelektrik|||Levitate|FirstImpression,TripleAxel,FlameCharge|Brave|58,71,157,19,103,54|||||,,NestBall,,,Fire]Nosepass||SharpBeak|Sturdy|SleepTalk,FreezeDry,AuroraVeil,AuraSphere|Impish|74,51,40,15,40,252|F||||,,CherishBall,,,Poison]Cramorant||ChopleBerry|GulpMissile|AuraSphere,RisingVoltage,LuminaCrash,Yawn|Sassy|117,7,83,212,24,54|||||,,,,,Dragon]Chomp|PikachuUnova||Static|VictoryDance|Rash|137,40,235,15,3,80|||||,,,,,Fairy]Weepinbell|||Chlorophyll|VictoryDance,SeedFlare|Gentle|11,89,35,172,47,152|||||,,SportBall,,,Stellar]Mudkip||FireStone|Damp|XScissor|Bold|13,34,199,63,76,15|F||||,,,,,Ice"}
+>player p2 {"name":"Bob","team":"Tadbulb|||Static|IcyWind,IvyCudgel,CircleThrow,PetalDance|Hasty|44,232,36,1,177,15|||||,,,,,Water]Typhlosion||GalaricaCuff|Blaze|WorrySeed,RageFist|Lax|9,233,86,175,,6|||||,,,,,Bug]Inkay||LumBerry|SuctionCups|Stomp,AncientPower,MeanLook|Lax|165,86,2,132,76,33|||||,,,,,Dark]Larvesta|||FlameBody|PetalDance|Docile|101,86,,175,136,2|||||,,LuxuryBall,,,Dragon]Zoë|GrowlitheHisui|PrismScale|Intimidate|ZapCannon|Lax|191,,4,88,45,180|F||||,,,,,Rock]Zweilous|||Hustle|ThunderFang,BulletSeed|Quirky|41,17,103,245,29,17|M||||,,DreamBall,,,Fire"}
+>p2 default
+# a comment
+>p1 team 2, 6, 3, 4, 1, 5
+>p2 undo
+>p2 move 4 terastallize
+@write
+>p1 switch weepinbell
+>p1 switch 2
+>p2 default
+>p1 switch cramorant
+
+>p2 move 1
+>p2 switch 2
+@write
+>p1 switch 5
+>p2 switch 3
+# a comment
+>p1 switch 2
+>p2 switch 5
+>p1 switch 6
+@write
+>p1 switch 2
+>p2 move 1
+>p1 default
+
+>p1 ﻿switch 3　
+>p2 move 1
+>p1 switch 2
+>p2 switch 2
+>p1 switch 6
+@write
+>p1 switch MUDKIP
+
+>p1 switch WEEPINBELL
+>p1 move
+>p1 undo
+>p1 switch Nosepass
+>p2 switch inkay
+@write
+
+>p2 switch 2
+>p1 move 4 terastallize
+>p2 switch 3
+>forcetie
+@message
+update
+|t:|
+|gametype|singles
+|player|p1|Alice||
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] OU
+|rated|
+|rule|HP Percentage Mod: HP is shown in percentages
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|Species Clause: Limit one of each Pokémon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Items Clause: Evasion items are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Evasion Abilities Clause: Evasion abilities are banned
+|rule|Sleep Moves Clause: Sleep-inducing moves are banned
+|clearpoke
+|poke|p1|Eelektrik, F|
+|poke|p1|Nosepass, F|
+|poke|p1|Cramorant, F|
+|poke|p1|Pikachu-Unova, M|
+|poke|p1|Weepinbell, F|
+|poke|p1|Mudkip, F|
+|poke|p2|Tadbulb, M|
+|poke|p2|Typhlosion, F|
+|poke|p2|Inkay, M|
+|poke|p2|Larvesta, F|
+|poke|p2|Growlithe-Hisui, F|
+|poke|p2|Zweilous, M|
+|teampreview
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: Nosepass|Nosepass, F|219/219
+|switch|p1a: Nosepass|Nosepass, F|100/100
+|split|p2
+|switch|p2a: Tadbulb|Tadbulb, M|274/274
+|switch|p2a: Tadbulb|Tadbulb, M|100/100
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Sleep Talk","id":"sleeptalk","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Freeze-Dry","id":"freezedry","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Aura Sphere","id":"aurasphere","pp":32,"maxpp":32,"target":"any","disabled":false}],"canTerastallize":"Poison"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Nosepass","details":"Nosepass, F","condition":"219/219","active":true,"stats":{"atk":138,"def":347,"spa":116,"spd":226,"spe":159},"moves":["sleeptalk","freezedry","auroraveil","aurasphere"],"baseAbility":"sturdy","item":"sharpbeak","pokeball":"cherishball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mudkip","details":"Mudkip, F","condition":"244/244","active":false,"stats":{"atk":165,"def":203,"spa":151,"spd":155,"spe":119},"moves":["xscissor"],"baseAbility":"damp","item":"firestone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, F","condition":"310/310","active":false,"stats":{"atk":207,"def":166,"spa":259,"spd":255,"spe":197},"moves":["aurasphere","risingvoltage","luminacrash","yawn"],"baseAbility":"gulpmissile","item":"chopleberry","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Chomp","details":"Pikachu-Unova, M","condition":"245/245","active":false,"stats":{"atk":156,"def":174,"spa":152,"spd":122,"spe":236},"moves":["victorydance"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Eelektrik","details":"Eelektrik, F","condition":"285/285","active":false,"stats":{"atk":245,"def":215,"spa":190,"spd":201,"spe":116},"moves":["firstimpression","tripleaxel","flamecharge"],"baseAbility":"levitate","item":"","pokeball":"nestball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Weepinbell","details":"Weepinbell, F","condition":"273/273","active":false,"stats":{"atk":238,"def":129,"spa":249,"spd":150,"spe":184},"moves":["victorydance","seedflare"],"baseAbility":"chlorophyll","item":"","pokeball":"sportball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Icy Wind","id":"icywind","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Ivy Cudgel","id":"ivycudgel","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Circle Throw","id":"circlethrow","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":16,"maxpp":16,"target":"randomNormal","disabled":false}],"canTerastallize":"Water"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Tadbulb","details":"Tadbulb, M","condition":"274/274","active":true,"stats":{"atk":156,"def":114,"spa":154,"spd":150,"spe":141},"moves":["icywind","ivycudgel","circlethrow","petaldance"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Typhlosion","details":"Typhlosion, F","condition":"299/299","active":false,"stats":{"atk":262,"def":234,"spa":297,"spd":185,"spe":237},"moves":["worryseed","ragefist"],"baseAbility":"blaze","item":"galaricacuff","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, M","condition":"288/288","active":false,"stats":{"atk":165,"def":156,"spa":143,"spd":132,"spe":134},"moves":["stomp","ancientpower","meanlook"],"baseAbility":"suctioncups","item":"lumberry","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Larvesta","details":"Larvesta, F","condition":"276/276","active":false,"stats":{"atk":227,"def":146,"spa":179,"spd":180,"spe":156},"moves":["petaldance"],"baseAbility":"flamebody","item":"","pokeball":"luxuryball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoë","details":"Growlithe-Hisui, F","condition":"308/308","active":false,"stats":{"atk":186,"def":139,"spa":188,"spd":132,"spe":191},"moves":["zapcannon"],"baseAbility":"intimidate","item":"prismscale","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Zweilous","details":"Zweilous, M","condition":"295/295","active":false,"stats":{"atk":210,"def":201,"spa":227,"spd":183,"spe":156},"moves":["thunderfang","bulletseed"],"baseAbility":"hustle","item":"","pokeball":"dreamball","ability":"hustle","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Weepinbell|Weepinbell, F|273/273
+|switch|p1a: Weepinbell|Weepinbell, F|100/100
+|-terastallize|p2a: Tadbulb|Water
+|move|p2a: Tadbulb|Petal Dance|p1a: Weepinbell
+|-resisted|p1a: Weepinbell
+|split|p1
+|-damage|p1a: Weepinbell|248/273
+|-damage|p1a: Weepinbell|91/100
+|
+|upkeep
+|turn|2
+|
+|t:|
+|split|p1
+|switch|p1a: Mudkip|Mudkip, F|244/244
+|switch|p1a: Mudkip|Mudkip, F|100/100
+|move|p2a: Tadbulb|Petal Dance|p1a: Mudkip|[from] lockedmove
+|-supereffective|p1a: Mudkip
+|split|p1
+|-damage|p1a: Mudkip|62/244
+|-damage|p1a: Mudkip|26/100
+|
+|upkeep
+|turn|3
+|
+|t:|
+|split|p1
+|switch|p1a: Cramorant|Cramorant, F|310/310
+|switch|p1a: Cramorant|Cramorant, F|100/100
+|move|p2a: Tadbulb|Petal Dance|p1a: Cramorant|[from] lockedmove
+|split|p1
+|-damage|p1a: Cramorant|253/310
+|-damage|p1a: Cramorant|82/100
+|-start|p2a: Tadbulb|confusion|[fatigue]
+|
+|upkeep
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Aura Sphere","id":"aurasphere","pp":32,"maxpp":32,"target":"any","disabled":false},{"move":"Rising Voltage","id":"risingvoltage","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Lumina Crash","id":"luminacrash","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Yawn","id":"yawn","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Dragon"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Cramorant","details":"Cramorant, F","condition":"253/310","active":true,"stats":{"atk":207,"def":166,"spa":259,"spd":255,"spe":197},"moves":["aurasphere","risingvoltage","luminacrash","yawn"],"baseAbility":"gulpmissile","item":"chopleberry","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Weepinbell","details":"Weepinbell, F","condition":"248/273","active":false,"stats":{"atk":238,"def":129,"spa":249,"spd":150,"spe":184},"moves":["victorydance","seedflare"],"baseAbility":"chlorophyll","item":"","pokeball":"sportball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Mudkip","details":"Mudkip, F","condition":"62/244","active":false,"stats":{"atk":165,"def":203,"spa":151,"spd":155,"spe":119},"moves":["xscissor"],"baseAbility":"damp","item":"firestone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Chomp","details":"Pikachu-Unova, M","condition":"245/245","active":false,"stats":{"atk":156,"def":174,"spa":152,"spd":122,"spe":236},"moves":["victorydance"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Eelektrik","details":"Eelektrik, F","condition":"285/285","active":false,"stats":{"atk":245,"def":215,"spa":190,"spd":201,"spe":116},"moves":["firstimpression","tripleaxel","flamecharge"],"baseAbility":"levitate","item":"","pokeball":"nestball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Nosepass","details":"Nosepass, F","condition":"219/219","active":false,"stats":{"atk":138,"def":347,"spa":116,"spd":226,"spe":159},"moves":["sleeptalk","freezedry","auroraveil","aurasphere"],"baseAbility":"sturdy","item":"sharpbeak","pokeball":"cherishball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Icy Wind","id":"icywind","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Ivy Cudgel","id":"ivycudgel","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Circle Throw","id":"circlethrow","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":15,"maxpp":16,"target":"randomNormal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Tadbulb","details":"Tadbulb, M","condition":"274/274","active":true,"stats":{"atk":156,"def":114,"spa":154,"spd":150,"spe":141},"moves":["icywind","ivycudgel","circlethrow","petaldance"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Typhlosion","details":"Typhlosion, F","condition":"299/299","active":false,"stats":{"atk":262,"def":234,"spa":297,"spd":185,"spe":237},"moves":["worryseed","ragefist"],"baseAbility":"blaze","item":"galaricacuff","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, M","condition":"288/288","active":false,"stats":{"atk":165,"def":156,"spa":143,"spd":132,"spe":134},"moves":["stomp","ancientpower","meanlook"],"baseAbility":"suctioncups","item":"lumberry","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Larvesta","details":"Larvesta, F","condition":"276/276","active":false,"stats":{"atk":227,"def":146,"spa":179,"spd":180,"spe":156},"moves":["petaldance"],"baseAbility":"flamebody","item":"","pokeball":"luxuryball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoë","details":"Growlithe-Hisui, F","condition":"308/308","active":false,"stats":{"atk":186,"def":139,"spa":188,"spd":132,"spe":191},"moves":["zapcannon"],"baseAbility":"intimidate","item":"prismscale","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Zweilous","details":"Zweilous, M","condition":"295/295","active":false,"stats":{"atk":210,"def":201,"spa":227,"spd":183,"spe":156},"moves":["thunderfang","bulletseed"],"baseAbility":"hustle","item":"","pokeball":"dreamball","ability":"hustle","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Eelektrik|Eelektrik, F|285/285
+|switch|p1a: Eelektrik|Eelektrik, F|100/100
+|split|p2
+|switch|p2a: Typhlosion|Typhlosion, F|299/299
+|switch|p2a: Typhlosion|Typhlosion, F|100/100
+|
+|upkeep
+|turn|5
+|
+|t:|
+|split|p2
+|switch|p2a: Inkay|Inkay, M|288/288
+|switch|p2a: Inkay|Inkay, M|100/100
+|split|p1
+|switch|p1a: Weepinbell|Weepinbell, F|248/273
+|switch|p1a: Weepinbell|Weepinbell, F|91/100
+|
+|upkeep
+|turn|6
+|
+|t:|
+|split|p1
+|switch|p1a: Nosepass|Nosepass, F|219/219
+|switch|p1a: Nosepass|Nosepass, F|100/100
+|split|p2
+|switch|p2a: Zoë|Growlithe-Hisui, F|308/308
+|switch|p2a: Zoë|Growlithe-Hisui, F|100/100
+|-ability|p2a: Zoë|Intimidate|boost
+|-unboost|p1a: Nosepass|atk|1
+|
+|upkeep
+|turn|7
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Sleep Talk","id":"sleeptalk","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Freeze-Dry","id":"freezedry","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Aura Sphere","id":"aurasphere","pp":32,"maxpp":32,"target":"any","disabled":false}],"canTerastallize":"Poison"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Nosepass","details":"Nosepass, F","condition":"219/219","active":true,"stats":{"atk":138,"def":347,"spa":116,"spd":226,"spe":159},"moves":["sleeptalk","freezedry","auroraveil","aurasphere"],"baseAbility":"sturdy","item":"sharpbeak","pokeball":"cherishball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Eelektrik","details":"Eelektrik, F","condition":"285/285","active":false,"stats":{"atk":245,"def":215,"spa":190,"spd":201,"spe":116},"moves":["firstimpression","tripleaxel","flamecharge"],"baseAbility":"levitate","item":"","pokeball":"nestball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Mudkip","details":"Mudkip, F","condition":"62/244","active":false,"stats":{"atk":165,"def":203,"spa":151,"spd":155,"spe":119},"moves":["xscissor"],"baseAbility":"damp","item":"firestone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Chomp","details":"Pikachu-Unova, M","condition":"245/245","active":false,"stats":{"atk":156,"def":174,"spa":152,"spd":122,"spe":236},"moves":["victorydance"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, F","condition":"253/310","active":false,"stats":{"atk":207,"def":166,"spa":259,"spd":255,"spe":197},"moves":["aurasphere","risingvoltage","luminacrash","yawn"],"baseAbility":"gulpmissile","item":"chopleberry","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Weepinbell","details":"Weepinbell, F","condition":"248/273","active":false,"stats":{"atk":238,"def":129,"spa":249,"spd":150,"spe":184},"moves":["victorydance","seedflare"],"baseAbility":"chlorophyll","item":"","pokeball":"sportball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Zap Cannon","id":"zapcannon","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Zoë","details":"Growlithe-Hisui, F","condition":"308/308","active":true,"stats":{"atk":186,"def":139,"spa":188,"spd":132,"spe":191},"moves":["zapcannon"],"baseAbility":"intimidate","item":"prismscale","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Tadbulb","details":"Tadbulb, M","condition":"274/274","active":false,"stats":{"atk":156,"def":114,"spa":154,"spd":150,"spe":141},"moves":["icywind","ivycudgel","circlethrow","petaldance"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Typhlosion","details":"Typhlosion, F","condition":"299/299","active":false,"stats":{"atk":262,"def":234,"spa":297,"spd":185,"spe":237},"moves":["worryseed","ragefist"],"baseAbility":"blaze","item":"galaricacuff","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Larvesta","details":"Larvesta, F","condition":"276/276","active":false,"stats":{"atk":227,"def":146,"spa":179,"spd":180,"spe":156},"moves":["petaldance"],"baseAbility":"flamebody","item":"","pokeball":"luxuryball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, M","condition":"288/288","active":false,"stats":{"atk":165,"def":156,"spa":143,"spd":132,"spe":134},"moves":["stomp","ancientpower","meanlook"],"baseAbility":"suctioncups","item":"lumberry","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Zweilous","details":"Zweilous, M","condition":"295/295","active":false,"stats":{"atk":210,"def":201,"spa":227,"spd":183,"spe":156},"moves":["thunderfang","bulletseed"],"baseAbility":"hustle","item":"","pokeball":"dreamball","ability":"hustle","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Eelektrik|Eelektrik, F|285/285
+|switch|p1a: Eelektrik|Eelektrik, F|100/100
+|move|p2a: Zoë|Zap Cannon|p1a: Eelektrik
+|-resisted|p1a: Eelektrik
+|split|p1
+|-damage|p1a: Eelektrik|242/285
+|-damage|p1a: Eelektrik|85/100
+|
+|upkeep
+|turn|8
+|
+|t:|
+|split|p1
+|switch|p1a: Mudkip|Mudkip, F|62/244
+|switch|p1a: Mudkip|Mudkip, F|26/100
+|move|p2a: Zoë|Zap Cannon|p1a: Mudkip
+|-supereffective|p1a: Mudkip
+|split|p1
+|-damage|p1a: Mudkip|0 fnt
+|-damage|p1a: Mudkip|0 fnt
+|faint|p1a: Mudkip
+|
+|upkeep
+|
+|t:|
+|split|p1
+|switch|p1a: Nosepass|Nosepass, F|219/219
+|switch|p1a: Nosepass|Nosepass, F|100/100
+|turn|9
+|
+|t:|
+|split|p2
+|switch|p2a: Tadbulb|Tadbulb, M, tera:Water|274/274
+|switch|p2a: Tadbulb|Tadbulb, M, tera:Water|100/100
+|split|p1
+|switch|p1a: Weepinbell|Weepinbell, F|248/273
+|switch|p1a: Weepinbell|Weepinbell, F|91/100
+|
+|upkeep
+|turn|10
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Victory Dance","id":"victorydance","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Seed Flare","id":"seedflare","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Stellar"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Weepinbell","details":"Weepinbell, F","condition":"248/273","active":true,"stats":{"atk":238,"def":129,"spa":249,"spd":150,"spe":184},"moves":["victorydance","seedflare"],"baseAbility":"chlorophyll","item":"","pokeball":"sportball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Mudkip","details":"Mudkip, F","condition":"0 fnt","active":false,"stats":{"atk":165,"def":203,"spa":151,"spd":155,"spe":119},"moves":["xscissor"],"baseAbility":"damp","item":"firestone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Eelektrik","details":"Eelektrik, F","condition":"242/285","active":false,"stats":{"atk":245,"def":215,"spa":190,"spd":201,"spe":116},"moves":["firstimpression","tripleaxel","flamecharge"],"baseAbility":"levitate","item":"","pokeball":"nestball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Pikachu-Unova, M","condition":"245/245","active":false,"stats":{"atk":156,"def":174,"spa":152,"spd":122,"spe":236},"moves":["victorydance"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, F","condition":"253/310","active":false,"stats":{"atk":207,"def":166,"spa":259,"spd":255,"spe":197},"moves":["aurasphere","risingvoltage","luminacrash","yawn"],"baseAbility":"gulpmissile","item":"chopleberry","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Nosepass","details":"Nosepass, F","condition":"219/219","active":false,"stats":{"atk":138,"def":347,"spa":116,"spd":226,"spe":159},"moves":["sleeptalk","freezedry","auroraveil","aurasphere"],"baseAbility":"sturdy","item":"sharpbeak","pokeball":"cherishball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Icy Wind","id":"icywind","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Ivy Cudgel","id":"ivycudgel","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Circle Throw","id":"circlethrow","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Petal Dance","id":"petaldance","pp":15,"maxpp":16,"target":"randomNormal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Tadbulb","details":"Tadbulb, M","condition":"274/274","active":true,"stats":{"atk":156,"def":114,"spa":154,"spd":150,"spe":141},"moves":["icywind","ivycudgel","circlethrow","petaldance"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Zoë","details":"Growlithe-Hisui, F","condition":"308/308","active":false,"stats":{"atk":186,"def":139,"spa":188,"spd":132,"spe":191},"moves":["zapcannon"],"baseAbility":"intimidate","item":"prismscale","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Typhlosion","details":"Typhlosion, F","condition":"299/299","active":false,"stats":{"atk":262,"def":234,"spa":297,"spd":185,"spe":237},"moves":["worryseed","ragefist"],"baseAbility":"blaze","item":"galaricacuff","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Larvesta","details":"Larvesta, F","condition":"276/276","active":false,"stats":{"atk":227,"def":146,"spa":179,"spd":180,"spe":156},"moves":["petaldance"],"baseAbility":"flamebody","item":"","pokeball":"luxuryball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, M","condition":"288/288","active":false,"stats":{"atk":165,"def":156,"spa":143,"spd":132,"spe":134},"moves":["stomp","ancientpower","meanlook"],"baseAbility":"suctioncups","item":"lumberry","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Zweilous","details":"Zweilous, M","condition":"295/295","active":false,"stats":{"atk":210,"def":201,"spa":227,"spd":183,"spe":156},"moves":["thunderfang","bulletseed"],"baseAbility":"hustle","item":"","pokeball":"dreamball","ability":"hustle","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You can't switch to a fainted Pokémon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Nosepass|Nosepass, F|219/219
+|switch|p1a: Nosepass|Nosepass, F|100/100
+|split|p2
+|switch|p2a: Inkay|Inkay, M|288/288
+|switch|p2a: Inkay|Inkay, M|100/100
+|
+|upkeep
+|turn|11
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Sleep Talk","id":"sleeptalk","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Freeze-Dry","id":"freezedry","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Aurora Veil","id":"auroraveil","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Aura Sphere","id":"aurasphere","pp":32,"maxpp":32,"target":"any","disabled":false}],"canTerastallize":"Poison"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Nosepass","details":"Nosepass, F","condition":"219/219","active":true,"stats":{"atk":138,"def":347,"spa":116,"spd":226,"spe":159},"moves":["sleeptalk","freezedry","auroraveil","aurasphere"],"baseAbility":"sturdy","item":"sharpbeak","pokeball":"cherishball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mudkip","details":"Mudkip, F","condition":"0 fnt","active":false,"stats":{"atk":165,"def":203,"spa":151,"spd":155,"spe":119},"moves":["xscissor"],"baseAbility":"damp","item":"firestone","pokeball":"pokeball","ability":"damp","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Eelektrik","details":"Eelektrik, F","condition":"242/285","active":false,"stats":{"atk":245,"def":215,"spa":190,"spd":201,"spe":116},"moves":["firstimpression","tripleaxel","flamecharge"],"baseAbility":"levitate","item":"","pokeball":"nestball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Chomp","details":"Pikachu-Unova, M","condition":"245/245","active":false,"stats":{"atk":156,"def":174,"spa":152,"spd":122,"spe":236},"moves":["victorydance"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Cramorant","details":"Cramorant, F","condition":"253/310","active":false,"stats":{"atk":207,"def":166,"spa":259,"spd":255,"spe":197},"moves":["aurasphere","risingvoltage","luminacrash","yawn"],"baseAbility":"gulpmissile","item":"chopleberry","pokeball":"pokeball","ability":"gulpmissile","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p1: Weepinbell","details":"Weepinbell, F","condition":"248/273","active":false,"stats":{"atk":238,"def":129,"spa":249,"spd":150,"spe":184},"moves":["victorydance","seedflare"],"baseAbility":"chlorophyll","item":"","pokeball":"sportball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Stomp","id":"stomp","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Ancient Power","id":"ancientpower","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Mean Look","id":"meanlook","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Inkay","details":"Inkay, M","condition":"288/288","active":true,"stats":{"atk":165,"def":156,"spa":143,"spd":132,"spe":134},"moves":["stomp","ancientpower","meanlook"],"baseAbility":"suctioncups","item":"lumberry","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Zoë","details":"Growlithe-Hisui, F","condition":"308/308","active":false,"stats":{"atk":186,"def":139,"spa":188,"spd":132,"spe":191},"moves":["zapcannon"],"baseAbility":"intimidate","item":"prismscale","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Typhlosion","details":"Typhlosion, F","condition":"299/299","active":false,"stats":{"atk":262,"def":234,"spa":297,"spd":185,"spe":237},"moves":["worryseed","ragefist"],"baseAbility":"blaze","item":"galaricacuff","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Larvesta","details":"Larvesta, F","condition":"276/276","active":false,"stats":{"atk":227,"def":146,"spa":179,"spd":180,"spe":156},"moves":["petaldance"],"baseAbility":"flamebody","item":"","pokeball":"luxuryball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Tadbulb","details":"Tadbulb, M","condition":"274/274","active":false,"stats":{"atk":156,"def":114,"spa":154,"spd":150,"spe":141},"moves":["icywind","ivycudgel","circlethrow","petaldance"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Water","terastallized":"Water"},{"ident":"p2: Zweilous","details":"Zweilous, M","condition":"295/295","active":false,"stats":{"atk":210,"def":201,"spa":227,"spd":183,"spe":156},"moves":["thunderfang","bulletseed"],"baseAbility":"hustle","item":"","pokeball":"dreamball","ability":"hustle","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Zoë|Growlithe-Hisui, F|308/308
+|switch|p2a: Zoë|Growlithe-Hisui, F|100/100
+|-ability|p2a: Zoë|Intimidate|boost
+|-unboost|p1a: Nosepass|atk|1
+|-terastallize|p1a: Nosepass|Poison
+|move|p1a: Nosepass|Aura Sphere|p2a: Zoë
+|-supereffective|p2a: Zoë
+|split|p2
+|-damage|p2a: Zoë|190/308
+|-damage|p2a: Zoë|62/100
+|
+|upkeep
+|turn|12
+|
+|tie
+@message
+sideupdate
+p1
+|request|null
+@message
+sideupdate
+p2
+|request|null
+@message
+end
+{"winner":"","seed":"gen5,4a2144f2322030ca","turns":12,"p1":"Alice","p2":"Bob","p1team":[{"name":"Eelektrik","species":"Eelektrik","item":"","ability":"Levitate","moves":["First Impression","Triple Axel","Flame Charge"],"nature":"Brave","evs":{"hp":58,"atk":71,"def":157,"spa":19,"spd":103,"spe":54},"happiness":255,"hpType":"","pokeball":"Nest Ball","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Nosepass","species":"Nosepass","item":"Sharp Beak","ability":"Sturdy","moves":["Sleep Talk","Freeze-Dry","Aurora Veil","Aura Sphere"],"nature":"Impish","evs":{"hp":74,"atk":51,"def":40,"spa":15,"spd":40,"spe":252},"gender":"F","happiness":255,"hpType":"","pokeball":"Cherish Ball","gigantamax":false,"dynamaxLevel":10,"teraType":"Poison","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Cramorant","species":"Cramorant","item":"Chople Berry","ability":"Gulp Missile","moves":["Aura Sphere","Rising Voltage","Lumina Crash","Yawn"],"nature":"Sassy","evs":{"hp":117,"atk":7,"def":83,"spa":212,"spd":24,"spe":54},"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Pikachu-Unova","item":"","ability":"Static","moves":["Victory Dance"],"nature":"Rash","evs":{"hp":137,"atk":40,"def":235,"spa":15,"spd":3,"spe":80},"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Weepinbell","species":"Weepinbell","item":"","ability":"Chlorophyll","moves":["Victory Dance","Seed Flare"],"nature":"Gentle","evs":{"hp":11,"atk":89,"def":35,"spa":172,"spd":47,"spe":152},"happiness":255,"hpType":"","pokeball":"Sport Ball","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Mudkip","species":"Mudkip","item":"Fire Stone","ability":"Damp","moves":["X-Scissor"],"nature":"Bold","evs":{"hp":13,"atk":34,"def":199,"spa":63,"spd":76,"spe":15},"gender":"F","happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Tadbulb","species":"Tadbulb","item":"","ability":"Static","moves":["Icy Wind","Ivy Cudgel","Circle Throw","Petal Dance"],"nature":"Hasty","evs":{"hp":44,"atk":232,"def":36,"spa":1,"spd":177,"spe":15},"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Water","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Typhlosion","species":"Typhlosion","item":"Galarica Cuff","ability":"Blaze","moves":["Worry Seed","Rage Fist"],"nature":"Lax","evs":{"hp":9,"atk":233,"def":86,"spa":175,"spd":0,"spe":6},"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Inkay","species":"Inkay","item":"Lum Berry","ability":"Suction Cups","moves":["Stomp","Ancient Power","Mean Look"],"nature":"Lax","evs":{"hp":165,"atk":86,"def":2,"spa":132,"spd":76,"spe":33},"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Larvesta","species":"Larvesta","item":"","ability":"Flame Body","moves":["Petal Dance"],"nature":"Docile","evs":{"hp":101,"atk":86,"def":0,"spa":175,"spd":136,"spe":2},"happiness":255,"hpType":"","pokeball":"Luxury Ball","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Zoë","species":"Growlithe-Hisui","item":"Prism Scale","ability":"Intimidate","moves":["Zap Cannon"],"nature":"Lax","evs":{"hp":191,"atk":0,"def":4,"spa":88,"spd":45,"spe":180},"gender":"F","happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Zweilous","species":"Zweilous","item":"","ability":"Hustle","moves":["Thunder Fang","Bullet Seed"],"nature":"Quirky","evs":{"hp":41,"atk":17,"def":103,"spa":245,"spd":29,"spe":17},"gender":"M","happiness":255,"hpType":"","pokeball":"Dream Ball","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","level":100,"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[5,6],"inputLog":[">start {\"formatid\":\"gen9ou\",\"seed\":\"gen5,4a2144f2322030ca\",\"rated\":\"Rated battle\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Eelektrik|||Levitate|FirstImpression,TripleAxel,FlameCharge|Brave|58,71,157,19,103,54|||||,,NestBall,,,Fire]Nosepass||SharpBeak|Sturdy|SleepTalk,FreezeDry,AuroraVeil,AuraSphere|Impish|74,51,40,15,40,252|F||||,,CherishBall,,,Poison]Cramorant||ChopleBerry|GulpMissile|AuraSphere,RisingVoltage,LuminaCrash,Yawn|Sassy|117,7,83,212,24,54|||||,,,,,Dragon]Chomp|PikachuUnova||Static|VictoryDance|Rash|137,40,235,15,3,80|||||,,,,,Fairy]Weepinbell|||Chlorophyll|VictoryDance,SeedFlare|Gentle|11,89,35,172,47,152|||||,,SportBall,,,Stellar]Mudkip||FireStone|Damp|XScissor|Bold|13,34,199,63,76,15|F||||,,,,,Ice\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Tadbulb|||Static|IcyWind,IvyCudgel,CircleThrow,PetalDance|Hasty|44,232,36,1,177,15|||||,,,,,Water]Typhlosion||GalaricaCuff|Blaze|WorrySeed,RageFist|Lax|9,233,86,175,,6|||||,,,,,Bug]Inkay||LumBerry|SuctionCups|Stomp,AncientPower,MeanLook|Lax|165,86,2,132,76,33|||||,,,,,Dark]Larvesta|||FlameBody|PetalDance|Docile|101,86,,175,136,2|||||,,LuxuryBall,,,Dragon]Zoë|GrowlitheHisui|PrismScale|Intimidate|ZapCannon|Lax|191,,4,88,45,180|F||||,,,,,Rock]Zweilous|||Hustle|ThunderFang,BulletSeed|Quirky|41,17,103,245,29,17|M||||,,DreamBall,,,Fire\"}",">p1 team 2, 6, 3, 4, 1, 5",">p2 team 1, 2, 3, 4, 5, 6",">p1 switch 6",">p2 move petaldance terastallize",">p1 switch 2",">p2 move petaldance",">p1 switch 3",">p2 move petaldance",">p1 switch 5",">p2 switch 2",">p1 switch 2",">p2 switch 3",">p1 switch 6",">p2 switch 5",">p1 switch 2",">p2 move zapcannon",">p1 switch 3",">p2 move zapcannon",">p1 switch 2",">p1 switch 6",">p2 switch 2",">p1 switch 6",">p2 switch 5",">p1 move aurasphere terastallize",">p2 switch 2",">forcetie"]}

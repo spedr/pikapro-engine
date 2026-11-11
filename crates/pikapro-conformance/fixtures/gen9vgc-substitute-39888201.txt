@@ -1,0 +1,781 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 4b65 ca96 90d7 7009
+genders drawn
+team p1
+Girafarig @ Grepa Berry
+Ability: Inner Focus
+Level: 50
+Tera Type: Poison
+EVs: 73 HP / 9 Atk / 125 Def / 57 SpA / 187 SpD / 5 Spe
+Rash Nature
+- Boomburst
+- Population Bomb
+- Curse
+- Leech Seed
+
+Vaporeon (F) @ Dusk Ball
+Ability: Water Absorb
+Level: 50
+Tera Type: Ground
+EVs: 134 HP / 199 Atk / 5 SpD / 170 Spe
+Serious Nature
+- Substitute
+- U-turn
+- Super Fang
+- Transform
+
+Drakloak
+Ability: Infiltrator
+Level: 50
+Tera Type: Steel
+EVs: 170 HP / 49 Atk / 88 Def / 1 SpA / 177 SpD / 25 Spe
+Impish Nature
+- Tachyon Cutter
+- Focus Punch
+
+Dolliv (M)
+Ability: Early Bird
+Level: 50
+Tera Type: Fire
+EVs: 16 HP / 13 Atk / 225 Def / 219 SpA / 10 SpD / 17 Spe
+Mild Nature
+- Substitute
+- Shed Tail
+- Baton Pass
+- Draining Kiss
+
+Venomoth @ Clear Amulet
+Ability: Wonder Skin
+Level: 50
+Tera Type: Electric
+EVs: 15 HP / 16 Atk / 181 Def / 3 SpA / 105 SpD / 110 Spe
+Quiet Nature
+- Circle Throw
+- Jungle Healing
+- Bounce
+- Memento
+
+Pikachu (Shellos-East) @ Eviolite
+Ability: Sticky Hold
+Level: 50
+Tera Type: Steel
+EVs: 201 HP / 150 Atk / 35 Def / 16 SpA / 15 SpD / 3 Spe
+Careful Nature
+- Vacuum Wave
+- Sheer Cold
+end
+team p2
+Zoë (Spiritomb)
+Ability: Infiltrator
+Level: 50
+Tera Type: Ghost
+EVs: 203 HP / 2 Atk / 27 Def / 196 SpA / 16 SpD / 23 Spe
+Naive Nature
+- Yawn
+
+Sparky (Kingdra) (F) @ Magmarizer
+Ability: Swift Swim
+Level: 50
+Tera Type: Dragon
+EVs: 184 HP / 22 SpA / 114 SpD / 190 Spe
+Hasty Nature
+- Substitute
+- U-turn
+- Super Fang
+- Transform
+
+ThisNameIsFarTooLongToKeep (Vivillon-Sun) (M) @ Power Anklet
+Ability: Compound Eyes
+Level: 50
+Tera Type: Poison
+EVs: 120 HP / 9 Atk / 94 Def / 199 SpA / 34 SpD / 43 Spe
+Calm Nature
+- Teatime
+- Jet Punch
+- Vise Grip
+- Clangorous Soul
+
+Cacnea (F) @ Adamant Crystal
+Ability: Water Absorb
+Level: 50
+Tera Type: Dark
+EVs: 8 HP / 7 Atk / 97 Def / 63 SpA / 206 SpD / 121 Spe
+Naive Nature
+- Tidy Up
+
+Big Tony's Pal (Moltres-Galar) @ Meadow Plate
+Ability: Berserk
+Level: 50
+Tera Type: Stellar
+EVs: 141 HP / 69 Atk / 38 Def / 11 SpA / 107 SpD / 121 Spe
+Calm Nature
+- Substitute
+- Shed Tail
+- Baton Pass
+- Draining Kiss
+
+Sneasel-Hisui (M)
+Ability: Pickpocket
+Level: 50
+Shiny: Yes
+Tera Type: Dragon
+EVs: 2 HP / 5 Atk / 219 Def / 84 SpA / 185 SpD
+Adamant Nature
+- Boomburst
+- Population Bomb
+- Curse
+- Leech Seed
+end
+choice p1 team 2154
+choice p2 team 3256
+choice p1 move 3 1 ,  switch Venomoth
+choice p2 move 3 2, move 1
+choice p1 move 2 2, move 3 1
+choice p2 move 2 2, move 2 2 terastallize
+choice p2 pass ,  switch 4
+choice p1 switch 4, pass
+choice p2 move 3 2, switch 4
+choice p1 move 4 1, move 1
+choice p2 switch 3, pass
+choice p1 move 4 2, move 3 2 terastallize
+choice p2 move 3, move 4 2
+choice p2 switch 4, pass
+choice p1 move 1,move 1
+choice p2 move 1 ,  move Circle Throw +1
+choice p1 move 2, move 3 -1
+choice p2 move 4 -2, move 4 1
+choice p1 switch 4, pass
+choice p2 pass,switch 4
+choice p1 move 3 1, move 1
+choice p2 move 4 2 ,  move 2
+choice p1 move 1, move 3 2
+choice p2 move 2 -2, move 3
+choice p1 move 3 -2, move 1
+choice p2 move 3, move 4 -1
+choice p1 move transform 1 ,  move Memento -1
+choice p2 default
+choice p1 move 4 1, switch 4
+choice p2 move 4 1, move 3
+choice p1 default
+choice p2 move 4 1, move 2
+choice p1 pass, switch 3
+choice p2 pass, move 1
+choice p1 move 4 -2, move 2 -1
+choice p2 pass, move 3
+choice p1 move 2 2, move 3
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Girafarig, L50, M|
+expect |poke|p1|Vaporeon, L50, F|
+expect |poke|p1|Drakloak, L50, M|
+expect |poke|p1|Dolliv, L50, M|
+expect |poke|p1|Venomoth, L50, F|
+expect |poke|p1|Shellos-East, L50, F|
+expect |poke|p2|Spiritomb, L50, M|
+expect |poke|p2|Kingdra, L50, F|
+expect |poke|p2|Vivillon-Sun, L50, M|
+expect |poke|p2|Cacnea, L50, F|
+expect |poke|p2|Moltres-Galar, L50|
+expect |poke|p2|Sneasel-Hisui, L50, M|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Vaporeon|Vaporeon, L50, F|222/222
+expect |switch|p1a: Vaporeon|Vaporeon, L50, F|222/222
+expect |split|p1
+expect |switch|p1b: Girafarig|Girafarig, L50, M|154/154
+expect |switch|p1b: Girafarig|Girafarig, L50, M|154/154
+expect |rng|2|1
+expect |split|p2
+expect |switch|p2a: ThisNameIsFarTooLong|Vivillon-Sun, L50, M|170/170
+expect |switch|p2a: ThisNameIsFarTooLong|Vivillon-Sun, L50, M|170/170
+expect |split|p2
+expect |switch|p2b: Sparky|Kingdra, L50, F|173/173
+expect |switch|p2b: Sparky|Kingdra, L50, F|173/173
+expect |rng|2|0
+expect |rng|2|0
+expect |turn|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |split|p1
+expect |switch|p1b: Venomoth|Venomoth, L50, F|147/147
+expect |switch|p1b: Venomoth|Venomoth, L50, F|147/147
+expect |move|p2b: Sparky|Substitute|p2b: Sparky
+expect |-start|p2b: Sparky|Substitute
+expect |split|p2
+expect |-damage|p2b: Sparky|130/173
+expect |-damage|p2b: Sparky|130/173
+expect |move|p1a: Vaporeon|Super Fang|p2a: ThisNameIsFarTooLong
+expect |rng|100|89
+expect |split|p2
+expect |-damage|p2a: ThisNameIsFarTooLong|85/170
+expect |-damage|p2a: ThisNameIsFarTooLong|85/170
+expect |move|p2a: ThisNameIsFarTooLong|Vise Grip|p1b: Venomoth
+expect |rng|100|61
+expect |rng|24|16
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1b: Venomoth|131/147
+expect |-damage|p1b: Venomoth|131/147
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |-terastallize|p2b: Sparky|Dragon
+expect |move|p2a: ThisNameIsFarTooLong|Jet Punch|p1b: Venomoth
+expect |rng|100|29
+expect |rng|24|18
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Venomoth|116/147
+expect |-damage|p1b: Venomoth|116/147
+expect |move|p2b: Sparky|U-turn|p1b: Venomoth
+expect |rng|100|96
+expect |rng|24|4
+expect |rng|16|4
+expect |-resisted|p1b: Venomoth
+expect |split|p1
+expect |-damage|p1b: Venomoth|99/147
+expect |-damage|p1b: Venomoth|99/147
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Sneasel|Sneasel-Hisui, L50, M, shiny|130/130|[from] U-turn
+expect |switch|p2b: Sneasel|Sneasel-Hisui, L50, M, shiny|130/130|[from] U-turn
+expect |move|p1b: Venomoth|Bounce||[still]
+expect |-prepare|p1b: Venomoth|Bounce
+expect |move|p1a: Vaporeon|U-turn|p2b: Sneasel
+expect |rng|100|82
+expect |rng|24|7
+expect |rng|16|15
+expect |-resisted|p2b: Sneasel
+expect |split|p2
+expect |-damage|p2b: Sneasel|123/130
+expect |-damage|p2b: Sneasel|123/130
+expect |-enditem|p1a: Vaporeon|Dusk Ball|[silent]|[from] ability: Pickpocket|[of] p1a: Vaporeon
+expect |-item|p2b: Sneasel|Dusk Ball|[from] ability: Pickpocket|[of] p1a: Vaporeon
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Dolliv|Dolliv, L50, M|129/129|[from] U-turn
+expect |switch|p1a: Dolliv|Dolliv, L50, M|129/129|[from] U-turn
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Sparky|Kingdra, L50, F, tera:Dragon|130/173
+expect |switch|p2b: Sparky|Kingdra, L50, F, tera:Dragon|130/173
+expect |move|p1b: Venomoth|Bounce|p2a: ThisNameIsFarTooLong|[from] lockedmove
+expect |rng|100|79
+expect |rng|24|15
+expect |rng|16|8
+expect |-supereffective|p2a: ThisNameIsFarTooLong
+expect |split|p2
+expect |-damage|p2a: ThisNameIsFarTooLong|11/170
+expect |-damage|p2a: ThisNameIsFarTooLong|11/170
+expect |rng|100|97
+expect |move|p2a: ThisNameIsFarTooLong|Vise Grip|p1b: Venomoth
+expect |rng|100|63
+expect |rng|24|10
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1b: Venomoth|84/147
+expect |-damage|p1b: Venomoth|84/147
+expect |move|p1a: Dolliv|Draining Kiss|p2a: ThisNameIsFarTooLong
+expect |rng|100|38
+expect |rng|24|12
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: ThisNameIsFarTooLong|0 fnt
+expect |-damage|p2a: ThisNameIsFarTooLong|0 fnt
+expect |faint|p2a: ThisNameIsFarTooLong
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Big Tony's Pal|Moltres-Galar, L50|183/183
+expect |switch|p2a: Big Tony's Pal|Moltres-Galar, L50|183/183
+expect |turn|4
+expect |
+expect |t:|
+expect |-terastallize|p1b: Venomoth|Electric
+expect |move|p2b: Sparky|Transform|p1b: Venomoth
+expect |-transform|p2b: Sparky|p1b: Venomoth
+expect |move|p2a: Big Tony's Pal|Baton Pass|p2a: Big Tony's Pal
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sneasel|Sneasel-Hisui, L50, M, shiny|123/130|[from] Baton Pass
+expect |switch|p2a: Sneasel|Sneasel-Hisui, L50, M, shiny|123/130|[from] Baton Pass
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Venomoth|Bounce||[still]
+expect |-prepare|p1b: Venomoth|Bounce
+expect |rng|2|0
+expect |move|p1a: Dolliv|Draining Kiss|p2b: Sparky
+expect |rng|100|39
+expect |rng|24|1
+expect |rng|16|9
+expect |-supereffective|p2b: Sparky
+expect |split|p2
+expect |-damage|p2b: Sparky|78/173
+expect |-damage|p2b: Sparky|78/173
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |rng|2|0
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Sneasel|Boomburst|p1b: Venomoth|[spread] p2b,p1a
+expect |-miss|p2a: Sneasel|p1b: Venomoth
+expect |rng|100|63
+expect |rng|100|29
+expect |rng|24|16
+expect |rng|16|7
+expect |rng|24|17
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Sparky|54/173
+expect |-damage|p2b: Sparky|54/173
+expect |split|p1
+expect |-damage|p1a: Dolliv|102/129
+expect |-damage|p1a: Dolliv|102/129
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1b: Venomoth|Bounce|p2b: Sparky|[from] lockedmove
+expect |rng|100|34
+expect |rng|24|14
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Sparky|23/173
+expect |-damage|p2b: Sparky|23/173
+expect |rng|100|97
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Dolliv|Substitute|p1a: Dolliv
+expect |-start|p1a: Dolliv|Substitute
+expect |split|p1
+expect |-damage|p1a: Dolliv|70/129
+expect |-damage|p1a: Dolliv|70/129
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Sparky|Circle Throw|p1a: Dolliv
+expect |rng|100|21
+expect |rng|24|6
+expect |rng|16|6
+expect |-supereffective|p1a: Dolliv
+expect |-end|p1a: Dolliv|Substitute
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |upkeep
+expect |rng|2|0
+expect |turn|6
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Sneasel|Leech Seed|p2b: Sparky|[miss]
+expect |rng|100|96
+expect |-miss|p2a: Sneasel|p2b: Sparky
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Sparky|Memento|p1a: Dolliv
+expect |rng|100|12
+expect |-unboost|p1a: Dolliv|atk|2
+expect |-unboost|p1a: Dolliv|spa|2
+expect |rng|2|1
+expect |faint|p2b: Sparky
+expect |move|p1b: Venomoth|Bounce||[still]
+expect |-prepare|p1b: Venomoth|Bounce
+expect |move|p1a: Dolliv|Shed Tail|p1a: Dolliv
+expect |-start|p1a: Dolliv|Substitute|[from] move: Shed Tail
+expect |split|p1
+expect |-damage|p1a: Dolliv|5/129
+expect |-damage|p1a: Dolliv|5/129
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vaporeon|Vaporeon, L50, F|222/222|[from] Shed Tail
+expect |switch|p1a: Vaporeon|Vaporeon, L50, F|222/222|[from] Shed Tail
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Big Tony's Pal|Moltres-Galar, L50|183/183
+expect |switch|p2b: Big Tony's Pal|Moltres-Galar, L50|183/183
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Sneasel|Leech Seed|p1b: Venomoth|[miss]
+expect |-miss|p2a: Sneasel|p1b: Venomoth
+expect |move|p2b: Big Tony's Pal|Shed Tail|p2b: Big Tony's Pal
+expect |-fail|p2b: Big Tony's Pal
+expect |move|p1b: Venomoth|Bounce|p1a: Vaporeon|[from] lockedmove
+expect |rng|100|63
+expect |rng|24|19
+expect |rng|16|15
+expect |-end|p1a: Vaporeon|Substitute
+expect |rng|100|75
+expect |move|p1a: Vaporeon|Super Fang|p2a: Sneasel
+expect |rng|100|11
+expect |split|p2
+expect |-damage|p2a: Sneasel|62/130
+expect |-damage|p2a: Sneasel|62/130
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2a: Sneasel|Population Bomb|p2b: Big Tony's Pal
+expect |rng|100|65
+expect |rng|24|14
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|174/183
+expect |-damage|p2b: Big Tony's Pal|174/183
+expect |rng|100|45
+expect |rng|24|8
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|164/183
+expect |-damage|p2b: Big Tony's Pal|164/183
+expect |rng|100|84
+expect |rng|24|17
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|153/183
+expect |-damage|p2b: Big Tony's Pal|153/183
+expect |rng|100|13
+expect |rng|24|10
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|143/183
+expect |-damage|p2b: Big Tony's Pal|143/183
+expect |rng|100|64
+expect |rng|24|21
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|134/183
+expect |-damage|p2b: Big Tony's Pal|134/183
+expect |rng|100|86
+expect |rng|24|9
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|124/183
+expect |-damage|p2b: Big Tony's Pal|124/183
+expect |rng|100|58
+expect |rng|24|4
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|114/183
+expect |-damage|p2b: Big Tony's Pal|114/183
+expect |rng|100|22
+expect |rng|24|23
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|105/183
+expect |-damage|p2b: Big Tony's Pal|105/183
+expect |rng|100|57
+expect |rng|24|12
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|95/183
+expect |-damage|p2b: Big Tony's Pal|95/183
+expect |rng|100|28
+expect |rng|24|20
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|85/183
+expect |-damage|p2b: Big Tony's Pal|85/183
+expect |-hitcount|p2b: Big Tony's Pal|10
+expect |-ability|p2b: Big Tony's Pal|Berserk|boost
+expect |-boost|p2b: Big Tony's Pal|spa|1
+expect |move|p2b: Big Tony's Pal|Baton Pass||[still]
+expect |-fail|p2b: Big Tony's Pal
+expect |move|p1b: Venomoth|Bounce||[still]
+expect |-prepare|p1b: Venomoth|Bounce
+expect |move|p1a: Vaporeon|Substitute|p1a: Vaporeon
+expect |-start|p1a: Vaporeon|Substitute
+expect |split|p1
+expect |-damage|p1a: Vaporeon|167/222
+expect |-damage|p1a: Vaporeon|167/222
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|9
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2a: Sneasel|Curse|p2a: Sneasel
+expect |rng|100|0
+expect |-unboost|p2a: Sneasel|spe|1
+expect |-boost|p2a: Sneasel|atk|1
+expect |-boost|p2a: Sneasel|def|1
+expect |move|p2b: Big Tony's Pal|Draining Kiss|p2a: Sneasel
+expect |rng|100|86
+expect |rng|24|20
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Sneasel|29/130
+expect |-damage|p2a: Sneasel|29/130
+expect |split|p2
+expect |-heal|p2b: Big Tony's Pal|110/183|[from] drain|[of] p2a: Sneasel
+expect |-heal|p2b: Big Tony's Pal|110/183|[from] drain|[of] p2a: Sneasel
+expect |move|p1b: Venomoth|Bounce|p2b: Big Tony's Pal|[from] lockedmove
+expect |rng|100|22
+expect |rng|24|12
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|82/183
+expect |-damage|p2b: Big Tony's Pal|82/183
+expect |rng|100|46
+expect |-ability|p2b: Big Tony's Pal|Berserk|boost
+expect |-boost|p2b: Big Tony's Pal|spa|1
+expect |move|p1a: Vaporeon|Super Fang|p1b: Venomoth
+expect |rng|100|85
+expect |split|p1
+expect |-damage|p1b: Venomoth|42/147
+expect |-damage|p1b: Venomoth|42/147
+expect |
+expect |upkeep
+expect |turn|10
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Big Tony's Pal|Substitute|p2b: Big Tony's Pal
+expect |-start|p2b: Big Tony's Pal|Substitute
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|37/183
+expect |-damage|p2b: Big Tony's Pal|37/183
+expect |rng|2|1
+expect |move|p1b: Venomoth|Memento||[still]
+expect |rng|100|80
+expect |-fail|p1b: Venomoth
+expect |rng|2|0
+expect |move|p1a: Vaporeon|Transform|p2a: Sneasel
+expect |-transform|p1a: Vaporeon|p2a: Sneasel
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Sneasel|Boomburst|p1a: Vaporeon|[spread] p2b,p1a,p1b
+expect |rng|100|16
+expect |rng|100|58
+expect |rng|100|66
+expect |rng|24|16
+expect |rng|16|4
+expect |rng|24|2
+expect |rng|16|1
+expect |rng|24|18
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|21/183
+expect |-damage|p2b: Big Tony's Pal|21/183
+expect |split|p1
+expect |-damage|p1a: Vaporeon|144/222
+expect |-damage|p1a: Vaporeon|144/222
+expect |split|p1
+expect |-damage|p1b: Venomoth|18/147
+expect |-damage|p1b: Venomoth|18/147
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|0
+expect |turn|11
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |split|p1
+expect |switch|p1b: Dolliv|Dolliv, L50, M|5/129
+expect |switch|p1b: Dolliv|Dolliv, L50, M|5/129
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Big Tony's Pal|Baton Pass||[still]
+expect |-fail|p2b: Big Tony's Pal
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Sneasel|Leech Seed||[still]
+expect |rng|100|15
+expect |-fail|p2a: Sneasel
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Vaporeon|Leech Seed|p2a: Sneasel
+expect |rng|100|7
+expect |-start|p2a: Sneasel|move: Leech Seed
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |split|p2
+expect |-damage|p2a: Sneasel|13/130|[from] Leech Seed|[of] p1a: Vaporeon
+expect |-damage|p2a: Sneasel|13/130|[from] Leech Seed|[of] p1a: Vaporeon
+expect |split|p1
+expect |-heal|p1a: Vaporeon|160/222|[silent]
+expect |-heal|p1a: Vaporeon|160/222|[silent]
+expect |upkeep
+expect |rng|2|1
+expect |turn|12
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Big Tony's Pal|Shed Tail|p2b: Big Tony's Pal
+expect |-fail|p2b: Big Tony's Pal
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Vaporeon|Boomburst|p2a: Sneasel|[spread] p1b,p2a,p2b
+expect |rng|100|67
+expect |rng|100|88
+expect |rng|100|83
+expect |rng|24|15
+expect |rng|16|9
+expect |rng|24|3
+expect |rng|16|6
+expect |rng|24|6
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Dolliv|0 fnt
+expect |-damage|p1b: Dolliv|0 fnt
+expect |split|p2
+expect |-damage|p2a: Sneasel|0 fnt
+expect |-damage|p2a: Sneasel|0 fnt
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|6/183
+expect |-damage|p2b: Big Tony's Pal|6/183
+expect |rng|2|0
+expect |faint|p1b: Dolliv
+expect |faint|p2a: Sneasel
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Girafarig|Girafarig, L50, M|154/154
+expect |switch|p1b: Girafarig|Girafarig, L50, M|154/154
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p2b: Big Tony's Pal|Substitute|p2b: Big Tony's Pal
+expect |-fail|p2b: Big Tony's Pal|move: Substitute
+expect |move|p1b: Girafarig|Population Bomb|p1a: Vaporeon
+expect |rng|100|39
+expect |rng|24|13
+expect |rng|16|4
+expect |-activate|p1a: Vaporeon|move: Substitute|[damage]
+expect |rng|100|42
+expect |rng|24|0
+expect |rng|16|15
+expect |-crit|p1a: Vaporeon
+expect |-activate|p1a: Vaporeon|move: Substitute|[damage]
+expect |rng|100|95
+expect |-hitcount|p1a: Vaporeon|2
+expect |-enditem|p1b: Girafarig|Grepa Berry|[silent]|[from] ability: Pickpocket|[of] p1b: Girafarig
+expect |-item|p1a: Vaporeon|Grepa Berry|[from] ability: Pickpocket|[of] p1b: Girafarig
+expect |move|p1a: Vaporeon|Leech Seed|p1b: Girafarig
+expect |rng|100|23
+expect |-start|p1b: Girafarig|move: Leech Seed
+expect |
+expect |split|p1
+expect |-damage|p1b: Girafarig|135/154|[from] Leech Seed|[of] p1a: Vaporeon
+expect |-damage|p1b: Girafarig|135/154|[from] Leech Seed|[of] p1a: Vaporeon
+expect |split|p1
+expect |-heal|p1a: Vaporeon|179/222|[silent]
+expect |-heal|p1a: Vaporeon|179/222|[silent]
+expect |upkeep
+expect |turn|14
+expect |rng|1|0
+expect |
+expect |t:|
+expect |move|p2b: Big Tony's Pal|Baton Pass||[still]
+expect |-fail|p2b: Big Tony's Pal
+expect |move|p1b: Girafarig|Curse|p1b: Girafarig
+expect |rng|100|43
+expect |-unboost|p1b: Girafarig|spe|1
+expect |-boost|p1b: Girafarig|atk|1
+expect |-boost|p1b: Girafarig|def|1
+expect |move|p1a: Vaporeon|Population Bomb|p2b: Big Tony's Pal
+expect |rng|100|38
+expect |rng|24|0
+expect |rng|16|8
+expect |-crit|p2b: Big Tony's Pal
+expect |-activate|p2b: Big Tony's Pal|move: Substitute|[damage]
+expect |rng|100|75
+expect |rng|24|23
+expect |rng|16|0
+expect |-activate|p2b: Big Tony's Pal|move: Substitute|[damage]
+expect |rng|100|72
+expect |rng|24|4
+expect |rng|16|14
+expect |-end|p2b: Big Tony's Pal|Substitute
+expect |rng|100|23
+expect |rng|24|15
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|0 fnt
+expect |-damage|p2b: Big Tony's Pal|0 fnt
+expect |faint|p2b: Big Tony's Pal
+expect |-hitcount|p2: Big Tony's Pal|4
+expect |
+expect |win|p1

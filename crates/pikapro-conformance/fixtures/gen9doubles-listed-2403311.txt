@@ -1,0 +1,461 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 86c3 6d0e d95e 2953
+genders drawn
+validate gen9anythinggoes@@@Species Clause
+team p1
+Iron Moth @ Booster Energy
+Ability: Quark Drive
+Tera Type: Fire
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Heat Wave
+- Sludge Wave
+- Energy Ball
+- Protect
+
+Mudsdale (M) @ Chesto Berry
+Ability: Stamina
+Tera Type: Fighting
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- High Horsepower
+- Stone Edge
+- Rest
+- Body Press
+
+X (Wugtrio) (F) @ Choice Band
+Ability: Gooey
+Tera Type: Ground
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Stomping Tantrum
+- Throat Chop
+- Aqua Jet
+- Liquidation
+
+Latios (M) @ Soul Dew
+Ability: Levitate
+Tera Type: Steel
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Protect
+- Luster Purge
+- Draco Meteor
+- Aura Sphere
+
+Leafeon (F) @ Life Orb
+Ability: Chlorophyll
+Tera Type: Normal
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Double-Edge
+- Protect
+- Leaf Blade
+- Swords Dance
+
+Zamazenta-Crowned @ Rusted Shield
+Ability: Dauntless Shield
+Tera Type: Steel
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Iron Defense
+- Heavy Slam
+- Protect
+- Body Press
+end
+team p2
+X (Roaring Moon) @ Booster Energy
+Ability: Protosynthesis
+Tera Type: Flying
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Breaking Swipe
+- Acrobatics
+- Protect
+- Knock Off
+
+Vigoroth (F) @ Eviolite
+Ability: Vital Spirit
+Shiny: Yes
+Tera Type: Ghost
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- Slack Off
+- Double-Edge
+- Knock Off
+- Thunder Wave
+
+Ampharos (M) @ Sitrus Berry
+Ability: Static
+Tera Type: Flying
+EVs: 252 HP / 128 Def / 128 SpD
+Bold Nature
+- Dragon Tail
+- Thunderbolt
+- Helping Hand
+- Electroweb
+
+Sparky (Dragalge) (M) @ Life Orb
+Ability: Adaptability
+Tera Type: Water
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Protect
+- Sludge Bomb
+- Draco Meteor
+- Hydro Pump
+
+Chesnaught (M) @ Sitrus Berry
+Ability: Bulletproof
+Tera Type: Fire
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- Coaching
+- Spiky Shield
+- Body Press
+- Wood Hammer
+
+Magmortar (M) @ Sitrus Berry
+Ability: Flame Body
+Tera Type: Fire
+EVs: 252 HP / 4 Def / 252 SpA
+Modest Nature
+IVs: 0 Atk
+- Will-O-Wisp
+- Thunderbolt
+- Protect
+- Heat Wave
+end
+choice p1 move energyball -2, switch zamazenta-crowned
+choice p2 move 2 1, move 4 -1 terastallize
+choice p1 switch 4, move 2 -1
+choice p2 move Knock Off 1,move Knock Off -1
+choice p1 switch 6, pass
+choice p2 move 2 -2, move 4 -1
+choice p1 move 4 -2, move 4 -1 terastallize
+choice p2 move 2 2, switch 4
+choice p1 move 1 1, move 1
+choice p2 move 1,move Sludge Bomb 1
+choice p1 switch 5, move 3
+choice p1 switch 5, pass
+choice p2 default
+choice p1 move 4 -2, move 1
+choice p2 move 4 2, move Draco Meteor 1
+choice p1 move 1 2, move 4 -1
+choice p1 switch 4, switch 3
+choice p2 move 2 1, move 2 -1
+choice p1 move 3 1, move 3 -1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Iron Moth|Iron Moth|302/302
+expect |switch|p1a: Iron Moth|Iron Moth|302/302
+expect |split|p1
+expect |switch|p1b: Mudsdale|Mudsdale, M|404/404
+expect |switch|p1b: Mudsdale|Mudsdale, M|404/404
+expect |split|p2
+expect |switch|p2a: X|Roaring Moon|352/352
+expect |switch|p2a: X|Roaring Moon|352/352
+expect |split|p2
+expect |switch|p2b: Vigoroth|Vigoroth, F, shiny|364/364
+expect |switch|p2b: Vigoroth|Vigoroth, F, shiny|364/364
+expect |-enditem|p2a: X|Booster Energy
+expect |-activate|p2a: X|ability: Protosynthesis|[fromitem]
+expect |-start|p2a: X|protosynthesisatk
+expect |-enditem|p1a: Iron Moth|Booster Energy
+expect |-activate|p1a: Iron Moth|ability: Quark Drive|[fromitem]
+expect |-start|p1a: Iron Moth|quarkdrivespa
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Zamazenta|Zamazenta-Crowned|326/326
+expect |switch|p1b: Zamazenta|Zamazenta-Crowned|326/326
+expect |-ability|p1b: Zamazenta|Dauntless Shield|boost
+expect |-boost|p1b: Zamazenta|def|1
+expect |-terastallize|p2b: Vigoroth|Ghost
+expect |move|p2a: X|Acrobatics|p1a: Iron Moth
+expect |rng|100|24
+expect |rng|24|21
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Iron Moth|43/302
+expect |-damage|p1a: Iron Moth|43/302
+expect |move|p1a: Iron Moth|Energy Ball|p1b: Zamazenta
+expect |rng|100|65
+expect |rng|24|18
+expect |rng|16|1
+expect |-resisted|p1b: Zamazenta
+expect |split|p1
+expect |-damage|p1b: Zamazenta|262/326
+expect |-damage|p1b: Zamazenta|262/326
+expect |rng|100|40
+expect |move|p2b: Vigoroth|Thunder Wave|p2a: X|[miss]
+expect |rng|100|94
+expect |-miss|p2b: Vigoroth|p2a: X
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |-end|p1a: Iron Moth|Quark Drive|[silent]
+expect |split|p1
+expect |switch|p1a: Latios|Latios, M|302/302
+expect |switch|p1a: Latios|Latios, M|302/302
+expect |move|p2a: X|Knock Off|p1a: Latios
+expect |rng|100|57
+expect |rng|24|14
+expect |rng|16|0
+expect |-supereffective|p1a: Latios
+expect |split|p1
+expect |-damage|p1a: Latios|0 fnt
+expect |-damage|p1a: Latios|0 fnt
+expect |-enditem|p1a: Latios|Soul Dew|[from] move: Knock Off|[of] p2a: X
+expect |faint|p1a: Latios
+expect |move|p1b: Zamazenta|Heavy Slam|p1: Latios|[notarget]
+expect |-fail|p1b: Zamazenta
+expect |move|p2b: Vigoroth|Knock Off|p2a: X
+expect |rng|100|20
+expect |rng|24|9
+expect |rng|16|1
+expect |-resisted|p2a: X
+expect |split|p2
+expect |-damage|p2a: X|308/352
+expect |-damage|p2a: X|308/352
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Mudsdale|Mudsdale, M|404/404
+expect |switch|p1a: Mudsdale|Mudsdale, M|404/404
+expect |turn|3
+expect |
+expect |t:|
+expect |-terastallize|p1b: Zamazenta|Steel
+expect |move|p2a: X|Acrobatics|p2b: Vigoroth
+expect |rng|100|39
+expect |rng|24|11
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Vigoroth|209/364
+expect |-damage|p2b: Vigoroth|209/364
+expect |move|p1b: Zamazenta|Body Press|p1a: Mudsdale
+expect |rng|100|7
+expect |rng|24|13
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Mudsdale|227/404
+expect |-damage|p1a: Mudsdale|227/404
+expect |-ability|p1a: Mudsdale|Stamina|boost
+expect |-boost|p1a: Mudsdale|def|1
+expect |move|p2b: Vigoroth|Thunder Wave|p2a: X|[miss]
+expect |rng|100|98
+expect |-miss|p2b: Vigoroth|p2a: X
+expect |move|p1a: Mudsdale|Body Press|p1b: Zamazenta
+expect |rng|100|86
+expect |rng|24|21
+expect |rng|16|12
+expect |-supereffective|p1b: Zamazenta
+expect |split|p1
+expect |-damage|p1b: Zamazenta|172/326
+expect |-damage|p1b: Zamazenta|172/326
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Sparky|Dragalge, M|272/272
+expect |switch|p2b: Sparky|Dragalge, M|272/272
+expect |move|p2a: X|Acrobatics|p1b: Zamazenta
+expect |rng|100|63
+expect |rng|24|19
+expect |rng|16|12
+expect |-resisted|p1b: Zamazenta
+expect |split|p1
+expect |-damage|p1b: Zamazenta|130/326
+expect |-damage|p1b: Zamazenta|130/326
+expect |move|p1b: Zamazenta|Iron Defense|p1b: Zamazenta
+expect |-boost|p1b: Zamazenta|def|2
+expect |move|p1a: Mudsdale|High Horsepower|p2a: X
+expect |rng|100|8
+expect |rng|24|17
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: X|88/352
+expect |-damage|p2a: X|88/352
+expect |
+expect |upkeep
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Leafeon|Leafeon, F|272/272
+expect |switch|p1a: Leafeon|Leafeon, F|272/272
+expect |rng|2|1
+expect |move|p1b: Zamazenta|Protect|p1b: Zamazenta
+expect |-singleturn|p1b: Zamazenta|Protect
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: X|Breaking Swipe|p1a: Leafeon|[spread] p1a
+expect |-activate|p1b: Zamazenta|move: Protect
+expect |rng|100|47
+expect |rng|24|21
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Leafeon|179/272
+expect |-damage|p1a: Leafeon|179/272
+expect |rng|100|88
+expect |-unboost|p1a: Leafeon|atk|1
+expect |move|p2b: Sparky|Sludge Bomb|p1a: Leafeon
+expect |rng|100|99
+expect |rng|24|20
+expect |rng|16|0
+expect |-supereffective|p1a: Leafeon
+expect |split|p1
+expect |-damage|p1a: Leafeon|0 fnt
+expect |-damage|p1a: Leafeon|0 fnt
+expect |rng|100|54
+expect |faint|p1a: Leafeon
+expect |split|p2
+expect |-damage|p2b: Sparky|245/272|[from] item: Life Orb
+expect |-damage|p2b: Sparky|245/272|[from] item: Life Orb
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Mudsdale|Mudsdale, M|227/404
+expect |switch|p1a: Mudsdale|Mudsdale, M|227/404
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2b: Sparky|Protect|p2b: Sparky
+expect |-singleturn|p2b: Sparky|Protect
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: X|Breaking Swipe|p1a: Mudsdale|[spread] p1a,p1b
+expect |rng|100|27
+expect |rng|100|17
+expect |rng|24|3
+expect |rng|16|7
+expect |rng|24|11
+expect |rng|16|4
+expect |-resisted|p1b: Zamazenta
+expect |split|p1
+expect |-damage|p1a: Mudsdale|118/404
+expect |-damage|p1a: Mudsdale|118/404
+expect |split|p1
+expect |-damage|p1b: Zamazenta|112/326
+expect |-damage|p1b: Zamazenta|112/326
+expect |rng|100|52
+expect |-unboost|p1a: Mudsdale|atk|1
+expect |rng|100|50
+expect |-unboost|p1b: Zamazenta|atk|1
+expect |-ability|p1a: Mudsdale|Stamina|boost
+expect |-boost|p1a: Mudsdale|def|1
+expect |move|p1b: Zamazenta|Iron Defense|p1b: Zamazenta
+expect |-boost|p1b: Zamazenta|def|2
+expect |move|p1a: Mudsdale|Body Press|p1b: Zamazenta
+expect |rng|100|54
+expect |rng|24|11
+expect |rng|16|4
+expect |-supereffective|p1b: Zamazenta
+expect |split|p1
+expect |-damage|p1b: Zamazenta|68/326
+expect |-damage|p1b: Zamazenta|68/326
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: X|Knock Off|p1b: Zamazenta
+expect |rng|100|24
+expect |rng|24|12
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Zamazenta|32/326
+expect |-damage|p1b: Zamazenta|32/326
+expect |move|p1b: Zamazenta|Body Press|p1a: Mudsdale
+expect |rng|100|29
+expect |rng|24|13
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Mudsdale|0 fnt
+expect |-damage|p1a: Mudsdale|0 fnt
+expect |faint|p1a: Mudsdale
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Sparky|Draco Meteor|p1b: Zamazenta
+expect |rng|100|41
+expect |rng|24|13
+expect |rng|16|8
+expect |-resisted|p1b: Zamazenta
+expect |split|p1
+expect |-damage|p1b: Zamazenta|0 fnt
+expect |-damage|p1b: Zamazenta|0 fnt
+expect |rng|100|43
+expect |-unboost|p2b: Sparky|spa|2
+expect |faint|p1b: Zamazenta
+expect |split|p2
+expect |-damage|p2b: Sparky|218/272|[from] item: Life Orb
+expect |-damage|p2b: Sparky|218/272|[from] item: Life Orb
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: X|Wugtrio, F|212/212
+expect |switch|p1b: X|Wugtrio, F|212/212
+expect |split|p1
+expect |switch|p1a: Iron Moth|Iron Moth|43/302
+expect |switch|p1a: Iron Moth|Iron Moth|43/302
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1b: X|Aqua Jet|p1a: Iron Moth
+expect |rng|100|59
+expect |rng|24|1
+expect |rng|16|10
+expect |-supereffective|p1a: Iron Moth
+expect |split|p1
+expect |-damage|p1a: Iron Moth|0 fnt
+expect |-damage|p1a: Iron Moth|0 fnt
+expect |faint|p1a: Iron Moth
+expect |-end|p1a: Iron Moth|Quark Drive|[silent]
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2a: X|Acrobatics|p1b: X
+expect |rng|100|86
+expect |rng|24|16
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: X|0 fnt
+expect |-damage|p1b: X|0 fnt
+expect |-ability|p1b: X|Gooey
+expect |-unboost|p2a: X|spe|1
+expect |faint|p1b: X
+expect |
+expect |win|p2

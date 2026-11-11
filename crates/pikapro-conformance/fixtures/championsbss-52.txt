@@ -1,0 +1,424 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed ed63 df08 6da3 b81e
+genders drawn
+team p1
+X (Quaquaval) (F)
+Ability: Torrent
+Level: 50
+Tera Type: Bug
+EVs: 6 HP / 4 Atk / 23 Def / 7 SpA / 22 SpD / 1 Spe
+Rash Nature
+- Flame Charge
+
+Vivillon-Elegant (F) @ Occa Berry
+Ability: Friend Guard
+Level: 50
+Tera Type: Water
+EVs: 19 HP / 17 Atk / 1 Def / 28 SpA / 1 Spe
+Timid Nature
+- Burn Up
+- Copycat
+
+Rotom-Fan @ Haban Berry
+Ability: Levitate
+Level: 50
+Tera Type: Grass
+EVs: 2 HP / 26 Def / 1 SpA / 8 SpD / 28 Spe
+Naive Nature
+- Howl
+- Pounce
+- Petal Dance
+- Spirit Break
+
+Mr. Mime (F) @ Never-Melt Ice
+Ability: Filter
+Level: 50
+Shiny: Yes
+Tera Type: Poison
+EVs: 25 HP / 1 Atk / 1 Def / 5 SpA / 30 SpD / 1 Spe
+Mild Nature
+- Power Trick
+- Flame Charge
+- Transform
+- Air Cutter
+
+Starmie @ Starminite
+Ability: Analytic
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 7 HP / 3 Atk / 3 Def / 3 SpA / 18 SpD / 2 Spe
+Adamant Nature
+- Power Gem
+- Razor Shell
+
+Blastoise (M)
+Ability: Torrent
+Level: 50
+Tera Type: Fire
+EVs: 7 HP / 20 Atk / 2 Def / 9 SpA / 1 SpD / 22 Spe
+Lonely Nature
+- Calm Mind
+- Sheer Cold
+- Stone Axe
+end
+team p2
+Avalugg (F) @ Rindo Berry
+Ability: Ice Body
+Level: 50
+Tera Type: Steel
+EVs: 21 Atk / 30 Def / 15 Spe
+Hardy Nature
+- Rain Dance
+- Double Hit
+
+Kleavor (F)
+Ability: Sharpness
+Level: 50
+Shiny: Yes
+Tera Type: Rock
+EVs: 9 Atk / 13 Def / 20 SpA / 20 SpD
+Relaxed Nature
+- Detect
+- Wish
+- Tickle
+- Guillotine
+
+Sparky (Abomasnow) @ Sitrus Berry
+Ability: Soundproof
+Level: 50
+Tera Type: Dragon
+EVs: 30 Atk / 2 Def / 1 SpA / 31 SpD / 2 Spe
+Timid Nature
+- Uproar
+
+Reuniclus (F)
+Ability: Overcoat
+Level: 50
+Tera Type: Rock
+EVs: 32 HP / 1 SpA / 32 SpD / 1 Spe
+Lax Nature
+- Mirror Coat
+
+X (Simisear) @ Silver Powder
+Ability: Blaze
+Level: 50
+Tera Type: Steel
+EVs: 17 HP / 12 Atk / 3 SpA / 8 SpD / 26 Spe
+Bold Nature
+- Eerie Impulse
+- Stone Axe
+
+Rotom-Frost
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Tera Type: Normal
+EVs: 8 Def / 3 SpA / 29 SpD / 26 Spe
+Lonely Nature
+- Wide Guard
+- Thief
+- X-Scissor
+end
+choice p1 team 652
+choice p2 team [2, 1, 5]
+choice p1 switch 3
+choice p2 move 3
+choice p1 switch 2
+choice p2 move 2
+choice p1 switch 3
+choice p2 move 2
+choice p1 move 3
+choice p2 switch Avalugg
+choice p1 switch 3
+choice p2 switch 2
+choice p1 move 1
+choice p2 switch 3
+choice p1 move 2
+choice p2 move 2
+choice p2 switch 2
+choice p1 switch Vivillon
+choice p2 move 1
+choice p1 move Burn Up
+choice p2 switch 3
+choice p1 move 2
+choice p2 move 3
+choice p1 move Copycat
+choice p2 move Tickle
+choice p1 switch 3
+choice p2 default
+choice p1 move 2
+choice p2 move Tickle
+choice p2 switch 3
+choice p1 switch 3
+choice p2 move Rain Dance
+choice p1 switch 2
+choice p2 move 1
+choice p1 move 1 mega
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Quaquaval, L50, F|
+expect |poke|p1|Vivillon-Elegant, L50, F|
+expect |poke|p1|Rotom-Fan, L50|
+expect |poke|p1|Mr. Mime, L50, F, shiny|
+expect |poke|p1|Starmie, L50, shiny|
+expect |poke|p1|Blastoise, L50, M|
+expect |poke|p2|Avalugg, L50, F|
+expect |poke|p2|Kleavor, L50, F, shiny|
+expect |poke|p2|Abomasnow, L50, M|
+expect |poke|p2|Reuniclus, L50, F|
+expect |poke|p2|Simisear, L50, F|
+expect |poke|p2|Rotom-Frost, L50, shiny|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Blastoise|Blastoise, L50, M|161/161
+expect |switch|p1a: Blastoise|Blastoise, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Kleavor|Kleavor, L50, F, shiny|145/145
+expect |switch|p2a: Kleavor|Kleavor, L50, F, shiny|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, F|174/174
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, F|100/100
+expect |move|p2a: Kleavor|Tickle|p1a: Vivillon
+expect |rng|100|39
+expect |-unboost|p1a: Vivillon|atk|1
+expect |-unboost|p1a: Vivillon|def|1
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Starmie|Starmie, L50, shiny|142/142
+expect |switch|p1a: Starmie|Starmie, L50, shiny|100/100
+expect |move|p2a: Kleavor|Wish|p2a: Kleavor
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Blastoise|Blastoise, L50, M|161/161
+expect |switch|p1a: Blastoise|Blastoise, L50, M|100/100
+expect |move|p2a: Kleavor|Wish||[still]
+expect |-fail|p2a: Kleavor
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Avalugg|Avalugg, L50, F|170/170
+expect |switch|p2a: Avalugg|Avalugg, L50, F|100/100
+expect |move|p1a: Blastoise|Stone Axe|p2a: Avalugg
+expect |rng|100|75
+expect |rng|24|23
+expect |rng|16|12
+expect |-supereffective|p2a: Avalugg|1
+expect |split|p2
+expect |-damage|p2a: Avalugg|140/170
+expect |-damage|p2a: Avalugg|82/100
+expect |rng|100|2
+expect |-sidestart|p2: p2|move: Stealth Rock
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Starmie|Starmie, L50, shiny|142/142
+expect |switch|p1a: Starmie|Starmie, L50, shiny|100/100
+expect |split|p2
+expect |switch|p2a: Kleavor|Kleavor, L50, F, shiny|145/145
+expect |switch|p2a: Kleavor|Kleavor, L50, F, shiny|100/100
+expect |split|p2
+expect |-damage|p2a: Kleavor|109/145|[from] Stealth Rock
+expect |-damage|p2a: Kleavor|75/100|[from] Stealth Rock
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Simisear, L50, F|167/167
+expect |switch|p2a: X|Simisear, L50, F|100/100
+expect |split|p2
+expect |-damage|p2a: X|126/167|[from] Stealth Rock
+expect |-damage|p2a: X|75/100|[from] Stealth Rock
+expect |move|p1a: Starmie|Power Gem|p2a: X
+expect |rng|100|77
+expect |rng|24|21
+expect |rng|16|3
+expect |-supereffective|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|16/167
+expect |-damage|p2a: X|9/100
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: X|Stone Axe|p1a: Starmie|[miss]
+expect |rng|100|99
+expect |-miss|p2a: X|p1a: Starmie
+expect |move|p1a: Starmie|Razor Shell|p2a: X
+expect |rng|100|54
+expect |rng|24|16
+expect |rng|16|8
+expect |-supereffective|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|0 fnt
+expect |-damage|p2a: X|0 fnt
+expect |rng|100|11
+expect |faint|p2a: X
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Avalugg|Avalugg, L50, F|140/170
+expect |switch|p2a: Avalugg|Avalugg, L50, F|82/100
+expect |split|p2
+expect |-damage|p2a: Avalugg|98/170|[from] Stealth Rock
+expect |-damage|p2a: Avalugg|57/100|[from] Stealth Rock
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, F|174/174
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, F|100/100
+expect |move|p2a: Avalugg|Rain Dance|p2a: Avalugg
+expect |-weather|RainDance
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Kleavor|Kleavor, L50, F, shiny|109/145
+expect |switch|p2a: Kleavor|Kleavor, L50, F, shiny|75/100
+expect |split|p2
+expect |-damage|p2a: Kleavor|73/145|[from] Stealth Rock
+expect |-damage|p2a: Kleavor|50/100g|[from] Stealth Rock
+expect |move|p1a: Vivillon|Burn Up||[still]
+expect |-fail|p1a: Vivillon|move: Burn Up
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1a: Vivillon|Copycat|p1a: Vivillon
+expect |move|p1a: Vivillon|Burn Up||[from] move: Copycat|[still]
+expect |-fail|p1a: Vivillon|move: Burn Up
+expect |move|p2a: Kleavor|Tickle|p1a: Vivillon
+expect |rng|100|4
+expect |-unboost|p1a: Vivillon|atk|1
+expect |-unboost|p1a: Vivillon|def|1
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p1a: Vivillon|Copycat|p1a: Vivillon
+expect |move|p1a: Vivillon|Tickle|p2a: Kleavor|[from] move: Copycat
+expect |rng|100|15
+expect |-unboost|p2a: Kleavor|atk|1
+expect |-unboost|p2a: Kleavor|def|1
+expect |move|p2a: Kleavor|Tickle|p1a: Vivillon
+expect |rng|100|48
+expect |-unboost|p1a: Vivillon|atk|1
+expect |-unboost|p1a: Vivillon|def|1
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Blastoise|Blastoise, L50, M|161/161
+expect |switch|p1a: Blastoise|Blastoise, L50, M|100/100
+expect |move|p2a: Kleavor|Detect||[still]
+expect |-fail|p2a: Kleavor
+expect |
+expect |-weather|none
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1a: Blastoise|Sheer Cold|p2a: Kleavor
+expect |rng|100|9
+expect |split|p2
+expect |-damage|p2a: Kleavor|0 fnt
+expect |-damage|p2a: Kleavor|0 fnt
+expect |faint|p2a: Kleavor
+expect |-ohko
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Avalugg|Avalugg, L50, F|98/170
+expect |switch|p2a: Avalugg|Avalugg, L50, F|57/100
+expect |split|p2
+expect |-damage|p2a: Avalugg|56/170|[from] Stealth Rock
+expect |-damage|p2a: Avalugg|32/100|[from] Stealth Rock
+expect |turn|14
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, F|174/174
+expect |switch|p1a: Vivillon|Vivillon-Elegant, L50, F|100/100
+expect |move|p2a: Avalugg|Rain Dance|p2a: Avalugg
+expect |-weather|RainDance
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Starmie|Starmie, L50, shiny|142/142
+expect |switch|p1a: Starmie|Starmie, L50, shiny|100/100
+expect |move|p2a: Avalugg|Rain Dance||[still]
+expect |-fail|p2a: Avalugg
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |detailschange|p1a: Starmie|Starmie-Mega, L50, shiny
+expect |-mega|p1a: Starmie|Starmie|Starminite
+expect |move|p1a: Starmie|Power Gem|p2a: Avalugg
+expect |rng|100|91
+expect |rng|24|3
+expect |rng|16|7
+expect |-supereffective|p2a: Avalugg|1
+expect |split|p2
+expect |-damage|p2a: Avalugg|0 fnt
+expect |-damage|p2a: Avalugg|0 fnt
+expect |faint|p2a: Avalugg
+expect |
+expect |win|p1

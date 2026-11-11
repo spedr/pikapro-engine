@@ -1,0 +1,202 @@
+# gen9singles-gen5-2113008-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay spectator
+@write
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"gen5,9fb78dee34cb68fe"}
+@write
+>player p1 {"name":"Alice","team":[{"name":"Sparky","species":"Lanturn","item":"","ability":"Water Absorb","moves":["Aqua Tail","Fire Punch","Role Play"],"nature":"Jolly","evs":{"hp":7,"atk":27,"def":85,"spa":155,"spd":196,"spe":30},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass"},{"name":"Pikachu","species":"Skiploom","item":"","ability":"Infiltrator","moves":["Night Slash","Fiery Dance","Agility"],"nature":"Calm","evs":{"hp":34,"atk":8,"def":44,"spa":32,"spd":230,"spe":111},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting"},{"name":"Nibbles","species":"Mareanie","item":"","ability":"Merciless","moves":["Skill Swap","Power Swap","Imprison","Origin Pulse"],"nature":"Modest","evs":{"hp":20,"atk":27,"def":183,"spa":42,"spd":21,"spe":211},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock"},{"name":"Wyrdeer","species":"Wyrdeer","item":"","ability":"Sap Sipper","moves":["Thunderclap"],"nature":"Adamant","evs":{"hp":208,"atk":143,"def":16,"spa":84,"spd":10,"spe":41},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon"},{"name":"Shroodle","species":"Shroodle","item":"","ability":"Unburden","moves":["Scorching Sands","Hydro Cannon"],"nature":"Bold","evs":{"hp":98,"atk":54,"def":113,"spa":9,"spd":218,"spe":5},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire"},{"name":"Eternatus","species":"Eternatus","item":"Assault Vest","ability":"Pressure","moves":["Gyro Ball","Bolt Strike"],"nature":"Lonely","evs":{"hp":146,"atk":1,"def":49,"spa":14,"spd":41,"spe":252},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost"}]}
+@write
+>player p2 {"name":"Bob","team":"Oinkologne-F|||AromaVeil|LuminaCrash,Entrainment|Calm|34,7,14,250,109,36||||50|,,,,,Ground]Chomp|TornadusTherian||Regenerator|Withdraw|Adamant|33,148,4,48,27,209||||50|,,,,,Ground]Big Tony's Pal|Lunala|AdamantOrb|ShadowShield|NobleRoar,BanefulBunker|Serious|,138,68,36,23,245||||50|,,,,,Electric]Rotom-Heat|||Levitate|PlayNice,MistyExplosion,TearfulLook,Agility|Naughty|54,56,7,169,1,222||||50|,,,,,Ground]Pikipek||TwistedSpoon|KeenEye|GravApple,Pounce,PyroBall,Hurricane|Jolly|5,119,170,4,169,34||||50|,,,,,Electric]Zoë|NecrozmaDuskMane|SunStone|PrismArmor|SteelRoller|Relaxed|26,153,138,118,4,34||||50|,,,,,Fighting"}
+@write
+>p2 move Entrainment terastal
+@write
+>p1 switch 6
+@write
+>p2 switch tornadustherian
+@write
+>p1 undo
+@write
+>p1 move 2
+@write
+>p1 move 1 terastallize
+@write
+>p2 switch 2
+@write
+>p1 move Gyro Ball
+@write
+>p2   move 2  
+@write
+>p2 switch tornadus-therian
+@write
+>p1 switch 2
+@write
+>p2 switch 4
+@write
+>p1 default
+@write
+>p2 move 1, move 1, move 1
+@write
+>p2 switch 5
+@write
+>p1 move 3
+@write
+>p1 switch 4
+@write
+>p1 switch 4
+@write
+>p2 switch rotom-heat
+@write
+>p1 skip
+@write
+>p1 switch 2
+@write
+>p1 switch
+@write
+>p2 undo
+@write
+>p2 move agility
+@write
+>p1 switch 6
+@write
+>chat turn talk 23
+@write
+>p2 skip
+@write
+>p2 move 1
+@write
+>p1 move 1
+@write
+>p2 switch 5
+@write
+>p1 switch 5
+@write
+>p2 move hurricane -2
+@write
+>forcetie
+@message
+|t:|
+|gametype|singles
+@message
+|player|p1|Alice||
+@message
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Sparky|Lanturn, L50, M|201/201
+|switch|p2a: Oinkologne|Oinkologne-F, L50, F|194/194
+|turn|1
+@message
+|
+|t:|
+|switch|p1a: Eternatus|Eternatus, L50|233/233
+|-ability|p1a: Eternatus|Pressure
+|-terastallize|p2a: Oinkologne|Ground
+|move|p2a: Oinkologne|Entrainment|p1a: Eternatus
+|-ability|p1a: Eternatus|Aroma Veil|Pressure|[from] move: Entrainment|[of] p2a: Oinkologne
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|switch|p2a: Chomp|Tornadus-Therian, L50, M|158/158
+|move|p1a: Eternatus|Bolt Strike|p2a: Chomp
+|-supereffective|p2a: Chomp
+|-damage|p2a: Chomp|38/158
+|
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|switch|p2a: Oinkologne|Oinkologne-F, L50, F, tera:Ground|194/194
+|-terastallize|p1a: Eternatus|Ghost
+|move|p1a: Eternatus|Gyro Ball|p2a: Oinkologne
+|-damage|p2a: Oinkologne|187/194
+|
+|upkeep
+|turn|4
+@message
+|
+|t:|
+|move|p1a: Eternatus|Gyro Ball|p2a: Oinkologne
+|-damage|p2a: Oinkologne|179/194
+|move|p2a: Oinkologne|Entrainment||[still]
+|-fail|p2a: Oinkologne
+|
+|upkeep
+|turn|5
+@message
+|
+|t:|
+|switch|p1a: Pikachu|Skiploom, L50, M|134/134
+|switch|p2a: Chomp|Tornadus-Therian, L50, M|90/158
+|
+|upkeep
+|turn|6
+@message
+|
+|t:|
+|switch|p2a: Rotom|Rotom-Heat, L50|132/132
+|move|p1a: Pikachu|Night Slash|p2a: Rotom
+|-crit|p2a: Rotom
+|-damage|p2a: Rotom|112/132
+|
+|upkeep
+|turn|7
+@message
+|
+|t:|
+|switch|p2a: Pikipek|Pikipek, L50, F|111/111
+|move|p1a: Pikachu|Agility|p1a: Pikachu
+|-boost|p1a: Pikachu|spe|2
+|
+|upkeep
+|turn|8
+@message
+|
+|t:|
+|switch|p1a: Wyrdeer|Wyrdeer, L50, M|204/204
+|switch|p2a: Rotom|Rotom-Heat, L50|112/132
+|
+|upkeep
+|turn|9
+@message
+|
+|t:|
+|switch|p1a: Sparky|Lanturn, L50, M|201/201
+|move|p2a: Rotom|Agility|p2a: Rotom
+|-boost|p2a: Rotom|spe|2
+|
+|upkeep
+|turn|10
+@message
+|chat|turn talk 23
+@message
+|
+|t:|
+|move|p2a: Rotom|Play Nice|p1a: Sparky
+|-unboost|p1a: Sparky|atk|1
+|move|p1a: Sparky|Aqua Tail|p2a: Rotom
+|-supereffective|p2a: Rotom
+|-damage|p2a: Rotom|68/132
+|
+|upkeep
+|turn|11
+@message
+|
+|t:|
+|switch|p2a: Pikipek|Pikipek, L50, F|111/111
+|switch|p1a: Shroodle|Shroodle, L50, F|127/127
+|
+|upkeep
+|turn|12
+@message
+|
+|tie

@@ -1,0 +1,558 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 7e27 28b0 8545 a135
+genders drawn
+team p1
+Popplio
+Ability: Liquid Voice
+Level: 50
+Tera Type: Steel
+EVs: 233 HP / 60 Atk / 170 Def / 5 SpA / 13 SpD / 28 Spe
+Adamant Nature
+- Charge
+- Overdrive
+- Copycat
+- Hyper Voice
+
+Oricorio-Pom-Pom
+Ability: Dancer
+Level: 50
+Tera Type: Ghost
+EVs: 5 HP / 105 Atk / 94 Def / 60 SpA / 132 SpD / 60 Spe
+Rash Nature
+- Charge
+- Revelation Dance
+- Air Cutter
+
+X (Morpeko)
+Ability: Hunger Switch
+Level: 50
+Shiny: Yes
+Tera Type: Flying
+EVs: 5 HP / 85 Atk / 210 Def / 28 SpA / 13 SpD / 116 Spe
+Gentle Nature
+- Charge
+- Aura Wheel
+- Throat Chop
+- Payback
+
+Sir Hops-a-Lot (Hoopa) @ Clear Amulet
+Ability: Magician
+Level: 50
+Tera Type: Electric
+EVs: 8 HP / 1 Atk / 86 Def / 120 SpA / 238 SpD / 35 Spe
+Docile Nature
+- Charge
+- Tera Blast
+- Terrain Pulse
+- Electric Terrain
+
+Graveler-Alola
+Ability: Galvanize
+Level: 50
+Tera Type: Ghost
+EVs: 1 HP / 221 Atk / 90 Def / 192 SpD / 3 Spe
+Sassy Nature
+- Charge
+- Rest
+- Sleep Talk
+- Hyper Voice
+
+Geodude-Alola
+Ability: Galvanize
+Level: 50
+Tera Type: Dark
+EVs: 23 HP / 20 Atk / 73 Def / 205 SpA / 146 SpD / 2 Spe
+Bashful Nature
+- Charge
+- Metronome
+- Copycat
+- Body Slam
+end
+team p2
+Graveler-Alola
+Ability: Galvanize
+Level: 50
+Tera Type: Normal
+EVs: 126 HP / 218 Atk / 38 Def / 11 SpA / 11 SpD / 106 Spe
+Modest Nature
+- Charge
+- Metronome
+- Copycat
+- Body Slam
+
+Morpeko
+Ability: Hunger Switch
+Level: 50
+Tera Type: Grass
+EVs: 16 HP / 136 Atk / 73 Def / 4 SpA / 252 SpD / 29 Spe
+Lax Nature
+- Charge
+- Aura Wheel
+- Throat Chop
+- Magic Powder
+
+Wiglett (M) @ Dusk Ball
+Ability: Gooey
+Level: 50
+Tera Type: Electric
+EVs: 234 HP / 133 Atk / 122 Def / 2 SpA / 19 Spe
+Careful Nature
+- Charge
+- Tera Blast
+- Terrain Pulse
+- Electric Terrain
+
+Golem-Alola
+Ability: Galvanize
+Level: 50
+Tera Type: Fire
+EVs: 176 Def / 174 SpA / 132 SpD / 10 Spe
+Serious Nature
+- Charge
+- Rest
+- Sleep Talk
+- Hyper Voice
+
+Oricorio-Pom-Pom
+Ability: Dancer
+Level: 50
+Tera Type: Bug
+EVs: 19 HP / 177 Atk / 31 Def / 15 SpA / 59 SpD / 200 Spe
+Naive Nature
+- Charge
+- Revelation Dance
+- Mega Punch
+- Protect
+
+X (Primarina)
+Ability: Liquid Voice
+Level: 50
+Tera Type: Ground
+EVs: 24 HP / 87 Atk / 63 Def / 9 SpA / 167 SpD / 70 Spe
+Naive Nature
+- Charge
+- Overdrive
+- Copycat
+- Hyper Voice
+end
+choice p1 team 3461
+choice p2 team 3,1,2,5
+choice p1 move 2 2 terastallize, move 2 1
+choice p2 move 3 -2, move 4 1 terastallize
+choice p1 switch geodude-alola ,  pass
+choice p2 switch 4, pass
+choice p1 move 2, move 2 1
+choice p2 move 1, move 1
+choice p1 move 1, move 3 2
+choice p2 move Revelation Dance 2, move 1
+choice p1 move 2, move 2 2
+choice p2 move 3 -2, move 4 1
+choice p2 skip,switch morpeko
+choice p1 move 2, move 3 -1
+choice p2 move 3 1, move 4 2
+choice p1 move 2, move 3 -1
+choice p2 move 1, move 2 2
+choice p1 pass, switch 4
+choice p2 move Mega Punch -2 ,  move 2 -1
+choice p1 move 4 2, move 4
+choice p2 pass, move 3 2
+choice p1 move charge, move Overdrive
+choice p2 pass, move 3 1
+choice p1 move 2, move 3
+choice p2 pass, move 3 1
+choice p1 move 3, move 3
+choice p2 pass, move 2 2
+choice p1 default
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Popplio, L50, M|
+expect |poke|p1|Oricorio-Pom-Pom, L50, M|
+expect |poke|p1|Morpeko, L50, F|
+expect |poke|p1|Hoopa, L50|
+expect |poke|p1|Graveler-Alola, L50, M|
+expect |poke|p1|Geodude-Alola, L50, F|
+expect |poke|p2|Graveler-Alola, L50, M|
+expect |poke|p2|Morpeko, L50, M|
+expect |poke|p2|Wiglett, L50, M|
+expect |poke|p2|Golem-Alola, L50, F|
+expect |poke|p2|Oricorio-Pom-Pom, L50, F|
+expect |poke|p2|Primarina, L50, M|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: X|Morpeko, L50, F, shiny|134/134
+expect |switch|p1a: X|Morpeko, L50, F, shiny|134/134
+expect |split|p1
+expect |switch|p1b: Sir Hops-a-Lot|Hoopa, L50|156/156
+expect |switch|p1b: Sir Hops-a-Lot|Hoopa, L50|156/156
+expect |split|p2
+expect |switch|p2a: Wiglett|Wiglett, L50, M|114/114
+expect |switch|p2a: Wiglett|Wiglett, L50, M|114/114
+expect |split|p2
+expect |switch|p2b: Graveler|Graveler-Alola, L50, M|146/146
+expect |switch|p2b: Graveler|Graveler-Alola, L50, M|146/146
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p1a: X|Flying
+expect |-terastallize|p2b: Graveler|Normal
+expect |move|p1a: X|Aura Wheel|p2b: Graveler
+expect |rng|100|61
+expect |rng|24|8
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Graveler|83/146
+expect |-damage|p2b: Graveler|83/146
+expect |rng|100|89
+expect |-boost|p1a: X|spe|1
+expect |move|p2a: Wiglett|Terrain Pulse|p2b: Graveler
+expect |rng|100|50
+expect |rng|24|23
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Graveler|67/146
+expect |-damage|p2b: Graveler|67/146
+expect |move|p1b: Sir Hops-a-Lot|Tera Blast|p2a: Wiglett
+expect |rng|100|70
+expect |rng|24|18
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Wiglett|0 fnt
+expect |-damage|p2a: Wiglett|0 fnt
+expect |faint|p2a: Wiglett
+expect |move|p2b: Graveler|Body Slam|p1a: X
+expect |rng|100|1
+expect |rng|24|10
+expect |rng|16|12
+expect |-supereffective|p1a: X
+expect |split|p1
+expect |-damage|p1a: X|0 fnt
+expect |-damage|p1a: X|0 fnt
+expect |rng|100|25
+expect |faint|p1a: X
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Geodude|Geodude-Alola, L50, F|118/118
+expect |switch|p1a: Geodude|Geodude-Alola, L50, F|118/118
+expect |split|p2
+expect |switch|p2a: Oricorio|Oricorio-Pom-Pom, L50, F|152/152
+expect |switch|p2a: Oricorio|Oricorio-Pom-Pom, L50, F|152/152
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Oricorio|Charge|p2a: Oricorio
+expect |-boost|p2a: Oricorio|spd|1
+expect |-start|p2a: Oricorio|Charge
+expect |move|p1b: Sir Hops-a-Lot|Tera Blast|p2a: Oricorio
+expect |rng|100|89
+expect |rng|24|11
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Oricorio|105/152
+expect |-damage|p2a: Oricorio|105/152
+expect |move|p2b: Graveler|Charge|p2b: Graveler
+expect |-boost|p2b: Graveler|spd|1
+expect |-start|p2b: Graveler|Charge
+expect |move|p1a: Geodude|Metronome|p1a: Geodude
+expect |rng|581|354
+expect |rng|2|0
+expect |move|p1a: Geodude|Roar of Time|p2a: Oricorio|[from] move: Metronome
+expect |rng|100|68
+expect |rng|24|6
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Oricorio|67/152
+expect |-damage|p2a: Oricorio|67/152
+expect |-mustrecharge|p1a: Geodude
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2a: Oricorio|Revelation Dance|p1b: Sir Hops-a-Lot
+expect |rng|100|14
+expect |rng|24|22
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1b: Sir Hops-a-Lot|87/156
+expect |-damage|p1b: Sir Hops-a-Lot|87/156
+expect |-end|p2a: Oricorio|Charge|[silent]
+expect |rng|2|0
+expect |move|p1b: Sir Hops-a-Lot|Terrain Pulse|p2b: Graveler
+expect |rng|100|8
+expect |rng|24|21
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Graveler|26/146
+expect |-damage|p2b: Graveler|26/146
+expect |rng|2|0
+expect |move|p2b: Graveler|Charge|p2b: Graveler
+expect |-boost|p2b: Graveler|spd|1
+expect |-start|p2b: Graveler|Charge
+expect |rng|2|1
+expect |rng|2|0
+expect |cant|p1a: Geodude|recharge
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Oricorio|Mega Punch|p2b: Graveler
+expect |rng|100|30
+expect |rng|24|3
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2b: Graveler|0 fnt
+expect |-damage|p2b: Graveler|0 fnt
+expect |faint|p2b: Graveler
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Sir Hops-a-Lot|Tera Blast|p2a: Oricorio
+expect |rng|100|72
+expect |rng|24|15
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Oricorio|22/152
+expect |-damage|p2a: Oricorio|22/152
+expect |move|p1a: Geodude|Metronome|p1a: Geodude
+expect |rng|581|320
+expect |rng|1|0
+expect |move|p1a: Geodude|Bullet Punch|p2a: Oricorio|[from] move: Metronome
+expect |rng|100|21
+expect |rng|24|21
+expect |rng|16|8
+expect |-resisted|p2a: Oricorio
+expect |split|p2
+expect |-damage|p2a: Oricorio|13/152
+expect |-damage|p2a: Oricorio|13/152
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Morpeko|Morpeko, L50, M|135/135
+expect |switch|p2b: Morpeko|Morpeko, L50, M|135/135
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2a: Oricorio|Mega Punch|p1a: Geodude
+expect |rng|100|6
+expect |rng|24|2
+expect |rng|16|13
+expect |-resisted|p1a: Geodude
+expect |split|p1
+expect |-damage|p1a: Geodude|105/118
+expect |-damage|p1a: Geodude|105/118
+expect |move|p2b: Morpeko|Magic Powder|p1b: Sir Hops-a-Lot
+expect |rng|100|48
+expect |-start|p1b: Sir Hops-a-Lot|typechange|Psychic
+expect |move|p1b: Sir Hops-a-Lot|Terrain Pulse|p1a: Geodude
+expect |rng|100|84
+expect |rng|24|15
+expect |rng|16|8
+expect |-resisted|p1a: Geodude
+expect |split|p1
+expect |-damage|p1a: Geodude|77/118
+expect |-damage|p1a: Geodude|77/118
+expect |move|p1a: Geodude|Metronome|p1a: Geodude
+expect |rng|581|410
+expect |rng|2|0
+expect |move|p1a: Geodude|Drill Run|p2a: Oricorio|[from] move: Metronome
+expect |-immune|p2a: Oricorio
+expect |
+expect |-formechange|p2b: Morpeko|Morpeko-Hangry||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Oricorio|Charge|p2a: Oricorio
+expect |-boost|p2a: Oricorio|spd|1
+expect |-start|p2a: Oricorio|Charge
+expect |move|p2b: Morpeko|Aura Wheel|p1b: Sir Hops-a-Lot
+expect |rng|100|20
+expect |rng|24|18
+expect |rng|16|9
+expect |-supereffective|p1b: Sir Hops-a-Lot
+expect |split|p1
+expect |-damage|p1b: Sir Hops-a-Lot|0 fnt
+expect |-damage|p1b: Sir Hops-a-Lot|0 fnt
+expect |rng|100|51
+expect |-boost|p2b: Morpeko|spe|1
+expect |faint|p1b: Sir Hops-a-Lot
+expect |move|p1a: Geodude|Metronome|p1a: Geodude
+expect |rng|581|29
+expect |rng|2|0
+expect |move|p1a: Geodude|Take Down|p2a: Oricorio|[from] move: Metronome|[miss]
+expect |rng|100|99
+expect |-miss|p1a: Geodude|p2a: Oricorio
+expect |
+expect |-formechange|p2b: Morpeko|Morpeko||[from] ability: Hunger Switch
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Popplio|Popplio, L50, M|154/154
+expect |switch|p1b: Popplio|Popplio, L50, M|154/154
+expect |turn|7
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Morpeko|Aura Wheel|p2a: Oricorio
+expect |rng|100|57
+expect |rng|24|13
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Oricorio|0 fnt
+expect |-damage|p2a: Oricorio|0 fnt
+expect |rng|100|40
+expect |-boost|p2b: Morpeko|spe|1
+expect |faint|p2a: Oricorio
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Popplio|Hyper Voice|p2b: Morpeko
+expect |rng|100|11
+expect |rng|24|17
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Morpeko|89/135
+expect |-damage|p2b: Morpeko|89/135
+expect |move|p1a: Geodude|Body Slam|p2b: Morpeko
+expect |rng|100|57
+expect |rng|24|16
+expect |rng|16|14
+expect |-resisted|p2b: Morpeko
+expect |split|p2
+expect |-damage|p2b: Morpeko|57/135
+expect |-damage|p2b: Morpeko|57/135
+expect |rng|100|23
+expect |
+expect |-formechange|p2b: Morpeko|Morpeko-Hangry||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|8
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p2b: Morpeko|Throat Chop|p1b: Popplio
+expect |rng|100|36
+expect |rng|24|9
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1b: Popplio|88/154
+expect |-damage|p1b: Popplio|88/154
+expect |rng|100|27
+expect |-start|p1b: Popplio|Throat Chop|[silent]
+expect |rng|1|0
+expect |rng|1|0
+expect |cant|p1b: Popplio|move: Throat Chop
+expect |move|p1a: Geodude|Charge|p1a: Geodude
+expect |-boost|p1a: Geodude|spd|1
+expect |-start|p1a: Geodude|Charge
+expect |
+expect |-formechange|p2b: Morpeko|Morpeko||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p2b: Morpeko|Throat Chop|p1a: Geodude
+expect |rng|100|19
+expect |rng|24|23
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Geodude|23/118
+expect |-damage|p1a: Geodude|23/118
+expect |rng|100|8
+expect |-start|p1a: Geodude|Throat Chop|[silent]
+expect |move|p1b: Popplio|Copycat|p1b: Popplio
+expect |rng|1|0
+expect |move|p1b: Popplio|Throat Chop|p2b: Morpeko|[from] move: Copycat
+expect |rng|100|16
+expect |rng|24|18
+expect |rng|16|15
+expect |-resisted|p2b: Morpeko
+expect |split|p2
+expect |-damage|p2b: Morpeko|43/135
+expect |-damage|p2b: Morpeko|43/135
+expect |rng|100|56
+expect |-start|p2b: Morpeko|Throat Chop|[silent]
+expect |move|p1a: Geodude|Metronome|p1a: Geodude
+expect |rng|581|164
+expect |cant|p1a: Geodude|move: Throat Chop
+expect |rng|1|0
+expect |-end|p1a: Geodude|Charge|[silent]
+expect |
+expect |-end|p1b: Popplio|Throat Chop|[silent]
+expect |-formechange|p2b: Morpeko|Morpeko-Hangry||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p2b: Morpeko|Throat Chop|p1a: Geodude
+expect |rng|100|56
+expect |rng|24|6
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Geodude|0 fnt
+expect |-damage|p1a: Geodude|0 fnt
+expect |rng|100|97
+expect |faint|p1a: Geodude
+expect |move|p1b: Popplio|Copycat|p1b: Popplio
+expect |rng|1|0
+expect |move|p1b: Popplio|Throat Chop|p2b: Morpeko|[from] move: Copycat
+expect |rng|100|81
+expect |rng|24|22
+expect |rng|16|7
+expect |-resisted|p2b: Morpeko
+expect |split|p2
+expect |-damage|p2b: Morpeko|27/135
+expect |-damage|p2b: Morpeko|27/135
+expect |rng|100|5
+expect |
+expect |-end|p2b: Morpeko|Throat Chop|[silent]
+expect |-formechange|p2b: Morpeko|Morpeko||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p2b: Morpeko|Aura Wheel|p1b: Popplio
+expect |rng|100|65
+expect |rng|24|21
+expect |rng|16|9
+expect |-supereffective|p1b: Popplio
+expect |split|p1
+expect |-damage|p1b: Popplio|0 fnt
+expect |-damage|p1b: Popplio|0 fnt
+expect |rng|100|67
+expect |-boost|p2b: Morpeko|spe|1
+expect |faint|p1b: Popplio
+expect |
+expect |win|p2

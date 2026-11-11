@@ -1,0 +1,37 @@
+[package]
+name = "pikapro-server"
+description = "Pokémon Showdown's battle stream and simulate-battle command on pikapro, message for message"
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords = ["pokemon", "showdown", "battle-stream", "simulator", "protocol"]
+categories = ["games", "simulation", "command-line-utilities"]
+# The fuzzers and the golden transcripts need pikapro-conformance
+# (a path-only dev-dependency, dropped on publish), the differential ones
+# also the workspace's oracle: they stay in the repository.
+exclude = [
+    "examples/stream_fuzz.rs",
+    "examples/input_fuzz.rs",
+    "tests/transcripts.rs",
+    "tests/transcript",
+    "tests/transcripts",
+]
+
+[[bin]]
+name = "pikapro-simulate"
+path = "src/bin/pikapro-simulate.rs"
+
+[dependencies]
+pikapro.workspace = true
+pikapro-data.workspace = true
+pikapro-protocol.workspace = true
+pikapro-teams.workspace = true
+
+[dev-dependencies]
+pikapro-conformance = { path = "../pikapro-conformance" }
+
+[lints]
+workspace = true

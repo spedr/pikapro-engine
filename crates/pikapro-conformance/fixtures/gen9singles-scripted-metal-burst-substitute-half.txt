@@ -1,0 +1,110 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Snorlax
+Ability: Thick Fat
+Level: 11
+EVs: 88 HP
+Hardy Nature
+- Metal Burst
+- Splash
+
+Blissey
+Ability: Natural Cure
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Raticate
+Ability: Guts
+EVs: 100 HP
+Hardy Nature
+- Substitute
+- Super Fang
+
+Blissey
+Ability: Natural Cure
+Level: 50
+Hardy Nature
+- Splash
+end
+choice p1 move 2
+choice p2 move 1
+choice p1 move 1
+choice p2 move 2
+choice p1 move 1
+choice p2 move 2
+choice p1 move 1
+choice p2 move 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Snorlax|Snorlax, L11, F|62/62
+expect |switch|p1a: Snorlax|Snorlax, L11, F|62/62
+expect |split|p2
+expect |switch|p2a: Raticate|Raticate, F|276/276
+expect |switch|p2a: Raticate|Raticate, F|276/276
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Raticate|Substitute|p2a: Raticate
+expect |-start|p2a: Raticate|Substitute
+expect |split|p2
+expect |-damage|p2a: Raticate|207/276
+expect |-damage|p2a: Raticate|207/276
+expect |move|p1a: Snorlax|Splash|p1a: Snorlax
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Raticate|Super Fang|p1a: Snorlax|[miss]
+expect |rng|100|94
+expect |-miss|p2a: Raticate|p1a: Snorlax
+expect |move|p1a: Snorlax|Metal Burst||[still]
+expect |-fail|p1a: Snorlax
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Raticate|Super Fang|p1a: Snorlax
+expect |rng|100|18
+expect |split|p1
+expect |-damage|p1a: Snorlax|31/62
+expect |-damage|p1a: Snorlax|31/62
+expect |move|p1a: Snorlax|Metal Burst|p2a: Raticate
+expect |rng|100|28
+expect |-activate|p2a: Raticate|move: Substitute|[damage]
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Raticate|Super Fang|p1a: Snorlax
+expect |rng|100|70
+expect |split|p1
+expect |-damage|p1a: Snorlax|16/62
+expect |-damage|p1a: Snorlax|16/62
+expect |move|p1a: Snorlax|Metal Burst|p2a: Raticate
+expect |rng|100|9
+expect |-end|p2a: Raticate|Substitute
+expect |
+expect |upkeep
+expect |turn|5

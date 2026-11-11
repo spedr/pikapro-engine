@@ -1,0 +1,121 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Arboliva
+Ability: Seed Sower
+Hardy Nature
+- Splash
+end
+team p2
+Indeedee
+Ability: Psychic Surge
+Hardy Nature
+- Future Sight
+- Splash
+end
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 move 2
+choice p1 move 1
+choice p2 move 2
+choice p1 move 1
+choice p2 move 2
+choice p1 move 1
+choice p2 move 2
+choice p1 move 1
+choice p2 move 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|1
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Arboliva|Arboliva, F|297/297
+expect |switch|p1a: Arboliva|Arboliva, F|297/297
+expect |split|p2
+expect |switch|p2a: Indeedee|Indeedee, M|261/261
+expect |switch|p2a: Indeedee|Indeedee, M|261/261
+expect |-fieldstart|move: Psychic Terrain|[from] ability: Psychic Surge|[of] p2a: Indeedee
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Indeedee|Future Sight|p1a: Arboliva
+expect |-start|p2a: Indeedee|move: Future Sight
+expect |move|p1a: Arboliva|Splash|p1a: Arboliva
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Indeedee|Splash|p2a: Indeedee
+expect |-nothing
+expect |move|p1a: Arboliva|Splash|p1a: Arboliva
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Indeedee|Splash|p2a: Indeedee
+expect |-nothing
+expect |move|p1a: Arboliva|Splash|p1a: Arboliva
+expect |-nothing
+expect |
+expect |-end|p1a: Arboliva|move: Future Sight
+expect |rng|100|74
+expect |rng|24|22
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Arboliva|110/297
+expect |-damage|p1a: Arboliva|110/297
+expect |-fieldstart|move: Grassy Terrain|[from] ability: Seed Sower|[of] p1a: Arboliva
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Indeedee|Splash|p2a: Indeedee
+expect |-nothing
+expect |move|p1a: Arboliva|Splash|p1a: Arboliva
+expect |-nothing
+expect |
+expect |split|p1
+expect |-heal|p1a: Arboliva|128/297|[from] Grassy Terrain
+expect |-heal|p1a: Arboliva|128/297|[from] Grassy Terrain
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2a: Indeedee|Splash|p2a: Indeedee
+expect |-nothing
+expect |move|p1a: Arboliva|Splash|p1a: Arboliva
+expect |-nothing
+expect |
+expect |split|p1
+expect |-heal|p1a: Arboliva|146/297|[from] Grassy Terrain
+expect |-heal|p1a: Arboliva|146/297|[from] Grassy Terrain
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Indeedee|Splash|p2a: Indeedee
+expect |-nothing
+expect |move|p1a: Arboliva|Splash|p1a: Arboliva
+expect |-nothing
+expect |
+expect |split|p1
+expect |-heal|p1a: Arboliva|164/297|[from] Grassy Terrain
+expect |-heal|p1a: Arboliva|164/297|[from] Grassy Terrain
+expect |upkeep
+expect |turn|7

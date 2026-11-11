@@ -1,0 +1,788 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed b814 e917 7e96 0bdf
+genders drawn
+team p1
+Magby (M)
+Ability: Vital Spirit
+Level: 91
+Tera Type: Fairy
+EVs: 1 HP / 61 Atk / 70 Def / 38 SpA / 239 SpD / 91 Spe
+Impish Nature
+- Feather Dance
+- Guard Swap
+
+Sentret (M)
+Ability: Frisk
+Level: 92
+Tera Type: Steel
+EVs: 7 HP / 55 Atk / 129 Def / 35 SpA / 62 SpD / 212 Spe
+Bashful Nature
+- Lick
+- Confusion
+- Steel Beam
+
+Tinkatuff (F) @ Iron Plate
+Ability: Mold Breaker
+Level: 63
+Tera Type: Grass
+EVs: 125 HP / 19 Atk / 47 Def / 1 SpA / 120 SpD / 198 Spe
+Lonely Nature
+- Double Hit
+- Decorate
+- Forest's Curse
+- Thunder Wave
+
+Mr. Bubbles (Ursaluna) @ Light Clay
+Ability: Bulletproof
+Level: 90
+Tera Type: Ground
+EVs: 159 HP / 30 Atk / 211 Def / 21 SpA / 51 SpD / 12 Spe
+Rash Nature
+- Flip Turn
+
+Rhyhorn @ Fast Ball
+Ability: Lightning Rod
+Level: 96
+Tera Type: Ground
+EVs: 193 HP / 59 Atk / 16 Def / 8 SpA / 118 SpD / 111 Spe
+Bold Nature
+- Infernal Parade
+- Swords Dance
+- Fairy Lock
+
+Sparky (Quaquaval) (M)
+Ability: Torrent
+Level: 80
+Tera Type: Ground
+EVs: 11 HP / 52 Atk / 83 Def / 151 SpA / 199 SpD / 8 Spe
+Impish Nature
+- Thief
+- Scald
+- Magic Powder
+end
+team p2
+Hydreigon @ Charti Berry
+Ability: Levitate
+Level: 62
+Tera Type: Poison
+EVs: 117 HP / 68 Atk / 29 Def / 35 SpA / 182 SpD / 57 Spe
+Careful Nature
+- Secret Sword
+- Waterfall
+
+Zekrom
+Ability: Teravolt
+Level: 85
+Tera Type: Ghost
+EVs: 46 HP / 78 Atk / 3 Def / 121 SpA / 218 SpD / 30 Spe
+Hasty Nature
+- Icicle Crash
+- Seismic Toss
+- Dual Wingbeat
+- Triple Dive
+
+Eiscue
+Ability: Ice Face
+Level: 75
+Tera Type: Normal
+EVs: 182 Atk / 79 Def / 143 SpA / 51 SpD / 55 Spe
+Brave Nature
+- Follow Me
+
+ThisNameIsFarTooLongToKeep (Frigibax) (M) @ Wide Lens
+Ability: Ice Body
+Level: 64
+Tera Type: Electric
+EVs: 156 HP / 136 Atk / 46 Def / 171 SpA
+Quiet Nature
+- Gravity
+- Magnetic Flux
+
+Leavanny @ Wide Lens
+Ability: Swarm
+Level: 97
+Tera Type: Ground
+EVs: 123 HP / 12 Atk / 59 Def / 42 SpA / 235 SpD / 28 Spe
+Brave Nature
+- Snowscape
+
+Mudbray (M)
+Ability: Stamina
+Level: 88
+Tera Type: Fairy
+EVs: 62 HP / 134 Atk / 39 Def / 56 SpA / 84 SpD / 58 Spe
+Careful Nature
+- Ally Switch
+- Grassy Glide
+end
+choice p1 switch 4, move 2 2 terastallize
+choice p2 switch 4, move 2 -1 terastallize
+choice p1 move 1 -2, move 1 1
+choice p2 move 1, move 2 2
+choice p1 switch 6,skip
+choice p2 switch eiscue ,  move 1 +2
+choice p1 switch 3, move 2 2
+choice p2 switch 5, move 1 1
+choice p1 move 2 2 ,  move 1 -1
+choice p2 switch 5, move 4 -1
+choice p1 move 2 1 ,  switch rhyhorn
+choice p2 move Follow Me ,  move dualwingbeat 1
+choice p1 move 4 2,move infernalparade 2
+choice p1 switch 4, pass
+choice p2 switch 6, switch 3
+choice p1 move 2 -2, switch 6
+choice p2 switch Zekrom,switch Eiscue
+choice p1 move 2 1, switch 5
+choice p2 pass, switch 6
+choice p1 move 1 2, move 2 -1
+choice p2 move 3 2, move 2
+choice p1 pass, switch ursaluna
+choice p2 move 4 1, switch 4
+choice p1 move Feather Dance -2 ,  move 1 -1
+choice p1 switch 3, pass
+choice p2 move 1 -2, switch 4
+choice p1 move Magic Powder 2,move Flip Turn -1
+choice p1 pass, switch 6
+choice p2 skip ,  switch 4
+choice p1 move 1 2, move 2
+choice p2 move 1 1, move 1 -1
+choice p1 move 1 -2, move 1 2
+choice p2 move 2 -2, move 1 2
+choice p1 move Magic Powder 2,move swordsdance
+choice p2 default
+choice p1 move 2 -2, move 1 1
+choice p2 default
+choice p1 pass ,  switch ursaluna
+choice p2 move 4 2, move 2 2
+choice p1 default
+choice p2 move 2 1, move 2 -1
+choice p1 move 3 2, move 1 -1
+choice p2 move 4 +2, move 2 -1
+choice p1 pass, move 1 1
+choice p2 move 4 2, move 2 -1
+choice p1 default
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Magby|Magby, L91, M|211/211
+expect |switch|p1a: Magby|Magby, L91, M|100/100
+expect |split|p1
+expect |switch|p1b: Sentret|Sentret, L92, M|195/195
+expect |switch|p1b: Sentret|Sentret, L92, M|100/100
+expect |split|p2
+expect |switch|p2a: Hydreigon|Hydreigon, L62, F|223/223
+expect |switch|p2a: Hydreigon|Hydreigon, L62, F|100/100
+expect |split|p2
+expect |switch|p2b: Zekrom|Zekrom, L85|300/300
+expect |switch|p2b: Zekrom|Zekrom, L85|100/100
+expect |-ability|p2b: Zekrom|Teravolt
+expect |-item|p2a: Hydreigon|Charti Berry|[from] ability: Frisk|[of] p1b: Sentret
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Mr. Bubbles|Ursaluna, L90, F|397/397
+expect |switch|p1a: Mr. Bubbles|Ursaluna, L90, F|100/100
+expect |split|p2
+expect |switch|p2a: ThisNameIsFarTooLong|Frigibax, L64, M|202/202
+expect |switch|p2a: ThisNameIsFarTooLong|Frigibax, L64, M|100/100
+expect |-terastallize|p2b: Zekrom|Ghost
+expect |-terastallize|p1b: Sentret|Steel
+expect |move|p2b: Zekrom|Seismic Toss|p2a: ThisNameIsFarTooLong
+expect |rng|100|5
+expect |split|p2
+expect |-damage|p2a: ThisNameIsFarTooLong|117/202
+expect |-damage|p2a: ThisNameIsFarTooLong|58/100
+expect |move|p1b: Sentret|Confusion|p2b: Zekrom
+expect |rng|100|44
+expect |rng|24|17
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Zekrom|283/300
+expect |-damage|p2b: Zekrom|95/100
+expect |rng|100|96
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2b: Zekrom|Seismic Toss|p1b: Sentret
+expect |rng|100|78
+expect |split|p1
+expect |-damage|p1b: Sentret|110/195
+expect |-damage|p1b: Sentret|57/100
+expect |move|p1a: Mr. Bubbles|Flip Turn|p1b: Sentret
+expect |rng|100|51
+expect |rng|24|23
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Sentret|5/195
+expect |-damage|p1b: Sentret|3/100
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sparky|Quaquaval, L80, M|252/252|[from] Flip Turn
+expect |switch|p1a: Sparky|Quaquaval, L80, M|100/100|[from] Flip Turn
+expect |move|p1b: Sentret|Lick|p2a: ThisNameIsFarTooLong
+expect |rng|100|17
+expect |rng|24|10
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: ThisNameIsFarTooLong|85/202
+expect |-damage|p2a: ThisNameIsFarTooLong|43/100
+expect |rng|100|10
+expect |-status|p2a: ThisNameIsFarTooLong|par
+expect |rng|4|0
+expect |cant|p2a: ThisNameIsFarTooLong|par
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Tinkatuff|Tinkatuff, L63, F|193/193
+expect |switch|p1a: Tinkatuff|Tinkatuff, L63, F|100/100
+expect |-ability|p1a: Tinkatuff|Mold Breaker
+expect |split|p2
+expect |switch|p2a: Eiscue|Eiscue, L75, M|220/220
+expect |switch|p2a: Eiscue|Eiscue, L75, M|100/100
+expect |move|p2b: Zekrom|Icicle Crash|p1b: Sentret|[miss]
+expect |rng|100|99
+expect |-miss|p2b: Zekrom|p1b: Sentret
+expect |move|p1b: Sentret|Confusion|p2b: Zekrom
+expect |rng|100|11
+expect |rng|24|18
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Zekrom|268/300
+expect |-damage|p2b: Zekrom|90/100
+expect |rng|100|44
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Leavanny|Leavanny, L97, M|311/311
+expect |switch|p2a: Leavanny|Leavanny, L97, M|100/100
+expect |move|p2b: Zekrom|Icicle Crash|p1a: Tinkatuff
+expect |rng|100|44
+expect |rng|24|13
+expect |rng|16|3
+expect |-resisted|p1a: Tinkatuff
+expect |split|p1
+expect |-damage|p1a: Tinkatuff|93/193
+expect |-damage|p1a: Tinkatuff|49/100
+expect |rng|100|95
+expect |move|p1a: Tinkatuff|Decorate|p2b: Zekrom
+expect |-boost|p2b: Zekrom|atk|2
+expect |-boost|p2b: Zekrom|spa|2
+expect |move|p1b: Sentret|Lick|p1a: Tinkatuff
+expect |rng|100|31
+expect |rng|24|4
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Tinkatuff|63/193
+expect |-damage|p1a: Tinkatuff|33/100
+expect |rng|100|1
+expect |-status|p1a: Tinkatuff|par
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Eiscue|Eiscue, L75, M|220/220
+expect |switch|p2a: Eiscue|Eiscue, L75, M|100/100
+expect |split|p1
+expect |switch|p1b: Rhyhorn|Rhyhorn, L96, F|335/335
+expect |switch|p1b: Rhyhorn|Rhyhorn, L96, F|100/100
+expect |move|p2b: Zekrom|Triple Dive|p2a: Eiscue
+expect |rng|100|66
+expect |rng|24|7
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Eiscue|164/220
+expect |-damage|p2a: Eiscue|75/100
+expect |rng|24|15
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Eiscue|101/220
+expect |-damage|p2a: Eiscue|46/100
+expect |rng|24|21
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Eiscue|38/220
+expect |-damage|p2a: Eiscue|18/100
+expect |-hitcount|p2a: Eiscue|3
+expect |rng|4|0
+expect |cant|p1a: Tinkatuff|par
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Eiscue|Follow Me|p2a: Eiscue
+expect |-singleturn|p2a: Eiscue|move: Follow Me
+expect |move|p2b: Zekrom|Dual Wingbeat|p1a: Tinkatuff
+expect |rng|100|68
+expect |rng|24|22
+expect |rng|16|13
+expect |-resisted|p1a: Tinkatuff
+expect |split|p1
+expect |-damage|p1a: Tinkatuff|0 fnt
+expect |-damage|p1a: Tinkatuff|0 fnt
+expect |faint|p1a: Tinkatuff
+expect |-hitcount|p1: Tinkatuff|1
+expect |move|p1b: Rhyhorn|Infernal Parade|p2a: Eiscue
+expect |rng|100|51
+expect |rng|24|15
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Eiscue|14/220
+expect |-damage|p2a: Eiscue|7/100
+expect |rng|100|16
+expect |-status|p2a: Eiscue|brn
+expect |
+expect |split|p2
+expect |-damage|p2a: Eiscue|1/220 brn|[from] brn
+expect |-damage|p2a: Eiscue|1/100 brn|[from] brn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Magby|Magby, L91, M|211/211
+expect |switch|p1a: Magby|Magby, L91, M|100/100
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: ThisNameIsFarTooLong|Frigibax, L64, M|85/202 par
+expect |switch|p2b: ThisNameIsFarTooLong|Frigibax, L64, M|43/100 par
+expect |split|p1
+expect |switch|p1b: Mr. Bubbles|Ursaluna, L90, F|397/397
+expect |switch|p1b: Mr. Bubbles|Ursaluna, L90, F|100/100
+expect |split|p2
+expect |switch|p2a: Mudbray|Mudbray, L88, M|261/261
+expect |switch|p2a: Mudbray|Mudbray, L88, M|100/100
+expect |move|p1a: Magby|Guard Swap|p1b: Mr. Bubbles
+expect |-swapboost|p1a: Magby|p1b: Mr. Bubbles|def, spd|[from] move: Guard Swap
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sentret|Sentret, L92, M, tera:Steel|5/195
+expect |switch|p1b: Sentret|Sentret, L92, M, tera:Steel|3/100
+expect |-item|p2b: ThisNameIsFarTooLong|Wide Lens|[from] ability: Frisk|[of] p1b: Sentret
+expect |split|p2
+expect |switch|p2a: Zekrom|Zekrom, L85, tera:Ghost|268/300
+expect |switch|p2a: Zekrom|Zekrom, L85, tera:Ghost|90/100
+expect |-ability|p2a: Zekrom|Teravolt
+expect |split|p2
+expect |switch|p2b: Eiscue|Eiscue, L75, M|1/220 brn
+expect |switch|p2b: Eiscue|Eiscue, L75, M|1/100 brn
+expect |move|p1a: Magby|Guard Swap|p2a: Zekrom
+expect |-swapboost|p1a: Magby|p2a: Zekrom|def, spd|[from] move: Guard Swap
+expect |
+expect |split|p2
+expect |-damage|p2b: Eiscue|0 fnt|[from] brn
+expect |-damage|p2b: Eiscue|0 fnt|[from] brn
+expect |faint|p2b: Eiscue
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: ThisNameIsFarTooLong|Frigibax, L64, M|85/202 par
+expect |switch|p2b: ThisNameIsFarTooLong|Frigibax, L64, M|43/100 par
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p2a: Zekrom|Dual Wingbeat|p1b: Sentret
+expect |rng|100|27
+expect |rng|24|9
+expect |rng|16|3
+expect |-resisted|p1b: Sentret
+expect |split|p1
+expect |-damage|p1b: Sentret|0 fnt
+expect |-damage|p1b: Sentret|0 fnt
+expect |faint|p1b: Sentret
+expect |-hitcount|p1: Sentret|1
+expect |move|p1a: Magby|Feather Dance|p2b: ThisNameIsFarTooLong
+expect |rng|100|47
+expect |-unboost|p2b: ThisNameIsFarTooLong|atk|2
+expect |rng|4|0
+expect |cant|p2b: ThisNameIsFarTooLong|par
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Mr. Bubbles|Ursaluna, L90, F|397/397
+expect |switch|p1b: Mr. Bubbles|Ursaluna, L90, F|100/100
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Hydreigon|Hydreigon, L62, F|223/223
+expect |switch|p2b: Hydreigon|Hydreigon, L62, F|100/100
+expect |move|p2a: Zekrom|Triple Dive|p1a: Magby
+expect |rng|100|78
+expect |rng|24|10
+expect |rng|16|8
+expect |-supereffective|p1a: Magby
+expect |split|p1
+expect |-damage|p1a: Magby|115/211
+expect |-damage|p1a: Magby|55/100
+expect |rng|24|18
+expect |rng|16|8
+expect |-supereffective|p1a: Magby
+expect |split|p1
+expect |-damage|p1a: Magby|19/211
+expect |-damage|p1a: Magby|10/100
+expect |rng|24|18
+expect |rng|16|1
+expect |-supereffective|p1a: Magby
+expect |split|p1
+expect |-damage|p1a: Magby|0 fnt
+expect |-damage|p1a: Magby|0 fnt
+expect |faint|p1a: Magby
+expect |-hitcount|p1: Magby|3
+expect |move|p1b: Mr. Bubbles|Flip Turn|p1: Magby|[notarget]
+expect |-fail|p1b: Mr. Bubbles
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sparky|Quaquaval, L80, M|252/252
+expect |switch|p1a: Sparky|Quaquaval, L80, M|100/100
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: ThisNameIsFarTooLong|Frigibax, L64, M|85/202 par
+expect |switch|p2b: ThisNameIsFarTooLong|Frigibax, L64, M|43/100 par
+expect |move|p2a: Zekrom|Icicle Crash|p2b: ThisNameIsFarTooLong
+expect |rng|100|26
+expect |rng|24|22
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: ThisNameIsFarTooLong|0 fnt
+expect |-damage|p2b: ThisNameIsFarTooLong|0 fnt
+expect |rng|100|30
+expect |faint|p2b: ThisNameIsFarTooLong
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Sparky|Magic Powder||[still]
+expect |rng|100|77
+expect |-fail|p1a: Sparky
+expect |move|p1b: Mr. Bubbles|Flip Turn|p1a: Sparky
+expect |rng|100|77
+expect |rng|24|3
+expect |rng|16|12
+expect |-resisted|p1a: Sparky
+expect |split|p1
+expect |-damage|p1a: Sparky|221/252
+expect |-damage|p1a: Sparky|88/100
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Rhyhorn|Rhyhorn, L96, F|335/335|[from] Flip Turn
+expect |switch|p1b: Rhyhorn|Rhyhorn, L96, F|100/100|[from] Flip Turn
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Hydreigon|Hydreigon, L62, F|223/223
+expect |switch|p2b: Hydreigon|Hydreigon, L62, F|100/100
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p2a: Zekrom|Icicle Crash|p1a: Sparky
+expect |rng|100|42
+expect |rng|24|14
+expect |rng|16|13
+expect |-resisted|p1a: Sparky
+expect |split|p1
+expect |-damage|p1a: Sparky|178/252
+expect |-damage|p1a: Sparky|71/100
+expect |rng|100|85
+expect |move|p1a: Sparky|Thief|p2b: Hydreigon
+expect |rng|100|17
+expect |rng|24|18
+expect |rng|16|6
+expect |-resisted|p2b: Hydreigon
+expect |split|p2
+expect |-damage|p2b: Hydreigon|191/223
+expect |-damage|p2b: Hydreigon|86/100
+expect |-enditem|p2b: Hydreigon|Charti Berry|[silent]|[from] move: Thief|[of] p1a: Sparky
+expect |-item|p1a: Sparky|Charti Berry|[from] move: Thief|[of] p2b: Hydreigon
+expect |move|p2b: Hydreigon|Secret Sword|p2a: Zekrom
+expect |-immune|p2a: Zekrom
+expect |move|p1b: Rhyhorn|Swords Dance|p1b: Rhyhorn
+expect |-boost|p1b: Rhyhorn|atk|2
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p2a: Zekrom|Seismic Toss|p2b: Hydreigon
+expect |rng|100|99
+expect |split|p2
+expect |-damage|p2b: Hydreigon|106/223
+expect |-damage|p2b: Hydreigon|48/100
+expect |move|p1a: Sparky|Thief|p1b: Rhyhorn
+expect |rng|100|79
+expect |rng|24|4
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Rhyhorn|301/335
+expect |-damage|p1b: Rhyhorn|90/100
+expect |move|p2b: Hydreigon|Secret Sword|p1b: Rhyhorn
+expect |rng|100|0
+expect |rng|24|17
+expect |rng|16|13
+expect |-supereffective|p1b: Rhyhorn
+expect |split|p1
+expect |-damage|p1b: Rhyhorn|247/335
+expect |-damage|p1b: Rhyhorn|74/100
+expect |move|p1b: Rhyhorn|Infernal Parade|p2b: Hydreigon
+expect |rng|100|21
+expect |rng|24|11
+expect |rng|16|13
+expect |-resisted|p2b: Hydreigon
+expect |split|p2
+expect |-damage|p2b: Hydreigon|95/223
+expect |-damage|p2b: Hydreigon|43/100
+expect |rng|100|86
+expect |
+expect |upkeep
+expect |turn|14
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2a: Zekrom|Icicle Crash|p1b: Rhyhorn
+expect |rng|100|35
+expect |rng|24|1
+expect |rng|16|0
+expect |-supereffective|p1b: Rhyhorn
+expect |split|p1
+expect |-damage|p1b: Rhyhorn|91/335
+expect |-damage|p1b: Rhyhorn|28/100
+expect |rng|100|41
+expect |move|p1a: Sparky|Magic Powder|p2b: Hydreigon
+expect |rng|100|60
+expect |-start|p2b: Hydreigon|typechange|Psychic
+expect |move|p2b: Hydreigon|Secret Sword|p1b: Rhyhorn
+expect |rng|100|94
+expect |rng|24|18
+expect |rng|16|15
+expect |-supereffective|p1b: Rhyhorn
+expect |split|p1
+expect |-damage|p1b: Rhyhorn|37/335
+expect |-damage|p1b: Rhyhorn|12/100
+expect |move|p1b: Rhyhorn|Swords Dance|p1b: Rhyhorn
+expect |-boost|p1b: Rhyhorn|atk|2
+expect |
+expect |upkeep
+expect |turn|15
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2a: Zekrom|Icicle Crash|p1a: Sparky
+expect |rng|100|6
+expect |rng|24|23
+expect |rng|16|9
+expect |-resisted|p1a: Sparky
+expect |split|p1
+expect |-damage|p1a: Sparky|133/252
+expect |-damage|p1a: Sparky|53/100
+expect |rng|100|48
+expect |move|p1a: Sparky|Scald|p1b: Rhyhorn
+expect |rng|100|44
+expect |rng|24|0
+expect |rng|16|14
+expect |-supereffective|p1b: Rhyhorn
+expect |-crit|p1b: Rhyhorn
+expect |split|p1
+expect |-damage|p1b: Rhyhorn|0 fnt
+expect |-damage|p1b: Rhyhorn|0 fnt
+expect |rng|100|19
+expect |faint|p1b: Rhyhorn
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Hydreigon|Secret Sword|p1a: Sparky
+expect |rng|100|85
+expect |rng|24|0
+expect |rng|16|7
+expect |-crit|p1a: Sparky
+expect |split|p1
+expect |-damage|p1a: Sparky|78/252
+expect |-damage|p1a: Sparky|31/100
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Mr. Bubbles|Ursaluna, L90, F|397/397
+expect |switch|p1b: Mr. Bubbles|Ursaluna, L90, F|100/100
+expect |turn|16
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2a: Zekrom|Triple Dive|p1b: Mr. Bubbles
+expect |rng|100|38
+expect |rng|24|14
+expect |rng|16|2
+expect |-supereffective|p1b: Mr. Bubbles
+expect |split|p1
+expect |-damage|p1b: Mr. Bubbles|347/397
+expect |-damage|p1b: Mr. Bubbles|88/100
+expect |rng|24|21
+expect |rng|16|14
+expect |-supereffective|p1b: Mr. Bubbles
+expect |split|p1
+expect |-damage|p1b: Mr. Bubbles|303/397
+expect |-damage|p1b: Mr. Bubbles|77/100
+expect |rng|24|2
+expect |rng|16|12
+expect |-supereffective|p1b: Mr. Bubbles
+expect |split|p1
+expect |-damage|p1b: Mr. Bubbles|259/397
+expect |-damage|p1b: Mr. Bubbles|66/100
+expect |-hitcount|p1b: Mr. Bubbles|3
+expect |move|p1a: Sparky|Thief|p2a: Zekrom
+expect |rng|100|19
+expect |rng|24|17
+expect |rng|16|14
+expect |-supereffective|p2a: Zekrom
+expect |split|p2
+expect |-damage|p2a: Zekrom|190/300
+expect |-damage|p2a: Zekrom|64/100
+expect |move|p2b: Hydreigon|Waterfall|p1b: Mr. Bubbles
+expect |rng|100|41
+expect |rng|24|10
+expect |rng|16|3
+expect |-supereffective|p1b: Mr. Bubbles
+expect |split|p1
+expect |-damage|p1b: Mr. Bubbles|207/397
+expect |-damage|p1b: Mr. Bubbles|53/100
+expect |rng|100|76
+expect |move|p1b: Mr. Bubbles|Flip Turn|p2b: Hydreigon
+expect |rng|100|54
+expect |rng|24|2
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2b: Hydreigon|14/223
+expect |-damage|p2b: Hydreigon|7/100
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p2a: Zekrom|Seismic Toss|p1a: Sparky
+expect |rng|100|28
+expect |split|p1
+expect |-damage|p1a: Sparky|0 fnt
+expect |-damage|p1a: Sparky|0 fnt
+expect |faint|p1a: Sparky
+expect |move|p2b: Hydreigon|Waterfall|p2a: Zekrom
+expect |rng|100|94
+expect |rng|24|9
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Zekrom|160/300
+expect |-damage|p2a: Zekrom|54/100
+expect |rng|100|68
+expect |move|p1b: Mr. Bubbles|Flip Turn|p1: Sparky|[notarget]
+expect |-fail|p1b: Mr. Bubbles
+expect |
+expect |upkeep
+expect |turn|18
+expect |
+expect |t:|
+expect |move|p2a: Zekrom|Triple Dive|p1b: Mr. Bubbles
+expect |rng|100|13
+expect |rng|24|15
+expect |rng|16|12
+expect |-supereffective|p1b: Mr. Bubbles
+expect |split|p1
+expect |-damage|p1b: Mr. Bubbles|163/397
+expect |-damage|p1b: Mr. Bubbles|42/100
+expect |rng|24|23
+expect |rng|16|7
+expect |-supereffective|p1b: Mr. Bubbles
+expect |split|p1
+expect |-damage|p1b: Mr. Bubbles|115/397
+expect |-damage|p1b: Mr. Bubbles|29/100
+expect |rng|24|13
+expect |rng|16|2
+expect |-supereffective|p1b: Mr. Bubbles
+expect |split|p1
+expect |-damage|p1b: Mr. Bubbles|65/397
+expect |-damage|p1b: Mr. Bubbles|17/100
+expect |-hitcount|p1b: Mr. Bubbles|3
+expect |move|p2b: Hydreigon|Waterfall|p2a: Zekrom
+expect |rng|100|1
+expect |rng|24|8
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Zekrom|130/300
+expect |-damage|p2a: Zekrom|44/100
+expect |rng|100|97
+expect |move|p1b: Mr. Bubbles|Flip Turn|p2a: Zekrom
+expect |rng|100|49
+expect |rng|24|22
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Zekrom|66/300
+expect |-damage|p2a: Zekrom|22/100
+expect |
+expect |upkeep
+expect |turn|19
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2a: Zekrom|Triple Dive|p1b: Mr. Bubbles
+expect |rng|100|21
+expect |rng|24|14
+expect |rng|16|1
+expect |-supereffective|p1b: Mr. Bubbles
+expect |split|p1
+expect |-damage|p1b: Mr. Bubbles|15/397
+expect |-damage|p1b: Mr. Bubbles|4/100
+expect |rng|24|7
+expect |rng|16|2
+expect |-supereffective|p1b: Mr. Bubbles
+expect |split|p1
+expect |-damage|p1b: Mr. Bubbles|0 fnt
+expect |-damage|p1b: Mr. Bubbles|0 fnt
+expect |faint|p1b: Mr. Bubbles
+expect |-hitcount|p1: Mr. Bubbles|2
+expect |
+expect |win|p2

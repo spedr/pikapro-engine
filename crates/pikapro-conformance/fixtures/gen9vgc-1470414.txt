@@ -1,0 +1,719 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed e679 8913 f3b8 3c90
+genders drawn
+team p1
+Spewpa (M)
+Ability: Shed Skin
+Level: 50
+Tera Type: Ghost
+EVs: 168 HP / 102 Atk / 72 Def / 27 SpA / 67 SpD / 52 Spe
+Gentle Nature
+- Spore
+
+Slowbro (F) @ Covert Cloak
+Ability: Own Tempo
+Level: 50
+Shiny: Yes
+Tera Type: Rock
+EVs: 1 HP / 246 Atk / 68 Def / 1 SpA / 1 SpD / 193 Spe
+Relaxed Nature
+- Make It Rain
+- Tailwind
+
+X (Muk) (M)
+Ability: Sticky Hold
+Level: 50
+Tera Type: Dark
+EVs: 45 HP / 20 Atk / 99 Def / 51 SpA / 123 SpD / 157 Spe
+Rash Nature
+- Facade
+- Glaive Rush
+- Air Slash
+- Kowtow Cleave
+
+Nibbles (Azumarill) (M)
+Ability: Thick Fat
+Level: 50
+Tera Type: Dark
+EVs: 15 HP / 82 Atk / 49 Def / 157 SpA / 4 SpD / 130 Spe
+Modest Nature
+- Rock Tomb
+
+Uxie
+Ability: Levitate
+Level: 50
+Tera Type: Ice
+EVs: 69 HP / 33 Atk / 249 Def / 42 SpA / 98 SpD / 2 Spe
+Serious Nature
+- Shadow Ball
+- Drill Peck
+- Dragon Tail
+- Spiky Shield
+
+Shroodle (F) @ Light Clay
+Ability: Unburden
+Level: 50
+Tera Type: Dragon
+EVs: 6 HP / 166 Atk / 58 Def / 7 SpA / 250 SpD / 16 Spe
+Hardy Nature
+- Focus Blast
+- Rock Throw
+- No Retreat
+- Clear Smog
+end
+team p2
+Arceus-Ice @ Zap Plate
+Ability: Multitype
+Level: 50
+Tera Type: Stellar
+EVs: 222 HP / 20 Atk / 17 Def / 29 SpA / 4 SpD / 217 Spe
+Docile Nature
+- Discharge
+- Wrap
+- Stuff Cheeks
+
+ThisNameIsFarTooLongToKeep (Arceus-Dragon)
+Ability: Multitype
+Level: 50
+Tera Type: Electric
+EVs: 2 HP / 103 Atk / 218 SpA / 186 SpD
+Modest Nature
+- Thunderbolt
+- Final Gambit
+
+Rotom-Mow
+Ability: Levitate
+Level: 50
+Tera Type: Rock
+EVs: 178 HP / 33 Atk / 71 Def / 25 SpA / 133 SpD / 31 Spe
+Impish Nature
+- Hydro Cannon
+- Force Palm
+
+Minior-Yellow @ Bright Powder
+Ability: Shields Down
+Level: 50
+Tera Type: Stellar
+EVs: 101 HP / 17 Atk / 68 Def / 21 SpA / 67 SpD / 214 Spe
+Docile Nature
+- Rock Slide
+- Psychic
+- Roost
+- Dream Eater
+
+Nosepass (M) @ Strawberry Sweet
+Ability: Sand Force
+Level: 50
+Tera Type: Ghost
+EVs: 13 HP / 61 Atk / 27 Def / 211 SpA / 25 SpD / 40 Spe
+Serious Nature
+- Harden
+
+Skiploom @ Quick Claw
+Ability: Chlorophyll
+Level: 50
+Tera Type: Flying
+EVs: 126 HP / 42 Atk / 216 Def / 97 SpA / 5 SpD / 5 Spe
+Quiet Nature
+- Follow Me
+- Razor Shell
+- Charm
+end
+choice p1 team 5213
+choice p2 team 4326
+choice p1 switch 4, switch 3
+choice p2 move 2 -2 terastallize, switch 4
+choice p1 move 2 2 terastallize, switch 4
+choice p2 move 3, move 2 1
+choice p1 move 1 +1 ,  move 2 -1
+choice p2 move 4 -2, move 1
+choice p2 pass, switch 4
+choice p1 switch 3, move 1 1
+choice p2 move 2 -2, move 1 -1
+choice p1 move 2, move 2 2
+choice p2 move 4 -2, move 1 1
+choice p1 switch muk,move dragontail -1
+choice p2 move 4 -2, move 1
+choice p1 switch 4, move 3 2
+choice p2 move 3, move 2 2
+choice p1 move airslash +1 ,  move Shadow Ball +2
+choice p2 move dreameater +2 ,  move 1 +1
+choice p1 move 3 2, move 3 -1
+choice p2 move 2 -2, move 1
+choice p1 switch 3, move 4
+choice p2 switch 3, move 2 -1
+choice p1 move 3 -2, move 2 -1
+choice p2 move 2 -2, move 2 1
+choice p2 skip ,  switch minior-yellow
+choice p1 move 2 2, switch 3
+choice p2 pass, move 2 2
+choice p1 move Kowtow Cleave -2, move Tailwind
+choice p2 pass, move 4 1
+choice p1 move airslash -2 ,  switch spewpa
+choice p2 pass, move 2 2
+choice p1 pass ,  switch Uxie
+choice p2 pass, move 2 1
+choice p1 move airslash 2, move Drill Peck -1
+choice p1 switch 4, pass
+choice p2 pass, move 4 1
+choice p1 move 1, move 4
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Spewpa, L50, M|
+expect |poke|p1|Slowbro, L50, F|
+expect |poke|p1|Muk, L50, M|
+expect |poke|p1|Azumarill, L50, M|
+expect |poke|p1|Uxie, L50|
+expect |poke|p1|Shroodle, L50, F|
+expect |poke|p2|Arceus-Ice, L50|
+expect |poke|p2|Arceus-Dragon, L50|
+expect |poke|p2|Rotom-Mow, L50|
+expect |poke|p2|Minior-Yellow, L50|
+expect |poke|p2|Nosepass, L50, M|
+expect |poke|p2|Skiploom, L50, M|
+expect |teampreview|4
+expect |rng|2|1
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Uxie|Uxie, L50|159/159
+expect |switch|p1a: Uxie|Uxie, L50|159/159
+expect |split|p1
+expect |switch|p1b: Slowbro|Slowbro, L50, F, shiny|170/170
+expect |switch|p1b: Slowbro|Slowbro, L50, F, shiny|170/170
+expect |split|p2
+expect |switch|p2a: Minior|Minior-Yellow, L50|148/148
+expect |switch|p2a: Minior|Minior-Yellow, L50|148/148
+expect |split|p2
+expect |switch|p2b: Rotom|Rotom-Mow, L50|147/147
+expect |switch|p2b: Rotom|Rotom-Mow, L50|147/147
+expect |-formechange|p2a: Minior|Minior-Meteor||[from] ability: Shields Down
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: X|Muk, L50, M|186/186
+expect |switch|p1a: X|Muk, L50, M|186/186
+expect |split|p2
+expect |switch|p2b: Skiploom|Skiploom, L50, M|146/146
+expect |switch|p2b: Skiploom|Skiploom, L50, M|146/146
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |split|p1
+expect |switch|p1b: Spewpa|Spewpa, L50, M|141/141
+expect |switch|p1b: Spewpa|Spewpa, L50, M|141/141
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |-terastallize|p2a: Minior|Stellar
+expect |rng|2|1
+expect |move|p2a: Minior|Psychic|p2b: Skiploom
+expect |rng|100|84
+expect |rng|24|18
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2b: Skiploom|100/146
+expect |-damage|p2b: Skiploom|100/146
+expect |rng|100|77
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|1
+expect |turn|2
+expect |rng|5|3
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |split|p1
+expect |switch|p1b: Uxie|Uxie, L50|159/159
+expect |switch|p1b: Uxie|Uxie, L50|159/159
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |-terastallize|p1a: X|Dark
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Minior|Roost||[still]
+expect |-fail|p2a: Minior|heal
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: X|Glaive Rush|p2b: Skiploom
+expect |rng|100|65
+expect |rng|24|10
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Skiploom|32/146
+expect |-damage|p2b: Skiploom|32/146
+expect |-singlemove|p1a: X|Glaive Rush|[silent]
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Skiploom|Razor Shell|p1a: X
+expect |rng|24|10
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: X|142/186
+expect |-damage|p1a: X|142/186
+expect |rng|100|23
+expect |-unboost|p1a: X|def|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|1
+expect |turn|3
+expect |rng|5|4
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Skiploom|Follow Me|p2b: Skiploom
+expect |-singleturn|p2b: Skiploom|move: Follow Me
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Uxie|Drill Peck|p2b: Skiploom
+expect |rng|100|98
+expect |rng|24|23
+expect |rng|16|0
+expect |-supereffective|p2b: Skiploom
+expect |split|p2
+expect |-damage|p2b: Skiploom|0 fnt
+expect |-damage|p2b: Skiploom|0 fnt
+expect |rng|2|0
+expect |faint|p2b: Skiploom
+expect |move|p2a: Minior|Dream Eater|p2: Skiploom|[notarget]
+expect |-fail|p2a: Minior
+expect |move|p1a: X|Facade|p2a: Minior
+expect |rng|100|36
+expect |rng|24|3
+expect |rng|16|14
+expect |-resisted|p2a: Minior
+expect |split|p2
+expect |-damage|p2a: Minior|135/148
+expect |-damage|p2a: Minior|135/148
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Rotom|Rotom-Mow, L50|147/147
+expect |switch|p2b: Rotom|Rotom-Mow, L50|147/147
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Slowbro|Slowbro, L50, F, shiny|170/170
+expect |switch|p1a: Slowbro|Slowbro, L50, F, shiny|170/170
+expect |move|p1b: Uxie|Shadow Ball|p2a: Minior
+expect |rng|100|74
+expect |rng|24|14
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Minior|109/148
+expect |-damage|p2a: Minior|109/148
+expect |rng|100|48
+expect |move|p2b: Rotom|Hydro Cannon|p2a: Minior|[miss]
+expect |rng|100|91
+expect |-miss|p2b: Rotom|p2a: Minior
+expect |move|p2a: Minior|Psychic|p2b: Rotom
+expect |rng|100|62
+expect |rng|24|18
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Rotom|126/147
+expect |-damage|p2b: Rotom|126/147
+expect |rng|100|30
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1b: Uxie|Drill Peck|p2b: Rotom
+expect |rng|100|44
+expect |rng|24|12
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Rotom|103/147
+expect |-damage|p2b: Rotom|103/147
+expect |move|p2b: Rotom|Hydro Cannon|p1a: Slowbro
+expect |rng|100|30
+expect |rng|24|8
+expect |rng|16|15
+expect |-resisted|p1a: Slowbro
+expect |split|p1
+expect |-damage|p1a: Slowbro|138/170
+expect |-damage|p1a: Slowbro|138/170
+expect |-mustrecharge|p2b: Rotom
+expect |move|p2a: Minior|Dream Eater|p2b: Rotom
+expect |-immune|p2b: Rotom
+expect |move|p1a: Slowbro|Tailwind|p1a: Slowbro
+expect |-sidestart|p1: p1|move: Tailwind
+expect |
+expect |upkeep
+expect |turn|6
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: X|Muk, L50, M, tera:Dark|142/186
+expect |switch|p1a: X|Muk, L50, M, tera:Dark|142/186
+expect |rng|2|1
+expect |rng|2|0
+expect |cant|p2b: Rotom|recharge
+expect |move|p2a: Minior|Dream Eater|p2b: Rotom
+expect |-immune|p2b: Rotom
+expect |move|p1b: Uxie|Dragon Tail|p1a: X
+expect |rng|100|10
+expect |rng|24|22
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: X|119/186
+expect |-damage|p1a: X|119/186
+expect |rng|2|1
+expect |split|p1
+expect |drag|p1a: Spewpa|Spewpa, L50, M|141/141
+expect |drag|p1a: Spewpa|Spewpa, L50, M|141/141
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: X|Muk, L50, M, tera:Dark|119/186
+expect |switch|p1a: X|Muk, L50, M, tera:Dark|119/186
+expect |move|p2b: Rotom|Force Palm|p1b: Uxie
+expect |rng|100|2
+expect |rng|24|5
+expect |rng|16|15
+expect |-resisted|p1b: Uxie
+expect |split|p1
+expect |-damage|p1b: Uxie|154/159
+expect |-damage|p1b: Uxie|154/159
+expect |rng|100|70
+expect |move|p2a: Minior|Roost|p2a: Minior
+expect |split|p2
+expect |-heal|p2a: Minior|148/148
+expect |-heal|p2a: Minior|148/148
+expect |move|p1b: Uxie|Dragon Tail|p2b: Rotom|[miss]
+expect |rng|100|90
+expect |-miss|p1b: Uxie|p2b: Rotom
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1b: Uxie|Shadow Ball|p2b: Rotom
+expect |rng|100|98
+expect |rng|24|17
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Rotom|81/147
+expect |-damage|p2b: Rotom|81/147
+expect |rng|100|33
+expect |move|p1a: X|Air Slash|p2a: Minior
+expect |rng|100|76
+expect |rng|24|5
+expect |rng|16|12
+expect |-resisted|p2a: Minior
+expect |split|p2
+expect |-damage|p2a: Minior|137/148
+expect |-damage|p2a: Minior|137/148
+expect |rng|100|59
+expect |move|p2b: Rotom|Hydro Cannon|p1a: X
+expect |rng|100|47
+expect |rng|24|15
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: X|63/186
+expect |-damage|p1a: X|63/186
+expect |-mustrecharge|p2b: Rotom
+expect |move|p2a: Minior|Dream Eater|p1b: Uxie
+expect |-immune|p1b: Uxie
+expect |
+expect |-sideend|p1: p1|move: Tailwind
+expect |upkeep
+expect |turn|9
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |cant|p2b: Rotom|recharge
+expect |move|p2a: Minior|Psychic|p2b: Rotom
+expect |rng|100|34
+expect |rng|24|7
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Rotom|60/147
+expect |-damage|p2b: Rotom|60/147
+expect |rng|100|61
+expect |move|p1a: X|Air Slash|p2b: Rotom
+expect |rng|100|33
+expect |rng|24|6
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Rotom|39/147
+expect |-damage|p2b: Rotom|39/147
+expect |rng|100|83
+expect |move|p1b: Uxie|Dragon Tail|p1a: X
+expect |rng|100|89
+expect |rng|24|12
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: X|39/186
+expect |-damage|p1a: X|39/186
+expect |rng|2|0
+expect |split|p1
+expect |drag|p1a: Slowbro|Slowbro, L50, F, shiny|138/170
+expect |drag|p1a: Slowbro|Slowbro, L50, F, shiny|138/170
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: ThisNameIsFarTooLong|Arceus-Dragon, L50|195/195
+expect |switch|p2a: ThisNameIsFarTooLong|Arceus-Dragon, L50|195/195
+expect |split|p1
+expect |switch|p1a: X|Muk, L50, M, tera:Dark|39/186
+expect |switch|p1a: X|Muk, L50, M, tera:Dark|39/186
+expect |move|p1b: Uxie|Spiky Shield|p1b: Uxie
+expect |-singleturn|p1b: Uxie|move: Protect
+expect |move|p2b: Rotom|Force Palm|p2a: ThisNameIsFarTooLong
+expect |rng|100|37
+expect |rng|24|2
+expect |rng|16|4
+expect |-supereffective|p2a: ThisNameIsFarTooLong
+expect |split|p2
+expect |-damage|p2a: ThisNameIsFarTooLong|161/195
+expect |-damage|p2a: ThisNameIsFarTooLong|161/195
+expect |rng|100|92
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |-start|p2a: ThisNameIsFarTooLong|typechange|Normal|[silent]
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p2a: ThisNameIsFarTooLong|Final Gambit|p2b: Rotom
+expect |rng|100|26
+expect |split|p2
+expect |-damage|p2b: Rotom|0 fnt
+expect |-damage|p2b: Rotom|0 fnt
+expect |faint|p2a: ThisNameIsFarTooLong
+expect |faint|p2b: Rotom
+expect |move|p1b: Uxie|Drill Peck|p1a: X
+expect |rng|100|74
+expect |rng|24|15
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: X|7/186
+expect |-damage|p1a: X|7/186
+expect |move|p1a: X|Air Slash|p1b: Uxie
+expect |rng|100|80
+expect |rng|24|4
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1b: Uxie|135/159
+expect |-damage|p1b: Uxie|135/159
+expect |rng|100|17
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Minior|Minior-Yellow, L50, tera:Stellar|137/148
+expect |switch|p2b: Minior|Minior-Yellow, L50, tera:Stellar|137/148
+expect |-formechange|p2b: Minior|Minior-Meteor||[from] ability: Shields Down
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Slowbro|Slowbro, L50, F, shiny|138/170
+expect |switch|p1b: Slowbro|Slowbro, L50, F, shiny|138/170
+expect |move|p2b: Minior|Psychic|p1b: Slowbro
+expect |rng|100|10
+expect |rng|24|10
+expect |rng|16|8
+expect |-resisted|p1b: Slowbro
+expect |split|p1
+expect |-damage|p1b: Slowbro|123/170
+expect |-damage|p1b: Slowbro|123/170
+expect |move|p1a: X|Glaive Rush|p2b: Minior
+expect |rng|100|57
+expect |rng|24|0
+expect |rng|16|2
+expect |-crit|p2b: Minior
+expect |split|p2
+expect |-damage|p2b: Minior|58/148
+expect |-damage|p2b: Minior|58/148
+expect |-singlemove|p1a: X|Glaive Rush|[silent]
+expect |
+expect |-formechange|p2b: Minior|Minior-Yellow||[from] ability: Shields Down
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p2b: Minior|Dream Eater|p1a: X
+expect |-immune|p1a: X
+expect |move|p1a: X|Kowtow Cleave|p1b: Slowbro
+expect |rng|24|20
+expect |rng|16|7
+expect |-supereffective|p1b: Slowbro
+expect |split|p1
+expect |-damage|p1b: Slowbro|33/170
+expect |-damage|p1b: Slowbro|33/170
+expect |move|p1b: Slowbro|Tailwind|p1b: Slowbro
+expect |-sidestart|p1: p1|move: Tailwind
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Spewpa|Spewpa, L50, M|141/141
+expect |switch|p1b: Spewpa|Spewpa, L50, M|141/141
+expect |move|p1a: X|Air Slash|p1b: Spewpa
+expect |rng|100|67
+expect |rng|24|5
+expect |rng|16|12
+expect |-supereffective|p1b: Spewpa
+expect |split|p1
+expect |-damage|p1b: Spewpa|47/141
+expect |-damage|p1b: Spewpa|47/141
+expect |rng|100|71
+expect |move|p2b: Minior|Psychic|p1b: Spewpa
+expect |rng|100|99
+expect |rng|24|12
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Spewpa|0 fnt
+expect |-damage|p1b: Spewpa|0 fnt
+expect |rng|100|57
+expect |faint|p1b: Spewpa
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Uxie|Uxie, L50|135/159
+expect |switch|p1b: Uxie|Uxie, L50|135/159
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p1b: Uxie|Drill Peck|p1a: X
+expect |rng|100|78
+expect |rng|24|13
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: X|0 fnt
+expect |-damage|p1a: X|0 fnt
+expect |faint|p1a: X
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Minior|Psychic|p1b: Uxie
+expect |rng|100|37
+expect |rng|24|23
+expect |rng|16|13
+expect |-resisted|p1b: Uxie
+expect |split|p1
+expect |-damage|p1b: Uxie|122/159
+expect |-damage|p1b: Uxie|122/159
+expect |rng|100|42
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Slowbro|Slowbro, L50, F, shiny|33/170
+expect |switch|p1a: Slowbro|Slowbro, L50, F, shiny|33/170
+expect |turn|16
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p1b: Uxie|Spiky Shield|p1b: Uxie
+expect |-singleturn|p1b: Uxie|move: Protect
+expect |rng|1|0
+expect |move|p2b: Minior|Dream Eater|p1a: Slowbro
+expect |-immune|p1a: Slowbro
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Slowbro|Make It Rain|p2b: Minior
+expect |rng|100|82
+expect |rng|24|0
+expect |rng|16|15
+expect |-supereffective|p2b: Minior
+expect |-crit|p2b: Minior
+expect |split|p2
+expect |-damage|p2b: Minior|0 fnt
+expect |-damage|p2b: Minior|0 fnt
+expect |rng|100|7
+expect |-unboost|p1a: Slowbro|spa|1
+expect |faint|p2b: Minior
+expect |
+expect |win|p1
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":true,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"170/170","active":true,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: X","details":"Muk, L50, M","condition":"186/186","active":false,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Nibbles","details":"Azumarill, L50, M","condition":"177/177","active":false,"stats":{"atk":72,"def":106,"spa":110,"spd":101,"spe":86},"moves":["rocktomb"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"159/159","active":false,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Shroodle","details":"Shroodle, L50, F","condition":"116/116","active":false,"stats":{"atk":106,"def":62,"spa":61,"spd":86,"spe":97},"moves":["focusblast","rockthrow","noretreat","clearsmog"],"baseAbility":"unburden","item":"lightclay","pokeball":"pokeball","ability":"unburden","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Arceus","details":"Arceus-Ice, L50","condition":"223/223","active":true,"stats":{"atk":143,"def":142,"spa":144,"spd":141,"spe":167},"moves":["discharge","wrap","stuffcheeks"],"baseAbility":"multitype","item":"zapplate","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"195/195","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"147/147","active":false,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"148/148","active":false,"stats":{"atk":122,"def":89,"spa":123,"spd":88,"spe":167},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Nosepass","details":"Nosepass, L50, M","condition":"107/107","active":false,"stats":{"atk":73,"def":158,"spa":91,"spd":113,"spe":55},"moves":["harden"],"baseAbility":"sandforce","item":"strawberrysweet","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"146/146","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":32,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Ice"},{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Tailwind","id":"tailwind","pp":24,"maxpp":24,"target":"allySide","disabled":false}],"canTerastallize":"Rock"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Uxie","details":"Uxie, L50","condition":"159/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"170/170","active":true,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: X","details":"Muk, L50, M","condition":"186/186","active":false,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Stellar"},{"moves":[{"move":"Hydro Cannon","id":"hydrocannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Force Palm","id":"forcepalm","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Rock"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"148/148","active":true,"stats":{"atk":82,"def":129,"spa":83,"spd":128,"spe":107},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"147/147","active":true,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"195/195","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"146/146","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Facade","id":"facade","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Glaive Rush","id":"glaiverush","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":24,"maxpp":24,"target":"any","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Dark"},{"moves":[{"move":"Spore","id":"spore","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Ghost"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"186/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":true,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"170/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"159/159","active":false,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Follow Me","id":"followme","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Razor Shell","id":"razorshell","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Charm","id":"charm","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"148/148","active":true,"stats":{"atk":82,"def":129,"spa":83,"spd":128,"spe":107},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"100/146","active":true,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"195/195","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"147/147","active":false,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Facade","id":"facade","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Glaive Rush","id":"glaiverush","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":24,"maxpp":24,"target":"any","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":32,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"142/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"159/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"170/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Follow Me","id":"followme","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Razor Shell","id":"razorshell","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Charm","id":"charm","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"148/148","active":true,"stats":{"atk":82,"def":129,"spa":83,"spd":128,"spe":107},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"32/146","active":true,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"195/195","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"147/147","active":false,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"142/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"159/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"170/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"135/148","active":true,"stats":{"atk":82,"def":129,"spa":83,"spd":128,"spe":107},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":true,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"195/195","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"147/147","active":false,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Facade","id":"facade","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Glaive Rush","id":"glaiverush","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":24,"maxpp":24,"target":"any","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":31,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"142/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"159/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"170/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":23,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Hydro Cannon","id":"hydrocannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Force Palm","id":"forcepalm","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"135/148","active":true,"stats":{"atk":82,"def":129,"spa":83,"spd":128,"spe":107},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"147/147","active":true,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"195/195","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Tailwind","id":"tailwind","pp":24,"maxpp":24,"target":"allySide","disabled":false}]},{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":31,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"170/170","active":true,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"159/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: X","details":"Muk, L50, M","condition":"142/186","active":false,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":23,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Hydro Cannon","id":"hydrocannon","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Force Palm","id":"forcepalm","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"109/148","active":true,"stats":{"atk":82,"def":129,"spa":83,"spd":128,"spe":107},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"126/147","active":true,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"195/195","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Tailwind","id":"tailwind","pp":23,"maxpp":24,"target":"allySide","disabled":false}]},{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":30,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"138/170","active":true,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"159/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: X","details":"Muk, L50, M","condition":"142/186","active":false,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":22,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"109/148","active":true,"stats":{"atk":82,"def":129,"spa":83,"spd":128,"spe":107},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"103/147","active":true,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"195/195","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Spore","id":"spore","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":30,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":true,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"159/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"138/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: X","details":"Muk, L50, M","condition":"119/186","active":false,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"}]}}
+request p2 {"active":[{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":7,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":21,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Hydro Cannon","id":"hydrocannon","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Force Palm","id":"forcepalm","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"109/148","active":true,"stats":{"atk":82,"def":129,"spa":83,"spd":128,"spe":107},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"103/147","active":true,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"195/195","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Facade","id":"facade","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Glaive Rush","id":"glaiverush","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":24,"maxpp":24,"target":"any","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":30,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"119/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"154/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"138/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":21,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Hydro Cannon","id":"hydrocannon","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Force Palm","id":"forcepalm","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"148/148","active":true,"stats":{"atk":82,"def":129,"spa":83,"spd":128,"spe":107},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"103/147","active":true,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"195/195","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Facade","id":"facade","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Glaive Rush","id":"glaiverush","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":23,"maxpp":24,"target":"any","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":30,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"63/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"154/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"138/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":20,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"137/148","active":true,"stats":{"atk":82,"def":129,"spa":83,"spd":128,"spe":107},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"81/147","active":true,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"195/195","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Tailwind","id":"tailwind","pp":23,"maxpp":24,"target":"allySide","disabled":false}]},{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":30,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"138/170","active":true,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"154/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: X","details":"Muk, L50, M","condition":"39/186","active":false,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":20,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Hydro Cannon","id":"hydrocannon","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Force Palm","id":"forcepalm","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"137/148","active":true,"stats":{"atk":82,"def":129,"spa":83,"spd":128,"spe":107},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"39/147","active":true,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"195/195","active":false,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Facade","id":"facade","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Glaive Rush","id":"glaiverush","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":22,"maxpp":24,"target":"any","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":30,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":15,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"39/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"154/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"138/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Final Gambit","id":"finalgambit","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Hydro Cannon","id":"hydrocannon","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Force Palm","id":"forcepalm","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"161/195","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"39/147","active":true,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"137/148","active":false,"stats":{"atk":122,"def":89,"spa":123,"spd":88,"spe":167},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"7/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"135/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"138/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"forceSwitch":[true,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"0 fnt","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"0 fnt","active":true,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"137/148","active":false,"stats":{"atk":122,"def":89,"spa":123,"spd":88,"spe":167},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Facade","id":"facade","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Glaive Rush","id":"glaiverush","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":21,"maxpp":24,"target":"any","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":29,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":15,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"7/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"135/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"138/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Final Gambit","id":"finalgambit","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":20,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"0 fnt","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"137/148","active":true,"stats":{"atk":82,"def":129,"spa":83,"spd":128,"spe":107},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"0 fnt","active":false,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Facade","id":"facade","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Glaive Rush","id":"glaiverush","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":21,"maxpp":24,"target":"any","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Tailwind","id":"tailwind","pp":23,"maxpp":24,"target":"allySide","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"7/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"123/170","active":true,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"135/159","active":false,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Final Gambit","id":"finalgambit","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":12,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":20,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"0 fnt","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"58/148","active":true,"stats":{"atk":122,"def":89,"spa":123,"spd":88,"spe":167},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"0 fnt","active":false,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Facade","id":"facade","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Glaive Rush","id":"glaiverush","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":21,"maxpp":24,"target":"any","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Tailwind","id":"tailwind","pp":22,"maxpp":24,"target":"allySide","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"7/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"33/170","active":true,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"135/159","active":false,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"141/141","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Final Gambit","id":"finalgambit","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":12,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":19,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"0 fnt","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"58/148","active":true,"stats":{"atk":122,"def":89,"spa":123,"spd":88,"spe":167},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"0 fnt","active":false,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"7/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"0 fnt","active":true,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"135/159","active":false,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"33/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"0 fnt","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"58/148","active":true,"stats":{"atk":122,"def":89,"spa":123,"spd":88,"spe":167},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"0 fnt","active":false,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Facade","id":"facade","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Glaive Rush","id":"glaiverush","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":20,"maxpp":24,"target":"any","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":29,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":15,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"7/186","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":"Dark"},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"135/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"0 fnt","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"33/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Final Gambit","id":"finalgambit","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":11,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":19,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"0 fnt","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"58/148","active":true,"stats":{"atk":122,"def":89,"spa":123,"spd":88,"spe":167},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"0 fnt","active":false,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Muk, L50, M","condition":"0 fnt","active":true,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"122/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"0 fnt","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"33/170","active":false,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"0 fnt","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"58/148","active":true,"stats":{"atk":122,"def":89,"spa":123,"spd":88,"spe":167},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"0 fnt","active":false,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Make It Rain","id":"makeitrain","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Tailwind","id":"tailwind","pp":22,"maxpp":24,"target":"allySide","disabled":false}]},{"moves":[{"move":"Shadow Ball","id":"shadowball","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Drill Peck","id":"drillpeck","pp":28,"maxpp":32,"target":"any","disabled":false},{"move":"Dragon Tail","id":"dragontail","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Spiky Shield","id":"spikyshield","pp":15,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Slowbro","details":"Slowbro, L50, F, shiny","condition":"33/170","active":true,"stats":{"atk":126,"def":152,"spa":120,"spd":100,"spe":66},"moves":["makeitrain","tailwind"],"baseAbility":"owntempo","item":"covertcloak","pokeball":"pokeball","ability":"owntempo","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p1: Uxie","details":"Uxie, L50","condition":"122/159","active":true,"stats":{"atk":99,"def":181,"spa":100,"spd":162,"spe":115},"moves":["shadowball","drillpeck","dragontail","spikyshield"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Spewpa","details":"Spewpa, L50, M","condition":"0 fnt","active":false,"stats":{"atk":55,"def":80,"spa":50,"spd":63,"spe":56},"moves":["spore"],"baseAbility":"shedskin","item":"","pokeball":"pokeball","ability":"shedskin","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: X","details":"Muk, L50, M","condition":"0 fnt","active":false,"stats":{"atk":128,"def":107,"spa":100,"spd":121,"spe":90},"moves":["facade","glaiverush","airslash","kowtowcleave"],"baseAbility":"stickyhold","item":"","pokeball":"pokeball","ability":"stickyhold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Final Gambit","id":"finalgambit","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Psychic","id":"psychic","pp":10,"maxpp":16,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"Dream Eater","id":"dreameater","pp":19,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Arceus-Dragon, L50","condition":"0 fnt","active":true,"stats":{"atk":137,"def":140,"spa":183,"spd":163,"spe":140},"moves":["thunderbolt","finalgambit"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Minior","details":"Minior-Yellow, L50","condition":"58/148","active":true,"stats":{"atk":122,"def":89,"spa":123,"spd":88,"spe":167},"moves":["rockslide","psychic","roost","dreameater"],"baseAbility":"shieldsdown","item":"brightpowder","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p2: Rotom","details":"Rotom-Mow, L50","condition":"0 fnt","active":false,"stats":{"atk":89,"def":149,"spa":115,"spd":144,"spe":110},"moves":["hydrocannon","forcepalm"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Skiploom","details":"Skiploom, L50, M","condition":"0 fnt","active":false,"stats":{"atk":70,"def":97,"spa":84,"spd":86,"spe":90},"moves":["followme","razorshell","charm"],"baseAbility":"chlorophyll","item":"quickclaw","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}

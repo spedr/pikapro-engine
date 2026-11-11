@@ -1,0 +1,582 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 2ab9 af98 1186 b722
+genders drawn
+team p1
+Scovillain (M) @ Scovillainite
+Ability: Moody
+Level: 50
+Tera Type: Grass
+EVs: 2 HP / 5 Atk / 23 Def / 4 SpA / 4 SpD / 10 Spe
+Relaxed Nature
+- Stone Edge
+- Moonlight
+
+Volcarona (M)
+Ability: Flame Body
+Level: 50
+Tera Type: Electric
+EVs: 29 HP / 7 Atk / 9 SpD / 21 Spe
+Lax Nature
+- Swallow
+- Quick Guard
+
+Aerodactyl (M) @ Aerodactylite
+Ability: Pressure
+Level: 50
+Tera Type: Steel
+EVs: 19 HP / 32 Atk / 1 Def / 1 SpA / 13 Spe
+Hasty Nature
+- Sludge Bomb
+- Thunder Punch
+- Sleep Talk
+- Ice Spinner
+
+Florges (F)
+Ability: Symbiosis
+Level: 50
+Tera Type: Bug
+EVs: 22 Def / 16 SpA / 11 SpD / 15 Spe
+Timid Nature
+- Rain Dance
+- Icicle Crash
+- Flip Turn
+- Volt Tackle
+
+Slowbro (M) @ Silk Scarf
+Ability: Own Tempo
+Level: 50
+Tera Type: Dark
+EVs: 2 HP / 5 Atk / 8 Def / 28 SpA / 2 SpD / 18 Spe
+Hasty Nature
+- Struggle Bug
+- Rock Slide
+- Giga Drain
+- Recover
+
+Charizard (M) @ Charizardite X
+Ability: Solar Power
+Level: 50
+Tera Type: Dragon
+EVs: 19 HP / 1 Atk / 11 Def / 28 SpA / 3 SpD / 4 Spe
+Relaxed Nature
+- Struggle Bug
+- Struggle
+- Snowscape
+end
+team p2
+Glalie (M) @ Glalitite
+Ability: Moody
+Level: 50
+Tera Type: Grass
+EVs: 13 Atk / 15 Def / 1 SpA / 7 SpD / 27 Spe
+Calm Nature
+- Clear Smog
+- Swallow
+- Superpower
+
+Tyranitar (M)
+Ability: Sand Stream
+Level: 50
+Tera Type: Dark
+EVs: 21 HP / 16 Atk / 13 SpA / 1 SpD / 15 Spe
+Bold Nature
+- Rage Fist
+- Aqua Tail
+- Calm Mind
+
+Chimecho (M) @ Chilan Berry
+Ability: Levitate
+Level: 50
+Tera Type: Psychic
+EVs: 14 HP / 14 Atk / 9 Def / 6 SpA / 21 SpD
+Bashful Nature
+- Power Whip
+- Hydro Pump
+
+Sceptile (M) @ Sceptilite
+Ability: Overgrow
+Level: 50
+Tera Type: Poison
+EVs: 32 HP / 23 Atk / 1 Def / 5 SpA / 3 Spe
+Naive Nature
+- Surf
+
+Vivillon-Marine (M)
+Ability: Shield Dust
+Level: 50
+Tera Type: Dark
+EVs: 2 HP / 31 Atk / 3 Def / 2 SpA / 17 SpD
+Quiet Nature
+- Charm
+
+Kangaskhan (F) @ Kangaskhanite
+Ability: Scrappy
+Level: 50
+Tera Type: Rock
+EVs: 23 Atk / 13 Def / 1 SpA / 25 SpD / 2 Spe
+Bold Nature
+- Soft-Boiled
+- Spore
+end
+choice p1 team 1643
+choice p2 team 5624
+choice p1 move 1 2, move 1
+choice p2 switch 3, move 1
+choice p1 move 1 1, switch 3
+choice p2 move 2 -2, move 1
+choice p1 move 1 2, move 4 1
+choice p2 move 1 2, move 2 -1
+choice p1 switch 4, move 2 2
+choice p2 move 2 1, move 2 1
+choice p2 pass, switch 4
+choice p1 move 4 2, move 4 2
+choice p2 move 1 2, move 1 mega
+choice p1 pass, switch 3
+choice p2 move 1 -2, switch 3
+choice p1 move 1 2 mega, move 2
+choice p2 pass, switch 3
+choice p1 move 4 1, move 1
+choice p2 move 1 1, move 1
+choice p1 move 1 2, move 3
+choice p2 pass, move 1
+choice p1 pass, switch 4
+choice p2 pass, move 1
+choice p1 pass, move 1 2
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Scovillain, L50, M|
+expect |poke|p1|Volcarona, L50, M|
+expect |poke|p1|Aerodactyl, L50, M|
+expect |poke|p1|Florges, L50, F|
+expect |poke|p1|Slowbro, L50, M|
+expect |poke|p1|Charizard, L50, M|
+expect |poke|p2|Glalie, L50, M|
+expect |poke|p2|Tyranitar, L50, M|
+expect |poke|p2|Chimecho, L50, M|
+expect |poke|p2|Sceptile, L50, M|
+expect |poke|p2|Vivillon-Marine, L50, M|
+expect |poke|p2|Kangaskhan, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Scovillain|Scovillain, L50, M|142/142
+expect |switch|p1a: Scovillain|Scovillain, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Charizard|Charizard, L50, M|172/172
+expect |switch|p1b: Charizard|Charizard, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-Marine, L50, M|157/157
+expect |switch|p2a: Vivillon|Vivillon-Marine, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Kangaskhan|Kangaskhan, L50, F|180/180
+expect |switch|p2b: Kangaskhan|Kangaskhan, L50, F|100/100
+expect |turn|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Tyranitar|Tyranitar, L50, M|196/196
+expect |switch|p2a: Tyranitar|Tyranitar, L50, M|100/100
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+expect |rng|2|1
+expect |move|p2b: Kangaskhan|Soft-Boiled||[still]
+expect |-fail|p2b: Kangaskhan|heal
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Charizard|Struggle Bug|p2a: Tyranitar|[spread] p2a,p2b
+expect |rng|100|7
+expect |rng|100|80
+expect |rng|24|7
+expect |rng|16|3
+expect |-supereffective|p2a: Tyranitar|1
+expect |rng|24|16
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Tyranitar|166/196
+expect |-damage|p2a: Tyranitar|84/100
+expect |split|p2
+expect |-damage|p2b: Kangaskhan|161/180
+expect |-damage|p2b: Kangaskhan|89/100
+expect |rng|100|95
+expect |-unboost|p2a: Tyranitar|spa|1
+expect |rng|100|88
+expect |-unboost|p2b: Kangaskhan|spa|1
+expect |move|p1a: Scovillain|Stone Edge|p2b: Kangaskhan
+expect |rng|100|43
+expect |rng|8|6
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Kangaskhan|112/180
+expect |-damage|p2b: Kangaskhan|62/100
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p2
+expect |-damage|p2b: Kangaskhan|101/180|[from] Sandstorm
+expect |-damage|p2b: Kangaskhan|56/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1b: Charizard|162/172|[from] Sandstorm
+expect |-damage|p1b: Charizard|94/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Scovillain|134/142|[from] Sandstorm
+expect |-damage|p1a: Scovillain|94/100|[from] Sandstorm
+expect |rng|5|0
+expect |rng|4|0
+expect |-ability|p1a: Scovillain|Moody|boost
+expect |-boost|p1a: Scovillain|atk|2
+expect |-unboost|p1a: Scovillain|def|1
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Florges|Florges, L50, F|153/153
+expect |switch|p1b: Florges|Florges, L50, F|100/100
+expect |move|p2b: Kangaskhan|Soft-Boiled|p2b: Kangaskhan
+expect |split|p2
+expect |-heal|p2b: Kangaskhan|180/180
+expect |-heal|p2b: Kangaskhan|100/100
+expect |move|p2a: Tyranitar|Aqua Tail|p2b: Kangaskhan
+expect |rng|100|22
+expect |rng|24|10
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Kangaskhan|134/180
+expect |-damage|p2b: Kangaskhan|74/100
+expect |move|p1a: Scovillain|Stone Edge|p2a: Tyranitar
+expect |rng|100|43
+expect |rng|8|3
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Tyranitar|87/196
+expect |-damage|p2a: Tyranitar|44/100
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1b: Florges|144/153|[from] Sandstorm
+expect |-damage|p1b: Florges|94/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Kangaskhan|123/180|[from] Sandstorm
+expect |-damage|p2b: Kangaskhan|68/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Scovillain|126/142|[from] Sandstorm
+expect |-damage|p1a: Scovillain|88/100|[from] Sandstorm
+expect |rng|5|4
+expect |rng|4|3
+expect |-ability|p1a: Scovillain|Moody|boost
+expect |-boost|p1a: Scovillain|spe|2
+expect |-unboost|p1a: Scovillain|spd|1
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Scovillain|Stone Edge|p2b: Kangaskhan
+expect |rng|100|48
+expect |rng|8|1
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2b: Kangaskhan|40/180
+expect |-damage|p2b: Kangaskhan|22/100
+expect |move|p1b: Florges|Volt Tackle|p2a: Tyranitar
+expect |rng|100|81
+expect |rng|24|23
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Tyranitar|60/196
+expect |-damage|p2a: Tyranitar|30/100
+expect |rng|100|92
+expect |split|p1
+expect |-damage|p1b: Florges|135/153|[from] Recoil
+expect |-damage|p1b: Florges|88/100|[from] Recoil
+expect |move|p2b: Kangaskhan|Spore|p2a: Tyranitar
+expect |rng|100|61
+expect |-status|p2a: Tyranitar|slp|[from] move: Spore
+expect |rng|3|1
+expect |cant|p2a: Tyranitar|slp
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Scovillain|118/142|[from] Sandstorm
+expect |-damage|p1a: Scovillain|83/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1b: Florges|126/153|[from] Sandstorm
+expect |-damage|p1b: Florges|82/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Kangaskhan|29/180|[from] Sandstorm
+expect |-damage|p2b: Kangaskhan|16/100|[from] Sandstorm
+expect |rng|5|0
+expect |rng|4|2
+expect |-ability|p1a: Scovillain|Moody|boost
+expect |-boost|p1a: Scovillain|atk|2
+expect |-unboost|p1a: Scovillain|spd|1
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Aerodactyl|Aerodactyl, L50, M|174/174
+expect |switch|p1a: Aerodactyl|Aerodactyl, L50, M|100/100
+expect |-ability|p1a: Aerodactyl|Pressure
+expect |move|p1b: Florges|Icicle Crash|p2b: Kangaskhan
+expect |rng|100|76
+expect |rng|24|17
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Kangaskhan|8/180
+expect |-damage|p2b: Kangaskhan|4/100
+expect |rng|100|64
+expect |move|p2b: Kangaskhan|Spore|p1a: Aerodactyl
+expect |rng|100|1
+expect |-status|p1a: Aerodactyl|slp|[from] move: Spore
+expect |rng|3|0
+expect |cant|p2a: Tyranitar|slp
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1b: Florges|117/153|[from] Sandstorm
+expect |-damage|p1b: Florges|76/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Kangaskhan|0 fnt|[from] Sandstorm
+expect |-damage|p2b: Kangaskhan|0 fnt|[from] Sandstorm
+expect |faint|p2b: Kangaskhan
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Sceptile|Sceptile, L50, M|177/177
+expect |switch|p2b: Sceptile|Sceptile, L50, M|100/100
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |detailschange|p2b: Sceptile|Sceptile-Mega, L50, M
+expect |-mega|p2b: Sceptile|Sceptile|Sceptilite
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Sceptile|Surf|p1b: Florges|[spread] p2a,p1a,p1b
+expect |rng|100|91
+expect |rng|100|96
+expect |rng|100|76
+expect |rng|24|8
+expect |rng|16|7
+expect |-supereffective|p2a: Tyranitar|1
+expect |rng|24|17
+expect |rng|16|0
+expect |-supereffective|p1a: Aerodactyl|1
+expect |rng|24|15
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Tyranitar|8/196 slp
+expect |-damage|p2a: Tyranitar|4/100 slp
+expect |split|p1
+expect |-damage|p1a: Aerodactyl|100/174 slp
+expect |-damage|p1a: Aerodactyl|57/100 slp
+expect |split|p1
+expect |-damage|p1b: Florges|90/153
+expect |-damage|p1b: Florges|58/100
+expect |cant|p1a: Aerodactyl|slp
+expect |move|p1b: Florges|Volt Tackle|p2b: Sceptile
+expect |-ability|p2b: Sceptile|Lightning Rod|boost
+expect |-boost|p2b: Sceptile|spa|1
+expect |-curestatus|p2a: Tyranitar|slp|[msg]
+expect |move|p2a: Tyranitar|Rage Fist|p1b: Florges
+expect |rng|100|50
+expect |rng|24|9
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Florges|0 fnt
+expect |-damage|p1b: Florges|0 fnt
+expect |faint|p1b: Florges
+expect |
+expect |-weather|none
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Charizard|Charizard, L50, M|162/172
+expect |switch|p1b: Charizard|Charizard, L50, M|94/100
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Vivillon|Vivillon-Marine, L50, M|157/157
+expect |switch|p2b: Vivillon|Vivillon-Marine, L50, M|100/100
+expect |detailschange|p1a: Aerodactyl|Aerodactyl-Mega, L50, M
+expect |-mega|p1a: Aerodactyl|Aerodactyl|Aerodactylite
+expect |rng|2|0
+expect |-curestatus|p1a: Aerodactyl|slp|[msg]
+expect |move|p1a: Aerodactyl|Sludge Bomb|p2b: Vivillon
+expect |rng|100|22
+expect |rng|24|10
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Vivillon|119/157
+expect |-damage|p2b: Vivillon|75/100
+expect |rng|2|1
+expect |rng|2|1
+expect |-activate|p1b: Charizard|move: Struggle
+expect |move|p1b: Charizard|Struggle|p2b: Vivillon
+expect |rng|24|1
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Vivillon|88/157
+expect |-damage|p2b: Vivillon|56/100
+expect |split|p1
+expect |-damage|p1b: Charizard|119/172|[from] recoil
+expect |-damage|p1b: Charizard|69/100|[from] recoil
+expect |move|p2a: Tyranitar|Rage Fist|p2b: Vivillon
+expect |rng|100|22
+expect |rng|24|6
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Vivillon|0 fnt
+expect |-damage|p2b: Vivillon|0 fnt
+expect |faint|p2b: Vivillon
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Sceptile|Sceptile-Mega, L50, M|177/177
+expect |switch|p2b: Sceptile|Sceptile-Mega, L50, M|100/100
+expect |turn|7
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Aerodactyl|Ice Spinner|p2a: Tyranitar
+expect |rng|100|86
+expect |rng|24|18
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Tyranitar|0 fnt
+expect |-damage|p2a: Tyranitar|0 fnt
+expect |faint|p2a: Tyranitar
+expect |rng|2|0
+expect |rng|1|0
+expect |rng|2|1
+expect |move|p2b: Sceptile|Surf|p1b: Charizard|[spread] p1a,p1b
+expect |rng|100|60
+expect |rng|100|72
+expect |rng|24|2
+expect |rng|16|14
+expect |-supereffective|p1a: Aerodactyl|1
+expect |rng|24|15
+expect |rng|16|12
+expect |-supereffective|p1b: Charizard|1
+expect |split|p1
+expect |-damage|p1a: Aerodactyl|24/174
+expect |-damage|p1a: Aerodactyl|13/100
+expect |split|p1
+expect |-damage|p1b: Charizard|35/172
+expect |-damage|p1b: Charizard|20/100y
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Charizard|Struggle Bug|p2b: Sceptile
+expect |rng|100|71
+expect |rng|24|14
+expect |rng|16|6
+expect |-supereffective|p2b: Sceptile|1
+expect |split|p2
+expect |-damage|p2b: Sceptile|107/177
+expect |-damage|p2b: Sceptile|60/100
+expect |rng|100|67
+expect |-unboost|p2b: Sceptile|spa|1
+expect |
+expect |upkeep
+expect |turn|8
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1a: Aerodactyl|Sludge Bomb|p2b: Sceptile
+expect |rng|100|60
+expect |rng|24|6
+expect |rng|16|11
+expect |-supereffective|p2b: Sceptile|1
+expect |split|p2
+expect |-damage|p2b: Sceptile|37/177
+expect |-damage|p2b: Sceptile|20/100y
+expect |rng|100|97
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Sceptile|Surf|p1a: Aerodactyl|[spread] p1a,p1b
+expect |rng|100|17
+expect |rng|100|16
+expect |rng|24|22
+expect |rng|16|1
+expect |-supereffective|p1a: Aerodactyl|1
+expect |rng|24|16
+expect |rng|16|6
+expect |-supereffective|p1b: Charizard|1
+expect |split|p1
+expect |-damage|p1a: Aerodactyl|0 fnt
+expect |-damage|p1a: Aerodactyl|0 fnt
+expect |split|p1
+expect |-damage|p1b: Charizard|0 fnt
+expect |-damage|p1b: Charizard|0 fnt
+expect |faint|p1a: Aerodactyl
+expect |faint|p1b: Charizard
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Scovillain|Scovillain, L50, M|118/142
+expect |switch|p1b: Scovillain|Scovillain, L50, M|83/100
+expect |turn|9
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Sceptile|Surf|p1b: Scovillain
+expect |rng|100|60
+expect |rng|24|8
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Scovillain|70/142
+expect |-damage|p1b: Scovillain|49/100
+expect |move|p1b: Scovillain|Stone Edge|p2b: Sceptile
+expect |rng|100|35
+expect |rng|8|5
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2b: Sceptile|0 fnt
+expect |-damage|p2b: Sceptile|0 fnt
+expect |faint|p2b: Sceptile
+expect |
+expect |win|p1

@@ -1,0 +1,428 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 1a2d 2d68 f7e6 08d2
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Mr. Bubbles (Perrserker) (F) @ Life Orb
+Ability: Tough Claws
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- U-turn
+- Knock Off
+- Iron Head
+- Close Combat
+
+Pyroar (F) @ Pyroarite
+Ability: Unnerve
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Sunny Day
+- Solar Beam
+- Hyper Voice
+- Fire Blast
+
+Clawitzer (F) @ Choice Scarf
+Ability: Mega Launcher
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Dragon Pulse
+- Aura Sphere
+- Dark Pulse
+- Water Pulse
+
+Flapple (F) @ Wide Lens
+Ability: Hustle
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Sucker Punch
+- Grav Apple
+- Outrage
+- Dragon Dance
+
+Nibbles (Farigiraf) (F) @ Leftovers
+Ability: Sap Sipper
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Mild Nature
+- Body Slam
+- Psychic Noise
+- Wish
+- Protect
+
+Hippowdon (F) @ Rocky Helmet
+Ability: Sand Stream
+Level: 50
+Shiny: Yes
+EVs: 32 HP / 17 Def / 17 SpD
+Impish Nature
+- Earthquake
+- Slack Off
+- Stealth Rock
+- Stone Edge
+end
+team p2
+Musharna (M) @ Leftovers
+Ability: Synchronize
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Moonlight
+- Calm Mind
+- Psyshock
+- Moonblast
+
+Overqwil (F) @ Life Orb
+Ability: Intimidate
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Liquidation
+- Swords Dance
+- Crunch
+- Gunk Shot
+
+Sir Hops-a-Lot (Arboliva) (M) @ Sitrus Berry
+Ability: Harvest
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Bold Nature
+- Substitute
+- Leech Seed
+- Hyper Voice
+- Protect
+
+Scolipede-Mega (M) @ Scolipite
+Ability: Speed Boost
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Gunk Shot
+- Spikes
+- Toxic Spikes
+- Earthquake
+
+X (Golisopod) (F) @ Golisopite
+Ability: Emergency Exit
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Iron Head
+- First Impression
+- U-turn
+- Close Combat
+
+Greninja-Mega (M) @ Greninjite
+Ability: Protean
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Mild Nature
+- Spikes
+- Toxic Spikes
+- Hydro Pump
+- Gunk Shot
+end
+choice p1 team 2136
+choice p2 team 1254
+choice p1 move 3,move Close Combat 1
+choice p2 move 4 1, move 3 -1
+choice p2 switch 4, switch 3
+choice p1 move 4 1,move 3 +1
+choice p2 move 1 1, move 1 1
+choice p1 switch 3, switch 4
+choice p2 pass, move 1 2
+choice p1 move 2 -2, move 3
+choice p2 skip,move u-turn +1
+choice p1 move 2 2, switch 3
+choice p2 pass, move 3 2
+choice p1 pass, switch 3
+choice p2 pass, move 3 2
+choice p1 switch 4, move 3
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Perrserker, L50, F, shiny|
+expect |poke|p1|Pyroar, L50, F|
+expect |poke|p1|Clawitzer, L50, F|
+expect |poke|p1|Flapple, L50, F|
+expect |poke|p1|Farigiraf, L50, F|
+expect |poke|p1|Hippowdon, L50, F, shiny|
+expect |poke|p2|Musharna, L50, M|
+expect |poke|p2|Overqwil, L50, F|
+expect |poke|p2|Arboliva, L50, M|
+expect |poke|p2|Scolipede, L50, M|
+expect |poke|p2|Golisopod, L50, F|
+expect |poke|p2|Greninja, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Pyroar|Pyroar, L50, F|163/163
+expect |switch|p1a: Pyroar|Pyroar, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Mr. Bubbles|Perrserker, L50, F, shiny|147/147
+expect |switch|p1b: Mr. Bubbles|Perrserker, L50, F, shiny|100/100
+expect |split|p2
+expect |switch|p2a: Musharna|Musharna, L50, M|223/223
+expect |switch|p2a: Musharna|Musharna, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Overqwil|Overqwil, L50, F|162/162
+expect |switch|p2b: Overqwil|Overqwil, L50, F|100/100
+expect |-ability|p1a: Pyroar|Unnerve
+expect |-ability|p2b: Overqwil|Intimidate|boost
+expect |-unboost|p1a: Pyroar|atk|1
+expect |-unboost|p1b: Mr. Bubbles|atk|1
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Pyroar|Hyper Voice|p2a: Musharna|[spread] p2a,p2b
+expect |rng|100|55
+expect |rng|100|50
+expect |rng|24|18
+expect |rng|16|0
+expect |rng|24|20
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Musharna|154/223
+expect |-damage|p2a: Musharna|69/100
+expect |split|p2
+expect |-damage|p2b: Overqwil|81/162
+expect |-damage|p2b: Overqwil|50/100y
+expect |move|p2b: Overqwil|Crunch|p2a: Musharna
+expect |rng|100|49
+expect |rng|24|8
+expect |rng|16|2
+expect |-supereffective|p2a: Musharna|1
+expect |split|p2
+expect |-damage|p2a: Musharna|0 fnt
+expect |-damage|p2a: Musharna|0 fnt
+expect |rng|100|0
+expect |faint|p2a: Musharna
+expect |split|p2
+expect |-damage|p2b: Overqwil|65/162|[from] item: Life Orb
+expect |-damage|p2b: Overqwil|40/100|[from] item: Life Orb
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Mr. Bubbles|Close Combat|p2b: Overqwil
+expect |rng|100|92
+expect |rng|24|12
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Overqwil|0 fnt
+expect |-damage|p2b: Overqwil|0 fnt
+expect |rng|100|54
+expect |-unboost|p1b: Mr. Bubbles|def|1
+expect |-unboost|p1b: Mr. Bubbles|spd|1
+expect |faint|p2b: Overqwil
+expect |split|p1
+expect |-damage|p1b: Mr. Bubbles|133/147|[from] item: Life Orb
+expect |-damage|p1b: Mr. Bubbles|90/100|[from] item: Life Orb
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: X|Golisopod, L50, F|152/152
+expect |switch|p2b: X|Golisopod, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Scolipede|Scolipede, L50, M|137/137
+expect |switch|p2a: Scolipede|Scolipede, L50, M|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Scolipede|Gunk Shot|p1a: Pyroar
+expect |rng|100|36
+expect |rng|24|22
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Pyroar|43/163
+expect |-damage|p1a: Pyroar|26/100
+expect |rng|100|98
+expect |move|p1a: Pyroar|Fire Blast|p2a: Scolipede
+expect |rng|100|14
+expect |rng|24|8
+expect |rng|16|6
+expect |-supereffective|p2a: Scolipede|1
+expect |split|p2
+expect |-damage|p2a: Scolipede|0 fnt
+expect |-damage|p2a: Scolipede|0 fnt
+expect |rng|100|95
+expect |faint|p2a: Scolipede
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Mr. Bubbles|Iron Head|p2b: X
+expect |rng|100|67
+expect |rng|24|5
+expect |rng|16|6
+expect |-resisted|p2b: X|1
+expect |split|p2
+expect |-damage|p2b: X|121/152
+expect |-damage|p2b: X|79/100
+expect |rng|100|19
+expect |split|p1
+expect |-damage|p1b: Mr. Bubbles|119/147|[from] item: Life Orb
+expect |-damage|p1b: Mr. Bubbles|80/100|[from] item: Life Orb
+expect |cant|p2b: X|flinch
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Clawitzer|Clawitzer, L50, F|148/148
+expect |switch|p1a: Clawitzer|Clawitzer, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Hippowdon|Hippowdon, L50, F, shiny|215/215
+expect |switch|p1b: Hippowdon|Hippowdon, L50, F, shiny|100/100
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p1b: Hippowdon
+expect |move|p2b: X|Iron Head|p1b: Hippowdon
+expect |rng|100|47
+expect |rng|24|18
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Hippowdon|179/215
+expect |-damage|p1b: Hippowdon|83/100
+expect |rng|100|41
+expect |split|p2
+expect |-damage|p2b: X|96/152|[from] item: Rocky Helmet|[of] p1b: Hippowdon
+expect |-damage|p2b: X|63/100|[from] item: Rocky Helmet|[of] p1b: Hippowdon
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Clawitzer|139/148|[from] Sandstorm
+expect |-damage|p1a: Clawitzer|93/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: X|87/152|[from] Sandstorm
+expect |-damage|p2b: X|57/100|[from] Sandstorm
+expect |upkeep
+expect |turn|4
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p1a: Clawitzer|Aura Sphere|p1b: Hippowdon
+expect |rng|24|16
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1b: Hippowdon|106/215
+expect |-damage|p1b: Hippowdon|49/100
+expect |rng|1|0
+expect |move|p2b: X|U-turn|p1a: Clawitzer
+expect |rng|100|93
+expect |rng|24|6
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Clawitzer|66/148
+expect |-damage|p1a: Clawitzer|44/100
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Hippowdon|Stealth Rock|p2b: X
+expect |-sidestart|p2: p2|move: Stealth Rock
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Clawitzer|57/148|[from] Sandstorm
+expect |-damage|p1a: Clawitzer|38/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: X|78/152|[from] Sandstorm
+expect |-damage|p2b: X|51/100|[from] Sandstorm
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Pyroar|Pyroar, L50, F|43/163
+expect |switch|p1b: Pyroar|Pyroar, L50, F|26/100
+expect |-ability|p1b: Pyroar|Unnerve
+expect |move|p1a: Clawitzer|Aura Sphere|p2b: X
+expect |rng|24|22
+expect |rng|16|14
+expect |-resisted|p2b: X|1
+expect |split|p2
+expect |-damage|p2b: X|42/152
+expect |-damage|p2b: X|27/100
+expect |move|p2b: X|U-turn|p1b: Pyroar
+expect |rng|100|7
+expect |rng|24|17
+expect |rng|16|10
+expect |-resisted|p1b: Pyroar|1
+expect |split|p1
+expect |-damage|p1b: Pyroar|0 fnt
+expect |-damage|p1b: Pyroar|0 fnt
+expect |faint|p1b: Pyroar
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Clawitzer|48/148|[from] Sandstorm
+expect |-damage|p1a: Clawitzer|32/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: X|33/152|[from] Sandstorm
+expect |-damage|p2b: X|21/100|[from] Sandstorm
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Hippowdon|Hippowdon, L50, F, shiny|106/215
+expect |switch|p1b: Hippowdon|Hippowdon, L50, F, shiny|49/100
+expect |turn|6
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Mr. Bubbles|Perrserker, L50, F, shiny|119/147
+expect |switch|p1a: Mr. Bubbles|Perrserker, L50, F, shiny|80/100
+expect |rng|1|0
+expect |move|p2b: X|U-turn|p1b: Hippowdon
+expect |rng|100|59
+expect |rng|24|20
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: Hippowdon|60/215
+expect |-damage|p1b: Hippowdon|27/100
+expect |split|p2
+expect |-damage|p2b: X|8/152|[from] item: Rocky Helmet|[of] p1b: Hippowdon
+expect |-damage|p2b: X|5/100|[from] item: Rocky Helmet|[of] p1b: Hippowdon
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Hippowdon|Stealth Rock||[still]
+expect |-fail|p1b: Hippowdon
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p2
+expect |-damage|p2b: X|0 fnt|[from] Sandstorm
+expect |-damage|p2b: X|0 fnt|[from] Sandstorm
+expect |faint|p2b: X
+expect |
+expect |win|p1

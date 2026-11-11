@@ -1,0 +1,75 @@
+[workspace]
+resolver = "3"
+members = ["crates/pikapro-data", "crates/pikapro", "crates/pikapro-protocol", "crates/pikapro-validate", "crates/pikapro-teams", "crates/pikapro-server", "crates/pikapro-cli", "crates/pikapro-conformance", "crates/pikapro-showdown-server", "crates/pikapro-view", "crates/pikapro-rl", "crates/pikapro-py", "benches"]
+default-members = ["crates/pikapro-data", "crates/pikapro", "crates/pikapro-protocol", "crates/pikapro-validate", "crates/pikapro-teams", "crates/pikapro-server", "crates/pikapro-cli", "crates/pikapro-conformance", "crates/pikapro-showdown-server", "crates/pikapro-view", "crates/pikapro-rl", "benches"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+license = "MIT"
+repository = "https://github.com/spedr/pikapro-engine"
+# crates.io keywords are at most 20 characters, five per crate.
+keywords = ["pokemon", "showdown", "battle-simulator", "vgc", "simulator"]
+categories = ["simulation", "games"]
+
+[workspace.dependencies]
+pikapro-data = { path = "crates/pikapro-data", version = "0.1.0" }
+pikapro = { path = "crates/pikapro", version = "0.1.0" }
+pikapro-protocol = { path = "crates/pikapro-protocol", version = "0.1.0" }
+pikapro-validate = { path = "crates/pikapro-validate", version = "0.1.0" }
+pikapro-teams = { path = "crates/pikapro-teams", version = "0.1.0" }
+pikapro-server = { path = "crates/pikapro-server", version = "0.1.0" }
+pikapro-view = { path = "crates/pikapro-view", version = "0.1.0" }
+pikapro-rl = { path = "crates/pikapro-rl", version = "0.1.0" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+missing_debug_implementations = "warn"
+rust_2018_idioms = { level = "warn", priority = -1 }
+
+[workspace.lints.clippy]
+dbg_macro = "warn"
+todo = "warn"
+
+# Tests and debug builds: the crates that do the heavy work are optimised.
+# Debug assertions and overflow checks stay on. Only debug compiles of these
+# crates get slower, clippy doesn't.
+[profile.dev.package.pikapro]
+opt-level = 3
+
+[profile.dev.package.pikapro-data]
+opt-level = 3
+
+[profile.dev.package.pikapro-rl]
+opt-level = 3
+
+[profile.dev.package.pikapro-view]
+opt-level = 2
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+debug = 1
+
+# The Python extension (crates/pikapro-py, built by maturin): release, but a
+# panic unwinds into a Python exception instead of aborting the interpreter.
+[profile.release-py]
+inherits = "release"
+panic = "unwind"
+
+# The websocket server (crates/pikapro-showdown-server): release, but a panic
+# in a battle unwinds to its room, which ends that battle, instead of
+# aborting the server with every other battle in it.
+# `cargo run --profile release-server -p pikapro-showdown-server`.
+[profile.release-server]
+inherits = "release"
+panic = "unwind"
+
+# The differential tools (`cargo conformance`, `view-conformance`,
+# `channel-conformance`): release, but a panic unwinds, so the tool reports
+# the seed that panicked, saves its scenario when it has one, and goes on.
+[profile.release-tools]
+inherits = "release"
+panic = "unwind"

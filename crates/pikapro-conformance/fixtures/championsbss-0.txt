@@ -1,0 +1,640 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed 991f 3c1e 9400 d39c
+genders drawn
+team p1
+Lucario (M) @ Lucarionite
+Ability: Justified
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 3 Atk / 9 Def / 27 SpA / 15 SpD / 5 Spe
+Bashful Nature
+- Drum Beating
+- Energy Ball
+- Heat Crash
+- Curse
+
+Rotom-Mow
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Tera Type: Flying
+EVs: 4 Atk / 29 Def / 3 SpA / 6 SpD / 24 Spe
+Hasty Nature
+- Follow Me
+
+Froslass @ Big Root
+Ability: Cursed Body
+Level: 50
+Tera Type: Fighting
+EVs: 1 HP / 20 Atk / 6 Def / 9 SpA / 24 SpD / 6 Spe
+Hasty Nature
+- Alluring Voice
+- Ceaseless Edge
+
+Zoë (Pikachu) (F) @ Colbur Berry
+Ability: Static
+Level: 50
+Tera Type: Dragon
+EVs: 20 HP / 19 Atk / 9 Def / 6 SpA / 7 Spe
+Brave Nature
+- Freeze-Dry
+- Aqua Step
+- Magnetic Flux
+
+Greninja (F) @ Greninjite
+Ability: Protean
+Level: 50
+Tera Type: Dragon
+EVs: 3 HP / 30 Atk / 27 SpD / 6 Spe
+Naughty Nature
+- Quash
+- Flail
+- Draining Kiss
+- Burn Up
+
+Ninetales @ Cheri Berry
+Ability: Flash Fire
+Level: 50
+Tera Type: Ghost
+EVs: 1 HP / 16 Atk / 12 Def / 4 SpA / 32 Spe
+Jolly Nature
+- Tickle
+- Aqua Step
+- Sheer Cold
+end
+team p2
+Dragalge @ Dragalgite
+Ability: Adaptability
+Level: 50
+Tera Type: Ground
+EVs: 21 HP / 22 Atk / 1 Def / 11 SpA / 3 SpD / 8 Spe
+Lonely Nature
+- Protect
+- Tickle
+- Psychic Terrain
+- Skill Swap
+
+Decidueye (M)
+Ability: Overgrow
+Level: 50
+Tera Type: Grass
+EVs: 6 HP / 1 Atk / 27 Def / 27 SpD / 4 Spe
+Serious Nature
+- Dragon Pulse
+
+Nibbles (Musharna) @ Bright Powder
+Ability: Forewarn
+Level: 50
+Tera Type: Dragon
+EVs: 6 Atk / 6 Def / 23 SpA / 15 SpD / 11 Spe
+Naughty Nature
+- Sandstorm
+
+Meowstic @ Meowsticite
+Ability: Prankster
+Level: 50
+Tera Type: Normal
+EVs: 21 HP / 3 Atk / 7 Def / 5 SpA / 2 SpD / 26 Spe
+Bashful Nature
+- Night Daze
+- Sludge Bomb
+
+Quaquaval @ Muscle Band
+Ability: Torrent
+Level: 50
+Tera Type: Ice
+EVs: 3 HP / 23 Atk / 8 Def / 28 SpA / 1 SpD / 2 Spe
+Relaxed Nature
+- Metal Sound
+- Speed Swap
+
+Staraptor (M) @ Staraptite
+Ability: Intimidate
+Level: 50
+Tera Type: Fairy
+EVs: 4 HP / 18 Atk / 2 Def / 27 SpD / 10 Spe
+Docile Nature
+- Dazzling Gleam
+- Steel Wing
+- Noble Roar
+- Rock Polish
+end
+choice p1 team 451
+choice p2 team [4, 2, 3]
+choice p1 move 3
+choice p2 move 1
+choice p1 default
+choice p2 switch 3
+choice p1 move 3
+choice p2 move 1
+choice p1 move 2
+choice p2 switch 2
+choice p1 switch greninja
+choice p2 move 1
+choice p1 move 2
+choice p2 move dragonpulse
+choice p1 move 3
+choice p2 switch 2
+choice p1 move 2 mega
+choice p2 move 1
+choice p1 move 4
+choice p2 switch 2
+choice p1 move burnup
+choice p2 switch 2
+choice p1 move 4
+choice p2 switch 3
+choice p1 move 1
+choice p2 default
+choice p1 switch 2
+choice p2 move 1
+choice p1 move 2
+choice p1 switch 3
+choice p2 switch Decidueye
+choice p1 move 4
+choice p2 switch Meowstic
+choice p1 move 1
+choice p2 switch Nibbles
+choice p1 default
+choice p2 switch 3
+choice p1 move 3
+choice p2 move 1 mega
+choice p1 default
+choice p2 switch 2
+choice p1 move heatcrash
+choice p2 move dragonpulse
+choice p1 move 3
+choice p2 move 1
+choice p1 move 3
+choice p2 default
+choice p2 switch 3
+choice p1 move 2
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Lucario, L50, M, shiny|
+expect |poke|p1|Rotom-Mow, L50, shiny|
+expect |poke|p1|Froslass, L50, F|
+expect |poke|p1|Pikachu, L50, F|
+expect |poke|p1|Greninja, L50, F|
+expect |poke|p1|Ninetales, L50, F|
+expect |poke|p2|Dragalge, L50, F|
+expect |poke|p2|Decidueye, L50, M|
+expect |poke|p2|Musharna, L50, F|
+expect |poke|p2|Meowstic, L50, M|
+expect |poke|p2|Quaquaval, L50, F|
+expect |poke|p2|Staraptor, L50, M|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Zoë|Pikachu, L50, F|130/130
+expect |switch|p1a: Zoë|Pikachu, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Meowstic|Meowstic, L50, M|170/170
+expect |switch|p2a: Meowstic|Meowstic, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Meowstic|Night Daze|p1a: Zoë
+expect |rng|100|52
+expect |rng|24|20
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Zoë|73/130
+expect |-damage|p1a: Zoë|56/100
+expect |rng|100|31
+expect |-unboost|p1a: Zoë|accuracy|1
+expect |move|p1a: Zoë|Magnetic Flux||[still]
+expect |-fail|p1a: Zoë
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Nibbles|Musharna, L50, F|191/191
+expect |switch|p2a: Nibbles|Musharna, L50, F|100/100
+expect |rng|1|0
+expect |-activate|p2a: Nibbles|ability: Forewarn|Aqua Step|[of] p1a: Zoë
+expect |move|p1a: Zoë|Freeze-Dry|p2a: Nibbles
+expect |rng|100|40
+expect |rng|24|10
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Nibbles|170/191
+expect |-damage|p2a: Nibbles|89/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Zoë|Magnetic Flux||[still]
+expect |-fail|p1a: Zoë
+expect |move|p2a: Nibbles|Sandstorm|p2a: Nibbles
+expect |-weather|Sandstorm
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Zoë|65/130|[from] Sandstorm
+expect |-damage|p1a: Zoë|50/100y|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Nibbles|159/191|[from] Sandstorm
+expect |-damage|p2a: Nibbles|83/100|[from] Sandstorm
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Decidueye|Decidueye, L50, M|159/159
+expect |switch|p2a: Decidueye|Decidueye, L50, M|100/100
+expect |move|p1a: Zoë|Aqua Step|p2a: Decidueye|[miss]
+expect |rng|100|95
+expect |-miss|p1a: Zoë|p2a: Decidueye
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Zoë|57/130|[from] Sandstorm
+expect |-damage|p1a: Zoë|43/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Decidueye|150/159|[from] Sandstorm
+expect |-damage|p2a: Decidueye|94/100|[from] Sandstorm
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Greninja|Greninja, L50, F|150/150
+expect |switch|p1a: Greninja|Greninja, L50, F|100/100
+expect |move|p2a: Decidueye|Dragon Pulse|p1a: Greninja
+expect |rng|100|32
+expect |rng|24|6
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Greninja|109/150
+expect |-damage|p1a: Greninja|72/100
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Greninja|100/150|[from] Sandstorm
+expect |-damage|p1a: Greninja|66/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Decidueye|141/159|[from] Sandstorm
+expect |-damage|p2a: Decidueye|88/100|[from] Sandstorm
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p1a: Greninja|Flail|p2a: Decidueye
+expect |-start|p1a: Greninja|typechange|Normal|[from] ability: Protean
+expect |-immune|p2a: Decidueye
+expect |move|p2a: Decidueye|Dragon Pulse|p1a: Greninja
+expect |rng|100|60
+expect |rng|24|11
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Greninja|58/150
+expect |-damage|p1a: Greninja|38/100
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Greninja|49/150|[from] Sandstorm
+expect |-damage|p1a: Greninja|32/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Decidueye|132/159|[from] Sandstorm
+expect |-damage|p2a: Decidueye|83/100|[from] Sandstorm
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Nibbles|Musharna, L50, F|159/191
+expect |switch|p2a: Nibbles|Musharna, L50, F|83/100
+expect |rng|1|0
+expect |-activate|p2a: Nibbles|ability: Forewarn|Burn Up|[of] p1a: Greninja
+expect |move|p1a: Greninja|Draining Kiss|p2a: Nibbles
+expect |rng|100|19
+expect |rng|24|21
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Nibbles|138/191
+expect |-damage|p2a: Nibbles|72/100
+expect |split|p1
+expect |-heal|p1a: Greninja|65/150|[from] drain|[of] p2a: Nibbles
+expect |-heal|p1a: Greninja|43/100|[from] drain|[of] p2a: Nibbles
+expect |
+expect |-weather|none
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |detailschange|p1a: Greninja|Greninja-Mega, L50, F
+expect |-mega|p1a: Greninja|Greninja|Greninjite
+expect |move|p1a: Greninja|Flail|p2a: Nibbles
+expect |-start|p1a: Greninja|typechange|Normal|[from] ability: Protean
+expect |rng|100|47
+expect |rng|24|16
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Nibbles|98/191
+expect |-damage|p2a: Nibbles|51/100
+expect |move|p2a: Nibbles|Sandstorm|p2a: Nibbles
+expect |-weather|Sandstorm
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Greninja|56/150|[from] Sandstorm
+expect |-damage|p1a: Greninja|37/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Nibbles|87/191|[from] Sandstorm
+expect |-damage|p2a: Nibbles|45/100|[from] Sandstorm
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Decidueye|Decidueye, L50, M|132/159
+expect |switch|p2a: Decidueye|Decidueye, L50, M|83/100
+expect |move|p1a: Greninja|Burn Up||[still]
+expect |-fail|p1a: Greninja|move: Burn Up
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Greninja|47/150|[from] Sandstorm
+expect |-damage|p1a: Greninja|31/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Decidueye|123/159|[from] Sandstorm
+expect |-damage|p2a: Decidueye|77/100|[from] Sandstorm
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Nibbles|Musharna, L50, F|87/191
+expect |switch|p2a: Nibbles|Musharna, L50, F|45/100
+expect |rng|1|0
+expect |-activate|p2a: Nibbles|ability: Forewarn|Burn Up|[of] p1a: Greninja
+expect |move|p1a: Greninja|Burn Up||[still]
+expect |-fail|p1a: Greninja|move: Burn Up
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Greninja|38/150|[from] Sandstorm
+expect |-damage|p1a: Greninja|25/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Nibbles|76/191|[from] Sandstorm
+expect |-damage|p2a: Nibbles|39/100|[from] Sandstorm
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Meowstic|Meowstic, L50, M|170/170
+expect |switch|p2a: Meowstic|Meowstic, L50, M|100/100
+expect |move|p1a: Greninja|Burn Up||[still]
+expect |-fail|p1a: Greninja|move: Burn Up
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Greninja|29/150|[from] Sandstorm
+expect |-damage|p1a: Greninja|19/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: Meowstic|160/170|[from] Sandstorm
+expect |-damage|p2a: Meowstic|94/100|[from] Sandstorm
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p1a: Greninja|Quash||[still]
+expect |rng|100|10
+expect |-fail|p1a: Greninja
+expect |move|p2a: Meowstic|Night Daze|p1a: Greninja
+expect |rng|100|48
+expect |rng|24|20
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Greninja|0 fnt
+expect |-damage|p1a: Greninja|0 fnt
+expect |rng|100|94
+expect |faint|p1a: Greninja
+expect |
+expect |-weather|none
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Zoë|Pikachu, L50, F|57/130
+expect |switch|p1a: Zoë|Pikachu, L50, F|43/100
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p2a: Meowstic|Night Daze|p1a: Zoë
+expect |rng|100|72
+expect |rng|24|12
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Zoë|0 fnt
+expect |-damage|p1a: Zoë|0 fnt
+expect |rng|100|20
+expect |faint|p1a: Zoë
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Lucario|Lucario, L50, M, shiny|145/145
+expect |switch|p1a: Lucario|Lucario, L50, M, shiny|100/100
+expect |turn|14
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Decidueye|Decidueye, L50, M|123/159
+expect |switch|p2a: Decidueye|Decidueye, L50, M|77/100
+expect |move|p1a: Lucario|Curse|p1a: Lucario
+expect |-unboost|p1a: Lucario|spe|1
+expect |-boost|p1a: Lucario|atk|1
+expect |-boost|p1a: Lucario|def|1
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Meowstic|Meowstic, L50, M|160/170
+expect |switch|p2a: Meowstic|Meowstic, L50, M|94/100
+expect |move|p1a: Lucario|Drum Beating|p2a: Meowstic
+expect |rng|100|94
+expect |rng|24|16
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Meowstic|96/170
+expect |-damage|p2a: Meowstic|56/100
+expect |rng|100|36
+expect |-unboost|p2a: Meowstic|spe|1
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Nibbles|Musharna, L50, F|76/191
+expect |switch|p2a: Nibbles|Musharna, L50, F|39/100
+expect |rng|1|0
+expect |-activate|p2a: Nibbles|ability: Forewarn|Energy Ball|[of] p1a: Lucario
+expect |move|p1a: Lucario|Drum Beating|p2a: Nibbles
+expect |rng|100|37
+expect |rng|24|7
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Nibbles|21/191
+expect |-damage|p2a: Nibbles|10/100
+expect |rng|100|44
+expect |-unboost|p2a: Nibbles|spe|1
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Meowstic|Meowstic, L50, M|96/170
+expect |switch|p2a: Meowstic|Meowstic, L50, M|56/100
+expect |move|p1a: Lucario|Heat Crash|p2a: Meowstic
+expect |rng|100|41
+expect |rng|24|14
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Meowstic|4/170
+expect |-damage|p2a: Meowstic|2/100
+expect |
+expect |upkeep
+expect |turn|18
+expect |
+expect |t:|
+expect |detailschange|p2a: Meowstic|Meowstic-M-Mega, L50, M
+expect |-mega|p2a: Meowstic|Meowstic|Meowsticite
+expect |rng|1|0
+expect |-ability|p2a: Meowstic|Justified|Trace|[from] ability: Trace|[of] p1a: Lucario
+expect |move|p2a: Meowstic|Night Daze|p1a: Lucario
+expect |rng|100|27
+expect |rng|24|12
+expect |rng|16|2
+expect |-resisted|p1a: Lucario|1
+expect |split|p1
+expect |-damage|p1a: Lucario|114/145
+expect |-damage|p1a: Lucario|78/100
+expect |rng|100|17
+expect |-unboost|p1a: Lucario|accuracy|1
+expect |-ability|p1a: Lucario|Justified|boost
+expect |-boost|p1a: Lucario|atk|1
+expect |move|p1a: Lucario|Drum Beating|p2a: Meowstic
+expect |rng|100|15
+expect |rng|24|9
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Meowstic|0 fnt
+expect |-damage|p2a: Meowstic|0 fnt
+expect |rng|100|39
+expect |faint|p2a: Meowstic
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Decidueye|Decidueye, L50, M|123/159
+expect |switch|p2a: Decidueye|Decidueye, L50, M|77/100
+expect |turn|19
+expect |
+expect |t:|
+expect |move|p2a: Decidueye|Dragon Pulse|p1a: Lucario
+expect |rng|100|68
+expect |rng|24|10
+expect |rng|16|0
+expect |-resisted|p1a: Lucario|1
+expect |split|p1
+expect |-damage|p1a: Lucario|92/145
+expect |-damage|p1a: Lucario|63/100
+expect |move|p1a: Lucario|Heat Crash|p2a: Decidueye|[miss]
+expect |rng|100|86
+expect |-miss|p1a: Lucario|p2a: Decidueye
+expect |
+expect |upkeep
+expect |turn|20
+expect |
+expect |t:|
+expect |move|p2a: Decidueye|Dragon Pulse|p1a: Lucario
+expect |rng|100|86
+expect |rng|24|0
+expect |rng|16|13
+expect |-resisted|p1a: Lucario|1
+expect |-crit|p1a: Lucario
+expect |split|p1
+expect |-damage|p1a: Lucario|64/145
+expect |-damage|p1a: Lucario|44/100
+expect |move|p1a: Lucario|Heat Crash|p2a: Decidueye
+expect |rng|100|58
+expect |rng|24|20
+expect |rng|16|7
+expect |-supereffective|p2a: Decidueye|1
+expect |split|p2
+expect |-damage|p2a: Decidueye|49/159
+expect |-damage|p2a: Decidueye|30/100
+expect |
+expect |upkeep
+expect |turn|21
+expect |
+expect |t:|
+expect |move|p2a: Decidueye|Dragon Pulse|p1a: Lucario
+expect |rng|100|72
+expect |rng|24|8
+expect |rng|16|2
+expect |-resisted|p1a: Lucario|1
+expect |split|p1
+expect |-damage|p1a: Lucario|43/145
+expect |-damage|p1a: Lucario|29/100
+expect |move|p1a: Lucario|Heat Crash|p2a: Decidueye
+expect |rng|100|70
+expect |rng|24|5
+expect |rng|16|6
+expect |-supereffective|p2a: Decidueye|1
+expect |split|p2
+expect |-damage|p2a: Decidueye|0 fnt
+expect |-damage|p2a: Decidueye|0 fnt
+expect |faint|p2a: Decidueye
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Nibbles|Musharna, L50, F|21/191
+expect |switch|p2a: Nibbles|Musharna, L50, F|10/100
+expect |rng|1|0
+expect |-activate|p2a: Nibbles|ability: Forewarn|Energy Ball|[of] p1a: Lucario
+expect |turn|22
+expect |
+expect |t:|
+expect |move|p1a: Lucario|Energy Ball|p2a: Nibbles
+expect |rng|100|26
+expect |rng|24|9
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Nibbles|0 fnt
+expect |-damage|p2a: Nibbles|0 fnt
+expect |rng|100|7
+expect |faint|p2a: Nibbles
+expect |
+expect |win|p1

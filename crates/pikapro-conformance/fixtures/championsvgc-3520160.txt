@@ -1,0 +1,803 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 5700 ca77 0fea 04ad
+genders drawn
+team p1
+Scizor (F) @ Colbur Berry
+Ability: Light Metal
+Level: 50
+Tera Type: Flying
+EVs: 15 HP / 7 Def / 12 SpA / 17 SpD / 15 Spe
+Naive Nature
+- Alluring Voice
+
+X (Barbaracle) @ Chople Berry
+Ability: Pickpocket
+Level: 50
+Tera Type: Grass
+EVs: 10 HP / 2 Atk / 11 Def / 14 SpA / 24 SpD / 4 Spe
+Relaxed Nature
+- Focus Energy
+- Avalanche
+
+Scolipede (F) @ King's Rock
+Ability: Swarm
+Level: 50
+Tera Type: Flying
+EVs: 4 HP / 9 Atk / 2 Def / 7 SpA / 32 SpD / 5 Spe
+Mild Nature
+- Superpower
+- Counter
+- Spirit Shackle
+- Darkest Lariat
+
+Nibbles (Rotom-Heat) @ Lum Berry
+Ability: Levitate
+Level: 50
+Tera Type: Dragon
+EVs: 30 HP / 19 Atk / 14 Def / 1 SpA / 1 SpD
+Hardy Nature
+- Flame Charge
+- Thief
+
+ThisNameIsFarTooLongToKeep (Abomasnow)
+Ability: Soundproof
+Level: 50
+Tera Type: Ghost
+EVs: 9 HP / 8 Atk / 15 Def / 12 SpA / 5 SpD / 16 Spe
+Docile Nature
+- Salt Cure
+
+Emboar @ Zoom Lens
+Ability: Blaze
+Level: 50
+Tera Type: Ghost
+EVs: 3 HP / 1 Atk / 25 Def / 2 SpA / 29 SpD / 2 Spe
+Impish Nature
+- Salt Cure
+- Dragon Cheer
+- Burn Up
+end
+team p2
+Runerigus (M) @ Cheri Berry
+Ability: Wandering Spirit
+Level: 50
+Tera Type: Psychic
+EVs: 13 HP / 4 Atk / 1 Def / 18 SpA / 2 SpD / 25 Spe
+Quiet Nature
+- Psychic
+- Fly
+
+Arcanine (M) @ Muscle Band
+Ability: Justified
+Level: 50
+Shiny: Yes
+Tera Type: Steel
+EVs: 10 HP / 15 Atk / 6 SpA / 2 SpD / 28 Spe
+Lonely Nature
+- Leaf Storm
+
+Hippowdon @ Rindo Berry
+Ability: Sand Stream
+Level: 50
+Tera Type: Ghost
+EVs: 18 HP / 1 Atk / 28 Def / 6 SpA / 4 SpD / 9 Spe
+Impish Nature
+- Triple Arrows
+- Fire Spin
+- Scary Face
+- Poison Jab
+
+Mr. Bubbles (Scrafty) @ Scraftinite
+Ability: Intimidate
+Level: 50
+Tera Type: Dragon
+EVs: 30 Atk / 22 SpA / 14 SpD
+Gentle Nature
+- Ceaseless Edge
+- Drill Run
+- Burn Up
+
+Qwilfish @ Icy Rock
+Ability: Intimidate
+Level: 50
+Tera Type: Psychic
+EVs: 21 HP / 10 Atk / 6 Def / 20 SpA / 1 SpD / 1 Spe
+Quiet Nature
+- Crush Claw
+- Brutal Swing
+
+Victreebel (F) @ Victreebelite
+Ability: Gluttony
+Level: 50
+Shiny: Yes
+Tera Type: Electric
+EVs: 12 HP / 32 Atk / 2 Def / 1 SpA / 16 SpD / 2 Spe
+Docile Nature
+- Acrobatics
+- Sheer Cold
+- Lumina Crash
+end
+choice p1 team 4516
+choice p2 team 3612
+choice p1 move 1 1, switch 3
+choice p2 move 4 -2, move 2 -1
+choice p1 move 1 -2, switch 4
+choice p2 default
+choice p1 switch ThisNameIsFarTooLong, move saltcure 2
+choice p2 move 2 -2, move 3 2
+choice p1 move 1 2, move 3 2
+choice p2 move 2 -2, move 3 -1 mega
+choice p2 skip ,  switch Runerigus
+choice p1 move 1 -2, move 2 -1
+choice p2 default
+choice p1 switch 4, pass
+choice p2 move 4 -2, switch 4
+choice p1 move 1 -2, move 3 2
+choice p1 pass, switch 3
+choice p2 move 1 2, move 1 2
+choice p1 move alluringvoice 1, move 2 -1
+choice p2 move 3 1, move 1 -1
+choice p1 move alluringvoice 2,move 2 1
+choice p2 move 1 1, switch 4
+choice p1 move 1 2, move 1 2
+choice p2 move triplearrows -2,move 2 -1
+choice p1 move 1 1, move 1 -1
+choice p2 move 1 -2, move 1
+choice p1 pass, move 2 1
+choice p2 switch 4, pass
+choice p1 pass, move 1 1
+choice p2 move 1 2, move 2 2
+choice p1 skip ,  move Flame Charge +1
+choice p2 move 1 2, move 1
+choice p1 pass, move 2 2
+choice p2 move 1 -2, move 2 -1
+choice p1 pass, move 1 1
+choice p2 move 1 -2, move 1
+choice p1 pass, move 1 1
+choice p2 move 1 -2, move 2 2
+choice p1 pass,move 2 2
+choice p2 pass, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Scizor, L50, F|
+expect |poke|p1|Barbaracle, L50, M|
+expect |poke|p1|Scolipede, L50, F|
+expect |poke|p1|Rotom-Heat, L50|
+expect |poke|p1|Abomasnow, L50, M|
+expect |poke|p1|Emboar, L50, F|
+expect |poke|p2|Runerigus, L50, M|
+expect |poke|p2|Arcanine, L50, M, shiny|
+expect |poke|p2|Hippowdon, L50, M|
+expect |poke|p2|Scrafty, L50, M|
+expect |poke|p2|Qwilfish, L50, M|
+expect |poke|p2|Victreebel, L50, F, shiny|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Nibbles|Rotom-Heat, L50|155/155
+expect |switch|p1a: Nibbles|Rotom-Heat, L50|100/100
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Abomasnow, L50, M|174/174
+expect |switch|p1b: ThisNameIsFarTooLong|Abomasnow, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Hippowdon|Hippowdon, L50, M|201/201
+expect |switch|p2a: Hippowdon|Hippowdon, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Victreebel|Victreebel, L50, F, shiny|167/167
+expect |switch|p2b: Victreebel|Victreebel, L50, F, shiny|100/100
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Hippowdon
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Scizor|Scizor, L50, F|160/160
+expect |switch|p1b: Scizor|Scizor, L50, F|100/100
+expect |move|p1a: Nibbles|Flame Charge|p2a: Hippowdon
+expect |rng|100|49
+expect |rng|24|11
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Hippowdon|183/201
+expect |-damage|p2a: Hippowdon|91/100
+expect |rng|100|33
+expect |-boost|p1a: Nibbles|spe|1
+expect |move|p2b: Victreebel|Sheer Cold|p2a: Hippowdon|[miss]
+expect |rng|100|63
+expect |-miss|p2b: Victreebel|p2a: Hippowdon
+expect |move|p2a: Hippowdon|Poison Jab|p2b: Victreebel
+expect |rng|100|22
+expect |rng|24|18
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Victreebel|116/167
+expect |-damage|p2b: Victreebel|69/100
+expect |rng|100|59
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Nibbles|146/155|[from] Sandstorm
+expect |-damage|p1a: Nibbles|94/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Victreebel|106/167|[from] Sandstorm
+expect |-damage|p2b: Victreebel|63/100|[from] Sandstorm
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Emboar|Emboar, L50, F|188/188
+expect |switch|p1b: Emboar|Emboar, L50, F|100/100
+expect |move|p1a: Nibbles|Flame Charge|p1b: Emboar
+expect |rng|100|20
+expect |rng|24|9
+expect |rng|16|8
+expect |-resisted|p1b: Emboar|1
+expect |split|p1
+expect |-damage|p1b: Emboar|175/188
+expect |-damage|p1b: Emboar|93/100
+expect |rng|100|51
+expect |-boost|p1a: Nibbles|spe|1
+expect |move|p2b: Victreebel|Acrobatics|p1a: Nibbles
+expect |rng|100|11
+expect |rng|24|7
+expect |rng|16|13
+expect |-resisted|p1a: Nibbles|1
+expect |split|p1
+expect |-damage|p1a: Nibbles|134/155
+expect |-damage|p1a: Nibbles|86/100
+expect |move|p2a: Hippowdon|Triple Arrows|p1a: Nibbles
+expect |rng|100|74
+expect |rng|8|2
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Nibbles|98/155
+expect |-damage|p1a: Nibbles|63/100
+expect |rng|100|39
+expect |-unboost|p1a: Nibbles|def|1
+expect |rng|100|68
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Nibbles|89/155|[from] Sandstorm
+expect |-damage|p1a: Nibbles|57/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Victreebel|96/167|[from] Sandstorm
+expect |-damage|p2b: Victreebel|57/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1b: Emboar|164/188|[from] Sandstorm
+expect |-damage|p1b: Emboar|87/100|[from] Sandstorm
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: ThisNameIsFarTooLong|Abomasnow, L50, M|174/174
+expect |switch|p1a: ThisNameIsFarTooLong|Abomasnow, L50, M|100/100
+expect |move|p2b: Victreebel|Lumina Crash|p1b: Emboar
+expect |rng|100|18
+expect |rng|24|23
+expect |rng|16|11
+expect |-supereffective|p1b: Emboar|1
+expect |split|p1
+expect |-damage|p1b: Emboar|96/188
+expect |-damage|p1b: Emboar|51/100
+expect |rng|100|85
+expect |-unboost|p1b: Emboar|spd|2
+expect |move|p1b: Emboar|Salt Cure|p2b: Victreebel
+expect |rng|100|76
+expect |rng|24|18
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Victreebel|70/167
+expect |-damage|p2b: Victreebel|41/100
+expect |rng|100|16
+expect |-start|p2b: Victreebel|Salt Cure
+expect |move|p2a: Hippowdon|Fire Spin|p2b: Victreebel
+expect |rng|100|44
+expect |rng|24|16
+expect |rng|16|5
+expect |-supereffective|p2b: Victreebel|1
+expect |split|p2
+expect |-damage|p2b: Victreebel|44/167
+expect |-damage|p2b: Victreebel|26/100
+expect |rng|2|1
+expect |-activate|p2b: Victreebel|move: Fire Spin|[of] p2a: Hippowdon
+expect |
+expect |rng|2|1
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|164/174|[from] Sandstorm
+expect |-damage|p1a: ThisNameIsFarTooLong|94/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Victreebel|34/167|[from] Sandstorm
+expect |-damage|p2b: Victreebel|20/100y|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1b: Emboar|85/188|[from] Sandstorm
+expect |-damage|p1b: Emboar|45/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2b: Victreebel|14/167|[from] move: Fire Spin|[partiallytrapped]
+expect |-damage|p2b: Victreebel|8/100|[from] move: Fire Spin|[partiallytrapped]
+expect |split|p2
+expect |-damage|p2b: Victreebel|4/167|[from] Salt Cure
+expect |-damage|p2b: Victreebel|2/100|[from] Salt Cure
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |detailschange|p2b: Victreebel|Victreebel-Mega, L50, F, shiny
+expect |-mega|p2b: Victreebel|Victreebel|Victreebelite
+expect |move|p1a: ThisNameIsFarTooLong|Salt Cure|p2b: Victreebel
+expect |rng|100|17
+expect |rng|24|3
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Victreebel|0 fnt
+expect |-damage|p2b: Victreebel|0 fnt
+expect |rng|100|22
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|160/174|[from] ability: Innards Out|[of] p2b: Victreebel
+expect |-damage|p1a: ThisNameIsFarTooLong|91/100|[from] ability: Innards Out|[of] p2b: Victreebel
+expect |faint|p2b: Victreebel
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Emboar|Burn Up|p2a: Hippowdon
+expect |rng|100|68
+expect |rng|24|13
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Hippowdon|87/201
+expect |-damage|p2a: Hippowdon|43/100
+expect |-start|p1b: Emboar|typechange|???/Fighting|[from] move: Burn Up
+expect |move|p2a: Hippowdon|Fire Spin|p2: Victreebel|[notarget]
+expect |-fail|p2a: Hippowdon
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|150/174|[from] Sandstorm
+expect |-damage|p1a: ThisNameIsFarTooLong|86/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1b: Emboar|74/188|[from] Sandstorm
+expect |-damage|p1b: Emboar|39/100|[from] Sandstorm
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Runerigus|Runerigus, L50, M|146/146
+expect |switch|p2b: Runerigus|Runerigus, L50, M|100/100
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1a: ThisNameIsFarTooLong|Salt Cure|p1b: Emboar
+expect |rng|100|25
+expect |rng|24|22
+expect |rng|16|9
+expect |-resisted|p1b: Emboar|1
+expect |split|p1
+expect |-damage|p1b: Emboar|66/188
+expect |-damage|p1b: Emboar|35/100
+expect |rng|100|57
+expect |-start|p1b: Emboar|Salt Cure
+expect |move|p1b: Emboar|Dragon Cheer|p1a: ThisNameIsFarTooLong
+expect |-immune|p1a: ThisNameIsFarTooLong|[from] ability: Soundproof
+expect |move|p2a: Hippowdon|Triple Arrows|p1a: ThisNameIsFarTooLong
+expect |rng|100|91
+expect |rng|8|0
+expect |rng|16|1
+expect |-supereffective|p1a: ThisNameIsFarTooLong|1
+expect |-crit|p1a: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|6/174
+expect |-damage|p1a: ThisNameIsFarTooLong|3/100
+expect |rng|100|82
+expect |rng|100|88
+expect |move|p2b: Runerigus|Psychic|p1a: ThisNameIsFarTooLong
+expect |rng|100|50
+expect |rng|24|0
+expect |rng|16|10
+expect |-crit|p1a: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|0 fnt
+expect |-damage|p1a: ThisNameIsFarTooLong|0 fnt
+expect |rng|100|5
+expect |faint|p1a: ThisNameIsFarTooLong
+expect |
+expect |-weather|none
+expect |split|p1
+expect |-damage|p1b: Emboar|55/188|[from] Salt Cure
+expect |-damage|p1b: Emboar|29/100|[from] Salt Cure
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Scizor|Scizor, L50, F|160/160
+expect |switch|p1a: Scizor|Scizor, L50, F|100/100
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Arcanine|Arcanine, L50, M, shiny|175/175
+expect |switch|p2b: Arcanine|Arcanine, L50, M, shiny|100/100
+expect |move|p1a: Scizor|Alluring Voice|p1b: Emboar
+expect |rng|100|23
+expect |rng|24|3
+expect |rng|16|10
+expect |-supereffective|p1b: Emboar|1
+expect |split|p1
+expect |-damage|p1b: Emboar|0 fnt
+expect |-damage|p1b: Emboar|0 fnt
+expect |rng|100|68
+expect |faint|p1b: Emboar
+expect |move|p2a: Hippowdon|Poison Jab|p2b: Arcanine
+expect |rng|100|3
+expect |rng|24|21
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Arcanine|127/175
+expect |-damage|p2b: Arcanine|72/100
+expect |rng|100|44
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Nibbles|Rotom-Heat, L50|89/155
+expect |switch|p1b: Nibbles|Rotom-Heat, L50|57/100
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2b: Arcanine|Leaf Storm|p1b: Nibbles
+expect |rng|100|71
+expect |rng|24|4
+expect |rng|16|7
+expect |-resisted|p1b: Nibbles|1
+expect |split|p1
+expect |-damage|p1b: Nibbles|63/155
+expect |-damage|p1b: Nibbles|40/100
+expect |rng|100|90
+expect |-unboost|p2b: Arcanine|spa|2
+expect |move|p1a: Scizor|Alluring Voice|p2a: Hippowdon
+expect |rng|100|71
+expect |rng|24|19
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Hippowdon|55/201
+expect |-damage|p2a: Hippowdon|27/100
+expect |rng|100|4
+expect |move|p1b: Nibbles|Thief|p1a: Scizor
+expect |rng|100|41
+expect |rng|24|17
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Scizor|139/160
+expect |-damage|p1a: Scizor|86/100
+expect |move|p2a: Hippowdon|Triple Arrows|p1b: Nibbles
+expect |rng|100|82
+expect |rng|8|1
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Nibbles|28/155
+expect |-damage|p1b: Nibbles|18/100
+expect |rng|100|17
+expect |-unboost|p1b: Nibbles|def|1
+expect |rng|100|13
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2b: Arcanine|Leaf Storm|p2a: Hippowdon
+expect |rng|100|31
+expect |rng|24|1
+expect |rng|16|13
+expect |-supereffective|p2a: Hippowdon|1
+expect |-enditem|p2a: Hippowdon|Rindo Berry|[eat]
+expect |-enditem|p2a: Hippowdon|Rindo Berry|[weaken]
+expect |split|p2
+expect |-damage|p2a: Hippowdon|22/201
+expect |-damage|p2a: Hippowdon|10/100
+expect |rng|100|90
+expect |-unboost|p2b: Arcanine|spa|2
+expect |move|p1a: Scizor|Alluring Voice|p2b: Arcanine
+expect |rng|100|47
+expect |rng|24|3
+expect |rng|16|8
+expect |-resisted|p2b: Arcanine|1
+expect |split|p2
+expect |-damage|p2b: Arcanine|113/175
+expect |-damage|p2b: Arcanine|64/100
+expect |rng|100|28
+expect |move|p1b: Nibbles|Thief|p2a: Hippowdon
+expect |rng|100|64
+expect |rng|24|16
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Hippowdon|7/201
+expect |-damage|p2a: Hippowdon|3/100
+expect |move|p2a: Hippowdon|Scary Face|p1a: Scizor
+expect |rng|100|23
+expect |-unboost|p1a: Scizor|spe|2
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Runerigus|Runerigus, L50, M|146/146
+expect |switch|p2b: Runerigus|Runerigus, L50, M|100/100
+expect |move|p1b: Nibbles|Flame Charge|p2b: Runerigus
+expect |rng|100|81
+expect |rng|24|17
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Runerigus|128/146
+expect |-damage|p2b: Runerigus|87/100
+expect |rng|100|81
+expect |-boost|p1b: Nibbles|spe|1
+expect |-activate|p1b: Nibbles|Skill Swap|Wandering Spirit|Levitate|[of] p2b: Runerigus
+expect |move|p2a: Hippowdon|Triple Arrows|p1a: Scizor
+expect |rng|100|17
+expect |rng|8|4
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Scizor|101/160
+expect |-damage|p1a: Scizor|63/100
+expect |rng|100|48
+expect |-unboost|p1a: Scizor|def|1
+expect |rng|100|54
+expect |move|p1a: Scizor|Alluring Voice|p2b: Runerigus
+expect |rng|100|76
+expect |rng|24|11
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Runerigus|106/146
+expect |-damage|p2b: Runerigus|72/100
+expect |rng|100|35
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Flame Charge|p1a: Scizor
+expect |rng|100|22
+expect |rng|24|2
+expect |rng|16|12
+expect |-supereffective|p1a: Scizor|2
+expect |split|p1
+expect |-damage|p1a: Scizor|0 fnt
+expect |-damage|p1a: Scizor|0 fnt
+expect |rng|100|29
+expect |-boost|p1b: Nibbles|spe|1
+expect |faint|p1a: Scizor
+expect |move|p2a: Hippowdon|Triple Arrows|p2b: Runerigus
+expect |-immune|p2b: Runerigus
+expect |move|p2b: Runerigus|Fly||[still]
+expect |-prepare|p2b: Runerigus|Fly
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Thief|p2a: Hippowdon
+expect |rng|100|19
+expect |rng|24|4
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Hippowdon|0 fnt
+expect |-damage|p2a: Hippowdon|0 fnt
+expect |faint|p2a: Hippowdon
+expect |move|p2b: Runerigus|Fly|p2: Hippowdon|[from] lockedmove|[notarget]
+expect |-fail|p2b: Runerigus
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Arcanine|Arcanine, L50, M, shiny|113/175
+expect |switch|p2a: Arcanine|Arcanine, L50, M, shiny|64/100
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Flame Charge|p2a: Arcanine
+expect |rng|100|16
+expect |rng|24|10
+expect |rng|16|4
+expect |-resisted|p2a: Arcanine|1
+expect |split|p2
+expect |-damage|p2a: Arcanine|95/175
+expect |-damage|p2a: Arcanine|54/100
+expect |rng|100|11
+expect |-boost|p1b: Nibbles|spe|1
+expect |move|p2a: Arcanine|Leaf Storm|p1b: Nibbles|[miss]
+expect |rng|100|98
+expect |-miss|p2a: Arcanine|p1b: Nibbles
+expect |move|p2b: Runerigus|Fly||[still]
+expect |-prepare|p2b: Runerigus|Fly
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Flame Charge|p2a: Arcanine
+expect |rng|100|26
+expect |rng|24|17
+expect |rng|16|1
+expect |-resisted|p2a: Arcanine|1
+expect |split|p2
+expect |-damage|p2a: Arcanine|76/175
+expect |-damage|p2a: Arcanine|43/100
+expect |rng|100|4
+expect |-boost|p1b: Nibbles|spe|1
+expect |move|p2a: Arcanine|Leaf Storm|p1b: Nibbles|[miss]
+expect |rng|100|93
+expect |-miss|p2a: Arcanine|p1b: Nibbles
+expect |move|p2b: Runerigus|Fly|p1b: Nibbles|[from] lockedmove
+expect |rng|100|68
+expect |rng|24|14
+expect |rng|16|0
+expect |-resisted|p1b: Nibbles|1
+expect |split|p1
+expect |-damage|p1b: Nibbles|2/155
+expect |-damage|p1b: Nibbles|1/100
+expect |-activate|p2b: Runerigus|Skill Swap|Wandering Spirit|Levitate|[of] p1b: Nibbles
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Thief|p2b: Runerigus
+expect |rng|100|22
+expect |rng|24|12
+expect |rng|16|2
+expect |-supereffective|p2b: Runerigus|1
+expect |split|p2
+expect |-damage|p2b: Runerigus|72/146
+expect |-damage|p2b: Runerigus|49/100
+expect |-activate|p1b: Nibbles|Skill Swap|Wandering Spirit|Levitate|[of] p2b: Runerigus
+expect |move|p2a: Arcanine|Leaf Storm|p2b: Runerigus|[miss]
+expect |rng|100|93
+expect |-miss|p2a: Arcanine|p2b: Runerigus
+expect |move|p2b: Runerigus|Fly||[still]
+expect |-prepare|p2b: Runerigus|Fly
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Flame Charge|p2a: Arcanine
+expect |rng|100|84
+expect |rng|24|12
+expect |rng|16|1
+expect |-resisted|p2a: Arcanine|1
+expect |split|p2
+expect |-damage|p2a: Arcanine|57/175
+expect |-damage|p2a: Arcanine|32/100
+expect |rng|100|0
+expect |-boost|p1b: Nibbles|spe|1
+expect |move|p2a: Arcanine|Leaf Storm|p2b: Runerigus|[miss]
+expect |-miss|p2a: Arcanine|p2b: Runerigus
+expect |move|p2b: Runerigus|Fly|p2a: Arcanine|[from] lockedmove
+expect |rng|100|24
+expect |rng|24|15
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Arcanine|9/175
+expect |-damage|p2a: Arcanine|5/100
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Flame Charge|p2a: Arcanine
+expect |rng|100|19
+expect |rng|24|13
+expect |rng|16|13
+expect |-resisted|p2a: Arcanine|1
+expect |split|p2
+expect |-damage|p2a: Arcanine|0 fnt
+expect |-damage|p2a: Arcanine|0 fnt
+expect |rng|100|86
+expect |-boost|p1b: Nibbles|spe|1
+expect |faint|p2a: Arcanine
+expect |move|p2b: Runerigus|Fly||[still]
+expect |-prepare|p2b: Runerigus|Fly
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p1b: Nibbles|Thief|p2b: Runerigus|[miss]
+expect |-miss|p1b: Nibbles|p2b: Runerigus
+expect |move|p2b: Runerigus|Fly|p1b: Nibbles|[from] lockedmove
+expect |rng|100|8
+expect |rng|24|7
+expect |rng|16|14
+expect |-resisted|p1b: Nibbles|1
+expect |split|p1
+expect |-damage|p1b: Nibbles|0 fnt
+expect |-damage|p1b: Nibbles|0 fnt
+expect |-activate|p2b: Runerigus|Skill Swap|Wandering Spirit|Levitate|[of] p1b: Nibbles
+expect |faint|p1b: Nibbles
+expect |
+expect |win|p2
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"160/160","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: X","details":"Barbaracle, L50, M","condition":"157/157","active":true,"stats":{"atk":127,"def":160,"spa":88,"spd":130,"spe":82},"moves":["focusenergy","avalanche"],"baseAbility":"pickpocket","item":"chopleberry","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false},{"ident":"p1: Scolipede","details":"Scolipede, L50, F","condition":"139/139","active":false,"stats":{"atk":129,"def":99,"spa":90,"spd":121,"spe":137},"moves":["superpower","counter","spiritshackle","darkestlariat"],"baseAbility":"swarm","item":"kingsrock","pokeball":"pokeball","ability":"swarm","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"155/155","active":false,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"174/174","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"188/188","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"175/175","active":true,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false},{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"201/201","active":false,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"rindoberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Mr. Bubbles","details":"Scrafty, L50, M","condition":"140/140","active":false,"stats":{"atk":140,"def":121,"spa":87,"spd":163,"spe":78},"moves":["ceaselessedge","drillrun","burnup"],"baseAbility":"intimidate","item":"scraftinite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Qwilfish","details":"Qwilfish, L50, M","condition":"161/161","active":false,"stats":{"atk":125,"def":111,"spa":104,"spd":76,"spe":95},"moves":["crushclaw","brutalswing"],"baseAbility":"intimidate","item":"icyrock","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel, L50, F, shiny","condition":"167/167","active":false,"stats":{"atk":157,"def":87,"spa":121,"spd":106,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"gluttony","item":"victreebelite","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Salt Cure","id":"saltcure","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"155/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"174/174","active":true,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false},{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"160/160","active":false,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"188/188","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Triple Arrows","id":"triplearrows","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Acrobatics","id":"acrobatics","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Lumina Crash","id":"luminacrash","pp":12,"maxpp":12,"target":"normal","disabled":false}],"canMegaEvo":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"201/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"rindoberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel, L50, F, shiny","condition":"167/167","active":true,"stats":{"atk":157,"def":87,"spa":121,"spd":106,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"gluttony","item":"victreebelite","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":false,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"175/175","active":false,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"146/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"160/160","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"174/174","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"188/188","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Triple Arrows","id":"triplearrows","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Acrobatics","id":"acrobatics","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Lumina Crash","id":"luminacrash","pp":12,"maxpp":12,"target":"normal","disabled":false}],"canMegaEvo":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"183/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"rindoberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel, L50, F, shiny","condition":"106/167","active":true,"stats":{"atk":157,"def":87,"spa":121,"spd":106,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"gluttony","item":"victreebelite","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":false,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"175/175","active":false,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Salt Cure","id":"saltcure","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dragon Cheer","id":"dragoncheer","pp":16,"maxpp":16,"target":"adjacentAlly","disabled":false},{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"89/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"164/188","active":true,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"174/174","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false},{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"160/160","active":false,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Triple Arrows","id":"triplearrows","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Acrobatics","id":"acrobatics","pp":15,"maxpp":16,"target":"any","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Lumina Crash","id":"luminacrash","pp":12,"maxpp":12,"target":"normal","disabled":false}],"canMegaEvo":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"183/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"rindoberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel, L50, F, shiny","condition":"96/167","active":true,"stats":{"atk":157,"def":87,"spa":121,"spd":106,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"gluttony","item":"victreebelite","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":false,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"175/175","active":false,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Salt Cure","id":"saltcure","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Salt Cure","id":"saltcure","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Dragon Cheer","id":"dragoncheer","pp":16,"maxpp":16,"target":"adjacentAlly","disabled":false},{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"164/174","active":true,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"85/188","active":true,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"89/155","active":false,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"160/160","active":false,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Triple Arrows","id":"triplearrows","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Acrobatics","id":"acrobatics","pp":15,"maxpp":16,"target":"any","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Lumina Crash","id":"luminacrash","pp":11,"maxpp":12,"target":"normal","disabled":false}],"trapped":true,"canMegaEvo":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"183/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"rindoberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel, L50, F, shiny","condition":"4/167","active":true,"stats":{"atk":157,"def":87,"spa":121,"spd":106,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"gluttony","item":"victreebelite","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":false,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"175/175","active":false,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"150/174","active":true,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"74/188","active":true,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"89/155","active":false,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"160/160","active":false,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"87/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"rindoberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":false,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"175/175","active":false,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Salt Cure","id":"saltcure","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Salt Cure","id":"saltcure","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Dragon Cheer","id":"dragoncheer","pp":16,"maxpp":16,"target":"adjacentAlly","disabled":false},{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"150/174","active":true,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"74/188","active":true,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"89/155","active":false,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"160/160","active":false,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Triple Arrows","id":"triplearrows","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Psychic","id":"psychic","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Fly","id":"fly","pp":16,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"87/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"rindoberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"175/175","active":false,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":true,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"55/188","active":true,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"89/155","active":false,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"160/160","active":false,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"87/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"rindoberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"175/175","active":false,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Salt Cure","id":"saltcure","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Dragon Cheer","id":"dragoncheer","pp":15,"maxpp":16,"target":"adjacentAlly","disabled":false},{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"160/160","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"55/188","active":true,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"89/155","active":false,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Triple Arrows","id":"triplearrows","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Psychic","id":"psychic","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fly","id":"fly","pp":16,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"87/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"rindoberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"175/175","active":false,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"160/160","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":true,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"89/155","active":false,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"87/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"rindoberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"127/175","active":true,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":false,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"160/160","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"89/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Triple Arrows","id":"triplearrows","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":18,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Leaf Storm","id":"leafstorm","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"87/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"rindoberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"127/175","active":true,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":false,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":10,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":19,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"139/160","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"28/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Triple Arrows","id":"triplearrows","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":18,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Leaf Storm","id":"leafstorm","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"55/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"rindoberry","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"127/175","active":true,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":false,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":9,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":18,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"139/160","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"28/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Triple Arrows","id":"triplearrows","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":18,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Leaf Storm","id":"leafstorm","pp":6,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"7/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"113/175","active":true,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"146/146","active":false,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":8,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":18,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"101/160","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"28/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Triple Arrows","id":"triplearrows","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":18,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Psychic","id":"psychic","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fly","id":"fly","pp":16,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"7/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"106/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"113/175","active":false,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":8,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":16,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":18,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"0 fnt","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"28/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Triple Arrows","id":"triplearrows","pp":7,"maxpp":12,"target":"normal","disabled":false},{"move":"Fire Spin","id":"firespin","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Scary Face","id":"scaryface","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Poison Jab","id":"poisonjab","pp":18,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Fly","id":"fly"}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"7/201","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"106/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"113/175","active":false,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"0 fnt","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"28/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"0 fnt","active":true,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"106/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"113/175","active":false,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":8,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":16,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"0 fnt","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"28/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Leaf Storm","id":"leafstorm","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Psychic","id":"psychic","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fly","id":"fly","pp":15,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"113/175","active":true,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"106/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"0 fnt","active":false,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":8,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":15,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"0 fnt","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"28/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Leaf Storm","id":"leafstorm","pp":5,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Fly","id":"fly"}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"95/175","active":true,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"106/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"0 fnt","active":false,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":8,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":14,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"0 fnt","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"2/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Leaf Storm","id":"leafstorm","pp":4,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Psychic","id":"psychic","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fly","id":"fly","pp":14,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"76/175","active":true,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"106/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"0 fnt","active":false,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":8,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":14,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":16,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"0 fnt","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"2/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Leaf Storm","id":"leafstorm","pp":3,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Fly","id":"fly"}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"76/175","active":true,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"72/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"0 fnt","active":false,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":8,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":13,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":16,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"0 fnt","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"2/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Leaf Storm","id":"leafstorm","pp":2,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Psychic","id":"psychic","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Fly","id":"fly","pp":13,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"9/175","active":true,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"72/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"0 fnt","active":false,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Alluring Voice","id":"alluringvoice","pp":8,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Flame Charge","id":"flamecharge","pp":12,"maxpp":20,"target":"normal","disabled":false},{"move":"Thief","id":"thief","pp":16,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Scizor","details":"Scizor, L50, F","condition":"0 fnt","active":true,"stats":{"atk":150,"def":127,"spa":87,"spd":105,"spe":110},"moves":["alluringvoice"],"baseAbility":"lightmetal","item":"colburberry","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Rotom-Heat, L50","condition":"2/155","active":true,"stats":{"atk":104,"def":141,"spa":126,"spd":128,"spe":106},"moves":["flamecharge","thief"],"baseAbility":"levitate","item":"lumberry","pokeball":"pokeball","ability":"wanderingspirit","commanding":false,"reviving":false},{"ident":"p1: Emboar","details":"Emboar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":121,"spa":109,"spd":114,"spe":87},"moves":["saltcure","dragoncheer","burnup"],"baseAbility":"blaze","item":"zoomlens","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p1: ThisNameIsFarTooLong","details":"Abomasnow, L50, M","condition":"0 fnt","active":false,"stats":{"atk":120,"def":110,"spa":124,"spd":110,"spe":96},"moves":["saltcure"],"baseAbility":"soundproof","item":"","pokeball":"pokeball","ability":"soundproof","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Leaf Storm","id":"leafstorm","pp":2,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Fly","id":"fly"}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Arcanine","details":"Arcanine, L50, M, shiny","condition":"0 fnt","active":true,"stats":{"atk":159,"def":90,"spa":126,"spd":102,"spe":143},"moves":["leafstorm"],"baseAbility":"justified","item":"muscleband","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false},{"ident":"p2: Runerigus","details":"Runerigus, L50, M","condition":"72/146","active":true,"stats":{"atk":119,"def":166,"spa":96,"spd":127,"spe":67},"moves":["psychic","fly"],"baseAbility":"wanderingspirit","item":"cheriberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Victreebel","details":"Victreebel-Mega, L50, F, shiny","condition":"0 fnt","active":false,"stats":{"atk":177,"def":107,"spa":156,"spd":131,"spe":92},"moves":["acrobatics","sheercold","luminacrash"],"baseAbility":"innardsout","item":"victreebelite","pokeball":"pokeball","ability":"innardsout","commanding":false,"reviving":false},{"ident":"p2: Hippowdon","details":"Hippowdon, L50, M","condition":"0 fnt","active":false,"stats":{"atk":133,"def":182,"spa":84,"spd":96,"spe":76},"moves":["triplearrows","firespin","scaryface","poisonjab"],"baseAbility":"sandstream","item":"","pokeball":"pokeball","ability":"sandstream","commanding":false,"reviving":false}]}}

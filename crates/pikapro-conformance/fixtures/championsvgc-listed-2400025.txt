@@ -1,0 +1,408 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed bbe6 f7a1 9abb c83d
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Kleavor (M) @ Life Orb
+Ability: Sharpness
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Swords Dance
+- X-Scissor
+- Close Combat
+- Stone Axe
+
+Sneasler (F) @ White Herb
+Ability: Unburden
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Swords Dance
+- Close Combat
+- Acrobatics
+- Dire Claw
+
+Sparky (Delphox-Mega) (F) @ Delphoxite
+Ability: Blaze
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Psyshock
+- Fire Blast
+- Grass Knot
+- Nasty Plot
+
+Dragalge (F) @ Leftovers
+Ability: Adaptability
+Level: 50
+Shiny: Yes
+EVs: 32 HP / 2 Def / 32 SpA
+Mild Nature
+- Toxic Spikes
+- Flip Turn
+- Sludge Bomb
+- Draco Meteor
+
+Hydreigon (F) @ Choice Scarf
+Ability: Levitate
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Dark Pulse
+- Fire Blast
+- Flash Cannon
+- Draco Meteor
+
+Raichu (M) @ Raichunite Y
+Ability: Lightning Rod
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Surf
+- Zap Cannon
+- Focus Blast
+- Volt Switch
+end
+team p2
+Vileplume (F) @ Leftovers
+Ability: Effect Spore
+Level: 50
+Shiny: Yes
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Strength Sap
+- Sludge Bomb
+- Sleep Powder
+- Giga Drain
+
+Nibbles (Gyarados-Mega) (F) @ Gyaradosite
+Ability: Intimidate
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Crunch
+- Earthquake
+- Waterfall
+- Dragon Dance
+
+Sir Hops-a-Lot (Pyroar) (F) @ Life Orb
+Ability: Unnerve
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Solar Beam
+- Fire Blast
+- Sunny Day
+- Hyper Voice
+
+Incineroar (M) @ Choice Scarf
+Ability: Intimidate
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Parting Shot
+- Darkest Lariat
+- Earthquake
+- Flare Blitz
+
+Zoë (Clefable) (F) @ Clefablite
+Ability: Magic Guard
+Level: 50
+Shiny: Yes
+EVs: 32 HP / 17 Def / 17 SpD
+Bold Nature
+- Thunder Wave
+- Moonblast
+- Fire Blast
+- Moonlight
+
+Mr. Bubbles (Emolga) (M)
+Ability: Motor Drive
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Lonely Nature
+- Roost
+- Discharge
+- U-turn
+- Acrobatics
+end
+choice p1 team 3542
+choice p2 team 6415
+choice p1 move 1 1 mega, move 1 -1
+choice p2 move u-turn +1 ,  switch Zoë
+choice p2 switch incineroar ,  pass
+choice p1 switch sneasler ,  skip
+choice p2 default
+choice p1 move 3 -2, move 1 2
+choice p2 switch 4, pass
+choice p1 move 3 -2, move 1 -1
+choice p2 move 1, move 4
+choice p1 move 4 1, move 1 1
+choice p2 move 4 -2, move 2 1 mega
+choice p1 switch 3, pass
+choice p2 switch 4,skip
+choice p1 move Sludge Bomb -2,move 1 -1
+choice p2 move 2 1, move 4
+choice p1 move 3 2, pass
+choice p2 move 2 1,move Fire Blast -1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Kleavor, L50, M|
+expect |poke|p1|Sneasler, L50, F|
+expect |poke|p1|Delphox, L50, F|
+expect |poke|p1|Dragalge, L50, F, shiny|
+expect |poke|p1|Hydreigon, L50, F|
+expect |poke|p1|Raichu, L50, M|
+expect |poke|p2|Vileplume, L50, F, shiny|
+expect |poke|p2|Gyarados, L50, F|
+expect |poke|p2|Pyroar, L50, F|
+expect |poke|p2|Incineroar, L50, M|
+expect |poke|p2|Clefable, L50, F, shiny|
+expect |poke|p2|Emolga, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Sparky|Delphox, L50, F|152/152
+expect |switch|p1a: Sparky|Delphox, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Hydreigon|Hydreigon, L50, F|169/169
+expect |switch|p1b: Hydreigon|Hydreigon, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Mr. Bubbles|Emolga, L50, M|162/162
+expect |switch|p2a: Mr. Bubbles|Emolga, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Incineroar|Incineroar, L50, M|172/172
+expect |switch|p2b: Incineroar|Incineroar, L50, M|100/100
+expect |-ability|p2b: Incineroar|Intimidate|boost
+expect |-unboost|p1a: Sparky|atk|1
+expect |-unboost|p1b: Hydreigon|atk|1
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zoë|Clefable, L50, F, shiny|202/202
+expect |switch|p2b: Zoë|Clefable, L50, F, shiny|100/100
+expect |detailschange|p1a: Sparky|Delphox-Mega, L50, F
+expect |-mega|p1a: Sparky|Delphox|Delphoxite
+expect |move|p1b: Hydreigon|Dark Pulse|p1a: Sparky
+expect |rng|100|68
+expect |rng|24|19
+expect |rng|16|14
+expect |-supereffective|p1a: Sparky|1
+expect |split|p1
+expect |-damage|p1a: Sparky|42/152
+expect |-damage|p1a: Sparky|27/100
+expect |rng|100|59
+expect |move|p1a: Sparky|Psyshock|p2a: Mr. Bubbles
+expect |rng|100|87
+expect |rng|24|11
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|11/162
+expect |-damage|p2a: Mr. Bubbles|6/100
+expect |move|p2a: Mr. Bubbles|U-turn|p1a: Sparky
+expect |rng|100|75
+expect |rng|24|1
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Sparky|0 fnt
+expect |-damage|p1a: Sparky|0 fnt
+expect |faint|p1a: Sparky
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Incineroar|Incineroar, L50, M|172/172|[from] U-turn
+expect |switch|p2a: Incineroar|Incineroar, L50, M|100/100|[from] U-turn
+expect |-ability|p2a: Incineroar|Intimidate|boost
+expect |-unboost|p1b: Hydreigon|atk|1
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sneasler|Sneasler, L50, F|157/157
+expect |switch|p1a: Sneasler|Sneasler, L50, F|100/100
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1b: Hydreigon|Dark Pulse|p2b: Zoë
+expect |rng|100|5
+expect |rng|24|12
+expect |rng|16|3
+expect |-resisted|p2b: Zoë|1
+expect |split|p2
+expect |-damage|p2b: Zoë|166/202
+expect |-damage|p2b: Zoë|82/100
+expect |rng|100|67
+expect |move|p2a: Incineroar|Parting Shot|p1a: Sneasler
+expect |rng|100|17
+expect |-unboost|p1a: Sneasler|atk|1
+expect |-unboost|p1a: Sneasler|spa|1
+expect |-enditem|p1a: Sneasler|White Herb
+expect |-clearnegativeboost|p1a: Sneasler|[silent]
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Mr. Bubbles|Emolga, L50, M|11/162|[from] Parting Shot
+expect |switch|p2a: Mr. Bubbles|Emolga, L50, M|6/100|[from] Parting Shot
+expect |move|p1a: Sneasler|Acrobatics|p1b: Hydreigon
+expect |rng|100|24
+expect |rng|24|14
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Hydreigon|92/169
+expect |-damage|p1b: Hydreigon|54/100
+expect |move|p2b: Zoë|Thunder Wave|p1a: Sneasler
+expect |rng|100|75
+expect |-status|p1a: Sneasler|par
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1b: Hydreigon|Dark Pulse|p1a: Sneasler
+expect |rng|100|30
+expect |rng|24|23
+expect |rng|16|11
+expect |-resisted|p1a: Sneasler|1
+expect |split|p1
+expect |-damage|p1a: Sneasler|115/157 par
+expect |-damage|p1a: Sneasler|73/100 par
+expect |rng|100|13
+expect |cant|p1a: Sneasler|flinch
+expect |move|p2a: Mr. Bubbles|Roost|p2a: Mr. Bubbles
+expect |split|p2
+expect |-heal|p2a: Mr. Bubbles|92/162
+expect |-heal|p2a: Mr. Bubbles|56/100
+expect |-singleturn|p2a: Mr. Bubbles|move: Roost
+expect |move|p2b: Zoë|Moonlight|p2b: Zoë
+expect |split|p2
+expect |-heal|p2b: Zoë|202/202
+expect |-heal|p2b: Zoë|100/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |detailschange|p2b: Zoë|Clefable-Mega, L50, F, shiny
+expect |-mega|p2b: Zoë|Clefable|Clefablite
+expect |move|p1b: Hydreigon|Dark Pulse|p2a: Mr. Bubbles
+expect |rng|100|36
+expect |rng|24|2
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|0 fnt
+expect |-damage|p2a: Mr. Bubbles|0 fnt
+expect |rng|100|28
+expect |faint|p2a: Mr. Bubbles
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|8|6
+expect |move|p1a: Sneasler|Dire Claw|p2b: Zoë
+expect |rng|100|31
+expect |rng|24|18
+expect |rng|16|14
+expect |-supereffective|p2b: Zoë|1
+expect |split|p2
+expect |-damage|p2b: Zoë|74/202
+expect |-damage|p2b: Zoë|36/100
+expect |rng|100|85
+expect |move|p2b: Zoë|Moonblast|p1a: Sneasler
+expect |rng|100|67
+expect |rng|24|0
+expect |rng|16|15
+expect |-crit|p1a: Sneasler
+expect |split|p1
+expect |-damage|p1a: Sneasler|0 fnt
+expect |-damage|p1a: Sneasler|0 fnt
+expect |rng|100|57
+expect |faint|p1a: Sneasler
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Dragalge|Dragalge, L50, F, shiny|172/172
+expect |switch|p1a: Dragalge|Dragalge, L50, F, shiny|100/100
+expect |split|p2
+expect |switch|p2a: Incineroar|Incineroar, L50, M|172/172
+expect |switch|p2a: Incineroar|Incineroar, L50, M|100/100
+expect |-ability|p2a: Incineroar|Intimidate|boost
+expect |-unboost|p1a: Dragalge|atk|1
+expect |-unboost|p1b: Hydreigon|atk|1
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1b: Hydreigon|Dark Pulse|p1a: Dragalge
+expect |rng|100|76
+expect |rng|24|11
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Dragalge|112/172
+expect |-damage|p1a: Dragalge|65/100
+expect |rng|100|92
+expect |move|p2a: Incineroar|Darkest Lariat|p1a: Dragalge
+expect |rng|100|15
+expect |rng|24|14
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Dragalge|18/172
+expect |-damage|p1a: Dragalge|10/100
+expect |move|p2b: Zoë|Moonlight|p2b: Zoë
+expect |split|p2
+expect |-heal|p2b: Zoë|175/202
+expect |-heal|p2b: Zoë|86/100
+expect |move|p1a: Dragalge|Sludge Bomb|p1b: Hydreigon
+expect |rng|100|22
+expect |rng|24|18
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1b: Hydreigon|0 fnt
+expect |-damage|p1b: Hydreigon|0 fnt
+expect |rng|100|94
+expect |faint|p1b: Hydreigon
+expect |
+expect |split|p1
+expect |-heal|p1a: Dragalge|28/172|[from] item: Leftovers
+expect |-heal|p1a: Dragalge|16/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Incineroar|Darkest Lariat|p1a: Dragalge
+expect |rng|100|59
+expect |rng|24|7
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Dragalge|0 fnt
+expect |-damage|p1a: Dragalge|0 fnt
+expect |faint|p1a: Dragalge
+expect |
+expect |win|p2

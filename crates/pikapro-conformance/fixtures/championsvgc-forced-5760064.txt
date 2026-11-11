@@ -1,0 +1,779 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed e95e 9c2a 5cf0 03d3
+genders drawn
+team p1
+Clefable (F) @ Clefablite
+Ability: Unaware
+Level: 50
+Tera Type: Ghost
+EVs: 19 HP / 16 Atk / 3 Def / 22 SpD / 4 Spe
+Mild Nature
+- Volt Switch
+- Drill Run
+- Charm
+- Power Trip
+
+Sir Hops-a-Lot (Golisopod)
+Ability: Emergency Exit
+Level: 50
+Tera Type: Dragon
+EVs: 19 Def / 26 SpA / 21 Spe
+Lonely Nature
+- Thunderbolt
+- Sand Tomb
+- Swords Dance
+
+Kleavor
+Ability: Sharpness
+Level: 50
+Tera Type: Normal
+EVs: 1 HP / 5 Atk / 7 Def / 23 SpA / 11 SpD / 16 Spe
+Modest Nature
+- Taunt
+
+Gengar (F) @ Gengarite
+Ability: Cursed Body
+Level: 50
+Tera Type: Ground
+EVs: 24 HP / 6 Atk / 2 Def / 32 Spe
+Brave Nature
+- Super Fang
+- Sludge Wave
+- Frost Breath
+- Make It Rain
+
+Houndoom @ Houndoominite
+Ability: Unnerve
+Level: 50
+Tera Type: Bug
+EVs: 24 HP / 12 Atk / 9 SpD / 18 Spe
+Lax Nature
+- Endure
+- Aqua Step
+
+Rotom @ Light Clay
+Ability: Levitate
+Level: 50
+Tera Type: Dragon
+EVs: 18 Def / 25 SpA / 13 SpD / 10 Spe
+Rash Nature
+- Minimize
+end
+team p2
+Slurpuff (F)
+Ability: Unburden
+Level: 50
+Tera Type: Water
+EVs: 3 HP / 21 Atk / 5 Def / 8 SpA / 19 SpD / 10 Spe
+Gentle Nature
+- Rock Blast
+
+Toucannon @ Zoom Lens
+Ability: Sheer Force
+Level: 50
+Tera Type: Rock
+EVs: 1 HP / 7 Atk / 17 Def / 3 SpA / 15 SpD / 22 Spe
+Modest Nature
+- Thunderbolt
+
+Sir Hops-a-Lot (Vivillon) @ Shell Bell
+Ability: Friend Guard
+Level: 50
+Tera Type: Fighting
+EVs: 15 HP / 7 Atk / 3 Def / 32 SpA / 5 SpD / 2 Spe
+Lonely Nature
+- Supercell Slam
+
+X (Sylveon) @ Babiri Berry
+Ability: Pixilate
+Level: 50
+Tera Type: Fairy
+EVs: 23 HP / 32 Atk / 6 SpA / 5 SpD
+Timid Nature
+- Volt Switch
+- Meteor Mash
+- Corrosive Gas
+- Dig
+
+Golisopod
+Ability: Emergency Exit
+Level: 50
+Tera Type: Fairy
+EVs: 1 HP / 10 Atk / 2 Def / 18 SpA / 26 SpD / 4 Spe
+Docile Nature
+- Breaking Swipe
+
+Glalie (M) @ Glalitite
+Ability: Moody
+Level: 50
+Tera Type: Ground
+EVs: 7 HP / 2 Atk / 32 Def / 3 SpA / 18 Spe
+Naughty Nature
+- Healing Wish
+end
+choice p1 team 3142
+choice p2 team 3512
+choice p1 default
+choice p2 switch Toucannon, move breakingswipe
+choice p1 pass, switch 4
+choice p2 switch 3, move 1
+choice p1 move 1 2, move 2 -1
+choice p2 switch 4,switch 3
+choice p1 move 1 1,move 3
+choice p2 move 1 2, move 1 2
+choice p1 move 1 1, move 1 -1
+choice p1 skip,switch gengar
+choice p2 move 1 1, move 1 2
+choice p1 move taunt -2,switch 3
+choice p1 pass, switch Clefable
+choice p2 switch 3, switch 4
+choice p1 move 1 -2, move 1 1
+choice p2 switch 4, pass
+choice p1 pass, switch 3
+choice p2 move Thunderbolt -2, move Rock Blast 2
+choice p1 default
+choice p2 move 1 2, move 1 -1
+choice p1 move 1 -2, move 1 1
+choice p2 switch 3
+choice p1 move 1 2, move 4
+choice p2 switch 4, move 1 2
+choice p1 skip ,  switch clefable
+choice p2 move 1, switch 4
+choice p1 move taunt 2,move 2 1
+choice p2 switch 4, move 1 -1
+choice p1 move 1 1, move 4 -1 mega
+choice p2 move 1 2, switch 4
+choice p1 pass, move 4 1
+choice p2 switch 4, pass
+choice p1 default
+choice p2 move 1 -2, move 1
+choice p1 default
+choice p2 move 1 2, pass
+choice p1 pass, move 2 1
+choice p2 move 1 2, pass
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Clefable, L50, F|
+expect |poke|p1|Golisopod, L50, F|
+expect |poke|p1|Kleavor, L50, F|
+expect |poke|p1|Gengar, L50, F|
+expect |poke|p1|Houndoom, L50, F|
+expect |poke|p1|Rotom, L50|
+expect |poke|p2|Slurpuff, L50, F|
+expect |poke|p2|Toucannon, L50, F|
+expect |poke|p2|Vivillon, L50, M|
+expect |poke|p2|Sylveon, L50, F|
+expect |poke|p2|Golisopod, L50, F|
+expect |poke|p2|Glalie, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Kleavor|Kleavor, L50, F|146/146
+expect |switch|p1a: Kleavor|Kleavor, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Clefable|Clefable, L50, F|189/189
+expect |switch|p1b: Clefable|Clefable, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Vivillon, L50, M|170/170
+expect |switch|p2a: Sir Hops-a-Lot|Vivillon, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Golisopod|Golisopod, L50, F|151/151
+expect |switch|p2b: Golisopod|Golisopod, L50, F|100/100
+expect |turn|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Toucannon|Toucannon, L50, F|156/156
+expect |switch|p2a: Toucannon|Toucannon, L50, F|100/100
+expect |rng|2|0
+expect |move|p1a: Kleavor|Taunt|p2b: Golisopod
+expect |rng|100|9
+expect |-start|p2b: Golisopod|move: Taunt
+expect |rng|2|1
+expect |move|p1b: Clefable|Volt Switch|p2b: Golisopod
+expect |rng|100|64
+expect |rng|24|22
+expect |rng|16|10
+expect |-supereffective|p2b: Golisopod|1
+expect |split|p2
+expect |-damage|p2b: Golisopod|97/151
+expect |-damage|p2b: Golisopod|64/100
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sir Hops-a-Lot|Golisopod, L50, F|150/150|[from] Volt Switch
+expect |switch|p1b: Sir Hops-a-Lot|Golisopod, L50, F|100/100|[from] Volt Switch
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Golisopod|Breaking Swipe|p1b: Sir Hops-a-Lot|[spread] p1a,p1b
+expect |rng|100|97
+expect |rng|100|88
+expect |rng|24|20
+expect |rng|16|8
+expect |rng|24|19
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Kleavor|123/146
+expect |-damage|p1a: Kleavor|84/100
+expect |split|p1
+expect |-damage|p1b: Sir Hops-a-Lot|133/150
+expect |-damage|p1b: Sir Hops-a-Lot|88/100
+expect |rng|100|50
+expect |-unboost|p1a: Kleavor|atk|1
+expect |rng|100|71
+expect |-unboost|p1b: Sir Hops-a-Lot|atk|1
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Slurpuff|Slurpuff, L50, F|160/160
+expect |switch|p2a: Slurpuff|Slurpuff, L50, F|100/100
+expect |rng|2|0
+expect |move|p1a: Kleavor|Taunt||[still]
+expect |rng|100|21
+expect |-fail|p1a: Kleavor
+expect |rng|2|1
+expect |move|p1b: Sir Hops-a-Lot|Sand Tomb|p1a: Kleavor
+expect |rng|100|62
+expect |rng|24|13
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Kleavor|111/146
+expect |-damage|p1a: Kleavor|76/100
+expect |rng|2|0
+expect |-activate|p1a: Kleavor|move: Sand Tomb|[of] p1b: Sir Hops-a-Lot
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Golisopod|Breaking Swipe|p1a: Kleavor|[spread] p1a,p1b
+expect |rng|100|77
+expect |rng|100|34
+expect |rng|24|6
+expect |rng|16|14
+expect |rng|24|7
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Kleavor|89/146
+expect |-damage|p1a: Kleavor|60/100
+expect |split|p1
+expect |-damage|p1b: Sir Hops-a-Lot|114/150
+expect |-damage|p1b: Sir Hops-a-Lot|76/100
+expect |rng|100|71
+expect |-unboost|p1a: Kleavor|atk|1
+expect |rng|100|36
+expect |-unboost|p1b: Sir Hops-a-Lot|atk|1
+expect |
+expect |split|p1
+expect |-damage|p1a: Kleavor|71/146|[from] move: Sand Tomb|[partiallytrapped]
+expect |-damage|p1a: Kleavor|48/100|[from] move: Sand Tomb|[partiallytrapped]
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Vivillon, L50, M|170/170
+expect |switch|p2a: Sir Hops-a-Lot|Vivillon, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Toucannon|Toucannon, L50, F|156/156
+expect |switch|p2b: Toucannon|Toucannon, L50, F|100/100
+expect |move|p1a: Kleavor|Taunt|p2a: Sir Hops-a-Lot
+expect |rng|100|81
+expect |-start|p2a: Sir Hops-a-Lot|move: Taunt
+expect |move|p1b: Sir Hops-a-Lot|Swords Dance|p1b: Sir Hops-a-Lot
+expect |-boost|p1b: Sir Hops-a-Lot|atk|2
+expect |
+expect |split|p1
+expect |-damage|p1a: Kleavor|53/146|[from] move: Sand Tomb|[partiallytrapped]
+expect |-damage|p1a: Kleavor|36/100|[from] move: Sand Tomb|[partiallytrapped]
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1a: Kleavor|Taunt||[still]
+expect |rng|100|8
+expect |-fail|p1a: Kleavor
+expect |move|p2a: Sir Hops-a-Lot|Supercell Slam|p1b: Sir Hops-a-Lot
+expect |rng|100|13
+expect |rng|24|20
+expect |rng|16|13
+expect |-supereffective|p1b: Sir Hops-a-Lot|1
+expect |split|p1
+expect |-damage|p1b: Sir Hops-a-Lot|72/150
+expect |-damage|p1b: Sir Hops-a-Lot|48/100
+expect |-activate|p1b: Sir Hops-a-Lot|ability: Emergency Exit
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Gengar|Gengar, L50, F|159/159
+expect |switch|p1b: Gengar|Gengar, L50, F|100/100
+expect |move|p2b: Toucannon|Thunderbolt|p1b: Gengar
+expect |rng|100|71
+expect |rng|24|7
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1b: Gengar|108/159
+expect |-damage|p1b: Gengar|67/100
+expect |rng|10|5
+expect |
+expect |-end|p1a: Kleavor|Sand Tomb|[partiallytrapped]|[silent]
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Sir Hops-a-Lot|Golisopod, L50, F|72/150
+expect |switch|p1b: Sir Hops-a-Lot|Golisopod, L50, F|48/100
+expect |move|p1a: Kleavor|Taunt|p1b: Sir Hops-a-Lot
+expect |rng|100|50
+expect |-start|p1b: Sir Hops-a-Lot|move: Taunt
+expect |move|p2a: Sir Hops-a-Lot|Supercell Slam|p1a: Kleavor
+expect |rng|100|79
+expect |rng|24|16
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Kleavor|24/146
+expect |-damage|p1a: Kleavor|16/100
+expect |move|p2b: Toucannon|Thunderbolt|p1b: Sir Hops-a-Lot
+expect |rng|100|16
+expect |rng|24|10
+expect |rng|16|1
+expect |-supereffective|p1b: Sir Hops-a-Lot|1
+expect |split|p1
+expect |-damage|p1b: Sir Hops-a-Lot|0 fnt
+expect |-damage|p1b: Sir Hops-a-Lot|0 fnt
+expect |faint|p1b: Sir Hops-a-Lot
+expect |
+expect |-end|p2a: Sir Hops-a-Lot|move: Taunt
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Clefable|Clefable, L50, F|189/189
+expect |switch|p1b: Clefable|Clefable, L50, F|100/100
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Golisopod|Golisopod, L50, F|97/151
+expect |switch|p2a: Golisopod|Golisopod, L50, F|64/100
+expect |split|p2
+expect |switch|p2b: Slurpuff|Slurpuff, L50, F|160/160
+expect |switch|p2b: Slurpuff|Slurpuff, L50, F|100/100
+expect |move|p1a: Kleavor|Taunt|p1b: Clefable
+expect |rng|100|16
+expect |-start|p1b: Clefable|move: Taunt
+expect |move|p1b: Clefable|Volt Switch|p2a: Golisopod
+expect |rng|100|75
+expect |rng|24|20
+expect |rng|16|3
+expect |-supereffective|p2a: Golisopod|1
+expect |split|p2
+expect |-damage|p2a: Golisopod|39/151
+expect |-damage|p2a: Golisopod|25/100
+expect |-activate|p2a: Golisopod|ability: Emergency Exit
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Gengar|Gengar, L50, F|108/159|[from] Volt Switch
+expect |switch|p1b: Gengar|Gengar, L50, F|67/100|[from] Volt Switch
+expect |split|p2
+expect |switch|p2a: Toucannon|Toucannon, L50, F|156/156
+expect |switch|p2a: Toucannon|Toucannon, L50, F|100/100
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |upkeep
+expect |rng|2|0
+expect |turn|7
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: Gengar|Super Fang|p2a: Toucannon|[miss]
+expect |rng|100|94
+expect |-miss|p1b: Gengar|p2a: Toucannon
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Kleavor|Taunt|p2a: Toucannon
+expect |rng|100|73
+expect |-start|p2a: Toucannon|move: Taunt
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Toucannon|Thunderbolt|p2b: Slurpuff
+expect |rng|100|69
+expect |rng|24|19
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Slurpuff|118/160
+expect |-damage|p2b: Slurpuff|73/100
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Slurpuff|Rock Blast|p1b: Gengar
+expect |rng|100|83
+expect |rng|20|8
+expect |rng|24|20
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Gengar|91/159
+expect |-damage|p1b: Gengar|57/100
+expect |rng|10|6
+expect |rng|2|0
+expect |rng|24|13
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Gengar|74/159
+expect |-damage|p1b: Gengar|46/100
+expect |rng|10|4
+expect |rng|2|1
+expect |rng|24|15
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1b: Gengar|57/159
+expect |-damage|p1b: Gengar|35/100
+expect |rng|10|9
+expect |rng|2|1
+expect |-hitcount|p1b: Gengar|3
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |upkeep
+expect |rng|2|1
+expect |turn|8
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Gengar|Super Fang|p2a: Toucannon
+expect |rng|100|17
+expect |split|p2
+expect |-damage|p2a: Toucannon|78/156
+expect |-damage|p2a: Toucannon|50/100y
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Kleavor|Taunt|p1b: Gengar
+expect |rng|100|54
+expect |-start|p1b: Gengar|move: Taunt
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Slurpuff|Rock Blast|p2a: Toucannon
+expect |rng|100|12
+expect |rng|20|15
+expect |rng|24|23
+expect |rng|16|15
+expect |-supereffective|p2a: Toucannon|1
+expect |split|p2
+expect |-damage|p2a: Toucannon|56/156
+expect |-damage|p2a: Toucannon|35/100
+expect |rng|2|1
+expect |rng|24|13
+expect |rng|16|12
+expect |-supereffective|p2a: Toucannon|1
+expect |split|p2
+expect |-damage|p2a: Toucannon|34/156
+expect |-damage|p2a: Toucannon|21/100
+expect |rng|2|0
+expect |rng|24|17
+expect |rng|16|3
+expect |-supereffective|p2a: Toucannon|1
+expect |split|p2
+expect |-damage|p2a: Toucannon|10/156
+expect |-damage|p2a: Toucannon|6/100
+expect |rng|2|1
+expect |rng|24|0
+expect |rng|16|6
+expect |-supereffective|p2a: Toucannon|1
+expect |-crit|p2a: Toucannon
+expect |split|p2
+expect |-damage|p2a: Toucannon|0 fnt
+expect |-damage|p2a: Toucannon|0 fnt
+expect |rng|2|1
+expect |faint|p2a: Toucannon
+expect |-hitcount|p2: Toucannon|4
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Vivillon, L50, M|170/170
+expect |switch|p2a: Sir Hops-a-Lot|Vivillon, L50, M|100/100
+expect |turn|9
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Golisopod|Golisopod, L50, F|39/151
+expect |switch|p2a: Golisopod|Golisopod, L50, F|25/100
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Gengar|Make It Rain|p2b: Slurpuff|[spread] p2b
+expect |rng|100|96
+expect |-miss|p1b: Gengar|p2a: Golisopod
+expect |rng|100|58
+expect |rng|24|18
+expect |rng|16|14
+expect |-supereffective|p2b: Slurpuff|1
+expect |split|p2
+expect |-damage|p2b: Slurpuff|34/160
+expect |-damage|p2b: Slurpuff|21/100
+expect |rng|100|89
+expect |-unboost|p1b: Gengar|spa|2
+expect |move|p1a: Kleavor|Taunt|p2b: Slurpuff
+expect |rng|100|0
+expect |-start|p2b: Slurpuff|move: Taunt
+expect |move|p2b: Slurpuff|Rock Blast|p1b: Gengar
+expect |rng|100|22
+expect |rng|20|18
+expect |rng|24|15
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: Gengar|42/159
+expect |-damage|p1b: Gengar|26/100
+expect |rng|10|0
+expect |-start|p2b: Slurpuff|Disable|Rock Blast|[from] ability: Cursed Body|[of] p1b: Gengar
+expect |rng|24|11
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Gengar|25/159
+expect |-damage|p1b: Gengar|15/100
+expect |rng|24|13
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Gengar|8/159
+expect |-damage|p1b: Gengar|5/100
+expect |rng|24|12
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Gengar|0 fnt
+expect |-damage|p1b: Gengar|0 fnt
+expect |faint|p1b: Gengar
+expect |-hitcount|p1: Gengar|4
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Clefable|Clefable, L50, F|189/189
+expect |switch|p1b: Clefable|Clefable, L50, F|100/100
+expect |rng|2|0
+expect |turn|10
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Sir Hops-a-Lot|Vivillon, L50, M|170/170
+expect |switch|p2b: Sir Hops-a-Lot|Vivillon, L50, M|100/100
+expect |rng|2|0
+expect |move|p1a: Kleavor|Taunt|p2b: Sir Hops-a-Lot
+expect |rng|100|99
+expect |-start|p2b: Sir Hops-a-Lot|move: Taunt
+expect |rng|2|1
+expect |move|p1b: Clefable|Drill Run|p2a: Golisopod
+expect |rng|100|27
+expect |rng|8|6
+expect |rng|16|14
+expect |-resisted|p2a: Golisopod|1
+expect |split|p2
+expect |-damage|p2a: Golisopod|32/151
+expect |-damage|p2a: Golisopod|21/100
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Golisopod|Breaking Swipe|p1a: Kleavor|[spread] p1a
+expect |-immune|p1b: Clefable
+expect |rng|100|16
+expect |rng|24|8
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Kleavor|1/146
+expect |-damage|p1a: Kleavor|1/100
+expect |rng|100|36
+expect |-unboost|p1a: Kleavor|atk|1
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Slurpuff|Slurpuff, L50, F|34/160
+expect |switch|p2a: Slurpuff|Slurpuff, L50, F|21/100
+expect |detailschange|p1b: Clefable|Clefable-Mega, L50, F
+expect |-mega|p1b: Clefable|Clefable|Clefablite
+expect |move|p1a: Kleavor|Taunt|p2a: Slurpuff
+expect |rng|100|36
+expect |-start|p2a: Slurpuff|move: Taunt
+expect |move|p2b: Sir Hops-a-Lot|Supercell Slam|p2a: Slurpuff
+expect |rng|100|89
+expect |rng|24|13
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Slurpuff|6/160
+expect |-damage|p2a: Slurpuff|3/100
+expect |move|p1b: Clefable|Power Trip|p1a: Kleavor
+expect |rng|100|84
+expect |rng|24|15
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Kleavor|0 fnt
+expect |-damage|p1a: Kleavor|0 fnt
+expect |faint|p1a: Kleavor
+expect |
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Golisopod|Golisopod, L50, F|32/151
+expect |switch|p2b: Golisopod|Golisopod, L50, F|21/100
+expect |move|p2a: Slurpuff|Rock Blast|p1b: Clefable
+expect |rng|100|3
+expect |rng|20|0
+expect |rng|24|0
+expect |rng|16|15
+expect |-supereffective|p1b: Clefable|1
+expect |-crit|p1b: Clefable
+expect |split|p1
+expect |-damage|p1b: Clefable|155/189
+expect |-damage|p1b: Clefable|82/100
+expect |rng|24|10
+expect |rng|16|10
+expect |-supereffective|p1b: Clefable|1
+expect |split|p1
+expect |-damage|p1b: Clefable|131/189
+expect |-damage|p1b: Clefable|69/100
+expect |-hitcount|p1b: Clefable|2
+expect |move|p1b: Clefable|Power Trip|p2a: Slurpuff
+expect |rng|100|26
+expect |rng|24|6
+expect |rng|16|0
+expect |-resisted|p2a: Slurpuff|1
+expect |split|p2
+expect |-damage|p2a: Slurpuff|0 fnt
+expect |-damage|p2a: Slurpuff|0 fnt
+expect |faint|p2a: Slurpuff
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Vivillon, L50, M|170/170
+expect |switch|p2a: Sir Hops-a-Lot|Vivillon, L50, M|100/100
+expect |turn|13
+expect |rng|2|1
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p2a: Sir Hops-a-Lot|Supercell Slam|p2b: Golisopod
+expect |rng|100|21
+expect |rng|24|8
+expect |rng|16|14
+expect |-supereffective|p2b: Golisopod|1
+expect |split|p2
+expect |-damage|p2b: Golisopod|1/151
+expect |-damage|p2b: Golisopod|1/100
+expect |rng|1|0
+expect |move|p1b: Clefable|Volt Switch|p2b: Golisopod
+expect |rng|100|22
+expect |rng|24|19
+expect |rng|16|11
+expect |-supereffective|p2b: Golisopod|1
+expect |split|p2
+expect |-damage|p2b: Golisopod|0 fnt
+expect |-damage|p2b: Golisopod|0 fnt
+expect |faint|p2b: Golisopod
+expect |rng|1|0
+expect |
+expect |upkeep
+expect |turn|14
+expect |rng|1|0
+expect |
+expect |t:|
+expect |move|p2a: Sir Hops-a-Lot|Supercell Slam|p1b: Clefable
+expect |rng|100|26
+expect |rng|24|22
+expect |rng|16|15
+expect |-supereffective|p1b: Clefable|1
+expect |split|p1
+expect |-damage|p1b: Clefable|67/189
+expect |-damage|p1b: Clefable|35/100
+expect |move|p1b: Clefable|Volt Switch|p2a: Sir Hops-a-Lot
+expect |rng|100|78
+expect |rng|24|16
+expect |rng|16|2
+expect |-supereffective|p2a: Sir Hops-a-Lot|1
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|32/170
+expect |-damage|p2a: Sir Hops-a-Lot|18/100
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p2a: Sir Hops-a-Lot|Supercell Slam|p1b: Clefable
+expect |rng|100|2
+expect |rng|24|23
+expect |rng|16|9
+expect |-supereffective|p1b: Clefable|1
+expect |split|p1
+expect |-damage|p1b: Clefable|0 fnt
+expect |-damage|p1b: Clefable|0 fnt
+expect |faint|p1b: Clefable
+expect |split|p2
+expect |-heal|p2a: Sir Hops-a-Lot|40/170|[from] item: Shell Bell|[of] p1: Clefable
+expect |-heal|p2a: Sir Hops-a-Lot|23/100|[from] item: Shell Bell|[of] p1: Clefable
+expect |
+expect |win|p2

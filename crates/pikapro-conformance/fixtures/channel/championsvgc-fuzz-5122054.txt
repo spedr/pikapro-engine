@@ -1,0 +1,584 @@
+# Recorded by channel_conformance. Do not edit by hand.
+format championsvgc
+source fuzz
+seed 5122054
+options factored row percent
+player p1
+line |t:|0
+line |gametype|doubles
+line |player|p1|p1||
+line |player|p2|p2||
+line |gen|9
+line |tier|[Gen 9 Champions] VGC 2026 Reg M-B
+line |rule|Species Clause: Limit one of each Pokémon
+line |rule|Item Clause: Limit 1 of each item
+line |clearpoke
+line |poke|p1|Rotom, L50|
+line |poke|p1|Spiritomb, L50, M|
+line |poke|p1|Tauros-Paldea-Blaze, L50, M|
+line |poke|p1|Slowking-Galar, L50, F|
+line |poke|p1|Vivillon-High Plains, L50, M|
+line |poke|p1|Gengar, L50, M, shiny|
+line |poke|p2|Snorlax, L50, F|
+line |poke|p2|Alcremie-Ruby-Swirl, L50, F|
+line |poke|p2|Liepard, L50, M|
+line |poke|p2|Typhlosion, L50, M|
+line |poke|p2|Flareon, L50, M|
+line |poke|p2|Alcremie-Rainbow-Swirl, L50, F|
+line |teampreview|4
+line |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+line |request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Rotom","details":"Rotom, L50","condition":"147/147","active":true,"stats":{"atk":72,"def":98,"spa":133,"spd":107,"spe":125},"moves":["trickroom","healbell","nobleroar","perishsong"],"baseAbility":"levitate","item":"oranberry","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"148/148","active":true,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"177/177","active":false,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"188/188","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-High Plains, L50, M","condition":"184/184","active":false,"stats":{"atk":72,"def":74,"spa":146,"spd":72,"spe":109},"moves":["protect","steelwing","bulkup","dragoncheer"],"baseAbility":"shielddust","item":"whiteherb","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar, L50, M, shiny","condition":"143/143","active":false,"stats":{"atk":111,"def":88,"spa":160,"spd":117,"spe":118},"moves":["acrobatics"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false}]}}
+decision f6bb2bb0d37570e5
+line |
+line |t:|0
+line |teamsize|p1|4
+line |teamsize|p2|4
+line |start
+line |uhtmlchange|otsrequest|
+line |switch|p1a: Gengar|Gengar, L50, M, shiny|143/143
+line |switch|p1b: Chomp|Tauros-Paldea-Blaze, L50, M|177/177
+line |switch|p2a: Alcremie|Alcremie-Rainbow-Swirl, L50, F|100/100
+line |switch|p2b: Flareon|Flareon, L50, M|100/100
+line |turn|1
+line |request|{"active":[{"moves":[{"move":"Acrobatics","id":"acrobatics","pp":16,"maxpp":16,"target":"any","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Gengar","details":"Gengar, L50, M, shiny","condition":"143/143","active":true,"stats":{"atk":111,"def":88,"spa":160,"spd":117,"spe":118},"moves":["acrobatics"],"baseAbility":"cursedbody","item":"gengarite","pokeball":"pokeball","ability":"cursedbody","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"177/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"188/188","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false},{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"148/148","active":false,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false}]}}
+decision 89079a68d84f01b4
+line |
+line |t:|0
+line |switch|p2a: Snorlax|Snorlax, L50, F|100/100
+line |detailschange|p1a: Gengar|Gengar-Mega, L50, M, shiny
+line |-mega|p1a: Gengar|Gengar|Gengarite
+line |move|p1a: Gengar|Acrobatics|p2a: Snorlax
+line |-damage|p2a: Snorlax|87/100
+line |move|p1b: Chomp|Trailblaze|p2a: Snorlax
+line |-damage|p2a: Snorlax|74/100
+line |-boost|p1b: Chomp|spe|1
+line |move|p2b: Flareon|Ceaseless Edge|p2a: Snorlax|[miss]
+line |-miss|p2b: Flareon|p2a: Snorlax
+line |
+line |upkeep
+line |turn|2
+line |request|{"active":[{"moves":[{"move":"Acrobatics","id":"acrobatics","pp":15,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"143/143","active":true,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"177/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"188/188","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false},{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"148/148","active":false,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false}]}}
+decision 2667a8cacb080e31
+line |
+line |t:|0
+line |switch|p1a: Spiritomb|Spiritomb, L50, M|148/148
+line |-ability|p1a: Spiritomb|Pressure
+line |-singleturn|p1b: Chomp|move: Focus Punch
+line |move|p2b: Flareon|Ceaseless Edge|p1b: Chomp
+line |-resisted|p1b: Chomp|1
+line |-damage|p1b: Chomp|160/177
+line |-sidestart|p1: p1|Spikes
+line |move|p2a: Snorlax|No Retreat|p2a: Snorlax
+line |-boost|p2a: Snorlax|atk|1
+line |-boost|p2a: Snorlax|def|1
+line |-boost|p2a: Snorlax|spa|1
+line |-boost|p2a: Snorlax|spd|1
+line |-boost|p2a: Snorlax|spe|1
+line |-start|p2a: Snorlax|move: No Retreat
+line |cant|p1b: Chomp|Focus Punch|Focus Punch
+line |
+line |upkeep
+line |turn|3
+line |request|{"active":[{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Darkest Lariat","id":"darkestlariat","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"148/148","active":true,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"160/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"188/188","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"143/143","active":false,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false}]}}
+decision e4f98bf417ccd06e
+line |
+line |t:|0
+line |switch|p2b: Typhlosion|Typhlosion, L50, M|100/100
+line |-singleturn|p1b: Chomp|move: Focus Punch
+line |move|p2a: Snorlax|Aqua Jet|p1a: Spiritomb
+line |-damage|p1a: Spiritomb|125/148
+line |move|p1a: Spiritomb|Double-Edge|p1b: Chomp
+line |-damage|p1b: Chomp|120/177
+line |-damage|p1a: Spiritomb|112/148|[from] Recoil
+line |cant|p1b: Chomp|Focus Punch|Focus Punch
+line |
+line |upkeep
+line |turn|4
+line |request|{"active":[{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Darkest Lariat","id":"darkestlariat","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"112/148","active":true,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"120/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"188/188","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"143/143","active":false,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false}]}}
+decision 695d46221eaf894d
+line |
+line |t:|0
+line |switch|p2b: Alcremie|Alcremie-Rainbow-Swirl, L50, F|100/100
+line |switch|p1a: Gengar|Gengar-Mega, L50, M, shiny|143/143
+line |-damage|p1a: Gengar|126/143|[from] Spikes
+line |move|p2a: Snorlax|Aqua Jet|p1b: Chomp
+line |-supereffective|p1b: Chomp|1
+line |-damage|p1b: Chomp|70/177
+line |move|p1b: Chomp|Low Kick|p1a: Gengar
+line |-immune|p1a: Gengar
+line |
+line |upkeep
+line |turn|5
+line |request|{"active":[{"moves":[{"move":"Acrobatics","id":"acrobatics","pp":15,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":19,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"126/143","active":true,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"70/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"188/188","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false},{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"112/148","active":false,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false}]}}
+decision 64553ce5ef881ba6
+line |
+line |t:|0
+line |switch|p1a: Slowking|Slowking-Galar, L50, F|188/188
+line |-damage|p1a: Slowking|165/188|[from] Spikes
+line |-clearboost|p1b: Chomp|[from] ability: Curious Medicine|[of] p1a: Slowking
+line |move|p2a: Snorlax|Aqua Jet|p1b: Chomp
+line |-supereffective|p1b: Chomp|1
+line |-damage|p1b: Chomp|26/177
+line |move|p1b: Chomp|Trailblaze|p2b: Alcremie
+line |-damage|p2b: Alcremie|82/100
+line |-boost|p1b: Chomp|spe|1
+line |move|p2b: Alcremie|Encore||[still]
+line |-fail|p2b: Alcremie
+line |
+line |upkeep
+line |turn|6
+line |request|{"active":[{"moves":[{"move":"Infestation","id":"infestation","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":19,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"165/188","active":true,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"26/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"126/143","active":false,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"112/148","active":false,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false}]}}
+decision acf85dcb3f7926d7
+line |
+line |t:|0
+line |-singleturn|p1b: Chomp|move: Focus Punch
+line |move|p2a: Snorlax|Psyshield Bash|p2b: Alcremie
+line |-damage|p2b: Alcremie|39/100
+line |-boost|p2a: Snorlax|def|1
+line |move|p2b: Alcremie|Encore||[still]
+line |-fail|p2b: Alcremie
+line |move|p1a: Slowking|Infestation|p2a: Snorlax
+line |-damage|p2a: Snorlax|72/100
+line |-activate|p2a: Snorlax|move: Infestation|[of] p1a: Slowking
+line |move|p1b: Chomp|Focus Punch|p1a: Slowking
+line |-resisted|p1a: Slowking|2
+line |-damage|p1a: Slowking|131/188
+line |
+line |-damage|p2a: Snorlax|59/100|[from] move: Infestation|[partiallytrapped]
+line |upkeep
+line |turn|7
+line |request|{"active":[{"moves":[{"move":"Infestation","id":"infestation","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":19,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"131/188","active":true,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"26/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"126/143","active":false,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"112/148","active":false,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false}]}}
+decision 6797abecfa98f464
+line |
+line |t:|0
+line |switch|p1a: Gengar|Gengar-Mega, L50, M, shiny|126/143
+line |-damage|p1a: Gengar|109/143|[from] Spikes
+line |-singleturn|p1b: Chomp|move: Focus Punch
+line |move|p2a: Snorlax|Aqua Jet|p1a: Gengar
+line |-damage|p1a: Gengar|80/143
+line |move|p2b: Alcremie|Instruct|p2a: Snorlax
+line |-singleturn|p2a: Snorlax|move: Instruct|[of] p2b: Alcremie
+line |move|p2a: Snorlax|Aqua Jet|p1a: Gengar
+line |-damage|p1a: Gengar|48/143
+line |move|p1b: Chomp|Focus Punch|p2b: Alcremie
+line |-resisted|p2b: Alcremie|1
+line |-damage|p2b: Alcremie|0 fnt
+line |faint|p2b: Alcremie
+line |
+line |-end|p2a: Snorlax|Infestation|[partiallytrapped]|[silent]
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"48/143","active":true,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"26/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"131/188","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false},{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"112/148","active":false,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false}]}}
+line |
+line |t:|0
+line |switch|p2b: Typhlosion|Typhlosion, L50, M|100/100
+line |turn|8
+line |request|{"active":[{"moves":[{"move":"Acrobatics","id":"acrobatics","pp":15,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":19,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"48/143","active":true,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"26/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"131/188","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false},{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"112/148","active":false,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false}]}}
+decision 5f11e38664172224
+line |
+line |t:|0
+line |switch|p1a: Slowking|Slowking-Galar, L50, F|131/188
+line |-damage|p1a: Slowking|108/188|[from] Spikes
+line |-clearboost|p1b: Chomp|[from] ability: Curious Medicine|[of] p1a: Slowking
+line |move|p2b: Typhlosion|Waterfall|p1a: Slowking
+line |-damage|p1a: Slowking|76/188
+line |move|p1b: Chomp|Low Kick|p2a: Snorlax
+line |-supereffective|p2a: Snorlax|1
+line |-damage|p2a: Snorlax|8/100
+line |move|p2a: Snorlax|Psyshield Bash|p1a: Slowking
+line |-damage|p1a: Slowking|0 fnt
+line |-boost|p2a: Snorlax|def|1
+line |faint|p1a: Slowking
+line |
+line |upkeep
+line |request|{"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"0 fnt","active":true,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"26/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"48/143","active":false,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"112/148","active":false,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false}]},"noCancel":true}
+decision 01e4b64f2397149c
+line |
+line |t:|0
+line |switch|p1a: Spiritomb|Spiritomb, L50, M|112/148
+line |-damage|p1a: Spiritomb|94/148|[from] Spikes
+line |-ability|p1a: Spiritomb|Pressure
+line |turn|9
+line |request|{"active":[{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Darkest Lariat","id":"darkestlariat","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":18,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"94/148","active":true,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"26/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"48/143","active":false,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false}]}}
+decision ad8e25add2d0a93a
+line |
+line |t:|0
+line |switch|p2b: Flareon|Flareon, L50, M|100/100
+line |move|p2a: Snorlax|Aqua Jet|p1a: Spiritomb
+line |-damage|p1a: Spiritomb|71/148
+line |move|p1b: Chomp|Low Kick|p1a: Spiritomb
+line |-immune|p1a: Spiritomb
+line |move|p1a: Spiritomb|Double-Edge|p2b: Flareon
+line |-damage|p2b: Flareon|47/100
+line |-damage|p1a: Spiritomb|47/148|[from] Recoil
+line |
+line |upkeep
+line |turn|10
+line |request|{"active":[{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Darkest Lariat","id":"darkestlariat","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"47/148","active":true,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"26/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"48/143","active":false,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false}]}}
+decision b6e0e3b1d40b2ac4
+line |
+line |t:|0
+line |-singleturn|p1b: Chomp|move: Focus Punch
+line |move|p2b: Flareon|Ceaseless Edge|p2a: Snorlax
+line |-damage|p2a: Snorlax|1/100
+line |-sidestart|p1: p1|Spikes
+line |move|p2a: Snorlax|Psyshield Bash|p1a: Spiritomb
+line |-immune|p1a: Spiritomb
+line |move|p1a: Spiritomb|Water Spout|p2a: Snorlax|[spread] p2a,p2b
+line |-supereffective|p2b: Flareon|1
+line |-damage|p2a: Snorlax|0 fnt
+line |-damage|p2b: Flareon|32/100
+line |faint|p2a: Snorlax
+line |move|p1b: Chomp|Focus Punch|p1a: Spiritomb
+line |-immune|p1a: Spiritomb
+line |
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"47/148","active":true,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"26/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"48/143","active":false,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false}]}}
+line |
+line |t:|0
+line |switch|p2a: Typhlosion|Typhlosion, L50, M|100/100
+line |turn|11
+line |request|{"active":[{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Darkest Lariat","id":"darkestlariat","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"47/148","active":true,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"26/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"48/143","active":false,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false}]}}
+decision c93e7861ae539099
+line |
+line |t:|0
+line |move|p2a: Typhlosion|Waterfall|p2b: Flareon
+line |-supereffective|p2b: Flareon|1
+line |-damage|p2b: Flareon|0 fnt
+line |faint|p2b: Flareon
+line |move|p1b: Chomp|Trailblaze|p2a: Typhlosion
+line |-resisted|p2a: Typhlosion|1
+line |-damage|p2a: Typhlosion|92/100
+line |-boost|p1b: Chomp|spe|1
+line |move|p1a: Spiritomb|Darkest Lariat|p2a: Typhlosion
+line |-damage|p2a: Typhlosion|60/100
+line |
+line |upkeep
+line |turn|12
+line |request|{"active":[{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Darkest Lariat","id":"darkestlariat","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"47/148","active":true,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"26/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"48/143","active":false,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false}]}}
+decision c4899a111975e367
+line |
+line |t:|0
+line |switch|p1a: Gengar|Gengar-Mega, L50, M, shiny|48/143
+line |-damage|p1a: Gengar|25/143|[from] Spikes
+line |-singleturn|p1b: Chomp|move: Focus Punch
+line |move|p2a: Typhlosion|Waterfall|p1a: Gengar
+line |-damage|p1a: Gengar|0 fnt
+line |faint|p1a: Gengar
+line |move|p1b: Chomp|Focus Punch|p1: Gengar|[notarget]
+line |-fail|p1b: Chomp
+line |
+line |upkeep
+line |request|{"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"0 fnt","active":true,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"26/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"47/148","active":false,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false}]},"noCancel":true}
+decision 3136154c1d3365e2
+line |
+line |t:|0
+line |switch|p1a: Spiritomb|Spiritomb, L50, M|47/148
+line |-damage|p1a: Spiritomb|23/148|[from] Spikes
+line |-ability|p1a: Spiritomb|Pressure
+line |turn|13
+line |request|{"active":[{"moves":[{"move":"Double-Edge","id":"doubleedge","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Water Spout","id":"waterspout","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Darkest Lariat","id":"darkestlariat","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Trailblaze","id":"trailblaze","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Focus Punch","id":"focuspunch","pp":16,"maxpp":20,"target":"normal","disabled":false},{"move":"Low Kick","id":"lowkick","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Spiritomb","details":"Spiritomb, L50, M","condition":"23/148","active":true,"stats":{"atk":112,"def":128,"spa":127,"spd":147,"spe":64},"moves":["doubleedge","waterspout","darkestlariat"],"baseAbility":"pressure","item":"focusband","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Tauros-Paldea-Blaze, L50, M","condition":"26/177","active":true,"stats":{"atk":144,"def":133,"spa":68,"spd":93,"spe":116},"moves":["trailblaze","focuspunch","lowkick"],"baseAbility":"angerpoint","item":"","pokeball":"pokeball","ability":"angerpoint","commanding":false,"reviving":false},{"ident":"p1: Gengar","details":"Gengar-Mega, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":111,"def":108,"spa":200,"spd":139,"spe":136},"moves":["acrobatics"],"baseAbility":"shadowtag","item":"gengarite","pokeball":"pokeball","ability":"shadowtag","commanding":false,"reviving":false},{"ident":"p1: Slowking","details":"Slowking-Galar, L50, F","condition":"0 fnt","active":false,"stats":{"atk":95,"def":100,"spa":139,"spd":145,"spe":51},"moves":["infestation"],"baseAbility":"curiousmedicine","item":"","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false}]}}
+decision 29b2902ccb2f6091
+line |
+line |t:|0
+line |move|p1b: Chomp|Low Kick|p2a: Typhlosion
+line |-damage|p2a: Typhlosion|25/100
+line |move|p2a: Typhlosion|Waterfall|p1b: Chomp
+line |-supereffective|p1b: Chomp|1
+line |-damage|p1b: Chomp|0 fnt
+line |faint|p1b: Chomp
+line |move|p1a: Spiritomb|Darkest Lariat|p2a: Typhlosion
+line |-damage|p2a: Typhlosion|0 fnt
+line |faint|p2a: Typhlosion
+line |
+line |win|p1
+player p2
+line |t:|0
+line |gametype|doubles
+line |player|p1|p1||
+line |player|p2|p2||
+line |gen|9
+line |tier|[Gen 9 Champions] VGC 2026 Reg M-B
+line |rule|Species Clause: Limit one of each Pokémon
+line |rule|Item Clause: Limit 1 of each item
+line |clearpoke
+line |poke|p1|Rotom, L50|
+line |poke|p1|Spiritomb, L50, M|
+line |poke|p1|Tauros-Paldea-Blaze, L50, M|
+line |poke|p1|Slowking-Galar, L50, F|
+line |poke|p1|Vivillon-High Plains, L50, M|
+line |poke|p1|Gengar, L50, M, shiny|
+line |poke|p2|Snorlax, L50, F|
+line |poke|p2|Alcremie-Ruby-Swirl, L50, F|
+line |poke|p2|Liepard, L50, M|
+line |poke|p2|Typhlosion, L50, M|
+line |poke|p2|Flareon, L50, M|
+line |poke|p2|Alcremie-Rainbow-Swirl, L50, F|
+line |teampreview|4
+line |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+line |request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"237/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Ruby-Swirl, L50, F","condition":"165/165","active":true,"stats":{"atk":116,"def":100,"spa":131,"spd":145,"spe":79},"moves":["hardpress","iciclecrash","memento"],"baseAbility":"aromaveil","item":"leppaberry","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":115,"def":93,"spa":118,"spd":80,"spe":127},"moves":["roost"],"baseAbility":"limber","item":"yacheberry","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":false,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":false,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"159/159","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false}]}}
+decision b730576f623c8e01
+line |
+line |t:|0
+line |teamsize|p1|4
+line |teamsize|p2|4
+line |start
+line |uhtmlchange|otsrequest|
+line |switch|p1a: Gengar|Gengar, L50, M, shiny|100/100
+line |switch|p1b: Chomp|Tauros-Paldea-Blaze, L50, M|100/100
+line |switch|p2a: Alcremie|Alcremie-Rainbow-Swirl, L50, F|159/159
+line |switch|p2b: Flareon|Flareon, L50, M|142/142
+line |turn|1
+line |request|{"active":[{"moves":[{"move":"Encore","id":"encore","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Instruct","id":"instruct","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Icy Wind","id":"icywind","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Terrain Pulse","id":"terrainpulse","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Ceaseless Edge","id":"ceaselessedge","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"159/159","active":true,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":true,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"237/237","active":false,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":false,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false}]}}
+decision 4f0674b3f0ac84fa
+line |
+line |t:|0
+line |switch|p2a: Snorlax|Snorlax, L50, F|237/237
+line |detailschange|p1a: Gengar|Gengar-Mega, L50, M, shiny
+line |-mega|p1a: Gengar|Gengar|Gengarite
+line |move|p1a: Gengar|Acrobatics|p2a: Snorlax
+line |-damage|p2a: Snorlax|208/237
+line |move|p1b: Chomp|Trailblaze|p2a: Snorlax
+line |-damage|p2a: Snorlax|177/237
+line |-boost|p1b: Chomp|spe|1
+line |move|p2b: Flareon|Ceaseless Edge|p2a: Snorlax|[miss]
+line |-miss|p2b: Flareon|p2a: Snorlax
+line |
+line |upkeep
+line |turn|2
+line |request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"No Retreat","id":"noretreat","pp":8,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Icy Wind","id":"icywind","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Terrain Pulse","id":"terrainpulse","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Ceaseless Edge","id":"ceaselessedge","pp":15,"maxpp":16,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"177/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":true,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"159/159","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":false,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false}]}}
+decision ea4d6140a27799c3
+line |
+line |t:|0
+line |switch|p1a: Spiritomb|Spiritomb, L50, M|100/100
+line |-ability|p1a: Spiritomb|Pressure
+line |-singleturn|p1b: Chomp|move: Focus Punch
+line |move|p2b: Flareon|Ceaseless Edge|p1b: Chomp
+line |-resisted|p1b: Chomp|1
+line |-damage|p1b: Chomp|90/100
+line |-sidestart|p1: p1|Spikes
+line |move|p2a: Snorlax|No Retreat|p2a: Snorlax
+line |-boost|p2a: Snorlax|atk|1
+line |-boost|p2a: Snorlax|def|1
+line |-boost|p2a: Snorlax|spa|1
+line |-boost|p2a: Snorlax|spd|1
+line |-boost|p2a: Snorlax|spe|1
+line |-start|p2a: Snorlax|move: No Retreat
+line |cant|p1b: Chomp|Focus Punch|Focus Punch
+line |
+line |upkeep
+line |turn|3
+line |request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"No Retreat","id":"noretreat","pp":7,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Icy Wind","id":"icywind","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Terrain Pulse","id":"terrainpulse","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Ceaseless Edge","id":"ceaselessedge","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"177/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":true,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"159/159","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":false,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false}]}}
+decision b6f8bed4b0f16e86
+line |
+line |t:|0
+line |switch|p2b: Typhlosion|Typhlosion, L50, M|153/153
+line |-singleturn|p1b: Chomp|move: Focus Punch
+line |move|p2a: Snorlax|Aqua Jet|p1a: Spiritomb
+line |-damage|p1a: Spiritomb|84/100
+line |move|p1a: Spiritomb|Double-Edge|p1b: Chomp
+line |-damage|p1b: Chomp|67/100
+line |-damage|p1a: Spiritomb|75/100|[from] Recoil
+line |cant|p1b: Chomp|Focus Punch|Focus Punch
+line |
+line |upkeep
+line |turn|4
+line |request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"No Retreat","id":"noretreat","pp":7,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Waterfall","id":"waterfall","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"177/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":true,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"159/159","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":false,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false}]}}
+decision dd77ff87697be5c1
+line |
+line |t:|0
+line |switch|p2b: Alcremie|Alcremie-Rainbow-Swirl, L50, F|159/159
+line |switch|p1a: Gengar|Gengar-Mega, L50, M, shiny|100/100
+line |-damage|p1a: Gengar|88/100|[from] Spikes
+line |move|p2a: Snorlax|Aqua Jet|p1b: Chomp
+line |-supereffective|p1b: Chomp|1
+line |-damage|p1b: Chomp|39/100
+line |move|p1b: Chomp|Low Kick|p1a: Gengar
+line |-immune|p1a: Gengar
+line |
+line |upkeep
+line |turn|5
+line |request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"No Retreat","id":"noretreat","pp":7,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Encore","id":"encore","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Instruct","id":"instruct","pp":16,"maxpp":16,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"177/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"159/159","active":true,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":false,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":false,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false}]}}
+decision e0066ab62711f5e6
+line |error|[Unavailable choice] Can't switch: The active Pokémon is trapped
+line |request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"No Retreat","id":"noretreat","pp":7,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Encore","id":"encore","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Instruct","id":"instruct","pp":16,"maxpp":16,"target":"normal","disabled":false}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"177/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"159/159","active":true,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":false,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":false,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false}]},"update":true}
+decision 91df04b52afab45a
+line |
+line |t:|0
+line |switch|p1a: Slowking|Slowking-Galar, L50, F|100/100
+line |-damage|p1a: Slowking|87/100|[from] Spikes
+line |-clearboost|p1b: Chomp|[from] ability: Curious Medicine|[of] p1a: Slowking
+line |move|p2a: Snorlax|Aqua Jet|p1b: Chomp
+line |-supereffective|p1b: Chomp|1
+line |-damage|p1b: Chomp|14/100
+line |move|p1b: Chomp|Trailblaze|p2b: Alcremie
+line |-damage|p2b: Alcremie|131/159
+line |-boost|p1b: Chomp|spe|1
+line |move|p2b: Alcremie|Encore||[still]
+line |-fail|p2b: Alcremie
+line |
+line |upkeep
+line |turn|6
+line |request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":16,"maxpp":20,"target":"normal","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"No Retreat","id":"noretreat","pp":7,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Encore","id":"encore","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Instruct","id":"instruct","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"177/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"131/159","active":true,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":false,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":false,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false}]}}
+decision ad5dd2669ccd3449
+line |
+line |t:|0
+line |-singleturn|p1b: Chomp|move: Focus Punch
+line |move|p2a: Snorlax|Psyshield Bash|p2b: Alcremie
+line |-damage|p2b: Alcremie|63/159
+line |-boost|p2a: Snorlax|def|1
+line |move|p2b: Alcremie|Encore||[still]
+line |-fail|p2b: Alcremie
+line |move|p1a: Slowking|Infestation|p2a: Snorlax
+line |-damage|p2a: Snorlax|171/237
+line |-activate|p2a: Snorlax|move: Infestation|[of] p1a: Slowking
+line |move|p1b: Chomp|Focus Punch|p1a: Slowking
+line |-resisted|p1a: Slowking|2
+line |-damage|p1a: Slowking|69/100
+line |
+line |-damage|p2a: Snorlax|142/237|[from] move: Infestation|[partiallytrapped]
+line |upkeep
+line |turn|7
+line |request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":16,"maxpp":20,"target":"normal","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"No Retreat","id":"noretreat","pp":7,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Encore","id":"encore","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Instruct","id":"instruct","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"142/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"63/159","active":true,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":false,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":false,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false}]}}
+decision 794e3d5181c5736f
+line |
+line |t:|0
+line |switch|p1a: Gengar|Gengar-Mega, L50, M, shiny|88/100
+line |-damage|p1a: Gengar|76/100|[from] Spikes
+line |-singleturn|p1b: Chomp|move: Focus Punch
+line |move|p2a: Snorlax|Aqua Jet|p1a: Gengar
+line |-damage|p1a: Gengar|55/100
+line |move|p2b: Alcremie|Instruct|p2a: Snorlax
+line |-singleturn|p2a: Snorlax|move: Instruct|[of] p2b: Alcremie
+line |move|p2a: Snorlax|Aqua Jet|p1a: Gengar
+line |-damage|p1a: Gengar|33/100
+line |move|p1b: Chomp|Focus Punch|p2b: Alcremie
+line |-resisted|p2b: Alcremie|1
+line |-damage|p2b: Alcremie|0 fnt
+line |faint|p2b: Alcremie
+line |
+line |-end|p2a: Snorlax|Infestation|[partiallytrapped]|[silent]
+line |upkeep
+line |request|{"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"142/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":true,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":false,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":false,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false}]},"noCancel":true}
+decision 43b37535a515efca
+line |
+line |t:|0
+line |switch|p2b: Typhlosion|Typhlosion, L50, M|153/153
+line |turn|8
+line |request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":14,"maxpp":20,"target":"normal","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"No Retreat","id":"noretreat","pp":7,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Waterfall","id":"waterfall","pp":16,"maxpp":16,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"142/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":true,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":false,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false}]}}
+decision 3e4b167d873c2689
+line |
+line |t:|0
+line |switch|p1a: Slowking|Slowking-Galar, L50, F|69/100
+line |-damage|p1a: Slowking|57/100|[from] Spikes
+line |-clearboost|p1b: Chomp|[from] ability: Curious Medicine|[of] p1a: Slowking
+line |move|p2b: Typhlosion|Waterfall|p1a: Slowking
+line |-damage|p1a: Slowking|40/100
+line |move|p1b: Chomp|Low Kick|p2a: Snorlax
+line |-supereffective|p2a: Snorlax|1
+line |-damage|p2a: Snorlax|20/237
+line |move|p2a: Snorlax|Psyshield Bash|p1a: Slowking
+line |-damage|p1a: Slowking|0 fnt
+line |-boost|p2a: Snorlax|def|1
+line |faint|p1a: Slowking
+line |
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"20/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":true,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":false,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false}]}}
+line |
+line |t:|0
+line |switch|p1a: Spiritomb|Spiritomb, L50, M|75/100
+line |-damage|p1a: Spiritomb|63/100|[from] Spikes
+line |-ability|p1a: Spiritomb|Pressure
+line |turn|9
+line |request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":14,"maxpp":20,"target":"normal","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"No Retreat","id":"noretreat","pp":7,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Waterfall","id":"waterfall","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"20/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":true,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"142/142","active":false,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false}]}}
+decision abcf02c031f9e112
+line |
+line |t:|0
+line |switch|p2b: Flareon|Flareon, L50, M|142/142
+line |move|p2a: Snorlax|Aqua Jet|p1a: Spiritomb
+line |-damage|p1a: Spiritomb|47/100
+line |move|p1b: Chomp|Low Kick|p1a: Spiritomb
+line |-immune|p1a: Spiritomb
+line |move|p1a: Spiritomb|Double-Edge|p2b: Flareon
+line |-damage|p2b: Flareon|68/142
+line |-damage|p1a: Spiritomb|31/100|[from] Recoil
+line |
+line |upkeep
+line |turn|10
+line |request|{"active":[{"moves":[{"move":"Aqua Jet","id":"aquajet","pp":12,"maxpp":20,"target":"normal","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"No Retreat","id":"noretreat","pp":7,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Icy Wind","id":"icywind","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Terrain Pulse","id":"terrainpulse","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Ceaseless Edge","id":"ceaselessedge","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"20/237","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"68/142","active":true,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":false,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false}]}}
+decision 8d9dc023c0d25eb5
+line |
+line |t:|0
+line |-singleturn|p1b: Chomp|move: Focus Punch
+line |move|p2b: Flareon|Ceaseless Edge|p2a: Snorlax
+line |-damage|p2a: Snorlax|1/237
+line |-sidestart|p1: p1|Spikes
+line |move|p2a: Snorlax|Psyshield Bash|p1a: Spiritomb
+line |-immune|p1a: Spiritomb
+line |move|p1a: Spiritomb|Water Spout|p2a: Snorlax|[spread] p2a,p2b
+line |-supereffective|p2b: Flareon|1
+line |-damage|p2a: Snorlax|0 fnt
+line |-damage|p2b: Flareon|46/142
+line |faint|p2a: Snorlax
+line |move|p1b: Chomp|Focus Punch|p1a: Spiritomb
+line |-immune|p1a: Spiritomb
+line |
+line |upkeep
+line |request|{"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"0 fnt","active":true,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"46/142","active":true,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":false,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false}]},"noCancel":true}
+decision 645ad45242a514b4
+line |
+line |t:|0
+line |switch|p2a: Typhlosion|Typhlosion, L50, M|153/153
+line |turn|11
+line |request|{"active":[{"moves":[{"move":"Waterfall","id":"waterfall","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Icy Wind","id":"icywind","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Terrain Pulse","id":"terrainpulse","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Ceaseless Edge","id":"ceaselessedge","pp":13,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"153/153","active":true,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"46/142","active":true,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"0 fnt","active":false,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false}]}}
+decision 50e2c36fb900a382
+line |
+line |t:|0
+line |move|p2a: Typhlosion|Waterfall|p2b: Flareon
+line |-supereffective|p2b: Flareon|1
+line |-damage|p2b: Flareon|0 fnt
+line |faint|p2b: Flareon
+line |move|p1b: Chomp|Trailblaze|p2a: Typhlosion
+line |-resisted|p2a: Typhlosion|1
+line |-damage|p2a: Typhlosion|141/153
+line |-boost|p1b: Chomp|spe|1
+line |move|p1a: Spiritomb|Darkest Lariat|p2a: Typhlosion
+line |-damage|p2a: Typhlosion|93/153
+line |
+line |upkeep
+line |turn|12
+line |request|{"active":[{"moves":[{"move":"Waterfall","id":"waterfall","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Icy Wind","id":"icywind","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Terrain Pulse","id":"terrainpulse","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Ceaseless Edge","id":"ceaselessedge","pp":13,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"93/153","active":true,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"0 fnt","active":true,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"0 fnt","active":false,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false}]}}
+decision 5c1ab262487b31cc
+line |
+line |t:|0
+line |switch|p1a: Gengar|Gengar-Mega, L50, M, shiny|33/100
+line |-damage|p1a: Gengar|17/100|[from] Spikes
+line |-singleturn|p1b: Chomp|move: Focus Punch
+line |move|p2a: Typhlosion|Waterfall|p1a: Gengar
+line |-damage|p1a: Gengar|0 fnt
+line |faint|p1a: Gengar
+line |move|p1b: Chomp|Focus Punch|p1: Gengar|[notarget]
+line |-fail|p1b: Chomp
+line |
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"93/153","active":true,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"0 fnt","active":true,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"0 fnt","active":false,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false}]}}
+line |
+line |t:|0
+line |switch|p1a: Spiritomb|Spiritomb, L50, M|31/100
+line |-damage|p1a: Spiritomb|15/100|[from] Spikes
+line |-ability|p1a: Spiritomb|Pressure
+line |turn|13
+line |request|{"active":[{"moves":[{"move":"Waterfall","id":"waterfall","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Icy Wind","id":"icywind","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Terrain Pulse","id":"terrainpulse","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Ceaseless Edge","id":"ceaselessedge","pp":13,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Typhlosion","details":"Typhlosion, L50, M","condition":"93/153","active":true,"stats":{"atk":101,"def":126,"spa":136,"spd":110,"spe":150},"moves":["waterfall"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false},{"ident":"p2: Flareon","details":"Flareon, L50, M","condition":"0 fnt","active":true,"stats":{"atk":162,"def":81,"spa":107,"spd":167,"spe":106},"moves":["icywind","terrainpulse","ceaselessedge"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false},{"ident":"p2: Alcremie","details":"Alcremie-Rainbow-Swirl, L50, F","condition":"0 fnt","active":false,"stats":{"atk":96,"def":107,"spa":144,"spd":144,"spe":87},"moves":["encore","instruct"],"baseAbility":"sweetveil","item":"aspearberry","pokeball":"pokeball","ability":"sweetveil","commanding":false,"reviving":false},{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"0 fnt","active":false,"stats":{"atk":131,"def":90,"spa":110,"spd":140,"spe":68},"moves":["aquajet","psyshieldbash","noretreat"],"baseAbility":"immunity","item":"focusband","pokeball":"pokeball","ability":"immunity","commanding":false,"reviving":false}]}}
+decision 82fec54eb6ca3535
+line |
+line |t:|0
+line |move|p1b: Chomp|Low Kick|p2a: Typhlosion
+line |-damage|p2a: Typhlosion|39/153
+line |move|p2a: Typhlosion|Waterfall|p1b: Chomp
+line |-supereffective|p1b: Chomp|1
+line |-damage|p1b: Chomp|0 fnt
+line |faint|p1b: Chomp
+line |move|p1a: Spiritomb|Darkest Lariat|p2a: Typhlosion
+line |-damage|p2a: Typhlosion|0 fnt
+line |faint|p2a: Typhlosion
+line |
+line |win|p1

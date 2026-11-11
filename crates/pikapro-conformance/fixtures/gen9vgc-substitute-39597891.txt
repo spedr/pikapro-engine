@@ -1,0 +1,724 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed ed5a 3107 97f5 b724
+genders drawn
+team p1
+Basculegion (M) @ Quick Claw
+Ability: Adaptability
+Level: 50
+Tera Type: Water
+EVs: 238 HP / 91 Atk / 81 Def / 26 SpA / 59 SpD / 10 Spe
+Naughty Nature
+- Boomburst
+- Population Bomb
+- Curse
+- Leech Seed
+
+Chomp (Doduo) (M) @ Rowap Berry
+Ability: Tangled Feet
+Level: 50
+Tera Type: Psychic
+EVs: 164 HP / 50 Atk / 43 Def / 164 SpA / 4 SpD / 49 Spe
+Rash Nature
+- Substitute
+- Shed Tail
+- Baton Pass
+- Draining Kiss
+
+Pikachu (Delphox) (M) @ Berry Sweet
+Ability: Blaze
+Level: 50
+Shiny: Yes
+Tera Type: Fighting
+EVs: 153 HP / 152 Def / 205 SpD
+Adamant Nature
+- Payback
+- Guard Swap
+
+Slowbro
+Ability: Oblivious
+Level: 50
+Tera Type: Dragon
+EVs: 9 HP / 24 Def / 188 SpA / 46 SpD / 239 Spe
+Bold Nature
+- Air Cutter
+- Absorb
+
+ThisNameIsFarTooLongToKeep (Meowstic-F)
+Ability: Infiltrator
+Level: 50
+Tera Type: Ice
+EVs: 193 Def / 203 SpA / 108 SpD / 6 Spe
+Hasty Nature
+- Glacial Lance
+- Guard Split
+
+Veluza
+Ability: Mold Breaker
+Level: 50
+Tera Type: Poison
+EVs: 1 HP / 160 Def / 52 SpA / 247 SpD / 49 Spe
+Docile Nature
+- Substitute
+- U-turn
+- Super Fang
+- Transform
+end
+team p2
+Qwilfish @ Sharp Beak
+Ability: Intimidate
+Level: 50
+Tera Type: Psychic
+EVs: 114 HP / 17 Atk / 122 Def / 2 SpA / 239 SpD / 5 Spe
+Timid Nature
+- Substitute
+- Shed Tail
+- Baton Pass
+- Draining Kiss
+
+ThisNameIsFarTooLongToKeep (Pikachu) (M) @ Sky Plate
+Ability: Lightning Rod
+Level: 50
+Tera Type: Stellar
+EVs: 12 HP / 2 Atk / 149 Def / 141 SpA / 42 SpD / 157 Spe
+Serious Nature
+- Boomburst
+- Population Bomb
+- Curse
+- Leech Seed
+
+Rhyperior (F)
+Ability: Lightning Rod
+Level: 50
+Shiny: Yes
+Tera Type: Water
+EVs: 1 HP / 52 Atk / 89 Def / 4 SpA / 120 SpD / 240 Spe
+Lonely Nature
+- Heal Pulse
+
+Zoë (Medicham)
+Ability: Pure Power
+Level: 50
+Tera Type: Rock
+EVs: 96 HP / 4 Atk / 11 Def / 152 SpA / 68 SpD / 167 Spe
+Naughty Nature
+- Substitute
+- U-turn
+- Super Fang
+- Transform
+
+Jumpluff
+Ability: Infiltrator
+Level: 50
+Tera Type: Poison
+EVs: 32 HP / 134 Atk / 76 Def / 60 SpA / 198 SpD / 5 Spe
+Relaxed Nature
+- Crabhammer
+- Tri Attack
+- Dragon Pulse
+
+Kilowattrel (F) @ Prism Scale
+Ability: Volt Absorb
+Level: 50
+Tera Type: Flying
+EVs: 231 HP / 15 Atk / 24 Def / 10 SpA / 178 SpD / 52 Spe
+Naive Nature
+- Future Sight
+- Flying Press
+end
+choice p1 team 4152
+choice p2 team 6,5,4,1
+choice p1 switch 3 ,  move 1 terastallize
+choice p2 move 1 -2 terastallize, move 1 2
+choice p1 default
+choice p2 move 1 2, move 1 -1
+choice p2 pass, switch 3
+choice p1 move 2 2, switch 4
+choice p2 move 1 2, switch 4
+choice p1 switch 3, move 4 -1
+choice p2 move 2 +2, move Draining Kiss -1
+choice p1 pass, switch 3
+choice p2 switch 4, pass
+choice p1 move 1, move 2 -1
+choice p2 move 4 2, move 4 2
+choice p1 move 2 -2, move 1
+choice p2 default
+choice p1 default
+choice p2 move 2 1, move 2
+choice p1 move 2 -2, move 1
+choice p2 move 2 1, move 4 1
+choice p1 move 2 -2, move 2 -1
+choice p2 move 1,skip
+choice p1 pass, switch 4
+choice p2 move 2 2, pass
+choice p1 move 2 1, move 2 -1
+choice p2 move Guard Split +2
+choice p1 move 1, move 3
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Basculegion, L50, M|
+expect |poke|p1|Doduo, L50, M|
+expect |poke|p1|Delphox, L50, M|
+expect |poke|p1|Slowbro, L50, F|
+expect |poke|p1|Meowstic-F, L50, F|
+expect |poke|p1|Veluza, L50, F|
+expect |poke|p2|Qwilfish, L50, F|
+expect |poke|p2|Pikachu, L50, M|
+expect |poke|p2|Rhyperior, L50, F|
+expect |poke|p2|Medicham, L50, M|
+expect |poke|p2|Jumpluff, L50, F|
+expect |poke|p2|Kilowattrel, L50, F|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Slowbro|Slowbro, L50, F|171/171
+expect |switch|p1a: Slowbro|Slowbro, L50, F|171/171
+expect |split|p1
+expect |switch|p1b: Basculegion|Basculegion, L50, M|225/225
+expect |switch|p1b: Basculegion|Basculegion, L50, M|225/225
+expect |split|p2
+expect |switch|p2a: Kilowattrel|Kilowattrel, L50, F|174/174
+expect |switch|p2a: Kilowattrel|Kilowattrel, L50, F|174/174
+expect |split|p2
+expect |switch|p2b: Jumpluff|Jumpluff, L50, F|154/154
+expect |switch|p2b: Jumpluff|Jumpluff, L50, F|154/154
+expect |turn|1
+expect |rng|5|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: ThisNameIsFarTooLong|Meowstic-F, L50, F|149/149
+expect |switch|p1a: ThisNameIsFarTooLong|Meowstic-F, L50, F|149/149
+expect |-terastallize|p2a: Kilowattrel|Flying
+expect |-terastallize|p1b: Basculegion|Water
+expect |rng|2|1
+expect |move|p2a: Kilowattrel|Future Sight|p2b: Jumpluff
+expect |-start|p2a: Kilowattrel|move: Future Sight
+expect |rng|2|1
+expect |move|p2b: Jumpluff|Crabhammer|p1b: Basculegion
+expect |rng|100|54
+expect |rng|8|7
+expect |rng|16|1
+expect |-resisted|p1b: Basculegion
+expect |split|p1
+expect |-damage|p1b: Basculegion|204/225
+expect |-damage|p1b: Basculegion|204/225
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: Basculegion|Boomburst|p2b: Jumpluff|[spread] p1a,p2a,p2b
+expect |rng|100|55
+expect |rng|100|82
+expect |rng|100|42
+expect |rng|24|21
+expect |rng|16|1
+expect |rng|24|12
+expect |rng|16|8
+expect |rng|24|23
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|107/149
+expect |-damage|p1a: ThisNameIsFarTooLong|107/149
+expect |split|p2
+expect |-damage|p2a: Kilowattrel|126/174
+expect |-damage|p2a: Kilowattrel|126/174
+expect |split|p2
+expect |-damage|p2b: Jumpluff|125/154
+expect |-damage|p2b: Jumpluff|125/154
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|5|0
+expect |-activate|p1b: Basculegion|item: Quick Claw
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: Basculegion|Boomburst|p2b: Jumpluff|[spread] p1a,p2a,p2b
+expect |rng|100|14
+expect |rng|100|55
+expect |rng|100|62
+expect |rng|24|12
+expect |rng|16|11
+expect |rng|24|1
+expect |rng|16|1
+expect |rng|24|17
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|69/149
+expect |-damage|p1a: ThisNameIsFarTooLong|69/149
+expect |split|p2
+expect |-damage|p2a: Kilowattrel|74/174
+expect |-damage|p2a: Kilowattrel|74/174
+expect |split|p2
+expect |-damage|p2b: Jumpluff|93/154
+expect |-damage|p2b: Jumpluff|93/154
+expect |rng|2|1
+expect |move|p2a: Kilowattrel|Future Sight|p1b: Basculegion
+expect |-start|p2a: Kilowattrel|move: Future Sight
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: ThisNameIsFarTooLong|Glacial Lance|p2a: Kilowattrel|[spread] p2a,p2b
+expect |rng|100|94
+expect |rng|100|10
+expect |rng|24|18
+expect |rng|16|15
+expect |-supereffective|p2a: Kilowattrel
+expect |rng|24|9
+expect |rng|16|2
+expect |-supereffective|p2b: Jumpluff
+expect |split|p2
+expect |-damage|p2a: Kilowattrel|18/174
+expect |-damage|p2a: Kilowattrel|18/174
+expect |split|p2
+expect |-damage|p2b: Jumpluff|0 fnt
+expect |-damage|p2b: Jumpluff|0 fnt
+expect |faint|p2b: Jumpluff
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zoë|Medicham, L50, M|147/147
+expect |switch|p2b: Zoë|Medicham, L50, M|147/147
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Qwilfish|Qwilfish, L50, F|154/154
+expect |switch|p2b: Qwilfish|Qwilfish, L50, F|154/154
+expect |-ability|p2b: Qwilfish|Intimidate|boost
+expect |-unboost|p1a: ThisNameIsFarTooLong|atk|1
+expect |-unboost|p1b: Basculegion|atk|1
+expect |split|p1
+expect |switch|p1b: Chomp|Doduo, L50, M|131/131
+expect |switch|p1b: Chomp|Doduo, L50, M|131/131
+expect |move|p2a: Kilowattrel|Future Sight||[still]
+expect |-fail|p2a: Kilowattrel
+expect |move|p1a: ThisNameIsFarTooLong|Guard Split|p2b: Qwilfish
+expect |-activate|p1a: ThisNameIsFarTooLong|move: Guard Split|[of] p2b: Qwilfish
+expect |
+expect |-end|p2b: Qwilfish|move: Future Sight
+expect |rng|100|14
+expect |rng|24|11
+expect |rng|16|15
+expect |-supereffective|p2b: Qwilfish
+expect |split|p2
+expect |-damage|p2b: Qwilfish|50/154
+expect |-damage|p2b: Qwilfish|50/154
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Slowbro|Slowbro, L50, F|171/171
+expect |switch|p1a: Slowbro|Slowbro, L50, F|171/171
+expect |move|p2a: Kilowattrel|Flying Press|p1b: Chomp
+expect |rng|100|50
+expect |rng|24|19
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Chomp|72/131
+expect |-damage|p1b: Chomp|72/131
+expect |move|p2b: Qwilfish|Draining Kiss|p2a: Kilowattrel
+expect |rng|100|3
+expect |rng|24|20
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Kilowattrel|1/174
+expect |-damage|p2a: Kilowattrel|1/174
+expect |split|p2
+expect |-heal|p2b: Qwilfish|63/154|[from] drain|[of] p2a: Kilowattrel
+expect |-heal|p2b: Qwilfish|63/154|[from] drain|[of] p2a: Kilowattrel
+expect |move|p1b: Chomp|Draining Kiss|p1a: Slowbro
+expect |rng|100|25
+expect |rng|24|6
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Slowbro|153/171
+expect |-damage|p1a: Slowbro|153/171
+expect |split|p1
+expect |-heal|p1b: Chomp|86/131|[from] drain|[of] p1a: Slowbro
+expect |-heal|p1b: Chomp|86/131|[from] drain|[of] p1a: Slowbro
+expect |
+expect |-end|p1b: Chomp|move: Future Sight
+expect |rng|100|74
+expect |rng|24|2
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1b: Chomp|0 fnt
+expect |-damage|p1b: Chomp|0 fnt
+expect |-enditem|p1b: Chomp|Rowap Berry|[eat]
+expect |split|p2
+expect |-damage|p2a: Kilowattrel|0 fnt|[from] item: Rowap Berry|[of] p1b: Chomp
+expect |-damage|p2a: Kilowattrel|0 fnt|[from] item: Rowap Berry|[of] p1b: Chomp
+expect |faint|p1b: Chomp
+expect |faint|p2a: Kilowattrel
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoë|Medicham, L50, M|147/147
+expect |switch|p2a: Zoë|Medicham, L50, M|147/147
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Meowstic-F, L50, F|69/149
+expect |switch|p1b: ThisNameIsFarTooLong|Meowstic-F, L50, F|69/149
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1b: ThisNameIsFarTooLong|Guard Split|p1a: Slowbro
+expect |-activate|p1b: ThisNameIsFarTooLong|move: Guard Split|[of] p1a: Slowbro
+expect |rng|2|1
+expect |move|p2a: Zoë|Transform|p1b: ThisNameIsFarTooLong
+expect |-transform|p2a: Zoë|p1b: ThisNameIsFarTooLong
+expect |rng|2|1
+expect |move|p2b: Qwilfish|Draining Kiss|p1b: ThisNameIsFarTooLong
+expect |rng|100|84
+expect |rng|24|18
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|55/149
+expect |-damage|p1b: ThisNameIsFarTooLong|55/149
+expect |split|p2
+expect |-heal|p2b: Qwilfish|74/154|[from] drain|[of] p1b: ThisNameIsFarTooLong
+expect |-heal|p2b: Qwilfish|74/154|[from] drain|[of] p1b: ThisNameIsFarTooLong
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Slowbro|Air Cutter|p2a: Zoë|[spread] p2a,p2b
+expect |rng|100|59
+expect |rng|100|81
+expect |rng|8|4
+expect |rng|16|15
+expect |rng|8|2
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Zoë|125/147
+expect |-damage|p2a: Zoë|125/147
+expect |split|p2
+expect |-damage|p2b: Qwilfish|48/154
+expect |-damage|p2b: Qwilfish|48/154
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |upkeep
+expect |rng|2|1
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Zoë|Glacial Lance|p1b: ThisNameIsFarTooLong|[spread] p1a,p1b
+expect |rng|100|22
+expect |rng|100|22
+expect |rng|24|23
+expect |rng|16|2
+expect |-resisted|p1a: Slowbro
+expect |rng|24|13
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Slowbro|143/171
+expect |-damage|p1a: Slowbro|143/171
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|34/149
+expect |-damage|p1b: ThisNameIsFarTooLong|34/149
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1b: ThisNameIsFarTooLong|Glacial Lance|p2a: Zoë|[spread] p2a,p2b
+expect |rng|100|44
+expect |rng|100|9
+expect |rng|24|13
+expect |rng|16|6
+expect |rng|24|18
+expect |rng|16|7
+expect |-resisted|p2b: Qwilfish
+expect |split|p2
+expect |-damage|p2a: Zoë|105/147
+expect |-damage|p2a: Zoë|105/147
+expect |split|p2
+expect |-damage|p2b: Qwilfish|37/154
+expect |-damage|p2b: Qwilfish|37/154
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Qwilfish|Substitute|p2b: Qwilfish
+expect |-fail|p2b: Qwilfish|move: Substitute|[weak]
+expect |rng|2|1
+expect |move|p1a: Slowbro|Absorb|p1b: ThisNameIsFarTooLong
+expect |rng|100|64
+expect |rng|24|14
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|23/149
+expect |-damage|p1b: ThisNameIsFarTooLong|23/149
+expect |split|p1
+expect |-heal|p1a: Slowbro|149/171|[from] drain|[of] p1b: ThisNameIsFarTooLong
+expect |-heal|p1a: Slowbro|149/171|[from] drain|[of] p1b: ThisNameIsFarTooLong
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |upkeep
+expect |rng|2|0
+expect |turn|7
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Zoë|Guard Split|p1a: Slowbro
+expect |-activate|p2a: Zoë|move: Guard Split|[of] p1a: Slowbro
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: ThisNameIsFarTooLong|Glacial Lance|p2b: Qwilfish|[spread] p2a,p2b
+expect |rng|100|46
+expect |rng|100|37
+expect |rng|24|12
+expect |rng|16|13
+expect |rng|24|15
+expect |rng|16|10
+expect |-resisted|p2b: Qwilfish
+expect |split|p2
+expect |-damage|p2a: Zoë|86/147
+expect |-damage|p2a: Zoë|86/147
+expect |split|p2
+expect |-damage|p2b: Qwilfish|26/154
+expect |-damage|p2b: Qwilfish|26/154
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Qwilfish|Shed Tail|p2b: Qwilfish
+expect |-fail|p2b: Qwilfish
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Slowbro|Air Cutter|p2b: Qwilfish|[spread] p2a,p2b
+expect |rng|100|76
+expect |rng|100|53
+expect |rng|8|1
+expect |rng|16|5
+expect |rng|8|1
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Zoë|61/147
+expect |-damage|p2a: Zoë|61/147
+expect |split|p2
+expect |-damage|p2b: Qwilfish|1/154
+expect |-damage|p2b: Qwilfish|1/154
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|1
+expect |turn|8
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: ThisNameIsFarTooLong|Glacial Lance|p2b: Qwilfish|[spread] p2a,p2b
+expect |rng|100|18
+expect |rng|100|53
+expect |rng|24|11
+expect |rng|16|13
+expect |rng|24|17
+expect |rng|16|10
+expect |-resisted|p2b: Qwilfish
+expect |split|p2
+expect |-damage|p2a: Zoë|42/147
+expect |-damage|p2a: Zoë|42/147
+expect |split|p2
+expect |-damage|p2b: Qwilfish|0 fnt
+expect |-damage|p2b: Qwilfish|0 fnt
+expect |rng|2|1
+expect |faint|p2b: Qwilfish
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Zoë|Guard Split|p1a: Slowbro
+expect |-activate|p2a: Zoë|move: Guard Split|[of] p1a: Slowbro
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Slowbro|Absorb|p1b: ThisNameIsFarTooLong
+expect |rng|100|2
+expect |rng|24|19
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|12/149
+expect |-damage|p1b: ThisNameIsFarTooLong|12/149
+expect |split|p1
+expect |-heal|p1a: Slowbro|155/171|[from] drain|[of] p1b: ThisNameIsFarTooLong
+expect |-heal|p1a: Slowbro|155/171|[from] drain|[of] p1b: ThisNameIsFarTooLong
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|0
+expect |turn|9
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: ThisNameIsFarTooLong|Guard Split|p1a: Slowbro
+expect |-activate|p1b: ThisNameIsFarTooLong|move: Guard Split|[of] p1a: Slowbro
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Zoë|Glacial Lance|p1a: Slowbro|[spread] p1a,p1b
+expect |rng|100|70
+expect |rng|100|57
+expect |rng|24|4
+expect |rng|16|15
+expect |-resisted|p1a: Slowbro
+expect |rng|24|15
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Slowbro|146/171
+expect |-damage|p1a: Slowbro|146/171
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|0 fnt
+expect |-damage|p1b: ThisNameIsFarTooLong|0 fnt
+expect |rng|2|0
+expect |faint|p1b: ThisNameIsFarTooLong
+expect |move|p1a: Slowbro|Absorb|p1: ThisNameIsFarTooLong|[notarget]
+expect |-fail|p1a: Slowbro
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Basculegion|Basculegion, L50, M, tera:Water|204/225
+expect |switch|p1b: Basculegion|Basculegion, L50, M, tera:Water|204/225
+expect |turn|10
+expect |rng|5|1
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Guard Split|p1b: Basculegion
+expect |-activate|p2a: Zoë|move: Guard Split|[of] p1b: Basculegion
+expect |move|p1b: Basculegion|Population Bomb|p1a: Slowbro
+expect |rng|100|46
+expect |rng|24|15
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Slowbro|136/171
+expect |-damage|p1a: Slowbro|136/171
+expect |rng|100|36
+expect |rng|24|4
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Slowbro|126/171
+expect |-damage|p1a: Slowbro|126/171
+expect |rng|100|71
+expect |rng|24|13
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Slowbro|115/171
+expect |-damage|p1a: Slowbro|115/171
+expect |rng|100|95
+expect |-hitcount|p1a: Slowbro|3
+expect |move|p1a: Slowbro|Absorb|p2a: Zoë
+expect |rng|100|52
+expect |rng|24|23
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Zoë|30/147
+expect |-damage|p2a: Zoë|30/147
+expect |split|p1
+expect |-heal|p1a: Slowbro|121/171|[from] drain|[of] p2a: Zoë
+expect |-heal|p1a: Slowbro|121/171|[from] drain|[of] p2a: Zoë
+expect |
+expect |upkeep
+expect |turn|11
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|5|3
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p2a: Zoë|Guard Split|p1b: Basculegion
+expect |-activate|p2a: Zoë|move: Guard Split|[of] p1b: Basculegion
+expect |rng|1|0
+expect |move|p1b: Basculegion|Curse|p1b: Basculegion
+expect |rng|100|42
+expect |-unboost|p1b: Basculegion|spe|1
+expect |-boost|p1b: Basculegion|atk|1
+expect |-boost|p1b: Basculegion|def|1
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Slowbro|Air Cutter|p2a: Zoë
+expect |rng|100|92
+expect |rng|8|0
+expect |rng|16|1
+expect |-crit|p2a: Zoë
+expect |split|p2
+expect |-damage|p2a: Zoë|0 fnt
+expect |-damage|p2a: Zoë|0 fnt
+expect |faint|p2a: Zoë
+expect |
+expect |win|p1

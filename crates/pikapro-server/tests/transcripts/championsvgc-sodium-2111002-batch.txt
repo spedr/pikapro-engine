@@ -1,0 +1,148 @@
+# championsvgc-sodium-2111002-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@option keep-alive
+@option replay omniscient
+@write
+>start {"formatid":"gen9championsvgc2026regmb","seed":"sodium,977233c224992209302a1676c5b34d48","rated":true}
+
+>player p1 {"name":"Alice","team":[{"name":"Swampert","species":"Swampert","item":"Swampertite","ability":"Torrent","moves":["Sheer Cold","Alluring Voice","Aerial Ace","Acid Spray"],"nature":"Mild","evs":{"hp":1,"atk":17,"def":28,"spa":3,"spd":17,"spe":0},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting"},{"name":"Floette-Eternal","species":"Floette-Eternal","item":"","ability":"Flower Veil","moves":["Volt Tackle","Fire Fang","Snowscape","Disable"],"nature":"Careful","evs":{"hp":20,"atk":1,"def":1,"spa":1,"spd":14,"spe":24},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric"},{"name":"Meowscarada","species":"Meowscarada","item":"Persim Berry","ability":"Overgrow","moves":["Dragon Darts","Toxic Thread"],"nature":"Serious","evs":{"hp":9,"atk":6,"def":9,"spa":3,"spd":21,"spe":11},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric"},{"name":"Serperior","species":"Serperior","item":"Soft Sand","ability":"Overgrow","moves":["Temper Flare"],"nature":"Quirky","evs":{"hp":0,"atk":10,"def":32,"spa":0,"spd":0,"spe":24},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy"},{"name":"Gengar","species":"Gengar","item":"Gengarite","ability":"Cursed Body","moves":["Shell Side Arm"],"nature":"Hasty","evs":{"hp":15,"atk":0,"def":24,"spa":22,"spd":0,"spe":3},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon"},{"name":"Nibbles","species":"Meowstic-F","item":"Oran Berry","ability":"Keen Eye","moves":["Zap Cannon","Sunny Day","Round"],"nature":"Hasty","evs":{"hp":19,"atk":24,"def":0,"spa":17,"spd":1,"spe":1},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock"}]}
+>player p2 {"name":"Bob","team":"Aggron||Aggronite|Sturdy|Charm|Calm|,4,20,11,9,21||||50|,,,,,Water]Weavile||HardStone|Pressure|BabyDollEyes|Careful|14,14,,5,19,9||||50|,,,,,Dark]Garbodor||IronBall|Stench|HeadSmash,CalmMind,Entrainment|Adamant|1,23,20,11,8,2||||50|,,,,,Water]Excadrill||WideLens|SandForce|FlowerTrick|Docile|13,8,12,3,,29|F|||50|,,,,,Ice]Clefable||Clefablite|CuteCharm|MeteorMash|Brave|4,7,4,,24,26|M|||50|,,,,,Grass]Lycanroc-Dusk||TwistedSpoon|ToughClaws|FirstImpression|Rash|,27,,,8,31|||S|50|,,,,,Electric"}
+>p2 
+>p2 team 3614
+>p1 team 2645
+>p2 switch Excadrill ,  move firstimpression 1
+@write
+>p1 move 3, default
+>p1 move 4 -2, switch 3
+>p2 move 1 1, switch 4
+>p1 switch 6
+>p2 move 1 2, switch 4
+@write
+# a comment
+>p1 move Fire Fang +1
+>p1 move 1 1, move 1 1
+@write
+>p1 move 2 -2, switch 4
+>p2 move Flower Trick 1 terastallize
+>p2 shift
+>p2 skip
+>p2 undo
+
+>tiebreak
+@write
+>p1 move 1
+@write
+>p1 move 1
+>chat after the end
+>forcewin p1
+>tiebreak
+>requestlog
+
+>p2 undo
+@message
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rated|
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Swampert, L50, F|
+|poke|p1|Floette-Eternal, L50, F|
+|poke|p1|Meowscarada, L50, M|
+|poke|p1|Serperior, L50, M|
+|poke|p1|Gengar, L50, F|
+|poke|p1|Meowstic-F, L50, F|
+|poke|p2|Aggron, L50, M|
+|poke|p2|Weavile, L50, F|
+|poke|p2|Garbodor, L50, M|
+|poke|p2|Excadrill, L50, F|
+|poke|p2|Clefable, L50, M|
+|poke|p2|Lycanroc-Dusk, L50, M, shiny|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Floette|Floette-Eternal, L50, F|169/169
+|switch|p1b: Nibbles|Meowstic-F, L50, F|168/168
+|switch|p2a: Garbodor|Garbodor, L50, M|156/156
+|switch|p2b: Lycanroc|Lycanroc-Dusk, L50, M, shiny|150/150
+|turn|1
+@message
+|
+|t:|
+|switch|p2a: Excadrill|Excadrill, L50, F|198/198
+|move|p2b: Lycanroc|First Impression|p1a: Floette
+|-resisted|p1a: Floette|1
+|-damage|p1a: Floette|120/169
+|move|p1b: Nibbles|Zap Cannon|p2a: Excadrill
+|-immune|p2a: Excadrill
+|move|p1a: Floette|Snowscape|p1a: Floette
+|-weather|Snowscape
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+|turn|2
+|
+|t:|
+|switch|p2b: Garbodor|Garbodor, L50, M|156/156
+|switch|p1b: Serperior|Serperior, L50, M|150/150
+|move|p2a: Excadrill|Flower Trick|p1a: Floette
+|-crit|p1a: Floette
+|-damage|p1a: Floette|37/169
+|move|p1a: Floette|Disable||[still]
+|-fail|p1a: Floette
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|switch|p2b: Lycanroc|Lycanroc-Dusk, L50, M, shiny|150/150
+|move|p1b: Serperior|Temper Flare|p2a: Excadrill
+|-supereffective|p2a: Excadrill|1
+|-damage|p2a: Excadrill|122/198
+|move|p2a: Excadrill|Flower Trick|p1b: Serperior
+|-resisted|p1b: Serperior|1
+|-crit|p1b: Serperior
+|-damage|p1b: Serperior|125/150
+|move|p1a: Floette|Volt Tackle|p2a: Excadrill
+|-immune|p2a: Excadrill
+|
+|-weather|Snowscape|[upkeep]
+|upkeep
+|turn|4
+@message
+|message|Time's up! Going to tiebreaker...
+|-message|Alice: 4 Pokemon left; Bob: 4 Pokemon left
+|-message|Alice: 51% total HP left; Bob: 60% total HP left
+|
+|win|Bob
+@message
+requesteddata
+>start {"formatid":"gen9championsvgc2026regmb","seed":"sodium,977233c224992209302a1676c5b34d48","rated":true}
+>player p1 {"name":"Alice","team":"Swampert||Swampertite|Torrent|SheerCold,AlluringVoice,AerialAce,AcidSpray|Mild|1,17,28,3,17,|F|||50|,,,,,Fighting]Floette|FloetteEternal||FlowerVeil|VoltTackle,FireFang,Snowscape,Disable|Careful|20,1,1,1,14,24|F|||50|,,,,,Electric]Meowscarada||PersimBerry|Overgrow|DragonDarts,ToxicThread|Serious|9,6,9,3,21,11||||50|,,,,,Electric]Serperior||SoftSand|Overgrow|TemperFlare|Quirky|,10,32,,,24|M|||50|,,,,,Fairy]Gengar||Gengarite|CursedBody|ShellSideArm|Hasty|15,,24,22,,3|F|||50|,,,,,Dragon]Nibbles|MeowsticF|OranBerry|KeenEye|ZapCannon,SunnyDay,Round|Hasty|19,24,,17,1,1||||50|,,,,,Rock"}
+>player p2 {"name":"Bob","team":"Aggron||Aggronite|Sturdy|Charm|Calm|,4,20,11,9,21||||50|,,,,,Water]Weavile||HardStone|Pressure|BabyDollEyes|Careful|14,14,,5,19,9||||50|,,,,,Dark]Garbodor||IronBall|Stench|HeadSmash,CalmMind,Entrainment|Adamant|1,23,20,11,8,2||||50|,,,,,Water]Excadrill||WideLens|SandForce|FlowerTrick|Docile|13,8,12,3,,29|F|||50|,,,,,Ice]Clefable||Clefablite|CuteCharm|MeteorMash|Brave|4,7,4,,24,26|M|||50|,,,,,Grass]Lycanroc-Dusk||TwistedSpoon|ToughClaws|FirstImpression|Rash|,27,,,8,31|||S|50|,,,,,Electric"}
+>p1 team 2, 6, 4, 5
+>p2 team 3, 6, 1, 4
+>p1 move snowscape, move zapcannon
+>p2 switch 4, move firstimpression +1
+>p1 move disable -2, switch 3
+>p2 move flowertrick +1, switch 4
+>p1 move volttackle +1, move temperflare +1
+>p2 move flowertrick +2, switch 4
+>tiebreak
+>chat after the end
+>forcewin p1
+@message
+|chat|after the end

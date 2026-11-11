@@ -1,0 +1,346 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed 938e bb6d 9304 53b3
+genders drawn
+team p1
+Dragalge (M) @ Dragalgite
+Ability: Poison Point
+Level: 50
+Tera Type: Ghost
+EVs: 29 HP / 1 Atk / 3 Def / 1 SpA / 22 SpD / 10 Spe
+Serious Nature
+- Hydro Cannon
+- After You
+- Slack Off
+
+Vivillon-Icy Snow (F)
+Ability: Friend Guard
+Level: 50
+Tera Type: Bug
+EVs: 29 HP / 5 SpA / 29 SpD / 1 Spe
+Calm Nature
+- Sheer Cold
+- Light Screen
+
+Sparky (Vivillon-Continental) @ Bright Powder
+Ability: Compound Eyes
+Level: 50
+Tera Type: Rock
+EVs: 10 HP / 1 Atk / 10 Def / 1 SpA / 27 SpD / 10 Spe
+Sassy Nature
+- Breaking Swipe
+- Spite
+- Sucker Punch
+
+Spiritomb
+Ability: Pressure
+Level: 50
+Shiny: Yes
+Tera Type: Water
+EVs: 25 HP / 4 Atk / 1 Def / 32 SpA / 1 SpD / 1 Spe
+Quirky Nature
+- Water Spout
+- Reflect
+- Court Change
+
+Forretress
+Ability: Sturdy
+Level: 50
+Tera Type: Fire
+EVs: 14 Atk / 5 Def / 26 SpA / 20 SpD
+Timid Nature
+- U-turn
+
+Ditto @ Fairy Feather
+Ability: Limber
+Level: 50
+Tera Type: Rock
+EVs: 14 HP / 15 Atk / 3 Def / 22 SpA / 12 SpD
+Docile Nature
+- Petal Blizzard
+- Power Trick
+end
+team p2
+Absol (F) @ Zoom Lens
+Ability: Pressure
+Level: 50
+Tera Type: Dark
+EVs: 32 HP / 1 Atk / 7 SpD / 26 Spe
+Adamant Nature
+- Stockpile
+
+Ampharos (M)
+Ability: Plus
+Level: 50
+Tera Type: Dragon
+EVs: 19 HP / 6 Atk / 6 Def / 22 SpA / 1 SpD / 12 Spe
+Rash Nature
+- Flip Turn
+
+Glimmora (F)
+Ability: Toxic Debris
+Level: 50
+Tera Type: Flying
+EVs: 7 HP / 31 Atk / 2 Def / 3 SpA / 2 SpD / 5 Spe
+Impish Nature
+- Swallow
+- Fake Out
+
+Emolga (M)
+Ability: Static
+Level: 50
+Tera Type: Fairy
+EVs: 3 HP / 26 Atk / 12 Def / 5 SpA / 18 Spe
+Rash Nature
+- Gravity
+- Infernal Parade
+
+Pikachu (Clawitzer) (F)
+Ability: Mega Launcher
+Level: 50
+Tera Type: Rock
+EVs: 7 HP / 29 SpA / 13 SpD / 17 Spe
+Modest Nature
+- Nasty Plot
+- Dual Wingbeat
+- Energy Ball
+- Mud-Slap
+
+Sir Hops-a-Lot (Emboar) @ Iron Ball
+Ability: Blaze
+Level: 50
+Tera Type: Dark
+EVs: 1 HP / 26 Atk / 2 Def / 19 SpA / 9 SpD / 9 Spe
+Timid Nature
+- Pyro Ball
+- Wrap
+end
+choice p1 team 524
+choice p2 team 146
+choice p1 switch 3
+choice p2 switch 3
+choice p1 move 2
+choice p2 move 2
+choice p1 switch 2
+choice p2 switch 2
+choice p1 move 2
+choice p2 move 1
+choice p1 move 1
+choice p2 switch 2
+choice p2 default
+choice p1 move 1
+choice p2 move 2
+choice p2 switch 3
+choice p1 move 1
+choice p2 move 1
+choice p1 move Light Screen
+choice p2 move 1
+choice p1 move 2
+choice p2 move 1
+choice p1 default
+choice p2 move stockpile
+choice p1 move 1
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Dragalge, L50, M|
+expect |poke|p1|Vivillon-Icy Snow, L50, F|
+expect |poke|p1|Vivillon-Continental, L50, M|
+expect |poke|p1|Spiritomb, L50, M, shiny|
+expect |poke|p1|Forretress, L50, M|
+expect |poke|p1|Ditto, L50|
+expect |poke|p2|Absol, L50, F|
+expect |poke|p2|Ampharos, L50, M|
+expect |poke|p2|Glimmora, L50, F|
+expect |poke|p2|Emolga, L50, M|
+expect |poke|p2|Clawitzer, L50, F|
+expect |poke|p2|Emboar, L50, M|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Forretress|Forretress, L50, M|150/150
+expect |switch|p1a: Forretress|Forretress, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Absol|Absol, L50, F|172/172
+expect |switch|p2a: Absol|Absol, L50, F|100/100
+expect |-ability|p2a: Absol|Pressure
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Emboar, L50, M|186/186
+expect |switch|p2a: Sir Hops-a-Lot|Emboar, L50, M|100/100
+expect |split|p1
+expect |switch|p1a: Spiritomb|Spiritomb, L50, M, shiny|150/150
+expect |switch|p1a: Spiritomb|Spiritomb, L50, M, shiny|100/100
+expect |-ability|p1a: Spiritomb|Pressure
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Spiritomb|Reflect|p1a: Spiritomb
+expect |-sidestart|p1: p1|Reflect
+expect |move|p2a: Sir Hops-a-Lot|Wrap|p1a: Spiritomb
+expect |-immune|p1a: Spiritomb
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Icy Snow, L50, F|184/184
+expect |switch|p1a: Vivillon|Vivillon-Icy Snow, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Emolga|Emolga, L50, M|133/133
+expect |switch|p2a: Emolga|Emolga, L50, M|100/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Emolga|Gravity|p2a: Emolga
+expect |-fieldstart|move: Gravity
+expect |move|p1a: Vivillon|Light Screen|p1a: Vivillon
+expect |-sidestart|p1: p1|move: Light Screen
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Emboar, L50, M|186/186
+expect |switch|p2a: Sir Hops-a-Lot|Emboar, L50, M|100/100
+expect |move|p1a: Vivillon|Sheer Cold|p2a: Sir Hops-a-Lot
+expect |rng|100|2
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|0 fnt
+expect |-damage|p2a: Sir Hops-a-Lot|0 fnt
+expect |faint|p2a: Sir Hops-a-Lot
+expect |-ohko
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Emolga|Emolga, L50, M|133/133
+expect |switch|p2a: Emolga|Emolga, L50, M|100/100
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Emolga|Infernal Parade|p1a: Vivillon
+expect |rng|100|70
+expect |rng|24|10
+expect |rng|16|1
+expect |rng|2|0
+expect |split|p1
+expect |-damage|p1a: Vivillon|169/184
+expect |-damage|p1a: Vivillon|91/100
+expect |rng|100|24
+expect |-status|p1a: Vivillon|brn
+expect |move|p1a: Vivillon|Sheer Cold|p2a: Emolga
+expect |rng|100|5
+expect |split|p2
+expect |-damage|p2a: Emolga|0 fnt
+expect |-damage|p2a: Emolga|0 fnt
+expect |faint|p2a: Emolga
+expect |-ohko
+expect |
+expect |split|p1
+expect |-damage|p1a: Vivillon|158/184 brn|[from] brn
+expect |-damage|p1a: Vivillon|85/100 brn|[from] brn
+expect |-sideend|p1: p1|Reflect
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Absol|Absol, L50, F|172/172
+expect |switch|p2a: Absol|Absol, L50, F|100/100
+expect |-ability|p2a: Absol|Pressure
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Absol|Stockpile|p2a: Absol
+expect |-start|p2a: Absol|stockpile1
+expect |-boost|p2a: Absol|def|1
+expect |-boost|p2a: Absol|spd|1
+expect |move|p1a: Vivillon|Sheer Cold|p2a: Absol|[miss]
+expect |rng|100|21
+expect |-miss|p1a: Vivillon|p2a: Absol
+expect |
+expect |split|p1
+expect |-damage|p1a: Vivillon|147/184 brn|[from] brn
+expect |-damage|p1a: Vivillon|79/100 brn|[from] brn
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2a: Absol|Stockpile|p2a: Absol
+expect |-start|p2a: Absol|stockpile2
+expect |-boost|p2a: Absol|def|1
+expect |-boost|p2a: Absol|spd|1
+expect |move|p1a: Vivillon|Light Screen||[still]
+expect |-fail|p1a: Vivillon
+expect |
+expect |split|p1
+expect |-damage|p1a: Vivillon|136/184 brn|[from] brn
+expect |-damage|p1a: Vivillon|73/100 brn|[from] brn
+expect |-sideend|p1: p1|move: Light Screen
+expect |-fieldend|move: Gravity
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p2a: Absol|Stockpile|p2a: Absol
+expect |-start|p2a: Absol|stockpile3
+expect |-boost|p2a: Absol|def|1
+expect |-boost|p2a: Absol|spd|1
+expect |move|p1a: Vivillon|Light Screen|p1a: Vivillon
+expect |-sidestart|p1: p1|move: Light Screen
+expect |
+expect |split|p1
+expect |-damage|p1a: Vivillon|125/184 brn|[from] brn
+expect |-damage|p1a: Vivillon|67/100 brn|[from] brn
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p2a: Absol|Stockpile||[still]
+expect |-fail|p2a: Absol
+expect |move|p1a: Vivillon|Sheer Cold|p2a: Absol|[miss]
+expect |rng|100|25
+expect |-miss|p1a: Vivillon|p2a: Absol
+expect |
+expect |split|p1
+expect |-damage|p1a: Vivillon|114/184 brn|[from] brn
+expect |-damage|p1a: Vivillon|61/100 brn|[from] brn
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p2a: Absol|Stockpile||[still]
+expect |-fail|p2a: Absol
+expect |move|p1a: Vivillon|Sheer Cold|p2a: Absol
+expect |rng|100|7
+expect |split|p2
+expect |-damage|p2a: Absol|0 fnt
+expect |-damage|p2a: Absol|0 fnt
+expect |faint|p2a: Absol
+expect |-ohko
+expect |
+expect |win|p1

@@ -1,0 +1,111 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 2400 0026 0002 0057
+genders drawn
+team p1
+Alakazam
+Ability: Synchronize
+Level: 38
+Hardy Nature
+- Future Sight
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Golisopod
+Ability: Wimp Out
+Level: 50
+Hardy Nature
+- Splash
+
+Blissey
+Ability: Natural Cure
+Level: 50
+Hardy Nature
+- Splash
+end
+choice p1 move 1
+choice p2 move 1
+choice p1 switch 2
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p2 switch 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Alakazam|Alakazam, L38, M|101/101
+expect |switch|p1a: Alakazam|Alakazam, L38, M|101/101
+expect |split|p2
+expect |switch|p2a: Golisopod|Golisopod, L50, M|150/150
+expect |switch|p2a: Golisopod|Golisopod, L50, M|150/150
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Alakazam|Future Sight|p2a: Golisopod
+expect |-start|p1a: Alakazam|move: Future Sight
+expect |move|p2a: Golisopod|Splash|p2a: Golisopod
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Snorlax|Snorlax, L50, M|235/235
+expect |switch|p1a: Snorlax|Snorlax, L50, M|235/235
+expect |move|p2a: Golisopod|Splash|p2a: Golisopod
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Golisopod|Splash|p2a: Golisopod
+expect |-nothing
+expect |move|p1a: Snorlax|Splash|p1a: Snorlax
+expect |-nothing
+expect |
+expect |-end|p2a: Golisopod|move: Future Sight
+expect |rng|100|99
+expect |rng|24|0
+expect |rng|16|7
+expect |-crit|p2a: Golisopod
+expect |split|p2
+expect |-damage|p2a: Golisopod|54/150
+expect |-damage|p2a: Golisopod|54/150
+expect |-activate|p2a: Golisopod|ability: Wimp Out
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Blissey|Blissey, L50, F|330/330
+expect |switch|p2a: Blissey|Blissey, L50, F|330/330
+expect |turn|4
+request p1 {"active":[{"moves":[{"move":"Future Sight","id":"futuresight","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Psychic"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Alakazam","details":"Alakazam, L38, M","condition":"101/101","active":true,"stats":{"atk":54,"def":50,"spa":119,"spd":88,"spe":107},"moves":["futuresight"],"baseAbility":"synchronize","item":"","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Snorlax","details":"Snorlax, L50, M","condition":"235/235","active":false,"stats":{"atk":130,"def":85,"spa":85,"spd":130,"spe":50},"moves":["splash"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Splash","id":"splash","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Bug"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Golisopod","details":"Golisopod, L50, M","condition":"150/150","active":true,"stats":{"atk":145,"def":160,"spa":80,"spd":110,"spe":60},"moves":["splash"],"baseAbility":"wimpout","item":"","pokeball":"pokeball","ability":"wimpout","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Blissey","details":"Blissey, L50, F","condition":"330/330","active":false,"stats":{"atk":30,"def":30,"spa":95,"spd":155,"spe":75},"moves":["splash"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Future Sight","id":"futuresight","pp":15,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Psychic"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Alakazam","details":"Alakazam, L38, M","condition":"101/101","active":true,"stats":{"atk":54,"def":50,"spa":119,"spd":88,"spe":107},"moves":["futuresight"],"baseAbility":"synchronize","item":"","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Snorlax","details":"Snorlax, L50, M","condition":"235/235","active":false,"stats":{"atk":130,"def":85,"spa":85,"spd":130,"spe":50},"moves":["splash"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Splash","id":"splash","pp":63,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Bug"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Golisopod","details":"Golisopod, L50, M","condition":"150/150","active":true,"stats":{"atk":145,"def":160,"spa":80,"spd":110,"spe":60},"moves":["splash"],"baseAbility":"wimpout","item":"","pokeball":"pokeball","ability":"wimpout","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Blissey","details":"Blissey, L50, F","condition":"330/330","active":false,"stats":{"atk":30,"def":30,"spa":95,"spd":155,"spe":75},"moves":["splash"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Splash","id":"splash","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Snorlax","details":"Snorlax, L50, M","condition":"235/235","active":true,"stats":{"atk":130,"def":85,"spa":85,"spd":130,"spe":50},"moves":["splash"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Alakazam","details":"Alakazam, L38, M","condition":"101/101","active":false,"stats":{"atk":54,"def":50,"spa":119,"spd":88,"spe":107},"moves":["futuresight"],"baseAbility":"synchronize","item":"","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Splash","id":"splash","pp":62,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Bug"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Golisopod","details":"Golisopod, L50, M","condition":"150/150","active":true,"stats":{"atk":145,"def":160,"spa":80,"spd":110,"spe":60},"moves":["splash"],"baseAbility":"wimpout","item":"","pokeball":"pokeball","ability":"wimpout","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Blissey","details":"Blissey, L50, F","condition":"330/330","active":false,"stats":{"atk":30,"def":30,"spa":95,"spd":155,"spe":75},"moves":["splash"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Snorlax","details":"Snorlax, L50, M","condition":"235/235","active":true,"stats":{"atk":130,"def":85,"spa":85,"spd":130,"spe":50},"moves":["splash"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Alakazam","details":"Alakazam, L38, M","condition":"101/101","active":false,"stats":{"atk":54,"def":50,"spa":119,"spd":88,"spe":107},"moves":["futuresight"],"baseAbility":"synchronize","item":"","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+request p2 {"forceSwitch":[true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Golisopod","details":"Golisopod, L50, M","condition":"54/150","active":true,"stats":{"atk":145,"def":160,"spa":80,"spd":110,"spe":60},"moves":["splash"],"baseAbility":"wimpout","item":"","pokeball":"pokeball","ability":"wimpout","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Blissey","details":"Blissey, L50, F","condition":"330/330","active":false,"stats":{"atk":30,"def":30,"spa":95,"spd":155,"spe":75},"moves":["splash"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Splash","id":"splash","pp":63,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Snorlax","details":"Snorlax, L50, M","condition":"235/235","active":true,"stats":{"atk":130,"def":85,"spa":85,"spd":130,"spe":50},"moves":["splash"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Alakazam","details":"Alakazam, L38, M","condition":"101/101","active":false,"stats":{"atk":54,"def":50,"spa":119,"spd":88,"spe":107},"moves":["futuresight"],"baseAbility":"synchronize","item":"","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Splash","id":"splash","pp":64,"maxpp":64,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Blissey","details":"Blissey, L50, F","condition":"330/330","active":true,"stats":{"atk":30,"def":30,"spa":95,"spd":155,"spe":75},"moves":["splash"],"baseAbility":"naturalcure","item":"","pokeball":"pokeball","ability":"naturalcure","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Golisopod","details":"Golisopod, L50, M","condition":"54/150","active":false,"stats":{"atk":145,"def":160,"spa":80,"spd":110,"spe":60},"moves":["splash"],"baseAbility":"wimpout","item":"","pokeball":"pokeball","ability":"wimpout","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}

@@ -1,0 +1,94 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9ou
+seed 0000 0000 02ae a612
+genders drawn
+team p1
+Mew @ Flame Orb
+Ability: Levitate
+Hardy Nature
+- Splash
+- Psycho Shift
+end
+team p2
+Blissey
+Ability: Water Veil
+Hardy Nature
+- Splash
+- Substitute
+- Safeguard
+- Misty Terrain
+end
+choice p1 team 1
+choice p2 team 1
+choice p1 move 1
+choice p2 move 1
+choice p1 move 2
+choice p2 move 1
+choice p1 move 2
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] OU
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Endless Battle Clause: Forcing endless battles is banned
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|OHKO Clause: OHKO moves are banned
+expect |rule|Evasion Items Clause: Evasion items are banned
+expect |rule|Evasion Moves Clause: Evasion moves are banned
+expect |rule|Evasion Abilities Clause: Evasion abilities are banned
+expect |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+expect |clearpoke
+expect |poke|p1|Mew|
+expect |poke|p2|Blissey, F|
+expect |teampreview
+expect |
+expect |t:|
+expect |teamsize|p1|1
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Mew|Mew|341/341
+expect |switch|p1a: Mew|Mew|100/100
+expect |split|p2
+expect |switch|p2a: Blissey|Blissey, F|651/651
+expect |switch|p2a: Blissey|Blissey, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Mew|Splash|p1a: Mew
+expect |-nothing
+expect |move|p2a: Blissey|Splash|p2a: Blissey
+expect |-nothing
+expect |
+expect |-status|p1a: Mew|brn|[from] item: Flame Orb
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Mew|Psycho Shift|p2a: Blissey
+expect |rng|100|51
+expect |-immune|p2a: Blissey|[from] ability: Water Veil
+expect |move|p2a: Blissey|Splash|p2a: Blissey
+expect |-nothing
+expect |
+expect |split|p1
+expect |-damage|p1a: Mew|320/341 brn|[from] brn
+expect |-damage|p1a: Mew|94/100 brn|[from] brn
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Mew|Psycho Shift|p2a: Blissey
+expect |rng|100|72
+expect |-immune|p2a: Blissey|[from] ability: Water Veil
+expect |move|p2a: Blissey|Splash|p2a: Blissey
+expect |-nothing
+expect |
+expect |split|p1
+expect |-damage|p1a: Mew|299/341 brn|[from] brn
+expect |-damage|p1a: Mew|88/100 brn|[from] brn
+expect |upkeep
+expect |turn|4

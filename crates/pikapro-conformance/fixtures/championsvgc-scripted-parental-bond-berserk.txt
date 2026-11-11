@@ -1,0 +1,210 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Kangaskhan @ Kangaskhanite
+Ability: Scrappy
+Level: 50
+Hardy Nature
+- Double-Edge
+
+Pikachu
+Ability: Static
+Level: 50
+Hardy Nature
+- Splash
+
+Eevee
+Ability: Run Away
+Level: 50
+Hardy Nature
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+
+Vulpix
+Ability: Flash Fire
+Level: 50
+Hardy Nature
+- Splash
+
+Ditto
+Ability: Limber
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Drampa @ Sitrus Berry
+Ability: Berserk
+Level: 50
+Hardy Nature
+- Splash
+
+Pikachu
+Ability: Static
+Level: 50
+Hardy Nature
+- Splash
+
+Eevee
+Ability: Run Away
+Level: 50
+Hardy Nature
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+
+Vulpix
+Ability: Flash Fire
+Level: 50
+Hardy Nature
+- Splash
+
+Ditto
+Ability: Limber
+Level: 50
+Hardy Nature
+- Splash
+end
+choice p1 team 1234
+choice p2 team 1234
+choice p1 move 1 1 mega, move 1
+choice p2 move 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Kangaskhan, L50, F|
+expect |poke|p1|Pikachu, L50, F|
+expect |poke|p1|Eevee, L50, F|
+expect |poke|p1|Snorlax, L50, F|
+expect |poke|p1|Vulpix, L50, M|
+expect |poke|p1|Ditto, L50|
+expect |poke|p2|Drampa, L50, M|
+expect |poke|p2|Pikachu, L50, F|
+expect |poke|p2|Eevee, L50, M|
+expect |poke|p2|Snorlax, L50, M|
+expect |poke|p2|Vulpix, L50, M|
+expect |poke|p2|Ditto, L50|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Kangaskhan|Kangaskhan, L50, F|180/180
+expect |switch|p1a: Kangaskhan|Kangaskhan, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Pikachu|Pikachu, L50, F|110/110
+expect |switch|p1b: Pikachu|Pikachu, L50, F|100/100
+expect |rng|2|0
+expect |split|p2
+expect |switch|p2a: Drampa|Drampa, L50, M|153/153
+expect |switch|p2a: Drampa|Drampa, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Pikachu|Pikachu, L50, F|110/110
+expect |switch|p2b: Pikachu|Pikachu, L50, F|100/100
+expect |rng|3|1
+expect |rng|3|2
+expect |rng|2|0
+expect |rng|3|0
+expect |rng|2|1
+expect |turn|1
+expect |rng|3|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|3|2
+expect |rng|2|0
+expect |rng|3|1
+expect |rng|2|1
+expect |detailschange|p1a: Kangaskhan|Kangaskhan-Mega, L50, F
+expect |-mega|p1a: Kangaskhan|Kangaskhan|Kangaskhanite
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Kangaskhan|Double-Edge|p2a: Drampa
+expect |rng|100|45
+expect |rng|24|18
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Drampa|47/153
+expect |-damage|p2a: Drampa|30/100
+expect |rng|2|0
+expect |-enditem|p2a: Drampa|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2a: Drampa|85/153|[from] item: Sitrus Berry
+expect |-heal|p2a: Drampa|55/100|[from] item: Sitrus Berry
+expect |rng|24|21
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Drampa|61/153
+expect |-damage|p2a: Drampa|39/100
+expect |rng|2|0
+expect |-hitcount|p2a: Drampa|2
+expect |split|p1
+expect |-damage|p1a: Kangaskhan|137/180|[from] Recoil
+expect |-damage|p1a: Kangaskhan|76/100|[from] Recoil
+expect |rng|2|1
+expect |-ability|p2a: Drampa|Berserk|boost
+expect |-boost|p2a: Drampa|spa|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Pikachu|Splash|p2b: Pikachu
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1b: Pikachu|Splash|p1b: Pikachu
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Drampa|Splash|p2a: Drampa
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|1
+expect |turn|2

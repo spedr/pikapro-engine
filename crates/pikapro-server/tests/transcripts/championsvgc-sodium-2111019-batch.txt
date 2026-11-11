@@ -1,0 +1,99 @@
+# championsvgc-sodium-2111019-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@option replay omniscient
+@write
+>start {"formatid":"gen9championsvgc2026regmb","seed":"sodium,7079623232c6afcf35241fcbe3de9327"}
+>player p1 {"name":"Alice","team":"Zoë|Passimian|QuickClaw|Defiant|FakeOut,Amnesia|Rash|12,,4,8,12,8||||50|,,,,,Ground]Hydreigon||MysticWater|Levitate|Thrash,DazzlingGleam|Quirky|31,4,4,,25,|M|||50|,,,,,Dark]Meowstic-F||MentalHerb|Infiltrator|Bind,Spite|Modest|10,26,,1,2,27|F|||50|,,,,,Dragon]Medicham||Medichamite|Telepathy|NightDaze,StunSpore,Flail|Rash|31,15,4,,,5|||S|50|,,,,,Flying]Sir Hops-a-Lot|RotomFan|ChestoBerry|Levitate|Soak,Hex,CrushClaw|Quirky|2,4,17,11,1,29||||50|,,,,,Poison]X|Basculegion||Adaptability|BabyDollEyes,Howl,PowerTrip,PowerWhip|Bold|18,11,3,10,7,11|M||S|50|,,,,,Rock","avatar":"lucas"}
+@write
+>player p2 {"name":"Bob","team":"Nibbles|Corviknight||Unnerve|HeavySlam|Serious|20,13,5,25,3,||||50|,,,,,Fire]Lucario||Lucarionite|InnerFocus|IceBeam,Thrash,IceShard|Lonely|4,7,,2,30,20||||50|,,,,,Rock]Sir Hops-a-Lot|Tsareena|Metronome|SweetVeil|SteelRoller,FlowerTrick,SmackDown|Lax|29,1,1,29,4,|F|||50|,,,,,Normal]Sparky|Gengar|LightBall|CursedBody|Yawn,LowSweep|Impish|14,12,1,,8,20|F|||50|,,,,,Ground]Scolipede||Scolipite|PoisonPoint|NastyPlot|Docile|30,24,,9,,3|M|||50|,,,,,Bug]Ditto|||Limber|NobleRoar,Endeavor,BulkUp|Quirky|17,20,,18,2,5||||50|,,,,,Fire"}
+@write
+>p2 team 4213
+>p1 Move 1
+>p1 team 4326
+>p1 auto
+# a comment
+>p2 switch tsareena ,  move icebeam -1
+>chat turn talk 32
+>p1 move 3 -2 mega, move 1 2
+>p2 move 1 2, move 1 -1
+@write
+>p2 switch gengar, move 1 3
+>forcetie
+@message
+|t:|
+|gametype|doubles
+|player|p1|Alice|lucas|
+@message
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Passimian, L50, F|
+|poke|p1|Hydreigon, L50, M|
+|poke|p1|Meowstic-F, L50, F|
+|poke|p1|Medicham, L50, F, shiny|
+|poke|p1|Rotom-Fan, L50|
+|poke|p1|Basculegion, L50, M, shiny|
+|poke|p2|Corviknight, L50, M|
+|poke|p2|Lucario, L50, F|
+|poke|p2|Tsareena, L50, F|
+|poke|p2|Gengar, L50, F|
+|poke|p2|Scolipede, L50, M|
+|poke|p2|Ditto, L50|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+@message
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Medicham|Medicham, L50, F, shiny|166/166
+|switch|p1b: Meowstic|Meowstic-F, L50, F|159/159
+|switch|p2a: Sparky|Gengar, L50, F|149/149
+|switch|p2b: Lucario|Lucario, L50, F|149/149
+|turn|1
+|
+|t:|
+|switch|p2a: Sir Hops-a-Lot|Tsareena, L50, F|176/176
+|move|p1b: Meowstic|Bind|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|171/176
+|-activate|p2a: Sir Hops-a-Lot|move: Bind|[of] p1b: Meowstic
+|move|p2b: Lucario|Ice Beam|p2a: Sir Hops-a-Lot
+|-supereffective|p2a: Sir Hops-a-Lot|1
+|-damage|p2a: Sir Hops-a-Lot|85/176
+|-status|p2a: Sir Hops-a-Lot|frz
+|move|p1a: Medicham|Night Daze|p2b: Lucario
+|-resisted|p2b: Lucario|1
+|-damage|p2b: Lucario|135/149
+|-unboost|p2b: Lucario|accuracy|1
+|
+|-damage|p2a: Sir Hops-a-Lot|63/176 frz|[from] move: Bind|[partiallytrapped]
+|upkeep
+|turn|2
+|chat|turn talk 32
+|
+|t:|
+|detailschange|p1a: Medicham|Medicham-Mega, L50, F, shiny
+|-mega|p1a: Medicham|Medicham|Medichamite
+|move|p1b: Meowstic|Bind|p2b: Lucario
+|-resisted|p2b: Lucario|1
+|-damage|p2b: Lucario|132/149
+|-activate|p2b: Lucario|move: Bind|[of] p1b: Meowstic
+|move|p2b: Lucario|Ice Beam|p2a: Sir Hops-a-Lot
+|-supereffective|p2a: Sir Hops-a-Lot|1
+|-damage|p2a: Sir Hops-a-Lot|0 fnt
+|faint|p2a: Sir Hops-a-Lot
+|move|p1a: Medicham|Flail|p1b: Meowstic
+|-damage|p1b: Meowstic|135/159
+|
+|-damage|p2b: Lucario|114/149|[from] move: Bind|[partiallytrapped]
+|upkeep
+@message
+|
+|tie

@@ -1,0 +1,633 @@
+# gen9vgc2025regi-sodium-2200311-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@write
+>start {"formatid":"gen9vgc2025regi","seed":"sodium,26720e19089b92e35afb2e30d99b442b66a6933b419b27a2dfc41ec3ffb28077"}
+>player p1 {"name":"Alice","team":"Oinkologne-F||HardStone|AromaVeil|DragonDance,StunSpore|Bashful|8,48,133,117,46,12|F|||50|,,,,,Flying]Bronzor||TerrainExtender|Levitate|Feint,Tackle,ParabolicCharge|Sassy|76,18,167,78,52,109||||50|,,,,,Rock]Chomp|Gothita|CovertCloak|Frisk|KowtowCleave,Rollout|Quiet|96,15,25,54,71,169||||50|,,,,,Stellar]Sir Hops-a-Lot|Kingdra|MagoBerry|Sniper|ToxicThread|Sassy|50,82,185,21,60,80||||50|,,,,,Grass]Dudunsparce-Three-Segment||GriseousCore|SereneGrace|PsyshieldBash,WaveCrash,DynamicPunch|Mild|160,95,1,111,66,50||||50|,,,,,Dark]Quagsire||LiechiBerry|Damp|BulkUp,Tailwind|Quirky|160,205,21,40,62,16|||S|50|,,,,,Flying"}
+>player p1 {"name":"Alice"}
+>player p2 {"name":"Bob","team":"Dartrix||JabocaBerry|LongReach|SlackOff,AfterYou,Psystrike,TailGlow|Careful|15,83,114,45,49,197|F|||50|,,,,,Fighting]Sir Hops-a-Lot|Veluza||MoldBreaker|AxeKick,HighHorsepower,DragonPulse|Brave|116,13,213,34,10,98|M|||50|,,,,,Ice]Rellor||GriseousCore|ShedSkin|Growth,OrderUp,ThunderCage,AncientPower|Naughty|63,93,49,71,104,23|M|||50|,,,,,Dragon]Spiritomb||ToxicPlate|Pressure|ChillyReception|Bold|42,249,48,5,117,36||||50|,,,,,Ice]Sparky|Pawniard||Defiant|Astonish,Dig,IronHead,Pound|Naughty|8,112,64,9,194,87|M|||50|,,,,,Steel]Big Tony's Pal|Kirlia||Synchronize|TeraBlast,Growl|Quirky|15,88,32,113,9,232|||S|50|,,,,,Dark"}
+>p1 team 6154
+>p2 team 5126
+>p2 move 4 1, move 3 1 terastallize
+>p1 move tailwind, move Stun Spore +1
+>p1 move Bulk Up ,  move Stun Spore +1
+>p2 move 3 2, move psystrike mega
+>p2 move 2 2, move 2 2
+>p1 default
+>p2 move 4 2, switch 4
+>p2 undo
+>p1 move 2 terastallize, move 2 -1
+>p1 undo
+>p1 move 1 terastallize, switch 4
+>p2 move 1 -2, move 2
+>p1 switch 3, move 1 -1
+>p2 move Dig -2,switch veluza
+>p1 move 3 -2, move 1 2
+>p2 move Dragon Pulse 3 terastal
+>p2 move 1, move 2 -1
+>p2 move pound -2,move Dragon Pulse -1
+>p1 move 3 -2, move 1 1
+>p1 switch 3, move 1 1
+>p2 move 3 -2,switch kirlia
+>p2 switch 0
+>p2 pass, switch 4
+>p1 switch 3, switch 4
+>p1 undo
+>p1 switch 3, move 1 1
+>p2 move 2 -2, move 1
+>p2 move 1, move psystrike -1
+>p1 move 2 2, move 1 -1
+>p1 move 2 2, move 1 -1
+>p2 switch 6
+>reseed sodium,2bb67a8f72f633126cf57b82f50ab7f3a581c66c43809992f7e7744855807564
+>p2 skip ,  switch veluza
+>p1 move 2 2, switch 3
+>p2 move 3 -2, move 1 1
+>reseed gen5,65b155442fc6293f
+>p1 switch 3, pass
+>p2 switch dartrix
+>player p1 {"name":"Renamed0"}
+>p2 move 4 2, move 1 1
+>p2 move 4 2, move 1 1
+>p1 move recharge, move bulkup
+>p1 testfight
+>p1 switch 5
+>p1 undo
+>p1 
+>p1 move 1 2, move 1
+>p2 move 2 1, move 2 +1
+>p1 switch 4, move 1
+>p1 move Stun Spore -1 terastallize
+>p1 move 1, switch 4
+>p2 move 1,move High Horsepower -1
+>p2 undo
+>p1 move 2 1,move toxicthread +1
+>p2 move 1 1, pass
+>p1 move 2 1, move 1 -1
+>p2 move 3 1, pass
+>p1 switch Quagsire
+>p1 move 2, move 1 1
+>requestlog
+>p2 move 2 2, pass
+>p2 auto
+>p1 move 1
+>p1 move 1 ,  move toxicthread -1
+>p2 move 4 1, pass
+>p1 switch 6
+>p1 move 2, pass
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Psystrike needs a target
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Your Sparky doesn't have a move matching dragonpulse
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You do not have a Pokémon named "0" to switch to
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: It's not your turn
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You do not have a Pokémon in slot 6 to switch to
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: You can't switch to a fainted Pokémon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Sir Hops-a-Lot doesn't have a move matching recharge
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Sir Hops-a-Lot's Fight button is known to be safe
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You do not have a Pokémon in slot 5 to switch to
+@message
+sideupdate
+p1
+|error|[Invalid choice] Unrecognized choice: 
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Invalid target for Stun Spore
+@message
+requesteddata
+>start {"formatid":"gen9vgc2025regi","seed":"sodium,26720e19089b92e35afb2e30d99b442b66a6933b419b27a2dfc41ec3ffb28077"}
+>player p1 {"name":"Alice","team":"Oinkologne-F||HardStone|AromaVeil|DragonDance,StunSpore|Bashful|8,48,133,117,46,12|F|||50|,,,,,Flying]Bronzor||TerrainExtender|Levitate|Feint,Tackle,ParabolicCharge|Sassy|76,18,167,78,52,109||||50|,,,,,Rock]Chomp|Gothita|CovertCloak|Frisk|KowtowCleave,Rollout|Quiet|96,15,25,54,71,169||||50|,,,,,Stellar]Sir Hops-a-Lot|Kingdra|MagoBerry|Sniper|ToxicThread|Sassy|50,82,185,21,60,80||||50|,,,,,Grass]Dudunsparce-Three-Segment||GriseousCore|SereneGrace|PsyshieldBash,WaveCrash,DynamicPunch|Mild|160,95,1,111,66,50||||50|,,,,,Dark]Quagsire||LiechiBerry|Damp|BulkUp,Tailwind|Quirky|160,205,21,40,62,16|||S|50|,,,,,Flying"}
+>player p2 {"name":"Bob","team":"Dartrix||JabocaBerry|LongReach|SlackOff,AfterYou,Psystrike,TailGlow|Careful|15,83,114,45,49,197|F|||50|,,,,,Fighting]Sir Hops-a-Lot|Veluza||MoldBreaker|AxeKick,HighHorsepower,DragonPulse|Brave|116,13,213,34,10,98|M|||50|,,,,,Ice]Rellor||GriseousCore|ShedSkin|Growth,OrderUp,ThunderCage,AncientPower|Naughty|63,93,49,71,104,23|M|||50|,,,,,Dragon]Spiritomb||ToxicPlate|Pressure|ChillyReception|Bold|42,249,48,5,117,36||||50|,,,,,Ice]Sparky|Pawniard||Defiant|Astonish,Dig,IronHead,Pound|Naughty|8,112,64,9,194,87|M|||50|,,,,,Steel]Big Tony's Pal|Kirlia||Synchronize|TeraBlast,Growl|Quirky|15,88,32,113,9,232|||S|50|,,,,,Dark"}
+>p1 team 6, 1, 5, 4
+>p2 team 5, 1, 2, 6
+>p1 move tailwind, move stunspore +1
+>p2 move pound +1, move psystrike +1 terastallize
+>p1 move bulkup, move stunspore +1
+>p2 move dig +2, move afteryou +2
+>p1 move bulkup, move dragondance
+>p2 move pound +2, switch 4
+>p1 move bulkup terastallize, switch 4
+>p2 move astonish -2, move growl
+>p1 switch 3, move toxicthread -1
+>p2 move dig -2, switch 3
+>p1 move dynamicpunch -2, move toxicthread +2
+>p2 move dig -2, move highhorsepower -1
+>p1 move dynamicpunch -2, move toxicthread +1
+>p2 move pound -2, move dragonpulse -1
+>p1 switch 3, move toxicthread +1
+>p2 move ironhead -2, switch 3
+>p2 pass, switch 4
+>p1 switch 3, move toxicthread +1
+>p2 move dig -2, move slackoff
+>p1 move wavecrash +2, move toxicthread -1
+>p2 move dig -2, move psystrike -1
+>reseed sodium,2bb67a8f72f633126cf57b82f50ab7f3a581c66c43809992f7e7744855807564
+>p2 pass, switch 3
+>p1 move wavecrash +2, switch 3
+>p2 move ironhead -2, move axekick +1
+>reseed 26033,21828,12230,10559
+>p1 switch 3, pass
+>player p1 {"name":"Renamed0"}
+>p1 move toxicthread +2, move bulkup
+>p2 move pound +2, move axekick +1
+>p1 switch 4, move bulkup
+>p2 move dig +1, move highhorsepower +1
+>p1 move dragondance, switch 4
+>p2 move dig +1, move highhorsepower -1
+>p1 move stunspore +1, move toxicthread +1
+>p2 move astonish +1, pass
+>p1 move stunspore +1, move toxicthread -1
+>p2 move ironhead +1, pass
+>p1 switch 4, pass
+@message
+sideupdate
+p1
+|error|[Invalid choice] Incomplete choice: move 1 - missing other pokemon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You do not have a Pokémon in slot 6 to switch to
+@message
+update
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] VGC 2025 Reg I
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Oinkologne-F, L50, F|
+|poke|p1|Bronzor, L50|
+|poke|p1|Gothita, L50, M|
+|poke|p1|Kingdra, L50, F|
+|poke|p1|Dudunsparce-*, L50, F|
+|poke|p1|Quagsire, L50, F|
+|poke|p2|Dartrix, L50, F|
+|poke|p2|Veluza, L50, M|
+|poke|p2|Rellor, L50, M|
+|poke|p2|Spiritomb, L50, F|
+|poke|p2|Pawniard, L50, M|
+|poke|p2|Kirlia, L50, F|
+|teampreview|4
+|split|p1
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+|split|p2
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|split|p1
+|uhtmlchange|otsrequest|
+
+|split|p2
+|uhtmlchange|otsrequest|
+
+|split|p1
+|switch|p1a: Quagsire|Quagsire, L50, F, shiny|190/190
+|switch|p1a: Quagsire|Quagsire, L50, F, shiny|100/100
+|split|p1
+|switch|p1b: Oinkologne|Oinkologne-F, L50, F|191/191
+|switch|p1b: Oinkologne|Oinkologne-F, L50, F|100/100
+|split|p2
+|switch|p2a: Sparky|Pawniard, L50, M|121/121
+|switch|p2a: Sparky|Pawniard, L50, M|100/100
+|split|p2
+|switch|p2b: Dartrix|Dartrix, L50, F|155/155
+|switch|p2b: Dartrix|Dartrix, L50, F|100/100
+|turn|1
+|
+|t:|
+|-terastallize|p2b: Dartrix|Fighting
+|move|p2b: Dartrix|Psystrike|p1a: Quagsire
+|split|p1
+|-damage|p1a: Quagsire|158/190
+|-damage|p1a: Quagsire|84/100
+|move|p2a: Sparky|Pound|p1a: Quagsire
+|split|p1
+|-damage|p1a: Quagsire|137/190
+|-damage|p1a: Quagsire|73/100
+|move|p1b: Oinkologne|Stun Spore|p2a: Sparky
+|-status|p2a: Sparky|par
+|move|p1a: Quagsire|Tailwind|p1a: Quagsire
+|-sidestart|p1: Alice|move: Tailwind
+|
+|upkeep
+|turn|2
+|
+|t:|
+|move|p1b: Oinkologne|Stun Spore|p2a: Sparky
+|-fail|p2a: Sparky|par
+|move|p1a: Quagsire|Bulk Up|p1a: Quagsire
+|-boost|p1a: Quagsire|atk|1
+|-boost|p1a: Quagsire|def|1
+|move|p2b: Dartrix|After You||[still]
+|-fail|p2b: Dartrix
+|cant|p2a: Sparky|par
+|
+|upkeep
+|turn|3
+|
+|t:|
+|split|p2
+|switch|p2b: Big Tony's Pal|Kirlia, L50, F, shiny|115/115
+|switch|p2b: Big Tony's Pal|Kirlia, L50, F, shiny|100/100
+|move|p1b: Oinkologne|Dragon Dance|p1b: Oinkologne
+|-boost|p1b: Oinkologne|atk|1
+|-boost|p1b: Oinkologne|spe|1
+|move|p1a: Quagsire|Bulk Up|p1a: Quagsire
+|-boost|p1a: Quagsire|atk|1
+|-boost|p1a: Quagsire|def|1
+|move|p2a: Sparky|Pound|p1b: Oinkologne
+|split|p1
+|-damage|p1b: Oinkologne|170/191
+|-damage|p1b: Oinkologne|90/100
+|
+|upkeep
+|turn|4
+|
+|t:|
+|split|p1
+|switch|p1b: Sir Hops-a-Lot|Kingdra, L50, F|156/156
+|switch|p1b: Sir Hops-a-Lot|Kingdra, L50, F|100/100
+|-terastallize|p1a: Quagsire|Flying
+|move|p1a: Quagsire|Bulk Up|p1a: Quagsire
+|-boost|p1a: Quagsire|atk|1
+|-boost|p1a: Quagsire|def|1
+|move|p2b: Big Tony's Pal|Growl|p1a: Quagsire|[spread] p1a,p1b
+|-unboost|p1a: Quagsire|atk|1
+|-unboost|p1b: Sir Hops-a-Lot|atk|1
+|move|p2a: Sparky|Astonish|p2b: Big Tony's Pal
+|-supereffective|p2b: Big Tony's Pal
+|split|p2
+|-damage|p2b: Big Tony's Pal|55/115
+|-damage|p2b: Big Tony's Pal|48/100
+|
+|-sideend|p1: Alice|move: Tailwind
+|upkeep
+|turn|5
+|
+|t:|
+|split|p2
+|switch|p2b: Sir Hops-a-Lot|Veluza, L50, M|180/180
+|switch|p2b: Sir Hops-a-Lot|Veluza, L50, M|100/100
+|-ability|p2b: Sir Hops-a-Lot|Mold Breaker
+|split|p1
+|switch|p1a: Dudunsparce|Dudunsparce-Three-Segment, L50, F|220/220
+|switch|p1a: Dudunsparce|Dudunsparce-Three-Segment, L50, F|100/100
+|move|p1b: Sir Hops-a-Lot|Toxic Thread|p1a: Dudunsparce
+|-unboost|p1a: Dudunsparce|spe|1
+|-status|p1a: Dudunsparce|psn
+|move|p2a: Sparky|Dig||[still]
+|-prepare|p2a: Sparky|Dig
+|
+|split|p1
+|-damage|p1a: Dudunsparce|193/220 psn|[from] psn
+|-damage|p1a: Dudunsparce|88/100 psn|[from] psn
+|upkeep
+|turn|6
+|
+|t:|
+|move|p1b: Sir Hops-a-Lot|Toxic Thread|p2b: Sir Hops-a-Lot
+|-unboost|p2b: Sir Hops-a-Lot|spe|1
+|-status|p2b: Sir Hops-a-Lot|psn
+|move|p2b: Sir Hops-a-Lot|High Horsepower|p2a: Sparky|[miss]
+|-miss|p2b: Sir Hops-a-Lot|p2a: Sparky
+|move|p1a: Dudunsparce|Dynamic Punch|p1b: Sir Hops-a-Lot
+|split|p1
+|-damage|p1b: Sir Hops-a-Lot|115/156
+|-damage|p1b: Sir Hops-a-Lot|74/100
+|-start|p1b: Sir Hops-a-Lot|confusion
+|move|p2a: Sparky|Dig|p2b: Sir Hops-a-Lot|[from] lockedmove
+|split|p2
+|-damage|p2b: Sir Hops-a-Lot|145/180 psn
+|-damage|p2b: Sir Hops-a-Lot|81/100 psn
+|
+|split|p2
+|-damage|p2b: Sir Hops-a-Lot|123/180 psn|[from] psn
+|-damage|p2b: Sir Hops-a-Lot|69/100 psn|[from] psn
+|split|p1
+|-damage|p1a: Dudunsparce|166/220 psn|[from] psn
+|-damage|p1a: Dudunsparce|76/100 psn|[from] psn
+|upkeep
+|turn|7
+|
+|t:|
+|-activate|p1b: Sir Hops-a-Lot|confusion
+|split|p1
+|-damage|p1b: Sir Hops-a-Lot|104/156|[from] confusion
+|-damage|p1b: Sir Hops-a-Lot|67/100|[from] confusion
+|move|p2b: Sir Hops-a-Lot|Dragon Pulse|p2a: Sparky
+|-resisted|p2a: Sparky
+|split|p2
+|-damage|p2a: Sparky|98/121 par
+|-damage|p2a: Sparky|81/100 par
+|move|p1a: Dudunsparce|Dynamic Punch|p1b: Sir Hops-a-Lot|[miss]
+|-miss|p1a: Dudunsparce|p1b: Sir Hops-a-Lot
+|move|p2a: Sparky|Pound|p2b: Sir Hops-a-Lot
+|split|p2
+|-damage|p2b: Sir Hops-a-Lot|102/180 psn
+|-damage|p2b: Sir Hops-a-Lot|57/100 psn
+|
+|split|p2
+|-damage|p2b: Sir Hops-a-Lot|80/180 psn|[from] psn
+|-damage|p2b: Sir Hops-a-Lot|45/100 psn|[from] psn
+|split|p1
+|-damage|p1a: Dudunsparce|139/220 psn|[from] psn
+|-damage|p1a: Dudunsparce|64/100 psn|[from] psn
+|upkeep
+|turn|8
+|
+|t:|
+|split|p2
+|switch|p2b: Big Tony's Pal|Kirlia, L50, F, shiny|55/115
+|switch|p2b: Big Tony's Pal|Kirlia, L50, F, shiny|48/100
+|split|p1
+|switch|p1a: Quagsire|Quagsire, L50, F, shiny, tera:Flying|137/190
+|switch|p1a: Quagsire|Quagsire, L50, F, shiny, tera:Flying|73/100
+|-activate|p1b: Sir Hops-a-Lot|confusion
+|move|p1b: Sir Hops-a-Lot|Toxic Thread||[still]
+|-unboost|p2a: Sparky|spe|1
+|-ability|p2a: Sparky|Defiant|boost
+|-boost|p2a: Sparky|atk|2
+|-fail|p1b: Sir Hops-a-Lot
+|move|p2a: Sparky|Iron Head|p2b: Big Tony's Pal
+|-supereffective|p2b: Big Tony's Pal
+|split|p2
+|-damage|p2b: Big Tony's Pal|0 fnt
+|-damage|p2b: Big Tony's Pal|0 fnt
+|faint|p2b: Big Tony's Pal
+|
+|upkeep
+|
+|t:|
+|split|p2
+|switch|p2b: Dartrix|Dartrix, L50, F, tera:Fighting|155/155
+|switch|p2b: Dartrix|Dartrix, L50, F, tera:Fighting|100/100
+|turn|9
+|
+|t:|
+|split|p1
+|switch|p1a: Dudunsparce|Dudunsparce-Three-Segment, L50, F|139/220 psn
+|switch|p1a: Dudunsparce|Dudunsparce-Three-Segment, L50, F|64/100 psn
+|-activate|p1b: Sir Hops-a-Lot|confusion
+|move|p1b: Sir Hops-a-Lot|Toxic Thread||[still]
+|-unboost|p2a: Sparky|spe|1
+|-ability|p2a: Sparky|Defiant|boost
+|-boost|p2a: Sparky|atk|2
+|-fail|p1b: Sir Hops-a-Lot
+|move|p2b: Dartrix|Slack Off||[still]
+|-fail|p2b: Dartrix|heal
+|move|p2a: Sparky|Dig||[still]
+|-prepare|p2a: Sparky|Dig
+|
+|split|p1
+|-damage|p1a: Dudunsparce|112/220 psn|[from] psn
+|-damage|p1a: Dudunsparce|51/100 psn|[from] psn
+|upkeep
+|turn|10
+|
+|t:|
+|-end|p1b: Sir Hops-a-Lot|confusion
+|move|p1b: Sir Hops-a-Lot|Toxic Thread|p1a: Dudunsparce
+|-unboost|p1a: Dudunsparce|spe|1
+|-fail|p1a: Dudunsparce|psn
+|move|p2b: Dartrix|Psystrike|p2a: Sparky|[miss]
+|-miss|p2b: Dartrix|p2a: Sparky
+|move|p1a: Dudunsparce|Wave Crash|p2b: Dartrix
+|split|p2
+|-damage|p2b: Dartrix|94/155
+|-damage|p2b: Dartrix|61/100
+|-enditem|p2b: Dartrix|Jaboca Berry|[eat]
+|split|p1
+|-damage|p1a: Dudunsparce|85/220 psn|[from] item: Jaboca Berry|[of] p2b: Dartrix
+|-damage|p1a: Dudunsparce|39/100 psn|[from] item: Jaboca Berry|[of] p2b: Dartrix
+|split|p1
+|-damage|p1a: Dudunsparce|65/220 psn|[from] Recoil
+|-damage|p1a: Dudunsparce|30/100 psn|[from] Recoil
+|move|p2a: Sparky|Dig|p2b: Dartrix|[from] lockedmove
+|-crit|p2b: Dartrix
+|split|p2
+|-damage|p2b: Dartrix|0 fnt
+|-damage|p2b: Dartrix|0 fnt
+|faint|p2b: Dartrix
+|
+|split|p1
+|-damage|p1a: Dudunsparce|38/220 psn|[from] psn
+|-damage|p1a: Dudunsparce|18/100 psn|[from] psn
+|upkeep
+|message|The battle's RNG was reset.
+|
+|t:|
+|split|p2
+|switch|p2b: Sir Hops-a-Lot|Veluza, L50, M|80/180 psn
+|switch|p2b: Sir Hops-a-Lot|Veluza, L50, M|45/100 psn
+|-ability|p2b: Sir Hops-a-Lot|Mold Breaker
+|turn|11
+|
+|t:|
+|split|p1
+|switch|p1b: Quagsire|Quagsire, L50, F, shiny, tera:Flying|137/190
+|switch|p1b: Quagsire|Quagsire, L50, F, shiny, tera:Flying|73/100
+|move|p2b: Sir Hops-a-Lot|Axe Kick|p1a: Dudunsparce
+|-supereffective|p1a: Dudunsparce
+|split|p1
+|-damage|p1a: Dudunsparce|0 fnt
+|-damage|p1a: Dudunsparce|0 fnt
+|faint|p1a: Dudunsparce
+|cant|p2a: Sparky|par
+|
+|split|p2
+|-damage|p2b: Sir Hops-a-Lot|58/180 psn|[from] psn
+|-damage|p2b: Sir Hops-a-Lot|33/100 psn|[from] psn
+|upkeep
+|message|The battle's RNG was reset.
+|
+|t:|
+|split|p1
+|switch|p1a: Sir Hops-a-Lot|Kingdra, L50, F|104/156
+|switch|p1a: Sir Hops-a-Lot|Kingdra, L50, F|67/100
+|turn|12
+|player|p1|Renamed0||
+|
+|t:|
+|move|p1a: Sir Hops-a-Lot|Toxic Thread|p2b: Sir Hops-a-Lot
+|-unboost|p2b: Sir Hops-a-Lot|spe|1
+|-fail|p2b: Sir Hops-a-Lot|psn
+|move|p2b: Sir Hops-a-Lot|Axe Kick|p1a: Sir Hops-a-Lot
+|split|p1
+|-damage|p1a: Sir Hops-a-Lot|55/156
+|-damage|p1a: Sir Hops-a-Lot|36/100
+|move|p1b: Quagsire|Bulk Up|p1b: Quagsire
+|-boost|p1b: Quagsire|atk|1
+|-boost|p1b: Quagsire|def|1
+|move|p2a: Sparky|Pound|p1b: Quagsire
+|split|p1
+|-damage|p1b: Quagsire|98/190
+|-damage|p1b: Quagsire|52/100
+|
+|split|p2
+|-damage|p2b: Sir Hops-a-Lot|36/180 psn|[from] psn
+|-damage|p2b: Sir Hops-a-Lot|20/100 psn|[from] psn
+|upkeep
+|turn|13
+|
+|t:|
+|split|p1
+|switch|p1a: Oinkologne|Oinkologne-F, L50, F|170/191
+|switch|p1a: Oinkologne|Oinkologne-F, L50, F|90/100
+|move|p2b: Sir Hops-a-Lot|High Horsepower|p1a: Oinkologne
+|split|p1
+|-damage|p1a: Oinkologne|117/191
+|-damage|p1a: Oinkologne|62/100
+|move|p1b: Quagsire|Bulk Up|p1b: Quagsire
+|-boost|p1b: Quagsire|atk|1
+|-boost|p1b: Quagsire|def|1
+|move|p2a: Sparky|Dig||[still]
+|-prepare|p2a: Sparky|Dig
+|
+|split|p2
+|-damage|p2b: Sir Hops-a-Lot|14/180 psn|[from] psn
+|-damage|p2b: Sir Hops-a-Lot|8/100 psn|[from] psn
+|upkeep
+|turn|14
+|
+|t:|
+|split|p1
+|switch|p1b: Sir Hops-a-Lot|Kingdra, L50, F|55/156
+|switch|p1b: Sir Hops-a-Lot|Kingdra, L50, F|36/100
+|move|p1a: Oinkologne|Dragon Dance|p1a: Oinkologne
+|-boost|p1a: Oinkologne|atk|1
+|-boost|p1a: Oinkologne|spe|1
+|move|p2b: Sir Hops-a-Lot|High Horsepower|p2a: Sparky|[miss]
+|-miss|p2b: Sir Hops-a-Lot|p2a: Sparky
+|cant|p2a: Sparky|par
+|
+|split|p2
+|-damage|p2b: Sir Hops-a-Lot|0 fnt|[from] psn
+|-damage|p2b: Sir Hops-a-Lot|0 fnt|[from] psn
+|faint|p2b: Sir Hops-a-Lot
+|upkeep
+|turn|15
+|
+|t:|
+|move|p1a: Oinkologne|Stun Spore|p2a: Sparky
+|-fail|p2a: Sparky|par
+|move|p1b: Sir Hops-a-Lot|Toxic Thread||[still]
+|-unboost|p2a: Sparky|spe|1
+|-ability|p2a: Sparky|Defiant|boost
+|-boost|p2a: Sparky|atk|2
+|-fail|p1b: Sir Hops-a-Lot
+|cant|p2a: Sparky|par
+|
+|upkeep
+|turn|16
+|
+|t:|
+|move|p1a: Oinkologne|Stun Spore|p2a: Sparky|[miss]
+|-miss|p1a: Oinkologne|p2a: Sparky
+|move|p1b: Sir Hops-a-Lot|Toxic Thread|p1a: Oinkologne
+|-unboost|p1a: Oinkologne|spe|1
+|-status|p1a: Oinkologne|psn
+|move|p2a: Sparky|Iron Head|p1a: Oinkologne
+|split|p1
+|-damage|p1a: Oinkologne|0 fnt
+|-damage|p1a: Oinkologne|0 fnt
+|faint|p1a: Oinkologne
+|
+|upkeep
+|
+|t:|
+|split|p1
+|switch|p1a: Quagsire|Quagsire, L50, F, shiny, tera:Flying|98/190
+|switch|p1a: Quagsire|Quagsire, L50, F, shiny, tera:Flying|52/100
+|turn|17
+|
+|t:|
+|move|p1b: Sir Hops-a-Lot|Toxic Thread||[still]
+|-unboost|p2a: Sparky|spe|1
+|-boost|p2a: Sparky|atk|0
+|-fail|p1b: Sir Hops-a-Lot
+|move|p1a: Quagsire|Tailwind|p1a: Quagsire
+|-sidestart|p1: Renamed0|move: Tailwind
+|move|p2a: Sparky|Dig||[still]
+|-prepare|p2a: Sparky|Dig
+|
+|upkeep
+|turn|18
+|
+|t:|
+|move|p1b: Sir Hops-a-Lot|Toxic Thread|p1a: Quagsire
+|-unboost|p1a: Quagsire|spe|1
+|-status|p1a: Quagsire|psn
+|move|p1a: Quagsire|Bulk Up|p1a: Quagsire
+|-boost|p1a: Quagsire|atk|1
+|-boost|p1a: Quagsire|def|1
+|move|p2a: Sparky|Dig|p1b: Sir Hops-a-Lot|[from] lockedmove
+|split|p1
+|-damage|p1b: Sir Hops-a-Lot|0 fnt
+|-damage|p1b: Sir Hops-a-Lot|0 fnt
+|faint|p1b: Sir Hops-a-Lot
+|
+|split|p1
+|-damage|p1a: Quagsire|75/190 psn|[from] psn
+|-damage|p1a: Quagsire|40/100 psn|[from] psn
+|upkeep
+|turn|19
+|
+|t:|
+|move|p1a: Quagsire|Tailwind||[still]
+|-fail|p1a: Quagsire
+|move|p2a: Sparky|Pound|p1a: Quagsire
+|split|p1
+|-damage|p1a: Quagsire|18/190 psn
+|-damage|p1a: Quagsire|10/100 psn
+|-enditem|p1a: Quagsire|Liechi Berry|[eat]
+|-boost|p1a: Quagsire|atk|1|[from] item: Liechi Berry
+|
+|split|p1
+|-damage|p1a: Quagsire|0 fnt|[from] psn
+|-damage|p1a: Quagsire|0 fnt|[from] psn
+|faint|p1a: Quagsire
+|
+|win|Bob
+@message
+sideupdate
+p1
+|request|null
+@message
+sideupdate
+p2
+|request|null
+@message
+end
+{"winner":"Bob","seed":"sodium,26720e19089b92e35afb2e30d99b442b66a6933b419b27a2dfc41ec3ffb28077","turns":19,"p1":"Renamed0","p2":"Bob","p1team":[{"name":"Oinkologne","species":"Oinkologne-F","item":"Hard Stone","ability":"Aroma Veil","moves":["Dragon Dance","Stun Spore"],"nature":"Bashful","evs":{"hp":8,"atk":48,"def":133,"spa":117,"spd":46,"spe":12},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Bronzor","species":"Bronzor","item":"Terrain Extender","ability":"Levitate","moves":["Feint","Tackle","Parabolic Charge"],"nature":"Sassy","evs":{"hp":76,"atk":18,"def":167,"spa":78,"spd":52,"spe":109},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Gothita","item":"Covert Cloak","ability":"Frisk","moves":["Kowtow Cleave","Rollout"],"nature":"Quiet","evs":{"hp":96,"atk":15,"def":25,"spa":54,"spd":71,"spe":169},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sir Hops-a-Lot","species":"Kingdra","item":"Mago Berry","ability":"Sniper","moves":["Toxic Thread"],"nature":"Sassy","evs":{"hp":50,"atk":82,"def":185,"spa":21,"spd":60,"spe":80},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Dudunsparce","species":"Dudunsparce-Three-Segment","item":"Griseous Core","ability":"Serene Grace","moves":["Psyshield Bash","Wave Crash","Dynamic Punch"],"nature":"Mild","evs":{"hp":160,"atk":95,"def":1,"spa":111,"spd":66,"spe":50},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Quagsire","species":"Quagsire","item":"Liechi Berry","ability":"Damp","moves":["Bulk Up","Tailwind"],"nature":"Quirky","evs":{"hp":160,"atk":205,"def":21,"spa":40,"spd":62,"spe":16},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Dartrix","species":"Dartrix","item":"Jaboca Berry","ability":"Long Reach","moves":["Slack Off","After You","Psystrike","Tail Glow"],"nature":"Careful","evs":{"hp":15,"atk":83,"def":114,"spa":45,"spd":49,"spe":197},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sir Hops-a-Lot","species":"Veluza","item":"","ability":"Mold Breaker","moves":["Axe Kick","High Horsepower","Dragon Pulse"],"nature":"Brave","evs":{"hp":116,"atk":13,"def":213,"spa":34,"spd":10,"spe":98},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Rellor","species":"Rellor","item":"Griseous Core","ability":"Shed Skin","moves":["Growth","Order Up","Thunder Cage","Ancient Power"],"nature":"Naughty","evs":{"hp":63,"atk":93,"def":49,"spa":71,"spd":104,"spe":23},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Spiritomb","species":"Spiritomb","item":"Toxic Plate","ability":"Pressure","moves":["Chilly Reception"],"nature":"Bold","evs":{"hp":42,"atk":249,"def":48,"spa":5,"spd":117,"spe":36},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sparky","species":"Pawniard","item":"","ability":"Defiant","moves":["Astonish","Dig","Iron Head","Pound"],"nature":"Naughty","evs":{"hp":8,"atk":112,"def":64,"spa":9,"spd":194,"spe":87},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Kirlia","item":"","ability":"Synchronize","moves":["Tera Blast","Growl"],"nature":"Quirky","evs":{"hp":15,"atk":88,"def":32,"spa":113,"spd":9,"spe":232},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[0,1],"inputLog":[">start {\"formatid\":\"gen9vgc2025regi\",\"seed\":\"sodium,26720e19089b92e35afb2e30d99b442b66a6933b419b27a2dfc41ec3ffb28077\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Oinkologne-F||HardStone|AromaVeil|DragonDance,StunSpore|Bashful|8,48,133,117,46,12|F|||50|,,,,,Flying]Bronzor||TerrainExtender|Levitate|Feint,Tackle,ParabolicCharge|Sassy|76,18,167,78,52,109||||50|,,,,,Rock]Chomp|Gothita|CovertCloak|Frisk|KowtowCleave,Rollout|Quiet|96,15,25,54,71,169||||50|,,,,,Stellar]Sir Hops-a-Lot|Kingdra|MagoBerry|Sniper|ToxicThread|Sassy|50,82,185,21,60,80||||50|,,,,,Grass]Dudunsparce-Three-Segment||GriseousCore|SereneGrace|PsyshieldBash,WaveCrash,DynamicPunch|Mild|160,95,1,111,66,50||||50|,,,,,Dark]Quagsire||LiechiBerry|Damp|BulkUp,Tailwind|Quirky|160,205,21,40,62,16|||S|50|,,,,,Flying\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Dartrix||JabocaBerry|LongReach|SlackOff,AfterYou,Psystrike,TailGlow|Careful|15,83,114,45,49,197|F|||50|,,,,,Fighting]Sir Hops-a-Lot|Veluza||MoldBreaker|AxeKick,HighHorsepower,DragonPulse|Brave|116,13,213,34,10,98|M|||50|,,,,,Ice]Rellor||GriseousCore|ShedSkin|Growth,OrderUp,ThunderCage,AncientPower|Naughty|63,93,49,71,104,23|M|||50|,,,,,Dragon]Spiritomb||ToxicPlate|Pressure|ChillyReception|Bold|42,249,48,5,117,36||||50|,,,,,Ice]Sparky|Pawniard||Defiant|Astonish,Dig,IronHead,Pound|Naughty|8,112,64,9,194,87|M|||50|,,,,,Steel]Big Tony's Pal|Kirlia||Synchronize|TeraBlast,Growl|Quirky|15,88,32,113,9,232|||S|50|,,,,,Dark\"}",">p1 team 6, 1, 5, 4",">p2 team 5, 1, 2, 6",">p1 move tailwind, move stunspore +1",">p2 move pound +1, move psystrike +1 terastallize",">p1 move bulkup, move stunspore +1",">p2 move dig +2, move afteryou +2",">p1 move bulkup, move dragondance",">p2 move pound +2, switch 4",">p1 move bulkup terastallize, switch 4",">p2 move astonish -2, move growl",">p1 switch 3, move toxicthread -1",">p2 move dig -2, switch 3",">p1 move dynamicpunch -2, move toxicthread +2",">p2 move dig -2, move highhorsepower -1",">p1 move dynamicpunch -2, move toxicthread +1",">p2 move pound -2, move dragonpulse -1",">p1 switch 3, move toxicthread +1",">p2 move ironhead -2, switch 3",">p2 pass, switch 4",">p1 switch 3, move toxicthread +1",">p2 move dig -2, move slackoff",">p1 move wavecrash +2, move toxicthread -1",">p2 move dig -2, move psystrike -1",">reseed sodium,2bb67a8f72f633126cf57b82f50ab7f3a581c66c43809992f7e7744855807564",">p2 pass, switch 3",">p1 move wavecrash +2, switch 3",">p2 move ironhead -2, move axekick +1",">reseed 26033,21828,12230,10559",">p1 switch 3, pass",">player p1 {\"name\":\"Renamed0\"}",">p1 move toxicthread +2, move bulkup",">p2 move pound +2, move axekick +1",">p1 switch 4, move bulkup",">p2 move dig +1, move highhorsepower +1",">p1 move dragondance, switch 4",">p2 move dig +1, move highhorsepower -1",">p1 move stunspore +1, move toxicthread +1",">p2 move astonish +1, pass",">p1 move stunspore +1, move toxicthread -1",">p2 move ironhead +1, pass",">p1 switch 4, pass",">p1 move tailwind, move toxicthread +1",">p2 move dig +2, pass",">p1 move bulkup, move toxicthread -1",">p2 move dig +2, pass",">p1 move tailwind, pass",">p2 move pound +1, pass"]}

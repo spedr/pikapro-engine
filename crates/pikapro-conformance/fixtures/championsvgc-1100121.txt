@@ -1,0 +1,495 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 558c 76a7 6304 37ac
+genders drawn
+team p1
+Charizard (M) @ Muscle Band
+Ability: Blaze
+Level: 50
+Tera Type: Flying
+EVs: 31 HP / 8 Def / 2 SpA / 25 Spe
+Naive Nature
+- Wrap
+- Thief
+- Alluring Voice
+- Pounce
+
+Garganacl (M) @ Wide Lens
+Ability: Clear Body
+Level: 50
+Tera Type: Fighting
+EVs: 3 HP / 18 Atk / 19 Def / 3 SpA / 17 SpD / 4 Spe
+Calm Nature
+- Kowtow Cleave
+- Dragon Pulse
+- Mud Shot
+
+Eelektross (M) @ Eelektrossite
+Ability: Levitate
+Level: 50
+Tera Type: Fire
+EVs: 13 HP / 5 Atk / 29 SpD / 19 Spe
+Lax Nature
+- Leech Seed
+- Electrify
+- Lava Plume
+- Toxic Spikes
+
+Torterra (M) @ Shed Shell
+Ability: Shell Armor
+Level: 50
+Tera Type: Fighting
+EVs: 20 HP / 1 Atk / 8 Def / 11 SpA / 15 SpD / 3 Spe
+Hardy Nature
+- Eerie Spell
+- Bone Rush
+- Electrify
+- Zap Cannon
+
+Kommo-o (M)
+Ability: Bulletproof
+Level: 50
+Tera Type: Ghost
+EVs: 1 HP / 20 Atk / 20 Def / 1 SpD / 23 Spe
+Naughty Nature
+- Zen Headbutt
+
+Vivillon-Savanna (M)
+Ability: Friend Guard
+Level: 50
+Tera Type: Poison
+EVs: 22 HP / 32 Def / 12 Spe
+Impish Nature
+- Safeguard
+- Armor Cannon
+end
+team p2
+Slowking-Galar (M)
+Ability: Own Tempo
+Level: 50
+Tera Type: Flying
+EVs: 25 Atk / 4 Def / 9 SpA / 2 SpD / 26 Spe
+Timid Nature
+- Agility
+
+Steelix (M) @ Steelixite
+Ability: Rock Head
+Level: 50
+Tera Type: Fighting
+EVs: 15 HP / 30 SpA / 21 SpD
+Calm Nature
+- Wide Guard
+- X-Scissor
+- Flash Cannon
+- Clanging Scales
+
+Vivillon-Tundra (M) @ Lum Berry
+Ability: Shield Dust
+Level: 50
+Tera Type: Fighting
+EVs: 13 HP / 1 Atk / 28 Def / 5 SpA / 18 Spe
+Mild Nature
+- Snowscape
+- Energy Ball
+
+Avalugg (M)
+Ability: Own Tempo
+Level: 50
+Tera Type: Ghost
+EVs: 21 HP / 6 Atk / 1 Def / 31 SpA / 4 Spe
+Sassy Nature
+- Ice Punch
+
+Scizor (M)
+Ability: Light Metal
+Level: 50
+Tera Type: Bug
+EVs: 11 HP / 23 Atk / 20 Def / 6 SpD / 6 Spe
+Quiet Nature
+- Aqua Tail
+- Flower Trick
+- High Jump Kick
+
+Musharna (M)
+Ability: Telepathy
+Level: 50
+Tera Type: Grass
+EVs: 23 HP / 7 Atk / 2 Def / 2 SpD / 31 Spe
+Jolly Nature
+- Belly Drum
+- Syrup Bomb
+- Acid Spray
+end
+choice p1 team 1346
+choice p2 team 5346
+choice p1 move 3 1, move 2 -1 mega
+choice p2 move 1 -2, move 2 2
+choice p1 move 4 1, move 2 2
+choice p2 move 2 2, move 2 -1
+choice p1 move 1 1, move 2 2
+choice p2 move 1 1, move 2 -1
+choice p1 switch 3, move 1 -1
+choice p2 move 2 2, switch 3
+choice p1 pass, switch 3
+choice p2 move 1 1, move 1 2
+choice p1 move 4 1, switch 4
+choice p2 move 2 2, move 1 2
+choice p1 move 2 -2, move 2 -1
+choice p1 pass, switch 4
+choice p2 move 2 2, move 1 -1
+choice p1 move 2 -2, move 2 2
+choice p2 switch 3, move 1 2
+choice p1 move 3 1, move 4 -1
+choice p2 move 2 2, move 1 2
+choice p1 move 2 1, move 2 2
+choice p2 switch 4, move 1 1
+choice p1 move 1 2, pass
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Charizard, L50, M|
+expect |poke|p1|Garganacl, L50, M|
+expect |poke|p1|Eelektross, L50, M|
+expect |poke|p1|Torterra, L50, M|
+expect |poke|p1|Kommo-o, L50, M|
+expect |poke|p1|Vivillon-Savanna, L50, M|
+expect |poke|p2|Slowking-Galar, L50, M|
+expect |poke|p2|Steelix, L50, M|
+expect |poke|p2|Vivillon-Tundra, L50, M|
+expect |poke|p2|Avalugg, L50, M|
+expect |poke|p2|Scizor, L50, M|
+expect |poke|p2|Musharna, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Charizard|Charizard, L50, M|184/184
+expect |switch|p1a: Charizard|Charizard, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Eelektross|Eelektross, L50, M|173/173
+expect |switch|p1b: Eelektross|Eelektross, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Scizor|Scizor, L50, M|156/156
+expect |switch|p2a: Scizor|Scizor, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Vivillon|Vivillon-Tundra, L50, M|168/168
+expect |switch|p2b: Vivillon|Vivillon-Tundra, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |detailschange|p1b: Eelektross|Eelektross-Mega, L50, M
+expect |-mega|p1b: Eelektross|Eelektross|Eelektrossite
+expect |move|p1a: Charizard|Alluring Voice|p2a: Scizor
+expect |rng|100|75
+expect |rng|24|13
+expect |rng|16|13
+expect |-resisted|p2a: Scizor|1
+expect |split|p2
+expect |-damage|p2a: Scizor|137/156
+expect |-damage|p2a: Scizor|87/100
+expect |rng|100|58
+expect |move|p2b: Vivillon|Energy Ball|p1b: Eelektross
+expect |rng|100|34
+expect |rng|24|20
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Eelektross|134/173
+expect |-damage|p1b: Eelektross|77/100
+expect |rng|100|17
+expect |move|p1b: Eelektross|Electrify||[still]
+expect |-fail|p1b: Eelektross
+expect |move|p2a: Scizor|Aqua Tail|p2b: Vivillon
+expect |rng|100|28
+expect |rng|24|14
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Vivillon|89/168
+expect |-damage|p2b: Vivillon|52/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Charizard|Pounce|p2a: Scizor
+expect |rng|100|34
+expect |rng|24|9
+expect |rng|16|12
+expect |-resisted|p2a: Scizor|1
+expect |split|p2
+expect |-damage|p2a: Scizor|129/156
+expect |-damage|p2a: Scizor|82/100
+expect |rng|100|77
+expect |-unboost|p2a: Scizor|spe|1
+expect |move|p2b: Vivillon|Energy Ball|p2a: Scizor
+expect |rng|100|48
+expect |rng|24|3
+expect |rng|16|4
+expect |-resisted|p2a: Scizor|2
+expect |split|p2
+expect |-damage|p2a: Scizor|118/156
+expect |-damage|p2a: Scizor|75/100
+expect |rng|100|6
+expect |-unboost|p2a: Scizor|spd|1
+expect |move|p1b: Eelektross|Electrify||[still]
+expect |-fail|p1b: Eelektross
+expect |move|p2a: Scizor|Flower Trick|p1b: Eelektross
+expect |rng|16|7
+expect |-crit|p1b: Eelektross
+expect |split|p1
+expect |-damage|p1b: Eelektross|65/173
+expect |-damage|p1b: Eelektross|37/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Charizard|Wrap|p2a: Scizor|[miss]
+expect |rng|100|95
+expect |-miss|p1a: Charizard|p2a: Scizor
+expect |move|p2b: Vivillon|Energy Ball|p2a: Scizor
+expect |rng|100|96
+expect |rng|24|5
+expect |rng|16|14
+expect |-resisted|p2a: Scizor|2
+expect |split|p2
+expect |-damage|p2a: Scizor|103/156
+expect |-damage|p2a: Scizor|66/100
+expect |rng|100|60
+expect |move|p1b: Eelektross|Electrify||[still]
+expect |-fail|p1b: Eelektross
+expect |move|p2a: Scizor|Aqua Tail|p1a: Charizard|[miss]
+expect |rng|100|94
+expect |-miss|p2a: Scizor|p1a: Charizard
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Torterra|Torterra, L50, M|190/190
+expect |switch|p1a: Torterra|Torterra, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Avalugg|Avalugg, L50, M|191/191
+expect |switch|p2b: Avalugg|Avalugg, L50, M|100/100
+expect |move|p1b: Eelektross|Leech Seed|p1a: Torterra
+expect |-immune|p1a: Torterra
+expect |move|p2a: Scizor|Flower Trick|p1b: Eelektross
+expect |rng|16|13
+expect |-crit|p1b: Eelektross
+expect |split|p1
+expect |-damage|p1b: Eelektross|0 fnt
+expect |-damage|p1b: Eelektross|0 fnt
+expect |faint|p1b: Eelektross
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Charizard|Charizard, L50, M|184/184
+expect |switch|p1b: Charizard|Charizard, L50, M|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Vivillon|Vivillon-Savanna, L50, M|177/177
+expect |switch|p1b: Vivillon|Vivillon-Savanna, L50, M|100/100
+expect |move|p1a: Torterra|Zap Cannon|p2a: Scizor|[miss]
+expect |rng|100|77
+expect |-miss|p1a: Torterra|p2a: Scizor
+expect |move|p2a: Scizor|Aqua Tail|p1a: Torterra
+expect |rng|100|39
+expect |rng|24|3
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Torterra|154/190
+expect |-damage|p1a: Torterra|81/100
+expect |move|p2b: Avalugg|Ice Punch|p1b: Vivillon
+expect |rng|100|64
+expect |rng|24|4
+expect |rng|16|13
+expect |-supereffective|p1b: Vivillon|1
+expect |split|p1
+expect |-damage|p1b: Vivillon|63/177
+expect |-damage|p1b: Vivillon|35/100
+expect |rng|100|69
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p1b: Vivillon|Armor Cannon|p1a: Torterra
+expect |rng|100|90
+expect |rng|24|5
+expect |rng|16|2
+expect |-supereffective|p1a: Torterra|1
+expect |split|p1
+expect |-damage|p1a: Torterra|88/190
+expect |-damage|p1a: Torterra|46/100
+expect |rng|100|2
+expect |-unboost|p1b: Vivillon|def|1
+expect |-unboost|p1b: Vivillon|spd|1
+expect |move|p1a: Torterra|Bone Rush|p1b: Vivillon
+expect |-immune|p1b: Vivillon
+expect |move|p2a: Scizor|Flower Trick|p1b: Vivillon
+expect |rng|16|7
+expect |-resisted|p1b: Vivillon|2
+expect |-crit|p1b: Vivillon
+expect |split|p1
+expect |-damage|p1b: Vivillon|38/177
+expect |-damage|p1b: Vivillon|21/100
+expect |move|p2b: Avalugg|Ice Punch|p1b: Vivillon
+expect |rng|100|58
+expect |rng|24|11
+expect |rng|16|1
+expect |-supereffective|p1b: Vivillon|1
+expect |split|p1
+expect |-damage|p1b: Vivillon|0 fnt
+expect |-damage|p1b: Vivillon|0 fnt
+expect |rng|100|7
+expect |faint|p1b: Vivillon
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Charizard|Charizard, L50, M|184/184
+expect |switch|p1b: Charizard|Charizard, L50, M|100/100
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1b: Charizard|Thief|p2b: Avalugg
+expect |rng|100|15
+expect |rng|24|16
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Avalugg|176/191
+expect |-damage|p2b: Avalugg|92/100
+expect |move|p1a: Torterra|Bone Rush|p1b: Charizard
+expect |-immune|p1b: Charizard
+expect |move|p2a: Scizor|Flower Trick|p1b: Charizard
+expect |rng|16|12
+expect |-resisted|p1b: Charizard|2
+expect |-crit|p1b: Charizard
+expect |split|p1
+expect |-damage|p1b: Charizard|167/184
+expect |-damage|p1b: Charizard|90/100
+expect |move|p2b: Avalugg|Ice Punch|p2a: Scizor
+expect |rng|100|63
+expect |rng|24|22
+expect |rng|16|3
+expect |-resisted|p2a: Scizor|1
+expect |split|p2
+expect |-damage|p2a: Scizor|79/156
+expect |-damage|p2a: Scizor|50/100g
+expect |rng|100|80
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-Tundra, L50, M|89/168
+expect |switch|p2a: Vivillon|Vivillon-Tundra, L50, M|52/100
+expect |move|p1b: Charizard|Pounce|p1a: Torterra
+expect |rng|100|26
+expect |rng|24|8
+expect |rng|16|6
+expect |-supereffective|p1a: Torterra|1
+expect |split|p1
+expect |-damage|p1a: Torterra|52/190
+expect |-damage|p1a: Torterra|27/100
+expect |rng|100|25
+expect |-unboost|p1a: Torterra|spe|1
+expect |move|p1a: Torterra|Electrify|p2a: Vivillon
+expect |-singleturn|p2a: Vivillon|move: Electrify
+expect |move|p2b: Avalugg|Ice Punch|p1b: Charizard
+expect |rng|100|8
+expect |rng|24|12
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Charizard|103/184
+expect |-damage|p1b: Charizard|55/100
+expect |rng|100|66
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p1b: Charizard|Thief|p2b: Avalugg
+expect |rng|100|11
+expect |rng|24|13
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Avalugg|162/191
+expect |-damage|p2b: Avalugg|84/100
+expect |move|p2a: Vivillon|Energy Ball|p1b: Charizard
+expect |rng|100|0
+expect |rng|24|15
+expect |rng|16|0
+expect |-resisted|p1b: Charizard|2
+expect |split|p1
+expect |-damage|p1b: Charizard|90/184
+expect |-damage|p1b: Charizard|48/100
+expect |rng|100|13
+expect |move|p1a: Torterra|Bone Rush|p2a: Vivillon
+expect |-immune|p2a: Vivillon
+expect |move|p2b: Avalugg|Ice Punch|p1b: Charizard
+expect |rng|100|2
+expect |rng|24|0
+expect |rng|16|12
+expect |-crit|p1b: Charizard
+expect |split|p1
+expect |-damage|p1b: Charizard|0 fnt
+expect |-damage|p1b: Charizard|0 fnt
+expect |rng|100|37
+expect |faint|p1b: Charizard
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Musharna|Musharna, L50, M|214/214
+expect |switch|p2a: Musharna|Musharna, L50, M|100/100
+expect |move|p1a: Torterra|Eerie Spell|p2b: Avalugg
+expect |rng|100|55
+expect |rng|24|11
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Avalugg|111/191
+expect |-damage|p2b: Avalugg|58/100
+expect |rng|100|18
+expect |-activate|p2b: Avalugg|move: Eerie Spell|Ice Punch|3
+expect |move|p2b: Avalugg|Ice Punch|p1a: Torterra
+expect |rng|100|2
+expect |rng|24|5
+expect |rng|16|2
+expect |-supereffective|p1a: Torterra|2
+expect |split|p1
+expect |-damage|p1a: Torterra|0 fnt
+expect |-damage|p1a: Torterra|0 fnt
+expect |rng|100|20
+expect |faint|p1a: Torterra
+expect |
+expect |win|p2

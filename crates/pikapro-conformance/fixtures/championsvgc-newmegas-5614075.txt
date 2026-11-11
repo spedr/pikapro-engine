@@ -1,0 +1,560 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 5776 8d17 825c 66d9
+genders drawn
+team p1
+Rotom-Mow
+Ability: Levitate
+Level: 50
+Tera Type: Rock
+EVs: 26 HP / 5 Atk / 30 Def / 2 SpA / 3 Spe
+Naive Nature
+- Decorate
+- Mega Kick
+
+Scrafty @ Scraftinite
+Ability: Shed Skin
+Level: 50
+Tera Type: Dark
+EVs: 2 Atk / 29 Def / 31 SpA / 4 Spe
+Modest Nature
+- Thief
+- Attract
+
+Absol @ Absolite Z
+Ability: Pressure
+Level: 50
+Tera Type: Ice
+EVs: 12 HP / 29 Def / 25 SpA
+Naive Nature
+- Double Team
+- Skitter Smack
+
+X (Salamence) @ Salamencite
+Ability: Intimidate
+Level: 50
+Tera Type: Fire
+EVs: 28 Atk / 30 Def / 1 SpD / 6 Spe
+Bashful Nature
+- Twin Beam
+- Aqua Tail
+
+Pikachu (Vivillon-Garden) @ Quick Claw
+Ability: Shield Dust
+Level: 50
+Tera Type: Electric
+EVs: 2 HP / 14 Atk / 18 Def / 9 SpA / 10 SpD / 10 Spe
+Hardy Nature
+- Aerial Ace
+- Trick-or-Treat
+
+Snorlax (M)
+Ability: Immunity
+Level: 50
+Tera Type: Fairy
+EVs: 1 HP / 11 Atk / 6 Def / 18 SpA / 6 SpD / 24 Spe
+Naive Nature
+- Nuzzle
+end
+team p2
+Vivillon-Monsoon @ Coba Berry
+Ability: Friend Guard
+Level: 50
+Tera Type: Grass
+EVs: 25 HP / 21 Def / 7 SpA / 6 SpD / 5 Spe
+Adamant Nature
+- Magic Powder
+- Final Gambit
+
+Azumarill (M) @ Persim Berry
+Ability: Huge Power
+Level: 50
+Tera Type: Flying
+EVs: 1 HP / 18 Atk / 2 Def / 21 SpA / 1 SpD / 18 Spe
+Naughty Nature
+- Bite
+- Ice Beam
+
+Vivillon-Elegant (F) @ Expert Belt
+Ability: Compound Eyes
+Level: 50
+Tera Type: Ice
+EVs: 2 HP / 31 Atk / 7 SpA / 14 SpD / 12 Spe
+Relaxed Nature
+- Toxic Spikes
+
+Salamence @ Salamencite
+Ability: Intimidate
+Level: 50
+Tera Type: Ghost
+EVs: 18 Atk / 21 Def / 3 SpA / 1 SpD / 23 Spe
+Hasty Nature
+- U-turn
+- Foul Play
+
+Vivillon-Jungle (F)
+Ability: Shield Dust
+Level: 50
+Tera Type: Psychic
+EVs: 1 Atk / 10 Def / 18 SpA / 10 SpD / 24 Spe
+Hasty Nature
+- Spicy Extract
+- Wish
+
+Golisopod @ Golisopite
+Ability: Emergency Exit
+Level: 50
+Tera Type: Rock
+EVs: 20 HP / 22 Atk / 24 Def
+Bashful Nature
+- Boomburst
+- Parabolic Charge
+- Solar Blade
+- Shift Gear
+end
+choice p1 team 3514
+choice p2 team 5321
+choice p1 move 2 2, move 2 -1
+choice p2 move Spicy Extract -2 ,  move 1
+choice p1 switch 3, move 1 1
+choice p2 move 2, switch 4
+choice p1 move 2 -2, move 1 -1
+choice p2 move 2, move 2 1
+choice p1 switch 3, pass
+choice p2 skip ,  switch 4
+choice p1 switch 4, move 1 1
+choice p2 move Spicy Extract -2,switch 3
+choice p1 move 2 -2, move 2 1
+choice p2 move 1 1, move 1 -1
+choice p1 pass, switch 4
+choice p2 default
+choice p1 move 1 1, move 1
+choice p2 move 1, move 1 1
+choice p1 move 1 -2, move 2 1
+choice p2 move 1, move 1 2
+choice p1 move 2 -2, move 2 -1
+choice p2 move 1, move 2 2
+choice p1 move 2 -2 mega, move 2 2
+choice p2 default
+choice p1 move 1 1, move 2 -1
+choice p2 move 1, move 1 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Rotom-Mow, L50|
+expect |poke|p1|Scrafty, L50, F|
+expect |poke|p1|Absol, L50, F|
+expect |poke|p1|Salamence, L50, M|
+expect |poke|p1|Vivillon-Garden, L50, F|
+expect |poke|p1|Snorlax, L50, M|
+expect |poke|p2|Vivillon-Monsoon, L50, M|
+expect |poke|p2|Azumarill, L50, M|
+expect |poke|p2|Vivillon-Elegant, L50, F|
+expect |poke|p2|Salamence, L50, F|
+expect |poke|p2|Vivillon-Jungle, L50, F|
+expect |poke|p2|Golisopod, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Absol|Absol, L50, F|152/152
+expect |switch|p1a: Absol|Absol, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Pikachu|Vivillon-Garden, L50, F|157/157
+expect |switch|p1b: Pikachu|Vivillon-Garden, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-Jungle, L50, F|155/155
+expect |switch|p2a: Vivillon|Vivillon-Jungle, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Vivillon|Vivillon-Elegant, L50, F|157/157
+expect |switch|p2b: Vivillon|Vivillon-Elegant, L50, F|100/100
+expect |-ability|p1a: Absol|Pressure
+expect |turn|1
+expect |rng|5|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2a: Vivillon|Spicy Extract|p2b: Vivillon
+expect |-boost|p2b: Vivillon|atk|2
+expect |-unboost|p2b: Vivillon|def|2
+expect |rng|2|0
+expect |move|p1b: Pikachu|Trick-or-Treat|p1a: Absol
+expect |rng|100|51
+expect |-start|p1a: Absol|typeadd|Ghost|[from] move: Trick-or-Treat
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Vivillon|Toxic Spikes|p1a: Absol
+expect |-sidestart|p1: p1|move: Toxic Spikes
+expect |move|p1a: Absol|Skitter Smack|p2b: Vivillon
+expect |rng|100|40
+expect |rng|24|23
+expect |rng|16|7
+expect |-resisted|p2b: Vivillon|1
+expect |split|p2
+expect |-damage|p2b: Vivillon|100/157
+expect |-damage|p2b: Vivillon|63/100
+expect |rng|100|38
+expect |-unboost|p2b: Vivillon|spa|1
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|5|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Vivillon|Vivillon-Monsoon, L50, M|180/180
+expect |switch|p2b: Vivillon|Vivillon-Monsoon, L50, M|100/100
+expect |split|p1
+expect |switch|p1a: Rotom|Rotom-Mow, L50|151/151
+expect |switch|p1a: Rotom|Rotom-Mow, L50|100/100
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Vivillon|Wish|p2a: Vivillon
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Pikachu|Aerial Ace|p2a: Vivillon
+expect |rng|24|7
+expect |rng|16|7
+expect |-supereffective|p2a: Vivillon|1
+expect |split|p2
+expect |-damage|p2a: Vivillon|88/155
+expect |-damage|p2a: Vivillon|56/100
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |upkeep
+expect |rng|2|0
+expect |turn|3
+expect |rng|5|4
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Vivillon|Wish||[still]
+expect |-fail|p2a: Vivillon
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Rotom|Mega Kick|p1b: Pikachu
+expect |rng|100|27
+expect |rng|24|15
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1b: Pikachu|103/157
+expect |-damage|p1b: Pikachu|65/100
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: Pikachu|Aerial Ace|p1a: Rotom
+expect |rng|24|0
+expect |rng|16|8
+expect |-crit|p1a: Rotom
+expect |split|p1
+expect |-damage|p1a: Rotom|118/151
+expect |-damage|p1a: Rotom|78/100
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Vivillon|Final Gambit|p1a: Rotom
+expect |rng|100|5
+expect |split|p1
+expect |-damage|p1a: Rotom|0 fnt
+expect |-damage|p1a: Rotom|0 fnt
+expect |rng|2|0
+expect |faint|p2b: Vivillon
+expect |faint|p1a: Rotom
+expect |
+expect |split|p2
+expect |-heal|p2a: Vivillon|155/155|[from] move: Wish|[wisher] Vivillon
+expect |-heal|p2a: Vivillon|100/100|[from] move: Wish|[wisher] Vivillon
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Absol|Absol, L50, F|152/152
+expect |switch|p1a: Absol|Absol, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Vivillon|Vivillon-Elegant, L50, F|100/157
+expect |switch|p2b: Vivillon|Vivillon-Elegant, L50, F|63/100
+expect |-status|p1a: Absol|psn
+expect |-ability|p1a: Absol|Pressure
+expect |turn|4
+expect |rng|5|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Azumarill|Azumarill, L50, M|176/176
+expect |switch|p2b: Azumarill|Azumarill, L50, M|100/100
+expect |split|p1
+expect |switch|p1a: X|Salamence, L50, M|170/170
+expect |switch|p1a: X|Salamence, L50, M|100/100
+expect |-ability|p1a: X|Intimidate|boost
+expect |-unboost|p2a: Vivillon|atk|1
+expect |-unboost|p2b: Azumarill|atk|1
+expect |move|p2a: Vivillon|Spicy Extract|p2b: Azumarill
+expect |-boost|p2b: Azumarill|atk|2
+expect |-unboost|p2b: Azumarill|def|2
+expect |move|p1b: Pikachu|Aerial Ace|p2a: Vivillon
+expect |rng|24|15
+expect |rng|16|3
+expect |-supereffective|p2a: Vivillon|1
+expect |split|p2
+expect |-damage|p2a: Vivillon|59/155
+expect |-damage|p2a: Vivillon|38/100
+expect |
+expect |upkeep
+expect |turn|5
+expect |rng|5|1
+expect |
+expect |t:|
+expect |move|p2a: Vivillon|Spicy Extract|p1a: X
+expect |-boost|p1a: X|atk|2
+expect |-unboost|p1a: X|def|2
+expect |move|p1a: X|Aqua Tail|p1b: Pikachu
+expect |rng|100|37
+expect |rng|24|3
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1b: Pikachu|0 fnt
+expect |-damage|p1b: Pikachu|0 fnt
+expect |faint|p1b: Pikachu
+expect |move|p2b: Azumarill|Bite|p2a: Vivillon
+expect |rng|100|97
+expect |rng|24|14
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Vivillon|0 fnt
+expect |-damage|p2a: Vivillon|0 fnt
+expect |faint|p2a: Vivillon
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-Elegant, L50, F|100/157
+expect |switch|p2a: Vivillon|Vivillon-Elegant, L50, F|63/100
+expect |split|p1
+expect |switch|p1b: Absol|Absol, L50, F|152/152 psn
+expect |switch|p1b: Absol|Absol, L50, F|100/100 psn
+expect |-ability|p1b: Absol|Pressure
+expect |turn|6
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1a: X|Twin Beam|p2a: Vivillon
+expect |rng|100|68
+expect |rng|24|15
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Vivillon|73/157
+expect |-damage|p2a: Vivillon|46/100
+expect |rng|24|22
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Vivillon|46/157
+expect |-damage|p2a: Vivillon|29/100
+expect |-hitcount|p2a: Vivillon|2
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Vivillon|Toxic Spikes|p1a: X
+expect |-sidestart|p1: p1|move: Toxic Spikes
+expect |move|p1b: Absol|Double Team|p1b: Absol
+expect |-boost|p1b: Absol|evasion|1
+expect |move|p2b: Azumarill|Bite|p1a: X
+expect |rng|100|36
+expect |rng|24|3
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: X|62/170
+expect |-damage|p1a: X|36/100
+expect |rng|100|86
+expect |
+expect |split|p1
+expect |-damage|p1b: Absol|133/152 psn|[from] psn
+expect |-damage|p1b: Absol|87/100 psn|[from] psn
+expect |upkeep
+expect |turn|7
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1a: X|Twin Beam|p1b: Absol
+expect |-immune|p1b: Absol
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Vivillon|Toxic Spikes||[still]
+expect |-fail|p2a: Vivillon
+expect |move|p1b: Absol|Skitter Smack|p2a: Vivillon
+expect |rng|100|39
+expect |rng|24|13
+expect |rng|16|7
+expect |-resisted|p2a: Vivillon|1
+expect |split|p2
+expect |-damage|p2a: Vivillon|18/157
+expect |-damage|p2a: Vivillon|11/100
+expect |rng|100|25
+expect |-unboost|p2a: Vivillon|spa|1
+expect |move|p2b: Azumarill|Bite|p1b: Absol
+expect |rng|100|48
+expect |rng|24|16
+expect |rng|16|1
+expect |-resisted|p1b: Absol|1
+expect |split|p1
+expect |-damage|p1b: Absol|98/152 psn
+expect |-damage|p1b: Absol|64/100 psn
+expect |rng|100|18
+expect |
+expect |split|p1
+expect |-damage|p1b: Absol|79/152 psn|[from] psn
+expect |-damage|p1b: Absol|51/100 psn|[from] psn
+expect |upkeep
+expect |turn|8
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1a: X|Aqua Tail|p1b: Absol|[miss]
+expect |rng|100|77
+expect |-miss|p1a: X|p1b: Absol
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Vivillon|Toxic Spikes||[still]
+expect |-fail|p2a: Vivillon
+expect |move|p1b: Absol|Skitter Smack|p1a: X
+expect |rng|100|2
+expect |rng|24|22
+expect |rng|16|0
+expect |-resisted|p1a: X|1
+expect |split|p1
+expect |-damage|p1a: X|26/170
+expect |-damage|p1a: X|15/100
+expect |rng|100|50
+expect |-unboost|p1a: X|spa|1
+expect |move|p2b: Azumarill|Ice Beam|p1b: Absol|[miss]
+expect |rng|100|76
+expect |-miss|p2b: Azumarill|p1b: Absol
+expect |
+expect |split|p1
+expect |-damage|p1b: Absol|60/152 psn|[from] psn
+expect |-damage|p1b: Absol|39/100 psn|[from] psn
+expect |upkeep
+expect |turn|9
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |detailschange|p1a: X|Salamence-Mega, L50, M
+expect |-mega|p1a: X|Salamence|Salamencite
+expect |rng|2|1
+expect |move|p1a: X|Aqua Tail|p1b: Absol|[miss]
+expect |rng|100|97
+expect |-miss|p1a: X|p1b: Absol
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Vivillon|Toxic Spikes||[still]
+expect |-fail|p2a: Vivillon
+expect |move|p1b: Absol|Skitter Smack|p2b: Azumarill
+expect |rng|100|55
+expect |rng|24|7
+expect |rng|16|15
+expect |-resisted|p2b: Azumarill|1
+expect |split|p2
+expect |-damage|p2b: Azumarill|137/176
+expect |-damage|p2b: Azumarill|77/100
+expect |rng|100|53
+expect |-unboost|p2b: Azumarill|spa|1
+expect |move|p2b: Azumarill|Bite|p1b: Absol
+expect |rng|100|1
+expect |rng|24|15
+expect |rng|16|13
+expect |-resisted|p1b: Absol|1
+expect |split|p1
+expect |-damage|p1b: Absol|30/152 psn
+expect |-damage|p1b: Absol|19/100 psn
+expect |rng|100|91
+expect |
+expect |split|p1
+expect |-damage|p1b: Absol|11/152 psn|[from] psn
+expect |-damage|p1b: Absol|7/100 psn|[from] psn
+expect |upkeep
+expect |turn|10
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1a: X|Twin Beam|p2a: Vivillon
+expect |rng|100|54
+expect |rng|24|5
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Vivillon|0 fnt
+expect |-damage|p2a: Vivillon|0 fnt
+expect |faint|p2a: Vivillon
+expect |-hitcount|p2: Vivillon|1
+expect |rng|2|1
+expect |move|p1b: Absol|Skitter Smack|p1a: X
+expect |rng|100|15
+expect |rng|24|21
+expect |rng|16|14
+expect |-resisted|p1a: X|1
+expect |split|p1
+expect |-damage|p1a: X|4/170
+expect |-damage|p1a: X|2/100
+expect |rng|100|83
+expect |-unboost|p1a: X|spa|1
+expect |move|p2b: Azumarill|Bite|p1a: X
+expect |rng|100|56
+expect |rng|24|14
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: X|0 fnt
+expect |-damage|p1a: X|0 fnt
+expect |rng|100|2
+expect |faint|p1a: X
+expect |
+expect |split|p1
+expect |-damage|p1b: Absol|0 fnt|[from] psn
+expect |-damage|p1b: Absol|0 fnt|[from] psn
+expect |faint|p1b: Absol
+expect |
+expect |win|p2

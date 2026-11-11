@@ -1,0 +1,817 @@
+# Recorded by channel_conformance. Do not edit by hand.
+format gen9ou
+source fuzz
+seed 40991000
+options factored row percent
+player p1
+line |t:|0
+line |gametype|singles
+line |player|p1|p1||
+line |player|p2|p2||
+line |gen|9
+line |tier|[Gen 9] OU
+line |rule|HP Percentage Mod: HP is shown in percentages
+line |rule|Endless Battle Clause: Forcing endless battles is banned
+line |rule|Species Clause: Limit one of each Pokémon
+line |rule|OHKO Clause: OHKO moves are banned
+line |rule|Evasion Items Clause: Evasion items are banned
+line |rule|Evasion Moves Clause: Evasion moves are banned
+line |rule|Evasion Abilities Clause: Evasion abilities are banned
+line |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+line |clearpoke
+line |poke|p1|Thwackey, F|
+line |poke|p2|Skrelp, F|
+line |poke|p2|Inkay, F|
+line |poke|p2|Shellder, M|
+line |poke|p2|Quilava, M|
+line |poke|p2|Zoroark, M|
+line |poke|p2|Fraxure, F|
+line |teampreview
+line |request|{"teamPreview":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+decision 462c093bb13791c6
+line |
+line |t:|0
+line |teamsize|p1|1
+line |teamsize|p2|6
+line |start
+line |switch|p1a: Zoë|Thwackey, F|295/295
+line |switch|p2a: Fraxure|Fraxure, F|100/100
+line |-fieldstart|move: Grassy Terrain|[from] ability: Grassy Surge|[of] p1a: Zoë
+line |turn|1
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Stellar"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+decision d7835d159d2dc073
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F|100/100
+line |-terastallize|p1a: Zoë|Stellar
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay
+line |-status|p2a: Inkay|slp|[from] move: Hypnosis
+line |
+line |upkeep
+line |turn|2
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 3cb6d1ec0550058b
+line |
+line |t:|0
+line |switch|p2a: Big Tony's Pal|Skrelp, F|100/100
+line |move|p1a: Zoë|Hypnosis|p2a: Big Tony's Pal
+line |-status|p2a: Big Tony's Pal|slp|[from] move: Hypnosis
+line |
+line |upkeep
+line |turn|3
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":30,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 4bcc397b88114d71
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay|[miss]
+line |-miss|p1a: Zoë|p2a: Inkay
+line |
+line |upkeep
+line |turn|4
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":29,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision c36db8ace831bbb0
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F|100/100
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay
+line |-status|p2a: Inkay|slp|[from] move: Hypnosis
+line |
+line |upkeep
+line |turn|5
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":28,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 512bd402282ef993
+line |
+line |t:|0
+line |-terastallize|p2a: Inkay|Fire
+line |cant|p2a: Inkay|slp
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay|[miss]
+line |-miss|p1a: Zoë|p2a: Inkay
+line |
+line |-fieldend|move: Grassy Terrain
+line |upkeep
+line |turn|6
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":27,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 2a60b0ef54f11bc6
+line |
+line |t:|0
+line |switch|p2a: Fraxure|Fraxure, F|100/100
+line |move|p1a: Zoë|Hypnosis|p2a: Fraxure|[miss]
+line |-miss|p1a: Zoë|p2a: Fraxure
+line |
+line |upkeep
+line |turn|7
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":26,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 581661eb0ec4fd30
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay
+line |-fail|p2a: Inkay|slp
+line |
+line |upkeep
+line |turn|8
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":25,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 0203cbf07011ea98
+line |
+line |t:|0
+line |switch|p2a: ThisNameIsFarTooLong|Quilava, M|100/100
+line |move|p1a: Zoë|Hypnosis|p2a: ThisNameIsFarTooLong|[miss]
+line |-miss|p1a: Zoë|p2a: ThisNameIsFarTooLong
+line |
+line |upkeep
+line |turn|9
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":24,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision f88759b7e4863a77
+line |
+line |t:|0
+line |switch|p2a: Shellder|Shellder, M, shiny|100/100
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-status|p2a: Shellder|slp|[from] move: Hypnosis
+line |
+line |upkeep
+line |turn|10
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":23,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 41445eefb0c2c497
+line |
+line |t:|0
+line |switch|p2a: Fraxure|Fraxure, F, tera:Fire|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Fraxure
+line |-fail|p2a: Fraxure|slp
+line |
+line |upkeep
+line |turn|11
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":22,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 99120b47200653b5
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay|[miss]
+line |-miss|p1a: Zoë|p2a: Inkay
+line |
+line |upkeep
+line |turn|12
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":21,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 0989f3739d710387
+line |
+line |t:|0
+line |switch|p2a: Fraxure|Fraxure, F|100/100
+line |move|p1a: Zoë|Hypnosis|p2a: Fraxure
+line |-status|p2a: Fraxure|slp|[from] move: Hypnosis
+line |
+line |upkeep
+line |turn|13
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":20,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision e342304c466d178c
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Fraxure
+line |-fail|p2a: Fraxure|slp
+line |cant|p2a: Fraxure|slp
+line |
+line |upkeep
+line |turn|14
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":19,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 5ac316620d1fb096
+line |
+line |t:|0
+line |switch|p2a: Shellder|Shellder, M, shiny|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|15
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":18,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 7429ba960fbf5720
+line |
+line |t:|0
+line |switch|p2a: ThisNameIsFarTooLong|Quilava, M|100/100
+line |move|p1a: Zoë|Hypnosis|p2a: ThisNameIsFarTooLong
+line |-status|p2a: ThisNameIsFarTooLong|slp|[from] move: Hypnosis
+line |
+line |upkeep
+line |turn|16
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":17,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 535c6edab6df8ffe
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F, tera:Fire|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay
+line |-fail|p2a: Inkay|slp
+line |
+line |upkeep
+line |turn|17
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":16,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 0eca34aebd530a53
+line |
+line |t:|0
+line |switch|p2a: Big Tony's Pal|Skrelp, F|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Big Tony's Pal
+line |-fail|p2a: Big Tony's Pal|slp
+line |
+line |upkeep
+line |turn|18
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":15,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 5a6e11c16b68601e
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Big Tony's Pal|[miss]
+line |-miss|p1a: Zoë|p2a: Big Tony's Pal
+line |cant|p2a: Big Tony's Pal|slp
+line |
+line |upkeep
+line |turn|19
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":14,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision ccc250236164cfae
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay|[miss]
+line |-miss|p1a: Zoë|p2a: Inkay
+line |
+line |upkeep
+line |turn|20
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":13,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 6e676a18b28be1fa
+line |
+line |t:|0
+line |switch|p2a: ThisNameIsFarTooLong|Quilava, M|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: ThisNameIsFarTooLong|[miss]
+line |-miss|p1a: Zoë|p2a: ThisNameIsFarTooLong
+line |
+line |upkeep
+line |turn|21
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":12,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 1f5778bc19336e4d
+line |
+line |t:|0
+line |switch|p2a: Fraxure|Fraxure, F|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Fraxure
+line |-fail|p2a: Fraxure|slp
+line |
+line |upkeep
+line |turn|22
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":11,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision dfa52c694c929966
+line |
+line |t:|0
+line |switch|p2a: Shellder|Shellder, M, shiny|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|23
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":10,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision f90d4755b758d23e
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |cant|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|24
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":9,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 0d27c4fcea24e0e6
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |-curestatus|p2a: Shellder|slp|[msg]
+line |move|p2a: Shellder|Shore Up|p2a: Shellder
+line |-fail|p2a: Shellder|heal
+line |
+line |upkeep
+line |turn|25
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":8,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 4f5960456fe5ae82
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder|[miss]
+line |-miss|p1a: Zoë|p2a: Shellder
+line |move|p2a: Shellder|Shore Up|p2a: Shellder
+line |-fail|p2a: Shellder|heal
+line |
+line |upkeep
+line |turn|26
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":7,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 16a2c815a3ff7971
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-status|p2a: Shellder|slp|[from] move: Hypnosis
+line |cant|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|27
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":6,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 4ff057c0041f509a
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |cant|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|28
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":5,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 2da962217a555af8
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |cant|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|29
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":4,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 085845ef207df5eb
+line |
+line |t:|0
+line |switch|p2a: Fraxure|Fraxure, F|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Fraxure
+line |-fail|p2a: Fraxure|slp
+line |
+line |upkeep
+line |turn|30
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":3,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision e24217e42678ced1
+line |
+line |t:|0
+line |switch|p2a: Big Tony's Pal|Skrelp, F|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Big Tony's Pal|[miss]
+line |-miss|p1a: Zoë|p2a: Big Tony's Pal
+line |
+line |upkeep
+line |turn|31
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":2,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision cf42a613f939d585
+line |
+line |t:|0
+line |switch|p2a: Shellder|Shellder, M, shiny|100/100 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|32
+line |request|{"active":[{"moves":[{"move":"Hypnosis","id":"hypnosis","pp":1,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 0f8521a760ca92ac
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder|[miss]
+line |-miss|p1a: Zoë|p2a: Shellder
+line |-curestatus|p2a: Shellder|slp|[msg]
+line |move|p2a: Shellder|Aqua Ring|p2a: Shellder
+line |-start|p2a: Shellder|Aqua Ring
+line |
+line |upkeep
+line |turn|33
+line |request|{"active":[{"moves":[{"move":"Struggle","id":"struggle","target":"randomNormal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"295/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision f4421ad6d6e5de43
+line |
+line |t:|0
+line |-activate|p1a: Zoë|move: Struggle
+line |move|p1a: Zoë|Struggle|p2a: Shellder
+line |-damage|p2a: Shellder|82/100
+line |-damage|p1a: Zoë|221/295|[from] recoil
+line |move|p2a: Shellder|Heat Wave|p1a: Zoë
+line |-supereffective|p1a: Zoë
+line |-damage|p1a: Zoë|107/295
+line |
+line |-heal|p2a: Shellder|88/100|[from] Aqua Ring
+line |upkeep
+line |turn|34
+line |request|{"active":[{"moves":[{"move":"Struggle","id":"struggle","target":"randomNormal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"107/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 305dfea0e801aaff
+line |
+line |t:|0
+line |-activate|p1a: Zoë|move: Struggle
+line |move|p1a: Zoë|Struggle|p2a: Shellder
+line |-crit|p2a: Shellder
+line |-damage|p2a: Shellder|60/100
+line |-damage|p1a: Zoë|33/295|[from] recoil
+line |move|p2a: Shellder|Aqua Ring||[still]
+line |-fail|p2a: Shellder
+line |
+line |-heal|p2a: Shellder|66/100|[from] Aqua Ring
+line |upkeep
+line |turn|35
+line |request|{"active":[{"moves":[{"move":"Struggle","id":"struggle","target":"randomNormal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Zoë","details":"Thwackey, F","condition":"33/295","active":true,"stats":{"atk":207,"def":159,"spa":163,"spd":206,"spe":256},"moves":["hypnosis"],"baseAbility":"grassysurge","item":"","pokeball":"pokeball","ability":"grassysurge","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+decision 22b22a4addf4e4cb
+line |
+line |t:|0
+line |-activate|p1a: Zoë|move: Struggle
+line |move|p1a: Zoë|Struggle|p2a: Shellder
+line |-damage|p2a: Shellder|47/100
+line |-enditem|p2a: Shellder|Sitrus Berry|[eat]
+line |-heal|p2a: Shellder|72/100|[from] item: Sitrus Berry
+line |-damage|p1a: Zoë|0 fnt|[from] recoil
+line |faint|p1a: Zoë
+line |
+line |win|p2
+player p2
+line |t:|0
+line |gametype|singles
+line |player|p1|p1||
+line |player|p2|p2||
+line |gen|9
+line |tier|[Gen 9] OU
+line |rule|HP Percentage Mod: HP is shown in percentages
+line |rule|Endless Battle Clause: Forcing endless battles is banned
+line |rule|Species Clause: Limit one of each Pokémon
+line |rule|OHKO Clause: OHKO moves are banned
+line |rule|Evasion Items Clause: Evasion items are banned
+line |rule|Evasion Moves Clause: Evasion moves are banned
+line |rule|Evasion Abilities Clause: Evasion abilities are banned
+line |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+line |clearpoke
+line |poke|p1|Thwackey, F|
+line |poke|p2|Skrelp, F|
+line |poke|p2|Inkay, F|
+line |poke|p2|Shellder, M|
+line |poke|p2|Quilava, M|
+line |poke|p2|Zoroark, M|
+line |poke|p2|Fraxure, F|
+line |teampreview
+line |request|{"teamPreview":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283","active":true,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+decision c7ab63c7650c315a
+line |
+line |t:|0
+line |teamsize|p1|1
+line |teamsize|p2|6
+line |start
+line |switch|p1a: Zoë|Thwackey, F|100/100
+line |switch|p2a: Fraxure|Fraxure, F|274/274
+line |-fieldstart|move: Grassy Terrain|[from] ability: Grassy Surge|[of] p1a: Zoë
+line |turn|1
+line |request|{"active":[{"moves":[{"move":"Dragon Pulse","id":"dragonpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Heal Bell","id":"healbell","pp":8,"maxpp":8,"target":"allyTeam","disabled":false}],"canTerastallize":"Bug"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":true,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+decision 9c55ba22beba10d6
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F|252/252
+line |-terastallize|p1a: Zoë|Stellar
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay
+line |-status|p2a: Inkay|slp|[from] move: Hypnosis
+line |
+line |upkeep
+line |turn|2
+line |request|{"active":[{"moves":[{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Lick","id":"lick","pp":48,"maxpp":48,"target":"normal","disabled":false}],"canTerastallize":"Dark"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":true,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+decision fd24291aef944a6e
+line |
+line |t:|0
+line |switch|p2a: Big Tony's Pal|Skrelp, F|283/283
+line |move|p1a: Zoë|Hypnosis|p2a: Big Tony's Pal
+line |-status|p2a: Big Tony's Pal|slp|[from] move: Hypnosis
+line |
+line |upkeep
+line |turn|3
+line |request|{"active":[{"moves":[{"move":"Upper Hand","id":"upperhand","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dragon Cheer","id":"dragoncheer","pp":24,"maxpp":24,"target":"adjacentAlly","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":true,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+decision e44a210b95bf8c4b
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F|252/252 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay|[miss]
+line |-miss|p1a: Zoë|p2a: Inkay
+line |
+line |upkeep
+line |turn|4
+line |request|{"active":[{"moves":[{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Lick","id":"lick","pp":48,"maxpp":48,"target":"normal","disabled":false}],"canTerastallize":"Dark"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":true,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+decision d83a2d0c21f1da78
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F|275/275
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay
+line |-status|p2a: Inkay|slp|[from] move: Hypnosis
+line |
+line |upkeep
+line |turn|5
+line |request|{"active":[{"moves":[{"move":"Play Nice","id":"playnice","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Night Shade","id":"nightshade","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":56,"maxpp":56,"target":"normal","disabled":false},{"move":"Dragon Dance","id":"dragondance","pp":32,"maxpp":32,"target":"self","disabled":false}],"canTerastallize":"Fire"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":true,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 583773542b5d30ce
+line |
+line |t:|0
+line |-terastallize|p2a: Inkay|Fire
+line |cant|p2a: Inkay|slp
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay|[miss]
+line |-miss|p1a: Zoë|p2a: Inkay
+line |
+line |-fieldend|move: Grassy Terrain
+line |upkeep
+line |turn|6
+line |request|{"active":[{"moves":[{"move":"Play Nice","id":"playnice","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Night Shade","id":"nightshade","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":56,"maxpp":56,"target":"normal","disabled":false},{"move":"Dragon Dance","id":"dragondance","pp":32,"maxpp":32,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":true,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 738ccbc70535ef1a
+line |
+line |t:|0
+line |switch|p2a: Fraxure|Fraxure, F|274/274
+line |move|p1a: Zoë|Hypnosis|p2a: Fraxure|[miss]
+line |-miss|p1a: Zoë|p2a: Fraxure
+line |
+line |upkeep
+line |turn|7
+line |request|{"active":[{"moves":[{"move":"Dragon Pulse","id":"dragonpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Heal Bell","id":"healbell","pp":8,"maxpp":8,"target":"allyTeam","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":true,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 67e7dadd280f3238
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F|252/252 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay
+line |-fail|p2a: Inkay|slp
+line |
+line |upkeep
+line |turn|8
+line |request|{"active":[{"moves":[{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Lick","id":"lick","pp":48,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":true,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+decision 6959d3ba38bd57dd
+line |
+line |t:|0
+line |switch|p2a: ThisNameIsFarTooLong|Quilava, M|262/262
+line |move|p1a: Zoë|Hypnosis|p2a: ThisNameIsFarTooLong|[miss]
+line |-miss|p1a: Zoë|p2a: ThisNameIsFarTooLong
+line |
+line |upkeep
+line |turn|9
+line |request|{"active":[{"moves":[{"move":"Grass Knot","id":"grassknot","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":true,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+decision 5bac78d647cbc6d1
+line |
+line |t:|0
+line |switch|p2a: Shellder|Shellder, M, shiny|207/207
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-status|p2a: Shellder|slp|[from] move: Hypnosis
+line |
+line |upkeep
+line |turn|10
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+decision 3441d5ac53ed53e3
+line |
+line |t:|0
+line |switch|p2a: Fraxure|Fraxure, F, tera:Fire|275/275 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Fraxure
+line |-fail|p2a: Fraxure|slp
+line |
+line |upkeep
+line |turn|11
+line |request|{"active":[{"moves":[{"move":"Play Nice","id":"playnice","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Night Shade","id":"nightshade","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":56,"maxpp":56,"target":"normal","disabled":false},{"move":"Dragon Dance","id":"dragondance","pp":32,"maxpp":32,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":true,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+decision 754ad6e681596237
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F|252/252 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay|[miss]
+line |-miss|p1a: Zoë|p2a: Inkay
+line |
+line |upkeep
+line |turn|12
+line |request|{"active":[{"moves":[{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Lick","id":"lick","pp":48,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":true,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+decision e1af885052dbbbe6
+line |
+line |t:|0
+line |switch|p2a: Fraxure|Fraxure, F|274/274
+line |move|p1a: Zoë|Hypnosis|p2a: Fraxure
+line |-status|p2a: Fraxure|slp|[from] move: Hypnosis
+line |
+line |upkeep
+line |turn|13
+line |request|{"active":[{"moves":[{"move":"Dragon Pulse","id":"dragonpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Heal Bell","id":"healbell","pp":8,"maxpp":8,"target":"allyTeam","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":true,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 6088390f899bcc46
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Fraxure
+line |-fail|p2a: Fraxure|slp
+line |cant|p2a: Fraxure|slp
+line |
+line |upkeep
+line |turn|14
+line |request|{"active":[{"moves":[{"move":"Dragon Pulse","id":"dragonpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Heal Bell","id":"healbell","pp":8,"maxpp":8,"target":"allyTeam","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":true,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision e72b988dffa5d056
+line |
+line |t:|0
+line |switch|p2a: Shellder|Shellder, M, shiny|207/207 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|15
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 9e3a817d5d734aaa
+line |
+line |t:|0
+line |switch|p2a: ThisNameIsFarTooLong|Quilava, M|262/262
+line |move|p1a: Zoë|Hypnosis|p2a: ThisNameIsFarTooLong
+line |-status|p2a: ThisNameIsFarTooLong|slp|[from] move: Hypnosis
+line |
+line |upkeep
+line |turn|16
+line |request|{"active":[{"moves":[{"move":"Grass Knot","id":"grassknot","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":true,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 4ba9fe500dfde613
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F, tera:Fire|275/275 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay
+line |-fail|p2a: Inkay|slp
+line |
+line |upkeep
+line |turn|17
+line |request|{"active":[{"moves":[{"move":"Play Nice","id":"playnice","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Night Shade","id":"nightshade","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Poison Sting","id":"poisonsting","pp":56,"maxpp":56,"target":"normal","disabled":false},{"move":"Dragon Dance","id":"dragondance","pp":32,"maxpp":32,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":true,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision d63be91318a9ff11
+line |
+line |t:|0
+line |switch|p2a: Big Tony's Pal|Skrelp, F|283/283 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Big Tony's Pal
+line |-fail|p2a: Big Tony's Pal|slp
+line |
+line |upkeep
+line |turn|18
+line |request|{"active":[{"moves":[{"move":"Upper Hand","id":"upperhand","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dragon Cheer","id":"dragoncheer","pp":24,"maxpp":24,"target":"adjacentAlly","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":true,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision 7964c4fb6b068e0d
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Big Tony's Pal|[miss]
+line |-miss|p1a: Zoë|p2a: Big Tony's Pal
+line |cant|p2a: Big Tony's Pal|slp
+line |
+line |upkeep
+line |turn|19
+line |request|{"active":[{"moves":[{"move":"Upper Hand","id":"upperhand","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dragon Cheer","id":"dragoncheer","pp":24,"maxpp":24,"target":"adjacentAlly","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":true,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+decision a9da5aa6fb52dab3
+line |
+line |t:|0
+line |switch|p2a: Inkay|Inkay, F|252/252 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Inkay|[miss]
+line |-miss|p1a: Zoë|p2a: Inkay
+line |
+line |upkeep
+line |turn|20
+line |request|{"active":[{"moves":[{"move":"Hydro Steam","id":"hydrosteam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Lick","id":"lick","pp":48,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":true,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 3b74562a220e11c1
+line |
+line |t:|0
+line |switch|p2a: ThisNameIsFarTooLong|Quilava, M|262/262 slp
+line |move|p1a: Zoë|Hypnosis|p2a: ThisNameIsFarTooLong|[miss]
+line |-miss|p1a: Zoë|p2a: ThisNameIsFarTooLong
+line |
+line |upkeep
+line |turn|21
+line |request|{"active":[{"moves":[{"move":"Grass Knot","id":"grassknot","pp":32,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":true,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 23dd669cfaa6bbe6
+line |
+line |t:|0
+line |switch|p2a: Fraxure|Fraxure, F|274/274 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Fraxure
+line |-fail|p2a: Fraxure|slp
+line |
+line |upkeep
+line |turn|22
+line |request|{"active":[{"moves":[{"move":"Dragon Pulse","id":"dragonpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Heal Bell","id":"healbell","pp":8,"maxpp":8,"target":"allyTeam","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":true,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 37757ddcdc0c5d6e
+line |
+line |t:|0
+line |switch|p2a: Shellder|Shellder, M, shiny|207/207 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|23
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 3d96065a28b1e58a
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |cant|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|24
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 7508c2a955e30b22
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |-curestatus|p2a: Shellder|slp|[msg]
+line |move|p2a: Shellder|Shore Up|p2a: Shellder
+line |-fail|p2a: Shellder|heal
+line |
+line |upkeep
+line |turn|25
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":7,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 680fb756dc38b0a0
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder|[miss]
+line |-miss|p1a: Zoë|p2a: Shellder
+line |move|p2a: Shellder|Shore Up|p2a: Shellder
+line |-fail|p2a: Shellder|heal
+line |
+line |upkeep
+line |turn|26
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 3ed47e77ef1fed29
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-status|p2a: Shellder|slp|[from] move: Hypnosis
+line |cant|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|27
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision b4d85bd54a5862d0
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |cant|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|28
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 2c76f319b4ff5554
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |cant|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|29
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision d0112bc6358b96e1
+line |
+line |t:|0
+line |switch|p2a: Fraxure|Fraxure, F|274/274 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Fraxure
+line |-fail|p2a: Fraxure|slp
+line |
+line |upkeep
+line |turn|30
+line |request|{"active":[{"moves":[{"move":"Dragon Pulse","id":"dragonpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Heal Bell","id":"healbell","pp":8,"maxpp":8,"target":"allyTeam","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":true,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 30ed5ce0861374db
+line |
+line |t:|0
+line |switch|p2a: Big Tony's Pal|Skrelp, F|283/283 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Big Tony's Pal|[miss]
+line |-miss|p1a: Zoë|p2a: Big Tony's Pal
+line |
+line |upkeep
+line |turn|31
+line |request|{"active":[{"moves":[{"move":"Upper Hand","id":"upperhand","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Speed Swap","id":"speedswap","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dragon Cheer","id":"dragoncheer","pp":24,"maxpp":24,"target":"adjacentAlly","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":true,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":false,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+decision 8aaeeaf5ae3bf044
+line |
+line |t:|0
+line |switch|p2a: Shellder|Shellder, M, shiny|207/207 slp
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder
+line |-fail|p2a: Shellder|slp
+line |
+line |upkeep
+line |turn|32
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207 slp","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+decision 83adf5ab85068516
+line |
+line |t:|0
+line |move|p1a: Zoë|Hypnosis|p2a: Shellder|[miss]
+line |-miss|p1a: Zoë|p2a: Shellder
+line |-curestatus|p2a: Shellder|slp|[msg]
+line |move|p2a: Shellder|Aqua Ring|p2a: Shellder
+line |-start|p2a: Shellder|Aqua Ring
+line |
+line |upkeep
+line |turn|33
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"207/207","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+decision 77549c819b3115cf
+line |
+line |t:|0
+line |-activate|p1a: Zoë|move: Struggle
+line |move|p1a: Zoë|Struggle|p2a: Shellder
+line |-damage|p2a: Shellder|169/207
+line |-damage|p1a: Zoë|75/100|[from] recoil
+line |move|p2a: Shellder|Heat Wave|p1a: Zoë
+line |-supereffective|p1a: Zoë
+line |-damage|p1a: Zoë|37/100
+line |
+line |-heal|p2a: Shellder|181/207|[from] Aqua Ring
+line |upkeep
+line |turn|34
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":15,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"181/207","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+decision 07b7335d97ed075f
+line |
+line |t:|0
+line |-activate|p1a: Zoë|move: Struggle
+line |move|p1a: Zoë|Struggle|p2a: Shellder
+line |-crit|p2a: Shellder
+line |-damage|p2a: Shellder|123/207
+line |-damage|p1a: Zoë|12/100|[from] recoil
+line |move|p2a: Shellder|Aqua Ring||[still]
+line |-fail|p2a: Shellder
+line |
+line |-heal|p2a: Shellder|135/207|[from] Aqua Ring
+line |upkeep
+line |turn|35
+line |request|{"active":[{"moves":[{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Ring","id":"aquaring","pp":30,"maxpp":32,"target":"self","disabled":false},{"move":"Heat Wave","id":"heatwave","pp":15,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Shore Up","id":"shoreup","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Shellder","details":"Shellder, M, shiny","condition":"135/207","active":true,"stats":{"atk":233,"def":247,"spa":162,"spd":92,"spe":115},"moves":["lusterpurge","aquaring","heatwave","shoreup"],"baseAbility":"overcoat","item":"sitrusberry","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Zoroark","details":"Zoroark, M","condition":"275/275 slp","active":false,"stats":{"atk":332,"def":140,"spa":298,"spd":161,"spe":264},"moves":["playnice","nightshade","poisonsting","dragondance"],"baseAbility":"illusion","item":"","pokeball":"pokeball","ability":"illusion","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: ThisNameIsFarTooLong","details":"Quilava, M","condition":"262/262 slp","active":false,"stats":{"atk":190,"def":190,"spa":195,"spd":214,"spe":198},"moves":["grassknot"],"baseAbility":"blaze","item":"fistplate","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Skrelp, F","condition":"283/283 slp","active":false,"stats":{"atk":200,"def":157,"spa":162,"spd":163,"spe":110},"moves":["upperhand","speedswap","dragoncheer","dynamaxcannon"],"baseAbility":"poisonpoint","item":"payapaberry","pokeball":"pokeball","ability":"poisonpoint","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Inkay","details":"Inkay, F","condition":"252/252 slp","active":false,"stats":{"atk":145,"def":199,"spa":110,"spd":134,"spe":182},"moves":["hydrosteam","lick"],"baseAbility":"suctioncups","item":"powerlens","pokeball":"pokeball","ability":"suctioncups","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, F","condition":"274/274 slp","active":false,"stats":{"atk":305,"def":159,"spa":177,"spd":146,"spe":213},"moves":["dragonpulse","dynamaxcannon","healbell"],"baseAbility":"rivalry","item":"","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""}]}}
+decision c7073da1ea6f3caf
+line |
+line |t:|0
+line |-activate|p1a: Zoë|move: Struggle
+line |move|p1a: Zoë|Struggle|p2a: Shellder
+line |-damage|p2a: Shellder|96/207
+line |-enditem|p2a: Shellder|Sitrus Berry|[eat]
+line |-heal|p2a: Shellder|147/207|[from] item: Sitrus Berry
+line |-damage|p1a: Zoë|0 fnt|[from] recoil
+line |faint|p1a: Zoë
+line |
+line |win|p2

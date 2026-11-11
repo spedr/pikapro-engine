@@ -1,0 +1,114 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 0000 0000 02fa f468
+genders drawn
+team p1
+Carbink @ Red Card
+Ability: Clear Body
+Hardy Nature
+- Splash
+
+Metagross @ Ability Shield
+Ability: Clear Body
+Hardy Nature
+- Splash
+end
+team p2
+Hawlucha
+Ability: Mold Breaker
+Hardy Nature
+- Tackle
+
+Chansey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+
+Shinx
+Ability: Intimidate
+Hardy Nature
+- Splash
+end
+choice p1 move 1, move 1
+choice p2 move 1 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Carbink|Carbink|241/241
+expect |switch|p1a: Carbink|Carbink|100/100
+expect |split|p1
+expect |switch|p1b: Metagross|Metagross|301/301
+expect |switch|p1b: Metagross|Metagross|100/100
+expect |split|p2
+expect |switch|p2a: Hawlucha|Hawlucha, M|297/297
+expect |switch|p2a: Hawlucha|Hawlucha, M|100/100
+expect |split|p2
+expect |switch|p2b: Chansey|Chansey, F|641/641
+expect |switch|p2b: Chansey|Chansey, F|100/100
+expect |rng|2|1
+expect |rng|2|1
+expect |-ability|p2a: Hawlucha|Mold Breaker
+expect |rng|2|0
+expect |turn|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Hawlucha|Tackle|p1a: Carbink
+expect |rng|100|38
+expect |rng|24|10
+expect |rng|16|13
+expect |-resisted|p1a: Carbink
+expect |split|p1
+expect |-damage|p1a: Carbink|231/241
+expect |-damage|p1a: Carbink|96/100
+expect |rng|2|1
+expect |rng|2|0
+expect |-enditem|p1a: Carbink|Red Card|[of] p2a: Hawlucha
+expect |rng|1|0
+expect |split|p2
+expect |drag|p2a: Shinx|Shinx, M|231/231
+expect |drag|p2a: Shinx|Shinx, M|100/100
+expect |rng|2|0
+expect |-ability|p2a: Shinx|Intimidate|boost
+expect |-fail|p1a: Carbink|unboost|[from] ability: Clear Body|[of] p1a: Carbink
+expect |-fail|p1b: Metagross|unboost|[from] ability: Clear Body|[of] p1b: Metagross
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Metagross|Splash|p1b: Metagross
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Chansey|Splash|p2b: Chansey
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Carbink|Splash|p1a: Carbink
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|1
+expect |turn|2

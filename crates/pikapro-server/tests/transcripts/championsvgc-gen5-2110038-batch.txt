@@ -1,0 +1,187 @@
+# championsvgc-gen5-2110038-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@write
+>start {"formatid":"[Gen 9 Champions] VGC 2026 Reg M-B","seed":"gen5,c413aedebbcd602c"}
+>player p2 {"name":"Bob","team":"Alcremie-Mint-Cream|||AromaVeil|Moonlight,Poltergeist|Adamant|,,20,7,15,21|F|||50|,,,,,Bug]Pikachu|Ariados|Leftovers|Sniper|UpperHand,FakeTears,MirrorCoat,KowtowCleave|Relaxed|25,20,18,2,,1|M||S|50|,,,,,Flying]Ampharos||RawstBerry|Plus|Bind,Transform,MagnetRise,SteelRoller|Bashful|9,2,11,15,11,4|F|||50|,,,,,Ghost]Umbreon|||Synchronize|BitterBlade,Flatter,Charge|Quiet|,23,27,4,,12|M|||50|,,,,,Ice]Toucannon||KebiaBerry|KeenEye|StoneAxe,WorrySeed,PetalDance|Jolly|23,31,11,,,1|M|||50|,,,,,Dragon]Chomp|Ninetales||Drought|MagicPowder,PerishSong|Naughty|26,,11,4,17,4|F|||50|,,,,,Ice"}
+
+>player p1 {"name":"Alice","team":"X|Starmie|Starminite|Illuminate|Rest,FocusPunch|Mild|21,2,17,,19,6||||50|,,,,,Ghost]Tauros-Paldea-Combat|||CudChew|WideGuard|Hasty|26,3,17,6,,13||||50|,,,,,Steel]Glalie||Glalitite|IceBody|SpicyExtract|Sassy|,14,3,7,16,18|F||S|50|,,,,,Fairy]Sparky|Morpeko||HungerSwitch|WillOWisp|Careful|4,18,1,27,14,|M|||50|,,,,,Dragon]Nibbles|StunfiskGalar|MiracleSeed|Mimicry|MountainGale,HyperVoice,NightDaze,MistyTerrain|Mild|8,5,8,8,8,28|F|||50|,,,,,Dark]Chomp|Conkeldurr|PoisonBarb|SheerForce|PowerWhip|Lonely|14,31,6,,,15|M|||50|,,,,,Fighting"}
+@write
+>forcewin p2
+@write
+
+>p1 move 1
+@message
+update
+|t:|
+|gametype|doubles
+|player|p2|Bob||
+|player|p1|Alice||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Starmie, L50|
+|poke|p1|Tauros-Paldea-Combat, L50, M|
+|poke|p1|Glalie, L50, F, shiny|
+|poke|p1|Morpeko, L50, M|
+|poke|p1|Stunfisk-Galar, L50, F|
+|poke|p1|Conkeldurr, L50, M|
+|poke|p2|Alcremie-Mint-Cream, L50, F|
+|poke|p2|Ariados, L50, M, shiny|
+|poke|p2|Ampharos, L50, F|
+|poke|p2|Umbreon, L50, M|
+|poke|p2|Toucannon, L50, M|
+|poke|p2|Ninetales, L50, F|
+|teampreview|4
+|split|p1
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+|split|p2
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+
+@message
+sideupdate
+p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: X","details":"Starmie, L50","condition":"156/156","active":true,"stats":{"atk":97,"def":109,"spa":132,"spd":124,"spe":141},"moves":["rest","focuspunch"],"baseAbility":"illuminate","item":"starminite","pokeball":"pokeball","ability":"illuminate","commanding":false,"reviving":false},{"ident":"p1: Tauros","details":"Tauros-Paldea-Combat, L50, M","condition":"176/176","active":true,"stats":{"atk":133,"def":127,"spa":56,"spd":90,"spe":146},"moves":["wideguard"],"baseAbility":"cudchew","item":"","pokeball":"pokeball","ability":"cudchew","commanding":false,"reviving":false},{"ident":"p1: Glalie","details":"Glalie, L50, F, shiny","condition":"155/155","active":false,"stats":{"atk":114,"def":103,"spa":107,"spd":127,"spe":106},"moves":["spicyextract"],"baseAbility":"icebody","item":"glalitite","pokeball":"pokeball","ability":"icebody","commanding":false,"reviving":false},{"ident":"p1: Sparky","details":"Morpeko, L50, M","condition":"137/137","active":false,"stats":{"atk":133,"def":79,"spa":105,"spd":101,"spe":117},"moves":["willowisp"],"baseAbility":"hungerswitch","item":"","pokeball":"pokeball","ability":"hungerswitch","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Stunfisk-Galar, L50, F","condition":"192/192","active":false,"stats":{"atk":106,"def":114,"spa":103,"spd":112,"spe":80},"moves":["mountaingale","hypervoice","nightdaze","mistyterrain"],"baseAbility":"mimicry","item":"miracleseed","pokeball":"pokeball","ability":"mimicry","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Conkeldurr, L50, M","condition":"194/194","active":false,"stats":{"atk":210,"def":108,"spa":75,"spd":85,"spe":80},"moves":["powerwhip"],"baseAbility":"sheerforce","item":"poisonbarb","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false}]}}
+@message
+sideupdate
+p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Mint-Cream, L50, F","condition":"140/140","active":true,"stats":{"atk":88,"def":115,"spa":123,"spd":156,"spe":105},"moves":["moonlight","poltergeist"],"baseAbility":"aromaveil","item":"","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Ariados, L50, M, shiny","condition":"170/170","active":true,"stats":{"atk":130,"def":118,"spa":82,"spd":90,"spe":54},"moves":["upperhand","faketears","mirrorcoat","kowtowcleave"],"baseAbility":"sniper","item":"leftovers","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Ampharos","details":"Ampharos, L50, F","condition":"174/174","active":false,"stats":{"atk":97,"def":116,"spa":150,"spd":121,"spe":79},"moves":["bind","transform","magnetrise","steelroller"],"baseAbility":"plus","item":"rawstberry","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false},{"ident":"p2: Umbreon","details":"Umbreon, L50, M","condition":"170/170","active":false,"stats":{"atk":108,"def":157,"spa":92,"spd":150,"spe":87},"moves":["bitterblade","flatter","charge"],"baseAbility":"synchronize","item":"","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false},{"ident":"p2: Toucannon","details":"Toucannon, L50, M","condition":"178/178","active":false,"stats":{"atk":171,"def":106,"spa":85,"spd":95,"spe":89},"moves":["stoneaxe","worryseed","petaldance"],"baseAbility":"keeneye","item":"kebiaberry","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Ninetales, L50, F","condition":"174/174","active":false,"stats":{"atk":105,"def":106,"spa":105,"spd":123,"spe":124},"moves":["magicpowder","perishsong"],"baseAbility":"drought","item":"","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false}]}}
+@message
+update
+|
+|win|Bob
+@message
+end
+{"winner":"Bob","seed":"gen5,c413aedebbcd602c","turns":0,"p1":"Alice","p2":"Bob","p1team":[{"name":"X","species":"Starmie","item":"Starminite","ability":"Illuminate","moves":["Rest","Focus Punch"],"nature":"Mild","evs":{"hp":21,"atk":2,"def":17,"spa":0,"spd":19,"spe":6},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Tauros","species":"Tauros-Paldea-Combat","item":"","ability":"Cud Chew","moves":["Wide Guard"],"nature":"Hasty","evs":{"hp":26,"atk":3,"def":17,"spa":6,"spd":0,"spe":13},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Glalie","species":"Glalie","item":"Glalitite","ability":"Ice Body","moves":["Spicy Extract"],"nature":"Sassy","evs":{"hp":0,"atk":14,"def":3,"spa":7,"spd":16,"spe":18},"gender":"F","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sparky","species":"Morpeko","item":"","ability":"Hunger Switch","moves":["Will-O-Wisp"],"nature":"Careful","evs":{"hp":4,"atk":18,"def":1,"spa":27,"spd":14,"spe":0},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Nibbles","species":"Stunfisk-Galar","item":"Miracle Seed","ability":"Mimicry","moves":["Mountain Gale","Hyper Voice","Night Daze","Misty Terrain"],"nature":"Mild","evs":{"hp":8,"atk":5,"def":8,"spa":8,"spd":8,"spe":28},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Conkeldurr","item":"Poison Barb","ability":"Sheer Force","moves":["Power Whip"],"nature":"Lonely","evs":{"hp":14,"atk":31,"def":6,"spa":0,"spd":0,"spe":15},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Alcremie","species":"Alcremie-Mint-Cream","item":"","ability":"Aroma Veil","moves":["Moonlight","Poltergeist"],"nature":"Adamant","evs":{"hp":0,"atk":0,"def":20,"spa":7,"spd":15,"spe":21},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pikachu","species":"Ariados","item":"Leftovers","ability":"Sniper","moves":["Upper Hand","Fake Tears","Mirror Coat","Kowtow Cleave"],"nature":"Relaxed","evs":{"hp":25,"atk":20,"def":18,"spa":2,"spd":0,"spe":1},"gender":"M","shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Ampharos","species":"Ampharos","item":"Rawst Berry","ability":"Plus","moves":["Bind","Transform","Magnet Rise","Steel Roller"],"nature":"Bashful","evs":{"hp":9,"atk":2,"def":11,"spa":15,"spd":11,"spe":4},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Umbreon","species":"Umbreon","item":"","ability":"Synchronize","moves":["Bitter Blade","Flatter","Charge"],"nature":"Quiet","evs":{"hp":0,"atk":23,"def":27,"spa":4,"spd":0,"spe":12},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Toucannon","species":"Toucannon","item":"Kebia Berry","ability":"Keen Eye","moves":["Stone Axe","Worry Seed","Petal Dance"],"nature":"Jolly","evs":{"hp":23,"atk":31,"def":11,"spa":0,"spd":0,"spe":1},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dragon","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Chomp","species":"Ninetales","item":"","ability":"Drought","moves":["Magic Powder","Perish Song"],"nature":"Naughty","evs":{"hp":26,"atk":0,"def":11,"spa":4,"spd":17,"spe":4},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[6,6],"inputLog":[">start {\"formatid\":\"[Gen 9 Champions] VGC 2026 Reg M-B\",\"seed\":\"gen5,c413aedebbcd602c\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Alcremie-Mint-Cream|||AromaVeil|Moonlight,Poltergeist|Adamant|,,20,7,15,21|F|||50|,,,,,Bug]Pikachu|Ariados|Leftovers|Sniper|UpperHand,FakeTears,MirrorCoat,KowtowCleave|Relaxed|25,20,18,2,,1|M||S|50|,,,,,Flying]Ampharos||RawstBerry|Plus|Bind,Transform,MagnetRise,SteelRoller|Bashful|9,2,11,15,11,4|F|||50|,,,,,Ghost]Umbreon|||Synchronize|BitterBlade,Flatter,Charge|Quiet|,23,27,4,,12|M|||50|,,,,,Ice]Toucannon||KebiaBerry|KeenEye|StoneAxe,WorrySeed,PetalDance|Jolly|23,31,11,,,1|M|||50|,,,,,Dragon]Chomp|Ninetales||Drought|MagicPowder,PerishSong|Naughty|26,,11,4,17,4|F|||50|,,,,,Ice\"}",">player p1 {\"name\":\"Alice\",\"team\":\"X|Starmie|Starminite|Illuminate|Rest,FocusPunch|Mild|21,2,17,,19,6||||50|,,,,,Ghost]Tauros-Paldea-Combat|||CudChew|WideGuard|Hasty|26,3,17,6,,13||||50|,,,,,Steel]Glalie||Glalitite|IceBody|SpicyExtract|Sassy|,14,3,7,16,18|F||S|50|,,,,,Fairy]Sparky|Morpeko||HungerSwitch|WillOWisp|Careful|4,18,1,27,14,|M|||50|,,,,,Dragon]Nibbles|StunfiskGalar|MiracleSeed|Mimicry|MountainGale,HyperVoice,NightDaze,MistyTerrain|Mild|8,5,8,8,8,28|F|||50|,,,,,Dark]Chomp|Conkeldurr|PoisonBarb|SheerForce|PowerWhip|Lonely|14,31,6,,,15|M|||50|,,,,,Fighting\"}",">forcewin p2"]}
+@channel-write omniscient
+>start {"formatid":"[Gen 9 Champions] VGC 2026 Reg M-B","seed":"gen5,c413aedebbcd602c"}
+@channel-write omniscient
+>player p2 {"name":"Bob","team":"Alcremie-Mint-Cream|||AromaVeil|Moonlight,Poltergeist|Adamant|,,20,7,15,21|F|||50|,,,,,Bug]Pikachu|Ariados|Leftovers|Sniper|UpperHand,FakeTears,MirrorCoat,KowtowCleave|Relaxed|25,20,18,2,,1|M||S|50|,,,,,Flying]Ampharos||RawstBerry|Plus|Bind,Transform,MagnetRise,SteelRoller|Bashful|9,2,11,15,11,4|F|||50|,,,,,Ghost]Umbreon|||Synchronize|BitterBlade,Flatter,Charge|Quiet|,23,27,4,,12|M|||50|,,,,,Ice]Toucannon||KebiaBerry|KeenEye|StoneAxe,WorrySeed,PetalDance|Jolly|23,31,11,,,1|M|||50|,,,,,Dragon]Chomp|Ninetales||Drought|MagicPowder,PerishSong|Naughty|26,,11,4,17,4|F|||50|,,,,,Ice"}
+@channel-write omniscient
+>player p1 {"name":"Alice","team":"X|Starmie|Starminite|Illuminate|Rest,FocusPunch|Mild|21,2,17,,19,6||||50|,,,,,Ghost]Tauros-Paldea-Combat|||CudChew|WideGuard|Hasty|26,3,17,6,,13||||50|,,,,,Steel]Glalie||Glalitite|IceBody|SpicyExtract|Sassy|,14,3,7,16,18|F||S|50|,,,,,Fairy]Sparky|Morpeko||HungerSwitch|WillOWisp|Careful|4,18,1,27,14,|M|||50|,,,,,Dragon]Nibbles|StunfiskGalar|MiracleSeed|Mimicry|MountainGale,HyperVoice,NightDaze,MistyTerrain|Mild|8,5,8,8,8,28|F|||50|,,,,,Dark]Chomp|Conkeldurr|PoisonBarb|SheerForce|PowerWhip|Lonely|14,31,6,,,15|M|||50|,,,,,Fighting"}
+@channel-write omniscient
+>forcewin p2
+@channel-write p1
+move 1
+@channel omniscient
+|t:|
+|gametype|doubles
+@channel omniscient
+|player|p2|Bob||
+@channel omniscient
+|player|p1|Alice||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Starmie, L50|
+|poke|p1|Tauros-Paldea-Combat, L50, M|
+|poke|p1|Glalie, L50, F, shiny|
+|poke|p1|Morpeko, L50, M|
+|poke|p1|Stunfisk-Galar, L50, F|
+|poke|p1|Conkeldurr, L50, M|
+|poke|p2|Alcremie-Mint-Cream, L50, F|
+|poke|p2|Ariados, L50, M, shiny|
+|poke|p2|Ampharos, L50, F|
+|poke|p2|Umbreon, L50, M|
+|poke|p2|Toucannon, L50, M|
+|poke|p2|Ninetales, L50, F|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+@channel omniscient
+|
+|win|Bob
+@channel spectator
+|t:|
+|gametype|doubles
+@channel spectator
+|player|p2|Bob||
+@channel spectator
+|player|p1|Alice||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Starmie, L50|
+|poke|p1|Tauros-Paldea-Combat, L50, M|
+|poke|p1|Glalie, L50, F, shiny|
+|poke|p1|Morpeko, L50, M|
+|poke|p1|Stunfisk-Galar, L50, F|
+|poke|p1|Conkeldurr, L50, M|
+|poke|p2|Alcremie-Mint-Cream, L50, F|
+|poke|p2|Ariados, L50, M, shiny|
+|poke|p2|Ampharos, L50, F|
+|poke|p2|Umbreon, L50, M|
+|poke|p2|Toucannon, L50, M|
+|poke|p2|Ninetales, L50, F|
+|teampreview|4
+@channel spectator
+|
+|win|Bob
+@channel p1
+|t:|
+|gametype|doubles
+@channel p1
+|player|p2|Bob||
+@channel p1
+|player|p1|Alice||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Starmie, L50|
+|poke|p1|Tauros-Paldea-Combat, L50, M|
+|poke|p1|Glalie, L50, F, shiny|
+|poke|p1|Morpeko, L50, M|
+|poke|p1|Stunfisk-Galar, L50, F|
+|poke|p1|Conkeldurr, L50, M|
+|poke|p2|Alcremie-Mint-Cream, L50, F|
+|poke|p2|Ariados, L50, M, shiny|
+|poke|p2|Ampharos, L50, F|
+|poke|p2|Umbreon, L50, M|
+|poke|p2|Toucannon, L50, M|
+|poke|p2|Ninetales, L50, F|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+@channel p1
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: X","details":"Starmie, L50","condition":"156/156","active":true,"stats":{"atk":97,"def":109,"spa":132,"spd":124,"spe":141},"moves":["rest","focuspunch"],"baseAbility":"illuminate","item":"starminite","pokeball":"pokeball","ability":"illuminate","commanding":false,"reviving":false},{"ident":"p1: Tauros","details":"Tauros-Paldea-Combat, L50, M","condition":"176/176","active":true,"stats":{"atk":133,"def":127,"spa":56,"spd":90,"spe":146},"moves":["wideguard"],"baseAbility":"cudchew","item":"","pokeball":"pokeball","ability":"cudchew","commanding":false,"reviving":false},{"ident":"p1: Glalie","details":"Glalie, L50, F, shiny","condition":"155/155","active":false,"stats":{"atk":114,"def":103,"spa":107,"spd":127,"spe":106},"moves":["spicyextract"],"baseAbility":"icebody","item":"glalitite","pokeball":"pokeball","ability":"icebody","commanding":false,"reviving":false},{"ident":"p1: Sparky","details":"Morpeko, L50, M","condition":"137/137","active":false,"stats":{"atk":133,"def":79,"spa":105,"spd":101,"spe":117},"moves":["willowisp"],"baseAbility":"hungerswitch","item":"","pokeball":"pokeball","ability":"hungerswitch","commanding":false,"reviving":false},{"ident":"p1: Nibbles","details":"Stunfisk-Galar, L50, F","condition":"192/192","active":false,"stats":{"atk":106,"def":114,"spa":103,"spd":112,"spe":80},"moves":["mountaingale","hypervoice","nightdaze","mistyterrain"],"baseAbility":"mimicry","item":"miracleseed","pokeball":"pokeball","ability":"mimicry","commanding":false,"reviving":false},{"ident":"p1: Chomp","details":"Conkeldurr, L50, M","condition":"194/194","active":false,"stats":{"atk":210,"def":108,"spa":75,"spd":85,"spe":80},"moves":["powerwhip"],"baseAbility":"sheerforce","item":"poisonbarb","pokeball":"pokeball","ability":"sheerforce","commanding":false,"reviving":false}]}}
+@channel p1
+|
+|win|Bob
+@channel p2
+|t:|
+|gametype|doubles
+@channel p2
+|player|p2|Bob||
+@channel p2
+|player|p1|Alice||
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Starmie, L50|
+|poke|p1|Tauros-Paldea-Combat, L50, M|
+|poke|p1|Glalie, L50, F, shiny|
+|poke|p1|Morpeko, L50, M|
+|poke|p1|Stunfisk-Galar, L50, F|
+|poke|p1|Conkeldurr, L50, M|
+|poke|p2|Alcremie-Mint-Cream, L50, F|
+|poke|p2|Ariados, L50, M, shiny|
+|poke|p2|Ampharos, L50, F|
+|poke|p2|Umbreon, L50, M|
+|poke|p2|Toucannon, L50, M|
+|poke|p2|Ninetales, L50, F|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+@channel p2
+|request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Alcremie","details":"Alcremie-Mint-Cream, L50, F","condition":"140/140","active":true,"stats":{"atk":88,"def":115,"spa":123,"spd":156,"spe":105},"moves":["moonlight","poltergeist"],"baseAbility":"aromaveil","item":"","pokeball":"pokeball","ability":"aromaveil","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Ariados, L50, M, shiny","condition":"170/170","active":true,"stats":{"atk":130,"def":118,"spa":82,"spd":90,"spe":54},"moves":["upperhand","faketears","mirrorcoat","kowtowcleave"],"baseAbility":"sniper","item":"leftovers","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false},{"ident":"p2: Ampharos","details":"Ampharos, L50, F","condition":"174/174","active":false,"stats":{"atk":97,"def":116,"spa":150,"spd":121,"spe":79},"moves":["bind","transform","magnetrise","steelroller"],"baseAbility":"plus","item":"rawstberry","pokeball":"pokeball","ability":"plus","commanding":false,"reviving":false},{"ident":"p2: Umbreon","details":"Umbreon, L50, M","condition":"170/170","active":false,"stats":{"atk":108,"def":157,"spa":92,"spd":150,"spe":87},"moves":["bitterblade","flatter","charge"],"baseAbility":"synchronize","item":"","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false},{"ident":"p2: Toucannon","details":"Toucannon, L50, M","condition":"178/178","active":false,"stats":{"atk":171,"def":106,"spa":85,"spd":95,"spe":89},"moves":["stoneaxe","worryseed","petaldance"],"baseAbility":"keeneye","item":"kebiaberry","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Ninetales, L50, F","condition":"174/174","active":false,"stats":{"atk":105,"def":106,"spa":105,"spd":123,"spe":124},"moves":["magicpowder","perishsong"],"baseAbility":"drought","item":"","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false}]}}
+@channel p2
+|
+|win|Bob

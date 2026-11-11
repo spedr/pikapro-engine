@@ -1,0 +1,140 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 0000 0000 02cd 2da8
+genders drawn
+team p1
+Oricorio
+Ability: Dancer
+EVs: 252 Spe
+Timid Nature
+- Substitute
+- Rest
+- Feather Dance
+
+Smeargle
+Ability: Own Tempo
+Hardy Nature
+- Role Play
+- Copycat
+- Tail Whip
+end
+team p2
+Oricorio-Sensu
+Ability: Dancer
+Hardy Nature
+- Feather Dance
+- Roost
+- Quiver Dance
+
+Slowbro
+Ability: Own Tempo
+Hardy Nature
+- Amnesia
+end
+choice p1 move 1, move 1 -1
+choice p2 move 1 2, move 1
+choice p1 move 2, move 3
+choice p2 move 2, move 1
+choice p1 move 1, move 2
+choice p2 move 3, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Oricorio|Oricorio, M|291/291
+expect |switch|p1a: Oricorio|Oricorio, M|100/100
+expect |split|p1
+expect |switch|p1b: Smeargle|Smeargle, F|251/251
+expect |switch|p1b: Smeargle|Smeargle, F|100/100
+expect |split|p2
+expect |switch|p2a: Oricorio|Oricorio-Sensu, M|291/291
+expect |switch|p2a: Oricorio|Oricorio-Sensu, M|100/100
+expect |split|p2
+expect |switch|p2b: Slowbro|Slowbro, F|331/331
+expect |switch|p2b: Slowbro|Slowbro, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Oricorio|Substitute|p1a: Oricorio
+expect |-start|p1a: Oricorio|Substitute
+expect |split|p1
+expect |-damage|p1a: Oricorio|219/291
+expect |-damage|p1a: Oricorio|76/100
+expect |move|p2a: Oricorio|Feather Dance|p1b: Smeargle
+expect |rng|100|4
+expect |-unboost|p1b: Smeargle|atk|2
+expect |-activate|p1a: Oricorio|ability: Dancer
+expect |move|p1a: Oricorio|Feather Dance|p2a: Oricorio|[from] ability: Dancer
+expect |rng|100|90
+expect |-unboost|p2a: Oricorio|atk|2
+expect |move|p1b: Smeargle|Role Play|p1a: Oricorio
+expect |-ability|p1b: Smeargle|Dancer|Own Tempo|[from] move: Role Play|[of] p1a: Oricorio
+expect |move|p2b: Slowbro|Amnesia|p2b: Slowbro
+expect |-boost|p2b: Slowbro|spd|2
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1a: Oricorio|Rest|p1a: Oricorio
+expect |-status|p1a: Oricorio|slp|[from] move: Rest
+expect |rng|3|1
+expect |split|p1
+expect |-heal|p1a: Oricorio|291/291 slp|[silent]
+expect |-heal|p1a: Oricorio|100/100 slp|[silent]
+expect |rng|2|0
+expect |move|p2a: Oricorio|Roost||[still]
+expect |-fail|p2a: Oricorio|heal
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1b: Smeargle|Tail Whip|p2a: Oricorio|[spread] p2a,p2b
+expect |rng|100|52
+expect |rng|100|44
+expect |-unboost|p2a: Oricorio|def|1
+expect |-unboost|p2b: Slowbro|def|1
+expect |move|p2b: Slowbro|Amnesia|p2b: Slowbro
+expect |-boost|p2b: Slowbro|spd|2
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |cant|p1a: Oricorio|slp
+expect |move|p2a: Oricorio|Quiver Dance|p2a: Oricorio
+expect |-boost|p2a: Oricorio|spa|1
+expect |-boost|p2a: Oricorio|spd|1
+expect |-boost|p2a: Oricorio|spe|1
+expect |-activate|p1b: Smeargle|ability: Dancer
+expect |move|p1b: Smeargle|Quiver Dance|p1b: Smeargle|[from] ability: Dancer
+expect |-boost|p1b: Smeargle|spa|1
+expect |-boost|p1b: Smeargle|spd|1
+expect |-boost|p1b: Smeargle|spe|1
+expect |-activate|p1a: Oricorio|ability: Dancer
+expect |cant|p1a: Oricorio|slp
+expect |move|p1b: Smeargle|Copycat|p1b: Smeargle
+expect |move|p1b: Smeargle|Amnesia|p1b: Smeargle|[from] move: Copycat
+expect |-boost|p1b: Smeargle|spd|2
+expect |move|p2b: Slowbro|Amnesia|p2b: Slowbro
+expect |-boost|p2b: Slowbro|spd|2
+expect |
+expect |upkeep
+expect |turn|4

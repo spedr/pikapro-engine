@@ -1,0 +1,716 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 829a d8ba d0aa 5449
+genders drawn
+team p1
+ThisNameIsFarTooLongToKeep (Clodsire) @ Mirror Herb
+Ability: Water Absorb
+Level: 50
+Tera Type: Fighting
+EVs: 86 HP / 155 Atk / 139 Def / 4 SpA / 102 SpD / 24 Spe
+Brave Nature
+- Trailblaze
+- Razor Leaf
+
+Tentacruel (M) @ Rowap Berry
+Ability: Rain Dish
+Level: 50
+Tera Type: Water
+EVs: 251 HP / 145 Atk / 6 Def / 7 SpA / 79 SpD / 9 Spe
+Lax Nature
+- Doom Desire
+- Volt Switch
+- Psyblade
+
+Scovillain
+Ability: Chlorophyll
+Level: 50
+Tera Type: Psychic
+EVs: 98 HP / 57 Atk / 120 Def / 107 SpA / 25 SpD / 97 Spe
+Adamant Nature
+- Leafage
+- Rock Polish
+
+Pikachu (Mankey)
+Ability: Defiant
+Level: 50
+Tera Type: Poison
+EVs: 14 HP / 70 Atk / 186 SpA / 91 SpD / 149 Spe
+Careful Nature
+- Metal Claw
+- Poison Gas
+- Aqua Ring
+
+Calyrex-Ice @ Lum Berry
+Ability: As One (Glastrier)
+Level: 50
+Shiny: Yes
+Tera Type: Fire
+EVs: 67 HP / 2 Atk / 33 Def / 186 SpA / 19 SpD / 202 Spe
+Docile Nature
+- Future Sight
+- U-turn
+- Clanging Scales
+- Flail
+
+Yanma (M) @ Covert Cloak
+Ability: Frisk
+Level: 50
+Shiny: Yes
+Tera Type: Psychic
+EVs: 107 HP / 63 Atk / 191 Def / 46 SpA / 21 SpD / 81 Spe
+Sassy Nature
+- False Swipe
+end
+team p2
+Shelgon (F)
+Ability: Rock Head
+Level: 50
+Tera Type: Fairy
+EVs: 222 HP / 5 Atk / 51 Def / 1 SpA / 221 SpD / 6 Spe
+Quiet Nature
+- Doom Desire
+- Volt Switch
+- Hurricane
+- Mist Ball
+
+Scovillain
+Ability: Chlorophyll
+Level: 50
+Tera Type: Ground
+EVs: 14 HP / 171 Atk / 40 Def / 69 SpA / 210 SpD / 4 Spe
+Quiet Nature
+- Fairy Lock
+- Growth
+
+Minior-Yellow
+Ability: Shields Down
+Level: 50
+Tera Type: Electric
+EVs: 55 HP / 37 Atk / 194 Def / 61 SpA / 4 SpD / 127 Spe
+Quirky Nature
+- Facade
+- Twister
+- Fake Tears
+
+Bastiodon @ Destiny Knot
+Ability: Sturdy
+Level: 50
+Tera Type: Ice
+EVs: 16 HP / 76 Atk / 132 Def / 100 SpA / 31 SpD / 153 Spe
+Relaxed Nature
+- Future Sight
+- U-turn
+- Shadow Force
+
+Chomp (Persian)
+Ability: Technician
+Level: 50
+Tera Type: Psychic
+EVs: 23 HP / 229 Atk / 15 Def / 42 SpA / 18 SpD / 172 Spe
+Bold Nature
+- Fillet Away
+- Meteor Mash
+- Rock Slide
+- Forest's Curse
+
+Samurott @ Eject Pack
+Ability: Shell Armor
+Level: 50
+Tera Type: Fighting
+EVs: 29 HP / 197 Atk / 20 Def / 96 SpA / 11 SpD / 118 Spe
+Bashful Nature
+- Fickle Beam
+end
+choice p1 team 5123
+choice p2 team 6425
+choice p1 move 4 1 terastallize, move 1 2
+choice p2 switch 3, move 3 -1
+choice p1 move flail +2, switch scovillain
+choice p2 move 1 terastallize, move 1
+choice p1 move 4 2, move 2
+choice p2 move 2, move 2 2
+choice p2 default
+choice p1 move 4 2, move 1 -1
+choice p2 move 2, switch 4
+choice p1 move 2 2, switch 3
+choice p2 move Growth, move 4 -1
+choice p1 switch 3, pass
+choice p2 move 1, move 2 -1
+choice p1 move 2, move 2 -1
+choice p1 pass, switch 4
+choice p2 move 2, move 2 -1
+choice p1 move 2, move 1 1
+choice p2 default
+choice p1 move leafage 2 ,  switch Tentacruel
+choice p2 move Future Sight 1 ,  move 4 1
+choice p1 switch calyrex-ice, switch clodsire
+choice p2 move futuresight 1, switch 4
+choice p1 move 1 +1 ,  move razorleaf
+choice p2 move 1 -2, switch 4
+choice p2 pass, switch 4
+choice p1 move 4 -2 ,  move Trailblaze 1
+choice p2 move 3 -2,move Fickle Beam -1
+choice p1 move 1 1, move 1 -1
+choice p2 move 1, move 1 2
+choice p1 move 1 2, switch 3
+choice p2 move 2 2, move 1 2
+choice p1 move 2 1, switch 3
+choice p2 move 2 2, move 1 -1
+choice p1 switch 3, pass
+choice p2 move 1 2, move 1 2
+choice p1 move Leafage +2 ,  switch Calyrex
+choice p2 move 2 2, pass
+choice p1 move 2, move 2 1
+choice p1 pass, switch 3
+choice p2 move 3 1, pass
+choice p1 move 1 1, switch 4
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Clodsire, L50, M|
+expect |poke|p1|Tentacruel, L50, M|
+expect |poke|p1|Scovillain, L50, M|
+expect |poke|p1|Mankey, L50, F|
+expect |poke|p1|Calyrex-Ice, L50|
+expect |poke|p1|Yanma, L50, M|
+expect |poke|p2|Shelgon, L50, F|
+expect |poke|p2|Scovillain, L50, M|
+expect |poke|p2|Minior-Yellow, L50|
+expect |poke|p2|Bastiodon, L50, M|
+expect |poke|p2|Persian, L50, F|
+expect |poke|p2|Samurott, L50, F|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Calyrex|Calyrex-Ice, L50, shiny|183/183
+expect |switch|p1a: Calyrex|Calyrex-Ice, L50, shiny|183/183
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Clodsire, L50, M|216/216
+expect |switch|p1b: ThisNameIsFarTooLong|Clodsire, L50, M|216/216
+expect |split|p2
+expect |switch|p2a: Samurott|Samurott, L50, F|174/174
+expect |switch|p2a: Samurott|Samurott, L50, F|174/174
+expect |split|p2
+expect |switch|p2b: Bastiodon|Bastiodon, L50, M|137/137
+expect |switch|p2b: Bastiodon|Bastiodon, L50, M|137/137
+expect |-ability|p1a: Calyrex|As One
+expect |-ability|p1a: Calyrex|Unnerve
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Scovillain|Scovillain, L50, M|142/142
+expect |switch|p2a: Scovillain|Scovillain, L50, M|142/142
+expect |-terastallize|p1a: Calyrex|Fire
+expect |move|p1a: Calyrex|Flail|p2a: Scovillain
+expect |rng|100|68
+expect |rng|24|18
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Scovillain|124/142
+expect |-damage|p2a: Scovillain|124/142
+expect |move|p2b: Bastiodon|Shadow Force||[still]
+expect |-prepare|p2b: Bastiodon|Shadow Force
+expect |move|p1b: ThisNameIsFarTooLong|Trailblaze|p2b: Bastiodon|[miss]
+expect |-miss|p1b: ThisNameIsFarTooLong|p2b: Bastiodon
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Scovillain|Scovillain, L50, M|152/152
+expect |switch|p1b: Scovillain|Scovillain, L50, M|152/152
+expect |-terastallize|p2a: Scovillain|Ground
+expect |move|p1a: Calyrex|Flail|p2b: Bastiodon|[miss]
+expect |-miss|p1a: Calyrex|p2b: Bastiodon
+expect |move|p2a: Scovillain|Fairy Lock|p2a: Scovillain
+expect |-fieldactivate|move: Fairy Lock
+expect |move|p2b: Bastiodon|Shadow Force|p2a: Scovillain|[from] lockedmove
+expect |rng|100|96
+expect |rng|24|19
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Scovillain|76/142
+expect |-damage|p2a: Scovillain|76/142
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1b: Scovillain|Rock Polish|p1b: Scovillain
+expect |-boost|p1b: Scovillain|spe|2
+expect |move|p1a: Calyrex|Flail|p2b: Bastiodon
+expect |rng|100|8
+expect |rng|24|21
+expect |rng|16|12
+expect |-resisted|p2b: Bastiodon
+expect |split|p2
+expect |-damage|p2b: Bastiodon|136/137
+expect |-damage|p2b: Bastiodon|136/137
+expect |move|p2a: Scovillain|Growth|p2a: Scovillain
+expect |-boost|p2a: Scovillain|atk|1
+expect |-boost|p2a: Scovillain|spa|1
+expect |move|p2b: Bastiodon|U-turn|p1b: Scovillain
+expect |rng|100|92
+expect |rng|24|3
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1b: Scovillain|127/152
+expect |-damage|p1b: Scovillain|127/152
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Samurott|Samurott, L50, F|174/174|[from] U-turn
+expect |switch|p2b: Samurott|Samurott, L50, F|174/174|[from] U-turn
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Chomp|Persian, L50, F|143/143
+expect |switch|p2b: Chomp|Persian, L50, F|143/143
+expect |move|p1b: Scovillain|Leafage|p1a: Calyrex
+expect |rng|100|4
+expect |rng|24|20
+expect |rng|16|7
+expect |-resisted|p1a: Calyrex
+expect |split|p1
+expect |-damage|p1a: Calyrex|173/183
+expect |-damage|p1a: Calyrex|173/183
+expect |move|p1a: Calyrex|Flail|p2b: Chomp
+expect |rng|100|66
+expect |rng|24|22
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2b: Chomp|126/143
+expect |-damage|p2b: Chomp|126/143
+expect |move|p2a: Scovillain|Growth|p2a: Scovillain
+expect |-boost|p2a: Scovillain|atk|1
+expect |-boost|p2a: Scovillain|spa|1
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Tentacruel|Tentacruel, L50, M|186/186
+expect |switch|p1b: Tentacruel|Tentacruel, L50, M|186/186
+expect |move|p2b: Chomp|Forest's Curse||[still]
+expect |rng|100|54
+expect |-fail|p2b: Chomp
+expect |move|p1a: Calyrex|U-turn|p2b: Chomp
+expect |rng|100|51
+expect |rng|24|23
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Chomp|69/143
+expect |-damage|p2b: Chomp|69/143
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Scovillain|Scovillain, L50, M|127/152|[from] U-turn
+expect |switch|p1a: Scovillain|Scovillain, L50, M|127/152|[from] U-turn
+expect |move|p2a: Scovillain|Growth|p2a: Scovillain
+expect |-boost|p2a: Scovillain|atk|1
+expect |-boost|p2a: Scovillain|spa|1
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2b: Chomp|Meteor Mash|p2a: Scovillain
+expect |rng|100|27
+expect |rng|24|15
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Scovillain|29/142
+expect |-damage|p2a: Scovillain|29/142
+expect |rng|100|49
+expect |move|p1b: Tentacruel|Volt Switch|p1a: Scovillain
+expect |rng|100|42
+expect |rng|24|10
+expect |rng|16|12
+expect |-resisted|p1a: Scovillain
+expect |split|p1
+expect |-damage|p1a: Scovillain|111/152
+expect |-damage|p1a: Scovillain|111/152
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Clodsire, L50, M|216/216|[from] Volt Switch
+expect |switch|p1b: ThisNameIsFarTooLong|Clodsire, L50, M|216/216|[from] Volt Switch
+expect |move|p1a: Scovillain|Rock Polish|p1a: Scovillain
+expect |-boost|p1a: Scovillain|spe|2
+expect |move|p2a: Scovillain|Fairy Lock|p2a: Scovillain
+expect |-fieldactivate|move: Fairy Lock
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1a: Scovillain|Rock Polish|p1a: Scovillain
+expect |-boost|p1a: Scovillain|spe|2
+expect |move|p2b: Chomp|Meteor Mash|p2a: Scovillain
+expect |rng|100|75
+expect |rng|24|15
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Scovillain|0 fnt
+expect |-damage|p2a: Scovillain|0 fnt
+expect |rng|100|49
+expect |faint|p2a: Scovillain
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: ThisNameIsFarTooLong|Trailblaze|p2b: Chomp
+expect |rng|100|85
+expect |rng|24|6
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Chomp|40/143
+expect |-damage|p2b: Chomp|40/143
+expect |rng|100|76
+expect |-boost|p1b: ThisNameIsFarTooLong|spe|1
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Bastiodon|Bastiodon, L50, M|136/137
+expect |switch|p2a: Bastiodon|Bastiodon, L50, M|136/137
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Tentacruel|Tentacruel, L50, M|186/186
+expect |switch|p1b: Tentacruel|Tentacruel, L50, M|186/186
+expect |move|p1a: Scovillain|Leafage|p2b: Chomp
+expect |rng|100|36
+expect |rng|24|5
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Chomp|3/143
+expect |-damage|p2b: Chomp|3/143
+expect |move|p2b: Chomp|Forest's Curse||[still]
+expect |rng|100|8
+expect |-fail|p2b: Chomp
+expect |move|p2a: Bastiodon|Future Sight|p1a: Scovillain
+expect |-start|p2a: Bastiodon|move: Future Sight
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Calyrex|Calyrex-Ice, L50, shiny, tera:Fire|173/183
+expect |switch|p1a: Calyrex|Calyrex-Ice, L50, shiny, tera:Fire|173/183
+expect |-ability|p1a: Calyrex|As One
+expect |-ability|p1a: Calyrex|Unnerve
+expect |split|p2
+expect |switch|p2b: Samurott|Samurott, L50, F|174/174
+expect |switch|p2b: Samurott|Samurott, L50, F|174/174
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Clodsire, L50, M|216/216
+expect |switch|p1b: ThisNameIsFarTooLong|Clodsire, L50, M|216/216
+expect |move|p2a: Bastiodon|Future Sight||[still]
+expect |-fail|p2a: Bastiodon
+expect |
+expect |upkeep
+expect |turn|10
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Chomp|Persian, L50, F|3/143
+expect |switch|p2b: Chomp|Persian, L50, F|3/143
+expect |rng|2|0
+expect |move|p1a: Calyrex|Future Sight|p2a: Bastiodon
+expect |-start|p1a: Calyrex|move: Future Sight
+expect |rng|2|1
+expect |move|p2a: Bastiodon|Future Sight|p2b: Chomp
+expect |-start|p2a: Bastiodon|move: Future Sight
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: ThisNameIsFarTooLong|Razor Leaf|p2a: Bastiodon|[spread] p2b
+expect |rng|100|96
+expect |-miss|p1b: ThisNameIsFarTooLong|p2a: Bastiodon
+expect |rng|100|43
+expect |rng|8|1
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Chomp|0 fnt
+expect |-damage|p2b: Chomp|0 fnt
+expect |faint|p2b: Chomp
+expect |
+expect |-end|p1a: Calyrex|move: Future Sight
+expect |rng|100|12
+expect |rng|24|20
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Calyrex|145/183
+expect |-damage|p1a: Calyrex|145/183
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Samurott|Samurott, L50, F|174/174
+expect |switch|p2b: Samurott|Samurott, L50, F|174/174
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p2b: Samurott|Fickle Beam|p2a: Bastiodon|[anim] Fickle Beam All Out
+expect |rng|100|22
+expect |rng|24|4
+expect |rng|10|1
+expect |-activate|p2b: Samurott|move: Fickle Beam
+expect |rng|16|7
+expect |-resisted|p2a: Bastiodon
+expect |split|p2
+expect |-damage|p2a: Bastiodon|108/137
+expect |-damage|p2a: Bastiodon|108/137
+expect |move|p1a: Calyrex|Flail|p1b: ThisNameIsFarTooLong
+expect |rng|100|46
+expect |rng|24|0
+expect |rng|16|3
+expect |-crit|p1b: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|190/216
+expect |-damage|p1b: ThisNameIsFarTooLong|190/216
+expect |move|p2a: Bastiodon|Shadow Force||[still]
+expect |-prepare|p2a: Bastiodon|Shadow Force
+expect |move|p1b: ThisNameIsFarTooLong|Trailblaze|p2a: Bastiodon|[miss]
+expect |-miss|p1b: ThisNameIsFarTooLong|p2a: Bastiodon
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p2b: Samurott|Fickle Beam|p1b: ThisNameIsFarTooLong
+expect |rng|100|13
+expect |rng|24|1
+expect |rng|10|5
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|157/216
+expect |-damage|p1b: ThisNameIsFarTooLong|157/216
+expect |move|p1a: Calyrex|Future Sight||[still]
+expect |-fail|p1a: Calyrex
+expect |move|p2a: Bastiodon|Shadow Force|p2b: Samurott|[from] lockedmove
+expect |rng|100|61
+expect |rng|24|16
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Samurott|137/174
+expect |-damage|p2b: Samurott|137/174
+expect |move|p1b: ThisNameIsFarTooLong|Trailblaze|p1a: Calyrex
+expect |rng|100|41
+expect |rng|24|7
+expect |rng|16|8
+expect |-resisted|p1a: Calyrex
+expect |split|p1
+expect |-damage|p1a: Calyrex|138/183
+expect |-damage|p1a: Calyrex|138/183
+expect |rng|100|58
+expect |-boost|p1b: ThisNameIsFarTooLong|spe|1
+expect |
+expect |-end|p2b: Samurott|move: Future Sight
+expect |rng|100|43
+expect |rng|24|9
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Samurott|94/174
+expect |-damage|p2b: Samurott|94/174
+expect |-end|p2a: Bastiodon|move: Future Sight
+expect |rng|100|90
+expect |rng|24|0
+expect |rng|16|13
+expect |-resisted|p2a: Bastiodon
+expect |-crit|p2a: Bastiodon
+expect |split|p2
+expect |-damage|p2a: Bastiodon|67/137
+expect |-damage|p2a: Bastiodon|67/137
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Scovillain|Scovillain, L50, M|111/152
+expect |switch|p1b: Scovillain|Scovillain, L50, M|111/152
+expect |move|p2b: Samurott|Fickle Beam|p1b: Scovillain
+expect |rng|100|57
+expect |rng|24|8
+expect |rng|10|6
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Scovillain|59/152
+expect |-damage|p1b: Scovillain|59/152
+expect |move|p1a: Calyrex|Future Sight|p2b: Samurott
+expect |-start|p1a: Calyrex|move: Future Sight
+expect |move|p2a: Bastiodon|U-turn|p1b: Scovillain
+expect |rng|100|31
+expect |rng|24|5
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Scovillain|35/152
+expect |-damage|p1b: Scovillain|35/152
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Clodsire, L50, M|157/216
+expect |switch|p1b: ThisNameIsFarTooLong|Clodsire, L50, M|157/216
+expect |move|p2b: Samurott|Fickle Beam|p2a: Bastiodon
+expect |rng|100|76
+expect |rng|24|18
+expect |rng|10|3
+expect |rng|16|14
+expect |-resisted|p2a: Bastiodon
+expect |split|p2
+expect |-damage|p2a: Bastiodon|54/137
+expect |-damage|p2a: Bastiodon|54/137
+expect |move|p1a: Calyrex|U-turn|p2a: Bastiodon
+expect |rng|100|51
+expect |rng|24|20
+expect |rng|16|6
+expect |-resisted|p2a: Bastiodon
+expect |split|p2
+expect |-damage|p2a: Bastiodon|42/137
+expect |-damage|p2a: Bastiodon|42/137
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Scovillain|Scovillain, L50, M|35/152|[from] U-turn
+expect |switch|p1a: Scovillain|Scovillain, L50, M|35/152|[from] U-turn
+expect |move|p2a: Bastiodon|U-turn|p1b: ThisNameIsFarTooLong
+expect |rng|100|50
+expect |rng|24|1
+expect |rng|16|1
+expect |-resisted|p1b: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|144/216
+expect |-damage|p1b: ThisNameIsFarTooLong|144/216
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Calyrex|Calyrex-Ice, L50, shiny, tera:Fire|138/183
+expect |switch|p1b: Calyrex|Calyrex-Ice, L50, shiny, tera:Fire|138/183
+expect |-ability|p1b: Calyrex|As One
+expect |-ability|p1b: Calyrex|Unnerve
+expect |move|p1a: Scovillain|Leafage|p2b: Samurott
+expect |rng|100|9
+expect |rng|24|16
+expect |rng|16|5
+expect |-supereffective|p2b: Samurott
+expect |split|p2
+expect |-damage|p2b: Samurott|22/174
+expect |-damage|p2b: Samurott|22/174
+expect |move|p2b: Samurott|Fickle Beam|p1b: Calyrex|[anim] Fickle Beam All Out
+expect |rng|100|88
+expect |rng|24|0
+expect |rng|10|2
+expect |-activate|p2b: Samurott|move: Fickle Beam
+expect |rng|16|0
+expect |-crit|p1b: Calyrex
+expect |split|p1
+expect |-damage|p1b: Calyrex|39/183
+expect |-damage|p1b: Calyrex|39/183
+expect |move|p2a: Bastiodon|Future Sight|p1b: Calyrex
+expect |-start|p2a: Bastiodon|move: Future Sight
+expect |
+expect |-end|p2b: Samurott|move: Future Sight
+expect |rng|100|72
+expect |rng|24|9
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2b: Samurott|0 fnt
+expect |-damage|p2b: Samurott|0 fnt
+expect |faint|p2b: Samurott
+expect |-ability|p1b: Calyrex|Chilling Neigh|boost
+expect |-boost|p1b: Calyrex|atk|1
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p1a: Scovillain|Rock Polish|p1a: Scovillain
+expect |-boost|p1a: Scovillain|spe|2
+expect |move|p1b: Calyrex|U-turn|p2a: Bastiodon
+expect |rng|100|34
+expect |rng|24|8
+expect |rng|16|7
+expect |-resisted|p2a: Bastiodon
+expect |split|p2
+expect |-damage|p2a: Bastiodon|24/137
+expect |-damage|p2a: Bastiodon|24/137
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: ThisNameIsFarTooLong|Clodsire, L50, M|144/216|[from] U-turn
+expect |switch|p1b: ThisNameIsFarTooLong|Clodsire, L50, M|144/216|[from] U-turn
+expect |move|p2a: Bastiodon|U-turn|p1b: ThisNameIsFarTooLong
+expect |rng|100|91
+expect |rng|24|21
+expect |rng|16|15
+expect |-resisted|p1b: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1b: ThisNameIsFarTooLong|133/216
+expect |-damage|p1b: ThisNameIsFarTooLong|133/216
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Tentacruel|Tentacruel, L50, M|186/186
+expect |switch|p1b: Tentacruel|Tentacruel, L50, M|186/186
+expect |move|p1a: Scovillain|Leafage|p2a: Bastiodon
+expect |rng|100|76
+expect |rng|24|15
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Bastiodon|6/137
+expect |-damage|p2a: Bastiodon|6/137
+expect |move|p2a: Bastiodon|Shadow Force||[still]
+expect |-prepare|p2a: Bastiodon|Shadow Force
+expect |
+expect |rng|2|0
+expect |-end|p1b: Tentacruel|move: Future Sight
+expect |rng|100|69
+expect |rng|24|21
+expect |rng|16|8
+expect |-supereffective|p1b: Tentacruel
+expect |split|p1
+expect |-damage|p1b: Tentacruel|126/186
+expect |-damage|p1b: Tentacruel|126/186
+expect |-enditem|p1b: Tentacruel|Rowap Berry|[eat]
+expect |split|p2
+expect |-damage|p2a: Bastiodon|0 fnt|[from] item: Rowap Berry|[of] p1b: Tentacruel
+expect |-damage|p2a: Bastiodon|0 fnt|[from] item: Rowap Berry|[of] p1b: Tentacruel
+expect |faint|p2a: Bastiodon
+expect |
+expect |win|p1

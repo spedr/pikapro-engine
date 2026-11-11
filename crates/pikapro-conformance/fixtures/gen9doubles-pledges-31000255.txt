@@ -1,0 +1,811 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 8da9 c26a d234 0e8b
+genders drawn
+team p1
+X (Staraptor)
+Ability: Intimidate
+Level: 50
+Tera Type: Flying
+EVs: 93 Atk / 239 Def / 102 SpD / 76 Spe
+Calm Nature
+- Grav Apple
+
+Chikorita (F) @ Assault Vest
+Ability: Overgrow
+Level: 50
+Tera Type: Stellar
+EVs: 230 HP / 27 Atk / 41 Def / 52 SpA / 145 SpD / 1 Spe
+Gentle Nature
+- Poison Sting
+- Horn Attack
+
+Piplup
+Ability: Competitive
+Level: 50
+Tera Type: Fire
+EVs: 91 Atk / 1 Def / 209 SpA / 158 SpD / 46 Spe
+Calm Nature
+- Fire Pledge
+- Grass Pledge
+- Water Pledge
+- Megahorn
+
+Rolycoly
+Ability: Flash Fire
+Level: 50
+Tera Type: Normal
+EVs: 200 Atk / 183 Def / 124 SpD / 3 Spe
+Sassy Nature
+- Fire Pledge
+- Grass Pledge
+- Water Pledge
+- Magical Leaf
+
+Sparky (Servine) @ Light Ball
+Ability: Contrary
+Level: 50
+Tera Type: Rock
+EVs: 195 HP / 111 Atk / 112 Def / 75 SpA / 4 SpD / 9 Spe
+Calm Nature
+- Fire Pledge
+- Grass Pledge
+- Water Pledge
+- Copycat
+
+Trumbeak @ Sticky Barb
+Ability: Skill Link
+Level: 50
+Tera Type: Stellar
+EVs: 251 HP / 29 Atk / 124 SpD / 103 Spe
+Hasty Nature
+- After You
+- Quash
+- Instruct
+- Ally Switch
+end
+team p2
+Hydreigon
+Ability: Levitate
+Level: 50
+Tera Type: Grass
+EVs: 195 HP / 93 Atk / 57 Def / 23 SpA / 125 SpD / 1 Spe
+Adamant Nature
+- Fire Pledge
+- Grass Pledge
+- Water Pledge
+- Life Dew
+
+Haxorus (F)
+Ability: Mold Breaker
+Level: 50
+Tera Type: Ice
+EVs: 183 HP / 63 Atk / 22 Def / 20 SpA / 9 SpD / 207 Spe
+Brave Nature
+- Fire Pledge
+- Grass Pledge
+- Water Pledge
+- Double-Edge
+
+X (Minior-Violet) @ Fast Ball
+Ability: Shields Down
+Level: 50
+Tera Type: Fairy
+EVs: 92 HP / 162 Atk / 44 Def / 83 SpA / 7 SpD / 105 Spe
+Bashful Nature
+- After You
+- Quash
+- Instruct
+- Ally Switch
+
+Duskull @ Gold Bottle Cap
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Tera Type: Rock
+EVs: 214 HP / 75 Atk / 78 SpA / 30 SpD / 29 Spe
+Quiet Nature
+- Pollen Puff
+- Bubble Beam
+- High Horsepower
+
+Espurr @ Rare Bone
+Ability: Infiltrator
+Level: 50
+Shiny: Yes
+Tera Type: Rock
+EVs: 139 HP / 24 Atk / 107 Def / 196 SpA / 33 SpD
+Careful Nature
+- Metal Burst
+- Aeroblast
+- Fire Spin
+
+Zoë (Kricketune) @ Loaded Dice
+Ability: Swarm
+Level: 50
+Tera Type: Ghost
+EVs: 5 HP / 1 Atk / 159 Def / 104 SpA / 232 SpD / 2 Spe
+Gentle Nature
+- Fire Pledge
+- Grass Pledge
+- Water Pledge
+- Withdraw
+end
+choice p1 switch 4, move 1 1
+choice p2 move 2 1, move 1 -1 terastallize
+choice p1 move 3 +2 terastal,move Poison Sting +2
+choice p2 move 3 2, switch 5
+choice p1 switch trumbeak,move 1 1
+choice p2 switch X,move Metal Burst
+choice p1 move 3 1, switch 3
+choice p2 default
+choice p1 move 3 2, move 1 2
+choice p2 move 2 2, move 2 1
+choice p1 switch 3, pass
+choice p2 move 3 1, move 3 1
+choice p1 move 1 1, move 4 2
+choice p2 move 3 -2, move 2 2
+choice p1 move 1 1, move 1 -1
+choice p1 switch rolycoly ,  skip
+choice p2 move 3 1, move 3 1
+choice p1 move 4 -2, move 2 2
+choice p2 pass,switch Zoë
+choice p1 switch X ,  move Fire Pledge -1
+choice p2 move instruct +2, move 1 -1
+choice p1 move 1 2, move 1 2
+choice p2 move 1 2, move 1 1
+choice p1 switch 5, pass
+choice p2 move Quash -2, move Fire Pledge 2
+choice p1 move 4, move 2 -1
+choice p1 switch 4, pass
+choice p2 move 2 -2, switch 4
+choice p1 default
+choice p2 move afteryou -2 ,  switch hydreigon
+choice p1 move 3 2, pass
+choice p2 move 2 1, switch 4
+choice p1 move 2 2, pass
+choice p2 move 2 -2, switch 5
+choice p1 move 2 2, pass
+choice p2 move 4, move 3 -1
+choice p1 move 3 2, pass
+choice p2 switch 5, move 1 -1
+choice p1 move 3 2, pass
+choice p2 move Grass Pledge -2 ,  move After You 1
+choice p1 move 2 2, pass
+choice p2 pass, switch 5
+choice p1 move 4 1, pass
+choice p2 move 1 1, move 4 -1
+choice p2 switch 3, pass
+choice p1 move 2 1, pass
+choice p2 move 2 1, move 4 -1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: X|Staraptor, L50, F|160/160
+expect |switch|p1a: X|Staraptor, L50, F|160/160
+expect |split|p1
+expect |switch|p1b: Chikorita|Chikorita, L50, F|149/149
+expect |switch|p1b: Chikorita|Chikorita, L50, F|149/149
+expect |split|p2
+expect |switch|p2a: Hydreigon|Hydreigon, L50, M|191/191
+expect |switch|p2a: Hydreigon|Hydreigon, L50, M|191/191
+expect |split|p2
+expect |switch|p2b: Haxorus|Haxorus, L50, F|174/174
+expect |switch|p2b: Haxorus|Haxorus, L50, F|174/174
+expect |-ability|p1a: X|Intimidate|boost
+expect |-unboost|p2a: Hydreigon|atk|1
+expect |-unboost|p2b: Haxorus|atk|1
+expect |-ability|p2b: Haxorus|Mold Breaker
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Rolycoly|Rolycoly, L50, F|105/105
+expect |switch|p1a: Rolycoly|Rolycoly, L50, F|105/105
+expect |-terastallize|p2b: Haxorus|Ice
+expect |move|p2b: Haxorus|Fire Pledge|p2a: Hydreigon
+expect |-waiting|p2b: Haxorus|p2a: Hydreigon
+expect |move|p2a: Hydreigon|Grass Pledge|p1a: Rolycoly|[from] move: Fire Pledge
+expect |rng|100|62
+expect |-combine
+expect |rng|24|8
+expect |rng|16|10
+expect |-resisted|p1a: Rolycoly
+expect |split|p1
+expect |-damage|p1a: Rolycoly|42/105
+expect |-damage|p1a: Rolycoly|42/105
+expect |-sidestart|p1: p1|Fire Pledge
+expect |move|p1b: Chikorita|Poison Sting|p2a: Hydreigon
+expect |rng|100|19
+expect |rng|24|15
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Hydreigon|186/191
+expect |-damage|p2a: Hydreigon|186/191
+expect |rng|100|9
+expect |-status|p2a: Hydreigon|psn
+expect |
+expect |split|p1
+expect |-damage|p1b: Chikorita|131/149|[from] Fire Pledge
+expect |-damage|p1b: Chikorita|131/149|[from] Fire Pledge
+expect |split|p1
+expect |-damage|p1a: Rolycoly|29/105|[from] Fire Pledge
+expect |-damage|p1a: Rolycoly|29/105|[from] Fire Pledge
+expect |split|p2
+expect |-damage|p2a: Hydreigon|163/191 psn|[from] psn
+expect |-damage|p2a: Hydreigon|163/191 psn|[from] psn
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Espurr|Espurr, L50, M, shiny|154/154
+expect |switch|p2b: Espurr|Espurr, L50, M, shiny|154/154
+expect |-terastallize|p1a: Rolycoly|Normal
+expect |move|p2a: Hydreigon|Water Pledge|p1b: Chikorita
+expect |rng|100|62
+expect |rng|24|2
+expect |rng|16|12
+expect |-resisted|p1b: Chikorita
+expect |split|p1
+expect |-damage|p1b: Chikorita|119/149
+expect |-damage|p1b: Chikorita|119/149
+expect |move|p1b: Chikorita|Poison Sting|p2b: Espurr
+expect |rng|100|91
+expect |rng|24|22
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Espurr|148/154
+expect |-damage|p2b: Espurr|148/154
+expect |rng|100|52
+expect |move|p1a: Rolycoly|Water Pledge|p2b: Espurr
+expect |rng|100|68
+expect |rng|24|5
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Espurr|125/154
+expect |-damage|p2b: Espurr|125/154
+expect |
+expect |split|p1
+expect |-damage|p1b: Chikorita|101/149|[from] Fire Pledge
+expect |-damage|p1b: Chikorita|101/149|[from] Fire Pledge
+expect |split|p1
+expect |-damage|p1a: Rolycoly|16/105|[from] Fire Pledge
+expect |-damage|p1a: Rolycoly|16/105|[from] Fire Pledge
+expect |split|p2
+expect |-damage|p2a: Hydreigon|140/191 psn|[from] psn
+expect |-damage|p2a: Hydreigon|140/191 psn|[from] psn
+expect |upkeep
+expect |turn|3
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Minior-Violet, L50|147/147
+expect |switch|p2a: X|Minior-Violet, L50|147/147
+expect |-formechange|p2a: X|Minior-Meteor||[from] ability: Shields Down
+expect |split|p1
+expect |switch|p1a: Trumbeak|Trumbeak, L50, M|161/161
+expect |switch|p1a: Trumbeak|Trumbeak, L50, M|161/161
+expect |move|p2b: Espurr|Metal Burst||[still]
+expect |-fail|p2b: Espurr
+expect |move|p1b: Chikorita|Poison Sting|p2a: X
+expect |rng|100|65
+expect |rng|24|19
+expect |rng|16|15
+expect |-resisted|p2a: X
+expect |split|p2
+expect |-damage|p2a: X|145/147
+expect |-damage|p2a: X|145/147
+expect |rng|100|0
+expect |
+expect |split|p1
+expect |-damage|p1a: Trumbeak|141/161|[from] Fire Pledge
+expect |-damage|p1a: Trumbeak|141/161|[from] Fire Pledge
+expect |split|p1
+expect |-damage|p1b: Chikorita|83/149|[from] Fire Pledge
+expect |-damage|p1b: Chikorita|83/149|[from] Fire Pledge
+expect |split|p1
+expect |-damage|p1a: Trumbeak|121/161|[from] item: Sticky Barb
+expect |-damage|p1a: Trumbeak|121/161|[from] item: Sticky Barb
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Piplup|Piplup, L50, F|128/128
+expect |switch|p1b: Piplup|Piplup, L50, F|128/128
+expect |move|p1a: Trumbeak|Instruct||[still]
+expect |-fail|p1a: Trumbeak
+expect |move|p2a: X|After You||[still]
+expect |-fail|p2a: X
+expect |move|p2b: Espurr|Metal Burst||[still]
+expect |-fail|p2b: Espurr
+expect |
+expect |split|p1
+expect |-damage|p1a: Trumbeak|101/161|[from] Fire Pledge
+expect |-damage|p1a: Trumbeak|101/161|[from] Fire Pledge
+expect |split|p1
+expect |-damage|p1b: Piplup|112/128|[from] Fire Pledge
+expect |-damage|p1b: Piplup|112/128|[from] Fire Pledge
+expect |-sideend|p1: p1|Fire Pledge
+expect |split|p1
+expect |-damage|p1a: Trumbeak|81/161|[from] item: Sticky Barb
+expect |-damage|p1a: Trumbeak|81/161|[from] item: Sticky Barb
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1a: Trumbeak|Instruct|p2b: Espurr
+expect |-singleturn|p2b: Espurr|move: Instruct|[of] p1a: Trumbeak
+expect |move|p2b: Espurr|Metal Burst||[still]
+expect |-fail|p2b: Espurr
+expect |move|p2a: X|Quash|p1b: Piplup
+expect |rng|100|64
+expect |-activate|p1b: Piplup|move: Quash
+expect |move|p2b: Espurr|Aeroblast|p1a: Trumbeak
+expect |rng|100|57
+expect |rng|8|0
+expect |rng|16|9
+expect |-crit|p1a: Trumbeak
+expect |split|p1
+expect |-damage|p1a: Trumbeak|12/161
+expect |-damage|p1a: Trumbeak|12/161
+expect |move|p1b: Piplup|Fire Pledge|p2b: Espurr
+expect |rng|100|19
+expect |rng|24|20
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2b: Espurr|90/154
+expect |-damage|p2b: Espurr|90/154
+expect |
+expect |split|p1
+expect |-damage|p1a: Trumbeak|0 fnt|[from] item: Sticky Barb
+expect |-damage|p1a: Trumbeak|0 fnt|[from] item: Sticky Barb
+expect |faint|p1a: Trumbeak
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Chikorita|Chikorita, L50, F|83/149
+expect |switch|p1a: Chikorita|Chikorita, L50, F|83/149
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: X|Instruct||[still]
+expect |-fail|p2a: X
+expect |move|p2b: Espurr|Fire Spin|p1a: Chikorita
+expect |rng|100|61
+expect |rng|24|7
+expect |rng|16|11
+expect |-supereffective|p1a: Chikorita
+expect |split|p1
+expect |-damage|p1a: Chikorita|67/149
+expect |-damage|p1a: Chikorita|67/149
+expect |rng|2|1
+expect |-activate|p1a: Chikorita|move: Fire Spin|[of] p2b: Espurr
+expect |move|p1b: Piplup|Megahorn|p2b: Espurr
+expect |rng|100|54
+expect |rng|24|16
+expect |rng|16|4
+expect |-supereffective|p2b: Espurr
+expect |split|p2
+expect |-damage|p2b: Espurr|2/154
+expect |-damage|p2b: Espurr|2/154
+expect |move|p1a: Chikorita|Poison Sting|p2a: X
+expect |rng|100|18
+expect |rng|24|1
+expect |rng|16|8
+expect |-resisted|p2a: X
+expect |split|p2
+expect |-damage|p2a: X|143/147
+expect |-damage|p2a: X|143/147
+expect |rng|100|82
+expect |
+expect |split|p1
+expect |-damage|p1a: Chikorita|49/149|[from] move: Fire Spin|[partiallytrapped]
+expect |-damage|p1a: Chikorita|49/149|[from] move: Fire Spin|[partiallytrapped]
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: X|Instruct|p2b: Espurr
+expect |-singleturn|p2b: Espurr|move: Instruct|[of] p2a: X
+expect |move|p2b: Espurr|Fire Spin|p1a: Chikorita
+expect |rng|100|13
+expect |rng|24|14
+expect |rng|16|1
+expect |-supereffective|p1a: Chikorita
+expect |split|p1
+expect |-damage|p1a: Chikorita|31/149
+expect |-damage|p1a: Chikorita|31/149
+expect |move|p2b: Espurr|Aeroblast|p1b: Piplup
+expect |rng|100|7
+expect |rng|8|5
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1b: Piplup|73/128
+expect |-damage|p1b: Piplup|73/128
+expect |move|p1b: Piplup|Fire Pledge|p1a: Chikorita
+expect |rng|100|95
+expect |rng|24|11
+expect |rng|16|6
+expect |-supereffective|p1a: Chikorita
+expect |split|p1
+expect |-damage|p1a: Chikorita|0 fnt
+expect |-damage|p1a: Chikorita|0 fnt
+expect |faint|p1a: Chikorita
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Rolycoly|Rolycoly, L50, F, tera:Normal|16/105
+expect |switch|p1a: Rolycoly|Rolycoly, L50, F, tera:Normal|16/105
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2a: X|Instruct||[still]
+expect |-fail|p2a: X
+expect |move|p2b: Espurr|Fire Spin|p1a: Rolycoly
+expect |-start|p1a: Rolycoly|ability: Flash Fire
+expect |move|p1b: Piplup|Grass Pledge|p2b: Espurr
+expect |rng|100|23
+expect |rng|24|11
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Espurr|0 fnt
+expect |-damage|p2b: Espurr|0 fnt
+expect |faint|p2b: Espurr
+expect |move|p1a: Rolycoly|Magical Leaf|p1b: Piplup
+expect |rng|24|22
+expect |rng|16|7
+expect |-supereffective|p1b: Piplup
+expect |split|p1
+expect |-damage|p1b: Piplup|43/128
+expect |-damage|p1b: Piplup|43/128
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zoë|Kricketune, L50, F|153/153
+expect |switch|p2b: Zoë|Kricketune, L50, F|153/153
+expect |turn|9
+expect |
+expect |t:|
+expect |-end|p1a: Rolycoly|ability: Flash Fire|[silent]
+expect |split|p1
+expect |switch|p1a: X|Staraptor, L50, F|160/160
+expect |switch|p1a: X|Staraptor, L50, F|160/160
+expect |-ability|p1a: X|Intimidate|boost
+expect |-unboost|p2a: X|atk|1
+expect |-unboost|p2b: Zoë|atk|1
+expect |move|p2a: X|Instruct|p1b: Piplup
+expect |-singleturn|p1b: Piplup|move: Instruct|[of] p2a: X
+expect |move|p1b: Piplup|Grass Pledge|p2b: Zoë
+expect |-waiting|p1b: Piplup|p1b: Piplup
+expect |move|p1b: Piplup|Fire Pledge|p1a: X|[from] move: Grass Pledge
+expect |rng|100|50
+expect |-combine
+expect |rng|24|14
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: X|61/160
+expect |-damage|p1a: X|61/160
+expect |-sidestart|p1: p1|Fire Pledge
+expect |move|p2b: Zoë|Fire Pledge|p2a: X
+expect |rng|100|29
+expect |rng|24|13
+expect |rng|16|15
+expect |-resisted|p2a: X
+expect |split|p2
+expect |-damage|p2a: X|132/147
+expect |-damage|p2a: X|132/147
+expect |
+expect |split|p1
+expect |-damage|p1a: X|41/160|[from] Fire Pledge
+expect |-damage|p1a: X|41/160|[from] Fire Pledge
+expect |split|p1
+expect |-damage|p1b: Piplup|27/128|[from] Fire Pledge
+expect |-damage|p1b: Piplup|27/128|[from] Fire Pledge
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1a: X|Grav Apple|p2b: Zoë
+expect |rng|100|21
+expect |rng|24|2
+expect |rng|16|7
+expect |-resisted|p2b: Zoë
+expect |split|p2
+expect |-damage|p2b: Zoë|125/153
+expect |-damage|p2b: Zoë|125/153
+expect |rng|100|88
+expect |-unboost|p2b: Zoë|def|1
+expect |move|p2a: X|After You|p1b: Piplup
+expect |-activate|p1b: Piplup|move: After You
+expect |move|p1b: Piplup|Fire Pledge|p2b: Zoë
+expect |rng|100|2
+expect |rng|24|22
+expect |rng|16|5
+expect |-supereffective|p2b: Zoë
+expect |split|p2
+expect |-damage|p2b: Zoë|57/153
+expect |-damage|p2b: Zoë|57/153
+expect |move|p2b: Zoë|Fire Pledge|p1a: X
+expect |rng|100|54
+expect |rng|24|10
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: X|10/160
+expect |-damage|p1a: X|10/160
+expect |
+expect |split|p1
+expect |-damage|p1a: X|0 fnt|[from] Fire Pledge
+expect |-damage|p1a: X|0 fnt|[from] Fire Pledge
+expect |faint|p1a: X
+expect |split|p1
+expect |-damage|p1b: Piplup|11/128|[from] Fire Pledge
+expect |-damage|p1b: Piplup|11/128|[from] Fire Pledge
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sparky|Servine, L50, M|159/159
+expect |switch|p1a: Sparky|Servine, L50, M|159/159
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p1a: Sparky|Copycat|p1a: Sparky
+expect |rng|2|0
+expect |move|p1a: Sparky|Fire Pledge|p2a: X|[from] move: Copycat
+expect |-waiting|p1a: Sparky|p1b: Piplup
+expect |move|p1b: Piplup|Grass Pledge|p1a: Sparky|[from] move: Fire Pledge
+expect |rng|100|73
+expect |-combine
+expect |rng|24|23
+expect |rng|16|4
+expect |-supereffective|p1a: Sparky
+expect |split|p1
+expect |-damage|p1a: Sparky|0 fnt
+expect |-damage|p1a: Sparky|0 fnt
+expect |faint|p1a: Sparky
+expect |move|p2a: X|Quash|p2b: Zoë
+expect |rng|100|11
+expect |-activate|p2b: Zoë|move: Quash
+expect |move|p2b: Zoë|Fire Pledge|p1b: Piplup
+expect |rng|100|95
+expect |rng|24|17
+expect |rng|16|4
+expect |-resisted|p1b: Piplup
+expect |split|p1
+expect |-damage|p1b: Piplup|0 fnt
+expect |-damage|p1b: Piplup|0 fnt
+expect |faint|p1b: Piplup
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Rolycoly|Rolycoly, L50, F, tera:Normal|16/105
+expect |switch|p1a: Rolycoly|Rolycoly, L50, F, tera:Normal|16/105
+expect |turn|12
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Duskull|Duskull, L50, M, shiny|122/122
+expect |switch|p2b: Duskull|Duskull, L50, M, shiny|122/122
+expect |move|p2a: X|Quash||[still]
+expect |rng|100|56
+expect |-fail|p2a: X
+expect |move|p1a: Rolycoly|Fire Pledge|p2b: Duskull
+expect |rng|100|36
+expect |rng|24|5
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Duskull|104/122
+expect |-damage|p2b: Duskull|104/122
+expect |
+expect |split|p1
+expect |-damage|p1a: Rolycoly|3/105|[from] Fire Pledge
+expect |-damage|p1a: Rolycoly|3/105|[from] Fire Pledge
+expect |-sideend|p1: p1|Fire Pledge
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Hydreigon|Hydreigon, L50, M|140/191 psn
+expect |switch|p2b: Hydreigon|Hydreigon, L50, M|140/191 psn
+expect |move|p2a: X|After You||[still]
+expect |-fail|p2a: X
+expect |move|p1a: Rolycoly|Water Pledge|p2b: Hydreigon
+expect |rng|100|31
+expect |rng|24|9
+expect |rng|16|5
+expect |-resisted|p2b: Hydreigon
+expect |split|p2
+expect |-damage|p2b: Hydreigon|132/191 psn
+expect |-damage|p2b: Hydreigon|132/191 psn
+expect |
+expect |split|p2
+expect |-damage|p2b: Hydreigon|109/191 psn|[from] psn
+expect |-damage|p2b: Hydreigon|109/191 psn|[from] psn
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zoë|Kricketune, L50, F|57/153
+expect |switch|p2b: Zoë|Kricketune, L50, F|57/153
+expect |move|p2a: X|Quash|p1a: Rolycoly
+expect |rng|100|8
+expect |-activate|p1a: Rolycoly|move: Quash
+expect |move|p1a: Rolycoly|Grass Pledge|p2b: Zoë
+expect |rng|100|89
+expect |rng|24|18
+expect |rng|16|4
+expect |-resisted|p2b: Zoë
+expect |split|p2
+expect |-damage|p2b: Zoë|47/153
+expect |-damage|p2b: Zoë|47/153
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Haxorus|Haxorus, L50, F, tera:Ice|174/174
+expect |switch|p2b: Haxorus|Haxorus, L50, F, tera:Ice|174/174
+expect |-ability|p2b: Haxorus|Mold Breaker
+expect |move|p2a: X|Quash||[still]
+expect |rng|100|98
+expect |-fail|p2a: X
+expect |move|p1a: Rolycoly|Grass Pledge|p2b: Haxorus
+expect |rng|100|33
+expect |rng|24|1
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Haxorus|151/174
+expect |-damage|p2b: Haxorus|151/174
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p2a: X|Ally Switch|p2a: X
+expect |swap|p2a: X|1|[from] move: Ally Switch
+expect |move|p2a: Haxorus|Water Pledge|null|[notarget]
+expect |-fail|p2a: Haxorus
+expect |move|p1a: Rolycoly|Water Pledge|p2b: X
+expect |rng|100|64
+expect |rng|24|14
+expect |rng|16|3
+expect |-supereffective|p2b: X
+expect |split|p2
+expect |-damage|p2b: X|96/147
+expect |-damage|p2b: X|96/147
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoë|Kricketune, L50, F|47/153
+expect |switch|p2a: Zoë|Kricketune, L50, F|47/153
+expect |move|p2b: X|After You||[still]
+expect |-fail|p2b: X
+expect |move|p1a: Rolycoly|Water Pledge|p2b: X
+expect |rng|100|50
+expect |rng|24|3
+expect |rng|16|0
+expect |-supereffective|p2b: X
+expect |split|p2
+expect |-damage|p2b: X|58/147
+expect |-damage|p2b: X|58/147
+expect |
+expect |-formechange|p2b: X|Minior-Violet||[from] ability: Shields Down
+expect |upkeep
+expect |turn|18
+expect |
+expect |t:|
+expect |move|p2b: X|After You|p1a: Rolycoly
+expect |-activate|p1a: Rolycoly|move: After You
+expect |move|p1a: Rolycoly|Grass Pledge|p2b: X
+expect |rng|100|51
+expect |rng|24|9
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: X|32/147
+expect |-damage|p2b: X|32/147
+expect |move|p2a: Zoë|Grass Pledge|p2b: X
+expect |rng|100|18
+expect |rng|24|3
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: X|0 fnt
+expect |-damage|p2b: X|0 fnt
+expect |faint|p2b: X
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Haxorus|Haxorus, L50, F, tera:Ice|151/174
+expect |switch|p2b: Haxorus|Haxorus, L50, F, tera:Ice|151/174
+expect |-ability|p2b: Haxorus|Mold Breaker
+expect |turn|19
+expect |
+expect |t:|
+expect |move|p2b: Haxorus|Double-Edge|p2a: Zoë
+expect |rng|100|71
+expect |rng|24|15
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Zoë|0 fnt
+expect |-damage|p2a: Zoë|0 fnt
+expect |faint|p2a: Zoë
+expect |split|p2
+expect |-damage|p2b: Haxorus|135/174|[from] Recoil
+expect |-damage|p2b: Haxorus|135/174|[from] Recoil
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Rolycoly|Magical Leaf|p2b: Haxorus
+expect |rng|24|23
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Haxorus|117/174
+expect |-damage|p2b: Haxorus|117/174
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Duskull|Duskull, L50, M, shiny|104/122
+expect |switch|p2a: Duskull|Duskull, L50, M, shiny|104/122
+expect |turn|20
+expect |
+expect |t:|
+expect |move|p2b: Haxorus|Double-Edge|p2a: Duskull
+expect |-immune|p2a: Duskull
+expect |move|p1a: Rolycoly|Grass Pledge|p2a: Duskull
+expect |rng|100|59
+expect |rng|24|20
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Duskull|85/122
+expect |-damage|p2a: Duskull|85/122
+expect |move|p2a: Duskull|Bubble Beam|p1a: Rolycoly
+expect |rng|100|0
+expect |rng|24|23
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Rolycoly|0 fnt
+expect |-damage|p1a: Rolycoly|0 fnt
+expect |rng|100|92
+expect |faint|p1a: Rolycoly
+expect |
+expect |win|p2

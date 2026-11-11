@@ -1,0 +1,190 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 0000 0000 02cd 4518
+genders drawn
+team p1
+Garchomp
+Ability: Rough Skin
+EVs: 252 Spe
+Jolly Nature
+- Substitute
+- Follow Me
+
+Oricorio
+Ability: Dancer
+Hardy Nature
+- Night Shade
+end
+team p2
+Lilligant
+Ability: Chlorophyll
+EVs: 128 Spe
+Hardy Nature
+- Substitute
+- Petal Dance
+
+Smeargle
+Ability: Own Tempo
+EVs: 252 Spe
+Jolly Nature
+- Night Shade
+- Memento
+end
+choice p1 move 1, move 1 1
+choice p2 move 1, move 1 1
+choice p1 move 1, move 1 1
+choice p2 move 1, move 1 1
+choice p1 move 1, move 1 1
+choice p2 move 1, move 1 1
+choice p1 move 1, move 1 1
+choice p2 move 1, move 1 1
+choice p1 move 2, move 1 1
+choice p2 move 2, move 2 2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Garchomp|Garchomp, M|357/357
+expect |switch|p1a: Garchomp|Garchomp, M|100/100
+expect |split|p1
+expect |switch|p1b: Oricorio|Oricorio, F|291/291
+expect |switch|p1b: Oricorio|Oricorio, F|100/100
+expect |split|p2
+expect |switch|p2a: Lilligant|Lilligant, F|281/281
+expect |switch|p2a: Lilligant|Lilligant, F|100/100
+expect |split|p2
+expect |switch|p2b: Smeargle|Smeargle, F|251/251
+expect |switch|p2b: Smeargle|Smeargle, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Garchomp|Substitute|p1a: Garchomp
+expect |-start|p1a: Garchomp|Substitute
+expect |split|p1
+expect |-damage|p1a: Garchomp|268/357
+expect |-damage|p1a: Garchomp|76/100
+expect |move|p2b: Smeargle|Night Shade|p1a: Garchomp
+expect |rng|100|53
+expect |-end|p1a: Garchomp|Substitute
+expect |move|p2a: Lilligant|Substitute|p2a: Lilligant
+expect |-start|p2a: Lilligant|Substitute
+expect |split|p2
+expect |-damage|p2a: Lilligant|211/281
+expect |-damage|p2a: Lilligant|76/100
+expect |move|p1b: Oricorio|Night Shade|p2a: Lilligant
+expect |rng|100|75
+expect |-end|p2a: Lilligant|Substitute
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Garchomp|Substitute|p1a: Garchomp
+expect |-start|p1a: Garchomp|Substitute
+expect |split|p1
+expect |-damage|p1a: Garchomp|179/357
+expect |-damage|p1a: Garchomp|51/100
+expect |move|p2b: Smeargle|Night Shade|p1a: Garchomp
+expect |rng|100|77
+expect |-end|p1a: Garchomp|Substitute
+expect |move|p2a: Lilligant|Substitute|p2a: Lilligant
+expect |-start|p2a: Lilligant|Substitute
+expect |split|p2
+expect |-damage|p2a: Lilligant|141/281
+expect |-damage|p2a: Lilligant|51/100
+expect |move|p1b: Oricorio|Night Shade|p2a: Lilligant
+expect |rng|100|23
+expect |-end|p2a: Lilligant|Substitute
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Garchomp|Substitute|p1a: Garchomp
+expect |-start|p1a: Garchomp|Substitute
+expect |split|p1
+expect |-damage|p1a: Garchomp|90/357
+expect |-damage|p1a: Garchomp|26/100
+expect |move|p2b: Smeargle|Night Shade|p1a: Garchomp
+expect |rng|100|37
+expect |-end|p1a: Garchomp|Substitute
+expect |move|p2a: Lilligant|Substitute|p2a: Lilligant
+expect |-start|p2a: Lilligant|Substitute
+expect |split|p2
+expect |-damage|p2a: Lilligant|71/281
+expect |-damage|p2a: Lilligant|26/100
+expect |move|p1b: Oricorio|Night Shade|p2a: Lilligant
+expect |rng|100|79
+expect |-end|p2a: Lilligant|Substitute
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1a: Garchomp|Substitute|p1a: Garchomp
+expect |-start|p1a: Garchomp|Substitute
+expect |split|p1
+expect |-damage|p1a: Garchomp|1/357
+expect |-damage|p1a: Garchomp|1/100
+expect |move|p2b: Smeargle|Night Shade|p1a: Garchomp
+expect |rng|100|78
+expect |-end|p1a: Garchomp|Substitute
+expect |move|p2a: Lilligant|Substitute|p2a: Lilligant
+expect |-start|p2a: Lilligant|Substitute
+expect |split|p2
+expect |-damage|p2a: Lilligant|1/281
+expect |-damage|p2a: Lilligant|1/100
+expect |move|p1b: Oricorio|Night Shade|p2a: Lilligant
+expect |rng|100|96
+expect |-end|p2a: Lilligant|Substitute
+expect |
+expect |upkeep
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1a: Garchomp|Follow Me|p1a: Garchomp
+expect |-singleturn|p1a: Garchomp|move: Follow Me
+expect |rng|2|0
+expect |move|p2b: Smeargle|Memento|p1a: Garchomp
+expect |rng|100|39
+expect |-unboost|p1a: Garchomp|atk|2
+expect |-unboost|p1a: Garchomp|spa|2
+expect |faint|p2b: Smeargle
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Lilligant|Petal Dance|p1a: Garchomp
+expect |rng|100|46
+expect |rng|24|7
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Garchomp|0 fnt
+expect |-damage|p1a: Garchomp|0 fnt
+expect |rng|2|1
+expect |split|p2
+expect |-damage|p2a: Lilligant|0 fnt|[from] ability: Rough Skin|[of] p1a: Garchomp
+expect |-damage|p2a: Lilligant|0 fnt|[from] ability: Rough Skin|[of] p1a: Garchomp
+expect |faint|p1a: Garchomp
+expect |faint|p2a: Lilligant
+expect |
+expect |win|p1
+expect |-activate|p1b: Oricorio|ability: Dancer
+expect |move|p1b: Oricorio|Petal Dance|p2: Lilligant|[from] ability: Dancer|[notarget]
+expect |-fail|p1b: Oricorio

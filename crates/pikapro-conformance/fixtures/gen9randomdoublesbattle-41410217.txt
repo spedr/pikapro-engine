@@ -1,0 +1,700 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 51c4 0cb5 52a7 c0d7
+genders drawn
+team p1
+Nibbles (Iron Boulder) @ Life Orb
+Ability: Quark Drive
+Level: 77
+Tera Type: Fighting
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Protect
+- Mighty Cleave
+- Close Combat
+- Zen Headbutt
+
+Azelf @ Life Orb
+Ability: Levitate
+Level: 83
+Tera Type: Electric
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Thunderbolt
+- Protect
+- Psychic
+
+Archaludon (F) @ Assault Vest
+Ability: Stamina
+Level: 77
+Tera Type: Fairy
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Body Press
+- Flash Cannon
+- Snarl
+- Draco Meteor
+
+Vikavolt (F) @ Sitrus Berry
+Ability: Levitate
+Level: 84
+Tera Type: Electric
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Thunderbolt
+- Bug Buzz
+- Sticky Web
+- Protect
+
+Mudsdale (F) @ Chesto Berry
+Ability: Stamina
+Level: 84
+Tera Type: Fighting
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Heavy Slam
+- Rest
+- High Horsepower
+- Body Press
+
+Zoë (Lurantis) (M) @ Assault Vest
+Ability: Contrary
+Level: 85
+Tera Type: Fighting
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Superpower
+- Pollen Puff
+- Leaf Storm
+- Leaf Blade
+end
+team p2
+Roaring Moon @ Booster Energy
+Ability: Protosynthesis
+Level: 76
+Tera Type: Flying
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Protect
+- Acrobatics
+- Knock Off
+- Tailwind
+
+Slaking (F) @ Choice Band
+Ability: Truant
+Level: 89
+Tera Type: Ghost
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Knock Off
+- High Horsepower
+- Double-Edge
+- Giga Impact
+
+Cetitan (M) @ Life Orb
+Ability: Sheer Force
+Level: 83
+Tera Type: Water
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Protect
+- Ice Shard
+- Icicle Crash
+- Liquidation
+
+Klefki (F) @ Light Clay
+Ability: Prankster
+Level: 78
+Tera Type: Flying
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Light Screen
+- Reflect
+- Thunder Wave
+- Dazzling Gleam
+
+Hypno (M) @ Sitrus Berry
+Ability: Inner Focus
+Level: 95
+Tera Type: Dark
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Low Sweep
+- Encore
+- Psychic
+- Helping Hand
+
+Porygon2 @ Eviolite
+Ability: Download
+Level: 82
+Shiny: Yes
+Tera Type: Fairy
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD
+Serious Nature
+IVs: 0 Spe
+- Trick Room
+- Shadow Ball
+- Tera Blast
+- Recover
+end
+choice p1 move Zen Headbutt -2 terastal ,  switch mudsdale
+choice p2 move tailwind, move double-edge terastal -1
+choice p2 switch 6 ,  skip
+choice p1 move 4 1, move 3 -1
+choice p2 move 3 1, switch 5
+choice p1 switch archaludon, pass
+choice p2 move 4, move 4 -1
+choice p1 move dracometeor 1, move bodypress 2
+choice p2 switch 5,move lowsweep +1
+choice p1 move 4 2, move 3 2
+choice p2 default
+choice p1 move 2 1, switch 6
+choice p2 move 1 1, move 1 1
+choice p1 move 1 2, switch 6
+choice p2 move 1 -2, switch 5
+choice p1 move 4 -2, move 3 2
+choice p2 skip,switch hypno
+choice p1 move Flash Cannon -2 ,  switch 5
+choice p2 move 1 -2, move 2 1
+choice p1 move 4 -2, move 4 -1
+choice p2 move 1 1, move 3 1
+choice p1 switch 4, switch 5
+choice p2 switch 3, move 1 -1
+choice p1 move 1 -2, move 3 2
+choice p2 pass, switch 3
+choice p1 move 2 -2, move 1 1
+choice p2 switch 4, move 4 1
+choice p1 switch lurantis ,  pass
+choice p2 move 3 2, move 1
+choice p1 move 1 1, move 4 1
+choice p2 switch 4, pass
+choice p1 move leafblade -2,move Body Press 2
+choice p2 default
+choice p1 move 4 2, pass
+choice p2 move 3 -2, move 1
+choice p1 move Leaf Blade 1,skip
+choice p2 move 2 1, pass
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Nibbles|Iron Boulder, L77|265/265
+expect |switch|p1a: Nibbles|Iron Boulder, L77|100/100
+expect |split|p1
+expect |switch|p1b: Azelf|Azelf, L83|260/260
+expect |switch|p1b: Azelf|Azelf, L83|100/100
+expect |split|p2
+expect |switch|p2a: Roaring Moon|Roaring Moon, L76|285/285
+expect |switch|p2a: Roaring Moon|Roaring Moon, L76|100/100
+expect |split|p2
+expect |switch|p2b: Slaking|Slaking, L89, F|412/412
+expect |switch|p2b: Slaking|Slaking, L89, F|100/100
+expect |-enditem|p2a: Roaring Moon|Booster Energy
+expect |-activate|p2a: Roaring Moon|ability: Protosynthesis|[fromitem]
+expect |-start|p2a: Roaring Moon|protosynthesisatk
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Mudsdale|Mudsdale, L84, F|305/305
+expect |switch|p1b: Mudsdale|Mudsdale, L84, F|100/100
+expect |-terastallize|p1a: Nibbles|Fighting
+expect |-terastallize|p2b: Slaking|Ghost
+expect |move|p1a: Nibbles|Zen Headbutt|p1b: Mudsdale
+expect |rng|100|10
+expect |rng|24|9
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: Mudsdale|214/305
+expect |-damage|p1b: Mudsdale|71/100
+expect |rng|100|79
+expect |-ability|p1b: Mudsdale|Stamina|boost
+expect |-boost|p1b: Mudsdale|def|1
+expect |split|p1
+expect |-damage|p1a: Nibbles|239/265|[from] item: Life Orb
+expect |-damage|p1a: Nibbles|91/100|[from] item: Life Orb
+expect |move|p2b: Slaking|Double-Edge|p2a: Roaring Moon
+expect |rng|100|88
+expect |rng|24|9
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Roaring Moon|0 fnt
+expect |-damage|p2a: Roaring Moon|0 fnt
+expect |faint|p2a: Roaring Moon
+expect |-end|p2a: Roaring Moon|Protosynthesis|[silent]
+expect |split|p2
+expect |-damage|p2b: Slaking|318/412|[from] Recoil
+expect |-damage|p2b: Slaking|78/100|[from] Recoil
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Porygon2|Porygon2, L82, shiny|274/274
+expect |switch|p2a: Porygon2|Porygon2, L82, shiny|100/100
+expect |-ability|p2a: Porygon2|Download|boost
+expect |-boost|p2a: Porygon2|spa|1
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Hypno|Hypno, L95, M|315/315
+expect |switch|p2b: Hypno|Hypno, L95, M|100/100
+expect |move|p1a: Nibbles|Zen Headbutt|p2a: Porygon2
+expect |rng|100|77
+expect |rng|24|12
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Porygon2|195/274
+expect |-damage|p2a: Porygon2|72/100
+expect |rng|100|84
+expect |split|p1
+expect |-damage|p1a: Nibbles|213/265|[from] item: Life Orb
+expect |-damage|p1a: Nibbles|81/100|[from] item: Life Orb
+expect |move|p1b: Mudsdale|High Horsepower|p1a: Nibbles
+expect |rng|100|80
+expect |rng|24|18
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Nibbles|68/265
+expect |-damage|p1a: Nibbles|26/100
+expect |move|p2a: Porygon2|Tera Blast|p1a: Nibbles
+expect |rng|100|82
+expect |rng|24|4
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Nibbles|0 fnt
+expect |-damage|p1a: Nibbles|0 fnt
+expect |faint|p1a: Nibbles
+expect |-end|p1a: Nibbles|Quark Drive|[silent]
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Archaludon|Archaludon, L77, F|265/265
+expect |switch|p1a: Archaludon|Archaludon, L77, F|100/100
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2b: Hypno|Helping Hand|p2a: Porygon2
+expect |-singleturn|p2a: Porygon2|Helping Hand|[of] p2b: Hypno
+expect |move|p1a: Archaludon|Draco Meteor|p2a: Porygon2
+expect |rng|100|70
+expect |rng|24|0
+expect |rng|16|12
+expect |-crit|p2a: Porygon2
+expect |split|p2
+expect |-damage|p2a: Porygon2|65/274
+expect |-damage|p2a: Porygon2|24/100
+expect |rng|100|71
+expect |-unboost|p1a: Archaludon|spa|2
+expect |move|p1b: Mudsdale|Body Press|p2b: Hypno
+expect |rng|100|62
+expect |rng|24|23
+expect |rng|16|11
+expect |-resisted|p2b: Hypno
+expect |split|p2
+expect |-damage|p2b: Hypno|271/315
+expect |-damage|p2b: Hypno|87/100
+expect |move|p2a: Porygon2|Recover|p2a: Porygon2
+expect |split|p2
+expect |-heal|p2a: Porygon2|202/274
+expect |-heal|p2a: Porygon2|74/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Slaking|Slaking, L89, F, tera:Ghost|318/412
+expect |switch|p2a: Slaking|Slaking, L89, F, tera:Ghost|78/100
+expect |move|p2b: Hypno|Low Sweep|p1a: Archaludon
+expect |rng|100|47
+expect |rng|24|4
+expect |rng|16|7
+expect |-supereffective|p1a: Archaludon
+expect |split|p1
+expect |-damage|p1a: Archaludon|187/265
+expect |-damage|p1a: Archaludon|71/100
+expect |rng|100|23
+expect |-unboost|p1a: Archaludon|spe|1
+expect |-ability|p1a: Archaludon|Stamina|boost
+expect |-boost|p1a: Archaludon|def|1
+expect |move|p1a: Archaludon|Draco Meteor|p2b: Hypno
+expect |rng|100|27
+expect |rng|24|11
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Hypno|216/315
+expect |-damage|p2b: Hypno|69/100
+expect |rng|100|79
+expect |-unboost|p1a: Archaludon|spa|2
+expect |move|p1b: Mudsdale|High Horsepower|p2b: Hypno
+expect |rng|100|68
+expect |rng|24|3
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Hypno|90/315
+expect |-damage|p2b: Hypno|29/100
+expect |-enditem|p2b: Hypno|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2b: Hypno|168/315|[from] item: Sitrus Berry
+expect |-heal|p2b: Hypno|54/100|[from] item: Sitrus Berry
+expect |
+expect |upkeep
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Zoë|Lurantis, L85, M|258/258
+expect |switch|p1b: Zoë|Lurantis, L85, M|100/100
+expect |move|p2a: Slaking|Knock Off|p1a: Archaludon
+expect |rng|100|40
+expect |rng|24|18
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Archaludon|92/265
+expect |-damage|p1a: Archaludon|35/100
+expect |-ability|p1a: Archaludon|Stamina|boost
+expect |-boost|p1a: Archaludon|def|1
+expect |-enditem|p1a: Archaludon|Assault Vest|[from] move: Knock Off|[of] p2a: Slaking
+expect |move|p2b: Hypno|Low Sweep|p1a: Archaludon
+expect |rng|100|11
+expect |rng|24|19
+expect |rng|16|12
+expect |-supereffective|p1a: Archaludon
+expect |split|p1
+expect |-damage|p1a: Archaludon|54/265
+expect |-damage|p1a: Archaludon|21/100
+expect |rng|100|12
+expect |-unboost|p1a: Archaludon|spe|1
+expect |-ability|p1a: Archaludon|Stamina|boost
+expect |-boost|p1a: Archaludon|def|1
+expect |move|p1a: Archaludon|Flash Cannon|p2a: Slaking
+expect |rng|100|76
+expect |rng|24|12
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Slaking|282/412
+expect |-damage|p2a: Slaking|69/100
+expect |rng|100|4
+expect |-unboost|p2a: Slaking|spd|1
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Mudsdale|Mudsdale, L84, F|214/305
+expect |switch|p1b: Mudsdale|Mudsdale, L84, F|71/100
+expect |cant|p2a: Slaking|ability: Truant
+expect |move|p2b: Hypno|Low Sweep|p1a: Archaludon
+expect |rng|100|3
+expect |rng|24|7
+expect |rng|16|0
+expect |-supereffective|p1a: Archaludon
+expect |split|p1
+expect |-damage|p1a: Archaludon|18/265
+expect |-damage|p1a: Archaludon|7/100
+expect |rng|100|96
+expect |-unboost|p1a: Archaludon|spe|1
+expect |-ability|p1a: Archaludon|Stamina|boost
+expect |-boost|p1a: Archaludon|def|1
+expect |move|p1a: Archaludon|Body Press|p2b: Hypno
+expect |rng|100|60
+expect |rng|24|14
+expect |rng|16|6
+expect |-resisted|p2b: Hypno
+expect |split|p2
+expect |-damage|p2b: Hypno|73/315
+expect |-damage|p2b: Hypno|24/100
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Porygon2|Porygon2, L82, shiny|202/274
+expect |switch|p2b: Porygon2|Porygon2, L82, shiny|74/100
+expect |-ability|p2b: Porygon2|Download|boost
+expect |-boost|p2b: Porygon2|spa|1
+expect |move|p2a: Slaking|Knock Off|p2b: Porygon2
+expect |rng|100|77
+expect |rng|24|10
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2b: Porygon2|94/274
+expect |-damage|p2b: Porygon2|35/100
+expect |-enditem|p2b: Porygon2|Eviolite|[from] move: Knock Off|[of] p2a: Slaking
+expect |move|p1b: Mudsdale|High Horsepower|p2b: Porygon2
+expect |rng|100|52
+expect |rng|24|22
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Porygon2|0 fnt
+expect |-damage|p2b: Porygon2|0 fnt
+expect |faint|p2b: Porygon2
+expect |move|p1a: Archaludon|Draco Meteor|p1b: Mudsdale
+expect |rng|100|16
+expect |rng|24|23
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Mudsdale|163/305
+expect |-damage|p1b: Mudsdale|54/100
+expect |rng|100|93
+expect |-unboost|p1a: Archaludon|spa|2
+expect |-ability|p1b: Mudsdale|Stamina|boost
+expect |-boost|p1b: Mudsdale|def|1
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Hypno|Hypno, L95, M|73/315
+expect |switch|p2b: Hypno|Hypno, L95, M|24/100
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Azelf|Azelf, L83|260/260
+expect |switch|p1b: Azelf|Azelf, L83|100/100
+expect |cant|p2a: Slaking|ability: Truant
+expect |move|p2b: Hypno|Encore|p1a: Archaludon
+expect |rng|100|86
+expect |-start|p1a: Archaludon|Encore
+expect |rng|2|1
+expect |move|p1a: Archaludon|Draco Meteor|p2b: Hypno
+expect |rng|100|9
+expect |rng|24|13
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Hypno|45/315
+expect |-damage|p2b: Hypno|15/100
+expect |rng|100|0
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p1b: Azelf|Psychic|p1a: Archaludon
+expect |rng|100|37
+expect |rng|24|20
+expect |rng|16|3
+expect |-resisted|p1a: Archaludon
+expect |split|p1
+expect |-damage|p1a: Archaludon|0 fnt
+expect |-damage|p1a: Archaludon|0 fnt
+expect |rng|100|78
+expect |faint|p1a: Archaludon
+expect |split|p1
+expect |-damage|p1b: Azelf|234/260|[from] item: Life Orb
+expect |-damage|p1b: Azelf|90/100|[from] item: Life Orb
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2a: Slaking|Knock Off|p1b: Azelf
+expect |rng|100|6
+expect |rng|24|2
+expect |rng|16|5
+expect |-supereffective|p1b: Azelf
+expect |split|p1
+expect |-damage|p1b: Azelf|0 fnt
+expect |-damage|p1b: Azelf|0 fnt
+expect |-enditem|p1b: Azelf|Life Orb|[from] move: Knock Off|[of] p2a: Slaking
+expect |faint|p1b: Azelf
+expect |move|p2b: Hypno|Psychic|p1: Archaludon|[notarget]
+expect |-fail|p2b: Hypno
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Mudsdale|Mudsdale, L84, F|163/305
+expect |switch|p1b: Mudsdale|Mudsdale, L84, F|54/100
+expect |split|p1
+expect |switch|p1a: Vikavolt|Vikavolt, L84, F|267/267
+expect |switch|p1a: Vikavolt|Vikavolt, L84, F|100/100
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Cetitan|Cetitan, L83, M|418/418
+expect |switch|p2a: Cetitan|Cetitan, L83, M|100/100
+expect |move|p2b: Hypno|Low Sweep|p2a: Cetitan
+expect |rng|100|76
+expect |rng|24|7
+expect |rng|16|3
+expect |-supereffective|p2a: Cetitan
+expect |split|p2
+expect |-damage|p2a: Cetitan|290/418
+expect |-damage|p2a: Cetitan|70/100
+expect |rng|100|44
+expect |-unboost|p2a: Cetitan|spe|1
+expect |move|p1a: Vikavolt|Thunderbolt|p1b: Mudsdale
+expect |-immune|p1b: Mudsdale
+expect |move|p1b: Mudsdale|High Horsepower|p2b: Hypno
+expect |rng|100|6
+expect |rng|24|15
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2b: Hypno|0 fnt
+expect |-damage|p2b: Hypno|0 fnt
+expect |faint|p2b: Hypno
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Slaking|Slaking, L89, F, tera:Ghost|282/412
+expect |switch|p2b: Slaking|Slaking, L89, F, tera:Ghost|69/100
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Klefki|Klefki, L78, F|217/217
+expect |switch|p2a: Klefki|Klefki, L78, F|100/100
+expect |move|p2b: Slaking|Giga Impact|p1a: Vikavolt
+expect |rng|100|49
+expect |rng|24|4
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Vikavolt|0 fnt
+expect |-damage|p1a: Vikavolt|0 fnt
+expect |-mustrecharge|p2b: Slaking
+expect |faint|p1a: Vikavolt
+expect |move|p1b: Mudsdale|Heavy Slam|p2a: Klefki
+expect |rng|100|95
+expect |rng|24|5
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Klefki|100/217
+expect |-damage|p2a: Klefki|47/100
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Zoë|Lurantis, L85, M|258/258
+expect |switch|p1a: Zoë|Lurantis, L85, M|100/100
+expect |turn|12
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2a: Klefki|Thunder Wave|p1b: Mudsdale
+expect |-immune|p1b: Mudsdale
+expect |rng|2|1
+expect |rng|2|1
+expect |cant|p2b: Slaking|recharge
+expect |move|p1a: Zoë|Superpower|p2a: Klefki
+expect |rng|100|32
+expect |rng|24|18
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Klefki|6/217
+expect |-damage|p2a: Klefki|3/100
+expect |rng|100|64
+expect |-boost|p1a: Zoë|atk|1
+expect |-boost|p1a: Zoë|def|1
+expect |move|p1b: Mudsdale|Body Press|p2a: Klefki
+expect |rng|100|97
+expect |rng|24|7
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Klefki|0 fnt
+expect |-damage|p2a: Klefki|0 fnt
+expect |faint|p2a: Klefki
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Cetitan|Cetitan, L83, M|290/418
+expect |switch|p2a: Cetitan|Cetitan, L83, M|70/100
+expect |turn|13
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2a: Cetitan|Protect|p2a: Cetitan
+expect |-singleturn|p2a: Cetitan|Protect
+expect |move|p2b: Slaking|Giga Impact|p1a: Zoë
+expect |rng|100|21
+expect |rng|24|7
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Zoë|14/258
+expect |-damage|p1a: Zoë|6/100
+expect |-mustrecharge|p2b: Slaking
+expect |move|p1a: Zoë|Leaf Blade|p1b: Mudsdale
+expect |rng|100|16
+expect |rng|8|6
+expect |rng|16|7
+expect |-supereffective|p1b: Mudsdale
+expect |split|p1
+expect |-damage|p1b: Mudsdale|0 fnt
+expect |-damage|p1b: Mudsdale|0 fnt
+expect |faint|p1b: Mudsdale
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|14
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |rng|1|0
+expect |cant|p2b: Slaking|recharge
+expect |move|p2a: Cetitan|Icicle Crash|p2b: Slaking
+expect |rng|100|41
+expect |rng|24|21
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Slaking|126/412
+expect |-damage|p2b: Slaking|31/100
+expect |move|p1a: Zoë|Leaf Blade|p2b: Slaking
+expect |rng|100|18
+expect |rng|8|5
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Slaking|0 fnt
+expect |-damage|p2b: Slaking|0 fnt
+expect |faint|p2b: Slaking
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p2a: Cetitan|Ice Shard|p1a: Zoë
+expect |rng|100|8
+expect |rng|24|3
+expect |rng|16|3
+expect |-supereffective|p1a: Zoë
+expect |split|p1
+expect |-damage|p1a: Zoë|0 fnt
+expect |-damage|p1a: Zoë|0 fnt
+expect |faint|p1a: Zoë
+expect |split|p2
+expect |-damage|p2a: Cetitan|249/418|[from] item: Life Orb
+expect |-damage|p2a: Cetitan|60/100|[from] item: Life Orb
+expect |
+expect |win|p2

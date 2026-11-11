@@ -1,0 +1,733 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed 1848 cbba 9d83 4cb5
+genders drawn
+team p1
+Chomp (Bellibolt) (M) @ Focus Sash
+Ability: Electromorphosis
+Level: 50
+Tera Type: Poison
+EVs: 4 HP / 8 Atk / 15 Def / 16 SpA / 1 SpD / 19 Spe
+Docile Nature
+- Fly
+- Close Combat
+
+Indeedee-F @ Rindo Berry
+Ability: Own Tempo
+Level: 50
+Tera Type: Water
+EVs: 7 HP / 12 Atk / 6 Def / 1 SpA / 13 SpD / 25 Spe
+Lax Nature
+- Rock Tomb
+
+Zoroark (F) @ Smooth Rock
+Ability: Illusion
+Level: 50
+Tera Type: Fire
+EVs: 5 HP / 22 Atk / 24 Def / 6 SpA / 3 SpD / 5 Spe
+Lonely Nature
+- Reflect Type
+- Aqua Ring
+
+Aggron @ Aggronite
+Ability: Rock Head
+Level: 50
+Tera Type: Steel
+EVs: 7 Atk / 32 Def / 23 SpD / 4 Spe
+Bashful Nature
+- Quick Attack
+- Topsy-Turvy
+
+Greninja
+Ability: Protean
+Level: 50
+Tera Type: Grass
+EVs: 17 Atk / 3 Def / 7 SpA / 28 SpD / 4 Spe
+Impish Nature
+- Blizzard
+- Psychic Terrain
+- Sucker Punch
+- Metal Sound
+
+Samurott
+Ability: Shell Armor
+Level: 50
+Shiny: Yes
+Tera Type: Stellar
+EVs: 22 Atk / 8 Def / 26 SpA / 7 SpD / 3 Spe
+Docile Nature
+- Flame Charge
+- Iron Defense
+- Safeguard
+- Spite
+end
+team p2
+ThisNameIsFarTooLongToKeep (Snorlax) (F)
+Ability: Gluttony
+Level: 50
+Tera Type: Fairy
+EVs: 10 HP / 8 Atk / 1 Def / 13 SpA / 30 SpD / 1 Spe
+Serious Nature
+- Metal Burst
+- Heal Pulse
+
+Metagross @ Metagrossite
+Ability: Light Metal
+Level: 50
+Tera Type: Normal
+EVs: 32 HP / 7 Def / 25 SpA / 2 SpD
+Gentle Nature
+- Zap Cannon
+- Beak Blast
+- Howl
+
+Crabominable @ Silk Scarf
+Ability: Iron Fist
+Level: 50
+Tera Type: Bug
+EVs: 9 HP / 13 Atk / 8 Def / 5 SpA / 23 SpD / 2 Spe
+Modest Nature
+- Bitter Blade
+- Shelter
+
+Pikachu (Abomasnow) (M) @ Abomasite
+Ability: Snow Warning
+Level: 50
+Tera Type: Flying
+EVs: 3 HP / 24 Atk / 1 Def / 4 SpD / 32 Spe
+Bashful Nature
+- Disable
+
+Tyranitar
+Ability: Sand Stream
+Level: 50
+Tera Type: Water
+EVs: 5 HP / 8 Atk / 9 Def / 5 SpA / 2 SpD / 25 Spe
+Lax Nature
+- Phantom Force
+
+Chomp (Swampert) @ Swampertite
+Ability: Torrent
+Level: 50
+Tera Type: Poison
+EVs: 3 HP / 19 Atk / 12 Def / 30 SpA / 2 Spe
+Lonely Nature
+- Salt Cure
+- Infestation
+end
+choice p1 team 342
+choice p2 team 6, 4, 5
+choice p1 switch 3
+choice p2 move Infestation
+choice p1 default
+choice p2 move 1 mega
+choice p1 move 1
+choice p2 move 1
+choice p1 switch 2
+choice p2 switch 3
+choice p1 move 2 mega
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 switch 3
+choice p2 switch 2
+choice p1 move 2
+choice p2 switch 3
+choice p1 switch 3
+choice p2 switch 2
+choice p1 switch 3
+choice p2 switch 2
+choice p1 move Aqua Ring
+choice p2 move 1
+choice p1 move 2
+choice p2 move saltcure
+choice p1 move 1
+choice p2 move 2
+choice p1 move 1
+choice p1 switch 3
+choice p2 switch 3
+choice p1 move topsy-turvy
+choice p2 switch tyranitar
+choice p1 move 2
+choice p2 move 1
+choice p1 move Topsy-Turvy
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 move 2
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 default
+choice p2 default
+choice p1 move 2
+choice p2 move 1
+choice p1 default
+choice p2 move 1
+choice p1 move 2
+choice p2 switch abomasnow
+choice p1 move 2
+choice p2 move 1
+choice p1 move 2
+choice p2 switch 3
+choice p1 move Quick Attack
+choice p2 default
+choice p1 move 1
+choice p2 switch 3
+choice p1 move 1
+choice p2 switch 3
+choice p1 move 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Bellibolt, L50, M|
+expect |poke|p1|Indeedee-F, L50, F|
+expect |poke|p1|Zoroark, L50, F|
+expect |poke|p1|Aggron, L50, M|
+expect |poke|p1|Greninja, L50, M|
+expect |poke|p1|Samurott, L50, M, shiny|
+expect |poke|p2|Snorlax, L50, F|
+expect |poke|p2|Metagross, L50|
+expect |poke|p2|Crabominable, L50, M|
+expect |poke|p2|Abomasnow, L50, M|
+expect |poke|p2|Tyranitar, L50, M|
+expect |poke|p2|Swampert, L50, F|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Indeedee|Indeedee-F, L50, F|140/140
+expect |switch|p1a: Indeedee|Indeedee-F, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Chomp|Swampert, L50, F|178/178
+expect |switch|p2a: Chomp|Swampert, L50, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Indeedee|Indeedee-F, L50, F|152/152
+expect |switch|p1a: Indeedee|Indeedee-F, L50, F|100/100
+expect |move|p2a: Chomp|Infestation|p1a: Indeedee
+expect |rng|100|92
+expect |rng|24|18
+expect |rng|16|4
+expect |-supereffective|p1a: Indeedee|1
+expect |split|p1
+expect |-damage|p1a: Indeedee|132/152
+expect |-damage|p1a: Indeedee|86/100
+expect |rng|2|1
+expect |-activate|p1a: Indeedee|move: Infestation|[of] p2a: Chomp
+expect |
+expect |split|p1
+expect |-damage|p1a: Indeedee|113/152|[from] move: Infestation|[partiallytrapped]
+expect |-damage|p1a: Indeedee|74/100|[from] move: Infestation|[partiallytrapped]
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |detailschange|p2a: Chomp|Swampert-Mega, L50, F
+expect |-mega|p2a: Chomp|Swampert|Swampertite
+expect |move|p1a: Indeedee|Rock Tomb|p2a: Chomp|[miss]
+expect |rng|100|95
+expect |-miss|p1a: Indeedee|p2a: Chomp
+expect |move|p2a: Chomp|Salt Cure|p1a: Indeedee
+expect |rng|100|63
+expect |rng|24|6
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1a: Indeedee|81/152
+expect |-damage|p1a: Indeedee|53/100
+expect |rng|100|90
+expect |-start|p1a: Indeedee|Salt Cure
+expect |
+expect |rng|2|0
+expect |split|p1
+expect |-damage|p1a: Indeedee|62/152|[from] move: Infestation|[partiallytrapped]
+expect |-damage|p1a: Indeedee|40/100|[from] move: Infestation|[partiallytrapped]
+expect |split|p1
+expect |-damage|p1a: Indeedee|53/152|[from] Salt Cure
+expect |-damage|p1a: Indeedee|34/100|[from] Salt Cure
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Indeedee|Rock Tomb|p2a: Chomp
+expect |rng|100|11
+expect |rng|24|21
+expect |rng|16|1
+expect |-resisted|p2a: Chomp|1
+expect |split|p2
+expect |-damage|p2a: Chomp|169/178
+expect |-damage|p2a: Chomp|94/100
+expect |rng|100|32
+expect |-unboost|p2a: Chomp|spe|1
+expect |move|p2a: Chomp|Salt Cure|p1a: Indeedee
+expect |rng|100|77
+expect |rng|24|15
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Indeedee|18/152
+expect |-damage|p1a: Indeedee|11/100
+expect |rng|100|17
+expect |
+expect |rng|2|0
+expect |split|p1
+expect |-damage|p1a: Indeedee|0 fnt|[from] move: Infestation|[partiallytrapped]
+expect |-damage|p1a: Indeedee|0 fnt|[from] move: Infestation|[partiallytrapped]
+expect |faint|p1a: Indeedee
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Aggron|Aggron, L50, M|145/145
+expect |switch|p1a: Aggron|Aggron, L50, M|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Tyranitar|Tyranitar, L50, M|180/180
+expect |switch|p2a: Tyranitar|Tyranitar, L50, M|100/100
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+expect |detailschange|p1a: Aggron|Aggron-Mega, L50, M
+expect |-mega|p1a: Aggron|Aggron|Aggronite
+expect |move|p1a: Aggron|Topsy-Turvy||[still]
+expect |-fail|p1a: Aggron
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1a: Aggron|Quick Attack|p2a: Tyranitar
+expect |rng|100|38
+expect |rng|24|19
+expect |rng|16|3
+expect |-resisted|p2a: Tyranitar|1
+expect |split|p2
+expect |-damage|p2a: Tyranitar|170/180
+expect |-damage|p2a: Tyranitar|94/100
+expect |move|p2a: Tyranitar|Phantom Force||[still]
+expect |-prepare|p2a: Tyranitar|Phantom Force
+expect |
+expect |rng|2|0
+expect |-weather|Sandstorm|[upkeep]
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Aggron|Aggron-Mega, L50, M|140/140
+expect |switch|p1a: Aggron|Aggron-Mega, L50, M|100/100
+expect |move|p2a: Tyranitar|Phantom Force|p1a: Aggron|[from] lockedmove
+expect |rng|100|47
+expect |rng|24|6
+expect |rng|16|4
+expect |-resisted|p1a: Aggron|1
+expect |split|p1
+expect |-damage|p1a: Aggron|107/140
+expect |-damage|p1a: Aggron|76/100
+expect |replace|p1a: Zoroark|Zoroark, L50, F
+expect |-end|p1a: Zoroark|Illusion
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Zoroark|99/140|[from] Sandstorm
+expect |-damage|p1a: Zoroark|70/100|[from] Sandstorm
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pikachu|Abomasnow, L50, M|168/168
+expect |switch|p2a: Pikachu|Abomasnow, L50, M|100/100
+expect |-weather|Snowscape|[from] ability: Snow Warning|[of] p2a: Pikachu
+expect |move|p1a: Zoroark|Aqua Ring|p1a: Zoroark
+expect |-start|p1a: Zoroark|Aqua Ring
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |split|p1
+expect |-heal|p1a: Zoroark|107/140|[from] Aqua Ring
+expect |-heal|p1a: Zoroark|76/100|[from] Aqua Ring
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Aggron|Aggron-Mega, L50, M|145/145
+expect |switch|p1a: Aggron|Aggron-Mega, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Chomp|Swampert-Mega, L50, F|169/178
+expect |switch|p2a: Chomp|Swampert-Mega, L50, F|94/100
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Tyranitar|Tyranitar, L50, M|170/180
+expect |switch|p2a: Tyranitar|Tyranitar, L50, M|94/100
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+expect |split|p1
+expect |switch|p1a: Aggron|Aggron-Mega, L50, M|107/140
+expect |switch|p1a: Aggron|Aggron-Mega, L50, M|76/100
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Aggron|99/140|[from] Sandstorm
+expect |-damage|p1a: Aggron|70/100|[from] Sandstorm
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Chomp|Swampert-Mega, L50, F|169/178
+expect |switch|p2a: Chomp|Swampert-Mega, L50, F|94/100
+expect |move|p1a: Aggron|Aqua Ring|p1a: Aggron
+expect |-start|p1a: Aggron|Aqua Ring
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Aggron|91/140|[from] Sandstorm
+expect |-damage|p1a: Aggron|65/100|[from] Sandstorm
+expect |split|p1
+expect |-heal|p1a: Aggron|99/140|[from] Aqua Ring
+expect |-heal|p1a: Aggron|70/100|[from] Aqua Ring
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p1a: Aggron|Aqua Ring||[still]
+expect |-fail|p1a: Aggron
+expect |move|p2a: Chomp|Salt Cure|p1a: Aggron
+expect |rng|100|83
+expect |rng|24|11
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Aggron|63/140
+expect |-damage|p1a: Aggron|45/100
+expect |rng|100|56
+expect |-start|p1a: Aggron|Salt Cure
+expect |replace|p1a: Zoroark|Zoroark, L50, F
+expect |-end|p1a: Zoroark|Illusion
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Zoroark|55/140|[from] Sandstorm
+expect |-damage|p1a: Zoroark|39/100|[from] Sandstorm
+expect |split|p1
+expect |-heal|p1a: Zoroark|63/140|[from] Aqua Ring
+expect |-heal|p1a: Zoroark|45/100|[from] Aqua Ring
+expect |split|p1
+expect |-damage|p1a: Zoroark|55/140|[from] Salt Cure
+expect |-damage|p1a: Zoroark|39/100|[from] Salt Cure
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p1a: Zoroark|Reflect Type|p2a: Chomp
+expect |-start|p1a: Zoroark|typechange|[from] move: Reflect Type|[of] p2a: Chomp
+expect |move|p2a: Chomp|Salt Cure|p1a: Zoroark
+expect |rng|100|46
+expect |rng|24|16
+expect |rng|16|15
+expect |-resisted|p1a: Zoroark|1
+expect |split|p1
+expect |-damage|p1a: Zoroark|38/140
+expect |-damage|p1a: Zoroark|27/100
+expect |rng|100|48
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p1
+expect |-heal|p1a: Zoroark|46/140|[from] Aqua Ring
+expect |-heal|p1a: Zoroark|32/100|[from] Aqua Ring
+expect |split|p1
+expect |-damage|p1a: Zoroark|29/140|[from] Salt Cure
+expect |-damage|p1a: Zoroark|20/100y|[from] Salt Cure
+expect |upkeep
+expect |-start|p1a: Zoroark|typechange|Water/Ground|[silent]
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1a: Zoroark|Reflect Type|p2a: Chomp
+expect |-start|p1a: Zoroark|typechange|[from] move: Reflect Type|[of] p2a: Chomp
+expect |move|p2a: Chomp|Infestation|p1a: Zoroark
+expect |rng|100|40
+expect |rng|24|2
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Zoroark|13/140
+expect |-damage|p1a: Zoroark|9/100
+expect |rng|2|0
+expect |-activate|p1a: Zoroark|move: Infestation|[of] p2a: Chomp
+expect |
+expect |rng|2|0
+expect |-weather|none
+expect |split|p1
+expect |-heal|p1a: Zoroark|21/140|[from] Aqua Ring
+expect |-heal|p1a: Zoroark|15/100|[from] Aqua Ring
+expect |split|p1
+expect |-damage|p1a: Zoroark|4/140|[from] Salt Cure
+expect |-damage|p1a: Zoroark|2/100|[from] Salt Cure
+expect |split|p1
+expect |-damage|p1a: Zoroark|0 fnt|[from] move: Infestation|[partiallytrapped]
+expect |-damage|p1a: Zoroark|0 fnt|[from] move: Infestation|[partiallytrapped]
+expect |faint|p1a: Zoroark
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Aggron|Aggron-Mega, L50, M|145/145
+expect |switch|p1a: Aggron|Aggron-Mega, L50, M|100/100
+expect |turn|14
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pikachu|Abomasnow, L50, M|168/168
+expect |switch|p2a: Pikachu|Abomasnow, L50, M|100/100
+expect |-weather|Snowscape|[from] ability: Snow Warning|[of] p2a: Pikachu
+expect |move|p1a: Aggron|Topsy-Turvy||[still]
+expect |-fail|p1a: Aggron
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Tyranitar|Tyranitar, L50, M|170/180
+expect |switch|p2a: Tyranitar|Tyranitar, L50, M|94/100
+expect |-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Tyranitar
+expect |move|p1a: Aggron|Topsy-Turvy||[still]
+expect |-fail|p1a: Aggron
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p2a: Tyranitar|Phantom Force||[still]
+expect |-prepare|p2a: Tyranitar|Phantom Force
+expect |move|p1a: Aggron|Topsy-Turvy|p2a: Tyranitar|[miss]
+expect |-miss|p1a: Aggron|p2a: Tyranitar
+expect |
+expect |rng|2|0
+expect |-weather|Sandstorm|[upkeep]
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p1a: Aggron|Quick Attack|p2a: Tyranitar|[miss]
+expect |-miss|p1a: Aggron|p2a: Tyranitar
+expect |move|p2a: Tyranitar|Phantom Force|p1a: Aggron|[from] lockedmove
+expect |rng|100|11
+expect |rng|24|3
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Aggron|124/145
+expect |-damage|p1a: Aggron|85/100
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |upkeep
+expect |turn|18
+expect |
+expect |t:|
+expect |move|p2a: Tyranitar|Phantom Force||[still]
+expect |-prepare|p2a: Tyranitar|Phantom Force
+expect |move|p1a: Aggron|Topsy-Turvy|p2a: Tyranitar|[miss]
+expect |-miss|p1a: Aggron|p2a: Tyranitar
+expect |
+expect |rng|2|0
+expect |-weather|Sandstorm|[upkeep]
+expect |upkeep
+expect |turn|19
+expect |
+expect |t:|
+expect |move|p1a: Aggron|Quick Attack|p2a: Tyranitar|[miss]
+expect |-miss|p1a: Aggron|p2a: Tyranitar
+expect |move|p2a: Tyranitar|Phantom Force|p1a: Aggron|[from] lockedmove
+expect |rng|100|68
+expect |rng|24|9
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Aggron|103/145
+expect |-damage|p1a: Aggron|71/100
+expect |
+expect |-weather|none
+expect |upkeep
+expect |turn|20
+expect |
+expect |t:|
+expect |move|p1a: Aggron|Quick Attack|p2a: Tyranitar
+expect |rng|100|74
+expect |rng|24|0
+expect |rng|16|9
+expect |-resisted|p2a: Tyranitar|1
+expect |-crit|p2a: Tyranitar
+expect |split|p2
+expect |-damage|p2a: Tyranitar|156/180
+expect |-damage|p2a: Tyranitar|86/100
+expect |move|p2a: Tyranitar|Phantom Force||[still]
+expect |-prepare|p2a: Tyranitar|Phantom Force
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|21
+expect |
+expect |t:|
+expect |move|p2a: Tyranitar|Phantom Force|p1a: Aggron|[from] lockedmove
+expect |rng|100|89
+expect |rng|24|9
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Aggron|80/145
+expect |-damage|p1a: Aggron|55/100
+expect |move|p1a: Aggron|Topsy-Turvy||[still]
+expect |-fail|p1a: Aggron
+expect |
+expect |upkeep
+expect |turn|22
+expect |
+expect |t:|
+expect |move|p1a: Aggron|Quick Attack|p2a: Tyranitar
+expect |rng|100|77
+expect |rng|24|0
+expect |rng|16|14
+expect |-resisted|p2a: Tyranitar|1
+expect |-crit|p2a: Tyranitar
+expect |split|p2
+expect |-damage|p2a: Tyranitar|143/180
+expect |-damage|p2a: Tyranitar|79/100
+expect |move|p2a: Tyranitar|Phantom Force||[still]
+expect |-prepare|p2a: Tyranitar|Phantom Force
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|23
+expect |
+expect |t:|
+expect |move|p2a: Tyranitar|Phantom Force|p1a: Aggron|[from] lockedmove
+expect |rng|100|33
+expect |rng|24|4
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Aggron|59/145
+expect |-damage|p1a: Aggron|40/100
+expect |move|p1a: Aggron|Topsy-Turvy||[still]
+expect |-fail|p1a: Aggron
+expect |
+expect |upkeep
+expect |turn|24
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pikachu|Abomasnow, L50, M|168/168
+expect |switch|p2a: Pikachu|Abomasnow, L50, M|100/100
+expect |-weather|Snowscape|[from] ability: Snow Warning|[of] p2a: Pikachu
+expect |move|p1a: Aggron|Topsy-Turvy||[still]
+expect |-fail|p1a: Aggron
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|25
+expect |
+expect |t:|
+expect |move|p2a: Pikachu|Disable|p1a: Aggron
+expect |rng|100|34
+expect |-start|p1a: Aggron|Disable|Topsy-Turvy
+expect |cant|p1a: Aggron|Disable|Topsy-Turvy
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|26
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Chomp|Swampert-Mega, L50, F|169/178
+expect |switch|p2a: Chomp|Swampert-Mega, L50, F|94/100
+expect |move|p1a: Aggron|Quick Attack|p2a: Chomp
+expect |rng|100|73
+expect |rng|24|22
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Chomp|147/178
+expect |-damage|p2a: Chomp|82/100
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|27
+expect |
+expect |t:|
+expect |move|p1a: Aggron|Quick Attack|p2a: Chomp
+expect |rng|100|95
+expect |rng|24|16
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Chomp|124/178
+expect |-damage|p2a: Chomp|69/100
+expect |move|p2a: Chomp|Salt Cure|p1a: Aggron
+expect |rng|100|82
+expect |rng|24|7
+expect |rng|16|10
+expect |-resisted|p1a: Aggron|1
+expect |split|p1
+expect |-damage|p1a: Aggron|53/145
+expect |-damage|p1a: Aggron|36/100
+expect |rng|100|86
+expect |-start|p1a: Aggron|Salt Cure
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |split|p1
+expect |-damage|p1a: Aggron|35/145|[from] Salt Cure
+expect |-damage|p1a: Aggron|24/100|[from] Salt Cure
+expect |upkeep
+expect |turn|28
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pikachu|Abomasnow, L50, M|168/168
+expect |switch|p2a: Pikachu|Abomasnow, L50, M|100/100
+expect |move|p1a: Aggron|Quick Attack|p2a: Pikachu
+expect |rng|100|78
+expect |rng|24|12
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Pikachu|150/168
+expect |-damage|p2a: Pikachu|89/100
+expect |
+expect |-weather|none
+expect |split|p1
+expect |-damage|p1a: Aggron|17/145|[from] Salt Cure
+expect |-damage|p1a: Aggron|11/100|[from] Salt Cure
+expect |-end|p1a: Aggron|Disable
+expect |upkeep
+expect |turn|29
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Chomp|Swampert-Mega, L50, F|124/178
+expect |switch|p2a: Chomp|Swampert-Mega, L50, F|69/100
+expect |move|p1a: Aggron|Topsy-Turvy||[still]
+expect |-fail|p1a: Aggron
+expect |
+expect |split|p1
+expect |-damage|p1a: Aggron|0 fnt|[from] Salt Cure
+expect |-damage|p1a: Aggron|0 fnt|[from] Salt Cure
+expect |faint|p1a: Aggron
+expect |
+expect |win|p2

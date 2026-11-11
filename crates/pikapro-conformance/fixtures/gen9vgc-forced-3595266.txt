@@ -1,0 +1,390 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed f1f1 5a98 3f48 d67a
+genders drawn
+team p1
+ThisNameIsFarTooLongToKeep (Raichu) (M) @ Hearthflame Mask
+Ability: Lightning Rod
+Level: 50
+Shiny: Yes
+Tera Type: Fighting
+EVs: 17 HP / 133 Atk / 4 Def / 227 SpA / 114 SpD / 8 Spe
+Naughty Nature
+- Take Down
+
+Oricorio (M)
+Ability: Dancer
+Level: 50
+Tera Type: Ice
+EVs: 18 HP / 67 Atk / 198 Def / 132 SpA / 72 SpD / 8 Spe
+Serious Nature
+- Burn Up
+- Revelation Dance
+- Roost
+
+Sparky (Whimsicott) (F)
+Ability: Prankster
+Level: 50
+Tera Type: Normal
+EVs: 179 Atk / 83 Def / 1 SpA / 2 SpD / 244 Spe
+Bashful Nature
+- Encore
+- Soak
+
+Charizard
+Ability: Blaze
+Level: 50
+Tera Type: Fire
+EVs: 3 HP / 100 Atk / 124 Def / 162 SpA / 15 SpD / 71 Spe
+Careful Nature
+- Burn Up
+- Roost
+- Air Slash
+
+Volcarona (M)
+Ability: Flame Body
+Level: 50
+Tera Type: Ground
+EVs: 36 HP / 70 Atk / 159 Def / 6 SpA / 27 SpD / 211 Spe
+Naughty Nature
+- Burn Up
+- Quiver Dance
+- Roost
+
+Sliggoo (F)
+Ability: Gooey
+Level: 50
+Tera Type: Normal
+EVs: 11 HP / 184 Atk / 81 Def / 158 SpA / 76 Spe
+Careful Nature
+- Eruption
+- Rain Dance
+- Knock Off
+- Eerie Impulse
+end
+team p2
+ThisNameIsFarTooLongToKeep (Rotom-Wash)
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Tera Type: Electric
+EVs: 164 HP / 151 Atk / 101 Def / 1 SpA / 73 Spe
+Naughty Nature
+- Double Shock
+- Hydro Pump
+
+Sir Hops-a-Lot (Arceus-Electric) (F) @ Zap Plate
+Ability: Multitype
+Level: 50
+Tera Type: Steel
+EVs: 120 HP / 67 Atk / 41 Def / 69 SpA / 102 SpD / 19 Spe
+Docile Nature
+- Double Shock
+- Judgment
+- Recover
+
+Makuhita (M)
+Ability: Thick Fat
+Level: 50
+Shiny: Yes
+Tera Type: Fire
+EVs: 20 HP / 192 Atk / 213 SpA / 84 SpD / 1 Spe
+Naughty Nature
+- Roost
+
+Popplio (F)
+Ability: Torrent
+Level: 50
+Tera Type: Normal
+EVs: 54 HP / 111 Atk / 7 Def / 234 SpA / 69 SpD / 31 Spe
+Bold Nature
+- Aurora Beam
+- Thunder Shock
+- Avalanche
+- Blast Burn
+
+Electivire
+Ability: Motor Drive
+Level: 50
+Tera Type: Electric
+EVs: 115 HP / 42 Atk / 6 SpA / 201 SpD / 134 Spe
+Quiet Nature
+- Double Shock
+- Ice Punch
+
+Groudon
+Ability: Drought
+Level: 50
+Tera Type: Ghost
+EVs: 75 HP / 31 Atk / 2 Def / 250 SpA / 99 SpD / 23 Spe
+Calm Nature
+- Stored Power
+- Expanding Force
+- Sludge
+end
+choice p1 team 5412
+choice p2 team 2643
+choice p1 move burnup 1,move 3 -1
+choice p2 move 2 2, move 2 2
+choice p1 pass, switch 4
+choice p2 switch 3, move 3 2 terastallize
+choice p1 move Quiver Dance,move revelationdance 1
+choice p2 move 2 2, move 1 2
+choice p1 switch 3, move 2 -1
+choice p1 switch volcarona ,  pass
+choice p2 move 4 -2, move 3 1
+choice p1 move 1 -2, move 1 -1
+choice p2 move 1, switch 4
+choice p1 default
+choice p2 move 3 2, switch 3
+choice p1 pass, move 1 2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Raichu, L50, M|
+expect |poke|p1|Oricorio, L50, M|
+expect |poke|p1|Whimsicott, L50, F|
+expect |poke|p1|Charizard, L50, F|
+expect |poke|p1|Volcarona, L50, M|
+expect |poke|p1|Sliggoo, L50, F|
+expect |poke|p2|Rotom-Wash, L50|
+expect |poke|p2|Arceus-Electric, L50, F|
+expect |poke|p2|Makuhita, L50, M|
+expect |poke|p2|Popplio, L50, F|
+expect |poke|p2|Electivire, L50, F|
+expect |poke|p2|Groudon, L50|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Volcarona|Volcarona, L50, M|165/165
+expect |switch|p1a: Volcarona|Volcarona, L50, M|165/165
+expect |split|p1
+expect |switch|p1b: Charizard|Charizard, L50, F|153/153
+expect |switch|p1b: Charizard|Charizard, L50, F|153/153
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Arceus-Electric, L50, F|210/210
+expect |switch|p2a: Sir Hops-a-Lot|Arceus-Electric, L50, F|210/210
+expect |split|p2
+expect |switch|p2b: Groudon|Groudon, L50|184/184
+expect |switch|p2b: Groudon|Groudon, L50|184/184
+expect |-weather|SunnyDay|[from] ability: Drought|[of] p2b: Groudon
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Volcarona|Burn Up|p2a: Sir Hops-a-Lot
+expect |rng|100|52
+expect |rng|24|18
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|81/210
+expect |-damage|p2a: Sir Hops-a-Lot|81/210
+expect |-start|p1a: Volcarona|typechange|Bug/???|[from] move: Burn Up
+expect |move|p2a: Sir Hops-a-Lot|Judgment|p1b: Charizard
+expect |rng|100|96
+expect |rng|24|2
+expect |rng|16|13
+expect |-supereffective|p1b: Charizard
+expect |split|p1
+expect |-damage|p1b: Charizard|0 fnt
+expect |-damage|p1b: Charizard|0 fnt
+expect |faint|p1b: Charizard
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Groudon|Expanding Force|p1a: Volcarona
+expect |rng|100|43
+expect |rng|24|17
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Volcarona|121/165
+expect |-damage|p1a: Volcarona|121/165
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Oricorio|Oricorio, L50, M|152/152
+expect |switch|p1b: Oricorio|Oricorio, L50, M|152/152
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Popplio|Popplio, L50, F|132/132
+expect |switch|p2a: Popplio|Popplio, L50, F|132/132
+expect |-terastallize|p2b: Groudon|Ghost
+expect |move|p1a: Volcarona|Quiver Dance|p1a: Volcarona
+expect |-boost|p1a: Volcarona|spa|1
+expect |-boost|p1a: Volcarona|spd|1
+expect |-boost|p1a: Volcarona|spe|1
+expect |-activate|p1b: Oricorio|ability: Dancer
+expect |move|p1b: Oricorio|Quiver Dance|p1b: Oricorio|[from] ability: Dancer
+expect |-boost|p1b: Oricorio|spa|1
+expect |-boost|p1b: Oricorio|spd|1
+expect |-boost|p1b: Oricorio|spe|1
+expect |move|p1b: Oricorio|Revelation Dance|p2a: Popplio
+expect |rng|100|54
+expect |rng|24|12
+expect |rng|16|3
+expect |-resisted|p2a: Popplio
+expect |split|p2
+expect |-damage|p2a: Popplio|28/132
+expect |-damage|p2a: Popplio|28/132
+expect |move|p2b: Groudon|Sludge|p1b: Oricorio
+expect |rng|100|34
+expect |rng|24|3
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Oricorio|121/152
+expect |-damage|p1b: Oricorio|121/152
+expect |rng|100|86
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: ThisNameIsFarTooLong|Raichu, L50, M, shiny|137/137
+expect |switch|p1a: ThisNameIsFarTooLong|Raichu, L50, M, shiny|137/137
+expect |move|p1b: Oricorio|Revelation Dance|p1a: ThisNameIsFarTooLong
+expect |rng|100|21
+expect |rng|24|3
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|0 fnt
+expect |-damage|p1a: ThisNameIsFarTooLong|0 fnt
+expect |faint|p1a: ThisNameIsFarTooLong
+expect |move|p2b: Groudon|Stored Power|p1b: Oricorio
+expect |rng|100|13
+expect |rng|24|0
+expect |rng|16|12
+expect |-crit|p1b: Oricorio
+expect |split|p1
+expect |-damage|p1b: Oricorio|102/152
+expect |-damage|p1b: Oricorio|102/152
+expect |move|p2a: Popplio|Thunder Shock|p1b: Oricorio
+expect |rng|100|0
+expect |rng|24|7
+expect |rng|16|15
+expect |-supereffective|p1b: Oricorio
+expect |split|p1
+expect |-damage|p1b: Oricorio|78/152
+expect |-damage|p1b: Oricorio|78/152
+expect |rng|100|7
+expect |-status|p1b: Oricorio|par
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Volcarona|Volcarona, L50, M|121/165
+expect |switch|p1a: Volcarona|Volcarona, L50, M|121/165
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1a: Volcarona|Burn Up|p1b: Oricorio
+expect |rng|100|90
+expect |rng|24|23
+expect |rng|16|11
+expect |-resisted|p1b: Oricorio
+expect |split|p1
+expect |-damage|p1b: Oricorio|17/152 par
+expect |-damage|p1b: Oricorio|17/152 par
+expect |-start|p1a: Volcarona|typechange|Bug/???|[from] move: Burn Up
+expect |move|p2b: Groudon|Sludge|p1a: Volcarona
+expect |rng|100|47
+expect |rng|24|8
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Volcarona|87/165
+expect |-damage|p1a: Volcarona|87/165
+expect |rng|100|81
+expect |rng|4|2
+expect |move|p1b: Oricorio|Burn Up|p1a: Volcarona
+expect |rng|100|50
+expect |rng|24|7
+expect |rng|16|13
+expect |-supereffective|p1a: Volcarona
+expect |split|p1
+expect |-damage|p1a: Volcarona|0 fnt
+expect |-damage|p1a: Volcarona|0 fnt
+expect |-start|p1b: Oricorio|typechange|???/Flying|[from] move: Burn Up
+expect |faint|p1a: Volcarona
+expect |move|p2a: Popplio|Blast Burn|p2b: Groudon
+expect |rng|100|80
+expect |rng|24|8
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Groudon|106/184
+expect |-damage|p2b: Groudon|106/184
+expect |-mustrecharge|p2a: Popplio
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|5
+expect |rng|2|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Makuhita|Makuhita, L50, M, shiny|150/150
+expect |switch|p2b: Makuhita|Makuhita, L50, M, shiny|150/150
+expect |rng|1|0
+expect |rng|4|1
+expect |move|p1b: Oricorio|Burn Up||[still]
+expect |-fail|p1b: Oricorio|move: Burn Up
+expect |rng|1|0
+expect |rng|1|0
+expect |cant|p2a: Popplio|recharge
+expect |
+expect |-weather|none
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Sir Hops-a-Lot|Arceus-Electric, L50, F|81/210
+expect |switch|p2b: Sir Hops-a-Lot|Arceus-Electric, L50, F|81/210
+expect |rng|4|0
+expect |cant|p1b: Oricorio|par
+expect |move|p2a: Popplio|Avalanche|p1b: Oricorio
+expect |rng|100|12
+expect |rng|24|13
+expect |rng|16|4
+expect |-supereffective|p1b: Oricorio
+expect |split|p1
+expect |-damage|p1b: Oricorio|0 fnt
+expect |-damage|p1b: Oricorio|0 fnt
+expect |faint|p1b: Oricorio
+expect |
+expect |win|p2
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Raichu, L50, M, shiny","condition":"137/137","active":true,"stats":{"atk":139,"def":76,"spa":138,"spd":102,"spe":131},"moves":["takedown"],"baseAbility":"lightningrod","item":"hearthflamemask","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, M","condition":"152/152","active":true,"stats":{"atk":98,"def":115,"spa":135,"spd":99,"spe":114},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Sparky","details":"Whimsicott, L50, F","condition":"135/135","active":false,"stats":{"atk":109,"def":115,"spa":97,"spd":95,"spe":167},"moves":["encore","soak"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Charizard","details":"Charizard, L50, F","condition":"153/153","active":false,"stats":{"atk":117,"def":114,"spa":134,"spd":117,"spe":129},"moves":["burnup","roost","airslash"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Volcarona","details":"Volcarona, L50, M","condition":"165/165","active":false,"stats":{"atk":97,"def":105,"spa":156,"spd":115,"spe":146},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sliggoo","details":"Sliggoo, L50, F","condition":"144/144","active":false,"stats":{"atk":118,"def":83,"spa":110,"spd":146,"spe":90},"moves":["eruption","raindance","knockoff","eerieimpulse"],"baseAbility":"gooey","item":"","pokeball":"pokeball","ability":"gooey","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Rotom-Wash, L50, shiny","condition":"146/146","active":true,"stats":{"atk":114,"def":140,"spa":125,"spd":114,"spe":115},"moves":["doubleshock","hydropump"],"baseAbility":"levitate","item":"","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arceus-Electric, L50, F","condition":"210/210","active":true,"stats":{"atk":148,"def":145,"spa":149,"spd":153,"spe":142},"moves":["doubleshock","judgment","recover"],"baseAbility":"multitype","item":"zapplate","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Makuhita","details":"Makuhita, L50, M, shiny","condition":"150/150","active":false,"stats":{"atk":114,"def":50,"spa":67,"spd":54,"spe":45},"moves":["roost"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Popplio","details":"Popplio, L50, F","condition":"132/132","active":false,"stats":{"atk":79,"def":82,"spa":115,"spd":85,"spe":64},"moves":["aurorabeam","thundershock","avalanche","blastburn"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Electivire","details":"Electivire, L50, F","condition":"164/164","active":false,"stats":{"atk":148,"def":87,"spa":127,"spd":130,"spe":118},"moves":["doubleshock","icepunch"],"baseAbility":"motordrive","item":"","pokeball":"pokeball","ability":"motordrive","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"184/184","active":false,"stats":{"atk":156,"def":160,"spa":151,"spd":134,"spe":113},"moves":["storedpower","expandingforce","sludge"],"baseAbility":"drought","item":"","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Air Slash","id":"airslash","pp":24,"maxpp":24,"target":"any","disabled":false}],"canTerastallize":"Fire"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Volcarona","details":"Volcarona, L50, M","condition":"165/165","active":true,"stats":{"atk":97,"def":105,"spa":156,"spd":115,"spe":146},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Charizard","details":"Charizard, L50, F","condition":"153/153","active":true,"stats":{"atk":117,"def":114,"spa":134,"spd":117,"spe":129},"moves":["burnup","roost","airslash"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Raichu, L50, M, shiny","condition":"137/137","active":false,"stats":{"atk":139,"def":76,"spa":138,"spd":102,"spe":131},"moves":["takedown"],"baseAbility":"lightningrod","item":"hearthflamemask","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, M","condition":"152/152","active":false,"stats":{"atk":98,"def":115,"spa":135,"spd":99,"spe":114},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Judgment","id":"judgment","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Recover","id":"recover","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Steel"},{"moves":[{"move":"Stored Power","id":"storedpower","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Expanding Force","id":"expandingforce","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sludge","id":"sludge","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Ghost"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Arceus-Electric, L50, F","condition":"210/210","active":true,"stats":{"atk":148,"def":145,"spa":149,"spd":153,"spe":142},"moves":["doubleshock","judgment","recover"],"baseAbility":"multitype","item":"zapplate","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"184/184","active":true,"stats":{"atk":156,"def":160,"spa":151,"spd":134,"spe":113},"moves":["storedpower","expandingforce","sludge"],"baseAbility":"drought","item":"","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Popplio","details":"Popplio, L50, F","condition":"132/132","active":false,"stats":{"atk":79,"def":82,"spa":115,"spd":85,"spe":64},"moves":["aurorabeam","thundershock","avalanche","blastburn"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Makuhita","details":"Makuhita, L50, M, shiny","condition":"150/150","active":false,"stats":{"atk":114,"def":50,"spa":67,"spd":54,"spe":45},"moves":["roost"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Volcarona","details":"Volcarona, L50, M","condition":"121/165","active":true,"stats":{"atk":97,"def":105,"spa":156,"spd":115,"spe":146},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Charizard","details":"Charizard, L50, F","condition":"0 fnt","active":true,"stats":{"atk":117,"def":114,"spa":134,"spd":117,"spe":129},"moves":["burnup","roost","airslash"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Raichu, L50, M, shiny","condition":"137/137","active":false,"stats":{"atk":139,"def":76,"spa":138,"spd":102,"spe":131},"moves":["takedown"],"baseAbility":"lightningrod","item":"hearthflamemask","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, M","condition":"152/152","active":false,"stats":{"atk":98,"def":115,"spa":135,"spd":99,"spe":114},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Arceus-Electric, L50, F","condition":"81/210","active":true,"stats":{"atk":148,"def":145,"spa":149,"spd":153,"spe":142},"moves":["doubleshock","judgment","recover"],"baseAbility":"multitype","item":"zapplate","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"184/184","active":true,"stats":{"atk":156,"def":160,"spa":151,"spd":134,"spe":113},"moves":["storedpower","expandingforce","sludge"],"baseAbility":"drought","item":"","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Popplio","details":"Popplio, L50, F","condition":"132/132","active":false,"stats":{"atk":79,"def":82,"spa":115,"spd":85,"spe":64},"moves":["aurorabeam","thundershock","avalanche","blastburn"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Makuhita","details":"Makuhita, L50, M, shiny","condition":"150/150","active":false,"stats":{"atk":114,"def":50,"spa":67,"spd":54,"spe":45},"moves":["roost"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":32,"maxpp":32,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Revelation Dance","id":"revelationdance","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Volcarona","details":"Volcarona, L50, M","condition":"121/165","active":true,"stats":{"atk":97,"def":105,"spa":156,"spd":115,"spe":146},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, M","condition":"152/152","active":true,"stats":{"atk":98,"def":115,"spa":135,"spd":99,"spe":114},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Raichu, L50, M, shiny","condition":"137/137","active":false,"stats":{"atk":139,"def":76,"spa":138,"spd":102,"spe":131},"moves":["takedown"],"baseAbility":"lightningrod","item":"hearthflamemask","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Charizard","details":"Charizard, L50, F","condition":"0 fnt","active":false,"stats":{"atk":117,"def":114,"spa":134,"spd":117,"spe":129},"moves":["burnup","roost","airslash"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Judgment","id":"judgment","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Recover","id":"recover","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Steel"},{"moves":[{"move":"Stored Power","id":"storedpower","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Expanding Force","id":"expandingforce","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Sludge","id":"sludge","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Ghost"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Sir Hops-a-Lot","details":"Arceus-Electric, L50, F","condition":"81/210","active":true,"stats":{"atk":148,"def":145,"spa":149,"spd":153,"spe":142},"moves":["doubleshock","judgment","recover"],"baseAbility":"multitype","item":"zapplate","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"184/184","active":true,"stats":{"atk":156,"def":160,"spa":151,"spd":134,"spe":113},"moves":["storedpower","expandingforce","sludge"],"baseAbility":"drought","item":"","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Popplio","details":"Popplio, L50, F","condition":"132/132","active":false,"stats":{"atk":79,"def":82,"spa":115,"spd":85,"spe":64},"moves":["aurorabeam","thundershock","avalanche","blastburn"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Makuhita","details":"Makuhita, L50, M, shiny","condition":"150/150","active":false,"stats":{"atk":114,"def":50,"spa":67,"spd":54,"spe":45},"moves":["roost"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Revelation Dance","id":"revelationdance","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Volcarona","details":"Volcarona, L50, M","condition":"121/165","active":true,"stats":{"atk":97,"def":105,"spa":156,"spd":115,"spe":146},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, M","condition":"121/152","active":true,"stats":{"atk":98,"def":115,"spa":135,"spd":99,"spe":114},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Raichu, L50, M, shiny","condition":"137/137","active":false,"stats":{"atk":139,"def":76,"spa":138,"spd":102,"spe":131},"moves":["takedown"],"baseAbility":"lightningrod","item":"hearthflamemask","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Charizard","details":"Charizard, L50, F","condition":"0 fnt","active":false,"stats":{"atk":117,"def":114,"spa":134,"spd":117,"spe":129},"moves":["burnup","roost","airslash"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Aurora Beam","id":"aurorabeam","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Shock","id":"thundershock","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Avalanche","id":"avalanche","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Blast Burn","id":"blastburn","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Stored Power","id":"storedpower","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Expanding Force","id":"expandingforce","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Sludge","id":"sludge","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Popplio","details":"Popplio, L50, F","condition":"28/132","active":true,"stats":{"atk":79,"def":82,"spa":115,"spd":85,"spe":64},"moves":["aurorabeam","thundershock","avalanche","blastburn"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"184/184","active":true,"stats":{"atk":156,"def":160,"spa":151,"spd":134,"spe":113},"moves":["storedpower","expandingforce","sludge"],"baseAbility":"drought","item":"","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Sir Hops-a-Lot","details":"Arceus-Electric, L50, F","condition":"81/210","active":false,"stats":{"atk":148,"def":145,"spa":149,"spd":153,"spe":142},"moves":["doubleshock","judgment","recover"],"baseAbility":"multitype","item":"zapplate","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Makuhita","details":"Makuhita, L50, M, shiny","condition":"150/150","active":false,"stats":{"atk":114,"def":50,"spa":67,"spd":54,"spe":45},"moves":["roost"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: ThisNameIsFarTooLong","details":"Raichu, L50, M, shiny","condition":"0 fnt","active":true,"stats":{"atk":139,"def":76,"spa":138,"spd":102,"spe":131},"moves":["takedown"],"baseAbility":"lightningrod","item":"hearthflamemask","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, M","condition":"78/152 par","active":true,"stats":{"atk":98,"def":115,"spa":135,"spd":99,"spe":114},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Volcarona","details":"Volcarona, L50, M","condition":"121/165","active":false,"stats":{"atk":97,"def":105,"spa":156,"spd":115,"spe":146},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Charizard","details":"Charizard, L50, F","condition":"0 fnt","active":false,"stats":{"atk":117,"def":114,"spa":134,"spd":117,"spe":129},"moves":["burnup","roost","airslash"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Popplio","details":"Popplio, L50, F","condition":"28/132","active":true,"stats":{"atk":79,"def":82,"spa":115,"spd":85,"spe":64},"moves":["aurorabeam","thundershock","avalanche","blastburn"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"184/184","active":true,"stats":{"atk":156,"def":160,"spa":151,"spd":134,"spe":113},"moves":["storedpower","expandingforce","sludge"],"baseAbility":"drought","item":"","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Sir Hops-a-Lot","details":"Arceus-Electric, L50, F","condition":"81/210","active":false,"stats":{"atk":148,"def":145,"spa":149,"spd":153,"spe":142},"moves":["doubleshock","judgment","recover"],"baseAbility":"multitype","item":"zapplate","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Makuhita","details":"Makuhita, L50, M, shiny","condition":"150/150","active":false,"stats":{"atk":114,"def":50,"spa":67,"spd":54,"spe":45},"moves":["roost"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Burn Up","id":"burnup","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Revelation Dance","id":"revelationdance","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Volcarona","details":"Volcarona, L50, M","condition":"121/165","active":true,"stats":{"atk":97,"def":105,"spa":156,"spd":115,"spe":146},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, M","condition":"78/152 par","active":true,"stats":{"atk":98,"def":115,"spa":135,"spd":99,"spe":114},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Raichu, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":139,"def":76,"spa":138,"spd":102,"spe":131},"moves":["takedown"],"baseAbility":"lightningrod","item":"hearthflamemask","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Charizard","details":"Charizard, L50, F","condition":"0 fnt","active":false,"stats":{"atk":117,"def":114,"spa":134,"spd":117,"spe":129},"moves":["burnup","roost","airslash"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Aurora Beam","id":"aurorabeam","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Shock","id":"thundershock","pp":47,"maxpp":48,"target":"normal","disabled":false},{"move":"Avalanche","id":"avalanche","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Blast Burn","id":"blastburn","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Stored Power","id":"storedpower","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Expanding Force","id":"expandingforce","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Sludge","id":"sludge","pp":31,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Popplio","details":"Popplio, L50, F","condition":"28/132","active":true,"stats":{"atk":79,"def":82,"spa":115,"spd":85,"spe":64},"moves":["aurorabeam","thundershock","avalanche","blastburn"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"184/184","active":true,"stats":{"atk":156,"def":160,"spa":151,"spd":134,"spe":113},"moves":["storedpower","expandingforce","sludge"],"baseAbility":"drought","item":"","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Sir Hops-a-Lot","details":"Arceus-Electric, L50, F","condition":"81/210","active":false,"stats":{"atk":148,"def":145,"spa":149,"spd":153,"spe":142},"moves":["doubleshock","judgment","recover"],"baseAbility":"multitype","item":"zapplate","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Makuhita","details":"Makuhita, L50, M, shiny","condition":"150/150","active":false,"stats":{"atk":114,"def":50,"spa":67,"spd":54,"spe":45},"moves":["roost"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Burn Up","id":"burnup","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Revelation Dance","id":"revelationdance","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Volcarona","details":"Volcarona, L50, M","condition":"0 fnt","active":true,"stats":{"atk":97,"def":105,"spa":156,"spd":115,"spe":146},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, M","condition":"17/152 par","active":true,"stats":{"atk":98,"def":115,"spa":135,"spd":99,"spe":114},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Raichu, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":139,"def":76,"spa":138,"spd":102,"spe":131},"moves":["takedown"],"baseAbility":"lightningrod","item":"hearthflamemask","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Charizard","details":"Charizard, L50, F","condition":"0 fnt","active":false,"stats":{"atk":117,"def":114,"spa":134,"spd":117,"spe":129},"moves":["burnup","roost","airslash"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true},{"moves":[{"move":"Stored Power","id":"storedpower","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Expanding Force","id":"expandingforce","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Sludge","id":"sludge","pp":30,"maxpp":32,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Popplio","details":"Popplio, L50, F","condition":"28/132","active":true,"stats":{"atk":79,"def":82,"spa":115,"spd":85,"spe":64},"moves":["aurorabeam","thundershock","avalanche","blastburn"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"106/184","active":true,"stats":{"atk":156,"def":160,"spa":151,"spd":134,"spe":113},"moves":["storedpower","expandingforce","sludge"],"baseAbility":"drought","item":"","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Sir Hops-a-Lot","details":"Arceus-Electric, L50, F","condition":"81/210","active":false,"stats":{"atk":148,"def":145,"spa":149,"spd":153,"spe":142},"moves":["doubleshock","judgment","recover"],"baseAbility":"multitype","item":"zapplate","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Makuhita","details":"Makuhita, L50, M, shiny","condition":"150/150","active":false,"stats":{"atk":114,"def":50,"spa":67,"spd":54,"spe":45},"moves":["roost"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Burn Up","id":"burnup","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Quiver Dance","id":"quiverdance","pp":31,"maxpp":32,"target":"self","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Burn Up","id":"burnup","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Revelation Dance","id":"revelationdance","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Volcarona","details":"Volcarona, L50, M","condition":"0 fnt","active":true,"stats":{"atk":97,"def":105,"spa":156,"spd":115,"spe":146},"moves":["burnup","quiverdance","roost"],"baseAbility":"flamebody","item":"","pokeball":"pokeball","ability":"flamebody","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, M","condition":"17/152 par","active":true,"stats":{"atk":98,"def":115,"spa":135,"spd":99,"spe":114},"moves":["burnup","revelationdance","roost"],"baseAbility":"dancer","item":"","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: ThisNameIsFarTooLong","details":"Raichu, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":139,"def":76,"spa":138,"spd":102,"spe":131},"moves":["takedown"],"baseAbility":"lightningrod","item":"hearthflamemask","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p1: Charizard","details":"Charizard, L50, F","condition":"0 fnt","active":false,"stats":{"atk":117,"def":114,"spa":134,"spd":117,"spe":129},"moves":["burnup","roost","airslash"],"baseAbility":"blaze","item":"","pokeball":"pokeball","ability":"blaze","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Aurora Beam","id":"aurorabeam","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunder Shock","id":"thundershock","pp":47,"maxpp":48,"target":"normal","disabled":false},{"move":"Avalanche","id":"avalanche","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Blast Burn","id":"blastburn","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Popplio","details":"Popplio, L50, F","condition":"28/132","active":true,"stats":{"atk":79,"def":82,"spa":115,"spd":85,"spe":64},"moves":["aurorabeam","thundershock","avalanche","blastburn"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Makuhita","details":"Makuhita, L50, M, shiny","condition":"150/150","active":true,"stats":{"atk":114,"def":50,"spa":67,"spd":54,"spe":45},"moves":["roost"],"baseAbility":"thickfat","item":"","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p2: Sir Hops-a-Lot","details":"Arceus-Electric, L50, F","condition":"81/210","active":false,"stats":{"atk":148,"def":145,"spa":149,"spd":153,"spe":142},"moves":["doubleshock","judgment","recover"],"baseAbility":"multitype","item":"zapplate","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Groudon","details":"Groudon, L50","condition":"106/184","active":false,"stats":{"atk":156,"def":160,"spa":151,"spd":134,"spe":113},"moves":["storedpower","expandingforce","sludge"],"baseAbility":"drought","item":"","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}

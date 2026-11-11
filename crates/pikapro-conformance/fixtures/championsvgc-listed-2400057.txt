@@ -1,0 +1,424 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed a071 7401 a40a 0fd5
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Sparky (Toucannon) (F) @ Leftovers
+Ability: Keen Eye
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Lonely Nature
+- Beak Blast
+- U-turn
+- Roost
+- Boomburst
+
+Floette-Eternal (F) @ Floettite
+Ability: Flower Veil
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Calm Mind
+- Psychic
+- Synthesis
+- Moonblast
+
+Chandelure-Mega (F) @ Chandelurite
+Ability: Flash Fire
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Calm Mind
+- Energy Ball
+- Shadow Ball
+- Fire Blast
+
+X (Swampert-Mega) (M) @ Swampertite
+Ability: Damp
+Level: 50
+Shiny: Yes
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Bulk Up
+- Rain Dance
+- Earthquake
+- Wave Crash
+
+Typhlosion (M) @ Choice Scarf
+Ability: Flash Fire
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 SpA / 32 Spe
+Hasty Nature
+- Play Rough
+- Earthquake
+- Eruption
+- Fire Blast
+
+Zoë (Clawitzer) (F) @ Life Orb
+Ability: Mega Launcher
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Aura Sphere
+- Water Pulse
+- Dragon Pulse
+- Dark Pulse
+end
+team p2
+Squawkabilly-White (F) @ Life Orb
+Ability: Hustle
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Brave Bird
+- Quick Attack
+- Double-Edge
+- Parting Shot
+
+Altaria (F) @ Leftovers
+Ability: Natural Cure
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Dragon Dance
+- Earthquake
+- Brave Bird
+- Roost
+
+Pyroar-Mega (F) @ Pyroarite
+Ability: Unnerve
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Sunny Day
+- Solar Beam
+- Hyper Voice
+- Fire Blast
+
+Meowstic (M) @ Meowsticite
+Ability: Prankster
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Psychic
+- Nasty Plot
+- Alluring Voice
+- Thunderbolt
+
+Farfetch’d (F) @ Leek
+Ability: Defiant
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Leaf Blade
+- Brave Bird
+- Close Combat
+- Swords Dance
+
+Glalie (M) @ Glalitite
+Ability: Inner Focus
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Lonely Nature
+- Freeze-Dry
+- Earthquake
+- Body Slam
+- Explosion
+end
+choice p1 team 1236
+choice p2 team 4653
+choice p1 move 3, move 3 mega
+choice p2 switch 4, move 3 1 mega
+choice p1 switch Chandelure,skip
+choice p2 switch 4, move 1 1
+choice p1 move 4 -2, move 2 1
+choice p2 move Thunderbolt +1,move Freeze-Dry +2
+choice p1 move 2 1, move 3
+choice p2 move 3 -2, switch 3
+choice p1 move 4 1, move 2 1
+choice p2 switch Glalie ,  switch pyroar
+choice p1 move 3 2, move 4 -1
+choice p2 move 2, move 3
+choice p1 switch Zoë
+choice p2 move 3 -2, move 2 2
+choice p1 move 1 2, move 1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Toucannon, L50, F|
+expect |poke|p1|Floette-Eternal, L50, F|
+expect |poke|p1|Chandelure, L50, F|
+expect |poke|p1|Swampert, L50, M, shiny|
+expect |poke|p1|Typhlosion, L50, M, shiny|
+expect |poke|p1|Clawitzer, L50, F|
+expect |poke|p2|Squawkabilly-White, L50, F|
+expect |poke|p2|Altaria, L50, F|
+expect |poke|p2|Pyroar, L50, F|
+expect |poke|p2|Meowstic, L50, M|
+expect |poke|p2|Farfetch’d, L50, F|
+expect |poke|p2|Glalie, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Sparky|Toucannon, L50, F|187/187
+expect |switch|p1a: Sparky|Toucannon, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Floette|Floette-Eternal, L50, F|181/181
+expect |switch|p1b: Floette|Floette-Eternal, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Meowstic|Meowstic, L50, M|151/151
+expect |switch|p2a: Meowstic|Meowstic, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Glalie|Glalie, L50, M|157/157
+expect |switch|p2b: Glalie|Glalie, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pyroar|Pyroar, L50, F|163/163
+expect |switch|p2a: Pyroar|Pyroar, L50, F|100/100
+expect |-ability|p2a: Pyroar|Unnerve
+expect |detailschange|p2b: Glalie|Glalie-Mega, L50, M
+expect |-mega|p2b: Glalie|Glalie|Glalitite
+expect |detailschange|p1b: Floette|Floette-Mega, L50, F
+expect |-mega|p1b: Floette|Floette|Floettite
+expect |-ability|p1b: Floette|Fairy Aura
+expect |move|p2b: Glalie|Body Slam|p1a: Sparky
+expect |rng|100|88
+expect |rng|24|3
+expect |rng|16|6
+expect |-supereffective|p1a: Sparky|1
+expect |split|p1
+expect |-damage|p1a: Sparky|0 fnt
+expect |-damage|p1a: Sparky|0 fnt
+expect |rng|100|61
+expect |faint|p1a: Sparky
+expect |move|p1b: Floette|Synthesis|p1b: Floette
+expect |-fail|p1b: Floette|heal
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Chandelure|Chandelure, L50, F|137/137
+expect |switch|p1a: Chandelure|Chandelure, L50, F|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Meowstic|Meowstic, L50, M|151/151
+expect |switch|p2a: Meowstic|Meowstic, L50, M|100/100
+expect |move|p2b: Glalie|Freeze-Dry|p1a: Chandelure
+expect |rng|100|47
+expect |rng|24|2
+expect |rng|16|8
+expect |-resisted|p1a: Chandelure|1
+expect |split|p1
+expect |-damage|p1a: Chandelure|110/137
+expect |-damage|p1a: Chandelure|80/100
+expect |move|p1a: Chandelure|Fire Blast|p1b: Floette
+expect |rng|100|76
+expect |rng|24|0
+expect |rng|16|8
+expect |-crit|p1b: Floette
+expect |split|p1
+expect |-damage|p1b: Floette|49/181
+expect |-damage|p1b: Floette|27/100
+expect |rng|100|81
+expect |move|p1b: Floette|Psychic|p2a: Meowstic
+expect |rng|100|21
+expect |rng|24|21
+expect |rng|16|3
+expect |-resisted|p2a: Meowstic|1
+expect |split|p2
+expect |-damage|p2a: Meowstic|107/151
+expect |-damage|p2a: Meowstic|70/100
+expect |rng|100|37
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Meowstic|Thunderbolt|p1a: Chandelure
+expect |rng|100|53
+expect |rng|24|3
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Chandelure|57/137
+expect |-damage|p1a: Chandelure|41/100
+expect |rng|100|34
+expect |move|p2b: Glalie|Freeze-Dry|p1b: Floette
+expect |rng|100|26
+expect |rng|24|9
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1b: Floette|10/181
+expect |-damage|p1b: Floette|5/100
+expect |move|p1a: Chandelure|Energy Ball|p2a: Meowstic
+expect |rng|100|37
+expect |rng|24|9
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Meowstic|27/151
+expect |-damage|p2a: Meowstic|17/100
+expect |rng|100|63
+expect |move|p1b: Floette|Synthesis|p1b: Floette
+expect |split|p1
+expect |-heal|p1b: Floette|100/181
+expect |-heal|p1b: Floette|55/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Farfetch’d|Farfetch’d, L50, F|129/129
+expect |switch|p2b: Farfetch’d|Farfetch’d, L50, F|100/100
+expect |move|p2a: Meowstic|Alluring Voice|p2b: Farfetch’d
+expect |rng|100|31
+expect |rng|24|6
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Farfetch’d|43/129
+expect |-damage|p2b: Farfetch’d|33/100
+expect |rng|100|28
+expect |move|p1a: Chandelure|Fire Blast|p2a: Meowstic
+expect |rng|100|32
+expect |rng|24|2
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Meowstic|0 fnt
+expect |-damage|p2a: Meowstic|0 fnt
+expect |rng|100|40
+expect |faint|p2a: Meowstic
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Floette|Psychic|p2b: Farfetch’d
+expect |rng|100|46
+expect |rng|24|16
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2b: Farfetch’d|0 fnt
+expect |-damage|p2b: Farfetch’d|0 fnt
+expect |rng|100|87
+expect |faint|p2b: Farfetch’d
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Glalie|Glalie-Mega, L50, M|157/157
+expect |switch|p2a: Glalie|Glalie-Mega, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Pyroar|Pyroar, L50, F|163/163
+expect |switch|p2b: Pyroar|Pyroar, L50, F|100/100
+expect |-ability|p2b: Pyroar|Unnerve
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Pyroar|Hyper Voice|p1b: Floette|[spread] p1b
+expect |-immune|p1a: Chandelure
+expect |rng|100|14
+expect |rng|24|13
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1b: Floette|57/181
+expect |-damage|p1b: Floette|31/100
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Glalie|Earthquake|p1a: Chandelure|[spread] p2b,p1a,p1b
+expect |rng|100|3
+expect |rng|100|28
+expect |rng|100|27
+expect |rng|24|2
+expect |rng|16|8
+expect |-supereffective|p2b: Pyroar|1
+expect |rng|24|5
+expect |rng|16|3
+expect |-supereffective|p1a: Chandelure|1
+expect |rng|24|10
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Pyroar|37/163
+expect |-damage|p2b: Pyroar|22/100
+expect |split|p1
+expect |-damage|p1a: Chandelure|0 fnt
+expect |-damage|p1a: Chandelure|0 fnt
+expect |split|p1
+expect |-damage|p1b: Floette|6/181
+expect |-damage|p1b: Floette|3/100
+expect |faint|p1a: Chandelure
+expect |move|p1b: Floette|Moonblast|p1: Chandelure|[notarget]
+expect |-fail|p1b: Floette
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Zoë|Clawitzer, L50, F|148/148
+expect |switch|p1a: Zoë|Clawitzer, L50, F|100/100
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2b: Pyroar|Solar Beam||[still]
+expect |-prepare|p2b: Pyroar|Solar Beam
+expect |move|p2a: Glalie|Body Slam|p2b: Pyroar
+expect |rng|100|71
+expect |rng|24|16
+expect |rng|16|0
+expect |-resisted|p2b: Pyroar|1
+expect |split|p2
+expect |-damage|p2b: Pyroar|0 fnt
+expect |-damage|p2b: Pyroar|0 fnt
+expect |rng|100|71
+expect |faint|p2b: Pyroar
+expect |rng|1|0
+expect |move|p1b: Floette|Calm Mind|p1b: Floette
+expect |-boost|p1b: Floette|spa|1
+expect |-boost|p1b: Floette|spd|1
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Zoë|Aura Sphere|p2a: Glalie
+expect |rng|24|23
+expect |rng|16|6
+expect |-supereffective|p2a: Glalie|1
+expect |split|p2
+expect |-damage|p2a: Glalie|0 fnt
+expect |-damage|p2a: Glalie|0 fnt
+expect |faint|p2a: Glalie
+expect |split|p1
+expect |-damage|p1a: Zoë|134/148|[from] item: Life Orb
+expect |-damage|p1a: Zoë|90/100|[from] item: Life Orb
+expect |
+expect |win|p1

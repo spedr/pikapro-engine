@@ -1,0 +1,482 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed dd39 47e6 8f1f fb52
+genders drawn
+team p1
+Chimecho (M) @ Chimechite
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Tera Type: Steel
+EVs: 25 HP / 11 Atk / 8 Def / 2 SpA / 20 SpD
+Calm Nature
+- Psycho Cut
+
+Trevenant (M)
+Ability: Frisk
+Level: 50
+Shiny: Yes
+Tera Type: Psychic
+EVs: 2 HP / 21 Atk / 10 Def / 32 SpA / 1 Spe
+Naive Nature
+- Aqua Tail
+- Ally Switch
+- Aurora Veil
+
+Sparky (Machamp) @ Metal Coat
+Ability: Guts
+Level: 50
+Tera Type: Poison
+EVs: 15 HP / 8 Atk / 11 SpA / 4 SpD / 28 Spe
+Brave Nature
+- High Jump Kick
+
+Skarmory
+Ability: Keen Eye
+Level: 50
+Shiny: Yes
+Tera Type: Steel
+EVs: 9 HP / 8 Atk / 8 Def / 12 SpA / 22 SpD / 7 Spe
+Jolly Nature
+- Icicle Spear
+- Rest
+- Bulldoze
+
+Passimian
+Ability: Receiver
+Level: 50
+Tera Type: Stellar
+EVs: 9 HP / 22 Def / 26 SpA / 4 SpD / 5 Spe
+Hasty Nature
+- Raging Bull
+- Switcheroo
+- Thunder
+- Blast Burn
+
+Forretress (F) @ Rindo Berry
+Ability: Overcoat
+Level: 50
+Tera Type: Steel
+EVs: 2 HP / 32 Atk / 21 Def / 1 SpA / 2 SpD / 7 Spe
+Lax Nature
+- Ice Hammer
+end
+team p2
+Zoë (Morpeko) (M) @ Expert Belt
+Ability: Hunger Switch
+Level: 50
+Tera Type: Fire
+EVs: 11 Atk / 31 Def / 2 SpA / 13 SpD / 2 Spe
+Careful Nature
+- Rock Wrecker
+- Coil
+
+Sparky (Maushold)
+Ability: Cheek Pouch
+Level: 50
+Tera Type: Psychic
+EVs: 27 Atk / 6 Def / 2 SpA / 2 SpD / 27 Spe
+Quiet Nature
+- Entrainment
+- Bitter Malice
+- Pyro Ball
+
+Ninetales @ Fairy Feather
+Ability: Drought
+Level: 50
+Tera Type: Ice
+EVs: 31 HP / 9 SpA / 15 SpD / 11 Spe
+Calm Nature
+- X-Scissor
+
+Conkeldurr (F) @ Mental Herb
+Ability: Sheer Force
+Level: 50
+Tera Type: Poison
+EVs: 29 HP / 1 Atk / 23 SpA / 4 SpD / 8 Spe
+Naughty Nature
+- Thrash
+- Sheer Cold
+- Thunder
+
+X (Politoed) @ Kasib Berry
+Ability: Damp
+Level: 50
+Tera Type: Rock
+EVs: 13 HP / 3 Atk / 9 Def / 1 SpA / 26 SpD / 11 Spe
+Sassy Nature
+- Pollen Puff
+- Magic Room
+
+Sableye @ Sablenite
+Ability: Keen Eye
+Level: 50
+Tera Type: Flying
+EVs: 14 HP / 18 Atk / 3 Def / 1 SpA / 29 SpD
+Jolly Nature
+- Copycat
+- Close Combat
+end
+choice p1 team 5, 6, 3
+choice p2 team 4,5,2
+choice p1 move 4
+choice p2 switch 3
+choice p1 move 4
+choice p2 switch 2
+choice p1 default
+choice p2 switch 3
+choice p1 move 4
+choice p2 move Thrash
+choice p1 move 1
+choice p2 move 1
+choice p1 move Thunder
+choice p2 move 1
+choice p1 switch 3
+choice p2 switch politoed
+choice p1 switch 2
+choice p2 switch 3
+choice p1 move Ice Hammer
+choice p2 switch 3
+choice p1 switch 2
+choice p2 switch 2
+choice p1 move 1
+choice p2 switch 3
+choice p1 switch 2
+choice p2 move 2
+choice p1 move 1
+choice p2 move 1
+choice p2 switch 2
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 switch 2
+choice p2 move 2
+choice p1 move 1
+choice p2 move 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Chimecho, L50, M, shiny|
+expect |poke|p1|Trevenant, L50, M, shiny|
+expect |poke|p1|Machamp, L50, M|
+expect |poke|p1|Skarmory, L50, F, shiny|
+expect |poke|p1|Passimian, L50, F|
+expect |poke|p1|Forretress, L50, F|
+expect |poke|p2|Morpeko, L50, M|
+expect |poke|p2|Maushold, L50|
+expect |poke|p2|Ninetales, L50, M|
+expect |poke|p2|Conkeldurr, L50, F|
+expect |poke|p2|Politoed, L50, F|
+expect |poke|p2|Sableye, L50, M|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Passimian|Passimian, L50, F|184/184
+expect |switch|p1a: Passimian|Passimian, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Conkeldurr|Conkeldurr, L50, F|209/209
+expect |switch|p2a: Conkeldurr|Conkeldurr, L50, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sparky|Maushold, L50|149/149
+expect |switch|p2a: Sparky|Maushold, L50|100/100
+expect |move|p1a: Passimian|Blast Burn|p2a: Sparky|[miss]
+expect |rng|100|99
+expect |-miss|p1a: Passimian|p2a: Sparky
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Politoed, L50, F|178/178
+expect |switch|p2a: X|Politoed, L50, F|100/100
+expect |move|p1a: Passimian|Blast Burn|p2a: X
+expect |rng|100|31
+expect |rng|24|14
+expect |rng|16|12
+expect |-resisted|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|162/178
+expect |-damage|p2a: X|91/100
+expect |-mustrecharge|p1a: Passimian
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Conkeldurr|Conkeldurr, L50, F|209/209
+expect |switch|p2a: Conkeldurr|Conkeldurr, L50, F|100/100
+expect |cant|p1a: Passimian|recharge
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1a: Passimian|Blast Burn|p2a: Conkeldurr
+expect |rng|100|72
+expect |rng|24|21
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Conkeldurr|140/209
+expect |-damage|p2a: Conkeldurr|66/100
+expect |-mustrecharge|p1a: Passimian
+expect |move|p2a: Conkeldurr|Thrash|p1a: Passimian
+expect |rng|100|59
+expect |rng|24|7
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Passimian|109/184
+expect |-damage|p1a: Passimian|59/100
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |cant|p1a: Passimian|recharge
+expect |move|p2a: Conkeldurr|Thrash|p1a: Passimian|[from] lockedmove
+expect |rng|100|72
+expect |rng|24|5
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Passimian|34/184
+expect |-damage|p1a: Passimian|18/100
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p1a: Passimian|Thunder|p2a: Conkeldurr
+expect |rng|100|30
+expect |rng|24|23
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Conkeldurr|92/209
+expect |-damage|p2a: Conkeldurr|44/100
+expect |rng|100|7
+expect |-status|p2a: Conkeldurr|par
+expect |rng|8|5
+expect |move|p2a: Conkeldurr|Thrash|p1a: Passimian|[from] lockedmove
+expect |rng|100|16
+expect |rng|24|4
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Passimian|0 fnt
+expect |-damage|p1a: Passimian|0 fnt
+expect |faint|p1a: Passimian
+expect |-start|p2a: Conkeldurr|confusion|[fatigue]
+expect |rng|4|2
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sparky|Machamp, L50, M|180/180
+expect |switch|p1a: Sparky|Machamp, L50, M|100/100
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Forretress|Forretress, L50, F|152/152
+expect |switch|p1a: Forretress|Forretress, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: X|Politoed, L50, F|162/178
+expect |switch|p2a: X|Politoed, L50, F|91/100
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Conkeldurr|Conkeldurr, L50, F|92/209 par
+expect |switch|p2a: Conkeldurr|Conkeldurr, L50, F|44/100 par
+expect |move|p1a: Forretress|Ice Hammer|p2a: Conkeldurr
+expect |rng|100|72
+expect |rng|24|22
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Conkeldurr|42/209 par
+expect |-damage|p2a: Conkeldurr|20/100y par
+expect |rng|100|52
+expect |-unboost|p1a: Forretress|spe|1
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sparky|Machamp, L50, M|180/180
+expect |switch|p1a: Sparky|Machamp, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: X|Politoed, L50, F|162/178
+expect |switch|p2a: X|Politoed, L50, F|91/100
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sparky|Maushold, L50|149/149
+expect |switch|p2a: Sparky|Maushold, L50|100/100
+expect |move|p1a: Sparky|High Jump Kick|p2a: Sparky
+expect |rng|100|88
+expect |rng|24|4
+expect |rng|16|10
+expect |-supereffective|p2a: Sparky|1
+expect |split|p2
+expect |-damage|p2a: Sparky|0 fnt
+expect |-damage|p2a: Sparky|0 fnt
+expect |faint|p2a: Sparky
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Conkeldurr|Conkeldurr, L50, F|42/209 par
+expect |switch|p2a: Conkeldurr|Conkeldurr, L50, F|20/100y par
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Forretress|Forretress, L50, F|152/152
+expect |switch|p1a: Forretress|Forretress, L50, F|100/100
+expect |rng|8|0
+expect |cant|p2a: Conkeldurr|par
+expect |
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p1a: Forretress|Ice Hammer|p2a: Conkeldurr
+expect |rng|100|49
+expect |rng|24|15
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Conkeldurr|0 fnt
+expect |-damage|p2a: Conkeldurr|0 fnt
+expect |rng|100|80
+expect |-unboost|p1a: Forretress|spe|1
+expect |faint|p2a: Conkeldurr
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Politoed, L50, F|162/178
+expect |switch|p2a: X|Politoed, L50, F|91/100
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p2a: X|Pollen Puff|p1a: Forretress
+expect |rng|100|59
+expect |rng|24|0
+expect |rng|16|12
+expect |-resisted|p1a: Forretress|1
+expect |-crit|p1a: Forretress
+expect |split|p1
+expect |-damage|p1a: Forretress|112/152
+expect |-damage|p1a: Forretress|73/100
+expect |move|p1a: Forretress|Ice Hammer|p2a: X
+expect |rng|100|55
+expect |rng|24|1
+expect |rng|16|3
+expect |-resisted|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|132/178
+expect |-damage|p2a: X|74/100
+expect |rng|100|69
+expect |-unboost|p1a: Forretress|spe|1
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p2a: X|Pollen Puff|p1a: Forretress
+expect |rng|100|7
+expect |rng|24|8
+expect |rng|16|12
+expect |-resisted|p1a: Forretress|1
+expect |split|p1
+expect |-damage|p1a: Forretress|85/152
+expect |-damage|p1a: Forretress|55/100
+expect |move|p1a: Forretress|Ice Hammer|p2a: X
+expect |rng|100|86
+expect |rng|24|22
+expect |rng|16|4
+expect |-resisted|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|103/178
+expect |-damage|p2a: X|57/100
+expect |rng|100|95
+expect |-unboost|p1a: Forretress|spe|1
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p2a: X|Pollen Puff|p1a: Forretress
+expect |rng|100|81
+expect |rng|24|17
+expect |rng|16|15
+expect |-resisted|p1a: Forretress|1
+expect |split|p1
+expect |-damage|p1a: Forretress|59/152
+expect |-damage|p1a: Forretress|38/100
+expect |move|p1a: Forretress|Ice Hammer|p2a: X
+expect |rng|100|63
+expect |rng|24|9
+expect |rng|16|12
+expect |-resisted|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|76/178
+expect |-damage|p2a: X|42/100
+expect |rng|100|66
+expect |-unboost|p1a: Forretress|spe|1
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sparky|Machamp, L50, M|180/180
+expect |switch|p1a: Sparky|Machamp, L50, M|100/100
+expect |move|p2a: X|Magic Room|p2a: X
+expect |-fieldstart|move: Magic Room|[of] p2a: X
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p1a: Sparky|High Jump Kick|p2a: X
+expect |rng|100|88
+expect |rng|24|16
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: X|0 fnt
+expect |-damage|p2a: X|0 fnt
+expect |faint|p2a: X
+expect |
+expect |win|p1

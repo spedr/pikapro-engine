@@ -1,0 +1,492 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed e9dc eb12 d462 8078
+genders drawn
+team p1
+Zoë (Alakazam) (M) @ Alakazite
+Ability: Magic Guard
+Level: 50
+Tera Type: Ice
+EVs: 3 HP / 16 Atk / 12 Def / 5 SpA / 27 SpD / 2 Spe
+Modest Nature
+- Fly
+
+Meganium @ Meganiumite
+Ability: Overgrow
+Level: 50
+Tera Type: Normal
+EVs: 22 Atk / 6 Def / 14 SpA / 2 SpD / 18 Spe
+Naughty Nature
+- Growth
+- Solar Beam
+- Synthesis
+- Weather Ball
+
+Vivillon-Ocean @ Passho Berry
+Ability: Compound Eyes
+Level: 50
+Tera Type: Dark
+EVs: 8 HP / 9 Def / 31 SpA / 17 Spe
+Naive Nature
+- Sludge Bomb
+
+Bellibolt
+Ability: Electromorphosis
+Level: 50
+Tera Type: Fire
+EVs: 20 HP / 18 Atk / 8 Def / 19 SpA / 1 SpD
+Mild Nature
+- Rain Dance
+- Snowscape
+- Sandstorm
+- Sunny Day
+
+Vanilluxe (F) @ Kasib Berry
+Ability: Snow Warning
+Level: 50
+Tera Type: Steel
+EVs: 7 HP / 20 Atk / 30 Def / 8 SpA / 1 Spe
+Hasty Nature
+- Phantom Force
+- Toxic
+
+Meowstic (M) @ Meowsticite
+Ability: Keen Eye
+Level: 50
+Tera Type: Normal
+EVs: 1 HP / 3 Atk / 9 Def / 19 SpA / 32 SpD
+Bold Nature
+- Kowtow Cleave
+- Growth
+- Magic Powder
+end
+team p2
+Pikachu (F) @ Dragon Fang
+Ability: Lightning Rod
+Level: 50
+Tera Type: Rock
+EVs: 5 HP / 8 Atk / 1 Def / 9 SpA / 11 SpD / 32 Spe
+Hasty Nature
+- Expanding Force
+- Thunderbolt
+
+Alcremie-Ruby-Swirl @ Zoom Lens
+Ability: Aroma Veil
+Level: 50
+Tera Type: Steel
+EVs: 27 HP / 1 SpA / 27 SpD / 5 Spe
+Hardy Nature
+- Dragon Tail
+
+X (Grapploct) @ Sitrus Berry
+Ability: Limber
+Level: 50
+Tera Type: Rock
+EVs: 18 HP / 1 Atk / 16 Def / 15 SpD / 13 Spe
+Docile Nature
+- Rain Dance
+- Snowscape
+- Sandstorm
+- Sunny Day
+
+Pikachu (Meganium) @ Meganiumite
+Ability: Overgrow
+Level: 50
+Tera Type: Grass
+EVs: 25 HP / 13 Atk / 2 Def / 25 SpA / 1 Spe
+Jolly Nature
+- Growth
+- Solar Beam
+- Synthesis
+- Weather Ball
+
+Cofagrigus @ Scope Lens
+Ability: Mummy
+Level: 50
+Tera Type: Fire
+EVs: 9 HP / 11 Atk / 2 Def / 3 SpA / 8 SpD / 19 Spe
+Brave Nature
+- Body Slam
+
+Annihilape (F) @ Lum Berry
+Ability: Inner Focus
+Level: 50
+Tera Type: Ghost
+EVs: 1 HP / 32 Def / 11 SpA / 6 SpD / 12 Spe
+Mild Nature
+- Surf
+- Triple Axel
+end
+choice p1 team 1532
+choice p2 team 6423
+choice p1 switch meganium ,  move toxic 1
+choice p2 move 2 2, move 4 1
+choice p1 move 4 -2, move 2 2
+choice p2 switch 4, move 2 1 mega
+choice p1 default
+choice p2 switch 4, move 4 2
+choice p1 skip,switch 4
+choice p2 switch 3, move 2 -1
+choice p1 move 4 2 mega, move 1 1
+choice p2 pass ,  switch Annihilape
+choice p1 move 4 -2, move 1
+choice p2 switch 4, move 2 -1
+choice p1 pass, switch 3
+choice p2 move 3, move 2 2
+choice p1 move growth,move 1 +1
+choice p2 move 2 ,  move Triple Axel -1
+choice p1 move 3, pass
+choice p2 switch 4, move 2 1
+choice p1 move 4 1, pass
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Alakazam, L50, M|
+expect |poke|p1|Meganium, L50, F|
+expect |poke|p1|Vivillon-Ocean, L50, F|
+expect |poke|p1|Bellibolt, L50, M|
+expect |poke|p1|Vanilluxe, L50, F|
+expect |poke|p1|Meowstic, L50, M|
+expect |poke|p2|Pikachu, L50, F|
+expect |poke|p2|Alcremie-Ruby-Swirl, L50, F|
+expect |poke|p2|Grapploct, L50, F|
+expect |poke|p2|Meganium, L50, F|
+expect |poke|p2|Cofagrigus, L50, M|
+expect |poke|p2|Annihilape, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Zoë|Alakazam, L50, M|133/133
+expect |switch|p1a: Zoë|Alakazam, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Vanilluxe|Vanilluxe, L50, F|153/153
+expect |switch|p1b: Vanilluxe|Vanilluxe, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Annihilape|Annihilape, L50, F|186/186
+expect |switch|p2a: Annihilape|Annihilape, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Pikachu|Meganium, L50, F|180/180
+expect |switch|p2b: Pikachu|Meganium, L50, F|100/100
+expect |-weather|Snowscape|[from] ability: Snow Warning|[of] p1b: Vanilluxe
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Meganium|Meganium, L50, F|155/155
+expect |switch|p1a: Meganium|Meganium, L50, F|100/100
+expect |move|p2a: Annihilape|Triple Axel|p1b: Vanilluxe
+expect |rng|100|34
+expect |rng|24|10
+expect |rng|16|14
+expect |-resisted|p1b: Vanilluxe|1
+expect |split|p1
+expect |-damage|p1b: Vanilluxe|150/153
+expect |-damage|p1b: Vanilluxe|98/100
+expect |rng|100|71
+expect |rng|24|19
+expect |rng|16|13
+expect |-resisted|p1b: Vanilluxe|1
+expect |split|p1
+expect |-damage|p1b: Vanilluxe|144/153
+expect |-damage|p1b: Vanilluxe|94/100
+expect |rng|100|46
+expect |rng|24|9
+expect |rng|16|2
+expect |-resisted|p1b: Vanilluxe|1
+expect |split|p1
+expect |-damage|p1b: Vanilluxe|134/153
+expect |-damage|p1b: Vanilluxe|87/100
+expect |-hitcount|p1b: Vanilluxe|3
+expect |move|p2b: Pikachu|Weather Ball|p1a: Meganium
+expect |rng|100|59
+expect |rng|24|4
+expect |rng|16|14
+expect |-supereffective|p1a: Meganium|1
+expect |split|p1
+expect |-damage|p1a: Meganium|73/155
+expect |-damage|p1a: Meganium|47/100
+expect |move|p1b: Vanilluxe|Toxic|p2a: Annihilape|[miss]
+expect |rng|100|97
+expect |-miss|p1b: Vanilluxe|p2a: Annihilape
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Grapploct, L50, F|173/173
+expect |switch|p2a: X|Grapploct, L50, F|100/100
+expect |detailschange|p2b: Pikachu|Meganium-Mega, L50, F
+expect |-mega|p2b: Pikachu|Meganium|Meganiumite
+expect |move|p1a: Meganium|Weather Ball|p1b: Vanilluxe
+expect |rng|100|79
+expect |rng|24|16
+expect |rng|16|10
+expect |-resisted|p1b: Vanilluxe|1
+expect |split|p1
+expect |-damage|p1b: Vanilluxe|114/153
+expect |-damage|p1b: Vanilluxe|74/100
+expect |move|p2b: Pikachu|Solar Beam||[still]
+expect |-prepare|p2b: Pikachu|Solar Beam
+expect |-activate|p2b: Pikachu|ability: Mega Sol
+expect |-anim|p2b: Pikachu|Solar Beam|p1a: Meganium
+expect |rng|100|66
+expect |rng|24|11
+expect |rng|16|6
+expect |-resisted|p1a: Meganium|1
+expect |split|p1
+expect |-damage|p1a: Meganium|15/155
+expect |-damage|p1a: Meganium|9/100
+expect |move|p1b: Vanilluxe|Toxic|p2b: Pikachu
+expect |rng|100|57
+expect |-status|p2b: Pikachu|tox
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |split|p2
+expect |-damage|p2b: Pikachu|169/180 tox|[from] psn
+expect |-damage|p2b: Pikachu|93/100 tox|[from] psn
+expect |upkeep
+expect |turn|3
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Annihilape|Annihilape, L50, F|186/186
+expect |switch|p2a: Annihilape|Annihilape, L50, F|100/100
+expect |move|p1a: Meganium|Growth|p1a: Meganium
+expect |-boost|p1a: Meganium|atk|1
+expect |-boost|p1a: Meganium|spa|1
+expect |move|p2b: Pikachu|Weather Ball|p1b: Vanilluxe
+expect |rng|100|81
+expect |rng|24|2
+expect |rng|16|3
+expect |-supereffective|p1b: Vanilluxe|1
+expect |split|p1
+expect |-damage|p1b: Vanilluxe|0 fnt
+expect |-damage|p1b: Vanilluxe|0 fnt
+expect |faint|p1b: Vanilluxe
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |split|p2
+expect |-damage|p2b: Pikachu|147/180 tox|[from] psn
+expect |-damage|p2b: Pikachu|81/100 tox|[from] psn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Zoë|Alakazam, L50, M|133/133
+expect |switch|p1b: Zoë|Alakazam, L50, M|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|167/167
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|100/100
+expect |detailschange|p1a: Meganium|Meganium-Mega, L50, F
+expect |-mega|p1a: Meganium|Meganium|Meganiumite
+expect |move|p1b: Zoë|Fly||[still]
+expect |-prepare|p1b: Zoë|Fly
+expect |move|p1a: Meganium|Weather Ball|p2b: Pikachu
+expect |rng|100|14
+expect |rng|24|1
+expect |rng|16|6
+expect |-supereffective|p2b: Pikachu|1
+expect |split|p2
+expect |-damage|p2b: Pikachu|0 fnt
+expect |-damage|p2b: Pikachu|0 fnt
+expect |faint|p2b: Pikachu
+expect |
+expect |rng|2|0
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Annihilape|Annihilape, L50, F|186/186
+expect |switch|p2b: Annihilape|Annihilape, L50, F|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Grapploct, L50, F|173/173
+expect |switch|p2a: X|Grapploct, L50, F|100/100
+expect |move|p1b: Zoë|Fly|p2a: X|[from] lockedmove
+expect |rng|100|41
+expect |rng|24|4
+expect |rng|16|10
+expect |-supereffective|p2a: X|1
+expect |split|p2
+expect |-damage|p2a: X|127/173
+expect |-damage|p2a: X|73/100
+expect |move|p2b: Annihilape|Triple Axel|p2a: X|[miss]
+expect |rng|100|92
+expect |-miss|p2b: Annihilape|p2a: X
+expect |move|p1a: Meganium|Weather Ball|p1b: Zoë
+expect |rng|100|43
+expect |rng|24|0
+expect |rng|16|15
+expect |-crit|p1b: Zoë
+expect |split|p1
+expect |-damage|p1b: Zoë|0 fnt
+expect |-damage|p1b: Zoë|0 fnt
+expect |faint|p1b: Zoë
+expect |
+expect |-weather|none
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Vivillon|Vivillon-Ocean, L50, F|163/163
+expect |switch|p1b: Vivillon|Vivillon-Ocean, L50, F|100/100
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p1b: Vivillon|Sludge Bomb|p2a: X
+expect |rng|100|35
+expect |rng|24|13
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: X|79/173
+expect |-damage|p2a: X|45/100
+expect |rng|100|43
+expect |-enditem|p2a: X|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2a: X|122/173|[from] item: Sitrus Berry
+expect |-heal|p2a: X|70/100|[from] item: Sitrus Berry
+expect |move|p2b: Annihilape|Triple Axel|p1b: Vivillon
+expect |rng|100|9
+expect |rng|24|0
+expect |rng|16|1
+expect |-supereffective|p1b: Vivillon|1
+expect |-crit|p1b: Vivillon
+expect |split|p1
+expect |-damage|p1b: Vivillon|115/163
+expect |-damage|p1b: Vivillon|70/100
+expect |rng|100|51
+expect |rng|24|7
+expect |rng|16|2
+expect |-supereffective|p1b: Vivillon|1
+expect |split|p1
+expect |-damage|p1b: Vivillon|53/163
+expect |-damage|p1b: Vivillon|32/100
+expect |rng|100|87
+expect |rng|24|22
+expect |rng|16|10
+expect |-supereffective|p1b: Vivillon|1
+expect |split|p1
+expect |-damage|p1b: Vivillon|0 fnt
+expect |-damage|p1b: Vivillon|0 fnt
+expect |faint|p1b: Vivillon
+expect |-hitcount|p1: Vivillon|3
+expect |move|p1a: Meganium|Growth|p1a: Meganium
+expect |-boost|p1a: Meganium|atk|2
+expect |-boost|p1a: Meganium|spa|2
+expect |move|p2a: X|Sandstorm|p2a: X
+expect |-weather|Sandstorm
+expect |
+expect |-weather|Sandstorm|[upkeep]
+expect |split|p2
+expect |-damage|p2b: Annihilape|175/186|[from] Sandstorm
+expect |-damage|p2b: Annihilape|94/100|[from] Sandstorm
+expect |split|p1
+expect |-damage|p1a: Meganium|6/155|[from] Sandstorm
+expect |-damage|p1a: Meganium|3/100|[from] Sandstorm
+expect |split|p2
+expect |-damage|p2a: X|112/173|[from] Sandstorm
+expect |-damage|p2a: X|64/100|[from] Sandstorm
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2b: Annihilape|Triple Axel|p2a: X
+expect |rng|100|2
+expect |rng|24|3
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: X|103/173
+expect |-damage|p2a: X|59/100
+expect |rng|100|48
+expect |rng|24|6
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: X|84/173
+expect |-damage|p2a: X|48/100
+expect |rng|100|67
+expect |rng|24|5
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: X|59/173
+expect |-damage|p2a: X|34/100
+expect |-hitcount|p2a: X|3
+expect |move|p1a: Meganium|Synthesis|p1a: Meganium
+expect |-activate|p1a: Meganium|ability: Mega Sol
+expect |split|p1
+expect |-heal|p1a: Meganium|109/155
+expect |-heal|p1a: Meganium|70/100
+expect |move|p2a: X|Snowscape|p2a: X
+expect |-weather|Snowscape
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|167/167
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|100/100
+expect |move|p2b: Annihilape|Triple Axel|p1a: Meganium
+expect |rng|100|0
+expect |rng|24|0
+expect |rng|16|2
+expect |-supereffective|p1a: Meganium|1
+expect |-crit|p1a: Meganium
+expect |split|p1
+expect |-damage|p1a: Meganium|81/155
+expect |-damage|p1a: Meganium|52/100
+expect |rng|100|43
+expect |rng|24|16
+expect |rng|16|4
+expect |-supereffective|p1a: Meganium|1
+expect |split|p1
+expect |-damage|p1a: Meganium|47/155
+expect |-damage|p1a: Meganium|30/100
+expect |rng|100|8
+expect |rng|24|3
+expect |rng|16|2
+expect |-supereffective|p1a: Meganium|1
+expect |split|p1
+expect |-damage|p1a: Meganium|0 fnt
+expect |-damage|p1a: Meganium|0 fnt
+expect |faint|p1a: Meganium
+expect |-hitcount|p1: Meganium|3
+expect |
+expect |win|p2

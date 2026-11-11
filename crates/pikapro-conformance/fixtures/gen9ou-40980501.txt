@@ -1,0 +1,392 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9ou
+seed 2dc6 55c3 a005 117f
+genders drawn
+team p1
+Surskit (M)
+Ability: Swift Swim
+Tera Type: Ghost
+EVs: 106 HP / 32 Atk / 25 Def / 168 SpA / 10 SpD / 116 Spe
+Lonely Nature
+- Earthquake
+end
+team p2
+Aipom
+Ability: Pickup
+Tera Type: Fairy
+EVs: 210 HP / 64 Atk / 132 Def / 104 Spe
+Jolly Nature
+- Crush Grip
+- Milk Drink
+
+Teddiursa @ Tamato Berry
+Ability: Quick Feet
+Tera Type: Stellar
+EVs: 51 HP / 117 Atk / 140 Def / 75 SpA / 2 SpD / 122 Spe
+Calm Nature
+- Final Gambit
+
+Tinkaton (F) @ Repeat Ball
+Ability: Mold Breaker
+Tera Type: Ghost
+EVs: 215 HP / 1 Atk / 32 Def / 195 SpA / 19 SpD / 45 Spe
+Calm Nature
+- First Impression
+- Spite
+- Rock Blast
+
+Probopass (M)
+Ability: Magnet Pull
+Tera Type: Water
+EVs: 186 HP / 2 Atk / 12 Def / 195 SpA / 10 SpD / 96 Spe
+Sassy Nature
+- Fell Stinger
+- Uproar
+- Phantom Force
+- Shadow Force
+
+Chikorita @ Power Weight
+Ability: Leaf Guard
+Tera Type: Electric
+EVs: 2 HP / 208 Atk / 135 Def / 27 SpA / 90 SpD / 36 Spe
+Careful Nature
+- Volt Tackle
+
+Zoë (Dondozo)
+Ability: Water Veil
+Tera Type: Fighting
+EVs: 48 Atk / 138 Def / 248 SpA / 18 SpD / 56 Spe
+Adamant Nature
+- Icicle Crash
+- Ice Fang
+- Shed Tail
+end
+choice p1 team 1
+choice p2 team 316542
+choice p1 move 1 terastallize
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1 terastallize
+choice p1 move 1
+choice p2 switch 3
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 switch 2
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 default
+choice p1 move 1
+choice p2 move milkdrink
+choice p1 move earthquake
+choice p2 switch 3
+choice p1 move 1
+choice p2 switch 6
+choice p1 default
+choice p2 switch Zoë
+choice p1 move 1
+choice p2 switch Probopass
+choice p1 move 1
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] OU
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Endless Battle Clause: Forcing endless battles is banned
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|OHKO Clause: OHKO moves are banned
+expect |rule|Evasion Items Clause: Evasion items are banned
+expect |rule|Evasion Moves Clause: Evasion moves are banned
+expect |rule|Evasion Abilities Clause: Evasion abilities are banned
+expect |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+expect |clearpoke
+expect |poke|p1|Surskit, M|
+expect |poke|p2|Aipom, M|
+expect |poke|p2|Teddiursa, F|
+expect |poke|p2|Tinkaton, F|
+expect |poke|p2|Probopass, M|
+expect |poke|p2|Chikorita, F|
+expect |poke|p2|Dondozo, F|
+expect |teampreview
+expect |
+expect |t:|
+expect |teamsize|p1|1
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Surskit|Surskit, M|247/247
+expect |switch|p1a: Surskit|Surskit, M|100/100
+expect |split|p2
+expect |switch|p2a: Tinkaton|Tinkaton, F|364/364
+expect |switch|p2a: Tinkaton|Tinkaton, F|100/100
+expect |-ability|p2a: Tinkaton|Mold Breaker
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p1a: Surskit|Ghost
+expect |move|p2a: Tinkaton|First Impression|p1a: Surskit
+expect |rng|100|26
+expect |rng|24|14
+expect |rng|16|14
+expect |-resisted|p1a: Surskit
+expect |split|p1
+expect |-damage|p1a: Surskit|190/247
+expect |-damage|p1a: Surskit|77/100
+expect |move|p1a: Surskit|Earthquake|p2a: Tinkaton
+expect |rng|100|97
+expect |rng|24|21
+expect |rng|16|8
+expect |-supereffective|p2a: Tinkaton
+expect |split|p2
+expect |-damage|p2a: Tinkaton|272/364
+expect |-damage|p2a: Tinkaton|75/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |-terastallize|p2a: Tinkaton|Ghost
+expect |move|p2a: Tinkaton|First Impression||[still]
+expect |-hint|First Impression only works on your first turn out.
+expect |-fail|p2a: Tinkaton
+expect |move|p1a: Surskit|Earthquake|p2a: Tinkaton
+expect |rng|100|85
+expect |rng|24|7
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Tinkaton|228/364
+expect |-damage|p2a: Tinkaton|63/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoë|Dondozo, F|441/441
+expect |switch|p2a: Zoë|Dondozo, F|100/100
+expect |move|p1a: Surskit|Earthquake|p2a: Zoë
+expect |rng|100|18
+expect |rng|24|18
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Zoë|412/441
+expect |-damage|p2a: Zoë|94/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1a: Surskit|Earthquake|p2a: Zoë
+expect |rng|100|62
+expect |rng|24|6
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Zoë|383/441
+expect |-damage|p2a: Zoë|87/100
+expect |move|p2a: Zoë|Icicle Crash|p1a: Surskit
+expect |rng|100|55
+expect |rng|24|8
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Surskit|3/247
+expect |-damage|p1a: Surskit|2/100
+expect |rng|100|14
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Aipom|Aipom, M|303/303
+expect |switch|p2a: Aipom|Aipom, M|100/100
+expect |move|p1a: Surskit|Earthquake|p2a: Aipom
+expect |rng|100|7
+expect |rng|24|1
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Aipom|256/303
+expect |-damage|p2a: Aipom|85/100
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Aipom|Crush Grip|p1a: Surskit
+expect |-immune|p1a: Surskit
+expect |move|p1a: Surskit|Earthquake|p2a: Aipom
+expect |rng|100|28
+expect |rng|24|6
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Aipom|208/303
+expect |-damage|p2a: Aipom|69/100
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Aipom|Crush Grip|p1a: Surskit
+expect |-immune|p1a: Surskit
+expect |move|p1a: Surskit|Earthquake|p2a: Aipom
+expect |rng|100|23
+expect |rng|24|5
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Aipom|160/303
+expect |-damage|p2a: Aipom|53/100
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2a: Aipom|Crush Grip|p1a: Surskit
+expect |-immune|p1a: Surskit
+expect |move|p1a: Surskit|Earthquake|p2a: Aipom
+expect |rng|100|15
+expect |rng|24|18
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Aipom|109/303
+expect |-damage|p2a: Aipom|36/100
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p2a: Aipom|Milk Drink|p2a: Aipom
+expect |split|p2
+expect |-heal|p2a: Aipom|261/303
+expect |-heal|p2a: Aipom|87/100
+expect |move|p1a: Surskit|Earthquake|p2a: Aipom
+expect |rng|100|89
+expect |rng|24|23
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Aipom|213/303
+expect |-damage|p2a: Aipom|71/100
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Tinkaton|Tinkaton, F, tera:Ghost|228/364
+expect |switch|p2a: Tinkaton|Tinkaton, F, tera:Ghost|63/100
+expect |-ability|p2a: Tinkaton|Mold Breaker
+expect |move|p1a: Surskit|Earthquake|p2a: Tinkaton
+expect |rng|100|78
+expect |rng|24|5
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Tinkaton|183/364
+expect |-damage|p2a: Tinkaton|51/100
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Teddiursa|Teddiursa, F|273/273
+expect |switch|p2a: Teddiursa|Teddiursa, F|100/100
+expect |move|p1a: Surskit|Earthquake|p2a: Teddiursa
+expect |rng|100|42
+expect |rng|24|15
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Teddiursa|218/273
+expect |-damage|p2a: Teddiursa|80/100
+expect |
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoë|Dondozo, F|383/441
+expect |switch|p2a: Zoë|Dondozo, F|87/100
+expect |move|p1a: Surskit|Earthquake|p2a: Zoë
+expect |rng|100|70
+expect |rng|24|4
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Zoë|355/441
+expect |-damage|p2a: Zoë|81/100
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Probopass|Probopass, M|307/307
+expect |switch|p2a: Probopass|Probopass, M|100/100
+expect |move|p1a: Surskit|Earthquake|p2a: Probopass
+expect |rng|100|9
+expect |rng|24|17
+expect |rng|16|9
+expect |-supereffective|p2a: Probopass
+expect |split|p2
+expect |-damage|p2a: Probopass|195/307
+expect |-damage|p2a: Probopass|64/100
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p1a: Surskit|Earthquake|p2a: Probopass
+expect |rng|100|51
+expect |rng|24|13
+expect |rng|16|6
+expect |-supereffective|p2a: Probopass
+expect |split|p2
+expect |-damage|p2a: Probopass|79/307
+expect |-damage|p2a: Probopass|26/100
+expect |move|p2a: Probopass|Fell Stinger|p1a: Surskit
+expect |rng|100|80
+expect |rng|24|17
+expect |rng|16|5
+expect |-resisted|p1a: Surskit
+expect |split|p1
+expect |-damage|p1a: Surskit|0 fnt
+expect |-damage|p1a: Surskit|0 fnt
+expect |faint|p1a: Surskit
+expect |
+expect |win|p2
+request p1 {"teamPreview":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"247/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"teamPreview":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Aipom","details":"Aipom, M","condition":"303/303","active":true,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"273/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"364/364","active":false,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Zoë","details":"Dondozo, F","condition":"441/441","active":false,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false}],"canTerastallize":"Ghost"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"247/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"First Impression","id":"firstimpression","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Spite","id":"spite","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Rock Blast","id":"rockblast","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Ghost"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"364/364","active":true,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Aipom","details":"Aipom, M","condition":"303/303","active":false,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Zoë","details":"Dondozo, F","condition":"441/441","active":false,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"273/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":15,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"190/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"First Impression","id":"firstimpression","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Spite","id":"spite","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Rock Blast","id":"rockblast","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Ghost"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"272/364","active":true,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Aipom","details":"Aipom, M","condition":"303/303","active":false,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Zoë","details":"Dondozo, F","condition":"441/441","active":false,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"273/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":14,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"190/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"First Impression","id":"firstimpression","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Spite","id":"spite","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Rock Blast","id":"rockblast","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"228/364","active":true,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Aipom","details":"Aipom, M","condition":"303/303","active":false,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Zoë","details":"Dondozo, F","condition":"441/441","active":false,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"273/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":13,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"190/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Icicle Crash","id":"iciclecrash","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Ice Fang","id":"icefang","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Shed Tail","id":"shedtail","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zoë","details":"Dondozo, F","condition":"412/441","active":true,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Aipom","details":"Aipom, M","condition":"303/303","active":false,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"228/364","active":false,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"273/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":12,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"3/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Icicle Crash","id":"iciclecrash","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Ice Fang","id":"icefang","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Shed Tail","id":"shedtail","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zoë","details":"Dondozo, F","condition":"383/441","active":true,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Aipom","details":"Aipom, M","condition":"303/303","active":false,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"228/364","active":false,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"273/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":11,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"3/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Crush Grip","id":"crushgrip","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Milk Drink","id":"milkdrink","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Aipom","details":"Aipom, M","condition":"256/303","active":true,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Zoë","details":"Dondozo, F","condition":"383/441","active":false,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"228/364","active":false,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"273/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":10,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"3/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Crush Grip","id":"crushgrip","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Milk Drink","id":"milkdrink","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Aipom","details":"Aipom, M","condition":"208/303","active":true,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Zoë","details":"Dondozo, F","condition":"383/441","active":false,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"228/364","active":false,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"273/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":9,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"3/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Crush Grip","id":"crushgrip","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Milk Drink","id":"milkdrink","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Aipom","details":"Aipom, M","condition":"160/303","active":true,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Zoë","details":"Dondozo, F","condition":"383/441","active":false,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"228/364","active":false,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"273/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":8,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"3/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Crush Grip","id":"crushgrip","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Milk Drink","id":"milkdrink","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Aipom","details":"Aipom, M","condition":"109/303","active":true,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Zoë","details":"Dondozo, F","condition":"383/441","active":false,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"228/364","active":false,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"273/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":7,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"3/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Crush Grip","id":"crushgrip","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Milk Drink","id":"milkdrink","pp":7,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Aipom","details":"Aipom, M","condition":"213/303","active":true,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Zoë","details":"Dondozo, F","condition":"383/441","active":false,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"228/364","active":false,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"273/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":6,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"3/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"First Impression","id":"firstimpression","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Spite","id":"spite","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Rock Blast","id":"rockblast","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"183/364","active":true,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"},{"ident":"p2: Zoë","details":"Dondozo, F","condition":"383/441","active":false,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Aipom","details":"Aipom, M","condition":"213/303","active":false,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"273/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":5,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"3/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Final Gambit","id":"finalgambit","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"218/273","active":true,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Zoë","details":"Dondozo, F","condition":"383/441","active":false,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Aipom","details":"Aipom, M","condition":"213/303","active":false,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"183/364","active":false,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":4,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"3/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Icicle Crash","id":"iciclecrash","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Ice Fang","id":"icefang","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Shed Tail","id":"shedtail","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Zoë","details":"Dondozo, F","condition":"355/441","active":true,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"218/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Aipom","details":"Aipom, M","condition":"213/303","active":false,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Probopass","details":"Probopass, M","condition":"307/307","active":false,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"183/364","active":false,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":3,"maxpp":16,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Surskit","details":"Surskit, M","condition":"3/247","active":true,"stats":{"atk":114,"def":95,"spa":178,"spd":142,"spe":195},"moves":["earthquake"],"baseAbility":"swiftswim","item":"","pokeball":"pokeball","ability":"swiftswim","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}
+request p2 {"active":[{"moves":[{"move":"Fell Stinger","id":"fellstinger","pp":40,"maxpp":40,"target":"normal","disabled":false},{"move":"Uproar","id":"uproar","pp":16,"maxpp":16,"target":"randomNormal","disabled":false},{"move":"Phantom Force","id":"phantomforce","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shadow Force","id":"shadowforce","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Probopass","details":"Probopass, M","condition":"195/307","active":true,"stats":{"atk":146,"def":329,"spa":234,"spd":371,"spe":126},"moves":["fellstinger","uproar","phantomforce","shadowforce"],"baseAbility":"magnetpull","item":"","pokeball":"pokeball","ability":"magnetpull","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Teddiursa","details":"Teddiursa, F","condition":"218/273","active":false,"stats":{"atk":202,"def":171,"spa":154,"spd":149,"spe":146},"moves":["finalgambit"],"baseAbility":"quickfeet","item":"tamatoberry","pokeball":"pokeball","ability":"quickfeet","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p2: Aipom","details":"Aipom, M","condition":"213/303","active":false,"stats":{"atk":192,"def":179,"spa":104,"spd":146,"spe":255},"moves":["crushgrip","milkdrink"],"baseAbility":"pickup","item":"","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Chikorita","details":"Chikorita, F","condition":"231/231","active":false,"stats":{"atk":186,"def":199,"spa":126,"spd":206,"spe":135},"moves":["volttackle"],"baseAbility":"leafguard","item":"powerweight","pokeball":"pokeball","ability":"leafguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Zoë","details":"Dondozo, F","condition":"355/441","active":false,"stats":{"atk":272,"def":300,"spa":205,"spd":170,"spe":120},"moves":["iciclecrash","icefang","shedtail"],"baseAbility":"waterveil","item":"","pokeball":"pokeball","ability":"waterveil","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Tinkaton","details":"Tinkaton, F","condition":"183/364","active":false,"stats":{"atk":167,"def":198,"spa":224,"spd":275,"spe":235},"moves":["firstimpression","spite","rockblast"],"baseAbility":"moldbreaker","item":"repeatball","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":"Ghost"}]}}

@@ -1,0 +1,436 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed f20d 1211 ad9a fc7c
+genders drawn
+team p1
+Flareon (M)
+Ability: No Ability
+Level: 50
+Tera Type: Ice
+EVs: 1 HP / 28 Atk / 2 Def / 18 SpD / 13 Spe
+Docile Nature
+- Leaf Blade
+
+Feraligatr (M)
+Ability: No Ability
+Level: 50
+Tera Type: Electric
+EVs: 18 HP / 14 Def / 1 SpD / 3 Spe
+Mild Nature
+- Drill Peck
+
+Weavile (M)
+Ability: No Ability
+Level: 50
+Tera Type: Fighting
+EVs: 1 HP / 21 Atk / 19 Def / 15 SpA / 3 SpD / 6 Spe
+Bashful Nature
+- Shadow Claw
+- Dragon Pulse
+- Vacuum Wave
+
+Gallade (M)
+Ability: No Ability
+Level: 50
+Tera Type: Normal
+EVs: 4 HP / 12 Atk / 12 Def / 6 SpA / 11 SpD / 2 Spe
+Careful Nature
+- Kowtow Cleave
+- Drill Peck
+- Crabhammer
+
+Charizard (M)
+Ability: No Ability
+Level: 50
+Tera Type: Dragon
+EVs: 2 HP / 18 Atk / 8 Def / 8 SpA / 1 SpD / 29 Spe
+Gentle Nature
+- Aerial Ace
+
+Maushold-Four
+Ability: No Ability
+Level: 50
+Tera Type: Electric
+EVs: 11 HP / 15 Atk / 1 Def / 2 SpA / 25 SpD / 12 Spe
+Calm Nature
+- Night Slash
+end
+team p2
+Victreebel (M)
+Ability: No Ability
+Level: 50
+Tera Type: Steel
+EVs: 7 Atk / 2 Def / 30 SpA / 26 Spe
+Quirky Nature
+- Brutal Swing
+- Aerial Ace
+- Dragon Claw
+
+Ditto
+Ability: No Ability
+Level: 50
+Tera Type: Rock
+EVs: 12 HP / 6 Atk / 23 SpA / 3 SpD / 10 Spe
+Relaxed Nature
+- Kowtow Cleave
+
+Hippowdon (M)
+Ability: No Ability
+Level: 50
+Tera Type: Dragon
+EVs: 10 HP / 6 Atk / 9 Def / 5 SpA / 28 SpD / 3 Spe
+Modest Nature
+- High Horsepower
+- Shadow Sneak
+- Crabhammer
+- Drill Run
+
+Vivillon-Tundra (M)
+Ability: No Ability
+Level: 50
+Tera Type: Water
+EVs: 23 HP / 27 Def / 16 SpD
+Serious Nature
+- Jet Punch
+
+Altaria (M)
+Ability: No Ability
+Level: 50
+Tera Type: Normal
+EVs: 32 HP / 2 Atk / 19 SpA / 12 SpD
+Modest Nature
+- Jet Punch
+- Earthquake
+- Boomburst
+
+Gallade (M)
+Ability: No Ability
+Level: 50
+Tera Type: Steel
+EVs: 16 HP / 14 Atk / 1 Def / 7 SpD / 26 Spe
+Calm Nature
+- Dazzling Gleam
+- Pound
+end
+choice p1 team 6154
+choice p2 team 4126
+choice p1 switch 3, move 1 -1
+choice p2 switch 4, move 3 -1
+choice p1 move 1 2, move 1 1
+choice p2 move 2 1, move 2 -1
+choice p2 switch 3, pass
+choice p1 switch 4, move 1 -1
+choice p2 move 1 -2, move 1
+choice p1 switch 3, switch 4
+choice p2 move 1 -2, move 1
+choice p2 pass, switch 4
+choice p1 move 1 2, move 1 2
+choice p2 move 1 -2, move 1 -1
+choice p1 switch 4, move 1 2
+choice p2 move 1 1, move 1 2
+choice p1 switch 4, switch 3
+choice p2 move 1 1, pass
+choice p1 switch 3, move 3 1
+choice p2 move 1 1, pass
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Flareon, L50, M|
+expect |poke|p1|Feraligatr, L50, M|
+expect |poke|p1|Weavile, L50, M|
+expect |poke|p1|Gallade, L50, M|
+expect |poke|p1|Charizard, L50, M|
+expect |poke|p1|Maushold-Four, L50|
+expect |poke|p2|Victreebel, L50, M|
+expect |poke|p2|Ditto, L50|
+expect |poke|p2|Hippowdon, L50, M|
+expect |poke|p2|Vivillon-Tundra, L50, M|
+expect |poke|p2|Altaria, L50, M|
+expect |poke|p2|Gallade, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Maushold|Maushold-Four, L50|160/160
+expect |switch|p1a: Maushold|Maushold-Four, L50|100/100
+expect |split|p1
+expect |switch|p1b: Flareon|Flareon, L50, M|141/141
+expect |switch|p1b: Flareon|Flareon, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Vivillon|Vivillon-Tundra, L50, M|178/178
+expect |switch|p2a: Vivillon|Vivillon-Tundra, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Victreebel|Victreebel, L50, M|155/155
+expect |switch|p2b: Victreebel|Victreebel, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Charizard|Charizard, L50, M|155/155
+expect |switch|p1a: Charizard|Charizard, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Gallade|Gallade, L50, M|159/159
+expect |switch|p2a: Gallade|Gallade, L50, M|100/100
+expect |move|p2b: Victreebel|Dragon Claw|p2a: Gallade
+expect |rng|100|92
+expect |rng|24|17
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Gallade|105/159
+expect |-damage|p2a: Gallade|66/100
+expect |move|p1b: Flareon|Leaf Blade|p1a: Charizard
+expect |rng|100|22
+expect |rng|8|4
+expect |rng|16|13
+expect |-resisted|p1a: Charizard|2
+expect |split|p1
+expect |-damage|p1a: Charizard|139/155
+expect |-damage|p1a: Charizard|89/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Charizard|Aerial Ace|p2b: Victreebel
+expect |rng|24|8
+expect |rng|16|11
+expect |-supereffective|p2b: Victreebel|1
+expect |split|p2
+expect |-damage|p2b: Victreebel|53/155
+expect |-damage|p2b: Victreebel|34/100
+expect |move|p2a: Gallade|Pound|p1a: Charizard
+expect |rng|100|86
+expect |rng|24|20
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Charizard|112/155
+expect |-damage|p1a: Charizard|72/100
+expect |move|p2b: Victreebel|Aerial Ace|p2a: Gallade
+expect |rng|24|10
+expect |rng|16|8
+expect |-supereffective|p2a: Gallade|1
+expect |split|p2
+expect |-damage|p2a: Gallade|29/159
+expect |-damage|p2a: Gallade|18/100
+expect |move|p1b: Flareon|Leaf Blade|p2a: Gallade
+expect |rng|100|56
+expect |rng|8|5
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Gallade|0 fnt
+expect |-damage|p2a: Gallade|0 fnt
+expect |faint|p2a: Gallade
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Ditto|Ditto, L50|135/135
+expect |switch|p2a: Ditto|Ditto, L50|100/100
+expect |turn|3
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Gallade|Gallade, L50, M|147/147
+expect |switch|p1a: Gallade|Gallade, L50, M|100/100
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Victreebel|Brutal Swing|p1b: Flareon|[spread] p2a,p1a,p1b
+expect |rng|100|11
+expect |rng|100|43
+expect |rng|100|17
+expect |rng|24|2
+expect |rng|16|10
+expect |rng|24|19
+expect |rng|16|0
+expect |rng|24|10
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Ditto|102/135
+expect |-damage|p2a: Ditto|75/100
+expect |split|p1
+expect |-damage|p1a: Gallade|119/147
+expect |-damage|p1a: Gallade|80/100
+expect |split|p1
+expect |-damage|p1b: Flareon|109/141
+expect |-damage|p1b: Flareon|77/100
+expect |move|p1b: Flareon|Leaf Blade|p1a: Gallade
+expect |rng|100|92
+expect |rng|8|0
+expect |rng|16|5
+expect |-crit|p1a: Gallade
+expect |split|p1
+expect |-damage|p1a: Gallade|14/147
+expect |-damage|p1a: Gallade|9/100
+expect |move|p2a: Ditto|Kowtow Cleave|p2b: Victreebel
+expect |rng|24|23
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Victreebel|23/155
+expect |-damage|p2b: Victreebel|14/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Maushold|Maushold-Four, L50|160/160
+expect |switch|p1a: Maushold|Maushold-Four, L50|100/100
+expect |split|p1
+expect |switch|p1b: Charizard|Charizard, L50, M|112/155
+expect |switch|p1b: Charizard|Charizard, L50, M|72/100
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Victreebel|Brutal Swing|p1a: Maushold|[spread] p2a,p1a,p1b
+expect |rng|100|7
+expect |rng|100|25
+expect |rng|100|39
+expect |rng|24|10
+expect |rng|16|1
+expect |rng|24|15
+expect |rng|16|9
+expect |rng|24|18
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Ditto|66/135
+expect |-damage|p2a: Ditto|48/100
+expect |split|p1
+expect |-damage|p1a: Maushold|133/160
+expect |-damage|p1a: Maushold|83/100
+expect |split|p1
+expect |-damage|p1b: Charizard|86/155
+expect |-damage|p1b: Charizard|55/100
+expect |move|p2a: Ditto|Kowtow Cleave|p2b: Victreebel
+expect |rng|24|5
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Victreebel|0 fnt
+expect |-damage|p2b: Victreebel|0 fnt
+expect |faint|p2b: Victreebel
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Vivillon|Vivillon-Tundra, L50, M|178/178
+expect |switch|p2b: Vivillon|Vivillon-Tundra, L50, M|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2b: Vivillon|Jet Punch|p2a: Ditto
+expect |rng|100|14
+expect |rng|24|7
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Ditto|43/135
+expect |-damage|p2a: Ditto|31/100
+expect |move|p1b: Charizard|Aerial Ace|p2b: Vivillon
+expect |rng|24|8
+expect |rng|16|15
+expect |-supereffective|p2b: Vivillon|1
+expect |split|p2
+expect |-damage|p2b: Vivillon|92/178
+expect |-damage|p2b: Vivillon|51/100
+expect |move|p1a: Maushold|Night Slash|p2b: Vivillon
+expect |rng|100|19
+expect |rng|8|5
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Vivillon|62/178
+expect |-damage|p2b: Vivillon|34/100
+expect |move|p2a: Ditto|Kowtow Cleave|p2b: Vivillon
+expect |rng|24|5
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: Vivillon|36/178
+expect |-damage|p2b: Vivillon|20/100y
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Flareon|Flareon, L50, M|109/141
+expect |switch|p1a: Flareon|Flareon, L50, M|77/100
+expect |move|p2b: Vivillon|Jet Punch|p1b: Charizard
+expect |rng|100|3
+expect |rng|24|9
+expect |rng|16|9
+expect |-supereffective|p1b: Charizard|1
+expect |split|p1
+expect |-damage|p1b: Charizard|46/155
+expect |-damage|p1b: Charizard|29/100
+expect |move|p1b: Charizard|Aerial Ace|p2b: Vivillon
+expect |rng|24|11
+expect |rng|16|2
+expect |-supereffective|p2b: Vivillon|1
+expect |split|p2
+expect |-damage|p2b: Vivillon|0 fnt
+expect |-damage|p2b: Vivillon|0 fnt
+expect |faint|p2b: Vivillon
+expect |move|p2a: Ditto|Kowtow Cleave|p1a: Flareon
+expect |rng|24|15
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Flareon|76/141
+expect |-damage|p1a: Flareon|53/100
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Gallade|Gallade, L50, M|14/147
+expect |switch|p1b: Gallade|Gallade, L50, M|9/100
+expect |split|p1
+expect |switch|p1a: Maushold|Maushold-Four, L50|133/160
+expect |switch|p1a: Maushold|Maushold-Four, L50|83/100
+expect |move|p2a: Ditto|Kowtow Cleave|p1a: Maushold
+expect |rng|24|4
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Maushold|106/160
+expect |-damage|p1a: Maushold|66/100
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Charizard|Charizard, L50, M|46/155
+expect |switch|p1a: Charizard|Charizard, L50, M|29/100
+expect |move|p1b: Gallade|Crabhammer|p2a: Ditto
+expect |rng|100|87
+expect |rng|8|4
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Ditto|0 fnt
+expect |-damage|p2a: Ditto|0 fnt
+expect |faint|p2a: Ditto
+expect |
+expect |win|p1

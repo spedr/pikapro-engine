@@ -1,0 +1,314 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9ou
+seed e336 a907 4041 1849
+genders drawn
+team p1
+Trapinch (F) @ Micle Berry
+Ability: Sheer Force
+Tera Type: Rock
+EVs: 231 HP / 2 Def / 4 SpA / 84 SpD / 187 Spe
+Careful Nature
+- Skill Swap
+- Light Screen
+
+Shelgon @ Life Orb
+Ability: Overcoat
+Tera Type: Water
+EVs: 114 HP / 155 Atk / 25 Def / 32 SpA / 87 SpD / 64 Spe
+Hardy Nature
+- Psychic Noise
+- Play Rough
+- Guard Split
+
+Impidimp (M) @ Iron Ball
+Ability: Frisk
+Shiny: Yes
+Tera Type: Grass
+EVs: 46 Atk / 3 Def / 58 SpA / 161 SpD / 242 Spe
+Relaxed Nature
+- Spikes
+
+Lombre @ Eviolite
+Ability: Own Tempo
+Tera Type: Flying
+EVs: 225 HP / 92 Atk / 53 Def / 44 SpA / 8 SpD / 57 Spe
+Serious Nature
+- Bitter Blade
+
+Arceus-Dragon @ Cornerstone Mask
+Ability: Multitype
+Tera Type: Bug
+EVs: 76 HP / 1 Atk / 52 Def / 6 SpA / 218 SpD / 144 Spe
+Jolly Nature
+- Last Resort
+- Seed Bomb
+- Aerial Ace
+
+Volcarona (F)
+Ability: Flame Body
+Shiny: Yes
+Tera Type: Ghost
+EVs: 6 HP / 18 Atk / 13 Def / 125 SpA / 120 SpD / 228 Spe
+Hasty Nature
+- False Swipe
+end
+team p2
+Walking Wake @ Throat Spray
+Ability: Protosynthesis
+Shiny: Yes
+Tera Type: Ice
+EVs: 96 HP / 165 Atk / 151 Def / 6 SpA / 13 SpD / 53 Spe
+Gentle Nature
+- Stomping Tantrum
+- Instruct
+end
+choice p1 team 423615
+choice p2 team 1
+choice p1 switch 2
+choice p2 move 1 terastallize
+choice p1 move 1
+choice p2 move 1
+choice p1 default
+choice p2 move 2
+choice p1 switch 4
+choice p2 move stompingtantrum
+choice p1 move 1
+choice p2 move 1
+choice p1 move False Swipe terastallize
+choice p2 move stompingtantrum
+choice p1 move False Swipe
+choice p2 move 2
+choice p1 switch 4
+choice p2 move 2
+choice p1 default
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] OU
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Endless Battle Clause: Forcing endless battles is banned
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|OHKO Clause: OHKO moves are banned
+expect |rule|Evasion Items Clause: Evasion items are banned
+expect |rule|Evasion Moves Clause: Evasion moves are banned
+expect |rule|Evasion Abilities Clause: Evasion abilities are banned
+expect |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+expect |clearpoke
+expect |poke|p1|Trapinch, F|
+expect |poke|p1|Shelgon, M|
+expect |poke|p1|Impidimp, M|
+expect |poke|p1|Lombre, M|
+expect |poke|p1|Arceus-Dragon|
+expect |poke|p1|Volcarona, F|
+expect |poke|p2|Walking Wake|
+expect |teampreview
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Lombre|Lombre, M|317/317
+expect |switch|p1a: Lombre|Lombre, M|100/100
+expect |split|p2
+expect |switch|p2a: Walking Wake|Walking Wake, shiny|363/363
+expect |switch|p2a: Walking Wake|Walking Wake, shiny|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Shelgon|Shelgon, M|299/299
+expect |switch|p1a: Shelgon|Shelgon, M|100/100
+expect |-terastallize|p2a: Walking Wake|Ice
+expect |move|p2a: Walking Wake|Stomping Tantrum|p1a: Shelgon
+expect |rng|100|52
+expect |rng|24|6
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Shelgon|236/299
+expect |-damage|p1a: Shelgon|79/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Walking Wake|Stomping Tantrum|p1a: Shelgon
+expect |rng|100|61
+expect |rng|24|14
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Shelgon|175/299
+expect |-damage|p1a: Shelgon|59/100
+expect |move|p1a: Shelgon|Psychic Noise|p2a: Walking Wake
+expect |rng|100|17
+expect |rng|24|14
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Walking Wake|312/363
+expect |-damage|p2a: Walking Wake|86/100
+expect |rng|100|1
+expect |-start|p2a: Walking Wake|move: Heal Block
+expect |split|p1
+expect |-damage|p1a: Shelgon|146/299|[from] item: Life Orb
+expect |-damage|p1a: Shelgon|49/100|[from] item: Life Orb
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Walking Wake|Instruct|p1a: Shelgon
+expect |-singleturn|p1a: Shelgon|move: Instruct|[of] p2a: Walking Wake
+expect |move|p1a: Shelgon|Psychic Noise|p2a: Walking Wake
+expect |rng|100|13
+expect |rng|24|17
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Walking Wake|259/363
+expect |-damage|p2a: Walking Wake|72/100
+expect |rng|100|43
+expect |split|p1
+expect |-damage|p1a: Shelgon|117/299|[from] item: Life Orb
+expect |-damage|p1a: Shelgon|40/100|[from] item: Life Orb
+expect |move|p1a: Shelgon|Psychic Noise|p2a: Walking Wake
+expect |rng|100|26
+expect |rng|24|19
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Walking Wake|202/363
+expect |-damage|p2a: Walking Wake|56/100
+expect |rng|100|6
+expect |split|p1
+expect |-damage|p1a: Shelgon|88/299|[from] item: Life Orb
+expect |-damage|p1a: Shelgon|30/100|[from] item: Life Orb
+expect |
+expect |-end|p2a: Walking Wake|move: Heal Block
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Volcarona|Volcarona, F, shiny|312/312
+expect |switch|p1a: Volcarona|Volcarona, F, shiny|100/100
+expect |move|p2a: Walking Wake|Stomping Tantrum|p1a: Volcarona
+expect |rng|100|80
+expect |rng|24|6
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Volcarona|210/312
+expect |-damage|p1a: Volcarona|68/100
+expect |rng|10|3
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1a: Volcarona|False Swipe|p2a: Walking Wake
+expect |rng|100|51
+expect |rng|24|8
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Walking Wake|178/363
+expect |-damage|p2a: Walking Wake|50/100
+expect |move|p2a: Walking Wake|Stomping Tantrum|p1a: Volcarona
+expect |rng|100|88
+expect |rng|24|5
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Volcarona|111/312
+expect |-damage|p1a: Volcarona|36/100
+expect |rng|10|4
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |-terastallize|p1a: Volcarona|Ghost
+expect |move|p1a: Volcarona|False Swipe|p2a: Walking Wake
+expect |rng|100|63
+expect |rng|24|15
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Walking Wake|155/363
+expect |-damage|p2a: Walking Wake|43/100
+expect |move|p2a: Walking Wake|Stomping Tantrum|p1a: Volcarona
+expect |rng|100|28
+expect |rng|24|11
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Volcarona|17/312
+expect |-damage|p1a: Volcarona|6/100
+expect |rng|10|1
+expect |-status|p2a: Walking Wake|brn|[from] ability: Flame Body|[of] p1a: Volcarona
+expect |
+expect |split|p2
+expect |-damage|p2a: Walking Wake|133/363 brn|[from] brn
+expect |-damage|p2a: Walking Wake|37/100 brn|[from] brn
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1a: Volcarona|False Swipe|p2a: Walking Wake
+expect |rng|100|92
+expect |rng|24|10
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Walking Wake|108/363 brn
+expect |-damage|p2a: Walking Wake|30/100 brn
+expect |move|p2a: Walking Wake|Instruct|p1a: Volcarona
+expect |-singleturn|p1a: Volcarona|move: Instruct|[of] p2a: Walking Wake
+expect |move|p1a: Volcarona|False Swipe|p2a: Walking Wake
+expect |rng|100|45
+expect |rng|24|1
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Walking Wake|84/363 brn
+expect |-damage|p2a: Walking Wake|24/100 brn
+expect |
+expect |split|p2
+expect |-damage|p2a: Walking Wake|62/363 brn|[from] brn
+expect |-damage|p2a: Walking Wake|18/100 brn|[from] brn
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Shelgon|Shelgon, M|88/299
+expect |switch|p1a: Shelgon|Shelgon, M|30/100
+expect |move|p2a: Walking Wake|Instruct||[still]
+expect |-fail|p2a: Walking Wake
+expect |
+expect |split|p2
+expect |-damage|p2a: Walking Wake|40/363 brn|[from] brn
+expect |-damage|p2a: Walking Wake|12/100 brn|[from] brn
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p2a: Walking Wake|Stomping Tantrum|p1a: Shelgon
+expect |rng|100|52
+expect |rng|24|17
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Shelgon|29/299
+expect |-damage|p1a: Shelgon|10/100
+expect |move|p1a: Shelgon|Psychic Noise|p2a: Walking Wake
+expect |rng|100|71
+expect |rng|24|1
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Walking Wake|0 fnt
+expect |-damage|p2a: Walking Wake|0 fnt
+expect |rng|100|10
+expect |faint|p2a: Walking Wake
+expect |-end|p2a: Walking Wake|Protosynthesis|[silent]
+expect |split|p1
+expect |-damage|p1a: Shelgon|0 fnt|[from] item: Life Orb
+expect |-damage|p1a: Shelgon|0 fnt|[from] item: Life Orb
+expect |faint|p1a: Shelgon
+expect |
+expect |win|p1

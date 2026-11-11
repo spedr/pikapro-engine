@@ -1,0 +1,260 @@
+# gen9doubles-gen5-2118018-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@write
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,5c70525a9aa39e0e"}
+@write
+>player p1 {"name":"Alice","team":"Azumarill|||HugePower|ExpandingForce,SweetKiss,Psyblade,HornLeech|Hardy|89,201,196,2,11,||||50|,,,,,Ground]Sir Hops-a-Lot|Solosis|CloverSweet|MagicGuard|RageFist,Fissure,HighJumpKick,MuddyWater|Timid|206,99,,138,7,56||||50|,,,,,Electric]Big Tony's Pal|SlowkingGalar|BabiriBerry|CuriousMedicine|ElectroBall,Encore|Lonely|166,7,16,61,217,33||||50|,,,,,Grass]Hoopa-Unbound||AdrenalineOrb|Magician|CrossPoison,IcicleSpear,BitterMalice,DoubleTeam|Docile|67,50,54,167,106,8||||50|,,,,,Fairy]Venomoth||PokeBall|ShieldDust|Disable,Bulldoze|Brave|30,49,35,64,71,214||||50|,,,,,Fire]Arceus-Ghost||HardStone|Multitype|FlashCannon,Encore|Sassy|190,92,25,45,13,98||||50|,,,,,Fairy","rating":1500}
+@write
+>player p2 {"name":"Bob","team":"Avalugg||WhiteHerb|Sturdy|GlaiveRush|Brave|87,93,80,8,6,235|M|||50|,,,,,Bug]Registeel|||LightMetal|BoltStrike,Disable|Brave|,32,20,176,149,129||||50|,,,,,Electric]Sparky|Sylveon||CuteCharm|Imprison,Crabhammer,LunarDance|Relaxed|195,81,13,41,123,46|M|||50|,,,,,Fighting]Calyrex||PrismScale|Unnerve|FickleBeam,XScissor,Torment|Calm|1,30,,232,95,152||||50|,,,,,Ice]Grimmsnarl||TwistedSpoon|Pickpocket|WickedBlow,Payback,Disable,Gust|Relaxed|60,22,215,38,92,73|M|||50|,,,,,Rock]Talonflame|||GaleWings|Swift,ToxicSpikes,Imprison|Modest|27,88,81,10,80,221||||50|,,,,,Fire"}
+@write
+>p2 switch Grimmsnarl,move disable +2
+@write
+>p2 switch Grimmsnarl,move disable +2
+@write
+>p1 switch Hoopa ,  move highjumpkick terastallize +1
+@write
+>p2 move 4 1 terastallize, switch 6
+@write
+>forcewin p2
+@message
+update
+|t:|
+|gametype|doubles
+@message
+update
+|player|p1|Alice||1500
+@message
+update
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: Azumarill|Azumarill, L50, M|186/186
+|switch|p1a: Azumarill|Azumarill, L50, M|186/186
+|split|p1
+|switch|p1b: Sir Hops-a-Lot|Solosis, L50, M|146/146
+|switch|p1b: Sir Hops-a-Lot|Solosis, L50, M|146/146
+|split|p2
+|switch|p2a: Avalugg|Avalugg, L50, M|181/181
+|switch|p2a: Avalugg|Avalugg, L50, M|181/181
+|split|p2
+|switch|p2b: Registeel|Registeel, L50|155/155
+|switch|p2b: Registeel|Registeel, L50|155/155
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Expanding Force","id":"expandingforce","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sweet Kiss","id":"sweetkiss","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Psyblade","id":"psyblade","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Rage Fist","id":"ragefist","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Fissure","id":"fissure","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Muddy Water","id":"muddywater","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Azumarill","details":"Azumarill, L50, M","condition":"186/186","active":true,"stats":{"atk":95,"def":125,"spa":80,"spd":101,"spe":70},"moves":["expandingforce","sweetkiss","psyblade","hornleech"],"baseAbility":"hugepower","item":"","pokeball":"pokeball","ability":"hugepower","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Solosis, L50, M","condition":"146/146","active":true,"stats":{"atk":55,"def":60,"spa":142,"spd":71,"spe":51},"moves":["ragefist","fissure","highjumpkick","muddywater"],"baseAbility":"magicguard","item":"cloversweet","pokeball":"pokeball","ability":"magicguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Slowking-Galar, L50, M","condition":"191/191","active":false,"stats":{"atk":94,"def":91,"spa":138,"spd":157,"spe":54},"moves":["electroball","encore"],"baseAbility":"curiousmedicine","item":"babiriberry","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Hoopa","details":"Hoopa-Unbound, L50","condition":"163/163","active":false,"stats":{"atk":186,"def":87,"spa":211,"spd":163,"spe":101},"moves":["crosspoison","iciclespear","bittermalice","doubleteam"],"baseAbility":"magician","item":"adrenalineorb","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Venomoth","details":"Venomoth, L50, F","condition":"149/149","active":false,"stats":{"atk":100,"def":84,"spa":118,"spd":104,"spe":123},"moves":["disable","bulldoze"],"baseAbility":"shielddust","item":"pokeball","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Ghost, L50","condition":"219/219","active":false,"stats":{"atk":152,"def":143,"spa":146,"spd":156,"spe":136},"moves":["flashcannon","encore"],"baseAbility":"multitype","item":"hardstone","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Glaive Rush","id":"glaiverush","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Bug"},{"moves":[{"move":"Bolt Strike","id":"boltstrike","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Avalugg","details":"Avalugg, L50, M","condition":"181/181","active":true,"stats":{"atk":163,"def":214,"spa":65,"spd":67,"spe":69},"moves":["glaiverush"],"baseAbility":"sturdy","item":"whiteherb","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Registeel","details":"Registeel, L50","condition":"155/155","active":true,"stats":{"atk":108,"def":173,"spa":117,"spd":189,"spe":77},"moves":["boltstrike","disable"],"baseAbility":"lightmetal","item":"","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sparky","details":"Sylveon, L50, M","condition":"194/194","active":false,"stats":{"atk":95,"def":95,"spa":135,"spd":165,"spe":77},"moves":["imprison","crabhammer","lunardance"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Calyrex","details":"Calyrex, L50","condition":"175/175","active":false,"stats":{"atk":93,"def":100,"spa":129,"spd":123,"spe":119},"moves":["ficklebeam","xscissor","torment"],"baseAbility":"unnerve","item":"prismscale","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"178/178","active":false,"stats":{"atk":143,"def":123,"spa":120,"spd":107,"spe":80},"moves":["wickedblow","payback","disable","gust"],"baseAbility":"pickpocket","item":"twistedspoon","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"156/156","active":false,"stats":{"atk":100,"def":101,"spa":104,"spd":99,"spe":174},"moves":["swift","toxicspikes","imprison"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Hoopa|Hoopa-Unbound, L50|163/163
+|switch|p1a: Hoopa|Hoopa-Unbound, L50|163/163
+|split|p2
+|switch|p2a: Grimmsnarl|Grimmsnarl, L50, M|178/178
+|switch|p2a: Grimmsnarl|Grimmsnarl, L50, M|178/178
+|-terastallize|p1b: Sir Hops-a-Lot|Electric
+|move|p2b: Registeel|Disable||[still]
+|-fail|p2b: Registeel
+|move|p1b: Sir Hops-a-Lot|High Jump Kick|p2a: Grimmsnarl
+|split|p2
+|-damage|p2a: Grimmsnarl|156/178
+|-damage|p2a: Grimmsnarl|156/178
+|
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Cross Poison","id":"crosspoison","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Icicle Spear","id":"iciclespear","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Bitter Malice","id":"bittermalice","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Team","id":"doubleteam","pp":24,"maxpp":24,"target":"self","disabled":false}]},{"moves":[{"move":"Rage Fist","id":"ragefist","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Fissure","id":"fissure","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Muddy Water","id":"muddywater","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Hoopa","details":"Hoopa-Unbound, L50","condition":"163/163","active":true,"stats":{"atk":186,"def":87,"spa":211,"spd":163,"spe":101},"moves":["crosspoison","iciclespear","bittermalice","doubleteam"],"baseAbility":"magician","item":"adrenalineorb","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Solosis, L50, M","condition":"146/146","active":true,"stats":{"atk":55,"def":60,"spa":142,"spd":71,"spe":51},"moves":["ragefist","fissure","highjumpkick","muddywater"],"baseAbility":"magicguard","item":"cloversweet","pokeball":"pokeball","ability":"magicguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: Big Tony's Pal","details":"Slowking-Galar, L50, M","condition":"191/191","active":false,"stats":{"atk":94,"def":91,"spa":138,"spd":157,"spe":54},"moves":["electroball","encore"],"baseAbility":"curiousmedicine","item":"babiriberry","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Azumarill","details":"Azumarill, L50, M","condition":"186/186","active":false,"stats":{"atk":95,"def":125,"spa":80,"spd":101,"spe":70},"moves":["expandingforce","sweetkiss","psyblade","hornleech"],"baseAbility":"hugepower","item":"","pokeball":"pokeball","ability":"hugepower","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Venomoth","details":"Venomoth, L50, F","condition":"149/149","active":false,"stats":{"atk":100,"def":84,"spa":118,"spd":104,"spe":123},"moves":["disable","bulldoze"],"baseAbility":"shielddust","item":"pokeball","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Ghost, L50","condition":"219/219","active":false,"stats":{"atk":152,"def":143,"spa":146,"spd":156,"spe":136},"moves":["flashcannon","encore"],"baseAbility":"multitype","item":"hardstone","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Wicked Blow","id":"wickedblow","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Payback","id":"payback","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Gust","id":"gust","pp":56,"maxpp":56,"target":"any","disabled":false}],"canTerastallize":"Rock"},{"moves":[{"move":"Bolt Strike","id":"boltstrike","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Disable","id":"disable","pp":31,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"156/178","active":true,"stats":{"atk":143,"def":123,"spa":120,"spd":107,"spe":80},"moves":["wickedblow","payback","disable","gust"],"baseAbility":"pickpocket","item":"twistedspoon","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Registeel","details":"Registeel, L50","condition":"155/155","active":true,"stats":{"atk":108,"def":173,"spa":117,"spd":189,"spe":77},"moves":["boltstrike","disable"],"baseAbility":"lightmetal","item":"","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sparky","details":"Sylveon, L50, M","condition":"194/194","active":false,"stats":{"atk":95,"def":95,"spa":135,"spd":165,"spe":77},"moves":["imprison","crabhammer","lunardance"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Calyrex","details":"Calyrex, L50","condition":"175/175","active":false,"stats":{"atk":93,"def":100,"spa":129,"spd":123,"spe":119},"moves":["ficklebeam","xscissor","torment"],"baseAbility":"unnerve","item":"prismscale","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Avalugg","details":"Avalugg, L50, M","condition":"181/181","active":false,"stats":{"atk":163,"def":214,"spa":65,"spd":67,"spe":69},"moves":["glaiverush"],"baseAbility":"sturdy","item":"whiteherb","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"156/156","active":false,"stats":{"atk":100,"def":101,"spa":104,"spd":99,"spe":174},"moves":["swift","toxicspikes","imprison"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@message
+update
+|
+|win|Bob
+@message
+end
+{"winner":"Bob","seed":"gen5,5c70525a9aa39e0e","turns":2,"p1":"Alice","p2":"Bob","p1team":[{"name":"Azumarill","species":"Azumarill","item":"","ability":"Huge Power","moves":["Expanding Force","Sweet Kiss","Psyblade","Horn Leech"],"nature":"Hardy","evs":{"hp":89,"atk":201,"def":196,"spa":2,"spd":11,"spe":0},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ground","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sir Hops-a-Lot","species":"Solosis","item":"Clover Sweet","ability":"Magic Guard","moves":["Rage Fist","Fissure","High Jump Kick","Muddy Water"],"nature":"Timid","evs":{"hp":206,"atk":99,"def":0,"spa":138,"spd":7,"spe":56},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Slowking-Galar","item":"Babiri Berry","ability":"Curious Medicine","moves":["Electro Ball","Encore"],"nature":"Lonely","evs":{"hp":166,"atk":7,"def":16,"spa":61,"spd":217,"spe":33},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Grass","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Hoopa","species":"Hoopa-Unbound","item":"Adrenaline Orb","ability":"Magician","moves":["Cross Poison","Icicle Spear","Bitter Malice","Double Team"],"nature":"Docile","evs":{"hp":67,"atk":50,"def":54,"spa":167,"spd":106,"spe":8},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Venomoth","species":"Venomoth","item":"Poke Ball","ability":"Shield Dust","moves":["Disable","Bulldoze"],"nature":"Brave","evs":{"hp":30,"atk":49,"def":35,"spa":64,"spd":71,"spe":214},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Arceus","species":"Arceus-Ghost","item":"Hard Stone","ability":"Multitype","moves":["Flash Cannon","Encore"],"nature":"Sassy","evs":{"hp":190,"atk":92,"def":25,"spa":45,"spd":13,"spe":98},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Avalugg","species":"Avalugg","item":"White Herb","ability":"Sturdy","moves":["Glaive Rush"],"nature":"Brave","evs":{"hp":87,"atk":93,"def":80,"spa":8,"spd":6,"spe":235},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Registeel","species":"Registeel","item":"","ability":"Light Metal","moves":["Bolt Strike","Disable"],"nature":"Brave","evs":{"hp":0,"atk":32,"def":20,"spa":176,"spd":149,"spe":129},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Sparky","species":"Sylveon","item":"","ability":"Cute Charm","moves":["Imprison","Crabhammer","Lunar Dance"],"nature":"Relaxed","evs":{"hp":195,"atk":81,"def":13,"spa":41,"spd":123,"spe":46},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Calyrex","species":"Calyrex","item":"Prism Scale","ability":"Unnerve","moves":["Fickle Beam","X-Scissor","Torment"],"nature":"Calm","evs":{"hp":1,"atk":30,"def":0,"spa":232,"spd":95,"spe":152},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Grimmsnarl","species":"Grimmsnarl","item":"Twisted Spoon","ability":"Pickpocket","moves":["Wicked Blow","Payback","Disable","Gust"],"nature":"Relaxed","evs":{"hp":60,"atk":22,"def":215,"spa":38,"spd":92,"spe":73},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Talonflame","species":"Talonflame","item":"","ability":"Gale Wings","moves":["Swift","Toxic Spikes","Imprison"],"nature":"Modest","evs":{"hp":27,"atk":88,"def":81,"spa":10,"spd":80,"spe":221},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[6,6],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@!Team Preview\",\"seed\":\"gen5,5c70525a9aa39e0e\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Azumarill|||HugePower|ExpandingForce,SweetKiss,Psyblade,HornLeech|Hardy|89,201,196,2,11,||||50|,,,,,Ground]Sir Hops-a-Lot|Solosis|CloverSweet|MagicGuard|RageFist,Fissure,HighJumpKick,MuddyWater|Timid|206,99,,138,7,56||||50|,,,,,Electric]Big Tony's Pal|SlowkingGalar|BabiriBerry|CuriousMedicine|ElectroBall,Encore|Lonely|166,7,16,61,217,33||||50|,,,,,Grass]Hoopa-Unbound||AdrenalineOrb|Magician|CrossPoison,IcicleSpear,BitterMalice,DoubleTeam|Docile|67,50,54,167,106,8||||50|,,,,,Fairy]Venomoth||PokeBall|ShieldDust|Disable,Bulldoze|Brave|30,49,35,64,71,214||||50|,,,,,Fire]Arceus-Ghost||HardStone|Multitype|FlashCannon,Encore|Sassy|190,92,25,45,13,98||||50|,,,,,Fairy\",\"rating\":1500}",">player p2 {\"name\":\"Bob\",\"team\":\"Avalugg||WhiteHerb|Sturdy|GlaiveRush|Brave|87,93,80,8,6,235|M|||50|,,,,,Bug]Registeel|||LightMetal|BoltStrike,Disable|Brave|,32,20,176,149,129||||50|,,,,,Electric]Sparky|Sylveon||CuteCharm|Imprison,Crabhammer,LunarDance|Relaxed|195,81,13,41,123,46|M|||50|,,,,,Fighting]Calyrex||PrismScale|Unnerve|FickleBeam,XScissor,Torment|Calm|1,30,,232,95,152||||50|,,,,,Ice]Grimmsnarl||TwistedSpoon|Pickpocket|WickedBlow,Payback,Disable,Gust|Relaxed|60,22,215,38,92,73|M|||50|,,,,,Rock]Talonflame|||GaleWings|Swift,ToxicSpikes,Imprison|Modest|27,88,81,10,80,221||||50|,,,,,Fire\"}",">p1 switch 4, move highjumpkick +1 terastallize",">p2 switch 5, move disable +2",">forcewin p2"]}
+@channel-write omniscient
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,5c70525a9aa39e0e"}
+@channel-write omniscient
+>player p1 {"name":"Alice","team":"Azumarill|||HugePower|ExpandingForce,SweetKiss,Psyblade,HornLeech|Hardy|89,201,196,2,11,||||50|,,,,,Ground]Sir Hops-a-Lot|Solosis|CloverSweet|MagicGuard|RageFist,Fissure,HighJumpKick,MuddyWater|Timid|206,99,,138,7,56||||50|,,,,,Electric]Big Tony's Pal|SlowkingGalar|BabiriBerry|CuriousMedicine|ElectroBall,Encore|Lonely|166,7,16,61,217,33||||50|,,,,,Grass]Hoopa-Unbound||AdrenalineOrb|Magician|CrossPoison,IcicleSpear,BitterMalice,DoubleTeam|Docile|67,50,54,167,106,8||||50|,,,,,Fairy]Venomoth||PokeBall|ShieldDust|Disable,Bulldoze|Brave|30,49,35,64,71,214||||50|,,,,,Fire]Arceus-Ghost||HardStone|Multitype|FlashCannon,Encore|Sassy|190,92,25,45,13,98||||50|,,,,,Fairy","rating":1500}
+@channel-write omniscient
+>player p2 {"name":"Bob","team":"Avalugg||WhiteHerb|Sturdy|GlaiveRush|Brave|87,93,80,8,6,235|M|||50|,,,,,Bug]Registeel|||LightMetal|BoltStrike,Disable|Brave|,32,20,176,149,129||||50|,,,,,Electric]Sparky|Sylveon||CuteCharm|Imprison,Crabhammer,LunarDance|Relaxed|195,81,13,41,123,46|M|||50|,,,,,Fighting]Calyrex||PrismScale|Unnerve|FickleBeam,XScissor,Torment|Calm|1,30,,232,95,152||||50|,,,,,Ice]Grimmsnarl||TwistedSpoon|Pickpocket|WickedBlow,Payback,Disable,Gust|Relaxed|60,22,215,38,92,73|M|||50|,,,,,Rock]Talonflame|||GaleWings|Swift,ToxicSpikes,Imprison|Modest|27,88,81,10,80,221||||50|,,,,,Fire"}
+@channel-write p2
+switch Grimmsnarl,move disable +2
+@channel-write p2
+switch Grimmsnarl,move disable +2
+@channel-write p1
+switch Hoopa ,  move highjumpkick terastallize +1
+@channel-write p2
+move 4 1 terastallize, switch 6
+@channel-write omniscient
+>forcewin p2
+@channel omniscient
+|t:|
+|gametype|doubles
+@channel omniscient
+|player|p1|Alice||1500
+@channel omniscient
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Azumarill|Azumarill, L50, M|186/186
+|switch|p1b: Sir Hops-a-Lot|Solosis, L50, M|146/146
+|switch|p2a: Avalugg|Avalugg, L50, M|181/181
+|switch|p2b: Registeel|Registeel, L50|155/155
+|turn|1
+@channel omniscient
+|
+|t:|
+|switch|p1a: Hoopa|Hoopa-Unbound, L50|163/163
+|switch|p2a: Grimmsnarl|Grimmsnarl, L50, M|178/178
+|-terastallize|p1b: Sir Hops-a-Lot|Electric
+|move|p2b: Registeel|Disable||[still]
+|-fail|p2b: Registeel
+|move|p1b: Sir Hops-a-Lot|High Jump Kick|p2a: Grimmsnarl
+|-damage|p2a: Grimmsnarl|156/178
+|
+|upkeep
+|turn|2
+@channel omniscient
+|
+|win|Bob
+@channel spectator
+|t:|
+|gametype|doubles
+@channel spectator
+|player|p1|Alice||1500
+@channel spectator
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Azumarill|Azumarill, L50, M|186/186
+|switch|p1b: Sir Hops-a-Lot|Solosis, L50, M|146/146
+|switch|p2a: Avalugg|Avalugg, L50, M|181/181
+|switch|p2b: Registeel|Registeel, L50|155/155
+|turn|1
+@channel spectator
+|
+|t:|
+|switch|p1a: Hoopa|Hoopa-Unbound, L50|163/163
+|switch|p2a: Grimmsnarl|Grimmsnarl, L50, M|178/178
+|-terastallize|p1b: Sir Hops-a-Lot|Electric
+|move|p2b: Registeel|Disable||[still]
+|-fail|p2b: Registeel
+|move|p1b: Sir Hops-a-Lot|High Jump Kick|p2a: Grimmsnarl
+|-damage|p2a: Grimmsnarl|156/178
+|
+|upkeep
+|turn|2
+@channel spectator
+|
+|win|Bob
+@channel p1
+|t:|
+|gametype|doubles
+@channel p1
+|player|p1|Alice||1500
+@channel p1
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Azumarill|Azumarill, L50, M|186/186
+|switch|p1b: Sir Hops-a-Lot|Solosis, L50, M|146/146
+|switch|p2a: Avalugg|Avalugg, L50, M|181/181
+|switch|p2b: Registeel|Registeel, L50|155/155
+|turn|1
+@channel p1
+|request|{"active":[{"moves":[{"move":"Expanding Force","id":"expandingforce","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sweet Kiss","id":"sweetkiss","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Psyblade","id":"psyblade","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Horn Leech","id":"hornleech","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Rage Fist","id":"ragefist","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Fissure","id":"fissure","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Muddy Water","id":"muddywater","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Azumarill","details":"Azumarill, L50, M","condition":"186/186","active":true,"stats":{"atk":95,"def":125,"spa":80,"spd":101,"spe":70},"moves":["expandingforce","sweetkiss","psyblade","hornleech"],"baseAbility":"hugepower","item":"","pokeball":"pokeball","ability":"hugepower","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Solosis, L50, M","condition":"146/146","active":true,"stats":{"atk":55,"def":60,"spa":142,"spd":71,"spe":51},"moves":["ragefist","fissure","highjumpkick","muddywater"],"baseAbility":"magicguard","item":"cloversweet","pokeball":"pokeball","ability":"magicguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Slowking-Galar, L50, M","condition":"191/191","active":false,"stats":{"atk":94,"def":91,"spa":138,"spd":157,"spe":54},"moves":["electroball","encore"],"baseAbility":"curiousmedicine","item":"babiriberry","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Hoopa","details":"Hoopa-Unbound, L50","condition":"163/163","active":false,"stats":{"atk":186,"def":87,"spa":211,"spd":163,"spe":101},"moves":["crosspoison","iciclespear","bittermalice","doubleteam"],"baseAbility":"magician","item":"adrenalineorb","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Venomoth","details":"Venomoth, L50, F","condition":"149/149","active":false,"stats":{"atk":100,"def":84,"spa":118,"spd":104,"spe":123},"moves":["disable","bulldoze"],"baseAbility":"shielddust","item":"pokeball","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Ghost, L50","condition":"219/219","active":false,"stats":{"atk":152,"def":143,"spa":146,"spd":156,"spe":136},"moves":["flashcannon","encore"],"baseAbility":"multitype","item":"hardstone","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@channel p1
+|
+|t:|
+|switch|p1a: Hoopa|Hoopa-Unbound, L50|163/163
+|switch|p2a: Grimmsnarl|Grimmsnarl, L50, M|178/178
+|-terastallize|p1b: Sir Hops-a-Lot|Electric
+|move|p2b: Registeel|Disable||[still]
+|-fail|p2b: Registeel
+|move|p1b: Sir Hops-a-Lot|High Jump Kick|p2a: Grimmsnarl
+|-damage|p2a: Grimmsnarl|156/178
+|
+|upkeep
+|turn|2
+@channel p1
+|request|{"active":[{"moves":[{"move":"Cross Poison","id":"crosspoison","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Icicle Spear","id":"iciclespear","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Bitter Malice","id":"bittermalice","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Team","id":"doubleteam","pp":24,"maxpp":24,"target":"self","disabled":false}]},{"moves":[{"move":"Rage Fist","id":"ragefist","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Fissure","id":"fissure","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Muddy Water","id":"muddywater","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Hoopa","details":"Hoopa-Unbound, L50","condition":"163/163","active":true,"stats":{"atk":186,"def":87,"spa":211,"spd":163,"spe":101},"moves":["crosspoison","iciclespear","bittermalice","doubleteam"],"baseAbility":"magician","item":"adrenalineorb","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Solosis, L50, M","condition":"146/146","active":true,"stats":{"atk":55,"def":60,"spa":142,"spd":71,"spe":51},"moves":["ragefist","fissure","highjumpkick","muddywater"],"baseAbility":"magicguard","item":"cloversweet","pokeball":"pokeball","ability":"magicguard","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p1: Big Tony's Pal","details":"Slowking-Galar, L50, M","condition":"191/191","active":false,"stats":{"atk":94,"def":91,"spa":138,"spd":157,"spe":54},"moves":["electroball","encore"],"baseAbility":"curiousmedicine","item":"babiriberry","pokeball":"pokeball","ability":"curiousmedicine","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Azumarill","details":"Azumarill, L50, M","condition":"186/186","active":false,"stats":{"atk":95,"def":125,"spa":80,"spd":101,"spe":70},"moves":["expandingforce","sweetkiss","psyblade","hornleech"],"baseAbility":"hugepower","item":"","pokeball":"pokeball","ability":"hugepower","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Venomoth","details":"Venomoth, L50, F","condition":"149/149","active":false,"stats":{"atk":100,"def":84,"spa":118,"spd":104,"spe":123},"moves":["disable","bulldoze"],"baseAbility":"shielddust","item":"pokeball","pokeball":"pokeball","ability":"shielddust","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Ghost, L50","condition":"219/219","active":false,"stats":{"atk":152,"def":143,"spa":146,"spd":156,"spe":136},"moves":["flashcannon","encore"],"baseAbility":"multitype","item":"hardstone","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""}]}}
+@channel p1
+|
+|win|Bob
+@channel p2
+|t:|
+|gametype|doubles
+@channel p2
+|player|p1|Alice||1500
+@channel p2
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Azumarill|Azumarill, L50, M|186/186
+|switch|p1b: Sir Hops-a-Lot|Solosis, L50, M|146/146
+|switch|p2a: Avalugg|Avalugg, L50, M|181/181
+|switch|p2b: Registeel|Registeel, L50|155/155
+|turn|1
+@channel p2
+|request|{"active":[{"moves":[{"move":"Glaive Rush","id":"glaiverush","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Bug"},{"moves":[{"move":"Bolt Strike","id":"boltstrike","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Avalugg","details":"Avalugg, L50, M","condition":"181/181","active":true,"stats":{"atk":163,"def":214,"spa":65,"spd":67,"spe":69},"moves":["glaiverush"],"baseAbility":"sturdy","item":"whiteherb","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Registeel","details":"Registeel, L50","condition":"155/155","active":true,"stats":{"atk":108,"def":173,"spa":117,"spd":189,"spe":77},"moves":["boltstrike","disable"],"baseAbility":"lightmetal","item":"","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sparky","details":"Sylveon, L50, M","condition":"194/194","active":false,"stats":{"atk":95,"def":95,"spa":135,"spd":165,"spe":77},"moves":["imprison","crabhammer","lunardance"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Calyrex","details":"Calyrex, L50","condition":"175/175","active":false,"stats":{"atk":93,"def":100,"spa":129,"spd":123,"spe":119},"moves":["ficklebeam","xscissor","torment"],"baseAbility":"unnerve","item":"prismscale","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"178/178","active":false,"stats":{"atk":143,"def":123,"spa":120,"spd":107,"spe":80},"moves":["wickedblow","payback","disable","gust"],"baseAbility":"pickpocket","item":"twistedspoon","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"156/156","active":false,"stats":{"atk":100,"def":101,"spa":104,"spd":99,"spe":174},"moves":["swift","toxicspikes","imprison"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@channel p2
+|
+|t:|
+|switch|p1a: Hoopa|Hoopa-Unbound, L50|163/163
+|switch|p2a: Grimmsnarl|Grimmsnarl, L50, M|178/178
+|-terastallize|p1b: Sir Hops-a-Lot|Electric
+|move|p2b: Registeel|Disable||[still]
+|-fail|p2b: Registeel
+|move|p1b: Sir Hops-a-Lot|High Jump Kick|p2a: Grimmsnarl
+|-damage|p2a: Grimmsnarl|156/178
+|
+|upkeep
+|turn|2
+@channel p2
+|request|{"active":[{"moves":[{"move":"Wicked Blow","id":"wickedblow","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Payback","id":"payback","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Gust","id":"gust","pp":56,"maxpp":56,"target":"any","disabled":false}],"canTerastallize":"Rock"},{"moves":[{"move":"Bolt Strike","id":"boltstrike","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Disable","id":"disable","pp":31,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Grimmsnarl","details":"Grimmsnarl, L50, M","condition":"156/178","active":true,"stats":{"atk":143,"def":123,"spa":120,"spd":107,"spe":80},"moves":["wickedblow","payback","disable","gust"],"baseAbility":"pickpocket","item":"twistedspoon","pokeball":"pokeball","ability":"pickpocket","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Registeel","details":"Registeel, L50","condition":"155/155","active":true,"stats":{"atk":108,"def":173,"spa":117,"spd":189,"spe":77},"moves":["boltstrike","disable"],"baseAbility":"lightmetal","item":"","pokeball":"pokeball","ability":"lightmetal","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Sparky","details":"Sylveon, L50, M","condition":"194/194","active":false,"stats":{"atk":95,"def":95,"spa":135,"spd":165,"spe":77},"moves":["imprison","crabhammer","lunardance"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Calyrex","details":"Calyrex, L50","condition":"175/175","active":false,"stats":{"atk":93,"def":100,"spa":129,"spd":123,"spe":119},"moves":["ficklebeam","xscissor","torment"],"baseAbility":"unnerve","item":"prismscale","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Avalugg","details":"Avalugg, L50, M","condition":"181/181","active":false,"stats":{"atk":163,"def":214,"spa":65,"spd":67,"spe":69},"moves":["glaiverush"],"baseAbility":"sturdy","item":"whiteherb","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: Talonflame","details":"Talonflame, L50, M","condition":"156/156","active":false,"stats":{"atk":100,"def":101,"spa":104,"spd":99,"spe":174},"moves":["swift","toxicspikes","imprison"],"baseAbility":"galewings","item":"","pokeball":"pokeball","ability":"galewings","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""}]}}
+@channel p2
+|
+|win|Bob

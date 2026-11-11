@@ -1,0 +1,109 @@
+# gen9doubles-gen5-2118007-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay omniscient
+@write
+>start {"formatid":"[Gen 9] Doubles Custom Game@@@!Team Preview","seed":"gen5,0b0a860fa6be2f55"}
+
+>player p1 {"name":"Alice","team":"Klawf||AirBalloon|AngerShell|StrangeSteam,Twister|Calm|98,161,19,19,206,5||||50|,,,,,Psychic]Sparky|Flabebe|GripClaw|Symbiosis|Wish,Imprison,DrumBeating|Naive|44,214,8,57,92,90|F|||50|,,,,,Fairy]Vivillon-Polar|||CompoundEyes|FlareBlitz,Explosion,Whirlpool,Encore|Bold|20,99,132,207,5,28|||S|50|,,,,,Bug]Palkia||GoldBottleCap|Telepathy|HeatCrash,Encore|Calm|197,148,158,4,,3||||50|,,,,,Ice]Voltorb-Hisui||GriseousCore|Soundproof|AlluringVoice,FoulPlay|Lonely|,83,243,,16,168||||50|,,,,,Ghost]Big Tony's Pal|Eelektross|ChoiceScarf|Levitate|Taunt|Hasty|89,109,26,154,3,25|M|||50|,,,,,Dragon"}
+@write
+>player p2 {"name":"Bob","team":"Lapras||LeppaBerry|ShellArmor|BatonPass,Imprison,Thrash|Bashful|41,2,239,12,136,75|M|||50|,,,,,Flying]Bruxish||ChoiceSpecs|StrongJaw|BehemothBlade,Roost,Rest|Calm|70,160,4,91,4,148||||50|,,,,,Stellar]Big Tony's Pal|Gholdengo||GoodasGold|Teleport|Naughty|32,32,43,170,31,181|||S|50|,,,,,Normal]Trapinch|||ArenaTrap|AfterYou,Surf,AquaJet,ExpandingForce|Naughty|158,19,22,229,32,17|M|||50|,,,,,Bug]Cufant||KasibBerry|HeavyMetal|Facade,MagnetRise,EsperWing,Imprison|Hardy|1,232,118,137,14,7||||50|,,,,,Normal]Minior-Orange||NestBall|ShieldsDown|PrecipiceBlades|Mild|85,160,11,21,44,140||||50|,,,,,Ground","avatar":"lucas"}
+# a comment
+>p2 default
+@write
+>p2 move 3 terastal
+>p1 switch 4
+@write
+
+>p2 switch trapinch
+@write
+>p2 undo
+>p2 dance
+@write
+>p1 shift
+@write
+>p1 switch 4, move 2 terastallize
+>p2 switch 6, move 3 terastallize
+@write
+>p1 
+@write
+>p2 switch 6, move 3
+@write
+>p1 switch 1
+@write
+>p1 undo
+@write
+>p1 switch VIVILLON
+>p1 move 2, move 1 2
+@write
+>p1 switch palkia
+>p1 switch 6
+@write
+>p1 switch 4, move drumbeating 1 mega
+@write
+>p1 move 2 2, switch 6
+@write
+>p1 move 2 1, switch 6
+>p2 move 1, move 3
+@write
+>p2 switch 5, move 1 1 mega
+# a comment
+>forcetie
+@message
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+@message
+|player|p2|Bob|lucas|
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Klawf|Klawf, L50, M|157/157
+|switch|p1b: Sparky|Flabébé, L50, F|125/125
+|switch|p2a: Lapras|Lapras, L50, M|210/210
+|switch|p2b: Bruxish|Bruxish, L50, F|152/152
+|-item|p1a: Klawf|Air Balloon
+|turn|1
+@message
+|
+|t:|
+|switch|p1a: Palkia|Palkia, L50|190/190
+|switch|p2a: Minior|Minior-Orange, L50|146/146
+|-formechange|p2a: Minior|Minior-Meteor||[from] ability: Shields Down
+|-terastallize|p2b: Bruxish|Stellar
+|-terastallize|p1b: Sparky|Fairy
+|move|p2b: Bruxish|Rest|p2b: Bruxish
+|-fail|p2b: Bruxish|heal
+|move|p1b: Sparky|Imprison|p1b: Sparky
+|-start|p1b: Sparky|move: Imprison
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|switch|p2a: Lapras|Lapras, L50, M|210/210
+|switch|p1b: Big Tony's Pal|Eelektross, L50, M|171/171
+|move|p2b: Bruxish|Rest|p2b: Bruxish
+|-fail|p2b: Bruxish|heal
+|move|p1a: Palkia|Encore|p2b: Bruxish
+|-start|p2b: Bruxish|Encore
+|
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|switch|p1b: Sparky|Flabébé, L50, F, tera:Fairy|125/125
+|move|p2b: Bruxish|Rest|p2b: Bruxish
+|-fail|p2b: Bruxish|heal
+|move|p1a: Palkia|Encore||[still]
+|-fail|p1a: Palkia
+|move|p2a: Lapras|Baton Pass|p2a: Lapras
+@message
+|
+|tie

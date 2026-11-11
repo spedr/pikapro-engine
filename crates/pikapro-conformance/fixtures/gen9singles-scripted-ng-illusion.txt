@@ -1,0 +1,79 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Zoroark
+Ability: Illusion
+Hardy Nature
+- Splash
+
+Chansey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Hardy Nature
+- Splash
+end
+team p2
+Blissey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+
+Weezing
+Ability: Neutralizing Gas
+Hardy Nature
+- Splash
+end
+choice p1 move 1
+choice p2 switch 2
+choice p1 move 1
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Snorlax|Snorlax, F|261/261
+expect |switch|p1a: Snorlax|Snorlax, F|261/261
+expect |split|p2
+expect |switch|p2a: Blissey|Blissey, F|651/651
+expect |switch|p2a: Blissey|Blissey, F|651/651
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Weezing|Weezing, F|271/271
+expect |switch|p2a: Weezing|Weezing, F|271/271
+expect |-ability|p2a: Weezing|Neutralizing Gas
+expect |replace|p1a: Zoroark|Zoroark, F
+expect |-end|p1a: Zoroark|Illusion
+expect |move|p1a: Zoroark|Splash|p1a: Zoroark
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Zoroark|Splash|p1a: Zoroark
+expect |-nothing
+expect |move|p2a: Weezing|Splash|p2a: Weezing
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3

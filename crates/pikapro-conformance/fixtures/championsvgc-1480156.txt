@@ -1,0 +1,784 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 9808 9e8f c174 2200
+genders drawn
+team p1
+Vivillon-Continental (F) @ Sitrus Berry
+Ability: Friend Guard
+Level: 50
+Tera Type: Fighting
+EVs: 24 HP / 3 Atk / 21 Def / 8 SpA / 10 Spe
+Docile Nature
+- Fire Punch
+- Morning Sun
+
+Raichu-Alola
+Ability: Surge Surfer
+Level: 50
+Tera Type: Normal
+EVs: 19 HP / 20 Atk / 8 Def / 7 SpA / 4 SpD / 5 Spe
+Bashful Nature
+- Tailwind
+
+Primarina @ Haban Berry
+Ability: Liquid Voice
+Level: 50
+Tera Type: Grass
+EVs: 12 HP / 18 Atk / 1 Def / 27 SpA / 7 SpD / 1 Spe
+Rash Nature
+- Comeuppance
+- Disable
+
+Mr. Bubbles (Simipour) @ Black Belt
+Ability: Torrent
+Level: 50
+Shiny: Yes
+Tera Type: Steel
+EVs: 8 HP / 4 Atk / 32 Def / 1 SpA / 21 Spe
+Modest Nature
+- Beak Blast
+- Pound
+- Make It Rain
+- Volt Switch
+
+Meowscarada @ Wacan Berry
+Ability: Overgrow
+Level: 50
+Tera Type: Bug
+EVs: 29 Def / 1 SpA / 15 SpD / 21 Spe
+Gentle Nature
+- Shell Side Arm
+- Ally Switch
+
+Pelipper (F)
+Ability: Keen Eye
+Level: 50
+Tera Type: Ice
+EVs: 27 HP / 21 Def / 1 SpA / 17 SpD
+Rash Nature
+- Detect
+- King's Shield
+- Clear Smog
+end
+team p2
+Pikachu @ Shed Shell
+Ability: Lightning Rod
+Level: 50
+Tera Type: Fire
+EVs: 26 HP / 7 Def / 21 SpA / 2 SpD / 10 Spe
+Mild Nature
+- Eruption
+- Psych Up
+
+Audino
+Ability: Klutz
+Level: 50
+Tera Type: Normal
+EVs: 13 HP / 14 Atk / 15 Def / 1 SpA / 19 SpD / 4 Spe
+Brave Nature
+- Night Slash
+- High Horsepower
+- Dragon Dance
+- Bitter Malice
+
+Meganium (F) @ Meganiumite
+Ability: Overgrow
+Level: 50
+Tera Type: Electric
+EVs: 12 HP / 24 Atk / 3 Def / 4 SpD / 12 Spe
+Jolly Nature
+- Uproar
+- Transform
+- Entrainment
+
+Orthworm (F) @ Roseli Berry
+Ability: Sand Veil
+Level: 50
+Tera Type: Steel
+EVs: 9 HP / 7 Atk / 16 Def / 6 SpA / 8 SpD
+Sassy Nature
+- Spore
+- Swagger
+- Electric Terrain
+- Strength Sap
+
+Vaporeon (M) @ Black Glasses
+Ability: Water Absorb
+Level: 50
+Tera Type: Steel
+EVs: 6 HP / 26 Def / 8 SpA / 5 SpD / 21 Spe
+Serious Nature
+- Play Rough
+- Mountain Gale
+- Acid Armor
+- High Jump Kick
+
+Zoë (Eelektross) (F) @ Eelektrossite
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Tera Type: Poison
+EVs: 9 HP / 8 Atk / 1 Def / 12 SpA / 19 SpD / 16 Spe
+Hardy Nature
+- Discharge
+- Leaf Blade
+- Snore
+- Counter
+end
+choice p1 team 1365
+choice p2 team 3521
+choice p1 move 1 1, move 2 2
+choice p2 switch 3, move 1 -1
+choice p1 switch 4, move 1
+choice p2 move highhorsepower +2, move Mountain Gale -1
+choice p1 move 1 2, move 2 2
+choice p2 move 1 1, move 4 -1
+choice p1 move Shell Side Arm 1,move Disable -1
+choice p2 move 4 2, move 3
+choice p2 switch 4, pass
+choice p1 switch 3, move 1
+choice p2 move 1, move 4 1
+choice p1 switch 3, move 1
+choice p2 move 1 ,  move Mountain Gale -1
+choice p1 move 1 -2, move 2 2
+choice p2 move 1, move 2 -1
+choice p2 switch Meganium, skip
+choice p1 default
+choice p2 move 2 2, move 1 2
+choice p1 pass, switch 4
+choice p2 default
+choice p1 move 1 -2,move firepunch -1
+choice p1 switch 3, pass
+choice p2 move 2 2, move 4 2
+choice p1 move 1, move 1 2
+choice p2 move 2 -2 mega, move 1 2
+choice p1 move 1, move 2
+choice p2 move 2 1, move 1 -1
+choice p1 move clearsmog 1, move morningsun
+choice p2 skip ,  move playrough 2
+choice p1 move 3 2, move 2
+choice p2 pass, move 1 +2
+choice p1 move 3 2, move 2
+choice p2 pass, move 1 1
+choice p1 move 3 -2,move firepunch -1
+choice p2 pass, move highjumpkick 1
+choice p1 move 1, move 1 -1
+choice p2 pass, move 2 2
+choice p1 move King's Shield, move Fire Punch +2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Vivillon-Continental, L50, F|
+expect |poke|p1|Raichu-Alola, L50, F|
+expect |poke|p1|Primarina, L50, M|
+expect |poke|p1|Simipour, L50, M, shiny|
+expect |poke|p1|Meowscarada, L50, F|
+expect |poke|p1|Pelipper, L50, F|
+expect |poke|p2|Pikachu, L50, M|
+expect |poke|p2|Audino, L50, F|
+expect |poke|p2|Meganium, L50, F|
+expect |poke|p2|Orthworm, L50, F|
+expect |poke|p2|Vaporeon, L50, M|
+expect |poke|p2|Eelektross, L50, F, shiny|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Vivillon|Vivillon-Continental, L50, F|179/179
+expect |switch|p1a: Vivillon|Vivillon-Continental, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Primarina|Primarina, L50, M|167/167
+expect |switch|p1b: Primarina|Primarina, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Meganium|Meganium, L50, F|167/167
+expect |switch|p2a: Meganium|Meganium, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Vaporeon|Vaporeon, L50, M|211/211
+expect |switch|p2b: Vaporeon|Vaporeon, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Audino|Audino, L50, F|191/191
+expect |switch|p2a: Audino|Audino, L50, F|100/100
+expect |move|p1a: Vivillon|Fire Punch|p2a: Audino
+expect |rng|100|54
+expect |rng|24|1
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Audino|171/191
+expect |-damage|p2a: Audino|89/100
+expect |rng|100|47
+expect |move|p2b: Vaporeon|Play Rough|p2a: Audino
+expect |rng|100|35
+expect |rng|24|23
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Audino|145/191
+expect |-damage|p2a: Audino|75/100
+expect |rng|100|30
+expect |move|p1b: Primarina|Disable|p2b: Vaporeon
+expect |rng|100|53
+expect |-start|p2b: Vaporeon|Disable|Play Rough
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Meowscarada|Meowscarada, L50, F|151/151
+expect |switch|p1a: Meowscarada|Meowscarada, L50, F|100/100
+expect |move|p2b: Vaporeon|Mountain Gale|p2a: Audino
+expect |rng|100|15
+expect |rng|24|1
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: Audino|107/191
+expect |-damage|p2a: Audino|56/100
+expect |rng|100|32
+expect |move|p1b: Primarina|Comeuppance||[still]
+expect |-fail|p1b: Primarina
+expect |move|p2a: Audino|High Horsepower|p1b: Primarina|[miss]
+expect |rng|100|95
+expect |-miss|p2a: Audino|p1b: Primarina
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Meowscarada|Shell Side Arm|p2b: Vaporeon|[anim] Shell Side Arm Physical
+expect |rng|100|67
+expect |rng|24|22
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Vaporeon|162/211
+expect |-damage|p2b: Vaporeon|76/100
+expect |-hint|Physical Shell Side Arm
+expect |rng|100|42
+expect |move|p2b: Vaporeon|High Jump Kick|p2a: Audino
+expect |rng|100|6
+expect |rng|24|14
+expect |rng|16|7
+expect |-supereffective|p2a: Audino|1
+expect |split|p2
+expect |-damage|p2a: Audino|29/191
+expect |-damage|p2a: Audino|15/100
+expect |move|p1b: Primarina|Disable||[still]
+expect |rng|100|65
+expect |-fail|p1b: Primarina
+expect |move|p2a: Audino|Night Slash|p1a: Meowscarada
+expect |rng|100|20
+expect |rng|8|1
+expect |rng|16|10
+expect |-resisted|p1a: Meowscarada|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|138/151
+expect |-damage|p1a: Meowscarada|91/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p1a: Meowscarada|Shell Side Arm|p2a: Audino|[anim] Shell Side Arm Physical
+expect |rng|100|22
+expect |rng|24|0
+expect |rng|16|2
+expect |-crit|p2a: Audino
+expect |split|p2
+expect |-damage|p2a: Audino|0 fnt
+expect |-damage|p2a: Audino|0 fnt
+expect |-hint|Physical Shell Side Arm
+expect |rng|100|53
+expect |faint|p2a: Audino
+expect |move|p2b: Vaporeon|Acid Armor|p2b: Vaporeon
+expect |-boost|p2b: Vaporeon|def|2
+expect |move|p1b: Primarina|Disable|p1a: Meowscarada
+expect |rng|100|74
+expect |-start|p1a: Meowscarada|Disable|Shell Side Arm
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pikachu|Pikachu, L50, M|136/136
+expect |switch|p2a: Pikachu|Pikachu, L50, M|100/100
+expect |turn|5
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pelipper|Pelipper, L50, F|162/162
+expect |switch|p1a: Pelipper|Pelipper, L50, F|100/100
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Pikachu|Eruption|p1b: Primarina|[spread] p1a,p1b
+expect |rng|100|9
+expect |rng|100|96
+expect |rng|24|0
+expect |rng|16|11
+expect |-resisted|p1a: Pelipper|1
+expect |-crit|p1a: Pelipper
+expect |rng|24|11
+expect |rng|16|3
+expect |-resisted|p1b: Primarina|1
+expect |split|p1
+expect |-damage|p1a: Pelipper|128/162
+expect |-damage|p1a: Pelipper|79/100
+expect |split|p1
+expect |-damage|p1b: Primarina|148/167
+expect |-damage|p1b: Primarina|88/100
+expect |move|p2b: Vaporeon|High Jump Kick|p1a: Pelipper
+expect |rng|100|0
+expect |rng|24|3
+expect |rng|16|12
+expect |-resisted|p1a: Pelipper|1
+expect |split|p1
+expect |-damage|p1a: Pelipper|113/162
+expect |-damage|p1a: Pelipper|69/100
+expect |move|p1b: Primarina|Comeuppance|p2a: Pikachu
+expect |rng|100|82
+expect |split|p2
+expect |-damage|p2a: Pikachu|108/136
+expect |-damage|p2a: Pikachu|79/100
+expect |
+expect |-end|p2b: Vaporeon|Disable
+expect |upkeep
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Meowscarada|Meowscarada, L50, F|138/151
+expect |switch|p1a: Meowscarada|Meowscarada, L50, F|91/100
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Pikachu|Eruption|p1b: Primarina|[spread] p1a,p1b
+expect |rng|100|51
+expect |rng|100|87
+expect |rng|24|18
+expect |rng|16|15
+expect |-supereffective|p1a: Meowscarada|1
+expect |rng|24|13
+expect |rng|16|15
+expect |-resisted|p1b: Primarina|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|80/151
+expect |-damage|p1a: Meowscarada|52/100
+expect |split|p1
+expect |-damage|p1b: Primarina|135/167
+expect |-damage|p1b: Primarina|80/100
+expect |move|p2b: Vaporeon|Mountain Gale|p2a: Pikachu
+expect |rng|100|64
+expect |rng|24|8
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Pikachu|42/136
+expect |-damage|p2a: Pikachu|30/100
+expect |rng|100|41
+expect |move|p1b: Primarina|Comeuppance|p2a: Pikachu
+expect |rng|100|90
+expect |split|p2
+expect |-damage|p2a: Pikachu|23/136
+expect |-damage|p2a: Pikachu|16/100
+expect |
+expect |upkeep
+expect |turn|7
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1a: Meowscarada|Shell Side Arm|p1b: Primarina
+expect |rng|100|99
+expect |rng|24|22
+expect |rng|16|2
+expect |-supereffective|p1b: Primarina|1
+expect |split|p1
+expect |-damage|p1b: Primarina|27/167
+expect |-damage|p1b: Primarina|16/100
+expect |rng|100|42
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Pikachu|Eruption|p1b: Primarina|[spread] p1a,p1b
+expect |rng|100|40
+expect |rng|100|49
+expect |rng|24|6
+expect |rng|16|7
+expect |-supereffective|p1a: Meowscarada|1
+expect |rng|24|11
+expect |rng|16|11
+expect |-resisted|p1b: Primarina|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|66/151
+expect |-damage|p1a: Meowscarada|43/100
+expect |split|p1
+expect |-damage|p1b: Primarina|24/167
+expect |-damage|p1b: Primarina|14/100
+expect |move|p2b: Vaporeon|Mountain Gale|p2a: Pikachu
+expect |rng|100|82
+expect |rng|24|6
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Pikachu|0 fnt
+expect |-damage|p2a: Pikachu|0 fnt
+expect |rng|100|46
+expect |faint|p2a: Pikachu
+expect |move|p1b: Primarina|Disable|p2b: Vaporeon
+expect |rng|100|58
+expect |-start|p2b: Vaporeon|Disable|Mountain Gale
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Meganium|Meganium, L50, F|167/167
+expect |switch|p2a: Meganium|Meganium, L50, F|100/100
+expect |turn|8
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p1a: Meowscarada|Shell Side Arm|p2a: Meganium|[anim] Shell Side Arm Physical
+expect |rng|100|32
+expect |rng|24|10
+expect |rng|16|4
+expect |-supereffective|p2a: Meganium|1
+expect |split|p2
+expect |-damage|p2a: Meganium|85/167
+expect |-damage|p2a: Meganium|50/100g
+expect |-hint|Physical Shell Side Arm
+expect |rng|100|83
+expect |move|p2a: Meganium|Transform|p1b: Primarina
+expect |-transform|p2a: Meganium|p1b: Primarina
+expect |move|p2b: Vaporeon|Play Rough|p1b: Primarina
+expect |rng|100|17
+expect |rng|24|14
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Primarina|0 fnt
+expect |-damage|p1b: Primarina|0 fnt
+expect |rng|100|71
+expect |rng|2|1
+expect |faint|p1b: Primarina
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Vivillon|Vivillon-Continental, L50, F|179/179
+expect |switch|p1b: Vivillon|Vivillon-Continental, L50, F|100/100
+expect |turn|9
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1a: Meowscarada|Shell Side Arm|p1b: Vivillon
+expect |rng|100|16
+expect |rng|24|19
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1b: Vivillon|125/179
+expect |-damage|p1b: Vivillon|69/100
+expect |rng|100|82
+expect |move|p1b: Vivillon|Fire Punch|p1a: Meowscarada
+expect |rng|100|63
+expect |rng|24|6
+expect |rng|16|2
+expect |-supereffective|p1a: Meowscarada|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|30/151
+expect |-damage|p1a: Meowscarada|19/100
+expect |rng|100|18
+expect |move|p2b: Vaporeon|Play Rough|p1a: Meowscarada
+expect |rng|100|30
+expect |rng|24|2
+expect |rng|16|11
+expect |-supereffective|p1a: Meowscarada|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|0 fnt
+expect |-damage|p1a: Meowscarada|0 fnt
+expect |rng|100|31
+expect |faint|p1a: Meowscarada
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2a: Meganium|Comeuppance||[still]
+expect |rng|1|0
+expect |-fail|p2a: Meganium
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pelipper|Pelipper, L50, F|113/162
+expect |switch|p1a: Pelipper|Pelipper, L50, F|69/100
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1a: Pelipper|Detect|p1a: Pelipper
+expect |-singleturn|p1a: Pelipper|Protect
+expect |move|p1b: Vivillon|Fire Punch|p2b: Vaporeon
+expect |rng|100|63
+expect |rng|24|11
+expect |rng|16|11
+expect |-resisted|p2b: Vaporeon|1
+expect |split|p2
+expect |-damage|p2b: Vaporeon|157/211
+expect |-damage|p2b: Vaporeon|74/100
+expect |rng|100|59
+expect |move|p2b: Vaporeon|High Jump Kick|p1b: Vivillon
+expect |rng|100|71
+expect |rng|24|2
+expect |rng|16|6
+expect |-resisted|p1b: Vivillon|2
+expect |split|p1
+expect |-damage|p1b: Vivillon|113/179
+expect |-damage|p1b: Vivillon|63/100
+expect |move|p2a: Meganium|Disable|p1b: Vivillon
+expect |rng|100|2
+expect |-start|p1b: Vivillon|Disable|Fire Punch
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |detailschange|p2a: Meganium|Meganium-Mega, L50, F
+expect |-mega|p2a: Meganium|Meganium|Meganiumite
+expect |move|p1a: Pelipper|Detect||[still]
+expect |rng|3|1
+expect |-fail|p1a: Pelipper
+expect |move|p2a: Meganium|Disable||[still]
+expect |rng|100|85
+expect |-fail|p2a: Meganium
+expect |move|p1b: Vivillon|Morning Sun|p1b: Vivillon
+expect |split|p1
+expect |-heal|p1b: Vivillon|179/179
+expect |-heal|p1b: Vivillon|100/100
+expect |move|p2b: Vaporeon|Play Rough|p1b: Vivillon
+expect |rng|100|28
+expect |rng|24|17
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1b: Vivillon|146/179
+expect |-damage|p1b: Vivillon|81/100
+expect |rng|100|32
+expect |
+expect |-end|p2b: Vaporeon|Disable
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p2a: Meganium|Disable|p1a: Pelipper
+expect |rng|100|47
+expect |-start|p1a: Pelipper|Disable|Detect
+expect |move|p1b: Vivillon|Morning Sun|p1b: Vivillon
+expect |split|p1
+expect |-heal|p1b: Vivillon|179/179
+expect |-heal|p1b: Vivillon|100/100
+expect |move|p2b: Vaporeon|Play Rough|p2a: Meganium
+expect |rng|100|49
+expect |rng|24|0
+expect |rng|16|12
+expect |-crit|p2a: Meganium
+expect |split|p2
+expect |-damage|p2a: Meganium|51/167
+expect |-damage|p2a: Meganium|30/100
+expect |rng|100|90
+expect |move|p1a: Pelipper|Clear Smog|p2a: Meganium
+expect |rng|24|4
+expect |rng|16|3
+expect |-supereffective|p2a: Meganium|2
+expect |split|p2
+expect |-damage|p2a: Meganium|0 fnt
+expect |-damage|p2a: Meganium|0 fnt
+expect |-clearboost|p2a: Meganium
+expect |faint|p2a: Meganium
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1b: Vivillon|Morning Sun|p1b: Vivillon
+expect |-fail|p1b: Vivillon|heal
+expect |move|p2b: Vaporeon|Play Rough|p1b: Vivillon
+expect |rng|100|59
+expect |rng|24|0
+expect |rng|16|13
+expect |-crit|p1b: Vivillon
+expect |split|p1
+expect |-damage|p1b: Vivillon|130/179
+expect |-damage|p1b: Vivillon|72/100
+expect |rng|100|19
+expect |move|p1a: Pelipper|Clear Smog|p2b: Vaporeon
+expect |rng|24|1
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Vaporeon|134/211
+expect |-damage|p2b: Vaporeon|63/100
+expect |-clearboost|p2b: Vaporeon
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p1b: Vivillon|Morning Sun|p1b: Vivillon
+expect |split|p1
+expect |-heal|p1b: Vivillon|179/179
+expect |-heal|p1b: Vivillon|100/100
+expect |move|p2b: Vaporeon|Play Rough|p1b: Vivillon
+expect |rng|100|26
+expect |rng|24|7
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Vivillon|147/179
+expect |-damage|p1b: Vivillon|82/100
+expect |rng|100|46
+expect |move|p1a: Pelipper|Clear Smog|p2b: Vaporeon
+expect |rng|24|9
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Vaporeon|110/211
+expect |-damage|p2b: Vaporeon|52/100
+expect |-clearboost|p2b: Vaporeon
+expect |
+expect |-end|p1b: Vivillon|Disable
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p1b: Vivillon|Fire Punch|p1a: Pelipper
+expect |rng|100|9
+expect |rng|24|4
+expect |rng|16|6
+expect |-resisted|p1a: Pelipper|1
+expect |split|p1
+expect |-damage|p1a: Pelipper|107/162
+expect |-damage|p1a: Pelipper|66/100
+expect |rng|100|38
+expect |move|p2b: Vaporeon|Play Rough|p1a: Pelipper
+expect |rng|100|44
+expect |rng|24|23
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Pelipper|91/162
+expect |-damage|p1a: Pelipper|56/100
+expect |rng|100|59
+expect |move|p1a: Pelipper|Clear Smog|p1b: Vivillon
+expect |rng|24|23
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Vivillon|109/179
+expect |-damage|p1b: Vivillon|60/100
+expect |-clearboost|p1b: Vivillon
+expect |
+expect |-end|p1a: Pelipper|Disable
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p1a: Pelipper|Detect|p1a: Pelipper
+expect |-singleturn|p1a: Pelipper|Protect
+expect |move|p1b: Vivillon|Fire Punch|p1a: Pelipper
+expect |-activate|p1a: Pelipper|move: Protect
+expect |move|p2b: Vaporeon|High Jump Kick|p1a: Pelipper
+expect |-activate|p1a: Pelipper|move: Protect
+expect |split|p2
+expect |-damage|p2b: Vaporeon|5/211|[from] highjumpkick
+expect |-damage|p2b: Vaporeon|2/100|[from] highjumpkick
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p1a: Pelipper|King's Shield||[still]
+expect |rng|3|1
+expect |-fail|p1a: Pelipper
+expect |move|p1b: Vivillon|Fire Punch|p2b: Vaporeon
+expect |rng|100|1
+expect |rng|24|10
+expect |rng|16|15
+expect |-resisted|p2b: Vaporeon|1
+expect |split|p2
+expect |-damage|p2b: Vaporeon|0 fnt
+expect |-damage|p2b: Vaporeon|0 fnt
+expect |rng|100|48
+expect |faint|p2b: Vaporeon
+expect |
+expect |win|p1
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Raichu","details":"Raichu-Alola, L50, F","condition":"154/154","active":true,"stats":{"atk":125,"def":78,"spa":122,"spd":109,"spe":135},"moves":["tailwind"],"baseAbility":"surgesurfer","item":"","pokeball":"pokeball","ability":"surgesurfer","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"167/167","active":false,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p1: Mr. Bubbles","details":"Simipour, L50, M, shiny","condition":"158/158","active":false,"stats":{"atk":109,"def":115,"spa":130,"spd":83,"spe":142},"moves":["beakblast","pound","makeitrain","voltswitch"],"baseAbility":"torrent","item":"blackbelt","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"151/151","active":false,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"162/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"136/136","active":true,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"191/191","active":true,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false},{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"167/167","active":false,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Orthworm","details":"Orthworm, L50, F","condition":"154/154","active":false,"stats":{"atk":112,"def":181,"spa":86,"spd":91,"spe":76},"moves":["spore","swagger","electricterrain","strengthsap"],"baseAbility":"sandveil","item":"roseliberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"211/211","active":false,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Zoë","details":"Eelektross, L50, F, shiny","condition":"169/169","active":false,"stats":{"atk":143,"def":101,"spa":137,"spd":119,"spe":86},"moves":["discharge","leafblade","snore","counter"],"baseAbility":"levitate","item":"eelektrossite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Fire Punch","id":"firepunch","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Morning Sun","id":"morningsun","pp":8,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Comeuppance","id":"comeuppance","pp":12,"maxpp":12,"target":"scripted","disabled":false},{"move":"Disable","id":"disable","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"167/167","active":true,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"162/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"151/151","active":false,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Uproar","id":"uproar","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Transform","id":"transform","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Entrainment","id":"entrainment","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Play Rough","id":"playrough","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"167/167","active":true,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"211/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"191/191","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"136/136","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Fire Punch","id":"firepunch","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Morning Sun","id":"morningsun","pp":8,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Comeuppance","id":"comeuppance","pp":12,"maxpp":12,"target":"scripted","disabled":false},{"move":"Disable","id":"disable","pp":19,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"167/167","active":true,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"162/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"151/151","active":false,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Night Slash","id":"nightslash","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"High Horsepower","id":"highhorsepower","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Dragon Dance","id":"dragondance","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Bitter Malice","id":"bittermalice","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Play Rough","id":"playrough","pp":11,"maxpp":12,"target":"normal","disabled":true},{"move":"Mountain Gale","id":"mountaingale","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Audino","details":"Audino, L50, F","condition":"145/191","active":true,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"211/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"167/167","active":false,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"136/136","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Shell Side Arm","id":"shellsidearm","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Ally Switch","id":"allyswitch","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Comeuppance","id":"comeuppance","pp":11,"maxpp":12,"target":"scripted","disabled":false},{"move":"Disable","id":"disable","pp":19,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"151/151","active":true,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"167/167","active":true,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"162/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":false,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Night Slash","id":"nightslash","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"High Horsepower","id":"highhorsepower","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Dragon Dance","id":"dragondance","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Bitter Malice","id":"bittermalice","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Play Rough","id":"playrough","pp":11,"maxpp":12,"target":"normal","disabled":true},{"move":"Mountain Gale","id":"mountaingale","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Audino","details":"Audino, L50, F","condition":"107/191","active":true,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"211/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"167/167","active":false,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"136/136","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Shell Side Arm","id":"shellsidearm","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Ally Switch","id":"allyswitch","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Comeuppance","id":"comeuppance","pp":11,"maxpp":12,"target":"scripted","disabled":false},{"move":"Disable","id":"disable","pp":18,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"138/151","active":true,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"167/167","active":true,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"162/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":false,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Night Slash","id":"nightslash","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"High Horsepower","id":"highhorsepower","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Dragon Dance","id":"dragondance","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Bitter Malice","id":"bittermalice","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Play Rough","id":"playrough","pp":11,"maxpp":12,"target":"normal","disabled":true},{"move":"Mountain Gale","id":"mountaingale","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Audino","details":"Audino, L50, F","condition":"29/191","active":true,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"162/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"167/167","active":false,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"136/136","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"138/151","active":true,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"167/167","active":true,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"162/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":false,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":true,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"162/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"167/167","active":false,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"136/136","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Shell Side Arm","id":"shellsidearm","pp":10,"maxpp":12,"target":"normal","disabled":true},{"move":"Ally Switch","id":"allyswitch","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Comeuppance","id":"comeuppance","pp":11,"maxpp":12,"target":"scripted","disabled":false},{"move":"Disable","id":"disable","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"138/151","active":true,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"167/167","active":true,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"162/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":false,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Eruption","id":"eruption","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Psych Up","id":"psychup","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Play Rough","id":"playrough","pp":11,"maxpp":12,"target":"normal","disabled":true},{"move":"Mountain Gale","id":"mountaingale","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"136/136","active":true,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"162/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"167/167","active":false,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Detect","id":"detect","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"King's Shield","id":"kingsshield","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Comeuppance","id":"comeuppance","pp":10,"maxpp":12,"target":"scripted","disabled":false},{"move":"Disable","id":"disable","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":true,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"148/167","active":true,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"138/151","active":false,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":false,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Eruption","id":"eruption","pp":7,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Psych Up","id":"psychup","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Play Rough","id":"playrough","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"108/136","active":true,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"162/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"167/167","active":false,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Shell Side Arm","id":"shellsidearm","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Ally Switch","id":"allyswitch","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Comeuppance","id":"comeuppance","pp":9,"maxpp":12,"target":"scripted","disabled":false},{"move":"Disable","id":"disable","pp":17,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"80/151","active":true,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"135/167","active":true,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":false,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Eruption","id":"eruption","pp":6,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Psych Up","id":"psychup","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Play Rough","id":"playrough","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"23/136","active":true,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"162/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"167/167","active":false,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"66/151","active":true,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"24/167","active":true,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":false,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":true,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"162/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"167/167","active":false,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Shell Side Arm","id":"shellsidearm","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Ally Switch","id":"allyswitch","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Comeuppance","id":"comeuppance","pp":9,"maxpp":12,"target":"scripted","disabled":false},{"move":"Disable","id":"disable","pp":16,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"66/151","active":true,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"24/167","active":true,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":false,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Uproar","id":"uproar","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Transform","id":"transform","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Entrainment","id":"entrainment","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Play Rough","id":"playrough","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":9,"maxpp":12,"target":"normal","disabled":true},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"167/167","active":true,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"162/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"66/151","active":true,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"0 fnt","active":true,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":false,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"85/167","active":true,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["comeuppance","disable"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"162/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Shell Side Arm","id":"shellsidearm","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Ally Switch","id":"allyswitch","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Fire Punch","id":"firepunch","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Morning Sun","id":"morningsun","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"66/151","active":true,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"0 fnt","active":false,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Comeuppance","id":"comeuppance","pp":5,"maxpp":5,"target":"scripted","disabled":false},{"move":"Disable","id":"disable","pp":5,"maxpp":5,"target":"normal","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Play Rough","id":"playrough","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":9,"maxpp":12,"target":"normal","disabled":true},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"85/167","active":true,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["comeuppance","disable"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"162/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"0 fnt","active":true,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"125/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":false,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"0 fnt","active":false,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"85/167","active":true,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["comeuppance","disable"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"162/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Detect","id":"detect","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"King's Shield","id":"kingsshield","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Punch","id":"firepunch","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Morning Sun","id":"morningsun","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":true,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"125/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"0 fnt","active":false,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"0 fnt","active":false,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Comeuppance","id":"comeuppance","pp":4,"maxpp":5,"target":"scripted","disabled":false},{"move":"Disable","id":"disable","pp":5,"maxpp":5,"target":"normal","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Play Rough","id":"playrough","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":9,"maxpp":12,"target":"normal","disabled":true},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"85/167","active":true,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["comeuppance","disable"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"162/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Detect","id":"detect","pp":7,"maxpp":8,"target":"self","disabled":false},{"move":"King's Shield","id":"kingsshield","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Punch","id":"firepunch","pp":13,"maxpp":16,"target":"normal","disabled":true},{"move":"Morning Sun","id":"morningsun","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":true,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"113/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"0 fnt","active":false,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"0 fnt","active":false,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Comeuppance","id":"comeuppance","pp":4,"maxpp":5,"target":"scripted","disabled":false},{"move":"Disable","id":"disable","pp":4,"maxpp":5,"target":"normal","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Play Rough","id":"playrough","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":9,"maxpp":12,"target":"normal","disabled":true},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":9,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium, L50, F","condition":"85/167","active":true,"stats":{"atk":126,"def":123,"spa":92,"spd":124,"spe":123},"moves":["comeuppance","disable"],"baseAbility":"overgrow","item":"meganiumite","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"157/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Detect","id":"detect","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"King's Shield","id":"kingsshield","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Punch","id":"firepunch","pp":13,"maxpp":16,"target":"normal","disabled":true},{"move":"Morning Sun","id":"morningsun","pp":7,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":true,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"146/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"0 fnt","active":false,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"0 fnt","active":false,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Comeuppance","id":"comeuppance","pp":4,"maxpp":5,"target":"scripted","disabled":false},{"move":"Disable","id":"disable","pp":3,"maxpp":5,"target":"normal","disabled":false}]},{"moves":[{"move":"Play Rough","id":"playrough","pp":8,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":9,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium-Mega, L50, F","condition":"85/167","active":true,"stats":{"atk":136,"def":138,"spa":146,"spd":139,"spe":123},"moves":["comeuppance","disable"],"baseAbility":"megasol","item":"meganiumite","pokeball":"pokeball","ability":"megasol","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"157/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Detect","id":"detect","pp":6,"maxpp":8,"target":"self","disabled":true},{"move":"King's Shield","id":"kingsshield","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Punch","id":"firepunch","pp":13,"maxpp":16,"target":"normal","disabled":true},{"move":"Morning Sun","id":"morningsun","pp":6,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":true,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"179/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"0 fnt","active":false,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"0 fnt","active":false,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Uproar","id":"uproar","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Transform","id":"transform","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Entrainment","id":"entrainment","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Play Rough","id":"playrough","pp":7,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":9,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium-Mega, L50, F","condition":"0 fnt","active":true,"stats":{"atk":136,"def":138,"spa":146,"spd":139,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"megasol","item":"meganiumite","pokeball":"pokeball","ability":"megasol","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"157/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Detect","id":"detect","pp":6,"maxpp":8,"target":"self","disabled":true},{"move":"King's Shield","id":"kingsshield","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Punch","id":"firepunch","pp":13,"maxpp":16,"target":"normal","disabled":true},{"move":"Morning Sun","id":"morningsun","pp":5,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":true,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"130/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"0 fnt","active":false,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"0 fnt","active":false,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Uproar","id":"uproar","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Transform","id":"transform","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Entrainment","id":"entrainment","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Play Rough","id":"playrough","pp":6,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":9,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium-Mega, L50, F","condition":"0 fnt","active":true,"stats":{"atk":136,"def":138,"spa":146,"spd":139,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"megasol","item":"meganiumite","pokeball":"pokeball","ability":"megasol","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"134/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Detect","id":"detect","pp":6,"maxpp":8,"target":"self","disabled":true},{"move":"King's Shield","id":"kingsshield","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Punch","id":"firepunch","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Morning Sun","id":"morningsun","pp":4,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"113/162","active":true,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"147/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"0 fnt","active":false,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"0 fnt","active":false,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Uproar","id":"uproar","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Transform","id":"transform","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Entrainment","id":"entrainment","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Play Rough","id":"playrough","pp":5,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":9,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium-Mega, L50, F","condition":"0 fnt","active":true,"stats":{"atk":136,"def":138,"spa":146,"spd":139,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"megasol","item":"meganiumite","pokeball":"pokeball","ability":"megasol","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"110/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Detect","id":"detect","pp":6,"maxpp":8,"target":"self","disabled":false},{"move":"King's Shield","id":"kingsshield","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":12,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Punch","id":"firepunch","pp":12,"maxpp":16,"target":"normal","disabled":false},{"move":"Morning Sun","id":"morningsun","pp":4,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"91/162","active":true,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"109/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"0 fnt","active":false,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"0 fnt","active":false,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Uproar","id":"uproar","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Transform","id":"transform","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Entrainment","id":"entrainment","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Play Rough","id":"playrough","pp":4,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":9,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium-Mega, L50, F","condition":"0 fnt","active":true,"stats":{"atk":136,"def":138,"spa":146,"spd":139,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"megasol","item":"meganiumite","pokeball":"pokeball","ability":"megasol","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"110/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Detect","id":"detect","pp":5,"maxpp":8,"target":"self","disabled":false},{"move":"King's Shield","id":"kingsshield","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Clear Smog","id":"clearsmog","pp":12,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Fire Punch","id":"firepunch","pp":11,"maxpp":16,"target":"normal","disabled":false},{"move":"Morning Sun","id":"morningsun","pp":4,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pelipper","details":"Pelipper, L50, F","condition":"91/162","active":true,"stats":{"atk":70,"def":141,"spa":127,"spd":96,"spe":85},"moves":["detect","kingsshield","clearsmog"],"baseAbility":"keeneye","item":"","pokeball":"pokeball","ability":"keeneye","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-Continental, L50, F","condition":"109/179","active":true,"stats":{"atk":75,"def":91,"spa":118,"spd":70,"spe":119},"moves":["firepunch","morningsun"],"baseAbility":"friendguard","item":"sitrusberry","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Meowscarada","details":"Meowscarada, L50, F","condition":"0 fnt","active":false,"stats":{"atk":130,"def":107,"spa":102,"spd":115,"spe":164},"moves":["shellsidearm","allyswitch"],"baseAbility":"overgrow","item":"wacanberry","pokeball":"pokeball","ability":"overgrow","commanding":false,"reviving":false},{"ident":"p1: Primarina","details":"Primarina, L50, M","condition":"0 fnt","active":false,"stats":{"atk":112,"def":95,"spa":190,"spd":128,"spe":81},"moves":["comeuppance","disable"],"baseAbility":"liquidvoice","item":"habanberry","pokeball":"pokeball","ability":"liquidvoice","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Uproar","id":"uproar","pp":12,"maxpp":12,"target":"randomNormal","disabled":false},{"move":"Transform","id":"transform","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Entrainment","id":"entrainment","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Play Rough","id":"playrough","pp":4,"maxpp":12,"target":"normal","disabled":false},{"move":"Mountain Gale","id":"mountaingale","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Acid Armor","id":"acidarmor","pp":19,"maxpp":20,"target":"self","disabled":false},{"move":"High Jump Kick","id":"highjumpkick","pp":8,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Meganium","details":"Meganium-Mega, L50, F","condition":"0 fnt","active":true,"stats":{"atk":136,"def":138,"spa":146,"spd":139,"spe":123},"moves":["uproar","transform","entrainment"],"baseAbility":"megasol","item":"meganiumite","pokeball":"pokeball","ability":"megasol","commanding":false,"reviving":false},{"ident":"p2: Vaporeon","details":"Vaporeon, L50, M","condition":"5/211","active":true,"stats":{"atk":85,"def":106,"spa":138,"spd":120,"spe":106},"moves":["playrough","mountaingale","acidarmor","highjumpkick"],"baseAbility":"waterabsorb","item":"blackglasses","pokeball":"pokeball","ability":"waterabsorb","commanding":false,"reviving":false},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"0 fnt","active":false,"stats":{"atk":75,"def":60,"spa":100,"spd":72,"spe":120},"moves":["eruption","psychup"],"baseAbility":"lightningrod","item":"shedshell","pokeball":"pokeball","ability":"lightningrod","commanding":false,"reviving":false},{"ident":"p2: Audino","details":"Audino, L50, F","condition":"0 fnt","active":false,"stats":{"atk":103,"def":121,"spa":81,"spd":125,"spe":66},"moves":["nightslash","highhorsepower","dragondance","bittermalice"],"baseAbility":"klutz","item":"","pokeball":"pokeball","ability":"klutz","commanding":false,"reviving":false}]}}

@@ -1,0 +1,418 @@
+# gen9randomdoublesbattle-gen5-generated-63000207-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@option keep-alive
+@write
+>start {"formatid":"gen9randomdoublesbattle","seed":"gen5,697231e99dc068c8"}
+>player p1 {"name":"Alice","seed":"gen5,d3417f4fcc75cb53","avatar":"lucas"}
+>player p2 {"name":"Bob","seed":"gen5,bdce10e44df75316"}
+>p1 switch 6, move 3 -1 terastallize
+>p2 switch Minun ,  move encore -1 terastallize
+
+>p1 move will-o-wisp 1, switch Zamazenta
+@write
+>p1 undo
+
+>p1 move 3 -2 ,  move 3 -1
+>p2 move 2 2, move tailwind 1 terastal
+@write
+>p2 move 2 1, switch 5
+>p2 move 3 2, switch 4
+>p1 move 1 1, move 1 1
+>p2 move 3 -2, switch 5
+@write
+>p1 move 1 -2, move 2 -1
+>p1 move 4 -2, move 3 1
+# a comment
+>p2 move 3 2, move 3 2
+>p2 default
+>p1 move Will-O-Wisp +1, switch zamazenta-crowned
+>p2 move 2 -2, move 3 1
+>p1 move Fire Blast -2 terastal
+>p1 move will-o-wisp -2
+@write
+>p1 switch 3, move 3 -1
+>p2 switch Flutter Mane
+>p2 switch 3,move 2 -1
+
+>p1 move 2 -2, move 3 1
+>p1 move 4 1, move 2
+>p2 move powerwhip 2 ,  move encore -1
+# a comment
+>p1 move Will-O-Wisp -2 ,  switch 5
+@write
+>p2 move 2 -2, switch 5
+@write
+>p1 move Will-O-Wisp -2 ,  move pollenpuff +2
+@write
+>forcetie
+>p1 move 1
+>chat after the end
+>forcewin p1
+@write
+>tiebreak
+>requestlog
+>p2 undo
+@message
+update
+|t:|
+|gametype|doubles
+|player|p1|Alice|lucas|
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Random Doubles Battle
+|rule|Species Clause: Limit one of each Pokémon
+|rule|HP Percentage Mod: HP is shown in percentages
+|rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: Deoxys|Deoxys-Attack, L79|209/209
+|switch|p1a: Deoxys|Deoxys-Attack, L79|100/100
+|split|p1
+|switch|p1b: Vespiquen|Vespiquen, F|302/302
+|switch|p1b: Vespiquen|Vespiquen, F|100/100
+|split|p2
+|switch|p2a: Raichu|Raichu-Alola, L89, M|252/252
+|switch|p2a: Raichu|Raichu-Alola, L89, M|100/100
+|split|p2
+|switch|p2b: Whimsicott|Whimsicott, L81, F|230/230
+|switch|p2b: Whimsicott|Whimsicott, L81, F|100/100
+|-ability|p1b: Vespiquen|Unnerve
+|-ability|p1a: Deoxys|Pressure
+|turn|1
+|
+|t:|
+|split|p1
+|switch|p1a: Torkoal|Torkoal, L86, F|261/261
+|switch|p1a: Torkoal|Torkoal, L86, F|100/100
+|-weather|SunnyDay|[from] ability: Drought|[of] p1a: Torkoal
+|split|p2
+|switch|p2a: Minun|Minun, L91, M|257/257
+|switch|p2a: Minun|Minun, L91, M|100/100
+|-terastallize|p2b: Whimsicott|Fire
+|-terastallize|p1b: Vespiquen|Steel
+|move|p2b: Whimsicott|Encore||[still]
+|-fail|p2b: Whimsicott
+|move|p1b: Vespiquen|Pollen Puff|p1a: Torkoal
+|
+|-weather|SunnyDay|[upkeep]
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Solar Beam","id":"solarbeam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Fire Blast","id":"fireblast","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Will-O-Wisp","id":"willowisp","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Hurricane","id":"hurricane","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Helping Hand","id":"helpinghand","pp":32,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Pollen Puff","id":"pollenpuff","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Torkoal","details":"Torkoal, L86, F","condition":"261/261","active":true,"stats":{"atk":151,"def":290,"spa":195,"spd":170,"spe":84},"moves":["solarbeam","protect","fireblast","willowisp"],"baseAbility":"drought","item":"sitrusberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Vespiquen","details":"Vespiquen, F","condition":"302/302","active":true,"stats":{"atk":165,"def":261,"spa":217,"spd":261,"spe":137},"moves":["hurricane","helpinghand","pollenpuff","roost"],"baseAbility":"unnerve","item":"leftovers","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Steel","terastallized":"Steel"},{"ident":"p1: Drifblim","details":"Drifblim, L85, M","condition":"394/394","active":false,"stats":{"atk":141,"def":124,"spa":202,"spd":141,"spe":185},"moves":["strengthsap","shadowball","tailwind","willowisp"],"baseAbility":"unburden","item":"sitrusberry","pokeball":"pokeball","ability":"unburden","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Skuntank","details":"Skuntank, L85, M","condition":"314/314","active":false,"stats":{"atk":207,"def":163,"spa":169,"spd":152,"spe":192},"moves":["gunkshot","protect","knockoff","taunt"],"baseAbility":"aftermath","item":"lifeorb","pokeball":"pokeball","ability":"aftermath","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Zamazenta","details":"Zamazenta-Crowned, L67","condition":"235/235","active":false,"stats":{"atk":200,"def":227,"spa":147,"spd":227,"spe":211},"moves":["coaching","irondefense","bodypress","heavyslam"],"baseAbility":"dauntlessshield","item":"rustedshield","pokeball":"pokeball","ability":"dauntlessshield","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Deoxys","details":"Deoxys-Attack, L79","condition":"209/209","active":false,"stats":{"atk":330,"def":77,"spa":330,"spd":77,"spe":283},"moves":["protect","superpower","knockoff","psychoboost"],"baseAbility":"pressure","item":"lifeorb","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Encore","id":"encore","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Super Fang","id":"superfang","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Nuzzle","id":"nuzzle","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Encore","id":"encore","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Helping Hand","id":"helpinghand","pp":32,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Moonblast","id":"moonblast","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Tailwind","id":"tailwind","pp":24,"maxpp":24,"target":"allySide","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Minun","details":"Minun, L91, M","condition":"257/257","active":true,"stats":{"atk":125,"def":143,"spa":188,"spd":207,"spe":225},"moves":["encore","superfang","nuzzle","thunderbolt"],"baseAbility":"voltabsorb","item":"sitrusberry","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Whimsicott","details":"Whimsicott, L81, F","condition":"230/230","active":true,"stats":{"atk":113,"def":184,"spa":171,"spd":168,"spe":235},"moves":["encore","helpinghand","moonblast","tailwind"],"baseAbility":"prankster","item":"sitrusberry","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Brambleghast","details":"Brambleghast, L86, M","condition":"235/235","active":false,"stats":{"atk":247,"def":170,"spa":187,"spd":170,"spe":204},"moves":["disable","poltergeist","powerwhip","protect"],"baseAbility":"windrider","item":"sitrusberry","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Terrakion","details":"Terrakion, L78","condition":"270/270","active":false,"stats":{"atk":246,"def":185,"spa":157,"spd":185,"spe":214},"moves":["closecombat","stoneedge","rockslide","protect"],"baseAbility":"justified","item":"lifeorb","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Flutter Mane","details":"Flutter Mane, L73","condition":"201/201","active":false,"stats":{"atk":85,"def":123,"spa":240,"spd":240,"spe":240},"moves":["dazzlinggleam","icywind","shadowball","moonblast"],"baseAbility":"protosynthesis","item":"choicespecs","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Raichu","details":"Raichu-Alola, L89, M","condition":"252/252","active":false,"stats":{"atk":156,"def":140,"spa":220,"spd":202,"spe":247},"moves":["grassknot","focusblast","thunderbolt","psychic"],"baseAbility":"surgesurfer","item":"choicespecs","pokeball":"pokeball","ability":"surgesurfer","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You can't choose a target for Tailwind
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Flutter Mane|Flutter Mane, L73|201/201
+|switch|p2b: Flutter Mane|Flutter Mane, L73|100/100
+|-activate|p2b: Flutter Mane|ability: Protosynthesis
+|-start|p2b: Flutter Mane|protosynthesisspa
+|move|p2a: Minun|Super Fang|p1a: Torkoal
+|split|p1
+|-damage|p1a: Torkoal|131/261
+|-damage|p1a: Torkoal|51/100
+|move|p1b: Vespiquen|Pollen Puff|p1a: Torkoal
+|split|p1
+|-heal|p1a: Torkoal|261/261
+|-heal|p1a: Torkoal|100/100
+|move|p1a: Torkoal|Fire Blast|p1b: Vespiquen
+|-supereffective|p1b: Vespiquen
+|split|p1
+|-damage|p1b: Vespiquen|54/302
+|-damage|p1b: Vespiquen|18/100
+|
+|-weather|SunnyDay|[upkeep]
+|split|p1
+|-heal|p1b: Vespiquen|72/302|[from] item: Leftovers
+|-heal|p1b: Vespiquen|24/100|[from] item: Leftovers
+|upkeep
+|turn|3
+|
+|t:|
+|-end|p2b: Flutter Mane|Protosynthesis|[silent]
+|split|p2
+|switch|p2b: Terrakion|Terrakion, L78|270/270
+|switch|p2b: Terrakion|Terrakion, L78|100/100
+|move|p2a: Minun|Nuzzle|p1b: Vespiquen
+|split|p1
+|-damage|p1b: Vespiquen|60/302
+|-damage|p1b: Vespiquen|20/100
+|-status|p1b: Vespiquen|par
+|move|p1a: Torkoal|Solar Beam||[still]
+|-prepare|p1a: Torkoal|Solar Beam
+|-anim|p1a: Torkoal|Solar Beam|p2a: Minun
+|split|p2
+|-damage|p2a: Minun|174/257
+|-damage|p2a: Minun|68/100
+|move|p1b: Vespiquen|Hurricane|p2a: Minun|[miss]
+|-miss|p1b: Vespiquen|p2a: Minun
+|
+|-weather|SunnyDay|[upkeep]
+|split|p1
+|-heal|p1b: Vespiquen|78/302 par|[from] item: Leftovers
+|-heal|p1b: Vespiquen|26/100 par|[from] item: Leftovers
+|upkeep
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Solar Beam","id":"solarbeam","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Fire Blast","id":"fireblast","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Will-O-Wisp","id":"willowisp","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Hurricane","id":"hurricane","pp":15,"maxpp":16,"target":"any","disabled":false},{"move":"Helping Hand","id":"helpinghand","pp":32,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Pollen Puff","id":"pollenpuff","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Torkoal","details":"Torkoal, L86, F","condition":"261/261","active":true,"stats":{"atk":151,"def":290,"spa":195,"spd":170,"spe":84},"moves":["solarbeam","protect","fireblast","willowisp"],"baseAbility":"drought","item":"sitrusberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Vespiquen","details":"Vespiquen, F","condition":"78/302 par","active":true,"stats":{"atk":165,"def":261,"spa":217,"spd":261,"spe":137},"moves":["hurricane","helpinghand","pollenpuff","roost"],"baseAbility":"unnerve","item":"leftovers","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Steel","terastallized":"Steel"},{"ident":"p1: Drifblim","details":"Drifblim, L85, M","condition":"394/394","active":false,"stats":{"atk":141,"def":124,"spa":202,"spd":141,"spe":185},"moves":["strengthsap","shadowball","tailwind","willowisp"],"baseAbility":"unburden","item":"sitrusberry","pokeball":"pokeball","ability":"unburden","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Skuntank","details":"Skuntank, L85, M","condition":"314/314","active":false,"stats":{"atk":207,"def":163,"spa":169,"spd":152,"spe":192},"moves":["gunkshot","protect","knockoff","taunt"],"baseAbility":"aftermath","item":"lifeorb","pokeball":"pokeball","ability":"aftermath","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Zamazenta","details":"Zamazenta-Crowned, L67","condition":"235/235","active":false,"stats":{"atk":200,"def":227,"spa":147,"spd":227,"spe":211},"moves":["coaching","irondefense","bodypress","heavyslam"],"baseAbility":"dauntlessshield","item":"rustedshield","pokeball":"pokeball","ability":"dauntlessshield","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Deoxys","details":"Deoxys-Attack, L79","condition":"209/209","active":false,"stats":{"atk":330,"def":77,"spa":330,"spd":77,"spe":283},"moves":["protect","superpower","knockoff","psychoboost"],"baseAbility":"pressure","item":"lifeorb","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Encore","id":"encore","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Super Fang","id":"superfang","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Nuzzle","id":"nuzzle","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Close Combat","id":"closecombat","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Stone Edge","id":"stoneedge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Minun","details":"Minun, L91, M","condition":"174/257","active":true,"stats":{"atk":125,"def":143,"spa":188,"spd":207,"spe":225},"moves":["encore","superfang","nuzzle","thunderbolt"],"baseAbility":"voltabsorb","item":"sitrusberry","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Terrakion","details":"Terrakion, L78","condition":"270/270","active":true,"stats":{"atk":246,"def":185,"spa":157,"spd":185,"spe":214},"moves":["closecombat","stoneedge","rockslide","protect"],"baseAbility":"justified","item":"lifeorb","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Brambleghast","details":"Brambleghast, L86, M","condition":"235/235","active":false,"stats":{"atk":247,"def":170,"spa":187,"spd":170,"spe":204},"moves":["disable","poltergeist","powerwhip","protect"],"baseAbility":"windrider","item":"sitrusberry","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Flutter Mane","details":"Flutter Mane, L73","condition":"201/201","active":false,"stats":{"atk":85,"def":123,"spa":240,"spd":240,"spe":240},"moves":["dazzlinggleam","icywind","shadowball","moonblast"],"baseAbility":"protosynthesis","item":"choicespecs","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Whimsicott","details":"Whimsicott, L81, F","condition":"230/230","active":false,"stats":{"atk":113,"def":184,"spa":171,"spd":168,"spe":235},"moves":["encore","helpinghand","moonblast","tailwind"],"baseAbility":"prankster","item":"sitrusberry","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Raichu","details":"Raichu-Alola, L89, M","condition":"252/252","active":false,"stats":{"atk":156,"def":140,"spa":220,"spd":202,"spe":247},"moves":["grassknot","focusblast","thunderbolt","psychic"],"baseAbility":"surgesurfer","item":"choicespecs","pokeball":"pokeball","ability":"surgesurfer","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Unavailable choice] Can't move: Torkoal's Fire Blast is disabled
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Solar Beam","id":"solarbeam","pp":14,"maxpp":16,"target":"normal","disabled":true},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":true},{"move":"Fire Blast","id":"fireblast","pp":7,"maxpp":8,"target":"normal","disabled":true,"disabledSource":""},{"move":"Will-O-Wisp","id":"willowisp","pp":22,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Coaching","id":"coaching","pp":16,"maxpp":16,"target":"adjacentAlly","disabled":false},{"move":"Iron Defense","id":"irondefense","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Body Press","id":"bodypress","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Heavy Slam","id":"heavyslam","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Torkoal","details":"Torkoal, L86, F","condition":"261/261","active":true,"stats":{"atk":151,"def":290,"spa":195,"spd":170,"spe":84},"moves":["solarbeam","protect","fireblast","willowisp"],"baseAbility":"drought","item":"sitrusberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Zamazenta","details":"Zamazenta-Crowned, L67","condition":"235/235","active":true,"stats":{"atk":200,"def":227,"spa":147,"spd":227,"spe":211},"moves":["coaching","irondefense","bodypress","heavyslam"],"baseAbility":"dauntlessshield","item":"rustedshield","pokeball":"pokeball","ability":"dauntlessshield","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Drifblim","details":"Drifblim, L85, M","condition":"394/394","active":false,"stats":{"atk":141,"def":124,"spa":202,"spd":141,"spe":185},"moves":["strengthsap","shadowball","tailwind","willowisp"],"baseAbility":"unburden","item":"sitrusberry","pokeball":"pokeball","ability":"unburden","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Skuntank","details":"Skuntank, L85, M","condition":"314/314","active":false,"stats":{"atk":207,"def":163,"spa":169,"spd":152,"spe":192},"moves":["gunkshot","protect","knockoff","taunt"],"baseAbility":"aftermath","item":"lifeorb","pokeball":"pokeball","ability":"aftermath","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Vespiquen","details":"Vespiquen, F","condition":"30/302 par","active":false,"stats":{"atk":165,"def":261,"spa":217,"spd":261,"spe":137},"moves":["hurricane","helpinghand","pollenpuff","roost"],"baseAbility":"unnerve","item":"leftovers","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Steel","terastallized":"Steel"},{"ident":"p1: Deoxys","details":"Deoxys-Attack, L79","condition":"209/209","active":false,"stats":{"atk":330,"def":77,"spa":330,"spd":77,"spe":283},"moves":["protect","superpower","knockoff","psychoboost"],"baseAbility":"pressure","item":"lifeorb","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]},"update":true}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Incomplete choice: move will-o-wisp -2 - missing other pokemon
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Whimsicott|Whimsicott, L81, F, tera:Fire|230/230
+|switch|p2b: Whimsicott|Whimsicott, L81, F, tera:Fire|100/100
+|move|p1b: Vespiquen|Helping Hand|p1a: Torkoal
+|-singleturn|p1a: Torkoal|Helping Hand|[of] p1b: Vespiquen
+|move|p2a: Minun|Nuzzle|p2b: Whimsicott
+|split|p2
+|-damage|p2b: Whimsicott|214/230
+|-damage|p2b: Whimsicott|94/100
+|-status|p2b: Whimsicott|par
+|move|p1a: Torkoal|Solar Beam||[still]
+|-prepare|p1a: Torkoal|Solar Beam
+|-anim|p1a: Torkoal|Solar Beam|p1b: Vespiquen
+|-resisted|p1b: Vespiquen
+|split|p1
+|-damage|p1b: Vespiquen|33/302 par
+|-damage|p1b: Vespiquen|11/100 par
+|
+|-weather|SunnyDay|[upkeep]
+|split|p1
+|-heal|p1b: Vespiquen|51/302 par|[from] item: Leftovers
+|-heal|p1b: Vespiquen|17/100 par|[from] item: Leftovers
+|upkeep
+|turn|5
+|
+|t:|
+|move|p2a: Minun|Nuzzle|p1b: Vespiquen
+|split|p1
+|-damage|p1b: Vespiquen|39/302 par
+|-damage|p1b: Vespiquen|13/100 par
+|move|p2b: Whimsicott|Moonblast|p1b: Vespiquen
+|-resisted|p1b: Vespiquen
+|split|p1
+|-damage|p1b: Vespiquen|12/302 par
+|-damage|p1b: Vespiquen|4/100 par
+|move|p1a: Torkoal|Will-O-Wisp|p1b: Vespiquen|[miss]
+|-miss|p1a: Torkoal|p1b: Vespiquen
+|move|p1b: Vespiquen|Pollen Puff|p2a: Minun
+|split|p2
+|-damage|p2a: Minun|56/257
+|-damage|p2a: Minun|22/100
+|
+|-weather|none
+|split|p1
+|-heal|p1b: Vespiquen|30/302 par|[from] item: Leftovers
+|-heal|p1b: Vespiquen|10/100 par|[from] item: Leftovers
+|upkeep
+|turn|6
+|
+|t:|
+|split|p1
+|switch|p1b: Zamazenta|Zamazenta-Crowned, L67|235/235
+|switch|p1b: Zamazenta|Zamazenta-Crowned, L67|100/100
+|-enditem|p2a: Minun|Sitrus Berry|[eat]
+|split|p2
+|-heal|p2a: Minun|120/257|[from] item: Sitrus Berry
+|-heal|p2a: Minun|47/100|[from] item: Sitrus Berry
+|-ability|p1b: Zamazenta|Dauntless Shield|boost
+|-boost|p1b: Zamazenta|def|1
+|move|p2b: Whimsicott|Encore|p1a: Torkoal
+|-start|p1a: Torkoal|Encore
+|move|p2a: Minun|Encore||[still]
+|-fail|p2a: Minun
+|move|p1a: Torkoal|Will-O-Wisp|p2a: Minun
+|-status|p2a: Minun|brn
+|
+|split|p2
+|-damage|p2a: Minun|104/257 brn|[from] brn
+|-damage|p2a: Minun|41/100 brn|[from] brn
+|upkeep
+|turn|7
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Solar Beam","id":"solarbeam","pp":14,"maxpp":16,"target":"normal","disabled":true},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":true},{"move":"Fire Blast","id":"fireblast","pp":7,"maxpp":8,"target":"normal","disabled":true,"disabledSource":""},{"move":"Will-O-Wisp","id":"willowisp","pp":22,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Coaching","id":"coaching","pp":16,"maxpp":16,"target":"adjacentAlly","disabled":false},{"move":"Iron Defense","id":"irondefense","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Body Press","id":"bodypress","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Heavy Slam","id":"heavyslam","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Torkoal","details":"Torkoal, L86, F","condition":"261/261","active":true,"stats":{"atk":151,"def":290,"spa":195,"spd":170,"spe":84},"moves":["solarbeam","protect","fireblast","willowisp"],"baseAbility":"drought","item":"sitrusberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Zamazenta","details":"Zamazenta-Crowned, L67","condition":"235/235","active":true,"stats":{"atk":200,"def":227,"spa":147,"spd":227,"spe":211},"moves":["coaching","irondefense","bodypress","heavyslam"],"baseAbility":"dauntlessshield","item":"rustedshield","pokeball":"pokeball","ability":"dauntlessshield","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Drifblim","details":"Drifblim, L85, M","condition":"394/394","active":false,"stats":{"atk":141,"def":124,"spa":202,"spd":141,"spe":185},"moves":["strengthsap","shadowball","tailwind","willowisp"],"baseAbility":"unburden","item":"sitrusberry","pokeball":"pokeball","ability":"unburden","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Skuntank","details":"Skuntank, L85, M","condition":"314/314","active":false,"stats":{"atk":207,"def":163,"spa":169,"spd":152,"spe":192},"moves":["gunkshot","protect","knockoff","taunt"],"baseAbility":"aftermath","item":"lifeorb","pokeball":"pokeball","ability":"aftermath","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Vespiquen","details":"Vespiquen, F","condition":"30/302 par","active":false,"stats":{"atk":165,"def":261,"spa":217,"spd":261,"spe":137},"moves":["hurricane","helpinghand","pollenpuff","roost"],"baseAbility":"unnerve","item":"leftovers","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Steel","terastallized":"Steel"},{"ident":"p1: Deoxys","details":"Deoxys-Attack, L79","condition":"209/209","active":false,"stats":{"atk":330,"def":77,"spa":330,"spd":77,"spe":283},"moves":["protect","superpower","knockoff","psychoboost"],"baseAbility":"pressure","item":"lifeorb","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]},"update":true}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Encore","id":"encore","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Super Fang","id":"superfang","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Nuzzle","id":"nuzzle","pp":29,"maxpp":32,"target":"normal","disabled":false},{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Encore","id":"encore","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Helping Hand","id":"helpinghand","pp":32,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Moonblast","id":"moonblast","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Tailwind","id":"tailwind","pp":24,"maxpp":24,"target":"allySide","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Minun","details":"Minun, L91, M","condition":"104/257 brn","active":true,"stats":{"atk":125,"def":143,"spa":188,"spd":207,"spe":225},"moves":["encore","superfang","nuzzle","thunderbolt"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Whimsicott","details":"Whimsicott, L81, F","condition":"214/230 par","active":true,"stats":{"atk":113,"def":184,"spa":171,"spd":168,"spe":235},"moves":["encore","helpinghand","moonblast","tailwind"],"baseAbility":"prankster","item":"sitrusberry","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Brambleghast","details":"Brambleghast, L86, M","condition":"235/235","active":false,"stats":{"atk":247,"def":170,"spa":187,"spd":170,"spe":204},"moves":["disable","poltergeist","powerwhip","protect"],"baseAbility":"windrider","item":"sitrusberry","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Flutter Mane","details":"Flutter Mane, L73","condition":"201/201","active":false,"stats":{"atk":85,"def":123,"spa":240,"spd":240,"spe":240},"moves":["dazzlinggleam","icywind","shadowball","moonblast"],"baseAbility":"protosynthesis","item":"choicespecs","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Terrakion","details":"Terrakion, L78","condition":"270/270","active":false,"stats":{"atk":246,"def":185,"spa":157,"spd":185,"spe":214},"moves":["closecombat","stoneedge","rockslide","protect"],"baseAbility":"justified","item":"lifeorb","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Raichu","details":"Raichu-Alola, L89, M","condition":"252/252","active":false,"stats":{"atk":156,"def":140,"spa":220,"spd":202,"spe":247},"moves":["grassknot","focusblast","thunderbolt","psychic"],"baseAbility":"surgesurfer","item":"choicespecs","pokeball":"pokeball","ability":"surgesurfer","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: switch Flutter Mane - missing other pokemon
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Drifblim|Drifblim, L85, M|394/394
+|switch|p1a: Drifblim|Drifblim, L85, M|100/100
+|move|p2a: Minun|Super Fang|p2b: Whimsicott
+|split|p2
+|-damage|p2b: Whimsicott|107/230 par
+|-damage|p2b: Whimsicott|47/100 par
+|-enditem|p2b: Whimsicott|Sitrus Berry|[eat]
+|split|p2
+|-heal|p2b: Whimsicott|164/230 par|[from] item: Sitrus Berry
+|-heal|p2b: Whimsicott|72/100 par|[from] item: Sitrus Berry
+|move|p1b: Zamazenta|Body Press|p1a: Drifblim
+|-immune|p1a: Drifblim
+|cant|p2b: Whimsicott|par
+|
+|split|p2
+|-damage|p2a: Minun|88/257 brn|[from] brn
+|-damage|p2a: Minun|35/100 brn|[from] brn
+|upkeep
+|turn|8
+|
+|t:|
+|split|p2
+|switch|p2a: Brambleghast|Brambleghast, L86, M|235/235
+|switch|p2a: Brambleghast|Brambleghast, L86, M|100/100
+|cant|p2b: Whimsicott|par
+|move|p1b: Zamazenta|Body Press|p2a: Brambleghast
+|-immune|p2a: Brambleghast
+|move|p1a: Drifblim|Shadow Ball|p1b: Zamazenta
+|split|p1
+|-damage|p1b: Zamazenta|156/235
+|-damage|p1b: Zamazenta|67/100
+|
+|upkeep
+|turn|9
+|
+|t:|
+|move|p2b: Whimsicott|Encore||[still]
+|-fail|p2b: Whimsicott
+|move|p1b: Zamazenta|Iron Defense|p1b: Zamazenta
+|-boost|p1b: Zamazenta|def|2
+|move|p2a: Brambleghast|Power Whip|p1b: Zamazenta
+|-resisted|p1b: Zamazenta
+|split|p1
+|-damage|p1b: Zamazenta|129/235
+|-damage|p1b: Zamazenta|55/100
+|move|p1a: Drifblim|Will-O-Wisp|p2a: Brambleghast
+|-status|p2a: Brambleghast|brn
+|
+|split|p2
+|-damage|p2a: Brambleghast|221/235 brn|[from] brn
+|-damage|p2a: Brambleghast|95/100 brn|[from] brn
+|upkeep
+|turn|10
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Strength Sap","id":"strengthsap","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shadow Ball","id":"shadowball","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Tailwind","id":"tailwind","pp":24,"maxpp":24,"target":"allySide","disabled":false},{"move":"Will-O-Wisp","id":"willowisp","pp":23,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Coaching","id":"coaching","pp":16,"maxpp":16,"target":"adjacentAlly","disabled":false},{"move":"Iron Defense","id":"irondefense","pp":23,"maxpp":24,"target":"self","disabled":false},{"move":"Body Press","id":"bodypress","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Heavy Slam","id":"heavyslam","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Drifblim","details":"Drifblim, L85, M","condition":"394/394","active":true,"stats":{"atk":141,"def":124,"spa":202,"spd":141,"spe":185},"moves":["strengthsap","shadowball","tailwind","willowisp"],"baseAbility":"unburden","item":"sitrusberry","pokeball":"pokeball","ability":"unburden","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Zamazenta","details":"Zamazenta-Crowned, L67","condition":"129/235","active":true,"stats":{"atk":200,"def":227,"spa":147,"spd":227,"spe":211},"moves":["coaching","irondefense","bodypress","heavyslam"],"baseAbility":"dauntlessshield","item":"rustedshield","pokeball":"pokeball","ability":"dauntlessshield","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Torkoal","details":"Torkoal, L86, F","condition":"261/261","active":false,"stats":{"atk":151,"def":290,"spa":195,"spd":170,"spe":84},"moves":["solarbeam","protect","fireblast","willowisp"],"baseAbility":"drought","item":"sitrusberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Skuntank","details":"Skuntank, L85, M","condition":"314/314","active":false,"stats":{"atk":207,"def":163,"spa":169,"spd":152,"spe":192},"moves":["gunkshot","protect","knockoff","taunt"],"baseAbility":"aftermath","item":"lifeorb","pokeball":"pokeball","ability":"aftermath","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Vespiquen","details":"Vespiquen, F","condition":"30/302 par","active":false,"stats":{"atk":165,"def":261,"spa":217,"spd":261,"spe":137},"moves":["hurricane","helpinghand","pollenpuff","roost"],"baseAbility":"unnerve","item":"leftovers","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Steel","terastallized":"Steel"},{"ident":"p1: Deoxys","details":"Deoxys-Attack, L79","condition":"209/209","active":false,"stats":{"atk":330,"def":77,"spa":330,"spd":77,"spe":283},"moves":["protect","superpower","knockoff","psychoboost"],"baseAbility":"pressure","item":"lifeorb","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Poltergeist","id":"poltergeist","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Power Whip","id":"powerwhip","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Encore","id":"encore","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Helping Hand","id":"helpinghand","pp":32,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Moonblast","id":"moonblast","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Tailwind","id":"tailwind","pp":24,"maxpp":24,"target":"allySide","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Brambleghast","details":"Brambleghast, L86, M","condition":"221/235 brn","active":true,"stats":{"atk":247,"def":170,"spa":187,"spd":170,"spe":204},"moves":["disable","poltergeist","powerwhip","protect"],"baseAbility":"windrider","item":"sitrusberry","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Whimsicott","details":"Whimsicott, L81, F","condition":"164/230 par","active":true,"stats":{"atk":113,"def":184,"spa":171,"spd":168,"spe":235},"moves":["encore","helpinghand","moonblast","tailwind"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Minun","details":"Minun, L91, M","condition":"88/257 brn","active":false,"stats":{"atk":125,"def":143,"spa":188,"spd":207,"spe":225},"moves":["encore","superfang","nuzzle","thunderbolt"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Flutter Mane","details":"Flutter Mane, L73","condition":"201/201","active":false,"stats":{"atk":85,"def":123,"spa":240,"spd":240,"spe":240},"moves":["dazzlinggleam","icywind","shadowball","moonblast"],"baseAbility":"protosynthesis","item":"choicespecs","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Terrakion","details":"Terrakion, L78","condition":"270/270","active":false,"stats":{"atk":246,"def":185,"spa":157,"spd":185,"spe":214},"moves":["closecombat","stoneedge","rockslide","protect"],"baseAbility":"justified","item":"lifeorb","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Raichu","details":"Raichu-Alola, L89, M","condition":"252/252","active":false,"stats":{"atk":156,"def":140,"spa":220,"spd":202,"spe":247},"moves":["grassknot","focusblast","thunderbolt","psychic"],"baseAbility":"surgesurfer","item":"choicespecs","pokeball":"pokeball","ability":"surgesurfer","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Vespiquen|Vespiquen, F, tera:Steel|30/302 par
+|switch|p1b: Vespiquen|Vespiquen, F, tera:Steel|10/100 par
+|-ability|p1b: Vespiquen|Unnerve
+|split|p2
+|switch|p2b: Terrakion|Terrakion, L78|270/270
+|switch|p2b: Terrakion|Terrakion, L78|100/100
+|move|p2a: Brambleghast|Poltergeist|p2b: Terrakion
+|-activate|p2b: Terrakion|move: Poltergeist|Life Orb
+|split|p2
+|-damage|p2b: Terrakion|192/270
+|-damage|p2b: Terrakion|72/100
+|move|p1a: Drifblim|Will-O-Wisp|p1b: Vespiquen|[miss]
+|-miss|p1a: Drifblim|p1b: Vespiquen
+|
+|split|p1
+|-heal|p1b: Vespiquen|48/302 par|[from] item: Leftovers
+|-heal|p1b: Vespiquen|16/100 par|[from] item: Leftovers
+|split|p2
+|-damage|p2a: Brambleghast|207/235 brn|[from] brn
+|-damage|p2a: Brambleghast|89/100 brn|[from] brn
+|upkeep
+|turn|11
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Strength Sap","id":"strengthsap","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Shadow Ball","id":"shadowball","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Tailwind","id":"tailwind","pp":24,"maxpp":24,"target":"allySide","disabled":false},{"move":"Will-O-Wisp","id":"willowisp","pp":22,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Hurricane","id":"hurricane","pp":15,"maxpp":16,"target":"any","disabled":false},{"move":"Helping Hand","id":"helpinghand","pp":31,"maxpp":32,"target":"adjacentAlly","disabled":false},{"move":"Pollen Puff","id":"pollenpuff","pp":21,"maxpp":24,"target":"normal","disabled":false},{"move":"Roost","id":"roost","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Drifblim","details":"Drifblim, L85, M","condition":"394/394","active":true,"stats":{"atk":141,"def":124,"spa":202,"spd":141,"spe":185},"moves":["strengthsap","shadowball","tailwind","willowisp"],"baseAbility":"unburden","item":"sitrusberry","pokeball":"pokeball","ability":"unburden","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p1: Vespiquen","details":"Vespiquen, F","condition":"48/302 par","active":true,"stats":{"atk":165,"def":261,"spa":217,"spd":261,"spe":137},"moves":["hurricane","helpinghand","pollenpuff","roost"],"baseAbility":"unnerve","item":"leftovers","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false,"teraType":"Steel","terastallized":"Steel"},{"ident":"p1: Torkoal","details":"Torkoal, L86, F","condition":"261/261","active":false,"stats":{"atk":151,"def":290,"spa":195,"spd":170,"spe":84},"moves":["solarbeam","protect","fireblast","willowisp"],"baseAbility":"drought","item":"sitrusberry","pokeball":"pokeball","ability":"drought","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Skuntank","details":"Skuntank, L85, M","condition":"314/314","active":false,"stats":{"atk":207,"def":163,"spa":169,"spd":152,"spe":192},"moves":["gunkshot","protect","knockoff","taunt"],"baseAbility":"aftermath","item":"lifeorb","pokeball":"pokeball","ability":"aftermath","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Zamazenta","details":"Zamazenta-Crowned, L67","condition":"129/235","active":false,"stats":{"atk":200,"def":227,"spa":147,"spd":227,"spe":211},"moves":["coaching","irondefense","bodypress","heavyslam"],"baseAbility":"dauntlessshield","item":"rustedshield","pokeball":"pokeball","ability":"dauntlessshield","commanding":false,"reviving":false,"teraType":"Fire","terastallized":""},{"ident":"p1: Deoxys","details":"Deoxys-Attack, L79","condition":"209/209","active":false,"stats":{"atk":330,"def":77,"spa":330,"spd":77,"spe":283},"moves":["protect","superpower","knockoff","psychoboost"],"baseAbility":"pressure","item":"lifeorb","pokeball":"pokeball","ability":"pressure","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Disable","id":"disable","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Poltergeist","id":"poltergeist","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Power Whip","id":"powerwhip","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Close Combat","id":"closecombat","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Stone Edge","id":"stoneedge","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Rock Slide","id":"rockslide","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Brambleghast","details":"Brambleghast, L86, M","condition":"207/235 brn","active":true,"stats":{"atk":247,"def":170,"spa":187,"spd":170,"spe":204},"moves":["disable","poltergeist","powerwhip","protect"],"baseAbility":"windrider","item":"sitrusberry","pokeball":"pokeball","ability":"windrider","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Terrakion","details":"Terrakion, L78","condition":"192/270","active":true,"stats":{"atk":246,"def":185,"spa":157,"spd":185,"spe":214},"moves":["closecombat","stoneedge","rockslide","protect"],"baseAbility":"justified","item":"lifeorb","pokeball":"pokeball","ability":"justified","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Minun","details":"Minun, L91, M","condition":"88/257 brn","active":false,"stats":{"atk":125,"def":143,"spa":188,"spd":207,"spe":225},"moves":["encore","superfang","nuzzle","thunderbolt"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p2: Flutter Mane","details":"Flutter Mane, L73","condition":"201/201","active":false,"stats":{"atk":85,"def":123,"spa":240,"spd":240,"spe":240},"moves":["dazzlinggleam","icywind","shadowball","moonblast"],"baseAbility":"protosynthesis","item":"choicespecs","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Whimsicott","details":"Whimsicott, L81, F","condition":"164/230 par","active":false,"stats":{"atk":113,"def":184,"spa":171,"spd":168,"spe":235},"moves":["encore","helpinghand","moonblast","tailwind"],"baseAbility":"prankster","item":"","pokeball":"pokeball","ability":"prankster","commanding":false,"reviving":false,"teraType":"Fire","terastallized":"Fire"},{"ident":"p2: Raichu","details":"Raichu-Alola, L89, M","condition":"252/252","active":false,"stats":{"atk":156,"def":140,"spa":220,"spd":202,"spe":247},"moves":["grassknot","focusblast","thunderbolt","psychic"],"baseAbility":"surgesurfer","item":"choicespecs","pokeball":"pokeball","ability":"surgesurfer","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't do anything: The game is over
+@message
+update
+|
+|tie
+|chat|after the end
+@message
+end
+{"winner":"","seed":"gen5,697231e99dc068c8","turns":11,"p1":"Alice","p2":"Bob","p1team":[{"name":"Deoxys","species":"Deoxys-Attack","speciesId":"deoxysattack","gender":"N","shiny":false,"level":79,"moves":["protect","superpower","knockoff","psychoboost"],"ability":"Pressure","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Life Orb","teraType":"Ghost","role":"Offensive Protect"},{"name":"Vespiquen","species":"Vespiquen","speciesId":"vespiquen","gender":"F","shiny":false,"level":100,"moves":["hurricane","helpinghand","pollenpuff","roost"],"ability":"Unnerve","evs":{"hp":85,"atk":0,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":0,"def":31,"spa":31,"spd":31,"spe":31},"item":"Leftovers","teraType":"Steel","role":"Doubles Bulky Attacker"},{"name":"Drifblim","species":"Drifblim","speciesId":"drifblim","gender":"M","shiny":false,"level":85,"moves":["strengthsap","shadowball","tailwind","willowisp"],"ability":"Unburden","evs":{"hp":85,"atk":0,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":0,"def":31,"spa":31,"spd":31,"spe":31},"item":"Sitrus Berry","teraType":"Ghost","role":"Doubles Support"},{"name":"Skuntank","species":"Skuntank","speciesId":"skuntank","gender":"M","shiny":false,"level":85,"moves":["gunkshot","protect","knockoff","taunt"],"ability":"Aftermath","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Life Orb","teraType":"Flying","role":"Doubles Fast Attacker"},{"name":"Zamazenta","species":"Zamazenta","speciesId":"zamazentacrowned","gender":"N","shiny":false,"level":67,"moves":["coaching","irondefense","bodypress","heavyslam"],"ability":"Dauntless Shield","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Rusted Shield","teraType":"Fire","role":"Doubles Setup Sweeper"},{"name":"Torkoal","species":"Torkoal","speciesId":"torkoal","gender":"F","shiny":false,"level":86,"moves":["solarbeam","protect","fireblast","willowisp"],"ability":"Drought","evs":{"hp":85,"atk":0,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":0,"def":31,"spa":31,"spd":31,"spe":31},"item":"Sitrus Berry","teraType":"Grass","role":"Doubles Bulky Attacker"}],"p2team":[{"name":"Raichu","species":"Raichu-Alola","speciesId":"raichualola","gender":"M","shiny":false,"level":89,"moves":["grassknot","focusblast","thunderbolt","psychic"],"ability":"Surge Surfer","evs":{"hp":85,"atk":0,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":0,"def":31,"spa":31,"spd":31,"spe":31},"item":"Choice Specs","teraType":"Grass","role":"Choice Item user"},{"name":"Whimsicott","species":"Whimsicott","speciesId":"whimsicott","gender":"F","shiny":false,"level":81,"moves":["encore","helpinghand","moonblast","tailwind"],"ability":"Prankster","evs":{"hp":85,"atk":0,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":0,"def":31,"spa":31,"spd":31,"spe":31},"item":"Sitrus Berry","teraType":"Fire","role":"Doubles Support"},{"name":"Brambleghast","species":"Brambleghast","speciesId":"brambleghast","gender":"M","shiny":false,"level":86,"moves":["disable","poltergeist","powerwhip","protect"],"ability":"Wind Rider","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Sitrus Berry","teraType":"Water","role":"Doubles Support"},{"name":"Terrakion","species":"Terrakion","speciesId":"terrakion","gender":"N","shiny":false,"level":78,"moves":["closecombat","stoneedge","rockslide","protect"],"ability":"Justified","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Life Orb","teraType":"Ghost","role":"Offensive Protect"},{"name":"Flutter Mane","species":"Flutter Mane","speciesId":"fluttermane","gender":"N","shiny":false,"level":73,"moves":["dazzlinggleam","icywind","shadowball","moonblast"],"ability":"Protosynthesis","evs":{"hp":85,"atk":0,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":0,"def":31,"spa":31,"spd":31,"spe":31},"item":"Choice Specs","teraType":"Fairy","role":"Choice Item user"},{"name":"Minun","species":"Minun","speciesId":"minun","gender":"M","shiny":false,"level":91,"moves":["encore","superfang","nuzzle","thunderbolt"],"ability":"Volt Absorb","evs":{"hp":85,"atk":85,"def":85,"spa":85,"spd":85,"spe":85},"ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31},"item":"Sitrus Berry","teraType":"Flying","role":"Doubles Support"}],"score":[6,6],"inputLog":[">start {\"formatid\":\"gen9randomdoublesbattle\",\"seed\":\"gen5,697231e99dc068c8\"}",">player p1 {\"name\":\"Alice\",\"seed\":\"gen5,d3417f4fcc75cb53\",\"avatar\":\"lucas\"}",">player p2 {\"name\":\"Bob\",\"seed\":\"gen5,bdce10e44df75316\"}",">p1 switch 6, move pollenpuff -1 terastallize",">p2 switch 6, move encore -1 terastallize",">p1 move fireblast -2, move pollenpuff -1",">p2 move superfang +1, switch 5",">p1 move solarbeam +1, move hurricane +1",">p2 move nuzzle +2, switch 4",">p1 move solarbeam -2, move helpinghand -1",">p2 move nuzzle -2, switch 5",">p1 move willowisp -2, move pollenpuff +1",">p2 move nuzzle +2, move moonblast +2",">p1 move willowisp +1, switch 5",">p2 move encore, move encore",">p1 switch 3, move bodypress -1",">p2 move superfang -2, move moonblast +1",">p1 move shadowball -2, move bodypress +1",">p2 switch 3, move helpinghand -1",">p1 move willowisp +1, move irondefense",">p2 move powerwhip +2, move encore -1",">p1 move willowisp -2, switch 5",">p2 move poltergeist -2, switch 5",">forcetie",">chat after the end",">forcewin p1"]}
+@message
+requesteddata
+>start {"formatid":"gen9randomdoublesbattle","seed":"gen5,697231e99dc068c8"}
+>player p1 {"name":"Alice","seed":"gen5,d3417f4fcc75cb53","avatar":"lucas"}
+>player p2 {"name":"Bob","seed":"gen5,bdce10e44df75316"}
+>p1 switch 6, move pollenpuff -1 terastallize
+>p2 switch 6, move encore -1 terastallize
+>p1 move fireblast -2, move pollenpuff -1
+>p2 move superfang +1, switch 5
+>p1 move solarbeam +1, move hurricane +1
+>p2 move nuzzle +2, switch 4
+>p1 move solarbeam -2, move helpinghand -1
+>p2 move nuzzle -2, switch 5
+>p1 move willowisp -2, move pollenpuff +1
+>p2 move nuzzle +2, move moonblast +2
+>p1 move willowisp +1, switch 5
+>p2 move encore, move encore
+>p1 switch 3, move bodypress -1
+>p2 move superfang -2, move moonblast +1
+>p1 move shadowball -2, move bodypress +1
+>p2 switch 3, move helpinghand -1
+>p1 move willowisp +1, move irondefense
+>p2 move powerwhip +2, move encore -1
+>p1 move willowisp -2, switch 5
+>p2 move poltergeist -2, switch 5
+>forcetie
+>chat after the end
+>forcewin p1

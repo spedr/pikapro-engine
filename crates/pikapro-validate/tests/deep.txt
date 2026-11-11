@@ -1,0 +1,337 @@
+# Hand-written teams for the validator paths random teams rarely reach
+# (egg moves above the level, moves from a prevolution, events, Sketch,
+# Pokemon GO, special formes, Champions megas and Stat Points). The
+# expectations are Showdown's, recorded with
+#   validate_fuzz --check crates/pikapro-validate/tests/deep.txt --write
+# Never edit an expect line by hand.
+
+case deep-chansey-levelup-egg
+format gen9vgc2025regi
+set Chansey||Natural Cure|Bold|20|4,0,0,0,0,0|31,31,31,31,31,31|Healing Wish,Soft-Boiled,Last Resort||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+played Chansey||Natural Cure|Healing Wish,Soft-Boiled,Last Resort|F|50|Normal
+end
+case deep-chansey-levelup-egg-one
+format gen9vgc2025regi
+set Chansey||Natural Cure|Bold|20|4,0,0,0,0,0|31,31,31,31,31,31|Healing Wish,Tackle||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+expect Chansey can't learn Tackle.
+played Chansey||Natural Cure|Healing Wish,Tackle|F|20|Normal
+end
+case deep-petilil-levelup-egg
+format gen9vgc2025regi
+set Petilil||Chlorophyll|Bold|10|4,0,0,0,0,0|31,31,31,31,31,31|After You,Entrainment,Synthesis||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+played Petilil||Chlorophyll|After You,Entrainment,Synthesis|F|50|Grass
+end
+case deep-bounsweet-levelup-egg
+format gen9vgc2025regi
+set Bounsweet||Leaf Guard|Bold|10|4,0,0,0,0,0|31,31,31,31,31,31|Aromatic Mist,Flail,Teeter Dance||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+played Bounsweet||Leaf Guard|Aromatic Mist,Flail,Teeter Dance|F|50|Grass
+end
+case deep-vullaby-levelup-egg
+format gen9vgc2025regi
+set Vullaby||Big Pecks|Bold|10|4,0,0,0,0,0|31,31,31,31,31,31|Defog,Whirlwind,Attract||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+played Vullaby||Big Pecks|Defog,Whirlwind,Attract|F|50|Dark
+end
+case deep-raichu-alola-prevo
+format gen9vgc2025regi
+set Raichu-Alola||Surge Surfer|Timid|50|4,0,0,252,0,252|31,31,31,31,31,31|Volt Tackle,Present||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+played Raichu-Alola||Surge Surfer|Volt Tackle,Present||50|Electric
+end
+case deep-raichu-alola-prevo-2
+format gen9vgc2025regi
+set Raichu-Alola||Surge Surfer|Timid|50|4,0,0,252,0,252|31,31,31,31,31,31|Fly,Disarming Voice||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+expect Raichu-Alola's move Fly is from a Pikachu that can't be transferred to USUM to evolve into Raichu-Alola.
+played Raichu-Alola||Surge Surfer|Fly,Disarming Voice||100|Electric
+end
+case deep-farigiraf-carry
+format gen9vgc2025regi
+set Farigiraf||Armor Tail|Quiet|50|252,0,4,252,0,0|31,31,31,31,31,31|Ally Switch,Beat Up,Double Kick,Mean Look||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+played Farigiraf||Armor Tail|Ally Switch,Beat Up,Double Kick,Mean Look||50|Normal
+end
+case deep-sylveon-carry
+format gen9vgc2025regi
+set Sylveon||Pixilate|Modest|50|252,0,4,252,0,0|31,31,31,31,31,31|Detect,Double Kick,Flail,Tickle||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+played Sylveon||Pixilate|Detect,Double Kick,Flail,Tickle||50|Fairy
+end
+case deep-ambipom-carry
+format gen9vgc2025regi
+set Ambipom||Technician|Jolly|50|4,252,0,0,0,252|31,31,31,31,31,31|Beat Up,Counter,Fake Out,Quick Guard||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+played Ambipom||Technician|Beat Up,Counter,Fake Out,Quick Guard||50|Normal
+end
+case deep-tsareena-carry
+format gen9vgc2025regi
+set Tsareena||Queenly Majesty|Jolly|50|4,252,0,0,0,252|31,31,31,31,31,31|Celebrate,Acupressure,Stomp||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+expect Tsareena's event/egg moves are from an evolution, and are incompatible with its moves from Bounsweet.
+played Tsareena||Queenly Majesty|Celebrate,Acupressure,Stomp|F|100|Grass
+end
+case deep-volbeat-mother
+format gen9vgc2025regi
+set Volbeat||Prankster|Bold|10|4,0,0,0,0,0|31,31,31,31,31,31|Infestation,Moonlight,Tail Glow||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+played Volbeat||Prankster|Infestation,Moonlight,Tail Glow|M|50|Bug
+end
+case deep-indeedee-mother
+format gen9vgc2025regi
+set Indeedee||Psychic Surge|Bold|10|4,0,0,0,0,0|31,31,31,31,31,31|After You,Healing Wish,Last Resort,Power Split||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+expect Indeedee's move After You is learned at level 25.
+played Indeedee||Psychic Surge|After You,Healing Wish,Last Resort,Power Split|M|10|Psychic
+end
+case deep-gastrodon-event-yawn
+format gen9vgc2025regi
+set Gastrodon||Storm Drain|Bold|30|4,0,0,0,0,0|31,31,31,31,31,31|Yawn,Surf||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+played Gastrodon||Storm Drain|Yawn,Surf||50|Water
+end
+case deep-pichu-volt-tackle-low
+format gen9vgc2025regi
+set Pichu||Static|Timid|5|4,0,0,0,0,0|31,31,31,31,31,31|Volt Tackle||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+played Pichu||Static|Volt Tackle||50|Electric
+end
+case deep-smeargle-sketch
+format gen9vgc2025regi
+set Smeargle||Own Tempo|Jolly|50|4,0,0,0,0,252|31,31,31,31,31,31|Spore,Follow Me,Fake Out,V-create||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+expect Smeargle's move V-create is not obtainable without hacking or glitches in Gen 9.
+played Smeargle||Own Tempo|Spore,Follow Me,Fake Out,V-create||100|Normal
+end
+case deep-smeargle-sketch-low
+format gen9vgc2025regi
+set Smeargle||Own Tempo|Jolly|5|4,0,0,0,0,252|31,31,31,31,31,31|Spore,Follow Me,Fake Out,Dark Void||||0|ev
+expect You must bring at least 4 Pokémon (your team has 1).
+expect Smeargle's move Dark Void can't be Sketched.
+played Smeargle||Own Tempo|Spore,Follow Me,Fake Out,Dark Void||5|Normal
+end
+case deep-ogerpon-mask
+format gen9vgc2025regi
+set Ogerpon-Wellspring||Water Absorb|Jolly|50|4,252,0,0,0,252|31,31,31,31,31,31|Ivy Cudgel|Water|||0|ev
+set Ogerpon||Defiant|Jolly|50|4,252,0,0,0,252|31,31,31,31,31,31|Ivy Cudgel|Fire|||0|ev
+set Ogerpon|Hearthflame Mask|Mold Breaker|Jolly|50|4,252,0,0,0,252|31,31,31,31,31,31|Ivy Cudgel|Fire|||0|ev
+set Terapagos-Stellar||Teraform Zero|Modest|50|4,0,0,252,0,252|31,31,31,31,31,31|Tera Starstorm|Water|||0|ev
+expect Ogerpon needs to hold Wellspring Mask to be in its Wellspring forme.
+expect (It will revert to its Teal forme if you remove the item or give it a different item.)
+expect Ogerpon's Terastal type needs to be Grass.
+expect Terapagos's Terastal type needs to be Stellar.
+expect You are limited to one of each Pokémon by Species Clause.
+expect (You have more than one Ogerpon)
+played Ogerpon-Wellspring||Water Absorb|Ivy Cudgel|F|100|Water
+played Ogerpon||Defiant|Ivy Cudgel|F|100|Fire
+played Ogerpon-Hearthflame|Hearthflame Mask|Mold Breaker|Ivy Cudgel|F|50|Fire
+played Terapagos||Tera Shift|Tera Starstorm|M|100|Water
+end
+case deep-urshifu-kubfu
+format gen9vgc2025regi
+set Urshifu||Unseen Fist|Jolly|20|4,252,0,0,0,252|31,31,31,31,31,31|Wicked Blow||||0|ev
+set Kubfu||Inner Focus|Jolly|50|4,252,0,0,0,252|31,31,31,31,31,31|Wicked Blow||||0|ev
+set Calyrex-Shadow||As One (Spectrier)|Timid|50|4,0,0,252,0,252|20,31,31,31,31,31|Astral Barrage||||0|ev
+set Miraidon||Hadron Engine|Timid|50|4,0,0,252,0,252|0,0,31,31,31,31|Electro Drift||||1|ev
+expect Kubfu can't learn Wicked Blow.
+expect Miraidon is only obtainable from events - it needs to match one of its events:
+expect Miraidon must not be shiny to be from its event #1.
+expect Miraidon must have 31 HP IVs to be from its event #1.
+expect Miraidon must have 31 Attack IVs to be from its event #1.
+expect Miraidon must not be shiny to be from its event #2.
+expect Miraidon must have 25 HP IVs to be from its event #2.
+expect Miraidon must have 31 Attack IVs to be from its event #2.
+expect Miraidon can only have Hidden Power Dark to be from its event #2.
+expect Miraidon must have 31 HP IVs to be from its event #3.
+expect Miraidon must have 20 Attack IVs to be from its event #3.
+expect Miraidon can only have Hidden Power Dragon to be from its event #3.
+played Urshifu||Unseen Fist|Wicked Blow||50|Fighting
+played Kubfu||Inner Focus|Wicked Blow||100|Fighting
+played Calyrex-Shadow||As One (Spectrier)|Astral Barrage|N|50|Psychic
+played Miraidon||Hadron Engine|Electro Drift|N|100|Electric
+end
+case deep-eevee-evolutions-events
+format gen9vgc2025regi
+set Pikachu||Static|Timid|50|4,0,0,252,0,252|31,31,31,31,31,31|Volt Tackle,Fly,Surf,Sing||||0|ev
+set Eevee||Adaptability|Timid|10|4,0,0,252,0,252|31,31,31,31,31,31|Wish,Yawn,Celebrate|||M|1|ev
+set Mew||Synchronize|Timid|50|4,0,0,252,0,252|31,31,31,31,31,31|Psychic||||1|ev
+set Meltan||Magnet Pull|Timid|5|4,0,0,252,0,252|30,31,31,31,31,31|Thunderbolt||||0|ev
+expect Pikachu's move Sing can't be transferred from Gen 8 to 9.
+expect Eevee's move Celebrate can't be transferred from Gen 8 to 9.
+expect Mew is tagged Mythical, which is banned by Flat Rules.
+expect Meltan is tagged Mythical, which is banned by Flat Rules.
+expect Meltan's move Thunderbolt can't be transferred from Gen 8 to 9.
+expect Meltan is only obtainable from Pokemon GO, and failed to validate because:
+expect Meltan must have odd non-Speed IVs to be from Pokemon GO.
+played Pikachu||Static|Volt Tackle,Fly,Surf,Sing||100|Electric
+played Eevee||Adaptability|Wish,Yawn,Celebrate|M|10|Normal
+played Mew||Synchronize|Psychic|N|100|Psychic
+played Meltan||Magnet Pull|Thunderbolt|N|5|Steel
+end
+case deep-champions-megas
+format gen9championsvgc2026regmc
+set Charizard|Charizardite Y|Drought|Timid|50|2,0,0,32,0,32|31,31,31,31,31,31|Heat Wave,Protect||||0|sp
+set Charizard-Mega-Y|Charizardite Y|Drought|Timid|50|2,0,0,32,0,32|31,31,31,31,31,31|Heat Wave||||0|sp
+set Garchomp|Charizardite X|Rough Skin|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Earthquake,Dragon Claw||||0|sp
+set Kangaskhan|Kangaskhanite|Scrappy|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Fake Out,Double-Edge||||0|sp
+set Gengar|Gengarite|Shadow Tag|Timid|50|2,0,0,32,0,32|31,31,31,31,31,31|Shadow Ball||||0|sp
+set Mewtwo|Mewtwonite X|Pressure|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Psychic||||0|sp
+expect Mewtwo (Mewtwo-Mega-X) is tagged Restricted Legendary, which is banned by Flat Rules.
+expect Mewtwo's item Mewtwonite X does not exist in Gen 9.
+expect You are limited to one of each Pokémon by Species Clause.
+expect (You have more than one Charizard)
+expect You are limited to 1 of each item by Item Clause.
+expect (You have more than 1 Charizardite Y)
+played Charizard|Charizardite Y|Blaze|Heat Wave,Protect||50|
+played Charizard|Charizardite Y|Blaze|Heat Wave||50|
+played Garchomp|Charizardite X|Rough Skin|Earthquake,Dragon Claw||50|
+played Kangaskhan|Kangaskhanite|Scrappy|Fake Out,Double-Edge|F|50|
+played Gengar|Gengarite|Cursed Body|Shadow Ball||50|
+played Mewtwo|Mewtwonite X|Pressure|Psychic|N|100|
+end
+case deep-champions-no-prevo-learnsets
+format gen9championsvgc2026regmc
+set Garchomp||Rough Skin|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Outrage,Sand Tomb,Draco Meteor,Iron Head||||0|sp
+set Incineroar||Intimidate|Adamant|50|32,32,2,0,0,0|31,31,31,31,31,31|Fake Out,Flare Blitz,Parting Shot,Ember||||0|sp
+set Sneasler||Unburden|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Dire Claw,Close Combat||||0|sp
+set Kingambit||Defiant|Adamant|50|32,32,2,0,0,0|31,31,31,31,31,31|Kowtow Cleave,Sucker Punch||||0|sp
+set Rotom-Wash||Levitate|Modest|50|32,0,2,32,0,0|31,31,31,31,31,31|Hydro Pump||||0|sp
+set Farigiraf||Armor Tail|Quiet|50|32,0,2,32,0,0|31,31,31,31,31,31|Trick Room||||0|sp
+expect Incineroar's move Ember does not exist in Gen 9.
+expect Incineroar can't learn Ember.
+played Garchomp||Rough Skin|Outrage,Sand Tomb,Draco Meteor,Iron Head||50|
+played Incineroar||Intimidate|Fake Out,Flare Blitz,Parting Shot,Ember||100|
+played Sneasler||Unburden|Dire Claw,Close Combat||50|
+played Kingambit||Defiant|Kowtow Cleave,Sucker Punch||50|
+played Rotom-Wash||Levitate|Hydro Pump|N|50|
+played Farigiraf||Armor Tail|Trick Room||50|
+end
+case deep-champions-stats
+format gen9championsvgc2026regmc
+set Garchomp||Rough Skin|Serious|50|0,0,0,0,0,0|31,31,31,31,31,31|Earthquake||||0|sp
+set Incineroar||Intimidate|Adamant|50|33,32,2,0,0,0|31,31,31,31,31,31|Fake Out||||0|sp
+set Sneasler||Unburden|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,0|Dire Claw||||0|ev
+set Kingambit||Defiant|Adamant|50|255,253,2,0,0,0|31,31,31,31,31,31|Sucker Punch||||0|sp
+set Rotom-Wash||Levitate|Hardy|50|0,0,0,0,0,0|31,31,31,31,31,31|Hydro Pump||||0|sp
+set Farigiraf||Armor Tail|Quiet|120|32,0,2,32,0,0|31,31,31,31,31,31|Trick Room||||0|sp
+expect Garchomp has exactly 0 Stat Points - did you forget to invest it? (If this was intentional, change your Nature to a different neutral Nature, which won't change its stats but will tell us that it wasn't a mistake).
+expect Incineroar has more than 32 Stat Points in HP.
+expect Incineroar has 67 total Stat Points, which is more than this format's limit of 66.
+expect Sneasler's IVs are not maxed out, but this format requires all IVs to be 31.
+expect Kingambit has more than 32 Stat Points in HP.
+expect Kingambit has more than 32 Stat Points in Attack.
+expect Kingambit has exactly 510 EVs, but this format does not restrict you to 510 EVs (If this was intentional, add exactly 1 to one of your EVs, which won't change its stats but will tell us that it wasn't a mistake).
+expect Kingambit has 510 total Stat Points, which is more than this format's limit of 66.
+expect Farigiraf (level 120) is above the maximum level of 100
+played Garchomp||Rough Skin|Earthquake||100|
+played Incineroar||Intimidate|Fake Out||100|
+played Sneasler||Unburden|Dire Claw||100|
+played Kingambit||Defiant|Sucker Punch||100|
+played Rotom-Wash||Levitate|Hydro Pump|N|50|
+played Farigiraf||Armor Tail|Trick Room||120|
+end
+case deep-champions-nicknames
+format gen9championsvgc2026regmc
+set Garchomp||Rough Skin|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Earthquake||Chompy|M|0|sp
+set Incineroar||Intimidate|Adamant|50|32,32,2,0,0,0|31,31,31,31,31,31|Fake Out||Chompy|F|1|sp
+set Sneasler||Unburden|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Dire Claw||Garchomp||0|sp
+set Kingambit||Defiant|Adamant|50|32,32,2,0,0,0|31,31,31,31,31,31|Sucker Punch||kingambit||0|sp
+set Rotom-Wash||Levitate|Modest|50|32,0,2,32,0,0|31,31,31,31,31,31|Hydro Pump||Rotom||0|sp
+set Farigiraf||Armor Tail|Quiet|50|32,0,2,32,0,0|31,31,31,31,31,31|Trick Room||This Name Is Far Too Long||0|sp
+expect Garchomp (Sneasler) must not be nicknamed a different Pokémon species than what it actually is.
+expect Farigiraf's nickname "This Name Is Far Too Long" is too long.
+expect (It's 25 characters long, but should be 18 or less. Some characters, like emojis, may count as more than one.)
+expect Your Pokémon must have different nicknames.
+expect (You have more than one Chompy)
+played Garchomp||Rough Skin|Earthquake|M|50|
+played Incineroar||Intimidate|Fake Out|F|50|
+played Sneasler||Unburden|Dire Claw||100|
+played Kingambit||Defiant|Sucker Punch||50|
+played Rotom-Wash||Levitate|Hydro Pump|N|50|
+played Farigiraf||Armor Tail|Trick Room||100|
+end
+case deep-champions-bss-legal
+format gen9championsbssregmc
+set Incineroar|Sitrus Berry|Intimidate|Careful|50|32,2,0,0,32,0|31,31,31,31,31,31|Fake Out,Flare Blitz,Parting Shot,Protect||||0|sp
+set Charizard|Charizardite Y|Blaze|Timid|50|2,0,0,32,0,32|31,31,31,31,31,31|Heat Wave,Air Slash,Solar Beam,Protect||||0|sp
+set Garchomp|Garchompite|Rough Skin|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Earthquake,Dragon Claw,Rock Slide,Protect||||0|sp
+set Gholdengo|Life Orb|Good as Gold|Modest|50|32,0,0,32,2,0|31,31,31,31,31,31|Make It Rain,Shadow Ball,Nasty Plot,Protect||||0|sp
+set Rillaboom|Miracle Seed|Grassy Surge|Adamant|50|32,32,0,0,2,0|31,31,31,31,31,31|Fake Out,Grassy Glide,Wood Hammer,Protect||||0|sp
+set Sinistcha|Leftovers|Hospitality|Calm|50|32,0,2,0,32,0|31,31,31,31,31,31|Matcha Gotcha,Rage Powder,Strength Sap,Protect||||0|sp
+played Incineroar|Sitrus Berry|Intimidate|Fake Out,Flare Blitz,Parting Shot,Protect||50|
+played Charizard|Charizardite Y|Blaze|Heat Wave,Air Slash,Solar Beam,Protect||50|
+played Garchomp|Garchompite|Rough Skin|Earthquake,Dragon Claw,Rock Slide,Protect||50|
+played Gholdengo|Life Orb|Good as Gold|Make It Rain,Shadow Ball,Nasty Plot,Protect|N|50|
+played Rillaboom|Miracle Seed|Grassy Surge|Fake Out,Grassy Glide,Wood Hammer,Protect||50|
+played Sinistcha|Leftovers|Hospitality|Matcha Gotcha,Rage Powder,Strength Sap,Protect|N|50|
+end
+case deep-champions-bss-levels
+format gen9championsbssregmc
+set Incineroar|Sitrus Berry|Intimidate|Careful|100|32,2,0,0,32,0|31,31,31,31,31,31|Fake Out,Flare Blitz||||0|sp
+set Charizard-Mega-Y|Charizardite Y|Drought|Timid|1|2,0,0,32,0,32|31,31,31,31,31,31|Heat Wave||||0|sp
+set Garchomp|Garchompite|Rough Skin|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Earthquake||||0|sp
+set Gholdengo|Life Orb|Good as Gold|Modest|5|32,0,0,32,2,0|31,31,31,31,31,31|Make It Rain||||0|sp
+set Rillaboom|Miracle Seed|Grassy Surge|Adamant|75|32,32,0,0,2,0|31,31,31,31,31,31|Grassy Glide||||0|sp
+set Sinistcha|Leftovers|Hospitality|Calm|50|32,0,2,0,32,0|31,31,31,31,31,31|Matcha Gotcha||||0|sp
+played Incineroar|Sitrus Berry|Intimidate|Fake Out,Flare Blitz||50|
+played Charizard|Charizardite Y|Blaze|Heat Wave||50|
+played Garchomp|Garchompite|Rough Skin|Earthquake||50|
+played Gholdengo|Life Orb|Good as Gold|Make It Rain|N|50|
+played Rillaboom|Miracle Seed|Grassy Surge|Grassy Glide||50|
+played Sinistcha|Leftovers|Hospitality|Matcha Gotcha|N|50|
+end
+case deep-champions-bss-three
+format gen9championsbssregmc
+set Incineroar|Sitrus Berry|Intimidate|Careful|50|32,2,0,0,32,0|31,31,31,31,31,31|Fake Out,Flare Blitz||||0|sp
+set Garchomp|Garchompite|Rough Skin|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Earthquake||||0|sp
+set Sinistcha|Leftovers|Hospitality|Calm|50|32,0,2,0,32,0|31,31,31,31,31,31|Matcha Gotcha||||0|sp
+expect You must bring at least 6 Pokémon (your team has 3).
+played Incineroar|Sitrus Berry|Intimidate|Fake Out,Flare Blitz||50|
+played Garchomp|Garchompite|Rough Skin|Earthquake||50|
+played Sinistcha|Leftovers|Hospitality|Matcha Gotcha|N|50|
+end
+case deep-champions-bss-seven
+format gen9championsbssregmc
+set Incineroar|Sitrus Berry|Intimidate|Careful|50|32,2,0,0,32,0|31,31,31,31,31,31|Fake Out,Flare Blitz||||0|sp
+set Charizard|Charizardite Y|Blaze|Timid|50|2,0,0,32,0,32|31,31,31,31,31,31|Heat Wave||||0|sp
+set Garchomp|Garchompite|Rough Skin|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Earthquake||||0|sp
+set Gholdengo|Life Orb|Good as Gold|Modest|50|32,0,0,32,2,0|31,31,31,31,31,31|Make It Rain||||0|sp
+set Rillaboom|Miracle Seed|Grassy Surge|Adamant|50|32,32,0,0,2,0|31,31,31,31,31,31|Grassy Glide||||0|sp
+set Sinistcha|Leftovers|Hospitality|Calm|50|32,0,2,0,32,0|31,31,31,31,31,31|Matcha Gotcha||||0|sp
+set Kingambit|Black Glasses|Defiant|Adamant|50|32,32,2,0,0,0|31,31,31,31,31,31|Kowtow Cleave||||0|sp
+expect You may only bring up to 6 Pokémon (your team has 7).
+played Incineroar|Sitrus Berry|Intimidate|Fake Out,Flare Blitz||50|
+played Charizard|Charizardite Y|Blaze|Heat Wave||50|
+played Garchomp|Garchompite|Rough Skin|Earthquake||50|
+played Gholdengo|Life Orb|Good as Gold|Make It Rain|N|50|
+played Rillaboom|Miracle Seed|Grassy Surge|Grassy Glide||50|
+played Sinistcha|Leftovers|Hospitality|Matcha Gotcha|N|50|
+played Kingambit|Black Glasses|Defiant|Kowtow Cleave||50|
+end
+case deep-champions-bss-banned
+format gen9championsbssregmc
+set Mewtwo||Pressure|Timid|50|2,0,0,32,0,32|31,31,31,31,31,31|Psychic||||0|sp
+set Meloetta||Serene Grace|Timid|50|2,0,0,32,0,32|31,31,31,31,31,31|Psychic||||0|sp
+set Garchomp|Leftovers|Rough Skin|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Earthquake||||0|sp
+set Garchomp|Garchompite|Rough Skin|Jolly|50|2,32,0,0,0,32|31,31,31,31,31,31|Earthquake||||0|sp
+set Sinistcha|Leftovers|Hospitality|Calm|50|33,0,2,0,32,0|31,31,31,31,31,31|Matcha Gotcha||||0|sp
+set Kingambit||Defiant|Adamant|50|32,32,2,0,0,0|31,31,31,31,31,31|Kowtow Cleave,Spore||||0|sp
+expect Mewtwo is tagged Restricted Legendary, which is banned by Flat Rules.
+expect Meloetta is tagged Mythical, which is banned by Flat Rules.
+expect Sinistcha has more than 32 Stat Points in HP.
+expect Sinistcha has 67 total Stat Points, which is more than this format's limit of 66.
+expect Kingambit can't learn Spore.
+expect You are limited to one of each Pokémon by Species Clause.
+expect (You have more than one Garchomp)
+expect You are limited to 1 of each item by Item Clause.
+expect (You have more than 1 Leftovers)
+played Mewtwo||Pressure|Psychic|N|100|
+played Meloetta||Serene Grace|Psychic|N|100|
+played Garchomp|Leftovers|Rough Skin|Earthquake||50|
+played Garchomp|Garchompite|Rough Skin|Earthquake||50|
+played Sinistcha|Leftovers|Hospitality|Matcha Gotcha|N|100|
+played Kingambit||Defiant|Kowtow Cleave,Spore||100|
+end

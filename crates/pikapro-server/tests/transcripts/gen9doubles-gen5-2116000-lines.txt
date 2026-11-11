@@ -1,0 +1,120 @@
+# gen9doubles-gen5-2116000-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay spectator
+@write
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,8248d6aa08b12180"}
+@write
+>player p1 {"name":"Alice","team":"Doduo|||RunAway|BurningBulwark|Modest|226,37,57,41,,147|M|||50|,,,,,Rock]Inteleon||GriseousCore|Sniper|TripleKick,VoltTackle,ZingZap|Careful|157,2,,109,61,174|F|||50|,,,,,Fairy]Sir Hops-a-Lot|Raikou||InnerFocus|DrillPeck|Brave|14,83,93,1,168,53||||50|,,,,,Dragon]Zoë|Wingull|KingsRock|Hydration|LastRespects,FirstImpression,WildboltStorm|Rash|207,71,50,37,13,115||||50|,,,,,Fighting]Alcremie-Matcha-Cream|||AromaVeil|Peck|Careful|163,25,95,39,34,57||||50|,,,,,Dragon]Trumbeak||PremierBall|KeenEye|SkillSwap,BrutalSwing|Bold|201,14,51,103,6,66|||S|50|,,,,,Ghost"}
+@write
+>player p2 {"name":"Bob","team":"Espurr|||OwnTempo|MagmaStorm,WaterShuriken|Relaxed|83,168,14,31,173,34||||50|,,,,,Flying]Rotom|||Levitate|MorningSun|Quiet|177,89,4,,230,9||||50|,,,,,Ice]Ditto|||Imposter|PyroBall,IvyCudgel,Bulldoze,PayDay|Lax|221,78,14,27,30,14||||50|,,,,,Electric]Zoë|Clauncher||MegaLauncher|SuckerPunch,SheerCold,SandTomb|Mild|73,43,180,35,115,60|F|||50|,,,,,Grass]Dolliv|||Harvest|Bulldoze|Quirky|40,195,195,16,1,47|F|||50|,,,,,Dragon]Morgrem|||Pickpocket|Detect,LuminaCrash,Outrage,AirSlash|Lax|122,1,21,91,33,240|||S|50|,,,,,Rock","rating":1500}
+@write
+>p1 switch 3, move 3 -1 terastallize
+@write
+>p2 move 1 -2 terastal
+@write
+>p2 switch MORGREM
+@write
+>p2 move 2 -2 terastallize, switch 5
+@write
+>p2 move 1 2, switch 5
+@write
+>p1 switch 3, move 2 -1
+@write
+>p1 switch Zoë, skip
+@write
+>p1 switch wingull
+@write
+>p2 move Magma Storm 3 terastallize, switch 4
+@write
+>p2 move 2 2, switch 4
+@write
+>p1 move 2 2, move 3 1
+@write
+>forcewin p2
+@message
+|t:|
+|gametype|doubles
+@message
+|player|p1|Alice||
+@message
+|player|p2|Bob||1500
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Doduo|Doduo, L50, M|138/138
+|switch|p1b: Inteleon|Inteleon, L50, F|165/165
+|switch|p2a: Espurr|Espurr, L50, F|147/147
+|switch|p2b: Rotom|Rotom, L50|147/147
+|turn|1
+@message
+|
+|t:|
+|switch|p1a: Sir Hops-a-Lot|Raikou, L50|167/167
+|switch|p2b: Dolliv|Dolliv, L50, F|132/132
+|-terastallize|p1b: Inteleon|Fairy
+|-terastallize|p2a: Espurr|Flying
+|move|p2a: Espurr|Water Shuriken|p2b: Dolliv
+|-resisted|p2b: Dolliv
+|-damage|p2b: Dolliv|129/132
+|-resisted|p2b: Dolliv
+|-crit|p2b: Dolliv
+|-damage|p2b: Dolliv|125/132
+|-resisted|p2b: Dolliv
+|-damage|p2b: Dolliv|122/132
+|-resisted|p2b: Dolliv
+|-damage|p2b: Dolliv|119/132
+|-resisted|p2b: Dolliv
+|-damage|p2b: Dolliv|116/132
+|-hitcount|p2b: Dolliv|5
+|move|p1b: Inteleon|Zing Zap|p1a: Sir Hops-a-Lot
+|-resisted|p1a: Sir Hops-a-Lot
+|-damage|p1a: Sir Hops-a-Lot|151/167
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|switch|p1a: Doduo|Doduo, L50, M|138/138
+|switch|p2b: Rotom|Rotom, L50|147/147
+|move|p1b: Inteleon|Volt Tackle|p1a: Doduo
+|-supereffective|p1a: Doduo
+|-damage|p1a: Doduo|0 fnt
+|faint|p1a: Doduo
+|-damage|p1b: Inteleon|119/165|[from] Recoil
+|move|p2a: Espurr|Magma Storm|p1b: Inteleon
+|-damage|p1b: Inteleon|85/165
+|-activate|p1b: Inteleon|move: Magma Storm|[of] p2a: Espurr
+|
+|-damage|p1b: Inteleon|65/165|[from] move: Magma Storm|[partiallytrapped]
+|upkeep
+@message
+|
+|t:|
+|switch|p1a: Zoë|Wingull, L50, F|141/141
+|turn|3
+@message
+|
+|t:|
+|switch|p2b: Zoë|Clauncher, L50, F|134/134
+|move|p1a: Zoë|First Impression|p2b: Zoë
+|-damage|p2b: Zoë|110/134
+|move|p2a: Espurr|Water Shuriken|p1b: Inteleon
+|-damage|p1b: Inteleon|59/165
+|-damage|p1b: Inteleon|53/165
+|-hitcount|p1b: Inteleon|2
+|move|p1b: Inteleon|Zing Zap|p2a: Espurr
+|-supereffective|p2a: Espurr
+|-damage|p2a: Espurr|67/147
+|
+|-damage|p1b: Inteleon|33/165|[from] move: Magma Storm|[partiallytrapped]
+|upkeep
+|turn|4
+@message
+|
+|win|Bob

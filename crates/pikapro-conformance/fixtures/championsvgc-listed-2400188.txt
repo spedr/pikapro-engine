@@ -1,0 +1,413 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 7f9c 85dd 8a54 0b7d
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+Chomp (Vanilluxe) (F) @ Light Clay
+Ability: Snow Warning
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Modest Nature
+- Freeze-Dry
+- Blizzard
+- Aurora Veil
+- Flash Cannon
+
+Farigiraf (M) @ Leftovers
+Ability: Sap Sipper
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Mild Nature
+- Body Slam
+- Psychic Noise
+- Wish
+- Protect
+
+Froslass (F) @ Life Orb
+Ability: Cursed Body
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Shadow Ball
+- Will-O-Wisp
+- Nasty Plot
+- Ice Beam
+
+Houndoom (F) @ Houndoominite
+Ability: Flash Fire
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Nasty Plot
+- Scorching Sands
+- Dark Pulse
+- Fire Blast
+
+Armarouge (F) @ Choice Scarf
+Ability: Flash Fire
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Energy Ball
+- Focus Blast
+- Armor Cannon
+- Psyshock
+
+Gyarados (M) @ Gyaradosite
+Ability: Intimidate
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Waterfall
+- Crunch
+- Power Whip
+- Dragon Dance
+end
+team p2
+Nibbles (Scovillain-Mega) (M) @ Scovillainite
+Ability: Spicy Spray
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Lonely Nature
+- Giga Drain
+- Flare Blitz
+- Fire Blast
+- Trailblaze
+
+Barbaracle-Mega (M) @ Barbaracite
+Ability: Tough Claws
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Shell Smash
+- Liquidation
+- Close Combat
+- Stone Edge
+
+Garganacl (M) @ Leftovers
+Ability: Purifying Salt
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Curse
+- Recover
+- Stone Edge
+- Body Press
+
+Thievul (M) @ Life Orb
+Ability: Stakeout
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Grass Knot
+- Nasty Plot
+- Psychic
+- Dark Pulse
+
+Roserade (F) @ Focus Sash
+Ability: Natural Cure
+Level: 50
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Sludge Bomb
+- Toxic Spikes
+- Spikes
+- Leaf Storm
+
+Sir Hops-a-Lot (Starmie) @ Starminite
+Ability: Natural Cure
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Bulk Up
+- Recover
+- Zen Headbutt
+- Liquidation
+end
+choice p1 team 5614
+choice p2 team 6235
+choice p1 switch Chomp ,  move crunch 2 mega
+choice p2 move 3 1, move 2 2 mega
+choice p1 switch 3, move 2 1
+choice p2 move 4 -2, switch 4
+choice p2 switch 3, pass
+choice p1 move 1 1, move 3 -1
+choice p2 default
+choice p1 move 1 1, switch 3
+choice p2 move Body Press -2 ,  move 1 2
+choice p2 switch 4, pass
+choice p1 move 1 2, move 1 1
+choice p2 move 3 -2, move 4 -1
+choice p1 move energyball +2, move Blizzard
+choice p2 pass, move 2
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Vanilluxe, L50, F|
+expect |poke|p1|Farigiraf, L50, M|
+expect |poke|p1|Froslass, L50, F|
+expect |poke|p1|Houndoom, L50, F|
+expect |poke|p1|Armarouge, L50, F, shiny|
+expect |poke|p1|Gyarados, L50, M, shiny|
+expect |poke|p2|Scovillain, L50, M|
+expect |poke|p2|Barbaracle, L50, M|
+expect |poke|p2|Garganacl, L50, M|
+expect |poke|p2|Thievul, L50, M|
+expect |poke|p2|Roserade, L50, F|
+expect |poke|p2|Starmie, L50|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Armarouge|Armarouge, L50, F, shiny|162/162
+expect |switch|p1a: Armarouge|Armarouge, L50, F, shiny|100/100
+expect |split|p1
+expect |switch|p1b: Gyarados|Gyarados, L50, M, shiny|172/172
+expect |switch|p1b: Gyarados|Gyarados, L50, M, shiny|100/100
+expect |split|p2
+expect |switch|p2a: Sir Hops-a-Lot|Starmie, L50|137/137
+expect |switch|p2a: Sir Hops-a-Lot|Starmie, L50|100/100
+expect |split|p2
+expect |switch|p2b: Barbaracle|Barbaracle, L50, M|149/149
+expect |switch|p2b: Barbaracle|Barbaracle, L50, M|100/100
+expect |-ability|p1b: Gyarados|Intimidate|boost
+expect |-unboost|p2a: Sir Hops-a-Lot|atk|1
+expect |-unboost|p2b: Barbaracle|atk|1
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Chomp|Vanilluxe, L50, F|178/178
+expect |switch|p1a: Chomp|Vanilluxe, L50, F|100/100
+expect |-weather|Snowscape|[from] ability: Snow Warning|[of] p1a: Chomp
+expect |detailschange|p1b: Gyarados|Gyarados-Mega, L50, M, shiny
+expect |-mega|p1b: Gyarados|Gyarados|Gyaradosite
+expect |-ability|p1b: Gyarados|Mold Breaker
+expect |detailschange|p2b: Barbaracle|Barbaracle-Mega, L50, M
+expect |-mega|p2b: Barbaracle|Barbaracle|Barbaracite
+expect |move|p2a: Sir Hops-a-Lot|Zen Headbutt|p1a: Chomp
+expect |rng|100|80
+expect |rng|24|19
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Chomp|148/178
+expect |-damage|p1a: Chomp|83/100
+expect |rng|100|31
+expect |move|p2b: Barbaracle|Liquidation|p1b: Gyarados
+expect |rng|100|89
+expect |rng|24|9
+expect |rng|16|3
+expect |-resisted|p1b: Gyarados|1
+expect |split|p1
+expect |-damage|p1b: Gyarados|146/172
+expect |-damage|p1b: Gyarados|84/100
+expect |rng|100|38
+expect |move|p1b: Gyarados|Crunch|p2b: Barbaracle
+expect |rng|100|88
+expect |rng|24|19
+expect |rng|16|10
+expect |-resisted|p2b: Barbaracle|1
+expect |split|p2
+expect |-damage|p2b: Barbaracle|113/149
+expect |-damage|p2b: Barbaracle|75/100
+expect |rng|100|92
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Roserade|Roserade, L50, F|167/167
+expect |switch|p2b: Roserade|Roserade, L50, F|100/100
+expect |split|p1
+expect |switch|p1a: Armarouge|Armarouge, L50, F, shiny|162/162
+expect |switch|p1a: Armarouge|Armarouge, L50, F, shiny|100/100
+expect |move|p2a: Sir Hops-a-Lot|Liquidation|p2b: Roserade
+expect |rng|100|46
+expect |rng|24|9
+expect |rng|16|9
+expect |-resisted|p2b: Roserade|1
+expect |split|p2
+expect |-damage|p2b: Roserade|140/167
+expect |-damage|p2b: Roserade|83/100
+expect |rng|100|16
+expect |-unboost|p2b: Roserade|def|1
+expect |move|p1b: Gyarados|Crunch|p2a: Sir Hops-a-Lot
+expect |rng|100|25
+expect |rng|24|10
+expect |rng|16|6
+expect |-supereffective|p2a: Sir Hops-a-Lot|1
+expect |split|p2
+expect |-damage|p2a: Sir Hops-a-Lot|0 fnt
+expect |-damage|p2a: Sir Hops-a-Lot|0 fnt
+expect |rng|100|30
+expect |faint|p2a: Sir Hops-a-Lot
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Garganacl|Garganacl, L50, M|207/207
+expect |switch|p2a: Garganacl|Garganacl, L50, M|100/100
+expect |turn|3
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p1a: Armarouge|Energy Ball|p2a: Garganacl
+expect |rng|100|11
+expect |rng|24|18
+expect |rng|16|10
+expect |-supereffective|p2a: Garganacl|1
+expect |split|p2
+expect |-damage|p2a: Garganacl|91/207
+expect |-damage|p2a: Garganacl|43/100
+expect |rng|100|44
+expect |move|p2b: Roserade|Sludge Bomb|p1b: Gyarados
+expect |rng|100|9
+expect |rng|24|18
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Gyarados|89/172
+expect |-damage|p1b: Gyarados|51/100
+expect |rng|100|48
+expect |move|p1b: Gyarados|Power Whip|p1a: Armarouge
+expect |rng|100|2
+expect |rng|24|0
+expect |rng|16|7
+expect |-resisted|p1a: Armarouge|1
+expect |-crit|p1a: Armarouge
+expect |split|p1
+expect |-damage|p1a: Armarouge|92/162
+expect |-damage|p1a: Armarouge|56/100
+expect |move|p2a: Garganacl|Curse|p2a: Garganacl
+expect |-unboost|p2a: Garganacl|spe|1
+expect |-boost|p2a: Garganacl|atk|1
+expect |-boost|p2a: Garganacl|def|1
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |split|p2
+expect |-heal|p2a: Garganacl|103/207|[from] item: Leftovers
+expect |-heal|p2a: Garganacl|49/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Chomp|Vanilluxe, L50, F|148/178
+expect |switch|p1b: Chomp|Vanilluxe, L50, F|83/100
+expect |move|p1a: Armarouge|Energy Ball|p2a: Garganacl
+expect |rng|100|13
+expect |rng|24|18
+expect |rng|16|5
+expect |-supereffective|p2a: Garganacl|1
+expect |split|p2
+expect |-damage|p2a: Garganacl|0 fnt
+expect |-damage|p2a: Garganacl|0 fnt
+expect |rng|100|38
+expect |faint|p2a: Garganacl
+expect |move|p2b: Roserade|Sludge Bomb|p1b: Chomp
+expect |rng|100|68
+expect |rng|24|23
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1b: Chomp|82/178
+expect |-damage|p1b: Chomp|46/100
+expect |rng|100|13
+expect |-status|p1b: Chomp|psn
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |split|p1
+expect |-damage|p1b: Chomp|60/178 psn|[from] psn
+expect |-damage|p1b: Chomp|33/100 psn|[from] psn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Barbaracle|Barbaracle-Mega, L50, M|113/149
+expect |switch|p2a: Barbaracle|Barbaracle-Mega, L50, M|75/100
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1a: Armarouge|Energy Ball|p2b: Roserade
+expect |rng|100|61
+expect |rng|24|15
+expect |rng|16|4
+expect |-resisted|p2b: Roserade|2
+expect |split|p2
+expect |-damage|p2b: Roserade|127/167
+expect |-damage|p2b: Roserade|76/100
+expect |rng|100|87
+expect |move|p2b: Roserade|Leaf Storm|p2a: Barbaracle
+expect |rng|100|41
+expect |rng|24|10
+expect |rng|16|15
+expect |-supereffective|p2a: Barbaracle|1
+expect |split|p2
+expect |-damage|p2a: Barbaracle|0 fnt
+expect |-damage|p2a: Barbaracle|0 fnt
+expect |rng|100|58
+expect |-unboost|p2b: Roserade|spa|2
+expect |faint|p2a: Barbaracle
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Chomp|Freeze-Dry|p2b: Roserade
+expect |rng|100|19
+expect |rng|24|19
+expect |rng|16|10
+expect |-supereffective|p2b: Roserade|1
+expect |split|p2
+expect |-damage|p2b: Roserade|7/167
+expect |-damage|p2b: Roserade|4/100
+expect |
+expect |-weather|none
+expect |split|p1
+expect |-damage|p1b: Chomp|38/178 psn|[from] psn
+expect |-damage|p1b: Chomp|21/100 psn|[from] psn
+expect |upkeep
+expect |turn|6
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|1|0
+expect |move|p1a: Armarouge|Energy Ball|p2b: Roserade
+expect |rng|100|8
+expect |rng|24|12
+expect |rng|16|9
+expect |-resisted|p2b: Roserade|2
+expect |split|p2
+expect |-damage|p2b: Roserade|0 fnt
+expect |-damage|p2b: Roserade|0 fnt
+expect |rng|100|43
+expect |faint|p2b: Roserade
+expect |
+expect |win|p1

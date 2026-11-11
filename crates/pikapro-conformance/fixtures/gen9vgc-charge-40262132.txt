@@ -1,0 +1,697 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 4897 2bae efbb 7ab3
+genders drawn
+team p1
+X (Graveler-Alola)
+Ability: Galvanize
+Level: 50
+Tera Type: Stellar
+EVs: 62 HP / 55 Atk / 81 Def / 238 SpA / 45 SpD / 13 Spe
+Relaxed Nature
+- Charge
+- Body Slam
+- Hyper Voice
+- Slack Off
+
+Pikachu (Popplio)
+Ability: Liquid Voice
+Level: 50
+Tera Type: Dragon
+EVs: 7 HP / 52 Atk / 155 Def / 216 SpA / 54 SpD / 8 Spe
+Brave Nature
+- Charge
+- Overdrive
+- Hyper Voice
+- Tri Attack
+
+Quagsire (M) @ Life Orb
+Ability: Water Absorb
+Level: 50
+Tera Type: Electric
+EVs: 3 HP / 56 Atk / 26 Def / 5 SpA / 179 SpD / 237 Spe
+Naughty Nature
+- Charge
+- Tera Blast
+- Terrain Pulse
+- Electric Terrain
+
+Sir Hops-a-Lot (Beldum)
+Ability: Clear Body
+Level: 50
+Tera Type: Normal
+EVs: 1 HP / 250 Atk / 9 Def / 2 SpA / 245 SpD / 3 Spe
+Calm Nature
+- Eerie Spell
+- Spin Out
+
+Nibbles (Morpeko)
+Ability: Hunger Switch
+Level: 50
+Tera Type: Grass
+EVs: 37 HP / 39 Atk / 36 Def / 154 SpA / 237 Spe
+Hardy Nature
+- Charge
+- Aura Wheel
+- Torment
+- Brutal Swing
+
+Oricorio-Pom-Pom
+Ability: Dancer
+Level: 50
+Tera Type: Electric
+EVs: 138 HP / 14 Atk / 96 Def / 5 SpA / 19 SpD / 238 Spe
+Gentle Nature
+- Charge
+- Revelation Dance
+- Fire Spin
+end
+team p2
+Morpeko
+Ability: Hunger Switch
+Level: 50
+Tera Type: Normal
+EVs: 152 HP / 27 Atk / 150 Def / 8 SpA / 76 SpD / 15 Spe
+Lonely Nature
+- Charge
+- Aura Wheel
+- Glaciate
+- Peck
+
+Yanma
+Ability: Compound Eyes
+Level: 50
+Shiny: Yes
+Tera Type: Rock
+EVs: 5 HP / 12 Atk / 104 Def / 149 SpA / 94 SpD / 59 Spe
+Lonely Nature
+- Vise Grip
+- Psystrike
+- Fake Tears
+- String Shot
+
+Popplio
+Ability: Liquid Voice
+Level: 50
+Tera Type: Fire
+EVs: 236 HP / 5 Atk / 40 Def / 112 SpA / 110 SpD / 2 Spe
+Serious Nature
+- Charge
+- Overdrive
+- Hyper Voice
+- Clanging Scales
+
+Zoë (Oricorio-Pom-Pom)
+Ability: Dancer
+Level: 50
+Tera Type: Psychic
+EVs: 8 HP / 3 Atk / 1 Def / 239 SpA / 139 SpD / 118 Spe
+Careful Nature
+- Charge
+- Revelation Dance
+- Mystical Power
+- Tearful Look
+
+Cobalion @ Power Herb
+Ability: Justified
+Level: 50
+Tera Type: Electric
+EVs: 9 HP / 28 Atk / 222 Def / 10 SpA / 80 SpD / 158 Spe
+Naughty Nature
+- Charge
+- Tera Blast
+- Terrain Pulse
+- Electric Terrain
+
+Nibbles (Geodude-Alola)
+Ability: Galvanize
+Level: 50
+Tera Type: Fighting
+EVs: 43 HP / 93 Atk / 82 Def / 119 SpA / 103 SpD / 59 Spe
+Naive Nature
+- Charge
+- Body Slam
+- Hyper Voice
+- Rock Smash
+end
+choice p1 team 2163
+choice p2 team 1,5,3,4
+choice p1 switch 4, move 1
+choice p2 move 2 1, move 2 2 terastallize
+choice p1 move terablast terastal 2 ,  switch 4
+choice p2 move 4 2, switch 3
+choice p2 default
+choice p1 move 3 2, move 4 2
+choice p2 move 1, move 2 1
+choice p1 move 1, switch 4
+choice p2 move 1, move 2 1
+choice p1 move 3 1, move 4
+choice p2 move charge, move terrainpulse -1
+choice p1 move 1, move 2 1
+choice p2 move 3, move 4
+choice p1 switch 4, move 3
+choice p2 move 3, move 1
+choice p1 default
+choice p2 move 2 -2, move 2 -1
+choice p2 switch 4, pass
+choice p1 switch 3, move 2 2
+choice p2 move mysticalpower -2, move Tera Blast 2
+choice p1 move 2 1, move 3
+choice p2 move revelationdance 1
+choice p1 switch quagsire
+choice p2 move 2 1, pass
+choice p1 move 1, move 2 -1
+choice p1 switch 3 ,  skip
+choice p2 move 1
+choice p1 move Charge ,  move 2 -1
+choice p2 move 4 2, pass
+choice p1 pass, move 4
+choice p2 move 4 2, pass
+choice p1 pass, move 1
+choice p2 move 1, pass
+choice p1 pass, move 4
+choice p2 move 2 2, pass
+choice p1 pass, move 4
+choice p2 move 2 2, pass
+choice p1 pass, move 2 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Graveler-Alola, L50, M|
+expect |poke|p1|Popplio, L50, F|
+expect |poke|p1|Quagsire, L50, M|
+expect |poke|p1|Beldum, L50|
+expect |poke|p1|Morpeko, L50, M|
+expect |poke|p1|Oricorio-Pom-Pom, L50, F|
+expect |poke|p2|Morpeko, L50, M|
+expect |poke|p2|Yanma, L50, F|
+expect |poke|p2|Popplio, L50, F|
+expect |poke|p2|Oricorio-Pom-Pom, L50, M|
+expect |poke|p2|Cobalion, L50|
+expect |poke|p2|Geodude-Alola, L50, M|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Pikachu|Popplio, L50, F|126/126
+expect |switch|p1a: Pikachu|Popplio, L50, F|126/126
+expect |split|p1
+expect |switch|p1b: X|Graveler-Alola, L50, M|138/138
+expect |switch|p1b: X|Graveler-Alola, L50, M|138/138
+expect |split|p2
+expect |switch|p2a: Morpeko|Morpeko, L50, M|152/152
+expect |switch|p2a: Morpeko|Morpeko, L50, M|152/152
+expect |split|p2
+expect |switch|p2b: Cobalion|Cobalion, L50|167/167
+expect |switch|p2b: Cobalion|Cobalion, L50|167/167
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Quagsire|Quagsire, L50, M|170/170
+expect |switch|p1a: Quagsire|Quagsire, L50, M|170/170
+expect |-terastallize|p2b: Cobalion|Electric
+expect |move|p2b: Cobalion|Tera Blast|p1b: X|[anim] Tera Blast Electric
+expect |rng|100|44
+expect |rng|24|16
+expect |rng|16|6
+expect |-resisted|p1b: X
+expect |split|p1
+expect |-damage|p1b: X|118/138
+expect |-damage|p1b: X|118/138
+expect |move|p2a: Morpeko|Aura Wheel|p1a: Quagsire
+expect |-immune|p1a: Quagsire
+expect |move|p1b: X|Charge|p1b: X
+expect |-boost|p1b: X|spd|1
+expect |-start|p1b: X|Charge
+expect |
+expect |-formechange|p2a: Morpeko|Morpeko-Hangry||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Popplio|Popplio, L50, F|155/155
+expect |switch|p2b: Popplio|Popplio, L50, F|155/155
+expect |split|p1
+expect |switch|p1b: Pikachu|Popplio, L50, F|126/126
+expect |switch|p1b: Pikachu|Popplio, L50, F|126/126
+expect |-terastallize|p1a: Quagsire|Electric
+expect |move|p2a: Morpeko|Peck|p1b: Pikachu
+expect |rng|100|0
+expect |rng|24|21
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Pikachu|103/126
+expect |-damage|p1b: Pikachu|103/126
+expect |move|p1a: Quagsire|Tera Blast|p2b: Popplio|[anim] Tera Blast Electric
+expect |rng|100|14
+expect |rng|24|20
+expect |rng|16|7
+expect |-supereffective|p2b: Popplio
+expect |split|p2
+expect |-damage|p2b: Popplio|0 fnt
+expect |-damage|p2b: Popplio|0 fnt
+expect |faint|p2b: Popplio
+expect |split|p1
+expect |-damage|p1a: Quagsire|153/170|[from] item: Life Orb
+expect |-damage|p1a: Quagsire|153/170|[from] item: Life Orb
+expect |
+expect |-formechange|p2a: Morpeko|Morpeko||[from] ability: Hunger Switch
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Cobalion|Cobalion, L50, tera:Electric|167/167
+expect |switch|p2b: Cobalion|Cobalion, L50, tera:Electric|167/167
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2b: Cobalion|Tera Blast|p1a: Quagsire|[anim] Tera Blast Electric
+expect |rng|100|0
+expect |rng|24|1
+expect |rng|16|15
+expect |-resisted|p1a: Quagsire
+expect |split|p1
+expect |-damage|p1a: Quagsire|127/170
+expect |-damage|p1a: Quagsire|127/170
+expect |move|p2a: Morpeko|Charge|p2a: Morpeko
+expect |-boost|p2a: Morpeko|spd|1
+expect |-start|p2a: Morpeko|Charge
+expect |move|p1a: Quagsire|Terrain Pulse|p2b: Cobalion
+expect |rng|100|88
+expect |rng|24|10
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Cobalion|142/167
+expect |-damage|p2b: Cobalion|142/167
+expect |split|p1
+expect |-damage|p1a: Quagsire|110/170|[from] item: Life Orb
+expect |-damage|p1a: Quagsire|110/170|[from] item: Life Orb
+expect |move|p1b: Pikachu|Tri Attack|p2b: Cobalion
+expect |rng|100|76
+expect |rng|24|15
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Cobalion|99/167
+expect |-damage|p2b: Cobalion|99/167
+expect |rng|100|67
+expect |
+expect |-formechange|p2a: Morpeko|Morpeko-Hangry||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: X|Graveler-Alola, L50, M|118/138
+expect |switch|p1b: X|Graveler-Alola, L50, M|118/138
+expect |move|p2b: Cobalion|Tera Blast|p1a: Quagsire|[anim] Tera Blast Electric
+expect |rng|100|21
+expect |rng|24|21
+expect |rng|16|5
+expect |-resisted|p1a: Quagsire
+expect |split|p1
+expect |-damage|p1a: Quagsire|81/170
+expect |-damage|p1a: Quagsire|81/170
+expect |move|p2a: Morpeko|Charge|p2a: Morpeko
+expect |-boost|p2a: Morpeko|spd|1
+expect |-start|p2a: Morpeko|Charge
+expect |move|p1a: Quagsire|Charge|p1a: Quagsire
+expect |-boost|p1a: Quagsire|spd|1
+expect |-start|p1a: Quagsire|Charge
+expect |
+expect |-formechange|p2a: Morpeko|Morpeko||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2b: Cobalion|Terrain Pulse|p2a: Morpeko
+expect |rng|100|58
+expect |rng|24|5
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Morpeko|139/152
+expect |-damage|p2a: Morpeko|139/152
+expect |move|p2a: Morpeko|Charge|p2a: Morpeko
+expect |-boost|p2a: Morpeko|spd|1
+expect |-start|p2a: Morpeko|Charge
+expect |move|p1a: Quagsire|Terrain Pulse|p2a: Morpeko
+expect |rng|100|59
+expect |rng|24|1
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Morpeko|127/152
+expect |-damage|p2a: Morpeko|127/152
+expect |split|p1
+expect |-damage|p1a: Quagsire|64/170|[from] item: Life Orb
+expect |-damage|p1a: Quagsire|64/170|[from] item: Life Orb
+expect |move|p1b: X|Slack Off|p1b: X
+expect |split|p1
+expect |-heal|p1b: X|138/138
+expect |-heal|p1b: X|138/138
+expect |
+expect |-formechange|p2a: Morpeko|Morpeko-Hangry||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2b: Cobalion|Electric Terrain|p2b: Cobalion
+expect |-fieldstart|move: Electric Terrain
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Morpeko|Glaciate|p1b: X|[spread] p1a,p1b
+expect |rng|100|63
+expect |rng|100|36
+expect |rng|24|2
+expect |rng|16|0
+expect |rng|24|16
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Quagsire|49/170
+expect |-damage|p1a: Quagsire|49/170
+expect |split|p1
+expect |-damage|p1b: X|112/138
+expect |-damage|p1b: X|112/138
+expect |rng|100|33
+expect |-unboost|p1a: Quagsire|spe|1
+expect |rng|100|86
+expect |-unboost|p1b: X|spe|1
+expect |move|p1a: Quagsire|Charge|p1a: Quagsire
+expect |-boost|p1a: Quagsire|spd|1
+expect |-start|p1a: Quagsire|Charge
+expect |move|p1b: X|Body Slam|p2a: Morpeko
+expect |rng|100|1
+expect |rng|24|17
+expect |rng|16|5
+expect |-resisted|p2a: Morpeko
+expect |split|p2
+expect |-damage|p2a: Morpeko|68/152
+expect |-damage|p2a: Morpeko|68/152
+expect |rng|100|90
+expect |
+expect |-formechange|p2a: Morpeko|Morpeko||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|7
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Popplio, L50, F|103/126
+expect |switch|p1a: Pikachu|Popplio, L50, F|103/126
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Cobalion|Charge|p2b: Cobalion
+expect |-boost|p2b: Cobalion|spd|1
+expect |-start|p2b: Cobalion|Charge
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Morpeko|Glaciate|p1b: X|[spread] p1a,p1b
+expect |rng|100|53
+expect |rng|100|3
+expect |rng|24|0
+expect |rng|16|10
+expect |-resisted|p1a: Pikachu
+expect |-crit|p1a: Pikachu
+expect |rng|24|16
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Pikachu|87/126
+expect |-damage|p1a: Pikachu|87/126
+expect |split|p1
+expect |-damage|p1b: X|84/138
+expect |-damage|p1b: X|84/138
+expect |rng|100|3
+expect |-unboost|p1a: Pikachu|spe|1
+expect |rng|100|13
+expect |-unboost|p1b: X|spe|1
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: X|Hyper Voice|p2a: Morpeko|[spread] p2a,p2b
+expect |rng|100|37
+expect |rng|100|83
+expect |rng|24|1
+expect |rng|16|9
+expect |-resisted|p2a: Morpeko
+expect |rng|24|21
+expect |rng|16|3
+expect |-resisted|p2b: Cobalion
+expect |split|p2
+expect |-damage|p2a: Morpeko|54/152
+expect |-damage|p2a: Morpeko|54/152
+expect |split|p2
+expect |-damage|p2b: Cobalion|75/167
+expect |-damage|p2b: Cobalion|75/167
+expect |
+expect |-formechange|p2a: Morpeko|Morpeko-Hangry||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2b: Cobalion|Tera Blast|p2a: Morpeko|[anim] Tera Blast Electric
+expect |rng|100|73
+expect |rng|24|16
+expect |rng|16|12
+expect |-resisted|p2a: Morpeko
+expect |split|p2
+expect |-damage|p2a: Morpeko|0 fnt
+expect |-damage|p2a: Morpeko|0 fnt
+expect |faint|p2a: Morpeko
+expect |-end|p2b: Cobalion|Charge|[silent]
+expect |move|p1a: Pikachu|Charge|p1a: Pikachu
+expect |-boost|p1a: Pikachu|spd|1
+expect |-start|p1a: Pikachu|Charge
+expect |move|p1b: X|Charge|p1b: X
+expect |-boost|p1b: X|spd|1
+expect |-start|p1b: X|Charge
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoë|Oricorio-Pom-Pom, L50, M|151/151
+expect |switch|p2a: Zoë|Oricorio-Pom-Pom, L50, M|151/151
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Oricorio|Oricorio-Pom-Pom, L50, F|167/167
+expect |switch|p1a: Oricorio|Oricorio-Pom-Pom, L50, F|167/167
+expect |move|p2b: Cobalion|Tera Blast|p1b: X|[anim] Tera Blast Electric
+expect |rng|100|88
+expect |rng|24|5
+expect |rng|16|9
+expect |-resisted|p1b: X
+expect |split|p1
+expect |-damage|p1b: X|60/138
+expect |-damage|p1b: X|60/138
+expect |move|p2a: Zoë|Mystical Power|p2b: Cobalion
+expect |rng|100|51
+expect |rng|24|14
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2b: Cobalion|46/167
+expect |-damage|p2b: Cobalion|46/167
+expect |rng|100|41
+expect |-boost|p2a: Zoë|spa|1
+expect |move|p1b: X|Body Slam|p2b: Cobalion
+expect |rng|100|99
+expect |rng|24|2
+expect |rng|16|10
+expect |-resisted|p2b: Cobalion
+expect |split|p2
+expect |-damage|p2b: Cobalion|0 fnt
+expect |-damage|p2b: Cobalion|0 fnt
+expect |rng|100|40
+expect |faint|p2b: Cobalion
+expect |-end|p1b: X|Charge|[silent]
+expect |
+expect |upkeep
+expect |turn|10
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p1a: Oricorio|Revelation Dance|p2a: Zoë
+expect |rng|100|43
+expect |rng|24|8
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Zoë|90/151
+expect |-damage|p2a: Zoë|90/151
+expect |-activate|p2a: Zoë|ability: Dancer
+expect |move|p2a: Zoë|Revelation Dance|p1a: Oricorio|[from] ability: Dancer
+expect |rng|100|54
+expect |rng|24|16
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Oricorio|64/167
+expect |-damage|p1a: Oricorio|64/167
+expect |rng|1|0
+expect |move|p2a: Zoë|Revelation Dance|p1a: Oricorio
+expect |rng|100|96
+expect |rng|24|17
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Oricorio|0 fnt
+expect |-damage|p1a: Oricorio|0 fnt
+expect |faint|p1a: Oricorio
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: X|Hyper Voice|p2a: Zoë
+expect |rng|100|60
+expect |rng|24|10
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Zoë|15/151
+expect |-damage|p2a: Zoë|15/151
+expect |
+expect |-fieldend|move: Electric Terrain
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Quagsire|Quagsire, L50, M, tera:Electric|49/170
+expect |switch|p1a: Quagsire|Quagsire, L50, M, tera:Electric|49/170
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Revelation Dance|p1a: Quagsire
+expect |rng|100|11
+expect |rng|24|8
+expect |rng|16|13
+expect |-resisted|p1a: Quagsire
+expect |split|p1
+expect |-damage|p1a: Quagsire|0 fnt
+expect |-damage|p1a: Quagsire|0 fnt
+expect |faint|p1a: Quagsire
+expect |move|p1b: X|Body Slam|p1: Quagsire|[notarget]
+expect |-fail|p1b: X
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Popplio, L50, F|87/126
+expect |switch|p1a: Pikachu|Popplio, L50, F|87/126
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Charge|p2a: Zoë
+expect |-boost|p2a: Zoë|spd|1
+expect |-start|p2a: Zoë|Charge
+expect |move|p1a: Pikachu|Charge|p1a: Pikachu
+expect |-boost|p1a: Pikachu|spd|1
+expect |-start|p1a: Pikachu|Charge
+expect |move|p1b: X|Body Slam|p1a: Pikachu
+expect |rng|100|68
+expect |rng|24|15
+expect |rng|16|14
+expect |-supereffective|p1a: Pikachu
+expect |split|p1
+expect |-damage|p1a: Pikachu|0 fnt
+expect |-damage|p1a: Pikachu|0 fnt
+expect |rng|100|47
+expect |faint|p1a: Pikachu
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Tearful Look|p1b: X
+expect |-unboost|p1b: X|atk|1
+expect |-unboost|p1b: X|spa|1
+expect |move|p1b: X|Slack Off|p1b: X
+expect |split|p1
+expect |-heal|p1b: X|129/138
+expect |-heal|p1b: X|129/138
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Tearful Look|p1b: X
+expect |-unboost|p1b: X|atk|1
+expect |-unboost|p1b: X|spa|1
+expect |move|p1b: X|Charge|p1b: X
+expect |-boost|p1b: X|spd|1
+expect |-start|p1b: X|Charge
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Charge|p2a: Zoë
+expect |-boost|p2a: Zoë|spd|1
+expect |-start|p2a: Zoë|Charge
+expect |move|p1b: X|Slack Off|p1b: X
+expect |split|p1
+expect |-heal|p1b: X|138/138
+expect |-heal|p1b: X|138/138
+expect |-end|p1b: X|Charge|[silent]
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Revelation Dance|p1b: X
+expect |rng|100|26
+expect |rng|24|13
+expect |rng|16|10
+expect |-resisted|p1b: X
+expect |split|p1
+expect |-damage|p1b: X|63/138
+expect |-damage|p1b: X|63/138
+expect |-end|p2a: Zoë|Charge|[silent]
+expect |move|p1b: X|Slack Off|p1b: X
+expect |split|p1
+expect |-heal|p1b: X|132/138
+expect |-heal|p1b: X|132/138
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Revelation Dance|p1b: X
+expect |rng|100|55
+expect |rng|24|4
+expect |rng|16|9
+expect |-resisted|p1b: X
+expect |split|p1
+expect |-damage|p1b: X|94/138
+expect |-damage|p1b: X|94/138
+expect |move|p1b: X|Body Slam|p2a: Zoë
+expect |rng|100|71
+expect |rng|24|13
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Zoë|0 fnt
+expect |-damage|p2a: Zoë|0 fnt
+expect |rng|100|77
+expect |faint|p2a: Zoë
+expect |
+expect |win|p1

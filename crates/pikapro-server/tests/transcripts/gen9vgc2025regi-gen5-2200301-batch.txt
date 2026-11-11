@@ -1,0 +1,340 @@
+# gen9vgc2025regi-gen5-2200301-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@option replay omniscient
+@write
+>start {"formatid":"gen9vgc2025regi","seed":"gen5,2079c3698dcee555"}
+>player p1 {"name":"Alice","team":"Terrakion||MicleBerry|Justified|CircleThrow,PayDay|Serious|2,38,209,28,13,218||||50|,,,,,Electric]Gastly||LansatBerry|Levitate|Blizzard,HealPulse,Supersonic,IcicleCrash|Adamant|6,34,183,5,151,127||||50|,,,,,Stellar]Ambipom|||Technician|HyperVoice,HealingWish,Flamethrower|Timid|6,4,191,122,16,149|M|||50|,,,,,Fire]ThisNameIsFarTooLongToKeep|Azelf|RawstBerry|Levitate|WingAttack,RazorShell,PlayNice|Modest|153,72,14,107,9,70||||50|,,,,,Fairy]Iron Jugulis|||QuarkDrive|HydroSteam|Impish|79,3,17,174,224,12||||50|,,,,,Dragon]Sandy Shocks||Magnet|Protosynthesis|FlipTurn,HydroPump,Minimize|Modest|4,77,163,234,32,||||50|,,,,,Psychic"}
+>player p2 {"name":"Bob","team":"Indeedee||MentalHerb|InnerFocus|DrainingKiss,FocusPunch,FakeTears|Quirky|122,36,4,21,235,87||||50|,,,,,Psychic]Kingambit||AbsorbBulb|Pressure|SupercellSlam|Gentle|140,148,13,171,12,14|M||S|50|,,,,,Ice]Zoë|Glastrier||ChillingNeigh|RevivalBlessing|Naive|47,70,62,167,1,102||||50|,,,,,Fighting]Zapdos-Galar||LoadedDice|Defiant|FellStinger,HornLeech,SelfDestruct|Jolly|24,212,14,217,29,13||||50|,,,,,Psychic]Litwick||OccaBerry|FlashFire|SleepTalk,KowtowCleave,Wrap,JetPunch|Gentle|23,59,128,217,15,63||||50|,,,,,Fighting]Mareep|||Plus|FeatherDance|Careful|17,141,69,62,13,81||||50|,,,,,Psychic"}
+@write
+>p1 team 1652
+>p2 team 2315
+@write
+>p2 move Revival Blessing -2 mega
+>p1 move 2 -2 terastallize, move 1 -1
+>p2 switch INDEEDEE
+>p2 switch 4, switch 3
+>p2 switch 4, switch 3
+
+>p1 skip ,  switch gastly
+@write
+>p1 move 2 1, move 2 2
+# a comment
+>p2 switch 4, move 3 1 terastallize
+>reseed sodium,a36ad5f995b6d3c8
+@write
+>p2 default
+>p1 move 1 1, move 3 2
+>p1 move payday 3 mega, switch 4
+>p1 move circlethrow +1 mega, switch 4
+>p2 switch 3, pass
+@write
+>p1 move 1, move 1, move 1
+>p1 pass, switch 3
+# a comment
+>p2 move 1, move 1 2
+@write
+>p1 move 2 1, switch 4
+>p2 switch 3, pass
+
+>p1 switch 4, move 3
+
+>p2 move revivalblessing +1 dynamax
+>p2 switch 4, move 3 -1
+>p1 move 1 -2, move 1 -1
+
+>p2 switch 3, switch 4
+>p1 pass, switch 4
+@write
+>p2 move 1 1, switch 3
+# a comment
+>p1 move 1 1, move 1 1
+@write
+>p2 switch 3, pass
+>p1 move Hydro Steam +1, move Pay Day 3 terastallize
+>p2 switch 4, move 3 1
+>p2 switch 4, move 3 1
+>p1 move 1 2, move 1 2
+>p2 pass ,  switch Indeedee
+@write
+>p1 move 1 2, switch 4
+>p2 undo
+>p2 move 1, move 3 -1
+>p2 switch KINGAMBIT
+@write
+>p1 move Hydro Steam terastallize, move 2 2
+# a comment
+>p2 move 1, move 1 1
+>p1 move 1 1, move 1 1
+>p1 pass, switch 4
+@write
+>p1 switch 4, pass
+>p1 move 1 2, move 1 2
+>p1 switch 3
+>p1 default
+>p2 pass, move 1 2
+>p1 move 1 -2, move 1 2
+>p2 pass, move 1 1
+>p2 move 0
+@write
+>p1 pass, move 1 2
+
+>p2 pass, move 3 2
+@message
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] VGC 2025 Reg I
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Terrakion, L50|
+|poke|p1|Gastly, L50, F|
+|poke|p1|Ambipom, L50, M|
+|poke|p1|Azelf, L50|
+|poke|p1|Iron Jugulis, L50|
+|poke|p1|Sandy Shocks, L50|
+|poke|p2|Indeedee, L50, M|
+|poke|p2|Kingambit, L50, M|
+|poke|p2|Glastrier, L50|
+|poke|p2|Zapdos-Galar, L50|
+|poke|p2|Litwick, L50, F|
+|poke|p2|Mareep, L50, F|
+|teampreview|4
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+|uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+@message
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|uhtmlchange|otsrequest|
+|uhtmlchange|otsrequest|
+|switch|p1a: Terrakion|Terrakion, L50|166/166
+|switch|p1b: Sandy Shocks|Sandy Shocks, L50|161/161
+|switch|p2a: Kingambit|Kingambit, L50, M, shiny|193/193
+|switch|p2b: Zoë|Glastrier, L50|181/181
+|-ability|p2a: Kingambit|Pressure
+|turn|1
+@message
+|
+|t:|
+|switch|p2a: Litwick|Litwick, L50, F|128/128
+|switch|p2b: Indeedee|Indeedee, L50, M|150/150
+|-terastallize|p1a: Terrakion|Electric
+|move|p1a: Terrakion|Pay Day|p1b: Sandy Shocks
+|-damage|p1b: Sandy Shocks|142/161
+|move|p1b: Sandy Shocks|Flip Turn|p1a: Terrakion
+|-damage|p1a: Terrakion|147/166
+|
+|t:|
+|-end|p1b: Sandy Shocks|Protosynthesis|[silent]
+|switch|p1b: Gastly|Gastly, L50, F|106/106|[from] Flip Turn
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|switch|p2a: Kingambit|Kingambit, L50, M, shiny|193/193
+|-ability|p2a: Kingambit|Pressure
+|-terastallize|p2b: Indeedee|Psychic
+|move|p1a: Terrakion|Pay Day|p2a: Kingambit
+|-resisted|p2a: Kingambit
+|-damage|p2a: Kingambit|183/193
+|move|p2b: Indeedee|Fake Tears|p1a: Terrakion
+|-unboost|p1a: Terrakion|spd|2
+|move|p1b: Gastly|Heal Pulse|p2b: Indeedee
+|-fail|p2b: Indeedee|heal
+|
+|upkeep
+|turn|3
+|message|The battle's RNG was reset.
+@message
+|
+|t:|
+|move|p2b: Indeedee|Draining Kiss|p1a: Terrakion
+|-damage|p1a: Terrakion|98/166
+|move|p1b: Gastly|Supersonic|p2b: Indeedee|[miss]
+|-miss|p1b: Gastly|p2b: Indeedee
+|move|p2a: Kingambit|Supercell Slam|p1b: Gastly
+|-damage|p1b: Gastly|0 fnt
+|faint|p1b: Gastly
+|move|p1a: Terrakion|Circle Throw|p2a: Kingambit
+|-supereffective|p2a: Kingambit
+|-damage|p2a: Kingambit|0 fnt
+|faint|p2a: Kingambit
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1b: Iron Jugulis|Iron Jugulis, L50|179/179
+|switch|p2a: Zoë|Glastrier, L50|181/181
+|turn|4
+@message
+|
+|t:|
+|-end|p1b: Iron Jugulis|Quark Drive|[silent]
+|switch|p1b: Sandy Shocks|Sandy Shocks, L50|142/161
+|move|p1a: Terrakion|Pay Day|p2a: Zoë
+|-damage|p2a: Zoë|165/181
+|move|p2b: Indeedee|Draining Kiss|p1b: Sandy Shocks
+|-damage|p1b: Sandy Shocks|116/161
+|move|p2a: Zoë|Revival Blessing|p2a: Zoë
+|
+|t:|
+|-heal|p2: Kingambit|96/193|[from] move: Revival Blessing
+|
+|upkeep
+|turn|5
+|
+|t:|
+|switch|p1a: Iron Jugulis|Iron Jugulis, L50|179/179
+|switch|p2a: Litwick|Litwick, L50, F|128/128
+|move|p2b: Indeedee|Fake Tears|p2a: Litwick
+|-unboost|p2a: Litwick|spd|2
+|move|p1b: Sandy Shocks|Minimize|p1b: Sandy Shocks
+|-boost|p1b: Sandy Shocks|evasion|2
+|
+|upkeep
+|turn|6
+|
+|t:|
+|switch|p2b: Zoë|Glastrier, L50|165/181
+|switch|p2a: Kingambit|Kingambit, L50, M, shiny|96/193
+|-ability|p2a: Kingambit|Pressure
+|move|p1a: Iron Jugulis|Hydro Steam|p1b: Sandy Shocks
+|-supereffective|p1b: Sandy Shocks
+|-damage|p1b: Sandy Shocks|30/161
+|move|p1b: Sandy Shocks|Flip Turn|p1a: Iron Jugulis
+|-damage|p1a: Iron Jugulis|159/179
+|
+|t:|
+|-end|p1b: Sandy Shocks|Protosynthesis|[silent]
+|switch|p1b: Terrakion|Terrakion, L50, tera:Electric|98/166|[from] Flip Turn
+|
+|upkeep
+|turn|7
+@message
+|
+|t:|
+|switch|p2b: Litwick|Litwick, L50, F|128/128
+|move|p1a: Iron Jugulis|Hydro Steam|p2a: Kingambit
+|-damage|p2a: Kingambit|54/193
+|-enditem|p2a: Kingambit|Absorb Bulb
+|-boost|p2a: Kingambit|spa|1|[from] item: Absorb Bulb
+|move|p2a: Kingambit|Supercell Slam|p1a: Iron Jugulis
+|-supereffective|p1a: Iron Jugulis
+|-damage|p1a: Iron Jugulis|35/179
+|move|p1b: Terrakion|Circle Throw|p2a: Kingambit
+|-supereffective|p2a: Kingambit
+|-damage|p2a: Kingambit|0 fnt
+|faint|p2a: Kingambit
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p2a: Zoë|Glastrier, L50|165/181
+|turn|8
+|
+|t:|
+|switch|p2a: Indeedee|Indeedee, L50, M, tera:Psychic|150/150
+|move|p1a: Iron Jugulis|Hydro Steam|p2b: Litwick
+|-supereffective|p2b: Litwick
+|-crit|p2b: Litwick
+|-damage|p2b: Litwick|0 fnt
+|faint|p2b: Litwick
+|move|p1b: Terrakion|Circle Throw|p2a: Indeedee
+|-resisted|p2a: Indeedee
+|-damage|p2a: Indeedee|114/150
+|drag|p2a: Zoë|Glastrier, L50|165/181
+|
+|upkeep
+|
+|t:|
+|switch|p2b: Indeedee|Indeedee, L50, M, tera:Psychic|114/150
+|turn|9
+@message
+|
+|t:|
+|switch|p1b: Sandy Shocks|Sandy Shocks, L50|30/161
+|move|p1a: Iron Jugulis|Hydro Steam|p2b: Indeedee
+|-damage|p2b: Indeedee|78/150
+|move|p2b: Indeedee|Fake Tears|p2a: Zoë
+|-unboost|p2a: Zoë|spd|2
+|-activate|p2a: Zoë|move: Struggle
+|move|p2a: Zoë|Struggle|p1b: Sandy Shocks
+|-damage|p1b: Sandy Shocks|5/161
+|-damage|p2a: Zoë|120/181|[from] recoil
+|
+|upkeep
+|turn|10
+@message
+|
+|t:|
+|move|p1a: Iron Jugulis|Hydro Steam|p2a: Zoë
+|-damage|p2a: Zoë|39/181
+|move|p2b: Indeedee|Draining Kiss|p1a: Iron Jugulis
+|-supereffective|p1a: Iron Jugulis
+|-damage|p1a: Iron Jugulis|0 fnt
+|-heal|p2b: Indeedee|104/150|[from] drain|[of] p1a: Iron Jugulis
+|faint|p1a: Iron Jugulis
+|-end|p1a: Iron Jugulis|Quark Drive|[silent]
+|move|p1b: Sandy Shocks|Flip Turn|p2a: Zoë
+|-damage|p2a: Zoë|22/181
+|
+|t:|
+|-end|p1b: Sandy Shocks|Protosynthesis|[silent]
+|switch|p1b: Terrakion|Terrakion, L50, tera:Electric|98/166|[from] Flip Turn
+|-activate|p2a: Zoë|move: Struggle
+|move|p2a: Zoë|Struggle|p1b: Terrakion
+|-damage|p1b: Terrakion|73/166
+|-damage|p2a: Zoë|0 fnt|[from] recoil
+|faint|p2a: Zoë
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1a: Sandy Shocks|Sandy Shocks, L50|5/161
+|turn|11
+|
+|t:|
+|move|p2b: Indeedee|Draining Kiss|p1b: Terrakion
+|-damage|p1b: Terrakion|51/166
+|-heal|p2b: Indeedee|121/150|[from] drain|[of] p1b: Terrakion
+|move|p1a: Sandy Shocks|Flip Turn|p2b: Indeedee
+|-damage|p2b: Indeedee|89/150
+|move|p1b: Terrakion|Circle Throw|p2b: Indeedee
+|-resisted|p2b: Indeedee
+|-damage|p2b: Indeedee|50/150
+|
+|upkeep
+|turn|12
+|
+|t:|
+|move|p2b: Indeedee|Draining Kiss|p1a: Sandy Shocks
+|-damage|p1a: Sandy Shocks|0 fnt
+|-heal|p2b: Indeedee|54/150|[from] drain|[of] p1a: Sandy Shocks
+|faint|p1a: Sandy Shocks
+|-end|p1a: Sandy Shocks|Protosynthesis|[silent]
+|move|p1b: Terrakion|Circle Throw|p2b: Indeedee
+|-resisted|p2b: Indeedee
+|-damage|p2b: Indeedee|20/150
+|
+|upkeep
+|turn|13
+@message
+|
+|t:|
+|move|p2b: Indeedee|Fake Tears|p1b: Terrakion
+|-unboost|p1b: Terrakion|spd|2
+|move|p1b: Terrakion|Circle Throw|p2b: Indeedee
+|-resisted|p2b: Indeedee
+|-damage|p2b: Indeedee|0 fnt
+|faint|p2b: Indeedee
+|
+|win|Alice

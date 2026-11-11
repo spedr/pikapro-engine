@@ -1,0 +1,504 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 2bae 6da1 511f 4d96
+genders drawn
+team p1
+Feraligatr
+Ability: Torrent
+Level: 50
+Shiny: Yes
+Tera Type: Ground
+EVs: 39 HP / 147 Atk / 222 Def / 21 SpA / 3 SpD / 53 Spe
+Modest Nature
+- Conversion 2
+- Bullet Seed
+- Spicy Extract
+- Take Heart
+
+Blissey (F)
+Ability: Serene Grace
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 244 HP / 5 Atk / 115 Def / 103 SpA / 2 SpD / 28 Spe
+Quirky Nature
+- Retaliate
+- Glaciate
+- Toxic
+- Grav Apple
+
+Dondozo
+Ability: Unaware
+Level: 50
+Tera Type: Electric
+EVs: 36 HP / 210 Atk / 4 Def / 173 SpA / 35 SpD / 51 Spe
+Timid Nature
+- Order Up
+- Protect
+- Shelter
+- Block
+
+Granbull
+Ability: Rattled
+Level: 50
+Tera Type: Stellar
+EVs: 19 HP / 143 Atk / 136 Def / 51 SpA / 9 SpD / 38 Spe
+Modest Nature
+- Perish Song
+- Teatime
+- Lock-On
+- Baby-Doll Eyes
+
+Sparky (Tatsugiri)
+Ability: Commander
+Level: 50
+Tera Type: Ghost
+EVs: 65 HP / 109 Atk / 142 Def / 20 SpA / 45 SpD / 116 Spe
+Calm Nature
+- Protect
+- Accelerock
+- Poison Sting
+- Glaive Rush
+
+Zoë (Golett)
+Ability: No Guard
+Level: 50
+Tera Type: Normal
+EVs: 118 HP / 8 Atk / 171 Def / 5 SpA / 208 Spe
+Lonely Nature
+- Perish Song
+- Teatime
+- Lock-On
+- Ember
+end
+team p2
+Dondozo
+Ability: Unaware
+Level: 50
+Tera Type: Fighting
+EVs: 52 HP / 100 Atk / 132 Def / 23 SpD / 169 Spe
+Careful Nature
+- Order Up
+- Protect
+- Magma Storm
+- Baneful Bunker
+
+X (Lotad)
+Ability: Own Tempo
+Level: 50
+Tera Type: Ice
+EVs: 41 HP / 89 Atk / 146 Def / 168 SpA / 8 SpD / 3 Spe
+Jolly Nature
+- Perish Song
+- Teatime
+- Lock-On
+- Tickle
+
+Tatsugiri-Droopy
+Ability: Commander
+Level: 50
+Tera Type: Ice
+EVs: 174 HP / 4 Atk / 1 Def / 244 SpA / 86 SpD
+Hardy Nature
+- Protect
+- Block
+- Silk Trap
+
+ThisNameIsFarTooLongToKeep (Golurk)
+Ability: No Guard
+Level: 50
+Tera Type: Ice
+EVs: 13 HP / 84 Atk / 251 Def / 47 SpA / 71 SpD / 1 Spe
+Timid Nature
+- Perish Song
+- Teatime
+- Lock-On
+- Instruct
+
+Zoë (Regieleki) @ Normal Gem
+Ability: Transistor
+Level: 50
+Tera Type: Normal
+EVs: 14 HP / 248 Atk / 158 Def / 31 SpA / 26 SpD / 8 Spe
+Hasty Nature
+- Dragon Breath
+- Cross Chop
+- Steel Roller
+
+Sparky (Zebstrika) @ Love Sweet
+Ability: Lightning Rod
+Level: 50
+Tera Type: Rock
+EVs: 70 HP / 107 Atk / 34 Def / 129 SpD / 168 Spe
+Quiet Nature
+- Rock Tomb
+- Thunder Wave
+end
+choice p1 team 2654
+choice p2 team 3512
+choice p1 move 3 1, move 2
+choice p2 move 2 -2 terastallize, switch 3
+choice p1 move gravapple -2 ,  move Ember -1
+choice p2 pass, move 1 1
+choice p1 move retaliate +1, move 2 terastal
+choice p2 pass, move 1 2
+choice p1 move 4 1, move 1
+choice p2 default
+choice p1 switch tatsugiri,skip
+choice p2 pass, move 3 -1 terastallize
+choice p1 move protect ,  move 2
+choice p2 pass, move 4
+choice p1 default
+choice p2 default
+choice p1 move glaiverush 2 ,  move perishsong
+choice p2 switch X, switch regieleki
+choice p1 skip, switch Granbull
+choice p2 move 4 2, move 2 2
+choice p1 move Accelerock 2 ,  move Lock-On -1
+choice p2 default
+choice p1 move 3 -2, move 3 -1
+choice p2 move 3 -2, move Cross Chop -1
+choice p1 pass, move Baby-Doll Eyes +1
+choice p2 move 3 2 ,  move steelroller -1
+choice p1 pass, move 3 1
+choice p2 move 3 -2, move 1 2
+choice p1 pass,move lock-on 2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Feraligatr, L50, F|
+expect |poke|p1|Blissey, L50, F|
+expect |poke|p1|Dondozo, L50, M|
+expect |poke|p1|Granbull, L50, F|
+expect |poke|p1|Tatsugiri, L50, F|
+expect |poke|p1|Golett, L50|
+expect |poke|p2|Dondozo, L50, M|
+expect |poke|p2|Lotad, L50, F|
+expect |poke|p2|Tatsugiri-Droopy, L50, M|
+expect |poke|p2|Golurk, L50|
+expect |poke|p2|Regieleki, L50|
+expect |poke|p2|Zebstrika, L50, F|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Blissey|Blissey, L50, F, shiny|361/361
+expect |switch|p1a: Blissey|Blissey, L50, F, shiny|361/361
+expect |split|p1
+expect |switch|p1b: Zoë|Golett, L50|149/149
+expect |switch|p1b: Zoë|Golett, L50|149/149
+expect |split|p2
+expect |switch|p2a: Tatsugiri|Tatsugiri-Droopy, L50, M|165/165
+expect |switch|p2a: Tatsugiri|Tatsugiri-Droopy, L50, M|165/165
+expect |split|p2
+expect |switch|p2b: Zoë|Regieleki, L50|157/157
+expect |switch|p2b: Zoë|Regieleki, L50|157/157
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Dondozo|Dondozo, L50, M|232/232
+expect |switch|p2b: Dondozo|Dondozo, L50, M|232/232
+expect |-activate|p2a: Tatsugiri|ability: Commander|[of] p2b: Dondozo
+expect |-boost|p2b: Dondozo|atk|2
+expect |-boost|p2b: Dondozo|spa|2
+expect |-boost|p2b: Dondozo|spe|2
+expect |-boost|p2b: Dondozo|def|2
+expect |-boost|p2b: Dondozo|spd|2
+expect |move|p1b: Zoë|Teatime||[still]
+expect |-fieldactivate|move: Teatime
+expect |-fail|p1b: Zoë|move: Teatime
+expect |move|p1a: Blissey|Toxic|p2a: Tatsugiri|[miss]
+expect |-miss|p1a: Blissey|p2a: Tatsugiri
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2b: Dondozo|Order Up|p1a: Blissey
+expect |rng|100|71
+expect |rng|24|14
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Blissey|160/361
+expect |-damage|p1a: Blissey|160/361
+expect |-boost|p2b: Dondozo|def|1
+expect |move|p1b: Zoë|Ember|p1a: Blissey
+expect |rng|24|7
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Blissey|152/361
+expect |-damage|p1a: Blissey|152/361
+expect |rng|100|29
+expect |move|p1a: Blissey|Grav Apple|p1b: Zoë
+expect |rng|24|18
+expect |rng|16|10
+expect |-supereffective|p1b: Zoë
+expect |split|p1
+expect |-damage|p1b: Zoë|123/149
+expect |-damage|p1b: Zoë|123/149
+expect |rng|100|20
+expect |-unboost|p1b: Zoë|def|1
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |-terastallize|p1b: Zoë|Normal
+expect |move|p2b: Dondozo|Order Up|p1b: Zoë
+expect |rng|24|21
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: Zoë|24/149
+expect |-damage|p1b: Zoë|24/149
+expect |-boost|p2b: Dondozo|def|1
+expect |move|p1b: Zoë|Teatime||[still]
+expect |-fieldactivate|move: Teatime
+expect |-fail|p1b: Zoë|move: Teatime
+expect |move|p1a: Blissey|Retaliate|p2a: Tatsugiri|[miss]
+expect |-miss|p1a: Blissey|p2a: Tatsugiri
+expect |
+expect |upkeep
+expect |turn|4
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2b: Dondozo|Order Up|p1a: Blissey
+expect |rng|100|84
+expect |rng|24|0
+expect |rng|16|4
+expect |-crit|p1a: Blissey
+expect |split|p1
+expect |-damage|p1a: Blissey|0 fnt
+expect |-damage|p1a: Blissey|0 fnt
+expect |faint|p1a: Blissey
+expect |-boost|p2b: Dondozo|def|1
+expect |move|p1b: Zoë|Perish Song|p1b: Zoë
+expect |-start|p1b: Zoë|perish3|[silent]
+expect |-start|p2a: Tatsugiri|perish3|[silent]
+expect |-start|p2b: Dondozo|perish3|[silent]
+expect |-fieldactivate|move: Perish Song
+expect |
+expect |-start|p2b: Dondozo|perish3
+expect |-start|p2a: Tatsugiri|perish3
+expect |-start|p1b: Zoë|perish3
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Sparky|Tatsugiri, L50, F|151/151
+expect |switch|p1a: Sparky|Tatsugiri, L50, F|151/151
+expect |turn|5
+expect |
+expect |t:|
+expect |-terastallize|p2b: Dondozo|Fighting
+expect |move|p1a: Sparky|Protect|p1a: Sparky
+expect |-singleturn|p1a: Sparky|Protect
+expect |move|p2b: Dondozo|Magma Storm|p2a: Tatsugiri|[miss]
+expect |-miss|p2b: Dondozo|p2a: Tatsugiri
+expect |move|p1b: Zoë|Teatime||[still]
+expect |-fieldactivate|move: Teatime
+expect |-fail|p1b: Zoë|move: Teatime
+expect |
+expect |rng|2|0
+expect |-start|p2b: Dondozo|perish2
+expect |-start|p2a: Tatsugiri|perish2
+expect |-start|p1b: Zoë|perish2
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2b: Dondozo|Baneful Bunker|p2b: Dondozo
+expect |-singleturn|p2b: Dondozo|move: Protect
+expect |move|p1a: Sparky|Protect|p1a: Sparky
+expect |rng|3|0
+expect |-singleturn|p1a: Sparky|Protect
+expect |move|p1b: Zoë|Perish Song|p1b: Zoë
+expect |-start|p1a: Sparky|perish3|[silent]
+expect |-fieldactivate|move: Perish Song
+expect |
+expect |rng|2|1
+expect |rng|2|0
+expect |-start|p2b: Dondozo|perish1
+expect |-start|p1a: Sparky|perish3
+expect |-start|p2a: Tatsugiri|perish1
+expect |-start|p1b: Zoë|perish1
+expect |upkeep
+expect |turn|7
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2b: Dondozo|Order Up|p1b: Zoë
+expect |rng|24|14
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1b: Zoë|0 fnt
+expect |-damage|p1b: Zoë|0 fnt
+expect |faint|p1b: Zoë
+expect |-boost|p2b: Dondozo|def|1
+expect |move|p1a: Sparky|Glaive Rush|p2b: Dondozo
+expect |rng|100|55
+expect |rng|24|18
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2b: Dondozo|222/232
+expect |-damage|p2b: Dondozo|222/232
+expect |-singlemove|p1a: Sparky|Glaive Rush|[silent]
+expect |
+expect |-start|p2b: Dondozo|perish0
+expect |-start|p1a: Sparky|perish2
+expect |faint|p2b: Dondozo
+expect |-start|p2a: Tatsugiri|perish0
+expect |upkeep
+expect |faint|p2a: Tatsugiri
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Lotad, L50, F|120/120
+expect |switch|p2a: X|Lotad, L50, F|120/120
+expect |split|p1
+expect |switch|p1b: Granbull|Granbull, L50, F|167/167
+expect |switch|p1b: Granbull|Granbull, L50, F|167/167
+expect |split|p2
+expect |switch|p2b: Zoë|Regieleki, L50|157/157
+expect |switch|p2b: Zoë|Regieleki, L50|157/157
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1a: Sparky|Accelerock|p2b: Zoë
+expect |rng|100|87
+expect |rng|24|13
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Zoë|140/157
+expect |-damage|p2b: Zoë|140/157
+expect |move|p2b: Zoë|Cross Chop|p1b: Granbull
+expect |rng|100|25
+expect |rng|8|7
+expect |rng|16|10
+expect |-resisted|p1b: Granbull
+expect |split|p1
+expect |-damage|p1b: Granbull|140/167
+expect |-damage|p1b: Granbull|140/167
+expect |move|p1b: Granbull|Lock-On|p1a: Sparky
+expect |-activate|p1b: Granbull|move: Lock-On|[of] p1a: Sparky
+expect |move|p2a: X|Tickle|p1b: Granbull
+expect |rng|100|76
+expect |-unboost|p1b: Granbull|atk|1
+expect |-unboost|p1b: Granbull|def|1
+expect |
+expect |-start|p1a: Sparky|perish1
+expect |upkeep
+expect |turn|9
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2b: Zoë|Dragon Breath|p1a: Sparky
+expect |rng|100|5
+expect |rng|24|16
+expect |rng|16|15
+expect |-supereffective|p1a: Sparky
+expect |split|p1
+expect |-damage|p1a: Sparky|107/151
+expect |-damage|p1a: Sparky|107/151
+expect |rng|100|88
+expect |move|p1a: Sparky|Poison Sting|p1b: Granbull
+expect |rng|100|93
+expect |rng|24|17
+expect |rng|16|3
+expect |-supereffective|p1b: Granbull
+expect |split|p1
+expect |-damage|p1b: Granbull|126/167
+expect |-damage|p1b: Granbull|126/167
+expect |rng|100|13
+expect |-status|p1b: Granbull|psn
+expect |move|p1b: Granbull|Lock-On||[still]
+expect |-fail|p1b: Granbull
+expect |move|p2a: X|Perish Song|p2a: X
+expect |-start|p1b: Granbull|perish3|[silent]
+expect |-start|p2a: X|perish3|[silent]
+expect |-start|p2b: Zoë|perish3|[silent]
+expect |-fieldactivate|move: Perish Song
+expect |
+expect |split|p1
+expect |-damage|p1b: Granbull|106/167 psn|[from] psn
+expect |-damage|p1b: Granbull|106/167 psn|[from] psn
+expect |-start|p2b: Zoë|perish3
+expect |-start|p1a: Sparky|perish0
+expect |-start|p1b: Granbull|perish3
+expect |faint|p1a: Sparky
+expect |-start|p2a: X|perish3
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1b: Granbull|Baby-Doll Eyes|p2a: X
+expect |rng|100|33
+expect |-unboost|p2a: X|atk|1
+expect |move|p2b: Zoë|Cross Chop|p2a: X|[miss]
+expect |rng|100|92
+expect |-miss|p2b: Zoë|p2a: X
+expect |move|p2a: X|Lock-On|p2b: Zoë
+expect |-activate|p2a: X|move: Lock-On|[of] p2b: Zoë
+expect |
+expect |split|p1
+expect |-damage|p1b: Granbull|86/167 psn|[from] psn
+expect |-damage|p1b: Granbull|86/167 psn|[from] psn
+expect |-start|p2b: Zoë|perish2
+expect |-start|p1b: Granbull|perish2
+expect |-start|p2a: X|perish2
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p2b: Zoë|Steel Roller||[still]
+expect |-fail|p2b: Zoë
+expect |move|p1b: Granbull|Lock-On|p2a: X
+expect |-activate|p1b: Granbull|move: Lock-On|[of] p2a: X
+expect |move|p2a: X|Lock-On||[still]
+expect |-fail|p2a: X
+expect |
+expect |split|p1
+expect |-damage|p1b: Granbull|66/167 psn|[from] psn
+expect |-damage|p1b: Granbull|66/167 psn|[from] psn
+expect |-start|p2b: Zoë|perish1
+expect |-start|p1b: Granbull|perish1
+expect |-start|p2a: X|perish1
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p2b: Zoë|Dragon Breath|p1b: Granbull
+expect |-immune|p1b: Granbull
+expect |move|p1b: Granbull|Lock-On||[still]
+expect |-fail|p1b: Granbull
+expect |move|p2a: X|Lock-On|p2b: Zoë
+expect |-activate|p2a: X|move: Lock-On|[of] p2b: Zoë
+expect |
+expect |split|p1
+expect |-damage|p1b: Granbull|46/167 psn|[from] psn
+expect |-damage|p1b: Granbull|46/167 psn|[from] psn
+expect |-start|p2b: Zoë|perish0
+expect |-start|p1b: Granbull|perish0
+expect |-start|p2a: X|perish0
+expect |faint|p2b: Zoë
+expect |faint|p1b: Granbull
+expect |faint|p2a: X
+expect |
+expect |win|p2

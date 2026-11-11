@@ -1,0 +1,358 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed facb bd69 9048 f126
+genders drawn
+team p1
+Kommo-o
+Ability: Bulletproof
+Level: 50
+Tera Type: Stellar
+EVs: 14 HP / 2 Def / 29 SpA / 18 SpD / 3 Spe
+Modest Nature
+- Meteor Mash
+
+Vivillon-River (F)
+Ability: Compound Eyes
+Level: 50
+Tera Type: Stellar
+EVs: 2 HP / 26 Def / 27 SpA / 8 SpD / 3 Spe
+Mild Nature
+- Coaching
+
+Houndstone @ Payapa Berry
+Ability: Fluffy
+Level: 50
+Tera Type: Ice
+EVs: 2 HP / 8 Atk / 6 Def / 6 SpA / 23 SpD / 21 Spe
+Relaxed Nature
+- Fake Tears
+- Snowscape
+- Torment
+
+Dragalge (F) @ Dragalgite
+Ability: Adaptability
+Level: 50
+Tera Type: Stellar
+EVs: 5 HP / 4 Atk / 11 Def / 3 SpA / 18 SpD / 22 Spe
+Timid Nature
+- Mirror Coat
+- Overheat
+- Vacuum Wave
+- Armor Cannon
+
+Machamp
+Ability: No Guard
+Level: 50
+Tera Type: Electric
+EVs: 18 Atk / 15 SpA / 5 SpD / 28 Spe
+Mild Nature
+- Dynamic Punch
+- Sheer Cold
+- Fissure
+- Horn Drill
+
+Pikachu
+Ability: Static
+Level: 50
+Tera Type: Fire
+EVs: 4 HP / 4 Atk / 17 Def / 19 SpA / 2 SpD / 20 Spe
+Serious Nature
+- Electric Terrain
+- Yawn
+- Thunderbolt
+- Spore
+end
+team p2
+Orthworm
+Ability: Earth Eater
+Level: 50
+Tera Type: Ghost
+EVs: 28 HP / 4 Atk / 12 Def / 4 SpA / 1 SpD / 17 Spe
+Hasty Nature
+- Metal Sound
+- Cross Chop
+- Flying Press
+
+Mimikyu (F) @ Damp Rock
+Ability: Disguise
+Level: 50
+Tera Type: Fairy
+EVs: 6 HP / 13 Atk / 1 Def / 16 SpA / 24 SpD / 2 Spe
+Impish Nature
+- Circle Throw
+
+Mawile (F)
+Ability: Intimidate
+Level: 50
+Tera Type: Steel
+EVs: 23 HP / 11 Atk / 12 Def / 15 SpA / 2 SpD / 2 Spe
+Hasty Nature
+- Heat Wave
+- Feather Dance
+- Cosmic Power
+- Throat Chop
+
+Machamp
+Ability: No Guard
+Level: 50
+Tera Type: Fighting
+EVs: 4 HP / 4 Atk / 13 Def / 3 SpA / 11 SpD / 12 Spe
+Docile Nature
+- Dynamic Punch
+- Sheer Cold
+- Fissure
+- Horn Drill
+
+Eelektross @ Eelektrossite
+Ability: Levitate
+Level: 50
+Tera Type: Rock
+EVs: 11 HP / 19 Atk / 2 Def / 5 SpA / 20 SpD / 2 Spe
+Gentle Nature
+- Guard Split
+- Substitute
+- Aqua Ring
+
+Excadrill
+Ability: Mold Breaker
+Level: 50
+Tera Type: Fairy
+EVs: 5 Atk / 25 SpA / 22 SpD / 14 Spe
+Calm Nature
+- Draining Kiss
+- Smart Strike
+- Volt Switch
+- Spit Up
+end
+choice p1 team 5312
+choice p2 team 4356
+choice p1 move 2 2, move 3 -1
+choice p2 move 3 -2, switch 3
+choice p2 pass, switch 3
+choice p1 move 1 2, move 1 2
+choice p2 move 3 -2, move 2 -1
+choice p2 pass, switch 4
+choice p1 move 3 -2, move 2
+choice p2 move 4 1, move 1 2
+choice p1 switch 3, switch 4
+choice p2 move 4 1, move 1 1
+choice p1 move 1 2, move 1 -1
+choice p2 move 2 2, move 2 2
+choice p1 pass, move 1 -1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Kommo-o, L50, F|
+expect |poke|p1|Vivillon-River, L50, F|
+expect |poke|p1|Houndstone, L50, M|
+expect |poke|p1|Dragalge, L50, F|
+expect |poke|p1|Machamp, L50, F|
+expect |poke|p1|Pikachu, L50, F|
+expect |poke|p2|Orthworm, L50, F|
+expect |poke|p2|Mimikyu, L50, F|
+expect |poke|p2|Mawile, L50, F|
+expect |poke|p2|Machamp, L50, M|
+expect |poke|p2|Eelektross, L50, M|
+expect |poke|p2|Excadrill, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Machamp|Machamp, L50, F|165/165
+expect |switch|p1a: Machamp|Machamp, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Houndstone|Houndstone, L50, M|149/149
+expect |switch|p1b: Houndstone|Houndstone, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Machamp|Machamp, L50, M|169/169
+expect |switch|p2a: Machamp|Machamp, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Mawile|Mawile, L50, F|148/148
+expect |switch|p2b: Mawile|Mawile, L50, F|100/100
+expect |-ability|p2b: Mawile|Intimidate|boost
+expect |-unboost|p1a: Machamp|atk|1
+expect |-unboost|p1b: Houndstone|atk|1
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Eelektross|Eelektross, L50, M|171/171
+expect |switch|p2b: Eelektross|Eelektross, L50, M|100/100
+expect |move|p1a: Machamp|Sheer Cold|p2b: Eelektross
+expect |split|p2
+expect |-damage|p2b: Eelektross|0 fnt
+expect |-damage|p2b: Eelektross|0 fnt
+expect |faint|p2b: Eelektross
+expect |-ohko
+expect |move|p1b: Houndstone|Torment|p1a: Machamp
+expect |-start|p1a: Machamp|Torment
+expect |move|p2a: Machamp|Fissure|p2: Eelektross|[notarget]
+expect |-fail|p2a: Machamp
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Mawile|Mawile, L50, F|148/148
+expect |switch|p2b: Mawile|Mawile, L50, F|100/100
+expect |-ability|p2b: Mawile|Intimidate|boost
+expect |-unboost|p1a: Machamp|atk|1
+expect |-unboost|p1b: Houndstone|atk|1
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Machamp|Dynamic Punch|p2b: Mawile
+expect |rng|24|20
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Mawile|99/148
+expect |-damage|p2b: Mawile|66/100
+expect |rng|100|33
+expect |-start|p2b: Mawile|confusion
+expect |rng|4|2
+expect |move|p1b: Houndstone|Fake Tears|p2b: Mawile
+expect |rng|100|10
+expect |-unboost|p2b: Mawile|spd|2
+expect |move|p2a: Machamp|Fissure|p2b: Mawile
+expect |split|p2
+expect |-damage|p2b: Mawile|0 fnt
+expect |-damage|p2b: Mawile|0 fnt
+expect |faint|p2b: Mawile
+expect |-ohko
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Excadrill|Excadrill, L50, M|185/185
+expect |switch|p2b: Excadrill|Excadrill, L50, M|100/100
+expect |-ability|p2b: Excadrill|Mold Breaker
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2b: Excadrill|Draining Kiss|p1b: Houndstone
+expect |rng|100|44
+expect |rng|24|11
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1b: Houndstone|134/149
+expect |-damage|p1b: Houndstone|89/100
+expect |move|p1a: Machamp|Fissure|p1b: Houndstone
+expect |split|p1
+expect |-damage|p1b: Houndstone|0 fnt
+expect |-damage|p1b: Houndstone|0 fnt
+expect |faint|p1b: Houndstone
+expect |-ohko
+expect |move|p2a: Machamp|Horn Drill|p1a: Machamp
+expect |split|p1
+expect |-damage|p1a: Machamp|0 fnt
+expect |-damage|p1a: Machamp|0 fnt
+expect |faint|p1a: Machamp
+expect |-ohko
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Kommo-o|Kommo-o, L50, F|164/164
+expect |switch|p1a: Kommo-o|Kommo-o, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: Vivillon|Vivillon-River, L50, F|157/157
+expect |switch|p1b: Vivillon|Vivillon-River, L50, F|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2b: Excadrill|Draining Kiss|p1a: Kommo-o
+expect |rng|100|74
+expect |rng|24|20
+expect |rng|16|8
+expect |-supereffective|p1a: Kommo-o|2
+expect |split|p1
+expect |-damage|p1a: Kommo-o|108/164
+expect |-damage|p1a: Kommo-o|65/100
+expect |move|p1b: Vivillon|Coaching|p1a: Kommo-o
+expect |-boost|p1a: Kommo-o|atk|1
+expect |-boost|p1a: Kommo-o|def|1
+expect |move|p1a: Kommo-o|Meteor Mash|p2b: Excadrill
+expect |rng|100|26
+expect |rng|24|14
+expect |rng|16|2
+expect |-resisted|p2b: Excadrill|1
+expect |split|p2
+expect |-damage|p2b: Excadrill|142/185
+expect |-damage|p2b: Excadrill|76/100
+expect |rng|100|72
+expect |move|p2a: Machamp|Horn Drill|p1a: Kommo-o
+expect |split|p1
+expect |-damage|p1a: Kommo-o|0 fnt
+expect |-damage|p1a: Kommo-o|0 fnt
+expect |faint|p1a: Kommo-o
+expect |-ohko
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2b: Excadrill|Smart Strike|p1b: Vivillon
+expect |rng|24|10
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1b: Vivillon|87/157
+expect |-damage|p1b: Vivillon|55/100
+expect |move|p1b: Vivillon|Coaching|p1: Kommo-o|[notarget]
+expect |-fail|p1b: Vivillon
+expect |move|p2a: Machamp|Sheer Cold|p1b: Vivillon
+expect |split|p1
+expect |-damage|p1b: Vivillon|0 fnt
+expect |-damage|p1b: Vivillon|0 fnt
+expect |faint|p1b: Vivillon
+expect |-ohko
+expect |
+expect |win|p2
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Kommo-o","details":"Kommo-o, L50, F","condition":"164/164","active":true,"stats":{"atk":117,"def":147,"spa":163,"spd":143,"spe":108},"moves":["meteormash"],"baseAbility":"bulletproof","item":"","pokeball":"pokeball","ability":"bulletproof","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-River, L50, F","condition":"157/157","active":true,"stats":{"atk":72,"def":86,"spa":150,"spd":78,"spe":112},"moves":["coaching"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p1: Houndstone","details":"Houndstone, L50, M","condition":"149/149","active":false,"stats":{"atk":129,"def":138,"spa":76,"spd":140,"spe":98},"moves":["faketears","snowscape","torment"],"baseAbility":"fluffy","item":"payapaberry","pokeball":"pokeball","ability":"fluffy","commanding":false,"reviving":false},{"ident":"p1: Dragalge","details":"Dragalge, L50, F","condition":"145/145","active":false,"stats":{"atk":89,"def":121,"spa":120,"spd":161,"spe":94},"moves":["mirrorcoat","overheat","vacuumwave","armorcannon"],"baseAbility":"adaptability","item":"dragalgite","pokeball":"pokeball","ability":"adaptability","commanding":false,"reviving":false},{"ident":"p1: Machamp","details":"Machamp, L50, F","condition":"165/165","active":false,"stats":{"atk":168,"def":90,"spa":110,"spd":110,"spe":103},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"114/114","active":false,"stats":{"atk":79,"def":77,"spa":89,"spd":72,"spe":130},"moves":["electricterrain","yawn","thunderbolt","spore"],"baseAbility":"static","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Orthworm","details":"Orthworm, L50, F","condition":"173/173","active":true,"stats":{"atk":109,"def":159,"spa":84,"spd":76,"spe":112},"moves":["metalsound","crosschop","flyingpress"],"baseAbility":"eartheater","item":"","pokeball":"pokeball","ability":"eartheater","commanding":false,"reviving":false},{"ident":"p2: Mimikyu","details":"Mimikyu, L50, F","condition":"136/136","active":true,"stats":{"atk":123,"def":111,"spa":77,"spd":149,"spe":118},"moves":["circlethrow"],"baseAbility":"disguise","item":"damprock","pokeball":"pokeball","ability":"disguise","commanding":false,"reviving":false},{"ident":"p2: Mawile","details":"Mawile, L50, F","condition":"148/148","active":false,"stats":{"atk":116,"def":105,"spa":90,"spd":77,"spe":79},"moves":["heatwave","featherdance","cosmicpower","throatchop"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Machamp","details":"Machamp, L50, M","condition":"169/169","active":false,"stats":{"atk":154,"def":113,"spa":88,"spd":116,"spe":87},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Eelektross","details":"Eelektross, L50, M","condition":"171/171","active":false,"stats":{"atk":154,"def":91,"spa":130,"spd":132,"spe":72},"moves":["guardsplit","substitute","aquaring"],"baseAbility":"levitate","item":"eelektrossite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Excadrill","details":"Excadrill, L50, M","condition":"185/185","active":false,"stats":{"atk":144,"def":80,"spa":95,"spd":117,"spe":122},"moves":["drainingkiss","smartstrike","voltswitch","spitup"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Dynamic Punch","id":"dynamicpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Fissure","id":"fissure","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Fake Tears","id":"faketears","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Snowscape","id":"snowscape","pp":8,"maxpp":8,"target":"all","disabled":false},{"move":"Torment","id":"torment","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Machamp","details":"Machamp, L50, F","condition":"165/165","active":true,"stats":{"atk":168,"def":90,"spa":110,"spd":110,"spe":103},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p1: Houndstone","details":"Houndstone, L50, M","condition":"149/149","active":true,"stats":{"atk":129,"def":138,"spa":76,"spd":140,"spe":98},"moves":["faketears","snowscape","torment"],"baseAbility":"fluffy","item":"payapaberry","pokeball":"pokeball","ability":"fluffy","commanding":false,"reviving":false},{"ident":"p1: Kommo-o","details":"Kommo-o, L50, F","condition":"164/164","active":false,"stats":{"atk":117,"def":147,"spa":163,"spd":143,"spe":108},"moves":["meteormash"],"baseAbility":"bulletproof","item":"","pokeball":"pokeball","ability":"bulletproof","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-River, L50, F","condition":"157/157","active":false,"stats":{"atk":72,"def":86,"spa":150,"spd":78,"spe":112},"moves":["coaching"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Dynamic Punch","id":"dynamicpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Fissure","id":"fissure","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Heat Wave","id":"heatwave","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Feather Dance","id":"featherdance","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Cosmic Power","id":"cosmicpower","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Throat Chop","id":"throatchop","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Machamp","details":"Machamp, L50, M","condition":"169/169","active":true,"stats":{"atk":154,"def":113,"spa":88,"spd":116,"spe":87},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Mawile","details":"Mawile, L50, F","condition":"148/148","active":true,"stats":{"atk":116,"def":105,"spa":90,"spd":77,"spe":79},"moves":["heatwave","featherdance","cosmicpower","throatchop"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Eelektross","details":"Eelektross, L50, M","condition":"171/171","active":false,"stats":{"atk":154,"def":91,"spa":130,"spd":132,"spe":72},"moves":["guardsplit","substitute","aquaring"],"baseAbility":"levitate","item":"eelektrossite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Excadrill","details":"Excadrill, L50, M","condition":"185/185","active":false,"stats":{"atk":144,"def":80,"spa":95,"spd":117,"spe":122},"moves":["drainingkiss","smartstrike","voltswitch","spitup"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Machamp","details":"Machamp, L50, F","condition":"165/165","active":true,"stats":{"atk":168,"def":90,"spa":110,"spd":110,"spe":103},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p1: Houndstone","details":"Houndstone, L50, M","condition":"149/149","active":true,"stats":{"atk":129,"def":138,"spa":76,"spd":140,"spe":98},"moves":["faketears","snowscape","torment"],"baseAbility":"fluffy","item":"payapaberry","pokeball":"pokeball","ability":"fluffy","commanding":false,"reviving":false},{"ident":"p1: Kommo-o","details":"Kommo-o, L50, F","condition":"164/164","active":false,"stats":{"atk":117,"def":147,"spa":163,"spd":143,"spe":108},"moves":["meteormash"],"baseAbility":"bulletproof","item":"","pokeball":"pokeball","ability":"bulletproof","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-River, L50, F","condition":"157/157","active":false,"stats":{"atk":72,"def":86,"spa":150,"spd":78,"spe":112},"moves":["coaching"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Machamp","details":"Machamp, L50, M","condition":"169/169","active":true,"stats":{"atk":154,"def":113,"spa":88,"spd":116,"spe":87},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Eelektross","details":"Eelektross, L50, M","condition":"0 fnt","active":true,"stats":{"atk":154,"def":91,"spa":130,"spd":132,"spe":72},"moves":["guardsplit","substitute","aquaring"],"baseAbility":"levitate","item":"eelektrossite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Mawile","details":"Mawile, L50, F","condition":"148/148","active":false,"stats":{"atk":116,"def":105,"spa":90,"spd":77,"spe":79},"moves":["heatwave","featherdance","cosmicpower","throatchop"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Excadrill","details":"Excadrill, L50, M","condition":"185/185","active":false,"stats":{"atk":144,"def":80,"spa":95,"spd":117,"spe":122},"moves":["drainingkiss","smartstrike","voltswitch","spitup"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Dynamic Punch","id":"dynamicpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":7,"maxpp":8,"target":"normal","disabled":true},{"move":"Fissure","id":"fissure","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Fake Tears","id":"faketears","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Snowscape","id":"snowscape","pp":8,"maxpp":8,"target":"all","disabled":false},{"move":"Torment","id":"torment","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Machamp","details":"Machamp, L50, F","condition":"165/165","active":true,"stats":{"atk":168,"def":90,"spa":110,"spd":110,"spe":103},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p1: Houndstone","details":"Houndstone, L50, M","condition":"149/149","active":true,"stats":{"atk":129,"def":138,"spa":76,"spd":140,"spe":98},"moves":["faketears","snowscape","torment"],"baseAbility":"fluffy","item":"payapaberry","pokeball":"pokeball","ability":"fluffy","commanding":false,"reviving":false},{"ident":"p1: Kommo-o","details":"Kommo-o, L50, F","condition":"164/164","active":false,"stats":{"atk":117,"def":147,"spa":163,"spd":143,"spe":108},"moves":["meteormash"],"baseAbility":"bulletproof","item":"","pokeball":"pokeball","ability":"bulletproof","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-River, L50, F","condition":"157/157","active":false,"stats":{"atk":72,"def":86,"spa":150,"spd":78,"spe":112},"moves":["coaching"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Dynamic Punch","id":"dynamicpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Fissure","id":"fissure","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Heat Wave","id":"heatwave","pp":12,"maxpp":12,"target":"allAdjacentFoes","disabled":false},{"move":"Feather Dance","id":"featherdance","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Cosmic Power","id":"cosmicpower","pp":20,"maxpp":20,"target":"self","disabled":false},{"move":"Throat Chop","id":"throatchop","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Machamp","details":"Machamp, L50, M","condition":"169/169","active":true,"stats":{"atk":154,"def":113,"spa":88,"spd":116,"spe":87},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Mawile","details":"Mawile, L50, F","condition":"148/148","active":true,"stats":{"atk":116,"def":105,"spa":90,"spd":77,"spe":79},"moves":["heatwave","featherdance","cosmicpower","throatchop"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Eelektross","details":"Eelektross, L50, M","condition":"0 fnt","active":false,"stats":{"atk":154,"def":91,"spa":130,"spd":132,"spe":72},"moves":["guardsplit","substitute","aquaring"],"baseAbility":"levitate","item":"eelektrossite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Excadrill","details":"Excadrill, L50, M","condition":"185/185","active":false,"stats":{"atk":144,"def":80,"spa":95,"spd":117,"spe":122},"moves":["drainingkiss","smartstrike","voltswitch","spitup"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Machamp","details":"Machamp, L50, F","condition":"165/165","active":true,"stats":{"atk":168,"def":90,"spa":110,"spd":110,"spe":103},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p1: Houndstone","details":"Houndstone, L50, M","condition":"149/149","active":true,"stats":{"atk":129,"def":138,"spa":76,"spd":140,"spe":98},"moves":["faketears","snowscape","torment"],"baseAbility":"fluffy","item":"payapaberry","pokeball":"pokeball","ability":"fluffy","commanding":false,"reviving":false},{"ident":"p1: Kommo-o","details":"Kommo-o, L50, F","condition":"164/164","active":false,"stats":{"atk":117,"def":147,"spa":163,"spd":143,"spe":108},"moves":["meteormash"],"baseAbility":"bulletproof","item":"","pokeball":"pokeball","ability":"bulletproof","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-River, L50, F","condition":"157/157","active":false,"stats":{"atk":72,"def":86,"spa":150,"spd":78,"spe":112},"moves":["coaching"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Machamp","details":"Machamp, L50, M","condition":"169/169","active":true,"stats":{"atk":154,"def":113,"spa":88,"spd":116,"spe":87},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Mawile","details":"Mawile, L50, F","condition":"0 fnt","active":true,"stats":{"atk":116,"def":105,"spa":90,"spd":77,"spe":79},"moves":["heatwave","featherdance","cosmicpower","throatchop"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p2: Eelektross","details":"Eelektross, L50, M","condition":"0 fnt","active":false,"stats":{"atk":154,"def":91,"spa":130,"spd":132,"spe":72},"moves":["guardsplit","substitute","aquaring"],"baseAbility":"levitate","item":"eelektrossite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Excadrill","details":"Excadrill, L50, M","condition":"185/185","active":false,"stats":{"atk":144,"def":80,"spa":95,"spd":117,"spe":122},"moves":["drainingkiss","smartstrike","voltswitch","spitup"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Dynamic Punch","id":"dynamicpunch","pp":7,"maxpp":8,"target":"normal","disabled":true},{"move":"Sheer Cold","id":"sheercold","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Fissure","id":"fissure","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Fake Tears","id":"faketears","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Snowscape","id":"snowscape","pp":8,"maxpp":8,"target":"all","disabled":false},{"move":"Torment","id":"torment","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Machamp","details":"Machamp, L50, F","condition":"165/165","active":true,"stats":{"atk":168,"def":90,"spa":110,"spd":110,"spe":103},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p1: Houndstone","details":"Houndstone, L50, M","condition":"149/149","active":true,"stats":{"atk":129,"def":138,"spa":76,"spd":140,"spe":98},"moves":["faketears","snowscape","torment"],"baseAbility":"fluffy","item":"payapaberry","pokeball":"pokeball","ability":"fluffy","commanding":false,"reviving":false},{"ident":"p1: Kommo-o","details":"Kommo-o, L50, F","condition":"164/164","active":false,"stats":{"atk":117,"def":147,"spa":163,"spd":143,"spe":108},"moves":["meteormash"],"baseAbility":"bulletproof","item":"","pokeball":"pokeball","ability":"bulletproof","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-River, L50, F","condition":"157/157","active":false,"stats":{"atk":72,"def":86,"spa":150,"spd":78,"spe":112},"moves":["coaching"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Dynamic Punch","id":"dynamicpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Fissure","id":"fissure","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Smart Strike","id":"smartstrike","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Volt Switch","id":"voltswitch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Spit Up","id":"spitup","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Machamp","details":"Machamp, L50, M","condition":"169/169","active":true,"stats":{"atk":154,"def":113,"spa":88,"spd":116,"spe":87},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Excadrill","details":"Excadrill, L50, M","condition":"185/185","active":true,"stats":{"atk":144,"def":80,"spa":95,"spd":117,"spe":122},"moves":["drainingkiss","smartstrike","voltswitch","spitup"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p2: Eelektross","details":"Eelektross, L50, M","condition":"0 fnt","active":false,"stats":{"atk":154,"def":91,"spa":130,"spd":132,"spe":72},"moves":["guardsplit","substitute","aquaring"],"baseAbility":"levitate","item":"eelektrossite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Mawile","details":"Mawile, L50, F","condition":"0 fnt","active":false,"stats":{"atk":116,"def":105,"spa":90,"spd":77,"spe":79},"moves":["heatwave","featherdance","cosmicpower","throatchop"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false}]}}
+request p1 {"forceSwitch":[true,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Machamp","details":"Machamp, L50, F","condition":"0 fnt","active":true,"stats":{"atk":168,"def":90,"spa":110,"spd":110,"spe":103},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p1: Houndstone","details":"Houndstone, L50, M","condition":"0 fnt","active":true,"stats":{"atk":129,"def":138,"spa":76,"spd":140,"spe":98},"moves":["faketears","snowscape","torment"],"baseAbility":"fluffy","item":"payapaberry","pokeball":"pokeball","ability":"fluffy","commanding":false,"reviving":false},{"ident":"p1: Kommo-o","details":"Kommo-o, L50, F","condition":"164/164","active":false,"stats":{"atk":117,"def":147,"spa":163,"spd":143,"spe":108},"moves":["meteormash"],"baseAbility":"bulletproof","item":"","pokeball":"pokeball","ability":"bulletproof","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-River, L50, F","condition":"157/157","active":false,"stats":{"atk":72,"def":86,"spa":150,"spd":78,"spe":112},"moves":["coaching"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false}]},"noCancel":true}
+request p2 {"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Machamp","details":"Machamp, L50, M","condition":"169/169","active":true,"stats":{"atk":154,"def":113,"spa":88,"spd":116,"spe":87},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Excadrill","details":"Excadrill, L50, M","condition":"185/185","active":true,"stats":{"atk":144,"def":80,"spa":95,"spd":117,"spe":122},"moves":["drainingkiss","smartstrike","voltswitch","spitup"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p2: Eelektross","details":"Eelektross, L50, M","condition":"0 fnt","active":false,"stats":{"atk":154,"def":91,"spa":130,"spd":132,"spe":72},"moves":["guardsplit","substitute","aquaring"],"baseAbility":"levitate","item":"eelektrossite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Mawile","details":"Mawile, L50, F","condition":"0 fnt","active":false,"stats":{"atk":116,"def":105,"spa":90,"spd":77,"spe":79},"moves":["heatwave","featherdance","cosmicpower","throatchop"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Meteor Mash","id":"meteormash","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Coaching","id":"coaching","pp":12,"maxpp":12,"target":"adjacentAlly","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Kommo-o","details":"Kommo-o, L50, F","condition":"164/164","active":true,"stats":{"atk":117,"def":147,"spa":163,"spd":143,"spe":108},"moves":["meteormash"],"baseAbility":"bulletproof","item":"","pokeball":"pokeball","ability":"bulletproof","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-River, L50, F","condition":"157/157","active":true,"stats":{"atk":72,"def":86,"spa":150,"spd":78,"spe":112},"moves":["coaching"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p1: Machamp","details":"Machamp, L50, F","condition":"0 fnt","active":false,"stats":{"atk":168,"def":90,"spa":110,"spd":110,"spe":103},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p1: Houndstone","details":"Houndstone, L50, M","condition":"0 fnt","active":false,"stats":{"atk":129,"def":138,"spa":76,"spd":140,"spe":98},"moves":["faketears","snowscape","torment"],"baseAbility":"fluffy","item":"payapaberry","pokeball":"pokeball","ability":"fluffy","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Dynamic Punch","id":"dynamicpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Fissure","id":"fissure","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":7,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Smart Strike","id":"smartstrike","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Volt Switch","id":"voltswitch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Spit Up","id":"spitup","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Machamp","details":"Machamp, L50, M","condition":"169/169","active":true,"stats":{"atk":154,"def":113,"spa":88,"spd":116,"spe":87},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Excadrill","details":"Excadrill, L50, M","condition":"185/185","active":true,"stats":{"atk":144,"def":80,"spa":95,"spd":117,"spe":122},"moves":["drainingkiss","smartstrike","voltswitch","spitup"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p2: Eelektross","details":"Eelektross, L50, M","condition":"0 fnt","active":false,"stats":{"atk":154,"def":91,"spa":130,"spd":132,"spe":72},"moves":["guardsplit","substitute","aquaring"],"baseAbility":"levitate","item":"eelektrossite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Mawile","details":"Mawile, L50, F","condition":"0 fnt","active":false,"stats":{"atk":116,"def":105,"spa":90,"spd":77,"spe":79},"moves":["heatwave","featherdance","cosmicpower","throatchop"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false}]}}
+request p1 {"active":[{"moves":[{"move":"Meteor Mash","id":"meteormash","pp":11,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Coaching","id":"coaching","pp":11,"maxpp":12,"target":"adjacentAlly","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Kommo-o","details":"Kommo-o, L50, F","condition":"0 fnt","active":true,"stats":{"atk":117,"def":147,"spa":163,"spd":143,"spe":108},"moves":["meteormash"],"baseAbility":"bulletproof","item":"","pokeball":"pokeball","ability":"bulletproof","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon-River, L50, F","condition":"157/157","active":true,"stats":{"atk":72,"def":86,"spa":150,"spd":78,"spe":112},"moves":["coaching"],"baseAbility":"compoundeyes","item":"","pokeball":"pokeball","ability":"compoundeyes","commanding":false,"reviving":false},{"ident":"p1: Machamp","details":"Machamp, L50, F","condition":"0 fnt","active":false,"stats":{"atk":168,"def":90,"spa":110,"spd":110,"spe":103},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p1: Houndstone","details":"Houndstone, L50, M","condition":"0 fnt","active":false,"stats":{"atk":129,"def":138,"spa":76,"spd":140,"spe":98},"moves":["faketears","snowscape","torment"],"baseAbility":"fluffy","item":"payapaberry","pokeball":"pokeball","ability":"fluffy","commanding":false,"reviving":false}]}}
+request p2 {"active":[{"moves":[{"move":"Dynamic Punch","id":"dynamicpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Fissure","id":"fissure","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Horn Drill","id":"horndrill","pp":6,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Smart Strike","id":"smartstrike","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Volt Switch","id":"voltswitch","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Spit Up","id":"spitup","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Machamp","details":"Machamp, L50, M","condition":"169/169","active":true,"stats":{"atk":154,"def":113,"spa":88,"spd":116,"spe":87},"moves":["dynamicpunch","sheercold","fissure","horndrill"],"baseAbility":"noguard","item":"","pokeball":"pokeball","ability":"noguard","commanding":false,"reviving":false},{"ident":"p2: Excadrill","details":"Excadrill, L50, M","condition":"142/185","active":true,"stats":{"atk":144,"def":80,"spa":95,"spd":117,"spe":122},"moves":["drainingkiss","smartstrike","voltswitch","spitup"],"baseAbility":"moldbreaker","item":"","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false},{"ident":"p2: Eelektross","details":"Eelektross, L50, M","condition":"0 fnt","active":false,"stats":{"atk":154,"def":91,"spa":130,"spd":132,"spe":72},"moves":["guardsplit","substitute","aquaring"],"baseAbility":"levitate","item":"eelektrossite","pokeball":"pokeball","ability":"levitate","commanding":false,"reviving":false},{"ident":"p2: Mawile","details":"Mawile, L50, F","condition":"0 fnt","active":false,"stats":{"atk":116,"def":105,"spa":90,"spd":77,"spe":79},"moves":["heatwave","featherdance","cosmicpower","throatchop"],"baseAbility":"intimidate","item":"","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false}]}}

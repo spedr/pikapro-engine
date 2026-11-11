@@ -1,0 +1,203 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 1004 2004 3004 4004
+genders drawn
+team p1
+Absol @ Leftovers
+Ability: Pressure
+Level: 50
+Tera Type: Ghost
+Hardy Nature
+- Curse
+- Protect
+
+Pikachu
+Ability: Static
+Level: 50
+Hardy Nature
+- Splash
+
+Eevee
+Ability: Run Away
+Level: 50
+Hardy Nature
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+
+Vulpix
+Ability: Flash Fire
+Level: 50
+Hardy Nature
+- Splash
+
+Ditto
+Ability: Limber
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Gholdengo
+Ability: Good as Gold
+Level: 50
+Hardy Nature
+- Protect
+- Splash
+
+Pikachu
+Ability: Static
+Level: 50
+Hardy Nature
+- Splash
+
+Eevee
+Ability: Run Away
+Level: 50
+Hardy Nature
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+
+Vulpix
+Ability: Flash Fire
+Level: 50
+Hardy Nature
+- Splash
+
+Ditto
+Ability: Limber
+Level: 50
+Hardy Nature
+- Splash
+end
+choice p1 team 1234
+choice p2 team 1234
+choice p1 move 1 terastallize, move 1
+choice p2 move 2, move 1
+choice p1 move 1 -2, move 1
+choice p2 move 2, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Absol, L50, F|
+expect |poke|p1|Pikachu, L50, F|
+expect |poke|p1|Eevee, L50, F|
+expect |poke|p1|Snorlax, L50, M|
+expect |poke|p1|Vulpix, L50, M|
+expect |poke|p1|Ditto, L50|
+expect |poke|p2|Gholdengo, L50|
+expect |poke|p2|Pikachu, L50, F|
+expect |poke|p2|Eevee, L50, F|
+expect |poke|p2|Snorlax, L50, F|
+expect |poke|p2|Vulpix, L50, M|
+expect |poke|p2|Ditto, L50|
+expect |teampreview|4
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Absol|Absol, L50, F|140/140
+expect |switch|p1a: Absol|Absol, L50, F|140/140
+expect |split|p1
+expect |switch|p1b: Pikachu|Pikachu, L50, F|110/110
+expect |switch|p1b: Pikachu|Pikachu, L50, F|110/110
+expect |split|p2
+expect |switch|p2a: Gholdengo|Gholdengo, L50|162/162
+expect |switch|p2a: Gholdengo|Gholdengo, L50|162/162
+expect |split|p2
+expect |switch|p2b: Pikachu|Pikachu, L50, F|110/110
+expect |switch|p2b: Pikachu|Pikachu, L50, F|110/110
+expect |rng|2|0
+expect |rng|2|0
+expect |-ability|p1a: Absol|Pressure
+expect |rng|2|1
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |-terastallize|p1a: Absol|Ghost
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Pikachu|Splash|p2b: Pikachu
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: Pikachu|Splash|p1b: Pikachu
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Gholdengo|Splash|p2a: Gholdengo
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Absol|Curse|p2a: Gholdengo
+expect |-immune|p2a: Gholdengo|[from] ability: Good as Gold
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|1
+expect |turn|2
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Pikachu|Splash|p2b: Pikachu
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1b: Pikachu|Splash|p1b: Pikachu
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Gholdengo|Splash|p2a: Gholdengo
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Absol|Curse|p2a: Gholdengo
+expect |-immune|p2a: Gholdengo|[from] ability: Good as Gold
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|0
+expect |turn|3

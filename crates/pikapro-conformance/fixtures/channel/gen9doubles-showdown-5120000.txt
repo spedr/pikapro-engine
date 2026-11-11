@@ -1,0 +1,709 @@
+# Recorded by channel_conformance. Do not edit by hand.
+format gen9doubles
+source showdown
+seed 5120000
+options factored row percent
+player p1
+line |t:|1790525770
+line |gametype|doubles
+line |player|p1|p1||
+line |player|p2|p2||
+line |gen|9
+line |tier|[Gen 9] Doubles Custom Game
+line |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+line |
+line |t:|1790525770
+line |teamsize|p1|6
+line |teamsize|p2|6
+line |start
+line |switch|p1a: Jigglypuff|Jigglypuff, L50, M|202/202
+line |switch|p1b: X|Dugtrio, L50, F|112/112
+line |switch|p2a: Dugtrio|Dugtrio-Alola, L50, M, shiny|112/112
+line |switch|p2b: Charcadet|Charcadet, L50, M, shiny|137/137
+line |turn|1
+line |request|{"active":[{"moves":[{"move":"Iron Tail","id":"irontail","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Poison"},{"moves":[{"move":"Dragon Tail","id":"dragontail","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Poltergeist","id":"poltergeist","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Branch Poke","id":"branchpoke","pp":64,"maxpp":64,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":true,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"112/112","active":true,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"226/226","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"156/156","active":false,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 6e4db31492eb0f89
+line |
+line |t:|1790525770
+line |-terastallize|p2b: Charcadet|Electric
+line |-terastallize|p1a: Jigglypuff|Poison
+line |move|p2a: Dugtrio|Draco Meteor|p1b: X
+line |-damage|p1b: X|72/112
+line |-unboost|p2a: Dugtrio|spa|2
+line |move|p1b: X|Poltergeist|p2a: Dugtrio
+line |-activate|p2a: Dugtrio|move: Poltergeist|Enigma Berry
+line |-damage|p2a: Dugtrio|52/112
+line |move|p2b: Charcadet|Transform|p1a: Jigglypuff
+line |-transform|p2b: Charcadet|p1a: Jigglypuff
+line |move|p1a: Jigglypuff|Iron Tail|p2a: Dugtrio|[miss]
+line |-miss|p1a: Jigglypuff|p2a: Dugtrio
+line |
+line |upkeep
+line |turn|2
+line |request|{"active":[{"moves":[{"move":"Iron Tail","id":"irontail","pp":23,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Dragon Tail","id":"dragontail","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Poltergeist","id":"poltergeist","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Branch Poke","id":"branchpoke","pp":64,"maxpp":64,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":true,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"72/112","active":true,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"226/226","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"156/156","active":false,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 884b71f7e93adfa6
+line |
+line |t:|1790525770
+line |switch|p2b: Pikachu|Magneton, L50|130/130
+line |switch|p1a: Mew|Mew, L50|182/182
+line |move|p2a: Dugtrio|Aqua Jet|p2b: Pikachu
+line |-crit|p2b: Pikachu
+line |-damage|p2b: Pikachu|103/130
+line |move|p1b: X|Branch Poke|p2a: Dugtrio
+line |-damage|p2a: Dugtrio|29/112
+line |
+line |upkeep
+line |turn|3
+line |request|{"active":[{"moves":[{"move":"Razor Leaf","id":"razorleaf","pp":40,"maxpp":40,"target":"allAdjacentFoes","disabled":false},{"move":"Rollout","id":"rollout","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Dragon Tail","id":"dragontail","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Poltergeist","id":"poltergeist","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Branch Poke","id":"branchpoke","pp":63,"maxpp":64,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":true,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"72/112","active":true,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"226/226","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"156/156","active":false,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision d92d760157e73efd
+line |
+line |t:|1790525771
+line |switch|p2a: Great Tusk|Great Tusk, L50|198/198
+line |move|p1a: Mew|Razor Leaf|p2a: Great Tusk|[spread] p2a
+line |-miss|p1a: Mew|p2b: Pikachu
+line |debug|Spread modifier: 0.75
+line |-supereffective|p2a: Great Tusk
+line |-damage|p2a: Great Tusk|170/198
+line |move|p2b: Pikachu|Double Kick|p2a: Great Tusk
+line |-damage|p2a: Great Tusk|161/198
+line |-damage|p2a: Great Tusk|151/198
+line |-hitcount|p2a: Great Tusk|2
+line |move|p1b: X|Dragon Tail|p2a: Great Tusk
+line |-damage|p2a: Great Tusk|133/198
+line |-end|p2a: Great Tusk|Protosynthesis|[silent]
+line |drag|p2a: Cufant|Cufant, L50, M|148/148
+line |
+line |upkeep
+line |turn|4
+line |request|{"active":[{"moves":[{"move":"Razor Leaf","id":"razorleaf","pp":39,"maxpp":40,"target":"allAdjacentFoes","disabled":false},{"move":"Rollout","id":"rollout","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Dragon Tail","id":"dragontail","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Dynamax Cannon","id":"dynamaxcannon","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Poltergeist","id":"poltergeist","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Branch Poke","id":"branchpoke","pp":63,"maxpp":64,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":true,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"72/112","active":true,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"226/226","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"156/156","active":false,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+decision 50931fdb974c9e45
+line |
+line |t:|1790525771
+line |switch|p1a: Dudunsparce|Dudunsparce, L50, M|226/226
+line |switch|p2a: Dugtrio|Dugtrio-Alola, L50, M, shiny|29/112
+line |move|p1b: X|Branch Poke|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|210/226
+line |move|p2b: Pikachu|Frost Breath|p1b: X
+line |-supereffective|p1b: X
+line |-crit|p1b: X
+line |-damage|p1b: X|0 fnt
+line |faint|p1b: X
+line |
+line |upkeep
+line |request|{"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"210/226","active":true,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":true,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"156/156","active":false,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]},"noCancel":true}
+decision a6f1ff4d38a7a8da
+line |
+line |t:|1790525771
+line |switch|p1b: Minior|Minior-Violet, L50|156/156
+line |-formechange|p1b: Minior|Minior-Meteor||[from] ability: Shields Down
+line |turn|5
+line |request|{"active":[{"moves":[{"move":"Magnet Rise","id":"magnetrise","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Overheat","id":"overheat","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Quick Guard","id":"quickguard","pp":24,"maxpp":24,"target":"allySide","disabled":false}]},{"moves":[{"move":"Gyro Ball","id":"gyroball","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Mega Punch","id":"megapunch","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Vacuum Wave","id":"vacuumwave","pp":48,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"210/226","active":true,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"156/156","active":true,"stats":{"atk":100,"def":132,"spa":78,"spd":128,"spe":86},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision 7bb44393753605da
+line |
+line |t:|1790525771
+line |move|p2a: Dugtrio|Draco Meteor|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|163/226
+line |-unboost|p2a: Dugtrio|spa|2
+line |move|p1a: Dudunsparce|Overheat|p2b: Pikachu
+line |-supereffective|p2b: Pikachu
+line |-crit|p2b: Pikachu
+line |-damage|p2b: Pikachu|0 fnt
+line |-unboost|p1a: Dudunsparce|spa|2
+line |faint|p2b: Pikachu
+line |move|p1b: Minior|Mega Punch|p2a: Dugtrio
+line |-resisted|p2a: Dugtrio
+line |-damage|p2a: Dugtrio|7/112
+line |
+line |debug|set status [brn] interrupted
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"163/226","active":true,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"156/156","active":true,"stats":{"atk":100,"def":132,"spa":78,"spd":128,"spe":86},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+line |
+line |t:|1790525771
+line |switch|p2b: Charcadet|Charcadet, L50, M, shiny, tera:Electric|137/137
+line |turn|6
+line |request|{"active":[{"moves":[{"move":"Magnet Rise","id":"magnetrise","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Overheat","id":"overheat","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Quick Guard","id":"quickguard","pp":24,"maxpp":24,"target":"allySide","disabled":false}]},{"moves":[{"move":"Gyro Ball","id":"gyroball","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Mega Punch","id":"megapunch","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Vacuum Wave","id":"vacuumwave","pp":48,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"163/226","active":true,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"156/156","active":true,"stats":{"atk":100,"def":132,"spa":78,"spd":128,"spe":86},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision bd91edf21bd95b55
+line |
+line |t:|1790525771
+line |move|p1b: Minior|Vacuum Wave|p1a: Dudunsparce
+line |-supereffective|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|133/226
+line |move|p2a: Dugtrio|Bitter Blade|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|86/226
+line |-heal|p2a: Dugtrio|31/112|[from] drain|[of] p1a: Dudunsparce
+line |move|p1a: Dudunsparce|Overheat|p2b: Charcadet
+line |-start|p2b: Charcadet|ability: Flash Fire
+line |move|p2b: Charcadet|Roar of Time|p1b: Minior
+line |-damage|p1b: Minior|106/156
+line |-mustrecharge|p2b: Charcadet
+line |
+line |debug|set status [brn] interrupted
+line |upkeep
+line |turn|7
+line |request|{"active":[{"moves":[{"move":"Magnet Rise","id":"magnetrise","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Overheat","id":"overheat","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Quick Guard","id":"quickguard","pp":24,"maxpp":24,"target":"allySide","disabled":false}]},{"moves":[{"move":"Gyro Ball","id":"gyroball","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Mega Punch","id":"megapunch","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Vacuum Wave","id":"vacuumwave","pp":47,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"86/226","active":true,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"106/156","active":true,"stats":{"atk":100,"def":132,"spa":78,"spd":128,"spe":86},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision 8c9e92058fd723e9
+line |
+line |t:|1790525771
+line |move|p2a: Dugtrio|Bitter Blade|p2b: Charcadet
+line |-immune|p2b: Charcadet|[from] ability: Flash Fire
+line |move|p1a: Dudunsparce|Overheat|p2a: Dugtrio|[miss]
+line |-miss|p1a: Dudunsparce|p2a: Dugtrio
+line |move|p1b: Minior|Gyro Ball|p2b: Charcadet
+line |debug|BP: 16
+line |-resisted|p2b: Charcadet
+line |-damage|p2b: Charcadet|132/137
+line |cant|p2b: Charcadet|recharge
+line |
+line |debug|set status [brn] interrupted
+line |upkeep
+line |turn|8
+line |request|{"active":[{"moves":[{"move":"Magnet Rise","id":"magnetrise","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Overheat","id":"overheat","pp":5,"maxpp":8,"target":"normal","disabled":false},{"move":"Quick Guard","id":"quickguard","pp":24,"maxpp":24,"target":"allySide","disabled":false}]},{"moves":[{"move":"Gyro Ball","id":"gyroball","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Mega Punch","id":"megapunch","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Vacuum Wave","id":"vacuumwave","pp":47,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"86/226","active":true,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"106/156","active":true,"stats":{"atk":100,"def":132,"spa":78,"spd":128,"spe":86},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision 29c66c542004014e
+line |
+line |t:|1790525771
+line |move|p2a: Dugtrio|Bitter Blade|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|40/226
+line |-heal|p2a: Dugtrio|54/112|[from] drain|[of] p1a: Dudunsparce
+line |move|p1a: Dudunsparce|Overheat|p2b: Charcadet
+line |-immune|p2b: Charcadet|[from] ability: Flash Fire
+line |move|p1b: Minior|Mega Punch|p2a: Dugtrio
+line |-resisted|p2a: Dugtrio
+line |-damage|p2a: Dugtrio|35/112
+line |move|p2b: Charcadet|Transform|p1b: Minior
+line |-transform|p2b: Charcadet|p1b: Minior
+line |-end|p2b: Charcadet|ability: Flash Fire|[silent]
+line |
+line |debug|set status [brn] interrupted
+line |upkeep
+line |turn|9
+line |request|{"active":[{"moves":[{"move":"Magnet Rise","id":"magnetrise","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Overheat","id":"overheat","pp":4,"maxpp":8,"target":"normal","disabled":false},{"move":"Quick Guard","id":"quickguard","pp":24,"maxpp":24,"target":"allySide","disabled":false}]},{"moves":[{"move":"Gyro Ball","id":"gyroball","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Mega Punch","id":"megapunch","pp":30,"maxpp":32,"target":"normal","disabled":false},{"move":"Vacuum Wave","id":"vacuumwave","pp":47,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"40/226","active":true,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"106/156","active":true,"stats":{"atk":100,"def":132,"spa":78,"spd":128,"spe":86},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision dd9fd61fc514308b
+line |
+line |t:|1790525771
+line |switch|p2b: Great Tusk|Great Tusk, L50|133/198
+line |move|p1b: Minior|Vacuum Wave|p1a: Dudunsparce
+line |-supereffective|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|10/226
+line |move|p2a: Dugtrio|Bitter Blade|p1b: Minior
+line |-resisted|p1b: Minior
+line |-damage|p1b: Minior|87/156
+line |-heal|p2a: Dugtrio|45/112|[from] drain|[of] p1b: Minior
+line |move|p1a: Dudunsparce|Overheat|p2a: Dugtrio
+line |-supereffective|p2a: Dugtrio
+line |-damage|p2a: Dugtrio|0 fnt
+line |-unboost|p1a: Dudunsparce|spa|2
+line |faint|p2a: Dugtrio
+line |
+line |debug|set status [brn] interrupted
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"10/226","active":true,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"87/156","active":true,"stats":{"atk":100,"def":132,"spa":78,"spd":128,"spe":86},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+line |
+line |t:|1790525771
+line |switch|p2a: Delphox|Delphox, L50, M, shiny|159/159
+line |turn|10
+line |request|{"active":[{"moves":[{"move":"Magnet Rise","id":"magnetrise","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Psyshield Bash","id":"psyshieldbash","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Overheat","id":"overheat","pp":3,"maxpp":8,"target":"normal","disabled":false},{"move":"Quick Guard","id":"quickguard","pp":24,"maxpp":24,"target":"allySide","disabled":false}]},{"moves":[{"move":"Gyro Ball","id":"gyroball","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Mega Punch","id":"megapunch","pp":30,"maxpp":32,"target":"normal","disabled":false},{"move":"Vacuum Wave","id":"vacuumwave","pp":46,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"10/226","active":true,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"87/156","active":true,"stats":{"atk":100,"def":132,"spa":78,"spd":128,"spe":86},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision 3341e224a3cedc96
+line |
+line |t:|1790525771
+line |move|p2a: Delphox|Thunder Shock|p2b: Great Tusk
+line |-immune|p2b: Great Tusk
+line |move|p2b: Great Tusk|Strange Steam|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|0 fnt
+line |faint|p1a: Dudunsparce
+line |move|p1b: Minior|Mega Punch|p2b: Great Tusk
+line |-damage|p2b: Great Tusk|112/198
+line |
+line |debug|set status [brn] interrupted
+line |upkeep
+line |request|{"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"0 fnt","active":true,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"87/156","active":true,"stats":{"atk":100,"def":132,"spa":78,"spd":128,"spe":86},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]},"noCancel":true}
+decision b794adc96fa7d536
+line |
+line |t:|1790525771
+line |switch|p1a: Jigglypuff|Jigglypuff, L50, M, tera:Poison|202/202
+line |turn|11
+line |request|{"active":[{"moves":[{"move":"Iron Tail","id":"irontail","pp":23,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Gyro Ball","id":"gyroball","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Mega Punch","id":"megapunch","pp":29,"maxpp":32,"target":"normal","disabled":false},{"move":"Vacuum Wave","id":"vacuumwave","pp":46,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":true,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"87/156","active":true,"stats":{"atk":100,"def":132,"spa":78,"spd":128,"spe":86},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"0 fnt","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision 60fbbc96f1e385cf
+line |
+line |t:|1790525771
+line |switch|p2a: Cufant|Cufant, L50, M|148/148
+line |move|p2b: Great Tusk|Jaw Lock|p1b: Minior
+line |-damage|p1b: Minior|47/156
+line |-activate|p2b: Great Tusk|trapped
+line |-activate|p1b: Minior|trapped
+line |move|p1b: Minior|Mega Punch|p2b: Great Tusk
+line |-damage|p2b: Great Tusk|91/198
+line |move|p1a: Jigglypuff|Iron Tail|p2b: Great Tusk
+line |-damage|p2b: Great Tusk|68/198
+line |
+line |debug|set status [brn] interrupted
+line |-formechange|p1b: Minior|Minior-Violet||[from] ability: Shields Down
+line |upkeep
+line |turn|12
+line |request|{"active":[{"moves":[{"move":"Iron Tail","id":"irontail","pp":22,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Gyro Ball","id":"gyroball","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Mega Punch","id":"megapunch","pp":28,"maxpp":32,"target":"normal","disabled":false},{"move":"Vacuum Wave","id":"vacuumwave","pp":46,"maxpp":48,"target":"normal","disabled":false}],"trapped":true}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":true,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"47/156","active":true,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"0 fnt","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":false,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision 4b359d3b3c6cc6ed
+line |
+line |t:|1790525771
+line |switch|p1a: Mew|Mew, L50|182/182
+line |move|p1b: Minior|Mega Punch|p2b: Great Tusk
+line |-damage|p2b: Great Tusk|37/198
+line |move|p2b: Great Tusk|Strange Steam|p2a: Cufant
+line |-resisted|p2a: Cufant
+line |-damage|p2a: Cufant|126/148
+line |move|p2a: Cufant|Ivy Cudgel|p2b: Great Tusk
+line |-supereffective|p2b: Great Tusk
+line |-damage|p2b: Great Tusk|0 fnt
+line |faint|p2b: Great Tusk
+line |-end|p2b: Great Tusk|Protosynthesis|[silent]
+line |
+line |-status|p1b: Minior|brn|[from] item: Flame Orb
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":true,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"47/156 brn","active":true,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"0 fnt","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+line |
+line |t:|1790525771
+line |switch|p2b: Delphox|Delphox, L50, M, shiny|159/159
+line |turn|13
+line |request|{"active":[{"moves":[{"move":"Razor Leaf","id":"razorleaf","pp":39,"maxpp":40,"target":"allAdjacentFoes","disabled":false},{"move":"Rollout","id":"rollout","pp":32,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Gyro Ball","id":"gyroball","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Mega Punch","id":"megapunch","pp":27,"maxpp":32,"target":"normal","disabled":false},{"move":"Vacuum Wave","id":"vacuumwave","pp":46,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Mew","details":"Mew, L50","condition":"182/182","active":true,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"47/156 brn","active":true,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"0 fnt","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"202/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision bedc2a5de0a1292f
+line |
+line |t:|1790525771
+line |switch|p1b: Jigglypuff|Jigglypuff, L50, M, tera:Poison|202/202
+line |move|p1a: Mew|Rollout|p2b: Delphox
+line |debug|BP: 30
+line |-supereffective|p2b: Delphox
+line |-damage|p2b: Delphox|125/159
+line |move|p2b: Delphox|Thunder Shock|p1a: Mew
+line |-damage|p1a: Mew|159/182
+line |move|p2a: Cufant|Ivy Cudgel|p1b: Jigglypuff
+line |-resisted|p1b: Jigglypuff
+line |-damage|p1b: Jigglypuff|151/202
+line |
+line |upkeep
+line |turn|14
+line |request|{"active":[{"moves":[{"move":"Rollout","id":"rollout"}],"trapped":true},{"moves":[{"move":"Iron Tail","id":"irontail","pp":22,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Mew","details":"Mew, L50","condition":"159/182","active":true,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"151/202","active":true,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"0 fnt","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"47/156 brn","active":false,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision e301e3d99c05dfbc
+line |
+line |t:|1790525771
+line |move|p1a: Mew|Rollout|p2b: Delphox|[from] lockedmove
+line |debug|BP: 60
+line |-supereffective|p2b: Delphox
+line |-damage|p2b: Delphox|53/159
+line |move|p2b: Delphox|Thunder Shock|p1a: Mew
+line |-damage|p1a: Mew|137/182
+line |move|p2a: Cufant|Ivy Cudgel|p1b: Jigglypuff
+line |-resisted|p1b: Jigglypuff
+line |-damage|p1b: Jigglypuff|99/202
+line |move|p1b: Jigglypuff|Iron Tail|p2b: Delphox
+line |-resisted|p2b: Delphox
+line |-crit|p2b: Delphox
+line |-damage|p2b: Delphox|25/159
+line |
+line |upkeep
+line |turn|15
+line |request|{"active":[{"moves":[{"move":"Rollout","id":"rollout"}],"trapped":true},{"moves":[{"move":"Iron Tail","id":"irontail","pp":21,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Mew","details":"Mew, L50","condition":"137/182","active":true,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"99/202","active":true,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"0 fnt","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"47/156 brn","active":false,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision 97796ce39a620f6c
+line |
+line |t:|1790525771
+line |move|p1a: Mew|Rollout|p2b: Delphox|[from] lockedmove
+line |debug|BP: 120
+line |-supereffective|p2b: Delphox
+line |-damage|p2b: Delphox|0 fnt
+line |faint|p2b: Delphox
+line |move|p2a: Cufant|Ivy Cudgel|p1b: Jigglypuff
+line |-resisted|p1b: Jigglypuff
+line |-damage|p1b: Jigglypuff|49/202
+line |move|p1b: Jigglypuff|Iron Tail|p2a: Cufant
+line |-resisted|p2a: Cufant
+line |-damage|p2a: Cufant|98/148
+line |
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Mew","details":"Mew, L50","condition":"137/182","active":true,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"49/202","active":true,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"0 fnt","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"47/156 brn","active":false,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+line |
+line |t:|1790525771
+line |switch|p2b: Charcadet|Charcadet, L50, M, shiny, tera:Electric|132/137
+line |turn|16
+line |request|{"active":[{"moves":[{"move":"Rollout","id":"rollout"}],"trapped":true},{"moves":[{"move":"Iron Tail","id":"irontail","pp":20,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Mew","details":"Mew, L50","condition":"137/182","active":true,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"49/202","active":true,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"0 fnt","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"153/153","active":false,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"47/156 brn","active":false,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision 6de00c23e57c86eb
+line |
+line |t:|1790525771
+line |switch|p1b: Oricorio|Oricorio, L50, F, shiny|153/153
+line |move|p1a: Mew|Rollout|p2b: Charcadet|[from] lockedmove
+line |debug|BP: 240
+line |-damage|p2b: Charcadet|0 fnt
+line |faint|p2b: Charcadet
+line |move|p2a: Cufant|Aqua Step|p1b: Oricorio
+line |-supereffective|p1b: Oricorio
+line |-damage|p1b: Oricorio|85/153
+line |-boost|p2a: Cufant|spe|1
+line |-activate|p1b: Oricorio|ability: Dancer
+line |move|p1b: Oricorio|Aqua Step|p2a: Cufant|[from] ability: Dancer
+line |-damage|p2a: Cufant|50/148
+line |-boost|p1b: Oricorio|spe|1
+line |
+line |upkeep
+line |turn|17
+line |request|{"active":[{"moves":[{"move":"Rollout","id":"rollout"}],"trapped":true},{"moves":[{"move":"Head Smash","id":"headsmash","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Giga Drain","id":"gigadrain","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Spirit Shackle","id":"spiritshackle","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Mew","details":"Mew, L50","condition":"137/182","active":true,"stats":{"atk":137,"def":126,"spa":128,"spd":112,"spe":141},"moves":["razorleaf","rollout"],"baseAbility":"synchronize","item":"abilityshield","pokeball":"pokeball","ability":"synchronize","commanding":false,"reviving":false,"teraType":"Grass","terastallized":""},{"ident":"p1: Oricorio","details":"Oricorio, L50, F, shiny","condition":"85/153","active":true,"stats":{"atk":92,"def":104,"spa":147,"spd":82,"spe":123},"moves":["headsmash","gigadrain","spiritshackle"],"baseAbility":"dancer","item":"wiseglasses","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Poison","terastallized":""},{"ident":"p1: Dudunsparce","details":"Dudunsparce, L50, M","condition":"0 fnt","active":false,"stats":{"atk":124,"def":111,"spa":106,"spd":88,"spe":103},"moves":["magnetrise","psyshieldbash","overheat","quickguard"],"baseAbility":"runaway","item":"","pokeball":"pokeball","ability":"runaway","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Jigglypuff","details":"Jigglypuff, L50, M","condition":"49/202","active":false,"stats":{"atk":93,"def":44,"spa":67,"spd":55,"spe":45},"moves":["irontail"],"baseAbility":"cutecharm","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Poison","terastallized":"Poison"},{"ident":"p1: Minior","details":"Minior-Violet, L50","condition":"47/156 brn","active":false,"stats":{"atk":144,"def":92,"spa":114,"spd":88,"spe":146},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"shieldsdown","item":"flameorb","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p1: X","details":"Dugtrio, L50, F","condition":"0 fnt","active":false,"stats":{"atk":112,"def":84,"spa":86,"spd":97,"spe":157},"moves":["dragontail","dynamaxcannon","poltergeist","branchpoke"],"baseAbility":"sandforce","item":"moonball","pokeball":"pokeball","ability":"sandforce","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+decision 879566e855144c73
+line |
+line |t:|1790525771
+line |move|p1b: Oricorio|Head Smash|p2a: Cufant|[miss]
+line |-miss|p1b: Oricorio|p2a: Cufant
+line |move|p1a: Mew|Rollout|p2a: Cufant|[from] lockedmove
+line |debug|BP: 480
+line |-resisted|p2a: Cufant
+line |-damage|p2a: Cufant|0 fnt
+line |faint|p2a: Cufant
+line |
+line |win|p1
+player p2
+line |t:|1790525770
+line |gametype|doubles
+line |player|p1|p1||
+line |player|p2|p2||
+line |gen|9
+line |tier|[Gen 9] Doubles Custom Game
+line |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+line |
+line |t:|1790525770
+line |teamsize|p1|6
+line |teamsize|p2|6
+line |start
+line |switch|p1a: Jigglypuff|Jigglypuff, L50, M|202/202
+line |switch|p1b: X|Dugtrio, L50, F|112/112
+line |switch|p2a: Dugtrio|Dugtrio-Alola, L50, M, shiny|112/112
+line |switch|p2b: Charcadet|Charcadet, L50, M, shiny|137/137
+line |turn|1
+line |request|{"active":[{"moves":[{"move":"Draco Meteor","id":"dracometeor","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Jet","id":"aquajet","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":16,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Steel"},{"moves":[{"move":"Howl","id":"howl","pp":64,"maxpp":64,"target":"allies","disabled":false},{"move":"Transform","id":"transform","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Moongeist Beam","id":"moongeistbeam","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roar of Time","id":"roaroftime","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"112/112","active":true,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"137/137","active":true,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"198/198","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"130/130","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+decision 7b12b6d448f82365
+line |
+line |t:|1790525770
+line |-terastallize|p2b: Charcadet|Electric
+line |-terastallize|p1a: Jigglypuff|Poison
+line |move|p2a: Dugtrio|Draco Meteor|p1b: X
+line |-damage|p1b: X|72/112
+line |-unboost|p2a: Dugtrio|spa|2
+line |move|p1b: X|Poltergeist|p2a: Dugtrio
+line |-activate|p2a: Dugtrio|move: Poltergeist|Enigma Berry
+line |-damage|p2a: Dugtrio|52/112
+line |move|p2b: Charcadet|Transform|p1a: Jigglypuff
+line |-transform|p2b: Charcadet|p1a: Jigglypuff
+line |move|p1a: Jigglypuff|Iron Tail|p2a: Dugtrio|[miss]
+line |-miss|p1a: Jigglypuff|p2a: Dugtrio
+line |
+line |upkeep
+line |turn|2
+line |request|{"active":[{"moves":[{"move":"Draco Meteor","id":"dracometeor","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Jet","id":"aquajet","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Iron Tail","id":"irontail","pp":5,"maxpp":5,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"52/112","active":true,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"137/137","active":true,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["irontail"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"cutecharm","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"198/198","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"130/130","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+decision 252c2369959b1a52
+line |
+line |t:|1790525770
+line |switch|p2b: Pikachu|Magneton, L50|130/130
+line |switch|p1a: Mew|Mew, L50|182/182
+line |move|p2a: Dugtrio|Aqua Jet|p2b: Pikachu
+line |-crit|p2b: Pikachu
+line |-damage|p2b: Pikachu|103/130
+line |move|p1b: X|Branch Poke|p2a: Dugtrio
+line |-damage|p2a: Dugtrio|29/112
+line |
+line |upkeep
+line |turn|3
+line |request|{"active":[{"moves":[{"move":"Draco Meteor","id":"dracometeor","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Jet","id":"aquajet","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Double Kick","id":"doublekick","pp":48,"maxpp":48,"target":"normal","disabled":false},{"move":"Precipice Blades","id":"precipiceblades","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Frost Breath","id":"frostbreath","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"29/112","active":true,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"103/130","active":true,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"198/198","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"137/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+decision f6bb05491b2aea50
+line |
+line |t:|1790525771
+line |switch|p2a: Great Tusk|Great Tusk, L50|198/198
+line |move|p1a: Mew|Razor Leaf|p2a: Great Tusk|[spread] p2a
+line |-miss|p1a: Mew|p2b: Pikachu
+line |debug|Spread modifier: 0.75
+line |-supereffective|p2a: Great Tusk
+line |-damage|p2a: Great Tusk|170/198
+line |move|p2b: Pikachu|Double Kick|p2a: Great Tusk
+line |-damage|p2a: Great Tusk|161/198
+line |-damage|p2a: Great Tusk|151/198
+line |-hitcount|p2a: Great Tusk|2
+line |move|p1b: X|Dragon Tail|p2a: Great Tusk
+line |-damage|p2a: Great Tusk|133/198
+line |-end|p2a: Great Tusk|Protosynthesis|[silent]
+line |drag|p2a: Cufant|Cufant, L50, M|148/148
+line |
+line |upkeep
+line |turn|4
+line |request|{"active":[{"moves":[{"move":"Ivy Cudgel","id":"ivycudgel","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Aqua Step","id":"aquastep","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Double Kick","id":"doublekick","pp":47,"maxpp":48,"target":"normal","disabled":false},{"move":"Precipice Blades","id":"precipiceblades","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Frost Breath","id":"frostbreath","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":true,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"103/130","active":true,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"29/112","active":false,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"137/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"133/198","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+decision 8924636236868778
+line |
+line |t:|1790525771
+line |switch|p1a: Dudunsparce|Dudunsparce, L50, M|226/226
+line |switch|p2a: Dugtrio|Dugtrio-Alola, L50, M, shiny|29/112
+line |move|p1b: X|Branch Poke|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|210/226
+line |move|p2b: Pikachu|Frost Breath|p1b: X
+line |-supereffective|p1b: X
+line |-crit|p1b: X
+line |-damage|p1b: X|0 fnt
+line |faint|p1b: X
+line |
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"29/112","active":true,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"103/130","active":true,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"137/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"133/198","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+line |
+line |t:|1790525771
+line |switch|p1b: Minior|Minior-Violet, L50|156/156
+line |-formechange|p1b: Minior|Minior-Meteor||[from] ability: Shields Down
+line |turn|5
+line |request|{"active":[{"moves":[{"move":"Draco Meteor","id":"dracometeor","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Jet","id":"aquajet","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Double Kick","id":"doublekick","pp":47,"maxpp":48,"target":"normal","disabled":false},{"move":"Precipice Blades","id":"precipiceblades","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false},{"move":"Frost Breath","id":"frostbreath","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Sheer Cold","id":"sheercold","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"29/112","active":true,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"103/130","active":true,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"137/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"133/198","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+decision 38ea185639a0e8f1
+line |
+line |t:|1790525771
+line |move|p2a: Dugtrio|Draco Meteor|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|163/226
+line |-unboost|p2a: Dugtrio|spa|2
+line |move|p1a: Dudunsparce|Overheat|p2b: Pikachu
+line |-supereffective|p2b: Pikachu
+line |-crit|p2b: Pikachu
+line |-damage|p2b: Pikachu|0 fnt
+line |-unboost|p1a: Dudunsparce|spa|2
+line |faint|p2b: Pikachu
+line |move|p1b: Minior|Mega Punch|p2a: Dugtrio
+line |-resisted|p2a: Dugtrio
+line |-damage|p2a: Dugtrio|7/112
+line |
+line |debug|set status [brn] interrupted
+line |upkeep
+line |request|{"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"7/112","active":true,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":true,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"137/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"133/198","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]},"noCancel":true}
+decision 32a93fbc4244eba3
+line |
+line |t:|1790525771
+line |switch|p2b: Charcadet|Charcadet, L50, M, shiny, tera:Electric|137/137
+line |turn|6
+line |request|{"active":[{"moves":[{"move":"Draco Meteor","id":"dracometeor","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Jet","id":"aquajet","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Howl","id":"howl","pp":64,"maxpp":64,"target":"allies","disabled":false},{"move":"Transform","id":"transform","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Moongeist Beam","id":"moongeistbeam","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roar of Time","id":"roaroftime","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"7/112","active":true,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"137/137","active":true,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"133/198","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+decision 78a9a025ba7cd74f
+line |
+line |t:|1790525771
+line |move|p1b: Minior|Vacuum Wave|p1a: Dudunsparce
+line |-supereffective|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|133/226
+line |move|p2a: Dugtrio|Bitter Blade|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|86/226
+line |-heal|p2a: Dugtrio|31/112|[from] drain|[of] p1a: Dudunsparce
+line |move|p1a: Dudunsparce|Overheat|p2b: Charcadet
+line |-start|p2b: Charcadet|ability: Flash Fire
+line |move|p2b: Charcadet|Roar of Time|p1b: Minior
+line |-damage|p1b: Minior|106/156
+line |-mustrecharge|p2b: Charcadet
+line |
+line |debug|set status [brn] interrupted
+line |upkeep
+line |turn|7
+line |request|{"active":[{"moves":[{"move":"Draco Meteor","id":"dracometeor","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Jet","id":"aquajet","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Recharge","id":"recharge"}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"31/112","active":true,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"137/137","active":true,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"133/198","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+decision 7add45c9bb484733
+line |
+line |t:|1790525771
+line |move|p2a: Dugtrio|Bitter Blade|p2b: Charcadet
+line |-immune|p2b: Charcadet|[from] ability: Flash Fire
+line |move|p1a: Dudunsparce|Overheat|p2a: Dugtrio|[miss]
+line |-miss|p1a: Dudunsparce|p2a: Dugtrio
+line |move|p1b: Minior|Gyro Ball|p2b: Charcadet
+line |debug|BP: 16
+line |-resisted|p2b: Charcadet
+line |-damage|p2b: Charcadet|132/137
+line |cant|p2b: Charcadet|recharge
+line |
+line |debug|set status [brn] interrupted
+line |upkeep
+line |turn|8
+line |request|{"active":[{"moves":[{"move":"Draco Meteor","id":"dracometeor","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Jet","id":"aquajet","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":14,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Howl","id":"howl","pp":64,"maxpp":64,"target":"allies","disabled":false},{"move":"Transform","id":"transform","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Moongeist Beam","id":"moongeistbeam","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roar of Time","id":"roaroftime","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"31/112","active":true,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":true,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"133/198","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+decision 16580ad0862c14ce
+line |
+line |t:|1790525771
+line |move|p2a: Dugtrio|Bitter Blade|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|40/226
+line |-heal|p2a: Dugtrio|54/112|[from] drain|[of] p1a: Dudunsparce
+line |move|p1a: Dudunsparce|Overheat|p2b: Charcadet
+line |-immune|p2b: Charcadet|[from] ability: Flash Fire
+line |move|p1b: Minior|Mega Punch|p2a: Dugtrio
+line |-resisted|p2a: Dugtrio
+line |-damage|p2a: Dugtrio|35/112
+line |move|p2b: Charcadet|Transform|p1b: Minior
+line |-transform|p2b: Charcadet|p1b: Minior
+line |-end|p2b: Charcadet|ability: Flash Fire|[silent]
+line |
+line |debug|set status [brn] interrupted
+line |upkeep
+line |turn|9
+line |request|{"active":[{"moves":[{"move":"Draco Meteor","id":"dracometeor","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Aqua Jet","id":"aquajet","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Bitter Blade","id":"bitterblade","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Gyro Ball","id":"gyroball","pp":5,"maxpp":5,"target":"normal","disabled":false},{"move":"Mega Punch","id":"megapunch","pp":5,"maxpp":5,"target":"normal","disabled":false},{"move":"Vacuum Wave","id":"vacuumwave","pp":5,"maxpp":5,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"35/112","active":true,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":true,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["gyroball","megapunch","vacuumwave"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"shieldsdown","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"133/198","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""}]}}
+decision 005c49258b1f0962
+line |
+line |t:|1790525771
+line |switch|p2b: Great Tusk|Great Tusk, L50|133/198
+line |move|p1b: Minior|Vacuum Wave|p1a: Dudunsparce
+line |-supereffective|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|10/226
+line |move|p2a: Dugtrio|Bitter Blade|p1b: Minior
+line |-resisted|p1b: Minior
+line |-damage|p1b: Minior|87/156
+line |-heal|p2a: Dugtrio|45/112|[from] drain|[of] p1b: Minior
+line |move|p1a: Dudunsparce|Overheat|p2a: Dugtrio
+line |-supereffective|p2a: Dugtrio
+line |-damage|p2a: Dugtrio|0 fnt
+line |-unboost|p1a: Dudunsparce|spa|2
+line |faint|p2a: Dugtrio
+line |
+line |debug|set status [brn] interrupted
+line |upkeep
+line |request|{"forceSwitch":[true,false],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"0 fnt","active":true,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"133/198","active":true,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]},"noCancel":true}
+decision ef7d45caf5368ab4
+line |
+line |t:|1790525771
+line |switch|p2a: Delphox|Delphox, L50, M, shiny|159/159
+line |turn|10
+line |request|{"active":[{"moves":[{"move":"Thunder Shock","id":"thundershock","pp":48,"maxpp":48,"target":"normal","disabled":false}]},{"moves":[{"move":"Strange Steam","id":"strangesteam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Fury Cutter","id":"furycutter","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Head Smash","id":"headsmash","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Jaw Lock","id":"jawlock","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":true,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"133/198","active":true,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+decision 62e29b485daa21b9
+line |
+line |t:|1790525771
+line |move|p2a: Delphox|Thunder Shock|p2b: Great Tusk
+line |-immune|p2b: Great Tusk
+line |move|p2b: Great Tusk|Strange Steam|p1a: Dudunsparce
+line |-damage|p1a: Dudunsparce|0 fnt
+line |faint|p1a: Dudunsparce
+line |move|p1b: Minior|Mega Punch|p2b: Great Tusk
+line |-damage|p2b: Great Tusk|112/198
+line |
+line |debug|set status [brn] interrupted
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":true,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"112/198","active":true,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+line |
+line |t:|1790525771
+line |switch|p1a: Jigglypuff|Jigglypuff, L50, M, tera:Poison|202/202
+line |turn|11
+line |request|{"active":[{"moves":[{"move":"Thunder Shock","id":"thundershock","pp":47,"maxpp":48,"target":"normal","disabled":false}]},{"moves":[{"move":"Strange Steam","id":"strangesteam","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Fury Cutter","id":"furycutter","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Head Smash","id":"headsmash","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Jaw Lock","id":"jawlock","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":true,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"112/198","active":true,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":false,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+decision ab202e1d8715c12b
+line |
+line |t:|1790525771
+line |switch|p2a: Cufant|Cufant, L50, M|148/148
+line |move|p2b: Great Tusk|Jaw Lock|p1b: Minior
+line |-damage|p1b: Minior|47/156
+line |-activate|p2b: Great Tusk|trapped
+line |-activate|p1b: Minior|trapped
+line |move|p1b: Minior|Mega Punch|p2b: Great Tusk
+line |-damage|p2b: Great Tusk|91/198
+line |move|p1a: Jigglypuff|Iron Tail|p2b: Great Tusk
+line |-damage|p2b: Great Tusk|68/198
+line |
+line |debug|set status [brn] interrupted
+line |-formechange|p1b: Minior|Minior-Violet||[from] ability: Shields Down
+line |upkeep
+line |turn|12
+line |request|{"active":[{"moves":[{"move":"Ivy Cudgel","id":"ivycudgel","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Aqua Step","id":"aquastep","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Strange Steam","id":"strangesteam","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Fury Cutter","id":"furycutter","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Head Smash","id":"headsmash","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Jaw Lock","id":"jawlock","pp":15,"maxpp":16,"target":"normal","disabled":false}],"trapped":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"148/148","active":true,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"68/198","active":true,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+decision bf2ecbde661c1418
+line |
+line |t:|1790525771
+line |switch|p1a: Mew|Mew, L50|182/182
+line |move|p1b: Minior|Mega Punch|p2b: Great Tusk
+line |-damage|p2b: Great Tusk|37/198
+line |move|p2b: Great Tusk|Strange Steam|p2a: Cufant
+line |-resisted|p2a: Cufant
+line |-damage|p2a: Cufant|126/148
+line |move|p2a: Cufant|Ivy Cudgel|p2b: Great Tusk
+line |-supereffective|p2b: Great Tusk
+line |-damage|p2b: Great Tusk|0 fnt
+line |faint|p2b: Great Tusk
+line |-end|p2b: Great Tusk|Protosynthesis|[silent]
+line |
+line |-status|p1b: Minior|brn|[from] item: Flame Orb
+line |upkeep
+line |request|{"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"126/148","active":true,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"0 fnt","active":true,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]},"noCancel":true}
+decision 90d3c30f7d428b58
+line |
+line |t:|1790525771
+line |switch|p2b: Delphox|Delphox, L50, M, shiny|159/159
+line |turn|13
+line |request|{"active":[{"moves":[{"move":"Ivy Cudgel","id":"ivycudgel","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Aqua Step","id":"aquastep","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Thunder Shock","id":"thundershock","pp":47,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"126/148","active":true,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"159/159","active":true,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"0 fnt","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+decision 7e30b899c3ec2abc
+line |
+line |t:|1790525771
+line |switch|p1b: Jigglypuff|Jigglypuff, L50, M, tera:Poison|202/202
+line |move|p1a: Mew|Rollout|p2b: Delphox
+line |debug|BP: 30
+line |-supereffective|p2b: Delphox
+line |-damage|p2b: Delphox|125/159
+line |move|p2b: Delphox|Thunder Shock|p1a: Mew
+line |-damage|p1a: Mew|159/182
+line |move|p2a: Cufant|Ivy Cudgel|p1b: Jigglypuff
+line |-resisted|p1b: Jigglypuff
+line |-damage|p1b: Jigglypuff|151/202
+line |
+line |upkeep
+line |turn|14
+line |request|{"active":[{"moves":[{"move":"Ivy Cudgel","id":"ivycudgel","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Aqua Step","id":"aquastep","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Thunder Shock","id":"thundershock","pp":46,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"126/148","active":true,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"125/159","active":true,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"0 fnt","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+decision 0979e56e3202daa0
+line |
+line |t:|1790525771
+line |move|p1a: Mew|Rollout|p2b: Delphox|[from] lockedmove
+line |debug|BP: 60
+line |-supereffective|p2b: Delphox
+line |-damage|p2b: Delphox|53/159
+line |move|p2b: Delphox|Thunder Shock|p1a: Mew
+line |-damage|p1a: Mew|137/182
+line |move|p2a: Cufant|Ivy Cudgel|p1b: Jigglypuff
+line |-resisted|p1b: Jigglypuff
+line |-damage|p1b: Jigglypuff|99/202
+line |move|p1b: Jigglypuff|Iron Tail|p2b: Delphox
+line |-resisted|p2b: Delphox
+line |-crit|p2b: Delphox
+line |-damage|p2b: Delphox|25/159
+line |
+line |upkeep
+line |turn|15
+line |request|{"active":[{"moves":[{"move":"Ivy Cudgel","id":"ivycudgel","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Aqua Step","id":"aquastep","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Thunder Shock","id":"thundershock","pp":45,"maxpp":48,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"126/148","active":true,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"25/159","active":true,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"0 fnt","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]}}
+decision fecbc71853b1518d
+line |
+line |t:|1790525771
+line |move|p1a: Mew|Rollout|p2b: Delphox|[from] lockedmove
+line |debug|BP: 120
+line |-supereffective|p2b: Delphox
+line |-damage|p2b: Delphox|0 fnt
+line |faint|p2b: Delphox
+line |move|p2a: Cufant|Ivy Cudgel|p1b: Jigglypuff
+line |-resisted|p1b: Jigglypuff
+line |-damage|p1b: Jigglypuff|49/202
+line |move|p1b: Jigglypuff|Iron Tail|p2a: Cufant
+line |-resisted|p2a: Cufant
+line |-damage|p2a: Cufant|98/148
+line |
+line |upkeep
+line |request|{"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"98/148","active":true,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"0 fnt","active":true,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"0 fnt","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":false,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"}]},"noCancel":true}
+decision 02178e9987c485e0
+line |
+line |t:|1790525771
+line |switch|p2b: Charcadet|Charcadet, L50, M, shiny, tera:Electric|132/137
+line |turn|16
+line |request|{"active":[{"moves":[{"move":"Ivy Cudgel","id":"ivycudgel","pp":12,"maxpp":16,"target":"normal","disabled":false},{"move":"Aqua Step","id":"aquastep","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Howl","id":"howl","pp":64,"maxpp":64,"target":"allies","disabled":false},{"move":"Transform","id":"transform","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Moongeist Beam","id":"moongeistbeam","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roar of Time","id":"roaroftime","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"98/148","active":true,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"132/137","active":true,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":"Electric"},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"0 fnt","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+decision 1f7f18080ba850ea
+line |
+line |t:|1790525771
+line |switch|p1b: Oricorio|Oricorio, L50, F, shiny|153/153
+line |move|p1a: Mew|Rollout|p2b: Charcadet|[from] lockedmove
+line |debug|BP: 240
+line |-damage|p2b: Charcadet|0 fnt
+line |faint|p2b: Charcadet
+line |move|p2a: Cufant|Aqua Step|p1b: Oricorio
+line |-supereffective|p1b: Oricorio
+line |-damage|p1b: Oricorio|85/153
+line |-boost|p2a: Cufant|spe|1
+line |-activate|p1b: Oricorio|ability: Dancer
+line |move|p1b: Oricorio|Aqua Step|p2a: Cufant|[from] ability: Dancer
+line |-damage|p2a: Cufant|50/148
+line |-boost|p1b: Oricorio|spe|1
+line |
+line |upkeep
+line |turn|17
+line |request|{"active":[{"moves":[{"move":"Ivy Cudgel","id":"ivycudgel","pp":12,"maxpp":16,"target":"normal","disabled":false},{"move":"Aqua Step","id":"aquastep","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Howl","id":"howl","pp":64,"maxpp":64,"target":"allies","disabled":false},{"move":"Transform","id":"transform","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Moongeist Beam","id":"moongeistbeam","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Roar of Time","id":"roaroftime","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Cufant","details":"Cufant, L50, M","condition":"50/148","active":true,"stats":{"atk":107,"def":65,"spa":66,"spd":70,"spe":79},"moves":["ivycudgel","aquastep"],"baseAbility":"heavymetal","item":"chippedpot","pokeball":"pokeball","ability":"heavymetal","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Charcadet","details":"Charcadet, L50, M, shiny","condition":"0 fnt","active":true,"stats":{"atk":68,"def":60,"spa":100,"spd":71,"spe":55},"moves":["howl","transform","moongeistbeam","roaroftime"],"baseAbility":"flashfire","item":"","pokeball":"pokeball","ability":"flashfire","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Great Tusk","details":"Great Tusk, L50","condition":"0 fnt","active":false,"stats":{"atk":156,"def":158,"spa":93,"spd":87,"spe":117},"moves":["strangesteam","furycutter","headsmash","jawlock"],"baseAbility":"protosynthesis","item":"","pokeball":"pokeball","ability":"protosynthesis","commanding":false,"reviving":false,"teraType":"Rock","terastallized":""},{"ident":"p2: Pikachu","details":"Magneton, L50","condition":"0 fnt","active":false,"stats":{"atk":112,"def":130,"spa":140,"spd":100,"spe":91},"moves":["doublekick","precipiceblades","frostbreath","sheercold"],"baseAbility":"sturdy","item":"lansatberry","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Ghost","terastallized":""},{"ident":"p2: Dugtrio","details":"Dugtrio-Alola, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":138,"def":80,"spa":72,"spd":102,"spe":166},"moves":["dracometeor","aquajet","bitterblade"],"baseAbility":"sandveil","item":"enigmaberry","pokeball":"pokeball","ability":"sandveil","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Delphox","details":"Delphox, L50, M, shiny","condition":"0 fnt","active":false,"stats":{"atk":90,"def":102,"spa":146,"spd":131,"spe":137},"moves":["thundershock"],"baseAbility":"magician","item":"spelltag","pokeball":"pokeball","ability":"magician","commanding":false,"reviving":false,"teraType":"Fighting","terastallized":""}]}}
+decision b43c7fd6d70380c3
+line |
+line |t:|1790525771
+line |move|p1b: Oricorio|Head Smash|p2a: Cufant|[miss]
+line |-miss|p1b: Oricorio|p2a: Cufant
+line |move|p1a: Mew|Rollout|p2a: Cufant|[from] lockedmove
+line |debug|BP: 480
+line |-resisted|p2a: Cufant
+line |-damage|p2a: Cufant|0 fnt
+line |faint|p2a: Cufant
+line |
+line |win|p1

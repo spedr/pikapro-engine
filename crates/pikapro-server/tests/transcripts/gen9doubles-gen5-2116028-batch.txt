@@ -1,0 +1,483 @@
+# gen9doubles-gen5-2116028-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay omniscient
+@write
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,6d48dabf6b1770ef","rated":true}
+@write
+>player p1 {"name":"Alice","team":[{"name":"Toxel","species":"Toxel","item":"Big Root","ability":"Static","moves":["Precipice Blades","Moongeist Beam"],"nature":"Docile","evs":{"hp":172,"atk":94,"def":51,"spa":187,"spd":1,"spe":3},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying"},{"name":"Meowstic-F","species":"Meowstic-F","item":"","ability":"Infiltrator","moves":["Flare Blitz","Branch Poke"],"nature":"Docile","evs":{"hp":177,"atk":75,"def":139,"spa":13,"spd":53,"spe":37},"gender":"F","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ghost"},{"name":"Mr. Bubbles","species":"Munchlax","item":"Twisted Spoon","ability":"Gluttony","moves":["Gigaton Hammer","Flame Charge","Thunder Wave","X-Scissor"],"nature":"Brave","evs":{"hp":16,"atk":218,"def":27,"spa":27,"spd":35,"spe":160},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Rock"},{"name":"X","species":"Regirock","item":"","ability":"Clear Body","moves":["Flame Charge","Eerie Spell","Tail Whip"],"nature":"Serious","evs":{"hp":113,"atk":64,"def":30,"spa":141,"spd":18,"spe":59},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fire"},{"name":"Nibbles","species":"Snom","item":"Ribbon Sweet","ability":"Ice Scales","moves":["Wonder Room"],"nature":"Hardy","evs":{"hp":8,"atk":5,"def":250,"spa":50,"spd":34,"spe":155},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fighting"},{"name":"Pupitar","species":"Pupitar","item":"","ability":"Shed Skin","moves":["Body Slam","Stored Power"],"nature":"Bashful","evs":{"hp":4,"atk":3,"def":215,"spa":30,"spd":224,"spe":21},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Bug"}]}
+>player p2 {"name":"Bob","team":"Arceus-Dark|||Multitype|WonderRoom,MagnetRise,IronHead,NoRetreat|Hasty|91,65,173,59,88,11||||50|,,,,,Normal]Azumarill||PowerHerb|SapSipper|MakeItRain,Screech|Timid|27,206,184,21,16,29||||50|,,,,,Fairy]Pikachu|Hakamoo||Bulletproof|ClearSmog,StrengthSap|Hasty|102,106,13,150,32,92||||50|,,,,,Ice]Gabite||RindoBerry|RoughSkin|EnergyBall,AquaCutter,CalmMind|Quirky|181,57,100,,47,124||||50|,,,,,Dragon]Palossand|||SandVeil|IceBeam,AquaCutter,ToxicSpikes,DarkVoid|Serious|7,8,225,15,52,202|M||S|50|,,,,,Electric]Iron Jugulis|||QuarkDrive|FuryCutter|Naive|47,137,90,185,34,6||||50|,,,,,Ground","avatar":"lucas"}
+@write
+>p2 undo
+@write
+>p2 move 4, switch 3
+>p1 switch 3, move 1 -1 terastallize
+@write
+>p2 move 3 -2 terastallize, switch 3
+@write
+>p1 switch 3, switch 5
+@write
+>p2 move 1, move 2 1
+@write
+>p1 switch Meowstic
+>p1 switch 3, switch 4
+@write
+>p2 auto
+@write
+>p2 auto
+@write
+>p1 default
+@write
+>p1 switch
+@write
+>p2 default
+@write
+>p1 move 2 -2, switch 4
+>p1 pass, switch 4
+@write
+# a comment
+>p1 switch PUPITAR
+@write
+
+>p2 move noretreat, move screech +2
+>p1 move gigatonhammer 1 ,  switch 3
+@write
+# a comment
+>p2 move 3 2, switch 6
+@write
+
+>p1 move flamecharge -2,move 2 2
+>p2 move 2, switch 6
+@write
+>p1 move 2 -2, move 2 -1
+>p1 pass, switch 5
+@write
+>p1 move 1 -2, move 2 1
+
+>p2 switch arceusdark
+@write
+>p2 move 3 1, move 2 1
+>p1 switch 6, pass
+@write
+>p2 switch PALOSSAND
+# a comment
+>p1 move 1 -2, move 2 -1
+@write
+>p2 move 1, switch 3
+
+>p1 switch PUPITAR
+@write
+>p2 move noretreat, switch 5
+@write
+>p2 undo
+@write
+>p2 pass
+# a comment
+>p1 move bodyslam +2,move branchpoke 2
+@write
+>p2 move 4, move 2 -1
+# a comment
+>p2 move 2, move 1 2
+@write
+>p1 switch 6
+@write
+>p1 move 1 2, switch 3
+@write
+>p1 move Stored Power +1 ,  move flamecharge -1
+@write
+>p1 move Stored Power +1 ,  move flamecharge -1
+@write
+>p2 move 3 -2, move 2 1
+# a comment
+>chat turn talk 75
+@write
+>p1 switch Meowstic ,  move 1 1
+@write
+>p2 move Iron Head 1,move Strength Sap -1
+@write
+>p1 move 2 -2, move 3
+>p2 move 3 -2, move 2 1
+@write
+>p2 move magnetrise,move 1 1
+# a comment
+>p1 move flamecharge -2
+@write
+>p1 move branchpoke -1 dynamax
+>p1 move 2 1, move 2 -1
+@write
+>p2 move 1, switch 4
+@write
+>p1 switch 3, move 2 -1
+@write
+>p2 undo
+@write
+>p1 move 1 +2, move eeriespell -1
+@write
+>p2 move 0
+@write
+>p2 move 2,move energyball 1
+@write
+>p1 switch 3, pass
+@write
+>p1 move 2 2, move 1 2
+@write
+>p2 move Aqua Cutter terastallize
+>p2 move 1, move 1 2
+@write
+>player p1 {"name":"Renamed5"}
+@write
+
+>p2 move ironhead 1 ,  move 1 +1
+>p2 move ironhead 1 ,  move 1 +1
+@write
+>p1 move 1 2, move Flame Charge +1
+>p1 move 1
+@message
+|t:|
+|gametype|doubles
+@message
+|player|p1|Alice||
+|player|p2|Bob|lucas|
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|rated|
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Toxel|Toxel, L50, F|137/137
+|switch|p1b: Meowstic|Meowstic-F, L50, F|171/171
+|switch|p2a: Arceus|Arceus-Dark, L50|206/206
+|switch|p2b: Azumarill|Azumarill, L50, M|178/178
+|-start|p2a: Arceus|typechange|Normal|[silent]
+|turn|1
+@message
+|
+|t:|
+|switch|p2b: Pikachu|Hakamo-o, L50, F|143/143
+|switch|p1a: Mr. Bubbles|Munchlax, L50, M|212/212
+|-terastallize|p1b: Meowstic|Ghost
+|move|p2a: Arceus|No Retreat|p2a: Arceus
+|-boost|p2a: Arceus|atk|1
+|-boost|p2a: Arceus|def|1
+|-boost|p2a: Arceus|spa|1
+|-boost|p2a: Arceus|spd|1
+|-boost|p2a: Arceus|spe|1
+|-start|p2a: Arceus|move: No Retreat
+|move|p1b: Meowstic|Flare Blitz|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|154/212
+|-damage|p1b: Meowstic|152/171|[from] Recoil
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|switch|p1b: Nibbles|Snom, L50, M, shiny|106/106
+|switch|p2b: Azumarill|Azumarill, L50, M|178/178
+|switch|p1a: Toxel|Toxel, L50, F|137/137
+|-terastallize|p2a: Arceus|Normal
+|move|p2a: Arceus|Iron Head|p2b: Azumarill
+|-damage|p2b: Azumarill|123/178
+|
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|switch|p1a: Mr. Bubbles|Munchlax, L50, M|154/212
+|switch|p1b: X|Regirock, L50|169/169
+|move|p2a: Arceus|Wonder Room|p2a: Arceus
+|-fieldstart|move: Wonder Room|[of] p2a: Arceus
+|move|p2b: Azumarill|Screech|p1a: Mr. Bubbles
+|-unboost|p1a: Mr. Bubbles|def|2
+|
+|upkeep
+|turn|4
+@message
+|
+|t:|
+|move|p2a: Arceus|Wonder Room|p2a: Arceus
+|-fieldend|move: Wonder Room
+|move|p2b: Azumarill|Make It Rain|p1a: Mr. Bubbles|[spread] p1a,p1b
+|-supereffective|p1b: X
+|-crit|p1b: X
+|-damage|p1a: Mr. Bubbles|128/212
+|-damage|p1b: X|99/169
+|-unboost|p2b: Azumarill|spa|1
+|move|p1b: X|Flame Charge|p2a: Arceus
+|-damage|p2a: Arceus|192/206
+|-boost|p1b: X|spe|1
+|move|p1a: Mr. Bubbles|Gigaton Hammer|p2b: Azumarill
+|-damage|p2b: Azumarill|42/178
+|
+|upkeep
+|turn|5
+@message
+|
+|t:|
+|switch|p1b: Nibbles|Snom, L50, M, shiny|106/106
+|move|p2a: Arceus|Wonder Room|p2a: Arceus
+|-fieldstart|move: Wonder Room|[of] p2a: Arceus
+|move|p2b: Azumarill|Make It Rain|p1b: Nibbles|[spread] p1a,p1b
+|-supereffective|p1b: Nibbles
+|-damage|p1a: Mr. Bubbles|95/212
+|-damage|p1b: Nibbles|84/106
+|-unboost|p2b: Azumarill|spa|1
+|move|p1a: Mr. Bubbles|Flame Charge|p1b: Nibbles
+|-supereffective|p1b: Nibbles
+|-damage|p1b: Nibbles|0 fnt
+|-boost|p1a: Mr. Bubbles|spe|1
+|faint|p1b: Nibbles
+|
+|upkeep
+|
+|t:|
+|switch|p1b: X|Regirock, L50|99/169
+|turn|6
+@message
+|
+|t:|
+|switch|p1b: Toxel|Toxel, L50, F|137/137
+|move|p2a: Arceus|No Retreat||[still]
+|-fail|p2a: Arceus
+|move|p2b: Azumarill|Screech|p1b: Toxel|[miss]
+|-miss|p2b: Azumarill|p1b: Toxel
+|move|p1a: Mr. Bubbles|Gigaton Hammer|p2a: Arceus
+|-damage|p2a: Arceus|151/206
+|
+|upkeep
+|turn|7
+@message
+|
+|t:|
+|switch|p2b: Iron Jugulis|Iron Jugulis, L50|175/175
+|move|p2a: Arceus|Iron Head|p1b: Toxel
+|-resisted|p1b: Toxel
+|-damage|p1b: Toxel|68/137
+|move|p1a: Mr. Bubbles|Flame Charge|p1b: Toxel
+|-damage|p1b: Toxel|16/137
+|-boost|p1a: Mr. Bubbles|spe|1
+|move|p1b: Toxel|Moongeist Beam|p2b: Iron Jugulis
+|-resisted|p2b: Iron Jugulis
+|-damage|p2b: Iron Jugulis|157/175
+|
+|upkeep
+|turn|8
+@message
+|
+|t:|
+|-end|p2b: Iron Jugulis|Quark Drive|[silent]
+|switch|p2b: Azumarill|Azumarill, L50, M|42/178
+|move|p2a: Arceus|Magnet Rise|p2a: Arceus
+|-start|p2a: Arceus|Magnet Rise
+|move|p1a: Mr. Bubbles|Flame Charge|p1b: Toxel
+|-damage|p1b: Toxel|0 fnt
+|-boost|p1a: Mr. Bubbles|spe|1
+|faint|p1b: Toxel
+|
+|upkeep
+|
+|t:|
+|switch|p1b: Meowstic|Meowstic-F, L50, F, tera:Ghost|152/171
+|turn|9
+@message
+|
+|t:|
+|move|p2a: Arceus|Iron Head|p1a: Mr. Bubbles
+|-crit|p1a: Mr. Bubbles
+|-damage|p1a: Mr. Bubbles|0 fnt
+|faint|p1a: Mr. Bubbles
+|move|p1b: Meowstic|Branch Poke|p2a: Arceus
+|-damage|p2a: Arceus|145/206
+|move|p2b: Azumarill|Screech|p1b: Meowstic|[miss]
+|-miss|p2b: Azumarill|p1b: Meowstic
+|
+|-fieldend|move: Wonder Room
+|upkeep
+|
+|t:|
+|switch|p1a: Pupitar|Pupitar, L50, M|146/146
+|turn|10
+@message
+|
+|t:|
+|switch|p2b: Pikachu|Hakamo-o, L50, F|143/143
+|move|p2a: Arceus|Wonder Room|p2a: Arceus
+|-fieldstart|move: Wonder Room|[of] p2a: Arceus
+|move|p1b: Meowstic|Branch Poke|p1a: Pupitar
+|-supereffective|p1a: Pupitar
+|-damage|p1a: Pupitar|102/146
+|move|p1a: Pupitar|Body Slam|p1b: Meowstic
+|-immune|p1b: Meowstic
+|
+|upkeep
+|turn|11
+@message
+|
+|t:|
+|move|p2a: Arceus|No Retreat||[still]
+|-fail|p2a: Arceus
+|move|p1b: Meowstic|Branch Poke|p2b: Pikachu
+|-resisted|p2b: Pikachu
+|-damage|p2b: Pikachu|137/143
+|move|p2b: Pikachu|Strength Sap|p2a: Arceus
+|-unboost|p2a: Arceus|atk|1
+|-heal|p2b: Pikachu|143/143
+|move|p1a: Pupitar|Body Slam|p2b: Pikachu
+|-damage|p2b: Pikachu|103/143
+|-status|p2b: Pikachu|par
+|
+|upkeep
+|turn|12
+@message
+|
+|t:|
+|switch|p1b: X|Regirock, L50|99/169
+|move|p2a: Arceus|Magnet Rise||[still]
+|-fail|p2a: Arceus
+|move|p1a: Pupitar|Body Slam|p2b: Pikachu
+|-damage|p2b: Pikachu|65/143 par
+|cant|p2b: Pikachu|par
+|
+|-end|p2a: Arceus|Magnet Rise
+|upkeep
+|turn|13
+@message
+|
+|t:|
+|move|p2a: Arceus|Iron Head|p2b: Pikachu
+|-damage|p2b: Pikachu|13/143 par
+|move|p1b: X|Flame Charge|p1a: Pupitar
+|-resisted|p1a: Pupitar
+|-damage|p1a: Pupitar|91/146
+|-boost|p1b: X|spe|1
+|move|p1a: Pupitar|Stored Power|p2a: Arceus
+|-damage|p2a: Arceus|141/206
+|move|p2b: Pikachu|Strength Sap|p1a: Pupitar
+|-unboost|p1a: Pupitar|atk|1
+|-heal|p2b: Pikachu|117/143 par
+|
+|upkeep
+|turn|14
+|chat|turn talk 75
+@message
+|
+|t:|
+|switch|p1a: Meowstic|Meowstic-F, L50, F, tera:Ghost|152/171
+|move|p2a: Arceus|Iron Head|p1a: Meowstic
+|-damage|p1a: Meowstic|109/171
+|move|p1b: X|Flame Charge|p2a: Arceus
+|-damage|p2a: Arceus|128/206
+|-boost|p1b: X|spe|1
+|move|p2b: Pikachu|Strength Sap|p2a: Arceus
+|-unboost|p2a: Arceus|atk|1
+|-heal|p2b: Pikachu|143/143 par
+|
+|-fieldend|move: Wonder Room
+|upkeep
+|turn|15
+@message
+|
+|t:|
+|move|p2a: Arceus|Iron Head|p2b: Pikachu
+|-damage|p2b: Pikachu|110/143 par
+|move|p1b: X|Tail Whip|p2a: Arceus|[spread] p2a,p2b
+|-unboost|p2a: Arceus|def|1
+|-unboost|p2b: Pikachu|def|1
+|move|p1a: Meowstic|Branch Poke|p1b: X
+|-supereffective|p1b: X
+|-damage|p1b: X|85/169
+|cant|p2b: Pikachu|par
+|
+|upkeep
+|turn|16
+@message
+|
+|t:|
+|move|p2a: Arceus|Magnet Rise|p2a: Arceus
+|-start|p2a: Arceus|Magnet Rise
+|move|p1b: X|Eerie Spell|p1a: Meowstic
+|-damage|p1a: Meowstic|83/171
+|-activate|p1a: Meowstic|move: Eerie Spell|Branch Poke|3
+|move|p1a: Meowstic|Branch Poke|p2a: Arceus
+|-damage|p2a: Arceus|118/206
+|move|p2b: Pikachu|Clear Smog|p1a: Meowstic
+|-resisted|p1a: Meowstic
+|-damage|p1a: Meowstic|73/171
+|-clearboost|p1a: Meowstic
+|
+|upkeep
+|turn|17
+@message
+|
+|t:|
+|switch|p1a: Pupitar|Pupitar, L50, M|91/146
+|switch|p2b: Gabite|Gabite, L50, F|166/166
+|move|p2a: Arceus|Wonder Room|p2a: Arceus
+|-fieldstart|move: Wonder Room|[of] p2a: Arceus
+|move|p1b: X|Eerie Spell|p1a: Pupitar
+|-damage|p1a: Pupitar|67/146
+|
+|upkeep
+|turn|18
+@message
+|
+|t:|
+|move|p2a: Arceus|Magnet Rise||[still]
+|-fail|p2a: Arceus
+|move|p1b: X|Eerie Spell|p1a: Pupitar
+|-damage|p1a: Pupitar|40/146
+|move|p2b: Gabite|Energy Ball|p1a: Pupitar
+|-supereffective|p1a: Pupitar
+|-damage|p1a: Pupitar|0 fnt
+|faint|p1a: Pupitar
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1a: Meowstic|Meowstic-F, L50, F, tera:Ghost|73/171
+|turn|19
+@message
+|
+|t:|
+|move|p2a: Arceus|Wonder Room|p2a: Arceus
+|-fieldend|move: Wonder Room
+|move|p1b: X|Flame Charge|p2b: Gabite
+|-resisted|p2b: Gabite
+|-damage|p2b: Gabite|152/166
+|-boost|p1b: X|spe|1
+|-damage|p1b: X|64/169|[from] ability: Rough Skin|[of] p2b: Gabite
+|move|p1a: Meowstic|Branch Poke|p2b: Gabite
+|-damage|p2b: Gabite|138/166
+|-damage|p1a: Meowstic|52/171|[from] ability: Rough Skin|[of] p2b: Gabite
+|move|p2b: Gabite|Energy Ball|p1b: X
+|-supereffective|p1b: X
+|-damage|p1b: X|16/169
+|
+|upkeep
+|turn|20
+@message
+|player|p1|Renamed5||
+@message
+|
+|t:|
+|move|p2a: Arceus|Iron Head|p1a: Meowstic
+|-damage|p1a: Meowstic|25/171
+|move|p1b: X|Flame Charge|p2a: Arceus
+|-damage|p2a: Arceus|97/206
+|-boost|p1b: X|spe|1
+|move|p1a: Meowstic|Flare Blitz|p2b: Gabite
+|-resisted|p2b: Gabite
+|-damage|p2b: Gabite|120/166
+|-damage|p1a: Meowstic|4/171|[from] ability: Rough Skin|[of] p2b: Gabite
+|-damage|p1a: Meowstic|0 fnt|[from] Recoil
+|faint|p1a: Meowstic
+|move|p2b: Gabite|Energy Ball|p1b: X
+|-supereffective|p1b: X
+|-damage|p1b: X|0 fnt
+|faint|p1b: X
+|
+|win|Bob

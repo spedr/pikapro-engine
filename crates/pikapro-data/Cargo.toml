@@ -1,0 +1,24 @@
+[package]
+name = "pikapro-data"
+description = "Pokémon game data for pikapro, generated from Pokémon Showdown: species, moves, abilities, items, types and learnsets (Gen 9 and Champions)"
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords = ["pokemon", "showdown", "pokedex", "game-data", "vgc"]
+categories = ["games", "no-std", "simulation"]
+
+[lints]
+workspace = true
+
+[features]
+# The team-legality tables (`legality` module): learnsets, events and the
+# species fields the team validator (pikapro-validate) reads. Large, so off by
+# default.
+legality = []
+
+# docs.rs builds with default features: document the `legality` module too.
+[package.metadata.docs.rs]
+features = ["legality"]

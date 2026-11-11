@@ -1,0 +1,126 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9ou
+seed 0000 0000 02eb b480
+genders drawn
+team p1
+Charizard @ Charizardite Y
+Ability: Blaze
+Hardy Nature
+- Splash
+
+Pawmot
+Ability: Natural Cure
+Hardy Nature
+- Revival Blessing
+end
+team p2
+Garchomp
+Ability: No Guard
+Hardy Nature
+- Stone Edge
+- Splash
+end
+choice p1 team 12
+choice p2 team 1
+choice p1 move 1 mega
+choice p2 move 1
+choice p1 switch 2
+choice p1 move 1
+choice p2 move 2
+choice p1 switch 2
+choice p1 switch 2
+choice p2 move 2
+choice p1 move 1
+choice p2 move 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] OU
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Endless Battle Clause: Forcing endless battles is banned
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|OHKO Clause: OHKO moves are banned
+expect |rule|Evasion Items Clause: Evasion items are banned
+expect |rule|Evasion Moves Clause: Evasion moves are banned
+expect |rule|Evasion Abilities Clause: Evasion abilities are banned
+expect |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+expect |clearpoke
+expect |poke|p1|Charizard, F|
+expect |poke|p1|Pawmot, F|
+expect |poke|p2|Garchomp, M|
+expect |teampreview
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Charizard|Charizard, F|297/297
+expect |switch|p1a: Charizard|Charizard, F|100/100
+expect |split|p2
+expect |switch|p2a: Garchomp|Garchomp, M|357/357
+expect |switch|p2a: Garchomp|Garchomp, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |detailschange|p1a: Charizard|Charizard-Mega-Y, F
+expect |-mega|p1a: Charizard|Charizard|Charizardite Y
+expect |-weather|SunnyDay|[from] ability: Drought|[of] p1a: Charizard
+expect |move|p2a: Garchomp|Stone Edge|p1a: Charizard
+expect |rng|8|2
+expect |rng|16|6
+expect |-supereffective|p1a: Charizard
+expect |split|p1
+expect |-damage|p1a: Charizard|0 fnt
+expect |-damage|p1a: Charizard|0 fnt
+expect |faint|p1a: Charizard
+expect |detailschange|p1: Charizard|Charizard, F|[silent]
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pawmot|Pawmot, F|281/281
+expect |switch|p1a: Pawmot|Pawmot, F|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Pawmot|Revival Blessing|p1a: Pawmot
+expect |
+expect |t:|
+expect |split|p1
+expect |-heal|p1: Charizard|148/297|[from] move: Revival Blessing
+expect |-heal|p1: Charizard|50/100|[from] move: Revival Blessing
+expect |move|p2a: Garchomp|Splash|p2a: Garchomp
+expect |-nothing
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Charizard|Charizard, F|148/297
+expect |switch|p1a: Charizard|Charizard, F|50/100
+expect |move|p2a: Garchomp|Splash|p2a: Garchomp
+expect |-nothing
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Garchomp|Splash|p2a: Garchomp
+expect |-nothing
+expect |move|p1a: Charizard|Splash|p1a: Charizard
+expect |-nothing
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|5

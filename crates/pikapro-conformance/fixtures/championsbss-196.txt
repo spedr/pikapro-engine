@@ -1,0 +1,740 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed ab9e 90a5 357c 572c
+genders drawn
+team p1
+Zoë (Tauros-Paldea-Combat) (M)
+Ability: Anger Point
+Level: 50
+Tera Type: Ground
+EVs: 1 HP / 6 Atk / 30 Def / 4 SpA / 13 SpD / 3 Spe
+Hardy Nature
+- Waterfall
+
+Blaziken (F) @ Blazikenite
+Ability: Blaze
+Level: 50
+Tera Type: Dragon
+EVs: 4 HP / 20 Atk / 2 Def / 18 SpA / 21 SpD / 1 Spe
+Lax Nature
+- Shell Side Arm
+- Topsy-Turvy
+- King's Shield
+- Fire Spin
+
+Ninetales @ Colbur Berry
+Ability: Drought
+Level: 50
+Tera Type: Ground
+EVs: 1 Atk / 5 Def / 25 SpA / 31 SpD / 4 Spe
+Bashful Nature
+- Psycho Cut
+
+Torterra (M) @ Wacan Berry
+Ability: Overgrow
+Level: 50
+Tera Type: Poison
+EVs: 6 HP / 12 Atk / 20 Def / 7 SpA / 3 SpD / 15 Spe
+Naive Nature
+- Draining Kiss
+
+Chomp (Slurpuff) (M) @ Payapa Berry
+Ability: Unburden
+Level: 50
+Tera Type: Psychic
+EVs: 13 HP / 32 Atk / 1 SpA / 12 SpD / 8 Spe
+Serious Nature
+- Ice Punch
+- Jaw Lock
+
+Sir Hops-a-Lot (Morpeko) (M) @ Terrain Extender
+Ability: Hunger Switch
+Level: 50
+Tera Type: Ghost
+EVs: 21 HP / 1 Atk / 24 Def / 6 SpA / 6 SpD / 5 Spe
+Bold Nature
+- Spirit Break
+- Aura Sphere
+end
+team p2
+Meowstic (M) @ Meowsticite
+Ability: Prankster
+Level: 50
+Tera Type: Psychic
+EVs: 17 HP / 32 Atk / 7 Def / 9 SpD / 1 Spe
+Timid Nature
+- Bug Buzz
+
+Pincurchin (M) @ Grassy Seed
+Ability: Lightning Rod
+Level: 50
+Tera Type: Psychic
+EVs: 14 HP / 23 Atk / 4 Def / 10 SpA / 1 SpD / 5 Spe
+Calm Nature
+- Future Sight
+- Clanging Scales
+- Lash Out
+
+Gourgeist @ Binding Band
+Ability: Pickup
+Level: 50
+Tera Type: Psychic
+EVs: 20 HP / 16 Atk / 2 Def / 1 SpA / 7 SpD / 20 Spe
+Sassy Nature
+- Body Slam
+- Meteor Mash
+
+Alcremie-Ruby-Swirl @ Mental Herb
+Ability: Aroma Veil
+Level: 50
+Tera Type: Ice
+EVs: 24 Atk / 14 SpA / 24 SpD / 4 Spe
+Quiet Nature
+- Superpower
+- Axe Kick
+- Ice Hammer
+- Strength Sap
+
+Big Tony's Pal (Hydreigon)
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Tera Type: Grass
+EVs: 3 Def / 7 SpA / 31 SpD / 21 Spe
+Serious Nature
+- Pounce
+- Dive
+
+Basculegion
+Ability: Swift Swim
+Level: 50
+Tera Type: Steel
+EVs: 23 HP / 15 Atk / 4 Def / 8 SpA / 1 SpD / 6 Spe
+Docile Nature
+- Recycle
+end
+choice p1 team 324
+choice p2 team 2, 1, 4
+choice p1 move Psycho Cut
+choice p2 move 3
+choice p1 move 1
+choice p2 move 2
+choice p1 switch 2
+choice p2 switch 3
+choice p1 switch 3
+choice p2 move 2
+choice p1 switch 3
+choice p2 move 3
+choice p1 move 4 mega
+choice p2 move 4
+choice p1 switch 2
+choice p2 move 4
+choice p1 move 1
+choice p2 switch 3
+choice p1 move 1
+choice p2 switch alcremie-ruby-swirl
+choice p1 switch 2
+choice p2 switch 3
+choice p1 move 2
+choice p2 move 1
+choice p1 switch 3
+choice p2 switch Alcremie
+choice p1 move 1
+choice p2 move 2
+choice p1 switch 3
+choice p2 move 3
+choice p1 default
+choice p2 switch 2
+choice p1 move 2
+choice p2 move Bug Buzz mega
+choice p1 move 1
+choice p2 switch alcremie-ruby-swirl
+choice p2 switch 2
+choice p1 switch 3
+choice p2 move 1
+choice p1 default
+choice p2 move 1
+choice p1 move 1
+choice p2 switch 3
+choice p1 switch 3
+choice p2 move 1
+choice p1 switch 3
+choice p2 move clangingscales
+choice p1 switch 3
+choice p2 switch 3
+choice p1 move 3
+choice p1 switch ninetales
+choice p2 switch 3
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 switch 3
+choice p1 default
+choice p2 move Bug Buzz
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Tauros-Paldea-Combat, L50, M|
+expect |poke|p1|Blaziken, L50, F|
+expect |poke|p1|Ninetales, L50, F|
+expect |poke|p1|Torterra, L50, M|
+expect |poke|p1|Slurpuff, L50, M|
+expect |poke|p1|Morpeko, L50, M|
+expect |poke|p2|Meowstic, L50, M|
+expect |poke|p2|Pincurchin, L50, M|
+expect |poke|p2|Gourgeist, L50, F|
+expect |poke|p2|Alcremie-Ruby-Swirl, L50, F|
+expect |poke|p2|Hydreigon, L50, M, shiny|
+expect |poke|p2|Basculegion, L50, M|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Ninetales|Ninetales, L50, F|148/148
+expect |switch|p1a: Ninetales|Ninetales, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Pincurchin|Pincurchin, L50, M|137/137
+expect |switch|p2a: Pincurchin|Pincurchin, L50, M|100/100
+expect |-weather|SunnyDay|[from] ability: Drought|[of] p1a: Ninetales
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Ninetales|Psycho Cut|p2a: Pincurchin
+expect |rng|100|61
+expect |rng|8|0
+expect |rng|16|6
+expect |-crit|p2a: Pincurchin
+expect |split|p2
+expect |-damage|p2a: Pincurchin|100/137
+expect |-damage|p2a: Pincurchin|72/100
+expect |move|p2a: Pincurchin|Lash Out|p1a: Ninetales
+expect |rng|100|70
+expect |rng|24|9
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Ninetales|106/148
+expect |-damage|p1a: Ninetales|71/100
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Ninetales|Psycho Cut|p2a: Pincurchin
+expect |rng|100|62
+expect |rng|8|5
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Pincurchin|77/137
+expect |-damage|p2a: Pincurchin|56/100
+expect |move|p2a: Pincurchin|Clanging Scales|p1a: Ninetales
+expect |rng|100|26
+expect |rng|24|8
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Ninetales|68/148
+expect |-damage|p1a: Ninetales|45/100
+expect |-unboost|p2a: Pincurchin|def|1
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Blaziken|Blaziken, L50, F|159/159
+expect |switch|p1a: Blaziken|Blaziken, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|140/140
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|100/100
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Torterra|Torterra, L50, M|176/176
+expect |switch|p1a: Torterra|Torterra, L50, M|100/100
+expect |move|p2a: Alcremie|Axe Kick|p1a: Torterra
+expect |rng|100|7
+expect |rng|24|16
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Torterra|140/176
+expect |-damage|p1a: Torterra|79/100
+expect |rng|100|54
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Blaziken|Blaziken, L50, F|159/159
+expect |switch|p1a: Blaziken|Blaziken, L50, F|100/100
+expect |move|p2a: Alcremie|Ice Hammer|p1a: Blaziken
+expect |rng|100|89
+expect |rng|24|16
+expect |rng|16|5
+expect |-resisted|p1a: Blaziken|1
+expect |split|p1
+expect |-damage|p1a: Blaziken|137/159
+expect |-damage|p1a: Blaziken|86/100
+expect |rng|100|3
+expect |-unboost|p2a: Alcremie|spe|1
+expect |
+expect |-weather|none
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |detailschange|p1a: Blaziken|Blaziken-Mega, L50, F
+expect |-mega|p1a: Blaziken|Blaziken|Blazikenite
+expect |move|p1a: Blaziken|Fire Spin|p2a: Alcremie
+expect |rng|100|76
+expect |rng|24|11
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Alcremie|116/140
+expect |-damage|p2a: Alcremie|82/100
+expect |rng|2|1
+expect |-activate|p2a: Alcremie|move: Fire Spin|[of] p1a: Blaziken
+expect |move|p2a: Alcremie|Strength Sap|p1a: Blaziken
+expect |rng|100|14
+expect |-unboost|p1a: Blaziken|atk|1
+expect |split|p2
+expect |-heal|p2a: Alcremie|140/140
+expect |-heal|p2a: Alcremie|100/100
+expect |
+expect |split|p2
+expect |-damage|p2a: Alcremie|123/140|[from] move: Fire Spin|[partiallytrapped]
+expect |-damage|p2a: Alcremie|87/100|[from] move: Fire Spin|[partiallytrapped]
+expect |-ability|p1a: Blaziken|Speed Boost|boost
+expect |-boost|p1a: Blaziken|spe|1
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Ninetales|Ninetales, L50, F|68/148
+expect |switch|p1a: Ninetales|Ninetales, L50, F|45/100
+expect |-weather|SunnyDay|[from] ability: Drought|[of] p1a: Ninetales
+expect |move|p2a: Alcremie|Strength Sap|p1a: Ninetales
+expect |rng|100|41
+expect |-unboost|p1a: Ninetales|atk|1
+expect |split|p2
+expect |-heal|p2a: Alcremie|140/140
+expect |-heal|p2a: Alcremie|100/100
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |-end|p2a: Alcremie|Fire Spin|[partiallytrapped]|[silent]
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pincurchin|Pincurchin, L50, M|77/137
+expect |switch|p2a: Pincurchin|Pincurchin, L50, M|56/100
+expect |move|p1a: Ninetales|Psycho Cut|p2a: Pincurchin
+expect |rng|100|98
+expect |rng|8|3
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Pincurchin|61/137
+expect |-damage|p2a: Pincurchin|44/100
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|140/140
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|100/100
+expect |move|p1a: Ninetales|Psycho Cut|p2a: Alcremie
+expect |rng|100|76
+expect |rng|8|2
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: Alcremie|120/140
+expect |-damage|p2a: Alcremie|85/100
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Blaziken|Blaziken-Mega, L50, F|137/159
+expect |switch|p1a: Blaziken|Blaziken-Mega, L50, F|86/100
+expect |split|p2
+expect |switch|p2a: Pincurchin|Pincurchin, L50, M|61/137
+expect |switch|p2a: Pincurchin|Pincurchin, L50, M|44/100
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p1a: Blaziken|Topsy-Turvy||[still]
+expect |-fail|p1a: Blaziken
+expect |move|p2a: Pincurchin|Future Sight|p1a: Blaziken
+expect |-start|p2a: Pincurchin|move: Future Sight
+expect |
+expect |-weather|none
+expect |-ability|p1a: Blaziken|Speed Boost|boost
+expect |-boost|p1a: Blaziken|spe|1
+expect |upkeep
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Torterra|Torterra, L50, M|140/176
+expect |switch|p1a: Torterra|Torterra, L50, M|79/100
+expect |split|p2
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|120/140
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|85/100
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1a: Torterra|Draining Kiss|p2a: Alcremie
+expect |rng|100|53
+expect |rng|24|3
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Alcremie|108/140
+expect |-damage|p2a: Alcremie|77/100
+expect |split|p1
+expect |-heal|p1a: Torterra|149/176|[from] drain|[of] p2a: Alcremie
+expect |-heal|p1a: Torterra|84/100|[from] drain|[of] p2a: Alcremie
+expect |move|p2a: Alcremie|Axe Kick|p1a: Torterra
+expect |rng|100|8
+expect |rng|24|9
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1a: Torterra|116/176
+expect |-damage|p1a: Torterra|65/100
+expect |rng|100|11
+expect |-start|p1a: Torterra|confusion
+expect |rng|3|0
+expect |
+expect |-end|p1a: Torterra|move: Future Sight
+expect |rng|100|4
+expect |rng|24|10
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Torterra|49/176
+expect |-damage|p1a: Torterra|27/100
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Blaziken|Blaziken-Mega, L50, F|137/159
+expect |switch|p1a: Blaziken|Blaziken-Mega, L50, F|86/100
+expect |move|p2a: Alcremie|Ice Hammer|p1a: Blaziken
+expect |rng|100|2
+expect |rng|24|20
+expect |rng|16|2
+expect |-resisted|p1a: Blaziken|1
+expect |split|p1
+expect |-damage|p1a: Blaziken|117/159
+expect |-damage|p1a: Blaziken|73/100
+expect |rng|100|89
+expect |-unboost|p2a: Alcremie|spe|1
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Meowstic|Meowstic, L50, M|166/166
+expect |switch|p2a: Meowstic|Meowstic, L50, M|100/100
+expect |move|p1a: Blaziken|Shell Side Arm|p2a: Meowstic|[anim] Shell Side Arm Physical
+expect |rng|100|81
+expect |rng|24|11
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2a: Meowstic|98/166
+expect |-damage|p2a: Meowstic|59/100
+expect |-hint|Physical Shell Side Arm
+expect |rng|100|24
+expect |
+expect |-ability|p1a: Blaziken|Speed Boost|boost
+expect |-boost|p1a: Blaziken|spe|1
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |detailschange|p2a: Meowstic|Meowstic-M-Mega, L50, M
+expect |-mega|p2a: Meowstic|Meowstic|Meowsticite
+expect |rng|1|0
+expect |-ability|p2a: Meowstic|Speed Boost|Trace|[from] ability: Trace|[of] p1a: Blaziken
+expect |move|p1a: Blaziken|Topsy-Turvy||[still]
+expect |-fail|p1a: Blaziken
+expect |move|p2a: Meowstic|Bug Buzz|p1a: Blaziken
+expect |rng|100|0
+expect |rng|24|0
+expect |rng|16|14
+expect |-resisted|p1a: Blaziken|2
+expect |-crit|p1a: Blaziken
+expect |split|p1
+expect |-damage|p1a: Blaziken|98/159
+expect |-damage|p1a: Blaziken|61/100
+expect |rng|100|52
+expect |
+expect |-ability|p1a: Blaziken|Speed Boost|boost
+expect |-boost|p1a: Blaziken|spe|1
+expect |-ability|p2a: Meowstic|Speed Boost|boost
+expect |-boost|p2a: Meowstic|spe|1
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|108/140
+expect |switch|p2a: Alcremie|Alcremie-Ruby-Swirl, L50, F|77/100
+expect |move|p1a: Blaziken|Shell Side Arm|p2a: Alcremie|[anim] Shell Side Arm Physical
+expect |rng|100|97
+expect |rng|24|11
+expect |rng|16|14
+expect |-supereffective|p2a: Alcremie|1
+expect |split|p2
+expect |-damage|p2a: Alcremie|0 fnt
+expect |-damage|p2a: Alcremie|0 fnt
+expect |-hint|Physical Shell Side Arm
+expect |rng|100|12
+expect |faint|p2a: Alcremie
+expect |
+expect |-ability|p1a: Blaziken|Speed Boost|boost
+expect |-boost|p1a: Blaziken|spe|1
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Meowstic|Meowstic-M-Mega, L50, M|98/166
+expect |switch|p2a: Meowstic|Meowstic-M-Mega, L50, M|59/100
+expect |rng|1|0
+expect |-ability|p2a: Meowstic|Speed Boost|Trace|[from] ability: Trace|[of] p1a: Blaziken
+expect |turn|18
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Torterra|Torterra, L50, M|49/176
+expect |switch|p1a: Torterra|Torterra, L50, M|27/100
+expect |move|p2a: Meowstic|Bug Buzz|p1a: Torterra
+expect |rng|100|46
+expect |rng|24|13
+expect |rng|16|7
+expect |-supereffective|p1a: Torterra|1
+expect |split|p1
+expect |-damage|p1a: Torterra|0 fnt
+expect |-damage|p1a: Torterra|0 fnt
+expect |rng|100|61
+expect |faint|p1a: Torterra
+expect |
+expect |-ability|p2a: Meowstic|Speed Boost|boost
+expect |-boost|p2a: Meowstic|spe|1
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Ninetales|Ninetales, L50, F|68/148
+expect |switch|p1a: Ninetales|Ninetales, L50, F|45/100
+expect |-weather|SunnyDay|[from] ability: Drought|[of] p1a: Ninetales
+expect |turn|19
+expect |
+expect |t:|
+expect |move|p2a: Meowstic|Bug Buzz|p1a: Ninetales
+expect |rng|100|8
+expect |rng|24|22
+expect |rng|16|7
+expect |-resisted|p1a: Ninetales|1
+expect |split|p1
+expect |-damage|p1a: Ninetales|48/148
+expect |-damage|p1a: Ninetales|32/100
+expect |rng|100|28
+expect |move|p1a: Ninetales|Psycho Cut|p2a: Meowstic
+expect |rng|100|59
+expect |rng|8|1
+expect |rng|16|2
+expect |-resisted|p2a: Meowstic|1
+expect |split|p2
+expect |-damage|p2a: Meowstic|83/166
+expect |-damage|p2a: Meowstic|50/100y
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |-ability|p2a: Meowstic|Speed Boost|boost
+expect |-boost|p2a: Meowstic|spe|1
+expect |upkeep
+expect |turn|20
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pincurchin|Pincurchin, L50, M|61/137
+expect |switch|p2a: Pincurchin|Pincurchin, L50, M|44/100
+expect |split|p1
+expect |switch|p1a: Blaziken|Blaziken-Mega, L50, F|98/159
+expect |switch|p1a: Blaziken|Blaziken-Mega, L50, F|61/100
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|21
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Ninetales|Ninetales, L50, F|48/148
+expect |switch|p1a: Ninetales|Ninetales, L50, F|32/100
+expect |move|p2a: Pincurchin|Future Sight|p1a: Ninetales
+expect |-start|p2a: Pincurchin|move: Future Sight
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|22
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Blaziken|Blaziken-Mega, L50, F|98/159
+expect |switch|p1a: Blaziken|Blaziken-Mega, L50, F|61/100
+expect |move|p2a: Pincurchin|Clanging Scales|p1a: Blaziken
+expect |rng|100|44
+expect |rng|24|4
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Blaziken|49/159
+expect |-damage|p1a: Blaziken|30/100
+expect |-unboost|p2a: Pincurchin|def|1
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|23
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Meowstic|Meowstic-M-Mega, L50, M|83/166
+expect |switch|p2a: Meowstic|Meowstic-M-Mega, L50, M|50/100y
+expect |rng|1|0
+expect |-ability|p2a: Meowstic|Speed Boost|Trace|[from] ability: Trace|[of] p1a: Blaziken
+expect |move|p1a: Blaziken|King's Shield||[still]
+expect |-fail|p1a: Blaziken
+expect |
+expect |-weather|none
+expect |-end|p1a: Blaziken|move: Future Sight
+expect |rng|100|21
+expect |rng|24|22
+expect |rng|16|5
+expect |-supereffective|p1a: Blaziken|1
+expect |split|p1
+expect |-damage|p1a: Blaziken|0 fnt
+expect |-damage|p1a: Blaziken|0 fnt
+expect |faint|p1a: Blaziken
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Ninetales|Ninetales, L50, F|48/148
+expect |switch|p1a: Ninetales|Ninetales, L50, F|32/100
+expect |-weather|SunnyDay|[from] ability: Drought|[of] p1a: Ninetales
+expect |turn|24
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pincurchin|Pincurchin, L50, M|61/137
+expect |switch|p2a: Pincurchin|Pincurchin, L50, M|44/100
+expect |move|p1a: Ninetales|Psycho Cut|p2a: Pincurchin
+expect |rng|100|22
+expect |rng|8|2
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Pincurchin|38/137
+expect |-damage|p2a: Pincurchin|27/100
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|25
+expect |
+expect |t:|
+expect |move|p1a: Ninetales|Psycho Cut|p2a: Pincurchin
+expect |rng|100|55
+expect |rng|8|2
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Pincurchin|13/137
+expect |-damage|p2a: Pincurchin|9/100
+expect |move|p2a: Pincurchin|Future Sight|p1a: Ninetales
+expect |-start|p2a: Pincurchin|move: Future Sight
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |turn|26
+expect |
+expect |t:|
+expect |move|p1a: Ninetales|Psycho Cut|p2a: Pincurchin
+expect |rng|100|97
+expect |rng|8|0
+expect |rng|16|14
+expect |-crit|p2a: Pincurchin
+expect |split|p2
+expect |-damage|p2a: Pincurchin|0 fnt
+expect |-damage|p2a: Pincurchin|0 fnt
+expect |faint|p2a: Pincurchin
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Meowstic|Meowstic-M-Mega, L50, M|83/166
+expect |switch|p2a: Meowstic|Meowstic-M-Mega, L50, M|50/100y
+expect |rng|1|0
+expect |-ability|p2a: Meowstic|Drought|Trace|[from] ability: Trace|[of] p1a: Ninetales
+expect |turn|27
+expect |
+expect |t:|
+expect |move|p2a: Meowstic|Bug Buzz|p1a: Ninetales
+expect |rng|100|66
+expect |rng|24|4
+expect |rng|16|11
+expect |-resisted|p1a: Ninetales|1
+expect |split|p1
+expect |-damage|p1a: Ninetales|29/148
+expect |-damage|p1a: Ninetales|19/100
+expect |rng|100|3
+expect |-unboost|p1a: Ninetales|spd|1
+expect |move|p1a: Ninetales|Psycho Cut|p2a: Meowstic
+expect |rng|100|76
+expect |rng|8|6
+expect |rng|16|0
+expect |-resisted|p2a: Meowstic|1
+expect |split|p2
+expect |-damage|p2a: Meowstic|68/166
+expect |-damage|p2a: Meowstic|40/100
+expect |
+expect |-weather|SunnyDay|[upkeep]
+expect |-end|p1a: Ninetales|move: Future Sight
+expect |rng|100|66
+expect |rng|24|20
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Ninetales|0 fnt
+expect |-damage|p1a: Ninetales|0 fnt
+expect |faint|p1a: Ninetales
+expect |
+expect |win|p2

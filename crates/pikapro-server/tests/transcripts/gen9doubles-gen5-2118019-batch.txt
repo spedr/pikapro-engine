@@ -1,0 +1,445 @@
+# gen9doubles-gen5-2118019-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@write
+
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,8572e1837c031b8d"}
+>player p1 {"name":"Alice","team":"Nibbles|Emboar|BigRoot|ArenaTrap|Acid,Pounce|Sassy|9,40,241,126,63,22||||50|,,,,,Stellar]Klawf|||AngerShell|LavaPlume,AllySwitch,TopsyTurvy,HornAttack|Naive|180,11,45,1,252,19||||50|,,,,,Normal]Inkay|||Contrary|CollisionCourse|Lonely|79,96,138,100,34,26|M|||50|,,,,,Dark]Big Tony's Pal|Bonsly|HeavyDutyBoots|Sturdy|DireClaw,Imprison,FirstImpression|Adamant|46,6,7,110,94,205||||50|,,,,,Normal]Orthworm||ChoiceSpecs|EarthEater|SilkTrap|Quiet|18,10,201,47,221,2|M|||50|,,,,,Psychic]Nuzleaf|||Chlorophyll|Imprison,Guillotine,IceSpinner,FilletAway|Quirky|35,28,212,88,68,44|||S|50|,,,,,Flying"}
+@write
+>player p2 {"name":"Bob","team":"Chomp|Lycanroc|RockyHelmet|Steadfast|HappyHour|Bashful|139,109,,6,184,72|||S|50|,,,,,Normal]X|Inteleon|ChoiceBand|Sniper|SkillSwap|Rash|120,44,241,29,34,41||||50|,,,,,Fairy]Pikachu||PremierBall|Static|BitterMalice,Imprison|Docile|143,114,132,25,5,83|M|||50|,,,,,Fairy]Big Tony's Pal|Krokorok|ChoiceScarf|Moxie|ArmorCannon,ScaryFace,Disable,Amnesia|Sassy|244,16,15,2,16,216|M|||50|,,,,,Steel]Oricorio-Pa'u||ChoiceScarf|Dancer|Fly,Synthesis,Gust|Serious|9,144,6,225,66,59|M|||50|,,,,,Ice]Arboliva|||SeedSower|Torment|Serious|170,123,46,1,73,49||||50|,,,,,Electric"}
+@write
+>p2 move 1, move 1 -1
+@write
+>p2 move 1, move 1 -1
+>p1 move Acid 3 mega
+@write
+# a comment
+>p1 move 2 +1 terastallize, move 3 1
+>p2 pass, pass
+@write
+>p1 switch 1, switch 1
+>p2 default, move 1 1
+@write
+>p1 switch 6, move 4 2
+@write
+>p2 switch Oricorio
+>p1 switch inkay ,  move 4 +1
+@write
+>p2 move skillswap 1 terastallize
+@write
+>p2 switch 3, move 1 -1
+@write
+>p2 switch 5, move 1 2 terastallize
+@write
+>p1 move 1 2 terastal, move 3 1
+>p1 switch 6, move 1
+@write
+>p1 move 2 2, switch 6
+@write
+>p2 switch krokorok
+@write
+>p2 switch 5, move 1 2
+>p1 move collisioncourse -1
+@write
+>p2 move 1 +2,move skillswap 2
+@write
+>p1 pass, pass
+@write
+>p1 switch 3, switch 4
+>p2 switch 5, switch 6
+@write
+>p1 switch Inkay ,  move Dire Claw +1
+>p2 move 1 2, switch 3
+@write
+>p1 move 1 1
+>p1 switch 1
+@write
+>p1 Move 1
+@write
+>p1 switch Nibbles ,  switch Nuzleaf
+@write
+>p2 switch krokorok
+@write
+>p2 move 1,move happyhour
+@write
+>p1 switch 4, switch 3
+@write
+
+>p1 move 3 +1 mega, switch Nuzleaf
+>p1 move 2, switch 4
+@write
+# a comment
+>p2 switch 5, move happyhour dynamax
+@write
+>p2 move 5
+@write
+>p2 default, move 1
+>forcetie
+@message
+update
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+@message
+update
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|split|p1
+|switch|p1a: Nibbles|Emboar, L50, M|186/186
+|switch|p1a: Nibbles|Emboar, L50, M|186/186
+|split|p1
+|switch|p1b: Klawf|Klawf, L50, F|168/168
+|switch|p1b: Klawf|Klawf, L50, F|168/168
+|split|p2
+|switch|p2a: Chomp|Lycanroc, L50, M, shiny|167/167
+|switch|p2a: Chomp|Lycanroc, L50, M, shiny|167/167
+|split|p2
+|switch|p2b: X|Inteleon, L50, M|160/160
+|switch|p2b: X|Inteleon, L50, M|160/160
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Acid","id":"acid","pp":48,"maxpp":48,"target":"allAdjacentFoes","disabled":false},{"move":"Pounce","id":"pounce","pp":32,"maxpp":32,"target":"normal","disabled":false}],"canTerastallize":"Stellar"},{"moves":[{"move":"Lava Plume","id":"lavaplume","pp":24,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Ally Switch","id":"allyswitch","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Topsy-Turvy","id":"topsyturvy","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Horn Attack","id":"hornattack","pp":40,"maxpp":40,"target":"normal","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Emboar, L50, M","condition":"186/186","active":true,"stats":{"atk":148,"def":115,"spa":136,"spd":102,"spe":79},"moves":["acid","pounce"],"baseAbility":"arenatrap","item":"bigroot","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Klawf","details":"Klawf, L50, F","condition":"168/168","active":true,"stats":{"atk":121,"def":141,"spa":55,"spd":96,"spe":106},"moves":["lavaplume","allyswitch","topsyturvy","hornattack"],"baseAbility":"angershell","item":"","pokeball":"pokeball","ability":"angershell","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Inkay","details":"Inkay, L50, M","condition":"138/138","active":false,"stats":{"atk":94,"def":81,"spa":70,"spd":70,"spe":68},"moves":["collisioncourse"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bonsly, L50, M","condition":"131/131","active":false,"stats":{"atk":111,"def":116,"spa":39,"spd":77,"spe":56},"moves":["direclaw","imprison","firstimpression"],"baseAbility":"sturdy","item":"heavydutyboots","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Orthworm","details":"Orthworm, L50, M","condition":"147/147","active":false,"stats":{"atk":106,"def":190,"spa":94,"spd":103,"spe":76},"moves":["silktrap"],"baseAbility":"eartheater","item":"choicespecs","pokeball":"pokeball","ability":"eartheater","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Nuzleaf","details":"Nuzleaf, L50, M, shiny","condition":"149/149","active":false,"stats":{"atk":94,"def":87,"spa":91,"spd":69,"spe":86},"moves":["imprison","guillotine","icespinner","filletaway"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Happy Hour","id":"happyhour","pp":48,"maxpp":48,"target":"allySide","disabled":false}],"trapped":true,"canTerastallize":"Normal"},{"moves":[{"move":"Skill Swap","id":"skillswap","pp":16,"maxpp":16,"target":"normal","disabled":false}],"maybeTrapped":true,"canTerastallize":"Fairy"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Lycanroc, L50, M, shiny","condition":"167/167","active":true,"stats":{"atk":149,"def":85,"spa":76,"spd":108,"spe":141},"moves":["happyhour"],"baseAbility":"steadfast","item":"rockyhelmet","pokeball":"pokeball","ability":"steadfast","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: X","details":"Inteleon, L50, M","condition":"160/160","active":true,"stats":{"atk":111,"def":115,"spa":163,"spd":80,"spe":145},"moves":["skillswap"],"baseAbility":"sniper","item":"choiceband","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"128/128","active":false,"stats":{"atk":89,"def":77,"spa":73,"spd":71,"spe":120},"moves":["bittermalice","imprison"],"baseAbility":"static","item":"premierball","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Krokorok, L50, M","condition":"166/166","active":false,"stats":{"atk":104,"def":67,"spa":65,"spd":73,"spe":108},"moves":["armorcannon","scaryface","disable","amnesia"],"baseAbility":"moxie","item":"choicescarf","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, M","condition":"151/151","active":false,"stats":{"atk":108,"def":91,"spa":146,"spd":98,"spe":120},"moves":["fly","synthesis","gust"],"baseAbility":"dancer","item":"choicescarf","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Arboliva","details":"Arboliva, L50, F","condition":"174/174","active":false,"stats":{"atk":104,"def":116,"spa":145,"spd":138,"spe":65},"moves":["torment"],"baseAbility":"seedsower","item":"","pokeball":"pokeball","ability":"seedsower","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: You can't choose a target for Acid
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't pass: Your Chomp must make a move (or switch)
+@message
+update
+|
+|t:|
+|-terastallize|p1a: Nibbles|Stellar
+|move|p2b: X|Skill Swap|p2a: Chomp
+|-activate|p2b: X|Skill Swap|||[of] p2a: Chomp
+|-hint|Skill Swap does not announce the abilities of the Pokémon when used between allies.
+|move|p2a: Chomp|Happy Hour|p2a: Chomp
+|move|p1b: Klawf|Topsy-Turvy||[still]
+|-fail|p1b: Klawf
+|move|p1a: Nibbles|Pounce|p2a: Chomp
+|split|p2
+|-damage|p2a: Chomp|119/167
+|-damage|p2a: Chomp|119/167
+|-unboost|p2a: Chomp|spe|1
+|split|p1
+|-damage|p1a: Nibbles|155/186|[from] item: Rocky Helmet|[of] p2a: Chomp
+|-damage|p1a: Nibbles|155/186|[from] item: Rocky Helmet|[of] p2a: Chomp
+|
+|upkeep
+|turn|2
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Acid","id":"acid","pp":48,"maxpp":48,"target":"allAdjacentFoes","disabled":false},{"move":"Pounce","id":"pounce","pp":31,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Lava Plume","id":"lavaplume","pp":24,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Ally Switch","id":"allyswitch","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Topsy-Turvy","id":"topsyturvy","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Horn Attack","id":"hornattack","pp":40,"maxpp":40,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Emboar, L50, M","condition":"155/186","active":true,"stats":{"atk":148,"def":115,"spa":136,"spd":102,"spe":79},"moves":["acid","pounce"],"baseAbility":"arenatrap","item":"bigroot","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Klawf","details":"Klawf, L50, F","condition":"168/168","active":true,"stats":{"atk":121,"def":141,"spa":55,"spd":96,"spe":106},"moves":["lavaplume","allyswitch","topsyturvy","hornattack"],"baseAbility":"angershell","item":"","pokeball":"pokeball","ability":"angershell","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Inkay","details":"Inkay, L50, M","condition":"138/138","active":false,"stats":{"atk":94,"def":81,"spa":70,"spd":70,"spe":68},"moves":["collisioncourse"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bonsly, L50, M","condition":"131/131","active":false,"stats":{"atk":111,"def":116,"spa":39,"spd":77,"spe":56},"moves":["direclaw","imprison","firstimpression"],"baseAbility":"sturdy","item":"heavydutyboots","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Orthworm","details":"Orthworm, L50, M","condition":"147/147","active":false,"stats":{"atk":106,"def":190,"spa":94,"spd":103,"spe":76},"moves":["silktrap"],"baseAbility":"eartheater","item":"choicespecs","pokeball":"pokeball","ability":"eartheater","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Nuzleaf","details":"Nuzleaf, L50, M, shiny","condition":"149/149","active":false,"stats":{"atk":94,"def":87,"spa":91,"spd":69,"spe":86},"moves":["imprison","guillotine","icespinner","filletaway"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Happy Hour","id":"happyhour","pp":47,"maxpp":48,"target":"allySide","disabled":false}],"trapped":true,"canTerastallize":"Normal"},{"moves":[{"move":"Skill Swap","id":"skillswap","pp":15,"maxpp":16,"target":"normal","disabled":false}],"maybeTrapped":true,"canTerastallize":"Fairy"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Lycanroc, L50, M, shiny","condition":"119/167","active":true,"stats":{"atk":149,"def":85,"spa":76,"spd":108,"spe":141},"moves":["happyhour"],"baseAbility":"steadfast","item":"rockyhelmet","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: X","details":"Inteleon, L50, M","condition":"160/160","active":true,"stats":{"atk":111,"def":115,"spa":163,"spd":80,"spe":145},"moves":["skillswap"],"baseAbility":"sniper","item":"choiceband","pokeball":"pokeball","ability":"steadfast","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"128/128","active":false,"stats":{"atk":89,"def":77,"spa":73,"spd":71,"spe":120},"moves":["bittermalice","imprison"],"baseAbility":"static","item":"premierball","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Krokorok, L50, M","condition":"166/166","active":false,"stats":{"atk":104,"def":67,"spa":65,"spd":73,"spe":108},"moves":["armorcannon","scaryface","disable","amnesia"],"baseAbility":"moxie","item":"choicescarf","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, M","condition":"151/151","active":false,"stats":{"atk":108,"def":91,"spa":146,"spd":98,"spe":120},"moves":["fly","synthesis","gust"],"baseAbility":"dancer","item":"choicescarf","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Arboliva","details":"Arboliva, L50, F","condition":"174/174","active":false,"stats":{"atk":104,"def":116,"spa":145,"spd":138,"spe":65},"moves":["torment"],"baseAbility":"seedsower","item":"","pokeball":"pokeball","ability":"seedsower","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You sent more choices than unfainted Pokémon.
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Nuzleaf|Nuzleaf, L50, M, shiny|149/149
+|switch|p1a: Nuzleaf|Nuzleaf, L50, M, shiny|149/149
+|move|p2b: X|Skill Swap|p1a: Nuzleaf
+|-activate|p2b: X|Skill Swap|Chlorophyll|Steadfast|[of] p1a: Nuzleaf
+|move|p1b: Klawf|Horn Attack|p2b: X
+|split|p2
+|-damage|p2b: X|132/160
+|-damage|p2b: X|132/160
+|move|p2a: Chomp|Happy Hour|p2a: Chomp
+|
+|upkeep
+|turn|3
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Guillotine","id":"guillotine","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Ice Spinner","id":"icespinner","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Fillet Away","id":"filletaway","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Lava Plume","id":"lavaplume","pp":24,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Ally Switch","id":"allyswitch","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Topsy-Turvy","id":"topsyturvy","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Horn Attack","id":"hornattack","pp":39,"maxpp":40,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Nuzleaf","details":"Nuzleaf, L50, M, shiny","condition":"149/149","active":true,"stats":{"atk":94,"def":87,"spa":91,"spd":69,"spe":86},"moves":["imprison","guillotine","icespinner","filletaway"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"steadfast","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Klawf","details":"Klawf, L50, F","condition":"168/168","active":true,"stats":{"atk":121,"def":141,"spa":55,"spd":96,"spe":106},"moves":["lavaplume","allyswitch","topsyturvy","hornattack"],"baseAbility":"angershell","item":"","pokeball":"pokeball","ability":"angershell","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Inkay","details":"Inkay, L50, M","condition":"138/138","active":false,"stats":{"atk":94,"def":81,"spa":70,"spd":70,"spe":68},"moves":["collisioncourse"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bonsly, L50, M","condition":"131/131","active":false,"stats":{"atk":111,"def":116,"spa":39,"spd":77,"spe":56},"moves":["direclaw","imprison","firstimpression"],"baseAbility":"sturdy","item":"heavydutyboots","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Orthworm","details":"Orthworm, L50, M","condition":"147/147","active":false,"stats":{"atk":106,"def":190,"spa":94,"spd":103,"spe":76},"moves":["silktrap"],"baseAbility":"eartheater","item":"choicespecs","pokeball":"pokeball","ability":"eartheater","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Nibbles","details":"Emboar, L50, M","condition":"155/186","active":false,"stats":{"atk":148,"def":115,"spa":136,"spd":102,"spe":79},"moves":["acid","pounce"],"baseAbility":"arenatrap","item":"bigroot","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Happy Hour","id":"happyhour","pp":46,"maxpp":48,"target":"allySide","disabled":false}],"canTerastallize":"Normal"},{"moves":[{"move":"Skill Swap","id":"skillswap","pp":14,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fairy"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Lycanroc, L50, M, shiny","condition":"119/167","active":true,"stats":{"atk":149,"def":85,"spa":76,"spd":108,"spe":141},"moves":["happyhour"],"baseAbility":"steadfast","item":"rockyhelmet","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: X","details":"Inteleon, L50, M","condition":"132/160","active":true,"stats":{"atk":111,"def":115,"spa":163,"spd":80,"spe":145},"moves":["skillswap"],"baseAbility":"sniper","item":"choiceband","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"128/128","active":false,"stats":{"atk":89,"def":77,"spa":73,"spd":71,"spe":120},"moves":["bittermalice","imprison"],"baseAbility":"static","item":"premierball","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Krokorok, L50, M","condition":"166/166","active":false,"stats":{"atk":104,"def":67,"spa":65,"spd":73,"spe":108},"moves":["armorcannon","scaryface","disable","amnesia"],"baseAbility":"moxie","item":"choicescarf","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, M","condition":"151/151","active":false,"stats":{"atk":108,"def":91,"spa":146,"spd":98,"spe":120},"moves":["fly","synthesis","gust"],"baseAbility":"dancer","item":"choicescarf","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Arboliva","details":"Arboliva, L50, F","condition":"174/174","active":false,"stats":{"atk":104,"def":116,"spa":145,"spd":138,"spe":65},"moves":["torment"],"baseAbility":"seedsower","item":"","pokeball":"pokeball","ability":"seedsower","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: switch Oricorio - missing other pokemon
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Your Chomp doesn't have a move matching skillswap
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Pikachu|Pikachu, L50, M|128/128
+|switch|p2a: Pikachu|Pikachu, L50, M|128/128
+|split|p1
+|switch|p1a: Inkay|Inkay, L50, M|138/138
+|switch|p1a: Inkay|Inkay, L50, M|138/138
+|move|p2b: X|Skill Swap|p2a: Pikachu
+|-activate|p2b: X|Skill Swap|||[of] p2a: Pikachu
+|-hint|Skill Swap does not announce the abilities of the Pokémon when used between allies.
+|move|p1b: Klawf|Horn Attack|p2a: Pikachu
+|split|p2
+|-damage|p2a: Pikachu|84/128
+|-damage|p2a: Pikachu|84/128
+|
+|upkeep
+|turn|4
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Collision Course","id":"collisioncourse","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Lava Plume","id":"lavaplume","pp":24,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Ally Switch","id":"allyswitch","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Topsy-Turvy","id":"topsyturvy","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Horn Attack","id":"hornattack","pp":38,"maxpp":40,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Inkay","details":"Inkay, L50, M","condition":"138/138","active":true,"stats":{"atk":94,"def":81,"spa":70,"spd":70,"spe":68},"moves":["collisioncourse"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Klawf","details":"Klawf, L50, F","condition":"168/168","active":true,"stats":{"atk":121,"def":141,"spa":55,"spd":96,"spe":106},"moves":["lavaplume","allyswitch","topsyturvy","hornattack"],"baseAbility":"angershell","item":"","pokeball":"pokeball","ability":"angershell","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Nuzleaf","details":"Nuzleaf, L50, M, shiny","condition":"149/149","active":false,"stats":{"atk":94,"def":87,"spa":91,"spd":69,"spe":86},"moves":["imprison","guillotine","icespinner","filletaway"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bonsly, L50, M","condition":"131/131","active":false,"stats":{"atk":111,"def":116,"spa":39,"spd":77,"spe":56},"moves":["direclaw","imprison","firstimpression"],"baseAbility":"sturdy","item":"heavydutyboots","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Orthworm","details":"Orthworm, L50, M","condition":"147/147","active":false,"stats":{"atk":106,"def":190,"spa":94,"spd":103,"spe":76},"moves":["silktrap"],"baseAbility":"eartheater","item":"choicespecs","pokeball":"pokeball","ability":"eartheater","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Nibbles","details":"Emboar, L50, M","condition":"155/186","active":false,"stats":{"atk":148,"def":115,"spa":136,"spd":102,"spe":79},"moves":["acid","pounce"],"baseAbility":"arenatrap","item":"bigroot","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Bitter Malice","id":"bittermalice","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Fairy"},{"moves":[{"move":"Skill Swap","id":"skillswap","pp":13,"maxpp":16,"target":"normal","disabled":false}],"canTerastallize":"Fairy"}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"84/128","active":true,"stats":{"atk":89,"def":77,"spa":73,"spd":71,"spe":120},"moves":["bittermalice","imprison"],"baseAbility":"static","item":"premierball","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: X","details":"Inteleon, L50, M","condition":"132/160","active":true,"stats":{"atk":111,"def":115,"spa":163,"spd":80,"spe":145},"moves":["skillswap"],"baseAbility":"sniper","item":"choiceband","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Chomp","details":"Lycanroc, L50, M, shiny","condition":"119/167","active":false,"stats":{"atk":149,"def":85,"spa":76,"spd":108,"spe":141},"moves":["happyhour"],"baseAbility":"steadfast","item":"rockyhelmet","pokeball":"pokeball","ability":"steadfast","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Krokorok, L50, M","condition":"166/166","active":false,"stats":{"atk":104,"def":67,"spa":65,"spd":73,"spe":108},"moves":["armorcannon","scaryface","disable","amnesia"],"baseAbility":"moxie","item":"choicescarf","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, M","condition":"151/151","active":false,"stats":{"atk":108,"def":91,"spa":146,"spd":98,"spe":120},"moves":["fly","synthesis","gust"],"baseAbility":"dancer","item":"choicescarf","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Arboliva","details":"Arboliva, L50, F","condition":"174/174","active":false,"stats":{"atk":104,"def":116,"spa":145,"spd":138,"spe":65},"moves":["torment"],"baseAbility":"seedsower","item":"","pokeball":"pokeball","ability":"seedsower","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Inkay can't Terastallize.
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Oricorio|Oricorio-Pa'u, L50, M|151/151
+|switch|p2a: Oricorio|Oricorio-Pa'u, L50, M|151/151
+|split|p1
+|switch|p1a: Nibbles|Emboar, L50, M, tera:Stellar|155/186
+|switch|p1a: Nibbles|Emboar, L50, M, tera:Stellar|155/186
+|-terastallize|p2b: X|Fairy
+|move|p2b: X|Skill Swap|p1b: Klawf
+|-activate|p2b: X|Skill Swap|Anger Shell|Static|[of] p1b: Klawf
+|move|p1b: Klawf|Lava Plume|p2a: Oricorio|[spread] p1a,p2a,p2b
+|-resisted|p1a: Nibbles
+|split|p1
+|-damage|p1a: Nibbles|149/186
+|-damage|p1a: Nibbles|149/186
+|split|p2
+|-damage|p2a: Oricorio|137/151
+|-damage|p2a: Oricorio|137/151
+|split|p2
+|-damage|p2b: X|115/160
+|-damage|p2b: X|115/160
+|
+|upkeep
+|turn|5
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Acid","id":"acid","pp":48,"maxpp":48,"target":"allAdjacentFoes","disabled":false},{"move":"Pounce","id":"pounce","pp":31,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Lava Plume","id":"lavaplume","pp":23,"maxpp":24,"target":"allAdjacent","disabled":false},{"move":"Ally Switch","id":"allyswitch","pp":24,"maxpp":24,"target":"self","disabled":false},{"move":"Topsy-Turvy","id":"topsyturvy","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Horn Attack","id":"hornattack","pp":38,"maxpp":40,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Emboar, L50, M","condition":"149/186","active":true,"stats":{"atk":148,"def":115,"spa":136,"spd":102,"spe":79},"moves":["acid","pounce"],"baseAbility":"arenatrap","item":"bigroot","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Klawf","details":"Klawf, L50, F","condition":"168/168","active":true,"stats":{"atk":121,"def":141,"spa":55,"spd":96,"spe":106},"moves":["lavaplume","allyswitch","topsyturvy","hornattack"],"baseAbility":"angershell","item":"","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Nuzleaf","details":"Nuzleaf, L50, M, shiny","condition":"149/149","active":false,"stats":{"atk":94,"def":87,"spa":91,"spd":69,"spe":86},"moves":["imprison","guillotine","icespinner","filletaway"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bonsly, L50, M","condition":"131/131","active":false,"stats":{"atk":111,"def":116,"spa":39,"spd":77,"spe":56},"moves":["direclaw","imprison","firstimpression"],"baseAbility":"sturdy","item":"heavydutyboots","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Orthworm","details":"Orthworm, L50, M","condition":"147/147","active":false,"stats":{"atk":106,"def":190,"spa":94,"spd":103,"spe":76},"moves":["silktrap"],"baseAbility":"eartheater","item":"choicespecs","pokeball":"pokeball","ability":"eartheater","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Inkay","details":"Inkay, L50, M","condition":"138/138","active":false,"stats":{"atk":94,"def":81,"spa":70,"spd":70,"spe":68},"moves":["collisioncourse"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Fly","id":"fly","pp":24,"maxpp":24,"target":"any","disabled":false},{"move":"Synthesis","id":"synthesis","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Gust","id":"gust","pp":56,"maxpp":56,"target":"any","disabled":false}]},{"moves":[{"move":"Skill Swap","id":"skillswap","pp":12,"maxpp":16,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, M","condition":"137/151","active":true,"stats":{"atk":108,"def":91,"spa":146,"spd":98,"spe":120},"moves":["fly","synthesis","gust"],"baseAbility":"dancer","item":"choicescarf","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: X","details":"Inteleon, L50, M","condition":"115/160","active":true,"stats":{"atk":111,"def":115,"spa":163,"spd":80,"spe":145},"moves":["skillswap"],"baseAbility":"sniper","item":"choiceband","pokeball":"pokeball","ability":"angershell","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p2: Chomp","details":"Lycanroc, L50, M, shiny","condition":"119/167","active":false,"stats":{"atk":149,"def":85,"spa":76,"spd":108,"spe":141},"moves":["happyhour"],"baseAbility":"steadfast","item":"rockyhelmet","pokeball":"pokeball","ability":"steadfast","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Krokorok, L50, M","condition":"166/166","active":false,"stats":{"atk":104,"def":67,"spa":65,"spd":73,"spe":108},"moves":["armorcannon","scaryface","disable","amnesia"],"baseAbility":"moxie","item":"choicescarf","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"84/128","active":false,"stats":{"atk":89,"def":77,"spa":73,"spd":71,"spe":120},"moves":["bittermalice","imprison"],"baseAbility":"static","item":"premierball","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: Arboliva","details":"Arboliva, L50, F","condition":"174/174","active":false,"stats":{"atk":104,"def":116,"spa":145,"spd":138,"spe":65},"moves":["torment"],"baseAbility":"seedsower","item":"","pokeball":"pokeball","ability":"seedsower","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Incomplete choice: switch krokorok - missing other pokemon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Nibbles doesn't have a move matching collisioncourse
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2a: Pikachu|Pikachu, L50, M|84/128
+|switch|p2a: Pikachu|Pikachu, L50, M|84/128
+|split|p1
+|switch|p1b: Inkay|Inkay, L50, M|138/138
+|switch|p1b: Inkay|Inkay, L50, M|138/138
+|move|p2b: X|Skill Swap|p1b: Inkay
+|-activate|p2b: X|Skill Swap|Contrary|Anger Shell|[of] p1b: Inkay
+|move|p1a: Nibbles|Pounce|p2b: X
+|-resisted|p2b: X
+|split|p2
+|-damage|p2b: X|101/160
+|-damage|p2b: X|101/160
+|-boost|p2b: X|spe|1
+|
+|upkeep
+|turn|6
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Acid","id":"acid","pp":48,"maxpp":48,"target":"allAdjacentFoes","disabled":false},{"move":"Pounce","id":"pounce","pp":30,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Collision Course","id":"collisioncourse","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Emboar, L50, M","condition":"149/186","active":true,"stats":{"atk":148,"def":115,"spa":136,"spd":102,"spe":79},"moves":["acid","pounce"],"baseAbility":"arenatrap","item":"bigroot","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Inkay","details":"Inkay, L50, M","condition":"138/138","active":true,"stats":{"atk":94,"def":81,"spa":70,"spd":70,"spe":68},"moves":["collisioncourse"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"angershell","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Nuzleaf","details":"Nuzleaf, L50, M, shiny","condition":"149/149","active":false,"stats":{"atk":94,"def":87,"spa":91,"spd":69,"spe":86},"moves":["imprison","guillotine","icespinner","filletaway"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bonsly, L50, M","condition":"131/131","active":false,"stats":{"atk":111,"def":116,"spa":39,"spd":77,"spe":56},"moves":["direclaw","imprison","firstimpression"],"baseAbility":"sturdy","item":"heavydutyboots","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Orthworm","details":"Orthworm, L50, M","condition":"147/147","active":false,"stats":{"atk":106,"def":190,"spa":94,"spd":103,"spe":76},"moves":["silktrap"],"baseAbility":"eartheater","item":"choicespecs","pokeball":"pokeball","ability":"eartheater","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Klawf","details":"Klawf, L50, F","condition":"168/168","active":false,"stats":{"atk":121,"def":141,"spa":55,"spd":96,"spe":106},"moves":["lavaplume","allyswitch","topsyturvy","hornattack"],"baseAbility":"angershell","item":"","pokeball":"pokeball","ability":"angershell","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Bitter Malice","id":"bittermalice","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Skill Swap","id":"skillswap","pp":11,"maxpp":16,"target":"normal","disabled":false}],"maybeTrapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"84/128","active":true,"stats":{"atk":89,"def":77,"spa":73,"spd":71,"spe":120},"moves":["bittermalice","imprison"],"baseAbility":"static","item":"premierball","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: X","details":"Inteleon, L50, M","condition":"101/160","active":true,"stats":{"atk":111,"def":115,"spa":163,"spd":80,"spe":145},"moves":["skillswap"],"baseAbility":"sniper","item":"choiceband","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p2: Chomp","details":"Lycanroc, L50, M, shiny","condition":"119/167","active":false,"stats":{"atk":149,"def":85,"spa":76,"spd":108,"spe":141},"moves":["happyhour"],"baseAbility":"steadfast","item":"rockyhelmet","pokeball":"pokeball","ability":"steadfast","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Krokorok, L50, M","condition":"166/166","active":false,"stats":{"atk":104,"def":67,"spa":65,"spd":73,"spe":108},"moves":["armorcannon","scaryface","disable","amnesia"],"baseAbility":"moxie","item":"choicescarf","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, M","condition":"137/151","active":false,"stats":{"atk":108,"def":91,"spa":146,"spd":98,"spe":120},"moves":["fly","synthesis","gust"],"baseAbility":"dancer","item":"choicescarf","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Arboliva","details":"Arboliva, L50, F","condition":"174/174","active":false,"stats":{"atk":104,"def":116,"spa":145,"spd":138,"spe":65},"moves":["torment"],"baseAbility":"seedsower","item":"","pokeball":"pokeball","ability":"seedsower","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't pass: Your Nibbles must make a move (or switch)
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Nuzleaf|Nuzleaf, L50, M, shiny|149/149
+|switch|p1a: Nuzleaf|Nuzleaf, L50, M, shiny|149/149
+|split|p1
+|switch|p1b: Big Tony's Pal|Bonsly, L50, M|131/131
+|switch|p1b: Big Tony's Pal|Bonsly, L50, M|131/131
+|move|p2b: X|Skill Swap|p1b: Big Tony's Pal
+|-activate|p2b: X|Skill Swap|Sturdy|Contrary|[of] p1b: Big Tony's Pal
+|move|p2a: Pikachu|Bitter Malice|p1b: Big Tony's Pal
+|split|p1
+|-damage|p1b: Big Tony's Pal|99/131
+|-damage|p1b: Big Tony's Pal|99/131
+|-boost|p1b: Big Tony's Pal|atk|1
+|
+|upkeep
+|turn|7
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Guillotine","id":"guillotine","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Ice Spinner","id":"icespinner","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Fillet Away","id":"filletaway","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Dire Claw","id":"direclaw","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"First Impression","id":"firstimpression","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Nuzleaf","details":"Nuzleaf, L50, M, shiny","condition":"149/149","active":true,"stats":{"atk":94,"def":87,"spa":91,"spd":69,"spe":86},"moves":["imprison","guillotine","icespinner","filletaway"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bonsly, L50, M","condition":"99/131","active":true,"stats":{"atk":111,"def":116,"spa":39,"spd":77,"spe":56},"moves":["direclaw","imprison","firstimpression"],"baseAbility":"sturdy","item":"heavydutyboots","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Nibbles","details":"Emboar, L50, M","condition":"149/186","active":false,"stats":{"atk":148,"def":115,"spa":136,"spd":102,"spe":79},"moves":["acid","pounce"],"baseAbility":"arenatrap","item":"bigroot","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Inkay","details":"Inkay, L50, M","condition":"138/138","active":false,"stats":{"atk":94,"def":81,"spa":70,"spd":70,"spe":68},"moves":["collisioncourse"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Orthworm","details":"Orthworm, L50, M","condition":"147/147","active":false,"stats":{"atk":106,"def":190,"spa":94,"spd":103,"spe":76},"moves":["silktrap"],"baseAbility":"eartheater","item":"choicespecs","pokeball":"pokeball","ability":"eartheater","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Klawf","details":"Klawf, L50, F","condition":"168/168","active":false,"stats":{"atk":121,"def":141,"spa":55,"spd":96,"spe":106},"moves":["lavaplume","allyswitch","topsyturvy","hornattack"],"baseAbility":"angershell","item":"","pokeball":"pokeball","ability":"angershell","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Bitter Malice","id":"bittermalice","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false}]},{"moves":[{"move":"Skill Swap","id":"skillswap","pp":10,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"84/128","active":true,"stats":{"atk":89,"def":77,"spa":73,"spd":71,"spe":120},"moves":["bittermalice","imprison"],"baseAbility":"static","item":"premierball","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: X","details":"Inteleon, L50, M","condition":"101/160","active":true,"stats":{"atk":111,"def":115,"spa":163,"spd":80,"spe":145},"moves":["skillswap"],"baseAbility":"sniper","item":"choiceband","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p2: Chomp","details":"Lycanroc, L50, M, shiny","condition":"119/167","active":false,"stats":{"atk":149,"def":85,"spa":76,"spd":108,"spe":141},"moves":["happyhour"],"baseAbility":"steadfast","item":"rockyhelmet","pokeball":"pokeball","ability":"steadfast","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Krokorok, L50, M","condition":"166/166","active":false,"stats":{"atk":104,"def":67,"spa":65,"spd":73,"spe":108},"moves":["armorcannon","scaryface","disable","amnesia"],"baseAbility":"moxie","item":"choicescarf","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, M","condition":"137/151","active":false,"stats":{"atk":108,"def":91,"spa":146,"spd":98,"spe":120},"moves":["fly","synthesis","gust"],"baseAbility":"dancer","item":"choicescarf","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Arboliva","details":"Arboliva, L50, F","condition":"174/174","active":false,"stats":{"atk":104,"def":116,"spa":145,"spd":138,"spe":65},"moves":["torment"],"baseAbility":"seedsower","item":"","pokeball":"pokeball","ability":"seedsower","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+update
+|
+|t:|
+|split|p2
+|switch|p2b: Arboliva|Arboliva, L50, F|174/174
+|switch|p2b: Arboliva|Arboliva, L50, F|174/174
+|split|p2
+|switch|p2a: Oricorio|Oricorio-Pa'u, L50, M|137/151
+|switch|p2a: Oricorio|Oricorio-Pa'u, L50, M|137/151
+|split|p1
+|switch|p1a: Inkay|Inkay, L50, M|138/138
+|switch|p1a: Inkay|Inkay, L50, M|138/138
+|move|p1b: Big Tony's Pal|Dire Claw|p2a: Oricorio
+|split|p2
+|-damage|p2a: Oricorio|71/151
+|-damage|p2a: Oricorio|71/151
+|-status|p2a: Oricorio|par
+|
+|upkeep
+|turn|8
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Collision Course","id":"collisioncourse","pp":8,"maxpp":8,"target":"normal","disabled":false}]},{"moves":[{"move":"Dire Claw","id":"direclaw","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"First Impression","id":"firstimpression","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Inkay","details":"Inkay, L50, M","condition":"138/138","active":true,"stats":{"atk":94,"def":81,"spa":70,"spd":70,"spe":68},"moves":["collisioncourse"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bonsly, L50, M","condition":"99/131","active":true,"stats":{"atk":111,"def":116,"spa":39,"spd":77,"spe":56},"moves":["direclaw","imprison","firstimpression"],"baseAbility":"sturdy","item":"heavydutyboots","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Nibbles","details":"Emboar, L50, M","condition":"149/186","active":false,"stats":{"atk":148,"def":115,"spa":136,"spd":102,"spe":79},"moves":["acid","pounce"],"baseAbility":"arenatrap","item":"bigroot","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Nuzleaf","details":"Nuzleaf, L50, M, shiny","condition":"149/149","active":false,"stats":{"atk":94,"def":87,"spa":91,"spd":69,"spe":86},"moves":["imprison","guillotine","icespinner","filletaway"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Orthworm","details":"Orthworm, L50, M","condition":"147/147","active":false,"stats":{"atk":106,"def":190,"spa":94,"spd":103,"spe":76},"moves":["silktrap"],"baseAbility":"eartheater","item":"choicespecs","pokeball":"pokeball","ability":"eartheater","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Klawf","details":"Klawf, L50, F","condition":"168/168","active":false,"stats":{"atk":121,"def":141,"spa":55,"spd":96,"spe":106},"moves":["lavaplume","allyswitch","topsyturvy","hornattack"],"baseAbility":"angershell","item":"","pokeball":"pokeball","ability":"angershell","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Fly","id":"fly","pp":24,"maxpp":24,"target":"any","disabled":false},{"move":"Synthesis","id":"synthesis","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Gust","id":"gust","pp":56,"maxpp":56,"target":"any","disabled":false}]},{"moves":[{"move":"Torment","id":"torment","pp":24,"maxpp":24,"target":"normal","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, M","condition":"71/151 par","active":true,"stats":{"atk":108,"def":91,"spa":146,"spd":98,"spe":120},"moves":["fly","synthesis","gust"],"baseAbility":"dancer","item":"choicescarf","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Arboliva","details":"Arboliva, L50, F","condition":"174/174","active":true,"stats":{"atk":104,"def":116,"spa":145,"spd":138,"spe":65},"moves":["torment"],"baseAbility":"seedsower","item":"","pokeball":"pokeball","ability":"seedsower","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Chomp","details":"Lycanroc, L50, M, shiny","condition":"119/167","active":false,"stats":{"atk":149,"def":85,"spa":76,"spd":108,"spe":141},"moves":["happyhour"],"baseAbility":"steadfast","item":"rockyhelmet","pokeball":"pokeball","ability":"steadfast","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Krokorok, L50, M","condition":"166/166","active":false,"stats":{"atk":104,"def":67,"spa":65,"spd":73,"spe":108},"moves":["armorcannon","scaryface","disable","amnesia"],"baseAbility":"moxie","item":"choicescarf","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"84/128","active":false,"stats":{"atk":89,"def":77,"spa":73,"spd":71,"spe":120},"moves":["bittermalice","imprison"],"baseAbility":"static","item":"premierball","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: X","details":"Inteleon, L50, M","condition":"101/160","active":false,"stats":{"atk":111,"def":115,"spa":163,"spd":80,"spe":145},"moves":["skillswap"],"baseAbility":"sniper","item":"choiceband","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Incomplete choice: move 1 1 - missing other pokemon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't switch: You can't switch to an active Pokémon
+@message
+sideupdate
+p1
+|error|[Invalid choice] Unrecognized choice: Move 1
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1a: Nibbles|Emboar, L50, M, tera:Stellar|149/186
+|switch|p1a: Nibbles|Emboar, L50, M, tera:Stellar|149/186
+|split|p2
+|switch|p2b: Chomp|Lycanroc, L50, M, shiny|119/167
+|switch|p2b: Chomp|Lycanroc, L50, M, shiny|119/167
+|split|p1
+|switch|p1b: Nuzleaf|Nuzleaf, L50, M, shiny|149/149
+|switch|p1b: Nuzleaf|Nuzleaf, L50, M, shiny|149/149
+|move|p2a: Oricorio|Fly||[still]
+|-prepare|p2a: Oricorio|Fly
+|
+|upkeep
+|turn|9
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Acid","id":"acid","pp":48,"maxpp":48,"target":"allAdjacentFoes","disabled":false},{"move":"Pounce","id":"pounce","pp":30,"maxpp":32,"target":"normal","disabled":false}]},{"moves":[{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"Guillotine","id":"guillotine","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Ice Spinner","id":"icespinner","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Fillet Away","id":"filletaway","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Nibbles","details":"Emboar, L50, M","condition":"149/186","active":true,"stats":{"atk":148,"def":115,"spa":136,"spd":102,"spe":79},"moves":["acid","pounce"],"baseAbility":"arenatrap","item":"bigroot","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Nuzleaf","details":"Nuzleaf, L50, M, shiny","condition":"149/149","active":true,"stats":{"atk":94,"def":87,"spa":91,"spd":69,"spe":86},"moves":["imprison","guillotine","icespinner","filletaway"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Inkay","details":"Inkay, L50, M","condition":"138/138","active":false,"stats":{"atk":94,"def":81,"spa":70,"spd":70,"spe":68},"moves":["collisioncourse"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Big Tony's Pal","details":"Bonsly, L50, M","condition":"99/131","active":false,"stats":{"atk":111,"def":116,"spa":39,"spd":77,"spe":56},"moves":["direclaw","imprison","firstimpression"],"baseAbility":"sturdy","item":"heavydutyboots","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Orthworm","details":"Orthworm, L50, M","condition":"147/147","active":false,"stats":{"atk":106,"def":190,"spa":94,"spd":103,"spe":76},"moves":["silktrap"],"baseAbility":"eartheater","item":"choicespecs","pokeball":"pokeball","ability":"eartheater","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Klawf","details":"Klawf, L50, F","condition":"168/168","active":false,"stats":{"atk":121,"def":141,"spa":55,"spd":96,"spe":106},"moves":["lavaplume","allyswitch","topsyturvy","hornattack"],"baseAbility":"angershell","item":"","pokeball":"pokeball","ability":"angershell","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Fly","id":"fly"}],"trapped":true},{"moves":[{"move":"Happy Hour","id":"happyhour","pp":46,"maxpp":48,"target":"allySide","disabled":false}],"maybeTrapped":true}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, M","condition":"71/151 par","active":true,"stats":{"atk":108,"def":91,"spa":146,"spd":98,"spe":120},"moves":["fly","synthesis","gust"],"baseAbility":"dancer","item":"choicescarf","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Chomp","details":"Lycanroc, L50, M, shiny","condition":"119/167","active":true,"stats":{"atk":149,"def":85,"spa":76,"spd":108,"spe":141},"moves":["happyhour"],"baseAbility":"steadfast","item":"rockyhelmet","pokeball":"pokeball","ability":"steadfast","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Arboliva","details":"Arboliva, L50, F","condition":"174/174","active":false,"stats":{"atk":104,"def":116,"spa":145,"spd":138,"spe":65},"moves":["torment"],"baseAbility":"seedsower","item":"","pokeball":"pokeball","ability":"seedsower","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Krokorok, L50, M","condition":"166/166","active":false,"stats":{"atk":104,"def":67,"spa":65,"spd":73,"spe":108},"moves":["armorcannon","scaryface","disable","amnesia"],"baseAbility":"moxie","item":"choicescarf","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"84/128","active":false,"stats":{"atk":89,"def":77,"spa":73,"spd":71,"spe":120},"moves":["bittermalice","imprison"],"baseAbility":"static","item":"premierball","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: X","details":"Inteleon, L50, M","condition":"101/160","active":false,"stats":{"atk":111,"def":115,"spa":163,"spd":80,"spe":145},"moves":["skillswap"],"baseAbility":"sniper","item":"choiceband","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"}]}}
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't switch: The active Pokémon is trapped
+@message
+update
+|
+|t:|
+|split|p1
+|switch|p1b: Inkay|Inkay, L50, M|138/138
+|switch|p1b: Inkay|Inkay, L50, M|138/138
+|split|p1
+|switch|p1a: Big Tony's Pal|Bonsly, L50, M|99/131
+|switch|p1a: Big Tony's Pal|Bonsly, L50, M|99/131
+|move|p2b: Chomp|Happy Hour|p2b: Chomp
+|cant|p2a: Oricorio|par
+|
+|upkeep
+|turn|10
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Dire Claw","id":"direclaw","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false},{"move":"First Impression","id":"firstimpression","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Collision Course","id":"collisioncourse","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"Alice","id":"p1","pokemon":[{"ident":"p1: Big Tony's Pal","details":"Bonsly, L50, M","condition":"99/131","active":true,"stats":{"atk":111,"def":116,"spa":39,"spd":77,"spe":56},"moves":["direclaw","imprison","firstimpression"],"baseAbility":"sturdy","item":"heavydutyboots","pokeball":"pokeball","ability":"sturdy","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p1: Inkay","details":"Inkay, L50, M","condition":"138/138","active":true,"stats":{"atk":94,"def":81,"spa":70,"spd":70,"spe":68},"moves":["collisioncourse"],"baseAbility":"contrary","item":"","pokeball":"pokeball","ability":"contrary","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""},{"ident":"p1: Nuzleaf","details":"Nuzleaf, L50, M, shiny","condition":"149/149","active":false,"stats":{"atk":94,"def":87,"spa":91,"spd":69,"spe":86},"moves":["imprison","guillotine","icespinner","filletaway"],"baseAbility":"chlorophyll","item":"","pokeball":"pokeball","ability":"chlorophyll","commanding":false,"reviving":false,"teraType":"Flying","terastallized":""},{"ident":"p1: Nibbles","details":"Emboar, L50, M","condition":"149/186","active":false,"stats":{"atk":148,"def":115,"spa":136,"spd":102,"spe":79},"moves":["acid","pounce"],"baseAbility":"arenatrap","item":"bigroot","pokeball":"pokeball","ability":"arenatrap","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":"Stellar"},{"ident":"p1: Orthworm","details":"Orthworm, L50, M","condition":"147/147","active":false,"stats":{"atk":106,"def":190,"spa":94,"spd":103,"spe":76},"moves":["silktrap"],"baseAbility":"eartheater","item":"choicespecs","pokeball":"pokeball","ability":"eartheater","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Klawf","details":"Klawf, L50, F","condition":"168/168","active":false,"stats":{"atk":121,"def":141,"spa":55,"spd":96,"spe":106},"moves":["lavaplume","allyswitch","topsyturvy","hornattack"],"baseAbility":"angershell","item":"","pokeball":"pokeball","ability":"angershell","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Fly","id":"fly","pp":23,"maxpp":24,"target":"any","disabled":false},{"move":"Synthesis","id":"synthesis","pp":8,"maxpp":8,"target":"self","disabled":true},{"move":"Gust","id":"gust","pp":56,"maxpp":56,"target":"any","disabled":true}]},{"moves":[{"move":"Happy Hour","id":"happyhour","pp":45,"maxpp":48,"target":"allySide","disabled":false}]}],"side":{"name":"Bob","id":"p2","pokemon":[{"ident":"p2: Oricorio","details":"Oricorio-Pa'u, L50, M","condition":"71/151 par","active":true,"stats":{"atk":108,"def":91,"spa":146,"spd":98,"spe":120},"moves":["fly","synthesis","gust"],"baseAbility":"dancer","item":"choicescarf","pokeball":"pokeball","ability":"dancer","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Chomp","details":"Lycanroc, L50, M, shiny","condition":"119/167","active":true,"stats":{"atk":149,"def":85,"spa":76,"spd":108,"spe":141},"moves":["happyhour"],"baseAbility":"steadfast","item":"rockyhelmet","pokeball":"pokeball","ability":"steadfast","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""},{"ident":"p2: Arboliva","details":"Arboliva, L50, F","condition":"174/174","active":false,"stats":{"atk":104,"def":116,"spa":145,"spd":138,"spe":65},"moves":["torment"],"baseAbility":"seedsower","item":"","pokeball":"pokeball","ability":"seedsower","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Big Tony's Pal","details":"Krokorok, L50, M","condition":"166/166","active":false,"stats":{"atk":104,"def":67,"spa":65,"spd":73,"spe":108},"moves":["armorcannon","scaryface","disable","amnesia"],"baseAbility":"moxie","item":"choicescarf","pokeball":"pokeball","ability":"moxie","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p2: Pikachu","details":"Pikachu, L50, M","condition":"84/128","active":false,"stats":{"atk":89,"def":77,"spa":73,"spd":71,"spe":120},"moves":["bittermalice","imprison"],"baseAbility":"static","item":"premierball","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p2: X","details":"Inteleon, L50, M","condition":"101/160","active":false,"stats":{"atk":111,"def":115,"spa":163,"spd":80,"spe":145},"moves":["skillswap"],"baseAbility":"sniper","item":"choiceband","pokeball":"pokeball","ability":"sniper","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Big Tony's Pal can't mega evolve
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Dynamaxing doesn't outside of Gen 8.
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: Your Oricorio doesn't have a move 5
+@message
+sideupdate
+p2
+|error|[Invalid choice] Can't move: You sent more choices than unfainted Pokémon.
+@message
+update
+|
+|tie
+@message
+end
+{"winner":"","seed":"gen5,8572e1837c031b8d","turns":10,"p1":"Alice","p2":"Bob","p1team":[{"name":"Nibbles","species":"Emboar","item":"Big Root","ability":"Arena Trap","moves":["Acid","Pounce"],"nature":"Sassy","evs":{"hp":9,"atk":40,"def":241,"spa":126,"spd":63,"spe":22},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Stellar","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Klawf","species":"Klawf","item":"","ability":"Anger Shell","moves":["Lava Plume","Ally Switch","Topsy-Turvy","Horn Attack"],"nature":"Naive","evs":{"hp":180,"atk":11,"def":45,"spa":1,"spd":252,"spe":19},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Inkay","species":"Inkay","item":"","ability":"Contrary","moves":["Collision Course"],"nature":"Lonely","evs":{"hp":79,"atk":96,"def":138,"spa":100,"spd":34,"spe":26},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Dark","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Bonsly","item":"Heavy-Duty Boots","ability":"Sturdy","moves":["Dire Claw","Imprison","First Impression"],"nature":"Adamant","evs":{"hp":46,"atk":6,"def":7,"spa":110,"spd":94,"spe":205},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Orthworm","species":"Orthworm","item":"Choice Specs","ability":"Earth Eater","moves":["Silk Trap"],"nature":"Quiet","evs":{"hp":18,"atk":10,"def":201,"spa":47,"spd":221,"spe":2},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Psychic","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Nuzleaf","species":"Nuzleaf","item":"","ability":"Chlorophyll","moves":["Imprison","Guillotine","Ice Spinner","Fillet Away"],"nature":"Quirky","evs":{"hp":35,"atk":28,"def":212,"spa":88,"spd":68,"spe":44},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Flying","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"p2team":[{"name":"Chomp","species":"Lycanroc","item":"Rocky Helmet","ability":"Steadfast","moves":["Happy Hour"],"nature":"Bashful","evs":{"hp":139,"atk":109,"def":0,"spa":6,"spd":184,"spe":72},"shiny":true,"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Normal","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"X","species":"Inteleon","item":"Choice Band","ability":"Sniper","moves":["Skill Swap"],"nature":"Rash","evs":{"hp":120,"atk":44,"def":241,"spa":29,"spd":34,"spe":41},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Pikachu","species":"Pikachu","item":"Premier Ball","ability":"Static","moves":["Bitter Malice","Imprison"],"nature":"Docile","evs":{"hp":143,"atk":114,"def":132,"spa":25,"spd":5,"spe":83},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Fairy","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Big Tony's Pal","species":"Krokorok","item":"Choice Scarf","ability":"Moxie","moves":["Armor Cannon","Scary Face","Disable","Amnesia"],"nature":"Sassy","evs":{"hp":244,"atk":16,"def":15,"spa":2,"spd":16,"spe":216},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Steel","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Oricorio","species":"Oricorio-Pa'u","item":"Choice Scarf","ability":"Dancer","moves":["Fly","Synthesis","Gust"],"nature":"Serious","evs":{"hp":9,"atk":144,"def":6,"spa":225,"spd":66,"spe":59},"gender":"M","level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Ice","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}},{"name":"Arboliva","species":"Arboliva","item":"","ability":"Seed Sower","moves":["Torment"],"nature":"Serious","evs":{"hp":170,"atk":123,"def":46,"spa":1,"spd":73,"spe":49},"level":50,"happiness":255,"hpType":"","pokeball":"","gigantamax":false,"dynamaxLevel":10,"teraType":"Electric","ivs":{"hp":31,"atk":31,"def":31,"spa":31,"spd":31,"spe":31}}],"score":[6,6],"inputLog":[">start {\"formatid\":\"gen9doublescustomgame@@@!Team Preview\",\"seed\":\"gen5,8572e1837c031b8d\"}",">player p1 {\"name\":\"Alice\",\"team\":\"Nibbles|Emboar|BigRoot|ArenaTrap|Acid,Pounce|Sassy|9,40,241,126,63,22||||50|,,,,,Stellar]Klawf|||AngerShell|LavaPlume,AllySwitch,TopsyTurvy,HornAttack|Naive|180,11,45,1,252,19||||50|,,,,,Normal]Inkay|||Contrary|CollisionCourse|Lonely|79,96,138,100,34,26|M|||50|,,,,,Dark]Big Tony's Pal|Bonsly|HeavyDutyBoots|Sturdy|DireClaw,Imprison,FirstImpression|Adamant|46,6,7,110,94,205||||50|,,,,,Normal]Orthworm||ChoiceSpecs|EarthEater|SilkTrap|Quiet|18,10,201,47,221,2|M|||50|,,,,,Psychic]Nuzleaf|||Chlorophyll|Imprison,Guillotine,IceSpinner,FilletAway|Quirky|35,28,212,88,68,44|||S|50|,,,,,Flying\"}",">player p2 {\"name\":\"Bob\",\"team\":\"Chomp|Lycanroc|RockyHelmet|Steadfast|HappyHour|Bashful|139,109,,6,184,72|||S|50|,,,,,Normal]X|Inteleon|ChoiceBand|Sniper|SkillSwap|Rash|120,44,241,29,34,41||||50|,,,,,Fairy]Pikachu||PremierBall|Static|BitterMalice,Imprison|Docile|143,114,132,25,5,83|M|||50|,,,,,Fairy]Big Tony's Pal|Krokorok|ChoiceScarf|Moxie|ArmorCannon,ScaryFace,Disable,Amnesia|Sassy|244,16,15,2,16,216|M|||50|,,,,,Steel]Oricorio-Pa'u||ChoiceScarf|Dancer|Fly,Synthesis,Gust|Serious|9,144,6,225,66,59|M|||50|,,,,,Ice]Arboliva|||SeedSower|Torment|Serious|170,123,46,1,73,49||||50|,,,,,Electric\"}",">p1 move pounce +1 terastallize, move topsyturvy +1",">p2 move happyhour, move skillswap -1",">p1 switch 6, move hornattack +2",">p2 move happyhour, move skillswap",">p1 switch 3, move hornattack +1",">p2 switch 3, move skillswap -1",">p1 switch 6, move lavaplume",">p2 switch 5, move skillswap +2 terastallize",">p1 move pounce +2, switch 6",">p2 switch 5, move skillswap +2",">p1 switch 3, switch 4",">p2 move bittermalice +2, move skillswap +2",">p1 switch 4, move direclaw +1",">p2 switch 5, switch 6",">p1 switch 3, switch 4",">p2 move fly +2, switch 3",">p1 switch 4, switch 3",">p2 move fly +2, move happyhour",">forcetie"]}

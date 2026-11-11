@@ -1,0 +1,36 @@
+[package]
+name = "pikapro-py"
+description = "Python bindings for pikapro (PyO3): battles, action masks and a batched, multi-threaded battle pool"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[lib]
+name = "pikapro_py"
+# `cdylib` is the Python extension module (built by maturin with the
+# `python` feature); `rlib` lets `cargo test` run the pure-Rust layer.
+crate-type = ["cdylib", "rlib"]
+
+[features]
+# The PyO3 module. Off by default so `cargo test --workspace` and `cargo
+# clippy --workspace` build this crate without Python; maturin enables it
+# (see pyproject.toml).
+python = ["dep:pyo3", "dep:numpy"]
+
+[dependencies]
+pikapro.workspace = true
+pikapro-data.workspace = true
+pikapro-protocol.workspace = true
+pikapro-rl.workspace = true
+pikapro-server.workspace = true
+pikapro-teams.workspace = true
+pikapro-validate.workspace = true
+pikapro-view.workspace = true
+pyo3 = { version = "0.29", optional = true }
+numpy = { version = "0.29", optional = true }
+
+[lints]
+workspace = true

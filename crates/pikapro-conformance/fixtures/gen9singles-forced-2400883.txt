@@ -1,0 +1,210 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed f43d 910e 8d80 7f40
+genders drawn
+team p1
+Pawmot
+Ability: Volt Absorb
+Level: 50
+Tera Type: Fairy
+EVs: 103 HP / 106 Atk / 71 Def / 5 SpA / 116 SpD / 80 Spe
+Relaxed Nature
+- Revival Blessing
+- Close Combat
+- Protect
+
+Garchomp
+Ability: Rough Skin
+Level: 50
+Tera Type: Water
+EVs: 10 HP / 113 Atk / 2 Def / 203 SpA / 106 SpD / 69 Spe
+Bashful Nature
+- Earthquake
+- Dragon Claw
+- Protect
+
+Gholdengo
+Ability: Good as Gold
+Level: 50
+Tera Type: Dark
+EVs: 26 HP / 239 Atk / 37 Def / 37 SpA / 132 SpD / 30 Spe
+Naughty Nature
+- Make It Rain
+- Shadow Ball
+- Protect
+end
+team p2
+Pawmot
+Ability: Volt Absorb
+Level: 50
+Tera Type: Water
+EVs: 57 HP / 72 Atk / 139 Def / 162 SpA / 35 SpD / 37 Spe
+Hasty Nature
+- Revival Blessing
+- Close Combat
+- Protect
+
+Pawmot
+Ability: Iron Fist
+Level: 50
+Tera Type: Ice
+EVs: 125 HP / 161 Atk / 128 Def / 46 SpA / 29 SpD / 13 Spe
+Lonely Nature
+- Revival Blessing
+- Thunder Punch
+- Protect
+end
+choice p1 move 2 terastallize
+choice p2 move 2
+choice p2 switch 2
+choice p1 move 1
+choice p2 move 1
+choice p2 pass
+choice p2 pass
+choice p1 switch 2
+choice p2 move 2
+choice p1 switch 2
+choice p2 move 2
+choice p1 move 2
+choice p2 move 3
+choice p1 move 2
+choice p2 move 2 terastallize
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Pawmot|Pawmot, L50, M|158/158
+expect |switch|p1a: Pawmot|Pawmot, L50, M|158/158
+expect |split|p2
+expect |switch|p2a: Pawmot|Pawmot, L50, F|152/152
+expect |switch|p2a: Pawmot|Pawmot, L50, F|152/152
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p1a: Pawmot|Fairy
+expect |move|p2a: Pawmot|Close Combat|p1a: Pawmot
+expect |rng|100|10
+expect |rng|24|16
+expect |rng|16|2
+expect |-resisted|p1a: Pawmot
+expect |split|p1
+expect |-damage|p1a: Pawmot|106/158
+expect |-damage|p1a: Pawmot|106/158
+expect |rng|100|44
+expect |-unboost|p2a: Pawmot|def|1
+expect |-unboost|p2a: Pawmot|spd|1
+expect |move|p1a: Pawmot|Close Combat|p2a: Pawmot
+expect |rng|100|71
+expect |rng|24|21
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Pawmot|0 fnt
+expect |-damage|p2a: Pawmot|0 fnt
+expect |rng|100|85
+expect |-unboost|p1a: Pawmot|def|1
+expect |-unboost|p1a: Pawmot|spd|1
+expect |faint|p2a: Pawmot
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pawmot|Pawmot, L50, M|161/161
+expect |switch|p2a: Pawmot|Pawmot, L50, M|161/161
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Pawmot|Revival Blessing|p2a: Pawmot
+expect |
+expect |t:|
+expect |move|p1a: Pawmot|Revival Blessing||[still]
+expect |-fail|p1a: Pawmot
+expect |
+expect |t:|
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Garchomp|Garchomp, L50, F|184/184
+expect |switch|p1a: Garchomp|Garchomp, L50, F|184/184
+expect |move|p2a: Pawmot|Thunder Punch|p1a: Garchomp
+expect |-immune|p1a: Garchomp
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pawmot|Pawmot, L50, M, tera:Fairy|106/158
+expect |switch|p1a: Pawmot|Pawmot, L50, M, tera:Fairy|106/158
+expect |move|p2a: Pawmot|Thunder Punch|p1a: Pawmot
+expect |split|p1
+expect |-heal|p1a: Pawmot|145/158|[from] ability: Volt Absorb|[of] p2a: Pawmot
+expect |-heal|p1a: Pawmot|145/158|[from] ability: Volt Absorb|[of] p2a: Pawmot
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2a: Pawmot|Protect|p2a: Pawmot
+expect |-singleturn|p2a: Pawmot|Protect
+expect |move|p1a: Pawmot|Close Combat|p2a: Pawmot
+expect |-activate|p2a: Pawmot|move: Protect
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |-terastallize|p2a: Pawmot|Ice
+expect |move|p2a: Pawmot|Thunder Punch|p1a: Pawmot
+expect |split|p1
+expect |-heal|p1a: Pawmot|158/158|[from] ability: Volt Absorb|[of] p2a: Pawmot
+expect |-heal|p1a: Pawmot|158/158|[from] ability: Volt Absorb|[of] p2a: Pawmot
+expect |move|p1a: Pawmot|Close Combat|p2a: Pawmot
+expect |rng|100|66
+expect |rng|24|13
+expect |rng|16|14
+expect |-supereffective|p2a: Pawmot
+expect |split|p2
+expect |-damage|p2a: Pawmot|0 fnt
+expect |-damage|p2a: Pawmot|0 fnt
+expect |rng|100|63
+expect |-unboost|p1a: Pawmot|def|1
+expect |-unboost|p1a: Pawmot|spd|1
+expect |faint|p2a: Pawmot
+expect |
+expect |win|p1
+request p1 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":1,"maxpp":1,"target":"self","disabled":false},{"move":"Close Combat","id":"closecombat","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Fairy"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pawmot","details":"Pawmot, L50, M","condition":"158/158","active":true,"stats":{"atk":148,"def":108,"spa":91,"spd":95,"spe":121},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":""},{"ident":"p1: Garchomp","details":"Garchomp, L50, F","condition":"184/184","active":false,"stats":{"atk":164,"def":115,"spa":125,"spd":118,"spe":131},"moves":["earthquake","dragonclaw","protect"],"baseAbility":"roughskin","item":"","pokeball":"pokeball","ability":"roughskin","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Gholdengo","details":"Gholdengo, L50","condition":"165/165","active":false,"stats":{"atk":121,"def":120,"spa":158,"spd":115,"spe":108},"moves":["makeitrain","shadowball","protect"],"baseAbility":"goodasgold","item":"","pokeball":"pokeball","ability":"goodasgold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":1,"maxpp":1,"target":"self","disabled":false},{"move":"Close Combat","id":"closecombat","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Water"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pawmot","details":"Pawmot, L50, F","condition":"152/152","active":true,"stats":{"atk":144,"def":96,"spa":110,"spd":84,"spe":143},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Pawmot","details":"Pawmot, L50, M","condition":"161/161","active":false,"stats":{"atk":170,"def":95,"spa":96,"spd":84,"spe":127},"moves":["revivalblessing","thunderpunch","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pawmot","details":"Pawmot, L50, M","condition":"106/158","active":true,"stats":{"atk":148,"def":108,"spa":91,"spd":95,"spe":121},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Garchomp","details":"Garchomp, L50, F","condition":"184/184","active":false,"stats":{"atk":164,"def":115,"spa":125,"spd":118,"spe":131},"moves":["earthquake","dragonclaw","protect"],"baseAbility":"roughskin","item":"","pokeball":"pokeball","ability":"roughskin","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Gholdengo","details":"Gholdengo, L50","condition":"165/165","active":false,"stats":{"atk":121,"def":120,"spa":158,"spd":115,"spe":108},"moves":["makeitrain","shadowball","protect"],"baseAbility":"goodasgold","item":"","pokeball":"pokeball","ability":"goodasgold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p2 {"forceSwitch":[true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pawmot","details":"Pawmot, L50, F","condition":"0 fnt","active":true,"stats":{"atk":144,"def":96,"spa":110,"spd":84,"spe":143},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p2: Pawmot","details":"Pawmot, L50, M","condition":"161/161","active":false,"stats":{"atk":170,"def":95,"spa":96,"spd":84,"spe":127},"moves":["revivalblessing","thunderpunch","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":1,"maxpp":1,"target":"self","disabled":false},{"move":"Close Combat","id":"closecombat","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pawmot","details":"Pawmot, L50, M","condition":"106/158","active":true,"stats":{"atk":148,"def":108,"spa":91,"spd":95,"spe":121},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Garchomp","details":"Garchomp, L50, F","condition":"184/184","active":false,"stats":{"atk":164,"def":115,"spa":125,"spd":118,"spe":131},"moves":["earthquake","dragonclaw","protect"],"baseAbility":"roughskin","item":"","pokeball":"pokeball","ability":"roughskin","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Gholdengo","details":"Gholdengo, L50","condition":"165/165","active":false,"stats":{"atk":121,"def":120,"spa":158,"spd":115,"spe":108},"moves":["makeitrain","shadowball","protect"],"baseAbility":"goodasgold","item":"","pokeball":"pokeball","ability":"goodasgold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":1,"maxpp":1,"target":"self","disabled":false},{"move":"Thunder Punch","id":"thunderpunch","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pawmot","details":"Pawmot, L50, M","condition":"161/161","active":true,"stats":{"atk":170,"def":95,"spa":96,"spd":84,"spe":127},"moves":["revivalblessing","thunderpunch","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Pawmot","details":"Pawmot, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":96,"spa":110,"spd":84,"spe":143},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pawmot","details":"Pawmot, L50, M","condition":"106/158","active":true,"stats":{"atk":148,"def":108,"spa":91,"spd":95,"spe":121},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Garchomp","details":"Garchomp, L50, F","condition":"184/184","active":false,"stats":{"atk":164,"def":115,"spa":125,"spd":118,"spe":131},"moves":["earthquake","dragonclaw","protect"],"baseAbility":"roughskin","item":"","pokeball":"pokeball","ability":"roughskin","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Gholdengo","details":"Gholdengo, L50","condition":"165/165","active":false,"stats":{"atk":121,"def":120,"spa":158,"spd":115,"spe":108},"moves":["makeitrain","shadowball","protect"],"baseAbility":"goodasgold","item":"","pokeball":"pokeball","ability":"goodasgold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p2 {"forceSwitch":[true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pawmot","details":"Pawmot, L50, M","condition":"161/161","active":true,"stats":{"atk":170,"def":95,"spa":96,"spd":84,"spe":127},"moves":["revivalblessing","thunderpunch","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":true,"teraType":"Ice","terastallized":""},{"ident":"p2: Pawmot","details":"Pawmot, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":96,"spa":110,"spd":84,"spe":143},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]},"noCancel":true}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pawmot","details":"Pawmot, L50, M","condition":"106/158","active":true,"stats":{"atk":148,"def":108,"spa":91,"spd":95,"spe":121},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Garchomp","details":"Garchomp, L50, F","condition":"184/184","active":false,"stats":{"atk":164,"def":115,"spa":125,"spd":118,"spe":131},"moves":["earthquake","dragonclaw","protect"],"baseAbility":"roughskin","item":"","pokeball":"pokeball","ability":"roughskin","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Gholdengo","details":"Gholdengo, L50","condition":"165/165","active":false,"stats":{"atk":121,"def":120,"spa":158,"spd":115,"spe":108},"moves":["makeitrain","shadowball","protect"],"baseAbility":"goodasgold","item":"","pokeball":"pokeball","ability":"goodasgold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p2 {"forceSwitch":[true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pawmot","details":"Pawmot, L50, M","condition":"161/161","active":true,"stats":{"atk":170,"def":95,"spa":96,"spd":84,"spe":127},"moves":["revivalblessing","thunderpunch","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":true,"teraType":"Ice","terastallized":""},{"ident":"p2: Pawmot","details":"Pawmot, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":96,"spa":110,"spd":84,"spe":143},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":0,"maxpp":1,"target":"self","disabled":true},{"move":"Close Combat","id":"closecombat","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pawmot","details":"Pawmot, L50, M","condition":"106/158","active":true,"stats":{"atk":148,"def":108,"spa":91,"spd":95,"spe":121},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Garchomp","details":"Garchomp, L50, F","condition":"184/184","active":false,"stats":{"atk":164,"def":115,"spa":125,"spd":118,"spe":131},"moves":["earthquake","dragonclaw","protect"],"baseAbility":"roughskin","item":"","pokeball":"pokeball","ability":"roughskin","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Gholdengo","details":"Gholdengo, L50","condition":"165/165","active":false,"stats":{"atk":121,"def":120,"spa":158,"spd":115,"spe":108},"moves":["makeitrain","shadowball","protect"],"baseAbility":"goodasgold","item":"","pokeball":"pokeball","ability":"goodasgold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":0,"maxpp":1,"target":"self","disabled":true},{"move":"Thunder Punch","id":"thunderpunch","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pawmot","details":"Pawmot, L50, M","condition":"161/161","active":true,"stats":{"atk":170,"def":95,"spa":96,"spd":84,"spe":127},"moves":["revivalblessing","thunderpunch","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Pawmot","details":"Pawmot, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":96,"spa":110,"spd":84,"spe":143},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Earthquake","id":"earthquake","pp":16,"maxpp":16,"target":"allAdjacent","disabled":false},{"move":"Dragon Claw","id":"dragonclaw","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Garchomp","details":"Garchomp, L50, F","condition":"184/184","active":true,"stats":{"atk":164,"def":115,"spa":125,"spd":118,"spe":131},"moves":["earthquake","dragonclaw","protect"],"baseAbility":"roughskin","item":"","pokeball":"pokeball","ability":"roughskin","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Pawmot","details":"Pawmot, L50, M","condition":"106/158","active":false,"stats":{"atk":148,"def":108,"spa":91,"spd":95,"spe":121},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Gholdengo","details":"Gholdengo, L50","condition":"165/165","active":false,"stats":{"atk":121,"def":120,"spa":158,"spd":115,"spe":108},"moves":["makeitrain","shadowball","protect"],"baseAbility":"goodasgold","item":"","pokeball":"pokeball","ability":"goodasgold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":0,"maxpp":1,"target":"self","disabled":true},{"move":"Thunder Punch","id":"thunderpunch","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pawmot","details":"Pawmot, L50, M","condition":"161/161","active":true,"stats":{"atk":170,"def":95,"spa":96,"spd":84,"spe":127},"moves":["revivalblessing","thunderpunch","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Pawmot","details":"Pawmot, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":96,"spa":110,"spd":84,"spe":143},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":0,"maxpp":1,"target":"self","disabled":true},{"move":"Close Combat","id":"closecombat","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pawmot","details":"Pawmot, L50, M","condition":"145/158","active":true,"stats":{"atk":148,"def":108,"spa":91,"spd":95,"spe":121},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Garchomp","details":"Garchomp, L50, F","condition":"184/184","active":false,"stats":{"atk":164,"def":115,"spa":125,"spd":118,"spe":131},"moves":["earthquake","dragonclaw","protect"],"baseAbility":"roughskin","item":"","pokeball":"pokeball","ability":"roughskin","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Gholdengo","details":"Gholdengo, L50","condition":"165/165","active":false,"stats":{"atk":121,"def":120,"spa":158,"spd":115,"spe":108},"moves":["makeitrain","shadowball","protect"],"baseAbility":"goodasgold","item":"","pokeball":"pokeball","ability":"goodasgold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":0,"maxpp":1,"target":"self","disabled":true},{"move":"Thunder Punch","id":"thunderpunch","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pawmot","details":"Pawmot, L50, M","condition":"161/161","active":true,"stats":{"atk":170,"def":95,"spa":96,"spd":84,"spe":127},"moves":["revivalblessing","thunderpunch","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Pawmot","details":"Pawmot, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":96,"spa":110,"spd":84,"spe":143},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":0,"maxpp":1,"target":"self","disabled":true},{"move":"Close Combat","id":"closecombat","pp":6,"maxpp":8,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pawmot","details":"Pawmot, L50, M","condition":"145/158","active":true,"stats":{"atk":148,"def":108,"spa":91,"spd":95,"spe":121},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Fairy","terastallized":"Fairy"},{"ident":"p1: Garchomp","details":"Garchomp, L50, F","condition":"184/184","active":false,"stats":{"atk":164,"def":115,"spa":125,"spd":118,"spe":131},"moves":["earthquake","dragonclaw","protect"],"baseAbility":"roughskin","item":"","pokeball":"pokeball","ability":"roughskin","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Gholdengo","details":"Gholdengo, L50","condition":"165/165","active":false,"stats":{"atk":121,"def":120,"spa":158,"spd":115,"spe":108},"moves":["makeitrain","shadowball","protect"],"baseAbility":"goodasgold","item":"","pokeball":"pokeball","ability":"goodasgold","commanding":false,"reviving":false,"teraType":"Dark","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Revival Blessing","id":"revivalblessing","pp":0,"maxpp":1,"target":"self","disabled":true},{"move":"Thunder Punch","id":"thunderpunch","pp":22,"maxpp":24,"target":"normal","disabled":false},{"move":"Protect","id":"protect","pp":15,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Ice"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Pawmot","details":"Pawmot, L50, M","condition":"161/161","active":true,"stats":{"atk":170,"def":95,"spa":96,"spd":84,"spe":127},"moves":["revivalblessing","thunderpunch","protect"],"baseAbility":"ironfist","item":"","pokeball":"pokeball","ability":"ironfist","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Pawmot","details":"Pawmot, L50, F","condition":"0 fnt","active":false,"stats":{"atk":144,"def":96,"spa":110,"spd":84,"spe":143},"moves":["revivalblessing","closecombat","protect"],"baseAbility":"voltabsorb","item":"","pokeball":"pokeball","ability":"voltabsorb","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}

@@ -1,0 +1,375 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9ou
+seed 8ab7 02b4 3587 9f11
+genders drawn
+team p1
+ThisNameIsFarTooLongToKeep (Arceus-Electric) @ Moon Ball
+Ability: Multitype
+Tera Type: Dark
+EVs: 9 HP / 6 Atk / 23 Def / 204 SpA / 188 SpD / 74 Spe
+Quirky Nature
+- Imprison
+end
+team p2
+Ditto @ Icy Rock
+Ability: Imposter
+Tera Type: Ghost
+EVs: 220 HP / 69 Atk / 84 Def / 28 SpA / 54 SpD / 51 Spe
+Bashful Nature
+- Ice Hammer
+- Dragon Hammer
+- Destiny Bond
+- Quiver Dance
+
+Mr. Bubbles (Maushold-Four) @ Ring Target
+Ability: Cheek Pouch
+Shiny: Yes
+Tera Type: Fairy
+EVs: 42 HP / 215 Atk / 101 Def / 15 SpA / 63 SpD / 66 Spe
+Naughty Nature
+- Electro Drift
+- Sheer Cold
+
+Zoë (Greedent) (M)
+Ability: Cheek Pouch
+Shiny: Yes
+Tera Type: Bug
+EVs: 217 HP / 110 Atk / 25 Def / 6 SpA / 40 SpD / 16 Spe
+Brave Nature
+- Poison Powder
+
+Sparky (Vivillon-Monsoon) (F) @ Galarica Wreath
+Ability: Compound Eyes
+Shiny: Yes
+Tera Type: Psychic
+EVs: 22 Atk / 50 Def / 29 SpA / 187 SpD / 191 Spe
+Impish Nature
+- Mean Look
+- Shelter
+
+Gothitelle @ Premier Ball
+Ability: Shadow Tag
+Tera Type: Dragon
+EVs: 252 HP / 5 Atk / 35 Def / 106 SpA / 110 SpD
+Rash Nature
+- Vacuum Wave
+- Pollen Puff
+- Snowscape
+
+Cranidos (M) @ Razor Fang
+Ability: Sheer Force
+Shiny: Yes
+Tera Type: Fairy
+EVs: 252 HP / 135 Atk / 108 Def / 7 SpD / 7 Spe
+Brave Nature
+- Razor Shell
+- Tearful Look
+- Trick Room
+end
+choice p1 team 1
+choice p2 team 625341
+choice p1 move 1
+choice p2 switch 3
+choice p1 move 1
+choice p2 move 1
+choice p1 move Imprison
+choice p2 move 3
+choice p1 move imprison
+choice p2 switch 5
+choice p1 move 1
+choice p2 switch 6
+choice p1 move 1
+choice p2 switch cranidos
+choice p1 move 1 terastallize
+choice p2 switch Gothitelle
+choice p1 move 1
+choice p2 move 2
+choice p1 move 1
+choice p2 move 1 terastal
+choice p1 move 1
+choice p2 move vacuumwave
+choice p1 move 1
+choice p2 switch 3
+choice p1 move 1
+choice p2 switch Cranidos
+choice p1 move 1
+choice p2 switch 5
+choice p1 move imprison
+choice p2 switch 5
+choice p1 move Imprison
+choice p2 move 1
+choice p1 move 1
+choice p2 move 2
+choice p1 move 1
+choice p2 switch 5
+expect |t:|
+expect |gametype|singles
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] OU
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Endless Battle Clause: Forcing endless battles is banned
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|OHKO Clause: OHKO moves are banned
+expect |rule|Evasion Items Clause: Evasion items are banned
+expect |rule|Evasion Moves Clause: Evasion moves are banned
+expect |rule|Evasion Abilities Clause: Evasion abilities are banned
+expect |rule|Sleep Moves Clause: Sleep-inducing moves are banned
+expect |clearpoke
+expect |poke|p1|Arceus-Electric|
+expect |poke|p2|Ditto|
+expect |poke|p2|Maushold-Four|
+expect |poke|p2|Greedent, M|
+expect |poke|p2|Vivillon-Monsoon, F|
+expect |poke|p2|Gothitelle, M|
+expect |poke|p2|Cranidos, M|
+expect |teampreview
+expect |
+expect |t:|
+expect |teamsize|p1|1
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: ThisNameIsFarTooLong|Arceus-Electric|383/383
+expect |switch|p1a: ThisNameIsFarTooLong|Arceus-Electric|100/100
+expect |split|p2
+expect |switch|p2a: Cranidos|Cranidos, M, shiny|338/338
+expect |switch|p2a: Cranidos|Cranidos, M, shiny|100/100
+expect |-start|p1a: ThisNameIsFarTooLong|typechange|Normal|[silent]
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Gothitelle|Gothitelle, M|344/344
+expect |switch|p2a: Gothitelle|Gothitelle, M|100/100
+expect |move|p1a: ThisNameIsFarTooLong|Imprison|p1a: ThisNameIsFarTooLong
+expect |-start|p1a: ThisNameIsFarTooLong|move: Imprison
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Gothitelle|Vacuum Wave|p1a: ThisNameIsFarTooLong
+expect |rng|100|72
+expect |rng|24|22
+expect |rng|16|15
+expect |-supereffective|p1a: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|333/383
+expect |-damage|p1a: ThisNameIsFarTooLong|87/100
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |move|p2a: Gothitelle|Snowscape|p2a: Gothitelle
+expect |-weather|Snowscape
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sparky|Vivillon-Monsoon, F, shiny|301/301
+expect |switch|p2a: Sparky|Vivillon-Monsoon, F, shiny|100/100
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Ditto|Ditto|292/292
+expect |switch|p2a: Ditto|Ditto|100/100
+expect |-transform|p2a: Ditto|p1a: ThisNameIsFarTooLong|[from] ability: Imposter
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |rng|2|0
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |rng|2|1
+expect |rng|2|0
+expect |upkeep
+expect |rng|2|0
+expect |turn|6
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |split|p2
+expect |switch|p2a: Cranidos|Cranidos, M, shiny|338/338
+expect |switch|p2a: Cranidos|Cranidos, M, shiny|100/100
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |
+expect |-weather|Snowscape|[upkeep]
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Gothitelle|Gothitelle, M|344/344
+expect |switch|p2a: Gothitelle|Gothitelle, M|100/100
+expect |-terastallize|p1a: ThisNameIsFarTooLong|Dark
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |
+expect |-weather|none
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |move|p2a: Gothitelle|Pollen Puff|p1a: ThisNameIsFarTooLong
+expect |rng|100|24
+expect |rng|24|17
+expect |rng|16|14
+expect |-supereffective|p1a: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|221/383
+expect |-damage|p1a: ThisNameIsFarTooLong|58/100
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |-terastallize|p2a: Gothitelle|Dragon
+expect |move|p2a: Gothitelle|Vacuum Wave|p1a: ThisNameIsFarTooLong
+expect |rng|100|37
+expect |rng|24|6
+expect |rng|16|1
+expect |-supereffective|p1a: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|163/383
+expect |-damage|p1a: ThisNameIsFarTooLong|43/100
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p2a: Gothitelle|Vacuum Wave|p1a: ThisNameIsFarTooLong
+expect |rng|100|83
+expect |rng|24|18
+expect |rng|16|10
+expect |-supereffective|p1a: ThisNameIsFarTooLong
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|109/383
+expect |-damage|p1a: ThisNameIsFarTooLong|29/100
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Ditto|Ditto|292/292
+expect |switch|p2a: Ditto|Ditto|100/100
+expect |-transform|p2a: Ditto|p1a: ThisNameIsFarTooLong|[from] ability: Imposter
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |rng|2|1
+expect |-start|p2a: Ditto|typechange|Normal|[silent]
+expect |turn|12
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |split|p2
+expect |switch|p2a: Cranidos|Cranidos, M, shiny|338/338
+expect |switch|p2a: Cranidos|Cranidos, M, shiny|100/100
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Ditto|Ditto|292/292
+expect |switch|p2a: Ditto|Ditto|100/100
+expect |-transform|p2a: Ditto|p1a: ThisNameIsFarTooLong|[from] ability: Imposter
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |rng|2|0
+expect |
+expect |upkeep
+expect |rng|2|1
+expect |-start|p2a: Ditto|typechange|Normal|[silent]
+expect |turn|14
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |split|p2
+expect |switch|p2a: Cranidos|Cranidos, M, shiny|338/338
+expect |switch|p2a: Cranidos|Cranidos, M, shiny|100/100
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |move|p2a: Cranidos|Razor Shell|p1a: ThisNameIsFarTooLong
+expect |rng|100|74
+expect |rng|24|10
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|10/383
+expect |-damage|p1a: ThisNameIsFarTooLong|3/100
+expect |rng|100|26
+expect |
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p1a: ThisNameIsFarTooLong|Imprison||[still]
+expect |-fail|p1a: ThisNameIsFarTooLong
+expect |move|p2a: Cranidos|Tearful Look|p1a: ThisNameIsFarTooLong
+expect |-unboost|p1a: ThisNameIsFarTooLong|atk|1
+expect |-unboost|p1a: ThisNameIsFarTooLong|spa|1
+expect |
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Ditto|Ditto|292/292
+expect |switch|p2a: Ditto|Ditto|100/100
+expect |-transform|p2a: Ditto|p1a: ThisNameIsFarTooLong|[from] ability: Imposter
+expect |-activate|p1a: ThisNameIsFarTooLong|move: Struggle
+expect |move|p1a: ThisNameIsFarTooLong|Struggle|p2a: Ditto
+expect |rng|24|17
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Ditto|268/292
+expect |-damage|p2a: Ditto|92/100
+expect |rng|2|0
+expect |split|p1
+expect |-damage|p1a: ThisNameIsFarTooLong|0 fnt|[from] recoil
+expect |-damage|p1a: ThisNameIsFarTooLong|0 fnt|[from] recoil
+expect |rng|2|1
+expect |faint|p1a: ThisNameIsFarTooLong
+expect |
+expect |win|p2

@@ -1,0 +1,139 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Charizard
+Ability: Blaze
+Hardy Nature
+- Fire Pledge
+- Splash
+
+Venusaur
+Ability: Overgrow
+Hardy Nature
+- Rollout
+- Grass Pledge
+end
+team p2
+Whimsicott
+Ability: Prankster
+Hardy Nature
+- Encore
+- Protect
+- Splash
+
+Blissey
+Ability: Natural Cure
+Hardy Nature
+- Protect
+- Splash
+end
+choice p1 move 2, move 1 2
+choice p2 move 2, move 1
+choice p1 move 1 1, move 2 1
+choice p2 move 1 2, move 2
+choice p1 move 2, move 1
+choice p2 move 3, move 2
+choice p1 move 2, move 1
+choice p2 move 3, move 2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Charizard|Charizard, F|297/297
+expect |switch|p1a: Charizard|Charizard, F|297/297
+expect |split|p1
+expect |switch|p1b: Venusaur|Venusaur, F|301/301
+expect |switch|p1b: Venusaur|Venusaur, F|301/301
+expect |split|p2
+expect |switch|p2a: Whimsicott|Whimsicott, F|261/261
+expect |switch|p2a: Whimsicott|Whimsicott, F|261/261
+expect |split|p2
+expect |switch|p2b: Blissey|Blissey, F|651/651
+expect |switch|p2b: Blissey|Blissey, F|651/651
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Whimsicott|Protect|p2a: Whimsicott
+expect |-singleturn|p2a: Whimsicott|Protect
+expect |move|p2b: Blissey|Protect|p2b: Blissey
+expect |-singleturn|p2b: Blissey|Protect
+expect |move|p1a: Charizard|Splash|p1a: Charizard
+expect |-nothing
+expect |move|p1b: Venusaur|Rollout|p2b: Blissey
+expect |-activate|p2b: Blissey|move: Protect
+expect |
+expect |rng|2|0
+expect |rng|2|0
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Whimsicott|Encore|p1b: Venusaur
+expect |rng|100|70
+expect |-start|p1b: Venusaur|Encore
+expect |move|p1a: Charizard|Fire Pledge|p2a: Whimsicott
+expect |-waiting|p1a: Charizard|p1b: Venusaur
+expect |rng|2|0
+expect |move|p1b: Venusaur|Rollout|p2a: Whimsicott|[from] move: Fire Pledge
+expect |rng|100|0
+expect |rng|24|9
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Whimsicott|236/261
+expect |-damage|p2a: Whimsicott|236/261
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Whimsicott|Splash|p2a: Whimsicott
+expect |-nothing
+expect |move|p1a: Charizard|Splash|p1a: Charizard
+expect |-nothing
+expect |move|p1b: Venusaur|Rollout|p2a: Whimsicott|[from] lockedmove
+expect |rng|100|6
+expect |rng|24|14
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Whimsicott|186/261
+expect |-damage|p2a: Whimsicott|186/261
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Whimsicott|Splash|p2a: Whimsicott
+expect |-nothing
+expect |move|p1a: Charizard|Splash|p1a: Charizard
+expect |-nothing
+expect |move|p1b: Venusaur|Rollout|p2a: Whimsicott|[from] lockedmove
+expect |rng|100|55
+expect |rng|24|21
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Whimsicott|92/261
+expect |-damage|p2a: Whimsicott|92/261
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |
+expect |-end|p1b: Venusaur|Encore
+expect |upkeep
+expect |turn|5

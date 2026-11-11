@@ -1,0 +1,100 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Pikachu
+Ability: Static
+Hardy Nature
+- Round
+
+Slowking
+Ability: Oblivious
+Hardy Nature
+- Instruct
+end
+team p2
+Dusclops
+Ability: Pressure
+Hardy Nature
+- Round
+
+Blissey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+end
+choice p1 move 1 1, move 1 -1
+choice p2 move 1 1, move 1
+choice p1 move 1 1, move 1 -1
+choice p2 move 1 2, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Pikachu|Pikachu, F|211/211
+expect |switch|p1a: Pikachu|Pikachu, F|211/211
+expect |split|p1
+expect |switch|p1b: Slowking|Slowking, F|331/331
+expect |switch|p1b: Slowking|Slowking, F|331/331
+expect |split|p2
+expect |switch|p2a: Dusclops|Dusclops, F|221/221
+expect |switch|p2a: Dusclops|Dusclops, F|221/221
+expect |split|p2
+expect |switch|p2b: Blissey|Blissey, F|651/651
+expect |switch|p2b: Blissey|Blissey, F|651/651
+expect |-ability|p2a: Dusclops|Pressure
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Pikachu|Round|p2a: Dusclops
+expect |-immune|p2a: Dusclops
+expect |move|p2a: Dusclops|Round|p1a: Pikachu|[from] move: Round
+expect |rng|100|18
+expect |rng|24|6
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Pikachu|107/211
+expect |-damage|p1a: Pikachu|107/211
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |move|p1b: Slowking|Instruct|p1a: Pikachu
+expect |-singleturn|p1a: Pikachu|move: Instruct|[of] p1b: Slowking
+expect |move|p1a: Pikachu|Round|p2a: Dusclops
+expect |-immune|p2a: Dusclops
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Pikachu|Round|p2a: Dusclops
+expect |-immune|p2a: Dusclops
+expect |move|p2a: Dusclops|Round|p1b: Slowking|[from] move: Round
+expect |rng|100|9
+expect |rng|24|0
+expect |rng|16|6
+expect |-crit|p1b: Slowking
+expect |split|p1
+expect |-damage|p1b: Slowking|243/331
+expect |-damage|p1b: Slowking|243/331
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |move|p1b: Slowking|Instruct|p1a: Pikachu
+expect |-singleturn|p1a: Pikachu|move: Instruct|[of] p1b: Slowking
+expect |move|p1a: Pikachu|Round|p2a: Dusclops
+expect |-immune|p2a: Dusclops
+expect |
+expect |upkeep
+expect |turn|3

@@ -1,0 +1,103 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 2400 000a 0000 0057
+genders drawn
+team p1
+Pikachu
+Ability: Static
+Level: 50
+Hardy Nature
+- Splash
+
+Shedinja
+Ability: Wonder Guard
+Level: 50
+Hardy Nature
+- Splash
+
+Eevee
+Ability: Run Away
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Garchomp
+Ability: Rough Skin
+Level: 50
+Hardy Nature
+- Stealth Rock
+- Spikes
+end
+choice p1 move 1
+choice p2 move 1
+choice p1 move 1
+choice p2 move 2
+choice p1 switch 2
+choice p2 move 2
+choice p1 switch 3
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|1
+expect |start
+expect |split|p1
+expect |switch|p1a: Pikachu|Pikachu, L50, M|110/110
+expect |switch|p1a: Pikachu|Pikachu, L50, M|110/110
+expect |split|p2
+expect |switch|p2a: Garchomp|Garchomp, L50, M|183/183
+expect |switch|p2a: Garchomp|Garchomp, L50, M|183/183
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Garchomp|Stealth Rock|p1a: Pikachu
+expect |-sidestart|p1: p1|move: Stealth Rock
+expect |move|p1a: Pikachu|Splash|p1a: Pikachu
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Garchomp|Spikes|p1a: Pikachu
+expect |-sidestart|p1: p1|Spikes
+expect |move|p1a: Pikachu|Splash|p1a: Pikachu
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Shedinja|Shedinja, L50|1/1
+expect |switch|p1a: Shedinja|Shedinja, L50|1/1
+expect |split|p1
+expect |-damage|p1a: Shedinja|0 fnt|[from] Stealth Rock
+expect |-damage|p1a: Shedinja|0 fnt|[from] Stealth Rock
+expect |faint|p1a: Shedinja
+expect |move|p2a: Garchomp|Spikes|p1: Shedinja
+expect |-sidestart|p1: p1|Spikes
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Eevee|Eevee, L50, F|130/130
+expect |switch|p1a: Eevee|Eevee, L50, F|130/130
+expect |split|p1
+expect |-damage|p1a: Eevee|114/130|[from] Stealth Rock
+expect |-damage|p1a: Eevee|114/130|[from] Stealth Rock
+expect |split|p1
+expect |-damage|p1a: Eevee|93/130|[from] Spikes
+expect |-damage|p1a: Eevee|93/130|[from] Spikes
+expect |turn|4

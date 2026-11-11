@@ -1,0 +1,669 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed dda4 0b24 c5df 7328
+genders drawn
+team p1
+Scizor @ Scizorite
+Ability: Swarm
+Level: 50
+Tera Type: Fairy
+EVs: 11 Def / 26 SpA / 4 SpD / 25 Spe
+Modest Nature
+- Drill Run
+- Psychic Noise
+- Lumina Crash
+- Double Team
+
+Infernape (M)
+Ability: Iron Fist
+Level: 50
+Tera Type: Bug
+EVs: 26 HP / 2 Atk / 3 Def / 7 SpA / 24 SpD / 4 Spe
+Hasty Nature
+- Instruct
+- Counter
+- Mirror Coat
+- Comeuppance
+
+Beedrill @ Rocky Helmet
+Ability: Swarm
+Level: 50
+Tera Type: Ice
+EVs: 3 HP / 5 Atk / 25 Def / 32 SpA / 1 Spe
+Hardy Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Protect
+
+Volcarona @ Light Clay
+Ability: Swarm
+Level: 50
+Tera Type: Ghost
+EVs: 30 HP / 1 Atk / 14 Def / 15 SpA / 2 SpD / 3 Spe
+Bashful Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Metal Burst
+
+Pikachu (Toxtricity-Low-Key) @ Magnet
+Ability: Technician
+Level: 50
+Tera Type: Fighting
+EVs: 27 HP / 2 Atk / 26 Def / 11 SpD
+Rash Nature
+- Axe Kick
+- Scorching Sands
+- Draining Kiss
+- Safeguard
+
+ThisNameIsFarTooLongToKeep (Ditto)
+Ability: Imposter
+Level: 50
+Tera Type: Steel
+EVs: 21 HP / 1 Atk / 14 Def / 3 SpD / 25 Spe
+Adamant Nature
+- Instruct
+- Metal Burst
+- Comeuppance
+- Mirror Coat
+end
+team p2
+ThisNameIsFarTooLongToKeep (Machamp) (F)
+Ability: Steadfast
+Level: 50
+Tera Type: Dark
+EVs: 24 HP / 15 Atk / 3 Def / 16 SpA / 7 Spe
+Rash Nature
+- Instruct
+- Metal Burst
+- Comeuppance
+- Mirror Coat
+
+Golurk @ Golurkite
+Ability: Klutz
+Level: 50
+Shiny: Yes
+Tera Type: Electric
+EVs: 3 HP / 25 Atk / 30 Def / 1 SpA / 6 SpD / 1 Spe
+Brave Nature
+- Air Cutter
+- Focus Punch
+- Rage Fist
+
+Tinkaton @ Charti Berry
+Ability: Pickpocket
+Level: 50
+Tera Type: Dark
+EVs: 1 HP / 32 Atk / 1 SpA / 30 SpD / 2 Spe
+Calm Nature
+- Dragon Darts
+
+Grapploct (F)
+Ability: Limber
+Level: 50
+Tera Type: Fire
+EVs: 2 HP / 1 Atk / 4 Def / 28 SpA / 12 SpD / 18 Spe
+Quiet Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Protect
+
+Sableye @ Soft Sand
+Ability: Stall
+Level: 50
+Tera Type: Bug
+EVs: 1 HP / 11 Atk / 20 Def / 2 SpA / 10 SpD / 10 Spe
+Mild Nature
+- Counter
+- Mirror Coat
+- Instruct
+- Metal Burst
+
+Salazzle (F) @ Lum Berry
+Ability: Corrosion
+Level: 50
+Tera Type: Ice
+EVs: 5 Atk / 14 Def / 5 SpA / 25 SpD / 7 Spe
+Sassy Nature
+- Instruct
+- Counter
+- Mirror Coat
+- Comeuppance
+end
+choice p1 team 5432
+choice p2 team 4621
+choice p1 move 1 -2, switch 4
+choice p2 move 1, move 1 2
+choice p1 move 3 -2, move 2
+choice p2 move Counter, move Counter
+choice p1 move 2 -2, switch 3
+choice p2 move 2, move 3
+choice p1 move 3 1,move Instruct 2
+choice p2 switch 4,switch golurk
+choice p1 move 3 1, move 3 2
+choice p2 move 1 -2, move 3 1 mega
+choice p2 switch 3, pass
+choice p1 switch 4, move 3 2
+choice p2 move mirrorcoat ,  move Air Cutter
+choice p1 move mirrorcoat, switch infernape
+choice p2 move 3, move 1
+choice p1 switch 4, move 1 1
+choice p2 move 2, move 1
+choice p1 move 4, switch 3
+choice p2 move 2, move 3 2
+choice p1 pass, switch 3
+choice p2 move 1 1, move 2 1
+choice p1 move 3 2, move 3
+choice p2 move 1 -2, move 3 2
+choice p1 move 1 1, move 1 2
+choice p1 pass, switch 4
+choice p2 move 1 -2, move 2 -1
+choice p1 pass, move 3 2
+choice p2 move 4, move 3 -1
+choice p1 pass, move 3 1
+choice p2 switch 4, pass
+choice p1 pass, move 3 2
+choice p2 move 2, move 1
+choice p1 pass, move 4
+choice p2 pass ,  move Air Cutter
+choice p1 default
+choice p2 skip, move focuspunch 2
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Scizor, L50, F|
+expect |poke|p1|Infernape, L50, M|
+expect |poke|p1|Beedrill, L50, F|
+expect |poke|p1|Volcarona, L50, F|
+expect |poke|p1|Toxtricity-Low-Key, L50, M|
+expect |poke|p1|Ditto, L50|
+expect |poke|p2|Machamp, L50, F|
+expect |poke|p2|Golurk, L50, shiny|
+expect |poke|p2|Tinkaton, L50, F|
+expect |poke|p2|Grapploct, L50, F|
+expect |poke|p2|Sableye, L50, F|
+expect |poke|p2|Salazzle, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Pikachu|Toxtricity-Low-Key, L50, M|177/177
+expect |switch|p1a: Pikachu|Toxtricity-Low-Key, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Volcarona|Volcarona, L50, F|190/190
+expect |switch|p1b: Volcarona|Volcarona, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Grapploct|Grapploct, L50, F|157/157
+expect |switch|p2a: Grapploct|Grapploct, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Salazzle|Salazzle, L50, F|143/143
+expect |switch|p2b: Salazzle|Salazzle, L50, F|100/100
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Infernape|Infernape, L50, M|177/177
+expect |switch|p1b: Infernape|Infernape, L50, M|100/100
+expect |move|p2b: Salazzle|Instruct||[still]
+expect |-fail|p2b: Salazzle
+expect |move|p1a: Pikachu|Axe Kick|p1b: Infernape
+expect |rng|100|86
+expect |rng|24|5
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1b: Infernape|111/177
+expect |-damage|p1b: Infernape|62/100
+expect |rng|100|30
+expect |move|p2a: Grapploct|Counter||[still]
+expect |-fail|p2a: Grapploct
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p1a: Pikachu|Draining Kiss|p1b: Infernape
+expect |rng|100|28
+expect |rng|24|9
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1b: Infernape|73/177
+expect |-damage|p1b: Infernape|41/100
+expect |move|p1b: Infernape|Counter||[still]
+expect |-fail|p1b: Infernape
+expect |move|p2b: Salazzle|Counter||[still]
+expect |-fail|p2b: Salazzle
+expect |move|p2a: Grapploct|Counter||[still]
+expect |-fail|p2a: Grapploct
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Beedrill|Beedrill, L50, F|143/143
+expect |switch|p1b: Beedrill|Beedrill, L50, F|100/100
+expect |move|p1a: Pikachu|Scorching Sands|p1b: Beedrill
+expect |rng|100|12
+expect |rng|24|22
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1b: Beedrill|102/143
+expect |-damage|p1b: Beedrill|71/100
+expect |rng|100|49
+expect |move|p2b: Salazzle|Mirror Coat||[still]
+expect |-fail|p2b: Salazzle
+expect |move|p2a: Grapploct|Mirror Coat||[still]
+expect |-fail|p2a: Grapploct
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Golurk|Golurk, L50, shiny|167/167
+expect |switch|p2b: Golurk|Golurk, L50, shiny|100/100
+expect |split|p2
+expect |switch|p2a: ThisNameIsFarTooLong|Machamp, L50, F|189/189
+expect |switch|p2a: ThisNameIsFarTooLong|Machamp, L50, F|100/100
+expect |move|p1b: Beedrill|Instruct||[still]
+expect |-fail|p1b: Beedrill
+expect |move|p1a: Pikachu|Draining Kiss|p2a: ThisNameIsFarTooLong
+expect |rng|100|14
+expect |rng|24|4
+expect |rng|16|1
+expect |-supereffective|p2a: ThisNameIsFarTooLong|1
+expect |split|p2
+expect |-damage|p2a: ThisNameIsFarTooLong|85/189
+expect |-damage|p2a: ThisNameIsFarTooLong|44/100
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |detailschange|p2b: Golurk|Golurk-Mega, L50, shiny
+expect |-mega|p2b: Golurk|Golurk|Golurkite
+expect |move|p1b: Beedrill|Instruct||[still]
+expect |-fail|p1b: Beedrill
+expect |move|p1a: Pikachu|Draining Kiss|p2a: ThisNameIsFarTooLong
+expect |rng|100|58
+expect |rng|24|6
+expect |rng|16|7
+expect |-supereffective|p2a: ThisNameIsFarTooLong|1
+expect |split|p2
+expect |-damage|p2a: ThisNameIsFarTooLong|0 fnt
+expect |-damage|p2a: ThisNameIsFarTooLong|0 fnt
+expect |faint|p2a: ThisNameIsFarTooLong
+expect |move|p2b: Golurk|Rage Fist|p1a: Pikachu
+expect |rng|100|17
+expect |rng|24|19
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Pikachu|117/177
+expect |-damage|p1a: Pikachu|66/100
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Salazzle|Salazzle, L50, F|143/143
+expect |switch|p2a: Salazzle|Salazzle, L50, F|100/100
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Volcarona|Volcarona, L50, F|190/190
+expect |switch|p1a: Volcarona|Volcarona, L50, F|100/100
+expect |rng|2|1
+expect |move|p1b: Beedrill|Instruct|p2b: Golurk
+expect |-singleturn|p2b: Golurk|move: Instruct|[of] p1b: Beedrill
+expect |rng|2|0
+expect |move|p2b: Golurk|Rage Fist|p1a: Volcarona
+expect |rng|100|12
+expect |rng|24|21
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Volcarona|124/190
+expect |-damage|p1a: Volcarona|65/100
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Golurk|Air Cutter|p1a: Volcarona|[spread] p1a,p1b
+expect |rng|100|11
+expect |rng|100|83
+expect |rng|8|5
+expect |rng|16|6
+expect |-supereffective|p1a: Volcarona|1
+expect |rng|8|6
+expect |rng|16|2
+expect |-supereffective|p1b: Beedrill|1
+expect |split|p1
+expect |-damage|p1a: Volcarona|96/190
+expect |-damage|p1a: Volcarona|50/100g
+expect |split|p1
+expect |-damage|p1b: Beedrill|66/143
+expect |-damage|p1b: Beedrill|46/100
+expect |move|p2a: Salazzle|Mirror Coat||[still]
+expect |-fail|p2a: Salazzle
+expect |
+expect |upkeep
+expect |turn|7
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Infernape|Infernape, L50, M|73/177
+expect |switch|p1b: Infernape|Infernape, L50, M|41/100
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Golurk|Air Cutter|p1a: Volcarona|[spread] p1a
+expect |rng|100|7
+expect |rng|100|97
+expect |-miss|p2b: Golurk|p1b: Infernape
+expect |rng|8|5
+expect |rng|16|15
+expect |-supereffective|p1a: Volcarona|1
+expect |split|p1
+expect |-damage|p1a: Volcarona|72/190
+expect |-damage|p1a: Volcarona|37/100
+expect |move|p2a: Salazzle|Mirror Coat||[still]
+expect |-fail|p2a: Salazzle
+expect |move|p1a: Volcarona|Mirror Coat|p2b: Golurk
+expect |rng|100|34
+expect |split|p2
+expect |-damage|p2b: Golurk|119/167
+expect |-damage|p2b: Golurk|71/100
+expect |
+expect |upkeep
+expect |turn|8
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Toxtricity-Low-Key, L50, M|117/177
+expect |switch|p1a: Pikachu|Toxtricity-Low-Key, L50, M|66/100
+expect |rng|2|1
+expect |move|p1b: Infernape|Instruct|p2a: Salazzle
+expect |-singleturn|p2a: Salazzle|move: Instruct|[of] p1b: Infernape
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Golurk|Air Cutter|p1b: Infernape|[spread] p1a,p1b
+expect |rng|100|32
+expect |rng|100|47
+expect |rng|8|3
+expect |rng|16|14
+expect |-resisted|p1a: Pikachu|1
+expect |rng|8|2
+expect |rng|16|13
+expect |-supereffective|p1b: Infernape|1
+expect |split|p1
+expect |-damage|p1a: Pikachu|108/177
+expect |-damage|p1a: Pikachu|61/100
+expect |split|p1
+expect |-damage|p1b: Infernape|47/177
+expect |-damage|p1b: Infernape|26/100
+expect |move|p2a: Salazzle|Counter||[still]
+expect |-fail|p2a: Salazzle
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|9
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Beedrill|Beedrill, L50, F|66/143
+expect |switch|p1b: Beedrill|Beedrill, L50, F|46/100
+expect |move|p1a: Pikachu|Safeguard|p1a: Pikachu
+expect |-sidestart|p1: p1|Safeguard
+expect |move|p2b: Golurk|Rage Fist|p1b: Beedrill
+expect |rng|100|19
+expect |rng|24|18
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: Beedrill|0 fnt
+expect |-damage|p1b: Beedrill|0 fnt
+expect |split|p2
+expect |-damage|p2b: Golurk|92/167|[from] item: Rocky Helmet|[of] p1b: Beedrill
+expect |-damage|p2b: Golurk|55/100|[from] item: Rocky Helmet|[of] p1b: Beedrill
+expect |faint|p1b: Beedrill
+expect |move|p2a: Salazzle|Counter||[still]
+expect |-fail|p2a: Salazzle
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Infernape|Infernape, L50, M|47/177
+expect |switch|p1b: Infernape|Infernape, L50, M|26/100
+expect |turn|10
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |-singleturn|p2b: Golurk|move: Focus Punch
+expect |move|p2a: Salazzle|Instruct|p1a: Pikachu
+expect |-singleturn|p1a: Pikachu|move: Instruct|[of] p2a: Salazzle
+expect |move|p1a: Pikachu|Safeguard||[still]
+expect |-fail|p1a: Pikachu
+expect |move|p1a: Pikachu|Draining Kiss|p2b: Golurk
+expect |rng|100|10
+expect |rng|24|5
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Golurk|57/167
+expect |-damage|p2b: Golurk|34/100
+expect |split|p1
+expect |-heal|p1a: Pikachu|134/177|[from] drain|[of] p2b: Golurk
+expect |-heal|p1a: Pikachu|75/100|[from] drain|[of] p2b: Golurk
+expect |cant|p2b: Golurk|Focus Punch|Focus Punch
+expect |move|p1b: Infernape|Mirror Coat||[still]
+expect |-fail|p1b: Infernape
+expect |
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p1b: Infernape|Instruct|p2b: Golurk
+expect |-singleturn|p2b: Golurk|move: Instruct|[of] p1b: Infernape
+expect |move|p2b: Golurk|Rage Fist|p1b: Infernape
+expect |rng|100|32
+expect |rng|24|6
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Infernape|0 fnt
+expect |-damage|p1b: Infernape|0 fnt
+expect |faint|p1b: Infernape
+expect |rng|1|0
+expect |move|p2a: Salazzle|Instruct|p2b: Golurk
+expect |-singleturn|p2b: Golurk|move: Instruct|[of] p2a: Salazzle
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Golurk|Rage Fist|p1a: Pikachu
+expect |rng|100|57
+expect |rng|24|0
+expect |rng|16|8
+expect |-crit|p1a: Pikachu
+expect |split|p1
+expect |-damage|p1a: Pikachu|0 fnt
+expect |-damage|p1a: Pikachu|0 fnt
+expect |faint|p1a: Pikachu
+expect |move|p2b: Golurk|Rage Fist|p1: Pikachu|[notarget]
+expect |-fail|p2b: Golurk
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Volcarona|Volcarona, L50, F|72/190
+expect |switch|p1b: Volcarona|Volcarona, L50, F|37/100
+expect |turn|12
+expect |rng|1|0
+expect |
+expect |t:|
+expect |-singleturn|p2b: Golurk|move: Focus Punch
+expect |move|p2a: Salazzle|Instruct||[still]
+expect |-fail|p2a: Salazzle
+expect |move|p1b: Volcarona|Instruct||[still]
+expect |-fail|p1b: Volcarona
+expect |move|p2b: Golurk|Focus Punch|p2a: Salazzle
+expect |rng|100|65
+expect |rng|24|17
+expect |rng|16|11
+expect |-resisted|p2a: Salazzle|1
+expect |split|p2
+expect |-damage|p2a: Salazzle|73/143
+expect |-damage|p2a: Salazzle|51/100
+expect |
+expect |upkeep
+expect |turn|13
+expect |rng|1|0
+expect |
+expect |t:|
+expect |move|p2a: Salazzle|Comeuppance||[still]
+expect |-fail|p2a: Salazzle
+expect |move|p1b: Volcarona|Instruct|p2a: Salazzle
+expect |-singleturn|p2a: Salazzle|move: Instruct|[of] p1b: Volcarona
+expect |move|p2a: Salazzle|Comeuppance||[still]
+expect |-fail|p2a: Salazzle
+expect |move|p2b: Golurk|Rage Fist|p2a: Salazzle
+expect |rng|100|35
+expect |rng|24|1
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Salazzle|0 fnt
+expect |-damage|p2a: Salazzle|0 fnt
+expect |faint|p2a: Salazzle
+expect |
+expect |-sideend|p1: p1|Safeguard
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Grapploct|Grapploct, L50, F|157/157
+expect |switch|p2a: Grapploct|Grapploct, L50, F|100/100
+expect |turn|14
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p1b: Volcarona|Instruct|p2b: Golurk
+expect |-singleturn|p2b: Golurk|move: Instruct|[of] p1b: Volcarona
+expect |rng|1|0
+expect |move|p2b: Golurk|Rage Fist|p2a: Grapploct
+expect |rng|100|31
+expect |rng|24|5
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Grapploct|0 fnt
+expect |-damage|p2a: Grapploct|0 fnt
+expect |faint|p2a: Grapploct
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Golurk|Air Cutter|p1b: Volcarona
+expect |rng|100|5
+expect |rng|8|7
+expect |rng|16|10
+expect |-supereffective|p1b: Volcarona|1
+expect |split|p1
+expect |-damage|p1b: Volcarona|36/190
+expect |-damage|p1b: Volcarona|18/100
+expect |
+expect |upkeep
+expect |turn|15
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p1b: Volcarona|Metal Burst||[still]
+expect |-fail|p1b: Volcarona
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Golurk|Air Cutter|p1b: Volcarona
+expect |rng|100|24
+expect |rng|8|7
+expect |rng|16|13
+expect |-supereffective|p1b: Volcarona|1
+expect |split|p1
+expect |-damage|p1b: Volcarona|2/190
+expect |-damage|p1b: Volcarona|1/100
+expect |
+expect |upkeep
+expect |turn|16
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |-singleturn|p2b: Golurk|move: Focus Punch
+expect |move|p2b: Golurk|Focus Punch|p1b: Volcarona
+expect |rng|100|98
+expect |rng|24|3
+expect |rng|16|2
+expect |-resisted|p1b: Volcarona|1
+expect |split|p1
+expect |-damage|p1b: Volcarona|0 fnt
+expect |-damage|p1b: Volcarona|0 fnt
+expect |faint|p1b: Volcarona
+expect |
+expect |win|p2

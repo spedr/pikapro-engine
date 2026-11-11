@@ -1,0 +1,506 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 1d46 897e 9e13 abf2
+genders drawn
+team p1
+Morpeko
+Ability: Hunger Switch
+Level: 50
+Tera Type: Dragon
+EVs: 118 HP / 172 Atk / 30 Def / 13 SpA / 163 SpD / 3 Spe
+Naive Nature
+- Charge
+- Aura Wheel
+- Growl
+
+Turtwig
+Ability: Overgrow
+Level: 50
+Tera Type: Electric
+EVs: 250 HP / 74 Atk / 4 Def / 26 SpA / 119 SpD / 37 Spe
+Timid Nature
+- Charge
+- Tera Blast
+- Terrain Pulse
+- Electric Terrain
+
+Primarina
+Ability: Liquid Voice
+Level: 50
+Tera Type: Psychic
+EVs: 91 HP / 5 Atk / 151 Def / 120 SpA / 100 SpD / 25 Spe
+Serious Nature
+- Charge
+- Overdrive
+- Hyper Voice
+- Malignant Chain
+
+Necrozma
+Ability: Prism Armor
+Level: 50
+Tera Type: Electric
+EVs: 167 HP / 2 Atk / 184 Def / 155 SpD / 2 Spe
+Adamant Nature
+- Raging Bull
+- Tailwind
+
+Geodude-Alola
+Ability: Galvanize
+Level: 50
+Tera Type: Steel
+EVs: 40 HP / 3 Def / 102 SpA / 178 SpD / 152 Spe
+Hasty Nature
+- Charge
+- Body Slam
+- Hyper Voice
+- Cosmic Power
+
+Oricorio-Pom-Pom
+Ability: Dancer
+Level: 50
+Tera Type: Stellar
+EVs: 45 HP / 7 Atk / 227 Def / 97 SpA / 128 SpD / 3 Spe
+Calm Nature
+- Charge
+- Revelation Dance
+- Cross Poison
+- Shadow Punch
+end
+team p2
+Oricorio-Pom-Pom
+Ability: Dancer
+Level: 50
+Tera Type: Dark
+EVs: 60 Atk / 140 Def / 1 SpA / 207 SpD / 95 Spe
+Sassy Nature
+- Charge
+- Revelation Dance
+- Glare
+- Fairy Lock
+
+X (Electrode)
+Ability: Static
+Level: 50
+Tera Type: Stellar
+EVs: 38 HP / 1 Atk / 108 Def / 219 SpA / 21 SpD / 121 Spe
+Impish Nature
+- Iron Head
+- Fairy Lock
+- Zing Zap
+- Branch Poke
+
+Morpeko
+Ability: Hunger Switch
+Level: 50
+Tera Type: Flying
+EVs: 183 HP / 17 Atk / 26 Def / 218 SpA / 9 SpD / 37 Spe
+Lax Nature
+- Charge
+- Aura Wheel
+- Supersonic
+- Throat Chop
+
+Geodude-Alola
+Ability: Galvanize
+Level: 50
+Shiny: Yes
+Tera Type: Stellar
+EVs: 59 HP / 61 Atk / 18 Def / 30 SpA / 244 SpD / 55 Spe
+Modest Nature
+- Charge
+- Body Slam
+- Hyper Voice
+- Wing Attack
+
+Popplio
+Ability: Liquid Voice
+Level: 50
+Tera Type: Water
+EVs: 2 HP / 3 Atk / 62 Def / 75 SpA / 233 SpD / 2 Spe
+Careful Nature
+- Charge
+- Overdrive
+- Hyper Voice
+- Zing Zap
+
+Sparky (Glaceon) (M) @ Eviolite
+Ability: Ice Body
+Level: 50
+Tera Type: Electric
+EVs: 30 HP / 19 Atk / 53 Def / 55 SpA / 189 SpD / 143 Spe
+Adamant Nature
+- Charge
+- Tera Blast
+- Terrain Pulse
+- Electric Terrain
+end
+choice p1 team 3146
+choice p2 team 6214
+choice p1 switch 4, move 1
+choice p2 switch 3, move 1 2
+choice p1 move 1 terastallize, move 2 2
+choice p2 move 3 2, move 2 terastallize
+choice p1 move 3 +1,move Aura Wheel 1
+choice p2 move 2 2, move 3 2
+choice p2 switch 3, pass
+choice p1 move 1,switch necrozma
+choice p2 move 1, move 4 -1
+choice p1 switch 4, move 1 -1
+choice p2 move 4 ,  move Fairy Lock
+choice p2 pass, switch 4
+choice p1 move 2, move 1 2
+choice p2 move 1, move 2 2
+choice p1 move 1, move 1 1
+choice p2 move 3 1, pass
+choice p1 switch 4, pass
+choice p2 move 4, pass
+choice p1 move 3 1, move 1 1
+choice p2 move terrainpulse 1
+choice p1 move 2 -2, move 2
+choice p2 move 1, pass
+choice p1 switch 3, move 1 -1
+choice p2 move 1, pass
+choice p1 move 3, move 1 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Morpeko, L50, F|
+expect |poke|p1|Turtwig, L50, M|
+expect |poke|p1|Primarina, L50, F|
+expect |poke|p1|Necrozma, L50|
+expect |poke|p1|Geodude-Alola, L50, F|
+expect |poke|p1|Oricorio-Pom-Pom, L50, M|
+expect |poke|p2|Oricorio-Pom-Pom, L50, M|
+expect |poke|p2|Electrode, L50|
+expect |poke|p2|Morpeko, L50, M|
+expect |poke|p2|Geodude-Alola, L50, M|
+expect |poke|p2|Popplio, L50, M|
+expect |poke|p2|Glaceon, L50, M|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Primarina|Primarina, L50, F|166/166
+expect |switch|p1a: Primarina|Primarina, L50, F|166/166
+expect |split|p1
+expect |switch|p1b: Morpeko|Morpeko, L50, F|148/148
+expect |switch|p1b: Morpeko|Morpeko, L50, F|148/148
+expect |split|p2
+expect |switch|p2a: Sparky|Glaceon, L50, M|144/144
+expect |switch|p2a: Sparky|Glaceon, L50, M|144/144
+expect |split|p2
+expect |switch|p2b: X|Electrode, L50|140/140
+expect |switch|p2b: X|Electrode, L50|140/140
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Oricorio|Oricorio-Pom-Pom, L50, M|150/150
+expect |switch|p2a: Oricorio|Oricorio-Pom-Pom, L50, M|150/150
+expect |split|p1
+expect |switch|p1a: Oricorio|Oricorio-Pom-Pom, L50, M|156/156
+expect |switch|p1a: Oricorio|Oricorio-Pom-Pom, L50, M|156/156
+expect |move|p2b: X|Iron Head|p1b: Morpeko
+expect |rng|100|11
+expect |rng|24|18
+expect |rng|16|5
+expect |-resisted|p1b: Morpeko
+expect |split|p1
+expect |-damage|p1b: Morpeko|133/148
+expect |-damage|p1b: Morpeko|133/148
+expect |rng|100|72
+expect |move|p1b: Morpeko|Charge|p1b: Morpeko
+expect |-boost|p1b: Morpeko|spd|1
+expect |-start|p1b: Morpeko|Charge
+expect |
+expect |-formechange|p1b: Morpeko|Morpeko-Hangry||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |-terastallize|p2b: X|Stellar
+expect |-terastallize|p1a: Oricorio|Stellar
+expect |move|p2b: X|Fairy Lock|p2b: X
+expect |-fieldactivate|move: Fairy Lock
+expect |move|p1b: Morpeko|Aura Wheel|p2b: X
+expect |rng|100|99
+expect |rng|24|22
+expect |rng|16|12
+expect |split|p2
+expect |-damage|p2b: X|62/140
+expect |-damage|p2b: X|62/140
+expect |rng|100|51
+expect |-boost|p1b: Morpeko|spe|1
+expect |move|p1a: Oricorio|Charge|p1a: Oricorio
+expect |-boost|p1a: Oricorio|spd|1
+expect |-start|p1a: Oricorio|Charge
+expect |move|p2a: Oricorio|Glare|p1b: Morpeko
+expect |rng|100|21
+expect |-immune|p1b: Morpeko
+expect |
+expect |-formechange|p1b: Morpeko|Morpeko||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1b: Morpeko|Aura Wheel|p2a: Oricorio
+expect |rng|100|40
+expect |rng|24|2
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2a: Oricorio|0 fnt
+expect |-damage|p2a: Oricorio|0 fnt
+expect |rng|100|91
+expect |-boost|p1b: Morpeko|spe|1
+expect |faint|p2a: Oricorio
+expect |-end|p1b: Morpeko|Charge|[silent]
+expect |rng|1|0
+expect |move|p2b: X|Zing Zap|p1b: Morpeko
+expect |rng|100|32
+expect |rng|24|12
+expect |rng|16|1
+expect |-resisted|p1b: Morpeko
+expect |split|p1
+expect |-damage|p1b: Morpeko|102/148
+expect |-damage|p1b: Morpeko|102/148
+expect |rng|100|0
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Oricorio|Cross Poison|p2b: X
+expect |rng|100|54
+expect |rng|8|2
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: X|36/140
+expect |-damage|p2b: X|36/140
+expect |rng|100|0
+expect |-status|p2b: X|psn
+expect |rng|10|5
+expect |
+expect |split|p2
+expect |-damage|p2b: X|19/140 psn|[from] psn
+expect |-damage|p2b: X|19/140 psn|[from] psn
+expect |-formechange|p1b: Morpeko|Morpeko-Hangry||[from] ability: Hunger Switch
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sparky|Glaceon, L50, M|144/144
+expect |switch|p2a: Sparky|Glaceon, L50, M|144/144
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Necrozma|Necrozma, L50|193/193
+expect |switch|p1b: Necrozma|Necrozma, L50|193/193
+expect |move|p2b: X|Branch Poke|p2a: Sparky
+expect |rng|100|33
+expect |rng|24|20
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Sparky|130/144
+expect |-damage|p2a: Sparky|130/144
+expect |move|p1a: Oricorio|Charge|p1a: Oricorio
+expect |-boost|p1a: Oricorio|spd|1
+expect |-start|p1a: Oricorio|Charge
+expect |move|p2a: Sparky|Charge|p2a: Sparky
+expect |-boost|p2a: Sparky|spd|1
+expect |-start|p2a: Sparky|Charge
+expect |
+expect |split|p2
+expect |-damage|p2b: X|2/140 psn|[from] psn
+expect |-damage|p2b: X|2/140 psn|[from] psn
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Primarina|Primarina, L50, F|166/166
+expect |switch|p1a: Primarina|Primarina, L50, F|166/166
+expect |move|p2b: X|Fairy Lock|p2b: X
+expect |-fieldactivate|move: Fairy Lock
+expect |move|p2a: Sparky|Electric Terrain|p2a: Sparky
+expect |-fieldstart|move: Electric Terrain
+expect |-end|p2a: Sparky|Charge|[silent]
+expect |move|p1b: Necrozma|Raging Bull|p1a: Primarina
+expect |rng|100|55
+expect |rng|24|12
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Primarina|117/166
+expect |-damage|p1a: Primarina|117/166
+expect |
+expect |split|p2
+expect |-damage|p2b: X|0 fnt|[from] psn
+expect |-damage|p2b: X|0 fnt|[from] psn
+expect |faint|p2b: X
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Geodude|Geodude-Alola, L50, M, shiny|122/122
+expect |switch|p2b: Geodude|Geodude-Alola, L50, M, shiny|122/122
+expect |turn|6
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2a: Sparky|Charge|p2a: Sparky
+expect |-boost|p2a: Sparky|spd|1
+expect |-start|p2a: Sparky|Charge
+expect |rng|2|1
+expect |move|p1b: Necrozma|Raging Bull|p2b: Geodude
+expect |rng|100|85
+expect |rng|24|10
+expect |rng|16|11
+expect |-resisted|p2b: Geodude
+expect |split|p2
+expect |-damage|p2b: Geodude|102/122
+expect |-damage|p2b: Geodude|102/122
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Primarina|Overdrive|p2a: Sparky|[spread] p2a,p2b
+expect |rng|100|88
+expect |rng|100|86
+expect |rng|24|5
+expect |rng|16|14
+expect |rng|24|2
+expect |rng|16|0
+expect |-supereffective|p2b: Geodude
+expect |split|p2
+expect |-damage|p2a: Sparky|111/144
+expect |-damage|p2a: Sparky|111/144
+expect |split|p2
+expect |-damage|p2b: Geodude|0 fnt
+expect |-damage|p2b: Geodude|0 fnt
+expect |faint|p2b: Geodude
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Sparky|Terrain Pulse|p1a: Primarina
+expect |rng|100|10
+expect |rng|24|18
+expect |rng|16|15
+expect |-supereffective|p1a: Primarina
+expect |split|p1
+expect |-damage|p1a: Primarina|0 fnt
+expect |-damage|p1a: Primarina|0 fnt
+expect |faint|p1a: Primarina
+expect |-end|p2a: Sparky|Charge|[silent]
+expect |move|p1b: Necrozma|Raging Bull|p2a: Sparky
+expect |rng|100|13
+expect |rng|24|14
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Sparky|74/144
+expect |-damage|p2a: Sparky|74/144
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Oricorio|Oricorio-Pom-Pom, L50, M, tera:Stellar|156/156
+expect |switch|p1a: Oricorio|Oricorio-Pom-Pom, L50, M, tera:Stellar|156/156
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1a: Oricorio|Cross Poison|p2a: Sparky
+expect |rng|100|42
+expect |rng|8|7
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Sparky|57/144
+expect |-damage|p2a: Sparky|57/144
+expect |rng|100|26
+expect |move|p2a: Sparky|Electric Terrain||[still]
+expect |-fail|p2a: Sparky
+expect |move|p1b: Necrozma|Raging Bull|p2a: Sparky
+expect |rng|100|7
+expect |rng|24|1
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Sparky|19/144
+expect |-damage|p2a: Sparky|19/144
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p1a: Oricorio|Revelation Dance|p1b: Necrozma
+expect |rng|100|19
+expect |rng|24|11
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Necrozma|111/193
+expect |-damage|p1b: Necrozma|111/193
+expect |move|p2a: Sparky|Terrain Pulse|p1a: Oricorio
+expect |rng|100|89
+expect |rng|24|10
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Oricorio|96/156
+expect |-damage|p1a: Oricorio|96/156
+expect |move|p1b: Necrozma|Tailwind|p1b: Necrozma
+expect |-sidestart|p1: p1|move: Tailwind
+expect |
+expect |-fieldend|move: Electric Terrain
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Morpeko|Morpeko, L50, F|102/148
+expect |switch|p1a: Morpeko|Morpeko, L50, F|102/148
+expect |move|p1b: Necrozma|Raging Bull|p1a: Morpeko
+expect |rng|100|51
+expect |rng|24|22
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Morpeko|34/148
+expect |-damage|p1a: Morpeko|34/148
+expect |move|p2a: Sparky|Charge|p2a: Sparky
+expect |-boost|p2a: Sparky|spd|1
+expect |-start|p2a: Sparky|Charge
+expect |
+expect |-formechange|p1a: Morpeko|Morpeko-Hangry||[from] ability: Hunger Switch
+expect |upkeep
+expect |turn|11
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Morpeko|Growl|p2a: Sparky
+expect |rng|100|86
+expect |-unboost|p2a: Sparky|atk|1
+expect |move|p1b: Necrozma|Raging Bull|p2a: Sparky
+expect |rng|100|99
+expect |rng|24|8
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Sparky|0 fnt
+expect |-damage|p2a: Sparky|0 fnt
+expect |faint|p2a: Sparky
+expect |
+expect |win|p1

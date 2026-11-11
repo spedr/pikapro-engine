@@ -1,0 +1,473 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 533c d4cb 8264 4be3
+genders drawn
+team p1
+X (Arceus-Ground)
+Ability: Multitype
+Level: 50
+Tera Type: Water
+EVs: 153 HP / 173 Atk / 19 Def / 136 SpA / 26 SpD / 1 Spe
+Careful Nature
+- Shell Side Arm
+- Expanding Force
+
+Urshifu
+Ability: Unseen Fist
+Level: 50
+Tera Type: Ground
+EVs: 37 HP / 34 Atk / 78 Def / 94 SpA / 196 SpD / 59 Spe
+Calm Nature
+- Sludge Bomb
+- Fire Lash
+
+Pyroar @ Kelpsy Berry
+Ability: Rivalry
+Level: 50
+Shiny: Yes
+Tera Type: Water
+EVs: 48 HP / 59 Atk / 38 Def / 82 SpA / 65 SpD / 177 Spe
+Relaxed Nature
+- Bolt Strike
+- Breaking Swipe
+- Hyper Voice
+
+Sir Hops-a-Lot (Duraludon) (M)
+Ability: Stalwart
+Level: 50
+Tera Type: Psychic
+EVs: 59 HP / 15 Atk / 1 Def / 250 SpA / 116 SpD / 49 Spe
+Lax Nature
+- Heal Bell
+- Lunar Blessing
+
+Blastoise
+Ability: Torrent
+Level: 50
+Tera Type: Stellar
+EVs: 191 HP / 60 Atk / 4 Def / 78 SpA / 13 SpD / 164 Spe
+Bashful Nature
+- Mega Drain
+- Sucker Punch
+- Stomping Tantrum
+- Double Shock
+
+Arceus-Fairy @ Mago Berry
+Ability: Multitype
+Level: 50
+Tera Type: Steel
+EVs: 27 HP / 113 Atk / 4 Def / 201 SpA / 162 SpD / 2 Spe
+Rash Nature
+- Toxic Thread
+- Water Pulse
+- Astral Barrage
+- Night Shade
+end
+team p2
+ThisNameIsFarTooLongToKeep (Froakie) (M) @ Charcoal
+Ability: Torrent
+Level: 50
+Tera Type: Bug
+EVs: 124 HP / 5 Def / 1 SpA / 133 SpD / 247 Spe
+Naive Nature
+- Thunder Wave
+- Cross Chop
+- Icy Wind
+- Last Resort
+
+X (Tinkatuff) @ Grepa Berry
+Ability: Mold Breaker
+Level: 50
+Tera Type: Electric
+EVs: 47 HP / 5 Atk / 40 Def / 151 SpA / 188 SpD / 8 Spe
+Gentle Nature
+- Tickle
+- Luster Purge
+
+Enamorus-Therian (F)
+Ability: Overcoat
+Level: 50
+Tera Type: Ice
+EVs: 30 HP / 146 Atk / 4 Def / 3 SpA / 208 SpD / 114 Spe
+Lonely Nature
+- Metal Sound
+- Magnetic Flux
+- Self-Destruct
+
+Snorlax @ Dragon Fang
+Ability: Gluttony
+Level: 50
+Tera Type: Ground
+EVs: 45 HP / 38 Atk / 178 Def / 2 SpA / 241 SpD
+Brave Nature
+- Lunar Dance
+
+Lechonk @ Griseous Core
+Ability: Gluttony
+Level: 50
+Shiny: Yes
+Tera Type: Dragon
+EVs: 54 HP / 86 Atk / 16 Def / 189 SpA / 116 SpD / 26 Spe
+Adamant Nature
+- Temper Flare
+- Mirror Coat
+
+Fraxure @ Oval Stone
+Ability: Rivalry
+Level: 50
+Tera Type: Ice
+EVs: 82 HP / 26 Atk / 6 Def / 138 SpA / 45 SpD / 211 Spe
+Jolly Nature
+- Power Swap
+- Icicle Spear
+- Feather Dance
+- Bulldoze
+end
+choice p1 team 2365
+choice p2 team 3254
+choice p1 move 1 1, switch 4
+choice p2 move metalsound 2 terastallize,move 1 +1
+choice p1 move 2 1, move 3 2
+choice p2 default
+choice p1 move 2 2, move 3 -1
+choice p2 move 1 -2, move 2 -1
+choice p2 pass, switch 3
+choice p1 move 1 1 terastallize, move 4 2
+choice p2 move 1 2, move 1 2
+choice p1 default
+choice p2 move 1 2, switch 4
+choice p1 switch 4, move 2 1
+choice p2 switch 4, move 1
+choice p2 skip, switch enamorus-therian
+choice p1 move 1 1, move 3 1
+choice p2 move 1 -2 ,  move Metal Sound -1
+choice p1 switch 3, move 4 -1
+choice p2 pass, move 1 1
+choice p1 move 4 2, move 4 -1
+choice p2 pass, move 1 2
+choice p1 switch 3, move 2 2
+choice p2 pass, move 3
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Arceus-Ground, L50|
+expect |poke|p1|Urshifu-*, L50, F|
+expect |poke|p1|Pyroar, L50, M|
+expect |poke|p1|Duraludon, L50, M|
+expect |poke|p1|Blastoise, L50, M|
+expect |poke|p1|Arceus-Fairy, L50|
+expect |poke|p2|Froakie, L50, M|
+expect |poke|p2|Tinkatuff, L50, F|
+expect |poke|p2|Enamorus-Therian, L50, F|
+expect |poke|p2|Snorlax, L50, M|
+expect |poke|p2|Lechonk, L50, F|
+expect |poke|p2|Fraxure, L50, M|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Urshifu|Urshifu, L50, F|180/180
+expect |switch|p1a: Urshifu|Urshifu, L50, F|180/180
+expect |split|p1
+expect |switch|p1b: Pyroar|Pyroar, L50, M, shiny|167/167
+expect |switch|p1b: Pyroar|Pyroar, L50, M, shiny|167/167
+expect |split|p2
+expect |switch|p2a: Enamorus|Enamorus-Therian, L50, F|153/153
+expect |switch|p2a: Enamorus|Enamorus-Therian, L50, F|153/153
+expect |split|p2
+expect |switch|p2b: X|Tinkatuff, L50, F|146/146
+expect |switch|p2b: X|Tinkatuff, L50, F|146/146
+expect |-ability|p2b: X|Mold Breaker
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Blastoise|Blastoise, L50, M|178/178
+expect |switch|p1b: Blastoise|Blastoise, L50, M|178/178
+expect |-terastallize|p2a: Enamorus|Ice
+expect |move|p1a: Urshifu|Sludge Bomb|p2a: Enamorus
+expect |rng|100|2
+expect |rng|24|17
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Enamorus|130/153
+expect |-damage|p2a: Enamorus|130/153
+expect |rng|100|60
+expect |move|p2b: X|Tickle|p1a: Urshifu
+expect |rng|100|50
+expect |-unboost|p1a: Urshifu|atk|1
+expect |-unboost|p1a: Urshifu|def|1
+expect |move|p2a: Enamorus|Metal Sound|p1b: Blastoise
+expect |rng|100|33
+expect |-unboost|p1b: Blastoise|spd|2
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1a: Urshifu|Fire Lash|p2a: Enamorus
+expect |rng|100|66
+expect |rng|24|6
+expect |rng|16|11
+expect |-supereffective|p2a: Enamorus
+expect |split|p2
+expect |-damage|p2a: Enamorus|80/153
+expect |-damage|p2a: Enamorus|80/153
+expect |rng|100|1
+expect |-unboost|p2a: Enamorus|def|1
+expect |move|p1b: Blastoise|Stomping Tantrum|p2b: X
+expect |rng|100|8
+expect |rng|24|15
+expect |rng|16|13
+expect |-supereffective|p2b: X
+expect |split|p2
+expect |-damage|p2b: X|56/146
+expect |-damage|p2b: X|56/146
+expect |move|p2b: X|Tickle|p1a: Urshifu
+expect |rng|100|49
+expect |-unboost|p1a: Urshifu|atk|1
+expect |-unboost|p1a: Urshifu|def|1
+expect |move|p2a: Enamorus|Metal Sound|p1a: Urshifu
+expect |rng|100|35
+expect |-unboost|p1a: Urshifu|spd|2
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Urshifu|Fire Lash|p2b: X
+expect |rng|100|68
+expect |rng|24|14
+expect |rng|16|9
+expect |-supereffective|p2b: X
+expect |split|p2
+expect |-damage|p2b: X|0 fnt
+expect |-damage|p2b: X|0 fnt
+expect |rng|100|57
+expect |faint|p2b: X
+expect |move|p1b: Blastoise|Stomping Tantrum|p1a: Urshifu
+expect |rng|100|62
+expect |rng|24|7
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Urshifu|129/180
+expect |-damage|p1a: Urshifu|129/180
+expect |move|p2a: Enamorus|Metal Sound|p2: X|[notarget]
+expect |-fail|p2a: Enamorus
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Lechonk|Lechonk, L50, F, shiny|136/136
+expect |switch|p2b: Lechonk|Lechonk, L50, F, shiny|136/136
+expect |turn|4
+expect |
+expect |t:|
+expect |-terastallize|p1a: Urshifu|Ground
+expect |move|p1a: Urshifu|Sludge Bomb|p2a: Enamorus
+expect |rng|100|85
+expect |rng|24|14
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Enamorus|56/153
+expect |-damage|p2a: Enamorus|56/153
+expect |rng|100|34
+expect |move|p1b: Blastoise|Double Shock||[still]
+expect |-fail|p1b: Blastoise|move: Double Shock
+expect |move|p2a: Enamorus|Metal Sound|p1b: Blastoise
+expect |rng|100|54
+expect |-unboost|p1b: Blastoise|spd|2
+expect |move|p2b: Lechonk|Temper Flare|p1b: Blastoise
+expect |rng|100|29
+expect |rng|24|13
+expect |rng|16|0
+expect |-resisted|p1b: Blastoise
+expect |split|p1
+expect |-damage|p1b: Blastoise|166/178
+expect |-damage|p1b: Blastoise|166/178
+expect |
+expect |upkeep
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Snorlax|Snorlax, L50, M|241/241
+expect |switch|p2b: Snorlax|Snorlax, L50, M|241/241
+expect |move|p1a: Urshifu|Sludge Bomb|p2b: Snorlax
+expect |rng|100|13
+expect |rng|24|11
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2b: Snorlax|216/241
+expect |-damage|p2b: Snorlax|216/241
+expect |rng|100|74
+expect |move|p1b: Blastoise|Mega Drain|p2a: Enamorus
+expect |rng|100|88
+expect |rng|24|20
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Enamorus|42/153
+expect |-damage|p2a: Enamorus|42/153
+expect |split|p1
+expect |-heal|p1b: Blastoise|173/178|[from] drain|[of] p2a: Enamorus
+expect |-heal|p1b: Blastoise|173/178|[from] drain|[of] p2a: Enamorus
+expect |move|p2a: Enamorus|Metal Sound|p1b: Blastoise
+expect |rng|100|80
+expect |-unboost|p1b: Blastoise|spd|2
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pyroar|Pyroar, L50, M, shiny|167/167
+expect |switch|p1a: Pyroar|Pyroar, L50, M, shiny|167/167
+expect |split|p2
+expect |switch|p2a: Lechonk|Lechonk, L50, F, shiny|136/136
+expect |switch|p2a: Lechonk|Lechonk, L50, F, shiny|136/136
+expect |move|p1b: Blastoise|Sucker Punch||[still]
+expect |-fail|p1b: Blastoise
+expect |move|p2b: Snorlax|Lunar Dance|p2b: Snorlax
+expect |faint|p2b: Snorlax
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Enamorus|Enamorus-Therian, L50, F, tera:Ice|42/153
+expect |switch|p2b: Enamorus|Enamorus-Therian, L50, F, tera:Ice|42/153
+expect |split|p2
+expect |-heal|p2b: Enamorus|153/153|[from] move: Lunar Dance
+expect |-heal|p2b: Enamorus|153/153|[from] move: Lunar Dance
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1a: Pyroar|Bolt Strike|p2a: Lechonk
+expect |rng|100|35
+expect |rng|24|6
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Lechonk|72/136
+expect |-damage|p2a: Lechonk|72/136
+expect |rng|100|90
+expect |move|p1b: Blastoise|Stomping Tantrum|p2a: Lechonk
+expect |rng|100|40
+expect |rng|24|14
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2a: Lechonk|0 fnt
+expect |-damage|p2a: Lechonk|0 fnt
+expect |faint|p2a: Lechonk
+expect |move|p2b: Enamorus|Metal Sound|p2: Lechonk|[notarget]
+expect |-fail|p2b: Enamorus
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Arceus|Arceus-Fairy, L50|198/198
+expect |switch|p1a: Arceus|Arceus-Fairy, L50|198/198
+expect |move|p1b: Blastoise|Double Shock||[still]
+expect |-fail|p1b: Blastoise|move: Double Shock
+expect |move|p2b: Enamorus|Metal Sound|p1a: Arceus
+expect |rng|100|19
+expect |-unboost|p1a: Arceus|spd|2
+expect |
+expect |upkeep
+expect |-start|p1a: Arceus|typechange|Normal|[silent]
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p1a: Arceus|Night Shade|p2b: Enamorus
+expect |rng|100|83
+expect |split|p2
+expect |-damage|p2b: Enamorus|103/153
+expect |-damage|p2b: Enamorus|103/153
+expect |move|p1b: Blastoise|Double Shock||[still]
+expect |-fail|p1b: Blastoise|move: Double Shock
+expect |move|p2b: Enamorus|Metal Sound|p1b: Blastoise
+expect |rng|100|32
+expect |-unboost|p1b: Blastoise|spd|0
+expect |
+expect |upkeep
+expect |turn|10
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pyroar|Pyroar, L50, M, shiny|167/167
+expect |switch|p1a: Pyroar|Pyroar, L50, M, shiny|167/167
+expect |rng|2|0
+expect |move|p1b: Blastoise|Sucker Punch|p2b: Enamorus
+expect |rng|100|65
+expect |rng|24|10
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Enamorus|77/153
+expect |-damage|p2b: Enamorus|77/153
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Enamorus|Self-Destruct|p1a: Pyroar|[spread] p1a,p1b
+expect |rng|100|57
+expect |rng|100|33
+expect |rng|24|0
+expect |rng|16|3
+expect |-crit|p1a: Pyroar
+expect |rng|24|19
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Pyroar|13/167
+expect |-damage|p1a: Pyroar|13/167
+expect |split|p1
+expect |-damage|p1b: Blastoise|90/178
+expect |-damage|p1b: Blastoise|90/178
+expect |faint|p2b: Enamorus
+expect |
+expect |win|p1
+request p1 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Arceus-Ground, L50","condition":"214/214","active":true,"stats":{"atk":162,"def":142,"spa":141,"spd":157,"spe":140},"moves":["shellsidearm","expandingforce"],"baseAbility":"multitype","item":"","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"180/180","active":true,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":false,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Sir Hops-a-Lot","details":"Duraludon, L50, M","condition":"152/152","active":false,"stats":{"atk":117,"def":148,"spa":171,"spd":76,"spe":111},"moves":["healbell","lunarblessing"],"baseAbility":"stalwart","item":"","pokeball":"pokeball","ability":"stalwart","commanding":false,"reviving":false,"teraType":"Psychic","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"178/178","active":false,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":false,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""}]}}
+request p2 {"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: ThisNameIsFarTooLong","details":"Froakie, L50, M","condition":"132/132","active":true,"stats":{"atk":76,"def":61,"spa":82,"spd":72,"spe":134},"moves":["thunderwave","crosschop","icywind","lastresort"],"baseAbility":"torrent","item":"charcoal","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Bug","terastallized":""},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"146/146","active":true,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"153/153","active":false,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"241/241","active":false,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"136/136","active":false,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Fraxure","details":"Fraxure, L50, M","condition":"151/151","active":false,"stats":{"atk":140,"def":91,"spa":69,"spd":76,"spe":124},"moves":["powerswap","iciclespear","featherdance","bulldoze"],"baseAbility":"rivalry","item":"ovalstone","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Sludge Bomb","id":"sludgebomb","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Fire Lash","id":"firelash","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Bolt Strike","id":"boltstrike","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Breaking Swipe","id":"breakingswipe","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Hyper Voice","id":"hypervoice","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false}],"canTerastallize":"Water"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"180/180","active":true,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":true,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":false,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"178/178","active":false,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":64,"maxpp":64,"target":"normal","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}],"canTerastallize":"Ice"},{"moves":[{"move":"Tickle","id":"tickle","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"153/153","active":true,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":""},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"146/146","active":true,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"136/136","active":false,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"241/241","active":false,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Sludge Bomb","id":"sludgebomb","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Fire Lash","id":"firelash","pp":24,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Mega Drain","id":"megadrain","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Sucker Punch","id":"suckerpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Stomping Tantrum","id":"stompingtantrum","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Stellar"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"180/180","active":true,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"178/178","active":true,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":false,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":false,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":63,"maxpp":64,"target":"normal","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Tickle","id":"tickle","pp":31,"maxpp":32,"target":"normal","disabled":false},{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"130/153","active":true,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":"Ice"},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"146/146","active":true,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"136/136","active":false,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"241/241","active":false,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Sludge Bomb","id":"sludgebomb","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Fire Lash","id":"firelash","pp":23,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Mega Drain","id":"megadrain","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Sucker Punch","id":"suckerpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Stomping Tantrum","id":"stompingtantrum","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Stellar"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"180/180","active":true,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"178/178","active":true,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":false,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":false,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":62,"maxpp":64,"target":"normal","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Tickle","id":"tickle","pp":30,"maxpp":32,"target":"normal","disabled":false},{"move":"Luster Purge","id":"lusterpurge","pp":8,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"80/153","active":true,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":"Ice"},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"56/146","active":true,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"136/136","active":false,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"241/241","active":false,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"129/180","active":true,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"178/178","active":true,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":false,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":false,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"80/153","active":true,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":"Ice"},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"0 fnt","active":true,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"136/136","active":false,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"241/241","active":false,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Sludge Bomb","id":"sludgebomb","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Fire Lash","id":"firelash","pp":22,"maxpp":24,"target":"normal","disabled":false}],"canTerastallize":"Ground"},{"moves":[{"move":"Mega Drain","id":"megadrain","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Sucker Punch","id":"suckerpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Stomping Tantrum","id":"stompingtantrum","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":8,"maxpp":8,"target":"normal","disabled":false}],"canTerastallize":"Stellar"}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"129/180","active":true,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"178/178","active":true,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":false,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":false,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":61,"maxpp":64,"target":"normal","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Temper Flare","id":"temperflare","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Mirror Coat","id":"mirrorcoat","pp":32,"maxpp":32,"target":"scripted","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"80/153","active":true,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":"Ice"},{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"136/136","active":true,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"241/241","active":false,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Sludge Bomb","id":"sludgebomb","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Fire Lash","id":"firelash","pp":22,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Mega Drain","id":"megadrain","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Sucker Punch","id":"suckerpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Stomping Tantrum","id":"stompingtantrum","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"129/180","active":true,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"166/178","active":true,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":false,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":false,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":60,"maxpp":64,"target":"normal","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Temper Flare","id":"temperflare","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Mirror Coat","id":"mirrorcoat","pp":32,"maxpp":32,"target":"scripted","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"56/153","active":true,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":"Ice"},{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"136/136","active":true,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"241/241","active":false,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Sludge Bomb","id":"sludgebomb","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Fire Lash","id":"firelash","pp":22,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Mega Drain","id":"megadrain","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Sucker Punch","id":"suckerpunch","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Stomping Tantrum","id":"stompingtantrum","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"129/180","active":true,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"173/178","active":true,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":false,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":false,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""}]}}
+request p2 {"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":59,"maxpp":64,"target":"normal","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}]},{"moves":[{"move":"Lunar Dance","id":"lunardance","pp":16,"maxpp":16,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"42/153","active":true,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":"Ice"},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"216/241","active":true,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"136/136","active":false,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""}]}}
+request p1 {"wait":true,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":true,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"173/178","active":true,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":false,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"129/180","active":false,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"}]}}
+request p2 {"forceSwitch":[false,true],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"136/136","active":true,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"0 fnt","active":true,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"42/153","active":false,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":"Ice"}]},"noCancel":true}
+request p1 {"active":[{"moves":[{"move":"Bolt Strike","id":"boltstrike","pp":8,"maxpp":8,"target":"normal","disabled":false},{"move":"Breaking Swipe","id":"breakingswipe","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Hyper Voice","id":"hypervoice","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Mega Drain","id":"megadrain","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Sucker Punch","id":"suckerpunch","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Stomping Tantrum","id":"stompingtantrum","pp":14,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":true,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"173/178","active":true,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":false,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"129/180","active":false,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"}]}}
+request p2 {"active":[{"moves":[{"move":"Temper Flare","id":"temperflare","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Mirror Coat","id":"mirrorcoat","pp":32,"maxpp":32,"target":"scripted","disabled":false}]},{"moves":[{"move":"Metal Sound","id":"metalsound","pp":64,"maxpp":64,"target":"normal","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"136/136","active":true,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"153/153","active":true,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":"Ice"},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Bolt Strike","id":"boltstrike","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Breaking Swipe","id":"breakingswipe","pp":24,"maxpp":24,"target":"allAdjacentFoes","disabled":false},{"move":"Hyper Voice","id":"hypervoice","pp":16,"maxpp":16,"target":"allAdjacentFoes","disabled":false}]},{"moves":[{"move":"Mega Drain","id":"megadrain","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Sucker Punch","id":"suckerpunch","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Stomping Tantrum","id":"stompingtantrum","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":7,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":true,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"173/178","active":true,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":false,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"129/180","active":false,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"}]}}
+request p2 {"active":[{"moves":[{"move":"Temper Flare","id":"temperflare","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Mirror Coat","id":"mirrorcoat","pp":32,"maxpp":32,"target":"scripted","disabled":false}]},{"moves":[{"move":"Metal Sound","id":"metalsound","pp":63,"maxpp":64,"target":"normal","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"153/153","active":true,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":"Ice"},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Toxic Thread","id":"toxicthread","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Water Pulse","id":"waterpulse","pp":32,"maxpp":32,"target":"any","disabled":false},{"move":"Astral Barrage","id":"astralbarrage","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Night Shade","id":"nightshade","pp":24,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Mega Drain","id":"megadrain","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Sucker Punch","id":"suckerpunch","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Stomping Tantrum","id":"stompingtantrum","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":6,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":true,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"173/178","active":true,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":false,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"129/180","active":false,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"}]}}
+request p2 {"active":[{"moves":[{"move":"Temper Flare","id":"temperflare","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Mirror Coat","id":"mirrorcoat","pp":32,"maxpp":32,"target":"scripted","disabled":false}]},{"moves":[{"move":"Metal Sound","id":"metalsound","pp":62,"maxpp":64,"target":"normal","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"153/153","active":true,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":"Ice"},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}
+request p1 {"active":[{"moves":[{"move":"Toxic Thread","id":"toxicthread","pp":32,"maxpp":32,"target":"normal","disabled":false},{"move":"Water Pulse","id":"waterpulse","pp":32,"maxpp":32,"target":"any","disabled":false},{"move":"Astral Barrage","id":"astralbarrage","pp":8,"maxpp":8,"target":"allAdjacentFoes","disabled":false},{"move":"Night Shade","id":"nightshade","pp":23,"maxpp":24,"target":"normal","disabled":false}]},{"moves":[{"move":"Mega Drain","id":"megadrain","pp":23,"maxpp":24,"target":"normal","disabled":false},{"move":"Sucker Punch","id":"suckerpunch","pp":7,"maxpp":8,"target":"normal","disabled":false},{"move":"Stomping Tantrum","id":"stompingtantrum","pp":13,"maxpp":16,"target":"normal","disabled":false},{"move":"Double Shock","id":"doubleshock","pp":5,"maxpp":8,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Arceus","details":"Arceus-Fairy, L50","condition":"198/198","active":true,"stats":{"atk":154,"def":141,"spa":181,"spd":144,"spe":140},"moves":["toxicthread","waterpulse","astralbarrage","nightshade"],"baseAbility":"multitype","item":"magoberry","pokeball":"pokeball","ability":"multitype","commanding":false,"reviving":false,"teraType":"Steel","terastallized":""},{"ident":"p1: Blastoise","details":"Blastoise, L50, M","condition":"173/178","active":true,"stats":{"atk":111,"def":121,"spa":115,"spd":127,"spe":119},"moves":["megadrain","suckerpunch","stompingtantrum","doubleshock"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false,"teraType":"Stellar","terastallized":""},{"ident":"p1: Pyroar","details":"Pyroar, L50, M, shiny","condition":"167/167","active":false,"stats":{"atk":95,"def":106,"spa":139,"spd":94,"spe":133},"moves":["boltstrike","breakingswipe","hypervoice"],"baseAbility":"rivalry","item":"kelpsyberry","pokeball":"pokeball","ability":"rivalry","commanding":false,"reviving":false,"teraType":"Water","terastallized":""},{"ident":"p1: Urshifu","details":"Urshifu, L50, F","condition":"129/180","active":false,"stats":{"atk":138,"def":130,"spa":95,"spd":115,"spe":124},"moves":["sludgebomb","firelash"],"baseAbility":"unseenfist","item":"","pokeball":"pokeball","ability":"unseenfist","commanding":false,"reviving":false,"teraType":"Ground","terastallized":"Ground"}]}}
+request p2 {"active":[{"moves":[{"move":"Temper Flare","id":"temperflare","pp":15,"maxpp":16,"target":"normal","disabled":false},{"move":"Mirror Coat","id":"mirrorcoat","pp":32,"maxpp":32,"target":"scripted","disabled":false}]},{"moves":[{"move":"Metal Sound","id":"metalsound","pp":61,"maxpp":64,"target":"normal","disabled":false},{"move":"Magnetic Flux","id":"magneticflux","pp":32,"maxpp":32,"target":"allySide","disabled":false},{"move":"Self-Destruct","id":"selfdestruct","pp":8,"maxpp":8,"target":"allAdjacent","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Lechonk","details":"Lechonk, L50, F, shiny","condition":"0 fnt","active":true,"stats":{"atk":83,"def":62,"spa":71,"spd":80,"spe":58},"moves":["temperflare","mirrorcoat"],"baseAbility":"gluttony","item":"griseouscore","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Dragon","terastallized":""},{"ident":"p2: Enamorus","details":"Enamorus-Therian, L50, F","condition":"103/153","active":true,"stats":{"atk":168,"def":117,"spa":155,"spd":146,"spe":80},"moves":["metalsound","magneticflux","selfdestruct"],"baseAbility":"overcoat","item":"","pokeball":"pokeball","ability":"overcoat","commanding":false,"reviving":false,"teraType":"Ice","terastallized":"Ice"},{"ident":"p2: X","details":"Tinkatuff, L50, F","condition":"0 fnt","active":false,"stats":{"atk":76,"def":72,"spa":84,"spd":138,"spe":99},"moves":["tickle","lusterpurge"],"baseAbility":"moldbreaker","item":"grepaberry","pokeball":"pokeball","ability":"moldbreaker","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""},{"ident":"p2: Snorlax","details":"Snorlax, L50, M","condition":"0 fnt","active":false,"stats":{"atk":148,"def":107,"spa":85,"spd":160,"spe":45},"moves":["lunardance"],"baseAbility":"gluttony","item":"dragonfang","pokeball":"pokeball","ability":"gluttony","commanding":false,"reviving":false,"teraType":"Ground","terastallized":""}]}}

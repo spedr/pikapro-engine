@@ -1,0 +1,453 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed c9ec 5caf 6f16 2c71
+genders drawn
+validate gen9championsvgc2026regmc
+team p1
+X (Milotic) (F) @ Leftovers
+Ability: Competitive
+Level: 50
+EVs: 32 HP / 2 Def / 32 SpA
+Mild Nature
+- Recover
+- Scald
+- Ice Beam
+- Dragon Tail
+
+Beartic (F) @ Life Orb
+Ability: Slush Rush
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Snowscape
+- Swords Dance
+- Icicle Crash
+- Earthquake
+
+Kleavor (M) @ Choice Scarf
+Ability: Sharpness
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- X-Scissor
+- Stone Axe
+- U-turn
+- Close Combat
+
+Furfrou (F) @ Chesto Berry
+Ability: Fur Coat
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- Double-Edge
+- Cotton Guard
+- Rest
+- Crunch
+
+Manectric (M) @ Manectite
+Ability: Lightning Rod
+Level: 50
+Shiny: Yes
+EVs: 2 HP / 32 SpA / 32 Spe
+Timid Nature
+- Thunder Wave
+- Thunderbolt
+- Volt Switch
+- Overheat
+
+Big Tony's Pal (Gengar-Mega) (F) @ Gengarite
+Ability: Cursed Body
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Substitute
+- Sludge Wave
+- Shadow Ball
+- Nasty Plot
+end
+team p2
+Golisopod (M) @ Sitrus Berry
+Ability: Emergency Exit
+Level: 50
+EVs: 32 HP / 32 Atk / 2 Def
+Adamant Nature
+- First Impression
+- Liquidation
+- Leech Life
+- Spikes
+
+Wyrdeer (M) @ Leftovers
+Ability: Intimidate
+Level: 50
+EVs: 32 HP / 17 Def / 17 SpD
+Bold Nature
+- Thunder Wave
+- Earthquake
+- Psychic Noise
+- Megahorn
+
+Gallade (M) @ Choice Scarf
+Ability: Sharpness
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Jolly Nature
+- Sacred Sword
+- Psycho Cut
+- Leaf Blade
+- Night Slash
+
+Crabominable (M) @ Life Orb
+Ability: Iron Fist
+Level: 50
+EVs: 2 HP / 32 Atk / 32 Spe
+Adamant Nature
+- Mach Punch
+- Ice Hammer
+- Drain Punch
+- Bulk Up
+
+Roserade (M) @ Focus Sash
+Ability: Natural Cure
+Level: 50
+EVs: 32 HP / 2 Def / 32 Spe
+Timid Nature
+- Giga Drain
+- Sleep Powder
+- Sludge Bomb
+- Spikes
+
+Mr. Bubbles (Gengar-Mega) (F) @ Gengarite
+Ability: Shadow Tag
+Level: 50
+EVs: 2 HP / 32 SpA / 32 Spe
+Modest Nature
+- Sludge Wave
+- Shadow Ball
+- Focus Blast
+- Nasty Plot
+end
+choice p1 team 6145
+choice p2 team 3641
+choice p1 switch 3, move 1
+choice p2 switch 3, move 3 -1 mega
+choice p2 switch 3, pass
+choice p1 move 1 1, move 2 1
+choice p2 move 4 -2, switch 4
+choice p2 switch 4, pass
+choice p1 move Rest ,  move 3 -1
+choice p2 move Focus Blast +1 ,  move First Impression -1
+choice p1 switch 3, pass
+choice p2 move 2 2, move 2 -1
+choice p1 move 4 mega, move 2 1
+choice p2 pass, move 3 1
+choice p1 move 4, move 2 -1
+choice p1 switch 4, pass
+choice p2 pass, move 4
+choice p1 move Volt Switch 2 ,  move Dragon Tail +2
+choice p2 pass,move Liquidation +2
+choice p1 move 4 2, move 4 2
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Milotic, L50, F|
+expect |poke|p1|Beartic, L50, F|
+expect |poke|p1|Kleavor, L50, M|
+expect |poke|p1|Furfrou, L50, F|
+expect |poke|p1|Manectric, L50, M, shiny|
+expect |poke|p1|Gengar, L50, F|
+expect |poke|p2|Golisopod, L50, M|
+expect |poke|p2|Wyrdeer, L50, M|
+expect |poke|p2|Gallade, L50, M|
+expect |poke|p2|Crabominable, L50, M|
+expect |poke|p2|Roserade, L50, M|
+expect |poke|p2|Gengar, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Big Tony's Pal|Gengar, L50, F|137/137
+expect |switch|p1a: Big Tony's Pal|Gengar, L50, F|100/100
+expect |split|p1
+expect |switch|p1b: X|Milotic, L50, F|202/202
+expect |switch|p1b: X|Milotic, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Gallade|Gallade, L50, M|145/145
+expect |switch|p2a: Gallade|Gallade, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Mr. Bubbles|Gengar, L50, F|137/137
+expect |switch|p2b: Mr. Bubbles|Gengar, L50, F|100/100
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |turn|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |split|p2
+expect |switch|p2a: Crabominable|Crabominable, L50, M|174/174
+expect |switch|p2a: Crabominable|Crabominable, L50, M|100/100
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |split|p1
+expect |switch|p1a: Furfrou|Furfrou, L50, F|182/182
+expect |switch|p1a: Furfrou|Furfrou, L50, F|100/100
+expect |detailschange|p2b: Mr. Bubbles|Gengar-Mega, L50, F
+expect |-mega|p2b: Mr. Bubbles|Gengar|Gengarite
+expect |move|p2b: Mr. Bubbles|Focus Blast|p2a: Crabominable
+expect |rng|100|60
+expect |rng|24|2
+expect |rng|16|9
+expect |-supereffective|p2a: Crabominable|1
+expect |split|p2
+expect |-damage|p2a: Crabominable|0 fnt
+expect |-damage|p2a: Crabominable|0 fnt
+expect |rng|100|4
+expect |faint|p2a: Crabominable
+expect |move|p1b: X|Recover||[still]
+expect |-fail|p1b: X|heal
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Gallade|Gallade, L50, M|145/145
+expect |switch|p2a: Gallade|Gallade, L50, M|100/100
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Golisopod|Golisopod, L50, M|182/182
+expect |switch|p2b: Golisopod|Golisopod, L50, M|100/100
+expect |move|p2a: Gallade|Night Slash|p2b: Golisopod
+expect |rng|100|18
+expect |rng|8|2
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2b: Golisopod|136/182
+expect |-damage|p2b: Golisopod|74/100
+expect |move|p1a: Furfrou|Double-Edge|p2a: Gallade
+expect |rng|100|3
+expect |rng|24|2
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Gallade|12/145
+expect |-damage|p2a: Gallade|8/100
+expect |split|p1
+expect |-damage|p1a: Furfrou|138/182|[from] Recoil
+expect |-damage|p1a: Furfrou|75/100|[from] Recoil
+expect |move|p1b: X|Scald|p2a: Gallade
+expect |rng|100|79
+expect |rng|24|8
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2a: Gallade|0 fnt
+expect |-damage|p2a: Gallade|0 fnt
+expect |rng|100|94
+expect |faint|p2a: Gallade
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Mr. Bubbles|Gengar-Mega, L50, F|137/137
+expect |switch|p2a: Mr. Bubbles|Gengar-Mega, L50, F|100/100
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2b: Golisopod|First Impression|p2a: Mr. Bubbles
+expect |rng|100|89
+expect |rng|24|12
+expect |rng|16|2
+expect |-resisted|p2a: Mr. Bubbles|2
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|106/137
+expect |-damage|p2a: Mr. Bubbles|77/100
+expect |move|p2a: Mr. Bubbles|Focus Blast|p1a: Furfrou
+expect |rng|100|27
+expect |rng|24|13
+expect |rng|16|15
+expect |-supereffective|p1a: Furfrou|1
+expect |split|p1
+expect |-damage|p1a: Furfrou|0 fnt
+expect |-damage|p1a: Furfrou|0 fnt
+expect |rng|100|65
+expect |faint|p1a: Furfrou
+expect |move|p1b: X|Ice Beam|p1: Furfrou|[notarget]
+expect |-fail|p1b: X
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Big Tony's Pal|Gengar, L50, F|137/137
+expect |switch|p1a: Big Tony's Pal|Gengar, L50, F|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |detailschange|p1a: Big Tony's Pal|Gengar-Mega, L50, F
+expect |-mega|p1a: Big Tony's Pal|Gengar|Gengarite
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2a: Mr. Bubbles|Shadow Ball|p1b: X
+expect |rng|100|55
+expect |rng|24|5
+expect |rng|16|14
+expect |split|p1
+expect |-damage|p1b: X|124/202
+expect |-damage|p1b: X|61/100
+expect |rng|100|0
+expect |-unboost|p1b: X|spd|1
+expect |-ability|p1b: X|Competitive|boost
+expect |-boost|p1b: X|spa|2
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Big Tony's Pal|Nasty Plot|p1a: Big Tony's Pal
+expect |-boost|p1a: Big Tony's Pal|spa|2
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1b: X|Scald|p2a: Mr. Bubbles
+expect |rng|100|96
+expect |rng|24|0
+expect |rng|16|12
+expect |-crit|p2a: Mr. Bubbles
+expect |split|p2
+expect |-damage|p2a: Mr. Bubbles|0 fnt
+expect |-damage|p2a: Mr. Bubbles|0 fnt
+expect |rng|100|30
+expect |rng|2|0
+expect |faint|p2a: Mr. Bubbles
+expect |move|p2b: Golisopod|Liquidation|p2: Mr. Bubbles|[notarget]
+expect |-fail|p2b: Golisopod
+expect |
+expect |split|p1
+expect |-heal|p1b: X|136/202|[from] item: Leftovers
+expect |-heal|p1b: X|67/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1a: Big Tony's Pal|Nasty Plot|p1a: Big Tony's Pal
+expect |-boost|p1a: Big Tony's Pal|spa|2
+expect |move|p1b: X|Scald|p1a: Big Tony's Pal
+expect |rng|100|45
+expect |rng|24|8
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|0 fnt
+expect |-damage|p1a: Big Tony's Pal|0 fnt
+expect |rng|100|18
+expect |faint|p1a: Big Tony's Pal
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Golisopod|Leech Life|p1b: X
+expect |rng|100|15
+expect |rng|24|8
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1b: X|34/202
+expect |-damage|p1b: X|16/100
+expect |split|p2
+expect |-heal|p2b: Golisopod|182/182|[from] drain|[of] p1b: X
+expect |-heal|p2b: Golisopod|100/100|[from] drain|[of] p1b: X
+expect |
+expect |split|p1
+expect |-heal|p1b: X|46/202|[from] item: Leftovers
+expect |-heal|p1b: X|22/100|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Manectric|Manectric, L50, M, shiny|147/147
+expect |switch|p1a: Manectric|Manectric, L50, M, shiny|100/100
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p1a: Manectric|Volt Switch|p2b: Golisopod
+expect |rng|100|62
+expect |rng|24|11
+expect |rng|16|5
+expect |-supereffective|p2b: Golisopod|1
+expect |split|p2
+expect |-damage|p2b: Golisopod|56/182
+expect |-damage|p2b: Golisopod|30/100
+expect |-enditem|p2b: Golisopod|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2b: Golisopod|101/182|[from] item: Sitrus Berry
+expect |-heal|p2b: Golisopod|55/100|[from] item: Sitrus Berry
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Golisopod|Spikes|p1a: Manectric
+expect |-sidestart|p1: p1|Spikes
+expect |move|p1b: X|Dragon Tail|p2b: Golisopod
+expect |rng|100|8
+expect |rng|24|14
+expect |rng|16|6
+expect |split|p2
+expect |-damage|p2b: Golisopod|87/182
+expect |-damage|p2b: Golisopod|47/100
+expect |
+expect |split|p1
+expect |-heal|p1b: X|58/202|[from] item: Leftovers
+expect |-heal|p1b: X|28/100|[from] item: Leftovers
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p1a: Manectric|Overheat|p2b: Golisopod
+expect |rng|100|87
+expect |rng|24|21
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Golisopod|9/182
+expect |-damage|p2b: Golisopod|4/100
+expect |rng|100|6
+expect |-unboost|p1a: Manectric|spa|2
+expect |move|p2b: Golisopod|Liquidation|p1b: X
+expect |rng|100|94
+expect |rng|24|7
+expect |rng|16|12
+expect |-resisted|p1b: X|1
+expect |split|p1
+expect |-damage|p1b: X|4/202
+expect |-damage|p1b: X|1/100
+expect |rng|100|56
+expect |move|p1b: X|Dragon Tail|p2b: Golisopod
+expect |rng|100|59
+expect |rng|24|7
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2b: Golisopod|0 fnt
+expect |-damage|p2b: Golisopod|0 fnt
+expect |faint|p2b: Golisopod
+expect |
+expect |win|p1

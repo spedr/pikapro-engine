@@ -1,0 +1,93 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Golisopod
+Ability: Emergency Exit
+Hardy Nature
+- Substitute
+
+Pikachu
+Ability: Static
+Hardy Nature
+- Splash
+
+Chansey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+end
+team p2
+Gengar
+Ability: Cursed Body
+Hardy Nature
+- Night Shade
+
+Snorlax
+Ability: Thick Fat
+Hardy Nature
+- Tackle
+end
+choice p1 move 1, move 1
+choice p2 move 1 1, move 1 1
+choice p1 switch 3
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Golisopod|Golisopod, F|291/291
+expect |switch|p1a: Golisopod|Golisopod, F|291/291
+expect |split|p1
+expect |switch|p1b: Pikachu|Pikachu, F|211/211
+expect |switch|p1b: Pikachu|Pikachu, F|211/211
+expect |split|p2
+expect |switch|p2a: Gengar|Gengar, F|261/261
+expect |switch|p2a: Gengar|Gengar, F|261/261
+expect |split|p2
+expect |switch|p2b: Snorlax|Snorlax, M|461/461
+expect |switch|p2b: Snorlax|Snorlax, M|461/461
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Gengar|Night Shade|p1a: Golisopod
+expect |rng|100|28
+expect |split|p1
+expect |-damage|p1a: Golisopod|191/291
+expect |-damage|p1a: Golisopod|191/291
+expect |move|p1b: Pikachu|Splash|p1b: Pikachu
+expect |-nothing
+expect |move|p1a: Golisopod|Substitute|p1a: Golisopod
+expect |-start|p1a: Golisopod|Substitute
+expect |split|p1
+expect |-damage|p1a: Golisopod|119/291
+expect |-damage|p1a: Golisopod|119/291
+expect |-activate|p1a: Golisopod|ability: Emergency Exit
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Chansey|Chansey, F|641/641
+expect |switch|p1a: Chansey|Chansey, F|641/641
+expect |move|p2b: Snorlax|Tackle|p1a: Chansey
+expect |rng|100|70
+expect |rng|24|2
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1a: Chansey|359/641
+expect |-damage|p1a: Chansey|359/641
+expect |
+expect |upkeep
+expect |turn|2

@@ -1,0 +1,52 @@
+# edge-strict-choices: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+@write
+>start {"formatid":"gen9customgame@@@!Team Preview","seed":"sodium,01","strictChoices":true}
+@write
+>player p1 {"name":"A","team":"Pikachu||choicespecs|static|thunderbolt,quickattack|Timid|,,,252,,252||||50|"}
+@write
+>player p2 {"name":"B","team":"Snorlax||leftovers|thickfat|rest,bodyslam,imprison|Timid|,,,252,,252||||50|"}
+@write
+>p1 move 1
+@write
+>p1 move 9
+@write
+>p2 move 1
+@message
+update
+|t:|
+|gametype|singles
+@message
+update
+|player|p1|A||
+@message
+update
+|player|p2|B||
+|gen|9
+|tier|[Gen 9] Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|1
+|teamsize|p2|1
+|start
+|split|p1
+|switch|p1a: Pikachu|Pikachu, L50, F|110/110
+|switch|p1a: Pikachu|Pikachu, L50, F|110/110
+|split|p2
+|switch|p2a: Snorlax|Snorlax, L50, F|235/235
+|switch|p2a: Snorlax|Snorlax, L50, F|235/235
+|turn|1
+@message
+sideupdate
+p1
+|request|{"active":[{"moves":[{"move":"Thunderbolt","id":"thunderbolt","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Quick Attack","id":"quickattack","pp":48,"maxpp":48,"target":"normal","disabled":false}],"canTerastallize":"Electric"}],"side":{"name":"A","id":"p1","pokemon":[{"ident":"p1: Pikachu","details":"Pikachu, L50, F","condition":"110/110","active":true,"stats":{"atk":67,"def":60,"spa":102,"spd":70,"spe":156},"moves":["thunderbolt","quickattack"],"baseAbility":"static","item":"choicespecs","pokeball":"pokeball","ability":"static","commanding":false,"reviving":false,"teraType":"Electric","terastallized":""}]}}
+@message
+sideupdate
+p2
+|request|{"active":[{"moves":[{"move":"Rest","id":"rest","pp":8,"maxpp":8,"target":"self","disabled":false},{"move":"Body Slam","id":"bodyslam","pp":24,"maxpp":24,"target":"normal","disabled":false},{"move":"Imprison","id":"imprison","pp":16,"maxpp":16,"target":"self","disabled":false}],"canTerastallize":"Normal"}],"side":{"name":"B","id":"p2","pokemon":[{"ident":"p2: Snorlax","details":"Snorlax, L50, F","condition":"235/235","active":true,"stats":{"atk":117,"def":85,"spa":117,"spd":130,"spe":90},"moves":["rest","bodyslam","imprison"],"baseAbility":"thickfat","item":"leftovers","pokeball":"pokeball","ability":"thickfat","commanding":false,"reviving":false,"teraType":"Normal","terastallized":""}]}}
+@message
+sideupdate
+p1
+|error|[Invalid choice] Can't move: Your Pikachu doesn't have a move 9
+@error
+[Invalid choice] Can't move: Your Pikachu doesn't have a move 9

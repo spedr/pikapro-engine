@@ -1,0 +1,106 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Dragapult
+Ability: Clear Body
+Hardy Nature
+- Splash
+- Dragon Darts
+
+Mew
+Ability: Synchronize
+Hardy Nature
+- Seismic Toss
+- Splash
+end
+team p2
+Golisopod
+Ability: Emergency Exit
+Hardy Nature
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Hardy Nature
+- Splash
+
+Chansey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+end
+choice p1 move 1, move 1 1
+choice p2 move 1, move 1
+choice p1 move 2 1, move 2
+choice p2 move 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Dragapult|Dragapult, F|317/317
+expect |switch|p1a: Dragapult|Dragapult, F|317/317
+expect |split|p1
+expect |switch|p1b: Mew|Mew|341/341
+expect |switch|p1b: Mew|Mew|341/341
+expect |split|p2
+expect |switch|p2a: Golisopod|Golisopod, F|291/291
+expect |switch|p2a: Golisopod|Golisopod, F|291/291
+expect |split|p2
+expect |switch|p2b: Snorlax|Snorlax, F|461/461
+expect |switch|p2b: Snorlax|Snorlax, F|461/461
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p1a: Dragapult|Splash|p1a: Dragapult
+expect |-nothing
+expect |move|p1b: Mew|Seismic Toss|p2a: Golisopod
+expect |rng|100|18
+expect |split|p2
+expect |-damage|p2a: Golisopod|191/291
+expect |-damage|p2a: Golisopod|191/291
+expect |move|p2a: Golisopod|Splash|p2a: Golisopod
+expect |-nothing
+expect |move|p2b: Snorlax|Splash|p2b: Snorlax
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Dragapult|Dragon Darts|p2a: Golisopod
+expect |rng|100|28
+expect |rng|100|70
+expect |rng|24|2
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Golisopod|134/291
+expect |-damage|p2a: Golisopod|134/291
+expect |-anim|p1a: Dragapult|Dragon Darts|p2b: Snorlax
+expect |rng|24|9
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Snorlax|358/461
+expect |-damage|p2b: Snorlax|358/461
+expect |move|p1b: Mew|Splash|p1b: Mew
+expect |-nothing
+expect |move|p2a: Golisopod|Splash|p2a: Golisopod
+expect |-nothing
+expect |move|p2b: Snorlax|Splash|p2b: Snorlax
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3

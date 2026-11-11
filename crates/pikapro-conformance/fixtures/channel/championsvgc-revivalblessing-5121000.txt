@@ -1,0 +1,747 @@
+# Recorded by channel_conformance. Do not edit by hand.
+format championsvgc
+source revivalblessing
+seed 5121000
+options factored row percent
+player p1
+line |t:|0
+line |gametype|doubles
+line |player|p1|p1||
+line |player|p2|p2||
+line |gen|9
+line |tier|[Gen 9 Champions] VGC 2026 Reg M-B
+line |rule|Species Clause: Limit one of each Pokémon
+line |rule|Item Clause: Limit 1 of each item
+line |clearpoke
+line |poke|p1|Manectric, L50, F|
+line |poke|p1|Swampert, L50, M|
+line |poke|p1|Arbok, L50, M|
+line |poke|p1|Gourgeist-Large, L50, M|
+line |poke|p1|Ariados, L50, F|
+line |poke|p1|Vivillon, L50, F|
+line |poke|p2|Liepard, L50, M|
+line |poke|p2|Toxicroak, L50, M|
+line |poke|p2|Empoleon, L50, F|
+line |poke|p2|Feraligatr, L50, F, shiny|
+line |poke|p2|Greninja, L50, F|
+line |poke|p2|Goodra, L50, F|
+line |teampreview|4
+line |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+line |request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric, L50, F","condition":"177/177","active":true,"stats":{"atk":127,"def":80,"spa":126,"spd":81,"spe":125},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"minus","item":"manectite","pokeball":"pokeball","ability":"minus","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"204/204","active":true,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p1: Arbok","details":"Arbok, L50, M","condition":"157/157","active":false,"stats":{"atk":130,"def":97,"spa":81,"spd":99,"spe":124},"moves":["hornleech","psyshock","healbell","facade"],"baseAbility":"unnerve","item":"","pokeball":"pokeball","ability":"unnerve","commanding":false,"reviving":false},{"ident":"p1: Gourgeist","details":"Gourgeist-Large, L50, M","condition":"151/151","active":false,"stats":{"atk":138,"def":139,"spa":96,"spd":112,"spe":91},"moves":["blastburn","appleacid","chargebeam"],"baseAbility":"pickup","item":"blackglasses","pokeball":"pokeball","ability":"pickup","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":false,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"176/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false}]}}
+decision 91cacdb8595aa835
+line |
+line |t:|0
+line |teamsize|p1|4
+line |teamsize|p2|4
+line |start
+line |uhtmlchange|otsrequest|
+line |switch|p1a: Vivillon|Vivillon, L50, F|176/176
+line |switch|p1b: Ariados|Ariados, L50, F|163/163
+line |switch|p2a: X|Empoleon, L50, F|100/100
+line |switch|p2b: Liepard|Liepard, L50, M|100/100
+line |turn|1
+line |request|{"active":[{"moves":[{"move":"Simple Beam","id":"simplebeam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Bind","id":"bind","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":16,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"176/176","active":true,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":true,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: X","details":"Manectric, L50, F","condition":"177/177","active":false,"stats":{"atk":127,"def":80,"spa":126,"spd":81,"spe":125},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"minus","item":"manectite","pokeball":"pokeball","ability":"minus","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"204/204","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+decision 1e82341d4ae2abfc
+line |
+line |t:|0
+line |switch|p1a: X|Manectric, L50, F|177/177
+line |move|p2b: Liepard|Howl|p2b: Liepard|[spread] p2a,p2b
+line |-boost|p2a: X|atk|1
+line |-boost|p2b: Liepard|atk|1
+line |move|p2a: X|Simple Beam|p1a: X
+line |-ability|p1a: X|Simple|Minus|[from] move: Simple Beam
+line |move|p1b: Ariados|Flamethrower|p1a: X
+line |-damage|p1a: X|127/177
+line |
+line |upkeep
+line |turn|2
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":8,"maxpp":8,"target":"self","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric, L50, F","condition":"127/177","active":true,"stats":{"atk":127,"def":80,"spa":126,"spd":81,"spe":125},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"minus","item":"manectite","pokeball":"pokeball","ability":"simple","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":true,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"176/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"204/204","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+decision 2e3b7ce1dfac5fc3
+line |
+line |t:|0
+line |switch|p2b: Greninja|Greninja, L50, F|100/100
+line |switch|p1a: Vivillon|Vivillon, L50, F|176/176
+line |switch|p1b: Swampert|Swampert, L50, M|204/204
+line |move|p2a: X|Bitter Blade|p1a: Vivillon
+line |-supereffective|p1a: Vivillon|1
+line |-damage|p1a: Vivillon|30/176
+line |
+line |upkeep
+line |turn|3
+line |request|{"active":[{"moves":[{"move":"Simple Beam","id":"simplebeam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Bind","id":"bind","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Belch","id":"belch","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Triple Axel","id":"tripleaxel","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":true,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"204/204","active":true,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p1: X","details":"Manectric, L50, F","condition":"127/177","active":false,"stats":{"atk":127,"def":80,"spa":126,"spd":81,"spe":125},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"minus","item":"manectite","pokeball":"pokeball","ability":"minus","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":false,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+decision c7de09e047ef0821
+line |
+line |t:|0
+line |switch|p1a: X|Manectric, L50, F|127/177
+line |switch|p2a: Chomp|Toxicroak, L50, M|100/100
+line |move|p2b: Greninja|Nuzzle|p1a: X
+line |-resisted|p1a: X|1
+line |-damage|p1a: X|121/177
+line |move|p1b: Swampert|Triple Axel|p2b: Greninja
+line |-resisted|p2b: Greninja|1
+line |-damage|p2b: Greninja|96/100
+line |-resisted|p2b: Greninja|1
+line |-damage|p2b: Greninja|88/100
+line |-hitcount|p2b: Greninja|2
+line |
+line |upkeep
+line |turn|4
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":8,"maxpp":8,"target":"self","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Belch","id":"belch","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Triple Axel","id":"tripleaxel","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric, L50, F","condition":"121/177","active":true,"stats":{"atk":127,"def":80,"spa":126,"spd":81,"spe":125},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"minus","item":"manectite","pokeball":"pokeball","ability":"minus","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"204/204","active":true,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":false,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+decision 231d067d175f982b
+line |
+line |t:|0
+line |move|p2b: Greninja|Nuzzle|p2a: Chomp
+line |-damage|p2a: Chomp|95/100
+line |-status|p2a: Chomp|par
+line |move|p1a: X|Psycho Cut|p1b: Swampert
+line |-crit|p1b: Swampert
+line |-damage|p1b: Swampert|159/204
+line |move|p1b: Swampert|Triple Axel|p1a: X|[miss]
+line |-miss|p1b: Swampert|p1a: X
+line |move|p2a: Chomp|Confuse Ray|p1b: Swampert
+line |-start|p1b: Swampert|confusion
+line |
+line |upkeep
+line |turn|5
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":8,"maxpp":8,"target":"self","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Belch","id":"belch","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Triple Axel","id":"tripleaxel","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric, L50, F","condition":"121/177","active":true,"stats":{"atk":127,"def":80,"spa":126,"spd":81,"spe":125},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"minus","item":"manectite","pokeball":"pokeball","ability":"minus","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"159/204","active":true,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":false,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+decision 33846cebc21e98ac
+line |
+line |t:|0
+line |move|p2b: Greninja|Nuzzle|p1b: Swampert
+line |-immune|p1b: Swampert
+line |move|p1a: X|Psycho Cut|p1b: Swampert
+line |-damage|p1b: Swampert|126/204
+line |-activate|p1b: Swampert|confusion
+line |move|p1b: Swampert|Belch||[still]
+line |-fail|p1b: Swampert
+line |move|p2a: Chomp|Draining Kiss|p2b: Greninja
+line |-supereffective|p2b: Greninja|1
+line |-damage|p2b: Greninja|65/100
+line |-heal|p2a: Chomp|100/100 par|[from] drain|[of] p2b: Greninja
+line |
+line |upkeep
+line |turn|6
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":8,"maxpp":8,"target":"self","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Belch","id":"belch","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Triple Axel","id":"tripleaxel","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric, L50, F","condition":"121/177","active":true,"stats":{"atk":127,"def":80,"spa":126,"spd":81,"spe":125},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"minus","item":"manectite","pokeball":"pokeball","ability":"minus","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"126/204","active":true,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":false,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+decision a84be7d0ba54bc39
+line |
+line |t:|0
+line |detailschange|p2b: Greninja|Greninja-Mega, L50, F
+line |-mega|p2b: Greninja|Greninja|Greninjite
+line |move|p2b: Greninja|Nuzzle|p1a: X
+line |-start|p2b: Greninja|typechange|Electric|[from] ability: Protean
+line |-resisted|p1a: X|1
+line |-damage|p1a: X|109/177
+line |move|p1a: X|Psycho Cut|p2b: Greninja
+line |-damage|p2b: Greninja|41/100
+line |-activate|p1b: Swampert|confusion
+line |-damage|p1b: Swampert|103/204|[from] confusion
+line |move|p2a: Chomp|Dark Pulse|p1a: X
+line |-damage|p1a: X|63/177
+line |
+line |upkeep
+line |turn|7
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":8,"maxpp":8,"target":"self","disabled":false}],"canMegaEvo":true},{"moves":[{"move":"Belch","id":"belch","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Triple Axel","id":"tripleaxel","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric, L50, F","condition":"63/177","active":true,"stats":{"atk":127,"def":80,"spa":126,"spd":81,"spe":125},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"minus","item":"manectite","pokeball":"pokeball","ability":"minus","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"103/204","active":true,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":false,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+decision 8ca02b3a15b7ad59
+line |
+line |t:|0
+line |switch|p2b: X|Empoleon, L50, F|100/100
+line |detailschange|p1a: X|Manectric-Mega, L50, F
+line |-mega|p1a: X|Manectric|Manectite
+line |-ability|p1a: X|Intimidate|boost
+line |-unboost|p2a: Chomp|atk|1
+line |-unboost|p2b: X|atk|1
+line |-ability|p2b: X|Competitive|boost
+line |-boost|p2b: X|spa|2
+line |move|p1a: X|Dark Pulse|p2b: X
+line |-damage|p2b: X|82/100
+line |-activate|p1b: Swampert|confusion
+line |-damage|p1b: Swampert|81/204|[from] confusion
+line |move|p2a: Chomp|Draining Kiss|p1b: Swampert
+line |-damage|p1b: Swampert|63/204
+line |
+line |upkeep
+line |turn|8
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":15,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":8,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Belch","id":"belch","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Triple Axel","id":"tripleaxel","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"63/177","active":true,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"63/204","active":true,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":false,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+decision 8a10c187f157466f
+line |
+line |t:|0
+line |switch|p1b: Ariados|Ariados, L50, F|163/163
+line |move|p1a: X|Metal Sound|p2b: X
+line |-unboost|p2b: X|spd|2
+line |-ability|p2b: X|Competitive|boost
+line |-boost|p2b: X|spa|2
+line |move|p2b: X|Simple Beam|p2a: Chomp
+line |-ability|p2a: Chomp|Simple|Dry Skin|[from] move: Simple Beam
+line |move|p2a: Chomp|Dark Pulse|p1a: X
+line |-damage|p1a: X|28/177
+line |
+line |upkeep
+line |turn|9
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":15,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":8,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"28/177","active":true,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":true,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"63/204","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+decision 629b8b329afc2547
+line |
+line |t:|0
+line |switch|p1b: Swampert|Swampert, L50, M|63/204
+line |switch|p2a: Greninja|Greninja-Mega, L50, F|41/100
+line |move|p1a: X|Metal Sound|p2b: X
+line |-unboost|p2b: X|spd|2
+line |-ability|p2b: X|Competitive|boost
+line |-boost|p2b: X|spa|2
+line |move|p2b: X|Simple Beam|p2a: Greninja
+line |-ability|p2a: Greninja|Simple|Protean|[from] move: Simple Beam
+line |
+line |upkeep
+line |turn|10
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":15,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":8,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Belch","id":"belch","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Triple Axel","id":"tripleaxel","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"28/177","active":true,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"63/204","active":true,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":false,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+decision 8394418fdae519a2
+line |
+line |t:|0
+line |switch|p2b: Chomp|Toxicroak, L50, M|100/100 par
+line |move|p1a: X|Dark Pulse|p1b: Swampert
+line |-damage|p1b: Swampert|17/204
+line |move|p2a: Greninja|Nuzzle|p1b: Swampert
+line |-immune|p1b: Swampert
+line |cant|p1b: Swampert|flinch
+line |
+line |upkeep
+line |turn|11
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":14,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":8,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Belch","id":"belch","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Triple Axel","id":"tripleaxel","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Kowtow Cleave","id":"kowtowcleave","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"28/177","active":true,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"17/204","active":true,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":false,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+decision 33ce111c27b4ca57
+line |
+line |t:|0
+line |switch|p2a: X|Empoleon, L50, F|82/100
+line |switch|p1b: Vivillon|Vivillon, L50, F|30/176
+line |move|p1a: X|No Retreat|p1a: X
+line |-boost|p1a: X|atk|1
+line |-boost|p1a: X|def|1
+line |-boost|p1a: X|spa|1
+line |-boost|p1a: X|spd|1
+line |-boost|p1a: X|spe|1
+line |-start|p1a: X|move: No Retreat
+line |move|p2b: Chomp|Bug Buzz|p1a: X
+line |-damage|p1a: X|9/177
+line |
+line |upkeep
+line |turn|12
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":14,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":7,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Simple Beam","id":"simplebeam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Bind","id":"bind","pp":20,"maxpp":20,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"9/177","active":true,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":true,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"17/204","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":false,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]}}
+decision 172674856bb6e74e
+line |
+line |t:|0
+line |switch|p1b: Swampert|Swampert, L50, M|17/204
+line |move|p1a: X|Dark Pulse|p2a: X
+line |-crit|p2a: X
+line |-damage|p2a: X|44/100
+line |cant|p2a: X|flinch
+line |move|p2b: Chomp|Dark Pulse|p1b: Swampert
+line |-damage|p1b: Swampert|0 fnt
+line |faint|p1b: Swampert
+line |
+line |upkeep
+line |request|{"forceSwitch":[false,true],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"9/177","active":true,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"0 fnt","active":true,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":false,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false}]},"noCancel":true}
+decision 162c543f51417039
+line |
+line |t:|0
+line |switch|p1b: Ariados|Ariados, L50, F|163/163
+line |turn|13
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":7,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"9/177","active":true,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"163/163","active":true,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"0 fnt","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+decision 59c5bca51ce1a2f4
+line |
+line |t:|0
+line |move|p1a: X|No Retreat||[still]
+line |-fail|p1a: X
+line |move|p2a: X|Bitter Blade|p1b: Ariados
+line |-supereffective|p1b: Ariados|1
+line |-damage|p1b: Ariados|89/163
+line |-heal|p2a: X|64/100|[from] drain|[of] p1b: Ariados
+line |move|p1b: Ariados|Flamethrower|p2b: Chomp
+line |-damage|p2b: Chomp|70/100 par
+line |move|p2b: Chomp|Confuse Ray|p1b: Ariados
+line |-start|p1b: Ariados|confusion
+line |
+line |upkeep
+line |turn|14
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":6,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"9/177","active":true,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"89/163","active":true,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"0 fnt","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+decision 4bc909d3789a1b32
+line |
+line |t:|0
+line |move|p1a: X|Metal Sound|p1b: Ariados
+line |-unboost|p1b: Ariados|spd|2
+line |move|p2a: X|Simple Beam|p2b: Chomp
+line |-ability|p2b: Chomp|Simple|Dry Skin|[from] move: Simple Beam
+line |-activate|p1b: Ariados|confusion
+line |move|p1b: Ariados|Flamethrower|p2a: X
+line |-damage|p2a: X|50/100g
+line |move|p2b: Chomp|Bug Buzz|p2a: X
+line |-resisted|p2a: X|1
+line |-damage|p2a: X|44/100
+line |-unboost|p2a: X|spd|1
+line |
+line |upkeep
+line |turn|15
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":6,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":13,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"9/177","active":true,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"89/163","active":true,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"0 fnt","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+decision 8d0cde54159b16c4
+line |
+line |t:|0
+line |switch|p2a: Liepard|Liepard, L50, M|100/100
+line |move|p1a: X|Dark Pulse|p2a: Liepard
+line |-resisted|p2a: Liepard|1
+line |-damage|p2a: Liepard|68/100
+line |-activate|p1b: Ariados|confusion
+line |move|p1b: Ariados|Flamethrower|p2b: Chomp
+line |-damage|p2b: Chomp|47/100 par
+line |move|p2b: Chomp|Confuse Ray||[still]
+line |-fail|p2b: Chomp
+line |
+line |upkeep
+line |turn|16
+line |request|{"active":[{"moves":[{"move":"Metal Sound","id":"metalsound","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Psycho Cut","id":"psychocut","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":12,"maxpp":16,"target":"any","disabled":false},{"move":"No Retreat","id":"noretreat","pp":6,"maxpp":8,"target":"self","disabled":false}],"trapped":true},{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":12,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"9/177","active":true,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"89/163","active":true,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"0 fnt","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+decision 424a945ba78d6009
+line |
+line |t:|0
+line |move|p1a: X|Metal Sound|p1b: Ariados
+line |-unboost|p1b: Ariados|spd|2
+line |move|p2a: Liepard|Howl|p2a: Liepard|[spread] p2a,p2b
+line |-boost|p2a: Liepard|atk|1
+line |-boost|p2b: Chomp|atk|2
+line |-activate|p1b: Ariados|confusion
+line |-damage|p1b: Ariados|70/163|[from] confusion
+line |move|p2b: Chomp|Bug Buzz|p1a: X
+line |-damage|p1a: X|0 fnt
+line |faint|p1a: X
+line |
+line |upkeep
+line |request|{"forceSwitch":[true,false],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"0 fnt","active":true,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"70/163","active":true,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":false,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"0 fnt","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]},"noCancel":true}
+decision 75ed046fae90dc71
+line |
+line |t:|0
+line |switch|p1a: Vivillon|Vivillon, L50, F|30/176
+line |turn|17
+line |request|{"active":[{"moves":[{"move":"Simple Beam","id":"simplebeam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Bind","id":"bind","pp":20,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":12,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"30/176","active":true,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"70/163","active":true,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"0 fnt","active":false,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"0 fnt","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+decision 98da9e9ca83e8323
+line |
+line |t:|0
+line |move|p2a: Liepard|Protect|p2a: Liepard
+line |-singleturn|p2a: Liepard|Protect
+line |move|p1a: Vivillon|Bind|p1b: Ariados
+line |-damage|p1b: Ariados|66/163
+line |-activate|p1b: Ariados|move: Bind|[of] p1a: Vivillon
+line |-end|p1b: Ariados|confusion
+line |move|p1b: Ariados|Flamethrower|p1a: Vivillon
+line |-supereffective|p1a: Vivillon|1
+line |-damage|p1a: Vivillon|0 fnt
+line |faint|p1a: Vivillon
+line |move|p2b: Chomp|Draining Kiss|p1b: Ariados
+line |-resisted|p1b: Ariados|1
+line |-damage|p1b: Ariados|35/163
+line |-heal|p2b: Chomp|61/100 par|[from] drain|[of] p1b: Ariados
+line |
+line |-end|p1b: Ariados|Bind|[partiallytrapped]|[silent]
+line |upkeep
+line |turn|18
+line |request|{"active":[{"moves":[{"move":"Simple Beam","id":"simplebeam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Bind","id":"bind","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":11,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"0 fnt","active":true,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"35/163","active":true,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"0 fnt","active":false,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"0 fnt","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+decision 73aa5c9ecfdeec94
+line |
+line |t:|0
+line |switch|p2b: X|Empoleon, L50, F|44/100
+line |move|p2a: Liepard|Howl|p2a: Liepard|[spread] p2a,p2b
+line |-boost|p2a: Liepard|atk|1
+line |-boost|p2b: X|atk|1
+line |move|p1b: Ariados|Flamethrower|p2b: X
+line |-damage|p2b: X|31/100
+line |
+line |upkeep
+line |turn|19
+line |request|{"active":[{"moves":[{"move":"Simple Beam","id":"simplebeam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Bind","id":"bind","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":10,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"0 fnt","active":true,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"35/163","active":true,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"0 fnt","active":false,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"0 fnt","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+decision cd963f57e413ec97
+line |
+line |t:|0
+line |switch|p2a: Chomp|Toxicroak, L50, M|61/100 par
+line |switch|p2b: Greninja|Greninja-Mega, L50, F|41/100
+line |move|p1b: Ariados|Flamethrower|p2a: Chomp
+line |-damage|p2a: Chomp|30/100 par
+line |
+line |upkeep
+line |turn|20
+line |request|{"active":[{"moves":[{"move":"Simple Beam","id":"simplebeam","pp":16,"maxpp":16,"target":"normal","disabled":false},{"move":"Bind","id":"bind","pp":19,"maxpp":20,"target":"normal","disabled":false}]},{"moves":[{"move":"Flamethrower","id":"flamethrower","pp":9,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p1","id":"p1","pokemon":[{"ident":"p1: Vivillon","details":"Vivillon, L50, F","condition":"0 fnt","active":true,"stats":{"atk":74,"def":82,"spa":132,"spd":79,"spe":110},"moves":["simplebeam","bind"],"baseAbility":"friendguard","item":"","pokeball":"pokeball","ability":"friendguard","commanding":false,"reviving":false},{"ident":"p1: Ariados","details":"Ariados, L50, F","condition":"35/163","active":true,"stats":{"atk":110,"def":99,"spa":105,"spd":100,"spe":64},"moves":["flamethrower"],"baseAbility":"insomnia","item":"","pokeball":"pokeball","ability":"insomnia","commanding":false,"reviving":false},{"ident":"p1: X","details":"Manectric-Mega, L50, F","condition":"0 fnt","active":false,"stats":{"atk":127,"def":100,"spa":156,"spd":101,"spe":155},"moves":["metalsound","psychocut","darkpulse","noretreat"],"baseAbility":"intimidate","item":"manectite","pokeball":"pokeball","ability":"intimidate","commanding":false,"reviving":false},{"ident":"p1: Swampert","details":"Swampert, L50, M","condition":"0 fnt","active":false,"stats":{"atk":139,"def":113,"spa":128,"spd":122,"spe":72},"moves":["belch","tripleaxel","kowtowcleave"],"baseAbility":"torrent","item":"","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false}]}}
+decision eaf8b10009d93a7b
+line |
+line |t:|0
+line |switch|p2b: X|Empoleon, L50, F|31/100
+line |move|p1b: Ariados|Flamethrower|p2a: Chomp
+line |-damage|p2a: Chomp|2/100 par
+line |move|p2a: Chomp|Bug Buzz|p1b: Ariados
+line |-resisted|p1b: Ariados|1
+line |-damage|p1b: Ariados|0 fnt
+line |faint|p1b: Ariados
+line |
+line |win|p2
+player p2
+line |t:|0
+line |gametype|doubles
+line |player|p1|p1||
+line |player|p2|p2||
+line |gen|9
+line |tier|[Gen 9 Champions] VGC 2026 Reg M-B
+line |rule|Species Clause: Limit one of each Pokémon
+line |rule|Item Clause: Limit 1 of each item
+line |clearpoke
+line |poke|p1|Manectric, L50, F|
+line |poke|p1|Swampert, L50, M|
+line |poke|p1|Arbok, L50, M|
+line |poke|p1|Gourgeist-Large, L50, M|
+line |poke|p1|Ariados, L50, F|
+line |poke|p1|Vivillon, L50, F|
+line |poke|p2|Liepard, L50, M|
+line |poke|p2|Toxicroak, L50, M|
+line |poke|p2|Empoleon, L50, F|
+line |poke|p2|Feraligatr, L50, F, shiny|
+line |poke|p2|Greninja, L50, F|
+line |poke|p2|Goodra, L50, F|
+line |teampreview|4
+line |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+line |request|{"teamPreview":true,"maxChosenTeamSize":4,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":true,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"181/181","active":false,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Feraligatr","details":"Feraligatr, L50, F, shiny","condition":"182/182","active":false,"stats":{"atk":125,"def":108,"spa":108,"spd":111,"spe":137},"moves":["blazekick","woodhammer"],"baseAbility":"torrent","item":"focussash","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja, L50, F","condition":"148/148","active":false,"stats":{"atk":116,"def":96,"spa":153,"spd":120,"spe":127},"moves":["swallow","nuzzle","airslash"],"baseAbility":"torrent","item":"greninjite","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Goodra","details":"Goodra, L50, F","condition":"184/184","active":false,"stats":{"atk":122,"def":132,"spa":145,"spd":153,"spe":100},"moves":["mudslap","destinybond","auroraveil"],"baseAbility":"hydration","item":"","pokeball":"pokeball","ability":"hydration","commanding":false,"reviving":false}]}}
+decision 39215ce6bed1aed6
+line |
+line |t:|0
+line |teamsize|p1|4
+line |teamsize|p2|4
+line |start
+line |uhtmlchange|otsrequest|
+line |switch|p1a: Vivillon|Vivillon, L50, F|100/100
+line |switch|p1b: Ariados|Ariados, L50, F|100/100
+line |switch|p2a: X|Empoleon, L50, F|181/181
+line |switch|p2b: Liepard|Liepard, L50, M|151/151
+line |turn|1
+line |request|{"active":[{"moves":[{"move":"Bitter Blade","id":"bitterblade","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Simple Beam","id":"simplebeam","pp":16,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Howl","id":"howl","pp":20,"maxpp":20,"target":"allies","disabled":false},{"move":"Protect","id":"protect","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Empoleon, L50, F","condition":"181/181","active":true,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":true,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja, L50, F","condition":"148/148","active":false,"stats":{"atk":116,"def":96,"spa":153,"spd":120,"spe":127},"moves":["swallow","nuzzle","airslash"],"baseAbility":"torrent","item":"greninjite","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167","active":false,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false}]}}
+decision 4b27d242b10f3bd3
+line |
+line |t:|0
+line |switch|p1a: X|Manectric, L50, F|100/100
+line |move|p2b: Liepard|Howl|p2b: Liepard|[spread] p2a,p2b
+line |-boost|p2a: X|atk|1
+line |-boost|p2b: Liepard|atk|1
+line |move|p2a: X|Simple Beam|p1a: X
+line |-ability|p1a: X|Simple|Minus|[from] move: Simple Beam
+line |move|p1b: Ariados|Flamethrower|p1a: X
+line |-damage|p1a: X|71/100
+line |
+line |upkeep
+line |turn|2
+line |request|{"active":[{"moves":[{"move":"Bitter Blade","id":"bitterblade","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Simple Beam","id":"simplebeam","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Howl","id":"howl","pp":19,"maxpp":20,"target":"allies","disabled":false},{"move":"Protect","id":"protect","pp":8,"maxpp":8,"target":"self","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Empoleon, L50, F","condition":"181/181","active":true,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":true,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja, L50, F","condition":"148/148","active":false,"stats":{"atk":116,"def":96,"spa":153,"spd":120,"spe":127},"moves":["swallow","nuzzle","airslash"],"baseAbility":"torrent","item":"greninjite","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167","active":false,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false}]}}
+decision a1d5944679436a5e
+line |
+line |t:|0
+line |switch|p2b: Greninja|Greninja, L50, F|148/148
+line |switch|p1a: Vivillon|Vivillon, L50, F|100/100
+line |switch|p1b: Swampert|Swampert, L50, M|100/100
+line |move|p2a: X|Bitter Blade|p1a: Vivillon
+line |-supereffective|p1a: Vivillon|1
+line |-damage|p1a: Vivillon|17/100
+line |
+line |upkeep
+line |turn|3
+line |request|{"active":[{"moves":[{"move":"Bitter Blade","id":"bitterblade","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Simple Beam","id":"simplebeam","pp":15,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Swallow","id":"swallow","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Nuzzle","id":"nuzzle","pp":20,"maxpp":20,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":16,"maxpp":16,"target":"any","disabled":false}],"canMegaEvo":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Empoleon, L50, F","condition":"181/181","active":true,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja, L50, F","condition":"148/148","active":true,"stats":{"atk":116,"def":96,"spa":153,"spd":120,"spe":127},"moves":["swallow","nuzzle","airslash"],"baseAbility":"torrent","item":"greninjite","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167","active":false,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false}]}}
+decision 2940b1abac473ff0
+line |
+line |t:|0
+line |switch|p1a: X|Manectric, L50, F|71/100
+line |switch|p2a: Chomp|Toxicroak, L50, M|167/167
+line |move|p2b: Greninja|Nuzzle|p1a: X
+line |-resisted|p1a: X|1
+line |-damage|p1a: X|68/100
+line |move|p1b: Swampert|Triple Axel|p2b: Greninja
+line |-resisted|p2b: Greninja|1
+line |-damage|p2b: Greninja|143/148
+line |-resisted|p2b: Greninja|1
+line |-damage|p2b: Greninja|131/148
+line |-hitcount|p2b: Greninja|2
+line |
+line |upkeep
+line |turn|4
+line |request|{"active":[{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Swallow","id":"swallow","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Nuzzle","id":"nuzzle","pp":19,"maxpp":20,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":16,"maxpp":16,"target":"any","disabled":false}],"canMegaEvo":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja, L50, F","condition":"131/148","active":true,"stats":{"atk":116,"def":96,"spa":153,"spd":120,"spe":127},"moves":["swallow","nuzzle","airslash"],"baseAbility":"torrent","item":"greninjite","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"181/181","active":false,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+decision adb82c69eb9e0dd3
+line |
+line |t:|0
+line |move|p2b: Greninja|Nuzzle|p2a: Chomp
+line |-damage|p2a: Chomp|159/167
+line |-status|p2a: Chomp|par
+line |move|p1a: X|Psycho Cut|p1b: Swampert
+line |-crit|p1b: Swampert
+line |-damage|p1b: Swampert|77/100
+line |move|p1b: Swampert|Triple Axel|p1a: X|[miss]
+line |-miss|p1b: Swampert|p1a: X
+line |move|p2a: Chomp|Confuse Ray|p1b: Swampert
+line |-start|p1b: Swampert|confusion
+line |
+line |upkeep
+line |turn|5
+line |request|{"active":[{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":12,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Swallow","id":"swallow","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Nuzzle","id":"nuzzle","pp":18,"maxpp":20,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":16,"maxpp":16,"target":"any","disabled":false}],"canMegaEvo":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"159/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja, L50, F","condition":"131/148","active":true,"stats":{"atk":116,"def":96,"spa":153,"spd":120,"spe":127},"moves":["swallow","nuzzle","airslash"],"baseAbility":"torrent","item":"greninjite","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"181/181","active":false,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+decision 5db543181d5fc59d
+line |
+line |t:|0
+line |move|p2b: Greninja|Nuzzle|p1b: Swampert
+line |-immune|p1b: Swampert
+line |move|p1a: X|Psycho Cut|p1b: Swampert
+line |-damage|p1b: Swampert|61/100
+line |-activate|p1b: Swampert|confusion
+line |move|p1b: Swampert|Belch||[still]
+line |-fail|p1b: Swampert
+line |move|p2a: Chomp|Draining Kiss|p2b: Greninja
+line |-supereffective|p2b: Greninja|1
+line |-damage|p2b: Greninja|97/148
+line |-heal|p2a: Chomp|167/167 par|[from] drain|[of] p2b: Greninja
+line |
+line |upkeep
+line |turn|6
+line |request|{"active":[{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":16,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Swallow","id":"swallow","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Nuzzle","id":"nuzzle","pp":17,"maxpp":20,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":16,"maxpp":16,"target":"any","disabled":false}],"canMegaEvo":true}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja, L50, F","condition":"97/148","active":true,"stats":{"atk":116,"def":96,"spa":153,"spd":120,"spe":127},"moves":["swallow","nuzzle","airslash"],"baseAbility":"torrent","item":"greninjite","pokeball":"pokeball","ability":"torrent","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"181/181","active":false,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+decision 926ca8fa560f7a0c
+line |
+line |t:|0
+line |detailschange|p2b: Greninja|Greninja-Mega, L50, F
+line |-mega|p2b: Greninja|Greninja|Greninjite
+line |move|p2b: Greninja|Nuzzle|p1a: X
+line |-start|p2b: Greninja|typechange|Electric|[from] ability: Protean
+line |-resisted|p1a: X|1
+line |-damage|p1a: X|61/100
+line |move|p1a: X|Psycho Cut|p2b: Greninja
+line |-damage|p2b: Greninja|62/148
+line |-activate|p1b: Swampert|confusion
+line |-damage|p1b: Swampert|50/100g|[from] confusion
+line |move|p2a: Chomp|Dark Pulse|p1a: X
+line |-damage|p1a: X|35/100
+line |
+line |upkeep
+line |turn|7
+line |request|{"active":[{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":15,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Swallow","id":"swallow","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Nuzzle","id":"nuzzle","pp":16,"maxpp":20,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":16,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":true,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"181/181","active":false,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+decision 9aeeb328e6af7e37
+line |
+line |t:|0
+line |switch|p2b: X|Empoleon, L50, F|181/181
+line |detailschange|p1a: X|Manectric-Mega, L50, F
+line |-mega|p1a: X|Manectric|Manectite
+line |-ability|p1a: X|Intimidate|boost
+line |-unboost|p2a: Chomp|atk|1
+line |-unboost|p2b: X|atk|1
+line |-ability|p2b: X|Competitive|boost
+line |-boost|p2b: X|spa|2
+line |move|p1a: X|Dark Pulse|p2b: X
+line |-damage|p2b: X|149/181
+line |-activate|p1b: Swampert|confusion
+line |-damage|p1b: Swampert|39/100|[from] confusion
+line |move|p2a: Chomp|Draining Kiss|p1b: Swampert
+line |-damage|p1b: Swampert|30/100
+line |
+line |upkeep
+line |turn|8
+line |request|{"active":[{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":15,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Bitter Blade","id":"bitterblade","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Simple Beam","id":"simplebeam","pp":15,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"149/181","active":true,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":false,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+decision dc23fa1c53f92994
+line |
+line |t:|0
+line |switch|p1b: Ariados|Ariados, L50, F|100/100
+line |move|p1a: X|Metal Sound|p2b: X
+line |-unboost|p2b: X|spd|2
+line |-ability|p2b: X|Competitive|boost
+line |-boost|p2b: X|spa|2
+line |move|p2b: X|Simple Beam|p2a: Chomp
+line |-ability|p2a: Chomp|Simple|Dry Skin|[from] move: Simple Beam
+line |move|p2a: Chomp|Dark Pulse|p1a: X
+line |-damage|p1a: X|15/100
+line |
+line |upkeep
+line |turn|9
+line |request|{"active":[{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":14,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":12,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Bitter Blade","id":"bitterblade","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Simple Beam","id":"simplebeam","pp":14,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"simple","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"149/181","active":true,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":false,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+decision 8e94d894525f4f05
+line |
+line |t:|0
+line |switch|p1b: Swampert|Swampert, L50, M|30/100
+line |switch|p2a: Greninja|Greninja-Mega, L50, F|62/148
+line |move|p1a: X|Metal Sound|p2b: X
+line |-unboost|p2b: X|spd|2
+line |-ability|p2b: X|Competitive|boost
+line |-boost|p2b: X|spa|2
+line |move|p2b: X|Simple Beam|p2a: Greninja
+line |-ability|p2a: Greninja|Simple|Protean|[from] move: Simple Beam
+line |
+line |upkeep
+line |turn|10
+line |request|{"active":[{"moves":[{"move":"Swallow","id":"swallow","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Nuzzle","id":"nuzzle","pp":16,"maxpp":20,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":16,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Bitter Blade","id":"bitterblade","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Simple Beam","id":"simplebeam","pp":13,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":true,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"simple","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"149/181","active":true,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167 par","active":false,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false}]}}
+decision 5fae4b9a668cae8f
+line |
+line |t:|0
+line |switch|p2b: Chomp|Toxicroak, L50, M|167/167 par
+line |move|p1a: X|Dark Pulse|p1b: Swampert
+line |-damage|p1b: Swampert|8/100
+line |move|p2a: Greninja|Nuzzle|p1b: Swampert
+line |-immune|p1b: Swampert
+line |cant|p1b: Swampert|flinch
+line |
+line |upkeep
+line |turn|11
+line |request|{"active":[{"moves":[{"move":"Swallow","id":"swallow","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Nuzzle","id":"nuzzle","pp":15,"maxpp":20,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":16,"maxpp":16,"target":"any","disabled":false}]},{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":14,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":12,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":true,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"simple","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"149/181","active":false,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+decision 37b4f7d9875efcac
+line |
+line |t:|0
+line |switch|p2a: X|Empoleon, L50, F|149/181
+line |switch|p1b: Vivillon|Vivillon, L50, F|17/100
+line |move|p1a: X|No Retreat|p1a: X
+line |-boost|p1a: X|atk|1
+line |-boost|p1a: X|def|1
+line |-boost|p1a: X|spa|1
+line |-boost|p1a: X|spd|1
+line |-boost|p1a: X|spe|1
+line |-start|p1a: X|move: No Retreat
+line |move|p2b: Chomp|Bug Buzz|p1a: X
+line |-damage|p1a: X|5/100
+line |
+line |upkeep
+line |turn|12
+line |request|{"active":[{"moves":[{"move":"Bitter Blade","id":"bitterblade","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Simple Beam","id":"simplebeam","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":14,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Empoleon, L50, F","condition":"149/181","active":true,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":false,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+decision b0dacb0e6c703243
+line |
+line |t:|0
+line |switch|p1b: Swampert|Swampert, L50, M|8/100
+line |move|p1a: X|Dark Pulse|p2a: X
+line |-crit|p2a: X
+line |-damage|p2a: X|80/181
+line |cant|p2a: X|flinch
+line |move|p2b: Chomp|Dark Pulse|p1b: Swampert
+line |-damage|p1b: Swampert|0 fnt
+line |faint|p1b: Swampert
+line |
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Empoleon, L50, F","condition":"80/181","active":true,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":false,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+line |
+line |t:|0
+line |switch|p1b: Ariados|Ariados, L50, F|100/100
+line |turn|13
+line |request|{"active":[{"moves":[{"move":"Bitter Blade","id":"bitterblade","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Simple Beam","id":"simplebeam","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":11,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Empoleon, L50, F","condition":"80/181","active":true,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"167/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":false,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+decision 1bf08cbb360542d3
+line |
+line |t:|0
+line |move|p1a: X|No Retreat||[still]
+line |-fail|p1a: X
+line |move|p2a: X|Bitter Blade|p1b: Ariados
+line |-supereffective|p1b: Ariados|1
+line |-damage|p1b: Ariados|54/100
+line |-heal|p2a: X|117/181|[from] drain|[of] p1b: Ariados
+line |move|p1b: Ariados|Flamethrower|p2b: Chomp
+line |-damage|p2b: Chomp|118/167 par
+line |move|p2b: Chomp|Confuse Ray|p1b: Ariados
+line |-start|p1b: Ariados|confusion
+line |
+line |upkeep
+line |turn|14
+line |request|{"active":[{"moves":[{"move":"Bitter Blade","id":"bitterblade","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Simple Beam","id":"simplebeam","pp":13,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":11,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Empoleon, L50, F","condition":"117/181","active":true,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"118/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":false,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+decision 9643029d16f69cc7
+line |
+line |t:|0
+line |move|p1a: X|Metal Sound|p1b: Ariados
+line |-unboost|p1b: Ariados|spd|2
+line |move|p2a: X|Simple Beam|p2b: Chomp
+line |-ability|p2b: Chomp|Simple|Dry Skin|[from] move: Simple Beam
+line |-activate|p1b: Ariados|confusion
+line |move|p1b: Ariados|Flamethrower|p2a: X
+line |-damage|p2a: X|92/181
+line |move|p2b: Chomp|Bug Buzz|p2a: X
+line |-resisted|p2a: X|1
+line |-damage|p2a: X|80/181
+line |-unboost|p2a: X|spd|1
+line |
+line |upkeep
+line |turn|15
+line |request|{"active":[{"moves":[{"move":"Bitter Blade","id":"bitterblade","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Simple Beam","id":"simplebeam","pp":12,"maxpp":16,"target":"normal","disabled":false}]},{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: X","details":"Empoleon, L50, F","condition":"80/181","active":true,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"118/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"simple","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"151/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":false,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+decision 8bff06428562eb9d
+line |
+line |t:|0
+line |switch|p2a: Liepard|Liepard, L50, M|151/151
+line |move|p1a: X|Dark Pulse|p2a: Liepard
+line |-resisted|p2a: Liepard|1
+line |-damage|p2a: Liepard|103/151
+line |-activate|p1b: Ariados|confusion
+line |move|p1b: Ariados|Flamethrower|p2b: Chomp
+line |-damage|p2b: Chomp|80/167 par
+line |move|p2b: Chomp|Confuse Ray||[still]
+line |-fail|p2b: Chomp
+line |
+line |upkeep
+line |turn|16
+line |request|{"active":[{"moves":[{"move":"Howl","id":"howl","pp":19,"maxpp":20,"target":"allies","disabled":false},{"move":"Protect","id":"protect","pp":8,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":10,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"103/151","active":true,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"80/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"simple","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"80/181","active":false,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":false,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+decision 43a51f0a5849ee3e
+line |
+line |t:|0
+line |move|p1a: X|Metal Sound|p1b: Ariados
+line |-unboost|p1b: Ariados|spd|2
+line |move|p2a: Liepard|Howl|p2a: Liepard|[spread] p2a,p2b
+line |-boost|p2a: Liepard|atk|1
+line |-boost|p2b: Chomp|atk|2
+line |-activate|p1b: Ariados|confusion
+line |-damage|p1b: Ariados|42/100|[from] confusion
+line |move|p2b: Chomp|Bug Buzz|p1a: X
+line |-damage|p1a: X|0 fnt
+line |faint|p1a: X
+line |
+line |upkeep
+line |request|{"wait":true,"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"103/151","active":true,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"80/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"simple","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"80/181","active":false,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":false,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+line |
+line |t:|0
+line |switch|p1a: Vivillon|Vivillon, L50, F|17/100
+line |turn|17
+line |request|{"active":[{"moves":[{"move":"Howl","id":"howl","pp":18,"maxpp":20,"target":"allies","disabled":false},{"move":"Protect","id":"protect","pp":8,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":9,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"103/151","active":true,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"80/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"simple","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"80/181","active":false,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":false,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+decision 3709118f381ab844
+line |
+line |t:|0
+line |move|p2a: Liepard|Protect|p2a: Liepard
+line |-singleturn|p2a: Liepard|Protect
+line |move|p1a: Vivillon|Bind|p1b: Ariados
+line |-damage|p1b: Ariados|40/100
+line |-activate|p1b: Ariados|move: Bind|[of] p1a: Vivillon
+line |-end|p1b: Ariados|confusion
+line |move|p1b: Ariados|Flamethrower|p1a: Vivillon
+line |-supereffective|p1a: Vivillon|1
+line |-damage|p1a: Vivillon|0 fnt
+line |faint|p1a: Vivillon
+line |move|p2b: Chomp|Draining Kiss|p1b: Ariados
+line |-resisted|p1b: Ariados|1
+line |-damage|p1b: Ariados|21/100
+line |-heal|p2b: Chomp|103/167 par|[from] drain|[of] p1b: Ariados
+line |
+line |-end|p1b: Ariados|Bind|[partiallytrapped]|[silent]
+line |upkeep
+line |turn|18
+line |request|{"active":[{"moves":[{"move":"Howl","id":"howl","pp":18,"maxpp":20,"target":"allies","disabled":false},{"move":"Protect","id":"protect","pp":7,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":9,"maxpp":12,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"103/151","active":true,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"103/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"simple","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"80/181","active":false,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":false,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+decision 7b4452f64ba2780e
+line |
+line |t:|0
+line |switch|p2b: X|Empoleon, L50, F|80/181
+line |move|p2a: Liepard|Howl|p2a: Liepard|[spread] p2a,p2b
+line |-boost|p2a: Liepard|atk|1
+line |-boost|p2b: X|atk|1
+line |move|p1b: Ariados|Flamethrower|p2b: X
+line |-damage|p2b: X|57/181
+line |
+line |upkeep
+line |turn|19
+line |request|{"active":[{"moves":[{"move":"Howl","id":"howl","pp":17,"maxpp":20,"target":"allies","disabled":false},{"move":"Protect","id":"protect","pp":7,"maxpp":8,"target":"self","disabled":false}]},{"moves":[{"move":"Bitter Blade","id":"bitterblade","pp":10,"maxpp":12,"target":"normal","disabled":false},{"move":"Simple Beam","id":"simplebeam","pp":12,"maxpp":16,"target":"normal","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"103/151","active":true,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"57/181","active":true,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false},{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"103/167 par","active":false,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":false,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false}]}}
+decision df3d2901eb5d92e6
+line |
+line |t:|0
+line |switch|p2a: Chomp|Toxicroak, L50, M|103/167 par
+line |switch|p2b: Greninja|Greninja-Mega, L50, F|62/148
+line |move|p1b: Ariados|Flamethrower|p2a: Chomp
+line |-damage|p2a: Chomp|51/167 par
+line |
+line |upkeep
+line |turn|20
+line |request|{"active":[{"moves":[{"move":"Draining Kiss","id":"drainingkiss","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Confuse Ray","id":"confuseray","pp":9,"maxpp":12,"target":"normal","disabled":false},{"move":"Dark Pulse","id":"darkpulse","pp":13,"maxpp":16,"target":"any","disabled":false},{"move":"Bug Buzz","id":"bugbuzz","pp":9,"maxpp":12,"target":"normal","disabled":false}]},{"moves":[{"move":"Swallow","id":"swallow","pp":12,"maxpp":12,"target":"self","disabled":false},{"move":"Nuzzle","id":"nuzzle","pp":15,"maxpp":20,"target":"normal","disabled":false},{"move":"Air Slash","id":"airslash","pp":16,"maxpp":16,"target":"any","disabled":false}]}],"side":{"name":"p2","id":"p2","pokemon":[{"ident":"p2: Chomp","details":"Toxicroak, L50, M","condition":"51/167 par","active":true,"stats":{"atk":129,"def":114,"spa":108,"spd":99,"spe":110},"moves":["drainingkiss","confuseray","darkpulse","bugbuzz"],"baseAbility":"dryskin","item":"","pokeball":"pokeball","ability":"dryskin","commanding":false,"reviving":false},{"ident":"p2: Greninja","details":"Greninja-Mega, L50, F","condition":"62/148","active":true,"stats":{"atk":146,"def":107,"spa":183,"spd":130,"spe":145},"moves":["swallow","nuzzle","airslash"],"baseAbility":"protean","item":"greninjite","pokeball":"pokeball","ability":"protean","commanding":false,"reviving":false},{"ident":"p2: Liepard","details":"Liepard, L50, M","condition":"103/151","active":false,"stats":{"atk":118,"def":93,"spa":110,"spd":78,"spe":138},"moves":["howl","protect"],"baseAbility":"limber","item":"","pokeball":"pokeball","ability":"limber","commanding":false,"reviving":false},{"ident":"p2: X","details":"Empoleon, L50, F","condition":"57/181","active":false,"stats":{"atk":102,"def":112,"spa":133,"spd":162,"spe":81},"moves":["bitterblade","simplebeam"],"baseAbility":"competitive","item":"quickclaw","pokeball":"pokeball","ability":"competitive","commanding":false,"reviving":false}]}}
+decision 64ca5de95ccdca2d
+line |
+line |t:|0
+line |switch|p2b: X|Empoleon, L50, F|57/181
+line |move|p1b: Ariados|Flamethrower|p2a: Chomp
+line |-damage|p2a: Chomp|5/167 par
+line |move|p2a: Chomp|Bug Buzz|p1b: Ariados
+line |-resisted|p1b: Ariados|1
+line |-damage|p1b: Ariados|0 fnt
+line |faint|p1b: Ariados
+line |
+line |win|p2

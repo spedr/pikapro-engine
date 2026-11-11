@@ -1,0 +1,459 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 491f a7b9 e3bd 7b2d
+genders drawn
+team p1
+Ninetales (F) @ Twisted Spoon
+Ability: Flash Fire
+Level: 50
+Tera Type: Electric
+EVs: 1 HP / 22 Atk / 13 Def / 20 SpA / 1 SpD / 5 Spe
+Sassy Nature
+- Overheat
+- Meteor Mash
+- Soak
+- Giga Drain
+
+Victreebel (F) @ Persim Berry
+Ability: Chlorophyll
+Level: 50
+Tera Type: Normal
+EVs: 1 HP / 23 Atk / 10 Def / 8 SpD / 23 Spe
+Bold Nature
+- Flamethrower
+- Twin Beam
+
+Alcremie-Rainbow-Swirl @ Misty Seed
+Ability: Aroma Veil
+Level: 50
+Tera Type: Normal
+EVs: 11 HP / 10 Atk / 1 SpA / 23 SpD / 15 Spe
+Naive Nature
+- Future Sight
+- Crunch
+- Rain Dance
+
+Sparky (Primarina)
+Ability: Liquid Voice
+Level: 50
+Tera Type: Water
+EVs: 4 HP / 5 Atk / 3 Def / 3 SpA / 19 SpD / 31 Spe
+Adamant Nature
+- Charge
+- Overdrive
+- Hyper Voice
+- Drum Beating
+
+Morpeko
+Ability: Hunger Switch
+Level: 50
+Tera Type: Ice
+EVs: 28 HP / 24 Atk / 3 Def / 3 SpA / 8 Spe
+Quirky Nature
+- Charge
+- Aura Wheel
+- Speed Swap
+- Power Shift
+
+Pikachu (Avalugg-Hisui) @ Spell Tag
+Ability: Strong Jaw
+Level: 50
+Tera Type: Electric
+EVs: 29 HP / 6 Atk / 1 Def / 8 SpA / 15 SpD / 7 Spe
+Brave Nature
+- Charge
+- Terrain Pulse
+- Electric Terrain
+- Light Screen
+end
+team p2
+Ariados @ Payapa Berry
+Ability: Sniper
+Level: 50
+Tera Type: Fire
+EVs: 6 HP / 8 Atk / 1 Def / 18 SpA / 1 SpD / 32 Spe
+Bashful Nature
+- Hard Press
+- Horn Leech
+
+Big Tony's Pal (Sylveon) @ Focus Band
+Ability: Cute Charm
+Level: 50
+Tera Type: Electric
+EVs: 24 HP / 4 Atk / 32 SpA / 5 SpD
+Quirky Nature
+- Charge
+- Terrain Pulse
+- Electric Terrain
+- Role Play
+
+Zoë (Dragapult) (M) @ Heat Rock
+Ability: Cursed Body
+Level: 50
+Shiny: Yes
+Tera Type: Fire
+EVs: 3 Atk / 12 Def / 29 SpA / 15 SpD
+Modest Nature
+- Struggle
+- Double Team
+
+Wigglytuff (M) @ Eject Button
+Ability: Cute Charm
+Level: 50
+Tera Type: Fighting
+EVs: 3 Atk / 9 Def / 12 SpA / 17 SpD / 25 Spe
+Gentle Nature
+- Recycle
+
+X (Primarina)
+Ability: Liquid Voice
+Level: 50
+Tera Type: Fairy
+EVs: 14 HP / 13 Def / 9 SpA / 30 SpD
+Bashful Nature
+- Charge
+- Overdrive
+- Hyper Voice
+- Meteor Beam
+
+Sparky (Morpeko)
+Ability: Hunger Switch
+Level: 50
+Tera Type: Fairy
+EVs: 5 Atk / 8 Def / 13 SpA / 26 SpD / 8 Spe
+Adamant Nature
+- Charge
+- Aura Wheel
+- Endeavor
+- Dynamic Punch
+end
+choice p1 team 5623
+choice p2 team [3, 5, 6, 2]
+choice p1 move Aura Wheel -2 ,  move 1
+choice p2 move doubleteam, move 1
+choice p1 move 3 2, move 1
+choice p2 switch 4, move 4 1
+choice p1 move 1, move 3
+choice p2 switch 3, move 1
+choice p1 move 2 2, switch 4
+choice p2 move 2 -2, move 4 1
+choice p1 move 2 -2, switch 3
+choice p2 default
+choice p1 switch 4, pass
+choice p2 switch 3, move 2
+choice p1 move 2 1, move 2 2
+choice p1 switch 3, pass
+choice p2 move 4 1, move 2
+choice p1 move 3, pass
+choice p2 switch 3, move 3
+choice p1 move 2 1, pass
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Ninetales, L50, F|
+expect |poke|p1|Victreebel, L50, F|
+expect |poke|p1|Alcremie-Rainbow-Swirl, L50, F|
+expect |poke|p1|Primarina, L50, M|
+expect |poke|p1|Morpeko, L50, M|
+expect |poke|p1|Avalugg-Hisui, L50, M|
+expect |poke|p2|Ariados, L50, F|
+expect |poke|p2|Sylveon, L50, M|
+expect |poke|p2|Dragapult, L50, M, shiny|
+expect |poke|p2|Wigglytuff, L50, M|
+expect |poke|p2|Primarina, L50, M|
+expect |poke|p2|Morpeko, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Morpeko|Morpeko, L50, M|161/161
+expect |switch|p1a: Morpeko|Morpeko, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Pikachu|Avalugg-Hisui, L50, M|199/199
+expect |switch|p1b: Pikachu|Avalugg-Hisui, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Zoë|Dragapult, L50, M, shiny|163/163
+expect |switch|p2a: Zoë|Dragapult, L50, M, shiny|100/100
+expect |split|p2
+expect |switch|p2b: X|Primarina, L50, M|169/169
+expect |switch|p2b: X|Primarina, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Double Team|p2a: Zoë
+expect |-boost|p2a: Zoë|evasion|1
+expect |move|p1a: Morpeko|Aura Wheel|p1b: Pikachu
+expect |rng|100|77
+expect |rng|24|15
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Pikachu|151/199
+expect |-damage|p1b: Pikachu|75/100
+expect |rng|100|5
+expect |-boost|p1a: Morpeko|spe|1
+expect |move|p2b: X|Charge|p2b: X
+expect |-boost|p2b: X|spd|1
+expect |-start|p2b: X|Charge
+expect |move|p1b: Pikachu|Charge|p1b: Pikachu
+expect |-boost|p1b: Pikachu|spd|1
+expect |-start|p1b: Pikachu|Charge
+expect |
+expect |-formechange|p1a: Morpeko|Morpeko-Hangry|
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Big Tony's Pal|Sylveon, L50, M|194/194
+expect |switch|p2a: Big Tony's Pal|Sylveon, L50, M|100/100
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Morpeko|Speed Swap|p2b: X
+expect |-activate|p1a: Morpeko|move: Speed Swap|[of] p2b: X
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: X|Meteor Beam||[still]
+expect |-prepare|p2b: X|Meteor Beam
+expect |-boost|p2b: X|spa|1
+expect |move|p1b: Pikachu|Charge|p1b: Pikachu
+expect |-boost|p1b: Pikachu|spd|1
+expect |-start|p1b: Pikachu|Charge
+expect |
+expect |-formechange|p1a: Morpeko|Morpeko|
+expect |upkeep
+expect |rng|2|0
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sparky|Morpeko, L50, F|133/133
+expect |switch|p2a: Sparky|Morpeko, L50, F|100/100
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Morpeko|Charge|p1a: Morpeko
+expect |-boost|p1a: Morpeko|spd|1
+expect |-start|p1a: Morpeko|Charge
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: X|Meteor Beam|p1a: Morpeko|[from] lockedmove
+expect |rng|100|72
+expect |rng|24|1
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1a: Morpeko|63/161
+expect |-damage|p1a: Morpeko|39/100
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: Pikachu|Electric Terrain|p1b: Pikachu
+expect |-fieldstart|move: Electric Terrain
+expect |rng|2|0
+expect |-end|p1b: Pikachu|Charge|[silent]
+expect |rng|2|0
+expect |
+expect |-formechange|p1a: Morpeko|Morpeko-Hangry|
+expect |-formechange|p2a: Sparky|Morpeko-Hangry|
+expect |upkeep
+expect |rng|3|1
+expect |rng|2|0
+expect |turn|4
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |split|p1
+expect |switch|p1b: Alcremie|Alcremie-Rainbow-Swirl, L50, F|151/151
+expect |switch|p1b: Alcremie|Alcremie-Rainbow-Swirl, L50, F|100/100
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Morpeko|Aura Wheel|p2b: X
+expect |rng|100|24
+expect |rng|24|12
+expect |rng|16|13
+expect |-resisted|p2b: X|1
+expect |split|p2
+expect |-damage|p2b: X|128/169
+expect |-damage|p2b: X|75/100
+expect |rng|100|74
+expect |-boost|p1a: Morpeko|spe|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: X|Meteor Beam||[still]
+expect |-prepare|p2b: X|Meteor Beam
+expect |-boost|p2b: X|spa|1
+expect |rng|2|0
+expect |move|p2a: Sparky|Aura Wheel|p2b: X
+expect |rng|100|64
+expect |rng|24|21
+expect |rng|16|5
+expect |-resisted|p2b: X|1
+expect |split|p2
+expect |-damage|p2b: X|86/169
+expect |-damage|p2b: X|50/100g
+expect |rng|100|18
+expect |-boost|p2a: Sparky|spe|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |-formechange|p1a: Morpeko|Morpeko|
+expect |-formechange|p2a: Sparky|Morpeko|
+expect |upkeep
+expect |rng|3|0
+expect |rng|2|0
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Victreebel|Victreebel, L50, F|156/156
+expect |switch|p1b: Victreebel|Victreebel, L50, F|100/100
+expect |move|p1a: Morpeko|Aura Wheel|p1b: Victreebel
+expect |rng|100|92
+expect |rng|24|14
+expect |rng|16|2
+expect |-resisted|p1b: Victreebel|1
+expect |split|p1
+expect |-damage|p1b: Victreebel|32/156
+expect |-damage|p1b: Victreebel|20/100y
+expect |rng|100|55
+expect |-boost|p1a: Morpeko|spe|1
+expect |-end|p1a: Morpeko|Charge|[silent]
+expect |move|p2a: Sparky|Charge|p2a: Sparky
+expect |-boost|p2a: Sparky|spd|1
+expect |-start|p2a: Sparky|Charge
+expect |move|p2b: X|Meteor Beam|p1a: Morpeko|[from] lockedmove
+expect |rng|100|39
+expect |rng|24|12
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Morpeko|0 fnt
+expect |-damage|p1a: Morpeko|0 fnt
+expect |faint|p1a: Morpeko
+expect |
+expect |-formechange|p2a: Sparky|Morpeko-Hangry|
+expect |upkeep
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Avalugg-Hisui, L50, M|151/199
+expect |switch|p1a: Pikachu|Avalugg-Hisui, L50, M|75/100
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Big Tony's Pal|Sylveon, L50, M|194/194
+expect |switch|p2a: Big Tony's Pal|Sylveon, L50, M|100/100
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: X|Overdrive|p1b: Victreebel|[spread] p1a,p1b
+expect |rng|100|0
+expect |rng|100|73
+expect |rng|24|1
+expect |rng|16|13
+expect |-supereffective|p1a: Pikachu|1
+expect |rng|24|7
+expect |rng|16|11
+expect |-resisted|p1b: Victreebel|1
+expect |split|p1
+expect |-damage|p1a: Pikachu|0 fnt
+expect |-damage|p1a: Pikachu|0 fnt
+expect |split|p1
+expect |-damage|p1b: Victreebel|0 fnt
+expect |-damage|p1b: Victreebel|0 fnt
+expect |faint|p1a: Pikachu
+expect |faint|p1b: Victreebel
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Alcremie|Alcremie-Rainbow-Swirl, L50, F|151/151
+expect |switch|p1a: Alcremie|Alcremie-Rainbow-Swirl, L50, F|100/100
+expect |turn|7
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: X|Overdrive|p1a: Alcremie
+expect |rng|100|88
+expect |rng|24|8
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Alcremie|39/151
+expect |-damage|p1a: Alcremie|25/100
+expect |move|p1a: Alcremie|Rain Dance|p1a: Alcremie
+expect |-weather|RainDance
+expect |move|p2a: Big Tony's Pal|Role Play|p1a: Alcremie
+expect |-ability|p2a: Big Tony's Pal|Aroma Veil|Cute Charm|[from] move: Role Play|[of] p1a: Alcremie
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |-fieldend|move: Electric Terrain
+expect |upkeep
+expect |turn|8
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Sparky|Morpeko, L50, F|133/133
+expect |switch|p2a: Sparky|Morpeko, L50, F|100/100
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: X|Hyper Voice|p1a: Alcremie
+expect |rng|100|77
+expect |rng|24|3
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Alcremie|0 fnt
+expect |-damage|p1a: Alcremie|0 fnt
+expect |rng|2|1
+expect |faint|p1a: Alcremie
+expect |rng|2|1
+expect |
+expect |win|p2

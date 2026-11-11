@@ -1,0 +1,591 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsbss
+seed a9f5 8131 73fe 1651
+genders drawn
+team p1
+Orthworm (F) @ Smooth Rock
+Ability: Sand Veil
+Level: 50
+Tera Type: Fairy
+EVs: 28 HP / 2 Atk / 1 Def / 10 SpA / 15 SpD / 5 Spe
+Hasty Nature
+- Night Daze
+- Minimize
+- Kowtow Cleave
+- Hex
+
+Chomp (Vivillon-Tundra) (M)
+Ability: Compound Eyes
+Level: 50
+Tera Type: Grass
+EVs: 17 Atk / 2 Def / 9 SpA / 6 SpD / 30 Spe
+Lonely Nature
+- Teatime
+- Ice Fang
+- Bite
+- Sunny Day
+
+Meowscarada (M) @ Coba Berry
+Ability: Overgrow
+Level: 50
+Tera Type: Normal
+EVs: 17 HP / 5 Atk / 24 Def / 5 SpA / 15 Spe
+Naughty Nature
+- Guard Split
+- Shed Tail
+- Rain Dance
+
+Persian @ Poison Barb
+Ability: Technician
+Level: 50
+Tera Type: Psychic
+EVs: 6 HP / 16 Atk / 4 Def / 21 SpA / 8 SpD / 8 Spe
+Docile Nature
+- Wild Charge
+- Fake Out
+- Fairy Lock
+
+Spiritomb @ Pecha Berry
+Ability: Infiltrator
+Level: 50
+Tera Type: Water
+EVs: 1 HP / 9 Atk / 14 Def / 1 SpA / 12 SpD / 29 Spe
+Timid Nature
+- Iron Defense
+- Wrap
+- Stone Edge
+- Hypnosis
+
+Goodra (M) @ Misty Seed
+Ability: Sap Sipper
+Level: 50
+Tera Type: Bug
+EVs: 29 HP / 7 Def / 27 SpA / 1 SpD / 1 Spe
+Calm Nature
+- Matcha Gotcha
+- Shadow Ball
+- Heavy Slam
+- Venoshock
+end
+team p2
+Palafin (M) @ Psychic Seed
+Ability: Zero to Hero
+Level: 50
+Tera Type: Water
+EVs: 7 HP / 17 Atk / 3 SpA / 31 SpD / 8 Spe
+Sassy Nature
+- Mud-Slap
+- Ceaseless Edge
+- Weather Ball
+- Night Slash
+
+Lucario (M) @ Black Belt
+Ability: Inner Focus
+Level: 50
+Shiny: Yes
+Tera Type: Bug
+EVs: 30 HP / 10 Atk / 2 SpD / 24 Spe
+Hasty Nature
+- Agility
+- Body Press
+- Pain Split
+
+Vaporeon (F) @ Focus Band
+Ability: Water Absorb
+Level: 50
+Tera Type: Electric
+EVs: 31 HP / 1 Atk / 1 Def / 3 SpA / 15 SpD / 12 Spe
+Naughty Nature
+- Double Team
+- Hammer Arm
+- Fire Spin
+
+Perrserker (M)
+Ability: Battle Armor
+Level: 50
+Tera Type: Fire
+EVs: 12 HP / 5 Atk / 18 Def / 9 SpD / 19 Spe
+Rash Nature
+- Parabolic Charge
+- Leech Life
+- Leaf Storm
+- Shift Gear
+
+Tauros-Paldea-Aqua @ Smooth Rock
+Ability: Anger Point
+Level: 50
+Tera Type: Normal
+EVs: 18 HP / 21 Atk / 1 Def / 9 SpA / 1 SpD / 16 Spe
+Brave Nature
+- Sleep Powder
+
+Rhyperior @ Colbur Berry
+Ability: Reckless
+Level: 50
+Tera Type: Dark
+EVs: 9 HP / 1 Atk / 19 Def / 6 SpA / 29 Spe
+Brave Nature
+- Darkest Lariat
+end
+choice p1 team 354
+choice p2 team 6,1,3
+choice p1 switch persian
+choice p2 move Darkest Lariat
+choice p1 switch Spiritomb
+choice p2 switch vaporeon
+choice p1 move 1
+choice p2 move Hammer Arm
+choice p1 move 1
+choice p2 move Double Team
+choice p1 move 3
+choice p2 move 1
+choice p1 move 2
+choice p2 move 1
+choice p1 default
+choice p2 move hammerarm
+choice p1 move 3
+choice p2 switch rhyperior
+choice p1 move 2
+choice p2 move darkestlariat
+choice p1 move 3
+choice p2 move 1
+choice p1 default
+choice p2 move 1
+choice p1 switch Persian
+choice p2 switch 2
+choice p1 switch Meowscarada
+choice p2 move mud-slap
+choice p1 move 1
+choice p2 move 3
+choice p1 move 3
+choice p2 move 4
+choice p1 move 3
+choice p2 move ceaselessedge
+choice p1 move 1
+choice p2 move weatherball
+choice p1 switch 3
+choice p1 switch 3
+choice p2 move 3
+choice p1 move 2
+choice p2 move 2
+choice p1 move 1
+choice p2 move 2
+choice p1 move 3
+choice p2 switch rhyperior
+choice p1 move 2
+choice p2 switch 3
+choice p1 move 3
+choice p2 switch palafin-hero
+choice p1 default
+choice p2 move 1
+choice p1 move 3
+expect |t:|
+expect |gametype|singles
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] BSS Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Orthworm, L50, F|
+expect |poke|p1|Vivillon-Tundra, L50, M|
+expect |poke|p1|Meowscarada, L50, M|
+expect |poke|p1|Persian, L50, F|
+expect |poke|p1|Spiritomb, L50, F|
+expect |poke|p1|Goodra, L50, M|
+expect |poke|p2|Palafin, L50, M|
+expect |poke|p2|Lucario, L50, M, shiny|
+expect |poke|p2|Vaporeon, L50, F|
+expect |poke|p2|Perrserker, L50, M|
+expect |poke|p2|Tauros-Paldea-Aqua, L50, M|
+expect |poke|p2|Rhyperior, L50, M|
+expect |teampreview|3
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Meowscarada|Meowscarada, L50, M|168/168
+expect |switch|p1a: Meowscarada|Meowscarada, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Rhyperior|Rhyperior, L50, M|199/199
+expect |switch|p2a: Rhyperior|Rhyperior, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Persian|Persian, L50, F|146/146
+expect |switch|p1a: Persian|Persian, L50, F|100/100
+expect |move|p2a: Rhyperior|Darkest Lariat|p1a: Persian
+expect |rng|100|5
+expect |rng|24|2
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Persian|76/146
+expect |-damage|p1a: Persian|52/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Spiritomb|Spiritomb, L50, F|126/126
+expect |switch|p1a: Spiritomb|Spiritomb, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Vaporeon|Vaporeon, L50, F|236/236
+expect |switch|p2a: Vaporeon|Vaporeon, L50, F|100/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Vaporeon|Hammer Arm|p1a: Spiritomb
+expect |-immune|p1a: Spiritomb
+expect |move|p1a: Spiritomb|Iron Defense|p1a: Spiritomb
+expect |-boost|p1a: Spiritomb|def|2
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |move|p2a: Vaporeon|Double Team|p2a: Vaporeon
+expect |-boost|p2a: Vaporeon|evasion|1
+expect |move|p1a: Spiritomb|Iron Defense|p1a: Spiritomb
+expect |-boost|p1a: Spiritomb|def|2
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p2a: Vaporeon|Double Team|p2a: Vaporeon
+expect |-boost|p2a: Vaporeon|evasion|1
+expect |move|p1a: Spiritomb|Stone Edge|p2a: Vaporeon
+expect |rng|100|0
+expect |rng|8|3
+expect |rng|16|13
+expect |rng|10|7
+expect |split|p2
+expect |-damage|p2a: Vaporeon|184/236
+expect |-damage|p2a: Vaporeon|77/100
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Vaporeon|Double Team|p2a: Vaporeon
+expect |-boost|p2a: Vaporeon|evasion|1
+expect |move|p1a: Spiritomb|Wrap|p2a: Vaporeon|[miss]
+expect |rng|100|70
+expect |-miss|p1a: Spiritomb|p2a: Vaporeon
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Vaporeon|Hammer Arm|p1a: Spiritomb
+expect |-immune|p1a: Spiritomb
+expect |move|p1a: Spiritomb|Iron Defense|p1a: Spiritomb
+expect |-boost|p1a: Spiritomb|def|2
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Rhyperior|Rhyperior, L50, M|199/199
+expect |switch|p2a: Rhyperior|Rhyperior, L50, M|100/100
+expect |move|p1a: Spiritomb|Stone Edge|p2a: Rhyperior
+expect |rng|100|73
+expect |rng|8|7
+expect |rng|16|12
+expect |-resisted|p2a: Rhyperior|1
+expect |split|p2
+expect |-damage|p2a: Rhyperior|186/199
+expect |-damage|p2a: Rhyperior|93/100
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p1a: Spiritomb|Wrap|p2a: Rhyperior
+expect |rng|100|72
+expect |rng|24|22
+expect |rng|16|7
+expect |-resisted|p2a: Rhyperior|1
+expect |split|p2
+expect |-damage|p2a: Rhyperior|184/199
+expect |-damage|p2a: Rhyperior|92/100
+expect |rng|2|1
+expect |-activate|p2a: Rhyperior|move: Wrap|[of] p1a: Spiritomb
+expect |move|p2a: Rhyperior|Darkest Lariat|p1a: Spiritomb
+expect |rng|100|9
+expect |rng|24|8
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Spiritomb|79/126
+expect |-damage|p1a: Spiritomb|62/100
+expect |
+expect |split|p2
+expect |-damage|p2a: Rhyperior|160/199|[from] move: Wrap|[partiallytrapped]
+expect |-damage|p2a: Rhyperior|80/100|[from] move: Wrap|[partiallytrapped]
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p1a: Spiritomb|Stone Edge|p2a: Rhyperior
+expect |rng|100|14
+expect |rng|8|3
+expect |rng|16|10
+expect |-resisted|p2a: Rhyperior|1
+expect |split|p2
+expect |-damage|p2a: Rhyperior|147/199
+expect |-damage|p2a: Rhyperior|73/100
+expect |move|p2a: Rhyperior|Darkest Lariat|p1a: Spiritomb
+expect |rng|100|73
+expect |rng|24|0
+expect |rng|16|0
+expect |-crit|p1a: Spiritomb
+expect |split|p1
+expect |-damage|p1a: Spiritomb|7/126
+expect |-damage|p1a: Spiritomb|5/100
+expect |
+expect |split|p2
+expect |-damage|p2a: Rhyperior|123/199|[from] move: Wrap|[partiallytrapped]
+expect |-damage|p2a: Rhyperior|61/100|[from] move: Wrap|[partiallytrapped]
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |move|p1a: Spiritomb|Iron Defense|p1a: Spiritomb
+expect |-boost|p1a: Spiritomb|def|0
+expect |move|p2a: Rhyperior|Darkest Lariat|p1a: Spiritomb
+expect |rng|100|25
+expect |rng|24|3
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Spiritomb|0 fnt
+expect |-damage|p1a: Spiritomb|0 fnt
+expect |faint|p1a: Spiritomb
+expect |
+expect |-end|p2a: Rhyperior|Wrap|[partiallytrapped]|[silent]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Persian|Persian, L50, F|76/146
+expect |switch|p1a: Persian|Persian, L50, F|52/100
+expect |turn|12
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Meowscarada|Meowscarada, L50, M|168/168
+expect |switch|p1a: Meowscarada|Meowscarada, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Palafin|Palafin, L50, M|182/182
+expect |switch|p2a: Palafin|Palafin, L50, M|100/100
+expect |
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1a: Meowscarada|Guard Split|p2a: Palafin
+expect |-activate|p1a: Meowscarada|move: Guard Split|[of] p2a: Palafin
+expect |move|p2a: Palafin|Mud-Slap|p1a: Meowscarada
+expect |rng|100|52
+expect |rng|24|19
+expect |rng|16|10
+expect |-resisted|p1a: Meowscarada|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|165/168
+expect |-damage|p1a: Meowscarada|98/100
+expect |rng|100|4
+expect |-unboost|p1a: Meowscarada|accuracy|1
+expect |
+expect |upkeep
+expect |turn|14
+expect |
+expect |t:|
+expect |move|p1a: Meowscarada|Rain Dance|p1a: Meowscarada
+expect |-weather|RainDance
+expect |move|p2a: Palafin|Weather Ball|p1a: Meowscarada
+expect |rng|100|42
+expect |rng|24|14
+expect |rng|16|4
+expect |-resisted|p1a: Meowscarada|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|129/168
+expect |-damage|p1a: Meowscarada|76/100
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|15
+expect |
+expect |t:|
+expect |move|p1a: Meowscarada|Rain Dance||[still]
+expect |-fail|p1a: Meowscarada
+expect |move|p2a: Palafin|Night Slash|p1a: Meowscarada
+expect |rng|100|79
+expect |rng|8|1
+expect |rng|16|12
+expect |-resisted|p1a: Meowscarada|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|115/168
+expect |-damage|p1a: Meowscarada|68/100
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|16
+expect |
+expect |t:|
+expect |move|p1a: Meowscarada|Guard Split|p2a: Palafin
+expect |-activate|p1a: Meowscarada|move: Guard Split|[of] p2a: Palafin
+expect |move|p2a: Palafin|Ceaseless Edge|p1a: Meowscarada
+expect |rng|100|53
+expect |rng|24|23
+expect |rng|16|10
+expect |-resisted|p1a: Meowscarada|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|102/168
+expect |-damage|p1a: Meowscarada|60/100
+expect |rng|100|87
+expect |-sidestart|p1: p1|Spikes
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|17
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Persian|Persian, L50, F|76/146
+expect |switch|p1a: Persian|Persian, L50, F|52/100
+expect |split|p1
+expect |-damage|p1a: Persian|58/146|[from] Spikes
+expect |-damage|p1a: Persian|39/100|[from] Spikes
+expect |move|p2a: Palafin|Weather Ball|p1a: Persian
+expect |rng|100|4
+expect |rng|24|11
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Persian|0 fnt
+expect |-damage|p1a: Persian|0 fnt
+expect |faint|p1a: Persian
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Meowscarada|Meowscarada, L50, M|102/168
+expect |switch|p1a: Meowscarada|Meowscarada, L50, M|60/100
+expect |split|p1
+expect |-damage|p1a: Meowscarada|81/168|[from] Spikes
+expect |-damage|p1a: Meowscarada|48/100|[from] Spikes
+expect |turn|18
+expect |
+expect |t:|
+expect |move|p1a: Meowscarada|Shed Tail|p1a: Meowscarada
+expect |-fail|p1a: Meowscarada
+expect |move|p2a: Palafin|Weather Ball|p1a: Meowscarada
+expect |rng|100|36
+expect |rng|24|17
+expect |rng|16|0
+expect |-resisted|p1a: Meowscarada|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|33/168
+expect |-damage|p1a: Meowscarada|19/100
+expect |
+expect |-weather|none
+expect |upkeep
+expect |turn|19
+expect |
+expect |t:|
+expect |move|p1a: Meowscarada|Guard Split|p2a: Palafin
+expect |-activate|p1a: Meowscarada|move: Guard Split|[of] p2a: Palafin
+expect |move|p2a: Palafin|Ceaseless Edge|p1a: Meowscarada
+expect |rng|100|82
+expect |rng|24|22
+expect |rng|16|10
+expect |-resisted|p1a: Meowscarada|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|20/168
+expect |-damage|p1a: Meowscarada|11/100
+expect |rng|100|57
+expect |-sidestart|p1: p1|Spikes
+expect |
+expect |upkeep
+expect |turn|20
+expect |
+expect |t:|
+expect |move|p1a: Meowscarada|Rain Dance|p1a: Meowscarada
+expect |-weather|RainDance
+expect |move|p2a: Palafin|Ceaseless Edge|p1a: Meowscarada
+expect |rng|100|34
+expect |rng|24|23
+expect |rng|16|0
+expect |-resisted|p1a: Meowscarada|1
+expect |split|p1
+expect |-damage|p1a: Meowscarada|5/168
+expect |-damage|p1a: Meowscarada|2/100
+expect |rng|100|73
+expect |-sidestart|p1: p1|Spikes
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|21
+expect |
+expect |t:|
+expect |detailschange|p2a: Palafin|Palafin-Hero, L50, M
+expect |split|p2
+expect |switch|p2a: Rhyperior|Rhyperior, L50, M|123/199
+expect |switch|p2a: Rhyperior|Rhyperior, L50, M|61/100
+expect |move|p1a: Meowscarada|Shed Tail|p1a: Meowscarada
+expect |-fail|p1a: Meowscarada
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|22
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Vaporeon|Vaporeon, L50, F|184/236
+expect |switch|p2a: Vaporeon|Vaporeon, L50, F|77/100
+expect |move|p1a: Meowscarada|Rain Dance||[still]
+expect |-fail|p1a: Meowscarada
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|23
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Palafin|Palafin-Hero, L50, M|182/182
+expect |switch|p2a: Palafin|Palafin-Hero, L50, M|100/100
+expect |-activate|p2a: Palafin|ability: Zero to Hero
+expect |move|p1a: Meowscarada|Guard Split|p2a: Palafin
+expect |-activate|p1a: Meowscarada|move: Guard Split|[of] p2a: Palafin
+expect |
+expect |-weather|RainDance|[upkeep]
+expect |upkeep
+expect |turn|24
+expect |
+expect |t:|
+expect |move|p1a: Meowscarada|Rain Dance||[still]
+expect |-fail|p1a: Meowscarada
+expect |move|p2a: Palafin|Mud-Slap|p1a: Meowscarada
+expect |rng|100|74
+expect |rng|24|0
+expect |rng|16|10
+expect |-resisted|p1a: Meowscarada|1
+expect |-crit|p1a: Meowscarada
+expect |split|p1
+expect |-damage|p1a: Meowscarada|0 fnt
+expect |-damage|p1a: Meowscarada|0 fnt
+expect |rng|100|70
+expect |faint|p1a: Meowscarada
+expect |
+expect |win|p2

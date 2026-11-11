@@ -1,0 +1,76 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 2400 000a 0000 0057
+genders drawn
+team p1
+Golisopod
+Ability: Emergency Exit
+EVs: 252 Atk
+Hardy Nature
+- Head Smash
+
+Pikachu
+Ability: Static
+Hardy Nature
+- Tackle
+end
+team p2
+Blissey
+Ability: Natural Cure
+EVs: 252 HP
+Hardy Nature
+- Splash
+
+Chansey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+end
+choice p1 move 1
+choice p2 move 1
+choice p1 switch 2
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Golisopod|Golisopod, M|291/291
+expect |switch|p1a: Golisopod|Golisopod, M|291/291
+expect |split|p2
+expect |switch|p2a: Blissey|Blissey, F|714/714
+expect |switch|p2a: Blissey|Blissey, F|714/714
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Blissey|Splash|p2a: Blissey
+expect |-nothing
+expect |move|p1a: Golisopod|Head Smash|p2a: Blissey
+expect |rng|100|46
+expect |rng|24|3
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Blissey|38/714
+expect |-damage|p2a: Blissey|38/714
+expect |split|p1
+expect |-damage|p1a: Golisopod|0 fnt|[from] Recoil
+expect |-damage|p1a: Golisopod|0 fnt|[from] Recoil
+expect |-activate|p1a: Golisopod|ability: Emergency Exit
+expect |faint|p1a: Golisopod
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Pikachu, F|211/211
+expect |switch|p1a: Pikachu|Pikachu, F|211/211
+expect |
+expect |upkeep
+expect |turn|2

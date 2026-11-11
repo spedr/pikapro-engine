@@ -1,0 +1,280 @@
+# championsvgc-sodium-2111025-lines: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug false
+@option keep-alive
+@option replay spectator
+@write
+>start {"formatid":"gen9championsvgc2026regmb","seed":"sodium,980464ab36a09842"}
+@write
+>player p2 {"name":"Bob","team":"Sir Hops-a-Lot|Camerupt|Cameruptite|AngerPoint|MakeItRain,DragonDarts,SwordsDance,Shelter|Naive|4,2,6,23,,31|F|||50|,,,,,Steel]Spiritomb|||Pressure|Nuzzle,RageFist,AcidSpray|Quirky|17,4,21,3,3,16|F|||50|,,,,,Rock]Machamp||YacheBerry|NoGuard|DragonTail,LeechSeed,PsychoCut|Relaxed|4,10,6,30,5,11|F|||50|,,,,,Fire]Samurott|||Torrent|Coaching|Gentle|23,22,12,1,1,6|M|||50|,,,,,Fighting]Houndstone||PayapaBerry|SandRush|Comeuppance,PowerShift|Docile|8,4,,11,11,19|F|||50|,,,,,Dark]Ariados||TangaBerry|Swarm|SpiritShackle,AuraSphere,SmackDown|Bashful|,9,1,6,17,31|F|||50|,,,,,Rock"}
+@write
+>player p1 {"name":"Alice","team":"Sparky|SlowkingGalar|RindoBerry|CuriousMedicine|SteelRoller|Sassy|,15,1,16,31,2|M||S|50|,,,,,Psychic]Dragonite||Dragoninite|InnerFocus|StoredPower,SheerCold,AuroraVeil,Crunch|Bashful|14,2,7,14,24,3|F|||50|,,,,,Rock]Qwilfish|||Intimidate|ZenHeadbutt|Mild|2,14,5,26,,18|F|||50|,,,,,Psychic]Tauros-Paldea-Blaze||SharpBeak|AngerPoint|BoneRush,IcyWind|Sassy|4,19,6,5,31,||||50|,,,,,Steel]Decidueye-Hisui|||Overgrow|Earthquake,EerieImpulse,CloseCombat|Lonely|15,10,17,17,2,2|M|||50|,,,,,Fighting]Maushold-Four||ExpertBelt|FriendGuard|ShadowClaw,MetalSound,Hurricane,BellyDrum|Sassy|7,5,6,18,6,11||||50|,,,,,Ground","avatar":"lucas"}
+@write
+>p1 team 2164
+@write
+>p2 team 12, 
+@write
+>p2 team 1234
+@write
+>p2 move 2 1 mega, switch 4
+@write
+>p1 undo
+@write
+>p1 move 2 1 mega, switch 3
+@write
+>p2 default
+@write
+>p1 move 2 2, move 3 3 terastal
+@write
+>p1 move Stored Power -2 ,  move metalsound 2
+@write
+>p1 move 4 1 ,  move bellydrum
+@write
+>p2 move 2 -2, move 1 -1
+@write
+>requestteam p1
+@write
+>p2 shift
+@write
+>p2 move 2 -2, switch 4
+@write
+>p1 move 1 2, move 1 -1
+@write
+>p2 move 2 -2, move nuzzle -2 mega
+@write
+>p1 switch 3
+@write
+>p2 move
+@write
+>p2 move 3, move 2 1
+@write
+>p1 move 3, move 1 2
+@write
+>p1 switch Dragonite
+@write
+>p1 move 3, move 1 -1
+@write
+>p2 move Make It Rain,move 3 +2
+@write
+>p1 pass, switch 3
+@write
+>p1 move 2 2, switch 4
+@write
+>p2 move makeitrain,move Rage Fist -1
+@write
+>p2 move Dragon Darts 2, move 2 -1
+@write
+>p2 move 3 3 dynamax, move 2 -1
+@write
+>p2 testfight
+@write
+>p2 undo
+@write
+>p2 switch 4, move 1 2
+@write
+>p2 undo
+@write
+>forcelose p1
+@write
+>p1 move 1
+@write
+>chat after the end
+@write
+>forcewin p1
+@write
+>tiebreak
+@write
+>requestlog
+@write
+>p2 undo
+@message
+|t:|
+|gametype|doubles
+@message
+|player|p2|Bob||
+@message
+|player|p1|Alice|lucas|
+|gen|9
+|tier|[Gen 9 Champions] VGC 2026 Reg M-B
+|rule|Species Clause: Limit one of each Pokémon
+|rule|Item Clause: Limit 1 of each item
+|clearpoke
+|poke|p1|Slowking-Galar, L50, M, shiny|
+|poke|p1|Dragonite, L50, F|
+|poke|p1|Qwilfish, L50, F|
+|poke|p1|Tauros-Paldea-Blaze, L50, M|
+|poke|p1|Decidueye-Hisui, L50, M|
+|poke|p1|Maushold-Four, L50|
+|poke|p2|Camerupt, L50, F|
+|poke|p2|Spiritomb, L50, F|
+|poke|p2|Machamp, L50, F|
+|poke|p2|Samurott, L50, M|
+|poke|p2|Houndstone, L50, F|
+|poke|p2|Ariados, L50, F|
+|teampreview|4
+@message
+|
+|t:|
+|teamsize|p1|4
+|teamsize|p2|4
+|start
+|switch|p1a: Dragonite|Dragonite, L50, F|100/100
+|switch|p1b: Sparky|Slowking-Galar, L50, M, shiny|100/100
+|switch|p2a: Sir Hops-a-Lot|Camerupt, L50, F|100/100
+|switch|p2b: Spiritomb|Spiritomb, L50, F|100/100
+|-ability|p2b: Spiritomb|Pressure
+|-clearboost|p1a: Dragonite|[from] ability: Curious Medicine|[of] p1b: Sparky
+|turn|1
+@message
+|
+|t:|
+|switch|p2b: Samurott|Samurott, L50, M|100/100
+|switch|p1b: Maushold|Maushold-Four, L50|100/100
+|detailschange|p1a: Dragonite|Dragonite-Mega, L50, F
+|-mega|p1a: Dragonite|Dragonite|Dragoninite
+|detailschange|p2a: Sir Hops-a-Lot|Camerupt-Mega, L50, F
+|-mega|p2a: Sir Hops-a-Lot|Camerupt|Cameruptite
+|move|p1a: Dragonite|Sheer Cold|p2a: Sir Hops-a-Lot|[miss]
+|-miss|p1a: Dragonite|p2a: Sir Hops-a-Lot
+|move|p2a: Sir Hops-a-Lot|Dragon Darts|p1a: Dragonite
+|-supereffective|p1a: Dragonite|1
+|-damage|p1a: Dragonite|90/100
+|-anim|p2a: Sir Hops-a-Lot|Dragon Darts|p1b: Maushold
+|-damage|p1b: Maushold|80/100
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|move|p1b: Maushold|Metal Sound|p2b: Samurott
+|-unboost|p2b: Samurott|spd|2
+|move|p1a: Dragonite|Stored Power|p1b: Maushold
+|-damage|p1b: Maushold|70/100
+|move|p2b: Samurott|Coaching|p2a: Sir Hops-a-Lot
+|-boost|p2a: Sir Hops-a-Lot|atk|1
+|-boost|p2a: Sir Hops-a-Lot|def|1
+|move|p2a: Sir Hops-a-Lot|Make It Rain|p1b: Maushold|[spread] p1a,p1b
+|-damage|p1a: Dragonite|75/100
+|-damage|p1b: Maushold|27/100
+|-unboost|p2a: Sir Hops-a-Lot|spa|2
+|
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|move|p1b: Maushold|Belly Drum||[still]
+|-fail|p1b: Maushold
+|move|p1a: Dragonite|Crunch|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|83/100
+|move|p2b: Samurott|Coaching|p2a: Sir Hops-a-Lot
+|-boost|p2a: Sir Hops-a-Lot|atk|1
+|-boost|p2a: Sir Hops-a-Lot|def|1
+|move|p2a: Sir Hops-a-Lot|Dragon Darts|p2b: Samurott
+|-damage|p2b: Samurott|72/100
+|-anim|p2a: Sir Hops-a-Lot|Dragon Darts|p2b: Samurott
+|-damage|p2b: Samurott|44/100
+|
+|upkeep
+|turn|4
+@message
+requesteddata
+Sparky|SlowkingGalar|RindoBerry|CuriousMedicine|SteelRoller|Sassy|,15,1,16,31,2|M||S|50|,,,,,Psychic]Dragonite||Dragoninite|InnerFocus|StoredPower,SheerCold,AuroraVeil,Crunch|Bashful|14,2,7,14,24,3|F|||50|,,,,,Rock]Qwilfish|||Intimidate|ZenHeadbutt|Mild|2,14,5,26,,18|F|||50|,,,,,Psychic]Tauros|TaurosPaldeaBlaze|SharpBeak|AngerPoint|BoneRush,IcyWind|Sassy|4,19,6,5,31,||||50|,,,,,Steel]Decidueye|DecidueyeHisui||Overgrow|Earthquake,EerieImpulse,CloseCombat|Lonely|15,10,17,17,2,2|M|||50|,,,,,Fighting]Maushold|MausholdFour|ExpertBelt|FriendGuard|ShadowClaw,MetalSound,Hurricane,BellyDrum|Sassy|7,5,6,18,6,11||||50|,,,,,Ground
+@message
+|
+|t:|
+|switch|p2b: Spiritomb|Spiritomb, L50, F|100/100
+|-ability|p2b: Spiritomb|Pressure
+|move|p1b: Maushold|Shadow Claw|p1a: Dragonite
+|-damage|p1a: Dragonite|66/100
+|move|p1a: Dragonite|Stored Power|p2b: Spiritomb
+|-immune|p2b: Spiritomb
+|move|p2a: Sir Hops-a-Lot|Dragon Darts|p2b: Spiritomb
+|-damage|p2b: Spiritomb|72/100
+|-anim|p2a: Sir Hops-a-Lot|Dragon Darts|p2b: Spiritomb
+|-damage|p2b: Spiritomb|43/100
+|
+|upkeep
+|turn|5
+@message
+|
+|t:|
+|move|p1b: Maushold|Shadow Claw|p2b: Spiritomb
+|-damage|p2b: Spiritomb|30/100
+|move|p1a: Dragonite|Aurora Veil||[still]
+|-fail|p1a: Dragonite
+|move|p2a: Sir Hops-a-Lot|Swords Dance|p2a: Sir Hops-a-Lot
+|-boost|p2a: Sir Hops-a-Lot|atk|2
+|move|p2b: Spiritomb|Rage Fist|p1a: Dragonite
+|-damage|p1a: Dragonite|27/100
+|
+|upkeep
+|turn|6
+@message
+|
+|t:|
+|move|p1b: Maushold|Shadow Claw|p1a: Dragonite
+|-damage|p1a: Dragonite|18/100
+|move|p1a: Dragonite|Aurora Veil||[still]
+|-fail|p1a: Dragonite
+|move|p2a: Sir Hops-a-Lot|Make It Rain|p1b: Maushold|[spread] p1a,p1b
+|-damage|p1a: Dragonite|9/100
+|-damage|p1b: Maushold|7/100
+|-unboost|p2a: Sir Hops-a-Lot|spa|2
+|move|p2b: Spiritomb|Acid Spray|p1b: Maushold
+|-damage|p1b: Maushold|0 fnt
+|faint|p1b: Maushold
+|
+|upkeep
+@message
+|
+|t:|
+|switch|p1b: Sparky|Slowking-Galar, L50, M, shiny|100/100
+|-clearboost|p1a: Dragonite|[from] ability: Curious Medicine|[of] p1b: Sparky
+|turn|7
+@message
+|
+|t:|
+|switch|p1b: Tauros|Tauros-Paldea-Blaze, L50, M|100/100
+|move|p1a: Dragonite|Sheer Cold|p2b: Spiritomb|[miss]
+|-miss|p1a: Dragonite|p2b: Spiritomb
+|move|p2a: Sir Hops-a-Lot|Make It Rain|p1a: Dragonite|[spread] p1a,p1b
+|-resisted|p1b: Tauros|1
+|-damage|p1a: Dragonite|2/100
+|-damage|p1b: Tauros|94/100
+|-unboost|p2a: Sir Hops-a-Lot|spa|2
+|move|p2b: Spiritomb|Rage Fist|p2a: Sir Hops-a-Lot
+|-damage|p2a: Sir Hops-a-Lot|44/100
+|
+|upkeep
+|turn|8
+@message
+|
+|win|Bob
+@message
+|chat|after the end
+@message
+requesteddata
+>start {"formatid":"gen9championsvgc2026regmb","seed":"sodium,980464ab36a09842"}
+>player p2 {"name":"Bob","team":"Sir Hops-a-Lot|Camerupt|Cameruptite|AngerPoint|MakeItRain,DragonDarts,SwordsDance,Shelter|Naive|4,2,6,23,,31|F|||50|,,,,,Steel]Spiritomb|||Pressure|Nuzzle,RageFist,AcidSpray|Quirky|17,4,21,3,3,16|F|||50|,,,,,Rock]Machamp||YacheBerry|NoGuard|DragonTail,LeechSeed,PsychoCut|Relaxed|4,10,6,30,5,11|F|||50|,,,,,Fire]Samurott|||Torrent|Coaching|Gentle|23,22,12,1,1,6|M|||50|,,,,,Fighting]Houndstone||PayapaBerry|SandRush|Comeuppance,PowerShift|Docile|8,4,,11,11,19|F|||50|,,,,,Dark]Ariados||TangaBerry|Swarm|SpiritShackle,AuraSphere,SmackDown|Bashful|,9,1,6,17,31|F|||50|,,,,,Rock"}
+>player p1 {"name":"Alice","team":"Sparky|SlowkingGalar|RindoBerry|CuriousMedicine|SteelRoller|Sassy|,15,1,16,31,2|M||S|50|,,,,,Psychic]Dragonite||Dragoninite|InnerFocus|StoredPower,SheerCold,AuroraVeil,Crunch|Bashful|14,2,7,14,24,3|F|||50|,,,,,Rock]Qwilfish|||Intimidate|ZenHeadbutt|Mild|2,14,5,26,,18|F|||50|,,,,,Psychic]Tauros-Paldea-Blaze||SharpBeak|AngerPoint|BoneRush,IcyWind|Sassy|4,19,6,5,31,||||50|,,,,,Steel]Decidueye-Hisui|||Overgrow|Earthquake,EerieImpulse,CloseCombat|Lonely|15,10,17,17,2,2|M|||50|,,,,,Fighting]Maushold-Four||ExpertBelt|FriendGuard|ShadowClaw,MetalSound,Hurricane,BellyDrum|Sassy|7,5,6,18,6,11||||50|,,,,,Ground","avatar":"lucas"}
+>p1 team 2, 1, 6, 4
+>p2 team 1, 2, 3, 4
+>p1 move sheercold +1 mega, switch 3
+>p2 move dragondarts +1 mega, switch 4
+>p1 move storedpower -2, move metalsound +2
+>p2 move makeitrain, move coaching
+>p1 move crunch +1, move bellydrum
+>p2 move dragondarts -2, move coaching -1
+>p1 move storedpower +2, move shadowclaw -1
+>p2 move dragondarts -2, switch 4
+>p1 move auroraveil, move shadowclaw +2
+>p2 move swordsdance, move ragefist +1
+>p1 move auroraveil, move shadowclaw -1
+>p2 move makeitrain, move acidspray +2
+>p1 pass, switch 3
+>p1 move sheercold +2, switch 4
+>p2 move makeitrain, move ragefist -1
+>forcelose p1
+>chat after the end
+>forcewin p1

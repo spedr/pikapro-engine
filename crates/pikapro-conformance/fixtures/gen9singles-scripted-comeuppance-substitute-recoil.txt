@@ -1,0 +1,102 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 2222 3333 4444 5555
+genders drawn
+team p1
+Kingambit
+Ability: Defiant
+Level: 58
+EVs: 4 HP
+Hardy Nature
+- Comeuppance
+- Head Smash
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Blissey
+Ability: Natural Cure
+Hardy Nature
+- Substitute
+- Super Fang
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+end
+choice p1 move 3
+choice p2 move 1
+choice p1 move 1
+choice p2 move 2
+choice p1 move 2
+choice p2 move 3
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Kingambit|Kingambit, L58, M|202/202
+expect |switch|p1a: Kingambit|Kingambit, L58, M|202/202
+expect |split|p2
+expect |switch|p2a: Blissey|Blissey, F|651/651
+expect |switch|p2a: Blissey|Blissey, F|651/651
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Blissey|Substitute|p2a: Blissey
+expect |-start|p2a: Blissey|Substitute
+expect |split|p2
+expect |-damage|p2a: Blissey|489/651
+expect |-damage|p2a: Blissey|489/651
+expect |move|p1a: Kingambit|Splash|p1a: Kingambit
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Blissey|Super Fang|p1a: Kingambit
+expect |rng|100|41
+expect |split|p1
+expect |-damage|p1a: Kingambit|101/202
+expect |-damage|p1a: Kingambit|101/202
+expect |move|p1a: Kingambit|Comeuppance|p2a: Blissey
+expect |rng|100|1
+expect |-activate|p2a: Blissey|move: Substitute|[damage]
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p2a: Blissey|Splash|p2a: Blissey
+expect |-nothing
+expect |move|p1a: Kingambit|Head Smash|p2a: Blissey
+expect |rng|100|1
+expect |rng|24|16
+expect |rng|16|4
+expect |-end|p2a: Blissey|Substitute
+expect |split|p1
+expect |-damage|p1a: Kingambit|96/202|[from] Recoil
+expect |-damage|p1a: Kingambit|96/202|[from] Recoil
+expect |
+expect |upkeep
+expect |turn|4

@@ -1,0 +1,492 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed c8f9 fd2d b078 2573
+genders drawn
+team p1
+Swampert (M)
+Ability: No Ability
+Level: 50
+Tera Type: Normal
+EVs: 4 HP / 30 Atk / 5 Def / 2 SpA / 23 SpD
+Jolly Nature
+- Aqua Tail
+
+Corviknight (M)
+Ability: No Ability
+Level: 50
+Tera Type: Ground
+EVs: 14 HP / 3 Atk / 18 Def / 9 SpA / 22 SpD
+Naughty Nature
+- Crabhammer
+
+Tauros-Paldea-Combat (M)
+Ability: No Ability
+Level: 50
+Tera Type: Water
+EVs: 30 HP / 2 Atk / 23 Def / 2 SpA / 1 SpD / 7 Spe
+Impish Nature
+- Aura Sphere
+
+Salazzle (F)
+Ability: No Ability
+Level: 50
+Tera Type: Bug
+EVs: 20 HP / 1 Atk / 3 Def / 8 SpA / 25 SpD / 9 Spe
+Naughty Nature
+- Crabhammer
+
+Toxapex (M)
+Ability: No Ability
+Level: 50
+Tera Type: Grass
+EVs: 5 HP / 18 Atk / 14 Def / 9 SpA / 13 SpD / 2 Spe
+Sassy Nature
+- Extreme Speed
+- Power Gem
+- Aqua Tail
+- Shadow Claw
+
+Lucario (M)
+Ability: No Ability
+Level: 50
+Tera Type: Ghost
+EVs: 23 HP / 6 Atk / 7 Def / 1 SpA / 5 SpD / 14 Spe
+Sassy Nature
+- Power Whip
+- Dazzling Gleam
+- Dragon Claw
+- Shadow Punch
+end
+team p2
+Simisage (M)
+Ability: No Ability
+Level: 50
+Tera Type: Electric
+EVs: 10 HP / 10 Atk / 32 Def / 2 SpA / 2 Spe
+Timid Nature
+- Seed Bomb
+
+Alcremie-Matcha-Cream (F)
+Ability: No Ability
+Level: 50
+Tera Type: Dragon
+EVs: 13 HP / 16 Atk / 18 Def / 6 SpA / 10 SpD
+Jolly Nature
+- Kowtow Cleave
+- Aqua Jet
+
+Banette (M)
+Ability: No Ability
+Level: 50
+Tera Type: Dragon
+EVs: 5 HP / 28 Atk / 23 Def / 5 SpA / 2 SpD
+Docile Nature
+- Aqua Tail
+- Protect
+- Aqua Jet
+- Megahorn
+
+Pangoro (M)
+Ability: No Ability
+Level: 50
+Tera Type: Electric
+EVs: 6 HP / 5 Atk / 12 Def / 1 SpA / 6 SpD / 28 Spe
+Naive Nature
+- Protect
+
+Torterra (M)
+Ability: No Ability
+Level: 50
+Tera Type: Fighting
+EVs: 3 HP / 2 Atk / 8 Def / 1 SpA / 21 SpD / 30 Spe
+Sassy Nature
+- Leaf Blade
+- Petal Blizzard
+- Power Gem
+
+Ninetales (M)
+Ability: No Ability
+Level: 50
+Tera Type: Grass
+EVs: 10 Atk / 2 Def / 11 SpA / 21 SpD / 17 Spe
+Timid Nature
+- Aura Sphere
+- Ice Shard
+- Stone Edge
+- Dragon Pulse
+end
+choice p1 team 5236
+choice p2 team 2651
+choice p1 move 2 1, move 1 2
+choice p2 move 2 2, move 4 2
+choice p1 switch 3, move 1 -1
+choice p2 move 1 1, switch 4
+choice p1 move 1 1, move 1 2
+choice p2 move 2 1, switch 4
+choice p2 pass, switch 3
+choice p1 move 1 2, switch 3
+choice p2 move 2 2, move 1 -1
+choice p1 switch 4, move 4 1
+choice p2 move 1 -2, move 1 -1
+choice p2 switch 4, pass
+choice p1 move 3 1, move 3 2
+choice p2 move 1 1, move 2
+choice p1 move 1 2, move 3 2
+choice p2 move 1 2, move 1 1
+choice p1 move 3 1, move 1 1
+choice p2 move 1 1, pass
+choice p1 switch 4, move 3 1
+choice p2 move 1 1, pass
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Swampert, L50, M|
+expect |poke|p1|Corviknight, L50, M|
+expect |poke|p1|Tauros-Paldea-Combat, L50, M|
+expect |poke|p1|Salazzle, L50, F|
+expect |poke|p1|Toxapex, L50, M|
+expect |poke|p1|Lucario, L50, M|
+expect |poke|p2|Simisage, L50, M|
+expect |poke|p2|Alcremie-Matcha-Cream, L50, F|
+expect |poke|p2|Banette, L50, M|
+expect |poke|p2|Pangoro, L50, M|
+expect |poke|p2|Torterra, L50, M|
+expect |poke|p2|Ninetales, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Toxapex|Toxapex, L50, M|130/130
+expect |switch|p1a: Toxapex|Toxapex, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Corviknight|Corviknight, L50, M|187/187
+expect |switch|p1b: Corviknight|Corviknight, L50, M|100/100
+expect |split|p2
+expect |switch|p2a: Alcremie|Alcremie-Matcha-Cream, L50, F|153/153
+expect |switch|p2a: Alcremie|Alcremie-Matcha-Cream, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Ninetales|Ninetales, L50, M|148/148
+expect |switch|p2b: Ninetales|Ninetales, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Alcremie|Aqua Jet|p1b: Corviknight
+expect |rng|100|78
+expect |rng|24|22
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Corviknight|174/187
+expect |-damage|p1b: Corviknight|93/100
+expect |move|p2b: Ninetales|Dragon Pulse|p1b: Corviknight
+expect |rng|100|53
+expect |rng|24|7
+expect |rng|16|1
+expect |-resisted|p1b: Corviknight|1
+expect |split|p1
+expect |-damage|p1b: Corviknight|156/187
+expect |-damage|p1b: Corviknight|83/100
+expect |move|p1b: Corviknight|Crabhammer|p2b: Ninetales
+expect |rng|100|50
+expect |rng|8|0
+expect |rng|16|13
+expect |-supereffective|p2b: Ninetales|1
+expect |-crit|p2b: Ninetales
+expect |split|p2
+expect |-damage|p2b: Ninetales|2/148
+expect |-damage|p2b: Ninetales|1/100
+expect |move|p1a: Toxapex|Power Gem|p2a: Alcremie
+expect |rng|100|5
+expect |rng|24|16
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Alcremie|135/153
+expect |-damage|p2a: Alcremie|88/100
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Simisage|Simisage, L50, M|160/160
+expect |switch|p2b: Simisage|Simisage, L50, M|100/100
+expect |split|p1
+expect |switch|p1a: Tauros|Tauros-Paldea-Combat, L50, M|180/180
+expect |switch|p1a: Tauros|Tauros-Paldea-Combat, L50, M|100/100
+expect |move|p2a: Alcremie|Kowtow Cleave|p1a: Tauros
+expect |rng|24|10
+expect |rng|16|7
+expect |-resisted|p1a: Tauros|1
+expect |split|p1
+expect |-damage|p1a: Tauros|169/180
+expect |-damage|p1a: Tauros|93/100
+expect |move|p1b: Corviknight|Crabhammer|p1a: Tauros
+expect |rng|100|14
+expect |rng|8|0
+expect |rng|16|6
+expect |-crit|p1a: Tauros
+expect |split|p1
+expect |-damage|p1a: Tauros|122/180
+expect |-damage|p1a: Tauros|67/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Ninetales|Ninetales, L50, M|2/148
+expect |switch|p2b: Ninetales|Ninetales, L50, M|1/100
+expect |move|p2a: Alcremie|Aqua Jet|p1a: Tauros
+expect |rng|100|80
+expect |rng|24|10
+expect |rng|16|6
+expect |split|p1
+expect |-damage|p1a: Tauros|111/180
+expect |-damage|p1a: Tauros|61/100
+expect |move|p1a: Tauros|Aura Sphere|p2a: Alcremie
+expect |rng|24|13
+expect |rng|16|1
+expect |-resisted|p2a: Alcremie|1
+expect |split|p2
+expect |-damage|p2a: Alcremie|127/153
+expect |-damage|p2a: Alcremie|83/100
+expect |move|p1b: Corviknight|Crabhammer|p2b: Ninetales
+expect |rng|100|64
+expect |rng|8|7
+expect |rng|16|2
+expect |-supereffective|p2b: Ninetales|1
+expect |split|p2
+expect |-damage|p2b: Ninetales|0 fnt
+expect |-damage|p2b: Ninetales|0 fnt
+expect |faint|p2b: Ninetales
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Torterra|Torterra, L50, M|173/173
+expect |switch|p2b: Torterra|Torterra, L50, M|100/100
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Toxapex|Toxapex, L50, M|130/130
+expect |switch|p1b: Toxapex|Toxapex, L50, M|100/100
+expect |move|p2a: Alcremie|Aqua Jet|p1b: Toxapex
+expect |rng|100|33
+expect |rng|24|12
+expect |rng|16|12
+expect |-resisted|p1b: Toxapex|1
+expect |split|p1
+expect |-damage|p1b: Toxapex|126/130
+expect |-damage|p1b: Toxapex|96/100
+expect |move|p1a: Tauros|Aura Sphere|p2b: Torterra
+expect |rng|24|9
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Torterra|155/173
+expect |-damage|p2b: Torterra|89/100
+expect |move|p2b: Torterra|Leaf Blade|p2a: Alcremie
+expect |rng|100|53
+expect |rng|8|4
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Alcremie|66/153
+expect |-damage|p2a: Alcremie|43/100
+expect |
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Lucario|Lucario, L50, M|168/168
+expect |switch|p1a: Lucario|Lucario, L50, M|100/100
+expect |move|p2b: Torterra|Leaf Blade|p2a: Alcremie
+expect |rng|100|47
+expect |rng|8|7
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Alcremie|3/153
+expect |-damage|p2a: Alcremie|1/100
+expect |move|p2a: Alcremie|Kowtow Cleave|p2b: Torterra
+expect |rng|24|21
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Torterra|129/173
+expect |-damage|p2b: Torterra|74/100
+expect |move|p1b: Toxapex|Shadow Claw|p2a: Alcremie
+expect |rng|100|94
+expect |rng|8|5
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Alcremie|0 fnt
+expect |-damage|p2a: Alcremie|0 fnt
+expect |faint|p2a: Alcremie
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Simisage|Simisage, L50, M|160/160
+expect |switch|p2a: Simisage|Simisage, L50, M|100/100
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2a: Simisage|Seed Bomb|p1a: Lucario
+expect |rng|100|34
+expect |rng|24|21
+expect |rng|16|11
+expect |-resisted|p1a: Lucario|1
+expect |split|p1
+expect |-damage|p1a: Lucario|140/168
+expect |-damage|p1a: Lucario|83/100
+expect |rng|2|1
+expect |move|p1a: Lucario|Dragon Claw|p2a: Simisage
+expect |rng|100|86
+expect |rng|24|4
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Simisage|117/160
+expect |-damage|p2a: Simisage|73/100
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p2b: Torterra|Petal Blizzard|p1a: Lucario|[spread] p2a,p1a,p1b
+expect |rng|100|3
+expect |rng|100|41
+expect |rng|100|7
+expect |rng|24|20
+expect |rng|16|5
+expect |-resisted|p2a: Simisage|1
+expect |rng|24|5
+expect |rng|16|6
+expect |-resisted|p1a: Lucario|1
+expect |rng|24|7
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2a: Simisage|93/160
+expect |-damage|p2a: Simisage|58/100
+expect |split|p1
+expect |-damage|p1a: Lucario|112/168
+expect |-damage|p1a: Lucario|66/100
+expect |split|p1
+expect |-damage|p1b: Toxapex|95/130
+expect |-damage|p1b: Toxapex|73/100
+expect |move|p1b: Toxapex|Aqua Tail|p2b: Torterra
+expect |rng|100|65
+expect |rng|24|3
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Torterra|86/173
+expect |-damage|p2b: Torterra|49/100
+expect |
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Simisage|Seed Bomb|p1b: Toxapex
+expect |rng|100|63
+expect |rng|24|10
+expect |rng|16|0
+expect |split|p1
+expect |-damage|p1b: Toxapex|61/130
+expect |-damage|p1b: Toxapex|46/100
+expect |move|p1a: Lucario|Power Whip|p2b: Torterra
+expect |rng|100|80
+expect |rng|24|5
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2b: Torterra|39/173
+expect |-damage|p2b: Torterra|22/100
+expect |move|p2b: Torterra|Leaf Blade|p1a: Lucario
+expect |rng|100|11
+expect |rng|8|0
+expect |rng|16|0
+expect |-resisted|p1a: Lucario|1
+expect |-crit|p1a: Lucario
+expect |split|p1
+expect |-damage|p1a: Lucario|51/168
+expect |-damage|p1a: Lucario|30/100
+expect |move|p1b: Toxapex|Aqua Tail|p2b: Torterra
+expect |rng|100|26
+expect |rng|24|9
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2b: Torterra|0 fnt
+expect |-damage|p2b: Torterra|0 fnt
+expect |faint|p2b: Torterra
+expect |
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1b: Toxapex|Extreme Speed|p2a: Simisage
+expect |rng|100|64
+expect |rng|24|9
+expect |rng|16|7
+expect |split|p2
+expect |-damage|p2a: Simisage|64/160
+expect |-damage|p2a: Simisage|40/100
+expect |move|p2a: Simisage|Seed Bomb|p1a: Lucario
+expect |rng|100|10
+expect |rng|24|5
+expect |rng|16|3
+expect |-resisted|p1a: Lucario|1
+expect |split|p1
+expect |-damage|p1a: Lucario|21/168
+expect |-damage|p1a: Lucario|12/100
+expect |move|p1a: Lucario|Dragon Claw|p2a: Simisage
+expect |rng|100|48
+expect |rng|24|14
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2a: Simisage|22/160
+expect |-damage|p2a: Simisage|13/100
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Tauros|Tauros-Paldea-Combat, L50, M|111/180
+expect |switch|p1a: Tauros|Tauros-Paldea-Combat, L50, M|61/100
+expect |move|p2a: Simisage|Seed Bomb|p1a: Tauros
+expect |rng|100|76
+expect |rng|24|11
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1a: Tauros|75/180
+expect |-damage|p1a: Tauros|41/100
+expect |move|p1b: Toxapex|Aqua Tail|p2a: Simisage
+expect |rng|100|22
+expect |rng|24|6
+expect |rng|16|11
+expect |-resisted|p2a: Simisage|1
+expect |split|p2
+expect |-damage|p2a: Simisage|0 fnt
+expect |-damage|p2a: Simisage|0 fnt
+expect |faint|p2a: Simisage
+expect |
+expect |win|p1

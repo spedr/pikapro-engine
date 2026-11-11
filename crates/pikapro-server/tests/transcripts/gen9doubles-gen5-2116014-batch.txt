@@ -1,0 +1,97 @@
+# gen9doubles-gen5-2116014-batch: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827
+# debug true
+@option replay spectator
+@write
+>start {"formatid":"gen9doublescustomgame@@@!Team Preview","seed":"gen5,4dbac403ed67d424"}
+>player p1 {"name":"Alice","team":"Blitzle||Charcoal|MotorDrive|RazorLeaf|Brave|,163,128,,219,||||50|,,,,,Psychic]Tynamo||SalacBerry|Levitate|Synthesis,SecretSword|Brave|,169,87,151,79,23||||50|,,,,,Dark]Chomp|Thwackey||Overgrow|WaterPledge|Adamant|21,9,95,187,23,159|F|||50|,,,,,Normal]Jirachi||UltraBall|SereneGrace|PowerSwap|Hardy|214,138,18,69,14,52||||50|,,,,,Ice]Scorbunny||GrepaBerry|Blaze|Defog,AquaCutter,RainDance|Modest|14,33,22,6,248,186|F|||50|,,,,,Bug]Rookidee||CobaBerry|KeenEye|RockWrecker,FlareBlitz,NastyPlot|Hasty|8,153,4,2,181,162|M|||50|,,,,,Poison"}
+@write
+# a comment
+>player p2 {"name":"Bob","team":"Sparky|Registeel|ThroatSpray|ClearBody|Leafage,Dig,EsperWing,PrismaticLaser|Lax|91,31,,168,94,114||||50|,,,,,Dark]Mr. Bubbles|Glaceon|InsectPlate|IceBody|Stomp,ScorchingSands,JetPunch|Rash|177,6,136,92,10,11|||S|50|,,,,,Psychic]ThisNameIsFarTooLongToKeep|Ludicolo|ChoiceBand|SwiftSwim|MistyExplosion|Bashful|174,12,54,151,101,18||||50|,,,,,Flying]Basculegion-F||WiseGlasses|MoldBreaker|DragonDarts|Naive|36,128,50,,109,171||||50|,,,,,Electric]Zoë|Bonsly|ShinyStone|Sturdy|HeavySlam,SoftBoiled,Acrobatics|Naughty|2,81,166,4,245,11||||50|,,,,,Grass]Torkoal||QualotBerry|ShellArmor|Minimize,PinMissile,Scald,WaveCrash|Adamant|234,21,25,,1,229|F|||50|,,,,,Dark"}
+>p2 move 1 -2, move 3 2 terastallize
+@write
+>p1 switch 3, move 2 2
+>p1 auto
+@write
+>p2 move 1, move 1, move 1
+@write
+>p2 move 4 1, move 2 1
+@write
+# a comment
+>p1 move waterpledge terastal +1, move Synthesis
+@write
+>p2 move Leafage 1 terastallize
+>p2 move 1 ,  move stomp -1
+@write
+>p1 switch 3
+@write
+>forcetie
+@write
+>p1 move 1
+@message
+|t:|
+|gametype|doubles
+|player|p1|Alice||
+@message
+|player|p2|Bob||
+|gen|9
+|tier|[Gen 9] Doubles Custom Game
+|raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+|
+|t:|
+|teamsize|p1|6
+|teamsize|p2|6
+|start
+|switch|p1a: Blitzle|Blitzle, L50, F|120/120
+|switch|p1b: Tynamo|Tynamo, L50, F|110/110
+|switch|p2a: Sparky|Registeel, L50|166/166
+|switch|p2b: Mr. Bubbles|Glaceon, L50, M, shiny|162/162
+|turn|1
+@message
+|
+|t:|
+|switch|p1a: Chomp|Thwackey, L50, F|148/148
+|-terastallize|p2b: Mr. Bubbles|Psychic
+|move|p2b: Mr. Bubbles|Jet Punch|p1b: Tynamo
+|-damage|p1b: Tynamo|79/110
+|move|p2a: Sparky|Leafage|p2b: Mr. Bubbles
+|-damage|p2b: Mr. Bubbles|151/162
+|move|p1b: Tynamo|Secret Sword|p2b: Mr. Bubbles
+|-resisted|p2b: Mr. Bubbles
+|-damage|p2b: Mr. Bubbles|140/162
+|
+|upkeep
+|turn|2
+@message
+|
+|t:|
+|move|p1a: Chomp|Water Pledge|p2a: Sparky
+|-damage|p2a: Sparky|147/166
+|move|p2b: Mr. Bubbles|Scorching Sands|p1a: Chomp
+|-resisted|p1a: Chomp
+|-damage|p1a: Chomp|118/148
+|move|p2a: Sparky|Prismatic Laser|p1a: Chomp
+|-damage|p1a: Chomp|18/148
+|-mustrecharge|p2a: Sparky
+|move|p1b: Tynamo|Synthesis|p1b: Tynamo
+|-heal|p1b: Tynamo|110/110
+|
+|upkeep
+|turn|3
+@message
+|
+|t:|
+|-terastallize|p1a: Chomp|Normal
+|move|p1a: Chomp|Water Pledge|p2a: Sparky
+|-damage|p2a: Sparky|129/166
+|move|p2b: Mr. Bubbles|Stomp|p2a: Sparky
+|-resisted|p2a: Sparky
+|-damage|p2a: Sparky|122/166
+|cant|p2a: Sparky|recharge
+|move|p1b: Tynamo|Synthesis|p1b: Tynamo
+|-fail|p1b: Tynamo|heal
+|
+|upkeep
+|turn|4
+@message
+|
+|tie

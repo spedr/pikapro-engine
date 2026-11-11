@@ -1,0 +1,477 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9vgc
+seed 6364 a7a3 b0f4 247c
+genders drawn
+validate gen9vgc2025regi
+team p1
+Iron Bundle @ Life Orb
+Ability: Quark Drive
+Level: 50
+Tera Type: Dragon
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Freeze-Dry
+- Protect
+- Hydro Pump
+- Icy Wind
+
+Metagross @ Assault Vest
+Ability: Clear Body
+Level: 50
+Tera Type: Steel
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- Heavy Slam
+- Psychic Fangs
+- Knock Off
+- Bullet Punch
+
+Enamorus-Therian (F) @ Sitrus Berry
+Ability: Overcoat
+Level: 50
+Tera Type: Ground
+EVs: 252 HP / 4 Def / 252 SpA
+Modest Nature
+IVs: 0 Atk
+- Earth Power
+- Moonblast
+- Mystical Fire
+- Protect
+
+X (Gastrodon) (M) @ Leftovers
+Ability: Storm Drain
+Level: 50
+Tera Type: Fire
+EVs: 252 HP / 4 Def / 252 SpA
+Modest Nature
+IVs: 0 Atk
+- Ice Beam
+- Recover
+- Earth Power
+- Yawn
+
+Bastiodon (F) @ Chesto Berry
+Ability: Sturdy
+Level: 50
+Tera Type: Flying
+EVs: 252 HP / 128 Def / 128 SpD
+Bold Nature
+IVs: 0 Atk
+- Iron Defense
+- Body Press
+- Rest
+- Foul Play
+
+Big Tony's Pal (Zapdos-Galar) @ Choice Band
+Ability: Defiant
+Level: 50
+Tera Type: Fighting
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Brave Bird
+- Knock Off
+- U-turn
+- Thunderous Kick
+end
+team p2
+Big Tony's Pal (Bombirdier) (F) @ Choice Band
+Ability: Rocky Payload
+Level: 50
+Tera Type: Rock
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Brave Bird
+- Rock Slide
+- Sucker Punch
+- Knock Off
+
+Minior-Meteor @ White Herb
+Ability: Shields Down
+Level: 50
+Tera Type: Steel
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Protect
+- Shell Smash
+- Acrobatics
+- Rock Slide
+
+X (Pachirisu) (M) @ Sitrus Berry
+Ability: Volt Absorb
+Level: 50
+Tera Type: Flying
+EVs: 252 HP / 128 Def / 128 SpD
+Bold Nature
+- Follow Me
+- Nuzzle
+- Encore
+- Thunderbolt
+
+Ambipom (M) @ Silk Scarf
+Ability: Technician
+Level: 50
+Tera Type: Normal
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Fake Out
+- Protect
+- Knock Off
+- Double-Edge
+
+Muk (M) @ Assault Vest
+Ability: Poison Touch
+Level: 50
+Tera Type: Dark
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- Drain Punch
+- Gunk Shot
+- Knock Off
+- Shadow Sneak
+
+Cobalion @ Leftovers
+Ability: Justified
+Level: 50
+Tera Type: Flying
+EVs: 252 HP / 252 Atk / 4 Def
+Adamant Nature
+- Heavy Slam
+- Protect
+- Body Press
+- Iron Defense
+end
+choice p1 team 6135
+choice p2 team 6514
+choice p1 move Thunderous Kick +2,move icywind terastallize
+choice p2 move 1 1 terastallize, move 1 -1
+choice p1 default
+choice p2 move 2, move 4 -1
+choice p2 pass, switch 3
+choice p1 move 4 -2, switch 3
+choice p2 move 3 1, move 4 1
+choice p1 default
+choice p2 move 1 1, move 4 2
+choice p1 switch bastiodon,move Moonblast -1
+choice p2 switch 4, move 4 1
+choice p1 move 4 2, move 1 -1
+choice p1 switch 4, pass
+choice p2 default
+choice p1 move 3 1, move 4
+choice p2 move 2, move 4 2
+choice p1 skip ,  move Earth Power +1
+choice p2 move 3 2, move 4 -1
+choice p1 pass, move 3 2
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>2 custom rules:</strong></summary> Picked Team Size = 4, Adjust Level Down = 50</details></div>
+expect |clearpoke
+expect |poke|p1|Iron Bundle, L50|
+expect |poke|p1|Metagross, L50|
+expect |poke|p1|Enamorus-Therian, L50, F|
+expect |poke|p1|Gastrodon, L50, M|
+expect |poke|p1|Bastiodon, L50, F|
+expect |poke|p1|Zapdos-Galar, L50|
+expect |poke|p2|Bombirdier, L50, F|
+expect |poke|p2|Minior, L50|
+expect |poke|p2|Pachirisu, L50, M|
+expect |poke|p2|Ambipom, L50, M|
+expect |poke|p2|Muk, L50, M|
+expect |poke|p2|Cobalion, L50|
+expect |teampreview|4
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |switch|p1a: Big Tony's Pal|Zapdos-Galar, L50|166/166
+expect |switch|p1a: Big Tony's Pal|Zapdos-Galar, L50|166/166
+expect |split|p1
+expect |switch|p1b: Iron Bundle|Iron Bundle, L50|132/132
+expect |switch|p1b: Iron Bundle|Iron Bundle, L50|132/132
+expect |split|p2
+expect |switch|p2a: Cobalion|Cobalion, L50|198/198
+expect |switch|p2a: Cobalion|Cobalion, L50|198/198
+expect |split|p2
+expect |switch|p2b: Muk|Muk, L50, M|212/212
+expect |switch|p2b: Muk|Muk, L50, M|212/212
+expect |turn|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |-terastallize|p1b: Iron Bundle|Dragon
+expect |-terastallize|p2a: Cobalion|Flying
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Iron Bundle|Icy Wind|p2a: Cobalion|[spread] p2a,p2b
+expect |rng|100|19
+expect |rng|100|25
+expect |rng|24|10
+expect |rng|16|0
+expect |-supereffective|p2a: Cobalion
+expect |rng|24|8
+expect |rng|16|13
+expect |split|p2
+expect |-damage|p2a: Cobalion|47/198
+expect |-damage|p2a: Cobalion|47/198
+expect |split|p2
+expect |-damage|p2b: Muk|180/212
+expect |-damage|p2b: Muk|180/212
+expect |rng|100|67
+expect |-unboost|p2a: Cobalion|spe|1
+expect |rng|100|93
+expect |-unboost|p2b: Muk|spe|1
+expect |split|p1
+expect |-damage|p1b: Iron Bundle|119/132|[from] item: Life Orb
+expect |-damage|p1b: Iron Bundle|119/132|[from] item: Life Orb
+expect |move|p1a: Big Tony's Pal|Thunderous Kick|p2b: Muk
+expect |rng|100|43
+expect |rng|24|13
+expect |rng|16|6
+expect |-resisted|p2b: Muk
+expect |split|p2
+expect |-damage|p2b: Muk|102/212
+expect |-damage|p2b: Muk|102/212
+expect |rng|100|41
+expect |-unboost|p2b: Muk|def|1
+expect |move|p2a: Cobalion|Heavy Slam|p1a: Big Tony's Pal
+expect |rng|100|59
+expect |rng|24|7
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|76/166
+expect |-damage|p1a: Big Tony's Pal|76/166
+expect |move|p2b: Muk|Drain Punch|p2a: Cobalion
+expect |rng|100|93
+expect |rng|24|11
+expect |rng|16|1
+expect |-resisted|p2a: Cobalion
+expect |split|p2
+expect |-damage|p2a: Cobalion|28/198
+expect |-damage|p2a: Cobalion|28/198
+expect |split|p2
+expect |-heal|p2b: Muk|112/212|[from] drain|[of] p2a: Cobalion
+expect |-heal|p2b: Muk|112/212|[from] drain|[of] p2a: Cobalion
+expect |rng|10|7
+expect |
+expect |split|p2
+expect |-heal|p2a: Cobalion|40/198|[from] item: Leftovers
+expect |-heal|p2a: Cobalion|40/198|[from] item: Leftovers
+expect |upkeep
+expect |turn|2
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2a: Cobalion|Protect|p2a: Cobalion
+expect |-singleturn|p2a: Cobalion|Protect
+expect |move|p2b: Muk|Shadow Sneak|p2a: Cobalion
+expect |-activate|p2a: Cobalion|move: Protect
+expect |move|p1b: Iron Bundle|Freeze-Dry|p2b: Muk
+expect |rng|100|90
+expect |rng|24|3
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Muk|50/212
+expect |-damage|p2b: Muk|50/212
+expect |rng|100|43
+expect |split|p1
+expect |-damage|p1b: Iron Bundle|106/132|[from] item: Life Orb
+expect |-damage|p1b: Iron Bundle|106/132|[from] item: Life Orb
+expect |move|p1a: Big Tony's Pal|Thunderous Kick|p2b: Muk
+expect |rng|100|60
+expect |rng|24|19
+expect |rng|16|10
+expect |-resisted|p2b: Muk
+expect |split|p2
+expect |-damage|p2b: Muk|0 fnt
+expect |-damage|p2b: Muk|0 fnt
+expect |rng|100|35
+expect |faint|p2b: Muk
+expect |
+expect |rng|2|0
+expect |split|p2
+expect |-heal|p2a: Cobalion|52/198|[from] item: Leftovers
+expect |-heal|p2a: Cobalion|52/198|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Big Tony's Pal|Bombirdier, L50, F|146/146
+expect |switch|p2b: Big Tony's Pal|Bombirdier, L50, F|146/146
+expect |turn|3
+expect |
+expect |t:|
+expect |-end|p1b: Iron Bundle|Quark Drive|[silent]
+expect |split|p1
+expect |switch|p1b: Enamorus|Enamorus-Therian, L50, F|181/181
+expect |switch|p1b: Enamorus|Enamorus-Therian, L50, F|181/181
+expect |move|p1a: Big Tony's Pal|Thunderous Kick|p1b: Enamorus
+expect |rng|100|13
+expect |rng|24|19
+expect |rng|16|8
+expect |-resisted|p1b: Enamorus
+expect |split|p1
+expect |-damage|p1b: Enamorus|153/181
+expect |-damage|p1b: Enamorus|153/181
+expect |rng|100|10
+expect |-unboost|p1b: Enamorus|def|1
+expect |move|p2b: Big Tony's Pal|Knock Off|p1a: Big Tony's Pal
+expect |rng|100|24
+expect |rng|24|23
+expect |rng|16|14
+expect |-resisted|p1a: Big Tony's Pal
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|12/166
+expect |-damage|p1a: Big Tony's Pal|12/166
+expect |-enditem|p1a: Big Tony's Pal|Choice Band|[from] move: Knock Off|[of] p2b: Big Tony's Pal
+expect |move|p2a: Cobalion|Body Press|p1a: Big Tony's Pal
+expect |rng|100|64
+expect |rng|24|4
+expect |rng|16|1
+expect |-resisted|p1a: Big Tony's Pal
+expect |split|p1
+expect |-damage|p1a: Big Tony's Pal|0 fnt
+expect |-damage|p1a: Big Tony's Pal|0 fnt
+expect |faint|p1a: Big Tony's Pal
+expect |
+expect |split|p2
+expect |-heal|p2a: Cobalion|64/198|[from] item: Leftovers
+expect |-heal|p2a: Cobalion|64/198|[from] item: Leftovers
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Iron Bundle|Iron Bundle, L50, tera:Dragon|106/132
+expect |switch|p1a: Iron Bundle|Iron Bundle, L50, tera:Dragon|106/132
+expect |turn|4
+expect |
+expect |t:|
+expect |-end|p1a: Iron Bundle|Quark Drive|[silent]
+expect |split|p1
+expect |switch|p1a: Bastiodon|Bastiodon, L50, F|167/167
+expect |switch|p1a: Bastiodon|Bastiodon, L50, F|167/167
+expect |move|p2b: Big Tony's Pal|Knock Off|p1b: Enamorus
+expect |rng|100|22
+expect |rng|24|7
+expect |rng|16|4
+expect |-resisted|p1b: Enamorus
+expect |split|p1
+expect |-damage|p1b: Enamorus|63/181
+expect |-damage|p1b: Enamorus|63/181
+expect |-enditem|p1b: Enamorus|Sitrus Berry|[from] move: Knock Off|[of] p2b: Big Tony's Pal
+expect |move|p2a: Cobalion|Heavy Slam|p1a: Bastiodon
+expect |rng|100|15
+expect |rng|24|10
+expect |rng|16|8
+expect |split|p1
+expect |-damage|p1a: Bastiodon|149/167
+expect |-damage|p1a: Bastiodon|149/167
+expect |move|p1b: Enamorus|Moonblast|p1a: Bastiodon
+expect |rng|100|37
+expect |rng|24|6
+expect |rng|16|11
+expect |-resisted|p1a: Bastiodon
+expect |split|p1
+expect |-damage|p1a: Bastiodon|116/167
+expect |-damage|p1a: Bastiodon|116/167
+expect |rng|100|62
+expect |
+expect |split|p2
+expect |-heal|p2a: Cobalion|76/198|[from] item: Leftovers
+expect |-heal|p2a: Cobalion|76/198|[from] item: Leftovers
+expect |upkeep
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Ambipom|Ambipom, L50, M|151/151
+expect |switch|p2a: Ambipom|Ambipom, L50, M|151/151
+expect |move|p2b: Big Tony's Pal|Knock Off|p1a: Bastiodon
+expect |rng|100|67
+expect |rng|24|16
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Bastiodon|46/167
+expect |-damage|p1a: Bastiodon|46/167
+expect |-enditem|p1a: Bastiodon|Chesto Berry|[from] move: Knock Off|[of] p2b: Big Tony's Pal
+expect |move|p1b: Enamorus|Earth Power|p1a: Bastiodon
+expect |rng|100|26
+expect |rng|24|16
+expect |rng|16|15
+expect |-supereffective|p1a: Bastiodon
+expect |split|p1
+expect |-damage|p1a: Bastiodon|0 fnt
+expect |-damage|p1a: Bastiodon|0 fnt
+expect |rng|100|84
+expect |faint|p1a: Bastiodon
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Iron Bundle|Iron Bundle, L50, tera:Dragon|106/132
+expect |switch|p1a: Iron Bundle|Iron Bundle, L50, tera:Dragon|106/132
+expect |turn|6
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1b: Enamorus|Protect|p1b: Enamorus
+expect |-singleturn|p1b: Enamorus|Protect
+expect |move|p2a: Ambipom|Fake Out|p1b: Enamorus
+expect |-activate|p1b: Enamorus|move: Protect
+expect |move|p1a: Iron Bundle|Hydro Pump|p2a: Ambipom|[miss]
+expect |rng|100|90
+expect |-miss|p1a: Iron Bundle|p2a: Ambipom
+expect |move|p2b: Big Tony's Pal|Knock Off|p1a: Iron Bundle
+expect |rng|100|42
+expect |rng|24|12
+expect |rng|16|1
+expect |split|p1
+expect |-damage|p1a: Iron Bundle|0 fnt
+expect |-damage|p1a: Iron Bundle|0 fnt
+expect |-enditem|p1a: Iron Bundle|Life Orb|[from] move: Knock Off|[of] p2b: Big Tony's Pal
+expect |faint|p1a: Iron Bundle
+expect |-end|p1a: Iron Bundle|Quark Drive|[silent]
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|7
+expect |
+expect |t:|
+expect |move|p2a: Ambipom|Protect|p2a: Ambipom
+expect |-singleturn|p2a: Ambipom|Protect
+expect |move|p2b: Big Tony's Pal|Knock Off|p1b: Enamorus
+expect |rng|100|21
+expect |rng|24|22
+expect |rng|16|6
+expect |-resisted|p1b: Enamorus
+expect |split|p1
+expect |-damage|p1b: Enamorus|4/181
+expect |-damage|p1b: Enamorus|4/181
+expect |move|p1b: Enamorus|Earth Power|p2a: Ambipom
+expect |-activate|p2a: Ambipom|move: Protect
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p2a: Ambipom|Knock Off|p1b: Enamorus
+expect |rng|100|89
+expect |rng|24|3
+expect |rng|16|8
+expect |-resisted|p1b: Enamorus
+expect |split|p1
+expect |-damage|p1b: Enamorus|0 fnt
+expect |-damage|p1b: Enamorus|0 fnt
+expect |faint|p1b: Enamorus
+expect |
+expect |win|p2

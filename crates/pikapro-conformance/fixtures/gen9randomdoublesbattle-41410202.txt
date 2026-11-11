@@ -1,0 +1,637 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 7c94 8117 ebec b4ec
+genders drawn
+team p1
+Smeargle (F) @ Wide Lens
+Ability: Technician
+Tera Type: Ghost
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- No Retreat
+- Baton Pass
+- Spiky Shield
+- Population Bomb
+
+Nibbles (Hypno) (M) @ Sitrus Berry
+Ability: Inner Focus
+Level: 95
+Tera Type: Dark
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Low Sweep
+- Encore
+- Psychic
+- Helping Hand
+
+Clawitzer (M) @ Sitrus Berry
+Ability: Mega Launcher
+Level: 84
+Tera Type: Fighting
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Protect
+- Dark Pulse
+- Muddy Water
+- Aura Sphere
+
+Necrozma-Dusk-Mane @ Weakness Policy
+Ability: Prism Armor
+Level: 70
+Tera Type: Water
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD
+Serious Nature
+IVs: 0 Spe
+- Earthquake
+- Sunsteel Strike
+- Trick Room
+- Photon Geyser
+
+Zoë (Metagross) @ Weakness Policy
+Ability: Clear Body
+Level: 80
+Tera Type: Dragon
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Stomping Tantrum
+- Agility
+- Psychic Fangs
+- Heavy Slam
+
+Eiscue (M) @ Sitrus Berry
+Ability: Ice Face
+Level: 89
+Tera Type: Water
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Belly Drum
+- Protect
+- Ice Spinner
+- Liquidation
+end
+team p2
+Zarude-Dada @ Life Orb
+Ability: Leaf Guard
+Level: 80
+Tera Type: Poison
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Protect
+- Knock Off
+- Power Whip
+- Close Combat
+
+Big Tony's Pal (Revavroom) (M) @ Life Orb
+Ability: Filter
+Level: 84
+Tera Type: Ground
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Gunk Shot
+- High Horsepower
+- Iron Head
+- Shift Gear
+
+Zoë (Sudowoodo) (F) @ Life Orb
+Ability: Rock Head
+Level: 94
+Tera Type: Grass
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- High Horsepower
+- Wood Hammer
+- Protect
+- Head Smash
+
+Flapple (M) @ Clear Amulet
+Ability: Hustle
+Level: 95
+Tera Type: Dragon
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Dragon Dance
+- Grav Apple
+- Tera Blast
+- Protect
+
+X (Slaking) (M) @ Choice Band
+Ability: Truant
+Level: 89
+Shiny: Yes
+Tera Type: Ghost
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+- Knock Off
+- High Horsepower
+- Double-Edge
+- Giga Impact
+
+Bellibolt (F) @ Sitrus Berry
+Ability: Electromorphosis
+Level: 81
+Tera Type: Water
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Serious Nature
+IVs: 0 Atk
+- Thunderbolt
+- Thunder Wave
+- Muddy Water
+- Slack Off
+end
+choice p1 move populationbomb +2,move Low Sweep terastallize -1
+choice p2 move knockoff -2, move 3 -1
+choice p1 default
+choice p2 move 2 +1,move highhorsepower 1
+choice p1 switch 6, pass
+choice p2 switch 3, move 4 terastallize
+choice p1 move 1, switch 3
+choice p2 switch 5, move 2 -1
+choice p1 move 3 -2, move 3
+choice p2 pass, switch 6
+choice p1 move 4 2, move 1
+choice p2 move 4 1, move 4
+choice p1 move Liquidation +2 ,  move Dark Pulse 1
+choice p2 move 1, move 3
+choice p2 skip ,  switch flapple
+choice p1 move icespinner +2, move 3
+choice p2 move gigaimpact 1, move 3 +2
+choice p2 switch sudowoodo, switch Zarude
+choice p1 move 4 -2, move 4 2
+choice p2 move 2 1, move 4 -1
+choice p1 move 1, move 2 -1
+choice p2 move 1 1, pass
+choice p1 default
+choice p2 move 3, pass
+choice p1 move Psychic +1 ,  move 4 +1
+choice p2 move 1 2, pass
+choice p1 switch 5, move 2 1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Smeargle|Smeargle, F|272/272
+expect |switch|p1a: Smeargle|Smeargle, F|100/100
+expect |split|p1
+expect |switch|p1b: Nibbles|Hypno, L95, M|315/315
+expect |switch|p1b: Nibbles|Hypno, L95, M|100/100
+expect |split|p2
+expect |switch|p2a: Zarude|Zarude-Dada, L80|299/299
+expect |switch|p2a: Zarude|Zarude-Dada, L80|100/100
+expect |split|p2
+expect |switch|p2b: Big Tony's Pal|Revavroom, L84, M|272/272
+expect |switch|p2b: Big Tony's Pal|Revavroom, L84, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |-terastallize|p1b: Nibbles|Dark
+expect |move|p2a: Zarude|Knock Off|p2b: Big Tony's Pal
+expect |rng|100|77
+expect |rng|24|14
+expect |rng|16|4
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|124/272
+expect |-damage|p2b: Big Tony's Pal|46/100
+expect |-enditem|p2b: Big Tony's Pal|Life Orb|[from] move: Knock Off|[of] p2a: Zarude
+expect |split|p2
+expect |-damage|p2a: Zarude|270/299|[from] item: Life Orb
+expect |-damage|p2a: Zarude|91/100|[from] item: Life Orb
+expect |move|p1a: Smeargle|Population Bomb|p2b: Big Tony's Pal
+expect |rng|100|36
+expect |rng|24|7
+expect |rng|16|12
+expect |-resisted|p2b: Big Tony's Pal
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|115/272
+expect |-damage|p2b: Big Tony's Pal|43/100
+expect |rng|100|94
+expect |rng|24|5
+expect |rng|16|8
+expect |-resisted|p2b: Big Tony's Pal
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|106/272
+expect |-damage|p2b: Big Tony's Pal|39/100
+expect |rng|100|18
+expect |rng|24|15
+expect |rng|16|9
+expect |-resisted|p2b: Big Tony's Pal
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|97/272
+expect |-damage|p2b: Big Tony's Pal|36/100
+expect |rng|100|70
+expect |rng|24|21
+expect |rng|16|13
+expect |-resisted|p2b: Big Tony's Pal
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|88/272
+expect |-damage|p2b: Big Tony's Pal|33/100
+expect |rng|100|96
+expect |rng|24|19
+expect |rng|16|13
+expect |-resisted|p2b: Big Tony's Pal
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|79/272
+expect |-damage|p2b: Big Tony's Pal|30/100
+expect |rng|100|20
+expect |rng|24|0
+expect |rng|16|12
+expect |-resisted|p2b: Big Tony's Pal
+expect |-crit|p2b: Big Tony's Pal
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|66/272
+expect |-damage|p2b: Big Tony's Pal|25/100
+expect |rng|100|40
+expect |rng|24|18
+expect |rng|16|2
+expect |-resisted|p2b: Big Tony's Pal
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|57/272
+expect |-damage|p2b: Big Tony's Pal|21/100
+expect |rng|100|49
+expect |rng|24|11
+expect |rng|16|13
+expect |-resisted|p2b: Big Tony's Pal
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|48/272
+expect |-damage|p2b: Big Tony's Pal|18/100
+expect |rng|100|99
+expect |-hitcount|p2b: Big Tony's Pal|8
+expect |move|p2b: Big Tony's Pal|Iron Head|p2a: Zarude
+expect |rng|100|76
+expect |rng|24|12
+expect |rng|16|15
+expect |split|p2
+expect |-damage|p2a: Zarude|186/299
+expect |-damage|p2a: Zarude|63/100
+expect |rng|100|58
+expect |move|p1b: Nibbles|Low Sweep|p1a: Smeargle
+expect |rng|100|85
+expect |rng|24|20
+expect |rng|16|8
+expect |-supereffective|p1a: Smeargle
+expect |split|p1
+expect |-damage|p1a: Smeargle|124/272
+expect |-damage|p1a: Smeargle|46/100
+expect |rng|100|13
+expect |-unboost|p1a: Smeargle|spe|1
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p2a: Zarude|Knock Off|p1a: Smeargle
+expect |rng|100|32
+expect |rng|24|18
+expect |rng|16|10
+expect |split|p1
+expect |-damage|p1a: Smeargle|0 fnt
+expect |-damage|p1a: Smeargle|0 fnt
+expect |-enditem|p1a: Smeargle|Wide Lens|[from] move: Knock Off|[of] p2a: Zarude
+expect |faint|p1a: Smeargle
+expect |split|p2
+expect |-damage|p2a: Zarude|157/299|[from] item: Life Orb
+expect |-damage|p2a: Zarude|53/100|[from] item: Life Orb
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Big Tony's Pal|High Horsepower|p1b: Nibbles
+expect |rng|100|27
+expect |rng|24|10
+expect |rng|16|13
+expect |split|p1
+expect |-damage|p1b: Nibbles|237/315
+expect |-damage|p1b: Nibbles|76/100
+expect |move|p1b: Nibbles|Low Sweep|p2a: Zarude
+expect |rng|100|18
+expect |rng|24|21
+expect |rng|16|0
+expect |-supereffective|p2a: Zarude
+expect |split|p2
+expect |-damage|p2a: Zarude|61/299
+expect |-damage|p2a: Zarude|21/100
+expect |rng|100|95
+expect |-unboost|p2a: Zarude|spe|1
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Eiscue|Eiscue, L89, M|278/278
+expect |switch|p1a: Eiscue|Eiscue, L89, M|100/100
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Clawitzer|Clawitzer, L84, M|256/256
+expect |switch|p1b: Clawitzer|Clawitzer, L84, M|100/100
+expect |split|p2
+expect |switch|p2a: Zoë|Sudowoodo, L94, F|284/284
+expect |switch|p2a: Zoë|Sudowoodo, L94, F|100/100
+expect |-terastallize|p2b: Big Tony's Pal|Ground
+expect |move|p2b: Big Tony's Pal|Shift Gear|p2b: Big Tony's Pal
+expect |-boost|p2b: Big Tony's Pal|spe|2
+expect |-boost|p2b: Big Tony's Pal|atk|1
+expect |move|p1a: Eiscue|Belly Drum|p1a: Eiscue
+expect |split|p1
+expect |-damage|p1a: Eiscue|139/278
+expect |-damage|p1a: Eiscue|50/100
+expect |-setboost|p1a: Eiscue|atk|6|[from] move: Belly Drum
+expect |-enditem|p1a: Eiscue|Sitrus Berry|[eat]
+expect |split|p1
+expect |-heal|p1a: Eiscue|208/278|[from] item: Sitrus Berry
+expect |-heal|p1a: Eiscue|75/100|[from] item: Sitrus Berry
+expect |
+expect |upkeep
+expect |turn|4
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: X|Slaking, L89, M, shiny|412/412
+expect |switch|p2a: X|Slaking, L89, M, shiny|100/100
+expect |rng|2|1
+expect |move|p2b: Big Tony's Pal|High Horsepower|p2a: X
+expect |rng|100|65
+expect |rng|24|6
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: X|271/412
+expect |-damage|p2a: X|66/100
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Clawitzer|Muddy Water|p2a: X|[spread] p2a,p2b
+expect |rng|100|79
+expect |rng|100|28
+expect |rng|24|20
+expect |rng|16|15
+expect |rng|24|20
+expect |rng|16|2
+expect |-supereffective|p2b: Big Tony's Pal
+expect |split|p2
+expect |-damage|p2a: X|180/412
+expect |-damage|p2a: X|44/100
+expect |split|p2
+expect |-damage|p2b: Big Tony's Pal|0 fnt
+expect |-damage|p2b: Big Tony's Pal|0 fnt
+expect |rng|100|5
+expect |-unboost|p2a: X|accuracy|1
+expect |rng|100|59
+expect |faint|p2b: Big Tony's Pal
+expect |move|p1a: Eiscue|Ice Spinner|p1b: Clawitzer
+expect |rng|100|75
+expect |rng|24|2
+expect |rng|16|11
+expect |-resisted|p1b: Clawitzer
+expect |split|p1
+expect |-damage|p1b: Clawitzer|100/256
+expect |-damage|p1b: Clawitzer|40/100
+expect |-enditem|p1b: Clawitzer|Sitrus Berry|[eat]
+expect |split|p1
+expect |-heal|p1b: Clawitzer|164/256|[from] item: Sitrus Berry
+expect |-heal|p1b: Clawitzer|65/100|[from] item: Sitrus Berry
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Bellibolt|Bellibolt, L81, F|309/309
+expect |switch|p2b: Bellibolt|Bellibolt, L81, F|100/100
+expect |turn|5
+expect |
+expect |t:|
+expect |move|p1b: Clawitzer|Protect|p1b: Clawitzer
+expect |-singleturn|p1b: Clawitzer|Protect
+expect |move|p2a: X|Giga Impact|p1a: Eiscue
+expect |rng|100|66
+expect |rng|24|15
+expect |rng|16|12
+expect |-activate|p1a: Eiscue|ability: Ice Face
+expect |split|p1
+expect |-damage|p1a: Eiscue|208/278
+expect |-damage|p1a: Eiscue|75/100
+expect |-mustrecharge|p2a: X
+expect |detailschange|p1a: Eiscue|Eiscue-Noice, L89, M
+expect |move|p1a: Eiscue|Liquidation|p2b: Bellibolt
+expect |rng|100|41
+expect |rng|24|10
+expect |rng|16|9
+expect |split|p2
+expect |-damage|p2b: Bellibolt|80/309
+expect |-damage|p2b: Bellibolt|26/100
+expect |rng|100|12
+expect |-unboost|p2b: Bellibolt|def|1
+expect |-start|p2b: Bellibolt|Charge|Liquidation|[from] ability: Electromorphosis
+expect |-enditem|p2b: Bellibolt|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2b: Bellibolt|157/309|[from] item: Sitrus Berry
+expect |-heal|p2b: Bellibolt|51/100|[from] item: Sitrus Berry
+expect |move|p2b: Bellibolt|Slack Off|p2b: Bellibolt
+expect |split|p2
+expect |-heal|p2b: Bellibolt|309/309
+expect |-heal|p2b: Bellibolt|100/100
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Eiscue|Liquidation|p2b: Bellibolt
+expect |rng|100|26
+expect |rng|24|5
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2b: Bellibolt|0 fnt
+expect |-damage|p2b: Bellibolt|0 fnt
+expect |rng|100|99
+expect |faint|p2b: Bellibolt
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |cant|p2a: X|recharge
+expect |rng|2|0
+expect |move|p1b: Clawitzer|Dark Pulse|p2a: X
+expect |rng|100|54
+expect |rng|24|15
+expect |rng|16|1
+expect |split|p2
+expect |-damage|p2a: X|54/412
+expect |-damage|p2a: X|14/100
+expect |rng|100|45
+expect |rng|2|1
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Flapple|Flapple, L95, M|287/287
+expect |switch|p2b: Flapple|Flapple, L95, M|100/100
+expect |turn|7
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1a: Eiscue|Ice Spinner|p2b: Flapple
+expect |rng|100|18
+expect |rng|24|16
+expect |rng|16|7
+expect |-supereffective|p2b: Flapple
+expect |split|p2
+expect |-damage|p2b: Flapple|0 fnt
+expect |-damage|p2b: Flapple|0 fnt
+expect |faint|p2b: Flapple
+expect |rng|1|0
+expect |move|p2a: X|Giga Impact|p1a: Eiscue|[miss]
+expect |rng|100|82
+expect |-miss|p2a: X|p1a: Eiscue
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Clawitzer|Muddy Water|p2a: X
+expect |rng|100|57
+expect |rng|24|23
+expect |rng|16|8
+expect |split|p2
+expect |-damage|p2a: X|0 fnt
+expect |-damage|p2a: X|0 fnt
+expect |rng|100|74
+expect |faint|p2a: X
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoë|Sudowoodo, L94, F|284/284
+expect |switch|p2a: Zoë|Sudowoodo, L94, F|100/100
+expect |split|p2
+expect |switch|p2b: Zarude|Zarude-Dada, L80|61/299
+expect |switch|p2b: Zarude|Zarude-Dada, L80|21/100
+expect |turn|8
+expect |
+expect |t:|
+expect |move|p1a: Eiscue|Liquidation|p1b: Clawitzer
+expect |rng|100|18
+expect |rng|24|2
+expect |rng|16|8
+expect |-resisted|p1b: Clawitzer
+expect |split|p1
+expect |-damage|p1b: Clawitzer|50/256
+expect |-damage|p1b: Clawitzer|20/100
+expect |rng|100|70
+expect |move|p2b: Zarude|Close Combat|p2a: Zoë
+expect |rng|100|12
+expect |rng|24|20
+expect |rng|16|8
+expect |-supereffective|p2a: Zoë
+expect |split|p2
+expect |-damage|p2a: Zoë|110/284
+expect |-damage|p2a: Zoë|39/100
+expect |rng|100|45
+expect |-unboost|p2b: Zarude|def|1
+expect |-unboost|p2b: Zarude|spd|1
+expect |split|p2
+expect |-damage|p2b: Zarude|32/299|[from] item: Life Orb
+expect |-damage|p2b: Zarude|11/100|[from] item: Life Orb
+expect |move|p1b: Clawitzer|Aura Sphere|p2b: Zarude
+expect |rng|24|6
+expect |rng|16|12
+expect |-supereffective|p2b: Zarude
+expect |split|p2
+expect |-damage|p2b: Zarude|0 fnt
+expect |-damage|p2b: Zarude|0 fnt
+expect |faint|p2b: Zarude
+expect |move|p2a: Zoë|Wood Hammer|p1a: Eiscue
+expect |rng|100|6
+expect |rng|24|14
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1a: Eiscue|65/278
+expect |-damage|p1a: Eiscue|24/100
+expect |split|p2
+expect |-damage|p2a: Zoë|82/284|[from] item: Life Orb
+expect |-damage|p2a: Zoë|29/100|[from] item: Life Orb
+expect |
+expect |upkeep
+expect |turn|9
+expect |
+expect |t:|
+expect |move|p1a: Eiscue|Belly Drum||[still]
+expect |-fail|p1a: Eiscue
+expect |move|p1b: Clawitzer|Dark Pulse|p1a: Eiscue
+expect |rng|100|29
+expect |rng|24|17
+expect |rng|16|12
+expect |split|p1
+expect |-damage|p1a: Eiscue|0 fnt
+expect |-damage|p1a: Eiscue|0 fnt
+expect |rng|100|69
+expect |faint|p1a: Eiscue
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2a: Zoë|High Horsepower|p1b: Clawitzer
+expect |rng|100|7
+expect |rng|24|9
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Clawitzer|0 fnt
+expect |-damage|p1b: Clawitzer|0 fnt
+expect |faint|p1b: Clawitzer
+expect |split|p2
+expect |-damage|p2a: Zoë|54/284|[from] item: Life Orb
+expect |-damage|p2a: Zoë|20/100|[from] item: Life Orb
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Nibbles|Hypno, L95, M, tera:Dark|237/315
+expect |switch|p1a: Nibbles|Hypno, L95, M, tera:Dark|76/100
+expect |split|p1
+expect |switch|p1b: Necrozma|Necrozma-Dusk-Mane, L70|252/252
+expect |switch|p1b: Necrozma|Necrozma-Dusk-Mane, L70|100/100
+expect |turn|10
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Protect|p2a: Zoë
+expect |-singleturn|p2a: Zoë|Protect
+expect |move|p1a: Nibbles|Psychic|p2a: Zoë
+expect |-activate|p2a: Zoë|move: Protect
+expect |move|p1b: Necrozma|Photon Geyser|p2a: Zoë
+expect |-activate|p2a: Zoë|move: Protect
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |turn|11
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Zoë|Metagross, L80|259/259
+expect |switch|p1a: Zoë|Metagross, L80|100/100
+expect |move|p1b: Necrozma|Sunsteel Strike|p2a: Zoë
+expect |rng|100|94
+expect |rng|24|17
+expect |rng|16|14
+expect |-supereffective|p2a: Zoë
+expect |split|p2
+expect |-damage|p2a: Zoë|0 fnt
+expect |-damage|p2a: Zoë|0 fnt
+expect |faint|p2a: Zoë
+expect |
+expect |win|p1

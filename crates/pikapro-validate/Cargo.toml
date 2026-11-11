@@ -1,0 +1,18 @@
+[package]
+name = "pikapro-validate"
+description = "A port of Pokémon Showdown's team validator for pikapro: VGC, Pokémon Champions and custom-game rules, reported in Showdown's words"
+readme = "README.md"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords = ["pokemon", "showdown", "validator", "legality", "vgc"]
+categories = ["games", "simulation"]
+
+[dependencies]
+pikapro.workspace = true
+pikapro-data = { workspace = true, features = ["legality"] }
+
+[lints]
+workspace = true

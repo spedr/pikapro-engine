@@ -1,0 +1,159 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 1234 5678 9abc def0
+genders drawn
+team p1
+Shedinja @ Life Orb
+Ability: Wonder Guard
+Hardy Nature
+- Splash
+- Sparkling Aria
+
+Blissey
+Ability: Natural Cure
+EVs: 252 HP / 252 SpD
+Hardy Nature
+- Splash
+
+Chansey
+Ability: Natural Cure
+Hardy Nature
+- Splash
+end
+team p2
+Snorlax @ Flame Orb
+Ability: Thick Fat
+Hardy Nature
+- Splash
+
+Blissey
+Ability: Natural Cure
+EVs: 252 HP / 252 SpD
+Hardy Nature
+- Splash
+end
+choice p1 move 1, move 1
+choice p2 move 1, move 1
+choice p1 move 2, move 1
+choice p2 move 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Shedinja|Shedinja|1/1
+expect |switch|p1a: Shedinja|Shedinja|1/1
+expect |split|p1
+expect |switch|p1b: Blissey|Blissey, F|714/714
+expect |switch|p1b: Blissey|Blissey, F|714/714
+expect |split|p2
+expect |switch|p2a: Snorlax|Snorlax, F|461/461
+expect |switch|p2a: Snorlax|Snorlax, F|461/461
+expect |split|p2
+expect |switch|p2b: Blissey|Blissey, F|714/714
+expect |switch|p2b: Blissey|Blissey, F|714/714
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |turn|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1b: Blissey|Splash|p1b: Blissey
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1a: Shedinja|Splash|p1a: Shedinja
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Snorlax|Splash|p2a: Snorlax
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |-status|p2a: Snorlax|brn|[from] item: Flame Orb
+expect |upkeep
+expect |rng|2|1
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p1b: Blissey|Splash|p1b: Blissey
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Blissey|Splash|p2b: Blissey
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Shedinja|Sparkling Aria|p2a: Snorlax|[spread] p1b,p2a,p2b
+expect |rng|100|6
+expect |rng|100|29
+expect |rng|100|72
+expect |rng|24|13
+expect |rng|16|0
+expect |rng|24|13
+expect |rng|16|1
+expect |rng|24|15
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1b: Blissey|693/714
+expect |-damage|p1b: Blissey|693/714
+expect |split|p2
+expect |-damage|p2a: Snorlax|434/461 brn
+expect |-damage|p2a: Snorlax|434/461 brn
+expect |split|p2
+expect |-damage|p2b: Blissey|696/714
+expect |-damage|p2b: Blissey|696/714
+expect |rng|100|46
+expect |rng|100|95
+expect |rng|100|7
+expect |rng|2|1
+expect |rng|2|0
+expect |split|p1
+expect |-damage|p1a: Shedinja|0 fnt|[from] item: Life Orb
+expect |-damage|p1a: Shedinja|0 fnt|[from] item: Life Orb
+expect |-curestatus|p2a: Snorlax|brn|[msg]
+expect |faint|p1a: Shedinja
+expect |rng|2|0
+expect |move|p2a: Snorlax|Splash|p2a: Snorlax
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |-status|p2a: Snorlax|brn|[from] item: Flame Orb
+expect |upkeep
+expect |rng|2|0
