@@ -277,6 +277,13 @@ fn check_overlay(
     if fresh != OwnOverlay::from_request(&b.request_data(side)) {
         return Err("from_battle differs from from_request".into());
     }
+    // In place over the last request's overlay (with what its refused
+    // choices taught), as the environment refreshes it.
+    let mut reused = *own;
+    reused.refresh(b, side);
+    if reused != fresh {
+        return Err("refresh over the last overlay differs from from_battle".into());
+    }
     *own = fresh;
     let view = PlayerView::new(side, tracker, own);
     for (pos, m) in own.mons.iter().enumerate() {

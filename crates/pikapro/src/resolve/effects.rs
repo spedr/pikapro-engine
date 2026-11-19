@@ -326,7 +326,9 @@ pub(crate) fn heal_move(battle: &mut Battle, target: Position, data: &MoveData) 
 }
 
 /// After all hits (`hitStepMoveHitLoop`, after `faintMessages`):
-/// `-hitcount`, recoil (`applyRecoilDamage`), then `-ohko`.
+/// `-hitcount`, recoil (`applyRecoilDamage`: after damage, or Struggle's
+/// after a hit that dealt none, `struggle_zero`), then `-ohko`.
+#[allow(clippy::too_many_arguments)]
 pub(crate) fn after_hit_loop(
     battle: &mut Battle,
     user: Position,
@@ -335,13 +337,14 @@ pub(crate) fn after_hit_loop(
     data: &MoveData,
     hits: u8,
     total_damage: u32,
+    struggle_zero: bool,
 ) {
     // `smartTarget` moves (Dragon Darts) don't report their hits.
     if data.multihit.is_some() && !data.unmodelled.contains(&"smartTarget") {
         let target = actor(battle, first_target);
         battle.emit(BattleEvent::HitCount { target, hits });
     }
-    if total_damage > 0 {
+    if total_damage > 0 || struggle_zero {
         apply_recoil(battle, user, move_id, data, 2 * total_damage);
     }
     if data.ohko && battle.state.side(first_target.side).team[first_target.slot as usize].is_fainted() {
@@ -375,7 +378,7 @@ pub(crate) fn apply_recoil(battle: &mut Battle, user: Position, move_id: MoveId,
     } else {
         return;
     }
-    moves::emergency_exit_at_any_hp(battle, user, Some(user), hp_before);
+    moves::emergency_exit(battle, user, Some(user), hp_before);
 }
 
 #[cfg(test)]

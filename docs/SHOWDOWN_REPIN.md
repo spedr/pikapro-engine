@@ -20,7 +20,10 @@ made on one branch, and merged only when every check below passes.
    new regulation), update every place that names it: grep for the old
    format id (the validation formats, the format mappings in
    pikapro-protocol, pikapro-server and pikapro-showdown-server, the
-   Python package's format lists, the docs).
+   Python package's format lists, the docs). Check the rules the presets
+   use too (`data/rulesets.ts` and the mod's `rulesets.ts`, followed
+   through their sub-rulesets): a changed clause's bans, messages or rule
+   lines are ported like a mechanic.
 4. **Re-bless the goldens keyed on dex IDs**, only for an ID change:
    - pikapro-teams' golden teams:
      `cargo run --release -p pikapro-conformance --bin teams_fuzz -- --teams 3 --record crates/pikapro-teams/tests/golden.txt`;
@@ -29,6 +32,14 @@ made on one branch, and merged only when every check below passes.
 
    Review each diff: only ID values should change. A changed layout
    fingerprint means a layout changed, and its version must be bumped.
+
+   Set data changes too (Showdown's random-battle sets, learnsets,
+   tiers) redraw the teams `pikapro-teams` generates: record its golden
+   teams again (`--record` appends, so start from an empty file), and
+   Showdown's random-battle teams with `random_teams --record
+   crates/pikapro-teams/tests/random_battle.txt`. Tests that pin
+   generated teams by seed (`pikapro-rl`'s encoding digests, the feature
+   audit's repros) then need their values or seeds updated.
 
    The channel fixtures' digests cover the `basic` observation. If a
    data change moves them (a move's power, type or PP), take them again;

@@ -332,26 +332,21 @@ fn mon_mut(battle: &mut Battle, pos: Position) -> &mut crate::state::PokemonStat
 }
 
 /// The Champions mod's Encore `onStart`: `queue.changeAction` to the
-/// encored move (untargeted, so re-aimed at random), keeping the action's
-/// `order` (201 after Quash) and its priority adjusted by the difference in
-/// move priorities (`data/mods/champions/moves.js`, `encore.condition.onStart`).
+/// encored move (untargeted, so re-aimed at random), resolved afresh: a
+/// move's `order` (200, not a Quashed 201) and the encored move's own
+/// priority (`data/mods/champions/moves.js`, `encore.condition.onStart`).
 fn change_to_encored_move(battle: &mut Battle, pos: Position, action: Action, encored: MoveId) {
     let ActionKind::Move { move_id, .. } = action.kind else { return };
     // Not while it holds Mental Herb (which is about to end the Encore).
     if move_id == encored || super::items::has_item(battle, pos, pikapro_data::gen9::items::MENTAL_HERB) {
         return;
     }
-    let priority = action.priority - queued_move(battle, move_id).0 + queued_move(battle, encored).0;
     let mon = action.mon.expect("move actions have a Pokémon");
     // `cancelMove`, then `insertChoice`.
     battle.queue.retain(|a| !(matches!(a.kind, ActionKind::Move { .. }) && a.mon == Some(mon)));
     let slot = battle.state.at(pos).and_then(|m| m.moves.iter().position(|s| s.id == encored)).unwrap_or(0) as u8;
     let kind = ActionKind::Move { slot, move_id: encored, target_loc: 0, gimmick: None };
-    // `order: action.order`, which `resolveAction` keeps.
-    queue::insert_choice(battle, Action { order: action.order, ..Action::new(kind, Some(mon)) }, false);
-    if let Some((i, _)) = queue::will_move_action(battle, pos) {
-        battle.queue.as_mut_slice()[i].priority = priority;
-    }
+    queue::insert_choice(battle, Action::new(kind, Some(mon)), false);
 }
 
 /// The move's `onTry` (Fake Out, First Impression: only on the first move
@@ -387,6 +382,11 @@ pub(crate) fn try_hit(battle: &mut Battle, target: Position, user: Position, mov
 /// Encore's `onOverrideAction`: a Pokémon encored after choosing another
 /// move uses the encored move instead. Returns its move slot and ID.
 pub(crate) fn override_action(battle: &Battle, user: Position, move_id: MoveId) -> Option<(u8, MoveId)> {
+    // Champions' Encore has no `onOverrideAction` (its `onStart` changed
+    // the queued action instead).
+    if battle.format.mechanics == crate::format::Mechanics::Champions {
+        return None;
+    }
     let mon = battle.state.at(user)?;
     if !mon.volatiles.has(Volatiles::ENCORE) {
         return None;
@@ -402,8 +402,9 @@ pub(crate) fn override_action(battle: &Battle, user: Position, move_id: MoveId) 
 /// `endTurn`'s move disabling: clears every active Pokémon's disabled
 /// moves, then runs `DisableMove` (taunt, encore, disable, and
 /// `conditions.rs`' torment, heal block, throat chop and the foes'
-/// imprison), the moves' own `onDisableMove` (Champions' Fake Out and First
-/// Impression) and disables a `cantusetwice` move used last. Then, per Pokémon as
+/// imprison), the moves' own `onDisableMove` (Champions' Fake Out, First
+/// Impression and Last Resort) and disables a `cantusetwice` move used
+/// last. Then, per Pokémon as
 /// Showdown's `endTurn` does, the `TrapPokemon` event.
 pub(crate) fn disable_moves(battle: &mut Battle, pos: Position) {
     const OWN: u128 = Volatiles::TAUNT | Volatiles::ENCORE | Volatiles::DISABLE | conditions::DISABLE_MOVE;
@@ -500,7 +501,8 @@ fn visibly_disabled_full(battle: &Battle, pos: Position, index: usize) -> bool {
         || encore && m.id != counters.encore_move
         || v.has(Volatiles::DISABLE) && m.id == counters.disable_move
         || conditions::disabled_by(battle, pos, m.id)
-        // Belch, Stuff Cheeks; the Champions mod's Fake Out, First Impression.
+        // Belch, Stuff Cheeks; the Champions mod's Fake Out, First
+        // Impression and Last Resort.
         || super::itemmoves::own_disable_move(&battle.format, mon, m.id)
         || data.flags.contains(MoveFlags::CANT_USE_TWICE) && mon.last_move == Some(m.id)
         // Gravity's `onDisableMove` (`field::end_turn`).

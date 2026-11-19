@@ -165,7 +165,7 @@ expect |player|p1|p1||
 expect |player|p2|p2||
 expect |gen|9
 expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
-expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Species Clause: Limit one of each Pokemon
 expect |rule|Item Clause: Limit 1 of each item
 expect |clearpoke
 expect |poke|p1|Garganacl, L50, M|
@@ -405,25 +405,26 @@ expect |-damage|p1a: Altaria|72/100 psn
 expect |rng|2|0
 expect |rng|2|1
 expect |rng|2|0
+expect |rng|2|0
 expect |
 expect |t:|
 expect |split|p2
 expect |switch|p2b: Bellibolt|Bellibolt, L50, M|84/198|[from] Flip Turn
 expect |switch|p2b: Bellibolt|Bellibolt, L50, M|42/100|[from] Flip Turn
-expect |rng|2|0
 expect |rng|2|1
 expect |rng|2|0
-expect |
 expect |rng|2|0
+expect |
+expect |rng|2|1
 expect |split|p1
 expect |-heal|p1b: Gallade|146/157 psn|[from] item: Leftovers
 expect |-heal|p1b: Gallade|92/100 psn|[from] item: Leftovers
 expect |split|p1
-expect |-damage|p1a: Altaria|99/164 psn|[from] psn
-expect |-damage|p1a: Altaria|60/100 psn|[from] psn
-expect |split|p1
 expect |-damage|p1b: Gallade|127/157 psn|[from] psn
 expect |-damage|p1b: Gallade|80/100 psn|[from] psn
+expect |split|p1
+expect |-damage|p1a: Altaria|99/164 psn|[from] psn
+expect |-damage|p1a: Altaria|60/100 psn|[from] psn
 expect |upkeep
 expect |rng|2|1
 expect |turn|5
@@ -433,86 +434,86 @@ expect |rng|2|1
 expect |
 expect |t:|
 expect |rng|2|1
-expect |rng|2|1
+expect |rng|2|0
 expect |rng|2|0
 expect |split|p2
 expect |switch|p2a: Blaziken|Blaziken, L50, M|169/169
 expect |switch|p2a: Blaziken|Blaziken, L50, M|100/100
 expect |rng|2|0
-expect |rng|2|0
 expect |rng|2|1
 expect |rng|2|0
 expect |rng|2|0
-expect |move|p1a: Altaria|Future Sight|p2a: Blaziken
-expect |-start|p1a: Altaria|move: Future Sight
 expect |rng|2|1
-expect |rng|2|0
 expect |move|p1b: Gallade|Dragon Pulse|p2b: Bellibolt
-expect |rng|100|11
-expect |rng|24|10
-expect |rng|16|4
+expect |rng|100|19
+expect |rng|24|2
+expect |rng|16|6
 expect |split|p2
 expect |-damage|p2b: Bellibolt|69/198
 expect |-damage|p2b: Bellibolt|34/100
 expect |-start|p2b: Bellibolt|Charge|Dragon Pulse|[from] ability: Electromorphosis
+expect |rng|2|0
 expect |rng|2|1
 expect |rng|2|0
 expect |rng|2|1
+expect |move|p1a: Altaria|Future Sight|p2a: Blaziken
+expect |-start|p1a: Altaria|move: Future Sight
 expect |rng|2|1
 expect |rng|2|0
-expect |move|p2b: Bellibolt|Struggle Bug|p1a: Altaria|[spread] p1a,p1b
-expect |rng|100|80
+expect |rng|2|1
+expect |move|p2b: Bellibolt|Struggle Bug|p1b: Gallade|[spread] p1a,p1b
 expect |rng|100|33
-expect |rng|24|6
-expect |rng|16|6
+expect |rng|100|25
+expect |rng|24|9
+expect |rng|16|10
 expect |-resisted|p1a: Altaria|1
-expect |rng|24|15
-expect |rng|16|3
+expect |rng|24|5
+expect |rng|16|1
 expect |split|p1
 expect |-damage|p1a: Altaria|91/164 psn
 expect |-damage|p1a: Altaria|55/100 psn
 expect |split|p1
 expect |-damage|p1b: Gallade|111/157 psn
 expect |-damage|p1b: Gallade|70/100 psn
-expect |rng|100|10
-expect |-unboost|p1a: Altaria|spa|1
 expect |rng|100|62
+expect |-unboost|p1a: Altaria|spa|1
+expect |rng|100|48
 expect |-unboost|p1b: Gallade|spa|1
-expect |rng|2|0
+expect |rng|2|1
 expect |rng|2|1
 expect |rng|2|1
 expect |
-expect |rng|2|1
+expect |rng|2|0
 expect |split|p1
 expect |-heal|p1b: Gallade|120/157 psn|[from] item: Leftovers
 expect |-heal|p1b: Gallade|76/100 psn|[from] item: Leftovers
 expect |split|p1
-expect |-damage|p1a: Altaria|71/164 psn|[from] psn
-expect |-damage|p1a: Altaria|43/100 psn|[from] psn
-expect |split|p1
 expect |-damage|p1b: Gallade|101/157 psn|[from] psn
 expect |-damage|p1b: Gallade|64/100 psn|[from] psn
+expect |split|p1
+expect |-damage|p1a: Altaria|71/164 psn|[from] psn
+expect |-damage|p1a: Altaria|43/100 psn|[from] psn
 expect |upkeep
-expect |rng|2|0
+expect |rng|2|1
 expect |turn|6
 expect |
 expect |t:|
-expect |rng|2|1
 expect |rng|2|0
+expect |rng|2|1
 expect |rng|2|1
 expect |split|p1
 expect |switch|p1a: Garganacl|Garganacl, L50, M|192/192
 expect |switch|p1a: Garganacl|Garganacl, L50, M|100/100
 expect |move|p1b: Gallade|Facade|p1a: Garganacl
 expect |rng|100|72
-expect |rng|24|17
-expect |rng|16|3
+expect |rng|24|5
+expect |rng|16|13
 expect |-resisted|p1a: Garganacl|1
 expect |split|p1
-expect |-damage|p1a: Garganacl|173/192
-expect |-damage|p1a: Garganacl|90/100
+expect |-damage|p1a: Garganacl|175/192
+expect |-damage|p1a: Garganacl|91/100
 expect |move|p2a: Blaziken|Flip Turn|p1b: Gallade
-expect |rng|100|86
+expect |rng|100|50
 expect |rng|24|12
 expect |rng|16|8
 expect |split|p1
@@ -543,26 +544,42 @@ expect |split|p2
 expect |switch|p2b: Blaziken|Blaziken, L50, M|169/169
 expect |switch|p2b: Blaziken|Blaziken, L50, M|100/100
 expect |move|p2a: Pyroar|Leaf Storm|p1b: Gallade
-expect |rng|100|56
+expect |rng|100|41
 expect |rng|24|9
-expect |rng|16|6
+expect |rng|16|15
 expect |split|p1
-expect |-damage|p1b: Gallade|0 fnt
-expect |-damage|p1b: Gallade|0 fnt
-expect |rng|100|98
-expect |-unboost|p2a: Pyroar|spa|2
-expect |faint|p1b: Gallade
-expect |move|p1a: Garganacl|Night Daze|p2a: Pyroar
+expect |-damage|p1b: Gallade|1/157 psn
+expect |-damage|p1b: Gallade|1/100 psn
 expect |rng|100|17
-expect |rng|24|17
-expect |rng|16|9
+expect |-unboost|p2a: Pyroar|spa|2
+expect |move|p1b: Gallade|Overheat|p2a: Pyroar
+expect |rng|100|71
+expect |rng|24|14
+expect |rng|16|12
+expect |-resisted|p2a: Pyroar|1
+expect |split|p2
+expect |-damage|p2a: Pyroar|13/184
+expect |-damage|p2a: Pyroar|7/100
+expect |rng|100|67
+expect |-unboost|p1b: Gallade|spa|2
+expect |move|p1a: Garganacl|Night Daze|p2a: Pyroar
+expect |rng|100|18
+expect |rng|24|15
+expect |rng|16|15
 expect |split|p2
 expect |-damage|p2a: Pyroar|0 fnt
 expect |-damage|p2a: Pyroar|0 fnt
-expect |rng|100|76
+expect |rng|100|53
 expect |faint|p2a: Pyroar
 expect |
 expect |-hint|Future Sight did not hit because the target is fainted.
+expect |split|p1
+expect |-heal|p1b: Gallade|10/157 psn|[from] item: Leftovers
+expect |-heal|p1b: Gallade|6/100 psn|[from] item: Leftovers
+expect |split|p1
+expect |-damage|p1b: Gallade|0 fnt|[from] psn
+expect |-damage|p1b: Gallade|0 fnt|[from] psn
+expect |faint|p1b: Gallade
 expect |upkeep
 expect |
 expect |t:|
@@ -573,34 +590,38 @@ expect |split|p1
 expect |switch|p1b: Corviknight|Corviknight, L50, M|175/181
 expect |switch|p1b: Corviknight|Corviknight, L50, M|96/100
 expect |turn|8
-expect |rng|2|1
 expect |rng|2|0
+expect |rng|2|1
 expect |
 expect |t:|
 expect |split|p2
 expect |switch|p2a: Abomasnow|Abomasnow, L50, M|168/168
 expect |switch|p2a: Abomasnow|Abomasnow, L50, M|100/100
-expect |rng|2|1
-expect |rng|2|1
-expect |move|p2b: Blaziken|Eruption|p1b: Corviknight|[spread] p1a,p1b
-expect |rng|100|53
-expect |rng|100|17
-expect |rng|24|19
-expect |rng|16|6
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Blaziken|Eruption|p1a: Garganacl|[spread] p1a,p1b
+expect |rng|100|46
+expect |rng|100|93
+expect |rng|24|9
+expect |rng|16|12
 expect |-resisted|p1a: Garganacl|1
-expect |rng|24|0
-expect |rng|16|7
+expect |rng|24|5
+expect |rng|16|15
 expect |-supereffective|p1b: Corviknight|1
-expect |-crit|p1b: Corviknight
 expect |split|p1
-expect |-damage|p1a: Garganacl|130/192
-expect |-damage|p1a: Garganacl|67/100
+expect |-damage|p1a: Garganacl|135/192
+expect |-damage|p1a: Garganacl|70/100
+expect |split|p1
+expect |-damage|p1b: Corviknight|5/181
+expect |-damage|p1b: Corviknight|2/100
+expect |move|p1a: Garganacl|Aqua Cutter|p1b: Corviknight
+expect |rng|100|66
+expect |rng|8|2
+expect |rng|16|7
 expect |split|p1
 expect |-damage|p1b: Corviknight|0 fnt
 expect |-damage|p1b: Corviknight|0 fnt
 expect |faint|p1b: Corviknight
-expect |move|p1a: Garganacl|Aqua Cutter|p1: Corviknight|[notarget]
-expect |-fail|p1a: Garganacl
 expect |
 expect |upkeep
 expect |
@@ -615,83 +636,81 @@ expect |split|p2
 expect |switch|p2a: Bellibolt|Bellibolt, L50, M|69/198
 expect |switch|p2a: Bellibolt|Bellibolt, L50, M|34/100
 expect |move|p1b: Altaria|Payback|p1a: Garganacl
-expect |rng|100|93
-expect |rng|24|9
-expect |rng|16|12
+expect |rng|100|64
+expect |rng|24|12
+expect |rng|16|1
 expect |split|p1
-expect |-damage|p1a: Garganacl|118/192
-expect |-damage|p1a: Garganacl|61/100
+expect |-damage|p1a: Garganacl|122/192
+expect |-damage|p1a: Garganacl|63/100
 expect |move|p2b: Blaziken|Psychic Noise|p1b: Altaria
-expect |rng|100|21
-expect |rng|24|22
-expect |rng|16|10
+expect |rng|100|46
+expect |rng|24|12
+expect |rng|16|3
 expect |split|p1
-expect |-damage|p1b: Altaria|37/164 psn
-expect |-damage|p1b: Altaria|22/100 psn
-expect |rng|100|27
+expect |-damage|p1b: Altaria|35/164 psn
+expect |-damage|p1b: Altaria|21/100 psn
+expect |rng|100|13
 expect |-start|p1b: Altaria|move: Heal Block
 expect |move|p1a: Garganacl|Night Daze|p2b: Blaziken
-expect |rng|100|45
-expect |rng|24|15
-expect |rng|16|8
+expect |rng|100|57
+expect |rng|24|12
+expect |rng|16|1
 expect |-resisted|p2b: Blaziken|1
 expect |split|p2
-expect |-damage|p2b: Blaziken|153/169
-expect |-damage|p2b: Blaziken|90/100
-expect |rng|100|9
-expect |-unboost|p2b: Blaziken|accuracy|1
+expect |-damage|p2b: Blaziken|152/169
+expect |-damage|p2b: Blaziken|89/100
+expect |rng|100|80
 expect |
 expect |split|p1
-expect |-damage|p1b: Altaria|17/164 psn|[from] psn
-expect |-damage|p1b: Altaria|10/100 psn|[from] psn
+expect |-damage|p1b: Altaria|15/164 psn|[from] psn
+expect |-damage|p1b: Altaria|9/100 psn|[from] psn
 expect |upkeep
 expect |turn|10
-expect |rng|2|0
+expect |rng|2|1
 expect |rng|2|1
 expect |
 expect |t:|
-expect |rng|2|0
+expect |rng|2|1
 expect |move|p1b: Altaria|Payback|p2a: Bellibolt
-expect |rng|100|13
-expect |rng|24|13
-expect |rng|16|8
+expect |rng|100|74
+expect |rng|24|22
+expect |rng|16|10
 expect |split|p2
 expect |-damage|p2a: Bellibolt|52/198
 expect |-damage|p2a: Bellibolt|26/100
 expect |-start|p2a: Bellibolt|Charge|Payback|[from] ability: Electromorphosis
 expect |rng|2|0
-expect |move|p2b: Blaziken|Psychic Noise|p1a: Garganacl|[miss]
-expect |rng|100|80
-expect |-miss|p2b: Blaziken|p1a: Garganacl
-expect |rng|2|1
-expect |move|p1a: Garganacl|Night Daze|p1b: Altaria|[miss]
-expect |rng|100|97
-expect |-miss|p1a: Garganacl|p1b: Altaria
-expect |rng|2|1
-expect |rng|2|1
-expect |move|p2a: Bellibolt|Struggle Bug|p1b: Altaria|[spread] p1a,p1b
-expect |rng|100|91
-expect |rng|100|67
+expect |move|p2b: Blaziken|Psychic Noise|p1a: Garganacl
+expect |rng|100|94
 expect |rng|24|6
 expect |rng|16|15
-expect |rng|24|6
-expect |rng|16|15
-expect |-resisted|p1b: Altaria|1
 expect |split|p1
-expect |-damage|p1a: Garganacl|101/192
-expect |-damage|p1a: Garganacl|52/100
-expect |split|p1
-expect |-damage|p1b: Altaria|9/164 psn
-expect |-damage|p1b: Altaria|5/100 psn
+expect |-damage|p1a: Garganacl|87/192
+expect |-damage|p1a: Garganacl|45/100
 expect |rng|100|11
-expect |-unboost|p1a: Garganacl|spa|1
-expect |rng|100|14
-expect |-unboost|p1b: Altaria|spa|1
-expect |
+expect |-start|p1a: Garganacl|move: Heal Block
+expect |rng|2|0
+expect |move|p1a: Garganacl|Night Daze|p1b: Altaria
+expect |rng|100|4
+expect |rng|24|4
+expect |rng|16|5
 expect |split|p1
-expect |-damage|p1b: Altaria|0 fnt|[from] psn
-expect |-damage|p1b: Altaria|0 fnt|[from] psn
+expect |-damage|p1b: Altaria|0 fnt
+expect |-damage|p1b: Altaria|0 fnt
+expect |rng|100|18
 expect |faint|p1b: Altaria
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2a: Bellibolt|Struggle Bug|p1a: Garganacl
+expect |rng|100|81
+expect |rng|24|17
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Garganacl|62/192
+expect |-damage|p1a: Garganacl|32/100
+expect |rng|100|84
+expect |-unboost|p1a: Garganacl|spa|1
+expect |
 expect |upkeep
 expect |turn|11
 expect |
@@ -702,48 +721,49 @@ expect |switch|p2a: Abomasnow|Abomasnow, L50, M|100/100
 expect |move|p2b: Blaziken|Flip Turn|p2a: Abomasnow
 expect |-activate|p2a: Abomasnow|ability: Telepathy
 expect |move|p1a: Garganacl|Night Daze|p2a: Abomasnow
-expect |rng|100|4
-expect |rng|24|4
-expect |rng|16|5
+expect |rng|100|36
+expect |rng|24|22
+expect |rng|16|10
 expect |split|p2
-expect |-damage|p2a: Abomasnow|149/168
-expect |-damage|p2a: Abomasnow|88/100
-expect |rng|100|18
-expect |-unboost|p2a: Abomasnow|accuracy|1
+expect |-damage|p2a: Abomasnow|150/168
+expect |-damage|p2a: Abomasnow|89/100
+expect |rng|100|72
 expect |
+expect |-end|p1a: Garganacl|move: Heal Block
 expect |upkeep
 expect |turn|12
 expect |
 expect |t:|
 expect |move|p2b: Blaziken|Flip Turn|p1a: Garganacl
-expect |rng|100|74
-expect |rng|24|11
-expect |rng|16|13
+expect |rng|100|9
+expect |rng|24|19
+expect |rng|16|12
 expect |-supereffective|p1a: Garganacl|1
 expect |split|p1
-expect |-damage|p1a: Garganacl|53/192
-expect |-damage|p1a: Garganacl|27/100
+expect |-damage|p1a: Garganacl|14/192
+expect |-damage|p1a: Garganacl|7/100
 expect |
 expect |t:|
 expect |split|p2
 expect |switch|p2b: Bellibolt|Bellibolt, L50, M|52/198|[from] Flip Turn
 expect |switch|p2b: Bellibolt|Bellibolt, L50, M|26/100|[from] Flip Turn
 expect |move|p2a: Abomasnow|Bug Buzz|p2b: Bellibolt
-expect |rng|100|74
-expect |rng|24|13
-expect |rng|16|13
+expect |rng|100|49
+expect |rng|24|21
+expect |rng|16|3
 expect |split|p2
-expect |-damage|p2b: Bellibolt|10/198
-expect |-damage|p2b: Bellibolt|5/100
-expect |rng|100|36
+expect |-damage|p2b: Bellibolt|7/198
+expect |-damage|p2b: Bellibolt|3/100
+expect |rng|100|3
+expect |-unboost|p2b: Bellibolt|spd|1
 expect |-start|p2b: Bellibolt|Charge|Bug Buzz|[from] ability: Electromorphosis
 expect |split|p2
-expect |-damage|p2a: Abomasnow|133/168|[from] item: Life Orb
+expect |-damage|p2a: Abomasnow|134/168|[from] item: Life Orb
 expect |-damage|p2a: Abomasnow|79/100|[from] item: Life Orb
 expect |move|p1a: Garganacl|Aqua Cutter|p2b: Bellibolt
-expect |rng|100|92
-expect |rng|8|5
-expect |rng|16|11
+expect |rng|100|48
+expect |rng|8|7
+expect |rng|16|1
 expect |split|p2
 expect |-damage|p2b: Bellibolt|0 fnt
 expect |-damage|p2b: Bellibolt|0 fnt
@@ -753,8 +773,8 @@ expect |upkeep
 expect |
 expect |t:|
 expect |split|p2
-expect |switch|p2b: Blaziken|Blaziken, L50, M|153/169
-expect |switch|p2b: Blaziken|Blaziken, L50, M|90/100
+expect |switch|p2b: Blaziken|Blaziken, L50, M|152/169
+expect |switch|p2b: Blaziken|Blaziken, L50, M|89/100
 expect |turn|13
 expect |rng|1|0
 expect |rng|1|0
@@ -763,9 +783,9 @@ expect |t:|
 expect |rng|1|0
 expect |rng|1|0
 expect |move|p2b: Blaziken|Eruption|p1a: Garganacl
-expect |rng|100|91
-expect |rng|24|4
-expect |rng|16|0
+expect |rng|100|6
+expect |rng|24|13
+expect |rng|16|8
 expect |-resisted|p1a: Garganacl|1
 expect |split|p1
 expect |-damage|p1a: Garganacl|0 fnt

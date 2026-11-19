@@ -79,7 +79,7 @@ fn set_info_reaches_the_clauses() {
     let v = Validator::new(ValidationFormat::gen9_vgc_2025_reg_i());
     let info = vec![SetInfo { nickname: Some("Twin".into()), ..SetInfo::default() }; 2];
     let messages = v.messages(&v.validate_with(&vgc_team(), &info).unwrap_err());
-    assert_eq!(messages, ["Your Pokémon must have different nicknames.", "(You have more than one Twin)"]);
+    assert_eq!(messages, ["Your Pokemon must have different nicknames.", "(You have more than one Twin)"]);
 }
 
 #[test]

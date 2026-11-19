@@ -517,11 +517,9 @@ impl ActionSpace {
         out: &mut [bool],
     ) -> u8 {
         out.fill(false);
-        let forced = match legal.request() {
-            Request::Move => 0,
-            Request::ForceSwitch { slots } => slots[..self.active].iter().filter(|&&f| f).count(),
-            _ => return 0,
-        };
+        if !matches!(legal.request(), Request::Move | Request::ForceSwitch { .. }) {
+            return 0;
+        }
         for slot in 0..self.active {
             for action in legal.slot(slot) {
                 let i = match *action {
@@ -533,9 +531,19 @@ impl ActionSpace {
                 }
             }
         }
-        // `check_joint`: every forced slot switches while replacements
-        // remain. Only one replacement for two holes needs a rule beyond
-        // the per-slot masks (with more, neither slot may pass).
+        self.min_switches(legal, bench)
+    }
+
+    /// The fewest switches a joint action must make, `bench` being the
+    /// side's Pokémon that can switch in. `check_joint`: every forced slot
+    /// switches while replacements remain. Only one replacement for two
+    /// holes needs a rule beyond the per-slot masks (with more, neither
+    /// slot may pass).
+    fn min_switches(&self, legal: &LegalActions, bench: usize) -> u8 {
+        let forced = match legal.request() {
+            Request::ForceSwitch { slots } => slots[..self.active].iter().filter(|&&f| f).count(),
+            _ => 0,
+        };
         forced.min(bench) as u8
     }
 
@@ -613,20 +621,24 @@ impl ActionSpace {
             }
             (MaskLayout::Joint, _) => slots = self.split_joint(first.filter(|&a| a < self.joint_size)?),
         }
-        let mut mask = [false; MAX_SLOT_MASK];
-        let width = self.active * self.slot_size;
-        let min = self.fill_slot_mask_by(legal, legal.bench(), |pos| switch_index(by, own, pos), &mut mask[..width]);
-        if !self.pair_legal(&mask, min, slots[0], slots[1]) {
-            return None;
-        }
+        // Each slot's action is in its mask when the request lists the
+        // action it decodes to (an index is one action's, and an action
+        // has one index: `slot_round_trip`), so no mask is filled to look
+        // it up in.
         let mut actions = [SlotAction::Pass; MAX_ACTIVE];
-        for (action, &a) in actions.iter_mut().zip(&slots[..self.active]) {
+        for (slot, (action, &a)) in actions.iter_mut().zip(&slots[..self.active]).enumerate() {
             *action = match self.decode_slot(a)? {
                 SlotAction::Switch(k) if by == SwitchBy::Row => {
                     SlotAction::Switch(own.by_id(k).map(|(pos, _)| pos as u8)?)
                 }
                 other => other,
             };
+            if !legal.slot(slot).contains(action) {
+                return None;
+            }
+        }
+        if self.active > 1 && !self.pair_rules(self.min_switches(legal, legal.bench()), slots[0], slots[1]) {
+            return None;
         }
         Some(Choice::Actions(actions))
     }
@@ -649,6 +661,13 @@ impl ActionSpace {
         if !in_mask(1, a1) {
             return false;
         }
+        self.pair_rules(min_switches, a0, a1)
+    }
+
+    /// [`ActionSpace::pair_legal`]'s rules for two slot actions that are
+    /// each in their slot's mask: not the same switch, at most one
+    /// gimmick, at least `min_switches` switches.
+    fn pair_rules(&self, min_switches: u8, a0: usize, a1: usize) -> bool {
         let switch = |a: usize| (self.switch_base()..self.pass_index()).contains(&a);
         let gimmick = |a: usize| a < self.switch_base() && !(a / self.targets).is_multiple_of(self.gimmick_count());
         let same_switch = switch(a0) && a0 == a1;
@@ -736,6 +755,148 @@ mod tests {
         let c = ActionSpace::new(&Format::champions_vgc());
         assert_eq!(c.gimmicks, vec![Gimmick::MegaEvolve]);
         assert_eq!(c.size, d.size);
+    }
+
+    /// `decode_player` takes exactly the actions the player's mask
+    /// ([`ActionSpace::fill_player_mask`]) allows, and with factored masks
+    /// in doubles the pairs [`ActionSpace::pair_legal`] allows; what it
+    /// decodes is legal and names the actions it was given. At every
+    /// decision point of random battles between generated teams, both
+    /// layouts and both ways to name a switch, for every pair of slot
+    /// actions and every joint action (and values outside the space).
+    #[test]
+    fn decode_player_follows_the_mask() {
+        use pikapro::{Battle, BattleOptions, BattleRng, Seed, SideId};
+        use pikapro_teams::{Mode, Options};
+        const SEED: u64 = 4_450_000;
+        for (format, battles) in [
+            (Format::champions_vgc(), 24),
+            (Format::gen9_vgc(), 12),
+            (Format::gen9_doubles(), 12),
+            (Format::gen9_singles(), 16),
+        ] {
+            let space = ActionSpace::new(&format);
+            let slots = space.active * space.slot_size;
+            let (mut points, mut chosen) = (0, 0u64);
+            for seed in SEED..SEED + battles {
+                let g = crate::teams::generator(&format, Mode::Sets, Options::default()).unwrap();
+                let teams = crate::teams::pair(&g, seed).unwrap().map(|s| s.team);
+                let options = BattleOptions::new(Seed::fast(seed)).without_events();
+                let mut b = Battle::new(format.clone(), teams, options).unwrap();
+                let mut policy = BattleRng::new(Seed::fast(!seed));
+                loop {
+                    for side in SideId::BOTH {
+                        let legal = *b.legal_actions(side);
+                        let own = OwnOverlay::from_battle(&b, side);
+                        let preview = matches!(legal.request(), Request::TeamPreview { .. });
+                        points += 1;
+                        for (layout, by) in [MaskLayout::Factored, MaskLayout::Joint]
+                            .into_iter()
+                            .flat_map(|l| [(l, SwitchBy::Row), (l, SwitchBy::Position)])
+                        {
+                            let mut row = vec![false; layout.width(&space)];
+                            let min = space.fill_player_mask(layout, by, &legal, &own, &mut row);
+                            let at = |a: i64, len: usize| usize::try_from(a).ok().filter(|&a| a < len);
+                            // The slot action an index names, its switch a
+                            // team position.
+                            let slot_action = |a: usize| match space.decode_slot(a).unwrap() {
+                                SlotAction::Switch(_) => {
+                                    let k = a - space.switch_base();
+                                    (0..legal.team_len() as u8)
+                                        .find(|&p| switch_index(by, &own, p) == Some(k))
+                                        .map(SlotAction::Switch)
+                                }
+                                other => Some(other),
+                            };
+                            let mut check = |acts: &[i64]| {
+                                let got = space.decode_player(layout, by, &legal, &own, acts);
+                                let (allowed, want) = match (layout, preview) {
+                                    (MaskLayout::Factored, true) => {
+                                        let k = at(acts[0], space.preview_size);
+                                        (k.is_some_and(|k| row[slots + k]), None)
+                                    }
+                                    (MaskLayout::Joint, true) => {
+                                        let j = at(acts[0], space.size).filter(|&j| j >= space.joint_size);
+                                        (j.is_some_and(|j| row[j]), None)
+                                    }
+                                    (_, false) => {
+                                        let pair = match layout {
+                                            MaskLayout::Factored if acts.len() >= space.active => {
+                                                let a0 = at(acts[0], space.slot_size);
+                                                let a1 = at(acts[space.active - 1], space.slot_size);
+                                                a0.zip(a1)
+                                            }
+                                            MaskLayout::Factored => None,
+                                            MaskLayout::Joint => at(acts[0], space.joint_size).map(|j| {
+                                                let [a0, a1] = space.split_joint(j);
+                                                (a0, a1)
+                                            }),
+                                        };
+                                        let allowed = match layout {
+                                            MaskLayout::Factored => pair
+                                                .is_some_and(|(a0, a1)| space.pair_legal(&row[..slots], min, a0, a1)),
+                                            MaskLayout::Joint => at(acts[0], space.joint_size).is_some_and(|j| row[j]),
+                                        };
+                                        let want = pair.filter(|_| allowed).map(|(a0, a1)| {
+                                            let mut actions = [SlotAction::Pass; MAX_ACTIVE];
+                                            actions[0] = slot_action(a0).unwrap();
+                                            if space.active > 1 {
+                                                actions[1] = slot_action(a1).unwrap();
+                                            }
+                                            Choice::Actions(actions)
+                                        });
+                                        (allowed, want)
+                                    }
+                                };
+                                let what = || format!("{} seed {seed} {side:?} {layout:?} {by:?} {acts:?}", format.id);
+                                assert_eq!(got.is_some(), allowed, "{}", what());
+                                if let Some(choice) = &got {
+                                    assert!(legal.check(choice).is_ok(), "{}: {choice:?}", what());
+                                    if want.is_some() {
+                                        assert_eq!(got, want, "{}", what());
+                                    }
+                                }
+                                chosen += u64::from(got.is_some());
+                            };
+                            match layout {
+                                MaskLayout::Factored if preview => {
+                                    for k in -2..space.preview_size as i64 + 2 {
+                                        check(&[k]);
+                                    }
+                                }
+                                MaskLayout::Factored => {
+                                    let slot = -2..space.slot_size as i64 + 2;
+                                    for a0 in slot.clone() {
+                                        check(&[a0]);
+                                        for a1 in slot.clone().filter(|_| space.active > 1) {
+                                            check(&[a0, a1]);
+                                        }
+                                    }
+                                }
+                                MaskLayout::Joint => {
+                                    for j in -2..space.size as i64 + 2 {
+                                        check(&[j]);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if b.is_over() {
+                        break;
+                    }
+                    let choices = SideId::BOTH.map(|s| {
+                        let legal = b.legal_actions(s);
+                        (!legal.is_waiting()).then(|| legal.sample(&mut policy))
+                    });
+                    for (s, c) in SideId::BOTH.into_iter().zip(choices) {
+                        if let Some(c) = c {
+                            b.submit(s, c).unwrap();
+                        }
+                    }
+                }
+            }
+            assert!(points > 60 && chosen > 1000, "{}: {points} decision points, {chosen} choices", format.id);
+        }
     }
 
     #[test]

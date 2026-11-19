@@ -37,8 +37,12 @@ fn play_teams(format: &Format, teams: [Team; 2], seed: u64, check: impl FnMut(&B
     play_battle(format, b, seed, check);
 }
 
-fn play_battle(format: &Format, mut b: Battle, seed: u64, mut check: impl FnMut(&Battle, &PublicTracker)) {
-    let mut t = PublicTracker::for_format(format);
+fn play_battle(format: &Format, b: Battle, seed: u64, check: impl FnMut(&Battle, &PublicTracker)) {
+    play_tracked(PublicTracker::for_format(format), b, seed, check);
+}
+
+/// [`play_battle`] with the tracker `t` (one with open sheets, say).
+fn play_tracked(mut t: PublicTracker, mut b: Battle, seed: u64, mut check: impl FnMut(&Battle, &PublicTracker)) {
     let mut policy = BattleRng::new(Seed::fast(!seed));
     t.apply_all(b.drain_events().as_slice());
     check(&b, &t);
@@ -115,6 +119,69 @@ fn random_battles_encode_in_range() {
         }
         assert!(points > 50, "{}: {points} decision points", format.id);
     }
+}
+
+/// FNV-1a of `values`' bits, from `hash`.
+fn fnv1a(hash: u64, values: &[f32]) -> u64 {
+    let bytes = values.iter().flat_map(|v| v.to_bits().to_le_bytes());
+    bytes.fold(hash, |h, b| (h ^ u64::from(b)).wrapping_mul(0x0100_0000_01b3))
+}
+
+/// `basic`'s output is pinned by a digest of every encoding at every
+/// decision point of random battles: both sides, without the player's team
+/// (PP estimated from the log), with the team its requests taught (PP from
+/// the request or the team) and with the team it built (the Pokémon left
+/// out at team preview too); with closed sheets (a foe's moves as the log
+/// reveals them) and, in the formats with team preview, with open ones
+/// (its sheet's moves). A change to the encoding, or to how these battles
+/// play, changes a digest; the failure prints the new ones.
+#[test]
+fn basic_encodings_match_their_digests() {
+    use pikapro_view::{OpenSheet, OwnTeam};
+    let formats = [(Format::champions_vgc(), 40), (Format::gen9_vgc(), 25), (Format::gen9_singles(), 25)];
+    let digests = formats.map(|(format, battles)| {
+        let tables = Tables::for_format(&format);
+        let mut out = vec![0.0; Basic::SIZE];
+        let mut digest = 0xcbf2_9ce4_8422_2325;
+        let (mut points, mut rows) = (0, 0);
+        for open in [false, true] {
+            if open && !format.team_preview.shown() {
+                continue;
+            }
+            for seed in SEED..SEED + battles {
+                let g = crate::teams::generator(&format, Mode::Sets, Options::default()).unwrap();
+                let teams = crate::teams::pair(&g, seed).unwrap().map(|s| s.team);
+                let mut learnt = [OwnTeam::default(); 2];
+                let mut built = [0, 1].map(|i| OwnTeam::from_team(&teams[i], &format));
+                let mut tracker = PublicTracker::for_format(&format);
+                if open {
+                    for side in SideId::BOTH {
+                        tracker.set_open_sheet(side, OpenSheet::from_team(&teams[side.index()], &format));
+                    }
+                }
+                let b = Battle::new(format.clone(), teams, BattleOptions::new(Seed::fast(seed))).unwrap();
+                play_tracked(tracker, b, seed, |b, t| {
+                    points += 1;
+                    for me in SideId::BOTH {
+                        let own = OwnOverlay::from_battle(b, me);
+                        learnt[me.index()].observe(&own);
+                        built[me.index()].observe(&own);
+                        let plain = PlayerView::new(me, t, &own);
+                        for view in [plain, plain.with_team(&learnt[me.index()]), plain.with_team(&built[me.index()])] {
+                            out.fill(f32::NAN);
+                            Basic.encode(&view, &tables, &mut out);
+                            digest = fnv1a(digest, &out);
+                            rows += 1;
+                        }
+                    }
+                });
+            }
+        }
+        assert!(points > 200 && rows == points * 6, "{}: {points} decision points", format.id);
+        digest
+    });
+    let want = [0xbb48_2f59_c75b_5ef7, 0x9774_aebf_c27b_bf86, 0xe1ba_fe83_f76c_e57b];
+    assert_eq!(digests, want, "championsvgc, gen9vgc, gen9singles: {digests:#018x?}");
 }
 
 /// `basic` writes a number near 0..1 everywhere, and names every value.

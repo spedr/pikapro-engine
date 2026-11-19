@@ -1,0 +1,674 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 423e 2560 46d0 460e
+genders drawn
+team p1
+Rotom-Frost
+Ability: Levitate
+Level: 50
+Shiny: Yes
+Tera Type: Rock
+EVs: 6 HP / 8 Atk / 1 Def / 28 SpA / 12 SpD / 10 Spe
+Brave Nature
+- Whirlwind
+- Electro Shot
+- Avalanche
+- Giga Drain
+
+Sinistcha
+Ability: Hospitality
+Level: 50
+Tera Type: Fire
+EVs: 32 HP / 10 Atk / 9 Def / 2 SpA / 6 SpD / 6 Spe
+Brave Nature
+- Misty Terrain
+- Dragon Tail
+- Stone Edge
+
+Hatterene (F)
+Ability: Healer
+Level: 50
+Tera Type: Stellar
+EVs: 16 HP / 18 Def / 12 SpA / 7 SpD / 11 Spe
+Naughty Nature
+- Decorate
+- Tri Attack
+- Dragon Darts
+- Parabolic Charge
+
+Arcanine (F)
+Ability: Intimidate
+Level: 50
+Tera Type: Steel
+EVs: 10 HP / 10 Atk / 3 Def / 3 SpA / 17 SpD / 22 Spe
+Careful Nature
+- Decorate
+
+Pikachu (Florges)
+Ability: Symbiosis
+Level: 50
+Tera Type: Fighting
+EVs: 19 Atk / 3 Def / 3 SpA / 13 SpD / 28 Spe
+Naughty Nature
+- Sand Tomb
+- Giga Impact
+
+Machamp (F) @ Aspear Berry
+Ability: Guts
+Level: 50
+Tera Type: Electric
+EVs: 7 HP / 16 Atk / 8 Def / 7 SpA / 6 SpD / 16 Spe
+Naughty Nature
+- Scald
+end
+team p2
+Sir Hops-a-Lot (Hawlucha) (F) @ Black Belt
+Ability: Unburden
+Level: 50
+Tera Type: Bug
+EVs: 20 Atk / 16 Def / 20 SpA / 9 SpD / 1 Spe
+Naughty Nature
+- Snarl
+- Axe Kick
+
+Pikachu (Swalot) (F)
+Ability: Liquid Ooze
+Level: 50
+Tera Type: Bug
+EVs: 25 Def / 16 SpA / 15 SpD / 6 Spe
+Naughty Nature
+- Entrainment
+- Water Shuriken
+- Flying Press
+- Upper Hand
+
+Zoë (Noivern)
+Ability: Frisk
+Level: 50
+Shiny: Yes
+Tera Type: Fairy
+EVs: 1 HP / 9 Atk / 31 Def / 5 SpA / 1 SpD / 19 Spe
+Brave Nature
+- Dragon Darts
+- Gravity
+- Triple Arrows
+- Breaking Swipe
+
+Skarmory (M) @ Skarmorite
+Ability: Sturdy
+Level: 50
+Tera Type: Poison
+EVs: 2 HP / 1 Atk / 5 Def / 8 SpA / 26 SpD / 19 Spe
+Timid Nature
+- Poison Powder
+- Sacred Sword
+- Shell Side Arm
+
+ThisNameIsFarTooLongToKeep (Garchomp) @ Chilan Berry
+Ability: Rough Skin
+Level: 50
+Tera Type: Grass
+EVs: 21 Atk / 7 Def / 1 SpA / 32 SpD / 4 Spe
+Calm Nature
+- Breaking Swipe
+
+Victreebel @ Never-Melt Ice
+Ability: Gluttony
+Level: 50
+Tera Type: Grass
+EVs: 1 HP / 11 Atk / 9 Def / 27 SpD / 9 Spe
+Hasty Nature
+- Raging Fury
+end
+choice p1 team 1345
+choice p2 team 2634
+choice p1 move 4 -2, switch 3
+choice p2 default
+choice p1 default
+choice p2 move 4 -2, move 1
+choice p1 move 1 2, move 1 2
+choice p2 switch 4, move 1
+choice p1 move Electro Shot 2,switch hatterene
+choice p2 move Entrainment +1, move 3 +2
+choice p1 move 1, move 2 -1
+choice p2 default
+choice p1 switch 3, pass
+choice p2 switch 4, move 3 2 mega
+choice p1 move 1 -2, move 4
+choice p2 pass, switch 4
+choice p1 switch 4, move 3 -1
+choice p2 default
+choice p1 pass, switch 4
+choice p2 move 1 ,  move flyingpress 1
+choice p1 move 1 -2, move 1 2
+choice p2 move 1, move 4 -1
+choice p1 move 1 +2, pass
+choice p2 switch 3, move 2 -1
+choice p1 move 1 1, pass
+choice p2 default
+choice p1 move 2 2, pass
+choice p2 move dragondarts -2,move watershuriken +1
+choice p1 move 1, pass
+choice p2 skip, switch Victreebel
+choice p1 move gigaimpact +1 ,  skip
+choice p2 move 1 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokemon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Rotom-Frost, L50, shiny|
+expect |poke|p1|Sinistcha, L50|
+expect |poke|p1|Hatterene, L50, F|
+expect |poke|p1|Arcanine, L50, F|
+expect |poke|p1|Florges, L50, F|
+expect |poke|p1|Machamp, L50, F|
+expect |poke|p2|Hawlucha, L50, F|
+expect |poke|p2|Swalot, L50, F|
+expect |poke|p2|Noivern, L50, M, shiny|
+expect |poke|p2|Skarmory, L50, M|
+expect |poke|p2|Garchomp, L50, F|
+expect |poke|p2|Victreebel, L50, M|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Rotom|Rotom-Frost, L50, shiny|131/131
+expect |switch|p1a: Rotom|Rotom-Frost, L50, shiny|100/100
+expect |split|p1
+expect |switch|p1b: Hatterene|Hatterene, L50, F|148/148
+expect |switch|p1b: Hatterene|Hatterene, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Pikachu|Swalot, L50, F|175/175
+expect |switch|p2a: Pikachu|Swalot, L50, F|100/100
+expect |split|p2
+expect |switch|p2b: Victreebel|Victreebel, L50, M|156/156
+expect |switch|p2b: Victreebel|Victreebel, L50, M|100/100
+expect |turn|1
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Arcanine|Arcanine, L50, F|175/175
+expect |switch|p1b: Arcanine|Arcanine, L50, F|100/100
+expect |-ability|p1b: Arcanine|Intimidate|boost
+expect |-unboost|p2a: Pikachu|atk|1
+expect |-unboost|p2b: Victreebel|atk|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Victreebel|Raging Fury|p1a: Rotom
+expect |rng|100|75
+expect |rng|24|9
+expect |rng|16|15
+expect |-supereffective|p1a: Rotom|1
+expect |split|p1
+expect |-damage|p1a: Rotom|65/131
+expect |-damage|p1a: Rotom|49/100
+expect |rng|2|1
+expect |move|p1a: Rotom|Giga Drain|p1b: Arcanine
+expect |rng|100|69
+expect |rng|24|15
+expect |rng|16|6
+expect |-resisted|p1b: Arcanine|1
+expect |split|p1
+expect |-damage|p1b: Arcanine|156/175
+expect |-damage|p1b: Arcanine|89/100
+expect |split|p1
+expect |-heal|p1a: Rotom|75/131|[from] drain|[of] p1b: Arcanine
+expect |-heal|p1a: Rotom|57/100|[from] drain|[of] p1b: Arcanine
+expect |move|p2a: Pikachu|Entrainment|p1a: Rotom
+expect |rng|100|95
+expect |-ability|p1a: Rotom|Liquid Ooze|Levitate|[from] move: Entrainment|[of] p2a: Pikachu
+expect |
+expect |upkeep
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|1
+expect |move|p2a: Pikachu|Upper Hand||[still]
+expect |-fail|p2a: Pikachu
+expect |rng|2|0
+expect |move|p1b: Arcanine|Decorate|p2a: Pikachu
+expect |-boost|p2a: Pikachu|atk|2
+expect |-boost|p2a: Pikachu|spa|2
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2b: Victreebel|Raging Fury|p1a: Rotom|[from] lockedmove
+expect |rng|100|76
+expect |rng|24|21
+expect |rng|16|13
+expect |-supereffective|p1a: Rotom|1
+expect |split|p1
+expect |-damage|p1a: Rotom|9/131
+expect |-damage|p1a: Rotom|6/100
+expect |move|p1a: Rotom|Whirlwind|p2a: Pikachu
+expect |rng|2|1
+expect |split|p2
+expect |drag|p2a: Skarmory|Skarmory, L50, M|142/142
+expect |drag|p2a: Skarmory|Skarmory, L50, M|100/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Pikachu|Swalot, L50, F|175/175
+expect |switch|p2a: Pikachu|Swalot, L50, F|100/100
+expect |rng|2|0
+expect |move|p1b: Arcanine|Decorate|p2b: Victreebel
+expect |-boost|p2b: Victreebel|atk|2
+expect |-boost|p2b: Victreebel|spa|2
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2b: Victreebel|Raging Fury|p1b: Arcanine|[from] lockedmove
+expect |rng|100|59
+expect |rng|24|15
+expect |rng|16|15
+expect |-resisted|p1b: Arcanine|1
+expect |split|p1
+expect |-damage|p1b: Arcanine|111/175
+expect |-damage|p1b: Arcanine|63/100
+expect |-start|p2b: Victreebel|confusion|[fatigue]
+expect |rng|4|1
+expect |move|p1a: Rotom|Whirlwind|p2b: Victreebel
+expect |rng|2|1
+expect |split|p2
+expect |drag|p2b: Skarmory|Skarmory, L50, M|142/142
+expect |drag|p2b: Skarmory|Skarmory, L50, M|100/100
+expect |
+expect |upkeep
+expect |turn|4
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Hatterene|Hatterene, L50, F|148/148
+expect |switch|p1b: Hatterene|Hatterene, L50, F|100/100
+expect |move|p2b: Skarmory|Shell Side Arm|p1b: Hatterene|[anim] Shell Side Arm Physical
+expect |rng|100|38
+expect |rng|24|22
+expect |rng|16|6
+expect |-supereffective|p1b: Hatterene|1
+expect |split|p1
+expect |-damage|p1b: Hatterene|96/148
+expect |-damage|p1b: Hatterene|64/100
+expect |-hint|Physical Shell Side Arm
+expect |rng|100|51
+expect |move|p1a: Rotom|Electro Shot||[still]
+expect |-prepare|p1a: Rotom|Electro Shot
+expect |-boost|p1a: Rotom|spa|1
+expect |move|p2a: Pikachu|Entrainment||[still]
+expect |rng|100|19
+expect |-fail|p2a: Pikachu
+expect |
+expect |upkeep
+expect |turn|5
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |move|p2b: Skarmory|Poison Powder|p1b: Hatterene
+expect |rng|100|1
+expect |-status|p1b: Hatterene|psn
+expect |move|p1a: Rotom|Electro Shot|p2b: Skarmory|[from] lockedmove
+expect |rng|100|44
+expect |rng|24|10
+expect |rng|16|9
+expect |-supereffective|p2b: Skarmory|1
+expect |-ability|p2b: Skarmory|Sturdy
+expect |split|p2
+expect |-damage|p2b: Skarmory|1/142
+expect |-damage|p2b: Skarmory|1/100
+expect |move|p2a: Pikachu|Entrainment|p1b: Hatterene
+expect |rng|100|48
+expect |-ability|p1b: Hatterene|Liquid Ooze|Healer|[from] move: Entrainment|[of] p2a: Pikachu
+expect |move|p1b: Hatterene|Tri Attack|p1a: Rotom
+expect |rng|100|8
+expect |rng|24|11
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Rotom|0 fnt
+expect |-damage|p1a: Rotom|0 fnt
+expect |rng|100|8
+expect |rng|3|2
+expect |faint|p1a: Rotom
+expect |
+expect |split|p1
+expect |-damage|p1b: Hatterene|78/148 psn|[from] psn
+expect |-damage|p1b: Hatterene|52/100 psn|[from] psn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Arcanine|Arcanine, L50, F|111/175
+expect |switch|p1a: Arcanine|Arcanine, L50, F|63/100
+expect |-ability|p1a: Arcanine|Intimidate|boost
+expect |-unboost|p2a: Pikachu|atk|1
+expect |-unboost|p2b: Skarmory|atk|1
+expect |turn|6
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Victreebel|Victreebel, L50, M|156/156
+expect |switch|p2a: Victreebel|Victreebel, L50, M|100/100
+expect |detailschange|p2b: Skarmory|Skarmory-Mega, L50, M
+expect |-mega|p2b: Skarmory|Skarmory|Skarmorite
+expect |rng|2|0
+expect |move|p2b: Skarmory|Shell Side Arm|p1b: Hatterene|[anim] Shell Side Arm Physical
+expect |rng|100|34
+expect |rng|24|4
+expect |rng|16|5
+expect |-supereffective|p1b: Hatterene|1
+expect |split|p1
+expect |-damage|p1b: Hatterene|22/148 psn
+expect |-damage|p1b: Hatterene|14/100 psn
+expect |-hint|Physical Shell Side Arm
+expect |rng|100|62
+expect |rng|2|0
+expect |move|p1a: Arcanine|Decorate|p1b: Hatterene
+expect |-boost|p1b: Hatterene|atk|2
+expect |-boost|p1b: Hatterene|spa|2
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Hatterene|Parabolic Charge|p2a: Victreebel|[spread] p1a,p2a,p2b
+expect |rng|100|58
+expect |rng|100|36
+expect |rng|100|55
+expect |rng|24|20
+expect |rng|16|15
+expect |rng|24|23
+expect |rng|16|9
+expect |-resisted|p2a: Victreebel|1
+expect |rng|24|4
+expect |rng|16|3
+expect |-supereffective|p2b: Skarmory|1
+expect |split|p1
+expect |-damage|p1a: Arcanine|62/175
+expect |-damage|p1a: Arcanine|35/100
+expect |split|p1
+expect |-heal|p1b: Hatterene|47/148 psn|[from] drain|[of] p1a: Arcanine
+expect |-heal|p1b: Hatterene|31/100 psn|[from] drain|[of] p1a: Arcanine
+expect |split|p2
+expect |-damage|p2a: Victreebel|128/156
+expect |-damage|p2a: Victreebel|82/100
+expect |split|p1
+expect |-heal|p1b: Hatterene|61/148 psn|[from] drain|[of] p2a: Victreebel
+expect |-heal|p1b: Hatterene|41/100 psn|[from] drain|[of] p2a: Victreebel
+expect |split|p2
+expect |-damage|p2b: Skarmory|0 fnt
+expect |-damage|p2b: Skarmory|0 fnt
+expect |split|p1
+expect |-heal|p1b: Hatterene|62/148 psn|[from] drain|[of] p2b: Skarmory
+expect |-heal|p1b: Hatterene|41/100 psn|[from] drain|[of] p2b: Skarmory
+expect |faint|p2b: Skarmory
+expect |
+expect |split|p1
+expect |-damage|p1b: Hatterene|44/148 psn|[from] psn
+expect |-damage|p1b: Hatterene|29/100 psn|[from] psn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Pikachu|Swalot, L50, F|175/175
+expect |switch|p2b: Pikachu|Swalot, L50, F|100/100
+expect |turn|7
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Pikachu|Florges, L50, F|153/153
+expect |switch|p1a: Pikachu|Florges, L50, F|100/100
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p2a: Victreebel|Raging Fury|p1b: Hatterene
+expect |rng|100|44
+expect |rng|24|20
+expect |rng|16|15
+expect |split|p1
+expect |-damage|p1b: Hatterene|0 fnt
+expect |-damage|p1b: Hatterene|0 fnt
+expect |rng|2|1
+expect |faint|p1b: Hatterene
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Pikachu|Entrainment|p1a: Pikachu
+expect |rng|100|74
+expect |-ability|p1a: Pikachu|Liquid Ooze|Symbiosis|[from] move: Entrainment|[of] p2b: Pikachu
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Arcanine|Arcanine, L50, F|62/175
+expect |switch|p1b: Arcanine|Arcanine, L50, F|35/100
+expect |-ability|p1b: Arcanine|Intimidate|boost
+expect |-unboost|p2a: Victreebel|atk|1
+expect |-unboost|p2b: Pikachu|atk|1
+expect |turn|8
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1b: Arcanine|Decorate|p2b: Pikachu
+expect |-boost|p2b: Pikachu|atk|2
+expect |-boost|p2b: Pikachu|spa|2
+expect |rng|2|0
+expect |move|p1a: Pikachu|Sand Tomb|p1b: Arcanine
+expect |rng|100|59
+expect |rng|24|2
+expect |rng|16|13
+expect |-supereffective|p1b: Arcanine|1
+expect |split|p1
+expect |-damage|p1b: Arcanine|30/175
+expect |-damage|p1b: Arcanine|17/100
+expect |rng|2|0
+expect |-activate|p1b: Arcanine|move: Sand Tomb|[of] p1a: Pikachu
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Victreebel|Raging Fury|p1b: Arcanine|[from] lockedmove
+expect |rng|100|14
+expect |rng|24|17
+expect |rng|16|9
+expect |-resisted|p1b: Arcanine|1
+expect |split|p1
+expect |-damage|p1b: Arcanine|9/175
+expect |-damage|p1b: Arcanine|5/100
+expect |move|p2b: Pikachu|Flying Press|p1a: Pikachu
+expect |rng|100|40
+expect |rng|24|22
+expect |rng|16|15
+expect |-resisted|p1a: Pikachu|1
+expect |split|p1
+expect |-damage|p1a: Pikachu|122/153
+expect |-damage|p1a: Pikachu|79/100
+expect |
+expect |split|p1
+expect |-damage|p1b: Arcanine|0 fnt|[from] move: Sand Tomb|[partiallytrapped]
+expect |-damage|p1b: Arcanine|0 fnt|[from] move: Sand Tomb|[partiallytrapped]
+expect |faint|p1b: Arcanine
+expect |upkeep
+expect |turn|9
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p2b: Pikachu|Upper Hand||[still]
+expect |-fail|p2b: Pikachu
+expect |rng|1|0
+expect |move|p1a: Pikachu|Sand Tomb|p2b: Pikachu
+expect |rng|100|15
+expect |rng|24|3
+expect |rng|16|1
+expect |-supereffective|p2b: Pikachu|1
+expect |split|p2
+expect |-damage|p2b: Pikachu|147/175
+expect |-damage|p2b: Pikachu|84/100
+expect |rng|2|0
+expect |-activate|p2b: Pikachu|move: Sand Tomb|[of] p1a: Pikachu
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2a: Victreebel|Raging Fury|p1a: Pikachu|[from] lockedmove
+expect |rng|100|60
+expect |rng|24|6
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Pikachu|74/153
+expect |-damage|p1a: Pikachu|48/100
+expect |-start|p2a: Victreebel|confusion|[fatigue]
+expect |rng|4|0
+expect |
+expect |split|p2
+expect |-damage|p2b: Pikachu|126/175|[from] move: Sand Tomb|[partiallytrapped]
+expect |-damage|p2b: Pikachu|72/100|[from] move: Sand Tomb|[partiallytrapped]
+expect |upkeep
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zoë|Noivern, L50, M, shiny|161/161
+expect |switch|p2a: Zoë|Noivern, L50, M, shiny|100/100
+expect |move|p2b: Pikachu|Water Shuriken|p2a: Zoë
+expect |rng|100|13
+expect |rng|20|6
+expect |rng|24|16
+expect |rng|16|6
+expect |-resisted|p2a: Zoë|1
+expect |split|p2
+expect |-damage|p2a: Zoë|154/161
+expect |-damage|p2a: Zoë|95/100
+expect |rng|24|18
+expect |rng|16|3
+expect |-resisted|p2a: Zoë|1
+expect |split|p2
+expect |-damage|p2a: Zoë|147/161
+expect |-damage|p2a: Zoë|91/100
+expect |-hitcount|p2a: Zoë|2
+expect |move|p1a: Pikachu|Sand Tomb|p2a: Zoë
+expect |-immune|p2a: Zoë
+expect |
+expect |split|p2
+expect |-damage|p2b: Pikachu|105/175|[from] move: Sand Tomb|[partiallytrapped]
+expect |-damage|p2b: Pikachu|60/100|[from] move: Sand Tomb|[partiallytrapped]
+expect |upkeep
+expect |turn|11
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |move|p2a: Zoë|Dragon Darts|p1a: Pikachu
+expect |-immune|p1a: Pikachu
+expect |move|p1a: Pikachu|Giga Impact|p2b: Pikachu
+expect |rng|100|67
+expect |rng|24|3
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Pikachu|48/175
+expect |-damage|p2b: Pikachu|27/100
+expect |-mustrecharge|p1a: Pikachu
+expect |move|p2b: Pikachu|Entrainment||[still]
+expect |rng|100|26
+expect |-fail|p2b: Pikachu
+expect |
+expect |split|p2
+expect |-damage|p2b: Pikachu|27/175|[from] move: Sand Tomb|[partiallytrapped]
+expect |-damage|p2b: Pikachu|15/100|[from] move: Sand Tomb|[partiallytrapped]
+expect |upkeep
+expect |turn|12
+expect |rng|2|1
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2b: Pikachu|Water Shuriken|p1a: Pikachu
+expect |rng|100|19
+expect |rng|20|2
+expect |rng|24|6
+expect |rng|16|3
+expect |split|p1
+expect |-damage|p1a: Pikachu|65/153
+expect |-damage|p1a: Pikachu|42/100
+expect |rng|24|17
+expect |rng|16|9
+expect |split|p1
+expect |-damage|p1a: Pikachu|56/153
+expect |-damage|p1a: Pikachu|36/100
+expect |-hitcount|p1a: Pikachu|2
+expect |rng|2|1
+expect |move|p2a: Zoë|Dragon Darts|p2b: Pikachu
+expect |rng|100|13
+expect |rng|24|14
+expect |rng|16|2
+expect |split|p2
+expect |-damage|p2b: Pikachu|0 fnt
+expect |-damage|p2b: Pikachu|0 fnt
+expect |faint|p2b: Pikachu
+expect |rng|1|0
+expect |rng|1|0
+expect |cant|p1a: Pikachu|recharge
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Victreebel|Victreebel, L50, M|128/156
+expect |switch|p2b: Victreebel|Victreebel, L50, M|82/100
+expect |turn|13
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p2a: Zoë|Dragon Darts|p1a: Pikachu
+expect |-immune|p1a: Pikachu
+expect |rng|1|0
+expect |move|p1a: Pikachu|Giga Impact|p2a: Zoë
+expect |rng|100|84
+expect |rng|24|21
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Zoë|90/161
+expect |-damage|p2a: Zoë|55/100
+expect |-mustrecharge|p1a: Pikachu
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p2b: Victreebel|Raging Fury|p1a: Pikachu
+expect |rng|100|37
+expect |rng|24|22
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1a: Pikachu|0 fnt
+expect |-damage|p1a: Pikachu|0 fnt
+expect |rng|2|0
+expect |faint|p1a: Pikachu
+expect |
+expect |win|p2

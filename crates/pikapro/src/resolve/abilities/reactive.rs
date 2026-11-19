@@ -22,7 +22,7 @@
 //!   `AfterEachBoost`, ...).
 
 mod contact;
-mod guard;
+pub(crate) mod guard;
 mod immunity;
 
 use super::{effect_has_status, show};

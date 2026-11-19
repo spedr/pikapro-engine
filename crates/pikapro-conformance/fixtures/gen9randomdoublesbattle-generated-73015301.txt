@@ -1,0 +1,699 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9randomdoublesbattle
+seed 2f46 0974 3fb5 1caf
+genders drawn
+team-seed p1 gen5,118e9ee448fd16ce
+team-seed p2 sodium,4855c0ff6b0a4d4c7555539174b202a6
+team p1
+Barraskewda (M) @ Life Orb
+Ability: Propeller Tail
+Level: 85
+Tera Type: Fighting
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Waterfall
+- Protect
+- Close Combat
+- Poison Jab
+
+Zoroark (F) @ Life Orb
+Ability: Illusion
+Level: 84
+Tera Type: Poison
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Protect
+- Nasty Plot
+- Dark Pulse
+- Sludge Bomb
+
+Ariados (F) @ Rocky Helmet
+Ability: Swarm
+Tera Type: Dark
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Sticky Web
+- Megahorn
+- Knock Off
+- Rage Powder
+
+Kingdra (M) @ Life Orb
+Ability: Swift Swim
+Level: 85
+Tera Type: Water
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Rain Dance
+- Draco Meteor
+- Muddy Water
+- Protect
+
+Scovillain (F) @ Choice Specs
+Ability: Chlorophyll
+Level: 90
+Tera Type: Fire
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Burning Jealousy
+- Fire Blast
+- Energy Ball
+- Leaf Storm
+
+Bronzong @ Leftovers
+Ability: Levitate
+Level: 87
+Tera Type: Fighting
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD
+Hardy Nature
+IVs: 0 Atk / 0 Spe
+- Body Press
+- Trick Room
+- Psychic Noise
+- Iron Defense
+end
+team p2
+Rampardos (F) @ Choice Scarf
+Ability: Sheer Force
+Level: 87
+Tera Type: Rock
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Rock Slide
+- Fire Punch
+- Stomping Tantrum
+- Head Smash
+
+Espeon (F) @ Life Orb
+Ability: Magic Bounce
+Level: 84
+Tera Type: Fairy
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Psychic
+- Protect
+- Alluring Voice
+- Shadow Ball
+
+Hawlucha (M) @ White Herb
+Ability: Unburden
+Level: 83
+Tera Type: Fire
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Brave Bird
+- Close Combat
+- Swords Dance
+- Protect
+
+Grimmsnarl (M) @ Light Clay
+Ability: Prankster
+Level: 82
+Tera Type: Steel
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Parting Shot
+- Spirit Break
+- Reflect
+- Light Screen
+
+Zebstrika (F) @ Life Orb
+Ability: Sap Sipper
+Level: 87
+Tera Type: Ground
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+- Overheat
+- Protect
+- Wild Charge
+- High Horsepower
+
+Chimecho (F) @ Sitrus Berry
+Ability: Levitate
+Level: 94
+Tera Type: Steel
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe
+Hardy Nature
+IVs: 0 Atk
+- Psychic
+- Heal Pulse
+- Icy Wind
+- Protect
+end
+choice p1 switch 6, switch 3
+choice p2 switch 3, move 1 2 terastallize
+choice p1 pass, switch 5
+choice p2 switch 4, move 4 2
+choice p1 default
+choice p2 switch 4, move 1 2
+choice p1 move 3 2, switch 4
+choice p2 move 2 -2, move 4 1
+choice p1 move 1 2, move 3
+choice p2 skip,switch Grimmsnarl
+choice p1 move Psychic Noise 1, switch 4
+choice p2 switch 5 ,  switch Rampardos
+choice p1 move 3 1, move 3 2
+choice p2 move 4 -2, move 2 1
+choice p2 pass, switch 3
+choice p1 move 1 -2 terastallize, move 3 -1
+choice p2 switch 5, move 2 2
+choice p1 switch 6, pass
+choice p2 move 2 -2, move 2 2
+choice p1 move 4 -2, switch 3
+choice p2 pass, switch 6
+choice p1 move 4 -2, switch 4
+choice p2 move 2 2, move 4
+choice p1 pass, switch 3
+choice p2 move closecombat +1,switch Zebstrika
+choice p1 move Poison Jab +1 ,  move leafstorm -1
+choice p1 switch 4, pass
+choice p2 move 2 1, move 1 -1
+choice p1 default
+choice p2 switch 5, pass
+choice p1 move 1, move 4 1
+choice p2 move 1 -2, move 1 2
+choice p1 move 2, pass
+choice p2 move 1 +1 ,  skip
+choice p1 move 4 1, pass
+choice p2 move 3, pass
+expect |t:|
+expect |gametype|doubles
+expect |player|p1|p1||
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Random Doubles Battle
+expect |rule|Species Clause: Limit one of each Pokemon
+expect |rule|HP Percentage Mod: HP is shown in percentages
+expect |rule|Illusion Level Mod: Illusion disguises the Pokemon's true level
+expect |rule|Sleep Clause Mod: Limit one foe put to sleep
+expect |
+expect |t:|
+expect |teamsize|p1|6
+expect |teamsize|p2|6
+expect |start
+expect |split|p1
+expect |switch|p1a: Barraskewda|Barraskewda, L85, M|242/242
+expect |switch|p1a: Barraskewda|Barraskewda, L85, M|100/100
+expect |split|p1
+expect |switch|p1b: Bronzong|Bronzong, L87|238/238
+expect |switch|p1b: Bronzong|Bronzong, L87|100/100
+expect |split|p2
+expect |switch|p2a: Rampardos|Rampardos, L87, F|311/311
+expect |switch|p2a: Rampardos|Rampardos, L87, F|100/100
+expect |split|p2
+expect |switch|p2b: Espeon|Espeon, L84, F|246/246
+expect |switch|p2b: Espeon|Espeon, L84, F|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Bronzong|Bronzong, L87|258/258
+expect |switch|p1a: Bronzong|Bronzong, L87|100/100
+expect |split|p2
+expect |switch|p2a: Hawlucha|Hawlucha, L83, M|265/265
+expect |switch|p2a: Hawlucha|Hawlucha, L83, M|100/100
+expect |split|p1
+expect |switch|p1b: Ariados|Ariados, F|302/302
+expect |switch|p1b: Ariados|Ariados, F|100/100
+expect |-terastallize|p2b: Espeon|Fairy
+expect |move|p2b: Espeon|Psychic|p1b: Ariados
+expect |rng|100|33
+expect |rng|24|0
+expect |rng|16|3
+expect |-supereffective|p1b: Ariados
+expect |-crit|p1b: Ariados
+expect |split|p1
+expect |-damage|p1b: Ariados|0 fnt
+expect |-damage|p1b: Ariados|0 fnt
+expect |rng|100|98
+expect |faint|p1b: Ariados
+expect |split|p2
+expect |-damage|p2b: Espeon|222/246|[from] item: Life Orb
+expect |-damage|p2b: Espeon|91/100|[from] item: Life Orb
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Scovillain|Scovillain, L90, F|263/263
+expect |switch|p1b: Scovillain|Scovillain, L90, F|100/100
+expect |turn|2
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Grimmsnarl|Grimmsnarl, L82, M|290/290
+expect |switch|p2a: Grimmsnarl|Grimmsnarl, L82, M|100/100
+expect |rng|2|1
+expect |move|p2b: Espeon|Shadow Ball|p1b: Scovillain
+expect |rng|100|23
+expect |rng|24|4
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1b: Scovillain|159/263
+expect |-damage|p1b: Scovillain|61/100
+expect |rng|100|15
+expect |-unboost|p1b: Scovillain|spd|1
+expect |split|p2
+expect |-damage|p2b: Espeon|198/246|[from] item: Life Orb
+expect |-damage|p2b: Espeon|81/100|[from] item: Life Orb
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1b: Scovillain|Burning Jealousy|p2a: Grimmsnarl|[spread] p2a,p2b
+expect |rng|100|49
+expect |rng|100|16
+expect |rng|24|23
+expect |rng|16|13
+expect |rng|24|21
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Grimmsnarl|176/290
+expect |-damage|p2a: Grimmsnarl|61/100
+expect |split|p2
+expect |-damage|p2b: Espeon|102/246
+expect |-damage|p2b: Espeon|42/100
+expect |rng|100|18
+expect |rng|100|80
+expect |move|p1a: Bronzong|Body Press|p2a: Grimmsnarl
+expect |rng|100|86
+expect |rng|24|3
+expect |rng|16|3
+expect |split|p2
+expect |-damage|p2a: Grimmsnarl|83/290
+expect |-damage|p2a: Grimmsnarl|29/100
+expect |
+expect |upkeep
+expect |turn|3
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Kingdra|Kingdra, L85, M|266/266
+expect |switch|p1b: Kingdra|Kingdra, L85, M|100/100
+expect |split|p2
+expect |switch|p2a: Hawlucha|Hawlucha, L83, M|265/265
+expect |switch|p2a: Hawlucha|Hawlucha, L83, M|100/100
+expect |move|p2b: Espeon|Psychic|p1b: Kingdra
+expect |rng|100|11
+expect |rng|24|17
+expect |rng|16|5
+expect |split|p1
+expect |-damage|p1b: Kingdra|117/266
+expect |-damage|p1b: Kingdra|44/100
+expect |rng|100|92
+expect |split|p2
+expect |-damage|p2b: Espeon|78/246|[from] item: Life Orb
+expect |-damage|p2b: Espeon|32/100|[from] item: Life Orb
+expect |move|p1a: Bronzong|Psychic Noise|p2b: Espeon
+expect |rng|100|18
+expect |rng|24|23
+expect |rng|16|5
+expect |split|p2
+expect |-damage|p2b: Espeon|8/246
+expect |-damage|p2b: Espeon|4/100
+expect |rng|100|9
+expect |-start|p2b: Espeon|move: Heal Block
+expect |
+expect |upkeep
+expect |turn|4
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p2a: Hawlucha|Close Combat|p2b: Espeon
+expect |rng|100|16
+expect |rng|24|20
+expect |rng|16|6
+expect |-resisted|p2b: Espeon
+expect |split|p2
+expect |-damage|p2b: Espeon|0 fnt
+expect |-damage|p2b: Espeon|0 fnt
+expect |rng|100|12
+expect |-unboost|p2a: Hawlucha|def|1
+expect |-unboost|p2a: Hawlucha|spd|1
+expect |faint|p2b: Espeon
+expect |-enditem|p2a: Hawlucha|White Herb
+expect |-clearnegativeboost|p2a: Hawlucha|[silent]
+expect |rng|1|0
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1b: Kingdra|Muddy Water|p2a: Hawlucha|[miss]
+expect |rng|100|92
+expect |-miss|p1b: Kingdra|p2a: Hawlucha
+expect |rng|1|0
+expect |rng|1|0
+expect |move|p1a: Bronzong|Body Press|p2a: Hawlucha
+expect |rng|100|20
+expect |rng|24|11
+expect |rng|16|13
+expect |-resisted|p2a: Hawlucha
+expect |split|p2
+expect |-damage|p2a: Hawlucha|228/265
+expect |-damage|p2a: Hawlucha|87/100
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Grimmsnarl|Grimmsnarl, L82, M|83/290
+expect |switch|p2b: Grimmsnarl|Grimmsnarl, L82, M|29/100
+expect |turn|5
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Zebstrika|Zebstrika, L87, F|272/272
+expect |switch|p2a: Zebstrika|Zebstrika, L87, F|100/100
+expect |split|p1
+expect |switch|p1b: Scovillain|Scovillain, L90, F|159/263
+expect |switch|p1b: Scovillain|Scovillain, L90, F|61/100
+expect |split|p2
+expect |switch|p2b: Rampardos|Rampardos, L87, F|311/311
+expect |switch|p2b: Rampardos|Rampardos, L87, F|100/100
+expect |move|p1a: Bronzong|Psychic Noise|p2a: Zebstrika
+expect |rng|100|72
+expect |rng|24|4
+expect |rng|16|10
+expect |split|p2
+expect |-damage|p2a: Zebstrika|185/272
+expect |-damage|p2a: Zebstrika|69/100
+expect |rng|100|87
+expect |-start|p2a: Zebstrika|move: Heal Block
+expect |
+expect |upkeep
+expect |turn|6
+expect |
+expect |t:|
+expect |move|p2a: Zebstrika|High Horsepower|p2b: Rampardos
+expect |rng|100|23
+expect |rng|24|12
+expect |rng|16|4
+expect |-supereffective|p2b: Rampardos
+expect |split|p2
+expect |-damage|p2b: Rampardos|61/311
+expect |-damage|p2b: Rampardos|20/100
+expect |split|p2
+expect |-damage|p2a: Zebstrika|158/272|[from] item: Life Orb
+expect |-damage|p2a: Zebstrika|59/100|[from] item: Life Orb
+expect |move|p2b: Rampardos|Fire Punch|p1a: Bronzong
+expect |rng|100|22
+expect |rng|24|17
+expect |rng|16|7
+expect |-supereffective|p1a: Bronzong
+expect |split|p1
+expect |-damage|p1a: Bronzong|80/258
+expect |-damage|p1a: Bronzong|32/100
+expect |move|p1b: Scovillain|Energy Ball|p2b: Rampardos
+expect |rng|100|1
+expect |rng|24|20
+expect |rng|16|6
+expect |-supereffective|p2b: Rampardos
+expect |split|p2
+expect |-damage|p2b: Rampardos|0 fnt
+expect |-damage|p2b: Rampardos|0 fnt
+expect |rng|100|62
+expect |faint|p2b: Rampardos
+expect |move|p1a: Bronzong|Psychic Noise|p2a: Zebstrika
+expect |rng|100|32
+expect |rng|24|2
+expect |rng|16|0
+expect |split|p2
+expect |-damage|p2a: Zebstrika|61/272
+expect |-damage|p2a: Zebstrika|23/100
+expect |rng|100|79
+expect |
+expect |split|p1
+expect |-heal|p1a: Bronzong|96/258|[from] item: Leftovers
+expect |-heal|p1a: Bronzong|38/100|[from] item: Leftovers
+expect |-end|p2a: Zebstrika|move: Heal Block
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Grimmsnarl|Grimmsnarl, L82, M|83/290
+expect |switch|p2b: Grimmsnarl|Grimmsnarl, L82, M|29/100
+expect |turn|7
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Hawlucha|Hawlucha, L83, M|228/265
+expect |switch|p2a: Hawlucha|Hawlucha, L83, M|87/100
+expect |-terastallize|p1a: Bronzong|Fighting
+expect |move|p1b: Scovillain|Energy Ball|p1a: Bronzong
+expect |rng|100|52
+expect |rng|24|7
+expect |rng|16|11
+expect |split|p1
+expect |-damage|p1a: Bronzong|0 fnt
+expect |-damage|p1a: Bronzong|0 fnt
+expect |rng|100|64
+expect |faint|p1a: Bronzong
+expect |move|p2b: Grimmsnarl|Spirit Break|p1b: Scovillain
+expect |rng|100|71
+expect |rng|24|21
+expect |rng|16|3
+expect |-resisted|p1b: Scovillain
+expect |split|p1
+expect |-damage|p1b: Scovillain|105/263
+expect |-damage|p1b: Scovillain|40/100
+expect |rng|100|57
+expect |-unboost|p1b: Scovillain|spa|1
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Barraskewda|Barraskewda, L85, M|242/242
+expect |switch|p1a: Barraskewda|Barraskewda, L85, M|100/100
+expect |turn|8
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Kingdra|Kingdra, L85, M|238/238
+expect |switch|p1b: Kingdra|Kingdra, L85, M|100/100
+expect |move|p1a: Barraskewda|Poison Jab|p1b: Kingdra
+expect |rng|100|58
+expect |rng|24|11
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Kingdra|117/238
+expect |-damage|p1b: Kingdra|50/100
+expect |rng|100|15
+expect |-status|p1b: Kingdra|psn
+expect |replace|p1b: Zoroark|Zoroark, L84, F
+expect |-end|p1b: Zoroark|Illusion
+expect |-hint|Illusion Level Mod is active, so this Pokémon's true level was hidden.
+expect |split|p1
+expect |-damage|p1a: Barraskewda|218/242|[from] item: Life Orb
+expect |-damage|p1a: Barraskewda|91/100|[from] item: Life Orb
+expect |move|p2a: Hawlucha|Close Combat|p2b: Grimmsnarl
+expect |rng|100|76
+expect |rng|24|1
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2b: Grimmsnarl|0 fnt
+expect |-damage|p2b: Grimmsnarl|0 fnt
+expect |rng|100|3
+expect |-unboost|p2a: Hawlucha|def|1
+expect |-unboost|p2a: Hawlucha|spd|1
+expect |faint|p2b: Grimmsnarl
+expect |
+expect |split|p1
+expect |-damage|p1b: Zoroark|88/238 psn|[from] psn
+expect |-damage|p1b: Zoroark|37/100 psn|[from] psn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Chimecho|Chimecho, L94, F|293/293
+expect |switch|p2b: Chimecho|Chimecho, L94, F|100/100
+expect |turn|9
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Kingdra|Kingdra, L85, M|117/266
+expect |switch|p1b: Kingdra|Kingdra, L85, M|44/100
+expect |move|p2b: Chimecho|Protect|p2b: Chimecho
+expect |-singleturn|p2b: Chimecho|Protect
+expect |move|p1a: Barraskewda|Poison Jab|p1b: Kingdra
+expect |rng|100|15
+expect |rng|24|10
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1b: Kingdra|26/266
+expect |-damage|p1b: Kingdra|10/100
+expect |rng|100|89
+expect |split|p1
+expect |-damage|p1a: Barraskewda|194/242|[from] item: Life Orb
+expect |-damage|p1a: Barraskewda|81/100|[from] item: Life Orb
+expect |move|p2a: Hawlucha|Close Combat|p1b: Kingdra
+expect |rng|100|3
+expect |rng|24|15
+expect |rng|16|4
+expect |split|p1
+expect |-damage|p1b: Kingdra|0 fnt
+expect |-damage|p1b: Kingdra|0 fnt
+expect |rng|100|64
+expect |-unboost|p2a: Hawlucha|def|1
+expect |-unboost|p2a: Hawlucha|spd|1
+expect |faint|p1b: Kingdra
+expect |
+expect |rng|2|0
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Scovillain|Scovillain, L90, F|105/263
+expect |switch|p1b: Scovillain|Scovillain, L90, F|40/100
+expect |turn|10
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2b: Zebstrika|Zebstrika, L87, F|61/272
+expect |switch|p2b: Zebstrika|Zebstrika, L87, F|23/100
+expect |move|p1a: Barraskewda|Poison Jab|p2a: Hawlucha
+expect |rng|100|9
+expect |rng|24|19
+expect |rng|16|14
+expect |split|p2
+expect |-damage|p2a: Hawlucha|34/265
+expect |-damage|p2a: Hawlucha|13/100
+expect |rng|100|58
+expect |split|p1
+expect |-damage|p1a: Barraskewda|170/242|[from] item: Life Orb
+expect |-damage|p1a: Barraskewda|71/100|[from] item: Life Orb
+expect |move|p2a: Hawlucha|Close Combat|p1a: Barraskewda
+expect |rng|100|19
+expect |rng|24|19
+expect |rng|16|2
+expect |split|p1
+expect |-damage|p1a: Barraskewda|5/242
+expect |-damage|p1a: Barraskewda|3/100
+expect |rng|100|46
+expect |-unboost|p2a: Hawlucha|def|1
+expect |-unboost|p2a: Hawlucha|spd|1
+expect |move|p1b: Scovillain|Leaf Storm|p1a: Barraskewda
+expect |rng|100|20
+expect |rng|24|19
+expect |rng|16|9
+expect |-supereffective|p1a: Barraskewda
+expect |split|p1
+expect |-damage|p1a: Barraskewda|0 fnt
+expect |-damage|p1a: Barraskewda|0 fnt
+expect |rng|100|49
+expect |-unboost|p1b: Scovillain|spa|2
+expect |faint|p1a: Barraskewda
+expect |
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Scovillain|Scovillain, L90, F|88/238 psn
+expect |switch|p1a: Scovillain|Scovillain, L90, F|37/100 psn
+expect |turn|11
+expect |rng|2|0
+expect |
+expect |t:|
+expect |move|p1a: Scovillain|Protect|p1a: Scovillain
+expect |-singleturn|p1a: Scovillain|Protect
+expect |move|p2b: Zebstrika|Overheat|p2a: Hawlucha|[miss]
+expect |rng|100|90
+expect |-miss|p2b: Zebstrika|p2a: Hawlucha
+expect |move|p2a: Hawlucha|Close Combat|p1a: Scovillain
+expect |-activate|p1a: Scovillain|move: Protect
+expect |move|p1b: Scovillain|Leaf Storm|p2a: Hawlucha
+expect |rng|100|24
+expect |rng|24|20
+expect |rng|16|1
+expect |-resisted|p2a: Hawlucha
+expect |split|p2
+expect |-damage|p2a: Hawlucha|0 fnt
+expect |-damage|p2a: Hawlucha|0 fnt
+expect |rng|100|64
+expect |-unboost|p1b: Scovillain|spa|2
+expect |faint|p2a: Hawlucha
+expect |
+expect |rng|2|0
+expect |split|p1
+expect |-damage|p1a: Scovillain|59/238 psn|[from] psn
+expect |-damage|p1a: Scovillain|25/100 psn|[from] psn
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Chimecho|Chimecho, L94, F|293/293
+expect |switch|p2a: Chimecho|Chimecho, L94, F|100/100
+expect |turn|12
+expect |
+expect |t:|
+expect |move|p1a: Scovillain|Protect||[still]
+expect |rng|3|1
+expect |-fail|p1a: Scovillain
+expect |move|p2b: Zebstrika|Overheat|p1b: Scovillain
+expect |rng|100|19
+expect |rng|24|12
+expect |rng|16|7
+expect |split|p1
+expect |-damage|p1b: Scovillain|0 fnt
+expect |-damage|p1b: Scovillain|0 fnt
+expect |rng|100|21
+expect |-unboost|p2b: Zebstrika|spa|2
+expect |faint|p1b: Scovillain
+expect |split|p2
+expect |-damage|p2b: Zebstrika|34/272|[from] item: Life Orb
+expect |-damage|p2b: Zebstrika|13/100|[from] item: Life Orb
+expect |move|p2a: Chimecho|Psychic|p2b: Zebstrika
+expect |rng|100|20
+expect |rng|24|0
+expect |rng|16|3
+expect |-crit|p2b: Zebstrika
+expect |split|p2
+expect |-damage|p2b: Zebstrika|0 fnt
+expect |-damage|p2b: Zebstrika|0 fnt
+expect |rng|100|9
+expect |faint|p2b: Zebstrika
+expect |
+expect |split|p1
+expect |-damage|p1a: Scovillain|30/238 psn|[from] psn
+expect |-damage|p1a: Scovillain|13/100 psn|[from] psn
+expect |upkeep
+expect |turn|13
+expect |
+expect |t:|
+expect |move|p1a: Scovillain|Nasty Plot|p1a: Scovillain
+expect |-boost|p1a: Scovillain|spa|2
+expect |move|p2a: Chimecho|Psychic|p1a: Scovillain
+expect |-immune|p1a: Scovillain
+expect |
+expect |split|p1
+expect |-damage|p1a: Scovillain|1/238 psn|[from] psn
+expect |-damage|p1a: Scovillain|1/100 psn|[from] psn
+expect |upkeep
+expect |turn|14
+expect |rng|1|0
+expect |rng|1|0
+expect |
+expect |t:|
+expect |rng|1|0
+expect |move|p1a: Scovillain|Sludge Bomb|p2a: Chimecho
+expect |rng|100|45
+expect |rng|24|7
+expect |rng|16|11
+expect |split|p2
+expect |-damage|p2a: Chimecho|128/293
+expect |-damage|p2a: Chimecho|44/100
+expect |rng|100|58
+expect |-enditem|p2a: Chimecho|Sitrus Berry|[eat]
+expect |split|p2
+expect |-heal|p2a: Chimecho|201/293|[from] item: Sitrus Berry
+expect |-heal|p2a: Chimecho|69/100|[from] item: Sitrus Berry
+expect |split|p1
+expect |-damage|p1a: Scovillain|0 fnt|[from] item: Life Orb
+expect |-damage|p1a: Scovillain|0 fnt|[from] item: Life Orb
+expect |faint|p1a: Scovillain
+expect |
+expect |win|p2

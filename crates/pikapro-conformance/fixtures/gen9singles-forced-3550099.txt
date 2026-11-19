@@ -2419,6 +2419,7 @@ expect |rng|2|0
 expect |rng|2|0
 expect |rng|2|1
 expect |rng|2|0
+expect |rng|2|1
 expect |
 expect |t:|
 expect |split|p2
@@ -2433,19 +2434,20 @@ expect |turn|128
 expect |
 expect |t:|
 expect |move|p2a: Ditto|Conversion 2|p1a: Porygon2
-expect |rng|3|1
-expect |-start|p2a: Ditto|typechange|Rock
+expect |rng|3|0
+expect |-start|p2a: Ditto|typechange|Ghost
 expect |move|p1a: Porygon2|Metronome|p1a: Porygon2
-expect |rng|581|14
-expect |cant|p1a: Porygon2|move: Gravity|Fly
+expect |rng|581|280
+expect |move|p1a: Porygon2|Metal Burst||[from] move: Metronome|[still]
+expect |-fail|p1a: Porygon2
 expect |
 expect |upkeep
 expect |turn|129
 expect |
 expect |t:|
 expect |move|p2a: Ditto|Conversion 2|p1a: Porygon2
-expect |rng|2|0
-expect |-start|p2a: Ditto|typechange|Electric
+expect |rng|4|3
+expect |-start|p2a: Ditto|typechange|Water
 expect |move|p1a: Porygon2|Conversion 2|p2a: Ditto
 expect |rng|3|2
 expect |-start|p1a: Porygon2|typechange|Steel
@@ -2457,47 +2459,49 @@ expect |t:|
 expect |split|p2
 expect |switch|p2a: Snorlax|Snorlax, L50, M|28/235
 expect |switch|p2a: Snorlax|Snorlax, L50, M|28/235
+expect |rng|2|0
+expect |rng|2|0
 expect |rng|2|1
-expect |rng|2|0
-expect |rng|2|0
 expect |move|p1a: Porygon2|Conversion 2||[still]
 expect |-fail|p1a: Porygon2
-expect |rng|2|1
+expect |rng|2|0
 expect |
 expect |-fieldend|move: Gravity
 expect |upkeep
-expect |rng|2|0
+expect |rng|2|1
 expect |turn|131
 expect |rng|2|1
 expect |
 expect |t:|
 expect |rng|2|1
-expect |rng|2|1
+expect |rng|2|0
 expect |rng|2|0
 expect |move|p2a: Snorlax|Rest|p2a: Snorlax
 expect |-status|p2a: Snorlax|slp|[from] move: Rest
-expect |rng|3|0
+expect |rng|3|1
 expect |split|p2
 expect |-heal|p2a: Snorlax|235/235 slp|[silent]
 expect |-heal|p2a: Snorlax|235/235 slp|[silent]
-expect |rng|2|1
+expect |rng|2|0
 expect |rng|2|0
 expect |rng|2|0
 expect |move|p1a: Porygon2|Metronome|p1a: Porygon2
-expect |rng|581|126
-expect |move|p1a: Porygon2|Super Fang|p2a: Snorlax|[from] move: Metronome
-expect |rng|100|69
+expect |rng|581|402
+expect |move|p1a: Porygon2|Volt Switch|p2a: Snorlax|[from] move: Metronome
+expect |rng|100|57
+expect |rng|24|13
+expect |rng|16|5
 expect |split|p2
-expect |-damage|p2a: Snorlax|118/235 slp
-expect |-damage|p2a: Snorlax|118/235 slp
-expect |rng|2|1
-expect |rng|2|1
-expect |rng|2|0
+expect |-damage|p2a: Snorlax|220/235 slp
+expect |-damage|p2a: Snorlax|220/235 slp
 expect |rng|2|1
 expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
 expect |
 expect |upkeep
-expect |rng|2|1
+expect |rng|2|0
 expect |turn|132
 expect |rng|2|1
 expect |
@@ -2506,15 +2510,16 @@ expect |rng|2|1
 expect |rng|2|0
 expect |rng|2|1
 expect |move|p1a: Porygon2|Metronome|p1a: Porygon2
-expect |rng|581|576
-expect |move|p1a: Porygon2|Temper Flare|p2a: Snorlax|[from] move: Metronome
-expect |rng|100|28
-expect |rng|24|23
-expect |rng|16|7
+expect |rng|581|285
+expect |move|p1a: Porygon2|Fling|p2a: Snorlax|[from] move: Metronome
+expect |rng|100|96
+expect |rng|24|5
+expect |rng|16|13
 expect |split|p2
-expect |-damage|p2a: Snorlax|89/235 slp
-expect |-damage|p2a: Snorlax|89/235 slp
-expect |rng|2|1
+expect |-damage|p2a: Snorlax|205/235 slp
+expect |-damage|p2a: Snorlax|205/235 slp
+expect |rng|2|0
+expect |-enditem|p1a: Porygon2|Eviolite|[from] move: Fling
 expect |rng|2|0
 expect |rng|2|1
 expect |rng|2|0
@@ -2523,11 +2528,11 @@ expect |cant|p2a: Snorlax|slp
 expect |rng|2|1
 expect |
 expect |upkeep
-expect |rng|2|0
+expect |rng|2|1
 expect |turn|133
 expect |
 expect |t:|
-expect |rng|2|0
+expect |rng|2|1
 expect |rng|2|1
 expect |rng|2|1
 expect |split|p2
@@ -2544,24 +2549,24 @@ expect |turn|134
 expect |
 expect |t:|
 expect |split|p2
-expect |switch|p2a: Snorlax|Snorlax, L50, M|89/235 slp
-expect |switch|p2a: Snorlax|Snorlax, L50, M|89/235 slp
+expect |switch|p2a: Snorlax|Snorlax, L50, M|205/235 slp
+expect |switch|p2a: Snorlax|Snorlax, L50, M|205/235 slp
+expect |rng|2|0
 expect |rng|2|1
-expect |rng|2|1
-expect |rng|2|1
+expect |rng|2|0
 expect |move|p1a: Porygon2|Conversion 2||[still]
 expect |-fail|p1a: Porygon2
 expect |rng|2|0
 expect |
 expect |upkeep
-expect |rng|2|1
-expect |turn|135
 expect |rng|2|0
+expect |turn|135
+expect |rng|2|1
 expect |
 expect |t:|
 expect |rng|2|0
-expect |rng|2|0
 expect |rng|2|1
+expect |rng|2|0
 expect |cant|p2a: Snorlax|slp
 expect |rng|2|0
 expect |move|p1a: Porygon2|Conversion 2||[still]
@@ -2569,16 +2574,13 @@ expect |-fail|p1a: Porygon2
 expect |rng|2|1
 expect |
 expect |upkeep
-expect |rng|2|0
+expect |rng|2|1
 expect |turn|136
 expect |rng|2|0
 expect |
 expect |t:|
 expect |rng|2|1
-expect |rng|2|1
 expect |rng|2|0
-expect |move|p1a: Porygon2|Conversion 2||[still]
-expect |-fail|p1a: Porygon2
 expect |rng|2|1
 expect |-curestatus|p2a: Snorlax|slp|[msg]
 expect |move|p2a: Snorlax|Rest|p2a: Snorlax
@@ -2587,9 +2589,15 @@ expect |rng|3|1
 expect |split|p2
 expect |-heal|p2a: Snorlax|235/235 slp|[silent]
 expect |-heal|p2a: Snorlax|235/235 slp|[silent]
+expect |rng|2|0
 expect |rng|2|1
 expect |rng|2|0
+expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
 expect |rng|2|0
+expect |-start|p1a: Porygon2|typechange|Dark
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
 expect |
 expect |upkeep
 expect |rng|2|1
@@ -2598,49 +2606,49 @@ expect |rng|2|0
 expect |
 expect |t:|
 expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
+expect |rng|2|0
+expect |-start|p1a: Porygon2|typechange|Psychic
 expect |rng|2|0
 expect |rng|2|1
+expect |rng|2|0
 expect |cant|p2a: Snorlax|slp
 expect |move|p2a: Snorlax|Sleep Talk|p2a: Snorlax
 expect |rng|1|0
 expect |move|p2a: Snorlax|Rest||[from] move: Sleep Talk|[still]
 expect |-fail|p2a: Snorlax
+expect |rng|2|0
 expect |rng|2|1
-expect |rng|2|0
-expect |rng|2|0
-expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
-expect |rng|2|1
-expect |-start|p1a: Porygon2|typechange|Psychic
-expect |rng|2|0
-expect |rng|2|0
 expect |rng|2|0
 expect |
 expect |upkeep
-expect |rng|2|1
-expect |turn|138
 expect |rng|2|0
+expect |turn|138
+expect |rng|2|1
 expect |
 expect |t:|
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
+expect |rng|2|0
+expect |-start|p1a: Porygon2|typechange|Dark
 expect |rng|2|0
 expect |rng|2|0
 expect |rng|2|1
 expect |cant|p2a: Snorlax|slp
-expect |rng|2|0
-expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
-expect |rng|2|0
-expect |-start|p1a: Porygon2|typechange|Dark
-expect |rng|2|1
-expect |rng|2|0
 expect |rng|2|1
 expect |
 expect |upkeep
-expect |rng|2|1
+expect |rng|2|0
 expect |turn|139
 expect |
 expect |t:|
-expect |rng|2|0
-expect |rng|2|0
-expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
 expect |split|p2
 expect |switch|p2a: Ditto|Ditto, L50, M|67/154
 expect |switch|p2a: Ditto|Ditto, L50, M|67/154
@@ -2681,7 +2689,7 @@ expect |switch|p2a: Snorlax|Snorlax, L50, M|235/235 slp
 expect |switch|p2a: Snorlax|Snorlax, L50, M|235/235 slp
 expect |rng|2|1
 expect |rng|2|1
-expect |rng|2|1
+expect |rng|2|0
 expect |move|p1a: Porygon2|Conversion 2||[still]
 expect |-fail|p1a: Porygon2
 expect |rng|2|1
@@ -2692,13 +2700,13 @@ expect |turn|143
 expect |rng|2|1
 expect |
 expect |t:|
-expect |rng|2|1
-expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
 expect |rng|2|0
 expect |-curestatus|p2a: Snorlax|slp|[msg]
 expect |move|p2a: Snorlax|Sleep Talk||[still]
 expect |-fail|p2a: Snorlax
-expect |rng|2|1
+expect |rng|2|0
 expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
 expect |rng|2|0
 expect |-start|p1a: Porygon2|typechange|Ghost
@@ -2707,13 +2715,13 @@ expect |rng|2|0
 expect |rng|2|0
 expect |
 expect |upkeep
-expect |rng|2|0
+expect |rng|2|1
 expect |turn|144
 expect |
 expect |t:|
 expect |rng|2|0
-expect |rng|2|0
 expect |rng|2|1
+expect |rng|2|0
 expect |split|p2
 expect |switch|p2a: Ditto|Ditto, L50, M|67/154
 expect |switch|p2a: Ditto|Ditto, L50, M|67/154
@@ -2732,7 +2740,7 @@ expect |switch|p2a: Snorlax|Snorlax, L50, M|235/235
 expect |switch|p2a: Snorlax|Snorlax, L50, M|235/235
 expect |rng|2|0
 expect |rng|2|0
-expect |rng|2|1
+expect |rng|2|0
 expect |move|p1a: Porygon2|Conversion 2||[still]
 expect |-fail|p1a: Porygon2
 expect |rng|2|0
@@ -2740,26 +2748,29 @@ expect |
 expect |upkeep
 expect |rng|2|1
 expect |turn|146
-expect |rng|2|0
+expect |rng|2|1
 expect |
 expect |t:|
 expect |rng|2|0
 expect |rng|2|0
-expect |rng|2|0
-expect |move|p1a: Porygon2|Conversion 2||[still]
-expect |-fail|p1a: Porygon2
 expect |rng|2|0
 expect |move|p2a: Snorlax|Sleep Talk||[still]
 expect |-fail|p2a: Snorlax
 expect |rng|2|1
+expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
+expect |rng|2|0
+expect |-start|p1a: Porygon2|typechange|Rock
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
 expect |
 expect |upkeep
-expect |rng|2|1
+expect |rng|2|0
 expect |turn|147
 expect |rng|2|0
 expect |
 expect |t:|
-expect |rng|2|0
+expect |rng|2|1
 expect |rng|2|0
 expect |rng|2|1
 expect |move|p2a: Snorlax|Rest|p2a: Snorlax
@@ -2768,67 +2779,64 @@ expect |rng|2|0
 expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
 expect |rng|3|1
 expect |-start|p1a: Porygon2|typechange|Psychic
-expect |rng|2|0
 expect |rng|2|1
-expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
 expect |
 expect |upkeep
-expect |rng|2|0
+expect |rng|2|1
 expect |turn|148
 expect |rng|2|1
 expect |
 expect |t:|
 expect |rng|2|0
-expect |rng|2|1
+expect |rng|2|0
 expect |rng|2|0
 expect |move|p2a: Snorlax|Metronome|p2a: Snorlax
-expect |rng|581|328
-expect |move|p2a: Snorlax|Psycho Cut|p1a: Porygon2|[from] move: Metronome
-expect |rng|100|72
-expect |rng|8|4
-expect |rng|16|15
+expect |rng|581|191
+expect |move|p2a: Snorlax|Rock Smash|p1a: Porygon2|[from] move: Metronome
+expect |rng|100|89
+expect |rng|24|9
+expect |rng|16|11
 expect |-resisted|p1a: Porygon2
 expect |split|p1
-expect |-damage|p1a: Porygon2|49/180
-expect |-damage|p1a: Porygon2|49/180
-expect |rng|2|1
+expect |-damage|p1a: Porygon2|50/180
+expect |-damage|p1a: Porygon2|50/180
+expect |rng|100|36
+expect |-unboost|p1a: Porygon2|def|1
+expect |rng|2|0
 expect |rng|2|1
 expect |rng|2|0
-expect |rng|2|0
+expect |rng|2|1
 expect |rng|2|0
 expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
-expect |rng|2|0
-expect |-start|p1a: Porygon2|typechange|Dark
+expect |rng|5|0
+expect |-start|p1a: Porygon2|typechange|Bug
+expect |rng|2|1
 expect |rng|2|1
 expect |rng|2|0
-expect |rng|2|1
 expect |
 expect |upkeep
 expect |rng|2|0
 expect |turn|149
-expect |rng|2|0
+expect |rng|2|1
 expect |
 expect |t:|
 expect |rng|2|1
-expect |rng|2|0
 expect |rng|2|1
+expect |rng|2|0
 expect |move|p2a: Snorlax|Metronome|p2a: Snorlax
-expect |rng|581|228
-expect |move|p2a: Snorlax|Hyper Voice|p1a: Porygon2|[from] move: Metronome
-expect |rng|100|13
-expect |rng|24|12
-expect |rng|16|9
-expect |split|p1
-expect |-damage|p1a: Porygon2|16/180
-expect |-damage|p1a: Porygon2|16/180
-expect |rng|2|0
+expect |rng|581|91
+expect |move|p2a: Snorlax|Harden|p2a: Snorlax|[from] move: Metronome
+expect |-boost|p2a: Snorlax|def|1
+expect |rng|2|1
 expect |rng|2|0
 expect |rng|2|1
-expect |rng|2|1
+expect |rng|2|0
 expect |rng|2|1
 expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
-expect |rng|3|0
-expect |-start|p1a: Porygon2|typechange|Ghost
+expect |rng|3|2
+expect |-start|p1a: Porygon2|typechange|Steel
 expect |rng|2|0
 expect |rng|2|1
 expect |rng|2|0
@@ -2836,67 +2844,49 @@ expect |
 expect |upkeep
 expect |rng|2|1
 expect |turn|150
-expect |rng|2|0
+expect |rng|2|1
 expect |
 expect |t:|
 expect |rng|2|1
 expect |rng|2|1
 expect |rng|2|0
-expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
-expect |rng|2|1
-expect |-start|p1a: Porygon2|typechange|Steel
-expect |rng|2|0
-expect |rng|2|1
-expect |rng|2|1
 expect |move|p2a: Snorlax|Metronome|p2a: Snorlax
-expect |rng|581|471
-expect |move|p2a: Snorlax|Leafage|p1a: Porygon2|[from] move: Metronome
-expect |rng|100|61
-expect |rng|24|6
-expect |rng|16|3
-expect |-resisted|p1a: Porygon2
-expect |split|p1
-expect |-damage|p1a: Porygon2|10/180
-expect |-damage|p1a: Porygon2|10/180
-expect |rng|2|1
+expect |rng|581|111
+expect |move|p2a: Snorlax|Glare|p1a: Porygon2|[from] move: Metronome
+expect |rng|100|69
+expect |-status|p1a: Porygon2|par
 expect |rng|2|1
 expect |rng|2|1
 expect |rng|2|0
 expect |rng|2|0
+expect |rng|2|1
+expect |rng|4|3
+expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
+expect |rng|2|0
+expect |-start|p1a: Porygon2|typechange|Ghost
 expect |
 expect |upkeep
-expect |rng|2|1
 expect |turn|151
-expect |rng|2|1
 expect |
 expect |t:|
-expect |rng|2|0
-expect |rng|2|1
-expect |rng|2|0
 expect |move|p2a: Snorlax|Rest|p2a: Snorlax
 expect |-fail|p2a: Snorlax|heal
-expect |rng|2|0
+expect |rng|4|3
 expect |move|p1a: Porygon2|Conversion 2|p2a: Snorlax
-expect |rng|2|0
+expect |rng|3|0
 expect |-start|p1a: Porygon2|typechange|Dark
-expect |rng|2|1
-expect |rng|2|0
-expect |rng|2|0
 expect |
 expect |upkeep
-expect |rng|2|0
 expect |turn|152
 expect |
 expect |t:|
-expect |rng|2|0
-expect |rng|2|1
-expect |rng|2|0
 expect |split|p2
 expect |switch|p2a: Ditto|Ditto, L50, M|67/154
 expect |switch|p2a: Ditto|Ditto, L50, M|67/154
 expect |-transform|p2a: Ditto|p1a: Porygon2|[from] ability: Imposter
 expect |-ability|p2a: Ditto|Download|boost
-expect |-boost|p2a: Ditto|spa|1
+expect |-boost|p2a: Ditto|atk|1
+expect |rng|4|1
 expect |move|p1a: Porygon2|Conversion 2||[still]
 expect |-fail|p1a: Porygon2
 expect |
@@ -2907,32 +2897,20 @@ expect |t:|
 expect |split|p2
 expect |switch|p2a: Snorlax|Snorlax, L50, M|235/235
 expect |switch|p2a: Snorlax|Snorlax, L50, M|235/235
-expect |rng|2|0
-expect |rng|2|0
-expect |rng|2|1
+expect |rng|4|1
 expect |move|p1a: Porygon2|Conversion 2||[still]
 expect |-fail|p1a: Porygon2
-expect |rng|2|1
 expect |
 expect |upkeep
-expect |rng|2|1
 expect |turn|154
-expect |rng|2|0
 expect |
 expect |t:|
-expect |rng|2|1
-expect |rng|2|0
-expect |rng|2|1
 expect |move|p2a: Snorlax|Metronome|p2a: Snorlax
-expect |rng|581|16
-expect |move|p2a: Snorlax|Slam|p1a: Porygon2|[from] move: Metronome
-expect |rng|100|73
-expect |rng|24|11
-expect |rng|16|14
+expect |rng|581|519
+expect |move|p2a: Snorlax|Flip Turn|p1a: Porygon2|[from] move: Metronome
+expect |rng|100|48
+expect |rng|24|7
+expect |rng|16|4
 expect |split|p1
-expect |-damage|p1a: Porygon2|0 fnt
-expect |-damage|p1a: Porygon2|0 fnt
-expect |rng|2|1
-expect |faint|p1a: Porygon2
-expect |
-expect |win|p2
+expect |-damage|p1a: Porygon2|8/180 par
+expect |-damage|p1a: Porygon2|8/180 par

@@ -180,7 +180,8 @@ pub enum TeamRule {
 }
 
 /// A rule with an `onValidateSet` hook, run for each set in rule-table
-/// order.
+/// order. (Showdown's OHKO Clause and Sleep Moves Clause had one; they are
+/// ban lists now, and no preset uses these.)
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash)]
 pub enum SetRule {
     /// `OHKO Clause`: no move with `ohko` (Fissure, Guillotine, Horn
@@ -407,7 +408,8 @@ impl ValidationFormat {
 
     /// `[Gen 9] OU`: Standard (Standard AG's Obtainable; Species Clause,
     /// Nickname Clause, OHKO Clause, Evasion Items Clause, Evasion Moves
-    /// Clause), Evasion Abilities Clause and Sleep Moves Clause, without
+    /// Clause), Evasion Abilities Clause and Sleep Moves Clause (OHKO
+    /// Clause and Sleep Moves Clause are ban lists), without
     /// Sleep Clause Mod; bans the Uber and AG tiers, Arena Trap, Moody,
     /// Shadow Tag, King's Rock, Razor Fang, Baton Pass, Last Respects,
     /// Shed Tail and Tera Blast. One to six Pokémon up to level 100. The
@@ -421,10 +423,16 @@ impl ValidationFormat {
         const ITEMS: &str = "Evasion Items Clause";
         const MOVES: &str = "Evasion Moves Clause";
         const ABILITIES: &str = "Evasion Abilities Clause";
-        const RULES: [Rule; 22] = [
+        const OHKO: &str = "OHKO Clause";
+        const SLEEP: &str = "Sleep Moves Clause";
+        const RULES: [Rule; 33] = [
             OBTAINABLE_BANS[0],
             OBTAINABLE_BANS[1],
             OBTAINABLE_BANS[2],
+            Rule::ban(Target::Move(m::FISSURE), OHKO),
+            Rule::ban(Target::Move(m::GUILLOTINE), OHKO),
+            Rule::ban(Target::Move(m::HORN_DRILL), OHKO),
+            Rule::ban(Target::Move(m::SHEER_COLD), OHKO),
             Rule::ban(Target::Item(i::BRIGHT_POWDER), ITEMS),
             Rule::ban(Target::Item(i::LAX_INCENSE), ITEMS),
             Rule::ban(Target::Move(m::ACUPRESSURE), MOVES),
@@ -432,7 +440,14 @@ impl ValidationFormat {
             Rule::ban(Target::Move(m::DOUBLE_TEAM), MOVES),
             Rule::ban(Target::Ability(a::SAND_VEIL), ABILITIES),
             Rule::ban(Target::Ability(a::SNOW_CLOAK), ABILITIES),
-            Rule::ban(Target::Move(m::YAWN), "Sleep Moves Clause"),
+            Rule::ban(Target::Move(m::DARK_VOID), SLEEP),
+            Rule::ban(Target::Move(m::GRASS_WHISTLE), SLEEP),
+            Rule::ban(Target::Move(m::HYPNOSIS), SLEEP),
+            Rule::ban(Target::Move(m::LOVELY_KISS), SLEEP),
+            Rule::ban(Target::Move(m::SING), SLEEP),
+            Rule::ban(Target::Move(m::SLEEP_POWDER), SLEEP),
+            Rule::ban(Target::Move(m::SPORE), SLEEP),
+            Rule::ban(Target::Move(m::YAWN), SLEEP),
             Rule::ban(Target::Tag(Tag::Uber), ""),
             Rule::ban(Target::Tag(Tag::Ag), ""),
             Rule::ban(Target::Ability(a::ARENA_TRAP), ""),
@@ -452,7 +467,6 @@ impl ValidationFormat {
             adjust_level: None,
             rules: &RULES,
             team_rules: &[TeamRule::Obtainable, TeamRule::SpeciesClause, TeamRule::NicknameClause],
-            set_rules: &[SetRule::OhkoClause, SetRule::SleepMovesClause],
             ..ValidationFormat::gen9_vgc_2025_reg_i()
         }
     }

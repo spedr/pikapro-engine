@@ -885,6 +885,20 @@ pub(crate) fn collect(
     // a prefixed handler for the event.
     let prefixed = prefixed(event);
     let mon_prefixed = prefixed && masks.prefixed(event);
+    // The usual event: on a Pokémon in its slot, with no other Pokémon's
+    // prefixed handler, no side condition and no field effect for it. All
+    // the code below would collect is the target's own handlers.
+    if let Target::Pokemon(t) = target
+        && !mon_prefixed
+        && (t.slot as usize) < active_n
+        && !has(masks.sides[0] | masks.sides[1] | masks.field, event)
+    {
+        let active = |p: Position| is_active(battle, p) && !masks.is_inactive(p);
+        if has(masks.mons[t.side.index() * 2 + t.slot as usize], event) && (active(t) || source.is_some_and(active)) {
+            pokemon_handlers(battle, t, event, EventPrefix::On, index, sink);
+        }
+        return;
+    }
     let mon = |pos: Position| masks.mon(battle, active_n, pos, event);
     let mut side_target = None;
     let mut bubble_down = false;
@@ -1121,10 +1135,7 @@ fn own_handler(battle: &Battle, ev: &EventCtx<'_>, spec: Spec) -> Handler {
 /// Inlined, the event filter's test (as [`move_event`]'s).
 #[inline(always)]
 pub(crate) fn run_event(battle: &mut Battle, ev: &mut EventCtx<'_>, own: Option<Spec>) -> Relay {
-    if own.is_none()
-        && (filtered(battle, ev.event)
-            || matches!(ev.target, Target::Pokemon(t) if quiet(battle, ev.event, t, ev.source)))
-    {
+    if own.is_none() && unhandled(battle, ev.event, ev.target, ev.source) {
         return ev.relay;
     }
     run_event_unfiltered(battle, ev, own)
@@ -1182,6 +1193,10 @@ fn run_located(battle: &mut Battle, ev: &mut EventCtx<'_>, own: Option<Spec>, at
 /// and again only after a handler ran: until one does, nothing changes.
 /// When no Pokémon could find a handler, the order is never read: only
 /// the sort's draws (on ties) are made.
+///
+/// Always inlined: `eachEvent('Update')` gets its own copy
+/// (`resolve::each_update`), with the event's tests folded.
+#[inline(always)]
 pub(crate) fn each_event_run(battle: &mut Battle, event: Event, effect: Effect, order: &mut [(Position, i32)]) {
     if filtered(battle, event) {
         super::queue::speed_sort_by_speed_draws(order, &mut battle.rng);
@@ -1189,24 +1204,25 @@ pub(crate) fn each_event_run(battle: &mut Battle, event: Event, effect: Effect, 
     }
     // A Pokémon revived in its slot: each target's own masks.
     if battle.order.revived_in_slot {
-        super::queue::speed_sort_by_speed(order, &mut battle.rng);
-        for &(pos, _) in order.iter() {
-            let mut ev = EventCtx::new(event, Target::Pokemon(pos), None, effect, Relay::True);
-            run_event(battle, &mut ev, None);
-        }
-        return;
+        return each_event_revived(battle, event, effect, order);
     }
     let active = battle.format.active_per_side();
-    let mut at = Masks::locate(battle, Target::Field, None);
-    // The Pokémon (by `2 * side + slot`) that could find a handler now.
+    let at = Masks::locate(battle, Target::Field, None);
+    // The Pokémon (by `2 * side + slot`) that could find a handler now:
+    // `Masks::relevant` of each (they stand in their slots), with what
+    // the tests share taken once.
     let mut relevant = 0u8;
     let masks = at.get(battle);
     if masks.any(event) {
+        let shared =
+            if prefixed(event) { masks.field | masks.prefixed | masks.sides[0] | masks.sides[1] } else { masks.field };
         for &(pos, _) in order.iter() {
-            if masks.relevant(active, Target::Pokemon(pos), event)
-                && !(event == Event::Update && update_idle(battle, masks, pos))
-            {
-                relevant |= 1 << (pos.side.index() * 2 + pos.slot as usize);
+            // (A slot is 0 or 1: `& 1` spares the bounds checks.)
+            let i = pos.side.index() * 2 + (pos.slot as usize & 1);
+            let could = has(masks.mons[i] | masks.sides[pos.side.index()] | shared, event);
+            debug_assert_eq!(could, masks.relevant(active, Target::Pokemon(pos), event));
+            if could && !(event == Event::Update && update_idle(battle, masks, pos)) {
+                relevant |= 1 << i;
             }
         }
     }
@@ -1215,6 +1231,34 @@ pub(crate) fn each_event_run(battle: &mut Battle, event: Event, effect: Effect, 
         super::queue::speed_sort_by_speed_draws(order, &mut battle.rng);
         return;
     }
+    each_event_handlers(battle, event, effect, order, at, relevant);
+}
+
+/// [`each_event_run`] with a Pokémon revived in its slot: each target's
+/// own masks.
+#[cold]
+#[inline(never)]
+fn each_event_revived(battle: &mut Battle, event: Event, effect: Effect, order: &mut [(Position, i32)]) {
+    super::queue::speed_sort_by_speed(order, &mut battle.rng);
+    for &(pos, _) in order.iter() {
+        let mut ev = EventCtx::new(event, Target::Pokemon(pos), None, effect, Relay::True);
+        run_event(battle, &mut ev, None);
+    }
+}
+
+/// [`each_event_run`] once some Pokémon could find a handler (`relevant`,
+/// by `2 * side + slot`, from the masks `at`): the sort, then the event on
+/// each.
+#[inline(never)]
+fn each_event_handlers(
+    battle: &mut Battle,
+    event: Event,
+    effect: Effect,
+    order: &mut [(Position, i32)],
+    mut at: MasksAt,
+    relevant: u8,
+) {
+    let active = battle.format.active_per_side();
     super::queue::speed_sort_by_speed(order, &mut battle.rng);
     let mut calls = battle.handler_calls;
     // `relevant` holds until a handler runs.
@@ -1239,40 +1283,74 @@ pub(crate) fn each_event_run(battle: &mut Battle, event: Event, effect: Effect, 
 }
 
 /// `eachEvent('Update')` on the Pokémon at `pos` would run one handler,
-/// its item's, which would do nothing now ([`items::update_idle`]): the
-/// event can be skipped. `Update` is not prefixed, so the handlers it
-/// collects are the Pokémon's own (status, volatiles, ability, item and
-/// slot conditions), its side's and the field's; with one handler there
-/// is no sort, no draw, and a handler that does nothing changes nothing
-/// (`call` only counts it in `Battle::handler_calls`, which says when
-/// masks must be looked up again). Checked against the collected
-/// handlers in debug builds.
+/// its ability's or its item's, which would do nothing now
+/// ([`abilities::update_idle`], [`items::update_idle`]): the event can be
+/// skipped. `Update` is not prefixed, so the handlers it collects are the
+/// Pokémon's own (status, volatiles, ability, item and slot conditions),
+/// its side's and the field's; with one handler there is no sort, no
+/// draw, and a handler that does nothing changes nothing (`call` only
+/// counts it in `Battle::handler_calls`, which says when masks must be
+/// looked up again). With both an ability's and an item's the event runs
+/// (two handlers are sorted). Checked against the collected handlers in
+/// debug builds.
 fn update_idle(battle: &Battle, masks: &Masks, pos: Position) -> bool {
     const _: () = assert!(!prefixed(Event::Update));
     let side = battle.state.side(pos.side);
     let Some(mon) = side.team.get(pos.slot as usize) else { return false };
-    let Some(item) = mon.item else { return false };
     if mon.volatiles.bits() & VOLATILES_WITH_UPDATE != 0 {
         return false;
     }
-    let mut others = battle.format.dex.ability(mon.ability).events.0
-        | status_events(mon.status)
-        | masks.sides[pos.side.index()]
-        | masks.field;
-    for &c in side.conditions.slots.get(pos.slot as usize).map_or(&[][..], |s| &s.order[..]) {
-        others |= slot_events(c);
+    // The conditions' (each looked at only if some condition of its kind
+    // handles `Update`: none does, so those tests fold away). Sleep Clause
+    // Mod adds `SetStatus` to the field's mask, not to `FIELD_EVENTS`; it
+    // doesn't matter for `Update`.
+    if has(STATUS_EVENTS, Event::Update) && has(status_events(mon.status), Event::Update)
+        || has(SIDE_EVENTS | FIELD_EVENTS, Event::Update)
+            && has(masks.sides[pos.side.index()] | masks.field, Event::Update)
+    {
+        return false;
     }
-    if has(others, Event::Update) || !items::update_idle(battle, pos, item) {
+    if has(SLOT_EVENTS, Event::Update) {
+        for &c in side.conditions.slots.get(pos.slot as usize).map_or(&[][..], |s| &s.order[..]) {
+            if has(slot_events(c), Event::Update) {
+                return false;
+            }
+        }
+    }
+    // Its ability's handler or its item's, not both.
+    let dex = battle.format.dex;
+    let by_ability = has(dex.ability(mon.ability).events.0, Event::Update);
+    let idle = match mon.item {
+        Some(item) if !by_ability => items::update_idle(battle, pos, item),
+        Some(item) if has(dex.item(item).events.0, Event::Update) => false,
+        _ => by_ability && abilities::update_idle(battle, pos, mon.ability),
+    };
+    if !idle {
         return false;
     }
     #[cfg(debug_assertions)]
     {
         let mut count = Count::default();
         collect(battle, masks, Event::Update, Target::Pokemon(pos), None, 0, &mut count);
+        let its_own =
+            if by_ability { Effect::Ability(mon.ability) } else { mon.item.map_or(Effect::None, Effect::Item) };
         assert!(
-            count.n == 0 || count.n == 1 && count.first.effect == Effect::Item(item),
-            "Update on {pos:?}: {} handlers, not only its item's",
+            count.n == 0 || count.n == 1 && count.first.effect == its_own,
+            "Update on {pos:?}: {} handlers, not only {its_own:?}'s",
             count.n
+        );
+        // And running the event on a copy of the battle changes nothing.
+        let mut copy = battle.clone();
+        let mut ev = EventCtx::new(Event::Update, Target::Pokemon(pos), None, Effect::None, Relay::True);
+        run_event(&mut copy, &mut ev, None);
+        assert!(
+            copy.state == battle.state
+                && copy.rng == battle.rng
+                && copy.events().len() == battle.events().len()
+                && copy.queue == battle.queue
+                && copy.faint_queue.len() == battle.faint_queue.len()
+                && copy.requests == battle.requests,
+            "Update on {pos:?} found idle ({its_own:?}), but running it changes the battle"
         );
     }
     true
@@ -1298,7 +1376,7 @@ const VOLATILES_WITH_UPDATE: u128 = {
 /// Inlined, the event filter's test (as [`move_event`]'s).
 #[inline(always)]
 pub(crate) fn priority_event(battle: &mut Battle, ev: &mut EventCtx<'_>) -> Relay {
-    if filtered(battle, ev.event) || matches!(ev.target, Target::Pokemon(t) if quiet(battle, ev.event, t, ev.source)) {
+    if unhandled(battle, ev.event, ev.target, ev.source) {
         return ev.relay;
     }
     priority_event_unfiltered(battle, ev)
@@ -1346,20 +1424,72 @@ pub(crate) fn run_modify(
     mv: Option<&MoveData>,
     own: Option<Spec>,
 ) -> u32 {
+    // [`run_event`]'s test first: an event nothing handles returns its
+    // relay, and builds no context (as [`move_event`]).
+    if own.is_none() && unhandled(battle, event, Target::Pokemon(target), source) {
+        return (value as i32).max(0) as u32;
+    }
     let mut ev = EventCtx::new(event, Target::Pokemon(target), source, effect, Relay::Num(value as i32));
     if let Some(data) = mv {
         ev = ev.with_move(data);
     }
-    match run_event(battle, &mut ev, own) {
+    match run_event_unfiltered(battle, &mut ev, own) {
         Relay::Num(n) => n.max(0) as u32,
         // A handler stopped the event with `false` / `null`: 0.
         _ => 0,
     }
 }
 
+/// Whether nothing handles `event` run on `target` from `source`, told at
+/// once: the test of [`run_event`] and the other entries, before they build
+/// the event's context (the event then returns its relay).
+#[inline(always)]
+pub(crate) fn unhandled(battle: &Battle, event: Event, target: Target, source: Option<Position>) -> bool {
+    filtered(battle, event) || matches!(target, Target::Pokemon(t) if quiet(battle, event, t, source))
+}
+
+/// [`run_event`] on a Pokémon, with its test first: an event nothing
+/// handles returns `relay` and builds no context (as [`move_event`]).
+#[inline(always)]
+pub(crate) fn run_event_on(
+    battle: &mut Battle,
+    event: Event,
+    target: Position,
+    source: Option<Position>,
+    effect: Effect,
+    relay: Relay,
+    own: Option<Spec>,
+) -> Relay {
+    if own.is_none() && unhandled(battle, event, Target::Pokemon(target), source) {
+        return relay;
+    }
+    let mut ev = EventCtx::new(event, Target::Pokemon(target), source, effect, relay);
+    run_event_unfiltered(battle, &mut ev, own)
+}
+
 /// A boolean event on a Pokémon (`runEvent` without a relay): the final
 /// relay, truthy when no handler stopped it.
+///
+/// Inlined, the event filter's test (as [`move_event`]'s): an event
+/// nothing handles builds no context.
+#[inline(always)]
 pub(crate) fn run_check(
+    battle: &mut Battle,
+    event: Event,
+    target: Position,
+    source: Option<Position>,
+    effect: Effect,
+    mv: Option<&MoveData>,
+) -> Relay {
+    if unhandled(battle, event, Target::Pokemon(target), source) {
+        return Relay::True;
+    }
+    run_check_unfiltered(battle, event, target, source, effect, mv)
+}
+
+/// [`run_check`] past the event filter.
+#[inline(never)]
+fn run_check_unfiltered(
     battle: &mut Battle,
     event: Event,
     target: Position,
@@ -1371,7 +1501,7 @@ pub(crate) fn run_check(
     if let Some(data) = mv {
         ev = ev.with_move(data);
     }
-    run_event(battle, &mut ev, None)
+    run_event_unfiltered(battle, &mut ev, None)
 }
 
 /// Showdown's `runEvent` on several targets at once (`TryHit`,
@@ -1594,7 +1724,7 @@ pub(crate) fn move_event(
     data: &MoveData,
     relay: Relay,
 ) -> Relay {
-    if filtered(battle, event) || quiet(battle, event, target, source) {
+    if unhandled(battle, event, Target::Pokemon(target), source) {
         return relay;
     }
     move_event_unfiltered(battle, event, target, source, move_id, data, relay)
@@ -1632,7 +1762,7 @@ pub(crate) fn modify_move_event(
     move_id: MoveId,
     data: &mut MoveData,
 ) {
-    if filtered(battle, event) || quiet(battle, event, user, target) {
+    if unhandled(battle, event, Target::Pokemon(user), target) {
         return;
     }
     modify_move_event_unfiltered(battle, event, user, target, move_id, data);
@@ -1670,7 +1800,7 @@ pub(crate) fn collect_into(
     source: Option<Position>,
     list: &mut impl Sink,
 ) {
-    if filtered(battle, event) || matches!(target, Target::Pokemon(t) if quiet(battle, event, t, source)) {
+    if unhandled(battle, event, target, source) {
         return;
     }
     collect_into_unfiltered(battle, event, target, source, list);
@@ -1757,7 +1887,7 @@ pub(crate) fn run_immunity(battle: &mut Battle, pos: Position, ty: Type, message
 /// `sandstorm`, `powder`, `confusion`, `attract`, ...). `None` for
 /// Showdown's `null` (the handler announced it).
 pub(crate) fn immunity_event(battle: &mut Battle, pos: Position, id: &'static str) -> Option<bool> {
-    if filtered(battle, Event::Immunity) || quiet(battle, Event::Immunity, pos, None) {
+    if unhandled(battle, Event::Immunity, Target::Pokemon(pos), None) {
         return Some(true);
     }
     let at = Masks::locate(battle, Target::Pokemon(pos), None);
@@ -2031,6 +2161,16 @@ fn get_stat_inner(battle: &mut Battle, pos: Position, stat: Stat, unboosted: boo
     stat_value(battle, pos, stat, unboosted, unmodified, events)
 }
 
+/// Whether `ModifyBoost` and `ModifySpe` on the Pokémon at `pos` (in its
+/// slot) could find a handler ([`stat_events`]), for `update_speed`, which
+/// runs inside a stretch of cached masks: [`get_stat`] there is
+/// [`stat_value`] with these.
+pub(crate) fn speed_events(battle: &mut Battle, pos: Position) -> (bool, bool) {
+    debug_assert!(battle.masks_cached.is_cached(), "speed_events outside a stretch of cached masks");
+    let at = Masks::locate(battle, Target::Pokemon(pos), None);
+    stat_events(at.get(battle), battle.format.active_per_side(), pos, Event::ModifySpe)
+}
+
 /// Whether `ModifyBoost` and `stat_ev` on the Pokémon at `pos` could find a
 /// handler: exactly when [`run_event`] would collect them, so a `false`
 /// skips an event that would run no handler.
@@ -2042,7 +2182,7 @@ fn stat_events(masks: &Masks, active: usize, pos: Position, stat_ev: Event) -> (
 
 /// [`get_stat`] once it is known which of `ModifyBoost` and
 /// `Modify<Stat>` could be handled (`events`).
-fn stat_value(
+pub(crate) fn stat_value(
     battle: &mut Battle,
     pos: Position,
     stat: Stat,
@@ -2050,10 +2190,11 @@ fn stat_value(
     unmodified: bool,
     (boost_event, stat_event): (bool, bool),
 ) -> u32 {
-    let (stored, boosts) = {
-        let mon = &battle.state.side(pos.side).team[pos.slot as usize];
-        (mon.stats[stat], mon.boosts)
-    };
+    let mon = &battle.state.side(pos.side).team[pos.slot as usize];
+    if !unboosted && !unmodified && !boost_event && !stat_event {
+        return stat_at_stage(mon, stat);
+    }
+    let (stored, boosts) = (mon.stats[stat], mon.boosts);
     let mut value = stored as u32;
     // Under Wonder Room an unmodified stat reads the other defence's stage.
     let named = if unmodified { field::defensive_stat(battle, stat) } else { stat };
@@ -2071,6 +2212,14 @@ fn stat_value(
     if stat == Stat::Spe { value.min(10000) } else { value }
 }
 
+/// [`stat_value`] with neither event, boosted and modified: `mon`'s stored
+/// stat at its stage (Speed capped).
+#[inline(always)]
+pub(crate) fn stat_at_stage(mon: &PokemonState, stat: Stat) -> u32 {
+    let value = crate::stats::apply_stage(mon.stats[stat], mon.boosts.stat(stat).clamp(-6, 6)) as u32;
+    if stat == Stat::Spe { value.min(10000) } else { value }
+}
+
 /// Showdown's `pokemon.calculateStat(stat, boost, 1, statUser)` (the
 /// damage formula's attack and defense): the stored stat (Wonder Room
 /// swaps Defense and Special Defense), with the stage `boost` after
@@ -2079,7 +2228,7 @@ pub(crate) fn calculate_stat(battle: &mut Battle, pos: Position, stat: Stat, boo
     let value = battle.state.side(pos.side).team[pos.slot as usize].stats[field::defensive_stat(battle, stat)];
     // No `ModifyBoost` handler (no Unaware): the stage as it is, without
     // building the boosts object `run_event` would hand back unchanged.
-    if filtered(battle, Event::ModifyBoost) || quiet(battle, Event::ModifyBoost, stat_user, None) {
+    if unhandled(battle, Event::ModifyBoost, Target::Pokemon(stat_user), None) {
         return crate::stats::apply_stage(value, boost.clamp(-6, 6)) as u32;
     }
     let mut one = Boosts { changes: StatBoosts::default(), keys: 0 };
@@ -3011,7 +3160,7 @@ fn prefixed_quiet(battle: &Battle, event: Event) -> bool {
 /// else false, and the caller's generic path decides. Debug builds check
 /// it against fresh masks.
 #[inline(always)]
-pub(crate) fn quiet(battle: &Battle, event: Event, target: Position, source: Option<Position>) -> bool {
+fn quiet(battle: &Battle, event: Event, target: Position, source: Option<Position>) -> bool {
     let active = battle.format.active_per_side();
     if battle.order.revived_in_slot
         || target.slot as usize >= active
@@ -3722,5 +3871,62 @@ mod tests {
         let m2 = b.state.at(P2).unwrap();
         assert_eq!(m2.hp, max / 2 + max / 4);
         assert!(m2.item.is_none() && m2.ate_berry);
+    }
+
+    /// `eachEvent('Update')` skips a status-curing ability with nothing to
+    /// cure (no handler runs) and runs it once there is: with and without
+    /// an item whose own `Update` is idle, in which case the event runs
+    /// (two handlers).
+    #[test]
+    fn an_idle_status_curing_ability_is_skipped_on_update() {
+        use crate::state::Status;
+        use pikapro_data::gen9::{abilities as a, items as i, species as s};
+        let cases = [
+            (a::LIMBER, Status::Paralysis),
+            (a::INSOMNIA, Status::Sleep { turns: 2 }),
+            (a::VITAL_SPIRIT, Status::Sleep { turns: 2 }),
+            (a::THERMAL_EXCHANGE, Status::Burn),
+            (a::WATER_VEIL, Status::Burn),
+            (a::IMMUNITY, Status::Poison),
+            (a::PASTEL_VEIL, Status::Toxic { counter: 1 }),
+            (a::MAGMA_ARMOR, Status::Freeze { turns: 0 }),
+        ];
+        for (ability, status) in cases {
+            for (item, skipped) in [(None, true), (Some(i::LEFTOVERS), true), (Some(i::SITRUS_BERRY), false)] {
+                let mut b = singles(set(s::GARCHOMP, a::ROUGH_SKIN, None), set(s::DRAGONITE, ability, item));
+                // Every ability here is the reactive module's, with an
+                // `onUpdate` in the dex.
+                let data = b.format.dex.ability(ability);
+                assert!(pikapro_data::find_handler(data.handlers, Event::Update, EventPrefix::On).is_some());
+                let calls = b.handler_calls;
+                crate::resolve::each_update(&mut b);
+                assert_eq!(b.handler_calls == calls, skipped, "{}: nothing to cure, {item:?}", data.name);
+                assert_eq!(b.state.at(P2).unwrap().status, Status::None);
+                // Another status is not its business.
+                let other = if status == Status::Burn { Status::Paralysis } else { Status::Burn };
+                b.state.at_mut(P2).unwrap().status = other;
+                let calls = b.handler_calls;
+                crate::resolve::each_update(&mut b);
+                assert_eq!(b.handler_calls == calls, skipped, "{}: another status, {item:?}", data.name);
+                assert_eq!(b.state.at(P2).unwrap().status, other);
+                // Its own is cured.
+                b.state.at_mut(P2).unwrap().status = status;
+                crate::resolve::each_update(&mut b);
+                assert_eq!(b.state.at(P2).unwrap().status, Status::None, "{} cures {status:?}", data.name);
+            }
+        }
+        // Oblivious and Own Tempo watch volatiles.
+        for (ability, flag) in
+            [(a::OBLIVIOUS, Volatiles::TAUNT), (a::OBLIVIOUS, Volatiles::ATTRACT), (a::OWN_TEMPO, Volatiles::CONFUSION)]
+        {
+            let mut b = singles(set(s::GARCHOMP, a::ROUGH_SKIN, None), set(s::DRAGONITE, ability, None));
+            let calls = b.handler_calls;
+            crate::resolve::each_update(&mut b);
+            assert_eq!(b.handler_calls, calls);
+            b.state.at_mut(P2).unwrap().volatiles.add(flag);
+            crate::resolve::each_update(&mut b);
+            assert_ne!(b.handler_calls, calls);
+            assert!(!b.state.at(P2).unwrap().volatiles.has(flag));
+        }
     }
 }

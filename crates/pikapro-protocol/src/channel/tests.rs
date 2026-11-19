@@ -150,7 +150,7 @@ fn reads_real_showdown_lines() {
         "|gen|9",
         "|tier|[Gen 9 Champions] VGC 2026 Reg M-C",
         "|rated|",
-        "|rule|Species Clause: Limit one of each Pokémon",
+        "|rule|Species Clause: Limit one of each Pokemon",
         "|badge|p1|gold|vgc|1",
         "|request|",
         "|l|guest",

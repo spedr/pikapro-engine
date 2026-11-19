@@ -89,6 +89,7 @@ const VOLATILES: &[(u64, u128, bool)] = &[
     (V::THROAT_CHOP, Volatiles::THROAT_CHOP, true),
     (V::HEAL_BLOCK, Volatiles::HEAL_BLOCK, true),
     (V::IMPRISON, Volatiles::IMPRISON, true),
+    // Not exact in Champions: see `check_sound`.
     (V::NO_RETREAT, Volatiles::NO_RETREAT, true),
     (V::TRAPPED, Volatiles::TRAPPED | Volatiles::OCTOLOCK, true),
     (V::PARTIALLY_TRAPPED, Volatiles::PARTIALLY_TRAPPED, true),
@@ -289,6 +290,9 @@ pub fn check_sound(tracker: &PublicTracker, battle: &Battle) -> Result<(), Viola
                 return fail(Some(slot), Some(row), "boosts", format!("{:?} vs {truth:?}", av.boosts));
             }
             for &(bit, engine, exact) in VOLATILES {
+                // Champions' No Retreat on a Pokémon already trapped stays
+                // without a `-start`.
+                let exact = exact && !(bit == V::NO_RETREAT && format.mechanics == pikapro::Mechanics::Champions);
                 let (shown, has) = (av.volatiles.has(bit), mon.volatiles.has(engine));
                 if shown && !has || exact && has && !shown {
                     return fail(

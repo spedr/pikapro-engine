@@ -107,6 +107,9 @@ pub(crate) struct OrderState {
     /// slot. Showdown throws at the end of that turn's forced switches
     /// (`Invalid switch position`, or a `TypeError` once the fainted
     /// Pokémon is on the bench), so nothing after the turn is compared.
+    /// Since Showdown's `possibleSwitches` leaves out the targets of queued
+    /// switches (commit 437926906), an Eject Pack switch can't take that
+    /// Pokémon, and no stale switch arises at the pinned version.
     pub stale_active: [[Option<u8>; crate::state::MAX_ACTIVE]; 2],
     /// The slots of `stale_active` that are set: bit `2 * side + slot`.
     pub stale_slots: u8,
@@ -212,8 +215,8 @@ const NO_COPY: u128 = Volatiles::ENCORE
 /// Follow Me and Rage Powder.
 const REDIRECTION: u128 = Volatiles::FOLLOW_ME | Volatiles::RAGE_POWDER;
 
-/// `move.tracksTarget` in the format's dex: Snipe Shot, and Champions'
-/// Curse (Pursuit's and Sky Drop's are Past).
+/// `move.tracksTarget` in the format's dex: Snipe Shot (Pursuit's and Sky
+/// Drop's are Past).
 fn tracks_target(battle: &Battle, move_id: MoveId) -> bool {
     battle.format.dex.moves.get(move_id.0 as usize).is_some_and(data_tracks_target)
 }
@@ -248,7 +251,7 @@ pub(crate) fn set_original_target(battle: &Battle, action: &mut Action) {
 }
 
 /// Showdown's `getTarget` with its move-specific rules: a `tracksTarget`
-/// move (Snipe Shot, Champions' Curse) follows its original target while it is active; a
+/// move (Snipe Shot) follows its original target while it is active; a
 /// `smartTarget` move (Dragon Darts) takes whatever stands at the location,
 /// or a random target if that is empty or fainted.
 pub(crate) fn get_target(
@@ -313,20 +316,24 @@ pub(crate) fn redirect_and_smart_targets(
             battle.order.smart_target = false;
         } else if let Some((_, move_id)) = super::active_dex_move(battle) {
             // The abilities' `onAnyRedirectTarget` (Lightning Rod, Storm
-            // Drain; priority 0, after Follow Me's 1).
-            let mut ev = super::events::EventCtx::new(
-                pikapro_data::Event::RedirectTarget,
-                super::events::Target::Pokemon(user),
-                Some(user),
-                super::events::Effect::Move(move_id),
-                super::events::Relay::Pokemon(target),
-            )
-            .with_move(data);
-            // (A handler that returns the same target also stops the
-            // event; no handler that could, can meet Counter's.)
-            if let super::events::Relay::Pokemon(t) = super::events::priority_event(battle, &mut ev) {
-                redirected_by_ability = t != target;
-                target = t;
+            // Drain; priority 0, after Follow Me's 1). (With no handler
+            // the event returns the target it was given: nothing to do.)
+            let on_user = super::events::Target::Pokemon(user);
+            if !super::events::unhandled(battle, pikapro_data::Event::RedirectTarget, on_user, Some(user)) {
+                let mut ev = super::events::EventCtx::new(
+                    pikapro_data::Event::RedirectTarget,
+                    on_user,
+                    Some(user),
+                    super::events::Effect::Move(move_id),
+                    super::events::Relay::Pokemon(target),
+                )
+                .with_move(data);
+                // (A handler that returns the same target also stops the
+                // event; no handler that could, can meet Counter's.)
+                if let super::events::Relay::Pokemon(t) = super::events::priority_event(battle, &mut ev) {
+                    redirected_by_ability = t != target;
+                    target = t;
+                }
             }
             if !redirected_by_ability && let Some(t) = super::multiturn::redirect_target(battle, user) {
                 target = t;
@@ -798,7 +805,7 @@ pub(crate) fn on_hit(battle: &mut Battle, target: Position, user: Position, move
                 moves::fail_still(battle, target);
                 return Outcome::NotFail;
             }
-            // `self.onHit`.
+            // `self.onHit`: `source.skipPursuit = true`.
             if let Some(mon) = battle.state.at_mut(user) {
                 mon.skip_before_switch_out = true;
             }
@@ -1104,6 +1111,8 @@ pub(crate) fn transform_into(
     mon.record.times_attacked = into.record.times_attacked;
     mon.volatile_counters.times_attacked = into.volatile_counters.times_attacked;
     mon.moves = moves;
+    // New move slots: none used; its own keep theirs.
+    mon.record.base_used_moves = mon.record.used_moves;
     mon.record.used_moves = 0;
     mon.boosts = into.boosts;
     // `apparentType` is copied: a target that Terastallized since switching
@@ -1141,14 +1150,17 @@ pub(crate) fn transform_into(
 
 impl PokemonState {
     /// Ends Transform and Mimic (part of `clearVolatile`): the move slots,
-    /// stats and types go back to the Pokémon's own, and the used-move
-    /// marks reset.
+    /// stats and types go back to the Pokémon's own, with the used-move
+    /// marks they had (`moveSlots = baseMoveSlots.slice()`: the same
+    /// objects). (A Mimic slot keeps the mimicked move's mark, not Mimic's:
+    /// only Champions reads it off the field, where Mimic is Past.)
     pub(crate) fn restore_base_form(&mut self) {
         if self.volatiles.has(Volatiles::TRANSFORMED) {
             if let Some(base) = self.volatile_counters.transform {
                 self.moves = base.moves;
                 self.stats = base.stats;
                 self.base_types = base.base_types;
+                self.record.used_moves = self.record.base_used_moves;
                 // `setSpecies(baseSpecies)`; a Terastallized Pokémon shows
                 // its Tera type.
                 self.types = self.tera_types().unwrap_or(base.types);
@@ -1159,7 +1171,6 @@ impl PokemonState {
                 *slot = c.mimic_original;
             }
         }
-        self.record.used_moves = 0;
     }
 }
 

@@ -662,7 +662,12 @@ pub(crate) fn run_effectiveness(battle: &mut Battle, target: Position, move_id: 
     for defend in types.into_iter().flatten() {
         // `getEffectiveness`, then the move's own `onEffectiveness`.
         let own = typing::type_mod(move_id, data.ty, defend);
-        // `runEvent('Effectiveness', this, type, move, typeMod)`.
+        // `runEvent('Effectiveness', this, type, move, typeMod)`, which
+        // returns `typeMod` when nothing handles it.
+        if events::unhandled(battle, Event::Effectiveness, events::Target::Pokemon(target), None) {
+            total += own;
+            continue;
+        }
         let mut ev = EventCtx::new(
             Event::Effectiveness,
             Target::Pokemon(target),
@@ -677,6 +682,44 @@ pub(crate) fn run_effectiveness(battle: &mut Battle, target: Position, move_id: 
     // Tera Shell (Terapagos-Terastal) makes a full-HP hit resisted here,
     // after the types.
     super::abilities::switchin::tera_shell(battle, target, move_id, data, total)
+}
+
+/// The move's own `onBasePower` as the `BasePower` event's `onEffect`
+/// handler, for a move that has one: `runEvent` adds the source effect's
+/// callback to the handlers only `if (callback !== undefined)`, so a move
+/// without an `onBasePower` runs the event with the other handlers alone
+/// (and, when nothing handles it, not at all).
+#[inline]
+pub(crate) fn own_base_power_spec(move_id: MoveId) -> Option<super::events::Spec> {
+    has_own_base_power(move_id).then(|| super::events::Spec::relay(own_base_power))
+}
+
+/// Whether the move has an `onBasePower` of its own: the moves
+/// [`on_base_power`] (with `itemmoves::on_base_power`) and
+/// `multiturn::own_base_power` implement, which are the moves whose dex
+/// data lists the callback (`a_move_has_an_own_base_power_handler_when_its_data_says_so`).
+const fn has_own_base_power(move_id: MoveId) -> bool {
+    matches!(
+        move_id,
+        ids::BARB_BARRAGE
+            | ids::VENOSHOCK
+            | ids::BRINE
+            | ids::COLLISION_COURSE
+            | ids::ELECTRO_DRIFT
+            | ids::FACADE
+            | ids::FICKLE_BEAM
+            | ids::FUSION_BOLT
+            | ids::FUSION_FLARE
+            | ids::GRAV_APPLE
+            | ids::LASH_OUT
+            | ids::MISTY_EXPLOSION
+            | ids::PSYBLADE
+            | ids::RETALIATE
+            | ids::EXPANDING_FORCE
+            | ids::KNOCK_OFF
+            | ids::SOLAR_BEAM
+            | ids::SOLAR_BLADE
+    )
 }
 
 /// The move's own `onBasePower` as a relay handler (`runEvent`'s
@@ -865,14 +908,14 @@ pub(crate) fn after_use_move(
     } else {
         move_fail(battle, user, move_id, data);
         if target != Some(user) && data.category != MoveCategory::Status {
-            super::moves::emergency_exit_at_any_hp(battle, user, Some(user), hp_before);
+            super::moves::emergency_exit(battle, user, Some(user), hp_before);
         }
         return false;
     }
     // `AfterMoveSecondarySelf`, unless Sheer Force dropped the secondaries
     // or the move hits later (Future Sight): the move's own, then
     // `runEvent` (Life Orb, Shell Bell).
-    if super::moves::sheer_force(battle, user) || data.flags.contains(MoveFlags::FUTURE_MOVE) {
+    if super::moves::suppressing_secondaries(battle) || data.flags.contains(MoveFlags::FUTURE_MOVE) {
         return true;
     }
     let hp_before = battle.state.at(user).map_or(0, |m| m.hp);
@@ -908,7 +951,7 @@ pub(crate) fn after_use_move(
         events::move_event(battle, Event::AfterMoveSecondarySelf, user, target, move_id, data, Relay::True);
     }
     if target != Some(user) && data.category != MoveCategory::Status {
-        super::moves::emergency_exit_at_any_hp(battle, user, Some(user), hp_before);
+        super::moves::emergency_exit(battle, user, Some(user), hp_before);
     }
     true
 }
@@ -1085,6 +1128,22 @@ mod tests {
         let format = Format::gen9_singles();
         let teams = [sample_team(&format), sample_team(&format)];
         Battle::new(format, teams, BattleOptions::new(Seed::fast(1))).unwrap()
+    }
+
+    /// The `BasePower` event gets the move's own handler exactly for the
+    /// moves Showdown gives an `onBasePower` (the dex lists the callback
+    /// among what the engine implements by hand), in both dexes.
+    #[test]
+    fn a_move_has_an_own_base_power_handler_when_its_data_says_so() {
+        for dex in [&pikapro_data::gen9::DEX, &pikapro_data::champions::DEX] {
+            let mut own = 0;
+            for (i, data) in dex.moves.iter().enumerate() {
+                let listed = data.unmodelled.contains(&"onBasePower");
+                assert_eq!(own_base_power_spec(MoveId(i as u16)).is_some(), listed, "{}", data.name);
+                own += usize::from(listed);
+            }
+            assert!(own > 0, "no move has its own BasePower handler");
+        }
     }
 
     #[test]

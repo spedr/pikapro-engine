@@ -410,6 +410,19 @@ pub(crate) fn run(battle: &mut Battle, ev: &mut EventCtx<'_>, holder: Position, 
     }
 }
 
+/// Whether `ability`'s `onUpdate` on its holder at `pos` would do nothing
+/// now, whatever runs it (`false` when not known). It only reads the
+/// battle: `eachEvent('Update')` skips a Pokémon whose only `Update`
+/// handler is such an ability's ([`events::each_event_run`]), as it does
+/// for an item ([`items::update_idle`]).
+pub(crate) fn update_idle(battle: &Battle, pos: Position, ability: AbilityId) -> bool {
+    let Some(mon) = battle.state.side(pos.side).team.get(pos.slot as usize) else { return false };
+    match owner(ability) {
+        Owner::Reactive => reactive::guard::update_idle(mon, ability),
+        _ => false,
+    }
+}
+
 /// Showdown's `pokemon.getBestStat(unboosted, true)`: the highest stat
 /// other than HP, without modifiers (Wonder Room swaps the defences) and
 /// with its stage unless `unboosted`. The first one wins ties.

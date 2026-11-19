@@ -73,6 +73,11 @@ pub(crate) fn add_slot_condition(battle: &mut Battle, target: Position, id: &'st
     let Some(user) = battle.state.at(source).copied() else { return false };
     let slots = &mut battle.state.side_mut(target.side).conditions.slots[target.slot as usize];
     if slots.has(condition) {
+        // Wish's `onRestart`: fails, with a hint if the waiting Wish will
+        // never come (made on overflowed turn 255).
+        if condition == SlotCondition::Wish && slots.wish.starting_turn == 255 {
+            battle.hint(crate::event::Hint::WishStuck);
+        }
         return false;
     }
     if condition == SlotCondition::Wish {

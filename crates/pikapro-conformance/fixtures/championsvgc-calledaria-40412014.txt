@@ -200,7 +200,7 @@ expect |rng|2|0
 expect |player|p2|p2||
 expect |gen|9
 expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
-expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Species Clause: Limit one of each Pokemon
 expect |rule|Item Clause: Limit 1 of each item
 expect |clearpoke
 expect |poke|p1|Steelix, L50, M|
@@ -798,6 +798,7 @@ expect |move|p2b: Espathra|Will-O-Wisp|p1b: Klefki|[miss]
 expect |rng|100|92
 expect |-miss|p2b: Espathra|p1b: Klefki
 expect |
+expect |rng|2|1
 expect |split|p1
 expect |-damage|p1b: Klefki|84/137 brn|[from] brn
 expect |-damage|p1b: Klefki|61/100 brn|[from] brn
@@ -811,18 +812,19 @@ expect |t:|
 expect |move|p2b: Espathra|Protect|p2b: Espathra
 expect |-singleturn|p2b: Espathra|Protect
 expect |move|p2a: Kleavor|Will-O-Wisp|p1b: Klefki|[miss]
-expect |rng|100|90
+expect |rng|100|98
 expect |-miss|p2a: Kleavor|p1b: Klefki
 expect |move|p1b: Klefki|Energy Ball|p2a: Kleavor
-expect |rng|100|98
-expect |rng|24|9
-expect |rng|16|12
+expect |rng|100|40
+expect |rng|24|18
+expect |rng|16|4
 expect |split|p2
 expect |-damage|p2a: Kleavor|0 fnt
 expect |-damage|p2a: Kleavor|0 fnt
-expect |rng|100|25
+expect |rng|100|75
 expect |faint|p2a: Kleavor
 expect |
+expect |rng|2|0
 expect |rng|2|1
 expect |split|p1
 expect |-damage|p1b: Klefki|76/137 brn|[from] brn
@@ -839,7 +841,7 @@ expect |switch|p2a: Delphox|Delphox, L50, M|8/100
 expect |rng|2|0
 expect |turn|20
 expect |rng|2|1
-expect |rng|2|0
+expect |rng|2|1
 expect |rng|1|0
 expect |rng|1|0
 expect |
@@ -847,39 +849,40 @@ expect |t:|
 expect |rng|2|1
 expect |rng|1|0
 expect |move|p2a: Delphox|Will-O-Wisp|p1b: Klefki
-expect |rng|100|56
+expect |rng|100|41
 expect |-fail|p1b: Klefki|brn
-expect |rng|2|0
-expect |rng|1|0
 expect |rng|2|1
-expect |move|p1b: Klefki|Sparkling Aria|p2b: Espathra|[spread] p2a,p2b
-expect |rng|100|64
-expect |rng|100|18
-expect |rng|24|16
-expect |rng|16|9
-expect |-supereffective|p2a: Delphox|1
+expect |rng|1|0
+expect |rng|2|0
+expect |move|p1b: Klefki|Sparkling Aria|p2a: Delphox|[spread] p2a,p2b
+expect |rng|100|69
+expect |rng|100|58
 expect |rng|24|3
 expect |rng|16|9
+expect |-supereffective|p2a: Delphox|1
+expect |rng|24|11
+expect |rng|16|2
 expect |split|p2
 expect |-damage|p2a: Delphox|0 fnt
 expect |-damage|p2a: Delphox|0 fnt
 expect |split|p2
-expect |-damage|p2b: Espathra|12/201 brn
-expect |-damage|p2b: Espathra|5/100 brn
-expect |rng|100|47
-expect |rng|100|17
+expect |-damage|p2b: Espathra|10/201 brn
+expect |-damage|p2b: Espathra|4/100 brn
+expect |rng|100|49
+expect |rng|100|89
 expect |faint|p2a: Delphox
 expect |-curestatus|p2b: Espathra|brn|[msg]
 expect |rng|1|0
 expect |rng|1|0
 expect |move|p2b: Espathra|Sparkling Aria|p1b: Klefki
-expect |rng|100|38
-expect |rng|24|8
-expect |rng|16|8
+expect |rng|100|52
+expect |rng|24|0
+expect |rng|16|5
+expect |-crit|p1b: Klefki
 expect |split|p1
-expect |-damage|p1b: Klefki|38/137 brn
-expect |-damage|p1b: Klefki|27/100 brn
-expect |rng|100|1
+expect |-damage|p1b: Klefki|17/137 brn
+expect |-damage|p1b: Klefki|12/100 brn
+expect |rng|100|18
 expect |-curestatus|p1b: Klefki|brn|[msg]
 expect |
 expect |upkeep
@@ -901,13 +904,13 @@ expect |
 expect |t:|
 expect |rng|1|0
 expect |move|p1b: Klefki|Energy Ball|p2b: Espathra
-expect |rng|100|63
-expect |rng|24|12
-expect |rng|16|12
+expect |rng|100|75
+expect |rng|24|6
+expect |rng|16|13
 expect |split|p2
 expect |-damage|p2b: Espathra|0 fnt
 expect |-damage|p2b: Espathra|0 fnt
-expect |rng|100|28
+expect |rng|100|39
 expect |faint|p2b: Espathra
 expect |
 expect |win|p1

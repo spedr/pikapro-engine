@@ -421,11 +421,15 @@ impl<'a> Chooser<'a> {
         // `clearChoice`.
         if let RequestState::Switch { slots } = state {
             let can_switch_out = slots.iter().take(active).filter(|&&f| f).count();
-            // (Past the active slots, except after a stale switch: see
-            // `stuck`.)
-            let can_switch_in = s.bench().count();
+            // `battle.canSwitch(this)`: past the active slots (except after
+            // a stale switch: see `stuck`), not brought in by a queued
+            // switch.
+            let queued = battle.queued_switch_ins(side);
+            let can_switch_in = s.bench().filter(|&i| queued & 1 << i == 0).count();
             c.forced_switches_left = can_switch_out.min(can_switch_in);
             c.forced_passes_left = can_switch_out - c.forced_switches_left;
+            // `switchIns` starts with the queued switches' targets.
+            c.switch_ins = queued;
         }
         c
     }
@@ -726,27 +730,23 @@ impl<'a> Chooser<'a> {
         } else if target_loc != 0 {
             return self.fail(format!("Can't move: You can't choose a target for {move_name}"));
         }
+        // `originalChoice`: the choice as sent (the requested move's ID, the
+        // target, the event), which `getChoice` writes to the input log for
+        // a locked move or Struggle.
+        let moveid = if testfight { "testfight".to_string() } else { self.request_move_id(move_id) };
+        let mut original = format!("move {moveid}");
+        if target_loc != 0 && self.active > 1 {
+            let _ = write!(original, " {}{target_loc}", if target_loc > 0 { "+" } else { "" });
+        }
+        if !event.is_empty() {
+            let _ = write!(original, " {event}");
+        }
         // A locked Pokémon uses its locked move; one without a usable move
         // struggles. Targets and gimmicks are ignored.
         if locked || struggle || pick.is_some_and(|m| m.slot.is_none()) {
-            // `if (pokemon.maybeLocked) this.choice.cantUndo = true`,
-            // and the action's `moveid` and `targetLoc` for `getChoice`.
+            // `if (pokemon.maybeLocked) this.choice.cantUndo = true`.
             self.cant_undo |= req.maybe_locked;
-            let shown = match req.moves {
-                MoveChoices::Recharge => self.shown_move("recharge", mon.last_move_target_loc.into(), None),
-                MoveChoices::Locked(id) => {
-                    let c = &mon.volatile_counters;
-                    let charged = mon.volatiles.has(Volatiles::CHARGING) && c.charge_move == id;
-                    let loc = if charged && c.charge_target_loc != 0 {
-                        c.charge_target_loc
-                    } else {
-                        mon.last_move_target_loc
-                    };
-                    self.shown_move(&to_id(self.move_name(Some(id))), loc.into(), None)
-                }
-                _ => "move struggle".to_string(),
-            };
-            return self.push_move(0, None, None, shown);
+            return self.push_move(0, None, None, original);
         }
         let target = if self.active >= 2 {
             match target_loc {
@@ -763,7 +763,7 @@ impl<'a> Chooser<'a> {
             // from the move chosen as shown.
             let slot = pick.and_then(|m| m.slot).unwrap_or(0);
             self.cant_undo |= req.maybe_locked;
-            return self.push_move(slot, target, None, "move struggle".into());
+            return self.push_move(slot, target, None, original);
         }
         if testfight {
             // `maybeLocked` (a foe's Imprison may disable a move): a new
@@ -830,12 +830,17 @@ impl<'a> Chooser<'a> {
         // `if (pokemon.maybeDisabled && gameType === 'singles')
         // this.choice.cantUndo = true`.
         self.cant_undo |= req.maybe_disabled && self.active == 1;
-        let moveid = match move_id {
-            Some(id) => to_id(self.move_name(Some(id))),
-            None => "recharge".into(),
-        };
+        let moveid = self.request_move_id(move_id);
         let shown = self.shown_move(&moveid, target_loc, gimmick);
         self.push_move(slot, target, gimmick, shown)
+    }
+
+    /// The `id` the request gives a move (`recharge` for `None`).
+    fn request_move_id(&self, move_id: Option<MoveId>) -> String {
+        match move_id {
+            Some(id) => to_id(self.move_name(Some(id))),
+            None => "recharge".into(),
+        }
     }
 
     fn push_move(&mut self, index: u8, target: Option<Target>, gimmick: Option<Gimmick>, shown: String) -> bool {
@@ -973,7 +978,7 @@ impl<'a> Chooser<'a> {
         self.fail("Can't shift: You can only shift to the center in triples")
     }
 
-    /// `chooseTeam` (Showdown master a5df827): `TEAMSPEC` in brackets
+    /// `chooseTeam` (Showdown master 5b88c47): `TEAMSPEC` in brackets
     /// (`team [3, 1]`) is always comma-separated and never trimmed to the
     /// team size; without them, commas are required from 10 Pokémon on.
     fn choose_team(&mut self, data: &str) -> bool {
@@ -1158,7 +1163,9 @@ fn max_move_name(data: Option<&pikapro_data::MoveData>) -> &'static str {
 /// A healthy Pokémon at an active slot's team position that is not on the
 /// field: only after a stale switch (an Eject Pack switch brought in the
 /// Pokémon another slot's switch was for, and it fainted), on which
-/// Showdown throws; pikapro lets it switch in again.
+/// Showdown threw before its `possibleSwitches` left out queued switch
+/// targets (none arises at the pinned version); pikapro lets it switch in
+/// again.
 fn stuck(side: &SideState, slot: usize) -> bool {
     side.active.get(slot).is_some_and(Option::is_none) && !side.team[slot].is_fainted()
 }
@@ -1411,7 +1418,7 @@ mod tests {
         }
     }
 
-    /// A second `team` piece: Showdown (a5df827) queues both, eight team
+    /// A second `team` piece: Showdown (5b88c47) queues both, eight team
     /// actions for a team of four, and then plays a team with duplicates
     /// or throws (see `choose_team`). pikapro rejects it.
     #[test]

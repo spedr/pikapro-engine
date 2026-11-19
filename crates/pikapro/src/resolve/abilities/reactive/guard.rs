@@ -152,6 +152,38 @@ pub(super) fn immunity(ev: &mut EventCtx<'_>, ability: AbilityId) -> Option<Rela
     immune.then_some(Relay::False)
 }
 
+/// Whether `ability`'s `onUpdate` cures `status` (the abilities whose
+/// `onUpdate` only cures a status; false for any other).
+fn cures_status(ability: AbilityId, status: Status) -> bool {
+    match ability {
+        a::IMMUNITY | a::PASTEL_VEIL => matches!(status, Status::Poison | Status::Toxic { .. }),
+        a::INSOMNIA | a::VITAL_SPIRIT => matches!(status, Status::Sleep { .. }),
+        a::LIMBER => status == Status::Paralysis,
+        a::MAGMA_ARMOR => matches!(status, Status::Freeze { .. }),
+        a::WATER_VEIL | a::THERMAL_EXCHANGE => status == Status::Burn,
+        _ => false,
+    }
+}
+
+/// [`abilities::update_idle`] for the abilities whose `onUpdate` is
+/// [`update`]: a status-curing ability without its status, Oblivious
+/// without Attract or Taunt, Own Tempo without confusion.
+pub(crate) fn update_idle(mon: &crate::state::PokemonState, ability: AbilityId) -> bool {
+    match ability {
+        a::IMMUNITY
+        | a::PASTEL_VEIL
+        | a::INSOMNIA
+        | a::VITAL_SPIRIT
+        | a::LIMBER
+        | a::MAGMA_ARMOR
+        | a::WATER_VEIL
+        | a::THERMAL_EXCHANGE => !cures_status(ability, mon.status),
+        a::OBLIVIOUS => !mon.volatiles.has(Volatiles::ATTRACT) && !mon.volatiles.has(Volatiles::TAUNT),
+        a::OWN_TEMPO => !mon.volatiles.has(Volatiles::CONFUSION),
+        _ => false,
+    }
+}
+
 /// `onUpdate(pokemon)`: the cures (`-activate|<holder>|ability: X`, then
 /// the status or volatile ends).
 pub(super) fn update(battle: &mut Battle, holder: Position, ability: AbilityId) -> Option<Relay> {
@@ -159,11 +191,14 @@ pub(super) fn update(battle: &mut Battle, holder: Position, ability: AbilityId) 
     let status = m.status;
     let volatiles = m.volatiles;
     let cures = match ability {
-        a::IMMUNITY | a::PASTEL_VEIL => matches!(status, Status::Poison | Status::Toxic { .. }),
-        a::INSOMNIA | a::VITAL_SPIRIT => matches!(status, Status::Sleep { .. }),
-        a::LIMBER => status == Status::Paralysis,
-        a::MAGMA_ARMOR => matches!(status, Status::Freeze { .. }),
-        a::WATER_VEIL | a::THERMAL_EXCHANGE => status == Status::Burn,
+        a::IMMUNITY
+        | a::PASTEL_VEIL
+        | a::INSOMNIA
+        | a::VITAL_SPIRIT
+        | a::LIMBER
+        | a::MAGMA_ARMOR
+        | a::WATER_VEIL
+        | a::THERMAL_EXCHANGE => cures_status(ability, status),
         a::OBLIVIOUS => {
             if volatiles.has(Volatiles::ATTRACT) {
                 abilities::activate(battle, holder, ability);

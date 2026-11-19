@@ -26,6 +26,18 @@ pub fn teams(format: &Format) -> [Team; 2] {
     [sample_team(format), sample_team(format)]
 }
 
+/// `pairs` pairs of generated competitive teams (`pikapro-teams`'
+/// `Mode::Sets`): varied species, abilities and items, so few speed ties
+/// and more handlers than the sample team's mirror.
+///
+/// # Panics
+/// If the format has no generator.
+pub fn set_teams(format: &Format, pairs: u64) -> Vec<[Team; 2]> {
+    let generator = pikapro_teams::TeamGenerator::new(format, pikapro_teams::Mode::Sets).expect("a team generator");
+    let team = |seed| generator.team(seed).expect("a generated team");
+    (0..pairs).map(|i| [team(9_000_000 + 2 * i), team(9_000_001 + 2 * i)]).collect()
+}
+
 /// A new battle from `seed`.
 pub fn new_battle(format: &Format, teams: &[Team; 2], seed: u64, events: bool) -> Battle {
     let mut options = BattleOptions::new(Seed::fast(seed));
@@ -270,4 +282,60 @@ pub fn env_config(format: &Format, n: usize, seed: u64, shards_per_thread: usize
 /// player.
 pub fn random_actions(env: &pikapro_rl::env::VecEnv) -> Vec<i64> {
     vec![pikapro_rl::vec::RANDOM_ACTION; env.shape().n * 2 * env.actions_per_player()]
+}
+
+/// Refreshes both sides' overlays at each battle in turn, in place over
+/// the last one's ([`OwnOverlay::refresh`](pikapro_view::OwnOverlay::refresh),
+/// as the vector environment does after every resolution). Returns a
+/// checksum.
+pub fn refresh_overlays(battles: &[Battle], own: &mut [pikapro_view::OwnOverlay; 2]) -> u64 {
+    let mut sum = 0u64;
+    for b in battles {
+        for side in SideId::BOTH {
+            let o = &mut own[side.index()];
+            o.refresh(b, side);
+            sum += o.mons.iter().map(|m| u64::from(m.hp)).sum::<u64>() + u64::from(o.answered);
+        }
+    }
+    sum
+}
+
+/// An action from its mask for every player the environment asks (`-1`
+/// for the others), as a policy that samples from factored masks sends
+/// them: at team preview one of the orders; otherwise one of the first
+/// slot's actions, then one of the second's that pair with it
+/// ([`ActionSpace::pair_mask`](pikapro_rl::space::ActionSpace::pair_mask)).
+pub fn mask_actions(env: &pikapro_rl::env::VecEnv, b: &pikapro_rl::vec::StepBuffers, rng: &mut BattleRng) -> Vec<i64> {
+    let space = env.space();
+    let shape = env.shape();
+    let per = env.actions_per_player();
+    let slots = space.active * space.slot_size;
+    let set = |m: &[bool]| m.iter().enumerate().filter(|(_, b)| **b).map(|(i, _)| i).collect::<Vec<_>>();
+    let pick = |rng: &mut BattleRng, xs: &[usize]| xs[rng.random(xs.len() as u32) as usize];
+    let mut actions = vec![-1i64; shape.n * 2 * per];
+    for k in (0..shape.n * 2).filter(|&k| b.needs_action[k]) {
+        let mask = &b.masks[k * shape.mask..][..shape.mask];
+        let acts = &mut actions[k * per..][..per];
+        let preview = set(&mask[slots..]);
+        if !preview.is_empty() {
+            acts[0] = pick(rng, &preview) as i64;
+            continue;
+        }
+        let first = set(&mask[..space.slot_size]);
+        loop {
+            let a0 = pick(rng, &first);
+            acts[0] = a0 as i64;
+            if space.active == 1 {
+                break;
+            }
+            let mut pair = vec![false; space.slot_size];
+            space.pair_mask(&mask[..slots], b.min_switches[k], a0, &mut pair);
+            let second = set(&pair);
+            if !second.is_empty() {
+                acts[1] = pick(rng, &second) as i64;
+                break;
+            }
+        }
+    }
+    actions
 }

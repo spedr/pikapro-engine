@@ -2372,14 +2372,13 @@ mod tests {
         );
     }
 
-    /// Battles where an Eject Pack switch brings in the Pokémon the other
-    /// slot's queued switch is for and it faints on entry, so the queued
-    /// switch brings it in fainted (`OrderState::stale_active`): Showdown
-    /// throws at the end of that turn, pikapro plays on to the end. In the
-    /// mirror with seed 40,120,201 a spread move is aimed at the slot the
-    /// stale switch left.
+    /// Battles where an Eject Pack switch would bring in the Pokémon the
+    /// other slot's queued switch is for (Showdown threw on them before its
+    /// `possibleSwitches` left out queued switch targets): the queued
+    /// switch brings that Pokémon in, never one already fainted, and they
+    /// play to the end.
     #[test]
-    fn stale_switches_to_a_fainted_pokemon_play_to_the_end() {
+    fn eject_pack_switches_leave_queued_targets_alone() {
         let cases = [
             ("gen9doubles", false, 40_108_351),
             ("gen9doubles", false, 40_139_474),
@@ -2395,8 +2394,8 @@ mod tests {
             let replayed = replay(&s, true);
             let log = render_raw(&s, &replayed);
             assert!(
-                log.iter().any(|l| l.starts_with("|switch|") && l.ends_with("|0 fnt")),
-                "{} {seed}: no stale switch",
+                !log.iter().any(|l| l.starts_with("|switch|") && l.ends_with("|0 fnt")),
+                "{} {seed}: a stale switch",
                 format.id
             );
             assert!(log.iter().any(|l| l.starts_with("|win|") || l == "|tie"), "{} {seed}: no end", format.id);

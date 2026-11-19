@@ -61,6 +61,10 @@ use crate::team::Gender;
 /// `source`, which follows the Pokémon, not its slot).
 type MonKey = (SideId, u8);
 
+/// The `trapped_by` of a `trapped` volatile linked to no `trapper` (No
+/// Retreat's): no Pokémon has this id.
+const NOT_LINKED: MonKey = (SideId::P1, u8::MAX);
+
 fn key(battle: &Battle, pos: Position) -> MonKey {
     (pos.side, battle.state.side(pos.side).team[pos.slot as usize].id)
 }
@@ -236,6 +240,12 @@ pub(crate) fn start(
             (c.partially_trapped, c.partially_trapped_move, c.partially_trapped_by) = (duration, m, by);
             c.bound_divisor = divisor;
         }
+        // No Retreat's `addVolatile('trapped')` on its user (its own
+        // source): no linked `trapper`, nothing frees it but leaving.
+        Volatiles::TRAPPED if source == target => {
+            emit_start(battle, target, VolatileEffect::Trapped, None);
+            mon_mut(battle, target).volatile_counters.trapped_by = NOT_LINKED;
+        }
         Volatiles::TRAPPED => {
             emit_start(battle, target, VolatileEffect::Trapped, None);
             let by = key(battle, source);
@@ -266,7 +276,20 @@ pub(crate) fn start(
             }
             mon_mut(battle, target).volatile_counters.trapped_by = by;
         }
-        Volatiles::NO_RETREAT => emit_start(battle, target, VolatileEffect::NoRetreat, None),
+        Volatiles::NO_RETREAT => {
+            // `if (!pokemon.addVolatile('trapped')) return false` (the
+            // Champions mod's returns nothing: No Retreat stays, silently),
+            // then `-start`. `noretreat` is there while it runs.
+            mon_mut(battle, target).volatiles.add(Volatiles::NO_RETREAT);
+            if volatiles::add_volatile(battle, target, "trapped", Some(target), false) != Some(true) {
+                if battle.format.mechanics == Mechanics::Champions {
+                    return Some(true);
+                }
+                mon_mut(battle, target).volatiles.clear(Volatiles::NO_RETREAT);
+                return Some(false);
+            }
+            emit_start(battle, target, VolatileEffect::NoRetreat, None);
+        }
         Volatiles::LEECH_SEED => {
             emit_start(battle, target, VolatileEffect::LeechSeed, None);
             mon_mut(battle, target).volatile_counters.leech_seed_slot = source;
@@ -519,10 +542,12 @@ pub(crate) fn modify_move(
         data.target = MoveTarget::User;
         return Some(data);
     }
-    // Champions' `onModifyMove` leaves a Curse aimed at the user
-    // itself alone (`source !== target`): `onHit` picks the foe.
+    // `!target || source.isAlly(target)`: no target (an ally slot that
+    // Ally Switch made the user's own) or an ally. Champions'
+    // `onModifyMove` leaves a Curse aimed at the user itself alone
+    // (`source !== target`): `onHit` picks the foe.
     let champions = battle.format.mechanics == Mechanics::Champions;
-    if target.is_some_and(|t| t.side == user.side && !(champions && t == user)) {
+    if target.is_none_or(|t| t.side == user.side && !(champions && t == user)) {
         data.target = MoveTarget::RandomNormal;
         return Some(data);
     }
@@ -760,6 +785,10 @@ pub(crate) fn on_hit(battle: &mut Battle, target: Position, user: Position, move
         ids::SHED_TAIL => {
             let max_hp = mon(battle, target).max_hp() as u32;
             direct_damage(battle, target, max_hp.div_ceil(2));
+            // `self.onHit`: `source.skipPursuit = true`.
+            if let Some(m) = battle.state.at_mut(user) {
+                m.skip_before_switch_out = true;
+            }
         }
         ids::BLOCK | ids::MEAN_LOOK => {
             return volatiles::add_volatile(battle, target, "trapped", Some(user), false) == Some(true);
@@ -988,12 +1017,18 @@ pub(crate) fn on_move_ko(battle: &mut Battle, pos: Position) {
 }
 
 /// The `Faint` event of a Pokémon whose faint is being reported: Destiny
-/// Bond takes the foe that knocked it out down with it.
+/// Bond takes the foe that knocked it out down with it, unless that foe
+/// has no HP left itself (`if (!source?.hp ...) return`: recoil, Life Orb
+/// or Rocky Helmet knocked it out too).
 fn on_faint(battle: &mut Battle, pos: Position) {
     let m = &battle.state.side(pos.side).team[pos.slot as usize];
     let Some(by) = m.volatile_counters.destiny_bond_ko_by.filter(|_| m.volatiles.has(Volatiles::DESTINY_BOND)) else {
         return;
     };
+    let source = battle.state.side(by.0);
+    if source.position_of(by.1).is_none_or(|i| source.team[i].hp == 0) {
+        return;
+    }
     let actor = actor(battle, pos);
     battle.emit(BattleEvent::EffectActivate { actor, effect: VolatileEffect::DestinyBond, of: None });
     if let Some(source) = active_at(battle, by) {
@@ -1064,8 +1099,9 @@ pub(crate) fn switched_in(battle: &mut Battle, pos: Position, substitute: Option
 // Requests.
 
 /// Whether the Pokémon at `pos` can't switch out (the end of turn's
-/// `TrapPokemon` event: `trapped`, `partiallytrapped` while its trapper is
-/// active, No Retreat, Fairy Lock). Ghost types are never trapped
+/// `TrapPokemon` event: `trapped` (No Retreat's too), `partiallytrapped`
+/// while its trapper is active, Ingrain, Octolock, Fairy Lock). Ghost
+/// types are never trapped
 /// (`tryTrap`'s `runStatusImmunity('trapped')`).
 pub(crate) fn is_trapped(battle: &Battle, pos: Position) -> bool {
     trapped(battle, pos, true)
@@ -1101,10 +1137,10 @@ fn trapped(battle: &Battle, pos: Position, hidden: bool) -> bool {
     }
     // The foe abilities' `tryTrap` (Shadow Tag, Arena Trap, Magnet Pull),
     // counted only when `hidden`; then the volatiles' `onTrapPokemon`
-    // (Mean Look's `trapped`, No Retreat, Ingrain), a
+    // (Mean Look's and No Retreat's `trapped`, Ingrain), a
     // partial trap or Octolock whose source is still active, Fairy Lock.
     hidden && m.trapped
-        || v.has(Volatiles::TRAPPED | Volatiles::NO_RETREAT | Volatiles::INGRAIN)
+        || v.has(Volatiles::TRAPPED | Volatiles::INGRAIN)
         || v.has(Volatiles::PARTIALLY_TRAPPED) && active_at(battle, m.volatile_counters.partially_trapped_by).is_some()
         || v.has(Volatiles::OCTOLOCK) && active_at(battle, m.volatile_counters.octolock_by).is_some()
         || battle.state.field.fairy_lock_turns > 0
@@ -1637,12 +1673,9 @@ pub(crate) fn trap_pokemon_event(battle: &mut Battle, pos: Position) {
     m.trap_released = false;
     let m = battle.state.at(pos).expect("checked above");
     let mut handlers = super::handlers::MonHandlers::new();
-    // Ingrain and Octolock have `onTrapPokemon` too.
-    const TRAPS: u128 = Volatiles::TRAPPED
-        | Volatiles::PARTIALLY_TRAPPED
-        | Volatiles::NO_RETREAT
-        | Volatiles::INGRAIN
-        | Volatiles::OCTOLOCK;
+    // Ingrain and Octolock have `onTrapPokemon` too (No Retreat no longer:
+    // the `trapped` volatile it adds traps).
+    const TRAPS: u128 = Volatiles::TRAPPED | Volatiles::PARTIALLY_TRAPPED | Volatiles::INGRAIN | Volatiles::OCTOLOCK;
     // In the order they were added (none: nothing to walk).
     if m.volatiles.has(TRAPS) {
         for v in m.volatiles.in_order() {

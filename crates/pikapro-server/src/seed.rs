@@ -149,4 +149,11 @@ mod tests {
         let arr = Json::parse("[1,2,3,4]").unwrap();
         assert_eq!(ShowdownSeed::from_option(Some(&arr)).unwrap().text, "1,2,3,4");
     }
+
+    /// `[]` is truthy but joins to "", which `setSeed` rejects.
+    #[test]
+    fn an_empty_seed_array_is_an_error() {
+        let err = ShowdownSeed::from_option(Some(&Json::Array(vec![]))).unwrap_err();
+        assert_eq!(err, "Unrecognized RNG seed ");
+    }
 }

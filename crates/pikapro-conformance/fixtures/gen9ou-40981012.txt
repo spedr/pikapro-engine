@@ -231,7 +231,7 @@ expect |gen|9
 expect |tier|[Gen 9] OU
 expect |rule|HP Percentage Mod: HP is shown in percentages
 expect |rule|Endless Battle Clause: Forcing endless battles is banned
-expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Species Clause: Limit one of each Pokemon
 expect |rule|OHKO Clause: OHKO moves are banned
 expect |rule|Evasion Items Clause: Evasion items are banned
 expect |rule|Evasion Moves Clause: Evasion moves are banned
@@ -933,6 +933,7 @@ expect |-damage|p1a: Yanmega|90/100
 expect |rng|2|0
 expect |rng|2|1
 expect |rng|2|0
+expect |rng|2|1
 expect |
 expect |t:|
 expect |split|p2
@@ -947,40 +948,40 @@ expect |turn|36
 expect |
 expect |t:|
 expect |move|p1a: Yanmega|Giga Drain|p2a: Hypno
-expect |rng|100|78
-expect |rng|24|20
-expect |rng|16|14
+expect |rng|100|83
+expect |rng|24|21
+expect |rng|16|12
 expect |split|p2
-expect |-damage|p2a: Hypno|79/374 par
-expect |-damage|p2a: Hypno|22/100 par
+expect |-damage|p2a: Hypno|77/374 par
+expect |-damage|p2a: Hypno|21/100 par
 expect |split|p1
 expect |-heal|p1a: Yanmega|314/314|[from] drain|[of] p2a: Hypno
 expect |-heal|p1a: Yanmega|100/100|[from] drain|[of] p2a: Hypno
-expect |rng|4|3
+expect |rng|4|1
 expect |move|p2a: Hypno|Knock Off|p1a: Yanmega
-expect |rng|100|43
-expect |rng|24|18
-expect |rng|16|8
+expect |rng|100|77
+expect |rng|24|12
+expect |rng|16|9
 expect |split|p1
-expect |-damage|p1a: Yanmega|247/314
+expect |-damage|p1a: Yanmega|248/314
 expect |-damage|p1a: Yanmega|79/100
 expect |-enditem|p1a: Yanmega|Choice Specs|[from] move: Knock Off|[of] p2a: Hypno
 expect |
 expect |split|p2
-expect |-heal|p2a: Hypno|102/374 par|[from] item: Leftovers
-expect |-heal|p2a: Hypno|28/100 par|[from] item: Leftovers
+expect |-heal|p2a: Hypno|100/374 par|[from] item: Leftovers
+expect |-heal|p2a: Hypno|27/100 par|[from] item: Leftovers
 expect |upkeep
 expect |turn|37
 expect |
 expect |t:|
 expect |move|p1a: Yanmega|Air Slash|p2a: Hypno
-expect |rng|100|58
-expect |rng|24|1
-expect |rng|16|4
+expect |rng|100|7
+expect |rng|24|7
+expect |rng|16|10
 expect |split|p2
 expect |-damage|p2a: Hypno|0 fnt
 expect |-damage|p2a: Hypno|0 fnt
-expect |rng|100|62
+expect |rng|100|50
 expect |faint|p2a: Hypno
 expect |
 expect |upkeep
@@ -989,39 +990,39 @@ expect |t:|
 expect |split|p2
 expect |switch|p2a: X|Pachirisu, M|136/262
 expect |switch|p2a: X|Pachirisu, M|52/100
-expect |rng|2|1
 expect |rng|2|0
 expect |rng|2|1
+expect |rng|2|0
 expect |turn|38
 expect |
 expect |t:|
-expect |rng|2|0
 expect |rng|2|1
 expect |rng|2|0
+expect |rng|2|1
 expect |split|p1
 expect |switch|p1a: Chomp|Ampharos, F|2/322
 expect |switch|p1a: Chomp|Ampharos, F|1/100
 expect |move|p2a: X|Super Fang|p1a: Chomp
-expect |rng|100|78
+expect |rng|100|27
 expect |split|p1
 expect |-damage|p1a: Chomp|1/322
 expect |-damage|p1a: Chomp|1/100
-expect |rng|10|2
+expect |rng|10|0
 expect |
 expect |upkeep
 expect |turn|39
 expect |
 expect |t:|
 expect |move|p2a: X|Nuzzle|p1a: Chomp
-expect |rng|100|2
-expect |rng|24|1
-expect |rng|16|10
+expect |rng|100|4
+expect |rng|24|15
+expect |rng|16|1
 expect |-resisted|p1a: Chomp
 expect |split|p1
 expect |-damage|p1a: Chomp|0 fnt
 expect |-damage|p1a: Chomp|0 fnt
-expect |rng|100|7
-expect |rng|10|2
+expect |rng|100|25
+expect |rng|10|6
 expect |faint|p1a: Chomp
 expect |
 expect |upkeep
@@ -1035,12 +1036,12 @@ expect |
 expect |t:|
 expect |move|p1a: Jolteon|Alluring Voice|p2a: X
 expect |rng|100|69
-expect |rng|24|16
-expect |rng|16|7
+expect |rng|24|10
+expect |rng|16|15
 expect |split|p2
-expect |-damage|p2a: X|14/262
-expect |-damage|p2a: X|6/100
-expect |rng|100|97
+expect |-damage|p2a: X|26/262
+expect |-damage|p2a: X|10/100
+expect |rng|100|79
 expect |split|p1
 expect |-damage|p1a: Jolteon|83/272|[from] item: Life Orb
 expect |-damage|p1a: Jolteon|31/100|[from] item: Life Orb
@@ -1054,13 +1055,13 @@ expect |turn|41
 expect |
 expect |t:|
 expect |move|p1a: Jolteon|Shadow Ball|p2a: X
-expect |rng|100|79
-expect |rng|24|8
-expect |rng|16|6
+expect |rng|100|33
+expect |rng|24|9
+expect |rng|16|2
 expect |split|p2
 expect |-damage|p2a: X|0 fnt
 expect |-damage|p2a: X|0 fnt
-expect |rng|100|14
+expect |rng|100|34
 expect |faint|p2a: X
 expect |split|p1
 expect |-damage|p1a: Jolteon|124/272|[from] item: Life Orb

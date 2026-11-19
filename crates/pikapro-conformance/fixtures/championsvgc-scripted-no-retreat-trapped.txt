@@ -1,0 +1,177 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 7300 000b 7300 000c
+genders drawn
+team p1
+Falinks
+Ability: Battle Armor
+Level: 50
+Hardy Nature
+- No Retreat
+- Splash
+
+Pikachu
+Ability: Static
+Level: 50
+Hardy Nature
+- Splash
+
+Eevee
+Ability: Run Away
+Level: 50
+Hardy Nature
+- Splash
+
+Vulpix
+Ability: Flash Fire
+Level: 50
+Hardy Nature
+- Splash
+
+Ditto
+Ability: Limber
+Level: 50
+Hardy Nature
+- Splash
+
+Chansey
+Ability: Natural Cure
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Gengar
+Ability: Cursed Body
+Level: 50
+Hardy Nature
+- Mean Look
+- Splash
+
+Snorlax
+Ability: Thick Fat
+Level: 50
+Hardy Nature
+- Splash
+
+Eevee
+Ability: Run Away
+Level: 50
+Hardy Nature
+- Splash
+
+Vulpix
+Ability: Flash Fire
+Level: 50
+Hardy Nature
+- Splash
+
+Ditto
+Ability: Limber
+Level: 50
+Hardy Nature
+- Splash
+
+Chansey
+Ability: Natural Cure
+Level: 50
+Hardy Nature
+- Splash
+end
+choice p1 team 1234
+choice p2 team 1234
+choice p1 move 1, move 1
+choice p2 move 1 1, move 1
+choice p1 move 1, move 1
+choice p2 move 2, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokemon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Falinks, L50|
+expect |poke|p1|Pikachu, L50, F|
+expect |poke|p1|Eevee, L50, F|
+expect |poke|p1|Vulpix, L50, M|
+expect |poke|p1|Ditto, L50|
+expect |poke|p1|Chansey, L50, F|
+expect |poke|p2|Gengar, L50, M|
+expect |poke|p2|Snorlax, L50, M|
+expect |poke|p2|Eevee, L50, F|
+expect |poke|p2|Vulpix, L50, M|
+expect |poke|p2|Ditto, L50|
+expect |poke|p2|Chansey, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Falinks|Falinks, L50|140/140
+expect |switch|p1a: Falinks|Falinks, L50|100/100
+expect |split|p1
+expect |switch|p1b: Pikachu|Pikachu, L50, F|110/110
+expect |switch|p1b: Pikachu|Pikachu, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Gengar|Gengar, L50, M|135/135
+expect |switch|p2a: Gengar|Gengar, L50, M|100/100
+expect |split|p2
+expect |switch|p2b: Snorlax|Snorlax, L50, M|235/235
+expect |switch|p2b: Snorlax|Snorlax, L50, M|100/100
+expect |turn|1
+expect |
+expect |t:|
+expect |move|p2a: Gengar|Mean Look|p1a: Falinks
+expect |-activate|p1a: Falinks|trapped
+expect |move|p1b: Pikachu|Splash|p1b: Pikachu
+expect |-nothing
+expect |move|p1a: Falinks|No Retreat|p1a: Falinks
+expect |-boost|p1a: Falinks|atk|1
+expect |-boost|p1a: Falinks|def|1
+expect |-boost|p1a: Falinks|spa|1
+expect |-boost|p1a: Falinks|spd|1
+expect |-boost|p1a: Falinks|spe|1
+expect |move|p2b: Snorlax|Splash|p2b: Snorlax
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1a: Falinks|No Retreat||[still]
+expect |-fail|p1a: Falinks
+expect |move|p2a: Gengar|Splash|p2a: Gengar
+expect |-nothing
+expect |move|p1b: Pikachu|Splash|p1b: Pikachu
+expect |-nothing
+expect |move|p2b: Snorlax|Splash|p2b: Snorlax
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3

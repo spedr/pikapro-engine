@@ -1,0 +1,98 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9singles
+seed 7300 0001 7300 0002
+genders drawn
+team p1
+Ninjask
+Ability: Speed Boost
+Hardy Nature
+- U-turn
+- Splash
+
+Shuckle
+Ability: Sturdy
+Hardy Nature
+- Splash
+end
+team p2
+Ninjask
+Ability: Infiltrator
+Hardy Nature
+- Splash
+
+Shuckle
+Ability: Sturdy
+Hardy Nature
+- Splash
+end
+choice p1 move 1
+choice p2 move 1
+choice p1 switch 2
+choice p1 move 1
+choice p2 move 1
+expect |t:|
+expect |gametype|singles
+expect |rng|2|0
+expect |rng|2|1
+expect |player|p1|p1||
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|2
+expect |teamsize|p2|2
+expect |start
+expect |split|p1
+expect |switch|p1a: Ninjask|Ninjask, M|263/263
+expect |switch|p1a: Ninjask|Ninjask, M|263/263
+expect |split|p2
+expect |switch|p2a: Ninjask|Ninjask, M|263/263
+expect |switch|p2a: Ninjask|Ninjask, M|263/263
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |turn|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2a: Ninjask|Splash|p2a: Ninjask
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p1a: Ninjask|U-turn|p2a: Ninjask
+expect |rng|100|20
+expect |rng|24|10
+expect |rng|16|13
+expect |-resisted|p2a: Ninjask
+expect |split|p2
+expect |-damage|p2a: Ninjask|197/263
+expect |-damage|p2a: Ninjask|197/263
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1a: Shuckle|Shuckle, F|181/181|[from] U-turn
+expect |switch|p1a: Shuckle|Shuckle, F|181/181|[from] U-turn
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p2a: Ninjask|Splash|p2a: Ninjask
+expect |-nothing
+expect |move|p1a: Shuckle|Splash|p1a: Shuckle
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3

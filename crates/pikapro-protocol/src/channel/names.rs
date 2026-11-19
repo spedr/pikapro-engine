@@ -170,7 +170,6 @@ const TEXTS: &[&str] = &[
     "Slow Start",
     "Protosynthesis",
     "Quark Drive",
-    "fallenundefined",
     "fallen1",
     "fallen2",
     "fallen3",
@@ -223,11 +222,13 @@ pub(crate) fn parse_hint(dex: &Dex, text: &str) -> Option<Hint> {
         "In Gen 8+, Future attacks will never resolve when used on the 255th turn or later." => {
             Hint::FutureMoveTurnLimit
         }
+        "A previous future attack is stuck on this slot and will never resolve." => Hint::FutureMoveStuck,
+        "A previous Wish is stuck on this slot and will never resolve." => Hint::WishStuck,
         "Transform Mimicry changes you to your original un-transformed types." => Hint::TransformMimicry,
         "A switch failed because the Pokémon trying to switch in is already in." => Hint::SwitchAlreadyIn,
         "A Pokemon can't switch between when it runs out of HP and when it faints" => Hint::SwitchAtZeroHp,
         "Skill Swap does not announce the abilities of the Pokémon when used between allies." => Hint::SkillSwapAllies,
-        "Sleep Clause Mod prevents players from putting more than one of their opponent's Pokémon to sleep at a time" => {
+        "Sleep Clause Mod prevents players from putting more than one of their opponent's Pokemon to sleep at a time" => {
             Hint::SleepClauseMod
         }
         "Illusion Level Mod is active, so this Pokémon's true level was hidden." => Hint::IllusionLevelMod,

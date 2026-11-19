@@ -285,7 +285,27 @@ impl Validator {
                             return None;
                         }
                     }
-                    if letter == Letter::Restricted {
+                    // Past-gen restricted moves, unless the move has an
+                    // earlier source already.
+                    if letter == Letter::Restricted && move_sources.sources_before == 0 {
+                        if sp == species::SHEDINJA {
+                            // Shedinja inherits the moves Ninjask learns as
+                            // it evolves (Gens 3 and 4), at Ninjask's level.
+                            let ninjask = self.legality.species(species::NINJASK).learnset.and_then(|l| l.get(move_id));
+                            let at = ninjask.and_then(|e| {
+                                e.sources
+                                    .iter()
+                                    .map(|&r| LearnSource(r))
+                                    .find(|s| s.generation() == learned_gen && s.kind() == Letter::LevelUp)
+                                    .map(|s| s.value())
+                            });
+                            if let Some(at) = at
+                                && at > level
+                            {
+                                cant_learn_reason = Some(CantLearn::Level(mv, at));
+                                continue;
+                            }
+                        }
                         move_sources.restricted_move = Some(move_id);
                     }
                     limit1 = false;
@@ -441,14 +461,15 @@ impl Validator {
     }
 
     /// `findEggMoveFathers` (without `getAll`): whether some father can pass
-    /// the set's limited egg moves on.
+    /// the set's limited egg moves on, chainbreeding through at most
+    /// `recurse` more fathers.
     pub(crate) fn find_egg_move_fathers(
         &self,
         source: Source,
         sp: SpeciesId,
         set_sources: &Sources,
         blacklist: &mut Vec<SpeciesId>,
-        no_recurse: bool,
+        recurse: u8,
     ) -> bool {
         if !blacklist.contains(&sp) {
             blacklist.push(sp);
@@ -515,7 +536,7 @@ impl Validator {
             if !leg.egg_groups.intersects(egg_groups) {
                 continue;
             }
-            if !self.father_can_learn(sp, father, &egg_moves, egg_gen, blacklist, no_recurse) {
+            if !self.father_can_learn(sp, father, &egg_moves, egg_gen, blacklist, recurse) {
                 continue;
             }
             return true;
@@ -531,7 +552,7 @@ impl Validator {
         egg_moves: &[MoveId],
         egg_gen: u8,
         blacklist: &mut Vec<SpeciesId>,
-        no_recurse: bool,
+        recurse: u8,
     ) -> bool {
         let father_leg = self.legality.species(father);
         if father_leg.learnset.is_none() {
@@ -603,12 +624,15 @@ impl Validator {
         if let Js::Some(limited) = &all.limited_egg_moves
             && limited.len() > 1
         {
-            if no_recurse {
+            if recurse == 0 {
                 return false;
             }
             let child_groups = self.legality.species(child).egg_groups;
-            let can_chainbreed = father_leg.egg_groups.0 & !child_groups.0 != 0;
-            if !can_chainbreed && limited.len() == egg_moves.len() {
+            let has_other_egg_group = father_leg.egg_groups.0 & !child_groups.0 != 0;
+            let has_less_egg_moves = limited.len() < egg_moves.len();
+            // "Waste of time to check Pokemon without a different egg group
+            // and the same amount of egg moves".
+            if !has_other_egg_group && !has_less_egg_moves {
                 return false;
             }
             let mut set_sources = Sources::new(0, 0);
@@ -616,7 +640,11 @@ impl Validator {
             // Showdown passes `allEggSources.sources[0]`, and crashes
             // when there is none.
             let Some(&first) = all.sources.first() else { return false };
-            return self.find_egg_move_fathers(first, father, &set_sources, blacklist, true);
+            // With fewer egg moves the search starts over with an empty
+            // blacklist (`hasLessEggMoves ? [] : pokemonBlacklist`).
+            let mut fresh = Vec::new();
+            let blacklist = if has_less_egg_moves { &mut fresh } else { blacklist };
+            return self.find_egg_move_fathers(first, father, &set_sources, blacklist, recurse - 1);
         }
         true
     }

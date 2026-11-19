@@ -452,7 +452,26 @@ impl<'a> MonRef<'a> {
     /// its bytes would be reloaded wider than they are stored, which stalls
     /// the load).
     #[inline(always)]
-    fn each_move(&self, mut f: impl FnMut(usize, MoveInfo)) {
+    fn each_move(&self, f: impl FnMut(usize, MoveInfo)) {
+        self.each_move_as::<true>(f);
+    }
+
+    /// Calls `f(i, slot)` with each of its four move slots in order, for a
+    /// reader of a slot's move, its PP ([`MoveInfo::pp_frac`]) and
+    /// `disabled` alone: an own move's record in the log (`uses`,
+    /// `pp_spent`, `revealed`) is looked up only when its PP fraction needs
+    /// it (no request or team PP), and is 0 otherwise. Straight from the
+    /// sources, with no array of slots in between: for a caller that is
+    /// itself out of line (`f` is inlined once per source of moves: the
+    /// request, a sheet, the log).
+    #[inline(always)]
+    pub(crate) fn each_move_pp(&self, f: impl FnMut(usize, MoveInfo)) {
+        self.each_move_as::<false>(f);
+    }
+
+    /// [`MonRef::each_move`]; without `LOG`, [`MonRef::each_move_pp`]'s slots.
+    #[inline(always)]
+    fn each_move_as<const LOG: bool>(&self, mut f: impl FnMut(usize, MoveInfo)) {
         // Uses, PP spent and revealed, as the log shows them.
         let public = |id: MoveId| match self.public.and_then(|p| p.revealed(id)) {
             Some(r) => (r.uses, r.pp_spent, true),
@@ -491,7 +510,10 @@ impl<'a> MonRef<'a> {
                         (pp, max_pp, false)
                     }
                 };
-                let (uses, pp_spent, revealed) = public(id);
+                // `pp_frac` reads `pp_spent` only when PP or max PP is
+                // unknown.
+                let (uses, pp_spent, revealed) =
+                    if LOG || pp.is_none() || max_pp.is_none() { public(id) } else { (0, 0, false) };
                 f(i, MoveInfo { slot: MoveKnowledge::Known(id), pp, max_pp, disabled, uses, pp_spent, revealed });
             }
         } else if let Some(sheet) = self.sheet {

@@ -84,7 +84,7 @@ Sleep Clause Mod.
 | the eight `\|rule\|` lines of the header | `BattleInfo::for_format` |
 | Obtainable, EV limit 510, teams of 1 to 6, levels 1 to 100 (100 by default), Min Source Gen 9 | the validator (`ValidationFormat::gen9_ou`) |
 | Species Clause, Nickname Clause | the validator; Species Clause also in `Team::validate` |
-| OHKO Clause, Sleep Moves Clause (a move with `ohko`, or whose status is sleep; Yawn) | the validator |
+| OHKO Clause, Sleep Moves Clause (ban lists: Fissure, Guillotine, Horn Drill, Sheer Cold; Dark Void, Grass Whistle, Hypnosis, Lovely Kiss, Sing, Sleep Powder, Spore, Yawn) | the validator |
 | Evasion Items, Moves and Abilities Clauses (Bright Powder, Lax Incense; Acupressure, Minimize, Double Team; Sand Veil, Snow Cloak) | the validator |
 | the bans: the Uber and AG tiers, Arena Trap, Moody, Shadow Tag, King's Rock, Razor Fang, Baton Pass, Last Respects, Shed Tail, Tera Blast | the validator; the tiers are in `pikapro-data`'s legality tables (`legality::Tier`) |
 
@@ -206,7 +206,7 @@ Pokémon Champions is the official VGC game from the 2026 season on. It
 runs a Gen 9 battle engine with its own rules. pikapro models it as
 `Mechanics::Champions` plus `StatSystem::StatPoints`, with its own `Dex`
 (`pikapro_data::champions`). Showdown's `champions` mod at the pinned
-commit `a5df827` (Reg M-C) is the reference.
+commit `5b88c47` (Reg M-C) is the reference.
 
 | area | Scarlet/Violet | Champions |
 |---|---|---|
@@ -220,7 +220,7 @@ commit `a5df827` (Reg M-C) is the reference.
 | Encore | the target's queued move this turn is kept | a different queued move is replaced by the encored one at once |
 | Mega Evolution | not available | once per battle; Megas don't revert on faint |
 | Terastallization | once per battle | not in the current regulations |
-| Moves / items / abilities | – | 256 / 253 / 15 overrides in the mod |
+| Moves / items / abilities | – | 258 / 251 / 16 overrides in the mod |
 | Level | Adjust Level Down = 50 | Adjust Level = 50 (every Pokémon at 50) |
 | Team structure | bring 4–6 | doubles, bring exactly 6 pick 4, open team sheets; singles (BSS), bring exactly 6 pick 3 |
 | Foe HP display | `ceil(100·hp/max)`, 99 while hurt | `floor(100·hp/max)`, at least 1, colour hint at 20% / 50% |

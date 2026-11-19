@@ -800,7 +800,10 @@ pub(crate) fn safeguard_status(battle: &mut Battle, ev: &mut EventCtx<'_>, _: &H
         Relay::Id("confusion" | "yawn") => {}
         _ => return None,
     }
-    if ev.effect.is_move() && battle.move_state.infiltrates && source.side != target.side {
+    // `effect.infiltrates`: the active move's (Baneful Bunker's own
+    // `ActiveMove`, the effect of its poison, has none).
+    let active = battle.active_move.is_some_and(|(_, m)| ev.effect == Effect::Move(m));
+    if ev.effect.is_move() && active && battle.move_state.infiltrates && source.side != target.side {
         return None;
     }
     let synchronize = ev.event == pikapro_data::Event::SetStatus

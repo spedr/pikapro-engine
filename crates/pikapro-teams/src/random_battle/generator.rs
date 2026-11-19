@@ -498,6 +498,28 @@ impl<'a> Generator<'a> {
                 _ => {}
             }
         }
+        if m == mv::TERRAIN_PULSE {
+            if ctx.has_ability(ab::GRASSY_SURGE) || ctx.has_ability(ab::SEED_SOWER) {
+                return GRASS;
+            }
+            if ctx.has_ability(ab::PSYCHIC_SURGE) {
+                return PSYCHIC;
+            }
+            if ctx.has_ability(ab::ELECTRIC_SURGE) {
+                return ELECTRIC;
+            }
+        }
+        if m == mv::WEATHER_BALL {
+            // `|| species.isMega && ...`: no Mega Evolution is in these
+            // formats' pools.
+            let sun = [ab::CHLOROPHYLL, ab::DROUGHT, ab::MEGA_SOL, ab::ORICHALCUM_PULSE];
+            if sun.iter().any(|&a| ctx.has_ability(a)) {
+                return FIRE;
+            }
+            if ctx.has_ability(ab::DRIZZLE) {
+                return WATER;
+            }
+        }
         if move_.ty == NORMAL {
             if ctx.has_ability(ab::AERILATE) {
                 return FLYING;
@@ -689,7 +711,7 @@ impl<'a> Generator<'a> {
                 (RECOVERY_MOVES, &[mv::HEAL_PULSE, mv::LIFE_DEW]),
                 (&[mv::HEAL_PULSE], &[mv::LIFE_DEW]),
                 (&[mv::HAZE], &[mv::ICY_WIND]),
-                (&[mv::HYDRO_PUMP, mv::MUDDY_WATER], &[mv::MUDDY_WATER, mv::SCALD]),
+                (&[mv::HYDRO_PUMP, mv::MUDDY_WATER], &[mv::MUDDY_WATER, mv::SCALD, mv::WEATHER_BALL]),
                 (&[mv::DISABLE], &[mv::ENCORE]),
                 (&[mv::FREEZE_DRY], &[mv::ICE_BEAM]),
                 (&[mv::ENERGY_BALL], &[mv::LEAF_STORM]),
@@ -1601,6 +1623,11 @@ impl<'a> Generator<'a> {
         }
         if base == sp::MAGEARNA {
             return self.sample(&[sp::MAGEARNA, sp::MAGEARNA_ORIGINAL], "getForme Magearna");
+        }
+        // Not in singles (the Champions mod's formats aside).
+        if base == sp::SQUAWKABILLY && self.doubles {
+            let formes = [sp::SQUAWKABILLY, sp::SQUAWKABILLY_BLUE, sp::SQUAWKABILLY_WHITE, sp::SQUAWKABILLY_YELLOW];
+            return self.sample(&formes, "getForme Squawkabilly");
         }
         if base == sp::PIKACHU {
             let formes = [

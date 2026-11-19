@@ -53,7 +53,14 @@ fn run_move_inner(
     mon.active_move_actions = mon.active_move_actions.saturating_add(1);
     // Prankster's `move.pranksterBoosted`.
     abilities::misc::begin_move_action(battle, user, move_id);
-    let (_, target_type) = volatiles::queued_move(battle, move_id);
+    let (_, mut target_type) = volatiles::queued_move(battle, move_id);
+    let user_ref = super::queue::MonRef { side: user.side, id: battle.state.at(user).expect("user is active").id };
+    // Champions' non-Ghost Curse, aimed at its user when it was queued.
+    let targets_self =
+        !options.external && super::queue::targets_self(battle, move_id, Some(user_ref), options.original_target);
+    if targets_self {
+        target_type = MoveTarget::User;
+    }
     let mut target = order::get_target(battle, user, move_id, target_type, target_loc, options.original_target);
     // `OverrideAction` (Encore). The new move keeps the chosen one's priority.
     // Not for a move Dancer copies (`externalMove`).
@@ -145,6 +152,14 @@ fn run_move_inner(
             &typed
         }
         None => battle.format.dex.move_(move_id),
+    };
+    // The action's `ActiveMove` aimed at its user (Champions' Curse).
+    let aimed;
+    let data = if targets_self && move_id == ids::CURSE {
+        aimed = MoveData { target: MoveTarget::User, ..*data };
+        &aimed
+    } else {
+        data
     };
     let mon = battle.state.at_mut(user).expect("run_move for an active Pokémon");
     // `moveUsed`, which a Dancer's copy skips; its lock is dropped after
@@ -902,7 +917,12 @@ fn move_hit_loop(
     } else {
         data
     };
-    effects::after_hit_loop(battle, user, targets[0], move_id, counted, hit - 1, total_damage);
+    // `move.struggleRecoil && damage.some((val, i) => val === 0 &&
+    // !!targetsCopy[i])`: Struggle recoils even off a hit that dealt
+    // nothing (Disguise), not one a substitute took.
+    let zero_hit = move_id == ids::STRUGGLE
+        && damage.hits.iter().any(|&(t, d)| d.unwrap_or(0) == 0 && last_hit.hits.iter().any(|&(p, _)| p == t));
+    effects::after_hit_loop(battle, user, targets[0], move_id, counted, hit - 1, total_damage, zero_hit);
     // `gotAttacked` / `timesAttacked`: a `smartTarget` move at two targets
     // (Dragon Darts) counts one attack per target hit.
     let attacks = if order::smart_target(battle) && targets.len() > 1 {
@@ -919,8 +939,11 @@ fn move_hit_loop(
     each_update(battle);
     // afterMoveSecondaryEvent: the move's own, then `runEvent` on the
     // targets (frz's `thawsTarget`; Color Change, Pickpocket, Red Card,
-    // Eject Button, ...), unless Sheer Force dropped the secondaries.
-    if !sheer_force(battle, user) {
+    // Eject Button, ...), then Emergency Exit, unless Sheer Force dropped
+    // the secondaries (`suppressingSecondaries()`). Champions' own
+    // `hitStepMoveHitLoop` runs them under Sheer Force too.
+    let suppressed = battle.format.mechanics != crate::format::Mechanics::Champions && suppressing_secondaries(battle);
+    if !suppressed {
         // The last hit's targets (`hitStepMoveHitLoop`:
         // `targetsCopy.filter(val => !!val)`): not those whose substitute
         // took it (all of them for a `smartTarget` move), except after a
@@ -953,8 +976,9 @@ fn move_hit_loop(
     // (a substitute took it, or it failed), `move.totalDamage` if it is the
     // only one. A `smartTarget` move at two targets keeps only the last
     // started hit's entry (`damage = [damage[hit - 1]]`), a number only if
-    // that hit ran.
-    if !sheer_force(battle, user) {
+    // that hit ran. (`runEvent('EmergencyExit', target, pokemon, undefined,
+    // hpBeforeDamage)`: the handlers check the HP.)
+    if !suppressed {
         let smart = order::smart_target(battle) && targets.len() > 1;
         let checked: Targets = match (smart, targets.get(started as usize - 1)) {
             (false, _) => *targets,
@@ -977,30 +1001,26 @@ fn move_hit_loop(
     true
 }
 
-/// `move.hasSheerForce && pokemon.hasAbility('sheerforce')`: the move's
-/// secondaries were dropped, and with them its `AfterMoveSecondary`
-/// effects (Life Orb's recoil, Emergency Exit, ...).
-pub(super) fn sheer_force(battle: &Battle, user: Position) -> bool {
+/// Showdown's `suppressingSecondaries()`: `activeMove.hasSheerForce &&
+/// activePokemon.hasAbility('sheerforce')`. The move's secondaries were
+/// dropped, and with them its `AfterMoveSecondarySelf` effects (Life Orb's
+/// recoil, ...) and, outside Champions, its `AfterMoveSecondary` ones
+/// (Emergency Exit, Eject Button, ...).
+pub(crate) fn suppressing_secondaries(battle: &Battle) -> bool {
     battle.move_state.has_sheer_force
-        && abilities::has_ability(battle, user, pikapro_data::gen9::abilities::SHEER_FORCE)
+        && battle
+            .active_move
+            .is_some_and(|(user, _)| abilities::has_ability(battle, user, pikapro_data::gen9::abilities::SHEER_FORCE))
 }
 
-/// `runEvent('EmergencyExit', pokemon, source)` when the Pokémon at `pos`
-/// has fallen to half its max HP or below from above `hp_before`, and still
-/// has HP (`spreadMoveHit`, the residual, `runSwitch`: `pokemon.hp && ...`).
+/// `runEvent('EmergencyExit', pokemon, source, undefined, hpBefore)`:
+/// Emergency Exit and Wimp Out act (`onEmergencyExit`) when the Pokémon at
+/// `pos` still has HP and has fallen to half its max HP or below from
+/// above `hp_before`. Their own check, so recoil or crash damage that
+/// knocks the user out no longer triggers them. (The event has at most
+/// one handler, the Pokémon's ability: no sort, no draw.)
 pub(super) fn emergency_exit(battle: &mut Battle, pos: Position, source: Option<Position>, hp_before: u16) {
-    if battle.state.at(pos).is_some_and(|m| m.hp > 0) {
-        emergency_exit_at_any_hp(battle, pos, source, hp_before);
-    }
-}
-
-/// [`emergency_exit`] without the HP check: `applyRecoilDamage` and
-/// `useMoveInner`'s `MoveFail` / `AfterMoveSecondarySelf` checks only
-/// `pokemon.hp <= pokemon.maxhp / 2 && originalHp > pokemon.maxhp / 2`, so
-/// recoil or crash damage that knocks the user out from above half HP
-/// triggers it too (the user stays active until `faintMessages`).
-pub(super) fn emergency_exit_at_any_hp(battle: &mut Battle, pos: Position, source: Option<Position>, hp_before: u16) {
-    let Some(m) = battle.state.at(pos) else { return };
+    let Some(m) = battle.state.at(pos).filter(|m| m.hp > 0) else { return };
     let max = m.max_hp() as u32;
     if (m.hp as u32) * 2 <= max && (hp_before as u32) * 2 > max {
         super::run_mon_event_from(battle, Event::EmergencyExit, pos, source.or(Some(pos)));
@@ -1430,11 +1450,7 @@ fn run_move_effects(
         // a Ghost type by then (Protean can make it one after `ModifyMove`).
         let curse_fails = move_id == ids::CURSE
             && !battle.state.at(user).is_some_and(|m| manipulation::has_type(m, pikapro_data::Type::Ghost));
-        // No Retreat's `onTry` deletes it for a trapped user, which only
-        // gets the boosts.
-        let no_retreat_trapped = move_id == ids::NO_RETREAT
-            && battle.state.at(user).is_some_and(|m| m.volatiles.has(crate::state::Volatiles::TRAPPED));
-        if let Some(v) = data.volatile_status.filter(|_| !curse_fails && !no_retreat_trapped) {
+        if let Some(v) = data.volatile_status.filter(|_| !curse_fails) {
             if protect::handles(move_id) {
                 protect::on_hit(battle, user, move_id);
                 did = Outcome::Succeeded;
@@ -1640,11 +1656,11 @@ fn roll_damage_inner(
     }
     battle.move_state.hit_data_mut(target).crit = crit;
     // `runEvent('BasePower', source, target, move, basePower, true)`: the
-    // move's own `onBasePower` sorts with the rest (Helping Hand 10, Charge
-    // 9, the terrains 6, then priority 0). 0 deals 0 damage.
-    let own = events::Spec::relay(power::own_base_power);
+    // move's own `onBasePower`, if it has one, sorts with the rest (Helping
+    // Hand 10, Charge 9, the terrains 6, then priority 0). 0 deals 0 damage.
+    let own = power::own_base_power_spec(move_id);
     let base_power =
-        events::run_modify(battle, Event::BasePower, pos, Some(target), effect, base_power, Some(data), Some(own));
+        events::run_modify(battle, Event::BasePower, pos, Some(target), effect, base_power, Some(data), own);
     if base_power == 0 {
         return Some(0);
     }

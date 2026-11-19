@@ -83,6 +83,7 @@ pub(crate) use multiturn::locked_move;
 
 pub(crate) use order::OrderState;
 pub(crate) use queue::Queue;
+pub(crate) use switching::queued_switch_ins;
 
 use pikapro_data::gen9::moves as move_ids;
 use pikapro_data::{MoveId, Stat};
@@ -392,15 +393,17 @@ fn run_action(battle: &mut Battle, action: Action) {
     // `clearActiveMove()`.
     switching::run_drags(battle);
     battle.active_move = None;
+    // `resolveFaints({checkWinIfNoFaints: true})`: with no faint queued,
+    // `checkWin` finds both sides with Pokémon left.
     if faint_messages(battle, true) {
         return;
     }
-    if battle.queue.is_empty() {
+    let next = battle.queue.peek().map(|a| a.kind);
+    if next.is_none() {
         switching::check_fainted(battle);
-    } else if matches!(battle.queue.peek().map(|a| a.kind), Some(ActionKind::InstaSwitch { .. })) {
-        return;
     }
-    if action.kind != ActionKind::Start {
+    // Not between two replacements (`nextAction?.choice !== 'instaswitch'`).
+    if action.kind != ActionKind::Start && !matches!(next, Some(ActionKind::InstaSwitch { .. })) {
         each_update(battle);
         // Emergency Exit and Wimp Out after the end-of-turn damage.
         for &(m, hp) in residual_hp.iter().flat_map(|r| r.iter()) {
@@ -451,9 +454,10 @@ fn mon_ref(battle: &Battle, side: SideId, position: usize) -> MonRef {
 /// The team position of the Pokémon Showdown's `side.active[slot]` holds,
 /// fainted included: `slot`, or, after a stale switch, the position of the
 /// fainted Pokémon it moved to the other slot
-/// ([`OrderState::stale_active`]) while it stands there. (Once a switch
-/// into that slot takes it to the bench, Showdown throws: what is left of
-/// the battle is pikapro's own, and the slot is `slot` again.)
+/// ([`OrderState::stale_active`]) while it stands there. (Showdown
+/// `a5df827` threw once a switch into that slot took it to the bench; at
+/// `5b88c47` a stale switch can no longer happen, so this path is kept but
+/// unreachable.)
 #[inline(always)]
 pub(crate) fn field_index(battle: &Battle, side: SideId, slot: usize) -> usize {
     if battle.order.stale_slots == 0 {
@@ -582,23 +586,54 @@ fn update_speed(battle: &mut Battle) -> u8 {
     // speeds need no events.
     let events =
         events::any_active_handles(battle, &[pikapro_data::Event::ModifyBoost, pikapro_data::Event::ModifySpe]);
+    if !events {
+        let mut fresh = 0;
+        for side in SideId::BOTH {
+            for slot in 0..battle.format.active_per_side() {
+                let pos = Position::new(side, slot as u8);
+                let Some(m) = battle.state.at(pos) else { continue };
+                let speed = stage_speed(battle, m);
+                fresh |= 1 << (side.index() * 2 + slot);
+                battle.state.at_mut(pos).expect("checked above").speed = speed;
+            }
+        }
+        return fresh;
+    }
     // The speed handlers only compute (no effect changes), so the four
     // Pokémon share one set of event masks.
-    if events && !battle.masks_cached.is_cached() {
-        let any = Position::new(SideId::P1, 0);
-        return events::with_cached_masks(battle, events::Target::Pokemon(any), None, update_speed);
+    if battle.masks_cached.is_cached() {
+        return update_speed_events(battle);
     }
+    let any = Position::new(SideId::P1, 0);
+    events::with_cached_masks(battle, events::Target::Pokemon(any), None, update_speed_events)
+}
+
+/// A Pokémon's action speed when no `ModifyBoost` or `ModifySpe` handler
+/// applies to it ([`events::stat_at_stage`]).
+#[inline(always)]
+fn stage_speed(battle: &Battle, mon: &crate::state::PokemonState) -> i32 {
+    action_speed(battle, events::stat_at_stage(mon, Stat::Spe))
+}
+
+/// [`update_speed`] when the field has a `ModifyBoost` or `ModifySpe`
+/// handler, inside a stretch of cached masks: `getStat('spe')` of each
+/// Pokémon runs the events that could find a handler for it
+/// (`events::speed_events`), and without one it is the stat at its stage.
+fn update_speed_events(battle: &mut Battle) -> u8 {
     let mut fresh = 0;
     for side in SideId::BOTH {
         for slot in 0..battle.format.active_per_side() {
             let pos = Position::new(side, slot as u8);
-            let Some(m) = battle.state.at(pos) else { continue };
+            if battle.state.at(pos).is_none() {
+                continue;
+            }
             let sorts = battle.handler_sorts;
-            let speed = if events {
-                mon_action_speed(battle, MonRef { side, id: m.id })
-            } else {
-                let raw = crate::stats::apply_stage(m.stats[Stat::Spe], m.boosts.spe.clamp(-6, 6)) as u32;
-                action_speed(battle, raw.min(10000))
+            let speed = match events::speed_events(battle, pos) {
+                (false, false) => stage_speed(battle, battle.state.at(pos).expect("checked above")),
+                events => {
+                    let stat = events::stat_value(battle, pos, Stat::Spe, false, false, events);
+                    action_speed(battle, stat)
+                }
             };
             if battle.handler_sorts == sorts {
                 fresh |= 1 << (side.index() * 2 + slot);
@@ -629,6 +664,20 @@ pub(crate) fn update_speed_of(battle: &mut Battle, mon: MonRef) -> u8 {
 /// (a sort that draws on ties), runs the event (`runEvent(event, pokemon,
 /// null, effect)`).
 pub(crate) fn each_event(battle: &mut Battle, event: Option<pikapro_data::Event>, effect: events::Effect) {
+    let (mut order, n) = active_order(battle);
+    // `BeforeTurn` has no handlers yet: only its sort's draws (on ties)
+    // matter.
+    let Some(event) = event else {
+        queue::speed_sort_by_speed_draws(&order[..n], &mut battle.rng);
+        return;
+    };
+    events::each_event_run(battle, event, effect, &mut order[..n]);
+}
+
+/// `eachEvent`'s list: every active Pokémon's position and stored speed
+/// (`getAllActive()`), and how many there are.
+#[inline(always)]
+fn active_order(battle: &Battle) -> ([(Position, i32); 2 * MAX_ACTIVE], usize) {
     let mut order = [(Position::default(), 0); 2 * MAX_ACTIVE];
     let mut n = 0;
     let active = battle.format.active_per_side();
@@ -641,19 +690,16 @@ pub(crate) fn each_event(battle: &mut Battle, event: Option<pikapro_data::Event>
             }
         }
     }
-    // `BeforeTurn` has no handlers yet: only its sort's draws (on ties)
-    // matter.
-    let Some(event) = event else {
-        queue::speed_sort_by_speed_draws(&order[..n], &mut battle.rng);
-        return;
-    };
-    events::each_event_run(battle, event, effect, &mut order[..n]);
+    (order, n)
 }
 
 /// Showdown's `eachEvent('Update')`: Attract and Syrup Bomb ending, items
-/// and abilities that react to the state (Sitrus Berry, ...).
+/// and abilities that react to the state (Sitrus Berry, ...). Its own
+/// copy of [`each_event`], with the event's tests folded: it runs after
+/// every action and every hit, and almost never finds a handler.
 pub(crate) fn each_update(battle: &mut Battle) {
-    each_event(battle, Some(pikapro_data::Event::Update), events::Effect::None);
+    let (mut order, n) = active_order(battle);
+    events::each_event_run(battle, pikapro_data::Event::Update, events::Effect::None, &mut order[..n]);
 }
 
 /// `runEvent(event, pokemon)` with no source, effect or relay.
@@ -668,9 +714,7 @@ pub(crate) fn run_mon_event_from(
     pos: Position,
     source: Option<Position>,
 ) -> events::Relay {
-    let mut ev =
-        events::EventCtx::new(event, events::Target::Pokemon(pos), source, events::Effect::None, events::Relay::True);
-    events::run_event(battle, &mut ev, None)
+    events::run_check(battle, event, pos, source, events::Effect::None, None)
 }
 
 /// Showdown's `switchIn`: the incoming Pokémon takes the slot's team
@@ -705,8 +749,10 @@ pub(crate) fn switch_in(battle: &mut Battle, incoming: MonRef, slot: usize, from
             battle.order.revived_switching = Some(pos);
         }
         if !skip && !drag {
-            // `runEvent('BeforeSwitchOut')` (no Gen 9 ability or item
-            // handles it), then `eachEvent('Update')` (Gen 5+).
+            // `runPursuitActivation`: `runEvent('BeforeSwitchOut')` (no Gen
+            // 9 ability or item handles it), `clearActiveMove()`, then
+            // `eachEvent('Update')` (Gen 5+).
+            battle.active_move = None;
             each_update(battle);
         }
         // `beingCalledBack` (Slow Start's and Illusion's `End`).
@@ -719,7 +765,8 @@ pub(crate) fn switch_in(battle: &mut Battle, incoming: MonRef, slot: usize, from
         run_mon_event(battle, pikapro_data::Event::SwitchOut, pos);
         events::end_held(battle, pos);
         let out = MonRef { side: incoming.side, id: out };
-        battle.queue.retain(|a| a.mon != Some(out));
+        // `queue.cancelAction(oldActive)`, which keeps its `runSwitch`.
+        battle.queue.retain(|a| a.mon != Some(out) || a.kind == ActionKind::RunSwitch);
         // Linked volatiles end; Shed Tail's substitute is passed on
         // (`copyVolatileFrom`).
         carried = conditions::switch_out(battle, pos, from);
@@ -789,8 +836,9 @@ pub(crate) fn switch_in(battle: &mut Battle, incoming: MonRef, slot: usize, from
     mon.clear_volatile_state();
     (mon.volatile_counters.times_attacked, mon.volatile_counters.attacked_by) = attacked;
     (mon.volatile_counters.damaged_by, mon.record.damaged_by) = (damaged_bits, damaged_by);
-    // `switchIn`: `activeMoveActions = 0`.
+    // `switchIn`: `activeMoveActions = 0`, and no move slot `used`.
     mon.active_move_actions = 0;
+    mon.record.used_moves = 0;
     // On the field again, Multitype's `onType` applies.
     // Its `apparentType` is still the forme's (`setSpecies`).
     if let Some(types) = abilities::switchin::multitype_types_of(&battle.format, mon) {
@@ -1105,16 +1153,10 @@ pub(crate) fn spread_damage(
         return Some(0);
     }
     if effect != events::Effect::Condition(events::Condition::StruggleRecoil) {
-        let mut ev = events::EventCtx::new(
-            pikapro_data::Event::Damage,
-            events::Target::Pokemon(pos),
-            source,
-            effect,
-            events::Relay::Num(amount as i32),
-        );
         // The move's own `onDamage` (False Swipe, priority -20).
         let own = effect.move_id().and_then(power::own_damage_spec);
-        match events::run_event(battle, &mut ev, own) {
+        let relay = events::Relay::Num(amount as i32);
+        match events::run_event_on(battle, pikapro_data::Event::Damage, pos, source, effect, relay, own) {
             events::Relay::Num(n) => amount = n.max(0) as u32,
             events::Relay::True => {}
             _ => return None,
@@ -1213,14 +1255,8 @@ pub(crate) fn try_heal(
     source: Option<Position>,
     effect: events::Effect,
 ) -> Option<u32> {
-    let mut ev = events::EventCtx::new(
-        pikapro_data::Event::TryHeal,
-        events::Target::Pokemon(pos),
-        source,
-        effect,
-        events::Relay::Num(amount as i32),
-    );
-    match events::run_event(battle, &mut ev, None) {
+    let relay = events::Relay::Num(amount as i32);
+    match events::run_event_on(battle, pikapro_data::Event::TryHeal, pos, source, effect, relay, None) {
         events::Relay::Num(n) if n > 0 => Some(n as u32),
         events::Relay::True => Some(amount),
         _ => None,
@@ -1295,6 +1331,9 @@ fn queued_faint_messages(battle: &mut Battle, check_win_after: bool) -> bool {
         if !events::is_active(battle, pos) {
             continue;
         }
+        // `const illusion = pokemon.illusion`, before its `Faint` event
+        // (Illusion's `onFaint` clears it).
+        let illusion = battle.state.side(pos.side).team[pos.slot as usize].illusion.is_some();
         let actor = actor(battle, pos);
         battle.emit(BattleEvent::Faint { actor });
         // `totalFainted`, then `runEvent('Faint')` (Destiny Bond, which can
@@ -1331,7 +1370,7 @@ fn queued_faint_messages(battle: &mut Battle, check_win_after: bool) -> bool {
         mon.base_types = mon.species_types;
         mon.types = mon.species_types;
         // `formeRegression` (Morpeko, Zygarde).
-        abilities::switchin::faint_forme_regression(battle, pos, transformed);
+        abilities::switchin::faint_forme_regression(battle, pos, transformed, illusion);
         // A faint that caused another one always checks for a winner.
         if battle.faint_queue.len() >= left {
             check_win_after = true;

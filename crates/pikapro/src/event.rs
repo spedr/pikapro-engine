@@ -412,6 +412,11 @@ pub enum Hint {
     },
     /// `In Gen 8+, Wish will never resolve when used on the <turn>th turn.`
     WishTurnLimit(u16),
+    /// `A previous future attack is stuck on this slot and will never
+    /// resolve.` (a future move used on a slot whose attack never comes).
+    FutureMoveStuck,
+    /// `A previous Wish is stuck on this slot and will never resolve.`
+    WishStuck,
     /// `Some effects can force a Pokemon to use <move> again in a row.`
     CantUseTwice(MoveId),
     /// `Transform Mimicry changes you to your original un-transformed types.`
@@ -430,7 +435,7 @@ pub enum Hint {
     /// didn't change both defenses.)
     StockpileTracking,
     /// `Sleep Clause Mod prevents players from putting more than one of
-    /// their opponent's Pokémon to sleep at a time`.
+    /// their opponent's Pokemon to sleep at a time`.
     SleepClauseMod,
     /// `Illusion Level Mod is active, so this Pokémon's true level was
     /// hidden.` (once per battle).

@@ -29,7 +29,7 @@ const require = createRequire(join(oracle, 'package.json'));
 const { Dex, toID } = require('pokemon-showdown');
 // The pin is a GitHub commit (tools/showdown-oracle/package.json), and a
 // commit's package.json keeps the last npm release's version, so the version
-// names the installed commit: `0.11.11+a5df827` (semver build metadata).
+// names the installed commit: `0.11.11+5b88c47` (semver build metadata).
 function pinnedShowdownVersion() {
   const { version } = require('pokemon-showdown/package.json');
   const installed = JSON.parse(readFileSync(join(oracle, 'node_modules', '.package-lock.json'), 'utf8'));

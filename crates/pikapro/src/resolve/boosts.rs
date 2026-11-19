@@ -14,7 +14,7 @@
 
 use pikapro_data::{BoostId, Event, MoveId, StatBoosts};
 
-use super::events::{self, Boosts, Effect, EventCtx, Relay, Target};
+use super::events::{self, Boosts, Effect, Relay};
 use super::power;
 use crate::battle::Battle;
 use crate::event::{AbilityNote, BattleEvent, Cause};
@@ -168,9 +168,7 @@ pub(crate) fn boost_from(
                 _ => plain(battle),
             }
             // (The one-stat object only when a handler may read it.)
-            if !events::filtered(battle, Event::AfterEachBoost)
-                && !events::quiet(battle, Event::AfterEachBoost, target, source)
-            {
+            if !events::unhandled(battle, Event::AfterEachBoost, events::Target::Pokemon(target), source) {
                 let mut one = Boosts { changes: StatBoosts::default(), keys: 0 };
                 one.set(id, requested);
                 boost_event(battle, Event::AfterEachBoost, target, source, effect, one);
@@ -209,8 +207,7 @@ fn boost_event(
     effect: Effect,
     boosts: Boosts,
 ) -> Boosts {
-    let mut ev = EventCtx::new(event, Target::Pokemon(target), source, effect, Relay::Boosts(boosts));
-    match events::run_event(battle, &mut ev, None) {
+    match events::run_event_on(battle, event, target, source, effect, Relay::Boosts(boosts), None) {
         Relay::Boosts(b) => b,
         // A handler stopped the event: nothing is left to apply.
         _ => Boosts { changes: StatBoosts::default(), keys: 0 },

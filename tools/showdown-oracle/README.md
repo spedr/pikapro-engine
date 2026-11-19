@@ -47,7 +47,7 @@ stderr starts with `oracle: Showdown threw:` and the exit status is 4.
 
 The Showdown version is pinned exactly in `package.json` because conformance
 fixtures depend on it: a GitHub master commit
-(`a5df8274e85b0889bf2a9b3422a08b39732374fc`, 2026-09-22), since Champions
+(`5b88c476113d51a939bddbcd00b5cd182a5d8058`, 2026-11-18), since Champions
 Reg M-C isn't in an npm release. A git dependency ships TypeScript only, so
 `postinstall` runs Showdown's `build` to produce `dist/`; Showdown master
 needs Node 22.18 or newer. Upgrading is a deliberate change: bump the commit

@@ -28,6 +28,17 @@ impl<T: Copy + Default, const N: usize> StackVec<T, N> {
         self.len += 1;
     }
 
+    /// Appends the element already in the next slot and returns it, to be
+    /// written in place: the default in a vector that has never held more
+    /// than it does now (a new one), else whatever was last stored there.
+    /// Panics if full, as [`StackVec::push`].
+    #[inline]
+    pub(crate) fn push_slot(&mut self) -> &mut T {
+        assert!((self.len as usize) < N, "StackVec capacity {N} exceeded");
+        self.len += 1;
+        &mut self.items[self.len as usize - 1]
+    }
+
     /// The element at `index` of the whole capacity, whatever the length:
     /// one bound check (against `N`, a constant) where `self[index]` makes
     /// two (the length against `N`, then the index against the length). For

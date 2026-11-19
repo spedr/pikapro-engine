@@ -3,7 +3,7 @@
 Generates `pikapro-data`'s tables from Pokémon Showdown's data, using the
 Showdown version pinned by `tools/showdown-oracle` (so the data and the
 conformance oracle always agree). The generated files' headers name it as
-the package version plus the pinned commit (`0.11.11+a5df827`).
+the package version plus the pinned commit (`0.11.11+5b88c47`).
 
 ```sh
 (cd tools/showdown-oracle && npm ci)       # once

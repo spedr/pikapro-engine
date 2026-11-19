@@ -181,13 +181,18 @@ fn contact_penalty(battle: &mut Battle, protection: u128, target: Position, user
             let effect = super::events::Effect::Move(ids::OBSTRUCT);
             boosts::boost_from(battle, user, boosts::one_boost(BoostId::Def, -2), Some(target), effect, false, false);
         }
-        // `source.trySetStatus(status, target)`: the effect is
-        // `battle.effect`, the protection's condition (not a move: Flower
-        // Veil and Safeguard block it silently), with no status of its own,
-        // so failures are silent (as for a secondary).
+        // `source.trySetStatus(status, target, getActiveMove('Baneful
+        // Bunker'))`: the effect is the move (Poison Puppeteer confuses;
+        // Flower Veil and Safeguard say they block a move without
+        // secondaries), with no status of its own, so failures are silent
+        // (as for a secondary).
         Volatiles::BANEFUL_BUNKER | Volatiles::BURNING_BULWARK => {
-            let status = if protection == Volatiles::BANEFUL_BUNKER { StatusId::Poison } else { StatusId::Burn };
-            let effect = super::events::Effect::volatile(protection);
+            let (status, move_id) = if protection == Volatiles::BANEFUL_BUNKER {
+                (StatusId::Poison, ids::BANEFUL_BUNKER)
+            } else {
+                (StatusId::Burn, ids::BURNING_BULWARK)
+            };
+            let effect = super::events::Effect::Move(move_id);
             status::set_status_from(battle, user, status, Some(target), effect, true);
         }
         _ => {}

@@ -836,7 +836,7 @@ fn edge_cases() -> Vec<Case> {
 /// The comment a recorded transcript starts with: its name, how it was
 /// recorded, and the Showdown it was recorded from.
 fn provenance(name: &str) -> String {
-    format!("{name}: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master a5df827")
+    format!("{name}: `cargo run -p pikapro-server --example stream_fuzz`, Showdown master 5b88c47")
 }
 
 /// Whether `comment` is a transcript's [`provenance`] line, as this or an

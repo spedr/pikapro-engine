@@ -3105,7 +3105,7 @@ class ShowdownClient:
                     return await start_once()
                 except _Disconnected:
                     interrupted += 1
-                    self._event(logging.INFO, "challenge interrupted", user=target, attempt=interrupted)
+                    self._event(logging.INFO, "challenge interrupted", opponent=target, attempt=interrupted)
                     if interrupted >= 3:
                         raise ChallengeError("the challenge kept being interrupted") from None
                     await self._wait_reconnected()
@@ -3116,7 +3116,7 @@ class ShowdownClient:
                         # The server's cooldown ran from later than the client's (a
                         # slow team validation): once more, a full interval on.
                         too_soon += 1
-                        self._event(logging.WARNING, "challenge too soon", user=target, retry_in=self.config.challenge_interval or CHALLENGE_RETRY_S)
+                        self._event(logging.WARNING, "challenge too soon", opponent=target, retry_in=self.config.challenge_interval or CHALLENGE_RETRY_S)
                         self._last_challenge = time.monotonic()
                         if not self.config.challenge_interval:
                             await asyncio.sleep(CHALLENGE_RETRY_S)
@@ -3219,7 +3219,7 @@ class ShowdownClient:
             self._check_format(want_fmt, handler)
         if self.config.auto_battles:
             if want_user:
-                self._event(logging.WARNING, "from_user ignored", reason="the server picks the battles", user=want_user)
+                self._event(logging.WARNING, "from_user ignored", reason="the server picks the battles", from_user=want_user)
             if plan is not None:
                 self._event(logging.WARNING, "plan ignored", reason="the server picks the battles")
             return await self._auto_accept(n, team, want_fmt, handler)

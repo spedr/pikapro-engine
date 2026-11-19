@@ -10,7 +10,7 @@
 
 use core::cmp::Ordering;
 
-use pikapro_data::MoveId;
+use pikapro_data::{MoveId, MoveTarget};
 
 use super::targeting::{self, Loc};
 use super::{mon_action_speed, multiturn, order, position_of_mon, switching, update_speed_of, volatiles};
@@ -368,6 +368,17 @@ pub(crate) fn speed_sort_by_speed_draws(list: &[(Position, i32)], rng: &mut Batt
                 rng.shuffle(&mut [(); 2]);
             }
         }
+        // Three or four: distinct speeds (the usual case) draw nothing.
+        [a, b, c] => {
+            if a.1 == b.1 || a.1 == c.1 || b.1 == c.1 {
+                speed_sort_by_speed_draws_long(list, rng)
+            }
+        }
+        [a, b, c, d] => {
+            if a.1 == b.1 || a.1 == c.1 || a.1 == d.1 || b.1 == c.1 || b.1 == d.1 || c.1 == d.1 {
+                speed_sort_by_speed_draws_long(list, rng)
+            }
+        }
         _ => speed_sort_by_speed_draws_long(list, rng),
     }
 }
@@ -530,8 +541,7 @@ fn resolve_action_parts(
             actions.insert(0, a);
         }
     };
-    // `if (!action.order)`: an action that brings its own order keeps it
-    // (the Champions Encore's `changeAction` passes the Quashed 201).
+    // `if (!action.order)`: an action that brings its own order keeps it.
     if action.order == 0 {
         action.order = action.kind.order();
     }
@@ -593,22 +603,23 @@ fn resolve_action_parts(
     // the move and resolve a target the same way.
     multiturn::resolve_target_loc(battle, &mut action);
     // Champions (`BattleQueue.resolveAction`): a non-Ghost's Curse
-    // aims at its user (`targetLoc = getLocOf(pokemon)`), so it draws no
-    // random target, and its `originalTarget` is the user (`tracksTarget`).
+    // targets its user (`action.move.target = 'self'`), so the random
+    // target it is given is the user (no draw), which becomes its
+    // `originalTarget` ([`targets_self`]).
+    let mut target_type = None;
     if battle.format.mechanics == crate::format::Mechanics::Champions
-        && let (ActionKind::Move { move_id: pikapro_data::gen9::moves::CURSE, target_loc, .. }, Some(mon)) =
-            (&mut action.kind, action.mon)
+        && let (ActionKind::Move { move_id: pikapro_data::gen9::moves::CURSE, .. }, Some(mon)) =
+            (action.kind, action.mon)
         && let Some(user) = position_of_mon(battle, mon)
+        && !battle.state.at(user).is_some_and(|m| super::manipulation::has_type(m, pikapro_data::Type::Ghost))
     {
-        let ghost = battle.state.at(user).is_some_and(|m| super::manipulation::has_type(m, pikapro_data::Type::Ghost));
-        if !ghost {
-            *target_loc = targeting::loc_of(user, user);
-        }
+        target_type = Some(MoveTarget::User);
     }
     if let (ActionKind::Move { slot, move_id, target_loc: 0, gimmick }, Some(mon)) = (action.kind, action.mon)
         && let Some(user) = position_of_mon(battle, mon)
     {
-        let target = targeting::get_random_target(battle, user, volatiles::queued_move(battle, move_id).1);
+        let target_type = target_type.unwrap_or_else(|| volatiles::queued_move(battle, move_id).1);
+        let target = targeting::get_random_target(battle, user, target_type);
         if let Some(t) = target {
             let target_loc = targeting::loc_of(user, t);
             action.kind = ActionKind::Move { slot, move_id, target_loc, gimmick };
@@ -620,6 +631,29 @@ fn resolve_action_parts(
     action
 }
 
+/// The priority and target type of the move action's `ActiveMove`
+/// ([`volatiles::queued_move`], with Champions' Curse aimed at its user:
+/// [`targets_self`]).
+pub(crate) fn action_move(battle: &Battle, action: &Action) -> (i8, MoveTarget) {
+    let ActionKind::Move { move_id, .. } = action.kind else { return (0, MoveTarget::Normal) };
+    let (priority, target) = volatiles::queued_move(battle, move_id);
+    (
+        priority,
+        if targets_self(battle, move_id, action.mon, action.original_target) { MoveTarget::User } else { target },
+    )
+}
+
+/// Whether a queued move's `ActiveMove` targets its user
+/// (`action.move.target = 'self'`): Champions' `resolveAction` does this to
+/// a non-Ghost's Curse, and only that Curse has the user as its
+/// `originalTarget` (a Ghost's can't aim at itself).
+pub(crate) fn targets_self(battle: &Battle, move_id: MoveId, mon: Option<MonRef>, original: Option<MonRef>) -> bool {
+    move_id == pikapro_data::gen9::moves::CURSE
+        && battle.format.mechanics == crate::format::Mechanics::Champions
+        && mon.is_some()
+        && original == mon
+}
+
 /// Showdown's `getActionSpeed`: a move's priority (after resolving its
 /// target, which can draw) and the acting Pokémon's current action speed.
 ///
@@ -627,7 +661,7 @@ fn resolve_action_parts(
 /// stored: computing it again gives the same speed and draws nothing.
 pub(crate) fn get_action_speed(battle: &mut Battle, action: &mut Action) {
     if let (ActionKind::Move { move_id, target_loc, .. }, Some(mon)) = (action.kind, action.mon) {
-        let (mut priority, target_type) = volatiles::queued_move(battle, move_id);
+        let (mut priority, target_type) = action_move(battle, action);
         if let Some(user) = position_of_mon(battle, mon) {
             let target = order::get_target(battle, user, move_id, target_type, target_loc, None);
             // The move's own `onModifyPriority` (Grassy Glide), then

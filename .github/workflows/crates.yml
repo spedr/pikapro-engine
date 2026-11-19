@@ -8,20 +8,25 @@
 # member without `publish = false`, each after the workspace crates it
 # depends on. Renaming a crate needs no change here.
 #
-# PUBLISHING IS OFF. The `publish` job runs only from a vX.Y.Z tag, and only
-# when the workflow is run by hand with `publish` ticked, or on the tag push
-# itself when the repository variable CRATES_PUBLISH_ON_TAG is `true`. To
-# turn it on:
+# The `publish` job runs only from a vX.Y.Z tag, and only when the
+# workflow is run by hand with `publish` ticked, or on the tag push itself
+# when the repository variable CRATES_PUBLISH_ON_TAG is `true`. It runs in
+# the environment `crates-io`, whose required reviewers are the human gate
+# before an upload.
 #
-#   1. Create the environment `crates-io` in the repository settings, with
-#      required reviewers (the human gate before an upload).
-#   2. The first release of a crate needs an API token: add a crates.io
-#      token (scope `publish-new` and `publish-update`) as the environment
-#      secret CARGO_REGISTRY_TOKEN. Once every crate exists, configure
-#      trusted publishing on crates.io for each of them (this repository,
-#      workflow `crates.yml`, environment `crates-io`) and delete the
-#      secret: without it, the job gets a short-lived token by OIDC.
-#   3. Release: push a tag `vX.Y.Z` pointing at the release commit.
+# Publishing is by crates.io trusted publishing: each crate trusts this
+# workflow in that environment, and the job gets a short-lived token by
+# OIDC. If a secret CARGO_REGISTRY_TOKEN is set (in the environment or the
+# repository), the job uses it instead. The first release (0.1.0) needed
+# one, since trusted publishing can only be configured for a crate that
+# exists; a release that adds a new crate needs it again (a token with
+# scope `publish-new` and `publish-update`): configure trusted publishing
+# for the new crate afterwards and delete the secret.
+#
+# A release: the same release commit as for the wheels (see wheels.yml),
+# then a tag `vX.Y.Z` pointing at it; run this workflow on the tag ("Run
+# workflow", "Use workflow from: Tags / vX.Y.Z") with `publish` ticked, and
+# approve the upload when the publish job asks.
 #
 # A crate version already on crates.io is skipped, so a run that failed
 # halfway can be re-run. A version can be uploaded once; it can be yanked,
@@ -138,8 +143,8 @@ jobs:
         env:
           HAS_SECRET: ${{ secrets.CARGO_REGISTRY_TOKEN != '' }}
         run: echo "secret=${HAS_SECRET}" >> "${GITHUB_OUTPUT}"
-      # A short-lived token by OIDC (revoked when the job ends), unless the
-      # environment holds an API token (the first release).
+      # A short-lived token by OIDC (revoked when the job ends), unless a
+      # secret CARGO_REGISTRY_TOKEN is set.
       - name: crates.io trusted publishing
         id: auth
         if: steps.token.outputs.secret != 'true'

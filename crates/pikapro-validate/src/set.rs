@@ -1212,7 +1212,7 @@ impl Validator {
             }
             SourceKind::Egg => {
                 let mut blacklist = Vec::new();
-                return if self.find_egg_move_fathers(source, s, set_sources, &mut blacklist, false) {
+                return if self.find_egg_move_fathers(source, s, set_sources, &mut blacklist, 2) {
                     Ok(())
                 } else {
                     Err(Vec::new())

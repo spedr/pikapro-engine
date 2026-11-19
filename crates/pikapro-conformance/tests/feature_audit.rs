@@ -84,17 +84,18 @@ fn fixed_findings_stay_fixed() {
     let singles = Format::gen9_singles();
     let one = |format: &Format, source: Source, seed: u64| audit(format, source, seed..seed + 1);
     let fixed: [(&str, FeatureAudit); 20] = [
-        // Turn 8: confused after it moved, 1 turn and 0 checks; turn 9, 2
-        // turns and 1 check.
-        ("confusion_checks", one(&champions, Source::Sets, 9_100_032)),
-        // Turn 4: frozen, 1 attempt made (Champions thaws at the third).
-        ("status_turns freeze", one(&champions, Source::Sets, 9_100_004)),
+        // Confused after it moved: 1 turn and 0 checks, then 2 turns and 1
+        // check. (The Champions `Sets` repros' seeds were redrawn when the
+        // set pools changed with Showdown 5b88c47: each checks its rule.)
+        ("confusion_checks", one(&champions, Source::Sets, 9_100_057)),
+        // Frozen, attempts counted (Champions thaws at the third).
+        ("status_turns freeze", one(&champions, Source::Sets, 9_100_018)),
         // Turn 13: a Sleep Talk turn (`cant|slp`, then the move) counted
         // two attempts.
         ("status_turns sleep", one(&champions, Source::Target(Target::SleepTalk), 9_100_000)),
-        // Turn 5: Expanding Force in Psychic Terrain (`[spread]`) hit the
-        // Pressure foe it didn't name.
-        ("pp_spent (foe has Pressure)", one(&champions, Source::Sets, 9_100_284)),
+        // A spread move (Expanding Force in Psychic Terrain, `[spread]`)
+        // hitting a Pressure foe it didn't name.
+        ("pp_spent (foe has Pressure)", one(&champions, Source::Sets, 9_100_313)),
         // Dragon Darts at a foe hits its ally too (`smartTarget`).
         ("pp_spent (foe has Pressure)", one(&doubles, cycled(&Target::ALL, &doubles, 9_101_187), 9_101_187)),
         // Turn 3: a Sky Attack charged at a Pressure foe that switched out
@@ -108,7 +109,7 @@ fn fixed_findings_stay_fixed() {
         ("last_move", one(&doubles, cycled(&Target::COMBOS, &doubles, 9_100_124), 9_100_124)),
         // A replacement after the residuals: the volatiles' durations had
         // counted `|turn|` lines, a turn behind the field's.
-        ("durations after the residuals", one(&champions, Source::Sets, 9_100_052)),
+        ("durations after the residuals", one(&champions, Source::Sets, 9_100_076)),
         // Rest's sleep (3 turns; 2 or 3 otherwise in Champions) wasn't
         // encoded.
         ("sleep_from_rest", one(&champions, Source::Target(Target::SleepTalk), 9_100_003)),

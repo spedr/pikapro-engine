@@ -158,8 +158,11 @@ pub(super) fn run(
             }
             None
         }
+        // `onEnd`: silent, and only while it is still in effect
+        // (`!this.effectState.counter`: not after it ended, or before it
+        // started).
         (a::SLOW_START, Event::End, On) => {
-            if !mon(battle, holder).being_called_back {
+            if !mon(battle, holder).being_called_back && ability_state(battle, holder).slow_start > 0 {
                 end_line(battle, holder, "Slow Start", true);
             }
             None

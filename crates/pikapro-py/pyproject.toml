@@ -132,9 +132,11 @@ test-command = "pytest {project}/crates/pikapro-py/tests -q -p no:cacheprovider 
 test-environment = { PYTHONUTF8 = "1" }
 
 [tool.cibuildwheel.linux]
-# The manylinux and musllinux images have no Rust: install rustup, which
-# then installs the toolchain rust-toolchain.toml pins on first use.
-before-all = "curl -sSf https://sh.rustup.rs | sh -s -- -y --profile minimal --default-toolchain none"
+# The manylinux and musllinux images have no Rust: the script installs a
+# pinned, checksum-checked rustup, which then installs the toolchain
+# rust-toolchain.toml pins on first use. `{project}` is the checkout's root
+# as the container sees it.
+before-all = "sh {project}/.github/scripts/install_rustup.sh"
 environment = { PATH = "$HOME/.cargo/bin:$PATH", CARGO_TERM_COLOR = "always" }
 
 [tool.cibuildwheel.macos]

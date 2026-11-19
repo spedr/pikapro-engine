@@ -32,32 +32,31 @@
 # `pgo` unticked to build the same wheels without it (for debugging only: a
 # run that publishes always uses PGO).
 #
-# PUBLISHING IS OFF. Nothing is uploaded until the maintainer turns it on:
+# Publishing is by PyPI trusted publishing (OIDC: no API token is stored
+# anywhere): PyPI trusts this repository's `wheels.yml` in the environment
+# `pypi`, whose required reviewers are the human gate before an upload.
 #
-#   1. Check that the name `pikapro` is still free on PyPI
-#      (crates/pikapro-py/pyproject.toml, `name`).
-#   2. On PyPI, add a *pending* trusted publisher, since the project
-#      doesn't exist until its first upload: Account settings, Publishing;
-#      project `pikapro`, owner `spedr`, repository `pikapro-engine`,
-#      workflow `wheels.yml`, environment `pypi`. It doesn't reserve the
-#      name: add it just before the first release. A rehearsal on TestPyPI
-#      is optional: the same publisher there (a separate account), with
-#      environment `testpypi`.
-#   3. In the repository settings, create the environment `pypi` (and
-#      `testpypi` for a rehearsal), and add required reviewers to `pypi`.
-#      This is not optional: it is the human gate before an upload, and the
-#      only one when PYPI_PUBLISH_ON_TAG publishes on a tag push.
-#   4. Release: bump `version` in the workspace Cargo.toml, date the
-#      `## X.Y.Z (unreleased)` section of both changelogs (CHANGELOG.md and
-#      crates/pikapro-py/CHANGELOG.md), run tools/full-gate.sh, push that
-#      commit to main, then push a
-#      tag `vX.Y.Z` pointing at it. Then run this
-#      workflow on the tag ("Run workflow", "Use workflow from: Tags /
-#      vX.Y.Z") with `publish: pypi` (after `publish: testpypi`, for a
-#      rehearsal).
+# A release:
 #
-#      To publish on the tag push itself instead, set the repository
-#      variable PYPI_PUBLISH_ON_TAG to `true`.
+#   1. Bump `version` in the workspace Cargo.toml, date the unreleased
+#      section of both changelogs (CHANGELOG.md and
+#      crates/pikapro-py/CHANGELOG.md) as `## X.Y.Z (YYYY-MM-DD)`, run
+#      tools/full-gate.sh, and push that commit to main.
+#   2. Push a tag `vX.Y.Z` pointing at it. The tag push builds and tests
+#      everything but uploads nothing (unless PYPI_PUBLISH_ON_TAG is set,
+#      below).
+#   3. Run this workflow on the tag ("Run workflow", "Use workflow from:
+#      Tags / vX.Y.Z") with `publish: pypi`, and approve the `pypi`
+#      environment when the publish job asks.
+#
+# A rehearsal on TestPyPI is optional: the same trusted publisher there (a
+# separate account), environment `testpypi`, and `publish: testpypi` before
+# `publish: pypi`.
+#
+# To publish on the tag push itself instead, set the repository variable
+# PYPI_PUBLISH_ON_TAG to `true`; the `pypi` environment's approval still
+# gates the upload. A version can be uploaded to PyPI once; it can be
+# yanked, not replaced.
 #
 # The Rust crates are published by crates.yml, separately. A tag that isn't
 # `v` + the workspace version fails the sdist job, and the publish job.

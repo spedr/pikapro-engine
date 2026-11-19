@@ -1005,7 +1005,12 @@ fn add_future_move(battle: &mut Battle, target: Position, user: Position, move_i
     };
     let turn = battle.state.turn;
     let slot = &mut battle.state.side_mut(target.side).future_moves[target.slot as usize];
-    if slot.is_some() {
+    if let Some(waiting) = slot {
+        // `onRestart`: fails, with a hint if the waiting attack will never
+        // come (Gen 8+: it ends on turn 256 or later).
+        if waiting.ending_turn >= 256 {
+            battle.hint(crate::event::Hint::FutureMoveStuck);
+        }
         return false;
     }
     // `endingTurn = turn - 1 + 2`.
@@ -1014,8 +1019,8 @@ fn add_future_move(battle: &mut Battle, target: Position, user: Position, move_i
     // conditions (Wish), which ties with it shuffle around.
     battle.state.side_mut(target.side).conditions.slots[target.slot as usize].order.push(SlotCondition::FutureMove);
     battle.conditions_changed();
-    // `futuremove`'s `onStart` hint.
-    if turn + 1 >= 254 {
+    // `futuremove`'s `onStart` hint (Gen 8+: `endingTurn >= 256`).
+    if turn + 1 >= 256 {
         battle.hint(crate::event::Hint::FutureMoveTurnLimit);
     }
     true
@@ -1244,8 +1249,7 @@ fn future_move_end(battle: &mut Battle, pos: Position, fm: FutureMove) {
     }
     let target = actor(battle, pos);
     battle.emit(BattleEvent::FutureMoveEnd { target, move_id: fm.move_id });
-    // `removeVolatile('Protect')`, `removeVolatile('Endure')`.
-    mon_mut(battle, pos).volatiles.clear(Volatiles::PROTECT | Volatiles::ENDURE);
+    // (Its Protect and Endure stay: Endure holds against it.)
     future_move_hit(battle, pos, fm);
     // `futuremove`'s `onEnd`, after `trySpreadMoveHit` whatever it did: the
     // user's Life Orb, if it is on the field.

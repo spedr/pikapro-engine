@@ -1,0 +1,143 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format gen9doubles
+seed 7300 0011 7300 0012
+genders drawn
+team p1
+Pikachu @ Eject Pack
+Ability: Static
+Hardy Nature
+- Thunderbolt
+- Protect
+
+Shuckle
+Ability: Sturdy
+Level: 1
+Hardy Nature
+- Splash
+
+Shedinja
+Ability: Imposter
+Hardy Nature
+- Splash
+end
+team p2
+Glimmora
+Ability: Toxic Debris
+Level: 1
+Hardy Nature
+- Stealth Rock
+
+Magikarp
+Ability: Swift Swim
+Level: 1
+Hardy Nature
+- Splash
+
+Qwilfish
+Ability: Intimidate
+Level: 1
+Hardy Nature
+- Splash
+end
+choice p1 move 2, move 1
+choice p2 move 1, move 1
+choice p1 move 2, switch 3
+choice p2 switch 3, move 1
+choice p1 pass, switch 3
+choice p1 move 2, move 1
+choice p2 move 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|1
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9] Doubles Custom Game
+expect |raw|<div class="infobox"><details class="readmore" open><summary><strong>1 custom rule:</strong></summary> !Team Preview</details></div>
+expect |
+expect |t:|
+expect |teamsize|p1|3
+expect |teamsize|p2|3
+expect |start
+expect |split|p1
+expect |switch|p1a: Pikachu|Pikachu, F|211/211
+expect |switch|p1a: Pikachu|Pikachu, F|211/211
+expect |split|p1
+expect |switch|p1b: Shuckle|Shuckle, L1, M|11/11
+expect |switch|p1b: Shuckle|Shuckle, L1, M|11/11
+expect |split|p2
+expect |switch|p2a: Glimmora|Glimmora, L1, F|12/12
+expect |switch|p2a: Glimmora|Glimmora, L1, F|12/12
+expect |split|p2
+expect |switch|p2b: Magikarp|Magikarp, L1, F|11/11
+expect |switch|p2b: Magikarp|Magikarp, L1, F|11/11
+expect |turn|1
+expect |rng|2|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|0
+expect |move|p1a: Pikachu|Protect|p1a: Pikachu
+expect |-singleturn|p1a: Pikachu|Protect
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Glimmora|Stealth Rock|p1a: Pikachu
+expect |-sidestart|p1: p1|move: Stealth Rock
+expect |move|p2b: Magikarp|Splash|p2b: Magikarp
+expect |-nothing
+expect |move|p1b: Shuckle|Splash|p1b: Shuckle
+expect |-nothing
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Qwilfish|Qwilfish, L1, F|12/12
+expect |switch|p2a: Qwilfish|Qwilfish, L1, F|12/12
+expect |-ability|p2a: Qwilfish|Intimidate|boost
+expect |-unboost|p1a: Pikachu|atk|1
+expect |-unboost|p1b: Shuckle|atk|1
+expect |split|p1
+expect |switch|p1b: Shedinja|Shedinja|1/1
+expect |switch|p1b: Shedinja|Shedinja|1/1
+expect |split|p1
+expect |-damage|p1b: Shedinja|0 fnt|[from] Stealth Rock
+expect |-damage|p1b: Shedinja|0 fnt|[from] Stealth Rock
+expect |faint|p1b: Shedinja
+expect |move|p1a: Pikachu|Protect|p1a: Pikachu
+expect |rng|3|0
+expect |-singleturn|p1a: Pikachu|Protect
+expect |move|p2b: Magikarp|Splash|p2b: Magikarp
+expect |-nothing
+expect |
+expect |rng|2|1
+expect |upkeep
+expect |
+expect |t:|
+expect |split|p1
+expect |switch|p1b: Shuckle|Shuckle, L1, M|11/11
+expect |switch|p1b: Shuckle|Shuckle, L1, M|11/11
+expect |split|p1
+expect |-damage|p1b: Shuckle|9/11|[from] Stealth Rock
+expect |-damage|p1b: Shuckle|9/11|[from] Stealth Rock
+expect |turn|3
+expect |
+expect |t:|
+expect |move|p1a: Pikachu|Protect||[still]
+expect |rng|9|3
+expect |-fail|p1a: Pikachu
+expect |move|p2a: Qwilfish|Splash|p2a: Qwilfish
+expect |-nothing
+expect |move|p2b: Magikarp|Splash|p2b: Magikarp
+expect |-nothing
+expect |move|p1b: Shuckle|Splash|p1b: Shuckle
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|4

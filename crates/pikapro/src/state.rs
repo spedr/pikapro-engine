@@ -228,7 +228,7 @@ impl Volatiles {
     /// Block, Mean Look, Spirit Shackle, Jaw Lock. Counter:
     /// [`VolatileCounters::trapped_by`] (Showdown's linked `trapper`).
     pub const TRAPPED: u128 = 1 << 18;
-    /// No Retreat: the Pokémon can't switch out.
+    /// No Retreat: it can't be used again. It added a `trapped` volatile.
     pub const NO_RETREAT: u128 = 1 << 19;
     /// Counter: [`VolatileCounters::leech_seed_slot`].
     pub const LEECH_SEED: u128 = 1 << 20;
@@ -904,9 +904,13 @@ pub struct MoveRecord {
     pub hit_targets: Option<u8>,
     // Action order, targeting, move calling.
     /// Move slots (bit per index) whose PP was deducted since the Pokémon
-    /// switched in (Showdown's `moveSlot.used`, read by Last Resort).
-    /// Reset on switching in and when the move slots are replaced.
+    /// switched in (Showdown's `moveSlot.used`, read by Last Resort). Reset
+    /// on switching in and when Transform replaces the move slots; a
+    /// fainted Pokémon keeps them.
     pub used_moves: u8,
+    /// While transformed: its own move slots' `used_moves` from when it
+    /// transformed (`baseMoveSlots` keep their `used`), restored with them.
+    pub base_used_moves: u8,
 }
 
 /// A move's outcome as Showdown's `moveThisTurnResult`
@@ -1211,8 +1215,9 @@ pub struct PokemonState {
     /// Showdown's `forceSwitchFlag`: hit by Roar / Dragon Tail; dragged out
     /// at the end of the current action.
     pub force_switch_flag: bool,
-    /// Showdown's `skipBeforeSwitchOutEventFlag`: `BeforeSwitchOut` already
-    /// ran when the switch request was made.
+    /// Showdown's `skipPursuit` (formerly `skipBeforeSwitchOutEventFlag`):
+    /// `runPursuitActivation` already ran when the switch request was made,
+    /// or Baton Pass or Shed Tail skips it.
     pub skip_before_switch_out: bool,
     // Abilities and items.
     /// Showdown's `baseSpecies`: the set's species, or the forme a permanent
@@ -1859,7 +1864,7 @@ pub struct FieldState {
 
 /// The complete simulation state, minus the RNG and pending choices (which
 /// live on [`Battle`](crate::Battle)).
-#[derive(Clone, Copy, Debug, Default, PartialEq, Eq, Hash)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Hash)]
 pub struct BattleState {
     /// `0` before the first turn starts.
     pub turn: u16,
@@ -1867,6 +1872,16 @@ pub struct BattleState {
     pub sides: [SideState; 2],
     /// Field-wide conditions.
     pub field: FieldState,
+}
+
+/// Turn 0, two default sides and a default field (what deriving gives):
+/// the second side is a copy of the first, not a default side built
+/// again.
+impl Default for BattleState {
+    fn default() -> Self {
+        let side = SideState::default();
+        BattleState { turn: 0, sides: [side; 2], field: FieldState::default() }
+    }
 }
 
 impl BattleState {

@@ -1,0 +1,207 @@
+# Recorded from Pokémon Showdown by pikapro-conformance. Do not edit by hand.
+format championsvgc
+seed 7300 0005 7300 0006
+genders drawn
+team p1
+Snorlax
+Ability: Sheer Force
+Level: 50
+Hardy Nature
+- Iron Head
+- Splash
+
+Pikachu
+Ability: Static
+Level: 50
+Hardy Nature
+- Splash
+
+Eevee
+Ability: Run Away
+Level: 50
+Hardy Nature
+- Splash
+
+Vulpix
+Ability: Flash Fire
+Level: 50
+Hardy Nature
+- Splash
+
+Ditto
+Ability: Limber
+Level: 50
+Hardy Nature
+- Splash
+
+Chansey
+Ability: Natural Cure
+Level: 50
+Hardy Nature
+- Splash
+end
+team p2
+Pikachu @ Eject Button
+Ability: Static
+Level: 50
+Hardy Nature
+- Splash
+
+Eevee
+Ability: Run Away
+Level: 50
+Hardy Nature
+- Splash
+
+Absol
+Ability: Pressure
+Level: 50
+Hardy Nature
+- Splash
+
+Vulpix
+Ability: Flash Fire
+Level: 50
+Hardy Nature
+- Splash
+
+Ditto
+Ability: Limber
+Level: 50
+Hardy Nature
+- Splash
+
+Chansey
+Ability: Natural Cure
+Level: 50
+Hardy Nature
+- Splash
+end
+choice p1 team 1234
+choice p2 team 1234
+choice p1 move 1 1, move 1
+choice p2 move 1, move 1
+choice p2 switch 3
+choice p1 move 2, move 1
+choice p2 move 1, move 1
+expect |t:|
+expect |gametype|doubles
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|0
+expect |player|p1|p1||
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|1
+expect |player|p2|p2||
+expect |gen|9
+expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
+expect |rule|Species Clause: Limit one of each Pokemon
+expect |rule|Item Clause: Limit 1 of each item
+expect |clearpoke
+expect |poke|p1|Snorlax, L50, M|
+expect |poke|p1|Pikachu, L50, F|
+expect |poke|p1|Eevee, L50, M|
+expect |poke|p1|Vulpix, L50, M|
+expect |poke|p1|Ditto, L50|
+expect |poke|p1|Chansey, L50, F|
+expect |poke|p2|Pikachu, L50, F|
+expect |poke|p2|Eevee, L50, F|
+expect |poke|p2|Absol, L50, F|
+expect |poke|p2|Vulpix, L50, F|
+expect |poke|p2|Ditto, L50|
+expect |poke|p2|Chansey, L50, F|
+expect |teampreview|4
+expect |split|p1
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |split|p2
+expect |uhtml|otsrequest|<button name="send" value="/acceptopenteamsheets" class="button" style="margin-right: 10px;"><strong>Accept Open Team Sheets</strong></button><button name="send" value="/rejectopenteamsheets" class="button" style="margin-top: 10px"><strong>Deny Open Team Sheets</strong></button>
+expect
+expect |rng|2|1
+expect |
+expect |t:|
+expect |teamsize|p1|4
+expect |teamsize|p2|4
+expect |start
+expect |split|p1
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p2
+expect |uhtmlchange|otsrequest|
+expect
+expect |split|p1
+expect |switch|p1a: Snorlax|Snorlax, L50, M|235/235
+expect |switch|p1a: Snorlax|Snorlax, L50, M|100/100
+expect |split|p1
+expect |switch|p1b: Pikachu|Pikachu, L50, F|110/110
+expect |switch|p1b: Pikachu|Pikachu, L50, F|100/100
+expect |split|p2
+expect |switch|p2a: Pikachu|Pikachu, L50, F|110/110
+expect |switch|p2a: Pikachu|Pikachu, L50, F|100/100
+expect |rng|2|1
+expect |split|p2
+expect |switch|p2b: Eevee|Eevee, L50, F|130/130
+expect |switch|p2b: Eevee|Eevee, L50, F|100/100
+expect |rng|2|1
+expect |rng|2|1
+expect |turn|1
+expect |rng|2|0
+expect |
+expect |t:|
+expect |rng|2|1
+expect |rng|2|1
+expect |rng|2|0
+expect |move|p1b: Pikachu|Splash|p1b: Pikachu
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|0
+expect |rng|2|0
+expect |move|p2a: Pikachu|Splash|p2a: Pikachu
+expect |-nothing
+expect |rng|2|1
+expect |rng|2|0
+expect |rng|2|1
+expect |move|p2b: Eevee|Splash|p2b: Eevee
+expect |-nothing
+expect |rng|2|0
+expect |rng|2|1
+expect |rng|2|1
+expect |move|p1a: Snorlax|Iron Head|p2a: Pikachu
+expect |rng|100|5
+expect |rng|24|22
+expect |rng|16|10
+expect |-resisted|p2a: Pikachu|1
+expect |split|p2
+expect |-damage|p2a: Pikachu|65/110
+expect |-damage|p2a: Pikachu|59/100
+expect |rng|10|8
+expect |rng|2|0
+expect |rng|2|0
+expect |-enditem|p2a: Pikachu|Eject Button
+expect |rng|2|0
+expect |rng|2|0
+expect |
+expect |t:|
+expect |split|p2
+expect |switch|p2a: Absol|Absol, L50, F|140/140
+expect |switch|p2a: Absol|Absol, L50, F|100/100
+expect |-ability|p2a: Absol|Pressure
+expect |
+expect |upkeep
+expect |turn|2
+expect |
+expect |t:|
+expect |move|p1b: Pikachu|Splash|p1b: Pikachu
+expect |-nothing
+expect |move|p2a: Absol|Splash|p2a: Absol
+expect |-nothing
+expect |move|p2b: Eevee|Splash|p2b: Eevee
+expect |-nothing
+expect |move|p1a: Snorlax|Splash|p1a: Snorlax
+expect |-nothing
+expect |
+expect |upkeep
+expect |turn|3

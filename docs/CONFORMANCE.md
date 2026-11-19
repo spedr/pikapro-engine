@@ -6,7 +6,7 @@ through both simulators and the output has to match, down to each random
 draw.
 
 Showdown is pinned to master commit
-`a5df8274e85b0889bf2a9b3422a08b39732374fc`, since Champions
+`5b88c476113d51a939bddbcd00b5cd182a5d8058` (2026-11-18), since Champions
 Reg M-C exists only on master. [SHOWDOWN_REPIN.md](SHOWDOWN_REPIN.md) says
 how the pin is moved.
 
@@ -25,9 +25,13 @@ how the pin is moved.
 
 ## Status
 
-No divergence from Showdown is known in the eight formats. In two cases
+No divergence from Showdown is known in the eight formats. In one case
 Showdown itself throws or corrupts a team ([below](#where-showdown-throws)).
 
+- At the current pin, 53,560 battles across the eight formats (seeds
+  73,700,000 to 73,999,999): 4,000 per format with the fuzzer's teams,
+  12,360 with targeted mechanics, 6,000 mirrors and 3,200 with legal
+  teams, all matching Showdown draw for draw.
 - Broad differential coverage comprises about 128,000 battles with mirror
   teams, forced mechanics and debug assertions.
 - `gen9ou` coverage comprises about 70,000 battles: 51,500 between teams
@@ -309,7 +313,7 @@ A mechanic that touches any of these must keep Showdown's order.
 | Queue sort ties | `speedSort(queue)` in `commitChoices` and the Gen 8+ re-sort before each move | `queue::sort` |
 | Insertion ties | `insertChoice` places tied actions with `random(first, last + 1)` (e.g. `runSwitch`) | `queue::insert_choice` |
 | Target draws | `getRandomTarget` → `randomFoe()` → `sample()` from `resolveAction`, `getActionSpeed` → `getTarget`, `runMove` → `getTarget`, and `getMoveTargets` | `resolve/targeting.rs` |
-| Active-Pokémon sorts | `eachEvent` (`Update` after most actions and hits, `BeforeTurn`), `runSwitch` | `each_event`, `run_switch` |
+| Active-Pokémon sorts | `eachEvent` (`Update` after most actions and hits and in `runPursuitActivation`, when a switch request is made or a switch starts, `BeforeTurn`), `runSwitch` | `each_event`, `each_update`, `run_switch` |
 | Handler sorts | every `runEvent` with two or more handlers (`speedSort`: order, priority, speed, sub-order; abilities 7, items 8), `fieldEvent('Residual')` and `fieldEvent('SwitchIn')`; ties are shuffled from the collection order (for `runEvent`: the target's status, volatiles in the order they were added, ability, item and slot conditions, the allies' and foes' prefixed handlers, the source's, the sides', the field's; for `fieldEvent`: field, then per side its conditions and each active Pokémon's handlers, then side and field handlers acting on it). A pseudo-weather's sub-order is 2 until one of its handlers has run through `runEvent`, then 5. `TryHit`, `DamagingHit` and `Invulnerability` sort left to right without draws; `priorityEvent` (`RedirectTarget`, `WeatherModifyDamage`) without draws | `resolve/events.rs`, `handlers.rs` |
 | Drag targets | `dragIn` → `getRandomSwitchable` → `sample()` (draws even with one candidate), after the Roar / Dragon Tail action | `switching::run_drags` |
 | Move rolls | accuracy, crit, damage roll, Protect's `stall` chance | `resolve/moves.rs` |
@@ -326,16 +330,7 @@ Two details matter everywhere:
 
 ## Where Showdown throws
 
-One rare case in doubles. A Pokémon comes in early through an Eject Pack
-switch and faints on entry, and the switch its partner queued at the start
-of the turn then brings it in again. Showdown leaves it in two slots and
-throws on the forced switches at the end of the turn.
-
-pikapro matches Showdown through that turn's `|upkeep`. After that it goes
-on by its own rules, so the battle can finish. The oracle exits with status
-4 on a throw, and `cargo conformance` reports it as a failure.
-
-The other is a choice no client sends: two `team` pieces at team preview in
+A choice no client sends: two `team` pieces at team preview in
 doubles (`default, team 1`, or ` team 12, team 34` with a leading space).
 Showdown's `chooseTeam` has no check for a team already chosen and queues
 both pieces' actions, eight for a team of four. The battle then starts with

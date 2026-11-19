@@ -4,6 +4,7 @@ traceback)."""
 
 from __future__ import annotations
 
+import json
 import logging
 
 import pytest
@@ -150,6 +151,20 @@ def test_good_arguments_reach_the_client(monkeypatch, capsys, tmp_path):
     assert '"summary"' in capsys.readouterr().out
 
 
+def test_a_team_file_with_crlf_line_ends_is_read(monkeypatch, capsys, tmp_path):
+    """A file saved on Windows: its CRLF line ends read as \\n."""
+    monkeypatch.setattr(cli, "ShowdownClient", StubClient)
+    StubClient.made = []
+    export = pikapro.sample_team("championsvgc")
+    team = tmp_path / "team.txt"
+    team.write_bytes(export.replace("\n", "\r\n").encode("utf-8"))
+    assert cli.main(["ladder", "--format", FMT, "--team", str(team), "--handler", "random"]) == 0
+    [client] = StubClient.made
+    [(_, _, _, pick)] = client.calls
+    assert pick(FMT) == export
+    capsys.readouterr()
+
+
 @pytest.mark.parametrize("flag", ["--games", "--concurrent"])
 @pytest.mark.parametrize("value", ["0", "-3", "two"])
 def test_games_and_concurrent_are_at_least_one(monkeypatch, capsys, flag, value):
@@ -182,3 +197,19 @@ def test_one_line_that_is_no_packed_team_is_refused(monkeypatch, capsys, tmp_pat
     other.write_text("Missingno||||Pound|||||||\n", encoding="utf-8")
     assert cli.main(["ladder", "--format", "gen1ou", "--team", str(other), "--handler", "random"]) == 0
     capsys.readouterr()
+
+
+def _record(event, account, /, **fields):
+    """A log record as ``ShowdownClient._event`` makes it (``account`` is
+    the record's ``user``)."""
+    return logging.makeLogRecord(
+        {"name": "pikapro.showdown", "levelname": "INFO", "msg": "x", "event": event, "fields": fields, "user": account}
+    )
+
+
+def test_a_json_record_keeps_the_account_and_a_field_of_a_reserved_name():
+    """A field named like one of the record's own keys doesn't break the
+    formatter or replace the key: it is written as ``field_<name>``."""
+    out = json.loads(cli._JsonFormatter().format(_record("some event", "me", user="them", level=3, room="battle-1")))
+    assert out["event"] == "some event" and out["user"] == "me" and out["level"] == "INFO"
+    assert out["field_user"] == "them" and out["field_level"] == 3 and out["room"] == "battle-1"

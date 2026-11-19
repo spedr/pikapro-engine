@@ -263,10 +263,10 @@ expect |player|p1|p1||
 expect |player|p2|p2||
 expect |gen|9
 expect |tier|[Gen 9] Random Battle
-expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Species Clause: Limit one of each Pokemon
 expect |rule|HP Percentage Mod: HP is shown in percentages
 expect |rule|Sleep Clause Mod: Limit one foe put to sleep
-expect |rule|Illusion Level Mod: Illusion disguises the Pokémon's true level
+expect |rule|Illusion Level Mod: Illusion disguises the Pokemon's true level
 expect |
 expect |t:|
 expect |teamsize|p1|6
@@ -1149,6 +1149,7 @@ expect |-damage|p2a: ThisNameIsFarTooLong|3/100
 expect |rng|2|0
 expect |rng|2|1
 expect |rng|2|1
+expect |rng|2|1
 expect |
 expect |t:|
 expect |split|p1
@@ -1160,14 +1161,14 @@ expect |turn|53
 expect |
 expect |t:|
 expect |move|p1a: Kirlia|Fire Fang|p2a: ThisNameIsFarTooLong
-expect |rng|100|82
-expect |rng|24|9
-expect |rng|16|13
+expect |rng|100|39
+expect |rng|24|20
+expect |rng|16|7
 expect |-supereffective|p2a: ThisNameIsFarTooLong
 expect |split|p2
 expect |-damage|p2a: ThisNameIsFarTooLong|0 fnt
 expect |-damage|p2a: ThisNameIsFarTooLong|0 fnt
-expect |rng|100|47
+expect |rng|100|9
 expect |rng|100|9
 expect |faint|p2a: ThisNameIsFarTooLong
 expect |
@@ -1184,11 +1185,11 @@ expect |split|p1
 expect |switch|p1a: Hoopa|Hoopa, L91, shiny|167/282
 expect |switch|p1a: Hoopa|Hoopa, L91, shiny|60/100
 expect |move|p2a: Seadra|Magical Leaf|p1a: Hoopa
-expect |rng|24|2
-expect |rng|16|15
+expect |rng|24|23
+expect |rng|16|7
 expect |split|p1
-expect |-damage|p1a: Hoopa|144/282
-expect |-damage|p1a: Hoopa|52/100
+expect |-damage|p1a: Hoopa|141/282
+expect |-damage|p1a: Hoopa|50/100
 expect |
 expect |split|p2
 expect |-damage|p2a: Seadra|93/206 psn|[from] psn
@@ -1198,27 +1199,31 @@ expect |turn|55
 expect |
 expect |t:|
 expect |move|p2a: Seadra|Magical Leaf|p1a: Hoopa
-expect |rng|24|11
-expect |rng|16|12
+expect |rng|24|19
+expect |rng|16|15
 expect |split|p1
-expect |-damage|p1a: Hoopa|120/282
-expect |-damage|p1a: Hoopa|43/100
+expect |-damage|p1a: Hoopa|118/282
+expect |-damage|p1a: Hoopa|42/100
 expect |move|p1a: Hoopa|Bitter Blade|p2a: Seadra
-expect |rng|100|96
+expect |rng|100|73
 expect |rng|24|17
-expect |rng|16|11
+expect |rng|16|8
 expect |-resisted|p2a: Seadra
 expect |split|p2
-expect |-damage|p2a: Seadra|55/206 psn
-expect |-damage|p2a: Seadra|27/100 psn
+expect |-damage|p2a: Seadra|53/206 psn
+expect |-damage|p2a: Seadra|26/100 psn
 expect |split|p1
-expect |-heal|p1a: Hoopa|139/282|[from] drain|[of] p2a: Seadra
-expect |-heal|p1a: Hoopa|50/100|[from] drain|[of] p2a: Seadra
-expect |rng|10|5
+expect |-heal|p1a: Hoopa|138/282|[from] drain|[of] p2a: Seadra
+expect |-heal|p1a: Hoopa|49/100|[from] drain|[of] p2a: Seadra
+expect |rng|10|0
+expect |-status|p1a: Hoopa|psn|[from] ability: Poison Point|[of] p2a: Seadra
 expect |
 expect |split|p2
-expect |-damage|p2a: Seadra|30/206 psn|[from] psn
-expect |-damage|p2a: Seadra|15/100 psn|[from] psn
+expect |-damage|p2a: Seadra|28/206 psn|[from] psn
+expect |-damage|p2a: Seadra|14/100 psn|[from] psn
+expect |split|p1
+expect |-damage|p1a: Hoopa|103/282 psn|[from] psn
+expect |-damage|p1a: Hoopa|37/100 psn|[from] psn
 expect |upkeep
 expect |turn|56
 expect |
@@ -1227,16 +1232,16 @@ expect |split|p1
 expect |switch|p1a: X|Sliggoo, L98, F|262/275
 expect |switch|p1a: X|Sliggoo, L98, F|96/100
 expect |move|p2a: Seadra|Magical Leaf|p1a: X
-expect |rng|24|1
-expect |rng|16|10
+expect |rng|24|15
+expect |rng|16|11
 expect |-resisted|p1a: X
 expect |split|p1
 expect |-damage|p1a: X|249/275
 expect |-damage|p1a: X|91/100
 expect |
 expect |split|p2
-expect |-damage|p2a: Seadra|5/206 psn|[from] psn
-expect |-damage|p2a: Seadra|3/100 psn|[from] psn
+expect |-damage|p2a: Seadra|3/206 psn|[from] psn
+expect |-damage|p2a: Seadra|2/100 psn|[from] psn
 expect |upkeep
 expect |turn|57
 expect |
@@ -1245,10 +1250,10 @@ expect |split|p1
 expect |switch|p1a: Kirlia|Kirlia, M|93/232
 expect |switch|p1a: Kirlia|Kirlia, M|41/100
 expect |move|p2a: Seadra|Magical Leaf|p1a: Kirlia
-expect |rng|24|16
-expect |rng|16|3
+expect |rng|24|5
+expect |rng|16|5
 expect |split|p1
-expect |-damage|p1a: Kirlia|43/232
+expect |-damage|p1a: Kirlia|44/232
 expect |-damage|p1a: Kirlia|19/100
 expect |
 expect |split|p2

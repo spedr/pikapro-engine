@@ -41,7 +41,11 @@ class _JsonFormatter(logging.Formatter):
         out = {"time": self.formatTime(record), "level": record.levelname, "logger": record.name}
         event = getattr(record, "event", None)
         if event is not None:
-            out.update(event=event, user=getattr(record, "user", None), **getattr(record, "fields", {}))
+            out.update(event=event, user=getattr(record, "user", None))
+            # A field named like one of the record's own keys keeps its
+            # value under `field_<name>`.
+            for key, value in getattr(record, "fields", {}).items():
+                out[f"field_{key}" if key in out else key] = value
         else:
             out["message"] = record.getMessage()
         return json.dumps(out, default=repr)

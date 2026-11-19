@@ -162,31 +162,48 @@ fn mon_row(m: &MonRef<'_>, tables: &Tables, o: &mut [f32]) {
         one_hot(&mut o[at..at + STATUSES.len()], status - 1);
     }
     at += STATUSES.len();
-    for b in m.boosts() {
-        push(o, &mut at, f32::from(b) / 6.0);
+    // Off the field its stages are 0, as the row is.
+    if m.is_active() {
+        for b in m.boosts() {
+            push(o, &mut at, f32::from(b) / 6.0);
+        }
+    } else {
+        at += BOOSTS.len();
     }
     if let Some(t) = m.types(tables) {
-        for k in 0..TYPES {
-            o[at + k] = f32::from(u8::from(t.bits() & (1 << k) != 0));
+        // The row is zero: only its types are written (Stellar and `???`
+        // are past the one-hot, and write nothing).
+        let types = &mut o[at..at + TYPES];
+        one_hot(types, t.set.primary as usize);
+        if let Some(s) = t.set.secondary {
+            one_hot(types, s as usize);
+        }
+        if let Some(a) = t.added {
+            one_hot(types, a as usize);
         }
     }
     at += TYPES;
     push(o, &mut at, flag(m.terastallized() || m.is_mega()));
-    for mv in m.moves() {
-        let start = at;
-        if let Some(id) = mv.slot.id() {
-            let facts = tables.move_facts(id);
-            push(o, &mut at, 1.0);
-            push(o, &mut at, f32::from(facts.base_power) / 200.0);
-            one_hot(&mut o[at..at + TYPES], usize::from(facts.ty));
-            at += TYPES;
-            one_hot(&mut o[at..at + CATEGORIES.len()], usize::from(facts.category));
-            at += CATEGORIES.len();
-            push(o, &mut at, mv.pp_frac(tables));
-            push(o, &mut at, flag(mv.disabled));
-        }
-        at = start + MOVE;
-    }
+    move_rows(m, tables, &mut o[at..at + MAX_MOVES * MOVE]);
+}
+
+/// A Pokémon's four move slots, written where they go (`o`: the row's
+/// `MAX_MOVES * MOVE` values for them, zero): each known slot's values
+/// straight from the row's sources. Out of line: the slots' sources are
+/// three loops (`MonRef::each_move_pp`), each with the writes below.
+#[inline(never)]
+fn move_rows(m: &MonRef<'_>, tables: &Tables, o: &mut [f32]) {
+    m.each_move_pp(|i, mv| {
+        let Some(id) = mv.slot.id() else { return };
+        let o = &mut o[i * MOVE..(i + 1) * MOVE];
+        let facts = tables.move_facts(id);
+        o[0] = 1.0;
+        o[1] = f32::from(facts.base_power) / 200.0;
+        one_hot(&mut o[2..2 + TYPES], usize::from(facts.ty));
+        one_hot(&mut o[2 + TYPES..2 + TYPES + CATEGORIES.len()], usize::from(facts.category));
+        o[MOVE - 2] = mv.pp_frac(tables);
+        o[MOVE - 1] = flag(mv.disabled);
+    });
 }
 
 fn side_row(ctx: &ViewCtx<'_>, side: usize, o: &mut [f32]) {
@@ -197,8 +214,12 @@ fn side_row(ctx: &ViewCtx<'_>, side: usize, o: &mut [f32]) {
     push(o, &mut at, if size > 0 { f32::from(s.fainted.min(size)) / f32::from(size) } else { 0.0 });
     push(o, &mut at, flag(s.tera_used || s.mega_used));
     for c in SideCondition::ALL {
+        // A condition the side doesn't have is 0, as the row is.
         let layers = s.conditions[c as usize].layers;
-        push(o, &mut at, f32::from(layers.min(max_layers(c))) / f32::from(max_layers(c)));
+        if layers > 0 {
+            o[at] = f32::from(layers.min(max_layers(c))) / f32::from(max_layers(c));
+        }
+        at += 1;
     }
 }
 

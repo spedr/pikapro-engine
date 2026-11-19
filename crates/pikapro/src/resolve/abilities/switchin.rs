@@ -156,10 +156,14 @@ pub(super) fn run(battle: &mut Battle, ev: &mut EventCtx<'_>, holder: Position, 
             None
         }
         (a::SUPREME_OVERLORD, Event::End, On) => {
-            // `-end|<pokemon>|fallen${fallen}|[silent]`, `fallenundefined`
-            // when it never started.
-            const FALLEN: [&str; 6] = ["fallenundefined", "fallen1", "fallen2", "fallen3", "fallen4", "fallen5"];
+            // `-end|<pokemon>|fallen${fallen}|[silent]`, only while it is
+            // in effect (`if (pokemon.beingCalledBack ||
+            // !this.effectState.fallen) return`).
+            const FALLEN: [&str; 6] = ["fallen0", "fallen1", "fallen2", "fallen3", "fallen4", "fallen5"];
             let fallen = ability_state(battle, holder).fallen.min(5);
+            if mon(battle, holder).being_called_back || fallen == 0 {
+                return None;
+            }
             let target = actor(battle, holder);
             battle.emit(BattleEvent::EffectStartEnd {
                 actor: target,
@@ -347,9 +351,14 @@ fn commander_update(battle: &mut Battle, pos: Position) {
     if mon(battle, ally).volatiles.has(Volatiles::COMMANDED) {
         return;
     }
-    // `queue.cancelAction(pokemon)`.
+    // `queue.cancelAction(pokemon)`, which keeps its `runSwitch`
+    // (`sim/battle-queue.ts`, `cancelAction`, Showdown 5b88c47). Not
+    // reachable in the engine's formats: mid-turn only another `runSwitch`
+    // or an `instaswitch` sorts ahead of a queued `runSwitch`, `Update`
+    // doesn't run when an `instaswitch` is next, and the `peek()` check
+    // above returns when a `runSwitch` is.
     let me = queue::MonRef { side: pos.side, id: mon(battle, pos).id };
-    battle.queue.retain(|a| a.mon != Some(me));
+    battle.queue.retain(|a| a.mon != Some(me) || a.kind == queue::ActionKind::RunSwitch);
     let (holder, of) = (actor(battle, pos), actor(battle, ally));
     let effect = EffectName::Ability(a::COMMANDER);
     battle.emit(BattleEvent::ActivateEffect { actor: holder, effect, args: [None, None], of: Some(of) });
@@ -697,8 +706,9 @@ pub(crate) fn terastallized(battle: &mut Battle, pos: Position) {
 /// `faintMessages`' `formeRegression`: a fainted Pokémon's base species
 /// and ability go back to its set's (`detailschange|...|[silent]`,
 /// `updateMaxHp`), unless it was transformed (`transformed`: before
-/// `clearVolatile`).
-pub(crate) fn faint_forme_regression(battle: &mut Battle, pos: Position, transformed: bool) {
+/// `clearVolatile`). One that fainted disguised (`illusion`) changes
+/// silently.
+pub(crate) fn faint_forme_regression(battle: &mut Battle, pos: Position, transformed: bool, illusion: bool) {
     // `pokemon.illusion = null`; `clearVolatile` resets `apparentType`.
     mon_mut(battle, pos).illusion = None;
     mon_mut(battle, pos).illusion_apparent = None;
@@ -725,7 +735,17 @@ pub(crate) fn faint_forme_regression(battle: &mut Battle, pos: Position, transfo
     m.stats = m.set_stats;
     m.speed = i32::from(m.stats[Stat::Spe]);
     let (level, gender, target) = (m.level, m.gender, actor(battle, pos));
-    battle.emit(BattleEvent::DetailsChange { actor: target, species: base, level, tera: None, silent: true, gender });
+    // Not for a Pokémon that fainted disguised (`if (!illusion)`).
+    if !illusion {
+        battle.emit(BattleEvent::DetailsChange {
+            actor: target,
+            species: base,
+            level,
+            tera: None,
+            silent: true,
+            gender,
+        });
+    }
 }
 
 /// `setWeather`'s message when `SetWeather` returns `false` (a primal
@@ -1258,7 +1278,7 @@ mod tests {
         let mon = b.state.at(P1).unwrap();
         assert_eq!((mon.species, mon.forme_regression), (s::ZYGARDE_COMPLETE, Some(s::ZYGARDE_10)));
         assert!(mon.max_hp() > max);
-        super::faint_forme_regression(&mut b, P1, false);
+        super::faint_forme_regression(&mut b, P1, false, false);
         let mon = &b.state.side(SideId::P1).team[0];
         assert_eq!((mon.species, mon.base_species, mon.max_hp()), (s::ZYGARDE_10, s::ZYGARDE_10, max));
     }

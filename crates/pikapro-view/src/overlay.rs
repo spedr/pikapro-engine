@@ -287,13 +287,48 @@ impl OwnOverlay {
                 OwnRequest::Move
             }
         };
-        out.mons.clear();
         let s = battle.state().side(side);
-        for (i, mon) in s.team.iter().enumerate() {
+        // The Pokémon are written where they are, field by field.
+        if out.mons.len() != s.team.len() {
+            out.mons.clear();
+            for _ in 0..s.team.len() {
+                out.mons.push(OwnMon::default());
+            }
+        }
+        for (i, (o, mon)) in out.mons.iter_mut().zip(s.team.iter()).enumerate() {
+            // Every field, by name: a new one must be set here.
+            let OwnMon {
+                id,
+                species,
+                level,
+                gender,
+                hp,
+                max_hp,
+                status,
+                active,
+                stats,
+                moves,
+                item,
+                ability,
+                base_ability,
+                tera_type,
+                terastallized,
+                commanding,
+                reviving,
+            } = o;
+            *id = mon.id;
+            *species = pikapro_protocol::details_species(mon.base_species);
+            *level = mon.level;
+            *gender = mon.gender;
+            *hp = mon.hp;
+            *max_hp = mon.max_hp();
+            // `0 fnt`: a fainted Pokémon's request shows no status.
+            *status = if mon.hp == 0 { StatusKind::None } else { StatusKind::of(mon.status) };
+            *active = i < n_active;
             let transformed = mon.volatiles.has(Volatiles::TRANSFORMED);
             // `baseStoredStats`: the current forme's (the one it
             // transformed in, if it did), from the set.
-            let stats = match mon.volatile_counters.transform {
+            *stats = match mon.volatile_counters.transform {
                 None if !transformed && mon.species == mon.base_species => {
                     let st = mon.set_stats;
                     [st[Stat::Atk], st[Stat::Def], st[Stat::SpA], st[Stat::SpD], st[Stat::Spe]]
@@ -308,27 +343,14 @@ impl OwnOverlay {
                         .map(|st| calc_stat(st, base[st], mon.ivs[st], mon.evs[st], mon.level, mon.nature))
                 }
             };
-            let active = i < n_active;
-            out.mons.push(OwnMon {
-                id: mon.id,
-                species: pikapro_protocol::details_species(mon.base_species),
-                level: mon.level,
-                gender: mon.gender,
-                hp: mon.hp,
-                max_hp: mon.max_hp(),
-                // `0 fnt`: a fainted Pokémon's request shows no status.
-                status: if mon.hp == 0 { StatusKind::None } else { StatusKind::of(mon.status) },
-                active,
-                stats,
-                moves: mon.moves.map(|m| m.id),
-                item: mon.item,
-                ability: mon.ability,
-                base_ability: mon.base_ability,
-                tera_type: battle.shown_tera_type(mon),
-                terastallized: mon.terastallized.then_some(mon.tera_type),
-                commanding: mon.volatiles.has(Volatiles::COMMANDING) && !mon.is_fainted(),
-                reviving: active && s.active(i).is_some() && s.conditions.slots[i].has(SlotCondition::RevivalBlessing),
-            });
+            *moves = mon.moves.map(|m| m.id);
+            *item = mon.item;
+            *ability = mon.ability;
+            *base_ability = mon.base_ability;
+            *tera_type = battle.shown_tera_type(mon);
+            *terastallized = mon.terastallized.then_some(mon.tera_type);
+            *commanding = mon.volatiles.has(Volatiles::COMMANDING) && !mon.is_fainted();
+            *reviving = *active && s.active(i).is_some() && s.conditions.slots[i].has(SlotCondition::RevivalBlessing);
         }
     }
 

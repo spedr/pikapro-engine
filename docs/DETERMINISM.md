@@ -32,7 +32,7 @@ formulas, over one of three sources:
 
 | seed | source | use |
 |---|---|---|
-| `Seed::Fast(u64)` | xoshiro256++ (SplitMix64 expansion) | default; training (random-battle teams still come from the Gen 5 LCG, as Showdown's do) |
+| `Seed::Fast(u64)` | xoshiro256++ (SplitMix64 expansion) | default; training (random-battle teams from `TeamGenerator` use the Gen 5 seed `gen5,<seed>`, so Showdown can reproduce them) |
 | `Seed::ShowdownGen5([u16; 4])` | Showdown's Gen 5 LCG (`a = 0x5D588B656C078965`, `c = 0x269EC3`) | conformance; identical stream to Showdown's `gen5,…` seeds |
 | `Seed::Sodium([u8; 32])` | Showdown's `SodiumRNG`: a ChaCha20 block (nonce `LibsodiumDRG`, counter 0) per draw, keyed by the seed; its first 32 bytes are the next seed, the next 4 (big-endian) the draw | Showdown's default seeds (`sodium,…`), e.g. in `pikapro-server`'s battle stream |
 

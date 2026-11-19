@@ -26,7 +26,7 @@ pip install pikapro        # CPython 3.10+ on Linux, macOS and Windows
 
 ```toml
 [dependencies]
-pikapro = "0.1"
+pikapro = "0.2"
 ```
 
 ## Usage
@@ -91,7 +91,7 @@ random battles on both simulators and compares their logs line by line,
 along with every random draw, and over 1,300 matching battles replay as
 fixtures in `cargo test`. No divergence is known in these formats, against
 Showdown's commit
-[`a5df827`](https://github.com/smogon/pokemon-showdown/commit/a5df8274e85b0889bf2a9b3422a08b39732374fc)
+[`5b88c47`](https://github.com/smogon/pokemon-showdown/commit/5b88c476113d51a939bddbcd00b5cd182a5d8058)
 ([conformance](docs/CONFORMANCE.md)). The Champions and VGC formats have
 been tested the longest. OU and the random battles are newer and less
 thoroughly tested, so rare divergences are more likely there, though they

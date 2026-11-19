@@ -203,7 +203,7 @@ impl BattleInfo {
                 info.rules = [
                     "HP Percentage Mod: HP is shown in percentages",
                     "Endless Battle Clause: Forcing endless battles is banned",
-                    "Species Clause: Limit one of each Pokémon",
+                    "Species Clause: Limit one of each Pokemon",
                     "OHKO Clause: OHKO moves are banned",
                     "Evasion Items Clause: Evasion items are banned",
                     "Evasion Moves Clause: Evasion moves are banned",
@@ -219,10 +219,10 @@ impl BattleInfo {
             "gen9randombattle" => {
                 info.tier = "[Gen 9] Random Battle".into();
                 info.rules = [
-                    "Species Clause: Limit one of each Pokémon",
+                    "Species Clause: Limit one of each Pokemon",
                     "HP Percentage Mod: HP is shown in percentages",
                     "Sleep Clause Mod: Limit one foe put to sleep",
-                    "Illusion Level Mod: Illusion disguises the Pokémon's true level",
+                    "Illusion Level Mod: Illusion disguises the Pokemon's true level",
                 ]
                 .map(String::from)
                 .to_vec();
@@ -230,9 +230,9 @@ impl BattleInfo {
             "gen9randomdoublesbattle" => {
                 info.tier = "[Gen 9] Random Doubles Battle".into();
                 info.rules = [
-                    "Species Clause: Limit one of each Pokémon",
+                    "Species Clause: Limit one of each Pokemon",
                     "HP Percentage Mod: HP is shown in percentages",
-                    "Illusion Level Mod: Illusion disguises the Pokémon's true level",
+                    "Illusion Level Mod: Illusion disguises the Pokemon's true level",
                     "Sleep Clause Mod: Limit one foe put to sleep",
                 ]
                 .map(String::from)
@@ -253,7 +253,7 @@ impl BattleInfo {
     pub fn with_flat_rules(mut self, tier: &str, open_team_sheets: bool) -> BattleInfo {
         self.tier = tier.into();
         self.rules =
-            vec!["Species Clause: Limit one of each Pokémon".into(), "Item Clause: Limit 1 of each item".into()];
+            vec!["Species Clause: Limit one of each Pokemon".into(), "Item Clause: Limit 1 of each item".into()];
         self.custom_rules = Vec::new();
         self.report_exact_hp = false;
         self.open_team_sheets = open_team_sheets;
@@ -1531,6 +1531,10 @@ impl Renderer {
             Hint::WishTurnLimit(turn) => {
                 write!(out, "In Gen 8+, Wish will never resolve when used on the {turn}th turn.")
             }
+            Hint::FutureMoveStuck => {
+                write!(out, "A previous future attack is stuck on this slot and will never resolve.")
+            }
+            Hint::WishStuck => write!(out, "A previous Wish is stuck on this slot and will never resolve."),
             Hint::CantUseTwice(m) => write!(out, "Some effects can force a Pokemon to use {} again in a row.", name(m)),
             Hint::TransformMimicry => {
                 write!(out, "Transform Mimicry changes you to your original un-transformed types.")
@@ -1546,7 +1550,7 @@ impl Renderer {
             }
             Hint::SleepClauseMod => write!(
                 out,
-                "Sleep Clause Mod prevents players from putting more than one of their opponent's Pokémon to sleep at a time"
+                "Sleep Clause Mod prevents players from putting more than one of their opponent's Pokemon to sleep at a time"
             ),
             Hint::IllusionLevelMod => {
                 write!(out, "Illusion Level Mod is active, so this Pokémon's true level was hidden.")

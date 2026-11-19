@@ -220,7 +220,12 @@ impl Battle {
             // build and copy in).
             let built = &mut battle.state.side_mut(side).team;
             for (id, set) in team.sets.iter().enumerate() {
-                built.push(build_pokemon(&battle.format, set, id as u8, &mut battle.rng));
+                // Written into the team's next slot, which holds a default
+                // Pokémon (the team is new): no Pokémon built apart and
+                // copied in.
+                let slot = built.push_slot();
+                debug_assert!(*slot == PokemonState::default());
+                build_pokemon(slot, &battle.format, set, id as u8, &mut battle.rng);
             }
             battle.emit(BattleEvent::Player { side });
         }
@@ -316,6 +321,15 @@ impl Battle {
                     .active(slot)
                     .is_none_or(|m| m.is_fainted() || m.volatiles.has(crate::state::Volatiles::COMMANDING))
             })
+    }
+
+    /// The team positions, as bits (bit `i` for position `i`), of the
+    /// Pokémon that switches already queued for `side` will bring in later
+    /// this turn (Showdown's `queue.getSwitches(side)`): during a switch
+    /// request mid-turn, a doubles partner's switch chosen at the start of
+    /// the turn. They can't be chosen to switch in now.
+    pub fn queued_switch_ins(&self, side: SideId) -> u8 {
+        crate::resolve::queued_switch_ins(self, side)
     }
 
     /// The legal actions for `side`'s current request. Computed once when
@@ -581,10 +595,11 @@ pub(crate) fn fixed_gender(rule: GenderRule) -> Option<Gender> {
 }
 
 /// A set's Pokémon as the battle starts with it (Showdown's `Pokemon`
-/// constructor), drawing its gender if the set and the species give none.
-/// Always inlined into [`Battle::new`], its one caller.
+/// constructor), drawing its gender if the set and the species give none:
+/// written over `mon`, a default Pokémon (the fields not named here keep
+/// their defaults). Always inlined into [`Battle::new`], its one caller.
 #[inline(always)]
-fn build_pokemon(format: &Format, set: &PokemonSet, id: u8, rng: &mut BattleRng) -> PokemonState {
+fn build_pokemon(mon: &mut PokemonState, format: &Format, set: &PokemonSet, id: u8, rng: &mut BattleRng) {
     let gender = gender(format, set, rng);
     let dex = format.dex;
     let species = dex.species(set.species);
@@ -594,60 +609,47 @@ fn build_pokemon(format: &Format, set: &PokemonSet, id: u8, rng: &mut BattleRng)
     for s in Stat::ALL {
         stats[s] = calc_stat(s, species.base_stats[s], ivs[s], evs[s], level, set.nature);
     }
-    let moves = set
-        .moves
-        .iter()
-        .map(|&id| {
-            let pp = move_max_pp(format.mechanics, dex.move_(id));
-            MoveSlot { id, pp, max_pp: pp, disabled: false, target: None }
-        })
-        .collect();
+    for &id in set.moves.iter() {
+        let pp = move_max_pp(format.mechanics, dex.move_(id));
+        mon.moves.push(MoveSlot { id, pp, max_pp: pp, disabled: false, target: None });
+    }
     // Arceus's type is its Plate's with Multitype.
     let types = crate::resolve::abilities::switchin::multitype_types(format, set).unwrap_or(species.types);
-    PokemonState {
-        id,
-        species: set.species,
-        level,
-        base_types: types,
-        species_types: species.types,
-        types,
-        // The simulator's `this.set.teraType || this.types[0]` (the
-        // validator fills in a forced one: pikapro-validate's team).
-        tera_type: set.tera_type.unwrap_or(species.types.primary),
-        tera_blocked: crate::resolve::tera::blocked_at_start(format, set),
-        ability: set.ability,
-        base_ability: set.ability,
-        set_ability: set.ability,
-        base_species: set.species,
-        set_species: set.species,
-        item: set.item,
-        hp: stats[Stat::Hp],
-        // Showdown initialises the stored speed to the raw Speed stat.
-        speed: stats[Stat::Spe] as i32,
-        stats,
-        set_stats: stats,
-        evs,
-        ivs,
-        nature: set.nature,
-        moves,
-        // `apparentType` starts as the forme's own types (an Arceus of
-        // another type reveals it at the end of a turn).
-        volatile_counters: crate::state::VolatileCounters {
-            apparent_types: (types != species.types).then_some(species.types),
-            ..Default::default()
-        },
-        // `canMegaEvo`, from the set's species and item.
-        can_mega_evo: crate::resolve::mega::can_mega_evo(format, set.species, set.item),
-        // (What the Endless Battle Clause reads of the set: only worked
-        // out in a format that has the clause.)
-        endless: if format.endless_battle_clause {
-            crate::resolve::endless::of_set(set)
-        } else {
-            crate::state::EndlessState::default()
-        },
-        gender,
-        ..PokemonState::default()
+    mon.id = id;
+    mon.species = set.species;
+    mon.level = level;
+    mon.base_types = types;
+    mon.species_types = species.types;
+    mon.types = types;
+    // The simulator's `this.set.teraType || this.types[0]` (the
+    // validator fills in a forced one: pikapro-validate's team).
+    mon.tera_type = set.tera_type.unwrap_or(species.types.primary);
+    mon.tera_blocked = crate::resolve::tera::blocked_at_start(format, set);
+    mon.ability = set.ability;
+    mon.base_ability = set.ability;
+    mon.set_ability = set.ability;
+    mon.base_species = set.species;
+    mon.set_species = set.species;
+    mon.item = set.item;
+    mon.hp = stats[Stat::Hp];
+    // Showdown initialises the stored speed to the raw Speed stat.
+    mon.speed = stats[Stat::Spe] as i32;
+    mon.stats = stats;
+    mon.set_stats = stats;
+    mon.evs = evs;
+    mon.ivs = ivs;
+    mon.nature = set.nature;
+    // `apparentType` starts as the forme's own types (an Arceus of
+    // another type reveals it at the end of a turn).
+    mon.volatile_counters.apparent_types = (types != species.types).then_some(species.types);
+    // `canMegaEvo`, from the set's species and item.
+    mon.can_mega_evo = crate::resolve::mega::can_mega_evo(format, set.species, set.item);
+    // (What the Endless Battle Clause reads of the set: only worked
+    // out in a format that has the clause.)
+    if format.endless_battle_clause {
+        mon.endless = crate::resolve::endless::of_set(set);
     }
+    mon.gender = gender;
 }
 
 /// A move's maximum PP in a set under `mechanics` (Showdown's

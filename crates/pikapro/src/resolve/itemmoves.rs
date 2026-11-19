@@ -69,12 +69,25 @@ fn item_of(battle: &Battle, pos: Position) -> Option<ItemId> {
 /// until a berry was eaten, Stuff Cheeks without a berry. The Champions
 /// mod removes both (the moves just fail) and gives Fake Out and First
 /// Impression one instead (`data/mods/champions/moves.ts`: disabled once
-/// the Pokémon has acted since it came in, `pokemon.activeMoveActions`).
-/// The move request reads it (`volatiles::request_shows_usable`), for a
-/// fainted Pokémon too.
+/// the Pokémon has acted since it came in, `pokemon.activeMoveActions`),
+/// and Last Resort one (disabled with fewer than two moves, or while
+/// another move has not been used since it came in: its `onTry` would
+/// fail). The move request reads it (`volatiles::request_shows_usable`),
+/// for a fainted Pokémon too.
 pub(crate) fn own_disable_move(format: &Format, mon: &PokemonState, move_id: MoveId) -> bool {
     if format.mechanics == Mechanics::Champions {
-        return matches!(move_id, ids::FAKE_OUT | ids::FIRST_IMPRESSION) && mon.active_move_actions > 0;
+        return match move_id {
+            ids::FAKE_OUT | ids::FIRST_IMPRESSION => mon.active_move_actions > 0,
+            ids::LAST_RESORT => {
+                mon.moves.len() < 2
+                    || mon
+                        .moves
+                        .iter()
+                        .enumerate()
+                        .any(|(i, slot)| slot.id != ids::LAST_RESORT && mon.record.used_moves & (1 << i) == 0)
+            }
+            _ => false,
+        };
     }
     match move_id {
         ids::BELCH => !mon.ate_berry,

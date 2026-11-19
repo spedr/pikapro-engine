@@ -17,9 +17,13 @@ use crate::rng::BattleRng;
 use crate::state::{MAX_ACTIVE, MAX_MOVES, MAX_TEAM, Position, SideId, SideState, SlotCondition, Volatiles};
 use crate::util::StackVec;
 
-/// Upper bound on per-slot actions: 4 moves x 3 targets x 2 (gimmick or not)
-/// + 5 switches, rounded up.
-pub const MAX_SLOT_ACTIONS: usize = 32;
+/// Upper bound on per-slot actions, exact. In doubles a Pokémon that can
+/// both Terastallize and Mega Evolve (Power Construct Zygarde holding
+/// Zygardite, as Zygarde-Complete) lists 4 moves x 3 targets (two foes and
+/// the ally) x 3 (plain, Tera, Mega) + 4 switches = 40; singles needs
+/// 4 x 3 + 5. Not rounded up: [`LegalActions`] is copied whole (cached on
+/// every [`Battle`], returned by value), so each spare entry costs.
+pub const MAX_SLOT_ACTIONS: usize = 40;
 
 /// One slot's legal actions ([`LegalActions::slot`]).
 pub type SlotActions = StackVec<SlotAction, MAX_SLOT_ACTIONS>;
@@ -404,7 +408,9 @@ pub(crate) fn fill_legal_actions(battle: &Battle, side: SideId, legal: &mut Lega
     fill_actions::<false>(battle, side, None, legal);
 }
 
-/// [`legal_actions`], or with `shown` [`shown_actions`].
+/// [`legal_actions`], or with `shown` [`shown_actions`]. Always inlined:
+/// LLVM doesn't inline it at this size.
+#[inline(always)]
 fn actions(battle: &Battle, side: SideId, shown: Option<&Revealed>) -> LegalActions {
     let mut legal = LegalActions { request: battle.request(side), ..LegalActions::default() };
     fill_actions::<false>(battle, side, shown, &mut legal);
@@ -427,7 +433,12 @@ fn fill_actions<const FORMAT_ONLY: bool>(
     legal.active = active as u8;
     legal.team_len = s.team.len() as u8;
     // The Pokémon that can switch in, found once (each slot lists them).
-    let bench = bench_bits(s);
+    // Mid-turn, not one a queued switch of the side brings in (Showdown's
+    // `possibleSwitches`, and `switchIns` seeded from the queue).
+    let mut bench = bench_bits(s);
+    if let Request::ForceSwitch { .. } = request {
+        bench &= !resolve::queued_switch_ins(battle, side);
+    }
     legal.bench = bench.count_ones() as u8;
     match request {
         Request::Wait | Request::TeamPreview { .. } => {}

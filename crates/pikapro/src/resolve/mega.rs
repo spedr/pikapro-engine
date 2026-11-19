@@ -17,7 +17,7 @@
 //! - The Champions mod keeps the Mega forme after fainting (no
 //!   `formeRegression`).
 
-use pikapro_data::gen9::{abilities as a, moves as ids};
+use pikapro_data::gen9::abilities as a;
 use pikapro_data::{Event, ItemId, MoveId, SpeciesId};
 
 use super::events::Effect;
@@ -102,13 +102,10 @@ pub(crate) enum WeatherAsker {
 }
 
 /// Mega Sol (`pokemon.effectiveWeather()`): while the Pokémon using a move
-/// (`battle.activePokemon`) has Mega Sol, a move's, a weather's or Mega
-/// Sol's own question gets sun, whatever the weather (Electro Shot's is
-/// not changed).
-pub(crate) fn mega_sol(battle: &Battle, asker: WeatherAsker) -> bool {
-    if asker == WeatherAsker::Move(ids::ELECTRO_SHOT) {
-        return false;
-    }
+/// (`battle.activePokemon`) has Mega Sol, a move's (Electro Shot's too: it
+/// charges even in rain), a weather's or Mega Sol's own question gets sun,
+/// whatever the weather.
+pub(crate) fn mega_sol(battle: &Battle, _asker: WeatherAsker) -> bool {
     battle.active_move.is_some_and(|(user, _)| abilities::has_ability(battle, user, a::MEGA_SOL))
 }
 
@@ -281,7 +278,7 @@ mod tests {
         // The Champions mod keeps the Mega forme when it faints.
         assert_eq!(mega.forme_regression, None);
         b.state.at_mut(pos).unwrap().hp = 0;
-        abilities::switchin::faint_forme_regression(&mut b, pos, false);
+        abilities::switchin::faint_forme_regression(&mut b, pos, false, false);
         assert_eq!(b.state.side(SideId::P1).team[0].base_species, s::CHARIZARD_MEGA_Y);
     }
 

@@ -156,15 +156,12 @@ fn random_battles_with_switching_moves_terminate() {
     }
 }
 
-/// An Eject Pack switch brings in the Pokémon the other slot's queued switch
-/// is for, and it faints on entry. The queued switch still brings it in, as
-/// Showdown's `switchIn` does (it checks only `isActive`), with 0 HP, and
-/// nothing of it runs (`fieldEvent` skips a fainted holder: no Imposter).
-/// Showdown throws at the end of that turn; pikapro lets the Pokémon the
-/// stale switch benched, left at the other slot's team position, switch in
-/// again, and the battle goes on.
+/// An Eject Pack can't bring in the Pokémon the other slot's queued switch
+/// is for: Showdown's `possibleSwitches` leaves out a queued switch's
+/// target, so with no other Pokémon to come in `canSwitch` is 0 and the
+/// Eject Pack doesn't activate. The queued switch brings that Pokémon in.
 #[test]
-fn a_stale_switch_to_a_pokemon_that_fainted_after_an_eject_pack_switch() {
+fn an_eject_pack_cant_take_the_target_of_a_queued_switch() {
     use pikapro::data::gen9::{abilities as a, items};
     let set = |species, level, ability, moves: &[MoveId]| mon(species, level, moves).with_ability(ability);
     let p1 = vec![
@@ -181,31 +178,65 @@ fn a_stale_switch_to_a_pokemon_that_fainted_after_an_eject_pack_switch() {
         Battle::new(Format::gen9_doubles(), [Team::new(p1), Team::new(p2)], BattleOptions::new(Seed::fast(1))).unwrap();
     let mv = common::move_action;
     // Turn 1: Stealth Rock. Turn 2: Shuckle's switch to Shedinja waits
-    // behind Glimmora's switch to Qwilfish, whose Intimidate sets off
+    // behind Glimmora's switch to Qwilfish, whose Intimidate would set off
     // Pikachu's Eject Pack.
     battle.submit(SideId::P1, Choice::doubles(mv(1), mv(0))).unwrap();
     battle.submit(SideId::P2, Choice::doubles(mv(0), mv(0))).unwrap();
     battle.submit(SideId::P1, Choice::doubles(mv(1), SlotAction::Switch(2))).unwrap();
     battle.submit(SideId::P2, Choice::doubles(SlotAction::Switch(2), mv(0))).unwrap();
-    assert_eq!(battle.request(SideId::P1), Request::ForceSwitch { slots: [true, false] });
-    // Shedinja comes in for Pikachu and faints to Stealth Rock.
-    battle.submit(SideId::P1, Choice::doubles(SlotAction::Switch(2), SlotAction::Pass)).unwrap();
-    let events = battle.events();
-    let stale = events
-        .iter()
-        .position(|e| matches!(e, BattleEvent::Switch { actor, hp: 0, .. } if actor.species == s::SHEDINJA))
-        .expect("the stale switch brings Shedinja in with 0 HP");
-    assert!(!events[stale..].iter().any(|e| matches!(e, BattleEvent::Transform { .. })), "no Imposter");
-    // Shuckle, benched by the stale switch, is at slot 0's team position.
     let p1 = battle.state().side(SideId::P1);
-    assert_eq!(p1.team[0].species, s::SHUCKLE);
-    assert_eq!(p1.active, [None, None]);
-    assert_eq!(battle.request(SideId::P1), Request::ForceSwitch { slots: [true, true] });
-    let legal = battle.legal_actions(SideId::P1);
-    assert_eq!(legal.slot(0), &[SlotAction::Switch(0), SlotAction::Switch(2)]);
-    battle.submit(SideId::P1, Choice::doubles(SlotAction::Switch(0), SlotAction::Switch(2))).unwrap();
-    let p1 = battle.state().side(SideId::P1);
-    assert_eq!((p1.team[0].species, p1.team[1].species), (s::SHUCKLE, s::PIKACHU));
-    assert_eq!(p1.active, [Some(0), Some(1)]);
+    assert_eq!(p1.team[0].item, Some(items::EJECT_PACK), "the Eject Pack stays");
+    assert!(
+        !battle
+            .events()
+            .iter()
+            .any(|e| matches!(e, BattleEvent::Switch { actor, hp: 0, .. } if actor.species == s::SHEDINJA))
+    );
+    // Shedinja came in through the queued switch and fainted to Stealth
+    // Rock: Shuckle replaces it.
+    assert_eq!(battle.request(SideId::P1), Request::ForceSwitch { slots: [false, true] });
+    battle.submit(SideId::P1, Choice::doubles(SlotAction::Pass, SlotAction::Switch(2))).unwrap();
     play_random(&mut battle, 1);
+}
+
+/// A U-turn user's switch request comes after `runPursuitActivation`
+/// (whose `eachEvent('Update')` draws on speed ties): it sets
+/// `skipPursuit`, so switching in doesn't run it again. Shed Tail sets
+/// it as it hits, as Baton Pass does. Issue #2.
+#[test]
+fn a_switch_request_runs_pursuit_activation_first() {
+    for (move_id, ninjask_hp) in [(m::U_TURN, false), (m::SHED_TAIL, true)] {
+        let p1 = vec![mon(s::NINJASK, 50, &[move_id]), mon(s::SHUCKLE, 50, &[m::SPLASH])];
+        let p2 = vec![mon(s::NINJASK, 50, &[m::SPLASH]), mon(s::SHUCKLE, 50, &[m::SPLASH])];
+        let mut battle = singles(p1, p2, 7);
+        battle.submit(SideId::P1, move_1()).unwrap();
+        battle.submit(SideId::P2, move_1()).unwrap();
+        assert_eq!(battle.request(SideId::P1), Request::ForceSwitch { slots: [true, false] });
+        let user = battle.state().side(SideId::P1).team[0];
+        assert!(user.skip_before_switch_out, "{move_id:?}");
+        assert_eq!(user.hp < user.max_hp(), ninjask_hp, "{move_id:?}");
+    }
+}
+
+/// A side with nothing left to switch in skips `checkFainted`: its
+/// fainted Pokémon keeps its status (burned by its Flame Orb), and the
+/// status's handlers still take part in the residual sort. Issue #2.
+#[test]
+fn a_fainted_pokemon_keeps_its_status_without_replacements() {
+    use pikapro::data::gen9::items;
+    let snorlax = || mon(s::SNORLAX, 1, &[m::SPLASH]).with_item(items::FLAME_ORB);
+    let p1 = vec![snorlax(), mon(s::ARCANINE, 50, &[m::SPLASH])];
+    let p2 = vec![snorlax(), mon(s::ARCANINE, 100, &[m::SPLASH, m::FLAMETHROWER]), mon(s::CHANSEY, 50, &[m::SPLASH])];
+    let mut battle =
+        Battle::new(Format::gen9_doubles(), [Team::new(p1), Team::new(p2)], BattleOptions::new(Seed::fast(3))).unwrap();
+    let mv = common::move_action;
+    battle.submit(SideId::P1, Choice::doubles(mv(0), mv(0))).unwrap();
+    battle.submit(SideId::P2, Choice::doubles(mv(0), mv(0))).unwrap();
+    let flamethrower = SlotAction::Move { index: 1, target: Some(pikapro::Target::Foe(0)), gimmick: None };
+    battle.submit(SideId::P1, Choice::doubles(mv(0), mv(0))).unwrap();
+    battle.submit(SideId::P2, Choice::doubles(mv(0), flamethrower)).unwrap();
+    assert_eq!(battle.request(SideId::P1), Request::Move, "no replacement to choose");
+    let fainted = battle.state().side(SideId::P1).team[0];
+    assert!(fainted.is_fainted());
+    assert_eq!(fainted.status, pikapro::Status::Burn);
 }

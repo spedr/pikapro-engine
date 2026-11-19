@@ -591,12 +591,12 @@ pub enum ProblemKind {
     OneNecrozmaDawnWings,
     /// `You cannot have more than one Calyrex-Ice/Calyrex-Shadow.` and the Reins of Unity line.
     OneCalyrex,
-    /// `You are limited to one of each Pokémon by Species Clause.` and `(You have more than one <base>)`.
+    /// `You are limited to one of each Pokemon by Species Clause.` and `(You have more than one <base>)`.
     SpeciesClause {
         /// The base species.
         base: SpeciesId,
     },
-    /// `Your Pokémon must have different nicknames.` and `(You have more than one <nickname>)`.
+    /// `Your Pokemon must have different nicknames.` and `(You have more than one <nickname>)`.
     NicknameClause {
         /// The nickname.
         nickname: String,
@@ -608,7 +608,7 @@ pub enum ProblemKind {
         /// The item.
         item: ItemId,
     },
-    /// `You can only use one restricted Pokémon (you have: <species>)` (or `up to two`).
+    /// `You can only use one restricted Pokemon (you have: <species>)` (or `up to two`).
     Restricted {
         /// How many restricted Pokémon are allowed.
         limit: u8,
@@ -838,11 +838,11 @@ impl ProblemKind {
                 "(It's untradeable and you can only make one with the Reins of Unity.)".to_owned(),
             ],
             ProblemKind::SpeciesClause { base } => vec![
-                "You are limited to one of each Pokémon by Species Clause.".to_owned(),
+                "You are limited to one of each Pokemon by Species Clause.".to_owned(),
                 format!("(You have more than one {})", sp(*base)),
             ],
             ProblemKind::NicknameClause { nickname } => vec![
-                "Your Pokémon must have different nicknames.".to_owned(),
+                "Your Pokemon must have different nicknames.".to_owned(),
                 format!("(You have more than one {nickname})"),
             ],
             ProblemKind::ItemClause { limit, item } => vec![
@@ -852,9 +852,9 @@ impl ProblemKind {
             ProblemKind::Restricted { limit, species } => {
                 let names: Vec<&str> = species.iter().map(|&s| sp(s)).collect();
                 one(if *limit == 1 {
-                    format!("You can only use one restricted Pokémon (you have: {})", names.join(", "))
+                    format!("You can only use one restricted Pokemon (you have: {})", names.join(", "))
                 } else {
-                    format!("You can only use up to two restricted Pokémon (you have: {})", names.join(", "))
+                    format!("You can only use up to two restricted Pokemon (you have: {})", names.join(", "))
                 })
             }
         }

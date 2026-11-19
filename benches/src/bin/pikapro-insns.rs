@@ -72,6 +72,15 @@ fn workloads() -> Vec<Workload> {
         let teams = w::teams(&format);
         measured(|| (0..BATTLES / 2).map(|seed| w::play(&format, &teams, seed, true) as u64).sum())
     }));
+    // Generated competitive teams instead of the sample team's mirror
+    // (few speed ties, more abilities and items with handlers).
+    out.push(workload("battle-sets/championsvgc", || {
+        let format = w::format("championsvgc");
+        let teams = w::set_teams(&format, 64);
+        measured(|| {
+            (0..BATTLES).map(|seed| w::play(&format, &teams[seed as usize % teams.len()], seed, false) as u64).sum()
+        })
+    }));
     out.push(workload("fork/championsvgc", || {
         let format = w::format("championsvgc");
         let snapshots = w::snapshots(&format, &w::teams(&format), 0, 50);
@@ -145,6 +154,47 @@ fn workloads() -> Vec<Workload> {
             })
         }));
     }
+    // Self-play as a training loop runs it: both players' actions come
+    // from the caller, each drawn from its mask (in a first run from the
+    // same seed, replayed here), and both are observed and masked; the
+    // workloads above send `RANDOM_ACTION` and skip decoding it. Counts the
+    // episodes ended, and a million per action rejected (none: the replay
+    // is the first run).
+    out.push(workload("vec-env-actions/championsvgc", || {
+        let format = w::format("championsvgc");
+        let mut config = w::env_config(&format, 16, 0, 1);
+        config.opponent = pikapro_rl::vec::Opponent::External.into();
+        let env = pikapro_rl::env::VecEnv::new(config, 1).expect("env");
+        let mut out = env.buffers();
+        let mut rng = pikapro::BattleRng::new(pikapro::Seed::fast(1));
+        env.reset(Some(0), &mut out.as_out()).expect("reset");
+        let mut actions = Vec::new();
+        for _ in 0..300 {
+            let a = w::mask_actions(&env, &out, &mut rng);
+            env.step(&a, &mut out.as_out()).expect("step");
+            actions.push(a);
+        }
+        env.reset(Some(0), &mut out.as_out()).expect("reset");
+        measured(|| {
+            let mut sum = 0;
+            for a in &actions {
+                env.step(a, &mut out.as_out()).expect("step");
+                sum += out.end_reason.iter().filter(|&&r| r != 0).count() as u64;
+                sum +=
+                    1_000_000 * out.status.iter().filter(|&&s| s == pikapro_rl::vec::status::REJECTED).count() as u64;
+            }
+            sum
+        })
+    }));
+    // Both sides' overlays at consecutive decision points, each refreshed
+    // in place over the last (what the environment does after every
+    // resolution, between the tracker and the encoder).
+    out.push(workload("overlay/championsvgc", || {
+        let format = w::format("championsvgc");
+        let snapshots = w::snapshots(&format, &w::teams(&format), 0, SNAPSHOTS);
+        let mut own = [pikapro_view::OwnOverlay::default(); 2];
+        measured(|| (0..10).map(|_| w::refresh_overlays(&snapshots, &mut own)).sum())
+    }));
     for id in w::FORMATS {
         out.push(workload(format!("construct/{id}"), move || {
             let format = w::format(id);

@@ -162,7 +162,7 @@ expect |player|p1|p1||
 expect |player|p2|p2||
 expect |gen|9
 expect |tier|[Gen 9 Champions] VGC 2026 Reg M-C
-expect |rule|Species Clause: Limit one of each Pokémon
+expect |rule|Species Clause: Limit one of each Pokemon
 expect |rule|Item Clause: Limit 1 of each item
 expect |clearpoke
 expect |poke|p1|Ampharos, L50, M|
@@ -652,6 +652,7 @@ expect |split|p2
 expect |-damage|p2b: Tauros|21/156 brn
 expect |-damage|p2b: Tauros|13/100 brn
 expect |
+expect |rng|2|0
 expect |split|p2
 expect |-damage|p2b: Tauros|12/156 brn|[from] brn
 expect |-damage|p2b: Tauros|7/100 brn|[from] brn
@@ -662,22 +663,23 @@ expect |t:|
 expect |move|p1b: Torkoal|Speed Swap|p1a: Azumarill
 expect |-activate|p1b: Torkoal|move: Speed Swap|[of] p1a: Azumarill
 expect |move|p1a: Azumarill|Flail|p2b: Tauros
-expect |rng|100|38
-expect |rng|24|17
-expect |rng|16|0
+expect |rng|100|73
+expect |rng|24|0
+expect |rng|16|6
+expect |-crit|p2b: Tauros
 expect |split|p2
-expect |-damage|p2b: Tauros|5/156 brn
-expect |-damage|p2b: Tauros|3/100 brn
+expect |-damage|p2b: Tauros|3/156 brn
+expect |-damage|p2b: Tauros|1/100 brn
+expect |-setboost|p2b: Tauros|atk|6|[from] ability: Anger Point
 expect |move|p2b: Tauros|Bug Buzz|p1a: Azumarill
-expect |rng|100|40
-expect |rng|24|7
-expect |rng|16|9
+expect |rng|100|29
+expect |rng|24|14
+expect |rng|16|0
 expect |-resisted|p1a: Azumarill|1
 expect |split|p1
-expect |-damage|p1a: Azumarill|140/175
-expect |-damage|p1a: Azumarill|80/100
-expect |rng|100|4
-expect |-unboost|p1a: Azumarill|spd|1
+expect |-damage|p1a: Azumarill|137/175
+expect |-damage|p1a: Azumarill|78/100
+expect |rng|100|53
 expect |split|p2
 expect |-damage|p2b: Tauros|0 fnt|[from] item: Life Orb
 expect |-damage|p2b: Tauros|0 fnt|[from] item: Life Orb

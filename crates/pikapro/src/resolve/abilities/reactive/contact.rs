@@ -455,8 +455,9 @@ pub(super) fn damage(
         }
         // Berserk, Anger Shell: `checked` is false during a single-hit
         // move's damage (the healing berries wait for its
-        // `AfterMoveSecondary`). Scarlet/Violet also exempt a Sheer Force
-        // move. `effect.multihit` is the active move's: Parental Bond's
+        // `AfterMoveSecondary`). Scarlet/Violet also exempt a move whose
+        // secondaries Sheer Force dropped (`suppressingSecondaries()`).
+        // `effect.multihit` is the active move's: Parental Bond's
         // `onPrepareHit` sets it to 2.
         a::BERSERK | a::ANGER_SHELL => {
             let multihit = ev.effect.move_id().is_some_and(|m| {
@@ -464,8 +465,7 @@ pub(super) fn damage(
                     || (battle.move_state.parental_bond && battle.active_move.is_some_and(|(_, a)| a == m))
             });
             let sheer_force = battle.format.mechanics == Mechanics::ScarletViolet
-                && battle.move_state.has_sheer_force
-                && ev.source.is_some_and(|s| abilities::has_ability(battle, s, a::SHEER_FORCE));
+                && crate::resolve::moves::suppressing_secondaries(battle);
             let during_move = ev.effect.is_move() && !multihit && !sheer_force;
             if let Some(m) = battle.state.at_mut(holder) {
                 m.volatile_counters.ability_state.checked = Some(!during_move);

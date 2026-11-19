@@ -16,7 +16,7 @@
 //! - [`force_switch`]: Showdown's `forceSwitch` after secondaries.
 //! - [`self_switch`]: `runMoveEffects`' `selfSwitch`: flag the user.
 //! - [`run_drags`], [`check_fainted`], [`make_switch_request`]: `runAction`'s
-//!   end-of-action steps.
+//!   end-of-action steps; [`run_pursuit_activation`]: `runPursuitActivation`.
 //! - [`take_switch_flag`]: `resolveAction` consuming the flag of a Pokémon
 //!   that switches out.
 //!
@@ -29,9 +29,9 @@
 use pikapro_data::gen9::moves as ids;
 use pikapro_data::{MoveData, MoveId, StatBoosts};
 
-use super::queue::MonRef;
+use super::queue::{ActionKind, MonRef};
 use super::targeting::Targets;
-use super::{boosts, switch_in};
+use super::{boosts, each_update, switch_in};
 use crate::battle::Battle;
 use crate::request::Request;
 use crate::state::{MAX_ACTIVE, MAX_TEAM, Position, SideId, Status, SwitchFlag, Volatiles};
@@ -62,21 +62,44 @@ pub(crate) fn on_hit(battle: &mut Battle, target: Position, user: Position, move
 pub(crate) fn can_switch(battle: &Battle, side: SideId) -> usize {
     // `switchable(battle, side).len()`, counted without the list.
     let team = &battle.state.side(side).team;
-    let past = team.iter().skip(battle.format.active_per_side()).filter(|m| !m.is_fainted()).count();
-    if battle.order.stale_slots == 0 { past } else { past + stuck(battle, side).count_ones() as usize }
+    let queued = queued_switch_ins(battle, side);
+    let active = battle.format.active_per_side();
+    let past = (active..team.len()).filter(|&i| !team[i].is_fainted() && queued & 1 << i == 0).count();
+    if battle.order.stale_slots == 0 { past } else { past + (stuck(battle, side) & !queued).count_ones() as usize }
 }
 
 /// Showdown's `possibleSwitches`: team positions past the active slots that
-/// hold a Pokémon that has not fainted.
+/// hold a Pokémon that has not fainted and that no queued switch of the
+/// side brings in (`queue.getSwitches(side)`: a doubles partner's switch
+/// chosen at the start of the turn).
 fn switchable(battle: &Battle, side: SideId) -> StackVec<u8, MAX_TEAM> {
     let team = &battle.state.side(side).team;
+    let queued = queued_switch_ins(battle, side);
     let past = battle.format.active_per_side()..team.len();
-    let mut list: StackVec<u8, MAX_TEAM> = past.filter(|&i| !team[i].is_fainted()).map(|i| i as u8).collect();
+    let mut list: StackVec<u8, MAX_TEAM> =
+        past.filter(|&i| !team[i].is_fainted() && queued & 1 << i == 0).map(|i| i as u8).collect();
     if battle.order.stale_slots != 0 {
-        let stuck = stuck(battle, side);
+        let stuck = stuck(battle, side) & !queued;
         list = (0..team.len() as u8).filter(|&i| stuck & 1 << i != 0 || list.contains(&i)).collect();
     }
     list
+}
+
+/// Showdown's `queue.getSwitches(side)` mapped to their targets: the team
+/// positions, as bits, of the Pokémon that a queued `switch` or
+/// `instaswitch` of `side` brings in.
+pub(crate) fn queued_switch_ins(battle: &Battle, side: SideId) -> u8 {
+    let s = battle.state.side(side);
+    let mut bits = 0;
+    for action in battle.queue.as_slice() {
+        if let ActionKind::Switch { target } | ActionKind::InstaSwitch { target, .. } = action.kind
+            && action.mon.is_some_and(|m| m.side == side)
+            && let Some(position) = s.position_of(target.id)
+        {
+            bits |= 1 << position;
+        }
+    }
+    bits
 }
 
 /// The team positions of the active slots that hold a healthy Pokémon off
@@ -134,11 +157,17 @@ pub(crate) fn force_switch(battle: &mut Battle, targets: &Targets, user: Positio
 }
 
 /// `runMoveEffects`' `selfSwitch`: after a move that did something, a user
-/// still standing is flagged to switch out. The flag is set even if nothing
-/// can come in; `make_switch_request` then clears it.
+/// still standing is flagged to switch out, if something can come in
+/// (`canSwitch`; Revival Blessing's flag asks for a fainted Pokémon).
 pub(crate) fn self_switch(battle: &mut Battle, user: Position, move_id: MoveId) {
     // Not while `commanded` (Commander).
-    if let Some(mon) = battle.state.at_mut(user).filter(|m| m.hp > 0 && !m.volatiles.has(Volatiles::COMMANDED)) {
+    if !battle.state.at(user).is_some_and(|m| m.hp > 0 && !m.volatiles.has(Volatiles::COMMANDED)) {
+        return;
+    }
+    if move_id != ids::REVIVAL_BLESSING && can_switch(battle, user.side) == 0 {
+        return;
+    }
+    if let Some(mon) = battle.state.at_mut(user) {
         mon.switch_flag = SwitchFlag::Move(move_id);
     }
 }
@@ -193,9 +222,14 @@ fn drag_in(battle: &mut Battle, side: SideId, slot: usize) -> bool {
 /// Showdown's `checkFainted` (when the queue has run dry): fainted active
 /// Pokémon are flagged to be replaced and lose their status (it becomes
 /// `fnt`). Until then a fainted Pokémon keeps its status, and its status
-/// handlers still take part in handler sorts.
+/// handlers still take part in handler sorts. A side with nothing left to
+/// switch in is skipped (`if (!this.canSwitch(side)) continue`): its
+/// fainted Pokémon keep their status for the rest of the battle.
 pub(crate) fn check_fainted(battle: &mut Battle) {
     for side in SideId::BOTH {
+        if can_switch(battle, side) == 0 {
+            continue;
+        }
         for slot in 0..filled_slots(battle, side) {
             let s = battle.state.side_mut(side);
             if s.active[slot].is_none() {
@@ -210,58 +244,85 @@ pub(crate) fn check_fainted(battle: &mut Battle) {
 
 /// The end of `runAction`: sides with switch-flagged Pokémon get a switch
 /// request (`makeRequest('switch')`), which pauses the turn. Flags are
-/// dropped on a side with nothing to switch in; a flagged Pokémon still on
-/// the field runs `BeforeSwitchOut` now rather than when it leaves. Returns
-/// true if a request was made.
+/// dropped on a side with nothing to switch in (except a slot waiting for
+/// Revival Blessing's choice); a flagged Pokémon still on the field runs
+/// `runPursuitActivation` now rather than when it leaves. Returns true if
+/// a request was made.
 pub(crate) fn make_switch_request(battle: &mut Battle) -> bool {
     // Usually no Pokémon is flagged (after every action): one pass over
     // both sides' filled slots says so.
     if !any_in_slots(battle, |m| m.switch_flag != SwitchFlag::None) {
         return false;
     }
-    let mut any = false;
-    for side in SideId::BOTH {
+    let flagged = |battle: &Battle, side: SideId| {
         let filled = filled_slots(battle, side);
-        // Usually no Pokémon is flagged: nothing to do.
-        if battle.state.side(side).team.iter().take(filled).all(|m| m.switch_flag == SwitchFlag::None) {
+        battle.state.side(side).team.iter().take(filled).any(|m| m.switch_flag != SwitchFlag::None)
+    };
+    // `switches`, taken before either side is processed.
+    let mut switches = SideId::BOTH.map(|side| flagged(battle, side));
+    for side in SideId::BOTH {
+        if !switches[side.index()] {
             continue;
         }
-        let can_switch = can_switch(battle, side) > 0;
-        // A slot waiting for Revival Blessing's choice keeps its flag even
-        // with nothing to switch in, and doesn't switch out.
-        let reviving: [bool; MAX_ACTIVE] = core::array::from_fn(|slot| {
-            slot < filled && super::slots::reviving(battle, Position::new(side, slot as u8))
-        });
-        let s = battle.state.side_mut(side);
+        let filled = filled_slots(battle, side);
+        if can_switch(battle, side) == 0 {
+            // A slot waiting for Revival Blessing's choice keeps its flag
+            // even with nothing to switch in (`reviveSwitch`).
+            let mut revive = false;
+            for slot in 0..filled {
+                if super::slots::reviving(battle, Position::new(side, slot as u8)) {
+                    revive = true;
+                    continue;
+                }
+                battle.state.side_mut(side).team[slot].switch_flag = SwitchFlag::None;
+            }
+            switches[side.index()] = revive;
+        } else {
+            for slot in 0..filled {
+                let mon = &battle.state.side(side).team[slot];
+                let reviving = mon.switch_flag == SwitchFlag::Move(ids::REVIVAL_BLESSING);
+                if mon.hp > 0 && mon.switch_flag != SwitchFlag::None && !reviving {
+                    // (With no Pursuit, nothing faints here and the battle
+                    // can't end.)
+                    run_pursuit_activation(battle, side, slot);
+                }
+            }
+        }
+    }
+    if !switches.iter().any(|&s| s) {
+        return false;
+    }
+    // `makeRequest('switch')`: a side with a flagged Pokémon must choose
+    // (`forceSwitch` is each slot's `switchFlag`).
+    for side in SideId::BOTH {
+        let filled = filled_slots(battle, side);
+        let s = battle.state.side(side);
         let mut slots = [false; MAX_ACTIVE];
         for (slot, flag) in slots.iter_mut().enumerate().take(filled) {
-            let mon = &mut s.team[slot];
-            if mon.switch_flag == SwitchFlag::None {
-                continue;
-            }
-            if !can_switch && !reviving[slot] {
-                mon.switch_flag = SwitchFlag::None;
-                continue;
-            }
-            *flag = true;
-            if reviving[slot] {
-                continue;
-            }
-            if mon.hp > 0 && !mon.skip_before_switch_out {
-                // `runEvent('BeforeSwitchOut')`: only Dynamax and Pursuit
-                // handle it, neither in Gen 9 or Champions; the
-                // `faintMessages` after it has nothing left to report (the
-                // action's were just run, and `Update` and `EmergencyExit`
-                // faint no one).
-                mon.skip_before_switch_out = true;
-            }
+            *flag = s.team[slot].switch_flag != SwitchFlag::None;
         }
         if slots.iter().any(|&f| f) {
             battle.requests[side.index()] = Request::ForceSwitch { slots };
-            any = true;
         }
     }
-    any
+    true
+}
+
+/// Showdown's `runPursuitActivation` for the Pokémon in `slot`, about to
+/// switch out: unless `skipPursuit` (Baton Pass, Shed Tail, or already
+/// run), `runEvent('BeforeSwitchOut')` (only Dynamax and Pursuit handle
+/// it, neither in Gen 9 or Champions), `clearActiveMove()` and
+/// `eachEvent('Update')` (Gen 5+), whose sort draws on speed ties. No
+/// Pursuit activates, so nothing faints. Then `skipPursuit` is set, or
+/// cleared if the switch was called off (no flag left).
+pub(crate) fn run_pursuit_activation(battle: &mut Battle, side: SideId, slot: usize) {
+    if battle.state.side(side).team[slot].skip_before_switch_out {
+        return;
+    }
+    battle.active_move = None;
+    each_update(battle);
+    let mon = &mut battle.state.side_mut(side).team[slot];
+    mon.skip_before_switch_out = !(mon.hp > 0 && mon.switch_flag == SwitchFlag::None);
 }
 
 /// `resolveAction` for a switch: the outgoing Pokémon's `switchFlag` is
